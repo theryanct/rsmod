@@ -105,6 +105,10 @@ npc = 'lovakengj_thirus_pre_diary'
 coords = '0_23_59_45_58'
 
 [[spawn]]
+npc = 'hg_gilman'
+coords = '0_24_147_20_56'
+
+[[spawn]]
 npc = 'sunset_coast_fishing_shop'
 coords = '0_24_46_24_16'
 
@@ -245,6 +249,10 @@ npc = 'hosidius_generalstore'
 coords = '0_27_56_46_4'
 
 [[spawn]]
+npc = 'kourend_entrance_bartender'
+coords = '0_27_57_42_35'
+
+[[spawn]]
 npc = 'piscarilius_foodshop'
 coords = '0_27_58_57_45'
 
@@ -267,6 +275,10 @@ coords = '0_28_58_38_10'
 [[spawn]]
 npc = 'piscarilius_fishing_supplies_trader'
 coords = '0_28_59_45_9'
+
+[[spawn]]
+npc = 'vc_dwarf_rich1'
+coords = '0_30_73_18_17'
 
 [[spawn]]
 npc = 'smithing_guild_ore_seller'
@@ -385,6 +397,10 @@ npc = 'ogre_merchant'
 coords = '0_39_47_31_40'
 
 [[spawn]]
+npc = 'dragon_bartender'
+coords = '0_39_48_59_7'
+
+[[spawn]]
 npc = 'lathas_shopkeeper'
 coords = '0_39_52_17_56'
 
@@ -501,6 +517,10 @@ npc = 'viking_weapons_salesman'
 coords = '0_41_57_41_45'
 
 [[spawn]]
+npc = 'foresters_bartender'
+coords = '0_42_54_4_40'
+
+[[spawn]]
 npc = 'dorgesh_market_head'
 coords = '0_42_83_30_0'
 
@@ -581,6 +601,10 @@ npc = 'dwarf_city_shop_weapons'
 coords = '0_44_159_11_54'
 
 [[spawn]]
+npc = 'dwarf_city_barman_rich'
+coords = '0_44_159_26_21'
+
+[[spawn]]
 npc = 'poh_stonemason'
 coords = '0_44_159_33_9'
 
@@ -629,6 +653,14 @@ npc = 'dwarf_city_shop_bakery'
 coords = '0_45_159_12_35'
 
 [[spawn]]
+npc = 'dwarf_city_dwarf_man8'
+coords = '0_45_159_25_40'
+
+[[spawn]]
+npc = 'dwarf_city_barmaid_poor'
+coords = '0_45_159_36_18'
+
+[[spawn]]
 npc = 'dwarf_city_shop_pickaxe'
 coords = '0_45_159_44_36'
 
@@ -673,6 +705,10 @@ npc = 'death_shopkeeper'
 coords = '0_45_55_48_27'
 
 [[spawn]]
+npc = 'vc_gambler_rich3'
+coords = '0_45_79_29_22'
+
+[[spawn]]
 npc = 'dwarven_shopkeeper'
 coords = '0_46_153_50_36'
 
@@ -699,6 +735,14 @@ coords = '0_46_50_5_5'
 [[spawn]]
 npc = 'wayne'
 coords = '0_46_51_28_49'
+
+[[spawn]]
+npc = 'risingsun_barmaid'
+coords = '0_46_52_12_44'
+
+[[spawn]]
+npc = 'risingsun_barmaid2'
+coords = '0_46_52_14_43'
 
 [[spawn]]
 npc = 'generalshopkeeper4'
@@ -735,6 +779,10 @@ coords = '0_47_153_28_54'
 [[spawn]]
 npc = 'brian'
 coords = '0_47_50_19_49'
+
+[[spawn]]
+npc = 'rustyanchor_bartender'
+coords = '0_47_50_39_57'
 
 [[spawn]]
 npc = 'gerrant'
@@ -861,8 +909,16 @@ npc = 'merchant_pies'
 coords = '0_49_53_7_57'
 
 [[spawn]]
+npc = 'wildy_hub_pub_owner'
+coords = '0_49_56_16_60'
+
+[[spawn]]
 npc = 'generalshopkeeper2'
 coords = '0_50_53_17_23'
+
+[[spawn]]
+npc = 'bluemoon_bartender'
+coords = '0_50_53_26_6'
 
 [[spawn]]
 npc = 'horvik_the_armourer'
@@ -993,6 +1049,10 @@ npc = 'tea_seller'
 coords = '0_51_53_6_21'
 
 [[spawn]]
+npc = 'jollyboar_bartender'
+coords = '0_51_54_13_33'
+
+[[spawn]]
 npc = 'wilderness_capeseller_5'
 coords = '0_51_61_19_30'
 
@@ -1065,6 +1125,10 @@ npc = 'werewolfshopkeeper3'
 coords = '0_54_54_22_39'
 
 [[spawn]]
+npc = 'route_veliaf_hurtz'
+coords = '0_54_54_38_8'
+
+[[spawn]]
 npc = 'werewolfshopkeeper2'
 coords = '0_54_54_44_49'
 
@@ -1091,6 +1155,10 @@ coords = '0_56_52_57_8'
 [[spawn]]
 npc = 'darkm_trader_candles'
 coords = '0_56_52_61_31'
+
+[[spawn]]
+npc = 'darkm_trader_pub'
+coords = '0_56_53_16_0'
 
 [[spawn]]
 npc = 'farming_shopkeeper_4'
@@ -1205,12 +1273,20 @@ npc = 'fionella'
 coords = '1_42_52_42_50'
 
 [[spawn]]
+npc = 'shiloinnowner'
+coords = '1_44_46_46_53'
+
+[[spawn]]
 npc = 'warguild_armour_shopkeeper'
 coords = '1_44_55_41_17'
 
 [[spawn]]
 npc = 'helemos'
 coords = '1_45_54_14_54'
+
+[[spawn]]
+npc = 'risingsun_barmaid3'
+coords = '1_46_52_13_42'
 
 [[spawn]]
 npc = 'scavvo'

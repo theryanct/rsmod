@@ -18,16 +18,16 @@ object GenericShopInvs : InvReferences() {
 
 object GenericShopObjs : ObjReferences() {
     val byName: Map<String, ObjType> =
-        GenericShopData.shops
-            .flatMap { shop -> shop.stock.map { it.obj } }
+        (GenericShopData.shops.flatMap { shop -> shop.stock.map { it.obj } } +
+                GenericShopData.vendors.flatMap { vendor -> vendor.items.map { it.obj } })
             .distinct()
             .associateWith { find(it) }
 }
 
 object GenericShopNpcs : NpcReferences() {
     val byName: Map<String, NpcType> =
-        GenericShopData.shops
-            .flatMap { shop -> shop.npcs.map { it.first } }
+        (GenericShopData.shops.flatMap { shop -> shop.npcs.map { it.first } } +
+                GenericShopData.vendors.map { it.npc })
             .distinct()
             .associateWith { find(it) }
 }

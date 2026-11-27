@@ -59,13 +59,14 @@ for path in spawn_files:
     text = open(path, encoding="utf-8").read()
     spawned |= {npc_by_name[n] for n in re.findall(r"npc = '([^']+)'", text) if n in npc_by_name}
 
-trade_op = {}
+trade_op, talk_op = {}, {}
 for line in open(npcs_dump, encoding="utf-8").read().splitlines()[1:]:
     p = line.split("\t")
     for i, op in enumerate(p[5:10], start=1):
-        if op.strip().lower() == "trade":
+        if op.strip().lower() == "trade" and int(p[0]) not in trade_op:
             trade_op[int(p[0])] = i
-            break
+        if op.strip().lower() == "talk-to" and int(p[0]) not in talk_op:
+            talk_op[int(p[0])] = i
 
 # Npcs referenced by hand-written content already have their own op handlers.
 handled = set()
@@ -257,7 +258,53 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
         for n, op in plan["npcs"]: w.write(f"npc\t{n}\t{op}\n")
         for o, c, r in plan["stock"]: w.write(f"stock\t{o}\t{c}\t{r}\n")
         stats["shops"] += 1
-used_npcs = {n for p in done for n, _ in p["npcs"]}
+# Dialogue vendors: stores whose owner has no Trade op but sells fixed-price, unlimited items
+# (bartenders: "Beer - 2 coins"). Talk-to opens a buy dialogue. Stores needing ingredients
+# (extra table columns, e.g. the Apothecary) are skipped.
+vendors = []
+vendor_npcs = set()
+for title, text in sorted(stores.items()):
+    box = next(templates(text, "Infobox Shop"), None)
+    if box is None: continue
+    info = fields(strip_nested(box))
+    location = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", info.get("location", ""))
+    if locations and not any(l in location.lower() for l in locations): continue
+    head = fields(strip_nested(next(templates(text, "StoreTableHead"), "") or ""))
+    if (head.get("currency") or "coins").strip().lower() != "coins" or "column1" in head: continue
+    items = []
+    for body in templates(text, "StoreLine"):
+        f = fields(strip_nested(body))
+        price = re.fullmatch(r"\d+", f.get("sell", "") or "")
+        on = obj_name(f.get("name", ""))
+        if f.get("stock", "").lower() != "inf" or not price or int(price.group(0)) <= 0 or on is None:
+            items = None
+            break
+        items.append((on, int(price.group(0)), f.get("name", "")))
+    if not items: continue
+    om = re.search(r"\|\s*owner\s*=([^\n]*)", box)
+    for page in ([o.strip() for o in re.findall(r"\[\[([^|\]#]+)", om.group(1))] if om else []):
+        ids = owner_ids(page)
+        if any(npc_sym.get(i) in handled or npc_sym.get(i) in registered for i in ids): continue
+        talkers = [i for i in ids if i in talk_op and i not in trade_op and npc_sym.get(i)]
+        if not talkers: continue
+        nid = next((i for i in talkers if i in spawned), talkers[0])
+        if npc_sym[nid] in vendor_npcs: continue
+        if nid not in spawned and any(i in spawned for i in ids): continue
+        if nid not in spawned and nid not in new_spawns:
+            coords = owner_coords(page)
+            if coords is None:
+                log.append((title, page, "vendor not spawned and page has no map coords", ""))
+                continue
+            new_spawns[nid] = coords
+        vendor_npcs.add(npc_sym[nid])
+        vendors.append((title, npc_sym[nid], talk_op[nid], items[:4]))
+        stats["vendors"] += 1
+with open(out_path, "a", encoding="utf-8", newline="\n") as w:
+    for title, n, op, items in vendors:
+        w.write(f"\nvendor\t{n}\t{op}\t{title}\n")
+        for o, price, label in items: w.write(f"item\t{o}\t{price}\t{label}\n")
+
+used_npcs = {n for p in done for n, _ in p["npcs"]} | vendor_npcs
 with open(spawns_out, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Shopkeepers spawned by tools/shops/wiki_shops_to_tsv.py (wiki {{Map}} point of the owner page).\n")
     for nid, coords in sorted(new_spawns.items(), key=lambda t: t[1]):
