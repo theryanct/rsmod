@@ -26,7 +26,8 @@ public enum class Feature(
     InfinitePrayer("prayer", "Infinite prayer", defaultOn = false, slot = 1),
     InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2),
     InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3),
-    NoHomeTeleportCooldown("hometele", "No home teleport cooldown", defaultOn = true, slot = 4);
+    NoHomeTeleportCooldown("hometele", "No home teleport cooldown", defaultOn = true, slot = 4),
+    AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5);
 
     public companion object {
         public fun forKey(key: String): Feature? =

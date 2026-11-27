@@ -1,0 +1,29 @@
+# Agility courses and shortcuts.
+# XP / lap bonus: OSRS Wiki course pages (post May-2024 rebalance; Draynor has no level requirement).
+# Loc names and positions: decoded from the cache map (tools/agility/maplocs.py); landing tiles follow
+# the obstacle geometry and need in-game confirmation.
+# Coords are x,z,plane; "*" keeps the player's current x or z.
+#
+# course   <key> <title> <lap bonus xp> <mark of grace 1/N per lap, 0 = none> <mark spawn coord|->
+# obstacle <course> <step> <loc names> <level> <xp> <walk|climb> <anim> <ticks> <end> <start|->
+# shortcut <loc names> <level> <xp> <anim> <ticks> <side a> <side b>
+
+course	gnome	Gnome Stronghold Agility Course	50	4	2484,3438,0
+obstacle	gnome	1	gnome_log_balance1	1	10	walk	human_walk_logbalance	7	2474,3429,0	2474,3436,0
+obstacle	gnome	2	obstical_net2	1	10	climb	human_reachforladder	2	*,3424,1	-
+obstacle	gnome	3	climbing_branch	1	6.5	climb	human_reachforladder	2	2473,3420,2	-
+obstacle	gnome	4	balancing_rope	1	10	walk	human_walk_logbalance	6	2483,3420,2	2477,3420,2
+obstacle	gnome	5	climbing_tree	1	6.5	climb	human_reachforladder	2	2487,3420,0	-
+obstacle	gnome	6	obstical_net3	1	10	climb	human_reachforladder	2	*,3427,0	-
+obstacle	gnome	7	obstical_pipe3_1,obstical_pipe3_2	1	7.5	walk	human_crawling	7	*,3437,0	*,3430,0
+
+course	draynor	Draynor Village Rooftop Course	0	4	3101,3279,3
+obstacle	draynor	1	rooftops_draynor_wallclimb	1	5	climb	human_reachforladder	2	3102,3279,3	-
+obstacle	draynor	2	rooftops_draynor_tightrope_1	1	8	walk	human_walk_logbalance	9	3090,3277,3	3099,3277,3
+obstacle	draynor	3	rooftops_draynor_tightrope_2	1	7	walk	human_walk_logbalance	9	3092,3267,3	3092,3276,3
+obstacle	draynor	4	rooftops_draynor_wallcrossing	1	7	walk	human_walk_sidestepl	4	3089,3261,3	3089,3265,3
+obstacle	draynor	5	rooftops_draynor_wallscramble	1	10	walk	agility_shortcut_wall_jump	2	3088,3255,3	3088,3257,3
+obstacle	draynor	6	rooftops_draynor_leapdown	1	4	walk	agility_shortcut_wall_jump	2	3096,3256,3	-
+obstacle	draynor	7	rooftops_draynor_crate	1	79	climb	agility_shortcut_wall_jumpdown	2	3103,3261,0	-
+
+shortcut	fai_falador_castle_crumble_mid	5	0.5	human_jump_hurdle	2	2934,3355,0	2936,3355,0

@@ -1,0 +1,416 @@
+# Generated from OSRS Wiki {{Thieving info}} pages by tools/skills/thieving_to_tsv.py - do not edit.
+
+pickpocket	'Black-eye'	tol_npc_builder01	1	8.0	180	240	8	1
+loot	triangle_sandwich	1	1	1	1	1
+
+pickpocket	'Gummy'	tol_npc_builder03	1	8.0	180	240	8	1
+loot	triangle_sandwich	1	1	1	1	1
+
+pickpocket	'No fingers'	tol_npc_builder02	1	8.0	180	240	8	1
+loot	triangle_sandwich	1	1	1	1	1
+loot	tol_player_construction_boots	1	1	1	1	1
+
+pickpocket	'The Guns'	tol_npc_builder04	1	8.0	180	240	8	1
+loot	triangle_sandwich	1	1	1	1	1
+
+pickpocket	Al Kharid warrior	al_kharid_warrior	25	26.0	100	240	8	2
+loot	coins	18	18	1	1	1
+
+stall	Bakery stall	cakethiefstall,dwarf_market_bakery,hos_stall_bread,fortis_market_stall_bakers	5	16.0	4	market,dwarf_market_empty_stall,hos_stall_empty,-
+loot	bread	1	1	1	4	0
+loot	cake	1	1	13	20	0
+loot	chocolate_slice	1	1	1	10	0
+
+pickpocket	Bandit (Bandit Camp)	fourdiamonds_sword_bandit_free,fourdiamonds_sword_bandit_1	53	79.4	50	240	8	3
+loot	coins	30	30	5	7	0
+loot	1doseantipoison	1	1	1	7	0
+loot	lockpick	1	1	1	7	0
+
+pickpocket	Bandit (Pollnivneach)	feud_arabian_guard2_1,feud_arabian_guard2_2,feud_arabian_guard1_1,feud_arabian_guard1_2	45	65.0	80	240	8	1
+loot	coins	40	40	1	1	1
+
+pickpocket	Citizen (Civitas illa Fortis)	varlamore_citizen_poor_m_1,varlamore_citizen_poor_m_2,varlamore_citizen_poor_m_3,varlamore_citizen_poor_m_4,varlamore_citizen_poor_m_5,varlamore_citizen_poor_f_1,varlamore_citizen_poor_f_2,varlamore_citizen_poor_f_3,varlamore_citizen_poor_f_4,varlamore_citizen_poor_f_5,varlamore_citizen_normal_m_1,varlamore_citizen_normal_m_2,varlamore_citizen_normal_m_3,varlamore_citizen_normal_m_4,varlamore_citizen_normal_m_5,varlamore_citizen_normal_f_1,varlamore_citizen_normal_f_2,varlamore_citizen_normal_f_3,varlamore_citizen_normal_f_4,varlamore_citizen_normal_f_5,varlamore_citizen_rich_m_1,varlamore_citizen_rich_m_2,varlamore_citizen_rich_m_3,varlamore_citizen_rich_m_4,varlamore_citizen_rich_m_5,varlamore_citizen_rich_f_1,varlamore_citizen_rich_f_2,varlamore_citizen_rich_f_3,varlamore_citizen_rich_f_4,varlamore_citizen_rich_f_5	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+pickpocket	Citizen (Twilight's Promise)	vmq2_citizen_vis	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+stall	Crafting stall	mm_stall_crafting,dwarf_market_crafting	5	20.0	8	-,dwarf_market_empty_stall
+loot	amulet_mould	1	1	2	9	0
+loot	jewl_bracelet_mould	1	1	2	9	0
+loot	chisel	1	1	1	9	0
+loot	gold_bar	1	1	1	27	0
+loot	necklace_mould	1	1	11	54	0
+loot	ring_mould	1	1	11	54	0
+
+stall	Crossbow stall	xbows_dwarf_market	49	52.0	8	-
+loot	bolt	3	3	23	40	0
+loot	xbows_crossbow_limbs_bronze	3	3	9	40	0
+loot	xbows_crossbow_bolts_mithril	3	3	3	80	0
+loot	xbows_crossbow_limbs_mithril	3	3	1	80	0
+loot	xbows_crossbow_stock_wood	3	3	3	20	0
+
+pickpocket	Farmer	farmer1,farmer2,farmer3,farmer1_f,farmer2_f,farmer3_f,farmer4	10	14.5	150	240	8	1
+loot	coins	9	9	123	128	0
+loot	potato_seed	1	1	5	128	0
+
+pickpocket	Farmer (Kastori)	kastori_farmer_m_1,kastori_farmer_m_2,kastori_farmer_f_1,kastori_farmer_f_2	10	14.5	150	240	8	1
+loot	coins	9	9	123	128	0
+loot	potato_seed	1	1	5	128	0
+
+pickpocket	Farmer (Tal Teklan)	tal_teklan_farmer	10	14.5	150	240	8	1
+loot	coins	9	9	123	128	0
+loot	potato_seed	1	1	5	128	0
+
+pickpocket	Farmer (Varlamore)	varlamore_farmer_m_1,varlamore_farmer_m_2,varlamore_farmer_m_3,varlamore_farmer_m_4,varlamore_farmer_f_1,varlamore_farmer_f_2,varlamore_farmer_f_3,varlamore_farmer_f_4	10	14.5	150	240	8	1
+loot	coins	9	9	123	128	0
+loot	potato_seed	1	1	5	128	0
+
+stall	Fish stall	viking_fish_market,misc_fish_market,etc_fish_market,fish_stall_warrens	42	42.0	12	-,-,-,-
+loot	raw_salmon	1	1	7	10	0
+loot	raw_tuna	1	1	1	4	0
+loot	raw_lobster	1	1	1	20	0
+
+stall	Food Stall	mm_stall_food	5	16.0	6	-
+loot	banana	1	1	1	1	1
+
+stall	Fruit Stall	hos_fruit_stall_02,hos_fruit_stall	25	28.5	4	hos_stall_empty,hos_stall_empty
+loot	cooking_apple	1	1	2	5	0
+loot	banana	1	1	1	5	0
+loot	jangerberries	1	1	1	20	0
+loot	lemon	1	1	1	20	0
+loot	redberries	1	1	1	20	0
+loot	pineapple	1	1	1	20	0
+loot	lime	1	1	1	20	0
+loot	strawberry	1	1	7	100	0
+loot	macro_triffidfruit	1	1	1	20	0
+loot	golovanova_top	1	1	1	50	0
+loot	papaya	1	1	1	100	0
+
+stall	Fur stall	furthiefstall,viking_fur_market,fortis_market_stall_fur	35	45.0	12	market,-,-
+loot	grey_wolf_fur	1	1	1	1	1
+
+stall	Gem stall	gemthiefstall,dwarf_market_gems,prif_marketstall_gem,fortis_market_stall_gems	75	408.0	100	market,dwarf_market_empty_stall,prif_marketstall_empty,-
+loot	uncut_sapphire	1	1	105	128	0
+loot	uncut_emerald	1	1	17	128	0
+loot	uncut_ruby	1	1	5	128	0
+loot	uncut_diamond	1	1	1	128	0
+
+stall	General Stall	mm_stall_general	5	25.0	8	-
+loot	hammer	1	1	1	3	0
+loot	pot_empty	1	1	1	3	0
+loot	tinderbox	1	1	1	3	0
+
+pickpocket	Gnome	gnome,browclothedgnome,darkskinned_gnome	75	133.3	33	140	8	1
+loot	arrow_shaft	2	4	7	16	0
+loot	coins	300	300	15	64	0
+loot	gold_ore	1	1	1	16	0
+loot	earthrune	1	1	5	128	0
+loot	king_worm	1	1	3	128	0
+loot	fire_orb	1	1	1	64	0
+
+pickpocket	Gnome woman	gnomefemale,gnomefemale_dskinned	75	133.5	33	140	8	1
+loot	arrow_shaft	2	4	7	16	0
+loot	coins	300	300	15	64	0
+loot	gold_ore	1	1	1	16	0
+loot	earthrune	1	1	5	128	0
+loot	king_worm	1	1	3	128	0
+loot	fire_orb	1	1	1	64	0
+
+pickpocket	Guard	guard1,guard1_variant01,guard1_f,guard1_f_variant01,fai_falador_guard1,fai_falador_guard1_variant01,fai_falador_guard1_f,fai_falador_guard1_variant02,fai_falador_guard2,fai_falador_guard2_f,fai_falador_guard3,fai_falador_guard3_f,fai_falador_guard4_f,fai_falador_guard5,fai_falador_guard6,fai_varrock_guard02,fai_varrock_guard02_variant01,fai_varrock_guard02_variant02,fai_varrock_guard02_f,fai_varrock_guard02_f_variant01,fai_varrock_guard02_f_variant02,fai_varrock_guard_captain02,ardougne_guard,ardougne_guard_variant01,ardougne_guard_f,ardougne_guard_f_variant01	40	46.8	50	240	8	2
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Aldarin)	aldarin_guard_m_1,aldarin_guard_m_2,aldarin_guard_m_3,aldarin_guard_m_4,aldarin_guard_m_5,aldarin_guard_f_1,aldarin_guard_f_2,aldarin_guard_f_3,aldarin_guard_f_4,aldarin_guard_f_5	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Auburnvale)	auburnvale_guard_m_1,auburnvale_guard_m_2,auburnvale_guard_m_3,auburnvale_guard_m_4,auburnvale_guard_f_1,auburnvale_guard_f_2,auburnvale_guard_f_3,auburnvale_guard_f_4	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Doric's hut)	falador_doric_area_guard	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Hosidius)	hos_town_guard_01,hos_town_guard_02,hos_town_guard_03,hos_town_guard_04	40	46.8	50	240	8	2
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Port Sarim jail)	jail_guard_1,jail_guard_2,jail_guard_3,jail_guard_4,jail_guard_5	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Tlati Rainforest)	tlati_guard_m_1,tlati_guard_m_2,tlati_guard_m_3,tlati_guard_m_4,tlati_guard_f_1,tlati_guard_f_2,tlati_guard_f_3,tlati_guard_f_4	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	Guard (Varlamore)	varlamore_guard_m_1,varlamore_guard_m_2,varlamore_guard_m_3,varlamore_guard_m_4,varlamore_guard_m_5,varlamore_guard_f_1,varlamore_guard_f_2,varlamore_guard_f_3,varlamore_guard_f_4,varlamore_guard_f_5	40	46.8	50	240	8	1
+loot	coins	30	30	1	1	1
+
+pickpocket	H.A.M. Member	favour_male_ham_civilian,favour_female_ham_civilian	15	22.2	0	254	7	1
+loot	ham_boots	1	1	1	102	0
+loot	ham_cloak	1	1	1	102	0
+loot	ham_gloves	1	1	1	102	0
+loot	ham_hood	1	1	1	102	0
+loot	ham_badge	1	1	1	102	0
+loot	ham_robe	1	1	1	102	0
+loot	ham_shirt	1	1	1	102	0
+loot	bronze_arrow	1	13	1	34	0
+loot	bronze_axe	1	1	1	34	0
+loot	bronze_dagger	1	1	1	34	0
+loot	bronze_pickaxe	1	1	1	34	0
+loot	iron_axe	1	1	1	34	0
+loot	iron_dagger	1	1	1	34	0
+loot	iron_pickaxe	1	1	1	34	0
+loot	leather_armour	1	1	1	34	0
+loot	steel_arrow	1	13	1	51	0
+loot	steel_axe	1	1	1	51	0
+loot	steel_dagger	1	1	1	51	0
+loot	steel_pickaxe	1	1	1	51	0
+loot	digsitebuttons	1	1	2	51	0
+loot	pickpocket_coin_pouch_citizen	1	1	1	6	0
+loot	feather	1	7	1	34	0
+loot	knife	1	1	1	51	0
+loot	logs	1	1	1	34	0
+loot	needle	1	1	1	51	0
+loot	raw_anchovies	1	1	1	51	0
+loot	raw_chicken	1	1	1	51	0
+loot	thread	1	10	1	34	0
+loot	tinderbox	1	1	1	51	0
+loot	uncut_opal	1	1	1	51	0
+loot	coal	1	1	1	51	0
+loot	cow_hide	1	1	1	34	0
+loot	digsitearmour1	1	1	2	51	0
+loot	unidentified_guam	1	1	2	187	0
+loot	unidentified_marentill	1	1	1	187	0
+loot	unidentified_tarromin	1	1	2	561	0
+loot	iron_ore	1	1	1	51	0
+loot	digsitesword	1	1	2	51	0
+loot	uncut_jade	1	1	1	51	0
+
+pickpocket	Hero	hero,hero_variant01,hero_f	80	163.3	39	160	10	3
+loot	coins	200	200	105	128	0
+loot	deathrune	2	2	1	16	0
+loot	jug_wine	1	1	3	64	0
+loot	bloodrune	1	1	5	128	0
+loot	diamond	1	1	1	128	0
+loot	fire_orb	1	1	1	64	0
+loot	gold_ore	1	1	1	128	0
+
+pickpocket	Knight of Ardougne	knight_of_ardougne,knight_of_ardougne_f,knight_of_ardougne_west_vis,knight_of_ardougne_f_west_vis	55	84.3	50	240	8	3
+loot	coins	50	50	1	1	1
+
+stall	Magic Stall	mm_stall_magic	65	90.0	12	-
+loot	airrune	1	1	3	10	0
+loot	earthrune	1	1	3	10	0
+loot	firerune	1	1	3	10	0
+loot	lawrune	1	1	1	20	0
+loot	naturerune	1	1	1	20	0
+
+pickpocket	Man	zeah_man,zeah_man2,zeah_man3,man4,death_man_indoors1,man4_for_musa_point,al_kharid_man,falador_man2,falador_man3,karamja_man,varrock_man1,shayzien_man_1,shayzien_man_2	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+pickpocket	Man (East Ardougne)	ardougnian_male1	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+stall	Market stall (wine)	rag_market_stall	22	27.0	8	-
+loot	rag_bottle_wine	1	1	11	100	0
+loot	grapes	1	1	17	100	0
+loot	jug_empty	1	1	39	100	0
+loot	jug_water	1	1	1	5	0
+loot	jug_wine	1	1	13	100	0
+
+pickpocket	Martin the Master Gardener	martin_the_master_farmer	38	43.0	90	240	8	3
+loot	potato_seed	1	4	20	113	0
+loot	onion_seed	1	3	100	753	0
+loot	cabbage_seed	1	3	5	72	0
+loot	tomato_seed	1	2	10	157	0
+loot	sweetcorn_seed	1	2	5	226	0
+loot	strawberry_seed	1	1	5	452	0
+loot	watermelon_seed	1	1	1	189	0
+loot	snape_grass_seed	1	1	1	260	0
+loot	barley_seed	1	12	1	18	0
+loot	hammerstone_hop_seed	1	9	1	18	0
+loot	asgarnian_hop_seed	1	6	10	239	0
+loot	jute_seed	1	9	10	241	0
+loot	yanillian_hop_seed	1	6	10	361	0
+loot	krandorian_hop_seed	1	6	5	361	0
+loot	wildblood_hop_seed	1	3	1	142	0
+loot	marigold_seed	1	1	5	109	0
+loot	nasturtium_seed	1	1	10	329	0
+loot	rosemary_seed	1	1	10	509	0
+loot	woad_seed	1	1	10	689	0
+loot	limpwurt_seed	1	1	10	863	0
+loot	redberry_bush_seed	1	1	5	129	0
+loot	cadavaberry_bush_seed	1	1	5	184	0
+loot	dwellberry_bush_seed	1	1	2	103	0
+loot	jangerberry_bush_seed	1	1	1	129	0
+loot	whiteberry_bush_seed	1	1	1	355	0
+loot	poisonivy_bush_seed	1	1	1	937	0
+loot	mushroom_seed	1	1	1	492	0
+loot	belladonna_seed	1	1	1	820	0
+loot	cactus_seed	1	1	1	1230	0
+loot	seaweed_seed	1	1	1	1892	0
+loot	potato_cactus_seed	1	1	1	2460	0
+loot	guam_seed	1	1	10	651	0
+loot	marrentill_seed	1	1	5	478	0
+loot	tarromin_seed	1	1	1	140	0
+loot	harralander_seed	1	1	1	206	0
+loot	ranarr_seed	1	1	1	302	0
+loot	toadflax_seed	1	1	1	443	0
+loot	irit_seed	1	1	1	651	0
+loot	avantoe_seed	1	1	1	947	0
+loot	kwuarm_seed	1	1	1	1389	0
+loot	snapdragon_seed	1	1	1	2083	0
+loot	cadantine_seed	1	1	1	2976	0
+loot	lantadyme_seed	1	1	1	4167	0
+loot	dwarf_weed_seed	1	1	1	6944	0
+loot	torstol_seed	1	1	1	10417	0
+
+pickpocket	Master Farmer	master_farmer_1,master_farmer_2,master_farmer_1_f,master_farmer_2_f,varlamore_master_farmer_f_1,varlamore_master_farmer_f_2,varlamore_master_farmer_f_3,varlamore_master_farmer_f_4,varlamore_master_farmer_m_1,varlamore_master_farmer_m_2,varlamore_master_farmer_m_3,varlamore_master_farmer_m_4,kastori_master_farmer_m_2,kastori_master_farmer_f_2,kastori_master_farmer_m_1,kastori_master_farmer_f_1	38	43.0	90	240	8	3
+loot	potato_seed	1	4	20	113	0
+loot	onion_seed	1	3	100	753	0
+loot	cabbage_seed	1	3	5	72	0
+loot	tomato_seed	1	2	10	157	0
+loot	sweetcorn_seed	1	2	5	226	0
+loot	strawberry_seed	1	1	5	452	0
+loot	watermelon_seed	1	1	1	189	0
+loot	snape_grass_seed	1	1	1	260	0
+loot	barley_seed	1	12	1	18	0
+loot	hammerstone_hop_seed	1	9	1	18	0
+loot	asgarnian_hop_seed	1	6	10	239	0
+loot	jute_seed	1	9	10	241	0
+loot	yanillian_hop_seed	1	6	10	361	0
+loot	krandorian_hop_seed	1	6	5	361	0
+loot	wildblood_hop_seed	1	3	1	142	0
+loot	marigold_seed	1	1	5	109	0
+loot	nasturtium_seed	1	1	10	329	0
+loot	rosemary_seed	1	1	10	509	0
+loot	woad_seed	1	1	10	689	0
+loot	limpwurt_seed	1	1	10	863	0
+loot	redberry_bush_seed	1	1	5	129	0
+loot	cadavaberry_bush_seed	1	1	5	184	0
+loot	dwellberry_bush_seed	1	1	2	103	0
+loot	jangerberry_bush_seed	1	1	1	129	0
+loot	whiteberry_bush_seed	1	1	1	355	0
+loot	poisonivy_bush_seed	1	1	1	937	0
+loot	mushroom_seed	1	1	1	492	0
+loot	belladonna_seed	1	1	1	820	0
+loot	cactus_seed	1	1	1	1230	0
+loot	seaweed_seed	1	1	1	1892	0
+loot	potato_cactus_seed	1	1	1	2460	0
+loot	guam_seed	1	1	25	1459	0
+loot	marrentill_seed	1	1	5	478	0
+loot	tarromin_seed	1	1	1	140	0
+loot	harralander_seed	1	1	1	206	0
+loot	ranarr_seed	1	1	4	1075	0
+loot	toadflax_seed	1	1	1	443	0
+loot	irit_seed	1	1	1	651	0
+loot	avantoe_seed	1	1	1	947	0
+loot	kwuarm_seed	1	1	1	1389	0
+loot	snapdragon_seed	1	1	5	9272	0
+loot	cadantine_seed	1	1	1	2976	0
+loot	lantadyme_seed	1	1	1	4167	0
+loot	dwarf_weed_seed	1	1	1	6944	0
+loot	torstol_seed	1	1	50	463599	0
+loot	skillpetthieving	1	1	1	256261	0
+
+pickpocket	Menaphite Thug	feud_egyptian_doorman_2	65	137.5	78	240	8	1
+loot	coins	60	60	1	1	1
+
+pickpocket	Paladin	paladin,paladin_variant01,paladin_variant02,paladin_f,paladin_f_variant01,paladin_west_vis,paladin_west_f_vis,paladin2	70	131.8	35	160	8	3
+loot	coins	80	80	1	1	1
+loot	chaosrune	2	2	1	1	1
+
+pickpocket	Rogue	rogue	32	36.5	75	240	8	2
+loot	coins	25	40	41	48	0
+loot	airrune	8	8	1	16	0
+loot	jug_wine	1	1	1	24	0
+loot	lockpick	1	1	5	144	0
+loot	iron_dagger_p	1	1	1	144	0
+
+pickpocket	Salvager	varlamore_salvager_m_1,varlamore_salvager_f_2,varlamore_salvager_m_3,varlamore_salvager_m_2,varlamore_salvager_f_1,varlamore_salvager_f_3	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+stall	Scimitar Stall	mm_stall_scimitar	65	210.0	32	-
+loot	iron_scimitar	1	1	23	40	0
+loot	steel_scimitar	1	1	13	40	0
+loot	mithril_scimitar	1	1	3	40	0
+loot	adamant_scimitar	1	1	1	40	0
+
+stall	Seed Stall	seed_stall	27	10.0	4	-
+loot	hammerstone_hop_seed	1	1	3	25	0
+loot	potato_seed	1	1	119	1000	0
+loot	marigold_seed	1	1	119	1000	0
+loot	barley_seed	1	1	59	500	0
+loot	onion_seed	1	1	89	1000	0
+loot	asgarnian_hop_seed	1	1	83	1000	0
+loot	cabbage_seed	1	1	71	1000	0
+loot	yanillian_hop_seed	1	1	47	1000	0
+loot	rosemary_seed	1	1	9	250	0
+loot	nasturtium_seed	1	1	7	200	0
+loot	tomato_seed	1	1	7	200	0
+loot	jute_seed	1	1	7	200	0
+loot	sweetcorn_seed	1	1	3	100	0
+loot	krandorian_hop_seed	1	1	3	125	0
+loot	strawberry_seed	1	1	9	500	0
+loot	wildblood_hop_seed	1	1	3	250	0
+loot	watermelon_seed	1	1	9	1000	0
+
+stall	Shop Counter (gems)	tzhaar_shopcounter_gem	75	408.0	175	-
+loot	uncut_onyx	1	1	1	75000	0
+loot	onyx	1	1	1	150000	0
+loot	uncut_sapphire	1	1	1	3	0
+loot	sapphire	1	1	1	6	0
+loot	uncut_emerald	1	1	1	5	0
+loot	emerald	1	1	1	10	0
+loot	uncut_ruby	1	1	1	10	0
+loot	ruby	1	1	1	20	0
+loot	uncut_diamond	1	1	49	1500	0
+loot	diamond	1	1	49	3000	0
+loot	uncut_dragonstone	1	1	1	1500	0
+loot	dragonstone	1	1	1	3000	0
+
+stall	Shop Counter (ore)	tzhaar_shopcounter_ore	82	350.0	50	-
+loot	iron_ore	1	1	5	16	0
+loot	coal	1	1	3	16	0
+loot	silver_ore	1	1	1	8	0
+loot	gold_ore	1	1	1	8	0
+loot	mithril_ore	1	1	1	8	0
+loot	adamantite_ore	1	1	1	10	0
+loot	runite_ore	1	1	1	40	0
+
+stall	Silk stall	silkthiefstall,prif_marketstall_silk,fortis_market_stall_silk	20	24.0	8	market,prif_marketstall_empty,-
+loot	silk	1	1	1	1	1
+
+stall	Silver stall	silverthiefstall,dwarf_market_silver,prif_marketstall_silver	50	205.0	32	market,dwarf_market_empty_stall,prif_marketstall_empty
+loot	silver_ore	1	1	4	5	0
+loot	silver_bar	1	1	3	20	0
+loot	tiara	1	1	1	20	0
+
+stall	Spice stall	spicethiefstall,prif_marketstall_spice,fortis_market_stall_spice	65	92.0	10	market,prif_marketstall_empty,-
+loot	spicespot	1	1	1	1	1
+
+stall	Tea stall	tea_stall	5	16.0	4	-
+loot	cup_of_tea	1	1	1	1	1
+
+pickpocket	Tourist	varlamore_tourist_m_1,varlamore_tourist_m_2,varlamore_tourist_m_3,varlamore_tourist_f_1,varlamore_tourist_f_2,varlamore_tourist_f_3	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+stall	Veg stall	misc_veg_market,etc_veg_market	2	10.0	2	-,-
+loot	potato	1	1	3	10	0
+loot	cabbage	1	1	1	5	0
+loot	onion	1	1	1	5	0
+loot	tomato	1	1	1	5	0
+loot	garlic	1	1	1	10	0
+
+pickpocket	Warrior (Thieving)	warrior_woman,warrior_woman_variant01,warrior_woman_variant02,warrior_man,warrior_man_variant01,warrior_man_variant02	25	26.0	100	240	8	2
+loot	coins	18	18	1	1	1
+
+pickpocket	Watchman	yanille_watchman	65	137.5	15	160	8	3
+loot	bread	1	1	1	1	1
+loot	coins	60	60	1	1	1
+
+pickpocket	Wealthy citizen	varlamore_wealthy_citizen_a,varlamore_wealthy_citizen_b,varlamore_wealthy_citizen_c,varlamore_wealthy_citizen_d	50	96.0	35	200	7	3
+loot	coins	85	85	79	85	0
+loot	varlamore_thieving_house_key	1	1	1	17	0
+
+pickpocket	Woman	zeah_woman,zeah_woman_outside,zeah_woman2,zeah_woman3,varrock_woman1,shayzien_woman_1,shayzien_woman_2	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
+
+pickpocket	Woman (East Ardougne)	ardougnian_female1	1	8.0	180	240	8	1
+loot	coins	3	3	1	1	1
