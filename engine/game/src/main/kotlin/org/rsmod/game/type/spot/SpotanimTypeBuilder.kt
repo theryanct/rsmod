@@ -3,6 +3,7 @@ package org.rsmod.game.type.spot
 import org.rsmod.game.type.util.CompactableIntArray
 import org.rsmod.game.type.util.GenericPropertySelector.select
 import org.rsmod.game.type.util.GenericPropertySelector.selectShortArray
+import org.rsmod.game.type.util.RawOpcodes
 
 @DslMarker private annotation class SpotanimBuilderDsl
 
@@ -21,6 +22,8 @@ public class SpotanimTypeBuilder(public var internal: String? = null) {
     public var recolD: CompactableIntArray = CompactableIntArray(RECOL_CAPACITY)
     public var retexS: CompactableIntArray = CompactableIntArray(RECOL_CAPACITY)
     public var retexD: CompactableIntArray = CompactableIntArray(RECOL_CAPACITY)
+
+    public var clientRaw: RawOpcodes? = null
 
     public fun build(id: Int): UnpackedSpotanimType {
         val internal = checkNotNull(internal) { "`internal` must be set." }
@@ -50,6 +53,7 @@ public class SpotanimTypeBuilder(public var internal: String? = null) {
             retexD = retexD,
             internalId = id,
             internalName = internal,
+            clientRaw = clientRaw,
         )
     }
 
@@ -93,6 +97,7 @@ public class SpotanimTypeBuilder(public var internal: String? = null) {
                 retexD = retexD,
                 internalId = internalId,
                 internalName = internalName,
+                clientRaw = RawOpcodes.merge(edit.clientRaw, base.clientRaw),
             )
         }
     }

@@ -27,6 +27,22 @@ public class RawOpcodeCapture {
     public fun result(): RawOpcodes? = out?.toByteArray()?.let(::RawOpcodes)
 }
 
+/**
+ * Reads one client-only record: runs [skip] over the payload after the already-read [code] and
+ * returns `code + payload` as a single [RawOpcodes] record.
+ */
+public fun ByteBuf.rawRecord(code: Int, skip: ByteBuf.() -> Unit): RawOpcodes {
+    val start = readerIndex()
+    skip()
+    val payload = ByteArray(readerIndex() - start)
+    getBytes(start, payload)
+    return RawOpcodes(byteArrayOf(code.toByte()) + payload)
+}
+
+/** Appends [record] to [current] (which may be null). */
+public fun appendRaw(current: RawOpcodes?, record: RawOpcodes): RawOpcodes =
+    if (current == null) record else current + record
+
 /** Writes [raw] records verbatim (call before the config terminator). */
 public fun ByteBuf.writeRawOpcodes(raw: RawOpcodes?) {
     if (raw != null && !raw.isEmpty) {

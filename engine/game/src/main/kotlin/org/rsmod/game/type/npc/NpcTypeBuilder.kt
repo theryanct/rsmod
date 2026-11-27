@@ -13,6 +13,7 @@ import org.rsmod.game.type.util.GenericPropertySelector.selectPredicate
 import org.rsmod.game.type.util.GenericPropertySelector.selectShortArray
 import org.rsmod.game.type.util.MergeableCacheBuilder
 import org.rsmod.game.type.util.ParamMap
+import org.rsmod.game.type.util.RawOpcodes
 
 @DslMarker private annotation class NpcBuilderDsl
 
@@ -84,6 +85,8 @@ public class NpcTypeBuilder(public var internal: String? = null) {
     public var contentGroup: Int? = null
     public var heroCount: Int? = null
     public var regenRate: Int? = null
+
+    public var clientRaw: RawOpcodes? = null
 
     public fun build(id: Int): UnpackedNpcType {
         val internal = checkNotNull(internal) { "`internal` must be set." }
@@ -213,6 +216,7 @@ public class NpcTypeBuilder(public var internal: String? = null) {
             regenRate = regenRate,
             internalId = id,
             internalName = internal,
+            clientRaw = clientRaw,
         )
     }
 
@@ -391,6 +395,7 @@ public class NpcTypeBuilder(public var internal: String? = null) {
                 regenRate = regenRate,
                 internalId = internalId,
                 internalName = internalName,
+                clientRaw = RawOpcodes.merge(edit.clientRaw, base.clientRaw),
             )
         }
     }
