@@ -59,9 +59,10 @@ for path in spawn_files:
     text = open(path, encoding="utf-8").read()
     spawned |= {npc_by_name[n] for n in re.findall(r"npc = '([^']+)'", text) if n in npc_by_name}
 
-trade_op, talk_op = {}, {}
+trade_op, talk_op, npc_display = {}, {}, {}
 for line in open(npcs_dump, encoding="utf-8").read().splitlines()[1:]:
     p = line.split("\t")
+    npc_display[int(p[0])] = p[1]
     for i, op in enumerate(p[5:10], start=1):
         if op.strip().lower() == "trade" and int(p[0]) not in trade_op:
             trade_op[int(p[0])] = i
@@ -285,7 +286,11 @@ for title, text in sorted(stores.items()):
     for page in ([o.strip() for o in re.findall(r"\[\[([^|\]#]+)", om.group(1))] if om else []):
         ids = owner_ids(page)
         if any(npc_sym.get(i) in handled or npc_sym.get(i) in registered for i in ids): continue
-        talkers = [i for i in ids if i in talk_op and i not in trade_op and npc_sym.get(i)]
+        # Talk-to is on almost every npc, so also require the cache name to match the page name
+        # (the wiki id for "Barman (Ratpit bar)" is a gambler in this cache).
+        base = re.sub(r"\s*\(.*\)$", "", page).strip().lower()
+        talkers = [i for i in ids if i in talk_op and i not in trade_op and npc_sym.get(i)
+                   and npc_display.get(i, "").strip().lower() == base]
         if not talkers: continue
         nid = next((i for i in talkers if i in spawned), talkers[0])
         if npc_sym[nid] in vendor_npcs: continue
