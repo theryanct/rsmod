@@ -2,14 +2,15 @@ package org.rsmod.api.cache.enricher
 
 import jakarta.inject.Inject
 import org.openrs2.cache.Cache
-import org.rsmod.api.cache.Js5Archives
+import org.openrs2.buffer.use
 import org.rsmod.api.cache.enricher.map.area.AreaCacheEnricher
 import org.rsmod.api.cache.enricher.map.area.EnrichedAreaConfig
+import org.rsmod.api.cache.map.MapArchive
+import org.rsmod.api.cache.map.MapFile
 import org.rsmod.api.cache.map.area.MapAreaDecoder
 import org.rsmod.api.cache.map.area.MapAreaDefinition
 import org.rsmod.api.cache.map.area.MapAreaEncoder
 import org.rsmod.api.cache.util.EncoderContext
-import org.rsmod.api.cache.util.readOrNull
 import org.rsmod.api.cache.util.toInlineBuf
 import org.rsmod.game.type.dbtable.DbTableTypeList
 import org.rsmod.game.type.param.ParamTypeList
@@ -44,10 +45,10 @@ constructor(
         cache: Cache
     ): MutableMap<MapSquareKey, MapAreaDefinition> {
         val areas = mutableMapOf<MapSquareKey, MapAreaDefinition>()
+        val archive = MapArchive(cache)
         for (config in this) {
-            val (mx, mz) = config.square
-            val buffer = cache.readOrNull(Js5Archives.MAPS, "a${mx}_$mz") ?: continue
-            val area = MapAreaDecoder.decode(buffer.toInlineBuf())
+            val buffer = archive.read(config.square, MapFile.Areas) ?: continue
+            val area = buffer.use { MapAreaDecoder.decode(it.toInlineBuf()) }
             areas[config.square] = area
         }
         return areas
