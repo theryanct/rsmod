@@ -1,12 +1,16 @@
-"""Fetch every OSRS Wiki page that uses Template:ItemSpawnLine and dump raw wikitext to JSON."""
+"""Fetch every OSRS Wiki page that uses a template and dump raw wikitext to JSON.
+
+Args: out.json [template]  (template defaults to ItemSpawnLine; use LocLine for npc spawns)
+"""
 import json, sys, time, urllib.parse, urllib.request
 API = "https://oldschool.runescape.wiki/api.php"
 UA = {"User-Agent": "local-dev-tool/1.0 (personal offline project)"}
 out = sys.argv[1]
+template = sys.argv[2] if len(sys.argv) > 2 else "ItemSpawnLine"
 pages, cont = {}, {}
 while True:
     params = {"action": "query", "format": "json", "formatversion": "2",
-              "generator": "embeddedin", "geititle": "Template:ItemSpawnLine",
+              "generator": "embeddedin", "geititle": "Template:" + template,
               "geinamespace": "0", "geilimit": "50",
               "prop": "revisions", "rvprop": "content", "rvslots": "main", **cont}
     req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params), headers=UA)
