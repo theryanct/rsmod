@@ -122,6 +122,43 @@ internal constructor(
         return unlockedValue != 0
     }
 
+    /**
+     * The music tab's track list, in the order the client builds it: every non-hidden music row, in
+     * dbtable order (`db_find(music:hidden, false)`). The list entry's comsub indexes into this.
+     */
+    private val jukeboxList: List<Music> by lazy {
+        repo.getAll().filterNot(Music::hidden).sortedBy(Music::id)
+    }
+
+    /**
+     * Plays the music tab entry at [listIndex] if [player] has unlocked it.
+     *
+     * @return `true` if the track started (or was already) playing.
+     */
+    public fun playJukeboxEntry(player: Player, listIndex: Int): Boolean {
+        val music = jukeboxList.getOrNull(listIndex) ?: return false
+        if (music.canUnlock && !hasUnlocked(player, music)) {
+            player.mes("You have not unlocked this piece of music yet!")
+            return false
+        }
+        play(player, music)
+        return true
+    }
+
+    /** Sends the unlock hint for the music tab entry at [listIndex]. */
+    public fun sendJukeboxHint(player: Player, listIndex: Int) {
+        val music = jukeboxList.getOrNull(listIndex) ?: return
+        if (!music.canUnlock || hasUnlocked(player, music)) {
+            player.mes("You have unlocked this piece of music.")
+            return
+        }
+        player.mes(music.unlockHint)
+    }
+
+    /** Number of entries in the music tab's track list. */
+    public val jukeboxSize: Int
+        get() = jukeboxList.size
+
     private fun setEmptyMusicText(player: Player) {
         player.ifSetText(components.music_now_playing_text, " ")
     }
