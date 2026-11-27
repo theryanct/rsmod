@@ -7,14 +7,19 @@ import org.rsmod.api.config.objParam
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.miningLvl
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLocU
+import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.content.skills.mining.configs.mining_content
 import org.rsmod.content.skills.mining.configs.mining_objs
 import org.rsmod.content.skills.mining.configs.mining_params
@@ -23,12 +28,14 @@ import org.rsmod.game.entity.Player
 import org.rsmod.game.inv.InvObj
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.loc.LocType
+import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.obj.UnpackedObjType
 import org.rsmod.game.type.obj.isType
 import org.rsmod.game.type.seq.SeqType
+import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -36,8 +43,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Mining for the F2P rocks configured in `MiningRocks`.
  *
  * As in OSRS, the pickaxe sets how often a roll happens (ticks between rolls) and the Mining level
- * sets the chance of each roll succeeding. Every success yields one ore and depletes the rock to its
- * empty variant for the rock's respawn time. Before each ore roll there is a 1/256 roll on the
+ * sets the chance of each roll succeeding. Every success yields one ore and depletes the rock to
+ * its empty variant for the rock's respawn time. Before each ore roll there is a 1/256 roll on the
  * mining gem table; if it hits, the attempt gives a gem (or nothing) instead of an ore, with no xp
  * and no depletion (OSRS Wiki, Template:MiningPreGemDropTable).
  */
@@ -49,6 +56,7 @@ class Mining
 constructor(
     private val objTypes: ObjTypeList,
     private val locRepo: LocRepository,
+    private val locTypes: LocTypeList,
     private val xpMods: XpModifiers,
     private val invisibleLvls: InvisibleLevels,
     private val mapClock: MapClock,
@@ -56,6 +64,7 @@ constructor(
     override fun ScriptContext.startup() {
         onOpLoc1(mining_content.rock) { mine(it.loc, it.type) }
         onOpLocU(mining_content.rock, mining_content.pickaxe) { mine(it.loc, it.type) }
+        onPlayerQueueWithArgs<ResumeTarget>(MiningQueues.resume) { resume(it.args) }
     }
 
     private fun ProtectedAccess.mine(rock: BoundLocInfo, type: UnpackedLocType) {
@@ -114,6 +123,7 @@ constructor(
 
         locRepo.change(rock, type.rockEmpty, type.rockRespawnTime)
         resetAnim()
+        queueResume(rock, type, type.rockRespawnTime)
     }
 
     /**
@@ -152,8 +162,41 @@ constructor(
         return "$article $this"
     }
 
+    /**
+     * Auto-resume gathering (feature toggle, default on): after the rock depletes, wait in place
+     * and start mining again when that same rock has respawned. The weak queue is cleared by
+     * walking or clicking something else; combat cancels it too, and a full inventory stops it in
+     * the normal checks.
+     */
+    private fun ProtectedAccess.queueResume(loc: BoundLocInfo, type: UnpackedLocType, ticks: Int) {
+        if (!player.isFeatureOn(Feature.AutoResumeGathering)) {
+            return
+        }
+        val target = ResumeTarget(loc.coords, type.id, RESUME_RETRIES)
+        weakQueue(MiningQueues.resume, ticks + 1, target)
+    }
+
+    private fun ProtectedAccess.resume(target: ResumeTarget) {
+        if (player.isInCombat()) {
+            return
+        }
+        val type = locTypes[target.locId] ?: return
+        val loc = locRepo.findExact(target.coords, type)
+        if (loc == null) {
+            // Respawn can lag a tick behind the timer; keep waiting briefly.
+            if (target.retries > 0) {
+                weakQueue(MiningQueues.resume, 1, target.copy(retries = target.retries - 1))
+            }
+            return
+        }
+        opLoc1(BoundLocInfo(loc, type))
+    }
+
+    private data class ResumeTarget(val coords: CoordGrid, val locId: Int, val retries: Int)
+
     companion object {
         private const val GEM_TABLE_CHANCE = 256
+        private const val RESUME_RETRIES = 10
 
         val UnpackedObjType.pickaxeLevelReq: Int by objParam(params.levelrequire)
         val UnpackedObjType.pickaxeAnim: SeqType by objParam(params.skill_anim)
@@ -187,4 +230,8 @@ constructor(
         private fun UnpackedObjType.isUsablePickaxe(miningLevel: Int): Boolean =
             isContentType(mining_content.pickaxe) && miningLevel >= pickaxeLevelReq
     }
+}
+
+internal object MiningQueues : QueueReferences() {
+    val resume = find("mining_resume")
 }
