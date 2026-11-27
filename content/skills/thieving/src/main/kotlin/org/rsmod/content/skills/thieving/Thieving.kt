@@ -21,7 +21,6 @@ import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.thieving.ThievingData.Loot
 import org.rsmod.content.skills.thieving.ThievingData.Pickpocket
 import org.rsmod.content.skills.thieving.ThievingData.Stall
-import org.rsmod.game.MapClock
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.hit.HitType
 import org.rsmod.game.loc.BoundLocInfo
@@ -49,7 +48,6 @@ constructor(
     private val npcTypes: NpcTypeList,
     private val locTypes: LocTypeList,
     private val locRepo: LocRepository,
-    private val mapClock: MapClock,
     private val xpMods: XpModifiers,
 ) : PluginScript() {
     /** Stall coords -> map clock cycle at which it can be stolen from again (no empty variant). */
@@ -122,7 +120,7 @@ constructor(
             return
         }
         val readyAt = stallCooldowns[loc.coords]
-        if (readyAt != null && mapClock.cycle < readyAt) {
+        if (readyAt != null && mapClock < readyAt) {
             mes("There's nothing left to steal right now.")
             return
         }
@@ -138,7 +136,8 @@ constructor(
         if (empty != null) {
             locRepo.change(loc, empty, stall.respawnTicks)
         } else {
-            stallCooldowns[loc.coords] = mapClock.cycle + stall.respawnTicks
+            // ProtectedAccess.mapClock is the current map clock cycle (an Int).
+            stallCooldowns[loc.coords] = mapClock + stall.respawnTicks
         }
     }
 
