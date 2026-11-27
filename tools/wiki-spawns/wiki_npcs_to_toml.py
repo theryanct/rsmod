@@ -16,6 +16,9 @@ entirely, so area modules own their squares.
 import json, re, sys
 from collections import Counter, defaultdict
 
+# `--members` generates the members-world spawns instead of the F2P ones (separate output file).
+MEMBERS_MODE = len(sys.argv) > 1 and sys.argv[1] == "--members"
+if MEMBERS_MODE: sys.argv.pop(1)
 pages = json.load(open(sys.argv[1], encoding="utf-8"))
 sym = {}
 for line in open(sys.argv[2], encoding="utf-8"):
@@ -34,15 +37,28 @@ EXCLUDE_TITLES = {
     "Count Draynor", "Delrith", "Wormbrain", "Melzar the Mad", "Lesser demon (Melzar's Maze)",
     "Sir Mordred", "Tool Leprechaun", "Fishing spot", "Rod Fishing spot",
 }
+# Members bosses (and their bodyguards), quest bosses, slayer superiors and minigame npcs.
+EXCLUDE_TITLES |= {
+    "Alchemical Hydra", "Amoxliatl", "Araxxor", "Artio", "Callisto", "Venenatis", "Vet'ion", "Scorpia",
+    "Chaos Elemental", "Chaos Fanatic", "Crazy archaeologist", "Deranged archaeologist",
+    "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme", "Kraken", "Thermonuclear smoke devil",
+    "Sarachnis", "Skotizo", "Zalcano", "The Hueycoatl", "Tentacle (Abyssal Sire)",
+    "General Graardor", "Sergeant Grimspike", "Sergeant Steelwill", "Sergeant Strongstack",
+    "K'ril Tsutsaroth", "Balfrug Kreeyath", "Tstanon Karlak", "Zakl'n Gritch",
+    "Kree'arra", "Flight Kilisa", "Flockleader Geerin", "Wingman Skree",
+    "Blood Moon", "Blue Moon", "Eclipse Moon", "Strangled Bear", "Strangled Boar", "Strangled Lynx",
+    "Chronozon", "Headless Beast", "Arrg", "Dad", "Khazard warlord", "Ice Queen", "Kolodion",
+    "Salarin the twisted", "Gladiator (Fortis Colosseum)", "Void Knight (Pest Control)",
+    "Soldier (tier 1)", "Soldier (tier 2)", "Soldier (tier 3)", "Soldier (tier 4)", "Soldier (tier 5)",
+}
 MEMBERS_F2P = {"n", "no", "f", "false"}
 # Instanced/minigame areas whose LocLines are marked F2P but are not part of the open world.
 EXCLUDE_LOCATION = re.compile(r"realm of memories", re.I)
 # Ids reserved for tutorials, quests, cutscenes or interiors; never spawned.
-SPECIAL_ID_NAME = re.compile(
-    r"tut|quest|qip_|dragonslayer|ds2_|cutscene|mcannon|_in_|instance|dummy|_cs_|_cs$|deadman|leagues|_dt_|stronghold|favour"
-    # members-only regions whose ids the wiki lumps into the same version as the F2P npc
-    r"|kourend|zeah|varlamore|slayercave|shayzien|hosidius|lovakengj|arceuus|piscarilius|tonali|prif|fossil"
-)
+SPECIAL_ID = r"tut|quest|qip_|dragonslayer|ds2_|cutscene|mcannon|_in_|instance|dummy|_cs_|_cs$|deadman|leagues|_dt_|favour"
+# Members-only regions whose ids the wiki lumps into the same version as an F2P npc (F2P mode only).
+MEMBERS_REGION_ID = r"|kourend|zeah|varlamore|slayercave|shayzien|hosidius|lovakengj|arceuus|piscarilius|tonali|prif|fossil|stronghold"
+SPECIAL_ID_NAME = re.compile(SPECIAL_ID if MEMBERS_MODE else SPECIAL_ID + MEMBERS_REGION_ID)
 
 
 def templates(text, name):
@@ -163,8 +179,9 @@ for title, text in sorted(pages.items()):
         location = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", kv.get("location", ""))
         if EXCLUDE_LOCATION.search(location):
             stats["excluded_location"] += 1; log.append((title, location, "excluded location", "")); continue
-        if kv.get("members", "").lower() not in MEMBERS_F2P:
-            stats["members"] += 1; continue
+        is_f2p = kv.get("members", "").lower() in MEMBERS_F2P
+        if is_f2p == MEMBERS_MODE:
+            stats["other_world_type"] += 1; continue
         map_id = ints(kv.get("mapid"))
         if map_id and map_id[0] >= 10000:
             stats["instance_map"] += 1; log.append((title, location, "instance mapID", kv.get("mapid"))); continue
@@ -204,4 +221,6 @@ with open(log_path, "w", encoding="utf-8", newline="\n") as f:
     f.write("page\tlocation\treason\tdetail\n")
     for row in sorted(set(log)):
         f.write("\t".join(r.replace("\t", " ") for r in row) + "\n")
+    for title, n in sorted(Counter(t for _, _, t in spawns).items()):
+        f.write(f"{title}\t\tspawned\t{n}\n")
 print("spawns", len(spawns), dict(stats))
