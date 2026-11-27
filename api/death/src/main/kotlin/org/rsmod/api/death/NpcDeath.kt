@@ -29,6 +29,7 @@ constructor(
     private val seqTypes: SeqTypeList,
     private val players: PlayerList,
     private val objRepo: ObjRepository,
+    private val dropTables: NpcDropTables,
 ) {
     public suspend fun deathNoDrops(access: StandardNpcAccess) {
         access.death(npcRepo, seqTypes, players)
@@ -43,11 +44,16 @@ constructor(
     }
 
     private fun Npc.spawnDeathDrops(dropCoords: CoordGrid) {
-        // TODO: Drop tables.
-        val hero = findHero(players)
-        if (hero != null) {
-            val duration = hero.lootDropDuration ?: constants.lootdrop_duration
+        val hero = findHero(players) ?: return
+        val duration = hero.lootDropDuration ?: constants.lootdrop_duration
+        // Npcs without a wiki drop table keep the old default: a single bones drop.
+        val drops = dropTables.roll(id)
+        if (drops == null) {
             objRepo.add(objs.bones, dropCoords, duration, hero)
+            return
+        }
+        for ((type, count) in drops) {
+            objRepo.add(type, dropCoords, duration, hero, count)
         }
     }
 
