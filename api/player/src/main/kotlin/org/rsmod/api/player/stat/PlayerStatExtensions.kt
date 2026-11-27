@@ -5,6 +5,7 @@ import kotlin.math.max
 import kotlin.math.min
 import org.rsmod.annotations.InternalApi
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.features.skillXpRate
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.utils.skills.SkillingSuccessRate
@@ -68,7 +69,7 @@ public fun Player.statAdvance(
     rate: Double = xpRate,
     globalRate: Double = globalXpRate,
 ): Int {
-    val skillRate = SkillXpRateOverrides.rateFor(stat) ?: rate
+    val skillRate = skillXpRate(stat, rate)
     return PlayerSkillXP.internalAddXP(this, stat, xp, rate = skillRate * globalRate)
 }
 
