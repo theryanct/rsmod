@@ -1,0 +1,226 @@
+# Generated from OSRS Wiki store pages by tools/shops/wiki_shops_to_tsv.py - do not edit.
+
+shop	lunar_runeshop	24	0	1000	600	1	Aubury's Rune Shop.
+npc	aubury_2op	3
+stock	airrune	5000	10
+stock	firerune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	deathrune	250	15
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+stock	skillcape_runecrafting	1	1
+stock	skillcape_runecrafting_trimmed	1	1
+
+shop	magicshop	18	0	1000	600	1	Betty's Magic Emporium
+npc	betty	3
+stock	firerune	5000	10
+stock	waterrune	5000	10
+stock	airrune	5000	10
+stock	earthrune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	deathrune	250	15
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+stock	eye_of_newt	300	10
+stock	pack_eye_newt	60	50
+stock	bluewizhat	1	100
+stock	blackwizhat	1	100
+
+shop	battleaxeshop	6	0	1000	550	10	Brian's Battleaxe Bazaar.
+npc	brian	3
+stock	bronze_battleaxe	4	200
+stock	iron_battleaxe	3	300
+stock	steel_battleaxe	2	500
+stock	black_battleaxe	1	700
+stock	mithril_battleaxe	1	1000
+stock	adamant_battleaxe	1	15000
+
+shop	keldagrim_clothes_shop	20	0	1300	400	20	Fancy Clothes Store
+npc	tailorp	3
+stock	chefs_hat	0	100
+stock	bluewizhat	3	100
+stock	yellow_cape	1	100
+stock	grey_wolf_fur	3	100
+stock	fur	3	100
+stock	needle	3	100
+stock	thread	100	5
+stock	leather_gloves	10	100
+stock	leather_boots	10	100
+stock	brown_apron	1	100
+stock	pink_skirt	5	100
+stock	black_skirt	3	100
+stock	blue_skirt	2	100
+stock	red_cape	4	100
+stock	eye_patch	3	2000
+stock	hunting_jungle_feather	0	20
+stock	hunting_desert_feather	0	20
+stock	hunting_woodland_feather	0	20
+stock	hunting_polar_feather	0	20
+stock	hunting_stripy_bird_feather	0	20
+
+shop	foodshop	11	0	1000	700	10	Food Store
+npc	wydin	3
+stock	pot_flour	3	100
+stock	raw_beef	1	100
+stock	raw_chicken	1	100
+stock	cabbage	3	100
+stock	banana	3	100
+stock	redberries	1	100
+stock	bread	0	100
+stock	chocolate_bar	1	100
+stock	cheese	3	100
+stock	tomato	3	100
+stock	potato	1	100
+
+shop	fishingshop	19	0	1000	700	10	Gerrant's Fishy Business.
+npc	gerrant	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1500	1
+stock	pack_fishing_bait	80	5
+stock	feather	1000	1
+stock	pack_feather	100	2
+stock	raw_shrimp	0	300
+stock	raw_sardine	200	1
+stock	raw_herring	0	900
+stock	raw_anchovies	0	1200
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_swordfish	0	2900
+
+shop	goldshop	15	0	1000	700	20	Grum's Gold Exchange.
+npc	grum	3
+stock	gold_ring	0	1000
+stock	sapphire_ring	0	1000
+stock	emerald_ring	0	2000
+stock	ruby_ring	0	2000
+stock	diamond_ring	0	3000
+stock	gold_necklace	0	1000
+stock	sapphire_necklace	0	2000
+stock	emerald_necklace	0	2000
+stock	ruby_necklace	0	3000
+stock	diamond_necklace	0	3000
+stock	strung_gold_amulet	0	1000
+stock	strung_sapphire_amulet	0	2000
+stock	strung_emerald_amulet	0	3000
+stock	strung_ruby_amulet	0	4000
+stock	strung_diamond_amulet	0	5000
+
+shop	warguild_armour_shop	38	0	1000	600	20	Horvik's Armour Shop.
+npc	horvik_the_armourer	3
+stock	bronze_chainbody	5	100
+stock	iron_chainbody	3	200
+stock	steel_chainbody	3	400
+stock	mithril_chainbody	1	3000
+stock	bronze_platebody	3	100
+stock	iron_platebody	1	200
+stock	steel_platebody	1	400
+stock	black_platebody	1	3000
+stock	mithril_platebody	1	3000
+stock	iron_platelegs	1	100
+stock	studded_body	1	700
+stock	studded_chaps	1	700
+
+shop	archeryshop	15	0	1000	550	10	Lowe's Archery Emporium
+npc	lowe	3
+stock	bronze_arrow	2000	10
+stock	iron_arrow	1500	15
+stock	steel_arrow	1000	20
+stock	mithril_arrow	800	15
+stock	adamant_arrow	600	20
+stock	bolt	1500	10
+stock	shortbow	4	100
+stock	longbow	4	100
+stock	oak_shortbow	3	200
+stock	oak_longbow	3	200
+stock	willow_shortbow	2	200
+stock	willow_longbow	2	200
+stock	maple_shortbow	1	100
+stock	maple_longbow	1	100
+stock	crossbow	2	400
+
+shop	clotheshop	12	0	1000	550	10	Thessalia's Fine Clothes.
+npc	thessalia_normal	3
+stock	white_apron	3	100
+stock	leather_armour	12	100
+stock	leather_gloves	10	100
+stock	leather_boots	10	100
+stock	brown_apron	1	100
+stock	pink_skirt	5	100
+stock	black_skirt	3	100
+stock	blue_skirt	2	100
+stock	red_cape	4	100
+stock	silk	5	500
+stock	needle	3	5
+stock	thread	100	5
+
+shop	generalshop2	40	1	1300	400	30	Varrock General Store
+npc	generalshopkeeper2	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
+
+shop	swordshop	18	0	1000	600	20	Varrock Swordshop
+npc	swordshop1	3
+stock	bronze_sword	5	100
+stock	iron_sword	4	200
+stock	steel_sword	4	400
+stock	black_sword	3	1000
+stock	mithril_sword	3	3000
+stock	adamant_sword	2	12000
+stock	bronze_longsword	4	100
+stock	iron_longsword	3	200
+stock	steel_longsword	3	400
+stock	black_longsword	2	1000
+stock	mithril_longsword	2	3000
+stock	adamant_longsword	1	12000
+stock	bronze_dagger	10	100
+stock	iron_dagger	6	200
+stock	steel_dagger	5	400
+stock	black_dagger	4	1000
+stock	mithril_dagger	3	3000
+stock	adamant_dagger	2	12000
+
+shop	teashop	1	0	1000	600	20	Ye olde Tea Shoppe.
+npc	tea_seller	3
+stock	cup_of_tea	20	50
+
+shop	memberstaffshop	7	0	1000	550	20	Zaff's Superior Staffs!
+npc	zaff	3
+stock	battlestaff	5	100
+stock	plainstaff	5	100
+stock	magic_staff	5	200
+stock	staff_of_air	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_earth	2	1000
+stock	staff_of_fire	2	1000

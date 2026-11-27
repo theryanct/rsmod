@@ -49,6 +49,7 @@ def decode_seq(d):
 def decode_npc(d):
     """Mirrors api/cache NpcTypeDecoder; opcodes are NOT written in ascending order."""
     b = Buf(d); name, ready, walk, size = "", -1, -1, 1
+    ops = [""] * 5
 
     def big_smart():  # readNullableLargeSmart
         if d[b.p] & 0x80: b.i32()
@@ -69,7 +70,7 @@ def decode_npc(d):
         elif op == 14: walk = b.u16()
         elif op in (15, 16, 18): b.u16()
         elif op == 17: walk = b.u16(); b.p += 6
-        elif 30 <= op < 35: b.string()
+        elif 30 <= op < 35: ops[op - 30] = b.string()
         elif op in (40, 41): n = b.u8(); b.p += 4 * n
         elif op in (74, 75, 76, 77, 78, 79, 95, 97, 98, 103, 114, 116, 124): b.u16()
         elif op in (115, 117): b.p += 8
@@ -91,7 +92,7 @@ def decode_npc(d):
                 else: b.i32()
         else:
             raise ValueError(f"unknown npc opcode {op} at {b.p - 1}")
-    return name, ready, walk, size
+    return name, ready, walk, size, ops
 
 
 def main(cache_dir, out_dir):
@@ -124,13 +125,13 @@ def main(cache_dir, out_dir):
             w.write(f"{sid}\t{kind}\t{skel}\t{len(g)}\n")
     npcs = c.group_files(CONFIG, NPC_GROUP)
     with open(os.path.join(out_dir, "npcs.tsv"), "w", newline="\n", encoding="utf-8") as w:
-        w.write("id\tname\tready\twalk\tsize\n")
+        w.write("id\tname\tready\twalk\tsize\top1\top2\top3\top4\top5\n")
         for nid in sorted(npcs):
             try:
-                name, ready, walk, size = decode_npc(npcs[nid])
+                name, ready, walk, size, ops = decode_npc(npcs[nid])
             except Exception as e:
-                print("npc", nid, e, file=sys.stderr); name, ready, walk, size = "?", -1, -1, 1
-            w.write(f"{nid}\t{name}\t{ready}\t{walk}\t{size}\n")
+                print("npc", nid, e, file=sys.stderr); name, ready, walk, size, ops = "?", -1, -1, 1, [""] * 5
+            w.write(f"{nid}\t{name}\t{ready}\t{walk}\t{size}\t" + "\t".join(ops) + "\n")
 
 
 if __name__ == "__main__":

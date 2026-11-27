@@ -460,6 +460,26 @@ internal fun Player.ifMesbox(text: String, pauseText: String, lineHeight: Int, e
     runClientScript(1508, "0")
 }
 
+/**
+ * Opens the chatbox level-up display: shows only [icon] among [skillIcons] (all hidden if
+ * [icon] is null) and sets the two lines of text plus the continue button.
+ */
+internal fun Player.ifLevelUp(
+    icon: ComponentType?,
+    skillIcons: List<ComponentType>,
+    text1: String,
+    text2: String,
+    eventBus: EventBus,
+) {
+    ifOpenChat(interfaces.levelup_display, constants.modal_fixedwidthandheight, eventBus)
+    for (layer in skillIcons) {
+        ifSetHide(layer, hide = icon == null || !layer.isType(icon))
+    }
+    ifSetText(components.levelup_text1, text1)
+    ifSetText(components.levelup_text2, text2)
+    ifSetPauseText(components.levelup_continue, constants.cm_pausebutton)
+}
+
 internal fun Player.ifObjbox(
     text: String,
     obj: Int,

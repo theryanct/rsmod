@@ -94,6 +94,7 @@ import org.rsmod.api.player.ui.ifConfirmOverlay
 import org.rsmod.api.player.ui.ifConfirmOverlayClose
 import org.rsmod.api.player.ui.ifDoubleobjbox
 import org.rsmod.api.player.ui.ifMenu
+import org.rsmod.api.player.ui.ifLevelUp
 import org.rsmod.api.player.ui.ifMesbox
 import org.rsmod.api.player.ui.ifObjbox
 import org.rsmod.api.player.ui.ifOpenFullOverlay
@@ -2042,6 +2043,22 @@ public class ProtectedAccess(
             val lineHeight = alignment.mesLineHeight(lineCount)
             mesboxPage(pgText, lineHeight, constants.cm_pausebutton, context.eventBus)
         }
+    }
+
+    /**
+     * Shows the chatbox level-up display (skill icon + two lines) and suspends until the player
+     * clicks continue.
+     */
+    public suspend fun levelUpBox(
+        icon: ComponentType?,
+        skillIcons: List<ComponentType>,
+        text1: String,
+        text2: String,
+    ) {
+        player.ifLevelUp(icon, skillIcons, text1, text2, context.eventBus)
+        val modal = player.ui.getModalOrNull(components.chatbox_chatmodal)
+        val input = coroutine.pause(ResumePauseButtonInput::class)
+        resumePauseButtonWithProtectedAccess(input, modal, components.levelup_continue)
     }
 
     private suspend fun mesboxPage(
