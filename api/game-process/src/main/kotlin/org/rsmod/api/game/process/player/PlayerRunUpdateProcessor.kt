@@ -7,6 +7,8 @@ import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.inv.weight.InvWeight
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.UpdateRun
 import org.rsmod.api.player.stat.agilityLvl
 import org.rsmod.api.player.vars.setActiveMoveSpeed
@@ -43,8 +45,8 @@ public class PlayerRunUpdateProcessor @Inject constructor(private val objTypes: 
     }
 
     private fun Player.decreaseRunEnergy() {
-        // Local pet-server tweak: run energy never drains. Set to false to restore OSRS drain.
-        if (INFINITE_RUN_ENERGY) {
+        // Local feature toggle (default on): run energy never drains.
+        if (isFeatureOn(Feature.InfiniteRun)) {
             return
         }
         val weightKg = (runWeight / 1000).coerceIn(0, 64)
@@ -136,4 +138,3 @@ public class PlayerRunUpdateProcessor @Inject constructor(private val objTypes: 
     }
 }
 
-private const val INFINITE_RUN_ENERGY = true

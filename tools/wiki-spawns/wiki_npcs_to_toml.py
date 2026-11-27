@@ -35,6 +35,8 @@ EXCLUDE_TITLES = {
     "Sir Mordred", "Tool Leprechaun", "Fishing spot", "Rod Fishing spot",
 }
 MEMBERS_F2P = {"n", "no", "f", "false"}
+# Instanced/minigame areas whose LocLines are marked F2P but are not part of the open world.
+EXCLUDE_LOCATION = re.compile(r"realm of memories", re.I)
 # Ids reserved for tutorials, quests, cutscenes or interiors; never spawned.
 SPECIAL_ID_NAME = re.compile(
     r"tut|quest|qip_|dragonslayer|ds2_|cutscene|mcannon|_in_|instance|dummy|_cs_|_cs$|deadman|leagues|_dt_|stronghold|favour"
@@ -150,7 +152,7 @@ rotation = defaultdict(int)
 for title, text in sorted(pages.items()):
     lines = list(templates(text, "LocLine"))
     if not lines: continue
-    if title in EXCLUDE_TITLES:
+    if title in EXCLUDE_TITLES or EXCLUDE_LOCATION.search(title):
         stats["excluded_title"] += len(lines); log.append((title, "", "excluded title", "")); continue
     versions = infobox_versions(text)
     if versions is None:
@@ -159,6 +161,8 @@ for title, text in sorted(pages.items()):
         clean = strip_nested(raw)
         kv = fields(clean)
         location = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", kv.get("location", ""))
+        if EXCLUDE_LOCATION.search(location):
+            stats["excluded_location"] += 1; log.append((title, location, "excluded location", "")); continue
         if kv.get("members", "").lower() not in MEMBERS_F2P:
             stats["members"] += 1; continue
         map_id = ints(kv.get("mapid"))

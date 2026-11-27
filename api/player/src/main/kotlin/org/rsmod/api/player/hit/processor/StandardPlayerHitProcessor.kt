@@ -7,6 +7,8 @@ import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.queues
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.headbar.InternalPlayerHeadbars
 import org.rsmod.api.player.lefthand
 import org.rsmod.api.player.output.soundSynth
@@ -36,7 +38,8 @@ public object StandardPlayerHitProcessor : QueuedPlayerHitProcessor {
         // TODO(combat): Process degradation, ring of recoil, retribution, etc.
 
         val damage = min(player.hitpoints, hit.damage)
-        if (damage > 0) {
+        // Local feature toggle (default off): the hit still shows, but no HP is lost.
+        if (damage > 0 && !player.isFeatureOn(Feature.InfiniteHealth)) {
             statSub(stats.hitpoints, constant = damage, percent = 0)
         }
 

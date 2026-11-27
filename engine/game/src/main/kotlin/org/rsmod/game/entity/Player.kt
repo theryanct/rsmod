@@ -191,6 +191,11 @@ public class Player(
     public var xpRate: Double = 1.0
     public var globalXpRate: Double = 1.0
 
+    /** Display names on the player's friend list, in the order they were added. */
+    public val friendList: MutableList<String> = ArrayList()
+    /** Display names on the player's ignore list, in the order they were added. */
+    public val ignoreList: MutableList<String> = ArrayList()
+
     public var publicMessage: PublicMessage? = null
     public var pendingSay: String? = null
     public var pendingRunWeight: Boolean = false
