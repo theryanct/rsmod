@@ -12,6 +12,9 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.config.refs.varcons
 import org.rsmod.api.controller.vars.intVarCon
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.righthand
@@ -24,8 +27,10 @@ import org.rsmod.api.script.onAiConTimer
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc3
 import org.rsmod.api.script.onOpLocU
+import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.content.skills.woodcutting.configs.WoodcuttingParams
 import org.rsmod.events.UnboundEvent
 import org.rsmod.game.MapClock
@@ -42,6 +47,7 @@ import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.obj.UnpackedObjType
 import org.rsmod.game.type.seq.SeqType
+import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -66,6 +72,7 @@ constructor(
         onOpLoc1(content.tree) { attempt(it.loc, it.type) }
         onOpLoc3(content.tree) { cut(it.loc, it.type) }
         onOpLocU(content.tree, content.woodcutting_axe) { cut(it.loc, it.type) }
+        onPlayerQueueWithArgs<ResumeTarget>(WoodcuttingQueues.resume) { resume(it.args) }
         onAiConTimer(controllers.woodcutting_tree_duration) { controller.treeDespawnTick() }
     }
 
@@ -156,6 +163,8 @@ constructor(
             resetAnim()
             soundSynth(synths.tree_fall_sound)
             sendLocalOverlayLoc(tree, type, respawnTime)
+            queueResume(tree, type, respawnTime)
+            return
         }
 
         opLoc3(tree)
@@ -237,6 +246,38 @@ constructor(
     data class CutLogs(val player: Player, val tree: BoundLocInfo, val product: ObjType) :
         UnboundEvent
 
+    /**
+     * Auto-resume gathering (feature toggle, default on): after the tree depletes, wait in place
+     * and start chopping again when that same tree has respawned. The weak queue is cleared by
+     * walking or clicking something else; combat cancels it too, and a full inventory stops it in
+     * the normal checks.
+     */
+    private fun ProtectedAccess.queueResume(loc: BoundLocInfo, type: UnpackedLocType, ticks: Int) {
+        if (!player.isFeatureOn(Feature.AutoResumeGathering)) {
+            return
+        }
+        val target = ResumeTarget(loc.coords, type.id, RESUME_RETRIES)
+        weakQueue(WoodcuttingQueues.resume, ticks + 1, target)
+    }
+
+    private fun ProtectedAccess.resume(target: ResumeTarget) {
+        if (player.isInCombat()) {
+            return
+        }
+        val type = locTypes[target.locId] ?: return
+        val loc = locRepo.findExact(target.coords, type)
+        if (loc == null) {
+            // Respawn can lag a tick behind the timer; keep waiting briefly.
+            if (target.retries > 0) {
+                weakQueue(WoodcuttingQueues.resume, 1, target.copy(retries = target.retries - 1))
+            }
+            return
+        }
+        opLoc1(BoundLocInfo(loc, type))
+    }
+
+    private data class ResumeTarget(val coords: CoordGrid, val locId: Int, val retries: Int)
+
     companion object {
         var Controller.treeActivelyCutTicks: Int by intVarCon(varcons.woodcutting_tree_cut_ticks)
         var Controller.treeLastCut: Int by intVarCon(varcons.woodcutting_tree_last_cut)
@@ -304,3 +345,9 @@ constructor(
         }
     }
 }
+
+internal object WoodcuttingQueues : QueueReferences() {
+    val resume = find("woodcutting_resume")
+}
+
+private const val RESUME_RETRIES = 10
