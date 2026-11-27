@@ -9,6 +9,7 @@ import net.rsprot.protocol.game.incoming.buttons.IfButtonT
 import net.rsprot.protocol.game.incoming.locs.OpLoc
 import net.rsprot.protocol.game.incoming.locs.OpLoc6
 import net.rsprot.protocol.game.incoming.locs.OpLocT
+import net.rsprot.protocol.game.incoming.messaging.MessagePrivate
 import net.rsprot.protocol.game.incoming.messaging.MessagePublic
 import net.rsprot.protocol.game.incoming.misc.client.MapBuildComplete
 import net.rsprot.protocol.game.incoming.misc.client.WindowStatus
@@ -28,14 +29,23 @@ import net.rsprot.protocol.game.incoming.resumed.ResumePNameDialog
 import net.rsprot.protocol.game.incoming.resumed.ResumePObjDialog
 import net.rsprot.protocol.game.incoming.resumed.ResumePStringDialog
 import net.rsprot.protocol.game.incoming.resumed.ResumePauseButton
+import net.rsprot.protocol.game.incoming.social.FriendListAdd
+import net.rsprot.protocol.game.incoming.social.FriendListDel
+import net.rsprot.protocol.game.incoming.social.IgnoreListAdd
+import net.rsprot.protocol.game.incoming.social.IgnoreListDel
 import net.rsprot.protocol.message.codec.incoming.GameMessageConsumerRepositoryBuilder
 import net.rsprot.protocol.message.codec.incoming.provider.DefaultGameMessageConsumerRepositoryProvider
 import org.rsmod.api.net.rsprot.handlers.ClientCheatHandler
 import org.rsmod.api.net.rsprot.handlers.CloseModalHandler
+import org.rsmod.api.net.rsprot.handlers.FriendListAddHandler
+import org.rsmod.api.net.rsprot.handlers.FriendListDelHandler
 import org.rsmod.api.net.rsprot.handlers.If3ButtonHandler
 import org.rsmod.api.net.rsprot.handlers.IfButtonDHandler
 import org.rsmod.api.net.rsprot.handlers.IfButtonTHandler
+import org.rsmod.api.net.rsprot.handlers.IgnoreListAddHandler
+import org.rsmod.api.net.rsprot.handlers.IgnoreListDelHandler
 import org.rsmod.api.net.rsprot.handlers.MapBuildCompleteHandler
+import org.rsmod.api.net.rsprot.handlers.MessagePrivateHandler
 import org.rsmod.api.net.rsprot.handlers.MessagePublicHandler
 import org.rsmod.api.net.rsprot.handlers.MoveGameClickHandler
 import org.rsmod.api.net.rsprot.handlers.MoveMinimapClickHandler
@@ -86,6 +96,11 @@ constructor(
     private val ifButtonD: IfButtonDHandler,
     private val ifButtonT: IfButtonTHandler,
     private val mapBuildComplete: MapBuildCompleteHandler,
+    private val friendListAdd: FriendListAddHandler,
+    private val friendListDel: FriendListDelHandler,
+    private val ignoreListAdd: IgnoreListAddHandler,
+    private val ignoreListDel: IgnoreListDelHandler,
+    private val messagePrivate: MessagePrivateHandler,
 ) {
     fun get(): DefaultGameMessageConsumerRepositoryProvider<Player> {
         val builder = GameMessageConsumerRepositoryBuilder<Player>()
@@ -114,6 +129,11 @@ constructor(
         builder.addListener(IfButtonD::class.java, ifButtonD)
         builder.addListener(IfButtonT::class.java, ifButtonT)
         builder.addListener(MapBuildComplete::class.java, mapBuildComplete)
+        builder.addListener(FriendListAdd::class.java, friendListAdd)
+        builder.addListener(FriendListDel::class.java, friendListDel)
+        builder.addListener(IgnoreListAdd::class.java, ignoreListAdd)
+        builder.addListener(IgnoreListDel::class.java, ignoreListDel)
+        builder.addListener(MessagePrivate::class.java, messagePrivate)
         return DefaultGameMessageConsumerRepositoryProvider(builder.build())
     }
 }
