@@ -4,6 +4,7 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.round
 import org.rsmod.annotations.InternalApi
 import org.rsmod.api.invtx.invAdd
 import org.rsmod.api.invtx.invClear
@@ -104,6 +105,9 @@ constructor(
         onCommand("varbit", "Set varbit value", ::setVarBit) {
             invalidArgs = "Use as ::varbit debugNameOrId value (ex: emote_hotline_bling 1)"
         }
+        onCommand("xprate", "Set your xp rate multiplier", ::xpRate) {
+            invalidArgs = "Use as ::xprate rate (ex: 1, 5, 2.5)"
+        }
         onCommand("reboot", "Reboots the game world, applying packed changes", ::reboot)
         onCommand("slowreboot", "Reboots the game world, with a timer", ::slowReboot)
     }
@@ -111,6 +115,26 @@ constructor(
     private fun master(cheat: Cheat) = with(cheat) { player.setStatLevels(level = 99) }
 
     private fun reset(cheat: Cheat) = with(cheat) { player.setStatLevels(level = 1) }
+
+    private fun xpRate(cheat: Cheat) =
+        with(cheat) {
+            val arg = args.getOrNull(0)
+            if (arg == null) {
+                player.mes("Your xp rate is ${player.xpRate.formatXpRate()}x.")
+                player.mes("Use as ::xprate rate (ex: 1, 5, 2.5)")
+                return
+            }
+            // Stored as whole hundredths (xp_rate_in_hundreds), so round to 2 decimals.
+            val rate = arg.removeSuffix("x").toDoubleOrNull()?.let { round(it * 100) / 100 }
+            if (rate == null || !rate.isFinite() || rate < MIN_XP_RATE || rate > MAX_XP_RATE) {
+                player.mes("Xp rate must be a number from $MIN_XP_RATE to ${MAX_XP_RATE.toInt()}.")
+                return
+            }
+            player.xpRate = rate
+            player.mes("Your xp rate is now ${rate.formatXpRate()}x.")
+        }
+
+    private fun Double.formatXpRate(): String = toBigDecimal().stripTrailingZeros().toPlainString()
 
     private fun mypos(cheat: Cheat) =
         with(cheat) {
@@ -408,3 +432,6 @@ constructor(
         return if (bestMatchScore >= 0.5) bestMatchName else null
     }
 }
+
+private const val MIN_XP_RATE = 0.01
+private const val MAX_XP_RATE = 1000.0
