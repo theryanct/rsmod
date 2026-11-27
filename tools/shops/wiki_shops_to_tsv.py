@@ -74,6 +74,8 @@ for path in glob.glob("content/**/*.kt", recursive=True):
     if "NpcReferences()" in text:
         handled |= set(re.findall(r'find\("([^"]+)"', text))
 HAND_STOCKED_INVS = {"axeshop", "generalshop1"}
+MAX_RESTOCK_CYCLES = 65535  # InvTypeEncoder writes restockCycles with writeShort
+MAX_STOCK_ENTRIES = 255     # InvTypeEncoder: "Can only store up to 255 default stock"
 
 # Client inv sizes from the cache (config group 5, opcode 2).
 inv_size = {}
@@ -207,7 +209,9 @@ for title, text in sorted(stores.items()):
         on = obj_name(name)
         if on is None or count is None:
             log.append((title, name, "skipped stock line", f"obj={on} stock={f.get('stock', '')}")); continue
-        stock.append((on, int(count.group(0)), int(restock.group(0)) if restock else 100))
+        # The inv encoder stores restockCycles as an unsigned short and obj ids as shorts.
+        cycles = min(int(restock.group(0)) if restock else 100, MAX_RESTOCK_CYCLES)
+        stock.append((on, int(count.group(0)), cycles))
     general = "general store" in info.get("special", "").lower()
     if not stock and not general:
         stats["no_stock"] += 1; log.append((title, "", "no usable stock", "")); continue
