@@ -28,14 +28,18 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
         if (input.isEmpty()) {
             return
         }
-        if (input.equals("reset", ignoreCase = true) || input.equals("default", ignoreCase = true)) {
+        val isReset =
+            input == "0" ||
+                input.equals("reset", ignoreCase = true) ||
+                input.equals("default", ignoreCase = true)
+        if (isReset) {
             player.setSkillXpOverride(stat, null)
             player.mes("${stat.displayName} xp rate reset: ${describeSkillRate(player, stat)}.")
             return
         }
         val rate = input.removeSuffix("x").toDoubleOrNull()
         if (rate == null || !rate.isFinite() || rate < MIN_RATE || rate > MAX_RATE) {
-            player.mes("Xp rate must be a number from $MIN_RATE to ${MAX_RATE.toInt()}, or 'reset'.")
+            player.mes("Xp rate must be from $MIN_RATE to ${MAX_RATE.toInt()}, or 0 to reset.")
             return
         }
         player.setSkillXpOverride(stat, rate)
@@ -81,10 +85,47 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
             if (index >= stats.size) {
                 return
             }
-            val stat = stats[index]
-            val input = stringDialog("${stat.displayName} xp rate (number, or 'reset'):")
-            applySkillRate(player, stat, input.trim())
+            skillRateOptions(stats[index])
         }
+    }
+
+    /**
+     * Rate picker for one skill. Numbers only (no typing letters: RuneLite key remapping swallows
+     * them): presets cover the common rates including decimals, "Custom" takes a whole number
+     * (0 = default), and "Reset to default" clears the override.
+     */
+    private suspend fun ProtectedAccess.skillRateOptions(stat: UnpackedStatType) {
+        val presets = RATE_PRESETS.map { "${formatRate(it)}x" }
+        val choices = presets + listOf("Custom (whole number)...", "Reset to default", "Back")
+        val title = "${stat.displayName} xp rate: ${describeSkillRate(player, stat)}"
+        val index = menu(title = title, hotkeys = false, choices = choices)
+        when {
+            index < presets.size -> setSkillRate(player, stat, RATE_PRESETS[index])
+            index == presets.size -> {
+                val value = countDialog("${stat.displayName} xp rate (whole number, 0 = default):")
+                if (value == 0) {
+                    resetSkillRate(player, stat)
+                } else {
+                    setSkillRate(player, stat, value.toDouble())
+                }
+            }
+            index == presets.size + 1 -> resetSkillRate(player, stat)
+            else -> return
+        }
+    }
+
+    private fun setSkillRate(player: Player, stat: UnpackedStatType, rate: Double) {
+        if (rate < MIN_RATE || rate > MAX_RATE) {
+            player.mes("Xp rate must be from $MIN_RATE to ${MAX_RATE.toInt()}.")
+            return
+        }
+        player.setSkillXpOverride(stat, rate)
+        player.mes("${stat.displayName} xp rate is now ${formatRate(player.skillXpRate(stat))}x.")
+    }
+
+    private fun resetSkillRate(player: Player, stat: UnpackedStatType) {
+        player.setSkillXpOverride(stat, null)
+        player.mes("${stat.displayName} xp rate reset: ${describeSkillRate(player, stat)}.")
     }
 
     private fun skillStats(): List<UnpackedStatType> =
@@ -98,5 +139,8 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
     private companion object {
         private const val MIN_RATE = 0.01
         private const val MAX_RATE = 1000.0
+
+        private val RATE_PRESETS =
+            listOf(0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 5.0, 10.0, 25.0, 50.0, 100.0)
     }
 }
