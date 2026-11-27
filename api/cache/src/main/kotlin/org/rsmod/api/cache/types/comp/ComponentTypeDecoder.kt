@@ -129,10 +129,10 @@ public object ComponentTypeDecoder {
 
             if (type == 6) {
                 modelKind = 1
-                model = data.readUnsignedShortOrNull()
+                model = data.readInt().takeUnless { it == -1 } // rev 237+: int
 
                 secondaryModelKind = 1
-                secondaryModel = data.readUnsignedShortOrNull()
+                secondaryModel = data.readInt().takeUnless { it == -1 } // rev 237+: int
 
                 modelAnim = data.readUnsignedShortOrNull()
                 secondaryModelAnim = data.readUnsignedShortOrNull()
@@ -232,7 +232,7 @@ public object ComponentTypeDecoder {
 
             if (type == 6) {
                 modelKind = 1
-                model = data.readUnsignedShortOrNull()
+                model = data.readInt().takeUnless { it == -1 } // rev 237+: int
 
                 modelX = data.readShort().toInt()
                 modelY = data.readShort().toInt()

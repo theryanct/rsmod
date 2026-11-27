@@ -90,8 +90,8 @@ public object ComponentTypeEncoder {
             }
 
             if (type == 6) {
-                data.writeShort(model)
-                data.writeShort(secondaryModel)
+                data.writeInt(model) // rev 237+: int model ids
+                data.writeInt(secondaryModel)
                 data.writeShort(modelAnim)
                 data.writeShort(secondaryModelAnim)
                 data.writeShort(modelZoom)
@@ -149,7 +149,7 @@ public object ComponentTypeEncoder {
             }
 
             if (type == 6) {
-                data.writeShort(model)
+                data.writeInt(model) // rev 237+: int model ids
                 data.writeShort(modelX)
                 data.writeShort(modelY)
                 data.writeShort(modelAngleX)

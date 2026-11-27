@@ -17,6 +17,7 @@ public object ClientScriptTypeDecoder {
     private const val VERSION_GROUP = 0
 
     private const val OPCODE_PUSH_CONSTANT_STRING = 3
+    private const val OPCODE_PUSH_CONSTANT_LONG = 61
     private const val OPCODE_RETURN = 21
     private const val OPCODE_POP_INT_DISCARD = 38
     private const val OPCODE_POP_STRING_DISCARD = 39
@@ -48,7 +49,8 @@ public object ClientScriptTypeDecoder {
     public fun decode(builder: ClientScriptTypeBuilder, data: ByteBuf): Unit =
         with(builder) {
             val switchDataLength = data.getUnsignedShort(data.writerIndex() - Short.SIZE_BYTES)
-            val commandEndPosition = data.writerIndex() - Short.SIZE_BYTES - switchDataLength - 12
+            // Rev 237+ trailer is 16 bytes: long local/argument counts were added.
+            val commandEndPosition = data.writerIndex() - Short.SIZE_BYTES - switchDataLength - 16
             data.readerIndex(commandEndPosition)
 
             val commandCount = data.readInt()
@@ -58,8 +60,10 @@ public object ClientScriptTypeDecoder {
 
             val intLocalCount = data.readUnsignedShort()
             val stringLocalCount = data.readUnsignedShort()
+            data.readUnsignedShort() // long local count (not used server-side)
             val intArgumentCount = data.readUnsignedShort()
             val stringArgumentCount = data.readUnsignedShort()
+            data.readUnsignedShort() // long argument count (not used server-side)
             val switchCount = data.readUnsignedByte().toInt()
 
             val switches =
@@ -84,6 +88,8 @@ public object ClientScriptTypeDecoder {
                     OPCODE_PUSH_CONSTANT_STRING -> {
                         stringOperands[index] = data.readString()
                     }
+                    // The server never runs scripts; long constants are read and dropped.
+                    OPCODE_PUSH_CONSTANT_LONG -> data.readLong()
                     OPCODE_RETURN,
                     OPCODE_POP_INT_DISCARD,
                     OPCODE_POP_STRING_DISCARD,
