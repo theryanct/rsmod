@@ -13,4 +13,6 @@ object JournalComponents : ComponentReferences() {
     val summary_contents = find("account_summary_sidepanel:summary_contents", 2485176660594907617)
     val summary_click_layer =
         find("account_summary_sidepanel:summary_click_layer", 2485176660594907618)
+
+    val collection_close = find("collection:close")
 }
