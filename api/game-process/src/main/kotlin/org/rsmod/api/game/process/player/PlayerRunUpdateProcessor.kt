@@ -43,6 +43,10 @@ public class PlayerRunUpdateProcessor @Inject constructor(private val objTypes: 
     }
 
     private fun Player.decreaseRunEnergy() {
+        // Local pet-server tweak: run energy never drains. Set to false to restore OSRS drain.
+        if (INFINITE_RUN_ENERGY) {
+            return
+        }
         val weightKg = (runWeight / 1000).coerceIn(0, 64)
         val baseLoss = 60 + (67 * weightKg) / 64
 
@@ -131,3 +135,5 @@ public class PlayerRunUpdateProcessor @Inject constructor(private val objTypes: 
             )
     }
 }
+
+private const val INFINITE_RUN_ENERGY = true
