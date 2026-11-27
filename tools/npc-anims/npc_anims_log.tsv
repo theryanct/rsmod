@@ -1,0 +1,400 @@
+npc	result	detail
+0_50_49_saltfish	unmatched	no named death seq on skeleton 755
+0_50_50_freshfish	unmatched	no named death seq on skeleton 755
+aggressive_black_knight	human	player skeleton: human fallback anims are correct
+aggressive_black_knight_f	human	player skeleton: human fallback anims are correct
+aide_tutor_banker	human	player skeleton: human fallback anims are correct
+aide_tutor_clues	human	player skeleton: human fallback anims are correct
+aide_tutor_cooking	human	player skeleton: human fallback anims are correct
+aide_tutor_crafting	human	player skeleton: human fallback anims are correct
+aide_tutor_fishing	human	player skeleton: human fallback anims are correct
+aide_tutor_magic	human	player skeleton: human fallback anims are correct
+aide_tutor_melee	human	player skeleton: human fallback anims are correct
+aide_tutor_mining	human	player skeleton: human fallback anims are correct
+aide_tutor_prayer	human	player skeleton: human fallback anims are correct
+aide_tutor_ranging	human	player skeleton: human fallback anims are correct
+aide_tutor_smithing_apprentice	human	player skeleton: human fallback anims are correct
+aide_tutor_woodsman	human	player skeleton: human fallback anims are correct
+air_wizard	human	player skeleton: human fallback anims are correct
+al_kharid_man	human	player skeleton: human fallback anims are correct
+al_kharid_warrior	human	player skeleton: human fallback anims are correct
+ap_guide_parent	skip	no enricher config block
+archeradventurerpg	human	player skeleton: human fallback anims are correct
+barbarianwoman_varrock	human	player skeleton: human fallback anims are correct
+black_heather	human	player skeleton: human fallback anims are correct
+boar	named	name match: death_anim=npc_boar_combat_death
+bob	human	player skeleton: human fallback anims are correct
+brawling_bandit	human	player skeleton: human fallback anims are correct
+brownbear	named	name match: death_anim=bear_rework_death, attack_anim=bear_rework_attack, defend_anim=bear_rework_defend
+butterfly	unmatched	no named death seq on skeleton 278
+butterfly_bluemorpo	unmatched	no named death seq on skeleton 278
+butterfly_viceroy	unmatched	no named death seq on skeleton 278
+camdozaal_golem_body	unmatched	ambiguous: 2 anim families on skeleton 1955, none named like the npc
+camdozaal_golem_flawed	unmatched	ambiguous: 2 anim families on skeleton 1955, none named like the npc
+camdozaal_golem_mind	unmatched	ambiguous: 2 anim families on skeleton 1955, none named like the npc
+canoeing_bill	human	player skeleton: human fallback anims are correct
+chaos_temple_monk2	human	player skeleton: human fallback anims are correct
+chaosmonk1	human	player skeleton: human fallback anims are correct
+chaosmonk2	human	player skeleton: human fallback anims are correct
+cook	human	player skeleton: human fallback anims are correct
+count_check	human	player skeleton: human fallback anims are correct
+crow_lumb_patrol	unmatched	no named death seq on skeleton 1534
+crow_lumb_patrol2	unmatched	no named death seq on skeleton 1534
+crow_lumb_patrol3	unmatched	no named death seq on skeleton 1534
+crow_lumb_patrol4	unmatched	no named death seq on skeleton 1534
+crow_lumb_patrol5	unmatched	no named death seq on skeleton 1534
+crow_lumb_patrol6	unmatched	no named death seq on skeleton 1534
+cws_doomsayer	skip	no enricher config block
+dark_warrior	human	player skeleton: human fallback anims are correct
+darkbear	named	name match: death_anim=bear_rework_death, attack_anim=bear_rework_attack, defend_anim=bear_rework_defend
+deadly_red_spider	copied	same stand anim as giantspider1
+deadman_banker_blue_south	skip	no enricher config block
+deadman_guard_lumbridge	skip	no enricher config block
+deadman_insurancebroker	skip	no enricher config block
+deadman_nigel	skip	no enricher config block
+death_man_indoors1	human	player skeleton: human fallback anims are correct
+dog_stray	named	unique family: death_anim=straydog_death, attack_anim=straydog_attack, defend_anim=straydog_defend
+donny_the_lad	human	player skeleton: human fallback anims are correct
+draynor_skeleton	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+dttd_delivery_dwarf	skip	no enricher config block
+dttd_mill_man_invisible	skip	no enricher config block
+duck_update_ducklings	copied	same skeleton as duck
+duck_update_on_land_drake	copied	same skeleton as duck
+duck_update_on_land_duck	copied	same skeleton as duck
+duke_of_lumbridge	human	player skeleton: human fallback anims are correct
+dwarf_chaos	named	name match: death_anim=dwarf_death, attack_anim=dwarf_attack, defend_anim=dwarf_block
+dwarf_normal	named	name match: death_anim=dwarf_death, attack_anim=dwarf_attack, defend_anim=dwarf_block
+earth_wizard	human	player skeleton: human fallback anims are correct
+entrana_monk	human	player skeleton: human fallback anims are correct
+evil_chicken	named	unique family: death_anim=roosterdeath, attack_anim=roosterattack
+fai_barbarian_female_4	human	player skeleton: human fallback anims are correct
+fai_barbarian_goblin_armed_2	copied	same stand anim as goblin_armed
+fai_barbarian_goblin_armed_3	copied	same stand anim as goblin_armed
+fai_barbarian_goblin_armed_4	copied	same stand anim as goblin_armed
+fai_black_guard_01	unmatched	ambiguous: 2 anim families on skeleton 297, none named like the npc
+fai_black_guard_02	unmatched	ambiguous: 2 anim families on skeleton 297, none named like the npc
+fai_black_guard_03	unmatched	ambiguous: 2 anim families on skeleton 297, none named like the npc
+fai_black_guard_04	unmatched	ambiguous: 2 anim families on skeleton 297, none named like the npc
+fai_falador_dwarf_normal1	named	name match: death_anim=dwarf_death, attack_anim=dwarf_attack, defend_anim=dwarf_block
+fai_falador_dwarf_normal2	named	name match: death_anim=dwarf_death, attack_anim=dwarf_attack, defend_anim=dwarf_block
+fai_falador_guard1	human	player skeleton: human fallback anims are correct
+fai_falador_guard1_f	human	player skeleton: human fallback anims are correct
+fai_falador_guard1_variant01	human	player skeleton: human fallback anims are correct
+fai_falador_guard1_variant02	human	player skeleton: human fallback anims are correct
+fai_falador_guard2	human	player skeleton: human fallback anims are correct
+fai_falador_guard2_f	human	player skeleton: human fallback anims are correct
+fai_falador_guard4	human	player skeleton: human fallback anims are correct
+fai_falador_guard4_f	human	player skeleton: human fallback anims are correct
+fai_falador_guard5	human	player skeleton: human fallback anims are correct
+fai_falador_guard6	human	player skeleton: human fallback anims are correct
+fai_racoon_01	unmatched	no named death seq on skeleton 330
+fai_varrock_guard	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02_f	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02_f_variant01	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02_f_variant02	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02_variant01	human	player skeleton: human fallback anims are correct
+fai_varrock_guard02_variant02	human	player skeleton: human fallback anims are correct
+fai_varrock_guard_captain	human	player skeleton: human fallback anims are correct
+fai_varrock_guard_captain02	human	player skeleton: human fallback anims are correct
+falador_doric_area_guard	human	player skeleton: human fallback anims are correct
+falador_doric_area_man1	human	player skeleton: human fallback anims are correct
+falador_doric_area_man2	human	player skeleton: human fallback anims are correct
+falador_doric_area_man3	human	player skeleton: human fallback anims are correct
+falador_doric_area_man4	human	player skeleton: human fallback anims are correct
+falador_gardener	human	player skeleton: human fallback anims are correct
+falador_gardener2	human	player skeleton: human fallback anims are correct
+falador_man1	human	player skeleton: human fallback anims are correct
+falador_man2	human	player skeleton: human fallback anims are correct
+falador_man3	human	player skeleton: human fallback anims are correct
+farm_chicken_brown	copied	same stand anim as chicken
+farm_chicken_dark_brown	copied	same stand anim as chicken
+farm_chicken_tan	copied	same stand anim as chicken
+farmer_farming	human	player skeleton: human fallback anims are correct
+farmer_farming_on_49_51	human	player skeleton: human fallback anims are correct
+farming_gardener_hops_3	human	player skeleton: human fallback anims are correct
+farming_gardener_tree_4	human	player skeleton: human fallback anims are correct
+farming_tools_leprechaun	unmatched	ambiguous: 4 anim families on skeleton 2402, none named like the npc
+father_aereck	human	player skeleton: human fallback anims are correct
+father_urhney	human	player skeleton: human fallback anims are correct
+favour_seth_groats	human	player skeleton: human fallback anims are correct
+fire_wizard	human	player skeleton: human fallback anims are correct
+forestry_poh_bees	unmatched	no named death seq on skeleton 1815
+fortressguard_01	human	player skeleton: human fallback anims are correct
+fred_the_farmer	human	player skeleton: human fallback anims are correct
+generalassistant1	human	player skeleton: human fallback anims are correct
+generalshopkeeper1	human	player skeleton: human fallback anims are correct
+ghost	named	unique family: death_anim=ghost_update_tendrill_death, attack_anim=ghost_update_tendrill_attack, defend_anim=ghost_update_tendrill_defend
+ghost2	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost3	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost3_unaggressive	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost4	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost5	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost5_unaggressive	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost6	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost7	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost7_unaggressive	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost8	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost8_unaggressive	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+ghost_unaggressive	named	unique family: death_anim=ghost_update_tendrill_death, attack_anim=ghost_update_tendrill_attack, defend_anim=ghost_update_tendrill_defend
+giant	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giant2	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giant3	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giant4	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giant5	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giant6	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+giantrat1	copied	same stand anim as giantrat
+giantrat2	copied	same stand anim as giantrat
+giantrat3	copied	same stand anim as giantrat
+giantspider2	copied	same stand anim as giantspider1
+gillie_the_milkmaid	human	player skeleton: human fallback anims are correct
+goblin	copied	same stand anim as goblin_unarmed_melee_1
+goblin_armed_melee_1	copied	same stand anim as goblin_unarmed_melee_1
+goblin_armed_melee_2	copied	same stand anim as goblin_unarmed_melee_1
+goblin_armed_melee_3	copied	same stand anim as goblin_unarmed_melee_1
+goblin_armed_melee_4	copied	same stand anim as goblin_unarmed_melee_1
+goblin_red_soldier_2	copied	same stand anim as goblin_unarmed_melee_1
+goblin_red_soldier_3	copied	same stand anim as goblin_armed
+goblin_red_soldier_4	copied	same stand anim as goblin_unarmed_melee_1
+goblin_red_soldier_5	copied	same skeleton as goblin_unarmed_melee_1
+goblin_red_soldier_6	copied	same stand anim as goblin_unarmed_melee_1
+goblin_red_soldier_7	copied	same stand anim as goblin_armed
+goblin_red_soldier_8	copied	same stand anim as goblin_armed
+greater_demon	named	name match: death_anim=demon_death_greater, attack_anim=demon_attack, defend_anim=demon_block
+greater_demon2	named	name match: death_anim=demon_death_greater, attack_anim=demon_attack, defend_anim=demon_block
+greater_demon3	named	name match: death_anim=demon_death_greater, attack_anim=demon_attack, defend_anim=demon_block
+greater_demon4	named	name match: death_anim=demon_death_greater, attack_anim=demon_attack, defend_anim=demon_block
+guard1	human	player skeleton: human fallback anims are correct
+guard1_f	human	player skeleton: human fallback anims are correct
+guard1_f_variant01	human	player skeleton: human fallback anims are correct
+guard1_variant01	human	player skeleton: human fallback anims are correct
+guard_bandit	human	player skeleton: human fallback anims are correct
+gunthor_the_brave	human	player skeleton: human fallback anims are correct
+hans	human	player skeleton: human fallback anims are correct
+hatius_lumbridge_diary	human	player skeleton: human fallback anims are correct
+highwayman	human	player skeleton: human fallback anims are correct
+highwayman2	human	player skeleton: human fallback anims are correct
+hobgoblin_unarmed	named	unique family: death_anim=hobgoblin_death, attack_anim=hobgoblin_attack, defend_anim=hobgoblin_block
+house_ghost	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+house_ghost2	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+house_ghost3	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+house_ghost4	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+house_ghost5	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+hundred_aris2	skip	no enricher config block
+icegiant	named	name match: death_anim=giant_update_ice_death, attack_anim=giant_update_ice_attack, defend_anim=giant_update_ice_defend
+icegiant2	named	name match: death_anim=giant_update_ice_death, attack_anim=giant_update_ice_attack, defend_anim=giant_update_ice_defend
+icegiant3	named	name match: death_anim=giant_update_ice_death, attack_anim=giant_update_ice_attack, defend_anim=giant_update_ice_defend
+icegiant_low_wanderrange	named	name match: death_anim=giant_update_ice_death, attack_anim=giant_update_ice_attack, defend_anim=giant_update_ice_defend
+icegiant_low_wanderrange2	named	name match: death_anim=giant_update_ice_death, attack_anim=giant_update_ice_attack, defend_anim=giant_update_ice_defend
+icewarrior	human	player skeleton: human fallback anims are correct
+icewarrior_low_wanderrange	human	player skeleton: human fallback anims are correct
+ironman_tutor_1	human	player skeleton: human fallback anims are correct
+jail_black_knight	human	player skeleton: human fallback anims are correct
+jail_guard_1	human	player skeleton: human fallback anims are correct
+jail_guard_2	human	player skeleton: human fallback anims are correct
+jail_guard_3	human	player skeleton: human fallback anims are correct
+jail_guard_4	human	player skeleton: human fallback anims are correct
+jail_guard_5	human	player skeleton: human fallback anims are correct
+jail_mugger	human	player skeleton: human fallback anims are correct
+jail_pirate	human	player skeleton: human fallback anims are correct
+jail_thief	human	player skeleton: human fallback anims are correct
+jailguard	human	player skeleton: human fallback anims are correct
+jailguard_four_patrol	human	player skeleton: human fallback anims are correct
+jailguard_three_patrol	human	player skeleton: human fallback anims are correct
+jailguard_two_patrol	human	player skeleton: human fallback anims are correct
+jonny_the_beard	human	player skeleton: human fallback anims are correct
+karamja_man	human	player skeleton: human fallback anims are correct
+kingscorpion	named	name match: death_anim=scorpion_update_death, attack_anim=scorpion_update_attack_tail, defend_anim=scorpion_update_defend
+kr_aggressive_black_knight	human	player skeleton: human fallback anims are correct
+lamb1	copied	same skeleton as ramunsheered
+lamb2	copied	same skeleton as ramunsheered
+lesser_demon	named	name match: death_anim=demon_death, attack_anim=demon_attack, defend_anim=demon_block
+lesser_demon2	named	name match: death_anim=demon_death, attack_anim=demon_attack, defend_anim=demon_block
+lesser_demon3	named	name match: death_anim=demon_death, attack_anim=demon_attack, defend_anim=demon_block
+lesser_demon4	named	name match: death_anim=demon_death, attack_anim=demon_attack, defend_anim=demon_block
+lesser_demon5	named	name match: death_anim=demon_death, attack_anim=demon_attack, defend_anim=demon_block
+lost_property_merchant_combatty	skip	no enricher config block
+lost_property_merchant_standard	skip	no enricher config block
+lost_tribe_sigmund	skip	no enricher config block
+lotg_zanik	named	unique family: death_anim=dorgesh_goblin_death, attack_anim=dorgesh_goblin_unarmed_attack, defend_anim=dorgesh_goblin_unarmed_defend
+lotg_zanik_follower	named	unique family: death_anim=dorgesh_goblin_death, attack_anim=dorgesh_goblin_unarmed_attack, defend_anim=dorgesh_goblin_unarmed_defend
+lumbridge_guide	human	player skeleton: human fallback anims are correct
+lumbridge_guide2_man	human	player skeleton: human fallback anims are correct
+lumbridge_guide2_woman	human	player skeleton: human fallback anims are correct
+macro_shade	human	player skeleton: human fallback anims are correct
+macro_zombie	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+man4	human	player skeleton: human fallback anims are correct
+man4_for_musa_point	human	player skeleton: human fallback anims are correct
+millie_the_miller	human	player skeleton: human fallback anims are correct
+mistmyst_abigale	skip	no enricher config block
+mistmyst_hewey	skip	no enricher config block
+monk	human	player skeleton: human fallback anims are correct
+monkadventurerpg	human	player skeleton: human fallback anims are correct
+monkey	named	unique family: death_anim=monkey_death, attack_anim=monkey_attack, defend_anim=monkey_block
+mossgiant	named	name match: death_anim=giant_update_moss_death, attack_anim=giant_update_moss_attack, defend_anim=giant_update_moss_defend
+mossgiant2	named	name match: death_anim=giant_update_moss_death, attack_anim=giant_update_moss_attack, defend_anim=giant_update_moss_defend
+mossgiant3	named	name match: death_anim=giant_update_moss_death, attack_anim=giant_update_moss_attack, defend_anim=giant_update_moss_defend
+mossgiant4	named	name match: death_anim=giant_update_moss_death, attack_anim=giant_update_moss_attack, defend_anim=giant_update_moss_defend
+newbiechicken	copied	same stand anim as chicken
+ogress_shaman1	unmatched	ambiguous: 2 anim families on skeleton 321, none named like the npc
+ogress_shaman2	unmatched	ambiguous: 2 anim families on skeleton 321, none named like the npc
+ogress_warrior1	unmatched	ambiguous: 2 anim families on skeleton 321, none named like the npc
+ogress_warrior2	unmatched	ambiguous: 2 anim families on skeleton 321, none named like the npc
+peng_multi_larry_lumb	human	player skeleton: human fallback anims are correct
+pirate_aggressive	human	player skeleton: human fallback anims are correct
+ram_bartender	human	player skeleton: human fallback anims are correct
+ramunsheeredshaggy	copied	same skeleton as ramunsheered
+rat_indoors	copied	same stand anim as rat
+regicide_bunny1	named	unique family: death_anim=rabbit_update_death, attack_anim=rabbit_update_attack, defend_anim=rabbit_update_defend
+regicide_bunny2	named	unique family: death_anim=rabbit_update_death, attack_anim=rabbit_update_attack, defend_anim=rabbit_update_defend
+regicide_rabbit	named	unique family: death_anim=rabbit_update_death, attack_anim=rabbit_update_attack, defend_anim=rabbit_update_defend
+rimmington_anja	human	player skeleton: human fallback anims are correct
+rimmington_hengel	human	player skeleton: human fallback anims are correct
+rimmington_hobgoblin_armed_1	named	unique family: death_anim=hobgoblin_death, attack_anim=hobgoblin_attack, defend_anim=hobgoblin_block
+rimmington_hobgoblin_unarmed_1	named	unique family: death_anim=hobgoblin_death, attack_anim=hobgoblin_attack, defend_anim=hobgoblin_block
+rimmington_hobgoblin_unarmed_2	named	unique family: death_anim=hobgoblin_death, attack_anim=hobgoblin_attack, defend_anim=hobgoblin_block
+rimmington_hobgoblin_unarmed_3	named	unique family: death_anim=hobgoblin_death, attack_anim=hobgoblin_attack, defend_anim=hobgoblin_block
+sarim_seagull_pier	copied	same skeleton as duck
+scorpion	named	name match: death_anim=scorpion_update_death, attack_anim=scorpion_update_attack_tail, defend_anim=scorpion_update_defend
+shantay_guard	human	player skeleton: human fallback anims are correct
+shantay_guard_still	human	player skeleton: human fallback anims are correct
+sheep_shearer_the_thing	unmatched	no named death seq on skeleton 347
+sheepsheered	copied	same skeleton as ramunsheered
+sheepsheered2	copied	same skeleton as ramunsheered
+sheepsheered2w	copied	same skeleton as ramunsheered
+sheepsheered3	copied	same skeleton as ramunsheered
+sheepsheered3g	copied	same skeleton as ramunsheered
+sheepsheeredshaggy	copied	same skeleton as ramunsheered
+sheepsheeredshaggy2	copied	same skeleton as ramunsheered
+sheepunsheered	copied	same stand anim as ramunsheered
+sheepunsheered2	copied	same stand anim as ramunsheered
+sheepunsheered3	copied	same stand anim as ramunsheered
+sheepunsheered3g	copied	same stand anim as ramunsheered
+sheepunsheered3w	copied	same stand anim as ramunsheered
+sheepunsheeredg	copied	same stand anim as ramunsheered
+sheepunsheeredshaggy	copied	same skeleton as ramunsheered
+sheepunsheeredw	copied	same stand anim as ramunsheered
+skeleton_armed	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_armed2	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_armed3	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_armed4	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_armed5	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unagressive	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unagressive2	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unagressive3	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unarmed	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unarmed2	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unarmed3	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+skeleton_unarmed4	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+slice_sergeant_mossfists_swamp	named	unique family: death_anim=slice_surface_goblin_sergent_death, attack_anim=slice_surface_goblin_sergent_attack, defend_anim=slice_surface_goblin_sergent_defend
+slice_sergeant_slimetoes_swamp	named	unique family: death_anim=slice_surface_goblin_sergent_death, attack_anim=slice_surface_goblin_sergent_attack, defend_anim=slice_surface_goblin_sergent_defend
+snake	named	unique family: death_anim=snake_death, attack_anim=snake_attack, defend_anim=snake_block
+sos_death_ankou	human	player skeleton: human fallback anims are correct
+sos_death_ankou2	human	player skeleton: human fallback anims are correct
+sos_death_ankou3	human	player skeleton: human fallback anims are correct
+sos_death_ghost2	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+sos_death_ghost2_b	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+sos_death_ghost2_c	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+sos_death_ghost2_d	named	name match: death_anim=ghost_update_normal_death, attack_anim=ghost_update_normal_attack, defend_anim=ghost_update_normal_defend
+sos_death_skeleton_unarmed2	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+sos_death_skeleton_unarmed3	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+sos_death_skeleton_unarmed4	named	name match: death_anim=skeleton_update_death, attack_anim=skeleton_update_attack_weapon, defend_anim=skeleton_update_defend
+sos_fam_fleshcrawler	named	unique family: death_anim=kalphite_death, attack_anim=kalphite_attack_mandibles, defend_anim=kalphite_block
+sos_fam_fleshcrawler2	named	unique family: death_anim=kalphite_death, attack_anim=kalphite_attack_mandibles, defend_anim=kalphite_block
+sos_fam_fleshcrawler3	named	unique family: death_anim=kalphite_death, attack_anim=kalphite_attack_mandibles, defend_anim=kalphite_block
+sos_fam_giantrat	copied	same stand anim as giantrat
+sos_fam_giantrat2	copied	same stand anim as giantrat
+sos_fam_giantrat3	copied	same stand anim as giantrat
+sos_fam_rat	copied	same stand anim as rat
+sos_fam_zombie2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie2_b	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie2_c	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_armed	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_armed2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_armed3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_unarmed	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_unarmed2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_fam_zombie_unarmed3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+sos_pest_catablepon	named	unique family: death_anim=catpon_death, attack_anim=catpon_attack
+sos_pest_catablepon2	named	unique family: death_anim=catpon_death, attack_anim=catpon_attack
+sos_pest_catablepon3	named	unique family: death_anim=catpon_death, attack_anim=catpon_attack
+sos_pest_giantspider1	copied	same stand anim as giantspider1
+sos_pest_scorpion2	named	name match: death_anim=scorpion_update_death, attack_anim=scorpion_update_attack_tail, defend_anim=scorpion_update_defend
+sos_pest_spider	copied	same stand anim as spider
+sos_war_goblin_armed	copied	same stand anim as goblin_armed
+sos_war_goblin_armed2	copied	same stand anim as goblin_armed
+sos_war_goblin_green_soldier_2	copied	same stand anim as goblin_armed
+sos_war_minotaur	named	unique family: death_anim=mino_death, attack_anim=mino_attack
+sos_war_minotaur3	named	unique family: death_anim=mino_death, attack_anim=mino_attack
+sos_war_rat	copied	same stand anim as rat
+sos_war_wolf2	named	name match: death_anim=dog_update_wolf_death, attack_anim=dog_update_wolf_attack, defend_anim=dog_update_wolf_defend
+speedy_keith	human	player skeleton: human fallback anims are correct
+surok_outlaw1	human	player skeleton: human fallback anims are correct
+surok_outlaw10	human	player skeleton: human fallback anims are correct
+surok_outlaw2	human	player skeleton: human fallback anims are correct
+surok_outlaw3	human	player skeleton: human fallback anims are correct
+surok_outlaw4	human	player skeleton: human fallback anims are correct
+surok_outlaw5	human	player skeleton: human fallback anims are correct
+surok_outlaw6	human	player skeleton: human fallback anims are correct
+surok_outlaw7	human	player skeleton: human fallback anims are correct
+surok_outlaw8	human	player skeleton: human fallback anims are correct
+surok_outlaw9	human	player skeleton: human fallback anims are correct
+swamp_candle_guy	human	player skeleton: human fallback anims are correct
+swan	unmatched	no named death seq on skeleton 343
+tempoross_fire_target_npc	skip	no enricher config block
+tempoross_lightning_cloud	unmatched	no named death seq on skeleton 1948
+tempoross_lightning_strike	skip	no enricher config block
+tempoross_lobby_announcer	human	player skeleton: human fallback anims are correct
+tempoross_lobby_host	human	player skeleton: human fallback anims are correct
+tempoross_npc_crate_ammunition_1	unmatched	no stand anim/skeleton (ready=-1)
+tempoross_npc_crate_ammunition_2	unmatched	no stand anim/skeleton (ready=-1)
+tempoross_npc_crate_ammunition_3	unmatched	no stand anim/skeleton (ready=-1)
+thief1	human	player skeleton: human fallback anims are correct
+thief2	human	player skeleton: human fallback anims are correct
+tob_spectator_misthalin	human	player skeleton: human fallback anims are correct
+unicorn_lowwander	copied	same stand anim as unicorn
+varrock_man1	human	player skeleton: human fallback anims are correct
+veos_lumbridge	skip	no enricher config block
+warrior_woman	human	player skeleton: human fallback anims are correct
+warrioradventurerpg	human	player skeleton: human fallback anims are correct
+water_wizard	human	player skeleton: human fallback anims are correct
+weaponsmaster_vis	human	player skeleton: human fallback anims are correct
+white_knight	human	player skeleton: human fallback anims are correct
+white_knight_f	human	player skeleton: human fallback anims are correct
+white_knight_green_plumes	human	player skeleton: human fallback anims are correct
+white_knight_green_plumes_f	human	player skeleton: human fallback anims are correct
+wilderness_ankou	human	player skeleton: human fallback anims are correct
+wilderness_hill_giant	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+wilderness_hill_giant2	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+wilderness_hill_giant3	named	name match: death_anim=giant_update_basic_death, attack_anim=giant_update_basic_attack, defend_anim=giant_update_basic_defend
+wilderness_zombie	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+wilderness_zombie2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+wilderness_zombie3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+wizard	human	player skeleton: human fallback anims are correct
+wizardadventuterpg	human	player skeleton: human fallback anims are correct
+wom_marketguard	human	player skeleton: human fallback anims are correct
+young_dark_wizard	human	player skeleton: human fallback anims are correct
+zombie2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_b	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_c	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_rural1	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_rural2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_rural3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie2_rural4	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed_city1	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed_city3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed_sewer1	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed_sewer2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_armed_sewer3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed2	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed4	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed5	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed6	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed_city1	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed_city3	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
+zombie_unarmed_city6	named	unique family: death_anim=zombie_update_death_normal, attack_anim=zombie_update_attack_normal, defend_anim=zombie_update_defend_normal
