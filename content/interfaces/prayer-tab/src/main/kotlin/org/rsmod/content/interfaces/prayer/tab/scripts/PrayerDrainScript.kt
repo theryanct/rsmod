@@ -8,6 +8,8 @@ import org.rsmod.api.config.refs.timers
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.player.bonus.WornBonuses
 import org.rsmod.api.player.disablePrayers
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.output.soundSynth
 import org.rsmod.api.player.stat.prayerLvl
@@ -45,6 +47,11 @@ constructor(private val repo: PrayerRepository, private val bonuses: WornBonuses
 
         if (prayerLvl == 0) {
             triggerPrayerDepletion()
+            return
+        }
+
+        // Local feature toggle (default off): prayer points never drain.
+        if (isFeatureOn(Feature.InfinitePrayer)) {
             return
         }
 

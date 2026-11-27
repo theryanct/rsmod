@@ -5,6 +5,7 @@ import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.interfaces
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.config.refs.varps
+import org.rsmod.api.player.features.FeatureMenu
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.vars.boolVarBit
@@ -18,7 +19,10 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 class ControlSettingsScript
 @Inject
-constructor(private val protectedAccess: ProtectedAccessLauncher) : PluginScript() {
+constructor(
+    private val protectedAccess: ProtectedAccessLauncher,
+    private val featureMenu: FeatureMenu,
+) : PluginScript() {
     private var Player.acceptAid by boolVarBit(varbits.option_acceptaid)
     private var Player.skullPrevention by boolVarBit(varbits.skull_prevent)
     private var Player.priorityPlayer by enumVarp<PlayerPriority>(varps.option_attackpriority)
@@ -77,8 +81,9 @@ constructor(private val protectedAccess: ProtectedAccessLauncher) : PluginScript
         protectedAccess.launch(this) { ifOpenSide(interfaces.poh_options) }
     }
 
+    // Local tweak (Ryan): the "Bonds" button opens the feature toggle menu (same as ::features).
     private fun Player.selectBondPouch() {
-        val opened = protectedAccess.launch(this) { ifOpenMainModal(interfaces.bond_main, -1, -2) }
+        val opened = protectedAccess.launch(this) { featureMenu.open(this) }
         if (!opened) {
             mes(constants.dm_busy)
         }
