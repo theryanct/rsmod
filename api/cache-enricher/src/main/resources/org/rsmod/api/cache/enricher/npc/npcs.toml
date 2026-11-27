@@ -9,30 +9,44 @@ examine = 'A strange mole-like being.'
 [[config]]
 npc = 'slayer_abberant_spectre_1'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_abberant_spectre_2'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_abberant_spectre_3'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_abberant_spectre_4'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_aberrantspectre_1_strongholdcave'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_aberrantspectre_2_strongholdcave'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'slayer_nechryael'
 examine = 'An evil death demon.'
+death_anim = 1530
+attack_anim = 1528
 
 [[config]]
 npc = 'floatingtwig_broken1'
@@ -45,6 +59,8 @@ examine = 'An evil death spawn.'
 [[config]]
 npc = 'slayer_nechryael_strongholdcave'
 examine = 'An evil death demon.'
+death_anim = 1530
+attack_anim = 1528
 
 [[config]]
 npc = 'gnome_hudo'
@@ -89,6 +105,9 @@ examine = 'A carpet merchant.'
 [[config]]
 npc = 'magic_carpet_monkey'
 examine = 'Perhaps our oldest relatives?'
+death_anim = 223
+attack_anim = 220
+defend_anim = 221
 
 [[config]]
 npc = 'zombie_unarmed'
@@ -293,6 +312,9 @@ defend_anim = 5567
 [[config]]
 npc = 'zombie_armed_sewer4'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zombie_armed_rural1'
@@ -317,22 +339,37 @@ examine = 'The walking dead.'
 [[config]]
 npc = 'zombie_entranan'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zombie_entranan2'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zombie_entranan3'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zombie_entranan4'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zombie_entranan5'
 examine = 'The walking dead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'summonedzombie'
@@ -425,14 +462,23 @@ defend_anim = 5489
 [[config]]
 npc = 'giantskeleton'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'giantskeleton2'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'skeletonmage'
 examine = 'An undead worker of dark magic.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'ghost'
@@ -549,30 +595,51 @@ examine = 'A rocky outcrop.'
 [[config]]
 npc = 'hellhound'
 examine = 'Hello, nice doggy...'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'hellhound_strongholdcave'
 examine = 'Hello, nice doggy...'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'wolf'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'whitewolf_sentry'
 examine = 'A vicious mountain wolf.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'whitewolf'
 examine = 'A vicious mountain wolf.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'wolfpack_leader_whiter'
 examine = 'Must be the pack leader.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'pack_wolf_whiter'
 examine = 'A social killer.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'dog'
@@ -581,6 +648,9 @@ examine = 'Bow wow.'
 [[config]]
 npc = 'dog_wild'
 examine = "Looks like it's got Rabies!"
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'dog_wild_2'
@@ -589,10 +659,16 @@ examine = 'An unsuitable pet.'
 [[config]]
 npc = 'guarddog'
 examine = "He doesn't seem pleased to see me."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'wolfpack_leader'
 examine = 'Must be the pack leader.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'pack_wolf'
@@ -669,6 +745,9 @@ examine = 'Good doggy...'
 [[config]]
 npc = 'poh_ogre'
 examine = "He's full of pent-up aggression."
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'poh_babyreddragon'
@@ -1033,6 +1112,9 @@ examine = 'A social killer.'
 [[config]]
 npc = 'jungle_wolf'
 examine = 'A rare jungle wolf - specific to the Kharazi jungle.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'macaroni_penguin'
@@ -1065,146 +1147,254 @@ examine = 'One of the biggest, meanest dragons around.'
 [[config]]
 npc = 'black_demon_strongholdcave_1'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'babybluedragon'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babybluedragon2'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babybluedragon3'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babyreddragon'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babyreddragon2'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babyreddragon3'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'red_dragon'
 examine = 'A big powerful dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'red_dragon2'
 examine = 'A big powerful dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'red_dragon3'
 examine = 'A big powerful dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'red_dragon4'
 examine = 'A big powerful dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'red_dragon5'
 examine = 'A big powerful dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon2'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon3'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon4'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon5'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon_strongholdcave_1'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon_strongholdcave_2'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_dragon_strongholdcave_3'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'green_dragon'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'green_dragon2'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'green_dragon3'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'green_dragon4'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'green_dragon5'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon2'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon3'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon4'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon5'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'bronze_dragon'
 examine = 'Its scales seem to be made of bronze.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'bronze_dragon_strongholdcave'
 examine = 'Its scales seem to be made of bronze.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'iron_dragon'
 examine = 'Its scales seem to be made of iron.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'iron_dragon_strongholdcave'
 examine = 'Its scales seem to be made of iron.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'steel_dragon'
 examine = 'Its scales seem to be made of steel.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'steel_dragon_strongholdcave'
 examine = 'Its scales seem to be made of steel.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'pmod_town_crier_varrock'
@@ -1233,10 +1423,16 @@ examine = 'A sea bird.'
 [[config]]
 npc = 'seabird2'
 examine = 'A sea bird.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'seabird3'
 examine = 'A sea bird.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'gull1'
@@ -1279,6 +1475,9 @@ defend_anim = 100
 [[config]]
 npc = 'dwarf_mountain'
 examine = 'A mountain dwelling short angry guy.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'ap_guide_opt_out'
@@ -1713,22 +1912,32 @@ examine = 'She looks dangerous!'
 [[config]]
 npc = 'slayer_cave_crawler_1'
 examine = 'A spiky crawling critter.'
+death_anim = 228
+attack_anim = 227
 
 [[config]]
 npc = 'slayer_cave_crawler_2'
 examine = 'A spiky crawling critter.'
+death_anim = 228
+attack_anim = 227
 
 [[config]]
 npc = 'slayer_cave_crawler_3'
 examine = 'A spiky crawling critter.'
+death_anim = 228
+attack_anim = 227
 
 [[config]]
 npc = 'slayer_cave_crawler_4'
 examine = 'A spiky crawling critter.'
+death_anim = 228
+attack_anim = 227
 
 [[config]]
 npc = 'slayer_kursk_1'
 examine = 'Large, heavy, with sharp things attached to its head.'
+death_anim = 1513
+attack_anim = 1512
 
 [[config]]
 npc = 'slayer_kursk_2'
@@ -1737,6 +1946,8 @@ examine = 'Larger, heavier, with sharper things attached to its head.'
 [[config]]
 npc = 'slayer_gargoyle_1'
 examine = 'Flies like a rock.'
+death_anim = 1518
+attack_anim = 1517
 
 [[config]]
 npc = 'slayer_gargoyle_dead'
@@ -1745,18 +1956,27 @@ examine = 'Flies like a rock.'
 [[config]]
 npc = 'slayer_banshee_1'
 examine = 'A tortured screaming soul.'
+death_anim = 1524
+attack_anim = 1523
 
 [[config]]
 npc = 'slayer_abyssal'
 examine = 'A denizen of the Abyss!'
+death_anim = 1538
+attack_anim = 1537
 
 [[config]]
 npc = 'slayer_abyssal_strongholdcave'
 examine = 'A denizen of the Abyss!'
+death_anim = 1538
+attack_anim = 1537
 
 [[config]]
 npc = 'slayer_basilisk'
 examine = 'The eyes of evil.'
+death_anim = 1548
+attack_anim = 1546
+defend_anim = 1547
 
 [[config]]
 npc = 'slayer_basilisk_baby'
@@ -1765,6 +1985,9 @@ examine = 'The eyes of evil.'
 [[config]]
 npc = 'slayer_cockatrice'
 examine = 'The winged reptile.'
+death_anim = 1563
+attack_anim = 1562
+defend_anim = 1560
 
 [[config]]
 npc = 'slayer_cockatrice_daddy'
@@ -1773,6 +1996,9 @@ examine = 'The winged reptile.'
 [[config]]
 npc = 'slayer_rockslug'
 examine = 'The slime of evil.'
+death_anim = 1568
+attack_anim = 1567
+defend_anim = 1565
 
 [[config]]
 npc = 'slayer_rockslug_baby'
@@ -1781,6 +2007,9 @@ examine = 'The slime of evil.'
 [[config]]
 npc = 'slayer_dustdevil'
 examine = 'The vacuumed face of evil.'
+death_anim = 1558
+attack_anim = 1557
+defend_anim = 1555
 
 [[config]]
 npc = 'poh_skotizo_pet'
@@ -1805,6 +2034,9 @@ examine = "It's one leg short!"
 [[config]]
 npc = 'slayer_turoth_baby'
 examine = "It's one small leg short!"
+death_anim = 1597
+attack_anim = 1595
+defend_anim = 1596
 
 [[config]]
 npc = 'slayer_turoth_dad2'
@@ -1817,22 +2049,37 @@ examine = "He's one big leg short!"
 [[config]]
 npc = 'slayer_pyrefiend_1'
 examine = 'A small fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'slayer_pyrefiend_2'
 examine = 'A small fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'slayer_pyrefiend_3'
 examine = 'A small fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'slayer_pyrefiend_4'
 examine = 'A small fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'slayer_jelly_1'
 examine = 'Looks scared to see me.'
+death_anim = 1587
+attack_anim = 1586
+defend_anim = 1585
 
 [[config]]
 npc = 'slayer_jelly_2'
@@ -1877,10 +2124,16 @@ examine = 'An evil magic user.'
 [[config]]
 npc = 'slayer_crawling_hand_1'
 examine = "Gimmie five.  Actually, don't."
+death_anim = 1590
+attack_anim = 1592
+defend_anim = 1591
 
 [[config]]
 npc = 'slayer_crawling_hand_2'
 examine = "Gimmie five.  Actually, don't."
+death_anim = 1590
+attack_anim = 1592
+defend_anim = 1591
 
 [[config]]
 npc = 'slayer_crawling_hand_3'
@@ -1889,10 +2142,16 @@ examine = "Gimmie five.  Actually, don't."
 [[config]]
 npc = 'slayer_crawling_hand_4'
 examine = "Gimmie five.  Actually, don't."
+death_anim = 1590
+attack_anim = 1592
+defend_anim = 1591
 
 [[config]]
 npc = 'slayer_crawling_hand_5'
 examine = "Gimmie five.  Actually, don't."
+death_anim = 1590
+attack_anim = 1592
+defend_anim = 1591
 
 [[config]]
 npc = 'slayer_crawling_hand_big_1'
@@ -1917,10 +2176,16 @@ examine = 'A big severed hand.'
 [[config]]
 npc = 'slayer_lizard_massive'
 examine = "Run away, it's massive!"
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'slayer_lizard_large1_green'
 examine = 'A cold-blooded creature, partial to warmth.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'slayer_lizard_large2_sandy'
@@ -1933,6 +2198,9 @@ examine = 'A cold-blooded creature, partial to warmth.'
 [[config]]
 npc = 'slayer_lizard_small1_green'
 examine = 'A small cold-blooded creature, partial to warmth.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'slayer_lizard_small2_sandy'
@@ -1941,22 +2209,36 @@ examine = 'A small cold-blooded creature, partial to warmth.'
 [[config]]
 npc = 'slayer_harpiebugswarm'
 examine = 'A swarm of bugs.'
+death_anim = 3111
+defend_anim = 3110
 
 [[config]]
 npc = 'skeletal_wyvern1'
 examine = 'A very dangerous pile of animated wyvern bones.'
+death_anim = 2987
+attack_anim = 2985
+defend_anim = 2983
 
 [[config]]
 npc = 'skeletal_wyvern2'
 examine = 'A very dangerous pile of animated wyvern bones.'
+death_anim = 2987
+attack_anim = 2985
+defend_anim = 2983
 
 [[config]]
 npc = 'skeletal_wyvern3'
 examine = 'A very dangerous pile of animated wyvern bones.'
+death_anim = 2987
+attack_anim = 2985
+defend_anim = 2983
 
 [[config]]
 npc = 'skeletal_wyvern4'
 examine = 'A very dangerous pile of animated wyvern bones.'
+death_anim = 2987
+attack_anim = 2985
+defend_anim = 2983
 
 [[config]]
 npc = 'slayer_killerwatt'
@@ -1994,26 +2276,53 @@ examine = 'What could be hiding in that crack in the wall?'
 [[config]]
 npc = 'swamp_wallbeast_combat'
 examine = 'A big, scary hand!'
+death_anim = 1804
+attack_anim = 1800
+defend_anim = 1803
 
 [[config]]
 npc = 'giant_frog'
 examine = "It didn't get that big eating flies."
+attack_anim = 1793
+attack_sound = 838
+defend_anim = 1794
+defend_sound = 840
+death_anim = 1795
+death_sound = 839
 
 [[config]]
 npc = 'medium_frog'
 examine = "It didn't get that big eating flies."
+attack_anim = 1793
+attack_sound = 838
+defend_anim = 1794
+defend_sound = 840
+death_anim = 1795
+death_sound = 839
 
 [[config]]
 npc = 'little_frog'
 examine = 'It eats flies.'
+attack_anim = 1793
+attack_sound = 838
+defend_anim = 1794
+defend_sound = 840
+death_anim = 1795
+death_sound = 839
 
 [[config]]
 npc = 'swamp_cave_slime'
 examine = 'A foul-smelling blob of protoplasm.'
+death_anim = 1792
+attack_anim = 1789
+defend_anim = 1791
 
 [[config]]
 npc = 'swamp_cave_bug'
 examine = 'A nasty crawling critter.'
+death_anim = 6081
+attack_anim = 6079
+defend_anim = 6080
 
 [[config]]
 npc = 'cave_littlebug'
@@ -2026,18 +2335,30 @@ examine = 'A big, smelly cave dweller.'
 [[config]]
 npc = 'slayer_bloodveld'
 examine = 'The tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'slayer_bloodveld_baby'
 examine = 'The tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'slayer_bloodveld_strongholdcave'
 examine = 'The tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'slayer_bloodveld_baby_strongholdcave'
 examine = 'The tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'stormcloud_non_attacking'
@@ -2078,6 +2399,9 @@ examine = 'Bear-ly smaller than his father.'
 [[config]]
 npc = 'smoke_devil'
 examine = 'Stay away from smoke, kids.'
+death_anim = 3849
+attack_anim = 3847
+defend_anim = 3848
 
 [[config]]
 npc = 'smoke_devil_boss'
@@ -2246,6 +2570,9 @@ examine = "A fun guy. No wait, that's awful. Plus it doesn't even make sense."
 [[config]]
 npc = 'slayer_mutated_zygomite_adolescent'
 examine = 'A bouncy fungus.'
+death_anim = 3327
+attack_anim = 3326
+defend_anim = 3325
 
 [[config]]
 npc = 'slayer_mutated_zygomite_adult_cap_withop'
@@ -2342,6 +2669,9 @@ examine = 'Looked better.'
 [[config]]
 npc = 'brain_sawbones_1'
 examine = 'Bedside manner is a little lacking, I think.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_sawbones_2'
@@ -2350,82 +2680,142 @@ examine = "I hope his hands don't shake."
 [[config]]
 npc = 'brain_zombie_pirate_1'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_underwater_1'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_2'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_underwater_2'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_3'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_4'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_5'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_underwater_5'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_6'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_7'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_8'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_9'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_10'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_11'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_12'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_13'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_14'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_15'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_16'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_17'
 examine = 'Aaaarg, me hearty!'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'brain_zombie_pirate_underwater_17'
@@ -2550,50 +2940,86 @@ examine = "Sticking it to 'The Man'."
 [[config]]
 npc = 'deal_zombie_pirates_1'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_zombie_pirates_2'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_zombie_pirates_3'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_zombie_pirates_4'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_zombie_pirates_5'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_zombie_pirates_6'
 examine = 'An undead sea scoundrel.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_a'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_b'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_c'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_d'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_e'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_pirate_f'
 examine = 'He talks a good fight.'
+death_anim = 5649
+attack_anim = 5647
+defend_anim = 5648
 
 [[config]]
 npc = 'deal_evil_spirit'
@@ -2602,6 +3028,12 @@ examine = 'The pun was intended.'
 [[config]]
 npc = 'deal_fever_spiders1'
 examine = 'A bunch of legs, eyes and teeth.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'deal_brewer_1'
@@ -2674,14 +3106,23 @@ examine = 'A frail little troll.'
 [[config]]
 npc = 'trollromance_ice_wolf_1'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'trollromance_ice_wolf_1b'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'trollromance_ice_wolf_2'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'trollromance_icetroll_melee1'
@@ -2694,6 +3135,9 @@ examine = 'Brrrrr...he must be cold!'
 [[config]]
 npc = 'trollromance_icetroll_melee3'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollromance_icetroll_melee4'
@@ -2702,10 +3146,16 @@ examine = 'Brrrrr...he must be cold!'
 [[config]]
 npc = 'trollromance_icetroll_melee5'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollromance_icetroll_melee6'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollromance_icetroll_melee7'
@@ -2936,6 +3386,9 @@ examine = 'Brrrrr...he must be cold!'
 [[config]]
 npc = 'trollrescue_icetroll_melee3'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollrescue_icetroll_melee4'
@@ -2944,10 +3397,16 @@ examine = 'Brrrrr...he must be cold!'
 [[config]]
 npc = 'trollrescue_icetroll_melee5'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollrescue_icetroll_melee6'
 examine = 'Brrrrr...he must be cold!'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'trollrescue_icetroll_melee7'
@@ -2972,26 +3431,44 @@ examine = 'An ice troll.'
 [[config]]
 npc = 'ice_wolf_1'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ice_wolf_2'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ice_wolf_3'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ice_wolf_4'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ice_wolf_5'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ice_wolf_6'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'deserttreasure_mummy_1'
@@ -3240,30 +3717,51 @@ examine = "It's like looking in the mirror."
 [[config]]
 npc = 'lunar_suqka'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka2'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka3'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka4'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka5'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka6'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'lunar_suqka7'
 examine = 'A strange creature unique to Lunar Isle.'
+death_anim = 4389
+attack_anim = 4387
+defend_anim = 4384
 
 [[config]]
 npc = 'contact_insectoid_mage'
@@ -3276,6 +3774,9 @@ examine = 'A mounted lancer.'
 [[config]]
 npc = 'contact_locust_bow'
 examine = 'A mounted archer.'
+death_anim = 5449
+attack_anim = 5451
+defend_anim = 5448
 
 [[config]]
 npc = 'contact_scarab_boss'
@@ -3496,14 +3997,23 @@ examine = 'Sturdy cold being.'
 [[config]]
 npc = 'peng_icelord_warrior02'
 examine = 'Sturdy cold being.'
+death_anim = 5726
+attack_anim = 5724
+defend_anim = 5723
 
 [[config]]
 npc = 'peng_icelord_warrior03'
 examine = 'Sturdy cold being.'
+death_anim = 5726
+attack_anim = 5724
+defend_anim = 5723
 
 [[config]]
 npc = 'peng_icelord_warrior04'
 examine = 'Sturdy cold being.'
+death_anim = 5726
+attack_anim = 5724
+defend_anim = 5723
 
 [[config]]
 npc = 'peng_agility_crushcourse_crushblock01_npc'
@@ -3756,18 +4266,30 @@ examine = 'It rattles when it walks.'
 [[config]]
 npc = 'death_troll_commander'
 examine = 'The biggest and baddest troll.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_leuitanant'
 examine = 'A big, bad troll.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_guard1'
 examine = 'A nasty looking troll.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_guard2'
 examine = 'A nasty looking troll.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_cook1'
@@ -3780,50 +4302,86 @@ examine = 'Human is his speciality.'
 [[config]]
 npc = 'death_troll_thrower1'
 examine = 'Small for a troll but mean, ugly and throws rocks.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_thrower2'
 examine = 'Small for a troll but mean, ugly and throws rocks.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_thrower3'
 examine = 'Small for a troll but mean, ugly and throws rocks.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_thrower4'
 examine = 'Small for a troll but mean, ugly and throws rocks.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_thrower5'
 examine = 'Small for a troll but mean, ugly and throws rocks.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee1'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee2'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee3'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee4'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee5'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee6'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'death_troll_melee7'
 examine = 'Small for a troll but mean and ugly.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'filliman_tarlock_spirit'
@@ -3840,6 +4398,9 @@ examine = 'Arrghhh... A Ghast.'
 [[config]]
 npc = 'ghast_vis'
 examine = 'Arrghhh... A Ghast.'
+death_anim = 1089
+attack_anim = 1087
+defend_anim = 1088
 
 [[config]]
 npc = 'mort_myre_gate_guard'
@@ -3876,18 +4437,30 @@ examine = "What's he mumbling about?"
 [[config]]
 npc = 'kalphite_worker'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_worker_strongholdcave'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_soldier'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_soldier_strongholdcave'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_lord'
@@ -3896,10 +4469,16 @@ examine = "I don't think insect repellent will work..."
 [[config]]
 npc = 'kalphite_lord_strongholdcave'
 examine = "I don't think insect repellent will work..."
+death_anim = 6230
+attack_anim = 6226
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_worker_chamber'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kalphite_lord_chamber'
@@ -3920,6 +4499,9 @@ examine = "I don't think insect repellent will work..."
 [[config]]
 npc = 'kalphite_larva'
 examine = "I don't think insect repellent will work..."
+death_anim = 6228
+attack_anim = 6225
+defend_anim = 6227
 
 [[config]]
 npc = 'kr_anna_sinclair'
@@ -3936,14 +4518,23 @@ examine = "She's dressed in a red top and green trousers."
 [[config]]
 npc = 'horror_dagganoth_jr'
 examine = 'A horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'horror_dagganoth_jr_darker'
 examine = 'A horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'horror_dagganoth_jr_lighter'
 examine = 'A horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'horror_dagannoth_medium'
@@ -4148,6 +4739,9 @@ examine = 'A popular dwarven delicacy.'
 [[config]]
 npc = 'slayer_mutated_zygomite_adult'
 examine = "A fun guy. No wait, that's awful.."
+death_anim = 3327
+attack_anim = 3326
+defend_anim = 3325
 
 [[config]]
 npc = 'necromancer'
@@ -4184,14 +4778,23 @@ examine = "Looks like they're sleepwalking."
 [[config]]
 npc = 'harmless_island_snake'
 examine = 'Snake! Snaaaaake!'
+death_anim = 278
+attack_anim = 275
+defend_anim = 276
 
 [[config]]
 npc = 'harmless_island_monkey'
 examine = 'Perhaps our oldest relatives?'
+death_anim = 223
+attack_anim = 220
+defend_anim = 221
 
 [[config]]
 npc = 'harmless_island_albino_bat'
 examine = "It's all white by me."
+death_anim = 4917
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'harmless_island_crab'
@@ -4200,10 +4803,16 @@ examine = 'Clearly not a hermit.'
 [[config]]
 npc = 'harmless_island_mosquito'
 examine = 'A flying blood sucker.'
+death_anim = 2398
+attack_anim = 2397
+defend_anim = 2399
 
 [[config]]
 npc = 'harmless_island_jungle_horror_worker'
 examine = 'A horrible, emaciated ape like creature with beady red eyes.'
+death_anim = 4233
+attack_anim = 4234
+defend_anim = 4232
 
 [[config]]
 npc = 'harmless_island_jungle_horror_young_worker'
@@ -4224,6 +4833,9 @@ examine = 'A horrible, emaciated ape like creature with beady pink eyes.'
 [[config]]
 npc = 'harmless_island_cave_horror_worker'
 examine = 'A horrible, emaciated ape like creature with beady red eyes.'
+death_anim = 4233
+attack_anim = 4234
+defend_anim = 4232
 
 [[config]]
 npc = 'harmless_island_cave_horror_young_worker'
@@ -4316,14 +4928,20 @@ examine = 'What on Gielinor is that?!?'
 [[config]]
 npc = 'soulbane_hope_monst3'
 examine = 'A hopeless poor creature.'
+death_anim = 3827
+attack_anim = 3823
 
 [[config]]
 npc = 'soulbane_hope_monst2'
 examine = 'A hopeless poor creature.'
+death_anim = 3827
+attack_anim = 3823
 
 [[config]]
 npc = 'soulbane_hope_monst1'
 examine = 'A hopeless poor creature.'
+death_anim = 3827
+attack_anim = 3823
 
 [[config]]
 npc = 'soulbane_final_tolna1'
@@ -4416,10 +5034,16 @@ examine = "A rather scared-looking dwarf. He doesn't seem all that drunk."
 [[config]]
 npc = 'royal_sea_snake_medium'
 examine = "Snake, snake, oh, it's a young snake..."
+death_anim = 3540
+attack_anim = 3538
+defend_anim = 3539
 
 [[config]]
 npc = 'royal_sea_snake_baby'
 examine = 'A baby sea snake. Snaaaaaaake!'
+death_anim = 3540
+attack_anim = 3538
+defend_anim = 3539
 
 [[config]]
 npc = 'royal_misc_guard'
@@ -4580,6 +5204,9 @@ examine = "She's quite a looker!"
 [[config]]
 npc = 'lathastrainingogre'
 examine = 'Big, ugly, and smelly.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zep_shark_1'
@@ -4694,6 +5321,12 @@ death_sound = 356
 [[config]]
 npc = 'rooster'
 examine = 'He rules the, er, roost.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'lamb1'
@@ -4856,14 +5489,23 @@ examine = 'A scruffy looking chap.'
 [[config]]
 npc = 'arena_bouncer'
 examine = "Postie Pete's worst nightmare."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'arena_ogre'
 examine = "Khazard's strongest ogre warrior."
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'arena_scorpion'
 examine = 'A large angry scorpion.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'dwarf_rock_avatar_warrior'
@@ -5046,6 +5688,9 @@ examine = 'Bony.'
 [[config]]
 npc = 'rag_vulture'
 examine = 'If you see them circling: run.'
+death_anim = 2021
+attack_anim = 2019
+defend_anim = 2020
 
 [[config]]
 npc = 'rag_vulture_flying'
@@ -5070,6 +5715,9 @@ examine = 'He must find gardening difficult since the accident.'
 [[config]]
 npc = 'fenk_experiment_1'
 examine = 'It has a key hanging from its collar.'
+death_anim = 1628
+attack_anim = 1626
+defend_anim = 1627
 
 [[config]]
 npc = 'fenk_experiment_2'
@@ -5922,6 +6570,8 @@ examine = 'With all the furs, I almost mistook her for a wild animal.'
 [[config]]
 npc = 'hunting_ferret'
 examine = 'Wild.'
+death_anim = 5190
+attack_anim = 5189
 
 [[config]]
 npc = '0_37_53_freshfish'
@@ -6074,6 +6724,8 @@ examine = 'I can see fish swimming in the water.'
 [[config]]
 npc = 'slayer_cave_gargoyle'
 examine = 'Flies like a rock.'
+death_anim = 1518
+attack_anim = 1517
 
 [[config]]
 npc = '0_39_55_saltfish'
@@ -7074,14 +7726,23 @@ examine = "They'll eat anything!"
 [[config]]
 npc = 'desert_goat_black3'
 examine = "They'll eat anything!"
+death_anim = 253
+attack_anim = 250
+defend_anim = 251
 
 [[config]]
 npc = 'desert_goat_white1'
 examine = "They'll eat anything!"
+death_anim = 253
+attack_anim = 250
+defend_anim = 251
 
 [[config]]
 npc = 'desert_goat_white2'
 examine = "They'll eat anything!"
+death_anim = 253
+attack_anim = 250
+defend_anim = 251
 
 [[config]]
 npc = 'desert_goat_white3'
@@ -7268,6 +7929,12 @@ examine = 'Half horse, half woman.'
 [[config]]
 npc = 'fairy2_stag'
 examine = 'A noble creature!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'fairy2_dryad'
@@ -7296,10 +7963,16 @@ examine = "It's just a flesh wound."
 [[config]]
 npc = 'fairy2_rabbit1'
 examine = 'Aww, how cute.'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'fairy2_rabbit2'
 examine = 'Aww, how cute.'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'fairy2_butterfly1'
@@ -7360,6 +8033,9 @@ examine = 'Young but still dangerous.'
 [[config]]
 npc = 'baby_black_dragon_strongholdcave'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'chickenquest_fairy_dragon'
@@ -7368,18 +8044,30 @@ examine = 'Could this be one of the Elder dragons?'
 [[config]]
 npc = 'fris_baby_troll'
 examine = 'An ice troll youngling.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollm'
 examine = 'A male troll wielding a large club.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollf'
 examine = 'An ice troll with a bag of rocks.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_troll_bodyguard'
 examine = 'A large ice troll.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_r_burgher_crown'
@@ -7866,18 +8554,30 @@ defend_anim = 65
 [[config]]
 npc = 'greater_demon5'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'greater_demon_strongholdcave_1'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'greater_demon_strongholdcave_2'
 examine = 'Big, purple, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'greater_demon_strongholdcave_3'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'snakeboss_priest_2ops'
@@ -7942,22 +8642,37 @@ examine = 'Spawn of Zulrah.'
 [[config]]
 npc = 'black_demon'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon2'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon3'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon4'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon5'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'entrana_glassblower'
@@ -7998,30 +8713,54 @@ examine = 'A rough looking gnome.'
 [[config]]
 npc = 'oomlie_bird'
 examine = 'A jungle version of the chicken, but more vicious.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'penguin'
 examine = 'An inhabitant of icy regions.'
+death_anim = 5671
+attack_anim = 5669
+defend_anim = 5670
 
 [[config]]
 npc = 'terrorbird'
 examine = 'A giant raptor.'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'terrorbird2'
 examine = 'A giant raptor.'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'terrorbird3'
 examine = 'A giant raptor.'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'terrorbird_mounted'
 examine = 'These gnomes know how to get around!'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'terrorbird_mountedspear'
 examine = 'These gnomes know how to get around!'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'crow'
@@ -8050,42 +8789,72 @@ examine = "A farmer's enemy."
 [[config]]
 npc = 'firegiant_big'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_big2'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_big3'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant2'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant3'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_strongholdcave_1'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_strongholdcave_2'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_strongholdcave_3'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'firegiant_strongholdcave_4'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'icegiant'
@@ -8153,18 +8922,30 @@ defend_anim = 4657
 [[config]]
 npc = 'jogre'
 examine = 'An aggressive humanoid.'
+death_anim = 131
+attack_anim = 128
+defend_anim = 129
 
 [[config]]
 npc = 'ogre'
 examine = 'A large dim looking humanoid.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogre2'
 examine = 'A large dim looking humanoid.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'cyclops'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'giant'
@@ -8335,26 +9116,44 @@ examine = 'A one-eyed cutie.'
 [[config]]
 npc = 'warguild_cyclops1_high'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops2_high'
 examine = 'A one-eyed woman eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops3_high'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops4_high'
 examine = 'A one-eyed woman eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops5_high'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops6_high'
 examine = 'A one-eyed woman eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'poh_menagerie_sarachnispet'
@@ -8367,6 +9166,9 @@ examine = "Good thing there's no such thing as Sarachnophobia."
 [[config]]
 npc = 'hosdun_druid'
 examine = 'A fallen worshiper of a forgotten religion.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = '52_59_rarefish'
@@ -8607,10 +9409,19 @@ examine = "Commander of Saradomin's forces."
 [[config]]
 npc = 'godwars_saradomin_unicorn'
 examine = 'Bane of darkness.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'godwars_saradomin_lion'
 examine = 'Defender of the faithful.'
+death_anim = 7034
+attack_anim = 7036
+defend_anim = 7035
 
 [[config]]
 npc = 'godwars_saradomin_centaur'
@@ -8715,14 +9526,23 @@ examine = 'A dwarven enforcer.'
 [[config]]
 npc = 'godwars_ancient_ogre'
 examine = 'Ugly and bad-tempered.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'godwars_ancient_jogre'
 examine = 'Green and aggressive.'
+death_anim = 2938
+attack_anim = 2935
+defend_anim = 2937
 
 [[config]]
 npc = 'godwars_ancient_cyclops'
 examine = 'A one-eyed man-eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'godwars_ancient_cyclops2'
@@ -8731,22 +9551,37 @@ examine = 'A one-eyed man-eater.'
 [[config]]
 npc = 'godwars_ancient_ork1'
 examine = 'Ugly, fierce and with a bad attitude.'
+death_anim = 7031
+attack_anim = 6972
+defend_anim = 4322
 
 [[config]]
 npc = 'godwars_ancient_ork2'
 examine = 'Ugly, fierce and with a bad attitude.'
+death_anim = 7031
+attack_anim = 6972
+defend_anim = 4322
 
 [[config]]
 npc = 'godwars_ancient_ork3'
 examine = 'Ugly, fierce and with a bad attitude.'
+death_anim = 7031
+attack_anim = 6972
+defend_anim = 4322
 
 [[config]]
 npc = 'godwars_ancient_ork4'
 examine = 'Ugly, fierce and with a bad attitude.'
+death_anim = 7031
+attack_anim = 6972
+defend_anim = 4322
 
 [[config]]
 npc = 'godwars_ancient_hobgoblin'
 examine = 'An ugly, smelly creature.'
+death_anim = 167
+attack_anim = 163
+defend_anim = 165
 
 [[config]]
 npc = 'godwars_spiritual_bandos_ranger'
@@ -8767,6 +9602,12 @@ examine = 'An ancient goblin.'
 [[config]]
 npc = 'godwars_goblin2'
 examine = 'A warrior for Bandos.'
+attack_anim = 6184
+attack_sound = 469
+defend_anim = 6183
+defend_sound = 472
+death_anim = 6182
+death_sound = 471
 
 [[config]]
 npc = 'godwars_goblin3'
@@ -8779,6 +9620,12 @@ examine = 'Cannon fodder, so to speak.'
 [[config]]
 npc = 'godwars_goblin5'
 examine = 'Footsoldier for Bandos.'
+attack_anim = 6184
+attack_sound = 469
+defend_anim = 6183
+defend_sound = 472
+death_anim = 6182
+death_sound = 471
 
 [[config]]
 npc = 'dagannoth_weak_door_south'
@@ -8819,6 +9666,9 @@ examine = 'This door seems to have a weak point.'
 [[config]]
 npc = 'dungeon_dagganoth_lighter'
 examine = 'A spiney horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'giant_rockcrab'
@@ -9039,6 +9889,9 @@ examine = "He's the head of the Dorgeshuun Council."
 [[config]]
 npc = 'dorgesh_guard1'
 examine = 'He keeps order in the city.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'dorgesh_guard2'
@@ -9615,6 +10468,9 @@ examine = 'A warrior mage from the east.'
 [[config]]
 npc = 'warguild_cyclops1'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops2'
@@ -9623,6 +10479,9 @@ examine = 'A one-eyed woman eater.'
 [[config]]
 npc = 'warguild_cyclops3'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops4'
@@ -9631,6 +10490,9 @@ examine = 'A one-eyed woman eater.'
 [[config]]
 npc = 'warguild_cyclops5'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'warguild_cyclops6'
@@ -10256,6 +11118,9 @@ examine = 'It looks like some broken bottles'
 [[config]]
 npc = 'mudskipper_ogre'
 examine = 'An angry Ogre in a funny hat.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'canafis_werewolf_man1'
@@ -10424,6 +11289,9 @@ examine = 'He can look after my money.'
 [[config]]
 npc = 'mmsnailround_swamp'
 examine = 'A marsh coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'twocats_bob_cutscene'
@@ -10468,22 +11336,37 @@ examine = 'Loving cats.'
 [[config]]
 npc = 'mmsnailround_red+black'
 examine = 'A blood coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'mmsnailround_yellow'
 examine = 'A muddy coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'mmsnailround_blue'
 examine = 'A bruise blue coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'mmsnailround_orange'
 examine = 'A branch bark coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'mmsnailpoint_swamp'
 examine = 'A marsh coloured blamish snail, these types are said to spit acid.'
+death_anim = 1279
+attack_anim = 1277
+defend_anim = 1278
 
 [[config]]
 npc = 'mmsnailpoint_red+black'
@@ -11191,6 +12074,12 @@ death_sound = 367
 [[config]]
 npc = 'cow_beef'
 examine = 'A cow by any other name would smell as sweet.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'pig_1'
@@ -11337,6 +12226,9 @@ examine = 'Needs a haircut.'
 [[config]]
 npc = 'small_bat'
 examine = 'An annoying flappy thing.'
+death_anim = 4918
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'dryhad'
@@ -11345,6 +12237,9 @@ examine = 'A wood nymph.'
 [[config]]
 npc = 'fairy'
 examine = 'A delicate creature from this strange realm.'
+death_anim = 113
+attack_anim = 110
+defend_anim = 111
 
 [[config]]
 npc = 'cracktheclue_mom'
@@ -11361,6 +12256,9 @@ examine = 'A pint-sized bringer of existence.'
 [[config]]
 npc = 'bat'
 examine = 'An annoying flappy thing.'
+death_anim = 4917
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'camel'
@@ -11415,6 +12313,9 @@ examine = 'Is he invisible or just a set of floating clothing?'
 [[config]]
 npc = 'magicaxe'
 examine = 'A magic axe with a mind of its own.'
+death_anim = 188
+attack_anim = 185
+defend_anim = 186
 
 [[config]]
 npc = 'snake'
@@ -11441,6 +12342,12 @@ defend_anim = 221
 [[config]]
 npc = 'black_unicorn'
 examine = 'A unicorn with a blackened heart.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'veos_controlled'
@@ -11779,14 +12686,17 @@ examine = "Get in a graahk's way and you're going to know about it... however br
 [[config]]
 npc = 'hunting_chinchompa'
 examine = "It looks fluffy and cute; it's probably deadly."
+death_anim = 5183
 
 [[config]]
 npc = 'hunting_chinchompa_big'
 examine = "It looks fluffy and cute; it's probably deadly."
+death_anim = 5183
 
 [[config]]
 npc = 'hunting_chinchompa_black'
 examine = 'Volatile and dangerous, yet so cute.'
+death_anim = 5183
 
 [[config]]
 npc = 'master_fisher'
@@ -11803,18 +12713,30 @@ examine = 'A wise barbarian, apparently. He still looks like a thug.'
 [[config]]
 npc = 'brut_waterfiend'
 examine = 'A fiendish embodiment of water.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'waterfiend_strongholdcave'
 examine = 'A fiendish embodiment of water.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'brut_green_dragon'
 examine = 'It appears intelligent and savage.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'brut_mithril_dragon'
 examine = 'Experimenting with mithril gone bad!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'brut_barbarian1'
@@ -12011,10 +12933,22 @@ examine = 'A trader from across the eastern sea.'
 [[config]]
 npc = 'ahoy_undead_cow'
 examine = "It's an undead cow."
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'ahoy_undead_chicken'
 examine = 'Yep, definitely a chicken... an undead chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'giant_lobster'
@@ -12107,6 +13041,12 @@ examine = "One of Gielinor's many citizens."
 [[config]]
 npc = 'shadow_spider'
 examine = 'Is it a spider or is it a shadow?'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'giantspider1'
@@ -12159,6 +13099,12 @@ death_sound = 3608
 [[config]]
 npc = 'jungle_spider'
 examine = 'A barely visible deadly jungle spider.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'deadly_red_spider'
@@ -12173,10 +13119,22 @@ death_sound = 538
 [[config]]
 npc = 'ice_spider'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'poisonspider'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'scorpion'
@@ -12188,10 +13146,16 @@ defend_anim = 6255
 [[config]]
 npc = 'poison_scorpion'
 examine = 'It has a very vicious looking tail.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'smallscorpion'
 examine = 'Tiny, annoying, stinging thing.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'kingscorpion'
@@ -12414,6 +13378,9 @@ defend_anim = 165
 [[config]]
 npc = 'hobgoblin_armed'
 examine = 'An ugly, smelly creature, with a spear.'
+death_anim = 167
+attack_anim = 163
+defend_anim = 165
 
 [[config]]
 npc = 'goblin_armed_melee_1'
@@ -12861,18 +13828,33 @@ examine = 'Despoiler of Ullek.'
 [[config]]
 npc = 'godwars_ancient_hellhound'
 examine = 'From the maws of hell.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'godwars_ancient_imp'
 examine = 'Have you checked your pockets lately?'
+attack_anim = 169
+attack_sound = 534
+defend_anim = 170
+defend_sound = 536
+death_anim = 172
+death_sound = 535
 
 [[config]]
 npc = 'godwars_ancient_werewolf1'
 examine = 'Down, fang!'
+death_anim = 6537
+attack_anim = 6536
+defend_anim = 6538
 
 [[config]]
 npc = 'godwars_ancient_werewolf2'
 examine = "He doesn't look pleased to see me."
+death_anim = 6537
+attack_anim = 6536
+defend_anim = 6538
 
 [[config]]
 npc = 'godwars_ancient_vampire'
@@ -12881,18 +13863,30 @@ examine = 'A feral vampyre. It looks really hungry!'
 [[config]]
 npc = 'godwars_bloodveld'
 examine = 'The tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'godwars_pyrefiend_1'
 examine = 'A small fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'godwars_icefiend_1'
 examine = 'A small ice demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'godwars_gorak'
 examine = 'Comes with a vicious kick.'
+death_anim = 4302
+attack_anim = 4300
+defend_anim = 4301
 
 [[config]]
 npc = 'gnome_ball_coach'
@@ -13005,6 +13999,9 @@ examine = 'A mage who serves Armadyl above all else - even death.'
 [[config]]
 npc = 'godwars_armadyl_male_armor01_blue'
 examine = 'Graceful, bird-like creature.'
+death_anim = 6959
+attack_anim = 6955
+defend_anim = 6958
 
 [[config]]
 npc = 'godwars_armadyl_male_armor01_green'
@@ -13065,10 +14062,16 @@ examine = 'Graceful, bird-like creature.'
 [[config]]
 npc = 'dagganoth_critter'
 examine = 'A teeny-tiny horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'dungeon_dagganoth_mainroom'
 examine = 'A darkened horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'dorgesh_zanik'
@@ -13237,6 +14240,9 @@ examine = "The Wizards' Tower's armourer."
 [[config]]
 npc = 'vampire_leech'
 examine = "Yuck! It's all slimy!"
+death_anim = 1272
+attack_anim = 1273
+defend_anim = 1271
 
 [[config]]
 npc = 'vampire_flyer'
@@ -14018,10 +15024,16 @@ defend_anim = 6091
 [[config]]
 npc = 'regicide_darkbear'
 examine = 'Eek! A big bear!'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'regicide_darkbear_cub1'
 examine = 'Eek! A bear cub!'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'regicide_darkbear_cub2'
@@ -14030,6 +15042,9 @@ examine = 'Eek! A bear cub!'
 [[config]]
 npc = 'direwolf'
 examine = 'What big teeth you have.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'regicide_darkelf'
@@ -14462,6 +15477,9 @@ examine = 'A foul tempered, ugly, lumpy yellow horse prone to spitting.'
 [[config]]
 npc = 'feud_desert_snake'
 examine = 'A slithering serpent.'
+death_anim = 278
+attack_anim = 275
+defend_anim = 276
 
 [[config]]
 npc = 'feud_charmers_snake'
@@ -14709,14 +15727,32 @@ examine = 'A peaceful monk.'
 [[config]]
 npc = 'clocktower_rat'
 examine = 'A dirty rat.'
+attack_anim = 4933
+attack_sound = 710
+defend_anim = 4934
+defend_sound = 713
+death_anim = 4935
+death_sound = 711
 
 [[config]]
 npc = 'clocktower_rat2'
 examine = 'A dirty rat.'
+attack_anim = 4933
+attack_sound = 710
+defend_anim = 4934
+defend_sound = 713
+death_anim = 4935
+death_sound = 711
 
 [[config]]
 npc = 'clocktower_rat3'
 examine = 'A dirty rat.'
+attack_anim = 4933
+attack_sound = 710
+defend_anim = 4934
+defend_sound = 713
+death_anim = 4935
+death_sound = 711
 
 [[config]]
 npc = 'puzzle_cart'
@@ -14921,22 +15957,46 @@ examine = 'For Mod Reach.'
 [[config]]
 npc = 'misc_chicken'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'misc_chicken_brown'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'misc_rooster'
 examine = 'He rules the, er, roost.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'misc_rabbit'
 examine = 'Aww, how cute.'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'misc_rabbit2'
 examine = 'Aww, how cute.'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'misc_prince_brand'
@@ -15041,10 +16101,16 @@ examine = "A juvinate vampyre. They're guarding the mining area."
 [[config]]
 npc = 'sang_myq3_male_juvenile'
 examine = 'A juvenile vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'sang_myq3_female_juvenile'
 examine = 'A juvenile vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_juvinate'
@@ -15057,10 +16123,16 @@ examine = 'A juvinate vampyre.'
 [[config]]
 npc = 'sang_myq3_male_juvenile_held'
 examine = 'A juvenile vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'sang_myq3_female_juvenile_held'
 examine = 'A juvenile vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_juvinate_held'
@@ -15109,14 +16181,23 @@ examine = 'A feral vampyre. It looks really hungry!'
 [[config]]
 npc = 'sang_myq3_female_walk_vyrewatch_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_vyrewatch_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_vyrewatch_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_vyrewatch_4'
@@ -15125,14 +16206,23 @@ examine = 'An evil, bloodsucking vampyre.'
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_female_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_female_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_female_3'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_female_4'
@@ -15141,14 +16231,23 @@ examine = 'A thirsty-looking, airborne bloodsucker!'
 [[config]]
 npc = 'sang_myq3_female_flying_vyrewatch_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_vyrewatch_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_vyrewatch_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_vyrewatch_4'
@@ -15157,14 +16256,23 @@ examine = 'An evil, bloodsucking vampyre.'
 [[config]]
 npc = 'sang_myq3_male_walk_vyrewatch_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_vyrewatch_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_vyrewatch_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_vyrewatch_4'
@@ -15173,14 +16281,23 @@ examine = 'An evil, bloodsucking vampyre.'
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_male_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_male_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_male_3'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'myreque_pt3_takeoff_vyrewatch_male_4'
@@ -15189,14 +16306,23 @@ examine = 'A thirsty-looking, airborne bloodsucker!'
 [[config]]
 npc = 'sang_myq3_male_flying_vyrewatch_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_vyrewatch_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_vyrewatch_3'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_vyrewatch_4'
@@ -15265,14 +16391,23 @@ examine = 'He looks haughty and arrogant.'
 [[config]]
 npc = 'sang_myq3_female_flying_ns_vyrewatch_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_ns_vyrewatch_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_ns_vyrewatch_3'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_female_flying_ns_vyrewatch_4'
@@ -15281,14 +16416,23 @@ examine = 'A thirsty-looking, airborne bloodsucker!'
 [[config]]
 npc = 'sang_myq3_male_flying_ns_vyrewatch_1'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_ns_vyrewatch_2'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_ns_vyrewatch_3'
 examine = 'A thirsty-looking, airborne bloodsucker!'
+death_anim = 4697
+attack_anim = 4685
+defend_anim = 4691
 
 [[config]]
 npc = 'sang_myq3_male_flying_ns_vyrewatch_4'
@@ -15297,14 +16441,23 @@ examine = 'A thirsty-looking, airborne bloodsucker!'
 [[config]]
 npc = 'sang_myq3_female_walk_ns_vyrewatch_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_ns_vyrewatch_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_ns_vyrewatch_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_female_walk_ns_vyrewatch_4'
@@ -15313,14 +16466,23 @@ examine = 'An evil, bloodsucking vampyre.'
 [[config]]
 npc = 'sang_myq3_male_walk_ns_vyrewatch_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_ns_vyrewatch_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_ns_vyrewatch_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 4708
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'sang_myq3_male_walk_ns_vyrewatch_4'
@@ -15505,42 +16667,72 @@ examine = 'This citizen looks pale, tired and old!'
 [[config]]
 npc = 'myq3_child_male_1'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_male_2'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_male_3'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_male_4'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_male_5'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_male_6'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_female_1'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_female_2'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_female_3'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myq3_child_female_4'
 examine = 'A poor street urchin!'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'myreque_pt3_miner1'
@@ -15673,10 +16865,16 @@ examine = "Should I pronounce it 'bucket'?"
 [[config]]
 npc = 'lunar_mossgiant'
 examine = 'His beard seems to have a life of its own.'
+death_anim = 4659
+attack_anim = 4658
+defend_anim = 4657
 
 [[config]]
 npc = 'lunar_mossgiant2'
 examine = 'His beard seems to have a life of its own.'
+death_anim = 4659
+attack_anim = 4658
+defend_anim = 4657
 
 [[config]]
 npc = 'lunar_captains_parrot'
@@ -15857,14 +17055,23 @@ examine = 'Your challenge awaits!'
 [[config]]
 npc = 'viking_fox'
 examine = 'Foxy.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'viking_bunny_1'
 examine = 'Hoppity, hoppity.'
+death_anim = 1246
+attack_anim = 1245
+defend_anim = 1244
 
 [[config]]
 npc = 'viking_bunny_2'
 examine = 'Hoppity, hoppity.'
+death_anim = 1246
+attack_anim = 1245
+defend_anim = 1244
 
 [[config]]
 npc = 'viking_seagull'
@@ -15885,22 +17092,43 @@ examine = 'A sea bird.'
 [[config]]
 npc = 'brownbear_cub_1'
 examine = 'Cute. But deadly.'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'brownbear_cub_2'
 examine = 'Cute. But deadly.'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'unicorn_foal_1'
 examine = 'Horned Horsey.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'black_unicorn_foal'
 examine = 'Cute but evil.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'viking_wolf'
 examine = "Not man's best friend."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = '0_41_57_saltfish'
@@ -16241,6 +17469,9 @@ examine = 'A shadow.'
 [[config]]
 npc = 'mourning_dark_beast'
 examine = 'From a darker dimension.'
+death_anim = 2733
+attack_anim = 2731
+defend_anim = 2732
 
 [[config]]
 npc = 'mourning_deathalter_dwarf_vis'
@@ -16677,6 +17908,9 @@ examine = "Dunstan's son."
 [[config]]
 npc = 'troll_general'
 examine = 'One of the troll generals.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_general2'
@@ -16689,30 +17923,51 @@ examine = 'One of the troll generals.'
 [[config]]
 npc = 'troll_spectator1'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator2'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator3'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator4'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator5'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator6'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_spectator7'
 examine = "He's watching the arena."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_champion'
@@ -16721,10 +17976,16 @@ examine = 'An unusually large troll.'
 [[config]]
 npc = 'troll_prison_guard1_awake'
 examine = "He's guarding the cells."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_prison_guard2_awake'
 examine = "He's guarding the cells."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_prison_guard1'
@@ -16737,22 +17998,37 @@ examine = "He's guarding the cells."
 [[config]]
 npc = 'troll_thrower1'
 examine = "Small for a troll, but it's mean, ugly and throws rocks."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_thrower2'
 examine = "Small for a troll, but it's mean, ugly and throws rocks."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_thrower3'
 examine = "Small for a troll, but it's mean, ugly and throws rocks."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_thrower4'
 examine = "Small for a troll, but it's mean, ugly and throws rocks."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_thrower5'
 examine = "Small for a troll, but it's mean, ugly and throws rocks."
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'troll_cook'
@@ -16933,10 +18209,15 @@ examine = 'He seems to be in a spot of bother.'
 [[config]]
 npc = 'ics_little_croc'
 examine = 'Never smile at a...'
+death_anim = 2038
+attack_anim = 2039
 
 [[config]]
 npc = 'ics_little_jackal'
 examine = 'He has had his day.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ics_little_locust'
@@ -17389,6 +18670,9 @@ examine = 'Recalled to unlife!'
 [[config]]
 npc = 'swan_skeleton_training'
 examine = "Doesn't seem to want to go away."
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'kr_morgan_cutscene'
@@ -17557,6 +18841,9 @@ examine = 'One of the Knights of the Round Table.'
 [[config]]
 npc = 'ogre_chieftan'
 examine = 'Tough-looking.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogre_chieftan_caves'
@@ -18573,18 +19860,30 @@ examine = 'He patrols the Shantay Pass.'
 [[config]]
 npc = 'desert_wolf'
 examine = 'A vicious desert wolf.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'desert_wolf2'
 examine = 'A vicious desert wolf.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'desert_wolf3'
 examine = 'A vicious desert wolf.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ugthanki'
 examine = 'A vicious attacking camel.'
+death_anim = 52
+attack_anim = 49
+defend_anim = 50
 
 [[config]]
 npc = 'mining_cart_driver'
@@ -18729,30 +20028,61 @@ examine = 'Head of recruitment for the Temple Knights.'
 [[config]]
 npc = 'soulbane_unicorn'
 examine = 'He looks a little on the cross side!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'soulbane_rat'
 examine = 'He looks a little on the cross side!'
+attack_anim = 4933
+attack_sound = 710
+defend_anim = 4934
+defend_sound = 713
+death_anim = 4935
+death_sound = 711
 
 [[config]]
 npc = 'soulbane_rat2'
 examine = 'He looks a little on the cross side!'
+attack_anim = 4933
+attack_sound = 710
+defend_anim = 4934
+defend_sound = 713
+death_anim = 4935
+death_sound = 711
 
 [[config]]
 npc = 'soulbane_goblin'
 examine = 'He looks a little on the cross side!'
+attack_anim = 6184
+attack_sound = 469
+defend_anim = 6183
+defend_sound = 472
+death_anim = 6182
+death_sound = 471
 
 [[config]]
 npc = 'soulbane_bear'
 examine = 'He looks a little on the cross side!'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'soulbane_fear_beast'
 examine = 'AHHHH!'
+death_anim = 3813
+attack_anim = 3812
 
 [[config]]
 npc = 'soulbane_conf_beast'
 examine = 'What on Gielinor is that?!?'
+death_anim = 3821
+attack_anim = 3816
 
 [[config]]
 npc = 'soulbane_less_beast3'
@@ -18809,6 +20139,9 @@ examine = "A crotchety old fisherman who doesn't like young whippersnappers."
 [[config]]
 npc = 'tbwt_beast'
 examine = 'A huge beast, resembling in some ways a lion, but mostly a twisted nightmare.'
+death_anim = 1201
+attack_anim = 1199
+defend_anim = 1200
 
 [[config]]
 npc = 'tbwt_beast_cutscene'
@@ -19149,10 +20482,16 @@ examine = 'A child of aquatic evil.'
 [[config]]
 npc = 'slug2_giant_lobster_peaceful'
 examine = 'Not very tasty.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'slug2_giant_lobster'
 examine = 'An extremely vicious lobster.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'slug2_seaslug'
@@ -19205,6 +20544,9 @@ examine = 'A dwarven father figure!'
 [[config]]
 npc = 'slayer_icefiend_1'
 examine = 'A small ice demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'hundred_pirate'
@@ -19649,6 +20991,9 @@ examine = 'A morally ambiguous guard.'
 [[config]]
 npc = 'fire_bird'
 examine = 'Probably not a chicken.'
+death_anim = 6812
+attack_anim = 6811
+defend_anim = 6810
 
 [[config]]
 npc = '0_45_152_lavafish'
@@ -19829,10 +21174,16 @@ examine = "It's one of General Khazard's commanders."
 [[config]]
 npc = 'gnomeknight'
 examine = "It's a tree gnome trooper."
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'd_skingnomeknight'
 examine = "It's a tree gnome trooper."
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'tracker1'
@@ -20397,6 +21748,9 @@ examine = 'A slightly insane princess.'
 [[config]]
 npc = 'grim_experiment'
 examine = 'A very odd looking creature.'
+death_anim = 6512
+attack_anim = 6513
+defend_anim = 6515
 
 [[config]]
 npc = 'grim_giant_mouse'
@@ -20669,6 +22023,9 @@ examine = 'An ugly green creature.'
 [[config]]
 npc = 'babygreendragon1'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'goblin_unarmed_mcannon_1'
@@ -20843,6 +22200,12 @@ examine = 'It looks just a bit... underfed.'
 [[config]]
 npc = 'mm_warehouse_spider'
 examine = "It's an extremely small brown spider, probably very poisonous."
+attack_anim = 6249
+attack_sound = 3604
+defend_anim = 6250
+defend_sound = 3609
+death_anim = 6251
+death_sound = 3608
 
 [[config]]
 npc = 'mm_cutscene_spider'
@@ -20855,14 +22218,26 @@ examine = "It's a brightly coloured bird of the jungle."
 [[config]]
 npc = 'mm_jungle_bird_blue'
 examine = "It's a brightly coloured bird of the jungle. It flies very quickly."
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'mm_jungle_scorpion'
 examine = "It's an extremely dangerous looking scorpion."
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'mm_jungle_spider'
 examine = 'A very dangerous looking spider, with its fangs unsheathed.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'mm_jungle_snake'
@@ -20943,6 +22318,9 @@ examine = 'A large ninja monkey wielding two scimitars.'
 [[config]]
 npc = 'mm_padulah'
 examine = 'A scimitar wielding ninja monkey. He looks like he is guarding something.'
+death_anim = 1384
+attack_anim = 1392
+defend_anim = 1393
 
 [[config]]
 npc = 'mm_awowogei_cutscene'
@@ -20979,6 +22357,9 @@ examine = 'A scimitar wielding ninja monkey.'
 [[config]]
 npc = 'mm_monkey_archer'
 examine = 'A bow wielding ninja monkey.'
+death_anim = 1384
+attack_anim = 1392
+defend_anim = 1393
 
 [[config]]
 npc = 'mm_ravine_archer'
@@ -20987,10 +22368,16 @@ examine = 'A bow wielding ninja monkey. It looks particularly dangerous.'
 [[config]]
 npc = 'mm_posted_archer'
 examine = 'A bow wielding ninja monkey.'
+death_anim = 1384
+attack_anim = 1392
+defend_anim = 1393
 
 [[config]]
 npc = 'mm_religious_guard'
 examine = 'A huge brutish gorilla armoured with dangerous looking vambraces.'
+death_anim = 1404
+attack_anim = 1402
+defend_anim = 1403
 
 [[config]]
 npc = 'mm_religious_trapdoor_guard'
@@ -21147,18 +22534,30 @@ examine = 'Former adviser to the Duke of Lumbridge.'
 [[config]]
 npc = 'cave_goblin_miner'
 examine = 'This one is slacking off.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner2'
 examine = 'This one is slacking off.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner3'
 examine = 'This one is slacking off.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner4'
 examine = 'This one is slacking off.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_guard1'
@@ -21167,22 +22566,37 @@ examine = 'He protects the miners.'
 [[config]]
 npc = 'cave_goblin_guard2'
 examine = 'He protects the miners.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner_mining'
 examine = "He's working away."
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner2_mining'
 examine = "He's working away."
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner3_mining'
 examine = "He's working away."
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin_miner4_mining'
 examine = "He's working away."
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'mosol_rei'
@@ -21223,14 +22637,23 @@ examine = "The animated dead; one of Rashiliyia's minions."
 [[config]]
 npc = 'zqzombie_armed'
 examine = "The animated dead; one of Rashiliyia's minions."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zqzombie_armed2'
 examine = "The animated dead; one of Rashiliyia's minions."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zqzombie_armed3'
 examine = "The animated dead; one of Rashiliyia's minions."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'zqzombiequeen'
@@ -21307,6 +22730,9 @@ examine = "He doesn't look like he'd trust his own mother."
 [[config]]
 npc = 'zamorakghost'
 examine = 'Spooky.'
+death_anim = 5542
+attack_anim = 5540
+defend_anim = 5541
 
 [[config]]
 npc = 'spirit_of_scorpius'
@@ -21315,6 +22741,9 @@ examine = 'The essence of evil.'
 [[config]]
 npc = 'grave_scorpion'
 examine = 'A vicious, little, stinging thing.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'dungeonspider'
@@ -21959,22 +23388,37 @@ examine = 'A scuttling little scorpion with an incredibly vicious tail.'
 [[config]]
 npc = 'multicoloured_bird'
 examine = 'It blends in very well with its surroundings.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'hunting_bird_jungle'
 examine = "This bird obviously doesn't believe in subtlety."
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'hunting_bird_polar'
 examine = 'Best served ice cold.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'hunting_bird_desert'
 examine = 'Actually, golden screecher might be a more appropriate name.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'hunting_bird_woodland'
 examine = 'Nothing much to get in a flap about.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'butterfly_warlock'
@@ -22019,14 +23463,23 @@ examine = 'A retired mining engineer.'
 [[config]]
 npc = 'brut_angry_spirit1'
 examine = 'He looks a tad upset.'
+death_anim = 6727
+attack_anim = 6726
+defend_anim = 6728
 
 [[config]]
 npc = 'brut_angry_spirit2'
 examine = 'He looks a tad upset.'
+death_anim = 6727
+attack_anim = 6726
+defend_anim = 6728
 
 [[config]]
 npc = 'brut_angry_spirit3'
 examine = 'He looks a tad upset.'
+death_anim = 6727
+attack_anim = 6726
+defend_anim = 6728
 
 [[config]]
 npc = 'brut_angry_spirit_bad'
@@ -22879,14 +24332,23 @@ examine = 'Holy Mole-y!'
 [[config]]
 npc = 'mole_baby_01'
 examine = 'I will call him, Mini Mole.'
+death_anim = 3310
+attack_anim = 3312
+defend_anim = 3311
 
 [[config]]
 npc = 'mole_baby_02'
 examine = 'Mooooooooooooole.'
+death_anim = 3310
+attack_anim = 3312
+defend_anim = 3311
 
 [[config]]
 npc = 'mole_baby_03'
 examine = 'Moley, moley, moley!'
+death_anim = 3310
+attack_anim = 3312
+defend_anim = 3311
 
 [[config]]
 npc = 'tog_light_creature_carrying'
@@ -23019,6 +24481,12 @@ examine = 'Bert seems to be covered in sand from head to toe.'
 [[config]]
 npc = 'yak'
 examine = 'A hairy, smelly, grazing animal.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'fris_ice_chunk_one'
@@ -23047,18 +24515,30 @@ examine = 'An impressive-looking troll.'
 [[config]]
 npc = 'fris_baby_troll_lowxp'
 examine = 'An ice troll youngling. All brawn and no loot.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollm_lowxp'
 examine = 'A male troll wielding a large club. All brawn and no loot.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollf_lowxp'
 examine = 'An ice troll with a bag of rocks. All brawn and no loot.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_troll_bodyguard_lowxp'
 examine = 'A large ice troll. All brawn and no loot.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'frisb_n_phy'
@@ -23067,18 +24547,30 @@ examine = "Physician to Neitiznot's militia."
 [[config]]
 npc = 'fris_baby_troll_pc'
 examine = 'An ice troll youngling.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollm_pc'
 examine = 'A male troll wielding a large club.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_trollf_pc'
 examine = 'An ice troll with a bag of rocks.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'fris_troll_bodyguard_pc'
 examine = 'A large ice troll.'
+death_anim = 5775
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'martin_the_master_farmer'
@@ -23123,6 +24615,12 @@ examine = 'A practitioner of dark arts.'
 [[config]]
 npc = 'fairy_cow'
 examine = 'Converts grass to beef.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'fairy_sheep'
@@ -23151,6 +24649,9 @@ examine = 'A walking thorn bush!'
 [[config]]
 npc = 'fairy_tanglefoot_sml1'
 examine = 'An animated shrub.'
+death_anim = 3263
+attack_anim = 3262
+defend_anim = 3260
 
 [[config]]
 npc = 'fairy_tanglefoot_sml2'
@@ -23211,26 +24712,44 @@ examine = 'He has been turned to stone.'
 [[config]]
 npc = 'babygreendragon2'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'babygreendragon3'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'black_demon_strongholdcave_2'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon_strongholdcave_3'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon_strongholdcave_4'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'black_demon_strongholdcave_5'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'blue_dragon_strongholdcave_1'
@@ -23439,10 +24958,16 @@ examine = 'A Fremennik raider.'
 [[config]]
 npc = 'dungeon_dagganoth_magic_monster'
 examine = 'A fearsome magical water creature.'
+death_anim = 2367
+attack_anim = 2365
+defend_anim = 2366
 
 [[config]]
 npc = 'dungeon_dagganoth_magic_monster_deeper'
 examine = 'A fearsome magical water creature.'
+death_anim = 2367
+attack_anim = 2365
+defend_anim = 2366
 
 [[config]]
 npc = 'giant_rockcrab_deeper'
@@ -23455,10 +24980,16 @@ examine = 'Heavy rock!'
 [[config]]
 npc = 'dungeon_dagganoth_lighter_deeper'
 examine = 'A spiney horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'dungeon_dagganoth_mainroom_deeper'
 examine = 'A darkened horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'dagannoth_rock_lobster_2x2'
@@ -23475,6 +25006,9 @@ examine = "If I didn't know better, I'd swear there's something in there..."
 [[config]]
 npc = 'dagannoth_water_creature_1x1'
 examine = 'A sneaky, spiny, subterranean sea-dwelling scamp.'
+death_anim = 2866
+attack_anim = 2868
+defend_anim = 2869
 
 [[config]]
 npc = 'dagannoth_water_creature_1x1_invisible2'
@@ -23527,6 +25061,9 @@ examine = "One of Ali Morrisane's associates. Looks like he's seen a lot of figh
 [[config]]
 npc = 'dagannoth_water_creature_1x12'
 examine = 'A sneaky, spiny, subterranean sea-dwelling scamp.'
+death_anim = 2866
+attack_anim = 2868
+defend_anim = 2869
 
 [[config]]
 npc = 'dagannoth_water_creature_1x1_invisible3'
@@ -23535,6 +25072,9 @@ examine = "If I didn't know better, I'd swear there's something in there..."
 [[config]]
 npc = 'dagannoth_water_creature_1x13'
 examine = 'A sneaky, spiny, subterranean sea-dwelling scamp.'
+death_anim = 2866
+attack_anim = 2868
+defend_anim = 2869
 
 [[config]]
 npc = 'battlefield_khazard_troop'
@@ -23547,10 +25087,16 @@ examine = "It's one of General Khazard's warriors."
 [[config]]
 npc = 'battlefield_gnomeknight'
 examine = "It's a tree gnome trooper."
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'battlefield_d_skingnomeknight'
 examine = "It's a tree gnome trooper."
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'battlefield_gnome_troop'
@@ -23559,6 +25105,9 @@ examine = 'Like a mini man!'
 [[config]]
 npc = 'battlefield_darkskinned_gnome_archer'
 examine = 'Like a mini man!'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'battlefield_gnome_archer'
@@ -23567,14 +25116,23 @@ examine = 'Like a mini man!'
 [[config]]
 npc = 'battlefield_terrorbird_mountedspear'
 examine = 'These gnomes know how to get around!'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'battlefield_terrorbird_mountedspear2'
 examine = 'These gnomes know how to get around!'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'battlefield_terrorbird_mountedspear3'
 examine = 'These gnomes know how to get around!'
+death_anim = 6791
+attack_anim = 6790
+defend_anim = 6792
 
 [[config]]
 npc = 'magictraining_stone_sweeper'
@@ -23867,22 +25425,37 @@ examine = 'Veldaban, Commander of the Black Guard in Keldagrim.'
 [[config]]
 npc = 'dwarf_city_black_guard1'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'dwarf_city_black_guard2'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'dwarf_city_black_guard3'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'dwarf_city_black_guard4'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'dwarf_city_berserker1'
 examine = 'An elite member of the Black Guard.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'dwarf_city_berserker2'
@@ -23983,14 +25556,23 @@ examine = 'He looks fair and reliable.'
 [[config]]
 npc = 'battle_tortoise'
 examine = 'A large tortoise.'
+death_anim = 3962
+attack_anim = 3960
+defend_anim = 3961
 
 [[config]]
 npc = 'battle_tortoise_war2'
 examine = 'Massive beast of War with extra Gnome.'
+death_anim = 3962
+attack_anim = 3960
+defend_anim = 3961
 
 [[config]]
 npc = 'gnomechildgreen'
 examine = 'Small, even by gnome standards.'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'gnomechildblue'
@@ -24007,6 +25589,9 @@ examine = 'He can advise on training.'
 [[config]]
 npc = 'gnomekingsguard'
 examine = 'A tree gnome guard.'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'gnomekingsguard2'
@@ -24027,10 +25612,16 @@ examine = 'A professional gnome baller.'
 [[config]]
 npc = 'gnomefemale'
 examine = 'A female gnome.'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'gnomefemale_dskinned'
 examine = 'A female gnome.'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'pilot_digsite'
@@ -24039,14 +25630,23 @@ examine = 'He looks embarrassed.'
 [[config]]
 npc = 'gnome'
 examine = 'Like a mini man!'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'browclothedgnome'
 examine = 'Like a mini man!'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'darkskinned_gnome'
 examine = 'Like a mini man!'
+death_anim = 3967
+attack_anim = 3966
+defend_anim = 3964
 
 [[config]]
 npc = 'gnome_archer'
@@ -24211,10 +25811,22 @@ examine = "One of Gielinor's many citizens."
 [[config]]
 npc = 'tbwcu_jungle_spider'
 examine = 'A barely visible deadly jungle spider.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'tbwcu_spider_appear'
 examine = 'A barely visible deadly jungle spider.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'tbwcu_mosquito_single'
@@ -24845,6 +26457,9 @@ examine = 'A native of Tai Bwo Wannai.'
 [[config]]
 npc = 'cave_goblin'
 examine = 'A goblin with big bulging eyes.'
+death_anim = 6003
+attack_anim = 6001
+defend_anim = 6002
 
 [[config]]
 npc = 'cave_goblin2'
@@ -24873,10 +26488,16 @@ examine = "A giant skeleton or a giant's skeleton?"
 [[config]]
 npc = 'lotr_mage_skeleton'
 examine = 'A skeleton in a dress!'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'lotr_skeleton_lvl_77'
 examine = 'Achingly thin.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'lotr_skeleton_lvl_45'
@@ -24889,6 +26510,9 @@ examine = "That skeleton's grinning at me."
 [[config]]
 npc = 'lotr_skeleton_lvl_22'
 examine = 'He needs a tan.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'lotr_skeleton_lvl_21'
@@ -24905,6 +26529,9 @@ examine = 'Put some meat on those bones!'
 [[config]]
 npc = 'lotr_zombie1_lvl_53'
 examine = "Could his name be 'Lurch'?"
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'lotr_zombie2_lvl_53'
@@ -24921,6 +26548,9 @@ examine = 'Dave? Is that you?'
 [[config]]
 npc = 'lotr_zombie2_lvl_44'
 examine = "Why don't zombies ever wash?"
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'lotr_zombie3_lvl_44'
@@ -24929,10 +26559,16 @@ examine = 'A shambling pile of rotten flesh.'
 [[config]]
 npc = 'lotr_zombie1_lvl_30'
 examine = 'He needs lessons on walking.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'lotr_zombie2_lvl_30'
 examine = 'Fred, the undead.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'lotr_zombie3_lvl_30'
@@ -24941,6 +26577,9 @@ examine = 'One of the undead.'
 [[config]]
 npc = 'lotr_zombie1_lvl_25'
 examine = 'A disgusting zombie.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'lotr_zombie2_lvl_25'
@@ -25005,6 +26644,9 @@ examine = 'A terrifying dog beast.'
 [[config]]
 npc = 'lotr_terror_dog_small'
 examine = 'A terrifying dog beast.'
+death_anim = 5627
+attack_anim = 5624
+defend_anim = 5626
 
 [[config]]
 npc = 'lotr_tran_razorlor'
@@ -25333,10 +26975,16 @@ examine = 'She runs a little chapel here.'
 [[config]]
 npc = 'lava_dragon'
 examine = "It's dripping with molten lava."
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wilderness_ent'
 examine = 'He ent such a bad guy.'
+death_anim = 12508
+attack_anim = 12506
+defend_anim = 12504
 
 [[config]]
 npc = 'deadman_guard_prif_vis'
@@ -25386,6 +27034,9 @@ examine = 'A very strong rogue.'
 [[config]]
 npc = 'wilderness_mammoth'
 examine = 'A woolly, elephantine monster.'
+death_anim = 307
+attack_anim = 304
+defend_anim = 305
 
 [[config]]
 npc = 'wilderness_bandit'
@@ -25434,6 +27085,9 @@ examine = 'Queen of the Scorpions.'
 [[config]]
 npc = 'scorpia_minion'
 examine = 'A scuttling little scorpion with an incredibly vicious tail.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'scorpia_guardian'
@@ -25955,6 +27609,9 @@ examine = 'Fluffy and cute, keep away from fire!'
 [[config]]
 npc = 'slayer_pyrebeast_1'
 examine = 'A large fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'zeah_lizardshaman_1'
@@ -26015,6 +27672,9 @@ examine = 'A bow wielding ninja monkey... what is he up to?'
 [[config]]
 npc = 'slayer_pyrebeast_2'
 examine = 'A large fire demon.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'mm_monkey_ninja_teaser_multi'
@@ -26106,6 +27766,9 @@ examine = 'Get useful information from this guy.'
 [[config]]
 npc = 'bat_unaggressive'
 examine = 'An annoying flappy thing.'
+death_anim = 4917
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'piscariliusfish'
@@ -26466,26 +28129,44 @@ examine = 'The elite.'
 [[config]]
 npc = 'zeah_lizardman_1_vn'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'zeah_lizardman_1_vp'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'zeah_lizardman_2_vn'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'zeah_lizardman_2_vp'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'zeah_lizardman_3_vn'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'zeah_lizardman_3_vp'
 examine = 'From a race created during the darker days of Kourend.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'hosidius_tithe_farmer'
@@ -27506,6 +29187,9 @@ examine = 'A sandy outcrop.'
 [[config]]
 npc = 'hosidius_guarddog'
 examine = "He doesn't seem pleased to see me."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'hunting_monkey'
@@ -27586,6 +29270,9 @@ examine = 'An impling who is incredibly lucky.'
 [[config]]
 npc = 'wcguild_ent'
 examine = 'He ent such a bad guy.'
+death_anim = 12508
+attack_anim = 12506
+defend_anim = 12504
 
 [[config]]
 npc = 'wcguild_guard'
@@ -27614,6 +29301,8 @@ examine = 'She likes other people to cut down trees.'
 [[config]]
 npc = 'kourend_abyssal'
 examine = 'A denizen of the Abyss!'
+death_anim = 1538
+attack_anim = 1537
 
 [[config]]
 npc = 'kourend_black_demon_1'
@@ -27622,6 +29311,9 @@ examine = 'A big, scary, jet-black demon.'
 [[config]]
 npc = 'kourend_black_demon_2'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'kourend_greater_demon1'
@@ -27630,6 +29322,9 @@ examine = 'Big, red, and incredibly evil.'
 [[config]]
 npc = 'kourend_greater_demon2'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'kourend_greater_demon3'
@@ -27638,6 +29333,9 @@ examine = 'Big, red, and incredibly evil.'
 [[config]]
 npc = 'kourend_lesser_demon1'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'kourend_lesser_demon2'
@@ -27646,10 +29344,16 @@ examine = 'Lesser, but still pretty big.'
 [[config]]
 npc = 'kourend_dustdevil'
 examine = 'The vacuumed face of evil.'
+death_anim = 1558
+attack_anim = 1557
+defend_anim = 1555
 
 [[config]]
 npc = 'kourend_dark_beast'
 examine = 'From a darker dimension.'
+death_anim = 2733
+attack_anim = 2731
+defend_anim = 2732
 
 [[config]]
 npc = 'kourend_firegiant1'
@@ -27658,22 +29362,37 @@ examine = 'A very large elemental adversary.'
 [[config]]
 npc = 'kourend_firegiant2'
 examine = 'A very large elemental adversary.'
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'kourend_bronze_dragon'
 examine = 'Its scales seem to be made of bronze.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_iron_dragon'
 examine = 'Its scales seem to be made of iron.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_steel_dragon'
 examine = 'Its scales seem to be made of steel.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_hellhound'
 examine = 'Hello, nice doggy...'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'kourend_ankou'
@@ -27686,6 +29405,9 @@ examine = 'The shadowy remains of a long-departed soul.'
 [[config]]
 npc = 'kourend_dagannoth1'
 examine = 'A horror from the ocean depths...'
+death_anim = 1342
+attack_anim = 1341
+defend_anim = 1340
 
 [[config]]
 npc = 'kourend_dagannoth2'
@@ -27698,18 +29420,30 @@ examine = 'A very large foe that has been corrupted by the Dark Altar.'
 [[config]]
 npc = 'kourend_mossgiant'
 examine = 'His beard seems to have a life of its own.'
+death_anim = 4659
+attack_anim = 4658
+defend_anim = 4657
 
 [[config]]
 npc = 'kourend_ghost1'
 examine = 'Eeek! A ghost!'
+death_anim = 5534
+attack_anim = 5532
+defend_anim = 5533
 
 [[config]]
 npc = 'kourend_ghost2'
 examine = 'Eeek! A ghost!'
+death_anim = 5534
+attack_anim = 5532
+defend_anim = 5533
 
 [[config]]
 npc = 'kourend_skeleton'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'kourend_rockcrab'
@@ -27722,10 +29456,16 @@ examine = 'A sandy boulder.'
 [[config]]
 npc = 'kourend_pickaxe'
 examine = 'How does it move of its own accord?'
+death_anim = 188
+attack_anim = 185
+defend_anim = 186
 
 [[config]]
 npc = 'kourend_magicaxe'
 examine = 'A magic axe with a mind of its own.'
+death_anim = 188
+attack_anim = 185
+defend_anim = 186
 
 [[config]]
 npc = 'kourend_cyclops1'
@@ -27734,38 +29474,62 @@ examine = 'A one-eyed woman eater.'
 [[config]]
 npc = 'kourend_cyclops2'
 examine = 'A one-eyed man eater.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'kourend_banshee'
 examine = 'A tortured screaming soul.'
+death_anim = 1524
+attack_anim = 1523
 
 [[config]]
 npc = 'kourend_blue_dragon'
 examine = 'It appears intelligent and savage.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_red_dragon'
 examine = 'It appears intelligent and savage.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_black_dragon'
 examine = 'It appears intelligent and savage.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'kourend_bloodveld'
 examine = 'The twisted tongue of evil.'
+death_anim = 1553
+attack_anim = 1552
+defend_anim = 1550
 
 [[config]]
 npc = 'kourend_jelly'
 examine = 'Needs cream...'
+death_anim = 1587
+attack_anim = 1586
+defend_anim = 1585
 
 [[config]]
 npc = 'kourend_nechryael'
 examine = 'An evil death demon.'
+death_anim = 1530
+attack_anim = 1528
 
 [[config]]
 npc = 'kourend_spectre'
 examine = 'A very smelly ghost.'
+death_anim = 1508
+attack_anim = 1507
 
 [[config]]
 npc = 'cata_adventurer1'
@@ -28298,6 +30062,9 @@ examine = 'A mage of Zamorak.'
 [[config]]
 npc = 'rc_zmi_lizard'
 examine = 'A cave dweller.'
+death_anim = 7326
+attack_anim = 3855
+defend_anim = 3856
 
 [[config]]
 npc = 'rc_zmi_chaosmonk'
@@ -28502,6 +30269,9 @@ examine = 'Fred, the undead.'
 [[config]]
 npc = 'kourend_zombie2'
 examine = "Why don't zombies ever wash?"
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'kourend_zombie3'
@@ -29062,10 +30832,16 @@ examine = "You probably shouldn't sell him life insurance."
 [[config]]
 npc = 'lesser_demon_slayercave_1'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'lesser_demon_slayercave_2'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'ntk_mummy_1'
@@ -29094,6 +30870,9 @@ examine = 'A witch who likes chaos - she looks dangerous!'
 [[config]]
 npc = 'lesser_demon_slayercave_3'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'karam_dungeon_backdoor_unpaid'
@@ -29418,6 +31197,9 @@ examine = 'An old wizard.'
 [[config]]
 npc = 'fairy_child'
 examine = 'A delicate creature from this strange realm.'
+death_anim = 113
+attack_anim = 110
+defend_anim = 111
 
 [[config]]
 npc = 'wildwars_boss_armour'
@@ -29586,26 +31368,44 @@ examine = 'He seems to be relaxing after a hard journey.'
 [[config]]
 npc = 'wyvern_long_tailed'
 examine = 'Not a wyvern to get on the wrong end of.'
+death_anim = 7652
+attack_anim = 7651
+defend_anim = 7659
 
 [[config]]
 npc = 'wyvern_taloned'
 examine = 'Spikey death with bad breath.'
+death_anim = 7652
+attack_anim = 7651
+defend_anim = 7659
 
 [[config]]
 npc = 'wyvern_spitting'
 examine = 'Has issues with odontophobia.'
+death_anim = 7652
+attack_anim = 7651
+defend_anim = 7659
 
 [[config]]
 npc = 'ancient_wyvern'
 examine = 'Looks old enough to be fossilised.'
+death_anim = 7652
+attack_anim = 7651
+defend_anim = 7659
 
 [[config]]
 npc = 'fossil_lobster'
 examine = 'An extremely vicious lobster type thing.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'fossil_zygomite'
 examine = 'Not in the ground anymore! It looks a little wobbly.'
+death_anim = 3327
+attack_anim = 3326
+defend_anim = 3325
 
 [[config]]
 npc = 'gaius'
@@ -29814,14 +31614,23 @@ examine = 'A rage-filled Zamorakian Demon.'
 [[config]]
 npc = 'wild_cave_black_dragon'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_black_dragon2'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_black_dragon3'
 examine = 'A fierce dragon with black scales!'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_ankou'
@@ -29830,70 +31639,124 @@ examine = 'A boney ghost.'
 [[config]]
 npc = 'wild_cave_lesser_demon'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_lesser_demon2'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_lesser_demon3'
 examine = 'Lesser, but still pretty big.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_green_dragon'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_green_dragon2'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_green_dragon3'
 examine = 'Must be related to Elvarg.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'wild_cave_greater_demon'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_greater_demon2'
 examine = 'Big, purple, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_greater_demon3'
 examine = 'Big, red, and incredibly evil.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_black_demon'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_black_demon2'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_black_demon3'
 examine = 'A big, scary, jet-black demon.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_hell_hound'
 examine = 'Hello, nice doggy...'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'wild_cave_icegiant'
 examine = "He's got icicles in his beard."
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'wild_cave_icegiant2'
 examine = "He's got icicles in his beard."
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'wild_cave_icegiant3'
 examine = "He's got icicles in his beard."
+death_anim = 4673
+attack_anim = 4672
+defend_anim = 4671
 
 [[config]]
 npc = 'wild_cave_imp'
 examine = 'The ghost of an imp slain long ago.'
+attack_anim = 169
+attack_sound = 534
+defend_anim = 170
+defend_sound = 536
+death_anim = 172
+death_sound = 535
 
 [[config]]
 npc = 'gargboss_dusk_phase2_attacking'
@@ -30058,34 +31921,61 @@ examine = 'It looks like her life is a struggle.'
 [[config]]
 npc = 'wild_cave_goblin'
 examine = 'The ghost of a goblin slain long ago.'
+attack_anim = 6184
+attack_sound = 469
+defend_anim = 6183
+defend_sound = 472
+death_anim = 6182
+death_sound = 471
 
 [[config]]
 npc = 'wild_cave_pyrefiend'
 examine = 'The ghost of a pyrefiend slain long ago.'
+death_anim = 1580
+attack_anim = 1582
+defend_anim = 1581
 
 [[config]]
 npc = 'wild_cave_hobgoblin'
 examine = 'The ghost of a hobgoblin slain long ago.'
+death_anim = 167
+attack_anim = 163
+defend_anim = 165
 
 [[config]]
 npc = 'wild_cave_cyclops'
 examine = 'The ghost of a cyclops slain long ago.'
+death_anim = 4653
+attack_anim = 4652
+defend_anim = 4651
 
 [[config]]
 npc = 'wild_cave_hellhound'
 examine = 'The ghost of a hellhound slain long ago.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'wild_cave_demon'
 examine = 'The ghost of a demon slain long ago.'
+death_anim = 67
+attack_anim = 64
+defend_anim = 65
 
 [[config]]
 npc = 'wild_cave_ork'
 examine = 'The ghost of an ork slain long ago.'
+death_anim = 4321
+attack_anim = 4320
+defend_anim = 4322
 
 [[config]]
 npc = 'wild_cave_darkbeast'
 examine = 'The ghost of a dark beast slain long ago.'
+death_anim = 2733
+attack_anim = 2731
+defend_anim = 2732
 
 [[config]]
 npc = 'wild_cave_knight'
@@ -30094,6 +31984,9 @@ examine = 'The ghost of a knight slain long ago.'
 [[config]]
 npc = 'wild_cave_dragon'
 examine = 'The ghost of a dragon slain long ago.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'ironman_tutor_2_visible'
@@ -32202,14 +34095,23 @@ examine = 'A talented blacksmith minding his own business.'
 [[config]]
 npc = 'molch_lizardman_1'
 examine = 'Scaley.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'molch_lizardbrute_1'
 examine = 'A larger and far more brutal lizardman that wields a vicious dark blade.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'molch_lizardshaman_1'
 examine = 'A Lizardman shaman wearing a pernicious olmic headdress.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'molch_shay_bowmen_1'
@@ -32262,6 +34164,12 @@ examine = 'Leader of the Shayzien Infantry. He hates everything with scales.'
 [[config]]
 npc = 'molch_tree_frog'
 examine = 'Balances on wet logs during thick fog.'
+attack_anim = 1793
+attack_sound = 838
+defend_anim = 1794
+defend_sound = 840
+death_anim = 1795
+death_sound = 839
 
 [[config]]
 npc = 'molch_lizardman_guard'
@@ -32378,6 +34286,8 @@ examine = 'A hunter of the Kahlith.'
 [[config]]
 npc = 'hydra'
 examine = 'A ferocious Hydra!'
+death_anim = 8264
+attack_anim = 8261
 
 [[config]]
 npc = 'wyrm_dark'
@@ -32390,6 +34300,7 @@ examine = "Don't let it wyrm its way in."
 [[config]]
 npc = 'drake'
 examine = 'A dragon-like creature with no wings.'
+death_anim = 8277
 
 [[config]]
 npc = 'drake_death'
@@ -32398,6 +34309,7 @@ examine = 'A dragon-like creature with no wings.'
 [[config]]
 npc = 'sulphur_lizard'
 examine = 'A cold-blooded creature, partial to warmth.'
+death_anim = 8284
 
 [[config]]
 npc = 'hydraboss'
@@ -32618,6 +34530,12 @@ death_sound = 843
 [[config]]
 npc = 'hosdun_spider'
 examine = 'Preys on unsuspecting adventurers.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'hosdun_aimeri_injured'
@@ -32722,6 +34640,9 @@ examine = 'No one likes crabs...'
 [[config]]
 npc = 'prif_mossgiant'
 examine = 'Bigger than your average moss giant.'
+death_anim = 4659
+attack_anim = 4658
+defend_anim = 4657
 
 [[config]]
 npc = 'gauntlet_pet'
@@ -34162,6 +36083,9 @@ examine = "He's probably got a pretty good vantage point up here."
 [[config]]
 npc = 'caerbannog'
 examine = 'A cute bunny rabbit.'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'lord_amlodd'
@@ -34682,6 +36606,7 @@ examine = 'The dead serpent king.'
 [[config]]
 npc = 'basilisk_knight'
 examine = 'The greater eyes of evil.'
+death_anim = 8501
 
 [[config]]
 npc = 'bakuna'
@@ -35818,6 +37743,10 @@ examine = 'An evil, bloodsucking vampyre.'
 [[config]]
 npc = 'ig_seagull'
 examine = "Let's call them Hope!"
+attack_anim = 3467
+defend_sound = 412
+death_anim = 3468
+death_sound = 411
 
 [[config]]
 npc = 'myq5_bloodveld_noop'
@@ -36230,34 +38159,58 @@ examine = 'They look pale, tired and old!'
 [[config]]
 npc = 'darkm_juvinate_01'
 examine = 'A juvinate vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvinate_02'
 examine = 'A juvinate vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvinate_01_held'
 examine = 'A juvinate vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvinate_02_held'
 examine = 'A juvinate vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvenile_01'
 examine = 'A juvenile vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvenile_02'
 examine = 'A juvenile vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvenile_01_held'
 examine = 'A juvenile vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_juvenile_02_held'
 examine = 'A juvenile vampyre, held in a powerful spell.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'darkm_vyrewatch_female_1'
@@ -37018,18 +38971,42 @@ examine = 'Looks like it might have been a bear once.'
 [[config]]
 npc = 'farm_chicken_brown_outdoors'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'farm_chicken_dark_brown_outdoors'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'farm_chicken_tan_outdoors'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'farm_chicken_brown_indoors'
 examine = 'Yep. Definitely a chicken.'
+attack_anim = 5387
+attack_sound = 355
+defend_anim = 5388
+defend_sound = 357
+death_anim = 5389
+death_sound = 356
 
 [[config]]
 npc = 'farm_chicken_dark_brown_indoors'
@@ -37202,14 +39179,23 @@ examine = 'A spiky red barricade.'
 [[config]]
 npc = 'sw_bird_blue'
 examine = 'A brightly coloured bird. It flies very quickly.'
+death_anim = 6777
+attack_anim = 6775
+defend_anim = 6776
 
 [[config]]
 npc = 'sw_tower_ghost1'
 examine = 'All that they once were has been lost to time.'
+death_anim = 5534
+attack_anim = 5532
+defend_anim = 5533
 
 [[config]]
 npc = 'sw_tower_ghost2'
 examine = 'All that they once were has been lost to time.'
+death_anim = 5534
+attack_anim = 5532
+defend_anim = 5533
 
 [[config]]
 npc = 'duck_noop'
@@ -37738,26 +39724,47 @@ examine = "Smashin'!"
 [[config]]
 npc = 'skeleton_armed_shortrange'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'skeleton_armed2_shortrange'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'skeleton_armed3_shortrange'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'skeleton_armed4_shortrange'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'skeleton_armed5_shortrange'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'ice_spider_shortrange'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'veos_visible_amulet'
@@ -38390,6 +40397,9 @@ examine = 'Get useful information from this guy.'
 [[config]]
 npc = 'small_bat_outdoors'
 examine = 'An annoying flappy thing.'
+death_anim = 4918
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'asteros_arceuus_vis'
@@ -38622,6 +40632,9 @@ examine = "Oh dear... he's dead."
 [[config]]
 npc = 'akd_egg_lizardman'
 examine = 'A larger and far more brutal lizardman that wields a vicious dark blade.'
+death_anim = 7196
+attack_anim = 7192
+defend_anim = 7194
 
 [[config]]
 npc = 'akd_lizardman_cutscene'
@@ -39103,6 +41116,7 @@ examine = "That's one nasty looking piggy."
 [[config]]
 npc = 'lynx'
 examine = "Who's a good kitty?"
+death_anim = 9093
 
 [[config]]
 npc = 'lynx02'
@@ -39351,10 +41365,14 @@ examine = 'A small odd-looking spider.'
 [[config]]
 npc = 'araxyte_normal'
 examine = 'A large odd-looking spider.'
+death_anim = 9141
+attack_anim = 9140
 
 [[config]]
 npc = 'araxyte_large'
 examine = 'A very large odd-looking spider.'
+death_anim = 9141
+attack_anim = 9140
 
 [[config]]
 npc = 'tobquest_ranis'
@@ -39539,14 +41557,21 @@ examine = "He's a disciple of the Sage"
 [[config]]
 npc = 'wild_cave_dustdevil'
 examine = 'The vacuumed face of evil.'
+death_anim = 1558
+attack_anim = 1557
+defend_anim = 1555
 
 [[config]]
 npc = 'wild_cave_abyssal'
 examine = 'A denizen of the Abyss!'
+death_anim = 1538
+attack_anim = 1537
 
 [[config]]
 npc = 'wild_cave_nechryael'
 examine = 'An evil death demon.'
+death_anim = 1530
+attack_anim = 1528
 
 [[config]]
 npc = 'wild_cave_jelly_1'
@@ -39753,6 +41778,9 @@ examine = 'A dangerous looking spirit.'
 [[config]]
 npc = 'nex_prison_blood_reaver'
 examine = 'A strange and twisted demon.'
+death_anim = 9192
+attack_anim = 9194
+defend_anim = 9196
 
 [[config]]
 npc = 'nex_prison_blood_reaver_boss'
@@ -40765,6 +42793,8 @@ examine = 'A young prince.'
 [[config]]
 npc = 'ics_little_croc_blocked'
 examine = 'Never smile at a...'
+death_anim = 2038
+attack_anim = 2039
 
 [[config]]
 npc = 'ics_little_croc_normal'
@@ -40773,18 +42803,26 @@ examine = 'Never smile at a...'
 [[config]]
 npc = 'ics_little_jackal_alt'
 examine = 'He has had his day.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'ics_little_locust_vis'
 examine = 'An obnoxious, overgrown insect.'
+death_anim = 2013
+attack_anim = 2015
 
 [[config]]
 npc = 'ullek_locust'
 examine = 'An obnoxious, overgrown insect.'
+death_anim = 2013
+attack_anim = 2015
 
 [[config]]
 npc = 'ics_little_plague_frog_vis'
 examine = 'A very smelly frog.'
+death_anim = 1022
 
 [[config]]
 npc = 'ics_little_plague_cow1_vis'
@@ -42037,10 +44075,19 @@ examine = 'Somehow much smoother in smaller form.'
 [[config]]
 npc = 'wbr_bear'
 examine = 'Eek! A bear!'
+death_anim = 4929
+attack_anim = 4925
+defend_anim = 4927
 
 [[config]]
 npc = 'wbr_cave_poisonspider'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'wbr_voidwakermaker'
@@ -42073,6 +44120,12 @@ examine = "I wonder if it's venomous..."
 [[config]]
 npc = 'wbr_poisonspider'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'venenatis_spiderling'
@@ -42089,10 +44142,16 @@ examine = 'Only the true lord & king of the lands can lift his burden.'
 [[config]]
 npc = 'slayer_lizard_large1_green_lowrange'
 examine = 'A cold-blooded creature, partial to warmth.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'slayer_lizard_small1_green_lowrange'
 examine = 'A small cold-blooded creature, partial to warmth.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'poh_muspah_pet'
@@ -42409,6 +44468,9 @@ examine = "Looks like it'll hurt!"
 [[config]]
 npc = 'feud_desert_snake_outside'
 examine = 'A slithering serpent.'
+death_anim = 278
+attack_anim = 275
+defend_anim = 276
 
 [[config]]
 npc = 'sir_ceril_carnillean_vis'
@@ -43081,54 +45143,93 @@ examine = 'I can see something in the water.'
 [[config]]
 npc = 'dt2_strangled_ruins_t1_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t1_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t1_3'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t1_4'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t2_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t2_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_ruins_t2_3'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_survival_t1_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_survival_t1_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_survival_t1_3'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_survival_t2_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_temple_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_temple_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_t1_1_cutscene'
@@ -43577,6 +45678,9 @@ examine = 'Apparently walks the Abyss.'
 [[config]]
 npc = 'dt2_scar_leech'
 examine = 'A blood-drinking denizen of the Abyss.'
+death_anim = 2183
+attack_anim = 2181
+defend_anim = 2182
 
 [[config]]
 npc = 'dt2_scar_walker'
@@ -43633,30 +45737,51 @@ examine = 'How does he suck blood now?'
 [[config]]
 npc = 'dt2_strangled_base_t1_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t1_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t1_3'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t1_4'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t2_1'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t2_2'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dt2_strangled_base_t2_3'
 examine = 'A victim of the Strangler.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'leviathan_tail_ring_1_base'
@@ -44753,22 +46878,37 @@ examine = "He tries to keep order around here. His bizarre uniform isn't helping
 [[config]]
 npc = 'dov_armoured_zombie_melee_1'
 examine = "It hasn't quite got round to dying."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_melee_2'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_melee_3'
 examine = 'This one sure looks grave.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_melee_4'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_melee_5'
 examine = "It hasn't quite got round to dying."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_ranged_1'
@@ -44793,22 +46933,37 @@ examine = "It hasn't quite got round to dying."
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_1'
 examine = "It hasn't quite got round to dying."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_2'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_3'
 examine = 'This one sure looks grave.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_4'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_5'
 examine = "It hasn't quite got round to dying."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_ranged_1'
@@ -44817,6 +46972,9 @@ examine = "It hasn't quite got round to dying."
 [[config]]
 npc = 'dov_armoured_zombie_varrock_ranged_2'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_ranged_3'
@@ -44825,6 +46983,9 @@ examine = 'This one sure looks grave.'
 [[config]]
 npc = 'dov_armoured_zombie_varrock_ranged_4'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_ranged_5'
@@ -44873,6 +47034,9 @@ examine = "It hasn't quite got round to dying."
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_1_huntplayer'
 examine = "It hasn't quite got round to dying."
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_2_huntplayer'
@@ -44881,10 +47045,16 @@ examine = 'This is a rotten one.'
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_3_huntplayer'
 examine = 'This one sure looks grave.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_4_huntplayer'
 examine = 'This is a rotten one.'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'dov_armoured_zombie_varrock_melee_5_huntplayer'
@@ -45733,30 +47903,43 @@ examine = 'Do those stripes make it go faster?'
 [[config]]
 npc = 'varlamore_jaguar'
 examine = 'The most powerful cat in all of Varlamore.'
+death_anim = 12492
 
 [[config]]
 npc = 'varlamore_jaguar_cub'
 examine = 'The most ambitious cat in all of Varlamore.'
+death_anim = 12492
 
 [[config]]
 npc = 'varlamore_dark_jaguar'
 examine = 'The most intimidating cat in all of Varlamore.'
+death_anim = 12492
 
 [[config]]
 npc = 'varlamore_white_jaguar'
 examine = 'The rarest cat in all of Varlamore.'
+death_anim = 12492
 
 [[config]]
 npc = 'varlamore_fennecfox'
 examine = 'Cheers big ears!'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_fennecfox_cub'
 examine = "Hopefully it'll grow into those ears..."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_jerboa'
 examine = 'Hop, skip, and jump!'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'varlamore_toucan'
@@ -45773,10 +47956,22 @@ examine = 'Toucan play at this game...'
 [[config]]
 npc = 'varlamore_alpaca_1'
 examine = 'A fluffy alpaca.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_alpaca_sheared_1'
 examine = 'A recently sheared alpaca.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_alpaca_2'
@@ -45789,6 +47984,12 @@ examine = 'A recently sheared alpaca.'
 [[config]]
 npc = 'varlamore_alpaca_cria_1'
 examine = 'Basically a ball of fluff.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_alpaca_cria_2'
@@ -45797,6 +47998,9 @@ examine = 'Basically a ball of fluff.'
 [[config]]
 npc = 'varlamore_dog_molossus_1'
 examine = "It doesn't seem as ferocious as the name would suggest."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_molossus_2'
@@ -45805,6 +48009,9 @@ examine = "It doesn't seem as ferocious as the name would suggest."
 [[config]]
 npc = 'varlamore_dog_molossus_1_indoors'
 examine = "It doesn't seem as ferocious as the name would suggest."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_molossus_2_indoors'
@@ -45813,10 +48020,16 @@ examine = "It doesn't seem as ferocious as the name would suggest."
 [[config]]
 npc = 'varlamore_dog_xolo'
 examine = 'An ancient breed of hairless dog.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_xolo_indoors'
 examine = 'An ancient breed of hairless dog.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_lola'
@@ -45833,10 +48046,16 @@ examine = 'Paw-tners in crime.'
 [[config]]
 npc = 'varlamore_scorpion_savannah'
 examine = 'An extremely vicious scorpion.'
+death_anim = 6256
+attack_anim = 6254
+defend_anim = 6255
 
 [[config]]
 npc = 'varlamore_snake_savannah'
 examine = 'A slithering serpent.'
+death_anim = 278
+attack_anim = 275
+defend_anim = 276
 
 [[config]]
 npc = 'varlamore_harpy_eagle'
@@ -45845,14 +48064,32 @@ examine = 'A large and powerful bird of prey.'
 [[config]]
 npc = 'varlamore_buffalo'
 examine = 'In a world of cows, be a buffalo.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_buffalo_unattackable'
 examine = 'In a world of cows, be a buffalo.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_oryx'
 examine = 'A noble creature!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_flies'
@@ -45933,10 +48170,14 @@ examine = 'Remarkably fast for such a small creature!'
 [[config]]
 npc = 'grimy_lizard'
 examine = 'An ecosystem of a creature.'
+death_anim = 11046
 
 [[config]]
 npc = 'varlamore_cockatrice_moon01'
 examine = 'The moonlit winged reptile.'
+death_anim = 1563
+attack_anim = 1562
+defend_anim = 1560
 
 [[config]]
 npc = 'varlamore_wyrm_dark01'
@@ -45949,6 +48190,8 @@ examine = "Don't let it wyrm its way in."
 [[config]]
 npc = 'pmoon_sulphur_nagua'
 examine = 'Brittle, rocky skin hiding pockets of volatile explosive sulphur.'
+death_anim = 11569
+attack_anim = 11530
 
 [[config]]
 npc = 'pmoon_little_frog'
@@ -46329,6 +48572,12 @@ examine = 'She has a lot of writing to do.'
 [[config]]
 npc = 'hg_bank_buffalo'
 examine = 'Buffy for short.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'hg_banker_dwarf'
@@ -46345,10 +48594,22 @@ examine = "She'll protect you."
 [[config]]
 npc = 'moonlight_antelope'
 examine = 'A noble creature!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'sunlight_antelope'
 examine = 'A noble creature!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'hg_quetzal'
@@ -46369,10 +48630,16 @@ examine = "Those paws weren't made for sewing..."
 [[config]]
 npc = 'varlamore_hunterfox01'
 examine = "This one doesn't look happy to see me."
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_hunterjerboa01'
 examine = 'Hop, skip, and... hunt?'
+death_anim = 6092
+attack_anim = 6090
+defend_anim = 6091
 
 [[config]]
 npc = 'stonecutter_stonemason'
@@ -47261,6 +49528,12 @@ examine = 'A teoki in service to Ranul.'
 [[config]]
 npc = 'varlamore_buffalo_gear_unattackable'
 examine = 'In a world of cows, be a buffalo.'
+attack_anim = 5849
+attack_sound = 369
+defend_anim = 5850
+defend_sound = 371
+death_anim = 5851
+death_sound = 370
 
 [[config]]
 npc = 'afl_hunter_fox_normal_vis'
@@ -47449,18 +49722,30 @@ examine = "One of Lucien's finest undead mages."
 [[config]]
 npc = 'wgs_skeleton_1'
 examine = "It's got a bone to pick with you."
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wgs_skeleton_2'
 examine = "It's got a bone to pick with you."
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wgs_skeleton_3'
 examine = "It's got a bone to pick with you."
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wgs_skeleton_4'
 examine = "It's got a bone to pick with you."
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'elite_black_knight_1_cutscene'
@@ -47501,50 +49786,86 @@ examine = 'Must be related to Elvarg.'
 [[config]]
 npc = 'wildy_zombie_pirate_1'
 examine = 'Aaaargh, me hearty!'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'wildy_zombie_pirate_2'
 examine = 'Aaaargh, me hearty!'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'wildy_zombie_pirate_3'
 examine = 'Aaaargh, me hearty!'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'wildy_zombie_pirate_4'
 examine = 'Aaaargh, me hearty!'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'wildy_zombie_pirate_5'
 examine = 'Aaaargh, me hearty!'
+death_anim = 5569
+attack_anim = 5568
+defend_anim = 5567
 
 [[config]]
 npc = 'wildy_agility_skeleton_1'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_2'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_3'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_4'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_5'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_1_longhunt'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wildy_agility_skeleton_2_longhunt'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'wilderness_hill_giant'
@@ -47934,10 +50255,14 @@ examine = 'She looks dangerous.'
 [[config]]
 npc = 'tormented_demon_1'
 examine = 'Lucien must be incredibly powerful if he can bind such demons to his will.'
+death_anim = 11394
+defend_anim = 11393
 
 [[config]]
 npc = 'tormented_demon_2'
 examine = 'Lucien must be incredibly powerful if he can bind such demons to his will.'
+death_anim = 11394
+defend_anim = 11393
 
 [[config]]
 npc = 'tormented_demon_quest_1'
@@ -48082,10 +50407,14 @@ examine = 'A Mort Myre mushroom-muncher.'
 [[config]]
 npc = 'araxyte_normal_bigwander'
 examine = 'A large odd-looking spider.'
+death_anim = 9141
+attack_anim = 9140
 
 [[config]]
 npc = 'araxyte_large_bigwander'
 examine = 'A very large odd-looking spider.'
+death_anim = 9141
+attack_anim = 9140
 
 [[config]]
 npc = 'araxxor'
@@ -48566,10 +50895,14 @@ examine = 'The heir to the throne of Varlamore, going undercover.'
 [[config]]
 npc = 'vmq3_ruins_frost_nagua'
 examine = 'Brittle, cold and shimmering with frost magic.'
+death_anim = 11569
+attack_anim = 11530
 
 [[config]]
 npc = 'frost_nagua'
 examine = 'Brittle, cold and shimmering with frost magic.'
+death_anim = 11569
+attack_anim = 11530
 
 [[config]]
 npc = 'frostcrab'
@@ -48598,6 +50931,9 @@ examine = 'An expert in tomatoes, growing pumpkins for a change.'
 [[config]]
 npc = 'brutal_blue_dragon_tapoyauik'
 examine = 'It appears intelligent and savage.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'ice_giant_tapoyauik'
@@ -48610,10 +50946,19 @@ examine = "He's got icicles in his beard."
 [[config]]
 npc = 'tapo_ice_spider_shortrange'
 examine = 'I think this spider has been genetically modified.'
+attack_anim = 5327
+attack_sound = 537
+defend_anim = 5328
+defend_sound = 539
+death_anim = 5329
+death_sound = 538
 
 [[config]]
 npc = 'jelly_tapoyauik'
 examine = 'Needs cream...'
+death_anim = 1587
+attack_anim = 1586
+defend_anim = 1585
 
 [[config]]
 npc = 'cave_crawler_ice_1'
@@ -49242,10 +51587,16 @@ examine = 'The most refined animal in all of Varlamore.'
 [[config]]
 npc = 'varlamore_dog_techichi'
 examine = 'So small it could fit in your pocket!'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_techichi_indoors'
 examine = 'So small it could fit in your pocket!'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_techichi_2'
@@ -49254,18 +51605,30 @@ examine = 'So small it could fit in your pocket!'
 [[config]]
 npc = 'varlamore_dog_chiribaya_1'
 examine = 'Apparently they specialise in herding alpacas.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_chiribaya_2'
 examine = 'Apparently they specialise in herding alpacas.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_chiribaya_1_indoors'
 examine = 'Apparently they specialise in herding alpacas.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_chiribaya_2_indoors'
 examine = 'Apparently they specialise in herding alpacas.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_bloodhound_cabbage'
@@ -49282,6 +51645,7 @@ examine = "He's down on his luck and wandering aimlessly..."
 [[config]]
 npc = 'varlamore_porcupine'
 examine = 'A spiky fellow.'
+death_anim = 9098
 
 [[config]]
 npc = 'salvager_overlook_general_store'
@@ -49554,6 +51918,9 @@ examine = 'I can see fish swimming in the water.'
 [[config]]
 npc = 'small_bat_outdoors_lowwander'
 examine = 'An annoying flappy thing.'
+death_anim = 4918
+attack_anim = 4915
+defend_anim = 4916
 
 [[config]]
 npc = 'unicorn_lowwander'
@@ -49684,18 +52051,30 @@ examine = 'Responsible for keeping the actors well dressed.'
 [[config]]
 npc = 'blue_dragon_tapoyauik_1'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'blue_dragon_tapoyauik_2'
 examine = 'A mother dragon.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'baby_blue_dragon_tapoyauik_1'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'baby_blue_dragon_tapoyauik_2'
 examine = 'Young but still dangerous.'
+death_anim = 92
+attack_anim = 80
+defend_anim = 89
 
 [[config]]
 npc = 'hw24_marika_cutscene'
@@ -49764,6 +52143,9 @@ examine = 'A rocky horror.'
 [[config]]
 npc = 'coa_scarab'
 examine = 'This dung beetle has mistaken you for its staple diet.'
+death_anim = 11783
+attack_anim = 11781
+defend_anim = 11782
 
 [[config]]
 npc = 'coa_zemouregal_cutscene'
@@ -50096,6 +52478,12 @@ examine = 'He looks a bit worse for wear.'
 [[config]]
 npc = 'stag'
 examine = 'A noble creature!'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'aluinus_dead_vis'
@@ -50740,6 +53128,8 @@ examine = 'A portable teleporter.'
 [[config]]
 npc = 'earth_nagua'
 examine = 'Strong, sharp and dangerous.'
+death_anim = 12295
+attack_anim = 12291
 
 [[config]]
 npc = 'earth_nagua_reinforced'
@@ -50748,10 +53138,16 @@ examine = 'Strong, sharp and dangerous.'
 [[config]]
 npc = 'crypt_of_tonali_mossgiant'
 examine = 'His beard seems to have a life of its own.'
+death_anim = 4659
+attack_anim = 4658
+defend_anim = 4657
 
 [[config]]
 npc = 'slayer_rockslug_crypt_of_tonali'
 examine = 'The slime of evil.'
+death_anim = 1568
+attack_anim = 1567
+defend_anim = 1565
 
 [[config]]
 npc = 'giant_rockcrab_crypt_of_tonali'
@@ -50764,14 +53160,23 @@ examine = 'Heavy rock!'
 [[config]]
 npc = 'crypt_of_tonali_skeleton_1'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'crypt_of_tonali_skeleton_2'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'crypt_of_tonali_skeleton_3'
 examine = 'Could do with gaining a few pounds.'
+death_anim = 5491
+attack_anim = 5485
+defend_anim = 5489
 
 [[config]]
 npc = 'crypt_of_tonali_moss_lizard'
@@ -50780,6 +53185,7 @@ examine = 'A small reptile.'
 [[config]]
 npc = 'crypt_of_tonali_grimy_lizard'
 examine = 'An ecosystem of a creature.'
+death_anim = 11046
 
 [[config]]
 npc = 'vmq4_crypt_defender_ranged_m_fake_combat'
@@ -51132,6 +53538,12 @@ examine = 'Where did he learn mixology?!'
 [[config]]
 npc = 'varlamore_alpaca_1_noop'
 examine = 'A fluffy alpaca.'
+attack_anim = 6376
+attack_sound = 369
+defend_anim = 6375
+defend_sound = 371
+death_anim = 6377
+death_sound = 370
 
 [[config]]
 npc = 'varlamore_alpaca_2_noop'
@@ -51144,10 +53556,16 @@ examine = 'He seems to be keeping a watchful eye on something happening in the d
 [[config]]
 npc = 'varlamore_dog_techichi_kastori'
 examine = 'He seems to be keeping a watchful eye on something...'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_chiribaya_corn'
 examine = 'Inspecting the local produce.'
+death_anim = 6558
+attack_anim = 6559
+defend_anim = 6557
 
 [[config]]
 npc = 'varlamore_dog_ziggy_broccoli'
@@ -51204,6 +53622,9 @@ examine = 'They enjoy the slower lifestyle.'
 [[config]]
 npc = 'varlamore_hippo_calf'
 examine = 'This little piggy is angry!'
+death_anim = 7426
+attack_anim = 7420
+defend_anim = 7418
 
 [[config]]
 npc = 'varlamore_hippo_submerged_north'
@@ -51244,6 +53665,7 @@ examine = "She's following the fruit-hat trend."
 [[config]]
 npc = 'varlamore_tapir_1'
 examine = 'What a nose!'
+death_anim = 9098
 
 [[config]]
 npc = 'varlamore_tapir_2'
