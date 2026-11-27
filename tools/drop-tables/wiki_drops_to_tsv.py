@@ -24,8 +24,33 @@ import json, re, sys
 from collections import Counter, defaultdict
 from fractions import Fraction
 
+# Optional `--templates templates.json`: wikitext of transcluded drop-table templates such as
+# "Template:Human drop table" (used by Man, Woman, ...), expanded into the pages that use them.
+drop_templates = {}
+if "--templates" in sys.argv:
+    i = sys.argv.index("--templates")
+    drop_templates = json.load(open(sys.argv[i + 1], encoding="utf-8"))
+    del sys.argv[i:i + 2]
 pages = json.load(open(sys.argv[1], encoding="utf-8"))
 item_ids = json.load(open(sys.argv[2], encoding="utf-8"))
+
+
+def expand_drop_templates(text):
+    """Inline {{Human drop table}}-style templates (their <includeonly> part, {{{dropversion}}} set)."""
+    for title, body in drop_templates.items():
+        name = title.split(":", 1)[1]
+        inner = re.search(r"<includeonly>(.*?)</includeonly>", body, re.S)
+        inner = inner.group(1) if inner else body
+
+        def sub(m):
+            dv = re.search(r"dropversion\s*=\s*([^|}]*)", m.group(1) or "")
+            return inner.replace("{{{dropversion|}}}", dv.group(1).strip() if dv else "")
+
+        text = re.sub(r"\{\{\s*" + re.escape(name) + r"\s*(\|[^{}]*)?\}\}", sub, text)
+    return text
+
+
+pages = {t: expand_drop_templates(x) for t, x in pages.items()}
 
 
 def read_sym(path):
@@ -160,6 +185,8 @@ def build_table(lines, page):
             else: log.append((page, kind, "unparsed rarity", first))
             if re.search(r"rolls\s*=\s*[2-9]", body): log.append((page, kind, "extra rolls ignored", ""))
             continue
+        if "{{(f)}}" in body:  # free-to-play-only line; this server is a members world
+            continue
         f = fields(strip_nested(body))
         name = f.get("name", "")
         if not name or name.lower() in SKIP_ITEMS: continue
@@ -238,6 +265,8 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
         by_dv = defaultdict(list)
         for line in parse_lines(text): by_dv[line[0]].append(line)
         if not by_dv: continue
+        # A drop-table template we could not expand (not in --templates) hides the main table.
+        unexpanded = re.search(r"\{\{\s*[^|{}]*drop table(?! sources)[^|{}]*\s*(\||\}\})", text, re.I)
         order = list(by_dv)
         assign = defaultdict(set)
         for ids, dv in versions:
@@ -249,7 +278,12 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
             npcs = npcs - assigned
             if not npcs: continue
             a, m, t = build_table(by_dv[dv], title)
-            if not (a or m or t): continue
+            if not (a or m) and (unexpanded or not t):
+                # The main table lives in a template we could not expand: emit no table so the npc
+                # keeps the default bones drop instead of dropping nothing. (Monsters that really
+                # only have tertiary drops, e.g. spiders, keep their tertiary-only table.)
+                if t: log.append((title, dv, "main table in unexpanded template; npc keeps bones", unexpanded.group(0)))
+                continue
             assigned |= npcs
             w.write(f"\ntable\t{','.join(map(str, sorted(npcs)))}\t# {title}" + (f" / {dv}" if dv else "") + "\n")
             write_table(w, a, m, t, title + (f" / {dv}" if dv else "")); tables += 1; stats["npcs"] += len(npcs)
