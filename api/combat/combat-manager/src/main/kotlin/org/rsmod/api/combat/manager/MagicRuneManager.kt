@@ -10,6 +10,8 @@ import org.rsmod.api.config.refs.objs
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.invtx.invDelAll
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.stat.magicLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
@@ -67,6 +69,10 @@ constructor(
         if (accessFailure != null) {
             return accessFailure
         }
+        // Local feature toggle (default on): spells need and consume no runes.
+        if (player.isFeatureOn(Feature.InfiniteRunes)) {
+            return CastResult.Success.AllUnlimited
+        }
         return delReqs(player, spell)
     }
 
@@ -95,6 +101,9 @@ constructor(
      * Otherwise, sends the appropriate missing-requirement message to [player] and returns `false`.
      */
     public fun hasRunes(player: Player, spell: MagicSpell): Boolean {
+        if (player.isFeatureOn(Feature.InfiniteRunes)) {
+            return true
+        }
         val invalid = validateSpell(player, spell).firstOrNull(MagicRunes.Validation::isInvalid)
         if (invalid != null) {
             val message = invalid.requirementMessage()
@@ -118,6 +127,9 @@ constructor(
      *   something went wrong.
      */
     public fun delReqs(player: Player, spell: MagicSpell): CastResult {
+        if (player.isFeatureOn(Feature.InfiniteRunes)) {
+            return CastResult.Success.AllUnlimited
+        }
         val validations = validateSpell(player, spell).toList()
         val valid = validations.filterIsInstance<MagicRunes.Validation.Valid>()
 

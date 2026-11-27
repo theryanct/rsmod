@@ -1,10 +1,12 @@
 package org.rsmod.content.skills.magic.teleports
 
 import jakarta.inject.Inject
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
-import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.ui.ifClose
 import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.script.onIfOverlayButton
@@ -77,6 +79,10 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
     }
 
     private fun Player.cooldownMinutesLeft(): Int {
+        // Local feature toggle (default on): no 30-minute cooldown.
+        if (isFeatureOn(Feature.NoHomeTeleportCooldown)) {
+            return 0
+        }
         val last = lastCastMinute
         if (last <= 0) {
             return 0
