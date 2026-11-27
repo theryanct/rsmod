@@ -12,7 +12,7 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 /**
  * Local feature toggles (see [Feature]): `::features` opens a menu, `::toggle <feature>` flips one,
- * `::skillxp <skill> <rate|reset>` sets a per-skill xp multiplier. Changes apply immediately and
+ * `::skillxp <skill> <rate|0>` sets a per-skill xp multiplier. Changes apply immediately and
  * are saved with the character.
  */
 class FeatureCommands
@@ -27,7 +27,7 @@ constructor(
             invalidArgs = "Use as ::toggle feature (${Feature.entries.joinToString { it.key }})"
         }
         onCommand("skillxp", "Set a per-skill xp multiplier", ::skillXp) {
-            invalidArgs = "Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer reset)"
+            invalidArgs = "Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0)"
         }
     }
 
@@ -53,7 +53,7 @@ constructor(
         with(cheat) {
             val stat = args.getOrNull(0)?.let(featureMenu::findStat)
             if (stat == null) {
-                player.mes("Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer reset)")
+                player.mes("Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0)")
                 return
             }
             val arg = args.getOrNull(1)
