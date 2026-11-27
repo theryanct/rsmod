@@ -1,8 +1,784 @@
 # Shopkeepers spawned by tools/shops/wiki_shops_to_tsv.py (wiki {{Map}} point of the owner page).
 
 [[spawn]]
+npc = 'tal_teklan_dye_trader'
+coords = '0_18_48_51_47'
+
+[[spawn]]
+npc = 'tal_teklan_archery_trader'
+coords = '0_18_48_58_24'
+
+[[spawn]]
+npc = 'tal_teklan_rune_trader'
+coords = '0_18_48_60_48'
+
+[[spawn]]
+npc = 'tal_teklan_general_store'
+coords = '0_19_48_25_37'
+
+[[spawn]]
+npc = 'kebos_seed_merchant'
+coords = '0_19_58_31_28'
+
+[[spawn]]
+npc = 'kebos_farming_store'
+coords = '0_19_58_35_22'
+
+[[spawn]]
+npc = 'kebos_spear_salesmen'
+coords = '0_20_59_18_21'
+
+[[spawn]]
+npc = 'mistrock_shield_store'
+coords = '0_21_44_43_53'
+
+[[spawn]]
+npc = 'mistrock_mining_store'
+coords = '0_21_44_55_51'
+
+[[spawn]]
+npc = 'aldarin_wine_store'
+coords = '0_21_45_17_42'
+
+[[spawn]]
+npc = 'kastori_farming_trader'
+coords = '0_21_47_13_53'
+
+[[spawn]]
+npc = 'kastori_general_store'
+coords = '0_21_47_29_37'
+
+[[spawn]]
+npc = 'kastori_fishing_trader'
+coords = '0_21_47_31_29'
+
+[[spawn]]
+npc = 'auburn_general_store'
+coords = '0_21_52_36_22'
+
+[[spawn]]
+npc = 'auburn_axe_store'
+coords = '0_21_52_58_15'
+
+[[spawn]]
+npc = 'aldarin_food_store'
+coords = '0_22_46_12_38'
+
+[[spawn]]
+npc = 'aldarin_gem_store'
+coords = '0_22_46_22_31'
+
+[[spawn]]
+npc = 'aldarin_general_store'
+coords = '0_22_46_7_28'
+
+[[spawn]]
+npc = 'auburn_staff_store'
+coords = '0_22_52_4_15'
+
+[[spawn]]
+npc = 'lovakengj_sulphur_keeper'
+coords = '0_22_60_46_17'
+
+[[spawn]]
+npc = 'sunset_coast_helmet_shop'
+coords = '0_23_46_42_50'
+
+[[spawn]]
+npc = 'sunset_coast_general_store'
+coords = '0_23_46_45_42'
+
+[[spawn]]
+npc = 'quetzacalli_general_store'
+coords = '0_23_50_46_22'
+
+[[spawn]]
+npc = 'shayzien_clothesshop'
+coords = '0_23_56_36_8'
+
+[[spawn]]
+npc = 'shayzien_generalstore'
+coords = '0_23_56_47_8'
+
+[[spawn]]
+npc = 'lovakengj_thirus_pre_diary'
+coords = '0_23_59_45_58'
+
+[[spawn]]
+npc = 'sunset_coast_fishing_shop'
+coords = '0_24_46_24_16'
+
+[[spawn]]
+npc = 'hg_mixedhide_seller'
+coords = '0_24_47_25_52'
+
+[[spawn]]
+npc = 'hg_fur_trader'
+coords = '0_24_47_29_26'
+
+[[spawn]]
+npc = 'fortis_shop_farming'
+coords = '0_24_48_58_31'
+
+[[spawn]]
+npc = 'shayzien_barman'
+coords = '0_24_55_14_42'
+
+[[spawn]]
+npc = 'shayzien_armourshop'
+coords = '0_24_55_29_50'
+
+[[spawn]]
+npc = 'shayzien_weaponshop'
+coords = '0_24_55_31_25'
+
+[[spawn]]
+npc = 'shayzien_rangeshop'
+coords = '0_24_55_4_37'
+
+[[spawn]]
+npc = 'lovakengj_generalstore'
+coords = '0_24_58_17_38'
+
+[[spawn]]
+npc = 'lovakengj_bartender'
+coords = '0_24_58_31_47'
+
+[[spawn]]
+npc = 'fortis_shop_seamstress'
+coords = '0_25_48_59_27'
+
+[[spawn]]
+npc = 'fortis_shop_blacksmith'
+coords = '0_25_49_58_4'
+
+[[spawn]]
+npc = 'salvager_overlook_platebody_store'
+coords = '0_25_51_20_26'
+
+[[spawn]]
+npc = 'salvager_overlook_general_store'
+coords = '0_25_51_28_24'
+
+[[spawn]]
+npc = 'wcguild_axeseller'
+coords = '0_25_54_53_44'
+
+[[spawn]]
+npc = 'gem_merchant'
+coords = '0_25_57_34_36'
+
+[[spawn]]
+npc = 'fortis_shop_general_2'
+coords = '0_26_47_57_57'
+
+[[spawn]]
+npc = 'fortis_shop_fur'
+coords = '0_26_48_10_39'
+
+[[spawn]]
+npc = 'fortis_shop_gems'
+coords = '0_26_48_11_30'
+
+[[spawn]]
+npc = 'fortis_shop_silk'
+coords = '0_26_48_12_41'
+
+[[spawn]]
+npc = 'fortis_shop_spices'
+coords = '0_26_48_22_28'
+
+[[spawn]]
+npc = 'fortis_shop_baker'
+coords = '0_26_48_24_38'
+
+[[spawn]]
+npc = 'fortis_shop_food'
+coords = '0_26_48_38_40'
+
+[[spawn]]
+npc = 'fortis_shop_general_1'
+coords = '0_26_48_5_50'
+
+[[spawn]]
+npc = 'arceuus_generalstore'
+coords = '0_26_58_56_12'
+
+[[spawn]]
+npc = 'arceuus_runeshop'
+coords = '0_26_58_58_31'
+
+[[spawn]]
+npc = 'arceuus_staffshop'
+coords = '0_26_58_5_14'
+
+[[spawn]]
+npc = 'stonecutter_stonemason'
+coords = '0_27_46_14_33'
+
+[[spawn]]
+npc = 'fortis_shop_maces'
+coords = '0_27_47_46_51'
+
+[[spawn]]
+npc = 'fortis_shop_crafting'
+coords = '0_27_48_38_29'
+
+[[spawn]]
+npc = 'hosidius_bartender_2'
+coords = '0_27_56_13_28'
+
+[[spawn]]
+npc = 'hosidius_bartender_1'
+coords = '0_27_56_15_28'
+
+[[spawn]]
+npc = 'hosidius_farmingstore'
+coords = '0_27_56_35_10'
+
+[[spawn]]
+npc = 'hosidius_foodstore'
+coords = '0_27_56_40_14'
+
+[[spawn]]
+npc = 'hosidius_generalstore'
+coords = '0_27_56_46_4'
+
+[[spawn]]
+npc = 'kourend_entrance_bartender'
+coords = '0_27_57_42_35'
+
+[[spawn]]
+npc = 'piscarilius_foodshop'
+coords = '0_27_58_57_45'
+
+[[spawn]]
+npc = 'warrens_fishmonger'
+coords = '0_28_158_33_33'
+
+[[spawn]]
+npc = 'warrens_shopkeeper'
+coords = '0_28_158_49_35'
+
+[[spawn]]
+npc = 'piscarilius_generalstore_keeper'
+coords = '0_28_58_16_14'
+
+[[spawn]]
+npc = 'piscarilius_fish_trader'
+coords = '0_28_58_38_10'
+
+[[spawn]]
+npc = 'piscarilius_fishing_supplies_trader'
+coords = '0_28_59_45_9'
+
+[[spawn]]
+npc = 'vc_dwarf_rich1'
+coords = '0_30_73_18_17'
+
+[[spawn]]
+npc = 'smithing_guild_ore_seller'
+coords = '0_30_77_16_38'
+
+[[spawn]]
+npc = 'smithing_guild_buyer'
+coords = '0_30_77_19_40'
+
+[[spawn]]
+npc = 'lunar_moonclan_baba_yaga'
+coords = '0_32_61_40_27'
+
+[[spawn]]
+npc = 'lunar_moonclan_monk3'
+coords = '0_32_61_48_3'
+
+[[spawn]]
+npc = 'lunar_moonclan_monk5'
+coords = '0_32_61_57_4'
+
+[[spawn]]
+npc = 'regicidegeneralshopkeeper'
+coords = '0_34_49_19_4'
+
+[[spawn]]
+npc = 'mourning_bow_seller'
+coords = '0_36_49_22_30'
+
+[[spawn]]
+npc = 'mourning_seamstress'
+coords = '0_36_49_22_42'
+
+[[spawn]]
+npc = 'mourning_stores_man'
+coords = '0_36_49_31_48'
+
+[[spawn]]
+npc = 'swan_arnold'
+coords = '0_36_57_26_43'
+
+[[spawn]]
+npc = 'frisb_n_sto'
+coords = '0_36_59_32_31'
+
+[[spawn]]
+npc = 'frisd_armourmerchant'
+coords = '0_37_59_28_21'
+
+[[spawn]]
+npc = 'frisd_oremerchant'
+coords = '0_37_59_28_21'
+
+[[spawn]]
+npc = 'frisd_weaponmerchant'
+coords = '0_37_59_29_29'
+
+[[spawn]]
+npc = 'frisd_fishmerchant'
+coords = '0_37_59_49_37'
+
+[[spawn]]
+npc = 'frisd_cook'
+coords = '0_37_59_49_37'
+
+[[spawn]]
+npc = 'fairy2_repair_2ops'
+coords = '0_37_69_45_18'
+
+[[spawn]]
+npc = 'generalshopkeeper8'
+coords = '0_37_69_8_31'
+
+[[spawn]]
+npc = 'zogre_uglug_nar'
+coords = '0_38_47_12_42'
+
+[[spawn]]
+npc = 'chadwell'
+coords = '0_38_51_35_23'
+
+[[spawn]]
+npc = 'grandtree_narnode_2ops'
+coords = '0_38_54_34_40'
+
+[[spawn]]
+npc = 'irksol'
+coords = '0_38_69_50_52'
+
+[[spawn]]
+npc = 'jakut'
+coords = '0_38_69_52_36'
+
+[[spawn]]
+npc = 'royal_clotheshop_owner'
+coords = '0_39_160_13_11'
+
+[[spawn]]
+npc = 'royal_generalstore_owner'
+coords = '0_39_160_13_19'
+
+[[spawn]]
+npc = 'royal_foodshop_owner'
+coords = '0_39_160_26_12'
+
+[[spawn]]
+npc = 'royal_barmaid'
+coords = '0_39_160_33_17'
+
+[[spawn]]
+npc = 'ogre_trader1'
+coords = '0_39_47_25_28'
+
+[[spawn]]
+npc = 'ogre_merchant'
+coords = '0_39_47_31_40'
+
+[[spawn]]
+npc = 'dragon_bartender'
+coords = '0_39_48_59_7'
+
+[[spawn]]
+npc = 'lathas_shopkeeper'
+coords = '0_39_52_17_56'
+
+[[spawn]]
+npc = 'shadow_warrior_rasool'
+coords = '0_39_53_39_39'
+
+[[spawn]]
+npc = 'misc_veg_monger'
+coords = '0_39_60_20_25'
+
+[[spawn]]
+npc = 'misc_fish_monger'
+coords = '0_39_60_22_26'
+
+[[spawn]]
+npc = 'hunting_shop_owner_yanille'
+coords = '0_40_48_7_11'
+
+[[spawn]]
+npc = 'hunting_weapon_designer'
+coords = '0_40_48_7_11'
+
+[[spawn]]
+npc = 'frenita'
+coords = '0_40_48_7_28'
+
+[[spawn]]
+npc = 'aemad'
+coords = '0_40_51_54_29'
+
+[[spawn]]
+npc = 'fishguildshop'
+coords = '0_40_53_35_9'
+
+[[spawn]]
+npc = 'pest_squire_storemaster'
+coords = '0_41_41_27_41'
+
+[[spawn]]
+npc = 'pest_squire_runeshop'
+coords = '0_41_41_35_30'
+
+[[spawn]]
+npc = 'pest_squire_rangeshop'
+coords = '0_41_41_41_36'
+
+[[spawn]]
+npc = 'khazard_shopkeeper'
+coords = '0_41_49_24_26'
+
+[[spawn]]
+npc = 'zenesha'
+coords = '0_41_51_29_30'
+
+[[spawn]]
+npc = 'silver_merchant_ardougne'
+coords = '0_41_51_34_51'
+
+[[spawn]]
+npc = 'spice_merchant'
+coords = '0_41_51_35_33'
+
+[[spawn]]
+npc = 'fur_merchant'
+coords = '0_41_51_40_32'
+
+[[spawn]]
+npc = 'gem_merchant_ardougne'
+coords = '0_41_51_45_39'
+
+[[spawn]]
+npc = 'baker_merchant_ardougne2'
+coords = '0_41_51_45_46'
+
+[[spawn]]
+npc = 'farming_shopkeeper_3'
+coords = '0_41_52_21_31'
+
+[[spawn]]
+npc = 'ranging_guild_tribal_salesman'
+coords = '0_41_53_40_29'
+
+[[spawn]]
+npc = 'ranging_guild_armour_salesman'
+coords = '0_41_53_43_44'
+
+[[spawn]]
+npc = 'ranging_guild_bow_salesman'
+coords = '0_41_53_48_42'
+
+[[spawn]]
+npc = 'viking_clothing_shopkeeper'
+coords = '0_41_57_0_26'
+
+[[spawn]]
+npc = 'viking_fur_monger'
+coords = '0_41_57_14_28'
+
+[[spawn]]
+npc = 'viking_sigmund'
+coords = '0_41_57_15_33'
+
+[[spawn]]
+npc = 'viking_fish_monger'
+coords = '0_41_57_22_28'
+
+[[spawn]]
+npc = 'viking_longhall_barkeep'
+coords = '0_41_57_35_25'
+
+[[spawn]]
+npc = 'viking_weapons_salesman'
+coords = '0_41_57_41_45'
+
+[[spawn]]
+npc = 'foresters_bartender'
+coords = '0_42_54_4_40'
+
+[[spawn]]
+npc = 'dorgesh_market_head'
+coords = '0_42_83_30_0'
+
+[[spawn]]
+npc = 'dorgesh_female_lamp_seller'
+coords = '0_42_83_33_10'
+
+[[spawn]]
+npc = 'dorgesh_male_leather_seller'
+coords = '0_42_83_35_2'
+
+[[spawn]]
+npc = 'mm_solihib'
+coords = '0_43_43_16_37'
+
+[[spawn]]
+npc = 'mm_ifaba'
+coords = '0_43_43_1_24'
+
+[[spawn]]
+npc = 'mm2_javelinstoreowner'
+coords = '0_43_43_23_26'
+
+[[spawn]]
+npc = 'mm_hamab'
+coords = '0_43_43_29_42'
+
+[[spawn]]
+npc = 'mm_tutab'
+coords = '0_43_43_5_17'
+
+[[spawn]]
+npc = 'mm_daga'
+coords = '0_43_43_7_23'
+
+[[spawn]]
+npc = 'tbwt_tiadeche_final'
+coords = '0_43_47_29_50'
+
+[[spawn]]
+npc = 'tbwt_tamayu_final'
+coords = '0_43_47_49_50'
+
+[[spawn]]
+npc = 'jiminua'
+coords = '0_43_48_15_50'
+
+[[spawn]]
+npc = 'alfonse_the_waiter'
+coords = '0_43_49_41_52'
+
+[[spawn]]
+npc = 'davon'
+coords = '0_43_49_51_16'
+
+[[spawn]]
+npc = 'frincos'
+coords = '0_43_52_58_15'
+
+[[spawn]]
+npc = 'candle_maker'
+coords = '0_43_53_47_48'
+
+[[spawn]]
+npc = 'arhein'
+coords = '0_43_53_51_40'
+
+[[spawn]]
+npc = 'xbows_sales_dwarf_white_wolf_mt'
+coords = '0_44_154_49_17'
+
+[[spawn]]
+npc = 'dwarf_city_shop_armour'
+coords = '0_44_159_11_22'
+
+[[spawn]]
+npc = 'dwarf_city_shop_weapons'
+coords = '0_44_159_11_54'
+
+[[spawn]]
+npc = 'dwarf_city_barman_rich'
+coords = '0_44_159_26_21'
+
+[[spawn]]
+npc = 'poh_stonemason'
+coords = '0_44_159_33_9'
+
+[[spawn]]
+npc = 'dwarf_city_shop_general_store'
+coords = '0_44_159_53_14'
+
+[[spawn]]
+npc = 'dwarf_city_shop_warhammer'
+coords = '0_44_159_57_33'
+
+[[spawn]]
+npc = 'shilofishowner'
+coords = '0_44_46_55_25'
+
+[[spawn]]
+npc = 'shilogeneralstore'
+coords = '0_44_46_9_15'
+
+[[spawn]]
+npc = 'harry'
+coords = '0_44_53_17_52'
+
+[[spawn]]
+npc = 'hickton'
+coords = '0_44_53_8_51'
+
+[[spawn]]
+npc = 'farming_shopkeeper_2'
+coords = '0_44_54_3_6'
+
+[[spawn]]
+npc = 'warguild_food_shopkeeper'
+coords = '0_44_55_25_32'
+
+[[spawn]]
+npc = 'warguild_potion_shopkeeper'
+coords = '0_44_55_30_32'
+
+[[spawn]]
+npc = 'myarm_leprechaun'
+coords = '0_44_57_9_37'
+
+[[spawn]]
+npc = 'dwarf_city_shop_bakery'
+coords = '0_45_159_12_35'
+
+[[spawn]]
+npc = 'dwarf_city_dwarf_man8'
+coords = '0_45_159_25_40'
+
+[[spawn]]
+npc = 'dwarf_city_barmaid_poor'
+coords = '0_45_159_36_18'
+
+[[spawn]]
+npc = 'dwarf_city_shop_pickaxe'
+coords = '0_45_159_44_36'
+
+[[spawn]]
+npc = 'dwarf_city_shop_cloth_poor'
+coords = '0_45_159_7_12'
+
+[[spawn]]
+npc = 'dwarf_city_shop_silver'
+coords = '0_45_159_8_20'
+
+[[spawn]]
+npc = 'xbows_sales_dwarf_keldegrim'
+coords = '0_45_159_8_26'
+
+[[spawn]]
+npc = 'dwarf_city_shop_craft'
+coords = '0_45_159_8_31'
+
+[[spawn]]
+npc = 'dwarf_city_shop_gems'
+coords = '0_45_159_9_35'
+
+[[spawn]]
+npc = 'generalshopkeeper7'
+coords = '0_45_49_25_13'
+
+[[spawn]]
+npc = 'zembo'
+coords = '0_45_49_47_9'
+
+[[spawn]]
+npc = 'jatix'
+coords = '0_45_53_19_37'
+
+[[spawn]]
+npc = 'gaius'
+coords = '0_45_53_5_58'
+
+[[spawn]]
+npc = 'death_shopkeeper'
+coords = '0_45_55_48_27'
+
+[[spawn]]
+npc = 'vc_gambler_rich3'
+coords = '0_45_79_29_22'
+
+[[spawn]]
+npc = 'dwarven_shopkeeper'
+coords = '0_46_153_50_36'
+
+[[spawn]]
+npc = 'nurmof'
+coords = '0_46_153_54_52'
+
+[[spawn]]
+npc = 'xbows_sales_dwarf_mine'
+coords = '0_46_153_60_7'
+
+[[spawn]]
+npc = 'salesman_ranging'
+coords = '0_46_50_13_4'
+
+[[spawn]]
+npc = 'generalshopkeeper6'
+coords = '0_46_50_5_15'
+
+[[spawn]]
+npc = 'rommik'
+coords = '0_46_50_5_5'
+
+[[spawn]]
+npc = 'wayne'
+coords = '0_46_51_28_49'
+
+[[spawn]]
+npc = 'risingsun_barmaid'
+coords = '0_46_52_12_44'
+
+[[spawn]]
+npc = 'risingsun_barmaid2'
+coords = '0_46_52_14_43'
+
+[[spawn]]
+npc = 'generalshopkeeper4'
+coords = '0_46_52_14_59'
+
+[[spawn]]
+npc = 'herquin'
+coords = '0_46_52_1_6'
+
+[[spawn]]
+npc = 'cassie'
+coords = '0_46_52_32_56'
+
+[[spawn]]
+npc = 'flynn'
+coords = '0_46_52_6_59'
+
+[[spawn]]
+npc = 'wilderness_capeseller_2'
+coords = '0_46_58_32_59'
+
+[[spawn]]
+npc = 'mguild_pickaxeseller'
+coords = '0_47_152_23_19'
+
+[[spawn]]
+npc = 'mguild_oreseller'
+coords = '0_47_152_24_18'
+
+[[spawn]]
+npc = 'drogo'
+coords = '0_47_153_28_54'
+
+[[spawn]]
 npc = 'brian'
 coords = '0_47_50_19_49'
+
+[[spawn]]
+npc = 'rustyanchor_bartender'
+coords = '0_47_50_39_57'
 
 [[spawn]]
 npc = 'gerrant'
@@ -21,8 +797,124 @@ npc = 'grum'
 coords = '0_47_50_6_47'
 
 [[spawn]]
+npc = 'farming_shopkeeper_1'
+coords = '0_47_51_28_30'
+
+[[spawn]]
+npc = 'poh_garden_supplier'
+coords = '0_47_52_9_45'
+
+[[spawn]]
+npc = 'nulodion'
+coords = '0_47_53_4_60'
+
+[[spawn]]
+npc = 'oziach'
+coords = '0_47_54_62_61'
+
+[[spawn]]
+npc = 'wilderness_capeseller_10'
+coords = '0_47_56_41_46'
+
+[[spawn]]
+npc = 'noterazzo'
+coords = '0_47_57_18_54'
+
+[[spawn]]
+npc = 'wilderness_capeseller_7'
+coords = '0_47_57_18_59'
+
+[[spawn]]
+npc = 'fat_tony'
+coords = '0_47_57_30_59'
+
+[[spawn]]
+npc = 'wilderness_capeseller_4'
+coords = '0_47_61_15_41'
+
+[[spawn]]
+npc = 'roguesden_trader'
+coords = '0_47_77_43_46'
+
+[[spawn]]
+npc = 'magearena_guardian'
+coords = '0_48_161_12_32'
+
+[[spawn]]
+npc = 'magearena_runeshop'
+coords = '0_48_161_37_53'
+
+[[spawn]]
+npc = 'rag_wine_merchant'
+coords = '0_48_50_13_52'
+
+[[spawn]]
+npc = 'ned'
+coords = '0_48_50_27_59'
+
+[[spawn]]
+npc = 'seed_merchant'
+coords = '0_48_50_7_50'
+
+[[spawn]]
+npc = 'aprilfoolshorsesalesman'
+coords = '0_48_50_9_47'
+
+[[spawn]]
+npc = 'anma_assistant'
+coords = '0_48_52_22_29'
+
+[[spawn]]
+npc = 'peksa'
+coords = '0_48_53_3_38'
+
+[[spawn]]
+npc = 'wilderness_capeseller_6'
+coords = '0_48_54_30_63'
+
+[[spawn]]
+npc = 'generalshopkeeper5'
+coords = '0_48_54_8_54'
+
+[[spawn]]
+npc = 'rcu_zammy_mage1a'
+coords = '0_48_55_35_35'
+
+[[spawn]]
+npc = 'wilderness_capeseller_8'
+coords = '0_48_59_1_33'
+
+[[spawn]]
+npc = 'tempoross_ishmael'
+coords = '0_49_44_24_32'
+
+[[spawn]]
+npc = 'fourdiamonds_bartender'
+coords = '0_49_46_26_39'
+
+[[spawn]]
+npc = 'dt_bandit_shopkeeper'
+coords = '0_49_46_41_44'
+
+[[spawn]]
+npc = 'bedabin'
+coords = '0_49_47_36_20'
+
+[[spawn]]
+npc = 'merchant_pies'
+coords = '0_49_53_7_57'
+
+[[spawn]]
+npc = 'wildy_hub_pub_owner'
+coords = '0_49_56_16_60'
+
+[[spawn]]
 npc = 'generalshopkeeper2'
 coords = '0_50_53_17_23'
+
+[[spawn]]
+npc = 'bluemoon_bartender'
+coords = '0_50_53_26_6'
 
 [[spawn]]
 npc = 'horvik_the_armourer'
@@ -49,9 +941,373 @@ npc = 'swordshop1'
 coords = '0_50_53_6_8'
 
 [[spawn]]
+npc = 'wilderness_capeseller_9'
+coords = '0_50_56_39_25'
+
+[[spawn]]
+npc = 'wilderness_capeseller_3'
+coords = '0_50_58_5_6'
+
+[[spawn]]
+npc = 'wilderness_capeseller_1'
+coords = '0_50_60_48_16'
+
+[[spawn]]
+npc = 'prif_seamstress'
+coords = '0_50_94_22_58'
+
+[[spawn]]
+npc = 'prif_dyestore'
+coords = '0_50_94_30_41'
+
+[[spawn]]
+npc = 'prif_lliann'
+coords = '0_50_94_31_53'
+
+[[spawn]]
+npc = 'prif_armourstore'
+coords = '0_50_94_53_44'
+
+[[spawn]]
+npc = 'prif_weaponstore'
+coords = '0_50_94_60_43'
+
+[[spawn]]
+npc = 'prif_staffstore'
+coords = '0_50_95_19_9'
+
+[[spawn]]
+npc = 'prif_runestore'
+coords = '0_50_95_22_34'
+
+[[spawn]]
+npc = 'prif_macestore'
+coords = '0_50_95_56_46'
+
+[[spawn]]
+npc = 'dttd_bone_dealer'
+coords = '0_51_150_58_8'
+
+[[spawn]]
+npc = 'ics_little_embalmer_nospots'
+coords = '0_51_43_22_2'
+
+[[spawn]]
+npc = 'contact_market_dagger'
+coords = '0_51_43_33_53'
+
+[[spawn]]
+npc = 'contact_market_baker'
+coords = '0_51_43_40_18'
+
+[[spawn]]
+npc = 'contact_market_craft'
+coords = '0_51_43_47_28'
+
+[[spawn]]
+npc = 'ics_little_linen1_2op'
+coords = '0_51_43_52_34'
+
+[[spawn]]
+npc = 'zeke'
+coords = '0_51_49_24_54'
+
+[[spawn]]
+npc = 'generalshopkeeper3'
+coords = '0_51_49_51_46'
+
+[[spawn]]
+npc = 'ranael'
+coords = '0_51_49_52_27'
+
+[[spawn]]
+npc = 'louie_legs'
+coords = '0_51_49_53_39'
+
+[[spawn]]
+npc = 'dommik'
+coords = '0_51_49_57_58'
+
+[[spawn]]
+npc = 'gem_trader'
+coords = '0_51_50_23_12'
+
+[[spawn]]
+npc = 'feud_ali_m'
+coords = '0_51_50_40_11'
+
+[[spawn]]
 npc = 'tailorp'
 coords = '0_51_53_17_6'
 
 [[spawn]]
 npc = 'tea_seller'
 coords = '0_51_53_6_21'
+
+[[spawn]]
+npc = 'jollyboar_bartender'
+coords = '0_51_54_13_33'
+
+[[spawn]]
+npc = 'wilderness_capeseller_5'
+coords = '0_51_61_19_30'
+
+[[spawn]]
+npc = 'prif_miningstore'
+coords = '0_51_94_28_28'
+
+[[spawn]]
+npc = 'prif_generalstore'
+coords = '0_51_94_38_36'
+
+[[spawn]]
+npc = 'prif_rangestore'
+coords = '0_51_94_42_59'
+
+[[spawn]]
+npc = 'prif_foodstore'
+coords = '0_51_95_10_25'
+
+[[spawn]]
+npc = 'prif_gem'
+coords = '0_51_95_13_21'
+
+[[spawn]]
+npc = 'prif_spice'
+coords = '0_51_95_14_14'
+
+[[spawn]]
+npc = 'prif_silver'
+coords = '0_51_95_17_18'
+
+[[spawn]]
+npc = 'prif_herbstore'
+coords = '0_51_95_22_38'
+
+[[spawn]]
+npc = 'prif_farmingstore'
+coords = '0_51_95_32_9'
+
+[[spawn]]
+npc = 'feud_marketseller'
+coords = '0_52_46_31_43'
+
+[[spawn]]
+npc = 'feud_ali_the_barman'
+coords = '0_52_46_33_12'
+
+[[spawn]]
+npc = 'elid_shield_seller'
+coords = '0_53_45_14_42'
+
+[[spawn]]
+npc = 'elid_general_seller'
+coords = '0_53_45_24_28'
+
+[[spawn]]
+npc = 'elid_choc_ice_seller'
+coords = '0_53_45_36_33'
+
+[[spawn]]
+npc = 'hunting_shop_owner_nardah'
+coords = '0_53_45_49_22'
+
+[[spawn]]
+npc = 'burgh_general_store_owner'
+coords = '0_54_50_59_41'
+
+[[spawn]]
+npc = 'werewolfshopkeeper3'
+coords = '0_54_54_22_39'
+
+[[spawn]]
+npc = 'route_veliaf_hurtz'
+coords = '0_54_54_38_8'
+
+[[spawn]]
+npc = 'werewolfshopkeeper2'
+coords = '0_54_54_44_49'
+
+[[spawn]]
+npc = 'werewolfshopkeeper1'
+coords = '0_54_54_52_39'
+
+[[spawn]]
+npc = 'myq3_black_market_trader'
+coords = '0_56_50_20_1'
+
+[[spawn]]
+npc = 'darkm_trader_clothes'
+coords = '0_56_52_18_52'
+
+[[spawn]]
+npc = 'darkm_trader_food'
+coords = '0_56_52_36_59'
+
+[[spawn]]
+npc = 'darkm_trader_general'
+coords = '0_56_52_57_8'
+
+[[spawn]]
+npc = 'darkm_trader_candles'
+coords = '0_56_52_61_31'
+
+[[spawn]]
+npc = 'darkm_trader_pub'
+coords = '0_56_53_16_0'
+
+[[spawn]]
+npc = 'farming_shopkeeper_4'
+coords = '0_56_55_44_6'
+
+[[spawn]]
+npc = 'fever_mama_la_fiette'
+coords = '0_57_46_16_36'
+
+[[spawn]]
+npc = 'fever_harpoon_joe'
+coords = '0_57_46_18_48'
+
+[[spawn]]
+npc = 'fever_pirate_two_feet_charley'
+coords = '0_57_46_27_24'
+
+[[spawn]]
+npc = 'fever_smithing_smith'
+coords = '0_57_46_41_11'
+
+[[spawn]]
+npc = 'fever_dodgy_mike'
+coords = '0_57_46_44_33'
+
+[[spawn]]
+npc = 'tob_stranger_2op'
+coords = '0_57_50_25_22'
+
+[[spawn]]
+npc = 'ahoy_ghost_shopkeeper'
+coords = '0_57_54_11_22'
+
+[[spawn]]
+npc = 'ahoy_akharanu'
+coords = '0_57_54_42_41'
+
+[[spawn]]
+npc = 'fossil_general_store'
+coords = '0_58_59_14_41'
+
+[[spawn]]
+npc = 'cam_torum_shop_magic'
+coords = '1_22_149_16_32'
+
+[[spawn]]
+npc = 'cam_torum_shop_general'
+coords = '1_22_149_17_19'
+
+[[spawn]]
+npc = 'cam_torum_shop_herbalist'
+coords = '1_22_149_28_15'
+
+[[spawn]]
+npc = 'cam_torum_shop_jewellery'
+coords = '1_22_149_29_24'
+
+[[spawn]]
+npc = 'cam_torum_shop_baker'
+coords = '1_22_149_33_24'
+
+[[spawn]]
+npc = 'cam_torum_shop_mining'
+coords = '1_22_149_34_18'
+
+[[spawn]]
+npc = 'cam_torum_shop_blacksmith'
+coords = '1_22_149_40_49'
+
+[[spawn]]
+npc = 'mourning_elven_cook'
+coords = '1_36_49_37_22'
+
+[[spawn]]
+npc = 'myths_guild_herbalist'
+coords = '1_38_44_22_37'
+
+[[spawn]]
+npc = 'gnome_waiter'
+coords = '1_38_54_17_47'
+
+[[spawn]]
+npc = 'gnome_hudo'
+coords = '1_38_54_17_54'
+
+[[spawn]]
+npc = 'gnome_rometti'
+coords = '1_38_54_50_54'
+
+[[spawn]]
+npc = 'gnome_heckelfunch'
+coords = '1_38_54_61_32'
+
+[[spawn]]
+npc = 'treevillage_shopkeeper1'
+coords = '1_39_49_32_26'
+
+[[spawn]]
+npc = 'horror_lighthousekeeeper_well'
+coords = '1_39_56_13_57'
+
+[[spawn]]
+npc = 'magic_store_owner2'
+coords = '1_40_48_31_16'
+
+[[spawn]]
+npc = 'magic_store_owner'
+coords = '1_40_48_31_16'
+
+[[spawn]]
+npc = 'fionella'
+coords = '1_42_52_42_50'
+
+[[spawn]]
+npc = 'shiloinnowner'
+coords = '1_44_46_46_53'
+
+[[spawn]]
+npc = 'warguild_armour_shopkeeper'
+coords = '1_44_55_41_17'
+
+[[spawn]]
+npc = 'helemos'
+coords = '1_45_54_14_54'
+
+[[spawn]]
+npc = 'risingsun_barmaid3'
+coords = '1_46_52_13_42'
+
+[[spawn]]
+npc = 'scavvo'
+coords = '1_49_52_56_26'
+
+[[spawn]]
+npc = 'valaine'
+coords = '1_49_52_56_31'
+
+[[spawn]]
+npc = 'myths_guild_cape_seller'
+coords = '2_38_44_19_31'
+
+[[spawn]]
+npc = 'myths_guild_smith'
+coords = '2_38_44_32_31'
+
+[[spawn]]
+npc = 'myths_guild_weapon_seller'
+coords = '2_38_44_32_31'
+
+[[spawn]]
+npc = 'gnome_gulluck'
+coords = '2_38_54_37_32'
+
+[[spawn]]
+npc = 'siegfried_erkle'
+coords = '3_42_52_38_50'

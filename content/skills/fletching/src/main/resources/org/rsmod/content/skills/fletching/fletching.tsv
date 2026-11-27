@@ -1,0 +1,74 @@
+# Generated from the OSRS Wiki recipe bucket by tools/skills/fletching_to_tsv.py - do not edit.
+recipe	combine	bronze_arrow	15	1	19.5	2	-	headless_arrow	15	bronze_arrowheads	15
+recipe	combine	headless_arrow	15	1	15	2	-	arrow_shaft	15	feather	15
+recipe	combine	bolt	10	9	5	1	-	xbows_crossbow_bolts_bronze_unfeathered	10	feather	10
+recipe	combine	bronze_dart	10	10	18	1	-	bronze_dart_tip	10	feather	10
+recipe	combine	iron_arrow	15	15	37.5	2	-	headless_arrow	15	iron_arrowheads	15
+recipe	combine	iron_dart	10	22	38	1	-	iron_dart_tip	10	feather	10
+recipe	combine	xbows_crossbow_bolts_blurite	10	24	10	1	-	xbows_crossbow_bolts_blurite_unfeathered	10	feather	10
+recipe	combine	steel_arrow	15	30	75	2	-	headless_arrow	15	steel_arrowheads	15
+recipe	combine	steel_dart	10	37	75	1	-	steel_dart_tip	10	feather	10
+recipe	combine	xbows_crossbow_bolts_iron	10	39	15	1	-	xbows_crossbow_bolts_iron_unfeathered	10	feather	10
+recipe	combine	xbows_crossbow_bolts_silver	10	43	25	1	-	xbows_crossbow_bolts_silver_unfeathered	10	feather	10
+recipe	combine	mithril_arrow	15	45	112.5	2	-	headless_arrow	15	mithril_arrowheads	15
+recipe	combine	xbows_crossbow_bolts_steel	10	46	35	1	-	xbows_crossbow_bolts_steel_unfeathered	10	feather	10
+recipe	combine	mithril_dart	10	52	112	1	-	mithril_dart_tip	10	feather	10
+recipe	combine	xbows_crossbow_bolts_mithril	10	54	50	1	-	xbows_crossbow_bolts_mithril_unfeathered	10	feather	10
+recipe	combine	adamant_arrow	15	60	150	2	-	headless_arrow	15	adamant_arrowheads	15
+recipe	combine	adamant_dart	10	67	150	1	-	adamant_dart_tip	10	feather	10
+recipe	combine	xbows_crossbow_bolts_runite	10	69	100	1	-	xbows_crossbow_bolts_runite_unfeathered	10	feather	10
+recipe	combine	rune_arrow	15	75	187.5	2	-	headless_arrow	15	rune_arrowheads	15
+recipe	combine	rune_dart	10	81	188	1	-	rune_dart_tip	10	feather	10
+recipe	combine	amethyst_arrow	15	82	202.5	2	-	headless_arrow	15	amethyst_arrowheads	15
+recipe	combine	dragon_bolts	10	84	120	1	-	dragon_bolts_unfeathered	10	feather	10
+recipe	combine	amethyst_dart	10	90	210	1	-	amethyst_dart_tip	10	feather	10
+recipe	combine	dragon_arrow	15	90	225	2	-	headless_arrow	15	dragon_arrowheads	15
+recipe	combine	dragon_dart	10	95	250	1	-	dragon_dart_tip	10	feather	10
+recipe	knife	arrow_shaft	15	1	5	2	human_fletching	logs	1
+recipe	knife	javelin_shaft	15	3	5	2	human_fletching	logs	1
+recipe	knife	ogre_arrow_shaft	4	5	6.4	3	human_fletching	achey_tree_logs	1
+recipe	knife	unstrung_shortbow	1	5	5	3	human_fletching	logs	1
+recipe	knife	xbows_crossbow_stock_wood	1	9	6	3	human_fletching	logs	1
+recipe	knife	unstrung_longbow	1	10	10	3	human_fletching	logs	1
+recipe	knife	arrow_shaft	30	15	10	2	human_fletching	oak_logs	1
+recipe	knife	unstrung_oak_shortbow	1	20	16.5	3	human_fletching	oak_logs	1
+recipe	knife	xbows_crossbow_stock_oak	1	24	16	3	human_fletching	oak_logs	1
+recipe	knife	unstrung_oak_longbow	1	25	25	3	human_fletching	oak_logs	1
+recipe	knife	oak_shield	1	27	50	7	human_fletching	oak_logs	2
+recipe	knife	arrow_shaft	45	30	15	2	human_fletching	willow_logs	1
+recipe	knife	unstrung_willow_shortbow	1	35	33.3	3	human_fletching	willow_logs	1
+recipe	knife	xbows_crossbow_stock_willow	1	39	22	3	human_fletching	willow_logs	1
+recipe	knife	unstrung_willow_longbow	1	40	41.5	3	human_fletching	willow_logs	1
+recipe	knife	willow_shield	1	42	83	7	human_fletching	willow_logs	2
+recipe	knife	arrow_shaft	60	45	20	2	human_fletching	maple_logs	1
+recipe	knife	xbows_crossbow_stock_teak	1	46	27	3	human_fletching	teak_logs	1
+recipe	knife	unstrung_maple_shortbow	1	50	50	3	human_fletching	maple_logs	1
+recipe	knife	xbows_crossbow_stock_maple	1	54	32	3	human_fletching	maple_logs	1
+recipe	knife	unstrung_maple_longbow	1	55	58.3	3	human_fletching	maple_logs	1
+recipe	knife	maple_shield	1	57	116.5	7	human_fletching	maple_logs	2
+recipe	knife	arrow_shaft	75	60	25	2	human_fletching	yew_logs	1
+recipe	knife	xbows_crossbow_stock_mahogany	1	61	41	3	human_fletching	mahogany_logs	1
+recipe	knife	unstrung_yew_shortbow	1	65	67.5	3	human_fletching	yew_logs	1
+recipe	knife	xbows_crossbow_stock_yew	1	69	50	3	human_fletching	yew_logs	1
+recipe	knife	unstrung_yew_longbow	1	70	75	3	human_fletching	yew_logs	1
+recipe	knife	yew_shield	1	72	150	7	human_fletching	yew_logs	2
+recipe	knife	arrow_shaft	90	75	30	2	human_fletching	magic_logs	1
+recipe	knife	xbows_crossbow_stock_magic	1	78	70	3	human_fletching	magic_logs	1
+recipe	knife	unstrung_magic_shortbow	1	80	83.3	3	human_fletching	magic_logs	1
+recipe	knife	unstrung_magic_longbow	1	85	91.5	3	human_fletching	magic_logs	1
+recipe	knife	magic_shield	1	87	183	7	human_fletching	magic_logs	2
+recipe	knife	arrow_shaft	105	90	35	2	human_fletching	redwood_logs	1
+recipe	knife	redwood_hiking_staff	1	90	10.5	3	human_fletching	redwood_logs	1
+recipe	knife	redwood_shield	1	92	216	7	human_fletching	redwood_logs	2
+recipe	string	shortbow	1	5	5	2	stringing_shortbow	unstrung_shortbow	1	bow_string	1
+recipe	string	longbow	1	10	10	2	stringing_longbow	unstrung_longbow	1	bow_string	1
+recipe	string	oak_shortbow	1	20	16.5	2	stringing_oak_shortbow	unstrung_oak_shortbow	1	bow_string	1
+recipe	string	oak_longbow	1	25	25	2	stringing_oak_longbow	unstrung_oak_longbow	1	bow_string	1
+recipe	string	willow_shortbow	1	35	33.2	2	stringing_willow_shortbow	unstrung_willow_shortbow	1	bow_string	1
+recipe	string	willow_longbow	1	40	41.5	2	stringing_willow_longbow	unstrung_willow_longbow	1	bow_string	1
+recipe	string	maple_shortbow	1	50	50	2	stringing_maple_shortbow	unstrung_maple_shortbow	1	bow_string	1
+recipe	string	maple_longbow	1	55	58.2	2	stringing_maple_longbow	unstrung_maple_longbow	1	bow_string	1
+recipe	string	yew_shortbow	1	65	67.5	2	stringing_yew_shortbow	unstrung_yew_shortbow	1	bow_string	1
+recipe	string	yew_longbow	1	70	75	2	stringing_yew_longbow	unstrung_yew_longbow	1	bow_string	1
+recipe	string	magic_shortbow	1	80	83.3	2	stringing_magic_shortbow	unstrung_magic_shortbow	1	bow_string	1
+recipe	string	magic_longbow	1	85	91.5	2	stringing_magic_longbow	unstrung_magic_longbow	1	bow_string	1

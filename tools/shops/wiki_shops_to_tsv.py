@@ -59,13 +59,15 @@ for path in spawn_files:
     text = open(path, encoding="utf-8").read()
     spawned |= {npc_by_name[n] for n in re.findall(r"npc = '([^']+)'", text) if n in npc_by_name}
 
-trade_op = {}
+trade_op, talk_op, npc_display = {}, {}, {}
 for line in open(npcs_dump, encoding="utf-8").read().splitlines()[1:]:
     p = line.split("\t")
+    npc_display[int(p[0])] = p[1]
     for i, op in enumerate(p[5:10], start=1):
-        if op.strip().lower() == "trade":
+        if op.strip().lower() == "trade" and int(p[0]) not in trade_op:
             trade_op[int(p[0])] = i
-            break
+        if op.strip().lower() == "talk-to" and int(p[0]) not in talk_op:
+            talk_op[int(p[0])] = i
 
 # Npcs referenced by hand-written content already have their own op handlers.
 handled = set()
@@ -74,6 +76,8 @@ for path in glob.glob("content/**/*.kt", recursive=True):
     if "NpcReferences()" in text:
         handled |= set(re.findall(r'find\("([^"]+)"', text))
 HAND_STOCKED_INVS = {"axeshop", "generalshop1"}
+MAX_RESTOCK_CYCLES = 65535  # InvTypeEncoder writes restockCycles with writeShort
+MAX_STOCK_ENTRIES = 255     # InvTypeEncoder: "Can only store up to 255 default stock"
 
 # Client inv sizes from the cache (config group 5, opcode 2).
 inv_size = {}
@@ -86,6 +90,10 @@ SPECIAL_INV = re.compile(r"uim|deadman|league|trailblazer|reward|gotr|_dt_|tal_t
 shop_invs = {inv_sym[i]: s for i, s in inv_size.items()
              if i in inv_sym and "shop" in inv_sym[i] and inv_sym[i] not in HAND_STOCKED_INVS
              and not SPECIAL_INV.search(inv_sym[i])}
+# Fallback pool once the standard invs run out: the variants (only used as containers).
+spare_invs = {inv_sym[i]: s for i, s in inv_size.items()
+              if i in inv_sym and "shop" in inv_sym[i] and inv_sym[i] not in HAND_STOCKED_INVS
+              and inv_sym[i] not in shop_invs}
 
 log, stats = [], Counter()
 
@@ -177,6 +185,9 @@ for title, text in sorted(stores.items()):
         if not traders:
             log.append((title, page, "owner has no npc id with a Trade op", "")); continue
         nid = next((i for i in traders if i in spawned), traders[0])
+        if nid not in spawned and any(i in spawned for i in ids):
+            # Another id of this owner page is already spawned elsewhere; do not spawn a second one.
+            log.append((title, page, "owner spawned elsewhere under a non-Trade id", "")); continue
         if nid not in spawned and nid not in new_spawns:
             coords = owner_coords(page)
             if coords is None:
@@ -186,6 +197,9 @@ for title, text in sorted(stores.items()):
     if not npcs:
         stats["no_trader"] += 1; continue
     head = fields(strip_nested(next(templates(text, "StoreTableHead"), "") or ""))
+    currency = (head.get("currency") or "coins").strip().lower()
+    if currency != "coins":
+        stats["non_coin_currency"] += 1; log.append((title, "", "non-coin currency (not supported yet)", currency)); continue
     sell, buy, delta = (int(re.match(r"\d+", head.get(k) or str(d)).group(0))
                         for k, d in (("sellmultiplier", 1300), ("buymultiplier", 400), ("delta", 30)))
     stock = []
@@ -197,7 +211,9 @@ for title, text in sorted(stores.items()):
         on = obj_name(name)
         if on is None or count is None:
             log.append((title, name, "skipped stock line", f"obj={on} stock={f.get('stock', '')}")); continue
-        stock.append((on, int(count.group(0)), int(restock.group(0)) if restock else 100))
+        # The inv encoder stores restockCycles as an unsigned short and obj ids as shorts.
+        cycles = min(int(restock.group(0)) if restock else 100, MAX_RESTOCK_CYCLES)
+        stock.append((on, int(count.group(0)), cycles))
     general = "general store" in info.get("special", "").lower()
     if not stock and not general:
         stats["no_stock"] += 1; log.append((title, "", "no usable stock", "")); continue
@@ -209,7 +225,7 @@ used = set()
 for plan in sorted(plans, key=lambda p: (not p["general"], -len(p["stock"]), p["title"])):
     need = len(plan["stock"])
     tw = words(plan["title"])
-    cands = [(n, s) for n, s in shop_invs.items() if n not in used]
+    cands = [(n, s) for n, s in shop_invs.items() if n not in used] or         [(n, s) for n, s in spare_invs.items() if n not in used]
     if plan["general"]:
         # Numbered generalshopN first (generalshop2, generalshop3, ...), then any other 40-slot inv.
         cands = [c for c in cands if c[1] >= 40]
@@ -226,6 +242,15 @@ for plan in sorted(plans, key=lambda p: (not p["general"], -len(p["stock"]), p["
     used.add(best[0])
 
 done = [p for p in plans if p.get("inv")]
+# An npc can only have one Trade handler: the first store (by title) keeps it.
+registered = set()
+for plan in sorted(done, key=lambda p: p["title"]):
+    keep = [(n, op) for n, op in plan["npcs"] if n not in registered]
+    for n, _ in plan["npcs"]:
+        if n in registered: log.append((plan["title"], n, "npc already trades for another store", ""))
+    registered |= {n for n, _ in keep}
+    plan["npcs"] = keep
+done = [p for p in done if p["npcs"]]
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from OSRS Wiki store pages by tools/shops/wiki_shops_to_tsv.py - do not edit.\n")
     for plan in sorted(done, key=lambda p: p["title"]):
@@ -234,7 +259,57 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
         for n, op in plan["npcs"]: w.write(f"npc\t{n}\t{op}\n")
         for o, c, r in plan["stock"]: w.write(f"stock\t{o}\t{c}\t{r}\n")
         stats["shops"] += 1
-used_npcs = {n for p in done for n, _ in p["npcs"]}
+# Dialogue vendors: stores whose owner has no Trade op but sells fixed-price, unlimited items
+# (bartenders: "Beer - 2 coins"). Talk-to opens a buy dialogue. Stores needing ingredients
+# (extra table columns, e.g. the Apothecary) are skipped.
+vendors = []
+vendor_npcs = set()
+for title, text in sorted(stores.items()):
+    box = next(templates(text, "Infobox Shop"), None)
+    if box is None: continue
+    info = fields(strip_nested(box))
+    location = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", info.get("location", ""))
+    if locations and not any(l in location.lower() for l in locations): continue
+    head = fields(strip_nested(next(templates(text, "StoreTableHead"), "") or ""))
+    if (head.get("currency") or "coins").strip().lower() != "coins" or "column1" in head: continue
+    items = []
+    for body in templates(text, "StoreLine"):
+        f = fields(strip_nested(body))
+        price = re.fullmatch(r"\d+", f.get("sell", "") or "")
+        on = obj_name(f.get("name", ""))
+        if f.get("stock", "").lower() != "inf" or not price or int(price.group(0)) <= 0 or on is None:
+            items = None
+            break
+        items.append((on, int(price.group(0)), f.get("name", "")))
+    if not items: continue
+    om = re.search(r"\|\s*owner\s*=([^\n]*)", box)
+    for page in ([o.strip() for o in re.findall(r"\[\[([^|\]#]+)", om.group(1))] if om else []):
+        ids = owner_ids(page)
+        if any(npc_sym.get(i) in handled or npc_sym.get(i) in registered for i in ids): continue
+        # Talk-to is on almost every npc, so also require the cache name to match the page name
+        # (the wiki id for "Barman (Ratpit bar)" is a gambler in this cache).
+        base = re.sub(r"\s*\(.*\)$", "", page).strip().lower()
+        talkers = [i for i in ids if i in talk_op and i not in trade_op and npc_sym.get(i)
+                   and npc_display.get(i, "").strip().lower() == base]
+        if not talkers: continue
+        nid = next((i for i in talkers if i in spawned), talkers[0])
+        if npc_sym[nid] in vendor_npcs: continue
+        if nid not in spawned and any(i in spawned for i in ids): continue
+        if nid not in spawned and nid not in new_spawns:
+            coords = owner_coords(page)
+            if coords is None:
+                log.append((title, page, "vendor not spawned and page has no map coords", ""))
+                continue
+            new_spawns[nid] = coords
+        vendor_npcs.add(npc_sym[nid])
+        vendors.append((title, npc_sym[nid], talk_op[nid], items[:4]))
+        stats["vendors"] += 1
+with open(out_path, "a", encoding="utf-8", newline="\n") as w:
+    for title, n, op, items in vendors:
+        w.write(f"\nvendor\t{n}\t{op}\t{title}\n")
+        for o, price, label in items: w.write(f"item\t{o}\t{price}\t{label}\n")
+
+used_npcs = {n for p in done for n, _ in p["npcs"]} | vendor_npcs
 with open(spawns_out, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Shopkeepers spawned by tools/shops/wiki_shops_to_tsv.py (wiki {{Map}} point of the owner page).\n")
     for nid, coords in sorted(new_spawns.items(), key=lambda t: t[1]):
