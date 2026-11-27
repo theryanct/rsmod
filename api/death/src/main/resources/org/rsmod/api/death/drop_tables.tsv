@@ -471,7 +471,6 @@ main	565	18	18	0	1	92	# bloodrune
 main	11940	60	60	0	57	92	# wilderness_fishing_bait
 main	995	500	999	0	2	19	# coins
 main	447	3	7	1	1	46	# mithril_ore
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	11175,13666	# Araxyte / Level 96
 always	29784	1	1	0	# araxyte_venom_sack
@@ -1054,7 +1053,6 @@ main	995	80	80	0	1	64	# coins
 main	995	1	1	0	7	64	# coins
 main	2309	1	1	0	1	128	# bread
 sharedref	gem	3	128
-tertiary	11941	1	1	0	1	9	# looting_bag
 
 table	2839	# Black bear
 always	526	1	1	0	# bones
@@ -1112,7 +1110,6 @@ main	995	690	690	0	1	128	# coins
 main	19582	10	10	0	3	64	# dragon_javelin_head
 main	2361	1	1	0	3	128	# adamantite_bar
 main	1897	1	1	0	3	128	# chocolate_cake
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13510	1	1	0	1	35	# arceuus_corpse_dragon_initial
 tertiary	11286	1	1	0	1	10000	# dragonfire_visage
 
@@ -1153,7 +1150,6 @@ always	526	1	1	0	# bones
 table	2849	# Black unicorn
 always	526	1	1	0	# bones
 always	237	1	1	0	# unicorn_horn
-tertiary	11941	1	1	0	1	5	# looting_bag
 tertiary	13465	1	1	0	1	35	# arceuus_corpse_unicorn_initial
 
 table	3911	# Black unicorn Foal
@@ -1217,7 +1213,6 @@ main	532	3	3	0	1	46	# big_bones
 main	444	1	1	0	1	69	# gold_ore
 main	2293	1	1	0	1	46	# meat_pizza
 sharedref	gem	2	69
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13495	1	1	0	1	35	# arceuus_corpse_bloodveld_initial
 
 table	265,266,267,268,269,14103,14104	# Blue dragon
@@ -1778,7 +1773,6 @@ main	1291	1	1	0	1	128	# bronze_longsword
 main	231	1	1	0	1	128	# snape_grass
 main	1594	1	1	0	1	128	# unholy_symbol_mould
 sharedref	gem	1	128
-tertiary	11941	1	1	0	1	11	# looting_bag
 tertiary	13471	1	1	0	1	35	# arceuus_corpse_chaosdruid_initial
 
 table	532	# Chaos druid warrior
@@ -1829,7 +1823,6 @@ main	1985	1	1	0	1	128	# cheese
 main	2359	1	1	0	3	64	# mithril_bar
 main	1982	1	1	0	1	128	# tomato
 sharedref	gem	5	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	1173,1174,2804,2805,2806,3661,3662,10494,10495,10496,10497	# Chicken
 always	526	1	1	0	# bones
@@ -2286,7 +2279,6 @@ main	995	20	20	0	3	64	# coins
 main	995	30	30	0	1	64	# coins
 main	440	1	1	0	1	128	# iron_ore
 main	325	1	1	0	1	128	# sardine
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	11111	# Dark warrior / Great Kourend
 always	526	1	1	0	# bones
@@ -2362,10 +2354,8 @@ main	1444	1	1	0	1	128	# water_talisman
 main	1442	1	1	0	1	128	# fire_talisman
 main	3012	1	1	0	1	8	# 2dose1energy
 main	3008	1	1	0	3	128	# 4dose1energy
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	3021	# Deadly red spider
-tertiary	11941	1	1	0	1	4	# looting_bag
 
 table	459,12003	# Desert Lizard
 always	526	1	1	0	# bones
@@ -2859,7 +2849,6 @@ main	1637	1	1	0	1	64	# sapphire_ring
 sharedref	gem	1	64
 
 table	6594,7234	# Ent
-tertiary	21257	1	1	0	1	236	# slayer_enchantment
 
 table	4927	# Entrana firebird
 always	526	1	1	0	# bones
@@ -2923,7 +2912,6 @@ main	995	15	15	0	5	16	# coins
 main	1361	1	1	0	3	128	# black_axe
 main	1440	1	1	0	1	64	# earth_talisman
 sharedref	gem	1	32
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	626	# Fever spider
 always	6718	1	1	0	# deal_spider_body
@@ -2960,7 +2948,6 @@ main	379	1	1	0	3	128	# lobster
 main	2353	1	1	0	1	64	# steel_bar
 main	117	1	1	0	1	128	# 2dose1strength
 sharedref	rdt	1	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13474	1	1	0	1	20	# arceuus_corpse_giant_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	6800	1	1	0	1	5000	# champions_challenge_giant
@@ -3255,7 +3242,6 @@ main	438	1	1	0	1	128	# tin_ore
 sharedref	gem	1	128
 
 table	85,86,87,88,89,90,91,92,93,95,97,99,472,473,474,505,506,507,2531,2532,2533,2534,7263,7264	# Ghost
-tertiary	11941	1	1	0	1	7	# looting_bag
 
 table	289	# Ghoul
 always	526	1	1	0	# bones
@@ -3287,7 +3273,6 @@ sharedref	gem	1	128
 
 table	2834,6824	# Giant bat
 always	530	1	1	0	# bat_bones
-tertiary	11941	1	1	0	1	5	# looting_bag
 
 table	8700	# Giant frog / Level 13
 always	532	1	1	0	# big_bones
@@ -3341,10 +3326,8 @@ main	405	1	1	0	1	128	# casket
 table	2510,2511,2512,2856,2857,2858,2859,2860,2861,2862,2863,2864	# Giant rat / Low level
 always	526	1	1	0	# bones
 always	2134	1	1	0	# raw_rat_meat
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	2477,3017,3018	# Giant spider
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	5969,6094,6095,6096	# Gnome
 always	526	1	1	0	# bones
@@ -3466,7 +3449,6 @@ main	288	1	1	0	5	64	# goblin_armour
 main	1987	1	1	0	1	128	# grapes
 main	1007	1	1	0	1	128	# red_cape
 main	438	1	1	0	1	128	# tin_ore
-tertiary	11941	1	1	0	1	11	# looting_bag
 tertiary	13447	1	1	0	1	30	# arceuus_corpse_goblin_initial
 tertiary	6801	1	1	0	1	5000	# champions_challenge_goblin
 
@@ -3583,7 +3565,6 @@ main	995	11	11	0	5	128	# coins
 main	995	440	440	0	1	128	# coins
 main	365	1	1	0	3	128	# bass
 main	449	1	1	0	3	128	# adamantite_ore
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13510	1	1	0	1	35	# arceuus_corpse_dragon_initial
 
 table	7868,7869,7870	# Green dragon / Wilderness Slayer Cave
@@ -3632,7 +3613,6 @@ table	2838,3423	# Grizzly bear
 always	526	1	1	0	# bones
 always	948	1	1	0	# fur
 always	2136	1	1	0	# raw_bear_meat
-tertiary	11941	1	1	0	1	7	# looting_bag
 tertiary	13462	1	1	0	1	25	# arceuus_corpse_bear_initial
 
 table	3424	# Grizzly bear cub
@@ -4046,7 +4026,6 @@ main	560	20	20	0	3	50	# deathrune
 main	560	50	50	0	1	50	# deathrune
 main	13233	1	1	0	1	32768	# smouldering_stone
 tertiary	26996	1	1	0	1	40	# arceuus_corpse_hellhound_initial
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	3133	# Hellhound / God Wars Dungeon
 always	25769	1	1	0	# vile_ashes
@@ -4117,7 +4096,6 @@ main	225	1	1	0	11	128	# limpwurt_root
 main	1917	1	1	0	3	64	# beer
 main	1446	1	1	0	1	64	# body_talisman
 sharedref	gem	3	128
-tertiary	11941	1	1	0	1	5	# looting_bag
 tertiary	13474	1	1	0	1	25	# arceuus_corpse_giant_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	6800	1	1	0	1	5000	# champions_challenge_giant
@@ -4146,7 +4124,6 @@ main	995	42	42	0	3	128	# coins
 main	995	1	1	0	1	128	# coins
 main	225	1	1	0	11	64	# limpwurt_root
 main	288	1	1	0	5	128	# goblin_armour
-tertiary	11941	1	1	0	1	5	# looting_bag
 tertiary	6802	1	1	0	1	5000	# champions_challenge_hobgoblin
 
 table	2241,3050,3289	# Hobgoblin / Armed
@@ -4256,7 +4233,6 @@ main	1993	1	1	0	3	128	# jug_wine
 main	447	1	1	0	1	128	# mithril_ore
 main	1963	1	1	0	1	128	# banana
 tertiary	13474	1	1	0	1	21	# arceuus_corpse_giant_initial
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	6800	1	1	0	1	5000	# champions_challenge_giant
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
@@ -4282,14 +4258,12 @@ main	560	3	3	0	1	62	# deathrune
 main	995	100	100	0	3	31	# coins
 main	1993	1	1	0	3	62	# jug_wine
 main	447	3	3	1	1	62	# mithril_ore
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13474	1	1	0	1	21	# arceuus_corpse_giant_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	6800	1	1	0	1	5000	# champions_challenge_giant
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	3022,10722,13798	# Ice spider
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	650,652,653,701,703,704	# Ice troll
 always	532	1	1	0	# big_bones
@@ -4475,7 +4449,6 @@ sharedref	herb	5	64
 sharedref	uncommonseed	9	64
 main	995	15	15	0	39	128	# coins
 sharedref	gem	3	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	645,646,647,710,711,712,713,714,715	# Ice wolf
 always	2859	1	1	0	# wolf_bones
@@ -4486,7 +4459,6 @@ main	555	1	5	0	1	32	# waterrune
 main	995	1	30	0	1	32	# coins
 main	995	1	20	0	1	32	# coins
 sharedref	gem	3	128
-tertiary	11941	1	1	0	1	8	# looting_bag
 tertiary	29895	5	5	0	1	150	# frozen_tear
 
 table	853,854,855	# Icelord
@@ -4528,7 +4500,6 @@ main	1947	1	1	0	3	128	# grain
 main	1949	1	1	0	1	64	# chefs_hat
 main	956	1	1	0	1	64	# flier
 tertiary	13453	1	1	0	1	25	# arceuus_corpse_imp_initial
-tertiary	11941	1	1	0	1	15	# looting_bag
 tertiary	6803	1	1	0	1	5000	# champions_challenge_imp
 
 table	2614	# Imre
@@ -5023,7 +4994,6 @@ main	6159	1	1	0	1	64	# dagganoth_melee_body_part
 sharedref	gem	1	128
 
 table	3027	# King Scorpion
-tertiary	11941	1	1	0	1	4	# looting_bag
 tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 
 table	3297,8854,11902,11936	# Knight of Ardougne
@@ -5031,7 +5001,6 @@ always	526	1	1	0	# bones
 
 table	2214	# Knight of Saradomin
 always	526	1	1	0	# bones
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	13114,13115,13116,13117,13118,13119	# Knight of Varlamore
 always	526	1	1	0	# bones
@@ -5519,7 +5488,6 @@ main	1365	1	1	0	1	50	# steel_battleaxe
 main	1369	1	1	0	1	50	# mithril_battleaxe
 main	1371	1	1	0	1	125	# adamant_battleaxe
 main	1373	1	1	0	1	500	# rune_battleaxe
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	6604	# Mammoth
 always	532	1	1	0	# big_bones
@@ -5582,7 +5550,6 @@ main	313	1	1	0	5	128	# fishing_bait
 main	436	1	1	0	1	64	# copper_ore
 main	1440	1	1	0	1	64	# earth_talisman
 main	1965	1	1	0	1	128	# cabbage
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	3298	# Man (East Ardougne)
 always	526	1	1	0	# bones
@@ -5759,7 +5726,6 @@ table	527,528,529,8401,8698	# Monk of Zamorak
 always	526	1	1	0	# bones
 main	1033	1	1	0	1	20	# zamrobebottom
 main	1035	1	1	0	1	20	# zamrobetop
-tertiary	11941	1	1	0	1	6	# looting_bag
 
 table	3485	# Monk of Zamorak (Paterdomus)
 always	526	1	1	0	# bones
@@ -5871,7 +5837,6 @@ main	995	300	300	0	1	64	# coins
 main	2353	1	1	0	3	64	# steel_bar
 main	453	1	1	0	1	128	# coal
 main	1969	1	1	0	1	128	# spinach_roll
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13474	1	1	0	1	24	# arceuus_corpse_giant_initial
 tertiary	22374	1	1	0	1	150	# mossy_key
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
@@ -6164,7 +6129,6 @@ always	3363	1	1	0	# snail_corpse1
 table	136,1153,2095,2096,2233	# Ogre
 always	532	1	1	0	# big_bones
 sharedref	uncommonseed	19	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 tertiary	13477	1	1	0	1	30	# arceuus_corpse_ogre_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
@@ -6272,7 +6236,6 @@ main	995	8	8	0	5	128	# coins
 main	995	12	12	0	5	128	# coins
 main	995	23	23	0	5	128	# coins
 main	946	1	1	0	5	128	# knife
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	13006	# Oryx
 always	526	1	1	0	# bones
@@ -6411,7 +6374,6 @@ main	1025	1	1	0	3	32	# eye_patch
 main	1949	1	1	0	1	128	# chefs_hat
 main	2351	1	1	0	1	128	# iron_bar
 sharedref	gem	1	128
-tertiary	11941	1	1	0	1	6	# looting_bag
 
 table	4926	# Pirate Guard
 always	526	1	1	0	# bones
@@ -6423,7 +6385,6 @@ table	3025	# Poison Scorpion
 tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 
 table	3023,11999	# Poison spider
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	4758	# Poltenip
 always	526	1	1	0	# bones
@@ -6458,7 +6419,6 @@ main	995	450	450	0	1	64	# coins
 main	444	1	1	0	1	16	# gold_ore
 main	1993	1	1	0	1	64	# jug_wine
 sharedref	gem	3	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	6762,6795	# Pyrelord
 always	25766	1	1	0	# fiendish_ashes
@@ -6501,7 +6461,6 @@ table	3681	# Rannveig
 always	526	1	1	0	# bones
 
 table	2854,2855	# Rat / Regular
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	2492,2513	# Rat / Stronghold of Security
 always	526	1	1	0	# bones
@@ -6720,12 +6679,10 @@ table	7546	# Scavenger runt
 always	526	1	1	0	# bones
 
 table	6616	# Scorpia's offspring (monster)
-tertiary	11941	1	1	0	1	10	# looting_bag
 tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 
 table	2480,3024,5242,13001	# Scorpion
 always	4569	1	1	0	# dwarf_rock_page1
-tertiary	11941	1	1	0	1	10	# looting_bag
 tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 
 table	1098	# Sea Snake Hatchling
@@ -6820,7 +6777,6 @@ main	546	1	1	0	1	4	# blackrobetop
 main	548	1	1	0	1	4	# blackrobebottom
 
 table	3016	# Shadow spider
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	2853	# Shadow warrior
 main	1245	1	1	0	1	128	# adamant_spear
@@ -6905,12 +6861,10 @@ main	1203	1	1	0	3	64	# iron_dagger
 main	1442	1	1	0	1	64	# fire_talisman
 main	440	1	1	0	1	128	# iron_ore
 main	1947	1	1	0	1	128	# grain
-tertiary	11941	1	1	0	1	14	# looting_bag
 tertiary	6806	1	1	0	1	5000	# champions_challenge_skeleton
 
 table	71,72,73,75,76,78,79,80,81,83,14426,14427,14428	# Skeleton / Plain
 always	526	1	1	0	# bones
-tertiary	11941	1	1	0	1	6	# looting_bag
 tertiary	6806	1	1	0	1	5000	# champions_challenge_skeleton
 
 table	77,82	# Skeleton / Armed
@@ -6932,7 +6886,6 @@ main	995	45	45	0	1	32	# coins
 main	995	65	65	0	3	128	# coins
 main	995	1	1	0	1	64	# coins
 main	2349	1	1	0	5	128	# bronze_bar
-tertiary	11941	1	1	0	1	14	# looting_bag
 tertiary	6806	1	1	0	1	5000	# champions_challenge_skeleton
 
 table	7265	# Skeleton (Catacombs of Kourend)
@@ -7503,7 +7456,6 @@ sharedref	gem	1	64
 tertiary	11941	1	1	0	1	4	# looting_bag
 
 table	2478,3019	# Spider
-tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	5947,5961,5963	# Spinolyp
 always	526	1	1	0	# bones
@@ -7533,7 +7485,6 @@ main	175	5	5	1	5	128	# 3doseantipoison
 main	11840	1	1	0	1	128	# dragon_boots
 sharedref	gem	1	64
 sharedref	gem	1	128
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	11292	# Spiritual mage / Zaros
 main	26225	1	1	0	1	640	# ancient_ceremonial_mask
@@ -7589,7 +7540,6 @@ main	687	1	1	0	1	138	# digsitearrow
 main	56	12	12	0	3	46	# unstrung_oak_longbow
 sharedref	usefulherb	5	69
 sharedref	gem	1	138
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	11291	# Spiritual ranger / Zaros
 main	26225	1	1	0	1	640	# ancient_ceremonial_mask
@@ -7642,7 +7592,6 @@ main	1201	1	1	0	128	17653	# rune_kiteshield
 sharedref	gem	512	17653
 sharedref	usefulherb	10	139
 sharedref	gem	1	139
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	11290	# Spiritual warrior / Zaros
 main	26225	1	1	0	1	640	# ancient_ceremonial_mask
@@ -8843,7 +8792,6 @@ main	995	364	364	0	5	128	# coins
 main	958	1	1	0	25	128	# grey_wolf_fur
 main	6814	1	1	0	25	128	# werewolve_fur
 sharedref	gem	1	256
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	1798,11948	# White Knight / Level 36
 always	526	1	1	0	# bones
@@ -8908,7 +8856,6 @@ always	29218	1	1	0	# varlamore_jaguar_fur
 
 table	107,108	# White wolf
 always	2859	1	1	0	# wolf_bones
-tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	112	# Wild dog
 always	526	1	1	0	# bones
@@ -8947,7 +8894,6 @@ main	995	30	30	0	1	128	# coins
 
 table	106,110,2491,3912	# Wolf
 always	2859	1	1	0	# wolf_bones
-tertiary	11941	1	1	0	1	6	# looting_bag
 
 table	3111,3112,3113,6990,6991,6992,10728,11053,11054	# Woman
 always	526	1	1	0	# bones
