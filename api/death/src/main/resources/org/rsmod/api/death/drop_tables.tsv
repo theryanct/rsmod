@@ -214,12 +214,50 @@ main	13507	1	1	0	1	25	# arceuus_corpse_abyssal_initial
 main	7979	1	1	0	1	6000	# poh_trophydrop_abyssaldemon
 
 table	1298	# Afflicted
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 tertiary	6807	1	1	0	1	5000	# champions_challenge_zombie
 
 table	1559	# Air wizard
 always	592	1	1	0	# ashes
 main	556	5	10	0	19	20	# airrune
 main	1438	1	1	0	1	20	# air_talisman
+
+table	3292	# Al Kharid warrior
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	1039	# Albino bat
 always	530	1	1	0	# bat_bones
@@ -391,6 +429,26 @@ sharedref	gem	1	64
 
 table	4689,4690	# Angry giant rat
 always	526	1	1	0	# bones
+
+table	3285	# Anja
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	2514,2515,2516,2517,6608,7257	# Ankou
 sharedref	herb	3	100
@@ -574,7 +632,6 @@ main	563	3	3	0	1	64	# lawrune
 main	565	2	2	0	1	128	# bloodrune
 main	558	2	2	0	1	128	# mindrune
 main	561	2	2	0	1	128	# naturerune
-main	995	10	10	0	37	128	# coins
 main	995	35	35	0	13	64	# coins
 main	995	12	12	0	13	128	# coins
 main	995	53	53	0	5	64	# coins
@@ -951,55 +1008,52 @@ sharedref	gem	1	128
 
 table	301	# Black Heather
 always	526	1	1	0	# bones
-main	1295	1	1	0	1	141	# steel_longsword
-main	1157	1	1	0	1	141	# steel_full_helm
-main	563	2	2	0	4	141	# lawrune
-main	561	4	4	0	4	141	# naturerune
-main	559	12	12	0	1	47	# bodyrune
-main	562	3	3	0	1	47	# chaosrune
-main	555	30	30	0	1	47	# waterrune
-main	558	5	5	0	1	141	# mindrune
-sharedref	herb	5	47
-main	995	48	48	0	10	47	# coins
-main	995	15	15	0	6	47	# coins
-main	995	10	10	0	5	47	# coins
-main	995	8	8	0	11	141	# coins
-main	995	70	70	0	10	141	# coins
-main	995	5	5	0	5	141	# coins
-main	995	150	150	0	2	141	# coins
-main	442	1	1	0	11	141	# silver_ore
-main	373	5	5	1	2	141	# swordfish
-sharedref	gem	2	141
+main	1295	1	1	0	1	128	# steel_longsword
+main	1157	1	1	0	1	128	# steel_full_helm
+main	563	2	2	0	1	32	# lawrune
+main	561	4	4	0	1	32	# naturerune
+main	559	12	12	0	3	128	# bodyrune
+main	562	3	3	0	3	128	# chaosrune
+main	555	30	30	0	3	128	# waterrune
+main	558	5	5	0	1	128	# mindrune
+sharedref	herb	15	128
+main	995	48	48	0	15	64	# coins
+main	995	15	15	0	9	64	# coins
+main	995	8	8	0	11	128	# coins
+main	995	70	70	0	5	64	# coins
+main	995	5	5	0	5	128	# coins
+main	995	150	150	0	1	64	# coins
+main	442	1	1	0	11	128	# silver_ore
+main	373	5	5	1	1	64	# swordfish
+sharedref	gem	1	64
 tertiary	11941	1	1	0	1	4	# looting_bag
 
 table	517,4331,11953	# Black Knight
 always	526	1	1	0	# bones
-main	1279	1	1	0	4	147	# iron_sword
-main	1153	1	1	0	2	147	# iron_full_helm
-main	1424	1	1	0	1	147	# steel_mace
-main	888	3	3	0	4	147	# mithril_arrow
-main	559	9	9	0	1	49	# bodyrune
-main	562	6	6	0	1	49	# chaosrune
-main	557	10	10	0	1	49	# earthrune
-main	560	2	2	0	2	147	# deathrune
-main	563	3	3	0	2	147	# lawrune
-main	564	7	7	0	1	147	# cosmicrune
-main	558	2	2	0	1	147	# mindrune
-sharedref	herb	1	49
-sharedref	generalseed	6	49
-main	2353	1	1	0	2	49	# steel_bar
-main	438	1	1	0	1	147	# tin_ore
-main	1933	1	1	0	1	147	# pot_flour
-main	995	35	35	0	1	7	# coins
-main	995	5	5	0	6	49	# coins
-main	995	6	6	0	11	147	# coins
-main	995	58	58	0	10	147	# coins
-main	995	12	12	0	3	49	# coins
-main	995	10	10	0	1	49	# coins
-main	995	80	80	0	2	147	# coins
-main	995	1	1	0	2	21	# coins
-main	2309	1	1	0	1	147	# bread
-sharedref	gem	1	49
+main	1279	1	1	0	1	32	# iron_sword
+main	1153	1	1	0	1	64	# iron_full_helm
+main	1424	1	1	0	1	128	# steel_mace
+main	888	3	3	0	1	32	# mithril_arrow
+main	559	9	9	0	3	128	# bodyrune
+main	562	6	6	0	3	128	# chaosrune
+main	557	10	10	0	3	128	# earthrune
+main	560	2	2	0	1	64	# deathrune
+main	563	3	3	0	1	64	# lawrune
+main	564	7	7	0	1	128	# cosmicrune
+main	558	2	2	0	1	128	# mindrune
+sharedref	herb	3	128
+sharedref	generalseed	9	64
+main	2353	1	1	0	3	64	# steel_bar
+main	438	1	1	0	1	128	# tin_ore
+main	1933	1	1	0	1	128	# pot_flour
+main	995	35	35	0	21	128	# coins
+main	995	6	6	0	11	128	# coins
+main	995	58	58	0	5	64	# coins
+main	995	12	12	0	9	128	# coins
+main	995	80	80	0	1	64	# coins
+main	995	1	1	0	7	64	# coins
+main	2309	1	1	0	1	128	# bread
+sharedref	gem	3	128
 tertiary	11941	1	1	0	1	9	# looting_bag
 
 table	2839	# Black bear
@@ -1281,6 +1335,26 @@ sharedref	gem	1	512
 table	1224	# Bouncer
 always	25769	1	1	0	# vile_ashes
 
+table	4107	# Breoca
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
+
 table	3685	# Broddi
 always	526	1	1	0	# bones
 
@@ -1482,11 +1556,9 @@ main	564	2	2	0	3	101	# cosmicrune
 main	888	5	14	0	4	101	# mithril_arrow
 sharedref	herb	3	101
 sharedref	allotmentseed	1	101
-main	1436	15	15	1	5	101	# blankrune
 main	7936	15	15	1	5	101	# blankrune_high
 main	221	1	1	0	7	101	# eye_of_newt
 main	453	3	7	1	2	101	# coal
-main	995	10	10	0	4	101	# coins
 main	995	15	15	0	6	101	# coins
 main	995	44	44	0	12	101	# coins
 main	995	5	104	0	10	101	# coins
@@ -1649,6 +1721,26 @@ main	596	1	1	0	11	128	# torch_unlit
 main	4540	1	1	0	1	128	# oil_lantern_frame
 main	2357	1	1	0	1	64	# gold_bar
 sharedref	gem	1	32
+
+table	4111	# Ceolburg
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	10689	# Chaos Golem
 main	434	3	4	0	3	26	# clay
@@ -1867,6 +1959,26 @@ sharedref	gem	1	64
 
 table	4184,11581	# Crocodile / On water
 always	526	1	1	0	# bones
+
+table	3279	# Cuffs
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	2463,2465,2467	# Cyclops / Warriors' Guild Rooftop
 always	532	1	1	0	# big_bones
@@ -2171,7 +2283,6 @@ main	995	2	2	0	5	32	# coins
 main	995	6	6	0	5	32	# coins
 main	995	13	13	0	7	128	# coins
 main	995	20	20	0	3	64	# coins
-main	995	10	10	0	3	128	# coins
 main	995	30	30	0	1	64	# coins
 main	440	1	1	0	1	128	# iron_ore
 main	325	1	1	0	1	128	# sardine
@@ -2297,25 +2408,24 @@ always	2859	1	1	0	# wolf_bones
 
 table	302	# Donny the lad
 always	526	1	1	0	# bones
-main	1295	1	1	0	1	141	# steel_longsword
-main	1157	1	1	0	1	141	# steel_full_helm
-main	563	2	2	0	4	141	# lawrune
-main	561	4	4	0	4	141	# naturerune
-main	559	12	12	0	1	47	# bodyrune
-main	562	3	3	0	1	47	# chaosrune
-main	555	30	30	0	1	47	# waterrune
-main	558	5	5	0	1	141	# mindrune
-sharedref	herb	5	47
-main	995	48	48	0	10	47	# coins
-main	995	15	15	0	6	47	# coins
-main	995	10	10	0	5	47	# coins
-main	995	8	8	0	11	141	# coins
-main	995	70	70	0	10	141	# coins
-main	995	5	5	0	5	141	# coins
-main	995	150	150	0	2	141	# coins
-main	442	1	1	0	11	141	# silver_ore
-main	373	5	5	1	2	141	# swordfish
-sharedref	gem	2	141
+main	1295	1	1	0	1	128	# steel_longsword
+main	1157	1	1	0	1	128	# steel_full_helm
+main	563	2	2	0	1	32	# lawrune
+main	561	4	4	0	1	32	# naturerune
+main	559	12	12	0	3	128	# bodyrune
+main	562	3	3	0	3	128	# chaosrune
+main	555	30	30	0	3	128	# waterrune
+main	558	5	5	0	1	128	# mindrune
+sharedref	herb	15	128
+main	995	48	48	0	15	64	# coins
+main	995	15	15	0	9	64	# coins
+main	995	8	8	0	11	128	# coins
+main	995	70	70	0	5	64	# coins
+main	995	5	5	0	5	128	# coins
+main	995	150	150	0	1	64	# coins
+main	442	1	1	0	11	128	# silver_ore
+main	373	5	5	1	1	64	# swordfish
+sharedref	gem	1	64
 tertiary	11941	1	1	0	1	4	# looting_bag
 
 table	8612,8613	# Drake
@@ -2365,6 +2475,26 @@ main	540	1	1	0	3	64	# druidrobetop
 main	538	1	1	0	5	128	# druidrobebottom
 main	225	1	1	0	3	128	# limpwurt_root
 main	175	1	1	0	1	128	# 3doseantipoison
+
+table	3263	# Drunken man
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	3607,3608,3609	# Dungeon rat / Normal
 always	526	1	1	0	# bones
@@ -3274,7 +3404,6 @@ main	995	8	8	0	17	64	# coins
 main	995	5	5	0	1	16	# coins
 main	995	16	16	0	7	128	# coins
 main	995	24	24	0	3	128	# coins
-main	995	10	10	0	1	64	# coins
 main	3012	1	1	0	13	128	# 2dose1energy
 main	288	1	1	0	5	64	# goblin_armour
 main	2347	1	1	0	9	128	# hammer
@@ -3287,30 +3416,29 @@ tertiary	6801	1	1	0	1	5000	# champions_challenge_goblin
 
 table	655,656,657,658,659,660,661	# Goblin (Goblin Village)
 always	526	1	1	0	# bones
-main	1351	1	1	0	1	44	# bronze_axe
-main	1321	1	1	0	1	132	# bronze_scimitar
-main	1237	1	1	0	3	44	# bronze_spear
-main	882	7	7	0	1	44	# bronze_arrow
-main	558	2	2	0	1	44	# mindrune
-main	557	4	4	0	1	44	# earthrune
-main	559	2	2	0	1	44	# bodyrune
-main	825	5	5	0	1	66	# bronze_javelin
-main	562	1	1	0	1	132	# chaosrune
-main	561	1	1	0	1	132	# naturerune
-sharedref	herb	1	66
-main	995	8	8	0	17	66	# coins
-main	995	5	5	0	2	33	# coins
-main	995	16	16	0	7	132	# coins
-main	995	24	24	0	1	44	# coins
-main	995	10	10	0	1	66	# coins
-main	3012	1	1	0	13	132	# 2dose1energy
-main	9054	1	1	0	5	66	# goblin_armour_red
-main	9057	1	1	0	5	66	# goblin_armour_green
-main	2347	1	1	0	3	44	# hammer
-main	10999	1	1	0	1	66	# slice_goblin_history_book
-main	1987	1	1	0	1	132	# grapes
-main	1007	1	1	0	1	132	# red_cape
-main	438	1	1	0	1	132	# tin_ore
+main	1351	1	1	0	3	130	# bronze_axe
+main	1321	1	1	0	1	130	# bronze_scimitar
+main	1237	1	1	0	9	130	# bronze_spear
+main	882	7	7	0	3	130	# bronze_arrow
+main	558	2	2	0	3	130	# mindrune
+main	557	4	4	0	3	130	# earthrune
+main	559	2	2	0	3	130	# bodyrune
+main	825	5	5	0	1	65	# bronze_javelin
+main	562	1	1	0	1	130	# chaosrune
+main	561	1	1	0	1	130	# naturerune
+sharedref	herb	1	65
+main	995	8	8	0	17	65	# coins
+main	995	5	5	0	4	65	# coins
+main	995	16	16	0	7	130	# coins
+main	995	24	24	0	3	130	# coins
+main	3012	1	1	0	1	10	# 2dose1energy
+main	9054	1	1	0	1	13	# goblin_armour_red
+main	9057	1	1	0	1	13	# goblin_armour_green
+main	2347	1	1	0	9	130	# hammer
+main	10999	1	1	0	1	65	# slice_goblin_history_book
+main	1987	1	1	0	1	130	# grapes
+main	1007	1	1	0	1	130	# red_cape
+main	438	1	1	0	1	130	# tin_ore
 tertiary	13447	1	1	0	1	30	# arceuus_corpse_goblin_initial
 tertiary	6801	1	1	0	1	5000	# champions_challenge_goblin
 
@@ -3359,7 +3487,6 @@ main	995	8	8	0	17	64	# coins
 main	995	5	5	0	1	16	# coins
 main	995	16	16	0	7	128	# coins
 main	995	24	24	0	3	128	# coins
-main	995	10	10	0	1	64	# coins
 main	3012	1	1	0	13	128	# 2dose1energy
 main	288	1	1	0	5	64	# goblin_armour
 main	2347	1	1	0	9	128	# hammer
@@ -3535,30 +3662,29 @@ tertiary	26364	1	1	0	1	20	# nex_frozen_key_saradomin
 
 table	3010,3011,3254,3269,3270,3272,3273,3274,5418,11911,11912,11913,11914,11915,11916,11917,11922,11923,11924,11937,11938,11939,11942,11943,11944,11945,11947	# Guard
 always	526	1	1	0	# bones
-main	9140	2	12	0	5	69	# xbows_crossbow_bolts_iron
-main	886	1	1	0	2	69	# steel_arrow
-main	882	1	1	0	1	46	# bronze_arrow
-main	556	6	6	0	1	69	# airrune
-main	557	3	3	0	1	69	# earthrune
-main	554	2	2	0	1	69	# firerune
-main	565	1	1	0	1	138	# bloodrune
-main	562	1	1	0	1	138	# chaosrune
-main	561	1	1	0	1	138	# naturerune
-main	886	5	5	0	1	138	# steel_arrow
-main	882	2	2	0	1	69	# bronze_arrow
-sharedref	generalseed	3	23
-main	995	1	1	0	19	138	# coins
-main	995	7	7	0	8	69	# coins
-main	995	5	5	0	3	23	# coins
-main	995	12	12	0	3	46	# coins
-main	995	4	4	0	4	69	# coins
-main	995	25	25	0	2	69	# coins
-main	995	17	17	0	2	69	# coins
-main	995	30	30	0	1	69	# coins
-main	1203	1	1	0	1	23	# iron_dagger
-main	1446	1	1	0	1	46	# body_talisman
-main	1947	1	1	0	1	138	# grain
-main	440	1	1	0	1	138	# iron_ore
+main	9140	2	12	0	5	64	# xbows_crossbow_bolts_iron
+main	886	1	1	0	1	32	# steel_arrow
+main	882	1	1	0	3	128	# bronze_arrow
+main	556	6	6	0	1	64	# airrune
+main	557	3	3	0	1	64	# earthrune
+main	554	2	2	0	1	64	# firerune
+main	565	1	1	0	1	128	# bloodrune
+main	562	1	1	0	1	128	# chaosrune
+main	561	1	1	0	1	128	# naturerune
+main	886	5	5	0	1	128	# steel_arrow
+main	882	2	2	0	1	64	# bronze_arrow
+sharedref	generalseed	9	64
+main	995	1	1	0	19	128	# coins
+main	995	7	7	0	1	8	# coins
+main	995	12	12	0	9	128	# coins
+main	995	4	4	0	1	16	# coins
+main	995	25	25	0	1	32	# coins
+main	995	17	17	0	1	32	# coins
+main	995	30	30	0	1	64	# coins
+main	1203	1	1	0	3	64	# iron_dagger
+main	1446	1	1	0	3	128	# body_talisman
+main	1947	1	1	0	1	128	# grain
+main	440	1	1	0	1	128	# iron_ore
 
 table	13986,13987,13988,13989,13990,13991,13992,13993	# Guard (Aldarin)
 always	526	1	1	0	# bones
@@ -3647,30 +3773,29 @@ tertiary	6801	1	1	0	1	5000	# champions_challenge_goblin
 
 table	3283	# Guard (Doric's hut)
 always	526	1	1	0	# bones
-main	9140	2	12	0	5	69	# xbows_crossbow_bolts_iron
-main	886	1	1	0	2	69	# steel_arrow
-main	882	1	1	0	1	46	# bronze_arrow
-main	556	6	6	0	1	69	# airrune
-main	557	3	3	0	1	69	# earthrune
-main	554	2	2	0	1	69	# firerune
-main	565	1	1	0	1	138	# bloodrune
-main	562	1	1	0	1	138	# chaosrune
-main	561	1	1	0	1	138	# naturerune
-main	886	5	5	0	1	138	# steel_arrow
-main	882	2	2	0	1	69	# bronze_arrow
-sharedref	generalseed	3	23
-main	995	1	1	0	19	138	# coins
-main	995	7	7	0	8	69	# coins
-main	995	5	5	0	3	23	# coins
-main	995	12	12	0	3	46	# coins
-main	995	4	4	0	4	69	# coins
-main	995	25	25	0	2	69	# coins
-main	995	17	17	0	2	69	# coins
-main	995	30	30	0	1	69	# coins
-main	1203	1	1	0	1	23	# iron_dagger
-main	1446	1	1	0	1	46	# body_talisman
-main	1947	1	1	0	1	138	# grain
-main	440	1	1	0	1	138	# iron_ore
+main	9140	2	12	0	5	64	# xbows_crossbow_bolts_iron
+main	886	1	1	0	1	32	# steel_arrow
+main	882	1	1	0	3	128	# bronze_arrow
+main	556	6	6	0	1	64	# airrune
+main	557	3	3	0	1	64	# earthrune
+main	554	2	2	0	1	64	# firerune
+main	565	1	1	0	1	128	# bloodrune
+main	562	1	1	0	1	128	# chaosrune
+main	561	1	1	0	1	128	# naturerune
+main	886	5	5	0	1	128	# steel_arrow
+main	882	2	2	0	1	64	# bronze_arrow
+sharedref	generalseed	9	64
+main	995	1	1	0	19	128	# coins
+main	995	7	7	0	1	8	# coins
+main	995	12	12	0	9	128	# coins
+main	995	4	4	0	1	16	# coins
+main	995	25	25	0	1	32	# coins
+main	995	17	17	0	1	32	# coins
+main	995	30	30	0	1	64	# coins
+main	1203	1	1	0	3	64	# iron_dagger
+main	1446	1	1	0	3	128	# body_talisman
+main	1947	1	1	0	1	128	# grain
+main	440	1	1	0	1	128	# iron_ore
 
 table	397,398	# Guard (Hosidius)
 always	526	1	1	0	# bones
@@ -3699,30 +3824,29 @@ main	440	1	1	0	1	128	# iron_ore
 
 table	1546,1547,1548,1549,1550	# Guard (Port Sarim jail)
 always	526	1	1	0	# bones
-main	9140	2	12	0	5	69	# xbows_crossbow_bolts_iron
-main	886	1	1	0	2	69	# steel_arrow
-main	882	1	1	0	1	46	# bronze_arrow
-main	556	6	6	0	1	69	# airrune
-main	557	3	3	0	1	69	# earthrune
-main	554	2	2	0	1	69	# firerune
-main	565	1	1	0	1	138	# bloodrune
-main	562	1	1	0	1	138	# chaosrune
-main	561	1	1	0	1	138	# naturerune
-main	886	5	5	0	1	138	# steel_arrow
-main	882	2	2	0	1	69	# bronze_arrow
-sharedref	generalseed	3	23
-main	995	1	1	0	19	138	# coins
-main	995	7	7	0	8	69	# coins
-main	995	5	5	0	3	23	# coins
-main	995	12	12	0	3	46	# coins
-main	995	4	4	0	4	69	# coins
-main	995	25	25	0	2	69	# coins
-main	995	17	17	0	2	69	# coins
-main	995	30	30	0	1	69	# coins
-main	1203	1	1	0	1	23	# iron_dagger
-main	1446	1	1	0	1	46	# body_talisman
-main	1947	1	1	0	1	138	# grain
-main	440	1	1	0	1	138	# iron_ore
+main	9140	2	12	0	5	64	# xbows_crossbow_bolts_iron
+main	886	1	1	0	1	32	# steel_arrow
+main	882	1	1	0	3	128	# bronze_arrow
+main	556	6	6	0	1	64	# airrune
+main	557	3	3	0	1	64	# earthrune
+main	554	2	2	0	1	64	# firerune
+main	565	1	1	0	1	128	# bloodrune
+main	562	1	1	0	1	128	# chaosrune
+main	561	1	1	0	1	128	# naturerune
+main	886	5	5	0	1	128	# steel_arrow
+main	882	2	2	0	1	64	# bronze_arrow
+sharedref	generalseed	9	64
+main	995	1	1	0	19	128	# coins
+main	995	7	7	0	1	8	# coins
+main	995	12	12	0	9	128	# coins
+main	995	4	4	0	1	16	# coins
+main	995	25	25	0	1	32	# coins
+main	995	17	17	0	1	32	# coins
+main	995	30	30	0	1	64	# coins
+main	1203	1	1	0	3	64	# iron_dagger
+main	1446	1	1	0	3	128	# body_talisman
+main	1947	1	1	0	1	128	# grain
+main	440	1	1	0	1	128	# iron_ore
 
 table	9182,9183,9184,9185,9186,9187,9188,9189	# Guard (Prifddinas)
 always	526	1	1	0	# bones
@@ -3781,30 +3905,29 @@ main	440	1	1	0	1	128	# iron_ore
 
 table	14716,14717,14718,14719,14720,14721,14722,14723	# Guard (Tlati Rainforest)
 always	526	1	1	0	# bones
-main	9140	2	12	0	5	69	# xbows_crossbow_bolts_iron
-main	886	1	1	0	2	69	# steel_arrow
-main	882	1	1	0	1	46	# bronze_arrow
-main	556	6	6	0	1	69	# airrune
-main	557	3	3	0	1	69	# earthrune
-main	554	2	2	0	1	69	# firerune
-main	565	1	1	0	1	138	# bloodrune
-main	562	1	1	0	1	138	# chaosrune
-main	561	1	1	0	1	138	# naturerune
-main	886	5	5	0	1	138	# steel_arrow
-main	882	2	2	0	1	69	# bronze_arrow
-sharedref	generalseed	3	23
-main	995	1	1	0	19	138	# coins
-main	995	7	7	0	8	69	# coins
-main	995	5	5	0	3	23	# coins
-main	995	12	12	0	3	46	# coins
-main	995	4	4	0	4	69	# coins
-main	995	25	25	0	2	69	# coins
-main	995	17	17	0	2	69	# coins
-main	995	30	30	0	1	69	# coins
-main	1203	1	1	0	1	23	# iron_dagger
-main	1446	1	1	0	1	46	# body_talisman
-main	1947	1	1	0	1	138	# grain
-main	440	1	1	0	1	138	# iron_ore
+main	9140	2	12	0	5	64	# xbows_crossbow_bolts_iron
+main	886	1	1	0	1	32	# steel_arrow
+main	882	1	1	0	3	128	# bronze_arrow
+main	556	6	6	0	1	64	# airrune
+main	557	3	3	0	1	64	# earthrune
+main	554	2	2	0	1	64	# firerune
+main	565	1	1	0	1	128	# bloodrune
+main	562	1	1	0	1	128	# chaosrune
+main	561	1	1	0	1	128	# naturerune
+main	886	5	5	0	1	128	# steel_arrow
+main	882	2	2	0	1	64	# bronze_arrow
+sharedref	generalseed	9	64
+main	995	1	1	0	19	128	# coins
+main	995	7	7	0	1	8	# coins
+main	995	12	12	0	9	128	# coins
+main	995	4	4	0	1	16	# coins
+main	995	25	25	0	1	32	# coins
+main	995	17	17	0	1	32	# coins
+main	995	30	30	0	1	64	# coins
+main	1203	1	1	0	3	64	# iron_dagger
+main	1446	1	1	0	3	128	# body_talisman
+main	1947	1	1	0	1	128	# grain
+main	440	1	1	0	1	128	# iron_ore
 
 table	13100,13101,13102,13103,13104,13105,13106,13107,13108,13109	# Guard (Varlamore)
 always	526	1	1	0	# bones
@@ -3935,6 +4058,26 @@ main	13233	1	1	0	1	16384	# smouldering_stone
 tertiary	26996	1	1	0	1	40	# arceuus_corpse_hellhound_initial
 tertiary	11941	1	1	0	1	3	# looting_bag
 
+table	3284	# Hengel
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
+
 table	3295,11934,11935	# Hero
 always	526	1	1	0	# bones
 
@@ -3948,34 +4091,32 @@ always	526	1	1	0	# bones
 
 table	2098,2099,2100,2101,2102,2103,13502,13503,13504	# Hill Giant
 always	532	1	1	0	# big_bones
-main	20754	1	1	0	1	134	# hillgiant_boss_key
-main	1203	1	1	0	2	67	# iron_dagger
-main	1137	1	1	0	5	134	# iron_med_helm
-main	1153	1	1	0	5	134	# iron_full_helm
-main	1191	1	1	0	3	134	# iron_kiteshield
-main	1325	1	1	0	1	67	# steel_scimitar
-main	1295	1	1	0	1	67	# steel_longsword
-main	884	3	3	0	3	67	# iron_arrow
-main	554	15	15	0	3	134	# firerune
-main	555	7	7	0	3	134	# waterrune
-main	563	2	2	0	3	134	# lawrune
-main	886	10	10	0	1	67	# steel_arrow
-main	558	3	3	0	1	67	# mindrune
-main	564	2	2	0	1	67	# cosmicrune
-main	561	6	6	0	1	67	# naturerune
-main	562	2	2	0	1	134	# chaosrune
-main	560	2	2	0	1	134	# deathrune
-main	995	5	5	0	9	67	# coins
-main	995	38	38	0	7	67	# coins
-main	995	52	52	0	5	67	# coins
-main	995	15	15	0	4	67	# coins
-main	995	10	10	0	7	134	# coins
-main	995	8	8	0	3	67	# coins
-main	995	88	88	0	1	67	# coins
-main	225	1	1	0	11	134	# limpwurt_root
-main	1917	1	1	0	3	67	# beer
-main	1446	1	1	0	1	67	# body_talisman
-sharedref	gem	3	134
+main	20754	1	1	0	1	128	# hillgiant_boss_key
+main	1203	1	1	0	1	32	# iron_dagger
+main	1137	1	1	0	5	128	# iron_med_helm
+main	1153	1	1	0	5	128	# iron_full_helm
+main	1191	1	1	0	3	128	# iron_kiteshield
+main	1325	1	1	0	1	64	# steel_scimitar
+main	1295	1	1	0	1	64	# steel_longsword
+main	884	3	3	0	3	64	# iron_arrow
+main	554	15	15	0	3	128	# firerune
+main	555	7	7	0	3	128	# waterrune
+main	563	2	2	0	3	128	# lawrune
+main	886	10	10	0	1	64	# steel_arrow
+main	558	3	3	0	1	64	# mindrune
+main	564	2	2	0	1	64	# cosmicrune
+main	561	6	6	0	1	64	# naturerune
+main	562	2	2	0	1	128	# chaosrune
+main	560	2	2	0	1	128	# deathrune
+main	995	38	38	0	7	64	# coins
+main	995	52	52	0	5	64	# coins
+main	995	15	15	0	1	16	# coins
+main	995	8	8	0	3	64	# coins
+main	995	88	88	0	1	64	# coins
+main	225	1	1	0	11	128	# limpwurt_root
+main	1917	1	1	0	3	64	# beer
+main	1446	1	1	0	1	64	# body_talisman
+sharedref	gem	3	128
 tertiary	11941	1	1	0	1	5	# looting_bag
 tertiary	13474	1	1	0	1	25	# arceuus_corpse_giant_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
@@ -3984,29 +4125,27 @@ tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	3049,3286,3287,3288	# Hobgoblin / Unarmed
 always	526	1	1	0	# bones
-main	1237	1	1	0	1	44	# bronze_spear
-main	1279	1	1	0	1	44	# iron_sword
-main	1207	1	1	0	1	44	# steel_dagger
-main	1239	1	1	0	1	66	# iron_spear
-main	1241	1	1	0	1	66	# steel_spear
-main	1295	1	1	0	1	132	# steel_longsword
-main	563	2	2	0	1	44	# lawrune
-main	555	2	2	0	1	66	# waterrune
-main	554	7	7	0	1	66	# firerune
-main	559	6	6	0	1	66	# bodyrune
-main	562	3	3	0	1	66	# chaosrune
-main	561	4	4	0	1	66	# naturerune
-main	564	2	2	0	1	132	# cosmicrune
-main	995	5	5	0	3	22	# coins
-main	995	15	15	0	4	33	# coins
-main	995	28	28	0	4	33	# coins
-main	995	5	5	0	1	11	# coins
-main	995	10	10	0	7	132	# coins
-main	995	62	62	0	1	33	# coins
-main	995	42	42	0	1	44	# coins
-main	995	1	1	0	1	132	# coins
-main	225	1	1	0	1	6	# limpwurt_root
-main	288	1	1	0	5	132	# goblin_armour
+main	1237	1	1	0	3	128	# bronze_spear
+main	1279	1	1	0	3	128	# iron_sword
+main	1207	1	1	0	3	128	# steel_dagger
+main	1239	1	1	0	1	64	# iron_spear
+main	1241	1	1	0	1	64	# steel_spear
+main	1295	1	1	0	1	128	# steel_longsword
+main	563	2	2	0	3	128	# lawrune
+main	555	2	2	0	1	64	# waterrune
+main	554	7	7	0	1	64	# firerune
+main	559	6	6	0	1	64	# bodyrune
+main	562	3	3	0	1	64	# chaosrune
+main	561	4	4	0	1	64	# naturerune
+main	564	2	2	0	1	128	# cosmicrune
+main	995	15	15	0	1	8	# coins
+main	995	28	28	0	1	8	# coins
+main	995	5	5	0	3	32	# coins
+main	995	62	62	0	1	32	# coins
+main	995	42	42	0	3	128	# coins
+main	995	1	1	0	1	128	# coins
+main	225	1	1	0	11	64	# limpwurt_root
+main	288	1	1	0	5	128	# goblin_armour
 tertiary	11941	1	1	0	1	5	# looting_bag
 tertiary	6802	1	1	0	1	5000	# champions_challenge_hobgoblin
 
@@ -4025,7 +4164,6 @@ main	564	2	2	0	1	128	# cosmicrune
 main	826	5	5	0	1	128	# iron_javelin
 main	995	15	15	0	17	64	# coins
 main	995	5	5	0	3	16	# coins
-main	995	10	10	0	7	128	# coins
 main	995	28	28	0	1	32	# coins
 main	995	62	62	0	1	32	# coins
 main	995	42	42	0	3	128	# coins
@@ -4070,6 +4208,26 @@ main	536	3	5	1	3	128	# dragon_bones
 main	3030	1	2	0	3	64	# 1dose2restore
 sharedref	gem	1	128
 
+table	4110	# Hygd
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
+
 table	2085,2086,2087,2088,2089	# Ice giant / Regular
 always	532	1	1	0	# big_bones
 main	1309	1	1	0	5	128	# iron_2h_sword
@@ -4091,7 +4249,6 @@ main	565	2	2	0	1	128	# bloodrune
 main	995	117	117	0	1	4	# coins
 main	995	53	53	0	3	32	# coins
 main	995	196	196	0	5	64	# coins
-main	995	5	5	0	1	16	# coins
 main	995	8	8	0	7	128	# coins
 main	995	22	22	0	3	64	# coins
 main	995	400	400	0	1	64	# coins
@@ -4304,22 +4461,20 @@ tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	2841,2842,2851	# Ice warrior
-main	1363	1	1	0	1	48	# iron_battleaxe
-main	1428	1	1	0	1	144	# mithril_mace
-main	561	4	4	0	5	72	# naturerune
-main	562	3	3	0	1	18	# chaosrune
-main	563	2	2	0	7	144	# lawrune
-main	564	2	2	0	5	144	# cosmicrune
-main	888	3	3	0	5	144	# mithril_arrow
-main	890	2	2	0	1	48	# adamant_arrow
-main	560	2	2	0	1	48	# deathrune
-main	565	2	2	0	1	144	# bloodrune
-sharedref	herb	5	72
-sharedref	uncommonseed	1	8
-main	995	15	15	0	13	48	# coins
-main	995	5	5	0	1	8	# coins
-main	995	10	10	0	5	72	# coins
-sharedref	gem	1	48
+main	1363	1	1	0	3	128	# iron_battleaxe
+main	1428	1	1	0	1	128	# mithril_mace
+main	561	4	4	0	5	64	# naturerune
+main	562	3	3	0	1	16	# chaosrune
+main	563	2	2	0	7	128	# lawrune
+main	564	2	2	0	5	128	# cosmicrune
+main	888	3	3	0	5	128	# mithril_arrow
+main	890	2	2	0	3	128	# adamant_arrow
+main	560	2	2	0	3	128	# deathrune
+main	565	2	2	0	1	128	# bloodrune
+sharedref	herb	5	64
+sharedref	uncommonseed	9	64
+main	995	15	15	0	39	128	# coins
+sharedref	gem	3	128
 tertiary	11941	1	1	0	1	3	# looting_bag
 
 table	645,646,647,710,711,712,713,714,715	# Ice wolf
@@ -4593,6 +4748,26 @@ always	1591	1	1	0	# jail_key
 
 table	3863	# Jake
 always	526	1	1	0	# bones
+
+table	3282	# Jeff
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	437	# Jelly / Regular
 main	1365	1	1	0	11	128	# steel_battleaxe
@@ -5389,6 +5564,24 @@ tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	3014,3106,3107,3108,3109,3110,3261,3264,3265,3652,6815,6818,6987,6988,6989,11057,11058	# Man
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 tertiary	11941	1	1	0	1	15	# looting_bag
 
 table	3298	# Man (East Ardougne)
@@ -5486,22 +5679,21 @@ tertiary	25639	1	1	0	1	500	# barronite_mace_3
 
 table	2481,2483	# Minotaur
 always	526	1	1	0	# bones
-main	884	5	14	0	2	21	# iron_arrow
-main	1237	1	1	0	2	21	# bronze_spear
-main	1155	1	1	0	2	21	# bronze_full_helm
-main	882	3	3	0	1	35	# bronze_arrow
-main	1205	1	1	0	4	105	# bronze_dagger
-main	558	1	1	0	1	105	# mindrune
-main	995	2	2	0	11	105	# coins
-main	995	7	7	0	4	21	# coins
-main	995	5	84	0	1	15	# coins
-main	436	1	1	1	2	35	# copper_ore
-main	438	1	1	1	2	35	# tin_ore
-main	7936	15	15	1	1	21	# blankrune_high
-main	1436	5	5	1	1	21	# blankrune
-main	2142	1	1	0	1	35	# cooked_meat
-main	9007	1	1	0	1	35	# sos_half_skull1
-sharedref	gem	1	105
+main	884	5	14	0	10	101	# iron_arrow
+main	1237	1	1	0	10	101	# bronze_spear
+main	1155	1	1	0	10	101	# bronze_full_helm
+main	882	3	3	0	3	101	# bronze_arrow
+main	1205	1	1	0	4	101	# bronze_dagger
+main	558	1	1	0	1	101	# mindrune
+main	995	2	2	0	11	101	# coins
+main	995	7	7	0	20	101	# coins
+main	995	5	84	0	7	101	# coins
+main	436	1	1	1	6	101	# copper_ore
+main	438	1	1	1	6	101	# tin_ore
+main	7936	15	15	1	5	101	# blankrune_high
+main	2142	1	1	0	3	101	# cooked_meat
+main	9007	1	1	0	3	101	# sos_half_skull1
+sharedref	gem	1	101
 tertiary	13456	1	1	0	1	50	# arceuus_corpse_minotaur_initial
 
 table	2919	# Mithril dragon
@@ -5672,11 +5864,9 @@ main	884	15	15	0	1	64	# iron_arrow
 main	886	30	30	0	1	128	# steel_arrow
 main	560	3	3	0	1	128	# deathrune
 main	565	1	1	0	1	128	# bloodrune
-main	995	5	5	0	35	128	# coins
 main	995	37	37	0	19	128	# coins
 main	995	2	2	0	11	128	# coins
 main	995	119	119	0	5	64	# coins
-main	995	10	10	0	5	128	# coins
 main	995	300	300	0	1	64	# coins
 main	2353	1	1	0	3	64	# steel_bar
 main	453	1	1	0	1	128	# coal
@@ -5736,7 +5926,6 @@ main	558	9	9	0	3	128	# mindrune
 main	555	6	6	0	1	64	# waterrune
 main	557	5	5	0	1	64	# earthrune
 sharedref	herb	13	128
-main	995	10	10	0	13	128	# coins
 main	995	5	5	0	3	32	# coins
 main	995	15	15	0	3	128	# coins
 main	995	25	25	0	1	128	# coins
@@ -5783,6 +5972,26 @@ always	3363	1	1	0	# snail_corpse1
 
 table	2649	# Myre Blamish Snail / Pointed
 always	3363	1	1	0	# snail_corpse1
+
+table	3280	# Narf
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	8,11	# Nechryael
 always	25772	1	1	0	# malicious_ashes
@@ -5929,6 +6138,26 @@ main	958	1	1	0	25	128	# grey_wolf_fur
 main	1582	1	1	0	1	512	# blamish_oil
 sharedref	gem	1	512
 
+table	4108	# Ocga
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
+
 table	2646	# Ochre Blamish Snail / Round
 always	3363	1	1	0	# snail_corpse1
 
@@ -5949,28 +6178,27 @@ tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	7991,7992	# Ogress Shaman
 always	532	1	1	0	# big_bones
-main	1197	1	1	0	7	121	# mithril_kiteshield
-main	888	5	15	0	7	121	# mithril_arrow
-main	562	15	30	0	7	121	# chaosrune
-main	563	8	15	0	7	121	# lawrune
-main	561	8	15	0	7	121	# naturerune
-main	560	8	15	0	6	121	# deathrune
-main	556	10	20	0	5	121	# airrune
-main	564	10	15	0	5	121	# cosmicrune
-main	557	10	20	0	5	121	# earthrune
-main	554	10	20	0	5	121	# firerune
-main	558	10	20	0	5	121	# mindrune
-main	555	10	20	0	5	121	# waterrune
-main	886	10	30	0	5	121	# steel_arrow
-main	884	20	40	0	5	121	# iron_arrow
-sharedref	uncommonseed	5	121
-main	225	1	1	0	5	121	# limpwurt_root
-main	1617	1	1	0	4	121	# uncut_diamond
-main	1621	1	1	0	4	121	# uncut_emerald
-main	1619	1	1	0	4	121	# uncut_ruby
-main	1623	1	1	0	4	121	# uncut_sapphire
-main	995	500	1000	0	9	121	# coins
-main	995	5	5	0	5	121	# coins
+main	1197	1	1	0	7	116	# mithril_kiteshield
+main	888	5	15	0	7	116	# mithril_arrow
+main	562	15	30	0	7	116	# chaosrune
+main	563	8	15	0	7	116	# lawrune
+main	561	8	15	0	7	116	# naturerune
+main	560	8	15	0	3	58	# deathrune
+main	556	10	20	0	5	116	# airrune
+main	564	10	15	0	5	116	# cosmicrune
+main	557	10	20	0	5	116	# earthrune
+main	554	10	20	0	5	116	# firerune
+main	558	10	20	0	5	116	# mindrune
+main	555	10	20	0	5	116	# waterrune
+main	886	10	30	0	5	116	# steel_arrow
+main	884	20	40	0	5	116	# iron_arrow
+sharedref	uncommonseed	5	116
+main	225	1	1	0	5	116	# limpwurt_root
+main	1617	1	1	0	1	29	# uncut_diamond
+main	1621	1	1	0	1	29	# uncut_emerald
+main	1619	1	1	0	1	29	# uncut_ruby
+main	1623	1	1	0	1	29	# uncut_sapphire
+main	995	500	1000	0	9	116	# coins
 tertiary	329	1	3	0	1	20	# salmon
 tertiary	13477	1	1	0	1	30	# arceuus_corpse_ogre_initial
 tertiary	1147	1	1	0	1	40	# rune_med_helm
@@ -5982,28 +6210,27 @@ tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
 
 table	7989,7990	# Ogress Warrior
 always	532	1	1	0	# big_bones
-main	1197	1	1	0	7	121	# mithril_kiteshield
-main	888	5	15	0	7	121	# mithril_arrow
-main	562	15	30	0	7	121	# chaosrune
-main	563	8	15	0	7	121	# lawrune
-main	561	8	15	0	7	121	# naturerune
-main	560	8	15	0	6	121	# deathrune
-main	556	10	20	0	5	121	# airrune
-main	564	10	15	0	5	121	# cosmicrune
-main	557	10	20	0	5	121	# earthrune
-main	554	10	20	0	5	121	# firerune
-main	558	10	20	0	5	121	# mindrune
-main	555	10	20	0	5	121	# waterrune
-main	886	10	30	0	5	121	# steel_arrow
-main	884	20	40	0	5	121	# iron_arrow
-sharedref	uncommonseed	5	121
-main	225	1	1	0	5	121	# limpwurt_root
-main	1617	1	1	0	4	121	# uncut_diamond
-main	1621	1	1	0	4	121	# uncut_emerald
-main	1619	1	1	0	4	121	# uncut_ruby
-main	1623	1	1	0	4	121	# uncut_sapphire
-main	995	500	1000	0	9	121	# coins
-main	995	5	5	0	5	121	# coins
+main	1197	1	1	0	7	116	# mithril_kiteshield
+main	888	5	15	0	7	116	# mithril_arrow
+main	562	15	30	0	7	116	# chaosrune
+main	563	8	15	0	7	116	# lawrune
+main	561	8	15	0	7	116	# naturerune
+main	560	8	15	0	3	58	# deathrune
+main	556	10	20	0	5	116	# airrune
+main	564	10	15	0	5	116	# cosmicrune
+main	557	10	20	0	5	116	# earthrune
+main	554	10	20	0	5	116	# firerune
+main	558	10	20	0	5	116	# mindrune
+main	555	10	20	0	5	116	# waterrune
+main	886	10	30	0	5	116	# steel_arrow
+main	884	20	40	0	5	116	# iron_arrow
+sharedref	uncommonseed	5	116
+main	225	1	1	0	5	116	# limpwurt_root
+main	1617	1	1	0	1	29	# uncut_diamond
+main	1621	1	1	0	1	29	# uncut_emerald
+main	1619	1	1	0	1	29	# uncut_ruby
+main	1623	1	1	0	1	29	# uncut_sapphire
+main	995	500	1000	0	9	116	# coins
 tertiary	329	1	3	0	1	20	# salmon
 tertiary	13477	1	1	0	1	30	# arceuus_corpse_ogre_initial
 tertiary	1147	1	1	0	1	40	# rune_med_helm
@@ -6067,20 +6294,19 @@ sharedref	gem	3	128
 table	4167,4168,4169,4170,4171,4172,4173,4174,4175,4176	# Outlaw
 always	526	1	1	0	# bones
 always	11008	1	1	0	# surok_paper
-main	1139	1	1	0	2	159	# bronze_med_helm
-main	558	9	9	0	2	159	# mindrune
-main	555	6	6	0	2	159	# waterrune
-main	557	5	5	0	2	159	# earthrune
-sharedref	herb	32	159
-main	995	10	10	0	32	159	# coins
-main	995	5	5	0	4	53	# coins
-main	995	15	15	0	4	159	# coins
-main	995	25	25	0	1	159	# coins
-main	954	1	1	0	46	159	# rope
-main	313	1	1	0	5	53	# fishing_bait
-main	436	1	1	0	2	159	# copper_ore
-main	1965	1	1	0	2	53	# cabbage
-main	946	1	1	0	1	159	# knife
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	558	9	9	0	1	64	# mindrune
+main	555	6	6	0	1	64	# waterrune
+main	557	5	5	0	1	64	# earthrune
+sharedref	herb	1	4
+main	995	5	5	0	3	32	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	954	1	1	0	23	64	# rope
+main	313	1	1	0	15	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1965	1	1	0	3	64	# cabbage
+main	946	1	1	0	1	128	# knife
 
 table	5263	# Padulah
 always	3180	1	1	0	# mm_medium_ninja_monkey_bones
@@ -6133,6 +6359,26 @@ sharedref	gem	5	128
 tertiary	13483	1	1	0	1	28	# arceuus_corpse_troll_initial
 tertiary	10976	1	1	0	1	400	# dorgesh_construction_bone
 tertiary	10977	1	1	0	2	10025	# dorgesh_construction_bone_curved
+
+table	4109	# Penda
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	2063	# Penguin (monster)
 always	526	1	1	0	# bones
@@ -6367,6 +6613,23 @@ main	2347	1	1	0	40	513	# hammer
 sharedref	gem	8	171
 
 table	526	# Rogue / Level 15
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 tertiary	11941	1	1	0	1	10	# looting_bag
 
 table	1175,3663	# Rooster
@@ -6374,6 +6637,26 @@ always	526	1	1	0	# bones
 always	2138	1	1	0	# raw_chicken
 main	314	5	5	0	1	2	# feather
 main	314	15	15	0	1	4	# feather
+
+table	3281	# Rusty
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	5935,7206	# Sand Crab
 main	1265	1	1	0	3	64	# bronze_pickaxe
@@ -6443,9 +6726,6 @@ tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 table	2480,3024,5242,13001	# Scorpion
 always	4569	1	1	0	# dwarf_rock_page1
 tertiary	11941	1	1	0	1	10	# looting_bag
-tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
-
-table	10584	# Scorpion (Realm of Memories)
 tertiary	13459	1	1	0	1	25	# arceuus_corpse_scorpion_initial
 
 table	1098	# Sea Snake Hatchling
@@ -6614,7 +6894,6 @@ main	554	2	2	0	1	64	# firerune
 main	562	3	3	0	1	64	# chaosrune
 main	561	3	3	0	1	128	# naturerune
 main	886	1	1	0	1	128	# steel_arrow
-main	995	10	10	0	21	128	# coins
 main	995	2	2	0	9	64	# coins
 main	995	12	12	0	15	128	# coins
 main	995	4	4	0	7	128	# coins
@@ -7203,25 +7482,24 @@ tertiary	6807	1	1	0	1	5000	# champions_challenge_zombie
 
 table	303	# Speedy Keith
 always	526	1	1	0	# bones
-main	1295	1	1	0	1	141	# steel_longsword
-main	1157	1	1	0	1	141	# steel_full_helm
-main	563	2	2	0	4	141	# lawrune
-main	561	4	4	0	4	141	# naturerune
-main	559	12	12	0	1	47	# bodyrune
-main	562	3	3	0	1	47	# chaosrune
-main	555	30	30	0	1	47	# waterrune
-main	558	5	5	0	1	141	# mindrune
-sharedref	herb	5	47
-main	995	48	48	0	10	47	# coins
-main	995	15	15	0	6	47	# coins
-main	995	10	10	0	5	47	# coins
-main	995	8	8	0	11	141	# coins
-main	995	70	70	0	10	141	# coins
-main	995	5	5	0	5	141	# coins
-main	995	150	150	0	2	141	# coins
-main	442	1	1	0	11	141	# silver_ore
-main	373	5	5	1	2	141	# swordfish
-sharedref	gem	2	141
+main	1295	1	1	0	1	128	# steel_longsword
+main	1157	1	1	0	1	128	# steel_full_helm
+main	563	2	2	0	1	32	# lawrune
+main	561	4	4	0	1	32	# naturerune
+main	559	12	12	0	3	128	# bodyrune
+main	562	3	3	0	3	128	# chaosrune
+main	555	30	30	0	3	128	# waterrune
+main	558	5	5	0	1	128	# mindrune
+sharedref	herb	15	128
+main	995	48	48	0	15	64	# coins
+main	995	15	15	0	9	64	# coins
+main	995	8	8	0	11	128	# coins
+main	995	70	70	0	5	64	# coins
+main	995	5	5	0	5	128	# coins
+main	995	150	150	0	1	64	# coins
+main	442	1	1	0	11	128	# silver_ore
+main	373	5	5	1	1	64	# swordfish
+sharedref	gem	1	64
 tertiary	11941	1	1	0	1	4	# looting_bag
 
 table	2478,3019	# Spider
@@ -7718,6 +7996,24 @@ always	3123	1	1	0	# tbwt_beast_bones
 
 table	1448,3252,3253,4247,7914,7915,7916	# Thief
 always	526	1	1	0	# bones
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	13291,13292,13293,13294,13295,13296	# Thief (Varlamore)
 always	526	1	1	0	# bones
@@ -8565,12 +8861,10 @@ main	565	2	2	0	1	128	# bloodrune
 main	563	2	2	0	1	128	# lawrune
 main	995	48	48	0	15	128	# coins
 main	995	15	15	0	15	128	# coins
-main	995	5	5	0	15	128	# coins
 main	995	8	8	0	11	128	# coins
 main	995	45	53	0	5	64	# coins
 main	995	1	1	0	5	128	# coins
 main	995	2	2	0	5	128	# coins
-main	995	10	10	0	5	128	# coins
 main	995	120	120	0	1	128	# coins
 main	2351	2	2	0	3	64	# iron_bar
 main	2351	1	1	0	1	64	# iron_bar
@@ -8592,12 +8886,10 @@ main	555	35	40	0	3	128	# waterrune
 main	890	4	4	0	3	128	# adamant_arrow
 main	565	3	3	0	1	128	# bloodrune
 main	563	3	3	0	1	128	# lawrune
-main	995	5	5	0	9	64	# coins
 main	995	15	19	0	13	128	# coins
 main	995	15	15	0	11	128	# coins
 main	995	55	63	0	5	64	# coins
 main	995	50	69	0	5	64	# coins
-main	995	10	10	0	7	128	# coins
 main	995	5	5	0	3	64	# coins
 main	995	120	120	0	1	64	# coins
 main	995	1	1	0	1	128	# coins
@@ -8656,6 +8948,26 @@ main	995	30	30	0	1	128	# coins
 table	106,110,2491,3912	# Wolf
 always	2859	1	1	0	# wolf_bones
 tertiary	11941	1	1	0	1	6	# looting_bag
+
+table	3111,3112,3113,6990,6991,6992,10728,11053,11054	# Woman
+always	526	1	1	0	# bones
+main	1139	1	1	0	1	64	# bronze_med_helm
+main	1203	1	1	0	1	128	# iron_dagger
+main	877	2	12	0	11	64	# bolt
+main	882	7	7	0	3	128	# bronze_arrow
+main	557	4	4	0	1	64	# earthrune
+main	554	6	6	0	1	64	# firerune
+main	558	9	9	0	1	64	# mindrune
+main	562	2	2	0	1	128	# chaosrune
+sharedref	herb	23	128
+main	995	3	3	0	19	64	# coins
+main	995	15	15	0	1	32	# coins
+main	995	25	25	0	1	128	# coins
+main	3010	1	1	0	9	128	# 3dose1energy
+main	313	1	1	0	5	128	# fishing_bait
+main	436	1	1	0	1	64	# copper_ore
+main	1440	1	1	0	1	64	# earth_talisman
+main	1965	1	1	0	1	128	# cabbage
 
 table	3299	# Woman (East Ardougne)
 always	526	1	1	0	# bones
@@ -8971,7 +9283,6 @@ main	886	5	14	0	1	5	# steel_arrow
 main	559	7	7	0	1	10	# bodyrune
 sharedref	herb	1	25
 main	995	5	84	0	1	10	# coins
-main	995	10	10	0	1	25	# coins
 main	1917	1	1	0	1	10	# beer
 main	592	1	1	0	1	25	# ashes
 sharedref	gem	1	50
