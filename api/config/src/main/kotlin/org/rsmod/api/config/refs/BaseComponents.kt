@@ -67,6 +67,9 @@ object BaseComponents : ComponentReferences() {
 
     val messagebox_text = find("messagebox:text", 4817549332312421939)
     val messagebox_pbutton = find("messagebox:continue", 1367557556890583596)
+    val levelup_text1 = find("levelup_display:text1")
+    val levelup_text2 = find("levelup_display:text2")
+    val levelup_continue = find("levelup_display:continue")
 
     val objectbox_pbutton = find("objectbox:universe", 5529957094503964265)
     val objectbox_text = find("objectbox:text", 2524578908064496713)
