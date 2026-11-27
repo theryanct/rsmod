@@ -187,6 +187,13 @@ def build_table(lines, page):
             continue
         if "{{(f)}}" in body:  # free-to-play-only line; this server is a members world
             continue
+        # Wilderness-only lines (looting bag, wilderness coin variants...): RSMod has no wilderness
+        # area check yet, so they are dropped - except on pages for npcs that only live there.
+        wildy_only = re.search(r"leagueRegion\s*=\s*Wilderness", body) or \
+            re.search(r"only (?:be )?dropped[^<]*Wilderness|found in the \[\[Wilderness", body)
+        if wildy_only and "wilderness" not in page.lower():
+            stats["wilderness_only"] += 1
+            continue
         f = fields(strip_nested(body))
         name = f.get("name", "")
         if not name or name.lower() in SKIP_ITEMS: continue
@@ -277,8 +284,10 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
                 log.append((title, npc_sym.get(dup, str(dup)), "npc already has a table from another page", ""))
             npcs = npcs - assigned
             if not npcs: continue
+            wildy_before = stats["wilderness_only"]
             a, m, t = build_table(by_dv[dv], title)
-            if not (a or m) and (unexpanded or not t):
+            only_wildy = stats["wilderness_only"] > wildy_before and not (a or m or t)
+            if not only_wildy and not (a or m) and (unexpanded or not t):
                 # The main table lives in a template we could not expand: emit no table so the npc
                 # keeps the default bones drop instead of dropping nothing. (Monsters that really
                 # only have tertiary drops, e.g. spiders, keep their tertiary-only table.)
