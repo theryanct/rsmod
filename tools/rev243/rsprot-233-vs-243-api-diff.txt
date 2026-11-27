@@ -1,0 +1,255 @@
+### net.rsprot.protocol.api.AbstractNetworkServiceFactory
+>   public org.jire.netty.haproxy.HAProxyTrustPredicate getHaproxyTrustPredicate();
+>   public net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityAvatarFilter getWorldEntityAvatarFilter();
+>   public net.rsprot.protocol.api.binary.BinaryHeaderProvider getBinaryHeaderProvider();
+### net.rsprot.protocol.api.NetworkService
+<   public net.rsprot.protocol.api.NetworkService(io.netty.buffer.ByteBufAllocator, java.lang.String, java.util.List<java.lang.Integer>, boolean, net.rsprot.protocol.api.bootstrap.BootstrapBuilder, net.rsprot.protocol.api.EntityInfoProtocols, java.util.List<? extends net.rsprot.protocol.common.client.OldSchoolClientType>, net.rsprot.protocol.api.GameConnectionHandler<R>, net.rsprot.protocol.api.handlers.ExceptionHandlers<R>, net.rsprot.protocol.api.handlers.INetAddressHandlers, net.rsprot.protocol.api.handlers.GameMessageHandlers, net.rsprot.protocol.api.handlers.LoginHandlers, net.rsprot.protocol.api.config.NetworkConfiguration, net.rsprot.compression.provider.HuffmanCodecProvider, net.rsprot.protocol.message.codec.incoming.provider.GameMessageConsumerRepositoryProvider<R>, net.rsprot.protocol.metrics.NetworkTrafficMonitor<?>, net.rsprot.protocol.api.obfuscation.OpcodeMapper, net.rsprot.protocol.api.obfuscation.OpcodeMapper, net.rsprot.crypto.rsa.RsaKeyPair, net.rsprot.protocol.api.js5.Js5Configuration, net.rsprot.protocol.api.js5.Js5GroupProvider, net.rsprot.protocol.api.handlers.idlestate.IdleStateHandlerSuppliers, org.jire.netty.haproxy.HAProxyMode);
+>   public net.rsprot.protocol.api.NetworkService(io.netty.buffer.ByteBufAllocator, java.lang.String, java.util.List<java.lang.Integer>, boolean, net.rsprot.protocol.api.bootstrap.BootstrapBuilder, net.rsprot.protocol.api.EntityInfoProtocols, java.util.List<? extends net.rsprot.protocol.common.client.OldSchoolClientType>, net.rsprot.protocol.api.GameConnectionHandler<R>, net.rsprot.protocol.api.handlers.ExceptionHandlers<R>, net.rsprot.protocol.api.handlers.INetAddressHandlers, net.rsprot.protocol.api.handlers.GameMessageHandlers, net.rsprot.protocol.api.handlers.LoginHandlers, net.rsprot.protocol.api.config.NetworkConfiguration, net.rsprot.compression.provider.HuffmanCodecProvider, net.rsprot.protocol.message.codec.incoming.provider.GameMessageConsumerRepositoryProvider<R>, net.rsprot.protocol.metrics.NetworkTrafficMonitor<?>, net.rsprot.protocol.api.obfuscation.OpcodeMapper, net.rsprot.protocol.api.obfuscation.OpcodeMapper, net.rsprot.crypto.rsa.RsaKeyPair, net.rsprot.protocol.api.js5.Js5Configuration, net.rsprot.protocol.api.js5.Js5GroupProvider, net.rsprot.protocol.api.handlers.idlestate.IdleStateHandlerSuppliers, org.jire.netty.haproxy.HAProxyMode, org.jire.netty.haproxy.HAProxyTrustPredicate, net.rsprot.protocol.api.binary.BinaryHeaderProvider);
+<   public final net.rsprot.protocol.api.EntityInfoProtocols getEntityInfoProtocols$osrs_233_api();
+>   public final net.rsprot.protocol.api.EntityInfoProtocols getEntityInfoProtocols$osrs_243_api();
+<   public final net.rsprot.protocol.api.GameConnectionHandler<R> getGameConnectionHandler$osrs_233_api();
+<   public final net.rsprot.protocol.api.handlers.ExceptionHandlers<R> getExceptionHandlers$osrs_233_api();
+<   public final net.rsprot.protocol.api.handlers.INetAddressHandlers getINetAddressHandlers$osrs_233_api();
+<   public final net.rsprot.protocol.api.handlers.GameMessageHandlers getGameMessageHandlers$osrs_233_api();
+<   public final net.rsprot.protocol.api.handlers.LoginHandlers getLoginHandlers$osrs_233_api();
+<   public final net.rsprot.protocol.api.config.NetworkConfiguration getConfiguration$osrs_233_api();
+>   public final net.rsprot.protocol.api.GameConnectionHandler<R> getGameConnectionHandler$osrs_243_api();
+>   public final net.rsprot.protocol.api.handlers.ExceptionHandlers<R> getExceptionHandlers$osrs_243_api();
+>   public final net.rsprot.protocol.api.handlers.INetAddressHandlers getINetAddressHandlers$osrs_243_api();
+>   public final net.rsprot.protocol.api.handlers.GameMessageHandlers getGameMessageHandlers$osrs_243_api();
+>   public final net.rsprot.protocol.api.handlers.LoginHandlers getLoginHandlers$osrs_243_api();
+>   public final net.rsprot.protocol.api.config.NetworkConfiguration getConfiguration$osrs_243_api();
+>   public final org.jire.netty.haproxy.HAProxyTrustPredicate getHaProxyTrustPredicate();
+>   public final net.rsprot.protocol.api.binary.BinaryHeaderProvider getBinaryHeaderProvider();
+<   public final net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoProtocol getPlayerInfoProtocol();
+>   public final net.rsprot.protocol.game.outgoing.info.InfoProtocols getInfoProtocols();
+<   public final net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoProtocol getNpcInfoProtocol();
+<   public final net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityProtocol getWorldEntityInfoProtocol();
+### net.rsprot.protocol.api.Session
+<   public final void triggerIdleClosing$osrs_233_api();
+>   public final void incrementDiscardedPacketCount();
+>   public final net.rsprot.protocol.binary.BinaryBlob getBinaryBlobOrNull();
+>   public final void triggerIdleClosing$osrs_243_api();
+<   public final void onLoginTransitionComplete$osrs_233_api();
+>   public final void onLoginTransitionComplete$osrs_243_api();
+<   public final void resumeReading$osrs_233_api();
+<   public final void stopReading$osrs_233_api();
+>   public final void resumeReading$osrs_243_api();
+>   public final void stopReading$osrs_243_api();
+<   public final void incrementCounter$osrs_233_api(net.rsprot.protocol.message.IncomingGameMessage);
+<   public final boolean isFull$osrs_233_api();
+>   public final void incrementCounter$osrs_243_api(net.rsprot.protocol.message.IncomingGameMessage);
+>   public final boolean isFull$osrs_243_api();
+### net.rsprot.protocol.api.js5.Js5Service
+>   public final byte[] getMasterIndex();
+<   public final void onClientConnected$osrs_233_api(net.rsprot.protocol.api.js5.Js5Client);
+<   public final void onClientDisconnected$osrs_233_api(net.rsprot.protocol.api.js5.Js5Client);
+>   public final void onClientConnected$osrs_243_api(net.rsprot.protocol.api.js5.Js5Client);
+>   public final void onClientDisconnected$osrs_243_api(net.rsprot.protocol.api.js5.Js5Client);
+### net.rsprot.protocol.api.login.GameLoginResponseHandler
+<   public final net.rsprot.protocol.api.Session<R> writeSuccessfulResponse(net.rsprot.protocol.loginprot.outgoing.LoginResponse$ReconnectOk, net.rsprot.protocol.loginprot.incoming.util.LoginBlock<?>);
+>   public final net.rsprot.protocol.api.Session<R> writeSuccessfulResponse(net.rsprot.protocol.loginprot.outgoing.LoginResponse$ReconnectOk, net.rsprot.protocol.loginprot.incoming.util.LoginBlock<?>, net.rsprot.protocol.api.Session<R>);
+### net.rsprot.protocol.api.util.ZonePartialEnclosedCacheBuffer
+<   public final java.util.LinkedList<io.netty.buffer.ByteBuf> getActiveCachedBuffers$osrs_233_api();
+<   public final void setActiveCachedBuffers$osrs_233_api(java.util.LinkedList<io.netty.buffer.ByteBuf>);
+>   public final java.util.LinkedList<io.netty.buffer.ByteBuf> getActiveCachedBuffers$osrs_243_api();
+>   public final void setActiveCachedBuffers$osrs_243_api(java.util.LinkedList<io.netty.buffer.ByteBuf>);
+<   public final kotlin.collections.ArrayDeque<java.util.LinkedList<io.netty.buffer.ByteBuf>> getRetainedBufferReferences$osrs_233_api();
+<   public final int getCurrentZoneComputationCount$osrs_233_api();
+<   public final void setCurrentZoneComputationCount$osrs_233_api(int);
+>   public final kotlin.collections.ArrayDeque<java.util.LinkedList<io.netty.buffer.ByteBuf>> getRetainedBufferReferences$osrs_243_api();
+>   public final int getCurrentZoneComputationCount$osrs_243_api();
+>   public final void setCurrentZoneComputationCount$osrs_243_api(int);
+REMOVED-IN-243 net.rsprot.protocol.game.incoming.locs.OpLoc
+REMOVED-IN-243 net.rsprot.protocol.game.incoming.locs.OpLoc6
+REMOVED-IN-243 net.rsprot.protocol.game.incoming.locs.OpLocT
+### net.rsprot.protocol.game.incoming.misc.user.ClientCheat
+<   public net.rsprot.protocol.game.incoming.misc.user.ClientCheat(java.lang.String);
+>   public net.rsprot.protocol.game.incoming.misc.user.ClientCheat(java.lang.String, boolean);
+>   public final boolean getAutocomplete();
+REMOVED-IN-243 net.rsprot.protocol.game.incoming.npcs.OpNpc
+REMOVED-IN-243 net.rsprot.protocol.game.incoming.objs.OpObj
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.camera.CamLookAt
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.camera.CamMoveTo
+### net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatar
+<   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatar(int, int, int, int, int, int, int, net.rsprot.protocol.game.outgoing.info.AvatarPriority, boolean, int, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarExtendedInfo, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage);
+<   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatar(int, int, int, int, int, int, int, net.rsprot.protocol.game.outgoing.info.AvatarPriority, boolean, int, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarExtendedInfo, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage, int, kotlin.jvm.internal.DefaultConstructorMarker);
+>   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatar(int, int, int, int, int, int, int, net.rsprot.protocol.game.outgoing.info.AvatarPriority, boolean, int, int, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarExtendedInfo, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage);
+>   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatar(int, int, int, int, int, int, int, net.rsprot.protocol.game.outgoing.info.AvatarPriority, boolean, int, int, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarExtendedInfo, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage, int, kotlin.jvm.internal.DefaultConstructorMarker);
+<   public final net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage getZoneIndexStorage$osrs_233_model();
+<   public final net.rsprot.protocol.internal.game.outgoing.info.npcinfo.NpcAvatarDetails getDetails$osrs_233_model();
+<   public final net.rsprot.buffer.bitbuffer.UnsafeLongBackedBitBuf getHighResMovementBuffer$osrs_233_model();
+<   public final void setHighResMovementBuffer$osrs_233_model(net.rsprot.buffer.bitbuffer.UnsafeLongBackedBitBuf);
+<   public final void addObserver$osrs_233_model(int);
+<   public final void removeObserver$osrs_233_model(int);
+<   public final void resetObservers$osrs_233_model();
+>   public final net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage getZoneIndexStorage$osrs_243_model();
+>   public final net.rsprot.protocol.internal.game.outgoing.info.npcinfo.NpcAvatarDetails getDetails$osrs_243_model();
+>   public final net.rsprot.buffer.bitbuffer.UnsafeLongBackedBitBuf getHighResMovementBuffer$osrs_243_model();
+>   public final void setHighResMovementBuffer$osrs_243_model(net.rsprot.buffer.bitbuffer.UnsafeLongBackedBitBuf);
+>   public final void addObserver$osrs_243_model(int);
+>   public final void removeObserver$osrs_243_model(int);
+>   public final void resetObservers$osrs_243_model();
+<   public final void prepareBitcodes$osrs_233_model();
+>   public final void prepareBitcodes$osrs_243_model();
+### net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo
+< public final class net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo implements net.rsprot.protocol.game.outgoing.info.util.ReferencePooledObject {
+> public final class net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo implements net.rsprot.protocol.game.outgoing.info.util.ReferencePooledObject<net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityInfo> {
+<   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo(io.netty.buffer.ByteBufAllocator, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarRepository, net.rsprot.protocol.common.client.OldSchoolClientType, int, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage, net.rsprot.protocol.internal.client.ClientTypeMap<? extends net.rsprot.protocol.internal.game.outgoing.info.npcinfo.encoder.NpcResolutionChangeEncoder>, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetailsStorage, net.rsprot.protocol.game.outgoing.info.ByteBufRecycler, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarFilter);
+<   public final int getLocalPlayerIndex$osrs_233_model();
+<   public final void setLocalPlayerIndex$osrs_233_model(int);
+<   public final java.lang.Exception getException$osrs_233_model();
+<   public final void setException$osrs_233_model(java.lang.Exception);
+<   public final net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails[] getDetails$osrs_233_model();
+<   public final long[] getSpecificVisible$osrs_233_model();
+>   public net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo(io.netty.buffer.ByteBufAllocator, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarRepository, net.rsprot.protocol.common.client.OldSchoolClientType, int, net.rsprot.protocol.internal.game.outgoing.info.util.ZoneIndexStorage, net.rsprot.protocol.internal.client.ClientTypeMap<? extends net.rsprot.protocol.internal.game.outgoing.info.npcinfo.encoder.NpcResolutionChangeEncoder>, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetailsStorage, net.rsprot.protocol.game.outgoing.info.ByteBufRecycler, net.rsprot.protocol.game.outgoing.info.npcinfo.NpcAvatarFilter, net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityInfo);
+>   public final int getLocalPlayerIndex$osrs_243_model();
+>   public final void setLocalPlayerIndex$osrs_243_model(int);
+>   public final java.lang.Exception getException$osrs_243_model();
+>   public final void setException$osrs_243_model(java.lang.Exception);
+>   public final net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails[] getDetails$osrs_243_model();
+>   public final int getLocalPlayerLastCoord-aQXte_c$osrs_243_model();
+>   public final void setLocalPlayerLastCoord-1IQ_v9c$osrs_243_model(int);
+>   public final int getLocalPlayerCurrentCoord-aQXte_c$osrs_243_model();
+>   public final void setLocalPlayerCurrentCoord-1IQ_v9c$osrs_243_model(int);
+>   public final long[] getSpecificVisible$osrs_243_model();
+<   public final void updateBuildArea-3qq953o(int, long);
+<   public final void updateBuildArea(int, int, int, int, int);
+<   public static void updateBuildArea$default(net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo, int, int, int, int, int, int, java.lang.Object);
+>   public final void setRenderDistance(int);
+>   public final void resetRenderDistance();
+>   public final void setZoneSearchRadius(int);
+<   public final void unsetSpecific$osrs_233_model(int);
+<   public final net.rsprot.protocol.message.OutgoingGameMessage toNpcInfoPacket(int);
+<   public final net.rsprot.protocol.message.OutgoingGameMessage toPacket(int);
+<   public final void updateCoord(int, int, int, int);
+<   public final void compute$osrs_233_model(net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails);
+<   public final void afterUpdate$osrs_233_model();
+<   public final void putExtendedInfo$osrs_233_model(net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails);
+>   public final void unsetSpecific$osrs_243_model(int);
+>   public final void synchronizeWorlds$osrs_243_model();
+>   public final net.rsprot.protocol.game.outgoing.info.util.PacketResult<net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoPacket> internalPacketResult(int);
+>   public final net.rsprot.protocol.game.outgoing.info.util.PacketResult<net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoPacket> toPacketResult(int);
+>   public final void updateRootCoord-1IQ_v9c$osrs_243_model(int);
+>   public final void compute$osrs_243_model(net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails);
+>   public final void registerNewObservers$osrs_243_model(net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfoWorldDetails);
+### net.rsprot.protocol.game.outgoing.info.npcinfo.SetNpcUpdateOrigin
+>   public static final net.rsprot.protocol.game.outgoing.info.npcinfo.SetNpcUpdateOrigin$Companion Companion;
+>   public static final net.rsprot.protocol.game.outgoing.info.npcinfo.SetNpcUpdateOrigin access$getDYNAMIC$cp();
+>   static {};
+### net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo
+<   public static final int FACE_PATHINGENTITY;
+>   public static final int FACE;
+<   public static final int FACE_ANGLE;
+<   public static final int HITS;
+>   public static final int HITMARKS;
+<   public net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo(int, net.rsprot.protocol.game.outgoing.info.filter.ExtendedInfoFilter, java.util.List<? extends net.rsprot.protocol.game.outgoing.info.AvatarExtendedInfoWriter<net.rsprot.protocol.internal.game.outgoing.info.playerinfo.encoder.PlayerExtendedInfoEncoders, net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfoBlocks>>, io.netty.buffer.ByteBufAllocator, net.rsprot.compression.provider.HuffmanCodecProvider);
+<   public final int getLocalIndex$osrs_233_model();
+<   public final void setLocalIndex$osrs_233_model(int);
+<   public final int getFlags$osrs_233_model();
+<   public final void setFlags$osrs_233_model(int);
+>   public static final int HEADBARS;
+>   public static final int TRANSPARENCY;
+>   public static final int FREEZE;
+>   public static final int PLAYER_RESET;
+>   public net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo(int, net.rsprot.protocol.game.outgoing.info.filter.ExtendedInfoFilter, java.util.List<? extends net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfoWriter>, io.netty.buffer.ByteBufAllocator, net.rsprot.compression.provider.HuffmanCodecProvider);
+>   public final int getLocalIndex$osrs_243_model();
+>   public final void setLocalIndex$osrs_243_model(int);
+>   public final int getFlags$osrs_243_model();
+>   public final void setFlags$osrs_243_model(int);
+<   public final void setFaceAngle(int);
+>   public final void setFaceNpc(int, boolean, int, int);
+>   public final void setFacePlayer(int, boolean, int, int);
+>   public final void setFaceWorldEntity(int, boolean, int, int);
+>   public final void setFaceCoordGrid(int, int, boolean, int);
+>   public final void setFaceLoc(int, int, int, int, boolean, int);
+>   public final void setFaceAngle(int, boolean, int);
+>   public static void setFaceAngle$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, boolean, int, int, java.lang.Object);
+>   public final void resetFacing(boolean, int);
+>   public static void resetFacing$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, boolean, int, int, java.lang.Object);
+<   public final void setSpotAnim(int, int, int, int);
+<   public final void addHitMark(int, int, int, int, int);
+<   public static void addHitMark$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, int, int, int, int, int, java.lang.Object);
+<   public final void addHitMark(int, int, int, int, int, int);
+<   public static void addHitMark$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, int, int, int, int, int, int, java.lang.Object);
+<   public final void removeHitMark(int);
+<   public static void removeHitMark$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, int, java.lang.Object);
+<   public final void addSoakedHitMark(int, int, int, int, int, int, int, int);
+<   public static void addSoakedHitMark$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, int, int, int, int, int, int, int, int, java.lang.Object);
+<   public final void addSoakedHitMark(int, int, int, int, int, int, int, int, int, int);
+<   public static void addSoakedHitMark$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo, int, int, int, int, int, int, int, int, int, int, int, java.lang.Object);
+### net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo
+< public final class net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo implements net.rsprot.protocol.game.outgoing.info.util.ReferencePooledObject {
+> public final class net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo implements net.rsprot.protocol.game.outgoing.info.util.ReferencePooledObject<net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityInfo> {
+<   public net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoProtocol, int, io.netty.buffer.ByteBufAllocator, net.rsprot.protocol.common.client.OldSchoolClientType, net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatar, net.rsprot.protocol.game.outgoing.info.ByteBufRecycler, net.rsprot.protocol.game.outgoing.info.playerinfo.GlobalLowResolutionPositionRepository);
+<   public final int getLocalIndex$osrs_233_model();
+<   public final void setLocalIndex$osrs_233_model(int);
+<   public final io.netty.buffer.ByteBufAllocator getAllocator$osrs_233_model();
+>   public net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoProtocol, int, io.netty.buffer.ByteBufAllocator, net.rsprot.protocol.common.client.OldSchoolClientType, net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatar, net.rsprot.protocol.game.outgoing.info.ByteBufRecycler, net.rsprot.protocol.game.outgoing.info.playerinfo.GlobalLowResolutionPositionRepository, net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityInfo);
+>   public final int getLocalIndex$osrs_243_model();
+>   public final void setLocalIndex$osrs_243_model(int);
+>   public final io.netty.buffer.ByteBufAllocator getAllocator$osrs_243_model();
+<   public final net.rsprot.protocol.game.outgoing.info.ObserverExtendedInfoFlags getObserverExtendedInfoFlags$osrs_233_model();
+<   public final java.lang.Exception getException$osrs_233_model();
+<   public final void setException$osrs_233_model(java.lang.Exception);
+<   public final net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket getPreviousPacket$osrs_233_model();
+<   public final void setPreviousPacket$osrs_233_model(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket);
+<   public final net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoWorldDetails[] getDetails$osrs_233_model();
+>   public final net.rsprot.protocol.game.outgoing.info.ObserverExtendedInfoFlags getObserverExtendedInfoFlags$osrs_243_model();
+>   public final java.lang.Exception getException$osrs_243_model();
+>   public final void setException$osrs_243_model(java.lang.Exception);
+>   public final net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket getPreviousPacket$osrs_243_model();
+>   public final void setPreviousPacket$osrs_243_model(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket);
+<   public final void unsetHighPriority$osrs_233_model(int);
+>   public final void unsetHighPriority$osrs_243_model(int);
+<   public final void updateRenderCoord(int, int, int, int);
+<   public final void updateBuildArea-3qq953o(int, long);
+<   public final void updateBuildArea(int, int, int, int, int);
+<   public static void updateBuildArea$default(net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo, int, int, int, int, int, int, java.lang.Object);
+<   public final void allocateWorld(int);
+<   public final void destroyWorld(int);
+<   public final net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket toPacket();
+<   public final void updateCoord(int, int, int) throws java.lang.IllegalArgumentException;
+>   public final net.rsprot.protocol.game.outgoing.info.util.PacketResult<net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket> internalPacketResult();
+>   public final net.rsprot.protocol.game.outgoing.info.util.PacketResult<net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfoPacket> toPacketResult();
+>   public final void updateRootCoord-1IQ_v9c$osrs_243_model(int) throws java.lang.IllegalArgumentException;
+<   public final void ensureReconnectCalled$osrs_233_model();
+<   public final void prepareBitcodes$osrs_233_model();
+<   public final void precomputeExtendedInfo$osrs_233_model();
+<   public final void putExtendedInfo$osrs_233_model();
+<   public final void pBitcodes$osrs_233_model();
+<   public final void postUpdate$osrs_233_model();
+### net.rsprot.protocol.game.outgoing.info.util.BuildArea
+<   public static final short localize-lfZmNRY$osrs_233_model(long, int);
+<   public static final boolean contains-1IQ_v9c$osrs_233_model(long, int);
+>   public static final short localize-lfZmNRY$osrs_243_model(long, int);
+>   public static final boolean contains-1IQ_v9c$osrs_243_model(long, int);
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.map.RebuildLogin
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.map.RebuildNormal
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.map.RebuildRegion
+### net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone
+<   public final int getReferenceZone-DwkH1Wg();
+<   public final net.rsprot.crypto.xtea.XteaKey getKey();
+<   public net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone(int, int, int, int, net.rsprot.crypto.xtea.XteaKey);
+>   public final int getReferenceZone-uCkRyU4();
+>   public net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone(int, int, int, int);
+<   public net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone(int, net.rsprot.crypto.xtea.XteaKey, kotlin.jvm.internal.DefaultConstructorMarker);
+>   public net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone(int, kotlin.jvm.internal.DefaultConstructorMarker);
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.misc.client.UpdateRebootTimer
+REMOVED-IN-243 net.rsprot.protocol.game.outgoing.misc.player.SetMapFlag
+### net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2
+>   public static final net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2$Companion Companion;
+>   public static final net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2 access$getROOT_ZERO$cp();
+>   public static final net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2 access$getROOT_ONE$cp();
+>   public static final net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2 access$getROOT_TWO$cp();
+>   public static final net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2 access$getROOT_THREE$cp();
+>   static {};
+### net.rsprot.protocol.loginprot.incoming.util.AuthenticationType
+>   public abstract java.lang.String getJxSessionId();
+### net.rsprot.protocol.loginprot.incoming.util.LoginBlock
+<   public final boolean getHasExternalAuthenticator();
+>   public final int getExternalAuthenticatorType();
+<   public final net.rsprot.protocol.loginprot.incoming.util.LoginClientType getValidationClientType();
+<   public final void mergeBetaCrcs(net.rsprot.protocol.loginprot.incoming.RemainingBetaArchives);
+>   public final int getDeprecatedClientType();
+>   public final void mergeBetaCrcs(int[]);
