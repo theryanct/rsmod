@@ -10,6 +10,8 @@ import org.openrs2.cache.Cache
 import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.TextUtil
+import org.rsmod.api.cache.util.appendRaw
+import org.rsmod.api.cache.util.rawRecord
 import org.rsmod.api.cache.util.readUnsignedShortOrNull
 import org.rsmod.game.type.TypeResolver
 import org.rsmod.game.type.spot.SpotanimTypeBuilder
@@ -45,6 +47,10 @@ public object SpotanimTypeDecoder {
         with(builder) {
             when (code) {
                 1 -> model = data.readUnsignedShortOrNull()
+                // Rev 237+: int model id, "not clickable" flag, full recolour (client-only).
+                3 -> model = data.readInt().takeUnless { it == -1 }
+                10 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) {})
+                42 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readUnsignedShort() })
                 2 -> anim = data.readUnsignedShort()
                 4 -> resizeH = data.readUnsignedShort()
                 5 -> resizeV = data.readUnsignedShort()
