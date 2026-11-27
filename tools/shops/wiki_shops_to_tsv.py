@@ -86,6 +86,10 @@ SPECIAL_INV = re.compile(r"uim|deadman|league|trailblazer|reward|gotr|_dt_|tal_t
 shop_invs = {inv_sym[i]: s for i, s in inv_size.items()
              if i in inv_sym and "shop" in inv_sym[i] and inv_sym[i] not in HAND_STOCKED_INVS
              and not SPECIAL_INV.search(inv_sym[i])}
+# Fallback pool once the standard invs run out: the variants (only used as containers).
+spare_invs = {inv_sym[i]: s for i, s in inv_size.items()
+              if i in inv_sym and "shop" in inv_sym[i] and inv_sym[i] not in HAND_STOCKED_INVS
+              and inv_sym[i] not in shop_invs}
 
 log, stats = [], Counter()
 
@@ -177,6 +181,9 @@ for title, text in sorted(stores.items()):
         if not traders:
             log.append((title, page, "owner has no npc id with a Trade op", "")); continue
         nid = next((i for i in traders if i in spawned), traders[0])
+        if nid not in spawned and any(i in spawned for i in ids):
+            # Another id of this owner page is already spawned elsewhere; do not spawn a second one.
+            log.append((title, page, "owner spawned elsewhere under a non-Trade id", "")); continue
         if nid not in spawned and nid not in new_spawns:
             coords = owner_coords(page)
             if coords is None:
@@ -186,6 +193,9 @@ for title, text in sorted(stores.items()):
     if not npcs:
         stats["no_trader"] += 1; continue
     head = fields(strip_nested(next(templates(text, "StoreTableHead"), "") or ""))
+    currency = (head.get("currency") or "coins").strip().lower()
+    if currency != "coins":
+        stats["non_coin_currency"] += 1; log.append((title, "", "non-coin currency (not supported yet)", currency)); continue
     sell, buy, delta = (int(re.match(r"\d+", head.get(k) or str(d)).group(0))
                         for k, d in (("sellmultiplier", 1300), ("buymultiplier", 400), ("delta", 30)))
     stock = []
@@ -209,7 +219,7 @@ used = set()
 for plan in sorted(plans, key=lambda p: (not p["general"], -len(p["stock"]), p["title"])):
     need = len(plan["stock"])
     tw = words(plan["title"])
-    cands = [(n, s) for n, s in shop_invs.items() if n not in used]
+    cands = [(n, s) for n, s in shop_invs.items() if n not in used] or         [(n, s) for n, s in spare_invs.items() if n not in used]
     if plan["general"]:
         # Numbered generalshopN first (generalshop2, generalshop3, ...), then any other 40-slot inv.
         cands = [c for c in cands if c[1] >= 40]
@@ -226,6 +236,15 @@ for plan in sorted(plans, key=lambda p: (not p["general"], -len(p["stock"]), p["
     used.add(best[0])
 
 done = [p for p in plans if p.get("inv")]
+# An npc can only have one Trade handler: the first store (by title) keeps it.
+registered = set()
+for plan in sorted(done, key=lambda p: p["title"]):
+    keep = [(n, op) for n, op in plan["npcs"] if n not in registered]
+    for n, _ in plan["npcs"]:
+        if n in registered: log.append((plan["title"], n, "npc already trades for another store", ""))
+    registered |= {n for n, _ in keep}
+    plan["npcs"] = keep
+done = [p for p in done if p["npcs"]]
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from OSRS Wiki store pages by tools/shops/wiki_shops_to_tsv.py - do not edit.\n")
     for plan in sorted(done, key=lambda p: p["title"]):

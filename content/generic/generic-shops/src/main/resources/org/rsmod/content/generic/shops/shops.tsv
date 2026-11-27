@@ -1,6 +1,473 @@
 # Generated from OSRS Wiki store pages by tools/shops/wiki_shops_to_tsv.py - do not edit.
 
-shop	lunar_runeshop	24	0	1000	600	1	Aubury's Rune Shop.
+shop	sunset_coast_helmet_shop	10	0	1000	500	10	Aaron's Archery Appendages.
+npc	ranging_guild_armour_salesman	3
+stock	leather_armour	10	50
+stock	hardleather_body	10	60
+stock	studded_body	10	70
+stock	leather_chaps	20	50
+stock	studded_chaps	15	80
+stock	coif	10	50
+stock	leather_cowl	10	70
+stock	leather_vambraces	10	150
+stock	skillcape_ranging	1	1
+stock	skillcape_ranging_trimmed	1	1
+
+shop	upassgeneralshop	40	1	1300	400	20	Aemad's Adventuring Supplies.
+npc	aemad	3
+stock	vial_water	500	30
+stock	pack_vial_water	250	10
+stock	bronze_pickaxe	2	100
+stock	iron_axe	2	100
+stock	cooked_meat	2	100
+stock	tinderbox	2	100
+stock	ball_of_wool	30	100
+stock	bronze_arrow	500	10
+stock	rope	20	100
+stock	papyrus	50	1000
+stock	knife	2	100
+
+shop	kebos_farming_equipment_shop	24	0	1000	700	10	Agelus' Farm Shop
+npc	fortis_shop_farming	3
+stock	rake	10	10
+stock	dibber	10	10
+stock	secateurs	10	10
+stock	spade	10	10
+stock	gardening_trowel	10	20
+stock	watering_can_0	10	5
+stock	plantpot_compost	30	10
+stock	pack_plant_pot_compost	30	5
+stock	bucket_compost	30	10
+stock	pack_compost	30	50
+stock	sack_empty	30	2
+stock	pack_sack	30	2
+stock	basket_empty	30	2
+stock	pack_basket	30	2
+stock	bucket_empty	30	10
+stock	pack_bucket	30	10
+stock	plant_cure	50	5
+stock	grain	0	100
+stock	potato	0	100
+stock	onion	0	100
+stock	cabbage	0	100
+stock	tomato	0	100
+stock	sweetcorn	0	100
+stock	barley	0	100
+
+shop	magearena_runeshop_gim	17	0	1000	550	10	Ak-Haranu's Exotic Shop.
+npc	ahoy_akharanu	3
+stock	barrows_karil_ammo	500	50
+
+shop	legsshop	40	1	1300	400	30	Al Kharid General Store
+npc	generalshopkeeper3	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
+
+shop	wildernesscapeshop1	40	1	1300	400	30	Aldarin General Store
+npc	aldarin_general_store	3
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	20
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	cake_tin	15	20
+stock	vial_empty	15	150
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+stock	pack_vial_empty	5	30
+
+shop	tzhaar_shop_rune	12	0	1200	700	20	Aleck's Hunter Emporium.
+npc	hunting_shop_owner_yanille	5
+stock	hunting_butterfly_net	5	10
+stock	butterfly_jar	100	10
+stock	magic_imp_box	30	50
+stock	noose_wand	50	5
+stock	hunting_ojibway_bird_snare	50	5
+stock	hunting_box_trap	25	10
+stock	hunting_teasing_stick	5	10
+stock	torch_unlit	20	10
+stock	hunting_snare	10	10
+stock	pack_ojibway_bird_snare	3	10
+stock	pack_box_trap	3	10
+stock	pack_magic_imp_box	3	10
+
+shop	trader_stan_shop	56	0	1000	550	10	Ali's Discount Wares.
+npc	feud_ali_m	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	4	25
+stock	water_skin3	10	300
+stock	desert_shirt	3	12
+stock	desert_boots	2	100
+stock	bucket_empty	19	400
+stock	pack_bucket	10	10
+stock	feud_karidian_fakebeard	11	10
+stock	feud_karidian_turban	12	10
+stock	papyrus	50	10
+stock	knife	5	100
+stock	tinderbox	11	100
+stock	bronze_pickaxe	23	100
+stock	raw_chicken	15	100
+stock	roguetrader_bj_assault_oak	25	50
+stock	roguetrader_bj_assault_willow	25	50
+stock	roguetrader_bj_assault_maple	25	50
+stock	roguetrader_bj_maple	25	50
+stock	blackjack_willow	25	50
+stock	roguetrader_bj_defend_oak	25	50
+stock	roguetrader_bj_defend_willow	25	50
+stock	roguetrader_bj_defend_maple	25	50
+stock	roguetrader_bj_maple	25	50
+stock	blackjack_willow	25	50
+stock	waterrune	20	50
+stock	firerune	20	50
+stock	airrune	20	50
+stock	earthrune	20	50
+stock	pack_firerune	3	70
+stock	pack_waterrune	3	70
+stock	pack_airrune	3	70
+stock	pack_earthrune	3	70
+stock	naturerune	100	50
+stock	lawrune	100	50
+stock	chaosrune	100	50
+stock	deathrune	100	50
+stock	mindrune	100	50
+stock	bodyrune	100	50
+stock	bloodrune	100	50
+stock	cosmicrune	10	50
+stock	soulrune	100	50
+stock	pack_mindrune	5	70
+stock	pack_chaosrune	5	70
+stock	roguetrader_fez_hat	25	50
+stock	roguetrader_carpetsller_top	25	50
+stock	roguetrader_carpetsller_legs2	25	50
+stock	roguetrader_carpetsller_legs	25	50
+stock	roguetrader_menaphite_hat	25	50
+stock	roguetrader_menaphite_top	25	50
+stock	roguetrader_menaphite_legs	25	50
+stock	roguetrader_menaphite_legs2	25	50
+stock	roguetrader_menaphite_hat_red	25	50
+stock	roguetrader_menaphite_top_red	25	50
+stock	roguetrader_menaphite_legs_red	25	50
+stock	roguetrader_menaphite_legs_red2	25	50
+
+shop	farming_shop_4	31	0	1000	700	10	Alice's Farming shop.
+npc	farming_shopkeeper_4	3
+stock	rake	500	10
+stock	dibber	500	10
+stock	secateurs	500	10
+stock	spade	500	10
+stock	gardening_trowel	500	120
+stock	watering_can_0	500	10
+stock	plantpot_compost	500	10
+stock	pack_plant_pot_compost	30	2
+stock	bucket_compost	500	10
+stock	pack_compost	10	50
+stock	sack_empty	500	10
+stock	pack_sack	30	2
+stock	basket_empty	500	10
+stock	pack_basket	30	2
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	potato	0	100
+stock	onion	0	100
+stock	cabbage	0	100
+stock	tomato	0	100
+stock	sweetcorn	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	hammerstone_hops	0	100
+stock	asgarnian_hops	0	100
+stock	yanillian_hops	0	100
+stock	krandorian_hops	0	100
+stock	wildblood_hops	0	100
+stock	jute_fibre	0	100
+stock	barley	0	100
+stock	plant_cure	100	10
+
+shop	kebos_farming_seed_shop	18	0	1000	600	20	Allanna's Farming Shop
+npc	kebos_farming_store	3
+stock	rake	5	10
+stock	dibber	5	10
+stock	secateurs	5	10
+stock	spade	5	10
+stock	gardening_trowel	3	20
+stock	watering_can_0	30	5
+stock	plantpot_empty	100	10
+stock	plantpot_compost	100	10
+stock	pack_plant_pot_compost	10	5
+stock	bucket_compost	100	10
+stock	pack_compost	10	50
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	sack_empty	100	2
+stock	pack_sack	30	2
+stock	basket_empty	100	2
+stock	pack_basket	30	2
+stock	plant_cure	40	5
+
+shop	tzhaar_shop_oreandgem	16	0	1000	600	20	Amelia's Seed Shop
+npc	kebos_seed_merchant	3
+stock	potato_seed	20	100
+stock	onion_seed	10	100
+stock	cabbage_seed	5	100
+stock	tomato_seed	0	100
+stock	sweetcorn_seed	0	100
+stock	strawberry_seed	0	100
+stock	watermelon_seed	0	100
+stock	barley_seed	20	100
+stock	jute_seed	5	100
+stock	rosemary_seed	20	100
+stock	marigold_seed	20	100
+stock	hammerstone_hop_seed	20	100
+stock	asgarnian_hop_seed	10	100
+stock	yanillian_hop_seed	5	100
+stock	krandorian_hop_seed	0	100
+stock	wildblood_hop_seed	0	100
+
+shop	swordshop	18	0	1000	550	1	Amlodd's Magical Supplies
+npc	prif_runestore	3
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	naturerune	250	30
+stock	cosmicrune	250	30
+stock	lawrune	250	30
+stock	deathrune	250	15
+stock	bloodrune	250	30
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+
+shop	frisd_armourshop	12	0	1000	600	20	Aneirin's Armour
+npc	prif_armourstore	3
+stock	mithril_platebody	4	300
+stock	adamant_platebody	3	400
+stock	rune_chainbody	1	15000
+stock	mithril_platelegs	4	300
+stock	adamant_platelegs	3	400
+stock	rune_platelegs	1	15000
+stock	mithril_plateskirt	4	300
+stock	adamant_plateskirt	3	400
+stock	rune_plateskirt	1	15000
+stock	mithril_full_helm	4	300
+stock	adamant_full_helm	3	400
+stock	rune_full_helm	1	15000
+
+shop	archeryshop	17	0	1000	550	10	Arcuani's Archery Supplies
+npc	tal_teklan_archery_trader	3
+stock	shortbow	4	100
+stock	longbow	4	100
+stock	oak_shortbow	3	200
+stock	oak_longbow	3	200
+stock	willow_shortbow	2	200
+stock	willow_longbow	2	200
+stock	maple_shortbow	1	100
+stock	maple_longbow	1	100
+stock	bronze_arrow	2000	10
+stock	iron_arrow	1500	15
+stock	steel_arrow	1000	20
+stock	mithril_arrow	800	15
+stock	adamant_arrow	600	20
+stock	rune_arrow	200	30
+stock	bronze_knife	2000	0
+stock	iron_knife	1000	0
+stock	steel_knife	800	0
+
+shop	cam_torum_shop_baker	8	0	1000	800	20	Ardougne Baker's Stall.
+npc	baker_merchant_ardougne2	3
+stock	bread	10	150
+stock	cake	3	1000
+stock	chocolate_slice	6	400
+stock	chocolate_bar	9	250
+stock	bread	10	100
+stock	cake	3	800
+stock	chocolate_slice	8	200
+stock	chocolate_bar	7	200
+
+shop	ranging_guild_tribalshop	12	0	1200	950	20	Ardougne Fur Stall.
+npc	fur_merchant	3
+stock	fur	3	100
+stock	grey_wolf_fur	3	100
+stock	huntingbeast_polar_fur	0	100
+stock	huntingbeast_woodland_fur	0	100
+stock	huntingbeast_jungle_fur	0	100
+stock	huntingbeast_desert_fur	0	100
+stock	hunting_fur_jaguar_shabby	0	100
+stock	hunting_fur_jaguar_perfect	0	100
+stock	hunting_fur_leopard_shabby	0	100
+stock	hunting_fur_leopard_perfect	0	100
+stock	hunting_fur_tiger_shabby	0	100
+stock	hunting_fur_tiger_perfect	0	100
+
+shop	mguild_rewardshop	4	0	1500	800	30	Ardougne Gem Stall.
+npc	gem_merchant_ardougne	3
+stock	sapphire	2	15000
+stock	emerald	1	35000
+stock	ruby	1	60000
+stock	diamond	0	4000
+
+shop	silvershop_uim	3	0	1000	700	20	Ardougne Silver Stall.
+npc	silver_merchant_ardougne	3
+stock	nostringstar	2	100
+stock	silver_ore	1	2000
+stock	silver_bar	1	1000
+
+shop	silvershop_gim	3	0	1000	600	20	Ardougne Spice Stall.
+npc	spice_merchant	3
+stock	spicespot	1	100
+stock	knife	1	2
+stock	garlic	2	5
+
+shop	death_generalshop	40	1	1300	400	30	Arhein's General Goods
+npc	arhein	3
+stock	bucket_empty	10	50
+stock	pack_bucket	15	10
+stock	bronze_pickaxe	2	100
+stock	bowl_empty	2	100
+stock	cake_tin	2	100
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	rope	2	300
+stock	pot_empty	2	100
+stock	knife	2	100
+
+shop	bedabincampshop	8	0	1100	700	30	Armour Shop
+npc	frisd_armourmerchant	3
+stock	mithril_chainbody	4	100
+stock	mithril_med_helm	4	100
+stock	mithril_full_helm	4	100
+stock	mithril_sq_shield	4	100
+stock	mithril_kiteshield	4	100
+stock	mithril_platelegs	4	100
+stock	mithril_plateskirt	4	100
+stock	mithril_platebody	4	100
+
+shop	warguild_armour_shop	38	0	1000	600	20	Armour store.
+npc	smithing_guild_buyer	3
+stock	rune_med_helm	0	500
+stock	rune_full_helm	0	500
+stock	rune_platebody	0	500
+stock	rune_plateskirt	0	500
+stock	rune_sq_shield	0	500
+stock	rune_kiteshield	0	500
+stock	rune_chainbody	0	500
+stock	rune_platelegs	0	500
+stock	adamant_med_helm	0	500
+stock	adamant_full_helm	0	500
+stock	adamant_platebody	0	500
+stock	adamant_plateskirt	0	500
+stock	adamant_sq_shield	0	500
+stock	adamant_kiteshield	0	500
+stock	adamant_chainbody	0	500
+stock	adamant_platelegs	0	500
+stock	mithril_med_helm	0	500
+stock	mithril_full_helm	0	500
+stock	mithril_platebody	0	500
+stock	mithril_plateskirt	0	500
+stock	mithril_sq_shield	0	500
+stock	mithril_kiteshield	0	500
+stock	mithril_chainbody	0	500
+stock	mithril_platelegs	0	500
+
+shop	shantayshop	20	0	1500	500	10	Armoury
+npc	lathas_shopkeeper	3
+stock	bronze_arrow	200	10
+stock	bolt	200	10
+stock	shortbow	4	100
+stock	longbow	2	200
+stock	crossbow	2	400
+stock	bronze_arrowheads	800	10
+stock	iron_arrowheads	800	20
+stock	steel_arrowheads	800	40
+stock	mithril_arrowheads	800	80
+stock	iron_axe	5	200
+stock	steel_axe	3	400
+stock	iron_battleaxe	5	100
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	bronze_2h_sword	4	200
+stock	iron_2h_sword	3	300
+stock	steel_2h_sword	2	500
+stock	black_2h_sword	1	700
+stock	mithril_2h_sword	1	1000
+stock	adamant_2h_sword	1	15000
+
+shop	ranging_guild_armourshop	40	1	1050	550	20	Arnold's Eclectic Supplies.
+npc	swan_arnold	3
+stock	net	2	10
+stock	harpoon	2	75
+stock	raw_monkfish	1	1000
+stock	monkfish	0	500
+stock	bread	1	1000
+stock	pot_empty	4	10
+stock	bucket_milk	1	100
+stock	needle	3	60
+stock	thread	15	10
+stock	beer	10	4
+stock	glassblowingpipe	2	100
+stock	knife	1	15
+
+shop	craftingshop2	12	0	1000	650	20	Artima's Crafting Supplies
+npc	fortis_shop_crafting	3
+stock	chisel	5	20
+stock	hammer	5	20
+stock	needle	5	10
+stock	thread	50	5
+stock	shears	5	20
+stock	glassblowingpipe	5	20
+stock	ring_mould	4	50
+stock	necklace_mould	4	50
+stock	amulet_mould	4	50
+stock	jewl_bracelet_mould	4	50
+stock	tiara_mould	4	50
+stock	xbows_silver_bolt_mould	4	50
+
+shop	wildernesscapeshop4	40	1	1300	400	30	Auburnvale General Store
+npc	auburn_general_store	3
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	bronze_axe	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	torch_unlit	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	20
+stock	pot_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	vial_empty	15	150
+
+shop	runeshop_skillcape	16	0	1000	600	1	Aubury's Rune Shop.
 npc	aubury_2op	3
 stock	airrune	5000	10
 stock	firerune	5000	10
@@ -19,7 +486,193 @@ stock	pack_chaosrune	35	10
 stock	skillcape_runecrafting	1	1
 stock	skillcape_runecrafting_trimmed	1	1
 
-shop	magicshop	18	0	1000	600	1	Betty's Magic Emporium
+shop	mikeshop	40	1	1300	400	30	Aurel's Supplies
+npc	burgh_general_store_owner	3
+stock	bronze_axe	10	100
+stock	tinderbox	10	100
+stock	snail_corpse1	10	100
+stock	raw_mackerel	10	100
+
+shop	frisd_weaponshop	12	0	1300	500	10	Authentic Throwing Weapons.
+npc	ranging_guild_tribal_salesman	3
+stock	bronze_javelin	900	20
+stock	iron_javelin	800	20
+stock	steel_javelin	700	40
+stock	mithril_javelin	600	60
+stock	adamant_javelin	500	80
+stock	rune_javelin	400	100
+stock	bronze_thrownaxe	900	20
+stock	iron_thrownaxe	800	20
+stock	steel_thrownaxe	700	40
+stock	mithril_thrownaxe	600	60
+stock	adamnt_thrownaxe	500	80
+stock	rune_thrownaxe	400	100
+
+shop	ii_shop	6	0	1300	400	30	Ava's Odds and Ends
+npc	anma_assistant	3
+stock	feather	1000	100
+stock	pack_feather	100	10
+stock	iron_arrow	40	100
+stock	steel_arrow	10	100
+stock	iron_arrowheads	30	100
+stock	steel_arrowheads	20	100
+
+shop	magicshop	50	0	1000	550	1	Baba Yaga's Magic Shop.
+npc	lunar_moonclan_baba_yaga	3
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	naturerune	250	30
+stock	deathrune	250	15
+stock	lawrune	250	30
+stock	bloodrune	250	30
+stock	soulrune	250	10
+stock	astralrune	250	10
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+stock	battlestaff	5	90
+stock	staff_of_fire	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_air	2	1000
+stock	staff_of_earth	2	1000
+stock	poh_lunar_signet	5	1
+stock	lunar_book	100	100
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	naturerune	250	30
+stock	deathrune	250	15
+stock	lawrune	250	30
+stock	bloodrune	250	30
+stock	soulrune	250	10
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+stock	battlestaff	5	90
+stock	staff_of_fire	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_air	2	1000
+stock	staff_of_earth	2	1000
+stock	lunar_book	100	100
+
+shop	dt_bandit_shop	14	0	1000	700	10	Bandit Bargains
+npc	dt_bandit_shopkeeper	3
+stock	water_skin4	5	100
+stock	water_skin0	5	100
+stock	jug_water	5	100
+stock	bowl_water	5	100
+stock	bucket_water	5	100
+stock	jug_empty	5	100
+stock	pack_jug_empty	8	15
+stock	bowl_empty	5	100
+stock	bucket_empty	5	100
+stock	pack_bucket	15	10
+stock	desert_boots	5	500
+stock	desert_shirt	5	500
+stock	desert_robe	5	500
+stock	knife	5	100
+
+shop	joeshop	40	1	900	600	30	Bandit Duty Free
+npc	noterazzo	3
+stock	pot_empty	5	50
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	15
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	bronze_pickaxe	5	100
+stock	bronze_axe	10	100
+
+shop	aprilfoolshorseshop	31	0	1300	400	30	Barkers' Haberdashery
+npc	werewolfshopkeeper2	3
+stock	wolfenboots_grey	5	100
+stock	wolfenrobetop_grey	5	100
+stock	wolfenrobebottom_grey	5	100
+stock	wolfenhat_grey	5	100
+stock	wolfengloves_grey	5	100
+stock	wolfenboots_crimson	5	100
+stock	wolfenrobetop_crimson	5	100
+stock	wolfenrobebottom_crimson	5	100
+stock	wolfenhat_crimson	5	100
+stock	wolfengloves_crimson	5	100
+stock	wolfenboots_tangerine	5	100
+stock	wolfenrobetop_tangerine	5	100
+stock	wolfenrobebottom_tangerine	5	100
+stock	wolfenhat_tangerine	5	100
+stock	wolfengloves_tangerine	5	100
+stock	wolfenboots_ocean	5	100
+stock	wolfenrobetop_ocean	5	100
+stock	wolfenrobebottom_ocean	5	100
+stock	wolfenhat_ocean	5	100
+stock	wolfengloves_ocean	5	100
+stock	wolfenboots_purple	5	100
+stock	wolfenrobetop_purple	5	100
+stock	wolfenrobebottom_purple	5	100
+stock	wolfenhat_purple	5	100
+stock	wolfengloves_purple	5	100
+stock	red_cape	5	500
+stock	black_cape	5	500
+stock	blue_cape	5	500
+stock	yellow_cape	5	500
+stock	green_cape	5	500
+
+shop	lunar_runeshop_compl	28	0	1000	550	2	Battle Runes
+npc	rcu_zammy_mage1a	3
+stock	firerune	1000	10
+stock	waterrune	1000	10
+stock	airrune	1000	10
+stock	earthrune	1000	10
+stock	mindrune	1000	10
+stock	chaosrune	500	10
+stock	deathrune	500	10
+stock	bloodrune	500	15
+stock	pack_firerune	50	2
+stock	pack_waterrune	50	2
+stock	pack_airrune	50	2
+stock	pack_earthrune	50	2
+stock	pack_mindrune	35	5
+stock	pack_chaosrune	35	5
+stock	firerune	100	10
+stock	waterrune	100	10
+stock	airrune	100	10
+stock	earthrune	100	10
+stock	mindrune	100	10
+stock	bodyrune	100	10
+stock	chaosrune	50	25
+stock	deathrune	50	50
+stock	pack_firerune	35	15
+stock	pack_waterrune	35	15
+stock	pack_airrune	35	15
+stock	pack_earthrune	35	15
+stock	pack_mindrune	25	25
+stock	pack_chaosrune	25	25
+
+shop	poh_sawmill_shop_iron	7	0	1200	800	30	Bedabin Village Bartering
+npc	bedabin	3
+stock	water_skin4	5	100
+stock	water_skin0	5	100
+stock	jug_water	5	100
+stock	bowl_water	5	100
+stock	bucket_water	5	100
+stock	knife	5	100
+stock	hammer	5	100
+
+shop	cam_torum_shop_magic	18	0	1000	600	1	Betty's Magic Emporium
 npc	betty	3
 stock	firerune	5000	10
 stock	waterrune	5000	10
@@ -40,7 +693,83 @@ stock	pack_eye_newt	60	50
 stock	bluewizhat	1	100
 stock	blackwizhat	1	100
 
-shop	battleaxeshop	6	0	1000	550	10	Brian's Battleaxe Bazaar.
+shop	tzhaar_shop_cityequipment	11	0	1500	250	10	Blades by Urbi.
+npc	contact_market_dagger	3
+stock	bronze_dagger	1	100
+stock	iron_dagger	1	100
+stock	steel_dagger	1	100
+stock	black_dagger	0	100
+stock	mithril_dagger	1	100
+stock	adamant_dagger	1	100
+stock	rune_dagger	1	100
+stock	dragon_dagger	0	100
+stock	bronze_scimitar	1	100
+stock	iron_scimitar	1	100
+stock	steel_scimitar	1	100
+
+shop	armourshopnardah	12	0	1000	600	10	Blair's Armour
+npc	shayzien_armourshop	3
+stock	bronze_chainbody	5	100
+stock	iron_chainbody	3	200
+stock	steel_chainbody	3	400
+stock	bronze_platelegs	3	100
+stock	iron_platelegs	2	200
+stock	steel_platelegs	2	400
+stock	bronze_plateskirt	3	100
+stock	iron_plateskirt	2	200
+stock	steel_plateskirt	2	400
+stock	bronze_med_helm	5	100
+stock	iron_med_helm	3	200
+stock	steel_med_helm	3	400
+
+shop	gnomeshop_rometti	40	1	1300	400	30	Bolkoy's Village Shop
+npc	treevillage_shopkeeper1	3
+stock	pot_empty	3	100
+stock	bronze_pickaxe	5	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	bronze_arrow	30	100
+stock	cooked_meat	2	100
+
+shop	kebos_farming_seed_iron_shop	17	0	1000	700	10	Branwen's Farming Shop
+npc	prif_farmingstore	3
+stock	rake	500	10
+stock	dibber	500	10
+stock	secateurs	500	10
+stock	spade	500	10
+stock	gardening_trowel	500	120
+stock	watering_can_0	500	10
+stock	plantpot_empty	500	10
+stock	plantpot_compost	500	100
+stock	pack_plant_pot_compost	30	2
+stock	bucket_compost	500	10
+stock	pack_compost	10	50
+stock	sack_empty	500	10
+stock	pack_sack	30	2
+stock	basket_empty	500	10
+stock	pack_basket	30	2
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+
+shop	mguild_oreshop	9	0	1000	650	20	Brian's Archery Supplies.
+npc	salesman_ranging	3
+stock	steel_arrow	1500	10
+stock	mithril_arrow	1000	15
+stock	adamant_arrow	800	20
+stock	oak_shortbow	4	100
+stock	oak_longbow	4	100
+stock	willow_shortbow	3	200
+stock	willow_longbow	3	200
+stock	maple_shortbow	2	200
+stock	maple_longbow	2	200
+
+shop	duel_rottenfruitshop	6	0	1000	550	10	Brian's Battleaxe Bazaar.
 npc	brian	3
 stock	bronze_battleaxe	4	200
 stock	iron_battleaxe	3	300
@@ -48,6 +777,592 @@ stock	steel_battleaxe	2	500
 stock	black_battleaxe	1	700
 stock	mithril_battleaxe	1	1000
 stock	adamant_battleaxe	1	15000
+
+shop	keldagrim_quality_weapons_shop	37	0	1000	600	10	Briget's Weapons
+npc	shayzien_weaponshop	3
+stock	iron_battleaxe	5	100
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	bronze_sword	5	100
+stock	iron_sword	4	200
+stock	steel_sword	4	400
+stock	black_sword	3	1000
+stock	mithril_sword	3	3000
+stock	adamant_sword	2	12000
+stock	bronze_longsword	4	100
+stock	iron_longsword	3	200
+stock	steel_longsword	3	400
+stock	black_longsword	2	1000
+stock	mithril_longsword	2	3000
+stock	adamant_longsword	1	12000
+stock	bronze_dagger	10	100
+stock	iron_dagger	6	200
+stock	steel_dagger	5	400
+stock	black_dagger	4	1000
+stock	mithril_dagger	3	3000
+stock	adamant_dagger	2	12000
+stock	bronze_mace	5	100
+stock	iron_mace	4	200
+stock	steel_mace	4	400
+stock	mithril_mace	3	3000
+stock	adamant_mace	2	12000
+stock	bronze_2h_sword	4	200
+stock	iron_2h_sword	3	300
+stock	steel_2h_sword	2	500
+stock	black_2h_sword	1	700
+stock	mithril_2h_sword	1	1000
+stock	adamant_2h_sword	1	15000
+stock	bronze_scimitar	5	100
+stock	iron_scimitar	4	200
+stock	steel_scimitar	4	400
+stock	black_scimitar	3	1000
+stock	mithril_scimitar	3	3000
+
+shop	regicide_general_shop	40	1	1300	400	30	Burthorpe Supplies
+npc	death_shopkeeper	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	3	25
+stock	shears	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	knife	2	100
+stock	cup_empty	20	50
+
+shop	cam_torum_shop_general	40	0	1000	600	20	Cam Torum Blacksmith
+npc	cam_torum_shop_blacksmith	3
+stock	bronze_dagger	5	100
+stock	iron_dagger	4	200
+stock	steel_dagger	4	400
+stock	mithril_dagger	3	3000
+stock	adamant_dagger	2	12000
+stock	bronze_sword	5	100
+stock	iron_sword	4	200
+stock	steel_sword	4	400
+stock	mithril_sword	3	3000
+stock	adamant_sword	2	12000
+stock	bronze_warhammer	5	100
+stock	iron_warhammer	4	200
+stock	steel_warhammer	4	400
+stock	mithril_warhammer	3	3000
+stock	adamnt_warhammer	2	12000
+stock	bronze_sq_shield	5	100
+stock	iron_sq_shield	4	200
+stock	steel_sq_shield	4	400
+stock	mithril_sq_shield	3	3000
+stock	adamant_sq_shield	2	12000
+
+shop	rasoolshop1	40	1	1300	400	30	Cam Torum General Store
+npc	cam_torum_shop_general	3
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	bronze_pickaxe	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	torch_unlit	5	20
+stock	rope	10	20
+stock	charcoal	10	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	piedish	15	20
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+
+shop	magearena_runeshop	17	0	1300	400	30	Candle Shop
+npc	candle_maker	3
+stock	unlit_candle	10	100
+
+shop	dt2_vault_shop	6	0	1500	800	30	Carefree Crafting Stall
+npc	dwarf_city_shop_craft	3
+stock	chisel	2	100
+stock	ring_mould	4	100
+stock	necklace_mould	2	100
+stock	needle	3	100
+stock	thread	100	5
+stock	ball_of_wool	100	5
+
+shop	staffshop	8	0	1000	600	20	Cassie's Shield Shop.
+npc	cassie	3
+stock	wooden_shield	5	100
+stock	bronze_sq_shield	3	100
+stock	bronze_kiteshield	3	300
+stock	iron_sq_shield	2	400
+stock	iron_kiteshield	0	1500
+stock	steel_sq_shield	0	1500
+stock	steel_kiteshield	0	1500
+stock	mithril_sq_shield	0	1500
+
+shop	lunar_runeshop	24	0	1000	700	10	Cobado's Groceries
+npc	fortis_shop_food	3
+stock	cooking_apple	20	100
+stock	pineapple	15	100
+stock	banana	10	100
+stock	tomato	10	100
+stock	potato	10	100
+stock	onion	10	100
+stock	cabbage	10	100
+stock	orange	2	100
+stock	papaya	0	100
+stock	coconut	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	sweetcorn	0	100
+stock	redberries	2	100
+stock	cheese	10	100
+stock	chocolate_bar	10	100
+stock	raw_chicken	5	100
+stock	raw_beef	5	100
+stock	raw_rabbit	5	100
+stock	raw_herring	5	100
+stock	raw_cod	5	100
+stock	raw_tuna	5	100
+stock	raw_bass	3	100
+stock	raw_swordfish	2	100
+
+shop	cam_torum_shop_jewellery	24	0	1000	700	20	Conara's Jewels
+npc	cam_torum_shop_jewellery	3
+stock	sapphire	3	100
+stock	emerald	2	100
+stock	ruby	2	100
+stock	diamond	0	4000
+stock	gold_ring	3	1000
+stock	gold_necklace	3	1000
+stock	strung_gold_amulet	3	1000
+stock	jewl_gold_bracelet	3	1000
+stock	sapphire_ring	0	1000
+stock	emerald_ring	0	2000
+stock	ruby_ring	0	2000
+stock	diamond_ring	0	6000
+stock	sapphire_necklace	0	2000
+stock	emerald_necklace	0	2000
+stock	ruby_necklace	0	3000
+stock	diamond_necklace	0	6000
+stock	strung_sapphire_amulet	0	2000
+stock	strung_emerald_amulet	0	3000
+stock	strung_ruby_amulet	0	4000
+stock	strung_diamond_amulet	0	5000
+stock	jewl_sapphire_bracelet	0	2000
+stock	jewl_emerald_bracelet	0	3000
+stock	jewl_ruby_bracelet	0	4000
+stock	jewl_diamond_bracelet	0	5000
+
+shop	magicguildshop	23	0	3600	500	20	Crossbow Shop (Dwarven Mine)
+npc	xbows_sales_dwarf_mine	3
+stock	xbows_crossbow_stock_wood	5	100
+stock	xbows_crossbow_stock_oak	5	100
+stock	xbows_crossbow_stock_willow	5	100
+stock	xbows_crossbow_stock_teak	5	100
+stock	xbows_crossbow_stock_maple	5	100
+stock	xbows_crossbow_stock_mahogany	0	100
+stock	xbows_crossbow_stock_yew	0	100
+stock	xbows_crossbow_limbs_bronze	5	100
+stock	xbows_crossbow_limbs_iron	5	100
+stock	xbows_crossbow_limbs_steel	5	100
+stock	xbows_crossbow_limbs_mithril	5	100
+stock	xbows_crossbow_limbs_adamantite	0	100
+stock	xbows_crossbow_limbs_runite	0	100
+stock	xbows_crossbow_bronze	0	100
+stock	xbows_crossbow_iron	0	100
+stock	xbows_crossbow_steel	0	100
+stock	xbows_crossbow_mithril	0	100
+stock	xbows_crossbow_adamantite	0	100
+stock	xbows_crossbow_runite	0	100
+
+shop	keldagrim_quality_armour_shop	19	0	3000	600	20	Crossbow Shop (Keldagrim)
+npc	xbows_sales_dwarf_keldegrim	3
+stock	xbows_crossbow_stock_wood	5	100
+stock	xbows_crossbow_stock_oak	5	100
+stock	xbows_crossbow_stock_willow	5	100
+stock	xbows_crossbow_stock_teak	5	100
+stock	xbows_crossbow_stock_maple	5	100
+stock	xbows_crossbow_stock_mahogany	5	100
+stock	xbows_crossbow_stock_yew	0	100
+stock	xbows_crossbow_limbs_bronze	5	100
+stock	xbows_crossbow_limbs_iron	5	100
+stock	xbows_crossbow_limbs_steel	5	100
+stock	xbows_crossbow_limbs_mithril	5	100
+stock	xbows_crossbow_limbs_adamantite	5	100
+stock	xbows_crossbow_limbs_runite	0	100
+stock	xbows_crossbow_bronze	0	100
+stock	xbows_crossbow_iron	0	100
+stock	xbows_crossbow_steel	0	100
+stock	xbows_crossbow_mithril	0	100
+stock	xbows_crossbow_adamantite	0	100
+stock	xbows_crossbow_runite	0	100
+
+shop	xbows_shop	25	0	3600	500	20	Crossbow Shop (White Wolf Mountain)
+npc	xbows_sales_dwarf_white_wolf_mt	3
+stock	xbows_crossbow_stock_wood	5	100
+stock	xbows_crossbow_stock_oak	5	100
+stock	xbows_crossbow_stock_willow	5	100
+stock	xbows_crossbow_stock_teak	5	100
+stock	xbows_crossbow_stock_maple	5	100
+stock	xbows_crossbow_stock_mahogany	0	100
+stock	xbows_crossbow_stock_yew	0	100
+stock	xbows_crossbow_limbs_bronze	5	100
+stock	xbows_crossbow_limbs_iron	5	100
+stock	xbows_crossbow_limbs_steel	5	100
+stock	xbows_crossbow_limbs_mithril	5	100
+stock	xbows_crossbow_limbs_adamantite	0	100
+stock	xbows_crossbow_limbs_runite	0	100
+stock	xbows_crossbow_bronze	0	100
+stock	xbows_crossbow_iron	0	100
+stock	xbows_crossbow_steel	0	100
+stock	xbows_crossbow_mithril	0	100
+stock	xbows_crossbow_adamantite	0	100
+stock	xbows_crossbow_runite	0	100
+
+shop	mm_scimitar_shop2	10	0	1000	500	20	Daga's Scimitar Smithy
+npc	mm_daga	3
+stock	bronze_scimitar	10	100
+stock	iron_scimitar	10	200
+stock	steel_scimitar	8	600
+stock	mithril_scimitar	6	400
+stock	dragon_scimitar	0	500
+stock	bronze_scimitar	10	100
+stock	iron_scimitar	10	200
+stock	steel_scimitar	8	600
+stock	mithril_scimitar	6	400
+stock	dragon_scimitar	4	500
+
+shop	keldagrim_general_shop	40	1	1300	400	30	Dal's General Ogre Supplies
+npc	ogre_trader1	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	knife	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+
+shop	slayershop	27	0	1000	500	10	Dargaud's Bow and Arrows.
+npc	ranging_guild_bow_salesman	3
+stock	arrow_shaft	1000	50
+stock	bronze_arrowheads	500	10
+stock	iron_arrowheads	400	20
+stock	steel_arrowheads	300	30
+stock	mithril_arrowheads	200	40
+stock	adamant_arrowheads	200	50
+stock	rune_arrowheads	150	60
+stock	bronze_arrow	1000	10
+stock	iron_arrow	500	20
+stock	steel_arrow	500	40
+stock	mithril_arrow	500	60
+stock	adamant_arrow	450	120
+stock	rune_arrow	400	130
+stock	zogre_brutal_bronze	0	1000
+stock	zogre_brutal_iron	0	1000
+stock	zogre_brutal_steel	0	1000
+stock	zogre_brutal_black	0	1500
+stock	zogre_brutal_mithril	0	2000
+stock	zogre_brutal_adamant	0	3000
+stock	zogre_brutal_rune	0	4000
+stock	shortbow	20	50
+stock	oak_shortbow	20	60
+stock	willow_shortbow	20	70
+stock	longbow	20	50
+stock	oak_longbow	20	60
+stock	zogre_bow	0	2000
+stock	willow_longbow	20	70
+
+shop	shieldshop	40	1	1300	400	30	Darkmeyer General Store
+npc	darkm_trader_general	3
+stock	pot_empty	10	50
+stock	jug_empty	10	50
+stock	bucket_empty	10	50
+stock	bowl_empty	10	50
+stock	tinderbox	5	80
+stock	chisel	5	80
+stock	hammer	5	80
+stock	knife	5	80
+stock	spade	5	80
+stock	needle	5	50
+stock	thread	20	20
+stock	rope	5	80
+stock	long_rope	5	80
+
+shop	cheapringshop	6	0	1200	400	30	Darkmeyer Lantern Shop
+npc	darkm_trader_candles	3
+stock	tinderbox	5	50
+stock	unlit_candle	20	80
+stock	torch_unlit	10	100
+stock	oil_lamp_empty	5	100
+stock	oil_lantern_empty	5	100
+stock	bullseye_lantern_empty	5	100
+
+shop	warguild_food_shop_uim	5	0	1000	600	30	Darkmeyer Meat Shop
+npc	darkm_trader_food	3
+stock	raw_beef	15	100
+stock	raw_chicken	15	100
+stock	raw_rat_meat	20	100
+stock	raw_mystery_meat	25	80
+stock	raw_bear_meat	10	120
+
+shop	pickaxeshop	8	0	1300	400	20	Darkmeyer Seamstress
+npc	darkm_trader_clothes	3
+stock	needle	8	50
+stock	thread	50	20
+stock	ball_of_wool	20	50
+stock	silk	5	100
+stock	werewolve_fur	3	100
+stock	vyrelord_shoes	10	100
+stock	vyrelord_legs	10	100
+stock	vyrelord_torso	10	100
+
+shop	runeshop_skillcape_uim	15	0	1000	600	10	Darren's Wilderness Cape Shop.
+npc	wilderness_capeseller_4	3
+stock	wilderness_cape_4	100	100
+stock	wilderness_cape_14	100	100
+stock	wilderness_cape_24	100	100
+stock	wilderness_cape_34	100	100
+stock	wilderness_cape_44	100	100
+
+shop	ranging_guild_armourshop_skillcape	40	0	1000	550	10	Daryl's Ranging Surplus
+npc	shayzien_rangeshop	3
+stock	shortbow	4	100
+stock	longbow	4	100
+stock	oak_shortbow	3	200
+stock	oak_longbow	3	200
+stock	willow_shortbow	2	200
+stock	willow_longbow	2	200
+stock	maple_shortbow	1	100
+stock	maple_longbow	1	100
+stock	crossbow	2	400
+stock	bronze_arrow	2000	10
+stock	iron_arrow	1500	15
+stock	steel_arrow	1000	20
+stock	mithril_arrow	800	15
+stock	adamant_arrow	600	20
+stock	rune_arrow	200	30
+stock	bolt	2000	10
+stock	xbows_crossbow_bolts_iron	1500	15
+
+shop	amuletshop	10	0	1200	900	20	Davon's Amulet Store.
+npc	davon	3
+stock	blessedstar	0	200
+stock	amulet_of_magic	0	200
+stock	amulet_of_defence	0	200
+stock	amulet_of_strength	0	200
+stock	amulet_of_power	0	200
+stock	blessedstar	0	200
+stock	amulet_of_magic	0	200
+stock	amulet_of_defence	0	200
+stock	amulet_of_strength	0	200
+stock	amulet_of_power	0	200
+
+shop	archeryshop2_skillcape	29	0	1500	500	20	Diango's Toy Store
+npc	aprilfoolshorsesalesman	3
+stock	horsey_brown	5	20
+stock	horsey_white	5	20
+stock	horsey_black	5	20
+stock	horsey_grey	5	20
+stock	spinning_plate	250	20
+stock	goblinraid_warhammer	3	5
+stock	goblinraid_bow	3	5
+stock	goblinraid_staff	3	5
+stock	goblin_rpg	100	1
+stock	af15_dragon_claws	5	5
+stock	charity_banner	5	5
+stock	chronicle	1	1
+stock	chronicle_tele_card	100	1
+stock	skillcape_cabbage	10	1
+stock	eoc_book	15	2
+stock	wwf_toy_tiger	15	3
+stock	wwf_toy_lion	15	2
+stock	wwf_toy_snow_leopard	15	2
+stock	wwf_toy_amur_leopard	15	2
+stock	pride17_scarf	5	1
+stock	easter18_handegg_light	100	1
+stock	easter18_handegg_balance	100	1
+stock	easter18_handegg_chaos	100	1
+stock	midsum_helm16	100	1
+stock	midsummer_fan	100	1
+stock	summer2015_mask	100	1
+stock	wreath	100	1
+stock	discofreturning	7	160
+stock	oculus	100	1
+
+shop	gotr_reward_shop_law	17	0	1000	600	20	Dodgy Mike's Second Hand Clothing.
+npc	fever_dodgy_mike	3
+stock	pirate_boots	15	100
+
+shop	craftingshop	11	0	1000	650	20	Dommik's Crafting Store.
+npc	dommik	3
+stock	chisel	2	100
+stock	ring_mould	4	100
+stock	necklace_mould	2	100
+stock	amulet_mould	2	100
+stock	needle	3	100
+stock	thread	100	5
+stock	holy_symbol_mould	3	100
+stock	sickle_mould	6	15
+stock	tiara_mould	10	10
+stock	xbows_silver_bolt_mould	10	10
+stock	jewl_bracelet_mould	5	100
+
+shop	roguesden_shop	40	1	1300	550	30	Dorgesh-Kaan General Supplies
+npc	dorgesh_market_head	3
+stock	torch_unlit	5	10
+stock	tinderbox	2	100
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	6	15
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	rope	3	50
+stock	glassblowingpipe	1	10
+
+shop	tzhaar_shop_cityoreandgem	16	0	1200	600	30	Draynor Seed Market
+npc	seed_merchant	3
+stock	potato_seed	20	100
+stock	onion_seed	10	100
+stock	cabbage_seed	5	100
+stock	tomato_seed	0	100
+stock	sweetcorn_seed	0	100
+stock	strawberry_seed	0	100
+stock	watermelon_seed	0	100
+stock	barley_seed	20	100
+stock	jute_seed	5	100
+stock	rosemary_seed	20	100
+stock	marigold_seed	20	100
+stock	hammerstone_hop_seed	20	100
+stock	asgarnian_hop_seed	10	100
+stock	yanillian_hop_seed	5	100
+stock	krandorian_hop_seed	0	100
+stock	wildblood_hop_seed	0	100
+
+shop	memberstaffshop	9	0	1000	700	20	Drogo's Mining Emporium.
+npc	drogo	3
+stock	hammer	4	100
+stock	bronze_pickaxe	4	100
+stock	copper_ore	0	15000
+stock	tin_ore	0	15000
+stock	iron_ore	0	5000
+stock	coal	0	5000
+stock	bronze_bar	0	4000
+stock	iron_bar	0	4000
+stock	gold_bar	0	3000
+
+shop	generalshopnardah	40	1	1300	300	30	Dwarven shopping store
+npc	dwarven_shopkeeper	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+
+shop	candleshop	6	0	1300	550	10	Dyes to Die For
+npc	tal_teklan_dye_trader	3
+stock	reddye	10	100
+stock	yellowdye	10	100
+stock	bluedye	10	100
+stock	orangedye	10	100
+stock	greendye	10	100
+stock	purpledye	10	100
+
+shop	generalshop9_easter	40	1	1300	400	30	Edgeville General Store
+npc	generalshopkeeper5	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	knife	1	2
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
+
+shop	runeshop_skillcape_trimmed_uim	15	0	1000	600	10	Edmond's Wilderness Cape Shop.
+npc	wilderness_capeseller_8	3
+stock	wilderness_cape_8	100	100
+stock	wilderness_cape_18	100	100
+stock	wilderness_cape_28	100	100
+stock	wilderness_cape_38	100	100
+stock	wilderness_cape_48	100	100
+
+shop	runeshop_skillcape_trimmed_gim	15	0	1000	600	10	Edward's Wilderness Cape Shop.
+npc	wilderness_capeseller_5	3
+stock	wilderness_cape_5	100	100
+stock	wilderness_cape_15	100	100
+stock	wilderness_cape_25	100	100
+stock	wilderness_cape_35	100	100
+stock	wilderness_cape_45	100	100
+
+shop	poh_sawmill_shop	7	0	1000	550	10	Elgan's Exceptional Staffs!
+npc	prif_staffstore	3
+stock	battlestaff	5	100
+stock	plainstaff	5	100
+stock	magic_staff	5	200
+stock	staff_of_air	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_earth	2	1000
+stock	staff_of_fire	2	1000
+
+shop	fishingshop	24	0	1300	700	30	Etceteria Fish
+npc	misc_fish_monger	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1500	1
+stock	pack_fishing_bait	80	10
+stock	feather	1000	1
+stock	pack_feather	100	2
+stock	big_net	5	100
+stock	raw_shrimp	0	300
+stock	raw_sardine	200	1
+stock	raw_herring	0	900
+stock	raw_mackerel	0	1000
+stock	raw_cod	0	1100
+stock	raw_anchovies	0	1200
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_bass	0	2700
+stock	raw_swordfish	0	2900
+stock	raw_shark	0	3500
+
+shop	gotr_reward_shop_death	17	0	1000	600	10	Fairy Fixit's Fairy Enchantment
+npc	fairy2_repair_2ops	3
+stock	poh_fairy_enchantment	4	1
+
+shop	skirtshop	40	1	1300	400	30	Falador General Store
+npc	generalshopkeeper4	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
 
 shop	keldagrim_clothes_shop	20	0	1300	400	20	Fancy Clothes Store
 npc	tailorp	3
@@ -72,6 +1387,134 @@ stock	hunting_woodland_feather	0	20
 stock	hunting_polar_feather	0	20
 stock	hunting_stripy_bird_feather	0	20
 
+shop	pillory_rottenfruitshop	17	0	1000	700	10	Faustus' Fruit and Veg
+npc	aldarin_food_store	3
+stock	cooking_apple	10	100
+stock	banana	10	100
+stock	orange	10	100
+stock	lemon	10	100
+stock	lime	10	100
+stock	pineapple	5	100
+stock	redberries	5	100
+stock	grapes	5	100
+stock	tomato	10	100
+stock	potato	10	100
+stock	onion	10	100
+stock	cabbage	10	100
+stock	papaya	0	100
+stock	coconut	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	sweetcorn	0	100
+
+shop	archeryshop2	28	0	1000	700	10	Fernahei's Fishing Hut.
+npc	shilofishowner	3
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	fishing_bait	200	1
+stock	pack_fishing_bait	30	5
+stock	feather	800	1
+stock	pack_feather	50	2
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	fishing_bait	200	1
+stock	pack_fishing_bait	30	5
+stock	feather	800	1
+stock	pack_feather	50	2
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+
+shop	tal_teklan_dyeshop	6	0	1000	600	1	Filamina's Wares
+npc	arceuus_staffshop	3
+stock	plainstaff	5	100
+stock	magic_staff	5	200
+stock	staff_of_air	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_earth	2	1000
+stock	staff_of_fire	2	1000
+
+shop	hunting_customfurshop	20	0	1000	550	10	Fine Fashions
+npc	gnome_rometti	3
+stock	gnome_hat_pink	5	200
+stock	gnome_hat_green	5	200
+stock	gnome_hat_blue	5	200
+stock	gnome_hat_cream	5	200
+stock	gnome_hat_turquoise	5	200
+stock	gnome_robetop_pink	5	200
+stock	gnome_robetop_green	5	200
+stock	gnome_robetop_blue	5	200
+stock	gnome_robetop_cream	5	200
+stock	gnome_robetop_turquoise	5	200
+stock	gnome_robebottoms_pink	5	200
+stock	gnome_robebottoms_green	5	200
+stock	gnome_robebottoms_blue	5	200
+stock	gnome_robebottoms_cream	5	200
+stock	gnome_robebottoms_turquoise	5	200
+stock	gnome_boots_pink	5	200
+stock	gnome_boots_green	5	200
+stock	gnome_boots_blue	5	200
+stock	gnome_boots_cream	5	200
+stock	gnome_boots_turquoise	5	200
+
+shop	ranging_guild_bowshop	27	0	1000	700	10	Fishing Guild Shop.
+npc	fishguildshop	3
+stock	net	5	100
+stock	big_net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	2000	1
+stock	pack_fishing_bait	150	5
+stock	feather	1500	1
+stock	pack_feather	150	2
+stock	raw_cod	0	300
+stock	raw_mackerel	0	600
+stock	raw_bass	0	900
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_swordfish	0	2900
+stock	cod	0	300
+stock	mackerel	0	600
+stock	bass	0	900
+stock	tuna	0	2300
+stock	lobster	0	2600
+stock	swordfish	0	2900
+
+shop	myarm_shop	11	0	1000	550	10	Floria's Fashion
+npc	fortis_shop_seamstress	3
+stock	leather_gloves	5	100
+stock	leather_boots	5	100
+stock	black_skirt	3	100
+stock	blue_skirt	2	100
+stock	pink_skirt	2	100
+stock	green_cape	4	100
+stock	blue_cape	4	100
+stock	yellow_cape	4	100
+stock	red_cape	4	100
+stock	white_apron	3	100
+stock	brown_apron	3	100
+
+shop	warguild_food_shop_gim	5	0	1100	700	30	Flosi's Fishmongers
+npc	frisd_fishmerchant	3
+stock	raw_lobster	5	10
+stock	raw_tuna	20	10
+stock	raw_salmon	20	10
+stock	raw_cod	20	10
+stock	raw_shark	0	10
+
+shop	poh_sawmill_shop_uim	5	0	1000	600	10	Flynn's Mace Market.
+npc	flynn	3
+stock	bronze_mace	5	100
+stock	iron_mace	4	200
+stock	steel_mace	4	400
+stock	mithril_mace	3	3000
+stock	adamant_mace	2	12000
+
 shop	foodshop	11	0	1000	700	10	Food Store
 npc	wydin	3
 stock	pot_flour	3	100
@@ -86,7 +1529,277 @@ stock	cheese	3	100
 stock	tomato	3	100
 stock	potato	1	100
 
-shop	fishingshop	19	0	1000	700	10	Gerrant's Fishy Business.
+shop	fortis_shop_silk	3	0	1000	800	20	Fortis Baker's Stall
+npc	fortis_shop_baker	3
+stock	bread	15	100
+stock	cake	5	800
+stock	chocolate_slice	5	200
+
+shop	cam_torum_shop_blacksmith	36	0	1000	600	20	Fortis Blacksmith
+npc	fortis_shop_blacksmith	3
+stock	bronze_platebody	5	100
+stock	iron_platebody	4	200
+stock	steel_platebody	4	400
+stock	mithril_platebody	3	3000
+stock	adamant_platebody	2	12000
+stock	bronze_platelegs	5	100
+stock	iron_platelegs	4	200
+stock	steel_platelegs	4	400
+stock	mithril_platelegs	3	3000
+stock	adamant_platelegs	2	12000
+stock	bronze_plateskirt	5	100
+stock	iron_plateskirt	4	200
+stock	steel_plateskirt	4	400
+stock	mithril_plateskirt	3	3000
+stock	adamant_plateskirt	2	12000
+stock	bronze_longsword	5	100
+stock	iron_longsword	4	200
+stock	steel_longsword	4	400
+stock	mithril_longsword	3	3000
+stock	adamant_longsword	2	12000
+stock	bronze_scimitar	5	100
+stock	iron_scimitar	4	200
+stock	steel_scimitar	4	400
+stock	mithril_scimitar	3	3000
+stock	adamant_scimitar	2	12000
+stock	bronze_spear	5	100
+stock	iron_spear	4	200
+stock	steel_spear	4	400
+stock	mithril_spear	3	3000
+stock	adamant_spear	2	12000
+stock	bronze_dagger	5	0
+stock	iron_dagger	3	0
+stock	steel_dagger	2	0
+stock	bronze_halberd	5	0
+stock	iron_halberd	3	0
+stock	steel_halberd	2	0
+
+shop	gemshop3	16	0	1200	950	20	Fortis Fur Stall
+npc	fortis_shop_fur	3
+stock	fur	5	100
+stock	grey_wolf_fur	5	100
+stock	varlamore_jaguar_fur	2	100
+stock	hunting_fennecfox_fur	0	100
+stock	hunting_antelopemoon_fur	0	100
+stock	hunting_antelopesun_fur	0	100
+stock	huntingbeast_polar_fur	0	100
+stock	huntingbeast_woodland_fur	0	100
+stock	huntingbeast_jungle_fur	0	100
+stock	huntingbeast_desert_fur	0	100
+stock	hunting_fur_jaguar_shabby	0	100
+stock	hunting_fur_jaguar_perfect	0	100
+stock	hunting_fur_leopard_shabby	0	100
+stock	hunting_fur_leopard_perfect	0	100
+stock	hunting_fur_tiger_shabby	0	100
+stock	hunting_fur_tiger_perfect	0	100
+
+shop	fortis_shop_gems	4	0	1500	800	30	Fortis Gem Stall
+npc	fortis_shop_gems	3
+stock	sapphire	2	15000
+stock	emerald	1	35000
+stock	ruby	1	60000
+stock	diamond	0	4000
+
+shop	wildernesscapeshop5	40	1	1300	400	30	Fortis General Store
+npc	fortis_shop_general_1	3
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	30
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	cake_tin	15	20
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+
+shop	fortis_shop_fur	16	0	500	500	0	Fortis Silk Stall
+npc	fortis_shop_silk	3
+stock	needle	5	5
+stock	thread	100	5
+stock	silk	50	25
+
+shop	fortis_shop_farming	24	0	1000	700	20	Fortis Spice Stall
+npc	fortis_shop_spices	3
+stock	knife	5	5
+stock	spicespot	20	100
+stock	garlic	10	10
+
+shop	ahoy_akharanu_shop	40	1	1300	400	30	Fossil Island General Store
+npc	fossil_general_store	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	rope	5	100
+
+shop	contact_daggershop	11	0	1000	950	10	Frankie's Fishing Emporium
+npc	piscarilius_fish_trader	3
+stock	raw_shrimp	500	300
+stock	raw_sardine	500	600
+stock	raw_herring	250	900
+stock	raw_mackerel	250	1000
+stock	raw_cod	100	1100
+stock	raw_anchovies	100	1200
+stock	raw_tuna	100	2300
+stock	raw_lobster	50	2600
+stock	raw_bass	50	2700
+stock	raw_swordfish	50	2900
+stock	raw_shark	25	3500
+
+shop	sunset_coast_fishing_shop	24	0	1300	700	30	Fremennik Fish Monger
+npc	viking_fish_monger	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1500	1
+stock	pack_fishing_bait	80	10
+stock	feather	1000	1
+stock	pack_feather	50	2
+stock	big_net	5	100
+stock	raw_shrimp	0	300
+stock	raw_sardine	200	1
+stock	raw_herring	0	900
+stock	raw_mackerel	0	1000
+stock	raw_cod	0	1100
+stock	raw_anchovies	0	1200
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_bass	0	2700
+stock	raw_swordfish	0	2900
+stock	raw_shark	0	3500
+
+shop	hunting_shop_yanille	12	0	1200	950	20	Fremennik Fur Trader
+npc	viking_fur_monger	3
+stock	fur	3	100
+stock	grey_wolf_fur	3	100
+stock	huntingbeast_polar_fur	0	100
+stock	huntingbeast_woodland_fur	0	100
+stock	huntingbeast_jungle_fur	0	100
+stock	huntingbeast_desert_fur	0	100
+stock	hunting_fur_jaguar_shabby	0	100
+stock	hunting_fur_jaguar_perfect	0	100
+stock	hunting_fur_leopard_shabby	0	100
+stock	hunting_fur_leopard_perfect	0	100
+stock	hunting_fur_tiger_shabby	0	100
+stock	hunting_fur_tiger_perfect	0	100
+
+shop	cookeryshop	12	0	1000	550	10	Frenita's Cookery Shop.
+npc	frenita	3
+stock	piedish	5	200
+stock	cooking_apple	2	200
+stock	cake_tin	2	200
+stock	bowl_empty	2	200
+stock	potato	5	200
+stock	tinderbox	4	200
+stock	jug_empty	1	100
+stock	pack_jug_empty	3	15
+stock	pot_empty	8	100
+stock	chocolate_bar	2	100
+stock	pot_flour	8	100
+stock	cup_empty	20	50
+
+shop	mm_scimitar_shop	7	0	1000	700	20	Frincos' Fabulous Herb Store.
+npc	frincos	3
+stock	vial_empty	50	100
+stock	pack_vial_empty	10	50
+stock	vial_water	45	100
+stock	pack_vial_water	8	50
+stock	pestle_and_mortar	3	100
+stock	eye_of_newt	50	20
+stock	pack_eye_newt	20	100
+
+shop	royal_clotheshop	17	0	1000	550	10	Funch's Fine Groceries
+npc	gnome_heckelfunch	3
+stock	brandy	10	100
+stock	gin	10	100
+stock	vodka	10	1
+stock	whisky	10	100
+stock	pineapple	10	200
+stock	equa_leaves	20	100
+stock	orange	20	100
+stock	lemon	20	100
+stock	lime	20	100
+stock	dwellberries	5	100
+stock	cocktail_shaker	10	200
+stock	chocolate_bar	20	100
+stock	chocolate_dust	10	100
+stock	pot_of_cream	5	100
+stock	bucket_milk	5	100
+stock	knife	5	200
+stock	cocktail_glass_empty	20	10
+
+shop	staffshop_uim	6	0	1000	600	20	Gaius' Two Handed Shop.
+npc	gaius	3
+stock	bronze_2h_sword	4	200
+stock	iron_2h_sword	3	300
+stock	steel_2h_sword	2	500
+stock	black_2h_sword	1	700
+stock	mithril_2h_sword	1	1000
+stock	adamant_2h_sword	1	15000
+
+shop	trader_shop_landsend	40	0	1000	400	30	Garden Centre
+npc	poh_garden_supplier	3
+stock	poh_sapling_tree_1	20	100
+stock	poh_sapling_tree_2	20	100
+stock	poh_sapling_tree_3	20	100
+stock	poh_sapling_tree_4	20	100
+stock	poh_sapling_tree_5	20	100
+stock	poh_sapling_tree_6	20	100
+stock	poh_sapling_tree_7	20	100
+stock	poh_sapling_plant_1	20	100
+stock	poh_sapling_plant_2	20	100
+stock	poh_sapling_plant_3	20	100
+stock	poh_sapling_flowerb1	20	100
+stock	poh_sapling_flowerb2	20	100
+stock	poh_sapling_flowerb3	20	100
+stock	poh_sapling_flowera1	20	100
+stock	poh_sapling_flowera2	20	100
+stock	poh_sapling_flowera3	20	100
+
+shop	mguild_pickaxeshop	8	0	1000	700	30	Gem Trader.
+npc	gem_trader	3
+stock	uncut_sapphire	1	25000
+stock	uncut_emerald	1	40000
+stock	uncut_ruby	0	2000
+stock	uncut_diamond	0	4000
+stock	sapphire	1	15000
+stock	emerald	1	35000
+stock	ruby	0	2000
+stock	diamond	0	4000
+
+shop	championshop	40	1	2000	100	30	General Store (Canifis)
+npc	werewolfshopkeeper3	3
+stock	needle	2	100
+stock	thread	50	100
+stock	pot_empty	3	100
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	6	15
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	empty_dye_bottle	10	100
+stock	knife	2	100
+stock	blood_talisman	1	0
+
+shop	omnishop_inv_temp	28	0	1000	700	10	Gerrant's Fishy Business.
 npc	gerrant	3
 stock	net	5	100
 stock	fishing_rod	5	100
@@ -108,6 +1821,76 @@ stock	raw_tuna	0	2300
 stock	raw_lobster	0	2600
 stock	raw_swordfish	0	2900
 
+shop	tzhaar_shop_general	15	0	1000	250	10	Gianne's Restaurant
+npc	gnome_waiter	3
+stock	premade_vegetable_batta	3	100
+stock	premade_worm_batta	3	100
+stock	premade_toad_batta	3	100
+stock	premade_fruit_batta	3	100
+stock	premade_cheese+tom_batta	3	100
+stock	premade_worm_hole	3	100
+stock	premade_tangled_toads_legs	3	100
+stock	premade_veg_ball	3	100
+stock	premade_chocolate_bomb	3	100
+stock	premade_worm_crunchies	3	100
+stock	premade_toad_crunchies	3	100
+stock	premade_chocchip_crunchies	3	100
+stock	premade_spicy_crunchies	3	100
+
+shop	slayershop_pre_porcine	26	0	1000	550	10	Grand Tree Groceries
+npc	gnome_hudo	3
+stock	gianne_dough	50	100
+stock	equa_leaves	20	100
+stock	pot_flour	10	200
+stock	gnome_spice	10	100
+stock	onion	10	100
+stock	potato	10	100
+stock	cabbage	10	100
+stock	tomato	10	100
+stock	cheese	10	100
+stock	tbw_spider_on_stick_raw	0	100
+stock	tbw_spider_on_shaft_raw	0	100
+stock	lime	10	100
+stock	orange	10	100
+stock	lemon	10	100
+stock	pineapple	10	100
+stock	dwellberries	10	100
+stock	cocktail_shaker	10	200
+stock	chocolate_bar	20	100
+stock	chocolate_dust	10	100
+stock	pot_of_cream	5	100
+stock	bucket_milk	5	100
+stock	knife	5	200
+stock	giannes_cook_book	5	100
+stock	batta_tin	5	200
+stock	crunchy_tray	5	200
+stock	gnomebowl_mould	5	200
+
+shop	deadman_gemshop	28	0	1500	800	30	Green Gemstone Gems
+npc	dwarf_city_shop_gems	3
+stock	sapphire	3	15000
+stock	emerald	1	1000
+stock	ruby	1	2000
+stock	diamond	0	4000
+
+shop	poh_sawmill_shop_gim	5	0	1200	950	20	Greengrocer of Miscellania
+npc	misc_veg_monger	3
+stock	cabbage	10	100
+stock	potato	10	100
+stock	onion	10	100
+stock	tomato	10	100
+stock	garlic	2	400
+
+shop	magicguildshop2	7	0	1300	400	30	Grud's Herblore Stall.
+npc	ogre_merchant	3
+stock	vial_empty	50	100
+stock	pack_vial_empty	10	50
+stock	vial_water	45	100
+stock	pack_vial_water	8	50
+stock	pestle_and_mortar	3	100
+stock	eye_of_newt	50	20
+stock	pack_eye_newt	20	100
+
 shop	goldshop	15	0	1000	700	20	Grum's Gold Exchange.
 npc	grum	3
 stock	gold_ring	0	1000
@@ -126,7 +1909,178 @@ stock	strung_emerald_amulet	0	3000
 stock	strung_ruby_amulet	0	4000
 stock	strung_diamond_amulet	0	5000
 
-shop	warguild_armour_shop	38	0	1000	600	20	Horvik's Armour Shop.
+shop	staffshop_gim	6	0	1300	550	10	Guinevere's Dyes
+npc	prif_dyestore	3
+stock	reddye	10	100
+stock	yellowdye	10	100
+stock	bluedye	10	100
+stock	orangedye	10	100
+stock	greendye	10	100
+stock	purpledye	10	100
+
+shop	gnomeshop_gulluck	21	0	1000	250	10	Gulluck and Sons
+npc	gnome_gulluck	3
+stock	bronze_arrow	200	10
+stock	bolt	150	10
+stock	pearl_bolt	1	1500
+stock	shortbow	4	100
+stock	longbow	2	200
+stock	crossbow	2	400
+stock	bronze_arrowheads	200	10
+stock	iron_arrowheads	180	20
+stock	steel_arrowheads	160	40
+stock	mithril_arrowheads	140	80
+stock	iron_axe	5	200
+stock	steel_axe	3	400
+stock	iron_battleaxe	5	100
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	bronze_2h_sword	4	200
+stock	iron_2h_sword	3	300
+stock	steel_2h_sword	2	500
+stock	black_2h_sword	1	700
+stock	mithril_2h_sword	1	1000
+stock	adamant_2h_sword	1	15000
+
+shop	wildernesscapeshop6	40	1	1300	400	30	Gunslik's Assorted Items
+npc	dwarf_city_shop_general_store	3
+stock	jug_empty	2	100
+stock	pack_jug_empty	4	15
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	unlit_candle	10	500
+stock	torch_unlit	10	500
+stock	charcoal	50	200
+stock	leather_gloves	10	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	10	50
+stock	pestle_and_mortar	3	500
+stock	rope	10	200
+
+shop	fortis_shop_maces	6	0	1000	600	20	Gwyn's Mining Emporium
+npc	prif_miningstore	3
+stock	iron_pickaxe	5	100
+stock	steel_pickaxe	4	200
+stock	mithril_pickaxe	3	300
+stock	adamant_pickaxe	2	500
+stock	rune_pickaxe	1	600
+stock	chisel	10	100
+
+shop	mcannonshop	8	0	1000	500	20	Hamab's Crafting Emporium
+npc	mm_hamab	3
+stock	chisel	2	100
+stock	ring_mould	4	100
+stock	necklace_mould	2	100
+stock	mm_monkey_amulet_mould	2	100
+stock	needle	3	100
+stock	thread	100	5
+stock	ball_of_wool	100	5
+stock	jewl_bracelet_mould	2	100
+
+shop	kebos_farming_seed_shop_uim	16	0	1000	550	30	Happy Heroes' H'emporium.
+npc	helemos	3
+stock	dragon_battleaxe	1	500
+stock	dragon_mace	1	500
+
+shop	deadman_scimitarshop	4	0	1000	600	20	Harpoon Joe's House of 'Rum'.
+npc	fever_harpoon_joe	3
+stock	beer	3	100
+stock	fever_rum	3	100
+stock	jug_wine	1	15000
+stock	stew	5	150
+
+shop	trader_shop_tempestus_iron	40	0	1000	700	10	Harry's Fishing Shop.
+npc	harry	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1200	1
+stock	pack_fishing_bait	80	5
+stock	big_net	5	100
+stock	raw_shrimp	0	300
+stock	raw_sardine	0	600
+stock	raw_herring	0	900
+stock	raw_mackerel	0	1000
+stock	raw_cod	0	1100
+stock	raw_anchovies	0	1200
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_bass	0	2700
+stock	raw_swordfish	0	2900
+stock	raw_shark	0	3500
+
+shop	kebos_weapon_shop	10	0	1000	600	10	Helmet Shop.
+npc	peksa	3
+stock	bronze_med_helm	5	100
+stock	iron_med_helm	3	200
+stock	steel_med_helm	3	400
+stock	mithril_med_helm	1	3000
+stock	adamant_med_helm	1	12000
+stock	bronze_full_helm	4	100
+stock	iron_full_helm	3	200
+stock	steel_full_helm	2	400
+stock	mithril_full_helm	1	3000
+stock	adamant_full_helm	1	12000
+
+shop	maceshop	7	0	1000	700	20	Hendor's Awesome Ores
+npc	mguild_oreseller	3
+stock	copper_ore	0	15000
+stock	tin_ore	0	15000
+stock	iron_ore	0	5000
+stock	mithril_ore	0	2000
+stock	adamantite_ore	0	800
+stock	runite_ore	0	200
+stock	coal	0	5000
+
+shop	magicguildshop2_skillcape_trimmed	8	0	1000	700	30	Herquin's Gems.
+npc	herquin	3
+stock	uncut_sapphire	1	25000
+stock	uncut_emerald	0	1000
+stock	uncut_ruby	0	2000
+stock	uncut_diamond	0	4000
+stock	sapphire	1	15000
+stock	emerald	0	1000
+stock	ruby	0	2000
+stock	diamond	0	4000
+
+shop	archeryshop2_skillcape_trimmed	30	0	1000	500	10	Hickton's Archery Emporium.
+npc	hickton	3
+stock	bolt	200	10
+stock	bronze_arrow	1000	10
+stock	iron_arrow	800	20
+stock	steel_arrow	0	1000
+stock	mithril_arrow	0	2000
+stock	adamant_arrow	0	3000
+stock	rune_arrow	0	4000
+stock	zogre_brutal_bronze	0	1000
+stock	zogre_brutal_iron	0	1000
+stock	zogre_brutal_steel	0	1000
+stock	zogre_brutal_black	0	1500
+stock	zogre_brutal_mithril	0	2000
+stock	zogre_brutal_adamant	0	3000
+stock	zogre_brutal_rune	0	4000
+stock	bronze_arrowheads	1000	10
+stock	iron_arrowheads	800	20
+stock	steel_arrowheads	600	40
+stock	mithril_arrowheads	400	40
+stock	adamant_arrowheads	200	40
+stock	rune_arrowheads	100	40
+stock	shortbow	4	100
+stock	longbow	2	200
+stock	crossbow	2	400
+stock	oak_shortbow	4	800
+stock	oak_longbow	4	1600
+stock	zogre_bow	0	2000
+stock	studded_body	2	1000
+stock	studded_chaps	2	1000
+stock	skillcape_fletching	1	1
+stock	skillcape_fletching_trimmed	1	1
+
+shop	hunting_shop_nardah	12	0	1000	600	20	Horvik's Armour Shop.
 npc	horvik_the_armourer	3
 stock	bronze_chainbody	5	100
 stock	iron_chainbody	3	200
@@ -141,7 +2095,512 @@ stock	iron_platelegs	1	100
 stock	studded_body	1	700
 stock	studded_chaps	1	700
 
-shop	archeryshop	15	0	1000	550	10	Lowe's Archery Emporium
+shop	legendsguildshop	7	0	1000	700	30	Huito's Herbal Supplies
+npc	cam_torum_shop_herbalist	3
+stock	pestle_and_mortar	5	20
+stock	vial_empty	100	150
+stock	vial_water	100	150
+stock	eye_of_newt	50	20
+stock	pack_vial_empty	100	100
+stock	pack_vial_water	100	100
+stock	pack_eye_newt	50	100
+
+shop	runeshop_skillcape_gim	15	0	1000	600	10	Ian's Wilderness Cape Shop.
+npc	wilderness_capeseller_2	3
+stock	wilderness_cape_2	100	100
+stock	wilderness_cape_12	100	100
+stock	wilderness_cape_22	100	100
+stock	wilderness_cape_32	100	100
+stock	wilderness_cape_42	100	100
+
+shop	charleyshop	40	1	1000	500	20	Ifaba's General Store
+npc	mm_ifaba	3
+stock	pot_empty	3	50
+stock	jug_empty	2	50
+stock	pack_jug_empty	8	9
+stock	rope	8	50
+stock	bucket_empty	2	50
+stock	pack_bucket	10	10
+stock	tinderbox	2	50
+stock	hammer	5	50
+
+shop	hunting_shop_guild	12	0	1300	400	20	Imia's Supplies
+npc	hg_mixedhide_seller	3
+stock	hunting_butterfly_net	5	10
+stock	butterfly_jar	100	10
+stock	magic_imp_box	30	50
+stock	noose_wand	50	5
+stock	hunting_ojibway_bird_snare	50	5
+stock	hunting_box_trap	25	10
+stock	hunting_teasing_stick	5	10
+stock	torch_unlit	20	10
+stock	hunting_snare	10	10
+stock	pack_ojibway_bird_snare	3	10
+stock	pack_box_trap	3	10
+stock	pack_magic_imp_box	3	10
+
+shop	magicguildshop2_skillcape	8	0	1500	250	10	Iorwerth's Arms
+npc	prif_weaponstore	3
+stock	adamant_dagger	4	100
+stock	rune_dagger	3	100
+stock	dragon_dagger	2	500
+stock	adamant_scimitar	2	500
+stock	rune_scimitar	1	1000
+stock	adamant_halberd	7	100
+stock	rune_halberd	7	100
+stock	dragon_halberd	5	500
+
+shop	gotr_reward_shop_blood	17	0	500	300	10	Irksol (shop)
+npc	irksol	3
+stock	ruby_ring	5	500
+
+shop	shilofishingshop	19	0	1000	700	10	Ishmael's Fish He Sells
+npc	tempoross_ishmael	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1500	1
+stock	pack_fishing_bait	80	5
+stock	feather	1000	1
+stock	pack_feather	100	2
+stock	raw_shrimp	0	300
+stock	raw_sardine	200	1
+stock	raw_herring	0	900
+stock	raw_anchovies	0	1200
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_swordfish	0	2900
+
+shop	pvpa_shop_inv	3	0	1000	600	10	Iwan's Maces
+npc	prif_macestore	3
+stock	mithril_mace	3	3000
+stock	adamant_mace	2	5000
+stock	rune_mace	1	8000
+
+shop	contact_craftingshop	10	0	1500	250	10	Jamila's Craft Stall.
+npc	contact_market_craft	3
+stock	chisel	2	100
+stock	ring_mould	4	100
+stock	necklace_mould	2	100
+stock	amulet_mould	2	100
+stock	needle	3	100
+stock	thread	100	5
+stock	holy_symbol_mould	3	100
+stock	sickle_mould	6	15
+stock	tiara_mould	10	10
+stock	jewl_bracelet_mould	5	100
+
+shop	keldagrim_pickaxe_shop	7	0	1000	700	30	Jatix's Herblore Shop.
+npc	jatix	3
+stock	vial_empty	800	100
+stock	pack_vial_empty	800	50
+stock	vial_water	750	100
+stock	pack_vial_water	750	50
+stock	pestle_and_mortar	3	100
+stock	eye_of_newt	800	20
+stock	pack_eye_newt	100	100
+
+shop	chainmailshop	40	1	1300	400	3	Jennifer's General Supplies
+npc	shayzien_generalstore	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	bronze_axe	10	100
+stock	pest_field_ration	25	10
+
+shop	generalshop2	56	1	1500	500	20	Jiminua's Jungle Store.
+npc	jiminua	3
+stock	tinderbox	2	500
+stock	unlit_candle	10	500
+stock	torch_unlit	10	500
+stock	pot_empty	3	500
+stock	rope	10	200
+stock	leather_armour	12	500
+stock	leather_gloves	10	500
+stock	leather_boots	10	500
+stock	cooked_meat	2	500
+stock	bread	10	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	100	50
+stock	vial_water	50	200
+stock	pack_vial_water	50	50
+stock	pestle_and_mortar	3	500
+stock	3doseantipoison	10	150
+stock	papyrus	50	200
+stock	charcoal	50	200
+stock	knife	2	100
+stock	hammer	10	500
+stock	machette	50	200
+stock	chisel	10	500
+stock	spade	10	500
+stock	bronze_axe	2	500
+stock	bronze_pickaxe	2	500
+stock	iron_axe	5	700
+stock	bronze_bar	10	500
+stock	blankrune_high	0	1000
+stock	tinderbox	2	500
+stock	unlit_candle	10	500
+stock	torch_unlit	10	500
+stock	pot_empty	3	500
+stock	rope	10	200
+stock	leather_armour	12	500
+stock	leather_gloves	10	500
+stock	leather_boots	10	500
+stock	cooked_meat	2	500
+stock	bread	10	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	100	50
+stock	vial_water	50	200
+stock	pack_vial_water	50	50
+stock	pestle_and_mortar	3	500
+stock	3doseantipoison	10	150
+stock	papyrus	50	200
+stock	charcoal	50	200
+stock	knife	2	100
+stock	hammer	10	500
+stock	machette	50	200
+stock	chisel	10	500
+stock	spade	10	500
+stock	bronze_axe	2	500
+stock	bronze_pickaxe	2	500
+stock	iron_axe	5	700
+stock	bronze_bar	10	500
+stock	blankrune_high	0	1000
+
+shop	kebos_farming_seed_shop_gim	16	0	1000	600	10	Jukat (shop)
+npc	jakut	3
+stock	dragon_longsword	2	500
+stock	dragon_dagger	2	500
+
+shop	generalshop6	40	1	1300	400	30	Karamja General Store
+npc	generalshopkeeper7	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+
+shop	magearena_staffshop	3	0	1000	700	20	Karamja Wines, Spirits, and Beers.
+npc	zembo	3
+stock	beer	3	100
+stock	karamja_rum	3	100
+stock	jug_wine	1	15000
+
+shop	trader_shop_piscarilius_iron	40	0	1000	700	10	Kastori Farming Supplies
+npc	kastori_farming_trader	3
+stock	rake	5	10
+stock	dibber	5	10
+stock	secateurs	5	10
+stock	spade	5	10
+stock	gardening_trowel	10	20
+stock	watering_can_0	30	5
+stock	plantpot_compost	100	10
+stock	pack_plant_pot_compost	30	5
+stock	bucket_compost	30	10
+stock	pack_compost	30	50
+stock	sack_empty	30	2
+stock	pack_sack	30	2
+stock	basket_empty	30	2
+stock	pack_basket	30	2
+stock	bucket_empty	30	10
+stock	pack_bucket	30	10
+stock	plant_cure	50	5
+
+shop	lletyaseamstressshop1	40	1	1300	400	30	Kastori General Store
+npc	kastori_general_store	3
+stock	bronze_pickaxe	5	20
+stock	bronze_axe	5	20
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	30
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	cake_tin	15	20
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+
+shop	deadman_skirtshop	6	0	1100	700	30	Keepa Kettilon's store
+npc	frisd_cook	3
+stock	tuna	20	5
+stock	salmon	20	10
+stock	cod	20	10
+stock	lobster	10	10
+stock	swordfish	0	5
+stock	shark	0	1
+
+shop	keldagrim_quality_weapons_shop_uim	11	0	1300	500	30	Keldagrim Stonemason
+npc	poh_stonemason	3
+stock	limestonebrick	1000	100
+stock	marble_block	20	100
+stock	gold_leaf	20	100
+stock	tog_stone	10	100
+stock	poh_condensed_gold	10	100
+
+shop	archeryshop_uim	15	0	1500	800	30	Keldagrim's Best Bread
+npc	dwarf_city_shop_bakery	3
+stock	bread	10	100
+stock	cake	3	800
+stock	chocolate_slice	8	200
+
+shop	forestry_shop_log_storage	10	0	1000	600	10	Kenelme's Wares
+npc	piscarilius_foodshop	3
+stock	pot_flour	3	100
+stock	raw_beef	1	100
+stock	cabbage	3	100
+stock	banana	3	100
+stock	redberries	1	100
+stock	bread	0	100
+stock	chocolate_bar	1	95
+stock	cheese	3	100
+stock	tomato	3	100
+stock	potato	1	100
+
+shop	wildernesscapeshop2	40	1	1400	400	10	Khazard General Store
+npc	khazard_shopkeeper	3
+stock	bronze_pickaxe	5	100
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	15	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	rope	30	20
+stock	pot_flour	30	100
+stock	bucket_bailing	30	100
+stock	swamppaste	5000	10
+stock	knife	2	100
+stock	bronze_axe	5	100
+
+shop	viking_clothes_shop	21	0	100	0	0	King Narnode's Royal Seed Pods
+npc	grandtree_narnode_2ops	3
+stock	mm2_royal_seed_pod	30	1
+
+shop	viking_furshop	12	0	1000	800	20	Kourend Castle Gem Stall.
+npc	gem_merchant	3
+stock	sapphire	2	15000
+stock	emerald	1	35000
+stock	ruby	1	60000
+stock	diamond	0	4000
+
+shop	archeryshop2_skillcape_uim	29	0	1000	600	10	Larry's Wilderness Cape Shop.
+npc	wilderness_capeseller_3	3
+stock	wilderness_cape_3	100	100
+stock	wilderness_cape_13	100	100
+stock	wilderness_cape_23	100	100
+stock	wilderness_cape_33	100	100
+stock	wilderness_cape_43	100	100
+
+shop	uglug_nar_shop	40	1	1100	400	10	Leenz's General Supplies
+npc	piscarilius_generalstore_keeper	3
+stock	pot_empty	50000	1
+stock	jug_empty	5	150
+stock	pack_jug_empty	6	20
+stock	bucket_empty	5	10
+stock	pack_bucket	15	10
+stock	bowl_empty	5	80
+stock	tinderbox	2	3
+stock	hammer	5	3
+stock	nails_bronze	500	100
+stock	nails_iron	500	100
+
+shop	shop_pies	40	1	1550	550	10	Legends Guild General Store.
+npc	fionella	3
+stock	swordfish	20	200
+stock	apple_pie	5	200
+stock	3dose1attack	3	100
+stock	steel_arrow	500	100
+
+shop	ranging_guild_bowshop_uim	27	0	1500	500	20	Legends Guild Shop of Useful Items.
+npc	siegfried_erkle	3
+stock	mithril_seed	6	50
+stock	dusty_key	5	100
+stock	melzarkey	3	300
+stock	dragonshield_b	1	500
+stock	cape_of_legends	3	500
+
+shop	magicshop_uim	18	0	1000	200	20	Leon's Prototype Crossbow.
+npc	hunting_weapon_designer	3
+stock	hunting_crossbow	2	8
+
+shop	tzhaar_shop_equipment	10	0	1300	400	100	Leprechaun Larry's Farming Supplies.
+npc	myarm_leprechaun	4
+stock	rake	6	10
+stock	dibber	4	10
+stock	secateurs	1	10
+stock	spade	3	10
+stock	gardening_trowel	2	10
+stock	watering_can_0	2	10
+stock	bucket_compost	2	10
+stock	pack_compost	10	50
+stock	plant_cure	5	3
+stock	cocktail_glass_empty	523	10000
+
+shop	lighthouseshop	40	1	1100	400	10	Little Munty's Little Shop
+npc	lovakengj_generalstore	3
+stock	bronze_pickaxe	20	10
+stock	pot_empty	50000	1
+stock	jug_empty	5	150
+stock	pack_jug_empty	4	20
+stock	bucket_empty	5	10
+stock	pack_bucket	15	10
+stock	bowl_empty	5	80
+stock	tinderbox	2	3
+stock	ball_of_wool	30	5
+stock	chisel	2	3
+stock	hammer	5	3
+
+shop	lletyageneralshop1	40	1	1250	400	10	Little Shop of Horace
+npc	hosidius_generalstore	3
+stock	vial_water	60	20
+stock	pack_vial_water	30	30
+stock	pot_empty	30	1
+stock	jug_empty	5	150
+stock	pack_jug_empty	6	20
+stock	bucket_empty	5	10
+stock	pack_bucket	15	10
+stock	bowl_empty	5	80
+stock	machette	1	50
+stock	shears	2	5
+stock	rope	30	25
+stock	tinderbox	2	3
+stock	spade	5	4
+stock	ball_of_wool	30	5
+stock	chisel	2	3
+stock	hammer	5	3
+stock	needle	2	20
+stock	thread	40	4
+
+shop	roguesden_shop_skillcape	40	0	1300	400	30	Lletya Archery Shop
+npc	mourning_bow_seller	3
+stock	iron_arrow	2000	10
+stock	steel_arrow	500	40
+stock	mithril_arrow	500	60
+stock	adamant_arrow	450	120
+stock	rune_arrow	400	130
+stock	bolt	1500	10
+stock	oak_shortbow	5	200
+stock	oak_longbow	5	200
+stock	crossbow	5	400
+stock	willow_shortbow	5	70
+stock	willow_longbow	5	70
+
+shop	fortis_shop_food	24	0	1300	400	30	Lletya Food Store
+npc	mourning_elven_cook	3
+stock	bread	10	200
+stock	lobster	15	200
+stock	jug_wine	3	500
+stock	cheese	10	200
+stock	cake	5	200
+
+shop	mm_general_shop	40	1	1300	400	30	Lletya General Store
+npc	mourning_stores_man	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	15
+stock	shears	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	10	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	spade	5	100
+stock	knife	4	100
+
+shop	herbloreshop2	9	0	1300	550	10	Lletya Seamstress
+npc	mourning_seamstress	3
+stock	thread	8	100
+stock	needle	3	100
+stock	ball_of_wool	5	100
+stock	reddye	10	100
+stock	yellowdye	10	100
+stock	bluedye	10	100
+stock	orangedye	10	100
+stock	greendye	10	100
+stock	purpledye	10	100
+
+shop	roguesden_shop_iron	40	0	1000	550	10	Lliann's Wares
+npc	prif_lliann	3
+stock	prif_clan_crystal_ithell	10	200
+stock	prif_clan_crystal_iorwerth	10	200
+stock	prif_clan_crystal_trahaearn	10	200
+stock	prif_clan_crystal_cadarn	10	200
+stock	prif_clan_crystal_crwys	10	200
+stock	prif_clan_crystal_meilyr	10	200
+stock	prif_clan_crystal_hefin	10	200
+stock	prif_clan_crystal_amlodd	10	200
+stock	prif_elven_boots	50	150000
+stock	prif_elven_gloves	50	150000
+stock	prif_elven_clothes_bottoms_3	100	30000
+
+shop	trader_shop_aldarin_iron	40	0	1000	550	10	Logava Gricoller's Cooking Supplies
+npc	hosidius_foodstore	3
+stock	piedish	5	20
+stock	cake_tin	5	20
+stock	bowl_empty	2	200
+stock	tinderbox	3	20
+stock	jug_empty	3	20
+stock	pack_jug_empty	4	10
+stock	pot_empty	12	25
+stock	cup_empty	3	20
+stock	knife	3	15
+stock	ball_of_wool	30	5
+stock	potato	5	200
+stock	cooking_apple	2	200
+stock	bread	2	50
+stock	chocolate_bar	1	100
+stock	cheese	3	100
+stock	pot_flour	8	100
+
+shop	deadman_legsshop	6	0	1000	650	10	Louie's Armoured Legs Bazaar.
+npc	louie_legs	3
+stock	bronze_platelegs	5	100
+stock	iron_platelegs	3	400
+stock	steel_platelegs	2	900
+stock	black_platelegs	1	1200
+stock	mithril_platelegs	1	2000
+stock	adamant_platelegs	1	13000
+
+shop	lletyaarcheryshop1	15	0	1000	550	10	Lowe's Archery Emporium
 npc	lowe	3
 stock	bronze_arrow	2000	10
 stock	iron_arrow	1500	15
@@ -159,6 +2618,1298 @@ stock	maple_shortbow	1	100
 stock	maple_longbow	1	100
 stock	crossbow	2	400
 
+shop	royal_foodshop	10	0	1000	550	10	Lunami's Axe Shop
+npc	auburn_axe_store	3
+stock	bronze_axe	10	100
+stock	iron_axe	5	200
+stock	steel_axe	3	400
+stock	mithril_axe	2	200
+stock	adamant_axe	1	1100
+stock	bronze_battleaxe	4	200
+stock	iron_battleaxe	3	300
+stock	steel_battleaxe	2	500
+stock	mithril_battleaxe	1	1000
+stock	adamant_battleaxe	1	15000
+
+shop	runeshop_skillcape_trimmed	17	0	1000	600	1	Lundail's Arena-side Rune Shop.
+npc	magearena_runeshop	3
+stock	firerune	200	50
+stock	waterrune	200	50
+stock	airrune	200	50
+stock	earthrune	200	50
+stock	mindrune	140	50
+stock	bodyrune	140	50
+stock	naturerune	250	30
+stock	chaosrune	250	10
+stock	lawrune	250	30
+stock	cosmicrune	20	100
+stock	deathrune	250	15
+stock	pack_firerune	5	40
+stock	pack_waterrune	5	40
+stock	pack_airrune	5	40
+stock	pack_earthrune	5	40
+stock	pack_mindrune	4	40
+stock	pack_chaosrune	3	40
+
+shop	magearena_runeshop_uim	17	0	1000	0	20	Mage Arena Staffs.
+npc	magearena_guardian	3
+stock	saradomin_staff	5	100
+stock	guthix_staff	5	100
+stock	zamorak_staff	5	100
+
+shop	warguild_potion_shop	7	0	1000	600	1	Magic Guild Store (Mystic Robes)
+npc	magic_store_owner2	3
+stock	mystic_hat	1000	100
+stock	mystic_robe_top	1000	100
+stock	mystic_robe_bottom	1000	100
+stock	mystic_gloves	1000	100
+stock	mystic_boots	1000	100
+stock	skillcape_magic	1	1
+stock	skillcape_magic_trimmed	1	1
+
+shop	ranging_guild_bowshop_skillcape	27	0	1000	600	1	Magic Guild Store (Runes and Staves)
+npc	magic_store_owner	3
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	naturerune	250	30
+stock	deathrune	250	15
+stock	lawrune	250	30
+stock	bloodrune	250	30
+stock	soulrune	250	10
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+stock	battlestaff	5	90
+stock	staff_of_fire	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_air	2	1000
+stock	staff_of_earth	2	1000
+
+shop	runiteshop	40	1	1000	600	20	Martin Thwait's Lost and Found.
+npc	roguesden_trader	3
+stock	rope	50	100
+stock	lockpick	25	100
+stock	chisel	30	100
+stock	knife	20	100
+stock	roguesden_stethoscope	25	100
+stock	bronze_knife	15	100
+stock	iron_knife	10	100
+stock	steel_knife	5	100
+stock	bronze_claws	3	100
+stock	iron_claws	2	100
+stock	steel_claws	1	100
+stock	skillcape_thieving	1	1
+stock	skillcape_thieving_trimmed	1	1
+
+shop	mm_crafting_shop	10	0	1500	400	30	Miltog's Lamps
+npc	dorgesh_female_lamp_seller	3
+stock	torch_unlit	15	100
+stock	oil_lamp_empty	4	100
+stock	oil_lantern_empty	2	100
+stock	bullseye_lantern_empty	1	100
+stock	cave_goblin_mining_helmet_lit	1	100
+stock	tinderbox	10	100
+stock	dorgesh_light_bulb	0	100
+stock	oil_lamp_unlit	0	100
+stock	oil_lantern_unlit	0	100
+stock	bullseye_lantern_unlit	0	100
+
+shop	scimitarshop	7	0	1000	550	20	Miscellanian Clothes Shop
+npc	royal_clotheshop_owner	3
+stock	viking_top_darkbrown	5	100
+stock	viking_top_green	5	100
+stock	viking_top_beige	5	100
+stock	viking_top_red	5	100
+stock	viking_top_blue	5	100
+stock	vikingrobetop	5	100
+stock	vikingrobebottom	5	100
+
+shop	warguild_food_shop	8	0	1000	550	20	Miscellanian Food Shop
+npc	royal_foodshop_owner	3
+stock	bread	5	50
+stock	cheese	5	100
+stock	cabbage	5	100
+stock	potato	5	100
+stock	onion	5	100
+stock	pot_flour	5	100
+stock	chocolate_bar	2	100
+stock	bucket_milk	5	100
+
+shop	generalshop_phasmatys	40	1	1300	400	30	Miscellanian General Store
+npc	royal_generalstore_owner	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	6	15
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+
+shop	cam_torum_shop_mining	14	0	1000	700	20	Mistrock Mining Supplies
+npc	mistrock_mining_store	3
+stock	hammer	6	100
+stock	chisel	6	100
+stock	bronze_pickaxe	6	100
+stock	iron_pickaxe	6	100
+stock	steel_pickaxe	6	200
+stock	copper_ore	0	10
+stock	tin_ore	0	10
+stock	iron_ore	0	10
+stock	mithril_ore	0	10
+stock	adamantite_ore	0	10
+stock	runite_ore	0	10
+stock	coal	0	10
+stock	silver_ore	0	10
+stock	gold_ore	0	10
+
+shop	herbloreshop	9	0	1000	550	10	Moon Clan Fine Clothes.
+npc	lunar_moonclan_monk5	3
+stock	lunar_moonclan_headgear	9	800
+stock	lunar_moonclan_hat	10	800
+stock	lunar_moonclan_torso	10	800
+stock	lunar_moonclan_skirt	10	800
+stock	lunar_moonclan_gloves	9	800
+stock	lunar_moonclan_boots	12	800
+stock	lunar_moonclan_cape	15	800
+stock	needle	50	10
+stock	thread	500	10
+
+shop	gnomeshop_heck	40	1	1000	550	10	Moon Clan General Store.
+npc	lunar_moonclan_monk3	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	10	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	sos_security_book	5	100
+
+shop	keldagrim_warhammer_shop	8	0	1000	700	0	Moonrise Wines
+npc	aldarin_wine_store	3
+stock	blackbird_red	20	100
+stock	chilhuac_red	20	100
+stock	eclipse_wine	20	100
+stock	ixcoztic_white	20	100
+stock	metztonalli_white	20	100
+stock	tonameyo_white	20	100
+stock	chichilihui_rose	20	100
+stock	imperial_rose	20	100
+
+shop	dorgeshuun_weapon_shop	10	0	1000	600	20	Mount Karuulm Weapon Shop
+npc	kebos_spear_salesmen	3
+stock	steel_spear	2	200
+stock	mithril_spear	1	3000
+stock	adamant_spear	1	5000
+stock	rune_spear	1	8000
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	adamant_battleaxe	1	5000
+stock	steel_warhammer	2	200
+stock	mithril_warhammer	1	3000
+stock	adamnt_warhammer	1	5000
+
+shop	anma_shop_uim	6	0	1070	400	10	Multicannon parts for sale
+npc	nulodion	3
+stock	twpart2	5	100
+stock	twpart1	5	100
+stock	twpart4	5	100
+stock	twpart3	5	100
+stock	mcannonbook	5	100
+stock	ammo_mould	5	100
+
+shop	magicshop_gim	18	0	1000	400	0	Mysterious Stranger (shop)
+npc	tob_stranger_2op	3
+stock	tob_teleport	9500	1
+
+shop	gotr_reward_shop_law_death	18	0	1300	400	0	Mythical Cape Store
+npc	myths_guild_cape_seller	3
+stock	mythical_cape	50	500
+
+shop	magicguildshop_gim	23	0	1500	500	20	Myths' Guild Armoury
+npc	myths_guild_smith	3
+stock	dragonshield_b	1	500
+stock	dragon_shard	1	500
+
+shop	mm_food_shop	7	0	1000	700	10	Myths' Guild Herbalist
+npc	myths_guild_herbalist	3
+stock	pestle_and_mortar	5	100
+stock	vial_water	45	100
+stock	pack_vial_water	15	50
+stock	vial_empty	50	100
+stock	pack_vial_empty	10	50
+stock	eye_of_newt	50	20
+stock	pack_eye_newt	20	100
+
+shop	deadman_ranging_guild_bowshop	30	0	1000	600	20	Myths' Guild Weaponry
+npc	myths_guild_weapon_seller	3
+stock	dragon_dagger	2	500
+stock	dragon_longsword	2	500
+stock	dragon_mace	2	500
+stock	dragon_battleaxe	2	500
+
+shop	gnomeshop_hudo	40	1	1300	400	30	Nardah General Store.
+npc	elid_general_seller	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	7	10
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	10	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	cooked_meat	4	100
+
+shop	chociceshopnardah	12	0	1200	700	20	Nardah Hunter Shop.
+npc	hunting_shop_owner_nardah	5
+stock	hunting_butterfly_net	5	10
+stock	butterfly_jar	100	10
+stock	magic_imp_box	30	50
+stock	noose_wand	50	5
+stock	hunting_ojibway_bird_snare	50	5
+stock	hunting_box_trap	25	10
+stock	hunting_teasing_stick	5	10
+stock	torch_unlit	20	10
+stock	hunting_snare	10	10
+stock	pack_ojibway_bird_snare	3	10
+stock	pack_box_trap	3	10
+stock	pack_magic_imp_box	3	10
+
+shop	viking_weapons_shop	11	0	1000	600	20	Nardok's Bone Weapons
+npc	dttd_bone_dealer	3
+stock	cave_goblin_bone_club	10	20
+stock	cave_goblin_bone_spear	10	20
+stock	dttd_bone_dagger	5	20
+stock	dttd_bone_crossbow	5	20
+stock	dttd_bone_crossbow_bolt	1000	20
+stock	pack_bone_bolt	80	10
+
+shop	shayzien_clothesshop	12	0	1000	550	10	Nathifa's Bake Stall.
+npc	contact_market_baker	3
+stock	bread	10	100
+stock	cake	3	800
+stock	chocolate_slice	8	200
+stock	water_skin4	50	100
+
+shop	gotr_reward_shop_none	16	0	1000	200	20	Ned's Handmade Rope (100% Wool)
+npc	ned	3
+stock	rope	30	3
+stock	rope	30	3
+
+shop	archeryshop2_skillcape_trimmed_uim	29	0	1000	600	10	Neil's Wilderness Cape Shop.
+npc	wilderness_capeseller_7	3
+stock	wilderness_cape_7	100	100
+stock	wilderness_cape_17	100	100
+stock	wilderness_cape_27	100	100
+stock	wilderness_cape_37	100	100
+stock	wilderness_cape_47	100	100
+
+shop	anma_shop_gim	6	0	1050	250	10	Neitiznot supplies.
+npc	frisb_n_sto	3
+stock	knife	10	10
+stock	hammer	10	10
+stock	thread	10	10
+stock	needle	10	10
+stock	bronze_axe	10	10
+stock	ball_of_wool	100	10
+
+shop	memberstaffshop_uim	7	0	1000	600	20	Nurmof's Pickaxe Shop.
+npc	nurmof	3
+stock	bronze_pickaxe	6	50
+stock	iron_pickaxe	5	100
+stock	steel_pickaxe	4	200
+stock	mithril_pickaxe	3	300
+stock	adamant_pickaxe	2	500
+stock	rune_pickaxe	1	700
+
+shop	generalshop3	50	1	1500	500	20	Obli's General Store.
+npc	shilogeneralstore	3
+stock	tinderbox	2	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	100	50
+stock	pestle_and_mortar	3	500
+stock	pot_empty	3	500
+stock	bronze_axe	3	500
+stock	bronze_pickaxe	2	500
+stock	iron_axe	5	700
+stock	leather_armour	12	500
+stock	leather_gloves	10	500
+stock	leather_boots	10	500
+stock	cooked_meat	2	500
+stock	bread	10	500
+stock	bronze_bar	10	500
+stock	spade	10	500
+stock	unlit_candle	10	500
+stock	torch_unlit	10	500
+stock	chisel	10	500
+stock	hammer	10	500
+stock	papyrus	50	200
+stock	charcoal	50	200
+stock	vial_water	50	200
+stock	pack_vial_water	50	50
+stock	machette	50	200
+stock	rope	10	200
+stock	tinderbox	2	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	100	50
+stock	pestle_and_mortar	3	500
+stock	pot_empty	3	500
+stock	bronze_axe	3	500
+stock	bronze_pickaxe	2	500
+stock	iron_axe	5	700
+stock	leather_armour	12	500
+stock	leather_gloves	10	500
+stock	leather_boots	10	500
+stock	cooked_meat	2	500
+stock	bread	10	500
+stock	bronze_bar	10	500
+stock	spade	10	500
+stock	unlit_candle	10	500
+stock	torch_unlit	10	500
+stock	chisel	10	500
+stock	hammer	10	500
+stock	papyrus	50	200
+stock	charcoal	50	200
+stock	vial_water	50	200
+stock	pack_vial_water	50	50
+stock	machette	50	200
+stock	rope	10	200
+
+shop	memberstaffshop_gim	7	0	1000	600	1	Oobapohk's Javelin Store
+npc	mm2_javelinstoreowner	3
+stock	bronze_javelin	500	20
+stock	iron_javelin	500	20
+stock	steel_javelin	500	40
+stock	mithril_javelin	500	60
+stock	adamant_javelin	500	80
+stock	rune_javelin	500	100
+
+shop	silvershop	7	0	1500	400	0	Ore seller.
+npc	smithing_guild_ore_seller	3
+stock	copper_ore	100	200
+stock	tin_ore	100	200
+stock	iron_ore	100	200
+stock	mithril_ore	100	200
+stock	silver_ore	100	200
+stock	gold_ore	100	200
+stock	coal	100	200
+
+shop	frisb_n_shop	8	0	1100	700	30	Ore store
+npc	frisd_oremerchant	3
+stock	copper_ore	20	10
+stock	tin_ore	10	10
+stock	iron_ore	10	10
+stock	silver_ore	5	10
+stock	coal	10	10
+stock	gold_ore	5	10
+stock	mithril_ore	0	10
+stock	adamantite_ore	0	10
+
+shop	wildernesscapeshop7	40	1	1300	400	30	Outer Fortis General Store
+npc	fortis_shop_general_2	3
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	30
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	cake_tin	15	20
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+
+shop	archeryshop_gim	15	0	1300	400	30	Oziach (shop)
+npc	oziach	3
+stock	rune_platebody	2	500
+stock	dragonhide_body	2	500
+stock	antidragonbreathshield	35	1
+
+shop	fur_shop_guild	20	0	1300	400	20	Pellem's Fur Store
+npc	hg_fur_trader	3
+stock	thread	100	5
+stock	needle	3	100
+stock	werewolve_fur	3	100
+stock	fur	3	10
+stock	grey_wolf_fur	3	100
+stock	varlamore_jaguar_fur	2	100
+stock	hunting_fennecfox_fur	0	100
+stock	hunting_antelopemoon_fur	0	100
+stock	hunting_antelopesun_fur	0	100
+stock	huntingbeast_polar_fur	0	100
+stock	huntingbeast_woodland_fur	0	100
+stock	huntingbeast_jungle_fur	0	100
+stock	huntingbeast_desert_fur	0	100
+stock	hunting_fur_jaguar_shabby	0	100
+stock	hunting_fur_jaguar_perfect	0	100
+stock	hunting_fur_leopard_shabby	0	100
+stock	hunting_fur_leopard_perfect	0	100
+stock	hunting_fur_tiger_shabby	0	100
+stock	hunting_fur_tiger_perfect	0	100
+stock	hg_mixedhide_base	10	14
+
+shop	boozeshop	7	0	3200	600	10	Perry's Chop-chop Shop
+npc	wcguild_axeseller	3
+stock	bronze_axe	4	7
+stock	iron_axe	3	10
+stock	steel_axe	2	15
+stock	mithril_axe	1	25
+stock	adamant_axe	1	40
+stock	rune_axe	1	100
+stock	tinderbox	2	3
+
+shop	trader_shop_tempestus	40	0	1000	700	10	Picaria's Fishing Shop
+npc	sunset_coast_fishing_shop	3
+stock	net	5	100
+stock	big_net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	5	100
+stock	lobster_pot	5	100
+stock	fishing_bait	1000	1
+stock	pack_fishing_bait	100	5
+stock	feather	1000	1
+stock	pack_feather	100	5
+stock	raw_sardine	10	150
+stock	raw_herring	10	150
+stock	raw_mackerel	10	150
+stock	raw_cod	10	150
+stock	raw_tuna	10	150
+stock	raw_bass	6	150
+stock	raw_swordfish	4	150
+stock	raw_lobster	4	150
+
+shop	lletyaarcheryshop_uim	11	0	1300	550	30	Pickaxe-Is-Mine
+npc	dwarf_city_shop_pickaxe	3
+stock	bronze_pickaxe	6	50
+stock	steel_pickaxe	4	200
+stock	mithril_pickaxe	3	300
+stock	adamant_pickaxe	2	500
+stock	rune_pickaxe	1	600
+
+shop	gemshop2	10	0	1000	550	10	Pie Shop
+npc	merchant_pies	3
+stock	book_recipie_pie	50	50
+stock	redberry_pie	5	100
+stock	meat_pie	4	100
+stock	mud_pie	0	100
+stock	apple_pie	3	100
+stock	garden_pie	2	100
+stock	fish_pie	1	100
+stock	admiral_pie	0	100
+stock	wild_pie	0	100
+stock	summer_pie	0	100
+
+shop	lletyafoodshop1	40	1	1000	550	10	Pollnivneach general store.
+npc	feud_marketseller	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	15
+stock	water_skin3	20	10
+stock	desert_shirt	3	12
+stock	desert_boots	2	100
+stock	bucket_empty	12	400
+stock	pack_bucket	15	10
+stock	feud_karidian_fakebeard	11	10
+stock	feud_karidian_turban	12	10
+stock	cheese	5	200
+stock	lime	5	200
+stock	orange	5	200
+stock	tomato	5	200
+stock	jug_water	5	10
+stock	bowl_water	7	10
+stock	bucket_water	8	10
+
+shop	smithsshop	40	1	1300	400	30	Port Phasmatys General Store
+npc	ahoy_ghost_shopkeeper	3
+stock	pot_empty	100	25
+stock	bucket_empty	100	25
+stock	pack_bucket	15	10
+stock	shears	2	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+
+shop	trader_shop_sunsetcoast_iron	40	0	1000	700	10	Prifddinas Foodstuffs
+npc	prif_foodstore	3
+stock	pot_flour	3	100
+stock	bucket_milk	3	100
+stock	cod	3	100
+stock	trout	3	100
+stock	bass	3	100
+stock	stew	10	100
+stock	bread	10	100
+stock	cheese	10	100
+stock	potato	10	100
+stock	onion	10	100
+stock	tomato	10	100
+stock	cabbage	10	100
+stock	banana	10	100
+stock	redberries	3	100
+stock	raw_beef	5	100
+stock	raw_chicken	5	100
+stock	chocolate_bar	10	100
+stock	cake	5	100
+
+shop	fortis_shop_crafting	12	0	1000	800	20	Prifddinas Gem Stall
+npc	prif_gem	3
+stock	sapphire	2	15000
+stock	emerald	1	35000
+stock	ruby	1	60000
+stock	diamond	0	4000
+
+shop	wildernesscapeshop8	40	1	1300	400	30	Prifddinas General Store
+npc	prif_generalstore	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	bucket_empty	2	100
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	vial_empty	10	100
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	spade	2	100
+stock	hammer	5	100
+stock	knife	2	100
+stock	pack_vial_empty	100	20
+stock	papyrus	50	200
+stock	pack_jug_empty	5	20
+stock	pack_bucket	15	20
+
+shop	lovakengj_dynamite_shop	7	0	1000	700	10	Prifddinas Herbal Supplies
+npc	prif_herbstore	3
+stock	pestle_and_mortar	3	100
+stock	vial_empty	100	500
+stock	vial_water	100	500
+stock	eye_of_newt	50	10
+stock	pack_vial_empty	100	100
+stock	pack_vial_water	100	100
+stock	pack_eye_newt	50	100
+
+shop	tzhaar_shop_oreandgem_uim	16	0	1000	700	20	Prifddinas Silver Stall
+npc	prif_silver	3
+stock	nostringstar	2	100
+stock	silver_ore	1	2000
+stock	silver_bar	1	1000
+
+shop	tzhaar_shop_oreandgem_gim	16	0	1000	700	20	Prifddinas Spice Stall
+npc	prif_spice	3
+stock	spicespot	1	100
+stock	knife	1	2
+stock	garlic	2	5
+
+shop	trader_shop_piscarilius	40	0	1300	400	20	Prifddinas' Seamstress
+npc	prif_seamstress	3
+stock	thread	100	5
+stock	needle	3	100
+stock	ball_of_wool	20	100
+stock	silk	5	100
+stock	werewolve_fur	3	100
+stock	fur	3	10
+stock	grey_wolf_fur	3	100
+stock	huntingbeast_polar_fur	0	100
+stock	huntingbeast_woodland_fur	0	100
+stock	huntingbeast_jungle_fur	0	100
+stock	huntingbeast_desert_fur	0	100
+stock	hunting_fur_jaguar_shabby	0	100
+stock	hunting_fur_jaguar_perfect	0	100
+stock	hunting_fur_leopard_shabby	0	100
+stock	hunting_fur_leopard_perfect	0	100
+stock	hunting_fur_tiger_shabby	0	100
+stock	hunting_fur_tiger_perfect	0	100
+
+shop	cam_torum_shop_herbalist	9	0	1300	550	30	Quality Armour Shop
+npc	dwarf_city_shop_armour	3
+stock	steel_chainbody	3	400
+stock	mithril_chainbody	1	3000
+stock	black_chainbody	1	2500
+stock	adamant_chainbody	1	9000
+stock	steel_med_helm	3	400
+stock	mithril_med_helm	1	3000
+stock	adamant_med_helm	1	12000
+stock	steel_sq_shield	0	1500
+stock	black_kiteshield	0	1500
+
+shop	dorgesh_leather_shop	40	0	1300	550	30	Quality Weapons Shop
+npc	dwarf_city_shop_weapons	3
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	mithril_sword	3	3000
+stock	adamant_sword	2	12000
+stock	steel_scimitar	2	600
+stock	black_longsword	2	1500
+stock	rune_longsword	1	4000
+stock	maple_shortbow	1	100
+stock	maple_longbow	1	100
+stock	mithril_arrow	800	15
+stock	adamant_arrow	600	20
+
+shop	wildernesscapeshop10	40	1	1300	400	30	Quartermaster's Stores
+npc	regicidegeneralshopkeeper	3
+stock	pot_empty	5	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	15
+stock	shears	3	100
+stock	tinderbox	3	100
+stock	bread	10	100
+stock	bronze_halberd	10	100
+stock	iron_halberd	10	100
+stock	steel_halberd	10	100
+stock	black_halberd	10	100
+stock	mithril_halberd	7	100
+stock	adamant_halberd	7	100
+stock	rune_halberd	7	100
+stock	dragon_halberd	5	500
+
+shop	wildernesscapeshop9	40	1	1300	400	30	Quetzacalli Gorge General Store
+npc	quetzacalli_general_store	3
+stock	bronze_pickaxe	5	20
+stock	bronze_axe	5	20
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	shears	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	torch_unlit	5	20
+stock	rope	10	30
+stock	charcoal	10	30
+stock	papyrus	10	30
+stock	pot_empty	15	20
+stock	bucket_empty	15	20
+
+shop	lunar_clotheshop	11	0	1000	550	10	Raetul and Co's Cloth Store.
+npc	ics_little_linen1_2op	3
+stock	desert_shirt	12	12
+stock	desert_robe	9	20
+stock	silk	7	22
+stock	thread	10	30
+stock	needle	15	28
+stock	desert_shirt	20	50
+stock	desert_robe	20	50
+stock	desert_boots	20	50
+stock	silk	10	40
+stock	thread	50	70
+stock	needle	20	50
+
+shop	herbloreshopogre	7	0	1000	650	10	Ranael's Super Skirt Store.
+npc	ranael	3
+stock	bronze_plateskirt	5	100
+stock	iron_plateskirt	3	400
+stock	steel_plateskirt	2	900
+stock	black_plateskirt	1	1200
+stock	mithril_plateskirt	1	2000
+stock	adamant_plateskirt	1	13000
+
+shop	generalshop5	40	1	2000	50	30	Rasolo the Wandering Merchant
+npc	shadow_warrior_rasool	3
+stock	spinach_roll	5	20
+stock	cocktail_guide	1	500
+stock	gnome_hat_blue	1	500
+stock	dragon_dagger	1	500
+stock	newcomer_map	20	500
+stock	bucket_bailing	1	500
+stock	swamppaste	1	500
+stock	papyrus	5	500
+stock	machette	1	500
+stock	holy_symbol_mould	1	500
+stock	sickle_mould	1	500
+stock	water_skin4	1	500
+stock	desert_boots	1	500
+stock	horsey_black	10	20
+stock	empty_dye_bottle	10	20
+stock	wolfenboots_grey	1	500
+stock	greenmans_ale	1	500
+stock	viking_cloak_pink	1	500
+stock	keg_of_beer	20	20
+stock	flamtaer_hammer	1	500
+stock	oliveoil3	2	500
+stock	limestonebrick	2	500
+stock	mcannonbook	1	500
+
+shop	generalshop7	40	1	1400	400	10	Regath's Wares
+npc	arceuus_generalstore	3
+stock	vial_water	30	20
+stock	pack_vial_water	25	30
+stock	rope	10	15
+stock	firerune	500	10
+stock	waterrune	500	10
+stock	airrune	500	10
+stock	earthrune	500	10
+stock	mindrune	300	10
+stock	bodyrune	300	10
+stock	bloodrune	50	35
+stock	soulrune	50	30
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	100
+stock	bluewizhat	1	100
+stock	blackwizhat	1	100
+stock	eye_of_newt	300	10
+stock	pack_eye_newt	60	50
+
+shop	league_trailblazer_varrock_armour_shop	40	0	1000	400	30	Reldak's Leather Armour
+npc	dorgesh_male_leather_seller	3
+stock	dorgesh_frog_armour_top	50	100
+stock	dorgesh_frog_armour_bottoms	50	100
+stock	dorgesh_frog_armour_shoes	50	100
+
+shop	tzhaar_shop_cityoreandgem_uim	16	0	1300	700	30	Rellekka Longhall Bar
+npc	viking_longhall_barkeep	3
+stock	beer	50	10
+stock	viking_tankard_full	50	10
+stock	keg_of_beer	20	10
+
+shop	farming_shop_3	31	0	1000	700	10	Richard's Farming shop.
+npc	farming_shopkeeper_3	3
+stock	rake	500	10
+stock	dibber	500	10
+stock	secateurs	500	10
+stock	spade	500	10
+stock	gardening_trowel	500	120
+stock	watering_can_0	500	10
+stock	plantpot_compost	500	10
+stock	pack_plant_pot_compost	30	2
+stock	bucket_compost	500	10
+stock	pack_compost	10	50
+stock	sack_empty	500	10
+stock	pack_sack	30	2
+stock	basket_empty	500	10
+stock	pack_basket	30	2
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	potato	0	100
+stock	onion	0	100
+stock	cabbage	0	100
+stock	tomato	0	100
+stock	sweetcorn	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	hammerstone_hops	0	100
+stock	asgarnian_hops	0	100
+stock	yanillian_hops	0	100
+stock	krandorian_hops	0	100
+stock	wildblood_hops	0	100
+stock	jute_fibre	0	100
+stock	barley	0	100
+stock	plant_cure	100	10
+
+shop	archeryshop2_skillcape_trimmed_gim	29	0	1000	600	10	Richard's Wilderness Cape Shop.
+npc	wilderness_capeseller_6	3
+stock	wilderness_cape_6	100	100
+stock	wilderness_cape_16	100	100
+stock	wilderness_cape_26	100	100
+stock	wilderness_cape_36	100	100
+stock	wilderness_cape_46	100	100
+
+shop	topshop	40	1	1300	400	30	Rimmington General Store
+npc	generalshopkeeper6	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
+
+shop	tal_teklan_archershop_deadman	17	0	1000	650	20	Rok's Chocs Box.
+npc	elid_choc_ice_seller	3
+stock	elid_choc_ice	30	50
+stock	chocolate_bar	25	20
+
+shop	dorgesh_lamp_shop	40	0	1000	650	20	Rommik's Crafty Supplies.
+npc	rommik	3
+stock	chisel	2	100
+stock	ring_mould	4	100
+stock	necklace_mould	2	100
+stock	amulet_mould	2	100
+stock	needle	3	100
+stock	thread	100	5
+stock	holy_symbol_mould	3	100
+stock	sickle_mould	6	15
+stock	tiara_mould	10	10
+stock	xbows_silver_bolt_mould	10	10
+stock	jewl_bracelet_mould	5	100
+
+shop	anma_shop	8	0	1300	700	30	Rufus' Meat Emporium
+npc	werewolfshopkeeper1	3
+stock	raw_beef	10	100
+stock	raw_chicken	10	100
+stock	raw_rat_meat	10	100
+stock	raw_bear_meat	10	100
+stock	raw_trout	5	500
+stock	raw_pike	5	500
+stock	raw_salmon	5	500
+stock	raw_shark	1	1000
+
+shop	deadman_armourshop	12	0	1000	600	20	Salius' Armour Shop
+npc	salvager_overlook_platebody_store	3
+stock	bronze_platebody	6	80
+stock	iron_platebody	5	160
+stock	steel_platebody	5	320
+stock	mithril_platebody	4	100
+stock	adamant_platebody	3	100
+
+shop	regicide_general_shop_2	40	1	1300	400	30	Salvager Overlook General Store
+npc	salvager_overlook_general_store	3
+stock	bronze_pickaxe	5	20
+stock	bronze_axe	5	20
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	fishing_rod	5	100
+stock	rope	10	30
+stock	swamppaste	10	100
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	vial_empty	50	150
+stock	pack_jug_empty	5	30
+stock	pack_bucket	5	30
+stock	pack_vial_empty	5	100
+
+shop	archeryshop2_skillcape_gim	29	0	1000	600	10	Sam's Wilderness Cape Shop.
+npc	wilderness_capeseller_10	3
+stock	wilderness_cape_10	100	100
+stock	wilderness_cape_20	100	100
+stock	wilderness_cape_30	100	100
+stock	wilderness_cape_40	100	100
+stock	wilderness_cape_50	100	100
+
+shop	farming_shop_2	31	0	1000	700	10	Sarah's Farming shop.
+npc	farming_shopkeeper_1	3
+stock	rake	500	10
+stock	dibber	500	10
+stock	secateurs	500	10
+stock	spade	500	10
+stock	gardening_trowel	500	120
+stock	watering_can_0	500	10
+stock	plantpot_compost	500	10
+stock	pack_plant_pot_compost	30	2
+stock	bucket_compost	500	10
+stock	pack_compost	10	50
+stock	sack_empty	500	10
+stock	pack_sack	30	2
+stock	basket_empty	500	10
+stock	pack_basket	30	2
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	potato	0	100
+stock	onion	0	100
+stock	cabbage	0	100
+stock	tomato	0	100
+stock	sweetcorn	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	hammerstone_hops	0	100
+stock	asgarnian_hops	0	100
+stock	yanillian_hops	0	100
+stock	krandorian_hops	0	100
+stock	wildblood_hops	0	100
+stock	jute_fibre	0	100
+stock	barley	0	100
+stock	plant_cure	100	10
+
+shop	runeplateshop	9	0	1000	600	33	Scavvo's Rune Store.
+npc	scavvo	3
+stock	rune_plateskirt	1	12000
+stock	rune_platelegs	1	11500
+stock	rune_mace	1	7000
+stock	rune_chainbody	1	15000
+stock	rune_longsword	1	14000
+stock	rune_sword	1	10000
+stock	dragonhide_chaps	1	500
+stock	dragon_vambraces	1	500
+stock	coif	2	1000
+
+shop	deadman_memberstaffshop	7	0	1000	550	20	Sebamo's Sublime Staffs
+npc	auburn_staff_store	3
+stock	plainstaff	5	100
+stock	magic_staff	5	200
+stock	staff_of_air	2	1000
+stock	staff_of_water	2	1000
+stock	staff_of_earth	2	1000
+stock	staff_of_fire	2	1000
+
+shop	dragonaxeshop	7	0	950	650	20	Seddu's Adventurer's Store.
+npc	elid_shield_seller	3
+stock	rune_plateskirt	1	12000
+stock	rune_platelegs	1	11500
+stock	rune_chainbody	1	15000
+stock	dragonhide_chaps	1	500
+stock	dragon_vambraces	1	500
+stock	steel_kiteshield	1	500
+stock	black_med_helm	1	400
+
+shop	furshop	12	0	1000	550	10	Shayzien Styles
+npc	shayzien_clothesshop	3
+stock	white_apron	3	100
+stock	leather_armour	12	100
+stock	leather_gloves	10	100
+stock	leather_boots	10	100
+stock	brown_apron	1	100
+stock	black_skirt	3	100
+stock	blue_skirt	2	100
+stock	red_cape	4	100
+stock	black_cape	4	100
+stock	blue_cape	4	100
+stock	yellow_cape	4	100
+stock	chefs_hat	4	100
+
+shop	gemshop	10	0	1000	600	20	Shields of Mistrock
+npc	mistrock_shield_store	3
+stock	bronze_sq_shield	6	100
+stock	bronze_kiteshield	5	150
+stock	iron_sq_shield	5	400
+stock	iron_kiteshield	4	600
+stock	steel_sq_shield	4	800
+stock	steel_kiteshield	3	1500
+stock	mithril_sq_shield	3	2000
+stock	mithril_kiteshield	2	3000
+stock	adamant_sq_shield	2	4000
+stock	adamant_kiteshield	1	6000
+
+shop	teashop	7	0	1000	550	10	Sian's Ranged Weaponry
+npc	prif_rangestore	3
+stock	mithril_arrow	700	60
+stock	adamant_arrow	600	120
+stock	rune_arrow	500	130
+stock	maple_shortbow	5	100
+stock	maple_longbow	5	100
+stock	yew_shortbow	5	150
+stock	yew_longbow	5	150
+
+shop	generalshop8	40	1	1300	500	30	Sigmund the Merchant (shop)
+npc	viking_sigmund	3
+stock	tinderbox	2	500
+stock	rope	10	200
+stock	pestle_and_mortar	3	500
+stock	pot_empty	3	500
+stock	cooked_meat	2	500
+stock	bread	10	500
+stock	spade	10	500
+stock	unlit_candle	10	500
+stock	chisel	10	500
+stock	hammer	10	500
+stock	vial_empty	10	500
+stock	pack_vial_empty	10	50
+stock	vial_water	10	200
+stock	pack_vial_water	10	20
+stock	bucket_empty	10	500
+stock	pack_bucket	15	10
+stock	bucket_water	10	200
+stock	egg	10	200
+stock	potato	10	200
+stock	cabbage	10	200
+
+shop	tzhaar_shop_cityoreandgem_gim	16	0	1500	800	30	Silver Cog Silver Stall
+npc	dwarf_city_shop_silver	3
+stock	nostringstar	2	100
+stock	silver_ore	1	2000
+stock	silver_bar	1	1000
+
+shop	deadman_archeryshop2_skillcape_trimmed	32	0	1000	600	10	Simon's Wilderness Cape Shop.
+npc	wilderness_capeseller_9	3
+stock	wilderness_cape_9	100	100
+stock	wilderness_cape_19	100	100
+stock	wilderness_cape_29	100	100
+stock	wilderness_cape_39	100	100
+stock	wilderness_cape_49	100	100
+
+shop	battleaxeshop	11	0	1300	700	30	Skulgrimen's Battle Gear
+npc	viking_weapons_salesman	3
+stock	bronze_warhammer	5	100
+stock	iron_warhammer	4	100
+stock	steel_warhammer	3	100
+stock	black_warhammer	3	100
+stock	mithril_warhammer	2	100
+stock	adamnt_warhammer	1	100
+stock	rune_warhammer	0	100
+stock	viking_helmet_range	5	100
+stock	viking_helmet_crush	5	100
+stock	viking_helmet_slash	5	100
+stock	viking_helmet_magic	5	100
+
+shop	fortis_shop_blacksmith	30	0	1000	600	20	Smithing Smith's Shop.
+npc	fever_smithing_smith	3
+stock	bronze_scimitar	5	100
+stock	iron_scimitar	3	200
+stock	steel_scimitar	2	600
+stock	mithril_scimitar	1	4000
+stock	hammer	5	100
+
+shop	tal_teklan_archershop	14	0	1000	500	20	Solihib's Food Stall
+npc	mm_solihib	3
+stock	mm_monkey_nuts	200	100
+stock	banana	1000	1000
+stock	mm_banana_stew	10	100
+stock	mm_monkey_bar	20	100
+
+shop	deadman_axeshop	7	0	1300	400	30	Spike's Spikes
+npc	fortis_shop_maces	3
+stock	bronze_mace	5	100
+stock	iron_mace	4	100
+stock	steel_mace	4	100
+stock	mithril_mace	3	100
+stock	adamant_mace	2	100
+stock	rune_mace	1	100
+
+shop	gemshop_uim	8	0	1300	500	30	Stonecutter Supplies
+npc	stonecutter_stonemason	3
+stock	bronze_pickaxe	5	50
+stock	limestonebrick	100	100
+stock	marble_block	30	100
+stock	gold_leaf	40	100
+stock	tog_stone	10	100
+stock	poh_condensed_gold	10	100
+
+shop	trader_shop_sunsetcoast	40	0	1000	700	10	Sulisal's Superb Fishing Store
+npc	kastori_fishing_trader	3
+stock	net	5	100
+stock	big_net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	5	100
+stock	lobster_pot	5	100
+stock	fishing_bait	1000	1
+stock	pack_fishing_bait	100	5
+stock	feather	1000	1
+stock	pack_feather	100	5
+stock	raw_sardine	10	150
+stock	raw_herring	10	150
+stock	raw_mackerel	10	150
+stock	raw_cod	10	150
+stock	raw_tuna	10	150
+stock	raw_bass	6	150
+stock	raw_swordfish	4	150
+stock	raw_lobster	4	150
+
+shop	armourshop	40	1	1300	400	30	Sunset Coast General Store
+npc	sunset_coast_general_store	3
+stock	bronze_pickaxe	5	20
+stock	bronze_axe	5	20
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	torch_unlit	5	20
+stock	rope	10	30
+stock	charcoal	10	30
+stock	papyrus	10	30
+stock	pot_empty	15	20
+stock	bucket_empty	15	20
+
+shop	wildernesscapeshop3	40	1	1300	400	30	Tal Teklan General Store
+npc	tal_teklan_general_store	3
+stock	bronze_pickaxe	5	20
+stock	bronze_axe	5	20
+stock	chisel	5	20
+stock	spade	5	20
+stock	hammer	5	20
+stock	knife	5	20
+stock	tinderbox	5	20
+stock	pestle_and_mortar	5	20
+stock	needle	5	20
+stock	thread	30	20
+stock	rope	10	30
+stock	pot_empty	15	20
+stock	jug_empty	15	20
+stock	bucket_empty	15	20
+stock	bowl_empty	15	20
+stock	vial_empty	15	150
+
+shop	runeshop	16	0	1000	550	1	Tal Teklan Rune Shop
+npc	tal_teklan_rune_trader	3
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	3000	10
+stock	bodyrune	3000	10
+stock	chaosrune	250	15
+stock	deathrune	100	20
+stock	cosmicrune	30	75
+stock	naturerune	30	20
+stock	pack_airrune	100	10
+stock	pack_waterrune	100	10
+stock	pack_earthrune	100	10
+stock	pack_firerune	100	10
+stock	pack_mindrune	50	10
+stock	pack_chaosrune	30	10
+
+shop	darkruneshop_uber	14	0	1000	750	10	Tamayu's Spear Stall
+npc	tbwt_tamayu_final	3
+stock	tbwt_bronze_spear_kp	10	10
+stock	tbwt_iron_spear_kp	10	100
+stock	tbwt_steel_spear_kp	5	100
+stock	tbwt_mithril_spear_kp	2	100
+stock	tbwt_adamant_spear_kp	0	100
+stock	tbwt_rune_spear_kp	0	100
+stock	tbwt_cleaning_cloth	10	5
+stock	tbwt_bronze_spear_kp	10	10
+stock	tbwt_iron_spear_kp	10	100
+stock	tbwt_steel_spear_kp	5	100
+stock	tbwt_mithril_spear_kp	2	100
+stock	tbwt_adamant_spear_kp	0	100
+stock	tbwt_rune_spear_kp	0	100
+stock	tbwt_cleaning_cloth	10	5
+
+shop	gemshop_gim	8	0	1000	550	10	The Asp & Snake Bar.
+npc	feud_ali_the_barman	3
+stock	beer	83	10
+stock	whisky	10	100
+stock	jug_wine	13	150
+stock	vodka	5	5
+stock	brandy	4	1500
+stock	grog	12	2500
+
+shop	gotr_reward_shop_law_blood	18	0	1300	700	30	The Big Heist Lodge
+npc	fourdiamonds_bartender	3
+stock	bandit_brew	10	100
+
+shop	lletyaarcheryshop_gim	11	0	1000	550	20	The Cloak and Stagger
+npc	shayzien_barman	3
+stock	beer	10	50
+stock	shayzien_lizardkicker	10	50
+stock	jug_wine	5	100
+stock	cup_of_tea	5	100
+stock	stew	5	100
+
+shop	keldagrim_quality_weapons_shop_gim	11	0	1400	550	20	The Deeper Lode
+npc	lovakengj_bartender	3
+stock	beer	10	50
+stock	dwarven_stout	1	200
+stock	dragon_bitter	3	50
+stock	kebab	2	15
+stock	beer_glass	0	40
+
+shop	runeshop_uim	14	0	1000	550	20	The Esoterican Arms
+npc	royal_barmaid	3
+stock	beer	10	28
+stock	cider	10	28
+stock	jug_wine	5	100
+stock	cup_of_tea	5	76
+
+shop	runeshop_gim	14	0	1000	550	20	The Golden Field
+npc	hosidius_bartender_1	3
+npc	hosidius_bartender_2	3
+stock	beer	10	10
+stock	cider	10	10
+stock	jug_wine	5	100
+stock	cup_of_tea	5	5
+
+shop	generalshop4	40	1	1100	550	30	The Lighthouse Store
+npc	horror_lighthousekeeeper_well	3
+stock	rope	10	200
+stock	hammer	10	500
+stock	chisel	10	500
+stock	knife	10	500
+stock	spade	10	500
+stock	tinderbox	5	500
+stock	unlit_candle	10	500
+stock	pestle_and_mortar	10	500
+stock	pot_empty	10	500
+stock	bucket_empty	5	500
+stock	pack_bucket	15	10
+stock	bucket_water	5	500
+stock	jug_empty	5	200
+stock	pack_jug_empty	8	15
+stock	jug_water	5	500
+stock	vial_empty	100	500
+stock	pack_vial_empty	100	100
+stock	vial_water	100	500
+stock	pack_vial_water	100	100
+stock	gin	5	500
+stock	brandy	5	500
+stock	vodka	5	2
+stock	grog	5	500
+stock	whisky	5	500
+stock	greenmans_ale	5	500
+stock	dwarven_stout	5	500
+stock	wizards_mind_bomb	5	500
+
+shop	darkruneshop_uber_gim	14	0	1000	600	20	The Other Inn.
+npc	fever_mama_la_fiette	3
+stock	beer	3	100
+stock	fever_rum	3	100
+stock	jug_wine	1	15000
+stock	stew	5	150
+
+shop	trader_shop_aldarin	40	0	1000	550	1	The Runic Emporium
+npc	cam_torum_shop_magic	3
+stock	airrune	5000	10
+stock	waterrune	5000	10
+stock	earthrune	5000	10
+stock	firerune	5000	10
+stock	mindrune	3000	10
+stock	bodyrune	3000	20
+stock	chaosrune	1000	20
+stock	naturerune	500	20
+stock	lawrune	500	20
+stock	deathrune	500	20
+stock	pack_airrune	100	16
+stock	pack_waterrune	100	16
+stock	pack_earthrune	100	16
+stock	pack_firerune	100	16
+stock	pack_mindrune	50	16
+stock	pack_chaosrune	30	16
+
+shop	gemshop2_uim	8	0	1300	750	30	The Shrimp and Parrot
+npc	alfonse_the_waiter	3
+stock	herring	5	900
+stock	cod	5	1100
+stock	tuna	5	2300
+stock	lobster	3	2600
+stock	swordfish	2	2900
+stock	tbwt_cooked_karambwan	3	900
+
+shop	fortis_shop_spices	6	0	1500	250	10	The Spice Is Right.
+npc	ics_little_embalmer_nospots	3
+stock	pot_empty	5	100
+stock	gnome_spice	10	300
+stock	curry_leaf	0	12
+stock	ics_little_pileofsalt	0	100
+stock	ics_little_sap_bucket	0	400
+stock	3doseantipoison	20	100
+
 shop	clotheshop	12	0	1000	550	10	Thessalia's Fine Clothes.
 npc	thessalia_normal	3
 stock	white_apron	3	100
@@ -174,7 +3925,195 @@ stock	silk	5	500
 stock	needle	3	5
 stock	thread	100	5
 
-shop	generalshop2	40	1	1300	400	30	Varrock General Store
+shop	shayzien_rangeshop	17	0	11500	500	1	Thirus Urkar's Fine Dynamite Store
+npc	lovakengj_thirus_pre_diary	3
+stock	lovakengj_dynamite_fused	2000	2500
+stock	tinderbox	2	3
+
+shop	frisd_oreshop	10	0	1300	400	30	Thurid's Brain Buckets
+npc	sunset_coast_helmet_shop	3
+stock	bronze_med_helm	5	100
+stock	iron_med_helm	4	200
+stock	steel_med_helm	4	400
+stock	mithril_med_helm	3	3000
+stock	adamant_med_helm	2	12000
+stock	bronze_full_helm	5	100
+stock	iron_full_helm	4	200
+stock	steel_full_helm	4	400
+stock	mithril_full_helm	3	3000
+stock	adamant_full_helm	2	12000
+
+shop	darkruneshop_crap	14	0	1000	600	1	Thyria's Wares
+npc	arceuus_runeshop	3
+stock	firerune	5000	10
+stock	waterrune	5000	10
+stock	airrune	5000	10
+stock	earthrune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	deathrune	250	15
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+
+shop	tal_teklan_runeshop	16	0	550	450	10	Tiadeche's Karambwan Stall
+npc	tbwt_tiadeche_final	3
+stock	tbwt_raw_karambwan	10	10
+stock	tbwt_raw_karambwanji	50	10
+stock	tbwt_karambwan_vessel	2	100
+
+shop	2handedshop	8	0	1000	600	20	Tizoro's Pickaxes
+npc	cam_torum_shop_mining	3
+stock	hammer	6	22
+stock	chisel	6	22
+stock	bronze_pickaxe	6	22
+stock	iron_pickaxe	5	22
+stock	steel_pickaxe	4	22
+stock	mithril_pickaxe	3	170
+stock	adamant_pickaxe	2	470
+stock	rune_pickaxe	1	675
+
+shop	poh_stonemason_shop	8	0	1000	700	30	Toci's Gem Store
+npc	aldarin_gem_store	3
+stock	uncut_sapphire	3	12000
+stock	uncut_emerald	2	24000
+stock	uncut_ruby	1	36000
+stock	uncut_diamond	0	12000
+stock	sapphire	3	12000
+stock	emerald	2	24000
+stock	ruby	1	36000
+stock	diamond	0	12000
+
+shop	gotr_reward_shop_death_blood	18	0	1000	600	30	Tony's Pizza Bases
+npc	fat_tony	3
+stock	pizza_base	30	100
+
+shop	spiceshop	7	0	1300	550	30	Toothy's Pickaxes
+npc	lovakengj_sulphur_keeper	3
+stock	bronze_pickaxe	5	10
+stock	iron_pickaxe	3	15
+stock	steel_pickaxe	3	15
+stock	mithril_pickaxe	2	50
+stock	adamant_pickaxe	1	50
+stock	rune_pickaxe	1	100
+stock	pot_empty	50000	1
+
+shop	trader_stan_shop_uim	40	0	1300	400	30	Trader Sven's Black-market Goods.
+npc	myq3_black_market_trader	3
+stock	myreque_citizen_torso	10	100
+stock	myreque_citizen_legs	10	100
+stock	myreque_citizen_feet	10	100
+stock	vyre_torso	10	100
+stock	vyre_legs	10	100
+stock	vyre_shoes	10	100
+
+shop	roguesden_shop_skillcape_trimmed	40	0	1000	600	1	Tutab's Magical Market
+npc	mm_tutab	3
+stock	firerune	1000	10
+stock	waterrune	1000	10
+stock	airrune	1000	10
+stock	earthrune	1000	10
+stock	lawrune	250	10
+stock	pack_firerune	40	10
+stock	pack_waterrune	40	10
+stock	pack_airrune	40	10
+stock	pack_earthrune	40	10
+stock	mm_eye_of_gnome	10	100
+stock	mm_monkey_dentures	100	100
+stock	mm_monkey_talisman	50	100
+
+shop	craftingshop_free	10	0	1000	600	20	Two Feet Charley's Fish Shop.
+npc	fever_pirate_two_feet_charley	3
+stock	raw_shrimp	10	300
+stock	raw_sardine	10	600
+stock	raw_herring	7	900
+stock	raw_mackerel	7	1000
+stock	raw_cod	6	1100
+stock	raw_anchovies	5	1200
+stock	raw_tuna	4	2300
+stock	raw_lobster	2	2600
+stock	raw_bass	2	2700
+stock	raw_swordfish	1	2900
+
+shop	craftingshop2_free	10	0	1000	850	10	Tynan's Fishing Supplies
+npc	piscarilius_fishing_supplies_trader	3
+stock	bucket_empty	1000	1
+stock	net	5	100
+stock	big_net	5	100
+stock	fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1200	1
+stock	piscarilius_sandworms	500	50
+stock	pack_fishing_bait	80	5
+stock	piscarilius_pack_sandworms	50	5
+
+shop	darkruneshop_crap_uim	14	0	1300	400	30	Valaine's Shop of Champions.
+npc	valaine	3
+stock	blue_cape	2	1000
+stock	black_full_helm	1	1000
+stock	black_platelegs	1	20000
+stock	adamant_platebody	1	8000
+
+shop	farming_shop_1	31	0	1000	700	10	Vanessa's Farming shop.
+npc	farming_shopkeeper_2	3
+stock	rake	500	10
+stock	dibber	500	10
+stock	secateurs	500	10
+stock	spade	500	10
+stock	gardening_trowel	500	120
+stock	watering_can_0	500	10
+stock	plantpot_compost	500	10
+stock	pack_plant_pot_compost	30	2
+stock	bucket_compost	500	10
+stock	pack_compost	10	50
+stock	sack_empty	500	10
+stock	pack_sack	30	2
+stock	basket_empty	500	10
+stock	pack_basket	30	2
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	potato	0	100
+stock	onion	0	100
+stock	cabbage	0	100
+stock	tomato	0	100
+stock	sweetcorn	0	100
+stock	strawberry	0	100
+stock	watermelon	0	100
+stock	hammerstone_hops	0	100
+stock	asgarnian_hops	0	100
+stock	yanillian_hops	0	100
+stock	krandorian_hops	0	100
+stock	wildblood_hops	0	100
+stock	jute_fibre	0	100
+stock	barley	0	100
+stock	plant_cure	100	10
+
+shop	trader_shop_landsend_iron	40	0	1000	700	10	Vannah's Farming Stall
+npc	hosidius_farmingstore	3
+stock	rake	5	10
+stock	dibber	5	10
+stock	secateurs	5	10
+stock	spade	5	10
+stock	gardening_trowel	3	20
+stock	watering_can_0	30	5
+stock	plantpot_compost	100	10
+stock	pack_plant_pot_compost	10	5
+stock	bucket_compost	100	10
+stock	pack_compost	10	50
+stock	bucket_empty	100	10
+stock	pack_bucket	15	10
+stock	sack_empty	100	2
+stock	pack_sack	30	2
+stock	basket_empty	100	2
+stock	pack_basket	30	2
+stock	plant_cure	40	5
+
+shop	adventurershop	40	1	1300	400	30	Varrock General Store
 npc	generalshopkeeper2	3
 stock	pot_empty	5	10
 stock	jug_empty	2	100
@@ -190,7 +4129,7 @@ stock	hammer	5	100
 stock	newcomer_map	5	100
 stock	sos_security_book	5	100
 
-shop	swordshop	18	0	1000	600	20	Varrock Swordshop
+shop	dragonswordshop	18	0	1000	600	20	Varrock Swordshop
 npc	swordshop1	3
 stock	bronze_sword	5	100
 stock	iron_sword	4	200
@@ -211,11 +4150,261 @@ stock	black_dagger	4	1000
 stock	mithril_dagger	3	3000
 stock	adamant_dagger	2	12000
 
-shop	teashop	1	0	1000	600	20	Ye olde Tea Shoppe.
+shop	deadman_swordshop	18	0	1300	550	30	Vermundi's Clothes Stall
+npc	dwarf_city_shop_cloth_poor	3
+stock	silk	5	100
+
+shop	gemshop2_gim	8	0	1300	550	30	Vigr's Warhammers
+npc	dwarf_city_shop_warhammer	3
+stock	bronze_warhammer	5	100
+stock	iron_warhammer	4	200
+stock	steel_warhammer	3	400
+stock	black_warhammer	3	600
+stock	mithril_warhammer	2	800
+stock	adamnt_warhammer	1	1000
+
+shop	roguesden_shop_skillcape_iron	40	0	1000	600	1	Void Knight Archery Store
+npc	pest_squire_rangeshop	3
+stock	bronze_javelin	10	20
+stock	iron_javelin	10	20
+stock	steel_javelin	10	40
+stock	mithril_javelin	5	60
+stock	adamant_javelin	5	80
+stock	rune_javelin	5	100
+stock	bronze_arrowheads	10	10
+stock	iron_arrowheads	10	20
+stock	steel_arrowheads	10	40
+stock	mithril_arrowheads	5	40
+stock	adamant_arrowheads	5	40
+stock	rune_arrowheads	5	40
+
+shop	khazardshop	40	1	1300	400	3	Void Knight General Store
+npc	pest_squire_storemaster	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	bronze_axe	10	100
+stock	pest_field_ration	25	10
+
+shop	mm_magic_shop	14	0	1000	600	1	Void Knight Magic Store
+npc	pest_squire_runeshop	3
+stock	firerune	5000	10
+stock	waterrune	5000	10
+stock	airrune	5000	10
+stock	earthrune	5000	10
+stock	mindrune	5000	10
+stock	bodyrune	5000	10
+stock	chaosrune	250	10
+stock	deathrune	250	15
+stock	pack_firerune	80	10
+stock	pack_waterrune	80	10
+stock	pack_airrune	80	10
+stock	pack_earthrune	80	10
+stock	pack_mindrune	40	10
+stock	pack_chaosrune	35	10
+
+shop	fishingshop2	24	0	1300	700	30	Warrens Fish Monger
+npc	warrens_fishmonger	3
+stock	net	5	100
+stock	fishing_rod	5	100
+stock	fly_fishing_rod	5	100
+stock	harpoon	2	400
+stock	lobster_pot	2	400
+stock	fishing_bait	1500	1
+stock	pack_fishing_bait	80	10
+stock	feather	1000	1
+stock	pack_feather	50	2
+stock	big_net	5	100
+stock	raw_shrimp	0	300
+stock	raw_sardine	200	1
+stock	raw_herring	0	900
+stock	raw_mackerel	0	1000
+stock	raw_cod	0	1100
+stock	raw_anchovies	0	1200
+stock	raw_trout	0	1500
+stock	raw_pike	0	1800
+stock	raw_salmon	0	2100
+stock	raw_tuna	0	2300
+stock	raw_lobster	0	2600
+stock	raw_bass	0	2700
+stock	raw_swordfish	0	2900
+stock	raw_shark	0	3500
+
+shop	ahoy_generalshop	40	1	1300	400	30	Warrens General Store
+npc	warrens_shopkeeper	3
+stock	pot_empty	3	100
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	15
+stock	shears	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	10	10
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	spade	5	100
+stock	knife	4	100
+
+shop	ranging_guild_armourshop_skillcape_trimmed	40	0	1200	600	20	Warrior Guild Armoury
+npc	warguild_armour_shopkeeper	3
+stock	iron_battleaxe	5	100
+stock	steel_battleaxe	2	200
+stock	mithril_battleaxe	1	3000
+stock	bronze_sword	5	100
+stock	iron_sword	4	200
+stock	steel_sword	4	400
+stock	black_sword	3	1000
+stock	mithril_sword	3	3000
+stock	adamant_sword	2	12000
+stock	bronze_longsword	4	100
+stock	iron_longsword	3	200
+stock	steel_longsword	3	400
+stock	black_longsword	2	1000
+stock	mithril_longsword	2	3000
+stock	adamant_longsword	1	12000
+stock	bronze_dagger	10	100
+stock	iron_dagger	6	200
+stock	steel_dagger	5	400
+stock	black_dagger	4	1000
+stock	mithril_dagger	3	3000
+stock	adamant_dagger	2	12000
+stock	bronze_mace	5	100
+stock	iron_mace	4	200
+stock	steel_mace	4	400
+stock	mithril_mace	3	3000
+stock	adamant_mace	2	12000
+stock	bronze_2h_sword	4	200
+stock	iron_2h_sword	3	300
+stock	steel_2h_sword	2	500
+stock	black_2h_sword	1	700
+stock	mithril_2h_sword	1	1000
+stock	adamant_2h_sword	1	15000
+stock	bronze_chainbody	5	100
+stock	iron_chainbody	3	200
+stock	steel_chainbody	3	400
+stock	bronze_med_helm	5	100
+stock	iron_med_helm	3	200
+stock	steel_med_helm	3	400
+
+shop	ranging_guild_bowshop_gim	27	0	1200	150	20	Warrior Guild Food Shop
+npc	warguild_food_shopkeeper	3
+stock	trout	10	100
+stock	bass	10	100
+stock	plain_pizza	5	100
+stock	potato_cheese	10	100
+stock	stew	10	100
+
+shop	magicguildshop_uim	23	0	1200	150	20	Warrior Guild Potion Shop
+npc	warguild_potion_shopkeeper	3
+stock	3dose1strength	10	100
+stock	3dose1attack	10	100
+stock	3dose1defense	10	100
+
+shop	hallowed_rewardshop	10	0	1000	650	10	Wayne's Chains! - Chainmail specialist.
+npc	wayne	3
+stock	bronze_chainbody	3	200
+stock	iron_chainbody	2	300
+stock	steel_chainbody	1	2000
+stock	black_chainbody	1	2500
+stock	mithril_chainbody	1	3500
+stock	adamant_chainbody	1	9000
+
+shop	fortis_shop_seamstress	11	0	1100	700	30	Weapons galore
+npc	frisd_weaponmerchant	3
+stock	mithril_longsword	4	100
+stock	mithril_warhammer	4	100
+stock	mithril_battleaxe	4	100
+stock	mithril_claws	4	100
+stock	mithril_2h_sword	4	100
+
+shop	helmetshop	40	1	1200	550	20	West Ardougne General Store
+npc	chadwell	3
+stock	pot_empty	3	100
+stock	rope	3	100
+stock	bronze_pickaxe	2	100
+stock	bucket_empty	2	100
+stock	pack_bucket	10	10
+stock	tinderbox	2	100
+stock	hammer	3	100
+stock	leather_boots	2	100
+stock	longbow	2	100
+stock	bronze_arrow	20	100
+stock	salmon	10	100
+stock	meat_pie	10	100
+stock	bread	5	100
+stock	cooked_meat	10	100
+
+shop	deadman_archeryshop2_skillcape	32	0	1000	600	10	William's Wilderness Cape Shop.
+npc	wilderness_capeseller_1	3
+stock	wilderness_cape_1	100	100
+stock	wilderness_cape_11	100	100
+stock	wilderness_cape_21	100	100
+stock	wilderness_cape_31	100	100
+stock	wilderness_cape_41	100	100
+
+shop	deadman_lletyaarcheryshop1	11	0	1000	600	20	Wine Shop.
+npc	rag_wine_merchant	3
+stock	jug_wine	5	1500
+stock	jug_empty	3	100
+stock	pack_jug_empty	5	15
+stock	rag_bottle_wine	2	1500
+stock	rag_vinegar	500	10
+
+shop	pizzabaseshop	7	0	1000	550	10	Yarnio's Baked Goods
+npc	cam_torum_shop_baker	3
+stock	bread	15	100
+stock	cake	5	800
+stock	redberry_pie	5	150
+stock	meat_pie	5	150
+stock	apple_pie	5	150
+stock	garden_pie	5	150
+stock	fish_pie	5	150
+
+shop	deadman_helmetshop	10	0	1000	600	20	Yarsul's Prodigious Pickaxes
+npc	mguild_pickaxeseller	3
+stock	bronze_pickaxe	6	50
+stock	iron_pickaxe	5	100
+stock	steel_pickaxe	4	200
+stock	mithril_pickaxe	3	300
+stock	adamant_pickaxe	2	500
+stock	rune_pickaxe	1	700
+
+shop	deadman_archeryshop	18	0	1000	600	20	Ye olde Tea Shoppe.
 npc	tea_seller	3
 stock	cup_of_tea	20	50
 
-shop	memberstaffshop	7	0	1000	550	20	Zaff's Superior Staffs!
+shop	ranging_guild_bowshop_skillcape_trimmed	21	0	1300	700	30	Yrsa's Accoutrements
+npc	viking_clothing_shopkeeper	3
+stock	viking_top_blue	5	100
+stock	viking_top_red	5	100
+stock	viking_top_darkbrown	5	100
+stock	viking_top_green	5	100
+stock	viking_top_beige	5	100
+stock	vikingrobetop	5	100
+stock	vikingrobebottom	5	100
+stock	vikinghat	5	100
+stock	vikingboots	5	100
+stock	vikinggloves	5	100
+stock	viking_cloak_brown	5	100
+stock	viking_cloak_lightbrown	5	100
+stock	viking_cloak_darkbrown	5	100
+stock	viking_cloak_green	5	100
+stock	viking_cloak_red	5	100
+stock	viking_cloak_grey	5	100
+stock	viking_cloak_tangerine	5	100
+stock	viking_cloak_ocean	5	100
+stock	viking_cloak_purple	5	100
+stock	viking_cloak_pink	5	100
+stock	viking_cloak_black	5	100
+
+shop	mag_emelio_shop	7	0	1000	550	20	Zaff's Superior Staffs!
 npc	zaff	3
 stock	battlestaff	5	100
 stock	plainstaff	5	100
@@ -224,3 +4413,53 @@ stock	staff_of_air	2	1000
 stock	staff_of_water	2	1000
 stock	staff_of_earth	2	1000
 stock	staff_of_fire	2	1000
+
+shop	gnomeshop	40	1	1300	400	30	Zanaris General Store
+npc	generalshopkeeper8	3
+stock	pot_empty	5	10
+stock	jug_empty	2	100
+stock	pack_jug_empty	5	20
+stock	shears	2	100
+stock	bucket_empty	3	10
+stock	pack_bucket	15	10
+stock	bowl_empty	2	50
+stock	cake_tin	2	50
+stock	tinderbox	2	100
+stock	chisel	2	100
+stock	hammer	5	100
+stock	newcomer_map	5	100
+stock	sos_security_book	5	100
+
+shop	darkruneshop_crap_gim	14	0	1000	550	20	Zeke's Superior Scimitars.
+npc	zeke	3
+stock	bronze_scimitar	5	100
+stock	iron_scimitar	3	200
+stock	steel_scimitar	2	600
+stock	mithril_scimitar	1	4000
+
+shop	deadman_craftingshop2	11	0	1000	600	20	Zenesha's Plate Mail Body Shop.
+npc	zenesha	3
+stock	bronze_platebody	3	100
+stock	iron_platebody	1	200
+stock	steel_platebody	1	400
+stock	black_platebody	1	3000
+stock	mithril_platebody	1	3000
+
+shop	roguesden_shop_skillcape_trimmed_iron	40	0	1000	600	20	~ Uglug's stuffsies ~
+npc	zogre_uglug_nar	3
+stock	relicyms_balm3	100	10
+stock	sanfew_salve_3_dose	0	100
+stock	achey_tree_logs	100	100
+stock	bow_string	10	200
+stock	raw_chompy	0	500
+stock	cooked_chompy	10	100
+stock	zogre_coffinkey	0	100
+stock	knife	5	100
+stock	zogre_brutal_bronze	0	1000
+stock	zogre_brutal_iron	0	1000
+stock	zogre_brutal_steel	0	1000
+stock	zogre_brutal_black	0	1500
+stock	zogre_brutal_mithril	0	2000
+stock	zogre_brutal_adamant	0	3000
+stock	zogre_brutal_rune	0	4000
+stock	zogre_bow	0	2000
