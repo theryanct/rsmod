@@ -1,9 +1,11 @@
 package org.rsmod.content.skills.fishing.scripts
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.fishingLvl
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc2
@@ -23,8 +25,8 @@ import org.rsmod.game.type.seq.SeqType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-// TODO (fishing PR 2): big net, harpoon, lobster pot, lure/fly fishing, fishing spot movement,
-//  angler outfit, clue bottles, heron pet.
+// Not yet: moving spots (skipped by decision), karambwan, barbarian fishing, special members
+// spots (anglerfish, dark crab, eels), big net junk items, angler outfit, clue bottles, heron pet.
 class Fishing
 @Inject
 constructor(
@@ -34,19 +36,26 @@ constructor(
     private val invisibleLvls: InvisibleLevels,
     private val mapClock: MapClock,
 ) : PluginScript() {
+    private val logger = InlineLogger()
+
     override fun ScriptContext.startup() {
-        // Fishing spots all share the "Fishing spot" name, but each location uses its own npc
-        // type and the op slot for a given method differs between types. Discover them from the
-        // cache so every net/bait spot in the world is covered without hand-listing type ids.
+        // Every fishing spot is an npc named "Fishing spot"; each location has its own npc type.
+        // The pair of ops a spot offers identifies what it yields (e.g. "Bait" gives sardine at a
+        // Net/Bait sea spot but pike at a Lure/Bait river spot), so methods are resolved per type.
+        var bound = 0
         for (type in npcTypes.values) {
             if (!type.name.equals("Fishing spot", ignoreCase = true)) {
                 continue
             }
+            val ops = type.op.mapNotNull { it?.trim()?.lowercase() }.toSet()
             for ((index, text) in type.op.withIndex()) {
-                val method = FishingMethod.fromOp(text) ?: continue
+                val op = text?.trim()?.lowercase() ?: continue
+                val method = FishingMethod.resolve(op, ops) ?: continue
                 registerOp(type, index + 1, method)
+                bound++
             }
         }
+        logger.info { "Fishing bound $bound spot ops." }
     }
 
     private fun ScriptContext.registerOp(type: UnpackedNpcType, op: Int, method: FishingMethod) {
@@ -55,7 +64,7 @@ constructor(
             2 -> onOpNpc2(type) { fish(it.npc, op, method) }
             3 -> onOpNpc3(type) { fish(it.npc, op, method) }
             4 -> onOpNpc4(type) { fish(it.npc, op, method) }
-            // ProtectedAccess has no opNpc5 to re-trigger the loop; net/bait never sit on op5.
+            // ProtectedAccess has no opNpc5 to re-trigger the loop; no fishing op sits on op5.
         }
     }
 
@@ -93,7 +102,7 @@ constructor(
             mes("You need a Fishing level of at least $lowest to ${method.verb} these fish.")
             return false
         }
-        if (method.tool !in inv) {
+        if (!hasTool(method)) {
             mes(method.missingToolMessage)
             return false
         }
@@ -108,6 +117,13 @@ constructor(
             return false
         }
         return true
+    }
+
+    private fun ProtectedAccess.hasTool(method: FishingMethod): Boolean {
+        val wielded = player.righthand
+        return method.tools.any { tool ->
+            tool in inv || (wielded != null && objTypes[tool].id == wielded.id)
+        }
     }
 
     private fun ProtectedAccess.rollCatch(method: FishingMethod) {
@@ -151,9 +167,8 @@ constructor(
     )
 
     private enum class FishingMethod(
-        val ops: Set<String>,
         val verb: String,
-        val tool: ObjType,
+        val tools: List<ObjType>,
         val bait: ObjType?,
         val anim: SeqType,
         val startMessage: String,
@@ -163,9 +178,8 @@ constructor(
         val catches: List<Catch>,
     ) {
         SmallNet(
-            ops = setOf("net", "small net"),
             verb = "net",
-            tool = fishing_objs.net,
+            tools = listOf(fishing_objs.net),
             bait = null,
             anim = fishing_seqs.human_smallnet,
             startMessage = "You cast out your net...",
@@ -177,10 +191,9 @@ constructor(
                     Catch(fishing_objs.raw_shrimps, 1, 10.0, 48, 256, "You catch some shrimps."),
                 ),
         ),
-        Bait(
-            ops = setOf("bait"),
+        SeaBait(
             verb = "bait",
-            tool = fishing_objs.fishing_rod,
+            tools = listOf(fishing_objs.fishing_rod),
             bait = fishing_objs.fishing_bait,
             anim = fishing_seqs.human_fishing_casting,
             startMessage = "You cast out your line...",
@@ -191,13 +204,119 @@ constructor(
                     Catch(fishing_objs.raw_herring, 10, 30.0, 24, 128, "You catch a herring."),
                     Catch(fishing_objs.raw_sardine, 5, 20.0, 32, 192, "You catch a sardine."),
                 ),
+        ),
+        RiverBait(
+            verb = "bait",
+            tools = listOf(fishing_objs.fishing_rod),
+            bait = fishing_objs.fishing_bait,
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fishing rod to catch these fish.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches = listOf(Catch(fishing_objs.raw_pike, 25, 60.0, 16, 96, "You catch a pike.")),
+        ),
+        Lure(
+            verb = "lure",
+            tools = listOf(fishing_objs.fly_fishing_rod),
+            bait = fishing_objs.feather,
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fly fishing rod to catch these fish.",
+            missingBaitMessage = "You don't have any feathers left.",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_salmon, 30, 70.0, 16, 96, "You catch a salmon."),
+                    Catch(fishing_objs.raw_trout, 20, 50.0, 32, 192, "You catch a trout."),
+                ),
+        ),
+        Cage(
+            verb = "cage",
+            tools = listOf(fishing_objs.lobster_pot),
+            bait = null,
+            anim = fishing_seqs.human_lobster,
+            startMessage = "You attempt to catch a lobster.",
+            missingToolMessage = "You need a lobster pot to catch lobsters.",
+            missingBaitMessage = "",
+            catches = listOf(Catch(fishing_objs.raw_lobster, 40, 90.0, 6, 95, "You catch a lobster.")),
+        ),
+        Harpoon(
+            verb = "harpoon",
+            tools = harpoons,
+            bait = null,
+            anim = fishing_seqs.human_harpoon,
+            startMessage = "You start harpooning fish.",
+            missingToolMessage = "You need a harpoon to catch these fish.",
+            missingBaitMessage = "",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_swordfish, 50, 100.0, 4, 48, "You catch a swordfish."),
+                    Catch(fishing_objs.raw_tuna, 35, 80.0, 8, 64, "You catch a tuna."),
+                ),
+        ),
+        SharkHarpoon(
+            verb = "harpoon",
+            tools = harpoons,
+            bait = null,
+            anim = fishing_seqs.human_harpoon,
+            startMessage = "You start harpooning fish.",
+            missingToolMessage = "You need a harpoon to catch these fish.",
+            missingBaitMessage = "",
+            catches = listOf(Catch(fishing_objs.raw_shark, 76, 110.0, 3, 40, "You catch a shark!")),
+        ),
+        BigNet(
+            verb = "net",
+            tools = listOf(fishing_objs.big_net),
+            bait = null,
+            anim = fishing_seqs.human_largenet,
+            startMessage = "You cast out your net...",
+            missingToolMessage = "You need a big fishing net to catch these fish.",
+            missingBaitMessage = "",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_bass, 46, 100.0, 3, 40, "You catch a bass."),
+                    Catch(fishing_objs.raw_cod, 23, 45.0, 4, 55, "You catch a cod."),
+                    Catch(fishing_objs.raw_mackerel, 16, 20.0, 5, 65, "You catch a mackerel."),
+                ),
+        ),
+        MonkfishNet(
+            verb = "net",
+            tools = listOf(fishing_objs.net),
+            bait = null,
+            anim = fishing_seqs.human_smallnet,
+            startMessage = "You cast out your net...",
+            missingToolMessage = "You need a small fishing net to catch these fish.",
+            missingBaitMessage = "",
+            catches =
+                listOf(Catch(fishing_objs.raw_monkfish, 62, 120.0, 48, 90, "You catch a monkfish.")),
         );
 
         companion object {
-            fun fromOp(text: String?): FishingMethod? {
-                val normalized = text?.trim()?.lowercase() ?: return null
-                return entries.firstOrNull { normalized in it.ops }
-            }
+            /**
+             * Resolves a spot op into a method using the spot's full op set (OSRS spot kinds:
+             * Net/Bait, Lure/Bait, Cage/Harpoon, Big Net/Harpoon, Net/Harpoon (Piscatorius)).
+             */
+            fun resolve(op: String, spotOps: Set<String>): FishingMethod? =
+                when (op) {
+                    "net",
+                    "small net" -> if ("harpoon" in spotOps) MonkfishNet else SmallNet
+                    "bait" -> if ("lure" in spotOps) RiverBait else SeaBait
+                    "lure" -> Lure
+                    "cage" -> Cage
+                    "harpoon" -> if ("big net" in spotOps) SharkHarpoon else Harpoon
+                    "big net" -> BigNet
+                    else -> null
+                }
         }
+    }
+
+    private companion object {
+        val harpoons: List<ObjType>
+            get() =
+                listOf(
+                    fishing_objs.harpoon,
+                    fishing_objs.dragon_harpoon,
+                    fishing_objs.infernal_harpoon,
+                    fishing_objs.crystal_harpoon,
+                )
     }
 }
