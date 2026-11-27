@@ -36,11 +36,13 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Mining for the F2P rocks configured in `MiningRocks`.
  *
  * As in OSRS, the pickaxe sets how often a roll happens (ticks between rolls) and the Mining level
- * sets the chance of each roll succeeding. Every success yields one ore, depletes the rock to its
- * empty variant for the rock's respawn time, and has a 1/256 chance of an extra random gem.
+ * sets the chance of each roll succeeding. Every success yields one ore and depletes the rock to its
+ * empty variant for the rock's respawn time. Before each ore roll there is a 1/256 roll on the
+ * mining gem table; if it hits, the attempt gives a gem (or nothing) instead of an ore, with no xp
+ * and no depletion (OSRS Wiki, Template:MiningPreGemDropTable).
  */
 // TODO:
-// - charged amulet of glory gem chance (1/86)
+// - charged amulet of glory gem bonus (extra 3/256 roll, 1/64.2 overall)
 // - members rocks (silver/gold/mithril/adamantite/runite, gem rocks)
 class Mining
 @Inject
@@ -88,7 +90,9 @@ constructor(
             spam("You swing your pick at the rock.")
         } else if (actionDelay == mapClock) {
             val (low, high) = type.rockSuccessRates
-            if (statRandom(stats.mining, low, high, invisibleLvls)) {
+            if (random.of(GEM_TABLE_CHANCE) == 0) {
+                rollGemTable()
+            } else if (statRandom(stats.mining, low, high, invisibleLvls)) {
                 mineOre(rock, type, ore)
                 return
             }
@@ -107,28 +111,29 @@ constructor(
         spam("You manage to mine some ${ore.oreName()}.")
         statAdvance(stats.mining, xp)
         invAdd(inv, ore)
-        rollGem()
 
         locRepo.change(rock, type.rockEmpty, type.rockRespawnTime)
         resetAnim()
     }
 
-    private fun ProtectedAccess.rollGem() {
-        if (random.of(1, GEM_CHANCE) != 1 || inv.isFull()) {
-            return
-        }
-        // Random gem weights while mining (sapphire 1/2, emerald 1/4, ruby 1/8, diamond 1/8).
-        val roll = random.of(1, 8)
+    /**
+     * Mining gem table (out of 128): nothing 70, sapphire 32, emerald 16, ruby 8, diamond 2. A
+     * charged amulet of glory adds an extra 3/256 roll in OSRS; not implemented yet.
+     */
+    private fun ProtectedAccess.rollGemTable() {
+        val roll = random.of(1, 128)
         val gem =
             when {
-                roll <= 4 -> mining_objs.uncut_sapphire
-                roll <= 6 -> mining_objs.uncut_emerald
-                roll == 7 -> mining_objs.uncut_ruby
+                roll <= 70 -> return
+                roll <= 102 -> mining_objs.uncut_sapphire
+                roll <= 118 -> mining_objs.uncut_emerald
+                roll <= 126 -> mining_objs.uncut_ruby
                 else -> mining_objs.uncut_diamond
             }
         val gemType = objTypes[gem]
         invAdd(inv, gemType)
-        mes("You just found ${gemType.name.removePrefix("Uncut ").withArticle()}!")
+        val gemName = gemType.name.removePrefix("Uncut ").replaceFirstChar(Char::uppercaseChar)
+        mes("You just found ${gemName.withArticle()}!")
     }
 
     private fun ProtectedAccess.rollTicks(pickaxe: UnpackedObjType): Int {
@@ -148,7 +153,7 @@ constructor(
     }
 
     companion object {
-        private const val GEM_CHANCE = 256
+        private const val GEM_TABLE_CHANCE = 256
 
         val UnpackedObjType.pickaxeLevelReq: Int by objParam(params.levelrequire)
         val UnpackedObjType.pickaxeAnim: SeqType by objParam(params.skill_anim)
