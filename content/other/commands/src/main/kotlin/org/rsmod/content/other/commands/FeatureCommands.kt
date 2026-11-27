@@ -27,7 +27,7 @@ constructor(
             invalidArgs = "Use as ::toggle feature (${Feature.entries.joinToString { it.key }})"
         }
         onCommand("skillxp", "Set a per-skill xp multiplier", ::skillXp) {
-            invalidArgs = "Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0 = reset)"
+            invalidArgs = "Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0)"
         }
     }
 
@@ -53,7 +53,7 @@ constructor(
         with(cheat) {
             val stat = args.getOrNull(0)?.let(featureMenu::findStat)
             if (stat == null) {
-                player.mes("Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0 = reset)")
+                player.mes("Use as ::skillxp skill rate (ex: prayer 10, cooking 2.5, prayer 0)")
                 return
             }
             val arg = args.getOrNull(1)
