@@ -46,19 +46,17 @@ constructor(
     }
 
     private fun updateService() {
-        service.playerInfoProtocol.update()
-        service.npcInfoProtocol.update()
+        service.infoProtocols.update()
     }
 
     @Suppress("UNCHECKED_CAST")
     private fun SessionStart.startSession() {
         val slot = player.slotId
 
-        val playerInfo = service.playerInfoProtocol.alloc(slot, OldSchoolClientType.DESKTOP)
-        val npcInfo = service.npcInfoProtocol.alloc(slot, OldSchoolClientType.DESKTOP)
+        val infos = service.infoProtocols.alloc(slot, OldSchoolClientType.DESKTOP)
 
-        val client = RspClient(session, playerInfo, npcInfo) as Client<Any, Any>
-        val cycle = RspCycle(session, playerInfo, npcInfo, objTypes, regionReg)
+        val client = RspClient(session, infos) as Client<Any, Any>
+        val cycle = RspCycle(session, infos, objTypes, regionReg)
 
         player.client = client
         player.clientCycle = cycle
