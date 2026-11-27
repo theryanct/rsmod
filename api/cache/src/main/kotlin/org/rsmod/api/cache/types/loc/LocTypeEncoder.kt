@@ -9,6 +9,7 @@ import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.EncoderContext
 import org.rsmod.api.cache.util.encodeConfig
 import org.rsmod.api.cache.util.filterTransmit
+import org.rsmod.api.cache.util.writeRawOpcodes
 import org.rsmod.api.cache.util.writeRawParams
 import org.rsmod.game.type.loc.LocTypeBuilder
 import org.rsmod.game.type.loc.UnpackedLocType
@@ -50,10 +51,10 @@ public object LocTypeEncoder {
     public fun encodeJs5(type: UnpackedLocType, data: ByteBuf, ctx: EncoderContext): Unit =
         with(type) {
             if (models.isNotEmpty() && shapes.isNotEmpty()) {
-                data.writeByte(1)
+                data.writeByte(6)
                 data.writeByte(models.size)
                 for (i in models.indices) {
-                    data.writeShort(models[i])
+                    data.writeInt(models[i])
                     data.writeByte(shapes[i].toInt())
                 }
             }
@@ -64,10 +65,10 @@ public object LocTypeEncoder {
             }
 
             if (models.isNotEmpty() && shapes.isEmpty()) {
-                data.writeByte(5)
+                data.writeByte(7)
                 data.writeByte(models.size)
                 for (model in models) {
-                    data.writeShort(model)
+                    data.writeInt(model)
                 }
             }
 
@@ -224,19 +225,20 @@ public object LocTypeEncoder {
 
             if (multiLoc.isNotEmpty()) {
                 val hasDefault = multiLocDefault != LocTypeBuilder.DEFAULT_MULTI_LOC_DEFAULT
+                // Rev 237+ opcodes 97/98: 24-bit signed loc ids.
                 if (hasDefault) {
-                    data.writeByte(92)
+                    data.writeByte(98)
                 } else {
-                    data.writeByte(77)
+                    data.writeByte(97)
                 }
                 data.writeShort(multiVarBit)
                 data.writeShort(multiVarp)
                 if (hasDefault) {
-                    data.writeShort(multiLocDefault)
+                    data.writeMedium(multiLocDefault)
                 }
                 data.writeByte(multiLoc.size - 1)
                 for (i in multiLoc.indices) {
-                    data.writeShort(multiLoc[i].toInt())
+                    data.writeMedium(multiLoc[i].toInt())
                 }
             }
 
@@ -282,6 +284,9 @@ public object LocTypeEncoder {
                 data.writeByte(249)
                 data.writeRawParams(params)
             }
+
+            // Client-only opcodes carried through from the cache (rev 237+).
+            data.writeRawOpcodes(clientRaw)
         }
 
     public fun encodeGame(type: UnpackedLocType, data: ByteBuf): Unit =
