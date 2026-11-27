@@ -67,7 +67,10 @@ public fun Player.statAdvance(
     xp: Double,
     rate: Double = xpRate,
     globalRate: Double = globalXpRate,
-): Int = PlayerSkillXP.internalAddXP(this, stat, xp, rate = rate * globalRate)
+): Int {
+    val skillRate = SkillXpRateOverrides.rateFor(stat) ?: rate
+    return PlayerSkillXP.internalAddXP(this, stat, xp, rate = skillRate * globalRate)
+}
 
 /**
  * Increases the player's current [stat] level.
