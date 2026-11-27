@@ -5,13 +5,18 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
 import org.rsmod.api.script.onOpLoc1
+import org.rsmod.api.script.onOpLoc2
+import org.rsmod.api.script.onOpLoc3
+import org.rsmod.api.script.onOpLoc4
+import org.rsmod.api.script.onOpLoc5
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.smithing.configs.SmithingQueues
 import org.rsmod.content.skills.smithing.configs.SmithingSeqs
-import org.rsmod.content.skills.smithing.configs.smithing_content
 import org.rsmod.content.skills.smithing.configs.smithing_objs
+import org.rsmod.game.type.loc.LocType
+import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
@@ -27,10 +32,25 @@ import org.rsmod.plugin.scripts.ScriptContext
  */
 class Smelting
 @Inject
-constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) : PluginScript() {
+constructor(
+    private val objTypes: ObjTypeList,
+    private val locTypes: LocTypeList,
+    private val xpMods: XpModifiers,
+) : PluginScript() {
     override fun ScriptContext.startup() {
-        onOpLoc1(smithing_content.furnace) { selectBar() }
-        onOpLocU(smithing_content.furnace) { selectBar() }
+        // Bind every loc named "Furnace" by the slot of its "Smelt" op (op2 on standard furnaces;
+        // tutorial furnaces use "Use"), so new or regional furnaces work without a list.
+        for (type in locTypes.values) {
+            if (!type.name.equals("Furnace", ignoreCase = true)) {
+                continue
+            }
+            val slot = type.op.indexOfFirst { it.equals("Smelt", true) || it.equals("Use", true) }
+            if (slot == -1) {
+                continue
+            }
+            onOpLocSlot(type, slot + 1) { selectBar() }
+            onOpLocU(type) { selectBar() }
+        }
         onPlayerQueueWithArgs<SmeltJob>(SmithingQueues.smelting) { smelt(it.args) }
     }
 
@@ -148,5 +168,20 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private companion object {
         private const val SMELT_TICKS = 5
+    }
+}
+
+/** Binds [action] to op [slot] (1-5) of [type]. */
+internal fun ScriptContext.onOpLocSlot(
+    type: LocType,
+    slot: Int,
+    action: suspend ProtectedAccess.() -> Unit,
+) {
+    when (slot) {
+        1 -> onOpLoc1(type) { action() }
+        2 -> onOpLoc2(type) { action() }
+        3 -> onOpLoc3(type) { action() }
+        4 -> onOpLoc4(type) { action() }
+        5 -> onOpLoc5(type) { action() }
     }
 }
