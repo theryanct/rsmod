@@ -1,6 +1,9 @@
 [[config]]
 npc = 'farming_tools_leprechaun'
 examine = 'Looks after your farming tools.'
+death_anim = 6666
+attack_anim = 1413
+defend_anim = 3964
 
 [[config]]
 npc = 'molanisk'
@@ -579,6 +582,8 @@ defend_anim = 5533
 [[config]]
 npc = 'horror_rockcrab'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'horror_rockcrab_inactive'
@@ -587,6 +592,8 @@ examine = 'A rocky outcrop.'
 [[config]]
 npc = 'horror_rockcrab_small'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'horror_rockcrab_small_inactive'
@@ -1624,6 +1631,8 @@ examine = 'For Mod Reach.'
 [[config]]
 npc = 'macro_swarm'
 examine = 'A swarm of insects.'
+attack_anim = 1
+defend_anim = 2
 
 [[config]]
 npc = 'test_sillyspectral'
@@ -3605,6 +3614,8 @@ examine = "It's a leprechaun sunbathing on a mountain."
 [[config]]
 npc = 'myarm_flies_base'
 examine = 'They like to hover around bad smells.'
+attack_anim = 1
+defend_anim = 2
 
 [[config]]
 npc = 'myarm_troll_child'
@@ -4058,34 +4069,58 @@ examine = 'An ogre that guards.'
 [[config]]
 npc = 'zogre_1'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_2'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_3'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_4'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_5'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_6'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_skele_dance'
 examine = "It's falling apart!"
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_dance_1'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_dance_2'
@@ -4106,10 +4141,16 @@ examine = 'A partially decomposing zombie ogre.'
 [[config]]
 npc = 'zogre_drummer2'
 examine = 'A partially decomposing zombie ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_skele'
 examine = 'A skeletal ogre.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'zogre_human_brentle_vahn'
@@ -5734,6 +5775,8 @@ examine = 'A shadowy sort of entity, kind of creepy looking.'
 [[config]]
 npc = 'shade_level1'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'shade_heaven'
@@ -5746,6 +5789,8 @@ examine = 'A shadowy sort of entity, kind of creepy looking.'
 [[config]]
 npc = 'shade_level2'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'shadeshadow_level3'
@@ -5754,6 +5799,8 @@ examine = 'A shadowy sort of entity, kind of creepy looking.'
 [[config]]
 npc = 'shade_level3'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'shadeshadow_level4'
@@ -5762,6 +5809,8 @@ examine = 'A shadowy sort of entity, kind of creepy looking.'
 [[config]]
 npc = 'shade_level4'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'shadeshadow_level5'
@@ -5770,6 +5819,8 @@ examine = 'A shadowy sort of entity, kind of creepy looking.'
 [[config]]
 npc = 'shade_level5'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'ulsquire_shauncy_afflicted'
@@ -6246,18 +6297,30 @@ examine = 'A dwarven worker.'
 [[config]]
 npc = 'fai_black_guard_01'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'fai_black_guard_02'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'fai_black_guard_03'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'fai_black_guard_04'
 examine = 'A member of the Black Guard, a special division of the dwarven army.'
+death_anim = 102
+attack_anim = 99
+defend_anim = 100
 
 [[config]]
 npc = 'fai_dwarf_worker_patrol_01'
@@ -9201,54 +9264,80 @@ examine = 'He maintains this agility course.'
 [[config]]
 npc = 'tzhaar_mej1'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_mej2'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_mej3'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_mej4'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_mej5'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_mej6'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_mej7'
 examine = 'Appears to be some kind of mystic.'
+death_anim = 2608
+attack_anim = 2612
 
 [[config]]
 npc = 'tzhaar_hur1'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur2'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur3'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur4'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur5'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur6'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_xil1'
@@ -9257,6 +9346,8 @@ examine = "Doesn't look very social."
 [[config]]
 npc = 'tzhaar_xil2'
 examine = "Doesn't look very social."
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_xil3'
@@ -9269,6 +9360,8 @@ examine = "Doesn't look very social."
 [[config]]
 npc = 'tzhaar_xil5'
 examine = "Doesn't look very social."
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_xil6'
@@ -9277,30 +9370,44 @@ examine = "Doesn't look very social."
 [[config]]
 npc = 'tzhaar_ket1'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket2'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket3'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket4'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket5'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket6'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_ket7'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_fightcave_master'
@@ -9329,6 +9436,8 @@ examine = 'Another one of those mystic-types.'
 [[config]]
 npc = 'tzhaar_guard_spawningpool'
 examine = 'Must be a guard or something.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_guard_border'
@@ -9673,6 +9782,8 @@ defend_anim = 1340
 [[config]]
 npc = 'giant_rockcrab'
 examine = 'No one likes crabs... especially really big ones!'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'giant_rockcrab_hidden'
@@ -9685,6 +9796,9 @@ examine = 'A Fremennik warrior, hard at work.'
 [[config]]
 npc = 'jb_baby_dagganoth'
 examine = 'A knee-high horror from the ocean depths...'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'dagcave_ranged_boss'
@@ -12674,14 +12788,23 @@ examine = 'Very slimy and generally disgusting.'
 [[config]]
 npc = 'hunting_snow_tiger'
 examine = "It's just like a big, white, furry, deadly can opener."
+death_anim = 7034
+attack_anim = 7036
+defend_anim = 7035
 
 [[config]]
 npc = 'hunting_jaguar'
 examine = "If you tried to ride that, you'd just impale yourself!"
+death_anim = 7034
+attack_anim = 7036
+defend_anim = 7035
 
 [[config]]
 npc = 'hunting_leopard'
 examine = "Get in a graahk's way and you're going to know about it... however briefly."
+death_anim = 7034
+attack_anim = 7036
+defend_anim = 7035
 
 [[config]]
 npc = 'hunting_chinchompa'
@@ -18864,6 +18987,9 @@ examine = 'Ogre-ish.'
 [[config]]
 npc = 'gorad'
 examine = 'Big, dumb and ugly.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogre_guard'
@@ -18888,6 +19014,9 @@ examine = 'An ogre that guards.'
 [[config]]
 npc = 'city_guard'
 examine = 'Tries to keep the peace.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'scared_skavid'
@@ -18920,6 +19049,9 @@ examine = 'A skavid.'
 [[config]]
 npc = 'enclave_guard'
 examine = 'Big and ugly looking.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogre_shaman'
@@ -24946,6 +25078,8 @@ examine = 'I wonder what was inside it?'
 [[config]]
 npc = 'zeah_sandcrab'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'zeah_sandcrab_inactive'
@@ -24972,6 +25106,8 @@ defend_anim = 2366
 [[config]]
 npc = 'giant_rockcrab_deeper'
 examine = 'No one likes crabs... especially really big ones!'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'giant_rockcrab_hidden_deeper'
@@ -28855,6 +28991,9 @@ examine = 'A gnome consumed by his own wrath.'
 [[config]]
 npc = 'mm2_chieftan_keef_noncombat'
 examine = 'Head of the city guard.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'mm2_chieftan_keef_combat'
@@ -28863,6 +29002,9 @@ examine = 'Head of the city guard.'
 [[config]]
 npc = 'mm2_general_kob_noncombat'
 examine = 'One of the highest ranking trolls.'
+death_anim = 287
+attack_anim = 284
+defend_anim = 285
 
 [[config]]
 npc = 'mm2_general_kob_combat'
@@ -29179,6 +29321,8 @@ examine = 'A Fremennik raider.'
 [[config]]
 npc = 'zeah_sandcrab_small'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'zeah_sandcrab_small_inactive'
@@ -29401,6 +29545,8 @@ examine = 'A boney ghost.'
 [[config]]
 npc = 'kourend_shade'
 examine = 'The shadowy remains of a long-departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'kourend_dagannoth1'
@@ -29448,6 +29594,8 @@ defend_anim = 5489
 [[config]]
 npc = 'kourend_rockcrab'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'kourend_rockcrab_inactive'
@@ -30933,6 +31081,8 @@ examine = "Maybe it'll guard my possessions."
 [[config]]
 npc = 'tzhaar_ket_strong'
 examine = 'One of the stronger guards of Mor Ul Rek.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_elder1'
@@ -30945,26 +31095,38 @@ examine = 'Appears to be some kind of elder.'
 [[config]]
 npc = 'tzhaar_hur_city1'
 examine = 'Looks like an expert craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur_city2'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur_city3'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur_city4'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur_city5'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_hur_city6'
 examine = 'Looks like a craftsman of some kind.'
+death_anim = 2607
+attack_anim = 2609
 
 [[config]]
 npc = 'tzhaar_merchant_cityequipment'
@@ -31340,10 +31502,12 @@ examine = "There's somefin fishy about her."
 [[config]]
 npc = 'fossil_herbiboar_visible'
 examine = 'A hedgehog by any other name.'
+attack_anim = 7696
 
 [[config]]
 npc = 'fossil_herbiboar_anim_visible'
 examine = 'A hedgehog by any other name.'
+attack_anim = 7696
 
 [[config]]
 npc = 'fossil_twitcher'
@@ -31414,6 +31578,8 @@ examine = 'Ironically, makes a living from swords.'
 [[config]]
 npc = 'fossil_ammonitecrab'
 examine = 'Praise Helix!'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'fossil_ammonitecrab_inactive'
@@ -31426,6 +31592,8 @@ examine = 'Bubbly.'
 [[config]]
 npc = 'fossil_hoopsnake'
 examine = 'Must catch the tail.'
+attack_anim = 7685
+defend_anim = 7686
 
 [[config]]
 npc = 'fossil_hoopsnake_stunned'
@@ -32139,18 +32307,30 @@ examine = 'The boss.'
 [[config]]
 npc = 'ogress_warrior1'
 examine = 'A large angry ogre lady.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogress_warrior2'
 examine = 'A large angry ogre lady.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogress_shaman1'
 examine = 'Big, ugly and no sense of humour.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'ogress_shaman2'
 examine = 'Big, ugly and no sense of humour.'
+death_anim = 361
+attack_anim = 359
+defend_anim = 360
 
 [[config]]
 npc = 'wild_chaos_uncerter'
@@ -33239,6 +33419,8 @@ examine = 'A young rogue.'
 [[config]]
 npc = 'swampcrab'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'swampcrab_bloom'
@@ -33251,34 +33433,58 @@ examine = 'A bit of decaying wood.'
 [[config]]
 npc = 'slepe_vyrewatch_female_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'slepe_vyrewatch_female_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'slepe_vyrewatch_female_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'slepe_vyrewatch_female_4'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4704
 
 [[config]]
 npc = 'slepe_vyrewatch_male_1'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'slepe_vyrewatch_male_2'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'slepe_vyrewatch_male_3'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'slepe_vyrewatch_male_4'
 examine = 'An evil, bloodsucking vampyre.'
+death_anim = 8033
+attack_anim = 4701
+defend_anim = 4705
 
 [[config]]
 npc = 'myq4_citizen_1'
@@ -37363,6 +37569,7 @@ examine = "I don't want to get on the wrong side of her."
 [[config]]
 npc = 'forestry_poh_bees'
 examine = "These bees don't look very happy."
+attack_anim = 10823
 
 [[config]]
 npc = 'slepe_jester_child'
@@ -38291,34 +38498,58 @@ examine = 'Looking to make the perfect purchase.'
 [[config]]
 npc = 'vyrewatch_elite_1'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_2'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_3'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_4'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_5'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_6'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_7'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'vyrewatch_elite_8'
 examine = 'A deadly, bloodsucking vampyre.'
+death_anim = 8710
+attack_anim = 8705
+defend_anim = 8708
 
 [[config]]
 npc = 'slepe_posh_man1_noop'
@@ -39328,6 +39559,8 @@ examine = "Captain of one of the Spirit Anglers' ships."
 [[config]]
 npc = 'shade_level6'
 examine = 'The shadowy remains of a long departed soul.'
+attack_anim = 1283
+defend_anim = 1286
 
 [[config]]
 npc = 'shades_coffin_keeper'
@@ -39664,6 +39897,8 @@ examine = 'I can see some strange fish swimming around.'
 [[config]]
 npc = 'camdozaal_golem_chaos'
 examine = "This golem looks like it's been touched by chaos."
+death_anim = 8943
+attack_anim = 8942
 
 [[config]]
 npc = 'camdozaal_golem_chaos_rock'
@@ -39672,6 +39907,8 @@ examine = "This rubble looks like it's been touched by chaos."
 [[config]]
 npc = 'camdozaal_golem_body'
 examine = "This golem looks like it's been imbued with body energy."
+death_anim = 8943
+attack_anim = 8942
 
 [[config]]
 npc = 'camdozaal_golem_body_rock'
@@ -39680,6 +39917,8 @@ examine = "This rubble looks like it's been imbued with body energy."
 [[config]]
 npc = 'camdozaal_golem_mind'
 examine = "This golem looks like it's been imbued with mind energy."
+death_anim = 8943
+attack_anim = 8942
 
 [[config]]
 npc = 'camdozaal_golem_mind_rock'
@@ -39688,6 +39927,8 @@ examine = "This rubble looks like it's been imbued with mind energy."
 [[config]]
 npc = 'camdozaal_golem_flawed'
 examine = 'How long has it dwelled down here?'
+death_anim = 8943
+attack_anim = 8942
 
 [[config]]
 npc = 'camdozaal_golem_flawed_rock'
@@ -41313,6 +41554,8 @@ examine = 'Sweet dreams are most definitely not made of this.'
 [[config]]
 npc = 'macro_swarm_nohunt'
 examine = 'A swarm of insects.'
+attack_anim = 1
+defend_anim = 2
 
 [[config]]
 npc = 'poh_menagerie_sarachnispet_orange'
@@ -47887,18 +48130,30 @@ examine = 'What a happy capy!'
 [[config]]
 npc = 'varlamore_green_skink'
 examine = 'Its head looks especially cold-blooded.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'varlamore_green_skink_small'
 examine = 'Its head looks especially cold-blooded.'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'varlamore_sunbeam_skink'
 examine = 'Do those stripes make it go faster?'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'varlamore_sunbeam_skink_small'
 examine = 'Do those stripes make it go faster?'
+death_anim = 2778
+attack_anim = 2776
+defend_anim = 2777
 
 [[config]]
 npc = 'varlamore_jaguar'
@@ -48060,6 +48315,7 @@ defend_anim = 276
 [[config]]
 npc = 'varlamore_harpy_eagle'
 examine = 'A large and powerful bird of prey.'
+attack_anim = 10948
 
 [[config]]
 npc = 'varlamore_buffalo'
@@ -50907,6 +51163,8 @@ attack_anim = 11530
 [[config]]
 npc = 'frostcrab'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'frostcrab_inactive'
@@ -50915,6 +51173,8 @@ examine = 'A big block of ice.'
 [[config]]
 npc = 'frostcrab_small'
 examine = 'No one likes crabs...'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'frostcrab_small_inactive'
@@ -53152,6 +53412,8 @@ defend_anim = 1565
 [[config]]
 npc = 'giant_rockcrab_crypt_of_tonali'
 examine = 'No one likes crabs... especially really big ones!'
+attack_anim = 1312
+defend_anim = 1313
 
 [[config]]
 npc = 'giant_rockcrab_crypt_of_tonali_hidden'
@@ -53690,6 +53952,7 @@ examine = 'A large and colourful bird.'
 [[config]]
 npc = 'varlamore_parrot_caique'
 examine = 'A large and colourful bird.'
+attack_anim = 10948
 
 [[config]]
 npc = 'varlamore_parrot_caique_rock_north'

@@ -41,6 +41,7 @@ seq_skel = {int(r["id"]): int(r["skeleton"]) for r in read_tsv(f"{dump}/seqs.tsv
 npc_rows = read_tsv(f"{dump}/npcs.tsv")
 npc_ready = {int(r["id"]): int(r["ready"]) for r in npc_rows}
 npc_display = {int(r["id"]): r["name"] for r in npc_rows}
+npc_walk = {int(r["id"]): int(r["walk"]) for r in npc_rows}
 
 text = open(enricher_path, encoding="utf-8").read()
 blocks = text.split("[[config]]")
@@ -78,25 +79,43 @@ def family(seq_name, field):
     return seq_name[:m.start()].rstrip("_") if m else seq_name
 
 
-def by_name(npc, display, skel):
-    """Pick anims by seq name on the npc's skeleton. Returns ({field: seq}, reason)."""
+def by_name(npc, display, skel, hints=""):
+    """Pick anims by seq name on the npc's skeleton. Returns ({field: seq}, reason).
+
+    `hints` are the npc's own stand/walk seq names: their family ("ogress_ready" -> ogress) is the
+    strongest signal when several creature families share one skeleton.
+    """
     pool = seqs_by_skel.get(skel, [])
-    deaths = [s for s in pool if ROLE["death_anim"].search(seq_names[s])]
-    if not deaths: return {}, f"no named death seq on skeleton {skel}"
-    fams = {family(seq_names[s], "death_anim") for s in deaths}
     want = words(npc) | words(display)
-    scored = sorted(deaths, key=lambda s: (-len(words(seq_names[s]) & want), s))
-    best = scored[0]
-    if len(fams) > 1 and not (words(seq_names[best]) & want):
-        return {}, f"ambiguous: {len(fams)} anim families on skeleton {skel}, none named like the npc"
-    fam = family(seq_names[best], "death_anim")
-    picked = {"death_anim": best}
+    hint = words(hints) - {"ready", "walk", "stand", "idle", "run", "turn", "left", "right", "back", "update"}
+
+    def score(s):
+        w = words(seq_names[s])
+        return (len(w & hint), len(w & want), -s)
+
+    deaths = [s for s in pool if ROLE["death_anim"].search(seq_names[s])]
+    fams = {family(seq_names[s], "death_anim") for s in deaths}
+    picked = {}
+    if deaths:
+        best = max(deaths, key=score)
+        if len(fams) > 1 and not (words(seq_names[best]) & (want | hint)):
+            return {}, f"ambiguous: {len(fams)} anim families on skeleton {skel}, none named like the npc"
+        picked["death_anim"] = best
+        fam = family(seq_names[best], "death_anim")
+    else:
+        fam = None
     for field in ("attack_anim", "defend_anim"):
         cands = [s for s in pool if ROLE[field].search(seq_names[s]) and not ROLE["death_anim"].search(seq_names[s])]
-        same = [s for s in cands if family(seq_names[s], field) == fam]
-        cands = same or sorted(cands, key=lambda s: (-len(words(seq_names[s]) & (want | words(fam))), s))
-        if cands: picked[field] = cands[0]
-    return picked, "unique family" if len(fams) == 1 else "name match"
+        same = [s for s in cands if fam is not None and family(seq_names[s], field) == fam]
+        if same:
+            picked[field] = same[0]
+        elif cands:
+            top = max(cands, key=score)
+            # Without a death anim to anchor the family, only accept a name/hint match.
+            if fam is not None or words(seq_names[top]) & (want | hint): picked[field] = top
+    if not picked: return {}, f"no matching named seqs on skeleton {skel}"
+    how = "unique family" if len(fams) == 1 else "name match"
+    return picked, how if "death_anim" in picked else "partial (no death anim): " + how
 
 
 spawned = set()
@@ -122,7 +141,9 @@ for npc in sorted(spawned):
     if donor is not None:
         vals = {k: v for k, v in config[donor][1].items() if k in FIELDS}
         edits[npc] = vals; log.append((npc, "copied", f"{how} as {donor}")); continue
-    picked, why = by_name(npc, npc_display.get(nid, ""), skel)
+    walk = npc_walk.get(nid, -1)
+    hints = " ".join(seq_names.get(x, "") for x in (ready, walk))
+    picked, why = by_name(npc, npc_display.get(nid, ""), skel, hints)
     if picked:
         edits[npc] = picked
         log.append((npc, "named", why + ": " + ", ".join(f"{k}={seq_names[v]}" for k, v in picked.items())))
