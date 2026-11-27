@@ -142,9 +142,9 @@ constructor(private val objTypes: ObjTypeList, private val eventBus: EventBus) {
     private fun Obj.toDefaultAp(op: InteractionOp): ObjDefaultEvents.Ap =
         when (op) {
             InteractionOp.Op1 -> ObjDefaultEvents.Ap1(this)
-            InteractionOp.Op2 -> ObjDefaultEvents.Ap1(this)
-            InteractionOp.Op3 -> ObjDefaultEvents.Ap1(this)
-            InteractionOp.Op4 -> ObjDefaultEvents.Ap1(this)
-            InteractionOp.Op5 -> ObjDefaultEvents.Ap1(this)
+            InteractionOp.Op2 -> ObjDefaultEvents.Ap2(this)
+            InteractionOp.Op3 -> ObjDefaultEvents.Ap3(this)
+            InteractionOp.Op4 -> ObjDefaultEvents.Ap4(this)
+            InteractionOp.Op5 -> ObjDefaultEvents.Ap5(this)
         }
 }

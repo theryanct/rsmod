@@ -12,6 +12,7 @@ import kotlin.reflect.KClass
 import net.rsprot.protocol.game.incoming.buttons.If3Button
 import net.rsprot.protocol.game.incoming.buttons.IfButtonD
 import net.rsprot.protocol.game.incoming.locs.OpLoc
+import net.rsprot.protocol.game.incoming.objs.OpObj
 import net.rsprot.protocol.game.incoming.misc.user.MoveGameClick
 import net.rsprot.protocol.game.incoming.npcs.OpNpc
 import net.rsprot.protocol.game.incoming.resumed.ResumePCountDialog
@@ -32,6 +33,7 @@ import org.rsmod.api.net.rsprot.handlers.IfButtonDHandler
 import org.rsmod.api.net.rsprot.handlers.MoveGameClickHandler
 import org.rsmod.api.net.rsprot.handlers.OpLocHandler
 import org.rsmod.api.net.rsprot.handlers.OpNpcHandler
+import org.rsmod.api.net.rsprot.handlers.OpObjHandler
 import org.rsmod.api.net.rsprot.handlers.ResumePCountDialogHandler
 import org.rsmod.api.npc.apPlayer2
 import org.rsmod.api.npc.hit.modifier.NpcHitModifier
@@ -125,6 +127,7 @@ import org.rsmod.game.loc.LocZoneKey
 import org.rsmod.game.map.LocZoneStorage
 import org.rsmod.game.map.collision.addLoc
 import org.rsmod.game.movement.MoveSpeed
+import org.rsmod.game.obj.Obj
 import org.rsmod.game.queue.EngineQueueCache
 import org.rsmod.game.region.Region
 import org.rsmod.game.region.RegionListLarge
@@ -189,6 +192,7 @@ constructor(
     public val npcTypes: NpcTypeList,
     public val conRepo: ControllerRepository,
     public val npcRepo: NpcRepository,
+    public val objRepo: ObjRepository,
     private val gameCycle: GameCycle,
     private val collision: CollisionFlagMap,
     private val locZoneStorage: LocZoneStorage,
@@ -206,6 +210,7 @@ constructor(
     private val resumePCountDialog: ResumePCountDialogHandler,
     private val opLocHandler: OpLocHandler,
     private val opNpcHandler: OpNpcHandler,
+    private val opObjHandler: OpObjHandler,
     private val aiPlayerInteractions: AiPlayerInteractions,
     private val npcHitModifier: NpcHitModifier,
     private val regionRegistry: RegionRegistry,
@@ -385,6 +390,11 @@ constructor(
     public fun Player.opLoc5(loc: BoundLocInfo, controlKey: Boolean = false) {
         val message = OpLoc(loc.id, loc.x, loc.z, controlKey, op = 5)
         captureClient.queue(opLocHandler, message)
+    }
+
+    public fun Player.opObj3(obj: Obj, controlKey: Boolean = false) {
+        val message = OpObj(obj.type, obj.x, obj.z, controlKey, op = 3)
+        captureClient.queue(opObjHandler, message)
     }
 
     public fun Player.opNpc1(npc: Npc, controlKey: Boolean = false) {
