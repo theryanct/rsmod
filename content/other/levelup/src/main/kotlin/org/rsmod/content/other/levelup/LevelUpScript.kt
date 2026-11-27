@@ -2,6 +2,7 @@ package org.rsmod.content.other.levelup
 
 import jakarta.inject.Inject
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.stat.statBase
 import org.rsmod.api.script.advanced.onAdvanceStat
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.jingle.JingleReferences
@@ -26,7 +27,7 @@ class LevelUpScript @Inject constructor() : PluginScript() {
 
     private suspend fun ProtectedAccess.levelUp(stat: StatType) {
         val skill = stat.displayName
-        val level = player.statMap.getBaseLevel(stat).toInt()
+        val level = player.statBase(stat)
         val maxed = level >= stat.maxLevel
 
         spotanim(if (maxed) LevelUpSpots.levelup_99 else LevelUpSpots.levelup)
