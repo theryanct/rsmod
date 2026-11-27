@@ -15,13 +15,14 @@ public object Camera {
         // TODO: Add require assertion to make sure coords is valid within build area.
         val dx = dest.x - player.buildArea.x
         val dz = dest.z - player.buildArea.z
-        player.client.write(CamLookAt(dx, dz, height, rate, rate2))
+        // Rev 243 added `heightRelative`; true keeps the old ground-relative height.
+        player.client.write(CamLookAt(dx, dz, height, rate, rate2, heightRelative = true))
     }
 
     public fun camMoveTo(player: Player, dest: CoordGrid, height: Int, rate: Int, rate2: Int) {
         // TODO: Add require assertion to make sure coords is valid within build area.
         val dx = dest.x - player.buildArea.x
         val dz = dest.z - player.buildArea.z
-        player.client.write(CamMoveTo(dx, dz, height, rate, rate2))
+        player.client.write(CamMoveTo(dx, dz, height, rate, rate2, heightRelative = true))
     }
 }
