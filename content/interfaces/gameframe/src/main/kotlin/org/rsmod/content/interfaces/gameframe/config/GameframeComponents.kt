@@ -1,6 +1,7 @@
 package org.rsmod.content.interfaces.gameframe.config
 
 import org.rsmod.api.type.refs.comp.ComponentReferences
+import org.rsmod.api.type.refs.interf.InterfaceReferences
 
 typealias gameframe_components = GameframeComponents
 
@@ -19,4 +20,18 @@ object GameframeComponents : ComponentReferences() {
     val toplevel_stone11 = find("toplevel_osrs_stretch:stone11", 38002678070908240)
     val toplevel_stone12 = find("toplevel_osrs_stretch:stone12", 1218428456710265090)
     val toplevel_stone13 = find("toplevel_osrs_stretch:stone13", 5984627446025016202)
+}
+
+internal typealias worldmap_components = WorldMapComponents
+
+internal typealias worldmap_interfaces = WorldMapInterfaces
+
+object WorldMapComponents : ComponentReferences() {
+    val orb_worldmap = find("orbs:worldmap")
+    val map_container = find("toplevel_osrs_stretch:map_container")
+    val close = find("worldmap:close")
+}
+
+object WorldMapInterfaces : InterfaceReferences() {
+    val worldmap = find("worldmap")
 }
