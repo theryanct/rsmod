@@ -6,6 +6,7 @@ import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.ifClose
+import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifOpenOverlay
 import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.boolVarBit
@@ -34,6 +35,9 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
         onIfOpen(interfaces.account_summary_sidepanel) { player.onSummarySideOpen() }
         onIfOverlayButton(journal_components.summary_click_layer) {
             player.clickSummaryLayer(comsub)
+        }
+        onIfOverlayButton(journal_components.collection_close) {
+            player.ifCloseOverlay(interfaces.collection, eventBus)
         }
     }
 
