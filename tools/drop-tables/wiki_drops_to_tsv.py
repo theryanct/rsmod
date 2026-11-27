@@ -46,6 +46,22 @@ for path in sys.argv[7:]:
 # "Nothing" is the implicit remainder; trading sticks replace coins only on Karamja (listed alongside).
 SKIP_ITEMS = {"nothing", "trading sticks"}
 SHARED = {"gem drop table": "gem", "rare drop table": "rdt", "mega-rare drop table": "megarare"}
+# Sub-table templates on monster pages -> shared table key (contents from the wiki page "Drop table").
+SUBTABLE_TEMPLATES = {
+    "GemDropTable": "gem", "RareDropTable": "rdt",
+    "HerbDropTableInfo": "herb", "UsefulHerbDropTableInfo": "usefulherb", "CombatHerbDropTableInfo": "combatherb",
+    "GeneralSeedDropTableInfo": "generalseed", "RareSeedDropTableInfo": "rareseed",
+    "UncommonSeedDropTableInfo": "uncommonseed", "AllotmentSeedDropTableInfo": "allotmentseed",
+    "TreeHerbSeedDropTableInfo": "treeherbseed",
+}
+# Shared table key -> section heading on the "Drop table" page. Only the first DropsTableHead block
+# of each section is used: the general seed table has combat-level bands and this takes the first.
+DROP_TABLE_PAGE_SECTIONS = {
+    "herb": "Herb drop table", "usefulherb": "Useful herb drop table", "combatherb": "Combat herb drop table",
+    "generalseed": "General seed drop table", "rareseed": "Rare seed drop table",
+    "uncommonseed": "Uncommon seed drop table", "allotmentseed": "Allotment seed drop table",
+    "treeherbseed": "Tree-herb seed drop table",
+}
 log, stats = [], Counter()
 
 
@@ -111,7 +127,7 @@ def parse_lines(text):
     events = []
     for m in re.finditer(r"^(={2,4})\s*([^=\n]+?)\s*\1\s*$", text, re.M):
         events.append((m.start(), "heading", (len(m.group(1)), m.group(2).strip())))
-    for name in ("DropsTableHead", "DropsTableBottom", "DropsLineReward", "DropsLine", "GemDropTable", "RareDropTable"):
+    for name in ("DropsTableHead", "DropsTableBottom", "DropsLineReward", "DropsLine", *SUBTABLE_TEMPLATES):
         for pos, body in templates(text, name):
             if name == "DropsLine" and re.match(r"\w", body): continue  # DropsLineClue/Skill/... handled elsewhere
             events.append((pos, name, body))
@@ -133,11 +149,16 @@ def parse_lines(text):
 def build_table(lines, page):
     always, main, tertiary = [], [], []
     for dv, section, kind, body in lines:
-        if kind in ("GemDropTable", "RareDropTable"):
-            first = strip_nested(body).split("|")[1].strip() if "|" in body else ""
+        if kind in SUBTABLE_TEMPLATES:
+            clean = strip_nested(body)
+            first = clean.split("|")[1].strip() if "|" in clean else ""
             r = rarity(first)
-            if isinstance(r, Fraction): main.append(("sharedref", "gem" if kind == "GemDropTable" else "rdt", r))
+            if not isinstance(r, Fraction):  # e.g. |override=There is a 1/128 chance of rolling ...
+                m = re.search(r"(\d+(?:\.\d+)?)\s*/\s*(\d+(?:\.\d+)?)", body)
+                r = rarity(m.group(0)) if m else None
+            if isinstance(r, Fraction): main.append(("sharedref", SUBTABLE_TEMPLATES[kind], r))
             else: log.append((page, kind, "unparsed rarity", first))
+            if re.search(r"rolls\s*=\s*[2-9]", body): log.append((page, kind, "extra rolls ignored", ""))
             continue
         f = fields(strip_nested(body))
         name = f.get("name", "")
@@ -199,9 +220,18 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
                  or (key == "rdt" and l[1].lower() in ("runes and ammunition", "weapons and armour", "other", "sub-tables"))]
         a, m, t = build_table(lines, page)
         w.write(f"\nshared\t{key}\n"); write_table(w, a, m, t, page)
+    drop_table_page = pages["Drop table"]
+    for key, heading in DROP_TABLE_PAGE_SECTIONS.items():
+        m = re.search(r"^={2,4}\s*" + re.escape(heading) + r"\s*={2,4}\s*$", drop_table_page, re.M | re.I)
+        if not m:
+            log.append(("Drop table", heading, "section not found", "")); continue
+        end = drop_table_page.find("{{DropsTableBottom}}", m.end())
+        a, mm, t = build_table(parse_lines(drop_table_page[m.end():end]), "Drop table / " + heading)
+        w.write(f"\nshared\t{key}\n"); write_table(w, a, mm, t, "Drop table / " + heading)
     tables = 0
+    assigned = set()  # an npc id listed on two pages keeps the first (alphabetical) page's table
     for title, text in sorted(pages.items()):
-        if title in ("Gem drop table", "Rare drop table"): continue
+        if title in ("Gem drop table", "Rare drop table", "Drop table"): continue
         versions = infobox_versions(text)
         ids_here = {i for ids, _ in versions for i in ids} & spawned
         if not ids_here: continue
@@ -214,9 +244,13 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
             key = dv if dv in by_dv else ("" if "" in by_dv else order[0])
             assign[key] |= set(ids) & spawned
         for dv, npcs in assign.items():
+            for dup in sorted(npcs & assigned):
+                log.append((title, npc_sym.get(dup, str(dup)), "npc already has a table from another page", ""))
+            npcs = npcs - assigned
             if not npcs: continue
             a, m, t = build_table(by_dv[dv], title)
             if not (a or m or t): continue
+            assigned |= npcs
             w.write(f"\ntable\t{','.join(map(str, sorted(npcs)))}\t# {title}" + (f" / {dv}" if dv else "") + "\n")
             write_table(w, a, m, t, title + (f" / {dv}" if dv else "")); tables += 1; stats["npcs"] += len(npcs)
 with open(log_path, "w", encoding="utf-8", newline="\n") as f:
