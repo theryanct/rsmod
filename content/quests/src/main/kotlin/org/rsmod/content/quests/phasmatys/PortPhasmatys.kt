@@ -18,8 +18,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * free), and the Ectofuntus temple's stairs, cellar trapdoor and the cavern stairs down to the
  * Pool of Slime. The Ectofuntus itself is in the Prayer module.
  *
- * Arrival tiles are the counterpart stair/ladder's own tile; players walk off it. Not done: the
- * free pass after Ghosts Ahoy (not built), the 58 Agility weathered-wall shortcut.
+ * After Ghosts Ahoy the barrier multiloc shows its toll-free child. Arrival tiles are the
+ * counterpart stair/ladder's own tile; players walk off it. Not done: the 58 Agility
+ * weathered-wall shortcut.
  */
 class PortPhasmatys
 @Inject
@@ -28,6 +29,9 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
     override fun ScriptContext.startup() {
         onLocOpLabel(locTypes, PhasLocs.barrier, "Pass") { barrier(it) }
         onLocOpLabel(locTypes, PhasLocs.barrier, "Pay-toll(2-Ecto)") { barrier(it) }
+        onLocOpLabel(locTypes, PhasLocs.barrier_free, "Pass") {
+            if (!wearingBedsheet()) passThroughWall(it)
+        }
 
         onLocOpLabel(locTypes, PhasLocs.trapdoor, "Open") {
             locRepo.change(it, PhasLocs.trapdoor_open, TRAPDOOR_TICKS)
@@ -59,6 +63,7 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
      * south edge of z 3508) has it to the south. Only the way in is tolled.
      */
     private suspend fun ProtectedAccess.barrier(loc: BoundLocInfo) {
+        if (wearingBedsheet()) return
         val at = loc.coords
         val entering =
             when (loc.angleId and 3) {
@@ -78,6 +83,13 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
         passThroughWall(loc)
     }
 
+    /** Ghosts Ahoy's disguise can't leave town. */
+    private fun ProtectedAccess.wearingBedsheet(): Boolean {
+        val sheet = PhasObjs.bedsheets.any { invTotal(worn, it) > 0 }
+        if (sheet) mes("You can't pass the barriers of Port Phasmatys while wearing the bedsheet.")
+        return sheet
+    }
+
     private companion object {
         const val TOLL = 2
         const val TRAPDOOR_TICKS = 100
@@ -89,8 +101,9 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
 }
 
 internal object PhasLocs : LocReferences() {
-    /** Child of ahoy_town_barrier_multi (every multi entry resolves to it). */
+    /** Children of ahoy_town_barrier_multi (ahoy_questvar): tolled until Ghosts Ahoy (8). */
     val barrier = find("ahoy_town_barrier")
+    val barrier_free = find("ahoy_town_barrier_post_quest")
     val trapdoor = find("ahoy_trapdoor")
     val trapdoor_open = find("ahoy_trapdoor_open")
     val cellar_ladder = find("ahoy_ladder_from_cellar")
@@ -102,4 +115,5 @@ internal object PhasLocs : LocReferences() {
 
 internal object PhasObjs : ObjReferences() {
     val ecto_token = find("ectotoken")
+    val bedsheets = listOf(find("ahoy_bedsheet"), find("ahoy_bedsheetgreen"))
 }
