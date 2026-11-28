@@ -1,0 +1,190 @@
+# Generated from the OSRS Wiki page "Transcript:Rag and Bone Man I" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Odd Old Man	Can I help you with something?
+1	line	Player	Well, err...who are you, and what are all these bones doing here?
+1	line	Odd Old Man	Errr...
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	I'm an archaeologist. I work with the museum.
+1	line	Player	An archaeologist?
+1	line	Odd Old Man	Yes.
+1	line	Player	Well that explains the bones...sort of...but what are you doing all the way out here?
+1	line	Odd Old Man	Errr...
+1	line	Sack	Mumblemumble. Mumblemumblemumble.
+1	line	Odd Old Man	I'm collecting bones for the museum.
+1	line	Odd Old Man	They have asked me to rig up some displays of second and third age creatures using their bones, so that people can come and...well, look at them.
+1	line	Odd Old Man	I need to get them into some sort of order before I begin, but I've run into a bit of a snag.
+1	line	Player	What sort of a snag?
+1	line	Odd Old Man	Well, I need to have all the bones I'm going to use here, and placed into some sort of order.
+1	line	Odd Old Man	However, I seem to have discovered I am a few short.
+1	select	Select an option
+1	option	Anything I can do to help?
+2	line	Player	Anything I can do to help?
+2	line	Odd Old Man	Errr...
+2	line	Sack	Mumblemumble
+2	line	Odd Old Man	There is something you could do for me. I'm going to be busy...err...
+2	line	Sack	Mumble
+2	line	Odd Old Man	Sorting, yes, sorting these bones out ready for the museum, but I need a few more.
+2	line	Odd Old Man	Will you help me out by grabbing some?
+2	select	Start the Rag and Bone Man I quest?
+2	option	Yes
+3	line	Player	Yes. I'll give you a hand.
+3	line	Odd Old Man	You will? Excellent!
+3	line	Sack	Snicker.
+3	line	Player	Where do you need me to dig?
+3	line	Odd Old Man	Dig?
+3	line	Sack	Mumblemumble
+3	line	Odd Old Man	Oh, you must have got the wrong end of the stick.
+3	line	Odd Old Man	I need some fresh, whole bones to replace ones that have become damaged.
+3	line	Player	What?
+3	line	Odd Old Man	Err...
+3	line	Sack	Mumblemumblemumblemumblemumble. Mumblemumblemumblemumble. Mumble.
+3	line	Player	Excuse me...
+3	line	Sack	Shhh!
+3	line	Player	Sorry...
+3	line	Sack	Mumblemumble. Mumblemumblemumble.
+3	line	Odd Old Man	Ok, got it.
+3	line	Odd Old Man	Ok, here is the thing. While sorting out what bones I do have I managed to lose or damage a few. If you can get me some fresh, unbroken bones to use as replacements then I can get on with things.
+3	line	Odd Old Man	That make things clearer?
+3	line	Player	Well, it makes some sense I suppose...
+3	line	Odd Old Man	Great. If you can get me a bone from a Goblin, a Bear, a Big Frog, a Ram, a Unicorn, a Monkey, a Giant rat and a Giant Bat then I'll be able to move on with the...
+3	line	Odd Old Man	Displays...
+3	line	Player	So you just want me to bring you these bones and that will be that?
+3	line	Odd Old Man	Well, I wouldn't mind you sticking them in a pot and boiling them in vinegar first, if you don't mind.
+3	line	Odd Old Man	There is a Wine Merchant in Draynor called Fortunato that sells the stuff you'll need.
+3	line	Odd Old Man	You can even use my pot-boiler if you want.
+3	line	Player	Why do I need to boil them in vinegar?
+3	line	Odd Old Man	It gets them bright and sparking white.
+3	line	Odd Old Man	It's an archaeologist thing.
+3	line	Odd Old Man	Just put the bone in a pot of vinegar, throw some logs on the fire, put the pot in the holder and light the logs.
+3	line	Odd Old Man	It takes a while for the vinegar to evaporate, but the bone will be nice and clean in the end.
+3	line	Player	All right, I'll be back later.
+3	line	Odd Old Man	Bye!
+3	action	end
+2	option	No
+3	line	Player	No.
+3	line	Odd Old Man	Oh...I see.
+3	line	Odd Old Man	Well, never mind me young man, I'll just stagger over here under my massive burden, and continue my thankless task.
+3	line	Odd Old Man	Unaided and alone...
+3	line	Player	Wow, trying a guilt trip much?
+3	action	end
+1	option	Well, good luck with that.
+2	line	Player	Well good luck with that!
+2	line	Odd Old Man	Thanks stranger!
+2	line	Odd Old Man	What a polite young [man/woman]...
+2	line	Odd Old Man	Well, back to work!
+2	action	end
+1	option	Where is that mumbling coming from?
+2	line	Player	Where is that mumbling coming from?
+2	line	Odd Old Man	Errr...
+2	line	Sack	Mumblemumble
+2	line	Odd Old Man	What mumbling?
+2	line	Odd Old Man	Anyway, I have enough problems of my own without dealing with a delusional adventurer.
+2	action	other
+0	section	Historical dialogue
+1	action	above
+1	option	Yes
+2	action	Rag and Bone Man I is started.
+2	line	Player	Yes. I'll give you a hand.
+2	line	Odd Old Man	You will? Excellent!
+2	line	Sack	Sniggersnigger
+2	line	Player	Where do you need me to dig?
+2	action	above
+0	section	After initally declining the quest
+1	line	Player	Hello there!
+1	line	Player	I was just passing and I wondered if you still needed someone to help with the bones?
+1	line	Odd Old Man	Errr...
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	There is something you could do for me. I'm going to be busy...err...
+1	line	Sack	Mumble
+1	line	Odd Old Man	Sorting, yes, sorting these bones out ready for the museum, but I need a few more.
+1	line	Odd Old Man	Will you help me out by grabbing some?
+1	select	Start the Rag and Bone Man I quest?
+1	option	Yes
+2	action	above
+1	option	No
+2	action	above
+1	option	Where is that mumbling coming from?
+2	action	above
+0	section	Getting the vinegar
+1	line	Fortunato	Can I help you at all?
+1	line	Player	Have you got any vinegar?
+1	line	Fortunato	Vinegar?
+1	line	Fortunato	Vinegar!
+1	line	Fortunato	The very idea! My wines are the finest in the district!
+1	line	Player	Sorry! I was told to come and speak with a wine merchant about getting some vinegar, I must have the wrong person.
+1	line	Fortunato	Wait...did HE send you?
+1	line	Player	If by HE you mean the old man with the sack of bones, then yes.
+1	line	Fortunato	Aaaah...say no more sir, I have some in specially.
+1	action	end
+0	section	Need more vinegar
+1	line	Fortunato	Can I help you at all?
+1	line	Fortunato	Ah! Good afternoon your lordship. I take it you have come for a refill?
+1	option	Yes
+2	line	Player	Yes.
+2	action	Wine Shop. opens.
+1	option	Not today
+2	line	Player	Not today.
+2	line	Fortunato	Well, just remember I have some in stock for you when you want it.
+2	action	end
+0	section	Before having any bones
+1	action	Depending on what you have already handed in, but do not have any:
+1	line	Odd Old Man	Have you brought me any bones?
+1	line	Player	Not at the moment. Can you just give me a run down on which bones I have left to get?
+1	line	Odd Old Man	Sure.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Goblin bone.
+1	line	Odd Old Man	Goblins are relatively common. I hear there is a house full of them around Lumbridge in fact.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Bear bone.
+1	line	Odd Old Man	I heard that there are some Bears over by the Legends' Guild, near Ardougne.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Big Frog bone.
+1	line	Odd Old Man	This might be a little tricky as you will need to go into the Lumbridge Swamp caves. You will need a light source! Never forget your light source down there!
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Ram bone.
+1	line	Odd Old Man	I'm sure you will be able to find a ram wherever there are sheep.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Unicorn bone.
+1	line	Odd Old Man	I seem to remember that there were Unicorns south of Varrock, I think they might be there still.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Monkey bone.
+1	line	Odd Old Man	Monkeys tend to live in Jungle areas, like Karamja. I think they are pretty plentiful there if I remember correctly.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Giant Rat bone.
+1	line	Odd Old Man	If you can't find one in a sewer, then you might want to try looking in some caves.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	You still need to bring me a Giant Bat bone.
+1	line	Odd Old Man	Giant bats tend to live underground, but I have heard there are a few near the Coal Pits.
+1	line	Odd Old Man	Did you get all that?
+1	line	Player	Yes. I'll get right on it.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	Don't forget to boil them in vinegar first.
+1	line	Odd Old Man	Just chuck some logs into the pit, put the bone in the pot of vinegar and drop it onto the pot-boiler. Then light the logs and wait for the the vinegar to boil away.
+1	line	Player	Ok, I'll remember.
+1	action	end
+0	section	Handing in some bones
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Let me take a look at them.
+1	line	Odd Old Man	Wonderful! I'll put this with the rest.
+1	line	Player	No problem. I'll be back if I find some more.
+1	action	end
+0	section	Trying to hand in unclean bones
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Just clean them up in the pot-boiler and hand them over.
+1	action	end
+0	section	Trying to hand in a bone while its in a pot of vinegar
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Just clean them up in the pot-boiler and hand them over.
+1	action	end
+0	section	Finishing up
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Let me take a look at them.
+1	line	Odd Old Man	That's the last of them!
+1	line	Odd Old Man	The museum will be thrilled to know I've completed the collection.
+1	line	Player	Well I'm just glad I could help.
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	Well you've been a big help and no mistake.
+1	line	Odd Old Man	I'm always on the lookout for fresh bones, so if you see some bring them right over.
+1	line	Player	No problem, I'll be sure to bring anything you might like over if I find something.
+1	line	Player	I can't wait to see the displays once they are finished.
+1	action	end
