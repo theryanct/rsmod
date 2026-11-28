@@ -156,6 +156,15 @@ constructor(
             }
             return
         }
+        if (player.baseSlayerLvl < master.slayerReq) {
+            startDialogue(npc) {
+                chatNpc(
+                    neutral,
+                    "You need a Slayer level of ${master.slayerReq} before I'll give you tasks.",
+                )
+            }
+            return
+        }
         val eligible =
             SlayerData.tasks.filter {
                 it.master == master.key &&
