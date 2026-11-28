@@ -72,9 +72,7 @@ constructor(
 
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, AmNpcs.ava, "Talk-to") { talkAva(it) }
-        onNpcOpLabel(npcTypes, AmNpcs.ava, "Trade") {
-            runQuestSection(it, dialogue, "Trying to trade Ava")
-        }
+        // Ava's Trade op is her generic shop (generic-shops shops.tsv).
         onNpcOpLabel(npcTypes, AmNpcs.alice, "Talk-to") { talkAlice(it) }
         for (malcolm in AmNpcs.malcolms) {
             onNpcOpLabel(npcTypes, malcolm, "Talk-to") { talkMalcolm(it) }
