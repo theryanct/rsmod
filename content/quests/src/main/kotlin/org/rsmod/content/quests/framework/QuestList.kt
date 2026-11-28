@@ -34,6 +34,7 @@ import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
+import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
@@ -108,6 +109,7 @@ public object BuiltQuests {
             GRAND_TREE,
             HAZEEL_CULT,
             HOLY_GRAIL,
+            IDES_OF_MILK,
             IMP_CATCHER,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
