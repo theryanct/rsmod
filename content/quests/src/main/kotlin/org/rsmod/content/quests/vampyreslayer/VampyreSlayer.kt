@@ -6,6 +6,7 @@ import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.invtx.invDel
 import org.rsmod.api.npc.interact.AiPlayerInteractions
 import org.rsmod.api.npc.opPlayer2
+import org.rsmod.api.player.hit.modifier.PlayerHitModifiers
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
@@ -33,6 +34,7 @@ import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
+import org.rsmod.game.hit.HitBuilder
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcTypeList
@@ -45,8 +47,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * basement wakes Count Draynor; killing him with a stake and a hammer carried finishes the quest
  * (4,825 Attack xp, 3 QP), otherwise he rises again. Morgan keeps garlic in his upstairs cupboard.
  *
- * Not done: garlic weakening the Count's hits (no npc hit modifier hook yet), Maris (not in the
- * rev 233 cache).
+ * Garlic carried halves the Count's hits (PlayerHitModifiers). Maris (Morgan's wife, new in the
+ * 243 cache) has her one line.
  */
 class VampyreSlayer
 @Inject
@@ -68,6 +70,9 @@ constructor(
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, VampyreNpcs.morgan, "Talk-to") { talkMorgan(it) }
         onNpcOpLabel(npcTypes, VampyreNpcs.harlow, "Talk-to") { talkHarlow(it) }
+        onNpcOpLabel(npcTypes, VampyreNpcs.maris, "Talk-to") {
+            runQuestSection(it, dialogue, "Talking to Maris")
+        }
         onOpNpcU(VampyreNpcs.harlow, VampyreObjs.beer) { talkHarlow(it.npc) }
         onLocOpLabel(locTypes, VampyreLocs.cupboard_shut, "Open") {
             locRepo.change(it, VampyreLocs.cupboard_open, CUPBOARD_TICKS)
@@ -78,6 +83,15 @@ constructor(
         onLocOpLabel(locTypes, VampyreLocs.cupboard_open, "Search") { searchCupboard() }
         onLocOpLabel(locTypes, VampyreLocs.coffin, "Open") { openCoffin(it) }
         onEvent<NpcKilledEvent> { countKilled(this) }
+        PlayerHitModifiers.register { target -> garlicWard(target) }
+    }
+
+    /** Garlic in the inventory halves the hits of the Count this player woke. */
+    private fun HitBuilder.garlicWard(target: Player) {
+        val count = awake[target.uid.packed] ?: return
+        if (isFromNpc && sourceUid == count.uid.packed && VampyreObjs.garlic in target.inv) {
+            damage /= 2
+        }
     }
 
     private val ProtectedAccess.state: Int
@@ -221,6 +235,7 @@ constructor(
 internal object VampyreNpcs : NpcReferences() {
     val morgan = find("morgan")
     val harlow = find("dr_harlow")
+    val maris = find("maris")
     val count = find("count_draynor")
 }
 
