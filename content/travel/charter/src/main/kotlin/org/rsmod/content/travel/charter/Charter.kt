@@ -3,6 +3,7 @@ package org.rsmod.content.travel.charter
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc2
 import org.rsmod.api.script.onOpNpc3
@@ -50,11 +51,11 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
 
     private fun ScriptContext.bind(type: UnpackedNpcType, op: Int) {
         when (op) {
-            1 -> onOpNpc1(type) { charter(it.npc) }
-            2 -> onOpNpc2(type) { charter(it.npc) }
-            3 -> onOpNpc3(type) { charter(it.npc) }
-            4 -> onOpNpc4(type) { charter(it.npc) }
-            5 -> onOpNpc5(type) { charter(it.npc) }
+            1 -> if (!isNpcOpBound(type, 1)) onOpNpc1(type) { charter(it.npc) }
+            2 -> if (!isNpcOpBound(type, 2)) onOpNpc2(type) { charter(it.npc) }
+            3 -> if (!isNpcOpBound(type, 3)) onOpNpc3(type) { charter(it.npc) }
+            4 -> if (!isNpcOpBound(type, 4)) onOpNpc4(type) { charter(it.npc) }
+            5 -> if (!isNpcOpBound(type, 5)) onOpNpc5(type) { charter(it.npc) }
         }
     }
 

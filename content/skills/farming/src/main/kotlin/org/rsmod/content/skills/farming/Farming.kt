@@ -12,6 +12,8 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.farmingLvl
 import org.rsmod.api.player.stat.woodcuttingLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -110,11 +112,11 @@ constructor(
         val leprechaunOps = npcTypes[FarmingNpcs.leprechaun].op.map { it?.trim()?.lowercase() }
         for (label in listOf("talk-to", "exchange")) {
             when (leprechaunOps.indexOf(label) + 1) {
-                1 -> onOpNpc1(FarmingNpcs.leprechaun) { toolStore(it.npc) }
-                2 -> onOpNpc2(FarmingNpcs.leprechaun) { toolStore(it.npc) }
-                3 -> onOpNpc3(FarmingNpcs.leprechaun) { toolStore(it.npc) }
-                4 -> onOpNpc4(FarmingNpcs.leprechaun) { toolStore(it.npc) }
-                5 -> onOpNpc5(FarmingNpcs.leprechaun) { toolStore(it.npc) }
+                1 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 1)) onOpNpc1(FarmingNpcs.leprechaun) { toolStore(it.npc) }
+                2 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 2)) onOpNpc2(FarmingNpcs.leprechaun) { toolStore(it.npc) }
+                3 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 3)) onOpNpc3(FarmingNpcs.leprechaun) { toolStore(it.npc) }
+                4 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 4)) onOpNpc4(FarmingNpcs.leprechaun) { toolStore(it.npc) }
+                5 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 5)) onOpNpc5(FarmingNpcs.leprechaun) { toolStore(it.npc) }
             }
         }
         val notable = FarmingData.crops.filter { it.kind != Kind.Tree }.map { it.produce }
@@ -165,11 +167,11 @@ constructor(
                 }
             if (eventBus.contains(event, type.id)) continue
             when (op) {
-                1 -> onOpLoc1(type) { patchOp(it.loc, label, op) }
-                2 -> onOpLoc2(type) { patchOp(it.loc, label, op) }
-                3 -> onOpLoc3(type) { patchOp(it.loc, label, op) }
-                4 -> onOpLoc4(type) { patchOp(it.loc, label, op) }
-                5 -> onOpLoc5(type) { patchOp(it.loc, label, op) }
+                1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { patchOp(it.loc, label, op) }
+                2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { patchOp(it.loc, label, op) }
+                3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { patchOp(it.loc, label, op) }
+                4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { patchOp(it.loc, label, op) }
+                5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { patchOp(it.loc, label, op) }
             }
             bound++
         }

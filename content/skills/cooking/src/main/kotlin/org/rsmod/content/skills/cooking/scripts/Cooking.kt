@@ -9,6 +9,7 @@ import org.rsmod.api.player.stat.cookingLvl
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
@@ -99,11 +100,11 @@ constructor(
         bonus: RangeBonus,
     ) {
         when (op) {
-            1 -> onOpLoc1(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
-            2 -> onOpLoc2(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
-            3 -> onOpLoc3(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
-            4 -> onOpLoc4(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
-            5 -> onOpLoc5(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
         }
     }
 

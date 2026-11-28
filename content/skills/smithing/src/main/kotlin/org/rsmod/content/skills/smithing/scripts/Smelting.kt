@@ -7,6 +7,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -247,10 +248,10 @@ internal fun ScriptContext.onOpLocSlot(
     action: suspend ProtectedAccess.() -> Unit,
 ) {
     when (slot) {
-        1 -> onOpLoc1(type) { action() }
-        2 -> onOpLoc2(type) { action() }
-        3 -> onOpLoc3(type) { action() }
-        4 -> onOpLoc4(type) { action() }
-        5 -> onOpLoc5(type) { action() }
+        1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { action() }
+        2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { action() }
+        3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { action() }
+        4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { action() }
+        5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { action() }
     }
 }

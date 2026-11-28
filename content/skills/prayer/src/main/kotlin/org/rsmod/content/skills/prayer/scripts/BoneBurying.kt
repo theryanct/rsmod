@@ -3,6 +3,7 @@ package org.rsmod.content.skills.prayer.scripts
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.script.isHeldOpBound
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
@@ -45,11 +46,11 @@ constructor(private val objTypes: ObjTypeList, private val mapClock: MapClock) :
                 continue
             }
             when (index + 1) {
-                1 -> onOpHeld1(type) { action(it.inventory, it.slot) }
-                2 -> onOpHeld2(type) { action(it.inventory, it.slot) }
-                3 -> onOpHeld3(type) { action(it.inventory, it.slot) }
-                4 -> onOpHeld4(type) { action(it.inventory, it.slot) }
-                5 -> onOpHeld5(type) { action(it.inventory, it.slot) }
+                1 -> if (!isHeldOpBound(type, 1)) onOpHeld1(type) { action(it.inventory, it.slot) }
+                2 -> if (!isHeldOpBound(type, 2)) onOpHeld2(type) { action(it.inventory, it.slot) }
+                3 -> if (!isHeldOpBound(type, 3)) onOpHeld3(type) { action(it.inventory, it.slot) }
+                4 -> if (!isHeldOpBound(type, 4)) onOpHeld4(type) { action(it.inventory, it.slot) }
+                5 -> if (!isHeldOpBound(type, 5)) onOpHeld5(type) { action(it.inventory, it.slot) }
             }
         }
     }

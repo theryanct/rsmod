@@ -6,6 +6,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc2
@@ -18,13 +19,13 @@ import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
-import org.rsmod.game.type.varp.VarpType
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.interf.IfButtonOp
 import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.npc.NpcType
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjType
+import org.rsmod.game.type.varp.VarpType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -69,11 +70,11 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
 
     private fun ScriptContext.bindOp(npc: NpcType, op: Int) {
         when (op) {
-            1 -> onOpNpc1(npc) { open() }
-            2 -> onOpNpc2(npc) { open() }
-            3 -> onOpNpc3(npc) { open() }
-            4 -> onOpNpc4(npc) { open() }
-            5 -> onOpNpc5(npc) { open() }
+            1 -> if (!isNpcOpBound(npc, 1)) onOpNpc1(npc) { open() }
+            2 -> if (!isNpcOpBound(npc, 2)) onOpNpc2(npc) { open() }
+            3 -> if (!isNpcOpBound(npc, 3)) onOpNpc3(npc) { open() }
+            4 -> if (!isNpcOpBound(npc, 4)) onOpNpc4(npc) { open() }
+            5 -> if (!isNpcOpBound(npc, 5)) onOpNpc5(npc) { open() }
         }
     }
 

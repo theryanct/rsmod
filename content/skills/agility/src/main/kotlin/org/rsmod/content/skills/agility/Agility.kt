@@ -8,6 +8,7 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.agilityLvl
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -74,11 +75,11 @@ constructor(
         }
         val op = locTypes[loc].op.indexOfFirst { it != null && !it.equals("Examine", ignoreCase = true) }
         when (op + 1) {
-            1 -> onOpLoc1(loc) { this.action() }
-            2 -> onOpLoc2(loc) { this.action() }
-            3 -> onOpLoc3(loc) { this.action() }
-            4 -> onOpLoc4(loc) { this.action() }
-            5 -> onOpLoc5(loc) { this.action() }
+            1 -> if (!isLocOpBound(loc, 1)) onOpLoc1(loc) { this.action() }
+            2 -> if (!isLocOpBound(loc, 2)) onOpLoc2(loc) { this.action() }
+            3 -> if (!isLocOpBound(loc, 3)) onOpLoc3(loc) { this.action() }
+            4 -> if (!isLocOpBound(loc, 4)) onOpLoc4(loc) { this.action() }
+            5 -> if (!isLocOpBound(loc, 5)) onOpLoc5(loc) { this.action() }
         }
     }
 
