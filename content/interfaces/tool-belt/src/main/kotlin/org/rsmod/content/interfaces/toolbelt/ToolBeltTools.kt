@@ -1,6 +1,5 @@
 package org.rsmod.content.interfaces.toolbelt
 
-import org.rsmod.game.type.obj.ObjTypeList
 
 /** One belt-able tool: its [group] (one per belt) and [rank] in that group (higher = better). */
 internal data class BeltTool(val group: String, val rank: Int)
@@ -8,8 +7,8 @@ internal data class BeltTool(val group: String, val rank: Int)
 /** `tool_belt.tsv`: obj id -> [BeltTool]. Unknown names are skipped (logged by the caller). */
 internal class ToolBeltTools(val byObj: Map<Int, BeltTool>, val missing: List<String>) {
     companion object {
-        fun load(objTypes: ObjTypeList): ToolBeltTools {
-            val ids = objTypes.values.associate { (it.internalName ?: "") to it.id }
+        /** @param ids obj internal name -> id (the symbol table, `NameMapping.objs`). */
+        fun load(ids: Map<String, Int>): ToolBeltTools {
             val input =
                 checkNotNull(ToolBeltTools::class.java.getResourceAsStream("tool_belt.tsv")) {
                     "tool_belt.tsv not found"

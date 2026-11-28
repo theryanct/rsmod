@@ -22,6 +22,15 @@ internal object ToolBeltComponents : ComponentReferences() {
     val fill = find("tackle_box_main:fill")
     val empty = find("tackle_box_main:empty")
     val side_items = find("tournament_supplies_side:items")
+
+    /** Withdraw-quantity buttons: tools are single, so these do nothing. */
+    val quantity_buttons =
+        listOf(
+            find("tackle_box_main:1"),
+            find("tackle_box_main:5"),
+            find("tackle_box_main:x"),
+            find("tackle_box_main:all"),
+        )
 }
 
 internal object ToolBeltInvs : InvReferences() {

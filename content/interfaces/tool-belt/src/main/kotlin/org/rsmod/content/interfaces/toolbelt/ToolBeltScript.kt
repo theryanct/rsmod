@@ -11,6 +11,7 @@ import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.script.onCommand
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onIfModalButton
+import org.rsmod.api.type.symbols.name.NameMapping
 import org.rsmod.game.entity.Player
 import org.rsmod.game.inv.InvObj
 import org.rsmod.game.inv.Inventory
@@ -39,10 +40,11 @@ class ToolBeltScript
 constructor(
     private val objTypes: ObjTypeList,
     private val invTypes: InvTypeList,
+    private val names: NameMapping,
     private val protectedAccess: ProtectedAccessLauncher,
 ) : PluginScript() {
     // Lazy, not built in startup(): other scripts may inject their own (never started) instance.
-    private val tools by lazy { ToolBeltTools.load(objTypes) }
+    private val tools by lazy { ToolBeltTools.load(names.objs) }
 
     override fun ScriptContext.startup() {
         logger.info { "Tool belt: ${tools.byObj.size} tools." }
@@ -73,6 +75,9 @@ constructor(
         }
         onIfModalButton(comps.fill) { fill() }
         onIfModalButton(comps.empty) { empty() }
+        for (button in comps.quantity_buttons) {
+            onIfModalButton(button) {}
+        }
     }
 
     private fun Player.launchBelt() {
