@@ -28,7 +28,6 @@ internal typealias worldmap_interfaces = WorldMapInterfaces
 
 object WorldMapComponents : ComponentReferences() {
     val orb_worldmap = find("orbs:worldmap")
-    val map_container = find("toplevel_osrs_stretch:map_container")
     val close = find("worldmap:close")
 }
 
