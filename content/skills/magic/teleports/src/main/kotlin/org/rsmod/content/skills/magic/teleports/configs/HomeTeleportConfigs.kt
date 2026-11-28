@@ -1,5 +1,6 @@
 package org.rsmod.content.skills.magic.teleports.configs
 
+import org.rsmod.api.type.editors.comp.ComponentEditor
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
@@ -18,6 +19,13 @@ internal typealias home_tele_varps = HomeTeleportVarps
 
 internal object HomeTeleportComponents : ComponentReferences() {
     val standard = find("magic_spellbook:teleport_home_standard")
+}
+
+/** Home Teleport right-click op8 "Gallery" (the unused-asset gallery; HomeTeleportGallery). */
+internal object HomeTeleportEdits : ComponentEditor() {
+    init {
+        editOps(HomeTeleportComponents.standard, 8 to "Gallery")
+    }
 }
 
 internal object HomeTeleportQueues : QueueReferences() {
