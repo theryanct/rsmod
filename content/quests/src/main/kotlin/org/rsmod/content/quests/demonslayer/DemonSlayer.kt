@@ -14,6 +14,7 @@ import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onModifyNpcHit
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onOpNpcU
+import org.rsmod.api.type.builders.area.AreaBuilder
 import org.rsmod.api.type.builders.map.area.MapAreaBuilder
 import org.rsmod.api.type.builders.varp.VarpBuilder
 import org.rsmod.api.type.refs.area.AreaReferences
@@ -463,6 +464,13 @@ internal object DelrithCircleArea : MapAreaBuilder() {
 internal object DsAreas : AreaReferences() {
     /** Custom map area (32763). */
     val delrith_circle = find("delrith_circle")
+}
+
+/** Creates the custom `delrith_circle` area type (the map polygon only places it). */
+internal object DsAreaBuilds : AreaBuilder() {
+    init {
+        build("delrith_circle")
+    }
 }
 
 internal object DsNpcs : NpcReferences() {
