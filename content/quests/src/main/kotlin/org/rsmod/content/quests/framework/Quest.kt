@@ -44,14 +44,23 @@ public val Player.questPoints: Int
     get() = vars[QuestVarps.qp]
 
 /**
+ * Sets [quest]'s varp to its end state and adds its quest points, without the scroll (for when no
+ * [ProtectedAccess] is available, e.g. an npc death event). Returns `false` if already complete.
+ */
+public fun Player.grantQuest(quest: QuestDef): Boolean {
+    if (isQuestComplete(quest)) return false
+    setQuestState(quest, quest.complete)
+    VarPlayerIntMapSetter.set(this, QuestVarps.qp, questPoints + quest.questPoints)
+    return true
+}
+
+/**
  * Finishes [quest]: sets the varp to its end state, adds the quest points and shows the quest
  * complete scroll with [QuestDef.rewards]. The quest itself grants its xp/items/unlocks before
  * calling this (so the scroll and the rewards can't disagree).
  */
 public fun ProtectedAccess.completeQuest(quest: QuestDef) {
-    if (player.isQuestComplete(quest)) return
-    player.setQuestState(quest, quest.complete)
-    VarPlayerIntMapSetter.set(player, QuestVarps.qp, player.questPoints + quest.questPoints)
+    if (!player.grantQuest(quest)) return
 
     ifOpenMainModal(QuestInterfaces.questscroll)
     ifSetText(QuestComponents.quest_title, "You have completed ${quest.name}!")
