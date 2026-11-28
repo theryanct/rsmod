@@ -47,9 +47,6 @@ class SkillGuideScript @Inject constructor(private val eventBus: EventBus) : Plu
     }
 
     private companion object {
-        /** `[clientscript,skill_guide_v2_init](int skill, int tab, int fromLevel, int toLevel)`. */
-        const val SKILL_GUIDE_V2_INIT = 1902
-
         /** Tab 0 is the overview; 31 is "Level-up Unlocks" (uses the level range arguments). */
         const val OVERVIEW_TAB = 0
     }

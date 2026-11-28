@@ -48,7 +48,16 @@ class NettlePicking @Inject constructor(private val objTypes: ObjTypeList) : Plu
 }
 
 internal object NettleLocs : LocReferences() {
-    val all = listOf(find("nettles"), find("nettles1"), find("nettles2"), find("nettles3"), find("nettles4"))
+    val all =
+        listOf(
+            find("nettles"),
+            find("nettles1"),
+            find("nettles2"),
+            find("nettles3"),
+            find("nettles4"),
+            find("nettles5"),
+            find("nettles6"),
+        )
 }
 
 internal object NettleObjs : ObjReferences() {

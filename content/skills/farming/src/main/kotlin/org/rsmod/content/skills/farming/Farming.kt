@@ -31,6 +31,8 @@ import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.content.interfaces.skill.guides.SkillGuideIds
+import org.rsmod.content.interfaces.skill.guides.openSkillGuide
 import org.rsmod.content.skills.farming.FarmingData.Bin
 import org.rsmod.content.skills.farming.FarmingData.Crop
 import org.rsmod.content.skills.farming.FarmingData.Kind
@@ -221,6 +223,7 @@ constructor(
             "chop-down" -> chop(loc, patch, op)
             "clear" -> clear(patch)
             "inspect" -> inspect(patch)
+            "guide" -> openSkillGuide(SkillGuideIds.FARMING, guideTab(patch.kind))
             else -> if (label.startsWith("pick")) harvest(loc, patch, op)
         }
     }
@@ -1062,6 +1065,7 @@ constructor(
                 "pick",
                 "clear",
                 "inspect",
+                "guide",
                 "check-health",
                 "chop down",
                 "chop-down",
@@ -1070,6 +1074,23 @@ constructor(
                 "take",
                 "dump",
             )
+        /** Farming guide tab (`skill_guide_subsections`) per kind; 8 is "Special". */
+        fun guideTab(kind: Kind): Int =
+            when (kind) {
+                Kind.Allotment -> 1
+                Kind.Hops -> 2
+                Kind.Tree -> 3
+                Kind.FruitTree -> 4
+                Kind.Bush -> 5
+                Kind.Flower -> 6
+                Kind.Herb -> 7
+                Kind.Cactus,
+                Kind.Hardwood,
+                Kind.Belladonna,
+                Kind.Mushroom,
+                Kind.SpiritTree -> 8
+            }
+
         /** Kinds with a health check once grown. */
         val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush, Kind.Cactus, Kind.Hardwood, Kind.SpiritTree)
         const val CHOP_TICKS = 4

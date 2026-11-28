@@ -101,6 +101,7 @@ constructor(
         onLocOpLabel(locTypes, BcLocs.chest, "Unlock") { unlockChest(it) }
         onLocOpLabel(locTypes, BcLocs.chest_open, "Search") { searchChest() }
         for (bellows in BcObjs.bellows) onOpLocU(BcLocs.bubbles, bellows) { fillBellows(bellows) }
+        onLocOpLabel(locTypes, BcLocs.bubbles, "Suck") { suckBubbles() }
         onNpcOpLabel(npcTypes, BcNpcs.toad, "Inflate") { inflateToad(it) }
         for (bellows in BcObjs.bellows) onOpNpcU(BcNpcs.toad, bellows) { inflateToad(it.npc) }
 
@@ -395,6 +396,23 @@ constructor(
             return
         }
         invReplace(inv, held, 1, BcObjs.full_bellows)
+        mes("You collect some gas from the swamp.")
+    }
+
+    /** Left-click "Suck" fills every ogre bellows held (Wiki: 8 February 2018 update). */
+    private fun ProtectedAccess.suckBubbles() {
+        val unfilled = BcObjs.bellows.filter { it != BcObjs.full_bellows && carries(it) }
+        if (unfilled.isEmpty()) {
+            if (carries(BcObjs.full_bellows)) {
+                fillBellows(BcObjs.full_bellows)
+            } else {
+                mes("You need some ogre bellows to collect the swamp gas.") // Authored (not Wiki).
+            }
+            return
+        }
+        for (bellows in unfilled) {
+            repeat(invTotal(inv, bellows)) { invReplace(inv, bellows, 1, BcObjs.full_bellows) }
+        }
         mes("You collect some gas from the swamp.")
     }
 

@@ -24,6 +24,7 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
     override fun ScriptContext.startup() {
         onOpLoc2(content.pickable_crop) { pickCrop(it.loc, it.type) }
         onOpLoc2(pickable_locs.cabbage) { pickCabbage(it.loc, it.type) }
+        onOpLoc2(pickable_locs.flax) { pickCrop(it.loc, it.type, deplete = random.of(16) < FLAX_DEPLETE) }
     }
 
     private suspend fun ProtectedAccess.pickCrop(
@@ -31,6 +32,7 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
         type: UnpackedLocType,
         takeObj: ObjType = type.takeObjType,
         takeMessage: String = type.takeMessage,
+        deplete: Boolean = true,
     ) {
         arriveDelay()
 
@@ -43,7 +45,9 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
         anim(seqs.human_pickupfloor)
         playerWalkWithMinDelay(loc.coords)
 
-        locRepo.del(loc, type.respawnTime)
+        if (deplete) {
+            locRepo.del(loc, type.respawnTime)
+        }
 
         mes(takeMessage)
         soundSynth(synths.pick)
@@ -57,6 +61,11 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
         } else {
             pickCrop(loc, type)
         }
+    }
+
+    private companion object {
+        /** Flax disappears on 3 of 16 picks (Mod Ash, via the Wiki). */
+        const val FLAX_DEPLETE = 3
     }
 }
 
