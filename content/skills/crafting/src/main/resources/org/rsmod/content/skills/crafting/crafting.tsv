@@ -1,0 +1,125 @@
+# Generated from the OSRS Wiki recipe bucket by tools/skills/crafting_to_tsv.py - do not edit.
+recipe	chisel	chisel	opal	1	1	15.0	2	human_opalcutting	-	uncut_opal	1
+recipe	chisel	chisel	jade	1	13	20.0	2	human_jadecutting	-	uncut_jade	1
+recipe	chisel	chisel	red_topaz	1	16	25.0	2	human_redtopazcutting	-	uncut_red_topaz	1
+recipe	chisel	chisel	sapphire	1	20	50.0	2	human_sapphirecutting	-	uncut_sapphire	1
+recipe	chisel	chisel	emerald	1	27	67.5	2	human_emeraldcutting	-	uncut_emerald	1
+recipe	chisel	chisel	ruby	1	34	85.0	2	human_rubycutting	-	uncut_ruby	1
+recipe	chisel	chisel	diamond	1	43	107.5	2	human_diamondcutting	-	uncut_diamond	1
+recipe	chisel	chisel	dragonstone	1	55	137.5	2	human_dragonstonecutting	-	uncut_dragonstone	1
+recipe	chisel	chisel	onyx	1	67	167.5	2	human_dragonstonecutting	-	uncut_onyx	1
+recipe	chisel	chisel	zenyte	1	89	50.0	2	human_dragonstonecutting	-	uncut_zenyte	1
+recipe	combine	bowl_water	softclay	1	1	0.0	1	-	bowl_empty	clay	1
+recipe	combine	bucket_water	softclay	1	1	0.0	1	-	bucket_empty	clay	1
+recipe	combine	jug_water	softclay	1	1	0.0	1	-	jug_empty	clay	1
+recipe	furnace	-	molten_glass	1	1	20.0	2	human_furnace	-	bucket_sand	1	soda_ash	1
+recipe	furnace	ring_mould	opal_ring	1	1	10.0	3	human_furnace	-	opal	1	silver_bar	1
+recipe	furnace	ring_mould	gold_ring	1	5	15.0	3	human_furnace	-	gold_bar	1
+recipe	furnace	necklace_mould	gold_necklace	1	6	20.0	3	human_furnace	-	gold_bar	1
+recipe	furnace	jewl_bracelet_mould	jewl_gold_bracelet	1	7	25.0	3	human_furnace	-	gold_bar	1
+recipe	furnace	amulet_mould	unstrung_gold_amulet	1	8	30.0	3	human_furnace	-	gold_bar	1
+recipe	furnace	ring_mould	jade_ring	1	13	32.0	3	human_furnace	-	jade	1	silver_bar	1
+recipe	furnace	holy_symbol_mould	nostringstar	1	16	50.0	3	human_furnace	-	silver_bar	1
+recipe	furnace	necklace_mould	opal_necklace	1	16	35.0	3	human_furnace	-	opal	1	silver_bar	1
+recipe	furnace	ring_mould	topaz_ring	1	16	35.0	3	human_furnace	-	red_topaz	1	silver_bar	1
+recipe	furnace	unholy_symbol_mould	nostringsnake	1	17	50.0	3	human_furnace	-	silver_bar	1
+recipe	furnace	sickle_mould	silver_sickle	1	18	50.0	3	human_furnace	-	silver_bar	1
+recipe	furnace	ring_mould	sapphire_ring	1	20	40.0	3	human_furnace	-	gold_bar	1	sapphire	1
+recipe	furnace	xbows_silver_bolt_mould	xbows_crossbow_bolts_silver_unfeathered	10	21	50.0	3	human_furnace	-	silver_bar	1
+recipe	furnace	jewl_bracelet_mould	opal_bracelet	1	22	45.0	3	human_furnace	-	opal	1	silver_bar	1
+recipe	furnace	necklace_mould	sapphire_necklace	1	22	55.0	3	human_furnace	-	sapphire	1	gold_bar	1
+recipe	furnace	jewl_bracelet_mould	jewl_sapphire_bracelet	1	23	60.0	3	human_furnace	-	sapphire	1	gold_bar	1
+recipe	furnace	tiara_mould	tiara	1	23	52.5	3	human_furnace	-	silver_bar	1
+recipe	furnace	amulet_mould	unstrung_sapphire_amulet	1	24	65.0	3	human_furnace	-	sapphire	1	gold_bar	1
+recipe	furnace	necklace_mould	jade_necklace	1	25	54.0	3	human_furnace	-	jade	1	silver_bar	1
+recipe	furnace	amulet_mould	unstrung_opal_amulet	1	27	55.0	3	human_furnace	-	silver_bar	1	opal	1
+recipe	furnace	ring_mould	emerald_ring	1	27	55.0	3	human_furnace	-	emerald	1	gold_bar	1
+recipe	furnace	jewl_bracelet_mould	jade_bracelet	1	29	60.0	3	human_furnace	-	jade	1	silver_bar	1
+recipe	furnace	necklace_mould	emerald_necklace	1	29	60.0	3	human_furnace	-	emerald	1	gold_bar	1
+recipe	furnace	jewl_bracelet_mould	jewl_emerald_bracelet	1	30	65.0	3	human_furnace	-	emerald	1	gold_bar	1
+recipe	furnace	amulet_mould	unstrung_emerald_amulet	1	31	70.0	3	human_furnace	-	emerald	1	gold_bar	1
+recipe	furnace	necklace_mould	topaz_necklace	1	32	70.0	3	human_furnace	-	red_topaz	1	silver_bar	1
+recipe	furnace	amulet_mould	unstrung_jade_amulet	1	34	70.0	3	human_furnace	-	jade	1	silver_bar	1
+recipe	furnace	ring_mould	ruby_ring	1	34	70.0	3	human_furnace	-	gold_bar	1	ruby	1
+recipe	furnace	jewl_bracelet_mould	topaz_bracelet	1	38	75.0	3	human_furnace	-	red_topaz	1	silver_bar	1
+recipe	furnace	necklace_mould	ruby_necklace	1	40	75.0	3	human_furnace	-	ruby	1	gold_bar	1
+recipe	furnace	jewl_bracelet_mould	jewl_ruby_bracelet	1	42	80.0	3	human_furnace	-	ruby	1	gold_bar	1
+recipe	furnace	tiara_mould	tiara_gold	1	42	35.0	3	human_furnace	-	gold_bar	1
+recipe	furnace	ring_mould	diamond_ring	1	43	85.0	3	human_furnace	-	gold_bar	1	diamond	1
+recipe	furnace	amulet_mould	unstrung_topaz_amulet	1	45	80.0	3	human_furnace	-	red_topaz	1	silver_bar	1
+recipe	furnace	amulet_mould	unstrung_ruby_amulet	1	50	85.0	3	human_furnace	-	ruby	1	gold_bar	1
+recipe	furnace	ring_mould	dragonstone_ring	1	55	100.0	3	human_furnace	-	gold_bar	1	dragonstone	1
+recipe	furnace	necklace_mould	diamond_necklace	1	56	90.0	3	human_furnace	-	gold_bar	1	diamond	1
+recipe	furnace	jewl_bracelet_mould	jewl_diamond_bracelet	1	58	95.0	3	human_furnace	-	diamond	1	gold_bar	1
+recipe	furnace	ring_mould	onyx_ring	1	67	115.0	3	human_furnace	-	onyx	1	gold_bar	1
+recipe	furnace	amulet_mould	unstrung_diamond_amulet	1	70	100.0	3	human_furnace	-	gold_bar	1	diamond	1
+recipe	furnace	necklace_mould	dragonstone_necklace	1	72	105.0	3	human_furnace	-	gold_bar	1	dragonstone	1
+recipe	furnace	jewl_bracelet_mould	jewl_dragonstone_bracelet	1	74	110.0	3	human_furnace	-	dragonstone	1	gold_bar	1
+recipe	furnace	amulet_mould	unstrung_dragonstone_amulet	1	80	150.0	3	human_furnace	-	gold_bar	1	dragonstone	1
+recipe	furnace	necklace_mould	onyx_necklace	1	82	120.0	3	human_furnace	-	gold_bar	1	onyx	1
+recipe	furnace	jewl_bracelet_mould	jewl_onyx_bracelet	1	84	125.0	3	human_furnace	-	onyx	1	gold_bar	1
+recipe	furnace	ring_mould	zenyte_ring	1	89	150.0	3	human_furnace	-	gold_bar	1	zenyte	1
+recipe	furnace	amulet_mould	unstrung_onyx_amulet	1	90	165.0	3	human_furnace	-	gold_bar	1	onyx	1
+recipe	furnace	necklace_mould	zenyte_necklace	1	92	165.0	3	human_furnace	-	gold_bar	1	zenyte	1
+recipe	furnace	jewl_bracelet_mould	zenyte_bracelet	1	95	180.0	3	human_furnace	-	gold_bar	1	zenyte	1
+recipe	furnace	amulet_mould	unstrung_zenyte_amulet	1	98	200.0	3	human_furnace	-	gold_bar	1	zenyte	1
+recipe	loom	-	regicide_cloth	1	10	12.0	3	farming_useloom	-	ball_of_wool	4
+recipe	loom	-	bolt_of_linen	1	12	20.0	3	farming_useloom	-	linen_yarn	2
+recipe	loom	-	sack_empty	1	21	38.0	3	farming_useloom	-	jute_fibre	4
+recipe	loom	-	fossil_drift_net	1	26	55.0	3	farming_useloom	-	jute_fibre	2
+recipe	loom	-	basket_empty	1	36	56.0	4	farming_useloom	-	willow_branch	6
+recipe	loom	-	bolt_of_canvas	1	39	75.0	3	farming_useloom	-	hemp_yarn	2
+recipe	loom	-	bolt_of_cotton	1	73	132.0	3	farming_useloom	-	cotton_yarn	2
+recipe	needle	needle	leather_gloves	1	1	13.8	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	leather_boots	1	7	16.3	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	leather_cowl	1	9	18.5	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	leather_vambraces	1	11	22.0	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	leather_armour	1	14	25.0	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	leather_chaps	1	18	27.0	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	hardleather_body	1	28	35.0	2	human_leather_crafting	-	hard_leather	1
+recipe	needle	needle	coif	1	38	37.0	3	human_leather_crafting	-	leather	1
+recipe	oven	-	bowl_empty	1	1	15.0	7	human_furnace	-	bowl_unfired	1
+recipe	oven	-	cup_empty	1	1	8.5	7	human_furnace	-	cup_unfired	1
+recipe	oven	-	piedish	1	1	10.0	7	human_furnace	-	piedish_unfired	1
+recipe	oven	-	plantpot_empty	1	1	17.5	7	human_furnace	-	plantpot_unfired	1
+recipe	oven	-	pot_empty	1	1	6.3	7	human_furnace	-	pot_unfired	1
+recipe	oven	-	potlid	1	1	20.0	7	human_furnace	-	potlid_unfired	1
+recipe	pipe	glassblowingpipe	beer_glass	1	1	17.5	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	candle_lantern_empty	1	4	19.0	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	oil_lamp_empty	1	12	25.0	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	vial_empty	1	33	35.0	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	fishbowl_empty	1	42	42.5	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	stafforb	1	46	52.5	3	human_glassblowing	-	molten_glass	1
+recipe	pipe	glassblowingpipe	bullseye_lantern_lens	1	49	55.0	3	human_glassblowing	-	molten_glass	1
+recipe	spin	-	ball_of_wool	1	1	2.5	3	ghost_update_tendrill_ready_thrall	-	wool	1
+recipe	spin	-	bow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	flax	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	magic_roots	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	maple_roots	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	oak_roots	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	willow_roots	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	xbows_sinew	1
+recipe	spin	-	xbows_crossbow_string	1	10	15.0	3	ghost_update_tendrill_ready_thrall	-	yew_roots	1
+recipe	spin	-	linen_yarn	1	12	16.0	3	ghost_update_tendrill_ready_thrall	-	flax	1
+recipe	spin	-	magic_string	1	19	30.0	3	ghost_update_tendrill_ready_thrall	-	magic_roots	1
+recipe	spin	-	rope	1	30	25.0	3	ghost_update_tendrill_ready_thrall	-	yak_hair	1
+recipe	spin	-	hemp_yarn	1	39	60.0	3	ghost_update_tendrill_ready_thrall	-	hemp	1
+recipe	spin	-	cotton_yarn	1	73	105.0	3	ghost_update_tendrill_ready_thrall	-	cotton_boll	1
+recipe	string	ball_of_wool	stringsnake	1	1	4.0	2	-	-	nostringsnake	1
+recipe	string	ball_of_wool	stringstar	1	1	4.0	2	-	-	nostringstar	1
+recipe	string	ball_of_wool	strung_diamond_amulet	1	1	4.0	2	-	-	unstrung_diamond_amulet	1
+recipe	string	ball_of_wool	strung_dragonstone_amulet	1	1	4.0	2	-	-	unstrung_dragonstone_amulet	1
+recipe	string	ball_of_wool	strung_emerald_amulet	1	1	4.0	2	-	-	unstrung_emerald_amulet	1
+recipe	string	ball_of_wool	strung_gold_amulet	1	1	4.0	2	-	-	unstrung_gold_amulet	1
+recipe	string	ball_of_wool	strung_jade_amulet	1	1	4.0	2	-	-	unstrung_jade_amulet	1
+recipe	string	ball_of_wool	strung_onyx_amulet	1	1	4.0	2	-	-	unstrung_onyx_amulet	1
+recipe	string	ball_of_wool	strung_opal_amulet	1	1	4.0	2	-	-	unstrung_opal_amulet	1
+recipe	string	ball_of_wool	strung_ruby_amulet	1	1	4.0	2	-	-	unstrung_ruby_amulet	1
+recipe	string	ball_of_wool	strung_sapphire_amulet	1	1	4.0	2	-	-	unstrung_sapphire_amulet	1
+recipe	string	ball_of_wool	strung_topaz_amulet	1	1	4.0	2	-	-	unstrung_topaz_amulet	1
+recipe	string	ball_of_wool	zenyte_amulet	1	1	4.0	2	-	-	unstrung_zenyte_amulet	1
+recipe	wheel	-	pot_unfired	1	1	6.3	3	human_potterywheel	-	softclay	1
+recipe	wheel	-	cup_unfired	4	3	8.5	3	human_potterywheel	-	softclay	1
+recipe	wheel	-	piedish_unfired	1	7	15.0	3	human_potterywheel	-	softclay	1
+recipe	wheel	-	bowl_unfired	1	8	18.0	3	human_potterywheel	-	softclay	1
+recipe	wheel	-	plantpot_unfired	1	19	20.0	3	human_potterywheel	-	softclay	1
+recipe	wheel	-	potlid_unfired	1	25	20.0	3	human_potterywheel	-	softclay	1
