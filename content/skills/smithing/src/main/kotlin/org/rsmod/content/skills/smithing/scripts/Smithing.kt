@@ -4,6 +4,8 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import java.util.WeakHashMap
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
 import org.rsmod.api.player.tools.hasTool
@@ -12,6 +14,7 @@ import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.skills.smithing.configs.AnvilObjs
 import org.rsmod.content.skills.smithing.configs.AnvilSlots
 import org.rsmod.content.skills.smithing.configs.SmithingEnums
@@ -161,6 +164,11 @@ constructor(
             mesbox("You need a Smithing level of $level to make ${productType.name.withArticle()}.")
             return
         }
+        if (isDartTip(metal, product) && !knowsDartTips()) {
+            // Authored (Wiki: The Tourist Trap teaches dart tips).
+            mesbox("You need to complete The Tourist Trap to make dart tips.")
+            return
+        }
         if (!player.hasTool(smithing_objs.hammer)) {
             mesbox("You need a hammer to work the metal with.")
             return
@@ -188,6 +196,13 @@ constructor(
             weakQueue(SmithingQueues.smithing, SMITH_TICKS, SmithJob(metal, product, remaining))
         }
     }
+
+    private fun isDartTip(metal: Metal, product: ObjType): Boolean =
+        metal.products().any { it.first.id == AnvilSlots.darttips.id && it.second.id == product.id }
+
+    /** With the QuestGates toggle on, dart tips wait for The Tourist Trap (`desertrescue` 30). */
+    private fun ProtectedAccess.knowsDartTips(): Boolean =
+        !player.isFeatureOn(Feature.QuestGates) || vars[SmithingQuestVarps.tourist_trap] >= TOURIST_TRAP_COMPLETE
 
     private fun Player.setMakeX(quantity: Int) {
         VarPlayerIntMapSetter.set(this, SmithingVarps.makex, quantity)
@@ -456,3 +471,11 @@ constructor(
         private const val MAKE_ALL = 28
     }
 }
+
+internal object SmithingQuestVarps : VarpReferences() {
+    /** Client quest varp: The Tourist Trap's progress (end state 30). */
+    val tourist_trap = find("desertrescue")
+}
+
+/** The Tourist Trap's end state (cache db `quest_touristtrap`). */
+private const val TOURIST_TRAP_COMPLETE = 30

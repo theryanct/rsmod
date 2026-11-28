@@ -1797,3 +1797,198 @@ coords = '0_54_153_46_41'
 [[spawn]]
 npc = 'chronozon'
 coords = '0_48_155_15_17'
+
+# The Tourist Trap: Irena once Ana is home (Wiki version 2), Ana by the Shantay Pass (authored spot).
+[[spawn]]
+npc = 'tourtrap_qip_irena_multi_happy'
+coords = '0_51_48_40_40'
+
+[[spawn]]
+npc = 'tourtrap_qip_ana_shanty_multi'
+coords = '0_51_48_41_41'
+
+# The Tourist Trap: the mercenaries outside the Desert Mining Camp gate (Wiki LocLine).
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_merc_1'
+coords = '0_51_47_1_23'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_merc_2'
+coords = '0_51_47_2_19'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_merc_3'
+coords = '0_51_47_5_23'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_merc_4'
+coords = '0_51_47_6_19'
+
+# The Tourist Trap: the camp's guards (Wiki LocLine, surface and upstairs).
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_1'
+coords = '0_51_47_12_18'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_2'
+coords = '0_51_47_13_22'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_3'
+coords = '0_51_47_16_18'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_4'
+coords = '0_51_47_23_22'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_5'
+coords = '0_51_47_24_10'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_6'
+coords = '0_51_47_27_27'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_1'
+coords = '0_51_47_32_10'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_2'
+coords = '0_51_47_32_18'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_3'
+coords = '0_51_47_37_14'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_4'
+coords = '0_51_47_38_24'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_5'
+coords = '0_51_47_39_27'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_1'
+coords = '1_51_47_22_28'
+
+# The Tourist Trap: the mine's guards: the cave guards (pineapple), the winch guard, the prison-mine guard, patrols (Wiki LocLine).
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_still_1'
+coords = '0_51_147_15_6'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_still_2'
+coords = '0_51_147_15_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_still_3'
+coords = '0_51_147_23_6'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_2'
+coords = '0_51_147_23_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_still_desert_mining_guard'
+coords = '0_51_147_27_15'
+
+[[spawn]]
+npc = 'rowdymineguard'
+coords = '0_51_147_29_27'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_3'
+coords = '0_51_147_22_58'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_4'
+coords = '0_51_147_35_59'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_5'
+coords = '0_51_147_13_44'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_6'
+coords = '0_51_147_53_33'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_1'
+coords = '0_51_147_4_9'
+
+[[spawn]]
+npc = 'tourtrap_qip_desert_mining_guard_2'
+coords = '0_51_147_34_24'
+
+# The Tourist Trap: Captain Siad in his quarters, the male slave by the mine doors (Wiki).
+[[spawn]]
+npc = 'capt_siad'
+coords = '1_51_47_27_25'
+
+[[spawn]]
+npc = 'tourtrap_qip_mineslave_clothes_multi'
+coords = '0_51_47_39_17'
+
+# The Tourist Trap: slaves in the camp and the mine (Wiki maps, a selection).
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_female_1'
+coords = '0_51_47_28_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_female_1'
+coords = '0_51_47_36_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_female_1'
+coords = '0_51_47_40_14'
+
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_female_2'
+coords = '0_51_47_21_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_slave_male_1'
+coords = '0_51_47_30_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_male_2'
+coords = '0_51_47_23_8'
+
+[[spawn]]
+npc = 'tourtrap_qip_mining_slave_male_2'
+coords = '0_51_47_39_8'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_58_18'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_42_17'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_34_5'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_41_35'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_25_51'
+
+[[spawn]]
+npc = 'mining_slave_female'
+coords = '0_51_147_9_14'
+
+# The Tourist Trap: the rowdy slaves (Wiki LocLine).
+[[spawn]]
+npc = 'slave_rowdy'
+coords = '0_51_147_9_12'
+
+[[spawn]]
+npc = 'slave_rowdy'
+coords = '0_51_147_24_38'

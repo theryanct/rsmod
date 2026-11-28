@@ -1,0 +1,28 @@
+# Generated from the OSRS Wiki page "Transcript:Al Shabim" by tools/quests/transcript_to_dialogue.py; hand fix: the nested "What is this place?" (a bare "below") dropped so the top-level answer is found
+0	section	Before The Tourist Trap
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	I am Al Shabim, greetings on behalf of the Bedabin nomads.
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Al Shabim	I am Al Shabim Effendi! I am the leader of the Bedabin peoples!
+2	option	Okay thanks!
+3	line	Player	Okay Thanks!
+3	line	Al Shabim	Good day Effendi!
+3	action	end
+2	option	What is there to do around here?
+3	line	Player	What is there to do around here?
+3	line	Al Shabim	Well, we are all very busy most of the time, tending to the pineapples. They are grown in a secret location, to stop thieves from raiding our most precious prize.
+3	action	end
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Al Shabim	This is the home of the Bedabin. We're a peaceful tribe of desert dwellers. Some idiots call us 'Tenti's', a childish name borne of ignorance.
+2	line	Al Shabim	We're renowned for surviving in the harshest desert climate. We also grow the 'Bedabin ambrosia.'... A pineapple of such delicious sumptiousness that it defies description.
+2	line	Al Shabim	Take a look around our camp if you like!
+2	option	Okay Thanks!
+3	action	above
+2	option	What is there to do around here?
+3	action	above
+0	section	After The Tourist Trap
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	Many thanks with your help previously Effendi!
+1	action	end

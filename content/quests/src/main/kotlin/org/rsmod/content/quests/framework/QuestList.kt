@@ -83,6 +83,7 @@ import org.rsmod.content.quests.soulsbane.SoulsBane.Companion.SOULS_BANE
 import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
 import org.rsmod.content.quests.spiritsoftheelid.SpiritsOfTheElid.Companion.SPIRITS_OF_THE_ELID
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
+import org.rsmod.content.quests.touristtrap.TouristTrap.Companion.TOURIST_TRAP
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
 import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
@@ -183,6 +184,7 @@ public object BuiltQuests {
             SLEEPING_GIANTS,
             SPIRITS_OF_THE_ELID,
             TEMPLE_OF_THE_EYE,
+            TOURIST_TRAP,
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
             TRIBAL_TOTEM,

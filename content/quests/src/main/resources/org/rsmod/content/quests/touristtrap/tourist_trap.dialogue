@@ -1,0 +1,1871 @@
+# Generated from the OSRS Wiki page "Transcript:The Tourist Trap" by tools/quests/transcript_to_dialogue.py; hand fixes: editor notes dropped, {{trandom}} options -> "Random Dialogue N" conds, Irena's skill menus -> the "Choose a reward skill" action, a "continues" splits the slave's lockpick and fail conds.
+0	section	Starting off
+1	box	Irena seems to be very upset and cries as you approach her.
+1	line	Irena	Boo hoo! Oh dear, my only daughter....
+1	select	Select an Option
+1	option	What's the matter?
+2	line	Player	What's the matter?
+2	line	Irena	Oh dear... my daughter, Ana, has gone missing in the desert. I fear that she is lost, or perhaps... *sob* even worse.
+2	line	Player	When did she go into the desert?
+2	line	Irena	*Sob* she went in there just a few days ago, *Sob* she said she would be back yesterday.
+2	line	Irena	*Sob* And she's not...
+2	select	Start The Tourist Trap quest?
+2	option	Yes.
+3	line	Player	I'll find her for you!
+3	line	Irena	Oh thank you! You've made me a very happy mother, I just hope it's not too late!
+3	line	Player	Do you have any ideas on where she may have gone?
+3	line	Irena	I did go looking for her myself and I came across some footprints just a little way south. I'm worried that they lead to the desert mining camp!
+3	action	end
+2	option	No.
+3	line	Player	Oh... Well I hope you find her.
+3	action	end
+1	option	Cheer up, it might never happen.
+2	line	Player	Cheer up, it might never happen.
+2	line	Irena	It may already have happened you thoughtless oaf! My daughter, Ana, has gone missing in the desert. I fear that she is lost, or perhaps... *sob* even worse.
+2	line	Player	When did she go into the desert?
+2	line	Irena	*Sob* she went in there just a few days ago, *Sob* she said she would be back yesterday.
+2	action	above
+0	section	Talking to Irena again
+1	line	Irena	Please bring my daughter back to me. She is most likely lost in the Desert somewhere. I miss her so much... Wahhhhh! *Sob*
+1	select	Select an Option
+1	option	Do you know where Ana went?
+2	line	Player	Do you know where Ana went?
+2	line	Irena	I did look for her myself and a little way south. I came across some footprints which may be hers. I'm worried that she may have been caught by some guards and taken to work in that terrible desert mine to the south.
+2	action	previous
+1	option	Is there anywhere around here that she would go?
+2	line	Player	Is there anywhere around here that she would go?
+2	line	Irena	I think she may have just gone a little way into the desert. It's unlike her to go too far away. She is an adventurous girl, but she knows how I worry. She wouldn't go too far.
+2	action	previous
+1	option	Where do you think I should start my search?
+2	line	Player	Where do you think I should start my search?
+2	line	Irena	I think I saw some of her footprints to the south, you could start there. Hopefully she'll just be over a few sand dunes, but you never know. She may have been taken to that awful desert mining camp or captured by
+2	line	Irena	brigands!
+2	action	previous
+1	option	Okay, thanks.
+2	line	Player	Okay, thanks.
+2	action	end
+0	section	Looking at the footprints
+1	cond	Before starting the quest:
+2	box	You see some footsteps in the sand.
+2	action	end
+1	cond	During the quest:
+2	box	This looks like some disturbed sand. Footsteps seem to be heading off towards the South.
+2	action	end
+0	section	Searching the footprints
+1	cond	Before starting the quest:
+2	box	You see some footsteps in the sand.
+2	action	end
+1	cond	During the quest:
+2	box	You search the footsteps more closely. You can see that there are five sets of footprints. One set of footprints seems lighter than the others. The four other footsteps were made by heavier people with boots.
+2	action	end
+0	section	Inspecting a cactus with a scarf on it
+1	box	You remember that Irena mentioned something about Ana wearing a red scarf before she left for the desert.
+1	action	end
+0	section	Getting into the camp
+0	section	Talking to a Mercenary
+1	line	Mercenary	Yeah, what do you want?
+1	select	Select an Option
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Mercenary	It's none of your business now get lost.
+2	select	Select an Option
+2	option	Perhaps five gold coins will make it my business?
+3	line	Player	Perhaps five gold coins will make it my business?
+3	cond	If the player does not have 5 coins:
+4	line	Mercenary	Don't try to fool me, you don't have five gold coins! Before you try to bribe someone, make sure you have the money effendi!
+4	line	Mercenary	Guards!! Guards!
+4	line	Mercenary	Let's see how good you are with Desert Survival techniques.
+4	box	You're bundled into the back of a cart and blindfolded...
+4	action	The player is teleported somewhere north-west of the mining camp
+4	box	Sometime later you wake up in the desert.
+4	cond	If the player has any filled waterskins:
+5	line	Guard	You won't be needing that water anymore!
+4	box	The guards move off leaving you stranded in the desert.
+4	action	end
+3	line	Mercenary	Well, it certainly will help... -- The guard takes the five gold coins. -- Now then, what did you want to know?
+3	select	Select an Option
+3	option	What is this place?
+4	line	Player	What is this place?
+4	line	Mercenary	It's just a mining camp. Prisoners are sent here from Al Kharid. They serve out their sentence by mining. Most prisoners will end their days here, surrounded by desert.
+4	line	Player	So you could almost say that they got their ... 'Just Desserts'
+4	line	Mercenary	You could say that... -- There is an awkward pause --
+4	line	Mercenary	But it wouldn't be very funny.
+4	line	Player	When they talk about 'the silence of the desert', this must be what they mean.
+4	select	Select an Option
+4	option	Can I take a look around the place?
+5	line	Player	Can I take a look around the place?
+5	line	Mercenary	Not really. The Captain won't let you in the compound. He's the only one who has the key to the gate. And if you talk to him, he'll probably just order us to kill you. Unless...
+5	select	Select an Option
+5	option	Does the Captain order you to kill a lot of people?
+6	action	below
+5	option	Unless what?
+6	line	Player	Unless what?
+6	line	Mercenary	Unless he has a use for you. He's been trying to track down someone called 'Al Zaba Bhasim'. You could offer to catch him and that might put you in his good books?
+6	select	Select an Option
+6	option	Where would I find this Al Zaba Bhasim?
+7	line	Player	Where would I find this Al Zaba Bhasim?
+7	line	Mercenary	Well, he could be anywhere. He's a nomadic desert dweller. However, they say that he's frequently to be found to the west in the hospitality of the tenti's.
+7	select	Select an Option
+7	option	The Tenti's, who are they?
+8	line	Player	The Tenti's, who are they?
+8	line	Mercenary	Well, we're not really sure what their proper name is. But they live in tents so we call them the 'Tenti's'.
+8	select	Select an Option
+8	option	Okay, thanks.
+9	action	below
+8	option	Is Al Zaba Bhasim very tough?
+9	line	Player	Is Al Zaba Bhasim very tough?
+9	line	Mercenary	Well, I'm not sure, but by all accounts, he is a slippery fellow. The Captain has been trying to capture him for years. A bit of a waste of time if you ask me. Anyway, I have to get going, I do have work to do.
+9	action	end
+7	option	Okay, thanks.
+8	action	below
+6	option	Okay, thanks.
+7	action	below
+4	option	Okay, thanks.
+5	action	below
+3	option	What are you guarding?
+4	line	Player	What are you guarding?
+4	line	Mercenary	Well, if you have to know, we're making sure that no prisoners get out. -- The guard gives you a disapproving look. -- And to make sure that unauthorised people don't get in.
+4	line	Mercenary	-- The guard looks around nervously. -- You'd better go soon before the Captain orders us to kill you.
+4	select	Select an Option
+4	option	Does the Captain order you to kill a lot of people?
+5	line	Player	Does the Captain order you to kill a lot of people?
+5	line	Mercenary	-- The guard snorts. -- *Snort* Just about anyone who talks to him.
+5	line	Mercenary	Unless he has a use for you, he'll probably just order us to kill you. And it's such a horrible job cleaning up the mess afterwards.
+5	select	Select an Option
+5	option	Not to mention the senseless waste of human life.
+6	line	Player	Not to mention the senseless waste of human life.
+6	line	Mercenary	Huh? Them's your words, not mine.
+6	select	Select an Option
+6	option	It doesn't sound as if you respect your Captain much.
+7	line	Player	It doesn't sound as if you respect your Captain much.
+7	box	-- The guard looks around conspiratorially. --
+7	line	Mercenary	Well, to be honest. We think he's not exactly as brave as he makes out. But we have to follow his orders. If someone called him a coward, or managed to trick him into a one-on-one duel many of us bet that he'd be
+7	line	Mercenary	beaten.
+7	line	Player	And how could I trick him into a one-on-one duel?
+7	line	Mercenary	Like all cowards, he likes to be made to feel important. If anyone insults him outright, he just gets us to do his dirty work. However, if he thinks he's better than you, if you compliment him, he may feel that he can defeat
+7	line	Mercenary	you. And if he initiated a duel, all the men agreed that they wouldn't intervene. We think he'd be slaughtered in double quick time.
+7	select	Select an Option
+7	option	Can I have a bet on that?
+8	line	Player	Can I have a bet on that?
+8	cond	If the player already placed a bet:
+9	line	Mercenary	Sorry, we've already taken your bet, wouldn't want any cheating now. Anyway, I have to get back to work. See ya around...
+9	action	end
+8	line	Mercenary	Well, if you think you stand a chance, sure. But remember, if he gives us an order, we have to obey.
+8	select	Select an Option
+8	option	I'll bet 5 gold that I win.
+9	line	Player	I'll bet 5 gold that I win.
+9	cond	If the player doesn't have enough gold:
+10	line	Mercenary	Huh! It looks like you're betting with money you don't have.
+10	action	end
+9	line	Mercenary	Great, I'll take that bet.
+9	box	You hand over 5 gold coins.
+9	line	Mercenary	Ok, if you win, you'll get 6 gold back. Anyway, I have to get going, I do have work to do. -- The guard walks off. --
+9	action	end
+8	option	I'll bet 10 gold that I win.
+9	line	Player	I'll bet 10 gold that I win.
+9	cond	If the player doesn't have enough gold:
+10	line	Mercenary	Huh! It looks like you're betting with money you don't have.
+10	action	end
+9	line	Mercenary	Great, I'll take that bet.
+9	box	You hand over 10 gold coins.
+9	line	Mercenary	Ok, if you win, you'll get 12 gold back. Anyway, I have to get going, I do have work to do. -- The guard walks off. --
+9	action	end
+8	option	I'll bet 15 gold that I win.
+9	line	Player	I'll bet 15 gold that I win.
+9	cond	If the player doesn't have enough gold:
+10	line	Mercenary	Huh! It looks like you're betting with money you don't have.
+10	action	end
+9	line	Mercenary	Great, I'll take that bet.
+9	box	You hand over 15 gold coins.
+9	line	Mercenary	Ok, if you win, you'll get 19 gold back. Anyway, I have to get going, I do have work to do. -- The guard walks off. --
+9	action	end
+8	option	I'll bet 20 gold that I win.
+9	line	Player	I'll bet 20 gold that I win.
+9	cond	If the player doesn't have enough gold:
+10	line	Mercenary	Huh! It looks like you're betting with money you don't have.
+10	action	end
+9	line	Mercenary	Great, I'll take that bet.
+9	box	You hand over 20 gold coins.
+9	line	Mercenary	Okay, if you win, you'll get 30 gold back. Anyway, I have to get going, I do have work to do. -- The guard walks off. --
+9	action	end
+8	option	Okay, thanks.
+9	action	below
+7	option	Okay, thanks.
+8	action	below
+6	option	Okay, thanks.
+7	action	below
+5	option	Okay, thanks.
+6	action	below
+4	option	Okay, thanks.
+5	action	below
+2	option	Okay, thanks.
+3	line	Player	Okay, thanks.
+3	line	Mercenary	Yeah, whatever!
+3	action	end
+1	option	What are you guarding?
+2	line	Player	What are you guarding?
+2	line	Mercenary	Get lost before I chop off your head!
+2	select	Select an Option
+2	option	Okay, thanks.
+3	action	above
+2	option	Perhaps these five gold coins will sweeten your mood?
+3	line	Player	Perhaps five gold coins will sweeten your mood?
+3	cond	If the player does not have 5 coins:
+4	line	Mercenary	Don't try to fool me, you don't have five gold coins! Before you try to bribe someone, make sure you have the money effendi!
+4	action	above
+3	line	Mercenary	Well, it certainly will help!
+3	box	-- The guard takes the five gold coins. --
+3	line	Mercenary	Now then, what did you want to know?
+3	select	Select an Option
+3	option	What is this place?
+4	line	Player	What is this place?
+4	line	Mercenary	It's just a mining camp. Prisoners are sent here from Al Kharid. They serve out their sentence by mining. Most prisoners will end their days here, surrounded by desert.
+4	action	above
+3	option	What are you guarding?
+4	line	Player	What are you guarding?
+4	line	Mercenary	Well, if you have to know, we're making sure that no prisoners get out. -- The guard gives you a disapproving look. -- And to make sure that unauthorised people don't get in.
+4	action	above
+3	option	I'm looking for a woman called Ana, have you seen her?
+4	line	Player	I'm looking for a woman called Ana, have you seen her?
+4	line	Mercenary	Hmm, well, we get a lot of people in here. But not many women though... Saw one come in last week....
+4	line	Mercenary	But I don't know if it's the woman you're looking for?
+4	select	Select an Option
+4	option	What is this place?
+5	line	Player	What is this place?
+5	line	Mercenary	It's just a mining camp. Prisoners are sent here from Al Kharid. They serve out their sentence by mining. Most prisoners will end their days here, surrounded by desert.
+5	action	above
+4	option	What are you guarding?
+5	line	Player	What are you guarding?
+5	line	Mercenary	Well, if you have to know, we're making sure that no prisoners get out. -- The guard gives you a disapproving look. -- And to make sure that unauthorised people don't get in.
+5	action	above
+1	option	I'm looking for a woman called Ana, have you seen her?
+2	line	Player	I'm looking for a woman called Ana, have you seen her?
+2	line	Mercenary	No, now get lost!
+2	select	Select an Option
+2	option	Perhaps five gold coins will help you remember?
+3	line	Player	Perhaps five gold coins will help you remember?
+3	cond	If the player does not have 5 coins:
+4	line	Mercenary	Don't try to fool me, you don't have five gold coins! Before you try to bribe someone, make sure you have the money effendi!
+4	action	above
+3	line	Mercenary	Well, it certainly will help!
+3	box	-- The guard takes the five gold coins. --
+3	line	Mercenary	Now then, what did you want to know?
+3	select	Select an Option
+3	option	I'm looking for a woman called Ana, have you seen her?
+4	line	Player	I'm looking for a woman called Ana, have you seen her?
+4	line	Mercenary	Hmm, well, we get a lot of people in here. But not many women though... Saw one come in last week....
+4	action	above
+3	option	What is this place?
+4	line	Player	What is this place?
+4	line	Mercenary	It's just a mining camp. Prisoners are sent here from Al Kharid. They serve out their sentence by mining. Most prisoners will end their days here, surrounded by desert.
+4	action	above
+3	option	What are you guarding?
+4	line	Player	What are you guarding?
+4	line	Mercenary	Well, if you have to know, we're making sure that no prisoners get out. -- The guard gives you a disapproving look. -- And to make sure that unauthorised people don't get in.
+4	action	above
+2	option	Okay, thanks.
+3	action	above
+0	section	Talking to a mercenary again
+1	action	above
+0	section	Watching the mercenary captain
+1	box	You watch the Mercenary Captain for some time. He has a large metal key attached to his belt. You notice that he usually gets his men to do his dirty work.
+1	action	end
+0	section	Attempting to enter the gate without the key
+1	box	This gate needs a key in order to be opened.
+0	section	Searching the gate
+1	box	You see what looks like a mining compound. There seems to be people mining rocks. They look as if they're chained to the rocks and they're being watched over by the guards. It's not a very happy place.
+1	box	You notice that people are thoroughly searched as they enter and leave the compound and people wielding weapons or wearing armour are treated quite severly.
+1	action	end
+0	section	Trying to attack a Mercenary
+1	box	This mercenary looks very fierce. Are you sure you want to attack him?
+1	select	Select an Option
+1	option	Yes, I can take him on!
+2	line	Mercenary	Guards!! Guards!
+2	action	(The player is hit 4 times before they are transported into the desert.)
+2	action	end
+1	option	Er, no thanks, I've had second thoughts about it.
+2	box	You decide not to fight the Mercenary.
+2	action	end
+0	section	Trying to attack the Mercenary Captain
+1	box	This mercenary Captain looks very fierce. Are you sure you want to attack him?
+1	select	Select an Option
+1	option	Yes, I can take him on!
+2	cond	Random Dialogue 1
+3	line	Mercenary Captain	Destroy this low life desert rat guards!
+2	cond	Random Dialogue 2
+3	line	Mercenary Captain	Guards! Attack that Desert Jackal!
+2	cond	Random Dialogue 3
+3	line	Mercenary Captain	Kill that intruder guards!
+2	cond	Random Dialogue 4
+3	line	Mercenary Captain	Men! Kill this filthy vermin.
+2	cond	Random Dialogue 5
+3	line	Mercenary Captain	Kill this madman guards!
+2	line	Guard	Guards!! Guards!
+2	line	Guard	Let's see how good you are with Desert Survival techniques.
+2	box	You're bundled into the back of a cart and blindfolded...
+2	box	Sometime later you wake up in the desert.
+2	line	Guard	You won't be needing that water anymore!
+2	box	Guard: You won't be needing that water anymore!
+2	box	The guards throw your water away.
+2	box	The guards move off leaving you stranded in the desert.
+2	action	end
+1	option	Er, no thanks, I've had second thoughts about it.
+2	box	You decide not to fight the Mercenary Captain.
+2	action	end
+0	section	Talking to the Mercenary Captain
+1	box	You approach the Mercenary Captain.
+1	select	Select an Option
+1	option	Wow! A real captain!
+2	line	Player	Wow! A real captain!
+2	line	Mercenary Captain	Be off effendi, you are not wanted around here.
+2	select	Select an Option
+2	option	That's rude, I ought to teach you some manners.
+3	line	Player	That's rude, I ought to teach you some manners.
+3	line	Mercenary Captain	Oh yes! How might you do that? You seem little more than a gutter dweller. How could you teach me manners?
+3	select	Select an Option
+3	option	With my right fist and a good deal of force.
+4	line	Player	With my right fist and a good deal of force.
+4	line	Mercenary Captain	Oh yes, ready your weapon then! I'm sure you won't mind if my men join in? Har, har, har! Guards, kill this gutter dwelling slime.
+4	action	(Continues with Guards eviction dialogue.)
+3	option	Err, sorry, I thought I was talking to someone else.
+4	line	Player	Err, sorry, I thought I was talking to someone else.
+4	line	Mercenary Captain	Well, Effendi, you do need to be careful of what you say to people. Or they may take it the wrong way. Thankfully, I'm very understanding. I'll just let my guards deal with you.
+4	line	Mercenary Captain	Guards, teach this desert weed some manners.
+4	action	(Continues with Guards eviction dialogue.)
+2	option	I'd love to work for a tough guy like you!
+3	line	Player	I'd love to work for a tough guy like you!
+3	line	Mercenary Captain	Hmmm, oh yes, what can you do?
+3	select	Select an Option
+3	option	I can mine!
+4	line	Player	I can mine!
+4	line	Mercenary Captain	Ha, ha, ha! You come to a mining camp and offer us your mining skills! Thanks effendi, but we have all the miners we'll ever need.
+4	line	Mercenary Captain	Now be off with you, before we reduce you to a bloody mess on the sand.
+4	select	Select an Option
+4	option	Can't I do something for a strong Captain like you?
+5	action	below
+4	option	You don't scare me!
+5	action	below
+3	option	Can't I do something for a strong Captain like you?
+4	line	Player	Can't I do something for a strong Captain like you?
+4	box	The Captain ponders a moment and then looks at you critically.
+4	line	Mercenary Captain	You could bring me the head of Al Zaba Bhasim.
+4	line	Mercenary Captain	He is the leader of the notorius desert bandits, they plague us daily. You should find them west of here. You should have no problem in finishing them all of. Do this for me and maybe I will consider helping you.
+4	select	Select an Option
+4	option	Consider it done.
+5	line	Player	Consider it done.
+5	line	Mercenary Captain	Good... run along then. You stand around flapping your tongue chatting like an insane camel.
+5	action	end
+4	option	Sorry Sir, I don't think I can do that.
+5	line	Player	Sorry Sir, I don't think I can do that.
+5	line	Mercenary Captain	Hmm, well yes, I did consider that you might not be right for the job. Be off with you then before I turn my men loose on you.
+5	select	Select an Option
+5	option	It's a funny captain who can't fight his own battles!
+6	line	Player	It's a funny captain who can't fight his own battles!
+6	box	The men around you fall silent and the Captain silently fumes. All eyes turn to the Captain...
+6	line	Mercenary Captain	Very well, if you're challenging me, let's get on with it!
+6	box	The guards gather around to watch the fight.
+6	action	(The Mercenary Captain attacks.)
+5	option	Okay, I'll be moving along then.
+6	line	Player	Okay, I'll be moving along then.
+6	line	Mercenary Captain	Effendi, I think you'll find that is the wisest decision you have made today.
+6	action	end
+1	option	You there!
+2	line	Player	You there!
+2	line	Mercenary Captain	How dare you talk to me like that! Explain your business quickly... or my guards will slay you where you stand.
+2	box	Some guards close in around you.
+2	select	Select an Option
+2	option	I'm lost, can you help me?
+3	line	Player	I'm lost, can you help me?
+3	box	The captain smiles broadly and with a sickening voice says...
+3	line	Mercenary Captain	We are not a charity effendi, Be off with you before I have your head removed from your body.
+3	select	Select an Option
+3	option	What are you guarding?
+4	action	below
+3	option	You don't scare me!
+4	line	Player	You don't scare me!
+4	line	Mercenary Captain	Well, perhaps I can try a little harder. Guards, kill this infidel.
+4	action	(Continues with Guards eviction dialogue.)
+2	option	What are you guarding?
+3	line	Player	What are you guarding?
+3	line	Mercenary Captain	Effendi...
+3	line	Mercenary Captain	For just one second, imagine that it's none of your business!
+3	line	Mercenary Captain	Also imagine having your limbs pulled from your body one at a time.
+3	line	Mercenary Captain	Now, what was the question again?
+3	select	Select an Option
+3	option	Do you have sand in your ears? I said, 'What are you guarding?'
+4	line	Player	Do you have sand in your ears, I said, 'What are you guarding?'
+4	line	Mercenary Captain	Why... you ignorant, rude and eternally damned infidel, -- The Captain is very angry at what you just said. -- Guards, kill this infidel!
+4	action	(Continues with Guards eviction dialogue.)
+3	option	You don't scare me!
+4	action	above
+1	option	Hey ugly!
+2	line	Player	Hey ugly!
+2	line	Mercenary Captain	I will not tolerate such insults.. Guards, kill [him/her]!
+2	box	The captain marches away in disgust leaving his guards to tackle you.
+2	action	(Continues with Guards eviction dialogue.)
+0	section	Guards eviction dialogue
+1	cond	If this is the first time being evicted by the guards:
+2	box	A guard approaches you and pretends to start hitting you.
+2	line	Mercenary	Take that you infidel!
+2	box	The guard leans closer to you and says in a low voice.
+2	line	Mercenary	We're sick of having to kill every lunatic that comes along and insults the captain, it makes such a mess. Thankfully, he's a bit decrepit so he doesn't notice so please, buzz off and don't come here again.
+2	action	end
+1	cond	If this is the second time being evicted by the guards:
+2	box	The guard approaches you again and gives you a sharp kick.
+2	line	Player	Ow!
+2	line	Guard	Take that you mad child of a dog!
+2	action	end
+1	cond	If this is the third time being evicted by the guards:
+2	box	A guard approaches you and looks very angry, he slaps you across the face.
+2	line	Mercenary	Prepare to die effendi!
+2	box	The guard leans close and whispers
+2	line	Mercenary	Are you mad effendi? This is your last chance! Leave now and never come back or I'll introduce you to my friend.
+2	box	The guard half draws his fearsome looking scimitar.
+2	line	Mercenary	And we'll be pleased to clean the mess up after you've been dispatched.
+2	action	end
+1	cond	If this is the fourth or greater time being evicted by the guards:
+2	box	An angry guard approaches you and whips out his sword.
+2	line	Guard	Okay, that does it!
+2	line	Guard	You're in serious trouble now!
+2	line	Guard	Okay men, we need to teach this person a thing or two
+2	line	Guard	about desert survival techniques.
+2	box	The guards grab you and rough you up a bit.
+2	box	You're grabbed and manhandled onto a cart.
+2	box	Sometime later you're dumped in the middle of the desert.
+2	line	Guard	You won't be needing that water anymore!
+2	box	Guard: You won't be needing that water anymore!
+2	box	The guards throw your water away.
+2	box	The guards move off leaving you stranded in the desert.
+2	action	end
+0	section	Talking to Al Shabim after accepting to kill Al Zaba Bhasim
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	I am Al Shabim, greetings on behalf of the Bedabin nomads.
+1	select	Select an Option
+1	option	Who are you?
+1	option	I am looking for Al Zaba Bhasim.
+2	line	Player	I am looking for Al Zaba Bhasim.
+2	line	Al Shabim	Huh! You have been talking to the guards at the mining camp. Or worse, that cowardly mercenary captain. Al Zaba Bhasim does not exist, he is a figment of their imagination!
+2	line	Al Shabim	Go back and tell this captain that if he wants to find this man he should search for him personally. See how much of his own time he would like to waste.
+2	action	end
+1	option	What is this place?
+0	section	Talking to Al Shabim again after being told Al Zaba Bhasim doesn't exist
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	I am Al Shabim, greetings on behalf of the Bedabin nomads.
+1	select	Select an Option
+1	option	Who are you?
+1	option	I am looking for Al Zaba Bhasim.
+2	line	Player	I am looking for Al Zaba Bhasim.
+2	line	Al Shabim	I've already explained that he doesn't exist. Now, can we move on?
+2	action	end
+1	option	What is this place?
+0	section	Returning to the mercenary captain after learning about Al Zaba Bhasim
+1	box	You approach the Mercenary Captain.
+1	select	Select an Option
+1	option	Wow! A real captain!
+2	action	above
+1	option	You there!
+2	action	above
+1	option	Hey ugly!
+2	action	above
+1	option	I've some information for you about Al Zaba Bhasim
+2	line	Player	I've some information for you about Al Zaba Bhasim
+2	line	Mercenary Captain	Oh yes and what might that be?
+2	line	Player	Al Zaba Bhasim is a figment of your diseased imagination. Go look for him yourself and waste your own time if you think he still exists.
+2	line	Mercenary Captain	Why, I've never been so insulted in all my days. Prepare to defend yourself wretch, I'll run you through myself!
+2	box	The guards gather around to watch the fight.
+2	action	(The Mercenary Captain attacks.)
+0	section	Attacking a mercenary
+1	box	This mercenary looks very fierce. Are you sure you want to attack him?
+1	action	end
+0	section	Killing the mercenary captain
+1	cond	If the player already had the key in the bank:
+2	box	You kill the captain!
+2	box	After killing the captain, you remember that you stored a mining gate key in your bank.
+2	action	end
+1	cond	If the player has no inventory space:
+2	box	The mercenary captain drops a metal key on the floor, you try to add it to your inventory, but it won't fit in. You drop the key on the floor.
+2	action	end
+1	box	The mercenary captain drops a metal key on the floor. You quickly grab the key and add it to your inventory.
+1	action	end
+0	section	Talking to the Mercenary to collect a bet
+1	line	Player	Hey, I've come to collect my bet!
+1	line	Mercenary	Well, I guess congratulations are in order.
+1	line	Player	Thanks!
+1	line	Mercenary	And we'll only charge the paltry sum of... erm...
+1	line	Mercenary	The guards starts to do some mental calculations. You can see his brow furrow and he starts to sweat profusely.
+1	cond	If the player bet 5 coins:
+2	line	Mercenary	Five gold for cleaning up the mess. You have won 1 Gold piece! Well done..! Ha, ha, ha ha! -- The guards walk off chuckling to themselves. --
+2	action	end
+1	cond	If the player bet 10 coins:
+2	line	Mercenary	10 gold for cleaning up the mess. You have won 2 Gold pieces! Well done..! Ha, ha, ha ha! -- The guards walk off chuckling to themselves. --
+2	action	end
+1	cond	If the player bet 15 coins:
+2	line	Mercenary	15 gold for cleaning up the mess. You have won 4 Gold pieces! Well done..! Ha, ha, ha ha! -- The guards walk off chuckling to themselves. --
+2	action	end
+1	cond	If the player bet 20 coins:
+2	line	Mercenary	20 gold for cleaning up the mess. You have won 10 Gold pieces! Well done..! Ha, ha, ha ha! -- The guards walk off chuckling to themselves. --
+2	action	end
+0	section	Talking to a guard again
+1	line	Mercenary	Move along now, we've had enough of your sort!
+1	action	end
+0	section	Talking to a captain again
+1	line	Mercenary Captain	Move along now... we've had enough of your sort!
+1	action	end
+0	section	Talking to the cart camel
+1	cond	Random Dialogue 1
+2	line	Player	I wonder if I can catch something from that camel?
+1	cond	Random Dialogue 2
+2	line	Player	That camel looks vicious, it'll probably eat me if I go too near!
+1	cond	Random Dialogue 3
+2	line	Player	Mmm... looks like that camel would make a nice kebab.
+1	action	end
+0	section	Talking to an ugthanki in the desert
+1	line	Player	Mmm... looks like that camel would make a nice kebab.
+1	box	The camel turns its head and glares at you.
+1	action	end
+0	section	Inside the camp
+0	section	Entering the camp
+1	box	The guards search you thoroughly as you go through the gates.
+1	action	end
+0	section	Trying to enter the camp with a weapon equipped
+1	cond	With armour instead of a weapon, the first line is "Hey - you with the armour!".
+1	box	Guard: Hey - you with the weapon!
+1	box	Guard: You're not allowed in here!
+1	box	Guard: Quick, men, get [him/her/them]!!
+1	line	Guard	Hey - you with the weapon!
+1	line	Guard	You're not allowed in here!
+1	line	Guard	Quick, men, get [him/her/them]!!
+1	action	(Continues with Getting jailed dialogue.)
+0	section	Getting caught by guards when not wearing slave outfit
+1	line	Guard	Hey, they're interesting clothes!
+1	line	Guard	You're no slave.
+1	line	Guard	What are you doing in here?
+1	box	Guard: Hey, they're interesting clothes!
+1	box	Guard: You're no slave.
+1	box	Guard: What are you doing in here?
+1	action	(Continues with Getting jailed dialogue.)
+0	section	Getting jailed dialogue
+1	box	The guards search you!
+1	cond	If the metal key is in the inventory and the guards find it:
+2	box	The guards find the main gate key and remove it!
+1	cond	If the cell door key is in the inventory and the guards find it:
+2	box	The guards find the cell door key and remove it!
+1	box	You are roughed up by the guards and manhandled into a cell.
+1	line	Guard	Into the cell you go! I hope this teaches you a lesson.
+1	action	end
+0	section	Trying to open the prison door
+1	box	The door seems to be pretty locked.
+0	section	Bend cell wall window
+1	box	You bend the bars back.
+1	action	end
+0	section	Escape cell wall window
+1	box	You prepare to squeeze through the bars.
+1	action	end
+0	section	Failing to climb rock after escaping the cell
+1	box	You scrape your hands and knees as you climb up.
+1	action	end
+0	section	Talking to the Mine cart driver
+1	line	Mine cart driver	Don't trouble me, can't you see I'm busy?
+1	action	end
+0	section	Opening the mine door entrance
+1	cond	If the player is not wearing slave clothes:
+2	line	Guard	Hey, they're interesting clothes!
+2	action	above
+0	section	Talking to Male slave by the mine door entrance
+1	line	Male slave	You look like a new 'recruit'. How long have you been here?
+1	select	Select an Option
+1	option	I've just arrived.
+2	line	Player	I've just arrived.
+2	line	Male slave	Yeah, it looks like it as well. It's a shame that I won't be around long enough to get to know you. I'm making a break for it today. I have a plan to get out of here! It's amazing in its sophistication.
+2	select	Select an Option
+2	option	What are those big wooden doors in the corner of the compound?
+3	line	Player	What are those big wooden doors in the corner of the compound?
+3	line	Male slave	They lead to an underground mine, but you really don't want to go down there.
+3	line	Male slave	I've only seen slaves and guards go down there, I never see the slaves come back up. At least up here you have a nice view and a bit of sun. -- The slave smiles at you and goes back to his work. --
+3	action	end
+2	option	Oh yes, that sounds interesting.
+3	line	Player	Oh yes, that sounds interesting.
+3	line	Male slave	Yes, it is actually. I have all the details figured out except for one.
+3	select	Select an Option
+3	option	What's that then?
+4	line	Player	What's that then?
+4	line	Male slave	-- The slave rattles the chains on his arms loudly. -- These bracelets, I can't seem to get them off. If I could get them off, I'd be able to climb my way out of here.
+4	select	Select an Option
+4	option	I can try to undo them for you.
+5	line	Player	I can try to undo them for you.
+5	line	Male slave	Really, that would be great... -- The slave looks at you strangely. -- Hang on a minute... I suppose you want something for doing this?
+5	line	Male slave	The last time I did a trade in this place, I nearly lost the shirt from my back!
+5	select	Select an Option
+5	option	It's funny you should say that...
+6	line	Player	It's funny you should say that actually.
+6	line	Male slave	-- The slave looks at you blankly. --
+6	line	Male slave	Yeah, go on!
+6	line	Player	If I can get the chains off, you have to give me something, okay?
+6	line	Male slave	Sure, what do you want?
+6	line	Player	I want your clothes!
+6	line	Male slave	Blimey!
+6	line	Player	I can dress like a slave and gain access to the mine area to scout it out.
+6	line	Male slave	You're either incredibly brave or incredibly stupid. But what would I wear if you take my clothes? Get me some nice desert clothes and I'll think about it?
+6	action	end
+5	option	That sounds awful.
+6	line	Player	That sounds awful.
+6	line	Male slave	Yeah, bunch of no hopers, tried to rob me blind. But I guess that's what you get when you deal with convicts.
+6	action	end
+4	option	That's ridiculous, you're talking rubbish.
+5	line	Player	That's ridiculous, you're talking rubbish.
+5	line	Male slave	No, it's true, I can make a break for it If I can just get these bracelets off.
+5	select	Select an Option
+5	option	Good luck!
+6	line	Player	Good luck!
+6	line	Male slave	Thanks... same to you.
+6	action	end
+5	option	I can try to undo them for you.
+6	action	above
+3	option	Oh, that's a shame.
+4	line	Player	Oh, that's a shame...
+4	line	Player	Still, 'worse things happen at sea right?'
+4	line	Male slave	You've obviously never worked as a slave
+4	line	Male slave	...in a mining camp...
+4	line	Male slave	...in the middle of the desert.
+4	line	Player	Well I suppose I'd better be getting on my way now...
+4	line	Male slave	-- The slave nods in agreement and goes back to work. --
+4	action	end
+1	option	Oh, I've been here ages.
+2	line	Player	Oh, I've been here ages.
+2	line	Male slave	That's funny, I haven't seen you around here before. You're clothes look too clean for you to have been here ages.
+2	select	Select an Option
+2	option	Okay, you caught me out.
+3	line	Player	Okay, you caught me out.
+3	line	Male slave	Ah ha! I knew it! A new recruit then? It's a shame that I won't be around long enough to get to know you. I'm making a break for it today.
+3	line	Male slave	I have a plan to get out of here! It's amazing in its sophistication.
+3	select	Select an Option
+3	option	What are those big wooden doors in the corner of the compound?
+4	action	above
+3	option	Oh yes, that sounds interesting.
+4	action	above
+2	option	The guards allow me to clean my clothes.
+3	line	Player	The guards allow me to clean my clothes.
+3	line	Male slave	Oh, a special relationship with the guards heh? How very nice of them. Maybe you could persuade them to let me out of here?
+3	action	end
+0	section	Talking to the Male slave after he mentions the handcuffs
+1	line	Male slave	Hello again, do you want to try and unlock my chains? I'd really appreciate it!
+1	select	Unlock Prisoner's Chains?
+1	option	Yeah, okay, let's give it a go.
+2	line	Player	Yeah, okay, let's give it a go.
+2	line	Male slave	Great!
+2	cond	If the player doesn't have a lockpick on them:
+3	box	You use some nearby bits of wood and wire to try and pick the lock.
+3	action	continues
+2	cond	If the player has a lockpick on them:
+3	box	You use your lockpick to help you undo the locks on the chains.
+3	action	continues
+2	action	continues
+2	cond	If the player fails:
+3	box	You fail!
+3	select	Select an Option
+3	option	Yeah, I'll give it another go.
+4	action	above
+3	option	I'll try something different instead.
+4	line	Male slave	Are you givin' in already?
+4	line	Player	I just want to try something else.
+4	line	Male slave	Okay, if you want to try again, let me know.
+4	action	end
+2	box	You hear a satisfying 'click' as you tumble the lock mechanism.
+2	line	Male slave	Great! You did it! Do you want to trade clothes now?
+2	select	Select an Option
+2	option	Yes, I'll trade.
+3	line	Player	Yes, I'll trade.
+3	cond	If the player is missing the desert robe, desert shirt, and desert boots:
+4	line	Male slave	I need a desert robe, a desert shirt and desert boots if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert robe and desert shirt:
+4	line	Male slave	I need a desert robe and a desert shirt if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert robe and desert boots:
+4	line	Male slave	I need a desert robe and desert boots if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert shirt and desert boots:
+4	line	Male slave	I need a desert shirt and desert boots if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert robe:
+4	line	Male slave	I need a desert robe if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert boots:
+4	line	Male slave	I need desert boots if you want these clothes off me.
+4	action	end
+3	cond	If the player is missing the desert shirt:
+4	line	Male slave	I need a desert shirt if you want these clothes off me.
+4	action	end
+3	line	Male slave	Great! You have the Desert Clothes! -- The slave starts undressing right in front of you -- Okay, here's the clothes, I won't need them anymore.
+3	box	The slave gives you his dirty, flea infested robe.
+3	box	The slave gives you his muddy, sweat soaked shirt.
+3	box	The slave gives you a smelly pair of decomposing boots.
+3	line	Escaping slave	Right, I'm off! Good luck!
+3	line	Player	Yeah, good luck to you too!
+3	action	end
+2	option	No thanks...
+3	line	Player	No thanks...
+3	line	Male slave	Okay, fair enough, let me know if you change your mind though.
+3	action	end
+1	option	I need to do some other things first.
+2	line	Player	I need to do some other things first.
+2	line	Male slave	Okay, fair enough. Let me know when you want to give it another go.
+2	action	end
+0	section	Talking to the Male slave after offering to undo the locks
+1	line	Male slave	Do you still want to try and undo the locks for me?
+1	select	Select an Option
+1	option	Yeah, okay, let's give it a go.
+2	action	above
+1	option	I need to do some other things first.
+2	action	above
+0	section	Talking to the male slave while wearing slave clothes
+1	line	Male slave	Not much to do here but mine all day long.
+1	action	end
+0	section	Talking to the male slave after he offers to trade
+1	line	Male slave	Do you have the Desert Clothes yet?
+1	select	Select an Option
+1	option	Yes, I'll trade.
+2	action	above
+1	option	No thanks...
+2	action	above
+0	section	Talking to the male slave after losing the slave clothes
+1	line	Male slave	Oh bother, I was caught by the guards again... Listen, if you can get me some Desert Clothes, I'll trade you for my slaves clothes again.. Do you want to trade?
+1	select	Select an Option
+1	option	Yes, I'll trade.
+2	action	above
+1	option	No thanks...
+2	action	above
+0	section	Talking to the escaping slave
+1	cond	If the player has the slave clothes:
+2	line	Escaping slave	Not much to do here but mine all day long.
+2	action	end
+1	cond	If the player lost the slave clothes:
+2	action	(The escaping slave turns into the male slave and continues as above.)
+0	section	Getting caught by a guard while talking to the slave
+1	box	A nearby guard spots you!
+1	line	Male slave	Oh oh!
+1	box	Slave: Oh oh!
+1	line	Guard	Oi, what are you two doing?
+1	box	Guard: Oi, what are you two doing?
+1	action	(Continues with Getting jailed dialogue.)
+0	section	Searching the gates while inside the mining camp
+1	box	You see a group of mercenaries hanging around outside the compound. They're probably up to no good.
+1	action	end
+0	section	Watch mine door entrance
+1	box	You watch the doors for some time. You notice that only slaves seem to go down there. You might be able to sneak down if you pass as a slave.
+1	action	end
+0	section	Open mine door entrance
+1	box	The doors open with some effort!
+1	box	The guards search you thoroughly as you go through the gates.
+1	box	The huge doors open into a dark, dank and smelly tunnel. The associated smells of a hundred sweaty miners greets your nostrils. And your ears ring with the 'CLANG CLANG CLANG' as metal hits rock.
+1	action	end
+0	section	Talking to a rowdy slave
+1	cond	Random Dialogue 1
+2	line	Rowdy slave	Hey, you're in for a good beating!
+1	cond	Random Dialogue 2
+2	line	Rowdy slave	I'm gonna teach you some respect!
+1	cond	Random Dialogue 3
+2	line	Rowdy slave	Oi! Are you looking at me!
+1	cond	Random Dialogue 4
+2	line	Rowdy slave	Oi! I'm gonna give you some trouble!
+1	cond	Random Dialogue 5
+2	line	Rowdy slave	You wanna piece of me?
+0	section	Getting a Tenti pineapple
+0	section	Talking to the guard by the cave opening
+1	box	This guard looks as if he's been down here a while.
+1	line	Guard	Yeah, what do you want?
+1	select	Select an Option
+1	option	Er nothing really.
+2	line	Player	Er nothing really.
+2	line	Guard	Okay... so move along and get on with your work.
+2	action	end
+1	option	I'd like to mine in a different area.
+2	line	Player	I'd like to mine in a different area.
+2	line	Guard	Oh, you want to work in another area of the mine eh? --The guard seems pleased with his rhetorical question.-- Well, I can understand that! A change is as good as a rest they say.
+2	select	Select an Option
+2	option	Huh, fat chance of a rest for me.
+3	line	Player	Huh, fat chance of a rest for me.
+3	box	The guard cuffs you around head.
+3	line	Guard	You miserable whelp! Get back to work!
+3	action	end
+2	option	Yes sir, you're quite right sir.
+3	line	Player	Yes sir, you're quite right sir.
+3	line	Guard	Of course I'm right. And what goes around comes around as they say. And it's been absolutely ages since I've had anything different to eat.
+3	line	Guard	What I wouldn't give for some whole, fresh, ripe and juicy pineapple for a change. And those Tenti's have the best pineapple in this entire area.
+3	box	The guard winks at you.
+3	line	Guard	I'm sure you get my meaning...
+3	select	Select an Option
+3	option	How am I going to get some pineapples around here?
+4	line	Player	How am I going to get some pineapples around here?
+4	line	Guard	Well, that's not my problem is it? Also, I know that you slaves trade your items down here. I'm sure that if you're resourceful enough, you'll come up with the goods.
+4	line	Guard	Now, get along and do some work, before we're both in for it. And remember, I prefer my pineapples whole, not chopped up with all the juice gone.
+4	action	end
+3	option	Yes sir, we understand each other perfectly.
+4	line	Player	Yes sir, we understand each other perfectly.
+4	line	Guard	Okay, good then. And remember, I prefer my pineapples whole, not chopped up with all the juice gone.
+4	box	The guard moves back to his post and winks at you knowingly.
+4	action	end
+3	option	What are the Tenti's?
+4	line	Player	What are the Tenti's?
+4	line	Guard	Well! You don't come from around here do you? The Tenti's are the nomadic people west of here. They live in tents, so we call them the Tenti's. They have great pineapples! I'm sure you get my meaning?
+4	select	Select an Option
+4	option	How am I going to get some pineapples around here?
+5	action	above
+4	option	Yes sir, we understand each other perfectly.
+5	action	above
+0	section	The quest for Tenti's
+0	section	Talking to Bedabin nomad
+1	line	Bedabin Nomad	Hello Effendi! How can I help you?
+1	select	Select an Option
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Bedabin Nomad	This is the camp of the Bedabin. Talk to our leader, Al Shabim, he'll be happy to chat. We can sell you very reasonably priced water...
+2	action	above
+1	option	Do you know where I could get a tenti pineapple?
+2	line	Player	Do you know where I could get a tenti pineapple?
+2	line	Bedabin Nomad	Oooh, you're looking for a really very special item then! You must go and talk to our very illustrious leader, Al Shabim. He's located in the largest tent in our village.
+2	action	end
+1	option	Where is the Shantay Pass?
+2	line	Player	Where is the Shantay Pass?
+2	line	Bedabin Nomad	It is North East of here effendi, across the trackless desert. It will be a thirsty trip, can I interest you in a drink?
+2	action	above
+1	option	What do you have to sell?
+1	option	Okay, thanks
+2	line	Player	Okay, thanks
+2	action	end
+0	section	Talking to Al Shabim
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	I am Al Shabim, greetings on behalf of the Bedabin nomads. Now... what can I do for you?
+1	select	Select an Option
+1	option	I am looking for a pineapple.
+2	line	Player	I am looking for a pineapple.
+2	line	Al Shabim	Oh yes, well that is interesting. Our sweet pineapples are renowned throughout the whole of Kharid ! And I'll give you one if you do me a favour?
+2	line	Player	Oh yes?
+2	line	Al Shabim	Captain Siad at the mining camp is holding some secret information. It is very important to us and we would like you to get it for us. It gives details of an interesting, yet ancient weapon.
+2	line	Al Shabim	We would gladly share this information with you. All you have to do is gain access to his private room upstairs. We have a key for the chest that contains this information. Are you interested in our deal?
+2	select	Select an Option
+2	option	Yes, I'm interested.
+3	line	Player	Yes, I'm interested.
+3	line	Al Shabim	That's great Effendi!
+3	box	Al Shabim gives you a key.
+3	line	Al Shabim	Here is a copy of the key that should give you access to the chest.
+3	line	Al Shabim	Bring us back the plans inside the chest, they should be sealed. All haste to you Effendi!
+3	action	end
+2	option	Not at the moment.
+3	line	Player	Not at the moment.
+3	line	Al Shabim	Very well Effendi!
+3	action	end
+1	option	What is this place?
+1	option	Who are you?
+0	section	After losing the Bedabin key
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	How are things going Effendi?
+1	select	Select an Option
+1	option	I've lost the key!
+2	line	Player	I've lost the key!
+2	line	Al Shabim	How very careless of you! Here is another key, don't lose it this time !
+2	box	Al Shabim gives you another key.
+2	action	end
+1	option	What is this place?
+1	option	Goodbye!
+2	line	Player	Goodbye!
+2	line	Al Shabim	Very well, good day Effendi!
+2	action	end
+0	section	Searching the bookcase by Captain Siad
+1	box	You notice several books on the subject of sailing.
+1	action	end
+0	section	Talking to Captain Siad
+1	box	The captain looks up from his work as you address him.
+1	line	Captain Siad	What are you doing in here?
+1	select	Select an Option
+1	option	I wanted to have a chat?
+2	line	Player	I wanted to have a chat?
+2	line	Captain Siad	You don't belong in here, get out!
+2	select	Select an Option
+2	option	But I just need two minutes of your time?
+3	line	Player	But I just need two minutes of your time?
+3	line	Captain Siad	Well, okay, but very quickly. I am a very busy person you know!
+3	select	Select an Option
+3	option	Well, er... erm, I err....
+4	line	Player	Well, er... erm, I err....
+4	line	Captain Siad	Come on, spit it out! Right that's it! Guards!
+4	line	Guard	Hey, you there!
+4	line	Guard	You're in some serious trouble now!
+4	action	end
+3	option	Oh my, a dragon just flew straight past your window!
+4	line	Player	Oh my, a dragon just flew straight past your window!
+4	cond	If Captain Siad is successfully distracted:
+5	box	The captain seems distracted with what you just said. The captain looks out of the window for the dragon.
+5	action	end
+4	line	Captain Siad	Really! Where? I don't see any dragons? Now, please get out of my office, I have work to do.
+4	box	The Captain goes back to his work.
+4	action	end
+2	option	Prepare to die!
+3	action	below
+2	option	All the slaves have broken free!
+3	action	below
+2	option	Fire! Fire!
+3	action	below
+2	option	You seem to have a lot of books!
+3	line	Player	You seem to have a lot of books!
+3	line	Captain Siad	Yes, I do. Now please get to the point?
+3	select	Select an Option
+3	option	How long have you been interested in books?
+4	line	Player	How long have you been interested in books?
+4	line	Captain Siad	Long enough to know when someone is stalling!
+4	line	Captain Siad	Please state your business or get out!
+4	action	end
+3	option	I could get you some books!
+4	line	Player	I could get you some books!
+4	line	Captain Siad	Oh, really!
+4	line	Captain Siad	Sorry, not interested!
+4	action	end
+3	option	So, you're interested in sailing?
+4	line	Player	So, you're interested in sailing?
+4	line	Captain Siad	Well, yes actually... It's been a passion of mine for some years...
+4	select	Select an Option
+4	option	I could tell by the cut of your jib.
+5	line	Player	I could tell by the cut of your jib.
+5	line	Captain Siad	Oh yes? Really?
+5	box	-- The Captain looks flattered. --
+5	line	Captain Siad	Well, I was quite a catch in my day you know!
+5	box	The Captain starts rambling on about his days as a salty sea dog. He looks quite distracted...
+5	action	end
+4	option	Not much sailing to be done around here though?
+5	line	Player	Not much sailing to be done around here though?
+5	line	Captain Siad	Well of course there isn't, we're surrounded by desert. Now, why are you here exactly?
+5	select	Select an Option
+5	option	Oh my, a dragon just flew straight past your window!
+6	action	above
+5	option	Well, er... erm, I err....
+6	action	above
+1	option	What's it got to do with you?
+2	line	Player	What's it got to do with you?
+2	line	Captain Siad	This happens to be my office. Now explain yourself before I run you through!
+2	select	Select an Option
+2	option	I'm here to take your plans, hand them over now or I'll kill you!
+3	line	Player	I'm here to take your plans, hand them over now or I'll kill you!
+3	line	Guard	Guards! Guards!
+3	action	end
+2	option	The guard downstairs said you were lonely.
+3	line	Player	The guard downstairs said you were lonely.
+3	line	Captain Siad	Well, I most certainly am not lonely!
+3	line	Captain Siad	I'm an incredibly busy man you know! Now, get to the point, what do you want?
+3	select	Select an Option
+3	option	Well, er... erm, I err....
+4	action	above
+3	option	I need to service your chest.
+4	action	below
+2	option	I need to service your chest.
+3	line	Player	I need to service your chest.
+3	line	Captain Siad	You need to what?
+3	line	Player	I need to service your chest?
+3	line	Captain Siad	There's nothing wrong with the chest, it's fine, now get out!
+3	select	Select an Option
+3	option	I'm here to take your plans, hand them over now or I'll kill you!
+4	action	above
+3	option	Fire! Fire!
+4	action	below
+1	option	Prepare to die!
+2	line	Player	Prepare to die!
+2	line	Captain Siad	I'll teach you a lesson!
+2	action	end
+1	option	All the slaves have broken free!
+2	line	Player	All the slaves have broken free!
+2	cond	If the captain is distracted:
+3	box	The captain seems distracted with what you just said. The captain looks out of the window to see if there are any prisoners escaping.
+3	action	end
+2	cond	Otherwise:
+3	line	Captain Siad	Don't talk rubbish, the warning siren isn't sounding. Now state your business before I have you thrown out.
+3	select	Select an Option
+3	option	I'm here to take your plans, hand them over now or I'll kill you!
+4	action	above
+3	option	The guard downstairs said you were lonely.
+4	action	above
+3	option	I need to service your chest.
+4	action	above
+1	option	Fire! Fire!
+2	line	Player	Fire! Fire!
+2	cond	If Captain Siad is successfully distracted:
+3	box	The captain seems distracted with what you just said. The captain looks out of the window to see if there is a fire.
+3	action	end
+2	line	Captain Siad	Where's the fire? I don't see any fire? Stop messing me around and state your business!
+2	select	Select an Option
+2	option	It's down in the lower mines, sound the alarm!
+3	line	Player	It's down in the lower mines, sound the alarm!
+3	line	Captain Siad	You go and sound the alarm, I can't see anything wrong with the mine. Have you seen the fire yourself?
+3	select	Select an Option
+3	option	Yes actually!
+4	line	Player	Yes actually!
+4	line	Captain Siad	Well, why didn't you raise the alarm?
+4	select	Select an Option
+4	option	I don't know where the alarm is.
+5	line	Player	I don't know where the alarm is.
+5	line	Captain Siad	That's the most ridiculous thing I've heard. Who are you? Where do you come from? It doesn't matter... Guards! Show this person out!
+5	action	end
+4	option	I was so concerned for your safety that I rushed to save you.
+5	line	Player	I was so concerned for your safety that I rushed to save you.
+5	line	Captain Siad	Well, that's very good of you. But as you can see, I am very fine and well thanks! Now, please leave so that I can get back to my work.
+5	box	The Captain goes back to his desk.
+5	action	end
+3	option	Er, no, one of the slaves told me.
+4	line	Player	Er, no, one of the slaves told me.
+4	line	Captain Siad	Well... you can't believe them, they're all a bunch of convicts. Anyway, it doesn't look as if there is a fire down there. So I'm going to get on with my work. Please remove yourself from my office.
+4	action	end
+2	option	Oh yes, you're right, they must have put it out!
+3	line	Player	Oh yes, you're right, they must have put it out!
+3	line	Captain Siad	Good, now perhaps you can leave me in peace? After all I do have some work to do.
+3	select	Select an Option
+3	option	Er, yes okay then.
+4	line	Player	Er, yes okay then.
+4	line	Captain Siad	Good! Please remove yourself from my office.
+4	action	end
+3	option	Well, er... erm, I err....
+4	action	above
+0	section	Searching Captain Siad's desk when he is distracted
+1	box	You search the captains desk while he's not looking...
+1	cond	If the player already has all the keys:
+2	box	...but you find nothing of interest.
+2	action	end
+1	cond	If the player does not have the cell door key:
+2	box	You find a cell door key.
+1	cond	If the player does not have the metal key:
+2	box	You find the key to the main gate.
+1	cond	If the player does not have the wrought iron key:
+2	box	You find the key to the main gate.
+1	action	end
+0	section	Opening chest by Captain Siad
+1	cond	If Captain Siad is not distracted:
+2	box	The captain spots you before you manage to open the chest...
+2	line	Captain Siad	What are you doing in here?
+2	action	above
+1	cond	If the player does not have the bedabin key:
+2	box	This chest needs a key to unlock it.
+2	action	end
+1	cond	If Captain Siad is distracted:
+2	box	While the Captain's distracted, you quickly unlock the chest with the Bedabins' copy of the key. You take out the plans.
+2	action	end
+0	section	Talking to Al Shabim while holding the technical plans
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	Aha! I see you have the plans. This is great! However, these plans do indeed look very technical. My people have further need of your skills.
+1	line	Al Shabim	If you can help us to manufacture this item, we will share its secret with you. Does this deal interest you effendi?
+1	select	Select an Option
+1	option	Yes, I'm very interested.
+2	line	Player	Yes, I'm very interested.
+2	cond	If the player is missing the bronze bar, feathers, and hammer:
+3	line	Al Shabim	Great, we need the following items: a bar of pure bronze, 10 feathers and a hammer. Bring them to me and we'll continue to make the item.
+3	action	end
+2	cond	If the player is missing the bronze bar and feathers:
+3	line	Al Shabim	Great, we need the following items: a bar of pure bronze and 10 feathers. Bring them to me and we'll continue to make the item.
+3	action	end
+2	cond	If the player is missing the feathers and hammer:
+3	line	Al Shabim	Great, I can see that you have a bar of bronze. Now we just need some feathers and a hammer before we can continue.
+3	action	end
+2	cond	If the player is missing the bronze bar and hammer:
+3	line	Al Shabim	Great, I can see that you have some feathers. Now we just need a bar of bronze and a hammer before we can continue.
+3	action	end
+2	cond	If the player is missing the feathers:
+3	line	Al Shabim	Great, I can see that you have a bar of bronze. Now we just need some feathers before we can continue.
+3	action	end
+2	cond	If the player is missing the bronze bar:
+3	line	Al Shabim	Great, I can see that you have some feathers. Now we just need a bar of bronze before we can continue.
+3	action	end
+2	cond	If the player is missing the hammer:
+3	line	Al Shabim	Great, I can see that you have some feathers and a bar of Bronze, but you just need a hammer now.
+3	action	end
+2	line	Al Shabim	Great, I can see that you have some feathers, a bar of Bronze and a hammer. Are you still willing to help make the weapon?
+2	select	Select an Option
+2	option	Yes, I'm kind of curious.
+3	line	Player	Yes, I'm kind of curious.
+3	line	Al Shabim	Okay Effendi, you need to follow the plans. You will need some special tools for this... There is an anvil in the other tent. You have my permission to use it, but show the plans to the guard.
+3	line	Al Shabim	You have the plans and all the items needed. You should be able to complete the item on your own. Please bring me the item when it is finished.
+3	action	end
+2	option	No, sorry.
+3	action	below
+1	option	No, sorry.
+2	line	Player	No, sorry.
+2	line	Al Shabim	As you wish Effendi!
+2	line	Al Shabim	Come back if you change your mind!
+2	action	end
+0	section	Talking to Bedabin Nomad Guard without permission to enter tent
+1	line	Bedabin Nomad Guard	Sorry, but you can't use the tent without permission. Orders of Al Shabim.
+1	action	end
+0	section	Walk-through Tent door without permission
+1	line	Bedabin Nomad Guard	Sorry, this is a private tent, no one is allowed in. Orders of Al Shabim...
+1	action	end
+0	section	Walk-through Tent door after getting permission
+1	line	Player	Al Shabim said I could enter, here are the plans!
+1	line	Bedabin Nomad Guard	Okay go ahead.
+1	box	You walk into the tent.
+1	action	end
+0	section	Walk-through Tent door to leave the tent
+1	box	You walk back out of the tent.
+1	action	end
+0	section	Using the experimental anvil
+1	box	To forge items use the metal you wish to work with the anvil.
+0	section	Using bronze bars on the experimental anvil
+1	box	Do you want to follow the technical plans ?
+1	select	Follow the technical plans?
+1	option	Yes. I'd like to try.
+2	box	You begin experimenting in forging the weapon...
+2	cond	If unsuccessful:
+3	box	Through an unlucky accident you were not able to make the dart tip, but you think you know where you went wrong and perhaps next time you'll succeed.
+3	action	end
+2	cond	If very unsuccessful:
+3	box	You waste the bronze bar through an unlucky accident. But you think you know where you went wrong and perhaps next time you'll be successfull.
+3	action	end
+2	cond	If successful:
+3	box	You follow the plans carefully, and after some careful work, you finally manage to forge a sharp, pointed... dart tip.
+3	box	You study the technical plans even more... You need to attach feathers to the tip to complete the weapon.
+3	action	end
+1	option	No, not just yet.
+2	box	You decide not to follow the technical plans.
+2	action	end
+0	section	Using feathers on prototype dart tip
+1	box	You try to attach feathers to the bronze dart tip.
+1	box	Following the plans is tricky, but you persevere.
+1	box	You successfully attach the feathers to the dart tip.
+1	action	end
+0	section	Trying to make another prototype dart while already having one
+1	box	You have already made the prototype dart. You don't need to make another one.
+1	action	end
+0	section	Talking to Al Shabim while holding the prototype dart
+1	line	Al Shabim	Hello Effendi!
+1	box	You show Al Shabim the prototype dart.
+1	line	Al Shabim	This is truly fantastic Effendi!
+1	line	Al Shabim	We will take the technical plans for the weapon as well.
+1	box	You hand over the technical plans for the weapon.
+1	line	Al Shabim	We are forever grateful for this gift. My advisors have discovered some secrets which we will share with you.
+1	box	Al Shabim's advisors show you some advanced techniques for making the new weapon.
+1	line	Al Shabim	Please accept this selection of six bronze throwing darts as a token of our appreciation.
+1	box	You receive six bronze throwing darts from Al Shabim.
+1	line	Al Shabim	I'll take that key off your hands as well effendi! Many thanks!
+1	box	*** Dart Construction *** Congratulations! You can now construct darts.
+1	line	Al Shabim	Oh, and here is your pineapple!
+1	box	You receive a tasty looking pineapple from Al Shabim.
+1	action	end
+0	section	Talking to Al Shabim after losing the pineapple
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	Many thanks with your help previously Effendi!
+1	select	Select an Option
+1	option	I am looking for a pineapple.
+2	line	Player	I am looking for a pineapple.
+2	line	Al Shabim	Here is another pineapple, try not to lose this one. Drops to ground with full inventory
+2	action	end
+1	option	What is this place?
+0	section	Talking to Al Shabim with the pineapple in bank or inventory
+1	line	Al Shabim	Hello Effendi!
+1	line	Al Shabim	Many thanks with your help previously Effendi!
+1	select	Select an Option
+1	option	What is this place?
+1	option	Goodbye!
+0	section	Using a regular pineapple on the guard in the cave
+1	line	Guard	Oh great!
+1	box	The guard rolls his eyes in glee and takes a bite of the pineapple. His face turns from pleasure to pain as he spits the mouthful of pineapple out.
+1	line	Guard	Yeuch! That's awful! That's not Tenti pineapple! It's got no juice! Get me some Tenti pineapple if you know what's good for you. A whole one so I can see that it's good!
+1	action	end
+0	section	Using a pineapple ring on the guard in the cave
+1	line	Guard	Oh great!
+1	box	The guard rolls his eyes in glee and takes a bite of the pineapple. His face turns from pleasure to pain as he spits the mouthful of pineapple out.
+1	line	Guard	Yeuch! That's awful! That's not Tenti pineapple! It's got no juice! Get me some Tenti pineapple if you know what's good for you. A whole one so I can see that it's good!
+1	action	end
+0	section	Using pineapple chunks on the guard in the cave
+1	line	Guard	Oh great!
+1	box	The guard rolls his eyes in glee and takes a bite of the pineapple. His face turns from pleasure to pain as he spits the mouthful of pineapple out.
+1	line	Guard	Yeuch! That's awful! That's not Tenti pineapple! It's got no juice! Get me some Tenti pineapple if you know what's good for you. A whole one so I can see that it's good!
+1	action	end
+0	section	Using the tenti pineapple on the guard in the cave
+1	line	Player	Hey... I have something for you!
+1	box	You show the Tenti pineapple to the guard.
+1	line	Guard	Great! Just what I've been looking for! Mmmmmmm... Delicious!! This is soo nice! Mmmmm, *SLURP* Yummmm... Oh yes, this is great.
+1	line	Player	So, can I go through now please?
+1	line	Guard	Yes, yes, of course... a deal's a deal!
+1	action	end
+0	section	Talking to the guard in the cave after giving him the tenti pineapple
+1	line	Guard	That pineapple was just delicious, many thanks. I don't suppose you could get me another? -- The guard looks at you pleadingly.
+1	line	Player	You must be joking! The last one I gave you cost me double shifts working copper ore! You should be grateful you got one at all.
+1	line	Guard	Alright, alright, I was only asking!
+1	action	end
+0	section	Using a second tenti pineapple on the guard in the cave
+1	line	Guard	Yeah, whaddya want... get out of here!
+1	action	end
+0	section	The deeper mine
+0	section	Walk through Mine cave
+1	box	There is no gate.
+1	cond	Going in, to the deeper mine:
+2	box	You walk into the dark of the cavern...
+2	box	And emerge in a different part of this huge underground complex.
+1	cond	Coming back out:
+2	box	You walk into the darkness of the cavern...
+2	box	... and emerge in a different part of this huge underground complex.
+1	action	end
+0	section	Look in full barrel
+1	box	You search the full barrel... It's full of rocks.
+1	action	end
+0	section	Search full barrel
+1	box	This looks like a full mining barrel. Slaves use this to load up the rocks and stones that they're mining. This barrel is full of coal.
+1	action	end
+0	section	Look in empty barrel
+1	box	This looks like an empty mining barrel. Slaves use this to load up the rocks and stones that they're mining.
+1	action	end
+0	section	Search empty barrel
+1	cond	If the player is holding Ana in a barrel:
+2	box	You cannot carry another barrel while you're carrying Ana.
+2	action	end
+1	cond	If the player already has a barrel:
+2	box	You can only manage one of these at a time.
+2	action	end
+1	box	This barrel is quite big, but you may be able to carry one. Would you like to take one?
+1	select	Take an empty barrel?
+1	option	Yeah, cool!
+2	action	end
+1	option	No thanks.
+2	action	end
+0	section	Talking to the guard by the winch (dialogue 1)
+1	line	Guard	Move along now...
+1	box	This guard looks as if he's been in the sun for a while.
+1	action	end
+0	section	Talking to the guard by the winch (dialogue 2)
+1	line	Guard	Yes, what do you want?
+1	select	Select an Option
+1	option	Nothing thanks - sorry for disturbing you.
+2	line	Player	Nothing thanks - sorry for disturbing you.
+2	line	Guard	Well... I guess that's okay, get on your way though.
+2	action	end
+1	option	Your head on a stick.
+2	line	Player	Your head on a stick.
+2	line	Guard	Why you ungrateful whelp.. I'll teach you some manners.
+2	action	(Continues with getting jailed dialogue.)
+0	section	Look at winch bucket
+1	box	This looks like a lift of some sort. You see barrels of rocks being placed on the lift and they're hauled up to the surface.
+1	action	end
+0	section	Using the winch bucket
+1	line	Guard	Hey there, what do you want?
+1	select	Select an Option
+1	option	What is this thing?
+2	line	Player	What is this thing?
+2	line	Guard	It is quite clearly a lift. Any fool can see that it's used to transport rock to the surface.
+2	select	Select an Option
+2	option	Can I use this?
+3	action	below
+2	option	Ok, thanks.
+3	line	Player	Ok, thanks.
+3	action	end
+1	option	Can I use this?
+2	line	Player	Can I use this?
+2	line	Guard	Of course not, you'd be doing me out of a job. Anyway, you haven't got any barrels that need to go to the surface.
+2	line	Guard	Now, move along and get some work done before you get a good beating.
+2	select	Select an Option
+2	option	What is this thing?
+3	action	above
+2	option	Ok, thanks.
+3	action	above
+0	section	Attacking the guard by the winch
+1	box	This mercenary looks very fierce. Are you sure you want to attack him?
+1	select	Select an Option
+1	option	Yes, I can take him on!
+2	line	Guard	Oh, want a fight do you!
+2	action	(Continues with getting jailed dialogue.)
+1	option	Er, no thanks, I've had second thoughts about it.
+2	box	You decide not to fight the Mercenary.
+2	action	end
+0	section	Look at mine cart
+1	box	This cart is being unloaded into this section of the mine. Before being sent back to another section for another load.
+1	action	end
+0	section	Searching the mine cart
+1	box	You search the mine cart...
+1	box	There may be just enough space to squeeze yourself into the cart. Would you like to try?
+1	select	Squeeze into the cart?
+1	option	Yes, of course.
+2	cond	If the player is holding Ana in a barrel:
+3	line	Ana (in a Barrel)	There isn't enough space for both you and this barrel in the cart.
+3	action	end
+2	cond	If the player fails:
+3	box	You fail to fit yourself into the cart in time before it starts its journey.
+3	cond	If the player bangs their head:
+4	box	You bang your head on the cart as you try to jump in.
+4	action	end
+3	cond	If the player falls off:
+4	box	You jump onto the edge of the cart, but fall off.
+4	action	end
+2	box	You appear in a large open room with what looks like lots of miners working away. This is a very rough looking area, the miners look like they're on their last legs.
+2	action	end
+1	option	No thanks, it looks pretty dangerous.
+2	box	You decide not to get into the dangerous looking mine cart.
+2	action	end
+0	section	Look at mine cart in the eastern room
+1	box	This mine cart is being loaded up with new rocks and stone. It gets sent to a different section of the mine for unloading.
+1	action	end
+0	section	Searching mine cart in the eastern room
+1	box	You search the mine cart...
+1	box	There may be just enough space to squeeze yourself into the cart. Would you like to try?
+1	select	Squeeze into the cart?
+1	option	Yes, of course.
+2	cond	If the player is holding Ana in a barrel:
+3	line	Ana (in a Barrel)	There isn't enough space for both you and this barrel in the cart.
+3	action	end
+2	cond	If the player fails:
+3	box	You fail to fit yourself into the cart in time before it starts its journey.
+3	cond	If the player bangs their head:
+4	box	You bang your head on the cart as you try to jump in.
+4	action	end
+3	cond	If the player falls off:
+4	box	You jump onto the edge of the cart, but fall off.
+4	action	end
+2	box	You appear back in the barrel loading room. A nearby slave looks surprised to see you popping out of the cart.
+2	action	end
+1	option	No thanks, it looks pretty dangerous.
+2	action	end
+0	section	Search gate to the prison mine
+1	box	You search the gates... yep, they're locked.
+1	box	A nearby guard looks you over. He doesn't seem too impressed.
+1	box	It looks as if this is where very difficult prisoners are sent as a punishment.
+1	action	end
+0	section	Talking to the guard outside the prison mine
+1	line	Guard	Yeah, what do you want?
+1	select	Select an Option
+1	option	What are you guarding?
+2	line	Player	What are you guarding?
+2	line	Guard	I'm guarding troublesome prisoners. They think they can get away with attacking the guards. Well, we taught them a thing or two.
+2	action	end
+1	option	Oh, nothing sorry for disturbing you.
+2	line	Player	Oh, nothing sorry for disturbing you.
+2	line	Guard	I should think so too, now get back to work.
+2	action	end
+0	section	Open gate to enter the prison mine
+1	box	This gate seems to be locked.
+1	box	The nearby guard doesn't want to let you in.
+1	line	Guard	Hey, move away from the gate. There's nothing interesting for you here.
+1	action	end
+0	section	Open gate to leave the prison mine
+1	cond	If the player does not have enough rocks:
+2	box	This gate seems to be locked.
+2	line	Guard	Hey, move away from the gate. If you wanna get out you're gonna have to mine for it. You're gonna have to bring me 15 loads of rocks in one go!
+2	line	Guard	And then I'll let you out. You can go back to work with the other slaves then!
+2	action	end
+1	cond	If the player has enough rocks:
+2	line	Player	Okay, I have all your rocks here, let me out now. -- The guard unlocks the gate. --
+2	line	Guard	Okay, okay, come on out.
+2	line	Guard	Okay, you've got all the rocks, you can go now, but keep your nose clean in future.
+2	action	end
+0	section	Talking to Ana
+1	line	Player	Hello!
+1	line	Ana	Hello there, I don't think I've seen you before.
+1	select	Select an Option
+1	option	No, I'm new here!
+2	line	Player	No, I'm new here!
+2	line	Ana	I thought so you know! How do you like the hospitality down here? Not exactly Al Kharid town style is it? Well, I guess I'd better get back to work.
+2	line	Ana	Don't want to get into trouble with the guards again.
+2	select	Select an Option
+2	option	Do you get into trouble with guards often?
+3	line	Player	Do you get into trouble with guards often?
+3	line	Ana	No, not really, because I'm usually working very hard. Come to think of it, I'd better get back to work.
+3	select	Select an Option
+3	option	Do you enjoy it down here?
+4	line	Player	Do you enjoy it down here?
+4	line	Ana	Of course not! I just don't have much choice about it a the moment.
+4	select	Select an Option
+4	option	I want to try and get you out of here.
+5	action	below
+4	option	Do you have any ideas about how we can get out of here?
+5	line	Player	Do you have any ideas about how we can get out of here?
+5	line	Ana	Hmmm, not really, I would have tried them already if I did. The guards seem to live in the compound. How did you get in there anyway?
+5	select	Select an Option
+5	option	I managed to sneak past the guards.
+6	action	below
+5	option	Huh, these guards are rubbish, it was easy to sneak past them!
+6	action	below
+3	option	Okay, see ya!
+4	line	Player	Okay, see ya!
+4	line	Ana	Goodbye and good luck!
+4	action	end
+2	option	I want to try and get you out of here.
+3	line	Player	I want to try and get you out of here!
+3	line	Ana	Wow! You're brave. How do you propose we do that? In case you hadn't noticed, this place is quite well guarded.
+3	select	Select an Option
+3	option	We could try to sneak out.
+4	line	Player	We could try to sneak out.
+4	line	Ana	That doesn't sound very likely. How did you get in here anyway? Did you deliberately hand yourself over to the guards? Ha, ha ha ha! Sorry, just kidding.
+4	select	Select an Option
+4	option	I managed to sneak past the guards.
+5	line	Player	I managed to sneak past the guards.
+5	line	Ana	Hmm, impressive, but can you so easily sneak out again? How did you manage to get through the gate?
+5	select	Select an Option
+5	option	I have a key.
+6	line	Player	I have a key.
+6	line	Guard	I heard that! So you used a key did you?!
+6	cond	If the player is holding the key:
+7	line	Guard	Right, we'll have that key off you!
+6	line	Guard	Guards! Guards!
+5	option	It's a trade secret!
+6	line	Player	It's a trade secret!
+6	line	Ana	Oh, right, well, I guess you know what you're doing. Anyway, I have to get back to work. The guards will come along soon and give us some trouble else.
+6	action	end
+4	option	Huh, these guards are rubbish, it was easy to sneak past them!
+5	line	Player	Huh, these guards are rubbish, it was easy to sneak past them!
+5	line	Guard	I heard that! So you managed to sneak in did you!
+5	line	Guard	Guards! Guards!
+5	action	end
+3	option	Have you got any suggestions?
+4	line	Player	Have you got any suggestions?
+4	line	Ana	Hmmm, let me think...
+4	line	Ana	Hmmm.
+4	line	Ana	No, sorry...
+4	line	Ana	The only thing that gets out of here is the rock that we mine.
+4	line	Ana	Not even the dead get a decent funeral. Bodies are just thrown down disused mine holes. It's very disrespectful...
+4	select	Select an Option
+4	option	Okay, I'll check around for another way to try and get out.
+5	line	Player	Okay, I'll check around for another way to try and get out.
+5	line	Ana	Good luck!
+5	action	end
+4	option	How does the rock get out?
+5	line	Player	How does the rock get out?
+5	line	Ana	Well, we mine it in this section, then someone scoops it into a barrel. The barrels are loaded onto a mine cart. Then they're deposited near the surface lift.
+5	line	Ana	I have no idea where they go from there. But that's not going to help us, is it?
+5	select	Select an Option
+5	option	Maybe? I'll come back to you when I have a plan.
+6	line	Player	Maybe? I'll come back to you when I have a plan.
+6	line	Ana	Okay, well, I'm not going anywhere! -- Ana nods at a nearby guard!-- Unless he feels generous enough to let me go! -- The guard ignores the comment. --
+6	line	Ana	Oh well, I'd better get back to work, you take care!
+6	action	end
+5	option	Where would I get one of those barrels from?
+6	line	Player	Where would I get one of those barrels from?
+6	line	Ana	Well, you would get one from around by the lift area. But why would you want one of those?
+6	select	Select an Option
+6	option	Er no reason! Just wondering.
+7	line	Player	Er no reason! Just wondering.
+7	line	Ana	Hmmm, just don't get any funny ideas... I am not going to get into one of those barrels! Okay, have you got that?
+7	select	Select an Option
+7	option	Okay, yep, I've got that.
+8	line	Player	Okay, yep, I've got that.
+8	line	Ana	Good, just make sure you keep it in mind. Anyway, I have to get back to work. The guards will come along soon and give us some trouble else.
+8	action	end
+7	option	Well, we'll see, it might be the only way.
+8	line	Player	Well, we'll see, it might be the only way.
+8	line	Ana	No, there has to be a better way! Anyway, I have to get back to work. The guards will come along soon and give us some trouble else.
+8	action	end
+6	option	I could try to sneak you out if you were in a barrel!
+7	line	Player	I could try to sneak you out if you were in a barrel!
+7	line	Ana	There is no way you are getting me into a barrel. No WAY! DO you understand?
+7	select	Select an Option
+7	option	Okay, yep, I've got that.
+8	action	above
+7	option	Well, we'll see, it might be the only way.
+8	action	above
+1	option	What's your name.
+2	line	Player	What's your name.
+2	line	Ana	My name? Oh, how sweet, my name is Ana. I come from Al Kharid though we've only recently moved there. I was born, and did most of my growing up, in Varrock. I thought the desert might be interesting.
+2	line	Ana	What a surprise I got!
+2	select	Select an Option
+2	option	What kind of surprise did you get?
+3	line	Player	What kind of surprise did you get?
+3	line	Ana	Well, I was just touring the desert looking for the nomad tribe to the West. And I was set upon by these armoured men.
+3	line	Ana	I think that the guards think I am an escaped prisoner. They didn't understand that I was exploring the desert as an adventurer.
+3	action	end
+2	option	Do you want to go back to Al Kharid?
+3	line	Player	Do you want to go back to Al Kharid?
+3	line	Ana	Sure, I miss my Mum, her name is Irena and she is probably waiting for me. How do you propose we get out of here though?
+3	line	Ana	I'm sure you've noticed the many square jawed guards around here. You look like you can handle yourself, but I have my doubts that you can take them all on!
+3	action	end
+0	section	Talking to Ana again
+1	line	Player	Hello again!
+1	line	Ana	Hello there, how's it going? Do you have a plan to get out of here yet?
+1	select	Select an Option
+1	option	Not yet, sorry, what's your name again?
+2	line	Player	Not yet, sorry, what's your name again?
+2	line	Ana	My name? Oh, how sweet, my name is Ana. I come from Al Kharid though we've only recently moved there. I was born, and did most of my growing up, in Varrock. I thought the desert might be interesting.
+2	action	above
+1	option	Well, I'm working on it, have you got any suggestions?
+2	line	Player	Well, I'm working on it, have you got any suggestions?
+2	line	Ana	Hmmm, let me think...
+2	action	above
+1	option	Not yet, have you been in any more trouble with the guards?
+2	line	Player	Not yet, have you been in any more trouble with the guards?
+2	line	Ana	No, not not so far. I've been working very hard. Not like some people I know -- She cocks a smirk at you. --
+2	select	Select an Option
+2	option	Do you enjoy it down here?
+3	action	above
+2	option	Okay, see ya!
+3	action	above
+0	section	Using the barrel on Ana
+1	line	Ana	Hey, what do you think you're doing?
+1	line	Ana (in a Barrel)	-- You manage to squeeze Ana into the barrel, -- -- despite her many complaints. -- I djont fit in dis bawwel... Wet me out!!
+1	line	Player	Shush... It's for your own good!
+1	action	end
+0	section	Dropping Ana in a barrel
+1	line	Ana (in a Barrel)	You drop the barrel on the floor, Ana gets out.
+1	box	Ana's outburst attracts the guards, they come running over.
+1	box	Ana's outburst attracts the guards, they come running over.
+1	line	Guard	Hey! What's going on here then?
+1	box	Guard: Hey! What's going on here then?
+1	box	The guards drag Ana away and then throw you into a cell.
+1	box	The guards drag Ana away and then throw you into a cell.
+1	action	(Continues with Getting jailed dialogue.)
+0	section	Using the barrel on Ana a second time
+1	line	Ana	Hey, what do you think you're doing? Leave me alone and let me get on with my work. Else we'll both be in trouble. Oh no, NOT AGAIN!
+1	line	Ana (in a Barrel)	-- You manage to squeeze Ana into the barrel, -- -- despite her many complaints. -- I djont fit in dis bawwel... Wet me out!!
+1	line	Player	Shush... It's for your own good!
+1	action	end
+0	section	Look-at Ana in a barrel
+1	line	Ana (in a Barrel)	-- Ana looks pretty angry, she starts shouting at you. -- Get me out of here! Do you hear me! Get me OUT OF HERE I say!
+1	action	end
+0	section	Using Ana in a barrel on the mine cart
+1	box	You carefully place Ana in the barrel into the mine cart. Soon the cart moves out of sight and then it returns.
+1	action	end
+0	section	Searching empty barrels by the winch after sending Ana
+1	box	You can see plenty of barrels, but not the one with Ana in it.
+1	action	end
+0	section	Searching the full barrel by the mining cart after sending Ana
+1	box	You search the barrels and find Ana.
+1	line	Ana (in a Barrel)	Let me out!
+1	cond	If the player has no inventory space:
+2	box	You're carrying so many items that you cannot manage Ana as well.
+2	action	end
+1	box	You pick up Ana in a Barrel.
+1	action	end
+0	section	Using Ana in a barrel on the mine cart again
+1	box	You dare not put the barrel back in the mine cart. The guards might see you.
+1	action	end
+0	section	Using Ana in a barrel on the winch
+1	box	The guard notices the barrel (with Ana in it) that you're carrying.
+1	line	Guard	Hey, that Barrel looks heavy, do you need a hand?
+1	select	Select an Option
+1	option	Yes please.
+2	line	Player	Yes please.
+2	box	The guard comes over and helps you. He takes one end of the barrel.
+2	line	Guard	Blimey! This is heavy!
+2	line	Ana (in a Barrel)	Why you cheeky....!
+2	line	Guard	~ The guard looks around, surprised at Ana's outburst. ~ What was that?
+2	line	Player	Oh, it was nothing.
+2	line	Guard	I could have sworn I heard something!
+2	line	Ana (in a Barrel)	Yes you did you ignoramus.
+2	line	Guard	What was that you said?
+2	select	Select an Option
+2	option	I said you were very gregarious!
+3	line	Player	I said you were very gregarious!
+3	line	Ana (in a Barrel)	You creep!
+3	line	Guard	Oh, right, how very nice of you to say so. -- The guard seems flattered. --
+3	line	Guard	Anyway, let's get this barrel up to the surface, plenty more work for you to do!
+3	box	The guard places the barrel carefully on the lift platform.
+3	line	Guard	Oh, there's no one operating the lift up top, hope this barrel isn't urgent? You'd better get back to work!
+3	action	end
+2	option	Oh, nothing.
+3	line	Player	Oh, nothing.
+3	line	Guard	I heard you say something, now spit it out!
+3	action	end
+1	option	No thanks, I can manage.
+2	line	Player	No thanks, I can manage.
+2	line	Guard	Ok, fair enough, I was only offering.
+2	action	end
+0	section	Using the winch after using Ana on it
+1	line	Guard	Hey, you'd better go and operate that lift yourself if you want that big heavy barrel to go anywhere.
+1	action	end
+0	section	Searching empty barrel by the mine cart
+1	box	Ana is in a barrel on the lift underground, she's not here!
+1	action	end
+0	section	Trying to leave out the main entrance while holding Ana in a barrel
+1	line	Guard	Hey, where d'ya think you're going with that Barrel?
+1	box	A guard comes over and takes the barrel off you.
+1	line	Guard	Cor! This barrel is really heavy! Have you been mining lead?
+1	line	Guard	Har, har har!
+1	line	Ana-in-barrel	How rude! Why I ought to teach you a lesson.
+1	line	Guard	What was that!
+1	box	The guard kicks the barrel open!
+1	line	Ana	How dare you say that I'm as heavy as lead?
+1	box	The guards drag Ana away and then throw you into a cell.
+1	box	The guards drag Ana away and then throw you into a cell.
+1	action	(Continues with Getting jailed dialogue.)
+0	section	Returning to the surface
+0	section	Look at winch
+1	box	This looks like a winch, it probably brings rocks up from underground.
+1	action	end
+0	section	Operate winch with Ana in it
+1	box	You try to operate the winch.
+1	box	You see a barrel coming to the surface. Before too long you haul it onto the side. The barrel seems quite heavy and you hear a muffled sound coming from inside.
+1	line	Ana (in-a-barrel),	Get me OUT OF HERE!
+1	action	end
+0	section	Operate winch after retrieving Ana
+1	box	You try to operate the winch.
+1	box	You operate the winch but nothing significant seems to happen. You're not really sure what it should do.
+1	action	end
+0	section	Look-in barrel containing Ana
+1	box	This looks like an interesting mining barrel.
+1	action	end
+0	section	Search barrel containing Ana
+1	box	You search the barrel and find Ana.
+1	line	Ana (in a Barrel)	Let me out of here, I feel sick!
+1	cond	If the player has no inventory space:
+2	box	You're carrying so many items that you cannot manage Ana as well.
+2	action	end
+1	box	You pick up Ana in a Barrel.
+1	action	end
+0	section	Trying to exit the gates while holding Ana in a barrel
+1	line	Guard	Hey! Where d'ya think you're going with that barrel?
+1	line	Guard	You should know that they go out on the cart!
+1	line	Guard	I'd better check this out.
+1	box	The guards prise the lid off the barrel...
+1	line	Guard	Blimey - it's a jail break! Guards! Guards! Apprehend them!
+1	line	Guard	They're making a break for it!
+1	line	Ana	I could have told you that we wouldn't get away with it! Now look at the mess you've caused.
+1	box	The guards grab Ana and drag her away.
+1	line	Ana	Hey, watch it with the hands buster.
+1	line	Ana	These are the up market slaves clothes doncha know!
+1	action	end
+0	section	Trying to teleport while holding Ana in a barrel
+1	line	Ana (in a Barrel)	-- You can't teleport while holding the barrel, it's just too difficult to concentrate. --
+1	action	end
+0	section	Trying to escape through the cell window while holding Ana in a barrel
+1	box	You'll never get Ana (in a barrel) through the window. The barrel is just too big.
+1	line	Ana (in a Barrel)	Don't even think for one minute... you're gonna get me through that window!
+1	action	end
+0	section	Look at wooden cart
+1	box	A sturdy looking cart for carrying barrels of rocks out of the mining camp.
+1	box	The cart driver seems to be busy inspecting the cart for defects.
+1	action	end
+0	section	Search wooden cart while holding Ana in a barrel
+1	box	There should be enough space for Ana (in the barrel) to go on here.
+1	action	end
+0	section	Use Ana in a barrel on the wooden cart
+1	box	You place Ana (In the barrel) carefully on the cart. This was the last barrel to go on the cart, but the cart driver doesn't seem to be in any rush to get going. And the desert heat will soon get to Ana.
+1	action	end
+0	section	Search wooden cart after putting Ana on the cart
+1	box	You can see the barrel with Ana in it on the cart already.
+1	action	end
+0	section	Talking to Mine cart driver
+1	box	The cart driver seems to be festidiously cleaning his cart. It doesn't look as if he wants to be disturbed.
+1	select	Select an Option
+1	option	Hello!
+2	line	Player	Hello!
+2	line	Mine cart driver	Can't you see I'm busy? Now get out of here!
+2	select	Select an Option
+2	option	Oh, okay, sorry.
+3	line	Player	Oh, okay, sorry.
+3	line	Mine cart driver	Look just leave me alone!
+3	box	The cart driver goes back to his work.
+3	action	end
+2	option	Nice cart.
+3	action	below
+2	option	Pssst...
+3	action	below
+1	option	Nice cart.
+2	line	Player	Nice cart.
+2	box	The cart driver looks around at you and tries to weigh you up.
+2	line	Mine cart driver	Hmmm.
+2	box	He tuts to himself and starts checking the wheels.
+2	line	Mine cart driver	Tut !
+2	box	The cart driver chuckles to himself.
+2	select	Select an Option
+2	option	I wonder if you could help me?
+3	line	Player	I wonder if you could help me?
+3	line	Mine cart driver	Sorry friend, I'm busy, go bug the guards, I'm sure they'll give ya the time of day.
+3	line	Mine cart driver	He, he, he, ha!
+3	select	Select an Option
+3	option	Can I help you at all?
+4	action	below
+3	option	Can you get me the heck out of here please?
+4	line	Player	Can you get me the heck out of here please?
+4	line	Mine cart driver	No way, and if you bug me again, I'm gonna call the guards.
+4	action	end
+2	option	One wagon wheel says to the other, 'I'll see you around'.
+3	line	Player	One wagon wheel says to the other, 'I'll see you around'.
+3	line	Mine cart driver	-- The cart driver smirks a little. --
+3	box	He starts checking the steering on the cart.
+3	select	Select an Option
+3	option	'One good turn deserves another'
+4	line	Player	'One good turn deserves another.'
+4	box	The cart driver smiles a bit and then turns to you.
+4	line	Mine cart driver	Are you trying to get me fired?
+4	select	Select an Option
+4	option	No
+5	line	Player	No
+5	line	Mine cart driver	It certainly sounds like it, now leave me alone. If you bug me again, I'm gonna call the guards.
+5	action	end
+4	option	Yes
+5	line	Player	Yes
+5	line	Mine cart driver	And why would you want to do a crazy thing like that for? I ought to teach you a lesson! Guards! Guards!
+5	action	end
+4	option	Fired... no, shot perhaps!
+5	line	Player	Fired... no, shot perhaps!
+5	line	Mine cart driver	Ha ha ha! You're funny! -- The cart driver checks that guards aren't watching. -- What're you in fer?
+5	select	Select an Option
+5	option	Oh, I'm not supposed to be here at all actually.
+6	line	Player	Oh, I'm not supposed to be here at all actually.
+6	line	Mine cart driver	Hmmm, interesting... let me guess. You're completely innocent... like all the other inmates in here. Ha ha ha!
+6	box	The Cart driver goes back to his work.
+6	action	end
+5	option	I'm in for murder, so you'd better get me out of here!
+6	line	Player	I'm in for murder, so you'd better get me out of here!
+6	line	Mine cart driver	Hmm, well, I wonder what the guards are gonna say about that! Guards! Guards!
+6	action	end
+5	option	In for a penny in for a pound.
+6	line	Player	In for a penny in for a pound.
+6	box	The cart driver laughs at your pun...
+6	line	Mine cart driver	Ha ha ha, oh stop it!
+6	box	The cart driver seems much happier now.
+6	line	Mine cart driver	What can I do for you anyway?
+6	select	Select an Option
+6	option	Can you smuggle me out on your cart?
+7	line	Player	Can you smuggle me out on your cart?
+7	box	The cart driver points at a nearby guard.
+7	line	Mine cart driver	Ask that man over there if it's okay and I'll consider it! Ha ha ha!
+7	box	The cart driver goes back to his work, laughing to himself.
+7	action	end
+6	option	Can you smuggle my friend Ana out on your cart?
+7	line	Player	Can you smuggle my friend out on your cart?
+7	line	Mine cart driver	As long as your friend is a barrel full of rocks. I don't think it would be a problem at all! Ha ha ha!
+7	action	end
+6	option	Well, you see, it's like this...
+7	line	Player	Well, you see, it's like this...
+7	line	Mine cart driver	Yeah!
+7	select	Select an Option
+7	option	Prison riot in ten minutes, get your cart out of here!
+8	line	Player	Prison riot in ten minutes, get your cart out of here!
+8	box	The cart driver seems visibly shaken...
+8	line	Mine cart driver	Oh, right..yes... yess, okay...
+8	box	The cart driver quickly starts preparing the cart.
+8	select	Select an Option
+8	option	Good luck!
+9	line	Player	Good luck!
+9	line	Mine cart driver	Yeah, you too!
+9	action	(Continues with getting jailed dialogue.)
+8	option	You can't leave me here, I'll get killed!
+9	line	Player	You can't leave me here, I'll get killed!
+9	line	Mine cart driver	Oh, right... Okay, you'd better jump in the cart then! Quickly!
+9	action	end
+7	option	There's ten gold in it for you if you leave now - no questions asked.
+8	line	Player	There's ten gold in it for you if you leave now no questions asked.
+8	line	Mine cart driver	If you're going to bribe me, at least make it worth my while. Now, let's say 100 Gold pieces should we? Ha ha ha!
+8	select	Select an Option
+8	option	A hundred it is!
+9	line	Player	A hundred it is.
+9	line	Mine cart driver	Great!
+9	cond	If the player does not have enough coins:
+10	line	Mine cart driver	You little cheat, trying to trick me! I'll show you! Guards! Guards!
+10	box	You quickly slope away and hide from the guards.
+10	action	end
+9	line	Mine cart driver	Okay, get in the back of the cart then!
+9	action	end
+8	option	Forget it!
+9	line	Player	Forget it!
+9	line	Mine cart driver	Okay, fair enough! But don't bother me anymore.
+9	action	end
+3	option	Can you get me the heck out of here please?
+4	action	above
+2	option	Can I help you at all?
+3	line	Player	Can I help you at all?
+3	line	Mine cart driver	I'm quite capable thanks... Now get lost before I call the guards.
+3	select	Select an Option
+3	option	Can you get me the heck out of here please?
+4	action	above
+3	option	I could help, I know a lot about carts.
+4	line	Player	I could help, I know a lot about carts.
+4	line	Mine cart driver	Are you saying I don't know anything about carts?
+4	line	Mine cart driver	Why you cheeky little.... -- The cart driver seems mortally offended -- -- his temper explodes as he calls the guards.-- Guards! Guards!
+4	action	end
+1	option	Pssst...
+2	line	Player	Pssst...
+2	box	The cart driver completely ignores you.
+2	select	Select an Option
+2	option	Psssst...
+3	line	Player	Psssst...
+3	box	The driver completely ignores you.
+3	select	Select an Option
+3	option	Psssssst...
+4	action	below
+3	option	Pssst...
+4	action	above
+3	option	Pssssssssttt!!!
+4	action	below
+2	option	Psssssst...
+3	line	Player	Psssssst...
+3	box	The driver completely ignores you.
+3	select	Select an Option
+3	option	Psssst...
+4	action	above
+3	option	Pssst...
+4	action	above
+3	option	Pssssssssttt!!!
+4	action	below
+2	option	Pssssssssttt!!!
+3	line	Player	Pssssssssttt!!!
+3	box	The cart driver turns around quickly to face you.
+3	line	Mine cart driver	What! Can't you see I'm busy?
+3	select	Select an Option
+3	option	Oh, okay, sorry.
+4	line	Player	Oh, okay, sorry.
+4	line	Mine cart driver	Look just leave me alone!
+4	action	end
+3	option	Shhshhh!
+4	line	Player	Shhshhh!
+4	line	Mine cart driver	Shush yourself!
+4	action	end
+3	option	I wonder if you could help me?
+4	line	Player	I wonder if you could help me?
+4	line	Mine cart driver	Sorry friend, I'm busy, go bug the guards, I'm sure they'll give ya the time of day.
+4	select	Select an Option
+4	option	Can I help you at all?
+5	action	above
+4	option	Can you get me the heck out of here please?
+5	action	above
+0	section	Talking to the Mine cart driver after convincing him of a prison riot
+1	box	The cart driver is busy loading the cart up ...
+1	action	end
+0	section	Talking to the Mine cart driver after paying him
+1	cond	If the player is holding Ana in a barrel:
+2	line	Mine cart driver	What're you doing carrying that big barrel around? Put it in the back of the cart like all the others!
+2	action	end
+1	line	Mine cart driver	Hurry up, get in the cart or I'll go without you!
+1	action	end
+0	section	Searching the wooden cart after paying the Mine cart driver or convincing him of a prison riot
+1	box	There is space on the cart for you get on, would you like to try?
+1	select	Select an Option
+1	option	Yes, I'll get on.
+2	box	You decide to climb onto the cart.
+2	box	As soon as you get on the cart, it starts to move. Before too long you are past the gates. You jump off the cart taking Ana with you.
+2	action	end
+1	option	No, I've got other plans.
+2	box	You decide not to get onto the cart.
+2	action	end
+1	option	Attract mine cart drivers attention.
+2	line	Mine cart driver	Hurry up, get in the cart or I'll go without you!
+2	action	end
+0	section	Talking to the Mine cart driver after already escaping once
+1	line	Player	I should find Ana before attempting to escape again. She must have been caught by the guards.
+1	action	end
+0	section	Finishing up
+0	section	Talking to Irena while holding Ana in a barrel
+1	line	Irena	Hey, great you've found Ana!
+1	line	Ana (in a Barrel)	-- You show Irena the barrel with Ana in it. -- Hey great, there's my Mum!
+1	line	Ana	Great! Thanks for getting me out of that mine! And that barrel wasn't too bad anyway! Pop by again sometime, I'm sure we'll have a barrel of laughs!
+1	line	Ana	Oh! I nearly forgot! Here's a key I found in the tunnels. It might be of some use to you, not sure what it opens. Sorry, but I have to go now.
+1	box	Ana gives you a wrought iron key...
+1	box	Ana spots Irena and waves...
+1	line	Irena	Hi Ana!
+1	line	Irena	Thank you very much for returning my daughter to me. I'm really very grateful... I would like to reward you for your bravery and daring.
+1	line	Irena	I can offer you increased knowledge in two of the following areas.
+1	action	Choose a reward skill
+1	line	Irena	Okay, now choose your second skill.
+1	action	Choose a reward skill
+1	line	Irena	Okay, that's all the skills I can teach you!
+1	action	end
+0	section	Talking to Irena before getting the wrought iron key
+1	line	Irena	Thanks for returning Anna to me, I think she has something else to say to you though!
+1	action	end
+0	section	Talking to Ana before getting the wrought iron key
+1	line	Ana	Great! Thanks for getting me out of that mine! And that barrel wasn't too bad anyway! Pop by again sometime, I'm sure we'll have a barrel of laughs!
+1	action	above
+0	section	Talking to Irena after rescuing Ana
+1	line	Irena	Thank you very much for returning my daughter to me. I'm really very grateful... I would like to reward you for your bravery and daring. I can offer you increased knowledge in two of the following areas.
+1	action	Choose a reward skill
+1	line	Irena	Okay, now choose your second skill.
+1	action	above
+0	section	Talking to Irena after choosing the first skill
+1	line	Irena	Thank you very much for returning my daughter to me. I'm really very grateful... I would like to reward you for your bravery and daring. I can offer you increased knowledge in one of the following areas.
+1	action	Choose a reward skill
+1	line	Irena	Okay, that's all the skills I can teach you!
+1	action	above
+0	section	Talking to Irena after choosing both skills
+1	box	Irena seems happy now that her daughter has returned home.
+1	line	Irena	Thanks so much for returning my daughter to me. I expect that she will go on another trip soon though. She is the adventurous type... a bit like yourself really! Okay, see you around then!
+1	box	Irena goes back to work.
+1	action	end
