@@ -3,6 +3,7 @@ package org.rsmod.api.script
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
+import org.rsmod.plugin.scripts.ScriptContext
 
 /**
  * Binds held obj [obj]'s inventory op labelled [label] (e.g. "Fletch", added by an ObjEditor iop
