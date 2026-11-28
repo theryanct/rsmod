@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.constructionLvl
+import org.rsmod.api.player.stat.magicLvl
 import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.registry.region.RegionRegistry
@@ -110,6 +111,9 @@ constructor(
         }
         for (name in ConstructionData.options.flatMap { it.locs.values }.distinct()) {
             onLocOp(loc(name), "remove") { removeFurniture(it) }
+        }
+        for (focus in PohFurnitureLocs.focus.values) {
+            onLocOp(focus, "direct-portal") { directPortal(it) }
         }
         onPlayerLogout { moveOutOfHouse(player) }
         onPlayerLogin { moveOutOfHouse(player) }
@@ -283,9 +287,9 @@ constructor(
             val spot = spotsByLoc[placed.room.key to loc.id] ?: continue
             tiles[loc.coords to loc.layer] = Tile(placed.slot, spot.group, spot.suffix, loc(spot.hotspot))
             val tier = tier(player, placed.slot, placed.room.key, spot.group)
-            val built = option(placed.room.key, spot.group, tier)?.locs?.get(spot.suffix)
+            val built = builtLoc(player, placed.slot, placed.room.key, spot.group, tier, spot.suffix)
             when {
-                built != null -> locRepo.change(loc, loc(built), PERMANENT)
+                built != null -> locRepo.change(loc, built, PERMANENT)
                 !buildMode -> locRepo.del(loc, PERMANENT)
             }
         }
@@ -488,6 +492,86 @@ constructor(
     private fun option(room: String, group: Int, tier: Int): Option? =
         if (tier <= 0) null else ConstructionData.optionsByGroup[room to group]?.firstOrNull { it.tier == tier }
 
+    /** The loc built on a hotspot tile; portal frames show their directed destination. */
+    private fun builtLoc(
+        player: Player,
+        slot: Int,
+        room: String,
+        group: Int,
+        tier: Int,
+        suffix: String,
+    ): LocType? {
+        val built = option(room, group, tier)?.locs?.get(suffix) ?: return null
+        val portal = group - FIRST_PORTAL_GROUP
+        if (room == "portal" && portal in 0 until PORTALS && tier in 1..PohFurnitureData.frames.size) {
+            val dest = destination(player, slot, portal)
+            if (dest > 0) {
+                val name =
+                    PohFurnitureData.portalLoc(tier, PohFurnitureData.destinationOrder[dest - 1])
+                return PohFurnitureLocs.byName.getValue(name)
+            }
+        }
+        return loc(built)
+    }
+
+    /* Portal room: destinations saved above the furniture bits of the portal room's slot. */
+
+    private fun destination(player: Player, slot: Int, portal: Int): Int =
+        (player.vars[ConstructionVarps.furniture[slot]] ushr (PORTAL_SHIFT + portal * 3)) and 7
+
+    private fun setDestination(player: Player, slot: Int, portal: Int, dest: Int) {
+        val varp = ConstructionVarps.furniture[slot]
+        val shift = PORTAL_SHIFT + portal * 3
+        val updated = (player.vars[varp] and (7 shl shift).inv()) or (dest shl shift)
+        VarPlayerIntMapSetter.set(player, varp, updated)
+    }
+
+    private fun title(key: String): String = key.replaceFirstChar { it.uppercase() }
+
+    /**
+     * Wiki "Portal chamber": the owner directs a portal from the focus (any mode) for 100x the
+     * teleport spell's runes and the spell's Magic level, gaining 5x the spell's xp. Elemental
+     * staves don't count; quest requirements are not checked here.
+     */
+    private suspend fun ProtectedAccess.directPortal(loc: BoundLocInfo) {
+        val house = houses[player.uid.packed] ?: return
+        val placed = house.roomAt(loc.coords)?.takeIf { it.room.key == "portal" } ?: return
+        val order = PohFurnitureData.destinationOrder
+        val portalLabels =
+            (0 until PORTALS).map { i ->
+                val dest = destination(player, placed.slot, i)
+                "Portal ${i + 1}: " + (order.getOrNull(dest - 1)?.let(::title) ?: "not directed")
+            }
+        val portal = menu("Direct which portal?", hotkeys = true, choices = portalLabels + "Cancel")
+        if (portal !in 0 until PORTALS) return
+        val labels =
+            order.map { key ->
+                val dest = PohFurnitureData.destinations.getValue(key)
+                val colour = if (player.magicLvl >= dest.level) "" else "<col=ff0000>"
+                "$colour${title(key)} (Magic ${dest.level})"
+            }
+        val picked = menu("Direct it to where?", hotkeys = true, choices = labels + "Cancel")
+        val key = order.getOrNull(picked) ?: return
+        val dest = PohFurnitureData.destinations.getValue(key)
+        if (player.magicLvl < dest.level) {
+            mes("You need a Magic level of ${dest.level} to direct a portal there.")
+            return
+        }
+        val runes = dest.runes.map { (name, count) -> PohFurnitureObjs.byName.getValue(name) to count }
+        if (runes.any { (type, count) -> invTotal(inv, type) < count }) {
+            val needed = dest.runes.joinToString(", ") { (n, c) -> "$c ${n.removeSuffix("rune")}" }
+            mes("You need these runes to direct a portal there: $needed.")
+            return
+        }
+        for ((type, count) in runes) invDel(inv, type, count)
+        setDestination(player, placed.slot, portal, order.indexOf(key) + 1)
+        statAdvance(stats.magic, dest.xp * xpMods.get(player, stats.magic))
+        val group = FIRST_PORTAL_GROUP + portal
+        val tier = tier(player, placed.slot, "portal", group)
+        option("portal", group, tier)?.let { placeGroup(house, placed.slot, group, it) }
+        mes("You direct the portal to ${title(key)}.")
+    }
+
     private suspend fun ProtectedAccess.buildFurniture(loc: BoundLocInfo) {
         val house = houses[player.uid.packed]
         if (house == null || !house.buildMode) {
@@ -511,12 +595,15 @@ constructor(
     }
 
     /** Puts [furniture] (or the hotspots back, when null) on every tile of the group. */
-    private fun placeGroup(house: House, slot: Int, group: Int, furniture: Option?) {
+    private fun ProtectedAccess.placeGroup(house: House, slot: Int, group: Int, furniture: Option?) {
+        val room = house.rooms.firstOrNull { it.slot == slot }?.room?.key ?: return
         for ((key, tile) in house.tiles) {
             if (tile.slot != slot || tile.group != group) continue
             val (coords, layer) = key
             val current = locRepo.findAll(coords).firstOrNull { it.layer == layer } ?: continue
-            val built = furniture?.locs?.get(tile.suffix)?.let(::loc) ?: tile.hotspot
+            val built =
+                furniture?.let { builtLoc(player, slot, room, group, it.tier, tile.suffix) }
+                    ?: tile.hotspot
             if (current.id != locTypes[built].id) locRepo.change(current, built, PERMANENT)
         }
     }
@@ -624,6 +711,11 @@ constructor(
     private companion object {
         const val PERMANENT = Int.MAX_VALUE
         const val MENU_ENTRIES = 7
+        /** Portal room hotspot groups 3-5 are its three portal frames. */
+        const val FIRST_PORTAL_GROUP = 3
+        const val PORTALS = 3
+        /** Destinations (3 bits per portal) sit above the room's furniture bits (< 16). */
+        const val PORTAL_SHIFT = 16
         val EDGE_NAMES = listOf("north", "east", "south", "west")
     }
 }
