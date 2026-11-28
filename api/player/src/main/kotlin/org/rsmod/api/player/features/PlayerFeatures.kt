@@ -22,20 +22,56 @@ public enum class Feature(
     public val displayName: String,
     public val defaultOn: Boolean,
     internal val slot: Int,
+    private val declaredCategory: FeatureCategory? = null,
 ) {
-    InfiniteRun("run", "Infinite run energy", defaultOn = true, slot = 0),
-    InfinitePrayer("prayer", "Infinite prayer", defaultOn = false, slot = 1),
-    InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2),
-    InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3),
-    NoHomeTeleportCooldown("hometele", "No home teleport cooldown", defaultOn = true, slot = 4),
-    AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5),
-    NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6),
-    NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7),
-    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8);
+    InfiniteRun("run", "Infinite run energy", defaultOn = true, slot = 0, declaredCategory = FeatureCategory.Movement),
+    InfinitePrayer("prayer", "Infinite prayer", defaultOn = false, slot = 1, declaredCategory = FeatureCategory.Combat),
+    InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2, declaredCategory = FeatureCategory.Combat),
+    InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3, declaredCategory = FeatureCategory.Combat),
+    NoHomeTeleportCooldown(
+        "hometele",
+        "No home teleport cooldown",
+        defaultOn = true,
+        slot = 4,
+        declaredCategory = FeatureCategory.Movement,
+    ),
+    AutoResumeGathering(
+        "autoresume",
+        "Auto-resume gathering",
+        defaultOn = true,
+        slot = 5,
+        declaredCategory = FeatureCategory.Skilling,
+    ),
+    NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6, declaredCategory = FeatureCategory.Skilling),
+    NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7, declaredCategory = FeatureCategory.Loot),
+    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8, declaredCategory = FeatureCategory.Movement);
+
+    /**
+     * The menu category: declared on the entry, else by enum name (features added on other
+     * branches before they declare one), else [FeatureCategory.Other].
+     */
+    public val category: FeatureCategory
+        get() = declaredCategory ?: FeatureCategory.byFeatureName[name] ?: FeatureCategory.Other
 
     public companion object {
         public fun forKey(key: String): Feature? =
             entries.firstOrNull { it.key.equals(key, ignoreCase = true) }
+    }
+}
+
+/** Top-level groups of the `::features` menu, in menu order. */
+public enum class FeatureCategory(public val displayName: String) {
+    Movement("Movement & Travel"),
+    Combat("Combat"),
+    Skilling("Skilling"),
+    Loot("Loot"),
+    Quests("Quests"),
+    Other("Other");
+
+    internal companion object {
+        /** Categories for features that don't declare one yet (merged from other branches). */
+        val byFeatureName: Map<String, FeatureCategory> =
+            mapOf("QuestGates" to Quests, "AutoRepeatThieving" to Skilling)
     }
 }
 
@@ -99,6 +135,15 @@ public fun Player.setSlayerPointMultiplier(multiplier: Int?) {
 
 public const val MAX_SLAYER_POINT_MULTIPLIER: Int = 1000
 
+/** Every toggle back to its default, every skill xp rate cleared, Slayer points back to 1x. */
+public fun Player.resetAllFeatures() {
+    VarPlayerIntMapSetter.set(this, FeatureVarps.flags, 0)
+    for (index in featureSkillNames.indices) {
+        FeatureVarps.skillXpAt(index)?.let { VarPlayerIntMapSetter.set(this, it, 0) }
+    }
+    VarPlayerIntMapSetter.set(this, FeatureVarps.slayerPoints, 0)
+}
+
 private const val STATE_ON = 1
 private const val STATE_OFF = 2
 
@@ -139,4 +184,6 @@ internal object FeatureVarps : VarpReferences() {
 
     // featureSkillNames is in stat id order.
     fun skillXp(stat: StatType): VarpType? = skillXp.getOrNull(stat.id)
+
+    fun skillXpAt(index: Int): VarpType? = skillXp.getOrNull(index)
 }

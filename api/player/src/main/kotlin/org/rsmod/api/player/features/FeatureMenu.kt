@@ -61,24 +61,71 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
                 it.displayName.equals(name, ignoreCase = true)
         }
 
+    /**
+     * Top level: one line per [FeatureCategory] that has features (data-driven from [Feature]),
+     * then Rates, Reset all, Close. Every submenu ends with "Back" to return here.
+     */
     private suspend fun ProtectedAccess.featureMenu() {
         while (true) {
-            val toggles = Feature.entries
+            val categories =
+                FeatureCategory.entries.filter { category -> Feature.entries.any { it.category == category } }
             val lines =
-                toggles.map { "${it.displayName}: ${onOff(player.isFeatureOn(it))}" } +
-                    listOf(
-                        "Skill xp rates...",
-                        "Slayer point multiplier: ${player.slayerPointMultiplier}x...",
-                        "Close",
-                    )
-            val index = menu(title = "Feature toggles", hotkeys = false, choices = lines)
+                categories.map { "${it.displayName}..." } +
+                    listOf("Rates...", "Reset all features", "Close")
+            val index = menu(title = "Features", hotkeys = false, choices = lines)
             when {
-                index < toggles.size -> toggle(player, toggles[index])
-                index == toggles.size -> skillRateMenu()
-                index == toggles.size + 1 -> slayerPointsMenu()
+                index < categories.size -> categoryMenu(categories[index])
+                index == categories.size -> ratesMenu()
+                index == categories.size + 1 -> resetAll()
                 else -> return
             }
         }
+    }
+
+    /** The toggles in one category, each with its current state. */
+    private suspend fun ProtectedAccess.categoryMenu(category: FeatureCategory) {
+        while (true) {
+            val toggles = Feature.entries.filter { it.category == category }
+            val lines =
+                toggles.map { "${it.displayName}: ${onOff(player.isFeatureOn(it))}" } + listOf("Back")
+            val index = menu(title = category.displayName, hotkeys = false, choices = lines)
+            if (index >= toggles.size) {
+                return
+            }
+            toggle(player, toggles[index])
+        }
+    }
+
+    private suspend fun ProtectedAccess.ratesMenu() {
+        while (true) {
+            val lines =
+                listOf(
+                    "Skill xp rates...",
+                    "Slayer point multiplier: ${player.slayerPointMultiplier}x...",
+                    "Back",
+                )
+            when (menu(title = "Rates", hotkeys = false, choices = lines)) {
+                0 -> skillRateMenu()
+                1 -> slayerPointsMenu()
+                else -> return
+            }
+        }
+    }
+
+    private suspend fun ProtectedAccess.resetAll() {
+        val confirm =
+            choice2(
+                "Yes, reset every feature to its default.",
+                true,
+                "No, keep my settings.",
+                false,
+                title = "Reset all features?",
+            )
+        if (!confirm) {
+            return
+        }
+        player.resetAllFeatures()
+        player.mes("All features, xp rates and the Slayer point multiplier are back to their defaults.")
     }
 
     private suspend fun ProtectedAccess.skillRateMenu() {
