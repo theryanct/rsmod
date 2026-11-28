@@ -56,6 +56,9 @@ constructor(
         val duration = hero.lootDropDuration ?: constants.lootdrop_duration
         // Npcs without a wiki drop table keep the old default: a single bones drop.
         val drops = dropTables.roll(id)
+        if (!drops.isNullOrEmpty()) {
+            eventBus.publish(NpcDropsEvent(this, hero, drops))
+        }
         val noted = hero.isFeatureOn(Feature.NotedDrops)
         if (drops == null) {
             objRepo.add(dropType(objs.bones, noted), dropCoords, duration, hero)
