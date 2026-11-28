@@ -93,3 +93,20 @@ combine	pot_flour	bowl_water	pastry_dough	1	0.0	pot_empty	bowl_empty
 combine	nettles_picked	bowl_water	bowl_nettlewater	20	0.0	-	-
 multi	uncooked_cake	40	0.0	cake_tin	egg	-	pot_flour	pot_empty	bucket_milk	bucket_empty
 ferment	jug_unfermented_wine	jug_wine	jug_bad_wine	35	200.0	48	352
+combine	pie_shell	tomato	unfinished_garden_pie_1	34	0.0	-	-
+combine	unfinished_garden_pie_1	onion	unfinished_garden_pie_2	34	0.0	-	-
+combine	unfinished_garden_pie_2	cabbage	uncooked_garden_pie	34	0.0	-	-
+combine	pie_shell	trout	unfinished_fish_pie_1	47	0.0	-	-
+combine	unfinished_fish_pie_1	cod	unfinished_fish_pie_2	47	0.0	-	-
+combine	unfinished_fish_pie_2	potato	uncooked_fish_pie	47	0.0	-	-
+combine	pie_shell	salmon	unfinished_admiral_pie_1	70	0.0	-	-
+combine	unfinished_admiral_pie_1	tuna	unfinished_admiral_pie_2	70	0.0	-	-
+combine	unfinished_admiral_pie_2	potato	uncooked_admiral_pie	70	0.0	-	-
+combine	pie_shell	raw_bear_meat	unfinished_wild_pie_1	85	0.0	-	-
+combine	unfinished_wild_pie_1	raw_chompy	unfinished_wild_pie_2	85	0.0	-	-
+combine	unfinished_wild_pie_2	raw_rabbit	uncooked_wild_pie	85	0.0	-	-
+combine	pie_shell	strawberry	unfinished_summer_pie_1	95	0.0	-	-
+combine	unfinished_summer_pie_1	watermelon	unfinished_summer_pie_2	95	0.0	-	-
+combine	unfinished_summer_pie_2	cooking_apple	uncooked_summer_pie	95	0.0	-	-
+combine	potato_butter	bowl_egg+tomato	potato_egg+tomato	51	45.0	-	-
+combine	potato_butter	bowl_chilli+carne	potato_chilli+carne	41	15.0	-	bowl_empty
