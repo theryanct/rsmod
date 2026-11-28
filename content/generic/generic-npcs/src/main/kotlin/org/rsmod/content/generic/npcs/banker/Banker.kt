@@ -1,5 +1,6 @@
 package org.rsmod.content.generic.npcs.banker
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import kotlin.math.min
 import org.rsmod.api.config.refs.content
@@ -8,20 +9,28 @@ import org.rsmod.api.config.refs.objs
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.player.dialogue.Dialogue
+import org.rsmod.api.player.events.interact.NpcEvents
+import org.rsmod.api.player.events.interact.NpcUDefaultEvents
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.onApNpc1
+import org.rsmod.api.script.onApNpc2
 import org.rsmod.api.script.onApNpc3
 import org.rsmod.api.script.onApNpc4
+import org.rsmod.api.script.onApNpc5
 import org.rsmod.api.script.onApNpcU
 import org.rsmod.api.script.onOpNpc1
+import org.rsmod.api.script.onOpNpc2
 import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.script.onOpNpc4
+import org.rsmod.api.script.onOpNpc5
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.utils.format.formatAmount
 import org.rsmod.content.interfaces.bank.scripts.BankTutorialScript
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.enums.EnumTypeMapResolver
 import org.rsmod.game.inv.isType
+import org.rsmod.game.type.npc.NpcTypeList
+import org.rsmod.game.type.npc.UnpackedNpcType
 import org.rsmod.game.type.obj.UnpackedObjType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -31,7 +40,10 @@ class Banker
 private constructor(
     private val spaceShop: BankSpaceShop,
     private val tutorial: BankTutorialScript,
+    private val npcTypes: NpcTypeList,
 ) : PluginScript() {
+    private val logger = InlineLogger()
+
     // TODO(content): Bank Tutor dialogue variation when player has a bank PIN set up.
 
     override fun ScriptContext.startup() {
@@ -53,7 +65,74 @@ private constructor(
         onApNpcU(content.banker_tutor) { apBanknote(it.npc, it.invSlot, it.objType) }
         onOpNpcU(content.banker_tutor) { banknote(it.npc, it.invSlot, it.objType) }
 
+        bindBankersByOp()
         spaceShop.startup()
+    }
+
+    /**
+     * Only the Lumbridge banker has the `banker` content group, so every other bank (Varrock,
+     * Falador, Edgeville, ...) had no handler. Bind every npc type with a "Bank" op by label:
+     * Bank and Collect, plus Talk-to and banknote use when the npc isn't a shopkeeper (a "Trade"
+     * op means another script owns its Talk-to). Ops already bound elsewhere are left alone.
+     */
+    private fun ScriptContext.bindBankersByOp() {
+        var bankers = 0
+        for (type in npcTypes.values) {
+            if (type.isContentType(content.banker) || type.isContentType(content.banker_tutor)) {
+                continue
+            }
+            val ops = type.op.map { it?.trim()?.lowercase() }
+            val bank = ops.indexOf("bank") + 1
+            if (bank == 0) {
+                continue
+            }
+            bankers++
+            bindNpcOp(type, bank) { openBank() }
+            val collect = ops.indexOf("collect") + 1
+            if (collect > 0) bindNpcOp(type, collect) { openCollectionBox() }
+            if ("trade" in ops) {
+                continue
+            }
+            val talk = ops.indexOf("talk-to") + 1
+            if (talk > 0) bindNpcOp(type, talk) { talkToBanker(it) }
+            if (!eventBus.contains(NpcUDefaultEvents.OpType::class.java, type.id)) {
+                onApNpcU(type) { apBanknote(it.npc, it.invSlot, it.objType) }
+                onOpNpcU(type) { banknote(it.npc, it.invSlot, it.objType) }
+            }
+        }
+        logger.info { "Banker: bound $bankers npc types with a Bank op." }
+    }
+
+    private fun ScriptContext.bindNpcOp(
+        type: UnpackedNpcType,
+        op: Int,
+        action: suspend ProtectedAccess.(Npc) -> Unit,
+    ) {
+        val ap: suspend ProtectedAccess.(Npc) -> Unit = { npc ->
+            if (isWithinApRange(npc, distance = 2)) action(npc)
+        }
+        when (op) {
+            1 -> if (!eventBus.contains(NpcEvents.Op1::class.java, type.id)) {
+                onApNpc1(type) { ap(it.npc) }
+                onOpNpc1(type) { action(it.npc) }
+            }
+            2 -> if (!eventBus.contains(NpcEvents.Op2::class.java, type.id)) {
+                onApNpc2(type) { ap(it.npc) }
+                onOpNpc2(type) { action(it.npc) }
+            }
+            3 -> if (!eventBus.contains(NpcEvents.Op3::class.java, type.id)) {
+                onApNpc3(type) { ap(it.npc) }
+                onOpNpc3(type) { action(it.npc) }
+            }
+            4 -> if (!eventBus.contains(NpcEvents.Op4::class.java, type.id)) {
+                onApNpc4(type) { ap(it.npc) }
+                onOpNpc4(type) { action(it.npc) }
+            }
+            5 -> if (!eventBus.contains(NpcEvents.Op5::class.java, type.id)) {
+                onApNpc5(type) { ap(it.npc) }
+                onOpNpc5(type) { action(it.npc) }
+            }
+        }
     }
 
     private fun ProtectedAccess.apOpenCollectionBox(npc: Npc) {
