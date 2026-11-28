@@ -240,6 +240,7 @@ constructor(
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
             is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
             is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
+            Effect.Stamina -> Stamina.drink(player)
         }
     }
 
