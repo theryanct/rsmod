@@ -1342,3 +1342,471 @@ coords = '2_55_55_29_36'
 [[spawn]]
 npc = 'fenk_creature'
 coords = '2_55_55_31_37'
+# Spirits of the Elid: the cave's golems (one outside each door), the target over the north
+# channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
+# (Ryan-test).
+[[spawn]]
+npc = 'elid_golem_white'
+coords = '0_52_149_37_9'
+
+[[spawn]]
+npc = 'elid_golem_grey'
+coords = '0_52_149_43_11'
+
+[[spawn]]
+npc = 'elid_golem_black'
+coords = '0_52_149_41_20'
+
+[[spawn]]
+npc = 'elid_ranging_target_multinpc'
+coords = '0_52_149_50_22'
+
+[[spawn]]
+npc = 'elid_genie'
+coords = '0_52_145_43_38'
+
+# Children of the Sun: Noah and Alina (east side of Varrock Square), Sergeant Tobyn (north side),
+# the roof cell's Tobyn and Prince Itzla (palace roof), and the ten square/east-road guards
+# (multinpcs on vmq1_guard_N; 1, 3, 4 and 8 are the disguised bandits at the Wiki's spots).
+[[spawn]]
+npc = 'vmq1_alina'
+coords = '0_50_53_25_34'
+
+[[spawn]]
+npc = 'vmq1_noah'
+coords = '0_50_53_24_36'
+
+[[spawn]]
+npc = 'vmq1_guard_sergeant'
+coords = '0_50_53_11_45'
+
+[[spawn]]
+npc = 'vmq1_guard_sergeant_roof'
+coords = '2_50_54_9_14'
+
+[[spawn]]
+npc = 'vmq1_itzla'
+coords = '2_50_54_9_16'
+
+[[spawn]]
+npc = 'vmq1_guard_1'
+coords = '0_50_53_5_34'
+
+[[spawn]]
+npc = 'vmq1_guard_2'
+coords = '0_50_53_12_36'
+
+[[spawn]]
+npc = 'vmq1_guard_3'
+coords = '0_50_53_45_37'
+
+[[spawn]]
+npc = 'vmq1_guard_4'
+coords = '0_50_53_33_33'
+
+[[spawn]]
+npc = 'vmq1_guard_5'
+coords = '0_50_53_20_28'
+
+[[spawn]]
+npc = 'vmq1_guard_6'
+coords = '0_50_53_28_39'
+
+[[spawn]]
+npc = 'vmq1_guard_7'
+coords = '0_50_53_38_36'
+
+[[spawn]]
+npc = 'vmq1_guard_8'
+coords = '0_50_53_18_40'
+
+[[spawn]]
+npc = 'vmq1_guard_9'
+coords = '0_50_53_14_28'
+
+[[spawn]]
+npc = 'vmq1_guard_10'
+coords = '0_50_53_26_23'
+
+# The Writing's on the Wall: the scene multinpcs (wotw) the world spawns lack. Authored
+# placements (Ryan-test).
+# Land's End Hudson (the world-spawns one is placed far north; Authored)
+[[spawn]]
+npc = 'wotw_hudson_lands_end'
+coords = '0_23_53_44_44'
+
+# Hosidius, outside Bernard's house
+[[spawn]]
+npc = 'wotw_betty_hosidius'
+coords = '0_27_54_57_62'
+
+# Hosidius, inside
+[[spawn]]
+npc = 'wotw_betty_hosidius_inside'
+coords = '0_27_55_58_4'
+
+# the Piscarilius cell
+[[spawn]]
+npc = 'wotw_betty_piscarilius_jail'
+coords = '0_27_59_58_4'
+
+# Shayzien, outside Edwards' house
+[[spawn]]
+npc = 'wotw_hudson_shayzien'
+coords = '0_22_56_46_56'
+
+# Shayzien corporal
+[[spawn]]
+npc = 'wotw_soldier_shayzien_1'
+coords = '0_22_56_45_54'
+
+# Shayzien corporal
+[[spawn]]
+npc = 'wotw_soldier_shayzien_2'
+coords = '0_22_56_48_57'
+
+# Mudfoot's Big Adventure: Captain Harlan outside the Lumbridge general store (Wiki 3218,3238);
+# Mudfoot's multinpcs (goblin house south of the cow field, windmill, H.A.M. woods, graveyard)
+# and the outlaws' (general store, windmill, woods, graveyard).
+[[spawn]]
+npc = 'captain_harlan'
+coords = '0_50_50_18_38'
+
+[[spawn]]
+npc = 'mba_mudfoot_ruined_building'
+coords = '0_50_50_47_51'
+
+[[spawn]]
+npc = 'mba_mudfoot_windmill'
+coords = '0_49_51_38_31'
+
+[[spawn]]
+npc = 'mba_mudfoot_woods'
+coords = '0_49_50_42_50'
+
+[[spawn]]
+npc = 'mba_mudfoot_graveyard'
+coords = '0_50_49_41_14'
+
+[[spawn]]
+npc = 'mba_outlaw_ranged_general_store'
+coords = '0_50_50_12_45'
+
+[[spawn]]
+npc = 'mba_outlaw_ranged_windmill'
+coords = '0_49_51_38_36'
+
+[[spawn]]
+npc = 'mba_outlaw_magic_woods'
+coords = '0_49_50_44_48'
+
+[[spawn]]
+npc = 'mba_outlaw_melee_graveyard'
+coords = '0_50_49_43_12'
+
+# A Ruff Situation: the stage multinpcs (dogquest) the world spawns lack. Authored placements
+# (Ryan-test).
+# the guard south of the west Varrock bank
+[[spawn]]
+npc = 'dogq_varrock_guard_multi'
+coords = '0_49_53_44_32'
+
+# the stray dog barking at him
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest'
+coords = '0_49_53_45_33'
+
+# the dog at her den (west of Thessalia's)
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_den'
+coords = '0_49_53_60_23'
+
+# the first puppy, north of the Cooks' Guild
+[[spawn]]
+npc = 'dogq_puppy_one_multi'
+coords = '0_49_53_9_63'
+
+# the dog by the goblins
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_goblin'
+coords = '0_48_53_62_45'
+
+# Picklenose (Toetaller is a world spawn)
+[[spawn]]
+npc = 'dogq_goblin_picklenose_multi'
+coords = '0_48_53_60_44'
+
+# the second puppy, with the goblins
+[[spawn]]
+npc = 'dogq_puppy_two_multi'
+coords = '0_48_53_59_46'
+
+# the dog after the goblin trade
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_goblin_post'
+coords = '0_48_53_63_46'
+
+# the dog at the outlaw camp
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_outlaw'
+coords = '0_49_54_6_10'
+
+# the dog after the outlaws
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_outlaw_post'
+coords = '0_49_54_5_12'
+
+# the third puppy
+[[spawn]]
+npc = 'dogq_puppy_three_multi'
+coords = '0_49_54_3_16'
+
+# Eagles' Peak: Nickolaus in the giant eagle's nest (shout-to / disguised multinpc) and the
+# eyrie eagles (Quick-travel once the quest is complete): three at the peak, one in each remote eyrie.
+[[spawn]]
+npc = 'eaglepeak_nickolaus'
+coords = '3_31_77_22_31'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_polar'
+coords = '3_31_77_42_35'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_desert'
+coords = '3_31_77_36_30'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_jungle'
+coords = '3_31_77_39_33'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_polar'
+coords = '0_42_159_39_41'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_desert'
+coords = '0_53_149_30_35'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_jungle'
+coords = '0_39_145_20_42'
+
+# A Soul's Bane: the rift's rooms (map squares 46-48_81) - rage room creatures, the confusion
+# room's real beast and illusions, the hopeless creatures, and Brana in Tolna's chamber (plane 1).
+[[spawn]]
+npc = 'soulbane_anger_unicorn'
+coords = '0_47_81_8_52'
+
+[[spawn]]
+npc = 'soulbane_anger_unicorn'
+coords = '0_47_81_22_46'
+
+[[spawn]]
+npc = 'soulbane_anger_bear'
+coords = '0_47_81_14_56'
+
+[[spawn]]
+npc = 'soulbane_anger_bear'
+coords = '0_47_81_10_42'
+
+[[spawn]]
+npc = 'soulbane_anger_rat'
+coords = '0_47_81_20_52'
+
+[[spawn]]
+npc = 'soulbane_anger_rat'
+coords = '0_47_81_17_42'
+
+[[spawn]]
+npc = 'soulbane_anger_goblin'
+coords = '0_47_81_12_46'
+
+[[spawn]]
+npc = 'soulbane_anger_goblin'
+coords = '0_47_81_24_56'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper'
+coords = '0_47_81_47_16'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake1'
+coords = '0_47_81_42_23'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake2'
+coords = '0_47_81_56_23'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake3'
+coords = '0_47_81_42_7'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake4'
+coords = '0_47_81_56_7'
+
+[[spawn]]
+npc = 'soulbane_hope_monst1'
+coords = '0_47_81_7_21'
+
+[[spawn]]
+npc = 'soulbane_hope_monst2'
+coords = '0_47_81_17_24'
+
+[[spawn]]
+npc = 'soulbane_hope_monst3'
+coords = '0_47_81_22_16'
+
+[[spawn]]
+npc = 'soulbane_hope_monst1'
+coords = '0_47_81_12_13'
+
+[[spawn]]
+npc = 'soulbane_hope_monst2'
+coords = '0_47_81_25_23'
+
+[[spawn]]
+npc = 'soulbane_brana'
+coords = '1_46_81_28_30'
+
+# The Birds and the Wasps: Farmer Bea by her equipment crate (Wiki 3316,3376), the bee dealer by
+# the Grand Exchange's east entrance (Wiki 3187,3493), and Bea's farm creatures (multinpc bases:
+# shown by the quest's varbits). Wasps and honey buzzards by the southern hive (3316,3365), killer
+# wasps and black honey buzzards by the new hives (3301,3386); exact tiles authored.
+[[spawn]]
+npc = 'baw_bea_multi'
+coords = '0_51_52_52_49'
+
+[[spawn]]
+npc = 'baw_bee_dealer_multi'
+coords = '0_49_54_51_37'
+
+[[spawn]]
+npc = 'baw_wasp_1_multi'
+coords = '0_51_52_50_34'
+
+[[spawn]]
+npc = 'baw_wasp_2_multi'
+coords = '0_51_52_53_35'
+
+[[spawn]]
+npc = 'baw_wasp_3_multi'
+coords = '0_51_52_56_38'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_48_34'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_54_33'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_51_31'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_56_41'
+
+[[spawn]]
+npc = 'baw_killer_wasp_1_multi'
+coords = '0_51_52_35_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_2_multi'
+coords = '0_51_52_39_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_3_multi'
+coords = '0_51_52_38_60'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_52_62'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_40_54'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_34_58'
+
+# Pandemonium: Will and Anne on the Port Sarim docks (shown for sailing_intro 0-14).
+[[spawn]]
+npc = 'sailing_intro_will_sarim'
+coords = '0_47_50_16_8'
+
+[[spawn]]
+npc = 'sailing_intro_anne_sarim'
+coords = '0_47_50_17_9'
+
+# Pandemonium: Ribs in the pub, Old Grog by the bar (shown for sailing_intro 40-46).
+[[spawn]]
+npc = 'sailing_intro_ribs'
+coords = '0_47_46_43_30'
+
+[[spawn]]
+npc = 'sailing_intro_grog'
+coords = '0_47_46_39_23'
+
+# Pandemonium: Junior Jim at the shipyard (shown for sailing_intro 28-32), beside the tool crates.
+[[spawn]]
+npc = 'junior_jim_shipyard'
+coords = '0_32_42_37_33'
+
+# Pandemonium: the port masters by the Port Sarim and Pandemonium ledger tables.
+[[spawn]]
+npc = 'port_task_master_port_sarim'
+coords = '0_47_49_21_58'
+
+[[spawn]]
+npc = 'port_task_master_pandemonium'
+coords = '0_47_46_54_41'
+
+# Crab Quest: the crab on Dognose Island's beach (shown for crab_main 5-40 and 63) and at
+# practice (45-60). Authored positions beside the strange bottle (3055,2639).
+[[spawn]]
+npc = 'crab_maincrab'
+coords = '0_47_41_48_14'
+
+[[spawn]]
+npc = 'crab_maincrab_practising'
+coords = '0_47_41_44_14'
+
+# In Search of the Myreque: npcs the world spawns lack. Authored placements (Ryan-test).
+# Vanstrom Klause in the Canifis pub
+[[spawn]]
+npc = 'route_vanstrom_klause_sitting'
+coords = '0_54_54_35_17'
+
+# the Stranger who replaces him
+[[spawn]]
+npc = 'canafis_stranger'
+coords = '0_54_54_37_16'
+
+# Veliaf in the Myreque hideout
+[[spawn]]
+npc = 'route_veliaf_hurtz_parent'
+coords = '0_54_153_49_44'
+
+# Ivan Strom
+[[spawn]]
+npc = 'route_ivan_strom_parent'
+coords = '0_54_153_51_48'
+
+# Harold Evans
+[[spawn]]
+npc = 'route_harold_evans'
+coords = '0_54_153_55_41'
+
+# Sani Piliu
+[[spawn]]
+npc = 'route_sani_piliu'
+coords = '0_54_153_46_41'
+
+# Family Crest: Chronozon by the Earth Obelisk, Edgeville Dungeon (Wiki LocLine 3087,9937; Ryan-test).
+[[spawn]]
+npc = 'chronozon'
+coords = '0_48_155_15_17'

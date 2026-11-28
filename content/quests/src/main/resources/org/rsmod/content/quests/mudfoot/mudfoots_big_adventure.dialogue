@@ -1,0 +1,531 @@
+# Generated from the OSRS Wiki page "Transcript:Mudfoot's Big Adventure" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Captain Harlan	Greetings, adventurer. Captain Harlan, leader of the Lumbridge Guard, at your service. Is there anything I can do for you?
+1	select	Select an option
+1	option	Do you need help with anything?
+2	line	Player	Do you need help with anything?
+2	line	Captain Harlan	Well, I do actually have a bounty available at the moment that you might be interested in. 1,000 coins to whoever can bring justice to some thieves that robbed the General Store.
+2	select	Start the Mudfoot's Big Adventure quest?
+2	option	Yes.
+3	line	Player	Sounds like a job for me. What do you know about these thieves?
+3	line	Captain Harlan	It happened in the night, so no one got a clear view, but a traveller passing through reckons he saw some of those goblins on the other side of the river playing with the stolen goods.
+3	line	Player	I guess I'll start over there then.
+3	line	Captain Harlan	Good luck, adventurer.
+3	action	end
+2	option	No.
+3	line	Player	Sorry, but I don't think I can help with that right now.
+3	line	Captain Harlan	Fair enough. Just let me know if you change your mind.
+3	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Harlan again before starting the quest
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	Do you need help with anything?
+2	action	above
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Harlan again after starting the quest
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	Could you remind me where those stolen goods were seen?
+2	line	Player	Could you remind me where those stolen goods were seen?
+2	line	Captain Harlan	A traveller passing through reckons he saw some of those goblins on the other side of the river playing with them.
+2	line	Player	I see. Sounds like that's where I should start then.
+2	line	Captain Harlan	Good luck, adventurer.
+2	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Shop keeper
+1	line	Shop keeper	Can I help you at all?
+1	select	Select an option
+1	option	Yes please. What are you selling?
+1	option	I'm looking into the recent robbery.
+2	line	Player	I'm looking into the recent robbery.
+2	line	Shop keeper	That's good to hear. Hopefully you can bring some quick justice to the thieves responsible!
+2	line	Player	I'm sure I will.
+2	line	Shop keeper	Very good. Now, can I help you at all?
+2	select	Select an option
+2	option	Yes please. What are you selling?
+2	option	No thanks.
+1	option	No thanks.
+0	section	Talking to Mudfoot
+1	line	Mudfoot	Die, human, die!
+1	action	Mudfoot hits the player for 0 damage.
+1	line	Player	Er... What are you doing?
+1	line	Mudfoot	Me killing you.
+1	action	Mudfoot hits the player for 0 damage.
+1	line	Player	You're not doing a very good job...
+1	line	Mudfoot	Wrong. You dead now.
+1	line	Player	Okay... And why are you killing me?
+1	line	Mudfoot	Me on quest.
+1	line	Player	A quest?
+1	line	Mudfoot	Yes. Me going to be great goblin adventurer. Other goblins will call me Mudfoot the... good at quests.
+1	line	Player	And what is this quest you're on?
+1	line	Mudfoot	Me kill the nasty humans. Nasty humans rob other humans, but then they dump the stuff they rob here. Now we get blamed.
+1	line	Player	Wait, so it wasn't you goblins who robbed the General Store?
+1	line	Mudfoot	No. We goblins innocent. We never rob, apart from all the other times when we did, but this not those times. This time we no do it.
+1	line	Mudfoot	Look, me have proof.
+1	box	Mudfoot shows you a collection of items from the General Store.
+1	line	Mudfoot	See. We keep things safe. No touch them at all, apart from when Damptoes try to eat chisel, but he no do that again now. Eating chisel make him throw up and die.
+1	line	Player	I see... Well, perhaps I can help you with your quest. I'm actually on a quest myself to find whoever robbed the General Store. Maybe we can work together?
+1	line	Mudfoot	Hmm... me not really need help. Me very good at quest...
+1	line	Mudfoot	But me generous also. Maybe me let human join as sidekick. Human can learn thing or two from Mudfoot.
+1	line	Player	That sounds... wonderful. Where do we begin?
+1	line	Mudfoot	Other goblins see three humans who dump robbed stuff. We find all humans and make them dead. First one was man with bow. Other goblins see him go back across river. We find him there.
+2	cond	If the player has a follower:
+3	line	Mudfoot	You pick up follower first. Me no follow you otherwise.
+2	action	end
+2	cond	If the player does not have a follower:
+2	line	Player	Alright, let's get going then.
+2	line	Mudfoot	Okay. Me behind you.
+2	action	end
+0	section	Talking to NPCs while Mudfoot is following
+0	section	Talking to Mudfoot
+1	select	Select an option
+1	option	Where to, Mudfoot?
+2	line	Player	Where to, Mudfoot?
+2	line	Mudfoot	Other goblins see man with bow go back across river from goblin house. We find him there.
+2	action	end
+1	option	I need to do something else.
+2	line	Player	I need to do something else.
+2	line	Mudfoot	Okay. Me meet you back outside goblin house when you done.
+2	action	end
+0	section	Talking to Mudfoot when straying too far
+1	line	Mudfoot	Me no want go this way. Me meet you back outside goblin house.
+1	action	end
+0	section	Talking to Bartender
+1	line	Bartender	No goblins in the pub please!
+1	line	Mudfoot	Okay, me go. Goblins have better super secret pub anyway.
+1	action	end
+0	section	Talking to Bob
+1	line	Bob	A goblin? Get out! Get out! Get out!
+1	line	Mudfoot	Stupid human have no manners. You need learn to say please.
+1	action	end
+0	section	Talking to Border Guard
+1	line	Border Guard	No goblins allowed! Be gone with you!
+1	line	Mudfoot	Rude. Me no want go through stupid gate anyway.
+1	action	end
+0	section	Talking to Cook
+1	line	Cook	A goblin? I don't think you should be in here...
+1	line	Mudfoot	Okay, but cook man just scared that me cook better than him.
+1	action	end
+0	section	Talking to Duke Horacio
+1	line	Duke Horacio	What's this goblin doing in the castle? Remove it at once!
+1	line	Mudfoot	Fine. Castle rubbish anyway.
+1	action	end
+0	section	Talking to Father Aereck
+1	line	Father Aereck	No goblins in the church please!
+1	line	Mudfoot	Church? Sorry, me thought this poo pile. That what it look like. Rubbish church for rubbish god.
+1	action	end
+0	section	Talking to Father Urhney
+1	line	Father Urhney	Go away! I'm meditating!
+1	line	Mudfoot	Meditating? Stupid humans with stupid word for thinking hard. Be more like goblin. We never think hard.
+1	action	end
+0	section	Talking to Feoras
+1	line	Feoras	Oh... you have a goblin with you... Er... What can I do for you?
+1	select	Select an option
+1	option	What do you have for sale?
+1	option	Could you give me some smithing advice?
+1	option	Could I have a hammer?
+1	option	Nothing, thanks.
+0	section	Talking to Fred the Farmer
+1	line	Fred the Farmer	Hey! Get out of here!
+1	line	Mudfoot	Fine. Your farm rubbish anyway. You so rubbish you not even got rid of weird not-sheep outside.
+1	action	end
+0	section	Talking to Hans
+1	line	Hans	Oh, a goblin... Hello there, goblin.
+1	line	Mudfoot	Hello. You walk a lot.
+1	line	Hans	Yes, I suppose I do.
+1	line	Mudfoot	That good. Walking a lot stop you being fat.
+1	line	Hans	Yes... I guess you're right.
+1	action	end
+0	section	Talking to Millie Miller
+1	line	Millie Miller	Oh, sorry, but we don't really want goblins in here...
+1	line	Mudfoot	Loss for you. Goblins way better than humans.
+1	action	end
+0	section	Talking to Shop keeper or assistant
+1	line	Shop keeper	Hey, it's one of the goblins that robbed us. Get out!
+1	line	Mudfoot	We no even rob you! You be nice, or you never get back things that we no rob.
+1	action	end
+0	section	Talking to Sigmund
+1	line	Sigmund	Get this monster away from me!
+1	line	Mudfoot	Ha! You scared of goblin? Stupid human is stupid wimp.
+1	action	end
+0	section	Talking to Captain Harlan
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	You seem to have a goblin with you. Is he one of them?
+2	line	Player	No. It seems things might not be as simple as we first thought. I'll let you know once I've learnt more.
+2	line	Captain Harlan	Very well...
+2	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Captain Harlan again
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	You still have that goblin with you. Have you worked out what's going on yet.
+2	line	Player	No, but I'll let you know once I've learnt more.
+2	line	Captain Harlan	Very well...
+2	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Captain Harlan again without Mudfoot
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	Ah, yes. How goes your search?
+2	line	Player	It seems things might not be as simple as we first thought. I'll let you know once I've learnt more.
+2	line	Captain Harlan	Very well. Good luck, adventurer.
+2	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Talking to Mudfoot again after he is sent away
+1	line	Player	Okay, Mudfoot... We need to find whoever robbed the General Store. Where do we begin?
+1	line	Mudfoot	Other goblins see three humans who dump robbed stuff. We find all humans and make them dead. First one was man with bow. Other goblins see him go back across river. We find him there.
+1	line	Player	Alright, let's get going then.
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Approaching the outlaw
+1	line	Mudfoot	Look, that him there!
+0	section	Talking to Mudfoot near the outlaw
+1	select	Select an option
+1	option	Where to, Mudfoot?
+2	line	Player	Where to, Mudfoot?
+2	line	Mudfoot	Look, that him right there. We kill now.
+2	action	end
+1	option	I need to do something else.
+2	action	above
+0	section	Attempting to confront the outlaw without Mudfoot
+1	line	Player	Hmm... I should go and get Mudfoot first.
+0	section	Confronting the outlaw
+1	line	Outlaw	Er... What is this?
+1	line	Mudfoot	Evil human! Mudfoot kill you now!
+1	line	Outlaw	...
+1	line	Outlaw	Okay... Good luck with that...
+1	line	Mudfoot	Me no understand. Why no work?
+1	line	Captain Harlan	What's happening here? What's all the commotion?
+1	cond	If the player didn't speak with Captain Harlan with Mudfoot before:
+2	line	Captain Harlan	A goblin? Is this the one responsible for the robbery, adventurer?
+2	line	Player	As it turns out, no. Mudfoot here is actually trying to deal with the thieves as well.
+2	action	continue
+1	cond	If the player spoke with Captain Harlan with Mudfoot before:
+2	line	Captain Harlan	Adventurer? You still have that goblin with you. What's going on?
+2	line	Player	Well, as it turns out, Mudfoot here is actually trying to deal with the thieves as well.
+2	action	continue
+1	line	Captain Harlan	He is?
+1	line	Mudfoot	Yes. Nasty humans try to frame innocent goblins. Me here to stop them. Me make them go dead.
+1	line	Captain Harlan	You killed them?
+1	line	Player	Not yet. Mudfoot seems to be having some... difficulties with that.
+1	line	Captain Harlan	I see... In that case, come. Let us discuss this further.
+1	line	Captain Harlan	Right, regarding these thieves... You said that your goblin friend wasn't able to kill them?
+1	line	Mudfoot	Me try hit them with big hammer, but it no work.
+1	line	Captain Harlan	I see. Did they have armour?
+1	line	Player	Yes, the armour of a ranger.
+1	line	Mudfoot	Yes, ranger. Other goblins tell me rangers die best when you hit them up close. That what me do. Go close and big smack.
+1	line	Captain Harlan	Ah... Tell me... Mudfoot... have you heard of something called the combat triangle?
+1	line	Mudfoot	Triangle? Like roof?
+1	line	Captain Harlan	Yes, sometimes...
+1	line	Captain Harlan	Anyway, when those goblin friends of yours told you that melee works best against a ranger, that's what they were referring to.
+1	line	Mudfoot	But why triangle?
+1	line	Captain Harlan	Well, melee often works best against an opponent using ranged, ranged typically works best when fighting an opponent using magic, and magic is normally the best option when fighting someone using melee.
+1	line	Mudfoot	But that what me do. Me do the close up hit. Why no work?
+1	line	Captain Harlan	The combat triangle isn't the only thing to consider when taking on a foe. The way that you're attacking is also important. Take melee for example. You have crushing attacks, slashing attacks and stabbing attacks.
+1	line	Mudfoot	Oh, me like to do big crush best. That why me have big hammer.
+1	line	Captain Harlan	Indeed, but the armour typically worn by a ranger is quite resilient to crushing attacks. You'll likely find you have better luck with a stabbing attack instead.
+1	line	Captain Harlan	Of course, for that, you'll need the right weapon. As you've already noted, something like a warhammer works well for crushing, but if your aim is to stab, a weapon like a dagger or shortsword will work best.
+1	line	Mudfoot	So me go get big poker, then nasty bow man die?
+1	line	Captain Harlan	Well, there are no guarantees of course, but it will definitely improve your odds.
+1	line	Mudfoot	Yes... Me know all this already of course. Me just pretended not to so trusty human sidekick can do learning. Me know human afraid to ask for help.
+1	line	Player	That's not-
+1	line	Mudfoot	It okay though. This why human sidekick and me in charge.
+1	line	Player	Hmm... Shall we go and find that outlaw and try again?
+1	line	Mudfoot	Yes! They go north towards that windmill. Me go grab poker and meet sidekick there. You make sure you grab poker as well.
+1	line	Captain Harlan	I can sort you out with a suitable weapon if needed, adventurer. Alternatively, the local blacksmith should be able to sell you one, or give you some advice on making your own.
+1	line	Mudfoot	Weapon good. No steal one though. Stealing bad, as Mudfoot always say, apart from when it okay, which isn't now.
+1	line	Player	Words to live by... Anything else we should grab before we do this?
+1	line	Captain Harlan	Given you're going into a fight, some food would be wise.
+1	line	Mudfoot	This true. Food make you feel better if you get hit, but me never get hit, so me never need food.
+1	line	Player	If you say so.
+1	line	Mudfoot	Okay, time to go now.
+1	box	Mudfoot departs.
+1	line	Captain Harlan	It seems you know what you need to do next. Good luck, adventurer.
+1	select	Select an option
+1	option	Could you run me through combat basics again?
+2	action	below
+1	option	Could I have a weapon for stabbing?
+2	action	below
+1	option	Thanks. I'd best get going.
+2	action	below
+0	section	Talking to Captain Harlan again
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	Ah, yes. Your goblin friend said you should meet him up near the windmill, north of here. Don't forget to take an appropriate weapon as well. You'll want something that can stab, like a dagger or a shortsword.
+2	line	Captain Harlan	If needed, I can sort you out with a suitable weapon. Alternatively, the blacksmith should be able to sell you one, or give you some advice on making your own. Oh, and you should probably take some food as well.
+3	select	Select an option
+3	option	Could you run me through combat basics again?
+4	line	Player	Could you run me through combat basics again?
+4	action	Continues in Transcript:Captain Harlan
+3	option	Could I have a weapon for stabbing?
+4	line	Player	Could I have a weapon for stabbing?
+4	cond	If the player has not received any items in the last 30 minutes:
+5	line	Captain Harlan	Of course!
+6	action	Continues in Transcript:Captain Harlan
+6	line	Player	Thanks. I'd best get going.
+6	line	Captain Harlan	Good luck, adventurer.
+6	action	end
+4	cond	If the player has already received any items in the last 30 minutes
+5	line	Captain Harlan	I'm afraid I've already given you some items recently. I only have so many available, so I can't go overboard. You'll have to come back in [number] minutes.
+5	action	end
+3	option	I'd best get going.
+4	line	Player	I'd best get going.
+4	line	Captain Harlan	Good luck, adventurer.
+4	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	About that cape you're wearing...
+1	option	I'd better be off.
+0	section	Confronting the ranging outlaw again
+1	line	Mudfoot	Look. Nasty human over there. Kill time now.
+1	cond	If the player is using a stab weapon:
+1	cond	If the player isn't using a stab weapon:
+2	line	Mudfoot	Stupid human no listen. You need to have weapon that do stab.
+1	cond	If the player is using slash style with a weapon that can also stab:
+2	line	Mudfoot	Stupid human no listen. You need to do stab, not slash.
+1	cond	If the player is using crush style with a weapon that can also stab:
+2	line	Mudfoot	Stupid human no listen. You need to do stab, not crush.
+1	cond	If the player is using ranged or magic:
+2	line	Mudfoot	Human being stupid. You meant to be doing close up stabby hits.
+0	section	After the battle
+1	line	Player	Right, that's the first one of those outlaws dealt with.
+1	line	Mudfoot	Yes, we do good work making them dead. Me do good work especially, but human not bad either.
+1	line	Player	Thanks... So, what's next?
+1	line	Mudfoot	Other goblins tell me about next thief. They say she carry big stick that make air go magic.
+1	line	Player	So she's a mage. That means we'll want to use ranged against her.
+1	line	Mudfoot	Yes, that why me bring best ranged weapon of all: rocks.
+1	line	Player	Rocks?
+1	line	Mudfoot	Me throw them hard. Harder me throw, more death happen.
+1	line	Player	I see... I think I'll stick to a bow.
+1	line	Mudfoot	Yes, bow okay as well, but not as good as rocks. Maybe you use bow that first thief had, or maybe guard man tell you how to get one.
+1	line	Player	And once we're ready, where do we find this mage?
+1	line	Mudfoot	Other goblins say they see her by ruined building, west of shop.
+1	line	Player	So directly south of here. In that case, shall we get going?
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Talking to Mudfoot again
+1	select	Select an option
+1	option	Where to, Mudfoot?
+2	line	Player	Where to, Mudfoot?
+2	line	Mudfoot	Other goblins say they see next thief by ruined building, west of shop. They say she use big stick that make air go magic.
+2	action	end
+1	option	I need to do something else.
+2	line	Player	I need to do something else.
+2	line	Mudfoot	Okay. Me meet you back outside windmill when you done.
+2	action	end
+0	section	Talking to Mudfoot when straying too far
+1	line	Mudfoot	Me no want go this way. Me meet you back outside windmill.
+1	action	end
+0	section	Talking to Mudfoot again after he is sent away
+1	line	Player	Ready to continue, Mudfoot?
+1	line	Mudfoot	Yes. Other goblins say they see next thief by ruined building, west of shop. They say she use big stick that make air go magic.
+1	line	Player	So directly south of here. In that case, shall we get going?
+1	line	Mudfoot	Okay. Me behind you.
+0	section	Talking to Captain Harlan
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	Ah, yes. How goes your hunt?
+2	line	Player	The first one has been dealt with. We're now moving on to the second. Apparently, this one is a mage.
+2	line	Captain Harlan	Ah, well you'll want to make sure you have a ranged weapon then.
+2	select	Select an option
+2	option	Could you run me through combat basics again?
+3	line	Player	Could you run me through combat basics again?
+3	action	above
+2	option	Do you have a spare ranged weapon?
+3	line	Player	Do you have a spare ranged weapon?
+4	cond	If the player has not received any items in the last 30 minutes:
+5	line	Captain Harlan	I do indeed!
+5	action	Continues in Transcript:Captain Harlan
+5	line	Player	Thanks. I'd best get going.
+5	line	Captain Harlan	Good luck, adventurer.
+5	action	end
+4	cond	If the player has already received any items in the last 30 minutes
+5	line	Captain Harlan	I'm afraid I've already given you some items recently. I only have so many available, so I can't go overboard. You'll have to come back in [number] minutes.
+5	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	More options...
+0	section	Approaching the mage outlaw
+0	section	Talking to Mudfoot near the mage outlaw
+1	select	Select an option
+1	option	Where to, Mudfoot?
+2	line	Player	Where to, Mudfoot?
+2	line	Mudfoot	Look! There she is! Time for kill!
+2	action	end
+1	option	I need to do something else.
+0	section	Attempting to confront the mage outlaw without Mudfoot
+1	line	Player	Hmm... I should talk to Mudfoot first.
+1	action	end
+0	section	Confronting the maging outlaw
+1	cond	If the player is using magic:
+1	cond	If the player is using ranged:
+1	cond	If the player is using melee:
+0	section	After the battle
+1	line	Mudfoot	Another nasty thief go dead!
+1	line	Player	She mentioned H.A.M.
+1	line	Mudfoot	Nasty human must be member of nasty group. Always calling goblins monsters. We no monsters... apart from maybe Dungface. He once kill chicken just because it lay egg on his foot.
+1	line	Player	I suppose this explains why they were trying to frame you.
+1	line	Mudfoot	Me impossible to frame. Rattrap try it once, but he fail. Me too wriggly.
+1	line	Player	What?
+1	line	Mudfoot	Humans silly anyway. They no consider powerful hero like Mudfoot! Me on quest to stop all the nasty humans.
+1	line	Player	Well, on that note, just one left to go. What do you know about the last thief?
+1	line	Mudfoot	Other goblins say this one great warrior, but not as great as me.
+1	line	Player	Meaning they're using melee, so we need to use magic.
+1	line	Mudfoot	Magic? Me try that once. They say to cast spell you wave hands, but me just wave big hammer instead. Work just as good.
+1	line	Player	Are you sure?
+1	line	Mudfoot	Yes. That why me stick with spear. This good for us though. Goblins say human do big religion.
+1	line	Player	Big religion?
+1	line	Mudfoot	He pray to his stupid god to help him. Means he protected. You do close up poke, he pray to stop close up poke. You do far away throw, he pray to stop far away throw.
+1	line	Mudfoot	But he stupid. He no have good god like goblins have Big High War God. His god have short attention span and only listen to one prayer at time. If me use spear and you use fancy magic, he can't stop both.
+1	line	Player	I see. Sounds like we have a plan then.
+1	line	Mudfoot	Yes, best plan. You get yourself magic stick. Take one from dead magic woman, or maybe guard man help. Then we kill last thief. Other goblins see him down in graveyard.
+1	line	Player	So south east of here. Shall we get going?
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Talking to Mudfoot again
+1	option	Where to, Mudfoot?
+2	line	Mudfoot	Other goblins say they see last thief in graveyard. He big warrior, but he also like to pray to stupid god.
+1	option	I need to do something else.
+2	line	Player	I need to do something else.
+2	line	Mudfoot	Okay. Me meet you back outside ruined building behind castle when you done.
+2	action	end
+0	section	Talking to Mudfoot when straying too far
+1	line	Mudfoot	Me no want go this way. Me meet you back outside ruined building behind castle.
+1	action	end
+0	section	Talking to Mudfoot again after he is sent away
+1	line	Player	Ready to continue, Mudfoot?
+1	line	Mudfoot	Yes. Other goblins see last thief in graveyard. He big warrior, but he also like to pray to stupid god.
+1	line	Player	So south east of here. Shall we get going?
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Talking to Captain Harlan
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	So, about those thieves...
+2	line	Player	So, about those thieves...
+2	line	Captain Harlan	Ah, yes. How goes your hunt?
+2	line	Player	The first two have been dealt with. We're now moving on to the last one. Apparently, this one is a warrior, but one that uses prayers to help protect himself in battle.
+2	line	Captain Harlan	Ah, well against a warrior, magic will work best, but you'll likely also need a second attack style to overcome his prayers.
+2	line	Player	Yes, Mudfoot's going to use melee while I use magic.
+2	line	Captain Harlan	Very good.
+2	select	Select an option
+2	option	Could you run me through combat basics again?
+3	action	above
+2	option	Do you have a spare magic weapon?
+3	line	Player	Do you have a spare magic weapon?
+4	cond	If the player has not received any items in the last 30 minutes:
+5	line	Captain Harlan	I do indeed!
+5	action	Continues in Transcript:Captain Harlan
+5	line	Player	Thanks. I'd best get going.
+5	line	Captain Harlan	Good luck, adventurer.
+5	action	end
+4	cond	If the player has already received any items in the last 30 minutes
+5	line	Captain Harlan	I'm afraid I've already given you some items recently. I only have so many available, so I can't go overboard. You'll have to come back in [number] minutes.
+5	action	end
+2	option	I'd best get going.
+3	line	Player	I'd best get going.
+3	line	Captain Harlan	Good luck, adventurer.
+3	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	Could you give me some combat advice?
+1	option	More options...
+0	section	Confronting the armoured outlaw
+0	section	Talking to Mudfoot near the armoured outlaw
+1	option	Where to, Mudfoot?
+2	line	Player	Where to, Mudfoot?
+2	line	Mudfoot	Look! He right there! We kill now!
+2	action	end
+1	option	I need to do something else.
+2	line	Player	I need to do something else.
+2	line	Mudfoot	Okay. Me meet you back outside ruined building behind castle when you done.
+2	action	end
+0	section	Attempting to confront the armoured outlaw without Mudfoot
+1	line	Player	Hmm... I should go and get Mudfoot first.
+1	action	end
+0	section	During the battle
+1	cond	If the player is using ranged:
+1	cond	If the player is using melee:
+0	section	After the battle
+1	line	Player	That's the last of those thieves dealt with!
+1	line	Mudfoot	Stupid humans should never have crossed Mudfoot the good at quests. Guard man will want to know about good job. He probably clap for us. Humans like clapping.
+1	line	Player	Shall we go tell him then?
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Talking to Mudfoot
+1	select	Select an option
+1	option	What now, Mudfoot?
+2	line	Player	What now, Mudfoot?
+2	line	Mudfoot	We should go tell guard man that nasty thieves have gone dead.
+2	action	end
+1	option	I need to do something else.
+2	line	Player	I need to do something else.
+2	line	Mudfoot	Okay. Me meet you back in graveyard when you done.
+2	action	end
+0	section	Talking to Mudfoot when straying too far
+1	line	Mudfoot	Me no want go this way. Me meet you back in graveyard.
+1	action	end
+0	section	Talking to Mudfoot again after he is sent away
+1	line	Player	Ready to continue, Mudfoot?
+1	line	Mudfoot	Yes. Guard man will want to know about good job.
+1	line	Player	Agreed. Shall we go tell him?
+1	line	Mudfoot	Okay. Me behind you.
+1	action	end
+0	section	Finishing up
+1	line	Captain Harlan	Hello again, adventurer, Is there anything I can do for you?
+1	select	Select an option
+1	option	All of those thieves have been dealt with.
+2	line	Player	All of those thieves have been dealt with.
+2	cond	If the player has Mudfoot with them:
+3	line	Captain Harlan	Excellent! Did you manage to work out why they did it?
+3	action	continue
+2	cond	If the player does not have Mudfoot with them:
+3	line	Captain Harlan	Excellent! Why don't you go and fetch your goblin friend, and then we can discuss your reward.
+3	action	end
+2	line	Player	It seems they were trying to stir up trouble and frame the goblins for it. At least one of them was a H.A.M. supporter, or maybe a full member.
+2	line	Captain Harlan	I see... It seems H.A.M. are starting to become more problematic. That is unfortunate...
+2	line	Captain Harlan	Anyway, that's one for me to worry about. Shall we get you sorted out with your reward?
+2	line	Mudfoot	Yes, reward good. Me also give back stolen items. Me take good care of them. Nothing missing at all. Me check two times.
+2	box	Mudfoot gives Captain Harlan the items from the General Store.
+2	line	Captain Harlan	Many thanks. Now, the bounty was for 1,000 coins, so that's 500 coins each.
+2	line	Mudfoot	500? But me the boss. Human just trusty sidekick. Me should get more money. Bigger money too. Boss always bigger than sidekick, so money be bigger to match.
+2	line	Player	Mudfoot...
+2	line	Mudfoot	Hmm... But me suppose you do good job. Me actually quite proud of sidekick. Not as proud as me am of me, but still close. One day you maybe be as good at quests as me.
+2	line	Mudfoot	Okay, just this once, sidekick can have full 500.
+2	box	Captain Harlan gives Mudfoot his half of the bounty.
+2	line	Mudfoot	Okay, me go now. Time to find new quest. Maybe me solve big mystery this time.
+2	line	Player	What kind of mystery?
+2	line	Mudfoot	Me no know. That why it mystery. Bye now.
+2	line	Player	See you around, Mudfoot.
+2	box	Mudfoot departs.
+2	cond	If the player has no inventory space:
+3	line	Captain Harlan	Right then... Let's get you sorted with your half of the bounty. Alongside the coins I promised, I also have some lamps here that I think you'll find useful. I just need you to make some space for them.
+3	line	Player	Okay, I'll be back shortly.
+3	action	end
+2	cond	If the player has inventory space:
+3	line	Captain Harlan	Right then... Thanks for all of your help with those thieves, adventurer. Here's your half of the bounty, along with some lamps that I think you'll find useful. All the best!
+3	action	end
+1	option	If you lead the Lumbridge Guard, where are the other guards?
+1	option	Could you give me some combat advice?
+1	option	More options...

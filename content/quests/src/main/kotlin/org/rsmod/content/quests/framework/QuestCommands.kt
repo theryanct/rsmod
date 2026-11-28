@@ -5,6 +5,7 @@ import org.rsmod.api.config.refs.modlevels
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.invtx.invAddOrDrop
 import org.rsmod.api.player.output.mes
+import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.statAdvance
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onCommand
@@ -22,7 +23,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - `::questcomplete <quest|all> [norewards]` sets each matched [BuiltQuests] quest to its end
  *   state, adds its quest points and (unless `norewards`) grants the rewards its [QuestDef.rewards]
  *   lines describe: "N <Skill> XP", "N Coins" and items named by their cache name ("2 Gold bars",
- *   "Gnome amulet"). Lines that aren't one of those (unlocks, kitten colours, ...) are listed.
+ *   "Gnome amulet"). Lines that aren't one of those (unlocks, kitten colours, ...) are listed. A
+ *   single quest then shows the real quest complete scroll and chat line; `all` only a summary.
  * - `::questreset <quest>` sets it back to unstarted (taking its quest points back if it was
  *   complete). Quest-specific server progress varps are left as they are.
  * - `::queststate <quest>` shows the current state.
@@ -34,8 +36,11 @@ import org.rsmod.plugin.scripts.ScriptContext
  */
 public class QuestCommands
 @Inject
-constructor(private val objTypes: ObjTypeList, private val objRepo: ObjRepository) :
-    PluginScript() {
+constructor(
+    private val objTypes: ObjTypeList,
+    private val objRepo: ObjRepository,
+    private val protectedAccess: ProtectedAccessLauncher,
+) : PluginScript() {
     override fun ScriptContext.startup() {
         command("questcomplete", "Complete quests: ::questcomplete name|all [norewards]") {
             complete(this)
@@ -71,6 +76,12 @@ constructor(private val objTypes: ObjTypeList, private val objRepo: ObjRepositor
             }
             done++
             if (rewards) grantRewards(player, quest)
+            if (quests.size == 1) {
+                // A single quest shows the real scroll and chat line; `all` stays a summary.
+                val shown = protectedAccess.launch(player) { showQuestComplete(quest) }
+                if (!shown) player.mes("Completed ${quest.name} (scroll skipped: you're busy).")
+                return
+            }
         }
         if (quests.isNotEmpty()) {
             player.mes("Completed $done quest(s)${if (rewards) "" else " (no rewards)"}.")

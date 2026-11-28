@@ -1,0 +1,300 @@
+# Generated from the OSRS Wiki page "Transcript:The Birds and the Wasps" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Farmer Bea	Alright, me luvver! Welcome to me farm!
+1	line	Player	Thank you! What exactly do you farm here?
+1	line	Farmer Bea	Well, this place is new i'nt it? Bea's farm be a bee farm, just as soon as we set 'er up. Don't s'pose yer could give us an 'and with that, could yer?
+1	select	Start The Birds and the Wasps quest?
+1	option	Yes.
+2	line	Player	Of course! What do you need?
+2	line	Farmer Bea	I'm wantin' to fill up me hives with bees. I ordered some from a dealer in Varrock. 'e was a bit o' a shady bloke, 'angin' around the east entrance o' the Grand Exchange, but 'e seemed to know 'is stuff.
+2	line	Farmer Bea	Would ya mind goin' an pickin' 'em up for me?
+2	line	Player	I'm sure I can help with that!
+2	line	Farmer Bea	Want a glass o' cider first? Just the thing to give ya a bit o' energy before yer go.
+2	select	Select an option
+2	option	I'd love one.
+3	line	Player	I'd love one.
+3	box	Bea hands you a glass of cider. You drink it right away and find yourself feeling refreshed.
+3	line	Farmer Bea	When yer've got me bees from the bloke in the Grand Exchange, just pop back.
+3	line	Player	Will do!
+3	action	end
+2	option	No thank you.
+3	line	Player	No thank you.
+3	line	Farmer Bea	Fair enough. When yer've got me bees from the bloke in the Grand Exchange, just pop back.
+3	line	Player	Will do!
+3	action	end
+1	option	No.
+2	line	Player	Actually, I think I might be allergic to bees.
+2	line	Farmer Bea	Well, tha's a shame ain't it?
+2	action	end
+0	section	Talking to Bea again
+1	line	Farmer Bea	Alright, me luvver! When yer've got me bees from the bloke in the Grand Exchange, just pop back.
+1	line	Player	Will do!
+1	action	end
+0	section	Getting the bees
+0	section	Talking to the bee dealer
+1	line	Bee dealer	Need any... bees?
+1	line	Player	I've come to collect Bea's bees.
+1	line	Bee dealer	Then you've come to the right place.
+1	box	Out of nowhere, the dealer produces a rather insecure looking box.
+1	line	Bee dealer	Before I hand you this box, I should tell you about proper insect handling.
+1	line	Bee dealer	If they get annoyed, give them a shake. If they don't, don't ever shake them.
+1	line	Player	That's it?
+1	line	Bee dealer	That's it.
+1	cond	If the player has a full inventory:
+2	line	Bee dealer	But you'll need to make some more space to carry them.
+2	action	end
+1	box	The dealer shoves the box into your hands.
+1	action	end
+0	section	Talking to the bee dealer again
+1	line	Bee dealer	Need any... bees?
+1	line	Player	Thanks, but I'm already at my stinging insect quota right now.
+1	action	end
+0	section	Talking to the bee dealer again after losing the box
+1	line	Bee dealer	Need any... bees?
+1	line	Player	I've lost Bea's bees.
+1	line	Bee dealer	Plenty more where they came from.
+1	cond	If the player has a full inventory:
+2	line	Bee dealer	But you'll need to make some more space to carry them.
+2	action	end
+1	box	The dealer shoves a box into your hands.
+1	action	end
+0	section	Shaking the box if the bees are not agitated
+1	box	The insects don't seem to appreciate being shook and sting you through the holes in the box.
+1	action	end
+0	section	When the bees get agitated
+1	box	You can sense the insects in the box getting agitated. Best give them a shake.
+0	section	If the bees are agitated too long
+1	box	The agitated insects lash out and sting you through the holes in the box.
+0	section	Shaking the box if the bees are agitated
+1	box	You give the box a firm shake and the insects seem to calm down.
+1	box	You give the box a firm shake and the insects seem to calm down.
+1	action	end
+0	section	Returning to Farmer Bea
+1	line	Player	Here are your bees!
+1	box	You hand over the box of disgruntled insects.
+1	line	Farmer Bea	Great! I'll get these lovelies in their new 'ome. You wanna watch 'em move in?
+1	line	Player	I'd be delighted!
+1	line	Farmer Bea	Right, lets get these lil' fuzzy bumblers moved in.
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	Farmer Bea places the insects in the beehive. A swarm of wasps appears.
+1	line	Player	Are they...?
+1	line	Farmer Bea	Wasps?!
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	Two more swarms of wasps appear.
+1	line	Player	They look mad!
+1	line	Farmer Bea	Every farmer fer 'emself!
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	You and Farmer Bea run away from the wasps.
+1	line	Farmer Bea	Wot kind o' bees turn inta wasps on transit!
+1	line	Player	I'm not sure they were ever bees.
+1	line	Farmer Bea	Well, I'd appreciate a bit more o ya help! Ain't got two bees t'rub togetha' and now we got wasps squattin' in me 'ives!
+1	line	Player	How can I get rid of wasps?
+1	line	Farmer Bea	Grab some kit outta me box 'ere. You'll need a net t'catch 'em, somethin' to protect yerself and a bit o' the ol' bug spray to calm 'em down.
+1	line	Farmer Bea	Catch 50 o' the blighters to thin 'em out, then bring me some proof ya done it, right?
+1	line	Player	Alright, I'll gear up and catch some wasps.
+1	action	end
+0	section	Talking to Farmer Bea again
+1	line	Farmer Bea	Ain't got two bees t'rub togetha' and now we got wasps squattin' in me 'ives!
+1	line	Player	Could you remind me how to get rid of them?
+1	line	Farmer Bea	Grab some kit outta me box 'ere. You'll need a net t'catch 'em, somethin' to protect yerself and a bit o' the ol' bug spray to calm 'em down.
+1	line	Farmer Bea	Catch 50 o' the blighters to thin 'em out, then bring me some proof ya done it, right?
+1	line	Player	Alright, I'll gear up and catch some wasps.
+1	action	end
+0	section	Gearing up
+0	section	Searching the crate
+1	select	What would you like to take?
+1	option	Insect net.
+2	box	You take an insect net from the crate.
+2	action	initial
+1	option	Bee hunter's hat.
+2	box	You take a bee hunter's hat from the crate.
+2	action	initial
+1	option	Insect repellent.
+2	box	You take some insect repellent from the crate.
+2	action	initial
+1	option	Take everything.
+2	box	You take a full set of equipment from the crate.
+2	action	end
+1	option	Take nothing.
+2	action	end
+0	section	Searching the crate with a full inventory
+1	box	You don't have space to take anything from the crate.
+1	action	end
+0	section	Hunting the wasps
+1	cond	Without wielding an insect net:
+2	box	You need to be holding an insect net to catch these wasps.
+2	action	end
+1	cond	Without wearing a bee hunter's hat:
+2	box	The wasps sting you in the face. Some sort of protective hat is probably in order.
+2	action	end
+1	cond	With a full inventory:
+2	box	You need more inventory space to catch these wasps.
+2	action	end
+1	cond	After some time hunting a swarm:
+2	box	The wasps become enraged with you!
+2	action	end
+2	cond	Attempting to spray the bees without insect repellant:
+3	box	You need to have some insect repellent to spray these wasps.
+3	action	end
+2	cond	Using insect repellent on an enraged swarm:
+3	box	You calm the wasps down a bit by spraying them with insect repellent.
+3	action	end
+1	cond	After catching 50 wasps:
+2	line	Player	Looks like I've caught enough. I'd best let Bea know.
+2	action	end
+0	section	Returning to Farmer Bea
+1	line	Player	I've caught 50 wasps. Here, I have some of their stings as proof.
+1	box	You show the wasp stings to Bea.
+1	line	Farmer Bea	Reckon the wasps ain't gonna be 'appy 'bout that. They're still all o'er the shop tho'.
+1	line	Farmer Bea	Well, I s'pose we'd best...
+1	line	Farmer Bea	... Did ye hear tha'?
+1	line	Player	We should probably go and find out what's going on...
+1	line	Farmer Bea	See anythin'?
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	A swarm of wasps flees from a honey buzzard.
+1	line	Player	Yeah, I spotted something.
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	A swarm of wasps flees from several honey buzzards.
+1	line	Farmer Bea	Well, this won' do at all.
+1	line	Farmer Bea	Birds really wasn't wot I was 'opin' to farm.
+1	line	Player	It's quite a diverse ecosystem you are building up here!
+1	line	Farmer Bea	If we do get any bees, these birds'll wipe 'em out.
+1	line	Player	In that case, how can I deal with them?
+1	cond	If the player has no inventory space:
+2	line	Farmer Bea	You'll need a bit more space to 'elp. Got some bird snares for ya here.
+2	action	end
+1	cond	If the player has no bird snares in their inventory:
+2	box	Bea hands you some bird snares.
+2	action	continue
+1	cond	If the player has one bird snare in their inventory:
+2	box	Bea hands you a bird snare.
+2	action	continue
+1	line	Farmer Bea	If ye set yer bird snares up around the birds, there's a good chance they'll land an' get caught in 'em.
+1	line	Farmer Bea	Catch us five birds at least, and bring 50 o' their feathers to prove it.
+1	line	Player	Alright, back in a bit!
+1	action	end
+0	section	Talking to Farmer Bea again
+1	line	Player	Could you remind me how to deal with those birds?
+1	cond	If the player has no inventory space:
+2	line	Farmer Bea	You'll need a bit more space to 'elp. Got some bird snares for ya here.
+2	action	end
+1	cond	If the player has no bird snares in their inventory:
+2	box	Bea hands you some bird snares.
+2	action	continue
+1	cond	If the player has one bird snare in their inventory:
+2	box	Bea hands you a bird snare.
+2	action	continue
+1	line	Farmer Bea	If ye set yer bird snares up around the birds, there's a good chance they'll land an' get caught in 'em.
+1	line	Farmer Bea	Catch us five birds at least, and bring 50 o' their feathers to prove it.
+1	line	Player	Alright, back in a bit!
+1	action	end
+0	section	Hunting the birds
+0	section	Catching a honey buzzard
+1	box	You've caught a honey buzzard
+0	section	After obtaining 50 brown feathers
+1	line	Player	Looks like I've caught enough. I'd best let Bea know.
+1	action	end
+0	section	Attempting to make wasp darts before being asked to
+1	box	You are not sure how or why you would combine these two items.
+1	action	end
+0	section	Returning to Farmer Bea
+1	line	Player	I've culled some birds and collected 50 of their feathers.
+1	line	Farmer Bea	Good job! While yer were doin' that, I went an' gave that bee dealer a piece o' me mind. Got us some replacement bees, I did. Got 'nother spot picked out for 'em just up there.
+1	line	Player	Let's go get them set up then.
+1	box	You head over to the new hives, excited to finally introduce some bees to their new homes...
+1	box	However, some time later...
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	A swarm of killer wasps flees from a black honey buzzard.
+1	line	Player	So you say these killer wasps are much worse than the normal ones?
+# authored: the Wiki {{qact}} cutscene beat, shown as a box (cutscene not played)
+1	box	A black honey buzzard flees from several swarms of killer wasps.
+1	line	Farmer Bea	Yeah, I reckon they are...
+1	line	Player	This bee dealer is leaving a lot to be desired.
+1	line	Farmer Bea	I'm not gonna' get me 'oney am I?
+1	line	Player	Doesn't look like it...
+1	line	Farmer Bea	Do me another solid will ya? See if y'can make anythin' useful by puttin' those bird feathers 'n' stings you gathered togetha. Might be we can still achieve somethin' 'ere.
+1	line	Player	Can't hurt to try.
+1	action	end
+0	section	Speaking to Farmer Bea again
+1	line	Player	What did you want me to do again?
+1	line	Farmer Bea	See if y'can make anythin' useful by puttin' those bird feathers 'n' stings you gathered togetha.
+1	line	Player	Can't hurt to try.
+1	action	end
+0	section	Crafting the darts
+1	box	You finish making [quantity] darts.
+0	section	Inspecting the darts
+1	box	Some darts made using wasp stings. They don't look like the sort of thing you'd want to use yourself, but maybe Bea will have a use for them.
+1	action	end
+0	section	After crafting some wasp darts, but less than 50
+1	line	Player	I've made some darts using the stings and feathers I gathered. I reckon they could be useful for something, but I'm going to make some more first.
+1	line	Farmer Bea	Well, at least we're makin' the best o' a bad job.
+1	action	end
+0	section	After crafting 50 wasp darts
+1	line	Player	I've made 50 darts using the stings and feathers I gathered. I can't see myself ever having a use for them, but maybe someone else will want them.
+1	line	Farmer Bea	Can probably sell 'em to the local guards. They ain't too picky with the gear they use. Feel free to give me any ya make an' I can pay yer back in useful supplies.
+1	line	Player	Sounds good to me.
+1	box	You glance around at the mess of insects and birds on the plot of land.
+1	line	Player	It's certainly a unique farm we've created here.
+1	line	Farmer Bea	It's a shame I won't get me 'oney, but at least we ain't come away with nothin'. Yer help's been wonderful, it has!
+1	line	Player	Happy to be a part of it!
+0	section	Post-quest
+0	section	Talking to Bea
+1	line	Farmer Bea	Alright, me luvver!
+1	select	Select an option
+1	option	How's the farm going, Bea?
+2	line	Player	How's the farm going Bea?
+2	line	Farmer Bea	It's alright. Not surrounded by 'oney like what I intended, but I'm getting by.
+2	line	Player	Good to hear! I suppose you won't mind if I hunt some more of your creatures?
+2	line	Farmer Bea	Not at all. Take as many as yer like! Remember, if yer make more darts, I can swap 'em for stuff.
+2	action	other
+1	option	Do you have anything for sale?
+1	option	Can I trade in some darts?
+1	option	Do you have any hunting tips for me?
+1	option	I'd best be off.
+
+# Appended: generated from the OSRS Wiki page "Transcript:Farmer Bea" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Farmer Bea	Alright, me luvver!
+1	select	Select an option
+1	option	How's the farm going, Bea?
+2	line	Player	How's the farm going Bea?
+2	line	Farmer Bea	It's alright. Not surrounded by 'oney like what I intended, but I'm getting by.
+2	line	Player	Good to hear! I suppose you won't mind if I hunt some more of your creatures?
+2	line	Farmer Bea	Not at all. Take as many as yer like! Remember, if yer make more darts, I can swap 'em for stuff.
+2	action	other
+1	option	Do you have anything for sale?
+2	line	Player	Do you have anything for sale?
+2	line	Farmer Bea	I've got a stock o' hunting gear, given me farm seems t'revolve 'round it.
+2	action	
+1	option	Can I trade in some darts?
+2	line	Player	Can I trade in some darts?
+2	line	Farmer Bea	Yer can, but I'm 'fraid yer not got enough darts. For one supply bag it'll either be 35 wasp darts or 20 killer wasp darts.
+2	action	other
+1	option	Do you have any hunting tips for me?
+2	line	Player	Do you have any hunting tips for me?
+2	line	Farmer Bea	As it 'appens, the bloke who sold me the 'untin' stock fer me shop wouldn' stop talkin', so I picked a bit up. Got some local info, or further out. Whatcha wantin'?
+2	select	Select an option
+2	option	Could you tell me about hunting locally?
+3	line	Player	Could you tell me about hunting locally?
+3	line	Farmer Bea	Well, if yer want ye can hunt some more o' the birds an' wasps here. If ya don't fancy that, I 'eard lots o' funny coloured birds 'ave popped up recently in places not too far from 'ere.
+3	line	Farmer Bea	Some north o' Al Kharid, some at Musa Point and a few north o' Falador. Apparently there's some butterflies at Falador as well.
+3	line	Farmer Bea	Birds I reckon yer know 'ow to catch. An' for butterflies, just catch 'em like wasps, ya do. Need jars for 'em though.
+3	action	other
+2	option	Could you tell me about hunting further afield?
+3	line	Player	Could you tell me about hunting further afield?
+3	line	Farmer Bea	When ye have a bit o' experience, yer best bet is the Hunter Guild in Varlamore, I reckon. Else, there are a few big 'untin' grounds to try...
+3	line	Farmer Bea	Piscatoris 'as a load o' woodland creatures to trap. If ya don't mind the cold, north of Rellekka there's plenty o' animals in the ice 'n' snow. Finally, the Feldip Hills 'as a lot of jungle critters for 'untin'.
+3	action	other
+2	option	Actually, let's talk about something else.
+3	line	Player	Let's talk about something else.
+3	action	initial
+1	option	I'd best be off.
+2	line	Player	I'd best be off.
+2	action	end
+
+# authored (not Wiki): the Wiki transcript only has the "not enough darts" reply (its dart trade-in
+# dialogue is marked incomplete); these are Bea's replies when she can pay out, or can't for space.
+0	section	Trading in darts
+1	line	Farmer Bea	Lovely jubbly! That's {bags} o' me supply bags fer yer darts. Bring us more any time, me luvver.
+0	section	Trading in darts with no space
+1	line	Farmer Bea	Yer'll need a bit more space in yer pack fer me supply bags, me luvver.
