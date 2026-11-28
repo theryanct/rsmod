@@ -56,6 +56,7 @@ import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_O
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
 import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
+import org.rsmod.content.quests.trollstronghold.TrollStronghold.Companion.TROLL_STRONGHOLD
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
@@ -121,6 +122,7 @@ public object BuiltQuests {
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
             TRIBAL_TOTEM,
+            TROLL_STRONGHOLD,
             VAMPYRE_SLAYER,
             WATERFALL_QUEST,
             WITCHS_HOUSE,

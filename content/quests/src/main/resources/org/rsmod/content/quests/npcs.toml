@@ -1177,3 +1177,22 @@ coords = '3_41_50_25_19'
 [[spawn]]
 npc = 'tol_homonculus_multi2'
 coords = '0_47_68_30_28'
+
+# Troll Stronghold: Dad in the troll arena (Wiki 2911,3612).
+[[spawn]]
+npc = 'troll_champion'
+coords = '0_45_56_31_28'
+
+# Troll Stronghold: the sleeping jail guards by the cells, Twig (cell key 1) and Berry (cell key 2).
+[[spawn]]
+npc = 'troll_prison_guard1'
+coords = '0_44_157_16_31'
+
+[[spawn]]
+npc = 'troll_prison_guard2'
+coords = '0_44_157_16_35'
+
+# Troll Stronghold: Eadgar in his cell (Godric's cell spawn comes from the world fill).
+[[spawn]]
+npc = 'troll_eadgar'
+coords = '0_44_157_11_34'
