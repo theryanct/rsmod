@@ -646,6 +646,7 @@
 2	line	Player	Yes.
 2	cond	If the player doesn't have either:
 3	line	Pong	You didn't bring the instruments.
+3	action	end
 2	cond	With cowbells only:
 3	line	Pong	You didn't bring the bongos.
 3	action	end
