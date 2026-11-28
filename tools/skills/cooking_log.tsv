@@ -1,0 +1,181 @@
+skip-ambiguous	Barley	[]
+skip-special	Chopped onion
+skip-special	Damiana water
+skip-ambiguous	Edible seaweed	[]
+skip-special	Fat snail
+skip-no-symbol	Fresh monkfish	Fresh monkfish (cooked)
+skip-special	Giant crab meat
+skip-ambiguous	Giant seaweed	[]
+skip-special	Half made batta (cheese+tom)
+skip-special	Half made batta (fruit)
+skip-special	Half made batta (toad)
+skip-special	Half made batta (vegetable)
+skip-special	Half made batta (worm)
+skip-special	Half made bowl (chocolate bomb)
+skip-special	Half made bowl (tangled toad's legs)
+skip-special	Half made bowl (veg ball)
+skip-special	Half made bowl (worm hole)
+skip-special	Half made crunchy (chocchip)
+skip-special	Half made crunchy (spicy)
+skip-special	Half made crunchy (toad)
+skip-special	Half made crunchy (worm)
+skip-special	Lean snail
+skip-ambiguous	Mixed dragon (garnished)	[]
+skip-special	Mixed saturday (poured)
+skip-special	Nettle-water
+skip-special	Pitta dough
+skip-special	Raw barb-tailed kebbit
+skip-special	Raw batta
+skip-special	Raw beef (undead)
+skip-no-chart	Raw blue crab meat	Blue crab meat
+skip-no-chart	Raw bluefin	Bluefin
+skip-special	Raw brawk fish (3)
+skip-special	Raw bream
+skip-special	Raw chicken (undead)
+skip-special	Raw crunchies
+skip-special	Raw dashing kebbit
+skip-no-chart	Raw giant krill	Giant krill
+skip-special	Raw gnomebowl
+skip-special	Raw graahk
+skip-special	Raw guide cake
+skip-no-chart	Raw haddock	Haddock
+skip-no-chart	Raw halibut	Halibut
+skip-special	Raw impaler meat
+skip-no-chart	Raw jumbo squid	Jumbo squid
+skip-special	Raw karambwan
+skip-special	Raw karambwanji
+skip-special	Raw kyatt
+skip-special	Raw kyren fish (6)
+skip-special	Raw larupia
+skip-no-chart	Raw lava eel	Lava eel
+skip-special	Raw leckish fish (2)
+skip-no-chart	Raw marlin	Marlin
+skip-special	Raw moonlight antelope
+skip-special	Raw moss lizard
+skip-special	Raw mud pie
+skip-special	Raw mycil fish (4)
+skip-special	Raw mystery meat
+skip-ambiguous	Raw oomlie	[]
+skip-special	Raw paddlefish
+skip-special	Raw pyre fox
+skip-special	Raw pysk fish (0)
+skip-no-chart	Raw rainbow crab meat	Rainbow crab meat
+skip-special	Raw red crab meat
+skip-special	Raw roqed fish (5)
+skip-no-chart	Raw stuffed snake	Snake over-cooked
+skip-special	Raw sunlight antelope
+skip-special	Raw suphi fish (1)
+skip-special	Raw swamp paste
+skip-no-chart	Raw swordtip squid	Swordtip squid
+skip-no-symbol	Raw t-bone steak	Cooked t-bone steak
+skip-special	Raw ugthanki meat
+skip-special	Raw wild kebbit
+skip-no-chart	Raw yellowfin	Yellowfin
+skip-ambiguous	Seaweed	[]
+skip-special	Skewered chompy
+skip-special	Sliced mushrooms
+skip-special	Spider on shaft (raw)
+skip-special	Spider on stick
+skip-special	Spider on stick (raw)
+skip-ambiguous	Swamp weed	[]
+skip-special	Thin snail
+skip-special	Uncooked easter bun
+skip-special	Unfinished batta (cheese+tom)
+skip-combine	Grapes + Jug of water -> Jug of wine
+skip-combine	Zamorak's grapes + Jug of water -> Wine of Zamorak
+skip-no-symbol	Oak plank + Asgarnian ale -> Asgarnian ale (barrel)
+skip-no-symbol	Oak plank + Greenman's ale -> Greenman's ale (barrel)
+skip-combine	Fruit blast + Ashes -> Dirty blast
+skip-combine	Nettles + Bowl of water -> Nettle-water
+skip-combine	Kebab mix + Pitta bread -> Ugthanki kebab
+skip-combine	Unfinished crunchy (toad) + Equa leaves -> Toad crunchies
+skip-combine	Mixed dragon (shaker) + Cocktail glass -> Mixed dragon (poured)
+skip-combine	Mixed saturday (shaker) + Cocktail glass -> Mixed saturday (poured)
+skip-combine	Unfinished bowl (worm hole) + Equa leaves -> Worm hole
+skip-combine	Unfinished bowl (veg ball) + Equa leaves -> Veg ball
+skip-combine	Unfinished crunchy (chocchip) + Chocolate dust -> Chocchip crunchies
+skip-combine	Nettle tea + Empty cup -> Cup of tea (nettle)
+skip-no-symbol	Teapot#Clay + Tea leaves -> Teapot with leaves#Clay
+skip-no-symbol	Teapot#Porcelain + Tea leaves -> Teapot with leaves#Porcelain
+skip-no-symbol	Teapot#Trimmed + Tea leaves -> Teapot with leaves#Trimmed
+skip-combine	Fried mushrooms + Fried onions -> Mushroom & onion
+skip-combine	Onion & tomato + Ugthanki meat -> Kebab mix
+skip-combine	Ugthanki & onion + Tomato -> Kebab mix
+skip-combine	Ugthanki & tomato + Onion -> Kebab mix
+skip-combine	Pot of flour + Bucket of water -> Pitta dough
+skip-combine	Pot of flour + Bowl of water -> Pitta dough
+skip-combine	Pot of flour + Jug of water -> Pitta dough
+skip-combine	Egg and tomato + Potato with butter -> Egg potato
+skip-combine	Scrambled egg + Tomato -> Egg and tomato
+skip-combine	Chilli con carne + Potato with butter -> Chilli potato
+skip-combine	Spicy sauce + Cooked meat -> Chilli con carne
+skip-combine	Spicy sauce + Minced meat -> Chilli con carne
+skip-combine	Chopped garlic + Gnome spice -> Spicy sauce
+skip-combine	Clay + Part mud pie (water) -> Raw mud pie
+skip-combine	Bucket of water + Part mud pie (compost) -> Part mud pie (water)
+skip-combine	Pie shell + Compost -> Part mud pie (compost)
+skip-no-symbol	Part admiral pie (tuna) + Potato -> Raw admiral pie
+skip-no-symbol	Potato + Part fish pie (cod) -> Raw fish pie
+skip-no-symbol	Cabbage + Part garden pie (onion) -> Raw garden pie
+skip-no-symbol	Cooking apple + Part summer pie (watermelon) -> Raw summer pie
+skip-combine	Raw rabbit + Part wild pie (raw chompy) -> Raw wild pie
+skip-no-symbol	Salmon + Pie shell -> Part admiral pie (salmon)
+skip-no-symbol	Part admiral pie (salmon) + Tuna -> Part admiral pie (tuna)
+skip-no-symbol	Pie shell + Trout -> Part fish pie (trout)
+skip-no-symbol	Cod + Part fish pie (trout) -> Part fish pie (cod)
+skip-no-symbol	Pie shell + Tomato -> Part garden pie (tomato)
+skip-no-symbol	Onion + Part garden pie (tomato) -> Part garden pie (onion)
+skip-no-symbol	Strawberry + Pie shell -> Part summer pie (strawberry)
+skip-no-symbol	Watermelon + Part summer pie (strawberry) -> Part summer pie (watermelon)
+skip-no-symbol	Raw bear meat + Pie shell -> Part wild pie (raw bear meat)
+skip-combine	Raw chompy + Part wild pie (raw bear meat) -> Part wild pie (raw chompy)
+skip-no-symbol	Sweetcorn (bowl) + Tuna -> Tuna and corn
+skip-combine	Sweetcorn (bowl) + Chopped tuna -> Tuna and corn
+skip-combine	Cooked sweetcorn + Chopped tuna -> Tuna and corn
+skip-combine	Grapes + Jug of water -> Unfermented wine
+skip-no-symbol	Cooked meat + Bowl of water -> Incomplete stew#Meat
+skip-no-symbol	Cooked chicken + Bowl of water -> Incomplete stew#Meat
+skip-no-symbol	Potato + Bowl of water -> Incomplete stew#Potato
+skip-no-symbol	Cooked meat + Incomplete stew#Potato -> Uncooked stew
+skip-no-symbol	Cooked chicken + Incomplete stew#Potato -> Uncooked stew
+skip-no-symbol	Potato + Incomplete stew#Meat -> Uncooked stew
+skip-no-symbol	Servery cooked meat + Bowl of water -> Servery incomplete stew#Meat
+skip-no-symbol	Servery potato + Bowl of water -> Servery incomplete stew#Potato
+skip-no-symbol	Servery incomplete stew#Potato + Servery cooked meat -> Servery uncooked stew
+skip-no-symbol	Servery incomplete stew#Meat + Servery potato -> Servery uncooked stew
+skip-combine	Zamorak's grapes + Jug of water -> Zamorak's unfermented wine
+skip-combine	Half baked crunchy + Toad's legs -> Half made crunchy (toad)
+skip-combine	Half baked crunchy + Equa leaves -> Half made crunchy (spicy)
+skip-combine	Half baked crunchy + Chocolate bar -> Half made crunchy (chocchip)
+skip-no-symbol	Teapot with leaves#Clay + Hot kettle -> Pot of tea (clay)
+skip-no-symbol	Teapot with leaves#Porcelain + Hot kettle -> Pot of tea (porcelain)
+skip-no-symbol	Teapot with leaves#Trimmed + Hot kettle -> Pot of tea (trimmed)
+skip-combine	Kebab mix + Pitta bread -> Ugthanki kebab (bad)
+skip-combine	Damiana leaves + Bowl of water -> Damiana water
+skip-combine	Damiana tea + Empty cup -> Cup of tea (damiana)
+skip-junk-symbol	heat	hundred_pirate_raw_fishcake	hundred_pirate_fishcake	hundred_pirate_burned_fishcake	31	100.0	0	57	377	-	-	-	-
+skip-junk-symbol	heat	raw_rabbit	cooked_rabbit	spit_burned_rabbit_meat	1	30.0	1	128	512	-	-	-	-
+skip-junk-symbol	heat	hunting_raw_fish_special	hunting_fish_special	hunting_raw_fish_special_burnt	35	110.0	1	56	370	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_beast_meat	spit_roasted_beast_meat	spit_burned_beast_meat	21	82.5	1	180	255	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_bird_meat	spit_roasted_bird_meat	spit_burned_bird_meat	11	62.5	1	155	255	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_rabbit_meat	spit_roasted_rabbit_meat	spit_burned_rabbit_meat	16	72.5	1	160	255	-	-	-	-
+skip-junk-symbol	heat	wrapped_oomlie	cooked_oomlie	burnt_oomlie	50	30.0	1	112	476	-	-	-	-
+skip-junk-symbol	combine	woodplank	nails	poh_flatpack_beerbarrel1	5	0.0	-	-
+skip-junk-symbol	combine	vodka	lime	aluft_shaker_sgg	20	30.0	-	-
+skip-junk-symbol	combine	osman_squirk_winter	beer_glass	osman_squirk_j_winter	1	5.0	-	-
+skip-junk-symbol	combine	osman_squirk_autumn	beer_glass	osman_squirk_j_autumn	1	5.0	-	-
+skip-junk-symbol	combine	osman_squirk_summer	beer_glass	osman_squirk_j_summer	1	5.0	-	-
+skip-junk-symbol	combine	osman_squirk_spring	beer_glass	osman_squirk_j_spring	1	5.0	-	-
+skip-junk-symbol	combine	raw_oomlie	palm_leaf	wrapped_oomlie	50	10.0	-	-
+skip-junk-symbol	combine	hosidius_servery_pizza_base	hosidius_servery_tomato	hosidius_servery_incomplete_pizza	65	0.0	-	-
+skip-junk-symbol	combine	hosidius_servery_plain_pizza	hosidius_servery_pineapple_chunks	hosidius_servery_pineapple_pizza	65	5.0	-	-
+skip-junk-symbol	combine	hosidius_servery_pot_flour	bowl_water	hosidius_servery_pizza_base	65	0.0	-	bowl_empty
+skip-junk-symbol	combine	hosidius_servery_pie_shell	hosidius_servery_cooked_meat	hosidius_servery_uncooked_meat_pie	20	0.0	-	-
+skip-junk-symbol	combine	dragon_harpoon	smouldering_stone	infernal_harpoon	85	350.0	-	-
+skip-junk-symbol	combine	bread	cooked_meat	bim_steak_sandwich	1	0.0	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves	forestry_ration	35	51.1	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves_oak	forestry_ration	35	51.1	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves_willow	forestry_ration	35	51.1	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves_maple	forestry_ration	35	51.1	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves_yew	forestry_ration	35	51.1	-	-
+skip-junk-symbol	combine	cooked_chicken	leaves_magic	forestry_ration	35	51.1	-	-
