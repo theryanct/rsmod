@@ -1,5 +1,6 @@
 package org.rsmod.content.quests.taibwowannaitrio
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.dialogue.Dialogue
@@ -9,6 +10,7 @@ import org.rsmod.api.player.stat.cookingLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onOpNpcU
@@ -37,6 +39,7 @@ import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.interact.InteractionOp
 import org.rsmod.game.loc.BoundLocInfo
+import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.npc.NpcTypeList
@@ -82,6 +85,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Tiadeche / Tamayu's shop npcs (generic-shops) stand in the houses before the quest is done;
  *   before completion their Talk-to just says they're busy. The tribal statue stays unbound.
  */
+private val logger = InlineLogger()
+
 class TaiBwoWannaiTrio
 @Inject
 constructor(
@@ -109,8 +114,9 @@ constructor(
         bindNpcItems()
         bindCrafting()
         bindHeat()
-        onLocOpLabel(locTypes, TbwtLocs.rock_slide, "Climb") { climbRocks(it) }
-        onLocOpLabel(locTypes, TbwtLocs.bamboo_door, "Open") { openHut(it) }
+        // Guarded (bounced at boot, batch 61: another script already binds zqclimbingrocks op1).
+        bindLocLabel(TbwtLocs.rock_slide, "Climb") { climbRocks(it) }
+        bindLocLabel(TbwtLocs.bamboo_door, "Open") { openHut(it) }
         OpInterceptors.register(KarambwanSpots())
         CookingOverrides.register { player, raw ->
             if (raw.id == TbwtObjs.raw_karambwan.id && !player.flag(REWARD_COOKING)) {
@@ -121,6 +127,21 @@ constructor(
         }
     }
 
+
+    /** [onLocOpLabel] unless another script already handles that op (then theirs wins). */
+    private fun ScriptContext.bindLocLabel(
+        loc: LocType,
+        label: String,
+        action: suspend ProtectedAccess.(BoundLocInfo) -> Unit,
+    ) {
+        val op = locTypes[loc].op.indexOfFirst { it.equals(label, ignoreCase = true) } + 1
+        if (op > 0 && isLocOpBound(loc, op)) {
+            val name = locTypes[loc].internalName
+            logger.warn { "Tai Bwo Wannai Trio: $name op$op is already bound; skipped." }
+            return
+        }
+        onLocOpLabel(locTypes, loc, label, action)
+    }
     private fun ScriptContext.bindNpcItems() {
         onOpNpcU(TbwtNpcs.lubufu, TbwtObjs.raw_karambwanji) { talkLubufu(it.npc) }
         for (obj in listOf(TbwtObjs.raw_karambwan, TbwtObjs.cooked_karambwan, TbwtObjs.poison_karambwan)) {
