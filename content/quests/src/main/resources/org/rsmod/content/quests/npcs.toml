@@ -858,3 +858,20 @@ coords = '0_48_52_40_24'
 [[spawn]]
 npc = 'nasty_tree'
 coords = '0_48_52_14_15'
+
+# Port Phasmatys: ghost disciples at the Ectofuntus (ecto-tokens), ghost guards at the barriers.
+[[spawn]]
+npc = 'ahoy_disciple'
+coords = '0_57_55_12_0'
+
+[[spawn]]
+npc = 'ahoy_disciple'
+coords = '0_57_55_8_2'
+
+[[spawn]]
+npc = 'ahoy_ghost_guard'
+coords = '0_57_54_12_53'
+
+[[spawn]]
+npc = 'ahoy_ghost_guard'
+coords = '0_57_54_3_30'

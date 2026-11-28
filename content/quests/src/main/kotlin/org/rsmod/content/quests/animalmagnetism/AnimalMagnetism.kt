@@ -49,10 +49,10 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   1,000 Fletching, 1,000 Slayer and 2,500 Woodcutting xp, Ava's attractor (accumulator at 50
  *   Ranged), 1 QP.
  *
- * Big systems not here: the Ectofuntus (Malcolm also takes 100 coins per chicken when you have no
- * ecto-tokens), the research-notes translation puzzle (reading the notes translates them), Ava's
- * device shop, and the facing-north check in the mine. Turael's Talk-to is the Slayer module's, so
- * the blessed-axe swap starts from using a mithril axe or holy symbol on him.
+ * Malcolm sells chickens for ecto-tokens (Ectofuntus, Prayer module); Ava's devices are her
+ * generic shop. Not here: the research-notes translation puzzle (reading the notes translates
+ * them) and the facing-north check in the mine. Turael's Talk-to is the Slayer module's, so the
+ * blessed-axe swap starts from using a mithril axe or holy symbol on him.
  */
 class AnimalMagnetism
 @Inject
@@ -295,18 +295,11 @@ constructor(
             )
         runQuestSection(npc, dialogue, "Speaking to Malcolm after catching the chicken", hooks)
         if (want == 0) return
-        val tokens = invTotal(inv, AmObjs.ecto_token)
-        when {
-            tokens >= want * TOKEN_PRICE -> invDel(inv, AmObjs.ecto_token, want * TOKEN_PRICE)
-            carries(AmObjs.coins, want * COIN_PRICE) -> {
-                invDel(inv, AmObjs.coins, want * COIN_PRICE)
-                mes("Malcolm takes ${want * COIN_PRICE} coins in place of ecto-tokens.")
-            }
-            else -> {
-                mes("You need ${want * TOKEN_PRICE} ecto-tokens (or ${want * COIN_PRICE} coins).")
-                return
-            }
+        if (invTotal(inv, AmObjs.ecto_token) < want * TOKEN_PRICE) {
+            mes("You need ${want * TOKEN_PRICE} ecto-tokens. The Ectofuntus earns them.")
+            return
         }
+        invDel(inv, AmObjs.ecto_token, want * TOKEN_PRICE)
         invAddOrDrop(objRepo, AmObjs.chicken, want)
     }
 
@@ -495,7 +488,6 @@ constructor(
 
         private const val ASKED_TURAEL = 1
         private const val TOKEN_PRICE = 10
-        private const val COIN_PRICE = 100
         private const val IRON_BARS = 5
         private const val MAGNET_XP = 50.0
         private const val ACCUMULATOR_RANGED = 50
@@ -587,7 +579,6 @@ internal object AmObjs : ObjReferences() {
     val ghostspeak_e = find("amulet_of_ghostspeak_enchanted")
     val crone_amulet = find("amulet_of_humanspeak")
     val ecto_token = find("ectotoken")
-    val coins = find("coins")
     val iron_bar = find("iron_bar")
     val selected_iron = find("anma_iron_bar")
     val magnet = find("anma_magnet")
