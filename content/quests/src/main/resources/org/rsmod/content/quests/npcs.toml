@@ -1351,3 +1351,66 @@ coords = '0_52_149_50_22'
 [[spawn]]
 npc = 'elid_genie'
 coords = '0_52_145_43_38'
+
+# Children of the Sun: Noah and Alina (east side of Varrock Square), Sergeant Tobyn (north side),
+# the roof cell's Tobyn and Prince Itzla (palace roof), and the ten square/east-road guards
+# (multinpcs on vmq1_guard_N; 1, 3, 4 and 8 are the disguised bandits at the Wiki's spots).
+[[spawn]]
+npc = 'vmq1_alina'
+coords = '0_50_53_25_34'
+
+[[spawn]]
+npc = 'vmq1_noah'
+coords = '0_50_53_24_36'
+
+[[spawn]]
+npc = 'vmq1_guard_sergeant'
+coords = '0_50_53_11_45'
+
+[[spawn]]
+npc = 'vmq1_guard_sergeant_roof'
+coords = '2_50_54_9_14'
+
+[[spawn]]
+npc = 'vmq1_itzla'
+coords = '2_50_54_9_16'
+
+[[spawn]]
+npc = 'vmq1_guard_1'
+coords = '0_50_53_5_34'
+
+[[spawn]]
+npc = 'vmq1_guard_2'
+coords = '0_50_53_12_36'
+
+[[spawn]]
+npc = 'vmq1_guard_3'
+coords = '0_50_53_45_37'
+
+[[spawn]]
+npc = 'vmq1_guard_4'
+coords = '0_50_53_33_33'
+
+[[spawn]]
+npc = 'vmq1_guard_5'
+coords = '0_50_53_20_28'
+
+[[spawn]]
+npc = 'vmq1_guard_6'
+coords = '0_50_53_28_39'
+
+[[spawn]]
+npc = 'vmq1_guard_7'
+coords = '0_50_53_38_36'
+
+[[spawn]]
+npc = 'vmq1_guard_8'
+coords = '0_50_53_18_40'
+
+[[spawn]]
+npc = 'vmq1_guard_9'
+coords = '0_50_53_14_28'
+
+[[spawn]]
+npc = 'vmq1_guard_10'
+coords = '0_50_53_26_23'
