@@ -5,7 +5,7 @@ Args: slayer.json npc.sym out.tsv enricher_npcs.toml log.tsv spawns.toml [spawns
 
 Writes:
   master   <key> <npc name> <spawn coord x,z,plane> <combat req> <points> <milestones n:pts;...> <slayer req>
-  task     <master> <category> <min> <max> <weight> <slayer req> <combat req>
+  task     <master> <category> <min> <max> <weight> <slayer req> <combat req> <ext min|-> <ext max|->
   category <category> <display name> <npc names comma>
   xp       <npc name> <slayer xp per kill>
 Tasks whose category has no spawned npc are skipped (logged). Quest requirements are ignored (no
@@ -87,8 +87,11 @@ for master, (npc, coord, cmb, pts, ms) in MASTERS.items():
         if not live:
             log.append((master, display, "no spawned npc in this category")); continue
         lo, hi = int(amount[0]), int(amount[-1])
+        # Extended amount (Slayer reward "longer" unlocks) is the next cell when it is a range.
+        ext = re.fullmatch(r"\s*(\d+)\s*[-–]\s*(\d+)\s*", cells[2]) if len(cells) > 2 else None
+        ext_lo, ext_hi = (ext.group(1), ext.group(2)) if ext else ("-", "-")
         tasks.append((master, key, lo, hi, float(weight.group(1)), int(sreq.group(1)) if sreq else 1,
-                      int(creq.group(1)) if creq else 1))
+                      int(creq.group(1)) if creq else 1, ext_lo, ext_hi))
         used_categories[key] = (display, npcs)
 
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
