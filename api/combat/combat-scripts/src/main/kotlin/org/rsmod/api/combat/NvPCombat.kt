@@ -13,10 +13,12 @@ import org.rsmod.api.combat.player.aggressiveNpc
 import org.rsmod.api.combat.player.lastCombat
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.npc.access.StandardNpcAccess
+import org.rsmod.api.npc.events.NpcAttackHitEvent
 import org.rsmod.api.npc.isInCombat
 import org.rsmod.api.player.hit.queueHit
 import org.rsmod.api.player.isValidTarget
 import org.rsmod.api.player.output.soundSynth
+import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.hit.HitType
 import org.rsmod.game.type.obj.ObjTypeList
@@ -27,6 +29,7 @@ constructor(
     private val accuracy: AccuracyFormulae,
     private val maxHits: MaxHitFormulae,
     private val objTypes: ObjTypeList,
+    private val eventBus: EventBus,
 ) {
     fun attack(access: StandardNpcAccess, target: Player, attack: CombatAttack.NpcMelee) {
         access.attackMelee(target, attack)
@@ -77,6 +80,7 @@ constructor(
 
         target.queueHit(npc, 1, HitType.Melee, damage)
         target.combatPlayDefendAnim(objTypes)
+        eventBus.publish(NpcAttackHitEvent(npc, target, HitType.Melee, damage))
     }
 
     private fun canAttack(target: Player): Boolean {
