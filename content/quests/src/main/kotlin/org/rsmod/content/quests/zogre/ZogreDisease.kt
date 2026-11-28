@@ -63,11 +63,11 @@ class ZogreDisease @Inject constructor(private val random: GameRandom) : PluginS
             player.clearSoftTimer(DiseaseTimers.tick)
             return
         }
-        val stat = DRAINED[random.of(0, DRAINED.size - 1)]
-        val level = player.stat(stat)
+        val skill = DRAINED[random.of(0, DRAINED.size - 1)]
+        val level = player.stat(skill)
         val amount = random.of(1, MAX_DRAIN)
         if (level > 1) {
-            player.statSub(stat, amount.coerceAtMost(level - 1), 0)
+            player.statSub(skill, amount.coerceAtMost(level - 1), 0)
         } else {
             player.queueHit(delay = 1, type = HitType.Typeless, damage = amount, hitmark = hitmark_groups.disease)
         }
