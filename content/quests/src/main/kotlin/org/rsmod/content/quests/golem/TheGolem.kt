@@ -304,7 +304,7 @@ constructor(
 
     private suspend fun ProtectedAccess.grabFeather() {
         if (carries(GolemObjs.feather) || carries(GolemObjs.pen)) {
-            runQuestSection(null, dialogue, "Taking the phoenix feather", SimpleQuestHooks(defaultCondition = { it.contains("already") }))
+            runQuestSection(null, dialogue, "Taking the phoenix feather", SimpleQuestHooks(defaultCondition = { it.contains("already") }), speakers = mapOf("Desert Phoenix" to GolemNpcs.phoenix))
             return
         }
         val success = statRandom(stats.thieving, THIEVING_LOW, THIEVING_HIGH, 0)

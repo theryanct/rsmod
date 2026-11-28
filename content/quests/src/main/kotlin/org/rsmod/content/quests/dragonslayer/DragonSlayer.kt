@@ -444,7 +444,7 @@ constructor(
 
     private suspend fun ProtectedAccess.board() {
         if (!flag(SHIP_BOUGHT)) {
-            runQuestSection(null, dialogue, "Attempting to board the ship before purchasing it")
+            runQuestSection(null, dialogue, "Attempting to board the ship before purchasing it", speakers = mapOf("Klarense" to Ds1Npcs.klarense))
             return
         }
         telejump(DECK)
