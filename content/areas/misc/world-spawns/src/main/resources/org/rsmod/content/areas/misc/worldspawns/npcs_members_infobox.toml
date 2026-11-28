@@ -9080,10 +9080,10 @@ coords = '0_49_44_22_21'
 npc = 'tempoross_timallus'
 coords = '0_49_44_23_28'
 
-# Retired sailor
+# Retired sailor (moved 2 tiles east of Ishmael: the Wiki gives both the same hut centre)
 [[spawn]]
 npc = 'tempoross_hut_character'
-coords = '0_49_44_24_32'
+coords = '0_49_44_26_32'
 
 # Sailor (Ruins of Unkah)
 [[spawn]]
