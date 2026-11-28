@@ -16,6 +16,7 @@ import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.npc.NpcType
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.varbit.VarBitType
+import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -174,9 +175,11 @@ constructor(private val npcTypes: NpcTypeList, private val locRepo: LocRepositor
         if (state == FADED) setBit(SoaVarBits.quest, AT_SUMMIT)
     }
 
-    /** A Firemaking fire on or next to Bernard's tile. */
-    private fun fireBeside(npc: Npc): Boolean {
-        val at = npc.coords
+    /** A Firemaking fire near Bernard (he may have wandered a step) or near the player beside him. */
+    private fun ProtectedAccess.fireBeside(npc: Npc): Boolean =
+        fireNear(npc.coords) || fireNear(player.coords)
+
+    private fun fireNear(at: CoordGrid): Boolean {
         for (dx in -FIRE_RANGE..FIRE_RANGE) {
             for (dz in -FIRE_RANGE..FIRE_RANGE) {
                 if (locRepo.findExact(at.translate(dx, dz), SoaLocs.fire) != null) return true
@@ -192,7 +195,7 @@ constructor(private val npcTypes: NpcTypeList, private val locRepo: LocRepositor
         const val ON_MOUNTAIN = 4
         const val FADED = 5
         const val AT_SUMMIT = 6
-        const val FIRE_RANGE = 2
+        const val FIRE_RANGE = 3
     }
 }
 
