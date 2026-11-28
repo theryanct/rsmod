@@ -1655,3 +1655,67 @@ coords = '0_47_81_25_23'
 [[spawn]]
 npc = 'soulbane_brana'
 coords = '1_46_81_28_30'
+
+# The Birds and the Wasps: Farmer Bea by her equipment crate (Wiki 3316,3376), the bee dealer by
+# the Grand Exchange's east entrance (Wiki 3187,3493), and Bea's farm creatures (multinpc bases:
+# shown by the quest's varbits). Wasps and honey buzzards by the southern hive (3316,3365), killer
+# wasps and black honey buzzards by the new hives (3301,3386); exact tiles authored.
+[[spawn]]
+npc = 'baw_bea_multi'
+coords = '0_51_52_52_49'
+
+[[spawn]]
+npc = 'baw_bee_dealer_multi'
+coords = '0_49_54_51_37'
+
+[[spawn]]
+npc = 'baw_wasp_1_multi'
+coords = '0_51_52_50_34'
+
+[[spawn]]
+npc = 'baw_wasp_2_multi'
+coords = '0_51_52_53_35'
+
+[[spawn]]
+npc = 'baw_wasp_3_multi'
+coords = '0_51_52_56_38'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_48_34'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_54_33'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_51_31'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_56_41'
+
+[[spawn]]
+npc = 'baw_killer_wasp_1_multi'
+coords = '0_51_52_35_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_2_multi'
+coords = '0_51_52_39_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_3_multi'
+coords = '0_51_52_38_60'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_52_62'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_40_54'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_34_58'

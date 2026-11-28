@@ -8,6 +8,7 @@ import org.rsmod.content.quests.bearyoursoul.BearYourSoul.Companion.BEAR_YOUR_SO
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
+import org.rsmod.content.quests.birdsandwasps.BirdsAndWasps.Companion.BIRDS_AND_WASPS
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.childrenofthesun.ChildrenOfTheSun.Companion.CHILDREN_OF_THE_SUN
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
@@ -99,6 +100,7 @@ public object BuiltQuests {
             BELOW_ICE_MOUNTAIN,
             BIOHAZARD,
             BIG_CHOMPY,
+            BIRDS_AND_WASPS,
             BLACK_KNIGHTS_FORTRESS,
             CHILDREN_OF_THE_SUN,
             CLOCK_TOWER,
