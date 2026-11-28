@@ -2,6 +2,7 @@ package org.rsmod.content.travel.ships
 
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.game.map.collision.isZoneValid
 import org.rsmod.map.CoordGrid
 import org.rsmod.routefinder.collision.CollisionFlagMap
 import org.rsmod.routefinder.flag.CollisionFlag
@@ -10,6 +11,8 @@ import org.rsmod.routefinder.flag.CollisionFlag
  * Shared "pay, board, fade, arrive" ship travel used by charter ships (and, as world moves them
  * over, the Karamja/Corsair boats and other fixed-route ships).
  *
+ * @param collision used to check [dest] before anything is charged (an unloaded zone or blocked
+ *   tile fails the trip with no coins taken).
  * @param fare coins taken before sailing (0 = free).
  * @param message the boarding message ("You pay 400 coins and board the ship.").
  * @param fade black fade out/in around the jump (the OSRS charter/boat look); `false` keeps the
@@ -21,10 +24,16 @@ public suspend fun ProtectedAccess.sailTo(
     dest: CoordGrid,
     fare: Int,
     message: String,
+    collision: CollisionFlagMap,
     fade: Boolean = true,
     canSail: (ProtectedAccess.() -> Boolean)? = null,
 ): Boolean {
     if (canSail != null && !canSail()) {
+        return false
+    }
+    // Validate the arrival before taking any coins.
+    if (!collision.isZoneValid(dest) || collision[dest.x, dest.z, dest.level] and BLOCKED != 0) {
+        mes("The ship can't sail there right now.")
         return false
     }
     if (fare > 0) {
