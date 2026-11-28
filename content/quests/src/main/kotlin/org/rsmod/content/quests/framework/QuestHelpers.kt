@@ -1,7 +1,13 @@
 package org.rsmod.content.quests.framework
 
 import org.rsmod.api.player.dialogue.Dialogue
+import org.rsmod.api.player.events.interact.HeldObjEvents
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.script.onOpHeld1
+import org.rsmod.api.script.onOpHeld2
+import org.rsmod.api.script.onOpHeld3
+import org.rsmod.api.script.onOpHeld4
+import org.rsmod.api.script.onOpHeld5
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -19,6 +25,7 @@ import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcType
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjType
+import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.ScriptContext
 
 /** Binds [npc]'s op labelled [label] (e.g. "Talk-to"); returns `false` if it has no such op. */
@@ -53,6 +60,37 @@ public fun ScriptContext.onLocOpLabel(
         4 -> onOpLoc4(loc) { action(it.loc) }
         5 -> onOpLoc5(loc) { action(it.loc) }
         else -> return false
+    }
+    return true
+}
+
+/**
+ * Binds held obj [obj]'s inventory op labelled [label] (e.g. "Dig", "Read") unless another script
+ * already handles it; returns `false` if the op is missing or taken.
+ */
+public fun ScriptContext.onHeldOpLabel(
+    objTypes: ObjTypeList,
+    obj: ObjType,
+    label: String,
+    action: suspend ProtectedAccess.() -> Unit,
+): Boolean {
+    val op = objTypes[obj].iop.indexOfFirst { it.equals(label, ignoreCase = true) } + 1
+    val event =
+        when (op) {
+            1 -> HeldObjEvents.Op1::class.java
+            2 -> HeldObjEvents.Op2::class.java
+            3 -> HeldObjEvents.Op3::class.java
+            4 -> HeldObjEvents.Op4::class.java
+            5 -> HeldObjEvents.Op5::class.java
+            else -> return false
+        }
+    if (eventBus.contains(event, obj.id)) return false
+    when (op) {
+        1 -> onOpHeld1(obj) { action() }
+        2 -> onOpHeld2(obj) { action() }
+        3 -> onOpHeld3(obj) { action() }
+        4 -> onOpHeld4(obj) { action() }
+        else -> onOpHeld5(obj) { action() }
     }
     return true
 }
