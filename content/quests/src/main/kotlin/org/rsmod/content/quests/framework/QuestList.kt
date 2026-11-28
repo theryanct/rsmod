@@ -20,6 +20,7 @@ import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWOR
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
+import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
@@ -53,6 +54,7 @@ public object BuiltQuests {
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             PIRATES_TREASURE,
+            PLAGUE_CITY,
             PRINCE_ALI_RESCUE,
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,

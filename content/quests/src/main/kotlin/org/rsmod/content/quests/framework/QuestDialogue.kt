@@ -258,7 +258,8 @@ public class QuestDialogueRunner(
         val other = speakers[node.speaker]
         when {
             node.speaker.equals("Player", ignoreCase = true) -> chatPlayer(neutral, text)
-            other != null -> chatNpcSpecific(node.speaker, other, neutral, text)
+            other != null ->
+                chatNpcSpecific(node.speaker.replace(SPEAKER_NUMBER, ""), other, neutral, text)
             else -> chatNpc(neutral, text)
         }
     }
@@ -271,6 +272,7 @@ private val GENDER_PAIRS =
         "sir" to "madam",
         "man" to "woman",
         "man" to "lady",
+        "a man" to "a lady",
         "strongman" to "strongwoman",
         "sir" to "miss",
         "boy" to "girl",
@@ -285,5 +287,8 @@ private val GENDER_PAIRS =
         "lord" to "lady",
     )
 
+/* "Mourner (2)": a second speaker of the same kind, shown without the number. */
+private val SPEAKER_NUMBER = Regex(""" \(\d+\)$""")
+
 /* "[lad/lass]", also "[lad/lass/kid]" (the third, neutral option is dropped). */
-private val GENDERED = Regex("""\[([A-Za-z']+)/([A-Za-z']+)(?:/[A-Za-z']+)?]""")
+private val GENDERED = Regex("""\[([A-Za-z' ]+)/([A-Za-z' ]+)(?:/[A-Za-z' ]+)?]""")

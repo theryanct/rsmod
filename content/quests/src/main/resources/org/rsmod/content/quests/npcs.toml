@@ -464,3 +464,62 @@ coords = '0_41_53_13_51'
 [[spawn]]
 npc = '0_41_53_compofishspot'
 coords = '0_41_53_3_43'
+
+# Plague City.
+# Edmond's house (Edmond moves to the sewer once you dig).
+[[spawn]]
+npc = 'edmond_top'
+coords = '0_40_52_8_4'
+
+[[spawn]]
+npc = 'edmond_bottom'
+coords = '0_39_152_21_29'
+
+[[spawn]]
+npc = 'alrena'
+coords = '0_40_52_13_5'
+
+[[spawn]]
+npc = 'elena2'
+coords = '0_40_52_10_5'
+
+[[spawn]]
+npc = 'mourner1'
+coords = '0_40_52_5_2'
+
+# West Ardougne.
+[[spawn]]
+npc = 'jethick'
+coords = '0_39_51_44_41'
+
+[[spawn]]
+npc = 'ted_rehnison'
+coords = '0_39_52_35_0'
+
+[[spawn]]
+npc = 'martha_rehnison'
+coords = '0_39_52_37_1'
+
+[[spawn]]
+npc = 'milli'
+coords = '1_39_52_36_0'
+
+[[spawn]]
+npc = 'clerk'
+coords = '0_39_51_30_52'
+
+[[spawn]]
+npc = 'bravek'
+coords = '0_39_51_38_51'
+
+[[spawn]]
+npc = 'headmourner'
+coords = '0_39_51_43_40'
+
+[[spawn]]
+npc = 'mourner_elena_guard'
+coords = '0_39_51_40_10'
+
+[[spawn]]
+npc = 'elenap'
+coords = '0_39_151_45_7'
