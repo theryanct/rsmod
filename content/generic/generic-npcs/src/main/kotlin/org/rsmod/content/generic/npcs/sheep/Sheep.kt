@@ -15,6 +15,7 @@ import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.repo.world.WorldRepository
 import org.rsmod.api.script.onAiTimer
 import org.rsmod.api.script.onNpcQueue
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.game.entity.Npc
@@ -32,6 +33,9 @@ constructor(
         onAiTimer(content.sheep) { npc.sheepTimer() }
         onOpNpc1(content.sheep) { shearSheep(it.npc) }
         onOpNpcU(content.sheep, objs.shears) { shearSheep(it.npc) }
+        // Wiki "Sheep (penguins)": trying to shear the disguised penguins makes them walk away.
+        if (!isNpcOpBound(sheep_npcs.fake_sheep, 1)) onOpNpc1(sheep_npcs.fake_sheep) { shearFake(it.npc) }
+        onOpNpcU(sheep_npcs.fake_sheep, objs.shears) { shearFake(it.npc) }
 
         onAiTimer(content.sheared_sheep) { npc.sheepTimer() }
         onNpcQueue(content.sheared_sheep, queues.generic_queue1) { queueTransmogReset() }
@@ -67,6 +71,13 @@ constructor(
         mes("You get some wool.")
         invAddOrDrop(objRepo, objs.wool)
         npc.queue(queues.generic_queue1, cycles = 1)
+    }
+
+    private fun ProtectedAccess.shearFake(npc: Npc) {
+        // Authored message (the Wiki only says it walks away and gives no wool).
+        mes("The sheep trots away from you before you can shear it.")
+        val dest = npc.coords.translate(random.of(-3..3), random.of(-3..3))
+        npc.walk(dest)
     }
 
     private fun StandardNpcAccess.queueTransmogReset() {
