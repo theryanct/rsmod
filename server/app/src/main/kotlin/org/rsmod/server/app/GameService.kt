@@ -16,6 +16,7 @@ class GameService @Inject constructor(private val process: GameProcess) : Schedu
     private val logger = InlineLogger()
 
     private var excessCycleNanos = 0L
+    private var lastSlowWarnNanos = 0L
     private val shutdownSignaled = AtomicBoolean(false)
 
     override suspend fun run() {
@@ -38,6 +39,12 @@ class GameService @Inject constructor(private val process: GameProcess) : Schedu
         if (overdue) {
             logger.error {
                 "Cycle took too long (elapsed=${elapsedMillis}ms, sleep=${sleepTime}ms)"
+            }
+        } else if (elapsedMillis > SLOW_CYCLE_WARN_MS) {
+            val now = System.nanoTime()
+            if (now - lastSlowWarnNanos >= SLOW_WARN_INTERVAL_NANOS) {
+                lastSlowWarnNanos = now
+                logger.warn { "Slow cycle (elapsed=${elapsedMillis}ms, sleep=${sleepTime}ms)" }
             }
         } else {
             logger.trace { "Cycle took ${elapsedMillis}ms, sleep=${sleepTime}ms" }
@@ -83,3 +90,7 @@ class GameService @Inject constructor(private val process: GameProcess) : Schedu
         private const val GAME_THREAD_NAME = "game"
     }
 }
+
+/** Cycles slower than this (but under the tick) are logged at WARN, at most once per 10 s. */
+private const val SLOW_CYCLE_WARN_MS = 50L
+private val SLOW_WARN_INTERVAL_NANOS = TimeUnit.SECONDS.toNanos(10)
