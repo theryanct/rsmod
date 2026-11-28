@@ -205,24 +205,31 @@ constructor(
         invAdd(inv, obj(next))
         anim(HerbloreSeqs.drink)
         mes("You drink some of your ${drink.name}.")
-        when (val effect = drink.effect) {
-            is Effect.Boost ->
-                for (name in effect.stats) statBoost(stat(name), effect.constant, effect.percent)
-            is Effect.Restore ->
-                for (name in effect.stats) statHeal(stat(name), effect.constant, effect.percent)
-            is Effect.Energy -> {
-                val gain = constants.run_max_energy * effect.percent / 100
-                player.runEnergy = min(constants.run_max_energy, player.runEnergy + gain)
-            }
-            is Effect.Cure -> player.curePoison(effect.immunityTicks)
-            is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
-        }
+        applyEffect(drink.effect)
         if (left > 0) {
             mes("You have $left dose${if (left > 1) "s" else ""} of potion left.")
         } else {
             mes("You have finished your potion.")
         }
         delay(1)
+    }
+
+    private fun ProtectedAccess.applyEffect(effect: Effect) {
+        when (effect) {
+            is Effect.Boost ->
+                for (name in effect.stats) statBoost(stat(name), effect.constant, effect.percent)
+            is Effect.Restore ->
+                for (name in effect.stats) statHeal(stat(name), effect.constant, effect.percent)
+            is Effect.Drain ->
+                for (name in effect.stats) statDrain(stat(name), effect.constant, effect.percent)
+            is Effect.Energy -> {
+                val gain = constants.run_max_energy * effect.percent / 100
+                player.runEnergy = min(constants.run_max_energy, player.runEnergy + gain)
+            }
+            is Effect.Cure -> player.curePoison(effect.immunityTicks)
+            is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
+            is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
+        }
     }
 
     private fun stat(name: String): StatType =
@@ -233,6 +240,7 @@ constructor(
             "ranged" -> stats.ranged
             "magic" -> stats.magic
             "prayer" -> stats.prayer
+            "hitpoints" -> stats.hitpoints
             "agility" -> stats.agility
             "fishing" -> stats.fishing
             else -> error("Unknown potion stat: $name")

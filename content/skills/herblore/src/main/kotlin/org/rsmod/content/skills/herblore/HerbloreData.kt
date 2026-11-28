@@ -47,7 +47,13 @@ internal object HerbloreData {
             Unfinished("toadflax", "toadflaxvial", 34),
             Unfinished("irit_leaf", "iritvial", 45),
             Unfinished("avantoe", "avantoevial", 50),
+            // PR2 (Wiki: unfinished potion level = its first potion's level).
+            Unfinished("kwuarm", "kwuarmvial", 55),
+            Unfinished("snapdragon", "snapdragonvial", 63),
+            Unfinished("cadantine", "cadantinevial", 66),
             Unfinished("lantadyme", "lantadymevial", 69),
+            Unfinished("dwarf_weed", "dwarfweedvial", 72),
+            Unfinished("torstol", "torstolvial", 78),
         )
 
     val potions: List<Potion> =
@@ -93,6 +99,10 @@ internal object HerbloreData {
             ),
             Potion("Fishing potion", "avantoevial", "snape_grass", "3dosefisherspotion", 50, 112.5),
             Potion("Super energy", "avantoevial", "mortmyremushroom", "3dose2energy", 52, 117.5),
+            // PR2 (OSRS Wiki Herblore). Antifire (69) comes from world's quest branch.
+            Potion("Super strength", "kwuarmvial", "limpwurt_root", "3dose2strength", 55, 125.0),
+            Potion("Super restore", "snapdragonvial", "red_spiders_eggs", "3dose2restore", 63, 142.5),
+            Potion("Super defence", "cadantinevial", "white_berries", "3dose2defense", 66, 150.0),
             Potion(
                 "Antifire potion",
                 "lantadymevial",
@@ -101,6 +111,10 @@ internal object HerbloreData {
                 69,
                 157.5,
             ),
+            Potion("Ranging potion", "dwarfweedvial", "wine_of_zamorak", "3doserangerspotion", 72, 162.5),
+            Potion("Magic potion", "lantadymevial", "cactus_potato", "3dose1magic", 76, 172.5),
+            Potion("Zamorak brew", "torstolvial", "jangerberries", "3dosepotionofzamorak", 78, 175.0),
+            Potion("Saradomin brew", "toadflaxvial", "crushed_bird_nest", "3dosepotionofsaradomin", 81, 180.0),
         )
 
     /** Pestle and mortar on [source] grinds it into [product]. */
@@ -136,6 +150,12 @@ internal object HerbloreData {
          * varbits `antifire_potion` / `super_antifire_potion` (see Antifire.kt).
          */
         data class Antifire(val superPotion: Boolean, val minutes: Int) : Effect()
+
+        /** Lower each stat by `constant + percent%` (brews). */
+        data class Drain(val stats: List<String>, val constant: Int, val percent: Int) : Effect()
+
+        /** Several effects at once (brews). */
+        data class Multi(val effects: List<Effect>) : Effect()
     }
 
     class Drink(val name: String, val doses: List<String>, val effect: Effect)
@@ -176,6 +196,34 @@ internal object HerbloreData {
             ),
             Drink("energy potion", doses("1energy"), Effect.Energy(10)),
             Drink("super energy", doses("2energy"), Effect.Energy(20)),
+            // PR2 (OSRS Wiki potion pages).
+            Drink("ranging potion", doses("rangerspotion"), Effect.Boost(listOf("ranged"), 4, 10)),
+            Drink("magic potion", doses("1magic"), Effect.Boost(listOf("magic"), 4, 0)),
+            Drink(
+                "Saradomin brew",
+                doses("potionofsaradomin"),
+                Effect.Multi(
+                    listOf(
+                        Effect.Boost(listOf("hitpoints"), 2, 15),
+                        Effect.Boost(listOf("defence"), 2, 20),
+                        Effect.Drain(listOf("attack", "strength", "ranged", "magic"), 2, 10),
+                    )
+                ),
+            ),
+            Drink(
+                "Zamorak brew",
+                doses("potionofzamorak"),
+                Effect.Multi(
+                    listOf(
+                        Effect.Boost(listOf("attack"), 2, 20),
+                        Effect.Boost(listOf("strength"), 2, 12),
+                        Effect.Drain(listOf("defence"), 2, 10),
+                        // OSRS also deals 12% of current Hitpoints as damage; left out here
+                        // (a stat drain could take Hitpoints to 0 without the death flow).
+                        Effect.Restore(listOf("prayer"), 0, 10),
+                    )
+                ),
+            ),
             Drink("antipoison", doses("antipoison"), Effect.Cure(immunityTicks = 150)),
             Drink("superantipoison", doses("2antipoison"), Effect.Cure(immunityTicks = 600)),
             Drink("antifire potion", doses("1antidragon"), Effect.Antifire(false, 6)),

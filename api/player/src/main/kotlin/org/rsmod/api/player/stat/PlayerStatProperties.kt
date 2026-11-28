@@ -140,3 +140,9 @@ public val Player.constructionLvl: Int
 
 public val Player.baseConstructionLvl: Int
     get() = statBase(stats.construction)
+
+public val Player.sailingLvl: Int
+    get() = stat(stats.sailing)
+
+public val Player.baseSailingLvl: Int
+    get() = statBase(stats.sailing)

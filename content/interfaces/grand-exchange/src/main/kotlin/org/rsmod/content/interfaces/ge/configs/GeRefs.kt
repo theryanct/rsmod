@@ -14,12 +14,16 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 internal object GeInterfaces : InterfaceReferences() {
     val offers = find("ge_offers")
     val offers_side = find("ge_offers_side")
+    /** Trade history (offers "History" button, clerk "History"). */
+    val history = find("ge_history")
     /** Collection box (also opened by bankers' "Collect"). */
     val collect = find("ge_collect")
 }
 
 internal object GeComponents : ComponentReferences() {
     val history = find("ge_offers:history")
+    /** ge_history's "Exchange" button: back to the offers screen. */
+    val history_exchange = find("ge_history:exchange")
     val back = find("ge_offers:back")
     val collectall = find("ge_offers:collectall")
     val index =
@@ -81,6 +85,9 @@ internal object GeVarps : VarpReferences() {
     val last_searched = find("ge_last_searched")
     /** Repeat Offer: hidden while the obj is -1. */
     val last_offer_item = find("ge_last_offer_item")
+    val last_offer_quantity = find("ge_last_offer_quantity")
+    /** 0 = buy, 1 = sell. */
+    val last_offer_type = find("ge_last_offer_type")
     /** Item-sink offers: a slot whose obj isn't -1 is drawn as occupied. */
     val itemsink_objs =
         listOf(

@@ -8,7 +8,9 @@ import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.righthand
+import org.rsmod.api.player.stat.agilityLvl
 import org.rsmod.api.player.stat.fishingLvl
+import org.rsmod.api.player.stat.strengthLvl
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc2
 import org.rsmod.api.script.onOpNpc3
@@ -27,8 +29,11 @@ import org.rsmod.game.type.seq.SeqType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-// Not yet: moving spots (skipped by decision), karambwan, barbarian fishing, special members
-// spots (anglerfish, dark crab, eels), big net junk items, angler outfit, clue bottles, heron pet.
+// Barbarian fishing (Use-rod: leaping trout/salmon/sturgeon, + Agility/Strength xp) and karambwan
+// fishing (Fish at karambwan spots with a loaded vessel) use the same per-type op binding.
+// Not yet: moving spots (skipped by decision), special members spots (anglerfish, dark crab,
+// eels), big net junk items, angler outfit, clue bottles, heron pet, karambwanji net fishing.
+// Barbarian Training (Otto) is skipped; the barbarian rod works without it.
 class Fishing
 @Inject
 constructor(
@@ -52,7 +57,7 @@ constructor(
             val ops = type.op.mapNotNull { it?.trim()?.lowercase() }.toSet()
             for ((index, text) in type.op.withIndex()) {
                 val op = text?.trim()?.lowercase() ?: continue
-                val method = FishingMethod.resolve(op, ops) ?: continue
+                val method = FishingMethod.resolve(op, ops, type.internalName.orEmpty()) ?: continue
                 registerOp(type, index + 1, method)
                 bound++
             }
@@ -108,9 +113,13 @@ constructor(
             mes(method.missingToolMessage)
             return false
         }
-        val bait = method.bait
-        if (bait != null && bait !in inv) {
+        if (method.baits.isNotEmpty() && method.baits.none { it in inv }) {
             mes(method.missingBaitMessage)
+            return false
+        }
+        val lowestBonus = method.catches.minOf { it.bonusLevel }
+        if (lowestBonus > 0 && (player.agilityLvl < lowestBonus || player.strengthLvl < lowestBonus)) {
+            mes("You need Agility and Strength levels of at least $lowestBonus to ${method.verb} these fish.")
             return false
         }
         if (invFullForGathering(objTypes, method.catches.map { it.fish })) {
@@ -135,16 +144,24 @@ constructor(
             if (player.fishingLvl < catch.level) {
                 continue
             }
+            if (player.agilityLvl < catch.bonusLevel || player.strengthLvl < catch.bonusLevel) {
+                continue
+            }
             if (!statRandom(stats.fishing, catch.low, catch.high, invisibleLvls)) {
                 continue
             }
-            val bait = method.bait
+            // First bait in the list the player carries (e.g. feathers before fish offcuts).
+            val bait = method.baits.firstOrNull { it in inv }
             if (bait != null) {
                 invDel(inv, bait, count = 1)
             }
             val xp = catch.xp * xpMods.get(player, stats.fishing)
             spam(catch.message)
             statAdvance(stats.fishing, xp)
+            if (catch.bonusXp > 0) {
+                statAdvance(stats.agility, catch.bonusXp * xpMods.get(player, stats.agility))
+                statAdvance(stats.strength, catch.bonusXp * xpMods.get(player, stats.strength))
+            }
             invAddGathered(objTypes[catch.fish])
             return
         }
@@ -166,12 +183,16 @@ constructor(
         val low: Int,
         val high: Int,
         val message: String,
+        /** Barbarian fishing: Agility and Strength level needed, and xp given in each. */
+        val bonusLevel: Int = 0,
+        val bonusXp: Double = 0.0,
     )
 
     private enum class FishingMethod(
         val verb: String,
         val tools: List<ObjType>,
-        val bait: ObjType?,
+        /** Accepted baits in preference order (empty = none needed). */
+        val baits: List<ObjType>,
         val anim: SeqType,
         val startMessage: String,
         val missingToolMessage: String,
@@ -182,7 +203,7 @@ constructor(
         SmallNet(
             verb = "net",
             tools = listOf(fishing_objs.net),
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_smallnet,
             startMessage = "You cast out your net...",
             missingToolMessage = "You need a small fishing net to catch these fish.",
@@ -196,7 +217,7 @@ constructor(
         SeaBait(
             verb = "bait",
             tools = listOf(fishing_objs.fishing_rod),
-            bait = fishing_objs.fishing_bait,
+            baits = listOf(fishing_objs.fishing_bait),
             anim = fishing_seqs.human_fishing_casting,
             startMessage = "You cast out your line...",
             missingToolMessage = "You need a fishing rod to catch these fish.",
@@ -210,7 +231,7 @@ constructor(
         RiverBait(
             verb = "bait",
             tools = listOf(fishing_objs.fishing_rod),
-            bait = fishing_objs.fishing_bait,
+            baits = listOf(fishing_objs.fishing_bait),
             anim = fishing_seqs.human_fishing_casting,
             startMessage = "You cast out your line...",
             missingToolMessage = "You need a fishing rod to catch these fish.",
@@ -220,7 +241,7 @@ constructor(
         Lure(
             verb = "lure",
             tools = listOf(fishing_objs.fly_fishing_rod),
-            bait = fishing_objs.feather,
+            baits = listOf(fishing_objs.feather),
             anim = fishing_seqs.human_fishing_casting,
             startMessage = "You cast out your line...",
             missingToolMessage = "You need a fly fishing rod to catch these fish.",
@@ -234,7 +255,7 @@ constructor(
         Cage(
             verb = "cage",
             tools = listOf(fishing_objs.lobster_pot),
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_lobster,
             startMessage = "You attempt to catch a lobster.",
             missingToolMessage = "You need a lobster pot to catch lobsters.",
@@ -244,7 +265,7 @@ constructor(
         Harpoon(
             verb = "harpoon",
             tools = harpoons,
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_harpoon,
             startMessage = "You start harpooning fish.",
             missingToolMessage = "You need a harpoon to catch these fish.",
@@ -258,7 +279,7 @@ constructor(
         SharkHarpoon(
             verb = "harpoon",
             tools = harpoons,
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_harpoon,
             startMessage = "You start harpooning fish.",
             missingToolMessage = "You need a harpoon to catch these fish.",
@@ -268,7 +289,7 @@ constructor(
         BigNet(
             verb = "net",
             tools = listOf(fishing_objs.big_net),
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_largenet,
             startMessage = "You cast out your net...",
             missingToolMessage = "You need a big fishing net to catch these fish.",
@@ -283,22 +304,53 @@ constructor(
         MonkfishNet(
             verb = "net",
             tools = listOf(fishing_objs.net),
-            bait = null,
+            baits = emptyList(),
             anim = fishing_seqs.human_smallnet,
             startMessage = "You cast out your net...",
             missingToolMessage = "You need a small fishing net to catch these fish.",
             missingBaitMessage = "",
             catches =
                 listOf(Catch(fishing_objs.raw_monkfish, 62, 120.0, 48, 90, "You catch a monkfish.")),
+        ),
+        /** OSRS Wiki Barbarian Fishing: one cascaded chart, Agility/Strength reqs and xp. */
+        BarbarianRod(
+            verb = "fish",
+            tools = listOf(fishing_objs.barbarian_rod),
+            baits = listOf(fishing_objs.feather, fishing_objs.fish_offcuts, fishing_objs.roe, fishing_objs.caviar),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a barbarian rod to catch these fish.",
+            missingBaitMessage = "You need feathers or fish offcuts to use as bait.",
+            catches =
+                listOf(
+                    Catch(fishing_objs.leaping_sturgeon, 70, 80.0, 8, 64, "You catch a leaping sturgeon.", 45, 7.0),
+                    Catch(fishing_objs.leaping_salmon, 58, 70.0, 16, 96, "You catch a leaping salmon.", 30, 6.0),
+                    Catch(fishing_objs.leaping_trout, 48, 50.0, 32, 192, "You catch a leaping trout.", 15, 5.0),
+                ),
+        ),
+        /** OSRS Wiki Raw karambwan: level 65, 50 xp, chart 5/160. */
+        Karambwan(
+            verb = "fish",
+            tools = listOf(fishing_objs.karambwan_vessel_loaded),
+            baits = listOf(fishing_objs.raw_karambwanji),
+            anim = fishing_seqs.human_lobster,
+            startMessage = "You start fishing for karambwan.",
+            missingToolMessage = "You need a karambwan vessel loaded with karambwanji to catch karambwan.",
+            missingBaitMessage = "You need raw karambwanji to bait your vessel.",
+            catches = listOf(Catch(fishing_objs.raw_karambwan, 65, 50.0, 5, 160, "You catch a karambwan.")),
         );
 
         companion object {
             /**
              * Resolves a spot op into a method using the spot's full op set (OSRS spot kinds:
-             * Net/Bait, Lure/Bait, Cage/Harpoon, Big Net/Harpoon, Net/Harpoon (Piscatorius)).
+             * Net/Bait, Lure/Bait, Cage/Harpoon, Big Net/Harpoon, Net/Harpoon (Piscatorius)), plus
+             * Use-rod (barbarian) and Fish on karambwan spots (by internal name; other "Fish"
+             * spots such as Sailing's are left alone).
              */
-            fun resolve(op: String, spotOps: Set<String>): FishingMethod? =
+            fun resolve(op: String, spotOps: Set<String>, internalName: String): FishingMethod? =
                 when (op) {
+                    "use-rod" -> BarbarianRod
+                    "fish" -> if (internalName.contains("karambwan")) Karambwan else null
                     "net",
                     "small net" -> if ("harpoon" in spotOps) MonkfishNet else SmallNet
                     "bait" -> if ("lure" in spotOps) RiverBait else SeaBait
