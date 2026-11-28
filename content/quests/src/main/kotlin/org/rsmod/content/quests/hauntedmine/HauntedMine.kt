@@ -298,7 +298,7 @@ constructor(
         crumbleFungus("Teleporting out with the glowing fungus")
         telejump(dest)
         delay(1)
-        advance(INSIDE)
+        if (stage >= STARTED) advance(INSIDE)
     }
 
     private suspend fun ProtectedAccess.leaveByTunnel(dest: CoordGrid) {
