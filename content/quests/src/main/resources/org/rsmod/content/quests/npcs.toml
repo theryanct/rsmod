@@ -987,3 +987,17 @@ coords = '0_53_53_53_28'
 [[spawn]]
 npc = 'king_arthur'
 coords = '0_43_54_12_59'
+
+# Holy Grail: Merlin in his workshop (Wiki 2767,3501 plane 1), the Fisher King in the withered castle (2763,4687 p1),
+# King Percival in the restored one (2634,4688 p1).
+[[spawn]]
+npc = 'merlin2'
+coords = '1_43_54_15_45'
+
+[[spawn]]
+npc = 'fisher_king'
+coords = '1_43_73_11_15'
+
+[[spawn]]
+npc = 'king_percival'
+coords = '1_41_73_10_16'
