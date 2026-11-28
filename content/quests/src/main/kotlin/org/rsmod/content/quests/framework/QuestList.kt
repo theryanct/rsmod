@@ -16,6 +16,7 @@ import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYE
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
+import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
@@ -65,6 +66,7 @@ public object BuiltQuests {
             DRUIDIC_RITUAL,
             DWARF_CANNON,
             ERNEST,
+            FAIRYTALE_I,
             FISHING_CONTEST,
             GERTRUDES_CAT,
             GHOSTS_AHOY,

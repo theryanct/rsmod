@@ -131,7 +131,7 @@ constructor(
         onNpcOpLabel(npcTypes, NsNpcs.filliman, "Talk-to") { talkFilliman(it) }
         onOpNpcU(NsNpcs.filliman, NsObjs.mirror) { useMirror(it.npc) }
         onOpNpcU(NsNpcs.filliman, NsObjs.journal) { useJournal(it.npc) }
-        onNpcOpLabel(npcTypes, NsNpcs.spirit, "Talk-to") { talkSpirit(it) }
+        with(QuestTalk) { default(npcTypes, NsNpcs.spirit) { talkSpirit(it) } }
 
         onOpHeld1(NsObjs.bloom_spell) { castBloom(fromSickle = false) }
         onOpHeld1(NsObjs.sickle_blessed) { castBloom(fromSickle = true) }
