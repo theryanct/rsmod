@@ -133,6 +133,13 @@ MANUAL += [
     ("combine", "xbows_crossbow_bolts_runite_tipped_dragonstone", 10, 71, 82, 2, "human_fletching_add_bolt_tips_rune", [("xbows_crossbow_bolts_runite", 10), ("xbows_bolt_tips_dragonstone", 10)]),
     ("combine", "xbows_crossbow_bolts_runite_tipped_onyx", 10, 73, 94, 2, "human_fletching_add_bolt_tips_rune", [("xbows_crossbow_bolts_runite", 10), ("xbows_bolt_tips_onyx", 10)]),
 ]
+# Amethyst ammunition (Wiki Recipe templates).
+MANUAL += [
+    ("combine", "amethyst_arrow", 15, 82, 202.5, 2, "-", [("headless_arrow", 15), ("amethyst_arrowheads", 15)]),
+    ("combine", "slayer_broad_bolt_amethyst", 10, 76, 106, 2, "-", [("slayer_broad_bolt", 10), ("xbows_bolt_tips_amethyst", 10)]),
+    ("combine", "amethyst_dart", 10, 90, 210, 1, "-", [("amethyst_dart_tip", 10), ("feather", 10)]),
+    ("combine", "amethyst_javelin", 15, 84, 202.5, 1, "-", [("javelin_shaft", 15), ("amethyst_javelin_head", 15)]),
+]
 for m in MANUAL:
     if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
 

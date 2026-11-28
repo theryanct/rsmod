@@ -8,6 +8,10 @@ recipe	chisel	chisel	ruby	1	34	85.0	2	human_rubycutting	-	uncut_ruby	1
 recipe	chisel	chisel	diamond	1	43	107.5	2	human_diamondcutting	-	uncut_diamond	1
 recipe	chisel	chisel	dragonstone	1	55	137.5	2	human_dragonstonecutting	-	uncut_dragonstone	1
 recipe	chisel	chisel	onyx	1	67	167.5	2	human_dragonstonecutting	-	uncut_onyx	1
+recipe	chisel	chisel	xbows_bolt_tips_amethyst	15	83	60.0	2	human_amethystcutting	-	amethyst	1
+recipe	chisel	chisel	amethyst_arrowheads	15	85	60.0	2	human_amethystcutting	-	amethyst	1
+recipe	chisel	chisel	amethyst_javelin_head	5	87	60.0	2	human_amethystcutting	-	amethyst	1
+recipe	chisel	chisel	amethyst_dart_tip	8	89	60.0	2	human_amethystcutting	-	amethyst	1
 recipe	chisel	chisel	zenyte	1	89	50.0	2	human_dragonstonecutting	-	uncut_zenyte	1
 recipe	combine	bowl_water	softclay	1	1	0.0	1	-	bowl_empty	clay	1
 recipe	combine	bucket_water	softclay	1	1	0.0	1	-	bucket_empty	clay	1
