@@ -1751,3 +1751,13 @@ coords = '0_47_49_21_58'
 [[spawn]]
 npc = 'port_task_master_pandemonium'
 coords = '0_47_46_54_41'
+
+# Crab Quest: the crab on Dognose Island's beach (shown for crab_main 5-40 and 63) and at
+# practice (45-60). Authored positions beside the strange bottle (3055,2639).
+[[spawn]]
+npc = 'crab_maincrab'
+coords = '0_47_41_48_14'
+
+[[spawn]]
+npc = 'crab_maincrab_practising'
+coords = '0_47_41_44_14'

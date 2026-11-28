@@ -15,6 +15,7 @@ import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.coldwar.ColdWar.Companion.COLD_WAR
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
+import org.rsmod.content.quests.crabquest.CrabQuest.Companion.CRAB_QUEST
 import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
 import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
@@ -109,6 +110,7 @@ public object BuiltQuests {
             COLD_WAR,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            CRAB_QUEST,
             DADDYS_HOME,
             DEATH_PLATEAU,
             DEMON_SLAYER,
