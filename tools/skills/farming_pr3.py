@@ -60,7 +60,18 @@ KINDS = {
                                                  "Papaya tree", "Palm tree", "Dragonfruit tree"]),
     "Bush": ("farming_bush_patch_1", ["Redberry bush", "Cadavaberry bush", "Dwellberry bush", "Jangerberry bush",
                                       "Whiteberry bush", "Poison ivy bush"]),
+    # PR3b
+    "Cactus": ("farming_cactus_patch", ["Cactus (Farming)", "Potato cactus (plant)"]),
+    "Hardwood": ("farming_hardwood_tree_patch_1", ["Teak tree (Farming)", "Mahogany tree (Farming)"]),
+    "Belladonna": ("farming_belladonna_patch", ["Belladonna"]),
+    "Mushroom": ("farming_mushroom_patch", ["Bittercap Mushrooms"]),
 }
+FRUIT_KINDS = {"FruitTree", "Bush", "Cactus"}
+# Hardwood chopping (Wiki Woodcutting): level, xp; logs obj.
+WOOD = {"Teak tree (Farming)": (35, 85, "teak_logs"), "Mahogany tree (Farming)": (50, 125, "mahogany_logs")}
+# Harvest lives / fixed yields (Wiki): bittercap 6 picks, belladonna 1 nightshade.
+LIVES = {"Bittercap Mushrooms": 6}
+FIXED = {"Belladonna": 1}
 # Mainland patches in PR3a (Farming Guild / Varlamore / Prifddinas ones need areas we don't have).
 PATCHES = {
     "fruit_gnome_stronghold": "farming_fruit_tree_patch_1",
@@ -72,11 +83,23 @@ PATCHES = {
     "bush_rimmington": "farming_bush_patch_2",
     "bush_etceteria": "farming_bush_patch_3",
     "bush_ardougne": "farming_bush_patch_4",
+    # PR3b
+    "cactus_al_kharid": "farming_cactus_patch",
+    "hardwood_fossil_1": "farming_hardwood_tree_patch_1",
+    "hardwood_fossil_2": "farming_hardwood_tree_patch_2",
+    "hardwood_fossil_3": "farming_hardwood_tree_patch_3",
+    "belladonna_draynor": "farming_belladonna_patch",
+    "mushroom_canifis": "farming_mushroom_patch",
 }
+PATCH_KIND = {"fruit_tree": "FruitTree", "bush": "Bush", "cactus": "Cactus", "hardwood": "Hardwood",
+              "belladonna": "Belladonna", "mushroom": "Mushroom"}
 
 
 # Wiki page -> stage loc name prefix where they differ.
-LOC_PREFIX = {"Pineapple plant": "pineapple_tree", "Poison ivy bush": "poisonivy_bush"}
+LOC_PREFIX = {"Pineapple plant": "pineapple_tree", "Poison ivy bush": "poisonivy_bush",
+              "Cactus (Farming)": "cactus", "Potato cactus (plant)": "potato_cactus",
+              "Teak tree (Farming)": "teak_tree", "Mahogany tree (Farming)": "mahogany_tree",
+              "Bittercap Mushrooms": "bittercap"}
 
 
 def payment_item(value):
@@ -114,17 +137,26 @@ for kind, (base, pages) in KINDS.items():
             if child.startswith(prefix + "_"):
                 vals.setdefault(child[len(prefix) + 1:], []).append(v)
         growing = sorted(v for s, vs in vals.items() if re.fullmatch(r"\d+", s) for v in vs)
-        fruits = sorted(v for s, vs in vals.items() if re.fullmatch(r"(fruit|berry)_\d+", s) for v in vs)
-        seedv = min(vals.get("seedling", [None]) or [None])
-        grown = min(vals.get("fullygrown", [None]))
-        check = min(vals.get("claim_xp", vals.get("fullygrown_checkhealth", [None])))
-        stump = min(vals.get("stump", [None]) or [None]) if vals.get("stump") else None
+        fruits = sorted(v for s, vs in vals.items() if re.fullmatch(r"(fruit|berry|spines)_\d+", s) for v in vs)
+        first = lambda *keys: next((min(vals[k]) for k in keys if vals.get(k)), None)
+        seedv = first("seedling", "seed")
+        claim = first("claim_xp", "claimxp", "fullygrown_claimxp")
+        stump = first("stump")
+        if kind == "Hardwood":
+            # Tree layout: grown (waiting for the check) = claim stage, checked = choppable tree.
+            grown, check, fruits = claim, first("fullygrown"), [0]
+        elif kind in FRUIT_KINDS:
+            grown, check = first("fullygrown"), claim
+        else:
+            grown = min((v for s, vs in vals.items() if s.startswith("fullygrown") for v in vs), default=None)
+            check, fruits = grown, [0]
         if seedv is None or grown is None or not fruits:
             warnings.append(f"{page}: stages {sorted(vals)[:12]}")
             continue
         if check is None:
             warnings.append(f"{page}: no check-health stage (uses last fruit)")
             check = fruits[-1]
+        max_fruit = len(fruits) if kind in FRUIT_KINDS else 0
         tm = re.search(r"(\d+)\s*x\s*(\d+)\s*min", field(box, "time"))
         cycles, minutes = (int(tm.group(1)), int(tm.group(2))) if tm else (len(growing) + 1, 0)
         pay = field(box, "payment")
@@ -133,22 +165,28 @@ for kind, (base, pages) in KINDS.items():
         if pay_obj is None and pay:
             # "sacks of cabbages" / "baskets of apples": the Wiki links the item name.
             warnings.append(f"{page}: payment '{pay}' not mapped")
-        seed_name = plink(field(box, "sapling")) if kind == "FruitTree" else plink(field(box, "seed"))
+        seed_name = plink(field(box, "sapling")) if kind in ("FruitTree", "Hardwood") else plink(field(box, "seed"))
         seed = obj(seed_name)
-        produce = obj(plink(field(box, "crop")))
+        # Belladonna's Wiki crop resolves to the stackable variant; the patch gives the plain item.
+        produce = WOOD[page][2] if page in WOOD else ("nightshade" if page == "Belladonna" else obj(plink(field(box, "crop"))))
         if not seed or not produce:
             warnings.append(f"{page}: seed={seed_name}->{seed} crop={field(box, 'crop')}->{produce}")
             continue
         key = prefix.replace("_tree", "").replace("_plant", "").replace("_bush", "").replace("poisonivy", "poison_ivy")
-        lines.append(["crop", key, kind, seed, produce, field(box, "level"), field(box, "plantxp"), field(box, "checkxp"),
-                      field(box, "harvestxp"), cycles, minutes, seedv, grown, fruits[0], len(fruits), check,
-                      stump if stump is not None else "-", pay_obj or "-", pm.group(1) if pm and pay_obj else 0])
+        num = lambda v: re.match(r"[\d.]+", v.replace(",", "")).group(0) if re.match(r"[\d.]+", v.replace(",", "")) else "0"
+        wood = WOOD.get(page, (0, 0, "-"))
+        if kind == "Hardwood":
+            produce = wood[2]
+        lines.append(["crop", key, kind, seed, produce, field(box, "level"), num(field(box, "plantxp")), num(field(box, "checkxp")),
+                      num(field(box, "harvestxp")), cycles, minutes, seedv, grown, fruits[0], max_fruit, check,
+                      stump if stump is not None else "-", pay_obj or "-", pm.group(1) if pm and pay_obj else 0,
+                      wood[0], wood[1], wood[2], LIVES.get(page, 3), FIXED.get(page, 0)])
 
 tiles = json.load(open(patches_path))
 for key, loc in PATCHES.items():
     letter = info[loc][2] if len(info[loc]) > 2 else None
     x, z, level = tiles[loc][0]
-    kind = "FruitTree" if "fruit" in loc else "Bush"
+    kind = next(v for k, v in PATCH_KIND.items() if loc.startswith("farming_" + k))
     lines.append(["patch", key, kind, loc, letter, x, z, level])
 
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:

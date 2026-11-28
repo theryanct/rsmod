@@ -119,10 +119,26 @@ constructor(
                 5 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 5)) onOpNpc5(FarmingNpcs.leprechaun) { toolStore(it.npc) }
             }
         }
-        val notable = FarmingData.crops.filter { it.kind != Kind.Tree }.map { it.produce }
+        val notable = FarmingData.crops.filter { it.kind !in FarmingData.woodKinds }.map { it.produce }
         for (produce in notable.distinct()) {
             val obj = FarmingObjs.byName.getValue(produce)
             onOpNpcU(FarmingNpcs.leprechaun, obj) { noteProduce(it.objType.id) }
+        }
+        // Gardeners: "Pay" (and "Pay (north)/(south)") protect a planted patch for the Wiki fee.
+        for (gardener in FarmingNpcs.gardeners) {
+            for ((index, text) in npcTypes[gardener].op.withIndex()) {
+                if (text?.startsWith("Pay", ignoreCase = true) != true) continue
+                val op = index + 1
+                val which = if (text.contains("south", ignoreCase = true)) 1 else 0
+                if (isNpcOpBound(gardener, op)) continue
+                when (op) {
+                    1 -> onOpNpc1(gardener) { pay(it.npc, which) }
+                    2 -> onOpNpc2(gardener) { pay(it.npc, which) }
+                    3 -> onOpNpc3(gardener) { pay(it.npc, which) }
+                    4 -> onOpNpc4(gardener) { pay(it.npc, which) }
+                    5 -> onOpNpc5(gardener) { pay(it.npc, which) }
+                }
+            }
         }
         onPlayerLogin { refresh(player) }
         onPlayerSoftTimer(FarmingTimers.refresh) { refresh(player) }
@@ -214,6 +230,7 @@ constructor(
         var watered: Boolean,
         var lives: Int,
         var stump: Boolean = false,
+        var protected: Boolean = false,
     ) {
         fun pack(): Int =
             (weeds and 3) or
@@ -221,7 +238,8 @@ constructor(
                 ((compost and 3) shl 8) or
                 ((if (watered) 1 else 0) shl 10) or
                 ((lives and 15) shl 11) or
-                ((if (stump) 1 else 0) shl 15)
+                ((if (stump) 1 else 0) shl 15) or
+                ((if (protected) 1 else 0) shl 16)
     }
 
     private fun unpack(value: Int): State =
@@ -232,6 +250,7 @@ constructor(
             watered = (value shr 10) and 1 == 1,
             lives = (value shr 11) and 15,
             stump = (value shr 15) and 1 == 1,
+            protected = (value shr 16) and 1 == 1,
         )
 
     private fun Player.state(patch: Patch): State =
@@ -271,7 +290,7 @@ constructor(
     private fun Player.displayValue(patch: Patch): Int {
         val state = state(patch)
         val crop = state.crop ?: return state.weeds
-        if (crop.kind == Kind.Tree && state.watered) {
+        if (crop.kind in FarmingData.woodKinds && state.watered) {
             return if (isStump(patch, state)) crop.stumpValue else crop.checkedValue
         }
         if (crop.kind in FarmingData.fruitKinds) {
@@ -416,7 +435,8 @@ constructor(
         }
         state.crop = crop
         state.watered = false
-        state.lives = if (crop.fixedYield > 0) 1 else 3 + state.compost
+        state.lives = if (crop.fixedYield > 0) 1 else crop.baseLives + state.compost
+        state.protected = false
         player.save(patch, state, planted = nowMinutes())
         statAdvance(stats.farming, crop.plantXp * xpMods.get(player, stats.farming))
         val seeds =
@@ -453,7 +473,7 @@ constructor(
     private fun ProtectedAccess.harvest(loc: BoundLocInfo, patch: Patch, op: Int) {
         val state = player.state(patch)
         val crop = state.crop ?: return
-        if (crop.kind == Kind.Tree) return
+        if (crop.kind in FarmingData.woodKinds) return
         if (crop.kind in FarmingData.fruitKinds) {
             pickFruit(loc, patch, state, crop, op)
             return
@@ -538,6 +558,47 @@ constructor(
         reop(loc, op)
     }
 
+    /**
+     * Wiki farmer payments: the gardener nearest the patch takes the crop's fee and looks after
+     * it. Disease is off on this server, so protection only changes the inspect text.
+     */
+    private suspend fun ProtectedAccess.pay(npc: Npc, which: Int) {
+        val area =
+            FarmingData.allAreas.minByOrNull {
+                abs(it.centre.x - npc.coords.x) + abs(it.centre.z - npc.coords.z)
+            } ?: return
+        val planted = area.patches.filter { player.state(it).crop != null }
+        val patch = planted.getOrNull(which) ?: planted.firstOrNull()
+        if (patch == null) {
+            startDialogue(npc) { chatNpc(neutral, "You don't have anything planted that I can look after.") }
+            return
+        }
+        val state = player.state(patch)
+        val crop = state.crop ?: return
+        if (state.protected) {
+            startDialogue(npc) { chatNpc(happy, "I'm already looking after that patch for you.") }
+            return
+        }
+        val fee = crop.payment?.let { FarmingObjs.byName.getValue(it) }
+        if (fee == null || crop.paymentCount <= 0) {
+            startDialogue(npc) { chatNpc(neutral, "That doesn't need looking after.") }
+            return
+        }
+        if (invTotal(inv, fee) < crop.paymentCount) {
+            val name = objTypes[fee].name.lowercase()
+            startDialogue(npc) {
+                chatNpc(neutral, "I'll look after that for ${crop.paymentCount} $name.")
+            }
+            return
+        }
+        invDel(inv, fee, crop.paymentCount)
+        state.protected = true
+        player.save(patch, state)
+        startDialogue(npc) {
+            chatNpc(happy, "That'll do nicely. Leave it with me - I'll make sure it grows for you.")
+        }
+    }
+
     private fun ProtectedAccess.empty(patch: Patch) {
         val cleared = State(weeds = 3, crop = null, compost = 0, watered = false, lives = 0)
         player.save(patch, cleared, planted = 0)
@@ -579,7 +640,8 @@ constructor(
                 val left = total - (nowMinutes() - player.planted(patch))
                 "is growing (about ${max(1, left)} minutes left)"
             }
-        mes("The ${crop.key} in this ${patch.kind.noun} $status (treated with $compost).")
+        val guarded = if (state.protected) " A gardener is looking after it." else ""
+        mes("The ${crop.key} in this ${patch.kind.noun} $status (treated with $compost).$guarded")
     }
 
     /* Trees */
@@ -615,7 +677,7 @@ constructor(
             mes("You chop down the tree; dig up the stump with a spade.")
             return
         }
-        if (crop.kind != Kind.Tree || !state.watered) return
+        if (crop.kind !in FarmingData.woodKinds || !state.watered) return
         if (player.isStump(patch, state)) {
             mes("This tree has already been cut down.")
             return
@@ -959,7 +1021,7 @@ constructor(
                 "dump",
             )
         /** Kinds with a health check once grown. */
-        val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush)
+        val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush, Kind.Cactus, Kind.Hardwood)
         const val CHOP_TICKS = 4
         const val STUMP_CHANCE = 8
         const val BIN_SIZE = 15

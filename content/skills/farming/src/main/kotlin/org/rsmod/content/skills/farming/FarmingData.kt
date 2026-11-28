@@ -22,13 +22,20 @@ internal object FarmingData {
         Tree("tree patch", 0),
         FruitTree("fruit tree patch", 0),
         Bush("bush patch", 0),
+        Cactus("cactus patch", 0),
+        Hardwood("hardwood tree patch", 0),
+        Belladonna("belladonna patch", 0),
+        Mushroom("mushroom patch", 0),
     }
 
+    /** Trees chopped for logs (health check, stump that regrows). */
+    val woodKinds = setOf(Kind.Tree, Kind.Hardwood)
+
     /** Kinds planted from a sapling with a spade. */
-    val saplingKinds = setOf(Kind.Tree, Kind.FruitTree)
+    val saplingKinds = setOf(Kind.Tree, Kind.FruitTree, Kind.Hardwood)
 
     /** PR3 kinds: health check when grown, then fruit/berries that regrow. */
-    val fruitKinds = setOf(Kind.FruitTree, Kind.Bush)
+    val fruitKinds = setOf(Kind.FruitTree, Kind.Bush, Kind.Cactus)
 
     class Crop(
         val key: String,
@@ -63,6 +70,11 @@ internal object FarmingData {
         val stumpOverride: Int? = null,
         /** Minutes for one fruit/berry to regrow (Wiki: fruit trees 40, bushes 20). */
         val regrowMinutes: Int = 0,
+        /** Harvest lives before compost (Wiki: bittercap 6 picks). */
+        val baseLives: Int = 3,
+        /** Gardener payment to protect the patch (Wiki), or null. */
+        val payment: String? = null,
+        val paymentCount: Int = 0,
     ) {
         /** Fully grown (for trees: waiting for a health check; fruit kinds: no fruit left). */
         val grownValue: Int
@@ -328,7 +340,19 @@ internal object FarmingData {
                     maxFruit = p[14].toInt(),
                     checkOverride = p[15].toInt(),
                     stumpOverride = p[16].toIntOrNull(),
-                    regrowMinutes = if (kind == Kind.FruitTree) 40 else 20,
+                    regrowMinutes =
+                        when (kind) {
+                            Kind.FruitTree -> 40
+                            Kind.Bush -> 20
+                            else -> p[10].toInt()
+                        },
+                    fixedYield = p.getOrNull(23)?.toIntOrNull() ?: 0,
+                    woodLevel = p.getOrNull(19)?.toIntOrNull() ?: 0,
+                    woodXp = p.getOrNull(20)?.toDoubleOrNull() ?: 0.0,
+                    logs = p.getOrNull(21)?.takeIf { it != "-" } ?: "",
+                    baseLives = p.getOrNull(22)?.toIntOrNull() ?: 3,
+                    payment = p[17].takeIf { it != "-" },
+                    paymentCount = p[18].toInt(),
                 )
             }
 
