@@ -9,6 +9,8 @@ import org.openrs2.cache.Cache
 import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.TextUtil
+import org.rsmod.api.cache.util.appendRaw
+import org.rsmod.api.cache.util.rawRecord
 import org.rsmod.game.type.TypeResolver
 import org.rsmod.game.type.param.ParamTypeBuilder
 import org.rsmod.game.type.param.ParamTypeList
@@ -46,6 +48,9 @@ public object ParamTypeDecoder {
                 2 -> defaultInt = data.readInt()
                 4 -> autoDisable = false
                 5 -> defaultStr = data.readString()
+                // Rev 237+: long default and script var type id; kept verbatim for the client.
+                7 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readLong() })
+                8 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readUnsignedByte() })
                 200 -> transmit = false
                 else -> throw IOException("Error unrecognised .param config code: $code")
             }

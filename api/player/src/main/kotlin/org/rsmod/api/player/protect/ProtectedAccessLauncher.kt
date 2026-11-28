@@ -2,6 +2,7 @@ package org.rsmod.api.player.protect
 
 import jakarta.inject.Inject
 import org.rsmod.annotations.InternalApi
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.output.mes
 import org.rsmod.game.entity.Player
 
@@ -30,6 +31,10 @@ constructor(private val contextFactory: ProtectedAccessContextFactory) {
             block: suspend ProtectedAccess.() -> Unit,
         ): Boolean {
             if (player.isAccessProtected) {
+                GameplayLog.refused(player) {
+                    "protected-access delayed=${player.isDelayed} modals=${player.ui.modals.values} " +
+                        "dialogSuspended=${player.activeCoroutine?.isSuspended}"
+                }
                 busyText?.let { player.mes(it) }
                 return false
             }

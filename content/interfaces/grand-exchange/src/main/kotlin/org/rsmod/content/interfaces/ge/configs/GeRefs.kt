@@ -67,7 +67,6 @@ internal object GeVarBits : VarBitReferences() {
     /** 0 = buy, 1 = sell. */
     val newoffer_type = find("ge_newoffer_type")
     val newoffer_quantity = find("ge_newoffer_quantity")
-    val newoffer_price = find("ge_newoffer_price")
     /** Custom +/-X% price button value; 0 = unset. */
     val price_custom = find("ge_price_custom")
     /** Sell fee per mille; 0 = no fee shown (no tax on this server). */
@@ -77,6 +76,8 @@ internal object GeVarBits : VarBitReferences() {
 internal object GeVarps : VarpReferences() {
     /** Obj chosen on the setup panel; -1 = "Choose an item...". (Varp 1151.) */
     val newoffer_obj = find("tradingpost_search")
+    /** Price on the setup screen (rev 243: a varp; was a varbit of varp 1043 in 233). */
+    val newoffer_price = find("ge_newoffer_price")
     val last_searched = find("ge_last_searched")
     /** Repeat Offer: hidden while the obj is -1. */
     val last_offer_item = find("ge_last_offer_item")

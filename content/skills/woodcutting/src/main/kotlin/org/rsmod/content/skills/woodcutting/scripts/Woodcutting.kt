@@ -13,6 +13,8 @@ import org.rsmod.api.config.refs.synths
 import org.rsmod.api.config.refs.varcons
 import org.rsmod.api.controller.vars.intVarCon
 import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.invAddGathered
+import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.output.ClientScripts
@@ -82,7 +84,7 @@ constructor(
             return
         }
 
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, listOf(objTypes[type.treeLogs]))) {
             val product = objTypes[type.treeLogs]
             mes("Your inventory is too full to hold any more ${product.name.lowercase()}.")
             soundSynth(synths.pillory_wrong)
@@ -119,7 +121,7 @@ constructor(
             return
         }
 
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, listOf(objTypes[type.treeLogs]))) {
             val product = objTypes[type.treeLogs]
             mes("Your inventory is too full to hold any more ${product.name.lowercase()}.")
             soundSynth(synths.pillory_wrong)
@@ -153,7 +155,7 @@ constructor(
             val xp = type.treeXp * xpMods.get(player, stats.woodcutting)
             spam("You get some ${product.name.lowercase()}.")
             statAdvance(stats.woodcutting, xp)
-            invAdd(inv, product)
+            invAddGathered(product)
             publish(CutLogs(player, tree, product))
         }
 

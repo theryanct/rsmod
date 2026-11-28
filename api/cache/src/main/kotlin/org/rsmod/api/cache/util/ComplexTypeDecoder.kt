@@ -102,11 +102,10 @@ public object ComplexTypeDecoder {
                 var resolvedVal: Any? = rawVal
                 if (keyCodec != null) {
                     val codec = keyCodec as CacheVarCodec<Any, Any>
-                    val resolved =
-                        checkNotNull(codec.decode(this, rawKey)) {
-                            "Could not decode key `$rawKey` with codec for " +
-                                "literal $keyLiteral. (codec=$keyCodec, enum=$type)"
-                        }
+                    // Rev 243 enums can key on references the server types can't resolve (e.g.
+                    // `mobile_pane_redirect` keys whole interfaces as component 0xFFFF). Such
+                    // entries can't be looked up server-side anyway, so they are skipped.
+                    val resolved = codec.decode(this, rawKey) ?: continue
                     resolvedKey = resolved
                 }
                 if (valCodec != null && rawVal != null) {

@@ -9,8 +9,13 @@ import org.openrs2.cache.Cache
 import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.TextUtil
+import org.rsmod.api.cache.util.appendRaw
+import org.rsmod.api.cache.util.rawRecord
 import org.rsmod.api.cache.util.readRawParams
 import org.rsmod.api.cache.util.readUnsignedShortOrNull
+import org.rsmod.api.cache.util.skipEntityConditionalOp
+import org.rsmod.api.cache.util.skipEntityConditionalSubOp
+import org.rsmod.api.cache.util.skipEntitySubOp
 import org.rsmod.game.type.TypeResolver
 import org.rsmod.game.type.loc.LocTypeBuilder
 import org.rsmod.game.type.loc.LocTypeList
@@ -64,6 +69,63 @@ public object LocTypeDecoder {
                     repeat(count) { models[it] = data.readUnsignedShort() }
                     this.model = CompactableIntArray(models)
                 }
+                // Rev 237+ int model opcodes (same layout as 1/5 with int model ids).
+                6 -> {
+                    val count = data.readUnsignedByte().toInt()
+                    val models = IntArray(count)
+                    val shapes = IntArray(count)
+                    repeat(count) {
+                        models[it] = data.readInt()
+                        shapes[it] = data.readUnsignedByte().toInt()
+                    }
+                    this.model = CompactableIntArray(models)
+                    this.modelShape = CompactableIntArray(shapes)
+                }
+                7 -> {
+                    val count = data.readUnsignedByte().toInt()
+                    val models = IntArray(count)
+                    repeat(count) { models[it] = data.readInt() }
+                    this.model = CompactableIntArray(models)
+                }
+                // Rev 237+ multiloc with 24-bit (signed, -1 = none) loc ids.
+                97,
+                98 -> {
+                    val multiVarBit = data.readUnsignedShortOrNull()
+                    val multiVarp = data.readUnsignedShortOrNull()
+                    var defaultLoc: Int? = null
+                    if (code == 98) {
+                        defaultLoc = data.readMedium().takeUnless { it == -1 }
+                    }
+                    val count = data.readUnsignedByte().toInt()
+                    val multiLoc = IntArray(count + 1) { data.readMedium() }
+                    this.multiVarp = multiVarp
+                    this.multiVarBit = multiVarBit
+                    this.multiLocDefault = defaultLoc
+                    this.multiLoc = CompactableIntArray(multiLoc)
+                }
+                // Client-only opcodes kept verbatim: sound fade curve/durations, flag 94,
+                // sound visibility, raise, entity sub/conditional ops.
+                91,
+                95,
+                96 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readUnsignedByte() })
+                94 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) {})
+                93 -> {
+                    val record =
+                        data.rawRecord(code) {
+                            readUnsignedByte()
+                            readUnsignedShort()
+                            readUnsignedByte()
+                            readUnsignedShort()
+                        }
+                    clientRaw = appendRaw(clientRaw, record)
+                }
+                100 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { skipEntitySubOp() })
+                101 ->
+                    clientRaw =
+                        appendRaw(clientRaw, data.rawRecord(code) { skipEntityConditionalOp() })
+                102 ->
+                    clientRaw =
+                        appendRaw(clientRaw, data.rawRecord(code) { skipEntityConditionalSubOp() })
                 14 -> width = data.readUnsignedByte().toInt()
                 15 -> length = data.readUnsignedByte().toInt()
                 17 -> {

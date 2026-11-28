@@ -7,8 +7,9 @@ internal typealias prayer_enums = PrayerTabEnums
 
 object PrayerTabEnums : EnumReferences() {
     val obj_configs = find<Int, ObjType>("prayer_oc", 18447792)
-    val attack_collisions = find<Int, Boolean>("prayer_attack_collisions", 3228840)
-    val strength_collisions = find<Int, Boolean>("prayer_strength_collisions", 3232561)
-    val defence_collisions = find<Int, Boolean>("prayer_defence_collisions", 3236282)
-    val overhead_collisions = find<Int, Boolean>("prayer_overhead_collisions", 3240003)
+    // Rev 243: keyed by the prayer's obj (was the prayer id in 233).
+    val attack_collisions = find<ObjType, Boolean>("prayer_attack_collisions")
+    val strength_collisions = find<ObjType, Boolean>("prayer_strength_collisions")
+    val defence_collisions = find<ObjType, Boolean>("prayer_defence_collisions")
+    val overhead_collisions = find<ObjType, Boolean>("prayer_overhead_collisions")
 }

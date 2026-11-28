@@ -1,17 +1,14 @@
 package org.rsmod.api.net.rsprot
 
 import net.rsprot.protocol.api.Session
-import net.rsprot.protocol.game.outgoing.info.npcinfo.NpcInfo
-import net.rsprot.protocol.game.outgoing.info.npcinfo.SetNpcUpdateOrigin
+import net.rsprot.protocol.game.outgoing.info.Infos
 import net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerAvatarExtendedInfo
 import net.rsprot.protocol.game.outgoing.info.playerinfo.PlayerInfo
-import net.rsprot.protocol.game.outgoing.info.util.BuildArea
 import net.rsprot.protocol.game.outgoing.map.RebuildLogin
 import net.rsprot.protocol.game.outgoing.map.RebuildNormal
 import net.rsprot.protocol.game.outgoing.map.RebuildRegion
+import net.rsprot.protocol.game.outgoing.map.RebuildRegionV2
 import net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone
-import net.rsprot.protocol.game.outgoing.map.util.XteaProvider
-import net.rsprot.protocol.game.outgoing.worldentity.SetActiveWorldV2
 import org.rsmod.api.config.refs.baseanimsets
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.player.righthand
@@ -29,14 +26,11 @@ import org.rsmod.game.spot.EntitySpotanim
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.obj.Wearpos
 import org.rsmod.map.CoordGrid
-import org.rsmod.map.square.MapSquareKey
 import org.rsmod.map.zone.ZoneKey
 
 class RspCycle(
     private val session: Session<Player>,
-    private val playerInfo: PlayerInfo,
-    private val npcInfo: NpcInfo,
-    private val xteaProvider: XteaProvider,
+    private val infos: Infos,
     private val objTypes: ObjTypeList,
     private val regions: RegionRegistry,
 ) : ClientCycle {
@@ -50,7 +44,10 @@ class RspCycle(
 
     private var knownRegionUid: Int? = null
 
-    private var cachedRegionZoneProvider: RebuildRegion.RebuildRegionZoneProvider? = null
+    private var cachedRegionZoneProvider: RebuildRegionV2.RebuildRegionZoneProvider? = null
+
+    private val playerInfo: PlayerInfo
+        get() = infos.playerInfo
 
     private val playerExtendedInfo: PlayerAvatarExtendedInfo
         get() = playerInfo.avatar.extendedInfo
@@ -64,7 +61,8 @@ class RspCycle(
     }
 
     private fun Player.queueRebuildLogin() {
-        val rebuild = RebuildLogin(x shr 3, z shr 3, worldId, xteaProvider, playerInfo)
+        // Rev 237+: maps are unencrypted, rebuild messages no longer carry xtea keys.
+        val rebuild = RebuildLogin(x shr 3, z shr 3, worldId, playerInfo)
         session.queue(rebuild)
     }
 
@@ -84,21 +82,23 @@ class RspCycle(
         player.syncAppearance(objTypes)
     }
 
+    // Rev 243 info API: one Infos per player builds world entity, player and npc info together
+    // (see the rsprot README "Info Packets" guide). We only use the root world (no world
+    // entities yet), so active-world updates are not sent.
     override fun flush(player: Player) {
-        val origin =
-            SetNpcUpdateOrigin(
-                player.coords.x - player.buildArea.x,
-                player.coords.z - player.buildArea.z,
-            )
-        session.queue(SetActiveWorldV2(SetActiveWorldV2.RootWorldType(player.level)))
-        session.queue(playerInfo.toPacket())
-        session.queue(origin)
-        session.queue(npcInfo.toPacket(worldId))
+        val root = infos.getPackets().rootWorldInfoPackets
+        session.queue(root.activeWorld)
+        session.queue(root.npcUpdateOrigin)
+        root.worldEntityInfo.getOrNull()?.let(session::queue)
+        root.playerInfo.getOrNull()?.let(session::queue)
+        root.npcInfo.getOrNull()?.let(session::queue)
     }
 
     override fun release() {
-        playerInfo.toPacket().safeRelease()
-        npcInfo.toPacket(worldId).safeRelease()
+        val root = infos.getPackets().rootWorldInfoPackets
+        root.worldEntityInfo.getOrNull()?.safeRelease()
+        root.playerInfo.getOrNull()?.safeRelease()
+        root.npcInfo.getOrNull()?.safeRelease()
     }
 
     private fun Player.updateMoveSpeed() {
@@ -124,9 +124,7 @@ class RspCycle(
         }
 
     private fun Player.updateCoords() {
-        npcInfo.updateCoord(worldId, level, x, z)
-        playerInfo.updateCoord(level, x, z)
-        playerInfo.updateRenderCoord(worldId, level, x, z)
+        infos.updateRootCoord(level, x, z)
         knownCoords = coords
     }
 
@@ -134,9 +132,7 @@ class RspCycle(
         val recalcBuildArea = knownBuildArea != buildArea && buildArea != CoordGrid.NULL
         if (recalcBuildArea) {
             val zone = ZoneKey.from(buildArea)
-            val area = BuildArea(zone.x, zone.z)
-            playerInfo.updateBuildArea(worldId, area)
-            npcInfo.updateBuildArea(worldId, area)
+            infos.updateRootBuildArea(zone.x, zone.z)
         }
 
         if (!recalcBuildArea) {
@@ -150,7 +146,7 @@ class RspCycle(
         }
 
         if (regionUid == null) {
-            val rebuild = RebuildNormal(x shr 3, z shr 3, worldId, xteaProvider)
+            val rebuild = RebuildNormal(x shr 3, z shr 3, worldId)
             knownBuildArea = buildArea
             knownRegionUid = null
             cachedRegionZoneProvider = null
@@ -180,7 +176,9 @@ class RspCycle(
         session.queue(rebuild)
     }
 
-    private fun createRegionZoneProvider(region: Region): RebuildRegion.RebuildRegionZoneProvider {
+    private fun createRegionZoneProvider(
+        region: Region
+    ): RebuildRegionV2.RebuildRegionZoneProvider {
         val regionZones = region.toZoneList()
         val rebuildZones =
             regionZones.associateWith { zone ->
@@ -188,18 +186,15 @@ class RspCycle(
                 if (copyZone == RegionZoneCopy.NULL) {
                     return@associateWith null
                 }
-                val mapSquare = MapSquareKey.from(copyZone.normalZone().toCoords())
-                val xtea = xteaProvider.provide(mapSquare.id)
                 RebuildRegionZone(
                     copyZone.normalX,
                     copyZone.normalZ,
                     copyZone.normalLevel,
                     copyZone.rotation,
-                    xtea,
                 )
             }
         val zoneProvider =
-            object : RebuildRegion.RebuildRegionZoneProvider {
+            object : RebuildRegionV2.RebuildRegionZoneProvider {
                 override fun provide(zoneX: Int, zoneZ: Int, level: Int): RebuildRegionZone? {
                     val zoneKey = ZoneKey(zoneX, zoneZ, level)
                     return rebuildZones[zoneKey]

@@ -60,10 +60,6 @@ attack_anim = 1528
 slayer_req = 80
 
 [[config]]
-npc = 'floatingtwig_broken1'
-examine = 'Reminds me of playing pooh sticks.'
-
-[[config]]
 npc = 'slayer_nechryael_spawn'
 examine = 'An evil death spawn.'
 
@@ -1456,18 +1452,6 @@ examine = 'A sea bird.'
 
 [[config]]
 npc = 'gull2'
-examine = 'A sea bird.'
-
-[[config]]
-npc = '0_45_48_seabird1'
-examine = 'A sea bird.'
-
-[[config]]
-npc = '0_45_48_seabird2'
-examine = 'A sea bird.'
-
-[[config]]
-npc = '0_45_48_seabird3'
 examine = 'A sea bird.'
 
 [[config]]
@@ -6923,14 +6907,6 @@ examine = 'Keeping an eye out for suspicious activity.'
 [[config]]
 npc = 'crab_1'
 examine = 'No one likes crabs...'
-
-[[config]]
-npc = 'seagull_47_49_1'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'seagull_47_49_2'
-examine = 'A sea bird.'
 
 [[config]]
 npc = 'fire_wizard'
@@ -14414,54 +14390,6 @@ npc = 'frincos'
 examine = 'Kind of funny looking.'
 
 [[config]]
-npc = 'aide_tutor_melee'
-examine = 'Harlan, ready to teach swordplay.'
-
-[[config]]
-npc = 'aide_tutor_ranging'
-examine = 'Nemarti looks ready to teach you about ranged combat.'
-
-[[config]]
-npc = 'aide_tutor_magic'
-examine = 'Mikasi looks ready to teach you about magic.'
-
-[[config]]
-npc = 'aide_tutor_cooking'
-examine = 'Cordero looks ready to teach you how to cook.'
-
-[[config]]
-npc = 'aide_tutor_crafting'
-examine = 'Cadmus looks a bit crafty.'
-
-[[config]]
-npc = 'aide_tutor_fishing'
-examine = 'Finlay mending nets.'
-
-[[config]]
-npc = 'aide_tutor_mining'
-examine = 'Monlum surveying the rocks.'
-
-[[config]]
-npc = 'aide_tutor_prayer'
-examine = 'Yauchomi prays to Saradomin.'
-
-[[config]]
-npc = 'aide_tutor_smithing_apprentice'
-examine = 'Feoras looks a bit fiery.'
-
-[[config]]
-npc = 'aide_tutor_smithing_master'
-examine = 'Sani, the master smithing tutor.'
-
-[[config]]
-npc = 'aide_tutor_woodsman'
-examine = 'Wilfred, a chip off the old block.'
-
-[[config]]
-npc = 'aide_tutor_banker'
-examine = 'Ready to teach you about banking.'
-
-[[config]]
 npc = 'ellis_tanner'
 examine = 'Manufacturer of fine leathers.'
 
@@ -17306,22 +17234,6 @@ attack_anim = 1245
 defend_anim = 1244
 
 [[config]]
-npc = 'viking_seagull'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'viking_seagull2'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'viking_seagull3'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'viking_seagull4'
-examine = 'A sea bird.'
-
-[[config]]
 npc = 'brownbear_cub_1'
 examine = 'Cute. But deadly.'
 death_anim = 4929
@@ -18789,14 +18701,6 @@ npc = 'borderguard2'
 examine = 'Guards the border.'
 
 [[config]]
-npc = 'seagull_draynor1'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'seagull_draynor2'
-examine = 'A sea bird.'
-
-[[config]]
 npc = 'swan_herman'
 examine = 'Founder and Director of the Piscatoris Fishing Colony.'
 
@@ -19470,10 +19374,6 @@ examine = 'A bed ridden man.'
 [[config]]
 npc = 'burgh_bed_man_wife'
 examine = 'A citizen of Burgh de Rott.'
-
-[[config]]
-npc = 'burgh_donor_man'
-examine = 'An empty villager.'
 
 [[config]]
 npc = 'burgh_vilager_sit1'
@@ -20465,14 +20365,6 @@ examine = 'Not fond of witches.'
 [[config]]
 npc = 'thurgo'
 examine = 'Dwarvish.'
-
-[[config]]
-npc = 'thurgos_seagull'
-examine = 'A sea bird.'
-
-[[config]]
-npc = 'thurgos_seagull2'
-examine = 'A sea bird.'
 
 [[config]]
 npc = 'sir_vyvin'
@@ -23531,10 +23423,6 @@ examine = 'Mysterious.'
 [[config]]
 npc = 'diary_flax_keeper'
 examine = 'He tends to the flax fields.'
-
-[[config]]
-npc = 'hatius_lumbridge_diary'
-examine = 'Attracts a lot of attention.'
 
 [[config]]
 npc = 'white_knight_diary'
@@ -34795,10 +34683,6 @@ examine = 'Rages fiercely.'
 [[config]]
 npc = 'game_zone_recruiter_saradomin'
 examine = 'A castle wars recruiter.'
-
-[[config]]
-npc = 'aide_tutor_clues'
-examine = 'A man who likes to talk about clue scrolls.'
 
 [[config]]
 npc = 'varrock_bank_doorguard'

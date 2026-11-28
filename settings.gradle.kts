@@ -26,6 +26,10 @@ include(
     "server"
 )
 
+// Rev 243: modules whose interfaces were redesigned in the 243 cache, disabled until ported
+// (canoes -> per-station canoe_map_* interfaces; skill guides ported to skill_guide_v2).
+val disabledProjects = setOf("content:travel:canoe")
+
 includeProjects(project(":api"))
 includeProjects(project(":content"))
 includeProjects(project(":engine"))
@@ -48,5 +52,9 @@ fun searchProject(parentName: String, root: Path, currentPath: Path) {
     }
     val relativePath = root.relativize(currentPath)
     val projectName = relativePath.toString().replace(File.separator, ":")
-    include("$parentName:$projectName")
+    val path = "$parentName:$projectName"
+    if (disabledProjects.any { path == it || path.startsWith("$it:") }) {
+        return
+    }
+    include(path)
 }

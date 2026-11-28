@@ -4,6 +4,7 @@ import kotlin.reflect.KClass
 import org.rsmod.game.type.literal.CacheVarLiteral
 import org.rsmod.game.type.util.GenericPropertySelector.select
 import org.rsmod.game.type.util.MergeableCacheBuilder
+import org.rsmod.game.type.util.RawOpcodes
 
 @DslMarker private annotation class ParamBuilderDsl
 
@@ -18,6 +19,8 @@ public class ParamTypeBuilder<T : Any>(
     public var autoDisable: Boolean? = null
     public var typedDefault: T? = null
     public var transmit: Boolean? = null
+
+    public var clientRaw: RawOpcodes? = null
 
     public fun build(id: Int): UnpackedParamType<T> {
         val internal = checkNotNull(internal) { "`internal` must be set." }
@@ -34,6 +37,7 @@ public class ParamTypeBuilder<T : Any>(
             typedDefault = typedDefault,
             internalId = id,
             internalName = internal,
+            clientRaw = clientRaw,
         )
     }
 
@@ -63,6 +67,7 @@ public class ParamTypeBuilder<T : Any>(
                 typedDefault = null,
                 internalId = internalId,
                 internalName = internalName,
+                clientRaw = RawOpcodes.merge(edit.clientRaw, base.clientRaw),
             )
         }
     }

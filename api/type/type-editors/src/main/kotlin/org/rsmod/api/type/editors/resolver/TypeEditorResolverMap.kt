@@ -2,6 +2,8 @@ package org.rsmod.api.type.editors.resolver
 
 import jakarta.inject.Inject
 import org.rsmod.api.type.editors.TypeEditor
+import org.rsmod.api.type.editors.comp.ComponentEditor
+import org.rsmod.api.type.editors.comp.ComponentEditorResolver
 import org.rsmod.api.type.editors.dbrow.DbRowEditor
 import org.rsmod.api.type.editors.dbrow.DbRowEditorResolver
 import org.rsmod.api.type.editors.dbtable.DbTableEditor
@@ -26,6 +28,7 @@ import org.rsmod.api.type.editors.varp.VarpEditorResolver
 public class TypeEditorResolverMap
 @Inject
 constructor(
+    private val componentResolver: ComponentEditorResolver,
     private val dbRowResolver: DbRowEditorResolver,
     private val dbTableResolver: DbTableEditorResolver,
     private val headbarResolver: HeadbarEditorResolver,
@@ -105,6 +108,7 @@ constructor(
     private fun <T> TypeEditor<T>.resolver(): TypeEditorResolver<T> {
         val resolver =
             when (this) {
+                is ComponentEditor -> componentResolver
                 is DbRowEditor -> dbRowResolver
                 is DbTableEditor -> dbTableResolver
                 is HeadbarEditor -> headbarResolver

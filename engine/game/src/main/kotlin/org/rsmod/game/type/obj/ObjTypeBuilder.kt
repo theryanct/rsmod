@@ -8,6 +8,7 @@ import org.rsmod.game.type.util.GenericPropertySelector.selectPredicate
 import org.rsmod.game.type.util.GenericPropertySelector.selectShortArray
 import org.rsmod.game.type.util.MergeableCacheBuilder
 import org.rsmod.game.type.util.ParamMap
+import org.rsmod.game.type.util.RawOpcodes
 
 @DslMarker private annotation class ObjBuilderDsl
 
@@ -87,6 +88,8 @@ public class ObjTypeBuilder(public var internal: String? = null) {
     public var weaponCategory: Int? = null
     public var transformlink: Int? = null
     public var transformtemplate: Int? = null
+
+    public var clientRaw: RawOpcodes? = null
 
     public fun build(id: Int): UnpackedObjType {
         val internal = checkNotNull(internal) { "`internal` must be set." }
@@ -222,6 +225,7 @@ public class ObjTypeBuilder(public var internal: String? = null) {
             transformtemplate = transformtemplate,
             internalId = id,
             internalName = internal,
+            clientRaw = clientRaw,
         )
     }
 
@@ -408,6 +412,7 @@ public class ObjTypeBuilder(public var internal: String? = null) {
                 transformtemplate = transformtemplate,
                 internalId = internalId,
                 internalName = internalName,
+                clientRaw = RawOpcodes.merge(edit.clientRaw, base.clientRaw),
             )
         }
     }

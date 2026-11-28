@@ -9,6 +9,8 @@ import org.openrs2.cache.Cache
 import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.TextUtil
+import org.rsmod.api.cache.util.appendRaw
+import org.rsmod.api.cache.util.rawRecord
 import org.rsmod.api.cache.util.readRawParams
 import org.rsmod.game.type.TypeResolver
 import org.rsmod.game.type.obj.ObjTypeBuilder
@@ -45,6 +47,35 @@ public object ObjTypeDecoder {
         with(builder) {
             when (code) {
                 1 -> model = data.readUnsignedShort()
+                // Rev 237+ int model opcodes.
+                44 -> model = data.readInt()
+                45 -> {
+                    manwear = data.readInt()
+                    manwearOff = data.readUnsignedByte().toInt()
+                }
+                46 -> manwear2 = data.readInt()
+                47 -> manwear3 = data.readInt()
+                48 -> {
+                    womanwear = data.readInt()
+                    womanwearOff = data.readUnsignedByte().toInt()
+                }
+                49 -> womanwear2 = data.readInt()
+                50 -> womanwear3 = data.readInt()
+                51 -> manhead = data.readInt()
+                52 -> manhead2 = data.readInt()
+                53 -> womanhead = data.readInt()
+                54 -> womanhead2 = data.readInt()
+                // Client-only opcodes kept verbatim (tradeable flag, full recolour, stackable=2,
+                // holding whitelist, bronzeman flag).
+                15,
+                160,
+                251 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) {})
+                99 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readUnsignedShort() })
+                161 -> {
+                    val record =
+                        data.rawRecord(code) { repeat(readUnsignedShort()) { readUnsignedShort() } }
+                    clientRaw = appendRaw(clientRaw, record)
+                }
                 2 -> name = data.readString()
                 3 -> desc = data.readString()
                 4 -> zoom2d = data.readUnsignedShort()

@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import net.rsprot.protocol.game.incoming.resumed.ResumePauseButton
 import org.rsmod.api.net.rsprot.player.InterfaceEvents
 import org.rsmod.api.player.input.ResumePauseButtonInput
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.comp.ComponentTypeList
 import org.rsmod.game.type.interf.IfEvent
@@ -21,6 +22,9 @@ constructor(
         get() = Component(interfaceId, componentId)
 
     override fun handle(player: Player, message: ResumePauseButton) {
+        if (player.activeCoroutine?.isAwaiting(ResumePauseButtonInput::class) != true) {
+            GameplayLog.unhandled(player) { "resume-without-dialog=ResumePauseButton $message" }
+        }
         val componentType = componentTypes[message.asComponent]
         val interfaceType = interfaceTypes[message.asComponent]
         val userInterface = UserInterface(interfaceType)

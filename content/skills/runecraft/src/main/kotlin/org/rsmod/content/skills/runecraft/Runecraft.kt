@@ -223,6 +223,7 @@ constructor(
                 } else {
                     RunecraftObjs.rune_essence
                 }
+            // Never noted: runecrafting consumes essence unnoted.
             invAdd(inv, essence)
             statAdvance(
                 stats.mining,

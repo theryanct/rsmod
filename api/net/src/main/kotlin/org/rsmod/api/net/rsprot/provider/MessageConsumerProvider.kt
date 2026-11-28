@@ -7,8 +7,11 @@ import net.rsprot.protocol.game.incoming.buttons.If3Button
 import net.rsprot.protocol.game.incoming.buttons.IfButtonD
 import net.rsprot.protocol.game.incoming.buttons.IfButtonT
 import net.rsprot.protocol.game.incoming.locs.OpLoc
-import net.rsprot.protocol.game.incoming.locs.OpLoc6
-import net.rsprot.protocol.game.incoming.locs.OpLocT
+import net.rsprot.protocol.game.incoming.locs.OpLoc6V1
+import net.rsprot.protocol.game.incoming.locs.OpLoc6V2
+import net.rsprot.protocol.game.incoming.locs.OpLocTV1
+import net.rsprot.protocol.game.incoming.locs.OpLocTV2
+import net.rsprot.protocol.game.incoming.locs.OpLocV3
 import net.rsprot.protocol.game.incoming.messaging.MessagePrivate
 import net.rsprot.protocol.game.incoming.messaging.MessagePublic
 import net.rsprot.protocol.game.incoming.misc.client.MapBuildComplete
@@ -51,8 +54,11 @@ import org.rsmod.api.net.rsprot.handlers.MessagePublicHandler
 import org.rsmod.api.net.rsprot.handlers.MoveGameClickHandler
 import org.rsmod.api.net.rsprot.handlers.MoveMinimapClickHandler
 import org.rsmod.api.net.rsprot.handlers.OpLoc6Handler
+import org.rsmod.api.net.rsprot.handlers.OpLoc6V2Handler
 import org.rsmod.api.net.rsprot.handlers.OpLocHandler
 import org.rsmod.api.net.rsprot.handlers.OpLocTHandler
+import org.rsmod.api.net.rsprot.handlers.OpLocTV2Handler
+import org.rsmod.api.net.rsprot.handlers.OpLocV3Handler
 import org.rsmod.api.net.rsprot.handlers.OpNpc6Handler
 import org.rsmod.api.net.rsprot.handlers.OpNpcHandler
 import org.rsmod.api.net.rsprot.handlers.OpNpcTHandler
@@ -79,6 +85,9 @@ constructor(
     private val opLoc: OpLocHandler,
     private val opLocT: OpLocTHandler,
     private val opLoc6: OpLoc6Handler,
+    private val opLoc6V2: OpLoc6V2Handler,
+    private val opLocTV2: OpLocTV2Handler,
+    private val opLocV3: OpLocV3Handler,
     private val clientCheat: ClientCheatHandler,
     private val opNpc: OpNpcHandler,
     private val opNpcT: OpNpcTHandler,
@@ -111,8 +120,11 @@ constructor(
         builder.addListener(MoveGameClick::class.java, moveGameClick)
         builder.addListener(MoveMinimapClick::class.java, moveMinimapClick)
         builder.addListener(OpLoc::class.java, opLoc)
-        builder.addListener(OpLocT::class.java, opLocT)
-        builder.addListener(OpLoc6::class.java, opLoc6)
+        builder.addListener(OpLocV3::class.java, opLocV3)
+        builder.addListener(OpLocTV1::class.java, opLocT)
+        builder.addListener(OpLocTV2::class.java, opLocTV2)
+        builder.addListener(OpLoc6V1::class.java, opLoc6)
+        builder.addListener(OpLoc6V2::class.java, opLoc6V2)
         builder.addListener(ClientCheat::class.java, clientCheat)
         builder.addListener(OpNpc::class.java, opNpc)
         builder.addListener(OpNpcT::class.java, opNpcT)

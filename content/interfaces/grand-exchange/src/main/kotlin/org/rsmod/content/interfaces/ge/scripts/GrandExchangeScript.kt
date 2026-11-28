@@ -278,7 +278,7 @@ constructor(
         val price = marketPrice(type)
         player.setVar(GeVarps.newoffer_obj, type.id)
         player.setVar(GeVarps.last_searched, type.id)
-        player.setVar(GeVarBits.newoffer_price, price)
+        player.setVar(GeVarps.newoffer_price, price)
         val quantity = if (player.isBuying) 1 else available(type).coerceAtLeast(1)
         player.setVar(GeVarBits.newoffer_quantity, quantity)
         ifSetText(GeComponents.setup_marketprice, "%,d coins".format(price))
@@ -337,7 +337,7 @@ constructor(
             }
             in GeConstants.SETUP_PRICE_FIRST..GeConstants.SETUP_PRICE_LAST -> {
                 // Offers here always trade at the market price: undo the client's local change.
-                player.setVar(GeVarBits.newoffer_price, marketPrice(type))
+                player.setVar(GeVarps.newoffer_price, marketPrice(type))
                 mes("Offers on this server always trade at the guide price.")
             }
         }
@@ -391,7 +391,7 @@ constructor(
 
     /** Server copy of `script5156` ("All" when buying): as many as the coins carried can pay. */
     private fun ProtectedAccess.buyAll() {
-        val price = player.vars[GeVarBits.newoffer_price]
+        val price = player.vars[GeVarps.newoffer_price]
         val coins = invTotal(inv, objs.coins)
         val quantity = if (price > 0) maxOf(1, coins / price) else 1
         player.setVar(GeVarBits.newoffer_quantity, quantity)
@@ -743,7 +743,7 @@ constructor(
         setVar(GeVarps.newoffer_obj, -1)
         setVar(GeVarBits.newoffer_type, if (buy) 0 else 1)
         setVar(GeVarBits.newoffer_quantity, 0)
-        setVar(GeVarBits.newoffer_price, 0)
+        setVar(GeVarps.newoffer_price, 0)
     }
 
     /*

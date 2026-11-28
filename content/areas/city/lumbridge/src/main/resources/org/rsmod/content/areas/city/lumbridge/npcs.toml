@@ -1243,16 +1243,8 @@ npc = 'medium_frog_nodrops'
 coords = '0_50_49_29_28'
 
 [[spawn]]
-npc = 'aide_tutor_mining'
-coords = '0_50_49_27_10'
-
-[[spawn]]
 npc = 'mistmyst_hewey'
 coords = '0_50_49_37_17'
-
-[[spawn]]
-npc = 'aide_tutor_fishing'
-coords = '0_50_49_45_21'
 
 [[spawn]]
 npc = '0_50_49_saltfish'
@@ -1277,10 +1269,6 @@ coords = '0_50_49_46_19'
 [[spawn]]
 npc = 'count_check'
 coords = '0_50_49_38_63'
-
-[[spawn]]
-npc = 'aide_tutor_cooking'
-coords = '0_50_49_34_60'
 
 [[spawn]]
 npc = 'mistmyst_abigale'
@@ -1771,14 +1759,6 @@ npc = 'deadman_banker_blue_south'
 coords = '2_50_50_9_22'
 
 [[spawn]]
-npc = 'aide_tutor_woodsman'
-coords = '0_50_50_28_45'
-
-[[spawn]]
-npc = 'aide_tutor_smithing_apprentice'
-coords = '0_50_50_27_53'
-
-[[spawn]]
 npc = 'lost_tribe_sigmund'
 coords = '1_50_50_11_19'
 
@@ -1819,28 +1799,12 @@ npc = '0_50_50_freshfish'
 coords = '0_50_50_39_41'
 
 [[spawn]]
-npc = 'aide_tutor_ranging'
-coords = '0_50_50_18_39'
-
-[[spawn]]
-npc = 'aide_tutor_prayer'
-coords = '0_50_50_43_14'
-
-[[spawn]]
 npc = 'lost_property_merchant_combatty'
 coords = '0_50_50_23_20'
 
 [[spawn]]
 npc = 'lost_property_merchant_standard'
 coords = '0_50_50_30_15'
-
-[[spawn]]
-npc = 'aide_tutor_melee'
-coords = '0_50_50_19_38'
-
-[[spawn]]
-npc = 'aide_tutor_magic'
-coords = '0_50_50_17_38'
 
 [[spawn]]
 npc = 'lumbridge_guide'
@@ -1863,7 +1827,7 @@ npc = 'ironman_tutor_1'
 coords = '0_50_50_29_28'
 
 [[spawn]]
-npc = 'hatius_lumbridge_diary'
+npc = 'hatius_cosaintus'
 coords = '0_50_50_34_14'
 
 [[spawn]]
@@ -1907,10 +1871,6 @@ npc = 'lumbridge_guide2_woman'
 coords = '0_50_50_35_25'
 
 [[spawn]]
-npc = 'aide_tutor_crafting'
-coords = '1_50_50_10_12'
-
-[[spawn]]
 npc = 'cook'
 coords = '0_50_50_8_15'
 
@@ -1929,14 +1889,6 @@ coords = '0_50_50_32_41'
 [[spawn]]
 npc = 'canoeing_bill'
 coords = '0_50_50_44_37'
-
-[[spawn]]
-npc = 'aide_tutor_banker'
-coords = '2_50_50_8_22'
-
-[[spawn]]
-npc = 'aide_tutor_clues'
-coords = '0_50_50_29_36'
 
 [[spawn]]
 npc = 'hundred_aris2'

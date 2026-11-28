@@ -1,12 +1,9 @@
 package org.rsmod.api.player.output
 
-import net.rsprot.protocol.game.outgoing.misc.player.UpdateStockMarketSlot
+import net.rsprot.protocol.game.outgoing.misc.player.UpdateStockMarketSlotV2
 import org.rsmod.game.entity.Player
 
-/**
- * Grand Exchange slot packets. Rev 233 only has `UpdateStockMarketSlot` (32-bit prices); after the
- * rev 243 cutover switch these to `UpdateStockMarketSlotV2`.
- */
+/** Grand Exchange slot packets (rev 243 `UpdateStockMarketSlotV2`: 64-bit price and gold). */
 public object StockMarket {
     /** Offer state bits read by the client (`stockmarket_*` commands): `state & 7`, sell = bit 3. */
     public const val STATE_FINISHED: Int = 5
@@ -23,20 +20,20 @@ public object StockMarket {
         completedGold: Int,
     ) {
         val update =
-            UpdateStockMarketSlot.SetStockMarketSlot(
+            UpdateStockMarketSlotV2.SetStockMarketSlot(
                 status = status,
                 obj = obj,
-                price = price,
+                price = price.toLong(),
                 count = count,
                 completedCount = completedCount,
-                completedGold = completedGold,
+                completedGold = completedGold.toLong(),
             )
-        player.client.write(UpdateStockMarketSlot(slot, update))
+        player.client.write(UpdateStockMarketSlotV2(slot, update))
     }
 
     public fun resetSlot(player: Player, slot: Int) {
         player.client.write(
-            UpdateStockMarketSlot(slot, UpdateStockMarketSlot.ResetStockMarketSlot)
+            UpdateStockMarketSlotV2(slot, UpdateStockMarketSlotV2.ResetStockMarketSlot)
         )
     }
 }

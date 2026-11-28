@@ -1,7 +1,10 @@
 package org.rsmod.api.player.ui
 
+import java.util.WeakHashMap
 import org.rsmod.api.config.constants
+import org.rsmod.api.player.input.PauseButtonOps
 import org.rsmod.api.player.output.runClientScript
+import org.rsmod.api.type.editors.comp.ComponentEditor
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.events.EventBus
@@ -37,8 +40,8 @@ public object SkillMultiVerb {
 }
 
 /**
- * Interface refs for the skillmulti chatbox, kept in one place. Rev 233 names 10 item slots
- * (`a`-`j`); rev 243 names 18 (`a`-`r`): extend [items] after the 243 cutover.
+ * Interface refs for the skillmulti chatbox, kept in one place. Rev 243 names 18 item slots
+ * (`a`-`r`), matching the 18 products the setup script takes.
  */
 internal object SkillMultiRefs : InterfaceReferences() {
     val skillmulti = find("skillmulti")
@@ -46,8 +49,49 @@ internal object SkillMultiRefs : InterfaceReferences() {
 
 internal object SkillMultiComponents : ComponentReferences() {
     val items: List<ComponentType> =
-        listOf("a", "b", "c", "d", "e", "f", "g", "h", "i", "j").map { find("skillmulti:$it") }
+        ('a'..'r').map { find("skillmulti:$it") }
 }
+
+/**
+ * Right-click quantity ops on the item buttons (OSRS only has the left-click verb, op1, which the
+ * client script sets). Ops 2-6 are added to the cache; the client sends them as plain button ops
+ * and [PauseButtonOps] turns them into the pause-button resume the dialog waits for.
+ */
+internal object SkillMultiEdits : ComponentEditor() {
+    init {
+        for (item in SkillMultiComponents.items) {
+            editOps(
+                item,
+                2 to "Make-1",
+                3 to "Make-5",
+                4 to "Make-10",
+                5 to "Make-X",
+                6 to "Make-All",
+            )
+        }
+    }
+}
+
+/** Resume subcomponents for the Make-X / Make-All ops (outside the 1-28 pause-button range). */
+internal const val SKILLMULTI_SUB_MAKE_X = 1001
+internal const val SKILLMULTI_SUB_MAKE_ALL = 1002
+
+private fun skillMultiOpSub(op: Int): Int? =
+    when (op) {
+        2 -> 1
+        3 -> 5
+        4 -> 10
+        5 -> SKILLMULTI_SUB_MAKE_X
+        6 -> SKILLMULTI_SUB_MAKE_ALL
+        else -> null
+    }
+
+/**
+ * Last quantity each player picked this session ([SKILLMULTI_REMEMBER_ALL] = "All"). The dialog
+ * defaults to All until the player picks something else, like OSRS. Weak keys drop on logout.
+ */
+internal val skillMultiLastQuantity = WeakHashMap<Player, Int>()
+internal const val SKILLMULTI_REMEMBER_ALL = Int.MAX_VALUE
 
 /** Max products the client script takes; the interface may name fewer slots (see refs). */
 internal const val SKILLMULTI_SCRIPT_SLOTS = 18
@@ -78,5 +122,6 @@ internal fun Player.ifSkillMulti(
     // The client resumes with the clicked slot and sub = chosen quantity (1-28).
     for (slot in SkillMultiComponents.items.take(products.size)) {
         ifSetEvents(slot, 0..SKILLMULTI_MAX_QUANTITY, IfEvent.PauseButton)
+        PauseButtonOps.register(slot, ::skillMultiOpSub)
     }
 }

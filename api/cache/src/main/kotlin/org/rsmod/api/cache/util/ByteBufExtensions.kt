@@ -36,6 +36,13 @@ public fun ByteBuf.writeRawParams(params: Map<Int, Any>): ByteBuf {
                 writeInt(value)
             }
 
+            // Rev 237+ long params (type 2).
+            is Long -> {
+                writeByte(2)
+                writeMedium(key)
+                writeLong(value)
+            }
+
             else -> error("Invalid param value: $value.")
         }
     }
@@ -46,13 +53,15 @@ public fun ByteBuf.readRawParams(): MutableMap<Int, Any> {
     val parameters = mutableMapOf<Int, Any>()
     val count = readUnsignedByte().toInt()
     repeat(count) {
-        val isString = readBoolean()
+        // Value type: 0 = int, 1 = string, 2 = long (rev 237+).
+        val type = readUnsignedByte().toInt()
         val key = readUnsignedMedium()
-        if (isString) {
-            parameters[key] = readString()
-        } else {
-            parameters[key] = readInt()
-        }
+        parameters[key] =
+            when (type) {
+                1 -> readString()
+                2 -> readLong()
+                else -> readInt()
+            }
     }
     return parameters
 }

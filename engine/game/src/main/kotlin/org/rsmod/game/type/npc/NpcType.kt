@@ -12,6 +12,7 @@ import org.rsmod.game.type.category.CategoryType
 import org.rsmod.game.type.content.ContentGroupType
 import org.rsmod.game.type.param.ParamType
 import org.rsmod.game.type.util.ParamMap
+import org.rsmod.game.type.util.RawOpcodes
 import org.rsmod.game.type.util.resolve
 
 public sealed class NpcType : CacheType()
@@ -110,6 +111,8 @@ public data class UnpackedNpcType(
     public val regenRate: Int,
     override var internalId: Int?,
     override var internalName: String?,
+    /** Client-only opcodes kept verbatim for js5 re-encoding (not part of identity). */
+    public val clientRaw: RawOpcodes? = null,
 ) : NpcType() {
     private val identityHash by lazy { computeIdentityHash() }
 

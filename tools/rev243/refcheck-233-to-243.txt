@@ -1,0 +1,42 @@
+refs scanned: 3227
+
+## npc: 7 broken (names removed in new cache: 29)
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:16  aide_tutor_banker
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:23  aide_tutor_clues
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:24  aide_tutor_prayer
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:25  hatius_lumbridge_diary
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:27  aide_tutor_woodsman
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:28  aide_tutor_smithing_apprentice
+  .\content\areas\city\lumbridge\src\main\kotlin\org\rsmod\content\areas\city\lumbridge\configs\LumbridgeNpcs.kt:39  aide_tutor_fishing
+
+## varbit: 3 broken (names removed in new cache: 1861)
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseVarBits.kt:15  stamina_duration_extra
+  .\content\interfaces\skill-guides\src\main\kotlin\org\rsmod\content\interfaces\skill\guides\configs\SkillGuideVarps.kt:8  skill_guide_skill
+  .\content\interfaces\skill-guides\src\main\kotlin\org\rsmod\content\interfaces\skill\guides\configs\SkillGuideVarps.kt:9  skill_guide_subsection
+
+## seq: 4 broken (names removed in new cache: 38)
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseSeqs.kt:66  shortchatneu1
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseSeqs.kt:83  chatidleneu1
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseSeqs.kt:110  evilidle1
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseSeqs.kt:117  evillaugh1
+
+## interface: 1 broken (names removed in new cache: 8)
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeInterfaces.kt:9  canoe_map
+
+## component: 14 broken (names removed in new cache: 603)
+  .\api\config\src\main\kotlin\org\rsmod\api\config\refs\BaseComponents.kt:17  toplevel_osrs_stretch:ehc_listener
+  .\api\music-plugin\src\main\kotlin\org\rsmod\api\music\plugin\configs\MusicComponents.kt:10  music:manual
+  .\api\music-plugin\src\main\kotlin\org\rsmod\api\music\plugin\configs\MusicComponents.kt:11  music:random
+  .\api\shops\src\main\kotlin\org\rsmod\api\shops\config\ShopConfigs.kt:20  shopmain:desktop_instructions
+  .\content\interfaces\bank\src\main\kotlin\org\rsmod\content\interfaces\bank\configs\BankInterfaces.kt:46  bankmain:swap
+  .\content\interfaces\bank\src\main\kotlin\org\rsmod\content\interfaces\bank\configs\BankInterfaces.kt:47  bankmain:insert
+  .\content\interfaces\bank\src\main\kotlin\org\rsmod\content\interfaces\bank\configs\BankInterfaces.kt:48  bankmain:item
+  .\content\interfaces\settings\src\main\kotlin\org\rsmod\content\interfaces\settings\configs\SettingComponents.kt:32  settings_side:music_toggle
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:14  canoe_map:edgeville
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:15  canoe_map:lumbridge
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:16  canoe_map:champions
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:17  canoe_map:barbarian
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:18  canoe_map:wilderness
+  .\content\travel\canoe\src\main\kotlin\org\rsmod\content\travel\canoe\configs\CanoeComponents.kt:19  canoe_map:sanctuary
+
+TOTAL broken: 29

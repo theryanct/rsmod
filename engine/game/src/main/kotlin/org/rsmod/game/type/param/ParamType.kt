@@ -4,6 +4,7 @@ import kotlin.reflect.KClass
 import org.rsmod.game.type.CacheType
 import org.rsmod.game.type.HashedCacheType
 import org.rsmod.game.type.literal.CacheVarLiteral
+import org.rsmod.game.type.util.RawOpcodes
 
 public sealed class ParamType<T> : CacheType() {
     internal abstract var typedDefault: T?
@@ -56,6 +57,8 @@ public data class UnpackedParamType<T : Any>(
     override var typedDefault: T?,
     override var internalId: Int?,
     override var internalName: String?,
+    /** Client-only opcodes kept verbatim for js5 re-encoding (not part of identity). */
+    public val clientRaw: RawOpcodes? = null,
 ) : ParamType<T>() {
     public fun computeIdentityHash(): Long {
         var result = (typeLiteral?.char?.hashCode()?.toLong() ?: 0)

@@ -8,6 +8,7 @@ import org.rsmod.game.type.HashedCacheType
 import org.rsmod.game.type.content.ContentGroupType
 import org.rsmod.game.type.param.ParamType
 import org.rsmod.game.type.util.ParamMap
+import org.rsmod.game.type.util.RawOpcodes
 import org.rsmod.game.type.util.resolve
 
 public sealed class LocType : CacheType()
@@ -91,6 +92,8 @@ public data class UnpackedLocType(
     public val contentGroup: Int,
     override var internalId: Int?,
     override var internalName: String?,
+    /** Client-only opcodes kept verbatim for js5 re-encoding (not part of identity). */
+    public val clientRaw: RawOpcodes? = null,
 ) : LocType() {
     private val identityHash by lazy { computeIdentityHash() }
 

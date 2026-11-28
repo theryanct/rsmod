@@ -12,6 +12,7 @@ import org.rsmod.api.cache.util.filterTransmit
 import org.rsmod.api.cache.util.writeCoordGrid
 import org.rsmod.api.cache.util.writeNullableLargeSmart
 import org.rsmod.api.cache.util.writeNullableShort
+import org.rsmod.api.cache.util.writeRawOpcodes
 import org.rsmod.api.cache.util.writeRawParams
 import org.rsmod.api.cache.util.writeSmallSmartPlusOne
 import org.rsmod.game.type.npc.NpcTypeBuilder
@@ -54,10 +55,10 @@ public object NpcTypeEncoder {
     public fun encodeJs5(type: UnpackedNpcType, data: ByteBuf, ctx: EncoderContext): Unit =
         with(type) {
             if (models.isNotEmpty()) {
-                data.writeByte(1)
+                data.writeByte(61)
                 data.writeByte(models.size)
                 for (model in models) {
-                    data.writeShort(model)
+                    data.writeInt(model)
                 }
             }
 
@@ -133,10 +134,10 @@ public object NpcTypeEncoder {
             }
 
             if (head.isNotEmpty()) {
-                data.writeByte(60)
+                data.writeByte(62)
                 data.writeByte(head.size)
                 for (i in head.indices) {
-                    data.writeShort(head[i].toInt())
+                    data.writeInt(head[i].toInt())
                 }
             }
 
@@ -299,6 +300,9 @@ public object NpcTypeEncoder {
                 data.writeByte(249)
                 data.writeRawParams(params)
             }
+
+            // Client-only opcodes carried through from the cache (rev 237+).
+            data.writeRawOpcodes(clientRaw)
         }
 
     public fun encodeGame(type: UnpackedNpcType, data: ByteBuf): Unit =

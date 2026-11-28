@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import kotlin.math.abs
 import kotlin.math.min
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.hunterLvl
 import org.rsmod.api.repo.loc.LocRepository
@@ -230,7 +231,7 @@ constructor(
         }
         invDel(inv, HunterObjs.butterfly_jar, 1)
         for (entry in creature.loot) {
-            invAdd(inv, HunterObjs.byName.getValue(entry.obj), entry.min)
+            invAddGathered(HunterObjs.byName.getValue(entry.obj), entry.min)
         }
         statAdvance(stats.hunter, creature.xp * xpMods.get(player, stats.hunter))
         npcRepo.despawn(npc, BUTTERFLY_RESPAWN)

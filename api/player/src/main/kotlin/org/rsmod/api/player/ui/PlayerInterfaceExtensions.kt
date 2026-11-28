@@ -33,6 +33,7 @@ import org.rsmod.api.player.output.ClientScripts.objboxSetButtons
 import org.rsmod.api.player.output.ClientScripts.topLevelChatboxResetBackground
 import org.rsmod.api.player.output.ClientScripts.topLevelMainModalBackground
 import org.rsmod.api.player.output.ClientScripts.topLevelMainModalOpen
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.output.runClientScript
 import org.rsmod.api.player.vars.intVarBit
@@ -154,6 +155,7 @@ public fun Player.ifClose(eventBus: EventBus) {
 public fun Player.ifCloseInputDialog() {
     val coroutine = activeCoroutine ?: return
     if (coroutine.requiresInputDialogAbort()) {
+        GameplayLog.dialog(this) { "cancel reason=button-while-input-dialog" }
         cancelActiveCoroutine()
         client.write(TriggerOnDialogAbort)
     }
@@ -167,6 +169,7 @@ public fun Player.ifCloseInputDialog() {
 private fun Player.cancelActiveDialog() {
     val coroutine = activeCoroutine ?: return
     if (coroutine.requiresPauseDialogAbort() || coroutine.requiresInputDialogAbort()) {
+        GameplayLog.dialog(this) { "cancel reason=interface-closed" }
         cancelActiveCoroutine()
         client.write(TriggerOnDialogAbort)
     }
@@ -279,6 +282,7 @@ private fun Player.openModal(interf: InterfaceType, target: ComponentType, event
     triggerCloseSubs(idComponent, eventBus)
     ui.removeQueuedCloseSub(target)
     ui.modals[idComponent] = idInterface
+    GameplayLog.modal(this) { "open=${interf.internalName ?: interf.id} target=${target.internalName}" }
 
     // Translate any gameframe target component when sent to the client. As far as the server is
     // aware, the interface is being opened on the "base" target component. (when applicable)
@@ -312,6 +316,7 @@ private fun Player.closeModal(interf: InterfaceType, eventBus: EventBus) {
 }
 
 private fun Player.closeModal(interf: UserInterface, target: Component, eventBus: EventBus) {
+    GameplayLog.modal(this) { "close=${interf.id} target=${target.packed}" }
     ui.modals.remove(target)
     ui.events.clear(interf)
 

@@ -9,11 +9,16 @@ import org.openrs2.cache.Cache
 import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.TextUtil
+import org.rsmod.api.cache.util.appendRaw
+import org.rsmod.api.cache.util.rawRecord
 import org.rsmod.api.cache.util.readCoordGrid
 import org.rsmod.api.cache.util.readNullableLargeSmart
 import org.rsmod.api.cache.util.readRawParams
 import org.rsmod.api.cache.util.readUnsignedShortOrNull
 import org.rsmod.api.cache.util.readUnsignedSmallSmartPlusOne
+import org.rsmod.api.cache.util.skipEntityConditionalOp
+import org.rsmod.api.cache.util.skipEntityConditionalSubOp
+import org.rsmod.api.cache.util.skipEntitySubOp
 import org.rsmod.game.entity.npc.NpcMode
 import org.rsmod.game.entity.npc.NpcPatrol
 import org.rsmod.game.entity.npc.NpcPatrolWaypoint
@@ -104,6 +109,36 @@ public object NpcTypeDecoder {
                     repeat(count) { models[it] = data.readUnsignedShort() }
                     this.head = CompactableIntArray(models)
                 }
+                // Rev 237+ int model opcodes.
+                61 -> {
+                    val count = data.readUnsignedByte().toInt()
+                    val models = IntArray(count)
+                    repeat(count) { models[it] = data.readInt() }
+                    this.models = CompactableIntArray(models)
+                }
+                62 -> {
+                    val count = data.readUnsignedByte().toInt()
+                    val models = IntArray(count)
+                    repeat(count) { models[it] = data.readInt() }
+                    this.head = CompactableIntArray(models)
+                }
+                // Client-only opcodes kept verbatim: render priority, idle anim restart, overlap
+                // hiding/tint, depth buffer, footprint size, entity sub/conditional ops.
+                111,
+                129,
+                130,
+                145,
+                147 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) {})
+                126,
+                146 ->
+                    clientRaw = appendRaw(clientRaw, data.rawRecord(code) { readUnsignedShort() })
+                251 -> clientRaw = appendRaw(clientRaw, data.rawRecord(code) { skipEntitySubOp() })
+                252 ->
+                    clientRaw =
+                        appendRaw(clientRaw, data.rawRecord(code) { skipEntityConditionalOp() })
+                253 ->
+                    clientRaw =
+                        appendRaw(clientRaw, data.rawRecord(code) { skipEntityConditionalSubOp() })
                 74 -> attack = data.readUnsignedShort()
                 75 -> defence = data.readUnsignedShort()
                 76 -> strength = data.readUnsignedShort()

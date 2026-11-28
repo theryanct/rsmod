@@ -9,6 +9,7 @@ import org.rsmod.game.type.util.GenericPropertySelector.selectPredicate
 import org.rsmod.game.type.util.GenericPropertySelector.selectShortArray
 import org.rsmod.game.type.util.MergeableCacheBuilder
 import org.rsmod.game.type.util.ParamMap
+import org.rsmod.game.type.util.RawOpcodes
 
 @DslMarker private annotation class LocBuilderDsl
 
@@ -66,6 +67,8 @@ public class LocTypeBuilder(public var internal: String? = null) {
     public var fixLocAnimAfterLocChange: Boolean? = null
     public var paramMap: ParamMap? = null
     public var contentGroup: Int? = null
+
+    public var clientRaw: RawOpcodes? = null
 
     public fun build(id: Int): UnpackedLocType {
         val internal = checkNotNull(internal) { "`internal` must be set." }
@@ -165,6 +168,7 @@ public class LocTypeBuilder(public var internal: String? = null) {
             contentGroup = contentGroup,
             internalId = id,
             internalName = internal,
+            clientRaw = clientRaw,
         )
     }
 
@@ -312,6 +316,7 @@ public class LocTypeBuilder(public var internal: String? = null) {
                 contentGroup = contentGroup,
                 internalId = internalId,
                 internalName = internalName,
+                clientRaw = RawOpcodes.merge(edit.clientRaw, base.clientRaw),
             )
         }
     }

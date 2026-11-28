@@ -3,12 +3,16 @@ package org.rsmod.api.net.rsprot.handlers
 import jakarta.inject.Inject
 import net.rsprot.protocol.game.incoming.resumed.ResumePNameDialog
 import org.rsmod.api.player.input.ResumePNameDialogInput
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.PlayerList
 
 class ResumePNameDialogHandler @Inject constructor(private val playerList: PlayerList) :
     MessageHandler<ResumePNameDialog> {
     override fun handle(player: Player, message: ResumePNameDialog) {
+        if (player.activeCoroutine?.isAwaiting(ResumePNameDialogInput::class) != true) {
+            GameplayLog.unhandled(player) { "resume-without-dialog=ResumePNameDialog $message" }
+        }
         val result = find(message.name)
         val input = ResumePNameDialogInput(result)
         player.resumeActiveCoroutine(input)

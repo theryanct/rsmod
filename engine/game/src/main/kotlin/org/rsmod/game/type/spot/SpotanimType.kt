@@ -2,6 +2,7 @@ package org.rsmod.game.type.spot
 
 import org.rsmod.game.type.CacheType
 import org.rsmod.game.type.HashedCacheType
+import org.rsmod.game.type.util.RawOpcodes
 
 public sealed class SpotanimType : CacheType()
 
@@ -49,6 +50,8 @@ public data class UnpackedSpotanimType(
     public val retexD: ShortArray,
     override var internalId: Int?,
     override var internalName: String?,
+    /** Client-only opcodes kept verbatim for js5 re-encoding (not part of identity). */
+    public val clientRaw: RawOpcodes? = null,
 ) : SpotanimType() {
     private val identityHash by lazy { computeIdentityHash() }
 

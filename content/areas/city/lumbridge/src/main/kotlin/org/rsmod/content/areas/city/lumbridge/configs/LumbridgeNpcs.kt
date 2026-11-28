@@ -11,21 +11,16 @@ import org.rsmod.map.CoordGrid
 typealias lumbridge_npcs = LumbridgeNpcs
 
 object LumbridgeNpcs : NpcReferences() {
-    val barfy_bill = find("canoeing_bill", 3103331168324788094)
+    val barfy_bill = find("canoeing_bill", 2410502415119158536)
     val banker = find("deadman_banker_blue_south", 1536012232472220879)
-    val banker_tutor = find("aide_tutor_banker", 5183772333668041643)
     val shop_keeper = find("generalshopkeeper1", 2140424768095690499)
     val shop_assistant = find("generalassistant1", 2185693774375842236)
     val gee = find("lumbridge_guide2_man", 814251163147109342)
     val donie = find("lumbridge_guide2_woman", 3864107068297254351)
     val hans = find("hans", 6542439647165622063)
-    val bartender = find("ram_bartender", 3782636636485213848)
-    val arthur_the_clue_hunter = find("aide_tutor_clues", 2398692310679668222)
-    val prayer_tutor = find("aide_tutor_prayer", 1945582437385617574)
-    val hatius_lumbridge_diary = find("hatius_lumbridge_diary", 7638020467539300041)
+    val bartender = find("ram_bartender", 8992800129813020972)
+    val hatius_lumbridge_diary = find("hatius_cosaintus")
     val bob = find("bob", 852523917703846821)
-    val woodsman_tutor = find("aide_tutor_woodsman", 7317297890904607119)
-    val smithing_apprentice = find("aide_tutor_smithing_apprentice", 4852549530127422344)
     val father_aereck = find("father_aereck", 1703535979713856985)
     val cook = find("cook", 817286823331370240)
     val perdu = find("lost_property_merchant_standard", 4542005190366269979)
@@ -36,7 +31,6 @@ object LumbridgeNpcs : NpcReferences() {
     val veos = find("veos_lumbridge", 3697975897058386361)
     val adventurer_jon = find("ap_guide_parent", 8049664089518232275)
     val hewey = find("mistmyst_hewey", 7376540171675674022)
-    val fishing_tutor = find("aide_tutor_fishing", 4335984535090215880)
     val millie = find("millie_the_miller", 89073509135537075)
 }
 
@@ -48,9 +42,6 @@ internal object LumbridgeNpcEditor : NpcEditor() {
 
         edit(lumbridge_npcs.banker) { contentGroup = content.banker }
 
-        edit(lumbridge_npcs.banker_tutor) { contentGroup = content.banker_tutor }
-
-        edit(lumbridge_npcs.prayer_tutor) { moveRestrict = indoors }
 
         edit(lumbridge_npcs.father_aereck) { moveRestrict = indoors }
 
@@ -96,18 +87,10 @@ internal object LumbridgeNpcEditor : NpcEditor() {
             wanderRange = 0
         }
 
-        edit(lumbridge_npcs.arthur_the_clue_hunter) {
-            respawnDir = north
-            wanderRange = 0
-            timer = 20
-        }
-
         edit(lumbridge_npcs.bartender) {
             respawnDir = west
             wanderRange = 0
         }
-
-        edit(lumbridge_npcs.smithing_apprentice) { moveRestrict = indoors }
 
         edit(lumbridge_npcs.veos) {
             respawnDir = south
@@ -120,11 +103,6 @@ internal object LumbridgeNpcEditor : NpcEditor() {
         }
 
         edit(lumbridge_npcs.hewey) {
-            respawnDir = east
-            wanderRange = 0
-        }
-
-        edit(lumbridge_npcs.fishing_tutor) {
             respawnDir = east
             wanderRange = 0
         }

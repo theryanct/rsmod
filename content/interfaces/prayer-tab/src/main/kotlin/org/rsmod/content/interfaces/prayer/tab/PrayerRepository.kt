@@ -7,6 +7,7 @@ import org.rsmod.content.interfaces.prayer.tab.configs.prayer_params
 import org.rsmod.game.enums.EnumTypeMapResolver
 import org.rsmod.game.type.comp.ComponentType
 import org.rsmod.game.type.enums.EnumType
+import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 
 class PrayerRepository(
@@ -104,12 +105,12 @@ class PrayerRepository(
         return collisions
     }
 
-    private fun load(prayers: Iterable<Prayer>, enumType: EnumType<Int, Boolean>): List<Prayer> {
+    private fun load(prayers: Iterable<Prayer>, enumType: EnumType<ObjType, Boolean>): List<Prayer> {
         val enum = enumResolver[enumType].filterValuesNotNull()
         val ids = hashSetOf<Int>()
-        for ((id, flag) in enum) {
+        for ((obj, flag) in enum) {
             if (flag) {
-                ids += id
+                ids += objTypes[obj].param(prayer_params.id)
             }
         }
         return prayers.filter { it.id in ids }

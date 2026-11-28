@@ -8,6 +8,7 @@ import org.rsmod.api.cache.Js5Archives
 import org.rsmod.api.cache.Js5Configs
 import org.rsmod.api.cache.util.EncoderContext
 import org.rsmod.api.cache.util.encodeConfig
+import org.rsmod.api.cache.util.writeRawOpcodes
 import org.rsmod.game.type.param.ParamTypeBuilder
 import org.rsmod.game.type.param.UnpackedParamType
 
@@ -68,6 +69,9 @@ public object ParamTypeEncoder {
                 data.writeByte(5)
                 data.writeString(it)
             }
+
+            // Client-only opcodes carried through from the cache (rev 237+).
+            data.writeRawOpcodes(clientRaw)
         }
 
     public fun encodeGame(type: UnpackedParamType<*>, data: ByteBuf): Unit =

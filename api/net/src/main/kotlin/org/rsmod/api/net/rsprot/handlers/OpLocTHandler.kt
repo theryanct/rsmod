@@ -2,7 +2,8 @@ package org.rsmod.api.net.rsprot.handlers
 
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
-import net.rsprot.protocol.game.incoming.locs.OpLocT
+import net.rsprot.protocol.game.incoming.locs.OpLocTV1
+import net.rsprot.protocol.game.incoming.locs.OpLocTV2
 import org.rsmod.api.net.rsprot.player.InterfaceEvents
 import org.rsmod.api.player.interact.LocTInteractions
 import org.rsmod.api.player.output.clearMapFlag
@@ -32,28 +33,47 @@ constructor(
     private val componentTypes: ComponentTypeList,
     private val interfaceTypes: InterfaceTypeList,
     private val locInteractions: LocTInteractions,
-) : MessageHandler<OpLocT> {
+) : MessageHandler<OpLocTV1> {
     private val logger = InlineLogger()
 
-    private val OpLocT.asComponent: Component
-        get() = Component(selectedInterfaceId, selectedComponentId)
+    override fun handle(player: Player, message: OpLocTV1): Unit =
+        handleOpT(
+            player,
+            message.id,
+            message.x,
+            message.z,
+            message.controlKey,
+            Component(message.selectedInterfaceId, message.selectedComponentId),
+            message.selectedSub,
+            message.selectedObj,
+        )
 
-    override fun handle(player: Player, message: OpLocT) {
+    /** Shared by [OpLocTV1] (16-bit loc ids) and [OpLocTV2] (int loc ids) since rev 243. */
+    internal fun handleOpT(
+        player: Player,
+        id: Int,
+        x: Int,
+        z: Int,
+        controlKey: Boolean,
+        selectedComponent: Component,
+        selectedSub: Int,
+        selectedObj: Int,
+    ) {
         if (player.isDelayed) {
             return
         }
 
-        val coords = CoordGrid(message.x, message.z, player.level)
-        val loc = locRegistry.findType(coords, message.id)
+        val coords = CoordGrid(x, z, player.level)
+        val loc = locRegistry.findType(coords, id)
         if (loc == null) {
             player.clearMapFlag()
             player.clearPendingAction(eventBus)
             return
         }
-        val type = locTypes[message.id] ?: return
-        val interfaceType = interfaceTypes[message.asComponent]
-        val componentType = componentTypes[message.asComponent]
-        val objType = message.selectedObj.takeIf { it != -1 }?.let(objTypes::get)
+        val type = locTypes[id] ?: return
+        val interfaceType = interfaceTypes[selectedComponent]
+        val componentType = componentTypes[selectedComponent]
+        val objType = selectedObj.takeIf { it != -1 }?.let(objTypes::get)
 
         val isValidInterface =
             player.ui.containsOverlay(interfaceType) || player.ui.containsModal(interfaceType)
@@ -63,7 +83,7 @@ constructor(
             return
         }
 
-        val comsub = message.selectedSub
+        val comsub = selectedSub
 
         val targetEnabled =
             InterfaceEvents.isEnabled(player.ui, componentType, comsub, IfEvent.TgtLoc)
@@ -73,7 +93,7 @@ constructor(
             return
         }
 
-        val speed = if (message.controlKey) player.ctrlMoveSpeed() else null
+        val speed = if (controlKey) player.ctrlMoveSpeed() else null
         val boundLoc = BoundLocInfo(loc, type)
         val opTrigger =
             locInteractions.hasOpTrigger(player, boundLoc, type, objType, componentType, comsub)
@@ -109,4 +129,20 @@ constructor(
                 "component=$componentType, obj=$objType"
         }
     }
+}
+
+
+class OpLocTV2Handler @Inject constructor(private val delegate: OpLocTHandler) :
+    MessageHandler<OpLocTV2> {
+    override fun handle(player: Player, message: OpLocTV2): Unit =
+        delegate.handleOpT(
+            player,
+            message.id,
+            message.x,
+            message.z,
+            message.controlKey,
+            Component(message.selectedInterfaceId, message.selectedComponentId),
+            message.selectedSub,
+            message.selectedObj,
+        )
 }
