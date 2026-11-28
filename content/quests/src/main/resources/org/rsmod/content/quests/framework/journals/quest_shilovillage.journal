@@ -1,0 +1,183 @@
+# Authored (not Wiki): OSRS-style journal for quest_shilovillage (no Wiki journal transcript), from the Wiki walkthrough; stages are ShiloVillage's.
+before	<col=000080>I can start this quest by speaking to <col=800000>Mosol Rei</col> outside <col=800000>Shilo Village</col> in southern <col=800000>Karamja</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Jungle Potion
+req	Level 32 Agility
+req	Level 20 Crafting
+req	Level 4 Smithing
+step	1	1	Authored
+line	<col=000080>Mosol Rei gave me a <col=800000>Wampum belt</col> for <col=800000>Trufitus</col> in <col=800000>Tai Bwo Wannai</col>. Trufitus thinks the <col=800000>Legend of Rashiliyia</col> was kept in the vanished temple of <col=800000>Ah Za Rhoon</col>, 'Magnificence floating on water'. I should look for it somewhere between large bodies of water.</col>
+step	2	2	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<col=000080>I found a <col=800000>fissure</col> under a mound of earth east of Shilo Village and dropped a light into it. There is a long drop and a good anchor point for a <col=800000>rope</col>.</col>
+step	3	3	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<col=000080>I tied a rope to the fissure. Below lies the temple of <col=800000>Ah Za Rhoon</col>; I should search it for anything about <col=800000>Zadimus</col> or <col=800000>Rashiliyia</col> and show it to <col=800000>Trufitus</col>.</col>
+step	4	4	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<col=000080>I laid <col=800000>Zadimus'</col> remains to rest by the tribal statue in Tai Bwo Wannai. His spirit gave me a <col=800000>bone shard</col> and said, 'I am the key, but only kin may approach her.' I should ask <col=800000>Trufitus</col> about it.</col>
+step	5	5	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<col=000080>Trufitus says Rashiliyia's only kin was her son <col=800000>Bervirius</col>, entombed on a small island to the south-west. Something of his may let me approach her.</col>
+step	6	6	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<col=000080>In the <col=800000>Tomb of Bervirius</col> I found a <col=800000>sword pommel</col>, a <col=800000>locating crystal</col> and some notes. Rashiliyia spared those who wore <col=800000>bronze necklaces</col>; the notes say her tomb lies <col=800000>north of Ah Za Rhoon</col>.</col>
+step	7	7	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<col=000080>My <col=800000>bone key</col> opened the hidden doors into <col=800000>Rashiliyia's Tomb</col>. I must wear the <col=800000>Beads of the Dead</col> and find her resting place.</col>
+step	8	8	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<col=000080>The <col=800000>tomb doors</col> have recesses for bones. I have filled <col=800000>one</col> of the three.</col>
+step	9	9	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<col=000080>The <col=800000>tomb doors</col> have recesses for bones. I have filled <col=800000>two</col> of the three.</col>
+step	10	10	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<col=000080>The tomb doors are open. I should search the <col=800000>dolmen</col> inside.</col>
+step	11	11	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<str>I filled the tomb doors' recesses with bones and they opened.</str>
+line	
+line	<col=000080>I destroyed <col=800000>Nazastarool's</col> zombie form, but he rose again as a giant skeleton!</col>
+step	12	12	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<str>I filled the tomb doors' recesses with bones and they opened.</str>
+line	
+line	<col=000080>I destroyed <col=800000>Nazastarool's</col> skeleton, but his ghost has risen to fight me!</col>
+step	13	13	Authored
+line	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+line	
+line	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+line	
+line	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+line	
+line	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+line	
+line	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+line	
+line	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+line	
+line	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+line	
+line	<str>I filled the tomb doors' recesses with bones and they opened.</str>
+line	
+line	<col=000080>I defeated <col=800000>Nazastarool</col> and found <col=800000>Rashiliyia's remains</col>. I must find a way to put her spirit to rest; perhaps her son's tomb is the place.</col>
+done	<str>Mosol Rei gave me a Wampum belt for Trufitus in Tai Bwo Wannai. Trufitus thinks the Legend of Rashiliyia was kept in the vanished temple of Ah Za Rhoon.</str>
+done	<str>I found a fissure under a mound of earth east of Shilo Village and dropped a light into it.</str>
+done	<str>I tied a rope to the fissure and climbed down into the temple of Ah Za Rhoon.</str>
+done	<str>I laid Zadimus' remains to rest in Tai Bwo Wannai. His spirit gave me a bone shard.</str>
+done	<str>Trufitus told me of Rashiliyia's son Bervirius, entombed on an island to the south-west.</str>
+done	<str>In the Tomb of Bervirius I found a sword pommel, a locating crystal and some notes.</str>
+done	<str>My bone key opened the hidden doors into Rashiliyia's Tomb.</str>
+done	<str>I filled the tomb doors' recesses with bones and they opened.</str>
+done	<str>I defeated Nazastarool, Rashiliyia's guardian, and took her remains.</str>
+done	<str>I laid Rashiliyia's remains on the dolmen in her son's tomb, and her spirit finally found rest. Shilo Village is safe again and its people have welcomed me.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

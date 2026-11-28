@@ -14,6 +14,7 @@ import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.onApLoc1
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onOpObj3
@@ -118,6 +119,8 @@ constructor(
 
         // Cairn Isle and the Tomb of Bervirius.
         onLocOpLabel(locTypes, SvLocs.cairn_isle_rocks, "Climb") { climbCairnRocks() }
+        // A wall runs beside the west rock: the climb also works from a short distance (ap).
+        onApLoc1(SvLocs.cairn_isle_rocks) { if (isWithinApRange(it.loc, CAIRN_ROCKS_REACH)) climbCairnRocks() }
         onLocOpLabel(locTypes, SvLocs.cairn, "Investigate") { svSection(dialogue, null, "Investigate Well stacked rocks") }
         onLocOpLabel(locTypes, SvLocs.cairn, "Search") { searchCairn() }
         onLocOpLabel(locTypes, SvLocs.bervirius_dolmen, "Inspect") { inspectBerviriusDolmen() }
@@ -784,6 +787,7 @@ constructor(
         val CAIRN_ROCKS_EAST = CoordGrid(2795, 2979, 0)
         val CAIRN_ROCKS_WEST = CoordGrid(2790, 2979, 0)
         const val CAIRN_ROCKS_X = 2794
+        const val CAIRN_ROCKS_REACH = 2
         /** Beside the well stacked rocks (2762,2990) and inside the Tomb of Bervirius. */
         val CAIRN_OUTSIDE = CoordGrid(2763, 2989, 0)
         val BERVIRIUS_LANDING = CoordGrid(2761, 9377, 0)

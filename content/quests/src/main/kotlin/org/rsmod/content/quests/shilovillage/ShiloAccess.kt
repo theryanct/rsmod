@@ -205,6 +205,6 @@ class ShiloAccess @Inject constructor(private val locTypes: LocTypeList) : Plugi
         val CART_WEST = CoordGrid(2876, 2952, 0)
         /** By the travel carts: Shilo (2831,2952, by Vigroy) and Brimhaven (2777,3211, by Hajedy). */
         val SHILO_CART = CoordGrid(2834, 2950, 0)
-        val BRIMHAVEN_CART = CoordGrid(2780, 3213, 0)
+        val BRIMHAVEN_CART = CoordGrid(2779, 3213, 0)
     }
 }

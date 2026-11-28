@@ -19,6 +19,7 @@ import org.rsmod.api.player.events.interact.HeldUEvents
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.QuestDialogueHooks
+import org.rsmod.content.quests.framework.QuestDialogueRunner
 import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.isQuestComplete
@@ -188,21 +189,38 @@ constructor(
             ROPE_TIED -> svSection(dialogue, npc, "Talking to Trufitus after visiting Ah Za Rhoon")
             ZADIMUS_BURIED,
             KIN_TOLD -> {
-                val hooks =
-                    SvHooks(
-                        this,
-                        options =
-                            mapOf(
-                                "The spirit said something about keys and kin?" to {
-                                    if (state == ZADIMUS_BURIED) setState(KIN_TOLD)
-                                }
-                            ),
-                    )
-                svSection(dialogue, npc, "Talking to Trufitus after burying Zadimus' corpse", hooks)
+                var help: String? = null
+                val options = HashMap<String, suspend () -> Unit>()
+                for (label in HELP_OPTIONS) options[label] = { help = label }
+                options["The spirit said something about keys and kin?"] = {
+                    if (state == ZADIMUS_BURIED) setState(KIN_TOLD)
+                }
+                svSection(dialogue, npc, "Talking to Trufitus after burying Zadimus' corpse", SvHooks(this, options = options))
+                help?.let { helpBranch(npc, it) }
             }
-            BERVIRIUS_FOUND -> svSection(dialogue, npc, "Talking to Trufitus after visiting Bervirius' Tomb")
+            BERVIRIUS_FOUND -> {
+                var help: String? = null
+                val options = HashMap<String, suspend () -> Unit>()
+                for (label in HELP_OPTIONS) options[label] = { help = label }
+                svSection(dialogue, npc, "Talking to Trufitus after visiting Bervirius' Tomb", SvHooks(this, options = options))
+                help?.let { helpBranch(npc, it) }
+            }
             else -> svSection(dialogue, npc, "Talking to Trufitus after visiting the Tomb of Rashiliyia")
         }
+    }
+
+    /**
+     * The later conversations' "I need help with ..." options only point back ("above") to the
+     * Ah Za Rhoon conversation's answers; run that answer.
+     */
+    private suspend fun ProtectedAccess.helpBranch(npc: Npc, label: String) {
+        val option = if (label == ITEMS_SOME_HELP) ITEMS_HELP else label
+        // The top-level answer (a nested "Temple" option there is only a "below" pointer).
+        val nodes =
+            dialogue.section("Talking to Trufitus after visiting Ah Za Rhoon").firstOrNull {
+                it is QuestDialogue.Node.Option && it.label == option
+            }?.children ?: return
+        startDialogue(npc) { QuestDialogueRunner(SvHooks(this@helpBranch), svSpeakers).run(this, nodes) }
     }
 
     private suspend fun ProtectedAccess.useOnTrufitus(npc: Npc, obj: ObjType) {
@@ -439,6 +457,17 @@ constructor(
         const val REWARD_XP = 3875.0 // Cache db stat_xp_awarded crafting 38750 (tenths); Wiki 3,875.
 
         private const val DROP_OP = 5
+        private const val ITEMS_HELP = "I have some items that I need help with."
+        private const val ITEMS_SOME_HELP = "I have some items that I need some help with."
+        private val HELP_OPTIONS =
+            listOf(
+                "I need help with Bervirius.",
+                "I need help with Zadimus.",
+                "I need help with Rashiliyia.",
+                "I need some help with the Temple of Ah Za Rhoon.",
+                ITEMS_HELP,
+                ITEMS_SOME_HELP,
+            )
         private const val CRYSTAL_DAMAGE = 10
         private const val STATUE_RADIUS = 4
         private const val UNDERGROUND_Z = 6400
