@@ -14,7 +14,8 @@ import org.rsmod.game.type.varp.VarpType
  *
  * Each toggle is stored as two bits of `feature_flags`: `0` = use [Feature.defaultOn], `1` = on,
  * `2` = off. Per-skill xp multipliers live in one varp per skill, in hundredths; `0` means "not
- * set", which falls back to [skillXpDefaults] and then to [Player.xpRate].
+ * set", which falls back to [skillXpDefaults] and then to [Player.xpRate]. The Slayer point
+ * multiplier is a whole number in `feature_slayer_points` (`0` = not set = 1x).
  */
 public enum class Feature(
     public val key: String,
@@ -86,6 +87,18 @@ public fun Player.setSkillXpOverride(stat: StatType, rate: Double?) {
 public fun Player.skillXpRate(stat: StatType, rate: Double = xpRate): Double =
     skillXpOverride(stat) ?: skillXpDefault(stat) ?: rate
 
+/** Whole-number multiplier on Slayer task points (incl. streak milestones); default 1. */
+public val Player.slayerPointMultiplier: Int
+    get() = vars[FeatureVarps.slayerPoints].takeIf { it > 0 } ?: 1
+
+/** Sets (or with `null`, resets to 1x) the Slayer point multiplier. */
+public fun Player.setSlayerPointMultiplier(multiplier: Int?) {
+    val value = multiplier?.coerceIn(1, MAX_SLAYER_POINT_MULTIPLIER) ?: 0
+    VarPlayerIntMapSetter.set(this, FeatureVarps.slayerPoints, value)
+}
+
+public const val MAX_SLAYER_POINT_MULTIPLIER: Int = 1000
+
 private const val STATE_ON = 1
 private const val STATE_OFF = 2
 
@@ -120,6 +133,7 @@ public val featureSkillNames: List<String> =
 
 internal object FeatureVarps : VarpReferences() {
     val flags = find("feature_flags")
+    val slayerPoints = find("feature_slayer_points")
 
     private val skillXp: List<VarpType> = featureSkillNames.map { find("feature_skillxp_$it") }
 
