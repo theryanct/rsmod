@@ -7,6 +7,7 @@ import org.rsmod.api.type.refs.dbtable.DbTableReferences
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
+import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
@@ -69,6 +70,7 @@ public object BuiltQuests {
             ANIMAL_MAGNETISM,
             BELOW_ICE_MOUNTAIN,
             BIOHAZARD,
+            BIG_CHOMPY,
             BLACK_KNIGHTS_FORTRESS,
             CLOCK_TOWER,
             COOKS_ASSISTANT,
