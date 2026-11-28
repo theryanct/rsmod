@@ -7,7 +7,7 @@ import org.rsmod.map.CoordGrid
  * Loc positions come from the cache map; [inside] / [outside] are the arrival tiles next to the
  * altar's exit portal and just outside the ruins.
  */
-internal object RunecraftData {
+object RunecraftData {
     class Altar(
         val key: String,
         /** `null` for walk-up altars with no ruins (astral). */
