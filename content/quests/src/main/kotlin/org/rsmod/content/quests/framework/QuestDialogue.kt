@@ -182,7 +182,14 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
             with(hooks) { onOption(picked.label) }
             when (runNodes(picked.children, menuTitle = null)) {
                 Flow.End -> return Flow.End
-                Flow.Repeat -> if (options.size > 1) continue else return Flow.Continue
+                // Re-show the menu only after a branch that said something (Wiki transcripts
+                // sometimes abbreviate an answer to a bare "above", which would loop forever).
+                Flow.Repeat ->
+                    if (options.size > 1 && picked.children.any { it is Node.Line }) {
+                        continue
+                    } else {
+                        return Flow.Continue
+                    }
                 Flow.Continue -> return Flow.Continue
             }
         }
