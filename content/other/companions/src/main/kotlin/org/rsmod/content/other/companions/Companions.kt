@@ -205,6 +205,7 @@ constructor(
         }
         setActive(player, companion)
         session(player).koTicks = 0
+        session(player).idleIn = nextIdle()
         if (followers[player.uid.packed] == null) spawnFollower(player, companion)
         sayLine(player, companion, "summon")
         startTimer(player)
@@ -382,19 +383,38 @@ constructor(
         val slots = storeSlots(player)
         val ids = CompanionVarps.storeIds
         val counts = CompanionVarps.storeCounts
-        var slot = (0 until slots).firstOrNull { player.vars[ids[it]] == type.id + 1 }
-        if (slot == null) slot = (0 until slots).firstOrNull { player.vars[ids[it]] == 0 }
-        if (slot == null) {
+        val empty = (0 until slots).filter { player.vars[ids[it]] == 0 }
+        // Slots work like inventory slots: a stackable obj shares one, others take one each.
+        val stack =
+            if (type.isStackable) {
+                (0 until slots).firstOrNull { player.vars[ids[it]] == type.id + 1 }
+            } else {
+                null
+            }
+        val add =
+            when {
+                type.isStackable -> {
+                    val slot = stack ?: empty.firstOrNull()
+                    val room = Int.MAX_VALUE.toLong() - (slot?.let { player.vars[counts[it]] } ?: 0)
+                    if (slot == null) 0 else minOf(count.toLong(), room).toInt()
+                }
+                else -> minOf(count, empty.size)
+            }
+        if (add <= 0) {
             chatNpc(npc, mesanims.sad, "My Arm hands is full! Take some stuffs back first.")
             return
         }
-        val stored = player.vars[counts[slot]]
-        val add = minOf(count.toLong(), Int.MAX_VALUE.toLong() - stored).toInt()
-        if (add <= 0) return
-        val removed = invDel(inv, type, add)
-        if (removed.failure) return
-        VarPlayerIntMapSetter.set(player, ids[slot], type.id + 1)
-        VarPlayerIntMapSetter.set(player, counts[slot], stored + add)
+        if (invDel(inv, type, add).failure) return
+        if (type.isStackable) {
+            val slot = stack ?: empty.first()
+            VarPlayerIntMapSetter.set(player, ids[slot], type.id + 1)
+            VarPlayerIntMapSetter.set(player, counts[slot], player.vars[counts[slot]] + add)
+        } else {
+            for (slot in empty.take(add)) {
+                VarPlayerIntMapSetter.set(player, ids[slot], type.id + 1)
+                VarPlayerIntMapSetter.set(player, counts[slot], 1)
+            }
+        }
         mes("You hand My Arm ${if (add == 1) "the" else "$add x"} ${type.name}.")
     }
 
