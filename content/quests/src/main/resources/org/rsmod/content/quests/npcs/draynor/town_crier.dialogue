@@ -1,0 +1,252 @@
+# Generated from the OSRS Wiki page "Transcript:Town Crier" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Town crier	Hello citizen!
+1	option	What do you do around here?
+2	line	Player	What do you do around here?
+2	line	Town crier	I'm a Town Crier. It's my job to let people know of any recent news. After all, there's all sorts of things happening around here.
+2	line	Player	I see. See you later.
+2	line	Town crier	Until next time.
+2	action	end
+1	option	See you later.
+2	line	Player	See you later.
+2	line	Town crier	Until next time.
+2	action	end
+0	section	Historical dialogue
+0	section	Regular players
+1	line	Town crier	Hear ye! Hear ye! Player Moderators massive help to RuneSc-
+1	line	Town crier	Oh, hello citizen. Are you here to find out about Player Moderators? Or perhaps would you like to know about the laws of the land?
+1	option	Tell me about Player Moderators.
+2	line	Player	Tell me about Player Moderators.
+2	line	Town crier	Of course. What would you like to know?
+2	option	What is a Player Moderator?
+3	line	Player	What is a Player Moderator?
+3	line	Town crier	Player Moderators are normal players of the game, just like you. However, since they have shown themselves to be trustworthy and active reporters, they have been invited by Jagex to monitor the game and
+3	line	Town crier	take appropriate action when they see rule breaking. You can spot a Player Moderator in game by looking at the chat screen - when a Player Moderator speaks, a silver crown appears to the left of their name.
+3	line	Town crier	Remember, if there's not silver crown there, they are not a Player Moderator!
+3	line	Player	Thanks!
+3	line	Town crier	Is there anything else you'd like to know?
+3	option	Tell me about Player Moderators.
+4	action	previous
+3	option	Tell me about something else.
+4	action	initial
+3	option	No thanks.
+4	action	end
+2	option	What can Player Moderators do?
+3	line	Player	What can Player Moderators do?
+3	line	Town crier	Player Moderators, or 'P-mods', have the ability to mute rule breakers and Jagex view their reports as a priority so that action is taken as quickly as possible. P- Mods also have access to the Player Moderator Centre.
+3	line	Town crier	Within the Centre are tools to help them Moderate Old School RuneScape. These tools include dedicated forums, the Player Moderator Guidelines and the Player Moderator Code of Conduct.
+3	line	Player	Thanks!
+3	line	Town crier	Is there anything else you'd like to know?
+3	option	Tell me about Player Moderators.
+4	action	previous
+3	option	Tell me about something else.
+4	action	initial
+3	option	No thanks.
+4	action	end
+2	option	How do I become a Player Moderator?
+3	line	Player	How do I become a Player Moderator?
+3	line	Town crier	Jagex picks players who spend their time and effort to help better the Old School RuneScape community. To increase your chances of becoming a Player Moderator:
+3	line	Town crier	Keep your account secure! This is very important, as a player with poor security will never be a P-Mod. Read our Security Tips for more information.
+3	line	Town crier	Play by the rules! The rules of Old School RuneScape are enforced for a reason, to make the game a fair and enjoyable environment for all.
+3	line	Town crier	Report accurately! When Jagex consider an account for review they look for quality, not quantity. Ensure your reports are of a high quality by following the report guidelines.
+3	line	Town crier	Be excellent to each other! Treat others as you would want to be treated yourself. Respect your fellow player.
+3	line	Player	Thanks!
+3	line	Town crier	Is there anything else you'd like to know?
+3	option	Tell me about Player Moderators.
+4	action	previous
+3	option	Tell me about something else.
+4	action	initial
+3	option	No thanks.
+4	action	end
+2	option	What can Player Moderators not do?
+3	line	Player	What can Player Moderators not do?
+3	line	Town crier	P-Mods cannot ban your account - they can only report offences. Jagex then take action based on the evidence received. If you lose your password or get scammed by another player, P-Mods cannot help you
+3	line	Town crier	get your account back. All they can do is recommend you to go to Customer Support. They cannot retrieve any items you may have lost and receive no free items from Jagex for helping moderate the game. They are
+3	line	Town crier	players who give their efforts to help the community out of the goodness of their hearts! P-mods do not work for Jagex and so cannot make you a Moderator, or recommend other accounts to become moderators. If
+3	line	Town crier	you wish to become a Moderator, please feel free to ask me how!
+3	line	Player	Thanks!
+3	line	Town crier	Is there anything else you'd like to know?
+3	option	Tell me about Player Moderators.
+4	action	previous
+3	option	Tell me about something else.
+4	action	initial
+3	option	No thanks.
+4	action	end
+2	option	Something else.
+3	action	initial
+1	option	Tell me about the Rules of Conduct.
+2	line	Player	Tell me about the Rules of Conduct.
+2	line	Town crier	At once. Take a look at my book here...
+2	action	
+1	option	Can you give me a handy tip please?
+2	line	Player	Can you give me a handy tip please?
+2	option	Dialogue 1
+3	line	Town crier	Did you know most skills have right click 'Make-X' options to help you train faster?
+2	option	Dialogue 2
+3	line	Town crier	Make your recovery questions and answers hard to guess but easy to remember.
+2	option	Dialogue 3
+3	line	Town crier	Don't use your RuneScape password on other sites. Keep your account safe!
+2	option	Dialogue 4
+3	line	Town crier	If you think someone knows your password - change it!
+2	option	Dialogue 5
+3	line	Town crier	The squirrels! The squirrels are coming! Noooo, get them out of my head!
+2	option	Dialogue 6
+3	line	Town crier	Did you know you burn food less often on the range in Lumbridge castle than other ranges?
+2	option	Dialogue 7
+3	line	Town crier	Players can not trim armour. Don't fall for this popular scam!
+2	option	Dialogue 8
+3	line	Town crier	Feeling harassed? Don't forget your ignore list can be especially useful if a player seems to be picking on you!
+2	option	Dialogue 9
+3	line	Town crier	If you're lost and have no idea where to go, use the Home Teleport spell for free!
+2	option	Dialogue 10
+3	line	Town crier	If you see someone breaking the rules, report them!
+2	option	Dialogue 11
+3	line	Town crier	Did you know? Superheat Item means you never fail to smelt ore!
+2	option	Dialogue 12
+3	line	Town crier	Did you know that at high levels of Runecrafting you get more than one rune per essence?
+2	option	Dialogue 13
+3	line	Town crier	Never lend your items out unless you expect them not to come back.
+2	option	Dialogue 14
+3	line	Town crier	Never question a penguin.
+2	option	Dialogue 15
+3	line	Town crier	Melee armour actually gives you disadvantages when using magic attacks. It may be better to take off your armour entirely!
+2	option	Dialogue 16
+3	line	Town crier	If the chat window is moving too quickly to report a player accurately, run to a quiet spot and review the chat at your leisure!
+2	option	Dialogue 17
+3	line	Town crier	Take time to check the second trade window carefully. Don't be scammed!
+2	option	Dialogue 18
+3	line	Town crier	Did you know having a bank pin can help secure your valuable items?
+2	option	Dialogue 19
+3	line	Town crier	Did you know that mithril equipment is very light?
+2	option	Dialogue 20
+3	line	Town crier	There are no cheats in RuneScape! Never visit websites promising otherwise!
+2	option	Dialogue 21
+3	line	Town crier	Jagex will never e-mail you. Do not believe any e-mails that claim to be from us.
+2	option	Dialogue 22
+3	line	Town crier	If you're stuck on a skill, talk to the Lumbridge Tutors for help and tips.
+2	option	Dialogue 23
+3	line	Town crier	Did you know that you can wear a shield with a crossbow?
+2	option	Dialogue 24
+3	line	Town crier	Beware of players trying to lure you into the wilderness. Your items cannot be returned if you lose them!
+2	option	Dialogue 25
+3	line	Town crier	If a player isn't sure of the rules, send them to me! I'll be happy to remind them!
+2	option	Dialogue 26
+3	line	Town crier	Never tell your password to anyone, not even your best friend!
+2	option	Dialogue 27
+3	line	Town crier	Be careful when fighting wizards! Wearing heavy armour can lower your Magic resistance!
+2	line	Town crier	Is there anything else you'd like to know?
+2	option	Tell me about Player Moderators.
+3	action	previous
+2	option	Tell me about something else.
+3	action	initial
+2	option	No thanks.
+3	action	end
+0	section	Player Moderators
+1	line	Town crier	Hear ye! Hear ye! Player Moderators massive help to Rune... Oh great, a P-mod! I know all about the great job you guys do, would you like me to prove my extensive knowledge to you?!
+1	option	Can you show me the Guidelines please?
+2	line	Player	Can you show me the Guidelines please?
+2	line	Town crier	Of course, but I can't let you keep it - I've only got a few copies!
+2	action	
+1	option	Do you have a copy of the Code of Conduct?
+2	line	Player	Do you have a copy of the Code of Conduct?
+2	line	Town crier	Oh yes, but I can't let you keep it - I've only a few copies!
+2	action	
+1	option	Can you give me a moderating tip please?
+2	line	Player	Can you give me a moderating tip please?
+2	option	Dialogue 1
+3	line	Town crier	Add other Player Moderators to your friends list for quick advice and moral support in-game. It does help!
+2	option	Dialogue 2
+3	line	Town crier	To avoid reporting the wrong player, add an offender to your friends list, switch your public chat to friends and then use your right-click report from there. Easy!
+2	option	Dialogue 3
+3	line	Town crier	Did you know that Free-to-Play P-mods CAN visit the moderator forums, by logging into the regular forums at the top right hand side of the forum screen, despite it saying Members only.
+2	option	Dialogue 4
+3	line	Town crier	Don't be tempted to report anything you didn't see, no matter how much you trust the player who is informing you.
+2	option	Dialogue 5
+3	line	Town crier	Don't eat something messy when on a first date - it won't look good!
+2	option	Dialogue 6
+3	line	Town crier	Don't forget to add the mute if needed, before selecting the report category. This cuts down on those duplicate reports for one player.
+2	option	Dialogue 7
+3	line	Town crier	Feeling harassed? Don't forget your ignore list can be especially useful if a player seems to be picking on you!
+2	option	Dialogue 8
+3	line	Town crier	The forums are the best place to keep abreast of any procedure changes that might not yet be included in the Player Mod guidelines!
+2	option	Dialogue 9
+3	line	Town crier	Got players asking you to unban them or help them retrieve a stolen or hacked account? There's nothing you can do so just send them to the Customer Support Team. If they think you can help, send them to me; I'll
+3	line	Town crier	put them straight!
+2	option	Dialogue 10
+3	line	Town crier	Have the P-Mod Oracle open in a separate window when playing Old School RuneScape - that way you'll always have the most up-to-date guidelines to hand!
+2	option	Dialogue 11
+3	line	Town crier	If the chat is scrolling too fast for you to see that suspect line you want to double check, just run up a ladder or to a quieter spot to stop the chat screen scrolling. Then you can scroll back and read that
+3	line	Town crier	suspect line and judge the situation in your own time!
+2	option	Dialogue 12
+3	line	Town crier	If the chat window is moving too quickly to report a player accurately, run to a quiet spot and review the chat at your leisure!
+2	option	Dialogue 13
+3	line	Town crier	If a player isn't sure of the rules, send them to me! I'll be happy to remind them!
+2	option	Dialogue 14
+3	line	Town crier	If you're a new mod, don't forget to read the guidelines before you log into the game! If you've been a P-mod for a while, why not have another read of them to refresh your memory and to get up to date
+3	line	Town crier	with any changes you may have missed!
+2	option	Dialogue 15
+3	line	Town crier	If you've got a player asking you questions about P- mods, feel free to send them to me; I can answer questions about P-mods for you!
+2	option	Dialogue 16
+3	line	Town crier	If you get harassed by a player in game, don't take it personally - the player is reacting to your silver crown, not to you!
+2	option	Dialogue 17
+3	line	Town crier	If you notice a player trying to buy something common for an extremely high price, look about and see if there's someone else selling the same item for a much lower price. Chances are they're team scamming. If so,
+3	line	Town crier	write their names down and send your J-mod curators a query!
+2	option	Dialogue 18
+3	line	Town crier	If you see a player abusing a bug in game, there's no need to report the player, just submit a bug report via the in-game report form.
+2	option	Dialogue 19
+3	line	Town crier	An important part of being a P-mod is to act as an ambassador for the game. Keeping your cool even when faced with the rudest players goes a long way towards this!
+2	option	Dialogue 20
+3	line	Town crier	It's always better to report in secret. Telling a player that you are about to report them rarely makes you a friend, and can often lead to a player being offensive to you!
+2	option	Dialogue 21
+3	line	Town crier	Make sure you log out of the game and the forums whenever you leave your device. Don't allow others to see confidential info!
+2	option	Dialogue 22
+3	line	Town crier	Never answer questions if you feel the answer will breach confidentiality.
+2	option	Dialogue 23
+3	line	Town crier	The P-mod forums are your friend! They're the best place to talk to and meet other P-mods and are absolutely packed with useful advice!
+2	option	Dialogue 24
+3	line	Town crier	Remember, if in doubt, report without a mute! It's very frustrating not to be able to speak if you're innocent!
+2	option	Dialogue 25
+3	line	Town crier	Remember, if offensive language has been completely filtered out then there's no need to report or mute it!
+2	option	Dialogue 26
+3	line	Town crier	Think twice before applying that mute. Will it really prevent further damage from surrounding players?
+2	option	Dialogue 27
+3	line	Town crier	Use the Jagex PMod team if you need to - they're there to help!
+2	option	Dialogue 28
+3	line	Town crier	You'll be amazed how often a bit of humour can diffuse a potentially unpleasant situation, before it becomes too serious.
+2	option	Dialogue 29
+3	line	Town crier	Your J-mods are there to help you. If you ever need their advice, send them a query. They are always very happy to help. Don't be afraid to use them!
+2	option	Dialogue 30
+3	line	Town crier	Your Player Moderator identity must never be revealed on the regular Old School RuneScape forums. However, you're more than welcome to chat about all aspects of being a Player Moderator in the official
+3	line	Town crier	Player Moderator forums!
+2	line	Town crier	Is there anything else you'd like to know?
+2	action	other
+1	option	No thanks.
+2	line	Player	No thanks.
+2	action	end
+1	option	What help do you give to non Player Moderators?
+2	line	Player	You're very helpful to us Player Moderators, but what help do you give to non Player Moderators?
+2	line	Town crier	Well now, let me see...
+2	option	Tell me about Player Moderators.
+3	action	above
+2	option	Tell me about the Rules of Conduct.
+3	action	above
+2	option	Can you give me a handy tip please?
+3	action	above
+0	section	Current overheads
+1	line	Town Crier	The Graveyard, a new Master tier quest, is here! (25 Nov 2026)
+1	line	Town Crier	Talk to Olaf in Rellekka to start The Graveyard! (25 Nov 2026)
+1	line	Town Crier	Check out our newsposts for all the latest info! (Date unknown)Not sure if he's always said this
+0	section	Historical overheads
+1	line	Town Crier	Overlord of Morytania, Lowerniel Drakan, is back! (30 Jun 2026 – Date unknown)unsure of specific start date
+1	line	Town Crier	Blood moon has risen over Morytania! (30 Jun 2026 – Date unknown)unsure of specific start date
+1	line	Town Crier	Make sure your account security is up to date! (Date unknown)
+1	line	Town Crier	Sailing has been announced! Coming November 19th! (2 Nov 2025 – Date unknown)unsure of specific start date
+1	line	Town Crier	Are you ready for Sailing on November 19th?! (2 Nov 2025)unsure of specific start date
+1	line	Town Crier	Have you checked out the latest additions to Varlamore yet? (13 Aug 2025 – 20 Aug 2025)
+1	line	Town Crier	Thanks for helping us break player records! (20 Aug 2025 – 27 Aug 2025)
+1	line	Town Crier	The Summer Sweep-Up Slayer & Misc changes are here! (27 Aug 2025 – 03 Sep 2025)
+1	line	Town Crier	The Combat Achievements for the Doom of Mokhaiotl are here! (03 Sep 2025 – 17 Sep 2025)
+1	line	Town Crier	Not long now until Grid Master! Are you up to date on all the latest infomation? (17 Sep 2025 – 16 Oct 2025)
+1	line	Town Crier	Old School has loads going on right now! Keep up to date with our latest newsposts! (Date unknown – 16 Oct 2025)
+1	line	Town Crier	Grid Master has arrived! Time to get your game on! (16 Oct 2025 - 2 Nov 2025)unsure of specific end date
+1	line	Town Crier	It's spooky season! Halloween is here! (16 Oct 2025 - 2 Nov 2025)unsure of specific end date
