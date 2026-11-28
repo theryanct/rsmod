@@ -48,13 +48,18 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private fun Recipe.trigger(): Pair<String, String> =
         when (kind) {
             Kind.Knife -> KNIFE to materials[0].obj
+            Kind.Chisel -> CHISEL to materials[0].obj
             Kind.String,
             Kind.Hammer,
             Kind.Combine -> materials[0].obj to materials[1].obj
         }
 
     private fun obj(name: String): ObjType =
-        if (name == KNIFE) FletchingObjs.knife else FletchingObjs.byName.getValue(name)
+        when (name) {
+            KNIFE -> FletchingObjs.knife
+            CHISEL -> FletchingObjs.chisel
+            else -> FletchingObjs.byName.getValue(name)
+        }
 
     /**
      * OSRS skillmulti chatbox for the recipes that share this item-on-item pair (e.g. knife on
@@ -92,6 +97,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private fun verbFor(recipe: Recipe): Int =
         when (recipe.kind) {
             Kind.Knife,
+            Kind.Chisel,
             Kind.Hammer -> SkillMultiVerb.MAKE
             Kind.String -> SkillMultiVerb.STRING
             Kind.Combine -> SkillMultiVerb.MAKE_SETS
@@ -102,7 +108,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             Kind.String -> "How many would you like to string?"
             Kind.Combine -> "How many sets would you like to make?"
             Kind.Knife -> "What would you like to make?"
-            Kind.Hammer -> "How many would you like to make?"
+            Kind.Hammer,
+            Kind.Chisel -> "How many would you like to make?"
         }
 
     private fun ProtectedAccess.fletch(job: FletchJob) {
@@ -183,6 +190,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private companion object {
         const val KNIFE = "knife"
+        const val CHISEL = "chisel"
 
         /** Skillmulti item slots named in the rev 233 interface (18 after the 243 cutover). */
         const val MAX_PRODUCTS = 10

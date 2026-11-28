@@ -14,6 +14,8 @@ internal object FletchingData {
         Combine,
         /** Two items joined with a hammer in the inventory (crossbow limbs on a stock). */
         Hammer,
+        /** Chisel on a cut gem: bolt tips. */
+        Chisel,
     }
 
     class Material(val obj: String, val count: Int)
@@ -50,6 +52,7 @@ internal object FletchingData {
                     "string" -> Kind.String
                     "combine" -> Kind.Combine
                     "hammer" -> Kind.Hammer
+                    "chisel" -> Kind.Chisel
                     else -> error("Unknown fletching recipe kind: $raw")
                 }
             val materials = ArrayList<Material>()
