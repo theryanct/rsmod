@@ -202,7 +202,7 @@ constructor(
                         "If the player has the cape with them:" to { cape != null },
                     ) + God.entries.associate { g -> "If player chose ${g.label} cape:" to { cape == g } }
             )
-        runQuestSection(npc, dialogue, "Talking to the chamber guardian after choosing a god", hooks)
+        runQuestSection(npc, dialogue, "Talking to the chamber guardian after choosing a cape", hooks)
         if (cape != null) {
             invAddOrDrop(objRepo, cape.staff)
             setStage(STAFF)
