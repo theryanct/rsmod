@@ -133,9 +133,11 @@ constructor(
         for ((piece, section) in Ds1Objs.studies) {
             onHeldOpLabel(objTypes, piece, "Study") { runQuestSection(null, dialogue, section) }
         }
-        for (a in Ds1Objs.pieces) {
-            for (b in Ds1Objs.pieces) {
-                if (a != b) onOpHeldU(a, b) { joinMap() }
+        // OpHeldU is order-independent: register each unordered pair once.
+        val pieces = Ds1Objs.pieces
+        for (i in pieces.indices) {
+            for (j in i + 1 until pieces.size) {
+                onOpHeldU(pieces[i], pieces[j]) { joinMap() }
             }
         }
 
