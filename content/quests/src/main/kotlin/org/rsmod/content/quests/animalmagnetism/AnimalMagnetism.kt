@@ -19,7 +19,7 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
-import org.rsmod.content.quests.framework.QuestTalk.register
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -83,13 +83,15 @@ constructor(
             onNpcOpLabel(npcTypes, malcolm, "Talk-to") { talkMalcolm(it) }
         }
         // The crone is shared with Ghosts Ahoy (QuestTalk menu while both want her).
-        register(
-            npcTypes,
-            AmNpcs.crone,
-            ANIMAL_MAGNETISM,
-            wants = { state in CRONE_ASKED..AMULET_MADE },
-        ) {
-            talkCrone(it)
+        with(QuestTalk) {
+            register(
+                npcTypes,
+                AmNpcs.crone,
+                ANIMAL_MAGNETISM,
+                wants = { state in CRONE_ASKED..AMULET_MADE },
+            ) {
+                talkCrone(it)
+            }
         }
         onNpcOpLabel(npcTypes, AmNpcs.witch, "Talk-to") { talkWitch(it) }
         onOpNpcU(AmNpcs.turael, AmObjs.mithril_axe) { askTurael(it.npc) }

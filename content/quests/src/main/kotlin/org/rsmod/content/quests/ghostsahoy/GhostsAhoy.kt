@@ -7,8 +7,7 @@ import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
-import org.rsmod.content.quests.framework.QuestTalk.default
-import org.rsmod.content.quests.framework.QuestTalk.register
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -54,9 +53,15 @@ constructor(
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, GaNpcs.velorina, "Talk-to") { talkVelorina(it) }
         onNpcOpLabel(npcTypes, GaNpcs.necrovarus, "Talk-to") { talkNecrovarus(it) }
-        register(npcTypes, GaNpcs.crone, GHOSTS_AHOY, wants = { questStarted() }) { talkCrone(it) }
-        default(npcTypes, GaNpcs.crone) {
-            startDialogue(it) { chatNpc(neutral, "Hello, dearie. My memory isn't what it was...") }
+        with(QuestTalk) {
+            register(npcTypes, GaNpcs.crone, GHOSTS_AHOY, wants = { questStarted() }) {
+                talkCrone(it)
+            }
+            default(npcTypes, GaNpcs.crone) {
+                startDialogue(it) {
+                    chatNpc(neutral, "Hello, dearie. My memory isn't what it was...")
+                }
+            }
         }
 
         onOpHeldU(GaObjs.bowl_tea, GaObjs.cup) { pour(GaObjs.bowl_tea, GaObjs.cup_tea) }
