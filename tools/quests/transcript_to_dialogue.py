@@ -11,6 +11,7 @@ kinds:
   option  <label>          {{topt|...}}      a dialogue option; its children follow, deeper
   cond    <text>           {{tcond|...}}     a branch taken when the quest's condition holds
   box     <text>           {{tbox|...}}      an item/message box
+                           {{mes|...}}       a game message (also emitted as a box)
   action  <tag>            {{tact|...}}      e.g. "end"
 Wiki links, bold/italics and inline templates are stripped; "[player name]" becomes {player}.
 The quest framework's QuestDialogueRunner walks this tree at runtime.
@@ -56,9 +57,9 @@ for raw in text.splitlines():
     m = re.match(r"^(\*+)\s*(.*)$", line)
     if not m:
         continue
-    depth, body = str(len(m.group(1))), m.group(2).strip()
+    depth, body = str(len(m.group(1))), re.sub(r"<!--.*?-->", "", m.group(2)).strip()
     for kind, name in (("option", "topt"), ("select", "tselect"), ("cond", "tcond"),
-                       ("box", "tbox"), ("action", "tact")):
+                       ("box", "tbox"), ("box", "mes"), ("box", "Mes"), ("action", "tact")):
         arg = template_arg(body, name)
         if arg is not None:
             rows.append((depth, kind, arg))

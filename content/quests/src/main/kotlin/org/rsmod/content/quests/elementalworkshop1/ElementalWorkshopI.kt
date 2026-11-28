@@ -19,6 +19,7 @@ import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
+import org.rsmod.content.quests.elementalworkshop2.Ew2Workbench
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.SimpleQuestHooks
@@ -66,6 +67,7 @@ constructor(
     private val objRepo: ObjRepository,
     private val aiInteractions: AiPlayerInteractions,
     private val xpMods: XpModifiers,
+    private val ew2Workbench: Ew2Workbench,
 ) : PluginScript() {
     private val dialogue by lazy { QuestDialogue.load(ElementalWorkshopI::class.java, "elemental_workshop_1") }
 
@@ -101,6 +103,7 @@ constructor(
 
         onLocOpLabel(locTypes, EwLocs.workbench, "Smith") { useWorkbench() }
         onOpLocU(EwLocs.workbench, EwObjs.bar) { useWorkbench() }
+        onOpLocU(EwLocs.workbench, EwObjs.mind_bar) { useWorkbench() }
 
         onNpcOpLabel(npcTypes, EwNpcs.rock, "Mine") { mineRock(it) }
         onEvent<NpcKilledEvent> { elementalKilled(this) }
@@ -339,6 +342,8 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.useWorkbench() {
+        // Elemental Workshop II shares the bench (the crane claw, mind helmets).
+        if (with(ew2Workbench) { handle() }) return
         val section =
             when {
                 !carries(EwObjs.bar) -> "Using the workbench without elemental metal"
@@ -464,6 +469,7 @@ internal object EwObjs : ObjReferences() {
     val ore = find("elemental_workshop_ore")
     val bar = find("elemental_workshop_bar")
     val shield = find("elemental_shield")
+    val mind_bar = find("elem_mind_bar")
     val rock_remains = find("elem1_qip_rockremains")
     val leather = find("leather")
     val needle = find("needle")

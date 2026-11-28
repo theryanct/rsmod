@@ -1211,3 +1211,9 @@ coords = '0_43_57_46_14'
 [[spawn]]
 npc = 'deadmans_bartender'
 coords = '0_43_49_42_20'
+
+# Elemental Workshop II: the jig cart (multinpc on elemental_quest_2_jig_state), under the crane
+# (1952,5146,2). Authored placement: the cart doesn't move between stations.
+[[spawn]]
+npc = 'elem2_cart_npc'
+coords = '2_30_80_32_26'
