@@ -1,0 +1,388 @@
+# Generated from the OSRS Wiki page "Transcript:Holy Grail" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Player	Now I am a knight of the round table, do you have any more quests for me?
+1	line	King Arthur	Aha! I'm glad you are here! I am sending out various knights on an important quest. I was wondering if you too would like to take up this quest?
+1	select	Select an option
+1	option	Tell me of this quest.
+2	line	Player	Tell me of this quest.
+2	line	King Arthur	Well, we recently found out that the Holy Grail has passed into Gielinor.
+2	line	King Arthur	This is most fortuitous!
+2	line	King Arthur	None of my knights ever did return with it last time. Now we have the opportunity to give it another go, maybe this time we will have more luck!
+2	cond	If the player's combat level is less than 50:
+3	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 50.
+3	action	continue
+2	cond	If the player's combat level is more than 50:
+3	select	Start the Holy Grail quest?
+2	option	Yes.
+3	line	Player	I'd enjoy trying that.
+3	line	King Arthur	Go speak to Merlin. He may be able to give a better clue as to where it is now you have freed him from that crystal.
+3	line	King Arthur	He has set up his workshop in the room next to the library.
+3	action	end
+2	option	No.
+3	line	Player	I may come back and try that later.
+3	line	King Arthur	Be sure that you come speak to me soon then.
+3	action	end
+1	option	I am weary of questing for the time being...
+2	line	Player	I am weary of questing for the time being...
+2	line	King Arthur	Maybe later then?
+2	line	Player	Maybe so.
+2	action	end
+0	section	Subsequent dialogue with King Arthur
+1	line	King Arthur	How goes thy quest?
+1	line	Player	I am making progress, but I have not recovered the Grail yet.
+1	line	King Arthur	Well, the Grail IS very elusive, it may take some perseverance.
+1	line	King Arthur	As I said before, speak to Merlin in the workshop by the library.
+1	action	end
+0	section	Talking to Merlin
+1	line	Player	Hello. King Arthur has sent me on a quest for the Holy Grail. He thought you could offer some assistance.
+1	line	Merlin	Ah yes... the Holy Grail...
+1	line	Merlin	That is a powerful artefact indeed. Returning it here would help Camelot a lot.
+1	line	Merlin	Due to its nature the Holy Grail is likely to reside in a holy place.
+1	line	Player	Any suggestions?
+1	line	Merlin	I believe there is a holy island somewhere not far away... I'm not entirely sure... I spent too long inside that crystal! Anyway, go and talk to someone over there.
+1	line	Merlin	I suppose you could also try speaking to Sir Galahad?
+1	line	Merlin	He returned from the quest many years after everyone else. He seems to know something about it, but he can only speak about those experiences cryptically.
+1	select	Select an option
+1	option	Thank you for the advice.
+2	line	Player	Thank you for the advice.
+2	action	end
+1	option	Where can I find Sir Galahad?
+2	line	Player	Where can I find Sir Galahad?
+2	line	Merlin	Galahad now lives a life of religious contemplation. He lives somewhere west of McGrubor's Wood I think.
+2	action	end
+0	section	Updating King Arthur
+1	line	King Arthur	How goes thy quest?
+1	line	Player	I am making progress, but I have not recovered the Grail yet.
+1	line	King Arthur	Well, the Grail IS very elusive, it may take some perseverance.
+1	action	end
+0	section	Asking the other Knights
+0	section	Talking to Sir Palomedes
+1	line	Sir Palomedes	Hello there adventurer, what do you want of me?
+1	line	Player	I'd like some advice on finding the Grail.
+1	line	Sir Palomedes	Sorry, I cannot help you with that.
+1	action	end
+0	section	Talking to Sir Lucan
+1	line	Sir Lucan	Hello there adventurer.
+1	line	Player	I seek the Grail of legend!
+1	line	Sir Lucan	I'm afraid I don't have any suggestions...
+1	line	Player	Thanks. I'll try and find someone who does.
+1	action	end
+0	section	Talking to Sir Gawain
+1	line	Sir Gawain	Good day to you!
+1	line	Player	I seek the Grail in the name of Camelot!
+1	line	Sir Gawain	The Grail? That is truly a noble quest indeed. None but Galahad have come close.
+1	line	Player	Galahad? Who is he?
+1	line	Sir Gawain	He used to be one of the Knights of the Round Table, but he mysteriously disappeared many years ago.
+1	line	Player	Why would he quit being a Knight?
+1	line	Sir Gawain	That is a good question.
+1	line	Sir Gawain	I'm afraid I don't have the answer.
+1	action	end
+0	section	Talking to Sir Kay
+1	line	Sir Kay	Good morrow!
+1	line	Sir Kay	I hear you are questing for the Holy Grail?!
+1	line	Player	That's right. Any hints?
+1	line	Sir Kay	Unfortunately not, Sirrah.
+1	action	end
+0	section	Talking to Sir Tristam
+1	line	Sir Tristram	Hail Arthur, King of the Britons!
+1	line	Player	Um... Hello.
+1	line	Player	I am seeking the Grail...
+1	line	Sir Tristram	Good luck with that!
+1	action	end
+0	section	Talking to Sir Pellas
+1	line	Sir Pelleas	Greetings to the court of King Arthur!
+1	line	Player	Any suggestions on finding the Grail?
+1	line	Sir Pelleas	My best guess would be some sort of spell. Merlin is our magic expert. Ask him?
+1	line	Sir Pelleas	Although having said that, I believe Galahad found its location once...
+1	line	Player	Really? Know where I can find him?
+1	line	Sir Pelleas	I'm afraid not. He left here many moons ago and I know not where he went.
+1	action	end
+0	section	Talking to Sir Bedivere
+1	line	Sir Bedivere	May I help you?
+1	line	Sir Bedivere	You are looking for the Grail now adventurer?
+1	line	Player	Absolutely.
+1	line	Sir Bedivere	The best of luck to you! Make the name of Camelot proud, and bring it back to us.
+1	action	end
+0	section	Talking to Sir Lancelot
+1	line	Sir Lancelot	Greetings! I am Sir Lancelot, the greatest Knight in the land! What do you want?
+1	line	Player	I am questing for the Holy Grail.
+1	line	Sir Lancelot	The Grail? Ha! Frankly, friend, you're not in that league.
+1	line	Player	Why do you say that?
+1	line	Sir Lancelot	You got lucky with freeing Merlin but there's no way a puny wannabe like you is going to find the Holy Grail where so many others have failed.
+1	line	Player	We'll see about that.
+1	action	end
+0	section	Talking to the High Priest of Entrana
+1	line	High Priest	Many greetings. Welcome to our fair island.
+1	line	Player	Hello, I am in search of the Holy Grail.
+1	line	High Priest	The object of which you speak did once pass through holy Entrana. I know not where it is now however.
+1	line	High Priest	Nor do I really care.
+1	line	Crone	Did you say the Grail? You are a Grail knight, yes? Well you'd better hurry. A Fisher King is in pain.
+1	line	Player	Well I would, but I don't know where I am going!
+1	line	Crone	Go to where the six heads face, blow the whistle and away you go!
+1	select	Select an option
+1	option	What are the six heads?
+2	line	Player	What are the six heads?
+2	line	Crone	The six stone heads have appeared just recently in the world. They all face the point of realm crossing. Find where two of the heads face,
+2	line	Crone	and you should be able to pinpoint where it is.
+2	action	initial
+1	option	What's a Fisher King?
+2	line	Player	What's a Fisher King?
+2	line	Crone	The Fisher King is the owner and slave of the Grail...
+2	action	initial
+1	option	Ok, I will go searching.
+2	line	Player	Ok, I will go searching.
+2	line	Crone	Good luck with that.
+2	action	end
+1	option	What do you mean by the whistle?
+2	line	Player	What do you mean by the whistle?
+2	line	Crone	You don't know about the whistles yet? The whistles are easy.
+2	line	Crone	You will need one to get to and from the Fisher King's realm. They reside in a haunted manor house in Misthalin, though you may not perceive them unless you carry something from the realm of the Fisher
+2	line	Crone	King...
+2	select	Select an option
+2	option	What's a Fisher King?
+3	action	above
+2	option	Ok, I will go searching.
+3	action	above
+2	option	What do you mean by the whistle?
+3	action	above
+2	option	The point of realm crossing?
+3	line	Player	The point of realm crossing?
+3	line	Crone	The realm of the Fisher King is not quite of this reality. It is of a reality very close to ours though... Where it is easiest to cross, THAT is a point of realm crossing.
+3	action	end
+0	section	Talking to Sir Galahad
+1	line	Galahad	Welcome to my home. It's rare for me to have guests! Would you like a cup of tea? I'll just put the kettle on.
+1	box	Brother Galahad hangs a kettle over the fire.
+1	select	Select an option
+1	option	Are you any relation to Sir Galahad?
+1	option	I'm on a quest to find the Holy Grail!
+2	line	Player	I'm on a quest to find the Holy Grail!
+2	line	Galahad	Ah... the Grail... yes... that did fill me with wonder! Oh, that I could have stayed forever! The spear, the food, the people...
+2	select	Select an option
+2	option	So how can I find it?
+2	option	What are you talking about?
+3	line	Player	What are you talking about?
+3	line	Galahad	The Grail castle... It's... hard to describe with words. It mostly felt like a dream!
+3	action	above
+2	option	Why did you leave?
+3	line	Player	Why did you leave?
+3	line	Galahad	Apparently the time is getting close when the world will need Arthur and his knights of the round table again.
+3	line	Galahad	And that includes me.
+3	line	Galahad	Leaving was tough for me, so I took this small cloth from the table as a keepsake.
+3	action	end
+2	option	Why didn't you bring the Grail with you?
+3	line	Player	Why didn't you bring the Grail with you?
+3	line	Galahad	...I'm not sure. Because... it seemed to be... NEEDED in the Grail castle? Half a moment, your cup of tea is ready.
+3	box	Sir Galahad gives you a cup of tea.
+3	action	
+3	action	end
+2	option	So how can I find it?
+3	line	Player	So how can I find it?
+3	line	Galahad	I did not find it through looking - though admittedly I looked long and hard - eventually, it found me.
+3	action	above
+2	option	Well, I'd better be going then.
+3	line	Player	Well, I'd better be going then.
+3	line	Galahad	Half a moment, your cup of tea is ready.
+3	box	Sir Galahad gives you a cup of tea.
+3	action	
+3	line	Galahad	If you do come across any particularilySpelled particularly difficult obstacles on your quest, do not hesitate to ask my advice.
+3	line	Galahad	I know more about the realm of the Grail than many, and I have a feeling you may need to come back and speak to me anyway...
+1	option	Do you get lonely here on your own?
+1	cond	If the player talked to the High Priest of Entrana first:
+2	option	I seek an item from the realm of the Fisher King.
+3	line	Player	I seek an item from the realm of the Fisher King.
+3	line	Galahad	Funny you should mention that, but when I left there I took this small cloth from the table as a keepsake.
+3	line	Player	I don't suppose I could borrow that? It could come in useful on my quest.
+3	box	Galahad reluctantly passes you a small cloth.
+3	action	
+3	action	end
+0	section	Blowing on the Magic whistle
+1	cond	If the player blows the whistle anywhere besides between the four pillars at Brimhaven:
+2	box	The whistle makes no noise. It will not work in this location.
+2	action	end
+1	cond	If the player blows the whistle whilst inside the Fisher Realm:
+2	action	The player is teleported back to Brimhaven.
+2	action	end
+0	section	Encountering the Black Knight Titan
+1	box	I am the Black Knight Titan! You must pass through me before you can continue in this realm!
+1	select	Select an option
+1	option	Okay, have at ye oh evil knight!
+2	line	Player	Okay, have at ye oh evil knight!
+2	cond	If the player defeats the Black Knight Titan without the excalibur:
+3	box	Puny mortal... You cannot defeat me...
+3	action	The Black Knight Titan's regenerates back to full health.
+3	action	end
+2	cond	If the player uses the excalibur to defeat the Black Knight Titan:
+3	action	end
+1	option	Actually I think I'll run away!
+2	line	Player	Actually I think I'll run away!
+2	action	end
+0	section	Attempting to talk to the Black Knight Titan again after his defeat
+1	action	above
+0	section	Talking to the Fisherman
+1	line	Fisherman	Hi! I don't get many visitors here!
+1	select	Select an option
+1	option	How's the fishing?
+2	line	Player	How's the fishing?
+2	line	Fisherman	Not amazing. Not many fish can live in this gungey stuff. I remember when this was a pleasant river teeming with every sort of fish...
+2	action	end
+1	option	Any idea how to get into the castle?
+2	line	Player	Any idea how to get into the castle?
+2	line	Fisherman	Why, that's easy!
+2	line	Fisherman	Just ring one of the bells outside.
+2	line	Player	...I didn't see any bells.
+2	line	Fisherman	You must be blind then. There's ALWAYS bells there when I go to the castle.
+2	action	end
+1	option	Yes, well, this place is a dump.
+2	line	Player	Yes, well, this place is a dump!
+2	line	Fisherman	This place used to be very beautiful, however, as our king grows old and weak, the land seems to be dying too.
+2	action	end
+0	section	Peasant
+1	line	Peasant	Woe is me! Our crops are all failing... how shall I feed myself this winter?
+1	action	end
+0	section	Ringing the Grail bell
+1	cond	If the player rings the Grail bell but is not by the dismantled bricks:
+2	box	Ting-a-ling-a-ling!
+2	action	end
+1	cond	If the player rings the Grail bell and is at least four tiles by the dismantled bricks:
+2	box	Ting-a-ling-a-ling!
+2	line	Grail Maiden	Welcome to the Grail castle. You should come inside, it's cold out here.
+2	box	Somehow you are now inside the castle.
+2	action	end
+0	section	Talking to a Grail Maiden
+1	line	Grail Maiden	Welcome to the Grail castle.
+1	action	end
+0	section	Taking the holy grail before talking to the Fisher King
+1	box	You feel that the Grail shouldn't be moved. You must complete some task here before you are worthy.
+1	action	end
+0	section	Talking to The Fisher King
+1	line	The Fisher King	Ah! You got inside at last! You spent all that time fumbling around outside, I thought you'd never make it here.
+1	select	Select an option
+1	option	How did you know what I have been doing?
+2	line	Player	How did you know what I have been doing?
+2	line	The Fisher King	Oh, I can see what is happening in my realm. I have sent clues to help you get here, such as the fisherman, and the crone.
+2	action	initial
+1	option	I seek the Holy Grail.
+2	line	Player	I seek the Holy Grail.
+2	line	The Fisher King	Ah excellent. A knight come to seek the Holy Grail. Maybe our land can be restored to its former glory.
+2	line	The Fisher King	At the moment the Grail cannot be removed from the castle. Legend has it a questing knight will one day work out how to restore our land; then he will claim the Grail as his prize.
+2	line	Player	Any ideas how I can restore the land?
+2	line	The Fisher King	None at all.
+2	select	Select an option
+2	option	You don't look too well.
+3	line	Player	You don't look too well.
+3	line	The Fisher King	Nope, I don't feel so good either.
+3	line	The Fisher King	I fear my life is running short... Alas, my son and heir is not here. I am waiting for my son to return to this castle.
+3	line	The Fisher King	If you could find my son, that would be a great weight off my shoulders.
+3	line	Player	Who is your son?
+3	line	The Fisher King	He is known as Percival.
+3	line	The Fisher King	I believe he is a knight of the round table.
+3	line	Player	I shall go and see if I can find him.
+3	action	end
+2	option	Do you mind if I have a look around?
+3	line	Player	Do you mind if I have a look around?
+3	line	The Fisher King	No, not at all. Please, be my guest.
+3	action	end
+1	option	You don't look too well.
+2	action	above
+0	section	Talking to King Arthur
+1	line	Player	Hello, do you have a knight named Sir Percival?
+1	line	King Arthur	Ah yes. I remember young Percival. He rode off on a quest a couple of months ago. We are getting a bit worried, he's not back yet...
+1	line	King Arthur	He was going to try and recover the golden boots of Arkaneeses.
+1	line	Player	Any idea which way that would be?
+1	line	King Arthur	Not exactly. We discovered some magic golden feathers that are said to point the way to the boots...
+1	line	King Arthur	They certainly point somewhere.
+1	line	King Arthur	Just blowing gently on them will supposedly show the way to go.
+1	cond	If the player does not have enough inventory space:
+2	line	King Arthur	Free up some space and I'll give you a feather.
+2	action	end
+1	cond	If the player has one free inventory space:
+2	box	King Arthur gives you a feather.
+2	action	
+2	action	end
+1	cond	If the player loses the feather:
+2	action	initial
+0	section	Blowing on the Magic gold feather
+1	cond	If the player is directly to the west of the boots:
+2	action	end
+1	cond	If the player is directly to the east of the boots:
+2	action	end
+1	cond	If the player is directly to north of the boots:
+2	action	end
+1	cond	If the player is directly to the south of the boots:
+2	action	end
+1	cond	If the player is southeast of the boots:
+2	action	end
+1	cond	If the player is southwest of the boots:
+2	action	end
+1	cond	If the player is northeast of the boots:
+2	action	end
+1	cond	If the player is northwest of the boots:
+2	action	end
+1	cond	If the player is within 5 tiles away from the boots:
+2	action	end
+1	cond	If the player blows the feather whilst inside Scrubfoot's Cave or any dungeon:
+1	cond	If the player blows the feather whilst inside Sir Percival's house:
+2	action	end
+0	section	Talking to Sir Percival
+1	cond	If the player prods at the sacks:
+2	box	You hear a muffled groan. The sack wriggles slightly.
+2	action	end
+1	cond	If the player attempts to open the sack:
+2	box	You hear muffled noises from the sack. You open the sack.
+2	action	continues
+1	line	Sir Percival	Wow, thank you! I could hardly breathe in there!
+1	select	Select an option
+1	option	How did you end up in a sack?
+2	line	Player	How did you end up in a sack?
+2	line	Sir Percival	It's a little embarrassing really.
+2	line	Sir Percival	After going on a long and challenging quest to retrieve the boots of Arkaneeses, defeating many powerful enemies on the way, I fell into a goblin trap!
+2	line	Sir Percival	I've been kept as a slave here for the last 3 months!
+2	line	Sir Percival	A day or so ago, they decided it was a fun game to put me in this sack:Supposed to be a semicolon then they forgot about me!
+2	line	Sir Percival	I'm now very hungry, and my bones feel very stiff.
+2	action	inital
+1	option	Come with me, I shall make you a king.
+2	line	Player	Come with me, I shall make you a king.
+2	line	Sir Percival	What are you talking about?
+2	line	Sir Percival	The king of where?
+2	line	Player	Your father is apparently someone called the Fisher King. He is dying and wishes you to be his heir.
+2	line	Sir Percival	I have been told that before.
+2	line	Sir Percival	I have not been able to find that castle again though...
+1	cond	If the player does not have the whistle:
+2	line	Player	Well, I do have the means to get us there - wait, let me go get the magic whistle!
+2	action	end
+1	cond	If the player has the magic whistle:
+2	line	Player	Well, I do have the means to get us there - a magic whistle!
+2	box	You give a whistle to Sir Percival. You tell sir Percival what to do with the whistle.
+2	line	Sir Percival	Ok, I will see you there then!
+2	action	end
+1	option	Your father wishes to speak to you.
+2	line	Player	Your father wishes to speak to you.
+2	line	Sir Percival	My father? You have spoken to him recently?
+2	line	Player	He is dying and wishes you to be his heir.
+2	line	Sir Percival	I have been told that before.
+2	line	Sir Percival	I have not been able to find that castle again though...
+1	cond	If the player does not have the whistle:
+2	line	Player	Well, I do have the means to get us there - wait, let me go get the magic whistle!
+2	action	end
+1	cond	If the player has the magic whistle:
+2	line	Player	Well, I do have the means to get us there - a magic whistle!
+2	box	You give a whistle to Sir Percival. You tell sir Percival what to do with the whistle.
+2	line	Sir Percival	Ok, I will see you there then!
+2	action	end
+0	section	Subsequent dialogue with Sir Percival
+1	line	Sir Percival	I said I will see you there then!
+1	action	end
+0	section	Talking to Sir Percival at the Fisher Realm
+1	line	King Percival	You missed all the excitement!
+1	line	King Percival	I got here and agreed to take over duties as king here, then before my eyes the most miraculous changes occured here... grass and trees were growing outside before our very eyes!
+1	line	King Percival	Thank you very much for showing me the way home.
+1	action	end
+1	cond	If the player talks to him again:
+2	action	above
+0	section	Taking more than one Holy grail
+1	box	You feel that taking more than one Holy Grail might be greedy...
+1	action	end
+0	section	Talking to King Arthur
+1	line	King Arthur	How goes thy quest?
+1	line	Player	I have retrieved the Grail!
+1	line	King Arthur	Wow! Incredible! You truly are a splendid knight!
