@@ -9,6 +9,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 
 internal object GotrLocs : LocReferences() {
@@ -43,10 +44,42 @@ internal object GotrLocs : LocReferences() {
     val portal_law = find("gotr_portal_law")
     val portal_death = find("gotr_portal_death")
     val portal_blood = find("gotr_portal_blood")
+
+    val uncharged_cells = find("gotr_uncharged_cells")
+    val weak_cells = find("gotr_weak_cells")
+    val tile_inactive = find("gotr_cell_tile_inactive")
+    val tile_broken = find("gotr_cell_tile_broken_repairable")
+    val tile_tiers =
+        listOf(
+            find("gotr_cell_tile_tier1"),
+            find("gotr_cell_tile_tier2"),
+            find("gotr_cell_tile_tier3"),
+            find("gotr_cell_tile_tier4"),
+        )
+    val pile_east = find("gotr_guardian_spawn_east")
+    val pile_west = find("gotr_guardian_spawn_west")
 }
 
 internal object GotrNpcs : NpcReferences() {
     val great_guardian = find("gotr_great_guardian")
+    val leech = find("gotr_abyssal_leech")
+    val walker = find("gotr_abyssal_walker")
+    val pyramid = find("gotr_abyssal_pyramid")
+    /** Rift guardians by tier (weak..overcharged). */
+    val elemental_guardians =
+        listOf(
+            find("gotr_guardian_air"),
+            find("gotr_guardian_water"),
+            find("gotr_guardian_earth"),
+            find("gotr_guardian_fire"),
+        )
+    val catalytic_guardians =
+        listOf(
+            find("gotr_guardian_mind"),
+            find("gotr_guardian_chaos"),
+            find("gotr_guardian_death"),
+            find("gotr_guardian_blood"),
+        )
 }
 
 internal object GotrObjs : ObjReferences() {
@@ -56,6 +89,16 @@ internal object GotrObjs : ObjReferences() {
     val stone_catalytic = find("gotr_guardian_stone_catalytic")
     val stone_polyelemental = find("gotr_guardian_stone_polyelemental")
     val stone_polycatalytic = find("gotr_guardian_stone_polycatalytic")
+    val cell_uncharged = find("gotr_cell_uncharged")
+    /** Charged cells by tier (weak..overcharged). */
+    val cells =
+        listOf(
+            find("gotr_cell_tier1"),
+            find("gotr_cell_tier2"),
+            find("gotr_cell_tier3"),
+            find("gotr_cell_tier4"),
+        )
+    val chisel = find("chisel")
     val talismans =
         listOf(
             find("gotr_portal_talisman_air"),
@@ -79,6 +122,18 @@ internal object GotrInterfaces : InterfaceReferences() {
 
 internal object GotrSeqs : SeqReferences() {
     val workbench = find("gotr_chisel_essence")
+    val chisel_guardian = find("gotr_chisel_guardian")
+    val leech_attack = find("gotr_abyssal_leech_attack")
+    val leech_death = find("gotr_abyssal_leech_death")
+    val walker_attack = find("gotr_abyssal_walker_attack")
+    val walker_death = find("gotr_abyssal_walker_death")
+    val pyramid_attack = find("gotr_abyssal_pyramid_attack")
+    val pyramid_death = find("gotr_abyssal_pyramid_death")
+}
+
+internal object GotrVarbits : VarBitReferences() {
+    /** Temple of the Eye progress (world's quest): 130 = complete. */
+    val tote = find("tote")
 }
 
 internal object GotrQueues : QueueReferences() {

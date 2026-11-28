@@ -20,10 +20,13 @@ import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifOpenOverlay
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.random.GameRandom
+import org.rsmod.api.player.vars.intVarBit
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpLoc1
+import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onPlayerLogin
@@ -34,12 +37,13 @@ import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.symbols.name.NameMapping
 import org.rsmod.content.quests.framework.isQuestComplete
 import org.rsmod.content.quests.lostcity.LostCity
-import org.rsmod.content.quests.runemysteries.RuneMysteries
 import org.rsmod.content.skills.mining.configs.MiningParams
 import org.rsmod.content.skills.mining.scripts.Mining
 import org.rsmod.content.skills.runecraft.RunecraftData
 import org.rsmod.events.EventBus
+import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
+import org.rsmod.game.entity.npc.NpcMode
 import org.rsmod.game.interact.InteractionOp
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.loc.LocAngle
@@ -47,6 +51,7 @@ import org.rsmod.game.loc.LocInfo
 import org.rsmod.game.loc.LocShape
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
+import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
@@ -73,10 +78,15 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Fragments, essence and portal talismans are removed when a game starts and when you leave.
  * - HUD: gotr_hud, filled by the client's own update script (cs2 5980).
  *
- * Not in phase 1: abyssal creatures, cells, barriers and rift guardians (phase 2); the Rewards
- * Guardian and the shop (phase 3); combination runes; Raiments; portal talismans.
- * With QuestGates on, entering the temple needs Temple of the Eye, which isn't built: Rune
- * Mysteries stands in. Law / death / blood quest gates aren't built either (open for now).
+ * - Phase 2: uncharged cells (table) charge at the altar to its tier; charged cells build,
+ *   strengthen or heal barriers on the 7 cell tiles (broken tiles take 12 fragments to repair) or
+ *   assemble rift guardians at the essence piles (chisel). Abyssal creatures spawn from the rift
+ *   after the prep, break barriers and drain the Great Guardian; at 0 the game is lost. Energy
+ *   per cell use is the Wiki's table; creature numbers, health and damage are solo-tuned.
+ *
+ * Not yet: the Rewards Guardian and the shop (phase 3); combination runes; Raiments; portal
+ * talismans. With QuestGates on, entering the temple needs Temple of the Eye (varbit tote 130,
+ * world's quest). Law / death / blood quest gates aren't built yet (open for now).
  */
 class GotrScript
 @Inject
@@ -88,7 +98,11 @@ constructor(
     private val random: GameRandom,
     private val locRepo: LocRepository,
     private val xpMods: XpModifiers,
+    private val npcRepo: NpcRepository,
+    private val npcTypes: NpcTypeList,
 ) : PluginScript() {
+    private var Player.templeOfTheEye by intVarBit(GotrVarbits.tote)
+
     /** A portal guardian: its loc, the altar it leads to, and its HUD key (enums 4270 / 4271). */
     private class Guardian(val loc: LocType, val altarKey: String, val elemental: Boolean, val hud: Int)
 
@@ -141,6 +155,12 @@ constructor(
         /** Away at a runic altar through a portal guardian (still in the game). */
         var atAltar: CoordGrid? = null
         var over = false
+        val barriers = HashMap<CoordGrid, Barrier>()
+        val creatures = ArrayList<Creature>()
+        val riftGuardians = ArrayList<RiftGuardian>()
+        var guardianHealth = GREAT_GUARDIAN_HEALTH
+        var nextSpawn = PREP_TICKS
+        var surged = false
     }
 
     private val games = WeakHashMap<Player, Game>()
@@ -163,6 +183,15 @@ constructor(
         for (guardian in guardians) {
             bindLoc(guardian.loc, 1) { enterGuardian(guardian) }
         }
+        bindLoc(GotrLocs.uncharged_cells, 1) { takeUncharged(MAX_UNCHARGED) }
+        bindLoc(GotrLocs.uncharged_cells, 2) { takeUncharged(1) }
+        bindLoc(GotrLocs.weak_cells, 1) { takeWeakCell() }
+        bindLoc(GotrLocs.weak_cells, 2) { takeChisel() }
+        for (tile in GotrLocs.tile_tiers + GotrLocs.tile_inactive + GotrLocs.tile_broken) {
+            bindLoc(tile, 1) { placeCell(it) }
+        }
+        bindLoc(GotrLocs.pile_east, 1) { assemble(elemental = true) }
+        bindLoc(GotrLocs.pile_west, 1) { assemble(elemental = false) }
         if (!isNpcOpBound(GotrNpcs.great_guardian, 1)) {
             onOpNpc1(GotrNpcs.great_guardian) { powerUp() }
         }
@@ -184,6 +213,7 @@ constructor(
         }
         when (op) {
             1 -> onOpLoc1(type) { action(it.loc) }
+            2 -> onOpLoc2(type) { action(it.loc) }
             3 -> onOpLoc3(type) { action(it.loc) }
         }
     }
@@ -191,8 +221,7 @@ constructor(
     /* Entering and leaving */
 
     private fun ProtectedAccess.enterTemple() {
-        if (player.isFeatureOn(Feature.QuestGates) && !player.isQuestComplete(RuneMysteries.RUNE_MYSTERIES)) {
-            // Temple of the Eye isn't built; Rune Mysteries stands in.
+        if (player.isFeatureOn(Feature.QuestGates) && player.templeOfTheEye < TOTE_COMPLETE) {
             mes("You need to complete Temple of the Eye to enter the temple.")
             return
         }
@@ -229,6 +258,7 @@ constructor(
         val game = games.remove(this) ?: return
         clearSoftTimer(GotrTimers.tick)
         closeHugePortal(game)
+        clearDefence(game)
         ifCloseOverlay(GotrInterfaces.hud, eventBus)
         clearGameItems()
         if (!silent && !game.over) {
@@ -285,6 +315,12 @@ constructor(
             closeHugePortal(game)
             game.hugeOpensAt = game.tick + HUGE_PORTAL_EVERY
         }
+        if (game.tick >= PREP_TICKS) {
+            defenceTick(game)
+            if (game.over) {
+                return
+            }
+        }
         if (game.tick % HUD_TICKS == 0) {
             updateHud(game)
         }
@@ -305,7 +341,7 @@ constructor(
             if (game.hugeClosesAt >= 0) game.hugeSpot else 0,
             game.openElemental?.hud ?: 0,
             game.openCatalytic?.hud ?: 0,
-            0,
+            game.riftGuardians.size,
             MAX_RIFT_GUARDIANS,
             rotate,
             huge,
@@ -481,6 +517,7 @@ constructor(
         val stone = if (elemental) GotrObjs.stone_elemental else GotrObjs.stone_catalytic
         invAdd(inv, stone, essence)
         invAdd(inv, rune, essence * perEssence)
+        chargeCell(altar.key)
         statAdvance(stats.runecrafting, essence * altar.xp * xpMods.get(player, stats.runecrafting))
         mes("You bind the temple's power into ${altar.key} runes and guardian stones.")
     }
@@ -529,6 +566,7 @@ constructor(
     private fun ProtectedAccess.win(game: Game) {
         game.over = true
         closeHugePortal(game)
+        clearDefence(game)
         val elemental = game.elementalEnergy
         val catalytic = game.catalyticEnergy
         val total = (elemental + catalytic).coerceAtMost(TOTAL_CAP)
@@ -551,6 +589,301 @@ constructor(
     /** Energy / 100 points, the remainder as a percent chance of one more. */
     private fun points(energy: Int): Int =
         energy / 100 + if (random.of(100) < energy % 100) 1 else 0
+
+    /* Phase 2: cells, barriers, rift guardians and abyssal creatures (solo-tuned, see constants) */
+
+    private class Barrier(val coords: CoordGrid) {
+        var tier = 0
+        var hp = 0
+        var broken = false
+        var locType: LocType = GotrLocs.tile_inactive
+    }
+
+    private class Creature(val npc: Npc, val kind: CreatureKind, var hp: Int, val tile: Int) {
+        var atBarrier = false
+        var atGuardian = false
+        var nextAttack = 0
+    }
+
+    private enum class CreatureKind(val hp: Int, val damage: Int, val weight: Int) {
+        Leech(10, 2, 6),
+        Walker(30, 4, 3),
+        Guardian(50, 6, 1),
+    }
+
+    private class RiftGuardian(val npc: Npc, val tier: Int, var nextAttack: Int, val diesAt: Int)
+
+    private fun cellTier(obj: Int): Int = GotrObjs.cells.indexOfFirst { it.id == obj } + 1
+
+    private fun ProtectedAccess.heldCellTier(): Int =
+        inv.firstNotNullOfOrNull { obj -> obj?.let { cellTier(it.id) }?.takeIf { it > 0 } } ?: 0
+
+    private fun ProtectedAccess.takeUncharged(amount: Int) {
+        val have = invTotal(inv, GotrObjs.cell_uncharged)
+        val take = minOf(amount, MAX_UNCHARGED - have)
+        if (take <= 0) {
+            mes("You can't carry any more uncharged cells.")
+            return
+        }
+        invAdd(inv, GotrObjs.cell_uncharged, take)
+    }
+
+    private fun ProtectedAccess.takeWeakCell() {
+        if (heldCellTier() > 0) {
+            mes("You can only carry one charged cell at a time.")
+            return
+        }
+        invAdd(inv, GotrObjs.cells[0], 1)
+    }
+
+    private fun ProtectedAccess.takeChisel() {
+        if (invTotal(inv, GotrObjs.chisel) > 0) {
+            mes("You already have a chisel.")
+            return
+        }
+        invAdd(inv, GotrObjs.chisel, 1)
+    }
+
+    /** While imbuing: one uncharged cell becomes the altar's tier of charged cell. */
+    private fun ProtectedAccess.chargeCell(altarKey: String) {
+        if (invTotal(inv, GotrObjs.cell_uncharged) <= 0 || heldCellTier() > 0) {
+            return
+        }
+        val tier = CELL_TIERS[altarKey] ?: return
+        invDel(inv, GotrObjs.cell_uncharged, 1)
+        invAdd(inv, GotrObjs.cells[tier - 1], 1)
+    }
+
+    private fun ProtectedAccess.placeCell(loc: BoundLocInfo) {
+        val game = games[player] ?: return mes("The cell tile is inert outside a game.")
+        val barrier = game.barriers.getOrPut(loc.coords) { Barrier(loc.coords) }
+        if (barrier.broken) {
+            return repairTile(game, barrier)
+        }
+        val tier = heldCellTier()
+        if (tier == 0) {
+            mes("You need a charged cell to place on the tile.")
+            return
+        }
+        invDel(inv, GotrObjs.cells[tier - 1], 1)
+        val (energy, xp) =
+            when {
+                barrier.tier == 0 -> {
+                    barrier.tier = tier
+                    barrier.hp = BARRIER_HP[tier - 1]
+                    PLACE_ENERGY[tier - 1] to CELL_XP[tier - 1]
+                }
+                tier > barrier.tier -> {
+                    barrier.tier++
+                    barrier.hp = BARRIER_HP[barrier.tier - 1]
+                    STRENGTHEN_ENERGY[barrier.tier - 1] to CELL_XP[tier - 1]
+                }
+                else -> {
+                    barrier.hp = minOf(BARRIER_HP[barrier.tier - 1], barrier.hp + HEAL[tier - 1])
+                    RECHARGE_ENERGY[tier - 1] to CELL_XP[tier - 1]
+                }
+            }
+        setTile(barrier, GotrLocs.tile_tiers[barrier.tier - 1])
+        addEnergy(game, energy, energy)
+        statAdvance(stats.runecrafting, xp * xpMods.get(player, stats.runecrafting))
+    }
+
+    private fun ProtectedAccess.repairTile(game: Game, barrier: Barrier) {
+        if (invTotal(inv, GotrObjs.fragment) < REPAIR_FRAGMENTS) {
+            mes("You need $REPAIR_FRAGMENTS guardian fragments to repair the cell tile.")
+            return
+        }
+        invDel(inv, GotrObjs.fragment, REPAIR_FRAGMENTS)
+        barrier.broken = false
+        barrier.tier = 0
+        barrier.hp = 0
+        setTile(barrier, GotrLocs.tile_inactive)
+        addEnergy(game, REPAIR_ENERGY, REPAIR_ENERGY)
+        mes("You repair the cell tile.")
+    }
+
+    private fun setTile(barrier: Barrier, into: LocType) {
+        val current = locRepo.findExact(barrier.coords, barrier.locType) ?: return
+        locRepo.change(current, into, TILE_DURATION)
+        barrier.locType = into
+    }
+
+    private fun addEnergy(game: Game, elemental: Int, catalytic: Int) {
+        game.elementalEnergy = (game.elementalEnergy + elemental).coerceAtMost(TYPE_CAP)
+        game.catalyticEnergy = (game.catalyticEnergy + catalytic).coerceAtMost(TYPE_CAP)
+    }
+
+    private fun ProtectedAccess.assemble(elemental: Boolean) {
+        val game = games[player] ?: return mes("The essence pile is inert outside a game.")
+        if (invTotal(inv, GotrObjs.chisel) <= 0) {
+            mes("You need a chisel to assemble a guardian.")
+            return
+        }
+        val tier = heldCellTier()
+        if (tier == 0) {
+            mes("You need a charged cell to power a guardian.")
+            return
+        }
+        game.riftGuardians.removeIf { !it.npc.isSlotAssigned }
+        if (game.riftGuardians.size >= MAX_RIFT_GUARDIANS) {
+            mes("There are already too many guardians in the temple.")
+            return
+        }
+        invDel(inv, GotrObjs.cells[tier - 1], 1)
+        anim(GotrSeqs.chisel_guardian)
+        val types = if (elemental) GotrNpcs.elemental_guardians else GotrNpcs.catalytic_guardians
+        val spot = if (elemental) EAST_PILE else WEST_PILE
+        val npc = Npc(npcTypes[types[tier - 1]], spot).apply { mode = NpcMode.None }
+        npcRepo.add(npc, RIFT_GUARDIAN_LIFE)
+        npc.walk(GUARDIAN_POST)
+        game.riftGuardians += RiftGuardian(npc, tier, game.tick + 4, game.tick + RIFT_GUARDIAN_LIFE)
+        val energy = GUARDIAN_ENERGY[tier - 1]
+        if (elemental) addEnergy(game, energy, 0) else addEnergy(game, 0, energy)
+        statAdvance(stats.crafting, ASSEMBLE_XP * xpMods.get(player, stats.crafting))
+        statAdvance(stats.runecrafting, CELL_XP[tier - 1] * xpMods.get(player, stats.runecrafting))
+    }
+
+    /** Spawns, moves and resolves the abyssal creatures; called every tick after the prep. */
+    private fun Player.defenceTick(game: Game) {
+        if (game.tick >= game.nextSpawn && game.creatures.size < maxCreatures(game)) {
+            spawnCreature(game)
+            game.nextSpawn = game.tick + if (game.surged) SPAWN_TICKS_SURGE else SPAWN_TICKS
+        }
+        if (!game.surged && game.power * 100 >= SOLO_POWER * SURGE_PERCENT) {
+            game.surged = true
+            for (barrier in game.barriers.values) {
+                damageBarrier(barrier, SURGE_DAMAGE)
+            }
+            mes("The temple rumbles as the rift glows more intensely!")
+        }
+        val iterator = game.creatures.iterator()
+        while (iterator.hasNext()) {
+            val creature = iterator.next()
+            if (!creature.npc.isSlotAssigned) {
+                iterator.remove()
+                continue
+            }
+            val barrier = game.barriers[TILES[creature.tile]]
+            val standing = barrier != null && barrier.tier > 0 && !barrier.broken
+            if (!creature.atGuardian && !standing && creature.atBarrier) {
+                creature.atGuardian = true
+                creature.npc.walk(GUARDIAN_FRONT)
+            }
+            if (!creature.atBarrier && creature.npc.coords.chebyshevDistance(barrierFront(creature.tile)) <= 1) {
+                creature.atBarrier = true
+            }
+            if (game.tick < creature.nextAttack) {
+                continue
+            }
+            creature.nextAttack = game.tick + CREATURE_ATTACK_TICKS
+            when {
+                creature.atGuardian && creature.npc.coords.chebyshevDistance(GUARDIAN_FRONT) <= 2 -> {
+                    creature.npc.anim(attackSeq(creature.kind))
+                    game.guardianHealth -= creature.kind.damage
+                }
+                creature.atBarrier && standing && barrier != null -> {
+                    creature.npc.anim(attackSeq(creature.kind))
+                    damageBarrier(barrier, creature.kind.damage)
+                }
+            }
+        }
+        for (guardian in game.riftGuardians) {
+            if (!guardian.npc.isSlotAssigned || game.tick < guardian.nextAttack) {
+                continue
+            }
+            guardian.nextAttack = game.tick + GUARDIAN_ATTACK_TICKS
+            val target = game.creatures.firstOrNull { it.npc.isSlotAssigned } ?: break
+            target.hp -= RIFT_GUARDIAN_DAMAGE * guardian.tier
+            if (target.hp <= 0) {
+                killCreature(game, target)
+            }
+        }
+        game.riftGuardians.removeIf { !it.npc.isSlotAssigned || game.tick >= it.diesAt }
+        if (game.guardianHealth <= 0) {
+            lose(game)
+        }
+    }
+
+    private fun maxCreatures(game: Game): Int = if (game.surged) MAX_CREATURES_SURGE else MAX_CREATURES
+
+    private fun spawnCreature(game: Game) {
+        val roll = random.of(CreatureKind.entries.sumOf { it.weight })
+        var acc = 0
+        val kind = CreatureKind.entries.first { acc += it.weight; roll < acc }
+        val type =
+            when (kind) {
+                CreatureKind.Leech -> GotrNpcs.leech
+                CreatureKind.Walker -> GotrNpcs.walker
+                CreatureKind.Guardian -> GotrNpcs.pyramid
+            }
+        val tile = random.of(TILES.size)
+        val npc = Npc(npcTypes[type], RIFT).apply { mode = NpcMode.None }
+        npcRepo.add(npc, CREATURE_LIFE)
+        npc.walk(barrierFront(tile))
+        game.creatures += Creature(npc, kind, kind.hp, tile)
+    }
+
+    private fun barrierFront(tile: Int): CoordGrid = TILES[tile].translate(0, 1)
+
+    private fun attackSeq(kind: CreatureKind) =
+        when (kind) {
+            CreatureKind.Leech -> GotrSeqs.leech_attack
+            CreatureKind.Walker -> GotrSeqs.walker_attack
+            CreatureKind.Guardian -> GotrSeqs.pyramid_attack
+        }
+
+    private fun killCreature(game: Game, creature: Creature) {
+        val death =
+            when (creature.kind) {
+                CreatureKind.Leech -> GotrSeqs.leech_death
+                CreatureKind.Walker -> GotrSeqs.walker_death
+                CreatureKind.Guardian -> GotrSeqs.pyramid_death
+            }
+        creature.npc.anim(death)
+        if (creature.npc.isSlotAssigned) {
+            npcRepo.del(creature.npc, Int.MAX_VALUE)
+        }
+        game.creatures.remove(creature)
+    }
+
+    private fun damageBarrier(barrier: Barrier, damage: Int) {
+        if (barrier.tier == 0 || barrier.broken) {
+            return
+        }
+        barrier.hp -= damage
+        if (barrier.hp <= 0) {
+            barrier.broken = true
+            barrier.tier = 0
+            setTile(barrier, GotrLocs.tile_broken)
+        }
+    }
+
+    private fun Player.lose(game: Game) {
+        game.over = true
+        clearDefence(game)
+        closeHugePortal(game)
+        mes("The Great Guardian has been overwhelmed. The rift remains open...")
+        mes("Pass the barrier to try again.")
+    }
+
+    /** Removes every creature and rift guardian and resets the cell tiles. */
+    private fun clearDefence(game: Game) {
+        for (creature in game.creatures) {
+            if (creature.npc.isSlotAssigned) npcRepo.del(creature.npc, Int.MAX_VALUE)
+        }
+        for (guardian in game.riftGuardians) {
+            if (guardian.npc.isSlotAssigned) npcRepo.del(guardian.npc, Int.MAX_VALUE)
+        }
+        game.creatures.clear()
+        game.riftGuardians.clear()
+        for (barrier in game.barriers.values) {
+            if (barrier.locType !== GotrLocs.tile_inactive) {
+                val current = locRepo.findExact(barrier.coords, barrier.locType) ?: continue
+                locRepo.change(current, GotrLocs.tile_inactive, 1)
+            }
+        }
+        game.barriers.clear()
+    }
 
     /* Areas */
 
@@ -620,5 +953,60 @@ constructor(
         const val TOTAL_CAP = 1200
         const val XP_ENERGY_THRESHOLD = 300
         const val XP_PER_LEVEL = 45
+        const val TOTE_COMPLETE = 130
+
+        // Phase 2. Energy and cell xp per tier (weak..overcharged): OSRS Wiki table; the Wiki
+        // lists xp 30/100/180/250, read here as tenths like cache xp (3/10/18/25).
+        val PLACE_ENERGY = intArrayOf(17, 20, 24, 30)
+        val STRENGTHEN_ENERGY = intArrayOf(0, 7, 13, 22)
+        val RECHARGE_ENERGY = intArrayOf(2, 5, 9, 15)
+        val HEAL = intArrayOf(10, 25, 50, 100)
+        val GUARDIAN_ENERGY = intArrayOf(6, 15, 27, 45)
+        val CELL_XP = doubleArrayOf(3.0, 10.0, 18.0, 25.0)
+        const val ASSEMBLE_XP = 8.0
+        const val REPAIR_FRAGMENTS = 12
+        const val REPAIR_ENERGY = 25
+        const val MAX_UNCHARGED = 10
+        /** Charged cell tier made at each altar (Wiki: weak / medium / strong / overcharged). */
+        val CELL_TIERS =
+            mapOf(
+                "air" to 1, "mind" to 1, "body" to 1,
+                "water" to 2, "cosmic" to 2, "chaos" to 2,
+                "earth" to 3, "nature" to 3, "law" to 3,
+                "fire" to 4, "death" to 4, "blood" to 4,
+            )
+
+        // Solo tuning (authored, logged for Ryan): barrier health per tier, creature pacing.
+        val BARRIER_HP = intArrayOf(50, 100, 150, 200)
+        const val GREAT_GUARDIAN_HEALTH = 100
+        const val SPAWN_TICKS = 25
+        const val SPAWN_TICKS_SURGE = 15
+        const val MAX_CREATURES = 4
+        const val MAX_CREATURES_SURGE = 6
+        const val CREATURE_ATTACK_TICKS = 5
+        const val CREATURE_LIFE = 3000
+        const val SURGE_PERCENT = 60
+        const val SURGE_DAMAGE = 50
+        const val RIFT_GUARDIAN_LIFE = 300
+        const val RIFT_GUARDIAN_DAMAGE = 3
+        const val GUARDIAN_ATTACK_TICKS = 4
+        const val TILE_DURATION = 6000
+
+        /** The 7 cell tiles (cache map), the rift, the piles and the Great Guardian's front. */
+        val TILES =
+            listOf(
+                CoordGrid(3608, 9503, 0),
+                CoordGrid(3609, 9507, 0),
+                CoordGrid(3611, 9509, 0),
+                CoordGrid(3615, 9510, 0),
+                CoordGrid(3619, 9509, 0),
+                CoordGrid(3621, 9507, 0),
+                CoordGrid(3622, 9503, 0),
+            )
+        val RIFT = CoordGrid(3612, 9523, 0)
+        val EAST_PILE = CoordGrid(3619, 9491, 0)
+        val WEST_PILE = CoordGrid(3610, 9491, 0)
+        val GUARDIAN_POST = CoordGrid(3615, 9512, 0)
+        val GUARDIAN_FRONT = CoordGrid(3615, 9506, 0)
     }
 }
