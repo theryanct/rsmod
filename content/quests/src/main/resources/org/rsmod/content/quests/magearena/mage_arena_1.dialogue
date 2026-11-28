@@ -1,0 +1,178 @@
+# Generated from the OSRS Wiki page "Transcript:Mage Arena I" by tools/quests/transcript_to_dialogue.py
+0	section	Without level 60 Magic
+1	line	Player	Hello there. What is this place?
+1	line	Kolodion	Do not waste my time with trivial questions. I am the Great Kolodion, master of battle magic. I have an arena to run.
+1	line	Player	Can I enter?
+1	line	Kolodion	Hah! A wizard of your level? Don't be absurd.
+1	action	end
+0	section	Pulling the Mage Arena lever before starting Mage Arena I
+1	line	Kolodion	You're not allowed in there. Come downstairs if you want to enter my arena.
+1	action	end
+0	section	With 60 Magic or higher
+0	section	Introduction
+1	line	Player	Hello there. What is this place?
+1	line	Kolodion	I am the great Kolodion, master of battle magic, and this is my battle arena. Top wizards travel from all over Gielinor to fight here.
+1	select	Select an Option
+1	option	Can I fight here?
+2	line	Player	Can I fight here?
+2	line	Kolodion	My arena is open to any high level wizard, but this is no game. Many wizards fall in this arena, never to rise again. The strongest mages have been destroyed.
+2	line	Kolodion	If you're sure you want in?
+2	select	Select an Option
+2	option	Yes indeedy.
+3	line	Player	Yes indeedy.
+3	line	Kolodion	Good, good. You have a healthy sense of competition.
+3	line	Kolodion	Remember, traveller - in my arena, hand-to-hand combat is useless. Your strength will diminish as you enter the arena, but the spells you can learn are amongst the most powerful in all of Gielinor.
+3	line	Kolodion	Before I can accept you in, we must duel.
+3	select	Select an Option
+3	option	Okay, let's fight.
+4	line	Player	Okay, let's fight.
+4	line	Kolodion	I must first check that you are up to scratch.
+4	line	Player	You don't need to worry about that.
+4	line	Kolodion	Not just any magician can enter - only the most powerful and most feared. Before you can use the power of this arena, you must prove yourself against me.
+4	action	end
+3	option	No thanks.
+4	line	Player	No thanks.
+4	action	end
+2	option	No I don't.
+3	line	Player	No I don't.
+3	line	Kolodion	Your loss.
+3	action	end
+1	option	What's the point of that?
+2	line	Player	What's the point of that?
+2	line	Kolodion	We learn how to use our magic to its fullest and how to channel the forces of the cosmos into our world...
+2	line	Kolodion	But mainly, I just like blasting people into dust.
+2	action	previous
+1	option	That's barbaric!
+2	line	Player	That's barbaric!
+2	line	Kolodion	Nope, it's magic. But I know what you mean. So do you want to join us?
+2	select	Select an Option
+2	option	Yes indeedy.
+3	action	above
+2	option	No I don't.
+3	action	above
+0	section	The duel
+1	line	Kolodion	You must prove yourself... now!
+1	line	Kolodion (Ogre)	This is only the beginning; you can't beat me!
+1	line	Kolodion (Spider)	Foolish mortal; I am unstoppable.
+1	line	Kolodion (Ghost)	Now you feel it... The dark energy.
+1	line	Kolodion (Black demon)	Aaaaaaaarrgghhhh! The power!
+1	line	Kolodion	Well done, young adventurer; you truly are a worthy battle mage.
+1	line	Player	What now?
+1	line	Kolodion	Step into the magic pool. It will take you to a chamber. There, you must decide which god you will represent in the arena.
+1	line	Player	Thanks, Kolodion.
+1	line	Kolodion	That's what I'm here for.
+1	action	end
+0	section	Speaking to Kolodion again
+1	line	Player	Hello, Kolodion.
+1	line	Kolodion	Hello, young mage. You're a tough one.
+1	line	Player	What now?
+1	action	above
+0	section	Choosing your god
+0	section	Entering/exiting the chamber
+1	box	You step into the pool of sparkling water. You feel energy rush through your veins.
+1	action	end
+0	section	Talking to the chamber guardian
+1	line	Player	Hello my friend, Kolodion sent me down.
+1	line	Chamber guardian	Sssshhh... the gods are talking. I can hear their whispers.
+1	line	Chamber guardian	Can you hear them adventurer, they're calling you.
+1	line	Player	Erm... ok!
+1	line	Chamber guardian	Go chant at the statue of the god you most wish to represent in this world, you will be rewarded.
+1	line	Chamber guardian	Once you are done, come back to me. I shall supply you with a mage staff ready for battle.
+1	action	end
+0	section	Praying at the god statues
+0	section	Guthix
+1	box	You kneel and chant to Guthix...
+1	cond	If the player has 1 inventory space open:
+2	box	You kneel and chant to Guthix... You feel a rush of energy charge through your veins. Suddenly a cape appears in your pack.
+2	action	end
+1	cond	If the player has no inventory spaces open:
+2	box	You kneel and chant to Guthix... ... but there is no response. You feel that making space in your inventory could help.
+2	action	end
+0	section	Saradomin
+1	box	You kneel and chant to Saradomin...
+1	cond	If the player has 1 inventory space open:
+2	box	You kneel and chant to Saradomin... You feel a rush of energy charge through your veins. Suddenly a cape appears in your pack.
+2	action	end
+1	cond	If the player has no inventory spaces open:
+2	box	You kneel and chant to Saradomin... ... but there is no response. You feel that making space in your inventory could help.
+2	action	end
+0	section	Zamorak
+1	box	You kneel and chant to Zamorak...
+1	cond	If the player has 1 inventory space open:
+2	box	You kneel and chant to Zamorak... You feel a rush of energy charge through your veins. Suddenly a cape appears in your pack.
+2	action	end
+1	cond	If the player has no inventory spaces open:
+2	box	You kneel and chant to Zamorak... ... but there is no response. You feel that making space in your inventory could help.
+2	action	end
+0	section	Talking to the chamber guardian after choosing a cape
+1	line	Player	Hi.
+1	line	Chamber guardian	Hello adventurer, have you made your choice?
+1	line	Player	I have.
+1	cond	If the player doesn't have the cape with them:
+2	line	Chamber guardian	Good, good, I hope you have chosen well. Have you been rewarded with a cape from your chosen god?
+2	line	Player	I'm afraid I don't have it with me.
+2	line	Chamber guardian	Once you have your cape come back to me, and I shall supply you with a mage staff ready for battle.
+2	action	end
+1	cond	If the player has the cape with them:
+2	line	Chamber guardian	Good, good, I hope you have chosen well. I will now present you with a magic staff. This, along with the cape awarded to you by your chosen god, are all the weapons and armour you will need here.
+2	cond	If player chose Saradomin cape:
+3	box	The guardian hands you an ornate magic staff.
+3	action	end
+2	cond	If player chose Guthix cape:
+3	box	The guardian hands you an ornate magic staff.
+3	action	end
+2	cond	If player chose Zamorak cape:
+3	box	The guardian hands you an ornate magic staff.
+3	action	end
+0	section	Talking to Kolodion after choosing a god
+1	line	Player	Hello, Kolodion.
+1	line	Kolodion	Hey there, how are you? Are you enjoying the bloodshed?
+1	select	Select an Option
+1	option	I think I've had enough for now.
+2	line	Player	I think I've had enough for now.
+2	line	Kolodion	A shame. You're a good battle mage. I hope to see you soon.
+2	action	end
+1	option	How can I use my new spells outside of the arena?
+2	line	Player	How can I use my new spells outside of the arena?
+2	line	Kolodion	Experience, my friend, experience. Once you've used the spell enough times in the arena, you'll be able to use them in the rest of Gielinor.
+2	line	Player	Good stuff.
+2	line	Kolodion	Not so good for the citizens; they won't stand a chance.
+2	line	Player	How am I doing so far?
+2	cond	If player has cast Saradomin Strike (unknown) times:
+3	line	Kolodion	You still need to train with the strike spell inside the arena before you can use it outside.
+2	cond	If player has cast Saradomin Strike (unknown) times:
+3	line	Kolodion	You have completed over half of the training needed to use the strike spell outside of the arena.
+2	cond	If player has cast Saradomin Strike (unknown) times:
+3	line	Kolodion	You are almost ready to use the strike spell outside of the arena.
+2	cond	If player has cast Saradomin Strike at least 100 times:
+3	line	Kolodion	You're experienced enough to use the strike spell anywhere.
+2	cond	If player has cast Claws of Guthix (unknown) times:
+3	line	Kolodion	You still need to train with the claw spell inside the arena before you can use it outside.
+2	cond	If player has cast Claws of Guthix (unknown) times:
+3	line	Kolodion	You have completed over half of the training needed to use the claw spell outside of the arena.
+2	cond	If player has cast Claws of Guthix (unknown) times:
+3	line	Kolodion	You are almost ready to use the claw spell outside of the arena.
+2	cond	If player has cast Claws of Guthix at least 100 times:
+3	line	Kolodion	You're experienced enough to use the claw spell anywhere.
+2	cond	If player has cast Flames of Zamorak (unknown) times:
+3	line	Kolodion	You still need to train with the flame spell inside the arena before you can use it outside.
+2	cond	If player has cast Flames of Zamorak (unknown) times:
+3	line	Kolodion	You have completed over half of the training needed to use the flame spell outside of the arena.
+2	cond	If player has cast Flames of Zamorak (unknown) times:
+3	line	Kolodion	You are almost ready to use the flame spell outside of the arena.
+2	cond	If player has cast Flames of Zamorak at least 100 times:
+3	line	Kolodion	You're experienced enough to use the flame spell anywhere.
+2	action	end
+1	option	Are there any more challenges available?
+2	line	Player	Are there any more challenges available?
+2	cond	If player hasn't mastered all the god spells yet:
+3	line	Kolodion	You still need to learn how to cast all god spells outside of the arena.
+3	line	Kolodion	I've made a note of the spells you still need to learn in your journal.
+3	action	end
+2	cond	If player doesn't have 75 Magic:
+3	line	Kolodion	You have indeed shown potential, {player}.
+3	line	Kolodion	However, a wizard of your level wouldn't stand a chance.
+3	action	end
+2	cond	If player has mastered all the god spells and is 75 Magic:
+3	line	Kolodion	I am one of the most powerful mages in existence. But even my power has limitations. There are some beings however that have power exceeding even my own.
+3	action	Continues in Transcript:Mage Arena II

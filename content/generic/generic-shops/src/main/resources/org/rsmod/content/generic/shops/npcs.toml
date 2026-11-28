@@ -838,11 +838,13 @@ coords = '0_47_77_43_46'
 
 [[spawn]]
 npc = 'magearena_guardian'
-coords = '0_48_161_12_32'
+# Moved from the old Mage Arena (3084,10336, not in this cache) to the god chamber (Authored, Ryan-test).
+coords = '0_39_73_13_22'
 
 [[spawn]]
 npc = 'magearena_runeshop'
-coords = '0_48_161_37_53'
+# Moved from the old Mage Arena (3109,10357, not in this cache) to the bank (Authored, Ryan-test).
+coords = '0_39_73_35_43'
 
 [[spawn]]
 npc = 'rag_wine_merchant'
