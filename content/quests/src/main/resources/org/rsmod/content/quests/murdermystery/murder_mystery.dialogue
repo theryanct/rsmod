@@ -1,0 +1,1046 @@
+# Generated from the OSRS Wiki page "Transcript:Murder Mystery" by tools/quests/transcript_to_dialogue.py
+0	section	Before starting
+0	section	Talking to Hobbes
+1	line	Hobbes	This is private property! Please leave!
+1	action	end
+0	section	Talking to Frank, David, or Bob
+1	action	end
+0	section	Talking to Anna, Carol, Mary, or Elizabeth
+1	action	end
+0	section	Talking to Louisa
+1	line	Louisa	I'm far too upset to talk to random people right now.
+1	action	end
+0	section	Talking to Donovan
+1	line	Donovan the Family Handyman	I have no interest in talking to gawkers.
+1	action	end
+0	section	Talking to Pierre
+1	line	Pierre	The guards told me not to talk to anyone.
+1	action	end
+0	section	Talking to Stanford
+1	line	Stanford	Have you no shame? We are all grieving at the moment.
+1	action	end
+0	section	Investigating the gate, sacks, drain, or barrels
+1	action	end
+0	section	Investigating the smashed window
+1	action	end
+0	section	Getting started
+0	section	Talking to Guard
+1	line	Player	What's going on here?
+1	line	Guard	Oh, it's terrible! Lord Sinclair has been murdered and we don't have any clues as to who or why. We're totally baffled!
+1	line	Guard	If you can help us we will be very grateful.
+1	select	Start the Murder Mystery quest?
+1	option	Yes.
+2	line	Player	Sure, I'll help!
+2	line	Guard	Thanks a lot!
+2	line	Player	What should I be doing to help?
+2	line	Guard	Look around and investigate who might be responsible. The Sarge said every murder leaves clues to who done it, but frankly we're out of our depth here.
+2	action	end
+1	option	No.
+2	line	Player	You should do your own dirty work.
+2	line	Guard	Get lost then, this is private property! ...Unless you'd like to be taken in for questioning yourself?
+2	action	end
+0	section	Talking to the Guard after starting the quest
+1	select	Select an Option
+1	option	What should I be doing to help again?
+2	line	Player	What should I be doing to help?
+2	line	Guard	Look around and investigate who might be responsible. The Sarge said every murder leaves clues to who done it, but frankly we're out of our depth here.
+2	action	end
+1	option	How did Lord Sinclair die?
+2	line	Player	How did Lord Sinclair die?
+2	line	Guard	Well, it's all very mysterious. Mary, the maid, found the body in the study next to his bedroom on the east wing of the ground floor.
+2	line	Guard	The door was found locked from the inside, and he seemed to have been stabbed, but there was an odd smell in the room. Frankly, I'm stumped.
+2	action	end
+1	option	I know who did it!
+2	line	Player	I know who did it!
+2	line	Guard	Really? That was quick work! Who?
+2	select	Select an Option
+2	option	It was an intruder!
+3	line	Player	It was an intruder!
+3	line	Guard	That's what we were thinking too. That someone broke in to steal something, was discovered by Lord Sinclair, stabbed him and ran.
+3	line	Guard	It's odd that apparently nothing was stolen though... Find out something has been stolen,
+3	line	Guard	and the case is closed, but the murdered man was a friend of the King, and it's more than my job's worth not to investigate fully.
+3	action	end
+2	option	The butler did it!
+3	line	Player	The butler did it!
+3	line	Guard	I hope you have proof to that effect. We have to arrest someone for this and it seems to me that only the actual murderer would gain by falsely accusing someone.
+3	line	Guard	Although having said that the butler is kind of shifty looking...
+3	action	end
+2	option	It was one of the servants!
+3	line	Player	It was one of the servants!
+3	line	Guard	Oh really? Which one?
+3	select	Select an Option
+3	option	It was one of the women...
+4	line	Player	It was one of the womenno ellipsis
+4	select	Select an Option
+4	option	It was SO obviously Louisa the cook.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	line	Guard	You DO have evidence of their crime, right?
+5	line	Player	Uh....
+5	line	Guard	Tch. You wouldn't last a day in the guards with sloppy thinking like that. Come see me when you have some proof of your accusations.
+5	action	end
+4	option	It MUST have been Mary the maid.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+3	option	It was one of the men...
+4	line	Player	It was one of the men...
+4	select	Select an Option
+4	option	It can ONLY be Donovan the handyman.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	Pierre the dog handler. No question.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	Hobbes the butler. The butler ALWAYS did it.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	You MUST know it was Stanford The Gardener...
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+2	option	It was one of his family!
+3	line	Player	It was one of his family!
+3	line	Guard	Oh really? Which one?
+3	select	Select an Option
+3	option	It was one of the women...
+4	line	Player	It was one of the women...
+4	select	Select an Option
+4	option	I KNOW it was Anna.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	I am SO sure it was Carol.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	I'll bet you ANYTHING it was Elizabeth.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+3	option	It was one of the men...
+4	line	Player	It was one of the men...
+4	select	Select an Option
+4	option	I'm certain it was Bob.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	It was David. No doubt about it.
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+4	option	If it wasn't Frank I'll eat my shoes!
+5	line	Guard	Great work. Show me the evidence, and we'll take them to the dungeons.
+5	action	above
+0	section	Take Criminal's dagger
+1	cond	If the player already has the criminal's dagger:
+2	action	end
+1	box	This knife doesn't seem sturdy enough to have killed Lord Sinclair.
+1	action	end
+0	section	Take Pungent pot
+1	cond	If the player already has the pungent pot:
+2	action	end
+1	box	It seems like Lord Sinclair was drinking from this before he died.
+1	action	end
+0	section	Investigating the smashed window
+1	box	Thread drops to ground with full inventory
+1	action	end
+0	section	Investigating the smashed window again
+1	box	Some thread seems to have been caught on a loose nail on the window.
+1	cond	If the player lost the thread:
+2	box	Lucky for you there's some thread left. You should be less careless in future.
+2	action	end
+1	cond	If the player is still holding the thread:
+2	box	You have already taken the thread.
+2	action	end
+0	section	Breaking the smashed window
+1	action	end
+0	section	Picking up thread from the ground
+1	cond	For blue thread:
+2	box	Some blue thread. Not enough to be worth taking.
+2	action	end
+1	cond	For green thread:
+2	box	Some green thread. Not enough to be worth taking.
+2	action	end
+1	cond	For red thread:
+2	box	Some red thread. Not enough to be worth taking.
+2	action	end
+0	section	Investigating the compost heap
+0	section	Investigating the Sinclair family beehive
+0	section	Investigating the drain
+0	section	Investigate spiders nest
+0	section	Investigate fountain
+0	section	Investigate family crest
+0	section	Investigate sturdy wooden gate
+1	box	As you approach the gate the guard dog starts barking loudly at you. There is no way an intruder could have committed the murder. It must have been someone the dog knew to get past it quietly.
+1	action	end
+0	section	Questioning the inhabitants
+0	section	Talking to Anna
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Anna	Oh really? What do you want to know then?
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Anna	It was clearly an intruder.
+2	line	Player	Well, I don't think it was.
+2	line	Anna	It was one of our lazy servants then.
+2	action	end
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	Anna	In the library. No one else was there so you'll just have to take my word for it.
+2	action	end
+1	option	Do you recognise this thread?
+2	line	Player	Do you recognise this thread?
+2	box	You show Anna the thread from the study.
+2	cond	If the criminal's thread is green:
+3	line	Anna	It's some Greenincorrectly capitalised thread. It's not exactly uncommon is it? My trousers are made of the same material.
+2	cond	If the criminal's thread is not green:
+3	line	Anna	Not really, no. Thread is fairly common.
+2	action	end
+0	section	Talking to Bob
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Bob	I suppose I had better talk to you then.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Bob	I don't really care as long as no one thinks it's me. Maybe it was that strange poison seller who headed towards the seersmissing apostrophe village.
+2	action	end
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	Bob	I was walking by myself in the garden.
+2	line	Player	And can anyone vouch for that?
+2	line	Bob	No. But I was.
+2	action	end
+1	option	Do you recognise this thread?
+2	line	Player	Do you recognise this thread?
+2	box	You show him the thread you discovered.
+3	cond	If the criminal's thread is red:
+4	line	Bob	It's some red thread. I suppose you think that's some kind of clue? It looks like the material my trousers are made of
+3	cond	If the criminal's thread isn't red:
+4	line	Bob	It's some thread. greatnot capitalised clue. No, really.
+2	action	end
+0	section	Talking to Carol
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Carol	Well, ask what you want to know then.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Carol	I don't know. I think it's very convenient that you have arrived here so soon after it happened. Maybe it was you.
+2	action	end
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	Carol	Why? Are you accusing me of something? You seem to have a very high opinion of yourselfmissing punctuation I was in my room if you must know, alone.
+2	action	end
+1	option	Do you recognise this thread?
+2	line	Player	Do you recognise this thread?
+3	box	You show Carol the thread found at the crime scene.
+3	cond	If the criminal's thread is red:
+4	line	Carol	It's some red thread... it kind of looks like the Sameincorrectly capitalised material as my trousers. But obviously it's not.
+3	cond	If the criminal's thread isn't red:
+4	line	Carol	It's some thread. Sorry, do you have a point here? Or do you just enjoy wasting peoplesmissing apostrophe time?
+2	action	end
+0	section	Talking to David
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	David	And? Make this quick, I have better things to do than be interrogated by halfwits all day.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	David	I don't really know or care. Frankly, the old man deserved to die.
+2	line	David	There was a suspicious red headed man who came to the house the other day selling poison now I think about it. Last I saw he was headed towards the tavern in the Seersmissing apostrophe village.
+2	action	end
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	David	That is none of your business. Are we finished now, or are you just going to stand there irritating me with your idiotic questions all day?
+2	action	end
+1	option	Do you recognise this thread?
+2	line	Player	Do you recognise this thread?
+2	box	missing punctuation}}
+2	cond	If the criminal's thread is green:
+3	line	David	It's some Greenincorrectly capitalised thread, like my trousers are made of. Are you finished? I'm not sure which I dislike more about you, your face or your general bad odourmissing punctuation
+2	cond	If the criminal's thread is not green:
+3	line	David	No. Can I go yet? Your face irritates me.
+2	action	end
+0	section	Talking to Elizabeth
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Elizabeth	What's so important you need to bother me with then?
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Elizabeth	Could have been anyone. The old man was an idiot. He's been asking for it for years.
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	Elizabeth	I was out.
+2	line	Player	Care to be any more specific?
+2	line	Elizabeth	Not really. I don't have to justify myself to the likes of you, you know. I know the King personally you know. Now are we finished here?
+2	action	end
+1	option	Do you recognise this thread?
+2	line	Player	Do you recognise this thread?
+2	box	You show her the thread from the study window.
+2	line	Elizabeth	It's some thread. You're not very good at this whole investigation thing are you?
+2	action	end
+0	section	Talking to Frank
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Frank	Good for you. Now what do you want?
+1	line	Frank	...And can you spare me any money? I'm a little short...
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Frank	I don't know.
+2	line	Frank	You don't know how long it takes an inheritance to come through do you? I could really use that money pretty soon...
+2	action	end
+1	option	Where were you when the murder happened?
+2	line	Player	Where were you when the murder happened?
+2	line	Frank	I don't know, somewhere around here probably.
+2	line	Frank	Could you spare me a few coins? I'll be able to pay you double tomorrow it's just there's this poker night tonight in town...
+2	action	end
+1	option	Even when not holding the thread
+2	line	Player	Do you recognise this thread?
+2	box	Frank examines the thread from the crime scene.
+2	line	Frank	It looks like thread to me, but I'm not exactly an expert. Is it worth something? Can I have it? Actually, can you spare me a few gold?
+2	action	end
+0	section	Talking to Donovan
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Donovan the Family Handyman	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Donovan the Family Handyman	Oh... I really couldn't say. I wouldn't really want to point any fingers at anybody. If I had to make a guess I'd have to say it was probably Bob though.
+2	line	Donovan the Family Handyman	I saw him arguing with Lord Sinclair about some missing silverware from the Kitchenincorrectly capitalised. It was a very heated argument.
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Donovan the Family Handyman	Me? I was sound asleep here in the servantsmissing apostrophe Quartersincorrectly capitalised. It's very hard work as a handyman around here, There'sincorrectly capitalised always something to do!
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Donovan the Family Handyman	Hmmm..... No, I didn't, but I sleep very soundly at night.
+2	line	Player	So you didn't hear any sounds of a struggle or any barking from the guard dog next to his study window?
+2	line	Donovan the Family Handyman	Now you mention it, no. It is odd I didn't hear anything like that. But I do sleep very soundly as I said and wouldn't necessarily have heard it if there was any such noise.
+2	action	end
+0	section	Talking to Gossip
+1	line	Player	I'm investigating the murder up at the Sinclair place.
+1	line	Gossip	Murder is it? Well, I'm not really surprised...
+1	select	Select an Option
+1	option	What can you tell me about the Sinclairs?
+2	line	Player	What can you tell me about the Sinclairs?
+2	line	Gossip	Well, what do you want to know?
+2	select	Select an Option
+2	option	Tell me about Lord Sinclair.
+3	line	Player	Tell me about Lord Sinclair.
+3	line	Gossip	Old Lord Sinclair was a great man with a lot of respect in these parts. More than his worthless children have anyway.
+3	line	Player	His children? They have something to gain by his death?
+3	line	Gossip	Yes. You could say that. Not that I'm one to gossip.
+3	action	end
+2	option	Why do the Sinclairs live so far from town?
+3	line	Player	Why do the Sinclairs live so far from town?
+3	line	Gossip	Well, they used to live in the big castle, but old Lord Sinclair gave it up so that those strange knights could live there instead. So the king built him a new house to the North.
+3	line	Gossip	It's more cramped than his old place, but he seemed to like it. His children were furious at him for doing it though!
+3	action	end
+2	option	What can you tell me about his sons?
+3	line	Player	What can you tell me about his sons?
+3	line	Gossip	His sons eh? They all have their own skeletons in their cupboards. You'll have to be more specific. Who are you interested in exactly?
+3	select	Select an Option
+3	option	Tell me about Bob.
+4	line	Player	Tell me about Bob.
+4	line	Gossip	Bob is an odd character indeed... I'm not one to gossip, but I heard Bob is addicted to Tea. He can't make
+4	line	Gossip	it through the day without having at least 20 cups!
+4	line	Gossip	You might not think that's such a big thing, but he has spent thousands of gold to feed his habit!
+4	line	Gossip	At one point he stole a lot of silverware from the kitchen and pawned it just so he could afford to buy his daily tea allowance.
+4	line	Gossip	If his father ever found out, he would be in so much trouble... he might even get disowned!
+4	action	end
+3	option	Tell me about David.
+4	line	Player	Tell me about David.
+4	line	Gossip	David... oh David... not many people know this, but David really has an anger problem. He's always screaming and shouting
+4	line	Gossip	at the household servants when he's angry, and they live in a state of fear, always walking on eggshells around him, but none of them have the courage
+4	line	Gossip	to talk to his father about his behaviour. If they did, Lord Sinclair would almost certainly
+4	line	Gossip	kick him out of the house, as some of the servants have been there longer than he has, and he definitely has no right to treat them like he does... but I'm not one to gossip about people.
+4	action	end
+3	option	Tell me about Frank.
+4	line	Player	Tell me about Frank.
+4	line	Gossip	I'm not one to talk ill of people behind their back, but Frank is a real piece of work. He is an absolutely terrible gambler... he can't pass 2 dogs in the street without putting a bet on which one will bark first!
+4	line	Gossip	He has already squandered all of his allowance, and I heard he had stolen a number of paintings of his fathers to sell to try and cover his debts, but he still owes a lot of
+4	line	Gossip	people a lot of money. If his father ever found out, he would stop his income, and then he would be in serious trouble!
+4	action	end
+2	option	What can you tell me about his daughters?
+3	line	Player	What can you tell me about his daughters?
+3	line	Gossip	His daughters eh? They're all nasty pieces of work. which of them specifically did you want to know about?
+3	select	Select an Option
+3	option	Tell me about Anna.
+4	line	Player	Tell me about Anna.
+4	line	Gossip	Anna... ah yes... Anna has 2 great loves:
+4	line	Gossip	Sewing and gardening. But one thing she has kept secret is that she once had an affair with Stanford the gardener, and tried to get him fired when they broke up,
+4	line	Gossip	by killing all of the flowers in the garden. If her father ever found out she had done that he would be so furious he would probably disown her.
+4	action	end
+3	option	Tell me about Carol.
+4	line	Player	Tell me about Carol.
+4	line	Gossip	Oh Carol... she is such a fool. You didn't hear this from me, but I heard a while ago she was conned out of a lot of money by a travelling salesman who sold her a box full
+4	line	Gossip	of beans by telling her they were magic. But they weren't. She sold some rare books from the library to cover her debts, but
+4	line	Gossip	her father would be incredibly annoyed if he ever found out - he might even throw her out of the house!
+4	action	end
+3	option	Tell me about Elizabeth.
+4	line	Player	Tell me about Elizabeth.
+4	line	Gossip	Elizabeth? Elizabeth has a strange problem... She cannot help herself, but is always stealing small objects - it's pretty sad that she is rich enough to afford to buy things, but would rather steal them instead.
+4	line	Gossip	Now, I don't want to spread stories, but I heard she even stole a silver needle from her father that had great sentimental value for him.
+4	line	Gossip	He was devastated when it was lost, and cried for a week thinking he had lost it!
+4	line	Gossip	If he ever found out that it was her who had stolen it he would go absolutely mental, maybe even disowning her!
+4	action	end
+1	option	Who do you think was responsible?
+2	line	Player	Who do you think was responsible?
+2	line	Gossip	Well, I guess it could have been an intruder, but with that big guard dog of theirs I seriously doubt it. I suspect it was someone closer to home...
+2	line	Gossip	Especially as I heard that the poison salesman in the Seers' village made a big sale to one of the family the other day.
+2	action	end
+1	option	I think the butler did it.
+2	line	Player	I think the butler did it.
+2	line	Gossip	And I think you've been reading too many cheap detective novels. Hobbes is kind of uptight, but his loyalty to old Lord Sinclair is beyond question.
+2	action	end
+1	option	I am so confused about who did it.
+2	line	Player	I am so confused about who did it...
+2	line	Player	Think you could give me any hints?
+2	line	Gossip	Well, I don't know if it's related, but I heard from that Poison Salesman in town that he sold some poison to one of the Sinclair family
+2	line	Gossip	the other day. I don't think he has any stock left now though...
+2	action	end
+0	section	Talking to Hobbes
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Hobbes	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Hobbes	Well, in my considered opinion it must be David. The man is nothing more than a bully Andincorrectly capitalised I happen to know that poor Lord Sinclair and David had a massive argument in the living
+2	line	Hobbes	room about the way he treats the staff, the other day. I did not intend to overhear their conversation, but they were shouting so loudly I could not help but Overhearincorrectly capitalised it. David definitely used the words
+2	line	Hobbes	'I am going to kill you!' as well. I think he should be the prime suspect. He has a nasty temper that one.
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Hobbes	I was assisting the cook with the evening meal. I gave Mary His Lordships' dinner, and sent her to take it to him, then heard the scream as she found the body.
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Hobbes	How do you mean 'suspicious'?
+2	line	Player	Any sounds of a struggle with Lord Sinclair?
+2	line	Hobbes	No, I definitely didn't hear anything like that.
+2	line	Player	How about the guard dog barking at all?
+2	line	Hobbes	You know, now you come to mention it I don't believe I did. I suppose that is Proofincorrectly capitalised enough that it could not have been an intruder who is responsible.
+2	action	end
+0	section	Talking to Louisa
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Louisa	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Louisa	Elizabeth.
+2	line	Louisa	Her father confronted her about her constant petty thieving, and was devestatedmisspelled to find she had stolen a silver needle which had meant a lot to him.
+2	line	Louisa	You could hear their argument from Lumbridge!
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Louisa	I was right here with Hobbes and Mary. You can't suspect me surely!
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Louisa	suspiciousnot capitalised? whatnot capitalised do you mean suspicious?
+2	line	Player	Any sounds of a struggle with an intruder for example?
+2	line	Louisa	No, I'm sure I don't recall any such thing.
+2	line	Player	How about the guard dog barking at an intruder?
+2	line	Louisa	No, I didn't. If you don't have anything else to ask can Youincorrectly capitalised go and leave me alone now? I have a lot of cooking to do for this evening.
+2	action	end
+0	section	Talking to Mary
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Mary	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Mary	Oh I don't know... Frank was acting kind of funny... After that big argument him and the Lord had the other day by the beehive... so
+2	line	Mary	I guess maybe him... but it's really scary to think someone here might have been responsible. I actually hope it was a burglar...
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Mary	I was with Hobbes and Louisa in the Kitchenincorrectly capitalised helping to prepare Lord Sinclair's meal, and then when I took it to his study... I saw... oh, it was horrible... he was....
+2	box	She seems to be on the verge of crying. You decide not to push her anymore for details.
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Mary	I don't really remember hearing anything out of the ordinary.
+2	line	Player	No sounds of a struggle then?
+2	line	Mary	No, I don't remember hearing anything like that.
+2	line	Player	How about the guard dog barking?
+2	line	Mary	Oh that horrible dog is always barking at nothing but I don't think I did...
+2	action	end
+0	section	Talking to Pierre
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Pierre	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Pierre	Honestly? I think it was Carol.
+2	line	Pierre	I saw her in a huge argument with Lord Sinclair in the library the other day. It was something to do with stolen books. She definitely seemed upset enough to have done it afterwards.
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Pierre	I was in town at the Inn. When I got back the house was swarming with guards who told me what had happened. Sorry.
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Pierre	Well, like what?
+2	line	Player	Any sounds of a struggle with Lord Sinclair?
+2	line	Pierre	No, I don't remember hearing anything like that.
+2	line	Player	How about the guard dog barking at all?
+2	line	Pierre	I hear him bark all the time. It's one of his favorite things to do. I can't say I did the night of the murder though as I wasn't close enough to hear either way.
+2	action	end
+0	section	Talking to Stanford
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Stanford	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	line	Player	Who do you think is responsible?
+2	line	Stanford	It was Anna. She is seriously unbalanced. She trashed the garden once then tried to blame it on me! I bet it was her. It's just the kind of thing she'd do!
+2	line	Stanford	She really hates me and was arguing with Lord Sinclair about trashing the garden a few days ago.
+2	action	end
+1	option	Where were you at the time of the murder?
+2	line	Player	Where were you at the time of the murder?
+2	line	Stanford	Right here, by my little shed. It's very cosy to sit and think in.
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	line	Player	Did you hear any suspicious noises at all?
+2	line	Stanford	Not that I remember.
+2	line	Player	So no sounds of a struggle between Lord Sinclair and an intruder?
+2	line	Stanford	Not to the best of my recollection.
+2	line	Player	How about the guard dog barking?
+2	line	Stanford	Not that I can recall.
+2	action	end
+0	section	Gathering suspect evidence
+0	section	Searching the sacks
+1	box	There's some flypaper in there. Should I take it?
+1	select	Select an Option
+1	option	Yes, it might be useful.
+2	box	You take a piece of fly paper. There is still plenty of fly paper left.
+2	action	end
+1	option	No, I don't see any need for it.
+2	action	end
+0	section	Searching barrels
+0	section	Anna's barrel
+1	cond	If the player already has the silver necklace:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take Anna's Silver Necklace.
+1	action	end
+0	section	Bob's barrel
+1	cond	If the player already has the silver cup:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take Bob's silver cup.
+1	action	end
+0	section	Carol's barrel
+1	cond	If the player already has the silver bottle:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take Carol's silver bottle.
+1	action	end
+0	section	David's barrel
+1	cond	If the player already has the silver book:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take David's silver book.
+1	action	end
+0	section	Elizabeth's barrel
+1	cond	If the player already has the silver needle:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take Elizabeth's silver needle.
+1	action	end
+0	section	Frank's barrel
+1	cond	If the player already has the silver pot:
+2	action	end
+1	box	There's something shiny hidden at the bottom. You take Frank's silver pot.
+1	action	end
+0	section	Flour barrel
+0	section	Taking from the flour barrel
+1	cond	If the player does not have an empty pot:
+2	action	end
+1	cond	If the player has an empty pot:
+2	action	end
+0	section	Using empty pot on flour barrel
+0	section	Using silver pot or pungent pot on flour barrel
+1	box	You probably shouldn't use evidence from a crime scene to keep flour in...
+1	action	end
+0	section	Using flour on evidence
+0	section	Criminal's dagger
+0	section	Pungent pot
+0	section	Silver necklace
+0	section	Silver cup
+0	section	Silver bottle
+0	section	Silver book
+0	section	Silver needle
+0	section	Silver pot
+0	section	Using flypaper on floured silver items
+0	section	Criminal's dagger (dusted)
+0	section	Silver necklace (dusted)
+0	section	Silver cup (dusted)
+0	section	Silver bottle (dusted)
+0	section	Silver book (dusted)
+0	section	Silver needle (dusted)
+0	section	Silver pot (dusted)
+0	section	Comparing fingerprints
+0	section	Using Anna's print on unknown print
+1	cond	If Anna is the murderer:
+2	action	end
+1	cond	If Anna is innocent:
+2	box	They don't seem to be the same. I guess that clears Anna of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Using Bob's print on unknown print
+1	cond	If Bob is the murderer:
+2	action	end
+1	cond	If Bob is innocent:
+2	box	They don't seem to be the same. I guess that clears Bob of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Using Carol's print on unknown print
+1	cond	If Carol is the murderer:
+2	action	end
+1	cond	If Carol is innocent:
+2	box	They don't seem to be the same. I guess that clears Carol of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Using David's print on unknown print
+1	cond	If David is the murderer:
+2	action	end
+1	cond	If David is innocent:
+2	box	They don't seem to be the same. I guess that clears David of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Using Elizabeth's print on unknown print
+1	cond	If Elizabeth is the murderer:
+2	action	end
+1	cond	If Elizabeth is innocent:
+2	box	They don't seem to be the same. I guess that clears Elizabeth of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Using Frank's print on unknown print
+1	cond	If Frank is the murderer:
+2	action	end
+1	cond	If Frank is innocent:
+2	box	They don't seem to be the same. I guess that clears Frank of the crime. You destroy the useless fingerprint.
+2	action	end
+0	section	Visiting the Poison Salesman
+0	section	Talking to the Poison Salesman
+1	line	Player	I'm investigating the murder at the Sinclair house.
+1	line	Poison Salesman	There was a murder at the Sinclair House??? That's terrible! And I was only there the other day too! They bought the last of my Patented Multi Purpose Poison!
+1	select	Select an Option
+1	option	Patented Multi Purpose Poison?
+2	line	Player	Patented Multi Purpose Poison?
+2	line	Poison Salesman	Aaaaah... a miracle of modern apothecaries!
+2	line	Poison Salesman	This exclusive concoction has been tested on all known forms of life and been proven to kill them all in varying dilutions from cockroaches to king dragons!
+2	line	Poison Salesman	So incredibly versatile, it can be used as pest control, a cleansing agent, drain cleaner, metal polish and washes whiter than white,
+2	line	Poison Salesman	all with our uniquely fragrant concoction that is immediately recognisable across the land as Peter Potter's Patented Poison potion!!!
+2	box	The salesman stops for breath.
+2	line	Poison Salesman	I'd love to sell you some but I've sold out recently. That's just how good it is! Three hundred and twenty eight people in this area alone cannot be wrong!
+2	line	Poison Salesman	Nine out of Ten poisoners prefer it in controlled tests!
+2	line	Poison Salesman	Can I help you with anything else?
+2	line	Poison Salesman	Perhaps I can take your name and add it to our mailing list of poison users? We will only send you information related to the use of poison and other Peter Potter Products!
+2	line	Player	Uh... no, it's ok. Really.
+2	action	end
+1	option	Who did you sell Poison to at the house?
+2	line	Player	Who did you sell Poison to at the house?
+2	line	Poison Salesman	Well, Peter Potter's Patented Multi Purpose Poison is a product of such obvious quality that I am glad to say I managed to sell a bottle to each of the Sinclairs!
+2	line	Poison Salesman	Anna, Bob, Carol, David, Elizabeth and Frank all bought a bottle! In fact they bought the last of my supplies!
+2	line	Poison Salesman	Maybe I can take your name and address and I will personally come and visit you when stocks return?
+2	line	Player	Uh... no, it's ok.
+2	action	end
+1	option	Can I buy some Poison?
+2	line	Player	Can I buy some Poison?
+2	line	Poison Salesman	I'm afraid I am totally out of stock at the moment after my successful trip to the Sinclairs' House the other day.
+2	line	Poison Salesman	But don't worry! Our factories are working overtime to produce Peter Potter's Patented Multi Purpose Poison!
+2	line	Poison Salesman	Possibly the finest multi purpose poison and cleaner yet available to the general market.
+2	line	Poison Salesman	And its unique fragrance makes it the number one choice for cleaners and exterminators the whole country over!
+2	action	end
+1	option	I have this pot I found at the murder scene...
+2	line	Player	I have this pot I found at the murder scene...
+2	box	You show the poison salesman the pot you found at the murder scene with the unusual smell.
+2	line	Poison Salesman	Hmmm... yes, that smells exactly like my Patented Multi Purpose Poison, but I don't see how it could be. It quite clearly says on the label of all bottles
+2	line	Poison Salesman	'Not to be taken internally - EXTREMELY POISONOUS'.
+2	line	Player	Perhaps someone else put it in his wine?
+2	line	Poison Salesman	Yes... I suppose that could have happened...
+2	action	end
+0	section	Talking to the Poison Salesman if the player also has progress in Fremennik Trials
+1	select	Select an Option
+1	option	Talk about the Murder Mystery Quest
+2	line	Player	I'm investigating the murder at the Sinclair house.
+2	action	above
+1	option	Talk about the Fremennik Trials
+0	section	Talking to Anna after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Anna	Oh really? What do you want to know then?
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	Anna	That useless Gardener Stanford has let his compost heap fester. It's an eyesore to the garden! So I bought some poison from a travelling salesman so that I could kill off some of the wildlife living in it.
+2	action	end
+0	section	Talking to Bob after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Bob	I suppose I had better talk to you then.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	Bob	What's it to you anyway?
+2	line	Bob	If you absolutely must know, we had a problem with the beehive in the garden, and as all of our servants are so pathetically useless, I decided I would deal with it myself. So I did.
+2	action	end
+0	section	Talking to Carol after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Carol	Well, ask what you want to know then.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	Carol	I don't see what on earth it has to do with you, but the drain outside was
+2	line	Carol	blocked, and as nobody else here has the intelligence to even unblock a simple drain I felt I had to do it myself.
+2	action	end
+0	section	Talking to David after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	David	And? Make this quick, I have better things to do than be interrogated by halfwits all day.
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	David	There was a nest of spiders upstairs between the two servants' quarters. Obviously I had to kill them before our pathetic servants whined at my father some more.
+2	line	David	Honestly, it's like they expect to be treated like royalty! If I had my way I would fire the whole workshy lot of them!
+2	action	end
+0	section	Talking to Elizabeth after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Elizabeth	What's so important you need to bother me with then?
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	Elizabeth	There was a nest of mosquitos under the fountain in the garden, which I killed with poison the other day. You can see for yourself if you're capable of managing that, which I somehow doubt.
+2	line	Player	I hate mosquitos!
+2	line	Elizabeth	Doesn't everyone?
+2	action	end
+0	section	Talking to Frank after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Frank	Good for you. Now what do you want?
+1	line	Frank	...And can you spare me any money? I'm a little short...
+1	select	Select an Option
+1	option	Who do you think was responsible?
+2	action	above
+1	option	Where were you when the murder happened?
+2	action	above
+1	option	Do you recognise this thread?
+2	action	above
+1	option	Why'd you buy poison the other day?
+2	line	Player	Why'd you buy poison the other day?
+2	line	Frank	Would you like to buy some? I'm kind of strapped for cash right now, I'll sell it to you cheap, it's hardly been used at all.
+2	line	Frank	I just used a bit to clean that family crest outside up a bit. Do you think I can get much money Forincorrectly capitalised the family crest, actually? It's cleaned up a bit now.
+2	action	end
+0	section	Talking to Donovan after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Donovan the Family Handyman	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	above
+1	option	Where were you at the time of the murder?
+2	action	above
+1	option	Did you hear any suspicious noises at all?
+2	action	above
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Donovan the Family Handyman	Well, I do know Frank bought some poison recently to clean the family crest that's outside.
+2	line	Donovan the Family Handyman	It's very old and rusty, and I couldn't clean it myself, so he said he would buy some cleaner and clean it himself. He probably just got some from that Poison Salesman who came to the door the other day...
+2	line	Donovan the Family Handyman	You'd really have to ask him though.
+2	action	end
+0	section	Talking to Hobbes after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Hobbes	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	above
+1	option	Where were you at the time of the murder?
+2	action	above
+1	option	Did you hear any suspicious noises at all?
+2	action	above
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Hobbes	Well, I do know that Elizabeth was extremely annoyed by the mosquito nest under the fountain in the garden, and was going to do something about it. I suspect any poison she bought would have been
+2	line	Hobbes	enough to get rid of it. A Good job too, I hate mosquitos.
+2	line	Player	Yeah, so do I.
+2	line	Hobbes	You'd really have to ask her though.
+2	action	end
+0	section	Talking to Louisa after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Louisa	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	above
+1	option	Where were you at the time of the murder?
+2	action	above
+1	option	Did you hear any suspicious noises at all?
+2	action	above
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Louisa	I told Carol to buy some from that strange poison salesman and clean the drains before they began to smell any worse. She was the one who blocked them in the first place with a load
+2	line	Louisa	of beans that she bought for some reason. There were far too many to eat, and they were almost rotten when she bought them anyway! You'd really have to ask her though.
+2	action	end
+0	section	Talking to Mary after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Mary	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	above
+1	option	Where were you at the time of the murder?
+2	action	above
+1	option	Did you hear any suspicious noises at all?
+2	action	above
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Mary	I overheard Anna saying to Stanford that if he didn't do something about the state of his compost heap, she was going to.
+2	line	Mary	She really doesn't get on well with Stanford. I really have no idea why. You'd really have to ask her though.
+2	action	end
+0	section	Talking to Pierre after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Pierre	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	end
+1	option	Where were you at the time of the murder?
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	action	end
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Pierre	Well, I know David said that he was going to do something about the spiders' nest that's between the two servants' quarters upstairs.
+2	line	Pierre	He made a big deal about it to Mary the Maid, calling her useless and incompetent. I felt quite sorry for her actually. You'd really have to ask him though.
+2	action	end
+0	section	Talking to Stanford after learning about the poison
+1	line	Player	I'm here to help the guards with their investigation.
+1	line	Stanford	How can I help?
+1	select	Select an Option
+1	option	Who do you think is responsible?
+2	action	end
+1	option	Where were you at the time of the murder?
+2	action	end
+1	option	Did you hear any suspicious noises at all?
+2	action	end
+1	option	Do you know why so much poison was bought recently?
+2	line	Player	Do you know why so much poison was bought recently?
+2	line	Stanford	Well, Bob mentioned to me the other day he wanted to get rid of the bees in that hive over there. I think I saw him buying poison
+2	line	Stanford	from that poison salesman the other day. I assume it was to sort out those bees. You'd really have to ask him though.
+2	action	end
+0	section	Investigating the poisoned areas
+0	section	Investigating compost heap after questioning the Sinclairs
+1	cond	If Anna is the murderer:
+2	box	The compost is teeming with maggots. Somebody should really do something about it. It's certainly clear nobody's used poison here.
+2	action	end
+1	cond	If Anna is innocent:
+2	box	There is a faint smell of poison behind the smell of the compost.
+2	action	end
+0	section	Investigating beehive after questioning the Sinclairs
+1	cond	If Bob is the murderer:
+2	box	The beehive buzzes with activity. These bees definitely don't seem poisoned at all.
+2	action	end
+1	cond	If Bob is innocent:
+2	box	The hive is empty. There are a few dead bees and a faint smell of poison.
+2	action	end
+0	section	Investigating kitchen drain after questioning the Sinclairs
+1	cond	If Carol is the murderer:
+2	box	The drain is totally blocked. It really stinks. No, it REALLY smells bad. It's certainly clear nobody's cleaned it recently.
+2	action	end
+1	cond	If Carol is innocent:
+2	box	The drain seems to have been recently cleaned. You can still smell the faint aroma of poison.
+2	action	end
+0	section	Investigating the spiders nest after questioning the Sinclairs
+1	cond	If David is the murderer:
+2	box	There is a spiders' nest here. You estimate there must be at least a few hundred spiders ready to hatch. It's certainly clear nobody's used poison here.
+2	action	end
+1	cond	If David is innocent:
+2	box	A faint smell of poison and a few dead spiders is all that remains of the spiders nest.
+2	action	end
+0	section	Investigating fountain after questioning the Sinclairs
+1	cond	If Elizabeth is the murderer:
+2	box	The fountain is swarming with mosquitos. There's a nest of them underneath the fountain.
+2	action	end
+1	cond	If Elizabeth is innocent:
+2	box	There are a lot of dead mosquitos around the base of the fountain. A faint smell of poison is in the air, but the water seems clean.
+2	action	end
+0	section	Investigating family crest after questioning the Sinclairs
+1	cond	If Frank is the murderer:
+2	box	It looks like the Sinclair family crest but it is very dirty. You can barely make it out under all of the grime. It's certainly clear nobody's cleaned it recently.
+2	action	end
+1	cond	If Frank is innocent:
+2	box	The Sinclair family crest. It's shiny and freshly polished and has a slight smell of poison.
+2	action	end
+0	section	Presenting the evidence
+0	section	Talking to the Guard with some but not all evidence
+1	select	Select an Option
+1	option	What should I be doing to help again?
+2	action	above
+1	option	How did Lord Sinclair die?
+2	action	above
+1	option	I know who did it!
+2	line	Player	I know who did it!Note: With only one piece of evidence, the dialogue goes straight to that option.
+2	select	Select an Option
+2	option	I have proof that it wasn't any of the servants.
+3	line	Player	I have proof that it wasn't any of the servants!
+3	line	Player	All the servants dress in black so it couldn't have been one of them.
+3	line	Guard	That's some good work there. I guess it wasn't a servant. You still haven't proved who did do it though.
+3	action	end
+2	option	I have proof one of the family lied about the poison.
+3	cond	If Anna is the murderer:
+4	line	Player	I have proof that Anna is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+3	cond	If Bob is the murderer:
+4	line	Player	I have proof that Bob is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+4	box	You tell the guard about the beehive.
+3	cond	If Carol is the murderer:
+4	line	Player	I have proof that Carol is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+4	box	You tell the guard about the drain.
+3	cond	If David is the murderer:
+4	line	Player	I have proof that David is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+4	box	You tell the guard about the mosquitos at the fountain.
+3	cond	If Elizabeth is the murderer:
+4	line	Player	I have proof that Elizabeth is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+3	cond	If Frank is the murderer:
+4	line	Player	I have proof that Frank is lying about the poison.
+4	line	Guard	Oh really? How did you get that?
+3	line	Guard	Hmm. That's some good detective work there. We need more evidence before we can close the case though. Keep up the good work!
+3	action	end
+2	option	I have the finger prints of the culprit.
+3	line	Player	I have the finger prints of the culprit!
+3	cond	If Anna is the murderer:
+4	line	Player	I have Anna's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	cond	If Bob is the murderer:
+4	line	Player	I have Bob's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	cond	If Carol is the murderer:
+4	line	Player	I have Carol's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	cond	If David is the murderer:
+4	line	Player	I have David's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	cond	If Elizabeth is the murderer:
+4	line	Player	I have Elizabeth's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	cond	If Frank is the murderer:
+4	line	Player	I have Frank's finger prints here. You can see for yourself they match the finger prints on the murder weapon exactly.
+3	box	You show the guard the finger prints evidence.
+3	line	Guard	... I'm impressed. How on earth did you think of something like that? I've never heard of such a technique for finding criminals before!
+3	line	Guard	This will come in very handy in the future but we can't arrest someone on just this. I'm afraid you'll still need to find more evidence before we can close this case completely.
+3	action	end
+0	section	Talking to the Guard with all evidence
+1	select	Select an Option
+1	option	What should I be doing to help again?
+2	action	above
+1	option	How did Lord Sinclair die?
+2	action	above
+1	option	I know who did it!
+2	line	Player	I know who did it!
+2	line	Player	I have conclusive proof who the killer was.
+2	line	Guard	You do? That's excellent work. Let's hear it then.
+2	line	Player	I don't think it was an intruder, and I don't think Lord Sinclair was killed by being stabbed.
+2	line	Guard	Hmmm? Really? Why not?
+2	line	Player	Nobody heard the guard dog barking, which it would have if it had been an intruder who was responsible.
+2	line	Player	Nobody heard any signs of a struggle either. I think the knife was there to throw suspicion away from the real culprit.
+2	line	Guard	Yes, that makes sense. But who did do it then?
+2	cond	If Anna is the murderer:
+3	box	You prove to the guard the thread matches Anna's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard Anna did not use poison on the compost heap.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match Anna's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been Anna who killed her father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	cond	If Bob is the murderer:
+3	box	You prove to the guard the thread matches Bob's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard Bob did not use poison on the beehive.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match Bob's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been Bob who killed his father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	cond	If Carol is the murderer:
+3	box	You prove to the guard the thread matches Carol's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard Carol did not use poison on the drain.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match Carol's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been Carol who killed her father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	cond	If David is the murderer:
+3	box	You prove to the guard the thread matches David's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard David did not use poison on the spiders nest.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match David's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been David who killed his father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	cond	If Elizabeth is the murderer:
+3	box	You prove to the guard the thread matches Elizabeth's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard Elizabeth did not use poison on the fountain.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match Elizabeth's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been Elizabeth who killed her father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	cond	If Frank is the murderer:
+3	box	You prove to the guard the thread matches Frank's clothes.
+3	line	Guard	Yes, I'd have to agree with that... but we need more evidence!
+3	box	You prove to the guard Frank did not use poison on the Sinclair Crest.
+3	line	Guard	Excellent work - have you considered a career as a detective? But I'm afraid it's still not quite enough...
+3	box	You match Frank's finger prints with those on the dagger found in the body of Lord Sinclair.
+3	line	Guard	Yes. There's no doubt about it. It must have been Frank who killed his father. All of the guards must congratulate you on your excellent work in helping us to solve this case.
+2	line	Guard	We don't have many murders here in Gielinor and I'm afraid we wouldn't have been able to solve it by ourselves. We will hold her here under house arrest until such time as we bring her to trial.
+2	line	Guard	You have our gratitude, and I'm sure the rest of the family's as well, in helping to apprehend the murderer. I'll just take the evidence from you now.
+2	box	You hand over all the evidence.
+2	line	Guard	Please accept this reward from the family!
+0	section	Post-quest
+0	section	Talking to the Guard after the quest
+1	line	Guard	Excellent work on solving the murder! All of the guards I know are very impressed, and don't worry, we have the murderer under guard until they can be taken to trial.
+1	line	Player	Is there anything else I can do?
+1	line	Guard	No, your work here is done.
+1	action	end
+0	section	Talking to Anna after the quest
+1	line	Anna	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to Bob after the quest
+1	line	Bob	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to Carol after the quest
+1	line	Carol	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to David after the quest
+1	line	David	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to Elizabeth after the quest
+1	line	Elizabeth	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to Frank after the quest
+1	line	Frank	Apparently you aren't as stupid as you look.
+1	action	end
+0	section	Talking to Donovan after the quest
+1	line	Donovan the Family Handyman	Thank you for all your help in solving the murder.
+1	action	end
+0	section	Talking to Hobbes after the quest
+1	line	Hobbes	Thank you for all your help in solving the murder.
+1	action	end
+0	section	Talking to Louisa after the quest
+1	line	Louisa	Thank you for all your help in solving the murder.
+1	action	end
+0	section	Talking to Mary after the quest
+1	line	Mary	Thank you for all your help in solving the murder.
+1	action	end
+0	section	Talking to Stanford after the quest
+1	line	Stanford	Thank you for all your help in solving the murder.
+1	action	end
+0	section	Talking to Gossip after the quest
+1	action	(King's Random dialogue.)
+0	section	Talking to the Poison Salesman after the quest
+1	line	Poison Salesman	I hear you're pretty smart to have solved the Sinclair Murder!
+1	action	end
+0	section	Talking to the Poison Salesman after the quest if the player has progress in Fremennik Trials
+1	select	Select an Option
+1	option	Talk about the Murder Mystery Quest
+2	line	Poison Salesman	I hear you're pretty smart to have solved the Sinclair Murder!
+2	action	end
+1	option	Talk about the Fremennik Trials
