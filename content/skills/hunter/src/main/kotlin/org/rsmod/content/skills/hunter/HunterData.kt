@@ -1,6 +1,9 @@
 package org.rsmod.content.skills.hunter
 
-/** Bird snare, box trap and butterfly data from `hunter.tsv` (tools/skills/hunter_to_tsv.py). */
+/**
+ * Bird snare, box trap, butterfly and wasp swarm data from `hunter.tsv`
+ * (tools/skills/hunter_to_tsv.py).
+ */
 internal object HunterData {
     class Loot(val obj: String, val min: Int, val max: Int)
 
@@ -11,6 +14,11 @@ internal object HunterData {
         Box,
         /** Butterfly net (caught directly from the npc). */
         Net,
+        /**
+         * Wasp swarm (The Birds and the Wasps): netted every tick with an insect net and a bee hat;
+         * npcs are the calm swarm then its furious variant. See `Wasps.kt`.
+         */
+        Swarm,
     }
 
     class Creature(
@@ -31,7 +39,7 @@ internal object HunterData {
 
         /** Caught in a laid trap (snare or box) rather than directly. */
         val trapped: Boolean
-            get() = kind != Kind.Net
+            get() = kind == Kind.Snare || kind == Kind.Box
     }
 
     val creatures: List<Creature> by lazy { load() }
@@ -51,9 +59,10 @@ internal object HunterData {
                 when (h[0]) {
                     "snare" -> Kind.Snare
                     "box" -> Kind.Box
+                    "swarm" -> Kind.Swarm
                     else -> Kind.Net
                 }
-            val trap = kind != Kind.Net
+            val trap = kind == Kind.Snare || kind == Kind.Box
             creatures.add(
                 Creature(
                     kind = kind,
@@ -81,7 +90,8 @@ internal object HunterData {
             when (p[0]) {
                 "snare",
                 "box",
-                "net" -> {
+                "net",
+                "swarm" -> {
                     flush()
                     header = p
                 }

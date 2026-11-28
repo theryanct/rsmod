@@ -26,6 +26,10 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - sets: arrow shafts + feathers, headless arrows + arrowtips, dart tips + feathers, unfinished
  *   bolts + feathers - up to one set (15 or 10) per action, partial sets allowed.
  *
+ * - wasp darts (wasp / killer wasp stings + any of ten feathers) only once The Birds and the Wasps
+ *   asks for them (cache quest varbit `baw` at [BAW_DARTS_STAGE]+); before that the Wiki's "not
+ *   sure how or why" box.
+ *
  * Quantity uses the menu dialog (1/5/10/X/All) like smelting until a shared skillmulti (make-X)
  * helper exists. One action per recipe tick count from a weak queue, so moving or clicking
  * something else stops it.
@@ -87,6 +91,15 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     }
 
     private suspend fun ProtectedAccess.selectRecipe(recipes: List<Recipe>) {
+        val locked = recipes.firstOrNull { questLocked(it) }
+        if (locked != null) {
+            doubleobjbox(
+                obj(locked.materials[1].obj),
+                obj(locked.materials[0].obj),
+                "You are not sure how or why you would combine these two items.",
+            )
+            return
+        }
         val shown = recipes.take(MAX_PRODUCTS)
         val products =
             shown.map { recipe ->
@@ -134,6 +147,9 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private fun ProtectedAccess.fletch(job: FletchJob) {
         val recipe = job.recipe
+        if (questLocked(recipe)) {
+            return
+        }
         if (player.fletchingLvl < recipe.level) {
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
@@ -203,6 +219,10 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         return recipe.materials.minOf { invTotal(inv, obj(it.obj)) / it.count }
     }
 
+    /** Wasp darts before The Birds and the Wasps asks for them. */
+    private fun ProtectedAccess.questLocked(recipe: Recipe): Boolean =
+        recipe.product in BAW_DARTS && player.vars[FletchingVarBits.baw] < BAW_DARTS_STAGE
+
     private fun productName(recipe: Recipe): String =
         objTypes[FletchingObjs.byName.getValue(recipe.product)].name
 
@@ -211,6 +231,10 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private companion object {
         const val KNIFE = "knife"
         const val CHISEL = "chisel"
+
+        /** The Birds and the Wasps: Bea asks for darts at this `baw` stage (BirdsAndWasps.kt). */
+        const val BAW_DARTS_STAGE = 45
+        val BAW_DARTS = setOf("baw_wasp_dart", "baw_killer_wasp_dart")
 
         /** Skillmulti item slots named in the rev 233 interface (18 after the 243 cutover). */
         const val MAX_PRODUCTS = 10
