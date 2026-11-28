@@ -44,10 +44,12 @@ constructor(
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         // Bind every loc named "Furnace" by the slot of its "Smelt" op (op2 on standard furnaces;
-        // tutorial furnaces use "Use"), so new or regional furnaces work without a list.
+        // tutorial furnaces use "Use"), so new or regional furnaces work without a list. Forges
+        // (Lava/Clay/Sacred forge) share the furnace cache category instead of the name.
         var bound = 0
         for (type in locTypes.values) {
-            if (!type.name.contains("furnace", ignoreCase = true)) {
+            val furnace = type.name.contains("furnace", ignoreCase = true)
+            if (!furnace && type.category != FURNACE_CATEGORY) {
                 continue
             }
             // "Use" only for plain "Furnace" (tutorial furnaces); other furnace-named locs (e.g.
@@ -238,6 +240,9 @@ constructor(
     private companion object {
         private const val SMELT_TICKS = 5
         private const val MAX_SMELT = 28
+
+        /** Cache `category_215`: furnaces and forges. */
+        private const val FURNACE_CATEGORY = 215
     }
 }
 

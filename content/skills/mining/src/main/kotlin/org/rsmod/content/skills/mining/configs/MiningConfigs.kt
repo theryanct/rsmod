@@ -64,8 +64,21 @@ internal object MiningLocs : LocReferences() {
     val runiterock1 = find("runiterock1")
     val runiterock2 = find("runiterock2")
 
+    val prif_ironrock1 = find("prif_mine_ironrock1")
+    val prif_coalrock1 = find("prif_mine_coalrock1")
+    val prif_silverrock1 = find("prif_mine_silverrock1")
+    val prif_goldrock1 = find("prif_mine_goldrock1")
+    val prif_mithrilrock1 = find("prif_mine_mithrilrock1")
+    val prif_adamantiterock1 = find("prif_mine_adamantiterock1")
+    val prif_runiterock1 = find("prif_mine_runiterock1")
+
     val rocks1 = find("rocks1")
     val rocks2 = find("rocks2")
+    val rocks3 = find("rocks3")
+    val prif_rocks1_empty = find("prif_mine_rocks1_empty")
+
+    /** Depleted rocks (cache op1 "Mine"): mining one only says there's no ore. */
+    val empty = listOf(rocks1, rocks2, rocks3, prif_rocks1_empty)
 }
 
 internal object MiningObjs : ObjReferences() {
@@ -152,6 +165,8 @@ internal object MiningRocks : LocEditor() {
         rock(mining_locs.ironrock2, mining_locs.rocks2, iron)
         rock(mining_locs.coalrock1, mining_locs.rocks1, coal)
         rock(mining_locs.coalrock2, mining_locs.rocks2, coal)
+        rock(mining_locs.prif_ironrock1, mining_locs.prif_rocks1_empty, iron)
+        rock(mining_locs.prif_coalrock1, mining_locs.prif_rocks1_empty, coal)
         // Members ores (OSRS Wiki Mining info + success charts; respawn 1/1/2/4/12 minutes).
         val silver = Rock(mining_objs.silver_ore, level = 20, xp = 40.0, 25, 200, respawn = 100)
         val gold = Rock(mining_objs.gold_ore, level = 40, xp = 65.0, 7, 75, respawn = 100)
@@ -168,6 +183,12 @@ internal object MiningRocks : LocEditor() {
         rock(mining_locs.adamantiterock2, mining_locs.rocks2, adamantite)
         rock(mining_locs.runiterock1, mining_locs.rocks1, runite)
         rock(mining_locs.runiterock2, mining_locs.rocks2, runite)
+        // Prifddinas mine: same ores (cache categories match), one shared empty rock.
+        rock(mining_locs.prif_silverrock1, mining_locs.prif_rocks1_empty, silver)
+        rock(mining_locs.prif_goldrock1, mining_locs.prif_rocks1_empty, gold)
+        rock(mining_locs.prif_mithrilrock1, mining_locs.prif_rocks1_empty, mithril)
+        rock(mining_locs.prif_adamantiterock1, mining_locs.prif_rocks1_empty, adamantite)
+        rock(mining_locs.prif_runiterock1, mining_locs.prif_rocks1_empty, runite)
     }
 
     private class Rock(

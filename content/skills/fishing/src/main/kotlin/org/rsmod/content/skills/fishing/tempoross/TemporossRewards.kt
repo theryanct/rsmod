@@ -184,8 +184,11 @@ constructor(
 }
 
 internal object RewardLocs : LocReferences() {
-    /** Multiloc children (tempoross_rewardpermits): _1.._8 carry Net / Check / Big-search. */
-    val pools = (1..8).map { find("tempoross_rewardpool_$it") }
+    /**
+     * Multiloc children (tempoross_rewardpermits): _1.._8 carry Net / Check / Big-search; _0 (the
+     * empty pool, no permits) only Net, which then says there are no permits.
+     */
+    val pools = (0..8).map { find("tempoross_rewardpool_$it") }
 }
 
 internal object RewardObjs : ObjReferences() {

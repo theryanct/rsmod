@@ -17,6 +17,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.miningLvl
 import org.rsmod.api.player.tools.bestTool
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
@@ -24,6 +25,7 @@ import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.content.skills.mining.configs.mining_content
+import org.rsmod.content.skills.mining.configs.mining_locs
 import org.rsmod.content.skills.mining.configs.mining_objs
 import org.rsmod.content.skills.mining.configs.mining_params
 import org.rsmod.game.MapClock
@@ -69,6 +71,11 @@ constructor(
     override fun ScriptContext.startup() {
         onOpLoc1(mining_content.rock) { mine(it.loc, it.type) }
         onOpLocU(mining_content.rock, mining_content.pickaxe) { mine(it.loc, it.type) }
+        for (type in mining_locs.empty) {
+            if (!isLocOpBound(type, 1)) {
+                onOpLoc1(type) { mes("There is no ore currently available in this rock.") }
+            }
+        }
         onPlayerQueueWithArgs<ResumeTarget>(MiningQueues.resume) { resume(it.args) }
     }
 
