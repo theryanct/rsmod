@@ -10,6 +10,9 @@ import org.rsmod.api.player.stat.hunterLvl
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.isHeldOpBound
+import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
@@ -108,11 +111,11 @@ constructor(
         for (trapKind in TrapKind.entries) {
             val item = trapKind.item()
             when (objTypes[item].iop.indexOfFirst { it.equals("Lay", ignoreCase = true) } + 1) {
-                1 -> onOpHeld1(item) { layTrap(trapKind) }
-                2 -> onOpHeld2(item) { layTrap(trapKind) }
-                3 -> onOpHeld3(item) { layTrap(trapKind) }
-                4 -> onOpHeld4(item) { layTrap(trapKind) }
-                5 -> onOpHeld5(item) { layTrap(trapKind) }
+                1 -> if (!isHeldOpBound(item, 1)) onOpHeld1(item) { layTrap(trapKind) }
+                2 -> if (!isHeldOpBound(item, 2)) onOpHeld2(item) { layTrap(trapKind) }
+                3 -> if (!isHeldOpBound(item, 3)) onOpHeld3(item) { layTrap(trapKind) }
+                4 -> if (!isHeldOpBound(item, 4)) onOpHeld4(item) { layTrap(trapKind) }
+                5 -> if (!isHeldOpBound(item, 5)) onOpHeld5(item) { layTrap(trapKind) }
             }
         }
         val trapLocs =
@@ -126,11 +129,11 @@ constructor(
                 val npc = HunterNpcs.byName.getValue(name)
                 val op = npcTypes[npc].op.indexOfFirst { it.equals("Catch", ignoreCase = true) } + 1
                 when (op) {
-                    1 -> onOpNpc1(npc) { catchButterfly(it.npc, creature) }
-                    2 -> onOpNpc2(npc) { catchButterfly(it.npc, creature) }
-                    3 -> onOpNpc3(npc) { catchButterfly(it.npc, creature) }
-                    4 -> onOpNpc4(npc) { catchButterfly(it.npc, creature) }
-                    5 -> onOpNpc5(npc) { catchButterfly(it.npc, creature) }
+                    1 -> if (!isNpcOpBound(npc, 1)) onOpNpc1(npc) { catchButterfly(it.npc, creature) }
+                    2 -> if (!isNpcOpBound(npc, 2)) onOpNpc2(npc) { catchButterfly(it.npc, creature) }
+                    3 -> if (!isNpcOpBound(npc, 3)) onOpNpc3(npc) { catchButterfly(it.npc, creature) }
+                    4 -> if (!isNpcOpBound(npc, 4)) onOpNpc4(npc) { catchButterfly(it.npc, creature) }
+                    5 -> if (!isNpcOpBound(npc, 5)) onOpNpc5(npc) { catchButterfly(it.npc, creature) }
                 }
             }
         }
@@ -144,11 +147,11 @@ constructor(
             val handled = TRAP_OPS.any { it.equals(label, ignoreCase = true) }
             if (!handled) continue
             when (index + 1) {
-                1 -> onOpLoc1(loc) { pickUpTrap(it.loc) }
-                2 -> onOpLoc2(loc) { pickUpTrap(it.loc) }
-                3 -> onOpLoc3(loc) { pickUpTrap(it.loc) }
-                4 -> onOpLoc4(loc) { pickUpTrap(it.loc) }
-                5 -> onOpLoc5(loc) { pickUpTrap(it.loc) }
+                1 -> if (!isLocOpBound(loc, 1)) onOpLoc1(loc) { pickUpTrap(it.loc) }
+                2 -> if (!isLocOpBound(loc, 2)) onOpLoc2(loc) { pickUpTrap(it.loc) }
+                3 -> if (!isLocOpBound(loc, 3)) onOpLoc3(loc) { pickUpTrap(it.loc) }
+                4 -> if (!isLocOpBound(loc, 4)) onOpLoc4(loc) { pickUpTrap(it.loc) }
+                5 -> if (!isLocOpBound(loc, 5)) onOpLoc5(loc) { pickUpTrap(it.loc) }
             }
         }
     }

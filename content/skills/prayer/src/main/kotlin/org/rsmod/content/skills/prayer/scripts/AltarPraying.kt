@@ -7,6 +7,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.basePrayerLvl
 import org.rsmod.api.player.stat.prayerLvl
 import org.rsmod.api.player.stat.statRestore
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -45,11 +46,11 @@ class AltarPraying @Inject constructor(private val locTypes: LocTypeList) : Plug
 
     private fun ScriptContext.bind(type: UnpackedLocType, op: Int) {
         when (op) {
-            1 -> onOpLoc1(type) { pray(it.loc) }
-            2 -> onOpLoc2(type) { pray(it.loc) }
-            3 -> onOpLoc3(type) { pray(it.loc) }
-            4 -> onOpLoc4(type) { pray(it.loc) }
-            5 -> onOpLoc5(type) { pray(it.loc) }
+            1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { pray(it.loc) }
+            2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { pray(it.loc) }
+            3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { pray(it.loc) }
+            4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { pray(it.loc) }
+            5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { pray(it.loc) }
         }
     }
 

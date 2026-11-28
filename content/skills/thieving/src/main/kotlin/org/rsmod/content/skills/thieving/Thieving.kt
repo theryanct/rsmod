@@ -13,6 +13,8 @@ import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.thievingLvl
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -100,11 +102,11 @@ constructor(
                 // Labels vary by stall: "Steal-from", "Steal-From", "Steal from" (Draynor seeds).
                 val op = locTypes[loc].op.indexOfFirst { it?.normalizedOp() == "steal from" }
                 when (op + 1) {
-                    1 -> onOpLoc1(loc) { steal(it.loc, stall, empty, 1) }
-                    2 -> onOpLoc2(loc) { steal(it.loc, stall, empty, 2) }
-                    3 -> onOpLoc3(loc) { steal(it.loc, stall, empty, 3) }
-                    4 -> onOpLoc4(loc) { steal(it.loc, stall, empty, 4) }
-                    5 -> onOpLoc5(loc) { steal(it.loc, stall, empty, 5) }
+                    1 -> if (!isLocOpBound(loc, 1)) onOpLoc1(loc) { steal(it.loc, stall, empty, 1) }
+                    2 -> if (!isLocOpBound(loc, 2)) onOpLoc2(loc) { steal(it.loc, stall, empty, 2) }
+                    3 -> if (!isLocOpBound(loc, 3)) onOpLoc3(loc) { steal(it.loc, stall, empty, 3) }
+                    4 -> if (!isLocOpBound(loc, 4)) onOpLoc4(loc) { steal(it.loc, stall, empty, 4) }
+                    5 -> if (!isLocOpBound(loc, 5)) onOpLoc5(loc) { steal(it.loc, stall, empty, 5) }
                     else -> {
                         unboundStalls++
                         continue
@@ -148,11 +150,11 @@ constructor(
             }
         if (eventBus.contains(bound, type.id)) return false
         when (op) {
-            1 -> onOpNpc1(type) { pickpocket(it.npc, pickpocket, op) }
-            2 -> onOpNpc2(type) { pickpocket(it.npc, pickpocket, op) }
-            3 -> onOpNpc3(type) { pickpocket(it.npc, pickpocket, op) }
-            4 -> onOpNpc4(type) { pickpocket(it.npc, pickpocket, op) }
-            5 -> onOpNpc5(type) { pickpocket(it.npc, pickpocket, op) }
+            1 -> if (!isNpcOpBound(type, 1)) onOpNpc1(type) { pickpocket(it.npc, pickpocket, op) }
+            2 -> if (!isNpcOpBound(type, 2)) onOpNpc2(type) { pickpocket(it.npc, pickpocket, op) }
+            3 -> if (!isNpcOpBound(type, 3)) onOpNpc3(type) { pickpocket(it.npc, pickpocket, op) }
+            4 -> if (!isNpcOpBound(type, 4)) onOpNpc4(type) { pickpocket(it.npc, pickpocket, op) }
+            5 -> if (!isNpcOpBound(type, 5)) onOpNpc5(type) { pickpocket(it.npc, pickpocket, op) }
         }
         return true
     }

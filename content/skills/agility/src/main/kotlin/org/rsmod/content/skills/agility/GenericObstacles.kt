@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.Constants
 import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -78,11 +79,11 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             }
         if (eventBus.contains(event, type.id)) return false
         when (op) {
-            1 -> onOpLoc1(type) { cross(it.loc, kind) }
-            2 -> onOpLoc2(type) { cross(it.loc, kind) }
-            3 -> onOpLoc3(type) { cross(it.loc, kind) }
-            4 -> onOpLoc4(type) { cross(it.loc, kind) }
-            5 -> onOpLoc5(type) { cross(it.loc, kind) }
+            1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { cross(it.loc, kind) }
+            2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { cross(it.loc, kind) }
+            3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { cross(it.loc, kind) }
+            4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { cross(it.loc, kind) }
+            5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { cross(it.loc, kind) }
         }
         return true
     }
