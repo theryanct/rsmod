@@ -3,6 +3,7 @@ package org.rsmod.content.quests.framework
 import org.rsmod.api.config.constants
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.content.quests.framework.QuestDialogue.Node
+import org.rsmod.game.type.npc.NpcType
 
 /**
  * A quest's dialogue tree, generated from the OSRS Wiki "Transcript:<Quest>" page by
@@ -111,9 +112,14 @@ public interface QuestDialogueHooks {
  * - action `end` stops, `above` / `other` / `previous` show the enclosing menu again; an
  *   "action" whose text reads like a condition ("If ...", "On ...") is treated as one (a Wiki
  *   markup slip);
- * - nodes nested under a line or box (inconsistent Wiki indentation) run right after it.
+ * - nodes nested under a line or box (inconsistent Wiki indentation) run right after it;
+ * - lines by a speaker in `speakers` (e.g. voices through a grill) use that npc's chathead,
+ *   others go to the dialogue's npc.
  */
-public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
+public class QuestDialogueRunner(
+    private val hooks: QuestDialogueHooks,
+    private val speakers: Map<String, NpcType> = emptyMap(),
+) {
     private companion object {
         val CONDITION_TEXT = Regex("^(If|On|When) ", RegexOption.IGNORE_CASE)
     }
@@ -249,10 +255,11 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
 
     private suspend fun Dialogue.line(node: Node.Line) {
         val text = personalise(hooks.rewrite(node.text))
-        if (node.speaker.equals("Player", ignoreCase = true)) {
-            chatPlayer(neutral, text)
-        } else {
-            chatNpc(neutral, text)
+        val other = speakers[node.speaker]
+        when {
+            node.speaker.equals("Player", ignoreCase = true) -> chatPlayer(neutral, text)
+            other != null -> chatNpcSpecific(node.speaker, other, neutral, text)
+            else -> chatNpc(neutral, text)
         }
     }
 }
