@@ -1237,3 +1237,22 @@ coords = '2_30_80_32_26'
 [[spawn]]
 npc = 'cowboss_farmer'
 coords = '0_49_51_34_15'
+
+# Lost Lover: Fabia by the southern magic trees west of Kastori (Wiki 1329,3024) and Xilo by the
+# river west of the Crypt of Tonali lift (Wiki 1285,3106); each one's `_united` multinpc stands
+# beside the other, shown once she has left to join her.
+[[spawn]]
+npc = 'tlati_lost_lover_fabia'
+coords = '0_20_47_49_16'
+
+[[spawn]]
+npc = 'tlati_lost_lover_xilo_united'
+coords = '0_20_47_50_16'
+
+[[spawn]]
+npc = 'tlati_lost_lover_xilo'
+coords = '0_20_48_5_34'
+
+[[spawn]]
+npc = 'tlati_lost_lover_fabia_united'
+coords = '0_20_48_6_34'
