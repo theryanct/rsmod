@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import kotlin.math.min
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.events.interact.HeldUEvents
 import org.rsmod.api.player.events.interact.LocUEvents
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
@@ -65,11 +66,13 @@ constructor(
         }
         for (unf in HerbloreData.unfinished) {
             val recipe = Recipe(unf.unf, unf.herb, unf.base, unf.level, 0.0, 1)
+            if (pairBound(obj(unf.herb), obj(unf.base))) continue
             onOpHeldU(obj(unf.herb), obj(unf.base)) { selectMake(recipe) }
         }
         for (potion in HerbloreData.potions) {
             val recipe =
                 Recipe(potion.product, potion.unf, potion.secondary, potion.level, potion.xp, 2)
+            if (pairBound(obj(potion.unf), obj(potion.secondary))) continue
             onOpHeldU(obj(potion.unf), obj(potion.secondary)) { if (knowsPotion(potion)) selectMake(recipe) }
         }
         for (mix in HerbloreData.mixes) {
@@ -109,6 +112,11 @@ constructor(
     }
 
     private fun obj(name: String): ObjType = HerbloreObjs.byName.getValue(name)
+
+    /** A use pair another script (e.g. a quest) already binds, in either order: skip it. */
+    private fun ScriptContext.pairBound(a: ObjType, b: ObjType): Boolean =
+        eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(a.id, b.id)) ||
+            eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(b.id, a.id))
 
     private fun ScriptContext.onHeldOp(
         type: ObjType,

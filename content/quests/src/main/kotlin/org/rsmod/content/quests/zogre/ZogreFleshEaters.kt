@@ -328,7 +328,7 @@ constructor(
                     setState(KEY)
                 }
             }
-            state == KEY && !carries(ZfeObjs.gate_key) && !carries(ZfeObjs.artefact) -> {
+            (state == KEY || state == KILLED) && !carries(ZfeObjs.gate_key) && !carries(ZfeObjs.artefact) -> {
                 runQuestSection(npc, dialogue, "Talking to Grish after losing the Ogre gate key", speakers = grishSpeakers)
                 player.invAddOrDrop(objRepo, ZfeObjs.gate_key)
             }

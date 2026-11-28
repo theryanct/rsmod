@@ -3,6 +3,7 @@ package org.rsmod.content.skills.fletching
 import jakarta.inject.Inject
 import kotlin.math.min
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.events.interact.HeldUEvents
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.fletchingLvl
 import org.rsmod.api.player.tools.hasTool
@@ -14,6 +15,7 @@ import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.fletching.FletchingData.Kind
 import org.rsmod.content.skills.fletching.FletchingData.Recipe
+import org.rsmod.events.EventBus
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
@@ -41,7 +43,12 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             byPair.getOrPut(key) { mutableListOf() }.add(recipe)
         }
         for ((key, recipes) in byPair) {
-            onOpHeldU(obj(key.first), obj(key.second)) { selectRecipe(recipes) }
+            val a = obj(key.first)
+            val b = obj(key.second)
+            // A pair another script (e.g. a quest) already binds, in either order: skip it.
+            if (eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(a.id, b.id))) continue
+            if (eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(b.id, a.id))) continue
+            onOpHeldU(a, b) { selectRecipe(recipes) }
         }
         // "Fletch" on logs (tool-belt material op): the knife may be carried or on the belt.
         for ((key, recipes) in byPair) {
