@@ -28,8 +28,8 @@ BUILTIN = set(
     Exception RuntimeException IllegalArgumentException IllegalStateException
     NoSuchElementException IndexOutOfBoundsException UnsupportedOperationException
     NotImplementedError Error Throwable Override Suppress OptIn Deprecated Volatile JvmStatic
-    JvmField JvmOverloads Synchronized Inject Singleton Regex StringBuilder Lazy Result Math
-    System Thread Runnable KProperty KClass Companion T R K V E""".split()
+    JvmField JvmOverloads Synchronized Regex StringBuilder Lazy Result Math
+    System Thread Runnable Companion T R K V E""".split()
 )
 # Kotlin default imports (kotlin.*, .annotation, .collections, .comparisons, .io, .ranges,
 # .sequences, .text) and java.lang.* names that turn up in this codebase.
