@@ -26,6 +26,10 @@ include(
     "server"
 )
 
+// Rev 243: modules whose interfaces were redesigned in the 243 cache, disabled until ported
+// (skill guides -> skill_guide_v2, canoes -> per-station canoe_map_* interfaces).
+val disabledProjects = setOf("content:interfaces:skill-guides", "content:travel:canoe")
+
 includeProjects(project(":api"))
 includeProjects(project(":content"))
 includeProjects(project(":engine"))
@@ -40,10 +44,6 @@ fun includeProjects(pluginProject: ProjectDescriptor) {
         searchProject(pluginProject.name, projectPath, it)
     }
 }
-
-// Rev 243: modules whose interfaces were redesigned in the 243 cache, disabled until ported
-// (skill guides -> skill_guide_v2, canoes -> per-station canoe_map_* interfaces).
-val disabledProjects = setOf("content:interfaces:skill-guides", "content:travel:canoe")
 
 fun searchProject(parentName: String, root: Path, currentPath: Path) {
     val hasBuildFile = Files.exists(currentPath.resolve("build.gradle.kts"))
