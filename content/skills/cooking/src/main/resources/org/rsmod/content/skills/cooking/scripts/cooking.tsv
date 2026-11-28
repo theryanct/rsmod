@@ -1,0 +1,82 @@
+# Generated from the OSRS Wiki recipe bucket by tools/skills/cooking_to_tsv.py - do not edit.
+heat	bread_dough	bread	burnt_bread	1	40.0	0	118	492	128	512	-	-
+heat	potato	potato_baked	potato_burnt	7	15.0	0	108	472	-	-	-	-
+heat	uncooked_admiral_pie	admiral_pie	burnt_pie	70	210.0	0	15	270	-	-	-	-
+heat	raw_anchovies	anchovies	burntfish1	1	30.0	1	128	512	138	532	-	-
+heat	raw_anglerfish	anglerfish	burnt_anglerfish	84	230.0	1	1	220	-	-	12	260
+heat	raw_bass	bass	burntfish4	43	130.0	1	33	312	-	-	-	-
+heat	raw_bear_meat	cooked_meat	burnt_meat	1	30.0	1	128	512	138	532	-	-
+heat	raw_beef	cooked_meat	burnt_meat	1	30.0	1	128	512	138	532	-	-
+heat	raw_boar_meat	cooked_meat	burnt_meat	1	30.0	1	128	512	138	532	-	-
+heat	raw_cave_eel	cave_eel	burnt_cave_eel	38	115.0	1	38	332	-	-	-	-
+heat	raw_chicken	cooked_chicken	burnt_chicken	1	30.0	1	128	512	138	532	-	-
+heat	raw_cod	cod	burntfish2	18	75.0	1	88	432	93	442	-	-
+heat	raw_dark_crab	dark_crab	burnt_dark_crab	90	215.0	1	10	222	-	-	-	-
+heat	uncooked_fish_pie	fish_pie	burnt_pie	47	164.0	0	38	332	-	-	-	-
+heat	uncooked_garden_pie	garden_pie	burnt_pie	34	138.0	0	48	352	-	-	-	-
+heat	raw_giant_carp	giant_carp	burntfish2	10	0.0	1	98	452	108	472	-	-
+heat	raw_herring	herring	burntfish3	5	50.0	1	108	472	118	492	-	-
+heat	raw_lobster	lobster	burnt_lobster	40	120.0	1	38	332	-	-	55	368
+heat	raw_mackerel	mackerel	burntfish3	10	60.0	1	98	452	108	472	-	-
+heat	raw_mantaray	mantaray	burnt_mantaray	91	216.3	1	1	222	-	-	-	-
+heat	raw_monkfish	monkfish	burnt_monkfish	62	150.0	1	13	280	-	-	24	290
+heat	raw_pike	pike	burntfish2	20	80.0	1	78	412	88	432	-	-
+heat	raw_rat_meat	cooked_meat	burnt_meat	1	30.0	1	128	512	138	532	-	-
+heat	raw_salmon	salmon	burntfish2	25	90.0	1	68	392	78	402	-	-
+heat	raw_sardine	sardine	burntfish5	1	40.0	1	118	492	128	512	-	-
+heat	raw_seaturtle	seaturtle	burnt_seaturtle	82	211.3	1	1	222	-	-	-	-
+heat	raw_shark	shark	burnt_shark	80	210.0	1	1	232	-	-	15	270
+heat	raw_shrimp	shrimp	burnt_shrimp	1	30.0	1	128	512	138	532	-	-
+heat	mort_slimey_eel	mort_slimey_eel_cooked	burnt_eel	28	95.0	1	63	382	-	-	-	-
+heat	uncooked_summer_pie	summer_pie	burnt_pie	95	260.0	0	1	212	-	-	-	-
+heat	raw_swordfish	swordfish	burnt_swordfish	45	140.0	1	18	292	-	-	30	310
+heat	raw_trout	trout	burntfish2	15	70.0	1	88	432	98	452	-	-
+heat	raw_tuna	tuna	burntfish4	30	100.0	1	58	372	-	-	-	-
+heat	uncooked_wild_pie	wild_pie	burnt_pie	85	240.0	0	1	222	-	-	-	-
+heat	yak_meat_raw	cooked_meat	burnt_meat	1	30.0	1	128	512	138	532	-	-
+heat	sweetcorn	sweetcorn_cooked	sweetcorn_burnt	28	104.0	1	78	412	-	-	-	-
+heat	uncooked_apple_pie	apple_pie	burnt_pie	30	130.0	0	58	372	-	-	-	-
+heat	uncooked_redberry_pie	redberry_pie	burnt_pie	10	78.0	0	98	452	108	462	-	-
+heat	uncooked_botanical_pie	botanical_pie	burnt_pie	52	180.0	0	20	300	108	462	-	-
+heat	uncooked_cake	cake	burnt_cake	40	180.0	0	38	332	-	-	-	-
+heat	uncooked_curry	curry	burnt_curry	60	280.0	1	38	332	-	-	-	-
+heat	uncooked_dragonfruit_pie	dragonfruit_pie	burnt_pie	73	220.0	0	8	250	-	-	-	-
+heat	bowl_egg_raw	bowl_egg_scrambled	bowl_egg_burnt	13	50.0	1	90	438	-	-	-	-
+heat	uncooked_meat_pie	meat_pie	burnt_pie	20	110.0	0	78	412	88	432	-	-
+heat	uncooked_mushroom_pie	mushroom_pie	burnt_pie	60	200.0	0	17	285	140	450	-	-
+heat	uncooked_pizza	plain_pizza	burnt_pizza	35	143.0	0	48	352	-	-	-	-
+heat	uncooked_stew	stew	burnt_stew	25	117.0	1	68	392	78	412	-	-
+combine	plain_pizza	anchovies	anchovie_pizza	55	39.0	-	-
+combine	bowl_tuna+sweetcorn	potato_butter	potato_tuna+sweetcorn	68	10.0	-	-
+combine	plain_pizza	pineapple_ring	pineapple_pizza	65	45.0	-	-
+combine	plain_pizza	pineapple_chunks	pineapple_pizza	65	45.0	-	-
+combine	redberries	pie_shell	uncooked_redberry_pie	10	0.0	-	-
+combine	pastry_dough	piedish	pie_shell	1	0.0	-	-
+combine	potato_butter	cheese	potato_cheese	47	40.0	-	-
+combine	plain_pizza	cooked_meat	meat_pizza	45	26.0	-	-
+combine	plain_pizza	cooked_chicken	meat_pizza	45	26.0	-	-
+combine	cake	chocolate_bar	chocolate_cake	50	30.0	-	-
+combine	cake	chocolate_dust	chocolate_cake	50	30.0	-	-
+combine	incomplete_pizza	cheese	uncooked_pizza	35	0.0	-	-
+combine	potato_baked	pot_of_butter	potato_butter	39	40.0	-	-
+combine	potato_baked	pot_of_not_garlic_butter	potato_butter	39	40.0	-	-
+combine	bowl_mushroom+onion	potato_butter	potato_mushroom+onion	64	55.0	-	-
+combine	egg	bowl_empty	bowl_egg_raw	13	0.0	-	-
+combine	pot_flour	bucket_water	pizza_base	35	0.0	pot_empty	bucket_empty
+combine	pot_flour	bowl_water	pizza_base	35	0.0	pot_empty	bowl_empty
+combine	pot_flour	jug_water	pizza_base	35	0.0	pot_empty	jug_empty
+combine	cooking_apple	pie_shell	uncooked_apple_pie	30	0.0	-	-
+combine	cooked_meat	pie_shell	uncooked_meat_pie	20	0.0	-	-
+combine	cooked_chicken	pie_shell	uncooked_meat_pie	20	0.0	-	-
+combine	curry_leaf	uncooked_stew	uncooked_curry	60	0.0	-	-
+combine	spicespot	uncooked_stew	uncooked_curry	60	0.0	-	-
+combine	pizza_base	tomato	incomplete_pizza	35	0.0	-	-
+combine	golovanova_top	pie_shell	uncooked_botanical_pie	52	0.0	-	-
+combine	fossil_sulliuscep_cap	pie_shell	uncooked_mushroom_pie	60	0.0	-	-
+combine	dragonfruit	pie_shell	uncooked_dragonfruit_pie	73	0.0	-	-
+combine	pot_flour	bucket_water	bread_dough	1	0.0	pot_empty	bucket_empty
+combine	pot_flour	bucket_water	pastry_dough	1	0.0	pot_empty	bucket_empty
+combine	pot_flour	jug_water	bread_dough	1	0.0	pot_empty	jug_empty
+combine	pot_flour	jug_water	pastry_dough	1	0.0	pot_empty	jug_empty
+combine	pot_flour	bowl_water	bread_dough	1	0.0	pot_empty	bowl_empty
+combine	pot_flour	bowl_water	pastry_dough	1	0.0	pot_empty	bowl_empty
