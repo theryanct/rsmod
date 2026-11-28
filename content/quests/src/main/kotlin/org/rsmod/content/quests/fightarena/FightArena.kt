@@ -294,7 +294,13 @@ constructor(
                 player.mes("Khazard's guards are waiting at the arena door to take you to the cells.")
             }
             SCORPION_DOWN, BOUNCER_DOWN -> {
-                player.mes("General Khazard sends in another opponent... use the arena door to face it.")
+                // Authored line (not Wiki): Khazard's next beast is released straight away.
+                player.mes("General Khazard sends in another opponent!")
+                val type = if (next == SCORPION_DOWN) FaNpcs.bouncer else FaNpcs.khazard
+                val npc = Npc(npcTypes[type], ARENA_OPPONENT)
+                npcRepo.add(npc, OPPONENT_TICKS)
+                opponents[player.uid.packed] = npc
+                npc.opPlayer2(player, aiInteractions)
             }
             KHAZARD_DOWN -> player.mes("General Khazard is defeated! Return to Lady Servil.")
         }
