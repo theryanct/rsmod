@@ -1,15 +1,19 @@
 package org.rsmod.content.other.levelup
 
 import jakarta.inject.Inject
+import java.util.WeakHashMap
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.statBase
 import org.rsmod.api.script.advanced.onAdvanceStat
+import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.jingle.JingleReferences
 import org.rsmod.api.type.refs.spot.SpotanimReferences
+import org.rsmod.game.entity.Player
 import org.rsmod.game.type.comp.ComponentType
 import org.rsmod.game.type.jingle.JingleType
 import org.rsmod.game.type.stat.StatType
+import org.rsmod.game.type.stat.StatTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -20,15 +24,45 @@ import org.rsmod.plugin.scripts.ScriptContext
  *
  * TODO: "(Unlocks)" jingle variants and the combat level-up message.
  */
-class LevelUpScript @Inject constructor() : PluginScript() {
+class LevelUpScript @Inject constructor(private val statTypes: StatTypeList) : PluginScript() {
+    /**
+     * Last known base level per player and stat (snapshot at login, then each announced level). A
+     * multi-level jump queues one `AdvanceStat` per level, but each reads the same (final) base
+     * level: the first one posts a message per level gained and shows one fanfare for the newest
+     * level; the rest find nothing new. Weak keys drop players on logout.
+     */
+    private val announced = WeakHashMap<Player, MutableMap<String, Int>>()
+
     override fun ScriptContext.startup() {
+        onPlayerLogin { snapshot(player) }
         onAdvanceStat { levelUp(it.args) }
     }
+
+    private fun snapshot(player: Player) {
+        val levels = HashMap<String, Int>()
+        for (stat in statTypes.values) {
+            levels[stat.key] = player.statBase(stat)
+        }
+        announced[player] = levels
+    }
+
+    private val StatType.key: String
+        get() = internalName ?: displayName
 
     private suspend fun ProtectedAccess.levelUp(stat: StatType) {
         val skill = stat.displayName
         val level = player.statBase(stat)
+        val seen = announced.getOrPut(player) { HashMap() }
+        val previous = seen[stat.key] ?: (level - 1)
+        if (level <= previous) {
+            return
+        }
+        seen[stat.key] = level
         val maxed = level >= stat.maxLevel
+        // One message per level gained (Ryan); the popup, jingle and fireworks are for the newest.
+        for (gained in previous + 1 until level) {
+            mes(levelMessage(skill, gained))
+        }
 
         spotanim(if (maxed) LevelUpSpots.levelup_99 else LevelUpSpots.levelup)
         jingleFor(stat.internalName, level)?.let(::midiJingle)
@@ -40,10 +74,7 @@ class LevelUpScript @Inject constructor() : PluginScript() {
             text1 = "<col=000080>Congratulations, you've just reached the highest possible"
             text2 = "$skill level of $level!"
         } else {
-            mes(
-                "Congratulations, you've just advanced your $skill level. " +
-                    "You are now level $level."
-            )
+            mes(levelMessage(skill, level))
             text1 = "<col=000080>Congratulations, you just advanced ${skill.withArticle()} level."
             text2 = "Your $skill level is now $level."
         }
@@ -51,6 +82,9 @@ class LevelUpScript @Inject constructor() : PluginScript() {
         val icon = LevelUpIcons.forSkill(stat.internalName)
         levelUpBox(icon, LevelUpIcons.all, text1, text2)
     }
+
+    private fun levelMessage(skill: String, level: Int): String =
+        "Congratulations, you've just advanced your $skill level. You are now level $level."
 
     private fun jingleFor(skill: String?, level: Int): JingleType? =
         when (skill) {

@@ -1,9 +1,11 @@
 package org.rsmod.content.skills.thieving
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.config.refs.spotanims
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.events.interact.NpcEvents
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.thievingLvl
 import org.rsmod.api.repo.loc.LocRepository
@@ -27,6 +29,7 @@ import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcTypeList
+import org.rsmod.game.type.npc.UnpackedNpcType
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -40,7 +43,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   loot roll, then the stall turns into its region's empty stall for the respawn time, or - when
  *   there is no empty variant - simply can't be stolen from until then.
  *
- * The op slot is whichever slot the npc/loc type labels "Pickpocket" / "Steal-from".
+ * The op slot is whichever slot the npc/loc type labels "Pickpocket" / "Steal-from" (any
+ * spelling of "steal from"); same-name variants of listed pickpocket targets are bound too.
  */
 class Thieving
 @Inject
@@ -50,6 +54,8 @@ constructor(
     private val locRepo: LocRepository,
     private val xpMods: XpModifiers,
 ) : PluginScript() {
+    private val logger = InlineLogger()
+
     /** Stall coords -> map clock cycle at which it can be stolen from again (no empty variant). */
     private val stallCooldowns = HashMap<CoordGrid, Int>()
 
@@ -57,17 +63,23 @@ constructor(
         val registeredNpcs = HashSet<Int>()
         for (pickpocket in ThievingData.pickpockets) {
             for (name in pickpocket.npcs) {
-                val npc = ThievingNpcs.byName.getValue(name)
-                if (!registeredNpcs.add(npc.id)) continue
-                val op = npcTypes[npc].op.indexOfFirst { it.equals("Pickpocket", ignoreCase = true) }
-                when (op + 1) {
-                    1 -> onOpNpc1(npc) { pickpocket(it.npc, pickpocket) }
-                    2 -> onOpNpc2(npc) { pickpocket(it.npc, pickpocket) }
-                    3 -> onOpNpc3(npc) { pickpocket(it.npc, pickpocket) }
-                    4 -> onOpNpc4(npc) { pickpocket(it.npc, pickpocket) }
-                    5 -> onOpNpc5(npc) { pickpocket(it.npc, pickpocket) }
-                }
+                val npc = npcTypes[ThievingNpcs.byName.getValue(name)]
+                if (bindPickpocket(npc, pickpocket, registeredNpcs)) listedNpcs++
             }
+        }
+        // The Wiki lists one or a few ids per target, but towns spawn many variants of e.g. Man,
+        // Woman, Farmer or Guard. Bind every npc type with a Pickpocket op whose display name
+        // matches a listed target (the lowest-level entry wins when a name is ambiguous).
+        val byDisplayName = HashMap<String, Pickpocket>()
+        for (pickpocket in ThievingData.pickpockets.sortedBy { it.level }) {
+            for (name in pickpocket.npcs) {
+                val display = npcTypes[ThievingNpcs.byName.getValue(name)].name.lowercase()
+                byDisplayName.putIfAbsent(display, pickpocket)
+            }
+        }
+        for (type in npcTypes.values) {
+            val pickpocket = byDisplayName[type.name.lowercase()] ?: continue
+            if (bindPickpocket(type, pickpocket, registeredNpcs)) extraNpcs++
         }
         val registeredLocs = HashSet<Int>()
         for (stall in ThievingData.stalls) {
@@ -75,16 +87,60 @@ constructor(
                 val loc = ThievingLocs.byName.getValue(name)
                 if (!registeredLocs.add(loc.id)) continue
                 val empty = stall.empties.getOrNull(index)?.let { ThievingLocs.byName.getValue(it) }
-                val op = locTypes[loc].op.indexOfFirst { it.equals("Steal-from", ignoreCase = true) }
+                // Labels vary by stall: "Steal-from", "Steal-From", "Steal from" (Draynor seeds).
+                val op = locTypes[loc].op.indexOfFirst { it?.normalizedOp() == "steal from" }
                 when (op + 1) {
                     1 -> onOpLoc1(loc) { steal(it.loc, stall, empty) }
                     2 -> onOpLoc2(loc) { steal(it.loc, stall, empty) }
                     3 -> onOpLoc3(loc) { steal(it.loc, stall, empty) }
                     4 -> onOpLoc4(loc) { steal(it.loc, stall, empty) }
                     5 -> onOpLoc5(loc) { steal(it.loc, stall, empty) }
+                    else -> {
+                        unboundStalls++
+                        continue
+                    }
                 }
+                stalls++
             }
         }
+        logger.info {
+            "Thieving: pickpocket on $listedNpcs listed + $extraNpcs same-name npc types, " +
+                "$stalls stall loc types ($unboundStalls without a steal op)."
+        }
+    }
+
+    private var listedNpcs = 0
+    private var extraNpcs = 0
+    private var stalls = 0
+    private var unboundStalls = 0
+
+    private fun String.normalizedOp(): String = lowercase().replace('-', ' ').trim()
+
+    /** Binds [type]'s "Pickpocket" op; `false` if already bound or the type has no such op. */
+    private fun ScriptContext.bindPickpocket(
+        type: UnpackedNpcType,
+        pickpocket: Pickpocket,
+        registered: MutableSet<Int>,
+    ): Boolean {
+        val op = type.op.indexOfFirst { it?.normalizedOp() == "pickpocket" } + 1
+        if (op == 0 || !registered.add(type.id)) return false
+        val bound =
+            when (op) {
+                1 -> NpcEvents.Op1::class.java
+                2 -> NpcEvents.Op2::class.java
+                3 -> NpcEvents.Op3::class.java
+                4 -> NpcEvents.Op4::class.java
+                else -> NpcEvents.Op5::class.java
+            }
+        if (eventBus.contains(bound, type.id)) return false
+        when (op) {
+            1 -> onOpNpc1(type) { pickpocket(it.npc, pickpocket) }
+            2 -> onOpNpc2(type) { pickpocket(it.npc, pickpocket) }
+            3 -> onOpNpc3(type) { pickpocket(it.npc, pickpocket) }
+            4 -> onOpNpc4(type) { pickpocket(it.npc, pickpocket) }
+            5 -> onOpNpc5(type) { pickpocket(it.npc, pickpocket) }
+        }
+        return true
     }
 
     private suspend fun ProtectedAccess.pickpocket(npc: Npc, pickpocket: Pickpocket) {

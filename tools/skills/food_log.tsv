@@ -1,0 +1,107 @@
+chain	Tea flask	tol_tea -> None
+skip	Poison chalice	heal=Random
+nomatch	Cup of tea (nettle)	ids=[]
+chain	Tenti pineapple	tentipineapple -> None
+nomatch	Ugthanki kebab (bad)	ids=[]
+chain	Kebab	kebab -> None
+nomatch	Damiana tea (milky)	ids=[]
+nomatch	Cup of tea (damiana)	ids=[]
+nomatch	Cup of tea (milky damiana)	ids=[]
+chain	Pineapple	pineapple -> None
+skip	Chichilihui rosé	heal={{plinkt|Chichilihui rosé}}
+chain	Thin snail meat	snail_corpse_cooked1 -> None
+chain	Lean snail meat	snail_corpse_cooked2 -> None
+chain	Fat snail meat	snail_corpse_cooked3 -> None
+chain	Cooked slimy eel	mort_slimey_eel_cooked -> None
+nomatch	Keg of beer	ids=[3711, 3801]
+nomatch	Guthix rest	ids=[]
+chain	Purple sweets	easter_egg_2005_purple -> None
+chain	Super kebab	super_kebab -> None
+chain	Cave eel	cave_eel -> None
+chain	Frog spawn	giant_frogspawn -> None
+chain	Strawberry	strawberry -> None
+skip	Strawberries	heal=(1 - 6) × 5
+nomatch	Greenmans ale(4)	ids=[5793]
+nomatch	Mind bomb(4)	ids=[5801]
+nomatch	Dwarven stout(m4)	ids=[5857]
+nomatch	Asgarnian ale(m4)	ids=[5865]
+nomatch	Greenmans ale(m4)	ids=[5873]
+nomatch	Mind bomb(m4)	ids=[5881]
+nomatch	Dragon bitter(m4)	ids=[5889]
+nomatch	Moonlight mead(m4)	ids=[5897]
+nomatch	Axeman's folly(m4)	ids=[5905]
+nomatch	Chef's delight(m4)	ids=[5913]
+nomatch	Slayer's respite(m4)	ids=[5921]
+nomatch	Cider(m4)	ids=[5929]
+skip	Watermelon	heal=(1 - 5) × 3
+chain	Watermelon slice	watermelon_slice -> None
+chain	Cooked sweetcorn	sweetcorn_cooked -> None
+chain	Spider on stick	tbw_spider_on_stick_cooked -> None
+chain	Spider on shaft	tbw_spider_on_shaft_cooked -> None
+skip	Saradomin brew	heal=(3 - 16) × 4
+skip	Armadyl brew	heal=(3 - 11) × 4
+chain	Cooked giant crab meat	hundred_pirate_giant_crab_meat_5 -> None
+chain	Cooked giant crab meat	hundred_pirate_giant_crab_meat_4 -> None
+chain	Cooked giant crab meat	hundred_pirate_giant_crab_meat_3 -> None
+chain	Cooked giant crab meat	hundred_pirate_giant_crab_meat_2 -> None
+chain	Cooked giant crab meat	hundred_pirate_giant_crab_meat_1 -> None
+nomatch	Attack mix(2)	ids=[11429]
+nomatch	Antipoison mix(2)	ids=[11433]
+nomatch	Relicym's mix(2)	ids=[11437]
+nomatch	Strength mix(2)	ids=[11443]
+nomatch	Combat mix(2)	ids=[11445]
+nomatch	Restore mix(2)	ids=[11449]
+nomatch	Energy mix(2)	ids=[11453]
+nomatch	Defence mix(2)	ids=[11457]
+nomatch	Agility mix(2)	ids=[11461]
+nomatch	Prayer mix(2)	ids=[11465]
+nomatch	Superattack mix(2)	ids=[11469]
+nomatch	Anti-poison supermix(2)	ids=[11473]
+nomatch	Fishing mix(2)	ids=[11477]
+nomatch	Super energy mix(2)	ids=[11481]
+nomatch	Super str. mix(2)	ids=[11485]
+nomatch	Magic essence mix(2)	ids=[11489]
+nomatch	Super restore mix(2)	ids=[11493]
+nomatch	Super def. mix(2)	ids=[11497]
+nomatch	Antidote+ mix(2)	ids=[11501]
+nomatch	Antifire mix(2)	ids=[11505]
+nomatch	Ranging mix(2)	ids=[11509]
+nomatch	Magic mix(2)	ids=[11513]
+nomatch	Hunting mix(2)	ids=[11517]
+nomatch	Zamorak mix(2)	ids=[11521]
+nomatch	Extended antifire mix(2)	ids=[11960]
+nomatch	Stamina mix(2)	ids=[12633]
+chain	Anglerfish	anglerfish -> None
+skip	Xeric's aid (-)	heal=(1 - 7) × 4
+skip	Xeric's aid	heal=(3 - 13) × 4
+skip	Xeric's aid (+)	heal=(6 - 19) × 4
+nomatch	Ambrosia	ids=[]
+skip	Nectar	heal=(4 - 17) × 4
+nomatch	Silk dressing (2)	ids=[27323]
+nomatch	Ancient mix(2)	ids=[26350]
+chain	Cooked sunlight antelope	antelopesun_cooked -> None
+chain	Cooked graahk	graahk_cooked -> None
+chain	Cooked dashing kebbit	dashingkebbit_cooked -> None
+chain	Cooked moonlight antelope	antelopemoon_cooked -> None
+chain	Cooked pyre fox	fennecfox_cooked -> None
+chain	Cooked kyatt	kyatt_cooked -> None
+chain	Cooked barb-tailed kebbit	barbkebbit_cooked -> None
+chain	Cooked larupia	larupia_cooked -> None
+skip	Cooked bream	heal=Up to 33
+skip	Cooked moss lizard	heal=Up to 33
+chain	Cooked wild kebbit	wildkebbit_cooked -> None
+chain	Varlamorian kebab	varlamorian_kebab -> None
+nomatch	Orange (hat)	ids=[]
+nomatch	Giant krill	ids=[32312]
+nomatch	Haddock	ids=[32320]
+nomatch	Yellowfin	ids=[32328]
+nomatch	Halibut	ids=[32336]
+nomatch	Bluefin	ids=[32344]
+nomatch	Marlin	ids=[32352]
+nomatch	Swordtip squid	ids=[31556]
+nomatch	Jumbo squid	ids=[31564]
+nomatch	Red crab meat	ids=[31689]
+nomatch	Blue crab meat	ids=[31695]
+nomatch	Rainbow crab meat	ids=[31703]
+nomatch	Cooked t-bone steak	ids=[33109]
+nomatch	Stymphike tartare	ids=[33628]

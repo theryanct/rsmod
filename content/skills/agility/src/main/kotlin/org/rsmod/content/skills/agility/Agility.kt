@@ -143,8 +143,19 @@ constructor(
             return
         }
         val from = player.coords
-        exactMove(from, end, 0, ticks * CLIENT_CYCLES_PER_TICK, direction(from, end))
-        delay(ticks)
+        val crossingBas = AgilityBas.byAnim[anim]
+        val previousBas = player.bas
+        if (crossingBas != null) {
+            player.bas = crossingBas
+        }
+        try {
+            exactMove(from, end, 0, ticks * CLIENT_CYCLES_PER_TICK, direction(from, end))
+            delay(ticks)
+        } finally {
+            if (crossingBas != null) {
+                player.bas = previousBas
+            }
+        }
     }
 
     private fun ProtectedAccess.isNear(target: Target): Boolean {
