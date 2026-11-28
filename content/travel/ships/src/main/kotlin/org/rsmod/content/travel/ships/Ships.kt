@@ -32,7 +32,7 @@ public suspend fun ProtectedAccess.sailTo(
         return false
     }
     // Validate the arrival before taking any coins.
-    if (!collision.isZoneValid(dest) || collision[dest.x, dest.z, dest.level] and BLOCKED != 0) {
+    if (!collision.isZoneValid(dest) || (collision[dest.x, dest.z, dest.level] and BLOCKED) != 0) {
         mes("The ship can't sail there right now.")
         return false
     }
@@ -72,7 +72,7 @@ public fun CollisionFlagMap.nearestWalkable(pin: CoordGrid, radius: Int = 5): Co
                     continue
                 }
                 val tile = pin.translate(dx, dz)
-                if (this[tile.x, tile.z, tile.level] and BLOCKED == 0) {
+                if ((this[tile.x, tile.z, tile.level] and BLOCKED) == 0) {
                     return tile
                 }
             }
