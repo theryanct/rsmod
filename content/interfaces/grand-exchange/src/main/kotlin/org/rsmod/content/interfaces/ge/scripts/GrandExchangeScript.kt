@@ -5,8 +5,8 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.market.MarketPrices
-import org.rsmod.api.player.output.ClientScripts.mesLayerClose
 import org.rsmod.api.player.input.ObjDialogCancelledException
+import org.rsmod.api.player.output.ClientScripts.mesLayerClose
 import org.rsmod.api.player.output.StockMarket
 import org.rsmod.api.player.output.VarpSync
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -14,6 +14,11 @@ import org.rsmod.api.player.startInvTransmit
 import org.rsmod.api.player.stopInvTransmit
 import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.api.script.onApNpc1
+import org.rsmod.api.script.onApNpc2
+import org.rsmod.api.script.onApNpc3
+import org.rsmod.api.script.onApNpc4
+import org.rsmod.api.script.onApNpc5
 import org.rsmod.api.script.onIfClose
 import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onIfOpen
@@ -34,6 +39,7 @@ import org.rsmod.content.interfaces.ge.configs.GeInterfaces
 import org.rsmod.content.interfaces.ge.configs.GeInvs
 import org.rsmod.content.interfaces.ge.configs.GeVarBits
 import org.rsmod.content.interfaces.ge.configs.GeVarps
+import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.player.GeSlot
 import org.rsmod.game.inv.InvObj
@@ -53,6 +59,9 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 private val logger = InlineLogger()
+
+/** Clerks are used across the booth counter, like bankers (OSRS ap range 2). */
+private const val CLERK_AP_RANGE = 2
 
 /**
  * Local-server Grand Exchange (rev 233 `ge_offers` / `ge_offers_side`).
@@ -118,6 +127,13 @@ constructor(
             }
             val slot = type.op.indexOfFirst { it.equals("Exchange", ignoreCase = true) }
             if (slot != -1) {
+                // Clerks stand behind the booths: an approach (ap) trigger lets the player use them
+                // across the counter (OSRS range 2, like bankers); the op trigger covers adjacency.
+                onApNpcSlot(type, slot + 1) { npc ->
+                    if (isWithinApRange(npc, CLERK_AP_RANGE)) {
+                        openExchange()
+                    }
+                }
                 onOpNpcSlot(type, slot + 1) { openExchange() }
                 npcs++
             }
@@ -152,6 +168,20 @@ constructor(
             3 -> onOpNpc3(type) { action() }
             4 -> onOpNpc4(type) { action() }
             5 -> onOpNpc5(type) { action() }
+        }
+    }
+
+    private fun ScriptContext.onApNpcSlot(
+        type: NpcType,
+        slot: Int,
+        action: suspend ProtectedAccess.(Npc) -> Unit,
+    ) {
+        when (slot) {
+            1 -> onApNpc1(type) { action(it.npc) }
+            2 -> onApNpc2(type) { action(it.npc) }
+            3 -> onApNpc3(type) { action(it.npc) }
+            4 -> onApNpc4(type) { action(it.npc) }
+            5 -> onApNpc5(type) { action(it.npc) }
         }
     }
 
@@ -753,7 +783,12 @@ constructor(
 
     private fun Player.setVar(varp: VarpType, value: Int) {
         VarPlayerIntMapSetter.set(this, varp, value)
-        VarpSync.writeVarp(this, varp, vars[varp])
+        if (varp.id == GeVarps.newoffer_price.id) {
+            // Rev 243: the setup panel reads the price as a long varp (`tostring_spacer_long`).
+            VarpSync.writeVarpLong(this, varp, vars[varp].toLong())
+        } else {
+            VarpSync.writeVarp(this, varp, vars[varp])
+        }
     }
 
     private fun Player.setVar(varbit: VarBitType, value: Int) {
