@@ -93,6 +93,9 @@ import org.rsmod.api.player.ui.FurnitureMenuRefs
 import org.rsmod.api.player.ui.SKILLMULTI_MAX_QUANTITY
 import org.rsmod.api.player.ui.SKILLMULTI_REMEMBER_ALL
 import org.rsmod.api.player.ui.SkillMultiChoice
+import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.api.player.ui.spaceDefaultIndex
+import org.rsmod.api.player.ui.SkillMultiVarps
 import org.rsmod.api.player.ui.SkillMultiComponents
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.ifChatNpcSpecific
@@ -2113,6 +2116,8 @@ public class ProtectedAccess(
                 remembered == null || remembered == SKILLMULTI_REMEMBER_ALL -> max
                 else -> remembered
             }.coerceIn(1, max)
+        // Space picks the best product the player can make right now (Ryan).
+        VarPlayerIntMapSetter.set(player, SkillMultiVarps.previous_selection, products.spaceDefaultIndex())
         player.ifSkillMulti(verb, title, products, max, suggested, context.eventBus)
         val modal = player.ui.getModalOrNull(components.chatbox_chatmodal)
         val input = coroutine.pause(ResumePauseButtonInput::class)

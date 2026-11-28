@@ -77,7 +77,7 @@ constructor(
         val products =
             Bar.entries.map { bar ->
                 val obj = bar.bar()
-                SkillMultiProduct(obj, objTypes[obj].name, available = hasOres(bar))
+                SkillMultiProduct(obj, objTypes[obj].name, available = hasOres(bar) && player.smithingLvl >= bar.level)
             }
         if (products.none { it.available }) {
             mes("You don't have any ores to smelt.")

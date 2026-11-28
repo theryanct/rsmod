@@ -5,6 +5,7 @@ import org.rsmod.api.config.constants
 import org.rsmod.api.player.output.runClientScript
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.comp.ComponentType
@@ -44,6 +45,20 @@ public object SkillMultiVerb {
 internal object SkillMultiRefs : InterfaceReferences() {
     val skillmulti = find("skillmulti")
 }
+
+/**
+ * Client varp the setup script reads (when enum 3623 allows it for the verb) to bind the Space key
+ * to a product slot.
+ */
+internal object SkillMultiVarps : VarpReferences() {
+    val previous_selection = find("skillmulti_previousselection")
+}
+
+/**
+ * Slot Space should pick: the best product the player can make right now. Callers list products
+ * from lowest to highest level/tier, so that is the last available one; slot 0 when none are.
+ */
+internal fun List<SkillMultiProduct>.spaceDefaultIndex(): Int = indexOfLast { it.available }.coerceAtLeast(0)
 
 internal object SkillMultiComponents : ComponentReferences() {
     val items: List<ComponentType> =
