@@ -6,14 +6,17 @@ import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.market.MarketPrices
 import org.rsmod.api.player.output.ClientScripts.mesLayerClose
+import org.rsmod.api.player.input.ObjDialogCancelledException
 import org.rsmod.api.player.output.StockMarket
 import org.rsmod.api.player.output.VarpSync
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.startInvTransmit
 import org.rsmod.api.player.stopInvTransmit
+import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.onIfClose
 import org.rsmod.api.script.onIfModalButton
+import org.rsmod.api.script.onIfOpen
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -95,6 +98,14 @@ constructor(
         onIfModalButton(GeComponents.details_collect) { detailsCollectOp(it.comsub, it.op) }
         onIfModalButton(GeComponents.collectall) { collectAllOp(it.comsub, it.op) }
         onIfModalButton(GeComponents.side_items) { sideItemOp(it.comsub, it.op) }
+
+        onIfOpen(GeInterfaces.collect) { player.onCollectionBoxOpen() }
+        onIfClose(GeInterfaces.collect) { player.onCollectionBoxClose() }
+        onIfModalButton(GeComponents.collectbox_inv) { collectAll(toBank = false) }
+        onIfModalButton(GeComponents.collectbox_bank) { collectAll(toBank = true) }
+        for ((slot, component) in GeComponents.collectbox_slots.withIndex()) {
+            onIfModalButton(component) { collectionBoxOp(slot, it.comsub, it.op) }
+        }
     }
 
     /* Openers: bound by op label, like shops and furnaces. */
@@ -120,6 +131,11 @@ constructor(
             if (slot != -1) {
                 onOpLocSlot(type, slot + 1) { openExchange() }
                 locs++
+            }
+            // Only the GE's own booths: other bank booths' "Collect" is left to the bank module.
+            val collect = type.op.indexOfFirst { it.equals("Collect", ignoreCase = true) }
+            if (collect != -1) {
+                onOpLocSlot(type, collect + 1) { openCollectionBox() }
             }
         }
         logger.info { "Grand Exchange: bound $npcs clerks and $locs booths." }
@@ -212,6 +228,7 @@ constructor(
             GeConstants.INDEX_OFFER -> {
                 if (offer != null && op == IfButtonOp.Op1) {
                     selectSlot(slot)
+                    showDetails(offer)
                 } else if (offer != null) {
                     mes("That offer has already completed.")
                 }
@@ -233,7 +250,16 @@ constructor(
     /* Setup panel. */
 
     private suspend fun ProtectedAccess.searchItem() {
-        val chosen = objDialog("What would you like to buy?")
+        val chosen =
+            try {
+                objDialog("What would you like to buy?")
+            } catch (_: ObjDialogCancelledException) {
+                // Escape in the search: back to the offers index with nothing set up.
+                if (player.ui.containsModal(GeInterfaces.offers)) {
+                    selectSlot(-1)
+                }
+                return
+            }
         if (player.selectedSlot !in 0 until GeSlot.SLOT_COUNT || !player.isBuying) {
             return
         }
@@ -262,6 +288,19 @@ constructor(
             "",
             GeComponents.setup_desc.packed,
             GeComponents.setup_fee.packed,
+        )
+    }
+
+    /** Details panel text for a finished offer: description and the price it traded at. */
+    private fun ProtectedAccess.showDetails(offer: GeSlot) {
+        val type = objTypes[offer.obj] ?: return
+        ifSetText(GeComponents.details_marketprice, "%,d coins".format(offer.price))
+        runClientScript(
+            GeConstants.SETDESC_SCRIPT,
+            type.desc,
+            "",
+            GeComponents.details_desc.packed,
+            GeComponents.details_fee.packed,
         )
     }
 
@@ -513,10 +552,7 @@ constructor(
     private fun ProtectedAccess.collectAllOp(comsub: Int, op: IfButtonOp) {
         when (comsub) {
             GeConstants.COLLECT_ALL -> {
-                val toBank = op == IfButtonOp.Op2
-                for (slot in 0 until GeSlot.SLOT_COUNT) {
-                    collect(slot, toBank = toBank, noted = true)
-                }
+                collectAll(toBank = op == IfButtonOp.Op2)
             }
             GeConstants.REPEAT_OFFER -> mes("Repeat offers aren't available on this server.")
         }
@@ -529,13 +565,31 @@ constructor(
      */
     private fun ProtectedAccess.detailsCollectOp(comsub: Int, op: IfButtonOp) {
         val slot = player.selectedSlot
-        val offer = player.geSlots.getOrNull(slot) ?: return
         val index =
             when (comsub) {
                 GeConstants.DETAILS_COLLECT_ITEM -> 0
                 GeConstants.DETAILS_COLLECT_COINS -> 1
                 else -> return
             }
+        collectItemOp(slot, index, op)
+        if (player.geSlots.getOrNull(slot) == null) {
+            selectSlot(-1)
+        }
+    }
+
+    /** Collection box (`ge_collect`) slot item ops: same op meanings as the details panel. */
+    private fun ProtectedAccess.collectionBoxOp(slot: Int, comsub: Int, op: IfButtonOp) {
+        val index =
+            when (comsub) {
+                GeConstants.COLLECTBOX_ITEM -> 0
+                GeConstants.COLLECTBOX_COINS -> 1
+                else -> return
+            }
+        collectItemOp(slot, index, op)
+    }
+
+    private fun ProtectedAccess.collectItemOp(slot: Int, index: Int, op: IfButtonOp) {
+        val offer = player.geSlots.getOrNull(slot) ?: return
         if (index != offer.collectIndex) {
             return
         }
@@ -546,8 +600,38 @@ constructor(
             IfButtonOp.Op10 -> mes(objTypes[offer.collectObj]?.desc ?: return)
             else -> return
         }
-        if (player.geSlots[slot] == null) {
-            selectSlot(-1)
+    }
+
+    private fun ProtectedAccess.collectAll(toBank: Boolean) {
+        for (slot in 0 until GeSlot.SLOT_COUNT) {
+            collect(slot, toBank = toBank, noted = true)
+        }
+    }
+
+    /* Collection box (interface 402): opened by GE booth "Collect" and by bankers' "Collect". */
+
+    private fun ProtectedAccess.openCollectionBox() {
+        ifOpenMainModal(GeInterfaces.collect)
+    }
+
+    private fun Player.onCollectionBoxOpen() {
+        for (slot in 0 until GeSlot.SLOT_COUNT) {
+            refreshSlot(slot)
+            startInvTransmit(collectInv(slot))
+            ifSetEvents(
+                GeComponents.collectbox_slots[slot],
+                GeConstants.COLLECTBOX_ITEM..GeConstants.COLLECTBOX_COINS,
+                IfEvent.Op1,
+                IfEvent.Op2,
+                IfEvent.Op3,
+                IfEvent.Op10,
+            )
+        }
+    }
+
+    private fun Player.onCollectionBoxClose() {
+        for (slot in 0 until GeSlot.SLOT_COUNT) {
+            stopInvTransmit(collectInv(slot))
         }
     }
 

@@ -14,6 +14,8 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 internal object GeInterfaces : InterfaceReferences() {
     val offers = find("ge_offers")
     val offers_side = find("ge_offers_side")
+    /** Collection box (also opened by bankers' "Collect"). */
+    val collect = find("ge_collect")
 }
 
 internal object GeComponents : ComponentReferences() {
@@ -43,6 +45,20 @@ internal object GeComponents : ComponentReferences() {
     val setup_confirm = find("ge_offers:setup_confirm")
 
     val side_items = find("ge_offers_side:items")
+
+    val collectbox_inv = find("ge_collect:collect_inv")
+    val collectbox_bank = find("ge_collect:collect_bank")
+    val collectbox_slots =
+        listOf(
+            find("ge_collect:collect_0"),
+            find("ge_collect:collect_1"),
+            find("ge_collect:collect_2"),
+            find("ge_collect:collect_3"),
+            find("ge_collect:collect_4"),
+            find("ge_collect:collect_5"),
+            find("ge_collect:collect_6"),
+            find("ge_collect:collect_7"),
+        )
 }
 
 internal object GeVarBits : VarBitReferences() {
@@ -121,4 +137,8 @@ internal object GeConstants {
     /** details_collect cc children: collect inv index 0 / 1. */
     const val DETAILS_COLLECT_ITEM = 2
     const val DETAILS_COLLECT_COINS = 3
+
+    /** ge_collect:collect_N cc children (`ge_collect_initslot`): collect inv index 0 / 1. */
+    const val COLLECTBOX_ITEM = 3
+    const val COLLECTBOX_COINS = 4
 }
