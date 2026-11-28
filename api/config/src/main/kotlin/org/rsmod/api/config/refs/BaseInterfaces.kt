@@ -13,9 +13,11 @@ object BaseInterfaces : InterfaceReferences() {
     val bank_side = find("bankside", 1999686874)
     val bankpin_settings = find("bankpin_settings", 642937557)
 
-    val toplevel = find("toplevel", 9223372034726091525)
-    val toplevel_osrs_stretch = find("toplevel_osrs_stretch", 9223372035990794041)
-    val toplevel_pre_eoc = find("toplevel_pre_eoc", 9223372034871006052)
+    // No identity hashes: BankAnywhereEdits (ComponentEditor) edits their inventory stone, which
+    // changes the interface hash too.
+    val toplevel = find("toplevel")
+    val toplevel_osrs_stretch = find("toplevel_osrs_stretch")
+    val toplevel_pre_eoc = find("toplevel_pre_eoc")
 
     val buff_bar = find("buff_bar", 9223372034871751765)
     val stat_boosts_hud = find("stat_boosts_hud", 1593617132)
