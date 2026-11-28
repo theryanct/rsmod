@@ -1,0 +1,58 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Denulth</col> in his tent in <col=800000>Burthorpe</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Troll #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	10	After starting the quest
+line	<col=000080>I spoke to <col=800000>Denulth</col> in <col=800000>Burthorpe</col>. The trolls have been raiding from <col=800000>Death Plateau</col> and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is. I should ask <col=800000>Sergeant Eohric</col> in the castle who was on guard last.</col>
+step	2	20	After speaking to Eohric
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<col=000080><col=800000>Sergeant Eohric</col> told me that <col=800000>Harold</col> was the last guard on duty in the equipment room. He is off duty and can usually be found in the <col=800000>Toad and Chicken</col> inn. I should go and talk to <col=800000>Harold</col>.</col>
+step	3	30	After speaking to Harold
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+line	<col=000080>I found <col=800000>Harold</col> upstairs in the <col=800000>Toad and Chicken</col>. He wasn't very talkative, but he likes a drink and a gamble. Perhaps an <col=800000>Asgarnian ale</col> will loosen his tongue, and if I beat him at dice he might pay me with something useful. The combination is a set of coloured stone balls placed on the mechanism by the equipment room door.</col>
+step	4	40	After opening the equipment room
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+line	<str>I found Harold upstairs in the Toad and Chicken. He wasn't very talkative, but he likes a drink and a gamble.</str>
+line	<col=000080>I beat <col=800000>Harold</col> at dice until he ran out of money, and he paid me with an <col=800000>IOU</col> that had the combination written on the back. I placed the stone balls on the mechanism and opened the equipment room. <col=800000>Denulth</col> would rather avoid the trolls' path altogether, though. A hermit named <col=800000>Saba</col> lives in a cave on the mountain and might know another way up.</col>
+step	5	50	After speaking to Saba
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+line	<str>I found Harold upstairs in the Toad and Chicken. He wasn't very talkative, but he likes a drink and a gamble.</str>
+line	<str>I beat Harold at dice until he ran out of money, and he paid me with an IOU that had the combination written on the back. I placed the stone balls on the mechanism and opened the equipment room. Denulth would rather avoid the trolls' path altogether, though.</str>
+line	<col=000080><col=800000>Saba</col> told me about <col=800000>Tenzing</col> the Sherpa, who knows a secret way up the mountain. <col=800000>Tenzing</col> needs <col=800000>Spiked boots</col> for the climb. I should take his climbing boots to <col=800000>Dunstan</col> the smith in <col=800000>Burthorpe</col>. He will spike them for an <col=800000>Iron bar</col> if his son can join the Imperial Guard, so I will need a certificate from <col=800000>Denulth</col>.</col>
+step	6	60	After getting the spiked boots
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+line	<str>I found Harold upstairs in the Toad and Chicken. He wasn't very talkative, but he likes a drink and a gamble.</str>
+line	<str>I beat Harold at dice until he ran out of money, and he paid me with an IOU that had the combination written on the back. I placed the stone balls on the mechanism and opened the equipment room. Denulth would rather avoid the trolls' path altogether, though.</str>
+line	<str>Saba told me about Tenzing the Sherpa, who knows a secret way up the mountain. Tenzing needs Spiked boots for the climb.</str>
+line	<col=000080><col=800000>Dunstan</col> spiked the boots for me. I should give them to <col=800000>Tenzing</col>, along with 10 loaves of <col=800000>Bread</col> and 10 <col=800000>Trout</col> for his trouble.</col>
+step	7	70	After getting the map
+line	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+line	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+line	<str>I found Harold upstairs in the Toad and Chicken. He wasn't very talkative, but he likes a drink and a gamble.</str>
+line	<str>I beat Harold at dice until he ran out of money, and he paid me with an IOU that had the combination written on the back. I placed the stone balls on the mechanism and opened the equipment room. Denulth would rather avoid the trolls' path altogether, though.</str>
+line	<str>Saba told me about Tenzing the Sherpa, who knows a secret way up the mountain. Tenzing needs Spiked boots for the climb.</str>
+line	<str>Dunstan spiked the boots for me.</str>
+line	<col=000080>I gave <col=800000>Tenzing</col> the spiked boots and his food, and he drew me a map of the secret way up the mountain. I should take the map and the combination to <col=800000>Denulth</col>.</col>
+done	<str>I spoke to Denulth in Burthorpe. The trolls have been raiding from Death Plateau and the Imperial Guard's equipment room is locked: nobody can remember its combination. He asked me to find out what it is.</str>
+done	<str>Sergeant Eohric told me that Harold was the last guard on duty in the equipment room. He is off duty and can usually be found in the Toad and Chicken inn.</str>
+done	<str>I found Harold upstairs in the Toad and Chicken. He wasn't very talkative, but he likes a drink and a gamble.</str>
+done	<str>I beat Harold at dice until he ran out of money, and he paid me with an IOU that had the combination written on the back. I placed the stone balls on the mechanism and opened the equipment room. Denulth would rather avoid the trolls' path altogether, though.</str>
+done	<str>Saba told me about Tenzing the Sherpa, who knows a secret way up the mountain. Tenzing needs Spiked boots for the climb.</str>
+done	<str>Dunstan spiked the boots for me.</str>
+done	<str>I gave Tenzing the spiked boots and his food, and he drew me a map of the secret way up the mountain.</str>
+done	<str>I took the secret way map and the combination to Denulth, who now has a path past the trolls.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,26 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to the <col=800000>Odd Old Man</col> in <col=800000>Silvarea</col>, north-east of <col=800000>Varrock</col> by the <col=800000>Limestone Mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Rag and Bone Man #2</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2006</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Rag and Bone Man I
+req	Skippy and the Mogres
+req	Level 40 Slayer
+before	<col=800000>Partial completion of Creature of Fenkenstrain</col>
+before	<col=800000>The ability to kill several high-level monsters</col>
+before	
+before	<col=000080>Recommendations:</col>
+req	Level 20 Defence
+step	1	1	After starting the quest
+line	<col=000080>The <col=800000>Odd Old Man</col> in <col=800000>Silvarea</col> wants to complete his collection, and gave me a much longer wish list of bones to bring him, polished in vinegar just as before. I should check the list on the wall of his hut to see which bones he still needs, and hand them in as I polish them.</col>
+done	<str>The Odd Old Man in Silvarea wants to complete his collection, and gave me a much longer wish list of bones to bring him, polished in vinegar just as before.</str>
+done	<str>I brought every bone on the Odd Old Man's wish list, and his collection is finally complete.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

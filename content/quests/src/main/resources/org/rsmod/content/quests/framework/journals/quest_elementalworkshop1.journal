@@ -1,0 +1,21 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by searching the bookcase in the house just south-west of the <col=800000>Seers' Village</col> bank.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Elemental Workshop #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Mining
+req	Level 20 Smithing
+req	Level 20 Crafting
+step	1	1	After reading the book
+line	<col=000080>I found a <col=800000>Battered book</col> in a bookcase in <col=800000>Seers' Village</col>. It told of an old elemental workshop hidden somewhere nearby. Something might be hidden inside the book's cover. I should open the workshop beneath the anvil house, restart the water wheel and the bellows, and smelt some <col=800000>Elemental ore</col> with lava from the trough and coal. With the slashed book's instructions, the workbench should let me forge an elemental shield.</col>
+done	<str>I found a Battered book in a bookcase in Seers' Village. It told of an old elemental workshop hidden somewhere nearby.</str>
+done	<str>I restarted the Elemental Workshop and forged an Elemental shield from elemental metal.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

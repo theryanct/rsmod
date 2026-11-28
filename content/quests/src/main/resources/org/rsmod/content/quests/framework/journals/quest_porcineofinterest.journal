@@ -1,0 +1,58 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by reading the notice board in <col=800000>Draynor Village</col>, behind <col=800000>Fortunato</col>'s wine shop.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2020</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	5	After reading the notice board
+line	<col=000080>I read a bounty on the <col=800000>Draynor Village</col> notice board about a monster attacking travellers near the crossroads. <col=800000>Sarah</col> at the farm south of <col=800000>Falador</col> posted it; I should speak to her.</col>
+step	2	10	After speaking to Sarah
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<col=000080><col=800000>Sarah</col> told me a monster wrecked her cart near the <col=800000>Draynor</col> crossroads. I should follow the trail of produce and broken trees to see where it went.</col>
+step	3	15	After tying the rope
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+line	<col=000080>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down. I should climb down into the cave and look around.</col>
+step	4	20	After being knocked out
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+line	<str>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down.</str>
+line	<col=000080>In the cave I found a skeleton, but the <col=800000>Sourhog</col> knocked me out. <col=800000>Spria</col>, a slayer master, carried me back to her house in <col=800000>Draynor Village</col>. I should talk to <col=800000>Spria</col> about the beast.</col>
+step	5	25	After receiving the goggles
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+line	<str>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down.</str>
+line	<str>In the cave I found a skeleton, but the Sourhog knocked me out. Spria, a slayer master, carried me back to her house in Draynor Village.</str>
+line	<col=000080><col=800000>Spria</col> gave me a pair of <col=800000>Reinforced goggles</col> to protect me from the <col=800000>Sourhog</col>'s stench. With them on, I should go back into the cave, kill the <col=800000>Sourhog</col> and cut off its foot as proof.</col>
+step	6	30	After killing the Sourhog
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+line	<str>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down.</str>
+line	<str>In the cave I found a skeleton, but the Sourhog knocked me out. Spria, a slayer master, carried me back to her house in Draynor Village.</str>
+line	<str>Spria gave me a pair of Reinforced goggles to protect me from the Sourhog's stench.</str>
+line	<col=000080>I killed the <col=800000>Sourhog</col> in its cave. I should cut off its foot and take it to <col=800000>Sarah</col> to claim the bounty.</col>
+step	7	35	After claiming the bounty
+line	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+line	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+line	<str>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down.</str>
+line	<str>In the cave I found a skeleton, but the Sourhog knocked me out. Spria, a slayer master, carried me back to her house in Draynor Village.</str>
+line	<str>Spria gave me a pair of Reinforced goggles to protect me from the Sourhog's stench.</str>
+line	<str>I killed the Sourhog in its cave.</str>
+line	<col=000080>I gave <col=800000>Sarah</col> the <col=800000>Sourhog foot</col> and she paid me the bounty. I should let <col=800000>Spria</col> know how it went.</col>
+done	<str>I read a bounty on the Draynor Village notice board about a monster attacking travellers near the crossroads.</str>
+done	<str>Sarah told me a monster wrecked her cart near the Draynor crossroads.</str>
+done	<str>The trail led north-east to a strange hole in the ground. I tied a rope to it so I can climb down.</str>
+done	<str>In the cave I found a skeleton, but the Sourhog knocked me out. Spria, a slayer master, carried me back to her house in Draynor Village.</str>
+done	<str>Spria gave me a pair of Reinforced goggles to protect me from the Sourhog's stench.</str>
+done	<str>I killed the Sourhog in its cave.</str>
+done	<str>I gave Sarah the Sourhog foot and she paid me the bounty.</str>
+done	<str>I told Spria that the Sourhog was dead, and she was impressed with my work.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

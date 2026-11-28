@@ -1,0 +1,93 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Wizard Persten</col> north of <col=800000>Al Kharid</col>, near the gate from <col=800000>Lumbridge</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Order of Wizards #3</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2022</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>Enter the Abyss</col>
+req	Rune Mysteries
+req	Level 10 Runecraft
+step	1	10	After starting the quest
+line	<col=000080><col=800000>Wizard Persten</col> lent me an <col=800000>Eye amulet</col>. She wants me to show it to the <col=800000>Mage of Zamorak</col> in <col=800000>Varrock</col>.</col>
+step	2	20	After showing the amulet
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<col=000080>The <col=800000>Mage of Zamorak</col> looked at the amulet. He wants a strong cup of tea from the <col=800000>Tea Seller</col> before he'll help.</col>
+step	3	40	After entering the Abyss
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<col=000080>The <col=800000>Mage of Zamorak</col> drank the tea and teleported me into the <col=800000>Abyss</col>. I should find the <col=800000>Dark Mage</col>.</col>
+step	4	50	After raising the energies
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<col=000080>I used a bucket of water and the amulet near the <col=800000>Dark Mage</col> and six runic energies appeared. I should touch each of them.</col>
+step	5	60	After getting the incantation
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<col=000080>The <col=800000>Dark Mage</col> gave me an abyssal incantation. I should take it to <col=800000>Wizard Persten</col>.</col>
+step	6	62	After returning to Persten
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<str>The Dark Mage gave me an abyssal incantation.</str>
+line	<col=000080><col=800000>Wizard Persten</col> copied the incantation and teleported me to the <col=800000>Wizards' Tower</col>. I should take it to <col=800000>Archmage Sedridor</col>.</col>
+step	7	70	After speaking to Sedridor
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<str>The Dark Mage gave me an abyssal incantation.</str>
+line	<str>Wizard Persten copied the incantation and teleported me to the Wizards' Tower.</str>
+line	<col=000080><col=800000>Archmage Sedridor</col> took the incantation. <col=800000>Wizard Traiborn</col> needs help with his apprentices' riddles.</col>
+step	8	80	After solving the riddle
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<str>The Dark Mage gave me an abyssal incantation.</str>
+line	<str>Wizard Persten copied the incantation and teleported me to the Wizards' Tower.</str>
+line	<str>Archmage Sedridor took the incantation.</str>
+line	<col=000080>I solved the apprentices' riddle. I should go back to <col=800000>Archmage Sedridor</col>.</col>
+step	9	85	After Sedridor agrees
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<str>The Dark Mage gave me an abyssal incantation.</str>
+line	<str>Wizard Persten copied the incantation and teleported me to the Wizards' Tower.</str>
+line	<str>Archmage Sedridor took the incantation.</str>
+line	<str>I solved the apprentices' riddle.</str>
+line	<col=000080><col=800000>Archmage Sedridor</col> is ready to cast the incantation in the tower's basement. I should tell him when I am ready.</col>
+step	10	90	After opening the portal
+line	<str>Wizard Persten lent me an Eye amulet.</str>
+line	<str>The Mage of Zamorak looked at the amulet.</str>
+line	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+line	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+line	<str>The Dark Mage gave me an abyssal incantation.</str>
+line	<str>Wizard Persten copied the incantation and teleported me to the Wizards' Tower.</str>
+line	<str>Archmage Sedridor took the incantation.</str>
+line	<str>I solved the apprentices' riddle.</str>
+line	<str>Archmage Sedridor is ready to cast the incantation in the tower's basement.</str>
+line	<col=000080>The portal opened in the <col=800000>Wizards' Tower</col> basement. I should step through it.</col>
+done	<str>Wizard Persten lent me an Eye amulet.</str>
+done	<str>The Mage of Zamorak looked at the amulet.</str>
+done	<str>The Mage of Zamorak drank the tea and teleported me into the Abyss.</str>
+done	<str>I used a bucket of water and the amulet near the Dark Mage and six runic energies appeared.</str>
+done	<str>The Dark Mage gave me an abyssal incantation.</str>
+done	<str>Wizard Persten copied the incantation and teleported me to the Wizards' Tower.</str>
+done	<str>Archmage Sedridor took the incantation.</str>
+done	<str>I solved the apprentices' riddle.</str>
+done	<str>Archmage Sedridor is ready to cast the incantation in the tower's basement.</str>
+done	<str>The portal opened in the Wizards' Tower basement.</str>
+done	<str>I passed through the portal into the Temple of the Eye and helped the wizards take on the Guardians of the Rift.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

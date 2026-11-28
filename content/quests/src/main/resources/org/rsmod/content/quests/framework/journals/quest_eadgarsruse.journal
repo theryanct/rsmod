@@ -1,0 +1,94 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Sanfew</col> upstairs in the herbalist shop in <col=800000>Taverley</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Troll #3</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Druidic Ritual
+req	Troll Stronghold
+req	Death Plateau
+req	Level 31 Herblore
+step	1	10	After starting the quest
+line	<col=000080><col=800000>Sanfew</col> in <col=800000>Taverley</col> needs <col=800000>Goutweed</col> to cure a troll-made sickness, and only the trolls grow it. His friend <col=800000>Eadgar</col>, whom I freed from the troll prison, lives in a cave at the top of <col=800000>Trollheim</col>. I should ask <col=800000>Eadgar</col> for help; the trolls' cook, <col=800000>Burntmeat</col>, keeps the goutweed in the <col=800000>Troll Stronghold</col>.</col>
+step	2	20	After speaking to Burntmeat
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<col=000080>I spoke to <col=800000>Burntmeat</col> in the <col=800000>Troll Stronghold</col> kitchen. He wants a tasty human for his stew. I should tell <col=800000>Eadgar</col>.</col>
+step	3	30	After hearing Eadgar's plan
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<col=000080><col=800000>Eadgar</col> has a plan to fool <col=800000>Burntmeat</col>, and the first thing he needs is a parrot. <col=800000>Parroty Pete</col> at <col=800000>Ardougne Zoo</col> might know how to catch one.</col>
+step	4	40	After bringing Eadgar the parrot
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<col=000080>I caught a drunk parrot with <col=800000>Alco-chunks</col> and brought it to <col=800000>Eadgar</col>. He plans to build a fake man: he needs <col=800000>Logs</col>, 10 <col=800000>Grain</col>, 5 <col=800000>Raw chickens</col> and some dirty clothes, and the parrot must learn to talk like a human. I should hide the parrot somewhere in the troll prison where it will hear people talking.</col>
+step	5	50	After hiding the parrot
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<col=000080>I hid the parrot under the torture rack in the troll prison. Now I should gather the supplies for <col=800000>Eadgar</col>. <col=800000>Sanfew</col> says <col=800000>Tegid</col> at the laundry might part with some dirty robes.</col>
+step	6	60	After handing over the supplies
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<str>I hid the parrot under the torture rack in the troll prison.</str>
+line	<col=000080>I gave <col=800000>Eadgar</col> everything he needed for the fake man. He now wants a truth potion to use on the trolls. I should dry a <col=800000>Troll thistle</col> from <col=800000>Trollheim</col>, grind it, and add it to a <col=800000>Ranarr potion (unf)</col>.</col>
+step	7	70	After giving Eadgar the potion
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<str>I hid the parrot under the torture rack in the troll prison.</str>
+line	<str>I gave Eadgar everything he needed for the fake man. He now wants a truth potion to use on the trolls.</str>
+line	<col=000080>I made the troll truth potion and gave it to <col=800000>Eadgar</col>. The parrot should have learned plenty by now; I should fetch it back from the torture rack.</col>
+step	8	80	After fetching the parrot
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<str>I hid the parrot under the torture rack in the troll prison.</str>
+line	<str>I gave Eadgar everything he needed for the fake man. He now wants a truth potion to use on the trolls.</str>
+line	<str>I made the troll truth potion and gave it to Eadgar.</str>
+line	<col=000080>I took the parrot back from the torture rack. It had learned plenty of human talk. I should take it back to <col=800000>Eadgar</col>.</col>
+step	9	90	After receiving the fake man
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<str>I hid the parrot under the torture rack in the troll prison.</str>
+line	<str>I gave Eadgar everything he needed for the fake man. He now wants a truth potion to use on the trolls.</str>
+line	<str>I made the troll truth potion and gave it to Eadgar.</str>
+line	<str>I took the parrot back from the torture rack. It had learned plenty of human talk.</str>
+line	<col=000080><col=800000>Eadgar</col> put the fake man together and gave him a voice. I should take the fake man to <col=800000>Burntmeat</col>.</col>
+step	10	100	After fooling Burntmeat
+line	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+line	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+line	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+line	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+line	<str>I hid the parrot under the torture rack in the troll prison.</str>
+line	<str>I gave Eadgar everything he needed for the fake man. He now wants a truth potion to use on the trolls.</str>
+line	<str>I made the troll truth potion and gave it to Eadgar.</str>
+line	<str>I took the parrot back from the torture rack. It had learned plenty of human talk.</str>
+line	<str>Eadgar put the fake man together and gave him a voice.</str>
+line	<col=000080><col=800000>Burntmeat</col> took the fake man for his stew and let slip that the storeroom key is hidden in a false bottom of the kitchen drawers. I should open the storeroom, take some goutweed from the crate without the guards seeing me, and bring it to <col=800000>Sanfew</col>.</col>
+done	<str>Sanfew in Taverley needs Goutweed to cure a troll-made sickness, and only the trolls grow it. His friend Eadgar, whom I freed from the troll prison, lives in a cave at the top of Trollheim.</str>
+done	<str>I spoke to Burntmeat in the Troll Stronghold kitchen. He wants a tasty human for his stew.</str>
+done	<str>Eadgar has a plan to fool Burntmeat, and the first thing he needs is a parrot.</str>
+done	<str>I caught a drunk parrot with Alco-chunks and brought it to Eadgar. He plans to build a fake man: he needs Logs, 10 Grain, 5 Raw chickens and some dirty clothes, and the parrot must learn to talk like a human.</str>
+done	<str>I hid the parrot under the torture rack in the troll prison.</str>
+done	<str>I gave Eadgar everything he needed for the fake man. He now wants a truth potion to use on the trolls.</str>
+done	<str>I made the troll truth potion and gave it to Eadgar.</str>
+done	<str>I took the parrot back from the torture rack. It had learned plenty of human talk.</str>
+done	<str>Eadgar put the fake man together and gave him a voice.</str>
+done	<str>Burntmeat took the fake man for his stew and let slip that the storeroom key is hidden in a false bottom of the kitchen drawers.</str>
+done	<str>I sneaked the Goutweed out of the trolls' storeroom and gave it to Sanfew.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

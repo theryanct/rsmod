@@ -1,0 +1,19 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Councillor Halgrive</col> outside the <col=800000>East Ardougne</col> church.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Councillor Halgrive</col> told me four plague-infected sheep have escaped north of <col=800000>Ardougne</col>, and gave me some <col=800000>Poisoned sheep feed</col>. I should buy a protective suit from <col=800000>Doctor Orbon</col>, herd the sheep into the enclosure with <col=800000>Farmer Brumty</col>'s cattleprod, poison them, and burn their bones in the incinerator.</col>
+done	<str>Councillor Halgrive told me four plague-infected sheep have escaped north of Ardougne, and gave me some Poisoned sheep feed.</str>
+done	<str>I herded and disposed of all four plagued sheep, and Councillor Halgrive paid me well.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

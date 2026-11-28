@@ -1,0 +1,36 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Denulth</col> in <col=800000>Burthorpe</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Troll #2</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Death Plateau
+req	Level 15 Agility
+before	<col=800000>The ability to defeat a level 113 Troll General</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Denulth</col> told me that the trolls have captured <col=800000>Godric</col>, <col=800000>Dunstan</col>'s son, and taken him to the <col=800000>Troll Stronghold</col>. I agreed to rescue him. I will need <col=800000>Climbing boots</col> from <col=800000>Tenzing</col> to cross the rocks north of <col=800000>Death Plateau</col>.</col>
+step	2	2	After defeating Dad
+line	<str>Denulth told me that the trolls have captured Godric, Dunstan's son, and taken him to the Troll Stronghold. I agreed to rescue him.</str>
+line	<col=000080>I climbed over the rocks into the troll arena, where the troll champion <col=800000>Dad</col> challenged me. I beat him, and the arena's north gate is now open to me. I should head through the troll pass to the <col=800000>Troll Stronghold</col> and find a way into its prison.</col>
+step	3	3	After entering the prison
+line	<str>Denulth told me that the trolls have captured Godric, Dunstan's son, and taken him to the Troll Stronghold. I agreed to rescue him.</str>
+line	<str>I climbed over the rocks into the troll arena, where the troll champion Dad challenged me. I beat him, and the arena's north gate is now open to me.</str>
+line	<col=000080>I fought my way into the <col=800000>Troll Stronghold</col>. One of the <col=800000>Troll Generals</col> dropped a prison key, and I used it on the prison door in <col=800000>Burntmeat</col>'s kitchen. The jailers <col=800000>Twig</col> and <col=800000>Berry</col> carry the cell keys; I need them to free <col=800000>Godric</col> and the other prisoner, <col=800000>Eadgar</col>.</col>
+step	4	4	After freeing Godric
+line	<str>Denulth told me that the trolls have captured Godric, Dunstan's son, and taken him to the Troll Stronghold. I agreed to rescue him.</str>
+line	<str>I climbed over the rocks into the troll arena, where the troll champion Dad challenged me. I beat him, and the arena's north gate is now open to me.</str>
+line	<str>I fought my way into the Troll Stronghold. One of the Troll Generals dropped a prison key, and I used it on the prison door in Burntmeat's kitchen.</str>
+line	<col=000080>I took a cell key from the trolls and freed <col=800000>Godric</col> from his cell. I should also free <col=800000>Eadgar</col>, then return to <col=800000>Dunstan</col> in <col=800000>Burthorpe</col>.</col>
+done	<str>Denulth told me that the trolls have captured Godric, Dunstan's son, and taken him to the Troll Stronghold. I agreed to rescue him.</str>
+done	<str>I climbed over the rocks into the troll arena, where the troll champion Dad challenged me. I beat him, and the arena's north gate is now open to me.</str>
+done	<str>I fought my way into the Troll Stronghold. One of the Troll Generals dropped a prison key, and I used it on the prison door in Burntmeat's kitchen.</str>
+done	<str>I took a cell key from the trolls and freed Godric from his cell.</str>
+done	<str>I freed Godric and Eadgar from the troll prison and told Dunstan that his son was safe.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,49 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Captain Harlan</col> just outside the <col=800000>Lumbridge</col> general store.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	2	After starting the quest
+line	<col=000080><col=800000>Captain Harlan</col> outside the <col=800000>Lumbridge</col> general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame. I should speak to <col=800000>Mudfoot</col>, a goblin south of the cow field.</col>
+step	2	6	After meeting Mudfoot
+line	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+line	<col=000080><col=800000>Mudfoot</col> told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it. We should confront the outlaw at the general store.</col>
+step	3	10	After the confrontation
+line	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+line	<str>Mudfoot told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it.</str>
+line	<col=000080>The ranger at the general store shrugged off <col=800000>Mudfoot</col>'s warhammer, and <col=800000>Captain Harlan</col> explained the combat triangle to me. I should hunt down the outlaws, starting with the ranger by the windmill, and pick the right style to beat each one.</col>
+step	4	14	After beating the ranger
+line	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+line	<str>Mudfoot told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it.</str>
+line	<str>The ranger at the general store shrugged off Mudfoot's warhammer, and Captain Harlan explained the combat triangle to me.</str>
+line	<col=000080>I beat the ranger by the windmill. Next is the mage near the <col=800000>H.A.M. hideout</col>.</col>
+step	5	20	After beating the mage
+line	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+line	<str>Mudfoot told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it.</str>
+line	<str>The ranger at the general store shrugged off Mudfoot's warhammer, and Captain Harlan explained the combat triangle to me.</str>
+line	<str>I beat the ranger by the windmill.</str>
+line	<col=000080>I beat the mage near the <col=800000>H.A.M. hideout</col>. The last outlaw is an armoured warrior in the graveyard, who prays against melee.</col>
+step	6	26	After beating the warrior
+line	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+line	<str>Mudfoot told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it.</str>
+line	<str>The ranger at the general store shrugged off Mudfoot's warhammer, and Captain Harlan explained the combat triangle to me.</str>
+line	<str>I beat the ranger by the windmill.</str>
+line	<str>I beat the mage near the H.A.M. hideout.</str>
+line	<col=000080>I beat the armoured warrior in the graveyard. I should report back to <col=800000>Captain Harlan</col>.</col>
+done	<str>Captain Harlan outside the Lumbridge general store offered a bounty on whoever has been causing trouble around town. The goblins are getting the blame.</str>
+done	<str>Mudfoot told me some humans dumped their loot on the goblins, and he agreed to come with me to prove it.</str>
+done	<str>The ranger at the general store shrugged off Mudfoot's warhammer, and Captain Harlan explained the combat triangle to me.</str>
+done	<str>I beat the ranger by the windmill.</str>
+done	<str>I beat the mage near the H.A.M. hideout.</str>
+done	<str>I beat the armoured warrior in the graveyard.</str>
+done	<str>I told Captain Harlan the outlaws were beaten and the goblins were cleared of blame.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

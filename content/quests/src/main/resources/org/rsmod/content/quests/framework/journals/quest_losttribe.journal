@@ -1,0 +1,83 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Sigmund</col> in <col=800000>Lumbridge Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Dorgeshuun #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2005</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Goblin Diplomacy
+req	Rune Mysteries
+req	Level 13 Agility
+req	Level 13 Thieving
+req	Level 17 Mining
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Sigmund</col> asked me to find out what happened in the <col=800000>Lumbridge Castle</col> cellar, where a wall has collapsed. I should ask the castle's residents if anyone saw anything.</col>
+step	2	3	After convincing the Duke
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<col=000080>I told the <col=800000>Duke of Lumbridge</col> what the witness saw, and he agreed to an investigation. I should look at the rubble in the cellar.</col>
+step	3	4	After clearing the rubble
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<col=000080>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a <col=800000>Brooch</col>. I should show the brooch to the <col=800000>Duke</col>.</col>
+step	4	5	After showing the brooch
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<col=000080>The <col=800000>Duke</col> didn't recognise the brooch. He suggested <col=800000>Reldo</col> in the <col=800000>Varrock</col> library might know more.</col>
+step	5	6	After reading the book
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<str>The Duke didn't recognise the brooch.</str>
+line	<col=000080>I found 'A History of the Goblin Race' on <col=800000>Reldo</col>'s bookcase. The brooch bears the symbol of the <col=800000>Dorgeshuun</col> tribe. I should tell the <col=800000>Duke</col> what I have learned.</col>
+step	6	7	After telling the Duke
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<str>The Duke didn't recognise the brooch.</str>
+line	<str>I found 'A History of the Goblin Race' on Reldo's bookcase. The brooch bears the symbol of the Dorgeshuun tribe.</str>
+line	<col=000080>I told the <col=800000>Duke</col> about the <col=800000>Dorgeshuun</col> tribe. He suggested the goblin generals in <col=800000>Goblin Village</col> might know more. I should ask <col=800000>General Bentnoze</col> and <col=800000>General Wartface</col> about the old goblin ways.</col>
+step	7	8	After speaking to the generals
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<str>The Duke didn't recognise the brooch.</str>
+line	<str>I found 'A History of the Goblin Race' on Reldo's bookcase. The brooch bears the symbol of the Dorgeshuun tribe.</str>
+line	<str>I told the Duke about the Dorgeshuun tribe. He suggested the goblin generals in Goblin Village might know more.</str>
+line	<col=000080>The generals taught me the old goblin greetings. I should go through the tunnel and greet whoever I find there.</col>
+step	8	9	After meeting Mistag
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<str>The Duke didn't recognise the brooch.</str>
+line	<str>I found 'A History of the Goblin Race' on Reldo's bookcase. The brooch bears the symbol of the Dorgeshuun tribe.</str>
+line	<str>I told the Duke about the Dorgeshuun tribe. He suggested the goblin generals in Goblin Village might know more.</str>
+line	<str>The generals taught me the old goblin greetings.</str>
+line	<col=000080>I met <col=800000>Mistag</col>, a cave goblin from the <col=800000>Dorgeshuun</col>, in the mines beyond the tunnel. Meanwhile, the <col=800000>Duke</col> learned of them, and his silverware has gone missing. I should find out who really took the silverware; <col=800000>Sigmund</col>'s chest might hold some clues.</col>
+step	9	10	After exposing Sigmund
+line	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+line	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+line	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+line	<str>The Duke didn't recognise the brooch.</str>
+line	<str>I found 'A History of the Goblin Race' on Reldo's bookcase. The brooch bears the symbol of the Dorgeshuun tribe.</str>
+line	<str>I told the Duke about the Dorgeshuun tribe. He suggested the goblin generals in Goblin Village might know more.</str>
+line	<str>The generals taught me the old goblin greetings.</str>
+line	<str>I met Mistag, a cave goblin from the Dorgeshuun, in the mines beyond the tunnel. Meanwhile, the Duke learned of them, and his silverware has gone missing.</str>
+line	<col=000080>I showed the <col=800000>Duke</col> the <col=800000>H.A.M.</col> robes from <col=800000>Sigmund</col>'s chest, and <col=800000>Sigmund</col> fled. I should search the <col=800000>H.A.M.</col> hideout for the silverware, then take the <col=800000>Duke</col>'s peace treaty to <col=800000>Mistag</col>.</col>
+done	<str>Sigmund asked me to find out what happened in the Lumbridge Castle cellar, where a wall has collapsed.</str>
+done	<str>I told the Duke of Lumbridge what the witness saw, and he agreed to an investigation.</str>
+done	<str>I cleared the rubble in the cellar with a pickaxe, uncovering a tunnel and a Brooch.</str>
+done	<str>The Duke didn't recognise the brooch.</str>
+done	<str>I found 'A History of the Goblin Race' on Reldo's bookcase. The brooch bears the symbol of the Dorgeshuun tribe.</str>
+done	<str>I told the Duke about the Dorgeshuun tribe. He suggested the goblin generals in Goblin Village might know more.</str>
+done	<str>The generals taught me the old goblin greetings.</str>
+done	<str>I met Mistag, a cave goblin from the Dorgeshuun, in the mines beyond the tunnel. Meanwhile, the Duke learned of them, and his silverware has gone missing.</str>
+done	<str>I showed the Duke the H.A.M. robes from Sigmund's chest, and Sigmund fled.</str>
+done	<str>I returned the silverware to the Duke and took his peace treaty to Mistag, and the Dorgeshuun made peace with Lumbridge.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

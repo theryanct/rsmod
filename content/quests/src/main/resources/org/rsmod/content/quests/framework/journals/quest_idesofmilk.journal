@@ -1,0 +1,68 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Cassius</col> by the <col=800000>Lumbridge</col> pond.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	2	After starting the quest
+line	<col=000080><col=800000>Cassius</col> by the <col=800000>Lumbridge</col> pond wants to know the secrets behind the Groats' famous milk. I should ask <col=800000>Gillie</col> the milkmaid and <col=800000>Seth</col> at the farm what they know.</col>
+step	2	6	After giving Cassius the book
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<col=000080>I found <col=800000>Seth</col>'s book on his shelf and gave it to <col=800000>Cassius</col>. He gave me a sample of his own milk to try. I should drink the sample and tell him what I think.</col>
+step	3	8	After drinking the sample
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<col=000080>The milk sample made me feel rather ill. <col=800000>Cassius</col> gave me a second sample. He wants the <col=800000>Duke of Lumbridge</col> to try it.</col>
+step	4	10	After speaking to the Duke
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+line	<col=000080>The <col=800000>Duke of Lumbridge</col> wasn't keen on the sample. He suggested I ask <col=800000>Gillie</col> for her opinion.</col>
+step	5	12	After speaking to Gillie
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+line	<str>The Duke of Lumbridge wasn't keen on the sample.</str>
+line	<col=000080><col=800000>Gillie</col> was suspicious of the milk. I should drink the second sample beside her.</col>
+step	6	13	After drinking the second sample
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+line	<str>The Duke of Lumbridge wasn't keen on the sample.</str>
+line	<str>Gillie was suspicious of the milk.</str>
+line	<col=000080>I drank the second sample in front of <col=800000>Gillie</col>. She told me an aggressive bull has been penned in the field. I should deal with the bull.</col>
+step	7	14	After defeating Brutus
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+line	<str>The Duke of Lumbridge wasn't keen on the sample.</str>
+line	<str>Gillie was suspicious of the milk.</str>
+line	<str>I drank the second sample in front of Gillie. She told me an aggressive bull has been penned in the field.</str>
+line	<col=000080>I defeated <col=800000>Brutus</col> the bull. I should tell <col=800000>Gillie</col> what happened.</col>
+step	8	16	After speaking to Gillie
+line	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+line	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+line	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+line	<str>The Duke of Lumbridge wasn't keen on the sample.</str>
+line	<str>Gillie was suspicious of the milk.</str>
+line	<str>I drank the second sample in front of Gillie. She told me an aggressive bull has been penned in the field.</str>
+line	<str>I defeated Brutus the bull.</str>
+line	<col=000080><col=800000>Gillie</col> recognised <col=800000>Brutus</col> as <col=800000>Cassius</col>' partner. I should go and confront <col=800000>Cassius</col>.</col>
+done	<str>Cassius by the Lumbridge pond wants to know the secrets behind the Groats' famous milk.</str>
+done	<str>I found Seth's book on his shelf and gave it to Cassius. He gave me a sample of his own milk to try.</str>
+done	<str>The milk sample made me feel rather ill. Cassius gave me a second sample.</str>
+done	<str>The Duke of Lumbridge wasn't keen on the sample.</str>
+done	<str>Gillie was suspicious of the milk.</str>
+done	<str>I drank the second sample in front of Gillie. She told me an aggressive bull has been penned in the field.</str>
+done	<str>I defeated Brutus the bull.</str>
+done	<str>Gillie recognised Brutus as Cassius' partner.</str>
+done	<str>I confronted Cassius by the pond, and his scheme to ruin the Groats came to nothing.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

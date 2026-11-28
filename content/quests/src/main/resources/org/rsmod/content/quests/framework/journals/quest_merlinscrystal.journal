@@ -1,0 +1,49 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>King Arthur</col> in <col=800000>Camelot</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Camelot #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>The ability to defeat a level 39 enemy</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>King Arthur</col> accepted me as a knight-in-waiting, and told me that <col=800000>Merlin</col> has been trapped in a magic crystal. I should ask his knights what they know.</col>
+step	2	2	After speaking to Sir Gawain
+line	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+line	<col=000080><col=800000>Sir Gawain</col> told me that <col=800000>Morgan Le Faye</col> trapped <col=800000>Merlin</col>. I should ask <col=800000>Sir Lancelot</col> how to get into her keep.</col>
+step	3	3	After speaking to Sir Lancelot
+line	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+line	<str>Sir Gawain told me that Morgan Le Faye trapped Merlin.</str>
+line	<col=000080><col=800000>Sir Lancelot</col> suggested sneaking into <col=800000>Keep Le Faye</col>. <col=800000>Arhein</col>'s ship in <col=800000>Catherby</col> delivers crates there. I should hide in one of his crates, then defeat <col=800000>Sir Mordred</col> once I am inside.</col>
+step	4	4	After speaking to Morgan Le Faye
+line	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+line	<str>Sir Gawain told me that Morgan Le Faye trapped Merlin.</str>
+line	<str>Sir Lancelot suggested sneaking into Keep Le Faye. Arhein's ship in Catherby delivers crates there.</str>
+line	<col=000080>I defeated <col=800000>Sir Mordred</col>, and <col=800000>Morgan Le Faye</col> told me how to free <col=800000>Merlin</col>: I need <col=800000>Excalibur</col>, a lit <col=800000>Black candle</col>, <col=800000>Bat bones</col> and the words written at the chaos altar. Then I should perform the ritual on the star in <col=800000>Camelot</col>'s grounds.</col>
+step	5	5	After binding Thrantax
+line	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+line	<str>Sir Gawain told me that Morgan Le Faye trapped Merlin.</str>
+line	<str>Sir Lancelot suggested sneaking into Keep Le Faye. Arhein's ship in Catherby delivers crates there.</str>
+line	<str>I defeated Sir Mordred, and Morgan Le Faye told me how to free Merlin: I need Excalibur, a lit Black candle, Bat bones and the words written at the chaos altar.</str>
+line	<col=000080>I performed the ritual and bound <col=800000>Thrantax</col> with the words from the chaos altar. Now I can use <col=800000>Excalibur</col> to smash the crystal.</col>
+step	6	6	After smashing the crystal
+line	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+line	<str>Sir Gawain told me that Morgan Le Faye trapped Merlin.</str>
+line	<str>Sir Lancelot suggested sneaking into Keep Le Faye. Arhein's ship in Catherby delivers crates there.</str>
+line	<str>I defeated Sir Mordred, and Morgan Le Faye told me how to free Merlin: I need Excalibur, a lit Black candle, Bat bones and the words written at the chaos altar.</str>
+line	<str>I performed the ritual and bound Thrantax with the words from the chaos altar.</str>
+line	<col=000080>I smashed the crystal with <col=800000>Excalibur</col> and freed <col=800000>Merlin</col>. I should tell <col=800000>King Arthur</col>.</col>
+done	<str>King Arthur accepted me as a knight-in-waiting, and told me that Merlin has been trapped in a magic crystal.</str>
+done	<str>Sir Gawain told me that Morgan Le Faye trapped Merlin.</str>
+done	<str>Sir Lancelot suggested sneaking into Keep Le Faye. Arhein's ship in Catherby delivers crates there.</str>
+done	<str>I defeated Sir Mordred, and Morgan Le Faye told me how to free Merlin: I need Excalibur, a lit Black candle, Bat bones and the words written at the chaos altar.</str>
+done	<str>I performed the ritual and bound Thrantax with the words from the chaos altar.</str>
+done	<str>I smashed the crystal with Excalibur and freed Merlin.</str>
+done	<str>I told King Arthur that Merlin was free, and he made me a Knight of the Round Table.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

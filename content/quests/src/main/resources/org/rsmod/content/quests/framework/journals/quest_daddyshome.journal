@@ -1,0 +1,34 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Marlo</col> in the estate agent's house in north-east <col=800000>Varrock</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2020</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Marlo</col> asked me to fix up his dad's house in south-east <col=800000>Varrock</col>, quietly and off the books. I should go and speak to <col=800000>Old Man Yarlo</col>.</col>
+step	2	2	After meeting Yarlo
+line	<str>Marlo asked me to fix up his dad's house in south-east Varrock, quietly and off the books.</str>
+line	<col=000080><col=800000>Old Man Yarlo</col> wants all of his old, broken furniture cleared out first. I should remove each piece of furniture from his house.</col>
+step	3	4	After clearing the house
+line	<str>Marlo asked me to fix up his dad's house in south-east Varrock, quietly and off the books.</str>
+line	<str>Old Man Yarlo wants all of his old, broken furniture cleared out first.</str>
+line	<col=000080>I cleared out the old furniture, and <col=800000>Yarlo</col> explained what he wants built: two stools, two tables, a chair, a carpet and a waxwood bed. The crates in his kitchen hold supplies, and the sawmill operator at the <col=800000>Lumber Yard</col> will turn waxwood logs into planks for me.</col>
+step	4	11	After building the furniture
+line	<str>Marlo asked me to fix up his dad's house in south-east Varrock, quietly and off the books.</str>
+line	<str>Old Man Yarlo wants all of his old, broken furniture cleared out first.</str>
+line	<str>I cleared out the old furniture, and Yarlo explained what he wants built: two stools, two tables, a chair, a carpet and a waxwood bed.</str>
+line	<col=000080>I built all of the new furniture and told <col=800000>Yarlo</col>. I should let <col=800000>Marlo</col> know the job is done.</col>
+done	<str>Marlo asked me to fix up his dad's house in south-east Varrock, quietly and off the books.</str>
+done	<str>Old Man Yarlo wants all of his old, broken furniture cleared out first.</str>
+done	<str>I cleared out the old furniture, and Yarlo explained what he wants built: two stools, two tables, a chair, a carpet and a waxwood bed.</str>
+done	<str>I built all of the new furniture and told Yarlo.</str>
+done	<str>I told Marlo his dad's house was finished, and he rewarded me with a crate of building supplies.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

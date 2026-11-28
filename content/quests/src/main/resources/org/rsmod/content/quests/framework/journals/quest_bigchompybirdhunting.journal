@@ -1,0 +1,52 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Rantz</col> on the eastern coast of the <col=800000>Feldip Hills</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 5 Fletching
+req	Level 30 Cooking
+req	Level 30 Ranged
+before	<col=800000>The ability to defend against level 64 wolves and level 53 ogres</col>
+step	1	10	After starting the quest
+line	<col=000080><col=800000>Rantz</col> the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow. I should fletch him some <col=800000>Ogre arrows</col>. His children <col=800000>Bugs</col> and <col=800000>Fycie</col> can sell me a chisel, a knife and feathers.</col>
+step	2	20	After handing over the arrows
+line	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+line	<col=000080>I gave <col=800000>Rantz</col> six <col=800000>Ogre arrows</col>. He explained that chompies love 'fatsy toadies'. I should take the ogre bellows from the chest in his cave, fill them at the swamp bubbles, inflate a swamp toad and bring it to <col=800000>Rantz</col>.</col>
+step	3	30	After showing Rantz the toad
+line	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+line	<str>I gave Rantz six Ogre arrows. He explained that chompies love 'fatsy toadies'.</str>
+line	<col=000080>I brought <col=800000>Rantz</col> a bloated toad, and he showed me where to put the bait: the clearing south of him. I should drop the toad there and wait for a chompy.</col>
+step	4	40	After the first hunt
+line	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+line	<str>I gave Rantz six Ogre arrows. He explained that chompies love 'fatsy toadies'.</str>
+line	<str>I brought Rantz a bloated toad, and he showed me where to put the bait: the clearing south of him.</str>
+line	<col=000080>I dropped the bloated toad in the clearing and a chompy came for it, but <col=800000>Rantz</col> shot and missed. I should talk to <col=800000>Rantz</col> again.</col>
+step	5	50	After borrowing the bow
+line	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+line	<str>I gave Rantz six Ogre arrows. He explained that chompies love 'fatsy toadies'.</str>
+line	<str>I brought Rantz a bloated toad, and he showed me where to put the bait: the clearing south of him.</str>
+line	<str>I dropped the bloated toad in the clearing and a chompy came for it, but Rantz shot and missed.</str>
+line	<col=000080><col=800000>Rantz</col> lent me his <col=800000>Ogre bow</col>. I should lure another chompy with a bloated toad, shoot it with the bow and pluck it.</col>
+step	6	60	After killing a chompy
+line	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+line	<str>I gave Rantz six Ogre arrows. He explained that chompies love 'fatsy toadies'.</str>
+line	<str>I brought Rantz a bloated toad, and he showed me where to put the bait: the clearing south of him.</str>
+line	<str>I dropped the bloated toad in the clearing and a chompy came for it, but Rantz shot and missed.</str>
+line	<str>Rantz lent me his Ogre bow.</str>
+line	<col=000080>I killed and plucked a chompy bird. <col=800000>Rantz</col> and his children each want it cooked with their favourite ingredient. I should season it with all three ingredients and roast it on the spit-roast north of <col=800000>Rantz</col>.</col>
+done	<str>Rantz the ogre wants to hunt chompy birds, but he needs 'stabbers' for his bow.</str>
+done	<str>I gave Rantz six Ogre arrows. He explained that chompies love 'fatsy toadies'.</str>
+done	<str>I brought Rantz a bloated toad, and he showed me where to put the bait: the clearing south of him.</str>
+done	<str>I dropped the bloated toad in the clearing and a chompy came for it, but Rantz shot and missed.</str>
+done	<str>Rantz lent me his Ogre bow.</str>
+done	<str>I killed and plucked a chompy bird. Rantz and his children each want it cooked with their favourite ingredient.</str>
+done	<str>I cooked a seasoned chompy for Rantz and his family, and they let me hunt chompies with them.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

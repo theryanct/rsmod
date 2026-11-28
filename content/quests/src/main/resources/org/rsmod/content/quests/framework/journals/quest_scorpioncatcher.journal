@@ -1,0 +1,30 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Thormac</col> on the top floor of the <col=800000>Sorcerer's Tower</col>, south-east of the <col=800000>Ranging Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 31 Prayer
+req	Alfred Grimhand's Barcrawl
+before	<col=800000>The ability to run past level 172 black demons and level 64 poison spiders</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Thormac</col> the Sorcerer has lost three of his pet <col=800000>Kharid scorpions</col>. He gave me a <col=800000>Scorpion cage</col> to bring them back in. He suggested a <col=800000>Seer</col> in <col=800000>Seers' Village</col> might be able to tell me where they are.</col>
+step	2	2	After speaking to the Seer
+line	<str>Thormac the Sorcerer has lost three of his pet Kharid scorpions. He gave me a Scorpion cage to bring them back in.</str>
+line	<col=000080>The <col=800000>Seer</col> saw one of the scorpions in <col=800000>Taverley Dungeon</col>, near the coffins and spiders, in a room behind an old wall. I should search the walls there and catch it.</col>
+step	3	3	After catching the first scorpion
+line	<str>Thormac the Sorcerer has lost three of his pet Kharid scorpions. He gave me a Scorpion cage to bring them back in.</str>
+line	<str>The Seer saw one of the scorpions in Taverley Dungeon, near the coffins and spiders, in a room behind an old wall.</str>
+line	<col=000080>I caught the first scorpion in <col=800000>Taverley Dungeon</col>, and the <col=800000>Seer</col> located the other two: one is at the <col=800000>Barbarian Outpost</col> and the other is on the upper floor of the <col=800000>Edgeville Monastery</col>. I should catch them both and return to <col=800000>Thormac</col>.</col>
+done	<str>Thormac the Sorcerer has lost three of his pet Kharid scorpions. He gave me a Scorpion cage to bring them back in.</str>
+done	<str>The Seer saw one of the scorpions in Taverley Dungeon, near the coffins and spiders, in a room behind an old wall.</str>
+done	<str>I caught the first scorpion in Taverley Dungeon, and the Seer located the other two: one is at the Barbarian Outpost and the other is on the upper floor of the Edgeville Monastery.</str>
+done	<str>I caught all three scorpions and returned them to Thormac in his tower.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,118 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Elena</col> in her house in <col=800000>East Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Elf #2</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Plague City
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Elena</col> needs her <col=800000>Distillator</col> back; the Mourners took it when they arrested her. She suggested I speak to <col=800000>Jerico</col>, who lives near the <col=800000>West Ardougne</col> wall.</col>
+step	2	2	After speaking to Jerico
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<col=000080><col=800000>Jerico</col> keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard. I should speak to <col=800000>Omart</col> about getting over the wall.</col>
+step	3	3	After speaking to Omart
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<col=000080><col=800000>Omart</col> will help me over the wall, but he needs a distraction for the Mourners in the watchtower. The pigeons might do the trick.</col>
+step	4	4	After distracting the watchtower
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<col=000080>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners. I should go back to <col=800000>Omart</col>.</col>
+step	5	5	After climbing the wall
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<col=000080><col=800000>Omart</col> gave me a rope ladder and I climbed over the wall into <col=800000>West Ardougne</col>. I need to get into the Mourner headquarters.</col>
+step	6	6	After poisoning the stew
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<col=000080>I put a <col=800000>Rotten apple</col> in the Mourners' stew and they fell ill. I need a way in. A doctor's gown might fool them.</col>
+step	7	7	After finding the gown
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<col=000080>I took a <col=800000>Medical gown</col> from <col=800000>Nurse Sarah</col>'s cupboard. With it on, the Mourners let me into their headquarters. I should look for the <col=800000>Distillator</col> upstairs.</col>
+step	8	8	After finding the distillator
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+line	<col=000080>I killed the sickest Mourner upstairs and took his gate key. The <col=800000>Distillator</col> was in the crate behind the gate. I should take it back to <col=800000>Elena</col>.</col>
+step	9	9	After returning the distillator
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+line	<str>I killed the sickest Mourner upstairs and took his gate key. The Distillator was in the crate behind the gate.</str>
+line	<col=000080><col=800000>Elena</col> tested the <col=800000>Distillator</col> and gave me a plague sample, along with <col=800000>Ethenea</col>, <col=800000>Liquid honey</col> and <col=800000>Sulphuric broline</col>. They must go to <col=800000>Guidor</col> in <col=800000>Varrock</col>. The <col=800000>Chemist</col> in <col=800000>Rimmington</col> can help me, and I must get the vials past the guard at the <col=800000>Varrock</col> gate.</col>
+step	10	11	After collecting the vials
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+line	<str>I killed the sickest Mourner upstairs and took his gate key. The Distillator was in the crate behind the gate.</str>
+line	<str>Elena tested the Distillator and gave me a plague sample, along with Ethenea, Liquid honey and Sulphuric broline. They must go to Guidor in Varrock.</str>
+line	<col=000080>The <col=800000>Chemist</col>'s errand boys smuggled the vials past the guard and gave them back to me at the <col=800000>Dancing Donkey</col> inn in <col=800000>Varrock</col>. I should take the sample and vials to <col=800000>Guidor</col>, wearing a priest gown.</col>
+step	11	12	After seeing Guidor
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+line	<str>I killed the sickest Mourner upstairs and took his gate key. The Distillator was in the crate behind the gate.</str>
+line	<str>Elena tested the Distillator and gave me a plague sample, along with Ethenea, Liquid honey and Sulphuric broline. They must go to Guidor in Varrock.</str>
+line	<str>The Chemist's errand boys smuggled the vials past the guard and gave them back to me at the Dancing Donkey inn in Varrock.</str>
+line	<col=000080><col=800000>Guidor</col> tested the sample and found nothing: there is no plague. I should tell <col=800000>Elena</col>.</col>
+step	12	14	After telling Elena
+line	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+line	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+line	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+line	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+line	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+line	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+line	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+line	<str>I killed the sickest Mourner upstairs and took his gate key. The Distillator was in the crate behind the gate.</str>
+line	<str>Elena tested the Distillator and gave me a plague sample, along with Ethenea, Liquid honey and Sulphuric broline. They must go to Guidor in Varrock.</str>
+line	<str>The Chemist's errand boys smuggled the vials past the guard and gave them back to me at the Dancing Donkey inn in Varrock.</str>
+line	<str>Guidor tested the sample and found nothing: there is no plague.</str>
+line	<col=000080><col=800000>Elena</col> was furious, and sent me to <col=800000>King Lathas</col> in <col=800000>East Ardougne</col>. I should report to the King.</col>
+done	<str>Elena needs her Distillator back; the Mourners took it when they arrested her.</str>
+done	<str>Jerico keeps carrier pigeons in a cage behind his house, and there is bird feed in his cupboard.</str>
+done	<str>Omart will help me over the wall, but he needs a distraction for the Mourners in the watchtower.</str>
+done	<str>I threw bird feed by the watchtower fence and released the pigeons, which distracted the Mourners.</str>
+done	<str>Omart gave me a rope ladder and I climbed over the wall into West Ardougne.</str>
+done	<str>I put a Rotten apple in the Mourners' stew and they fell ill.</str>
+done	<str>I took a Medical gown from Nurse Sarah's cupboard. With it on, the Mourners let me into their headquarters.</str>
+done	<str>I killed the sickest Mourner upstairs and took his gate key. The Distillator was in the crate behind the gate.</str>
+done	<str>Elena tested the Distillator and gave me a plague sample, along with Ethenea, Liquid honey and Sulphuric broline. They must go to Guidor in Varrock.</str>
+done	<str>The Chemist's errand boys smuggled the vials past the guard and gave them back to me at the Dancing Donkey inn in Varrock.</str>
+done	<str>Guidor tested the sample and found nothing: there is no plague.</str>
+done	<str>Elena was furious, and sent me to King Lathas in East Ardougne.</str>
+done	<str>I told King Lathas that the plague was a lie, and he rewarded me for my efforts.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

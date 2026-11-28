@@ -1,0 +1,104 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Lady Servil</col> west of the <col=800000>Ardougne Monastery</col>, just outside the north-east corner of the <col=800000>Gnome Maze</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Mahjarrat #3</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>The ability to defeat level 44, 63 and 137 enemies</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Lady Servil</col> told me that <col=800000>General Khazard</col> has kidnapped her husband and son and forced them to fight in his arena. I need a disguise to get into the arena.</col>
+step	2	2	After getting the armour
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<col=000080>I took a set of <col=800000>Khazard armour</col> from a chest in the guards' quarters. Wearing it, I should talk to the <col=800000>Head Guard</col>.</col>
+step	3	3	After speaking to the Head Guard
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<col=000080>The <col=800000>Head Guard</col> let slip that he loves <col=800000>Khali brew</col>. I should buy some from the <col=800000>Khazard barman</col>.</col>
+step	4	4	After buying the brew
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<col=000080>I bought a bottle of <col=800000>Khali brew</col> from the <col=800000>Khazard barman</col>. I should give it to the <col=800000>Head Guard</col>.</col>
+step	5	5	After getting the keys
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<col=000080>The <col=800000>Head Guard</col> got drunk and handed over the <col=800000>Khazard cell keys</col>. I should free <col=800000>Sammy Servil</col> from his cell.</col>
+step	6	6	After freeing Sammy
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<col=000080>I freed <col=800000>Sammy</col>, but <col=800000>General Khazard</col> caught me and threw me into the arena. I must defeat the <col=800000>Khazard Ogre</col>.</col>
+step	7	8	After defeating the ogre
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+line	<col=000080>I defeated the <col=800000>Khazard Ogre</col>. I should go back into the arena to face the next fight.</col>
+step	8	9	After being jailed
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+line	<str>I defeated the Khazard Ogre.</str>
+line	<col=000080><col=800000>General Khazard</col> had me thrown in jail beside <col=800000>Hengrad</col>. The <col=800000>Khazard Scorpion</col> waits in the arena.</col>
+step	9	10	After defeating the scorpion
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+line	<str>I defeated the Khazard Ogre.</str>
+line	<str>General Khazard had me thrown in jail beside Hengrad.</str>
+line	<col=000080>I defeated the <col=800000>Khazard Scorpion</col>. Next is the <col=800000>Bouncer</col>.</col>
+step	10	11	After defeating the Bouncer
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+line	<str>I defeated the Khazard Ogre.</str>
+line	<str>General Khazard had me thrown in jail beside Hengrad.</str>
+line	<str>I defeated the Khazard Scorpion.</str>
+line	<col=000080>I defeated <col=800000>Bouncer</col>. <col=800000>General Khazard</col> himself will fight me now.</col>
+step	11	13	After defeating General Khazard
+line	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+line	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+line	<str>The Head Guard let slip that he loves Khali brew.</str>
+line	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+line	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+line	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+line	<str>I defeated the Khazard Ogre.</str>
+line	<str>General Khazard had me thrown in jail beside Hengrad.</str>
+line	<str>I defeated the Khazard Scorpion.</str>
+line	<str>I defeated Bouncer.</str>
+line	<col=000080>I defeated <col=800000>General Khazard</col>. I should return to <col=800000>Lady Servil</col>.</col>
+done	<str>Lady Servil told me that General Khazard has kidnapped her husband and son and forced them to fight in his arena.</str>
+done	<str>I took a set of Khazard armour from a chest in the guards' quarters.</str>
+done	<str>The Head Guard let slip that he loves Khali brew.</str>
+done	<str>I bought a bottle of Khali brew from the Khazard barman.</str>
+done	<str>The Head Guard got drunk and handed over the Khazard cell keys.</str>
+done	<str>I freed Sammy, but General Khazard caught me and threw me into the arena.</str>
+done	<str>I defeated the Khazard Ogre.</str>
+done	<str>General Khazard had me thrown in jail beside Hengrad.</str>
+done	<str>I defeated the Khazard Scorpion.</str>
+done	<str>I defeated Bouncer.</str>
+done	<str>I defeated General Khazard.</str>
+done	<str>I returned to Lady Servil with her family safe, and she rewarded me.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,167 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>King Narnode Shareen</col> in the <col=800000>Grand Tree</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Gnome #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 25 Agility
+before	<col=800000>The ability to defeat a level 172 Black demon</col>
+step	1	10	After starting the quest
+line	<col=000080><col=800000>King Narnode Shareen</col> told me the <col=800000>Grand Tree</col> is dying. He gave me a <col=800000>Bark sample</col> and a <col=800000>Translation book</col>. I should take the sample to <col=800000>Hazelmere</col>, who lives on an island east of <col=800000>Yanille</col>.</col>
+step	2	20	After speaking to Hazelmere
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<col=000080><col=800000>Hazelmere</col> examined the bark and wrote me a scroll in the old gnome tongue. I should translate it and tell the King.</col>
+step	3	30	After the translation
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<col=000080>The scroll said a man came to <col=800000>Hazelmere</col> with the King's seal and was given <col=800000>Daconia rocks</col>, which will kill the tree. <col=800000>King Narnode</col> sent me to <col=800000>Glough</col>. I should speak to <col=800000>Glough</col>.</col>
+step	4	40	After speaking to Glough
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<col=000080><col=800000>Glough</col> insisted the humans are planning to invade. There is a prisoner in a cell at the top of the Grand Tree; perhaps he knows more.</col>
+step	5	50	After speaking to Charlie
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<col=000080><col=800000>Charlie</col> the prisoner told me it was <col=800000>Glough</col> who was behind it all. I should tell the King.</col>
+step	6	60	After telling the King
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<col=000080><col=800000>King Narnode</col> refused to believe me. I need proof. <col=800000>Glough</col> might keep something in his house.</col>
+step	7	70	After finding the journal
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<col=000080>I found <col=800000>Glough</col>'s journal in his cupboard. I should confront <col=800000>Glough</col> with it.</col>
+step	8	80	After being arrested
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<col=000080><col=800000>Glough</col> had me arrested. In the cell <col=800000>Charlie</col> gave me the password for the <col=800000>Karamja</col> shipyard: Ka-Lu-Min. I should wait for the King.</col>
+step	9	90	After being freed
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<col=000080><col=800000>King Narnode</col> let me out of the cell. I should look into the shipyard on <col=800000>Karamja</col>; <col=800000>Captain Errdo</col> can fly me there.</col>
+step	10	100	After the glider crash
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<col=000080><col=800000>Captain Errdo</col>'s glider crashed west of the shipyard on <col=800000>Karamja</col>. I should get into the shipyard with the password and find out what <col=800000>Glough</col> is up to.</col>
+step	11	110	After getting the lumber order
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+line	<col=000080>I got into the shipyard and took the lumber order from the <col=800000>Foreman</col>. I should show it to the King.</col>
+step	12	120	After showing the King the order
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+line	<str>I got into the shipyard and took the lumber order from the Foreman.</str>
+line	<col=000080>I showed <col=800000>King Narnode</col> the lumber order, but he still doubts me. <col=800000>Charlie</col> thinks <col=800000>Anita</col> might have a key to <col=800000>Glough</col>'s chest; if I bring the King the invasion plans, he should give me what I need to get into <col=800000>Glough</col>'s watchtower.</col>
+step	13	130	After opening the trapdoor
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+line	<str>I got into the shipyard and took the lumber order from the Foreman.</str>
+line	<str>I showed King Narnode the lumber order, but he still doubts me.</str>
+line	<col=000080>I found <col=800000>Glough</col>'s invasion plans and the King believed me at last. He gave me four twigs, and placed on the watchtower pillars, they opened the trapdoor. I should go down and see what <col=800000>Glough</col> has hidden there.</col>
+step	14	140	After killing the demon
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+line	<str>I got into the shipyard and took the lumber order from the Foreman.</str>
+line	<str>I showed King Narnode the lumber order, but he still doubts me.</str>
+line	<str>I found Glough's invasion plans and the King believed me at last. He gave me four twigs, and placed on the watchtower pillars, they opened the trapdoor.</str>
+line	<col=000080>I killed <col=800000>Glough</col>'s <col=800000>Black demon</col>. I should talk to <col=800000>King Narnode</col>, who is waiting in the tunnels.</col>
+step	15	150	After speaking to the King
+line	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+line	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+line	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+line	<str>Glough insisted the humans are planning to invade.</str>
+line	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+line	<str>King Narnode refused to believe me.</str>
+line	<str>I found Glough's journal in his cupboard.</str>
+line	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+line	<str>King Narnode let me out of the cell.</str>
+line	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+line	<str>I got into the shipyard and took the lumber order from the Foreman.</str>
+line	<str>I showed King Narnode the lumber order, but he still doubts me.</str>
+line	<str>I found Glough's invasion plans and the King believed me at last. He gave me four twigs, and placed on the watchtower pillars, they opened the trapdoor.</str>
+line	<str>I killed Glough's Black demon.</str>
+line	<col=000080><col=800000>King Narnode</col> told me one last <col=800000>Daconia rock</col> is still hidden among the tree's roots. I should search the roots and find it.</col>
+done	<str>King Narnode Shareen told me the Grand Tree is dying. He gave me a Bark sample and a Translation book.</str>
+done	<str>Hazelmere examined the bark and wrote me a scroll in the old gnome tongue.</str>
+done	<str>The scroll said a man came to Hazelmere with the King's seal and was given Daconia rocks, which will kill the tree. King Narnode sent me to Glough.</str>
+done	<str>Glough insisted the humans are planning to invade.</str>
+done	<str>Charlie the prisoner told me it was Glough who was behind it all.</str>
+done	<str>King Narnode refused to believe me.</str>
+done	<str>I found Glough's journal in his cupboard.</str>
+done	<str>Glough had me arrested. In the cell Charlie gave me the password for the Karamja shipyard: Ka-Lu-Min.</str>
+done	<str>King Narnode let me out of the cell.</str>
+done	<str>Captain Errdo's glider crashed west of the shipyard on Karamja.</str>
+done	<str>I got into the shipyard and took the lumber order from the Foreman.</str>
+done	<str>I showed King Narnode the lumber order, but he still doubts me.</str>
+done	<str>I found Glough's invasion plans and the King believed me at last. He gave me four twigs, and placed on the watchtower pillars, they opened the trapdoor.</str>
+done	<str>I killed Glough's Black demon.</str>
+done	<str>King Narnode told me one last Daconia rock is still hidden among the tree's roots.</str>
+done	<str>I found the last Daconia rock and the Grand Tree was saved from Glough's plan.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

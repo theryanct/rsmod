@@ -1,0 +1,49 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Noah</col> or <col=800000>Alina</col> in <col=800000>Varrock</col> square.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Twilight Emissaries #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	2	After starting the quest
+line	<col=000080>In <col=800000>Varrock</col> square I heard about a delegation arriving from <col=800000>Varlamore</col>. One of the guards hurried off with a large bag. I should follow him without being seen and without losing him.</col>
+step	2	8	While tailing the guard
+line	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+line	<col=000080>I set off after the guard, keeping out of sight. I need to see where he takes the bag.</col>
+step	3	10	After overhearing the meeting
+line	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+line	<str>I set off after the guard, keeping out of sight.</str>
+line	<col=000080>I tailed the guard to south-east <col=800000>Varrock</col> and overheard him meeting with a group of bandits. I should report to <col=800000>Sergeant Tobyn</col> in <col=800000>Varrock</col> square.</col>
+step	4	12	After reporting to Tobyn
+line	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+line	<str>I set off after the guard, keeping out of sight.</str>
+line	<str>I tailed the guard to south-east Varrock and overheard him meeting with a group of bandits.</str>
+line	<col=000080><col=800000>Sergeant Tobyn</col> believes some of the guards in the square are bandits in disguise. I should mark the four impostors for him.</col>
+step	5	16	After marking the bandits
+line	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+line	<str>I set off after the guard, keeping out of sight.</str>
+line	<str>I tailed the guard to south-east Varrock and overheard him meeting with a group of bandits.</str>
+line	<str>Sergeant Tobyn believes some of the guards in the square are bandits in disguise.</str>
+line	<col=000080>I picked out the four bandits, and <col=800000>Sergeant Tobyn</col> took me to a cell on the palace roof, where <col=800000>Prince Itzla</col> began questioning the captured bandit. I should watch the interrogation.</col>
+step	6	22	After the interrogation
+line	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+line	<str>I set off after the guard, keeping out of sight.</str>
+line	<str>I tailed the guard to south-east Varrock and overheard him meeting with a group of bandits.</str>
+line	<str>Sergeant Tobyn believes some of the guards in the square are bandits in disguise.</str>
+line	<str>I picked out the four bandits, and Sergeant Tobyn took me to a cell on the palace roof, where Prince Itzla began questioning the captured bandit.</str>
+line	<col=000080><col=800000>Prince Itzla</col> finished questioning the bandit and left. I should talk to <col=800000>Sergeant Tobyn</col>.</col>
+done	<str>In Varrock square I heard about a delegation arriving from Varlamore. One of the guards hurried off with a large bag.</str>
+done	<str>I set off after the guard, keeping out of sight.</str>
+done	<str>I tailed the guard to south-east Varrock and overheard him meeting with a group of bandits.</str>
+done	<str>Sergeant Tobyn believes some of the guards in the square are bandits in disguise.</str>
+done	<str>I picked out the four bandits, and Sergeant Tobyn took me to a cell on the palace roof, where Prince Itzla began questioning the captured bandit.</str>
+done	<str>Prince Itzla finished questioning the bandit and left.</str>
+done	<str>I spoke to Sergeant Tobyn on the palace roof, and learned I would be welcome in Varlamore.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

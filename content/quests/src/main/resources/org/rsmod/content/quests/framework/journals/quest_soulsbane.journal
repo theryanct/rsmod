@@ -1,0 +1,79 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to <col=800000>Launa</col> east of <col=800000>Varrock</col>, just south of the <col=800000>Earth Altar</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2006</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>The ability to defeat level 45+ enemies</col>
+step	1	1	After starting the quest
+line	<col=000080><col=800000>Launa</col> told me that her son <col=800000>Tolna</col> went down into the rift east of <col=800000>Varrock</col> and never came back. I should find a way down into the rift.</col>
+step	2	2	After tying the rope
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<col=000080>I tied a rope to the edge of the rift. I should climb down and look for <col=800000>Tolna</col>.</col>
+step	3	3	In the room of rage
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<col=000080>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them. I need to kill enough of them to fill the rage.</col>
+step	4	4	After the room of rage
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<col=000080>I filled the rage and moved on. The next room is full of dark holes, and something is hiding in them.</col>
+step	5	6	After the room of fear
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<str>I filled the rage and moved on.</str>
+line	<col=000080>I killed the fear reapers hiding in the dark. The next room is full of confusing beasts; only one of them is real.</col>
+step	6	8	After the room of confusion
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<str>I filled the rage and moved on.</str>
+line	<str>I killed the fear reapers hiding in the dark.</str>
+line	<col=000080>I found the real beasts and the last door opened. The final room is full of hopeless creatures.</col>
+step	7	10	After the room of hopelessness
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<str>I filled the rage and moved on.</str>
+line	<str>I killed the fear reapers hiding in the dark.</str>
+line	<str>I found the real beasts and the last door opened.</str>
+line	<col=000080>I defeated the hopeless creatures. I should look for <col=800000>Tolna</col>.</col>
+step	8	11	After defeating Tolna's body
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<str>I filled the rage and moved on.</str>
+line	<str>I killed the fear reapers hiding in the dark.</str>
+line	<str>I found the real beasts and the last door opened.</str>
+line	<str>I defeated the hopeless creatures.</str>
+line	<col=000080>I found <col=800000>Tolna</col>, twisted by the rift, and defeated him in each of his three forms. I should talk to him now he is himself again.</col>
+step	9	12	After freeing Tolna
+line	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+line	<str>I tied a rope to the edge of the rift.</str>
+line	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+line	<str>I filled the rage and moved on.</str>
+line	<str>I killed the fear reapers hiding in the dark.</str>
+line	<str>I found the real beasts and the last door opened.</str>
+line	<str>I defeated the hopeless creatures.</str>
+line	<str>I found Tolna, twisted by the rift, and defeated him in each of his three forms.</str>
+line	<col=000080><col=800000>Tolna</col> was human again and returned to the surface. I should meet him and <col=800000>Launa</col> there.</col>
+done	<str>Launa told me that her son Tolna went down into the rift east of Varrock and never came back.</str>
+done	<str>I tied a rope to the edge of the rift.</str>
+done	<str>Below the rift I found a room full of angry creatures. The rack holds weapons that each hurt only one kind of them.</str>
+done	<str>I filled the rage and moved on.</str>
+done	<str>I killed the fear reapers hiding in the dark.</str>
+done	<str>I found the real beasts and the last door opened.</str>
+done	<str>I defeated the hopeless creatures.</str>
+done	<str>I found Tolna, twisted by the rift, and defeated him in each of his three forms.</str>
+done	<str>Tolna was human again and returned to the surface.</str>
+done	<str>I met Tolna at the surface, reunited with his mother Launa.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

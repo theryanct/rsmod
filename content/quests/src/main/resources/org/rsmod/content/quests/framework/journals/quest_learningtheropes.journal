@@ -1,0 +1,19 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to the <col=800000>Quest Guide</col> on <col=800000>Tutorial Island</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	1	After starting the quest
+line	<col=000080>I arrived on <col=800000>Tutorial Island</col> to learn the basics of life in <col=800000>Gielinor</col> from its guides. I should follow the guides' instructions until I reach the mainland.</col>
+done	<str>I arrived on Tutorial Island to learn the basics of life in Gielinor from its guides.</str>
+done	<str>I learned the ropes on Tutorial Island and set off for the mainland of Gielinor.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

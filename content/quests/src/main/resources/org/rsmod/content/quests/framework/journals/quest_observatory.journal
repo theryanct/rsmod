@@ -1,0 +1,49 @@
+# Authored in OSRS journal style from the OSRS Wiki walkthrough (no Wiki journal transcript); stages pinned to the server's quest states.
+before	<col=000080>I can start this quest by talking to the <col=800000>Observatory professor</col> in the <col=800000>Observatory</col> reception room, north of <col=800000>Castle Wars</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2003</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	1	After starting the quest
+line	<col=000080>The <col=800000>Observatory professor</col> told me goblins wrecked his telescope. He needs 3 <col=800000>Planks</col> to start the repairs.</col>
+step	2	2	After bringing the planks
+line	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+line	<col=000080>I brought the professor three planks. He now needs a <col=800000>Bronze bar</col>.</col>
+step	3	3	After bringing the bronze bar
+line	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+line	<str>I brought the professor three planks.</str>
+line	<col=000080>I brought the professor a bronze bar. He now needs some <col=800000>Molten glass</col>.</col>
+step	4	4	After bringing the molten glass
+line	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+line	<str>I brought the professor three planks.</str>
+line	<str>I brought the professor a bronze bar.</str>
+line	<col=000080>I brought the professor molten glass. The lens mould has been taken to the goblins' dungeon below. I should find the <col=800000>Lens mould</col>. The key to the goblins' kitchen is in one of the chests around the keep.</col>
+step	5	5	After making the lens
+line	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+line	<str>I brought the professor three planks.</str>
+line	<str>I brought the professor a bronze bar.</str>
+line	<str>I brought the professor molten glass. The lens mould has been taken to the goblins' dungeon below.</str>
+line	<col=000080>I found the lens mould in the goblins' kitchen stove and made an <col=800000>Observatory lens</col> with molten glass. I should take it to the professor.</col>
+step	6	6	After fitting the lens
+line	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+line	<str>I brought the professor three planks.</str>
+line	<str>I brought the professor a bronze bar.</str>
+line	<str>I brought the professor molten glass. The lens mould has been taken to the goblins' dungeon below.</str>
+line	<str>I found the lens mould in the goblins' kitchen stove and made an Observatory lens with molten glass.</str>
+line	<col=000080>The professor fitted the lens. I should look through the telescope and tell him which star sign I see.</col>
+done	<str>The Observatory professor told me goblins wrecked his telescope.</str>
+done	<str>I brought the professor three planks.</str>
+done	<str>I brought the professor a bronze bar.</str>
+done	<str>I brought the professor molten glass. The lens mould has been taken to the goblins' dungeon below.</str>
+done	<str>I found the lens mould in the goblins' kitchen stove and made an Observatory lens with molten glass.</str>
+done	<str>The professor fitted the lens.</str>
+done	<str>I looked through the restored telescope and named the constellation for the professor.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>
