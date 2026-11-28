@@ -62,6 +62,7 @@ import org.rsmod.content.quests.porcine.PorcineOfInterest.Companion.PORCINE
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_BONE_MAN_I
+import org.rsmod.content.quests.ragandboneman.RagAndBoneManII.Companion.RAG_AND_BONE_MAN_II
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
@@ -154,6 +155,7 @@ public object BuiltQuests {
             PRIEST_IN_PERIL,
             PRINCE_ALI_RESCUE,
             RAG_AND_BONE_MAN_I,
+            RAG_AND_BONE_MAN_II,
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
