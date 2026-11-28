@@ -52,7 +52,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   rocks will kill the tree!") and sends you to Glough; 40 Glough says humans will invade (Charlie
  *   appears in the top-floor cell); 50 Charlie blames Glough; 60 the King won't believe it; 70
  *   Glough's journal (his cupboard); 80 confronting Glough gets you jailed, Charlie gives the
- *   shipyard password (Ka-Lu-Min) and the King frees you (90); 100 Captain Errdo's glider crashes
+ *   shipyard password (Ka-Lu-Min) and the King lets you out of the cell (90); 100 Captain Errdo's glider crashes
  *   west of the Karamja shipyard; 110 the gate worker's password and the Foreman's questions (or
  *   killing him) give the lumber order; 120 the King still doubts you, Charlie points to Anita (her
  *   key opens Glough's chest: the invasion plans; the King then gives the four twigs); 130 the twigs
@@ -118,14 +118,13 @@ constructor(
         onLocOpLabel(locTypes, GtLocs.cupboard, "Open") { searchCupboard() }
         onLocOpLabel(locTypes, GtLocs.cupboard_open, "Search") { searchCupboard() }
         onLocOpLabel(locTypes, GtLocs.chest, "Open") { openChest() }
-        onLocOpLabel(locTypes, GtLocs.prison_door, "Open") { prisonDoor(it) }
         for (gate in GtLocs.shipyard_gates) onLocOpLabel(locTypes, gate, "Open") { shipyardGate(it) }
         onLocOpLabel(locTypes, GtLocs.climb_tree, "Climb-up") { telejump(player.coords.translateLevel(1)) }
         onLocOpLabel(locTypes, GtLocs.down_tree, "Climb-down") {
             telejump(player.coords.translateLevel(-1))
         }
         onLocOpLabel(locTypes, GtLocs.tower_trapdoor, "Climb-down") { enterTunnel() }
-        onLocOpLabel(locTypes, GtLocs.tunnel_ladder, "Climb-up") { telejump(TOWER_TOP) }
+        onLocOpLabel(locTypes, GtLocs.tunnel_ladder, "Climb-up") { climbTunnelLadder(it) }
         for (root in GtLocs.roots) onLocOpLabel(locTypes, root, "Search") { searchRoot(it) }
         for ((index, pillar) in GtLocs.pillars.withIndex()) {
             for ((twigIndex, twig) in GtObjs.twigs.withIndex()) {
@@ -379,15 +378,18 @@ constructor(
         setState(ARRESTED)
         telejump(CELL)
         runQuestSection(null, dialogue, "Imprisoned", speakers = speakers)
+        // The cell door has no ops in the cache: the King lets you out at the end of his apology.
+        telejump(CELL_EXIT)
         setState(FREED)
     }
 
-    private suspend fun ProtectedAccess.prisonDoor(door: BoundLocInfo) {
-        if (state == ARRESTED) {
-            mes("The door is locked.")
+    /** ladder_broken is a generic loc: only the one under Glough's watchtower leads up. */
+    private suspend fun ProtectedAccess.climbTunnelLadder(ladder: BoundLocInfo) {
+        if (ladder.coords.chebyshevDistance(TUNNEL_LADDER) > 1) {
+            mes("I can't climb this.")
             return
         }
-        passThroughWall(door)
+        telejump(TOWER_TOP)
     }
 
     private suspend fun ProtectedAccess.searchCupboard() {
@@ -617,6 +619,8 @@ constructor(
         private const val DROP_TICKS = 200
 
         private val CELL = CoordGrid(2463, 3496, 3)
+        private val CELL_EXIT = CoordGrid(2466, 3496, 3)
+        private val TUNNEL_LADDER = CoordGrid(2492, 9864, 0)
         private val CRASH_SITE = CoordGrid(2917, 3053, 0)
         private val TOWER_TOP = CoordGrid(2486, 3464, 2)
         private val TUNNEL_ARRIVAL = CoordGrid(2491, 9864, 0)
@@ -730,7 +734,6 @@ internal object GtLocs : LocReferences() {
     val cupboard = find("grandtree_cupboardclosed")
     val cupboard_open = find("grandtree_cupboardopen")
     val chest = find("grandtree_chestclosed")
-    val prison_door = find("grandtree_prisondoor")
     val shipyard_gates = listOf(find("grandtree_fencegate_l"), find("grandtree_fencegate_r"))
     val climb_tree = find("grandtree_climbtree")
     val down_tree = find("grandtree_downtree")
