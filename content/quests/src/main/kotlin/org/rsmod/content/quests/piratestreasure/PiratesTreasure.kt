@@ -26,6 +26,7 @@ import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.onHeldOpLabel
 import org.rsmod.content.quests.framework.onLocOpLabel
 import org.rsmod.content.quests.framework.onNpcOpLabel
+import org.rsmod.content.quests.framework.passThroughWall
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -345,10 +346,7 @@ constructor(
             }
             return
         }
-        // The door faces east-west: step to the other side.
-        val at = door.coords
-        telejump(at.translate(if (player.coords.x < at.x) 1 else -1, 0))
-        delay(1)
+        passThroughWall(door)
     }
 
     private fun ProtectedAccess.searchGroceryCrate() {

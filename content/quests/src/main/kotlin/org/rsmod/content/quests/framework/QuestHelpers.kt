@@ -95,6 +95,26 @@ public fun ScriptContext.onHeldOpLabel(
     return true
 }
 
+/**
+ * Steps the player through wall-shaped [door] to the tile on its other side (rotation 0 west
+ * edge, 1 north, 2 east, 3 south), for quest doors that never visibly open.
+ */
+public suspend fun ProtectedAccess.passThroughWall(door: BoundLocInfo) {
+    val at = door.coords
+    val (outside, inside) =
+        when (door.angleId and 3) {
+            0 -> at.translate(-1, 0) to at
+            1 -> at to at.translate(0, 1)
+            2 -> at to at.translate(1, 0)
+            else -> at.translate(0, -1) to at
+        }
+    val here = player.coords
+    val dest =
+        if (here.chebyshevDistance(outside) <= here.chebyshevDistance(inside)) inside else outside
+    telejump(dest)
+    delay(1)
+}
+
 /** Hooks from lambdas, for quests that only need a few conditions and side effects. */
 public class SimpleQuestHooks(
     private val conditions: Map<String, () -> Boolean> = emptyMap(),
@@ -126,12 +146,13 @@ public suspend fun ProtectedAccess.runQuestSection(
     dialogue: QuestDialogue,
     section: String,
     hooks: QuestDialogueHooks = SimpleQuestHooks(),
+    speakers: Map<String, NpcType> = emptyMap(),
 ) {
     val nodes = dialogue.section(section)
     if (npc != null) {
-        startDialogue(npc) { QuestDialogueRunner(hooks).run(this, nodes) }
+        startDialogue(npc) { QuestDialogueRunner(hooks, speakers).run(this, nodes) }
     } else {
-        startDialogue { QuestDialogueRunner(hooks).run(this, nodes) }
+        startDialogue { QuestDialogueRunner(hooks, speakers).run(this, nodes) }
     }
 }
 
