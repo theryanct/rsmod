@@ -102,7 +102,7 @@ internal object TemporossTuning {
     const val ATTACK_MIN_ENERGY_PCT = 10
     const val WAVE_FIRST = 90
     const val WAVE_INTERVAL = 110
-    const val WAVE_WARN = 10
+    const val WAVE_WARN = 18
     const val WAVE_LENGTH = 6
     /** cs2 4068/4069 arg: overlay fade length in client cycles (~30 per game tick). Authored. */
     const val WAVE_FADE = 60
