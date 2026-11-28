@@ -33,6 +33,8 @@ internal enum class ClueKind(val table: String) {
     /** Charlie the Tramp's item requests (beginner). */
     SkillChallenge("cluehelper_clue_skillchallenge"),
     Music("cluehelper_clue_music"),
+    Cipher("cluehelper_clue_cipher"),
+    Coordinate("cluehelper_clue_coordinate"),
 }
 
 /** Where a step is solved (the cluehelper_target_* row it points at). */
@@ -54,7 +56,16 @@ internal sealed class ClueTarget {
                 coords.z in sw.z..ne.z
     }
 
-    /** A target kind not implemented yet (key/kill steps of higher tiers). */
+    /** Kill one of [npcs] for [key], then open [locs] near [coord] with it. */
+    data class Key(
+        val locs: Set<Int>,
+        val coord: CoordGrid,
+        val npcs: Set<Int>,
+        val key: Int,
+        val description: String,
+    ) : ClueTarget()
+
+    /** A target kind not implemented yet (kill steps of higher tiers). */
     data object Unsupported : ClueTarget()
 }
 
@@ -65,8 +76,8 @@ internal class ClueStep(
     val tier: ClueTier,
     val text: String,
     val target: ClueTarget,
-    /** Emote steps: the emote list slot (enum `emote_names`), else -1. */
-    val emote: Int = -1,
+    /** Emote steps: the emote list slots (enum `emote_names`) to perform, in order. */
+    val emotes: List<Int> = emptyList(),
     /** Emote steps: objs that must be worn (one per slot), empty if none. */
     val outfit: List<Int> = emptyList(),
     /** Easy+ emote steps: the STASH unit loc and its coord. */
@@ -74,7 +85,17 @@ internal class ClueStep(
     val stashCoord: CoordGrid? = null,
     /** Music steps: the `music` dbrow of the track to play (text = where it's unlocked). */
     val music: Int? = null,
-)
+    /** The npc's challenge question and its numeric answer, if any. */
+    val question: Pair<String, Int>? = null,
+    /** The npc hands out a puzzle box / light box first (not implemented yet). */
+    val boxChallenge: Boolean = false,
+    /** A fight before the step completes (double agents, wizards; not implemented yet). */
+    val combat: Boolean = false,
+) {
+    /** Implemented: a supported target and no box challenge or fight. */
+    val isSupported: Boolean
+        get() = target != ClueTarget.Unsupported && !boxChallenge && !combat
+}
 
 /**
  * Every clue step, read at startup from the 243 cache's clue-helper db tables (Jagex's own data:
@@ -82,9 +103,7 @@ internal class ClueStep(
  */
 internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
     fun ofTier(tier: ClueTier, kinds: Set<ClueKind>): List<ClueStep> =
-        byRow.values.filter {
-            it.tier == tier && it.kind in kinds && it.target != ClueTarget.Unsupported
-        }
+        byRow.values.filter { it.tier == tier && it.kind in kinds && it.isSupported }
 
     companion object {
         fun load(rows: DbRowTypeList, tables: Map<String, Int>): ClueSteps {
@@ -119,6 +138,14 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                         )
                     "cluehelper_target_coord" ->
                         ClueTarget.Coord(CoordGrid(row.int(0) ?: 0), row.string(1).orEmpty())
+                    "cluehelper_target_key" ->
+                        ClueTarget.Key(
+                            locs = row.ints(0).toSet(),
+                            coord = CoordGrid(row.int(1) ?: 0),
+                            npcs = row.ints(2).toSet(),
+                            key = row.int(3) ?: -1,
+                            description = row.string(7).orEmpty(),
+                        )
                     "cluehelper_target_mapzone" ->
                         ClueTarget.Zone(
                             sw = CoordGrid(row.int(0) ?: 0),
@@ -129,19 +156,79 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                 }
             }
 
+            /** A challenge row: (question, answer) for questions; boxes are flagged. */
+            fun question(rowId: Int?): Pair<String, Int>? {
+                val row = rows[rowId ?: return null] ?: return null
+                if (table(row) != "cluehelper_challenge_question") {
+                    return null
+                }
+                val values = row.data[0].orEmpty()
+                val text = values.filterIsInstance<String>().firstOrNull() ?: return null
+                val answer = values.filterIsInstance<Int>().firstOrNull() ?: return null
+                return text to answer
+            }
+            fun isBox(rowId: Int?): Boolean =
+                table(rows[rowId ?: return false]) == "cluehelper_challenge_box"
+
             val steps = HashMap<Int, ClueStep>()
             for ((id, row) in rows) {
                 val kind = ClueKind.entries.firstOrNull { it.table == table(row) } ?: continue
                 val tier = ClueTier.byDifficulty(row.int(DIFFICULTY) ?: continue) ?: continue
+                // Column layouts: see .data/symbols/dbcol.sym (cluehelper_clue_*).
                 steps[id] =
                     when (kind) {
-                        ClueKind.Anagram,
+                        ClueKind.Anagram ->
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(2),
+                                target(row.int(3)),
+                                question = question(row.int(4)),
+                                boxChallenge = isBox(row.int(4)),
+                            )
                         ClueKind.Cryptic ->
-                            ClueStep(id, kind, tier, row.text(2), target(row.int(3)))
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(2),
+                                target(row.int(3)),
+                                question = question(row.int(5)),
+                                boxChallenge = isBox(row.int(5)),
+                            )
+                        ClueKind.Cipher ->
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(2),
+                                target(row.int(3)),
+                                question = question(row.int(4)),
+                                boxChallenge = isBox(row.int(4)),
+                            )
+                        ClueKind.Coordinate ->
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(2),
+                                target(row.int(3)),
+                                combat = row.int(5) != null,
+                            )
                         ClueKind.SkillChallenge ->
                             ClueStep(id, kind, tier, row.text(2), target(row.int(4)))
-                        ClueKind.Map,
-                        ClueKind.HotCold -> ClueStep(id, kind, tier, "", target(row.int(2)))
+                        ClueKind.Map ->
+                            ClueStep(id, kind, tier, "", target(row.int(2)))
+                        ClueKind.HotCold ->
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                "",
+                                target(row.int(2)),
+                                combat = row.int(4) != null,
+                            )
                         ClueKind.Music ->
                             ClueStep(
                                 id,
@@ -158,10 +245,11 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 tier = tier,
                                 text = row.text(2),
                                 target = target(row.int(3)),
-                                emote = row.int(4) ?: -1,
+                                emotes = row.ints(4),
                                 outfit = outfit(row.int(6)),
                                 stashLoc = row.int(7),
                                 stashCoord = row.int(8)?.let(::CoordGrid),
+                                combat = row.int(9) != null,
                             )
                     }
             }

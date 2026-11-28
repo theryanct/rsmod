@@ -14,6 +14,15 @@ internal object TrailObjs : ObjReferences() {
     val clue_beginner = find("trail_clue_beginner")
     val casket_beginner = find("trail_reward_casket_beginner")
     val casket_easy = find("trail_reward_casket_easy")
+    val casket_medium = find("trail_reward_casket_medium")
+    val casket_hard = find("trail_reward_casket_hard")
+    val casket_elite = find("trail_reward_casket_elite")
+    val casket_master = find("trail_reward_casket_master")
+
+    /** Coordinate clue navigation: "Look through" the sextant with a watch and chart. */
+    val sextant = find("trail_sextant")
+    val watch = find("trail_watch")
+    val chart = find("trail_chart")
     /** Beginner hot/cold "strange device" (from Reldo). */
     val strange_device = find("beginner_device")
 
@@ -73,7 +82,7 @@ internal object TrailInvs : InvReferences() {
     val reward = find("trail_rewardinv")
 }
 
-/** Custom (ui range 65310-65316), saved per character. */
+/** Custom (ui range 65310-65324), saved per character. */
 internal object TrailVarps : VarpReferences() {
     /** The beginner clue's current step: its cluehelper dbrow id (0 = not chosen yet). */
     val beginner_step = find("trail_beginner_step")
@@ -85,6 +94,14 @@ internal object TrailVarps : VarpReferences() {
     /** STASH units holding their emote outfit: bit = the unit's index among its tier's units. */
     val stash_beginner = find("trail_stash_beginner")
     val stash_easy = find("trail_stash_easy")
+    val medium_remaining = find("trail_medium_remaining")
+    val hard_remaining = find("trail_hard_remaining")
+    val elite_remaining = find("trail_elite_remaining")
+    val master_remaining = find("trail_master_remaining")
+    val medium_completed = find("trail_medium_completed")
+    val hard_completed = find("trail_hard_completed")
+    val elite_completed = find("trail_elite_completed")
+    val master_completed = find("trail_master_completed")
 }
 
 internal object TrailVarpBuilder : VarpBuilder() {
@@ -96,5 +113,13 @@ internal object TrailVarpBuilder : VarpBuilder() {
         build("trail_easy_completed")
         build("trail_stash_beginner")
         build("trail_stash_easy")
+        build("trail_medium_remaining")
+        build("trail_hard_remaining")
+        build("trail_elite_remaining")
+        build("trail_master_remaining")
+        build("trail_medium_completed")
+        build("trail_hard_completed")
+        build("trail_elite_completed")
+        build("trail_master_completed")
     }
 }

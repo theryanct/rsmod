@@ -6,6 +6,7 @@ import java.util.WeakHashMap
 import org.rsmod.api.config.refs.invs
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.death.ClueDrops
+import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.music.MusicRepository
 import org.rsmod.api.player.dig.DigSpots
 import org.rsmod.api.player.events.CollectionLogObtained
@@ -35,6 +36,7 @@ import org.rsmod.game.inv.Inventory
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.dbrow.DbRowTypeList
 import org.rsmod.game.type.interf.InterfaceType
+import org.rsmod.game.type.interf.InterfaceTypeList
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.inv.InvTypeList
 import org.rsmod.game.type.npc.NpcTypeList
@@ -50,7 +52,8 @@ import org.rsmod.plugin.scripts.ScriptContext
 private val logger = InlineLogger()
 
 /**
- * Treasure trails, Beginner and Easy (Medium+ later). Step data is Jagex's own: the 243 cache's
+ * Treasure trails, every tier (steps needing fights, puzzle/light boxes or kills: later).
+ * Step data is Jagex's own: the 243 cache's
  * clue-helper db tables ([ClueSteps]), so texts match the game and RuneLite's clue helper.
  *
  * - Clues drop from npcs ([ClueDrops], one per tier: none while you hold one in inventory/bank).
@@ -79,29 +82,32 @@ constructor(
     private val locTypes: LocTypeList,
     private val npcList: NpcList,
     private val musicRepo: MusicRepository,
+    private val interfaceTypes: InterfaceTypeList,
     private val locRepo: LocRepository,
 ) : PluginScript() {
     private val steps by lazy { ClueSteps.load(dbRows, names.dbTables) }
 
     private val rewards by lazy { ClueTier.entries.associateWith { TrailRewards.load(it) } }
 
-    /** Easy clue objs by step dbrow, and the reverse. */
-    private val easyObjByStep by lazy {
+    /** Clue objs of every tier but beginner, by step dbrow (obj param 623), and the reverse. */
+    private val objByStep by lazy {
         val out = HashMap<Int, Int>()
         for (type in objTypes.values) {
-            if (type.isCert || type.isPlaceholder || type.name != "Clue scroll (easy)") {
+            if (type.isCert || type.isPlaceholder || !type.name.startsWith("Clue scroll (")) {
                 continue
             }
             val row = type.paramMap?.primitiveMap?.get(STEP_PARAM) as? Int ?: continue
-            if (steps.byRow[row]?.tier == ClueTier.Easy) {
+            val tier = steps.byRow[row]?.tier ?: continue
+            if (tier != ClueTier.Beginner) {
                 out.putIfAbsent(row, type.id)
             }
         }
         out
     }
-    private val easyStepByObj by lazy {
-        easyObjByStep.entries.associate { (row, obj) -> obj to row }
-    }
+    private val stepByObj by lazy { objByStep.entries.associate { (row, obj) -> obj to row } }
+
+    /** Clue obj symbol names (map clues open the interface of the same name, if any). */
+    private val objNames by lazy { names.objs.entries.associate { (name, id) -> id to name } }
 
     /**
      * Steps a new trail can start on / continue with (sub-steps excluded), minus steps nobody can
@@ -111,13 +117,24 @@ constructor(
     private val pools by lazy {
         val spawned = npcList.mapTo(HashSet()) { it.id }
         val beginnerKinds = setOf(ClueKind.Anagram, ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map)
-        val easyKinds = setOf(ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map, ClueKind.Music)
-        val all =
-            mapOf(
-                ClueTier.Beginner to steps.ofTier(ClueTier.Beginner, beginnerKinds),
-                ClueTier.Easy to
-                    steps.ofTier(ClueTier.Easy, easyKinds).filter { it.row in easyObjByStep },
+        val kinds =
+            setOf(
+                ClueKind.Anagram,
+                ClueKind.Cipher,
+                ClueKind.Coordinate,
+                ClueKind.Cryptic,
+                ClueKind.Emote,
+                ClueKind.Map,
+                ClueKind.Music,
             )
+        val all =
+            ClueTier.entries.associateWith { tier ->
+                if (tier == ClueTier.Beginner) {
+                    steps.ofTier(tier, beginnerKinds)
+                } else {
+                    steps.ofTier(tier, kinds).filter { it.row in objByStep }
+                }
+            }
         val reachable = all.mapValues { (_, list) -> list.filter { it.isReachable(spawned) } }
         logger.info {
             "Treasure trails: solvable steps " +
@@ -131,6 +148,7 @@ constructor(
     private fun ClueStep.isReachable(spawned: Set<Int>): Boolean =
         when (val target = target) {
             is ClueTarget.Npc -> target.npcs.any { it in spawned }
+            is ClueTarget.Key -> target.npcs.any { it in spawned }
             is ClueTarget.Loc ->
                 (-1..1).any { dx ->
                     (-1..1).any { dz ->
@@ -162,18 +180,24 @@ constructor(
     /** Uri, spawned for one player's emote step. */
     private val uris = WeakHashMap<Player, Npc>()
 
+    /** Emote steps with several emotes: (step dbrow, emotes done so far) per player. */
+    private val emoteProgress = WeakHashMap<Player, Pair<Int, Int>>()
+
     override fun ScriptContext.startup() {
         logger.info {
-            "Treasure trails: ${steps.byRow.size} steps; easy clue objs ${easyObjByStep.size}."
+            "Treasure trails: ${steps.byRow.size} steps; easy clue objs ${objByStep.size}."
         }
 
         bindClue(TrailObjs.clue_beginner)
-        for (obj in easyStepByObj.keys) {
+        for (obj in stepByObj.keys) {
             bindClue(objTypes[obj] ?: continue)
         }
-        onOpHeld1(TrailObjs.casket_beginner) { openCasket(ClueTier.Beginner, it.type) }
-        onOpHeld1(TrailObjs.casket_easy) { openCasket(ClueTier.Easy, it.type) }
+        for ((tier, casket) in CASKETS) {
+            onOpHeld1(casket) { openCasket(tier, it.type) }
+        }
         onOpHeld1(TrailObjs.strange_device) { feelDevice() }
+        onOpHeld1(TrailObjs.sextant) { lookThroughSextant() }
+        onEvent<NpcKilledEvent> { hero.dropClueKey(npc) }
 
         OpInterceptors.register(NpcClaim())
         OpInterceptors.register(LocClaim())
@@ -197,22 +221,27 @@ constructor(
     private fun tierOf(obj: Int): ClueTier? =
         when {
             obj == objTypes[TrailObjs.clue_beginner].id -> ClueTier.Beginner
-            obj in easyStepByObj -> ClueTier.Easy
-            else -> null
+            else -> stepByObj[obj]?.let { steps.byRow[it]?.tier }
         }
 
-    private fun remainingVarp(tier: ClueTier): VarpType? =
+    private fun remainingVarp(tier: ClueTier): VarpType =
         when (tier) {
             ClueTier.Beginner -> TrailVarps.beginner_remaining
             ClueTier.Easy -> TrailVarps.easy_remaining
-            else -> null
+            ClueTier.Medium -> TrailVarps.medium_remaining
+            ClueTier.Hard -> TrailVarps.hard_remaining
+            ClueTier.Elite -> TrailVarps.elite_remaining
+            ClueTier.Master -> TrailVarps.master_remaining
         }
 
-    private fun completedVarp(tier: ClueTier): VarpType? =
+    private fun completedVarp(tier: ClueTier): VarpType =
         when (tier) {
             ClueTier.Beginner -> TrailVarps.beginner_completed
             ClueTier.Easy -> TrailVarps.easy_completed
-            else -> null
+            ClueTier.Medium -> TrailVarps.medium_completed
+            ClueTier.Hard -> TrailVarps.hard_completed
+            ClueTier.Elite -> TrailVarps.elite_completed
+            ClueTier.Master -> TrailVarps.master_completed
         }
 
     private fun Player.setVar(varp: VarpType, value: Int) =
@@ -221,12 +250,12 @@ constructor(
     /** The step for a held clue [obj], choosing the beginner step / trail length on first use. */
     private fun Player.stepOf(obj: Int): ClueStep? {
         val tier = tierOf(obj) ?: return null
-        val remaining = remainingVarp(tier) ?: return null
+        val remaining = remainingVarp(tier)
         if (vars[remaining] <= 0) {
             setVar(remaining, random.of(tier.steps))
         }
-        if (tier == ClueTier.Easy) {
-            return steps.byRow[easyStepByObj[obj] ?: return null]
+        if (tier != ClueTier.Beginner) {
+            return steps.byRow[stepByObj[obj] ?: return null]
         }
         val current = steps.byRow[vars[TrailVarps.beginner_step]]
         if (current != null && current.tier == ClueTier.Beginner) {
@@ -261,12 +290,11 @@ constructor(
                 hero.setVar(TrailVarps.beginner_remaining, 0)
                 objTypes[TrailObjs.clue_beginner]
             }
-            ClueTier.Easy -> {
-                hero.setVar(TrailVarps.easy_remaining, 0)
-                val step = pools.getValue(ClueTier.Easy).pick() ?: return null
-                objTypes[easyObjByStep.getValue(step.row)]
+            else -> {
+                hero.setVar(remainingVarp(tier), 0)
+                val step = pools.getValue(tier).pick() ?: return null
+                objTypes[objByStep.getValue(step.row)]
             }
-            else -> null
         }
     }
 
@@ -276,7 +304,8 @@ constructor(
         val step = player.stepOf(obj.id) ?: return mes("Nothing interesting happens.")
         when (step.kind) {
             ClueKind.Map -> {
-                val map = MapInterfaces.forDig(step.target)
+                val byName = objNames[obj.id]?.let { names.interfaces[it] }
+                val map = MapInterfaces.forDig(step.target) ?: byName?.let(::interfaceRef)
                 if (map != null) {
                     ifOpenMainModal(map)
                 } else {
@@ -289,6 +318,7 @@ constructor(
                 )
             ClueKind.HotCold ->
                 showText("Use the strange device to find where the treasure is buried.")
+            ClueKind.Coordinate -> showText(Coordinates.describe(step.text))
             ClueKind.Music -> {
                 val who = (step.target as? ClueTarget.Npc)?.description ?: "the listener"
                 showText(
@@ -309,7 +339,7 @@ constructor(
     private fun ProtectedAccess.checkSteps(obj: UnpackedObjType) {
         val tier = tierOf(obj.id) ?: return
         player.stepOf(obj.id)
-        val left = player.vars[remainingVarp(tier) ?: return]
+        val left = player.vars[remainingVarp(tier)]
         mes(
             if (left <= 1) "This is the last step of this trail."
             else "This trail has $left steps left."
@@ -390,6 +420,16 @@ constructor(
                 startDialogue(npc) { chatNpc(happy, "Thanks! Here's a clue for your trouble.") }
                 advance(clue, step)
             }
+            step.question != null -> {
+                val (question, answer) = step.question
+                startDialogue(npc) { chatNpc(neutral, question) }
+                if (countDialog("Your answer:") != answer) {
+                    startDialogue(npc) { chatNpc(neutral, "That isn't right. Have another think.") }
+                    return
+                }
+                startDialogue(npc) { chatNpc(happy, "Spot on! Here, take this.") }
+                advance(clue, step)
+            }
             else -> {
                 startDialogue(npc) { chatNpc(neutral, "Ah, a clue scroll! Here, take this.") }
                 advance(clue, step)
@@ -404,6 +444,15 @@ constructor(
         override suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp) {
             val (clue, step) =
                 player.heldSteps().firstOrNull { it.second.isSolvedBy(loc) } ?: return
+            val keyTarget = step.target as? ClueTarget.Key
+            if (keyTarget != null) {
+                val keyType = objTypes[keyTarget.key] ?: return
+                if (invTotal(inv, keyType) <= 0) {
+                    mes("It's locked. ${keyTarget.description}")
+                    return
+                }
+                invDel(inv, keyType, 1)
+            }
             mes("You search the ${locTypes[loc].name.lowercase()}...")
             advance(clue, step)
         }
@@ -416,9 +465,37 @@ constructor(
 
     private fun <T> Set<T>.pick(): T? = toList().pick()
 
-    private fun ClueStep.isSolvedBy(loc: BoundLocInfo): Boolean {
-        val target = target as? ClueTarget.Loc ?: return false
-        return loc.id in target.locs && loc.coords.chebyshevDistance(target.coord) <= 1
+    private fun ClueStep.isSolvedBy(loc: BoundLocInfo): Boolean =
+        when (val target = target) {
+            is ClueTarget.Loc ->
+                loc.id in target.locs && loc.coords.chebyshevDistance(target.coord) <= 1
+            is ClueTarget.Key ->
+                loc.id in target.locs && loc.coords.chebyshevDistance(target.coord) <= 1
+            else -> false
+        }
+
+    /** Key steps: killing one of the step's npcs drops its key. */
+    private fun Player.dropClueKey(npc: Npc) {
+        for ((_, step) in heldSteps()) {
+            val target = step.target as? ClueTarget.Key ?: continue
+            if (npc.id !in target.npcs && npc.visType.id !in target.npcs) {
+                continue
+            }
+            val key = objTypes[target.key] ?: continue
+            if (inv.any { it?.id == key.id }) {
+                continue
+            }
+            objRepo.add(key, npc.coords, GROUND_DURATION, this)
+        }
+    }
+
+    /** Sextant + watch + chart: where am I, in coordinate-clue terms. */
+    private fun ProtectedAccess.lookThroughSextant() {
+        if (invTotal(inv, TrailObjs.watch) <= 0 || invTotal(inv, TrailObjs.chart) <= 0) {
+            mes("You need a watch and a chart to work out where you are.")
+            return
+        }
+        mes("You are at ${Coordinates.of(coords)}.")
     }
 
     /** Spade dig: map / cryptic dig steps, and the beginner hot/cold spot. */
@@ -467,11 +544,7 @@ constructor(
     /* Emotes */
 
     private fun Player.emote(slot: Int) {
-        val step =
-            heldSteps().map { it.second }.firstOrNull {
-                it.kind == ClueKind.Emote && it.emote == slot
-            }
-                ?: return
+        val step = heldSteps().map { it.second }.firstOrNull { it.kind == ClueKind.Emote } ?: return
         val here =
             when (val target = step.target) {
                 is ClueTarget.Zone -> target.contains(coords)
@@ -486,6 +559,20 @@ constructor(
         if (step.outfit.any { obj -> worn.none { it?.id == obj } }) {
             return
         }
+        // Several emotes are done in order; a wrong one starts over.
+        val done = emoteProgress[this]?.takeIf { it.first == step.row }?.second ?: 0
+        if (step.emotes.getOrNull(done) != slot) {
+            emoteProgress.remove(this)
+            if (step.emotes.size > 1 && step.emotes.first() == slot) {
+                emoteProgress[this] = step.row to 1
+            }
+            return
+        }
+        if (done + 1 < step.emotes.size) {
+            emoteProgress[this] = step.row to done + 1
+            return
+        }
+        emoteProgress.remove(this)
         if (uris[this]?.isSlotAssigned == true) {
             return
         }
@@ -513,7 +600,7 @@ constructor(
     /** Moves the trail on from [step]: a new clue, or the reward casket after the last step. */
     private suspend fun ProtectedAccess.advance(clue: InvObj, step: ClueStep) {
         val tier = step.tier
-        val remainingVarp = remainingVarp(tier) ?: return
+        val remainingVarp = remainingVarp(tier)
         val left = player.vars[remainingVarp] - 1
         val slot = inv.indexOfFirst { it == clue }.takeIf { it >= 0 } ?: return
         if (left <= 0) {
@@ -521,8 +608,7 @@ constructor(
             if (tier == ClueTier.Beginner) {
                 player.setVar(TrailVarps.beginner_step, 0)
             }
-            val casket =
-                if (tier == ClueTier.Beginner) TrailObjs.casket_beginner else TrailObjs.casket_easy
+            val casket = CASKETS.getValue(tier)
             inv[slot] = null
             invAdd(inv, casket)
             objbox(casket, "Well done, you've completed the Treasure Trail!")
@@ -534,7 +620,7 @@ constructor(
             player.setVar(TrailVarps.beginner_step, next.row)
             objbox(TrailObjs.clue_beginner, "You've been given a new clue!")
         } else {
-            val obj = objTypes[easyObjByStep.getValue(next.row)] ?: return
+            val obj = objTypes[objByStep.getValue(next.row)] ?: return
             inv[slot] = InvObj(obj)
             objbox(obj, "You've been given a new clue!")
         }
@@ -545,7 +631,7 @@ constructor(
     @OptIn(UncheckedType::class)
     private suspend fun ProtectedAccess.openCasket(tier: ClueTier, casket: UnpackedObjType) {
         val table = rewards[tier] ?: return mes("This casket is empty.")
-        val completedVarp = completedVarp(tier) ?: return
+        val completedVarp = completedVarp(tier)
         if (invDel(inv, casket, 1).failure) {
             return
         }
@@ -578,7 +664,20 @@ constructor(
         mes("You have completed $completed ${tier.display} Treasure $trails.")
     }
 
+    /** An interface id from the symbol table as a type (map clues opened by obj name). */
+    private fun interfaceRef(id: Int): InterfaceType? = interfaceTypes[id]
+
     private companion object {
+        private val CASKETS =
+            mapOf(
+                ClueTier.Beginner to TrailObjs.casket_beginner,
+                ClueTier.Easy to TrailObjs.casket_easy,
+                ClueTier.Medium to TrailObjs.casket_medium,
+                ClueTier.Hard to TrailObjs.casket_hard,
+                ClueTier.Elite to TrailObjs.casket_elite,
+                ClueTier.Master to TrailObjs.casket_master,
+            )
+
         /** Obj param holding a clue obj's cluehelper step dbrow (unnamed in the symbols). */
         private const val STEP_PARAM = 623
         private const val DIG_RANGE = 1
