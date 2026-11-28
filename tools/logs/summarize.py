@@ -53,6 +53,35 @@ def main(paths):
         print(f'\n## {kind} ({sum(counts.values())})')
         for key, count in counts.most_common(25):
             print(f'{count:5}  {key}')
+    script_errors(paths)
+
+
+SCRIPT_ERROR = re.compile(r'^(\S+ \S+) .*SCRIPT_ERROR (.*)$')
+
+
+def script_errors(paths):
+    """SCRIPT_ERROR lines (PlayerMainProcess recoveries) from gameplay-problems*.log, grouped by
+    exception + top content frame so each distinct bug is one row."""
+    files = [p for p in (paths or sorted(glob.glob('.data/logs/gameplay-problems*.log'))) if 'problems' in p]
+    groups = collections.Counter()
+    last = {}
+    for path in files:
+        for line in open(path, encoding='utf-8', errors='replace'):
+            m = SCRIPT_ERROR.match(line.rstrip('\n'))
+            if not m:
+                continue
+            when, rest = m.groups()
+            ex = re.search(r'ex=([^:]+)', rest)
+            frame = re.search(r'frames=\[([^\] <]*)', rest)
+            key = f"{ex.group(1) if ex else '?'} @ {frame.group(1) if frame and frame.group(1) else '(no content frame)'}"
+            groups[key] += 1
+            last[key] = f'{when} {rest[:160]}'
+    if not groups:
+        return
+    print(f'\n## script-errors ({sum(groups.values())} recoveries, {len(groups)} distinct)')
+    for key, count in groups.most_common(25):
+        print(f'{count:5}  {key}')
+        print(f'       last {last[key]}')
 
 
 if __name__ == '__main__':
