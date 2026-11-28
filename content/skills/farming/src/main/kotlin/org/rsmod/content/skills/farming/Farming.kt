@@ -11,6 +11,7 @@ import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.farmingLvl
 import org.rsmod.api.player.stat.woodcuttingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.isNpcOpBound
@@ -304,7 +305,7 @@ constructor(
             mes("This patch doesn't need weeding right now.")
             return
         }
-        if (invTotal(inv, FarmingObjs.rake) == 0) {
+        if (!player.hasTool(FarmingObjs.rake)) {
             mes("You need a rake to weed a farming patch.")
             return
         }
@@ -374,7 +375,7 @@ constructor(
             return
         }
         val tool = if (crop.kind == Kind.Tree) FarmingObjs.spade else FarmingObjs.dibber
-        if (invTotal(inv, tool) == 0) {
+        if (!player.hasTool(tool)) {
             val name = if (crop.kind == Kind.Tree) "spade" else "seed dibber"
             mes("You need a $name to plant that.")
             return
@@ -435,7 +436,7 @@ constructor(
             mes("The ${crop.key} isn't ready to harvest yet.")
             return
         }
-        if (patch.kind == Kind.Allotment && invTotal(inv, FarmingObjs.spade) == 0) {
+        if (patch.kind == Kind.Allotment && !player.hasTool(FarmingObjs.spade)) {
             mes("You need a spade to harvest your crops.")
             return
         }
@@ -488,7 +489,7 @@ constructor(
             mes("There's nothing to dig up in this ${patch.kind.noun}.")
             return
         }
-        if (invTotal(inv, FarmingObjs.spade) == 0) {
+        if (!player.hasTool(FarmingObjs.spade)) {
             mes("You need a spade to clear this ${patch.kind.noun}.")
             return
         }

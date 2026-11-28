@@ -5,8 +5,10 @@ import kotlin.math.min
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.fletchingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
+import org.rsmod.api.script.onOpHeldLabel
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -41,6 +43,16 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         for ((key, recipes) in byPair) {
             onOpHeldU(obj(key.first), obj(key.second)) { selectRecipe(recipes) }
         }
+        // "Fletch" on logs (tool-belt material op): the knife may be carried or on the belt.
+        for ((key, recipes) in byPair) {
+            val material =
+                when (KNIFE) {
+                    key.first -> key.second
+                    key.second -> key.first
+                    else -> continue
+                }
+            onOpHeldLabel(objTypes, obj(material), "Fletch") { fletchWithKnife(recipes) }
+        }
         onPlayerQueueWithArgs<FletchJob>(FletchingQueues.fletching) { fletch(it.args) }
     }
 
@@ -60,6 +72,14 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
      * logs). Recipes the player can't make yet (level or materials) are greyed; the quantity comes
      * from the 1/5/10/X/All buttons and, for arrows/darts/bolts, counts sets.
      */
+    private suspend fun ProtectedAccess.fletchWithKnife(recipes: List<Recipe>) {
+        if (!player.hasTool(FletchingObjs.knife)) {
+            mes("You need a knife to fletch logs.")
+            return
+        }
+        selectRecipe(recipes)
+    }
+
     private suspend fun ProtectedAccess.selectRecipe(recipes: List<Recipe>) {
         val shown = recipes.take(MAX_PRODUCTS)
         val products =
@@ -108,7 +128,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
         }
-        if (recipe.kind == Kind.Knife && invTotal(inv, FletchingObjs.knife) <= 0) {
+        if (recipe.kind == Kind.Knife && !player.hasTool(FletchingObjs.knife)) {
             mes("You need a knife to fletch logs.")
             return
         }

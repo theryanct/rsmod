@@ -7,6 +7,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.craftingLvl
 import org.rsmod.api.player.stat.miningLvl
 import org.rsmod.api.player.stat.runecraftingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -58,7 +59,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             mes("You need a pickaxe to mine this rock.")
             return
         }
-        if (DarkEssenceObjs.chisel !in inv) {
+        if (!player.hasTool(DarkEssenceObjs.chisel)) {
             mes("You need a chisel to chip the runestone.")
             return
         }

@@ -5,6 +5,7 @@ import kotlin.math.abs
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.hunterLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
@@ -63,7 +64,7 @@ constructor(
             mes("You need a Hunter level of at least $lowest to set a deadfall.")
             return
         }
-        if (invTotal(inv, DeadfallObjs.knife) <= 0) {
+        if (!player.hasTool(DeadfallObjs.knife)) {
             mes("You need a knife to set up a deadfall.")
             return
         }
