@@ -95,6 +95,7 @@ import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
 import org.rsmod.content.quests.writingsonthewall.WritingsOnTheWall.Companion.WRITINGS_ON_THE_WALL
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
+import org.rsmod.content.quests.zogre.ZogreFleshEaters.Companion.ZOGRE
 
 /**
  * Every quest this server implements. **Add a quest here when it's built**: quest points and
@@ -197,6 +198,7 @@ public object BuiltQuests {
             WITCHS_POTION,
             WRITINGS_ON_THE_WALL,
             X_MARKS_THE_SPOT,
+            ZOGRE,
         )
 
     public val rows: Set<String> = all.mapTo(HashSet()) { it.listRow }

@@ -1397,6 +1397,32 @@ coords = '0_45_148_30_6'
 npc = 'zqzombie_armed'
 coords = '0_45_148_38_16'
 
+
+# Zogre Flesh Eaters: Jiggig Dungeon (level 2) zogres and a skogre (Wiki: 27 zogres, 9 skogres;
+# a handful here, the surface pen already has its own).
+[[spawn]]
+npc = 'zogre_1'
+coords = '2_38_147_28_32'
+
+[[spawn]]
+npc = 'zogre_2'
+coords = '2_38_147_18_37'
+
+[[spawn]]
+npc = 'zogre_3'
+coords = '2_38_147_38_17'
+
+[[spawn]]
+npc = 'zogre_4'
+coords = '2_38_147_6_56'
+
+[[spawn]]
+npc = 'zogre_5'
+coords = '2_38_147_38_54'
+
+[[spawn]]
+npc = 'zogre_skele'
+coords = '2_38_147_8_7'
 # Spirits of the Elid: the cave's golems (one outside each door), the target over the north
 # channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
 # (Ryan-test).

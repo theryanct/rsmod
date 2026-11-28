@@ -150,6 +150,11 @@ MANUAL += [
     ("bronze", "nails_bronze", 7, 8.4), ("iron", "nails_iron", 18, 15.6), ("steel", "nails", 33, 30.6),
     ("black", "nails_black", 38, 39), ("mithril", "nails_mithril", 49, 45), ("adamant", "nails_adamant", 62, 61.2),
     ("rune", "nails_rune", 77, 75)]]
+# Comp ogre bow (Wiki "Unstrung comp bow" / "Comp ogre bow"; Zogre Flesh Eaters).
+MANUAL += [
+    ("knife", "unstrung_zogre_bow", 1, 30, 45, 3, "human_fletching", [("achey_tree_logs", 1), ("wolf_bones", 1)]),
+    ("string", "zogre_bow", 1, 30, 45, 2, "-", [("unstrung_zogre_bow", 1), ("bow_string", 1)]),
+]
 # Wasp darts (The Birds and the Wasps; Wiki Recipe templates): wasp stings with any of ten feather
 # kinds. The bucket rows aren't plain-feather sets, so kind_of() skips them; Fletching.kt gates
 # both on the quest varbit `baw`.
