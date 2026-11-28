@@ -122,16 +122,25 @@ constructor(
 
     /* Ruins and portals */
 
-    /** With the QuestGates toggle on, Runecraft needs Rune Mysteries (cache end state 6). */
-    private fun ProtectedAccess.passesQuestGate(): Boolean {
+    /**
+     * With the QuestGates toggle on, Runecraft needs Rune Mysteries (cache end state 6), and the
+     * cosmic altar also Lost City (end state 6).
+     */
+    private fun ProtectedAccess.passesQuestGate(altar: Altar? = null): Boolean {
         if (!player.isFeatureOn(Feature.QuestGates)) return true
-        if (player.vars[RunecraftVarps.runemysteries] >= RUNE_MYSTERIES_COMPLETE) return true
-        mes("You need to complete Rune Mysteries to do that.")
-        return false
+        if (player.vars[RunecraftVarps.runemysteries] < RUNE_MYSTERIES_COMPLETE) {
+            mes("You need to complete Rune Mysteries to do that.")
+            return false
+        }
+        if (altar?.key == COSMIC && player.vars[RunecraftVarps.zanaris] < LOST_CITY_COMPLETE) {
+            mes("You need to complete Lost City to use the cosmic altar.")
+            return false
+        }
+        return true
     }
 
     private suspend fun ProtectedAccess.enterRuins(altar: Altar, viaTalisman: Boolean) {
-        if (!passesQuestGate()) return
+        if (!passesQuestGate(altar)) return
         if (viaTalisman) {
             mes("You hold the ${altar.key} talisman towards the mysterious ruins.")
         }
@@ -391,5 +400,7 @@ constructor(
 }
 
 private const val RUNE_MYSTERIES_COMPLETE = 6
+private const val LOST_CITY_COMPLETE = 6
+private const val COSMIC = "cosmic"
 private const val ARRIVAL_RADIUS = 6
 private const val BLOCKED = CollisionFlag.BLOCK_WALK or CollisionFlag.LOC
