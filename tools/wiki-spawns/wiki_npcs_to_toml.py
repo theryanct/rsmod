@@ -35,7 +35,7 @@ for path in sys.argv[5:]:
 EXCLUDE_TITLES = {
     "Obor", "Bryophyta", "Elvarg", "Scurrius", "Giant Mole", "King Black Dragon", "Kalphite Queen",
     "Count Draynor", "Delrith", "Wormbrain", "Melzar the Mad", "Lesser demon (Melzar's Maze)",
-    "Sir Mordred", "Tool Leprechaun", "Fishing spot", "Rod Fishing spot",
+    "Sir Mordred", "Tool Leprechaun",
 }
 # Members bosses (and their bodyguards), quest bosses, slayer superiors and minigame npcs.
 EXCLUDE_TITLES |= {
