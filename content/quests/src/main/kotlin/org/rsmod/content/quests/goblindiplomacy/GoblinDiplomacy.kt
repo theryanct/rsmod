@@ -13,11 +13,11 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.onLocOpLabel
-import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -51,7 +51,7 @@ constructor(
 
     override fun ScriptContext.startup() {
         for (general in GoblinDiplomacyNpcs.generals) {
-            onNpcOpLabel(npcTypes, general, "Talk-to") { talkGeneral(it) }
+            with(QuestTalk) { default(npcTypes, general) { talkGeneral(it) } }
             for (armour in GoblinDiplomacyObjs.armours) {
                 onOpNpcU(general, armour) { showArmour(it.npc, it.objType.id) }
             }

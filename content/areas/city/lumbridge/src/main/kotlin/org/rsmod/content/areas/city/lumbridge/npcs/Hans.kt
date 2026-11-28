@@ -1,17 +1,20 @@
 package org.rsmod.content.areas.city.lumbridge.npcs
 
+import jakarta.inject.Inject
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc3
 import org.rsmod.content.areas.city.lumbridge.configs.lumbridge_npcs
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.game.entity.Npc
+import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-class Hans : PluginScript() {
+class Hans @Inject constructor(private val npcTypes: NpcTypeList) : PluginScript() {
     override fun ScriptContext.startup() {
-        onOpNpc1(lumbridge_npcs.hans) { hansDialogue(it.npc) }
+        // Talk-to is shared with quests (The Lost Tribe): this is the default conversation.
+        with(QuestTalk) { default(npcTypes, lumbridge_npcs.hans) { hansDialogue(it) } }
         onOpNpc3(lumbridge_npcs.hans) { hansAgeDialogue(it.npc) }
     }
 

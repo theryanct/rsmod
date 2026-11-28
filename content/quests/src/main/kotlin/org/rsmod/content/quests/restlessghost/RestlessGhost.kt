@@ -19,6 +19,7 @@ import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -57,7 +58,7 @@ constructor(
     }
 
     override fun ScriptContext.startup() {
-        onNpcOpLabel(npcTypes, RestlessGhostNpcs.aereck, "Talk-to") { talkAereck(it) }
+        with(QuestTalk) { default(npcTypes, RestlessGhostNpcs.aereck) { talkAereck(it) } }
         onNpcOpLabel(npcTypes, RestlessGhostNpcs.urhney, "Talk-to") { talkUrhney(it) }
         onNpcOpLabel(npcTypes, RestlessGhostNpcs.ghost, "Talk-to") { talkGhost(it) }
         onLocOpLabel(locTypes, RestlessGhostLocs.coffin_shut, "Open") { openCoffin(it) }
