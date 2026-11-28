@@ -545,53 +545,54 @@
 5	line	Player	You're right. I don't want to help.
 5	line	Lubufu	I didn't for one moment think you did.
 5	action	initial
-2	option	Talk about Karambwan...
-3	select	Select an option
-3	option	What is a Karambwan?
-4	line	Player	What is a Karambwan?
-4	line	Lubufu	A species of octopus native to the island which I and I alone know how to catch.
-4	action	initial
-3	option	What do you do with your Karambwan?
-4	line	Player	What do you do with your Karambwan?
-4	line	Lubufu	I eat what I need and sell the rest to the Shrimp and Parrot restaurant.
-4	line	Player	Where is the Shrimp and Parrot?
-4	line	Lubufu	You don't know anything do you? Just north of here, in Brimhaven!
-4	action	initial
-3	option	What do you use for bait?
-4	line	Player	What do you use for bait?
-4	line	Lubufu	That is part of the secret! Why would I tell you?
-4	action	initial
-3	option	What does Karambwan taste like?
-4	line	Player	What does Karambwan taste like?
-4	line	Lubufu	That depends entirely on how it is cooked...
-4	line	Player	What do you mean?
-4	line	Lubufu	Novicely cooked Karambwan is often poisonous to large mammals such as humans. If you buy some and cook it, be careful.
-4	action	initial
-2	option	Talk about something else...
-3	select	Select an option
-3	option	I have come for your soul.
-4	line	Player	I have come for your soul.
-4	line	Lubufu	Well you've wasted your time. My soul is long gone, along with my compassion.
-4	action	previous
-3	option	I'm with the Fishing Guild Anti-Monopoly Department.
-4	line	Player	I'm from the Fishing Guild Anti-Monopoly Department.
-4	line	Lubufu	And I'm from the Island Karamja. What do you want?
-4	line	Player	We demand that you hand over the secret of the Karambwan.
-4	line	Lubufu	Erm ... no.
-4	line	Player	Oh, ok then. It was worth a try.
-4	action	previous
-3	option	Do you have any spare monkey skin lying around?
-4	line	Player	Do you have any spare monkey skin lying around?
-4	line	Lubufu	Funny you should say that...
-4	line	Player	Why's that? Do you have any?
-4	line	Lubufu	Well, people have been asking me for monkey skins all day!
-4	line	Lubufu	But no, I'm out of monkey skin.
-4	action	previous
-3	option	I've heard something about an accident.
-4	line	Player	I've heard something about an accident.
-4	line	Lubufu	You will want to ask one of the tribesmen. I don't usually talk about it.
-4	action	previous
-2	option	Leave
+# Edited (Authored, not Wiki): Karambwan / something else / Leave dedented to the top menu (the Wiki nests them under Talk about him...).
+1	option	Talk about Karambwan...
+2	select	Select an option
+2	option	What is a Karambwan?
+3	line	Player	What is a Karambwan?
+3	line	Lubufu	A species of octopus native to the island which I and I alone know how to catch.
+3	action	initial
+2	option	What do you do with your Karambwan?
+3	line	Player	What do you do with your Karambwan?
+3	line	Lubufu	I eat what I need and sell the rest to the Shrimp and Parrot restaurant.
+3	line	Player	Where is the Shrimp and Parrot?
+3	line	Lubufu	You don't know anything do you? Just north of here, in Brimhaven!
+3	action	initial
+2	option	What do you use for bait?
+3	line	Player	What do you use for bait?
+3	line	Lubufu	That is part of the secret! Why would I tell you?
+3	action	initial
+2	option	What does Karambwan taste like?
+3	line	Player	What does Karambwan taste like?
+3	line	Lubufu	That depends entirely on how it is cooked...
+3	line	Player	What do you mean?
+3	line	Lubufu	Novicely cooked Karambwan is often poisonous to large mammals such as humans. If you buy some and cook it, be careful.
+3	action	initial
+1	option	Talk about something else...
+2	select	Select an option
+2	option	I have come for your soul.
+3	line	Player	I have come for your soul.
+3	line	Lubufu	Well you've wasted your time. My soul is long gone, along with my compassion.
+3	action	end
+2	option	I'm with the Fishing Guild Anti-Monopoly Department.
+3	line	Player	I'm from the Fishing Guild Anti-Monopoly Department.
+3	line	Lubufu	And I'm from the Island Karamja. What do you want?
+3	line	Player	We demand that you hand over the secret of the Karambwan.
+3	line	Lubufu	Erm ... no.
+3	line	Player	Oh, ok then. It was worth a try.
+3	action	end
+2	option	Do you have any spare monkey skin lying around?
+3	line	Player	Do you have any spare monkey skin lying around?
+3	line	Lubufu	Funny you should say that...
+3	line	Player	Why's that? Do you have any?
+3	line	Lubufu	Well, people have been asking me for monkey skins all day!
+3	line	Lubufu	But no, I'm out of monkey skin.
+3	action	end
+2	option	I've heard something about an accident.
+3	line	Player	I've heard something about an accident.
+3	line	Lubufu	You will want to ask one of the tribesmen. I don't usually talk about it.
+3	action	end
+1	option	Leave
 0	section	Delivering raw Karambwanji to Lubufu
 1	line	Lubufu	Have you retrieved the Karambwanji yet?
 2	line	Player	Yes, I have some here.
