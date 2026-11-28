@@ -20,7 +20,15 @@ internal object FarmingData {
         Flower("flower patch", 64),
         Hops("hops patch", 64),
         Tree("tree patch", 0),
+        FruitTree("fruit tree patch", 0),
+        Bush("bush patch", 0),
     }
+
+    /** Kinds planted from a sapling with a spade. */
+    val saplingKinds = setOf(Kind.Tree, Kind.FruitTree)
+
+    /** PR3 kinds: health check when grown, then fruit/berries that regrow. */
+    val fruitKinds = setOf(Kind.FruitTree, Kind.Bush)
 
     class Crop(
         val key: String,
@@ -47,17 +55,25 @@ internal object FarmingData {
         val woodLevel: Int = 0,
         val logs: String = "",
         val woodXp: Double = 0.0,
+        /** PR3 kinds: explicit stage values from the cache multilocs (tools/skills/farming_pr3.py). */
+        val grownOverride: Int? = null,
+        val fruitValue: Int = 0,
+        val maxFruit: Int = 0,
+        val checkOverride: Int? = null,
+        val stumpOverride: Int? = null,
+        /** Minutes for one fruit/berry to regrow (Wiki: fruit trees 40, bushes 20). */
+        val regrowMinutes: Int = 0,
     ) {
-        /** Fully grown (for trees: waiting for a health check). */
+        /** Fully grown (for trees: waiting for a health check; fruit kinds: no fruit left). */
         val grownValue: Int
-            get() = seedValue + cycles
+            get() = grownOverride ?: (seedValue + cycles)
 
-        /** Trees only: health checked (choppable) and stump variants. */
+        /** Trees: health checked (choppable); fruit kinds: waiting for the health check. */
         val checkedValue: Int
-            get() = seedValue + cycles + 1
+            get() = checkOverride ?: (seedValue + cycles + 1)
 
         val stumpValue: Int
-            get() = seedValue + cycles + 2
+            get() = stumpOverride ?: (seedValue + cycles + 2)
 
         fun saveChance(level: Int): Double {
             val from = saveLevel.coerceIn(1, 98)
@@ -277,7 +293,48 @@ internal object FarmingData {
             ),
             tree("oak", 15, 14.0, 467.3, 4, 8, 15, 37.5),
             tree("willow", 30, 25.0, 1456.5, 6, 15, 30, 67.5),
-        )
+        ) + Pr3.crops // PR3: appended only (the saved crop id is the list index).
+
+    /** farming_pr3.tsv: fruit trees and bushes (tools/skills/farming_pr3.py). */
+    private object Pr3 {
+        val rows: List<List<String>> =
+            (FarmingData::class.java.getResourceAsStream("farming_pr3.tsv")
+                    ?: error("Farming resource not found: farming_pr3.tsv"))
+                .bufferedReader()
+                .use { it.readLines() }
+                .filter { it.isNotBlank() && !it.startsWith("#") }
+                .map { it.split('\t') }
+
+        val crops: List<Crop> =
+            rows.filter { it[0] == "crop" }.map { p ->
+                val kind = Kind.valueOf(p[2])
+                Crop(
+                    key = p[1],
+                    kind = kind,
+                    seed = p[3],
+                    seedsPer = 1,
+                    produce = p[4],
+                    level = p[5].toInt(),
+                    plantXp = p[6].toDouble(),
+                    harvestXp = p[8].toDouble(),
+                    cycles = p[9].toInt(),
+                    minutesPerCycle = p[10].toInt(),
+                    seedValue = p[11].toInt(),
+                    save1 = 0.0,
+                    save99 = 0.0,
+                    checkXp = p[7].toDouble(),
+                    grownOverride = p[12].toInt(),
+                    fruitValue = p[13].toInt(),
+                    maxFruit = p[14].toInt(),
+                    checkOverride = p[15].toInt(),
+                    stumpOverride = p[16].toIntOrNull(),
+                    regrowMinutes = if (kind == Kind.FruitTree) 40 else 20,
+                )
+            }
+
+        /** (key, kind, loc, transmit, x, z, level) */
+        val patches: List<List<String>> = rows.filter { it[0] == "patch" }
+    }
 
     /** A farming patch: its base loc, the transmit varbit that drives its visuals, its varps. */
     class Patch(
@@ -359,17 +416,46 @@ internal object FarmingData {
             single("hops_mcgrubor", CoordGrid(2666, 3525), Kind.Hops, "farming_hops_patch_4"),
         )
 
-    val patches: List<Patch> = areas.flatMap { it.patches }
+    /**
+     * Base areas plus the PR3 patches: a patch joins the area in the same 64x64 map region (the
+     * client's transmit varbits are per region), otherwise it gets its own area.
+     */
+    val allAreas: List<Area> by lazy {
+        val extra = HashMap<String, MutableList<Patch>>()
+        val own = ArrayList<Area>()
+        for (p in Pr3.patches) {
+            val patch = Patch(p[1], Kind.valueOf(p[2]), p[3], p[4])
+            val coords = CoordGrid(p[5].toInt(), p[6].toInt(), p[7].toInt())
+            val host = areas.firstOrNull { it.centre.x shr 6 == coords.x shr 6 && it.centre.z shr 6 == coords.z shr 6 }
+            if (host != null) {
+                check(host.patches.none { it.transmit == patch.transmit }) {
+                    "Farming: ${patch.key} shares ${patch.transmit} with area ${host.key}"
+                }
+                extra.getOrPut(host.key) { ArrayList() } += patch
+            } else {
+                own += Area(patch.key, coords, listOf(patch))
+            }
+        }
+        areas.map { a -> extra[a.key]?.let { Area(a.key, a.centre, a.patches + it, a.bin) } ?: a } + own
+    }
+
+    val patches: List<Patch> by lazy { allAreas.flatMap { it.patches } }
 
     val bins: List<Bin> = areas.mapNotNull { it.bin }
+
+    /** Varp names for the PR3 patches (skilling range 65900+), in [Pr3] order. */
+    val pr3VarpNames: List<String> by lazy {
+        Pr3.patches.flatMap { listOf("farming_${it[1]}_state", "farming_${it[1]}_time") }
+    }
 
     /** The tool leprechaun's store (tools, watering can, buckets, compost) in one varp. */
     const val STORE_VARP = "farming_leprechaun_store"
 
-    val varpNames: List<String> =
+    val varpNames: List<String> by lazy {
         patches.flatMap { listOf(it.stateVarp, it.timeVarp) } +
             bins.flatMap { listOf(it.stateVarp, it.timeVarp) } +
             STORE_VARP
+    }
 
     /** Items a compost bin takes for regular compost (supercompost is not in PR2). */
     val compostables: List<String> =
