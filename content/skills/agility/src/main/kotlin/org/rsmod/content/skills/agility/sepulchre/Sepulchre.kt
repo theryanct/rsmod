@@ -336,7 +336,10 @@ constructor(
     private fun logout(player: Player) {
         val had = runs.remove(player.uid.packed) != null
         player.clearSoftTimer(SepTimers.tick)
-        if (had || SepulchreMap.onFloors(player.coords)) player.coords = SepulchreMap.LOBBY_RETURN
+        if (had || SepulchreMap.onFloors(player.coords)) {
+            player.coords = SepulchreMap.LOBBY_RETURN
+            clearRunVars(player)
+        }
     }
 
     private fun login(player: Player) {
