@@ -1,0 +1,66 @@
+# Generated from the OSRS Wiki page "Transcript:Elemental Workshop I" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Searching the Bookcase
+1	cond	If the player has a full inventory:
+2	box	You search the bookcase and find a battered book. However, you don't have enough room to take it.
+2	action	end
+1	cond	Otherwise:
+2	box	You search the bookcase and find a battered book. You take it.
+2	action	end
+0	section	Reading the Battered book
+1	cond	If the player's combat level is lower than 15:
+2	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 15.
+1	select	Start the Elemental Workshop I quest?
+1	option	Yes.
+2	action	Battered book interface opens
+1	option	No.
+2	action	end
+0	section	Slicing open the Battered book
+1	cond	If the player has a full inventory:
+0	section	Using an item other than the key on the wall
+0	section	Entering the Elemental Workshop
+0	section	Climbing down the Staircase
+1	line	Player	Now to explore this area thoroughly, to find what forgotten secrets it contains.
+1	action	end
+0	section	Interacting with the hatch
+0	section	Attempting to open it
+1	box	You're unable to open the locked hatch.
+1	action	end
+0	section	Using an item on it
+1	box	You try to stuff the object into the keyhole. It doesn't fit.
+1	action	end
+0	section	Getting the water flowing
+0	section	Turning the handles
+0	section	Resetting the flow gates
+0	section	Activating the water wheel
+0	section	De-activating the water wheel
+0	section	Searching the leather crate
+0	section	Fixing the bellows
+0	section	Attempting to fix the bellows again
+0	section	Activating the bellows
+1	cond	If the bellows has not been repaired:
+1	cond	If the bellows has been repaired:
+0	section	Deactivating the bellows
+0	section	Lighting the furnace
+0	section	Using any other item on the furnace
+0	section	Using a tinderbox on the furnace
+0	section	Filling a stone bowl
+0	section	Using a stone bowl of lava on the furnace
+0	section	Forging the bar
+0	section	Using elemental ore on a normal furnace outside the workshop
+1	box	This furnace is not hot enough to smelt elemental ore.
+1	action	end
+0	section	Casting superheat on the elemental ore
+0	section	Using the elemental ore on the furnace without enough coal
+0	section	Using the elemental ore on the furnace with enough coal
+0	section	Crafting the shield
+0	section	Using the workbench without elemental metal
+1	box	You don't have any suitable metals to use with this workbench.
+1	action	end
+0	section	Using the workbench without a hammer
+1	box	You need a hammer to work the metal with.
+1	action	end
+0	section	Using the workbench without the slashed book
+1	box	This workbench is too complicated. You need instructions to follow.
+1	action	end
+0	section	Using the workbench with the proper items
