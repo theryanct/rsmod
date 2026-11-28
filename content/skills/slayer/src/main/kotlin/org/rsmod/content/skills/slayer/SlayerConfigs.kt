@@ -62,6 +62,11 @@ object SlayerVarps : VarpReferences() {
     val gem_given = find("slayer_gem_given")
 }
 
+object SlayerSuperiorNpcs : NpcReferences() {
+    val byName: Map<String, NpcType> =
+        SlayerData.superiors.flatMap { it.normals + it.superior }.distinct().associateWith { find(it) }
+}
+
 object SlayerNpcSpawns : MapNpcSpawnBuilder() {
     override fun onPackMapTask() {
         resourceFile<SlayerNpcSpawns>("npcs.toml")

@@ -9,6 +9,9 @@ import org.rsmod.api.player.features.slayerPointMultiplier
 import org.rsmod.api.player.stat.baseSlayerLvl
 import org.rsmod.api.player.stat.statAdvance
 import org.rsmod.api.player.vars.intVarp
+import org.rsmod.api.combat.commons.npc.queueCombatRetaliate
+import org.rsmod.api.random.GameRandom
+import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeld1
@@ -50,6 +53,8 @@ constructor(
     private val objTypes: ObjTypeList,
     private val xpMods: XpModifiers,
     private val objRepo: ObjRepository,
+    private val npcRepo: NpcRepository,
+    private val random: GameRandom,
 ) : PluginScript() {
     private var Player.slayerTask: Int by intVarp(SlayerVarps.task)
     private var Player.slayerTaskCount: Int by intVarp(SlayerVarps.count)
@@ -230,16 +235,34 @@ constructor(
         mes("You have ${player.slayerPoints} Slayer reward points.")
     }
 
+    /** Superior npc id -> its row; normal npc id -> the superior npc type it can turn into. */
+    private val superiorsById by lazy {
+        SlayerData.superiors.associateBy { SlayerSuperiorNpcs.byName.getValue(it.superior).id }
+    }
+    private val superiorByNormalId by lazy {
+        SlayerData.superiors
+            .flatMap { s -> s.normals.map { SlayerSuperiorNpcs.byName.getValue(it).id to s } }
+            .toMap()
+    }
+
     private fun onKill(hero: Player, npc: Npc) {
         val count = hero.slayerTaskCount
         if (count <= 0) {
             return
         }
         val npcs = categoryNpcIds[hero.slayerTask] ?: return
-        if (npc.id !in npcs) {
+        val superior = superiorsById[npc.id]
+        val onTask =
+            npc.id in npcs ||
+                (superior != null && SlayerData.stableId(superior.category) == hero.slayerTask)
+        if (!onTask) {
             return
         }
-        val xp = xpByNpcId[npc.id] ?: 0.0
+        if (superior == null) {
+            maybeSpawnSuperior(hero, npc)
+        }
+        // Superiors give their own Wiki Slayer xp and count as one task kill.
+        val xp = superior?.xp ?: (xpByNpcId[npc.id] ?: 0.0)
         if (xp > 0) {
             hero.statAdvance(stats.slayer, xp * xpMods.get(hero, stats.slayer))
         }
@@ -248,6 +271,25 @@ constructor(
             return
         }
         completeTask(hero)
+    }
+
+    /**
+     * Bigger and Badder (slayer_unlock bit 35): an on-task kill has a 1/200 chance to summon the
+     * monster's superior variant (Wiki), which attacks the player and leaves after two minutes.
+     */
+    private fun maybeSpawnSuperior(hero: Player, npc: Npc) {
+        if (!hero.hasSlayerUnlock(BIGGER_AND_BADDER_BIT)) {
+            return
+        }
+        val superior = superiorByNormalId[npc.id] ?: return
+        if (random.of(1, SUPERIOR_CHANCE) != 1) {
+            return
+        }
+        val type = npcTypes[SlayerSuperiorNpcs.byName.getValue(superior.superior)]
+        val spawned = Npc(type, npc.coords)
+        npcRepo.add(spawned, SUPERIOR_LIFE)
+        spawned.queueCombatRetaliate(hero)
+        hero.mes("A superior foe has appeared...")
     }
 
     private fun completeTask(hero: Player) {
@@ -275,5 +317,11 @@ constructor(
 
     private companion object {
         const val TASK_ROLL = 1_000_000
+        /** slayer_unlock "Bigger and Badder". */
+        const val BIGGER_AND_BADDER_BIT = 35
+        /** Wiki: 1/200 per on-task kill with Bigger and Badder unlocked. */
+        const val SUPERIOR_CHANCE = 200
+        /** Superiors leave after two minutes. */
+        const val SUPERIOR_LIFE = 200
     }
 }
