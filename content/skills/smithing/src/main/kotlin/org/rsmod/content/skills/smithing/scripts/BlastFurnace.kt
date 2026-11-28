@@ -196,7 +196,7 @@ constructor(
 
     /* Coffer: 12 gp per tick while in the basement (Wiki); bars cool on their own after a while. */
 
-    private val cooling = HashMap<Long, Int>()
+    private val cooling = HashMap<Int, Int>()
 
     private fun tick(player: Player) {
         if (!inBasement(player)) {
@@ -262,7 +262,7 @@ constructor(
 
     /* Foreman fee (Smithing < 60): 2,500 gp per 10 minutes, kept server-side. */
 
-    private val paidUntil = HashMap<Long, Long>()
+    private val paidUntil = HashMap<Int, Long>()
 
     private fun ProtectedAccess.mayUseFurnace(): Boolean {
         if (player.baseSmithingLvl >= FREE_LEVEL) return true
