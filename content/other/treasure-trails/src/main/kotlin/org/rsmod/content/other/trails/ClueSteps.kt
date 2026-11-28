@@ -167,8 +167,10 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                 val answer = values.filterIsInstance<Int>().firstOrNull() ?: return null
                 return text to answer
             }
-            fun isBox(rowId: Int?): Boolean =
-                table(rows[rowId ?: return false]) == "cluehelper_challenge_box"
+            fun isBox(rowId: Int?): Boolean {
+                val id = rowId ?: return false
+                return table(rows[id]) == "cluehelper_challenge_box"
+            }
 
             val steps = HashMap<Int, ClueStep>()
             for ((id, row) in rows) {
