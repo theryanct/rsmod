@@ -343,17 +343,23 @@ internal object ScLocs : LocReferences() {
 internal object ScObjs : ObjReferences() {
     val cage_empty = find("scorpioncageempty")
     val cage_full = find("scorpioncagefull")
+    private val cage_a = find("scorpioncagea")
+    private val cage_b = find("scorpioncageb")
+    private val cage_c = find("scorpioncagec")
+    private val cage_ab = find("scorpioncageab")
+    private val cage_ac = find("scorpioncageac")
+    private val cage_bc = find("scorpioncagebc")
 
-    /** Each cage variant and the scorpions it holds. */
+    /** Each cage variant and the scorpions it holds (built lazily from the refs above: find() only resolves at init). */
     val cages: Map<ObjType, String> by lazy {
         linkedMapOf(
             cage_empty to "",
-            find("scorpioncagea") to "a",
-            find("scorpioncageb") to "b",
-            find("scorpioncagec") to "c",
-            find("scorpioncageab") to "ab",
-            find("scorpioncageac") to "ac",
-            find("scorpioncagebc") to "bc",
+            cage_a to "a",
+            cage_b to "b",
+            cage_c to "c",
+            cage_ab to "ab",
+            cage_ac to "ac",
+            cage_bc to "bc",
             cage_full to "abc",
         )
     }
