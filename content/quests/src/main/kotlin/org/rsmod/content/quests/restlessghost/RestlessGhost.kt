@@ -2,10 +2,13 @@ package org.rsmod.content.quests.restlessghost
 
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.npc.interact.AiPlayerInteractions
+import org.rsmod.api.npc.opPlayer2
 import org.rsmod.api.player.front
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -36,7 +39,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Aereck), 2 has the Amulet of Ghostspeak (Father Urhney), 3 spoke to the ghost wearing it, 4 has
  * the skull (Wizards' Tower basement altar), 5 complete (skull put in the opened coffin).
  * The coffin opens/closes in place; the altar's skull shows through its cache multiloc varbit.
- * Not done: the skeleton that attacks when the skull is taken. Reward: 1125 Prayer xp, 1 QP.
+ * Taking the skull spawns the skeleton that attacks. Reward: 1125 Prayer xp, 1 QP.
  */
 class RestlessGhost
 @Inject
@@ -45,6 +48,8 @@ constructor(
     private val locTypes: LocTypeList,
     private val locRepo: LocRepository,
     private val objRepo: ObjRepository,
+    private val npcRepo: NpcRepository,
+    private val aiInteractions: AiPlayerInteractions,
     private val xpMods: XpModifiers,
 ) : PluginScript() {
     private val dialogue by lazy {
@@ -185,12 +190,22 @@ constructor(
                 VarPlayerIntMapSetter.set(player, RestlessGhostVarBits.altar, 1)
                 player.setQuestState(RESTLESS_GHOST, HAS_SKULL)
                 mes("You find a skull on the altar and take it.")
+                spawnSkeleton()
             }
             else -> mes("You search the altar but find nothing of interest.")
         }
     }
 
+    /** OSRS: a skeleton (level 13) appears and attacks when the skull is taken. */
+    private fun ProtectedAccess.spawnSkeleton() {
+        val skeleton = Npc(npcTypes[RestlessGhostNpcs.skeleton], player.coords)
+        npcRepo.add(skeleton, SKELETON_TICKS)
+        skeleton.opPlayer2(player, aiInteractions)
+        mes("A skeleton appears!")
+    }
+
     companion object {
+        private const val SKELETON_TICKS = 500
         const val STARTED = 1
         const val HAS_AMULET = 2
         const val SPOKE_TO_GHOST = 3
@@ -216,6 +231,7 @@ internal object RestlessGhostNpcs : NpcReferences() {
     val aereck = find("father_aereck")
     val urhney = find("father_urhney")
     val ghost = find("ghostx")
+    val skeleton = find("skull_skeleton")
 }
 
 internal object RestlessGhostLocs : LocReferences() {
