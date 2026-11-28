@@ -169,12 +169,17 @@ constructor(
             mes("You don't have enough inventory space.")
             return
         }
+        val pouch = Pouches.pouchFor(pickpocket.title)
+        if (pouch != null && invTotal(inv, PouchObjs.byName.getValue(pouch)) >= Pouches.CAP) {
+            mes("You need to empty your coin pouches before you can continue pickpocketing.")
+            return
+        }
         mes("You attempt to pick the $name's pocket.")
         anim(ThievingSeqs.pickpocket)
         delay(2)
         if (statRandom(stats.thieving, pickpocket.low, pickpocket.high, 0)) {
             mes("You pick the $name's pocket.")
-            giveLoot(pickpocket.loot)
+            giveLoot(pickpocket.loot, pouch)
             statAdvance(stats.thieving, pickpocket.xp * xpMods.get(player, stats.thieving))
             if (player.isFeatureOn(Feature.AutoRepeatThieving)) {
                 weakQueue(ThievingQueues.pickpocket_repeat, 1, PickpocketTarget(npc, op))
@@ -279,10 +284,10 @@ constructor(
     )
 
     /** Always lines are always given; the rest is one weighted roll (remainder = nothing). */
-    private fun ProtectedAccess.giveLoot(loot: List<Loot>) {
+    private fun ProtectedAccess.giveLoot(loot: List<Loot>, pouch: String? = null) {
         for (entry in loot) {
             if (entry.always) {
-                give(entry)
+                give(entry, pouch)
             }
         }
         val weighted = loot.filter { !it.always }
@@ -294,13 +299,18 @@ constructor(
         for (entry in weighted) {
             cumulative += entry.numerator.toLong() * PPM / entry.denominator
             if (roll < cumulative) {
-                give(entry)
+                give(entry, pouch)
                 return
             }
         }
     }
 
-    private fun ProtectedAccess.give(entry: Loot) {
+    /** Coins from a pickpocket target with a Wiki coin pouch come as one pouch instead. */
+    private fun ProtectedAccess.give(entry: Loot, pouch: String? = null) {
+        if (pouch != null && entry.obj == "coins") {
+            invAdd(inv, PouchObjs.byName.getValue(pouch))
+            return
+        }
         val obj = ThievingObjs.byName.getValue(entry.obj)
         val count = if (entry.max > entry.min) random.of(entry.min, entry.max) else entry.min
         invAddGathered(obj, count)
