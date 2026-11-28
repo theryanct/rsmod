@@ -24,6 +24,7 @@ import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.SICKLE
+import org.rsmod.game.area.polygon.VertexCoord
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.hit.HitType
@@ -203,8 +204,14 @@ internal fun ProtectedAccess.summonVisibleGhast(
 /** The swamp decay area: the four map squares the Wiki's decay map covers. */
 internal object MortMyreDecayArea : MapAreaBuilder() {
     override fun onPackMapTask() {
+        // One polygon over all four squares (an area block takes a single `mapSquare`).
         area(MmAreas.decay) {
-            for (x in 53..54) for (z in 52..53) mapSquare(MapSquareKey(x, z))
+            polygon(levels = 0..0) {
+                vertex(VertexCoord(53, 52, 0, 0))
+                vertex(VertexCoord(53, 53, 0, 63))
+                vertex(VertexCoord(54, 53, 63, 63))
+                vertex(VertexCoord(54, 52, 63, 0))
+            }
         }
     }
 }
