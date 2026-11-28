@@ -6,6 +6,7 @@ import org.rsmod.api.type.refs.dbrow.DbRowReferences
 import org.rsmod.api.type.refs.dbtable.DbTableReferences
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
+import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
@@ -44,6 +45,7 @@ public object BuiltQuests {
         listOf(
             BELOW_ICE_MOUNTAIN,
             BLACK_KNIGHTS_FORTRESS,
+            CLOCK_TOWER,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
             DEMON_SLAYER,
