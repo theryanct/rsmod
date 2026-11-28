@@ -122,11 +122,13 @@ constructor(
         startDialogue(npc) {
             chatNpc(happy, "'Ello, and what are you after, then?")
             choice =
-                choice3(
+                choice4(
                     "I need another assignment.",
                     1,
                     "Do you have a spare enchanted gem?",
                     2,
+                    "I'd like to unblock a task.",
+                    4,
                     "Nothing, thanks.",
                     3,
                 )
@@ -134,6 +136,30 @@ constructor(
         when (choice) {
             1 -> assignment(npc, master, greet = false)
             2 -> spareGem(npc)
+            4 -> unblockTask(npc)
+        }
+    }
+
+    /**
+     * Unblock (OSRS: free, no points refunded). The rewards interface's own blocked list reads
+     * client varbits we don't mirror yet, so unblocking is offered through the master instead.
+     */
+    private suspend fun ProtectedAccess.unblockTask(npc: Npc) {
+        val blocked = SlayerBlockVarps.blocks.filter { vars[it] != 0 }
+        if (blocked.isEmpty()) {
+            startDialogue(npc) { chatNpc(neutral, "You haven't blocked any tasks.") }
+            return
+        }
+        val names =
+            blocked.map { slot ->
+                categoriesById[vars[slot]]?.display ?: "Unknown task"
+            }
+        val picked = menu("Unblock which task?", hotkeys = true, choices = names + "Cancel")
+        val slot = blocked.getOrNull(picked) ?: return
+        val name = names[picked]
+        vars[slot] = 0
+        startDialogue(npc) {
+            chatNpc(happy, "Fine. You may be assigned ${name.lowercase()} again.")
         }
     }
 
