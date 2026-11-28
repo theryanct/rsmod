@@ -22,7 +22,10 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Super combat potion (90, 150 xp): torstol + super attack(4) + super strength(4) + super
  *   defence(4) -> super combat(4).
  * - Stamina potion (77, 25.5 xp per dose): one amylase crystal per dose of a super energy.
- * Drinking: super combat in [HerbloreData.drinks]; stamina via [Stamina].
+ * - Anti-venom (87, 30 xp per dose): five Zulrah's scales per dose of an antidote++.
+ * - Anti-venom+ (94, 125 xp): torstol (or unfinished torstol) + anti-venom(4).
+ * - Extended anti-venom+ (94, 20 xp per dose): one araxyte venom sac per dose of anti-venom+.
+ * Drinking: super combat and the anti-venoms in [HerbloreData.drinks]; stamina via [Stamina].
  */
 class HerbloreMixes @Inject constructor(private val xpMods: XpModifiers) : PluginScript() {
     override fun ScriptContext.startup() {
@@ -36,6 +39,65 @@ class HerbloreMixes @Inject constructor(private val xpMods: XpModifiers) : Plugi
             onOpHeldU(MixObjs.amylase, energy) { stamina(doses, energy, MixObjs.stamina[index]) }
         }
         onPlayerSoftTimer(StaminaTimers.tick) { Stamina.tick(player) }
+        for ((index, antidote) in MixObjs.antidote_pp.withIndex()) {
+            val doses = 4 - index
+            onOpHeldU(MixObjs.zulrah_scales, antidote) { antiVenom(doses, antidote, MixObjs.antivenom[index]) }
+        }
+        for (herb in listOf(MixObjs.torstol, MixObjs.torstol_unf)) {
+            onOpHeldU(herb, MixObjs.antivenom[0]) { antiVenomPlus(herb) }
+        }
+        for ((index, plus) in MixObjs.antivenom_plus.withIndex()) {
+            val doses = 4 - index
+            onOpHeldU(MixObjs.venom_sac, plus) { extendedAntiVenom(doses, plus, MixObjs.extended[index]) }
+        }
+    }
+
+    private fun ProtectedAccess.antiVenom(doses: Int, antidote: ObjType, product: ObjType) {
+        if (player.herbloreLvl < ANTI_VENOM_LEVEL) {
+            mes("You need a Herblore level of $ANTI_VENOM_LEVEL to make an anti-venom potion.")
+            return
+        }
+        val scales = SCALES_PER_DOSE * doses
+        if (invTotal(inv, MixObjs.zulrah_scales) < scales) {
+            mes("You need $scales Zulrah's scales to make this.")
+            return
+        }
+        invDel(inv, MixObjs.zulrah_scales, scales)
+        invDel(inv, antidote)
+        invAdd(inv, product)
+        anim(HerbloreSeqs.mix)
+        statAdvance(stats.herblore, ANTI_VENOM_XP_PER_DOSE * doses * xpMods.get(player, stats.herblore))
+        mes("You mix the scales into the antidote and make an anti-venom potion.")
+    }
+
+    private fun ProtectedAccess.antiVenomPlus(herb: ObjType) {
+        if (player.herbloreLvl < ANTI_VENOM_PLUS_LEVEL) {
+            mes("You need a Herblore level of $ANTI_VENOM_PLUS_LEVEL to make an anti-venom+ potion.")
+            return
+        }
+        invDel(inv, herb)
+        invDel(inv, MixObjs.antivenom[0])
+        invAdd(inv, MixObjs.antivenom_plus[0])
+        anim(HerbloreSeqs.mix)
+        statAdvance(stats.herblore, ANTI_VENOM_PLUS_XP * xpMods.get(player, stats.herblore))
+        mes("You add the torstol to the anti-venom and make an anti-venom+ potion.")
+    }
+
+    private fun ProtectedAccess.extendedAntiVenom(doses: Int, plus: ObjType, product: ObjType) {
+        if (player.herbloreLvl < ANTI_VENOM_PLUS_LEVEL) {
+            mes("You need a Herblore level of $ANTI_VENOM_PLUS_LEVEL to make an extended anti-venom+.")
+            return
+        }
+        if (invTotal(inv, MixObjs.venom_sac) < doses) {
+            mes("You need $doses araxyte venom sacs to make this.")
+            return
+        }
+        invDel(inv, MixObjs.venom_sac, doses)
+        invDel(inv, plus)
+        invAdd(inv, product)
+        anim(HerbloreSeqs.mix)
+        statAdvance(stats.herblore, EXTENDED_XP_PER_DOSE * doses * xpMods.get(player, stats.herblore))
+        mes("You mix the venom sac into the anti-venom+ and make an extended anti-venom+.")
     }
 
     private fun ProtectedAccess.superCombat(herb: ObjType) {
@@ -78,6 +140,12 @@ class HerbloreMixes @Inject constructor(private val xpMods: XpModifiers) : Plugi
         const val SUPER_COMBAT_XP = 150.0
         const val STAMINA_LEVEL = 77
         const val STAMINA_XP_PER_DOSE = 25.5
+        const val ANTI_VENOM_LEVEL = 87
+        const val SCALES_PER_DOSE = 5
+        const val ANTI_VENOM_XP_PER_DOSE = 30.0
+        const val ANTI_VENOM_PLUS_LEVEL = 94
+        const val ANTI_VENOM_PLUS_XP = 125.0
+        const val EXTENDED_XP_PER_DOSE = 20.0
     }
 }
 
@@ -120,6 +188,12 @@ internal object MixObjs : ObjReferences() {
     val amylase = find("amylase")
     val super_energy = (4 downTo 1).map { find("${it}dose2energy") }
     val stamina = (4 downTo 1).map { find("${it}dosestamina") }
+    val zulrah_scales = find("snakeboss_scale")
+    val venom_sac = find("araxyte_venom_sack")
+    val antidote_pp = (4 downTo 1).map { find("antidote++$it") }
+    val antivenom = (4 downTo 1).map { find("antivenom$it") }
+    val antivenom_plus = (4 downTo 1).map { find("antivenom+$it") }
+    val extended = (4 downTo 1).map { find("extended_antivenom+$it") }
 }
 
 internal object StaminaTimers : TimerReferences() {

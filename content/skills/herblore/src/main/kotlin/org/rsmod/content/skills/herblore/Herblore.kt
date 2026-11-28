@@ -9,6 +9,7 @@ import org.rsmod.api.player.events.interact.LocUEvents
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.poison.curePoison
+import org.rsmod.api.player.poison.cureVenom
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
 import org.rsmod.api.player.tools.hasTool
@@ -42,7 +43,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   secondary, 3 doses) via the skillmulti "Make" chatbox, one per 2 ticks from a weak queue.
  * - Drinking doses 4 -> 3 -> 2 -> 1 -> empty vial (3-tick delay): Wiki boosts (+3 +10% / super
  *   +5 +15%), restore (+10 +30%), super restore (+8 +25%, incl. prayer), prayer (+7 +25%),
- *   energy (+10% / +20% run), antipoisons cure poison and grant immunity (90 s / 6 min).
+ *   energy (+10% / +20% run), antipoisons cure poison and grant immunity (90 s / 6 / 9 / 12
+ *   min; on venom they turn it into poison), anti-venoms cure venom (Wiki immunity lengths).
  * - Fill empty vials at any sink, fountain, well or water pump (by loc name).
  */
 class Herblore
@@ -61,10 +63,9 @@ constructor(
         for (herb in HerbloreData.herbs) {
             onHeldOp(obj(herb.grimy), "clean") { clean(herb) }
         }
-        val water = obj(HerbloreData.VIAL_WATER)
         for (unf in HerbloreData.unfinished) {
-            val recipe = Recipe(unf.unf, unf.herb, HerbloreData.VIAL_WATER, unf.level, 0.0, 1)
-            onOpHeldU(obj(unf.herb), water) { selectMake(recipe) }
+            val recipe = Recipe(unf.unf, unf.herb, unf.base, unf.level, 0.0, 1)
+            onOpHeldU(obj(unf.herb), obj(unf.base)) { selectMake(recipe) }
         }
         for (potion in HerbloreData.potions) {
             val recipe =
@@ -238,6 +239,7 @@ constructor(
                 player.runEnergy = min(constants.run_max_energy, player.runEnergy + gain)
             }
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
+            is Effect.CureVenom -> player.cureVenom(effect.venomImmunityTicks)
             is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
             is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
             Effect.Stamina -> Stamina.drink(player)
