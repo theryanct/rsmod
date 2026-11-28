@@ -1,0 +1,61 @@
+# Generated from the OSRS Wiki page "Transcript:A Shell of a Friend/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by finding a <col=800000>Lost Snail</col> in the <col=800000>Haunted Woods</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Priest in Peril
+req	Level 16 Herblore
+req	Level 15 Construction
+before	
+before	<col=000080>Recommendations:</col>
+req	Combat Level 40
+step	1	-	After starting the quest
+line	<col=000080>I found a <col=800000>Young Snail</col> on a small island in the <col=800000>Haunted Woods</col>. It seemed lost and afraid. I decided to help it out by gathering it some food. I'll probably be able to find some <col=800000>Leaves</col> for it to eat nearby.</col>
+step	2	-	After gathering the leaves
+step	3	-	After killing the leech
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<col=000080>I collected some <col=800000>Leaves</col> from nearby for the <col=800000>Snail</col> to eat. However, upon my return, I found it being attacked by a <col=800000>Leech</col>. I was able to quickly defeat it, but not before the <col=800000>Snail</col> was injured. I'll need to search nearby to find something to use as a <col=800000>Balm</col> to heal the <col=800000>Snail</col> with.</col>
+step	4	-	After collecting dew
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<col=000080>I collected some <col=800000>Leaves</col> from nearby for the <col=800000>Snail</col> to eat. However, upon my return, I found it being attacked by a <col=800000>Leech</col>. I was able to quickly defeat it, but not before the <col=800000>Snail</col> was injured. I searched nearby and found some <col=800000>Dew</col>. I should use it to heal the <col=800000>Snail</col>.</col>
+step	5	-	After healing the snail
+step	6	-	After naming the snail
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<col=000080>I decided to give the <col=800000>Snail</col> a name: <col=800000>[snail name]</col>. It seemed happy with my choice. I should see how it's doing now.</col>
+step	7	-	Building a snail shelter
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<col=000080>I decided to give the <col=800000>Snail</col> a name: <col=800000>[snail name]</col>. It seemed happy with my choice. To better protect <col=800000>[snail name]</col> from danger, I decided to build a shelter. I should hopefully be able to find the materials to do so nearby.</col>
+step	8	-	After building the shelter
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<col=000080>I decided to give the <col=800000>Snail</col> a name: <col=800000>[snail name]</col>. It seemed happy with my choice. To better protect <col=800000>[snail name]</col> from danger, I decided to build a shelter. I should see how <col=800000>[snail name]</col> feels about it.</col>
+step	9	-	Collecting food
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<str>I decided to give the Snail a name: [snail name]. It seemed happy with my choice. To better protect [snail name] from danger, I decided to build a shelter.</str>
+line	<col=000080>With a shelter built for <col=800000>[snail name]</col>, it seemed like it was time for us to part ways. However, I decided to gather a few more <col=800000>Leaves</col> for it to eat first.</col>
+step	10	-	After collecting the leaves
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<str>I decided to give the Snail a name: [snail name]. It seemed happy with my choice. To better protect [snail name] from danger, I decided to build a shelter.</str>
+line	<col=000080>With a shelter built for <col=800000>[snail name]</col>, it seemed like it was time for us to part ways. However, I decided to gather a bit more food first. With that done, it's now time to say goodbye to <col=800000>[snail name]</col>.</col>
+step	11	-	Avenging the fallen
+line	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+line	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+line	<str>I decided to give the Snail a name: [snail name]. It seemed happy with my choice. To better protect [snail name] from danger, I decided to build a shelter.</str>
+line	<col=000080>With a shelter built for <col=800000>[snail name]</col>, it seemed like it was time for us to part ways. However, I decided to gather a bit more food first. I collected some more <col=800000>Leaves</col>, but upon my return, <col=800000>[snail name]</col> was nowhere to be found. However, someone was there wearing a horrifyingly familiar looking <col=800000>Snelm</col>. There is only one path ahead of me now. They must die.</col>
+done	<str>I found a Young Snail on a small island in the Haunted Woods. It seemed lost and afraid. I decided to help it out by gathering it some food.</str>
+done	<str>I collected some Leaves from nearby for the Snail to eat. However, upon my return, I found it being attacked by a Leech. I was able to quickly defeat it, but not before the Snail was injured. I searched nearby and found some Dew which I was able to heal the Snail with.</str>
+done	<str>I decided to give the Snail a name: [snail name]. It seemed happy with my choice. To better protect [snail name] from danger, I decided to build a shelter.</str>
+done	<str>With a shelter built for [snail name], it seemed like it was time for us to part ways. However, I decided to gather a bit more food first. I collected some more Leaves, but upon my return, [snail name] was nowhere to be found. However, someone was there wearing a horrifyingly familiar looking Snelm. At that point, I did the only thing I could. I killed them. I can never undo what happened, but I can take some small solace in the fact that justice was served.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

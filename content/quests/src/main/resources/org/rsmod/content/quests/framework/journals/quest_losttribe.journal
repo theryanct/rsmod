@@ -1,0 +1,611 @@
+# Generated from the OSRS Wiki page "The Lost Tribe/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Sigmund</col> in <col=800000>Lumbridge Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 13 Agility
+req	Level 13 Thieving
+req	Level 17 Mining
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Sigmund</col> on the uk=1 of the Lumbridge Castle.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<col=000080>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<col=000080>Talk to <col=800000>Duke Horacio</col> again. ( if started Dragon Slayer)</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<col=000080>Climb-down the trapdoor in the kitchen on the uk=0.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<col=000080>Use your <col=800000>pickaxe</col> on the rubble in the basement and climb through the hole.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<col=000080>Light your <col=800000>light source</col> and grab the <col=800000>brooch</col> which sits on the floor about 10 steps into cave.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<col=000080>Show the brooch to the duke. or or</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<col=000080>Go to the <col=800000>Varrock Palace</col> library in <col=800000>Varrock</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<col=000080>Talk to <col=800000>Reldo</col>. or if not started shield of Arrav</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<col=000080>Search the northern <col=800000>bookcase</col> on the west wall for goblin symbol book.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<col=000080>Read through the book.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<col=000080>Go to <col=800000>Goblin Village</col> and talk to the generals, and mediate for them until you learn goblin emotes.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<col=000080>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<col=000080>At the end of the cave talk to <col=800000>Mistag</col>, and do your <col=800000>Goblin Bow</col> in front of him.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<col=000080>Talk to Mistag then let him take you back to Lumbridge.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<col=000080>Talk to the duke. He won't believe you. or</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<col=000080>Pickpocket Sigmund and unlock his chest in the other room to find some <col=800000>HAM robes</col>. Keep them for <col=800000>Death to the Dorgeshuun</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<col=000080>Go to the <col=800000>HAM lair</col> west of Lumbridge Castle.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+line	
+line	<col=000080>Pick the lock on the trapdoor and enter the lair.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+line	
+line	<str>Pick the lock on the trapdoor and enter the lair.</str>
+line	
+line	<col=000080>Search the crate south of the ladder to find the stolen <col=800000>silverware</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+line	
+line	<str>Pick the lock on the trapdoor and enter the lair.</str>
+line	
+line	<str>Search the crate south of the ladder to find the stolen silverware.</str>
+line	
+line	<col=000080>Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+line	
+line	<str>Pick the lock on the trapdoor and enter the lair.</str>
+line	
+line	<str>Search the crate south of the ladder to find the stolen silverware.</str>
+line	
+line	<str>Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty.</str>
+line	
+line	<col=000080>Go into the basement again. Follow <col=800000>Kazgar</col> to travel to Mistag.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+line	
+line	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+line	
+line	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+line	
+line	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+line	
+line	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+line	
+line	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+line	
+line	<str>Show the brooch to the duke. or or</str>
+line	
+line	<str>Go to the Varrock Palace library in Varrock.</str>
+line	
+line	<str>Talk to Reldo. or if not started shield of Arrav</str>
+line	
+line	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+line	
+line	<str>Read through the book.</str>
+line	
+line	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+line	
+line	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+line	
+line	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+line	
+line	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+line	
+line	<str>Talk to the duke. He won't believe you. or</str>
+line	
+line	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+line	
+line	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+line	
+line	<str>Pick the lock on the trapdoor and enter the lair.</str>
+line	
+line	<str>Search the crate south of the ladder to find the stolen silverware.</str>
+line	
+line	<str>Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty.</str>
+line	
+line	<str>Go into the basement again. Follow Kazgar to travel to Mistag.</str>
+line	
+line	<col=000080>Talk to Mistag, with the peace treaty in your inventory, and a cutscene will play.</col>
+done	<str>Talk to Sigmund on the uk=1 of the Lumbridge Castle.</str>
+done	
+done	<str>Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.</str>
+done	
+done	<str>Talk to Duke Horacio again. ( if started Dragon Slayer)</str>
+done	
+done	<str>Climb-down the trapdoor in the kitchen on the uk=0.</str>
+done	
+done	<str>Use your pickaxe on the rubble in the basement and climb through the hole.</str>
+done	
+done	<str>Light your light source and grab the brooch which sits on the floor about 10 steps into cave.</str>
+done	
+done	<str>Show the brooch to the duke. or or</str>
+done	
+done	<str>Go to the Varrock Palace library in Varrock.</str>
+done	
+done	<str>Talk to Reldo. or if not started shield of Arrav</str>
+done	
+done	<str>Search the northern bookcase on the west wall for goblin symbol book.</str>
+done	
+done	<str>Read through the book.</str>
+done	
+done	<str>Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.</str>
+done	
+done	<str>Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)</str>
+done	
+done	<str>At the end of the cave talk to Mistag, and do your Goblin Bow in front of him.</str>
+done	
+done	<str>Talk to Mistag then let him take you back to Lumbridge.</str>
+done	
+done	<str>Talk to the duke. He won't believe you. or</str>
+done	
+done	<str>Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun.</str>
+done	
+done	<str>Go to the HAM lair west of Lumbridge Castle.</str>
+done	
+done	<str>Pick the lock on the trapdoor and enter the lair.</str>
+done	
+done	<str>Search the crate south of the ladder to find the stolen silverware.</str>
+done	
+done	<str>Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty.</str>
+done	
+done	<str>Go into the basement again. Follow Kazgar to travel to Mistag.</str>
+done	
+done	<str>Talk to Mistag, with the peace treaty in your inventory, and a cutscene will play.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

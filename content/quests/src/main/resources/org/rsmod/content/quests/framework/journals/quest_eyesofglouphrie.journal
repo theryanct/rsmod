@@ -1,0 +1,472 @@
+# Generated from the OSRS Wiki page "The Eyes of Glouphrie/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Brimstail</col> in his <col=800000>cave</col> south-west side of the <col=800000>Tree Gnome Stronghold</col>, directly west of the bank near the <col=800000>Stronghold Slayer Cave</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 5 Construction
+req	Level 46 Magic
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Brimstail</col> in the cave found in the south-west corner of the Gnome Stronghold.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<col=000080>Inspect the singing bowl in the western portion of the cave.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<col=000080>To the north, attempt to unlock Oaknock's Machine.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<col=000080>Talk to Brimstail.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<col=000080>Talk to <col=800000>Hazelmere</col>, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, <col=800000>Nightmare Zone</col> <col=800000>minigame teleport</col> or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a <col=800000>Violet pentagon</col> in your backpack.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<col=000080>Return to Brimstail.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<col=000080>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<col=000080>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<col=000080>Repair Oaknock's machine (click on the machine twice).</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<col=000080>Talk to Brimstail.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<col=000080>Talk to Brimstail twice more to receive more discs.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<col=000080>Optional: Drop the discs and talk to Brimstail to receive even more discs.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<col=000080>Head back to the Oaknock's machine and unlock the machine.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<col=000080>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<col=000080>Talk to Brimstail for more discs.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<str>Talk to Brimstail for more discs.</str>
+line	
+line	<col=000080>Complete the three puzzles inside the unlocked machine</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<str>Talk to Brimstail for more discs.</str>
+line	
+line	<str>Complete the three puzzles inside the unlocked machine</str>
+line	
+line	<col=000080>Talk to Brimstail.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<str>Talk to Brimstail for more discs.</str>
+line	
+line	<str>Complete the three puzzles inside the unlocked machine</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<col=000080>Talk to Brimstail again.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<str>Talk to Brimstail for more discs.</str>
+line	
+line	<str>Complete the three puzzles inside the unlocked machine</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail again.</str>
+line	
+line	<col=000080>Kill all Evil Creatures: (wait for the whole death animation to end before running or teleporting away!). Their colour is now black.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+line	
+line	<str>Inspect the singing bowl in the western portion of the cave.</str>
+line	
+line	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+line	
+line	<str>Return to Brimstail.</str>
+line	
+line	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+line	
+line	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+line	
+line	<str>Repair Oaknock's machine (click on the machine twice).</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail twice more to receive more discs.</str>
+line	
+line	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+line	
+line	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+line	
+line	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+line	
+line	<str>Talk to Brimstail for more discs.</str>
+line	
+line	<str>Complete the three puzzles inside the unlocked machine</str>
+line	
+line	<str>Talk to Brimstail.</str>
+line	
+line	<str>Talk to Brimstail again.</str>
+line	
+line	<str>Kill all Evil Creatures: (wait for the whole death animation to end before running or teleporting away!). Their colour is now black.</str>
+line	
+line	<col=000080>Talk to King Narnode.</col>
+done	<str>Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.</str>
+done	
+done	<str>Inspect the singing bowl in the western portion of the cave.</str>
+done	
+done	<str>To the north, attempt to unlock Oaknock's Machine.</str>
+done	
+done	<str>Talk to Brimstail.</str>
+done	
+done	<str>Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack.</str>
+done	
+done	<str>Return to Brimstail.</str>
+done	
+done	<str>Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.</str>
+done	
+done	<str>Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.</str>
+done	
+done	<str>Repair Oaknock's machine (click on the machine twice).</str>
+done	
+done	<str>Talk to Brimstail.</str>
+done	
+done	<str>Talk to Brimstail twice more to receive more discs.</str>
+done	
+done	<str>Optional: Drop the discs and talk to Brimstail to receive even more discs.</str>
+done	
+done	<str>Head back to the Oaknock's machine and unlock the machine.</str>
+done	
+done	<str>Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)</str>
+done	
+done	<str>Talk to Brimstail for more discs.</str>
+done	
+done	<str>Complete the three puzzles inside the unlocked machine</str>
+done	
+done	<str>Talk to Brimstail.</str>
+done	
+done	<str>Talk to Brimstail again.</str>
+done	
+done	<str>Kill all Evil Creatures: (wait for the whole death animation to end before running or teleporting away!). Their colour is now black.</str>
+done	
+done	<str>Talk to King Narnode.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

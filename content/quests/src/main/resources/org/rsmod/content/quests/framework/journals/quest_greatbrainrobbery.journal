@@ -1,0 +1,1003 @@
+# Generated from the OSRS Wiki page "The Great Brain Robbery/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Brother Tranquility</col> in <col=800000>Mos Le'Harmless</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 16 Crafting
+req	Level 30 Construction
+req	Level 50 Prayer
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Brother Tranquility</col> on <col=800000>Mos Le'Harmless</col> near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<col=000080>Leave the windmill and head north, pull on the statue and climb down.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<col=000080>Equip your item(s) to breath underwater then descend.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<col=000080>Repair the stairs at the end of the tunnel and climb up.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<col=000080>Climb up the ladder then peer through the peephole.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<col=000080>Return to <col=800000>Brother Tranquility</col>, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<col=000080>Go to the <col=800000>Edgeville Monastery</col> and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see <col=800000>Brother Jered</col>)</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<col=000080>Read the book.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<col=000080>Equip a <col=800000>Holy Symbol</col> and return to <col=800000>Mos Le' Harmless</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<col=000080>Talk to <col=800000>Brother Tranquility</col> to return to Harmony Island.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<col=000080>Right click the book "recite prayer" inside of the windmill.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<col=000080>Talk to Brother Tranquility.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dr Fenkenstrain</col> (jail on the top floor of his castle north-east of <col=800000>Canifis</col>).</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<col=000080>Equip your <col=800000>Ring of Charos</col>, keep it equipped through this section.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<col=000080>Talk to <col=800000>Rufus</col> in Canifis (food store). (until you receive a <col=800000>wolf whistle</col> and a <col=800000>crate part</col>)</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<col=000080>Make 10 <col=800000>wooden cat</col>s on a clockmaker's bench in your house (10 planks and 10 furs).</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<col=000080>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<col=000080>Blow the wolf whistle.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<col=000080>Rufus will appear and will give you a <col=800000>Shipping order</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<col=000080>Put the Shipping order on the crate.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<col=000080>Return to <col=800000>Harmony Island</col> and enter the windmill basement.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dr Fenkenstrain</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<col=000080>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<col=000080>Search the <col=800000>locker</col> for a <col=800000>fuse</col>. Climb the ladder and get a <col=800000>tinderbox</col> and a <col=800000>keg</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<col=000080>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+line	
+line	<col=000080>Enter and kill 4 <col=800000>Sorebones</col> for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+line	
+line	<str>Enter and kill 4 Sorebones for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</str>
+line	
+line	<col=000080>Climb-down the ladder in the mill and talk to Dr Fenkenstrain.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+line	
+line	<str>Enter and kill 4 Sorebones for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</str>
+line	
+line	<str>Climb-down the ladder in the mill and talk to Dr Fenkenstrain.</str>
+line	
+line	<col=000080>Climb up and talk to <col=800000>Brother Tranquility</col>, prepare for the fight.</col>
+step	29	-	Quick guide step 29
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+line	
+line	<str>Enter and kill 4 Sorebones for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</str>
+line	
+line	<str>Climb-down the ladder in the mill and talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Climb up and talk to Brother Tranquility, prepare for the fight.</str>
+line	
+line	<col=000080>Return to the Harmony island monastery and Confront <col=800000>Mi-Gor</col> to start the fight against <col=800000>Barrelchest</col>.</col>
+step	30	-	Quick guide step 30
+line	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+line	
+line	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+line	
+line	<str>Equip your item(s) to breath underwater then descend.</str>
+line	
+line	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+line	
+line	<str>Climb up the ladder then peer through the peephole.</str>
+line	
+line	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+line	
+line	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+line	
+line	<str>Read the book.</str>
+line	
+line	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+line	
+line	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+line	
+line	<str>Right click the book "recite prayer" inside of the windmill.</str>
+line	
+line	<str>Talk to Brother Tranquility.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+line	
+line	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+line	
+line	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+line	
+line	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+line	
+line	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+line	
+line	<str>Blow the wolf whistle.</str>
+line	
+line	<str>Rufus will appear and will give you a Shipping order.</str>
+line	
+line	<str>Put the Shipping order on the crate.</str>
+line	
+line	<str>Return to Harmony Island and enter the windmill basement.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+line	
+line	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+line	
+line	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+line	
+line	<str>Enter and kill 4 Sorebones for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</str>
+line	
+line	<str>Climb-down the ladder in the mill and talk to Dr Fenkenstrain.</str>
+line	
+line	<str>Climb up and talk to Brother Tranquility, prepare for the fight.</str>
+line	
+line	<str>Return to the Harmony island monastery and Confront Mi-Gor to start the fight against Barrelchest.</str>
+line	
+line	<col=000080>Talk to <col=800000>Brother Tranquility</col>.</col>
+done	<str>Talk to Brother Tranquility on Mos Le'Harmless near the dock. (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)</str>
+done	
+done	<str>Leave the windmill and head north, pull on the statue and climb down.</str>
+done	
+done	<str>Equip your item(s) to breath underwater then descend.</str>
+done	
+done	<str>Repair the stairs at the end of the tunnel and climb up.</str>
+done	
+done	<str>Climb up the ladder then peer through the peephole.</str>
+done	
+done	<str>Return to Brother Tranquility, talk to him to be transported back to Mos Le' Harmless , then talk to him again there.</str>
+done	
+done	<str>Go to the Edgeville Monastery and search the bookcase in the south-west corner of the uk=0. (This is a good time to bless your symbol if it isn't already, see Brother Jered)</str>
+done	
+done	<str>Read the book.</str>
+done	
+done	<str>Equip a Holy Symbol and return to Mos Le' Harmless.</str>
+done	
+done	<str>Talk to Brother Tranquility to return to Harmony Island.</str>
+done	
+done	<str>Right click the book "recite prayer" inside of the windmill.</str>
+done	
+done	<str>Talk to Brother Tranquility.</str>
+done	
+done	<str>Talk to Dr Fenkenstrain (jail on the top floor of his castle north-east of Canifis).</str>
+done	
+done	<str>Equip your Ring of Charos, keep it equipped through this section.</str>
+done	
+done	<str>Talk to Rufus in Canifis (food store). (until you receive a wolf whistle and a crate part)</str>
+done	
+done	<str>Make 10 wooden cats on a clockmaker's bench in your house (10 planks and 10 furs).</str>
+done	
+done	<str>Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.</str>
+done	
+done	<str>Blow the wolf whistle.</str>
+done	
+done	<str>Rufus will appear and will give you a Shipping order.</str>
+done	
+done	<str>Put the Shipping order on the crate.</str>
+done	
+done	<str>Return to Harmony Island and enter the windmill basement.</str>
+done	
+done	<str>Talk to Dr Fenkenstrain.</str>
+done	
+done	<str>Equip your item(s) to breathe underwater before leaving the windmill and go north to the shipwreck.</str>
+done	
+done	<str>Search the locker for a fuse. Climb the ladder and get a tinderbox and a keg.</str>
+done	
+done	<str>Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.</str>
+done	
+done	<str>Enter and kill 4 Sorebones for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.</str>
+done	
+done	<str>Climb-down the ladder in the mill and talk to Dr Fenkenstrain.</str>
+done	
+done	<str>Climb up and talk to Brother Tranquility, prepare for the fight.</str>
+done	
+done	<str>Return to the Harmony island monastery and Confront Mi-Gor to start the fight against Barrelchest.</str>
+done	
+done	<str>Talk to Brother Tranquility.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

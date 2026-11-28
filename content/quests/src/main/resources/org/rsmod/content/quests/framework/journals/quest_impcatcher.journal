@@ -1,0 +1,34 @@
+# Generated from the OSRS Wiki page "Transcript:Imp Catcher/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Wizard Mizgog</col> in the <col=800000>Wizards' Tower</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<str>I have spoken to Wizard Mizgog.</str>
+line	
+line	<col=000080>I need to collect some items by killing <col=800000>Imps</col>, I can find Imps all over the kingdom.</col>
+line	<col=800000>1 Black Bead.</col>
+line	<col=800000>1 Red Bead.</col>
+line	<col=800000>1 White Bead.</col>
+line	<col=800000>1 Yellow Bead.</col>
+step	2	-	While carrying all four beads
+line	<str>I have spoken to Wizard Mizgog.</str>
+line	
+line	<col=000080>I have collected all the missing beads and need to return them to <col=800000>Wizard Mizgog</col>.</col>
+done	<str>I have spoken to Wizard Mizgog.</str>
+done	
+done	<str>I have collected all the beads.</str>
+done	
+done	<str>Wizard Mizgog thanked me for finding his beads and gave me an Amulet of Accuracy.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

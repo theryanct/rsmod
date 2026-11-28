@@ -1,0 +1,21 @@
+# Generated from the OSRS Wiki page "Doric's Quest/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Doric</col> in the small house north of <col=800000>Falador</col>, just outside the east gate of <col=800000>Taverley</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Obtain 2 <col=800000>iron ore</col>s, 4 <col=800000>copper ore</col>s, and 6 <col=800000>clay</col> un-noted from either of the following methods:</col>
+step	2	-	Quick guide step 2
+line	<str>Obtain 2 iron ores, 4 copper ores, and 6 clay un-noted from either of the following methods:</str>
+line	
+line	<col=000080>Talk to <col=800000>Doric</col> with the un-noted items in your inventory.</col>
+done	<str>Obtain 2 iron ores, 4 copper ores, and 6 clay un-noted from either of the following methods:</str>
+done	
+done	<str>Talk to Doric with the un-noted items in your inventory.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,1004 @@
+# Generated from the OSRS Wiki page "The Giant Dwarf/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>Dwarven Boatman</col> by the underground <col=800000>River Kelda</col>, accessible through the Keldagrim entrance east of <col=800000>Rellekka</col>, in the cave beyond the statues.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 12 Crafting
+req	Level 16 Firemaking
+req	Level 33 Magic
+req	Level 14 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to the <col=800000>Dwarven Boatman</col>. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<col=000080>Finish the conversation with <col=800000>Commander Veldaban</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<col=000080>Talk to <col=800000>Blasidar the sculptor</col> on the east side of <col=800000>Keldagrim</col>, south of the kebab shop.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<col=000080>Talk to <col=800000>Vermundi</col>, the silk trader in the eastern market. (Big building east side of river, silk icon)</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<col=000080>Talk to the <col=800000>Librarian</col> in the <col=800000>library</col>, located at the north-east corner of West Keldagrim.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<col=000080>Climb any bookcase to find a <col=800000>book on costumes</col> known as the 'Scholars Guide to Dwarven Costumes'.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<col=000080>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from <col=800000>Ordan</col> in the <col=800000>Blast Furnace</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<col=000080>Talk to <col=800000>Vermundi</col> again.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<col=000080>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<col=000080>Talk to <col=800000>Vermundi</col> again and pay 200gp for <col=800000>exquisite clothes</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<col=000080>If you didn't bring the 3 <col=800000>Sapphire</col>s, they can be purchased from <col=800000>Hervi</col> at the <col=800000>Gem stall</col> just to the north of <col=800000>Vermundi</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<col=000080>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<col=000080>Talk to <col=800000>Saro</col> at the anvil south-west of the bank in <col=800000>West Keldagrim</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<col=000080>Speak to <col=800000>Dromund</col> in the house just north of the bank.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<col=000080>Take the <col=800000>left boot</col> when he isn't looking.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<col=000080>Go outside behind his house and telegrab the <col=800000>right boot</col> through the window when he isn't looking.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<col=000080>Talk to <col=800000>Santiri</col> at the weapon shop in north-western West Keldagrim.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<col=000080>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<col=000080>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<col=000080>Talk to <col=800000>Thurgo</col> at <col=800000>Mudskipper Point</col> (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<col=000080>You will be given the option to immediately return to Keldagrim; do so.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<col=000080>Once in Blasidar's house, talk to <col=800000>Riki the sculptor's model</col> to give him the clothes, axe and boots.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<col=000080>Talk to Blasidar. Watch the cutscene.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<col=000080>Go to the upper floor of the market and talk to the secretary of any company except the <col=800000>Red Axe</col>. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from <col=800000>Ordan</col> in the Blast Furnace to save time.</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<col=000080>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+line	
+line	<col=000080>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</col>
+step	27	-	Quick guide step 27
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+line	
+line	<str>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</str>
+line	
+line	<col=000080>Talk to the director after making enough progress and complete a few tasks for them.</col>
+step	28	-	Quick guide step 28
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+line	
+line	<str>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</str>
+line	
+line	<str>Talk to the director after making enough progress and complete a few tasks for them.</str>
+line	
+line	<col=000080>After enough tasks, the director asks whether you've considered joining their company or states that you don't need to be doing running errands for them anymore. Join the company.</col>
+step	29	-	Quick guide step 29
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+line	
+line	<str>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</str>
+line	
+line	<str>Talk to the director after making enough progress and complete a few tasks for them.</str>
+line	
+line	<str>After enough tasks, the director asks whether you've considered joining their company or states that you don't need to be doing running errands for them anymore. Join the company.</str>
+line	
+line	<col=000080>Tell the director that Blasidar sent you, offer your support.</col>
+step	30	-	Quick guide step 30
+line	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+line	
+line	<str>Finish the conversation with Commander Veldaban.</str>
+line	
+line	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+line	
+line	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+line	
+line	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+line	
+line	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+line	
+line	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+line	
+line	<str>Talk to Vermundi again.</str>
+line	
+line	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+line	
+line	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+line	
+line	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+line	
+line	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+line	
+line	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+line	
+line	<str>Speak to Dromund in the house just north of the bank.</str>
+line	
+line	<str>Take the left boot when he isn't looking.</str>
+line	
+line	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+line	
+line	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+line	
+line	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+line	
+line	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+line	
+line	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+line	
+line	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+line	
+line	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+line	
+line	<str>Talk to Blasidar. Watch the cutscene.</str>
+line	
+line	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+line	
+line	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+line	
+line	<str>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</str>
+line	
+line	<str>Talk to the director after making enough progress and complete a few tasks for them.</str>
+line	
+line	<str>After enough tasks, the director asks whether you've considered joining their company or states that you don't need to be doing running errands for them anymore. Join the company.</str>
+line	
+line	<str>Tell the director that Blasidar sent you, offer your support.</str>
+line	
+line	<col=000080>Go back and talk to Commander Veldaban west of the bank, he will ask if you want to attend the meeting. You may choose not to.</col>
+done	<str>Speak to the Dwarven Boatman. (DKS then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. )</str>
+done	
+done	<str>Finish the conversation with Commander Veldaban.</str>
+done	
+done	<str>Talk to Blasidar the sculptor on the east side of Keldagrim, south of the kebab shop.</str>
+done	
+done	<str>Talk to Vermundi, the silk trader in the eastern market. (Big building east side of river, silk icon)</str>
+done	
+done	<str>Talk to the Librarian in the library, located at the north-east corner of West Keldagrim.</str>
+done	
+done	<str>Climb any bookcase to find a book on costumes known as the 'Scholars Guide to Dwarven Costumes'.</str>
+done	
+done	<str>If you didn't bring coal, mine in the north-east corner of East Keldagrim or purchase from Ordan in the Blast Furnace.</str>
+done	
+done	<str>Talk to Vermundi again.</str>
+done	
+done	<str>Use your coal and logs on the spinning machine next to Vermundi then light it with a tinderbox.</str>
+done	
+done	<str>Talk to Vermundi again and pay 200gp for exquisite clothes.</str>
+done	
+done	<str>If you didn't bring the 3 Sapphires, they can be purchased from Hervi at the Gem stall just to the north of Vermundi.</str>
+done	
+done	<str>While here, steal from the baker's or crafting stall for completion of a task in the Easy Fremennik Diary (optional)</str>
+done	
+done	<str>Talk to Saro at the anvil south-west of the bank in West Keldagrim.</str>
+done	
+done	<str>Speak to Dromund in the house just north of the bank.</str>
+done	
+done	<str>Take the left boot when he isn't looking.</str>
+done	
+done	<str>Go outside behind his house and telegrab the right boot through the window when he isn't looking.</str>
+done	
+done	<str>Talk to Santiri at the weapon shop in north-western West Keldagrim.</str>
+done	
+done	<str>Use your 3 sapphires on the axe (now in your inventory) and talk to him again.</str>
+done	
+done	<str>If you have not completed The Knight's Sword Quest then you must speak to the librarian and then to Reldo in Varrock Library.</str>
+done	
+done	<str>Talk to Thurgo at Mudskipper Point (AIQ), and give him an iron bar to repair the axe. ( May need a redberry pie if Thurgo has not received one recently).</str>
+done	
+done	<str>You will be given the option to immediately return to Keldagrim; do so.</str>
+done	
+done	<str>Once in Blasidar's house, talk to Riki the sculptor's model to give him the clothes, axe and boots.</str>
+done	
+done	<str>Talk to Blasidar. Watch the cutscene.</str>
+done	
+done	<str>Go to the upper floor of the market and talk to the secretary of any company except the Red Axe. . Ensure you perform tasks only for the company you choose, as the progress for each is separate. Buy the ores from Ordan in the Blast Furnace to save time.</str>
+done	
+done	<str>Offer to help them. The secretaries require you to retrieve ores (cannot be noted). Be sure to read the dialogue to know what ores you need or fill your inventory with about 5 of each.</str>
+done	
+done	<str>A hidden scoring system determines your progress with a company; each ore delivery completed gives 20 points, while failing or refusing a task subtracts 2 points. Once you reach 75 points, you can deliver metal bars for the director for 12 points each; 100 points is required to progress through this section.</str>
+done	
+done	<str>Talk to the director after making enough progress and complete a few tasks for them.</str>
+done	
+done	<str>After enough tasks, the director asks whether you've considered joining their company or states that you don't need to be doing running errands for them anymore. Join the company.</str>
+done	
+done	<str>Tell the director that Blasidar sent you, offer your support.</str>
+done	
+done	<str>Go back and talk to Commander Veldaban west of the bank, he will ask if you want to attend the meeting. You may choose not to.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,191 @@
+# Generated from the OSRS Wiki page "Below Ice Mountain/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Willow</col> on the path south of <col=800000>Ice Mountain</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	16 Quest Points
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Willow</col> on the path south of Ice Mountain, north of Falador.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<col=000080>Speak to <col=800000>Checkal</col> in <col=800000>Barbarian Village</col> near the pottery oven building.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<col=000080>Speak to <col=800000>Atlas</col> in <col=800000>The Long Hall</col> tavern in Barbarian Village and complete training.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<col=000080>Return to Checkal and use the <col=800000>Flex</col> emote when prompted.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<col=000080>Speak to <col=800000>Marley</col> in <col=800000>Edgeville</col> at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<col=000080>Speak to the <col=800000>cook</col> in the east room of <col=800000>Blue Moon Inn</col> in Varrock. He will give you the steak sandwich recipe.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<col=000080>Create a <col=800000>steak sandwich</col> by using a <col=800000>knife</col> on <col=800000>cooked meat</col> while having <col=800000>bread</col> in your inventory.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+line	
+line	<col=000080>Speak to <col=800000>Marley</col> in <col=800000>Edgeville</col> at the yew trees with the steak sandwich in your inventory.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory.</str>
+line	
+line	<col=000080>Speak to <col=800000>Burntof</col> in the <col=800000>Rising Sun Inn</col> in Falador.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory.</str>
+line	
+line	<str>Speak to Burntof in the Rising Sun Inn in Falador.</str>
+line	
+line	<col=000080>Choose any option in the game of rock paper scissors.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory.</str>
+line	
+line	<str>Speak to Burntof in the Rising Sun Inn in Falador.</str>
+line	
+line	<str>Choose any option in the game of rock paper scissors.</str>
+line	
+line	<col=000080>Go to the <col=800000>entrance</col> of the <col=800000>Ruins of Camdozaal</col>, at the west side of the <col=800000>Ice Mountain</col>, and talk to Willow (dungeon icon on minimap).</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+line	
+line	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+line	
+line	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+line	
+line	<str>Return to Checkal and use the Flex emote when prompted.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+line	
+line	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+line	
+line	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+line	
+line	<str>Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory.</str>
+line	
+line	<str>Speak to Burntof in the Rising Sun Inn in Falador.</str>
+line	
+line	<str>Choose any option in the game of rock paper scissors.</str>
+line	
+line	<str>Go to the entrance of the Ruins of Camdozaal, at the west side of the Ice Mountain, and talk to Willow (dungeon icon on minimap).</str>
+line	
+line	<col=000080>After the cutscene, kill the level 25 <col=800000>Ancient Guardian</col> by attacking it or mining the 4 <col=800000>structural pillar</col>s in the corners.</col>
+done	<str>Talk to Willow on the path south of Ice Mountain, north of Falador.</str>
+done	
+done	<str>Speak to Checkal in Barbarian Village near the pottery oven building.</str>
+done	
+done	<str>Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.</str>
+done	
+done	<str>Return to Checkal and use the Flex emote when prompted.</str>
+done	
+done	<str>Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.</str>
+done	
+done	<str>Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.</str>
+done	
+done	<str>Create a steak sandwich by using a knife on cooked meat while having bread in your inventory.</str>
+done	
+done	<str>Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory.</str>
+done	
+done	<str>Speak to Burntof in the Rising Sun Inn in Falador.</str>
+done	
+done	<str>Choose any option in the game of rock paper scissors.</str>
+done	
+done	<str>Go to the entrance of the Ruins of Camdozaal, at the west side of the Ice Mountain, and talk to Willow (dungeon icon on minimap).</str>
+done	
+done	<str>After the cutscene, kill the level 25 Ancient Guardian by attacking it or mining the 4 structural pillars in the corners.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

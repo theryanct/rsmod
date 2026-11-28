@@ -1,0 +1,166 @@
+# Generated from the OSRS Wiki page "Transcript:The Dig Site/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+step	1	-	Getting the Curator's approval
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<col=000080>I should take the <col=800000>letter</col> the <col=800000>Examiner</col> has given me to the <col=800000>Curator of Varrock Museum</col> for his approval.</col>
+step	2	-	Returning with the letter of recommendation
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<col=000080>I need to return the <col=800000>letter of recommendation</col> from the <col=800000>Curator of Varrock Museum</col> to the <col=800000>Examiner</col> at the Exam Centre for inspection.</col>
+step	3	-	Studying for the first exam
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+line	<col=000080>I need to study for my first exam. Perhaps the <col=800000>students</col> on the digsite can help?</col>
+step	4	-	Studying for the second exam
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the orange shirt. He has lost his Special Cup and thinks he may have dropped it around the tents near the panning site. I need to find it and return it to him.</str>
+line	<str>I should talk to him to see if he can help with my exams.</str>
+line	<str>He gave me an answer to one of the questions on the first exam.</str>
+line	<str>I should talk to the Examiner to take my first exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my first Earth Science exam.</str>
+line	<col=000080>I need to study for my second exam. Perhaps the three students on the digsite can help me again?</col>
+line	<col=000080>I need to speak to the student in the green top about the exams.</col>
+line	<col=000080>I need to speak to the student in the purple skirt about the exams.</col>
+line	<col=000080>I need to speak to the student in the orange top about the exams.</col>
+step	5	-	Studying for the third exam
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the orange shirt. He has lost his Special Cup and thinks he may have dropped it around the tents near the panning site. I need to find it and return it to him.</str>
+line	<str>I should talk to him to see if he can help with my exams.</str>
+line	<str>He gave me an answer to one of the questions on the first exam.</str>
+line	<str>I should talk to the Examiner to take my first exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my first Earth Science exam.</str>
+line	<str>I need to study for my second exam. Perhaps the three students on the digsite can help me again?</str>
+line	<str>I need to speak to the student in the green top about the exams.</str>
+line	<str>I need to speak to the student in the purple skirt about the exams.</str>
+line	<str>I need to speak to the student in the orange top about the exams.</str>
+line	<str>I should talk to the Examiner to take my second exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my second Earth Science exam.</str>
+line	<col=000080>I need to study for my third exam. Perhaps the students on the digsite can help?</col>
+line	<col=000080>I need to speak to the student in the green top about the exams.</col>
+line	<col=000080>I need to speak to the student in the purple skirt about the exams.</col>
+line	<col=000080>I need to speak to the student in the orange top about the exams.</col>
+step	6	-	The third exam
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the orange shirt. He has lost his Special Cup and thinks he may have dropped it around the tents near the panning site. I need to find it and return it to him.</str>
+line	<str>I should talk to him to see if he can help with my exams.</str>
+line	<str>He gave me an answer to one of the questions on the first exam.</str>
+line	<str>I should talk to the Examiner to take my first exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my first Earth Science exam.</str>
+line	<str>I need to study for my second exam. Perhaps the three students on the digsite can help me again?</str>
+line	<str>I need to speak to the student in the green top about the exams.</str>
+line	<str>I need to speak to the student in the purple skirt about the exams.</str>
+line	<str>I need to speak to the student in the orange top about the exams.</str>
+line	<str>I should talk to the Examiner to take my second exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my second Earth Science exam.</str>
+line	<str>I need to study for my third exam. Perhaps the students on the digsite can help?</str>
+line	<str>I need to speak to the student in the green top about the exams.</str>
+line	<str>I need to speak to the student in the purple skirt about the exams.</str>
+line	<str>I need to bring her an opal.</str>
+line	<str>I need to speak to the student in the orange top about the exams.</str>
+line	<col=000080>I should talk to the Examiner to take my third exam. If I have forgotten anything I can always ask the students again.</col>
+step	7	-	Making a discovery
+step	8	-	Finishing up
+line	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+line	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+line	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+line	<str>I should talk to her to see if she can help with my exams.</str>
+line	<str>She gave me an answer to one of the questions on the first exam.</str>
+line	
+line	<str>I agreed to help the student in the orange shirt. He has lost his Special Cup and thinks he may have dropped it around the tents near the panning site. I need to find it and return it to him.</str>
+line	<str>I should talk to him to see if he can help with my exams.</str>
+line	<str>He gave me an answer to one of the questions on the first exam.</str>
+line	<str>I should talk to the Examiner to take my first exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my first Earth Science exam.</str>
+line	<str>I need to study for my second exam. Perhaps the three students on the digsite can help me again?</str>
+line	<str>I need to speak to the student in the green top about the exams.</str>
+line	<str>I need to speak to the student in the purple skirt about the exams.</str>
+line	<str>I need to speak to the student in the orange top about the exams.</str>
+line	<str>I should talk to the Examiner to take my second exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I have passed my second Earth Science exam.</str>
+line	<str>I need to study for my third exam. Perhaps the students on the digsite can help?</str>
+line	<str>I need to speak to the student in the green top about the exams.</str>
+line	<str>I need to speak to the student in the purple skirt about the exams.</str>
+line	<str>I need to bring her an opal.</str>
+line	<str>I need to speak to the student in the orange top about the exams.</str>
+line	<str>I should talk to the Examiner to take my third exam. If I have forgotten anything I can always ask the students again.</str>
+line	<str>I need a find from the digsite to impress the Expert.</str>
+line	<str>I need to take the letter to a workman near a winch.</str>
+line	<str>I need to investigate the dig shafts.</str>
+line	<str>I need to find a way to move the rocks blocking the way in the shaft. Perhaps someone can help me.</str>
+line	<str> I covered the rocks in the cave with an Explosive Compound.</str>
+line	<str>I need to ignite the Explosive Compound and blow up the rocks blocking the way.</str>
+line	<col=000080>I should look for an interesting find in the secret room I found, and show it to the <col=800000>Expert</col> at the Exam Centre.</col>
+done	<str>I should speak to the Examiner about taking Earth Science Exams.</str>
+done	<str>I should take the letter the Examiner has given me to the Curator of Varrock Museum for his approval.</str>
+done	<str>I need to return the letter of recommendation from the Curator of Varrock Museum to the Examiner at the Exam Centre for inspection.</str>
+done	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+done	<str>I should talk to her to see if she can help with my exams.</str>
+done	<str>She gave me an answer to one of the questions on the first exam.</str>
+done	
+done	<str>I agreed to help the student in the purple skirt. She has lost her Lucky Mascot and thinks she may have dropped it by one of the large urns at the edge of the digsite. I need to find it and return it to her.</str>
+done	<str>I should talk to her to see if she can help with my exams.</str>
+done	<str>She gave me an answer to one of the questions on the first exam.</str>
+done	
+done	<str>I agreed to help the student in the orange shirt. He has lost his Special Cup and thinks he may have dropped it around the tents near the panning site. I need to find it and return it to him.</str>
+done	<str>I should talk to him to see if he can help with my exams.</str>
+done	<str>He gave me an answer to one of the questions on the first exam.</str>
+done	<str>I should talk to the Examiner to take my first exam. If I have forgotten anything I can always ask the students again.</str>
+done	<str>I have passed my first Earth Science exam.</str>
+done	<str>I need to study for my second exam. Perhaps the three students on the digsite can help me again?</str>
+done	<str>I need to speak to the student in the green top about the exams.</str>
+done	<str>I need to speak to the student in the purple skirt about the exams.</str>
+done	<str>I need to speak to the student in the orange top about the exams.</str>
+done	<str>I should talk to the Examiner to take my second exam. If I have forgotten anything I can always ask the students again.</str>
+done	<str>I have passed my second Earth Science exam.</str>
+done	<str>I need to study for my third exam. Perhaps the students on the digsite can help?</str>
+done	<str>I need to speak to the student in the green top about the exams.</str>
+done	<str>I need to speak to the student in the purple skirt about the exams.</str>
+done	<str>I need to bring her an opal.</str>
+done	<str>I need to speak to the student in the orange top about the exams.</str>
+done	<str>I should talk to the Examiner to take my third exam. If I have forgotten anything I can always ask the students again.</str>
+done	<str>I need a find from the digsite to impress the Expert.</str>
+done	<str>I need to take the letter to a workman near a winch.</str>
+done	<str>I need to investigate the dig shafts.</str>
+done	<str>I need to find a way to move the rocks blocking the way in the shaft. Perhaps someone can help me.</str>
+done	<str> I covered the rocks in the cave with an Explosive Compound.</str>
+done	<str>I need to ignite the Explosive Compound and blow up the rocks blocking the way.</str>
+done	<str>I should look for an interesting find in the secret room I found, and show it to the Expert at the Exam Centre.</str>
+done	<str>The expert was impressed with the Zaros Tablet that I found, and I also discovered an ancient altar!</str>
+done	<str>I was rewarded for my findings.</str>
+done	<str>My work here is done.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

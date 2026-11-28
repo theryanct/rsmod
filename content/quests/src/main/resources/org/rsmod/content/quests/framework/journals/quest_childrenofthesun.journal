@@ -1,0 +1,51 @@
+# Generated from the OSRS Wiki page "Children of the Sun/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Noah</col> or <col=800000>Alina</col> in <col=800000>Varrock</col> square.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to either <col=800000>Noah</col> or <col=800000>Alina</col> east of <col=800000>Varrock Square</col>. Ask when the delegation will arrive.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.</str>
+line	
+line	<col=000080>Follow the guard without being seen by him:</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.</str>
+line	
+line	<str>Follow the guard without being seen by him:</str>
+line	
+line	<col=000080>Return to Varrock Square and talk to the <col=800000>Sergeant Tobyn</col> by the castle wall.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.</str>
+line	
+line	<str>Follow the guard without being seen by him:</str>
+line	
+line	<str>Return to Varrock Square and talk to the Sergeant Tobyn by the castle wall.</str>
+line	
+line	<col=000080>Identify the bandits posing as guards. Click on these guards to 'mark' them. They are in the following locations:</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.</str>
+line	
+line	<str>Follow the guard without being seen by him:</str>
+line	
+line	<str>Return to Varrock Square and talk to the Sergeant Tobyn by the castle wall.</str>
+line	
+line	<str>Identify the bandits posing as guards. Click on these guards to 'mark' them. They are in the following locations:</str>
+line	
+line	<col=000080>Talk to the sergeant again.</col>
+done	<str>Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.</str>
+done	
+done	<str>Follow the guard without being seen by him:</str>
+done	
+done	<str>Return to Varrock Square and talk to the Sergeant Tobyn by the castle wall.</str>
+done	
+done	<str>Identify the bandits posing as guards. Click on these guards to 'mark' them. They are in the following locations:</str>
+done	
+done	<str>Talk to the sergeant again.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

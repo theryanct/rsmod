@@ -1,0 +1,659 @@
+# Generated from the OSRS Wiki page "Waterfall Quest/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Almera</col> in her house north-east of <col=800000>Baxtorian Falls</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Almera</col> north-east of <col=800000>Baxtorian Falls</col>. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<col=000080>Board the raft west of the house.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<col=000080>Speak to <col=800000>Hudon</col>. Make sure to go through all dialogue or the upcoming book will not spawn.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<col=000080>Walk to the southern end of the island and swim in the water.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<col=000080>Enter the large building to the north, where <col=800000>Hadley</col> is.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<col=000080>Go upstairs and search the southernmost <col=800000>bookcase</col> on the eastern wall for a <col=800000>Book on Baxtorian</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<col=000080>Left-click Read <col=800000>Book on Baxtorian</col> and close the book again, or the key will not appear for the next part.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<col=000080>Enter the <col=800000>Tree Gnome Village</col> maze.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<col=000080>Enter the dungeon at the end of the maze.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<col=000080>Go east and search the off-coloured crate near the entrance of the room for a <col=800000>key</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<col=000080>Go west and open the gate ("door") with the key.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<col=000080>Speak to <col=800000>Golrie</col>, he will give you <col=800000>Glarial's pebble</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<col=000080>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<col=000080>Head to <col=800000>Glarial's Tombstone</col>, east of the Waterfall. Use the pebble on it to enter.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<col=000080>Go west, search the chest to find <col=800000>Glarial's amulet</col>. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<col=000080>Return and go the other way to search the tomb to find <col=800000>Glarial's urn</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<col=000080>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<col=000080>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<col=000080>Carry/equip Glarial's amulet and enter the doorway.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+line	
+line	<col=000080>Go to the right path and search the northernmost crates for a key.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+line	
+line	<str>Go to the right path and search the northernmost crates for a key.</str>
+line	
+line	<col=000080>Go back and to the left side, avoid the fire giants, use the key on the door.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+line	
+line	<str>Go to the right path and search the northernmost crates for a key.</str>
+line	
+line	<str>Go back and to the left side, avoid the fire giants, use the key on the door.</str>
+line	
+line	<col=000080>Use all 3 runes on each pillar (1 air, 1 water and 1 earth rune on each pillar).</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+line	
+line	<str>Go to the right path and search the northernmost crates for a key.</str>
+line	
+line	<str>Go back and to the left side, avoid the fire giants, use the key on the door.</str>
+line	
+line	<str>Use all 3 runes on each pillar (1 air, 1 water and 1 earth rune on each pillar).</str>
+line	
+line	<col=000080>After this, put Glarial's amulet on her statue. The ground will now rise to the chalice. Do not click Take treasure, as you will be washed out of the cave.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+line	
+line	<str>Board the raft west of the house.</str>
+line	
+line	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+line	
+line	<str>Walk to the southern end of the island and swim in the water.</str>
+line	
+line	<str>Enter the large building to the north, where Hadley is.</str>
+line	
+line	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+line	
+line	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+line	
+line	<str>Enter the Tree Gnome Village maze.</str>
+line	
+line	<str>Enter the dungeon at the end of the maze.</str>
+line	
+line	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+line	
+line	<str>Go west and open the gate ("door") with the key.</str>
+line	
+line	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+line	
+line	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+line	
+line	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+line	
+line	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+line	
+line	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+line	
+line	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+line	
+line	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+line	
+line	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+line	
+line	<str>Go to the right path and search the northernmost crates for a key.</str>
+line	
+line	<str>Go back and to the left side, avoid the fire giants, use the key on the door.</str>
+line	
+line	<str>Use all 3 runes on each pillar (1 air, 1 water and 1 earth rune on each pillar).</str>
+line	
+line	<str>After this, put Glarial's amulet on her statue. The ground will now rise to the chalice. Do not click Take treasure, as you will be washed out of the cave.</str>
+line	
+line	<col=000080>Use the <col=800000>Glarial's urn</col> in your inventory on the chalice. (Make sure you have 5 free inventory slots).</col>
+done	<str>Speak to Almera north-east of Baxtorian Falls. (use Games Teleport to Barbarian Outpost and head south to the top of the hill)</str>
+done	
+done	<str>Board the raft west of the house.</str>
+done	
+done	<str>Speak to Hudon. Make sure to go through all dialogue or the upcoming book will not spawn.</str>
+done	
+done	<str>Walk to the southern end of the island and swim in the water.</str>
+done	
+done	<str>Enter the large building to the north, where Hadley is.</str>
+done	
+done	<str>Go upstairs and search the southernmost bookcase on the eastern wall for a Book on Baxtorian.</str>
+done	
+done	<str>Left-click Read Book on Baxtorian and close the book again, or the key will not appear for the next part.</str>
+done	
+done	<str>Enter the Tree Gnome Village maze.</str>
+done	
+done	<str>Enter the dungeon at the end of the maze.</str>
+done	
+done	<str>Go east and search the off-coloured crate near the entrance of the room for a key.</str>
+done	
+done	<str>Go west and open the gate ("door") with the key.</str>
+done	
+done	<str>Speak to Golrie, he will give you Glarial's pebble.</str>
+done	
+done	<str>Bank all items EXCEPT Glarial's pebble, some food and a transport method (Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).</str>
+done	
+done	<str>Head to Glarial's Tombstone, east of the Waterfall. Use the pebble on it to enter.</str>
+done	
+done	<str>Go west, search the chest to find Glarial's amulet. (Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground).</str>
+done	
+done	<str>Return and go the other way to search the tomb to find Glarial's urn.</str>
+done	
+done	<str>Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. (Warning, there are several high level monsters in the waterfall dungeon.) Weapons and armour are also allowed in the cave, so feel free to get these back too.</str>
+done	
+done	<str>Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. DO NOT GET IN THE BARREL.</str>
+done	
+done	<str>Carry/equip Glarial's amulet and enter the doorway.</str>
+done	
+done	<str>Go to the right path and search the northernmost crates for a key.</str>
+done	
+done	<str>Go back and to the left side, avoid the fire giants, use the key on the door.</str>
+done	
+done	<str>Use all 3 runes on each pillar (1 air, 1 water and 1 earth rune on each pillar).</str>
+done	
+done	<str>After this, put Glarial's amulet on her statue. The ground will now rise to the chalice. Do not click Take treasure, as you will be washed out of the cave.</str>
+done	
+done	<str>Use the Glarial's urn in your inventory on the chalice. (Make sure you have 5 free inventory slots).</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,101 @@
+# Generated from the OSRS Wiki page "Transcript:Rag and Bone Man III/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to the <col=800000>Odd Old Man</col> at his hut in <col=800000>Silvarea</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Rag and Bone Man #3</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Rag and Bone Man II
+req	Dragon Slayer I
+req	The Great Brain Robbery
+req	Tower of Life
+req	A Soul's Bane
+req	Level 58 Slayer
+before	
+before	<col=000080>Recommendations:</col>
+req	Combat Level 65
+step	1	-	After starting the quest
+line	<col=000080>I spoke with the <col=800000>Odd Old Man</col> living in <col=800000>Silvarea</col>, and he told me he had even more <col=800000>Bones</col> he wanted collecting. I will yet again need to bring him the <col=800000>Bones</col> of various creatures. I should check the <col=800000>List</col> on the wall of his hut to see what he needs.</col>
+step	2	-	After reading the list
+line	<col=000080>I spoke with the <col=800000>Odd Old Man</col> living in <col=800000>Silvarea</col>, and he told me he had even more <col=800000>Bones</col> he wanted collecting. I will yet again need to bring him the <col=800000>Bones</col> of various creatures. However, I will first need to polish them. To do so, I need to get an <col=800000>Empty Pot</col>, fill it with <col=800000>Vinegar</col>, add the <col=800000>Bone</col>, and then boil it on a <col=800000>Range</col> or <col=800000>Fire</col>. <col=800000>Fortunato</col> in <col=800000>Draynor Village</col> can sort me out with some <col=800000>Vinegar</col>.</col>
+line	<col=000080>I still need to deliver <col=800000>Polished Bones</col> from the following creatures:</col>
+line	<col=800000>Angry Giant Rat</col>
+line	<col=800000>Ankou</col>
+line	<col=800000>Armoured Zombie</col>
+line	<col=800000>Aviansie</col>
+line	<col=800000>Blue Dragon</col>
+line	<col=800000>Boar</col>
+line	<col=800000>Catablepon</col>
+line	<col=800000>Cave Horror</col>
+line	<col=800000>Chicken</col>
+line	<col=800000>Colonel Radick</col>
+line	<col=800000>Cow</col>
+line	<col=800000>Crawling Hand</col>
+line	<col=800000>Crocodile</col>
+line	<col=800000>Cyclops</col>
+line	<col=800000>Druid</col>
+line	<col=800000>Fox</col>
+line	<col=800000>Frogeel</col>
+line	<col=800000>Gnome Child</col>
+line	<col=800000>Goat</col>
+line	<col=800000>Hill Giant</col>
+line	<col=800000>Infernal Mage</col>
+line	<col=800000>Lizardman</col>
+line	<col=800000>Lynx</col>
+line	<col=800000>Minotaur</col>
+line	<col=800000>Ork</col>
+line	<col=800000>Sorebones</col>
+line	<col=800000>Tortoise</col>
+line	<col=800000>Turoth</col>
+line	<col=800000>Ugthanki</col>
+line	<col=800000>Wallasalki</col>
+step	3	-	After collecting two bones
+line	<col=000080>I spoke with the <col=800000>Odd Old Man</col> living in <col=800000>Silvarea</col>, and he told me he had even more <col=800000>Bones</col> he wanted collecting. At his request, I started collecting the <col=800000>Bones</col>, but I quickly grew tired of doing so. I should return to the <col=800000>Odd Old Man</col> to let him know that I've well and truly had enough.</col>
+step	4	-	After dying
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<col=000080>I returned to the <col=800000>Odd Old Man</col> and let him know that I'd well and truly had enough of collecting <col=800000>Bones</col>. However, he didn't take kindly to this and seemingly killed me. I'll need to find a way to escape this situation I'm now in.</col>
+step	5	-	After talking to Traiborn
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<col=000080>I returned to the <col=800000>Odd Old Man</col> and let him know that I'd well and truly had enough of collecting <col=800000>Bones</col>. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. However, I encountered <col=800000>Wizard Traiborn</col> who told me to meet him somewhere with some atmosphere.</col>
+step	6	-	After talking to Traiborn in Camdozaal
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<col=000080>I returned to the <col=800000>Odd Old Man</col> and let him know that I'd well and truly had enough of collecting <col=800000>Bones</col>. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. However, I encountered <col=800000>Wizard Traiborn</col> who told me to kill <col=800000>Archmage Sedridor</col> and take his <col=800000>Staff</col>. If I do so, perhaps I can use it to escape.</col>
+step	7	-	After obtaining Sedridor's staff
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<col=000080>I returned to the <col=800000>Odd Old Man</col> and let him know that I'd well and truly had enough of collecting <col=800000>Bones</col>. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. However, I encountered <col=800000>Wizard Traiborn</col> who told me to kill <col=800000>Archmage Sedridor</col>. I did so and took his <col=800000>Staff</col>. Perhaps I can use it to escape.</col>
+step	8	-	After killing Tolna's heads
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<col=000080>I returned to the <col=800000>Odd Old Man</col> and let him know that I'd well and truly had enough of collecting <col=800000>Bones</col>. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered <col=800000>King Roald</col>, <col=800000>Archmage Sedridor</col> and <col=800000>Tolna</col>, to name a few. Eventually, I came across <col=800000>Wizard Traiborn</col> who told me to kill <col=800000>Archmage Sedridor</col>. I did so and took his <col=800000>Staff</col>, which I was able to use to kill <col=800000>Tolna</col>. Perhaps I can now escape the loop.</col>
+step	9	-	After taking a leap of faith
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+line	<col=000080>After killing <col=800000>Tolna</col>, I escaped the loop and found myself in some sort of <col=800000>Ancient Dungeon</col>. I should look around and see what I can find.</col>
+step	10	-	After talking to the Horrifying Creature
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+line	<col=000080>After killing <col=800000>Tolna</col>, I escaped the loop and found myself in some sort of <col=800000>Ancient Dungeon</col>. I started looking around and encountered a <col=800000>Horrifying Creature</col>. However, it didn't seem to pose a threat. Instead, it told me that to escape, I'd need to find and destroy four <col=800000>Gatestones</col>.</col>
+step	11	-	After destroying the Gatestones
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+line	<col=000080>After killing <col=800000>Tolna</col>, I escaped the loop and found myself in some sort of <col=800000>Ancient Dungeon</col>. I started looking around and encountered a <col=800000>Horrifying Creature</col>. However, it didn't seem to pose a threat. Following its advice, I found and destroyed four <col=800000>Gatestones</col>. I should now be able to delve deeper into the <col=800000>Dungeon</col>.</col>
+step	12	-	After encountering the Skeletal Horror
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+line	<str>After killing Tolna, I escaped the loop and found myself in some sort of Ancient Dungeon. I started looking around and encountered a Horrifying Creature. However, it didn't seem to >pose a threat. Following its advice, I found and destroyed four Gatestones, allowing me to delve deeper into the Dungeon.</str>
+line	<col=000080>I continued exploring the <col=800000>Dungeon</col> and found the <col=800000>Odd Old Man</col> with a <col=800000>Skeletal Horror</col> that he'd restored using the <col=800000>Bones</col> I'd been gathering. I'll need to defeat it.</col>
+step	13	-	After killing the Skeletal Horror
+line	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+line	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+line	<str>After killing Tolna, I escaped the loop and found myself in some sort of Ancient Dungeon. I started looking around and encountered a Horrifying Creature. However, it didn't seem to >pose a threat. Following its advice, I found and destroyed four Gatestones, allowing me to delve deeper into the Dungeon.</str>
+line	<col=000080>I continued exploring the <col=800000>Dungeon</col> and found the <col=800000>Odd Old Man</col> with a <col=800000>Skeletal Horror</col> that he'd restored using the <col=800000>Bones</col> I'd been gathering. It attacked me, but I was able to defeat it. I then found myself back in <col=800000>Silvarea</col>. I should confront the <col=800000>Odd Old Man</col> there.</col>
+done	<str>I spoke with the Odd Old Man living in Silvarea, and he told me he had even more Bones he wanted collecting. At his request, I started collecting the Bones, but I quickly grew tired of doing so.</str>
+done	<str>I returned to the Odd Old Man and let him know that I'd well and truly had enough of collecting Bones. However, he didn't take kindly to this and seemingly killed me. I found myself in some sort of infinite loop, with no clear way to escape it. During the loop I encountered King Roald, Archmage Sedridor and Tolna, to name a few. Eventually, I came across Wizard Traiborn who told me to kill Archmage Sedridor. I did so and took his Staff, which I was able to use to kill Tolna.</str>
+done	<str>After killing Tolna, I escaped the loop and found myself in some sort of Ancient Dungeon. I started looking around and encountered a Horrifying Creature. However, it didn't seem to >pose a threat. Following its advice, I found and destroyed four Gatestones, allowing me to delve deeper into the Dungeon.</str>
+done	<str>I continued exploring the Dungeon and found the Odd Old Man with a Skeletal Horror that he'd restored using the Bones I'd been gathering. It attacked me, but I was able to defeat it. I then found myself back in Silvarea. I confronted the Odd Old Man there, but he had no memory of what had happened, leaving me questioning the origin of the Skeletal Horror.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

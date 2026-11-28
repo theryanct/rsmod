@@ -1,0 +1,1492 @@
+# Generated from the OSRS Wiki page "Royal Trouble/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Advisor Ghrim</col> in <col=800000>Miscellania Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 40 Agility
+req	Level 40 Slayer
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Advisor Ghrim</col>. (<col=800000>fairy ring</col> code CIP)</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<col=000080>Talk to <col=800000>Princess Astrid</col> or <col=800000>Prince Brand</col> (depending on who you married), watch the cutscene.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<col=000080>Talk to <col=800000>King Vargas</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<col=000080>Talk to <col=800000>Gardener Gunnhild</col> by the flax patch next to the castle entrance.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<col=000080>Talk to <col=800000>Queen Sigrid</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<col=000080>Talk to <col=800000>Matilda</col> in/around the southern building inside the castle's walls.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<col=000080>Talk to Queen Sigrid.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<col=000080>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<col=000080>Talk to King Vargas.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<col=000080>Talk to Advisor Ghrim.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Sailor</col> at the Miscellania docks.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<col=000080>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<col=000080>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<col=000080>Talk to <col=800000>Donal</col> in the pub.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<col=000080>Go north, take a pick (on the rock next to the dwarves) if you need coal.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<col=000080>Use the mining prop on the <col=800000>crevice</col> and proceed through the crevice.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<col=000080>Take an engine and put the 5 coal in it.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<col=000080>Take the following from the crates:</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<col=000080>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<col=000080>To the broken scaffold add:</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<col=000080>Take:</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<col=000080>Add a beam to the platform.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<col=000080>Put the engine on the engine platform.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<col=000080>If you haven't yet, add your five coal to the engine.</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<col=000080>Use the lift and take the plank.</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<col=000080>Enter the <col=800000>tunnel</col>, run east, and use your rope on the rock.</col>
+step	27	-	Quick guide step 27
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<col=000080>Take the diary from the fire remains.</col>
+step	28	-	Quick guide step 28
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<col=000080>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</col>
+step	29	-	Quick guide step 29
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<col=000080>Continue running and avoid the steam vents as they will damage you.</col>
+step	30	-	Quick guide step 30
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<col=000080>Read the diary and continue through the crevice, watch the cutscene.</col>
+step	31	-	Quick guide step 31
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<col=000080>Talk to <col=800000>Armod</col>.</col>
+step	32	-	Quick guide step 32
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<col=000080>Follow the passage north and enter the crevice at the end of the passage</col>
+step	33	-	Quick guide step 33
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+line	
+line	<col=000080>Kill the <col=800000>Giant Sea Snake</col>. Use protect from ranged prayer and attack at a distance (magic preferred).</col>
+step	34	-	Quick guide step 34
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+line	
+line	<str>Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred).</str>
+line	
+line	<col=000080>Take the heavy box.</col>
+step	35	-	Quick guide step 35
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+line	
+line	<str>Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred).</str>
+line	
+line	<str>Take the heavy box.</str>
+line	
+line	<col=000080>Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle.</col>
+step	36	-	Quick guide step 36
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+line	
+line	<str>Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred).</str>
+line	
+line	<str>Take the heavy box.</str>
+line	
+line	<str>Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle.</str>
+line	
+line	<col=000080>Talk to Queen Sigrid to receive a letter and 20000 gold. (You need two free inventory slots.)</col>
+step	37	-	Quick guide step 37
+line	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+line	
+line	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+line	
+line	<str>Talk to Queen Sigrid.</str>
+line	
+line	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+line	
+line	<str>Talk to King Vargas.</str>
+line	
+line	<str>Talk to Advisor Ghrim.</str>
+line	
+line	<str>Talk to the Sailor at the Miscellania docks.</str>
+line	
+line	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+line	
+line	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+line	
+line	<str>Talk to Donal in the pub.</str>
+line	
+line	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+line	
+line	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+line	
+line	<str>Take an engine and put the 5 coal in it.</str>
+line	
+line	<str>Take the following from the crates:</str>
+line	
+line	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+line	
+line	<str>To the broken scaffold add:</str>
+line	
+line	<str>Take:</str>
+line	
+line	<str>Add a beam to the platform.</str>
+line	
+line	<str>Put the engine on the engine platform.</str>
+line	
+line	<str>If you haven't yet, add your five coal to the engine.</str>
+line	
+line	<str>Use the lift and take the plank.</str>
+line	
+line	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+line	
+line	<str>Take the diary from the fire remains.</str>
+line	
+line	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+line	
+line	<str>Continue running and avoid the steam vents as they will damage you.</str>
+line	
+line	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+line	
+line	<str>Talk to Armod.</str>
+line	
+line	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+line	
+line	<str>Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred).</str>
+line	
+line	<str>Take the heavy box.</str>
+line	
+line	<str>Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle.</str>
+line	
+line	<str>Talk to Queen Sigrid to receive a letter and 20000 gold. (You need two free inventory slots.)</str>
+line	
+line	<col=000080>Talk to King Vargas.</col>
+done	<str>Speak to Advisor Ghrim. (fairy ring code CIP)</str>
+done	
+done	<str>Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene.</str>
+done	
+done	<str>Talk to King Vargas.</str>
+done	
+done	<str>Talk to Gardener Gunnhild by the flax patch next to the castle entrance.</str>
+done	
+done	<str>Talk to Queen Sigrid.</str>
+done	
+done	<str>Talk to Matilda in/around the southern building inside the castle's walls.</str>
+done	
+done	<str>Talk to Queen Sigrid.</str>
+done	
+done	<str>Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest.</str>
+done	
+done	<str>Talk to King Vargas.</str>
+done	
+done	<str>Talk to Advisor Ghrim.</str>
+done	
+done	<str>Talk to the Sailor at the Miscellania docks.</str>
+done	
+done	<str>Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.</str>
+done	
+done	<str>Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).</str>
+done	
+done	<str>Talk to Donal in the pub.</str>
+done	
+done	<str>Go north, take a pick (on the rock next to the dwarves) if you need coal.</str>
+done	
+done	<str>Use the mining prop on the crevice and proceed through the crevice.</str>
+done	
+done	<str>Take an engine and put the 5 coal in it.</str>
+done	
+done	<str>Take the following from the crates:</str>
+done	
+done	<str>Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.</str>
+done	
+done	<str>To the broken scaffold add:</str>
+done	
+done	<str>Take:</str>
+done	
+done	<str>Add a beam to the platform.</str>
+done	
+done	<str>Put the engine on the engine platform.</str>
+done	
+done	<str>If you haven't yet, add your five coal to the engine.</str>
+done	
+done	<str>Use the lift and take the plank.</str>
+done	
+done	<str>Enter the tunnel, run east, and use your rope on the rock.</str>
+done	
+done	<str>Take the diary from the fire remains.</str>
+done	
+done	<str>Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave.</str>
+done	
+done	<str>Continue running and avoid the steam vents as they will damage you.</str>
+done	
+done	<str>Read the diary and continue through the crevice, watch the cutscene.</str>
+done	
+done	<str>Talk to Armod.</str>
+done	
+done	<str>Follow the passage north and enter the crevice at the end of the passage</str>
+done	
+done	<str>Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred).</str>
+done	
+done	<str>Take the heavy box.</str>
+done	
+done	<str>Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle.</str>
+done	
+done	<str>Talk to Queen Sigrid to receive a letter and 20000 gold. (You need two free inventory slots.)</str>
+done	
+done	<str>Talk to King Vargas.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

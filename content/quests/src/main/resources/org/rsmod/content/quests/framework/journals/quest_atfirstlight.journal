@@ -1,0 +1,77 @@
+# Generated from the OSRS Wiki page "Transcript:At First Light/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Guildmaster Apatura</col> in the <col=800000>Hunter Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Children of the Sun
+req	Eagles' Peak
+req	Level 46 Hunter
+req	Level 30 Herblore
+req	Level 27 Construction
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Guildmaster Apatura</col> in the <col=800000>Hunter Guild</col>. She told me that <col=800000>Guild Scribe Verity</col> needed help with something and asked me to speak to her in <col=800000>The Burrow</col> below the <col=800000>Guild</col>.</col>
+step	2	-	After speaking to Guild Scribe Verity
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<col=000080>I spoke to <col=800000>Guild Scribe Verity</col> in <col=800000>The Burrow</col> and learned that she is concerned about the disappearance of <col=800000>Guild Hunter Fox</col>. She suggested I talk to <col=800000>Guild Hunter Wolf</col> to learn more.</col>
+step	3	-	After speaking to Guild Hunter Wolf
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<col=000080>I spoke to <col=800000>Wolf</col> and she explained to me that <col=800000>Fox</col> was looking into making some repairs to <col=800000>Guild Hunter Kiko's Cat Bed</col>. I should have a look at the <col=800000>Bed</col> and see what repairs he was trying to make.</col>
+step	4	-	After checking Kiko's bed
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+line	<col=000080>I distracted <col=800000>Kiko</col> and then inspected his <col=800000>Bed</col> to find some of the fur missing. <col=800000>Fox</col> presumably took a sample to help him find the right replacement. I should speak to <col=800000>Wolf</col> about this.</col>
+step	5	-	After finding and talking to Fox
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+line	<str>I distracted Kiko and then inspected his Bed to find some of the fur missing. Fox presumably took a sample to help him find the right replacement. Wolf suggested I look for him near the Pyre Foxes on the way to the Locus Oasis.</str>
+line	<col=000080>I found <col=800000>Fox</col> by a <col=800000>Chasm</col> near the <col=800000>Locus Oasis</col>, but he'd been attacked. He asked me to make a <col=800000>Poultice</col> for him using leaves from two nearby <col=800000>Plants</col> along with an <col=800000>Embertailed Jerboa Tail</col>.</col>
+step	6	-	After giving Fox the Poultice
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+line	<str>I distracted Kiko and then inspected his Bed to find some of the fur missing. Fox presumably took a sample to help him find the right replacement. Wolf suggested I look for him near the Pyre Foxes on the way to the Locus Oasis.</str>
+line	<str>I found Fox by a Chasm near the Locus Oasis, but he'd been attacked. He asked me to make a Poultice for him.</str>
+line	<str>I created a Poultice for Fox and gave it to him.</str>
+line	<col=000080><col=800000>Fox</col> explained to me that he was attacked whilst on route to trade with <col=800000>Atza</col> in <col=800000>Outer Fortis</col>. He asked me to go to her on his behalf while he recovers from his injuries. If I give her the <col=800000>Fur Sample</col> that <col=800000>Fox</col> took from <col=800000>Kiko's Bed</col>, she should be able to supply the <col=800000>Fur</col> needed. I can find her home near the south western gate of <col=800000>Civitas illa Fortis</col>.</col>
+step	7	-	After speaking to Atza
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+line	<str>I distracted Kiko and then inspected his Bed to find some of the fur missing. Fox presumably took a sample to help him find the right replacement. Wolf suggested I look for him near the Pyre Foxes on the way to the Locus Oasis.</str>
+line	<str>I found Fox by a Chasm near the Locus Oasis, but he'd been attacked. He asked me to make a Poultice for him.</str>
+line	<str>I created a Poultice for Fox and gave it to him.</str>
+line	<str>Fox explained to me that he was attacked whilst on route to trade with Atza in Outer Fortis. He asked me to go to her on his behalf while he recovers from his injuries. He gave me the Fur Sample that he took from Kiko's Bed to give to her.</str>
+line	<col=000080>I took the <col=800000>Fur Sample</col> to <col=800000>Atza</col> in <col=800000>Outer Fortis</col>. She asked me to assemble some <col=800000>Equipment</col> on her floor while she searched for the right material.</col>
+step	8	-	After returning to Fox
+line	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+line	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+line	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+line	<str>I distracted Kiko and then inspected his Bed to find some of the fur missing. Fox presumably took a sample to help him find the right replacement. Wolf suggested I look for him near the Pyre Foxes on the way to the Locus Oasis.</str>
+line	<str>I found Fox by a Chasm near the Locus Oasis, but he'd been attacked. He asked me to make a Poultice for him.</str>
+line	<str>I created a Poultice for Fox and gave it to him.</str>
+line	<str>Fox explained to me that he was attacked whilst on route to trade with Atza in Outer Fortis. He asked me to go to her on his behalf while he recovers from his injuries. He gave me the Fur Sample that he took from Kiko's Bed to give to her.</str>
+line	<str>I took the Fur Sample to Atza in Outer Fortis and she gave me the Trimmed Fur needed to fix Kiko's Bed.</str>
+line	<col=000080>I returned to <col=800000>Fox</col> with the <col=800000>Trimmed Fur</col>. He asked me to head back to the <col=800000>Hunter Guild</col> and use the <col=800000>Fur</col> along with an <col=800000>Embertailed Jerboa Tail</col> to fix <col=800000>Kiko's Bed</col>. He also asked me to deliver a <col=800000>Report</col> from him to <col=800000>Guild Scribe Verity</col>.</col>
+done	<str>I spoke to Guildmaster Apatura in the Hunter Guild. She told me that Guild Scribe Verity needed help with something and asked me to speak to her in The Burrow below the Guild.</str>
+done	<str>I spoke to Guild Scribe Verity in The Burrow. She asked to look into the disappearance of Guild Hunter Fox. She suggested I talk to Guild Hunter Wolf to learn more.</str>
+done	<str>I spoke to Wolf and she explained to me that Fox was looking into making some repairs to Guild Hunter Kiko's Cat Bed.</str>
+done	<str>I distracted Kiko and then inspected his Bed to find some of the fur missing. Fox presumably took a sample to help him find the right replacement. Wolf suggested I look for him near the Pyre Foxes on the way to the Locus Oasis.</str>
+done	<str>I found Fox by a Chasm near the Locus Oasis, but he'd been attacked. He asked me to make a Poultice for him.</str>
+done	<str>I created a Poultice for Fox and gave it to him.</str>
+done	<str>Fox explained to me that he was attacked whilst on route to trade with Atza in Outer Fortis. He asked me to go to her on his behalf while he recovers from his injuries. He gave me the Fur Sample that he took from Kiko's Bed to give to her.</str>
+done	<str>I took the Fur Sample to Atza in Outer Fortis and she gave me the Trimmed Fur needed to fix Kiko's Bed.</str>
+done	<str>I returned to Fox with the Trimmed Fur. At his request, I went back to the Hunter Guild and used it to fix Kiko's Bed. With the job done, I returned to Guildmaster Apatura and reported my success to her.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

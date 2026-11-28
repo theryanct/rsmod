@@ -1,0 +1,119 @@
+# Generated from the OSRS Wiki page "Sheep Herder/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Councillor Halgrive</col> outside of the <col=800000>East Ardougne</col> church.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Councillor Halgrive</col> outside the <col=800000>East Ardougne</col> church. Ensure that you have at least 1 empty inventory slot.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<col=000080>Talk to <col=800000>Doctor Orbon</col> in the church.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<col=000080>Put on the <col=800000>plague jacket</col> and <col=800000>trousers</col> and go to the enclosure north-west of the Ardougne north bank.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<col=000080>Pick up & wield the <col=800000>cattleprod</col> next to the incinerator.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+line	
+line	<col=000080>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+line	
+line	<str>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</str>
+line	
+line	<col=000080>Prod one sheep of each colour through the gate.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+line	
+line	<str>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</str>
+line	
+line	<str>Prod one sheep of each colour through the gate.</str>
+line	
+line	<col=000080>Feed your sheep <col=800000>sheep feed</col> until they're all dead.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+line	
+line	<str>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</str>
+line	
+line	<str>Prod one sheep of each colour through the gate.</str>
+line	
+line	<str>Feed your sheep sheep feed until they're all dead.</str>
+line	
+line	<col=000080>Pick up the bones and use them on the incinerator.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+line	
+line	<str>Talk to Doctor Orbon in the church.</str>
+line	
+line	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+line	
+line	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+line	
+line	<str>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</str>
+line	
+line	<str>Prod one sheep of each colour through the gate.</str>
+line	
+line	<str>Feed your sheep sheep feed until they're all dead.</str>
+line	
+line	<str>Pick up the bones and use them on the incinerator.</str>
+line	
+line	<col=000080>Return to <col=800000>Councillor Halgrive</col> to complete the quest.</col>
+done	<str>Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.</str>
+done	
+done	<str>Talk to Doctor Orbon in the church.</str>
+done	
+done	<str>Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank.</str>
+done	
+done	<str>Pick up & wield the cattleprod next to the incinerator.</str>
+done	
+done	<str>There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.</str>
+done	
+done	<str>Prod one sheep of each colour through the gate.</str>
+done	
+done	<str>Feed your sheep sheep feed until they're all dead.</str>
+done	
+done	<str>Pick up the bones and use them on the incinerator.</str>
+done	
+done	<str>Return to Councillor Halgrive to complete the quest.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

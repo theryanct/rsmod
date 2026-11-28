@@ -1,0 +1,947 @@
+# Generated from the OSRS Wiki page "Barbarian Training/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to <col=800000>Otto Godblessed</col> in <col=800000>his grotto</col> at the lake atop <col=800000>Baxtorian Falls</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Tai Bwo Wannai Trio
+req	Level 55 Fishing
+req	Level 35 Firemaking
+req	Level 35 Strength
+req	Level 15 Agility
+req	Level 15 Farming
+req	Level 11 Crafting
+req	Level 5 Smithing
+req	Level 4 Herblore
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about heavy rod fishing.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<col=000080>Search the <col=800000>barbarian bed</col> to obtain a <col=800000>barbarian rod</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<col=000080>Catch a leaping fish at one of the nearby <col=800000>fishing spots</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<col=000080>Dissect the leaping fish with the knife to obtain <col=800000>roe</col>. Keep the roe for later.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about barehanded fishing.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<col=000080>Go to any <col=800000>fishing spot that requires a harpoon</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about firemaking.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<col=000080>Use the logs on the bow. See the table for skill requirements.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about firemaking again.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<col=000080>Kill <col=800000>mithril dragon</col>s until one of them drops a set of <col=800000>chewed bones</col> (3/128 drop rate).</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<col=000080>Construct a funeral pyre at one of the <col=800000>pyre site</col>s using the logs. Light it on fire.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about farming.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<col=000080>Go to the farming patch and plant the seed you have.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about farming again.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<col=000080>Go to the farming patch and plant the sapling you have.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about spears.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<col=000080>Use one of the bronze bar and logs on the nearby <col=800000>barbarian anvil</col>. Make only one <col=800000>bronze spear</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<col=000080>Ask Otto about spears again.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<col=000080>Ask Otto about hastae.</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<str>Ask Otto about hastae.</str>
+line	
+line	<col=000080>Use the other bronze bar and logs on the nearby <col=800000>barbarian anvil</col>. Make a <col=800000>bronze hasta</col>.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<str>Ask Otto about hastae.</str>
+line	
+line	<str>Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta.</str>
+line	
+line	<col=000080>Ask Otto about hastae again.</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<str>Ask Otto about hastae.</str>
+line	
+line	<str>Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta.</str>
+line	
+line	<str>Ask Otto about hastae again.</str>
+line	
+line	<col=000080>Talk to <col=800000>Otto Godblessed</col> and ask him about herblore.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<str>Ask Otto about hastae.</str>
+line	
+line	<str>Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta.</str>
+line	
+line	<str>Ask Otto about hastae again.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about herblore.</str>
+line	
+line	<col=000080>Right-click "Use" the roe on the attack potion.</col>
+step	29	-	Quick guide step 29
+line	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+line	
+line	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+line	
+line	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+line	
+line	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+line	
+line	<str>Go to any fishing spot that requires a harpoon.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+line	
+line	<str>Use the logs on the bow. See the table for skill requirements.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+line	
+line	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+line	
+line	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming.</str>
+line	
+line	<str>Go to the farming patch and plant the seed you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+line	
+line	<str>Go to the farming patch and plant the sapling you have.</str>
+line	
+line	<str>Talk to Otto again and tell him of your success.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about spears.</str>
+line	
+line	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+line	
+line	<str>Ask Otto about spears again.</str>
+line	
+line	<str>Ask Otto about hastae.</str>
+line	
+line	<str>Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta.</str>
+line	
+line	<str>Ask Otto about hastae again.</str>
+line	
+line	<str>Talk to Otto Godblessed and ask him about herblore.</str>
+line	
+line	<str>Right-click "Use" the roe on the attack potion.</str>
+line	
+line	<col=000080>Talk to Otto again and tell him of your success.</col>
+done	<str>Talk to Otto Godblessed and ask him about heavy rod fishing.</str>
+done	
+done	<str>Search the barbarian bed to obtain a barbarian rod.</str>
+done	
+done	<str>Catch a leaping fish at one of the nearby fishing spots.</str>
+done	
+done	<str>Dissect the leaping fish with the knife to obtain roe. Keep the roe for later.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about barehanded fishing.</str>
+done	
+done	<str>Go to any fishing spot that requires a harpoon.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about firemaking.</str>
+done	
+done	<str>Use the logs on the bow. See the table for skill requirements.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about firemaking again.</str>
+done	
+done	<str>Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate).</str>
+done	
+done	<str>Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about farming.</str>
+done	
+done	<str>Go to the farming patch and plant the seed you have.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about farming again.</str>
+done	
+done	<str>Go to the farming patch and plant the sapling you have.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about spears.</str>
+done	
+done	<str>Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear.</str>
+done	
+done	<str>Ask Otto about spears again.</str>
+done	
+done	<str>Ask Otto about hastae.</str>
+done	
+done	<str>Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta.</str>
+done	
+done	<str>Ask Otto about hastae again.</str>
+done	
+done	<str>Talk to Otto Godblessed and ask him about herblore.</str>
+done	
+done	<str>Right-click "Use" the roe on the attack potion.</str>
+done	
+done	<str>Talk to Otto again and tell him of your success.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,389 @@
+# Generated from the OSRS Wiki page "Bone Voyage/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Curator Haig Halen</col> in the <col=800000>Varrock Museum</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Curator Haig Halen</col> in the <col=800000>Varrock Museum</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<col=000080>Go to the <col=800000>canal barge</col> north of The Digsite and speak to the <col=800000>barge foreman</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<col=000080>Speak to the <col=800000>sawmill operator</col> in the <col=800000>Lumber Yard</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<col=000080>Bring the <col=800000>sawmill proposal</col> to the sawmill operator in the <col=800000>Woodcutting Guild</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<col=000080>Bring the <col=800000>sawmill agreement</col> back to the Lumber Yard's sawmill operator.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<col=000080>Speak to the <col=800000>barge foreman</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<col=000080>Right click the Embark option on the <col=800000>barge guard</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Lead Navigator</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<col=000080>Talk to <col=800000>Jack Seagull</col> in the <col=800000>Rusty Anchor Inn</col> in <col=800000>Port Sarim</col>. or</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<col=000080>Return to the northern part of the digsite and board the boat through the barge guard.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Lead Navigator</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Odd Old Man</col> at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the <col=800000>Bone charm</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Apothecary</col> in Varrock. Bring your two bottles of <col=800000>vodka</col> and your <col=800000>Marrentill potion (unf)</col></col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+line	
+line	<col=000080>Speak to him again, selecting the same chat options as before.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+line	
+line	<str>Speak to him again, selecting the same chat options as before.</str>
+line	
+line	<col=000080>Return to the <col=800000>Lead Navigator</col> to give him the <col=800000>Potion of Sealegs</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+line	
+line	<str>Speak to him again, selecting the same chat options as before.</str>
+line	
+line	<str>Return to the Lead Navigator to give him the Potion of Sealegs.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Junior Navigator</col> to give him the <col=800000>bone charm</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+line	
+line	<str>Speak to him again, selecting the same chat options as before.</str>
+line	
+line	<str>Return to the Lead Navigator to give him the Potion of Sealegs.</str>
+line	
+line	<str>Speak to the Junior Navigator to give him the bone charm.</str>
+line	
+line	<col=000080>You will have to steer left or right using the controls on the interface. The progress bar will indicate how far you have to go to reach the island.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+line	
+line	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+line	
+line	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+line	
+line	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+line	
+line	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+line	
+line	<str>Speak to the barge foreman.</str>
+line	
+line	<str>Right click the Embark option on the barge guard.</str>
+line	
+line	<str>Speak to the Lead Navigator.</str>
+line	
+line	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+line	
+line	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+line	
+line	<str>Talk to the Lead Navigator.</str>
+line	
+line	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+line	
+line	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+line	
+line	<str>Speak to him again, selecting the same chat options as before.</str>
+line	
+line	<str>Return to the Lead Navigator to give him the Potion of Sealegs.</str>
+line	
+line	<str>Speak to the Junior Navigator to give him the bone charm.</str>
+line	
+line	<str>You will have to steer left or right using the controls on the interface. The progress bar will indicate how far you have to go to reach the island.</str>
+line	
+line	<col=000080>Once the progress bar is filled, you will arrive at Fossil Island.</col>
+done	<str>Speak to Curator Haig Halen in the Varrock Museum.</str>
+done	
+done	<str>Go to the canal barge north of The Digsite and speak to the barge foreman.</str>
+done	
+done	<str>Speak to the sawmill operator in the Lumber Yard.</str>
+done	
+done	<str>Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.</str>
+done	
+done	<str>Bring the sawmill agreement back to the Lumber Yard's sawmill operator.</str>
+done	
+done	<str>Speak to the barge foreman.</str>
+done	
+done	<str>Right click the Embark option on the barge guard.</str>
+done	
+done	<str>Speak to the Lead Navigator.</str>
+done	
+done	<str>Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or</str>
+done	
+done	<str>Return to the northern part of the digsite and board the boat through the barge guard.</str>
+done	
+done	<str>Talk to the Lead Navigator.</str>
+done	
+done	<str>Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.</str>
+done	
+done	<str>Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)</str>
+done	
+done	<str>Speak to him again, selecting the same chat options as before.</str>
+done	
+done	<str>Return to the Lead Navigator to give him the Potion of Sealegs.</str>
+done	
+done	<str>Speak to the Junior Navigator to give him the bone charm.</str>
+done	
+done	<str>You will have to steer left or right using the controls on the interface. The progress bar will indicate how far you have to go to reach the island.</str>
+done	
+done	<str>Once the progress bar is filled, you will arrive at Fossil Island.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,351 @@
+# Generated from the OSRS Wiki page "Fight Arena/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Lady Servil</col> west of the <col=800000>Ardougne Monastery</col>, just outside the north-eastern corner of the <col=800000>Gnome Maze</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Ensure that you have 2 empty inventory slots.</col>
+step	2	-	Quick guide step 2
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<col=000080>Talk to <col=800000>Lady Servil</col> just outside of the north-east corner of the <col=800000>Tree Gnome Village</col> <col=800000>maze</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<col=000080>Go to the house in the most north-eastern corner of the area and search the chest for <col=800000>Khazard armour</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<col=000080>Equip the armour and head south into the prison (do not unequip the armour inside!).</col>
+step	5	-	Quick guide step 5
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<col=000080>Head inside the south-east room where the jails are located.</col>
+step	6	-	Quick guide step 6
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Head Guard</col> in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</col>
+step	7	-	Quick guide step 7
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<col=000080>Go to outside, and head to the bar, located in the west and buy a <col=800000>Khali brew</col> for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</col>
+step	8	-	Quick guide step 8
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<col=000080>Go back to the jail and talk to the guard to get the keys.</col>
+step	9	-	Quick guide step 9
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<col=000080>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the <col=800000>Protect from Melee</col> prayer.</col>
+step	10	-	Quick guide step 10
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<col=000080>Use the keys on <col=800000>Sammy</col>'s prison door (the most north-eastern cell) to free him.</col>
+step	11	-	Quick guide step 11
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<col=000080>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be <col=800000>safespotted</col> using various skeletons around the arena.</col>
+step	12	-	Quick guide step 12
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<col=000080>Kill the <col=800000>Khazard Ogre</col> (level 63) (if the fight doesn't start, talk to Justin).</col>
+step	13	-	Quick guide step 13
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+line	
+line	<col=000080>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</col>
+step	14	-	Quick guide step 14
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+line	
+line	<str>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</str>
+line	
+line	<col=000080>Kill the <col=800000>Khazard scorpion</col> (level 44).</col>
+step	15	-	Quick guide step 15
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+line	
+line	<str>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</str>
+line	
+line	<str>Kill the Khazard scorpion (level 44).</str>
+line	
+line	<col=000080>Kill <col=800000>Bouncer</col> (level 137). red|Warning: Once you begin the fight with General Khazard you are unable to reenter the arena. Dying in the arena after this point will most likely make the grave inaccessible, thus making them only retrievable from <col=800000>Death</col></col>
+step	16	-	Quick guide step 16
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+line	
+line	<str>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</str>
+line	
+line	<str>Kill the Khazard scorpion (level 44).</str>
+line	
+line	<str>Kill Bouncer (level 137). red|Warning: Once you begin the fight with General Khazard you are unable to reenter the arena. Dying in the arena after this point will most likely make the grave inaccessible, thus making them only retrievable from Death</str>
+line	
+line	<col=000080>Kill <col=800000>General Khazard</col> (level 142) or run away through the door in the south-east corner of the arena (or just run north until he's not aggressive).</col>
+step	17	-	Quick guide step 17
+line	<str>Ensure that you have 2 empty inventory slots.</str>
+line	
+line	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+line	
+line	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+line	
+line	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+line	
+line	<str>Head inside the south-east room where the jails are located.</str>
+line	
+line	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+line	
+line	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+line	
+line	<str>Go back to the jail and talk to the guard to get the keys.</str>
+line	
+line	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+line	
+line	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+line	
+line	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+line	
+line	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+line	
+line	<str>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</str>
+line	
+line	<str>Kill the Khazard scorpion (level 44).</str>
+line	
+line	<str>Kill Bouncer (level 137). red|Warning: Once you begin the fight with General Khazard you are unable to reenter the arena. Dying in the arena after this point will most likely make the grave inaccessible, thus making them only retrievable from Death</str>
+line	
+line	<str>Kill General Khazard (level 142) or run away through the door in the south-east corner of the arena (or just run north until he's not aggressive).</str>
+line	
+line	<col=000080>Return to <col=800000>Lady Servil</col>.</col>
+done	<str>Ensure that you have 2 empty inventory slots.</str>
+done	
+done	<str>Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.</str>
+done	
+done	<str>Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour.</str>
+done	
+done	<str>Equip the armour and head south into the prison (do not unequip the armour inside!).</str>
+done	
+done	<str>Head inside the south-east room where the jails are located.</str>
+done	
+done	<str>Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a "decent drink," saying he will fall asleep with too much Khali brew.</str>
+done	
+done	<str>Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).</str>
+done	
+done	<str>Go back to the jail and talk to the guard to get the keys.</str>
+done	
+done	<str>Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer.</str>
+done	
+done	<str>Use the keys on Sammy's prison door (the most north-eastern cell) to free him.</str>
+done	
+done	<str>Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena.</str>
+done	
+done	<str>Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin).</str>
+done	
+done	<str>You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight.</str>
+done	
+done	<str>Kill the Khazard scorpion (level 44).</str>
+done	
+done	<str>Kill Bouncer (level 137). red|Warning: Once you begin the fight with General Khazard you are unable to reenter the arena. Dying in the arena after this point will most likely make the grave inaccessible, thus making them only retrievable from Death</str>
+done	
+done	<str>Kill General Khazard (level 142) or run away through the door in the south-east corner of the arena (or just run north until he's not aggressive).</str>
+done	
+done	<str>Return to Lady Servil.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

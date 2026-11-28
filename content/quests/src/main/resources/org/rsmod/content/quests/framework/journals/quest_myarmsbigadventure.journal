@@ -1,0 +1,660 @@
+# Generated from the OSRS Wiki page "My Arm's Big Adventure/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Burntmeat</col> in the <col=800000>Troll Stronghold</col> kitchen.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 29 Farming
+req	Level 10 Woodcutting
+step	1	-	Quick guide step 1
+line	<col=000080>Go to the <col=800000>Troll Stronghold</col>, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or <col=800000>Trollheim teleport</col> and go west).</col>
+step	2	-	Quick guide step 2
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<col=000080>Speak to <col=800000>Burntmeat</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<col=000080>Talk to <col=800000>My Arm</col>, east of Burntmeat.</col>
+step	4	-	Quick guide step 4
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<col=000080>Reach the <col=800000>Death Plateau</col>. (<col=800000>Games necklace</col> or <col=800000>minigame teleport</col> to <col=800000>Burthorpe</col>). There will be <col=800000>thrower troll</col>s on the way there and on the plateau itself; protect from ranged.</col>
+step	5	-	Quick guide step 5
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<col=000080>Use a bucket on the <col=800000>cooking pot</col> in the middle of the plateau with 1 free inventory space to get the <col=800000>goutweedy lump</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<col=000080>Go back to the <col=800000>Troll Stronghold</col> and talk to My Arm.</col>
+step	7	-	Quick guide step 7
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<col=000080>After he brings you to a new area, talk to him again.</col>
+step	8	-	Quick guide step 8
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<col=000080>After reading the book he gave you, talk to him again.</col>
+step	9	-	Quick guide step 9
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<col=000080>Use three buckets of <col=800000>Ugthanki dung</col> and seven buckets of <col=800000>supercompost</col> on the soil patch.</col>
+step	10	-	Quick guide step 10
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<col=000080>Talk to My Arm.</col>
+step	11	-	Quick guide step 11
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<col=000080>Talk to <col=800000>Captain Barnaby</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<col=000080>Meet up with My Arm at <col=800000>Tai Bwo Wannai</col>, east of the <col=800000>general store</col>. Talk to him.</col>
+step	13	-	Quick guide step 13
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<col=000080>Talk to <col=800000>Murcaily</col> near the hardwood grove. Make sure you have at least 1 free inventory space.</col>
+step	14	-	Quick guide step 14
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<col=000080>After the cutscene speak to My Arm, you will take the boat back to <col=800000>Ardougne</col> where you can access the bank.</col>
+step	15	-	Quick guide step 15
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<col=000080>Prepare yourself for a level 75 fight and a level 172 fight.</col>
+step	16	-	Quick guide step 16
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<col=000080>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the <col=800000>Troll General</col>s are.</col>
+step	17	-	Quick guide step 17
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<col=000080>Talk to My Arm.</col>
+step	18	-	Quick guide step 18
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<col=000080>Give My Arm the tools he needs for farming in this order:</col>
+step	19	-	Quick guide step 19
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<col=000080>Talk to My Arm.</col>
+step	20	-	Quick guide step 20
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<col=000080>Defeat the two monsters.</col>
+step	21	-	Quick guide step 21
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Defeat the two monsters.</str>
+line	
+line	<col=000080>Talk to My Arm.</col>
+step	22	-	Quick guide step 22
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Defeat the two monsters.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<col=000080>Give him a spade (if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear).</col>
+step	23	-	Quick guide step 23
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Defeat the two monsters.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give him a spade (if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear).</str>
+line	
+line	<col=000080>Go back to <col=800000>Burntmeat</col> in the kitchen.</col>
+step	24	-	Quick guide step 24
+line	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+line	
+line	<str>Speak to Burntmeat.</str>
+line	
+line	<str>Talk to My Arm, east of Burntmeat.</str>
+line	
+line	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+line	
+line	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+line	
+line	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+line	
+line	<str>After he brings you to a new area, talk to him again.</str>
+line	
+line	<str>After reading the book he gave you, talk to him again.</str>
+line	
+line	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Talk to Captain Barnaby.</str>
+line	
+line	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+line	
+line	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+line	
+line	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+line	
+line	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+line	
+line	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give My Arm the tools he needs for farming in this order:</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Defeat the two monsters.</str>
+line	
+line	<str>Talk to My Arm.</str>
+line	
+line	<str>Give him a spade (if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear).</str>
+line	
+line	<str>Go back to Burntmeat in the kitchen.</str>
+line	
+line	<col=000080>Talk to My Arm on the roof.</col>
+done	<str>Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west).</str>
+done	
+done	<str>Speak to Burntmeat.</str>
+done	
+done	<str>Talk to My Arm, east of Burntmeat.</str>
+done	
+done	<str>Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged.</str>
+done	
+done	<str>Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump.</str>
+done	
+done	<str>Go back to the Troll Stronghold and talk to My Arm.</str>
+done	
+done	<str>After he brings you to a new area, talk to him again.</str>
+done	
+done	<str>After reading the book he gave you, talk to him again.</str>
+done	
+done	<str>Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch.</str>
+done	
+done	<str>Talk to My Arm.</str>
+done	
+done	<str>Talk to Captain Barnaby.</str>
+done	
+done	<str>Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him.</str>
+done	
+done	<str>Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.</str>
+done	
+done	<str>After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank.</str>
+done	
+done	<str>Prepare yourself for a level 75 fight and a level 172 fight.</str>
+done	
+done	<str>Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are.</str>
+done	
+done	<str>Talk to My Arm.</str>
+done	
+done	<str>Give My Arm the tools he needs for farming in this order:</str>
+done	
+done	<str>Talk to My Arm.</str>
+done	
+done	<str>Defeat the two monsters.</str>
+done	
+done	<str>Talk to My Arm.</str>
+done	
+done	<str>Give him a spade (if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear).</str>
+done	
+done	<str>Go back to Burntmeat in the kitchen.</str>
+done	
+done	<str>Talk to My Arm on the roof.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

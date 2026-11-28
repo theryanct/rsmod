@@ -1,0 +1,561 @@
+# Generated from the OSRS Wiki page "Sea Slug/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Caroline</col> just north of <col=800000>Witchaven</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Firemaking
+step	1	-	Quick guide step 1
+line	<col=000080>Speak with <col=800000>Caroline</col> in <col=800000>Witchaven</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<col=000080>Talk to <col=800000>Holgart</col> (right next to Caroline) and give him the <col=800000>Swamp paste</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<col=000080>Right-click Holgart and select the Travel option to travel to the fishing platform.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<col=000080>Pick up the <col=800000>Broken glass</col> on the floor (hut to the west).</col>
+step	5	-	Quick guide step 5
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<col=000080>Go to the north-east corner of the platform and pick up some <col=800000>Damp sticks</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<col=000080>Climb the ladder right next to the sticks.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<col=000080>Go inside the cabin on the west side of the platform and talk to <col=800000>Kennith</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<col=000080>Go back down the ladder to the sea level.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<col=000080>Travel or speak with <col=800000>Holgart</col> for a trip to a remote island.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<col=000080>Talk to <col=800000>Kent</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<col=000080>Talk to Holgart again to go back to the <col=800000>Fishing Platform</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<col=000080>Speak with <col=800000>Bailey</col> in the south-west cabin for an <col=800000>Unlit torch</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<col=000080>Use the <col=800000>Broken glass</col> on the <col=800000>Damp sticks</col> to dry them.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<col=000080>Rub the <col=800000>Dry sticks</col> together to light the torch.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<col=000080>Go back up the ladder.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<col=000080>Go talk to <col=800000>Kennith</col> again.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<col=000080>From outside of the cabin, kick the <col=800000>badly repaired wall</col> to make an opening.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+line	
+line	<col=000080>Talk to Kennith again.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+line	
+line	<str>Talk to Kennith again.</str>
+line	
+line	<col=000080>Just outside of Kennith's cabin, activate the <col=800000>crane</col> controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall).</col>
+step	20	-	Quick guide step 20
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+line	
+line	<str>Talk to Kennith again.</str>
+line	
+line	<str>Just outside of Kennith's cabin, activate the crane controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall).</str>
+line	
+line	<col=000080>Go back down the ladder to the sea level.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+line	
+line	<str>Talk to Kennith again.</str>
+line	
+line	<str>Just outside of Kennith's cabin, activate the crane controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall).</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<col=000080>Speak with <col=800000>Holgart</col> again to return to the shore.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak with Caroline in Witchaven.</str>
+line	
+line	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+line	
+line	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+line	
+line	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+line	
+line	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+line	
+line	<str>Climb the ladder right next to the sticks.</str>
+line	
+line	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+line	
+line	<str>Talk to Kent.</str>
+line	
+line	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+line	
+line	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+line	
+line	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+line	
+line	<str>Rub the Dry sticks together to light the torch.</str>
+line	
+line	<str>Go back up the ladder.</str>
+line	
+line	<str>Go talk to Kennith again.</str>
+line	
+line	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+line	
+line	<str>Talk to Kennith again.</str>
+line	
+line	<str>Just outside of Kennith's cabin, activate the crane controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall).</str>
+line	
+line	<str>Go back down the ladder to the sea level.</str>
+line	
+line	<str>Speak with Holgart again to return to the shore.</str>
+line	
+line	<col=000080>Report to <col=800000>Caroline</col>.</col>
+done	<str>Speak with Caroline in Witchaven.</str>
+done	
+done	<str>Talk to Holgart (right next to Caroline) and give him the Swamp paste.</str>
+done	
+done	<str>Right-click Holgart and select the Travel option to travel to the fishing platform.</str>
+done	
+done	<str>Pick up the Broken glass on the floor (hut to the west).</str>
+done	
+done	<str>Go to the north-east corner of the platform and pick up some Damp sticks.</str>
+done	
+done	<str>Climb the ladder right next to the sticks.</str>
+done	
+done	<str>Go inside the cabin on the west side of the platform and talk to Kennith.</str>
+done	
+done	<str>Go back down the ladder to the sea level.</str>
+done	
+done	<str>Travel or speak with Holgart for a trip to a remote island.</str>
+done	
+done	<str>Talk to Kent.</str>
+done	
+done	<str>Talk to Holgart again to go back to the Fishing Platform.</str>
+done	
+done	<str>Speak with Bailey in the south-west cabin for an Unlit torch.</str>
+done	
+done	<str>Use the Broken glass on the Damp sticks to dry them.</str>
+done	
+done	<str>Rub the Dry sticks together to light the torch.</str>
+done	
+done	<str>Go back up the ladder.</str>
+done	
+done	<str>Go talk to Kennith again.</str>
+done	
+done	<str>From outside of the cabin, kick the badly repaired wall to make an opening.</str>
+done	
+done	<str>Talk to Kennith again.</str>
+done	
+done	<str>Just outside of Kennith's cabin, activate the crane controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall).</str>
+done	
+done	<str>Go back down the ladder to the sea level.</str>
+done	
+done	<str>Speak with Holgart again to return to the shore.</str>
+done	
+done	<str>Report to Caroline.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

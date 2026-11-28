@@ -1,0 +1,191 @@
+# Generated from the OSRS Wiki page "A Ruff Situation/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to Talia in the <col=800000>Dog Shelter</col> just south-west of the <col=800000>Edgeville Monastery</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Crafting
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Talia</col>, twice, in the camp just south-west of the <col=800000>Edgeville Monastery</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<col=000080>Talk to <col=800000>Gertrude</col> in her house west of <col=800000>Varrock</col>, just south of the <col=800000>Cooks' Guild</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<col=000080>Interact with the stray dog just south of the western Varrock bank, barking at a <col=800000>guard</col>. (type=maplink|x=3180|y=3425|mtype=pin)</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<col=000080>Follow the stray dog to the house just west of the <col=800000>clothes shop</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<col=000080>Inspect the <col=800000>torn newspaper</col>, <col=800000>chewed box</col>, and <col=800000>rough bedding</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<col=000080>Follow the dog again until a cutscene triggers just north of the <col=800000>Cooks' Guild</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<col=000080>Interact with the dog again to ensure the dog is following you, then talk to <col=800000>Picklenose</col> to the south-west of the guild.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+line	
+line	<col=000080>Use <col=800000>Grain</col> (found north of Cooking Guild) on some <col=800000>fur</col> with a <col=800000>needle</col> and <col=800000>thread</col> (or a <col=800000>costume needle</col>) in your inventory to create a stuffed dog.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+line	
+line	<str>Use Grain (found north of Cooking Guild) on some fur with a needle and thread (or a costume needle) in your inventory to create a stuffed dog.</str>
+line	
+line	<col=000080>Talk to Picklenose again.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+line	
+line	<str>Use Grain (found north of Cooking Guild) on some fur with a needle and thread (or a costume needle) in your inventory to create a stuffed dog.</str>
+line	
+line	<str>Talk to Picklenose again.</str>
+line	
+line	<col=000080>Pick up the stray puppy next to the stray dog.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+line	
+line	<str>Use Grain (found north of Cooking Guild) on some fur with a needle and thread (or a costume needle) in your inventory to create a stuffed dog.</str>
+line	
+line	<str>Talk to Picklenose again.</str>
+line	
+line	<str>Pick up the stray puppy next to the stray dog.</str>
+line	
+line	<col=000080>Interact with the stray dog and follow her until another cutscene triggers by the gap in the wall north of the <col=800000>Cooks' Guild</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+line	
+line	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+line	
+line	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+line	
+line	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+line	
+line	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+line	
+line	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+line	
+line	<str>Use Grain (found north of Cooking Guild) on some fur with a needle and thread (or a costume needle) in your inventory to create a stuffed dog.</str>
+line	
+line	<str>Talk to Picklenose again.</str>
+line	
+line	<str>Pick up the stray puppy next to the stray dog.</str>
+line	
+line	<str>Interact with the stray dog and follow her until another cutscene triggers by the gap in the wall north of the Cooks' Guild.</str>
+line	
+line	<col=000080>Kill both outlaws (level 22 and 23) and watch the next cutscene.</col>
+done	<str>Talk to Talia, twice, in the camp just south-west of the Edgeville Monastery.</str>
+done	
+done	<str>Talk to Gertrude in her house west of Varrock, just south of the Cooks' Guild.</str>
+done	
+done	<str>Interact with the stray dog just south of the western Varrock bank, barking at a guard. (type=maplink|x=3180|y=3425|mtype=pin)</str>
+done	
+done	<str>Follow the stray dog to the house just west of the clothes shop.</str>
+done	
+done	<str>Inspect the torn newspaper, chewed box, and rough bedding.</str>
+done	
+done	<str>Follow the dog again until a cutscene triggers just north of the Cooks' Guild.</str>
+done	
+done	<str>Interact with the dog again to ensure the dog is following you, then talk to Picklenose to the south-west of the guild.</str>
+done	
+done	<str>Use Grain (found north of Cooking Guild) on some fur with a needle and thread (or a costume needle) in your inventory to create a stuffed dog.</str>
+done	
+done	<str>Talk to Picklenose again.</str>
+done	
+done	<str>Pick up the stray puppy next to the stray dog.</str>
+done	
+done	<str>Interact with the stray dog and follow her until another cutscene triggers by the gap in the wall north of the Cooks' Guild.</str>
+done	
+done	<str>Kill both outlaws (level 22 and 23) and watch the next cutscene.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

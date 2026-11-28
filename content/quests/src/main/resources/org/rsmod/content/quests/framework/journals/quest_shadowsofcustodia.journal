@@ -1,0 +1,41 @@
+# Generated from the OSRS Wiki page "Transcript:Shadows of Custodia/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this uest by reading the <col=800000>Notice Board</col> in the <col=800000>Auburn Pub</col> in <col=800000>Auburnvale</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2025</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Children of the Sun
+req	Level 52 Slayer
+req	Level 45 Fishing
+req	Level 41 Construction
+req	Level 36 Hunter
+before	<col=000080>Recommendations:</col>
+req	Combat Level 60
+req	Level 45 Woodcutting
+req	Level 40 Fletching
+req	Level 10 Crafting
+step	1	-	Asking Around
+line	<col=000080>I took a look at a <col=800000>Notice Board</col> in the <col=800000>Auburn Pub</col> in <col=800000>Auburnvale</col> and found it to be covered in <col=800000>Missing Person Posters</col>. I should ask around and see if anyone can tell me more about this.</col>
+step	2	-	Finding the fabric
+step	3	-	Finding the boys
+step	4	-	Helping around town
+step	5	-	Rescuing Antos
+step	6	-	Quest Complete
+line	<str>I took a look at a Notice Board in the Auburn Pub in Auburnvale and found it to be covered in Missing Person Posters.</str>
+line	<str>I asked around town about the Missing People and found a Couple who seemed to be distressed at the mention of them</str>
+line	<str>I spoke to the Distressed Couple and they told me that their two Sons were among the Missing People.</str>
+line	<str>I had a look around the home of the Distressed Couple and found a Scratched Wall with a trail of Strange Puddles leading away. I followed these Puddles and found a Scrap of Fabric.</str>
+line	<str>I returned to the Distressed Couple and asked them about the Scrap of Fabric. They told me that it was likely from the clothing of one of their Sons.</str>
+line	<str>Given that the Strange Puddles I followed seemed to be heading towards the Custodia Pass west of Auburnvale, I decided to continue my search there. I soon found a Cave in the Pass with two Boys inside. I escorted these Boys back to Auburnvale, where they reunited with their Parents.</str>
+line	<str>The Parents of the Boys told me I'd need to give them time to recover before asking them about what happened. In the meantime, I helped them out by reinforcing their Scratched Wall. At their request, I also spoke to Captain Ariadna about what happened.</str>
+line	<str>I spoke to the Boys and asked them what happened. They told me that they say Antos, another one of the Missing People, getting dragged deeper into the Cave in the Custodia Pass.</str>
+line	<str>I returned to the Cave in the Custodia Pass and found Antos. Before I could help him, I was attacked by three Strange Creatures, but I was able to fight them off. With them dealt with, I helped Antos get back to Auburnvale.</str>
+line	<str>Back in Auburnvale, I told Captain Ariadna about the Strange Creatures. Now that she knows it was them that was taking the Missing People, she should be able to ensure they aren't able to do so again. As part of that, she suggested I might want to return to the Cave from time to time to help deal with the Creatures.</str>
+line	<col=ff0000>QUEST COMPLETE!</col>

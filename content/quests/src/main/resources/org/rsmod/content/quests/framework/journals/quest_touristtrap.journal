@@ -1,0 +1,1270 @@
+# Generated from the OSRS Wiki page "The Tourist Trap/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Irena</col> by the <col=800000>Shantay Pass</col>, south of <col=800000>Al Kharid</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 10 Fletching
+req	Level 20 Smithing
+step	1	-	Quick guide step 1
+line	<col=000080>Begin the quest by talking to <col=800000>Irena</col>, located just south of <col=800000>Shantay Pass</col> (fairy ring BIQ, then run north-east).</col>
+step	2	-	Quick guide step 2
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<col=000080>Go to the <col=800000>Desert Mining Camp</col> entrance (south of Irena).</col>
+step	3	-	Quick guide step 3
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<col=000080>Talk to the <col=800000>Mercenary Captain</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<col=000080>He will attack you. Kill him and get the <col=800000>key</col> of the gate. (All damage can be dealt via recoil)</col>
+step	5	-	Quick guide step 5
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<col=000080>Unequip any weapons AND armour and enter the gate.</col>
+step	6	-	Quick guide step 6
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<col=000080>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</col>
+step	7	-	Quick guide step 7
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<col=000080>Equip the slave's clothes</col>
+step	8	-	Quick guide step 8
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<col=000080>Enter the mine to the north</col>
+step	9	-	Quick guide step 9
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<col=000080>Follow the path until you reach a guarded cave entrance.</col>
+step	10	-	Quick guide step 10
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<col=000080>Talk to one of the guards until he mentions a Tenti pineapple.</col>
+step	11	-	Quick guide step 11
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<col=000080>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</col>
+step	12	-	Quick guide step 12
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<col=000080>Talk to <col=800000>Al Shabim</col> in the south tent in the <col=800000>Bedabin Camp</col> (directly west of the Desert Mining Camp). You will be given a <col=800000>Bedabin key</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<col=000080>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</col>
+step	14	-	Quick guide step 14
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<col=000080>Go up the ladder in the jail building and search the southernmost <col=800000>bookcase</col> on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</col>
+step	15	-	Quick guide step 15
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<col=000080>In the same room, talk to <col=800000>Captain Siad</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<col=000080>Open the chest to obtain the <col=800000>technical plans</col>. (Make sure you click continue, so the plans go to your inventory)</col>
+step	17	-	Quick guide step 17
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<col=000080>Go back to the Bedabin Camp and show Al Shabim the plans.</col>
+step	18	-	Quick guide step 18
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<col=000080>Use the anvil in the northern tent. Following the plans, create a <col=800000>prototype dart</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<col=000080>Take the dart to Al Shabim, who will in return give you the <col=800000>Tenti pineapple</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<col=000080>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</col>
+step	21	-	Quick guide step 21
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<col=000080>Go through the cave entrance and head east until you're beside the mine cart.</col>
+step	22	-	Quick guide step 22
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<col=000080>Right-click search the nearby barrels to get a barrel.</col>
+step	23	-	Quick guide step 23
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<col=000080>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</col>
+step	24	-	Quick guide step 24
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<col=000080>Take the west-north-west path and use a barrel on <col=800000>Ana</col> (blonde hair at the end of the second north-western path).</col>
+step	25	-	Quick guide step 25
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<col=000080>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</col>
+step	26	-	Quick guide step 26
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<col=000080>Search nearby barrels to find Ana.</col>
+step	27	-	Quick guide step 27
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<col=000080>Put Ana on the <col=800000>winch bucket</col> (north-west area of room).</col>
+step	28	-	Quick guide step 28
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<col=000080>Don't raise the guard's suspicions when he offers help.</col>
+step	29	-	Quick guide step 29
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<col=000080>Head back to the surface.</col>
+step	30	-	Quick guide step 30
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<str>Head back to the surface.</str>
+line	
+line	<col=000080>Operate the <col=800000>winch</col> (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</col>
+step	31	-	Quick guide step 31
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<str>Head back to the surface.</str>
+line	
+line	<str>Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</str>
+line	
+line	<col=000080>Put Ana on the <col=800000>wooden cart</col> at the centre of the Camp.</col>
+step	32	-	Quick guide step 32
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<str>Head back to the surface.</str>
+line	
+line	<str>Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</str>
+line	
+line	<str>Put Ana on the wooden cart at the centre of the Camp.</str>
+line	
+line	<col=000080>Talk to the <col=800000>mine cart driver</col>.</col>
+step	33	-	Quick guide step 33
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<str>Head back to the surface.</str>
+line	
+line	<str>Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</str>
+line	
+line	<str>Put Ana on the wooden cart at the centre of the Camp.</str>
+line	
+line	<str>Talk to the mine cart driver.</str>
+line	
+line	<col=000080>Get on the cart by searching it.</col>
+step	34	-	Quick guide step 34
+line	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+line	
+line	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+line	
+line	<str>Talk to the Mercenary Captain.</str>
+line	
+line	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+line	
+line	<str>Unequip any weapons AND armour and enter the gate.</str>
+line	
+line	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+line	
+line	<str>Equip the slave's clothes</str>
+line	
+line	<str>Enter the mine to the north</str>
+line	
+line	<str>Follow the path until you reach a guarded cave entrance.</str>
+line	
+line	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+line	
+line	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+line	
+line	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+line	
+line	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+line	
+line	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+line	
+line	<str>In the same room, talk to Captain Siad.</str>
+line	
+line	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+line	
+line	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+line	
+line	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+line	
+line	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+line	
+line	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+line	
+line	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+line	
+line	<str>Right-click search the nearby barrels to get a barrel.</str>
+line	
+line	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+line	
+line	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+line	
+line	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+line	
+line	<str>Search nearby barrels to find Ana.</str>
+line	
+line	<str>Put Ana on the winch bucket (north-west area of room).</str>
+line	
+line	<str>Don't raise the guard's suspicions when he offers help.</str>
+line	
+line	<str>Head back to the surface.</str>
+line	
+line	<str>Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</str>
+line	
+line	<str>Put Ana on the wooden cart at the centre of the Camp.</str>
+line	
+line	<str>Talk to the mine cart driver.</str>
+line	
+line	<str>Get on the cart by searching it.</str>
+line	
+line	<col=000080>Head back to Irena for your reward.</col>
+done	<str>Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).</str>
+done	
+done	<str>Go to the Desert Mining Camp entrance (south of Irena).</str>
+done	
+done	<str>Talk to the Mercenary Captain.</str>
+done	
+done	<str>He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)</str>
+done	
+done	<str>Unequip any weapons AND armour and enter the gate.</str>
+done	
+done	<str>Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.</str>
+done	
+done	<str>Equip the slave's clothes</str>
+done	
+done	<str>Enter the mine to the north</str>
+done	
+done	<str>Follow the path until you reach a guarded cave entrance.</str>
+done	
+done	<str>Talk to one of the guards until he mentions a Tenti pineapple.</str>
+done	
+done	<str>Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ.</str>
+done	
+done	<str>Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.</str>
+done	
+done	<str>Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)</str>
+done	
+done	<str>Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating "You notice several books on the subject of sailing."</str>
+done	
+done	<str>In the same room, talk to Captain Siad.</str>
+done	
+done	<str>Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)</str>
+done	
+done	<str>Go back to the Bedabin Camp and show Al Shabim the plans.</str>
+done	
+done	<str>Use the anvil in the northern tent. Following the plans, create a prototype dart.</str>
+done	
+done	<str>Take the dart to Al Shabim, who will in return give you the Tenti pineapple.</str>
+done	
+done	<str>Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.</str>
+done	
+done	<str>Go through the cave entrance and head east until you're beside the mine cart.</str>
+done	
+done	<str>Right-click search the nearby barrels to get a barrel.</str>
+done	
+done	<str>Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)</str>
+done	
+done	<str>Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path).</str>
+done	
+done	<str>Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.</str>
+done	
+done	<str>Search nearby barrels to find Ana.</str>
+done	
+done	<str>Put Ana on the winch bucket (north-west area of room).</str>
+done	
+done	<str>Don't raise the guard's suspicions when he offers help.</str>
+done	
+done	<str>Head back to the surface.</str>
+done	
+done	<str>Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)</str>
+done	
+done	<str>Put Ana on the wooden cart at the centre of the Camp.</str>
+done	
+done	<str>Talk to the mine cart driver.</str>
+done	
+done	<str>Get on the cart by searching it.</str>
+done	
+done	<str>Head back to Irena for your reward.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

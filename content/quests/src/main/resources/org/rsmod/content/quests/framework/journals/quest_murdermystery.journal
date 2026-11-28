@@ -1,0 +1,249 @@
+# Generated from the OSRS Wiki page "Murder Mystery/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to any <col=800000>guard</col> around the <col=800000>Sinclair Mansion</col>, north of <col=800000>Seers' Village</col> and <col=800000>Camelot</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the guard out front of <col=800000>Sinclair Mansion</col> and agree to help.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<col=000080>Go north-west and investigate the sacks in the shed, take 4 flypapers.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<col=000080>Go inside the mansion and take the pungent pot and criminal's dagger.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<col=000080>Investigate the smashed window on the eastern side for the criminal's thread.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<col=000080>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<col=000080>Go to the kitchen and fill your pot with flour from the barrel.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<col=000080>Use flour and flypaper to dust each silver item and the dagger.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<col=000080>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<col=000080>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+line	
+line	<col=000080>Talk to the poison salesman in the <col=800000>Seers' Village</col> pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+line	
+line	<str>Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</str>
+line	
+line	<col=000080>Talk to the person whose prints matched, ask why they bought poison.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+line	
+line	<str>Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</str>
+line	
+line	<str>Talk to the person whose prints matched, ask why they bought poison.</str>
+line	
+line	<col=000080>Search the item they say they used the poison on.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+line	
+line	<str>Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</str>
+line	
+line	<str>Talk to the person whose prints matched, ask why they bought poison.</str>
+line	
+line	<str>Search the item they say they used the poison on.</str>
+line	
+line	<col=000080>Drop the silver necklace (if you took it from Anna's barrel) before talking to the guard if you want to keep it, you can't get it back afterward.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+line	
+line	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+line	
+line	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+line	
+line	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+line	
+line	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+line	
+line	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+line	
+line	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+line	
+line	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+line	
+line	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+line	
+line	<str>Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</str>
+line	
+line	<str>Talk to the person whose prints matched, ask why they bought poison.</str>
+line	
+line	<str>Search the item they say they used the poison on.</str>
+line	
+line	<str>Drop the silver necklace (if you took it from Anna's barrel) before talking to the guard if you want to keep it, you can't get it back afterward.</str>
+line	
+line	<col=000080>Talk to a guard.</col>
+done	<str>Talk to the guard out front of Sinclair Mansion and agree to help.</str>
+done	
+done	<str>Go north-west and investigate the sacks in the shed, take 4 flypapers.</str>
+done	
+done	<str>Go inside the mansion and take the pungent pot and criminal's dagger.</str>
+done	
+done	<str>Investigate the smashed window on the eastern side for the criminal's thread.</str>
+done	
+done	<str>Search the barrels in the bedroom owned by the following two suspects to get 2 silver items.</str>
+done	
+done	<str>Go to the kitchen and fill your pot with flour from the barrel.</str>
+done	
+done	<str>Use flour and flypaper to dust each silver item and the dagger.</str>
+done	
+done	<str>Use the silver items' prints on the dagger's print until you get a match. Remember who it is.</str>
+done	
+done	<str>Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.</str>
+done	
+done	<str>Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)</str>
+done	
+done	<str>Talk to the person whose prints matched, ask why they bought poison.</str>
+done	
+done	<str>Search the item they say they used the poison on.</str>
+done	
+done	<str>Drop the silver necklace (if you took it from Anna's barrel) before talking to the guard if you want to keep it, you can't get it back afterward.</str>
+done	
+done	<str>Talk to a guard.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

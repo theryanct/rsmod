@@ -1,0 +1,249 @@
+# Generated from the OSRS Wiki page "Making History/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Jorral</col> in the <col=800000>outpost</col> north-west of <col=800000>West Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Walk to or use the <col=800000>necklace of passage</col> to teleport to the <col=800000>outpost</col> north-west of Ardougne.</col>
+step	2	-	Quick guide step 2
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<col=000080>Talk to <col=800000>Jorral</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<col=000080>Complete the next 3 segments in any order.</col>
+step	4	-	Quick guide step 4
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Silver merchant</col> in the <col=800000>East Ardougne</col> market.</col>
+step	5	-	Quick guide step 5
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<col=000080>With the <col=800000>enchanted key</col> in your inventory, dig with your spade to find the <col=800000>chest</col> buried north of <col=800000>Castle Wars</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<col=000080>Open the chest with the <col=800000>enchanted key</col> to get a journal.</col>
+step	7	-	Quick guide step 7
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<col=000080>Equip your <col=800000>Ghostspeak amulet</col> and talk to <col=800000>Droalak</col> outside the Port Phasmatys general store.</col>
+step	8	-	Quick guide step 8
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<col=000080>In the building east of the general store, directly south of the pub, give <col=800000>Melina</col> a strung sapphire amulet.</col>
+step	9	-	Quick guide step 9
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<col=000080>Talk to Droalak to receive a scroll.</col>
+step	10	-	Quick guide step 10
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<str>Talk to Droalak to receive a scroll.</str>
+line	
+line	<col=000080>Go to <col=800000>Rellekka</col> and talk to <col=800000>Blanin</col> east of the longhall.</col>
+step	11	-	Quick guide step 11
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<str>Talk to Droalak to receive a scroll.</str>
+line	
+line	<str>Go to Rellekka and talk to Blanin east of the longhall.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dron</col> north of the longhall. Answers:</col>
+step	12	-	Quick guide step 12
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<str>Talk to Droalak to receive a scroll.</str>
+line	
+line	<str>Go to Rellekka and talk to Blanin east of the longhall.</str>
+line	
+line	<str>Talk to Dron north of the longhall. Answers:</str>
+line	
+line	<col=000080>Talk to Jorral, back at the outpost, with the scroll and journal.</col>
+step	13	-	Quick guide step 13
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<str>Talk to Droalak to receive a scroll.</str>
+line	
+line	<str>Go to Rellekka and talk to Blanin east of the longhall.</str>
+line	
+line	<str>Talk to Dron north of the longhall. Answers:</str>
+line	
+line	<str>Talk to Jorral, back at the outpost, with the scroll and journal.</str>
+line	
+line	<col=000080>Talk to <col=800000>King Lathas</col>, located on the uk=1 of the <col=800000>Ardougne Castle</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+line	
+line	<str>Talk to Jorral.</str>
+line	
+line	<str>Complete the next 3 segments in any order.</str>
+line	
+line	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+line	
+line	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+line	
+line	<str>Open the chest with the enchanted key to get a journal.</str>
+line	
+line	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+line	
+line	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+line	
+line	<str>Talk to Droalak to receive a scroll.</str>
+line	
+line	<str>Go to Rellekka and talk to Blanin east of the longhall.</str>
+line	
+line	<str>Talk to Dron north of the longhall. Answers:</str>
+line	
+line	<str>Talk to Jorral, back at the outpost, with the scroll and journal.</str>
+line	
+line	<str>Talk to King Lathas, located on the uk=1 of the Ardougne Castle.</str>
+line	
+line	<col=000080>Talk to Jorral, back at the outpost.</col>
+done	<str>Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne.</str>
+done	
+done	<str>Talk to Jorral.</str>
+done	
+done	<str>Complete the next 3 segments in any order.</str>
+done	
+done	<str>Talk to the Silver merchant in the East Ardougne market.</str>
+done	
+done	<str>With the enchanted key in your inventory, dig with your spade to find the chest buried north of Castle Wars.</str>
+done	
+done	<str>Open the chest with the enchanted key to get a journal.</str>
+done	
+done	<str>Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store.</str>
+done	
+done	<str>In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet.</str>
+done	
+done	<str>Talk to Droalak to receive a scroll.</str>
+done	
+done	<str>Go to Rellekka and talk to Blanin east of the longhall.</str>
+done	
+done	<str>Talk to Dron north of the longhall. Answers:</str>
+done	
+done	<str>Talk to Jorral, back at the outpost, with the scroll and journal.</str>
+done	
+done	<str>Talk to King Lathas, located on the uk=1 of the Ardougne Castle.</str>
+done	
+done	<str>Talk to Jorral, back at the outpost.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

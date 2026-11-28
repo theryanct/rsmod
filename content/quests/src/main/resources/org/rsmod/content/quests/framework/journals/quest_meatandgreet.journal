@@ -1,0 +1,36 @@
+# Generated from the OSRS Wiki page "Transcript:Meat and Greet/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Emelio</col> at his home in <col=800000>Outer Fortis</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Children of the Sun
+before	<col=000080>Recommendations:</col>
+req	Combat Level 60
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Emelio</col> in <col=800000>Outer Fortis</col>. He asked me for some help with a new business venture. I should speak to him again and see what he needs.</col>
+step	2	-	After returning to Emelio
+line	<str>I spoke to Emelio in Outer Fortis. He asked me for some help in setting up Varlamore's first Kebab Shop. To do so, I chased up some Missing Deliveries for him.</str>
+line	<col=000080>With the <col=800000>Missing Deliveries</col> sorted, <col=800000>Emelio</col> now needs me to help perfect the recipe for the <col=800000>Kebabs</col>. He's gathered a selection of <col=800000>'Connoisseurs'</col> to help with this. I'll need to get their opinions on the right ratio of <col=800000>Ingredients</col> to create the perfect <col=800000>Kebab</col>.</col>
+step	3	-	After speaking to Emelio with a perfect kebab
+line	<str>I spoke to Emelio in Outer Fortis. He asked me for some help in setting up Varlamore's first Kebab Shop. To do so, I chased up some Missing Deliveries for him.</str>
+line	<str>With the Missing Deliveries sorted, Emelio and I needed to perfect the recipe for the Kebabs. We did this with the help of a selection of 'Connoisseurs'.</str>
+line	<col=000080>Before we can start selling the <col=800000>Kebabs</col>, <col=800000>Emelio</col> wants us to market them to the people of <col=800000>Varlamore</col>. To help with this, he's asked me to take some to <col=800000>Lelia</col> in the <col=800000>Fortis Colosseum</col>.</col>
+step	4	-	After entering the Colosseum
+line	<str>I spoke to Emelio in Outer Fortis. He asked me for some help in setting up Varlamore's first Kebab Shop. To do so, I chased up some Missing Deliveries for him.</str>
+line	<str>With the Missing Deliveries sorted, Emelio and I needed to perfect the recipe for the Kebabs. We did this with the help of a selection of 'Connoisseurs'.</str>
+line	<str>With the recipe perfected, Emelio asked me to speak to Lelia at the Fortis Colosseum about marketing the Kebabs to the people of Varlamore.</str>
+line	<col=000080><col=800000>Lelia</col> arranged a slot for me to enter the <col=800000>Fortis Colosseum</col> and advertise the <col=800000>Kebabs</col>. However, a <col=800000>Minotaur</col> involved in the advertisement went rogue. I'll need to defeat it.</col>
+done	<str>I spoke to Emelio in Outer Fortis. He asked me for some help in setting up Varlamore's first Kebab Shop. To do so, I chased up some Missing Deliveries for him.</str>
+done	<str>With the Missing Deliveries sorted, Emelio and I needed to perfect the recipe for the Kebabs. We did this with the help of a selection of 'Connoisseurs'.</str>
+done	<str>With the recipe perfected, Emelio asked me to speak to Lelia at the Fortis Colosseum about marketing the Kebabs to the people of Varlamore.</str>
+done	<str>Lelia arranged a slot for me to enter the Fortis Colosseum and advertise the Kebabs. A Minotaur involved in the advertisement went rogue and I had to defeat it. However, the crowd was still impressed. Emelio was very happy with the business that he gained from the advertising and promised to give me a special price on his Kebabs.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

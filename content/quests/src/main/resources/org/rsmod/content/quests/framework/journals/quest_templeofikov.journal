@@ -1,0 +1,610 @@
+# Generated from the OSRS Wiki page "Temple of Ikov/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Lucien</col> at the <col=800000>Flying Horse Inn</col> in the north-western corner of <col=800000>East Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 42 Thieving
+req	Level 40 Ranged
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Lucien</col> in the <col=800000>Flying Horse Inn</col> in the north-west corner of <col=800000>East Ardougne</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<col=000080>Enter the temple directly south of the <col=800000>Ranging Guild</col> by climbing down the ladder.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<col=000080>Go west down the stairs, slash the web, and take the <col=800000>boots of lightness</col> (light source and knife or slash weapon required).</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<col=000080>Go back upstairs, then through the north gate with the <col=800000>pendant of Lucien</col> equipped.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<col=000080>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<col=000080>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<col=000080>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<col=000080>Go through the south gate and follow the path.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<col=000080>Search chests along the icy path to obtain <col=800000>ice arrows</col>. 16 with <col=800000>Ava's device</col> and 60+ <col=800000>Ranged</col> is enough.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<col=000080>Go back through the north gate with the <col=800000>pendant of Lucien</col> equipped.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<col=000080>Continue straight north to a small room containing a lever.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<col=000080>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<col=000080>Go west then north through the doors.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<col=000080>A <col=800000>Fire Warrior of Lesarkus</col> will spawn in the room upon attempting to enter the second door.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<col=000080>Kill him with your ice arrows.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<col=000080>Give <col=800000>Winelda</col> 20 unnoted <col=800000>limpwurt roots</col> all at once. She will teleport you to the other side of the lava.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<col=000080>Optional: follow the path to its end and take the <col=800000>shiny key</col> to access this dungeon from <col=800000>McGrubor's Wood</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<col=000080>Push the wall to the north leading to a room full of <col=800000>Guardians of Armadyl</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+line	
+line	<col=000080>Pick the good or evil path.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+line	
+line	<str>Pick the good or evil path.</str>
+line	
+line	<col=000080>Remove your pendant of Lucien and talk to a Guardian of Armadyl.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+line	
+line	<str>Pick the good or evil path.</str>
+line	
+line	<str>Remove your pendant of Lucien and talk to a Guardian of Armadyl.</str>
+line	
+line	<col=000080>Enter the building west of the <col=800000>Grand Exchange</col> wearing your <col=800000>Armadyl pendant</col> and kill <col=800000>Lucien</col> (level 14).</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+line	
+line	<str>Pick the good or evil path.</str>
+line	
+line	<str>Remove your pendant of Lucien and talk to a Guardian of Armadyl.</str>
+line	
+line	<str>Enter the building west of the Grand Exchange wearing your Armadyl pendant and kill Lucien (level 14).</str>
+line	
+line	<col=000080>Take the <col=800000>Staff of Armadyl</col> from the table, you may have to kill a level 43 <col=800000>Guardian of Armadyl</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+line	
+line	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+line	
+line	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+line	
+line	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+line	
+line	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+line	
+line	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+line	
+line	<str>Go through the south gate and follow the path.</str>
+line	
+line	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+line	
+line	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+line	
+line	<str>Continue straight north to a small room containing a lever.</str>
+line	
+line	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+line	
+line	<str>Go west then north through the doors.</str>
+line	
+line	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+line	
+line	<str>Kill him with your ice arrows.</str>
+line	
+line	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+line	
+line	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+line	
+line	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+line	
+line	<str>Pick the good or evil path.</str>
+line	
+line	<str>Remove your pendant of Lucien and talk to a Guardian of Armadyl.</str>
+line	
+line	<str>Enter the building west of the Grand Exchange wearing your Armadyl pendant and kill Lucien (level 14).</str>
+line	
+line	<str>Take the Staff of Armadyl from the table, you may have to kill a level 43 Guardian of Armadyl.</str>
+line	
+line	<col=000080>Enter the building west of the Grand Exchange and give Lucien the Staff of Armadyl.</col>
+done	<str>Speak to Lucien in the Flying Horse Inn in the north-west corner of East Ardougne.</str>
+done	
+done	<str>Enter the temple directly south of the Ranging Guild by climbing down the ladder.</str>
+done	
+done	<str>Go west down the stairs, slash the web, and take the boots of lightness (light source and knife or slash weapon required).</str>
+done	
+done	<str>Go back upstairs, then through the north gate with the pendant of Lucien equipped.</str>
+done	
+done	<str>Cross the lava bridge wearing the boots of lightness (weight must be -1&nbsp;kg or less or you will not be able to cross and take 20 damage from falling), open the Large door, and take the lever.</str>
+done	
+done	<str>Cross the lava bridge again and attach the lever to the lever-bracket on the wall a bit west of the ladder you climbed to enter the dungeon.</str>
+done	
+done	<str>Pull the lever after attaching it. You will receive the prompt: "You hear the clunking of some hidden machinery."</str>
+done	
+done	<str>Go through the south gate and follow the path.</str>
+done	
+done	<str>Search chests along the icy path to obtain ice arrows. 16 with Ava's device and 60+ Ranged is enough.</str>
+done	
+done	<str>Go back through the north gate with the pendant of Lucien equipped.</str>
+done	
+done	<str>Continue straight north to a small room containing a lever.</str>
+done	
+done	<str>Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.</str>
+done	
+done	<str>Go west then north through the doors.</str>
+done	
+done	<str>A Fire Warrior of Lesarkus will spawn in the room upon attempting to enter the second door.</str>
+done	
+done	<str>Kill him with your ice arrows.</str>
+done	
+done	<str>Give Winelda 20 unnoted limpwurt roots all at once. She will teleport you to the other side of the lava.</str>
+done	
+done	<str>Optional: follow the path to its end and take the shiny key to access this dungeon from McGrubor's Wood.</str>
+done	
+done	<str>Push the wall to the north leading to a room full of Guardians of Armadyl.</str>
+done	
+done	<str>Pick the good or evil path.</str>
+done	
+done	<str>Remove your pendant of Lucien and talk to a Guardian of Armadyl.</str>
+done	
+done	<str>Enter the building west of the Grand Exchange wearing your Armadyl pendant and kill Lucien (level 14).</str>
+done	
+done	<str>Take the Staff of Armadyl from the table, you may have to kill a level 43 Guardian of Armadyl.</str>
+done	
+done	<str>Enter the building west of the Grand Exchange and give Lucien the Staff of Armadyl.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

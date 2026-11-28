@@ -1,0 +1,562 @@
+# Generated from the OSRS Wiki page "The Hand in the Sand/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Bert</col> in <col=800000>Yanille</col>, near the <col=800000>sand pit</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 17 Thieving
+req	Level 49 Crafting
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Bert</col> in <col=800000>Yanille</col>, in the house next to the POH Portal to get a <col=800000>Sandy hand</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<col=000080>Go to the <col=800000>Dragon Inn</col> pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the <col=800000>Guard Captain</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<col=000080>Ring the bell at the <col=800000>Wizards' Guild</col> (outside near eastern doors), or enter the guild with 66 <col=800000>Magic</col>, then talk to <col=800000>Zavistic Rarve</col>, who will take the Hand. If started <col=800000>Zogre Flesh Eaters</col>:</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<col=000080>Talk to <col=800000>Bert</col> to get <col=800000>Bert's rota</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<col=000080>Travel to <col=800000>Brimhaven</col> and find <col=800000>Sandy</col> in a small house south of <col=800000>The Shrimp and Parrot</col> restaurant and north-west of the pub.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<col=000080>Search Sandy's desk to get <col=800000>Sandy's rota</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<col=000080>Pickpocket <col=800000>Sandy</col> until you get <col=800000>sand</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<col=000080>Travel back to <col=800000>Yanille</col> and talk to <col=800000>Bert</col> to receive <col=800000>a magic scroll</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<col=000080>Ring the bell just outside the <col=800000>Wizards' Guild</col> and talk to <col=800000>Zavistic Rarve</col> again to receive a <col=800000>magical orb</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<col=000080>Talk to <col=800000>Zavistic Rarve</col> again. He will offer to teleport you to Port Sarim. ( if started <col=800000>Zogre Flesh Eaters</col>)</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<col=000080>Talk to <col=800000>Betty</col> in Port Sarim Magic shop for a <col=800000>bottled water</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<col=000080>First add <col=800000>redberries</col>, then <col=800000>white berries</col> to the bottled water in order to get a <col=800000>pink dye</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<col=000080>Dye the <col=800000>lantern lens</col> to get a <col=800000>rose-tinted lens</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<col=000080>Talk to Betty again so she puts the vial on the counter.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<col=000080>Go stand in the doorway and "use" the lens on the counter to get a <col=800000>truth serum</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<col=000080>Talk to <col=800000>Betty</col> one last time with sand in your inventory.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<col=000080>Travel to <col=800000>Brimhaven</col> and talk to <col=800000>Sandy</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<str>Travel to Brimhaven and talk to Sandy.</str>
+line	
+line	<col=000080>Activate the <col=800000>magical orb</col> and talk to <col=800000>Sandy</col> again. Be sure to click every option.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<str>Travel to Brimhaven and talk to Sandy.</str>
+line	
+line	<str>Activate the magical orb and talk to Sandy again. Be sure to click every option.</str>
+line	
+line	<col=000080>Travel to <col=800000>Yanille</col> and Ring the Bell at the <col=800000>Wizards' Guild</col> to talk to <col=800000>Zavistic Rarve</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<str>Travel to Brimhaven and talk to Sandy.</str>
+line	
+line	<str>Activate the magical orb and talk to Sandy again. Be sure to click every option.</str>
+line	
+line	<str>Travel to Yanille and Ring the Bell at the Wizards' Guild to talk to Zavistic Rarve.</str>
+line	
+line	<col=000080>Talk to <col=800000>Zavistic Rarve</col> again to get a cut scene.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<str>Travel to Brimhaven and talk to Sandy.</str>
+line	
+line	<str>Activate the magical orb and talk to Sandy again. Be sure to click every option.</str>
+line	
+line	<str>Travel to Yanille and Ring the Bell at the Wizards' Guild to talk to Zavistic Rarve.</str>
+line	
+line	<str>Talk to Zavistic Rarve again to get a cut scene.</str>
+line	
+line	<col=000080>Travel to <col=800000>Entrana</col> and talk to <col=800000>Mazion</col> at the sandpit to get a <col=800000>Wizard's head</col>.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+line	
+line	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+line	
+line	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+line	
+line	<str>Talk to Bert to get Bert's rota.</str>
+line	
+line	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+line	
+line	<str>Search Sandy's desk to get Sandy's rota.</str>
+line	
+line	<str>Pickpocket Sandy until you get sand.</str>
+line	
+line	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+line	
+line	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+line	
+line	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+line	
+line	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+line	
+line	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+line	
+line	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+line	
+line	<str>Talk to Betty again so she puts the vial on the counter.</str>
+line	
+line	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+line	
+line	<str>Talk to Betty one last time with sand in your inventory.</str>
+line	
+line	<str>Travel to Brimhaven and talk to Sandy.</str>
+line	
+line	<str>Activate the magical orb and talk to Sandy again. Be sure to click every option.</str>
+line	
+line	<str>Travel to Yanille and Ring the Bell at the Wizards' Guild to talk to Zavistic Rarve.</str>
+line	
+line	<str>Talk to Zavistic Rarve again to get a cut scene.</str>
+line	
+line	<str>Travel to Entrana and talk to Mazion at the sandpit to get a Wizard's head.</str>
+line	
+line	<col=000080>Return to <col=800000>Yanille</col>, ring the bell and talk to <col=800000>Zavistic Rarve</col>.</col>
+done	<str>Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.</str>
+done	
+done	<str>Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain.</str>
+done	
+done	<str>Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:</str>
+done	
+done	<str>Talk to Bert to get Bert's rota.</str>
+done	
+done	<str>Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub.</str>
+done	
+done	<str>Search Sandy's desk to get Sandy's rota.</str>
+done	
+done	<str>Pickpocket Sandy until you get sand.</str>
+done	
+done	<str>Travel back to Yanille and talk to Bert to receive a magic scroll.</str>
+done	
+done	<str>Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb.</str>
+done	
+done	<str>Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)</str>
+done	
+done	<str>Talk to Betty in Port Sarim Magic shop for a bottled water.</str>
+done	
+done	<str>First add redberries, then white berries to the bottled water in order to get a pink dye.</str>
+done	
+done	<str>Dye the lantern lens to get a rose-tinted lens.</str>
+done	
+done	<str>Talk to Betty again so she puts the vial on the counter.</str>
+done	
+done	<str>Go stand in the doorway and "use" the lens on the counter to get a truth serum.</str>
+done	
+done	<str>Talk to Betty one last time with sand in your inventory.</str>
+done	
+done	<str>Travel to Brimhaven and talk to Sandy.</str>
+done	
+done	<str>Activate the magical orb and talk to Sandy again. Be sure to click every option.</str>
+done	
+done	<str>Travel to Yanille and Ring the Bell at the Wizards' Guild to talk to Zavistic Rarve.</str>
+done	
+done	<str>Talk to Zavistic Rarve again to get a cut scene.</str>
+done	
+done	<str>Travel to Entrana and talk to Mazion at the sandpit to get a Wizard's head.</str>
+done	
+done	<str>Return to Yanille, ring the bell and talk to Zavistic Rarve.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

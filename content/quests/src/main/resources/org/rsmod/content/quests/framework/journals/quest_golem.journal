@@ -1,0 +1,880 @@
+# Generated from the OSRS Wiki page "The Golem/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>clay golem</col> in the ruins of <col=800000>Uzer</col>, east of the <col=800000>Shantay Pass</col> in the <col=800000>Kharidian Desert</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Crafting
+req	Level 25 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Travel to the <col=800000>Ruins of Uzer</col> via the <col=800000>necklace of passage</col> teleport to <col=800000>Eagle's Eyrie</col> and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</col>
+step	2	-	Quick guide step 2
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<col=000080>Pick up and read the <col=800000>Letter</col> west of the broken <col=800000>clay golem</col></col>
+step	3	-	Quick guide step 3
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<col=000080>Talk to the golem.</col>
+step	4	-	Quick guide step 4
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<col=000080>Use four <col=800000>soft clay</col> on the golem. If you chose to bring a pickaxe and a <col=800000>bracelet of clay</col>, <col=800000>clay rocks</col> can be found to the north-west, near the shore. The phoenix can be found there as well.</col>
+step	5	-	Quick guide step 5
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<col=000080>Talk to the golem again.</col>
+step	6	-	Quick guide step 6
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<col=000080>Pick a <col=800000>black mushroom</col> near the stairs east of the golem before heading down (or downstairs at your right).</col>
+step	7	-	Quick guide step 7
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<col=000080>Climb down the stairs in the ruins.</col>
+step	8	-	Quick guide step 8
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<col=000080>Take the <col=800000>strange implement</col> from the north-western room.</col>
+step	9	-	Quick guide step 9
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<col=000080>Speak to the Golem again</col>
+step	10	-	Quick guide step 10
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<col=000080>Head to the most north-eastern part of the <col=800000>Digsite</col>, near the large buried skeleton, and talk to <col=800000>Elissa</col>. (make sure to read the letter if no 3rd option is seen)</col>
+step	11	-	Quick guide step 11
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<col=000080>Head to the <col=800000>Exam Centre</col> just south of the Digsite.</col>
+step	12	-	Quick guide step 12
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<col=000080>Search the bookcase in the south-east corner and read <col=800000>Varmen's notes</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<col=000080>Talk to <col=800000>Curator Haig Halen</col> in the <col=800000>Varrock Museum</col> about the <col=800000>statuette</col>. ( if <col=800000>Bone Voyage</col> is started)</col>
+step	14	-	Quick guide step 14
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<col=000080>Pickpocket him for the <col=800000>display cabinet key</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<col=000080>Head upstairs, and open the second-most western case in the northern-most row. You will get a <col=800000>statuette</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<col=000080>Return to the <col=800000>Kharidian Desert</col> (fairy ring DLQ), or teleport to <col=800000>Eagle's Eyrie</col> with <col=800000>Necklace of passage</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<col=000080>Return to the ruins of <col=800000>Uzer</col> where you started the quest and again go down the stairs.</col>
+step	18	-	Quick guide step 18
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<col=000080>In the centre of the room will be four alcoves. Place the statuette in the empty one.</col>
+step	19	-	Quick guide step 19
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<col=000080>Turn the statues until they all point north.</col>
+step	20	-	Quick guide step 20
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<col=000080>Go north, through the double doors.</col>
+step	21	-	Quick guide step 21
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<col=000080>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</col>
+step	22	-	Quick guide step 22
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<col=000080>Otherwise, immediately go back through the south portal.</col>
+step	23	-	Quick guide step 23
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<col=000080>Go back upstairs and talk to the golem.</col>
+step	24	-	Quick guide step 24
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<str>Go back upstairs and talk to the golem.</str>
+line	
+line	<col=000080>With an <col=800000>empty vial</col> in your inventory, grind the black mushroom using a <col=800000>Pestle and mortar</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<str>Go back upstairs and talk to the golem.</str>
+line	
+line	<str>With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar.</str>
+line	
+line	<col=000080>Use the <col=800000>phoenix feather</col> on the <col=800000>black dye</col> to make a <col=800000>phoenix quill pen</col>.</col>
+step	26	-	Quick guide step 26
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<str>Go back upstairs and talk to the golem.</str>
+line	
+line	<str>With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar.</str>
+line	
+line	<str>Use the phoenix feather on the black dye to make a phoenix quill pen.</str>
+line	
+line	<col=000080>Talk to the golem</col>
+step	27	-	Quick guide step 27
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<str>Go back upstairs and talk to the golem.</str>
+line	
+line	<str>With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar.</str>
+line	
+line	<str>Use the phoenix feather on the black dye to make a phoenix quill pen.</str>
+line	
+line	<str>Talk to the golem</str>
+line	
+line	<col=000080>Use the <col=800000>phoenix quill pen</col> on a piece of <col=800000>papyrus</col> to get the <col=800000>golem program</col>.</col>
+step	28	-	Quick guide step 28
+line	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Pick up and read the Letter west of the broken clay golem</str>
+line	
+line	<str>Talk to the golem.</str>
+line	
+line	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+line	
+line	<str>Talk to the golem again.</str>
+line	
+line	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+line	
+line	<str>Climb down the stairs in the ruins.</str>
+line	
+line	<str>Take the strange implement from the north-western room.</str>
+line	
+line	<str>Speak to the Golem again</str>
+line	
+line	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+line	
+line	<str>Head to the Exam Centre just south of the Digsite.</str>
+line	
+line	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+line	
+line	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+line	
+line	<str>Pickpocket him for the display cabinet key.</str>
+line	
+line	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+line	
+line	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+line	
+line	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+line	
+line	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+line	
+line	<str>Turn the statues until they all point north.</str>
+line	
+line	<str>Go north, through the double doors.</str>
+line	
+line	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+line	
+line	<str>Otherwise, immediately go back through the south portal.</str>
+line	
+line	<str>Go back upstairs and talk to the golem.</str>
+line	
+line	<str>With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar.</str>
+line	
+line	<str>Use the phoenix feather on the black dye to make a phoenix quill pen.</str>
+line	
+line	<str>Talk to the golem</str>
+line	
+line	<str>Use the phoenix quill pen on a piece of papyrus to get the golem program.</str>
+line	
+line	<col=000080>Use the strange implement on the golem then quickly use the newly acquired golem program on the golem.</col>
+done	<str>Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east.</str>
+done	
+done	<str>Pick up and read the Letter west of the broken clay golem</str>
+done	
+done	<str>Talk to the golem.</str>
+done	
+done	<str>Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well.</str>
+done	
+done	<str>Talk to the golem again.</str>
+done	
+done	<str>Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right).</str>
+done	
+done	<str>Climb down the stairs in the ruins.</str>
+done	
+done	<str>Take the strange implement from the north-western room.</str>
+done	
+done	<str>Speak to the Golem again</str>
+done	
+done	<str>Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)</str>
+done	
+done	<str>Head to the Exam Centre just south of the Digsite.</str>
+done	
+done	<str>Search the bookcase in the south-east corner and read Varmen's notes.</str>
+done	
+done	<str>Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)</str>
+done	
+done	<str>Pickpocket him for the display cabinet key.</str>
+done	
+done	<str>Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette.</str>
+done	
+done	<str>Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage.</str>
+done	
+done	<str>Return to the ruins of Uzer where you started the quest and again go down the stairs.</str>
+done	
+done	<str>In the centre of the room will be four alcoves. Place the statuette in the empty one.</str>
+done	
+done	<str>Turn the statues until they all point north.</str>
+done	
+done	<str>Go north, through the double doors.</str>
+done	
+done	<str>Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.</str>
+done	
+done	<str>Otherwise, immediately go back through the south portal.</str>
+done	
+done	<str>Go back upstairs and talk to the golem.</str>
+done	
+done	<str>With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar.</str>
+done	
+done	<str>Use the phoenix feather on the black dye to make a phoenix quill pen.</str>
+done	
+done	<str>Talk to the golem</str>
+done	
+done	<str>Use the phoenix quill pen on a piece of papyrus to get the golem program.</str>
+done	
+done	<str>Use the strange implement on the golem then quickly use the newly acquired golem program on the golem.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

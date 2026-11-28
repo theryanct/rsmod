@@ -1,0 +1,84 @@
+# Generated from the OSRS Wiki page "Tears of Guthix/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Juna</col>, deep inside the <col=800000>Lumbridge Swamp Caves</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	43 Quest Points
+req	Level 49 Firemaking
+req	Level 20 Crafting
+req	Level 20 Mining
+step	1	-	Quick guide step 1
+line	<col=000080>Note: If you've already completed <col=800000>The Lost Tribe</col>, you can get to Juna via the <col=800000>Lumbridge Castle</col> cave. This negates the need for the <col=800000>Spiny helmet</col> or <col=800000>Slayer helmet</col>. Having a lit <col=800000>Sapphire lantern</col> with oil saves time as well.</col>
+step	2	-	Quick guide step 2
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<col=000080>Talk to <col=800000>Juna</col> in the <col=800000>Lumbridge Swamp Caves</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+line	
+line	<col=000080>Use a cut <col=800000>Sapphire</col> on a <col=800000>Bullseye lantern frame</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+line	
+line	<str>Use a cut Sapphire on a Bullseye lantern frame.</str>
+line	
+line	<col=000080>Light the <col=800000>Sapphire lantern</col> with a tinderbox.</col>
+step	5	-	Quick guide step 5
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+line	
+line	<str>Use a cut Sapphire on a Bullseye lantern frame.</str>
+line	
+line	<str>Light the Sapphire lantern with a tinderbox.</str>
+line	
+line	<col=000080>Climb back up the rock to the north and then use the lantern on one of the <col=800000>Light creature</col>s above the chasm.</col>
+step	6	-	Quick guide step 6
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+line	
+line	<str>Use a cut Sapphire on a Bullseye lantern frame.</str>
+line	
+line	<str>Light the Sapphire lantern with a tinderbox.</str>
+line	
+line	<str>Climb back up the rock to the north and then use the lantern on one of the Light creatures above the chasm.</str>
+line	
+line	<col=000080>Mine a rock, use a chisel on it and climb down the rocks to the east.</col>
+step	7	-	Quick guide step 7
+line	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+line	
+line	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+line	
+line	<str>Use a cut Sapphire on a Bullseye lantern frame.</str>
+line	
+line	<str>Light the Sapphire lantern with a tinderbox.</str>
+line	
+line	<str>Climb back up the rock to the north and then use the lantern on one of the Light creatures above the chasm.</str>
+line	
+line	<str>Mine a rock, use a chisel on it and climb down the rocks to the east.</str>
+line	
+line	<col=000080>Talk to Juna.</col>
+done	<str>Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well.</str>
+done	
+done	<str>Talk to Juna in the Lumbridge Swamp Caves.</str>
+done	
+done	<str>Use a cut Sapphire on a Bullseye lantern frame.</str>
+done	
+done	<str>Light the Sapphire lantern with a tinderbox.</str>
+done	
+done	<str>Climb back up the rock to the north and then use the lantern on one of the Light creatures above the chasm.</str>
+done	
+done	<str>Mine a rock, use a chisel on it and climb down the rocks to the east.</str>
+done	
+done	<str>Talk to Juna.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

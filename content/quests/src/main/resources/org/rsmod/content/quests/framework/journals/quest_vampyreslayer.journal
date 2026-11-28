@@ -1,0 +1,31 @@
+# Generated from the OSRS Wiki page "Transcript:Vampyre Slayer/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Morgan</col> at his home in <col=800000>Draynor Village</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+req	Combat Level 20
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Morgan</col> at his home in <col=800000>Draynor Village</col>. He told me about <col=800000>Count Draynor</col>, a vampyre living in <col=800000>Draynor Manor</col> north of the village. At his request, I agreed to try and kill <col=800000>Count Draynor</col>. <col=800000>Morgan</col> suggested I begin by seeking out <col=800000>Dr Harlow</col>, a retired vampyre hunter, at the <col=800000>Blue Moon Inn</col> in <col=800000>Varrock</col>.</col>
+step	2	-	After speaking to Dr Harlow
+line	<str>I spoke to Morgan at his home in Draynor Village. He told me about Count Draynor, a vampyre living in Draynor Manor north of the village. At his request, I agreed to try and kill Count Draynor. Morgan suggested I begin by seeking out Dr Harlow, a retired vampyre hunter, at the Blue Moon Inn in Varrock.</str>
+line	<col=000080>I travelled to the <col=800000>Blue Moon Inn</col> in <col=800000>Varrock</col> and found <col=800000>Dr Harlow</col>. However, he doesn't seem willing to talk to me unless I buy him a <col=800000>Beer</col> first.</col>
+step	3	-	After handing Dr Harlow a beer and before receiving the stake
+line	<str>I spoke to Morgan at his home in Draynor Village. He told me about Count Draynor, a vampyre living in Draynor Manor north of the village. At his request, I agreed to try and kill Count Draynor. Morgan suggested I begin by seeking out Dr Harlow, a retired vampyre hunter, at the Blue Moon Inn in Varrock.</str>
+line	<col=000080>I travelled to the <col=800000>Blue Moon Inn</col> in <col=800000>Varrock</col> and found <col=800000>Dr Harlow</col>. I should see what he can tell me about killing vampyres.</col>
+step	4	-	After receiving the stake from Dr Harlow
+line	<str>I spoke to Morgan at his home in Draynor Village. He told me about Count Draynor, a vampyre living in Draynor Manor north of the village. At his request, I agreed to try and kill Count Draynor. Morgan suggested I begin by seeking out Dr Harlow, a retired vampyre hunter, at the Blue Moon Inn in Varrock.</str>
+line	<col=000080>I travelled to the <col=800000>Blue Moon Inn</col> in <col=800000>Varrock</col> and found <col=800000>Dr Harlow</col>. He told me that vampyres are hard to kill due to their ability to regenerate. However, he gave me a <col=800000>Stake</col> and told me I could use it to prevent the regeneration. I'll now need to head to <col=800000>Draynor Manor</col>, find <col=800000>Count Draynor</col> and kill him. I should make sure to take the <col=800000>Stake</col> with me, along with a <col=800000>Hammer</col>. Most <col=800000>General Stores</col> should stock a <col=800000>Hammer</col>. <col=800000>Dr Harlow</col> also suggested I carry some <col=800000>Garlic</col> on me. <col=800000>Morgan</col> might have some.</col>
+done	<str>I spoke to Morgan at his home in Draynor Village. He told me about Count Draynor, a vampyre living in Draynor Manor north of the village. At his request, I agreed to try and kill Count Draynor. Morgan suggested I begin by seeking out Dr Harlow, a retired vampyre hunter, at the Blue Moon Inn in Varrock.</str>
+done	<str>I travelled to the Blue Moon Inn in Varrock and found Dr Harlow. He told me that vampyres are hard to kill due to their ability to regenerate. However, he gave me a Stake and told me I could use it to prevent the regeneration.</str>
+done	<str> I entered Draynor Manor and found Count Draynor in the basement. However, I was able to use the Stake that Dr Harlow gave me to kill him for good.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

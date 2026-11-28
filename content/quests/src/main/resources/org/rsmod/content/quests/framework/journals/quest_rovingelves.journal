@@ -1,0 +1,219 @@
+# Generated from the OSRS Wiki page "Roving Elves/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Islwyn</col> inside the elven woods of <col=800000>Isafdar</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 56 Agility
+step	1	-	Quick guide step 1
+line	<col=000080>Head to <col=800000>Tirannwn</col> (<col=800000>Catherby teleport (tablet)</col>, use charter to Port Tyras)</col>
+step	2	-	Quick guide step 2
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<col=000080>Track down <col=800000>Islwyn</col>, who will be either west of <col=800000>Lletya</col> or north-east of the <col=800000>Tyras Camp</col>. Use <col=800000>this map</col> to assist you. (If the elves are not there, switch worlds until they appear)</col>
+step	3	-	Quick guide step 3
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<col=000080>Offer your help to Islwyn.</col>
+step	4	-	Quick guide step 4
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<col=000080>Talk to <col=800000>Eluned</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<col=000080>Bank all your combat equipment, runes included.</col>
+step	6	-	Quick guide step 6
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<col=000080>Travel north-west of the <col=800000>Fishing Guild</col> and use <col=800000>Glarial's pebble</col> on <col=800000>Glarial's tombstone</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<col=000080>Kill a <col=800000>Moss Guardian</col> (level 84). It will drop a <col=800000>consecration seed</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<col=000080>Take the seed to Eluned.</col>
+step	9	-	Quick guide step 9
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<str>Take the seed to Eluned.</str>
+line	
+line	<col=000080>Enter the <col=800000>Waterfall Dungeon</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<str>Take the seed to Eluned.</str>
+line	
+line	<str>Enter the Waterfall Dungeon.</str>
+line	
+line	<col=000080>(Skip this step if you already have the <col=800000>key</col>.) Search the most northern crates in the east room for a key.</col>
+step	11	-	Quick guide step 11
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<str>Take the seed to Eluned.</str>
+line	
+line	<str>Enter the Waterfall Dungeon.</str>
+line	
+line	<str>(Skip this step if you already have the key.) Search the most northern crates in the east room for a key.</str>
+line	
+line	<col=000080>Take the west path all the way north.</col>
+step	12	-	Quick guide step 12
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<str>Take the seed to Eluned.</str>
+line	
+line	<str>Enter the Waterfall Dungeon.</str>
+line	
+line	<str>(Skip this step if you already have the key.) Search the most northern crates in the east room for a key.</str>
+line	
+line	<str>Take the west path all the way north.</str>
+line	
+line	<col=000080>Left click the seed in the final room to plant it.</col>
+step	13	-	Quick guide step 13
+line	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+line	
+line	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+line	
+line	<str>Offer your help to Islwyn.</str>
+line	
+line	<str>Talk to Eluned.</str>
+line	
+line	<str>Bank all your combat equipment, runes included.</str>
+line	
+line	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+line	
+line	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+line	
+line	<str>Take the seed to Eluned.</str>
+line	
+line	<str>Enter the Waterfall Dungeon.</str>
+line	
+line	<str>(Skip this step if you already have the key.) Search the most northern crates in the east room for a key.</str>
+line	
+line	<str>Take the west path all the way north.</str>
+line	
+line	<str>Left click the seed in the final room to plant it.</str>
+line	
+line	<col=000080>Return to <col=800000>Islwyn</col> to choose your reward.</col>
+done	<str>Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)</str>
+done	
+done	<str>Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)</str>
+done	
+done	<str>Offer your help to Islwyn.</str>
+done	
+done	<str>Talk to Eluned.</str>
+done	
+done	<str>Bank all your combat equipment, runes included.</str>
+done	
+done	<str>Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone.</str>
+done	
+done	<str>Kill a Moss Guardian (level 84). It will drop a consecration seed.</str>
+done	
+done	<str>Take the seed to Eluned.</str>
+done	
+done	<str>Enter the Waterfall Dungeon.</str>
+done	
+done	<str>(Skip this step if you already have the key.) Search the most northern crates in the east room for a key.</str>
+done	
+done	<str>Take the west path all the way north.</str>
+done	
+done	<str>Left click the seed in the final room to plant it.</str>
+done	
+done	<str>Return to Islwyn to choose your reward.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,765 @@
+# Generated from the OSRS Wiki page "Plague City/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Edmond</col> in the most north-western house of <col=800000>East Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Edmond</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Edmond.</str>
+line	
+line	<col=000080>Speak to <col=800000>Alrena</col> inside or near the house.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<col=000080>Take the <col=800000>Picture</col> of Elena off the table in the house.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<col=000080>Speak to Edmond.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<col=000080>Use 4 <col=800000>buckets of water</col> on the mud patch behind the house (between the cabbages and potatoes).</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<col=000080>Dig with a <col=800000>spade</col> on the softened ground.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<col=000080>Go south to the farthest <col=800000>pipe</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<col=000080>Attempt to open the <col=800000>grill</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<col=000080>Use a <col=800000>rope</col> on the grill.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<col=000080>Speak to Edmond.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<col=000080>Put on the gas mask and climb up the pipe.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<col=000080>Go east and speak to <col=800000>Jethick</col>; he will give you a <col=800000>book</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<col=000080>Go north to the house against the wall (next to the <col=800000>rotten apple</col> spawn).</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<col=000080>Attempt to open the door.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<col=000080>Speak to <col=800000>Martha Rehnison</col> or <col=800000>Ted Rehnison</col> in the house.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<col=000080>Go upstairs and speak to <col=800000>Milli Rehnison</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<col=000080>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<col=000080>Go to the large main building on the north side of the town square, north of the <col=800000>manhole</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Clerk</col> in the main room.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<col=000080>Speak to <col=800000>Bravek</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<col=000080>:He will give you <col=800000>a scruffy note</col> for a <col=800000>hangover cure</col>.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<str>:He will give you a scruffy note for a hangover cure.</str>
+line	
+line	<col=000080>Use the hangover cure on Bravek; he will give you a <col=800000>warrant</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<str>:He will give you a scruffy note for a hangover cure.</str>
+line	
+line	<str>Use the hangover cure on Bravek; he will give you a warrant.</str>
+line	
+line	<col=000080>Return to the <col=800000>Mourner</col> house, the one with "X" on the doors and the stairwell.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<str>:He will give you a scruffy note for a hangover cure.</str>
+line	
+line	<str>Use the hangover cure on Bravek; he will give you a warrant.</str>
+line	
+line	<str>Return to the Mourner house, the one with "X" on the doors and the stairwell.</str>
+line	
+line	<col=000080>Search the <col=800000>barrel</col> west of the staircase for <col=800000>a small key</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<str>:He will give you a scruffy note for a hangover cure.</str>
+line	
+line	<str>Use the hangover cure on Bravek; he will give you a warrant.</str>
+line	
+line	<str>Return to the Mourner house, the one with "X" on the doors and the stairwell.</str>
+line	
+line	<str>Search the barrel west of the staircase for a small key.</str>
+line	
+line	<col=000080>Go downstairs, enter the cell, and speak to <col=800000>Elena</col>.</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Speak to Alrena inside or near the house.</str>
+line	
+line	<str>Take the Picture of Elena off the table in the house.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+line	
+line	<str>Dig with a spade on the softened ground.</str>
+line	
+line	<str>Go south to the farthest pipe.</str>
+line	
+line	<str>Attempt to open the grill.</str>
+line	
+line	<str>Use a rope on the grill.</str>
+line	
+line	<str>Speak to Edmond.</str>
+line	
+line	<str>Put on the gas mask and climb up the pipe.</str>
+line	
+line	<str>Go east and speak to Jethick; he will give you a book.</str>
+line	
+line	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+line	
+line	<str>Attempt to open the door.</str>
+line	
+line	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+line	
+line	<str>Go upstairs and speak to Milli Rehnison.</str>
+line	
+line	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+line	
+line	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+line	
+line	<str>Talk to the Clerk in the main room.</str>
+line	
+line	<str>Speak to Bravek.</str>
+line	
+line	<str>:He will give you a scruffy note for a hangover cure.</str>
+line	
+line	<str>Use the hangover cure on Bravek; he will give you a warrant.</str>
+line	
+line	<str>Return to the Mourner house, the one with "X" on the doors and the stairwell.</str>
+line	
+line	<str>Search the barrel west of the staircase for a small key.</str>
+line	
+line	<str>Go downstairs, enter the cell, and speak to Elena.</str>
+line	
+line	<col=000080>Return to the town square, go down the manhole, through the sewer, climb the <col=800000>mud pile</col>, and speak to <col=800000>Edmond</col> at his house.</col>
+done	<str>Speak to Edmond.</str>
+done	
+done	<str>Speak to Alrena inside or near the house.</str>
+done	
+done	<str>Take the Picture of Elena off the table in the house.</str>
+done	
+done	<str>Speak to Edmond.</str>
+done	
+done	<str>Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes).</str>
+done	
+done	<str>Dig with a spade on the softened ground.</str>
+done	
+done	<str>Go south to the farthest pipe.</str>
+done	
+done	<str>Attempt to open the grill.</str>
+done	
+done	<str>Use a rope on the grill.</str>
+done	
+done	<str>Speak to Edmond.</str>
+done	
+done	<str>Put on the gas mask and climb up the pipe.</str>
+done	
+done	<str>Go east and speak to Jethick; he will give you a book.</str>
+done	
+done	<str>Go north to the house against the wall (next to the rotten apple spawn).</str>
+done	
+done	<str>Attempt to open the door.</str>
+done	
+done	<str>Speak to Martha Rehnison or Ted Rehnison in the house.</str>
+done	
+done	<str>Go upstairs and speak to Milli Rehnison.</str>
+done	
+done	<str>Go south of the town square to the large building along the southern wall with an "X" on the doors and a staircase inside going down. Attempt to open the door.</str>
+done	
+done	<str>Go to the large main building on the north side of the town square, north of the manhole.</str>
+done	
+done	<str>Talk to the Clerk in the main room.</str>
+done	
+done	<str>Speak to Bravek.</str>
+done	
+done	<str>:He will give you a scruffy note for a hangover cure.</str>
+done	
+done	<str>Use the hangover cure on Bravek; he will give you a warrant.</str>
+done	
+done	<str>Return to the Mourner house, the one with "X" on the doors and the stairwell.</str>
+done	
+done	<str>Search the barrel west of the staircase for a small key.</str>
+done	
+done	<str>Go downstairs, enter the cell, and speak to Elena.</str>
+done	
+done	<str>Return to the town square, go down the manhole, through the sewer, climb the mud pile, and speak to Edmond at his house.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

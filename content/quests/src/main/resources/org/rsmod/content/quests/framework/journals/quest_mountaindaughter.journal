@@ -1,0 +1,1569 @@
+# Generated from the OSRS Wiki page "Mountain Daughter/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Hamal the Chieftain</col> in the <col=800000>Mountain Camp</col> east of <col=800000>Rellekka</col> (to access the camp, see <col=800000>below</col>)</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Agility
+step	1	-	Quick guide step 1
+line	<col=000080>Head to the entrance of the mountain camp east of <col=800000>Rellekka</col> or north of the AJR fairy ring.</col>
+step	2	-	Quick guide step 2
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<col=000080>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</col>
+step	3	-	Quick guide step 3
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<col=000080>Head into the camp and talk to <col=800000>Hamal the Chieftain</col>. (or with <col=800000>The Fremennik Trials</col> completed)</col>
+step	4	-	Quick guide step 4
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<col=000080>Dig some mud from the mud pond south of Hamal's house.</col>
+step	5	-	Quick guide step 5
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<col=000080>Go north, following the path along the lake westward.</col>
+step	6	-	Quick guide step 6
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<col=000080>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</col>
+step	7	-	Quick guide step 7
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<col=000080>Use your <col=800000>pole</col> or staff on the clump of rocks to pole vault over.</col>
+step	8	-	Quick guide step 8
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<col=000080>Use your <col=800000>plank</col> on the flat stones. Keep this throughout the quest.</col>
+step	9	-	Quick guide step 9
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<col=000080>Listen to the shining pool.</col>
+step	10	-	Quick guide step 10
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<col=000080>Use your <col=800000>plank</col> on the flat stone to return to shore.</col>
+step	11	-	Quick guide step 11
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<col=000080>Talk to <col=800000>Hamal the Chieftain</col> about the people of Rellekka.</col>
+step	12	-	Quick guide step 12
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<col=000080>Speak to <col=800000>Jokul</col> north of the Cheiftains tent before leaving the camp to speak to Svidi.</col>
+step	13	-	Quick guide step 13
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<col=000080>Search for <col=800000>Svidi</col> between Rellekka and the entrance to Keldagrim.</col>
+step	14	-	Quick guide step 14
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<col=000080>Go to <col=800000>Rellekka</col> and talk to <col=800000>Brundt the Chieftain</col> in the longhall. or if <col=800000>Lunar Diplomacy</col> started/completed.</col>
+step	15	-	Quick guide step 15
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<col=000080>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</col>
+step	16	-	Quick guide step 16
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<col=000080>Use your <col=800000>pickaxe</col> on the <col=800000>Ancient Rock</col> located in the southern tent to get half a rock.</col>
+step	17	-	Quick guide step 17
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<col=000080>Take this back to <col=800000>Rellekka</col>, and talk to Brundt the Chieftain or if <col=800000>Lunar Diplomacy</col> started/completed, who will give you the guarantee of safe passage.</col>
+step	18	-	Quick guide step 18
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<col=000080>Take the guarantee to <col=800000>Svidi</col>. You do not need to check on Svidi afterward.</col>
+step	19	-	Quick guide step 19
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<col=000080>Return to <col=800000>Hamal the Chieftain</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<col=000080>Talk to Hamal the Chieftan again, this time about food supplies.</col>
+step	21	-	Quick guide step 21
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<col=000080>Talk to <col=800000>Jokul</col> just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a <col=800000>White Pearl</col> plant that is very hardy.</col>
+step	22	-	Quick guide step 22
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<col=000080>Travel to <col=800000>White Wolf Mountain</col> (<col=800000>Gnome glider</col> if <col=800000>The Grand Tree</col> completed, or <col=800000>Keldagrim minecart system</col> if <col=800000>The Giant Dwarf</col> is completed.)</col>
+step	23	-	Quick guide step 23
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<col=000080>Equip <col=800000>gloves</col> and pick-from the <col=800000>thorny bushes</col> by the <col=800000>gnome glider</col>.</col>
+step	24	-	Quick guide step 24
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<col=000080>Eat the <col=800000>white pearl</col> you picked to get the <col=800000>white pearl seed</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<col=000080>Speak to <col=800000>Hamal the Chieftain</col> to give him the white pearl seed.</col>
+step	26	-	Quick guide step 26
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<col=000080>Speak to the shining pool again (remember to use the pole/staff and plank).</col>
+step	27	-	Quick guide step 27
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<col=000080>Cross the gap back to shore</col>
+step	28	-	Quick guide step 28
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<col=000080>Follow the northern path east to a cave.</col>
+step	29	-	Quick guide step 29
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<col=000080>Chop down the trees blocking your path (make sure you are facing east)</col>
+step	30	-	Quick guide step 30
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<col=000080>Enter the cave</col>
+step	31	-	Quick guide step 31
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<col=000080>Talk to <col=800000>The Kendal</col>.</col>
+step	32	-	Quick guide step 32
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<col=000080>Kill The Kendal. He can be <col=800000>safespotted</col> utilising skeletons around the room.</col>
+step	33	-	Quick guide step 33
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<col=000080>Take the <col=800000>corpse of woman</col></col>
+step	34	-	Quick guide step 34
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<str>Take the corpse of woman</str>
+line	
+line	<col=000080>Return to Hamal the Chieftain.</col>
+step	35	-	Quick guide step 35
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<str>Take the corpse of woman</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<col=000080>Gather 5 muddy rocks from around the camp.</col>
+step	36	-	Quick guide step 36
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<str>Take the corpse of woman</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Gather 5 muddy rocks from around the camp.</str>
+line	
+line	<col=000080>Talk to Ragnar near the tall tree by the lake to get Asleif's necklace.</col>
+step	37	-	Quick guide step 37
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<str>Take the corpse of woman</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Gather 5 muddy rocks from around the camp.</str>
+line	
+line	<str>Talk to Ragnar near the tall tree by the lake to get Asleif's necklace.</str>
+line	
+line	<col=000080>Return to the shining pool and bury the corpse on the island.</col>
+step	38	-	Quick guide step 38
+line	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+line	
+line	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+line	
+line	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+line	
+line	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+line	
+line	<str>Go north, following the path along the lake westward.</str>
+line	
+line	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+line	
+line	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+line	
+line	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+line	
+line	<str>Listen to the shining pool.</str>
+line	
+line	<str>Use your plank on the flat stone to return to shore.</str>
+line	
+line	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+line	
+line	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+line	
+line	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+line	
+line	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+line	
+line	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+line	
+line	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+line	
+line	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+line	
+line	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+line	
+line	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+line	
+line	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+line	
+line	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+line	
+line	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+line	
+line	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+line	
+line	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+line	
+line	<str>Cross the gap back to shore</str>
+line	
+line	<str>Follow the northern path east to a cave.</str>
+line	
+line	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+line	
+line	<str>Enter the cave</str>
+line	
+line	<str>Talk to The Kendal.</str>
+line	
+line	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+line	
+line	<str>Take the corpse of woman</str>
+line	
+line	<str>Return to Hamal the Chieftain.</str>
+line	
+line	<str>Gather 5 muddy rocks from around the camp.</str>
+line	
+line	<str>Talk to Ragnar near the tall tree by the lake to get Asleif's necklace.</str>
+line	
+line	<str>Return to the shining pool and bury the corpse on the island.</str>
+line	
+line	<col=000080>Use the muddy rocks on the burial mound. (You make the mound by burying the corpse on the island.)</col>
+done	<str>Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring.</str>
+done	
+done	<str>Take the path north, past the guard, and use your rope on a boulder you can push to get around.</str>
+done	
+done	<str>Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)</str>
+done	
+done	<str>Dig some mud from the mud pond south of Hamal's house.</str>
+done	
+done	<str>Go north, following the path along the lake westward.</str>
+done	
+done	<str>Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs.</str>
+done	
+done	<str>Use your pole or staff on the clump of rocks to pole vault over.</str>
+done	
+done	<str>Use your plank on the flat stones. Keep this throughout the quest.</str>
+done	
+done	<str>Listen to the shining pool.</str>
+done	
+done	<str>Use your plank on the flat stone to return to shore.</str>
+done	
+done	<str>Talk to Hamal the Chieftain about the people of Rellekka.</str>
+done	
+done	<str>Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi.</str>
+done	
+done	<str>Search for Svidi between Rellekka and the entrance to Keldagrim.</str>
+done	
+done	<str>Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.</str>
+done	
+done	<str>Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain.</str>
+done	
+done	<str>Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock.</str>
+done	
+done	<str>Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.</str>
+done	
+done	<str>Take the guarantee to Svidi. You do not need to check on Svidi afterward.</str>
+done	
+done	<str>Return to Hamal the Chieftain.</str>
+done	
+done	<str>Talk to Hamal the Chieftan again, this time about food supplies.</str>
+done	
+done	<str>Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy.</str>
+done	
+done	<str>Travel to White Wolf Mountain (Gnome glider if The Grand Tree completed, or Keldagrim minecart system if The Giant Dwarf is completed.)</str>
+done	
+done	<str>Equip gloves and pick-from the thorny bushes by the gnome glider.</str>
+done	
+done	<str>Eat the white pearl you picked to get the white pearl seed.</str>
+done	
+done	<str>Speak to Hamal the Chieftain to give him the white pearl seed.</str>
+done	
+done	<str>Speak to the shining pool again (remember to use the pole/staff and plank).</str>
+done	
+done	<str>Cross the gap back to shore</str>
+done	
+done	<str>Follow the northern path east to a cave.</str>
+done	
+done	<str>Chop down the trees blocking your path (make sure you are facing east)</str>
+done	
+done	<str>Enter the cave</str>
+done	
+done	<str>Talk to The Kendal.</str>
+done	
+done	<str>Kill The Kendal. He can be safespotted utilising skeletons around the room.</str>
+done	
+done	<str>Take the corpse of woman</str>
+done	
+done	<str>Return to Hamal the Chieftain.</str>
+done	
+done	<str>Gather 5 muddy rocks from around the camp.</str>
+done	
+done	<str>Talk to Ragnar near the tall tree by the lake to get Asleif's necklace.</str>
+done	
+done	<str>Return to the shining pool and bury the corpse on the island.</str>
+done	
+done	<str>Use the muddy rocks on the burial mound. (You make the mound by burying the corpse on the island.)</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

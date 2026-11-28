@@ -1,0 +1,28 @@
+# Generated from the OSRS Wiki page "Transcript:Dragon Slayer I/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to the <col=800000>Guildmaster</col> in the <col=800000>Champions' Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Dragonkin #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+req	32 Quest Points
+before	<col=000080>Recommendations:</col>
+req	Combat Level 45
+req	Level 33 Magic
+done	<str>The Guildmaster of the Champions' Guild said I could earn the right to wear rune armour if I went on a quest for Oziach, who makes the armour.</str>
+done	<str>I spoke to Oziack in Edgeville. He told me to slay the dragon of Crandor island.</str>
+done	<str>The Champions’ Guild Guildmaster told me I had to find three pieces of a map to Crandor, a ship, a captain to take me there and a shield to protect me from the dragon’s breath.</str>
+done	<str>I found the piece of the map that was hidden in Melzar’s Maze.</str>
+done	<str>I found the piece of the map that was hidden beneath Ice Mountain.</str>
+done	<str>I found the piece of the map that the goblin, Wormbrain, stole.</str>
+done	<str>The Duke of Lumbridge gave me an anti-dragonbreath shield.</str>
+done	<str>I have found a secret passage leading from Karamja to Crandor, so I no longer need to worry about finding a seaworthy ship and captain to take me there.</str>
+done	<str>I sailed to Crandor and killed the dragon. I am now a true champion and have proved myself worthy to wear rune platemail!</str>
+done	<col=ff0000>QUEST COMPLETE!</col>
+done	<col=000080>I gained <col=800000>2 Quest Points</col>, <col=800000>18,650 Strength XP</col>, <col=800000>18,650 Defence XP</col> and the right to wear <col=800000>rune platebodies</col>.</col>

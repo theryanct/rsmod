@@ -1,0 +1,396 @@
+# Generated from the OSRS Wiki page "Transcript:While Guthix Sleeps/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Ivy Sophista</col> in <col=800000>Taverley</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Grandmaster</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Long</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Mahjarrat #14</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Quest Requirements:</col>
+before	<col=800000>Defender of Varrock</col>
+before	<col=800000>The Path of Glouphrie</col>
+before	<col=800000>Fight Arena</col>
+before	<col=800000>Dream Mentor</col>
+before	<col=800000>The Hand in the Sand</col>
+before	<col=800000>Wanted!</col>
+before	<col=800000>Temple of the Eye</col>
+before	<col=800000>A Tail of Two Cats</col>
+before	<col=800000>Tears of Guthix</col>
+before	<col=800000>Nature Spirit</col>
+before	<col=800000>180 Quest Points</col>
+before	<col=000080>Skill Requirements:</col>
+before	<col=800000>Level 72 Thieving</col>
+before	<col=800000>Level 67 Magic</col>
+before	<col=800000>Level 66 Agility</col>
+before	<col=800000>Level 65 Farming</col>
+before	<col=800000>Level 65 Herblore</col>
+before	<col=800000>Level 62 Hunter</col>
+before	<col=800000>Warriors' Guild Access</col>
+before	<col=000080>Recommendations:</col>
+req	Combat Level 95
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Ivy Sophista</col> in <col=800000>Taverley</col>. She told me to speak to <col=800000>Thaerisk</col> about something related to <col=800000>Lucien</col>.</col>
+step	2	-	After speaking to Thaerisk
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<col=000080>With the <col=800000>Assassins</col> dealt with, <col=800000>Thaerisk</col> asked me to investigate a treasure hunter called <col=800000>Movario</col> who he believed had worked with <col=800000>Lucien</col>. He suggested I start my search at the <col=800000>Fight Arena</col> as <col=800000>Movario</col> hired a bodyguard from there called <col=800000>Darve</col>.</col>
+step	3	-	After speaking to the launderer
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<col=000080>I travelled to the <col=800000>Fight Arena</col> and found a <col=800000>Launderer</col> who knew <col=800000>Movario</col>. He gave me a <col=800000>Dirty Shirt</col> belonging to <col=800000>Movario</col> that I might be able to use to track him. However, to do so, I'll need to obtain a <col=800000>Broav</col>. The <col=800000>Launderer</col> suggested I speak to the <col=800000>Hunting Expert</col> in the <col=800000>Feldip Hills</col> about this.</col>
+step	4	-	After speaking to the Hunting Expert
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<col=000080>I spoke to the <col=800000>Hunting Expert</col> in the <col=800000>Feldip Hills</col> and she told me how to catch a <col=800000>Broav</col>. To do so, I'll need to set up a <col=800000>Pitfall Trap</col> just west of her and bait it with a <col=800000>Mort Myre Fungus</col>.</col>
+step	5	-	After the Broav finds the trapdoor
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<col=000080>I returned to the <col=800000>Fight Arena</col> and was able to use my <col=800000>Broav</col> to track <col=800000>Movario's</col> scent to a <col=800000>Hidden Trapdoor</col> in the <col=800000>Khazard Battlefield</col>. I should see where it leads.</col>
+step	6	-	After handing Movario's notes to Thaerisk
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<col=000080>I found some <col=800000>Research Notes</col> within the <col=800000>Hidden Base</col> and took them to <col=800000>Thaerisk</col> in <col=800000>Taverley</col>. He then asked me to head to <col=800000>McGrubor's Wood</col> to find <col=800000>Idria</col> and the <col=800000>Guardians of Armadyl</col>, as he'd lost contact with them.</col>
+step	7	-	After arriving at McGrubor's Wood
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<col=000080>Upon returning to <col=800000>Thaerisk</col>, he asked me to head to <col=800000>McGrubor's Wood</col> to find <col=800000>Idria</col> and the <col=800000>Guardians of Armadyl</col>. However, upon arrival, I found them being attacked by some <col=800000>Mercenaries</col>. I'll need to help them.</col>
+step	8	-	After speaking to Idria
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<col=000080>With the <col=800000>Mercenaries</col> dealt with, I gave <col=800000>Idria</col> an update on my recent discoveries. She then departed for the <col=800000>White Knights' Castle</col> in <col=800000>Falador</col>. I should meet up with her and <col=800000>Thaerisk</col> there.</col>
+step	9	-	After speaking to Idria at the White Knight Castle
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<col=000080>I spoke with <col=800000>Thaerisk</col>, <col=800000>Akrisae</col> and <col=800000>Idria</col> about the contents of <col=800000>Movario's Research Notes</col>. They revealed <col=800000>Lucien's</col> desire to find and claim an artefact of unimaginable power called the <col=800000>Stone of Jas</col>. To find <col=800000>Lucien</col>, <col=800000>Thaerisk</col> suggested we capture one of his <col=800000>Spies</col> from <col=800000>Draynor Village</col>. <col=800000>Akrisae</col> gave me a <col=800000>Teleorb</col> to plant on one of them.</col>
+step	10	-	After planting the Teleorb on the spy
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<col=000080>To find <col=800000>Lucien</col>, <col=800000>Thaerisk</col> suggested we capture one of his <col=800000>Spies</col> from <col=800000>Draynor Village</col>. As such, I planted a <col=800000>Teleorb</col> given to me by <col=800000>Akrisae</col> on one of them. I should now return to the others at the <col=800000>White Knights' Castle</col>.</col>
+step	11	-	After capturing the spy
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<col=000080>With the <col=800000>Spy</col> captured, we attempted to interrogate him using some <col=800000>Truth Serum</col>. However, the <col=800000>Spy</col> was able to destroy it. To make some more, we'll need some <col=800000>Enriched Snapdragon</col>. <col=800000>Thaerisk</col> asked me to take a <col=800000>Snapdragon Seed</col> to <col=800000>Betty</col> in <col=800000>Port Sarim</col> to get it enriched. If needed, <col=800000>Thaerisk</col> can sell me a <col=800000>Snapdragon Seed</col> for a reduced price.</col>
+step	12	-	After speaking to Betty
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<col=000080>To make some more <col=800000>Truth Serum</col>, we'll need some <col=800000>Enriched Snapdragon</col>. As such, I took a <col=800000>Snapdragon Seed</col> to <col=800000>Betty</col> in <col=800000>Port Sarim</col>. She placed it on her <col=800000>Counter</col> and told me to use a <col=800000>Rose Tinted Lens</col> to enrich it.</col>
+step	13	-	After harvesting the enriched snapdragon
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<col=000080>I harvested the <col=800000>Enriched Snapdragon</col> from the <col=800000>Specially Prepared Patch</col> on the roof of the <col=800000>White Knights' Castle</col>. I should now be able to use it to make some new <col=800000>Truth Serum</col>. I should speak to <col=800000>Thaerisk</col> about how to do this.</col>
+step	14	-	After giving Idria the sketch
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<col=000080>Based on the information provided, <col=800000>Idria</col> and <col=800000>Akrisae</col> initiated a search for the <col=800000>Dark Squall</col>. <col=800000>Idria</col> then asked me to recruit three more heroes for our cause. All of them can be found in the <col=800000>Warriors' Guild</col>.</col>
+line	
+line	<col=000080>I still need to recruit the following people:</col>
+line	<col=800000>Harrallak Menarous</col>
+line	<col=800000>Ghommal</col>
+line	<col=800000>Sloane</col>
+step	15	-	After speaking to Akrisae
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<col=000080>I spoke to <col=800000>Akrisae</col> and he told me there had been a possible sighting of the <col=800000>Dark Squall</col> at the <col=800000>Black Knights' Fortress</col>. He sent <col=800000>Silif</col> to investigate, but lost contact with him. I should head to the <col=800000>Black Knights' Fortress</col> myself to find both <col=800000>Silif</col> and the <col=800000>Dark Squall</col>.</col>
+step	16	-	After freeing Silif
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<col=000080>I managed to free <col=800000>Silif</col> from his imprisonment in the <col=800000>Black Knight Catacombs</col>, but he's in a bad state. I should see what I can do to help him.</col>
+step	17	-	After returning to the White Knights' Castle
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<col=000080>I returned to the <col=800000>White Knights' Castle</col> and updated the others on what happened in the <col=800000>Black Knight Catacombs</col>. They told me that we are now ready to move on <col=800000>Lucien</col>. However, they need my help locating him. To do so, I'll need to disguise myself as the <col=800000>Dark Squall</col> and switch places with <col=800000>Surok</col>. When I'm ready, I should enter the <col=800000>Cell</col> so <col=800000>Akrisae</col> can teleport me.</col>
+step	18	-	After Lucien's attack
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<col=000080>I travelled to <col=800000>Lucien's Camp</col> and confronted <col=800000>Lucien</col> with the <col=800000>Heroes</col>. However, he was too powerful for us. <col=800000>Duradel</col>, <col=800000>Turael</col>, <col=800000>Sloane</col>, <col=800000>Cyrisus</col>, <col=800000>Ghommal</col> and <col=800000>Hazelmere</col> were all killed. The rest of us were forced to flee. I should return to the <col=800000>White Knights' Castle</col> and let the others know what happened.</col>
+step	19	-	After returning to the White Knights' Castle
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+line	<col=000080>Although the situation is dire, all may not yet be lost. According to <col=800000>Akrisae</col>, <col=800000>Movario</col> was spotted entering a cavern full of <col=800000>Floating Lights</col> in the <col=800000>Lumbridge Swamp Caves</col>. If I can find the <col=800000>Stone of Jas</col> before he does, I might still be able to stop <col=800000>Lucien</col> from getting it. I should disguise myself as the <col=800000>Dark Squall</col> and meet with <col=800000>Movario</col> to find out what he knows.</col>
+step	20	-	After speaking to Movario
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+line	<str>Despite the situation looking dire, Akrisae presented a potential new lead. According to him, Movario was spotted entering a cavern full of Floating Lights in the Lumbridge Swamp Caves.</str>
+line	<col=000080>I found <col=800000>Movario</col> in the <col=800000>Lumbridge Swamp Caves</col>. By disguising myself as the <col=800000>Dark Squall</col>, I managed to convince him that I was there to help him find the <col=800000>Stone of Jas</col>. <col=800000>Movario</col> believes the <col=800000>Stone</col> to be at the bottom of a <col=800000>Large Chasm</col>, but he hasn't been able to find a way down. I suggested we use one of the nearby <col=800000>Light Creatures</col>. When I'm ready, I should use a <col=800000>Sapphire Lantern</col> to attract one.</col>
+step	21	-	After entering the chasm
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+line	<str>Despite the situation looking dire, Akrisae presented a potential new lead. According to him, Movario was spotted entering a cavern full of Floating Lights in the Lumbridge Swamp Caves.</str>
+line	<str>I found Movario in the Lumbridge Swamp Caves. By disguising myself as the Dark Squall, I managed to convince him that I was there to help him find the Stone of Jas.</str>
+line	<col=000080>Using information provided by <col=800000>Movario</col>, I was able to reach the bottom of a <col=800000>Large Chasm</col> by attracting a <col=800000>Light Creature</col> with a <col=800000>Sapphire Lantern</col>. I should explore the area and see what I can find.</col>
+step	22	-	After finding the Stone of Jas
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+line	<str>Despite the situation looking dire, Akrisae presented a potential new lead. According to him, Movario was spotted entering a cavern full of Floating Lights in the Lumbridge Swamp Caves.</str>
+line	<str>I found Movario in the Lumbridge Swamp Caves. By disguising myself as the Dark Squall, I managed to convince him that I was there to help him find the Stone of Jas.</str>
+line	<str>Using information provided by Movario, I was able to reach the bottom of a Large Chasm by attracting a Light Creature with a Sapphire Lantern. I searched the area and managed to open a tunnel into an Ancient Temple.</str>
+line	<col=000080>I explored the <col=800000>Ancient Temple</col> and found the <col=800000>Stone of Jas</col>. However, upon finding it, I was attacked by some sort of <col=800000>Elemental Creature</col>. I'll need to defeat it.</col>
+step	23	-	After defeating the Tormented Demons
+line	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+line	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+line	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+line	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+line	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+line	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+line	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+line	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+line	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+line	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+line	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+line	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+line	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+line	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+line	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+line	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+line	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+line	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+line	<str>Despite the situation looking dire, Akrisae presented a potential new lead. According to him, Movario was spotted entering a cavern full of Floating Lights in the Lumbridge Swamp Caves.</str>
+line	<str>I found Movario in the Lumbridge Swamp Caves. By disguising myself as the Dark Squall, I managed to convince him that I was there to help him find the Stone of Jas.</str>
+line	<str>Using information provided by Movario, I was able to reach the bottom of a Large Chasm by attracting a Light Creature with a Sapphire Lantern. I searched the area and managed to open a tunnel into an Ancient Temple.</str>
+line	<str>I explored the Ancient Temple and found the Stone of Jas. However, upon finding it, I was attacked by some sort of Elemental Creature which I was forced to defeat. I then touched the Stone and was granted a Strange Vision. However, Movario arrived at the same time, shortly followed by Lucien.</str>
+line	<col=000080><col=800000>Lucien</col> teleported away with the <col=800000>Stone</col> and summoned some <col=800000>Demons</col>, but I was able to defeat them with ease thanks to powers granted to me by the <col=800000>Stone of Jas</col>. I should return to the <col=800000>White Knights' Castle</col> and let the others know what happened.</col>
+step	24	-	Pre-release
+line	<col=000080>This quest is coming soon...</col>
+line	<col=000080>When it releases, I can start it by talking to <col=800000>Ivy Sophista</col> in <col=800000>Taverley</col>.</col>
+line	
+line	<col=000080>Difficulty:</col>
+line	<col=800000>Grandmaster</col>
+line	<col=000080>Length:</col>
+line	<col=800000>Very Long</col>
+line	<col=000080>Storyline:</col>
+line	<col=800000>Mahjarrat #14</col>
+line	<col=000080>Release Year:</col>
+line	<col=800000>2024</col>
+line	
+line	<col=000080>Quest Requirements:</col>
+line	<col=800000>Defender of Varrock</col>
+line	<col=800000>The Path of Glouphrie</col>
+line	<col=800000>Fight Arena</col>
+line	<col=800000>Dream Mentor</col>
+line	<col=800000>The Hand in the Sand</col>
+line	<col=800000>Wanted!</col>
+line	<col=800000>Temple of the Eye</col>
+line	<col=800000>Tears of Guthix</col>
+line	<col=800000>Nature Spirit</col>
+line	<col=000080>Skill Requirements:</col>
+line	<col=800000>Level 72 Thieving</col>
+line	<col=800000>Level 67 Magic</col>
+line	<col=800000>Level 66 Agility</col>
+line	<col=800000>Level 65 Farming</col>
+line	<col=800000>Level 65 Herblore</col>
+line	<col=800000>Level 62 Hunter</col>
+line	<col=800000>Warriors' Guild Access</col>
+line	<col=000080>Recommendations:</col>
+line	<col=800000>Combat Level 95</col>
+done	<str>I spoke to Ivy Sophista in Taverley. She directed me to Thaerisk, the leader of a group of Guthixians called Crux Eqal. Thaerisk asked me to help deal with the growing threat posed by Lucien. Before he could tell me more, we were attacked by Assassins. However, we were able to defeat them.</str>
+done	<str>With the Assassins dealt with, Thaerisk asked me to investigate a treasure hunter called Movario who he believed had worked with Lucien. He suggested I start my search at the Fight Arena as Movario hired a bodyguard from there called Darve.</str>
+done	<str>I travelled to the Fight Arena and found a Launderer who knew Movario. He gave me a Dirty Shirt belonging to him and directed me to the Hunting Expert in the Feldip Hills to ask about obtaining a Broav to track Movario with.</str>
+done	<str>I spoke to the Hunting Expert in the Feldip Hills and she showed me how to catch and train a Broav.</str>
+done	<str>I returned to the Fight Arena and was able to use my Broav to track Movario's scent to a Hidden Base below the Khazard Battlefield.</str>
+done	<str>I found some Research Notes within the Hidden Base and took them to Thaerisk in Taverley.</str>
+done	<str>Thaerisk asked me to head to McGrubor's Wood to find Idria and the Guardians of Armadyl, as he'd lost contact with them. Upon arrival, I found them being attacked by some Mercenaries, but I was able to help defeat them.</str>
+done	<str>With the Mercenaries dealt with, Idria and I journeyed to the White Knights' Castle in Falador. There we met up with Thaerisk, as well as Akrisae of the Temple Knights.</str>
+done	<str>I spoke with Thaerisk, Akrisae and Idria about the contents of Movario's Research Notes. They revealed Lucien's desire to find and claim an artefact of unimaginable power called the Stone of Jas.</str>
+done	<str>To find Lucien, Thaerisk suggested we capture one of his Spies from Draynor Village. As such, I planted a Teleorb given to me by Akrisae on one of them. He then used this Teleorb to teleport the Spy into a cell.</str>
+done	<str>With the Spy captured, we attempted to interrogate him using some Truth Serum. However, the Spy was able to destroy it.</str>
+done	<str>To make some more Truth Serum, I prepared an Enriched Snapdragon Seed and planted it in a Specially Prepared Patch on the roof of the White Knights' Castle. While waiting for it to grow, I recruited Turael, Mazchna, Duradel and Cyrisus to our cause.</str>
+done	<str>I harvested the Enriched Snapdragon and used it to make some new Truth Serum. I then administered the Truth Serum to the Spy and he provided details on an individual known as the Dark Squall.</str>
+done	<str>Based on the information provided, Idria and Akrisae initiated a search for the Dark Squall. I then recruited Harrallak Menarous, Ghommal and Sloane to our cause. However, while discussing our next steps, Hazelmere arrived and volunteered to join us as well.</str>
+done	<str>I spoke to Akrisae and he told me there had been a possible sighting of the Dark Squall at the Black Knights' Fortress. He sent Silif to investigate, but lost contact with him. I travelled to the Black Knights' Fortress myself to investigate. I found Silif imprisoned in some Catacombs beneath the Fortress.</str>
+done	<str>I managed to free Silif from his imprisonment in the Black Knight Catacombs and gave him a Disguise. While he gathered Intelligence, I set out to find the Dark Squall. However, upon finding him, I discovered him to actually be Surok Magis. He recognised me and attacked, but I was able to defeat him and plant a Teleorb on him.</str>
+done	<str>I returned to the White Knights' Castle and updated the others on what happened in the Black Knight Catacombs. Using information found by Silif, we were able to locate Lucien's Camp near the Wilderness.</str>
+done	<str>I travelled to Lucien's Camp and confronted Lucien with the Heroes. However, he was too powerful for us. Duradel, Turael, Sloane, Cyrisus, Ghommal and Hazelmere were all killed. The rest of us were forced to flee.</str>
+done	<str>Despite the situation looking dire, Akrisae presented a potential new lead. According to him, Movario was spotted entering a cavern full of Floating Lights in the Lumbridge Swamp Caves.</str>
+done	<str>I found Movario in the Lumbridge Swamp Caves. By disguising myself as the Dark Squall, I managed to convince him that I was there to help him find the Stone of Jas.</str>
+done	<str>Using information provided by Movario, I was able to reach the bottom of a Large Chasm by attracting a Light Creature with a Sapphire Lantern. I searched the area and managed to open a tunnel into an Ancient Temple.</str>
+done	<str>I explored the Ancient Temple and found the Stone of Jas. However, upon finding it, I was attacked by some sort of Elemental Creature which I was forced to defeat. I then touched the Stone and was granted a Strange Vision. However, Movario arrived at the same time, shortly followed by Lucien.</str>
+done	<str>Lucien teleported away with the Stone and summoned some Demons, but I was able to defeat them with ease thanks to powers granted to me by the Stone of Jas. I returned to the White Knights' Castle and let the others know what happened. Despite this loss, they vowed to continue the fight against Lucien and promised they'd contact me again once they had a plan.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

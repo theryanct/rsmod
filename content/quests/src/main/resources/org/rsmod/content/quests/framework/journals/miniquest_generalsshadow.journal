@@ -1,0 +1,219 @@
+# Generated from the OSRS Wiki page "The General's Shadow/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to the ghost of <col=800000>General Khazard</col> roaming around the woods south-east of <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Equip all <col=800000>ghostly robes</col>, the <col=800000>ring of visibility</col> and a <col=800000>Ghostspeak amulet</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<col=000080>Talk to the ghost of <col=800000>General Khazard</col>, north of the log balance, south-east of <col=800000>Rellekka</col>. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</col>
+step	3	-	Quick guide step 3
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<col=000080>Talk to <col=800000>Sin Seer</col> in <col=800000>Seers' Village</col>. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</col>
+step	4	-	Quick guide step 4
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<col=000080>Return to <col=800000>General Khazard</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<col=000080>Talk to the ghost <col=800000>Scout</col> south of <col=800000>Shantay Pass</col>. (Fairy ring BIQ and run east)</col>
+step	6	-	Quick guide step 6
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<col=000080>Talk to the ghost <col=800000>Scout</col> south of the <col=800000>Gnome Stronghold</col> entrance. Use a <col=800000>Spirit tree</col> or a <col=800000>Necklace of passage</col> to the Outpost.</col>
+step	7	-	Quick guide step 7
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<col=000080>Talk to the ghost <col=800000> Scout</col> in the area between <col=800000>Falador</col> and <col=800000>Draynor Manor</col>. Use an <col=800000>Explorer's ring 2</col> or better to teleport south of him.</col>
+step	8	-	Quick guide step 8
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<col=000080>Talk to the ghost <col=800000>Scout</col> east of <col=800000>Tai Bwo Wannai</col>, south of the hardwood grove. (Fairy ring CKR and run north-east) or <col=800000>Tai bwo wannai teleport</col> and run east.</col>
+step	9	-	Quick guide step 9
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+line	
+line	<col=000080>Return to <col=800000>General Khazard</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<col=000080>Prepare for battle against a level 160 <col=800000>Bouncer</col> (You need to have the <col=800000>severed leg</col> in your inventory to enter the wall)</col>
+step	11	-	Quick guide step 11
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Prepare for battle against a level 160 Bouncer (You need to have the severed leg in your inventory to enter the wall)</str>
+line	
+line	<col=000080>Enter the <col=800000>Goblin Cave</col> east of the <col=800000>Fishing Guild</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Prepare for battle against a level 160 Bouncer (You need to have the severed leg in your inventory to enter the wall)</str>
+line	
+line	<str>Enter the Goblin Cave east of the Fishing Guild.</str>
+line	
+line	<col=000080>Run to the north-east area and enter the crack in the southern wall.</col>
+step	13	-	Quick guide step 13
+line	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+line	
+line	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+line	
+line	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+line	
+line	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+line	
+line	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+line	
+line	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+line	
+line	<str>Return to General Khazard.</str>
+line	
+line	<str>Prepare for battle against a level 160 Bouncer (You need to have the severed leg in your inventory to enter the wall)</str>
+line	
+line	<str>Enter the Goblin Cave east of the Fishing Guild.</str>
+line	
+line	<str>Run to the north-east area and enter the crack in the southern wall.</str>
+line	
+line	<col=000080>Lower Bouncer's health to 0 and your character will automatically throw the <col=800000>severed leg</col>.</col>
+done	<str>Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet.</str>
+done	
+done	<str>Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)</str>
+done	
+done	<str>Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.</str>
+done	
+done	<str>Return to General Khazard.</str>
+done	
+done	<str>Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)</str>
+done	
+done	<str>Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost.</str>
+done	
+done	<str>Talk to the ghost  Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him.</str>
+done	
+done	<str>Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east.</str>
+done	
+done	<str>Return to General Khazard.</str>
+done	
+done	<str>Prepare for battle against a level 160 Bouncer (You need to have the severed leg in your inventory to enter the wall)</str>
+done	
+done	<str>Enter the Goblin Cave east of the Fishing Guild.</str>
+done	
+done	<str>Run to the north-east area and enter the crack in the southern wall.</str>
+done	
+done	<str>Lower Bouncer's health to 0 and your character will automatically throw the severed leg.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,389 @@
+# Generated from the OSRS Wiki page "Twilight's Promise/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Ennius Tullus</col> or <col=800000>Furia Tullus</col> in front of the <col=800000>Sunrise Palace</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Ennius</col> or <col=800000>Furia Tullus</col> outside the <col=800000>Sunrise Palace</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<col=000080>Head south to the temple inside city walls and speak to <col=800000>Metzli, Teokan of Ranul</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<col=000080>Head down the stairs into the temple crypt.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<col=000080>Head north through the gate and talk to <col=800000>Prince Itzla Arkan</col> and <col=800000>Servius, Teokan of Ralos</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<col=000080>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a <col=800000>Varlamore crest</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<col=000080>Six <col=800000>Knight of Varlamore</col> must now be found around the city.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<col=000080>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<col=000080>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an <col=800000>incriminating letter</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<col=000080>Read the letter.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<col=000080>Return to Ennius and Furia, and watch the cutscene.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<col=000080>Speak to Ennius again.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<col=000080>Speak to <col=800000>Regulus Cento</col> south-east of the palace.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<col=000080>Feed <col=800000>Renu</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<str>Feed Renu.</str>
+line	
+line	<col=000080>Travel with Renu to <col=800000>Ralos' Rise</col> (The Teomat).</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<str>Feed Renu.</str>
+line	
+line	<str>Travel with Renu to Ralos' Rise (The Teomat).</str>
+line	
+line	<col=000080>Speak with Prince Itzla inside the Teomat temple.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<str>Feed Renu.</str>
+line	
+line	<str>Travel with Renu to Ralos' Rise (The Teomat).</str>
+line	
+line	<str>Speak with Prince Itzla inside the Teomat temple.</str>
+line	
+line	<col=000080>Speak to Metzli in the northern building.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<str>Feed Renu.</str>
+line	
+line	<str>Travel with Renu to Ralos' Rise (The Teomat).</str>
+line	
+line	<str>Speak with Prince Itzla inside the Teomat temple.</str>
+line	
+line	<str>Speak to Metzli in the northern building.</str>
+line	
+line	<col=000080>Defeat all 8 cultists.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+line	
+line	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+line	
+line	<str>Head down the stairs into the temple crypt.</str>
+line	
+line	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+line	
+line	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+line	
+line	<str>Six Knight of Varlamore must now be found around the city.</str>
+line	
+line	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+line	
+line	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+line	
+line	<str>Read the letter.</str>
+line	
+line	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+line	
+line	<str>Speak to Ennius again.</str>
+line	
+line	<str>Speak to Regulus Cento south-east of the palace.</str>
+line	
+line	<str>Feed Renu.</str>
+line	
+line	<str>Travel with Renu to Ralos' Rise (The Teomat).</str>
+line	
+line	<str>Speak with Prince Itzla inside the Teomat temple.</str>
+line	
+line	<str>Speak to Metzli in the northern building.</str>
+line	
+line	<str>Defeat all 8 cultists.</str>
+line	
+line	<col=000080>Finish the cutscene and ensuing dialogue.</col>
+done	<str>Speak to Ennius or Furia Tullus outside the Sunrise Palace.</str>
+done	
+done	<str>Head south to the temple inside city walls and speak to Metzli, Teokan of Ranul.</str>
+done	
+done	<str>Head down the stairs into the temple crypt.</str>
+done	
+done	<str>Head north through the gate and talk to Prince Itzla Arkan and Servius, Teokan of Ralos.</str>
+done	
+done	<str>Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a Varlamore crest.</str>
+done	
+done	<str>Six Knight of Varlamore must now be found around the city.</str>
+done	
+done	<str>Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.</str>
+done	
+done	<str>Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an incriminating letter.</str>
+done	
+done	<str>Read the letter.</str>
+done	
+done	<str>Return to Ennius and Furia, and watch the cutscene.</str>
+done	
+done	<str>Speak to Ennius again.</str>
+done	
+done	<str>Speak to Regulus Cento south-east of the palace.</str>
+done	
+done	<str>Feed Renu.</str>
+done	
+done	<str>Travel with Renu to Ralos' Rise (The Teomat).</str>
+done	
+done	<str>Speak with Prince Itzla inside the Teomat temple.</str>
+done	
+done	<str>Speak to Metzli in the northern building.</str>
+done	
+done	<str>Defeat all 8 cultists.</str>
+done	
+done	<str>Finish the cutscene and ensuing dialogue.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>
