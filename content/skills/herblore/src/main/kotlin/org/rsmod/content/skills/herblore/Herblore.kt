@@ -13,6 +13,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
+import org.rsmod.api.script.isHeldOpBound
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
@@ -92,11 +93,11 @@ constructor(
         action: suspend ProtectedAccess.() -> Unit,
     ) {
         when (objTypes[type].iop.indexOfFirst { it.equals(label, ignoreCase = true) } + 1) {
-            1 -> onOpHeld1(type) { action() }
-            2 -> onOpHeld2(type) { action() }
-            3 -> onOpHeld3(type) { action() }
-            4 -> onOpHeld4(type) { action() }
-            5 -> onOpHeld5(type) { action() }
+            1 -> if (!isHeldOpBound(type, 1)) onOpHeld1(type) { action() }
+            2 -> if (!isHeldOpBound(type, 2)) onOpHeld2(type) { action() }
+            3 -> if (!isHeldOpBound(type, 3)) onOpHeld3(type) { action() }
+            4 -> if (!isHeldOpBound(type, 4)) onOpHeld4(type) { action() }
+            5 -> if (!isHeldOpBound(type, 5)) onOpHeld5(type) { action() }
             else -> logger.warn { "Herblore: ${objTypes[type].name} has no \"$label\" op." }
         }
     }

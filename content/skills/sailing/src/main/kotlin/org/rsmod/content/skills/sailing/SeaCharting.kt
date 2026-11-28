@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.baseSailingLvl
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -52,11 +53,11 @@ constructor(private val locTypes: LocTypeList, private val xpMods: XpModifiers) 
         action: suspend ProtectedAccess.(BoundLocInfo) -> Unit,
     ) {
         when (op) {
-            1 -> onOpLoc1(type) { action(it.loc) }
-            2 -> onOpLoc2(type) { action(it.loc) }
-            3 -> onOpLoc3(type) { action(it.loc) }
-            4 -> onOpLoc4(type) { action(it.loc) }
-            5 -> onOpLoc5(type) { action(it.loc) }
+            1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { action(it.loc) }
+            2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { action(it.loc) }
+            3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { action(it.loc) }
+            4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { action(it.loc) }
+            5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { action(it.loc) }
         }
     }
 

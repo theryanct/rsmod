@@ -2,19 +2,19 @@ package org.rsmod.content.skills.runecraft
 
 import jakarta.inject.Inject
 import kotlin.math.abs
-import org.rsmod.map.CoordGrid
-import org.rsmod.routefinder.collision.CollisionFlagMap
-import org.rsmod.routefinder.flag.CollisionFlag
-import org.rsmod.api.player.front
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.front
 import org.rsmod.api.player.hat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.miningLvl
 import org.rsmod.api.player.stat.runecraftingLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.advanced.onWearposChange
+import org.rsmod.api.script.isHeldOpBound
+import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
@@ -46,8 +46,11 @@ import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.obj.Wearpos
+import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
+import org.rsmod.routefinder.collision.CollisionFlagMap
+import org.rsmod.routefinder.flag.CollisionFlag
 
 /**
  * Runecraft (OSRS Wiki data): the six F2P altars (PR1) plus cosmic, chaos, nature, law, death and
@@ -350,11 +353,11 @@ constructor(
         action: suspend ProtectedAccess.(BoundLocInfo) -> Unit,
     ) {
         when (op) {
-            1 -> onOpLoc1(type) { this.action(it.loc) }
-            2 -> onOpLoc2(type) { this.action(it.loc) }
-            3 -> onOpLoc3(type) { this.action(it.loc) }
-            4 -> onOpLoc4(type) { this.action(it.loc) }
-            5 -> onOpLoc5(type) { this.action(it.loc) }
+            1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { this.action(it.loc) }
+            2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { this.action(it.loc) }
+            3 -> if (!isLocOpBound(type, 3)) onOpLoc3(type) { this.action(it.loc) }
+            4 -> if (!isLocOpBound(type, 4)) onOpLoc4(type) { this.action(it.loc) }
+            5 -> if (!isLocOpBound(type, 5)) onOpLoc5(type) { this.action(it.loc) }
         }
     }
 
@@ -364,11 +367,11 @@ constructor(
         action: suspend ProtectedAccess.(Npc) -> Unit,
     ) {
         when (npcTypes[type].op.indexOfFirst { it.equals(label, ignoreCase = true) } + 1) {
-            1 -> onOpNpc1(type) { this.action(it.npc) }
-            2 -> onOpNpc2(type) { this.action(it.npc) }
-            3 -> onOpNpc3(type) { this.action(it.npc) }
-            4 -> onOpNpc4(type) { this.action(it.npc) }
-            5 -> onOpNpc5(type) { this.action(it.npc) }
+            1 -> if (!isNpcOpBound(type, 1)) onOpNpc1(type) { this.action(it.npc) }
+            2 -> if (!isNpcOpBound(type, 2)) onOpNpc2(type) { this.action(it.npc) }
+            3 -> if (!isNpcOpBound(type, 3)) onOpNpc3(type) { this.action(it.npc) }
+            4 -> if (!isNpcOpBound(type, 4)) onOpNpc4(type) { this.action(it.npc) }
+            5 -> if (!isNpcOpBound(type, 5)) onOpNpc5(type) { this.action(it.npc) }
         }
     }
 
@@ -378,11 +381,11 @@ constructor(
         action: suspend ProtectedAccess.() -> Unit,
     ) {
         when (objTypes[type].iop.indexOfFirst { it.equals(label, ignoreCase = true) } + 1) {
-            1 -> onOpHeld1(type) { this.action() }
-            2 -> onOpHeld2(type) { this.action() }
-            3 -> onOpHeld3(type) { this.action() }
-            4 -> onOpHeld4(type) { this.action() }
-            5 -> onOpHeld5(type) { this.action() }
+            1 -> if (!isHeldOpBound(type, 1)) onOpHeld1(type) { this.action() }
+            2 -> if (!isHeldOpBound(type, 2)) onOpHeld2(type) { this.action() }
+            3 -> if (!isHeldOpBound(type, 3)) onOpHeld3(type) { this.action() }
+            4 -> if (!isHeldOpBound(type, 4)) onOpHeld4(type) { this.action() }
+            5 -> if (!isHeldOpBound(type, 5)) onOpHeld5(type) { this.action() }
         }
     }
 }
