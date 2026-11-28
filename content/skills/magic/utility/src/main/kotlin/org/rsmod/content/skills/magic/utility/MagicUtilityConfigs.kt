@@ -2,6 +2,7 @@ package org.rsmod.content.skills.magic.utility
 
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.game.type.obj.ObjType
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.spot.SpotanimReferences
 import org.rsmod.api.type.refs.synth.SynthReferences
@@ -19,6 +20,11 @@ internal object MagicUtilityComponents : ComponentReferences() {
     val bones_bananas = find("magic_spellbook:bones_bananas")
     val enchant_1 = find("magic_spellbook:enchant_1")
     val enchant_2 = find("magic_spellbook:enchant_2")
+    val enchant_3 = find("magic_spellbook:enchant_3")
+    val enchant_4 = find("magic_spellbook:enchant_4")
+    val enchant_5 = find("magic_spellbook:enchant_5")
+    val enchant_6 = find("magic_spellbook:enchant_6")
+    val enchant_7 = find("magic_spellbook:enchant_7")
     val telegrab = find("magic_spellbook:telegrab")
 }
 
@@ -36,6 +42,11 @@ internal object MagicUtilitySpells : ObjReferences() {
     val bones_bananas = find("15_bones_bananas")
     val enchant_1 = find("07_enchant_amulet_lvl1")
     val enchant_2 = find("27_enchant_amulet_lvl2")
+    val enchant_3 = find("49_enchant_amulet_lvl3")
+    val enchant_4 = find("57_enchant_amulet_lvl4")
+    val enchant_5 = find("68_enchant_amulet_lvl5")
+    val enchant_6 = find("87_enchant_amulet_lvl6")
+    val enchant_7 = find("93_enchant_amulet_lvl7")
     val telegrab = find("33_tele_grab")
 }
 
@@ -78,6 +89,46 @@ internal object MagicUtilityObjs : ObjReferences() {
     val amulet_of_defence = find("amulet_of_defence")
     val emerald_bracelet = find("jewl_emerald_bracelet")
     val castle_wars_bracelet_3 = find("jewl_castlewars_bracelet3")
+
+    // Enchant 3-7 (OSRS Wiki "Enchant ... Jewellery"): unenchanted -> enchanted.
+    val enchant_pairs: Map<Int, List<Pair<ObjType, ObjType>>> =
+        mapOf(
+            3 to
+                listOf(
+                    find("ruby_ring") to find("ring_of_forging"),
+                    find("ruby_necklace") to find("necklace_of_digsite_5"),
+                    find("strung_ruby_amulet") to find("amulet_of_strength"),
+                    find("jewl_ruby_bracelet") to find("jewl_bracelet_of_innoculation"),
+                ),
+            4 to
+                listOf(
+                    find("diamond_ring") to find("ring_of_life"),
+                    find("diamond_necklace") to find("jewl_necklace_of_phoenix"),
+                    find("strung_diamond_amulet") to find("amulet_of_power"),
+                    find("jewl_diamond_bracelet") to find("jewl_runerunning_bracelet_5"),
+                ),
+            5 to
+                listOf(
+                    find("dragonstone_ring") to find("ring_of_wealth"),
+                    find("dragonstone_necklace") to find("jewl_necklace_of_skills"),
+                    find("strung_dragonstone_amulet") to find("amulet_of_glory"),
+                    find("jewl_dragonstone_bracelet") to find("jewl_bracelet_of_combat"),
+                ),
+            6 to
+                listOf(
+                    find("onyx_ring") to find("enchanted_onyx_ring"),
+                    find("onyx_necklace") to find("jewl_beserker_necklace"),
+                    find("strung_onyx_amulet") to find("enchanted_onyx_amulet"),
+                    find("jewl_onyx_bracelet") to find("jewl_bracelet_regen"),
+                ),
+            7 to
+                listOf(
+                    find("zenyte_ring") to find("zenyte_ring_enchanted"),
+                    find("zenyte_necklace") to find("zenyte_necklace_enchanted"),
+                    find("zenyte_amulet") to find("zenyte_amulet_enchanted"),
+                    find("zenyte_bracelet") to find("zenyte_bracelet_enchanted"),
+                ),
+        )
 }
 
 internal object MagicUtilitySeqs : SeqReferences() {
@@ -88,6 +139,10 @@ internal object MagicUtilitySeqs : SeqReferences() {
     val bones_bananas = find("human_castbonestobananas")
     val enchant_1 = find("human_enchantamuletlvl1")
     val enchant_2 = find("human_enchantamuletlvl2")
+    val enchant_3 = find("human_enchantamuletlvl3")
+    val enchant_4 = find("enchant_amulet2_lvl4")
+    val enchant_5 = find("enchant_amulet2_lvl5")
+    val enchant_6 = find("enchant_amulet2_lvl6")
     val telegrab = find("human_casttelegrab")
 }
 
@@ -99,6 +154,10 @@ internal object MagicUtilitySpots : SpotanimReferences() {
     val bones_bananas = find("bonestobananas_casting")
     val enchant_1 = find("enchant_amulet_lvl1")
     val enchant_2 = find("enchant_amulet_lvl2")
+    val enchant_3 = find("enchant_amulet_lvl3")
+    val enchant_4 = find("enchant_amulet2_lvl4")
+    val enchant_5 = find("enchant_amulet2_lvl5")
+    val enchant_6 = find("enchant_amulet2_lvl6")
     val telegrab_casting = find("telegrab_casting")
     val telegrab_travel = find("telegrab_travel")
     val telegrab_impact = find("telegrab_impact")
