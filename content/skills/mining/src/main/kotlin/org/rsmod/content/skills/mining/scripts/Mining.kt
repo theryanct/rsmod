@@ -34,6 +34,9 @@ import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
+import org.rsmod.game.type.obj.Wearpos
+import org.rsmod.content.skills.mining.MiningGuild
+import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.game.type.obj.UnpackedObjType
 import org.rsmod.game.type.obj.isType
 import org.rsmod.game.type.seq.SeqType
@@ -51,7 +54,6 @@ import org.rsmod.plugin.scripts.ScriptContext
  * and no depletion (OSRS Wiki, Template:MiningPreGemDropTable).
  */
 // TODO:
-// - charged amulet of glory gem bonus (extra 3/256 roll, 1/64.2 overall)
 // - members rocks (silver/gold/mithril/adamantite/runite, gem rocks)
 class Mining
 @Inject
@@ -101,7 +103,9 @@ constructor(
             spam("You swing your pick at the rock.")
         } else if (actionDelay == mapClock) {
             val (low, high) = type.rockSuccessRates
-            if (random.of(GEM_TABLE_CHANCE) == 0) {
+            // Wiki "Amulet of glory": a charged glory worn raises the gem roll from 1/256 to 1/86.
+            val gemChance = if (wearsChargedGlory()) GLORY_GEM_TABLE_CHANCE else GEM_TABLE_CHANCE
+            if (random.of(gemChance) == 0) {
                 rollGemTable()
             } else if (statRandom(stats.mining, low, high, invisibleLvls)) {
                 mineOre(rock, type, ore)
@@ -111,6 +115,11 @@ constructor(
         }
 
         opLoc1(rock)
+    }
+
+    private fun ProtectedAccess.wearsChargedGlory(): Boolean {
+        val neck = player.worn[Wearpos.Front.slot] ?: return false
+        return MiningGlories.charged.any { objTypes[it].id == neck.id }
     }
 
     private fun ProtectedAccess.mineOre(
@@ -123,9 +132,11 @@ constructor(
         statAdvance(stats.mining, xp)
         invAddGathered(ore)
 
-        locRepo.change(rock, type.rockEmpty, type.rockRespawnTime)
+        // Mining Guild: respawns halved (Wiki; runite 12 -> 6 minutes).
+        val respawn = if (MiningGuild.contains(rock.coords)) maxOf(1, type.rockRespawnTime / 2) else type.rockRespawnTime
+        locRepo.change(rock, type.rockEmpty, respawn)
         resetAnim()
-        queueResume(rock, type, type.rockRespawnTime)
+        queueResume(rock, type, respawn)
     }
 
     /**
@@ -198,6 +209,7 @@ constructor(
 
     companion object {
         private const val GEM_TABLE_CHANCE = 256
+        private const val GLORY_GEM_TABLE_CHANCE = 86
         private const val RESUME_RETRIES = 10
 
         val UnpackedObjType.pickaxeLevelReq: Int by objParam(params.levelrequire)
@@ -236,4 +248,8 @@ constructor(
 
 internal object MiningQueues : QueueReferences() {
     val resume = find("mining_resume")
+}
+
+internal object MiningGlories : ObjReferences() {
+    val charged = (1..6).map { find("amulet_of_glory_$it") } + find("amulet_of_glory_inf")
 }
