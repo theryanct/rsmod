@@ -27,8 +27,8 @@ include(
 )
 
 // Rev 243: modules whose interfaces were redesigned in the 243 cache, disabled until ported
-// (skill guides -> skill_guide_v2, canoes -> per-station canoe_map_* interfaces).
-val disabledProjects = setOf("content:interfaces:skill-guides", "content:travel:canoe")
+// (canoes -> per-station canoe_map_* interfaces; skill guides ported to skill_guide_v2).
+val disabledProjects = setOf("content:travel:canoe")
 
 includeProjects(project(":api"))
 includeProjects(project(":content"))
