@@ -156,6 +156,23 @@ public suspend fun ProtectedAccess.runQuestSection(
     }
 }
 
+/** Runs the branch under [option] in [section] (see [QuestDialogue.branch]). */
+public suspend fun ProtectedAccess.runQuestBranch(
+    npc: Npc?,
+    dialogue: QuestDialogue,
+    section: String,
+    option: String,
+    hooks: QuestDialogueHooks = SimpleQuestHooks(),
+    speakers: Map<String, NpcType> = emptyMap(),
+) {
+    val nodes = dialogue.branch(section, option)
+    if (npc != null) {
+        startDialogue(npc) { QuestDialogueRunner(hooks, speakers).run(this, nodes) }
+    } else {
+        startDialogue { QuestDialogueRunner(hooks, speakers).run(this, nodes) }
+    }
+}
+
 public fun ProtectedAccess.carries(obj: ObjType, count: Int = 1): Boolean =
     invTotal(inv, obj) >= count
 
