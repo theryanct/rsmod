@@ -66,11 +66,18 @@ constructor(
             name + "open",
             name + "_open",
             name.replace("closed", "open"),
-            name.replace(LAST_WORD) { "open" + it.value },
-            name.replace(LAST_TOKEN) { "_open" + it.groupValues[1] },
-            name.replaceFirst(DOOR_OR_GATE) { "open" + it.value },
-            name.replaceFirst(DOOR_OR_GATE) { it.value + "open" },
+            LAST_WORD.replace(name) { match -> "open" + match.value },
+            LAST_TOKEN.replace(name) { match -> "_open" + match.groupValues[1] },
+            insertAtFirst(name, before = true),
+            insertAtFirst(name, before = false),
         )
+
+    /** `name` with "open" put before (or after) its first "door"/"gate". */
+    private fun insertAtFirst(name: String, before: Boolean): String {
+        val match = DOOR_OR_GATE.find(name) ?: return name
+        val word = if (before) "open" + match.value else match.value + "open"
+        return name.replaceRange(match.range, word)
+    }
 
     private inner class Interceptor : OpInterceptors.LocOp {
         override fun claims(player: Player, loc: BoundLocInfo, op: InteractionOp): Boolean {
