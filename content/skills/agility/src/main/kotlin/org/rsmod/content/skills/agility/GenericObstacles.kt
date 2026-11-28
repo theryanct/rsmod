@@ -38,7 +38,13 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
      * order): the Goblin Cave mud pile is Dwarf Cannon's cave exit.
      */
     private val QUEST_OWNED =
-        setOf("mcanmudpile", "fairy_wall_tangle_door_open", "fairy_wall_tangle_door_open1")
+        setOf(
+            "mcanmudpile",
+            "fairy_wall_tangle_door_open",
+            "fairy_wall_tangle_door_open1",
+            // Agility Pyramid low walls give xp and can fail (pyramid/Pyramid.kt).
+            "agility_pyramid_low_wall",
+        )
 
     private enum class Kind(val labels: Set<String>) {
         ClimbOver(setOf("climb-over")),

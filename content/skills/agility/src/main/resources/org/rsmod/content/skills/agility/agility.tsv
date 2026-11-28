@@ -118,3 +118,7 @@ shortcut	mine_log_balance1	20	8.5	human_walk_logbalance	5	2598,3477,0	2603,3477,
 shortcut	varrock_sc_tunnel_west,varrock_sc_tunnel_east	21	0	agilty_shortcut_tunnel_walk	5	3137,3516,0	3143,3514,0
 shortcut	falador_sc_castlewall_south,falador_sc_castlewall_north	26	0	agilty_shortcut_tunnel_walk	4	2948,3309,0	2948,3313,0
 shortcut	alkharid_mine_sc_top,alkharid_mine_sc_bottom	38	0	human_reachforladder	4	3306,3315,0	3302,3315,0
+# Agility Pyramid approach (Wiki: the first rocks have no requirement, the second need 30 Agility); cache loc rows at
+# x 3335/3337 and 3349/3351, crossing guessed as the decor tile on each side of the ridge.
+shortcut	ntk_agility_climbing_rocks_1	1	0	human_reachforladder	3	3335,*,0	3337,*,0
+shortcut	ntk_agility_climbing_rocks_2	30	0	human_reachforladder	3	3349,*,0	3351,*,0
