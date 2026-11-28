@@ -26,6 +26,7 @@ object SlayerVarpBuilds : VarpBuilder() {
         build("slayer_points")
         build("slayer_streak")
         build("slayer_task_master")
+        build("slayer_gem_given")
     }
 }
 
@@ -37,6 +38,8 @@ object SlayerVarps : VarpReferences() {
     val streak = find("slayer_streak")
     /** [SlayerData.Master.id] that assigned the current task. */
     val master = find("slayer_task_master")
+    /** 1 once the free enchanted gem from the first assignment has been given. */
+    val gem_given = find("slayer_gem_given")
 }
 
 object SlayerNpcSpawns : MapNpcSpawnBuilder() {

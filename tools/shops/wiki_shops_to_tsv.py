@@ -141,6 +141,14 @@ def words(s):
     return {w for w in re.findall(r"[a-z]+", s.lower()) if len(w) >= 4 and w not in ("shop", "store", "general")}
 
 
+def store_owners(box):
+    """Owner pages from `owner` and versioned `owner1`, `owner2`, ... fields (e.g. Slayer Equipment)."""
+    owners = []
+    for line in re.findall(r"\|\s*owner\d*\s*=([^\n]*)", box):
+        owners += [o.strip() for o in re.findall(r"\[\[([^|\]#]+)", line) if o.strip() not in owners]
+    return owners
+
+
 def owner_ids(page):
     """Owner npc ids in infobox version order (id1 first), falling back to the bucket ids."""
     text = owner_pages.get(page, "")
@@ -174,8 +182,7 @@ for title, text in sorted(stores.items()):
     info = fields(strip_nested(box))
     location = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", info.get("location", ""))
     if locations and not any(l in location.lower() for l in locations): continue
-    om = re.search(r"\|\s*owner\s*=([^\n]*)", box)
-    owners = [o.strip() for o in re.findall(r"\[\[([^|\]#]+)", om.group(1))] if om else []
+    owners = store_owners(box)
     npcs = []
     for page in owners:
         ids = owner_ids(page)
@@ -282,8 +289,7 @@ for title, text in sorted(stores.items()):
             break
         items.append((on, int(price.group(0)), f.get("name", "")))
     if not items: continue
-    om = re.search(r"\|\s*owner\s*=([^\n]*)", box)
-    for page in ([o.strip() for o in re.findall(r"\[\[([^|\]#]+)", om.group(1))] if om else []):
+    for page in store_owners(box):
         ids = owner_ids(page)
         if any(npc_sym.get(i) in handled or npc_sym.get(i) in registered for i in ids): continue
         # Talk-to is on almost every npc, so also require the cache name to match the page name

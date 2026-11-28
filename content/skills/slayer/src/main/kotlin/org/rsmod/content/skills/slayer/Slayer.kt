@@ -8,6 +8,7 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.baseSlayerLvl
 import org.rsmod.api.player.stat.statAdvance
 import org.rsmod.api.player.vars.intVarp
+import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
@@ -47,12 +48,14 @@ constructor(
     private val npcTypes: NpcTypeList,
     private val objTypes: ObjTypeList,
     private val xpMods: XpModifiers,
+    private val objRepo: ObjRepository,
 ) : PluginScript() {
     private var Player.slayerTask: Int by intVarp(SlayerVarps.task)
     private var Player.slayerTaskCount: Int by intVarp(SlayerVarps.count)
     private var Player.slayerPoints: Int by intVarp(SlayerVarps.points)
     private var Player.slayerStreak: Int by intVarp(SlayerVarps.streak)
     private var Player.slayerTaskMaster: Int by intVarp(SlayerVarps.master)
+    private var Player.slayerGemGiven: Int by intVarp(SlayerVarps.gem_given)
 
     private val categoriesById by lazy { SlayerData.categories.associateBy { it.id } }
     private val mastersById by lazy { SlayerData.masters.associateBy { it.id } }
@@ -71,7 +74,7 @@ constructor(
             val ops = npcTypes[npc].op
             val talk = ops.indexOfFirst { it.equals("Talk-to", ignoreCase = true) } + 1
             val assign = ops.indexOfFirst { it.equals("Assignment", ignoreCase = true) } + 1
-            onNpcOp(npc, talk) { assignment(it, master, greet = true) }
+            onNpcOp(npc, talk) { talkTo(it, master) }
             onNpcOp(npc, assign) { assignment(it, master, greet = false) }
         }
         val gem = SlayerObjs.enchanted_gem
@@ -97,6 +100,37 @@ constructor(
             4 -> onOpNpc4(npc) { this.action(it.npc) }
             5 -> onOpNpc5(npc) { this.action(it.npc) }
         }
+    }
+
+    private suspend fun ProtectedAccess.talkTo(npc: Npc, master: Master) {
+        var choice = 0
+        startDialogue(npc) {
+            chatNpc(happy, "'Ello, and what are you after, then?")
+            choice =
+                choice3(
+                    "I need another assignment.",
+                    1,
+                    "Do you have a spare enchanted gem?",
+                    2,
+                    "Nothing, thanks.",
+                    3,
+                )
+        }
+        when (choice) {
+            1 -> assignment(npc, master, greet = false)
+            2 -> spareGem(npc)
+        }
+    }
+
+    /** OSRS: masters hand out a replacement gem for free when you have none. */
+    private suspend fun ProtectedAccess.spareGem(npc: Npc) {
+        val gem = SlayerObjs.enchanted_gem
+        if (invTotal(inv, gem) > 0 || invTotal(bank, gem) > 0) {
+            startDialogue(npc) { chatNpc(neutral, "You've already got one of those.") }
+            return
+        }
+        invAddOrDrop(objRepo, gem)
+        startDialogue(npc) { chatNpc(happy, "Here you go. Try not to lose it this time.") }
     }
 
     private suspend fun ProtectedAccess.assignment(npc: Npc, master: Master, greet: Boolean) {
@@ -147,11 +181,22 @@ constructor(
         player.slayerTask = category.id
         player.slayerTaskCount = amount
         player.slayerTaskMaster = master.id
+        val firstGem = player.slayerGemGiven == 0
+        if (firstGem) {
+            player.slayerGemGiven = 1
+            invAddOrDrop(objRepo, SlayerObjs.enchanted_gem)
+        }
         startDialogue(npc) {
             if (greet) {
                 chatNpc(happy, "'Ello, and what are you after, then?")
             }
             chatNpc(happy, "Your new task is to kill $amount ${category.display.lowercase()}.")
+            if (firstGem) {
+                chatNpc(
+                    happy,
+                    "Here's a gem. Use it to check on your task or contact me if you need help.",
+                )
+            }
         }
     }
 
