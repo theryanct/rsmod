@@ -3,6 +3,7 @@ package org.rsmod.content.skills.herblore
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.type.obj.ObjType
 
 internal object HerbloreObjs : ObjReferences() {
@@ -26,4 +27,9 @@ internal object HerbloreSeqs : SeqReferences() {
 
 internal object HerbloreQueues : QueueReferences() {
     val make = find("herblore_make")
+}
+
+internal object HerbloreVarps : VarpReferences() {
+    /** Druidic Ritual's quest varp (complete = 4), for the optional QuestGates check. */
+    val druidquest = find("druidquest")
 }

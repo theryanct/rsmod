@@ -11,6 +11,7 @@ import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURS
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
 import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYER
+import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
@@ -41,6 +42,7 @@ public object BuiltQuests {
             DEMON_SLAYER,
             DORICS_QUEST,
             DRAGON_SLAYER,
+            DRUIDIC_RITUAL,
             ERNEST,
             GOBLIN_DIPLOMACY,
             IMP_CATCHER,

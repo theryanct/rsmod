@@ -6,6 +6,8 @@ import kotlin.math.min
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.events.interact.LocUEvents
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.poison.curePoison
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
@@ -101,7 +103,16 @@ constructor(
 
     /* Cleaning */
 
+    /** Herblore needs Druidic Ritual when the QuestGates toggle is on (default off). */
+    private fun ProtectedAccess.passesQuestGate(): Boolean {
+        if (!player.isFeatureOn(Feature.QuestGates)) return true
+        if (player.vars[HerbloreVarps.druidquest] >= DRUIDIC_RITUAL_COMPLETE) return true
+        mes("You need to complete Druidic Ritual to use the Herblore skill.")
+        return false
+    }
+
     private fun ProtectedAccess.clean(herb: HerbloreData.Herb) {
+        if (!passesQuestGate()) return
         if (player.herbloreLvl < herb.level) {
             mes("You need a Herblore level of ${herb.level} to clean this herb.")
             return
@@ -129,6 +140,7 @@ constructor(
         min(invTotal(inv, obj(recipe.first)), invTotal(inv, obj(recipe.second)))
 
     private suspend fun ProtectedAccess.selectMake(recipe: Recipe) {
+        if (!passesQuestGate()) return
         val product = obj(recipe.product)
         val name = objTypes[product].name
         val max = maxMakes(recipe).coerceAtLeast(1)
@@ -251,6 +263,7 @@ constructor(
     }
 
     private companion object {
+        const val DRUIDIC_RITUAL_COMPLETE = 4
         const val DRINK_DELAY = 3
     }
 }
