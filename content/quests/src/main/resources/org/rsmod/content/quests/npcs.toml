@@ -1237,3 +1237,9 @@ coords = '2_30_80_32_26'
 [[spawn]]
 npc = 'cowboss_farmer'
 coords = '0_49_51_34_15'
+
+# Sleeping Giants: Kovac outside the foundry cave on the Giants' Plateau (Wiki 3363,3148; the
+# multinpc base: the "Strike" hill giant, then Kovac until he leads you in).
+[[spawn]]
+npc = 'giants_foundry_kovac_multi_outside'
+coords = '0_52_49_35_12'
