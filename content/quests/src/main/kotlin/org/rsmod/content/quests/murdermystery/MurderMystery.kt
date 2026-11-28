@@ -15,6 +15,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -66,7 +67,13 @@ constructor(
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, MmNpcs.guard, "Talk-to") { talkGuard(it) }
         onNpcOpLabel(npcTypes, MmNpcs.gossip, "Talk-to") { talkGossip(it) }
-        onNpcOpLabel(npcTypes, MmNpcs.salesman, "Talk-to") { talkSalesman(it) }
+        // Talk-to is shared through QuestTalk (The Fremennik Trials sells his low alcohol keg).
+        with(QuestTalk) {
+            register(npcTypes, MmNpcs.salesman, MURDER_MYSTERY, wants = { state in STARTED until COMPLETE }) {
+                talkSalesman(it)
+            }
+            default(npcTypes, MmNpcs.salesman) { talkSalesman(it) }
+        }
         for ((index, member) in MmNpcs.family.withIndex()) {
             onNpcOpLabel(npcTypes, member, "Talk-to") { talkFamily(it, index) }
         }

@@ -26,6 +26,7 @@ import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
 import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
 import org.rsmod.content.quests.golem.TheGolem.Companion.THE_GOLEM
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
+import org.rsmod.content.quests.fremenniktrials.FremennikTrials.Companion.FREMENNIK_TRIALS
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
@@ -97,6 +98,7 @@ public object BuiltQuests {
             FIGHT_ARENA,
             THE_GOLEM,
             FISHING_CONTEST,
+            FREMENNIK_TRIALS,
             GERTRUDES_CAT,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
