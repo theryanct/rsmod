@@ -1,0 +1,165 @@
+# Generated from the OSRS Wiki page "Transcript:Tribal Totem" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Kangai Mau
+1	line	Kangai Mau	Hello. I Kangai Mau of the Rantuki tribe.
+1	select	Select an Option
+1	option	And what are you doing in Brimhaven?
+2	line	Player	And what are you doing in Brimhaven?
+2	line	Kangai Mau	I looking for someone brave to go on important mission for me. Someone skilled in thievery and sneaking about. I am told I can find such people in Brimhaven.
+2	line	Player	Tell me of this mission.
+2	line	Kangai Mau	I need someone to go on a mission to the city of Ardougne. There you will find the house of Lord Handelmort. In his house he has our tribal totem.
+2	line	Kangai Mau	We need it back.
+2	line	Player	Why does he have it?
+2	line	Kangai Mau	Lord Handelmort is an Ardougnese explorer which means he think he have the right to come to my tribal home, steal our stuff and put in his private museum.
+2	select	Start The Tribal Totem quest?
+2	option	Yes.
+3	line	Player	Ok, I will get it back.
+3	line	Kangai Mau	Best of luck with that adventurer.
+3	line	Player	How can I find Handelmort's house? Ardougne is a big place...
+3	line	Kangai Mau	I don't know Ardougne. You tell me.
+3	action	end
+2	option	No.
+3	line	Player	Well good luck with that.
+3	line	Kangai Mau	Let's hope I find some help soon.
+3	action	end
+1	option	I'm in search of adventure!
+2	line	Player	I'm in search of adventure!
+2	line	Kangai Mau	Adventure is something I may be able to give.
+2	line	Kangai Mau	I need someone to go on a mission to the city of Ardougne. There you will find the house of Lord Handelmort. In his house he has our tribal totem.
+2	action	above
+1	option	Who are the Rantuki tribe?
+2	line	Player	Who are the Rantuki tribe?
+2	line	Kangai Mau	A proud and noble tribe of Karamja. But now we are few, as men come from across sea, steal our land, and settle on our hunting grounds.
+2	line	Player	And what are you doing in Brimhaven?
+2	action	above
+0	section	Trying to open the door to the mansion
+1	action	end
+0	section	Talking to Horacio
+1	line	Horacio	It's a fine day to be out in the garden isn't it?
+1	select	Select an Option
+1	option	Yes, it's very nice.
+2	line	Player	Yes, it's very nice.
+2	line	Horacio	Days like these make me glad to be alive!
+2	action	end
+1	option	So... who are you?
+2	line	Player	So... who are you?
+2	line	Horacio	My name is Horacio Dobson. I'm the gardener to Lord Handelmort. Take a look around this beautiful garden, all of this is my handiwork.
+2	select	Select an Option
+2	option	So... do you garden round the back too?
+3	line	Player	So... do you garden round the back too?
+3	line	Horacio	That I do!
+3	line	Player	Doesn't all of the security around the house get in your way then?
+3	line	Horacio	Ah, I'm used to all that. I have my keys, the guard dogs know me, and I know the combination to the door lock. It's rather easy, it's his middle name.
+3	line	Player	Whose middle name?
+3	line	Horacio	Hum. I probably shouldn't have said that. Forget I mentioned it.
+3	action	end
+2	option	Do you need any help?
+3	line	Player	Do you need any help?
+3	line	Horacio	Trying to muscle in on my job eh? I'm more than happy to do this all by myself!
+3	action	end
+0	section	Investigating the GPDT Depot
+0	section	Talking to a GPDT employee
+1	line	GPDT employee	Welcome to GPDT!
+1	line	Player	Thank you very much.
+1	action	end
+0	section	Investigating Wizard Cromperty's crate
+1	box	There is a label on this crate. It says;
+1	box	Senior Patents Clerk, Chamber of Invention, The Wizards' Tower, Misthalin. The crate is securely fastened shut and ready for delivery.
+1	action	end
+0	section	Investigating The Handelmorts' crate
+1	box	Drops to floor with full inventory
+1	action	
+1	action	end
+0	section	Investigating the Handelmorts' crate again
+1	box	You can see the gluey outline from where you peeled the address label off.
+1	action	end
+0	section	Talking to Wizard Cromperty
+1	line	Wizard Cromperty	Hello there. My name is Cromperty. I am a Wizard, and an inventor.
+1	line	Wizard Cromperty	You must be {player}. My good friend Sedridor has told me about you. As both wizard and inventor, he has aided me in my great invention!
+1	select	Select an Option
+1	option	Two jobs? That's got to be tough.
+1	option	So what have you invented?
+2	line	Player	So what have you invented?
+2	line	Wizard Cromperty	Ah! My latest invention is my patent pending teleportation block! It emits a low level magical signal, that will allow me to locate it anywhere in the world, and teleport anything
+2	line	Wizard Cromperty	directly to it! I hope to revolutionise the entire teleportation system! Don't you think I'm great? Uh, I mean it's great?
+2	select	Select an Option
+2	option	So where is the other block?
+3	line	Player	So where is the other block?
+3	line	Wizard Cromperty	Well... Hmm. I would guess somewhere between here and the Wizards' Tower in Misthalin. All I know is that it hasn't got there yet as the wizards there would have contacted me.
+3	line	Wizard Cromperty	I'm using the GPDT for delivery. They assured me it would be delivered promptly.
+3	select	Select an Option
+3	option	Can I be teleported please?
+4	action	below
+3	option	Who are the GPDT?
+4	line	Player	Who are the GPDT?
+4	line	Wizard Cromperty	The Gielinor Parcel Delivery Team. They come very highly recommended. Their motto is: 'We aim to deliver your stuff at some point after you have paid us!'
+4	action	end
+2	option	Can I be teleported please?
+3	line	Player	Can I be teleported please?
+3	line	Wizard Cromperty	By all means! I'm afraid I can't give you any specifics as to where you will come out however. Presumably wherever the other block is located.
+3	select	Select an Option
+3	option	Yes, that sounds good. Teleport me!
+4	line	Player	Yes, that sounds good. Teleport me!
+4	line	Wizard Cromperty	Okey dokey! Ready?
+4	line	Wizard Cromperty	Dipsolum sententa sententi!
+4	action	GDPT Depot]].)
+3	option	That sounds dangerous. Leave me here.
+4	line	Player	That sounds dangerous. Leave me here.
+4	line	Wizard Cromperty	As you wish.
+4	action	end
+2	option	Well done, that's very clever.
+3	line	Player	Well done, that's very clever.
+3	line	Wizard Cromperty	Yes it is isn't it? Forgive me for feeling a little smug, this is a major breakthrough in the field of teleportation!
+3	action	end
+1	option	Can you teleport me to the Rune Essence?
+0	section	Using the Address label on Cromperty's crate
+1	box	You carefully place the delivery address label over the existing label, covering it completely.
+1	line	Player	Now I just need someone to deliver it for me.
+1	action	end
+0	section	Using a second address label on the crate
+1	action	end
+0	section	Investing the crate afterwards
+1	box	There is a label on this crate. It says;
+1	box	To Lord Handelmort, Handelmort Mansion, Ardougne.
+1	action	end
+0	section	Talking to GPDT employee after using the address label on the crate
+1	line	GPDT employee	Welcome to GPDT!
+1	select	Select an Option
+1	option	So, when are you going to deliver this crate?
+2	line	Player	So, when are you going to deliver this crate?
+2	line	GPDT employee	Well... I guess we could do it now...
+2	action	end
+1	option	Thank you, it's interesting in here.
+2	line	Player	Thank you, it's interesting in here.
+2	line	GPDT employee	We're the premier delivery service in ALL of Gielinor!
+2	action	end
+0	section	Inside the mansion
+0	section	Entering the door combination
+1	cond	If the combination is wrong:
+2	action	end
+1	cond	If the combination is correct:
+2	action	end
+0	section	Climbing the stairs without investigating
+1	action	end
+0	section	Investigating the stairs
+1	box	Your trained senses as a thief enable you to see that there is a trap in these stairs. You make a note of its location for future reference when using these stairs.
+1	action	end
+0	section	Climbing the stairs after investigatiing
+1	action	end
+0	section	Opening the chest with the totem
+1	action	end
+0	section	Searching the chest with the Totem
+1	box	Inside the chest you find the tribal totem.
+1	action	end
+0	section	Searching the chest after getting the totem
+1	action	end
+0	section	Returning back to Kangai Mau
+1	line	Kangai Mau	Have you got our totem back?
+1	cond	If the player does not have the totem in their inventory:
+2	line	Player	No, it's not that easy.
+2	line	Kangai Mau	Bah, you no good.
+2	action	end
+1	cond	If the player has the totem in their inventory:
+2	line	Player	Yes I have.
+2	line	Kangai Mau	You have??? Many thanks brave adventurer! Here, have some freshly cooked Karamjan fish, caught specially by my tribe.
+2	box	You hand over the Tribal Totem.

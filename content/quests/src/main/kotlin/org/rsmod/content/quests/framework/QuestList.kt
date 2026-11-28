@@ -47,6 +47,7 @@ import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARE
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
+import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
@@ -103,6 +104,7 @@ public object BuiltQuests {
             SHIELD_OF_ARRAV,
             TEMPLE_OF_THE_EYE,
             TREE_GNOME_VILLAGE,
+            TRIBAL_TOTEM,
             VAMPYRE_SLAYER,
             WATERFALL_QUEST,
             WITCHS_HOUSE,
