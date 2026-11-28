@@ -1342,6 +1342,61 @@ coords = '2_55_55_29_36'
 [[spawn]]
 npc = 'fenk_creature'
 coords = '2_55_55_31_37'
+
+# Shilo Village: undead ones in Ah Za Rhoon (none in the world spawns).
+[[spawn]]
+npc = 'zqskeleton_armed'
+coords = '0_45_146_10_21'
+
+[[spawn]]
+npc = 'zqzombie_unarmed'
+coords = '0_45_146_30_5'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed'
+coords = '0_45_146_45_10'
+
+[[spawn]]
+npc = 'zqzombie_armed'
+coords = '0_45_146_20_4'
+
+[[spawn]]
+npc = 'zqskeleton_armed2'
+coords = '0_45_145_35_20'
+
+[[spawn]]
+npc = 'zqzombie_unarmed2'
+coords = '0_45_145_28_30'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed2'
+coords = '0_45_145_48_5'
+
+[[spawn]]
+npc = 'zqzombie_armed2'
+coords = '0_45_145_55_40'
+
+# Shilo Village: undead ones in Rashiliyia's Tomb.
+[[spawn]]
+npc = 'zqzombie_armed3'
+coords = '0_45_148_25_33'
+
+[[spawn]]
+npc = 'zqskeleton_armed'
+coords = '0_45_148_35_23'
+
+[[spawn]]
+npc = 'zqzombie_unarmed3'
+coords = '0_45_148_40_33'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed'
+coords = '0_45_148_30_6'
+
+[[spawn]]
+npc = 'zqzombie_armed'
+coords = '0_45_148_38_16'
+
 # Spirits of the Elid: the cave's golems (one outside each door), the target over the north
 # channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
 # (Ryan-test).
