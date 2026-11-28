@@ -19,6 +19,7 @@ import org.rsmod.game.loc.LocShape
 import org.rsmod.game.obj.Obj
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.obj.ObjType
+import org.rsmod.game.type.seq.SeqType
 import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
 import org.rsmod.plugin.scripts.PluginScript
@@ -41,11 +42,25 @@ constructor(
             // Both directions: tinderbox -> logs and logs -> tinderbox.
             onOpHeldU(firemaking_objs.tinderbox, log.obj) { light(log) }
         }
+        // Barbarian firemaking (Wiki "Barbarian Training"): any standard bow lights logs for the
+        // same xp at the barbarian levels; Otto's training itself is skipped, like barbarian
+        // fishing.
+        for ((bow, anim) in FiremakingBows.bows) {
+            for (log in burnableLogs) {
+                val level = barbarianLevels[log.obj] ?: continue
+                onOpHeldU(bow, log.obj) { light(log, Method(level, anim)) }
+            }
+        }
     }
 
-    private suspend fun ProtectedAccess.light(log: BurnableLog) {
-        if (player.firemakingLvl < log.level) {
-            mes("You need a Firemaking level of ${log.level} to burn these logs.")
+    /** How the fire is lit: the Firemaking level needed and the lighting animation. */
+    private class Method(val level: Int, val anim: SeqType)
+
+    private suspend fun ProtectedAccess.light(log: BurnableLog, method: Method? = null) {
+        val level = method?.level ?: log.level
+        if (player.firemakingLvl < level) {
+            val how = if (method != null) " with a bow" else ""
+            mes("You need a Firemaking level of $level to light these logs$how.")
             return
         }
         if (!canLightAt(coords)) {
@@ -64,7 +79,7 @@ constructor(
         mes("You attempt to light the logs.")
 
         while (true) {
-            anim(firemaking_seqs.human_createfire)
+            anim(method?.anim ?: firemaking_seqs.human_createfire)
             delay(LIGHT_ATTEMPT_TICKS)
             if (statRandom(stats.firemaking, LIGHT_LOW, LIGHT_HIGH, invisibleLvls)) {
                 break
@@ -136,6 +151,23 @@ constructor(
     }
 
     private class BurnableLog(val obj: ObjType, val level: Int, val xp: Double)
+
+    /** Wiki "Barbarian Training" bow-lighting levels (same xp as a tinderbox). */
+    private val barbarianLevels: Map<ObjType, Int> by lazy {
+        mapOf(
+            firemaking_objs.logs to 21,
+            firemaking_objs.achey_tree_logs to 21,
+            firemaking_objs.oak_logs to 35,
+            firemaking_objs.willow_logs to 50,
+            firemaking_objs.teak_logs to 55,
+            firemaking_objs.arctic_pine_logs to 62,
+            firemaking_objs.maple_logs to 65,
+            firemaking_objs.mahogany_logs to 70,
+            firemaking_objs.yew_logs to 80,
+            firemaking_objs.magic_logs to 95,
+            firemaking_objs.redwood_logs to 99,
+        )
+    }
 
     private companion object {
         /** OSRS Wiki: one Firemaking success curve for all regular logs. */

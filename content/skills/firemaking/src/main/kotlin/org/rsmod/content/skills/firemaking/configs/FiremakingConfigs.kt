@@ -33,3 +33,33 @@ internal object FiremakingLocs : LocReferences() {
 internal object FiremakingSeqs : SeqReferences() {
     val human_createfire = find("human_createfire")
 }
+
+/** Standard bows and their barbarian fire-lighting animation (longbows share the shortbow's). */
+internal object FiremakingBows : ObjReferences() {
+    private val seqRefs = FiremakingBowSeqs
+
+    val bows: List<Pair<org.rsmod.game.type.obj.ObjType, org.rsmod.game.type.seq.SeqType>> =
+        listOf(
+            find("shortbow") to seqRefs.normal,
+            find("longbow") to seqRefs.normal,
+            find("oak_shortbow") to seqRefs.oak,
+            find("oak_longbow") to seqRefs.oak,
+            find("willow_shortbow") to seqRefs.willow,
+            find("willow_longbow") to seqRefs.willow,
+            find("maple_shortbow") to seqRefs.maple,
+            find("maple_longbow") to seqRefs.maple,
+            find("yew_shortbow") to seqRefs.yew,
+            find("yew_longbow") to seqRefs.yew,
+            find("magic_shortbow") to seqRefs.magic,
+            find("magic_longbow") to seqRefs.magic,
+        )
+}
+
+internal object FiremakingBowSeqs : SeqReferences() {
+    val normal = find("brut_player_firemaking_shortbow")
+    val oak = find("brut_player_firemaking_oak_shortbow")
+    val willow = find("brut_player_firemaking_willow_shortbow")
+    val maple = find("brut_player_firemaking_maple_shortbow")
+    val yew = find("brut_player_firemaking_yew_shortbow")
+    val magic = find("brut_player_firemaking_magic_shortbow")
+}
