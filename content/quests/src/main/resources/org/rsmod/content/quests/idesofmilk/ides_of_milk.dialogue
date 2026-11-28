@@ -1,0 +1,340 @@
+# Generated from the OSRS Wiki page "Transcript:The Ides of Milk" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Cassius	You!
+1	line	Player	Me?
+1	line	Cassius	Yes you!
+1	line	Player	Can I... help you?
+1	line	Cassius	That depends. Do you like making money?
+1	line	Player	I'm not averse to making money.
+1	line	Cassius	And do you enjoy... milk?
+1	line	Player	Milk?
+1	line	Cassius	Milk.
+1	cond	If the player is on a quest speedrunning world:
+2	line	Player	I suppose it's okay.
+2	line	Cassius	Well, fair enough. If your passion for milk changes, let me know.
+2	box	This quest is not available on Speedrunning Worlds.
+1	line	Player	I can't say I've thought much about it.
+1	line	Cassius	Would you like to think more about it?
+1	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 15.
+1	select	Start The Ides of Milk quest?
+1	option	Yes.
+2	line	Player	What am I going to get from thinking more about... milk?
+2	line	Cassius	Profit!
+2	line	Cassius	Ten to fifteen percent, performance depending.
+2	line	Player	How are we going to be making that profit? And who even are you anyway?
+2	line	Cassius	Ah, my name is Cassius. I got carried away.
+2	line	Cassius	But, we're going to construct an empire.
+2	line	Player	Of milk?
+2	line	Cassius	Of milk.
+2	line	Player	How do you intend to make an empire of milk?
+2	line	Cassius	So, the first step is going to involve you doing a little... research.
+2	line	Player	Right...
+2	line	Cassius	You're going to cross the River Lum, find Gillie and Seth Groats, and learn about animal husbandry.
+2	line	Cassius	Then... Then you're going to cross back to this side of the river, and tell me all about how they've made their animals so productive.
+2	line	Cassius	It's a perfect plan!
+2	line	Player	What use is it if I know everything and you don't? Couldn't I make my own... milk empire... with that information?
+2	line	Player	If anything I should be cutting you in at ten to fifteen percent.
+2	line	Cassius	Hey, I'm the one supplying the high-quality milk here.
+2	line	Cassius	Not to mention, my associate Brutus is already embedded in the Groats operation to work a different angle. That will prove most lucrative.
+2	line	Player	Right... I guess I'll go and see the Groatses then.
+2	action	end
+1	option	No.
+2	line	Player	No, I'm not sure I would like that, thank you.
+2	action	end
+0	section	Attempting to release the bull early
+1	line	Player	Releasing the bull into the cow pen is a bad idea.
+1	box	You need to have completed The Ides of Milk quest to release this bull.
+1	action	end
+0	section	Talking to Cassius again before talking to both Gillie and Seth
+1	line	Player	What was it you needed me to do again?
+1	line	Cassius	I need you to speak to Gillie and Seth Groats. We need to learn everything we can.
+1	line	Cassius	They live just across the River Lum. Head east from here and you should be able to find them.
+0	section	Talking to Gillie
+1	line	Gillie Groats	Hello, I'm Gillie the Milkmaid. What can I do for you?
+1	select	Select an option
+1	option	Who are you?
+1	option	Can you tell me how to milk a cow?
+1	option	Can you share what makes your cows so productive?
+2	line	Player	Can you share what makes your cows so productive?
+2	line	Gillie Groats	Absolutely! The secret is happiness.
+2	line	Player	Happiness?
+2	line	Gillie Groats	The cows make the best milk when they're happy, and to be honest, they make too much!
+2	line	Gillie Groats	I'm always glad that adventurers come by and help with milking them. I wouldn't be able to keep up otherwise.
+2	line	Player	That can't be everything though, can it?
+2	line	Gillie Groats	Come to think of it, I'm sure my father keeps a few tricks up his sleeve. Why don't you go and ask him?
+2	cond	If the player has not yet talked to Seth Groats:
+3	line	Player	That would be Seth, wouldn't it?
+3	line	Gillie Groats	It would be! I'm sure he'll he happy to share some information with you.
+3	line	Player	I'll go and speak to him now, thank you!
+3	action	end
+2	cond	If the player has already talked to Seth Groats:
+3	line	Player	I've already had a chance to talk to him. He did indeed have some tricks to share!
+3	line	Gillie Groats	That's good. You must be ready to care for your own cows at this point!
+3	line	Player	If you think so, then I must be. Thank you for your help, I'll make sure that knowledge is put to good use.
+3	action	end
+1	option	I'm fine, thanks.
+0	section	Talking to Seth
+1	line	Seth Groats	Well well, what can I do for you?
+1	line	Player	I was wondering if you could teach me a little about how you're so successful with your animals.
+1	line	Seth Groats	Lookin' to get into the business, eh?
+1	line	Player	Something along those lines.
+1	line	Seth Groats	Well, always happy to help another budding farmer out!
+1	line	Player	Great! So where do I start?
+1	line	Seth Groats	Would always recommend me Groats Principles as yer basics.
+1	line	Player	Groats Principles?
+1	line	Seth Groats	Aye. First one is that happy animals makes happy farmers.
+1	line	Seth Groats	Second of me principles is to never take more than you need. Greed'll stop you in your tracks.
+1	line	Seth Groats	The last principle: never let the taxman know yer earnings. Money should be spent on the animals!
+1	cond	ironman]]:
+2	line	Player	I don't think I've ever paid any taxes.
+2	line	Seth Groats	You're ahead of the game then!
+2	action	continues
+1	cond	If the player is not an ironman:
+2	line	Player	You've found a way to get around the taxes?
+2	line	Seth Groats	A way or two.
+2	action	continues
+1	line	Seth Groats	Anyway, feel free to grab me book on the topic from the shelf over there.
+1	line	Player	Okay, thank you for the help.
+1	action	end
+0	section	Searching the shelf
+1	cond	Before learning about the book or while having the book already:
+2	option	Dialogue 1
+2	option	Dialogue 2
+2	action	end
+1	cond	Without free inventory space:
+2	box	You find Seth's book on the shelf, but don't have room to take it with you.
+2	action	end
+1	cond	With free inventory space:
+2	box	You find Seth's book of principles on the shelf.
+2	action	end
+0	section	Talking to Seth again
+1	line	Seth Groats	Well well, what can I do for you?
+1	line	Player	I was wondering if you could teach me a little about how you're so successful with your animals.
+1	line	Seth Groats	Mmm we already had this talk. Go read me book on the shelf over there.
+2	line	Player	I'll go grab it, thanks.
+2	action	end
+2	line	Player	I've actually got it here, I'll take it away and give it a read somewhere a little more peaceful.
+2	action	end
+0	section	Returning to Cassius
+1	line	Cassius	So, how did you get on?
+1	line	Player	I've learned a lot about how the Groats family care for their animals. They say the secret is happiness!
+1	line	Cassius	Happiness?! That can't be the only trick they use! Surely you found something else?
+2	line	Player	Now that you mention it, Seth did say he had a book that I... don't have on me right now.
+2	line	Cassius	The legendary Groats book on milk cultivation? I'm most interested! Go fetch it!
+2	action	end
+1	line	Player	I have this book from Seth. He claims it's got his principles of animal husbandry in it, if that's of any use?
+1	line	Cassius	Hand it here, quickly!
+1	box	Cassius snatches the book from your hands.
+1	line	Cassius	Now, this is most curious.
+1	line	Cassius	The idea that a happy animal will do what you want is frankly absurd. What if they choose to not produce. Are you supposed to respect that?
+1	line	Cassius	However, the writings on the systems of taxation are fascinating. I couldn't imagine Seth was smart enough to put this together.
+1	line	Player	So, do you think this is enough to start our milk empire?
+1	line	Cassius	No, no. Not quite yet. First of all, you haven't tried our milk yet, have you?
+1	line	Player	I don't think I have, no. You already have some milk?
+1	line	Cassius	Don't look so worried. Here, have a try.
+1	box	Cassius hands you a milk sample to try.
+1	action	end
+0	section	Destroying the milk sample
+1	box	Why would you want to destroy such good milk? Do you not wish to taste it?
+1	action	Continues with Destroy confirmation message
+0	section	Reclaiming the milk sample
+1	line	Player	I've managed to lose that sample of milk...
+1	cond	Without free inventory space:
+2	line	Cassius	I'll give you some more once you've got some space.
+2	action	end
+1	cond	With free inventory space:
+2	box	Cassius glares as he hands you another sample of milk.
+2	action	end
+0	section	Talking to Cassius before sampling the milk
+1	line	Cassius	Have you given that sample a try yet?
+1	action	end
+0	section	After sampling the milk
+1	line	Player	Oh, that's not good milk.
+1	action	The player coughs and is damaged for 1 Hitpoints with a poison hitsplat.
+1	line	Player	That's really not good milk.
+1	line	Cassius	So, what do you think? The milk is fantastic, isn't it?
+1	line	Player	It wasn't what I was expecting, certainly.
+1	line	Cassius	We're going to change the lactic landscape! Before we do though, I have another task for you.
+1	line	Player	Now what do you need?
+1	line	Cassius	We need... a permit.
+1	line	Player	Shouldn't you have got a permit before making milk?
+1	line	Cassius	The permit is to sell milk, not to make milk!
+1	line	Player	Fine, where are we going to get this permit?
+1	line	Cassius	From the Duke of Lumbridge! Where else? You need to bring him our milk and I'm sure he'll give us our permit without fuss.
+1	line	Player	Are you sure having the Duke drink our milk is a good idea?
+1	line	Cassius	Of course! Soon the whole of Lumbridge will be drinking my, I mean our milk!
+1	box	Cassius hands you a milk sample.
+1	action	end
+0	section	Attempting to drink the second sample
+1	line	Player	I don't think I'm ready to drink another vial of this stuff.
+1	line	Player	I should find someone else to give it to.
+1	action	end
+0	section	Talking to Cassius again
+1	line	Cassius	Has the Duke given us our permit yet?
+2	line	Player	Not yet, no. I could do with another sample of milk though, if you have one spare?
+2	line	Cassius	I should have one somewhere here. Just a moment.
+2	cond	Without free inventory space:
+3	line	Cassius	It looks like you don't have space to carry this. You'll have to grab it from me when you have room.
+3	action	end
+2	cond	With free inventory space:
+3	line	Cassius	I should have one somewhere here. Just a moment.
+3	box	Cassius hands you a milk sample.
+3	action	end
+2	line	Player	Not yet, no, but I am working on it!
+2	action	end
+0	section	Talking to the Duke
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	line	Player	Greetings. I come seeking a business permit.
+1	line	Duke Horacio	Oh wonderful! What sort of business are you looking to start?
+1	line	Player	I'm looking to get into the milk trade!
+1	line	Duke Horacio	Milk? Well, the Groats family still have their permit, and I can't start stepping on their toes.
+1	line	Player	If you'd just try this milk...
+1	line	Duke Horacio	I really couldn't possibly give you a permit without their approval. This is really their territory.
+1	line	Duke Horacio	Why not speak to Gillie Groats? She seems to handle the milk side of the business now. Maybe she'll get you set up under their permit.
+1	line	Player	You're the Duke. Couldn't you just grant a permit?
+1	line	Duke Horacio	No, no. It's really quite important you speak to Gillie about this.
+1	line	Player	Aren't you the highest power in this land?
+1	line	Duke Horacio	Don't go digging too deeply into that. Even I have some... commitments that I have to keep to.
+1	line	Player	But you're the Duke, you shouldn't need the approval of a business entity to grant a permit.
+1	line	Player	Not to mention, can't they just refuse to have any competitors?
+1	line	Duke Horacio	Well absolutely, but I'm sure you'll find they're more than reasonable about things.
+1	line	Duke Horacio	Entirely. Completely reasonable.
+1	action	end
+0	section	Talking to the Duke again
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	line	Player	Hi, what did you want me to do for the permit again?
+1	line	Duke Horacio	Go speak to Gillie Groats. She seems to handle the milk business in Lumbridge. Maybe she'll get you set up under their permit.
+1	line	Player	Thanks.
+1	action	end
+0	section	Talking to Gillie
+1	line	Gillie Groats	Hiya, did you need something else from me?
+1	line	Player	I did. I've been trying to secure a business permit from the Duke, but he said that as it is a milk-related business venture, I should speak to you instead.
+1	line	Gillie Groats	The Duke is a good man, directing you to me! I've been running the milk side of our farm for a while now.
+1	line	Gillie Groats	Were you thinking of being a competitor to us then?
+2	line	Player	I can prove we wouldn't be if you could just try this sample of...
+2	line	Gillie Groats	Sample of?
+2	line	Player	I seem to have misplaced my sample of milk. I'll be back when I have it.
+2	action	end
+2	line	Player	I think if you were to try this sample here you'd see we wouldn't be competing.
+2	line	Gillie Groats	You want me to drink a vial of mysterious liquid?
+2	line	Player	Well, it's not mysterious, it's milk!
+2	line	Gillie Groats	No, I think you should drink it, I'll know the quality of it from your reaction.
+2	line	Gillie Groats	It is just milk after all.
+2	line	Player	Would it convince you to help me with my permit?
+2	line	Gillie Groats	It definitely won't hurt your chances.
+2	action	end
+0	section	Talking to Gillie again
+1	line	Gillie Groats	Have you tried that milk sample yet?
+1	line	Player	Not yet. I really don't want to, but I guess I must.
+1	action	end
+0	section	Attempting to drink the sample while not next to Gillie
+1	line	Player	I shouldn't drink this unless I have Gillie nearby.
+1	action	end
+0	section	Drinking the second sample
+1	line	Player	Oh, that's worse milk than before.
+1	line	Gillie Groats	That looked like a horrible experience.
+1	line	Player	It wasn't pleasant.
+1	line	Gillie Groats	Where did you even get that milk?
+1	line	Player	My business partner, Cassius. I don't know where he gets it from originally though.
+1	line	Gillie Groats	Cassius... I don't recognise the name. He's not mentioned anything about its source?
+1	line	Player	Nothing, but he apparently has enough of a source to start a business. I'm mostly trying to be helpful.
+1	line	Player	If the milk's bad, you're not going to recommend us for a permit, are you?
+1	line	Gillie Groats	With how bad it looks, you wouldn't be any competition to us.
+1	line	Gillie Groats	However, I wonder if I'd be doing a public service by protecting anyone else from it.
+1	line	Player	Is there anything more I could do to convince you?
+1	line	Gillie Groats	Now that you mention it, I've had an incredibly aggressive bull disrupting my herd lately. I've got him caught in the pen over there.
+1	line	Gillie Groats	Perhaps you'd be interested in dealing with him? I'd owe you a fairly large favour.
+1	line	Player	A roughly permit sized favour?
+1	line	Gillie Groats	Absolutely.
+1	action	end
+0	section	Talking to Gillie again
+1	line	Gillie Groats	How are you getting on with the bull?
+1	line	Player	I'm getting there! He looks quite tough though.
+1	action	end
+0	section	Talking to Cassius
+1	line	Cassius	Has the Duke given us our permit yet?
+1	line	Player	It's become rather complicated, but I am working it out!
+1	action	end
+0	section	Facing the bull
+1	select	Release the bull?
+1	option	Yes.
+2	box	The bull enters. The cows scatter.
+2	action	end
+1	option	Yes, and don't ask again.
+2	box	The bull enters. The cows scatter.
+2	action	end
+1	option	No.
+2	action	end
+0	section	After killing Brutus
+1	box	You notice a strange tag float to the ground as the bull falls. It reads 'Brutus'.
+1	action	end
+0	section	Attempting to open the gate again
+1	line	Player	Brutus has already been dealt with.
+1	action	end
+0	section	Talking to Gillie
+1	line	Gillie Groats	You succeeded! I'll let the Duke know that you're all good to start a milk business.
+1	line	Player	I don't think that's going to be necessary anymore.
+1	line	Gillie Groats	Oh? What happened in that field?
+1	line	Player	That bull was Cassius' other business partner, Brutus.
+1	line	Player	I'm sure he won't be feeling particularly friendly once I let him know.
+1	line	Gillie Groats	That bull was one of the business partners?
+1	line	Gillie Groats	I wonder if his aggression is why Cassius' herd are producing such bad milk...
+1	line	Player	I'm starting to think Cassius doesn't even have his own herd.
+1	line	Gillie Groats	You think he's been stealing milk?
+1	line	Player	I'm not sure where else he would've been getting it from.
+1	line	Gillie Groats	Why don't you go and talk to him about it! He may appreciate knowing the Brutus was bad for business.
+1	action	end
+0	section	Talking to Gillie again
+1	line	Gillie Groats	Thank you once again for handling Brutus, he was causing quite a problem for my herd.
+1	line	Gillie Groats	And, if you haven't yet spoken to Cassius, you should probably let him know what's transpired.
+1	action	end
+0	section	Returning to Cassius
+1	line	Player	Cassius, I don't think we'll be getting our business permit.
+1	line	Cassius	Why? What's happened?
+1	line	Player	Brutus is dead.
+1	line	Cassius	Dead?
+1	line	Cassius	How could this have happened?
+1	line	Player	So the Duke asked me to... and then Gillie said that...
+1	line	Cassius	You?!
+1	line	Cassius	Don't tell me you killed Brutus and ruined my- our, plan?
+1	line	Player	In my defence, I had no idea that was Brutus! You made it sound like he was a business partner.
+1	line	Player	Not to mention, apparently his aggression was ruining Seth's herd's milk. This should be a good thing!
+1	line	Cassius	Ruining the milk? The unique flavour was what I was trying to sell!
+1	line	Cassius	You should leave. I can't even look at you.
+0	section	Post-quest
+0	section	Talking to Cassius
+1	box	Cassius makes a point of ignoring you.
+1	action	end
+0	section	Talking to Gillie
+1	line	Gillie Groats	Oh, just the person I wanted to see! I have something for you.
+1	cond	With a full inventory:
+2	line	Gillie Groats	Ah, your inventory is full. Can you make some room?
+2	action	end
+1	line	Gillie Groats	This is for helping out with that bull. Our cows are much happier these days.
+1	box	Gillie hands you an amulet with a bell on it.
+1	line	Gillie Groats	One of our local milk enjoyers gave us some enchanted cow bells.
+1	line	Gillie Groats	They seem to be quite versatile, enjoy!
+1	line	Player	Wow, thank you! I'll make sure to check it out.
+1	cond	With a full inventory:
+2	line	Gillie Groats	I also have something else for you but your inventory is full. Can you make some room?
+2	action	end
+1	cond	With free inventory space:
+2	line	Gillie Groats	I also have this for you!
+2	box	Gillie hands you a magical lamp.
+2	line	Player	Oh, thank you!
+2	action	end
+0	section	Talking to Gillie again if the player doesn't have the lamp and hasn't used it yet
+1	line	Gillie Groats	I have this for you!
+1	cond	With a full inventory:
+2	line	Gillie Groats	Ah, your inventory is full. Can you make some room?
+2	action	end
+1	box	Gillie hands you a magical lamp.
+1	line	Player	Oh, thank you!
+1	action	end
+0	section	Talking to Gillie without a cowbell amulet
+1	line	Player	I've lost that amulet you gave me...
+1	line	Gillie Groats	Oh, no worries, here's another.
+1	box	Gillie hands you an amulet with a bell on it.
+1	line	Player	Thank you so much!
+1	line	Gillie Groats	No problem.
+1	action	end
