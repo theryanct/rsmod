@@ -463,10 +463,12 @@ constructor(
         }
         if (key in agitated) {
             queueHit(1, HitType.Typeless, 1)
-            mes("<col=ff0000>${dialogue.section("If the bees are agitated too long").boxText()}</col>")
+            val text = dialogue.section("If the bees are agitated too long").boxText()
+            mes("<col=ff0000>$text</col>")
         } else if (random.of(0, 1) == 0) {
             agitated += key
-            mes("<col=ff0000>${dialogue.section("When the bees get agitated").boxText()}</col>")
+            val text = dialogue.section("When the bees get agitated").boxText()
+            mes("<col=ff0000>$text</col>")
         }
     }
 

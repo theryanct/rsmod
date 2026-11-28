@@ -15,8 +15,8 @@ internal object HunterData {
         /** Butterfly net (caught directly from the npc). */
         Net,
         /**
-         * Wasp swarm (The Birds and the Wasps): netted every tick with an insect net and a bee hat;
-         * npcs are the calm swarm then its furious variant. See `Wasps.kt`.
+         * Wasp swarm (The Birds and the Wasps): netted every tick with an insect net and a bee hat.
+         * The npcs are the calm swarm then its furious variant. See `Wasps.kt`.
          */
         Swarm,
     }
