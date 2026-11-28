@@ -2,6 +2,7 @@ package org.rsmod.content.skills.slayer
 
 import jakarta.inject.Inject
 import org.rsmod.api.combat.commons.npc.queueCombatRetaliate
+import org.rsmod.api.combat.commons.slayer.SlayerTaskResolver
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.player.features.slayerPointMultiplier
@@ -80,6 +81,7 @@ constructor(
     }
 
     override fun ScriptContext.startup() {
+        SlayerTaskResolver.install { player, npcTypeId -> isOnTask(player, npcTypeId) }
         for (master in SlayerData.masters) {
             val npc = SlayerNpcs.byName.getValue(master.npc)
             val ops = npcTypes[npc].op
@@ -213,7 +215,8 @@ constructor(
                 it.master == master.key &&
                     player.baseSlayerLvl >= it.slayerReq &&
                     player.combatLevel >= it.combatReq &&
-                    !player.isSlayerTaskBlocked(SlayerData.stableId(it.category))
+                    !player.isSlayerTaskBlocked(SlayerData.stableId(it.category)) &&
+                    player.unlockAllows(it)
             }
         if (eligible.isEmpty()) {
             startDialogue(npc) { chatNpc(neutral, "I don't have anything for you right now.") }
@@ -282,22 +285,52 @@ constructor(
             .toMap()
     }
 
+    /**
+     * Wiki "Slayer Rewards": tasks that need an unlock (any master: aviansie, lizardmen, red dragons,
+     * TzHaar; Chaeldar/Nieve/Duradel/Konar: vampyres; Nieve/Duradel/Konar: basilisks) and Stop the
+     * Wyvern, which stops Fossil Island wyvern tasks.
+     */
+    private fun Player.unlockAllows(task: SlayerData.Task): Boolean {
+        val master = task.master
+        val required =
+            when (task.category) {
+                "aviansie" -> WATCH_THE_BIRDIE_BIT
+                "lizardmen" -> REPTILE_GOT_RIPPED_BIT
+                "red dragons" -> SEEING_RED_BIT
+                "tzhaar" -> HOT_STUFF_BIT
+                "vampyres" -> if (master in VAMPYRE_UNLOCK_MASTERS) ACTUAL_VAMPYRE_SLAYER_BIT else null
+                "basilisks" -> if (master in BASILISK_UNLOCK_MASTERS) BASILOCKED_BIT else null
+                else -> null
+            }
+        if (required != null && !hasSlayerUnlock(required)) return false
+        if (task.category == "fossil island wyverns" && hasSlayerUnlock(STOP_THE_WYVERN_BIT)) return false
+        return true
+    }
+
+    /** Shared by kill credit and the black mask / slayer helmet combat boosts. */
+    private fun isOnTask(hero: Player, npcTypeId: Int): Boolean {
+        if (hero.slayerTaskCount <= 0) {
+            return false
+        }
+        val npcs = categoryNpcIds[hero.slayerTask] ?: return false
+        if (npcTypeId in npcs) {
+            return true
+        }
+        // A superior is on task whenever one of the monsters it replaces is (some, e.g. araxytes,
+        // sit in more than one category).
+        val superior = superiorsById[npcTypeId] ?: return false
+        return superior.normals.any { SlayerSuperiorNpcs.byName.getValue(it).id in npcs }
+    }
+
     private fun onKill(hero: Player, npc: Npc) {
         val count = hero.slayerTaskCount
         if (count <= 0) {
             return
         }
-        val npcs = categoryNpcIds[hero.slayerTask] ?: return
-        val superior = superiorsById[npc.id]
-        // A superior is on task whenever one of the monsters it replaces is (some, e.g. araxytes,
-        // sit in more than one category).
-        val onTask =
-            npc.id in npcs ||
-                (superior != null &&
-                    superior.normals.any { SlayerSuperiorNpcs.byName.getValue(it).id in npcs })
-        if (!onTask) {
+        if (!isOnTask(hero, npc.id)) {
             return
         }
+        val superior = superiorsById[npc.id]
         if (superior == null) {
             maybeSpawnSuperior(hero, npc)
         }
@@ -357,6 +390,17 @@ constructor(
 
     internal companion object {
         const val TASK_ROLL = 1_000_000
+        // slayer_unlock bits (slayer_unlocks.tsv).
+        const val WATCH_THE_BIRDIE_BIT = 17
+        const val HOT_STUFF_BIT = 18
+        const val REPTILE_GOT_RIPPED_BIT = 30
+        const val SEEING_RED_BIT = 34
+        const val STOP_THE_WYVERN_BIT = 43
+        const val BASILOCKED_BIT = 47
+        const val ACTUAL_VAMPYRE_SLAYER_BIT = 50
+        val VAMPYRE_UNLOCK_MASTERS = setOf("Chaeldar", "Nieve", "Duradel", "Konar")
+        val BASILISK_UNLOCK_MASTERS = setOf("Nieve", "Duradel", "Konar")
+
         /** slayer_unlock "Bigger and Badder". */
         const val BIGGER_AND_BADDER_BIT = 35
         /** Wiki: 1/200 per on-task kill with Bigger and Badder unlocked. */

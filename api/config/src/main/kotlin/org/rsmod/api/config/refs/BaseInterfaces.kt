@@ -37,7 +37,8 @@ object BaseInterfaces : InterfaceReferences() {
     val side_channels = find("side_channels", 1832628328)
     val settings_side = find("settings_side", 9223372036583730351)
     val prayerbook = find("prayerbook", 9223372034905333594)
-    val magic_spellbook = find("magic_spellbook", 1700349896)
+    // No hash: HomeTeleportEdits adds an op to one of its components (changes the hash).
+    val magic_spellbook = find("magic_spellbook")
     val friends = find("friends", 149140580)
     val account = find("account", 9223372036126485430)
     val logout = find("logout", 2003439444)

@@ -526,6 +526,47 @@ internal object FarmingData {
             "yanillian_hops",
         )
 
+    /** Items that make supercompost (Wiki "Supercompost" list; a regular item makes the bin compost). */
+    val supercompostables: List<String> =
+        listOf(
+            "avantoe",
+            "cadantine",
+            "calquat_fruit",
+            "coconut",
+            "coconut_shell",
+            "dragonfruit",
+            "dwarf_weed",
+            "ent_branch",
+            "unidentified_avantoe",
+            "unidentified_cadantine",
+            "unidentified_dwarf_weed",
+            "unidentified_kwuarm",
+            "unidentified_lantadyme",
+            "unidentified_snapdragon",
+            "unidentified_toadflax",
+            "unidentified_torstol",
+            "jangerberries",
+            "kwuarm",
+            "lantadyme",
+            "magic_roots",
+            "maple_roots",
+            "oak_roots",
+            "papaya",
+            "pineapple",
+            "snapdragon",
+            "snape_grass",
+            "tentipineapple",
+            "toadflax",
+            "torstol",
+            "watermelon",
+            "white_berries",
+            "willow_roots",
+            "yew_roots",
+        )
+
+    /** Wiki: a closed bin of supercompost takes about 90 minutes to rot. */
+    const val SUPER_ROT_MINUTES = 90
+
     /** Wiki: a closed bin of compost takes about 40 minutes to rot. */
     const val ROT_MINUTES = 40
 

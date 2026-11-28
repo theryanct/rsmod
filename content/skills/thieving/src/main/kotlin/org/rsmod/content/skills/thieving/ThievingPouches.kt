@@ -79,6 +79,8 @@ internal object Pouches {
             "pickpocket_coin_pouch_gnome" to (300 to 300),
             "pickpocket_coin_pouch_hero" to (200 to 300),
             "pickpocket_coin_pouch_elf" to (280 to 350),
+            "pickpocket_coin_pouch_vyre" to (230 to 315),
+            "pickpocket_coin_pouch_pirate" to (20 to 20),
         )
 
     private val byTitle: Map<String, String> =
@@ -117,6 +119,13 @@ internal object Pouches {
             "Gnome" to "gnome",
             "Gnome woman" to "gnome",
             "Hero" to "hero",
+            // thieving_extra.tsv targets.
+            "Vyre" to "vyre",
+            "Elf (Thieving)" to "elf",
+            "Elf (Prifddinas)" to "elf",
+            "Cave goblin (Dorgesh-Kaan)" to "cavegoblin",
+            "Fremennik citizen" to "fremennik",
+            "Pirate (Thieving)" to "pirate",
         )
 
     /** The pouch obj name a pickpocket target's coins come in, or null to keep plain coins. */

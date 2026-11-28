@@ -194,6 +194,10 @@ for r in recipes:
 for water, empty in (("Jug of water", "Jug"), ("Bucket of water", "Bucket"), ("Bowl of water", "Bowl")):
     emit("combine", water, "Soft clay", 1, 1, 0.0, 1, "-", empty, [("Clay", 1)])
 
+# Amethyst chisel products (Wiki Recipe templates; not in the recipe bucket).
+MANUAL = ['recipe\tchisel\tchisel\txbows_bolt_tips_amethyst\t15\t83\t60.0\t2\thuman_amethystcutting\t-\tamethyst\t1', 'recipe\tchisel\tchisel\tamethyst_arrowheads\t15\t85\t60.0\t2\thuman_amethystcutting\t-\tamethyst\t1', 'recipe\tchisel\tchisel\tamethyst_javelin_head\t5\t87\t60.0\t2\thuman_amethystcutting\t-\tamethyst\t1', 'recipe\tchisel\tchisel\tamethyst_dart_tip\t8\t89\t60.0\t2\thuman_amethystcutting\t-\tamethyst\t1']
+rows += [r for r in MANUAL if r not in rows]
+
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki recipe bucket by tools/skills/crafting_to_tsv.py - do not edit.\n")
     w.write("\n".join(sorted(rows, key=lambda r: (r.split("\t")[1], int(r.split("\t")[5]), r))) + "\n")

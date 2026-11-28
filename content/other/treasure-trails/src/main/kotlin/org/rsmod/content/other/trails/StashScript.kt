@@ -59,7 +59,8 @@ constructor(
     }
 
     private fun loadStashes(): List<Stash> {
-        val steps = ClueSteps.load(dbRows, names.dbTables)
+        // Only emote STASH data is read here, so no box / fight allowlists are needed.
+        val steps = ClueSteps.load(dbRows, names.dbTables, emptySet(), emptySet())
         val locNames = names.locs.entries.associate { (name, id) -> id to name }
         val out = ArrayList<Stash>()
         for (tier in listOf(ClueTier.Beginner, ClueTier.Easy)) {

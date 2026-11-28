@@ -4,7 +4,6 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.npc.interact.AiPlayerInteractions
-import org.rsmod.api.npc.opPlayer2
 import org.rsmod.api.player.hit.queueHit
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -70,8 +69,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   the druid pouch with them gives charges; using it on an invisible ghast makes it visible.
  * - Server varp `ns_progress` (65787): bit 0 fungus on the brown stone, bit 1 spell on the grey.
  *
- * Not here: swamp decay and the ghasts rotting food (Mort Myre hazards), the cosmetic Filliman
- * apparition animation. The Altar of nature's Pray-at is the Prayer module's.
+ * Swamp decay and the invisible ghasts' attacks are in [MortMyreHazards]. Not here: the cosmetic
+ * Filliman apparition animation. The Altar of nature's Pray-at is the Prayer module's.
  */
 class NatureSpirit
 @Inject
@@ -97,7 +96,6 @@ constructor(
 
     /** Each player's summoned Filliman apparition (outside the grotto). */
     private val apparitions = HashMap<Int, Npc>()
-    private val ghasts = HashMap<Int, Npc>()
 
     override fun ScriptContext.startup() {
         with(QuestTalk) {
@@ -133,7 +131,7 @@ constructor(
         onNpcOpLabel(npcTypes, NsNpcs.filliman, "Talk-to") { talkFilliman(it) }
         onOpNpcU(NsNpcs.filliman, NsObjs.mirror) { useMirror(it.npc) }
         onOpNpcU(NsNpcs.filliman, NsObjs.journal) { useJournal(it.npc) }
-        onNpcOpLabel(npcTypes, NsNpcs.spirit, "Talk-to") { talkSpirit(it) }
+        with(QuestTalk) { default(npcTypes, NsNpcs.spirit) { talkSpirit(it) } }
 
         onOpHeld1(NsObjs.bloom_spell) { castBloom(fromSickle = false) }
         onOpHeld1(NsObjs.sickle_blessed) { castBloom(fromSickle = true) }
@@ -270,6 +268,8 @@ constructor(
                     title = "Warning! Mort Myre is a dangerous ghast-infested swamp.",
                 )
             if (!enter) return
+        } else {
+            SwampDecay.cancel(player)
         }
         passThroughWall(gate)
     }
@@ -636,19 +636,12 @@ constructor(
             mesbox("You've not been told how to use this item yet.")
             return
         }
-        invDel(inv, NsObjs.pouch)
-        if (!carries(NsObjs.pouch)) invAdd(inv, NsObjs.pouch_empty)
-        val uid = player.uid.packed
-        val existing = ghasts[uid]
-        if (existing != null && existing.isSlotAssigned) {
+        if (hasGhastHunter()) {
             mes("A ghast is already hunting you!")
             return
         }
-        npcRepo.hide(ghast, GHAST_TICKS)
-        val visible = Npc(npcTypes[NsNpcs.ghast_vis], ghast.coords)
-        npcRepo.add(visible, GHAST_TICKS)
-        ghasts[uid] = visible
-        visible.opPlayer2(player, aiInteractions)
+        usePouchCharge()
+        summonVisibleGhast(ghast, npcRepo, npcTypes, aiInteractions)
         mes("The ghast is revealed!")
         delay(1)
     }
@@ -692,7 +685,6 @@ constructor(
         private const val UNDERGROUND_Z = 9000
         private const val BRIDGE_FAIL_ODDS = 4
         private const val APPARITION_TICKS = 200
-        private const val GHAST_TICKS = 200
         private const val BLOOM_TICKS = 100
         private const val FUNGUS_PLACED = 1
         private const val SPELL_PLACED = 2

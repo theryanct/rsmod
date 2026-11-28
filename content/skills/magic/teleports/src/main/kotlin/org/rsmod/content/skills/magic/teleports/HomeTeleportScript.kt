@@ -19,6 +19,7 @@ import org.rsmod.content.skills.magic.teleports.configs.home_tele_seqs
 import org.rsmod.content.skills.magic.teleports.configs.home_tele_spots
 import org.rsmod.content.skills.magic.teleports.configs.home_tele_varps
 import org.rsmod.events.EventBus
+import org.rsmod.game.type.interf.IfButtonOp
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.seq.SeqType
 import org.rsmod.game.type.spot.SpotanimType
@@ -40,7 +41,14 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
     private var Player.lastCastMinute by intVarp(home_tele_varps.last_cast)
 
     override fun ScriptContext.startup() {
-        onIfOverlayButton(home_tele_components.standard) { player.selectHomeTeleport() }
+        onIfOverlayButton(home_tele_components.standard) {
+            if (op == IfButtonOp.Op8) {
+                val gallery = HomeTeleportGallery.open
+                if (gallery != null) gallery(player) else player.mes("The gallery isn't loaded.")
+            } else {
+                player.selectHomeTeleport()
+            }
+        }
         onPlayerQueueWithArgs<Int>(home_tele_queues.stage) { runStage(it.args) }
         onPlayerLogin { player.clearCooldownIfDisabled() }
     }

@@ -36,7 +36,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - City teleports (wiki landing tiles).
  * - Low / high alchemy: 40% / 60% of the item's value in coins.
  * - Superheat item: ore -> bar (wiki smithing levels and xp; iron becomes steel with 2 coal).
- * - Bones to bananas, Lvl-1 (sapphire) and Lvl-2 (emerald) enchant.
+ * - Bones to bananas, Lvl-1 (sapphire) .. Lvl-7 (zenyte) enchant.
  * - Telekinetic Grab on a ground item (spell-on-obj via [OpObjTEvent]): within 10 tiles and in
  *   line of sight, projectile to the item, then it is taken into the inventory if still there.
  */
@@ -64,6 +64,11 @@ constructor(
         onItem(MagicUtilityComponents.superheat) { slot -> superheat(slot) }
         onItem(MagicUtilityComponents.enchant_1) { slot -> enchant(slot, level = 1) }
         onItem(MagicUtilityComponents.enchant_2) { slot -> enchant(slot, level = 2) }
+        onItem(MagicUtilityComponents.enchant_3) { slot -> enchantHigh(slot, level = 3) }
+        onItem(MagicUtilityComponents.enchant_4) { slot -> enchantHigh(slot, level = 4) }
+        onItem(MagicUtilityComponents.enchant_5) { slot -> enchantHigh(slot, level = 5) }
+        onItem(MagicUtilityComponents.enchant_6) { slot -> enchantHigh(slot, level = 6) }
+        onItem(MagicUtilityComponents.enchant_7) { slot -> enchantHigh(slot, level = 7) }
         onIfOverlayButton(MagicUtilityComponents.bones_bananas) { launch(player) { bonesToBananas() } }
         onEvent<OpObjTEvent> {
             if (component.isType(MagicUtilityComponents.telegrab)) {
@@ -240,6 +245,50 @@ constructor(
         } else {
             anim(MagicUtilitySeqs.enchant_2)
             spotanim(MagicUtilitySpots.enchant_2, height = 92)
+        }
+        invDel(inv, objTypes[target], 1, slot = slot)
+        invAdd(inv, into, 1, slot = slot)
+        magicXp(spell)
+        delay(2)
+    }
+
+    /** Enchant 3-7: ruby, diamond, dragonstone, onyx, zenyte jewellery (Wiki products). */
+    private suspend fun ProtectedAccess.enchantHigh(slot: Int, level: Int) {
+        val target = inv[slot] ?: return
+        val into =
+            MagicUtilityObjs.enchant_pairs.getValue(level).firstOrNull { (from, _) -> from.id == target.id }?.second
+        if (into == null) {
+            val gem = listOf("ruby", "diamond", "dragonstone", "onyx", "zenyte")[level - 3]
+            mes("This spell can only be cast on $gem amulets, necklaces, rings and bracelets.")
+            return
+        }
+        val spellObj =
+            when (level) {
+                3 -> MagicUtilitySpells.enchant_3
+                4 -> MagicUtilitySpells.enchant_4
+                5 -> MagicUtilitySpells.enchant_5
+                6 -> MagicUtilitySpells.enchant_6
+                else -> MagicUtilitySpells.enchant_7
+            }
+        val spell = cast(spellObj) ?: return
+        when (level) {
+            3 -> {
+                anim(MagicUtilitySeqs.enchant_3)
+                spotanim(MagicUtilitySpots.enchant_3, height = 92)
+            }
+            4 -> {
+                anim(MagicUtilitySeqs.enchant_4)
+                spotanim(MagicUtilitySpots.enchant_4, height = 92)
+            }
+            5 -> {
+                anim(MagicUtilitySeqs.enchant_5)
+                spotanim(MagicUtilitySpots.enchant_5, height = 92)
+            }
+            // Lvl-7 has no own visuals in the cache symbols; it reuses Lvl-6.
+            else -> {
+                anim(MagicUtilitySeqs.enchant_6)
+                spotanim(MagicUtilitySpots.enchant_6, height = 92)
+            }
         }
         invDel(inv, objTypes[target], 1, slot = slot)
         invAdd(inv, into, 1, slot = slot)
