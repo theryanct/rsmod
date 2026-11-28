@@ -40,8 +40,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * iron bars), 7 complete. Reward: 12,725 Smithing xp, 1 QP.
  *
  * Also: blurite rocks become mineable (Mining 10, 17.5 xp) if nothing else handles them. Not
- * done: Sir Vyvin catching the player at the cupboard. Reldo's Talk-to lives here for now (Shield
- * of Arrav will share it).
+ * done: Sir Vyvin catching the player at the cupboard. Reldo's Talk-to (state 1 -> 2) is in
+ * `reldo/Reldo.kt`, shared with Shield of Arrav.
  */
 class KnightsSword
 @Inject
@@ -57,9 +57,6 @@ constructor(
 
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, KnightsSwordNpcs.squire, "Talk-to") { talkSquire(it) }
-        for (reldo in KnightsSwordNpcs.reldos) {
-            onNpcOpLabel(npcTypes, reldo, "Talk-to") { talkReldo(it) }
-        }
         onNpcOpLabel(npcTypes, KnightsSwordNpcs.thurgo, "Talk-to") { talkThurgo(it) }
         onLocOpLabel(locTypes, KnightsSwordLocs.cupboard_shut, "Open") { openCupboard(it) }
         onLocOpLabel(locTypes, KnightsSwordLocs.cupboard_open, "Search") { searchCupboard() }
@@ -148,23 +145,6 @@ constructor(
             return true
         }
         return false
-    }
-
-    private suspend fun ProtectedAccess.talkReldo(npc: Npc) {
-        if (state != 1) {
-            startDialogue(npc) { chatNpc(neutral, "Hello stranger. Welcome to the library.") }
-            return
-        }
-        startDialogue(npc) {
-            chatPlayer(quiz, "What do you know about the Imcando dwarves?")
-            chatNpc(
-                neutral,
-                "The Imcando dwarves, you say? They were the world's most skilled smiths. A few " +
-                    "of them still live south of Port Sarim, I believe - near Mudskipper Point.",
-            )
-            chatNpc(neutral, "They're very fond of redberry pie, I hear.")
-        }
-        player.setQuestState(KNIGHTS_SWORD, 2)
     }
 
     private suspend fun ProtectedAccess.talkThurgo(npc: Npc) {
@@ -311,8 +291,6 @@ constructor(
 
 internal object KnightsSwordNpcs : NpcReferences() {
     val squire = find("squire")
-    /** Children of the `reldo` multinpc (the base has no ops). */
-    val reldos = listOf(find("reldo_normal"), find("reldo_withbook"))
     val thurgo = find("thurgo")
 }
 
