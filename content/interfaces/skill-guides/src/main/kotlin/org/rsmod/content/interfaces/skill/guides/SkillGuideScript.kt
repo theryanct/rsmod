@@ -26,7 +26,8 @@ import org.rsmod.plugin.scripts.ScriptContext
 class SkillGuideScript @Inject constructor(private val eventBus: EventBus) : PluginScript() {
     override fun ScriptContext.startup() {
         for ((button, skill) in guide_components.skillButtons) {
-            // 243 stats buttons: op1 "Toggle <skill> XP" (not handled yet), op2 "View <skill> guide".
+            // 243 stats buttons: op2 "View <skill> guide". op1 "Toggle <skill> XP" is set by
+            // stats_init on mobile clients only (desktop gets an empty op1), so nothing to handle.
             onIfOverlayButton(button) {
                 if (op == IfButtonOp.Op2) {
                     player.openGuide(skill)

@@ -19,8 +19,11 @@ object SkillGuideComponents : ComponentReferences() {
     /**
      * Stats tab buttons -> skill guide id (client enum 681: 1 attack .. 24 sailing), the first
      * argument of `skill_guide_v2_init`.
+     *
+     * A list, not a map: these refs are unresolved while this object initialises, so as map keys
+     * they all compare equal and collapsed into one entry (every button opened the sailing guide).
      */
-    val skillButtons: Map<ComponentType, Int> =
+    val skillButtons: List<Pair<ComponentType, Int>> =
         listOf(
                 "attack",
                 "strength",
@@ -48,5 +51,5 @@ object SkillGuideComponents : ComponentReferences() {
                 "sailing",
             )
             .withIndex()
-            .associate { (index, skill) -> find("stats:$skill") to index + 1 }
+            .map { (index, skill) -> find("stats:$skill") to index + 1 }
 }
