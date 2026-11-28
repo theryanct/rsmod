@@ -1,6 +1,7 @@
 package org.rsmod.content.other.windmill
 
 import jakarta.inject.Inject
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
@@ -56,7 +57,12 @@ class FlourMillScript @Inject constructor(private val locTypes: LocTypeList) : P
     private val ProtectedAccess.hopperLoaded: Boolean
         get() = player.vars[MillVarps.hopper] != 0
 
+    private fun ProtectedAccess.trace(step: String) {
+        GameplayLog.input(player) { "mill $step hopper=${player.vars[MillVarps.hopper]} flour=$flour" }
+    }
+
     private suspend fun ProtectedAccess.fillHopper() {
+        trace("fill")
         if (hopperLoaded) {
             mes("There is already grain in the hopper.")
             return
@@ -73,6 +79,7 @@ class FlourMillScript @Inject constructor(private val locTypes: LocTypeList) : P
     }
 
     private suspend fun ProtectedAccess.operate() {
+        trace("operate")
         anim(MillSeqs.operate)
         delay(1)
         if (!hopperLoaded) {
@@ -89,6 +96,7 @@ class FlourMillScript @Inject constructor(private val locTypes: LocTypeList) : P
     }
 
     private fun ProtectedAccess.emptyBin() {
+        trace("empty")
         if (flour <= 0) {
             mes("The flour bin is already empty. You need to place wheat in the hopper upstairs first.")
             return
