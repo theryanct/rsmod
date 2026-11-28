@@ -98,8 +98,8 @@ constructor(
         onNpcOpLabel(npcTypes, Ds1Npcs.wormbrain, "Talk-to") { talkWormbrain(it) }
         onNpcOpLabel(npcTypes, Ds1Npcs.klarense, "Talk-to") { talkKlarense(it) }
         with(QuestTalk) {
-            register(npcTypes, Ds1Npcs.ned, wants = { wantsNed() }) { talkNed(it) }
-            register(npcTypes, Ds1Npcs.duke, wants = { needsShield() }) {
+            register(npcTypes, Ds1Npcs.ned, DRAGON_SLAYER, wants = { wantsNed() }) { talkNed(it) }
+            register(npcTypes, Ds1Npcs.duke, DRAGON_SLAYER, wants = { needsShield() }) {
                 runQuestSection(it, dialogue, "Talking to Duke Horacio", shieldHooks())
             }
         }
