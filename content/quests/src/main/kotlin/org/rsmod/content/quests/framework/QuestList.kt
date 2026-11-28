@@ -33,6 +33,7 @@ import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.handinthesand.HandInTheSand.Companion.HAND_IN_THE_SAND
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
+import org.rsmod.content.quests.heroesquest.HeroesQuest.Companion.HEROES_QUEST
 import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
 import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
@@ -114,6 +115,7 @@ public object BuiltQuests {
             GRAND_TREE,
             HAND_IN_THE_SAND,
             HAZEEL_CULT,
+            HEROES_QUEST,
             HOLY_GRAIL,
             IDES_OF_MILK,
             IMP_CATCHER,
