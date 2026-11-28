@@ -39,5 +39,12 @@ internal object InvBuilds : InvBuilder() {
             protect = false
             size = 28
         }
+
+        // Custom: the tool belt (content/interfaces/tool-belt). Same size as the client's
+        // `tackle_box` inv, which the belt window draws from.
+        build("toolbelt") {
+            scope = InvScope.Perm
+            size = Constants.toolbelt_size
+        }
     }
 }

@@ -19,8 +19,8 @@ import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.woodcuttingLvl
+import org.rsmod.api.player.tools.bestTool
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.controller.ControllerRepository
 import org.rsmod.api.repo.loc.LocRepository
@@ -301,27 +301,13 @@ constructor(
         private val UnpackedLocType.hasDespawnTimer: Boolean
             get() = hasParam(params.despawn_time)
 
-        fun findAxe(player: Player, objTypes: ObjTypeList): InvObj? {
-            val worn = player.wornAxe(objTypes)
-            val carried = player.carriedAxe(objTypes)
-            if (worn != null && carried != null) {
-                if (objTypes[worn].axeWoodcuttingReq >= objTypes[carried].axeWoodcuttingReq) {
-                    return worn
-                }
-                return carried
-            }
-            return worn ?: carried
-        }
-
-        private fun Player.wornAxe(objTypes: ObjTypeList): InvObj? {
-            val righthand = righthand ?: return null
-            return righthand.takeIf { objTypes[it].isUsableAxe(woodcuttingLvl) }
-        }
-
-        private fun Player.carriedAxe(objTypes: ObjTypeList): InvObj? {
-            return inv.filterNotNull { objTypes[it].isUsableAxe(woodcuttingLvl) }
-                .maxByOrNull { objTypes[it].axeWoodcuttingReq }
-        }
+        /** Best usable axe: worn, carried or on the tool belt (highest Woodcutting requirement). */
+        fun findAxe(player: Player, objTypes: ObjTypeList): InvObj? =
+            player.bestTool(
+                objTypes,
+                usable = { it.isUsableAxe(player.woodcuttingLvl) },
+                rank = { it.axeWoodcuttingReq },
+            )
 
         private fun UnpackedObjType.isUsableAxe(woodcuttingLevel: Int): Boolean =
             isContentType(content.woodcutting_axe) && woodcuttingLevel >= axeWoodcuttingReq

@@ -13,8 +13,8 @@ import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.miningLvl
+import org.rsmod.api.player.tools.bestTool
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLocU
@@ -215,19 +215,13 @@ constructor(
         val UnpackedLocType.rockSuccessRates: Pair<Int, Int>
             get() = (rockSuccessRatesPacked shr 16) to (rockSuccessRatesPacked and 0xFFFF)
 
-        /** Best usable pickaxe: worn or carried, whichever has the higher Mining requirement. */
-        fun findPickaxe(player: Player, objTypes: ObjTypeList): InvObj? {
-            val worn = player.righthand?.takeIf { objTypes[it].isUsablePickaxe(player.miningLvl) }
-            val carried =
-                player.inv
-                    .filterNotNull { objTypes[it].isUsablePickaxe(player.miningLvl) }
-                    .maxByOrNull { objTypes[it].pickaxeLevelReq }
-            if (worn != null && carried != null) {
-                val wornReq = objTypes[worn].pickaxeLevelReq
-                return if (wornReq >= objTypes[carried].pickaxeLevelReq) worn else carried
-            }
-            return worn ?: carried
-        }
+        /** Best usable pickaxe: worn, carried or on the tool belt (highest Mining requirement). */
+        fun findPickaxe(player: Player, objTypes: ObjTypeList): InvObj? =
+            player.bestTool(
+                objTypes,
+                usable = { it.isUsablePickaxe(player.miningLvl) },
+                rank = { it.pickaxeLevelReq },
+            )
 
         private fun UnpackedObjType.isUsablePickaxe(miningLevel: Int): Boolean =
             isContentType(mining_content.pickaxe) && miningLevel >= pickaxeLevelReq

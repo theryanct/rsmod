@@ -8,10 +8,10 @@ import org.rsmod.api.player.events.interact.NpcEvents
 import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.agilityLvl
 import org.rsmod.api.player.stat.fishingLvl
 import org.rsmod.api.player.stat.strengthLvl
+import org.rsmod.api.player.tools.hasAnyTool
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc2
 import org.rsmod.api.script.onOpNpc3
@@ -147,12 +147,9 @@ constructor(
         return true
     }
 
-    private fun ProtectedAccess.hasTool(method: FishingMethod): Boolean {
-        val wielded = player.righthand
-        return method.tools.any { tool ->
-            tool in inv || (wielded != null && objTypes[tool].id == wielded.id)
-        }
-    }
+    /** Any of the method's tools, worn, carried or on the tool belt. */
+    private fun ProtectedAccess.hasTool(method: FishingMethod): Boolean =
+        player.hasAnyTool(method.tools)
 
     private fun ProtectedAccess.rollCatch(method: FishingMethod) {
         // Catches cascade: the highest-level fish the player can catch is rolled first, then the

@@ -5,8 +5,10 @@ import org.rsmod.api.config.refs.content
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.firemakingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.onOpHeldLabel
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -19,6 +21,7 @@ import org.rsmod.game.loc.LocShape
 import org.rsmod.game.obj.Obj
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.obj.ObjType
+import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
 import org.rsmod.plugin.scripts.PluginScript
@@ -35,12 +38,23 @@ constructor(
     private val xpMods: XpModifiers,
     private val invisibleLvls: InvisibleLevels,
     private val mapClock: MapClock,
+    private val objTypes: ObjTypeList,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         for (log in burnableLogs) {
             // Both directions: tinderbox -> logs and logs -> tinderbox.
             onOpHeldU(firemaking_objs.tinderbox, log.obj) { light(log) }
+            // "Light" on the logs (tool-belt material op): tinderbox carried or on the belt.
+            onOpHeldLabel(objTypes, log.obj, "Light") { lightWithTinderbox(log) }
         }
+    }
+
+    private suspend fun ProtectedAccess.lightWithTinderbox(log: BurnableLog) {
+        if (!player.hasTool(firemaking_objs.tinderbox)) {
+            mes("You need a tinderbox to light these logs.")
+            return
+        }
+        light(log)
     }
 
     private suspend fun ProtectedAccess.light(log: BurnableLog) {

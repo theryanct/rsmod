@@ -4,8 +4,8 @@ import org.rsmod.api.config.objParam
 import org.rsmod.api.config.refs.content
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.woodcuttingLvl
+import org.rsmod.api.player.tools.bestTool
 import org.rsmod.api.player.vars.boolVarBit
 import org.rsmod.api.player.vars.enumVarBitOrNull
 import org.rsmod.api.player.vars.typeCoordVarp
@@ -154,27 +154,13 @@ internal fun axeSuccessRates(
 
 internal val UnpackedObjType.axeWoodcuttingReq: Int by objParam(params.levelrequire)
 
-internal fun findAxe(player: Player, objTypes: ObjTypeList): InvObj? {
-    val worn = player.wornAxe(objTypes)
-    val carried = player.carriedAxe(objTypes)
-    if (worn != null && carried != null) {
-        if (objTypes[worn].axeWoodcuttingReq >= objTypes[carried].axeWoodcuttingReq) {
-            return worn
-        }
-        return carried
-    }
-    return worn ?: carried
-}
-
-private fun Player.wornAxe(objTypes: ObjTypeList): InvObj? {
-    val righthand = righthand ?: return null
-    return righthand.takeIf { objTypes[it].isUsableAxe(woodcuttingLvl) }
-}
-
-private fun Player.carriedAxe(objTypes: ObjTypeList): InvObj? {
-    return inv.filterNotNull { objTypes[it].isUsableAxe(woodcuttingLvl) }
-        .maxByOrNull { objTypes[it].axeWoodcuttingReq }
-}
+/** Best usable axe: worn, carried or on the tool belt (highest Woodcutting requirement). */
+internal fun findAxe(player: Player, objTypes: ObjTypeList): InvObj? =
+    player.bestTool(
+        objTypes,
+        usable = { it.isUsableAxe(player.woodcuttingLvl) },
+        rank = { it.axeWoodcuttingReq },
+    )
 
 private fun UnpackedObjType.isUsableAxe(woodcuttingLevel: Int): Boolean =
     isContentType(content.woodcutting_axe) && woodcuttingLevel >= axeWoodcuttingReq

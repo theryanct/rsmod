@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.modlevels
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.events.ToolBeltOpenRequest
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.script.onCommand
@@ -19,7 +20,8 @@ import org.rsmod.plugin.scripts.ScriptContext
 /**
  * "Bank anywhere" feature (default ON): right-click "Bank" on the inventory tab button (added to
  * the cache by [org.rsmod.content.interfaces.bank.configs.BankAnywhereEdits]) or `::bank` opens
- * the bank wherever the player is. Op3 "Sort" on the same button sorts the inventory.
+ * the bank wherever the player is. Op3 "Sort" on the same button sorts the inventory; op4
+ * "Tool belt" opens the tool belt.
  */
 class BankAnywhereScript
 @Inject
@@ -36,6 +38,7 @@ constructor(
                 when (op) {
                     IfButtonOp.Op2 -> player.bankAnywhere()
                     IfButtonOp.Op3 -> player.sortInventory()
+                    IfButtonOp.Op4 -> eventBus.publish(ToolBeltOpenRequest(player))
                     else -> Unit
                 }
             }
