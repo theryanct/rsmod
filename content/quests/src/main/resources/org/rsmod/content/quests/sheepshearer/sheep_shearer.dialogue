@@ -1,0 +1,162 @@
+# Generated from the OSRS Wiki page "Transcript:Sheep Shearer" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Fred the Farmer	What are you doing on my land? You're not the one who keeps leaving all my gates open and letting out all my sheep, are you?
+1	select	Select an option
+1	option	I'm looking for a quest.
+2	line	Player	I'm looking for a quest.
+2	cond	On quest speedrunning worlds:
+3	line	Fred the Farmer	You're after a quest, you say? Well I don't have any here.
+3	box	This quest is not available on Speedrunning Worlds.
+2	line	Fred the Farmer	You're after a quest, you say? Actually, I could do with a bit of help.
+2	line	Fred the Farmer	My sheep are getting mighty woolly. I'd be much obliged if you could shear them. And while you're at it, spin the wool for me too.
+2	line	Fred the Farmer	Yes, that's it. Bring me 20 balls of wool. And I'm sure I could sort out some sort of payment. Of course, there's the small matter of The Thing.
+2	action	If the player already has 20 balls of wool in their inventory:
+3	line	Player	In fact Fred, funnily enough, I actually have 20 balls of wool already on me.
+3	line	Fred the Farmer	Have you been shearing my sheep without permission!?
+3	line	Player	No! Well, maybe... They just looked a little wooly! Surely you like a shave once in a while, too?
+3	line	Fred the Farmer	It's rude to shave another person without permission - don't be coming at me with them shears!
+3	line	Player	I'm sorry, I'll ask permission next time.
+3	line	Fred the Farmer	I guess no real 'arm was done. Hand the balls over and we can put this whole thing behind us.
+3	action	end
+2	line	Player	What do you mean, The Thing?
+2	line	Fred the Farmer	Well now, no one has ever seen The Thing. That's why we call it The Thing, 'cos we don't know what it is.
+2	line	Fred the Farmer	Some say it's a black hearted shapeshifter, hungering for the souls of hard working decent folk like me. Others say it's just a sheep.
+2	line	Fred the Farmer	Well I don't have all day to stand around and gossip. Are you going to shear my sheep or what!
+2	select	Start the Sheep Shearer quest?
+2	option	Yes.
+3	line	Player	Yes, okay. I can do that.
+3	line	Fred the Farmer	Good! Now one more thing, do you actually know how to shear a sheep?
+3	line	Player	Err. No, I don't know actually.
+3	cond	If the player doesn't have shears:
+3	line	Fred the Farmer	Well, first things first, you need a pair of shears. I've got some here you can use.
+3	box	Fred gives you a set of sharp shears.
+4	line	Fred the Farmer	You just need to go and use them on the sheep out in my field.
+4	line	Player	Sounds easy!
+4	line	Fred the Farmer	That's what they all say!
+4	line	Fred the Farmer	Some of the sheep don't like it too much... Persistence is the key.
+4	line	Fred the Farmer	Once you've collected some wool you can spin it into balls.
+4	action	continues
+3	cond	If the player has shears already:
+4	line	Fred the Farmer	Well, you're half way there already! You have a set of shears in your inventory. Just use those on a Sheep to shear it.
+4	line	Player	That's all I have to do?
+4	line	Fred the Farmer	Well once you've collected some wool you'll need to spin it into balls.
+4	action	continues
+3	line	Fred the Farmer	Do you know how to spin wool?
+3	line	Player	I don't know how to spin wool, sorry.
+3	line	Fred the Farmer	Don't worry, it's quite simple!
+3	line	Fred the Farmer	The nearest Spinning Wheel can be found on the first floor of Lumbridge Castle.
+3	line	Fred the Farmer	To get to Lumbridge Castle just follow the road east.
+3	box	This icon denotes a Spinning Wheel on the world map.
+3	line	Player	Thank you!
+3	action	end
+2	option	No.
+3	line	Player	No, I'll give it a miss.
+3	line	Fred the Farmer	Suit yourself.
+3	action	end
+1	option	I'm looking for something to kill.
+1	option	I'm lost.
+0	section	Before delivering any balls of wool
+1	line	Fred the Farmer	What are you doing on my land?
+1	line	Player	I need to talk to you about shearing these sheep!
+1	line	Fred the Farmer	Oh. How are you doing getting those balls of wool?
+1	line	Player	How many more do I need to give you?
+1	line	Fred the Farmer	You need to collect 20 more balls of wool.
+1	line	Player	I haven't got any at the moment.
+1	line	Fred the Farmer	Ah well at least you haven't been eaten. You know what you're doing, right?
+1	select	Select an option
+1	option	How do I shear sheep, again?
+2	line	Player	How do I shear sheep, again?
+2	cond	If the player has shears:
+3	line	Fred the Farmer	Well, you're half way there already! You have a set of shears in your inventory. Just use those on a Sheep to shear it.
+3	line	Player	That's all I have to do?
+3	line	Fred the Farmer	Well once you've collected some wool you'll need to spin it into balls.
+3	action	continues
+2	cond	If the player does not have shears:
+3	line	Fred the Farmer	Well, first things first, you need a pair of shears. I've got some here you can use.
+3	line	Fred the Farmer	You just need to go and use them on the sheep out in my field.
+3	line	Player	Sounds easy!
+3	line	Fred the Farmer	That's what they all say!
+3	line	Fred the Farmer	Some of the sheep don't like it too much... Persistence is the key.
+3	line	Fred the Farmer	Once you've collected some wool you can spin it into balls.
+3	action	continues
+2	line	Fred the Farmer	Do you know how to spin wool?
+2	option	Yes, I know how to spin wool.
+3	line	Player	Yes, I know how to spin wool.
+3	line	Fred the Farmer	Great!
+3	action	end
+2	option	I don't know how to spin wool, sorry.
+3	line	Player	I don't know how to spin wool, sorry.
+3	action	above
+1	option	Remind me how to spin wool.
+2	line	Player	Remind me how to spin wool.
+2	line	Fred the Farmer	The nearest Spinning Wheel can be found on the first floor of Lumbridge Castle.
+2	line	Fred the Farmer	To get to Lumbridge Castle just follow the road east.
+2	box	This icon denotes a Spinning Wheel on the world map.
+2	line	Player	Thank you!
+2	action	end
+1	option	Yeah, I think so.
+2	line	Player	Yeah, I think so.
+2	line	Fred the Farmer	You can get to it, then!
+2	action	end
+0	section	With regular wool
+1	line	Fred the Farmer	What are you doing on my land?
+1	line	Player	I need to talk to you about shearing these sheep!
+1	line	Fred the Farmer	Oh. How are you doing getting those balls of wool?
+1	line	Player	How many more do I need to give you?
+1	line	Fred the Farmer	You need to collect 20 more balls of wool.
+1	line	Player	I've got some wool. I've not managed to make it into a ball though.
+1	line	Fred the Farmer	Well go find a spinning wheel then. You can find one on the first floor of Lumbridge Castle, just walk east on the road outside my house and you'll find Lumbridge.
+1	action	end
+0	section	Attempting to shear The Thing
+1	action	end
+0	section	Handing in any balls of wool
+1	line	Fred the Farmer	What are you doing on my land?
+1	line	Player	I need to talk to you about shearing these sheep!
+1	line	Fred the Farmer	Oh. How are you doing getting those balls of wool?
+1	line	Player	I have some.
+1	line	Fred the Farmer	Give 'em here then.
+1	box	You give Fred [1-19] [ball/balls] of wool.
+1	line	Player	That's all I've got so far.
+1	line	Fred the Farmer	I need [1-19] more before I can pay you.
+1	line	Player	Ok I'll work on it.
+1	action	end
+0	section	After interacting with the The Thing
+1	line	Fred the Farmer	What are you doing on my land?
+1	select	Select an option
+1	option	I need to talk to you about shearing these sheep!
+2	line	Player	I need to talk to you about shearing these sheep!
+2	line	Fred the Farmer	Oh. How are you doing getting those balls of wool?
+2	line	Player	I have some.
+2	line	Fred the Farmer	Give 'em here then.
+2	box	You give Fred [1-19] [ball/balls] of wool.
+2	line	Player	That's all I've got so far.
+2	line	Fred the Farmer	I need [#] more before I can pay you.
+2	line	Player	Ok I'll work on it.
+2	action	end
+1	option	Fred! Fred! I've seen The Thing!
+2	line	Player	Fred! Fred! I've seen The Thing!
+2	line	Fred the Farmer	You ... you actually saw it?
+2	line	Fred the Farmer	Run for the hills! {player} grab as many chickens as you can! We have to ...
+2	line	Player	Fred!
+2	line	Fred the Farmer	... flee! Oh, woe is me! The shapeshifter is coming! We're all ...
+2	line	Player	FRED!
+2	line	Fred the Farmer	... doomed. What!
+2	line	Player	It's not a shapeshifter or any other kind of monster!
+2	line	Fred the Farmer	Well then what is it?
+2	line	Player	Well ... it's just two Penguins; Penguins disguised as a sheep.
+2	line	Fred the Farmer	...
+2	line	Fred the Farmer	Have you been out in the sun too long?
+2	action	end
+0	section	Finishing up
+1	line	Fred the Farmer	What are you doing on my land?
+1	select	Select an option
+1	option	I need to talk to you about shearing these sheep!
+2	line	Player	I need to talk to you about shearing these sheep!
+2	line	Fred the Farmer	Oh. How are you doing getting those balls of wool?
+2	line	Player	I have some.
+2	line	Fred the Farmer	Give 'em here then.
+2	line	Player	That's the last of them.
+2	line	Fred the Farmer	I guess I'd better pay you then.
+2	action	end
+1	option	Fred! Fred! I've seen The Thing!
+2	action	above
