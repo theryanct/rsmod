@@ -1328,3 +1328,26 @@ coords = '1_41_63_13_12'
 [[spawn]]
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
+
+# Spirits of the Elid: the cave's golems (one outside each door), the target over the north
+# channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
+# (Ryan-test).
+[[spawn]]
+npc = 'elid_golem_white'
+coords = '0_52_149_37_9'
+
+[[spawn]]
+npc = 'elid_golem_grey'
+coords = '0_52_149_43_11'
+
+[[spawn]]
+npc = 'elid_golem_black'
+coords = '0_52_149_41_20'
+
+[[spawn]]
+npc = 'elid_ranging_target_multinpc'
+coords = '0_52_149_50_22'
+
+[[spawn]]
+npc = 'elid_genie'
+coords = '0_52_145_43_38'
