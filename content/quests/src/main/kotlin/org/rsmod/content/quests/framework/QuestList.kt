@@ -25,6 +25,7 @@ import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_R
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
+import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
@@ -60,6 +61,7 @@ public object BuiltQuests {
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
+            SEA_SLUG,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
             VAMPYRE_SLAYER,
