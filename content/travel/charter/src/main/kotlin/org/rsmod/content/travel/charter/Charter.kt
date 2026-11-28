@@ -75,7 +75,7 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
         val route = pickRoute(routes) ?: return
         val dest = destinations.getValue(route.to)
         val arrival = collision.nearestWalkable(CoordGrid(dest.x, dest.z, 0))
-        sailTo(arrival, route.coins, "You pay ${route.coins} coins and board the ship to ${dest.name}.")
+        sailTo(arrival, route.coins, "You pay ${route.coins} coins and board the ship to ${dest.name}.", collision)
     }
 
     /** OSRS shows a map; here the destinations page through choice dialogs (4 per page + More). */
