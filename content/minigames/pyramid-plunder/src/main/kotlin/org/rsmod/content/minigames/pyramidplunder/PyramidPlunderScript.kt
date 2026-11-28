@@ -8,7 +8,6 @@ import org.rsmod.api.npc.interact.AiPlayerInteractions
 import org.rsmod.api.npc.opPlayer2
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.baseThievingLvl
 import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifOpenOverlay
@@ -24,6 +23,7 @@ import org.rsmod.api.script.onOpLoc3
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.script.onPlayerLogout
+import org.rsmod.api.script.onPlayerQueue
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.builders.map.npc.MapNpcSpawnBuilder
@@ -32,6 +32,7 @@ import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.events.EventBus
@@ -75,7 +76,6 @@ constructor(
     private val npcTypes: NpcTypeList,
     private val objRepo: ObjRepository,
     private val aiInteractions: AiPlayerInteractions,
-    private val protectedAccess: ProtectedAccessLauncher,
 ) : PluginScript() {
     private class Room(
         val entry: CoordGrid,
@@ -138,6 +138,7 @@ constructor(
         bind(PpLocs.tomb_exit, 2) { leave(timeout = false) }
         bind(PpLocs.antechamber_exit, 1) { telejump(OUTSIDE) }
         onPlayerSoftTimer(PpTimers.tick) { player.runTick() }
+        onPlayerQueue(PpQueues.eject) { telejump(OUTSIDE) }
         onPlayerLogout { player.endRun() }
     }
 
@@ -254,7 +255,7 @@ constructor(
             mes("Your time in the tombs is up!")
             endRun()
             // Out through the north door (Wiki).
-            protectedAccess.launchLenient(this) { telejump(OUTSIDE) }
+            strongQueue(PpQueues.eject, 1)
         }
     }
 
@@ -648,4 +649,9 @@ internal object PpNpcSpawns : MapNpcSpawnBuilder() {
     override fun onPackMapTask() {
         resourceFile<PpNpcSpawns>("npcs.toml")
     }
+}
+
+internal object PpQueues : QueueReferences() {
+    /** Custom (ui range 65303): out through the north door when the run times out. */
+    val eject = find("ntk_plunder_eject")
 }
