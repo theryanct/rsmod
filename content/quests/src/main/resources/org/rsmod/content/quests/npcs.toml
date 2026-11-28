@@ -1655,3 +1655,145 @@ coords = '0_47_81_25_23'
 [[spawn]]
 npc = 'soulbane_brana'
 coords = '1_46_81_28_30'
+
+# The Birds and the Wasps: Farmer Bea by her equipment crate (Wiki 3316,3376), the bee dealer by
+# the Grand Exchange's east entrance (Wiki 3187,3493), and Bea's farm creatures (multinpc bases:
+# shown by the quest's varbits). Wasps and honey buzzards by the southern hive (3316,3365), killer
+# wasps and black honey buzzards by the new hives (3301,3386); exact tiles authored.
+[[spawn]]
+npc = 'baw_bea_multi'
+coords = '0_51_52_52_49'
+
+[[spawn]]
+npc = 'baw_bee_dealer_multi'
+coords = '0_49_54_51_37'
+
+[[spawn]]
+npc = 'baw_wasp_1_multi'
+coords = '0_51_52_50_34'
+
+[[spawn]]
+npc = 'baw_wasp_2_multi'
+coords = '0_51_52_53_35'
+
+[[spawn]]
+npc = 'baw_wasp_3_multi'
+coords = '0_51_52_56_38'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_48_34'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_54_33'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_51_31'
+
+[[spawn]]
+npc = 'baw_honey_buzzard_multi'
+coords = '0_51_52_56_41'
+
+[[spawn]]
+npc = 'baw_killer_wasp_1_multi'
+coords = '0_51_52_35_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_2_multi'
+coords = '0_51_52_39_55'
+
+[[spawn]]
+npc = 'baw_killer_wasp_3_multi'
+coords = '0_51_52_38_60'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_52_62'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_40_54'
+
+[[spawn]]
+npc = 'baw_black_honey_buzzard_multi'
+coords = '0_51_52_34_58'
+
+# Pandemonium: Will and Anne on the Port Sarim docks (shown for sailing_intro 0-14).
+[[spawn]]
+npc = 'sailing_intro_will_sarim'
+coords = '0_47_50_16_8'
+
+[[spawn]]
+npc = 'sailing_intro_anne_sarim'
+coords = '0_47_50_17_9'
+
+# Pandemonium: Ribs in the pub, Old Grog by the bar (shown for sailing_intro 40-46).
+[[spawn]]
+npc = 'sailing_intro_ribs'
+coords = '0_47_46_43_30'
+
+[[spawn]]
+npc = 'sailing_intro_grog'
+coords = '0_47_46_39_23'
+
+# Pandemonium: Junior Jim at the shipyard (shown for sailing_intro 28-32), beside the tool crates.
+[[spawn]]
+npc = 'junior_jim_shipyard'
+coords = '0_32_42_37_33'
+
+# Pandemonium: the port masters by the Port Sarim and Pandemonium ledger tables.
+[[spawn]]
+npc = 'port_task_master_port_sarim'
+coords = '0_47_49_21_58'
+
+[[spawn]]
+npc = 'port_task_master_pandemonium'
+coords = '0_47_46_54_41'
+
+# Crab Quest: the crab on Dognose Island's beach (shown for crab_main 5-40 and 63) and at
+# practice (45-60). Authored positions beside the strange bottle (3055,2639).
+[[spawn]]
+npc = 'crab_maincrab'
+coords = '0_47_41_48_14'
+
+[[spawn]]
+npc = 'crab_maincrab_practising'
+coords = '0_47_41_44_14'
+
+# In Search of the Myreque: npcs the world spawns lack. Authored placements (Ryan-test).
+# Vanstrom Klause in the Canifis pub
+[[spawn]]
+npc = 'route_vanstrom_klause_sitting'
+coords = '0_54_54_35_17'
+
+# the Stranger who replaces him
+[[spawn]]
+npc = 'canafis_stranger'
+coords = '0_54_54_37_16'
+
+# Veliaf in the Myreque hideout
+[[spawn]]
+npc = 'route_veliaf_hurtz_parent'
+coords = '0_54_153_49_44'
+
+# Ivan Strom
+[[spawn]]
+npc = 'route_ivan_strom_parent'
+coords = '0_54_153_51_48'
+
+# Harold Evans
+[[spawn]]
+npc = 'route_harold_evans'
+coords = '0_54_153_55_41'
+
+# Sani Piliu
+[[spawn]]
+npc = 'route_sani_piliu'
+coords = '0_54_153_46_41'
+
+# Family Crest: Chronozon by the Earth Obelisk, Edgeville Dungeon (Wiki LocLine 3087,9937; Ryan-test).
+[[spawn]]
+npc = 'chronozon'
+coords = '0_48_155_15_17'
