@@ -1136,3 +1136,18 @@ coords = '0_42_154_10_15'
 [[spawn]]
 npc = 'elem1_qip_earth_elemental_rock_version_rock'
 coords = '0_42_154_11_26'
+
+# Tower of Life: Effigy (multinpc on tol_prog; dbrow quest_toweroflife startcoord).
+[[spawn]]
+npc = 'tol_npc_efergy01_multi'
+coords = '0_41_50_16_19'
+
+# Tower of Life: the caged Homunculus, top floor by the cage (multinpc on tol_prog).
+[[spawn]]
+npc = 'tol_homonculus_multi'
+coords = '3_41_50_25_19'
+
+# Tower of Life: the freed Homunculus in the basement, north of the ladder (tol_homonc_pres).
+[[spawn]]
+npc = 'tol_homonculus_multi2'
+coords = '0_47_68_30_28'
