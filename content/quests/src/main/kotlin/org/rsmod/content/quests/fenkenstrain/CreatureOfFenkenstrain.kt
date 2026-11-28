@@ -134,7 +134,7 @@ constructor(
             val exact = type.name.equals("Furnace", ignoreCase = true)
             val smelts = type.op.any { it.equals("Smelt", true) || (exact && it.equals("Use", true)) }
             if (!smelts) continue
-            onOpLocU(type, FenkObjs.silver_bar) { castConductor() }
+            // Silver bar on a furnace is Crafting's (silver jewellery); the quest uses the mould.
             onOpLocU(type, FenkObjs.mould) { castConductor() }
         }
         onLocOpLabel(locTypes, FenkLocs.conductor_broken, "Repair") { repairConductor() }
@@ -606,7 +606,7 @@ constructor(
 
     private fun ProtectedAccess.castConductor() {
         if (!carries(FenkObjs.mould) || !carries(FenkObjs.silver_bar)) {
-            mes("You need a silver bar and the conductor mould to cast a conductor.") // Authored.
+            mes("You need a silver bar to cast a conductor in this mould.") // Authored (not Wiki).
             return
         }
         invReplace(inv, FenkObjs.silver_bar, 1, FenkObjs.conductor)
