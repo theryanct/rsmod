@@ -170,7 +170,8 @@ constructor(
             SlayerData.tasks.filter {
                 it.master == master.key &&
                     player.baseSlayerLvl >= it.slayerReq &&
-                    player.combatLevel >= it.combatReq
+                    player.combatLevel >= it.combatReq &&
+                    !player.isSlayerTaskBlocked(SlayerData.stableId(it.category))
             }
         if (eligible.isEmpty()) {
             startDialogue(npc) { chatNpc(neutral, "I don't have anything for you right now.") }
