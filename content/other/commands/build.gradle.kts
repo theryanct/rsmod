@@ -5,6 +5,7 @@ plugins {
 dependencies {
     implementation(libs.fastutil)
     implementation(libs.simmetrics.core)
+    implementation(projects.api.account)
     implementation(projects.api.db)
     implementation(projects.api.dbGateway)
     implementation(projects.api.pluginCommons)

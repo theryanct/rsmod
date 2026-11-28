@@ -20,7 +20,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - `rsmod-server.update` (optional body: seconds, default 120): starts the real "System update
  *   in: m:ss" countdown + a game-message broadcast. At 0 the existing update flow logs everyone out
  *   (saving them); once nobody is left the process exits so the server loop rebuilds/restarts.
- *   An empty or `0` body cancels a running countdown.
+ *   `now` = save everyone and exit right away (1 cycle). `0` cancels a running countdown.
  * - `rsmod-server.cmd` (one word): allow-listed, read-only dumps only. `status` writes
  *   `.data/logs/server-status.txt`.
  * Each file is deleted once read.
@@ -51,7 +51,11 @@ constructor(
     }
 
     private fun handleUpdate(body: String) {
-        val seconds = body.trim().ifEmpty { "$DEFAULT_SECONDS" }.toIntOrNull() ?: DEFAULT_SECONDS
+        val trimmed = body.trim().lowercase()
+        // "now": immediate graceful save + exit (the countdown path with the shortest timer).
+        val seconds =
+            if (trimmed == "now") 1
+            else trimmed.ifEmpty { "$DEFAULT_SECONDS" }.toIntOrNull() ?: DEFAULT_SECONDS
         if (seconds <= 0) {
             if (update.state != GameUpdate.State.Updating) update.clear()
             exitArmed = false
