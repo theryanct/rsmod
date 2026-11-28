@@ -69,7 +69,7 @@ SKIP = re.compile(
     r"crunch|batta|gnomebowl|bowl \(|half baked|half made|unfinished|chambers of xeric|pysk|suphi|"
     r"leckish|brawk|mycil|roqed|kyren|undead|cocktail|drunk dragon|saturday|blurberry|"
     r"wizard blizzard|short green|fruit blast|pineapple punch|chocolate saturday|soda ash|"
-    r"barley malt|sinew|karambwanji|swamp paste|easter|guide cake|nettle|damiana|mystery meat|"
+    r"barley malt|sinew|karambwanji|swamp paste|easter|guide cake|damiana|mystery meat|"
     r"impaler|ugthanki|kebab|spider|chompy|toad|worm|mud pie|thin snail|lean snail|fat snail|"
     r"pitta|jubbly|giant crab|red crab|moss lizard|bream|paddlefish|larupia|graahk|kyatt|"
     r"pyre fox|sunlight antelope|moonlight antelope|dashing kebbit|barb-tailed|wild kebbit|"
