@@ -6,7 +6,10 @@ import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.config.refs.spotanims
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.events.interact.NpcEvents
+import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.invAddGathered
+import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.thievingLvl
 import org.rsmod.api.repo.loc.LocRepository
@@ -20,6 +23,7 @@ import org.rsmod.api.script.onOpNpc2
 import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.script.onOpNpc4
 import org.rsmod.api.script.onOpNpc5
+import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.thieving.ThievingData.Loot
 import org.rsmod.content.skills.thieving.ThievingData.Pickpocket
@@ -43,6 +47,11 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - **Stalls**: no failure roll (guard aggro is not modelled yet); a theft gives xp and a weighted
  *   loot roll, then the stall turns into its region's empty stall for the respawn time, or - when
  *   there is no empty variant - simply can't be stolen from until then.
+ *
+ * Auto-repeat thieving (feature toggle, default on): after a successful pickpocket the same npc
+ * is pickpocketed again (until a stun, the npc leaves reach or dies, the inventory fills, or the
+ * player walks or clicks); after a theft the player waits and steals again when that stall has
+ * restocked.
  *
  * The op slot is whichever slot the npc/loc type labels "Pickpocket" / "Steal-from" (any
  * spelling of "steal from"); same-name variants of listed pickpocket targets are bound too.
@@ -91,11 +100,11 @@ constructor(
                 // Labels vary by stall: "Steal-from", "Steal-From", "Steal from" (Draynor seeds).
                 val op = locTypes[loc].op.indexOfFirst { it?.normalizedOp() == "steal from" }
                 when (op + 1) {
-                    1 -> onOpLoc1(loc) { steal(it.loc, stall, empty) }
-                    2 -> onOpLoc2(loc) { steal(it.loc, stall, empty) }
-                    3 -> onOpLoc3(loc) { steal(it.loc, stall, empty) }
-                    4 -> onOpLoc4(loc) { steal(it.loc, stall, empty) }
-                    5 -> onOpLoc5(loc) { steal(it.loc, stall, empty) }
+                    1 -> onOpLoc1(loc) { steal(it.loc, stall, empty, 1) }
+                    2 -> onOpLoc2(loc) { steal(it.loc, stall, empty, 2) }
+                    3 -> onOpLoc3(loc) { steal(it.loc, stall, empty, 3) }
+                    4 -> onOpLoc4(loc) { steal(it.loc, stall, empty, 4) }
+                    5 -> onOpLoc5(loc) { steal(it.loc, stall, empty, 5) }
                     else -> {
                         unboundStalls++
                         continue
@@ -104,6 +113,10 @@ constructor(
                 stalls++
             }
         }
+        onPlayerQueueWithArgs<PickpocketTarget>(ThievingQueues.pickpocket_repeat) {
+            repeatPickpocket(it.args)
+        }
+        onPlayerQueueWithArgs<StallTarget>(ThievingQueues.stall_repeat) { repeatStall(it.args) }
         logger.info {
             "Thieving: pickpocket on $listedNpcs listed + $extraNpcs same-name npc types, " +
                 "$stalls stall loc types ($unboundStalls without a steal op)."
@@ -135,16 +148,16 @@ constructor(
             }
         if (eventBus.contains(bound, type.id)) return false
         when (op) {
-            1 -> onOpNpc1(type) { pickpocket(it.npc, pickpocket) }
-            2 -> onOpNpc2(type) { pickpocket(it.npc, pickpocket) }
-            3 -> onOpNpc3(type) { pickpocket(it.npc, pickpocket) }
-            4 -> onOpNpc4(type) { pickpocket(it.npc, pickpocket) }
-            5 -> onOpNpc5(type) { pickpocket(it.npc, pickpocket) }
+            1 -> onOpNpc1(type) { pickpocket(it.npc, pickpocket, op) }
+            2 -> onOpNpc2(type) { pickpocket(it.npc, pickpocket, op) }
+            3 -> onOpNpc3(type) { pickpocket(it.npc, pickpocket, op) }
+            4 -> onOpNpc4(type) { pickpocket(it.npc, pickpocket, op) }
+            5 -> onOpNpc5(type) { pickpocket(it.npc, pickpocket, op) }
         }
         return true
     }
 
-    private suspend fun ProtectedAccess.pickpocket(npc: Npc, pickpocket: Pickpocket) {
+    private suspend fun ProtectedAccess.pickpocket(npc: Npc, pickpocket: Pickpocket, op: Int) {
         val name = npc.name.lowercase()
         if (player.thievingLvl < pickpocket.level) {
             mes("You need a Thieving level of ${pickpocket.level} to pick the $name's pocket.")
@@ -161,6 +174,9 @@ constructor(
             mes("You pick the $name's pocket.")
             giveLoot(pickpocket.loot)
             statAdvance(stats.thieving, pickpocket.xp * xpMods.get(player, stats.thieving))
+            if (player.isFeatureOn(Feature.AutoRepeatThieving)) {
+                weakQueue(ThievingQueues.pickpocket_repeat, 1, PickpocketTarget(npc, op))
+            }
             return
         }
         npc.say("What do you think you're doing?")
@@ -171,7 +187,12 @@ constructor(
         delay(pickpocket.stunTicks)
     }
 
-    private suspend fun ProtectedAccess.steal(loc: BoundLocInfo, stall: Stall, empty: LocType?) {
+    private suspend fun ProtectedAccess.steal(
+        loc: BoundLocInfo,
+        stall: Stall,
+        empty: LocType?,
+        op: Int,
+    ) {
         if (player.thievingLvl < stall.level) {
             mes("You need a Thieving level of ${stall.level} to steal from this stall.")
             return
@@ -196,7 +217,64 @@ constructor(
             // ProtectedAccess.mapClock is the current map clock cycle (an Int).
             stallCooldowns[loc.coords] = mapClock + stall.respawnTicks
         }
+        if (player.isFeatureOn(Feature.AutoRepeatThieving)) {
+            val target = StallTarget(loc.coords, loc.id, op, STALL_RETRIES)
+            weakQueue(ThievingQueues.stall_repeat, stall.respawnTicks + 1, target)
+        }
     }
+
+    /*
+     * Auto-repeat (feature toggle, default on). The weak queues are cleared by walking or
+     * clicking something else, like auto-resume gathering.
+     */
+
+    /** Pickpockets the same npc again unless it is gone, out of reach, or in combat with us. */
+    private fun ProtectedAccess.repeatPickpocket(target: PickpocketTarget) {
+        val npc = target.npc
+        if (!npc.isSlotAssigned || player.isInCombat()) return
+        if (player.coords.level != npc.coords.level) return
+        if (player.coords.chebyshevDistance(npc.coords) > REPEAT_REACH) return
+        when (target.op) {
+            1 -> opNpc1(npc)
+            2 -> opNpc2(npc)
+            3 -> opNpc3(npc)
+            4 -> opNpc4(npc)
+            else -> opNpc5(npc)
+        }
+    }
+
+    /** Steals again once the same stall has restocked (the respawn can lag a tick). */
+    private fun ProtectedAccess.repeatStall(target: StallTarget) {
+        if (player.isInCombat()) return
+        if (player.coords.chebyshevDistance(target.coords) > REPEAT_REACH) return
+        val type = locTypes[target.locId] ?: return
+        val found = locRepo.findExact(target.coords, type)
+        val readyAt = stallCooldowns[target.coords]
+        if (found == null || (readyAt != null && mapClock < readyAt)) {
+            if (target.retries > 0) {
+                val next = target.copy(retries = target.retries - 1)
+                weakQueue(ThievingQueues.stall_repeat, 1, next)
+            }
+            return
+        }
+        val loc = BoundLocInfo(found, type)
+        when (target.op) {
+            1 -> opLoc1(loc)
+            2 -> opLoc2(loc)
+            3 -> opLoc3(loc)
+            4 -> opLoc4(loc)
+            else -> opLoc5(loc)
+        }
+    }
+
+    private class PickpocketTarget(val npc: Npc, val op: Int)
+
+    private data class StallTarget(
+        val coords: CoordGrid,
+        val locId: Int,
+        val op: Int,
+        val retries: Int,
+    )
 
     /** Always lines are always given; the rest is one weighted roll (remainder = nothing). */
     private fun ProtectedAccess.giveLoot(loot: List<Loot>) {
@@ -228,5 +306,7 @@ constructor(
 
     private companion object {
         const val PPM = 1_000_000
+        const val REPEAT_REACH = 2
+        const val STALL_RETRIES = 10
     }
 }

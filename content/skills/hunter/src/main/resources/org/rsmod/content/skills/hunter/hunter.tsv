@@ -36,3 +36,15 @@ loot	butterfly_jar_snowy	1	1
 
 net	Black warlock	butterfly_warlock	45	54	20	296
 loot	butterfly_jar_warlock	1	1
+
+box	Ferret	hunting_ferret	27	115.2	76	338	-	hunting_boxtrap_full_ferret	# no wiki chart; grey chinchompa curve shifted to level 27
+loot	hunting_ferret	1	1
+
+box	Chinchompa	hunting_chinchompa	53	198.4	6	268	-	hunting_boxtrap_full_chinchompa
+loot	chinchompa_captured	1	1
+
+box	Carnivorous chinchompa	hunting_chinchompa_big	63	265	-78	228	-	hunting_boxtrap_full_chinchompa_big
+loot	chinchompa_big_captured	1	1
+
+box	Black chinchompa	hunting_chinchompa_black	73	315	-78	228	-	hunting_boxtrap_full_chinchompa_black
+loot	chinchompa_black	1	1

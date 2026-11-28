@@ -1,22 +1,38 @@
 package org.rsmod.content.skills.hunter
 
-/** Bird snare and butterfly data from `hunter.tsv` (tools/skills/hunter_to_tsv.py). */
+/** Bird snare, box trap and butterfly data from `hunter.tsv` (tools/skills/hunter_to_tsv.py). */
 internal object HunterData {
     class Loot(val obj: String, val min: Int, val max: Int)
 
+    enum class Kind {
+        /** Bird snare. */
+        Snare,
+        /** Box trap (ferrets, chinchompas). */
+        Box,
+        /** Butterfly net (caught directly from the npc). */
+        Net,
+    }
+
     class Creature(
-        val snare: Boolean,
+        val kind: Kind,
         val title: String,
         val npcs: List<String>,
         val level: Int,
         val xp: Double,
         val low: Int,
         val high: Int,
-        /** Snares only: trap locs while catching / once caught. */
+        /** Traps only: trap locs while catching (snares) / once caught. */
         val trappingLoc: String?,
         val fullLoc: String?,
         val loot: List<Loot>,
-    )
+    ) {
+        val snare: Boolean
+            get() = kind == Kind.Snare
+
+        /** Caught in a laid trap (snare or box) rather than directly. */
+        val trapped: Boolean
+            get() = kind != Kind.Net
+    }
 
     val creatures: List<Creature> by lazy { load() }
 
@@ -31,18 +47,24 @@ internal object HunterData {
 
         fun flush() {
             val h = header ?: return
-            val snare = h[0] == "snare"
+            val kind =
+                when (h[0]) {
+                    "snare" -> Kind.Snare
+                    "box" -> Kind.Box
+                    else -> Kind.Net
+                }
+            val trap = kind != Kind.Net
             creatures.add(
                 Creature(
-                    snare = snare,
+                    kind = kind,
                     title = h[1],
                     npcs = h[2].split(','),
                     level = h[3].toInt(),
                     xp = h[4].toDouble(),
                     low = h[5].toInt(),
                     high = h[6].toInt(),
-                    trappingLoc = if (snare) h[7] else null,
-                    fullLoc = if (snare) h[8] else null,
+                    trappingLoc = if (trap) h[7].takeIf { it != "-" } else null,
+                    fullLoc = if (trap) h[8] else null,
                     loot = loot,
                 )
             )
@@ -58,6 +80,7 @@ internal object HunterData {
             val p = line.split('\t')
             when (p[0]) {
                 "snare",
+                "box",
                 "net" -> {
                     flush()
                     header = p

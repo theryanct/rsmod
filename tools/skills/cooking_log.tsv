@@ -42,7 +42,6 @@ skip-no-chart	Raw haddock	Haddock
 skip-no-chart	Raw halibut	Halibut
 skip-special	Raw impaler meat
 skip-no-chart	Raw jumbo squid	Jumbo squid
-skip-special	Raw karambwan
 skip-special	Raw karambwanji
 skip-special	Raw kyatt
 skip-special	Raw kyren fish (6)
@@ -67,7 +66,6 @@ skip-special	Raw sunlight antelope
 skip-special	Raw suphi fish (1)
 skip-special	Raw swamp paste
 skip-no-chart	Raw swordtip squid	Swordtip squid
-skip-no-symbol	Raw t-bone steak	Cooked t-bone steak
 skip-special	Raw ugthanki meat
 skip-special	Raw wild kebbit
 skip-no-chart	Raw yellowfin	Yellowfin
@@ -132,13 +130,6 @@ skip-combine	Raw chompy + Part wild pie (raw bear meat) -> Part wild pie (raw ch
 skip-no-symbol	Sweetcorn (bowl) + Tuna -> Tuna and corn
 skip-combine	Sweetcorn (bowl) + Chopped tuna -> Tuna and corn
 skip-combine	Cooked sweetcorn + Chopped tuna -> Tuna and corn
-skip-combine	Grapes + Jug of water -> Unfermented wine
-skip-no-symbol	Cooked meat + Bowl of water -> Incomplete stew#Meat
-skip-no-symbol	Cooked chicken + Bowl of water -> Incomplete stew#Meat
-skip-no-symbol	Potato + Bowl of water -> Incomplete stew#Potato
-skip-no-symbol	Cooked meat + Incomplete stew#Potato -> Uncooked stew
-skip-no-symbol	Cooked chicken + Incomplete stew#Potato -> Uncooked stew
-skip-no-symbol	Potato + Incomplete stew#Meat -> Uncooked stew
 skip-no-symbol	Servery cooked meat + Bowl of water -> Servery incomplete stew#Meat
 skip-no-symbol	Servery potato + Bowl of water -> Servery incomplete stew#Potato
 skip-no-symbol	Servery incomplete stew#Potato + Servery cooked meat -> Servery uncooked stew
@@ -153,13 +144,13 @@ skip-no-symbol	Teapot with leaves#Trimmed + Hot kettle -> Pot of tea (trimmed)
 skip-combine	Kebab mix + Pitta bread -> Ugthanki kebab (bad)
 skip-combine	Damiana leaves + Bowl of water -> Damiana water
 skip-combine	Damiana tea + Empty cup -> Cup of tea (damiana)
-skip-junk-symbol	heat	hundred_pirate_raw_fishcake	hundred_pirate_fishcake	hundred_pirate_burned_fishcake	31	100.0	0	57	377	-	-	-	-	69	389
-skip-junk-symbol	heat	raw_rabbit	cooked_rabbit	spit_burned_rabbit_meat	1	30.0	1	128	512	-	-	-	-	140	524
-skip-junk-symbol	heat	hunting_raw_fish_special	hunting_fish_special	hunting_raw_fish_special_burnt	35	110.0	1	56	370	-	-	-	-	68	382
-skip-junk-symbol	heat	spit_skewered_beast_meat	spit_roasted_beast_meat	spit_burned_beast_meat	21	82.5	1	180	255	-	-	-	-	-	-
-skip-junk-symbol	heat	spit_skewered_bird_meat	spit_roasted_bird_meat	spit_burned_bird_meat	11	62.5	1	155	255	-	-	-	-	-	-
-skip-junk-symbol	heat	spit_skewered_rabbit_meat	spit_roasted_rabbit_meat	spit_burned_rabbit_meat	16	72.5	1	160	255	-	-	-	-	-	-
-skip-junk-symbol	heat	wrapped_oomlie	cooked_oomlie	burnt_oomlie	50	30.0	1	112	476	-	-	-	-	124	488
+skip-junk-symbol	heat	hundred_pirate_raw_fishcake	hundred_pirate_fishcake	hundred_pirate_burned_fishcake	31	100.0	0	57	377	-	-	-	-	69	389	-
+skip-junk-symbol	heat	raw_rabbit	cooked_rabbit	spit_burned_rabbit_meat	1	30.0	1	128	512	-	-	-	-	140	524	-
+skip-junk-symbol	heat	hunting_raw_fish_special	hunting_fish_special	hunting_raw_fish_special_burnt	35	110.0	1	56	370	-	-	-	-	68	382	-
+skip-junk-symbol	heat	spit_skewered_beast_meat	spit_roasted_beast_meat	spit_burned_beast_meat	21	82.5	1	180	255	-	-	-	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_bird_meat	spit_roasted_bird_meat	spit_burned_bird_meat	11	62.5	1	155	255	-	-	-	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_rabbit_meat	spit_roasted_rabbit_meat	spit_burned_rabbit_meat	16	72.5	1	160	255	-	-	-	-	-	-	-
+skip-junk-symbol	heat	wrapped_oomlie	cooked_oomlie	burnt_oomlie	50	30.0	1	112	476	-	-	-	-	124	488	-
 skip-junk-symbol	combine	woodplank	nails	poh_flatpack_beerbarrel1	5	0.0	-	-
 skip-junk-symbol	combine	vodka	lime	aluft_shaker_sgg	20	30.0	-	-
 skip-junk-symbol	combine	osman_squirk_winter	beer_glass	osman_squirk_j_winter	1	5.0	-	-

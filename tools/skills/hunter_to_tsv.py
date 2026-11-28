@@ -1,4 +1,4 @@
-"""OSRS Wiki {{Hunter info}} pages -> content/skills/hunter hunter.tsv (PR1: bird snares, butterflies).
+"""OSRS Wiki {{Hunter info}} pages -> content/skills/hunter hunter.tsv (bird snares, butterflies, box traps).
 
 Args: hunter_pages.json npc_ids.json item_ids.json sym_dir out.tsv
   hunter_pages.json  fetch_wiki_spawns.py hunter_pages.json "Hunter info"
@@ -7,6 +7,7 @@ Args: hunter_pages.json npc_ids.json item_ids.json sym_dir out.tsv
 Output:
   snare <title> <npc names comma> <level> <xp> <low> <high> <trapping loc> <full loc>
   net   <title> <npc names comma> <level> <xp> <low> <high>
+  box   <title> <npc names comma> <level> <xp> <low> <high> <trapping loc> <full loc>
   loot  <obj> <min> <max>          (all hunter loot is "Always")
 low/high are the wiki {{Skilling success chart}} values. Ruby harvest, Sapphire glacialis and
 Snowy knight have no chart on the wiki; they reuse Black warlock's curve (flagged in the output).
@@ -35,6 +36,13 @@ SNARE_BIRDS = ["Crimson swift", "Golden warbler", "Copper longtail", "Cerulean t
 def snare_locs(npc_name):
     variant = "coloured" if npc_name.startswith("multicoloured") else npc_name.rsplit("_", 1)[-1]
     return f"hunting_ojibway_trap_trapping_{variant}", f"hunting_ojibway_trap_full_{variant}"
+BOX_CREATURES = [
+    ("Ferret (Hunter)", "hunting_ferret", "hunting_boxtrap_full_ferret", "hunting_ferret", (76, 338),
+     "no wiki chart; grey chinchompa curve shifted to level 27"),
+    ("Chinchompa (Hunter)", "hunting_chinchompa", "hunting_boxtrap_full_chinchompa", "chinchompa_captured", (6, 268), ""),
+    ("Carnivorous chinchompa", "hunting_chinchompa_big", "hunting_boxtrap_full_chinchompa_big", "chinchompa_big_captured", (-78, 228), ""),
+    ("Black chinchompa (Hunter)", "hunting_chinchompa_black", "hunting_boxtrap_full_chinchompa_black", "chinchompa_black", (-78, 228), ""),
+]
 BUTTERFLIES = ["Ruby harvest", "Sapphire glacialis", "Snowy knight", "Black warlock"]
 FALLBACK_CHART = "Black warlock"
 
@@ -86,4 +94,14 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
         lo, hi = chart or fallback
         w.write(f"\nnet\t{title}\t{','.join(npcs(title))}\t{level}\t{xp:g}\t{lo}\t{hi}{note}\n")
         for o, lo2, hi2 in loot: w.write(f"loot\t{o}\t{lo2}\t{hi2}\n")
+    # Box traps (PR2): trap locs/npcs/loot by cache name; charts from the Wiki "Chinchompa" page
+    # (grey 6/268, red and black -78/228). Ferret has no Wiki chart ("Needs skilling success
+    # chart"): grey chinchompa's curve shifted down to level 27 (flagged).
+    for title, npc, full, loot_obj, chart, note in BOX_CREATURES:
+        level, xp, _, _ = info(title)
+        tail = ("\t# " + note) if note else ""
+        # Box traps animate per direction (_n/_e/_s/_w), so no single trapping loc: "-".
+        cols = ["box", title.split(" (")[0], npc, level, f"{xp:g}", chart[0], chart[1], "-", full]
+        w.write("\n" + "\t".join(map(str, cols)) + tail + "\n")
+        w.write("\t".join(["loot", loot_obj, "1", "1"]) + "\n")
 print("ok")

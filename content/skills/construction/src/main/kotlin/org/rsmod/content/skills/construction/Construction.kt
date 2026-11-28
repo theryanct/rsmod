@@ -4,6 +4,7 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.stat.constructionLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.registry.region.RegionRegistry
@@ -67,6 +68,13 @@ constructor(
         RegionTemplate.create {
             this[0, 0, 0] = PohTemplates.garden
             this[1, 0, 0] = PohTemplates.parlour
+            // Black void everywhere else on the ground level (unmapped zones render white).
+            for (x in 0 until PohTemplates.REGION_ZONES) {
+                for (z in 0 until PohTemplates.REGION_ZONES) {
+                    if (z == 0 && (x == 0 || x == 1)) continue
+                    this[x, z, 0] = PohTemplates.void
+                }
+            }
         }
     }
 
@@ -238,32 +246,47 @@ constructor(
         mes("You build a ${furniture.name.lowercase()}.")
     }
 
+    /** The OSRS furniture build menu: model, name, level and materials per option. */
     private suspend fun ProtectedAccess.chooseFurniture(group: Group): Furniture? {
-        val options = group.options.map { "${it.name} (level ${it.level})" }
-        var picked = -1
-        startDialogue {
-            picked =
-                when (options.size) {
-                    1 -> choice2(options[0], 0, "Cancel", -1)
-                    2 -> choice3(options[0], 0, options[1], 1, "Cancel", -1)
-                    3 -> choice4(options[0], 0, options[1], 1, options[2], 2, "Cancel", -1)
-                    else ->
-                        choice5(
-                            options[0],
-                            0,
-                            options[1],
-                            1,
-                            options[2],
-                            2,
-                            options[3],
-                            3,
-                            "Cancel",
-                            -1,
-                        )
-                }
-        }
-        return group.options.getOrNull(picked)
+        val entries =
+            group.options.map { furniture ->
+                val iconName = ConstructionData.icons.getValue(furniture.name)
+                val icon = ConstructionObjs.byName.getValue(iconName)
+                FurnitureMenuEntry(
+                    obj = icon,
+                    level = furniture.level,
+                    materials = materialLines(furniture),
+                    available =
+                        player.constructionLvl >= furniture.level && hasMaterials(furniture),
+                )
+            }
+        val index = furnitureMenu(entries) ?: return null
+        return group.options.getOrNull(index)
     }
+
+    /** "Plank: 2" style lines, green when carried and red when not (as the OSRS menu shows). */
+    private fun ProtectedAccess.materialLines(furniture: Furniture): List<String> {
+        val lines = ArrayList<String>()
+        for ((name, count) in furniture.materials) {
+            val have = invTotal(inv, ConstructionObjs.byName.getValue(name)) >= count
+            lines += colour("${ConstructionData.materialNames[name] ?: name}: $count", have)
+        }
+        if (furniture.nails > 0) {
+            lines += colour("Nails: ${furniture.nails}", nailCount() >= furniture.nails)
+        }
+        return lines
+    }
+
+    private fun colour(text: String, ok: Boolean): String =
+        if (ok) "<col=00ff00>$text</col>" else "<col=ff0000>$text</col>"
+
+    private fun ProtectedAccess.nailCount(): Int =
+        ConstructionData.nails.sumOf { invTotal(inv, ConstructionObjs.byName.getValue(it)) }
+
+    private fun ProtectedAccess.hasMaterials(furniture: Furniture): Boolean =
+        furniture.materials.all { (name, count) ->
+            invTotal(inv, ConstructionObjs.byName.getValue(name)) >= count
+        } && nailCount() >= furniture.nails
 
     private fun ProtectedAccess.canBuild(furniture: Furniture): Boolean {
         if (player.constructionLvl < furniture.level) {

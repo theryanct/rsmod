@@ -31,7 +31,9 @@ internal object ConstructionObjs : ObjReferences() {
     val saw = find("poh_saw")
 
     val byName: Map<String, ObjType> =
-        (ConstructionData.materials + ConstructionData.nails).associateWith { find(it) }
+        (ConstructionData.materials + ConstructionData.nails + ConstructionData.icons.values)
+            .distinct()
+            .associateWith { find(it) }
 }
 
 internal object ConstructionSeqs : SeqReferences() {
@@ -57,6 +59,16 @@ internal object ConstructionVarps : VarpReferences() {
 internal object PohTemplates {
     val garden = ZoneKey(232, 713, 0)
     val parlour = ZoneKey(232, 719, 0)
+
+    /**
+     * The template's void zone: every tile uses overlay 41, whose colour is the client's magenta
+     * "draw nothing" colour, so copying it around the rooms gives OSRS's black surround instead of
+     * the white of unmapped zones.
+     */
+    val void = ZoneKey(236, 713, 0)
+
+    /** Zones per side of a small region (128 tiles). */
+    const val REGION_ZONES = 16
 
     /** Local tile of the garden centrepiece space, where new houses have the exit portal. */
     const val CENTREPIECE_X = 3

@@ -3,6 +3,7 @@ package org.rsmod.content.skills.thieving
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.npc.NpcType
@@ -31,4 +32,10 @@ object ThievingObjs : ObjReferences() {
 
 object ThievingSeqs : SeqReferences() {
     val pickpocket = find("human_pickpocket")
+}
+
+internal object ThievingQueues : QueueReferences() {
+    /** Custom queues (65720 / 65721): auto-repeat pickpocketing / stall stealing. */
+    val pickpocket_repeat = find("thieving_pickpocket_repeat")
+    val stall_repeat = find("thieving_stall_repeat")
 }
