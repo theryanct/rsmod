@@ -1,0 +1,96 @@
+# Generated from the OSRS Wiki page "Transcript:Abbot Langley" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Abbot Langley	Greetings traveller.
+1	option	Can you heal me? I'm injured.
+2	line	Player	Can you heal me? I'm injured.
+2	line	Abbot Langley	Ok.
+2	box	Abbot Langley places his hands on your head. You feel a little better.
+2	action	end
+1	option	Isn't this place built a bit out of the way?
+2	line	Player	Isn't this place built a bit out of the way?
+2	line	Abbot Langley	We like it that way actually! We get disturbed less. We still get rather a large amount of travellers looking for sanctuary and healing here as it is!
+2	action	end
+1	option	How do I get further into the monastery?
+2	line	Player	How do I get further into the monastery?
+2	line	Abbot Langley	I'm sorry but only members of our order are allowed in the second level of the monastery.
+2	option	Well can I join your order?
+3	line	Player	Well can I join your order?
+3	cond	If the player does not have 31 prayer:
+4	line	Abbot Langley	No. I am sorry, but I feel you are not devout enough.
+4	action	end
+3	cond	If the player has 31 prayer:
+4	line	Abbot Langley	Ok, I see you are someone suitable for our order. You may join.
+4	action	end
+2	option	Oh, sorry.
+2	line	Player	Oh, sorry.
+3	action	end
+1	option	Can you help with spirit shields?
+2	line	Abbot Langley	I might be able to... What did you have in mind?
+2	line	Player	Can you remove the sigils from my spirit shields?
+2	line	Abbot Langley	I think I shoud be able to manage that. However in doing so, I'm afraid I'll have to destroy the blessed shield itself. You'll only get the sigil back.
+2	line	Abbot Langley	I can go ahead and break down all of the shields in your inventory now if you'd like?.
+2	select	Are you sure?
+2	option	Yes.
+3	box	Abbot Langley carefully breaks each shield, leaving the sigils perfectly intact.
+3	action	end
+2	option	No.
+3	line	Player	Not right now.
+3	action	end
+0	section	Interacting with the south-eastern ladder before joining the Edgeville Monastery order
+1	line	Abbot Langley	Only members of our order can go up there.
+1	select	Select an Option
+1	option	Well can I join your order?
+2	line	Player	Well can I join your order?
+2	cond	If the player does not have 31 prayer:
+3	line	Abbot Langley	No. I am sorry, but I feel you are not devout enough.
+3	action	end
+2	cond	If the player has 31 prayer:
+3	line	Abbot Langley	Ok, I see you are someone suitable for our order. You may join.
+3	action	end
+1	option	Oh, sorry.
+2	line	Player	Oh, sorry.
+0	section	Claiming the Corrupted Helm
+1	line	Abbot Langley	Ah, I was told to expect you, please take this as thanks!
+1	box	Abbot Langley quickly takes the soft clay, leather boots and bowl of hot water in exchange for a mysterious helmet.
+1	action	
+1	action	end
+0	section	Treasure Trails
+0	section	Hard
+1	line	Abbot Langley	Congratulations, traveller!
+1	cond	If the player has finished the treasure trail:
+2	box	You've obtained a casket!
+2	action	
+2	action	end
+1	cond	If the player has not finished the treasure trail:
+2	box	Abbot Langley has given you another clue scroll!
+2	action	
+2	action	end
+0	section	Master
+1	cond	If the player has no free inventory spaces:
+2	line	Abbot Langley	Hey, I have something for you but you don't have any space for it!
+1	cond	If the player has at least one free inventory space:
+2	action	
+2	line	Abbot Langley	Here you go.
+2	box	You are handed a torn part of a clue scroll.
+1	line	Abbot Langley	I must say, I despise the equipment you have chosen to wear.
+1	action	end
+0	section	Delivering a letter from the Wise Old Man
+1	line	Abbot Langley	Greetings traveller.
+1	line	Player	I've got a message for you from your friend in Draynor Village.
+1	line	Abbot Langley	Gosh, you are very kind to bring a message to my remote monastery!
+1	cond	If the player does not have enough space in their inventory for a reward:
+2	line	Abbot Langley	I'd give you a reward, but you don't seem to have any space for it. Come back when you do.
+2	action	initial
+1	cond	If the player has at least one space in their inventory for a reward:
+2	option	Herbs
+3	box	Abbot Langley gives you some banknotes that can be exchanged for herbs.}}
+3	action	herbs]]
+3	line	Abbot Langley	I grow a few herbs in my little cabbage patch; please take some as a sign of my gratitude.
+3	action	initial
+2	option	Coins
+2	option	Runes
+2	option	Seeds
+2	option	Prayer experience
+3	box	Abbot Langley blesses you. You gain some prayer xp.}}
+3	line	Abbot Langley	Allow me to bestow on you Saradomin's blessings...
+3	action	initial

@@ -1,0 +1,19 @@
+# Generated from the OSRS Wiki page "Transcript:Velrak the explorer" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	cond	Without having a dusty key in the inventory:
+2	line	Velrak the explorer	Thank you for rescuing me! It isn't very comfy in this cell.
+3	line	Player	So... do you know anywhere good to explore?
+3	line	Velrak the explorer	Well, this dungeon was quite good to explore ...until I got captured, anyway. I was given a key to an inner part of this dungeon by a mysterious cloaked stranger!
+3	line	Velrak the explorer	It's rather tough for me to get that far into the dungeon however... I just keep getting captured! Would you like to give it a go?
+4	line	Player	Yes please!
+4	action	end
+4	line	Player	No, it's too dangerous for me too.
+4	line	Velrak the explorer	I don't blame you!
+4	action	end
+3	line	Player	Do I get a reward? For freeing you and all...
+3	line	Velrak the explorer	Well... not really... The Black Knights took all of my stuff before throwing me in here to rot!
+3	action	end
+1	cond	With a dusty key in the inventory:
+2	line	Player	Are you still here?
+2	line	Velrak the explorer	Yes... I'm still plucking up the courage to run out past those Black Knights...
+2	action	end
