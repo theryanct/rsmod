@@ -50,6 +50,11 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             "agilityarena_lowwall",
             // The Mountain Camp rockslide is Mountain Daughter's (guard lines, quest gate).
             "mdaughter_rockslide",
+            // Gu'Tanoth's battlements and bridge gap are Watchtower's (guards, toll; watchtower/).
+            "ganothbattlement",
+            "tobanblock",
+            "tanothjump1",
+            "tanothjump2",
         )
 
     private enum class Kind(val labels: Set<String>) {

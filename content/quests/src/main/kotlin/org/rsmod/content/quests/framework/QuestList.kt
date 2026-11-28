@@ -70,6 +70,7 @@ import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE
 import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
 import org.rsmod.content.quests.trollstronghold.TrollStronghold.Companion.TROLL_STRONGHOLD
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
+import org.rsmod.content.quests.watchtower.Watchtower.Companion.WATCHTOWER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
@@ -151,6 +152,7 @@ public object BuiltQuests {
             TRIBAL_TOTEM,
             TROLL_STRONGHOLD,
             VAMPYRE_SLAYER,
+            WATCHTOWER,
             WATERFALL_QUEST,
             WITCHS_HOUSE,
             WITCHS_POTION,
