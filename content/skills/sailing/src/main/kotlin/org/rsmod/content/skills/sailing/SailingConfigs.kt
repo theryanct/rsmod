@@ -19,6 +19,9 @@ internal object SailingVarBits : VarBitReferences() {
     val boat_1_type = find("sailing_boat_1_type")
     val boat_1_port = find("sailing_boat_1_port")
 
+    /** Pandemonium's quest varbit (the raft is its reward). */
+    val pandemonium = find("sailing_intro")
+
     /** Multivar of every ledger table: 0 shows "Take-cargo", 1 shows "Deposit-cargo". */
     val carrying_cargo = find("sailing_carrying_cargo")
 

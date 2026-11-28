@@ -60,6 +60,17 @@ public enum class Feature(
         defaultOn = true,
         slot = 10,
         declaredCategory = FeatureCategory.Skilling,
+    ),
+    /**
+     * Clue scrolls stack with no limit: a clue drop while you already hold (or bank) a clue of
+     * that tier gives a stackable scroll box instead; off = no drop (the old one-per-tier rule).
+     */
+    UnlimitedClues(
+        "unlimitedclues",
+        "Unlimited stacked clue scrolls",
+        defaultOn = true,
+        slot = 11,
+        declaredCategory = FeatureCategory.Loot,
     );
 
     /**

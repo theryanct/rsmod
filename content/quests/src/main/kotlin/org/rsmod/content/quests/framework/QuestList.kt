@@ -8,12 +8,14 @@ import org.rsmod.content.quests.bearyoursoul.BearYourSoul.Companion.BEAR_YOUR_SO
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
+import org.rsmod.content.quests.birdsandwasps.BirdsAndWasps.Companion.BIRDS_AND_WASPS
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.childrenofthesun.ChildrenOfTheSun.Companion.CHILDREN_OF_THE_SUN
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.coldwar.ColdWar.Companion.COLD_WAR
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
+import org.rsmod.content.quests.crabquest.CrabQuest.Companion.CRAB_QUEST
 import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
 import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
@@ -27,20 +29,25 @@ import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.
 import org.rsmod.content.quests.elementalworkshop2.ElementalWorkshopII.Companion.ELEMENTAL_WORKSHOP_II
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
+import org.rsmod.content.quests.familycrest.FamilyCrest.Companion.FAMILY_CREST
 import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
 import org.rsmod.content.quests.golem.TheGolem.Companion.THE_GOLEM
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.fremenniktrials.FremennikTrials.Companion.FREMENNIK_TRIALS
 import org.rsmod.content.quests.gardenofdeath.GardenOfDeath.Companion.GARDEN_OF_DEATH
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
+import org.rsmod.content.quests.gettingahead.GettingAhead.Companion.GETTING_AHEAD
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.handinthesand.HandInTheSand.Companion.HAND_IN_THE_SAND
+import org.rsmod.content.quests.hauntedmine.HauntedMine.Companion.HAUNTED_MINE
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
+import org.rsmod.content.quests.heroesquest.HeroesQuest.Companion.HEROES_QUEST
 import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
 import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
+import org.rsmod.content.quests.insearchofthemyreque.InSearchOfTheMyreque.Companion.IN_SEARCH_OF_THE_MYREQUE
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.learningtheropes.LearningTheRopes.Companion.LEARNING_THE_ROPES
@@ -55,12 +62,14 @@ import org.rsmod.content.quests.mudfoot.MudfootsBigAdventure.Companion.MUDFOOT
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
+import org.rsmod.content.quests.pandemonium.Pandemonium.Companion.PANDEMONIUM
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
 import org.rsmod.content.quests.porcine.PorcineOfInterest.Companion.PORCINE
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_BONE_MAN_I
+import org.rsmod.content.quests.ragandboneman.RagAndBoneManII.Companion.RAG_AND_BONE_MAN_II
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
@@ -99,12 +108,14 @@ public object BuiltQuests {
             BELOW_ICE_MOUNTAIN,
             BIOHAZARD,
             BIG_CHOMPY,
+            BIRDS_AND_WASPS,
             BLACK_KNIGHTS_FORTRESS,
             CHILDREN_OF_THE_SUN,
             CLOCK_TOWER,
             COLD_WAR,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            CRAB_QUEST,
             DADDYS_HOME,
             DEATH_PLATEAU,
             DEMON_SLAYER,
@@ -118,20 +129,25 @@ public object BuiltQuests {
             ELEMENTAL_WORKSHOP_II,
             ERNEST,
             FAIRYTALE_I,
+            FAMILY_CREST,
             FIGHT_ARENA,
             THE_GOLEM,
             FISHING_CONTEST,
             FREMENNIK_TRIALS,
             GARDEN_OF_DEATH,
             GERTRUDES_CAT,
+            GETTING_AHEAD,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
             GRAND_TREE,
             HAND_IN_THE_SAND,
+            HAUNTED_MINE,
             HAZEEL_CULT,
+            HEROES_QUEST,
             HOLY_GRAIL,
             IDES_OF_MILK,
             IMP_CATCHER,
+            IN_SEARCH_OF_THE_MYREQUE,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
             LEARNING_THE_ROPES,
@@ -146,12 +162,14 @@ public object BuiltQuests {
             MURDER_MYSTERY,
             NATURE_SPIRIT,
             OBSERVATORY_QUEST,
+            PANDEMONIUM,
             PIRATES_TREASURE,
             PLAGUE_CITY,
             PORCINE,
             PRIEST_IN_PERIL,
             PRINCE_ALI_RESCUE,
             RAG_AND_BONE_MAN_I,
+            RAG_AND_BONE_MAN_II,
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
