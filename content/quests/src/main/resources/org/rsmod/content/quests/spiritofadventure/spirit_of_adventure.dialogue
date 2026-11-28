@@ -1,0 +1,126 @@
+# Generated from the OSRS Wiki page "Transcript:Spirit of Adventure" by tools/quests/transcript_to_dialogue.py
+# No hand edits. Duplicate headings load as "Title (2)", "Title (3)".
+0	section	Starting off
+0	section	Talking to Bernina without ghostspeak ability
+1	line	Ghost	Woooo wooo wooooo woooo.
+1	action	end
+0	section	Talking to Bernina with ghostspeak ability
+1	line	Ghost	Hello? Perhaps you can understand me? If you can hear me that is?
+1	line	Player	Oh, hello there! Yes, I can understand you!
+1	line	Ghost	You can? You can! How wonderful! It has been a long while since anyone came by that could understand what I wanted to say to them. You wouldn't happen to have a moment to help me out would you?
+1	line	Player	I could certainly try to help... what did you say your name was again?
+1	line	Ghost	Bernina! I don't think I did mention it. I haven't had to do an introduction for a while now!
+1	line	Player	It's lovely to meet you, Bernina. I'm {player}. How can I help you?
+1	line	Ghost	It's very unfortunate really. I died.
+1	line	Player	Ah, that explains the incorporeality. What happened?
+1	line	Ghost	I was a crew member on board a ship sailing out of Fortis. We got caught in a storm and sailed too close to the rocks around Shipwreck Cove. I'm sure you can guess the results...
+1	line	Ghost	The thing is though, after I died, I was not guided to Mictl. I remained, but in this form. I saw the remains of our ship, and I saw some of those salvagers from the east claiming whatever they wanted.
+1	line	Ghost	One of them took a diamond necklace from my body. It was very precious to me. It should not remain in the hands of a thief.
+1	line	Player	I make no promises, but I'll try to recover it.
+1	line	Ghost	Thank you, {player}. I heard the one that took it being called Jasper by one of his fellow salvagers. He is the one you will need to find.
+1	action	end
+0	section	Talking to Bernina again
+1	line	Ghost	Hello again, {player}. Have you got any leads on my necklace yet?
+1	line	Player	Not yet, no.
+1	line	Ghost	That salvager, Jasper, hopefully still has it. I'm sure you'll find him with the rest of his people. They live to the east of here.
+1	action	end
+0	section	The Salvagers
+0	section	Talking to Jasper
+1	line	Player	Hello there.
+1	line	Jasper	Who are you?
+1	line	Player	I'm an adventurer, and I'm looking for someone. Is your name Jasper?
+1	line	Jasper	It is... How did you know that?
+1	line	Player	I'm looking for a lost item and I think you might be able to help me.
+1	line	Jasper	I'm... familiar with lost items.
+1	line	Player	Have you come across a diamond necklace? One belonging to an unfortunate passenger involved in a nearby shipwreck?
+1	line	Jasper	You wouldn't happen to be talking about... that necklace?
+1	line	Player	That necklace?
+1	line	Jasper	A necklace crossed my path a while back, and everything suddenly started to go wrong for me. It was as if I was haunted by some spiteful spirit.
+1	line	Jasper	I did what I do best and I flogged it to some chap that came wandering through. He seemed very keen to buy it. Luck's been much better since!
+1	line	Player	This person you sold it to... Any idea where I can find him?
+1	line	Jasper	He looked like some sort of mountain climber. He said he was setting out on some sort of journey that was very important to him.
+1	line	Player	I see... Thanks.
+1	action	end
+0	section	Talking to Jasper again
+1	line	Jasper	Still looking for that necklace? I don't have it any more. I don't want anything to do with it!
+1	line	Player	The person you sold it to... Any idea where I can find him?
+1	line	Jasper	He looked like some sort of mountain climber. He said he was setting out on some sort of journey that was very important to him.
+1	line	Player	I see... Thanks.
+1	action	end
+0	section	Talking to Bernina
+1	line	Ghost	Hello again, {player}. Have you got any leads on my necklace yet?
+1	line	Player	I have. I found the salvager that took it, but it was then sold on to a mountain climber.
+1	line	Ghost	Oh no. I'd hoped he wouldn't sell it on so quickly. Maybe there's still hope though. Any mountain climber around here will surely be heading up the Proudspire...
+1	line	Ghost	I actually did the climb myself once. I promised my son we'd go up there again together, but we never found the time...
+1	line	Player	Don't worry, I'm sure I can find this climber. I'll head up the Proudspire right away.
+1	action	end
+0	section	Talking to Bernina again
+1	line	Ghost	Hello again, {player}. Did you find that mountain climber?
+1	line	Player	Not yet.
+1	line	Ghost	They will surely be heading up the Proudspire... I promised my son we'd go up there together one day, but we never found the time...
+1	line	Player	Don't worry, I'm sure I can find this climber.
+1	action	end
+0	section	The Mountain Climber
+0	section	Talking to Bernard
+1	line	Bernard	Hey, iknami. Sorry to be a bother, but could you lend us a hand?
+1	line	Player	Sure, what's up?
+1	line	Bernard	I'm just having a rotten day. My logs won't light and it's gone cold up here. Could you get a fire going for me?
+1	line	Player	Of course!
+1	line	Bernard	Kuani! Thank you!
+1	action	end
+0	section	Talking to Bernard again
+1	line	Bernard	Hey, iknami. Any luck with that fire?
+1	line	Player	I'll have one lit shortly.
+1	line	Bernard	Thank you!
+1	action	end
+0	section	Talking to Bernard after lighting a fire
+1	line	Bernard	Kuani! This is much nicer now we've got a fire going. The name's Bernard.
+1	line	Player	{player}. How's your climb going?
+1	line	Bernard	Worst one I've had. Mum taught me to be well prepared, but I've never had so many issues. I've even worn my sturdier work gear to deal with the creatures out here.
+1	line	Player	Is mountaineering in the family?
+1	line	Bernard	Absolutely! In fact, this one's in honour of mum. She always wanted to take us up the Proudspire. I even managed to snag this necklace that reminded me of her just before setting off.
+1	line	Player	You got a necklace from the salvagers? Is it a diamond necklace?
+1	line	Bernard	That's right... How did you know?
+1	line	Player	I've been looking for one like it. Bernard, was it?
+1	line	Bernard	Yes! Bernard, son of Bernina!
+1	line	Player	Of course! Forgive me, Bernard, but there's someone I need to go and have a word with...
+1	action	end
+0	section	Talking to Bernard again after lighting a fire
+1	line	Bernard	Hello again. Hope things are going well with you. Did you speak to that person you needed to talk to?
+1	line	Player	No. I'd better go and see them now...
+1	action	end
+0	section	Arranging a Meetup
+0	section	Talking to Bernina
+1	line	Player	I found the climber and your necklace!
+1	line	Ghost	You did? Were you able to get it back?
+1	line	Player	No, but I don't think I need to. Would you be okay with heading up the mountain yourself? There's someone up there you need to see.
+1	line	Ghost	Are you sure?
+1	line	Player	Absolutely!
+1	line	Ghost	Alright then. I'll meet you up there.
+1	box	Bernina heads up the mountain.
+1	action	end
+0	section	Talking to Bernard
+1	line	Bernard	Ah, hello again, {player}. I don't want to cause alarm, but there's a ghost here with us!
+1	line	Ghost	He can't understand me. Please, {player}, tell him who I am.
+1	line	Player	No need to panic, Bernard. This isn't just some random ghost. This is your mother.
+1	line	Bernard	Mother... By Ralos...
+1	line	Ghost	Tell him I'm proud of him, and... tell him I'm sorry I never came home.
+1	line	Player	You can't understand her, but she wants you to know she's proud of you, and that she's sorry she didn't come home.
+1	line	Bernard	Oh... Mum...
+1	line	Ghost	I think I know now... I know why I stayed behind. It was for this. Thank you, {player}. I think it's time for me to go now. Tell Bernard I will always be with him...
+1	line	Player	She has to go now, but she will always be with you, Bernard.
+1	line	Bernard	Goodbye mum... I hope I keep making you proud. This necklace... It's not just like yours is it? It is yours. I'm going to finish this climb, for both of us.
+1	line	Bernard	I'll bury the necklace at the top. That way, even once I'm done, a part of us will always be on top of the world.
+1	box	Bernina fades away.
+1	line	Bernard	Thank you, {player}. Without you, I'd never have got to say goodbye. Now, I guess I'd better get going. I've got a mountain to climb.
+1	line	Player	Best of luck, Bernard.
+1	action	end
+0	section	Talking to Bernard again
+1	line	Bernard	Thank you, {player}. Without you, I'd never have got to say goodbye. Now, I guess I'd better get going. I've got a mountain to climb.
+1	line	Player	Best of luck, Bernard.
+1	action	end
+0	section	At the summit of the Proudspire
+1	line	Player	Bernard! I see you made it.
+1	line	Bernard	I did, and I buried that necklace up here, just as I promised. Now I think I'll stay a while and enjoy the view. We really are on top of the world.
+1	line	Player	In that case, I'll leave you to it. All the best, Bernard.
+1	action	end
