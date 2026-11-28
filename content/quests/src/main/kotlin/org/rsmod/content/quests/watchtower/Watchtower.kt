@@ -107,10 +107,11 @@ constructor(
 
     private val skavids by lazy {
         listOf(
-            Skavid(WtNpcs.skavids[0], WtVarBits.skavid_flags[0], "Bidith tanath", "Cur", "Cur, cur tanath!"),
+            // The nightshade cave's skavid (OSRS Wiki walkthrough).
+            Skavid(WtNpcs.skavids[0], WtVarBits.skavid_flags[0], "Cur bidith", "Ig", "Ig! Bidith ig!"),
             // Authored reply (not Wiki): the transcript has no section for this skavid.
             Skavid(WtNpcs.skavids[1], WtVarBits.skavid_flags[1], "Gor cur", "Ar", "Ar, gor cur!"),
-            Skavid(WtNpcs.skavids[2], WtVarBits.skavid_flags[2], "Cur bidith", "Ig", "Ig! Bidith ig!"),
+            Skavid(WtNpcs.skavids[2], WtVarBits.skavid_flags[2], "Bidith tanath", "Cur", "Cur, cur tanath!"),
             Skavid(WtNpcs.skavids[3], WtVarBits.skavid_flags[3], "Tanath gor", "Nod", "Nod, gor nod!"),
         )
     }
