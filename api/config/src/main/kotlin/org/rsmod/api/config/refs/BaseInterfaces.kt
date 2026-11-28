@@ -9,7 +9,8 @@ typealias interfaces = BaseInterfaces
 object BaseInterfaces : InterfaceReferences() {
     val fade_overlay = find("fade_overlay", 9223372035931967580)
 
-    val bank_main = find("bankmain", 9223372035766306703)
+    // No identity hash: BankSortEdits (ComponentEditor) adds "Sort" to bankmain:swap_insert.
+    val bank_main = find("bankmain")
     val bank_side = find("bankside", 9223372036689025022)
     val bankpin_settings = find("bankpin_settings", 642937557)
 

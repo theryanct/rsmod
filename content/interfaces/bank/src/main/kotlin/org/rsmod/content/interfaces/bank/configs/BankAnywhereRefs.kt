@@ -15,13 +15,14 @@ internal object BankAnywhereComponents : ComponentReferences() {
 }
 
 /**
- * "Bank anywhere": adds op2 "Bank" to the inventory tab buttons. Isolated here so the rev 243
+ * "Bank anywhere": adds op2 "Bank" to the inventory tab buttons, plus op3 "Sort" (inventory sort,
+ * BankSortScript). Isolated here so the rev 243
  * cutover only has to re-check the component names.
  */
 internal object BankAnywhereEdits : ComponentEditor() {
     init {
         for (stone in BankAnywhereComponents.inventory_stones) {
-            editOps(stone, 2 to "Bank")
+            editOps(stone, 2 to "Bank", 3 to "Sort")
         }
     }
 }
