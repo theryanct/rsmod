@@ -90,6 +90,8 @@ constructor(
 
         for ((tool, part) in TOOL_PARTS) {
             onIfModalButtonT(tool, part) { applyTool(tool, part) }
+        }
+        for (tool in DcComponents.tools) {
             onIfModalButton(tool) { selectTool(tool) }
         }
         for (part in DcComponents.parts) {

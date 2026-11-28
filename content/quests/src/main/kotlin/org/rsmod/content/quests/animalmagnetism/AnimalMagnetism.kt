@@ -508,7 +508,7 @@ constructor(
         }
         val solved = unlit == SOLVED_UNLIT
         for (symbol in AmComponents.complete) ifSetHide(symbol, !solved)
-        val garbled = Integer.bitCount(unlit * GARBLE_MIX) % AmComponents.garbled.size
+        val garbled = (unlit * GARBLE_MIX).countOneBits() % AmComponents.garbled.size
         for ((i, symbol) in AmComponents.garbled.withIndex()) {
             ifSetHide(symbol, solved || i != garbled)
         }
