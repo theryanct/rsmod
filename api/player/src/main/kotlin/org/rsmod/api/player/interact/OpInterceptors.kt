@@ -14,7 +14,8 @@ import org.rsmod.game.loc.BoundLocInfo
  * Hans's normal script.
  *
  * A claimed op counts as having an op trigger (so the player walks up even if nothing else is
- * bound) and suppresses the ap trigger, so the claim runs once the player is adjacent.
+ * bound). Npc claims also run from the ap step within [NPC_AP_RANGE] tiles (shopkeepers behind
+ * counters); loc claims suppress the ap trigger and run once adjacent.
  */
 public object OpInterceptors {
     public interface NpcOp {
@@ -29,6 +30,9 @@ public object OpInterceptors {
 
         public suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp)
     }
+
+    /** How close a claimed npc op runs from (the GE clerk / counter npc distance). */
+    public const val NPC_AP_RANGE: Int = 2
 
     private val npcOps = CopyOnWriteArrayList<NpcOp>()
     private val locOps = CopyOnWriteArrayList<LocOp>()

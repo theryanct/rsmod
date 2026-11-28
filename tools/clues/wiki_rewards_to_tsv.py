@@ -29,6 +29,8 @@ import opwalk as W  # noqa: E402
 LINE = re.compile(r"\{\{DropsLineReward\|(.*?)\}\}\s*$")
 EXPR = re.compile(r"\{\{#expr:([^{}]*)\}\}")
 MILESTONE = re.compile(r"on their (\d+)(?:st|nd|rd|th) completed")
+# Sections skipped but not ending the parse (the Mimic boss has its own loot).
+SKIP_SECTIONS = ("Mimic",)
 SKIP_FROM = ("Rewards on Entrana", "Changes", "Gallery", "Notes", "References")
 
 
@@ -117,12 +119,16 @@ def main():
     names = obj_names(cache_dir)
     sym = syms(sym_path)
     section, rows, missing, total = "", [], [], fractions.Fraction(0)
+    skipping = False
     for raw in sys.stdin.read().splitlines():
         heading = re.match(r"^=+\s*(.*?)\s*=+\s*$", raw)
         if heading:
             section = heading.group(1)
             if any(section.startswith(s) for s in SKIP_FROM):
                 break
+            skipping = any(section.startswith(s) for s in SKIP_SECTIONS)
+            continue
+        if skipping:
             continue
         m = LINE.search(raw)
         if not m:
@@ -130,6 +136,8 @@ def main():
         p = params(m.group(1))
         name = p.get("name", "")
         obj = names.get(name.lower())
+        if obj is None:  # wiki disambiguation, e.g. "Zombie head (Treasure Trails)"
+            obj = names.get(re.sub(r"\s*\(.*?\)$", "", name).lower())
         if obj is None:
             missing.append(name)
             continue

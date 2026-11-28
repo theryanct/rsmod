@@ -116,9 +116,12 @@ constructor(
         return null
     }
 
-    /** An op claimed by [OpInterceptors] has no ap trigger: the claim runs when adjacent. */
+    /**
+     * An op claimed by [OpInterceptors] has an ap trigger: the claim runs within
+     * [OpInterceptors.NPC_AP_RANGE] (npcs behind shop counters can't be reached adjacently).
+     */
     public fun hasApTrigger(player: Player, npc: Npc, op: InteractionOp): Boolean =
-        OpInterceptors.npc(player, npc, op) == null && apTrigger(player, npc, op) != null
+        OpInterceptors.npc(player, npc, op) != null || apTrigger(player, npc, op) != null
 
     public fun multiNpc(type: UnpackedNpcType, vars: VarPlayerIntMap): UnpackedNpcType? {
         if (type.multiNpc.isEmpty() && type.multiNpcDefault <= 0) {

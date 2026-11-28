@@ -534,7 +534,13 @@ constructor(
     }
 
     public fun triggerAp(player: Player, interaction: InteractionNpcOp) {
-        if (OpInterceptors.npc(player, interaction.target, interaction.op) != null) {
+        val claim = OpInterceptors.npc(player, interaction.target, interaction.op)
+        if (claim != null) {
+            protectedAccess.launch(player) {
+                if (isWithinApRange(interaction.target, OpInterceptors.NPC_AP_RANGE)) {
+                    with(claim) { run(interaction.target, interaction.op) }
+                }
+            }
             return
         }
         val ap = npcInteractions.apTrigger(player, interaction.target, interaction.op)
