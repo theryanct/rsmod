@@ -214,6 +214,13 @@ constructor(
 
     private fun Player.setStance(stance: CombatStance) {
         val weapon = objTypes.getOrNull(righthand)
+        // OSRS: choosing a normal attack style turns autocast off (AutocastPickerScript sets it).
+        if (autocastEnabled && weapon != null) {
+            autocastEnabled = false
+            autocastSpell = 0
+            defensiveCasting = false
+            autocast.reset(this, weapon)
+        }
         applyDinhsBulwarkDelay(weapon, stance)
         setWeaponStance(stance)
         validateChangedStanceStyle(weapon)
