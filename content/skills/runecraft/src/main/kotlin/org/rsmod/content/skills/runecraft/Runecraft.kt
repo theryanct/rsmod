@@ -3,8 +3,6 @@ package org.rsmod.content.skills.runecraft
 import jakarta.inject.Inject
 import kotlin.math.abs
 import org.rsmod.api.config.refs.stats
-import org.rsmod.api.player.features.invAddGathered
-import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.hat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.miningLvl
@@ -205,8 +203,7 @@ constructor(
             mes("You do not have a pickaxe which you have the Mining level to use.")
             return
         }
-        val essenceTypes = listOf(RunecraftObjs.rune_essence, RunecraftObjs.pure_essence)
-        if (invFullForGathering(objTypes, essenceTypes)) {
+        if (inv.isFull()) {
             mes("Your inventory is too full to hold any more essence.")
             return
         }
@@ -226,7 +223,8 @@ constructor(
                 } else {
                     RunecraftObjs.rune_essence
                 }
-            invAddGathered(essence)
+            // Never noted: runecrafting consumes essence unnoted.
+            invAdd(inv, essence)
             statAdvance(
                 stats.mining,
                 RunecraftData.ESSENCE_XP * xpMods.get(player, stats.mining),
