@@ -14,6 +14,7 @@ import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.player.vars.typeNpcUidVarp
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.PlayerList
@@ -30,6 +31,7 @@ constructor(
     private val players: PlayerList,
     private val objRepo: ObjRepository,
     private val dropTables: NpcDropTables,
+    private val eventBus: EventBus,
 ) {
     public suspend fun deathNoDrops(access: StandardNpcAccess) {
         access.death(npcRepo, seqTypes, players)
@@ -45,6 +47,7 @@ constructor(
 
     private fun Npc.spawnDeathDrops(dropCoords: CoordGrid) {
         val hero = findHero(players) ?: return
+        eventBus.publish(NpcKilledEvent(this, hero))
         val duration = hero.lootDropDuration ?: constants.lootdrop_duration
         // Npcs without a wiki drop table keep the old default: a single bones drop.
         val drops = dropTables.roll(id)
