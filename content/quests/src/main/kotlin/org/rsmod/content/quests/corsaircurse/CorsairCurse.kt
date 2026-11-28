@@ -23,6 +23,7 @@ import org.rsmod.content.quests.framework.QuestDigSpots
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
+import org.rsmod.content.quests.framework.cutscene.CutsceneRunner
 import org.rsmod.content.quests.framework.onLocOpLabel
 import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
@@ -50,7 +51,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * cache shows it at 2). `corscurs_navigator` = Gnocchi said Ithoi cooked dinner.
  *
  * Boats here until content/travel exists: Tock's Travel op between Rimmington and the cove.
- * Not done: the cutscenes, Ithoi's instance (he's spawned beside you), Big Chompy Bird Hunting
+ * Ithoi running out to the burning driftwood is a live-map cutscene. Not done: the other
+ * cutscenes, Ithoi's instance (he's spawned beside you), Big Chompy Bird Hunting
  * lines (treated as not done), "nothing interesting" lines for item-on-npc.
  */
 class CorsairCurse
@@ -62,6 +64,7 @@ constructor(
     private val objRepo: ObjRepository,
     private val xpMods: XpModifiers,
     private val aiInteractions: AiPlayerInteractions,
+    private val cutscenes: CutsceneRunner,
 ) : PluginScript() {
     private val dialogue by lazy { QuestDialogue.load(CorsairCurse::class.java, "corsair_curse") }
 
@@ -415,8 +418,22 @@ constructor(
             runQuestSection(null, dialogue, DRIFTWOOD_EARLY)
             return
         }
-        runQuestSection(null, dialogue, DRIFTWOOD_LATE)
-        setState(DRIFTWOOD_LIT)
+        // Ithoi runs down from his hut to put the fire out: proof he isn't sick.
+        val seen =
+            cutscenes.play(this, template = null, returnTo = player.coords) {
+                val ithoi = spawn(CorsairNpcs.ithoi_running, ITHOI_DOOR)
+                camMoveTo(DRIFTWOOD.translate(-4, -4), height = 600)
+                camLookAt(DRIFTWOOD, height = 150)
+                fadeIn()
+                conversation { runQuestSection(null, dialogue, DRIFTWOOD_LATE) }
+                ithoi.walkTo(DRIFTWOOD.translate(0, -1))
+                delay(4)
+                ithoi.walkTo(ITHOI_DOOR)
+                delay(3)
+                fadeOut()
+                delay(1)
+            }
+        if (seen) setState(DRIFTWOOD_LIT)
     }
 
     companion object {
@@ -446,6 +463,8 @@ constructor(
         private val RIMMINGTON_LANDING = CoordGrid(2909, 3226, 0)
         private val COVE_LANDING = CoordGrid(2574, 2837, 0)
         private val DOLL_SPOT = CoordGrid(2504, 2839, 0)
+        private val DRIFTWOOD = CoordGrid(2530, 2837, 0)
+        private val ITHOI_DOOR = CoordGrid(2531, 2833, 0)
 
         private const val TOCK_PROVEN =
             "Talking to Captain Tock after proving Ithoi poisoned the crew"
@@ -488,6 +507,7 @@ internal object CorsairNpcs : NpcReferences() {
     /* Children of the corscurs_*_sick / _postquest multinpcs. */
     val ithoi = find("corscurs_navigator")
     val ithoi_combat = find("corscurs_navigator_combat")
+    val ithoi_running = find("corscurs_navigator_running")
     val arsens = listOf(find("corscurs_thief"))
     val colins = listOf(find("corscurs_cabinboy"), find("corscurs_cabinboy_2ops"))
     val gnocci = find("corscurs_cook")

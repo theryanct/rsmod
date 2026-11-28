@@ -17,6 +17,7 @@ import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
+import org.rsmod.content.quests.framework.cutscene.CutsceneRunner
 import org.rsmod.content.quests.framework.onHeldOpLabel
 import org.rsmod.content.quests.framework.onLocOpLabel
 import org.rsmod.content.quests.framework.onNpcOpLabel
@@ -45,10 +46,11 @@ import org.rsmod.plugin.scripts.ScriptContext
  * multi use the values in between: 10 started, 15 on the island, 30 inside the manor, 40 / 75 / 95
  * a riddle read, 50 candles lit, 105 gem code entered, 135 complete.
  *
- * Murders and the showdown are cutscenes in OSRS; here they run as their transcript dialogue,
- * triggered by the action next to them (taking the bucket -> Sid, the red topaz door -> Tayten,
- * climbing out over the blown wall -> Lacey, the diamond (kitchen) door -> Mandy, the sapphire
- * door -> the Killer). Puzzles: the knife on the right painting (ruby key), 4 candles then the
+ * Murders and the showdown are live-map cutscenes (cutscene framework: victim + Killer, camera,
+ * the transcript dialogue), triggered by the action next to them (taking the bucket -> Sid, the
+ * red topaz door -> Tayten, climbing out over the blown wall -> Lacey, the diamond (kitchen) door
+ * -> Mandy, the sapphire door -> the Killer).
+ * Puzzles: the knife on the right painting (ruby key), 4 candles then the
  * tinderbox on the explosive barrel, D-E-A-D on the piano (emerald key), the knife on the unlit
  * fireplace and the gem switches S-D-Z-E-O-R (sapphire key). Reward: uncut ruby / emerald /
  * sapphire, 600 Crafting xp, 1 QP.
@@ -64,6 +66,7 @@ constructor(
     private val objTypes: ObjTypeList,
     private val objRepo: ObjRepository,
     private val xpMods: XpModifiers,
+    private val cutscenes: CutsceneRunner,
 ) : PluginScript() {
     private val dialogue by lazy {
         QuestDialogue.load(MisthalinMystery::class.java, "misthalin_mystery")
@@ -156,6 +159,31 @@ constructor(
         player.setQuestState(MISTHALIN_MYSTERY, value)
     }
 
+    /**
+     * A murder (or the showdown) as a live-map cutscene: the [victim] and the Killer appear at
+     * [spot], the camera frames them for the transcript dialogue, then the Killer slips away.
+     * Returns `false` if the scene was cut short (the quest then replays it).
+     */
+    private suspend fun ProtectedAccess.murderScene(
+        victim: NpcType?,
+        spot: CoordGrid,
+        section: String,
+    ): Boolean =
+        cutscenes.play(this, template = null, returnTo = player.coords) {
+            victim?.let { spawn(it, spot) }
+            val killer = spawn(MistNpcs.killer, spot.translate(1, 0))
+            killer.faceTile(spot)
+            camMoveTo(spot.translate(0, -5), height = 500)
+            camLookAt(spot, height = 150)
+            fadeIn()
+            delay(2)
+            conversation { runQuestSection(null, dialogue, section, speakers = speakers) }
+            killer.walkTo(spot.translate(5, 0))
+            delay(3)
+            fadeOut()
+            delay(1)
+        }
+
     private fun ProtectedAccess.takeIfRoom(obj: ObjType): Boolean {
         if (inv.isFull()) {
             mes("You don't have enough space in your inventory.")
@@ -191,8 +219,7 @@ constructor(
     private suspend fun ProtectedAccess.takeBucket() {
         if (!takeIfRoom(MistObjs.bucket)) return
         if (state == ON_ISLAND) {
-            runQuestSection(null, dialogue, "Sid's demise", speakers = speakers)
-            setState(SID_DEAD)
+            if (murderScene(MistNpcs.sid, SID_SPOT, "Sid's demise")) setState(SID_DEAD)
         }
     }
 
@@ -245,7 +272,7 @@ constructor(
         }
         if (key == MistObjs.sapphire_key && state == GEMS_SOLVED) {
             passThroughWall(door)
-            runQuestSection(null, dialogue, "Confronting the killer", speakers = speakers)
+            if (!murderScene(null, SHOWDOWN_SPOT, "Confronting the killer")) return
             mirrorHits.remove(player.uid.packed)
             setState(SHOWDOWN)
             return
@@ -255,8 +282,7 @@ constructor(
 
     private suspend fun ProtectedAccess.redTopazDoor() {
         if (state == INSIDE) {
-            runQuestSection(null, dialogue, "Tayten's demise", speakers = speakers)
-            setState(TAYTEN_DEAD)
+            if (murderScene(MistNpcs.tayten, TAYTEN_SPOT, "Tayten's demise")) setState(TAYTEN_DEAD)
             return
         }
         mes("The door is securely locked.")
@@ -264,8 +290,9 @@ constructor(
 
     private suspend fun ProtectedAccess.kitchenDoor() {
         if (state == PIANO_OPEN && carries(MistObjs.emerald_key)) {
-            runQuestSection(null, dialogue, "Mandy in the kitchen", speakers = speakers)
-            setState(MANDY_DEAD)
+            if (murderScene(MistNpcs.mandy, MANDY_SPOT, "Mandy in the kitchen")) {
+                setState(MANDY_DEAD)
+            }
             return
         }
         mes("The door is securely locked.")
@@ -341,8 +368,7 @@ constructor(
     private suspend fun ProtectedAccess.climbWall(wall: BoundLocInfo) {
         passThroughWall(wall)
         if (state == WALL_BLOWN && player.coords.x > wall.coords.x) {
-            runQuestSection(null, dialogue, "Run in with Lacey", speakers = speakers)
-            setState(LACEY_DEAD)
+            if (murderScene(MistNpcs.lacey, LACEY_SPOT, "Run in with Lacey")) setState(LACEY_DEAD)
         }
     }
 
@@ -535,6 +561,13 @@ constructor(
         private const val SPACE_PLACEHOLDER = "[3 more spaces/2 more spaces/another space]"
 
         private val ISLAND_LANDING = CoordGrid(1638, 4802, 0)
+
+        /* Where each scene plays (approximate, by the rooms the Wiki names). */
+        private val SID_SPOT = CoordGrid(1620, 4822, 0)
+        private val TAYTEN_SPOT = CoordGrid(1636, 4840, 0)
+        private val LACEY_SPOT = CoordGrid(1631, 4848, 0)
+        private val MANDY_SPOT = CoordGrid(1628, 4844, 0)
+        private val SHOWDOWN_SPOT = CoordGrid(1623, 4830, 0)
         private val LUMBRIDGE_LANDING = CoordGrid(3238, 3141, 0)
 
         /** mistmyst_candle1..4 by placed position. */

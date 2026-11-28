@@ -13,6 +13,7 @@ import org.rsmod.api.player.stat.baseStrengthLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.repo.region.RegionTemplate
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpNpcU
@@ -26,6 +27,7 @@ import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
+import org.rsmod.content.quests.framework.cutscene.CutsceneRunner
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.isQuestComplete
 import org.rsmod.content.quests.framework.onLocOpLabel
@@ -57,10 +59,11 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   (knife on bread with cooked meat), 40 fed.
  * Needs 16 QP when the QuestGates toggle is on.
  *
- * Cutscenes are played as their dialogue only: Atlas's training goes straight to the Flex unlock,
- * Checkal sees you flex without the emote tab, and the break-in ends with the player teleported
- * into the ruins facing the guardian. Not done: mining the structural pillars to hurt the guardian,
- * Charlie the Tramp's hint, Ramarno and the rest of Camdozaal, extra paid Atlas sessions.
+ * The break-in is a cutscene (cutscene framework) in an instance of the guardian room: the crew,
+ * the guardian rising, the crew fleeing; then the real fight. Atlas's training goes straight to the
+ * Flex unlock and Checkal sees you flex without the emote tab. Not done: mining the structural
+ * pillars to hurt the guardian, Charlie the Tramp's hint, Ramarno and the rest of Camdozaal, extra
+ * paid Atlas sessions.
  */
 class BelowIceMountain
 @Inject
@@ -71,6 +74,7 @@ constructor(
     private val objRepo: ObjRepository,
     private val xpMods: XpModifiers,
     private val aiInteractions: AiPlayerInteractions,
+    private val cutscenes: CutsceneRunner,
 ) : PluginScript() {
     private val dialogue by lazy {
         QuestDialogue.load(BelowIceMountain::class.java, "below_ice_mountain")
@@ -167,7 +171,7 @@ constructor(
             }
             state == STARTED && recruited() == BimVarBits.recruits.size -> {
                 runQuestSection(npc, dialogue, "Talking to Willow (2)", hooks, speakers)
-                if (breakIn) {
+                if (breakIn && breakInScene()) {
                     player.setQuestState(BELOW_ICE_MOUNTAIN, RUINS_OPEN)
                     enterRuins()
                 }
@@ -353,6 +357,34 @@ constructor(
 
     /* The ruins */
 
+    /** The crew opens the ruins and the guardian wakes (an instance of the guardian room). */
+    private suspend fun ProtectedAccess.breakInScene(): Boolean =
+        cutscenes.play(this, RUINS_TEMPLATE, returnTo = INSIDE) {
+            val crew =
+                listOf(
+                    spawn(BimNpcs.cutscene_willow, INSIDE.translate(-1, 1)),
+                    spawn(BimNpcs.cutscene_marley, INSIDE.translate(1, 1)),
+                    spawn(BimNpcs.cutscene_checkal, INSIDE.translate(-1, 2)),
+                    spawn(BimNpcs.cutscene_burntof, INSIDE.translate(1, 2)),
+                )
+            teleport(INSIDE)
+            camMoveTo(INSIDE.translate(0, -2), height = 700)
+            camLookAt(GUARDIAN_SPAWN, height = 300)
+            fadeIn()
+            for (member in crew) member.walkTo(GUARDIAN_SPAWN.translate(0, -4))
+            delay(4)
+            val guardian = spawn(BimNpcs.guardian_cutscene, GUARDIAN_SPAWN)
+            guardian.faceTile(INSIDE)
+            camShake(axis = 1, random = 2, amplitude = 10, rate = 30)
+            delay(3)
+            for (member in crew) member.walkTo(INSIDE)
+            delay(3)
+            for (member in crew) despawn(member)
+            despawn(guardian)
+            fadeOut()
+            delay(2)
+        }
+
     private suspend fun ProtectedAccess.enterRuins() {
         if (state < RUINS_OPEN) {
             mes("The entrance is blocked by rocks.")
@@ -424,6 +456,17 @@ constructor(
         private val OUTSIDE = CoordGrid(2998, 3493, 0)
         private val GUARDIAN_SPAWN = CoordGrid(2952, 5774, 0)
 
+        /** The guardian room of Camdozaal (zones 368-370 x 720-723). */
+        private val RUINS_TEMPLATE =
+            RegionTemplate.create {
+                copy(RUINS_ZONE_X, RUINS_ZONE_Z, 0) {
+                    zoneWidth = 3
+                    zoneLength = 4
+                }
+            }
+        private const val RUINS_ZONE_X = 368
+        private const val RUINS_ZONE_Z = 720
+
         val BELOW_ICE_MOUNTAIN =
             QuestDef(
                 name = "Below Ice Mountain",
@@ -449,6 +492,11 @@ internal object BimNpcs : NpcReferences() {
     val tina = find("bim_cutscene_tina")
     val ramarno = find("camzodaal_ramarno")
     val guardian = find("bim_golem_boss")
+    val guardian_cutscene = find("bim_golem_guardian_cutscene")
+    val cutscene_willow = find("bim_cutscene_willow")
+    val cutscene_marley = find("bim_cutscene_marley")
+    val cutscene_checkal = find("bim_cutscene_checkal")
+    val cutscene_burntof = find("bim_cutscene_burntof")
 }
 
 internal object BimLocs : LocReferences() {
