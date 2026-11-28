@@ -1,0 +1,674 @@
+# Generated from the OSRS Wiki page "Transcript:Death Plateau" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Denulth
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, how can I help?
+1	select	Select an option
+1	option	Do you have any quests for me?
+2	line	Player	Do you have any quests for me?
+2	line	Denulth	I don't know if you can help us!
+2	line	Denulth	The trolls have taken up camp on Death Plateau! They are using it to launch raids at night on the village. We have tried to attack the camp but the main path is heavily guarded!
+2	line	Player	Perhaps there is a way you can sneak up at night?
+2	line	Denulth	If there is another way I do not know of it.
+2	line	Denulth	Do you know of such a path?
+2	select	Start the Death Plateau quest?
+2	option	Yes.
+3	line	Player	No but perhaps I could try and find one?
+3	line	Denulth	Citizen you would be well rewarded!
+3	line	Denulth	If you go up to Death Plateau be very careful as the trolls will attack you on sight!
+3	line	Player	I'll be careful.
+3	line	Denulth	One other thing.
+3	line	Player	What's that?
+3	line	Denulth	All of our equipment is kept in the castle on the hill.
+3	line	Denulth	The stupid guard that was on duty last night lost the combination to the lock! I told the Prince that the Imperial Guard should've been in charge of security!
+3	line	Player	No problem, what does the combination look like?
+3	line	Denulth	The equipment room is unlocked when the stone balls are placed in the correct order on the stone mechanism outside it. The right order is written on a piece of paper the guard had.
+3	line	Player	A stone what...?!
+3	line	Denulth	Well citizen, the Prince is fond of puzzles. Why we couldn't just have a key is beyond me!
+3	line	Player	I'll get on it right away!
+3	action	end
+2	option	No.
+3	line	Player	No, sorry.
+3	line	Denulth	Never mind citizen.
+3	line	Denulth	Can I assist you with anything else?
+3	action	initial
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Denulth	Welcome to the Principality of Burthorpe!
+2	line	Denulth	We are the Imperial Guard for his Royal Highness Prince Anlaf of Burthorpe.
+2	line	Denulth	Can I assist you with anything else?
+2	action	initial
+1	option	You can't, thanks.
+2	line	Player	You can't, thanks.
+2	action	end
+0	section	Talking to Denulth again
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, is there anything you'd like to know?
+1	select	Select an option
+1	option	Can you remind me of the quest I am on?
+2	line	Player	Can you remind me of the quest I am on?
+2	line	Denulth	You offered to see if you could find another way up Death Plateau. We could then use it to sneak up and attack the trolls by night.
+2	line	Player	Ah yes, and the guard had lost the combination to your equipment room in the castle on the hill?
+2	line	Denulth	That's right citizen, you offered to recover the combination and unlock the door.
+2	line	Denulth	Is there anything else you would like to know?
+2	action	initial
+1	option	I thought the White Knights controlled Asgarnia?
+2	line	Player	I thought the White Knights controlled Asgarnia?
+2	line	Denulth	You are right citizen. The White Knights have taken advantage of the old and weak king, they control most of Asgarnia, including Falador. However they do not control Burthorpe!
+2	line	Denulth	We are the prince's elite troops! We keep Burthorpe secure!
+2	line	Denulth	The White Knights have overlooked us, until now! They are pouring money into their war against the Black Knights, they are looking for an excuse to stop our funding and I'm afraid they may have found it!
+2	line	Denulth	If we can not destroy the troll camp on Death Plateau then the Imperial Guard will be disbanded and Burthorpe will come under control of the White Knights. We can not let this happen!
+2	line	Denulth	Is there anything else you would like to know?
+2	action	initial
+1	option	What is this place?
+2	action	above
+1	option	That's all, thanks.
+2	line	Player	That's all, thanks.
+2	line	Denulth	God speed citizen.
+2	action	end
+0	section	Trying to enter Harold's room before talking to Eohric
+1	line	Player	I'd better not go into someone's bedroom without a reason!
+1	action	end
+0	section	Finding the combination
+0	section	Talking to Eohric
+1	line	Player	Hi!
+1	line	Eohric	Hi, can I help?
+1	select	Select an option
+1	option	I'm looking for the guard that was on last night.
+2	line	Player	I'm looking for the guard that was on last night.
+2	line	Eohric	There was only one guard on last night. Harold. He's a nice lad, if a little dim.
+2	line	Player	Do you know where he is staying?
+2	line	Eohric	Harold is staying at the Toad and Chicken.
+2	line	Player	Thanks!
+2	action	end
+1	option	Do you know of another way up Death Plateau?
+2	line	Player	Do you know of another way up Death Plateau?
+2	line	Eohric	No, sorry. I wouldn't want to go north-east from here, it's very rocky and barren.
+2	action	end
+1	option	No, I'm just looking around.
+2	line	Player	No, I'm just looking around.
+2	action	end
+0	section	Talking to Eohric again
+1	line	Eohric	Hi, can I help?
+1	select	Select an option
+1	option	Where is the guard that was on last night staying?
+2	line	Player	Where is the guard that was on last night staying?
+2	line	Eohric	Harold is staying at the local inn, the Toad and Chicken.
+2	action	end
+1	option	Do you know of another way up Death Plateau?
+2	action	above
+1	option	No, I'm just looking around.
+2	action	above
+0	section	Entering Harold's room
+1	box	You knock on the door.
+1	line	Harold	Come in!
+1	action	end
+0	section	Talking to Harold
+1	line	Player	Hello there.
+1	line	Harold	Hi.
+1	select	Select an option
+1	option	You're the guard that was on duty last night?
+2	line	Player	You're the guard that was on duty last night?
+2	line	Harold	Yeah.
+2	line	Player	Denulth said that you lost the combination to the equipment room?
+2	line	Harold	I don't want to talk about it!
+2	action	end
+1	option	Can I buy you a drink?
+2	action	below
+0	section	Talking to Harold again
+1	line	Player	Hello there.
+1	line	Harold	What?
+1	select	Select an option
+1	option	You're the guard that was on duty last night?
+2	line	Player	You're the guard that was on duty last night?
+2	line	Harold	I said I don't want to talk about it!
+2	action	end
+1	option	Can I buy you a drink?
+2	action	below
+0	section	Talking to Eohric after talking to Harold
+1	line	Player	Hi!
+1	line	Eohric	Hi, can I help?
+1	line	Player	I found Harold but he won't talk to me!
+1	line	Eohric	Hmm. Harold has got in trouble a few times over his drinking and gambling. Perhaps he'd open up after a drink?
+1	line	Player	Thanks, I'll try that!
+1	action	end
+0	section	Talking to Eohric again after learning Harold's weakness
+1	line	Player	Hi!
+1	line	Eohric	Hi, can I help?
+1	line	Player	You said that Harold had a weakness?
+1	line	Eohric	Yes, if you buy Harold a beer he might talk to you. I also know he has a weakness for gambling. Hope that helps!
+1	line	Player	Thanks for the help!
+1	action	end
+0	section	Talking to Harold after learning his weakness
+1	line	Player	Hello there.
+1	line	Harold	What?
+1	line	Player	Can I buy you a drink?
+1	line	Harold	Now you're talking! An Asgarnian Ale please!
+1	cond	If the player does not have an Asgarnian ale:
+2	line	Player	I'll go and get you one.
+2	action	end
+1	box	You give Harold an Asgarnian Ale.
+1	line	Harold	Arrh. That hit the spot!
+1	select	Select an option
+1	option	Where were you when you last had the combination?
+2	line	Player	Where were you when you last had the combination?
+2	line	Harold	I honestly don't know! I've looked everywhere. I've searched the castle and my room!
+2	line	Player	Have you tried looking between here and the castle?
+2	line	Harold	Yeah, I tried that.
+2	line	Harold	I need another beer.
+2	action	end
+1	option	Would you like to gamble?
+2	line	Player	Would you like to gamble?
+2	line	Harold	Good. Good. I have some dice. How much do you want to offer?
+2	cond	If the player enters 0:
+3	action	end
+2	cond	If the player enters more than they are holding:
+3	action	end
+2	cond	If the player enters more than 1000:
+3	line	Harold	Woah! Do you think I'm made of money? Max bet is 1000 gold.
+3	action	end
+2	line	Harold	OK. I'll roll first!
+2	line	Harold	Don't forget that once I start my roll you can't back out of the bet! If you do you lose your stake!
+2	action	(Gambling interface opens.)
+1	option	Can I buy you a drink?
+2	line	Player	Can I buy you a drink?
+2	line	Harold	Sounds good! I normally drink Asgarnian Ale but you know what?
+2	line	Player	What?
+2	line	Harold	I really fancy one of those Blurberry Specials. I never get over to the Gnome Stronghold so I haven't had one for ages!
+2	cond	If the player does not have a Blurberry special:
+3	line	Player	I'll go and get you one.
+3	action	end
+2	box	You give Harold a Blurberry Special.
+2	line	Harold	Wow!
+2	line	Harold	Now THAT hit the spot!
+2	action	end
+0	section	Talking to Harold after giving him an Asgarnian ale
+1	line	Player	Hello there.
+1	line	Harold	Hi.
+1	select	Select an option
+1	option	Where were you when you last had the combination?
+2	action	above
+1	option	Would you like to gamble?
+2	action	above
+1	option	Can I buy you a drink?
+2	action	above
+0	section	Talking to Harold after giving him a Blurberry special
+1	line	Player	Hello there.
+1	line	Harold	'Ello matey!
+1	select	Select an option
+1	option	Where were you when you last had the combination?
+2	line	Harold	Hmm...!
+2	line	Harold	Er...!
+2	line	Harold	What wash the queshtion?
+2	action	end
+1	option	Would you like to gamble?
+2	line	Player	Would you like to gamble?
+2	line	Harold	Shure!
+2	line	Harold	Place your betsh pleashe!
+2	line	Harold	*giggle*
+2	cond	If the player enters 0:
+3	action	end
+2	cond	If the player enters more than they are holding:
+3	action	end
+2	cond	If the player enters more than 1000:
+3	line	Harold	Eashy tiger! Max bet ish 1000 coinsh.
+3	action	end
+2	line	Harold	Right...er...here goes...
+2	action	(Gambling interface opens.)
+1	option	Can I buy you a drink?
+2	line	Player	Can I buy you a drink?
+2	line	Harold	I fink I've had enough!
+2	action	end
+0	section	Finishing a gamble
+1	cond	If Harold is not drunk and Harold wins:
+2	box	You give Harold his winnings.
+2	action	end
+1	cond	If Harold is not drunk and the player wins:
+2	cond	If Harold still has money:
+3	box	Harold has given you your winnings!
+3	action	end
+2	cond	If Harold is out of money:
+3	line	Harold	Oh dear, I seem to have run out of money!
+3	line	Harold	Here's what I have.
+3	box	Harold has given you some of your winnings!
+3	line	Harold	I'll write you out an IOU for the rest.
+3	box	Harold has given you an IOU scribbled on some paper.
+3	action	end
+1	cond	If Harold is drunk:
+2	option	Dialogue 1
+3	line	Harold	Shixteen! How am I shupposhed to beat that!
+3	action	continue
+2	option	Dialogue 2
+3	line	Harold	I didn't know you could ushe four dishe. Oh well.
+3	action	continue
+2	option	Dialogue 3
+3	line	Harold	*hic*
+3	action	continue
+2	option	Dialogue 4
+3	line	Harold	I sheemed to have rolled a one.
+3	action	continue
+2	box	Harold is so drunk he can hardly see, let alone count!
+2	cond	If Harold still has money:
+3	box	Harold has given you your winnings!
+3	action	end
+2	cond	If Harold is out of money:
+3	line	Harold	Um...not enough money.
+3	line	Harold	Heresh shome of it.
+3	box	Harold has given you some of your winnings!
+3	line	Harold	I owe you the resht!
+3	box	Harold has given you an IOU scribbled on some paper.
+3	action	end
+0	section	Talking to Harold after losing the IOU
+1	line	Player	Hello there.
+1	cond	If Harold is not drunk:
+2	line	Harold	Hi.
+2	line	Player	I've lost the IOU you gave me.
+2	line	Harold	I'll write you another.
+1	cond	If Harold is drunk:
+2	line	Harold	*hic*
+2	line	Player	I've lost the IOU you gave me.
+2	line	Harold	Oh dear.
+1	cond	If the player has not yet read the IOU:
+2	box	Drops to floor with full inventory.
+2	action	end
+1	cond	If the player has read the IOU:
+2	box	Harold has given you the IOU, which you know is the combination.
+2	action	end
+0	section	Talking to Harold while still holding the IOU if Harold is not drunk
+1	line	Player	Hello there.
+1	line	Harold	Hi.
+1	select	Select an option
+1	option	Where were you when you last had the combination?
+2	action	above
+1	option	Would you like to gamble?
+2	line	Player	Would you like to gamble?
+2	line	Harold	I've run out of money!
+2	line	Harold	Oh dear. I need beer.
+2	action	end
+1	option	Can I buy you a drink?
+2	line	Player	Can I buy you a drink?
+2	line	Harold	Now you're talking! An Asgarnian Ale please!
+2	cond	If the player does not have an Asgarnian ale:
+3	line	Player	I'll go and get you one.
+3	action	end
+2	cond	If the player has an Asgarnian ale:
+3	box	You give Harold an Asgarnian Ale.
+3	option	Dialogue 1
+4	line	Harold	*burp*
+3	option	Dialogue 2
+4	line	Harold	Mmm... Asgarnian Ale.
+3	option	Dialogue 3
+4	line	Harold	Thanks!
+3	option	Dialogue 4
+4	line	Harold	Arrh. That hit the spot!
+3	action	end
+0	section	Talking to Harold while still holding the IOU if Harold is drunk
+1	line	Player	Hello there.
+1	line	Harold	*hic*
+1	line	Player	Would you like to gamble?
+1	line	Harold	I'm shure I had money, not anymore!
+1	action	end
+0	section	Reading the IOU
+1	line	Player	The IOU says that Harold owes me some money.
+1	line	Player	Wait just a minute!
+1	line	Player	The IOU is written on the back of the combination! The stupid guard had it in his back pocket all the time!
+1	box	You have found the combination!
+1	action	end
+0	section	Using Asgarnian ale on Harold
+1	line	Player	Can I buy you a drink?
+1	action	above
+0	section	Completing the ball combination
+0	section	Talking to Archer upstairs in the equipment room
+1	line	Player	Hi!
+1	line	Archer	Thank goodness you opened that door! I've been trapped here since last night!
+1	line	Player	No problem!
+1	action	end
+0	section	Talking to Eohric after opening the equipment room
+1	line	Player	Hi!
+1	line	Eohric	Hi, can I help?
+1	select	Select an option
+1	option	What is this castle?
+2	line	Player	What is this castle?
+2	line	Eohric	Welcome to Burthorpe Castle! Home to his Royal Highness the Prince of Burthorpe, Heir to the Throne of Asgarnia!
+2	line	Player	Wow!
+2	line	Eohric	Anything else I can help you with?
+2	action	initial
+1	option	Where is the prince?
+2	line	Player	Where is the prince?
+2	line	Eohric	We do not disclose his majesty's business.
+2	line	Eohric	Anything else I can help you with?
+2	action	initial
+1	option	Do you have any quests for me?
+2	line	Player	Do you have any quests for me?
+2	line	Eohric	Yes actually I do, we need another servant.
+2	line	Player	Does this noble quest have a name?
+2	line	Eohric	Yes, it's the... er... Empty the Cesspit Quest!
+2	line	Player	I'll give it a miss!
+2	line	Eohric	Anything else I can help you with?
+2	action	initial
+1	option	No, I'm just looking around.
+2	line	Player	No, I'm just looking around.
+2	action	end
+0	section	New route up Death Plateau
+0	section	Talking to Denulth after opening the equipment room
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, is there anything you'd like to know?
+1	select	Select an option
+1	option	Can you remind me of the quest I am on?
+2	line	Player	Can you remind me of the quest I am on?
+2	line	Denulth	You offered to see if you could find another way up Death Plateau. We could then use it to sneak up and attack the trolls by night.
+2	line	Player	Ah yes, and the guard had lost the combination to your equipment room in the castle on the hill?
+2	line	Denulth	That's right citizen, you offered to recover the combination and unlock the door.
+2	line	Player	I've unlocked the equipment room so I just need to find an alternate route up Death Plateau!
+2	line	Denulth	Good work citizen!
+2	line	Denulth	Is there anything else you would like to know?
+2	action	initial
+1	option	I thought the White Knights controlled Asgarnia?
+2	action	above
+1	option	What is this place?
+2	action	above
+1	option	That's all, thanks.
+2	action	above
+0	section	Opening Tenzing's door before talking to Saba
+1	box	You knock on the door.
+1	line	Tenzing	No milk today! Thank you!
+1	action	end
+0	section	Talking to Saba
+1	line	Player	Hello!
+1	line	Saba	What?!
+1	select	Select an option
+1	option	I'm looking for the guard that was on last night.
+2	line	Player	I'm looking for the guard that was on duty at the castle last night.
+2	line	Saba	Who?!
+2	line	Saba	Buzz off!
+2	action	end
+1	option	Do you know of another way up Death Plateau?
+2	line	Player	Do you know of another way up Death Plateau?
+2	line	Saba	Why would I want to go up there? I just want to be left in peace!
+2	line	Saba	It used to be just humans trampling past my cave and making a racket. Now there's those blasted trolls too! Not only do they stink and argue with each other loudly but they are always fighting the humans.
+2	line	Saba	I just want to be left in peace!
+2	line	Player	Ah... I might be able to help you.
+2	line	Saba	How?!
+2	line	Player	I'm trying to help the...er...humans to reclaim back Death Plateau. If you help me then at least you'd be rid of the trolls.
+2	line	Saba	Hmph.
+2	line	Saba	Let me see...
+2	line	Saba	I've only been up Death Plateau once to complain about the noise but those pesky trolls started throwing rocks at me!
+2	line	Saba	Before the trolls came there used to be a nettlesome Sherpa that took humans exploring or something equally stupid. Perhaps he'd know another way.
+2	line	Player	Where does this Sherpa live?
+2	line	Saba	I don't know but it can't be far as he used to be around all the time!
+2	action	end
+1	option	Nothing, sorry!
+2	line	Player	Nothing, sorry!
+2	action	end
+0	section	Talking to Saba before visiting Tenzing
+1	line	Player	Hello.
+1	line	Saba	Have you got rid of those pesky trolls yet?
+1	line	Player	Where did you say this Sherpa was?
+1	line	Saba	I dunno but he must live around here somewhere!
+1	action	end
+0	section	Opening Tenzing's door after talking to Saba
+1	box	You knock on the door.
+1	line	Tenzing	No milk today! Thank you!
+1	line	Player	I'm not the milkman, I need your help!
+1	line	Tenzing	Oh...OK. You'd better come in then.
+1	action	end
+0	section	Trying to enter Tenzing's chicken pen
+1	line	Tenzing	Where do you think you're going? This is private property!
+1	action	end
+0	section	Talking to Tenzing
+1	line	Player	Hello!
+1	line	Tenzing	Hello. How can I help?
+1	line	Player	I'm helping the Imperial Guard. They need to find a way to sneak up Death Plateau to destroy the troll camp! Saba seemed to think you'd be able to help.
+1	line	Tenzing	Ah...Saba is still alive and kicking?
+1	line	Player	Yeh, he seemed very bitter.
+1	line	Tenzing	That's Saba alright!
+1	line	Tenzing	I do know of a secret way up to Death Plateau, the Imperial Guard would be able to use it at night and not be seen until it was too late!
+1	line	Tenzing	I'd be happy to show you it if you do something for me first.
+1	line	Player	Name it.
+1	line	Tenzing	I don't get into town much and I'm getting low on supplies. I need ten loaves of bread and ten cooked trout, that should see me through the winter.
+1	line	Player	Anything else?
+1	line	Tenzing	Yes. My climbing boots need to have new spikes, so can you take them to Dunstan in Burthorpe? He always puts my spikes on for me.
+1	select	Select an option
+1	option	OK, I'll get those for you.
+2	line	Player	OK, I'll get those for you.
+2	line	Tenzing	Thank you traveller!
+2	box	Tenzing has given you his climbing boots.
+2	action	end
+1	option	I'll find the secret way for myself.
+2	line	Player	I'll find the secret way for myself.
+2	line	Tenzing	Hmph.
+2	action	end
+0	section	Talking to Tenzing before fixing the boots
+1	line	Player	Hello!
+1	line	Tenzing	Has Dunstan added spikes to my climbing boots yet?
+1	line	Player	No, not yet.
+1	line	Tenzing	Well, when he has, bring the boots to me with ten loaves of bread and ten cooked trout. I have to prepare for the winter, after all.
+1	action	end
+0	section	Talking to Dunstan
+1	line	Player	Hi!
+1	line	Dunstan	Hi! How can I help?
+1	line	Player	Tenzing has asked me to bring you his climbing boots, he needs to have spikes put on them.
+1	line	Dunstan	He does, does he? Well I won't do it till he pays for the last set I made for him!
+1	line	Player	This is really important!
+1	line	Dunstan	How so?
+1	line	Player	Well, I need the Sherpa to show me a secret way up Death Plateau so that the Imperial Guard can destroy the troll camp! He won't help me till I've got the spikes!
+1	line	Dunstan	Hmm. That's different!
+1	line	Dunstan	Tell you what, I'll make them for you on one condition.
+1	line	Player	*sigh* What's the condition?
+1	line	Dunstan	My son has just turned 16 and I'd very much like him to join the Imperial Guard. The Prince's elite forces are invite only so it's very unlikely he'll get in. If you can arrange that you have a deal!
+1	line	Player	That won't be a problem as I'm helping out the Imperial Guard!
+1	line	Dunstan	Excellent! You'll need to bring an Iron bar for the spikes!
+1	action	end
+0	section	Talking to Dunstan again
+1	line	Player	Hi!
+1	line	Dunstan	Have you managed to get my son signed up for the Imperial Guard?
+1	line	Player	Not yet! I just need to speak to Denulth!
+1	action	end
+0	section	Talking to Denulth after talking to Dunstan
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, have you found another way up Death Plateau?
+1	line	Player	Yes there is another way up Death Plateau!
+1	line	Denulth	We are saved!
+1	line	Player	There's one thing...
+1	line	Denulth	And what is that citizen?
+1	line	Player	There is a Sherpa who will only show me the secret way if I first get some spikes for his climbing boots. The smith will only do this for me if you sign up his son for the Imperial Guard!
+1	line	Denulth	Hmm...this is very irregular.
+1	line	Player	Will you not do this?
+1	line	Denulth	I have heard of Dunstan's son, he is a very promising young man. For the sake of your mission we can make an exception!
+1	box	Denulth has given you a certificate.
+1	line	Denulth	This certificate proves that we have accepted Dunstan's son for training in the Imperial Guard!
+1	line	Player	Thank you Denulth, I shall be back shortly!
+1	action	end
+0	section	Talking to Denulth after losing the certificate
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, have you found the secret way up Death Plateau?
+1	line	Player	I'm working on it but I've lost the certificate!
+1	line	Denulth	No problem, I have a duplicate.
+1	box	Denulth has given you a certificate.
+1	action	end
+0	section	Talking to Dunstan after losing the certificate
+1	line	Player	Hi!
+1	line	Dunstan	Have you managed to get my son signed up for the Imperial Guard?
+1	line	Player	I have but I don't have the entrance certificate on me.
+1	line	Dunstan	Good but I need to have the certificate.
+1	action	end
+0	section	Talking to Dunstan while holding the certificate
+1	line	Player	Hi!
+1	line	Dunstan	Have you managed to get my son signed up for the Imperial Guard?
+1	box	You give Dunstan the certificate.
+1	line	Dunstan	Thank you!
+1	line	Dunstan	Now to keep my end of the bargain. Give me the boots and an iron bar and I'll put on the spikes.
+1	cond	If the player has the boots and an iron bar:
+2	box	You give Dunstan an iron bar and the climbing boots.
+2	box	Dunstan has given you the spiked boots.
+2	line	Player	Thank you!
+2	line	Dunstan	No problem.
+1	action	end
+0	section	Talking to Dunstan before getting the spiked boots
+1	line	Player	Hi!
+1	line	Dunstan	Hi!
+1	line	Dunstan	Now to keep my end of the bargain. Give me the boots and an iron bar and I'll put on the spikes.
+1	cond	If the player has neither climbing boots nor iron bar:
+2	line	Player	I don't have the iron bar or the climbing boots.
+2	action	end
+1	cond	If the player does not have the climbing boots:
+2	line	Player	I don't have the climbing boots.
+2	action	end
+1	cond	If the player does not have an iron bar:
+2	line	Player	I don't have the iron bar.
+2	action	end
+1	box	You give Dunstan an iron bar and the climbing boots.
+1	box	Dunstan has given you the spiked boots.
+1	line	Player	Thank you!
+1	line	Dunstan	No problem.
+1	action	end
+0	section	Talking to Dunstan after getting the spiked boots
+1	line	Player	Hi!
+1	line	Dunstan	Hi!
+1	line	Dunstan	I see you've got the spiked boots. Are you going to take them to the Sherpa?
+1	line	Player	I will do shortly.
+1	action	end
+0	section	Trying to wear the climbing boots
+0	section	Trying to wear the spiked boots
+0	section	Talking to Tenzing without climbing or spiked boots
+1	line	Player	Hello!
+1	line	Tenzing	Have you brought me the items I asked for?
+1	line	Player	I've lost the climbing boots.
+1	line	Tenzing	These are expensive, do not lose another pair!
+1	box	Drops to floor with no inventory space.
+1	action	end
+0	section	Talking to Tenzing while holding climbing or spiked boots
+1	line	Player	Hello!
+1	line	Tenzing	Have you brought me the items I asked for?
+1	cond	If the player is missing spiked boots, bread, and trout:
+2	line	Player	I don't have the: Spiked boots. Ten loaves of bread. Ten cooked trout.
+2	action	end
+1	cond	If the player is missing spiked boots and bread:
+2	line	Player	I don't have the: Spiked boots. Ten loaves of bread.
+2	action	end
+1	cond	If the player is missing spiked boots and trout:
+2	line	Player	I don't have the: Spiked boots. Ten cooked trout.
+2	action	end
+1	cond	If the player is missing bread and trout:
+2	line	Player	I don't have the: Ten loaves of bread. Ten cooked trout.
+2	action	end
+1	cond	If the player is missing spiked boots:
+2	line	Player	I don't have the: Spiked boots.
+2	action	end
+1	cond	If the player is missing bread:
+2	line	Player	I don't have the: Ten loaves of bread.
+2	action	end
+1	cond	If the player is missing trout:
+2	line	Player	I don't have the: Ten cooked trout.
+2	action	end
+1	box	You give Tenzing the Spiked boots.
+1	box	You give Tenzing the loaves of bread and the cooked trout.
+1	line	Tenzing	Thank you very much traveller. I'm now ready for the winter!
+1	line	Player	You said you would show me the secret way to Death Plateau?
+1	line	Tenzing	Yes, of course! I drew up a map in case I ever needed to use it again.
+1	box	Tenzing has given you a map of the secret way!
+1	line	Tenzing	I don't think the Trolls have found the secret way yet, if they had I would've been attacked by now.
+1	line	Player	OK thanks but I think I'd better check the path. I don't want to send the Imperial Guards to their death!
+1	line	Tenzing	You are wise for one so young.
+1	action	end
+0	section	Talking to Tenzing after losing the map
+1	line	Player	Hello Tenzing!
+1	line	Tenzing	Hello again traveller. What can I do for you?
+1	line	Player	I've lost the secret way map.
+1	line	Tenzing	Never mind. I'll quickly draw you another one.
+1	box	Drops to floor with full inventory.
+1	action	end
+0	section	Talking to Tenzing while holding the map
+1	line	Player	Hello Tenzing!
+1	line	Tenzing	Hello again traveller. What can I do for you?
+1	select	Select an option
+1	option	I'm lost!
+2	line	Player	I'm lost!
+2	line	Tenzing	To get back to Burthorpe follow the path going east.
+2	line	Tenzing	I thought you were going to investigate the secret way to Death Plateau? Use the back door to my hut, hop over the stile and follow that path.
+2	line	Player	Oh yes, of course! Thanks!
+2	action	end
+1	option	Nothing, thanks.
+2	line	Player	Nothing, thanks.
+2	line	Tenzing	Go in peace traveller.
+2	action	end
+0	section	Talking to Saba after getting the map
+1	line	Player	Hello.
+1	line	Saba	Have you got rid of those pesky trolls yet?
+1	line	Player	I'm working on it!
+1	line	Saba	Grr!
+1	action	end
+0	section	Trying to climb rocks to troll country
+0	section	Walking far enough up the Death Plateau trail
+1	line	Player	I think this is far enough, I can see Death Plateau and it looks like the trolls haven't found the path. I'd better go and tell Denulth.
+1	action	end
+0	section	Talking to Dunstan
+1	line	Dunstan	Hi! Did you want something?
+1	option	Can you put some spikes on my Climbing boots?
+1	option	How is your son getting on?
+2	line	Dunstan	He is getting on fine! He has just started his basic training and has already been promoted to corporal! I'm really proud of him!
+2	line	Player	I'm happy for you!
+2	line	Dunstan	Anything else before I get on with my work?
+2	action	previous
+1	option	Is it OK if I use your anvil?
+1	option	Nothing, thanks.
+0	section	Finishing up
+0	section	Talking to Tenzing after scouting the path
+1	line	Player	Hello Tenzing!
+1	line	Tenzing	Hello again traveller. What can I do for you?
+1	select	Select an option
+1	option	I'm lost!
+2	line	Player	I'm lost!
+2	line	Tenzing	To get back to Burthorpe follow the path going east.
+2	line	Player	Oh yes, of course! Thanks!
+2	action	end
+1	option	Nothing, thanks.
+2	action	above
+0	section	Talking to Denulth after opening the equipment room and exploring the path
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, have you found the secret way up Death Plateau?
+1	line	Player	Yes! There is a path that runs from a Sherpa's hut around the back of Death Plateau. The trolls haven't found it yet. The Sherpa made a map I can give you.
+1	cond	If the player doesn't have the map:
+2	line	Player	I don't have the map on me.
+2	action	continues
+1	cond	If the player has the map:
+2	box	You give Denulth the map of the secret way.
+2	line	Denulth	Excellent, this looks perfect. They will never see us coming.
+2	action	continues
+1	line	Denulth	Have you managed to open the equipment room?
+1	cond	If the player doesn't have the combination:
+2	line	Player	I have opened the door but I don't have the combination on me.
+2	action	end
+1	cond	If the player has the combination:
+2	line	Player	Yes! The door is open and here is the combination.
+2	box	You give Denulth the combination to the equipment room.
+2	action	continues
+1	cond	If the player has not turned in all the items:
+2	action	end
+1	cond	If the player has turned in all the items:
+2	line	Denulth	Well done citizen! We will reward you by training you in attack!
+2	line	Denulth	I shall present you with some steel fighting claws. In addition I shall show you the knowledge of creating the fighting claws for yourself.
+2	line	Denulth	You are now an honorary member of the Imperial Guard!
+0	section	Talking to Denulth after giving him the map but not the combination
+1	line	Player	Hello!
+1	line	Denulth	Hello citzen, I have the map of the secret way you gave me earlier.
+1	line	Denulth	Have you managed to open the equipment room?
+1	action	above
+0	section	Talking to Denulth after giving him the combination but not the map
+1	line	Player	Hello!
+1	line	Denulth	Hello citizen, have you found the secret way up Death Plateau?
+1	line	Player	Yes! There is a path that runs from a Sherpa's hut around the back of Death Plateau. The trolls haven't found it yet. The Sherpa made a map I can give you.
+1	cond	If the player doesn't have the map:
+2	line	Player	I don't have the map on me.
+2	action	continues
+1	cond	If the player has the map:
+2	box	You give Denulth the map of the secret way.
+2	line	Denulth	Excellent, this looks perfect. They will never see us coming.
+2	action	continues
+1	line	Denulth	I have the combination to the equipment room that you recovered for me.
+1	cond	If the player has not turned in all the items:
+2	action	end
+1	cond	If the player has turned in all the items:
+2	line	Denulth	Well done citizen! We will reward you by training you in attack!
+2	line	Denulth	I shall present you with some steel fighting claws. In addition I shall show you the knowledge of creating the fighting claws for yourself.
+2	line	Denulth	You are now an honorary member of the Imperial Guard!
