@@ -1237,3 +1237,23 @@ coords = '2_30_80_32_26'
 [[spawn]]
 npc = 'cowboss_farmer'
 coords = '0_49_51_34_15'
+
+# Spirit of Adventure: Bernina on the Auburn Valley road north of the Darkfrost (Wiki 1495,3317;
+# multinpc base). Bernard (no Wiki map) on the south-east ascent of the Proudspire with Bernina's
+# mountain spot beside him, and Bernard again south of the summit obelisk (1569,3236). The
+# Proudspire plateau is plane-1 floor over bridge tiles, so its logical level is 0.
+[[spawn]]
+npc = 'spiritofadventure_bernina'
+coords = '0_23_51_23_53'
+
+[[spawn]]
+npc = 'spiritofadventure_bernard'
+coords = '0_24_50_46_24'
+
+[[spawn]]
+npc = 'spiritofadventure_bernina_mountain'
+coords = '0_24_50_47_24'
+
+[[spawn]]
+npc = 'spiritofadventure_bernard_top'
+coords = '0_24_50_34_32'
