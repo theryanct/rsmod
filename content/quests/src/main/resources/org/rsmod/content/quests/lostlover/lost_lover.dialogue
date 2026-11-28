@@ -1,0 +1,59 @@
+# Generated from the OSRS Wiki page "Transcript:Lost Lover" by tools/quests/transcript_to_dialogue.py
+# No hand edits.
+0	section	Two Lovers, Lost
+0	section	Talking to Fabia
+1	line	Fabia	I can't belive Xilo hasn't shown up.
+1	line	Player	Were you expecting to meet someone here?
+1	line	Fabia	My... friend, Xilo. I told her to meet me by the magic trees of the rainforest. We don't often have a chance to meet without a crowd of people around.
+1	line	Player	Why? Is she not particularly local to you?
+1	line	Fabia	Unfortunately not. I'm from Aldarin, but she lives in Tal Teklan. It usually takes a special event being hosted for us both to be in the same place.
+1	line	Player	So you never really get any privacy?
+1	line	Fabia	Privacy? Are you insinuating something?
+1	line	Player	Not at all. Sorry if it seemed like I was.
+1	line	Fabia	It's okay... Sorry... I just miss her.
+1	cond	If the player has not already talked to Xilo:
+2	line	Player	Do you think she's just running a little late?
+2	line	Fabia	It's possible.
+2	line	Player	Could she maybe have considered another tree magical?
+2	line	Fabia	I suppose she may be where we first met... but this is where we shared our first... you know...
+2	line	Player	Well, I'll keep my fingers crossed for you. I'm sure you'll be able to find one another soon!
+2	line	Fabia	Thank you, iknami.
+2	action	end
+1	cond	If the player has already talked to Xilo:
+2	line	Player	Hang on... I think I might have met this Xilo.
+2	line	Fabia	You have? Where is she?
+2	line	Player	By a tree to the north of here.
+2	line	Fabia	Oh, Xilo! She's gone to where we first met instead! Thank you, iknami. I'll head over there at once!
+2	box	Fabia departs.
+2	action	end
+0	section	Talking to Xilo
+1	line	Xilo	I can't believe she's done this.
+1	line	Player	Who's done this?
+1	line	Xilo	Fabia! She asked me to meet her, and I quote, 'by the special tree'. You may notice that she isn't here! I've been waiting for hours!
+1	line	Player	Do you think she might just be delayed?
+1	line	Xilo	I know her too well. She wouldn't be delayed coming to see me.
+1	line	Player	Could you be at the wrong special tree?
+1	line	Xilo	No! This is the one, singular, special tree!
+1	cond	If the player has not already talked to Fabia:
+2	line	Player	Humour me for just a moment. What if, amongst this entire rainforest, there's a second very similar tree?
+2	line	Xilo	And Fabia would find herself at the wrong tree in this scenario?
+2	line	Player	Or maybe it's you who is at the wrong one?
+2	line	Xilo	No, absolutely not! I know where to meet Fabia and I wouldn't miss any opportunity to do so!
+2	line	Xilo	This was the tree where we first met. It was a lovely day! A botanical tour of the rainforest, but the only thing I found myself looking at was her...
+2	line	Player	Well, I'm sure the two of you will find each other soon. However, I do suspect that might happen sooner if you considered looking by some other trees...
+2	line	Xilo	Hmm... I'll think about it, but for now, I'll wait here a while longer.
+2	action	end
+1	cond	If the player has already talked to Fabia:
+2	line	Player	Hang on... I think I might have met this Fabia.
+2	line	Xilo	You have? Where is she?
+2	line	Player	South of here, by some magic trees.
+2	line	Xilo	The magic trees? Of course! How could I have been so stupid! Thank you, iknami. I'll head over right away!
+2	box	Xilo departs.
+2	action	end
+0	section	Two Lovers, Found
+0	section	Talking to Fabia or Xilo
+1	line	Xilo	Hello again, iknami! Thank you for helping us find each other!
+1	line	Fabia	To think we were waiting by different trees! It was so silly of us!
+1	line	Player	Well, I'm happy to see you together again. Now, I'm sure you have a lot of catching up to do. I'll leave you to it.
+1	line	Xilo	Timoiva, iknami!
+1	action	end
