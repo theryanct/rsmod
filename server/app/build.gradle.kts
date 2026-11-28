@@ -5,7 +5,14 @@ plugins {
 
 application {
     mainClass.set("org.rsmod.server.app.GameServerKt")
-    applicationDefaultJvmArgs = listOf("-XX:AutoBoxCacheMax=65535", "-Xms1g")
+    applicationDefaultJvmArgs =
+        listOf(
+            "-XX:AutoBoxCacheMax=65535",
+            "-Xms1g",
+            "-Xmx3g",
+            // GC + safepoint pauses, rotated; relative to the run workingDir (repo root).
+            "-Xlog:gc*,safepoint:file=.data/logs/gc.log:time,uptime,level,tags:filecount=5,filesize=10m",
+        )
 }
 
 dependencies {
