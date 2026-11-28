@@ -88,7 +88,6 @@ constructor(
         onLocOpLabel(locTypes, ArravLocs.blackarm_door, "Open") { blackArmDoor(it) }
         onLocOpLabel(locTypes, ArravLocs.cupboard, "Open") { blackArmCupboard(it) }
 
-        onNpcOpLabel(npcTypes, ArravNpcs.curator, "Talk-to") { talkCurator(it) }
         for (half in ArravObjs.cert_halves) {
             onHeldOpLabel(objTypes, half, "Inspect") { inspectHalf() }
         }
@@ -96,6 +95,13 @@ constructor(
         with(QuestTalk) {
             register(npcTypes, ArravNpcs.king, SHIELD_OF_ARRAV, wants = { wantsKing() }) {
                 talkKing(it)
+            }
+            // The curator is shared (QuestTalk): The Golem talks to him too.
+            register(npcTypes, ArravNpcs.curator, SHIELD_OF_ARRAV, wants = { wantsCurator() }) {
+                talkCurator(it)
+            }
+            default(npcTypes, ArravNpcs.curator) {
+                startDialogue(it) { chatNpc(neutral, "Welcome to the Varrock Museum.") }
             }
         }
         onEvent<NpcKilledEvent> { npcKilled(this) }
@@ -479,22 +485,29 @@ constructor(
 
     /* Finishing up */
 
+    private fun ProtectedAccess.curatorShield(): ObjType? =
+        listOf(ArravObjs.shield_phoenix, ArravObjs.shield_blackarm).firstOrNull { carries(it) }
+
+    private fun ProtectedAccess.wantsCurator(): Boolean {
+        val own = ownHalf() ?: return false
+        return (curatorShield() != null && !flag(CERTS_GIVEN)) ||
+            (flag(CERTS_GIVEN) && lostCertificates(own))
+    }
+
     private suspend fun ProtectedAccess.talkCurator(npc: Npc) {
-        val shield =
-            listOf(ArravObjs.shield_phoenix, ArravObjs.shield_blackarm).firstOrNull { carries(it) }
-        val own = ownHalf()
+        val shield = curatorShield()
+        val own = ownHalf() ?: return
         when {
-            own != null && shield != null && !flag(CERTS_GIVEN) -> {
+            shield != null && !flag(CERTS_GIVEN) -> {
                 runQuestSection(npc, dialogue, "Talking to Curator Haig Halen")
                 invDel(inv, shield)
                 invAddOrDrop(objRepo, own, 2)
                 setFlag(CERTS_GIVEN)
             }
-            own != null && flag(CERTS_GIVEN) && lostCertificates(own) -> {
+            flag(CERTS_GIVEN) && lostCertificates(own) -> {
                 runQuestSection(npc, dialogue, CURATOR_AGAIN)
                 invAddOrDrop(objRepo, own, 2)
             }
-            else -> startDialogue(npc) { chatNpc(neutral, "Welcome to the Varrock Museum.") }
         }
     }
 

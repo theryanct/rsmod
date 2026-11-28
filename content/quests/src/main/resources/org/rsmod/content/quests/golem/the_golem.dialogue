@@ -1,0 +1,236 @@
+# Generated from the OSRS Wiki page "Transcript:The Golem" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to the golem to start the quest
+1	line	Broken clay golem	Damage... severe... Task... incomplete...
+1	select	Start The Golem quest?
+1	option	Yes
+2	line	Player	Shall I try to repair you?
+2	line	Broken clay golem	Repairs... needed...
+2	action	end
+1	option	No
+2	line	Player	I'm not going to find a conversation here!
+2	line	Broken clay golem	Graar!
+2	line	Broken clay golem	Must... not... injure... human...
+2	action	end
+0	section	Talking to the Golem after starting the quest
+1	line	Broken clay golem	Damage... severe...
+1	action	end
+0	section	Using the soft clay on the golem
+0	section	Before starting the quest
+1	action	end
+0	section	After using the first soft clay
+1	box	You apply some clay to the golem's wounds. The clay begins to harden in the hot sun.
+1	action	end
+0	section	After using the second soft clay
+1	box	You fix the golem's legs.
+1	action	end
+0	section	After using the third soft clay
+1	box	The golem is nearly whole.
+1	action	end
+0	section	After using the fourth soft clay
+1	box	You repair the golem with a final piece of clay.
+1	line	Clay golem	Damage repaired...
+1	line	Clay golem	Thank you. My body and mind are fully healed.
+1	line	Clay golem	Now I must complete my task by defeating the great enemy.
+1	line	Player	What enemy?
+1	line	Clay golem	A great demon. It broke through from its dimension to attack the city.
+1	line	Clay golem	The golem army was created to fight it. Many were destroyed, but we drove the demon back!
+1	line	Clay golem	The demon is still wounded. You must open the portal so that I can strike the final blow and complete my task.
+1	action	end
+0	section	Talking to the Golem again after learning about the demon
+1	line	Clay golem	My task is incomplete. You must open the portal so I can defeat the great demon.
+1	select	Select an Option
+1	option	How do I open the portal?
+2	line	Player	How do I open the portal?
+2	line	Clay golem	The four statuettes in the temple must be turned to the correct pattern.
+2	line	Clay golem	I do not know the pattern. Golems are not permitted to open the portal.
+2	action	end
+1	option	What makes you think you can defeat the demon?
+2	line	Player	What makes you think you can defeat the demon?
+2	line	Clay golem	If not I, then who else? No living being can destroy the demon. That is why the golems were created in the first place.
+2	line	Clay golem	But the demon was badly wounded and elder-demons heal very slowly indeed. It was almost dead when it retreated to its own dimension.
+2	line	Clay golem	Now that I am repaired, I will be able to destroy it easily!
+2	action	end
+1	option	I'll get right on it.
+2	line	Player	I'll get right on it.
+2	action	end
+0	section	Visiting the Digsite
+0	section	Talking to Elissa in the Digsite
+1	line	Elissa	Hello there.
+1	select	Select an Option
+1	option	What do you do here?
+2	line	Player	What do you do here?
+2	line	Elissa	I'm helping with the dig. I'm an expert on Third Age architecture.
+2	action	end
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Elissa	In the Third Age, this was a great city. Look at these giant walls! They put Varrock to shame!
+2	select	Select an Option
+2	option	I don't know, Varrock is pretty impressive.
+3	line	Player	I don't know, Varrock palace is impressive.
+3	line	Elissa	Hmph. I don't think it will look this good when it's been buried in the ground for three thousand years!
+3	action	end
+2	option	What happened to the city?
+3	line	Player	What happened to the city?
+3	line	Elissa	No one knows for sure.
+3	line	Elissa	But the Third Age was a time of destruction, when the gods were violently at war.
+3	line	Elissa	Many great civilizations were destroyed then.
+3	action	end
+1	option	I found a letter in the desert with your name on.
+2	line	Player	I found a letter in the desert with your name on.
+2	line	Elissa	Ah, so you've found the ruins of Uzer.
+2	line	Elissa	AI wrote that letter to my late husband when he was exploring there.
+2	line	Elissa	that was a great city as well, but the museum could only fund one excavation and this one was closer to home.
+2	line	Elissa	If you're interested in his expedition, the notes he made are in the library in the Exam Centre.
+2	action	end
+0	section	Talking to Elissa again after learning where the notes are
+1	line	Elissa	Hello there.
+1	select	Select an Option
+1	option	What do you do here?
+2	action	above
+1	option	What is this place?
+2	action	above
+1	option	Where did you say the notes were?
+2	line	Player	Where did you say the notes were?
+2	line	Elissa	They're on a bookcase in the Exam Centre.
+2	action	end
+0	section	Searching the bookcase
+1	box	Drops to floor with full inventory
+1	action	end
+0	section	Talking to Elissa after reading Varmen's notes
+1	line	Elissa	Hello there.
+1	select	Select an Option
+1	option	What do you do here?
+2	action	above
+1	option	What is this place?
+2	action	above
+1	option	Where is the statuette that Varmen took back from Uzer?
+2	line	Player	Where is the statuette that Varmen took back from Uzer?
+2	line	Elissa	The statuette? Oh, yes...
+2	line	Elissa	That statuette was the only thing we had to show from that expedition.
+2	line	Elissa	It was very worn, but you can still make out a lot of detail. The Uzerians were expert sculptors. It's a pity we only have that small example.
+2	line	Elissa	Now it's on display in the Varrock museum.
+2	action	end
+0	section	Visiting the Varrock Museum
+0	section	Talking to Curator Haig in the Varrock Museum
+1	line	Curator Haig Halen	Welcome to the museum of Varrock.
+1	select	Select an Option
+1	option	Fossil Island
+1	option	Have you any interesting news?
+1	option	Do you know where I could find any treasure?
+1	option	I'm looking for a statuette recovered from the city of Uzer.
+2	line	Player	I'm looking for a statuette recovered from the city of Uzer.
+2	line	Curator Haig Halen	Ah yes, a very impressive artefact. The people of that city were excellent sculptors.
+2	line	Curator Haig Halen	It's in the display case upstairs.
+2	line	Player	No, I need to take it away with me.
+2	line	Curator Haig Halen	What do you want it for?
+2	select	Select an Option
+2	option	I want to open a portal to the lair of an elder-demon.
+3	line	Player	I want to open a portal to the lair of an elder-demon.
+3	line	Curator Haig Halen	Good heavens! I'd never let you do such a dangerous thing.
+3	action	end
+2	option	Well, I, er, just want it.
+3	line	Player	Well, I, er, just want it.
+3	line	Curator Haig Halen	Well, you can't have it! This museum never lets go of its treasures.
+3	action	end
+1	option	How do I get a medallion?
+0	section	Pickpocketing Curator Haig
+1	cond	If the player has not yet learned about the display case:
+2	action	end
+1	box	Drops to floor with full inventory
+1	action	end
+0	section	Opening the display case
+1	cond	If the player does not have the key:
+2	action	end
+1	cond	If the player already has the statuette:
+2	action	end
+1	box	Drops to floor with full inventory
+1	action	end
+0	section	Talking to Curator Haig after losing the statuette
+1	line	Curator Haig Halen	Welcome to the museum of Varrock.
+1	select	Select an Option
+1	option	Fossil Island
+1	option	Have you any interesting news?
+1	option	Do you know where I could find any treasure?
+1	option	I'm looking for a statuette recovered from the city of Uzer.
+2	line	Player	I'm looking for a statuette recovered from the city of Uzer.
+2	line	Curator Haig Halen	Ah yes, a very impressive artefact. The people of that city were excellent sculptors.
+2	line	Curator Haig Halen	It's in the display case upstairs.
+2	line	Curator Haig Halen	That statuette was stolen recently, but now it's been returned.
+2	line	Player	No, I need to take it away with me.
+2	action	above
+1	option	How do I get a medallion?
+0	section	Returning to Uzer
+0	section	Using the strange implement on the Golem without the new instructions
+1	action	end
+0	section	Using statuette on alcove
+1	cond	If there is already a statuette in the alcove:
+2	action	end
+1	action	end
+0	section	Unlocking the door with statuettes
+1	action	end
+0	section	Trying to turn statuettes after opening the door
+1	action	end
+0	section	Talking to the golem after opening the portal
+1	line	Clay golem	My task is incomplete. You must open the portal so I can defeat the great demon.
+1	line	Player	I opened the portal.
+1	line	Clay golem	Golems cannot pass through the portal. But the demon will soon emerge. I must ready myself for combat!
+1	action	end
+0	section	Entering the portal
+1	cond	If this is the first time the player has entered the portal:
+1	action	end
+0	section	Using hammer on throne
+1	cond	If the player has no chisel:
+2	action	end
+0	section	Talking to the golem after entering the throne of the demon
+1	line	Clay golem	My task is incomplete. You must open the portal so I can defeat the great demon.
+1	line	Player	It's okay, the demon is dead!
+1	line	Clay golem	The demon must be defeated...
+1	line	Player	No, you don't understand. I saw the demon's skeleton. It must have died of its wounds.
+1	line	Clay golem	Demon must be defeated! Task incomplete.
+1	action	end
+0	section	Talking to the golem again after being told the demon must be defeated
+1	line	Clay golem	My task is incomplete. You must open the portal so I can defeat the great demon.
+1	line	Player	I already told you, he's dead!
+1	line	Clay golem	Task incomplete.
+1	line	Player	Oh, how am I going to convince you?
+1	action	end
+0	section	Taking the phoenix feather
+1	cond	If the player already has a phoenix feather or quill pen:
+2	action	end
+1	cond	If the player succeeds:
+2	action	end
+1	cond	If the player fails:
+2	line	Desert Phoenix	Squawk!
+2	action	end
+0	section	Picking a black mushroom
+1	box	You pick a mushroom.
+1	action	end
+0	section	Crushing the mushroom with a pestle and mortar
+1	box	You crush the mushroom and pour the juice into a vial.
+1	action	end
+0	section	Crushing the mushroom without having an empty vial
+1	box	You crush the mushroom, but you have no vial to put the dye in and it goes everywhere!
+1	action	end
+0	section	Using the phoenix feather on papyrus
+1	action	end
+0	section	Using a phoenix feather on the black dye
+1	box	You dip the phoenix feather into the dye.
+1	action	end
+0	section	Using the phoenix quill on the papyrus
+1	cond	If the player has not learned that the demon is dead:
+2	action	end
+1	box	You write on the papyrus: YOUR TASK IS DONE
+1	action	end
+0	section	Using program on golem before using the strange implement
+1	action	end
+0	section	After using the strange implement on the golem in Uzer and adding the new instructions
+1	line	Clay golem	New instructions... Updating program...
+1	line	Clay golem	Task complete!
+1	line	Clay golem	Thank you. Now my mind is at rest.
+1	action	end
+0	section	Post quest
+0	section	Talking to the Golem
+1	line	Clay golem	Thank you for helping me. A golem can have no greater satisfaction than knowing that its task is complete.
+1	line	Player	But the whole city is destroyed! Doesn't that bother you?
+1	line	Clay golem	I was never programmed to appreciate the city. My only purpose was the destruction of the demon, and that is achieved!
+1	action	end
