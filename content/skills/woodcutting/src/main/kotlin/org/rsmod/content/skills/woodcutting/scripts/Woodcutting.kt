@@ -24,6 +24,7 @@ import org.rsmod.api.player.stat.woodcuttingLvl
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.controller.ControllerRepository
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.repo.player.PlayerRepository
 import org.rsmod.api.script.onAiConTimer
 import org.rsmod.api.script.onOpLoc1
@@ -55,7 +56,6 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 // TODO:
-// - bird nests
 // - axe effects/charges
 class Woodcutting
 @Inject
@@ -64,6 +64,7 @@ constructor(
     private val locTypes: LocTypeList,
     private val enumTypes: EnumTypeList,
     private val locRepo: LocRepository,
+    private val objRepo: ObjRepository,
     private val conRepo: ControllerRepository,
     private val playerRepo: PlayerRepository,
     private val xpMods: XpModifiers,
@@ -157,6 +158,10 @@ constructor(
             statAdvance(stats.woodcutting, xp)
             invAddGathered(product)
             publish(CutLogs(player, tree, product))
+            if (random.of(BirdNestTables.NEST_CHANCE) == 0) {
+                objRepo.add(BirdNestTables.rollNest(random), player.coords, NEST_DURATION, player)
+                mes("A bird's nest falls out of the tree.")
+            }
         }
 
         if (despawn) {
@@ -353,3 +358,4 @@ internal object WoodcuttingQueues : QueueReferences() {
 }
 
 private const val RESUME_RETRIES = 10
+private const val NEST_DURATION = 200
