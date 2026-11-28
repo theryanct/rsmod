@@ -208,6 +208,9 @@ public class Player(
 
     public var regionUid: Int? = null
 
+    /** The boat (world entity) the player stands on, or `null` in the root world (Sailing). */
+    public var worldEntity: org.rsmod.game.entity.player.PlayerWorldEntity? = null
+
     // The last coordinates the player has occupied, outside the region working area.
     public var lastKnownNormalCoord: CoordGrid = CoordGrid(0, 50, 50, 0, 0)
 

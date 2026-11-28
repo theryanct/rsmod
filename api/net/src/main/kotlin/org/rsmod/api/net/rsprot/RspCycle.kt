@@ -8,6 +8,11 @@ import net.rsprot.protocol.game.outgoing.map.RebuildLogin
 import net.rsprot.protocol.game.outgoing.map.RebuildNormal
 import net.rsprot.protocol.game.outgoing.map.RebuildRegion
 import net.rsprot.protocol.game.outgoing.map.RebuildRegionV2
+import net.rsprot.protocol.game.outgoing.map.RebuildWorldEntityV4
+import net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityAvatar
+import net.rsprot.protocol.game.outgoing.info.worldentityinfo.WorldEntityAvatarFactory
+import com.github.michaelbull.logging.InlineLogger
+import org.rsmod.game.entity.player.PlayerWorldEntity
 import net.rsprot.protocol.game.outgoing.map.util.RebuildRegionZone
 import org.rsmod.api.config.refs.baseanimsets
 import org.rsmod.api.config.refs.params
@@ -33,7 +38,15 @@ class RspCycle(
     private val infos: Infos,
     private val objTypes: ObjTypeList,
     private val regions: RegionRegistry,
+    private val worldEntityAvatars: WorldEntityAvatarFactory,
 ) : ClientCycle {
+    private val logger = InlineLogger()
+
+    // Single-player Sailing: at most one world entity avatar - the boat this player stands on.
+    private var boatAvatar: WorldEntityAvatar? = null
+    private var boatState: PlayerWorldEntity? = null
+    private var boatRootBuilt: PlayerWorldEntity? = null
+
     private var knownCoords: CoordGrid = CoordGrid.ZERO
 
     private var knownBuildArea: CoordGrid = CoordGrid.NULL
@@ -67,6 +80,7 @@ class RspCycle(
     }
 
     override fun update(player: Player) {
+        player.syncBoatAvatar()
         player.updateMoveSpeed()
         player.updateCoords()
         player.rebuildArea()
@@ -86,19 +100,124 @@ class RspCycle(
     // (see the rsprot README "Info Packets" guide). We only use the root world (no world
     // entities yet), so active-world updates are not sent.
     override fun flush(player: Player) {
-        val root = infos.getPackets().rootWorldInfoPackets
+        val packets = infos.getPackets()
+        val root = packets.rootWorldInfoPackets
         session.queue(root.activeWorld)
         session.queue(root.npcUpdateOrigin)
         root.worldEntityInfo.getOrNull()?.let(session::queue)
         root.playerInfo.getOrNull()?.let(session::queue)
         root.npcInfo.getOrNull()?.let(session::queue)
+
+        // Rev 243 world entities (rsprot README "Info Packets"). Single-player Sailing: the only
+        // world that can be active is this player's own boat, so no observer filtering. Boat
+        // worlds have no dynamic zone content in tier 1, so no per-world zone updates are sent.
+        val worlds = packets.activeWorlds
+        if (worlds.isEmpty()) {
+            return
+        }
+        for (world in worlds) {
+            session.queue(world.activeWorld)
+            if (world.added) {
+                rebuildWorldEntity(player, world.worldId)
+            }
+            world.npcInfo.getOrNull()?.let { npcInfo ->
+                session.queue(world.npcUpdateOrigin)
+                session.queue(npcInfo)
+            }
+        }
+        if (packets.removedWorldIndices.isNotEmpty()) {
+            logger.info { "[boat] removed world indices=${packets.removedWorldIndices}" }
+        }
+        // Back to the root world (client-side pathfinding etc. depend on it).
+        session.queue(root.activeWorld)
     }
 
     override fun release() {
-        val root = infos.getPackets().rootWorldInfoPackets
+        val packets = infos.getPackets()
+        val root = packets.rootWorldInfoPackets
         root.worldEntityInfo.getOrNull()?.safeRelease()
         root.playerInfo.getOrNull()?.safeRelease()
         root.npcInfo.getOrNull()?.safeRelease()
+        for (world in packets.activeWorlds) {
+            world.npcInfo.getOrNull()?.safeRelease()
+        }
+    }
+
+    /** Allocates / releases the one boat avatar to match [Player.worldEntity]. */
+    private fun Player.syncBoatAvatar() {
+        val state = worldEntity
+        if (state === boatState) {
+            if (state != null) {
+                // Moving/turning the boat is tier 2; keep the avatar's angle in step anyway.
+                boatAvatar?.updateAngle(state.angle)
+            }
+            return
+        }
+        boatAvatar?.let { avatar ->
+            worldEntityAvatars.release(avatar)
+            logger.info { "[boat] released avatar (old index=${boatState?.index})" }
+        }
+        boatAvatar = null
+        boatState = state
+        if (state == null) {
+            // Back in the root world: force a normal rebuild around the player next update.
+            boatRootBuilt = null
+            knownBuildArea = CoordGrid.ZERO
+            return
+        }
+        val swZone = state.region.southWestZone
+        val root = state.rootCoords
+        val fineX = root.x * 128 + 64
+        val fineZ = root.z * 128 + 64
+        // Argument order per the rsprot README "World Entities" section.
+        boatAvatar =
+            worldEntityAvatars.alloc(
+                state.index,
+                state.typeId,
+                slotId,
+                state.sizeXZones,
+                state.sizeZZones,
+                swZone.x,
+                swZone.z,
+                0,
+                3,
+                fineX,
+                fineZ,
+                root.level,
+                state.activeLevel,
+                state.angle,
+            )
+        logger.info {
+            "[boat] alloc avatar index=${state.index} type=${state.typeId} owner=$slotId " +
+                "size=${state.sizeXZones}x${state.sizeZZones} zones swZone=(${swZone.x},${swZone.z}) " +
+                "regionSw=${state.region.southWest} root=$root fine=($fineX,$fineZ) " +
+                "activeLevel=${state.activeLevel} angle=${state.angle} playerCoords=$coords"
+        }
+    }
+
+    /** Builds the boat's map in the client from its region template (copied zones). */
+    private fun rebuildWorldEntity(player: Player, worldId: Int) {
+        val state = boatState
+        if (state == null) {
+            logger.warn { "[boat] world $worldId added but no boat state (player at ${player.coords})" }
+            return
+        }
+        val zones = createRegionZoneProvider(state.region)
+        val provider =
+            object : RebuildWorldEntityV4.RebuildWorldEntityZoneProvider {
+                override fun provide(zoneX: Int, zoneZ: Int, level: Int): RebuildRegionZone? {
+                    val zone = zones.provide(zoneX, zoneZ, level)
+                    logger.info { "[boat] zone request ($zoneX,$zoneZ,$level) -> $zone" }
+                    return zone
+                }
+            }
+        val sw = state.region.southWest
+        val rebuild = RebuildWorldEntityV4(sw.x, sw.z, state.sizeXZones, state.sizeZZones, provider)
+        logger.info {
+            "[boat] RebuildWorldEntityV4 world=$worldId base=(${sw.x},${sw.z}) " +
+                "size=${state.sizeXZones}x${state.sizeZZones} zones=${rebuild.zones}"
+        }
+        session.queue(rebuild)
     }
 
     private fun Player.updateMoveSpeed() {
@@ -129,6 +248,21 @@ class RspCycle(
     }
 
     private fun Player.rebuildArea() {
+        val boat = worldEntity
+        if (boat != null) {
+            // On a boat the player's coords are in the boat's instanced map, but the root world
+            // the client shows is wherever the boat sits: rebuild the root around the boat once.
+            if (boatRootBuilt !== boat) {
+                val root = boat.rootCoords
+                infos.updateRootBuildAreaCenteredOnPlayer(root.x, root.z)
+                session.queue(RebuildNormal(root.x shr 3, root.z shr 3, worldId))
+                boatRootBuilt = boat
+                knownRegionUid = null
+                cachedRegionZoneProvider = null
+                logger.info { "[boat] root rebuild around $root (player at $coords, buildArea=$buildArea)" }
+            }
+            return
+        }
         val recalcBuildArea = knownBuildArea != buildArea && buildArea != CoordGrid.NULL
         if (recalcBuildArea) {
             val zone = ZoneKey.from(buildArea)

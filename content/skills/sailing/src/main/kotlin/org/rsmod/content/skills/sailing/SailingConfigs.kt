@@ -7,6 +7,7 @@ import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.game.type.dbrow.DbRowType
 import org.rsmod.game.type.loc.LocType
@@ -18,6 +19,13 @@ internal object SailingVarBits : VarBitReferences() {
     val boat_1_owned = find("sailing_boat_1_owned")
     val boat_1_type = find("sailing_boat_1_type")
     val boat_1_port = find("sailing_boat_1_port")
+
+    // Boarding state the client reads (sailing side panel, boat HUD).
+    val on_player_boat = find("sailing_player_is_on_player_boat")
+    val boarded_boat = find("sailing_boarded_boat")
+    val boarded_boat_type = find("sailing_boarded_boat_type")
+    val boarded_boat_world = find("sailing_boarded_boat_world")
+    val sidepanel_visible = find("sailing_sidepanel_visible")
 
     /** Multivar of every ledger table: 0 shows "Take-cargo", 1 shows "Deposit-cargo". */
     val carrying_cargo = find("sailing_carrying_cargo")
@@ -43,6 +51,15 @@ internal object SailingLocs : LocReferences() {
     val ledgers: Map<String, LocType> =
         SailingData.ports.mapNotNull { p -> p.ledger?.let { p.key to find(it) } }.toMap()
     val charts: Map<String, LocType> = SailingData.chartLocs.associate { it.loc to find(it.loc) }
+
+    /** Port Sarim boat gangplank ("Cross"), both states. */
+    val gangplank_on = find("sailing_port_sarim_shipplank_on")
+    val gangplank_off = find("sailing_port_sarim_shipplank_off")
+}
+
+internal object SailingQueues : QueueReferences() {
+    /** Re-board the raft after a login on deck (tier 1). */
+    val reboard = find("sailing_reboard")
 }
 
 internal object SailingObjs : ObjReferences() {
@@ -55,6 +72,7 @@ internal object SailingDbRows : DbRowReferences() {
 
 internal object SailingInterfaces : InterfaceReferences() {
     val port_task_board = find("port_task_board")
+    val sailing_sidepanel = find("sailing_sidepanel")
 }
 
 internal object SailingComponents : ComponentReferences() {
