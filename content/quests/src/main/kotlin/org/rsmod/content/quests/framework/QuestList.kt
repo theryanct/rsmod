@@ -15,6 +15,7 @@ import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYE
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
+import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
@@ -56,6 +57,7 @@ public object BuiltQuests {
             DRUIDIC_RITUAL,
             ERNEST,
             FISHING_CONTEST,
+            GERTRUDES_CAT,
             GOBLIN_DIPLOMACY,
             HAZEEL_CULT,
             IMP_CATCHER,
