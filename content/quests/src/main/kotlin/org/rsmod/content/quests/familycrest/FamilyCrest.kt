@@ -74,11 +74,13 @@ import org.rsmod.plugin.scripts.ScriptContext
  * `crest_progress` (65812): bits 0-2 levers G/H/I up, bit 3 the hellhound gate unlocked.
  *
  * Simplified (Authored, not Wiki): only the gem trader of the Al Kharid traders knows of Avan;
- * the gem trader's Talk-to only speaks while you seek Avan (Trade still opens his shop); levers
+ * the gem trader's Talk-to only greets you unless you seek Avan (Trade opens his shop); levers
  * are tracked per player and don't visibly flip; Chronozon's weakness doesn't wear off over time;
- * the bar-on-furnace step makes one item per use (no make-x); gauntlets are imbued from the
- * inventory only; Dimintheis replaces lost gauntlets with steel ones; the dungeon arrival tiles
- * are best guesses (Ryan-test).
+ * perfect ore and bars must be used on a furnace (the Smelt / skillmulti menus don't list them)
+ * and the bar step makes one item per use (no make-x); the gold-room rocks give perfect ore only
+ * while the quest is active; if you skip asking Caleb about the rest of the crest he tells you
+ * on your next talk; gauntlets are imbued from the inventory only; Dimintheis replaces lost
+ * gauntlets with steel ones; the dungeon arrival tiles are best guesses (Ryan-test).
  */
 class FamilyCrest
 @Inject
@@ -107,6 +109,12 @@ constructor(
             }
             register(npcTypes, CrestNpcs.gem_trader, FAMILY_CREST, wants = { seeksAvan() }) {
                 talkGemTrader(it)
+            }
+            default(npcTypes, CrestNpcs.gem_trader) { npc ->
+                startDialogue(npc) {
+                    // The Wiki greeting; his shop is on Trade.
+                    chatNpc(neutral, "Good day to you traveller. Would you be interested in buying some gems?")
+                }
             }
             register(npcTypes, CrestNpcs.boot, FAMILY_CREST, wants = { true }) { talkBoot(it) }
             for (brother in Brother.entries) {
@@ -234,12 +242,13 @@ constructor(
                         "If the crest is assembled:" to { assembled },
                     )
             )
-        if (assembled) {
+        runQuestSection(npc, dialogue, "Talking to Dimintheis", hooks)
+        if (!hasWholeCrest()) return
+        if (carries(CrestObjs.family_crest)) {
             invDel(inv, CrestObjs.family_crest)
         } else {
             for (piece in CrestObjs.pieces) invDel(inv, piece)
         }
-        runQuestSection(npc, dialogue, "Talking to Dimintheis", hooks)
         invAddOrDrop(objRepo, CrestObjs.steel_gauntlets)
         for (stat in listOf(stats.mining, stats.smithing, stats.crafting)) {
             statAdvance(stat, REWARD_XP * xpMods.get(player, stat))
@@ -369,6 +378,7 @@ constructor(
             stage == AVAN -> runQuestSection(npc, dialogue, "Talking to Avan again")
             stage == BOOT && carries(CrestObjs.ring) && carries(CrestObjs.necklace) -> {
                 runQuestSection(npc, dialogue, "If the player has the jewellery")
+                if (!carries(CrestObjs.ring) || !carries(CrestObjs.necklace)) return
                 invDel(inv, CrestObjs.ring)
                 invDel(inv, CrestObjs.necklace)
                 invAddOrDrop(objRepo, CrestObjs.avan_crest)
