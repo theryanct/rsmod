@@ -34,7 +34,7 @@ internal class SlidePuzzle(val set: Int, val slots: IntArray) {
         const val EMPTY = -1
         private const val LAST = SIZE * SIZE - 1
         private const val SCRAMBLE_MOVES = 300
-        /** Piece sets the classic puzzle box uses: varp `if1` 1..3 (enums 1354..1356). */
+        /** Piece sets the hard puzzle boxes use: varp `if1` 1..3 (enums 1354..1356). */
         val SETS = 1..3
 
         fun adjacent(a: Int, b: Int): Boolean {
@@ -43,10 +43,10 @@ internal class SlidePuzzle(val set: Int, val slots: IntArray) {
             return dx + dz == 1
         }
 
-        /** A random legal scramble (so always solvable) that isn't already solved. */
-        fun scrambled(random: GameRandom): SlidePuzzle {
+        /** A random legal scramble (so always solvable) of piece [set], not already solved. */
+        fun scrambled(set: Int, random: GameRandom): SlidePuzzle {
             val slots = IntArray(SIZE * SIZE) { if (it == LAST) EMPTY else it }
-            val puzzle = SlidePuzzle(random.of(SETS), slots)
+            val puzzle = SlidePuzzle(set, slots)
             var previous = -1
             var moves = 0
             while (moves < SCRAMBLE_MOVES || puzzle.isSolved) {

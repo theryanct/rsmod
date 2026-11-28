@@ -37,6 +37,8 @@ internal enum class ClueKind(val table: String) {
     Coordinate("cluehelper_clue_coordinate"),
     /** Hard: go to a fairy ring, then dig at the spot (the text gives code + steps). */
     FairyRing("cluehelper_clue_fairyring"),
+    /** Master: Falo the Bard sings of an item; bring one ([ClueStep.itemGroup] / [ClueStep.items]). */
+    Falo("cluehelper_clue_falobard"),
 }
 
 /** Where a step is solved (the cluehelper_target_* row it points at). */
@@ -101,6 +103,10 @@ internal class ClueStep(
     val encounters: List<Int> = emptyList(),
     /** Each of [encounters]' npcs: all of the picked row's npcs spawn and must be killed. */
     val encounterNpcs: List<List<Int>> = emptyList(),
+    /** Falo steps: the obj param trail_item group of the item asked for, if it's a group. */
+    val itemGroup: Int? = null,
+    /** Falo steps: the objs that count, if it's a fixed list (cluehelper_requirement_obj). */
+    val items: Set<Int> = emptySet(),
     /** Implemented: a supported target, and a box / fight from the allowlists, if any. */
     val isSupported: Boolean = true,
 )
@@ -186,6 +192,16 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                 val answer = values.filterIsInstance<Int>().firstOrNull() ?: return null
                 return text to answer
             }
+            /** Falo requirement: (trail_item group, obj list); one of the two is set. */
+            fun faloItems(rowId: Int?): Pair<Int?, Set<Int>> {
+                val row = rows[rowId ?: return null to emptySet()] ?: return null to emptySet()
+                return when (table(row)) {
+                    "cluehelper_requirement_obj_param_trail_item" -> row.int(1) to emptySet()
+                    "cluehelper_requirement_obj" -> null to row.ints(1).toSet()
+                    else -> null to emptySet()
+                }
+            }
+
             fun box(rowId: Int?): Int? =
                 rowId?.takeIf { table(rows[it]) == "cluehelper_challenge_box" }
 
@@ -255,6 +271,16 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                             )
                         ClueKind.FairyRing ->
                             ClueStep(id, kind, tier, row.text(2), target(row.int(5)))
+                        ClueKind.Falo ->
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(2),
+                                target(row.int(3)),
+                                itemGroup = faloItems(row.int(4)).first,
+                                items = faloItems(row.int(4)).second,
+                            )
                         ClueKind.Music ->
                             ClueStep(
                                 id,
@@ -300,6 +326,8 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                         box = step.box,
                         encounters = step.encounters,
                         encounterNpcs = step.encounters.map(::encounterNpcs),
+                        itemGroup = step.itemGroup,
+                        items = step.items,
                         isSupported = supported,
                     )
                 }

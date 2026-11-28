@@ -12,6 +12,8 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 internal object TrailObjs : ObjReferences() {
     /** The one beginner clue obj: its current step lives in [TrailVarps.beginner_step]. */
     val clue_beginner = find("trail_clue_beginner")
+    /** The one master clue obj: its current step lives in [TrailVarps.master_step]. */
+    val clue_master = find("trail_clue_master")
     val casket_beginner = find("trail_reward_casket_beginner")
     val casket_easy = find("trail_reward_casket_easy")
     val casket_medium = find("trail_reward_casket_medium")
@@ -25,6 +27,8 @@ internal object TrailObjs : ObjReferences() {
     val chart = find("trail_chart")
     /** Beginner hot/cold "strange device" (from Reldo). */
     val strange_device = find("beginner_device")
+    /** Master hot/cold strange device (from Jorral). */
+    val master_device = find("master_device")
     /** Master light box ("Open"); hard+ puzzle boxes are per step (clue obj name + _puzzlebox). */
     val light_box = find("light_puzzle_box")
 
@@ -127,6 +131,8 @@ internal object TrailVarps : VarpReferences() {
     val master_completed = find("trail_master_completed")
     /** The step (dbrow) whose puzzle / light box is solved, 0 = none (65325). */
     val box_solved = find("trail_box_solved")
+    /** The master clue's current step: its cluehelper dbrow id (0 = not chosen yet) (65326). */
+    val master_step = find("trail_master_step")
     /** Cache varp the light box draws from (bit set = unlit). */
     val lights = find("trail_lights")
 }
@@ -149,5 +155,6 @@ internal object TrailVarpBuilder : VarpBuilder() {
         build("trail_elite_completed")
         build("trail_master_completed")
         build("trail_box_solved")
+        build("trail_master_step")
     }
 }

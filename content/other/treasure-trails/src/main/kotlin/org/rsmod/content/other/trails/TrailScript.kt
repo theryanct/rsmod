@@ -39,6 +39,7 @@ import org.rsmod.game.inv.InvObj
 import org.rsmod.game.inv.Inventory
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.dbrow.DbRowTypeList
+import org.rsmod.game.type.enums.EnumTypeList
 import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.interf.InterfaceType
 import org.rsmod.game.type.interf.InterfaceTypeList
@@ -93,14 +94,21 @@ constructor(
     private val interfaceTypes: InterfaceTypeList,
     private val locRepo: LocRepository,
     private val aiInteractions: AiPlayerInteractions,
+    private val enumTypes: EnumTypeList,
 ) : PluginScript() {
     private val steps by lazy {
-        val boxes = setOfNotNull(names.dbRows["cluehelper_challenge_box_puzzle"])
+        val boxes = BOXES.mapNotNullTo(HashSet()) { names.dbRows[it] }
         val encounters = ENCOUNTERS.mapNotNullTo(HashSet()) { names.dbRows[it] }
         ClueSteps.load(dbRows, names.dbTables, boxes, encounters)
     }
 
     private val lightBoxRow by lazy { names.dbRows["cluehelper_challenge_box_light"] }
+    private val eitherBoxRow by lazy { names.dbRows["cluehelper_challenge_box_puzzle_or_light"] }
+
+    /** Master puzzle boxes and their piece set (varp `if1`; enum 1864 keys). */
+    private val masterBoxSets by lazy {
+        MASTER_BOXES.mapNotNull { (name, set) -> names.objs[name]?.let { it to set } }.toMap()
+    }
 
     private val rewards by lazy { ClueTier.entries.associateWith { TrailRewards.load(it) } }
 
@@ -145,12 +153,17 @@ constructor(
             )
         val all =
             ClueTier.entries.associateWith { tier ->
-                if (tier == ClueTier.Beginner) {
-                    steps.ofTier(tier, beginnerKinds)
-                } else {
-                    steps.ofTier(tier, kinds).filter {
-                        it.row in objByStep && (it.box == null || boxObj(it) != null)
-                    }
+                when (tier) {
+                    ClueTier.Beginner -> steps.ofTier(tier, beginnerKinds)
+                    // Master is one obj too (trail_clue_master); its step lives in a varp.
+                    ClueTier.Master ->
+                        steps.ofTier(tier, kinds).filter {
+                            it.box == null || boxObjs(it).isNotEmpty()
+                        }
+                    else ->
+                        steps.ofTier(tier, kinds).filter {
+                            it.row in objByStep && (it.box == null || boxObjs(it).isNotEmpty())
+                        }
                 }
             }
         val reachable = all.mapValues { (_, list) -> list.filter { it.isReachable(spawned) } }
@@ -179,6 +192,8 @@ constructor(
 
     private val reldoRow by lazy { names.dbRows["cluehelper_cryptic_beginner_reldo"] }
     private val charlieRow by lazy { names.dbRows["cluehelper_cryptic_beginner_charlie_the_tramp"] }
+    private val jorralRow by lazy { names.dbRows["cluehelper_cryptic_master_jorral"] }
+    private val faloRow by lazy { names.dbRows["cluehelper_cryptic_master_falo_the_bard"] }
     private val charlieItems by lazy {
         val items =
             listOf(
@@ -214,16 +229,21 @@ constructor(
     private val encounters = WeakHashMap<Player, Encounter>()
 
     /**
-     * The box a step's npc hands out: the light box, or the step's own puzzle box (the clue obj's
-     * symbol + `_puzzlebox`; these objs have no params linking them). Null if it can't be found.
+     * The boxes a step's npc may hand out (one is picked): the light box; the step's own puzzle box
+     * (the clue obj's symbol + `_puzzlebox`; these objs have no params linking them); or, for
+     * master "puzzle or light" steps, a master puzzle box or the light box. Empty if none found.
      */
-    private fun boxObj(step: ClueStep): Int? {
-        val box = step.box ?: return null
-        if (box == lightBoxRow) {
-            return objTypes[TrailObjs.light_box].id
+    private fun boxObjs(step: ClueStep): List<Int> {
+        val box = step.box ?: return emptyList()
+        val light = objTypes[TrailObjs.light_box].id
+        return when (box) {
+            lightBoxRow -> listOf(light)
+            eitherBoxRow -> masterBoxSets.keys.toList() + light
+            else -> {
+                val clueName = objByStep[step.row]?.let(objNames::get) ?: return emptyList()
+                listOfNotNull(names.objs["${clueName}_puzzlebox"])
+            }
         }
-        val clueName = objByStep[step.row]?.let(objNames::get) ?: return null
-        return names.objs["${clueName}_puzzlebox"]
     }
 
     override fun ScriptContext.startup() {
@@ -232,6 +252,7 @@ constructor(
         }
 
         bindClue(TrailObjs.clue_beginner)
+        bindClue(TrailObjs.clue_master)
         for (obj in stepByObj.keys) {
             bindClue(objTypes[obj] ?: continue)
         }
@@ -239,13 +260,14 @@ constructor(
             onOpHeld1(casket) { openCasket(tier, it.type) }
         }
         onOpHeld1(TrailObjs.strange_device) { feelDevice() }
+        onOpHeld1(TrailObjs.master_device) { feelDevice() }
         onOpHeld1(TrailObjs.sextant) { lookThroughSextant() }
         onEvent<NpcKilledEvent> {
             hero.dropClueKey(npc)
             encounterKilled(npc, hero)
             hero.killStep(npc)
         }
-        val boxObjs = steps.byRow.values.mapNotNullTo(HashSet()) { boxObj(it) }
+        val boxObjs = steps.byRow.values.flatMapTo(HashSet()) { boxObjs(it) }
         for (box in boxObjs) {
             val type = objTypes[box] ?: continue
             if (!isHeldOpBound(type, 1)) {
@@ -279,7 +301,23 @@ constructor(
     private fun tierOf(obj: Int): ClueTier? =
         when {
             obj == objTypes[TrailObjs.clue_beginner].id -> ClueTier.Beginner
+            obj == objTypes[TrailObjs.clue_master].id -> ClueTier.Master
             else -> stepByObj[obj]?.let { steps.byRow[it]?.tier }
+        }
+
+    /** Beginner and master are one clue obj each, keeping the step in a varp. */
+    private fun singleObj(tier: ClueTier): ObjType? =
+        when (tier) {
+            ClueTier.Beginner -> TrailObjs.clue_beginner
+            ClueTier.Master -> TrailObjs.clue_master
+            else -> null
+        }
+
+    private fun stepVarp(tier: ClueTier): VarpType? =
+        when (tier) {
+            ClueTier.Beginner -> TrailVarps.beginner_step
+            ClueTier.Master -> TrailVarps.master_step
+            else -> null
         }
 
     private fun remainingVarp(tier: ClueTier): VarpType =
@@ -305,22 +343,20 @@ constructor(
     private fun Player.setVar(varp: VarpType, value: Int) =
         VarPlayerIntMapSetter.set(this, varp, value)
 
-    /** The step for a held clue [obj], choosing the beginner step / trail length on first use. */
+    /** The step for a held clue [obj], choosing the varp step / trail length on first use. */
     private fun Player.stepOf(obj: Int): ClueStep? {
         val tier = tierOf(obj) ?: return null
         val remaining = remainingVarp(tier)
         if (vars[remaining] <= 0) {
             setVar(remaining, random.of(tier.steps))
         }
-        if (tier != ClueTier.Beginner) {
-            return steps.byRow[stepByObj[obj] ?: return null]
-        }
-        val current = steps.byRow[vars[TrailVarps.beginner_step]]
-        if (current != null && current.tier == ClueTier.Beginner) {
+        val varp = stepVarp(tier) ?: return steps.byRow[stepByObj[obj] ?: return null]
+        val current = steps.byRow[vars[varp]]
+        if (current != null && current.tier == tier) {
             return current
         }
-        val pick = pools.getValue(ClueTier.Beginner).pick() ?: return null
-        setVar(TrailVarps.beginner_step, pick.row)
+        val pick = pools.getValue(tier).pick() ?: return null
+        setVar(varp, pick.row)
         return pick
     }
 
@@ -342,18 +378,14 @@ constructor(
         if (hero.hasClue(tier)) {
             return null
         }
-        return when (tier) {
-            ClueTier.Beginner -> {
-                hero.setVar(TrailVarps.beginner_step, 0)
-                hero.setVar(TrailVarps.beginner_remaining, 0)
-                objTypes[TrailObjs.clue_beginner]
-            }
-            else -> {
-                hero.setVar(remainingVarp(tier), 0)
-                val step = pools.getValue(tier).pick() ?: return null
-                objTypes[objByStep.getValue(step.row)]
-            }
+        hero.setVar(remainingVarp(tier), 0)
+        val single = singleObj(tier)
+        if (single != null) {
+            stepVarp(tier)?.let { hero.setVar(it, 0) }
+            return objTypes[single]
         }
+        val step = pools.getValue(tier).pick() ?: return null
+        return objTypes[objByStep.getValue(step.row)]
     }
 
     /* Reading */
@@ -448,6 +480,32 @@ constructor(
                 if (hotcold != null) {
                     player.setVar(TrailVarps.beginner_step, hotcold.row)
                 }
+            }
+            step.row == jorralRow -> {
+                // Authored line (not Wiki).
+                startDialogue(npc) {
+                    chatNpc(neutral, "So you're after the buried treasure? Take this device; " +
+                        "it'll grow hotter the closer you get.")
+                }
+                invAdd(inv, TrailObjs.master_device)
+                val hotcold = steps.ofTier(ClueTier.Master, setOf(ClueKind.HotCold)).pick()
+                if (hotcold != null) {
+                    player.setVar(TrailVarps.master_step, hotcold.row)
+                }
+            }
+            step.row == faloRow -> {
+                val song = steps.ofTier(ClueTier.Master, setOf(ClueKind.Falo)).pick()
+                    ?: return advance(clue, step)
+                player.setVar(TrailVarps.master_step, song.row)
+                startDialogue(npc) { chatNpc(neutral, song.text) }
+            }
+            step.kind == ClueKind.Falo -> {
+                if (!player.hasFaloItem(step)) {
+                    startDialogue(npc) { chatNpc(neutral, step.text) }
+                    return
+                }
+                startDialogue(npc) { chatNpc(happy, "That's the one! Here, take this.") }
+                advance(clue, step)
             }
             step.row == charlieRow -> {
                 val request = charlieItems.keys.pick() ?: return advance(clue, step)
@@ -572,7 +630,10 @@ constructor(
                 return true
             }
             if (step.kind == ClueKind.HotCold) {
-                invDel(inv, TrailObjs.strange_device, 1)
+                val device =
+                    if (step.tier == ClueTier.Master) TrailObjs.master_device
+                    else TrailObjs.strange_device
+                invDel(inv, device, 1)
             }
             advance(clue, step)
             return true
@@ -663,12 +724,16 @@ constructor(
     /* Boxes (dialogue lines here are authored, not Wiki) */
 
     private suspend fun ProtectedAccess.talkBoxNpc(npc: Npc, clue: InvObj, step: ClueStep) {
-        val box = boxObj(step)?.let { objTypes[it] } ?: return advance(clue, step)
-        val holding = invTotal(inv, box) > 0
+        val boxes = boxObjs(step).mapNotNull { objTypes[it] }
+        if (boxes.isEmpty()) {
+            return advance(clue, step)
+        }
+        val held = boxes.firstOrNull { invTotal(inv, it) > 0 }
+        val holding = held != null
         val solved = player.vars[TrailVarps.box_solved] == step.row
         when {
-            holding && solved -> {
-                invDel(inv, box, 1)
+            held != null && solved -> {
+                invDel(inv, held, 1)
                 player.setVar(TrailVarps.box_solved, 0)
                 startDialogue(npc) { chatNpc(happy, "You've solved it! Here, take this.") }
                 advance(clue, step)
@@ -678,7 +743,7 @@ constructor(
                     chatNpc(neutral, "Have you solved that puzzle yet? Bring it back when you have.")
                 }
             else -> {
-                if (invAdd(inv, box).failure) {
+                if (invAdd(inv, boxes[random.of(boxes.size)]).failure) {
                     mes("You need a free inventory space for the puzzle.")
                     return
                 }
@@ -694,7 +759,7 @@ constructor(
 
     private fun ProtectedAccess.openBox(obj: UnpackedObjType) {
         val step =
-            player.heldSteps().map { it.second }.firstOrNull { boxObj(it) == obj.id }
+            player.heldSteps().map { it.second }.firstOrNull { obj.id in boxObjs(it) }
                 ?: return mes("This doesn't seem to belong to any clue you're holding.")
         if (player.vars[TrailVarps.box_solved] == step.row) {
             mes("You've already solved this. Take it back to whoever gave it to you.")
@@ -703,14 +768,14 @@ constructor(
         if (obj.id == objTypes[TrailObjs.light_box].id) {
             openLightBox(step)
         } else {
-            openPuzzle(step)
+            openPuzzle(step, masterBoxSets[obj.id] ?: random.of(SlidePuzzle.SETS))
         }
     }
 
-    private fun ProtectedAccess.openPuzzle(step: ClueStep) {
+    private fun ProtectedAccess.openPuzzle(step: ClueStep, set: Int) {
         val puzzle =
-            puzzles[player]?.takeIf { it.first == step.row }?.second
-                ?: SlidePuzzle.scrambled(random).also { puzzles[player] = step.row to it }
+            puzzles[player]?.takeIf { it.first == step.row && it.second.set == set }?.second
+                ?: SlidePuzzle.scrambled(set, random).also { puzzles[player] = step.row to it }
         // The onload (cs2 688/690) reads the piece set from if1 and the pieces from the inv.
         player.setVar(varps.if1, puzzle.set)
         sendPuzzle(puzzle)
@@ -722,13 +787,14 @@ constructor(
     @OptIn(UncheckedType::class)
     private fun ProtectedAccess.sendPuzzle(puzzle: SlidePuzzle) {
         val display = Inventory.create(invTypes[TrailInvs.puzzle])
-        val letter = PUZZLE_SET_LETTERS[puzzle.set - 1]
+        // Enum 1864: piece set -> enum of piece index -> piece obj (what cs2 690 draws).
+        val setEnum = enumTypes[PUZZLE_SETS_ENUM]?.primitiveMap?.get(puzzle.set) as? Int
+        val pieces = setEnum?.let { enumTypes[it]?.primitiveMap }.orEmpty()
         for ((slot, piece) in puzzle.slots.withIndex()) {
             if (piece == SlidePuzzle.EMPTY || slot >= display.size) {
                 continue
             }
-            val name = "trail_slidingpuzzle" + letter + "%02d".format(piece + 1)
-            val id = names.objs[name] ?: continue
+            val id = pieces[piece] as? Int ?: continue
             display[slot] = InvObj(id, 1)
         }
         UpdateInventory.updateInvFull(player, display)
@@ -819,6 +885,20 @@ constructor(
         }
     }
 
+    /** Falo: an obj in the inventory or worn that is one of the step's items / its group. */
+    private fun Player.hasFaloItem(step: ClueStep): Boolean {
+        val objs = inv.asSequence() + worn.asSequence()
+        return objs.any { obj ->
+            obj ?: return@any false
+            if (obj.id in step.items) {
+                return@any true
+            }
+            val group = step.itemGroup ?: return@any false
+            val type = objTypes[obj.id] ?: return@any false
+            type.paramMap?.primitiveMap?.get(TRAIL_ITEM_PARAM) == group
+        }
+    }
+
     /* Progress */
 
     /** Moves the trail on from [step]: a new clue, or the reward casket after the last step. */
@@ -839,18 +919,18 @@ constructor(
         val slot = inv.indexOfFirst { it == clue }.takeIf { it >= 0 } ?: return null
         if (left <= 0) {
             setVar(remainingVarp, 0)
-            if (tier == ClueTier.Beginner) {
-                setVar(TrailVarps.beginner_step, 0)
-            }
+            stepVarp(tier)?.let { setVar(it, 0) }
             val casket = objTypes[CASKETS.getValue(tier)]
             inv[slot] = InvObj(casket)
             return casket to "Well done, you've completed the Treasure Trail!"
         }
         setVar(remainingVarp, left)
         val next = pools.getValue(tier).filter { it.row != step.row }.pick() ?: return null
-        if (tier == ClueTier.Beginner) {
-            setVar(TrailVarps.beginner_step, next.row)
-            return objTypes[TrailObjs.clue_beginner] to "You've been given a new clue!"
+        val single = singleObj(tier)
+        val varp = stepVarp(tier)
+        if (single != null && varp != null) {
+            setVar(varp, next.row)
+            return objTypes[single] to "You've been given a new clue!"
         }
         val obj = objTypes[objByStep.getValue(next.row)] ?: return null
         inv[slot] = InvObj(obj)
@@ -929,9 +1009,26 @@ constructor(
         private const val URI_DURATION = 100
         private const val GROUND_DURATION = 200
         private const val ENCOUNTER_DURATION = 500
-        /** Piece set letters for if1 = 1..3 (objs trail_slidingpuzzle<letter>01..24). */
-        private const val PUZZLE_SET_LETTERS = "bcd"
-        /** Fights that are implemented (hard); elite/master ones stay gated off. */
+        /** Enum: puzzle piece set (varp if1) -> enum of piece objs. */
+        private const val PUZZLE_SETS_ENUM = 1864
+        /** Obj param: Falo's item groups (cluehelper_requirement_obj_param_trail_item). */
+        private const val TRAIL_ITEM_PARAM = 258
+        /** Master puzzle boxes and their piece sets (enum 1864: 4..6, 9). */
+        private val MASTER_BOXES =
+            listOf(
+                "trail_master_zulrah_puzzlebox" to 4,
+                "trail_master_cerberus_puzzlebox" to 5,
+                "trail_master_gnomechild_puzzlebox" to 6,
+                "trail_master_tob_puzzlebox" to 9,
+            )
+        /** Box challenges that are implemented. */
+        private val BOXES =
+            listOf(
+                "cluehelper_challenge_box_puzzle",
+                "cluehelper_challenge_box_light",
+                "cluehelper_challenge_box_puzzle_or_light",
+            )
+        /** Fights that are implemented (all tiers). */
         private val ENCOUNTERS =
             listOf(
                 "cluehelper_combat_encounter_double_agent_65",
@@ -940,6 +1037,9 @@ constructor(
                 "cluehelper_combat_encounter_zamorak_wizard",
                 "cluehelper_combat_encounter_armadylean_guard",
                 "cluehelper_combat_encounter_bandosian_guard",
+                "cluehelper_combat_encounter_brassican_mage",
+                "cluehelper_combat_encounter_3_ancient_wizards",
+                "cluehelper_combat_encounter_double_agent_141",
             )
     }
 }
