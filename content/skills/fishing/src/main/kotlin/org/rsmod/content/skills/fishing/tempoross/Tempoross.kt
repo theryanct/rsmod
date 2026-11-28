@@ -70,7 +70,7 @@ constructor(
     private val invisibleLvls: InvisibleLevels,
     private val launcher: ProtectedAccessLauncher,
 ) : PluginScript() {
-    private val games = HashMap<Long, Game>()
+    private val games = HashMap<Int, Game>()
 
     override fun ScriptContext.startup() {
         // Lobby ladder: every op starts a solo game (team games are not built).
