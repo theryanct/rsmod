@@ -4,17 +4,24 @@ import jakarta.inject.Inject
 import org.rsmod.api.combat.manager.MagicRuneManager
 import org.rsmod.api.combat.manager.MagicRuneManager.CastResult
 import org.rsmod.api.config.refs.components
+import org.rsmod.api.config.refs.projanims
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.invtx.invAdd
+import org.rsmod.api.player.events.interact.OpObjTEvent
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.smithingLvl
+import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.repo.world.WorldRepository
+import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.script.onIfOverlayButtonT
 import org.rsmod.api.spells.MagicSpellRegistry
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.combat.commons.magic.MagicSpell
 import org.rsmod.game.entity.Player
+import org.rsmod.game.obj.Obj
 import org.rsmod.game.type.comp.ComponentType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
@@ -30,6 +37,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Low / high alchemy: 40% / 60% of the item's value in coins.
  * - Superheat item: ore -> bar (wiki smithing levels and xp; iron becomes steel with 2 coal).
  * - Bones to bananas, Lvl-1 (sapphire) and Lvl-2 (emerald) enchant.
+ * - Telekinetic Grab on a ground item (spell-on-obj via [OpObjTEvent]): within 10 tiles and in
+ *   line of sight, projectile to the item, then it is taken into the inventory if still there.
  */
 class MagicUtilityScript
 @Inject
@@ -39,6 +48,8 @@ constructor(
     private val objTypes: ObjTypeList,
     private val xpMods: XpModifiers,
     private val protectedAccess: ProtectedAccessLauncher,
+    private val objRepo: ObjRepository,
+    private val worldRepo: WorldRepository,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         teleport(MagicUtilityComponents.varrock_teleport, MagicUtilitySpells.varrock_teleport, CoordGrid(3213, 3424))
@@ -54,6 +65,52 @@ constructor(
         onItem(MagicUtilityComponents.enchant_1) { slot -> enchant(slot, level = 1) }
         onItem(MagicUtilityComponents.enchant_2) { slot -> enchant(slot, level = 2) }
         onIfOverlayButton(MagicUtilityComponents.bones_bananas) { launch(player) { bonesToBananas() } }
+        onEvent<OpObjTEvent> {
+            if (component.isType(MagicUtilityComponents.telegrab)) {
+                val target = obj
+                launch(player) { telegrab(target) }
+            }
+        }
+    }
+
+    private suspend fun ProtectedAccess.telegrab(obj: Obj) {
+        if (player.coords.chebyshevDistance(obj.coords) > TELEGRAB_RANGE ||
+            player.level != obj.coords.level ||
+            !lineOfSight(player.coords, obj.coords)
+        ) {
+            mes("I can't reach that!")
+            return
+        }
+        val fits = player.invAdd(inv, obj.type, obj.count, autoCommit = false).success
+        if (!fits) {
+            mes("You don't have enough inventory space to hold that item.")
+            return
+        }
+        val spell = cast(MagicUtilitySpells.telegrab) ?: return
+        faceSquare(obj.coords)
+        anim(MagicUtilitySeqs.telegrab)
+        spotanim(MagicUtilitySpots.telegrab_casting, height = 92)
+        soundSynth(MagicUtilitySynths.telegrab)
+        val proj =
+            worldRepo.projAnim(
+                player,
+                obj.coords,
+                MagicUtilitySpots.telegrab_travel,
+                projanims.magic_spell,
+            )
+        magicXp(spell)
+        delay(maxOf(1, proj.durations.serverDelay))
+        spotanimMap(worldRepo, MagicUtilitySpots.telegrab_impact, obj.coords)
+        if (!objRepo.del(obj)) {
+            mes("Too late - it's gone!")
+            return
+        }
+        val take = player.invAdd(inv, obj.type, obj.count, autoCommit = false)
+        if (take.success) {
+            take.commitAll()
+        } else {
+            objRepo.add(objTypes[obj], obj.coords, OBJ_DURATION, player, obj.count)
+        }
     }
 
     private fun ScriptContext.teleport(button: ComponentType, spellObj: ObjType, dest: CoordGrid) {
@@ -223,6 +280,9 @@ constructor(
     }
 
     private companion object {
+        const val TELEGRAB_RANGE = 10
+        const val OBJ_DURATION = 200
+
         val SAPPHIRE: () -> List<Pair<ObjType, ObjType>> = {
             listOf(
                 MagicUtilityObjs.sapphire_ring to MagicUtilityObjs.ring_of_recoil,

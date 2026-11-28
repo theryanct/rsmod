@@ -19,6 +19,7 @@ internal object MagicUtilityComponents : ComponentReferences() {
     val bones_bananas = find("magic_spellbook:bones_bananas")
     val enchant_1 = find("magic_spellbook:enchant_1")
     val enchant_2 = find("magic_spellbook:enchant_2")
+    val telegrab = find("magic_spellbook:telegrab")
 }
 
 /** Spell objs (cache spell definitions: level, runes, cast xp). */
@@ -35,6 +36,7 @@ internal object MagicUtilitySpells : ObjReferences() {
     val bones_bananas = find("15_bones_bananas")
     val enchant_1 = find("07_enchant_amulet_lvl1")
     val enchant_2 = find("27_enchant_amulet_lvl2")
+    val telegrab = find("33_tele_grab")
 }
 
 internal object MagicUtilityObjs : ObjReferences() {
@@ -86,6 +88,7 @@ internal object MagicUtilitySeqs : SeqReferences() {
     val bones_bananas = find("human_castbonestobananas")
     val enchant_1 = find("human_enchantamuletlvl1")
     val enchant_2 = find("human_enchantamuletlvl2")
+    val telegrab = find("human_casttelegrab")
 }
 
 internal object MagicUtilitySpots : SpotanimReferences() {
@@ -96,6 +99,9 @@ internal object MagicUtilitySpots : SpotanimReferences() {
     val bones_bananas = find("bonestobananas_casting")
     val enchant_1 = find("enchant_amulet_lvl1")
     val enchant_2 = find("enchant_amulet_lvl2")
+    val telegrab_casting = find("telegrab_casting")
+    val telegrab_travel = find("telegrab_travel")
+    val telegrab_impact = find("telegrab_impact")
 }
 
 internal object MagicUtilitySynths : SynthReferences() {
@@ -103,4 +109,5 @@ internal object MagicUtilitySynths : SynthReferences() {
     val low_alchemy = find("low_alchemy")
     val high_alchemy = find("high_alchemy")
     val superheat = find("superheat_all")
+    val telegrab = find("telegrab_all")
 }
