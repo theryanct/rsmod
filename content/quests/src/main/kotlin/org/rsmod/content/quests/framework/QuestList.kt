@@ -56,6 +56,7 @@ import org.rsmod.content.quests.mudfoot.MudfootsBigAdventure.Companion.MUDFOOT
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
+import org.rsmod.content.quests.pandemonium.Pandemonium.Companion.PANDEMONIUM
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
 import org.rsmod.content.quests.porcine.PorcineOfInterest.Companion.PORCINE
@@ -149,6 +150,7 @@ public object BuiltQuests {
             MURDER_MYSTERY,
             NATURE_SPIRIT,
             OBSERVATORY_QUEST,
+            PANDEMONIUM,
             PIRATES_TREASURE,
             PLAGUE_CITY,
             PORCINE,

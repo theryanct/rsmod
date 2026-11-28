@@ -1,0 +1,62 @@
+# Sailing docks (rev 243): sailing_dock dbrow (dock_id, nice_name, level_required) and the
+# dock's gangplank / mooring loc with its map position (cache map scan; arrival is on level 0).
+# dock_id	key	name	level	loc	x	z
+0	port_sarim	Port Sarim	1	sailing_gangplank_port_sarim	3051	3193
+1	the_pandemonium	The Pandemonium	1	sailing_gangplank_the_pandemonium	3070	2987
+2	lands_end	Land's End	5	sailing_gangplank_lands_end	1507	3403
+3	musa_point	Musa Point	10	sailing_gangplank_musa_point	2961	3146
+4	hosidius	Hosidius	5	sailing_gangplank_hosidius	1726	3452
+5	rimmington	Rimmington	18	sailing_gangplank_rimmington	2906	3225
+6	catherby	Catherby	20	sailing_gangplank_catherby	2796	3412
+7	port_piscarilius	Port Piscarilius	15	sailing_gangplank_port_piscarilius	1845	3687
+8	brimhaven	Brimhaven	25	sailing_gangplank_brimhaven	2758	3230
+9	ardougne	Ardougne	28	sailing_gangplank_ardougne	2671	3265
+10	port_khazard	Port Khazard	30	sailing_gangplank_port_khazard	2686	3162
+11	witchaven	Witchaven	34	sailing_gangplank_witchaven	2747	3305
+12	entrana	Entrana	36	sailing_gangplank_entrana	2879	3336
+13	civitas_illa_fortis	Civitas illa Fortis	38	sailing_gangplank_civitas_illa_fortis	1775	3142
+14	corsair_cove	Corsair Cove	40	sailing_gangplank_corsair_cove	2580	2844
+15	cairn_isle	Cairn Isle	42	sailing_gangplank_cairn_isle	2750	2952
+16	sunset_coast	Sunset Coast	44	sailing_gangplank_sunset_coast	1512	2974
+17	the_summer_shore	The Summer Shore	45	sailing_gangplank_the_summer_shore	3174	2367
+18	aldarin	Aldarin	46	sailing_gangplank_aldarin	1452	2970
+19	ruins_of_unkah	Ruins of Unkah	48	sailing_gangplank_ruins_of_unkah	3144	2825
+20	void_knights_outpost	Void Knights' Outpost	50	sailing_gangplank_void_knights_outpost	2651	2678
+21	port_roberts	Port Roberts	50	sailing_gangplank_port_roberts	1861	3307
+22	red_rock	Red Rock	52	sailing_gangplank_red_rock	2809	2509
+23	rellekka	Rellekka	62	sailing_gangplank_rellekka	2630	3705
+24	etceteria	Etceteria	65	sailing_gangplank_etceteria	2613	3840
+25	port_tyras	Port Tyras	66	sailing_gangplank_port_tyras	2144	3120
+26	deepfin_point	Deepfin Point	67	sailing_gangplank_deepfin_point	1923	2758
+27	jatizso	Jatizso	68	sailing_gangplank_jatizso	2412	3780
+28	neitiznot	Neitiznot	68	sailing_gangplank_neitiznot	2309	3782
+29	prifddinas	Prifddinas	70	sailing_gangplank_prifddinas	2158	3324
+30	piscatoris	Piscatoris	75	sailing_gangplank_piscatoris	2304	3689
+31	lunar_isle	Lunar Isle	76	sailing_gangplank_lunar_isle	2152	3881
+32	isle_of_souls	Isle of Souls	55	sailing_mooring_isle_of_souls	2283	2822
+33	waterbirth_island	Waterbirth Island	74	sailing_mooring_waterbirth_island	2543	3765
+34	weiss	Weiss	80	sailing_mooring_weiss	2861	3971
+35	dognose_island	Dognose Island	40	sailing_mooring_dognose_island	3061	2638
+36	remote_island	Remote Island	45	sailing_mooring_remote_island	2972	2602
+37	the_little_pearl	The Little Pearl	45	sailing_mooring_the_little_pearl	3354	2216
+38	the_onyx_crest	The Onyx Crest	47	sailing_mooring_the_onyx_crest	2997	2288
+39	last_light	Last Light	52	sailing_mooring_last_light	2848	2326
+40	charred_island	Charred Island	60	sailing_mooring_charred_island	2660	2394
+41	vatrachos_island	Vatrachos Island	46	sailing_mooring_vatrachos_island	1872	2984
+42	anglers_retreat	Anglers' Retreat	51	sailing_mooring_anglers_retreat	2466	2720
+43	minotaurs_rest	Minotaurs' Rest	54	sailing_mooring_minotaurs_rest	1958	3116
+44	isle_of_bones	Isle of Bones	56	sailing_mooring_isle_of_bones	2533	2530
+45	tear_of_the_soul	Tear of the Soul	61	sailing_mooring_tear_of_the_soul	2318	2773
+46	wintumber_island	Wintumber Island	63	sailing_mooring_wintumber_island	2057	2605
+47	the_crown_jewel	The Crown Jewel	64	sailing_mooring_the_crown_jewel	1765	2658
+48	rainbows_end	Rainbow's End	69	sailing_mooring_rainbows_end	2345	2269
+49	sunbleak_island	Sunbleak Island	72	sailing_mooring_sunbleak_island	2189	2326
+50	shimmering_atoll	Shimmering Atoll	49	sailing_mooring_shimmering_atoll	1557	2770
+51	laguna_aurorae	Laguna Aurorae	58	sailing_mooring_laguna_aurorae	1202	2732
+52	chinchompa_island	Chinchompa Island	42	sailing_mooring_chinchompa_island	1893	3429
+53	lledrith_island	Lledrith Island	66	sailing_mooring_lledrith_island	2097	3187
+54	ynysdail	Ynysdail	73	sailing_mooring_ynysdail	2222	3464
+55	buccaneers_haven	Buccaneers' Haven	76	sailing_mooring_buccaneers_haven	2080	3690
+56	drumstick_isle	Drumstick Isle	79	sailing_mooring_drumstick_isle	2150	3529
+57	brittle_isle	Brittle Isle	81	sailing_mooring_brittle_isle	1954	4055
+58	grimstone	Grimstone	87	sailing_mooring_grimstone	2928	4055
