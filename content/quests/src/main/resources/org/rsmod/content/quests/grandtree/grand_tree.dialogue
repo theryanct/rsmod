@@ -1,0 +1,799 @@
+# Generated from the OSRS Wiki page "Transcript:The Grand Tree" by tools/quests/transcript_to_dialogue.py
+0	section	The Dying Tree
+1	line	King Narnode Shareen	Welcome Traveller. I am King Narnode. It's nice to see an outsider.
+1	line	Player	Hi! It seems to be a busy settlement.
+1	line	King Narnode Shareen	For now.
+1	select	Select an option
+1	option	You seem worried, what's up?
+2	line	Player	You seem worried, what's up?
+2	line	King Narnode Shareen	Traveller, can I speak to you in strictest confidence?
+2	line	Player	Of course sire.
+2	line	King Narnode Shareen	Not here, follow me.
+2	line	King Narnode Shareen	Down here.
+1	option	I'll be off now.
+2	line	Player	I'll be off now.
+2	line	King Narnode Shareen	Enjoy your stay with us. There are many things to see in my kingdom.
+2	action	end
+0	section	Foundations cutscene
+1	line	Player	So what is this place?
+1	line	King Narnode Shareen	These, my friend, are the foundations of the stronghold.
+1	line	Player	They look like roots to me.
+1	line	King Narnode Shareen	Not just any roots Traveller! These were created by gnome mages eons ago, since then they have grown to become a mighty stronghold!
+1	line	Player	Impressive. What exactly is the problem?
+1	line	King Narnode Shareen	In the last two months our tree guardians have reported continuing deterioration of the Grand Tree's health. I've never seen this before! It could be the end for us all!
+1	line	Player	You mean the tree is ill?
+1	line	King Narnode Shareen	In effect yes. Would you be willing to help us discover what is happening to the tree?
+1	cond	If the player is below level 50 combat:
+2	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 50.
+1	select	Start The Grand Tree quest?
+1	option	Yes.
+2	line	Player	I'd be happy to help!
+2	line	King Narnode Shareen	Thank Guthix for your arrival!
+2	line	King Narnode Shareen	The first task is to find out what's killing the tree.
+2	line	Player	Do you have an idea?
+2	line	King Narnode Shareen	My top tree guardian, Glough, believes it's human sabotage. I'm not so sure! The only way to know for sure is to talk to Hazelmere.
+2	line	Player	Who's Hazelmere?
+2	line	King Narnode Shareen	Hazelmere is one of the mages that created the Grand Tree! He is the only one that has survived from that time. Take this bark sample to him, he will be able to help!
+2	box	The king shows you a sample of bark.
+2	line	King Narnode Shareen	The mage only talks in the old tongue, you'll need this.
+2	box	The king shows you a translation book.
+2	line	Player	What is it?
+2	line	King Narnode Shareen	It's a translation book, you'll need it to translate what Hazelmere says. Do that carefully! His words are our only hope! You'll find his dwellings high upon a towering hill, on an island east of Yanille.
+2	box	The king hands you the bark sample and the translation book.
+2	line	King Narnode Shareen	I'll show you the way back up.
+2	line	King Narnode Shareen	Up here.
+2	action	end
+1	option	No.
+2	line	Player	I'm sorry, I don't want to get involved.
+2	line	King Narnode Shareen	I understand Traveller. Please keep this to yourself.
+2	line	Player	Of course.
+2	line	King Narnode Shareen	I'll show you the way back up.
+2	line	King Narnode Shareen	Up here.
+2	action	end
+0	section	When speaking to King Narnode Shareen again
+1	line	King Narnode Shareen	Traveller, any word from Hazelmere?
+1	line	Player	Not yet.
+1	cond	If the player has lost the bark sample:
+2	line	Player	I've lost the bark sample.
+2	line	King Narnode Shareen	Here's another sample, hang on to it this time!
+2	box	The King gives you another bark sample.
+2	action	continues
+1	cond	If the player has lost the translation book:
+2	line	Player	I've lost the translation book.
+2	line	King Narnode Shareen	Don't worry, I have more.
+2	box	The King gives you another translation book.
+2	action	continues
+1	line	King Narnode Shareen	Hazelmere lives on an island just south of the Khazard Fight Arena. Give him the sample and translate his reply.
+1	line	King Narnode Shareen	I just hope he can help us in our hour of need!
+1	action	end
+0	section	Hazelmere's Island
+1	box	The mage starts to speak but all you hear is:
+1	line	Hazelmere	Blah. Blah, blah, blah, blah...blah!
+1	box	You give the bark sample to Hazelmere.
+1	box	The mage carefully examines the sample.
+1	line	Hazelmere	Blah, blah...Daconia...blah, blah.
+1	line	Player	Can you write this down and I'll try and translate it?
+1	line	Hazelmere	Blah, blah?
+1	box	You make a writing motion. The mage scribbles something down on a scroll.
+1	box	Hazelmere has given you the scroll.
+1	action	
+1	action	end
+0	section	When speaking again to Hazelmere
+1	line	Hazelmere	Blah, blah...Daconia...blah, blah.
+1	box	You still can't understand Hazelmere. The mage wrote it down for you on a scroll.
+1	action	end
+0	section	A Deadly Plot
+0	section	Bring Back the News
+1	line	Player	Hello again, your highness.
+1	line	King Narnode Shareen	Hello Traveller, did you speak to Hazelmere?
+1	line	Player	Yes! I managed to find him.
+1	line	King Narnode Shareen	Do you understand what he said?
+1	select	Select an option
+1	option	I think so!
+2	line	Player	I think so!
+2	line	King Narnode Shareen	So what did he say?
+2	select	Select an option
+2	option	King Narnode must be stopped, he is a madman!
+3	line	Player	King Narnode must be stopped, he is a madman!
+3	action	continue
+2	option	Praise be to the great Zamorak!
+3	line	Player	Praise be to the great Zamorak!
+3	action	continue
+2	option	Do you have any bread? I do like bread.
+3	line	Player	Do you have any bread? I do like bread.
+3	action	continue
+2	option	The time has come to attack!
+3	line	Player	The time has come to attack!
+3	action	continue
+2	option	None of the above.
+3	action	continue
+2	select	Select an option
+2	option	The tree is fine, you have nothing to fear.
+3	line	Player	The tree is fine, you have nothing to fear.
+3	action	continue
+2	option	You must come and see me!
+3	line	Player	You must come and see me!
+3	action	continue
+2	option	The tree needs watering as there has been drought.
+3	line	Player	The tree needs watering as there has been drought.
+3	action	continue
+2	option	Grave danger lies ahead, only the bravest will linger.
+3	line	Player	Grave danger lies ahead, only the bravest will linger.
+3	action	continue
+2	option	None of the above.
+3	action	continue
+2	select	Select an option
+2	option	Time is of the essence! We must move quickly.
+3	line	Player	Time is of the essence! We must move quickly.
+3	action	continue
+2	option	A man came to me with the King's seal.
+3	line	Player	A man came to me with the King's seal.
+3	action	continue
+2	option	There is no need for haste, just send a runner.
+3	line	Player	There is no need for haste.
+3	action	continue
+2	option	You must act now, or we will all die!
+3	line	Player	You must act now or we will all die!
+3	action	continue
+2	option	Time passes us by.
+3	line	Player	Time passes us by.
+3	action	continue
+2	option	None of the above.
+3	action	continue
+2	select	Select an option
+2	option	I gave the man Daconia rocks.
+3	line	Player	I gave the man Daconia rocks.
+3	action	continue
+2	option	You must use force!
+3	line	Player	You must use force!
+3	action	continue
+2	option	Use a bucket of milk from a scared cow.
+3	line	Player	Use a bucket of milk from a sacred cow.
+3	action	continue
+2	option	Take this banana to him, he will understand.
+3	line	Player	Take this banana to him, he will understand.
+3	action	continue
+2	option	Only Adamantite is any use.
+3	line	Player	Only Adamantite is any use.
+3	action	continue
+2	option	None of the above.
+3	action	continue
+2	select	Select an option
+2	option	All with be fine on the third night.
+3	line	Player	All with be fine on the third night.
+3	action	continue
+2	option	You must wait till the second night.
+3	line	Player	You must wait till the second night.
+3	action	continue
+2	option	Nothing will help us now!
+3	line	Player	Nothing will help us now!
+3	action	continue
+2	option	The tree will die in five days!
+3	line	Player	The tree will die in five days!
+3	action	continue
+2	option	And Daconia rocks will kill the tree!
+3	line	Player	And Daconia rocks will kill the tree!
+3	action	continue
+2	cond	If the player chose the correct options:
+3	line	King Narnode Shareen	Of course! I should've known! Someone must've forged my royal seal. Hazelmere thought I sent him for the Daconia stones!
+3	line	Player	What are Daconia stones?
+3	line	King Narnode Shareen	Hazelmere created the Daconia stones. They are a safety measure, in case the tree grew out of control. They're the only thing that can kill the tree.
+3	line	King Narnode Shareen	This is terrible! The stones must be recovered!
+3	line	Player	Can I help?
+3	line	King Narnode Shareen	First I must warn the tree guardians. Please, could you tell the chief tree guardian Glough. He lives in a tree house just in front of the Grand Tree.
+3	line	King Narnode Shareen	If he's not there he will be at his girlfriend Anita's place. Meet me back here once you've told him.
+3	line	Player	OK! I'll be back soon.
+3	action	end
+2	cond	If the player chose the wrong options:
+3	line	King Narnode Shareen	Wait a minute! That doesn't sound like Hazelmere! Are you sure you translated correctly?
+3	line	Player	Erm...I think so.
+3	line	King Narnode Shareen	I'm sorry Traveller but this is no good. The translation must be perfect or the information's no use. Please come back when you know exactly what Hazelmere said.
+3	action	end
+1	option	No, I need to go back.
+2	line	Player	I've lost the bark sample.
+2	line	King Narnode Shareen	Here's another sample, hang on to it this time!
+2	action	
+2	line	King Narnode Shareen	Time is of the essence Traveller!
+2	action	end
+0	section	When speaking to King Narnode Shareen again
+1	line	King Narnode Shareen	Hello Traveller, did you speak to Glough?
+1	line	Player	Not yet.
+1	line	King Narnode Shareen	OK. He lives just in front of the Grand Tree. Let me know when you've talked to him.
+1	action	end
+0	section	Human Sabotage?
+0	section	Glough
+1	line	Player	Hello.
+1	box	The gnome is munching on a worm hole.
+1	line	Glough	Can I help human? Can't you see I'm eating?!
+1	box	The gnome continues to eat.
+1	line	Player	The King asked me to inform you that the Daconia rocks have been taken!
+1	line	Glough	Surely not!
+1	line	Player	Apparently a human took them from Hazelmere. Hazelmere believed him; he had the King's seal!
+1	line	Glough	I should've known! The humans are going to invade!
+1	line	Player	Never!
+1	line	Glough	Your type can't be trusted! I'll take care of this! Go back to the King.
+1	action	end
+0	section	Reporting to the King
+1	line	Player	Hello, your highness. Have you any news on the Daconia stones?
+1	line	King Narnode Shareen	It's OK Traveller, thanks to Glough! He found a human sneaking around! He had three Daconia rocks on him!
+1	line	Player	Wow! That was quick!
+1	line	King Narnode Shareen	Yes Glough really knows what he's doing. The human has been detained until we know who else is involved.
+1	line	King Narnode Shareen	Maybe Glough was right, maybe humans are invading!
+1	line	Player	I doubt it, can I speak to the prisoner?
+1	line	King Narnode Shareen	Certainly. He's on the top level of the tree. Be careful, it's a long way down!
+1	action	end
+0	section	When talking to King Narnode Shareen again
+1	line	King Narnode Shareen	Hello Traveller. If you wish to talk to the prisoner go to the top of the tree, you'll find him there.
+1	line	Player	Thanks.
+1	action	end
+0	section	Interrogating the Prisoner
+1	line	Player	Tell me. Why would you want to kill the Grand Tree?
+1	line	Charlie	What do you mean?!
+1	line	Player	Don't tell me, you just happened to be caught carrying Daconia rocks!
+1	line	Charlie	All I know is that I did what I was asked.
+1	line	Player	I don't understand.
+1	line	Charlie	Glough paid me to go to this gnome on a hill. I gave the gnome a seal and he gave me some rocks to give to Glough.
+1	line	Charlie	I've been doing it for weeks, this time though Glough locked me up here! I just don't understand it.
+1	line	Player	Sounds like Glough is hiding something!
+1	line	Charlie	I don't know what he's up to. If you want to find out you'd better search his home.
+1	line	Player	Okay. Thanks Charlie.
+1	line	Charlie	Good luck!
+1	action	end
+0	section	When talking to Charlie again
+1	line	Player	Hello Charlie.
+1	line	Charlie	Hello adventurer. Have you figured out what's going on?
+1	line	Player	No idea.
+1	line	Charlie	To get to the bottom of this you'll need to search Glough's home.
+1	action	end
+0	section	Reporting back to King Narnode
+1	line	King Narnode Shareen	Hello Traveller. So, did you speak to the culprit?
+1	line	Player	Yes I did and something's not right!
+1	line	King Narnode Shareen	What do you mean?
+1	line	Player	The prisoner said he was paid by Glough to get the Daconia stones!
+1	line	King Narnode Shareen	That's absurd! He's just trying to save himself!
+1	line	King Narnode Shareen	Since Glough's wife died he's been a little strange. He would never wrongly imprison someone though! Now that the culprit is locked up we can relax. It's sad but I think Glough was right.
+1	line	King Narnode Shareen	Humans are planning to invade and wipe out the tree gnomes!
+1	line	Player	But why?
+1	line	King Narnode Shareen	Who knows? You may have to leave soon Traveller! I trust you but the local gnomes are getting paranoid.
+1	action	end
+0	section	When talking to King Narnode again
+1	line	Player	Your highness! I'm concerned about Glough!
+1	line	King Narnode Shareen	Why? Don't worry about him now the culprit has been caught. I'm sure Glough's resentment of humans will pass with time.
+1	line	Player	I'm not so sure.
+1	line	King Narnode Shareen	If you're really concerned speak to him.
+1	action	end
+0	section	Searching Glough's cupboard
+1	box	You've found Glough's Journal!
+1	action	end
+0	section	Suspicions
+1	line	Player	Glough! I don't know what you're up to but I know you paid Charlie to get those rocks!
+1	line	Glough	You're a fool human! You have no idea what's going on.
+1	line	Player	I know the Grand Tree's dying! And I think you're part of the reason.
+1	line	Glough	How dare you accuse me! I'm the head tree guardian!
+1	line	Glough	Guards! Guards!
+1	line	Gnome guard	Come with me!
+0	section	Imprisoned
+1	line	Charlie	So they got you as well?
+1	line	Player	It's Glough! He's trying to cover something up.
+1	line	Charlie	I shouldn't tell you this adventurer. But if you want to get to the bottom of this you should go and talk to the Karamja Shipyard foreman.
+1	line	Player	Why?
+1	line	Charlie	Glough sent me to Karamja to meet him. I delivered a large amount of gold. For what? I don't know. He may be able to tell you what Glough's up to. That's if you can get out of here. You'll find him
+1	line	Charlie	in the Karamja Shipyard, east of Shilo Village. Be careful! If he discovers you're not working for Glough, there'll be trouble! The sea men use the password Ka-Lu-Min.
+1	line	Player	Thanks Charlie!
+1	line	King Narnode Shareen	Traveller please accept my apologies! Glough had no right to arrest you! I just think he's scared of humans. Let me get you out of there.
+1	line	Player	I don't think you can trust Glough, your highness. He seems to have an unnatural hatred for humans.
+1	line	King Narnode Shareen	I know he can be a bit extreme at times. But he's the best tree guardian I have, he has made the gnomes paranoid about humans though.
+1	line	King Narnode Shareen	I'm afraid Glough has placed guards on the front gate to stop you escaping! Let my glider pilot fly you away until things calm down around here.
+1	line	Player	Well, OK.
+1	line	King Narnode Shareen	I'm sorry again Traveller!
+1	action	end
+0	section	When speaking to King Narnode again
+1	line	King Narnode Shareen	Glough is looking for you! Leave on the glider now before it's too late!
+1	action	end
+0	section	When speaking to Charlie again
+1	line	Player	I can't figure this out Charlie!
+1	line	Charlie	Go and see the foreman in the Karamja jungle, there's a shipyard there, you might find some clues. Don't forget the password is Ka-Lu-Min; if they realise that you're not working for Glough there'll be trouble!
+1	action	end
+0	section	Attempting to leave the stronghold via the gate
+1	line	Gnome guard	Halt, human!
+1	line	Player	What?, why?
+1	line	Gnome guard	By order of the head tree guardian! You can not leave!
+1	line	Player	That's crazy! Why?!
+1	line	Gnome guard	Humans are planning to attack our stronghold. You could be a spy!
+1	line	Player	That's ridiculous!
+1	line	Gnome guard	Maybe, but that's the orders, I'm sorry.
+1	action	end
+0	section	Fleeing the Grand Tree
+1	line	Captain Errdo	Hi, the King said that you need to leave?
+1	line	Player	Apparently humans are invading!
+1	line	Captain Errdo	I find that hard to believe! I have lots of human friends.
+1	line	Player	I don't understand it either!
+1	line	Captain Errdo	So where to?
+1	select	Select an option
+1	option	Take me to Karamja please!
+2	line	Player	Take me to Karamja please.
+2	line	Captain Errdo	Okay, you're the boss! Hold on tight, it'll be a rough ride.
+2	box	You fly on the glider.
+2	action	end
+1	option	Not anywhere for now!
+2	line	Player	Not anywhere for now!
+2	line	Captain Errdo	Okay. I'll be here for when you're ready.
+2	action	end
+0	section	Treachery Revealed
+0	section	Arrival
+0	section	Landing (crashing) the glider
+1	line	Captain Errdo	Sorry about that.
+1	line	Captain Errdo	That turbulence over the Karamja Volcano was a bit unexpected, and the area round here isn't well suited for emergency landing.
+1	line	Captain Errdo	Still! we're still alive that's the main thing. Are you okay?
+1	line	Player	I'm fine, I can't say the same for your glider!
+1	line	Captain Errdo	I don't think I can fix this. Looks like we'll be heading back by foot. I might see if I can find Penwie while I'm here, I believe he's charting the area.
+1	line	Player	Where's the shipyard from here?
+1	line	Captain Errdo	I think I saw some buildings on the coast east of here while we were crashing. I'd have a look there.
+1	line	Captain Errdo	Take care adventurer!
+1	line	Player	Take care little man.
+1	action	end
+0	section	Upon ending the conversation with Errdo
+1	line	Jogre	Ug!
+0	section	Talking to Captain Errdo again
+1	line	Player	Where's the shipyard from here?
+1	line	Captain Errdo	It's east of here. I think I saw some buildings on the coast while we were crashing...
+1	action	end
+0	section	The Shipyard
+0	section	Password
+1	line	Shipyard worker	Hey you! What are you up to?
+1	line	Player	I'm trying to open the gate!
+1	line	Shipyard worker	I can see that! Why?
+1	select	Select an option
+1	option	I'm from the Ministry of Health and Safety.
+2	line	Player	I'm from the Ministry of Health and Safety.
+2	line	Shipyard worker	Never 'erd of 'em.
+2	line	Player	You will respect my authority!
+2	line	Shipyard worker	Get out of here before I give you a beating!
+2	action	end
+1	option	Glough sent me.
+2	line	Player	Glough sent me.
+2	line	Shipyard worker	Hmm...really? What for?
+2	line	Player	You're wasting my time! Take me to your superior!
+2	line	Shipyard worker	OK. Password.
+2	select	Select an option
+2	option	Ka.
+3	line	Player	Ka.
+3	action	continue
+2	option	Ko.
+3	line	Player	Ko.
+3	action	continue
+2	option	Ke.
+3	line	Player	Ke.
+3	action	continue
+2	select	Select an option
+2	option	Lo.
+3	line	Player	Lo.
+3	action	continue
+2	option	Lu.
+3	line	Player	Lu.
+3	action	continue
+2	option	Le.
+3	line	Player	Le.
+3	action	continue
+2	select	Select an option
+2	option	Mon.
+3	line	Player	Mon.
+3	action	continue
+2	option	Min.
+3	line	Player	Min.
+3	action	continue
+2	option	Men.
+3	line	Player	Men.
+3	action	continue
+2	cond	If the player chose Ka-Lu-Min:
+3	line	Shipyard worker	Sorry to have kept you.
+2	cond	If the player chose any other options:
+3	line	Shipyard worker	You have no idea!
+1	option	I'm just looking around.
+2	line	Player	I'm just looking around.
+2	line	Shipyard worker	This ain't a museum! Leave now!
+2	line	Player	I'll leave when I choose!
+2	line	Shipyard worker	Well you're not on the list so you're not coming in. Go away.
+2	line	Player	Well I'll just stand here then until you let me in.
+2	line	Shipyard worker	You do that!
+2	line	Player	I will!
+2	line	Shipyard worker	Yeah?
+2	line	Player	Yeah!
+2	line	Shipyard worker	....
+2	line	Player	...
+2	line	Player	So are you going to let me in then?
+2	line	Shipyard worker	No.
+2	line	Player	...
+2	line	Shipyard worker	....
+2	line	Player	You bored yet?
+2	line	Shipyard worker	No. I can stand here all day.
+2	line	Player	...
+2	line	Shipyard worker	....
+2	line	Player	Alright you win. I'll find another way in.
+2	line	Shipyard worker	No you won't.
+2	line	Player	Yes I will.
+2	line	Shipyard worker	I'm not starting that again. Maybe if I ignore you you'll go away...
+2	action	end
+0	section	Shipyard workers
+1	option	Dialogue 1
+2	line	Player	Hello.
+2	line	Player	Quite a few ships you're building!
+2	line	Shipyard worker	This is just the start! The completed fleet will be awesome!
+2	action	end
+1	option	Dialogue 2
+2	line	Player	Hello.
+2	line	Shipyard worker	No time to talk we've a fleet to build!
+2	action	end
+1	option	Dialogue 3
+2	line	Player	Hello.
+2	line	Shipyard worker	Hello matey!
+2	line	Player	How are you?
+2	line	Shipyard worker	Tired!
+2	line	Player	You shouldn't work so hard!
+2	action	end
+1	option	Dialogue 4
+2	line	Player	Hello.
+2	line	Player	Quite an impressive set up!
+2	line	Shipyard worker	It needs to be. There's no other way to build a fleet of this size!
+2	action	end
+1	option	Dialogue 5
+2	line	Player	Hello.
+2	line	Shipyard worker	Hello there. I haven't seen you before.
+2	line	Player	I'm new!
+2	line	Shipyard worker	Well it's hard work, but the pay is good.
+2	action	end
+1	option	Dialogue 6
+2	line	Player	Hello!
+2	line	Player	How are you?
+2	line	Shipyard worker	Too busy to waste time gossiping!
+2	line	Player	Touchy!
+2	action	end
+1	option	Dialogue 7
+2	line	Player	Hello.
+2	line	Player	Looks like hard work.
+2	line	Shipyard worker	I like to keep busy.
+2	action	end
+1	option	Dialogue 8
+2	line	Player	Hello!
+2	line	Player	So where are you sailing?
+2	line	Shipyard worker	What do you mean?
+2	line	Player	Don't worry, just kidding!
+2	action	end
+1	option	Dialogue 9
+2	line	Player	Hello!
+2	line	Shipyard worker	Hello there, are you too lazy to work as well?
+2	line	Player	Something like that.
+2	line	Shipyard worker	I'm just sun bathing!
+2	action	end
+1	option	Dialogue 10
+2	line	Player	Hello!
+2	line	Shipyard worker	No time to talk we've a fleet to build!
+2	action	end
+1	option	Dialogue 11
+2	line	Player	Hello!
+2	line	Player	What are you building?
+2	line	Shipyard worker	Are you serious?
+2	line	Player	Of course not! You're obviously building a boat.
+2	action	end
+1	option	Dialogue 12
+2	line	Player	Hello!
+2	line	Shipyard worker	I'm getting tired of this!
+2	line	Player	What?
+2	line	Shipyard worker	Breaking my back for pennies! It's just not on!
+2	action	end
+1	option	Dialogue 13
+2	line	Player	Hello!
+2	line	Shipyard worker	What do you want?
+2	line	Player	Is that any way to talk to your new superior?
+2	line	Shipyard worker	Oh, I'm sorry, I didn't realise!
+2	action	end
+1	option	Dialogue 14
+2	line	Player	Hello!
+2	line	Shipyard worker	Ouch!
+2	line	Player	What's wrong?!
+2	line	Shipyard worker	I cut my finger!
+2	line	Shipyard worker	Do you have a bandage?
+2	line	Player	I'm afraid not.
+2	line	Shipyard worker	That's ok, I'll use my shirt.
+2	action	end
+1	option	Dialogue 15
+2	line	Player	Hello!
+2	line	Shipyard worker	Can I help you?
+2	line	Player	I'm just looking around.
+2	line	Shipyard worker	Well there's plenty of work to be done, so if you don't mind...
+2	line	Shipyard worker	Of course. Sorry to have disturbed you.
+2	action	end
+0	section	Foreman
+1	line	Player	Hello, are you in charge?
+1	line	Foreman	That's right, and you are...?
+1	line	Player	Glough sent me to check on how you are doing.
+1	line	Foreman	Right. Glough sent a human?
+1	line	Player	His gnomes are busy.
+1	line	Foreman	Hmm...in that case we'd better go to my office. Follow me.
+1	line	Foreman	Tell me again why you're here.
+1	line	Player	Er...Glough sent me?
+1	line	Foreman	By the way how is Glough? Still with his wife?
+1	select	Select an option
+1	option	Yes, they're getting on great.
+2	line	Player	Yes, they're getting on great.
+2	line	Foreman	Really? That's odd, considering she died last year. Die imposter!
+2	action	The player is attacked by the Foreman.
+1	option	Always arguing as usual!
+2	line	Player	Always arguing as usual!
+2	line	Foreman	Really? That's odd, considering she died last year. Die imposter!
+2	action	The player is attacked by the Foreman.
+1	option	Sadly his wife is no longer with us!
+2	line	Player	Sadly his wife is no longer with us!
+2	line	Foreman	Right answer. I have to watch for imposters. What's Glough's favourite dish?
+2	select	Select an option
+2	option	He loves tangled toads legs.
+3	line	Player	He loves tangled toads legs.
+3	line	Foreman	Our survey said.... Bzzzzzz! Wrong answer!
+3	action	The player is attacked by the Foreman.
+2	option	He loves worm holes.
+3	line	Player	He loves worm holes.
+3	line	Foreman	OK. Just one more. What's the name of his new girlfriend?
+3	select	Select an option
+3	option	Anita.
+4	line	Player	Anita.
+4	line	Foreman	Well, well, you do know Glough. Sorry for the interrogation but I'm sure you understand.
+4	line	Player	Of course, security is paramount.
+4	line	Foreman	As you can see things are going well.
+4	line	Player	Indeed.
+4	line	Foreman	When I was asked to build a fleet large enough to invade Port Sarim and carry 300 gnome troops I said: 'If anyone can, I can.'
+4	line	Player	That's a lot of troops!
+4	line	Foreman	True but if the gnomes are really going to take over Gielinor they'll need at least that.
+4	line	Player	Take over?
+4	line	Foreman	Of course, why else would Glough want 30 battleships? Between you and me I don't think he stands a chance.
+4	line	Player	No?
+4	line	Foreman	I mean, for the kind of battleships Glough's ordered I'll need tons and tons of lumber! Still, if he says he can supply the wood I'm sure he can! Anyway, here's the order for the lumber.
+4	action	The foreman has given you the lumber order.
+4	action	
+4	line	Player	OK. I'll head off and give this order to Glough.
+4	action	end
+3	option	Alia.
+4	line	Player	Alia.
+4	line	Foreman	You almost had me fooled! Die imposter!
+4	action	The player is attacked by the Foreman.
+3	option	Elena.
+4	line	Player	Elena.
+4	line	Foreman	You almost had me fooled! Die imposter!
+4	action	The player is attacked by the Foreman.
+2	option	He loves choc bombs.
+3	line	Player	He loves tangled toads legs.
+3	line	Foreman	Our survey said.... Bzzzzzz! Wrong answer!
+3	action	The player is attacked by the Foreman.
+0	section	Talking to Foreman after obtaining the lumber order
+1	box	The foreman is too busy to talk.
+1	action	end
+0	section	Sneaking Around
+0	section	Gnome guard
+1	line	Gnome guard	I'm afraid that we have orders not to let you in.
+1	line	Player	Orders from who?
+1	line	Gnome guard	The head tree guardian, he say's you're a spy!
+1	line	Player	Glough!
+1	line	Gnome guard	I'm sorry but you'll have to leave.
+1	action	end
+0	section	When talking to Femi (if you helped her)
+1	line	Player	I can't believe they won't let me in!
+1	line	Femi	I don't believe all this rubbish about an invasion. If mankind wanted to, they could have invaded before now.
+1	line	Player	I really need to see King Narnode. Could you help sneak me in?
+1	line	Femi	Well, as you helped me I suppose I could. We'll have to be careful. If I get caught I'll be in the cage!
+1	line	Player	OK, what should I do?
+1	line	Femi	Jump in the back of the cart. It's a food delivery, we should be fineno period
+1	line	Femi	Okay, traveller, you'd better get going.
+1	line	Player	Thanks again!
+1	line	Femi	That's okay, all the best.
+1	action	end
+0	section	When talking to Femi (if you didn't help her)
+1	line	Femi	Why should I help you, you wouldn't help me!
+1	line	Player	Erm I know, but this is an emergency!
+1	line	Femi	So was lifting that barrel! Tell you what, call it a round 1000 gold pieces.
+1	line	Player	1000 gold pieces!
+1	line	Femi	That's right, 1000 and I'll sneak you in.
+1	option	No chance!
+2	line	Player	No chance!
+2	action	end
+1	option	Ok then, here you go.
+2	line	Player	OK then, here you go.
+2	box	You give Femi 1000 coins.
+2	line	Femi	Alright, jump in the back of the cart. It's a food delivery, we should be fine.
+2	line	Femi	Okay, traveller, you'd better get going.
+2	line	Player	Thanks again!
+2	line	Femi	That's okay, all the best.
+2	action	end
+0	section	When talking to Femi again
+1	line	Femi	Now, to get this lot to the Grand Tree!
+1	select	Select an option
+1	option	Can I help?
+2	line	Player	Can I help?
+2	line	Femi	No, you're okay, traveller. I can manage from here.
+2	action	end
+1	option	I'd better get going!
+2	line	Player	I'd better get going!
+2	action	end
+0	section	When speaking to Glough
+1	line	Player	I know what you're up to Glough!
+1	line	Glough	You have no idea human!
+1	line	Player	You may be able to make a fleet but the tree gnomes will never follow you into battle against humans.
+1	line	Glough	So, you know more than I thought! The gnomes fear humanity more than any other race. I just need to give them a push in the right direction. There's nothing you can do traveller! Leave before it's too late!
+1	line	Player	King Narnode won't allow it!
+1	line	Glough	The King's a fool and a coward! He'll bow to me! You'll soon be back in that cage!
+1	action	end
+0	section	King Narnode
+1	line	Player	King Narnode, I need to talk!
+1	line	King Narnode Shareen	Traveller, what are you doing here? The stronghold has been put on full alert! It's not safe for you here!
+1	line	Player	Your highness, I believe Glough is killing the trees in order to make a mass fleet of warships!
+1	line	King Narnode Shareen	That's an absurd accusation!
+1	line	Player	His hatred for humanity is stronger than you know!
+1	line	King Narnode Shareen	That's enough Traveller, you sound as paranoid as him! Traveller please leave! It's bad enough having one human locked up.
+1	action	end
+0	section	Charlie
+1	line	Player	How are you doing Charlie?
+1	line	Charlie	I've been better.
+1	line	Player	Glough has some plan to rule Gielinor!
+1	line	Charlie	I wouldn't put it past him, the Gnome's crazy!
+1	line	Player	I need some proof to convince the King.
+1	line	Charlie	Hmm... you could be in luck! Before Glough had me locked up I heard him mention that he'd left his chest key at his girlfriend's house. She lives just west of the toad swamp.
+1	line	Player	Okay, I'll see what I can find.
+1	action	end
+0	section	When speaking to King Narnode
+1	line	Player	Hello, your highness.
+1	line	King Narnode Shareen	Please Traveller, if the gnomes see me talking to you they'll revolt against me.
+1	line	Player	That's crazy!
+1	line	King Narnode Shareen	Glough's scared the whole town, he expects the humans to attack any day. He's even begun to recruit hundreds of gnome soldiers.
+1	line	Player	Don't you understand he's creating his own army?!
+1	line	King Narnode Shareen	Please Traveller, leave before it's too late!
+1	action	end
+0	section	When speaking to Glough
+1	line	Player	I'm going to stop you, Glough!
+1	line	Glough	You're becoming quite annoying traveller!
+1	box	Glough is searching his pockets.
+1	line	Glough	Where are that darn key?
+1	line	Glough	Leave human, before I have you put in the cage!
+1	action	end
+0	section	Anita
+1	line	Player	Hello there.
+1	line	Anita	Oh hello, I've seen you with the King.
+1	line	Player	Yes, I'm helping him with a problem.
+1	line	Anita	You must know my boyfriend Glough then?
+1	line	Player	Indeed!
+1	line	Anita	Could you do me a favour?
+1	select	Select an option
+1	option	I suppose so.
+2	line	Player	I suppose so.
+2	line	Anita	Please give this key to Glough, he left it here last night.
+2	box	Anita gives you a key.
+2	action	
+2	line	Anita	Thanks a lot.
+2	line	Player	No... thank you!
+2	action	end
+1	option	No, I'm busy.
+2	line	Player	No, I'm busy.
+2	action	end
+0	section	Talking to Anita again
+1	line	Anita	Have you taken that key to Glough yet?
+1	line	Player	No, I'm still carrying it around.
+1	line	Anita	Oh. Please take it to Glough!
+1	action	end
+0	section	Glough's Plans
+0	section	Searching Glough's chest
+1	box	You have found a scroll!
+1	action	end
+0	section	Invasion plans
+0	section	Talking to Charlie
+1	line	Player	You were right! I searched Glough's chest and found some invasion plans!
+1	line	Charlie	Go to the king and tell him! Finally you have proof. Surely King Narnode will believe you now and set me free!
+1	line	Player	Hold tight Charlie!
+1	line	Charlie	I'm not going anywhere!
+1	action	end
+0	section	Talking to King Narnode Shareen
+1	line	Player	Hi, your highness, did you think about what I said?
+1	line	King Narnode Shareen	Look, if you're right about Glough I would have him arrested but there's no reason for me to think he's lying.
+1	line	Player	Look, I found this at Glough's home!
+1	box	You give the King the invasion plans.
+1	line	King Narnode Shareen	If these are to be believed then this is terrible!
+1	line	King Narnode Shareen	But it's not proof, any one could have made these. Traveller, I understand your concern, I had guards search Glough's house but they found nothing suspicious, just these odd twigs.
+1	line	King Narnode Shareen	On the other hand, if Glough's right about the humans we will need an army of gnomes to protect ourselves. So I've decided to allow Glough to raise a mighty gnome army.
+1	line	King Narnode Shareen	The Grand Tree's still slowly dying, if it is human sabotage we must respond!
+1	box	The King has given you some twigs lashed together.
+1	action	
+1	action	end
+0	section	When speaking to King Narnode again
+1	line	King Narnode Shareen	Please Traveller, take my advice and leave!
+1	cond	If the player has lost the twigs:
+2	line	Player	I've lost those twigs you gave me.
+2	line	King Narnode Shareen	Here take these, I don't see how it will help you though.
+2	cond	If the player doesn't have enough inventory space:
+3	line	King Narnode Shareen	Hmm. Looks like you can't carry anymore. Put 4 things down and come back to me.
+3	action	end
+2	cond	If the player has enough inventory space:
+3	box	The King has given you some twigs lashed together.
+3	action	
+1	action	end
+0	section	When speaking to Charlie
+1	action	end
+0	section	The mystery of the twigs
+0	section	Using anything besides the twigs on the pillars
+1	action	end
+0	section	Using the correct combination
+1	box	With a grinding of machinery, a trapdoor snaps open!
+1	action	end
+0	section	Glough's Pet
+1	line	Player	Hello?
+1	line	Player	Anybody?
+1	line	Player	Glough?
+1	line	Player	Glough?
+1	line	Glough	You really are becoming a headache! Well, at least now you can die knowing you were right, it will save me having to hunt you down like all the other human filth of Gielinor!
+1	line	Player	You're crazy, Glough!
+1	line	Glough	Bah! Well, soon you'll see, the gnomes are ready to fight, in three weeks this tree will be dead wood, in ten weeks it will be 30 battleships! Finally we will rid the world of the disease called humanity!
+1	line	Player	What makes you think I'll let you get away with it?
+1	line	Glough	Fool... meet my little friend!
+0	section	When clicking out of the cutscene
+1	line	Glough	Pay attention when I'm talking to you!
+1	action	end
+0	section	Talking to Glough during the fight
+1	line	Glough	Just die, human!
+1	action	end
+0	section	When talking to King Narnode without finishing the fight
+1	line	Player	Your highness, it's true about Glough I tell you! He's planning to take over Gielinor!
+1	line	King Narnode Shareen	I'm sorry Traveller but it's just not realistic. How could Glough, even with a gnome army, take over?
+1	line	Player	He plans to make a fleet of warships from the Grand Tree's wood!
+1	line	King Narnode Shareen	That's enough Traveller! I've no time for make believe. The tree's still dying. I must get to the truth of this!
+1	action	end
+0	section	When you defeat the Black Demon
+1	line	Glough	Mummy!
+0	section	Saving the Tree
+0	section	The End of the Tunnel
+1	line	King Narnode Shareen	Traveller you're wounded! What happened?
+1	line	Player	It's Glough! He set a demon on me!
+1	line	King Narnode Shareen	What?! Glough?! With a demon?!
+1	line	Player	Glough has a store of Daconia rocks further up the passage! He's been accessing the roots from a secret passage at his home.
+1	line	King Narnode Shareen	Never! Not Glough! He's a good gnome at heart!
+1	line	King Narnode Shareen	Guard!
+1	line	Gnome guard	Sire!
+1	line	King Narnode Shareen	Go and check out that passage!
+1	line	Gnome guard	We found Glough hiding under a horde of Daconia rocks!
+1	line	Player	That's what I've been trying to tell you! Glough's been fooling you!
+1	line	King Narnode Shareen	I..I don't know what to say! How could I have been so blind?!
+1	line	King Narnode Shareen	Guard! Call off the military training!
+1	line	King Narnode Shareen	The humans are not attacking!
+1	line	Gnome guard	Yes sir!
+1	line	King Narnode Shareen	You have my full apologies Traveller! And my gratitude!
+1	line	King Narnode Shareen	A reward will have to wait though, the tree is still dying! The guards are clearing Glough's rock supply now but there must be more Daconia hidden somewhere in the roots! Help us search, we have little time!
+1	action	end
+0	section	When talking to King Narnode again
+1	line	King Narnode Shareen	Traveller, have you managed to find the Daconia?
+1	line	Player	No sign of it so far.
+1	line	King Narnode Shareen	The tree will still die if we don't find it! It could be anywhere!
+1	line	Player	Don't worry your highness! We'll find it!
+1	action	end
+0	section	Searching a root with no Daconia rocks
+0	section	Searching a root with the Daconia rock
+1	box	You've found a Daconia rock!
+1	action	end
+0	section	Daconia Delivered
+1	line	King Narnode Shareen	Traveller, have you managed to find the Daconia?
+1	line	Player	Is this it?
+1	line	King Narnode Shareen	Yes! Excellent, well done!
+1	box	You give the King the Daconia rock.
+1	line	King Narnode Shareen	It's incredible, the tree's health is improving already! I don't know what to say, we owe you so much!
+1	line	King Narnode Shareen	To think Glough had me fooled all along!
+1	line	Player	All that matters now is that humans and gnomes can live together in peace!
+1	line	King Narnode Shareen	I'll drink to that!
+1	line	King Narnode Shareen	From now on I vow to make this stronghold a welcoming place for all! I'll grant you access to all our facilities.
+1	line	Player	Thanks!
+1	line	Player	I think!
+1	line	King Narnode Shareen	It should make your stay here easier. You can use the spirit tree to transport yourself, as well as the gnome glider. I also give you access to our mine.
+1	line	Player	Mine?
+1	line	King Narnode Shareen	Very few know of the secret mine under the Grand Tree. If you push on the roots just to my north they will seperate and let you pass.
+1	line	Player	Strange!
+1	line	King Narnode Shareen	That's magic trees for you!
+1	line	King Narnode Shareen	All the best Traveller and thanks again!
+1	line	Player	You too, your highness!
+0	section	Post-quest
+0	section	Glough
+1	line	Player	Hello?
+1	line	Glough	I warn you now, human: stay out of my affairs!
+1	line	Player	I've stopped you before, Glough, and I'll stop you again!
+1	action	end
