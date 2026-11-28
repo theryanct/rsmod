@@ -18,6 +18,7 @@ import org.rsmod.api.player.lefthand
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.quiver
 import org.rsmod.api.player.righthand
+import org.rsmod.api.player.stat.slayerLvl
 import org.rsmod.api.specials.SpecialAttackRegistry
 import org.rsmod.api.specials.SpecialAttackType
 import org.rsmod.api.specials.energy.SpecialAttackEnergy
@@ -306,6 +307,13 @@ constructor(
         val hasAttackOp = npc.visType.hasOp(InteractionOp.Op2)
         if (!hasAttackOp) {
             mes("You can't attack this npc.")
+            return false
+        }
+
+        // Slayer monsters can't be wounded below their Slayer level (OSRS Wiki slayer_level).
+        val slayerReq = npc.visType.param(params.slayer_levelrequire)
+        if (slayerReq > 1 && player.slayerLvl < slayerReq) {
+            mes("You need a higher Slayer level to know how to wound this monster.")
             return false
         }
 
