@@ -14,11 +14,13 @@ import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.boolVarBit
 import org.rsmod.api.player.vars.enumVarBit
 import org.rsmod.api.player.vars.intVarBit
+import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.spells.MagicSpellRegistry
 import org.rsmod.api.spells.autocast.AutocastWeapons
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.interf.IfEvent
@@ -51,6 +53,7 @@ constructor(
     private var Player.autocastSpell by intVarBit(varbits.autocast_spell)
     private var Player.defensiveCasting by boolVarBit(varbits.autocast_defmode)
     private val Player.spellbook by enumVarBit<Spellbook>(varbits.spellbook)
+    private var Player.pickerWeapon by intVarp(AutocastVarps.picker_weapon)
 
     /** Which button opened the picker: the defensive one sets defensive casting on the pick. */
     private val pendingDefensive = WeakHashMap<Player, Boolean>()
@@ -71,6 +74,10 @@ constructor(
             return
         }
         pendingDefensive[this] = defensive
+        // autocast_setup lays the spells out by this varp (cs2 243 switches on it): the weapon's
+        // obj id for staves with their own layout, -1 for every other staff. Anything else (0,
+        // never set) hits its default case and the picker opens empty.
+        pickerWeapon = if (weapon.id in OWN_LAYOUT_WEAPONS) weapon.id else -1
         ifOpenOverlay(AutocastInterfaces.autocast, components.toplevel_target_side0, eventBus)
         ifSetEvents(AutocastComponents.spells, 0..MAX_AUTOCAST_ID, IfEvent.Op1)
     }
@@ -114,11 +121,21 @@ constructor(
     private companion object {
         /** autocast_setup loops children 1..58 (enum autocast_spells); child 0 is Cancel. */
         const val MAX_AUTOCAST_ID = 58
+
+        /** The weapon obj ids cs2 243 (autocast_spellpos) has its own case for (rev 243 cache). */
+        val OWN_LAYOUT_WEAPONS =
+            setOf(9013, 4675, 4170, 8841, 1409, 11791, 22296, 24144, 27785, 27788, 27676, 27679,
+                21006, 4710, 21276)
     }
 }
 
 internal object AutocastInterfaces : InterfaceReferences() {
     val autocast = find("autocast")
+}
+
+internal object AutocastVarps : VarpReferences() {
+    /** Read only by cs2 2098 autocast_setup (the sym name is a mislabel). */
+    val picker_weapon = find("spitfire_coord")
 }
 
 internal object AutocastComponents : ComponentReferences() {
