@@ -4,13 +4,14 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.stat.constructionLvl
+import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.registry.region.RegionRegistry
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.region.RegionRepository
 import org.rsmod.api.repo.region.RegionTemplate
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -19,69 +20,81 @@ import org.rsmod.api.script.onOpLoc5
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerLogout
 import org.rsmod.api.stats.xpmod.XpModifiers
-import org.rsmod.content.skills.construction.ConstructionData.Furniture
-import org.rsmod.content.skills.construction.ConstructionData.Group
+import org.rsmod.content.skills.construction.ConstructionData.EDGE_EAST
+import org.rsmod.content.skills.construction.ConstructionData.EDGE_NORTH
+import org.rsmod.content.skills.construction.ConstructionData.EDGE_SOUTH
+import org.rsmod.content.skills.construction.ConstructionData.EDGE_WEST
+import org.rsmod.content.skills.construction.ConstructionData.Option
+import org.rsmod.content.skills.construction.ConstructionData.Room
 import org.rsmod.game.entity.Player
 import org.rsmod.game.loc.BoundLocInfo
+import org.rsmod.game.loc.LocInfo
 import org.rsmod.game.region.Region
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
+import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.map.CoordGrid
+import org.rsmod.map.zone.ZoneKey
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 /**
- * Construction PR1: a player-owned house with a garden and a parlour.
+ * Construction PR2: a player-owned house of rooms on a grid (PR1 had a fixed garden + parlour).
  *
- * - The Rimmington house portal ("Enter"/"Home"/"Build mode") builds a small dynamic region for
- *   the player from the cache's POH room templates: a garden (zone 0,0) with a parlour to its
- *   east (zone 1,0). The garden centrepiece space holds the exit portal, as in a new OSRS house,
- *   and the door hotspots on the shared wall are removed so the rooms connect.
- * - Built parlour furniture is saved in one varp and placed on its hotspots when the house is
- *   built. In build mode the empty hotspots stay (with their "Build" op); otherwise they are
- *   removed so only real furniture shows.
- * - "Build" on a hotspot offers the Wiki furniture for it (level, planks/cloth/clay and nails,
- *   hammer and saw, xp); "Remove" on furniture (build mode only) puts the hotspot back.
- * - The exit portal returns the player outside the Rimmington portal. A player who logs out
- *   inside the house is moved back outside, since the region is gone by the next login.
+ * - The layout is saved per player: up to 38 room slots (x, z, room type, rotation), two per
+ *   `poh_layout_N` varp, plus one furniture varp per slot. A house that has never been saved is a
+ *   garden with a parlour to its east; the PR1 parlour varp is moved into that parlour once.
+ * - Entering builds a dynamic region from the cache's Rimmington-style room templates, each room
+ *   zone turned by its rotation. Hotspots are found from the locs actually placed in each room's
+ *   zone, so no tile rotation maths is needed. Doors on walls shared by two rooms that both have a
+ *   door there are removed so the rooms connect (build mode keeps them: they don't block walking
+ *   and are where rooms are built and removed).
+ * - Build mode: "Build" on a door hotspot whose far side is empty offers the rooms (Wiki/cache
+ *   level and coins, the Wiki's room count and yard size limits), then a facing if more than one
+ *   keeps a door back through that doorway; on a doorway to an existing room it offers to remove
+ *   that room (never the first garden, which holds the exit portal). The house is rebuilt and the
+ *   player put back at the same spot.
+ * - Furniture: "Build" on any hotspot offers that hotspot group's options (cache levels and
+ *   materials, Wiki xp; hammer and saw), "Remove" (build mode) puts the hotspots back.
  *
- * Region lifetime: [RegionRepository.add] first reclaims every region with no players in it
- * (`RegionRegistry.removeInactive*Regions`), so a house left empty is freed at the next house
- * entry, and the number of live houses is bounded by the region slot capacity (no leak).
+ * Region lifetime: [RegionRepository.add] first reclaims every region with no players in it, so a
+ * house left empty (including the old copy after a rebuild) is freed at the next house entry.
  */
 class Construction
 @Inject
 constructor(
     private val locTypes: LocTypeList,
+    private val objTypes: ObjTypeList,
     private val regionRepo: RegionRepository,
     private val locRepo: LocRepository,
     private val xpMods: XpModifiers,
 ) : PluginScript() {
     private val logger = InlineLogger()
 
-    private class House(val region: Region, val buildMode: Boolean)
+    /** A placed room: slot index, grid position, room and rotation. */
+    private class Placed(val slot: Int, val x: Int, val z: Int, val room: Room, val rotation: Int)
+
+    /** A furniture hotspot tile in the live house: which slot / group it belongs to. */
+    private class Tile(val slot: Int, val group: Int, val suffix: String, val hotspot: LocType)
+
+    private class House(
+        val region: Region,
+        val buildMode: Boolean,
+        val rooms: List<Placed>,
+        /** Hotspot tiles by (coords, layer), recorded before furniture replaces them. */
+        val tiles: Map<Pair<CoordGrid, Int>, Tile>,
+    )
 
     /** The house each player is currently in, by player uid. */
     private val houses = HashMap<Int, House>()
 
-    private val template by lazy {
-        RegionTemplate.create {
-            this[0, 0, 0] = PohTemplates.garden
-            this[1, 0, 0] = PohTemplates.parlour
-            // Black void everywhere else on the ground level (unmapped zones render white).
-            for (x in 0 until PohTemplates.REGION_ZONES) {
-                for (z in 0 until PohTemplates.REGION_ZONES) {
-                    if (z == 0 && (x == 0 || x == 1)) continue
-                    this[x, z, 0] = PohTemplates.void
-                }
-            }
-        }
+    /** (room key, hotspot loc id) -> spot. */
+    private val spotsByLoc by lazy {
+        ConstructionData.spots.associateBy { it.room to loc(it.hotspot).id }
     }
 
-    private val groupsByHotspot by lazy {
-        ConstructionData.parlour
-            .flatMap { group -> group.spots.map { loc(it.hotspot).id to group } }
-            .groupBy({ it.first }, { it.second })
+    private val doorIds by lazy {
+        setOf(locTypes[ConstructionLocs.door_left].id, locTypes[ConstructionLocs.door_right].id)
     }
 
     override fun ScriptContext.startup() {
@@ -89,15 +102,14 @@ constructor(
         onLocOp(ConstructionLocs.rimmington_portal, "home") { enterHouse(buildMode = false) }
         onLocOp(ConstructionLocs.rimmington_portal, "build mode") { enterHouse(buildMode = true) }
         onLocOp(ConstructionLocs.exit_portal, "enter") { leaveHouse() }
+        onLocOp(ConstructionLocs.door_left, "build") { doorway(it) }
+        onLocOp(ConstructionLocs.door_right, "build") { doorway(it) }
 
-        val hotspots = ConstructionData.parlour.flatMap { g -> g.spots.map { it.hotspot } }
-        for (hotspot in hotspots.distinct()) {
-            onLocOp(loc(hotspot), "build") { build(it) }
+        for (hotspot in ConstructionData.spots.map { it.hotspot }.distinct()) {
+            onLocOp(loc(hotspot), "build") { buildFurniture(it) }
         }
-        val furniture =
-            ConstructionData.parlour.flatMap { g -> g.options.flatMap { it.locs.values } }
-        for (name in furniture.distinct()) {
-            onLocOp(loc(name), "remove") { remove(it) }
+        for (name in ConstructionData.options.flatMap { it.locs.values }.distinct()) {
+            onLocOp(loc(name), "remove") { removeFurniture(it) }
         }
         onPlayerLogout { moveOutOfHouse(player) }
         onPlayerLogin { moveOutOfHouse(player) }
@@ -110,74 +122,215 @@ constructor(
         label: String,
         action: suspend ProtectedAccess.(BoundLocInfo) -> Unit,
     ) {
-        when (locTypes[type].op.indexOfFirst { it.equals(label, ignoreCase = true) } + 1) {
+        val op = locTypes[type].op.indexOfFirst { it.equals(label, ignoreCase = true) } + 1
+        if (op == 0) {
+            logger.warn { "Construction: ${locTypes[type].name} has no \"$label\" op." }
+            return
+        }
+        if (isLocOpBound(type, op)) return
+        when (op) {
             1 -> onOpLoc1(type) { action(it.loc) }
             2 -> onOpLoc2(type) { action(it.loc) }
             3 -> onOpLoc3(type) { action(it.loc) }
             4 -> onOpLoc4(type) { action(it.loc) }
             5 -> onOpLoc5(type) { action(it.loc) }
-            else -> logger.warn { "Construction: ${locTypes[type].name} has no \"$label\" op." }
         }
+    }
+
+    /* Saved layout */
+
+    private fun layout(player: Player): List<Placed> {
+        migrate(player)
+        val rooms = ArrayList<Placed>()
+        for (slot in 0 until ConstructionData.MAX_SLOTS) {
+            val bits = slotBits(player, slot)
+            val room = ConstructionData.roomsById[(bits shr 8) and 0x1F] ?: continue
+            rooms += Placed(slot, bits and 0xF, (bits shr 4) and 0xF, room, (bits shr 13) and 3)
+        }
+        return rooms
+    }
+
+    private fun slotBits(player: Player, slot: Int): Int {
+        val value = player.vars[ConstructionVarps.layout[slot / 2]]
+        return (value ushr ((slot % 2) * ROOM_SLOT_BITS)) and ((1 shl ROOM_SLOT_BITS) - 1)
+    }
+
+    private fun setSlot(player: Player, slot: Int, x: Int, z: Int, room: Room?, rotation: Int) {
+        val bits = if (room == null) 0 else x or (z shl 4) or (room.id shl 8) or (rotation shl 13)
+        val varp = ConstructionVarps.layout[slot / 2]
+        val shift = (slot % 2) * ROOM_SLOT_BITS
+        val mask = ((1 shl ROOM_SLOT_BITS) - 1) shl shift
+        val updated = (player.vars[varp] and mask.inv()) or (bits shl shift)
+        VarPlayerIntMapSetter.set(player, varp, updated)
+    }
+
+    /** A never-saved house is PR1's: a garden with a parlour east of it (PR1 furniture kept). */
+    private fun migrate(player: Player) {
+        if (ConstructionVarps.layout.any { player.vars[it] != 0 }) return
+        val garden = ConstructionData.roomsByKey.getValue("garden")
+        val parlour = ConstructionData.roomsByKey.getValue("parlour")
+        setSlot(player, 0, PohTemplates.START_X, PohTemplates.START_Z, garden, 0)
+        setSlot(player, 1, PohTemplates.START_X + 1, PohTemplates.START_Z, parlour, 0)
+        // PR1 groups (3 bits each): chair1, chair2, chair3, bookcase, rug, fireplace, curtains;
+        // the cache's parlour hotspots: chair x3, rug, bookcase, fireplace, curtains.
+        val legacy = player.vars[ConstructionVarps.parlour]
+        val groups = intArrayOf(0, 1, 2, 4, 3, 5, 6)
+        for ((old, group) in groups.withIndex()) {
+            val tier = (legacy shr (old * 3)) and 7
+            if (tier > 0) setTier(player, 1, "parlour", group, tier)
+        }
+    }
+
+    /* Furniture state: per slot, the room's furniture layout bits. */
+
+    private fun tier(player: Player, slot: Int, room: String, group: Int): Int {
+        val (_, shift, bits) =
+            ConstructionData.furnitureLayout.getValue(room).firstOrNull { it.first == group }
+                ?: return 0
+        return (player.vars[ConstructionVarps.furniture[slot]] ushr shift) and ((1 shl bits) - 1)
+    }
+
+    private fun setTier(player: Player, slot: Int, room: String, group: Int, tier: Int) {
+        val (_, shift, bits) =
+            ConstructionData.furnitureLayout.getValue(room).firstOrNull { it.first == group }
+                ?: return
+        val varp = ConstructionVarps.furniture[slot]
+        val mask = ((1 shl bits) - 1) shl shift
+        val updated = (player.vars[varp] and mask.inv()) or ((tier shl shift) and mask)
+        VarPlayerIntMapSetter.set(player, varp, updated)
     }
 
     /* House instance */
 
-    private fun ProtectedAccess.enterHouse(buildMode: Boolean) {
-        val region = regionRepo.add(template)
-        if (region == null) {
-            mes("Your house can't be loaded right now. Try again in a few seconds.")
-            return
+    private fun template(rooms: List<Placed>): RegionTemplate =
+        RegionTemplate.create {
+            val used = HashSet<Pair<Int, Int>>()
+            for (placed in rooms) {
+                val zone = ZoneKey(placed.room.zoneX, placed.room.zoneZ, 0)
+                when (placed.rotation) {
+                    1 -> this[placed.x, placed.z, 0] = zone.rotate90()
+                    2 -> this[placed.x, placed.z, 0] = zone.rotate180()
+                    3 -> this[placed.x, placed.z, 0] = zone.rotate270()
+                    else -> this[placed.x, placed.z, 0] = zone
+                }
+                used += placed.x to placed.z
+            }
+            // Black void everywhere else on the ground level (unmapped zones render white).
+            for (x in 0 until PohTemplates.REGION_ZONES) {
+                for (z in 0 until PohTemplates.REGION_ZONES) {
+                    if (x to z !in used) this[x, z, 0] = PohTemplates.void
+                }
+            }
         }
-        setUpRooms(player, region, buildMode)
-        houses[player.uid.packed] = House(region, buildMode)
+
+    private fun ProtectedAccess.enterHouse(buildMode: Boolean) {
+        val house = buildHouse(player, buildMode) ?: return
+        val portal =
+            house.region.zoneSw(house.rooms.first()).let { sw ->
+                locRepo.findAll(ZoneKey.from(sw)).firstOrNull {
+                    it.id == locTypes[ConstructionLocs.exit_portal].id
+                }
+            }
         if (buildMode) {
             mes("You enter your house in building mode.")
         } else {
             mes("Welcome to your house.")
         }
-        telejump(region.local(0, 0, PohTemplates.ARRIVE_X, PohTemplates.ARRIVE_Z))
+        val arrive =
+            portal?.coords?.translate(-1, -1)
+                ?: house.region.zoneSw(house.rooms.first()).translate(2, 2)
+        telejump(arrive)
     }
 
-    private fun setUpRooms(player: Player, region: Region, buildMode: Boolean) {
-        val centrepiece =
-            region.local(0, 0, PohTemplates.CENTREPIECE_X, PohTemplates.CENTREPIECE_Z)
-        val space = locRepo.findExact(centrepiece, ConstructionLocs.garden_centrepiece)
-        if (space != null) {
-            locRepo.change(space, ConstructionLocs.exit_portal, PERMANENT)
+    /** Builds the player's house region; null (with a message) when no region is free. */
+    private fun ProtectedAccess.buildHouse(player: Player, buildMode: Boolean): House? {
+        val rooms = layout(player)
+        val region = regionRepo.add(template(rooms))
+        if (region == null) {
+            mes("Your house can't be loaded right now. Try again in a few seconds.")
+            return null
         }
-        // Open the shared wall: garden east edge (local x 7) meets parlour west edge (local x 0).
-        for (z in 3..4) {
-            removeDoorHotspots(region.local(0, 0, 7, z))
-            removeDoorHotspots(region.local(1, 0, 0, z))
+        val tiles = HashMap<Pair<CoordGrid, Int>, Tile>()
+        for (placed in rooms) {
+            setUpRoom(player, region, rooms, placed, buildMode, tiles)
         }
-        for ((index, group) in ConstructionData.parlour.withIndex()) {
-            val tier = tier(player, index)
-            for (spot in group.spots) {
-                val coords = region.local(1, 0, spot.x, spot.z)
-                val hotspot = locRepo.findExact(coords, loc(spot.hotspot)) ?: continue
-                if (tier > 0) {
-                    val built = group.options[tier - 1].locs.getValue(spot.hotspot)
-                    locRepo.change(hotspot, loc(built), PERMANENT)
-                } else if (!buildMode) {
-                    locRepo.del(hotspot, PERMANENT)
-                }
+        val house = House(region, buildMode, rooms, tiles)
+        houses[player.uid.packed] = house
+        return house
+    }
+
+    private fun setUpRoom(
+        player: Player,
+        region: Region,
+        rooms: List<Placed>,
+        placed: Placed,
+        buildMode: Boolean,
+        tiles: MutableMap<Pair<CoordGrid, Int>, Tile>,
+    ) {
+        val sw = region.zoneSw(placed)
+        val locs = locRepo.findAll(ZoneKey.from(sw)).toList()
+        val entrance = placed.slot == rooms.first().slot
+        for (loc in locs) {
+            if (loc.id in doorIds) {
+                val edge = edgeOf(loc, sw) ?: continue
+                if (!buildMode && connected(rooms, placed, edge)) locRepo.del(loc, PERMANENT)
+                continue
             }
-        }
-        if (!buildMode) {
-            for (spot in ConstructionData.gardenSpots) {
-                val coords = region.local(0, 0, spot.x, spot.z)
-                val hotspot = locRepo.findExact(coords, loc(spot.hotspot)) ?: continue
-                locRepo.del(hotspot, PERMANENT)
+            if (placed.room.key == "garden") {
+                setUpGardenLoc(loc, entrance, buildMode)
+                continue
+            }
+            val spot = spotsByLoc[placed.room.key to loc.id] ?: continue
+            tiles[loc.coords to loc.layer] = Tile(placed.slot, spot.group, spot.suffix, loc(spot.hotspot))
+            val tier = tier(player, placed.slot, placed.room.key, spot.group)
+            val built = option(placed.room.key, spot.group, tier)?.locs?.get(spot.suffix)
+            when {
+                built != null -> locRepo.change(loc, loc(built), PERMANENT)
+                !buildMode -> locRepo.del(loc, PERMANENT)
             }
         }
     }
 
-    private fun removeDoorHotspots(coords: CoordGrid) {
-        for (door in listOf(ConstructionLocs.door_left, ConstructionLocs.door_right)) {
-            val loc = locRepo.findExact(coords, door) ?: continue
-            locRepo.del(loc, PERMANENT)
+    private fun setUpGardenLoc(loc: LocInfo, entrance: Boolean, buildMode: Boolean) {
+        if (loc.id == locTypes[ConstructionLocs.garden_centrepiece].id) {
+            when {
+                entrance -> locRepo.change(loc, ConstructionLocs.exit_portal, PERMANENT)
+                !buildMode -> locRepo.del(loc, PERMANENT)
+            }
+            return
+        }
+        val hotspot = ConstructionData.gardenHotspots.any { loc(it).id == loc.id }
+        if (hotspot && !buildMode) locRepo.del(loc, PERMANENT)
+    }
+
+    /** The wall a door hotspot sits on, from its tile in the (rotated) room zone. */
+    private fun edgeOf(loc: LocInfo, sw: CoordGrid): Int? {
+        val x = loc.coords.x - sw.x
+        val z = loc.coords.z - sw.z
+        return when {
+            z == 7 -> EDGE_NORTH
+            x == 7 -> EDGE_EAST
+            z == 0 -> EDGE_SOUTH
+            x == 0 -> EDGE_WEST
+            else -> null
         }
     }
+
+    private fun neighbour(placed: Placed, edge: Int): Pair<Int, Int> =
+        when (edge) {
+            EDGE_NORTH -> placed.x to placed.z + 1
+            EDGE_EAST -> placed.x + 1 to placed.z
+            EDGE_SOUTH -> placed.x to placed.z - 1
+            else -> placed.x - 1 to placed.z
+        }
+
+    private fun connected(rooms: List<Placed>, placed: Placed, edge: Int): Boolean {
+        val (nx, nz) = neighbour(placed, edge)
+        val other = rooms.firstOrNull { it.x == nx && it.z == nz } ?: return false
+        return ((edge + 2) and 3) in other.room.doors(other.rotation)
+    }
+
+    private fun Region.zoneSw(placed: Placed): CoordGrid = southWest.translate(placed.x * 8, placed.z * 8)
 
     private fun ProtectedAccess.leaveHouse() {
         houses.remove(player.uid.packed)
@@ -191,85 +344,205 @@ constructor(
         }
     }
 
-    /** Region coords of a tile in the room copied at region zone ([zoneX], [zoneZ]). */
-    private fun Region.local(zoneX: Int, zoneZ: Int, x: Int, z: Int): CoordGrid =
-        southWest.translate(zoneX * 8 + x, zoneZ * 8 + z)
-
-    /* Furniture state: TIER_BITS per parlour group in the parlour varp. */
-
-    private fun tier(player: Player, index: Int): Int {
-        val bits = ConstructionData.TIER_BITS
-        return (player.vars[ConstructionVarps.parlour] shr (index * bits)) and ((1 shl bits) - 1)
+    /** Rebuilds the house after a layout change and puts the player back on the same tile. */
+    private fun ProtectedAccess.rebuild(old: House, at: CoordGrid = player.coords) {
+        val dx = at.x - old.region.southWest.x
+        val dz = at.z - old.region.southWest.z
+        val house = buildHouse(player, old.buildMode) ?: return
+        telejump(house.region.southWest.translate(dx, dz))
     }
 
-    private fun setTier(player: Player, index: Int, tier: Int) {
-        val bits = ConstructionData.TIER_BITS
-        val mask = ((1 shl bits) - 1) shl (index * bits)
-        val value = player.vars[ConstructionVarps.parlour]
-        val updated = (value and mask.inv()) or ((tier shl (index * bits)) and mask)
-        VarPlayerIntMapSetter.set(player, ConstructionVarps.parlour, updated)
+    /** The room whose zone holds [coords] in [house]. */
+    private fun House.roomAt(coords: CoordGrid): Placed? {
+        val x = (coords.x - region.southWest.x) / 8
+        val z = (coords.z - region.southWest.z) / 8
+        return rooms.firstOrNull { it.x == x && it.z == z }
     }
 
-    /** The parlour group whose spot is at [loc]'s tile, or null outside the player's parlour. */
-    private fun ProtectedAccess.groupAt(loc: BoundLocInfo, groups: List<Group>): Group? {
-        val house = houses[player.uid.packed] ?: return null
-        val parlour = house.region.local(1, 0, 0, 0)
-        val x = loc.coords.x - parlour.x
-        val z = loc.coords.z - parlour.z
-        return groups.firstOrNull { group -> group.spots.any { it.x == x && it.z == z } }
+    /* Rooms */
+
+    private suspend fun ProtectedAccess.doorway(loc: BoundLocInfo) {
+        val house = houses[player.uid.packed]
+        if (house == null || !house.buildMode) {
+            mes("You can only build rooms in your own house in building mode.")
+            return
+        }
+        val placed = house.roomAt(loc.coords) ?: return
+        val sw = house.region.zoneSw(placed)
+        val x = loc.coords.x - sw.x
+        val z = loc.coords.z - sw.z
+        val edge =
+            when {
+                z == 7 -> EDGE_NORTH
+                x == 7 -> EDGE_EAST
+                z == 0 -> EDGE_SOUTH
+                x == 0 -> EDGE_WEST
+                else -> return
+            }
+        val (nx, nz) = neighbour(placed, edge)
+        val existing = house.rooms.firstOrNull { it.x == nx && it.z == nz }
+        if (existing != null) {
+            removeRoom(house, existing)
+        } else {
+            addRoom(house, nx, nz, edge)
+        }
     }
 
-    /* Building */
+    private suspend fun ProtectedAccess.addRoom(house: House, x: Int, z: Int, fromEdge: Int) {
+        val level = player.constructionLvl
+        if (house.rooms.size >= ConstructionData.maxRooms(level)) {
+            mes("You can't build any more rooms at your Construction level.")
+            return
+        }
+        if (!fitsYard(house.rooms, x, z, ConstructionData.yardSize(level))) {
+            mes("Your house can't be any bigger at your Construction level.")
+            return
+        }
+        if (x !in 1 until PohTemplates.REGION_ZONES - 1 || z !in 1 until PohTemplates.REGION_ZONES - 1) {
+            mes("You can't build any further in that direction.")
+            return
+        }
+        val choices = ConstructionData.rooms
+        val labels =
+            choices.map { room ->
+                val colour = if (level >= room.level) "" else "<col=ff0000>"
+                "$colour${room.name}: level ${room.level}, ${"%,d".format(room.coins)} coins"
+            }
+        val picked = menu("Choose a room", hotkeys = false, choices = labels + "Cancel")
+        val room = choices.getOrNull(picked) ?: return
+        if (level < room.level) {
+            mes("You need a Construction level of ${room.level} to build a ${room.name.lowercase()}.")
+            return
+        }
+        if (invTotal(inv, ConstructionObjs.coins) < room.coins) {
+            mes("You need ${"%,d".format(room.coins)} coins to build a ${room.name.lowercase()}.")
+            return
+        }
+        // The new room must have a door facing back through the doorway it was built from.
+        val back = (fromEdge + 2) and 3
+        val rotations = (0..3).filter { back in room.doors(it) }
+        if (rotations.isEmpty()) {
+            mes("A ${room.name.lowercase()} has no door that could face that doorway.")
+            return
+        }
+        val rotation =
+            if (rotations.size == 1 || room.doors.size == 4) {
+                rotations.first()
+            } else {
+                val facing =
+                    rotations.map { r ->
+                        "Doors: " + room.doors(r).sorted().joinToString(", ") { EDGE_NAMES[it] }
+                    }
+                rotations.getOrNull(menu("Which way should it face?", hotkeys = false, choices = facing))
+                    ?: return
+            }
+        val slot =
+            (0 until ConstructionData.MAX_SLOTS).firstOrNull { s -> house.rooms.none { it.slot == s } }
+                ?: return
+        invDel(inv, ConstructionObjs.coins, room.coins)
+        setSlot(player, slot, x, z, room, rotation)
+        VarPlayerIntMapSetter.set(player, ConstructionVarps.furniture[slot], 0)
+        mes("You build a ${room.name.lowercase()}.")
+        rebuild(house)
+    }
 
-    private suspend fun ProtectedAccess.build(loc: BoundLocInfo) {
+    /** The Wiki's yard limit: every room inside a [size] x [size] square. */
+    private fun fitsYard(rooms: List<Placed>, x: Int, z: Int, size: Int): Boolean {
+        val xs = rooms.map { it.x } + x
+        val zs = rooms.map { it.z } + z
+        return xs.max() - xs.min() < size && zs.max() - zs.min() < size
+    }
+
+    private suspend fun ProtectedAccess.removeRoom(house: House, placed: Placed) {
+        if (placed.slot == house.rooms.first().slot) {
+            mes("You can't remove the garden with your house's exit portal.")
+            return
+        }
+        var confirmed = false
+        startDialogue {
+            confirmed =
+                choice2(
+                    "Yes, remove it.",
+                    true,
+                    "No, keep it.",
+                    false,
+                    title = "Remove the ${placed.room.name.lowercase()} and everything in it?",
+                )
+        }
+        if (!confirmed) return
+        setSlot(player, placed.slot, 0, 0, null, 0)
+        VarPlayerIntMapSetter.set(player, ConstructionVarps.furniture[placed.slot], 0)
+        mes("You remove the ${placed.room.name.lowercase()}.")
+        // Standing in the removed room: come back in the first garden instead of the void.
+        val at =
+            if (house.roomAt(player.coords)?.slot == placed.slot) {
+                house.region.zoneSw(house.rooms.first()).translate(2, 2)
+            } else {
+                player.coords
+            }
+        rebuild(house, at)
+    }
+
+    /* Furniture */
+
+    private fun option(room: String, group: Int, tier: Int): Option? =
+        if (tier <= 0) null else ConstructionData.optionsByGroup[room to group]?.firstOrNull { it.tier == tier }
+
+    private suspend fun ProtectedAccess.buildFurniture(loc: BoundLocInfo) {
         val house = houses[player.uid.packed]
         if (house == null || !house.buildMode) {
             mes("You can only build furniture in your own house in building mode.")
             return
         }
-        val candidates = groupsByHotspot[loc.id] ?: return
-        val group = groupAt(loc, candidates) ?: return
-        val index = ConstructionData.parlour.indexOf(group)
-        if (tier(player, index) > 0) return
-        val furniture = chooseFurniture(group) ?: return
+        val tile = house.tiles[loc.coords to loc.layer] ?: return
+        val placed = house.rooms.firstOrNull { it.slot == tile.slot } ?: return
+        val room = placed.room.key
+        if (tier(player, tile.slot, room, tile.group) > 0) return
+        val options = ConstructionData.optionsByGroup[room to tile.group] ?: return
+        val furniture = chooseFurniture(options) ?: return
         if (!canBuild(furniture)) return
         consumeMaterials(furniture)
         anim(ConstructionSeqs.build)
         delay(2)
-        setTier(player, index, group.options.indexOf(furniture) + 1)
-        for (spot in group.spots) {
-            val coords = house.region.local(1, 0, spot.x, spot.z)
-            val hotspot = locRepo.findExact(coords, loc(spot.hotspot)) ?: continue
-            locRepo.change(hotspot, loc(furniture.locs.getValue(spot.hotspot)), PERMANENT)
-        }
+        setTier(player, tile.slot, room, tile.group, furniture.tier)
+        placeGroup(house, tile.slot, tile.group, furniture)
         statAdvance(stats.construction, furniture.xp * xpMods.get(player, stats.construction))
         mes("You build a ${furniture.name.lowercase()}.")
     }
 
+    /** Puts [furniture] (or the hotspots back, when null) on every tile of the group. */
+    private fun placeGroup(house: House, slot: Int, group: Int, furniture: Option?) {
+        for ((key, tile) in house.tiles) {
+            if (tile.slot != slot || tile.group != group) continue
+            val (coords, layer) = key
+            val current = locRepo.findAll(coords).firstOrNull { it.layer == layer } ?: continue
+            val built = furniture?.locs?.get(tile.suffix)?.let(::loc) ?: tile.hotspot
+            if (current.id != locTypes[built].id) locRepo.change(current, built, PERMANENT)
+        }
+    }
+
     /** The OSRS furniture build menu: model, name, level and materials per option. */
-    private suspend fun ProtectedAccess.chooseFurniture(group: Group): Furniture? {
+    private suspend fun ProtectedAccess.chooseFurniture(options: List<Option>): Option? {
+        val shown = options.take(MENU_ENTRIES)
         val entries =
-            group.options.map { furniture ->
-                val iconName = ConstructionData.icons.getValue(furniture.name)
-                val icon = ConstructionObjs.byName.getValue(iconName)
+            shown.map { furniture ->
                 FurnitureMenuEntry(
-                    obj = icon,
+                    obj = ConstructionObjs.byName.getValue(furniture.icon),
                     level = furniture.level,
                     materials = materialLines(furniture),
-                    available =
-                        player.constructionLvl >= furniture.level && hasMaterials(furniture),
+                    available = player.constructionLvl >= furniture.level && hasMaterials(furniture),
                 )
             }
         val index = furnitureMenu(entries) ?: return null
-        return group.options.getOrNull(index)
+        return shown.getOrNull(index)
     }
 
     /** "Plank: 2" style lines, green when carried and red when not (as the OSRS menu shows). */
-    private fun ProtectedAccess.materialLines(furniture: Furniture): List<String> {
+    private fun ProtectedAccess.materialLines(furniture: Option): List<String> {
         val lines = ArrayList<String>()
         for ((name, count) in furniture.materials) {
-            val have = invTotal(inv, ConstructionObjs.byName.getValue(name)) >= count
-            lines += colour("${ConstructionData.materialNames[name] ?: name}: $count", have)
+            val type = ConstructionObjs.byName.getValue(name)
+            lines += colour("${objTypes[type].name}: $count", invTotal(inv, type) >= count)
         }
         if (furniture.nails > 0) {
             lines += colour("Nails: ${furniture.nails}", nailCount() >= furniture.nails)
@@ -283,12 +556,12 @@ constructor(
     private fun ProtectedAccess.nailCount(): Int =
         ConstructionData.nails.sumOf { invTotal(inv, ConstructionObjs.byName.getValue(it)) }
 
-    private fun ProtectedAccess.hasMaterials(furniture: Furniture): Boolean =
+    private fun ProtectedAccess.hasMaterials(furniture: Option): Boolean =
         furniture.materials.all { (name, count) ->
             invTotal(inv, ConstructionObjs.byName.getValue(name)) >= count
         } && nailCount() >= furniture.nails
 
-    private fun ProtectedAccess.canBuild(furniture: Furniture): Boolean {
+    private fun ProtectedAccess.canBuild(furniture: Option): Boolean {
         if (player.constructionLvl < furniture.level) {
             mes("You need a Construction level of ${furniture.level} to build that.")
             return false
@@ -299,22 +572,18 @@ constructor(
             mes("You need a hammer and a saw to build furniture.")
             return false
         }
-        for ((name, count) in furniture.materials) {
-            if (invTotal(inv, ConstructionObjs.byName.getValue(name)) < count) {
-                mes("You don't have the materials to build that.")
-                return false
-            }
+        if (!furniture.materials.all { (name, count) -> invTotal(inv, ConstructionObjs.byName.getValue(name)) >= count }) {
+            mes("You don't have the materials to build that.")
+            return false
         }
-        val nails =
-            ConstructionData.nails.sumOf { invTotal(inv, ConstructionObjs.byName.getValue(it)) }
-        if (nails < furniture.nails) {
+        if (nailCount() < furniture.nails) {
             mes("You need ${furniture.nails} nails to build that.")
             return false
         }
         return true
     }
 
-    private fun ProtectedAccess.consumeMaterials(furniture: Furniture) {
+    private fun ProtectedAccess.consumeMaterials(furniture: Option) {
         for ((name, count) in furniture.materials) {
             invDel(inv, ConstructionObjs.byName.getValue(name), count)
         }
@@ -330,46 +599,31 @@ constructor(
         }
     }
 
-    private suspend fun ProtectedAccess.remove(loc: BoundLocInfo) {
+    private suspend fun ProtectedAccess.removeFurniture(loc: BoundLocInfo) {
         val house = houses[player.uid.packed]
         if (house == null || !house.buildMode) {
             mes("You can only remove furniture in your own house in building mode.")
             return
         }
-        val candidates =
-            ConstructionData.parlour.filter { group ->
-                group.options.any { option -> option.locs.values.any { loc(it).id == loc.id } }
-            }
-        val group = groupAt(loc, candidates) ?: return
-        val index = ConstructionData.parlour.indexOf(group)
-        val tier = tier(player, index)
-        if (tier == 0) return
+        val tile = house.tiles[loc.coords to loc.layer] ?: return
+        val placed = house.rooms.firstOrNull { it.slot == tile.slot } ?: return
+        val tier = tier(player, tile.slot, placed.room.key, tile.group)
+        val built = option(placed.room.key, tile.group, tier) ?: return
         var confirmed = false
         startDialogue {
             confirmed =
-                choice2(
-                    "Yes, remove it.",
-                    true,
-                    "No, keep it.",
-                    false,
-                    title = "Really remove it?",
-                )
+                choice2("Yes, remove it.", true, "No, keep it.", false, title = "Really remove it?")
         }
         if (!confirmed) return
         anim(ConstructionSeqs.build)
-        setTier(player, index, 0)
-        val built = group.options[tier - 1]
-        for (spot in group.spots) {
-            val coords = house.region.local(1, 0, spot.x, spot.z)
-            val placed = locRepo.findExact(coords, loc(built.locs.getValue(spot.hotspot)))
-            if (placed != null) {
-                locRepo.change(placed, loc(spot.hotspot), PERMANENT)
-            }
-        }
-        mes("You remove the ${group.noun}.")
+        setTier(player, tile.slot, placed.room.key, tile.group, 0)
+        placeGroup(house, tile.slot, tile.group, null)
+        mes("You remove the ${built.name.lowercase()}.")
     }
 
     private companion object {
         const val PERMANENT = Int.MAX_VALUE
+        const val MENU_ENTRIES = 7
+        val EDGE_NAMES = listOf("north", "east", "south", "west")
     }
 }
