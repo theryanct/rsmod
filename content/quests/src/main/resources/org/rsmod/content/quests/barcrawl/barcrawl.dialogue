@@ -1,0 +1,218 @@
+# Generated from the OSRS Wiki page "Transcript:Alfred Grimhand's Barcrawl" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to the barbarian guard
+1	line	Barbarian guard	Oi, whaddya want?
+1	select	Select an Option
+1	option	I want to come through this gate.
+2	line	Player	I want to come through this gate.
+2	line	Barbarian guard	Barbarians only. Are you a barbarian? You don't look like one.
+2	select	Select an Option
+2	option	Hmm, yep you've got me there.
+3	line	Player	Hmm, yep you've got me there.
+3	action	end
+2	option	Looks can be deceiving, I am in fact a barbarian.
+3	line	Player	Looks can be deceiving, I am in fact a barbarian.
+3	cond	If the player does not have enough inventory space:
+4	line	Barbarian guard	Are you, now? Free up some space so you can carry something, and we'll see how barbarian you really are.
+4	action	end
+3	cond	If the player has sufficient inventory space:
+4	line	Barbarian guard	If you're a barbarian you need to be able to drink like one. We barbarians like a good drink.
+4	line	Barbarian guard	I have the perfect challenge for you... The Alfred Grimhand Barcrawl! First completed by Alfred Grimhand.
+4	box	The guard hands you a Barcrawl card.
+4	line	Barbarian guard	Take that card to each of the bars named on it. The bartenders will know what it means. We're kinda well known.
+4	line	Barbarian guard	They'll give you their strongest drink and sign your card. When you've done all that, we'll be happy to let you in.
+4	action	end
+1	option	I want some money.
+2	line	Player	I want some money.
+2	line	Barbarian guard	Do I look like a bank to you?
+2	action	end
+0	section	Talking to the barbarian guard again
+1	line	Barbarian guard	So, how's the Barcrawl coming along?
+1	cond	If the player has their barcrawl card in their inventory:
+2	line	Player	I haven't finished it yet.
+2	line	Barbarian guard	Well come back when you have, you lightweight.
+2	action	end
+1	cond	If the player has their barcrawl card in their bank:
+2	line	Barbarian guard	So, how's the Barcrawl coming along?
+2	line	Player	Not too bad. I've got my barcrawl card stored somewhere for safe-keeping.
+2	line	Barbarian guard	You need to take it with you when you're going on a barcrawl.
+2	action	end
+1	cond	If the player has lost their barcrawl card:
+2	line	Player	I've lost my barcrawl card...
+2	line	Barbarian guard	What are you like? You're gonna have to start all over now.
+2	box	The guard hands you a Barcrawl card.
+2	action	end
+0	section	Uncle Humphrey's Gutrot
+1	line	Bartender	What can I do yer for?
+1	select	Select an Option
+1	option	A glass of your finest ale please.
+1	option	Can you recommend where an adventurer might make his fortune?
+1	option	Do you know where I can get some good equipment?
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Oh no not another of you guys. These barbarian barcrawls cause too much damage to my bar.
+2	line	Bartender	You're going to have to pay 50 gold for the Uncle Humphrey's Gutrot.
+2	cond	If the player does not have 50 coins:
+3	line	Player	I don't have 50 coins.
+3	action	end
+2	cond	If the player has 50 coins:
+3	line	{player}	Blearrgh!
+3	action	end
+0	section	Fire Toad Blast
+1	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+1	line	Blurberry	Ah, you've come to the best stop on your list! I'll give you my famous Fire Toad Blast! It'll cost you 10 coins.
+1	cond	If the player does not have 10 coins:
+2	line	Player	I don't have 10 coins right now.
+2	action	end
+1	cond	If the player has 10 coins:
+2	action	end
+0	section	Talking to the Barman instead of Blurberry
+1	line	Barman	Good day to you. What can I get you to drink?
+1	option	I'm trying to do Alfred Grimhand's barcrawl.
+2	line	Player	I'm trying to do Alfred Grimhand's barcrawl.
+2	line	Barman	Oh, another silly human come to have [his/her/their] mind melted? You should take that barcrawl card to Blurberry - he always likes to serve the Fire Toad Blast himself!
+2	line	Player	Um... thanks?!
+2	action	end
+1	option	What do you have?
+1	option	Nothing thanks.
+1	option	Can I buy some ingredients?
+0	section	Supergrog
+1	line	Bartender	Yohoho me hearty what would you like to drink?
+1	select	Select an Option
+1	option	Nothing, thank you.
+1	option	A pint of Grog please.
+1	option	A bottle of rum please.
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Haha time to be breaking out the old Supergrog. That'll be 15 coins please.
+2	cond	If the player does not have 15 coins:
+3	line	Player	Sorry I don't have 15 coins.
+3	action	end
+2	cond	If the player has 15 coins:
+3	action	end
+0	section	Fire Brandy
+1	line	Bartender	What can I get you?
+1	line	Player	What's on the menu?
+1	line	Bartender	Dragon Bitter and Greenman's Ale, oh and some cheap beer.
+1	select	Select an Option
+1	option	I'll give it a miss I think.
+1	option	I'll try the Dragon Bitter.
+1	option	Can I have some Greenman's Ale?
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	I suppose you'll be wanting some Fire Brandy. That'll cost you 12 coins.
+2	cond	If the player does not have 12 coins:
+3	line	Player	Sorry I don't have 12 coins.
+3	action	end
+2	cond	If the player has 12 coins:
+3	action	end
+1	option	One cheap beer please!
+0	section	Heart Stopper
+1	line	Bartender	Would you like to buy a drink?
+1	line	Player	What do you serve?
+1	line	Bartender	Beer!
+1	select	Select an Option
+1	option	I'll have a beer then.
+1	option	I'll not have anything then.
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Fancy a bit of Heart Stopper then do you? It'll only be 8 coins.
+2	cond	If the player does not have 8 coins:
+3	line	Player	Sorry, I don't have 8 coins.
+3	action	end
+2	cond	If the player has 8 coins:
+3	action	end
+0	section	Liverbane Ale
+1	line	Bartender	Good morning, what would you like?
+1	select	Select an Option
+1	option	What do you have?
+1	option	Beer please.
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Oh you're a barbarian then. Now which of these barrels contained the Liverbane Ale? That'll be 18 coins please.
+2	cond	If the player does not have 18 coins:
+3	line	Player	Sorry, I don't have 18 coins.
+3	action	end
+2	cond	If the player has 18 coins:
+3	action	end
+1	option	I don't really want anything thanks.
+0	section	Olde Suspiciouse
+1	line	Bartender	Can I help you?
+1	select	Select an Option
+1	option	I'll have a beer please.
+1	option	Any hints where I can go adventuring?
+1	option	Heard any good gossip?
+1	option	I'm doing Alfred Grimhands Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Ah, there seems to be a fair few doing that one these days. My supply of Olde Suspiciouse is starting to run low, it'll cost you 10 coins.
+2	cond	If the player does not have 10 coins:
+3	line	Player	I don't have 10 coins right now.
+3	action	end
+2	cond	If the player has 10 coins:
+3	line	Player	Thanksh very mush...
+3	action	end
+1	option	I don't really want anything thanks.
+0	section	Ape Bite Liqueur
+1	line	Zembo	Hey, are you wanting to try some of my fine wines and spirits? All brewed locally on Karamja island.
+1	box	
+1	select	Select an Option
+1	option	Yes please.
+1	option	No, thank you.
+1	option	I'm doing Alfred Grimhand's barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Zembo	Ah, you'll be wanting some Ape Bite Liqueur then. It's got a lovely banana taste, and it'll only cost you 7 coins.
+2	cond	If the player does not have 7 coins:
+3	line	Player	I don't have 7 coins right now.
+3	action	end
+2	cond	If the player has 7 coins:
+3	line	Player	Mmmmm, dat was luverly...
+3	action	end
+0	section	Hand of Death Cocktail
+1	box	
+1	line	Tina	Heya! What can I get you?
+1	select	Select an Option
+1	option	What ales are you serving?
+1	option	I'm doing Alfred Grimhand's barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	box	
+2	line	Tina	Heehee, this'll be fun!
+2	line	Tina	You'll be after our Hand of Death cocktail, then. Lots of expensive parts to the cocktail, though, so it will cost you 70 coins.
+2	cond	If the player does not have 70 coins:
+3	line	Player	I don't have that much money on me.
+3	action	end
+2	cond	If the player has 70 coins:
+3	action	The player's game screen swings slightly left and right.
+3	action	end
+1	option	What can you tell me about dwarves and ale?
+0	section	Black Skull Ale
+1	select	Select an Option
+1	option	Could I buy a beer please?
+1	option	Have you heard any rumours here?
+1	option	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Player	I'm doing Alfred Grimhand's Barcrawl.
+2	line	Bartender	Are you sure? You look a bit skinny for that.
+2	line	Player	Just give me whatever I need to drink here.
+2	line	Bartender	Ok one Black Skull Ale coming up, 8 coins please.
+2	cond	If the player does not have 8 coins:
+3	line	Player	I don't have 8 coins with me.
+3	action	end
+2	cond	If the player has 8 coins:
+3	line	{player}	Hiccup!
+3	action	end
+0	section	Returning to the outpost
+0	section	Reading the barcrawl card
+1	action	end
+0	section	Talking to the barbarian guard
+1	line	Barbarian guard	So, how's the Barcrawl coming along?
+1	line	Player	I tink I jusht 'bout done dem all... but I losht count...
+1	box	You give the card to the barbarian.
+1	line	Barbarian guard	Yep that seems fine, you can come in now. I never learned to read, but you look like you've drunk plenty. Also, one more thing...
+1	line	Barbarian guard	Since you drink like a barbarian, I can show you how to smash your vials when you finish them. Do you want to do that?
+1	select	Select an Option
+1	option	Yes please, I want to smash my vials.
+2	line	Player	Yes please, I want to smash my vials.
+2	line	Barbarian guard	It's all part of drinking like a barbarian! Okay, you will now smash your vials as you drink your potions.
+2	action	end
+1	option	No thank you, I'd rather keep my vials.
+2	line	Player	No thank you, I'd rather keep my vials.
+2	action	end
