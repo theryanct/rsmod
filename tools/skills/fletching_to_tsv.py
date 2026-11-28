@@ -140,6 +140,16 @@ MANUAL += [
     ("combine", "amethyst_dart", 10, 90, 210, 1, "-", [("amethyst_dart_tip", 10), ("feather", 10)]),
     ("combine", "amethyst_javelin", 15, 84, 202.5, 1, "-", [("javelin_shaft", 15), ("amethyst_javelin_head", 15)]),
 ]
+# Ogre arrows + brutal arrows (Wiki Recipe templates; Big Chompy Bird Hunting).
+MANUAL += [
+    ("knife", "ogre_arrow_shaft", 4, 5, 6.4, 3, "human_fletching", [("achey_tree_logs", 1)]),
+    ("string", "ogre_headless_arrow", 6, 5, 5.4, 2, "-", [("ogre_arrow_shaft", 6), ("feather", 24)]),
+    ("string", "ogre_arrow", 6, 5, 6, 2, "-", [("ogre_headless_arrow", 6), ("wolfbone_arrowheads", 6)]),
+    ("chisel", "wolfbone_arrowheads", 4, 5, 10, 2, "-", [("wolf_bones", 1)]),
+] + [("hammer", f"zogre_brutal_{m}", 6, lv, xp, 2, "-", [("ogre_headless_arrow", 6), (n, 6)]) for m, n, lv, xp in [
+    ("bronze", "nails_bronze", 7, 8.4), ("iron", "nails_iron", 18, 15.6), ("steel", "nails", 33, 30.6),
+    ("black", "nails_black", 38, 39), ("mithril", "nails_mithril", 49, 45), ("adamant", "nails_adamant", 62, 61.2),
+    ("rune", "nails_rune", 77, 75)]]
 for m in MANUAL:
     if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
 
