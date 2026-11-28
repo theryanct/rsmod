@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.Constants
 import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
@@ -30,7 +31,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - "Cross" on stepping stones (by loc name): a jump onto the stone.
  * No xp; level-gated shortcuts stay data rows in agility.tsv.
  */
-class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : PluginScript() {
+class GenericObstacles
+@Inject
+constructor(private val locTypes: LocTypeList, private val locRepo: LocRepository) : PluginScript() {
     private val logger = InlineLogger()
 
     /**
@@ -114,6 +117,12 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             return
         }
         val (start, dest) = crossing(player.coords, loc) ?: return
+        // Diagnostics for obstacle direction reports (Ryan).
+        logger.info {
+            "Obstacle ${loc.id} shape=${loc.shapeId} rot=${loc.angleId} " +
+                "size=${loc.adjustedWidth}x${loc.adjustedLength} at ${loc.coords}: " +
+                "player ${player.coords} -> start $start -> land $dest"
+        }
         // Step onto this side's start tile first, so the climb always runs straight across.
         if (player.coords != start) {
             exactMove(player.coords, start, 0, CLIENT_CYCLES_PER_TICK, direction(start, dest))
@@ -142,7 +151,9 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
      * player clicked from, so crossing works the same way from either side:
      * - Wall locs (shapes 0-3): across the wall's edge (rotation 0 west, 1 north, 2 east, 3 south);
      *   the two tiles are the loc tile and the tile beyond that edge.
-     * - Other locs (stiles are 1x2): across the SHORT side of the rotated footprint, from the tile
+     * - Other locs (stiles are 1x2): perpendicular to the fence line (Ryan's rule), i.e. along the
+     *   LONG side of the rotated footprint (Fred's farm stile 3197,3276 rot 0 is 1x2 on z and crosses
+     *   north-south); square footprints read the fence line from adjacent wall locs. From the tile
      *   just outside it on the player's side to the tile just outside the far side, in line with
      *   the player (clamped onto the footprint). Square footprints fall back to the approach axis.
      */
@@ -168,10 +179,9 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
         val level = loc.coords.level
         val acrossX =
             when {
-                loc.adjustedWidth < loc.adjustedLength -> true
-                loc.adjustedWidth > loc.adjustedLength -> false
-                // Square: cross along whichever axis the player is outside of.
-                else -> player.x < minX || player.x > maxX
+                loc.adjustedWidth > loc.adjustedLength -> true
+                loc.adjustedWidth < loc.adjustedLength -> false
+                else -> fenceRunsAlongZ(loc) ?: (player.x < minX || player.x > maxX)
             }
         return if (acrossX) {
             val z = player.z.coerceIn(minZ, maxZ)
@@ -185,6 +195,24 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             val north = CoordGrid(x, maxZ + 1, level)
             val onSouth = player.z < (minZ + maxZ + 1) / 2.0
             if (onSouth) south to north else north to south
+        }
+    }
+
+    /**
+     * For square footprints: true if wall-type locs (fences, shapes 0-3) sit north/south of the loc
+     * (fence line runs along z, so cross along x), false if they sit east/west, null if unknown.
+     */
+    private fun fenceRunsAlongZ(loc: BoundLocInfo): Boolean? {
+        fun hasWall(dx: Int, dz: Int): Boolean =
+            locRepo.findAll(loc.coords.translate(dx, dz)).any { it.shapeId in 0..3 }
+        val maxX = loc.adjustedWidth
+        val maxZ = loc.adjustedLength
+        val northSouth = hasWall(0, -1) || hasWall(0, maxZ)
+        val eastWest = hasWall(-1, 0) || hasWall(maxX, 0)
+        return when {
+            northSouth && !eastWest -> true
+            eastWest && !northSouth -> false
+            else -> null
         }
     }
 
