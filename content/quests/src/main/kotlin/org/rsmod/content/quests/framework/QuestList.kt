@@ -46,6 +46,7 @@ import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRI
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
+import org.rsmod.content.quests.porcine.PorcineOfInterest.Companion.PORCINE
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_BONE_MAN_I
@@ -116,6 +117,7 @@ public object BuiltQuests {
             OBSERVATORY_QUEST,
             PIRATES_TREASURE,
             PLAGUE_CITY,
+            PORCINE,
             PRIEST_IN_PERIL,
             PRINCE_ALI_RESCUE,
             RAG_AND_BONE_MAN_I,

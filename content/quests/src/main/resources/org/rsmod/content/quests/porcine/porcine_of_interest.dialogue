@@ -1,0 +1,326 @@
+# Generated from the OSRS Wiki page "Transcript:A Porcine of Interest" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Searching the notice board
+1	box	You search through the notice board...
+1	line	Player	'Damaged roof tiles for sale'... 'Come on down to Bob's Axes'... 'Contributions welcomed to Ned's New-Window Fund'...
+1	line	Player	Wait a minute, what's this?
+1	box	'Keen fighter sought to deal with troublesome monster. Reward offered. Speak to Sarah at the South Falador Farm for details.'
+1	line	Player	This could be worth looking into.
+1	select	Start the A Porcine of Interest quest?
+1	option	Yes.
+2	line	Player	Right, let's go and see what Sarah has in mind.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Searching the notice board again
+1	box	You search through the notice board but find nothing more of interest.
+1	action	end
+0	section	Talking to Sarah
+0	section	Initial conversation
+1	line	Sarah	Hello. How can I help you?
+1	select	Select an option
+1	option	Talk about the bounty.
+2	line	Player	I've come about the bounty.
+2	line	Sarah	Oh thank Saradomin! It's about time someone responded, something needs to be done!
+2	line	Player	Can you explain what happened?
+2	line	Sarah	Of course. I was making my monthly delivery to The Sheared Ram in Lumbridge, heading east near the Draynor Village crossroads.
+2	line	Sarah	Suddenly, out of the trees came a hulking monster! It chased me for a short distance, but luckily Rosie managed to spook it enough to give me a headstart.
+2	line	Player	Sounds like it must have given you quite the scare!
+2	line	Sarah	It certainly did. I even lost my cart full of farm produce!
+2	select	Select an option
+2	option	What did the monster look like?
+3	line	Player	What did this monster look like?
+3	line	Sarah	I didn't get a very good look at it I'm afraid. It was getting dark and as soon as I saw it charging at me, I ran.
+3	line	Sarah	I can still hear the sound, though. A horrible grunting... squealing...
+3	line	Sarah	Is there anything else you wanted?
+3	action	other
+2	option	Any tips on finding this thing?
+3	line	Player	Any tips on finding this thing?
+3	line	Sarah	Tips...? You're supposed to be the professional monster slayer!
+3	line	Sarah	Although, I suppose a good place to start would be checking the area I was attacked. See if you can find the remains of my cart.
+3	line	Player	Ok, yes that could work.
+3	line	Sarah	Is there anything else you wanted?
+3	action	other
+2	option	Whereabouts were you attacked again?
+3	line	Player	Whereabouts were you attacked again?
+3	line	Sarah	I remember being somewhere near the crossroads, north of Draynor Village.
+3	line	Sarah	Sorry that I'm not much help. It happened so fast, the whole thing is a bit of a blur.
+3	line	Player	That's okay. Crossroads north of Draynor... At least I have somewhere to start.
+3	line	Sarah	Is there anything else you wanted?
+3	action	other
+2	option	You mentioned Rosie. Who's that?
+3	line	Player	You mentioned that Rosie spooked the monster. Who's that?
+3	line	Sarah	Oh, that'll be our lady over there by the fire. She's such a good dog, always accompanies me on deliveries.
+3	line	Sarah	You can pet her if you like. She's very friendly.
+3	line	Sarah	Is there anything else you wanted?
+3	action	other
+2	option	I think that'll be all for now.
+3	line	Player	I think that'll be all for now.
+3	line	Sarah	Excellent! Best of luck to you, I'll be waiting right here with your reward.
+3	action	end
+1	option	Talk about something else.
+0	section	Subsequent conversation
+1	line	Sarah	Hello. How can I help you?
+1	select	Select an option
+1	option	Talk about the bounty.
+2	select	Select an option
+2	option	What did the monster look like?
+3	action	above
+2	option	Any tips on finding this thing?
+3	action	above
+2	option	Whereabouts were you attacked again?
+3	action	above
+2	option	You mentioned Rosie. Who's that?
+3	action	above
+2	option	I think that'll be all for now.
+3	action	above
+1	option	Talk about something else.
+0	section	Investigating the crossroads
+0	section	Damaged cart
+1	box	It seems as though the monster was trying to run off with some of Sarah's produce. From the looks of things, it was heading north-east.
+1	action	end
+0	section	Cabbages
+1	box	The cabbage is damaged and has begun to yellow.
+1	action	end
+0	section	Carrots
+1	box	The carrot has been slightly gnawed on.
+1	line	Player	Weird... What sort of monster charges at someone and then steals a bunch of carrots?
+1	action	end
+0	section	Potatoes
+1	box	These potatoes seem to have been largely untouched.
+1	line	Player	Would you look at that... Apparently our monster is picky.
+1	action	end
+0	section	Broken dead tree
+1	line	Player	Something pretty big must have come running through here to knock this over.
+1	action	end
+0	section	Strange hole
+1	cond	If the player does not have a rope in their inventory:
+2	line	Player	This looks like the place. It's a long way down, though... I'll need to tie something onto the edge.
+2	action	end
+1	cond	If the player has a rope in their inventory:
+2	box	You tie the rope tightly around a protruding rock.
+2	action	end
+0	section	Inside the cave
+0	section	Investigating pile of rope
+1	line	Player	Huh... there's a rope already down here. I hope noone else has got to this monster first.
+1	action	end
+0	section	Talking to Sarah after finding the cave
+1	line	Sarah	Hello. How can I help you?
+1	select	Select an option
+1	option	Talk about the bounty.
+2	line	Sarah	Oh it's you, my monster slayer! How goes the quest?
+2	line	Player	I'm still working on it... I've managed to find its lair though.
+2	line	Sarah	Sounds like you're making progress. Take care!
+2	action	end
+1	option	Talk about something else.
+0	section	Investigating the skeleton
+1	box	The skeleton seems fresh. It looks like the bones have been gnawed clean fairly recently.
+1	line	Player	There's also a scrawled note. It's barely readable...
+1	line	Player	Well, that's not exactly reassuring.
+1	line	Player	Uhh... Nice piggy?
+1	cond	If the player is not wearing Gnome goggles:
+2	line	Player	Argh! My eyes!
+1	cond	If the player is wearing Gnome goggles:
+2	line	Player	Argh! My eyes! The goggles do nothing!
+1	box	Some time passes...
+1	line	Pig Thing	*Sniff* *Sniff*
+1	line	Pig Thing	*Snort*
+1	line	Player	...
+1	line	Spria	Well then, what do we have here?
+1	line	Spria	Still breathing, eh...?
+1	line	Spria	Seems I came at just the right time.
+1	line	Spria	We'd better get you out of here before that thing returns.
+1	line	Player	W-what happened? Where am I?
+1	action	end
+0	section	Attempting to enter the Sourhog cave after being attacked by the Sourhog
+1	line	Player	I think I find out more about that monster from Spria in Draynor Village before heading back down there.
+1	action	end
+0	section	The Sourhog
+0	section	Talking to Spria
+0	section	Initial conversation
+1	line	Spria	Oh, you're awake!
+1	line	Player	Who are you? How did I end up here?
+1	line	Spria	My name's Spria and I'm a slayer master. You've had a nasty encounter with a Sourhog.
+1	line	Player	A Sourhog? You mean the giant pig monster?
+1	line	Spria	Precisely. You're extremely lucky that I found you. Another few hours and you'd have been hog chow.
+1	line	Spria	Were you responding to Sarah's bounty too?
+1	line	Player	Yes... It sounded like an easy few coins...
+1	line	Spria	I thought as much. I found you on the floor of the cave, you must have been knocked unconscious.
+1	line	Player	That thing caught me completely off-guard. Normally I can handle myself in a fight, but its spitting attack is pretty fearsome!
+1	cond	If the player's inventory is full:
+2	line	Spria	I have an item for you that will help you on your quest, but you don't seem to have enough space. Come and see me again when you've cleared some room.
+2	action	end
+1	cond	If the player's inventory is not full:
+2	line	Spria	The beast's saliva is extremely acidic and your eyes are most vulnerable. It'll cause terrible injuries and leave you unable to attack or defend yourself very well.
+2	line	Player	So how am I supposed to handle that?
+2	line	Spria	Luckily, the Slayer skill provides us with an array of useful equipment and techniques for dealing with... special foes.
+2	line	Spria	In the case of our Sourhog, you'll be needing these.
+2	box	Spria hands you a pair of Reinforced Goggles.
+2	action	
+2	line	Spria	This eyewear will protect you from the spitting attack, allowing you to fight the monster on equal terms.
+2	line	Spria	Most enemies have a weakness, too. The Sourhog's thick hide provides excellent protection against slashing and insulates it from magic damage.
+2	line	Spria	You'd be best trying to pierce it with arrows or a stabbing weapon.
+2	line	Spria	Go now, the bounty is all yours to claim. I suggest you recoup your strength and head back to fight it using your new goggles.
+2	line	Spria	If you make it out alive, collect your bounty and then come see me so that we can speak further.
+2	select	Select an option
+2	option	Why are you helping me?
+3	line	Player	Why are you helping me?
+3	line	Spria	Well, I suppose I could have left you in there to be eaten...
+3	line	Spria	But you know what that'd make me? A monster. And as a slayer master, that's really not a great look.
+3	line	Spria	Besides, my father always taught me that knowledge is worth more than gold. I'm happy to sacrifice a few coins in order to pass my experience on to you.
+3	line	Player	Well, I sure am glad you were there to lend a hand. Thank you!
+3	line	Spria	Don't mention it. Was there something else?
+3	action	other
+2	option	How did I end up back in Draynor Village?
+3	line	Player	How did I end up back in Draynor Village?
+3	line	Spria	I carried you out and dragged you back here to my house to recover, it really wasn't easy. You're welcome to rest here for as long as you need.
+3	line	Spria	Was there something else?
+3	action	other
+2	option	You said you were a slayer master. What's that?
+3	line	Player	You said you were a slayer master. What's that?
+3	line	Spria	There are many of us. We're experts in the ancient art of monster slaying. People from across Gielinor come to us for tasks and advice.
+3	line	Spria	Well... actually, I'm fairly new to this. I've been learning from my father, Turael, for many years. We decided it was finally time for me to continue the family profession.
+3	line	Spria	Was there something else?
+3	action	other
+2	option	Can I have another pair of Reinforced Goggles?
+3	line	Player	Can I have another pair of Reinforced Goggles?
+3	cond	If the player has a pair equipped:
+4	line	Spria	No, you're still wearing the last pair I gave you!
+4	line	Spria	Was there something else?
+4	action	other
+3	cond	If the player has a pair in their inventory:
+4	line	Spria	You've still got the last one I gave you, it's there in your inventory! Those things aren't cheap, you know.
+4	line	Spria	Was there something else?
+4	action	other
+3	cond	If the player has a pair in their bank:
+4	line	Spria	I know many people all across Gielinor, and my sources tell me you still have the last one in your bank.
+4	line	Spria	Was there something else?
+4	action	other
+3	cond	If a player does not have a pair in their inventory or bank:
+4	line	Spria	Sure, I have another going spare. Please try to take better care of these.
+4	action	"Spria hands you another pair of Reinforced Goggles."
+4	line	Spria	Was there something else?
+4	action	other
+2	option	What can you tell me about the Sourhog?
+3	line	Player	What can you tell me about the Sourhog?
+3	line	Spria	Well, I'm not much of a history buff... But I'll tell you what I know.
+3	line	Spria	Many years back, before even I was around, there were two rival family farms not far from where we're standing.
+3	line	Spria	Every year the village would hold a 'Finest Swine in Show' prize at the annual faire.
+3	line	Spria	The same farmer would win year after year without fail. Driven mad with jealousy, his rival decided to hire a dodgy dark wizard to give him an edge over the competition.
+3	line	Spria	The wizard attempted to alter the pig's appearance. I'm sure you can guess how well that went!
+3	line	Spria	Long story short, the mutant, what we now know as a Sourhog, went on a brief rampage and escaped.
+3	line	Spria	It must have somehow managed to reproduce, because people have reported seeing them in groups.
+3	line	Spria	Up until now, so long as they were left alone, they'd keep to themselves. Rumours are, they live in deep underground caverns, scavenging what they can find.
+3	line	Spria	But if they're living so close-by and attacking people on roads, then... they must be getting bold and trying to resurface.
+3	line	Spria	Was there something else?
+3	action	other
+2	option	That'll be all for now.
+3	line	Player	That'll be all for now.
+3	line	Spria	Very well. Good luck, slayer.
+3	action	end
+0	section	After acquiring the Reinforced goggles
+1	line	Spria	How goes it?
+1	select	Select an option
+1	option	Why are you helping me?
+2	action	above
+1	option	How did I end up back in Draynor Village?
+2	action	above
+1	option	You said you were a slayer master. What's that?
+2	action	above
+1	option	Can I have another pair of Reinforced Goggles?
+2	action	above
+1	option	What can you tell me about the Sourhog?
+2	action	above
+0	section	Attempting to enter the hole without reinforced goggles equipped
+1	line	Player	I don't want to go back down there without wearing the right equipment!
+1	action	end
+0	section	Climbing the blockage
+1	line	Player	I don't think Spria will be rescuing me this time. If I go in there, I'm fighting this thing to the death!
+1	select	Climb over the blockage?
+1	option	Yes
+1	option	No
+2	action	end
+0	section	Attempting to climb the rope after killing the Sourhog but before severing its foot
+1	line	Player	Before I leave, I should go and collect a foot from that dead Sourhog as proof of my kill.
+1	action	end
+0	section	Killing the Sourhog with a katana
+1	line	Player	Nothing personal, pig.
+0	section	Taking the Sourhog's foot
+1	cond	If the player doesn't have a knife or slash weapon:
+2	box	You try to pull a foot off with your bare hands, but to no avail.
+2	line	Player	Perhaps I should go and get something sharp.
+2	action	end
+1	cond	If the player uses something other than a knife or slash weapon:
+2	line	Player	I don't think that's sharp enough to cut a foot off...
+2	action	end
+1	cond	If the player has a knife or slash weapon:
+2	box	You slice a foot off and place it inside your backpack.
+2	action	end
+1	cond	If the player has a Sourhog foot in their inventory:
+2	line	Player	I've already collected a foot from this thing. I should take it to Sarah.
+2	action	end
+0	section	Attempting to re-enter the Sourhog Cave with a Sourhog foot in the player's inventory
+1	line	Player	I don't need to go back down there right now. I should take the foot to Sarah and collect my reward.
+1	action	end
+0	section	Collecting the bounty
+0	section	Talking to Spria
+1	line	Spria	'Ello, and what are you after then?
+1	line	Player	I did it! I killed the Sourhog!
+1	line	Spria	Nicely done. Did you collect your reward from Sarah?
+1	line	Player	No, not yet.
+1	line	Spria	Go and collect your reward and then come and speak with me.
+1	action	end
+0	section	Talking to Sarah
+1	line	Sarah	Hello. How can I help you?
+1	option	Talk about the bounty.
+2	line	Player	That monster certainly won't be troubling you from now on.
+2	line	Sarah	Oh that's fantastic news! I'm so relie-
+2	line	Sarah	Wait, how do I know you're not just saying that to get the bounty?
+2	cond	If the player doesn't have the sourhog foot:
+3	line	Player	I guess I'll go and get you some proof.
+3	action	end
+2	cond	If the player has the sourhog foot:
+3	line	Player	How about this as proof?
+3	box	You pull the foot out of your backpack and show it to Sarah.
+3	line	Sarah	Eugh! Yes, that certainly looks about right!
+3	line	Player	Indeed, the smell is... something quite special.
+3	line	Sarah	I'll probably just give it to the dog.
+3	line	Sarah	I'm glad you made it back. Some strange woman in a hood came asking about the job shortly after you left. I didn't really want her back in here.
+3	line	Sarah	Anyway, thank you so much! Here's your reward.
+3	box	Sarah hands you a heavy pouch of 5,000 coins.
+3	line	Player	Perhaps I should speak with Spria and tell her that the monster's been dealt with.
+3	action	end
+1	option	Talk about something else.
+0	section	Finishing up
+0	section	Talking to Sarah before telling Spria about the bounty completion
+1	line	Sarah	Hello. How can I help you?
+1	option	Talk about the bounty.
+2	line	Player	Feeling better now that the monster's gone?
+2	line	Sarah	Very much so! Thanks again. What was it, anyway?
+2	line	Player	It was a Sourhog. A giant bipedal pig creature!
+2	line	Sarah	Oh crumbs... I think I've heard of those... My grandfather was always rambling on about them.
+2	line	Sarah	Nevermind... that's all history now. Weren't you heading off to see Spria?
+2	line	Player	Yes, I suppose I should get going.
+2	line	Sarah	Safe travels!
+2	action	end
+1	option	Talk about something else.
+0	section	Talking to Spria
+1	line	Spria	'Ello, and what are you after then?
+1	line	Player	I did it! I killed the Sourhog and collected the bounty from Sarah.
+1	line	Spria	Very impressive, slayer. I'm glad that the goggles served you well.
+1	line	Spria	Although, these Sourhogs often live in primitive tribes. I fear that where there's one, there's likely to be more to follow.
+1	line	Spria	We may have to monitor that lair from time to time to keep their population in check.
+1	action	continue
+1	cond	If the player has unlocked the ability to craft the slayer helmet:
+2	line	Spria	I've noticed that you've unlocked the ability to craft slayer helms. From now on, when assembling one, fasten a pair of Reinforced Goggles to the eye holes to gain their benefit.
+2	line	Spria	While we're on the topic, I can upgrade any of your existing slayer helms now.
+2	line	Spria	That should do the trick.
+2	action	continue
+1	cond	If the player does not have a slayer task:
+2	line	Spria	By the way, you seem to have a natural talent for killing monsters. Would you like a new slayer task now?
+2	select	Do you want a slayer task from Spria?
+2	option	Yes
+3	action	Player receives a Slayer task.
+2	option	No
+3	line	Spria	Very well, come back if you change your mind.
+1	cond	If the player has a slayer task:
