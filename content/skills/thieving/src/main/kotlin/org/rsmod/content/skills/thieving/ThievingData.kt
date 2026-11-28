@@ -48,10 +48,14 @@ internal object ThievingData {
         get() = parsed.stalls
 
     private fun load(): Parsed {
-        val input =
-            ThievingData::class.java.getResourceAsStream("thieving.tsv")
-                ?: error("Thieving resource not found: thieving.tsv")
-        val lines = input.bufferedReader().use { it.readLines() }
+        // thieving.tsv is generated; thieving_extra.tsv holds hand-built targets the generator skips.
+        val lines =
+            listOf("thieving.tsv", "thieving_extra.tsv").flatMap { name ->
+                val input =
+                    ThievingData::class.java.getResourceAsStream(name)
+                        ?: error("Thieving resource not found: $name")
+                input.bufferedReader().use { it.readLines() } + ""
+            }
         val pickpockets = ArrayList<Pickpocket>()
         val stalls = ArrayList<Stall>()
         var header: List<String>? = null

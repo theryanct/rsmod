@@ -138,7 +138,8 @@ constructor(
         pickpocket: Pickpocket,
         registered: MutableSet<Int>,
     ): Boolean {
-        val op = type.op.indexOfFirst { it?.normalizedOp() == "pickpocket" } + 1
+        // Digsite workmen use "Steal-from" for the same mechanic.
+        val op = type.op.indexOfFirst { it?.normalizedOp() == "pickpocket" || it?.normalizedOp() == "steal from" } + 1
         if (op == 0 || !registered.add(type.id)) return false
         val bound =
             when (op) {
