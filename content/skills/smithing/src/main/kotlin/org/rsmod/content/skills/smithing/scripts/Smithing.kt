@@ -2,6 +2,7 @@ package org.rsmod.content.skills.smithing.scripts
 
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
+import java.util.WeakHashMap
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
@@ -73,10 +74,10 @@ constructor(
         }
         logger.info { "Smithing: bound $bound anvil locs." }
 
-        onIfModalButton(smithing_components.make_1) { player.setMakeX(1) }
-        onIfModalButton(smithing_components.make_5) { player.setMakeX(5) }
-        onIfModalButton(smithing_components.make_10) { player.setMakeX(10) }
-        onIfModalButton(smithing_components.make_all) { player.setMakeX(MAKE_ALL) }
+        onIfModalButton(smithing_components.make_1) { player.pickMakeX(1) }
+        onIfModalButton(smithing_components.make_5) { player.pickMakeX(5) }
+        onIfModalButton(smithing_components.make_10) { player.pickMakeX(10) }
+        onIfModalButton(smithing_components.make_all) { player.pickMakeX(MAKE_ALL) }
         onIfModalButton(smithing_components.make_x) { promptMakeX() }
 
         for (component in productComponents) {
@@ -106,6 +107,10 @@ constructor(
         }
         val barTypeIndex = barTypeIndex(metal) ?: return
         VarPlayerIntMapSetter.set(player, SmithingVarBits.bar_type, barTypeIndex)
+        // Default to "All" until the player picks a quantity this session (Ryan).
+        if (player !in pickedMakeX) {
+            player.setMakeX(MAKE_ALL)
+        }
         ifOpenMainModal(SmithingInterfaces.smithing)
     }
 
@@ -120,6 +125,17 @@ constructor(
         player.setMakeX(0)
         val count = countDialog()
         player.setMakeX(if (count > 0) count else previous)
+        if (count > 0) {
+            pickedMakeX[player] = true
+        }
+    }
+
+    /** Players who chose an anvil quantity this session (weak keys drop on logout). */
+    private val pickedMakeX = WeakHashMap<Player, Boolean>()
+
+    private fun Player.pickMakeX(quantity: Int) {
+        pickedMakeX[this] = true
+        setMakeX(quantity)
     }
 
     private suspend fun ProtectedAccess.selectProduct(component: ComponentType) {

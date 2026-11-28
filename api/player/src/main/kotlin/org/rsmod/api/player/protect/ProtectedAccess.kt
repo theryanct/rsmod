@@ -85,6 +85,9 @@ import org.rsmod.api.player.stat.statRestoreAll
 import org.rsmod.api.player.stat.statSub
 import org.rsmod.api.player.stopInvTransmit
 import org.rsmod.api.player.ui.SKILLMULTI_MAX_QUANTITY
+import org.rsmod.api.player.ui.SKILLMULTI_REMEMBER_ALL
+import org.rsmod.api.player.ui.SKILLMULTI_SUB_MAKE_ALL
+import org.rsmod.api.player.ui.SKILLMULTI_SUB_MAKE_X
 import org.rsmod.api.player.ui.SkillMultiChoice
 import org.rsmod.api.player.ui.SkillMultiComponents
 import org.rsmod.api.player.ui.SkillMultiProduct
@@ -116,6 +119,7 @@ import org.rsmod.api.player.ui.ifSetObj
 import org.rsmod.api.player.ui.ifSetPlayerHead
 import org.rsmod.api.player.ui.ifSetText
 import org.rsmod.api.player.ui.ifSkillMulti
+import org.rsmod.api.player.ui.skillMultiLastQuantity
 import org.rsmod.api.player.vars.VarPlayerIntMapDelegate
 import org.rsmod.api.player.vars.resyncVar
 import org.rsmod.api.player.vars.setActiveMoveSpeed
@@ -2080,26 +2084,43 @@ public class ProtectedAccess(
         title: String,
         products: List<SkillMultiProduct>,
         maxQuantity: Int,
-        suggestedQuantity: Int = maxQuantity,
+        suggestedQuantity: Int? = null,
     ): SkillMultiChoice {
         val slots = SkillMultiComponents.items
         require(products.isNotEmpty() && products.size <= slots.size) {
             "skillMulti takes 1-${slots.size} products (got ${products.size})"
         }
         val max = maxQuantity.coerceIn(1, SKILLMULTI_MAX_QUANTITY)
-        val suggested = suggestedQuantity.coerceIn(1, max)
+        // Default "All", or the quantity the player last picked this session.
+        val remembered = skillMultiLastQuantity[player]
+        val suggested =
+            when {
+                suggestedQuantity != null -> suggestedQuantity
+                remembered == null || remembered == SKILLMULTI_REMEMBER_ALL -> max
+                else -> remembered
+            }.coerceIn(1, max)
         player.ifSkillMulti(verb, title, products, max, suggested, context.eventBus)
         val modal = player.ui.getModalOrNull(components.chatbox_chatmodal)
         val input = coroutine.pause(ResumePauseButtonInput::class)
         val index = slots.indexOfFirst { it.isType(input.component) }
-        val choice =
-            if (index in products.indices) {
-                SkillMultiChoice(index, products[index], input.subcomponent.coerceIn(1, max))
-            } else {
-                null
-            }
         resumeWithModalProtectedAccess(Unit, modal, components.chatbox_chatmodal)
-        return choice ?: throw ProtectedAccessLostException()
+        if (index !in products.indices) {
+            throw ProtectedAccessLostException()
+        }
+        val quantity =
+            when (input.subcomponent) {
+                SKILLMULTI_SUB_MAKE_ALL -> max
+                SKILLMULTI_SUB_MAKE_X -> {
+                    val entered = countDialog("Enter amount:")
+                    if (entered <= 0) {
+                        throw ProtectedAccessLostException()
+                    }
+                    entered.coerceIn(1, max)
+                }
+                else -> input.subcomponent.coerceIn(1, max)
+            }
+        skillMultiLastQuantity[player] = if (quantity >= max) SKILLMULTI_REMEMBER_ALL else quantity
+        return SkillMultiChoice(index, products[index], quantity)
     }
 
     private suspend fun mesboxPage(
