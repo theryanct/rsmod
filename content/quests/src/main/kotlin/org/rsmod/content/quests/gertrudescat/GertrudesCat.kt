@@ -13,6 +13,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -50,9 +51,12 @@ constructor(
     private val dialogue by lazy { QuestDialogue.load(GertrudesCat::class.java, "gertrudes_cat") }
 
     override fun ScriptContext.startup() {
-        onNpcOpLabel(npcTypes, GcNpcs.gertrude, "Talk-to") { talkGertrude(it) }
-        onNpcOpLabel(npcTypes, GcNpcs.gertrude_post, "Talk-to") {
-            startDialogue(it) { chatNpc(happy, "Fluffs and her kitten are doing wonderfully!") }
+        // Gertrude is shared (QuestTalk): A Ruff Situation talks to her too.
+        with(QuestTalk) {
+            default(npcTypes, GcNpcs.gertrude) { talkGertrude(it) }
+            default(npcTypes, GcNpcs.gertrude_post) {
+                startDialogue(it) { chatNpc(happy, "Fluffs and her kitten are doing wonderfully!") }
+            }
         }
         for (son in GcNpcs.sons) {
             onNpcOpLabel(npcTypes, son, "Talk-to") { talkSons(it) }

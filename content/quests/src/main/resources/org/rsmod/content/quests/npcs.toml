@@ -1328,3 +1328,60 @@ coords = '1_41_63_13_12'
 [[spawn]]
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
+
+# A Ruff Situation: the stage multinpcs (dogquest) the world spawns lack. Authored placements
+# (Ryan-test).
+# the guard south of the west Varrock bank
+[[spawn]]
+npc = 'dogq_varrock_guard_multi'
+coords = '0_49_53_44_32'
+
+# the stray dog barking at him
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest'
+coords = '0_49_53_45_33'
+
+# the dog at her den (west of Thessalia's)
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_den'
+coords = '0_49_53_60_23'
+
+# the first puppy, north of the Cooks' Guild
+[[spawn]]
+npc = 'dogq_puppy_one_multi'
+coords = '0_49_53_9_63'
+
+# the dog by the goblins
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_goblin'
+coords = '0_48_53_62_45'
+
+# Picklenose (Toetaller is a world spawn)
+[[spawn]]
+npc = 'dogq_goblin_picklenose_multi'
+coords = '0_48_53_60_44'
+
+# the second puppy, with the goblins
+[[spawn]]
+npc = 'dogq_puppy_two_multi'
+coords = '0_48_53_59_46'
+
+# the dog after the goblin trade
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_goblin_post'
+coords = '0_48_53_63_46'
+
+# the dog at the outlaw camp
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_outlaw'
+coords = '0_49_54_6_10'
+
+# the dog after the outlaws
+[[spawn]]
+npc = 'dogq_varrock_stray_dog_multi_quest_outlaw_post'
+coords = '0_49_54_5_12'
+
+# the third puppy
+[[spawn]]
+npc = 'dogq_puppy_three_multi'
+coords = '0_49_54_3_16'
