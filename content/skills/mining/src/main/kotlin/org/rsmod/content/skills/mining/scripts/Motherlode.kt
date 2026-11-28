@@ -146,7 +146,7 @@ constructor(
     private fun waterFlows(): Boolean = MotherlodeData.wheels.indices.any { wheelTurns(it) }
 
     private fun processRespawns() {
-        val due = respawns.filter { it.second <= mapClock.cycle }
+        val due = respawns.filter { it.second <= this@Motherlode.mapClock.cycle }
         if (due.isEmpty()) return
         respawns.removeAll(due.toSet())
         for ((vein, _) in due) {
@@ -193,14 +193,14 @@ constructor(
                 invAdd(inv, MotherlodeObjs.paydirt)
                 statAdvance(stats.mining, PAYDIRT_XP * xpMods.get(player, stats.mining))
                 val at = depleteAt.getOrPut(vein.coords) {
-                    mapClock.cycle + if (upper) random.of(60, 66) else random.of(38, 45)
+                    this@Motherlode.mapClock.cycle + if (upper) random.of(60, 66) else random.of(38, 45)
                 }
-                if (mapClock.cycle >= at) {
+                if (this@Motherlode.mapClock.cycle >= at) {
                     depleteAt.remove(vein.coords)
                     val current = locRepo.findExact(vein.coords, MotherlodeLocs.active.getValue(vein.depleted))
                     if (current != null) {
                         locRepo.change(current, MotherlodeLocs.depleted.getValue(vein.depleted), PERMANENT)
-                        respawns += vein to (mapClock.cycle + VEIN_RESPAWN)
+                        respawns += vein to (this@Motherlode.mapClock.cycle + VEIN_RESPAWN)
                     }
                     resetAnim()
                     return
