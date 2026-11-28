@@ -34,7 +34,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   on the loc), furnace jewellery with a mould and molten glass (use a bar, mould, sand or soda
  *   ash on the furnace; ores still go to Smelting's generic furnace handler);
  * - held: needle on leather, chisel on uncut gems, glassblowing pipe on molten glass, ball of wool
- *   on unstrung amulets, water on clay.
+ *   on unstrung amulets, water on clay, orbs on battlestaves; the needle also sews dragonhide and
+ *   snakeskin.
  *
  * Locs are bound by name and op label from the cache, so every spinning wheel/furnace works
  * without an id list. One action per recipe tick count from a weak queue, so moving or clicking
@@ -269,7 +270,12 @@ constructor(
             Station.Chisel -> "You cut the ${name.lowercase()}."
             Station.Spin -> "You spin the ${materialName(recipe)} into ${article(name)}."
             Station.Oven -> "You remove the ${name.lowercase()} from the oven."
-            Station.Combine -> "You mix the clay and water. You now have some soft, workable clay."
+            Station.Combine ->
+                if (recipe.materials.first().obj == "clay") {
+                    "You mix the clay and water. You now have some soft, workable clay."
+                } else {
+                    "You attach the orb to the battlestaff."
+                }
             else -> "You make ${if (recipe.productCount > 1) "${recipe.productCount} x $name" else article(name)}."
         }
 
@@ -307,7 +313,7 @@ constructor(
 
         const val THREAD_USES = 5
 
-        /** Stations whose "tool" is used up: the water container (soft clay), ball of wool. */
+        /** Stations whose "tool" is used up: water container (soft clay), orb, ball of wool. */
         val CONSUMED_TOOL = setOf(Station.Combine, Station.Stringing)
 
         val HELD =

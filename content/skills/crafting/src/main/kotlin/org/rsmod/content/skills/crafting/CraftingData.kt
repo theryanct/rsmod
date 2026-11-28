@@ -24,7 +24,7 @@ internal object CraftingData {
         Pipe("pipe"),
         /** Ball of wool on an unstrung amulet or symbol. */
         Stringing("string"),
-        /** Water container on clay -> soft clay (container returned). */
+        /** Water on clay -> soft clay (container returned); orb on a battlestaff. */
         Combine("combine"),
     }
 
