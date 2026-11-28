@@ -72,7 +72,7 @@ public val Player.questPoints: Int
 public fun Player.grantQuest(quest: QuestDef): Boolean {
     if (isQuestComplete(quest)) return false
     setQuestState(quest, quest.complete)
-    VarPlayerIntMapSetter.set(this, QuestVarps.qp, questPoints + quest.questPoints)
+    syncQuestPoints()
     return true
 }
 
