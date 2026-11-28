@@ -139,11 +139,17 @@ constructor(
     private suspend fun ProtectedAccess.talkEffigy(npc: Npc) {
         when (state) {
             0 ->
-                section(
-                    npc,
-                    "The builders on strike",
-                    SimpleQuestHooks(options = mapOf("Yes." to { setState(STARTED) })),
-                )
+                if (statBase(stats.construction) < CONSTRUCTION_REQUIRED) {
+                    // Authored (not Wiki): the dbrow's Construction 10 requirement.
+                    authoredEffigy(npc, "You don't look like you know one end of a hammer from the other. Come back when you've some Construction experience.")
+                    mes("You need level $CONSTRUCTION_REQUIRED Construction to start Tower of Life.")
+                } else {
+                    section(
+                        npc,
+                        "The builders on strike",
+                        SimpleQuestHooks(options = mapOf("Yes." to { setState(STARTED) })),
+                    )
+                }
             STARTED,
             OUTFIT -> authoredEffigy(npc, "Have you spoken to Bonafido yet? He's the head builder, over by the tower.")
             BUILDER -> section(npc, "Talking to Effigy again")
@@ -416,7 +422,7 @@ constructor(
                 actions =
                     mapOf(
                         "(Player performs the \"No\" emote)" to { anim(seqs.emote_no) },
-                        "(Player performs the \"Yes\" emote)" to { anim(seqs.emote_yes) },
+                        "(Player performs the \"Yes\" emote)" to { if (found) anim(seqs.emote_yes) },
                     ),
             ),
         )
@@ -531,7 +537,6 @@ constructor(
         var rightDown = false
         var solved = false
         startDialogue {
-            mesbox("The pressure seems to be affected by holes in the pipes. Perhaps you can block them up with the balls.")
             while (!solved) {
                 val action =
                     choice5(
@@ -770,6 +775,7 @@ constructor(
         private const val SCARED = 17
         private const val COMPLETE = 18
 
+        private const val CONSTRUCTION_REQUIRED = 10
         private const val CONSTRUCTION_XP = 1000.0
         private const val OTHER_XP = 500.0
         private const val THIEVING_LOW = 150
