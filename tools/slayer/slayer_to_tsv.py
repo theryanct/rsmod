@@ -1,10 +1,10 @@
 """Slayer data from the OSRS Wiki -> content/skills/slayer slayer.tsv + enricher slayer_req lines.
 
 Args: slayer.json npc.sym out.tsv enricher_npcs.toml log.tsv spawns.toml [spawns.toml ...]
-  slayer.json  fetch_slayer.py slayer.json Turael Mazchna
+  slayer.json  fetch_slayer.py slayer.json Turael Mazchna Vannaka Chaeldar Nieve Duradel
 
 Writes:
-  master   <key> <npc name> <spawn coord x,z,plane> <combat req> <points> <milestones n:pts;...>
+  master   <key> <npc name> <spawn coord x,z,plane> <combat req> <points> <milestones n:pts;...> <slayer req>
   task     <master> <category> <min> <max> <weight> <slayer req> <combat req>
   category <category> <display name> <npc names comma>
   xp       <npc name> <slayer xp per kill>
@@ -24,10 +24,18 @@ for path in sys.argv[6:]:
 
 # Master npcs (wiki ids checked against the cache: op3 = Assignment) and wiki map positions.
 # Spria (10432) is a transforming npc without a stand anim and shares Turael's list, so she is left out.
+# Points: Wiki "Slayer reward point" table (base per task; every 10th/50th/100th/250th/1,000th task
+# gives 5x/15x/25x/35x/50x). Quest unlocks (Zanaris for Chaeldar, Shilo for Duradel) are skipped.
 MASTERS = {
     "Turael": ("slayer_master_1_tureal", "2931,3536,0", 0, 0, ""),
-    "Mazchna": ("slayer_master_2_mazchna", "3511,3509,0", 20, 2, "10:5;50:15;100:50;250:70;1000:100"),
+    "Mazchna": ("slayer_master_2_mazchna", "3511,3509,0", 20, 6, "10:30;50:90;100:150;250:210;1000:300"),
+    "Vannaka": ("slayer_master_3", "3147,9914,0", 40, 8, "10:40;50:120;100:200;250:280;1000:400"),
+    "Chaeldar": ("slayer_master_4", "2444,4431,0", 70, 10, "10:50;50:150;100:250;250:350;1000:500"),
+    "Nieve": ("slayer_master_nieve", "2432,3423,0", 85, 12, "10:60;50:180;100:300;250:420;1000:600"),
+    "Duradel": ("slayer_master_5_duradel", "2869,2982,1", 100, 15, "10:75;50:225;100:375;250:525;1000:750"),
 }
+# Masters that also need a Slayer level (Wiki: Duradel needs 50 Slayer).
+MASTER_SLAYER_REQ = {"Duradel": 50}
 log = []
 
 by_category = defaultdict(set)
@@ -48,7 +56,9 @@ for m in data["monsters"]:
 
 
 def rows(text):
-    table = text[text.find("{|"):]
+    # Masters whose list is on their main page (Vannaka, Chaeldar) have a points table first.
+    start = text.find("==Tasks==")
+    table = text[text.find("{|", max(start, 0)):]
     for chunk in table.split("\n|-")[1:]:
         cells = [c.strip() for c in re.split(r"\n\|(?!\})", "\n" + chunk.strip()) if c.strip()]
         if len(cells) >= 5: yield cells
@@ -84,7 +94,7 @@ for master, (npc, coord, cmb, pts, ms) in MASTERS.items():
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki by tools/slayer/slayer_to_tsv.py - do not edit.\n")
     for master, (npc, coord, cmb, pts, ms) in MASTERS.items():
-        w.write(f"master\t{master}\t{npc}\t{coord}\t{cmb}\t{pts}\t{ms or '-'}\n")
+        w.write(f"master\t{master}\t{npc}\t{coord}\t{cmb}\t{pts}\t{ms or '-'}\t{MASTER_SLAYER_REQ.get(master, 1)}\n")
     for t in tasks:
         w.write("task\t" + "\t".join(f"{x:g}" if isinstance(x, float) else str(x) for x in t) + "\n")
     for key, (display, npcs) in sorted(used_categories.items()):

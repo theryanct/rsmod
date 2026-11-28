@@ -21,7 +21,12 @@ while True:
 masters = {}
 for m in sys.argv[2:]:
     d = get({"action": "parse", "page": f"{m}/Slayer assignments", "prop": "wikitext", "formatversion": "2"})
-    masters[m] = d.get("parse", {}).get("wikitext", "")
+    text = d.get("parse", {}).get("wikitext", "")
+    if not text:
+        # Vannaka and Chaeldar keep their task table on the master's own page.
+        d = get({"action": "parse", "page": m, "prop": "wikitext", "formatversion": "2"})
+        text = d.get("parse", {}).get("wikitext", "")
+    masters[m] = text
     time.sleep(0.5)
 json.dump({"monsters": monsters, "masters": masters}, open(sys.argv[1], "w", encoding="utf-8"))
 print("monsters", len(monsters), "masters", {k: len(v) for k, v in masters.items()})
