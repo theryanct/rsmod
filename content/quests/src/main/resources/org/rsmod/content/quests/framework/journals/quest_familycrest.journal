@@ -1,0 +1,124 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_familycrest (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Dimintheis</col> in south-east <col=800000>Varrock</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 40 Mining
+req	Level 40 Smithing
+req	Level 40 Crafting
+req	Level 59 Magic
+step	1	1	Authored
+line	<col=000080><col=800000>Dimintheis</col> wants his family crest restored. His son <col=800000>Caleb</col> in <col=800000>Catherby</col> has one piece.</col>
+step	2	2	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<col=000080>Caleb wants five fish: <col=800000>shrimps</col>, <col=800000>salmon</col>, <col=800000>tuna</col>, <col=800000>bass</col> and <col=800000>swordfish</col>.</col>
+step	3	3	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<col=000080>I have Caleb's piece. His brother <col=800000>Avan</col> went to <col=800000>Al Kharid</col>.</col>
+step	4	5	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<col=000080>The <col=800000>gem trader</col> told me Avan is at the <col=800000>scorpion</col> mine.</col>
+step	5	6	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<str>The gem trader told me Avan is at the scorpion mine.</str>
+line	
+line	<col=000080>Avan wants 'perfect' gold jewellery. <col=800000>Boot</col> the dwarf knows where to find perfect gold.</col>
+step	6	7	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<str>The gem trader told me Avan is at the scorpion mine.</str>
+line	
+line	<str>Avan wants 'perfect' gold jewellery. Boot the dwarf knows where to find perfect gold.</str>
+line	
+line	<col=000080>Boot says the perfect gold is in the <col=800000>Witchaven dungeon</col>.</col>
+step	7	8	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<str>The gem trader told me Avan is at the scorpion mine.</str>
+line	
+line	<str>Avan wants 'perfect' gold jewellery. Boot the dwarf knows where to find perfect gold.</str>
+line	
+line	<str>Boot says the perfect gold is in the Witchaven dungeon.</str>
+line	
+line	<col=000080>I have Avan's piece. <col=800000>Johnathon</col> is in the <col=800000>Jolly Boar Inn</col>.</col>
+step	8	9	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<str>The gem trader told me Avan is at the scorpion mine.</str>
+line	
+line	<str>Avan wants 'perfect' gold jewellery. Boot the dwarf knows where to find perfect gold.</str>
+line	
+line	<str>Boot says the perfect gold is in the Witchaven dungeon.</str>
+line	
+line	<str>I have Avan's piece. Johnathon is in the Jolly Boar Inn.</str>
+line	
+line	<col=000080>Johnathon is poisoned. He needs an <col=800000>antipoison</col>.</col>
+step	9	10	Authored
+line	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+line	
+line	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+line	
+line	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+line	
+line	<str>The gem trader told me Avan is at the scorpion mine.</str>
+line	
+line	<str>Avan wants 'perfect' gold jewellery. Boot the dwarf knows where to find perfect gold.</str>
+line	
+line	<str>Boot says the perfect gold is in the Witchaven dungeon.</str>
+line	
+line	<str>I have Avan's piece. Johnathon is in the Jolly Boar Inn.</str>
+line	
+line	<str>Johnathon is poisoned. He needs an antipoison.</str>
+line	
+line	<col=000080>Johnathon's piece is held by the demon <col=800000>Chronozon</col> in the <col=800000>Edgeville Dungeon</col>.</col>
+done	<str>Dimintheis wants his family crest restored. His son Caleb in Catherby has one piece.</str>
+done	
+done	<str>Caleb wants five fish: shrimps, salmon, tuna, bass and swordfish.</str>
+done	
+done	<str>I have Caleb's piece. His brother Avan went to Al Kharid.</str>
+done	
+done	<str>The gem trader told me Avan is at the scorpion mine.</str>
+done	
+done	<str>Avan wants 'perfect' gold jewellery. Boot the dwarf knows where to find perfect gold.</str>
+done	
+done	<str>Boot says the perfect gold is in the Witchaven dungeon.</str>
+done	
+done	<str>I have Avan's piece. Johnathon is in the Jolly Boar Inn.</str>
+done	
+done	<str>Johnathon is poisoned. He needs an antipoison.</str>
+done	
+done	<str>Johnathon's piece is held by the demon Chronozon in the Edgeville Dungeon.</str>
+done	
+done	<str>I restored the Fitzharmon family crest.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

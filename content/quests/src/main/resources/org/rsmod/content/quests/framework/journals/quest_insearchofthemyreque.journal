@@ -1,0 +1,84 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_insearchofthemyreque (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Vanstrom Klause</col> in the <col=800000>Canifis</col> pub.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Nature Spirit
+req	Level 25 Agility
+step	1	5	Authored
+line	<col=000080><col=800000>Vanstrom Klause</col> asked me to take <col=800000>steel weapons</col> to the <col=800000>Myreque</col>. The boatman <col=800000>Cyreg Paddlehorn</col> in <col=800000>Mort'ton</col> may help.</col>
+step	2	10	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<col=000080>Cyreg agreed to help if I fix his boat with three <col=800000>planks</col>.</col>
+step	3	15	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	
+line	<col=000080>Cyreg's boat is fixed. <col=800000>Curpile Fyod</col> in the <col=800000>Hollows</col> guards the way.</col>
+step	4	20	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	
+line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	
+line	<col=000080>Curpile let me in. The hideout is through the doors behind the tree.</col>
+step	5	40	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	
+line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	
+line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	
+line	<col=000080>I found the Myreque. I should give the weapons to <col=800000>Veliaf Hurtz</col>.</col>
+step	6	50	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	
+line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	
+line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	
+line	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+line	
+line	<col=000080>A <col=800000>skeleton hellhound</col> attacked the hideout!</col>
+step	7	60	Authored
+line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	
+line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	
+line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	
+line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	
+line	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+line	
+line	<str>A skeleton hellhound attacked the hideout!</str>
+line	
+line	<col=000080>I killed the hellhound. Veliaf told me the way out to Canifis.</col>
+done	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+done	
+done	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+done	
+done	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+done	
+done	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+done	
+done	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+done	
+done	<str>A skeleton hellhound attacked the hideout!</str>
+done	
+done	<str>I killed the hellhound. Veliaf told me the way out to Canifis.</str>
+done	
+done	<str>I found the Myreque in their hideout and delivered the weapons, but Vanstrom used me to find them.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

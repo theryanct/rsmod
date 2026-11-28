@@ -1,0 +1,143 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_toweroflife (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Effigy</col> outside the <col=800000>Tower of Life</col> south of <col=800000>Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 10 Construction
+step	1	2	Authored
+line	<col=000080><col=800000>Effigy</col> wants me to get inside the <col=800000>Tower of Life</col>. The builders on strike might help if I look like one of them.</col>
+step	2	3	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<col=000080>I need a builder's outfit: a <col=800000>hard hat</col>, <col=800000>shirt</col>, <col=800000>trousers</col> and <col=800000>boots</col>.</col>
+step	3	4	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<col=000080>In my builder's outfit, I should prove myself to <col=800000>Bonafido</col>.</col>
+step	4	6	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<col=000080>I'm inside the tower. The <col=800000>machines</col> are broken and need fixing with materials from the <col=800000>crates</col>.</col>
+step	5	8	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<col=000080>I fixed the machines. I should tell <col=800000>Effigy</col>.</col>
+step	6	11	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<str>I fixed the machines. I should tell Effigy.</str>
+line	
+line	<col=000080>I should go to the top of the tower and see what the alchemists made.</col>
+step	7	12	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<str>I fixed the machines. I should tell Effigy.</str>
+line	
+line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	
+line	<col=000080>The alchemists created a <col=800000>Homunculus</col>! I should talk to it.</col>
+step	8	14	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<str>I fixed the machines. I should tell Effigy.</str>
+line	
+line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	
+line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	
+line	<col=000080>The <col=800000>Homunculus</col> is confused. I need to help it decide between magic and logic.</col>
+step	9	16	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<str>I fixed the machines. I should tell Effigy.</str>
+line	
+line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	
+line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	
+line	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+line	
+line	<col=000080>I helped the Homunculus. <col=800000>Effigy</col> wants it scared out of the tower.</col>
+step	10	17	Authored
+line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	
+line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	
+line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	
+line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	
+line	<str>I fixed the machines. I should tell Effigy.</str>
+line	
+line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	
+line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	
+line	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+line	
+line	<str>I helped the Homunculus. Effigy wants it scared out of the tower.</str>
+line	
+line	<col=000080>The Homunculus fled to the <col=800000>dungeon</col> beneath the tower. I should find it there.</col>
+done	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+done	
+done	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+done	
+done	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+done	
+done	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+done	
+done	<str>I fixed the machines. I should tell Effigy.</str>
+done	
+done	<str>I should go to the top of the tower and see what the alchemists made.</str>
+done	
+done	<str>The alchemists created a Homunculus! I should talk to it.</str>
+done	
+done	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+done	
+done	<str>I helped the Homunculus. Effigy wants it scared out of the tower.</str>
+done	
+done	<str>The Homunculus fled to the dungeon beneath the tower. I should find it there.</str>
+done	
+done	<str>I helped the Homunculus find its way and reunited the builders and alchemists.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

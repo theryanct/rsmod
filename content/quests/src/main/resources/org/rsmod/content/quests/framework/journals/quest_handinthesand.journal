@@ -1,0 +1,222 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_handinthesand (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Bert</col> in <col=800000>Yanille</col>, near the sand pit.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 17 Thieving
+req	Level 49 Crafting
+step	1	10	Authored
+line	<col=000080><col=800000>Bert</col> found a hand in the sand pit. I should show it to the <col=800000>Guard Captain</col> in the <col=800000>Dragon Inn</col>.</col>
+step	2	20	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<col=000080>The Guard Captain blamed the wizards. I should take the hand to <col=800000>Zavistic Rarve</col> at the <col=800000>Wizards' Guild</col>.</col>
+step	3	30	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<col=000080>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</col>
+step	4	40	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<col=000080>I have Bert's rota. I should find the original at <col=800000>Sandy</col>'s office in <col=800000>Brimhaven</col>.</col>
+step	5	60	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<col=000080>Bert gave me a magic scroll. I should show it to Zavistic.</col>
+step	6	70	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<col=000080>Zavistic gave me a magical scrying orb. <col=800000>Betty</col> in <col=800000>Port Sarim</col> can make a <col=800000>truth serum</col>.</col>
+step	7	110	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<col=000080>I made the truth serum, but it needs some of Sandy's <col=800000>sand</col>.</col>
+step	8	120	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<col=000080>The truth serum is ready. I need to get it into Sandy's coffee.</col>
+step	9	130	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+line	
+line	<col=000080>Sandy drank the serum. I should activate the orb and question him.</col>
+step	10	140	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+line	
+line	<str>Sandy drank the serum. I should activate the orb and question him.</str>
+line	
+line	<col=000080>I recorded Sandy's confession. I should take the orb to Zavistic.</col>
+step	11	150	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+line	
+line	<str>Sandy drank the serum. I should activate the orb and question him.</str>
+line	
+line	<str>I recorded Sandy's confession. I should take the orb to Zavistic.</str>
+line	
+line	<col=000080>Zavistic needs <col=800000>5 earth runes</col> and a <col=800000>bucket of sand</col> to reveal the truth.</col>
+step	12	155	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+line	
+line	<str>Sandy drank the serum. I should activate the orb and question him.</str>
+line	
+line	<str>I recorded Sandy's confession. I should take the orb to Zavistic.</str>
+line	
+line	<str>Zavistic needs 5 earth runes and a bucket of sand to reveal the truth.</str>
+line	
+line	<col=000080>The wizard's body is in the sandpit on <col=800000>Entrana</col>. I should speak to <col=800000>Mazion</col>.</col>
+step	13	158	Authored
+line	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+line	
+line	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+line	
+line	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+line	
+line	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+line	
+line	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+line	
+line	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+line	
+line	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+line	
+line	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+line	
+line	<str>Sandy drank the serum. I should activate the orb and question him.</str>
+line	
+line	<str>I recorded Sandy's confession. I should take the orb to Zavistic.</str>
+line	
+line	<str>Zavistic needs 5 earth runes and a bucket of sand to reveal the truth.</str>
+line	
+line	<str>The wizard's body is in the sandpit on Entrana. I should speak to Mazion.</str>
+line	
+line	<col=000080>I have the wizard's head. I should show it to Zavistic.</col>
+done	<str>Bert found a hand in the sand pit. I should show it to the Guard Captain in the Dragon Inn.</str>
+done	
+done	<str>The Guard Captain blamed the wizards. I should take the hand to Zavistic Rarve at the Wizards' Guild.</str>
+done	
+done	<str>Zavistic thinks Bert's long hours are suspicious. I should ask Bert about his job.</str>
+done	
+done	<str>I have Bert's rota. I should find the original at Sandy's office in Brimhaven.</str>
+done	
+done	<str>Bert gave me a magic scroll. I should show it to Zavistic.</str>
+done	
+done	<str>Zavistic gave me a magical scrying orb. Betty in Port Sarim can make a truth serum.</str>
+done	
+done	<str>I made the truth serum, but it needs some of Sandy's sand.</str>
+done	
+done	<str>The truth serum is ready. I need to get it into Sandy's coffee.</str>
+done	
+done	<str>Sandy drank the serum. I should activate the orb and question him.</str>
+done	
+done	<str>I recorded Sandy's confession. I should take the orb to Zavistic.</str>
+done	
+done	<str>Zavistic needs 5 earth runes and a bucket of sand to reveal the truth.</str>
+done	
+done	<str>The wizard's body is in the sandpit on Entrana. I should speak to Mazion.</str>
+done	
+done	<str>I have the wizard's head. I should show it to Zavistic.</str>
+done	
+done	<str>I uncovered the truth behind the hand in the sand and brought Sandy to justice.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

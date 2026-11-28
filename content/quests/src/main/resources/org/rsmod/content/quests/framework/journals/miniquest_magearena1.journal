@@ -1,0 +1,31 @@
+# Authored (not Wiki): ui's OSRS-style journal for miniquest_magearena1 (no Wiki journal transcript).
+before	<col=000080>I can start this miniquest by talking to <col=800000>Kolodion</col> in the <col=800000>Mage Arena</col> bank.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 60 Magic
+step	1	1	Authored
+line	<col=000080><col=800000>Kolodion</col> challenged me to a duel in his arena. I must defeat all five of his forms.</col>
+step	2	6	Authored
+line	<str>Kolodion challenged me to a duel in his arena. I must defeat all five of his forms.</str>
+line	
+line	<col=000080>I defeated Kolodion. I should step into the <col=800000>sparkling pool</col> in the bank and choose a god.</col>
+step	3	7	Authored
+line	<str>Kolodion challenged me to a duel in his arena. I must defeat all five of his forms.</str>
+line	
+line	<str>I defeated Kolodion. I should step into the sparkling pool in the bank and choose a god.</str>
+line	
+line	<col=000080>I have my god staff. I should speak to Kolodion again.</col>
+done	<str>Kolodion challenged me to a duel in his arena. I must defeat all five of his forms.</str>
+done	
+done	<str>I defeated Kolodion. I should step into the sparkling pool in the bank and choose a god.</str>
+done	
+done	<str>I have my god staff. I should speak to Kolodion again.</str>
+done	
+done	<str>I defeated Kolodion and earned the right to use a god's power in the Mage Arena.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

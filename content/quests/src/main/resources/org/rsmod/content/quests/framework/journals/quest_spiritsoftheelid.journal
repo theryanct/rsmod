@@ -1,0 +1,56 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_spiritsoftheelid (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Awusah the Mayor</col> in <col=800000>Nardah</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 33 Magic
+req	Level 37 Ranged
+req	Level 37 Mining
+req	Level 37 Thieving
+step	1	10	Authored
+line	<col=000080>Nardah's fountain has dried up. <col=800000>Ghaslor the Elder</col> might know why, and the <col=800000>Robes of Elidinis</col> in the temple might help.</col>
+step	2	40	Authored
+line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	
+line	<col=000080>The spirits of the Elid say Nardah lost its statuette of <col=800000>Elidinis</col>. The mayor may know where it went.</col>
+step	3	45	Authored
+line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	
+line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	
+line	<col=000080>The mayor threw the statuette into the <col=800000>crevice</col> west of the general store.</col>
+step	4	50	Authored
+line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	
+line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	
+line	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+line	
+line	<col=000080>The <col=800000>Genie</col> in the crevice will trade the statuette for a soul... or the mayor's <col=800000>sole</col>.</col>
+step	5	55	Authored
+line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	
+line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	
+line	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+line	
+line	<str>The Genie in the crevice will trade the statuette for a soul... or the mayor's sole.</str>
+line	
+line	<col=000080>I have the statuette. I should put it back on the <col=800000>plinth</col> in the shrine.</col>
+done	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+done	
+done	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+done	
+done	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+done	
+done	<str>The Genie in the crevice will trade the statuette for a soul... or the mayor's sole.</str>
+done	
+done	<str>I have the statuette. I should put it back on the plinth in the shrine.</str>
+done	
+done	<str>I returned the statuette of Elidinis and Nardah's fountain flows again.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

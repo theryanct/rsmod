@@ -1,0 +1,101 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_ruffsituation (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Talia</col> at the dog shelter south-west of the <col=800000>Edgeville Monastery</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Crafting
+step	1	5	Authored
+line	<col=000080><col=800000>Talia</col> needs stray dogs for her shelter. <col=800000>Gertrude</col> in <col=800000>Varrock</col> might know of some.</col>
+step	2	15	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<col=000080>Gertrude mentioned a dog near the west <col=800000>Varrock bank</col>, barking at a guard.</col>
+step	3	25	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<col=000080>The stray dog led me to her den. Her <col=800000>puppies</col> are missing.</col>
+step	4	45	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<str>The stray dog led me to her den. Her puppies are missing.</str>
+line	
+line	<col=000080>I rescued one puppy from <col=800000>Picklenose</col>. The goblins have another.</col>
+step	5	50	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<str>The stray dog led me to her den. Her puppies are missing.</str>
+line	
+line	<str>I rescued one puppy from Picklenose. The goblins have another.</str>
+line	
+line	<col=000080>The goblins want a guard dog. A <col=800000>stuffed dog</col> might convince them.</col>
+step	6	70	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<str>The stray dog led me to her den. Her puppies are missing.</str>
+line	
+line	<str>I rescued one puppy from Picklenose. The goblins have another.</str>
+line	
+line	<str>The goblins want a guard dog. A stuffed dog might convince them.</str>
+line	
+line	<col=000080>I have two puppies. The stray dog is sniffing for the third.</col>
+step	7	85	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<str>The stray dog led me to her den. Her puppies are missing.</str>
+line	
+line	<str>I rescued one puppy from Picklenose. The goblins have another.</str>
+line	
+line	<str>The goblins want a guard dog. A stuffed dog might convince them.</str>
+line	
+line	<str>I have two puppies. The stray dog is sniffing for the third.</str>
+line	
+line	<col=000080>The third puppy is at the <col=800000>outlaw camp</col>.</col>
+step	8	100	Authored
+line	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+line	
+line	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+line	
+line	<str>The stray dog led me to her den. Her puppies are missing.</str>
+line	
+line	<str>I rescued one puppy from Picklenose. The goblins have another.</str>
+line	
+line	<str>The goblins want a guard dog. A stuffed dog might convince them.</str>
+line	
+line	<str>I have two puppies. The stray dog is sniffing for the third.</str>
+line	
+line	<str>The third puppy is at the outlaw camp.</str>
+line	
+line	<col=000080>I defeated the outlaws. I should take all three puppies to Talia.</col>
+done	<str>Talia needs stray dogs for her shelter. Gertrude in Varrock might know of some.</str>
+done	
+done	<str>Gertrude mentioned a dog near the west Varrock bank, barking at a guard.</str>
+done	
+done	<str>The stray dog led me to her den. Her puppies are missing.</str>
+done	
+done	<str>I rescued one puppy from Picklenose. The goblins have another.</str>
+done	
+done	<str>The goblins want a guard dog. A stuffed dog might convince them.</str>
+done	
+done	<str>I have two puppies. The stray dog is sniffing for the third.</str>
+done	
+done	<str>The third puppy is at the outlaw camp.</str>
+done	
+done	<str>I defeated the outlaws. I should take all three puppies to Talia.</str>
+done	
+done	<str>I reunited the stray dog with her puppies and brought them to Talia's shelter.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

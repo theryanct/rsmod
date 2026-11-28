@@ -179,6 +179,9 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     missing, written = [], 0
     for qid, row, name in (x[:3] for x in ids if len(x) >= 3):
+        existing = os.path.join(OUT, row + ".journal")
+        if os.path.exists(existing) and not open(existing, encoding="utf-8").readline().startswith("# Generated"):
+            continue  # hand-written (Authored, not Wiki): keep it, it isn't missing
         page = f"Transcript:{name}/Journal"
         text = fetch(page) if page in known else None
         if not text:

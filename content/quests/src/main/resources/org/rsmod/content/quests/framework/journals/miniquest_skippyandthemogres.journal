@@ -1,0 +1,23 @@
+# Authored (not Wiki): ui's OSRS-style journal for miniquest_skippyandthemogres (no Wiki journal transcript).
+before	<col=000080>I can start this miniquest by talking to <col=800000>Skippy</col> south-east of <col=800000>Rimmington</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Cooking
+step	1	1	Authored
+line	<col=000080>I sobered <col=800000>Skippy</col> up with a bucket of water. He wants a hot <col=800000>nettle tea</col>.</col>
+step	2	2	Authored
+line	<str>I sobered Skippy up with a bucket of water. He wants a hot nettle tea.</str>
+line	
+line	<col=000080>Skippy has a terrible hangover. He needs a <col=800000>hangover cure</col>.</col>
+done	<str>I sobered Skippy up with a bucket of water. He wants a hot nettle tea.</str>
+done	
+done	<str>Skippy has a terrible hangover. He needs a hangover cure.</str>
+done	
+done	<str>I cured Skippy's hangover and learned about the Mogres at Mudskipper Point.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

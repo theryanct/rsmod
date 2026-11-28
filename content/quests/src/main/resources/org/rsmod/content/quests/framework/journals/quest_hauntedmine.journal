@@ -1,0 +1,54 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_hauntedmine (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to the <col=800000>Zealot</col> outside the <col=800000>abandoned mine</col> south-west of <col=800000>Mort'ton</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Priest in Peril
+req	Level 35 Crafting
+step	1	1	Authored
+line	<col=000080>The <col=800000>Zealot</col> told me of a treasure in the <col=800000>abandoned mine</col>. I need another way in.</col>
+step	2	2	Authored
+line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	
+line	<col=000080>I'm inside the mine. The lift needs power from the <col=800000>water valve</col>.</col>
+step	3	4	Authored
+line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	
+line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	
+line	<col=000080>I took the lift down. Something terrible lurks below.</col>
+step	4	6	Authored
+line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	
+line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	
+line	<str>I took the lift down. Something terrible lurks below.</str>
+line	
+line	<col=000080><col=800000>Treus Dayth</col> attacked me when I took the key!</col>
+step	5	9	Authored
+line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	
+line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	
+line	<str>I took the lift down. Something terrible lurks below.</str>
+line	
+line	<str>Treus Dayth attacked me when I took the key!</str>
+line	
+line	<col=000080>I defeated Treus Dayth. The key opens the doors to the crystal mine.</col>
+done	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+done	
+done	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+done	
+done	<str>I took the lift down. Something terrible lurks below.</str>
+done	
+done	<str>Treus Dayth attacked me when I took the key!</str>
+done	
+done	<str>I defeated Treus Dayth. The key opens the doors to the crystal mine.</str>
+done	
+done	<str>I defeated the ghost of Treus Dayth and found the crystal mine.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

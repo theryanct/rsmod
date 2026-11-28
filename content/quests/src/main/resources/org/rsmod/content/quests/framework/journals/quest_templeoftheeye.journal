@@ -1,0 +1,102 @@
+# Authored (not Wiki): ui's OSRS-style journal for quest_templeoftheeye (no Wiki journal transcript).
+before	<col=000080>I can start this quest by talking to <col=800000>Wizard Persten</col> at the <col=800000>Wizards' Tower</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Enter the Abyss
+req	Level 10 Runecraft
+step	1	10	Authored
+line	<col=000080><col=800000>Wizard Persten</col> asked me to take an <col=800000>amulet</col> to <col=800000>Archmage Sedridor</col> and the <col=800000>Mage of Zamorak</col>.</col>
+step	2	20	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<col=000080>I showed the amulet to the <col=800000>Mage of Zamorak</col> in <col=800000>Varrock</col>. He wants a <col=800000>strong tea</col> before he talks.</col>
+step	3	30	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<col=000080>The <col=800000>Mage of Zamorak</col> sent me into the <col=800000>Abyss</col> to find what the amulet reacts to.</col>
+step	4	50	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+line	
+line	<col=000080>I felt the <col=800000>energies</col> in the Abyss. I should report back to <col=800000>Wizard Persten</col>.</col>
+step	5	60	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+line	
+line	<str>I felt the energies in the Abyss. I should report back to Wizard Persten.</str>
+line	
+line	<col=000080>I need to learn the <col=800000>incantation</col> and bring it to the <col=800000>Wizards' Tower</col>.</col>
+step	6	70	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+line	
+line	<str>I felt the energies in the Abyss. I should report back to Wizard Persten.</str>
+line	
+line	<str>I need to learn the incantation and bring it to the Wizards' Tower.</str>
+line	
+line	<col=000080><col=800000>Archmage Sedridor</col> is preparing to open the <col=800000>portal</col> to the <col=800000>Temple of the Eye</col>.</col>
+step	7	85	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+line	
+line	<str>I felt the energies in the Abyss. I should report back to Wizard Persten.</str>
+line	
+line	<str>I need to learn the incantation and bring it to the Wizards' Tower.</str>
+line	
+line	<str>Archmage Sedridor is preparing to open the portal to the Temple of the Eye.</str>
+line	
+line	<col=000080>I solved the riddle. It's time to open the <col=800000>portal</col> with the archmage.</col>
+step	8	90	Authored
+line	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+line	
+line	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+line	
+line	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+line	
+line	<str>I felt the energies in the Abyss. I should report back to Wizard Persten.</str>
+line	
+line	<str>I need to learn the incantation and bring it to the Wizards' Tower.</str>
+line	
+line	<str>Archmage Sedridor is preparing to open the portal to the Temple of the Eye.</str>
+line	
+line	<str>I solved the riddle. It's time to open the portal with the archmage.</str>
+line	
+line	<col=000080>I went through the portal to the <col=800000>Temple of the Eye</col>.</col>
+done	<str>Wizard Persten asked me to take an amulet to Archmage Sedridor and the Mage of Zamorak.</str>
+done	
+done	<str>I showed the amulet to the Mage of Zamorak in Varrock. He wants a strong tea before he talks.</str>
+done	
+done	<str>The Mage of Zamorak sent me into the Abyss to find what the amulet reacts to.</str>
+done	
+done	<str>I felt the energies in the Abyss. I should report back to Wizard Persten.</str>
+done	
+done	<str>I need to learn the incantation and bring it to the Wizards' Tower.</str>
+done	
+done	<str>Archmage Sedridor is preparing to open the portal to the Temple of the Eye.</str>
+done	
+done	<str>I solved the riddle. It's time to open the portal with the archmage.</str>
+done	
+done	<str>I went through the portal to the Temple of the Eye.</str>
+done	
+done	<str>I helped the wizards rediscover the Temple of the Eye.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>
