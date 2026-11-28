@@ -86,7 +86,7 @@ class XpLampScript @Inject constructor(private val objTypes: ObjTypeList) : Plug
         ifClose()
         pending.remove(player.uid.packed)
         if (invTotal(inv, lamp.obj) == 0) return
-        val level = player.statMap.getBaseLevel(stat).toInt()
+        val level = statBase(stat)
         val xp = lamp.xp(level)
         invDel(inv, lamp.obj)
         statAdvance(stat, xp, rate = 1.0, globalRate = 1.0)

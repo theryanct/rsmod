@@ -393,10 +393,10 @@ constructor(
                 conditions =
                     mapOf(
                         "If the player does not have 18 Crafting:" to {
-                            player.statMap.getBaseLevel(stats.crafting) < DOLL_CRAFTING
+                            statBase(stats.crafting) < DOLL_CRAFTING
                         },
                         "If the player has 18 Crafting:" to {
-                            player.statMap.getBaseLevel(stats.crafting) >= DOLL_CRAFTING
+                            statBase(stats.crafting) >= DOLL_CRAFTING
                         },
                     ),
                 options =
