@@ -93,3 +93,5 @@ combine	pot_flour	bowl_water	pastry_dough	1	0.0	pot_empty	bowl_empty
 combine	nettles_picked	bowl_water	bowl_nettlewater	20	0.0	-	-
 multi	uncooked_cake	40	0.0	cake_tin	egg	-	pot_flour	pot_empty	bucket_milk	bucket_empty
 ferment	jug_unfermented_wine	jug_wine	jug_bad_wine	35	200.0	48	352
+heat	spit_skewered_chompy	cooked_chompy	ruined_chompy	30	100.0	1	200	255	-	-	-	-	-	-	spit_iron
+combine	spit_iron	raw_chompy	spit_skewered_chompy	1	0.0	-	-

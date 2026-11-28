@@ -1,0 +1,151 @@
+# Generated from the OSRS Wiki page "Transcript:Sheep Herder" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Talking to Councillor Halgrive
+1	line	Player	Hello. How are you?
+1	line	Councillor Halgrive	I've been better.
+1	select	Select an Option
+1	option	What's wrong?
+2	line	Player	What's wrong?
+2	line	Councillor Halgrive	You may or may not be aware, but a plague has spread across West Ardougne. Now, so far, our efforts to contain it have been largely successful, for the most part.
+2	line	Councillor Halgrive	However, some sheep recently escaped from a farm near the city. When they were found, we noticed that they were strangely discoloured, so we asked the mourners to examine them.
+2	line	Councillor Halgrive	They believe that the sheep have become infected with the plague.
+2	line	Player	Are you sure it's the plague?
+2	line	Councillor Halgrive	Well the mourners seemed convinced and they're the experts. Even if it's not though, the sheep are clearly diseased in some way.
+2	line	Councillor Halgrive	As the councillor responsible for public health and safety here in East Ardougne, I am in charge of dealing with this problem.
+2	line	Councillor Halgrive	We need someone to herd these sheep into a safe enclosure, kill them quickly and cleanly and then dispose of the remains hygienically in a special incinerator.
+2	line	Councillor Halgrive	Unfortunately, nobody wants to risk catching the plague, and I am unable to find someone willing to undertake this mission for me.
+2	select	Start the Sheep Herder quest?
+2	option	Yes.
+3	line	Player	I can do that for you.
+3	line	Councillor Halgrive	You will? That is excellent news! Head to the enclosure we have set up on Farmer Brumty's land to the north of the city; the four infected sheep should still be somewhere in that vicinity.
+3	line	Councillor Halgrive	Before you will be allowed to enter the enclosure, however, you must ensure you have some kind of protective clothing to prevent contagion.
+3	line	Player	Where can I find some protective clothing then?
+3	line	Councillor Halgrive	Doctor Orbon should have something suitable. You should be able to find him in the chapel just north of here.
+3	line	Councillor Halgrive	Please also take this poisoned sheep feed; we believe poisoning the sheep will minimise the risk of airborne contamination, and is of course also more humane to the sheep.
+3	box	The councillor gives you some poisoned sheep feed.
+3	line	Player	How will I know which sheep are infected?
+3	line	Councillor Halgrive	The poor creatures have developed strangely discoloured wool and flesh. You should have no trouble spotting them. There should be four in total.
+3	action	end
+2	option	No.
+3	line	Player	That's not a job for me.
+3	line	Councillor Halgrive	I do not blame you adventurer. It is not particularly pleasant work. My problem remains however. If you know of anyone suitable please send them this way; time is of the essence.
+3	action	end
+1	option	That's life for you.
+2	line	Player	That's life for you.
+2	line	Councillor Halgrive	That's what concerns me... There might not be much life around here soon.
+2	action	end
+0	section	Talking to Councillor Halgrive again
+1	line	Councillor Halgrive	Please... please find and dispose of those four diseased sheep as quickly as possible. Every second the risk of contamination grows! If you need some protective clothing, speak to Doctor Orbon in the chapel just north
+1	line	Councillor Halgrive	of here.
+1	cond	If the player lost the sheep feed:
+2	line	Player	Some more sheep poison would be appreciated...
+2	line	Councillor Halgrive	Certainly adventurer. Please hurry!
+2	box	The councillor gives you some poisoned sheep feed.
+2	action	end
+1	cond	If the player still has the sheep feed:
+2	line	Player	I'll do my best sir.
+2	action	end
+0	section	Talking to Farmer Brunty
+1	line	Player	Hello there. I've spoken to Councillor Halgrive. He has asked me to round up your sheep and slaughter them.
+1	line	Farmer Brumty	Well, I always knew someone would have to. Make sure you're careful about it; there should be a cattleprod in the barn you can use to herd up the sheep.
+1	action	end
+0	section	Talking to Doctor Orbon
+1	line	Player	Hello doctor. I need to acquire some protective clothing so that I can dispose of some diseased sheep.
+1	line	Doctor Orbon	Protective clothing? I'm afraid I only have the one suit which I made myself to prevent infection from any contaminated patients I treat.
+1	line	Doctor Orbon	I suppose I could sell you this one and make myself another, but it would cost you at least 100 gold so that I could afford a replacement.
+1	select	Select an Option
+1	option	Okay, I'll take it.
+2	line	Player	Okay, I'll take it.
+2	cond	If the player doesn't have 100 coins:
+3	line	Player	Oops, sorry, I don't have enough money.
+3	line	Doctor Orbon	That's okay. Just don't go near those sheep. When you can find the money come back here.
+3	action	end
+2	cond	If the player has 100 coins and 2 free inventory spaces:
+3	box	You give Doctor Orbon 100 coins. He hands over a protective suit.
+3	line	Doctor Orbon	These should protect you from infection.
+3	action	end
+2	cond	If the player has 100 coins but not 2 free inventory spaces:
+3	line	Doctor Orbon	You don't seem to have enough room to hold the protective suit. Come back when you do.
+3	action	end
+2	cond	If the player does not have the 100 coins:
+3	line	Player	Oops, sorry, I don't have enough money.
+3	line	Doctor Orbon	That's okay. Just don't go near those sheep. When you can find the money come back here.
+1	option	Sorry doc, that's too much.
+2	line	Player	Sorry doc, that's too much.
+2	line	Doctor Orbon	I'm afraid it will cost me that much to replace. I cannot possibly sell it for less.
+2	action	end
+0	section	Talking to Doctor Orbon again
+1	line	Player	Hello again.
+1	line	Doctor Orbon	Did you dispose of those infected sheep yet?
+1	line	Player	Not yet.
+1	line	Doctor Orbon	You should hurry, they could infect the entire town in a matter of a few days!
+1	cond	If the player has the gear in their inventory:
+2	action	end
+1	cond	If the player does not have the gear in their inventory:
+2	line	Doctor Orbon	I notice you do not appear to have your protective clothing with you. Would you care to buy some more? Same price as before.
+2	option	Okay, I'll take it.
+3	line	Player	Okay, I'll take it.
+3	cond	If the player does not have 100 coins:
+4	action	above
+3	cond	If the player has 100 coins:
+4	action	above
+2	option	No, I don't need any more.
+3	line	Player	No, I don't need any more.
+3	line	Doctor Orbon	I suggest you go and retrieve your protective suit then. Trust me, you do not want to be infected.
+3	action	end
+0	section	Talking to Councillor Halgrive after getting the gear
+1	line	Councillor Halgrive	Have you managed to find and dispose of those four sheep yet?
+1	line	Player	Uh... yeah... not quite just yet...
+1	line	Councillor Halgrive	Not quite's not good enough. It is vital you catch, kill, and incinerate all four sheep as quickly as possible. Each second they are free, the risk of further contagion increases.
+1	line	Player	Okay, I'll get to it.
+1	action	end
+0	section	Herding the sheep
+0	section	Talking to Farmer Brumty
+1	line	Player	Hello there.
+1	line	Farmer Brumty	Hello adventurer. Be careful herding those sheep; I don't think they've wandered far, but if you touch them you risk getting infected.
+1	line	Farmer Brumty	I suggest you use the cattleprod from the barn over there to herd them, that way you won't have to touch them directly and risk infection.
+1	action	end
+0	section	Opening the gate without protect clothing
+1	line	Player	It doesn't look very safe in there. I'm not going in without decent protective clothing.
+1	action	end
+0	section	Use feed on sheep outside enclosure
+1	line	Player	I don't think I should kill the sheep outside the enclosure. The councillor was worried that it might spread the disease.
+1	action	end
+0	section	Prod sheep when not wearing suit
+1	line	Player	The sheep looks extremely unwell. I don't want to touch it without a full protective suit.
+1	action	end
+0	section	Prodding the sheep
+1	line	[Colour] Sheep	BAAAAA!
+1	action	end
+0	section	Prodding sheep into the enclosure
+1	box	The sheep obligingly jumps over the gate and into the enclosure!
+1	action	end
+0	section	Prodding the same colour sheep again
+1	box	There's already a sheep like this in the pen. You don't need to fetch another one now.
+1	action	end
+0	section	Prodding sheep already inside the enclosure
+1	box	The sheep is already in the enclosure. You don't need to prod it.
+1	action	end
+0	section	Prodding sheep while carrying that sheep's bones
+1	box	You've already got bones from a sheep like this. You don't need to fetch another one now.
+1	action	end
+0	section	Using sheep feed on sheep inside enclosure without the protection clothing
+1	line	Player	The sheep looks extremely unwell. I don't want to touch it without a full protective suit.
+1	action	end
+0	section	Using sheep feed on sheep inside enclosure
+1	box	You feed some poisoned sheep food to the sheep. It happily eats it.
+1	box	You watch as the sheep collapses dead onto the floor.
+1	action	end
+0	section	Using poison on the sheep
+1	box	The sheep isn't going to drink the poison from the bottle. Perhaps you should try feeding it something else more appropriate.
+0	section	Using sheep bones on the incinerator
+1	action	end
+0	section	using sheep bones on the incinerator while that sheep is in the pen
+1	box	You need to kill this sheep yourself.
+1	action	end
+0	section	Finishing up
+0	section	Talking to Councillor Halgrive after burning all bones
+1	line	Councillor Halgrive	Have you managed to find and dispose of those four sheep yet?
+1	line	Player	Yes, I have.
+1	line	Councillor Halgrive	Excellent work adventurer! Please let me reimburse you the 100 gold it cost you to purchase your protective clothing.
+1	line	Councillor Halgrive	And in recognition of your service to the public health of Ardougne, please accept this further 3000 coins as a reward.

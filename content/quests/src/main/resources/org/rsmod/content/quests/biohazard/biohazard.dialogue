@@ -1,0 +1,745 @@
+# Generated from the OSRS Wiki page "Transcript:Biohazard" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Elena
+1	line	Player	Good day to you, Elena.
+1	line	Elena	You too, thanks for freeing me.
+1	line	Elena	It's just a shame the mourners confiscated my equipment.
+1	line	Player	What did they take?
+1	line	Elena	My distillator. I can't test any plague samples without it. They're holding it in the Mourner Headquarters in West Ardougne.
+1	line	Elena	I must somehow retrieve that distillator if I am to find a cure for this awful affliction. Do you think you could help me?
+1	select	Start the Biohazard quest?
+1	option	Yes.
+2	line	Player	Of course I can help. Where do we start?
+2	line	Elena	I was hoping you would say that. Unfortunately they discovered the tunnel and filled it in. We need another way over the wall.
+2	line	Player	Any ideas?
+2	line	Elena	My father's friend Jerico is in communication with West Ardougne. He might be able to help us. He lives in a house south east of here, north of the chapel.
+2	action	end
+1	option	No.
+2	line	Player	I'm busy at the moment, I'm afraid.
+2	line	Elena	Fair enough.
+2	action	end
+0	section	Trying to dig in the mud patch
+1	box	The ground's been filled in and packed hard.
+1	action	end
+0	section	Talking to Jerico
+1	line	Player	Hello Jerico.
+1	line	Jerico	Hello, I've been expecting you. Elena tells me you need to cross the wall.
+1	line	Player	That's right.
+1	line	Jerico	My messenger pigeons help me communicate with friends over the wall.
+1	line	Jerico	I have arranged for two of them to aid you with a rope ladder. Omart is waiting for you at the southern end of the wall.
+1	line	Jerico	But be careful, if the mourners catch you, the punishment will be severe.
+1	line	Player	Thanks Jerico.
+1	action	end
+0	section	Talking to Jerico again
+1	line	Jerico	Hello again. Have you spoken to Omart yet?
+1	line	Player	Not yet.
+1	line	Jerico	You'll find him at the southern end of the wall. Keep an eye out for them mourners.
+1	action	end
+0	section	Searching the cupboard
+1	box	The cupboard is full of bird feed.
+1	cond	If the player has no inventory space:
+2	box	You find some bird feed in the cupboard but you don't have enough room to take it.
+2	action	end
+1	cond	If the player already has bird feed:
+2	line	Player	I don't need any more bird feed.
+2	action	end
+1	line	Player	Mmm, bird feed! Now what could I do with that?
+1	action	end
+0	section	Talking to Omart
+1	line	Player	Omart, Jerico said you might be able to help me.
+1	line	Omart	He informed me of your problem traveller. I would be glad to help, I have a rope ladder and my associate, Kilron, is waiting on the other side.
+1	line	Player	Good stuff.
+1	line	Omart	Unfortunately we can't risk it with the watchtower so close. So first we need to distract the guards in the tower.
+1	line	Player	How?
+1	line	Omart	I reckon some of Jerico's pigeons might help us out here. Chuck some bird feed at the tower and then release some pigeons nearby. They should provide a nice distraction.
+1	line	Player	Where do I get the bird feed and the pigeons?
+1	line	Omart	I'm sure Jerico can help you out with that if you ask him nicely.
+1	action	end
+0	section	Talking to Omart again
+1	line	Player	Hello there.
+1	line	Omart	Hello. Have you sorted that distraction yet?
+1	line	Player	Not yet.
+1	line	Omart	Try using some of Jerico's pigeons. Chuck some bird feed at the tower and then release some pigeons nearby. Jerico should be able to help you out.
+1	action	end
+0	section	Talking to Jerico after talking to Omart
+1	line	Player	Hello Jerico.
+1	line	Jerico	Hello again. Have you spoken to Omart yet?
+1	line	Player	I have. He told me to ask you about some pigeons.
+1	line	Jerico	Pigeons? What do you need my pigeons for?
+1	line	Player	Omart thought they'd make a good distraction for the guards.
+1	line	Jerico	Ahh, very clever. Well I'm sure I can let you borrow some, as long as you look after them. Just grab one of the cages from behind my house. You'll want some bird feed as well. I should have some in my cupboard.
+1	action	end
+0	section	Throwing bird feed
+1	cond	If the player is not near the watchtower fence:
+2	line	Player	I probably shouldn't waste it by throwing it here.
+2	action	end
+1	cond	If the player is near the fence:
+2	box	You throw a handful of seeds onto the watchtower. The mourners do not seem to notice.
+2	action	end
+0	section	Opening pigeon cage
+1	cond	If the player is in the wrong place or has not thrown the bird feed:
+2	action	end
+1	cond	If the player has thrown the bird feed and is near the watchtower fence:
+2	box	The pigeons fly towards the watchtower. The mourners frantically try to scare them away.
+2	action	end
+0	section	Talking to Jerico after freeing the birds
+1	line	Player	Hello there.
+1	line	Jerico	The guards are distracted by the birds, you must go now, quickly traveller.
+1	action	end
+0	section	Talking to Omart after freeing the birds
+1	line	Omart	Well done, the guards are having real trouble with those birds. You must go now traveller, it's your only chance.
+1	select	Select an Option
+1	option	Okay, lets do it.
+2	line	Player	Okay, lets do it.
+2	cond	If the player is not wearing a gas mask:
+3	line	Omart	I'd recommend you wear a gas mask before entering West Ardougne. You don't want to risk catching the plague.
+3	line	Player	That would be wise. Thanks Omart.
+3	action	end
+2	box	Omart throws a rope ladder over the wall.
+2	box	You climb up the rope ladder...
+2	box	...and drop down on the other side.
+2	line	Kilron	Welcome to West Ardougne friend. I'm Kilron. Let me know if you want to go back over the wall.
+2	line	Player	Thanks Kilron. Do you know where to find the Mourner Headquarters?
+2	line	Kilron	It's the most north eastern building in the city. Be careful around there.
+2	action	end
+1	option	I'll be back soon.
+2	line	Player	I'll be back soon.
+2	line	Omart	Don't take too long, those mourners will soon be rid of those birds.
+2	action	end
+0	section	Talking to Omart after entering West Ardougne
+1	line	Player	Hello Omart.
+1	line	Omart	Hello traveller. Do you wish to cross the wall?
+1	select	Select an Option
+1	option	Okay, let's do it.
+2	line	Player	Okay, lets do it.
+2	box	Omart throws a rope ladder over the wall.
+2	box	You climb up the rope ladder...
+2	box	...and drop down on the other side.
+2	action	end
+1	option	I'll be back soon.
+2	action	above
+0	section	Infiltrating the Mourner HQ
+0	section	Attempting to remove gas mask while inside West Ardougne
+0	section	Talking to Kilron
+1	line	Player	Hello Kilron.
+1	line	Kilron	Hello traveller. Do you need to go back over?
+1	select	Select an Option
+1	option	Yes I do.
+2	line	Player	Yes I do.
+2	line	Kilron	Okay, quickly now!
+2	box	Kilron throws a rope ladder over the wall.
+2	box	You climb up the rope ladder...
+2	box	...and drop down on the other side.
+2	action	end
+1	option	Do you know where to find the Mourner Headquarters?
+2	line	Player	Do you know where to find the Mourner Headquarters?
+2	line	Kilron	It's the most north eastern building in the city. Be careful around there.
+2	action	end
+1	option	Not yet Kilron.
+2	line	Player	Not yet Kilron.
+2	line	Kilron	Okay, just give me the word.
+2	action	end
+0	section	Talking to Jerico after entering West Ardougne
+1	line	Player	Hello again Jerico.
+1	line	Jerico	So you've returned traveller. Did you get what you wanted?
+1	line	Player	Not yet.
+1	line	Jerico	Omart will be waiting by the wall, in case you need to cross again.
+1	action	end
+0	section	Talking to Mourner outside Mourner Headquarters
+1	line	Mourner	Back away citizen. Only mourners are allowed inside the headquarters.
+1	line	Player	Hmm. I wonder if there's another way in.
+1	action	end
+0	section	Inspecting cauldron
+1	line	Player	Looks like a nice stew is being prepared. This must be to feed all of the mourners.
+1	action	end
+0	section	Talking to Nurse Sarah
+1	line	Player	Hello nurse.
+1	line	Nurse Sarah	I don't know how much longer I can cope here.
+1	line	Player	What? Is the plague getting to you?
+1	line	Nurse Sarah	No, strangely enough the people here don't seem to be affected. It's just the awful living conditions that is making people ill.
+1	line	Player	I was under the impression that everyone here was affected.
+1	line	Nurse Sarah	Me too, but that doesn't seem to be the case.
+1	action	end
+0	section	Using rotten apple on cauldron
+1	box	You place the rotten apple in the pot. It quickly dissolves into the stew.
+1	line	Player	Anyone who eats this stew is going to have a bad time now.
+1	action	end
+0	section	Opening back door of the Mourner Headquarters
+1	line	Player	Eugh, locked. There must be a way for me to get in. Maybe there's something around here that will help me.
+1	action	end
+0	section	Talking to Mourner outside Mourner Headquarters after poisoning the stew
+1	line	Mourner	Back away citizen. Several mourners are ill with food poisoning.
+1	line	Player	Is there a doctor nearby? Maybe I can go fetch them.
+1	line	Mourner	There are no doctors in West Ardougne, just that nurse south west of the chapel. You don't need to worry though, we'll soon have it sorted.
+1	action	end
+0	section	Searching cupboard by Nurse Sarah
+1	cond	If the player has not yet poisoned the stew or already has a medical gown:
+2	action	end
+1	cond	If the player has no inventory space:
+2	box	You find a medical gown in the cupboard but you don't have enough room to take it.
+2	action	end
+1	box	You find a medical gown in the cupboard.
+1	action	end
+0	section	Talking to Mourner outside Mourner Headquarters while wearing gown
+1	line	Mourner	A doctor? I didn't think there were any left around here.
+1	line	Player	I heard there was some trouble with food poisoning here.
+1	line	Mourner	You heard right. Head on in and see what you can do.
+1	action	end
+0	section	Attempting to remove gown while inside Mourner Headquarters
+0	section	Attempting to open trapdoor inside Mourner Headquarters
+0	section	Talking to Mourner inside Mourner Headquarters
+1	line	Player	Hello there.
+1	line	Mourner	Oh dear oh dear. I feel terrible, I think it was the stew.
+1	line	Player	You should be more careful with your ingredients.
+1	line	Mourner	There is one mourner who's really sick. They're resting upstairs. You should see to them first.
+1	line	Player	Okay, I'll see what I can do.
+1	action	end
+0	section	Talking to sickest Mourner upstairs
+1	line	Player	Hello there.
+1	line	Mourner	A doctor? At last! I don't know what I've eaten but I feel like I'm on death's door.
+1	line	Player	Hmm... interesting, sounds like food poisoning.
+1	line	Mourner	Yes, I'd figured that out already. What can you give me to help.
+1	select	Select an Option
+1	option	Just hold your breath and count to ten.
+2	line	Player	Just hold your breath and count to ten.
+2	line	Mourner	What? How will that help? What kind of doctor are you?
+2	line	Player	Erm... I'm new, I just started.
+2	line	Mourner	You're no doctor!
+2	action	(Mourner attacks the player.)
+1	option	The best I can do is pray for you.
+2	line	Player	The best I can do is pray for you.
+2	line	Mourner	Pray for me? You're no doctor... You're an imposter!
+2	action	(Mourner attacks the player.)
+1	option	There's nothing I can do, it's fatal.
+2	line	Player	There's nothing I can do, it's fatal.
+2	line	Mourner	No, I'm too young to die! I've never even had a girlfriend.
+2	line	Player	That's life for you.
+2	line	Mourner	Wait a minute, where's your equipment?
+2	line	Player	It's erm... at home.
+2	line	Mourner	You're no doctor!
+2	action	(Mourner attacks the player.)
+0	section	When the sickest Mourner dies
+1	box	Key drops to ground with full inventory.
+1	action	end
+0	section	Talking to sickest Mourner again while holding the key
+1	line	Player	Hello there.
+1	line	Mourner	Sorry, I'd like to be left in peace.
+1	action	end
+0	section	Opening the gate (when entering)
+1	cond	If the player has the key:
+2	box	You use the key to open the gate.
+2	action	end
+1	cond	If the player does not have the key:
+0	section	Searching the distillator crate
+1	cond	If the player has no inventory space:
+2	box	You search the crate and find Elena's distillator but you don't have enough room to take it.
+2	action	end
+1	cond	If the player already has the distillator:
+2	action	end
+1	box	You search the crate and find Elena's distillator.
+1	action	end
+0	section	Talking to Mourner inside Mourner Headquarters after getting distillator
+1	line	Player	Hello there.
+1	line	Mourner	Oh dear oh dear. I feel terrible, I think it was the stew.
+1	line	Player	You should be more careful with your ingredients.
+1	action	end
+0	section	Opening back door of the Mourner Headquarters from the inside
+1	box	The door is locked.
+1	action	end
+0	section	Talking to Elena without the distillator
+1	line	Elena	You're back, did you find the distillator?
+1	line	Player	I'm afraid not.
+1	line	Elena	I can't test the samples without the distillator. Please don't give up until you find it.
+1	action	end
+0	section	Delivering the samples
+0	section	Talking to Elena with the distillator
+1	line	Elena	You're back, did you find the distillator?
+1	line	Player	Yes, here it is!
+1	line	Elena	Great! Now I can finally run these tests.
+1	box	Elena uses the distillator to test some samples.
+1	line	Elena	I don't understand... the touch paper hasn't changed colour at all...
+1	line	Player	What does that mean?
+1	line	Elena	I'm not sure. My old mentor in Varrock, Guidor, might know though. Could you take these to him and see what he thinks? You'll need to drop by the chemist in Rimmington first to pick up some more touch paper.
+1	box	Elena gives you a plague sample along with three vials.
+1	line	Elena	Now, last time I went to see Guidor, some one told the guards I was carrying some plague samples. Annoyingly, that means they've started searching everyone going to that part of the city.
+1	line	Elena	Ironically, the guards won't be smart enough to recognise the sample itself, so you should be able to get that in just fine. They'll probably confiscate the rest though.
+1	line	Player	So what do I do?
+1	line	Elena	Well I know the chemist has still been managing to get chemicals to Guidor. Maybe he can help you smuggle the things in.
+1	line	Player	Great, I'll see if he can help. See you soon.
+1	action	end
+0	section	Talking to Elena again before visiting the chemist
+1	line	Elena	What are you doing back here?
+1	select	Select an Option
+1	option	I just find it hard to say goodbye sometimes.
+2	line	Player	I just find it hard to say goodbye sometimes.
+2	line	Elena	I see... I understand what you mean... But let's discuss that later.
+2	action	other
+1	option	I'm afraid I've lost some of the stuff that you gave me...
+2	line	Player	I'm afraid I've lost some of the stuff that you gave me...
+2	cond	If the player has all the items:
+3	line	Elena	Are you sure? Looks like you have everything to me.
+3	action	end
+2	cond	If the player is missing items:
+3	line	Elena	That's alright, I've got plenty.
+3	cond	If the player has no inventory space:
+4	box	Elena tries to give you some items but you don't have enough room for them.
+4	action	end
+3	box	Elena replaces your lost items.
+3	line	Elena	There you go. That should be everything.
+3	line	Player	Great, I'll be on my way.
+3	action	end
+1	option	I've forgotten what I need to do.
+2	line	Player	I've forgotten what I need to do.
+2	line	Elena	Go to Rimmington and get some touch paper from the chemist. Once you've done that, you'll need to take those things to Guidor in Varrock.
+2	line	Elena	You'll probably need to smuggle some of the items in to stop them getting confiscated. If you need help moving them discreetly, the chemist might be able to assist you.
+2	line	Player	Okay, I'll get to it.
+2	action	end
+1	option	Nothing.
+2	line	Player	Nothing.
+2	action	end
+0	section	Talking to Omart after returning the distillator
+1	line	Player	Hello Omart.
+1	line	Omart	Hello adventurer. I'm afraid it's too risky to use the ladder again. You'll have to find another way into the city.
+1	action	end
+0	section	Visiting the Chemist house in Rimmington
+0	section	Talking to Chancy in Rimmington before talking to the Chemist
+1	line	Player	Hello! Playing solitaire?
+1	line	Chancy	Hush - I'm trying to perfect the art of dealing off the bottom of the deck.
+1	action	end
+0	section	Talking to Da Vinci in Rimmington before talking to the Chemist
+1	line	Da Vinci	Bah! A great artist such as myself should not have to suffer the HUMILIATION of spending time where the likes of you wander everywhere!
+1	action	end
+0	section	Talking to Hops in Rimmington before talking to the Chemist
+1	line	Hops	Hops don't wanna talk now.
+1	action	end
+0	section	Talking to Chemist
+1	select	What do you want to talk about?
+1	option	Lamps.
+1	option	Your quest.
+2	line	Chemist	Sorry, I'm afraid we're just closing now. You'll have to come back another time.
+2	line	Player	But I was sent by Elena from Ardougne.
+2	line	Chemist	Oh, well that's different then. Must be pretty important for her to send you all this way.
+2	line	Player	She asked me to pick up some touch paper for a guy called Guidor.
+2	line	Chemist	Guidor? This one's on me then, I owe him more than a few favours.
+2	line	Chemist	I should warn you though, getting to him might not be easy if you're carrying any chemicals. The guards are searching anyone heading to that part of Varrock.
+2	line	Player	Oh right... so am I going to be okay carrying these three vials with me?
+2	line	Chemist	With touch paper as well? You're asking for trouble. You'd better use my errand boys outside. Give them a vial each. I must warn you though, they do have a habit of stealing things.
+2	line	Player	Well that's no good. How do I stop them stealing my vials?
+2	line	Chemist	Just make sure you give them something they have no reason to steal. One's a painter, one's a gambler, and one's a drunk. Not ideal I know, but if you pay peanuts you'll get monkeys, right?
+2	box	The chemist gives you some touch paper.
+2	line	Chemist	Now don't stand around here gassing. This is clearly important to Elena. You'll find Guidor's home in the south east corner of Varrock.
+2	line	Player	Okay, thanks for your help. I know Elena appreciates it.
+2	action	end
+1	option	Impling jars.
+0	section	Talking to the Chemist again
+1	select	What do you want to talk about?
+1	option	Lamps.
+1	option	Your quest.
+2	line	Player	Hello again.
+2	line	Chemist	Oh hello, do you need more touch paper?
+2	cond	If the player still has the touch paper:
+3	line	Player	No thanks.
+3	line	Chemist	Fair enough, don't forget to talk to my errand boys outside if you need help getting things to Guidor. I must warn you though, they do have a habit of stealing things.
+3	action	continues
+2	cond	If the player does not have the touch paper:
+3	line	Player	Yes please.
+3	line	Chemist	Okay, here you go.
+3	box	Touch paper falls to ground with full inventory.
+3	line	Chemist	Don't forget to talk to my errand boys outside if you need help getting things to Guidor. I must warn you though, they do have a habit of stealing things.
+3	action	continues
+2	line	Player	Well that's no good. What if they take my stuff?
+2	line	Chemist	Just make sure you give them something they have no reason to steal. One's a painter, one's a gambler, and one's a drunk. Not ideal I know, but if you pay peanuts you'll get monkeys, right?
+2	action	end
+1	option	Impling jars.
+0	section	Talking to Chancy in Rimmington after talking to the Chemist
+1	line	Player	Hello, I've got a vial for you to take to Varrock.
+1	line	Chancy	Tssch... that chemist asks for a lot for the wages he pays.
+1	line	Player	Maybe you should ask him for more money.
+1	line	Chancy	Nah... I just use my initiative here and there.
+1	select	Select an Option
+1	option	You give him the vial of ethenea...
+2	cond	If the player does not have ethenea:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of ethenea.
+2	line	Chancy	Right. I'll meet you at the Dancing Donkey Inn in south east Varrock. Be lucky!
+2	action	end
+1	option	You give him the vial of liquid honey...
+2	cond	If the player does not have liquid honey:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of liquid honey.
+2	line	Chancy	Right. I'll meet you at the Dancing Donkey Inn in south east Varrock. Be lucky!
+2	action	end
+1	option	You give him the vial of sulphuric broline...
+2	cond	If the player does not have sulphuric broline:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of sulphuric broline.
+2	line	Chancy	Right. I'll meet you at the Dancing Donkey Inn in south east Varrock. Be lucky!
+2	action	end
+0	section	Talking to Chancy in Rimmington after giving him a vial
+1	line	Chancy	Look, I've got your vial but I'm not taking two. I always like to play the percentages.
+1	action	end
+0	section	Talking to Da Vinci in Rimmington after talking to the Chemist
+1	line	Player	Hello, I hear you're an errand boy for the chemist.
+1	line	Da Vinci	Well that's my job yes. But I don't necessarily define my identity in such black and white terms.
+1	line	Player	Good for you. Now can you take a vial to Varrock for me?
+1	line	Da Vinci	Go on then.
+1	select	Select an Option
+1	option	You give him the vial of ethenea...
+2	cond	If the player does not have ethenea:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of ethenea.
+2	line	Da Vinci	Okay, I'll meet you at the Dancing Donkey in Varrock.
+2	action	end
+1	option	You give him the vial of liquid honey...
+2	cond	If the player does not have liquid honey:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of liquid honey.
+2	line	Da Vinci	Okay, I'll meet you at the Dancing Donkey in Varrock.
+2	action	end
+1	option	You give him the vial of sulphuric broline...
+2	cond	If the player does not have sulphuric broline:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of sulphuric broline.
+2	line	Da Vinci	Okay, I'll meet you at the Dancing Donkey in Varrock.
+2	action	end
+0	section	Talking to Da Vinci in Rimmington after giving him a vial
+1	line	Da Vinci	Oh, it's you again. Please don't distract me now, I'm contemplating the sublime.
+1	action	end
+0	section	Talking to Hops in Rimmington after talking to the Chemist
+1	line	Player	Hi, I've got something for you to take to Varrock.
+1	line	Hops	Sounds like pretty thirsty work.
+1	line	Player	Well, there's an Inn in Varrock if you're desperate.
+1	line	Hops	Don't worry, I'm a pretty resourceful fellow you know.
+1	select	Select an Option
+1	option	You give him the vial of ethenea...
+2	cond	If the player does not have ethenea:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of ethenea.
+2	line	Player	Okay, I'll see you in Varrock.
+2	line	Hops	Sure, I'm a regular at the Dancing Donkey Inn as it happens.
+2	action	end
+1	option	You give him the vial of liquid honey...
+2	cond	If the player does not have liquid honey:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of liquid honey.
+2	line	Player	Okay, I'll see you in Varrock.
+2	line	Hops	Sure, I'm a regular at the Dancing Donkey Inn as it happens.
+2	action	end
+1	option	You give him the vial of sulphuric broline...
+2	cond	If the player does not have sulphuric broline:
+3	box	You can't give him what you don't have.
+3	action	end
+2	box	You give him the vial of sulphuric broline.
+2	line	Player	Okay, I'll see you in Varrock.
+2	line	Hops	Sure, I'm a regular at the Dancing Donkey Inn as it happens.
+2	action	end
+0	section	Talking to Hops in Rimmington after giving him a vial
+1	line	Hops	I suppose I'd better get going. I'll meet you at the Dancing Donkey Inn.
+1	action	end
+0	section	Visiting south-east Varrock
+0	section	Talking to Guard at south-east Varrock
+1	line	Guard	Please don't disturb me, I've got to keep any eye out for suspicious individuals.
+1	action	end
+0	section	Entering south-east Varrock
+1	line	Guard	Halt. I need to conduct a search on you. There have been reports of someone bringing a virus into this area of Varrock.
+1	box	The guard searches you.
+1	cond	If the player has ethenea:
+2	box	He takes the vial of ethenea from you.
+1	cond	If the player has liquid honey:
+2	box	He takes the vial of liquid honey from you.
+1	cond	If the player has sulphuric broline:
+2	box	He takes the vial of sulphuric broline from you.
+1	line	Guard	You may now pass.
+1	action	end
+0	section	Talking to Chancy in Varrock before talking to the Chemist
+1	line	Player	Good morning.
+1	line	Chancy	Leave me alone. I'm trying to find my gambling buddies!
+1	action	end
+0	section	Talking to Chancy in Varrock after giving him the wrong vial
+1	line	Player	Hi, thanks for doing that.
+1	line	Chancy	No problem. I've got some money for you actually.
+1	line	Player	What do you mean?
+1	line	Chancy	Well, it turns out that potion you gave me, was quite valuable...
+1	line	Player	What?
+1	line	Chancy	I know that I probably shouldn't have sold it... but some friends and I were having a little wager, the odds were just too good!
+1	line	Player	You sold my vial and gambled with the money?!
+1	line	Chancy	Actually yes... but praise be to SaradomingSaradomin because I won! So all's well that ends well right?
+1	select	Select an Option
+1	option	No! Nothing could be further from the truth!
+2	line	Player	No! Nothing could be further from the truth!
+2	line	Chancy	Well, there's no pleasing some people. Here's your cut anyway.
+2	action	Drops to floor with full inventory
+2	action	end
+1	option	You have no idea what you have just done!
+2	line	Player	You have no idea what you have just done!
+2	line	Chancy	Ignorance is bliss I'm afraid. Here's your cut anyway.
+2	action	Drops to floor with full inventory
+2	action	end
+0	section	Talking to Chancy in Varrock after giving him honey
+1	line	Player	Hi, thanks for doing that.
+1	line	Chancy	No problem.
+1	cond	If the player has no inventory space:
+2	box	He tries to give you the vial of liquid honey but you don't have enough room for it.
+2	action	end
+1	box	He gives you the vial of liquid honey.
+1	line	Chancy	Next time give me something more valuable... I couldn't get anything for this on the blackmarket.
+1	line	Player	That was the idea.
+1	action	end
+0	section	Talking to Da Vinci in Varrock before talking to the Chemist
+1	line	Da Vinci	Bah! A great artist such as myself should not have to suffer the HUMILIATION of spending time where the likes of you wander everywhere!
+1	action	end
+0	section	Talking to Da Vinci in Varrock after giving him the wrong vial
+1	line	Da Vinci	Hello again. I hope your journey was as pleasant as mine.
+1	line	Player	Yep. Anyway, I'll take the package off you now.
+1	line	Da Vinci	Package? That's a funny way to describe a liquid of such exquisite beauty!
+1	select	Select an Option
+1	option	I'm getting a bad feeling about this.
+2	line	Player	I'm getting a bad feeling about this.
+2	action	continues
+1	option	Just give me the stuff now please.
+2	line	Player	Just give me the stuff now please.
+2	action	continues
+1	line	Player	You do still have it don't you?
+1	line	Da Vinci	Absolutely. It's just not stored in a vial anymore.
+1	line	Player	What?
+1	line	Da Vinci	Instead it has been liberated. It now gleams from the canvas of my latest epic: The Majesty of Varrock!
+1	line	Player	That's great. Thanks to you I'll have to walk back to East Ardougne to get another vial.
+1	line	Da Vinci	Well you can't put a price on art.
+1	action	end
+0	section	Talking to Da Vinci in Varrock after giving him ethenea
+1	line	Da Vinci	Hello again. I hope your journey was as pleasant as mine.
+1	line	Player	Well, as they say, it's always sunny in Gielinor.
+1	line	Da Vinci	Okay, here it is.
+1	cond	If the player has no inventory space:
+2	box	He tries to give you the vial of ethenea but you don't have enough room for it.
+2	action	end
+1	box	He gives you the vial of ethenea.
+1	line	Player	Thanks, you've been a big help.
+1	action	end
+0	section	Talking to Hops in Varrock before talking to the Chemist
+1	line	Hops	Hops don't wanna talk now.
+1	action	end
+0	section	Talking to Hops in Varrock after giving him the wrong vial
+1	line	Player	Hello, how was your journey?
+1	line	Hops	Pretty thirst-inducing actually...
+1	line	Player	Please tell me that you haven't drunk the contents...
+1	line	Hops	Of course I can tell you that I haven't drunk the contents...
+1	line	Hops	But I'd be lying. Sorry about that me old mucker, can I get you a drink?
+1	line	Player	No, I think you've done enough for now.
+1	action	end
+0	section	Talking to Hops in Varrock after giving him broline
+1	line	Player	Hello, how was your journey?
+1	line	Hops	Pretty thirst-inducing actually...
+1	line	Player	Please tell me that you haven't drunk the contents...
+1	line	Hops	Oh the gods no! What do you take me for?
+1	line	Hops	Here's your vial anyway.
+1	cond	If the player has no inventory space:
+2	box	He tries to give you the vial of sulphuric broline but you don't have enough room for it.
+2	action	end
+1	box	He gives you the vial of sulphuric broline.
+1	line	Player	Thanks, I'll let you get your drink now.
+1	action	end
+0	section	Exiting south-east Varrock while holding the vials
+1	line	Player	I should probably talk to Guidor before leaving the area. Otherwise I'll need to get my vials smuggled in again.
+1	select	Leave anyway?
+1	option	Yes.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Entering Guidor's room before talking to the Chemist
+1	line	Player	That's someone's bedroom. I'm not going in there without a reason.
+1	action	end
+0	section	Entering Guidor's room after talking to the Chemist
+1	line	Julie	Please leave my husband alone. He's very sick, and I don't want anyone bothering him.
+1	line	Player	I'm sorry to hear that. Is there anything I can do?
+1	line	Julie	Thank you, but I just want him to see a priest.
+1	line	Player	A priest? Hmmm...
+1	action	end
+0	section	Talking to Julie before talking to the Chemist
+1	line	Julie	Oh dear! Oh dear! I don't have time to chat!
+1	action	end
+0	section	Talking to Julie after talking to the Chemist
+1	line	Player	Hello. I'm a friend of Elena, here to see Guidor.
+1	line	Julie	I'm afraid that Guidor is not long for this world! So I'm not letting people see him now.
+1	line	Player	I'm really sorry to hear about Guidor.
+1	line	Player	But I do have some very important business to attend to!
+1	line	Julie	You heartless rogue! What could be more important than Guidor's life? A life spent well, if not always wisely... I just hope that Saradomin shows mercy on his soul!
+1	line	Player	Guidor is a religious man?
+1	line	Julie	Oh goodness no! But I am! If only I could get him to see a priest!
+1	line	Player	A priest? Hmmm...
+1	action	end
+0	section	Talking to Asyff
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	line	Asyff	Or, if that doesn't interest you, then maybe you have something else to offer? I'm always on the look out for interesting or unusual new materials.
+1	select	Select an Option
+1	option	Okay, let's see what you've got then.
+1	option	Do you have a spare Priest Gown?
+2	line	Player	Do you have a spare Priest Gown?
+2	line	Asyff	Well I do sell them. I don't hand them out for free though. This is a shop not a charity.
+2	line	Player	Please! It's really important.
+2	line	Asyff	Well I suppose you can have this old one. It's not in good enough condition to sell.
+2	box	You are given a Priest Gown.
+2	line	Player	Thank you.
+2	action	end
+1	option	I think I might just leave the perusing for now, thanks.
+1	option	Can you make clothing suitable for hunting?
+1	option	What sort of unusual materials did you have in mind?
+0	section	Talking to Julie while wearing priest gown top and bottom
+1	line	Julie	A priest! thank goodness! My husband is very ill! Perhaps you could read him his last rites?
+1	line	Player	I'll see what I can do.
+1	action	end
+0	section	Talking to Guidor
+1	line	Player	Hello, you must be Guidor. I understand that you are unwell.
+1	line	Guidor	Is my wife asking priests to visit me now? I'm a man of science for god's sake. I know she means well but it's only a little cough!
+1	line	Player	She made out it was something more serious.
+1	line	Guidor	Well it's not killed me yet. So what do you want?
+1	select	Select an Option
+1	option	I've come to ask your assistance in stopping a plague.
+2	line	Player	I've come to ask your assistance in stopping a plague.
+2	line	Guidor	You mean the plague of West Ardougne?
+2	line	Player	That's the one. I have a sample here from your former student, Elena.
+2	line	Guidor	Elena eh?
+2	line	Player	Yes, she wants you to analyse it. You might be the only one who can help.
+2	line	Guidor	Right then, sounds like we'd better get to work!
+2	line	Player	I have the plague sample.
+2	line	Guidor	Now I'll be needing some liquid honey, some sulphuric broline, and then...
+2	line	Player	... some ethenea?
+2	line	Guidor	Indeed!
+2	cond	If the player does not have all three vials:
+3	line	Guidor	Look, I need all three reagents to test the plague sample. Come back when you've got them.
+3	action	end
+2	cond	If the player does not have touch paper:
+3	line	Guidor	Oh. You don't have any touch paper. I won't be able to help after all.
+3	action	end
+2	cond	If the player does not have the plague sample:
+3	line	Guidor	Seems like you don't actually have the plague sample. It's a long way to come empty handed... and quite a long way back too.
+3	action	end
+2	line	Guidor	Now I'll just apply these to the sample and... I don't get it... the touch paper has remained the same.
+2	line	Player	That's why Elena wanted you to do it, because she wasn't sure what was happening.
+2	line	Guidor	Well that's just it, nothing has happened. I don't know what this sample is, but it certainly isn't toxic.
+2	line	Player	So what about the plague?
+2	line	Guidor	This result can only mean one thing... there is no plague. It seems that someone has been lying about all of it. The only question is... why?
+2	line	Player	Well this is worrying. I'd better go and tell Elena right away.
+2	action	end
+1	option	I was just going to bless your room and I've done that now.
+2	line	Player	I was just going to bless your room and I've done that now.
+2	line	Guidor	Oh. Goodbye then.
+2	action	end
+0	section	Talking to Guidor again
+1	line	Player	Hello again Guidor.
+1	line	Guidor	Well, hello traveller. I still can't understand why they would lie about the plague.
+1	line	Player	It's strange, anyway how are you doing?
+1	line	Guidor	I'm hanging in there.
+1	line	Player	Good for you.
+1	action	end
+0	section	Talking to Julie after talking to Guido
+1	line	Player	Hello again.
+1	line	Julie	Hello there. I fear Guidor may not be long for this world!
+1	action	end
+0	section	Return to Ardougne
+0	section	Talking to Elena after talking to Guidor
+1	line	Elena	You're back! So what did Guidor say?
+1	line	Player	Nothing.
+1	line	Elena	What?
+1	line	Player	He ran his tests and discovered nothing. The plague... it doesn't exist.
+1	line	Elena	Doesn't exist? But I don't understand... why?
+1	line	Player	I don't know, but I think we're about to uncover something huge.
+1	line	Elena	Well I think there's only one thing for it. The king must be confronted!
+1	line	Player	The king?
+1	line	Elena	Yes. King Lathas of East Ardougne. He was the one that had the wall built. He was the one who called the mourners in. He must know what's really going on here.
+1	line	Player	Well I'd better go and speak to the king then.
+1	line	Elena	Be quick. You should find him in the castle.
+1	action	end
+0	section	Talking to Elena again before talking to the King
+1	line	Player	Hello Elena.
+1	line	Elena	You must go and see King Lathas immediately!
+1	action	end
+0	section	Talking to King Lathas after talking to Elena about the plague
+1	line	Player	I assume that you are King Lathas of East Ardougne?
+1	line	King Lathas	You assume correctly, but where do you get such impertinence.
+1	line	Player	I get it from finding out that the plague is a hoax.
+1	line	King Lathas	A hoax? I've never heard such a ridiculous thing...
+1	line	Player	I have evidence, from Guidor of Varrock.
+1	line	King Lathas	Ah... I see. Well then you are right about the plague. But I did it for the good of my people.
+1	line	Player	When is it ever good to lie to people like that?
+1	line	King Lathas	When it protects them from a far greater danger, a fear too big to fathom.
+1	line	Player	I don't understand...
+1	line	King Lathas	When my father was king, he ruled over a united Ardougne. But on his deathbed, he could not decide which of his sons should succeed him, so he had the city split into two.
+1	line	King Lathas	I became king of East Ardougne while my brother, Tyras, ruled over West Ardougne. My brother was a good man and was great at many things. Being a king was not one of them.
+1	line	King Lathas	Rather than looking after his people, he went on numerous expeditions to the lands west of here. On one of these expeditions, he was captured by the forces of the Dark Lord.
+1	line	King Lathas	The Dark Lord agreed to spare his life, but only on one condition... That he would drink from the Chalice of Eternity.
+1	line	Player	So what happened?
+1	line	King Lathas	The chalice corrupted him. He joined forces with the Dark Lord, the embodiment of pure evil...
+1	line	King Lathas	And so I erected the wall, not just to protect my people, but to protect all the people of Gielinor. Tyras is king of West Ardougne, sealing off the city was the only way to stop him and the Dark Lord.
+1	line	King Lathas	I knew people would never believe the truth, so I had the plague made up as an excuse for the cordon. I'm not proud of it, but it was the only way to keep people safe.
+1	line	Player	I see. Well at least I know now.
+1	line	King Lathas	While my brother is still at large, I must ask that you keep this secret. We can't bring the wall down until we know he is no longer a danger.
+1	line	Player	But how do we stop him?
+1	line	King Lathas	You're willing to help? Gods be praised!
+1	line	King Lathas	My brother is currently gathering strength in the lands to the west. If we are to stop him, we must find a way through the mountains. There is an underground pass that should lead through but it is full of danger.
+1	line	King Lathas	Return to me when you are ready to face this peril. Until then, I give you permission to use my training area. It's located just to the north west of the city.
+1	line	King Lathas	I'll also let the mourners know that you are a friend to Ardougne. You will be allowed to pass through the gates to West Ardougne whenever you please. Now, you'd better be off. You have much to prepare for.
+1	line	King Lathas	Do you need anything else adventurer?
+1	select	Select an Option
+1	option	Why don't I get started right away?
+2	line	Player	Why don't I get started right away?
+2	line	King Lathas	Your enthusiasm is to be commended. Very well, if you feel you are already prepared then who am I to stop you.
+2	line	King Lathas	As we've previously discussed, my brother is currently gathering strength in the lands west of here. The only known way into those lands is through the Underground Pass.
+2	action	(Continues with Underground Pass dialogue.)
+1	option	I don't think so.
+2	line	Player	I don't think so.
+2	line	King Lathas	Very well. Return to me once you are ready and we will discuss our next steps.
+2	action	end
+0	section	Talking to King Lathas again
+1	line	Player	Good day King Lathas.
+1	line	King Lathas	And to you adventurer. I assume you're here about King Tyras?
+1	select	Select an Option
+1	option	I am. What's our plan?
+2	line	Player	I am. What's our plan?
+2	line	King Lathas	Well, as we've previously discussed, my brother is currently gathering strength in the lands west of here. The only known way into those lands is through the Underground Pass.
+2	action	(Continues with Underground Pass dialogue.)
+1	option	I'm just passing through.
+2	line	Player	I'm just passing through.
+2	line	King Lathas	Fair enough. Return to me when you are ready and we will discuss our next steps.
+2	action	end
+0	section	Talking to Elena after finishing the quest
+1	line	Player	Hello Elena.
+1	line	Elena	Hey, how are you?
+1	line	Player	Good thanks, yourself?
+1	line	Elena	Not bad, did you speak to the king?
+1	line	Player	I did, he admitted the plague is a hoax.
+1	line	Elena	Did he say why?
+1	line	Player	He did. He asked me to keep it a secret though.
+1	line	Elena	Even from me?
+1	line	Player	I'm afraid so. Don't worry though, I'm working with the king to resolve all of this.
+1	line	Elena	I hope so. Even without the plague, I still worry about the people of West Ardougne.
+1	action	end
+0	section	Talking to Elena again after finishing the quest
+1	line	Player	Hello Elena.
+1	line	Elena	Hey, how are you?
+1	line	Player	Good thanks, yourself?
+1	line	Elena	Not bad, I do wish you could tell me what's going on with the plague though.
+1	line	Player	So do I Elena. I promise I'll tell you everything once this is all over.
+1	line	Elena	I hope that's not too far off.
+1	line	Player	It shouldn't be, don't worry.
+1	action	end
+0	section	Talking to Julie after finishing the quest
+1	line	Player	Hello.
+1	line	Julie	Oh hello, I can't chat now. I have to keep an eye on my husband. He's very ill!
+1	line	Player	I'm sorry to hear that!
+1	action	end
+0	section	Talking to Guidor after finishing the quest
+1	line	Player	Hello again Guidor. How are you doing?
+1	line	Guidor	I'm hanging in there.
+1	line	Player	Good for you.
+1	action	end

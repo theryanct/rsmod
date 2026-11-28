@@ -1,0 +1,390 @@
+# Generated from the OSRS Wiki page "Transcript:Fight Arena" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Searching the armour chest
+1	box	The chest is securely locked.
+1	action	end
+0	section	Talking to Lady Servil
+1	line	Player	Hi there. Looks like you're in some trouble.
+1	line	Lady Servil	The cart? That's the least of my problems. I've got to find my family...
+1	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 50.
+1	select	Start the Fight Arena quest?
+1	option	Yes.
+2	line	Player	Your family? Can I help?
+2	line	Lady Servil	You'd be willing to?
+2	line	Player	Of course. Tell me what happened.
+2	line	Lady Servil	Well, I'm Lady Servil. I was travelling to Ardougne with my husband, Justin, and son, Sammy, when our cart broke on some rocks.
+2	line	Lady Servil	Some of General Khazard's men spotted us and offered to help, but they demanded my husband and son fight in their arena first! We said no, but they took them anyway!
+2	line	Player	General Khazard?
+2	line	Lady Servil	He's a menace! This entire area is under the control of him and his mercenary group, the Khazard Army. They prey on the weak and vulnerable, making them fight in that arena of theirs, all for entertainment!
+2	line	Player	That's horrible! How are they able to get away with it?
+2	line	Lady Servil	The authorities don't care. Khazard's men just pay them off if they ever come to investigate.
+2	line	Player	Well they won't stop me. I'm going to try my best to find your family.
+2	line	Lady Servil	Thank you. They'll be somewhere inside the arena. I'll be waiting here for you.
+2	action	end
+1	option	No.
+2	line	Player	Well I hope it works out. Good luck.
+2	action	end
+0	section	Talking to Lady Servil after starting the quest
+1	line	Lady Servil	Adventurer, please... bring back my family. They'll be somewhere inside the arena.
+1	line	Player	Don't worry, I'll find them.
+1	action	end
+0	section	Talking to Spectator after starting the quest
+1	line	Player	Hello.
+1	line	Spectator	Hello, stranger. Are you here for the fight arena?
+1	line	Player	I suppose I am.
+1	line	Spectator	Anything in particular?
+1	line	Player	Just visiting some friends.
+1	line	Spectator	Inside? Are you sure about that? Only Khazard guards are allowed in there. Unless you know where to get some of their armour, you won't be visiting anyone.
+1	action	end
+0	section	Entering the arena
+0	section	Talking to off-duty Khazard Guard by the armour chest
+1	line	Player	Hello.
+1	line	Khazard Guard	Can I help you?
+1	line	Player	I'm not sure.
+1	line	Khazard Guard	Well I'm off-duty right now, so why don't you go and bother someone else.
+1	action	end
+0	section	Opening the armour chest
+0	section	Searching the armour chest
+1	cond	If the player has a full inventory:
+2	box	You search the chest and find a helmet and platebody. However, you don't have enough room to take them.
+0	section	Talking to Lady Servil after getting armour
+1	line	Player	Hello Lady Servil.
+1	line	Lady Servil	Have you had any luck with freeing my family?
+1	line	Player	I've managed to get a guard's uniform, hopefully I can infiltrate the arena.
+1	line	Lady Servil	Please hurry.
+1	action	end
+0	section	Talking to Khazard Guard by the armour chest after stealing the armour
+1	line	Player	Hello.
+1	line	Khazard Guard	Despicable thieving scum!
+1	line	Player	What happened?
+1	cond	Without the Khazard armour equipped:
+2	line	Khazard Guard	None of your business. Clear off!
+2	action	end
+1	cond	With the Khazard armour equipped:
+2	line	Khazard Guard	Someone came in and stole my armour!
+2	line	Player	Oh no! I'll let you know if I see anyone suspicious...
+2	action	end
+0	section	Talking to the Door Guard with Khazard armour equipped
+1	line	Player	Hello.
+1	line	Door Guard	Are you new? I've never seen you around here before.
+1	line	Player	You could say that. Long live General Khazard!
+1	line	Door Guard	Er... yeah...
+1	action	end
+0	section	Talking to Khazard Guards with Khazard armour equipped
+1	option	Dialogue 1
+2	line	Player	Hello.
+2	line	Khazard Guard	There should be some good fights today.
+2	action	end
+1	option	Dialogue 2
+2	line	Player	Hello.
+2	line	Khazard Guard	Keep an eye out for anything suspicious.
+2	action	end
+1	option	Dialogue 3
+2	line	Player	Hello.
+2	line	Khazard Guard	I think I'll head to the bar on my next break.
+2	action	end
+1	option	Dialogue 4
+2	line	Player	Hello.
+2	line	Khazard Guard	Don't bother me while I'm on duty.
+2	action	end
+1	line	Player	Hello.
+1	line	Spectator	Hello there. I hear the Servil family are fighting soon. Should be very entertaining.
+1	action	end
+0	section	Talking to a Khazard Guard inside the building with the armour unequipped
+1	line	Player	Hello.
+1	line	Khazard Guard	What are you doing here? Leave at once!
+1	action	end
+0	section	Opening door while a Khazard Guard is nearby
+1	line	Player	This door appears to be locked.
+1	line	Khazard Guard	Nice observation guard. You could have just asked to be let in like a normal person.
+1	action	end
+0	section	Talking to Joe or Kelvin
+1	cond	If the player has the Khazard armour equipped:
+2	line	Player	Do either of you know of the Servil family?
+2	line	Joe	If we did, why would we tell a guard?
+2	line	Kelvin	Until our last breath, our every action will be against Khazard. Never will we help you.
+2	line	Joe	I spit on Khazard, and all who do his bidding.
+2	action	end
+1	cond	If the player does not have the Khazard armour equipped:
+2	line	Player	Do either of you know of the Servil family?
+2	line	Joe	I've heard of them, but if your hope is to help them, I fear you may be too late.
+2	line	Kelvin	You should leave while you can. If the guards get you, you'll be in here next.
+2	action	end
+0	section	Talking to Slave
+1	line	Player	Hello there. I'm looking for the Servil family.
+1	cond	If the player has the Khazard armour equipped:
+2	line	Slave	Please leave me alone.
+2	action	end
+1	cond	If the player does not have the Khazard armour equipped:
+2	line	Slave	I've never heard of them.
+2	action	end
+0	section	Talking to Hengrad
+1	line	Player	Hello there.
+1	cond	If the player has the Khazard armour equipped:
+2	line	Hengrad	Hmm... You don't seem like a real guard to me. Who are you?
+2	line	Player	No one important. I'm looking for the Servil family.
+2	line	Hengrad	I've seen them in here, but my advice to you is to leave them. Whatever plan you have will only end with you in a cell as well.
+2	action	end
+1	cond	If the player does not have the Khazard armour equipped:
+2	line	Hengrad	You're not a guard. What are you doing in here?
+2	line	Player	I'm looking for the Servil family.
+2	line	Hengrad	I've seen them in here, but my advice to you is to leave them. Whatever plan you have will only end with you in a cell as well.
+2	action	end
+0	section	Opening door to the arena
+1	box	The door is securely locked.
+1	action	end
+0	section	Opening a prison gate
+1	box	The gate is securely locked.
+1	action	end
+0	section	Talking to the Head Guard with Khazard armour equipped
+1	line	Player	Long live General Khazard!
+1	line	Head Guard	Er... yes... quite right. Did you need something?
+1	line	Player	Just checking if you have any orders for me.
+1	line	Head Guard	Not right now. Things are all very boring at the moment. What I'd give to be over at the bar having a nice Khali brew...
+1	line	Player	Khali brew? Can't say I've ever had one.
+1	line	Head Guard	Oh, nothing beats them! Mind you, don't make the mistake of having too many. Last time I did, I ended up falling straight to sleep.
+1	line	Player	Good to know, thanks.
+1	action	end
+0	section	Talking to the Head Guard again
+1	line	Player	Hello again.
+1	line	Head Guard	What a boring day. You'd think the slaves would be more entertaining.
+1	line	Player	Not long now until you get a break though, right?
+1	line	Head Guard	Too right! Then it's straight to the bar for a nice Khali brew.
+1	action	end
+0	section	Talking to the Head Guard without Khazard armour equipped
+1	line	Head Guard	This area is restricted. Leave now!
+1	action	end
+0	section	Getting the keys
+0	section	Talking to Sammy Servil
+1	line	Player	Hello. Are you Sammy?
+1	line	Sammy Servil	Please... don't hurt me.
+1	line	Player	Don't worry, I'm here to help. Where do they keep the keys?
+1	line	Sammy Servil	The Head Guard has them. He's the one with the big sword.
+1	line	Player	Don't lose heart, I'll be back.
+1	action	end
+0	section	Talking to Sammy again
+1	line	Player	Hello, Sammy.
+1	line	Sammy Servil	Hello. Do you have the keys?
+1	line	Player	Not yet.
+1	line	Sammy Servil	Please hurry. The Head Guard has them. He's the one with the big sword.
+1	action	end
+0	section	Talking to Lady Servil after entering the arena
+1	line	Player	Lady Servil, I have managed to infiltrate General Khazard's arena.
+1	line	Lady Servil	And my family?
+1	line	Player	I'm working on it.
+1	line	Lady Servil	Please hurry.
+1	action	end
+0	section	Talking to Joe or Kelvin
+1	option	Dialogue 1 (Wearing Khazard armour)
+2	line	Player	Are you okay?
+2	line	Joe/Kelvin	Get away! One day we'll have our revenge on you all!
+2	action	end
+1	option	Dialogue 2 (Wearing Khazard armour)
+2	line	Player	Are you okay?
+2	line	Joe/Kelvin	Spare us your fake pity. I spit on Khazard, and all who do his bidding.
+2	action	end
+1	option	Dialogue 3 (Not wearing Khazard armour)
+2	line	Player	Are you okay?
+2	line	Joe/Kelvin	You're not safe here, traveller. Leave while you still can.
+2	action	end
+1	option	Dialogue 4 (Not wearing Khazard armour)
+2	line	Player	Are you okay?
+2	line	Joe/Kelvin	You're brave coming in here. If the guards get you, you'll be the next one in a cell.
+2	action	end
+0	section	Talking to a slave
+1	cond	If the player has the Khazard armour equipped:
+2	line	Player	Hello there.
+2	line	Slave	Please leave me alone.
+2	action	end
+1	cond	If the player does not have the Khazard armour equipped:
+2	option	Dialogue 1
+3	line	Player	Hello there.
+3	line	Slave	Why am I here?
+3	action	end
+2	option	Dialogue 2
+3	line	Player	Hello there.
+3	line	Slave	Please leave me alone.
+3	action	end
+2	option	Dialogue 3
+3	line	Player	Hello there.
+4	line	Slave	What did I do to deserve this?
+3	action	end
+2	option	Dialogue 4
+3	line	Player	Hello there.
+4	line	Slave	You're not safe here. Leave while you can.
+3	action	end
+0	section	Talking to Hengrad
+1	line	Player	Hello there.
+1	cond	If the player has the Khazard armour equipped:
+2	line	Hengrad	Hmm... You don't seem like a real guard to me. Who are you?
+2	line	Player	No one important.
+2	line	Hengrad	If you say so.
+2	action	end
+1	cond	If the player does not have the Khazard armour equipped:
+2	line	Hengrad	You're not a guard. What are you doing in here?
+2	line	Player	Nothing important.
+2	line	Hengrad	If you say so.
+2	action	end
+0	section	Talking to Khazard barman after learning about the Khali brew
+1	line	Player	Hello.
+1	line	Khazard barman	Hi, what can I get you? We have a range of quality brews.
+1	select	Select an Option
+1	option	I'll have a beer please.
+1	option	I'd like a Khali brew please.
+2	line	Player	I'd like a Khali brew please.
+2	line	Khazard barman	That'll be five gold coins please.
+2	cond	If the player doesn't have 5 coins:
+3	line	Player	Oh, I don't have enough money with me.
+3	action	end
+2	cond	If the player has a full inventory:
+3	line	Player	Oh, I don't have enough room for one.
+3	action	end
+2	line	Khazard barman	There you go, that's five gold coins. I suggest lying down before you drink it. That way you have less distance to collapse.
+2	box	The barman gives you a Khali brew in exchange for five coins.
+2	action	end
+1	option	Got any news?
+1	option	I'm good, thanks.
+0	section	Talking to the Head Guard while holding Khali brew
+1	line	Player	Hello again.
+1	line	Head Guard	What a boring day. You'd think the slaves would be more entertaining.
+1	line	Player	Do you still fancy a drink?
+1	line	Head Guard	I really shouldn't...
+1	line	Player	Are you sure?
+1	line	Head Guard	Oh... okay then, but just the one.
+1	box	You hand a bottle of Khali brew to the Head Guard and he quickly drinks it all.
+1	line	Head Guard	That is some gooood stuff... yeah... wooh, yeah!
+1	line	Player	Are you alright?
+1	line	Head Guard	Yeesshh! Oooh, maybe I sshould relax for a while.
+1	line	Player	Good idea. I'll look after the prisoners.
+1	line	Head Guard	Yeesh... that shounds reasonable. Here, take the keysch. Any trouble, you give... you give 'em a good beating.
+1	box	The Head Guard gives you some keys.
+1	line	Player	Don't worry, I'll keep them in line
+1	action	end
+0	section	Talking to the Head Guard after getting the keys
+1	line	Player	Hello there.
+1	line	Head Guard	Pleash... leave me alone. Did the walls always shway soooo much?
+1	action	end
+0	section	Talking to the Head Guard after losing the keys
+1	line	Player	Hi, er... I lost the keys.
+1	line	Head Guard	What? You're foolish... and I'm all drunk. Here... takes my shpare shh... set!
+1	action	end
+0	section	Talking to the Head Guard after getting him drunk without Khazard armour equipped
+1	line	Head Guard	Thish areash resh... restricted! We don't like strangersh... 'specially ones who sway. Oooh!
+1	action	end
+0	section	Using keys on a cell that does not contain Sammy Servil
+1	line	Player	The gate is locked, but Sammy's not in there anyway.
+1	action	end
+0	section	Talking to Sammy Servil after getting the keys
+1	line	Player	Sammy look, I have the keys.
+1	line	Sammy Servil	Wow! Please hurry and set me free.
+1	line	Player	We'll need to wait for the guards to change shift, but don't worry, you'll be out soon...
+1	line	Player	Alright, the coast is clear.
+1	line	Player	Now, let's get you out of here.
+1	line	Sammy Servil	Not yet! We need to find my dad!
+1	line	Player	Sammy, wait!
+1	line	Sammy Servil	Quick, help him!
+1	action	end
+0	section	The battles
+0	section	Trying to exit the arena through the door
+1	select	Are you sure you want to leave?
+1	option	Yes.
+1	option	No.
+0	section	Re-entering the arena
+1	select	Return to the arena?
+1	option	Yes.
+1	option	No.
+0	section	Talking to a spectator
+1	line	Player	Hello.
+1	cond	If the player has the Khazard armour equipped:
+2	line	Spectator	Hello there. I hear Khazard's got some great fights lined up today. I can't wait!
+2	action	end
+1	cond	If the player doesn't have the Khazard armour equipped:
+2	line	Spectator	Hello, stranger. I hear Khazard's got some great fights lined up today. I can't wait!
+2	action	end
+0	section	Talking to Lady Servil after freeing Sammy from the jail
+1	line	Player	Lady Servil, I freed your son, but he went to help your husband.
+1	line	Lady Servil	No! Please, you have to help them!
+1	action	end
+0	section	Upon killing the Khazard Ogre
+1	line	General Khazard	Well, well, well, you seem to be in quite the rush. Do you have somewhere else to be?
+1	line	Sammy Servil	Oh no...
+1	line	Player	General Khazard, I presume?
+1	line	General Khazard	You presume correct. I must say, I sense a great air of defiance to you. Does my appearance not fill you with fear?
+1	line	Player	I've seen worse.
+1	line	General Khazard	How arrogant. No matter though, you will come to learn.
+1	line	General Khazard	Now, despite your entertaining show, the two individuals you are attempting to leave with are my property.
+1	line	Player	They belong to nobody!
+1	line	General Khazard	Ha! Well if their freedom is so valuable to you, how about a trade? Fight in my arena, and if you win, I'll let them go.
+1	line	Player	And what if I refuse your offer?
+1	line	General Khazard	Well... I wasn't actually giving you a choice. Guards, take [him/her/them] to the cells.
+1	action	end
+0	section	Talking to a spectator after defeating the ogre
+1	line	Player	Hello.
+1	line	Spectator	Hey, you're the one from the arena! That was some great fighting!
+1	action	end
+0	section	Talking to a Door Guard
+1	line	Player	Hello.
+1	line	Door Guard	So you're back for more are you? General Khazard will be pleased.
+1	action	end
+0	section	Talking to Hengrad in the jail cell
+1	line	Hengrad	Hello there. So Khazard got his hands on you too?
+1	line	Player	Unfortunately so.
+1	line	Hengrad	Well if you're lucky, you might last as long as me.
+1	line	Player	How long have you been here?
+1	line	Hengrad	As long as I can remember. I was a child when his men kidnapped me. My whole life has been spent killing and fighting, all in the hope that one day I might escape.
+1	line	Player	Don't give up.
+1	line	Hengrad	Thanks, friend.
+1	line	Hengrad	Wait... sounds like the guard is coming. Looks like you'll be going back into the arena. Good luck, friend.
+1	line	General Khazard	Now watch closely, friends. I fear this may be where your protector dies.
+1	line	Justin Servil	Ignore him! You can do it!
+1	action	end
+0	section	Talking to Hengrad after teleporting out of a fight
+1	line	Player	Hello again.
+1	line	Hengrad	I don't know how you managed to escape, but you may not be as lucky next time. Get out of here while you can.
+1	action	end
+0	section	Upon killing the scorpion
+1	line	General Khazard	Impressive, but now for a proper challenge. Time for my puppy. Bring on Bouncer!
+1	action	end
+0	section	Upon killing Bouncer
+1	line	General Khazard	Bouncer! No!
+1	line	General Khazard	You monster! You'll pay for what you've done!
+1	line	Player	I only did what you asked. I fought in your arena. Now let the Servils go.
+1	line	General Khazard	Fine! I am not a coward who makes false promises. I have no need of them anyway. You on the other hand, won't be going anywhere.
+1	line	General Khazard	Guard, escort the Servils out. I'll take great pleasure in dealing with this one myself!
+1	line	Sammy Servil	Don't try to fight him! Just run!
+1	action	end
+0	section	Opening the door to the arena after Khazard attacks
+1	line	Player	Hello.
+1	line	Khazard Guard	You! You're the one who killed Bouncer.
+1	line	Khazard Guard	Die you monster!
+1	action	end
+0	section	Talking to the Spectator after defeating Khazard
+1	line	Player	Hello.
+1	line	Spectator	Hey, you're the one who beat Bouncer! Amazing!
+1	action	end
+0	section	Upon defeating General Khazard
+1	line	General Khazard	Going somewhere?
+1	line	Player	But... I killed you!
+1	line	General Khazard	Ha! Arrogant fool! You think you can kill me? I am General Khazard! My power is absolute!
+1	line	General Khazard	Now, part of me would very much like to kill you for what you've done today, but let it be known that I am not without generosity.
+1	line	General Khazard	You proved yourself in battle against me. That is something few can boast of. For that, you may leave. However, if you ever oppose me again, I won't hesitate to wipe you from existence!
+1	line	General Khazard	Now go. I have business to attend to elsewhere that is far more important than you.
+1	action	end
+0	section	Talking to Lady Servil after Khazard attacks
+1	line	Player	Lady Servil.
+1	line	Lady Servil	You're alive! I feared General Khazard would have killed you!
+1	line	Player	He tried, but I escaped.
+1	line	Lady Servil	Thank goodness. I'd have never forgiven myself if you'd have died saving my family.
+1	line	Lady Servil	Now, you'll be pleased to know that my son and husband are safe and recovering at home. Without you they would certainly be dead. Thank you, for everything.
+1	line	Player	It's not a problem.
+1	line	Lady Servil	Please, take this payment. It's the least you deserve.
+0	section	Talking to Lady Servil after defeating Khazard
+1	line	Player	Lady Servil.
+1	line	Lady Servil	You're alive! I feared General Khazard would have killed you!
+1	line	Player	He tried, but I was able to defeat him.
+1	line	Lady Servil	You killed General Khazard?
+1	line	Player	I thought I had at first, but it seems he is not that easy to kill.
+1	line	Lady Servil	Well, at least you're alive.
+1	line	Lady Servil	Now, you'll be pleased to know that my son and husband are safe and recovering at home. Without you they would certainly be dead. Thank you, for everything.
+1	line	Player	It's not a problem.
+1	line	Lady Servil	Please, take this payment. It's the least you deserve.

@@ -982,3 +982,108 @@ coords = '0_54_52_14_47'
 [[spawn]]
 npc = 'ghast_invis'
 coords = '0_53_53_53_28'
+
+# Merlin's Crystal: King Arthur in Camelot (Wiki 2764,3515; the spawn fill's kr_multi_king_arthur is hidden until King's Ransom).
+[[spawn]]
+npc = 'king_arthur'
+coords = '0_43_54_12_59'
+
+# Holy Grail: Merlin in his workshop (Wiki 2767,3501 plane 1), the Fisher King in the withered castle (2763,4687 p1),
+# King Percival in the restored one (2634,4688 p1).
+[[spawn]]
+npc = 'merlin2'
+coords = '1_43_54_15_45'
+
+[[spawn]]
+npc = 'fisher_king'
+coords = '1_43_73_11_15'
+
+[[spawn]]
+npc = 'king_percival'
+coords = '1_41_73_10_16'
+
+# Temple of the Eye: Wizard Persten (Al Kharid, Wiki 3284,3231; the multinpc shows until stage 60), her
+# Wizards' Tower basement variant (stages 85-90), Apprentice Cordelia in the tower (Wiki 3112,3163 p1).
+[[spawn]]
+npc = 'tote_persten_alkharid_parent'
+coords = '0_51_50_20_31'
+
+[[spawn]]
+npc = 'tote_persten_tower_parent'
+coords = '0_48_149_32_36'
+
+[[spawn]]
+npc = 'tote_cordelia_wizard_tower_parent'
+coords = '1_48_49_40_27'
+
+# Biohazard: Omart and Kilron at the wall (Wiki 2560,3266 / 2556,3267), the Mourner HQ's guard (north door),
+# a mourner inside and the sickest one upstairs.
+[[spawn]]
+npc = 'omart'
+coords = '0_40_51_0_2'
+
+[[spawn]]
+npc = 'kilron'
+coords = '0_39_51_60_3'
+
+[[spawn]]
+npc = 'mourner_armed_guard'
+coords = '0_39_52_55_2'
+
+[[spawn]]
+npc = 'mournerstew1'
+coords = '0_39_51_53_60'
+
+[[spawn]]
+npc = 'mournerstew3'
+coords = '1_39_51_53_59'
+
+# Fight Arena: Lady Servil (Wiki 2566,3199).
+[[spawn]]
+npc = 'lady_servil'
+coords = '0_40_49_6_63'
+
+# Tribal Totem: Wizard Cromperty in East Ardougne (Wiki 2684,3325).
+[[spawn]]
+npc = 'cromperty_pre_diary'
+coords = '0_41_51_60_61'
+
+# Sheep Herder: Councillor Halgrive (Wiki 2617,3300), the blue sheep's field spawn (2560,3389), and the
+# four enclosure multinpcs (shown when each sheep is penned).
+[[spawn]]
+npc = 'councillor_halgrive'
+coords = '0_40_51_57_36'
+
+[[spawn]]
+npc = 'plaguesheep_3'
+coords = '0_40_52_0_61'
+
+[[spawn]]
+npc = 'herder_plaguesheep_1_enclosure'
+coords = '0_40_52_37_34'
+
+[[spawn]]
+npc = 'herder_plaguesheep_2_enclosure'
+coords = '0_40_52_38_33'
+
+[[spawn]]
+npc = 'herder_plaguesheep_3_enclosure'
+coords = '0_40_52_37_32'
+
+[[spawn]]
+npc = 'herder_plaguesheep_4_enclosure'
+coords = '0_40_52_36_31'
+
+# Observatory Quest: the assistant (Wiki 2443,3189), the professor's telescope-room multinpc (stages 6-8),
+# the sleeping guard outside the goblins' kitchen gate (2326-2327,9393).
+[[spawn]]
+npc = 'qip_obs_proffesors_assistant'
+coords = '0_38_49_11_53'
+
+[[spawn]]
+npc = 'observatory_professor_multi2'
+coords = '0_38_49_12_54'
+
+[[spawn]]
+npc = 'qip_obs_goblin_guard'
+coords = '0_36_146_23_51'

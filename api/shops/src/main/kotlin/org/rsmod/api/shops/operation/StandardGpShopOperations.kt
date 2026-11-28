@@ -36,6 +36,10 @@ constructor(
     override fun examineShopValue(player: Player, shop: Shop, slot: Int) {
         val obj = shop.inv[slot] ?: return
         val objType = objTypes[obj]
+        if (shop.isFree) {
+            player.mes("${objType.name}: free.")
+            return
+        }
 
         val shopInitialObjCount = shop.inv.initialStockCount(obj)
         val value =
@@ -67,6 +71,10 @@ constructor(
 
         val shopInitialObjCount = shopInv.initialStockCount(obj)
         val availableCurrencyCount = sideInv.count(currencyObj)
+        if (shop.isFree) {
+            freeBuy(player, sideInv, shop, slot, initialPurchaseRequest)
+            return
+        }
         val cappedRequest =
             if (objType.isStackable) {
                 min(Int.MAX_VALUE - sideInv.count(objType), initialPurchaseRequest)
@@ -137,6 +145,52 @@ constructor(
     }
 
     /**
+     * A free shop (sell percentage 0; e.g. team-minigame rewards, which this server hands out at
+     * no cost): take up to [request] with no coins, limited only by inventory space.
+     */
+    private fun freeBuy(player: Player, sideInv: Inventory, shop: Shop, slot: Int, request: Int) {
+        val shopInv = shop.inv
+        val obj = shopInv[slot] ?: return
+        val objType = objTypes[obj]
+        val count =
+            if (objType.isStackable) {
+                min(Int.MAX_VALUE - sideInv.count(objType), request)
+            } else {
+                min(sideInv.freeSpace(), request)
+            }
+        if (count <= 0) {
+            player.mes(NOT_ENOUGH_INV_SPACE)
+            return
+        }
+        val transaction =
+            player.invTransaction(sideInv) {
+                val inv = select(sideInv)
+                val shop = select(shopInv)
+                delete {
+                    this.from = shop
+                    this.obj = obj.id
+                    this.strictCount = count
+                }
+                insert {
+                    this.into = inv
+                    this.obj = obj.id
+                    this.strictCount = count
+                }
+            }
+        if (transaction.success) {
+            restockProcess += shopInv
+        } else {
+            player.mes(NOT_ENOUGH_INV_SPACE)
+        }
+        if (shopInv[slot] == null) {
+            shopInv.resetDefaultStockItem(slot, objType)
+        }
+    }
+
+    private val Shop.isFree: Boolean
+        get() = sellPercentage <= 0.0
+
+    /**
      * Resets the count of a default stock obj to zero when it's sold out, instead of removing it
      * from the inventory. Applies only if [slot] is within the original stock indices
      * ([org.rsmod.game.type.inv.UnpackedInvType.stock]).
@@ -190,6 +244,10 @@ constructor(
     }
 
     override fun invSell(player: Player, sideInv: Inventory, shop: Shop, slot: Int, request: Int) {
+        if (shop.isFree) {
+            player.mes("This shop doesn't buy items.")
+            return
+        }
         val obj = sideInv[slot] ?: return
         val objType = objTypes[obj]
         val uncertType = objTypes.uncert(objType)

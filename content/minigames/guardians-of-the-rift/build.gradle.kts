@@ -1,0 +1,11 @@
+plugins {
+    id("base-conventions")
+}
+
+dependencies {
+    implementation(projects.api.pluginCommons)
+    implementation(projects.api.type.typeSymbols)
+    implementation(projects.content.skills.runecraft)
+    implementation(projects.content.skills.mining)
+    implementation(projects.content.quests)
+}

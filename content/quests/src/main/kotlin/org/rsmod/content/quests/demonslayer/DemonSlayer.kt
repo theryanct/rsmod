@@ -25,6 +25,7 @@ import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -92,7 +93,7 @@ constructor(
             onNpcOpLabel(npcTypes, prysin, "Talk-to") { talkPrysin(it) }
         }
         onNpcOpLabel(npcTypes, DsNpcs.rovin, "Talk-to") { talkRovin(it) }
-        onNpcOpLabel(npcTypes, DsNpcs.traiborn, "Talk-to") { talkTraiborn(it) }
+        with(QuestTalk) { default(npcTypes, DsNpcs.traiborn) { talkTraiborn(it) } }
         onOpNpcU(DsNpcs.traiborn, DsObjs.bones) { talkTraiborn(it.npc) }
         for (drain in DsLocs.drains) {
             onLocOpLabel(locTypes, drain, "Search") { searchDrain() }

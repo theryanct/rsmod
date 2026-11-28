@@ -13,7 +13,6 @@ import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
-import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -44,7 +43,7 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
     override fun ScriptContext.startup() {
         with(QuestTalk) { default(npcTypes, RuneMysteriesNpcs.duke) { talkDuke(it) } }
         for (sedridor in RuneMysteriesNpcs.sedridors) {
-            onNpcOpLabel(npcTypes, sedridor, "Talk-to") { talkSedridor(it) }
+            with(QuestTalk) { default(npcTypes, sedridor) { talkSedridor(it) } }
         }
         val aubury = RuneMysteriesNpcs.aubury
         onOpNpcU(aubury, RuneMysteriesObjs.research_package) { auburyStep(it.npc) }

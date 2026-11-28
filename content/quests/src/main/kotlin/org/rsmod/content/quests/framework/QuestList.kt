@@ -6,10 +6,12 @@ import org.rsmod.api.type.refs.dbrow.DbRowReferences
 import org.rsmod.api.type.refs.dbtable.DbTableReferences
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
+import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
+import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
 import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYER
@@ -17,19 +19,24 @@ import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RI
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
+import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
+import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
+import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
+import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
+import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
@@ -38,9 +45,12 @@ import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_G
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
 import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
+import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
+import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
+import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
@@ -56,10 +66,12 @@ public object BuiltQuests {
         listOf(
             ANIMAL_MAGNETISM,
             BELOW_ICE_MOUNTAIN,
+            BIOHAZARD,
             BLACK_KNIGHTS_FORTRESS,
             CLOCK_TOWER,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            DEATH_PLATEAU,
             DEMON_SLAYER,
             DORICS_QUEST,
             DRAGON_SLAYER,
@@ -67,19 +79,24 @@ public object BuiltQuests {
             DWARF_CANNON,
             ERNEST,
             FAIRYTALE_I,
+            FIGHT_ARENA,
             FISHING_CONTEST,
             GERTRUDES_CAT,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
+            GRAND_TREE,
             HAZEEL_CULT,
+            HOLY_GRAIL,
             IMP_CATCHER,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
             LOST_CITY,
+            MERLINS_CRYSTAL,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MURDER_MYSTERY,
             NATURE_SPIRIT,
+            OBSERVATORY_QUEST,
             PIRATES_TREASURE,
             PLAGUE_CITY,
             PRIEST_IN_PERIL,
@@ -88,9 +105,12 @@ public object BuiltQuests {
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
             SEA_SLUG,
+            SHEEP_HERDER,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
+            TEMPLE_OF_THE_EYE,
             TREE_GNOME_VILLAGE,
+            TRIBAL_TOTEM,
             VAMPYRE_SLAYER,
             WATERFALL_QUEST,
             WITCHS_HOUSE,
