@@ -6,7 +6,6 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.onIfModalButton
-import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -17,10 +16,10 @@ import org.rsmod.content.skills.smithing.configs.SmithingSeqs
 import org.rsmod.content.skills.smithing.configs.SmithingVarBits
 import org.rsmod.content.skills.smithing.configs.SmithingVarps
 import org.rsmod.content.skills.smithing.configs.smithing_components
-import org.rsmod.content.skills.smithing.configs.smithing_content
 import org.rsmod.content.skills.smithing.configs.smithing_objs
 import org.rsmod.game.entity.Player
 import org.rsmod.game.enums.EnumTypeMapResolver
+import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
@@ -38,6 +37,7 @@ class Smithing
 @Inject
 constructor(
     private val objTypes: ObjTypeList,
+    private val locTypes: LocTypeList,
     private val enumResolver: EnumTypeMapResolver,
     private val xpMods: XpModifiers,
 ) : PluginScript() {
@@ -63,8 +63,18 @@ constructor(
         )
 
     override fun ScriptContext.startup() {
-        onOpLoc1(smithing_content.anvil) { openAnvil(null) }
-        onOpLocU(smithing_content.anvil) { openAnvil(it.objType) }
+        // Bind every loc named "Anvil" by the slot of its "Smith" op.
+        for (type in locTypes.values) {
+            if (!type.name.equals("Anvil", ignoreCase = true)) {
+                continue
+            }
+            val slot = type.op.indexOfFirst { it.equals("Smith", ignoreCase = true) }
+            if (slot == -1) {
+                continue
+            }
+            onOpLocSlot(type, slot + 1) { openAnvil(null) }
+            onOpLocU(type) { openAnvil(it.objType) }
+        }
 
         onIfModalButton(smithing_components.make_1) { player.setMakeX(1) }
         onIfModalButton(smithing_components.make_5) { player.setMakeX(5) }

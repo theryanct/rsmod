@@ -1,58 +1,18 @@
 package org.rsmod.content.skills.smithing.configs
 
-import org.rsmod.api.type.editors.loc.LocEditor
 import org.rsmod.api.type.refs.comp.ComponentReferences
-import org.rsmod.api.type.refs.content.ContentReferences
 import org.rsmod.api.type.refs.enums.EnumReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
-import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
-import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.obj.ObjType
-
-internal typealias smithing_content = SmithingContent
 
 internal typealias smithing_objs = SmithingObjs
 
 internal typealias smithing_components = SmithingComponents
-
-internal object SmithingContent : ContentReferences() {
-    val furnace = find("smithing_furnace")
-    val anvil = find("smithing_anvil")
-}
-
-internal object SmithingLocs : LocReferences() {
-    val furnace = find("furnace")
-    val furnace2 = find("furnace2")
-    val fai_falador_furnace = find("fai_falador_furnace")
-    val varrock_diary_furnace = find("varrock_diary_furnace")
-    val newbiefurnace = find("newbiefurnace")
-    val tut2_furnace = find("tut2_furnace")
-
-    val anvil = find("anvil")
-}
-
-/** Marks F2P furnaces and anvils so the smithing scripts can bind to them by content group. */
-internal object SmithingStations : LocEditor() {
-    init {
-        furnace(SmithingLocs.furnace)
-        furnace(SmithingLocs.furnace2)
-        furnace(SmithingLocs.fai_falador_furnace)
-        furnace(SmithingLocs.varrock_diary_furnace)
-        furnace(SmithingLocs.newbiefurnace)
-        furnace(SmithingLocs.tut2_furnace)
-
-        edit(SmithingLocs.anvil) { contentGroup = smithing_content.anvil }
-    }
-
-    private fun furnace(type: LocType) {
-        edit(type) { contentGroup = smithing_content.furnace }
-    }
-}
 
 internal object SmithingObjs : ObjReferences() {
     val hammer = find("hammer")
