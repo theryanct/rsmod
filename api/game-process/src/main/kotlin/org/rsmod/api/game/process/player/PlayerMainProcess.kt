@@ -1,7 +1,9 @@
 package org.rsmod.api.game.process.player
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.player.forceDisconnect
+import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.ui.closeSubs
 import org.rsmod.api.player.ui.ifClose
 import org.rsmod.api.utils.logging.GameExceptionHandler
@@ -38,7 +40,7 @@ constructor(
                 continue
             }
             player.processedMapClock = mapClock.cycle
-            player.tryOrDisconnect {
+            player.tryOrRecover {
                 resumePausedProcess()
                 refreshFaceEntity()
                 processIfCloseQueue()
@@ -113,14 +115,55 @@ constructor(
         }
     }
 
-    private inline fun Player.tryOrDisconnect(block: Player.() -> Unit) =
+    /** Per-player recent script-error cycles, for the loop guard. */
+    private val recentErrors = HashMap<Int, ArrayDeque<Int>>()
+
+    /**
+     * A script error must never kick the player (Ryan rule): log it as SCRIPT_ERROR (WARN+ goes to
+     * gameplay-problems.log), cancel the failing coroutine/queues/interaction, close modals and tell
+     * the player. Only a player erroring [LOOP_LIMIT] times within [LOOP_WINDOW_CYCLES] is
+     * disconnected (a loop guard against an error repeating every tick).
+     */
+    private inline fun Player.tryOrRecover(block: Player.() -> Unit) =
         try {
             block(this)
         } catch (e: Exception) {
-            forceDisconnect()
-            exceptionHandler.handle(e) { "Error processing main cycle for player: $this." }
+            recover(e)
         } catch (e: NotImplementedError) {
-            forceDisconnect()
-            exceptionHandler.handle(e) { "Error processing main cycle for player: $this." }
+            recover(e)
         }
+
+    private fun Player.recover(e: Throwable) {
+        val now = mapClock.cycle
+        val errors = recentErrors.getOrPut(slotId) { ArrayDeque() }
+        errors.addLast(now)
+        while (errors.isNotEmpty() && now - errors.first() > LOOP_WINDOW_CYCLES) errors.removeFirst()
+        val frames =
+            e.stackTrace
+                .filter { it.className.startsWith("org.rsmod.content") }
+                .take(4)
+                .joinToString(" < ") { "${it.className.substringAfterLast('.')}.${it.methodName}:${it.lineNumber}" }
+        logger.error(e) {
+            "SCRIPT_ERROR player=$username coords=$coords interaction=$interaction " +
+                "count=${errors.size} ex=${e::class.simpleName}: ${e.message} frames=[$frames]"
+        }
+        if (errors.size >= LOOP_LIMIT) {
+            errors.clear()
+            forceDisconnect()
+            exceptionHandler.handle(e) { "Repeated script errors for player: $this; disconnected." }
+            return
+        }
+        runCatching { cancelActiveCoroutine() }
+        runCatching { queueList.clear() }
+        runCatching { weakQueueList.clear() }
+        runCatching { clearInteraction() }
+        runCatching { ifClose(eventBus) }
+        runCatching { mes("Something went wrong - this has been logged.") }
+    }
+
+    private companion object {
+        private val logger = InlineLogger()
+        private const val LOOP_LIMIT = 5
+        private const val LOOP_WINDOW_CYCLES = 10
+    }
 }
