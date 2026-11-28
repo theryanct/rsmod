@@ -126,3 +126,12 @@ coords = '0_48_50_52_41'
 [[spawn]]
 npc = 'prince_ali_palace'
 coords = '0_51_49_22_27'
+
+# Al Kharid toll gate: the two border guards (east side of the gate).
+[[spawn]]
+npc = 'borderguard1'
+coords = '0_51_50_5_26'
+
+[[spawn]]
+npc = 'borderguard2'
+coords = '0_51_50_5_29'
