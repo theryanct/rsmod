@@ -1237,3 +1237,40 @@ coords = '2_30_80_32_26'
 [[spawn]]
 npc = 'cowboss_farmer'
 coords = '0_49_51_34_15'
+
+# The Writing's on the Wall: the scene multinpcs (wotw) the world spawns lack. Authored
+# placements (Ryan-test).
+# Land's End Hudson (the world-spawns one is placed far north; Authored)
+[[spawn]]
+npc = 'wotw_hudson_lands_end'
+coords = '0_23_53_44_44'
+
+# Hosidius, outside Bernard's house
+[[spawn]]
+npc = 'wotw_betty_hosidius'
+coords = '0_27_54_57_62'
+
+# Hosidius, inside
+[[spawn]]
+npc = 'wotw_betty_hosidius_inside'
+coords = '0_27_55_58_4'
+
+# the Piscarilius cell
+[[spawn]]
+npc = 'wotw_betty_piscarilius_jail'
+coords = '0_27_59_58_4'
+
+# Shayzien, outside Edwards' house
+[[spawn]]
+npc = 'wotw_hudson_shayzien'
+coords = '0_22_56_46_56'
+
+# Shayzien corporal
+[[spawn]]
+npc = 'wotw_soldier_shayzien_1'
+coords = '0_22_56_45_54'
+
+# Shayzien corporal
+[[spawn]]
+npc = 'wotw_soldier_shayzien_2'
+coords = '0_22_56_48_57'

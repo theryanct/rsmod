@@ -1,0 +1,730 @@
+# Generated from the OSRS Wiki page "Transcript:The Writing's on the Wall" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to Shayzien soldiers before starting the quest
+0	section	Corporal Breiman
+1	line	Player	What's going on here?
+1	line	Corporal Breiman	There's been a murder. No need to worry though, we're here to get to the bottom of it.
+1	action	end
+0	section	Sergeant Hudson
+1	line	Player	What's going on here?
+1	line	Sergeant Hudson	I'm afraid there's been a murder. Now please, move along. We need space to conduct our investigation.
+1	action	end
+0	section	Corporal Campter
+1	line	Player	What's going on here?
+1	line	Corporal Campter	There's been a murder. No need to worry though, we're here to get to the bottom of it.
+1	action	end
+0	section	Starting off
+0	section	Talking to Betty
+1	line	Player	Hello there. Who are you?
+1	line	Betty	Oh... Hello. The name's Betty.
+1	line	Player	You seem upset. What's wrong?
+1	cond	If the player doesn't have the requirements to start the quest:
+2	line	Betty	Nothing you can help me with.
+2	action	end
+1	cond	If the player has the requirements to start the quest:
+2	line	Betty	My father, Jack. He's been murdered! The authorities are here, but they don't seem to care! I don't know what to do.
+2	line	Player	Well, maybe I could help. I could do some investigating of my own.
+2	line	Betty	You... You'd do that?
+2	select	Start The Writing's on the Wall quest?
+2	option	Yes.
+3	line	Player	Of course.
+3	line	Betty	Thank you. Talk to Sergeant Hudson. He's in charge of the investigation. You'll need his permission to help.
+3	action	end
+2	option	No.
+3	line	Player	Well... No. Sorry, but I don't have time. I hope it all works out for you though.
+3	line	Betty	I... Thank you.
+3	action	end
+0	section	Talking to Betty again
+1	line	Betty	Have you spoken to Sergeant Hudson yet?
+1	line	Player	Not yet.
+1	line	Betty	Please hurry.
+1	action	end
+0	section	Talking to Shayzien soldiers after starting the quest
+0	section	Corporal Breiman or Corporal Campter
+1	line	Player	What's going on here?
+1	line	Corporal Breiman	There's been a murder. No need to worry though, we're here to get to the bottom of it.
+1	line	Player	Anything I can help with?
+1	line	Corporal Breiman	We have things under control. That said, if you think you can contribute, you might want to speak to Sergeant Hudson. He's in charge here.
+1	action	end
+0	section	Sergeant Hudson
+1	line	Player	Are you Sergeant Hudson?
+1	line	Sergeant Hudson	That's right. What do you need?
+1	line	Player	Betty said you were the one in charge of the investigation into her father's murder. I was wondering if I could help.
+1	line	Sergeant Hudson	Well, thank you for the offer, but we've got this in hand.
+1	line	Player	Betty doesn't seem to feel that way. She doesn't think you care.
+1	line	Sergeant Hudson	The girl has just lost her father. Of course she's going to be emotional right now. She has nothing to fear though. We'll get to the bottom of this.
+1	line	Player	Perhaps you'll get to the bottom of it faster with an extra pair of hands. I could be quite useful.
+1	line	Sergeant Hudson	Hmm... Well if it makes Betty feel better, then fine. Feel free to have a look around the house. Just don't go messing up any evidence.
+1	action	end
+0	section	Talking to Shayzien soldiers after getting permission to help
+0	section	Sergeant Hudson
+1	line	Player	What do I need to be doing?
+1	line	Sergeant Hudson	You don't need to be doing anything. We have everything in hand here.
+1	line	Player	You know what I mean...
+1	line	Sergeant Hudson	If you wish to investigate the crime scene, I won't stop you, but I'm not going to waste time telling you how to do it. I'm busy enough as it is.
+1	action	end
+0	section	Corporal Breiman
+1	line	Corporal Breiman	How goes it? You're the one doing some of your own investigating, right?
+1	line	Player	That's right.
+1	line	Corporal Breiman	Pleased to meet you. I'm Corporal Michael Breiman. I work with Corporal Campter and Sergeant Hudson.
+1	line	Player	And you guys at the ones who investigate things like this?
+1	line	Corporal Breiman	Like murder? Yup, that's our domain. Very cheery.
+1	line	Corporal Breiman	We work for the Shayzien Constabulary. It's part of the Shayzien Military. We investigate crimes all across the kingdom.
+1	line	Player	I see. What are your thoughts so far?
+1	line	Corporal Breiman	Well, it's still a bit early to suggest too much. That said, this one doesn't look good.
+1	line	Player	Do any murders look good?
+1	line	Corporal Breiman	Well... No, but this one could be particularly nasty. You see, there are generally three kinds of murder.
+1	line	Corporal Breiman	First, you've got your petty crime that gets out of hand. Thievery and the like. From time to time, a thief ends up biting off more than they can chew, and the victim fights back.
+1	line	Corporal Breiman	Both parties panic in that situation, and it sometimes ends badly.
+1	line	Corporal Breiman	Then you've got your domestic violence. An argument breaks out between the victim and someone close to them and it spirals out of control. It's by far the most common type of murder we see.
+1	line	Corporal Breiman	Now, the thing about those first two is that the killer never sets out to kill someone. One thing leads to another and then there's a body on the floor. That's what's so dangerous about the third kind.
+1	line	Corporal Breiman	You see, with the third kind of murder, the killer wants the victim dead. They plan for it, sometimes for months. They set out with the intention of ending someone's life.
+1	line	Player	And you think that's what we're dealing with here?
+1	line	Corporal Breiman	It definitely looks that way. Our victim here was a bit of a public figure before he retired. I even remember hearing stories about him when I was a kid.
+1	line	Corporal Breiman	That, combined with the lovely decoration on the wall, and the way the victim's been dismembered... Well, it doesn't paint a good picture...
+1	line	Corporal Breiman	Anyway, I'll let you get on with your investigation. If you need anything, just let me or my partner know. She should be outside somewhere.
+1	line	Player	Will do. Thanks.
+1	action	end
+0	section	Corporal Campter
+1	line	Player	Hello there.
+1	line	Corporal Campter	Hello, citizen. I hear you're going to be doing some investigating with us.
+1	line	Player	That's right. Not that your boss seemed very happy about it.
+1	line	Corporal Campter	Ah, don't worry about him. He can be a bit short with people sometimes. It's how he is when he's in his thinking mode.
+1	line	Player	Thinking mode?
+1	line	Corporal Campter	That's right. He's the brains of the operation you see. I'm Corporal Sarah Campter. It's my job, along with my partner, to gather up any evidence and interview the witnesses.
+1	line	Corporal Campter	Once we've done that, we present it to the Sergeant and he pieces it all together. He's caught more killers than you could count!
+1	line	Player	I see. So, any tips for my investigation?
+1	line	Corporal Campter	Well, when it comes to murder, there are a few things we generally look at. First, there's the body itself. Determining the cause of death is a good start for any investigation.
+1	line	Corporal Campter	After that, there's searching the crime scene, or any other areas of interest. We look for anything the killer might have left behind, but also possible hints at a motive that could be hidden amongst the victim's possessions.
+1	line	Corporal Campter	Finally, the witnesses. We'll interview anyone who we think might have seen something, or who might have had contact with the victim before their death. Neighbours... family... Those kinds of people,
+1	line	Corporal Campter	They can often fill in critical gaps in the evidence, but be careful. Even when not guilty, people have a habit of telling lies.
+1	line	Player	I see. Thanks for the help.
+1	line	Corporal Campter	Don't mention it. If you need anything else, my partner should be over in the house. He might have some useful information for you.
+1	action	end
+0	section	Detective work
+0	section	Inspecting Jack's body
+1	select	What would you like to do?
+1	option	Inspect the head.
+2	box	You inspect the victim's head. His eyes are wide open and are looking towards the wall by the door.
+2	action	other
+1	option	Inspect the arms.
+2	box	You inspect the victim's arms. They are coated in blood and both hands have been removed.
+2	action	other
+1	option	Inspect the torso.
+2	box	You inspect the victim's torso. There's a single stab wound to the heart that is almost certainly the cause of death. You also spot a letter, hidden under the victim.
+2	select	Take the letter?
+2	option	Yes.
+2	box	You take the letter from under the body.
+3	action	other
+2	option	No.
+3	action	end
+1	option	Inspect the legs.
+2	box	You inspect the victim's legs. You don't find anything of note.
+2	action	other
+1	option	Nothing.
+2	action	end
+0	section	Talking to Betty
+1	line	Betty	Have you found anything yet?
+1	cond	If no evidence has been found.
+2	line	Player	Not yet.
+1	cond	If some evidence has been found.
+2	line	Player	I've found a few things, but I think there's still more to uncover.
+1	line	Betty	Please hurry.
+1	select	Select an option
+1	option	Did you see or hear anything before your father's death?
+2	line	Player	Did you see or hear anything before your father's death?
+2	line	Betty	No, I wasn't here when it happened. I was doing some shopping up in Shayzien. Everything seemed normal when I left, but then I came back and I found him like... like that...
+2	action	other
+1	option	Do you know why someone would want your father dead?
+2	line	Player	Do you know why someone would want your father dead?
+2	line	Betty	Maybe... but... it surely can't be possible...
+2	line	Player	What is it?
+2	line	Betty	It was a long time ago, when I was just a child. My mother and sister were murdered, right here in Land's End, but they never found the killer...
+2	line	Betty	My father used to be a judge you see. A lot of criminals would have considered him an enemy. Most likely one of them killed my family to get to him.
+2	line	Betty	But that was so long ago... Could they really have come back now?
+2	line	Player	Hopefully not, but we can't rule anything out at this point.
+2	action	other
+1	option	I'll get back to it.
+2	line	Player	I'll get back to it.
+2	action	end
+0	section	Talking to Hugor
+1	line	Hugor	Got any *hic* wine?
+1	line	Player	No... But I did want to ask you some questions about the murder that happened up the road.
+1	line	Hugor	Ah, yeah... *hic* Go on then.
+1	select	Select an option
+1	option	What do you know about the victim?
+2	line	Player	What do you know about the victim?
+2	line	Hugor	*hic* Jack Holland! That was his name. Older *hic* chap. Lived here a long time with his daughter, Betty.
+2	line	Player	And did you know him well?
+2	line	Hugor	Well? No I don't think he *hic* is very well. Someone killed him!
+2	line	Player	Yes, I'm aware. I meant 'well' as in 'familiar'.
+2	line	Hugor	Oh! No not really. He was a *hic* private sort. Never looked happy really. Probably could have done with having a bit of wine.
+2	action	other
+1	option	Did you see or hear anything around the time of the murder?
+2	line	Player	Did you see or hear anything around the time of the murder?
+2	line	Hugor	That I did! I was just pouring myself a bit of *hic* wine, when I heard someone shout something.
+2	line	Player	What was it?
+2	line	Hugor	Oh... er... I think it was... 'You!'
+2	line	Player	Hmm... Interesting...
+2	action	other
+1	option	Do you know why someone would want the victim dead?
+2	line	Player	Do you know why someone would want the victim dead?
+2	line	Hugor	No, I don't *hic* think so. I didn't know him too well though.
+2	action	other
+1	option	Actually, I'll be back later.
+2	line	Player	Actually, I'll be back later.
+2	action	end
+1	option	That's all for now.
+2	line	Player	That's all for now.
+2	action	end
+0	section	Searching Lan the Butcher's bed
+1	box	You search the bed and find a bloody knife under it.
+0	section	Searching Lan the Butcher's bed again
+1	box	You search the bed, but find nothing of note.
+0	section	Inspecting the knife
+1	box	It's a sharp knife that's covered in blood.
+0	section	Talking to Lan the Butcher
+1	line	Lan the Butcher	What d'ya want?
+1	line	Player	I'm looking into the murder that happened just up the road. I wanted to ask you a few questions.
+1	line	Lan the Butcher	Oh... I guess tha's okay...
+1	select	Select an option
+1	option	What do you know about the victim?
+2	line	Player	What do you know about the victim?
+2	line	Lan the Butcher	Well... er... he didn't used to live 'ere all the time. I think this was his holiday home or somethin' like that. Then 'bout ten years ago he moved here permanently.
+2	line	Player	And you were living here back then as well?
+2	line	Lan the Butcher	Yup. I've been runnin' me butchers here for a long time. A long time indeed...
+2	line	Player	You must have interacted with each other quite a bit then in that time?
+2	line	Lan the Butcher	Nope. He kept 'imself to 'imself. I like to do the same. It's nice an' peaceful here. No disturbances. You can get on with things without people botherin' you.
+2	line	Player	Business must be slow if you're running a butchers in a quiet place like this. Especially given you don't seem to have much product around...
+2	line	Lan the Butcher	Heh! I don't keep it up here, do I? It's all down in the basement. I keep it there, that I do.
+2	line	Player	What basement?
+2	line	Lan the Butcher	...
+2	line	Player	...
+2	line	Lan the Butcher	...
+2	line	Player	Maybe I should take a look around...
+2	action	other
+1	option	Did you see or hear anything around the time of the murder?
+2	line	Player	Did you see or hear anything around the time of the murder?
+2	line	Lan the Butcher	Nope. I was sleepin'. Guess that's what he's doing now, heh!
+2	line	Player	You find murder funny?
+2	line	Lan the Butcher	No... Was just sayin', I was...
+2	action	other
+1	option	Do you know why someone would want the victim dead?
+2	line	Player	Do you know why someone would want the victim dead?
+2	line	Lan the Butcher	Maybe his daughter killed him 'cause he was snoring too loud?
+2	line	Player	That doesn't seem likely...
+2	line	Lan the Butcher	No? It's a very small house for two people. I wouldn't blame her if she'd got a bit sick of 'im.
+2	line	Player	So you can't think of any actual reason why someone would want him dead?
+2	line	Lan the Butcher	Nope. I think he was some big important somebody up in Shayzien once, but that was a long time ago. By the end he was just a nobody. Forgotten. Just like the rest of us...
+2	action	other
+1	option	I found this knife under your bed...
+2	line	Player	I found this knife under your bed...
+2	box	You show the knife to Lan.
+2	line	Lan the Butcher	Hey, that's my knife! I've been lookin' for that for a long while... A very long while indeed.
+2	line	Player	Why does it have blood on it?
+2	line	Lan the Butcher	From the meat.
+2	line	Player	I see...
+2	action	other
+1	option	Actually, I'll be back later.
+2	line	Player	Actually, I'll be back later.
+2	action	end
+1	option	That's all for now.
+2	line	Player	That's all for now.
+2	action	end
+0	section	Talking to Betty after finding all evidence
+1	line	Betty	Have you found anything yet?
+1	line	Player	Nothing totally solid, but I've definitely uncovered some things that the authorities will want to know about.
+1	line	Betty	I guess you should let Sergeant Hudson know.
+1	select	Select an option
+1	option	Did you see or hear anything before your father's death?
+2	action	above
+1	option	Do you know why someone would want your father dead?
+2	action	above
+1	option	I'll get back to it.
+2	action	above
+0	section	Talking to Sergeant Hudson
+1	line	Player	I've found some interesting things that you should know about.
+1	line	Sergeant Hudson	There's a good chance we've found them ourselves already, but let's hear them.
+1	line	Player	The victim was seemingly killed by a stab wound to the heart, and it seems they were specifically targeted by the killer. Some sort of encoded message was left on them, and there were more symbols on the wall as well.
+1	line	Sergeant Hudson	And?
+1	line	Player	The victim was once a judge and made a fair few enemies. It's possible one of them specifically targeted him. If so, it might not be the first time. Many years ago, his wife and daughter were killed as well.
+1	line	Sergeant Hudson	Yes, Betty told us that as well, but none of this gives us much to go on. As you said, he likely had multiple enemies. We need something more specific.
+1	line	Player	Well, from what a neighbour overheard, the killer was likely known to the victim.
+1	line	Sergeant Hudson	That's not too surprising and doesn't actually narrow things down much. He knew a lot of people, and would remember a lot more from his past.
+1	line	Sergeant Hudson	Unfortunately, it doesn't seem you've really uncovered anything that will help us. Still, maybe your work will reassure Betty a bit. Now, it's time we started wrapping up here.
+1	line	Player	Well, hang on... What about the local butcher?
+1	line	Sergeant Hudson	What about him?
+1	line	Player	An odd acting butcher who has no produce, yet did have a blood-covered knife hidden under his bed. Does that not seem a bit suspicious?
+1	line	Sergeant Hudson	A blood-covered knife? We missed that...
+1	line	Sergeant Hudson	Still, it's hardly proof of anything. We haven't found any real link between him and the victim, nor do we have any more information on the odd symbols.
+1	line	Sergeant Hudson	However, I would say we have enough reason to take him in for questioning. I'll have the corporals arrange it...
+1	line	Sergeant Hudson	Right, I think we've done all we need to here. Someone will be out soon to take care of your father's body. In the meantime, Betty, do you have anywhere else you can go?
+1	line	Betty	To my uncle's south of Hosidius, but... is that it? You're not going to do anything else?
+1	line	Sergeant Hudson	We'll continue our investigation back at the Shayzien Administration. We have some leads to explore and a person of interest to question further. We'll let you know if we learn anything.
+1	line	Betty	And in the meantime, the killer gets to remain loose?! What if they come back?! What if I'm next?!
+1	line	Sergeant Hudson	I promise you, we don't want a killer out there any longer than they need to be. We will find them, Betty. You have my word.
+1	line	Sergeant Hudson	For now, if you're feeling unsafe, I can arrange for you to have some protection.
+1	line	Betty	Protection? From you? I know what you people are like. Father told me more than a few stories about the 'honourable' Shayzien Constabulary...
+1	line	Betty	No. You people can't protect me. I'll be better off on my own.
+1	line	Sergeant Hudson	I'm sorry you feel that way. Will you at least allow me to arrange an escort to take you to your uncle's home?
+1	line	Betty	No... I'll make my own way there... after I've properly said goodbye to my father.
+1	line	Sergeant Hudson	If you're sure... Take care of yourself, Betty. We'll be in touch soon.
+1	line	Player	Would you like me to take you to Hosidius?
+1	line	Betty	No. Thank you, but I'd like some time alone. A quiet walk is the sort of thing I need. But...
+1	line	Player	What is it?
+1	line	Betty	I shouldn't ask any more of you... but I just don't trust the authorities to see this through. Could you meet me at my uncle's house? I want to talk through everything a bit more.
+1	line	Player	Of course. It's not a problem.
+1	line	Betty	Thank you. My uncle lives south of the city itself, just north west of the Tithe Farm. I'll meet you there.
+1	action	end
+0	section	Searching Jack's body again
+1	box	You search the body, but find nothing of note.
+0	section	Talking to Betty again
+1	line	Betty	Thank you for agreeing to help. My uncle lives south of Hosidius, just north west of the Tithe Farm.
+1	line	Player	I'll meet you there soon.
+1	action	end
+0	section	Hosidius
+0	section	Talking to Betty
+1	line	Betty	You made it.
+1	line	Player	Hey, Betty. Is your uncle not around?
+1	line	Betty	I don't know... The doors are locked, which is very odd...
+1	line	Player	He doesn't normally lock them?
+1	line	Betty	No. This is a very safe area. He never normally needs to.
+1	line	Player	Curious... Let me see if I can find a way inside.
+1	action	end
+0	section	Talking to Betty again
+1	line	Betty	Have you found a way inside yet?
+1	line	Player	Not yet. I'll keep working on it.
+1	line	Betty	Thanks. This is very unusual...
+1	action	end
+0	section	Attempting to open the door from the outside
+1	box	The door is securely locked.
+1	action	end
+0	section	Climbing through the window
+1	box	You climb through the window.
+0	section	Unlocking the doors
+1	line	Player	That's the door open. No sign of your uncle though...
+1	line	Betty	Maybe he's downstairs... Wait here. I'll go have a look.
+1	line	Betty	No!
+1	line	Player	Betty?!
+1	line	Betty	He's... He's...
+1	line	Betty	This can't be happening... This can't be happening!
+1	line	Player	We'd better get to Shayzien right away. We need to tell Sergeant Hudson about this.
+1	line	Betty	What? No!
+1	line	Player	Betty...
+1	line	Betty	Don't you see? We can't trust him! We can't trust anyone! No. We need to work out what happened on our own.
+1	line	Player	We can't keep the authorities out of this, Betty. But... maybe I could take a look around first. I could at least make sure we know what happened before we speak to them.
+1	line	Betty	Yes... Do it.
+1	action	end
+0	section	Talking to Betty in her uncle's basement
+1	line	Betty	Have you found anything yet?
+1	cond	If no evidence has been found.
+2	line	Player	Not yet.
+1	cond	If some evidence has been found.
+2	line	Player	I've found a few things, but I think there's still more to uncover.
+1	line	Betty	Okay...
+1	select	Select an option
+1	option	I reckon I've learnt everything I can.
+2	line	Player	I reckon I've learnt everything I can.
+2	line	Betty	And?
+2	line	Player	I've found a few things that might be of note, but the main one is that I found some symbols, just like the ones back at your home.
+2	line	Betty	Symbols? What do they mean?
+2	action	below
+1	option	Do you know why someone would want your uncle dead?
+2	line	Player	Do you know why someone would want your uncle dead?
+2	line	Betty	No. Uncle Bernard wasn't like my father, working some dangerous job. Before he retired, he was just a clerical assistant. He spent his days filing papers! He wasn't even a proper member of the army!
+2	action	other
+1	option	Was your uncle a big drinker?
+2	line	Player	Was your uncle a big drinker?
+2	line	Betty	I suppose so. He was always a big fan of wine.
+2	line	Player	Would he drink with others, or alone?
+2	line	Betty	Mostly alone. He liked his privacy. He'd always be happy to get a bottle or two out if he did have visitors though. He'd always insist on me or my father having at least one drink with him if we visited.
+2	action	other
+1	option	Have you heard of the Keystone Lodge?
+2	line	Player	Have you heard of the Keystone Lodge?
+2	line	Betty	Yes... It was some special group Uncle Bernard was part of. Father was a member as well. I don't really know what it was all about. Something to do with self- betterment for the good of all, I think.
+2	line	Betty	It all seemed a bit silly to me, but it kept them happy, at least... until the group closed down a few months ago.
+2	line	Player	Do you know why it closed?
+2	line	Betty	Lack of new members apparently.
+2	action	other
+1	option	I'll get back to it.
+2	line	Player	I'll get back to it.
+2	action	end
+0	section	Inspecting Bernard's body
+1	select	What would you like to do?
+1	option	Inspect the head.
+2	box	You can't inspect the victim's head as it has been completely removed.
+2	action	other
+1	option	Inspect the arms.
+2	box	You inspect the victim's arms. Next to one of the hands is a half-drunk bottle of wine. Curiously, the fluid inside appears to have separated in a way that you wouldn't expect from wine.
+2	action	other
+1	option	Inspect the torso.
+2	box	You inspect the victim's torso. There's a single stab wound to the heart that is almost certainly the cause of death.
+2	action	other
+1	option	Inspect the legs.
+2	box	You inspect the victim's legs. The shoes are covered in dirt.
+2	action	other
+1	option	Nothing.
+2	action	end
+0	section	Searching the bookcase
+1	box	You search the bookcase and find a certificate.
+0	section	Reading the certificate
+0	section	Searching the bookcase again
+1	box	You search the bookcase, but find nothing of note.
+0	section	Searching the compost bin
+1	box	You search the compost bin and find a decapitated head hidden in it.
+0	section	Inspecting the head
+1	box	You take a closer look at the head and notice the tongue is missing. In its place is a letter. You take it.
+0	section	Searching the compost bin again
+1	box	You search the compost bin, but all you find is compost.
+0	section	Talking to the monk
+1	line	Player	Hello there. I was wondering if I could ask you some questions?
+1	line	Monk	Go ahead, my child.
+1	select	Select an option
+1	option	Do you know anything about the person who lives in this house?
+2	line	Player	Do you know anything about the person who lives in this house?
+2	line	Monk	Ah, you mean that blaspheming dissident! He is not someone worth knowing about, but alas, I have had the misfortune of interacting with him.
+2	line	Player	Okay, there's clearly a story here.
+2	line	Monk	That there is, my child. I am from the nearby camp of peaceful monks. We spend our days dedicating ourselves to Saradomin, and sometimes spreading his teachings across the kingdom.
+2	line	Monk	I regularly travel around here, sharing the word of our holy lord. That is what I am doing right now, in fact, and it was what I was doing when he came and confronted me.
+2	line	Player	What did he confront you about?
+2	line	Monk	He said I had no business spreading the word of Saradomin anywhere near his home. He said it was an affront to his order, whatever that means. He then threatened to get violent if I did it again!
+2	line	Player	I see...
+2	action	other
+1	option	Have you seen anything odd around here lately?
+2	line	Player	Have you seen anything odd around here lately?
+2	line	Monk	No, I don't think so. Everything has been nice and quiet.
+2	line	Player	No one acting suspicious at all? Or even just someone you didn't recognise?
+2	line	Monk	No one at all. I'm very good at remembering people. It's an important part of my work.
+2	line	Player	I see. Fair enough.
+2	action	other
+1	option	Actually, I'll be back later.
+2	line	Player	Actually, I'll be back later.
+2	line	Monk	Saradomin be with you.
+2	action	end
+1	option	That's all for now.
+2	line	Player	That's all for now.
+2	line	Monk	Saradomin be with you.
+2	action	end
+0	section	Talking to Joyce
+1	line	Player	Hello there. I was wondering if I could ask you some questions?
+1	line	Joyce	Questions? Yes, I suppose so.
+1	select	Select an option
+1	option	Do you know anything about the person who lives in that house?
+2	line	Player	Do you know anything about the person who lives in that house?
+2	line	Joyce	Aye, that's the home of Bernard Holland. He's not the most social of people, but he's normally friendly enough. Always says hello when he heads out to tend to his onions.
+2	line	Player	So he's a farmer as well then?
+2	line	Joyce	Not like we are. I think for him it's more of a hobby. I seem to recall that he didn't always live around here. Shayzien is where he used to be from I think.
+2	action	other
+1	option	Have you seen anything odd around here lately?
+2	line	Player	Have you seen anything odd around here lately?
+2	line	Joyce	Odd? Like what?
+2	line	Player	Maybe someone new passing through and acting suspicious, or something like that.
+2	line	Joyce	Someone new? We don't get many new people coming through here. We're nice and out of the way. Typically it's just people heading past to go to the Tithe Farm.
+2	action	other
+1	option	Actually, I'll be back later.
+2	line	Player	Actually, I'll be back later.
+2	action	end
+1	option	That's all for now.
+2	line	Player	That's all for now.
+2	action	end
+0	section	Talking to Betty after finding all the clues
+1	line	Betty	Have you found anything yet?
+1	line	Player	Yes, I've found a few things that might be of note, but the main one is that I found some symbols, just like the ones back at your home.
+1	line	Betty	Symbols? What do they mean?
+1	line	Player	They seem to be part of some sort of cipher. There was also a letter back at your home that had the same symbols on it.
+1	line	Betty	A cipher...? I don't understand. Why would the killer be doing this?
+1	line	Player	I'm not sure, but it seems they want us to translate the letter. They're clearly intentionally leaving clues for how to do so.
+1	line	Betty	But... if they're leaving clues, yet you don't have enough to translate the letter yet, that can only mean...
+1	line	Player	They plan to strike again... if they haven't already. Betty, we need to get you to safety. We need to go to Sergeant Hudson.
+1	line	Betty	No... We can't trust him! This kingdom is rotten to its core. It's the very thing my father spent so long fighting. We can't trust anyone of authority here.
+1	line	Player	Surely there must be someone?
+1	line	Betty	My father... he was good friends with a Shayzien captain, before they both retired. Captain Jensen is her name. She was one of the good ones. She can help us. I trust her.
+1	line	Player	Hmm... Alright, where can we find her?
+1	line	Betty	She lives in Port Piscarilius now.
+1	line	Player	In that case, let's head over there. It's not safe for you to travel alone, so we'll go together.
+1	line	Betty	Okay... Just let me know when you're ready to go.
+1	select	Select an option
+1	option	Let's get going.
+2	line	Player	Let's get going.
+2	box	You depart for Port Piscarilius with Betty.
+2	line	Sergeant Hudson	So here you are.
+2	line	Player	Sergeant Hudson? What is this?
+2	line	Sergeant Hudson	What this is, is the two of you now being suspects in a murder investigation. You were spotted at a crime scene, and yet you chose not to report what happened there.
+2	line	Player	Hang on! We can explain!
+2	line	Sergeant Hudson	I hope you can, and you will very much get your chance to do so. Corporal, find a cell for them in the local guardhouse. We'll question them once we're done here.
+2	box	The corporal escorts you and Betty to a cell in the nearby guardhouse.
+2	line	Betty	No, no, no! This can't be happening...
+2	line	Betty	Can't those fools see what they're doing?! Something horrible is happening, and rather than doing anything about it, they just throw us in a cell instead!
+2	line	Player	They're not wrong though. We did fail to report a murder to them.
+2	line	Betty	With good reason!
+2	line	Player	Well, let's hope we can explain that to them when they come to question us.
+2	line	Betty	What? We can't just stay here! Don't you see? They were already here when we arrived! They can't have known where we were going. Something bad must have happened! We need to find out what!
+2	line	Player	How? Betty, we're locked in a cell.
+2	line	Betty	This is hardly the Shayzien Prison. These walls are rotting away! There must be a way through one of them.
+2	line	Player	Perhaps, but breaking out of here is going to make us look even more guilty!
+2	line	Betty	We don't have a choice. You need to get out of here, get over to Captain Jensen's house and then investigate whatever has happened there.
+2	line	Player	And what about you?
+2	line	Betty	I'll stay here. I can throw the guards off your scent if they find out you're gone. And if the killer is after me, I'll hopefully be a little bit safer here... for now at least.
+2	line	Player	I don't like this, Betty, but alright. I'll see if I can find a way out.
+2	action	end
+1	option	I need to do something else first.
+2	line	Player	I need to do something else first.
+2	line	Betty	Okay... Just, please don't take too long.
+2	action	end
+0	section	Talking to Betty again at her uncle's house
+1	line	Betty	Are you ready to go to Port Piscarilius?
+1	select	Select an option
+1	option	Let's get going.
+2	action	above
+1	option	I need to do something else first.
+2	action	above
+0	section	Piscarilius
+0	section	Talking to Betty
+1	line	Betty	Have you found a way out yet?
+1	line	Player	Not yet.
+1	line	Betty	Please hurry. We need to find out what's happened.
+1	action	end
+0	section	Attempting to teleport out of the cell
+1	box	A teleport block has been placed on this cell. You'll need to find another way out.
+0	section	Removing the plank from the wall
+1	select	You remove a loose plank to reveal a gap in the wall.
+1	option	Climb through the gap.
+1	option	Leave it.
+2	action	end
+0	section	Climbing over the wall
+1	box	You climb through the gap at the top of the wall.
+0	section	Talking to Betty after escaping
+1	line	Betty	What are you doing back here? You need to get over to Captain Jensen's house and then investigate whatever has happened there! Hurry!
+1	line	Player	I'll go right away.
+1	action	end
+0	section	Getting caught by a guard
+1	line	Corporal Breiman/Campter	Hey! You're meant to be in a cell!
+1	box	You're spotted and are sent back to the cell in the nearby guardhouse.
+0	section	Inspecting Jensen's body
+1	select	What would you like to do?
+1	option	Inspect the head.
+2	box	You inspect the victim's head. Beneath the helmet, there is a bruise on her forehead and her nose appears to be broken. However, this doesn't appear to have been the cause of death.
+2	action	other
+1	option	Inspect the arms.
+2	box	You inspect the victim's arms. You don't find anything of note.
+2	action	other
+1	option	Inspect the torso.
+2	box	You inspect the victim's torso. In spite of the armour she is wearing, there's a single stab wound to the heart that is almost certainly the cause of death. It looks like this was only possible due to the armour not actually being quite on properly.
+2	action	other
+1	option	Inspect the legs.
+2	box	You inspect the victim's legs. They are coated in blood and both feet have been removed.
+2	action	other
+1	option	Nothing.
+2	action	end
+0	section	Inspecting the drawers
+1	select	There is a large amount of blood on top of the drawers.
+1	option	Inspect the blood.
+2	action	The key for letters "S," "I," and "N." are shown.
+1	option	Search the drawers.
+2	box	You go to search the drawers and notice one is open. There is a dagger inside.
+2	action	other
+1	option	Do nothing.
+2	action	end
+1	option	Nothing.
+2	action	end
+0	section	Inspecting the wardrobe
+1	box	The wardrobe is mostly empty. From the mess inside, it looks like some things were taken from it in a hurry. One of the things still in it is an old pair of Shayzien boots.
+1	action	end
+0	section	Inspecting the bed
+1	box	The bed looks noticeably fancier than any of the other furniture. You notice a carving at the bottom of it: 'We shape the stone. The stone shapes us.'
+1	action	end
+0	section	Shayzien
+0	section	Approaching the war tent
+1	line	Sergeant Hudson	Going somewhere?
+1	line	Player	Sergeant Hudson! We need to act fast! I think the killer is targeting a Shayzien leader!
+1	line	Sergeant Hudson	You flee one crime scene, arrive at another, then escape imprisonment, but now you expect me to listen to you? Why?
+1	line	Player	I take it you saw the message left in that cell? Betty is missing!
+1	line	Sergeant Hudson	Yes, and right now you're the prime suspect.
+1	line	Player	We don't have time for this!
+1	line	Corporal Breiman	Sergeant Hudson! Sergeant Hudson!
+1	line	Sergeant Hudson	What is it, Corporal?
+1	line	Corporal Breiman	It's not good, Sergeant. The killer has struck again!
+1	line	Sergeant Hudson	Right, take this one to a cell. Make sure it's a bit more secure this time...
+1	line	Corporal Breiman	I don't think it was [him/her/them], Sergeant. A hooded figure was spotted leaving the crime scene, literally just now!
+1	line	Sergeant Hudson	An accomplice then... Sent here to cause a distraction for the killer so they could strike again.
+1	line	Player	Sergeant, I know you don't trust me, but you have to believe me! I had nothing to do with any of this. I'm just trying to save Betty!
+1	line	Sergeant Hudson	Then how did you know where the killer would be next?
+1	line	Player	From the letter they left in Land's End. I managed to translate it. They wanted us to know. They've been toying with us the whole time!
+1	line	Sergeant Hudson	You translated the letter? Curious...
+1	line	Player	Please... let me help, Sergeant. We still have a chance to save Betty.
+1	line	Sergeant Hudson	Hmm... Very well, but the Corporal here will be keeping a very close eye on you.
+1	line	Sergeant Hudson	Who is the victim, Corporal?
+1	line	Corporal Breiman	It's... It's the former Commissioner.
+1	line	Sergeant Hudson	I see...
+1	line	Sergeant Hudson	Come on then, let's get over there.
+1	action	end
+0	section	Talking to Sergeant Hudson
+1	line	Sergeant Hudson	What a mess... Let's hope we can find something here that can lead us to the killer. I needn't remind you that if we can't, then you're still the prime suspect.
+1	select	Select an option
+1	option	What can you tell me about the victim?
+2	line	Player	What can you tell me about the victim?
+2	line	Sergeant Hudson	Commissioner Edwards. He led the Shayzien Constabulary for years, until he stepped down a couple of years ago. This is where he retired to.
+2	line	Player	With a role like that, I'm guessing there are no shortages of possible suspects?
+2	line	Sergeant Hudson	No. Every criminal in this kingdom would likely consider Edwards their enemy.
+2	action	other
+1	option	Did anything come from questioning that butcher?
+2	line	Player	Did anything come from questioning that butcher?
+2	line	Sergeant Hudson	No. All it did was confirm what we already knew. He had no obvious motive, and a butcher being in possession of a knife isn't enough evidence to mean anything.
+2	action	other
+1	option	Did you learn anything of note at the other crime scenes?
+2	line	Player	Did you learn anything of note at the other crime scenes?
+2	line	Sergeant Hudson	All manner of things, but none of them have led us to the killer yet.
+2	line	Player	Anything you'd care to share?
+2	line	Sergeant Hudson	No, but given you've been rather busy yourself, I'm guessing you know everything anyway.
+2	action	other
+1	option	What do you know about the Keystone Lodge?
+2	line	Player	What do you know about the Keystone Lodge?
+2	line	Sergeant Hudson	Not a lot. It was some secretive group, mostly made up of people of importance. Some called it a cult, others considered it nothing more than a drinking club.
+2	line	Sergeant Hudson	And yes, I have already noticed that all of our victims were members of it.
+2	action	other
+1	option	Best I get to it then.
+2	line	Player	Best I get to it then.
+2	action	end
+0	section	Talking to Corporal Campter
+1	line	Corporal Campter	If it's any consolation, friend, I don't think you're guilty. Hopefully you understand that we can't be too careful though.
+1	line	Player	I understand, and thank you.
+1	action	end
+0	section	Talking to Corporal Breiman
+1	line	Corporal Breiman	Sorry, but I do need to keep an eye on you. Sergeant's orders.
+1	line	Player	Fair enough.
+1	action	end
+0	section	Talking to Kyle
+1	line	Player	Hello there. Could I ask you some questions about the recent murder?
+1	line	Kyle	Okay.
+1	select	Select an option
+1	option	What do you know about the victim?
+2	line	Player	What do you know about the victim?
+2	line	Kyle	Old man.
+2	line	Player	Did you see much of him?
+2	line	Kyle	No.
+2	line	Player	But you did know him?
+2	line	Kyle	A little. Seen him picking berries before.
+2	line	Player	And that's it?
+2	line	Kyle	Yup.
+2	action	other
+1	option	Did you see or hear anything around the time of the murder?
+2	line	Player	Did you see or hear anything around the time of the murder?
+2	line	Kyle	Yup.
+2	line	Player	What was it?
+2	line	Kyle	Person in a hood.
+2	line	Player	What were they doing?
+2	line	Kyle	Running away from the house.
+2	line	Player	Anything else you can tell me about them?
+2	line	Kyle	Slender build.
+2	action	other
+1	option	Do you know why someone would want the victim dead?
+2	line	Player	Do you know why someone would want the victim dead?
+2	line	Kyle	Yup.
+2	line	Player	You do?
+2	line	Kyle	He was important once. Put criminals away... or killed them.
+2	line	Player	Anything more specific?
+2	line	Kyle	No.
+2	action	other
+1	option	Actually, I'll be back later.
+2	line	Player	Actually, I'll be back later.
+2	action	end
+1	option	That's all for now.
+2	line	Player	That's all for now.
+2	action	end
+0	section	Searching the shelves
+1	box	You search the shelves and find various bottles of wine. You notice one of the bottles has an inscription on it: 'We shape the stone. The stone shapes us.'
+1	action	end
+0	section	Inspecting Edwards' body
+1	select	What would you like to do?
+1	option	Inspect the head.
+2	box	You inspect the victim's head. Both of his eyes have been removed.
+2	action	other
+1	option	Inspect the arms.
+2	box	You inspect the victim's arms. One of the hands has a fresh cut on it, suggesting the victim tried to fight back.
+2	action	other
+1	option	Inspect the torso.
+2	box	You inspect the victim's torso. There's a single stab wound to the heart that is almost certainly the cause of death.
+2	action	other
+1	option	Inspect the legs.
+2	box	You inspect the victim's legs. You don't find anything of note.
+2	action	other
+1	option	Nothing.
+2	action	end
+0	section	Talking to Sergeant Hudson after finding all the clues
+1	line	Sergeant Hudson	Yes?
+1	line	Player	I've found a few potential things of note, but nothing obvious that could lead us to the killer.
+1	line	Sergeant Hudson	Well, you'd best start piecing it all together. We need to work out where the killer is. If we can't, then I needn't remind you that you're still the prime suspect.
+1	line	Player	And what about you? Are you not going to help with the piecing everything together?
+1	line	Sergeant Hudson	I am attempting to do so right now.
+1	line	Player	And? Surely you must have some thoughts by now?
+1	line	Sergeant Hudson	Some. You yourself said that the killer has been toying with us from the get go. It seems they want to be found... or at least, they want to prove that we're not smart enough to find them.
+1	line	Sergeant Hudson	That means they've almost certainly revealed their location to us already. We just need to work out how they've done so. Given their love for symbols and ciphers, it's unlikely to be obvious.
+1	line	Player	Hmm... And if I do manage to work it out?
+1	line	Sergeant Hudson	Go there and see if you're right.
+1	line	Player	Alone?
+1	line	Sergeant Hudson	Oh, don't worry. We'll be keeping a close eye on you... from a distance.
+1	line	Player	You're not planning to use me as bait, are you?
+1	line	Sergeant Hudson	That would be against procedure.
+1	line	Player	Then what is it you're not telling me?
+1	line	Sergeant Hudson	At this point, all manner of things. Once again, you are currently the prime suspect. I don't wish to share any more with you than I need to. If you wish to prove your innocence, the onus is on you.
+1	line	Player	Hmm...
+1	action	end
+0	section	Talking to Sergeant Hudson again
+1	line	Sergeant Hudson	Yes?
+1	line	Player	I've still not managed to piece things together yet.
+1	line	Sergeant Hudson	Well, you'd best hope that changes soon.
+1	line	Player	I'm very aware... Any help that you'd like to provide?
+1	line	Sergeant Hudson	Only what I've already told you. It seems the the killer wants to be found... or at least, they want to prove that we're not smart enough to find them.
+1	line	Sergeant Hudson	That means they've almost certainly revealed their location to us already. We just need to work out how they've done so. Given their love for symbols and ciphers, it's unlikely to be obvious.
+1	line	Player	And if I do manage to work it out?
+1	line	Sergeant Hudson	Go there and see if you're right.
+1	line	Player	Hmm...
+1	action	end
+0	section	Confronting the killer
+0	section	Opening the trapdoor
+1	select	It looks like there's a trapdoor under the plant.
+1	option	Go down it.
+2	action	end
+1	option	Leave it.
+2	action	end
+0	section	Inspecting the blood in the lair
+1	line	Familiar Voice	Get up.
+1	line	Betty	I said get up.
+1	line	Player	Betty...? What is this...?
+1	line	Betty	You should know what this is... You investigated it. All those clues... and you still couldn't work it out.
+1	line	Player	It was... It was you!
+1	line	Betty	Of course it was me. Who else could it have been?
+1	line	Player	But... your own father... Why?
+1	line	Betty	Because he was a monster! For my entire childhood we lived in fear of him, until the day finally came when my mother decided enough was enough...
+1	line	Betty	But he couldn't allow that! He couldn't let her be free. That's why he poisoned her! Her and my sister!
+1	line	Betty	Then, with a little help from his Keystone Lodge friends, he had it all covered up!
+1	line	Betty	But now, after all these years, it's finally over! They're finally dead! All that remains now, is you.
+1	line	Player	Me? Why? I tried to help you!
+1	line	Betty	But you never once looked deeper! Don't you see? You're just as big a part of the problem as they were!
+1	line	Betty	People like them... the only reason they get away with the things they do is because people like you stand by and let them!
+1	line	Betty	You never really cared! You people never do! This was all just a bit of fun to you. But now the fun is over...
+1	line	Sergeant Hudson	Indeed it is.
+1	line	Betty	What...? How?!
+1	line	Sergeant Hudson	By following the clues, Betty. Isn't that what you wanted?
+1	line	Betty	But you never even cared!
+1	line	Sergeant Hudson	Oh I very much did. That's why one of the first things I did was look into the death of your mother and sister. The investigation into their deaths was quite thorough...
+1	line	Sergeant Hudson	The conclusion? An illness. One so tragic, the surviving daughter never fully recovered. She spent years in care, but eventually her father decided to bring her home.
+1	line	Sergeant Hudson	He was advised against it. She was unpredictable. Sometimes even violent. But he insisted.
+1	line	Betty	You're lying!
+1	line	Sergeant Hudson	The people you killed were innocent, Betty. No one is to blame for what happened to your mother and sister. You've just never been able to accept that.
+1	line	Sergeant Hudson	Now, I think it's time to bring this madness to an end. You're coming with us, Betty.
+1	line	Betty	So you can execute me in front of a cheering crowd? Or lock me in a cell to live the rest of my life with no sunlight and a diet of mouldy bread? No. This ends here!
+1	line	Sergeant Hudson	*sigh*
+1	line	Sergeant Hudson	Come on, adventurer, let's get you out of here. Corporals... get started on cleaning up here.
+1	line	Sergeant Hudson	Well... This one is going to have some paperwork to deal with...
+1	line	Player	When did you realise?
+1	line	Sergeant Hudson	Hmm?
+1	line	Player	That it was Betty.
+1	line	Sergeant Hudson	She was a prime suspect from the start. Such is always the case when dealing with a murder. In the vast majority of cases, the killer and the victim know each other.
+1	line	Sergeant Hudson	As for when I knew for sure, I had a strong hunch, but it was just that until you led us to her.
+1	line	Player	It would have been nice of you to tell me...
+1	line	Sergeant Hudson	Yes, it would have been, but through your own choices, you made yourself a suspect as well. It's nothing personal, but that is the way of things I'm afraid.
+1	line	Player	I suppose...
+1	line	Sergeant Hudson	If it makes you feel better, your work did end up being useful. You found a couple of things we missed, and you did a good job piecing everything together.
+1	line	Sergeant Hudson	I can't offer you much as thanks, but I do have an amulet here that might be useful to you.
+1	line	Sergeant Hudson	Now, I'd best get to work. We have a lot of tidying up to do. All the best, adventurer.
+1	box	Sergeant Hudson departs.

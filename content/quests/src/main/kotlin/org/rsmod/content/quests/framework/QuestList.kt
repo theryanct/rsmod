@@ -70,6 +70,7 @@ import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SL
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
+import org.rsmod.content.quests.writingsonthewall.WritingsOnTheWall.Companion.WRITINGS_ON_THE_WALL
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
 /**
@@ -145,6 +146,7 @@ public object BuiltQuests {
             WATERFALL_QUEST,
             WITCHS_HOUSE,
             WITCHS_POTION,
+            WRITINGS_ON_THE_WALL,
             X_MARKS_THE_SPOT,
         )
 
