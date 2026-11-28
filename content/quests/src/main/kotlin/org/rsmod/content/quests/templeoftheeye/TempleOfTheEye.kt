@@ -160,7 +160,7 @@ constructor(
                     "If the player has the incantation:" to { carries(TeObjs.incantation) },
                     "If the player already has the incantation:" to { carries(TeObjs.incantation) },
                     "If the player doesn't have the incantation:" to { !carries(TeObjs.incantation) },
-                    "If the player does not have 10 Runecraft:" to { statBase(stats.runecraft) < 10 },
+                    "If the player does not have 10 Runecraft:" to { statBase(stats.runecrafting) < 10 },
                     "If the player has not completed Enter the Abyss:" to {
                         !player.isQuestComplete(RUNE_MYSTERIES)
                     },
@@ -186,7 +186,7 @@ constructor(
                 var start = false
                 val hooks = invHooks(options = mapOf("Yes." to { start = true }))
                 runQuestSection(npc, dialogue, "Talking to Wizard Persten", hooks)
-                val eligible = statBase(stats.runecraft) >= 10 && player.isQuestComplete(RUNE_MYSTERIES)
+                val eligible = statBase(stats.runecrafting) >= 10 && player.isQuestComplete(RUNE_MYSTERIES)
                 if (start && eligible) {
                     setState(AMULET)
                     give(TeObjs.amulet)
@@ -372,7 +372,7 @@ constructor(
         telejump(TOWER_BASEMENT)
         runQuestSection(null, dialogue, "Sedridor cutscene", speakers = speakers)
         give(TeObjs.medium_pouch)
-        statAdvance(stats.runecraft, 5000.0 * xpMods.get(player, stats.runecraft))
+        statAdvance(stats.runecrafting, 5000.0 * xpMods.get(player, stats.runecrafting))
         completeQuest(TEMPLE_OF_THE_EYE)
     }
 
