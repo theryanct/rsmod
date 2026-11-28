@@ -24,7 +24,6 @@ dependencies {
     implementation(projects.api.route)
     implementation(projects.api.stats.levelmod)
     implementation(projects.api.type.typeBuilders)
-    implementation(projects.api.type.typeEditors)
     implementation(projects.api.type.typeReferences)
     implementation(projects.api.type.typeScriptDsl)
     implementation(projects.api.utils.utilsFormat)

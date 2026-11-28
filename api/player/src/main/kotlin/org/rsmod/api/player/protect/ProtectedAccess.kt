@@ -91,8 +91,6 @@ import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.ui.FurnitureMenuRefs
 import org.rsmod.api.player.ui.SKILLMULTI_MAX_QUANTITY
 import org.rsmod.api.player.ui.SKILLMULTI_REMEMBER_ALL
-import org.rsmod.api.player.ui.SKILLMULTI_SUB_MAKE_ALL
-import org.rsmod.api.player.ui.SKILLMULTI_SUB_MAKE_X
 import org.rsmod.api.player.ui.SkillMultiChoice
 import org.rsmod.api.player.ui.SkillMultiComponents
 import org.rsmod.api.player.ui.SkillMultiProduct
@@ -2120,18 +2118,7 @@ public class ProtectedAccess(
         if (index !in products.indices) {
             throw ProtectedAccessLostException()
         }
-        val quantity =
-            when (input.subcomponent) {
-                SKILLMULTI_SUB_MAKE_ALL -> max
-                SKILLMULTI_SUB_MAKE_X -> {
-                    val entered = countDialog("Enter amount:")
-                    if (entered <= 0) {
-                        throw ProtectedAccessLostException()
-                    }
-                    entered.coerceIn(1, max)
-                }
-                else -> input.subcomponent.coerceIn(1, max)
-            }
+        val quantity = input.subcomponent.coerceIn(1, max)
         skillMultiLastQuantity[player] = if (quantity >= max) SKILLMULTI_REMEMBER_ALL else quantity
         return SkillMultiChoice(index, products[index], quantity)
     }
