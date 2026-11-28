@@ -153,3 +153,45 @@ coords = '0_50_50_28_42'
 [[spawn]]
 npc = 'veos_sarim'
 coords = '0_47_50_46_53'
+
+# Below Ice Mountain: Willow (start + ruins entrance), the crew at home and at the entrance
+# (multinpcs on their bim_* varbits), Atlas, the Blue Moon Inn cook. Approximate.
+[[spawn]]
+npc = 'bim_willow'
+coords = '0_46_53_58_44'
+
+[[spawn]]
+npc = 'bim_willow'
+coords = '0_46_54_57_36'
+
+[[spawn]]
+npc = 'bim_checkal_barb'
+coords = '0_48_53_15_23'
+
+[[spawn]]
+npc = 'bim_checkal_temple_outside'
+coords = '0_46_54_57_40'
+
+[[spawn]]
+npc = 'bim_atlas'
+coords = '0_48_53_3_47'
+
+[[spawn]]
+npc = 'bim_burntof_pub'
+coords = '0_46_52_13_39'
+
+[[spawn]]
+npc = 'bim_burntof_temple_outside'
+coords = '0_46_54_58_38'
+
+[[spawn]]
+npc = 'bim_marley_edge'
+coords = '0_48_54_16_16'
+
+[[spawn]]
+npc = 'bim_marley_temple_outside'
+coords = '0_46_54_58_35'
+
+[[spawn]]
+npc = 'fai_varrock_bluemoon_chef'
+coords = '0_50_53_30_8'
