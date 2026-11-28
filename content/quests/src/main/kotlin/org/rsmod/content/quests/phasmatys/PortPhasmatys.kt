@@ -29,7 +29,9 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
     override fun ScriptContext.startup() {
         onLocOpLabel(locTypes, PhasLocs.barrier, "Pass") { barrier(it) }
         onLocOpLabel(locTypes, PhasLocs.barrier, "Pay-toll(2-Ecto)") { barrier(it) }
-        onLocOpLabel(locTypes, PhasLocs.barrier_free, "Pass") { passThroughWall(it) }
+        onLocOpLabel(locTypes, PhasLocs.barrier_free, "Pass") {
+            if (!wearingBedsheet()) passThroughWall(it)
+        }
 
         onLocOpLabel(locTypes, PhasLocs.trapdoor, "Open") {
             locRepo.change(it, PhasLocs.trapdoor_open, TRAPDOOR_TICKS)
@@ -61,6 +63,7 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
      * south edge of z 3508) has it to the south. Only the way in is tolled.
      */
     private suspend fun ProtectedAccess.barrier(loc: BoundLocInfo) {
+        if (wearingBedsheet()) return
         val at = loc.coords
         val entering =
             when (loc.angleId and 3) {
@@ -78,6 +81,13 @@ constructor(private val locTypes: LocTypeList, private val locRepo: LocRepositor
             mes("You pay the ghost guard $TOLL ecto-tokens and pass through the barrier.")
         }
         passThroughWall(loc)
+    }
+
+    /** Ghosts Ahoy's disguise can't leave town. */
+    private fun ProtectedAccess.wearingBedsheet(): Boolean {
+        val sheet = PhasObjs.bedsheets.any { invTotal(worn, it) > 0 }
+        if (sheet) mes("You can't pass the barriers of Port Phasmatys while wearing the bedsheet.")
+        return sheet
     }
 
     private companion object {
@@ -105,4 +115,5 @@ internal object PhasLocs : LocReferences() {
 
 internal object PhasObjs : ObjReferences() {
     val ecto_token = find("ectotoken")
+    val bedsheets = listOf(find("ahoy_bedsheet"), find("ahoy_bedsheetgreen"))
 }

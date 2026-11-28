@@ -19,6 +19,7 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk.register
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -29,6 +30,7 @@ import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestBranch
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
+import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.game.entity.Npc
@@ -80,7 +82,15 @@ constructor(
         for (malcolm in AmNpcs.malcolms) {
             onNpcOpLabel(npcTypes, malcolm, "Talk-to") { talkMalcolm(it) }
         }
-        onNpcOpLabel(npcTypes, AmNpcs.crone, "Talk-to") { talkCrone(it) }
+        // The crone is shared with Ghosts Ahoy (QuestTalk menu while both want her).
+        register(
+            npcTypes,
+            AmNpcs.crone,
+            ANIMAL_MAGNETISM,
+            wants = { state in CRONE_ASKED..AMULET_MADE },
+        ) {
+            talkCrone(it)
+        }
         onNpcOpLabel(npcTypes, AmNpcs.witch, "Talk-to") { talkWitch(it) }
         onOpNpcU(AmNpcs.turael, AmObjs.mithril_axe) { askTurael(it.npc) }
         onOpNpcU(AmNpcs.turael, AmObjs.holy_symbol) { askTurael(it.npc) }
@@ -323,9 +333,11 @@ constructor(
             inv.isFull() -> 
                 runQuestSection(npc, dialogue, "Speaking to the old crone without inventory space")
             else -> {
+                val ahoyDone = player.isQuestComplete(GHOSTS_AHOY)
                 val hooks =
                     SimpleQuestHooks(
-                        conditions = mapOf("If the player has completed Ghosts Ahoy:" to { false })
+                        conditions =
+                            mapOf("If the player has completed Ghosts Ahoy:" to { ahoyDone })
                     )
                 val section =
                     if (state == AMULET_MADE) CRONE_LOST else "Speaking to the old crone"

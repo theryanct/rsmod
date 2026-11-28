@@ -18,6 +18,7 @@ import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
+import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
@@ -65,6 +66,7 @@ public object BuiltQuests {
             ERNEST,
             FISHING_CONTEST,
             GERTRUDES_CAT,
+            GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
             HAZEEL_CULT,
             IMP_CATCHER,
