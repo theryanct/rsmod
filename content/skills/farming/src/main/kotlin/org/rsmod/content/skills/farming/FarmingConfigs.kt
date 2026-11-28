@@ -25,6 +25,7 @@ internal object FarmingObjs : ObjReferences() {
     val secateurs = find("secateurs")
     val trowel = find("gardening_trowel")
     val plantpot = find("plantpot_empty")
+    val magic_secateurs = find("fairy_enchanted_secateurs")
 
     /** Watering cans by charges remaining (index 0 = empty). */
     val watering_cans: List<ObjType> = (0..8).map { find("watering_can_$it") }

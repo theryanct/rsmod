@@ -9,6 +9,7 @@ import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.farmingLvl
 import org.rsmod.api.player.stat.woodcuttingLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
@@ -451,6 +452,12 @@ constructor(
         mes("You plant $seeds in the ${patch.kind.noun}.")
     }
 
+    private fun ProtectedAccess.hasMagicSecateurs(): Boolean {
+        if (FarmingObjs.magic_secateurs in inv) return true
+        val held = player.righthand ?: return false
+        return held.id == objTypes[FarmingObjs.magic_secateurs].id
+    }
+
     private fun ProtectedAccess.water(patch: Patch, canId: Int) {
         val state = player.state(patch)
         val crop = state.crop
@@ -512,7 +519,11 @@ constructor(
         } else if (actionDelay == mapClock) {
             invAddGathered(produce)
             statAdvance(stats.farming, crop.harvestXp * xpMods.get(player, stats.farming))
-            if (random.of(10_000) >= (crop.saveChance(player.farmingLvl) * 100).toInt()) {
+            // Wiki "Magic secateurs": +10% chance to save a life on herbs, allotments and hops
+            // (worn or in the inventory).
+            val secateurs = patch.kind in SECATEURS_KINDS && hasMagicSecateurs()
+            val save = crop.saveChance(player.farmingLvl) * (if (secateurs) 1.1 else 1.0)
+            if (random.of(10_000) >= (save * 100).toInt()) {
                 state.lives--
             }
             if (state.lives <= 0) {
@@ -1049,6 +1060,7 @@ constructor(
         const val BIN_READY = 80
         const val COMPOST_TAKE_XP = 4.5
         const val SUPERCOMPOST_TAKE_XP = 8.5
+        val SECATEURS_KINDS = setOf(Kind.Herb, Kind.Allotment, Kind.Hops)
         const val BIN_SUPER_FLAG = 64
         const val BIN_SUPER_FILL = 33
         const val BIN_SUPER_OPEN = 48
