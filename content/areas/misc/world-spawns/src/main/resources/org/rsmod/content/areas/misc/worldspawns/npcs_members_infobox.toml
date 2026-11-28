@@ -9635,10 +9635,11 @@ coords = '0_51_43_23_61'
 npc = 'ntk_tarik_nospots'
 coords = '0_51_43_25_32'
 
-# Guardian mummy
+# Guardian mummy: in the Pyramid Plunder lobby (SW antechamber, plane 3), not on the surface
+# (the Wiki pin is the pyramid). Moved by ui with the Pyramid Plunder module.
 [[spawn]]
 npc = 'ntk_mummy_guardian'
-coords = '0_51_43_25_35'
+coords = '3_30_69_14_15'
 
 # Worker (Sophanem)
 [[spawn]]
