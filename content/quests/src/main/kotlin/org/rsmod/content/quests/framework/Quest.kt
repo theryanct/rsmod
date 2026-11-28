@@ -89,7 +89,11 @@ public fun Player.grantQuest(quest: QuestDef): Boolean {
  */
 public fun ProtectedAccess.completeQuest(quest: QuestDef) {
     if (!player.grantQuest(quest)) return
+    showQuestComplete(quest)
+}
 
+/** The quest complete scroll and chat line for [quest] (state and quest points already granted). */
+public fun ProtectedAccess.showQuestComplete(quest: QuestDef) {
     ifOpenMainModal(QuestInterfaces.questscroll)
     ifSetText(QuestComponents.quest_title, "You have completed ${quest.name}!")
     ifSetObj(QuestComponents.quest_model, quest.scrollObj(), 250)
