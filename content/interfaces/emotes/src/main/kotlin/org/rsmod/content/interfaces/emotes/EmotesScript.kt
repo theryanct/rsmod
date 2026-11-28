@@ -12,6 +12,7 @@ import org.rsmod.api.config.refs.spotanims
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.config.refs.varps
 import org.rsmod.api.player.back
+import org.rsmod.api.player.events.PlayEmote
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.ifClose

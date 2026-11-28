@@ -8,6 +8,7 @@ import org.rsmod.api.player.interact.LocInteractions
 import org.rsmod.api.player.interact.LocTInteractions
 import org.rsmod.api.player.interact.NpcInteractions
 import org.rsmod.api.player.interact.NpcTInteractions
+import org.rsmod.api.player.interact.OpInterceptors
 import org.rsmod.api.player.interact.ObjInteractions
 import org.rsmod.api.player.interact.PlayerInteractions
 import org.rsmod.api.player.interact.PlayerTInteractions
@@ -473,6 +474,13 @@ constructor(
 
     /* Interaction event launch functions */
     public fun triggerOp(player: Player, interaction: InteractionLocOp) {
+        val claim = OpInterceptors.loc(player, interaction.target, interaction.op)
+        if (claim != null) {
+            protectedAccess.launch(player) {
+                with(claim) { run(interaction.target, interaction.op) }
+            }
+            return
+        }
         val op = locInteractions.opTrigger(player, interaction.target, interaction.op)
         if (op != null) {
             protectedAccess.launch(player) { eventBus.publish(this, op) }
@@ -480,6 +488,9 @@ constructor(
     }
 
     public fun triggerAp(player: Player, interaction: InteractionLocOp) {
+        if (OpInterceptors.loc(player, interaction.target, interaction.op) != null) {
+            return
+        }
         val ap = locInteractions.apTrigger(player, interaction.target, interaction.op)
         if (ap != null) {
             protectedAccess.launch(player) { eventBus.publish(this, ap) }
@@ -509,6 +520,13 @@ constructor(
     }
 
     public fun triggerOp(player: Player, interaction: InteractionNpcOp) {
+        val claim = OpInterceptors.npc(player, interaction.target, interaction.op)
+        if (claim != null) {
+            protectedAccess.launch(player) {
+                with(claim) { run(interaction.target, interaction.op) }
+            }
+            return
+        }
         val op = npcInteractions.opTrigger(player, interaction.target, interaction.op)
         if (op != null) {
             protectedAccess.launch(player) { eventBus.publish(this, op) }
@@ -516,6 +534,9 @@ constructor(
     }
 
     public fun triggerAp(player: Player, interaction: InteractionNpcOp) {
+        if (OpInterceptors.npc(player, interaction.target, interaction.op) != null) {
+            return
+        }
         val ap = npcInteractions.apTrigger(player, interaction.target, interaction.op)
         if (ap != null) {
             protectedAccess.launch(player) { eventBus.publish(this, ap) }

@@ -82,7 +82,7 @@ constructor(
     }
 
     public fun hasOpTrigger(player: Player, npc: Npc, op: InteractionOp): Boolean =
-        opTrigger(player, npc, op) != null
+        opTrigger(player, npc, op) != null || OpInterceptors.npc(player, npc, op) != null
 
     public fun apTrigger(
         player: Player,
@@ -116,8 +116,9 @@ constructor(
         return null
     }
 
+    /** An op claimed by [OpInterceptors] has no ap trigger: the claim runs when adjacent. */
     public fun hasApTrigger(player: Player, npc: Npc, op: InteractionOp): Boolean =
-        apTrigger(player, npc, op) != null
+        OpInterceptors.npc(player, npc, op) == null && apTrigger(player, npc, op) != null
 
     public fun multiNpc(type: UnpackedNpcType, vars: VarPlayerIntMap): UnpackedNpcType? {
         if (type.multiNpc.isEmpty() && type.multiNpcDefault <= 0) {
