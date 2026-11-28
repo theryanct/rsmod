@@ -1242,3 +1242,9 @@ coords = '0_49_51_34_15'
 [[spawn]]
 npc = 'arenamage1'
 coords = '0_39_73_41_45'
+
+# Sleeping Giants: Kovac outside the foundry cave on the Giants' Plateau (Wiki 3363,3148; the
+# multinpc base: the "Strike" hill giant, then Kovac until he leads you in).
+[[spawn]]
+npc = 'giants_foundry_kovac_multi_outside'
+coords = '0_52_49_35_12'

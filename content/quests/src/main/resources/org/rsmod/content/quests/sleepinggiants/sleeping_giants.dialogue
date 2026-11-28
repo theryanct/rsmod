@@ -1,0 +1,513 @@
+# Generated from the OSRS Wiki page "Transcript:Sleeping Giants" by tools/quests/transcript_to_dialogue.py
+# Hand edits (marked "# Authored (not Wiki)"): {{Colour}} commission words -> <col=ef1020>; the {{qact}} cutscene line -> action "cutscene" (the move into the foundry); the {{Qact}} quest-complete line dropped. Duplicate headings load as "Title (2)", "Title (3)".
+0	section	Starting out
+0	section	Entering the cave before starting the quest
+1	line	Player	I don't think I want to disturb a cave of giants right now...
+1	action	end
+0	section	Talking to Kovac
+1	line	Hill Giant	Wait...
+1	line	Hill Giant	Do not attack!
+1	line	Player	What the... You can talk?!
+1	line	Hill Giant	Do...
+1	line	Hill Giant	do not...
+1	line	Hill Giant	flig... fight.
+1	line	Player	You don't want to fight me?
+1	line	Hill Giant	Want...
+1	line	Hill Giant	no, need...
+1	line	Hill Giant	your help.
+1	line	Player	I must be dreaming. Giants can't talk!
+1	line	Hill Giant	Please...
+1	select	Start the Sleeping Giants quest?
+1	option	Yes.
+2	line	Player	Okay giant, I'll help you out, but first you need to tell me your name... if you even have one.
+2	line	Kovac	Kovac.
+2	line	Player	Kovac... alright then. My name is {player}. So, Kovac, what do you need help with?
+2	line	Kovac	Please...
+2	line	Kovac	follow in.
+2	line	Player	Hang on... is this a trick? Are you going to cook and eat me?!
+2	line	Kovac	No...
+2	line	Kovac	follow.
+# Authored (not Wiki): the cutscene into the foundry.
+2	action	cutscene
+2	line	Player	Woah... What is this place?
+2	line	Player	Did you build this?
+2	line	Kovac	No...
+2	line	Kovac	Kovac...
+2	line	Kovac	accep... ancestor build.
+2	line	Player	Giants built this place?
+2	line	Kovac	Yes...
+2	line	Kovac	long ago.
+2	line	Player	How? Giants don't build, do they? I thought they were brutes...
+2	line	Kovac	Before...
+2	line	Kovac	giants differing.
+2	line	Kovac	Now...
+2	line	Kovac	not.
+2	line	Player	Huh? I don't understand what you mean.
+2	line	Kovac	Look.
+2	box	Kovac looks out to the tools around you.
+2	line	Kovac	Help fix.
+2	line	Player	You want me to help you by fixing those tools?
+2	line	Kovac	Yes.
+2	line	Player	Okay, I'll help, but first you need to tell me what this place was used for?
+2	line	Kovac	Make...
+2	line	Kovac	wheelpo... weapons.
+2	line	Player	Giants made weapons here?
+2	line	Player	That's incredible! But why do you want to make weapons? Most giants I've come across already have weapons?
+2	line	Kovac	Make...
+2	line	Kovac	giants...
+2	line	Kovac	remember.
+2	line	Player	Remember what?
+2	line	Kovac	Giants...
+2	line	Kovac	not just...
+2	line	Kovac	killers.
+2	line	Kovac	Kovac want...
+2	line	Kovac	help giants remember.
+2	line	Player	I see. To be honest, if I hadn't seen this place myself, I wouldn't have believed you.
+2	line	Player	Alright, Kovac, I'll help you out. What do we need to do first?
+2	line	Kovac	We fix tools...
+2	action	end
+1	option	No.
+2	line	Player	No way! I'm getting out of here. There's no chance I'd trust a giant!
+2	line	Hill Giant	Please...
+2	line	Hill Giant	help.
+2	action	end
+0	section	What is this? A workshop for giants?
+0	section	Talking to Kovac
+1	line	Player	What's left to fix, Kovac?
+1	line	Kovac	Hmm...
+1	line	Kovac	Trip hammer...
+1	line	Kovac	Grindstone...
+1	line	Kovac	Polishing wheel...
+1	line	Player	Thanks!
+1	action	end
+0	section	Inspecting objects
+0	section	Big chest
+1	line	Player	Kovac, where did you get this chest from?
+1	line	Kovac	Hmm...
+1	line	Kovac	...
+1	line	Kovac	chest store stuff.
+1	box	Kovac shrugs...
+1	line	Player	Alright then...
+1	action	end
+0	section	Crate
+1	line	Player	What do you keep in this box?
+1	line	Kovac	Hmm...
+1	line	Kovac	stuff.
+1	line	Player	Very insightful...
+1	action	end
+0	section	Crucible
+1	line	Player	What is this, Kovac?
+1	line	Kovac	Hmm...
+1	line	Kovac	look like big bucket.
+1	line	Player	I can see that, but what's it used for?
+1	line	Kovac	Hmm...
+1	line	Kovac	maybe we put things in.
+1	line	Kovac	Kovac need think about it more.
+1	action	end
+0	section	Lava pool
+1	line	Player	Having all this lava here without a barrier is quite dangerous.
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac agree.
+1	line	Player	Should we try building something to keep us safe?
+1	line	Kovac	Hmm...
+1	line	Kovac	no.
+1	line	Player	Why not?
+1	line	Kovac	Just no swim in the hot juice.
+1	action	end
+0	section	Mould jig
+1	line	Player	What is this table used for, Kovac?
+1	line	Kovac	Hmm...
+1	line	Kovac	look like we put thing on it.
+1	line	Kovac	Kovac not sure what yet.
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac think about it more.
+1	action	end
+0	section	Preform storage
+1	line	Player	This looks a little dangerous. Quite a perilous place to store something.
+1	line	Kovac	Hmm...
+1	line	Kovac	good place to cook food.
+1	line	Kovac	Hot meat very good.
+1	action	end
+0	section	Waterfall
+1	line	Player	Not everyday you see a waterfall in a cave.
+1	line	Kovac	Kovac drink from waterfall...
+1	line	Kovac	Hydration impote... importent.
+1	line	Player	I agree, it's very important.
+1	action	end
+0	section	Reparing the trip hammer
+1	line	Player	I think this has seen better days. What was it?
+1	line	Kovac	Hmm...
+1	line	Kovac	big hammer.
+1	line	Player	Right... and what did it do?
+1	line	Kovac	Hit things.
+1	line	Player	Very perceptive, Kovac.
+1	line	Player	Let me take a look and see if I can fix it.
+1	select	Repair the trip hammer?
+1	option	Yes.
+2	cond	If the player does not have the materials required:
+3	box	You will need an oak log, 5 nails and a hammer to repair the trip hammer.
+3	action	end
+2	line	Player	That looks like it'll do the trick. What do you think?
+2	line	Kovac	Hmm...
+2	line	Kovac	that look right.
+2	line	Player	What's it supposed to do?
+2	box	Kovac takes a long look at the trip hammer...
+2	box	...
+2	line	Kovac	Kovac think Kovac figure it out.
+2	line	Player	Go on.
+2	line	Kovac	Trip hammer power by water...
+2	line	Kovac	Water spin wheel and raise hammer.
+2	line	Kovac	Hammer fall and crump sword into shape.
+2	line	Player	That makes sense. Quite resourceful for giants to make something water powered.
+2	line	Kovac	Mhm...
+2	action	end
+1	option	No.
+2	action	end
+0	section	Reparing the grindstone
+1	line	Player	What was this meant to be?
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac think it was for grinnin... grinding.
+1	line	Player	I see. It looks like it's lost its teeth.
+1	line	Kovac	Kovac conquer.
+1	line	Player	Conquer? It's already broken! Hitting it more won't help.
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac agree.
+1	line	Player	Right... now we're agreed, I'll see what I can do to fix it.
+1	select	Repair the grindstone?
+1	option	Yes.
+2	action	The player begins to fix the grindstone.
+2	line	Player	Well that required a bit of elbow grease. It should be good to go now.
+2	line	Kovac	Thank you small one...
+2	line	Player	Didn't want to try and help me?
+2	line	Kovac	Kovac did not know how...
+2	line	Kovac	Kovac beggin... beginning to understand.
+2	line	Player	Can you tell me what this is used for then?
+2	box	Kovac takes a long look at the grindstone...
+2	box	...
+2	line	Kovac	Grindstone important...
+2	line	Kovac	We grind sword against stone...
+2	line	Kovac	make sword sharp.
+2	line	Player	So we use it when making swords?
+2	line	Kovac	Yes.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Reparing the polishing wheel
+1	line	Player	Okay, what is this thing? It just looks like a wheel to me.
+1	line	Kovac	Hmm...
+1	box	Kovac ponders your question...
+1	box	...
+1	line	Kovac	Kovac think he know.
+1	line	Player	And?
+1	line	Kovac	This polishing wheel...
+1	line	Kovac	make thing shiny.
+1	line	Player	Looks like it's lost its soft edge then.
+1	select	Repair the polishing wheel?
+1	option	Yes.
+2	cond	If the player does not have the materials required:
+3	box	You will need some wool, 2 oak logs, 5 nails and a hammer to repair the polishing wheel.
+3	action	end
+2	line	Player	Not my finest work, but I think it will do.
+2	line	Kovac	Hmm...
+2	line	Kovac	Kovac agree.
+2	line	Player	So when would we use the polishing wheel?
+2	line	Kovac	Polishing sword impotan... important.
+2	line	Kovac	Create perfect killing edge...
+2	line	Kovac	very good for sword.
+2	line	Player	That makes sense.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Talking to Kovac after all the tools are repaired
+1	line	Player	That's all the tools repaired. Well... as best as I can do.
+1	line	Kovac	Yes...
+1	line	Kovac	Kovac begin to understand more now.
+1	line	Player	I've noticed your speech has been improving over time as well.
+1	line	Kovac	Kovac know what say...
+1	line	Kovac	but sometime hard say proppel... properly.
+1	line	Player	That's alright, we'll figure it out together.
+1	line	Kovac	Kovac agree. Ready to make sword?
+1	line	Player	Yes! I'm itching to get started.
+1	line	Kovac	Kovac get few things ready first...
+1	line	Kovac	then we can start.
+1	action	end
+0	section	Make-A-Sword
+0	section	Talking to Kovac
+1	line	Player	Okay Kovac, I think I'm ready to make a sword.
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac feel like things look correct...
+1	line	Kovac	Kovac think you are right.
+1	line	Player	So what do I need to do to make a sword?
+1	line	Kovac	First...
+1	line	Kovac	you will need a coliti... commission.
+1	line	Player	Where can I get one of those?
+1	line	Kovac	Kovac will supply them...
+1	line	Kovac	Kovac already gotten one from old friend.
+1	line	Player	Okay, so what do I need to make?
+1	line	Kovac	Kovac need a <col=ef1020>Flat Broad</col> sword.
+1	line	Player	Great!
+1	line	Player	How do I make that?
+1	line	Kovac	Kovac think we need to fill the...
+1	line	Kovac	how's it called...
+1	line	Kovac	the big stone bucket...
+1	line	Player	Oh, you mean a crucible?
+1	line	Kovac	Yes, thank you...
+1	line	Kovac	Kovac think we need to fill the crucible with metal first.
+1	line	Kovac	Kovac has been connecti... collecting metals...
+1	line	Kovac	They're in that box-crate by entry.
+1	line	Kovac	Use bars and weapons...
+1	line	Kovac	Crucible can take both.
+1	line	Kovac	Load metals into crucible until it looks full.
+1	line	Kovac	While you do that...
+1	line	Kovac	Kovac think about next thing we need to do.
+1	action	end
+0	section	Searching crate
+1	box	You rummage through the box...
+1	box	You find a bunch of metal bars and old weapons!
+1	cond	If the player does not have 20 open inventory spaces:
+2	box	You will need 20 free inventory slots to take the items from the crate.
+2	action	end
+1	select	Take the items?
+1	option	Yes.
+2	box	You take a selection of bars and weapons from the crate.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Talking to Kovac after looting the crate
+1	line	Player	Alright, I've got the metal you said to take from the box. What now?
+1	line	Kovac	You will need to fill the crucible...
+1	line	Kovac	Add metals, armour or weapon you find to fill it.
+1	line	Kovac	We stick to bronze and iron for this sword...
+1	line	Kovac	We keep the first sword simple.
+1	action	end
+0	section	Talking to Kovac after partially filling the crucible
+1	line	Player	I've added a few things to the crucible. Is that enough?
+1	line	Kovac	No, we need more...
+1	line	Kovac	28 metal bars worth. Weapon and armour can go into crucible too but some metal lost when melted down.
+1	action	end
+0	section	Talking to Kovac after filling the crucible
+1	line	Player	Right, that's the crucible full. Can I make the sword yet?
+1	line	Kovac	Kovac think we need to set up a mould.
+1	line	Player	What's a mould used for?
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac think mould will determine the type of sword to be made.
+1	line	Kovac	Remember, we need a <col=ef1020>Flat Broad</col> sword.
+1	line	Player	Okay, so how do I go about setting up a mould?
+1	line	Kovac	Kovac remember being told a sword is made from three parts...
+1	line	Kovac	a forte, a blade and a tip.
+1	line	Kovac	Use mould jig behind you...
+1	line	Kovac	You can select part for each selecti... section.
+1	line	Kovac	Each mould part is differing...
+1	line	Kovac	They will suit different commissions better...
+1	line	Kovac	Look for parts that match commission.
+1	line	Player	Right... I think I'm with you.
+1	line	Kovac	If you are still confused...
+1	line	Kovac	come back to me.
+1	action	end
+0	section	Talking to Kovac before setting the mould
+1	line	Player	I'm sorry Kovac, but I'm not entirely sure what I'm meant to be doing.
+1	line	Kovac	That is okay...
+1	line	Kovac	Kovac not so sure of himself...
+1	line	Kovac	but you help Kovac, so Kovac help you.
+1	line	Player	Thanks Kovac. You're gentle for a giant.
+1	line	Player	So what was it I needed to do at the mould jig?
+1	line	Kovac	We need to fill each part of the mould...
+1	line	Kovac	Forte, blade and tip.
+1	line	Kovac	We want to use mould parts that match collisi... commission Kovac give you.
+1	line	Kovac	Remember, each part suit a differing sword better...
+1	line	Kovac	Look for ones that match <col=ef1020>Flat and Broad</col>.
+1	action	end
+0	section	Talking to Kovac after setting the mould
+1	line	Player	Right, the mould is setup and the crucible is full to the brim. We must be ready to pour.
+1	line	Kovac	Hmm...
+1	line	Kovac	let me look.
+1	box	Kovac takes a look at what you've done...
+1	box	...
+1	line	Kovac	Yes, all things look correct...
+1	line	Kovac	Well done little one. We are ready.
+1	line	Kovac	Pour the metal from the crucible into the mould...
+1	line	Kovac	then take out the preform.
+1	line	Kovac	Once you have done that...
+1	line	Kovac	Kovac will tell how to work the preform.
+1	action	end
+0	section	Before picking up the preform
+1	line	Player	The metal's too hot to pick up!
+1	line	Kovac	Yes.
+1	line	Player	What do I do?
+1	line	Kovac	Cool it down...
+1	line	Kovac	What do you expect?
+1	line	Player	Ah, of course... How do I do that?
+1	line	Kovac	Kovac do not know. Try pouring water on it.
+1	action	end
+0	section	Talk to Kovac after using a bucket of water
+1	line	Player	I'm not sure what to do next...
+1	line	Kovac	Hmm...
+1	line	Kovac	take the preform and put it in your hand. Then come see Kovac for help.
+1	action	end
+0	section	Trying to pick up the preform before cooling it
+1	box	The preform is still molten! You need to cool it down.
+0	section	Trying to pick up the preform with a weapon or shield equipped
+1	box	You must free your hands so you can hold the preform.
+0	section	After picking up the preform
+1	line	Player	Okay Kovac, I've got this huge burning hot sword. What do I do with it?
+1	line	Kovac	Now for fun part.
+1	line	Kovac	Use tools around the foundry to reclin... refine the preform.
+1	line	Player	How do I know which tool I need to use?
+1	line	Kovac	Hmm...
+1	line	Kovac	Kovac not too sure. Kovac's gut feeling says use trip hammer first.
+1	box	Progress on your sword can be tracked via the display on screen. You can track which tool you need to use via the completion bar.
+1	line	Kovac	This is very impoten... important...
+1	line	Kovac	The preform needs to be within a certain heat range to work properly.
+1	line	Kovac	If you use the wrong tool...
+1	line	Kovac	or tool at wrong heat, we damage the preform quality.
+1	line	Kovac	A sword with low quality is bad...
+1	line	Kovac	Means less giants will want it, so Kovac give less for it.
+1	line	Kovac	If you damage a preform too much, it will become junk and Kovac will have to throw it away...
+1	line	Kovac	but this first attent... attempt, so do not worry about quality too much.
+1	line	Kovac	You use trip hammer first. Trip hammer need preform to be quite hot.
+1	box	The temperature of the preform is tracked via the temperature bar.
+1	box	To work a preform with a tool, the temperature needs to be within the matched temperature range, or you'll damage the preform.
+1	box	Any damage to the preform will lower its quality, tracked via the quality bar. If there's no quality left in the preform it becomes unworkable, and must be throw away.
+1	line	Kovac	If the preform at wrong temperature...
+1	line	Kovac	You can hot it up by dunking it in lava or cold it by holding it to waterfall.
+1	line	Player	Alright, I'll give it a go.
+1	line	Kovac	Remember, try trip hammer first with hot preform.
+1	action	end
+0	section	Before completing the use of the trip hammer
+1	line	Player	I'm not sure which tool I need to use next.
+1	line	Kovac	Hmm...
+1	line	Kovac	Hmm... you need to use the trip hammer.
+1	line	Kovac	Make sure preform is nice and hot...
+1	line	Kovac	Trip hammer needs a high temperature.
+1	action	end
+0	section	Using a preform that is too cold on the trip hammer
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	The sword is too cold. We need to heat it up to use it on the trip hammer.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform on the trip hammer after its been hammered enough
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	Using wrong tool. We should be using the grindstone.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform that has not been completely hammered on the grindstone or polishing wheel
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	Using wrong tool. We should be using the trip hammer.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Talking to him after hammering the preform enough
+1	line	Player	I'm not sure which tool I need to use next.
+1	line	Kovac	Hmm...
+1	line	Kovac	time to move over to the grindstone.
+1	line	Kovac	The preform need to be warm...
+1	line	Kovac	Fictio... friction from grindstone will heat the preform up as well.
+1	action	end
+0	section	Using a preform that is too hot on the grindstone
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	The sword is too hot. We need to cool it down to use it on the grindstone.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform that is too cold on the grindstone
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	The sword is too cold. We need to heat it up to use it on the grindstone.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform on the grindstone after its been ground enough
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	Using wrong tool. We should be using the polishing wheel.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform that has not been completely ground on the grindstone on the polishing wheel
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	Using wrong tool. We should be using the grindstone.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Talking to him after hammering the preform enough
+1	line	Player	I'm not sure which tool I need to use next.
+1	line	Kovac	You are almost done...
+1	line	Kovac	You just need to use polishing wheel to finish preform off.
+1	line	Kovac	Preform need to be quite cool to work with polishing wheel.
+1	action	end
+0	section	Using a preform that is too hot on the polishing wheel
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	The sword is too hot. We need to cool it down to use it on the polishing wheel.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	Using a preform that is too cold on the polishing wheel
+1	line	Kovac	Stop!
+1	line	Player	What did I do wrong?
+1	line	Kovac	You're damaging the preform!
+1	line	Player	How?
+1	line	Kovac	The sword is too cold. We need to heat it up to use it on the polishing wheel.
+1	line	Player	Oh, my bad!
+1	action	end
+0	section	After polishing it enough
+1	line	Player	Looks like the sword is finished. I should take it to Kovac.
+1	action	end
+0	section	Using the finished sword on any tool after its finished
+1	line	Player	Looks like the sword is finished. I should take it to Kovac.
+1	action	end
+0	section	Attempting to fill the crucible before handing in the preform
+1	line	Player	I should finish helping Kovac before I try making another sword.
+1	action	end
+0	section	Handing in the sword
+1	line	Player	Okay Kovac, I think I've finally finished the sword!
+1	line	Kovac	Hmm...
+1	line	Kovac	let Kovac look.
+1	box	You pass the sword over to Kovac...
+1	box	He analyses your work...
+1	line	Kovac	Hmm...
+1	line	Kovac	Yes...
+1	line	Kovac	Hmm...
+1	line	Kovac	This is defeanin... definitely a sword...
+1	line	Kovac	Well done little one.
+1	cond	If the quality of the sword is at 0:
+2	line	Player	Sorry it's not very good. I'm still getting use to everything.
+2	line	Kovac	That is okay. You do better than Kovac could...
+2	line	Kovac	We still leanin... learning.
+2	line	Player	So what do we do with it now?
+2	action	continues
+1	cond	If the quality of the sword is above 0:
+2	line	Player	Great! So what do we do with it now?
+2	action	continues
+1	line	Kovac	Kovac take care of it.
+1	line	Player	Out of curiosity, who is this first blade for?
+1	line	Kovac	Kovac friend...
+1	line	Kovac	Obor.
+1	cond	If the player has 0 Obor kill count:
+2	line	Player	Obor? Can't say I've heard of them.
+2	action	continues
+1	cond	If the player has at least 1 Obor kill count:
+2	line	Player	Obor? He's just going to use it to kill me!
+2	line	Kovac	Obor good friend. Kovac know he only attack if you trespass his cave...
+2	line	Kovac	Maybe you should have some manners and knock first.
+2	line	Player	Well, you're not wrong there... I normally just let myself in.
+2	line	Kovac	Yes, manner very important.
+2	action	continues
+1	line	Kovac	Kovac think Obor show other giants how strong our swords are. Then every giant want one.
+1	line	Player	That's a pretty clever marketing plan, I must admit.
+1	line	Kovac	Kovac know what he do sometime... Thank you for help, {player}. You free to use foundry whenever you want.
