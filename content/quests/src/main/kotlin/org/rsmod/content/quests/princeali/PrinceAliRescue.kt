@@ -14,6 +14,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -58,7 +59,7 @@ constructor(
         onNpcOpLabel(npcTypes, PrinceNpcs.hassan, "Talk-to") { talkHassan(it) }
         onNpcOpLabel(npcTypes, PrinceNpcs.osman, "Talk-to") { talkOsman(it) }
         onNpcOpLabel(npcTypes, PrinceNpcs.leela, "Talk-to") { talkLeela(it) }
-        onNpcOpLabel(npcTypes, PrinceNpcs.ned, "Talk-to") { talkNed(it) }
+        with(QuestTalk) { default(npcTypes, PrinceNpcs.ned) { talkNed(it) } }
         onNpcOpLabel(npcTypes, PrinceNpcs.keli, "Talk-to") { talkKeli(it, usedRope = false) }
         onOpNpcU(PrinceNpcs.keli, PrinceObjs.rope) { talkKeli(it.npc, usedRope = true) }
         onNpcOpLabel(npcTypes, PrinceNpcs.joe, "Talk-to") { talkJoe(it) }

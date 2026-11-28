@@ -9,6 +9,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -41,7 +42,7 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
     }
 
     override fun ScriptContext.startup() {
-        onNpcOpLabel(npcTypes, RuneMysteriesNpcs.duke, "Talk-to") { talkDuke(it) }
+        with(QuestTalk) { default(npcTypes, RuneMysteriesNpcs.duke) { talkDuke(it) } }
         for (sedridor in RuneMysteriesNpcs.sedridors) {
             onNpcOpLabel(npcTypes, sedridor, "Talk-to") { talkSedridor(it) }
         }
