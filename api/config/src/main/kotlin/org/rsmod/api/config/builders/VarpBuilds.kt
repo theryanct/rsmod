@@ -35,6 +35,8 @@ internal object VarpBuilds : VarpBuilder() {
         build("generic_storage_65531")
 
         // Local feature toggles (see org.rsmod.api.player.features). Perm: saved per character.
+        // One-off save migrations already applied (see content/other/migrations). Perm.
+        build("migration_flags")
         build("feature_flags")
         build("feature_skillxp_attack")
         build("feature_skillxp_defence")
