@@ -15,9 +15,12 @@ internal object RunecraftObjs : ObjReferences() {
     val pure_essence = find("blankrune_high")
     val tiara = find("tiara")
 
+    val binding_necklace = find("magic_emerald_necklace")
+
     val byName: Map<String, ObjType> =
-        RunecraftData.altars
-            .flatMap { listOf(it.talisman, it.tiara, it.rune) }
+        (RunecraftData.altars.flatMap { listOfNotNull(it.talisman, it.tiara, it.rune) } +
+                RunecraftData.combos.flatMap { listOf(it.product, it.rune) })
+            .distinct()
             .associateWith { find(it) }
 }
 
@@ -34,7 +37,7 @@ internal object RunecraftLocs : LocReferences() {
 
     val byName: Map<String, LocType> =
         RunecraftData.altars
-            .flatMap { listOf(it.ruins, it.ruinsEnter, it.altar, it.portal) }
+            .flatMap { listOfNotNull(it.ruins, it.ruinsEnter, it.altar, it.portal) }
             .associateWith { find(it) }
 }
 
@@ -53,5 +56,5 @@ internal object RunecraftSpotanims : SpotanimReferences() {
 
 internal object RunecraftVarBits : VarBitReferences() {
     val byName: Map<String, VarBitType> =
-        RunecraftData.altars.map { it.varbit }.associateWith { find(it) }
+        RunecraftData.altars.map { it.varbit }.filter { it.isNotEmpty() }.associateWith { find(it) }
 }
