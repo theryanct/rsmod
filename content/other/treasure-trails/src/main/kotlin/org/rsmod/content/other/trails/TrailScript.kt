@@ -167,7 +167,7 @@ constructor(
                 }
             }
         val reachable = all.mapValues { (_, list) -> list.filter { it.isReachable(spawned) } }
-        logger.info {
+        logger.warn {
             "Treasure trails: solvable steps " +
                 all.keys.joinToString { tier ->
                     "${tier.display} ${reachable.getValue(tier).size}/${all.getValue(tier).size}"
