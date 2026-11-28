@@ -17,6 +17,7 @@ import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
+import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
@@ -48,6 +49,7 @@ public object BuiltQuests {
             IMP_CATCHER,
             KNIGHTS_SWORD,
             MISTHALIN_MYSTERY,
+            MONKS_FRIEND,
             PIRATES_TREASURE,
             PRINCE_ALI_RESCUE,
             RESTLESS_GHOST,
