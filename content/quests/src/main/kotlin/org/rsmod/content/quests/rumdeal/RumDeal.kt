@@ -253,9 +253,11 @@ constructor(
         fadeOverlay(startColour = 0, startTransparency = 255, endColour = 0, endTransparency = 0, clientDuration = 50)
         delay(FADE_TICKS)
         telejump(collision.nearestWalkable(CAPTAIN_ROOM))
-        startDialogue { QuestDialogueRunner(SimpleQuestHooks(), cutsceneSpeakers).run(this, dialogue.section("Cutscene 1")) }
+        delay(1)
+        // Fade back in before any dialogue, so a cancelled conversation can't leave the screen black.
         fadeOverlay(startColour = 0, startTransparency = 0, endColour = 0, endTransparency = 255, clientDuration = 50)
         closeFadeOverlay()
+        startDialogue { QuestDialogueRunner(SimpleQuestHooks(), cutsceneSpeakers).run(this, dialogue.section("Cutscene 1")) }
         meetCaptain(null)
     }
 
