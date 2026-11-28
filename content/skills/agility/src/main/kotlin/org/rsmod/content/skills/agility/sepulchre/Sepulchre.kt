@@ -1,5 +1,6 @@
 package org.rsmod.content.skills.agility.sepulchre
 
+import org.rsmod.annotations.InternalApi
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import kotlin.math.abs
@@ -352,6 +353,7 @@ constructor(
 
     /* Loop */
 
+    @OptIn(InternalApi::class)
     private fun tick(player: Player) {
         val run = player.run()
         if (run == null) {
