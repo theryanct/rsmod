@@ -2,6 +2,7 @@ package org.rsmod.api.combat.scripts
 
 import jakarta.inject.Inject
 import org.rsmod.api.area.checker.AreaChecker
+import org.rsmod.api.combat.Dragonfire
 import org.rsmod.api.combat.NvPCombat
 import org.rsmod.api.combat.commons.CombatAttack
 import org.rsmod.api.combat.commons.types.MeleeAttackType
@@ -20,7 +21,11 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 internal class NvPCombatScript
 @Inject
-constructor(private val combat: NvPCombat, private val areaChecker: AreaChecker) : PluginScript() {
+constructor(
+    private val combat: NvPCombat,
+    private val dragonfire: Dragonfire,
+    private val areaChecker: AreaChecker,
+) : PluginScript() {
     override fun ScriptContext.startup() {
         onDefaultAiOpPlayer2 { attemptCombatOp(it.target) }
     }
@@ -28,6 +33,11 @@ constructor(private val combat: NvPCombat, private val areaChecker: AreaChecker)
     private fun StandardNpcAccess.attemptCombatOp(target: Player) {
         if (!canAttack(target)) {
             resetMode()
+            return
+        }
+        // Opt-in dragonfire (dragonfire.tsv): some attacks are a breath instead of melee.
+        if (dragonfire.shouldBreathe(this)) {
+            dragonfire.breathe(this, target)
             return
         }
         val attackType = npc.resolveMeleeAttackType()
