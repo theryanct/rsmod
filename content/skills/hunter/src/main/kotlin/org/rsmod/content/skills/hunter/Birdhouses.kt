@@ -20,7 +20,6 @@ import org.rsmod.api.type.builders.varp.VarpBuilder
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
-import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.loc.LocTypeList
@@ -117,8 +116,8 @@ constructor(
     private fun refresh(player: Player) {
         player.softTimer(BirdhouseTimers.refresh, REFRESH_TICKS)
         if (BirdhouseData.spotTiles.none { it.chebyshevDistance(player.coords) <= VIEW_RADIUS }) return
-        for (spot in BirdhouseVarBits.transmit.indices) {
-            VarPlayerIntMapSetter.set(player, BirdhouseVarBits.transmit[spot], player.displayValue(spot))
+        for (spot in BirdhouseTransmitVarps.transmit.indices) {
+            VarPlayerIntMapSetter.set(player, BirdhouseTransmitVarps.transmit[spot], player.displayValue(spot))
         }
     }
 
@@ -325,7 +324,8 @@ internal object BirdhouseLocs : LocReferences() {
                 .flatMap { t -> listOf("built", "full", "bird").map { find("birdhouse_${t}_$it") } }
 }
 
-internal object BirdhouseVarBits : VarBitReferences() {
+/** Vanilla client transmit VARPS (varp.sym 1626-1629), not varbits. */
+internal object BirdhouseTransmitVarps : VarpReferences() {
     val transmit = listOf("a", "b", "c", "d").map { find("birdhouse_transmit_$it") }
 }
 
