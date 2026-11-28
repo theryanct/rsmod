@@ -210,11 +210,12 @@ internal object FarmingData {
         seedValue: Int,
         woodLevel: Int,
         woodXp: Double,
+        sapling: String = "plantpot_${key}_sapling",
     ) =
         Crop(
             key = key,
             kind = Kind.Tree,
-            seed = "plantpot_${key}_sapling",
+            seed = sapling,
             seedsPer = 1,
             produce = "${key}_logs",
             level = level,
@@ -306,7 +307,26 @@ internal object FarmingData {
             ),
             tree("oak", 15, 14.0, 467.3, 4, 8, 15, 37.5),
             tree("willow", 30, 25.0, 1456.5, 6, 15, 30, 67.5),
-        ) + Pr3.crops // PR3: appended only (the saved crop id is the list index).
+        ) + Pr3.crops + // PR3: appended only (the saved crop id is the list index).
+            // Batch B (2026-11-28): appended after PR3, so farming_pr3.tsv crop rows are now FROZEN
+            // (a new tsv crop row would shift these saved ids). New crops go at the end of this list.
+            // Herb stage values from the rev-243 herb patch multiloc (huasca sits at 60, so kwuarm+
+            // are not +7 steps); xp from the Wiki "(plant)" pages; save1 = (low CTS + 1) / 256.
+            listOf(
+                herb("ranarr", "ranarr_seed", "unidentified_ranarr", 32, 26.5, 30.5, 32, 15.6),
+                herb("toadflax", "toadflax_seed", "unidentified_toadflax", 38, 34.0, 38.5, 39, 17.2),
+                herb("irit", "irit_seed", "unidentified_irit", 44, 43.0, 48.5, 46, 18.4),
+                herb("avantoe", "avantoe_seed", "unidentified_avantoe", 50, 54.5, 61.5, 53, 19.9),
+                herb("kwuarm", "kwuarm_seed", "unidentified_kwuarm", 56, 69.0, 78.0, 68, 21.5),
+                herb("snapdragon", "snapdragon_seed", "unidentified_snapdragon", 62, 87.5, 98.5, 75, 22.7),
+                herb("cadantine", "cadantine_seed", "unidentified_cadantine", 67, 106.5, 120.0, 82, 23.8),
+                herb("lantadyme", "lantadyme_seed", "unidentified_lantadyme", 73, 134.5, 151.5, 89, 25.4),
+                herb("dwarf_weed", "dwarf_weed_seed", "unidentified_dwarf_weed", 79, 170.5, 192.0, 96, 26.6),
+                herb("torstol", "torstol_seed", "unidentified_torstol", 85, 199.5, 224.5, 103, 28.1),
+                tree("maple", 45, 45.0, 3403.4, 8, 24, 45, 100.0),
+                tree("yew", 60, 81.0, 7069.9, 10, 35, 60, 175.0),
+                tree("magic", 75, 145.5, 13768.3, 12, 48, 75, 250.0, "plantpot_magic_tree_sapling"),
+            )
 
     /** farming_pr3.tsv: fruit trees and bushes (tools/skills/farming_pr3.py). */
     private object Pr3 {
