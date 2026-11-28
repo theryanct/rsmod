@@ -39,8 +39,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Veos is a multinpc in Lumbridge (`veos_lumbridge_vis`) and at Port Sarim (`veos_sarim_vis`); both
  * are set on login. Lost clue items are handed back by Veos.
  *
- * Not done: the map clue's interface (read shows a text description), the lamp's skill picker
- * (no lamp script yet), scroll boxes / clue caps, the Kourend travel ops.
+ * The antique lamp is rubbed via content/other/xp-lamps. Not done: the map clue's interface (read
+ * shows a text description), scroll boxes / clue caps, the Kourend travel ops.
  */
 class XMarksTheSpot
 @Inject
