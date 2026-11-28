@@ -4,10 +4,13 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import java.util.WeakHashMap
 import org.rsmod.api.config.refs.invs
+import org.rsmod.api.config.refs.varps
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.death.ClueDrops
 import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.music.MusicRepository
+import org.rsmod.api.npc.interact.AiPlayerInteractions
+import org.rsmod.api.npc.opPlayer2
 import org.rsmod.api.player.dig.DigSpots
 import org.rsmod.api.player.events.CollectionLogObtained
 import org.rsmod.api.player.events.EmoteSelected
@@ -21,6 +24,7 @@ import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.isHeldOpBound
+import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
@@ -35,6 +39,7 @@ import org.rsmod.game.inv.InvObj
 import org.rsmod.game.inv.Inventory
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.dbrow.DbRowTypeList
+import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.interf.InterfaceType
 import org.rsmod.game.type.interf.InterfaceTypeList
 import org.rsmod.game.type.loc.LocTypeList
@@ -52,7 +57,9 @@ import org.rsmod.plugin.scripts.ScriptContext
 private val logger = InlineLogger()
 
 /**
- * Treasure trails, every tier (steps needing fights, puzzle/light boxes or kills: later).
+ * Treasure trails, every tier. Hard adds puzzle boxes and fights (wizards on coordinate
+ * steps, double agents on emote steps). Light boxes are built but only master steps use them
+ * (still gated off), like the elite/master fights and kill steps.
  * Step data is Jagex's own: the 243 cache's
  * clue-helper db tables ([ClueSteps]), so texts match the game and RuneLite's clue helper.
  *
@@ -84,8 +91,15 @@ constructor(
     private val musicRepo: MusicRepository,
     private val interfaceTypes: InterfaceTypeList,
     private val locRepo: LocRepository,
+    private val aiInteractions: AiPlayerInteractions,
 ) : PluginScript() {
-    private val steps by lazy { ClueSteps.load(dbRows, names.dbTables) }
+    private val steps by lazy {
+        val boxes = setOfNotNull(names.dbRows["cluehelper_challenge_box_puzzle"])
+        val encounters = ENCOUNTERS.mapNotNullTo(HashSet()) { names.dbRows[it] }
+        ClueSteps.load(dbRows, names.dbTables, boxes, encounters)
+    }
+
+    private val lightBoxRow by lazy { names.dbRows["cluehelper_challenge_box_light"] }
 
     private val rewards by lazy { ClueTier.entries.associateWith { TrailRewards.load(it) } }
 
@@ -132,7 +146,9 @@ constructor(
                 if (tier == ClueTier.Beginner) {
                     steps.ofTier(tier, beginnerKinds)
                 } else {
-                    steps.ofTier(tier, kinds).filter { it.row in objByStep }
+                    steps.ofTier(tier, kinds).filter {
+                        it.row in objByStep && (it.box == null || boxObj(it) != null)
+                    }
                 }
             }
         val reachable = all.mapValues { (_, list) -> list.filter { it.isReachable(spawned) } }
@@ -183,6 +199,30 @@ constructor(
     /** Emote steps with several emotes: (step dbrow, emotes done so far) per player. */
     private val emoteProgress = WeakHashMap<Player, Pair<Int, Int>>()
 
+    /** Open puzzle / light boxes: (step dbrow, state) per player. Lost on logout (re-scrambled). */
+    private val puzzles = WeakHashMap<Player, Pair<Int, SlidePuzzle>>()
+    private val lightBoxes = WeakHashMap<Player, Pair<Int, LightBox>>()
+
+    /** A step's fight: the npcs still alive, and whether the owner won it. */
+    private class Encounter(val row: Int, val npcs: MutableList<Npc>) {
+        var won = false
+    }
+
+    private val encounters = WeakHashMap<Player, Encounter>()
+
+    /**
+     * The box a step's npc hands out: the light box, or the step's own puzzle box (the clue obj's
+     * symbol + `_puzzlebox`; these objs have no params linking them). Null if it can't be found.
+     */
+    private fun boxObj(step: ClueStep): Int? {
+        val box = step.box ?: return null
+        if (box == lightBoxRow) {
+            return objTypes[TrailObjs.light_box].id
+        }
+        val clueName = objByStep[step.row]?.let(objNames::get) ?: return null
+        return names.objs["${clueName}_puzzlebox"]
+    }
+
     override fun ScriptContext.startup() {
         logger.info {
             "Treasure trails: ${steps.byRow.size} steps; easy clue objs ${objByStep.size}."
@@ -197,7 +237,21 @@ constructor(
         }
         onOpHeld1(TrailObjs.strange_device) { feelDevice() }
         onOpHeld1(TrailObjs.sextant) { lookThroughSextant() }
-        onEvent<NpcKilledEvent> { hero.dropClueKey(npc) }
+        onEvent<NpcKilledEvent> {
+            hero.dropClueKey(npc)
+            encounterKilled(npc, hero)
+        }
+        val boxObjs = steps.byRow.values.mapNotNullTo(HashSet()) { boxObj(it) }
+        for (box in boxObjs) {
+            val type = objTypes[box] ?: continue
+            if (!isHeldOpBound(type, 1)) {
+                onOpHeld1(type) { openBox(it.type) }
+            }
+        }
+        onIfModalButton(TrailComponents.puzzle_pieces) { movePiece(it.comsub) }
+        for ((index, button) in TrailComponents.light_buttons.withIndex()) {
+            onIfModalButton(button) { pressLight(index) }
+        }
 
         OpInterceptors.register(NpcClaim())
         OpInterceptors.register(LocClaim())
@@ -420,6 +474,7 @@ constructor(
                 startDialogue(npc) { chatNpc(happy, "Thanks! Here's a clue for your trouble.") }
                 advance(clue, step)
             }
+            step.box != null -> talkBoxNpc(npc, clue, step)
             step.question != null -> {
                 val (question, answer) = step.question
                 startDialogue(npc) { chatNpc(neutral, question) }
@@ -509,6 +564,9 @@ constructor(
             if (coords.chebyshevDistance(target.coord) > range) {
                 continue
             }
+            if (player.fightPending(step)) {
+                return true
+            }
             if (step.kind == ClueKind.HotCold) {
                 invDel(inv, TrailObjs.strange_device, 1)
             }
@@ -573,6 +631,9 @@ constructor(
             return
         }
         emoteProgress.remove(this)
+        if (fightPending(step)) {
+            return
+        }
         if (uris[this]?.isSlotAssigned == true) {
             return
         }
@@ -595,11 +656,169 @@ constructor(
         held?.let { (clue, step) -> advance(clue, step) }
     }
 
+    /* Boxes (dialogue lines here are authored, not Wiki) */
+
+    private suspend fun ProtectedAccess.talkBoxNpc(npc: Npc, clue: InvObj, step: ClueStep) {
+        val box = boxObj(step)?.let { objTypes[it] } ?: return advance(clue, step)
+        val holding = invTotal(inv, box) > 0
+        val solved = player.vars[TrailVarps.box_solved] == step.row
+        when {
+            holding && solved -> {
+                invDel(inv, box, 1)
+                player.setVar(TrailVarps.box_solved, 0)
+                startDialogue(npc) { chatNpc(happy, "You've solved it! Here, take this.") }
+                advance(clue, step)
+            }
+            holding ->
+                startDialogue(npc) {
+                    chatNpc(neutral, "Have you solved that puzzle yet? Bring it back when you have.")
+                }
+            else -> {
+                if (invAdd(inv, box).failure) {
+                    mes("You need a free inventory space for the puzzle.")
+                    return
+                }
+                player.setVar(TrailVarps.box_solved, 0)
+                puzzles.remove(player)
+                lightBoxes.remove(player)
+                startDialogue(npc) {
+                    chatNpc(neutral, "Solve this puzzle for me and I'll give you your next clue.")
+                }
+            }
+        }
+    }
+
+    private fun ProtectedAccess.openBox(obj: UnpackedObjType) {
+        val step =
+            player.heldSteps().map { it.second }.firstOrNull { boxObj(it) == obj.id }
+                ?: return mes("This doesn't seem to belong to any clue you're holding.")
+        if (player.vars[TrailVarps.box_solved] == step.row) {
+            mes("You've already solved this. Take it back to whoever gave it to you.")
+            return
+        }
+        if (obj.id == objTypes[TrailObjs.light_box].id) {
+            openLightBox(step)
+        } else {
+            openPuzzle(step)
+        }
+    }
+
+    private fun ProtectedAccess.openPuzzle(step: ClueStep) {
+        val puzzle =
+            puzzles[player]?.takeIf { it.first == step.row }?.second
+                ?: SlidePuzzle.scrambled(random).also { puzzles[player] = step.row to it }
+        // The onload (cs2 688/690) reads the piece set from if1 and the pieces from the inv.
+        player.setVar(varps.if1, puzzle.set)
+        sendPuzzle(puzzle)
+        ifOpenMainModal(TrailInterfaces.slidepuzzle)
+        val slots = SlidePuzzle.SIZE * SlidePuzzle.SIZE
+        ifSetEvents(TrailComponents.puzzle_pieces, 0 until slots, IfEvent.Op1)
+    }
+
+    @OptIn(UncheckedType::class)
+    private fun ProtectedAccess.sendPuzzle(puzzle: SlidePuzzle) {
+        val display = Inventory.create(invTypes[TrailInvs.puzzle])
+        val letter = PUZZLE_SET_LETTERS[puzzle.set - 1]
+        for ((slot, piece) in puzzle.slots.withIndex()) {
+            if (piece == SlidePuzzle.EMPTY || slot >= display.size) {
+                continue
+            }
+            val name = "trail_slidingpuzzle" + letter + "%02d".format(piece + 1)
+            val id = names.objs[name] ?: continue
+            display[slot] = InvObj(id, 1)
+        }
+        UpdateInventory.updateInvFull(player, display)
+    }
+
+    /** The client already slid the piece (cs2 691); mirror it, or resync if it was illegal. */
+    private fun ProtectedAccess.movePiece(slot: Int) {
+        val (row, puzzle) = puzzles[player] ?: return
+        if (!puzzle.move(slot)) {
+            sendPuzzle(puzzle)
+            return
+        }
+        if (puzzle.isSolved) {
+            puzzles.remove(player)
+            player.setVar(TrailVarps.box_solved, row)
+            mes("You've solved the puzzle!")
+        }
+    }
+
+    private fun ProtectedAccess.openLightBox(step: ClueStep) {
+        val box =
+            lightBoxes[player]?.takeIf { it.first == step.row }?.second
+                ?: LightBox.random(random).also { lightBoxes[player] = step.row to it }
+        player.setVar(TrailVarps.lights, box.lights)
+        ifOpenMainModal(TrailInterfaces.light_puzzle)
+        for (button in TrailComponents.light_buttons) {
+            ifSetEvents(button, -1..-1, IfEvent.Op1)
+        }
+    }
+
+    private fun ProtectedAccess.pressLight(button: Int) {
+        val (row, box) = lightBoxes[player] ?: return
+        box.press(button)
+        player.setVar(TrailVarps.lights, box.lights)
+        if (box.isSolved) {
+            lightBoxes.remove(player)
+            player.setVar(TrailVarps.box_solved, row)
+            mes("All the lights are on. You've solved the light box!")
+        }
+    }
+
+    /* Fights: wizards on coordinate steps, double agents on emote steps (messages authored) */
+
+    /**
+     * True while [step]'s fight is still owed: spawns its npcs to attack the player if none are
+     * up. After the kill, the same action (dig / emote) completes the step.
+     */
+    private fun Player.fightPending(step: ClueStep): Boolean {
+        if (step.encounterNpcs.isEmpty()) {
+            return false
+        }
+        val current = encounters[this]?.takeIf { it.row == step.row }
+        if (current?.won == true) {
+            return false
+        }
+        if (current != null && current.npcs.any { it.isSlotAssigned }) {
+            mes("You'll have to deal with your attacker first.")
+            return true
+        }
+        val spawned = ArrayList<Npc>()
+        for (id in step.encounterNpcs) {
+            val type = npcTypes[id] ?: continue
+            val npc = Npc(type, coords.translate(1, 0))
+            npcRepo.add(npc, ENCOUNTER_DURATION)
+            npc.opPlayer2(this, aiInteractions)
+            spawned += npc
+        }
+        if (spawned.isEmpty()) {
+            return false
+        }
+        encounters[this] = Encounter(step.row, spawned)
+        mes("You've been ambushed!")
+        return true
+    }
+
+    private fun encounterKilled(npc: Npc, hero: Player) {
+        for ((owner, fight) in encounters) {
+            if (!fight.npcs.removeIf { it === npc }) {
+                continue
+            }
+            if (fight.npcs.isEmpty() && hero === owner) {
+                fight.won = true
+                owner.mes("You've defeated your attacker. Carry on with your clue.")
+            }
+            return
+        }
+    }
+
     /* Progress */
 
     /** Moves the trail on from [step]: a new clue, or the reward casket after the last step. */
     private suspend fun ProtectedAccess.advance(clue: InvObj, step: ClueStep) {
         val tier = step.tier
+        encounters.remove(player)
         val remainingVarp = remainingVarp(tier)
         val left = player.vars[remainingVarp] - 1
         val slot = inv.indexOfFirst { it == clue }.takeIf { it >= 0 } ?: return
@@ -686,6 +905,17 @@ constructor(
         private const val EMOTE_RANGE = 5
         private const val URI_DURATION = 100
         private const val GROUND_DURATION = 200
+        private const val ENCOUNTER_DURATION = 500
+        /** Piece set letters for if1 = 1..3 (objs trail_slidingpuzzle<letter>01..24). */
+        private const val PUZZLE_SET_LETTERS = "bcd"
+        /** Fights that are implemented (hard); elite/master ones stay gated off. */
+        private val ENCOUNTERS =
+            listOf(
+                "cluehelper_combat_encounter_double_agent_65",
+                "cluehelper_combat_encounter_double_agent_108",
+                "cluehelper_combat_encounter_saradomin_wizard",
+                "cluehelper_combat_encounter_zamorak_wizard",
+            )
     }
 }
 

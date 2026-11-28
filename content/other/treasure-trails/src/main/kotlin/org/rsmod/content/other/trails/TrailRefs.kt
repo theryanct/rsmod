@@ -25,6 +25,8 @@ internal object TrailObjs : ObjReferences() {
     val chart = find("trail_chart")
     /** Beginner hot/cold "strange device" (from Reldo). */
     val strange_device = find("beginner_device")
+    /** Master light box ("Open"); hard+ puzzle boxes are per step (clue obj name + _puzzlebox). */
+    val light_box = find("light_puzzle_box")
 
     // Charlie the Tramp's beginner requests (cluehelper_skillchallenge_beginner_0..7).
     val trout = find("trout")
@@ -71,15 +73,36 @@ internal object TrailInterfaces : InterfaceReferences() {
     val map06 = find("trail_map06")
     val map11 = find("trail_map11")
     val easy_map006 = find("trail_clue_easy_map006")
+
+    /** Puzzle box: onload cs2 688 draws [TrailInvs.puzzle] as set `if1` (1..3). */
+    val slidepuzzle = find("trail_slidepuzzle")
+    /** Light box: onload cs2 1333 draws varp trail_lights. */
+    val light_puzzle = find("light_puzzle")
 }
 
 internal object TrailComponents : ComponentReferences() {
     val cluetext = find("trail_cluetext:text")
+    /** The puzzle's pieces (comsub = slot 0..24, op1 "Move"). */
+    val puzzle_pieces = find("trail_slidepuzzle:pieces")
+    /** Light box buttons A..H (op1 "Press"). */
+    val light_buttons =
+        listOf(
+            find("light_puzzle:button1"),
+            find("light_puzzle:button2"),
+            find("light_puzzle:button3"),
+            find("light_puzzle:button4"),
+            find("light_puzzle:button5"),
+            find("light_puzzle:button6"),
+            find("light_puzzle:button7"),
+            find("light_puzzle:button8"),
+        )
 }
 
 internal object TrailInvs : InvReferences() {
     /** What the reward screen lists (its onload draws this inv). */
     val reward = find("trail_rewardinv")
+    /** The sliding puzzle's 25 slots (piece objs from enums 1354..1356). */
+    val puzzle = find("trail_puzzleinv")
 }
 
 /** Custom (ui range 65310-65324), saved per character. */
@@ -102,6 +125,10 @@ internal object TrailVarps : VarpReferences() {
     val hard_completed = find("trail_hard_completed")
     val elite_completed = find("trail_elite_completed")
     val master_completed = find("trail_master_completed")
+    /** The step (dbrow) whose puzzle / light box is solved, 0 = none (65325). */
+    val box_solved = find("trail_box_solved")
+    /** Cache varp the light box draws from (bit set = unlit). */
+    val lights = find("trail_lights")
 }
 
 internal object TrailVarpBuilder : VarpBuilder() {
@@ -121,5 +148,6 @@ internal object TrailVarpBuilder : VarpBuilder() {
         build("trail_hard_completed")
         build("trail_elite_completed")
         build("trail_master_completed")
+        build("trail_box_solved")
     }
 }

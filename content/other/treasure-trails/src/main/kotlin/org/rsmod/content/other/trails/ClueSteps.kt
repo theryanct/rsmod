@@ -87,15 +87,15 @@ internal class ClueStep(
     val music: Int? = null,
     /** The npc's challenge question and its numeric answer, if any. */
     val question: Pair<String, Int>? = null,
-    /** The npc hands out a puzzle box / light box first (not implemented yet). */
-    val boxChallenge: Boolean = false,
-    /** A fight before the step completes (double agents, wizards; not implemented yet). */
-    val combat: Boolean = false,
-) {
-    /** Implemented: a supported target and no box challenge or fight. */
-    val isSupported: Boolean
-        get() = target != ClueTarget.Unsupported && !boxChallenge && !combat
-}
+    /** The npc hands out a box first: the cluehelper_challenge_box row (puzzle / light). */
+    val box: Int? = null,
+    /** A fight first (double agents, wizards): the cluehelper_combat_encounter row. */
+    val encounter: Int? = null,
+    /** The [encounter]'s npcs: all are spawned and must be killed. */
+    val encounterNpcs: List<Int> = emptyList(),
+    /** Implemented: a supported target, and a box / fight from the allowlists, if any. */
+    val isSupported: Boolean = true,
+)
 
 /**
  * Every clue step, read at startup from the 243 cache's clue-helper db tables (Jagex's own data:
@@ -106,7 +106,16 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
         byRow.values.filter { it.tier == tier && it.kind in kinds && it.isSupported }
 
     companion object {
-        fun load(rows: DbRowTypeList, tables: Map<String, Int>): ClueSteps {
+        /**
+         * [boxes] and [encounters]: the challenge box / combat encounter rows that are
+         * implemented. Steps with any other box or fight are kept but unsupported.
+         */
+        fun load(
+            rows: DbRowTypeList,
+            tables: Map<String, Int>,
+            boxes: Set<Int>,
+            encounters: Set<Int>,
+        ): ClueSteps {
             val tableNames = tables.entries.associate { (name, id) -> id to name }
             fun table(row: UnpackedDbRowType?): String? = row?.let { tableNames[it.table] }
 
@@ -167,9 +176,12 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                 val answer = values.filterIsInstance<Int>().firstOrNull() ?: return null
                 return text to answer
             }
-            fun isBox(rowId: Int?): Boolean {
-                val id = rowId ?: return false
-                return table(rows[id]) == "cluehelper_challenge_box"
+            fun box(rowId: Int?): Int? =
+                rowId?.takeIf { table(rows[it]) == "cluehelper_challenge_box" }
+
+            fun encounterNpcs(rowId: Int?): List<Int> {
+                val id = rowId ?: return emptyList()
+                return rows[id]?.ints(1).orEmpty()
             }
 
             val steps = HashMap<Int, ClueStep>()
@@ -187,7 +199,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 row.text(2),
                                 target(row.int(3)),
                                 question = question(row.int(4)),
-                                boxChallenge = isBox(row.int(4)),
+                                box = box(row.int(4)),
                             )
                         ClueKind.Cryptic ->
                             ClueStep(
@@ -197,7 +209,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 row.text(2),
                                 target(row.int(3)),
                                 question = question(row.int(5)),
-                                boxChallenge = isBox(row.int(5)),
+                                box = box(row.int(5)),
                             )
                         ClueKind.Cipher ->
                             ClueStep(
@@ -207,7 +219,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 row.text(2),
                                 target(row.int(3)),
                                 question = question(row.int(4)),
-                                boxChallenge = isBox(row.int(4)),
+                                box = box(row.int(4)),
                             )
                         ClueKind.Coordinate ->
                             ClueStep(
@@ -216,7 +228,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 tier,
                                 row.text(2),
                                 target(row.int(3)),
-                                combat = row.int(5) != null,
+                                encounter = row.int(5),
                             )
                         ClueKind.SkillChallenge ->
                             ClueStep(id, kind, tier, row.text(2), target(row.int(4)))
@@ -229,7 +241,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 tier,
                                 "",
                                 target(row.int(2)),
-                                combat = row.int(4) != null,
+                                encounter = row.int(4),
                             )
                         ClueKind.Music ->
                             ClueStep(
@@ -251,11 +263,35 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 outfit = outfit(row.int(6)),
                                 stashLoc = row.int(7),
                                 stashCoord = row.int(8)?.let(::CoordGrid),
-                                combat = row.int(9) != null,
+                                encounter = row.int(9),
                             )
                     }
             }
-            return ClueSteps(steps)
+            val checked =
+                steps.mapValues { (_, step) ->
+                    val supported =
+                        step.target != ClueTarget.Unsupported &&
+                            (step.box == null || step.box in boxes) &&
+                            (step.encounter == null || step.encounter in encounters)
+                    ClueStep(
+                        row = step.row,
+                        kind = step.kind,
+                        tier = step.tier,
+                        text = step.text,
+                        target = step.target,
+                        emotes = step.emotes,
+                        outfit = step.outfit,
+                        stashLoc = step.stashLoc,
+                        stashCoord = step.stashCoord,
+                        music = step.music,
+                        question = step.question,
+                        box = step.box,
+                        encounter = step.encounter,
+                        encounterNpcs = encounterNpcs(step.encounter),
+                        isSupported = supported,
+                    )
+                }
+            return ClueSteps(checked)
         }
 
         private const val DIFFICULTY = 1
