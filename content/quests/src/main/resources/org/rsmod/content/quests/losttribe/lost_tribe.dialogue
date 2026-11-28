@@ -1,0 +1,517 @@
+# Generated from the OSRS Wiki page "Transcript:The Lost Tribe" by tools/quests/transcript_to_dialogue.py
+0	section	A Hole in the Wall
+0	section	The Duke's Adviser
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	Do you have any quests for me?
+2	line	Player	Do you have any quests for me?
+2	line	Sigmund	There was recently some damage to the castle cellar. Part of the wall has collapsed.
+2	line	Sigmund	The Duke insists that it was an earthquake, but I think some kind of monsters are to blame.
+2	select	Start The Lost Tribe quest?
+2	option	Yes.
+3	line	Player	So what do you need me to do?
+3	line	Sigmund	You should ask people around the town about it. Maybe someone saw something.
+3	action	end
+2	option	No.
+3	line	Player	Sorry, I'm not interested.
+3	action	end
+1	option	Who are you?
+0	section	Talking to Sigmund again after starting the quest
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	What was I doing again?
+2	line	Player	What was I doing again?
+2	line	Sigmund	I asked you to talk to people around Lumbridge to see if any of them know what happened in the cellar.
+2	action	end
+1	option	Who are you?
+0	section	Asking the Duke
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	I seek a shield that will protect me from dragonbreath.
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	What happened in the cellar?
+2	line	Player	What happened in the cellar?
+2	line	Duke Horacio	The wall collapsed because of an earthquake. I'm waiting for a team of builders to come and repair it.
+2	action	end
+0	section	Asking the Cook
+1	line	Cook	How is the adventuring going, my friend?
+1	select	Select an option
+1	option	Do you have any other quests for me?
+1	option	Do you know what happened in the castle cellar?
+2	line	Cook	Oh no, it's terrible, isn't it? There was rock dust everywhere, it got on all my ingredients!
+2	action	end
+1	option	I am getting strong and mighty.
+1	option	I keep on dying.
+1	option	Can I use your range?
+0	section	Asking Hans
+1	line	Hans	Hello. What are you doing here?
+1	select	Select an option
+1	option	Do you know what happened in the cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	Hans	The wall collapsed. I had to spend all day clearing it up! The Duke says it was an earthquake.
+2	action	end
+1	option	I have come to kill everyone in this castle!
+1	option	I don't know. I'm lost. Where am I?
+1	option	Can you tell me how long I've been here?
+1	option	Nothing.
+0	section	Asking Bob
+1	select	Select an option
+1	option	Do you know what happened in the castle cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	Bob	No. But we should find whoever is responsible and slay them! With an axe!
+2	action	end
+1	option	Give me a quest!
+1	option	Have you anything to sell?
+1	option	Can you repair my items for me?
+0	section	Asking Father Aereck
+1	line	Father Aereck	Welcome to this church of holy Saradomin.
+1	select	Select an option
+1	option	Could you tell me more about prayers?
+1	option	Could you tell me more about Saradomin?
+1	option	Do you know what happened in the castle cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	Father Aereck	It's a shame, isn't it? The castle is even older than this church, and so it's terrible that it would be damaged, even if it's only the cellar.
+2	action	end
+1	option	I'd better be going.
+0	section	Asking Donie or Gee
+1	line	Donie/Gee	Hello there, can I help you?
+1	select	Select an Option
+1	option	Where am I?
+2	action	above
+1	option	How are you today?
+2	action	above
+1	option	Are there any quests I can do here?
+2	action	above
+1	option	Your shoe lace is untied.
+2	action	above
+1	option	Do you know what happened in the castle cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	Donie/Gee	I heard the wall collapsed or something. I don't know why. Perhaps you could get to the bottom of this mystery!
+2	action	end
+1	select	Select an option
+1	option	Do you know what happened in the castle cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	NPC	Last night I was in the kitchen and I heard a noise from the cellar. I opened the trapdoor and saw a creature dart into a hole in the wall.
+2	line	NPC	It looked a bit like a goblin, but it had big bulging eyes. It wasn't wearing armour, but it had this odd helmet with a light on it.
+2	line	NPC	The tunnel was too dark for me to follow it, so I went to tell the Duke. But when we went down to the cellar the hole had been blocked up, and no one believes me.
+2	line	Player	I believe you.
+2	line	NPC	Thank you, {player}! If you can convince the Duke I'm telling the truth then we can get to the bottom of this mystery.
+2	action	end
+0	section	Talking to them again
+1	select	Select an option
+1	option	Do you know what happened in the castle cellar?
+2	line	Player	Do you know what happened in the castle cellar?
+2	line	NPC	I told you about the creature I saw. You should go and tell the Duke.
+2	action	end
+0	section	Talking to Sigmund after talking to who saw the goblin
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	[NPC] says he saw something in the cellar.
+2	line	Player	[NPC] says he saw something in the cellar. Like a goblin with big eyes.
+2	line	Sigmund	A goblin? This validates my suspicion! We should tell the Duke!
+2	action	end
+1	option	Who are you?
+0	section	Convincing Horacio
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	[NPC] says he saw something in the cellar
+2	line	Player	[NPC] says he saw something in the cellar. Like a goblin with big eyes.
+2	line	Duke Horacio	Yes, he mentioned that to me. But I think he was imagining things. Goblins live in natural caves but everyone knows they don't have the wit to make their own tunnels.
+2	line	Sigmund	Yes your grace, but if there is any possibility that this is a goblin incursion then we should take that possibility very seriously!
+2	line	Player	I think we should at least investigate.
+2	cond	If the player has completed Dragon Slayer I:
+3	line	Sigmund	Your grace, this is the adventurer who defeated the dragon Elvarg. I think you should listen to [him/her/them].
+2	cond	If the player has completed Rune Mysteries:
+3	line	Sigmund	Your grace, this adventurer took that talisman you discovered to Sedridor. I think you should listen to [him/her/them].
+2	line	Duke Horacio	Hmm, very well. I give you permission to investigate this mystery. If there is a blocked tunnel then perhaps you should try to un-block it.
+2	action	end
+0	section	Talking to the Duke again
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	What was I doing again?
+2	line	Player	What was I doing again?
+2	line	Duke Horacio	You were helping to investigate what happened in the cellar. Come back when you've found something out.
+2	action	end
+0	section	Talking to Sigmund again
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	What was I doing again?
+2	line	Player	What was I doing again?
+2	line	Sigmund	The Duke asked you to investigate the damage in the cellar. I hope you can find the monsters that are behind this!
+2	action	end
+1	option	Who are you?
+0	section	Opening the tunnel
+1	action	end
+0	section	Talking to the Duke after opening the tunnel
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I dug through the rubble...
+2	line	Player	I dug through the rubble in the cellar and found a tunnel!
+2	line	Sigmund	You see, your grace? It is a goblin attack!
+2	line	Duke Horacio	That tunnel could have many origins. I suggest you investigate further.
+2	action	end
+0	section	Talking to Sigmund after opening the tunnel
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	I dug through the rubble...
+2	line	Player	I dug through the rubble in the cellar and found a tunnel!
+2	line	Sigmund	See, it was goblins! You should tell the Duke.
+2	action	end
+1	option	Who are you?
+0	section	Showing the brooch to the Duke
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I dug through the rubble...
+2	line	Player	I dug through the rubble in the cellar and found a tunnel!
+2	line	Player	On the ground I found this brooch.
+2	line	Duke Horacio	I've never seen anything like that before. It doesn't come from Lumbridge. What do you think, Sigmund?
+2	line	Sigmund	It is unknown to me, your grace. But the fact it is there is enough to prove [NPC]'s story. It must have been dropped by a goblin as it fled.
+2	line	Duke Horacio	I've never heard of a goblin wearing something so well-crafted.
+2	line	Sigmund	Then it must have been stolen!
+2	line	Duke Horacio	But it wasn't stolen from us. Where could it be from?
+2	line	Sigmund	That doesn't matter! You said yourself that goblins couldn't have made that, so they must have stolen it from somewhere.
+2	line	Sigmund	Horrible, thieving goblins have broken into our cellar! We must retaliate immediately!
+2	line	Sigmund	First we should wipe out the goblins east of the river, then we can march on the goblin village to the north-west...
+2	line	Duke Horacio	I will not commit troops until I have proof that goblins are behind this.
+2	line	Duke Horacio	{player}, please find out what you can about this brooch. The librarian in Varrock might be able to help identify the symbol.
+1	action	end
+0	section	Investigation
+0	section	Talking to Reldo
+1	line	Reldo	Hello there, {player}.
+1	select	Select an option
+1	option	What can you tell me about this brooch?
+2	line	Player	What can you tell me about this brooch?
+2	line	Reldo	I've never seen that symbol before. Where did you find it?
+2	line	Player	In a cave beneath Lumbridge.
+2	line	Reldo	Very odd. Have you any idea how it got there?
+2	line	Player	A goblin might have dropped it.
+2	line	Reldo	I've never heard of a goblin carrying a brooch like this. But just a minute...
+2	line	Reldo	The other day I filed a book about ancient goblin tribes. It's somewhere at the west end of the library, I think. Maybe that will be of some use.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	A History of the Goblin Race
+1	line	Player	'A History of the Goblin Race'. This must be it.
+1	box	You take the book from the bookcase.
+1	action	(The player flips through the book's pages. Fortunately, there are pictures.)
+1	line	Player	Hey... The symbol of the 'Dorgeshuun' tribe looks just like the symbol on the brooch I found.
+1	action	end
+0	section	Talking to the Duke
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I found out about the symbol...
+2	line	Player	I found out about the symbol. It was the symbol of one of the ancient goblin tribes!
+2	line	Sigmund	You see, your grace? I told you goblins were behind this!
+2	line	Duke Horacio	I still find it surprising that such a well-crafted brooch would have a goblin symbol on it. Perhaps you should find out more about this ancient tribe.
+2	action	end
+0	section	Talking to Sigmund
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	I found out about the symbol...
+2	line	Player	I found out about the symbol. It was the symbol of one of the ancient goblin tribes!
+2	line	Sigmund	At last, proof that goblins are behind this! You should tell the Duke at once!
+2	action	end
+1	option	Who are you?
+0	section	The Goblin Generals
+1	select	Select an option
+1	option	Have you ever heard of the Dorgeshuun?
+2	line	Player	Have you ever heard of the Dorgeshuun?
+2	line	General Bentnoze	Dorgeshuun? That old goblin legend. Lost tribe.
+2	line	General Wartface	In time of much-war there many tribes. Big High War-God send Dorgesh tribe to fight beardy-short-people in mountains.
+2	line	General Bentnoze	No no, he send them to fight tall people with biting blades, that what I hear.
+2	line	General Wartface	It was beardy-short-people, that how legend go.
+2	select	Select an option
+2	option	Make up your minds!
+3	line	Player	Make up your minds!
+3	line	General Bentnoze	It was tall people! That what old storyteller say!
+3	line	General Wartface	No, beardy-short-people. That how legend always go, stupid.
+3	line	General Bentnoze	You stupid!
+3	action	other
+2	option	Do you want me to decide for you again?
+3	line	Player	Do you want me to decide for you again?
+3	line	General Bentnoze	That most stupid idea yet. If it happen it either happen one way or the other. You can't just decide which.
+3	line	General Wartface	Yeah even goblins know that.
+3	action	other
+2	option	It doesn't really matter
+3	line	Player	It doesn't really matter. What happened to them?
+3	line	General Wartface	Well, they say, 'We not want to fight,' so god punish them.
+3	line	General Bentnoze	That silly. No goblin ever say that.
+3	line	General Wartface	What happen then?
+3	line	General Bentnoze	They lose battle, that why god punish them.
+3	line	General Wartface	Ha ha! If they lost battle they all be dead!
+3	line	General Bentnoze	No no, they losing so they run away, and Big High War-God punish them for running away.
+3	select	Select an option
+3	option	Who were they fighting again?
+4	line	Player	Who were they fighting again?
+4	line	General Wartface	It was beardy-short-people in mountains.
+4	line	General Bentnoze	No no, it was tall people.
+4	action	previous
+3	option	What kind of god would punish them for refusing to fight?
+4	line	Player	What kind of god would punish them for refusing to fight?
+4	line	General Bentnoze	Shh! Must not question Big High War-God!
+4	line	General Wartface	No, because he much bigger than us.
+4	action	other
+3	option	Well either way they refused to fight
+4	line	Player	Well either way they refused to fight.
+4	line	General Wartface	Yeah I suppose so.
+4	line	General Bentnoze	Anyway then Big High War-God punish them. He turn their insides to stone.
+4	line	General Wartface	Ha ha ha! That silly!
+4	line	General Bentnoze	Not as silly as green armour! What happen then?
+4	line	General Wartface	He put them inside stone! Big hole open in ground and they all go into cave.
+4	line	General Bentnoze	That not punishment! Caves nice and cool.
+4	line	General Wartface	But then he close cave so they not get out! You not want to stay in cave all the time.
+4	select	Select an option
+4	option	Why were they punished again?
+5	line	Player	Why were there punished again?
+5	line	General Wartface	It because they run away from fight.
+5	line	General Bentnoze	No, it because they refuse to fight night before battle.
+5	action	previous
+4	option	So do goblins make their own tunnels?
+5	line	Player	So do goblins make their own tunnels?
+5	line	General Bentnoze	What? Make our own tunnels?
+5	line	General Wartface	We hadn't thought of that.
+5	action	other
+4	option	Well I found a brooch underground...
+5	line	Player	Well I found a brooch underground, and I looked up the symbol and it was the symbol of the Dorgeshuun.
+5	line	General Bentnoze	That not look like goblin brooch.
+5	line	General Wartface	Goblins not wear jewellery.
+5	line	General Bentnoze	Well if it Dorgeshuun tribe they not know who won big wars. You should greet them with goblin victory dance!
+5	line	General Wartface	No no, you greet them with goblin tribal bow.
+5	line	General Bentnoze	Doing bow make you look like a wimp.
+5	line	General Wartface	It how tribes greet each other in old days.
+5	line	General Bentnoze	Only if they wimpy tribes! Goblin salute strong!
+5	select	Select an option
+5	option	So why is the Dorgeshuun tribe underground?
+6	line	Player	So why is the Dorgeshuun tribe underground?
+6	line	General Bentnoze	They punished by Big High War-God.
+6	action	previous
+5	option	Wait, you say YOU won the big wars?
+6	line	Player	Wait, you say YOU won the big wars?
+6	line	General Bentnoze	Well we must have done! We goblins! Goblins always win!
+6	line	General Wartface	Actually we not know who won.
+6	line	General Bentnoze	It was goblins I say!
+6	action	other
+5	option	Well why not show me both greetings?
+6	line	Player	Well why not show me both greetings?
+6	line	General Wartface	That good idea. Watch.
+6	box	The goblins show you the Goblin Victory Salute and Goblin Bow.
+6	select	Select an option
+6	option	Thanks
+7	line	Player	Thanks.
+7	line	General Bentnoze	Bye then.
+7	line	General Wartface	Bye.
+7	action	end
+6	option	Wait, you say YOU won the big wars?
+7	action	above
+6	option	So why is the Dorgeshuun tribe underground?
+7	action	above
+1	option	So how is life for the goblins?
+0	section	Speaking to Duke Horacio after the Goblin generals
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	I seek a shield that will protect me from dragonbreath.
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I spoke to the generals in the goblin village...
+2	line	Player	I spoke to the goblin generals in the goblin village. They told me about an ancient goblin tribe that went to live underground.
+2	line	Sigmund	What more proof do we need? Nasty, smelly goblins have been living under our feet all this time! We must crush them at once!
+2	line	Duke Horacio	Hmm, perhaps you are right. I will send word to the army to prepare for an underground assault.
+2	line	Duke Horacio	{player}, I would still like you to find out more about this tribe. It cannot hurt to know one's enemy.
+2	action	end
+0	section	Speaking to Sigmund after the Goblin generals
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	I spoke to the generals in the Goblin Village...
+2	line	Player	I spoke to the goblin generals in the Goblin Village. They told me about an ancient goblin tribe that went to live underground.
+2	line	Sigmund	I don't see how there can be any more doubt. You should tell the Duke at once!
+2	action	end
+1	option	Who are you?
+0	section	Meeting the Lost Tribe
+0	section	Greetings
+1	line	Mistag	Who...who are you? How did you get in here?
+1	line	Mistag	Help! A surface-dweller this deep in our mines? We will all be destroyed!
+1	action	end
+1	cond	If the player performs the Goblin Bow emote:
+2	line	Mistag	A human knows ancient greeting?
+2	line	Mistag	Perhaps you are friend after all!
+2	line	Mistag	Greetings, friend. I am sorry I panicked when I saw you.
+2	line	Mistag	Our legends tell of the surface as a place of horror and violence, where the gods forced us to fight in terrible battles.
+2	line	Mistag	When I saw a surface-dweller appear I was afraid it was a return to the old days!
+2	line	Player	Did you break in to the castle cellar?
+2	line	Mistag	It was an accident. We were following a seam of iron and suddenly we found ourselves in a room!
+2	line	Mistag	We blocked up our tunnel behind us and ran back here. Then we did what cave goblins always do when there is a problem: we hid and hoped it would go away.
+2	line	Mistag	We meant no harm! Please tell the ruler of the above- people that we want to make peace.
+2	action	end
+1	cond	If the player performs the Goblin Salute emote:
+2	line	Mistag	Eeek! The war-dance!
+2	action	end
+0	section	Talking to Mistag after first contact
+1	line	Mistag	Hello, friend?
+1	option	May I mine the rocks here?
+2	line	Player	May I mine the rocks here?
+2	line	Mistag	No offence, but we will not let you mine here until there is peace between the humans and the Dorgeshuun.
+2	action	end
+1	option	Why do the Dorgeshuun live underground?
+1	option	What happened to your arm?
+1	option	Can you show me the way out of the mines?
+2	line	Player	Can you show me the way out of the mines?
+2	line	Mistag	Certainly. Please hurry, you must avert the war!
+1	action	end
+0	section	Using Mistag's brooch on him before the peace treaty
+1	line	Player	Is this your brooch?
+1	line	Mistag	We have more important things to think about than a brooch right now. We must prevent a war!
+1	action	end
+0	section	Trying to mine the rocks
+1	line	Mistag	We won't permit surface-dwellers to mine here until there is peace between our peoples.
+1	action	end
+0	section	Informing Duke Horacio/Sigmund
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I've made contact with the cave goblins...
+2	line	Player	I've made contact with the cave goblins. They say they were following a seam and broke into the cellar by mistake.
+2	line	Sigmund	And I suppose you believe them, goblin-lover?
+2	line	Player	Well, they seemed friendlier than most goblins, and nothing was taken from the cellar.
+2	line	Duke Horacio	Actually, something was taken. Sigmund has informed me that some of the castle silverware is missing from the cellar.
+2	line	Duke Horacio	Unless it is returned, I am afraid I will have no option but war.
+2	action	end
+0	section	Property Recovery
+0	section	Talking to the Duke again
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	What was I doing again?
+2	line	Player	What was I doing again?
+2	line	Duke Horacio	We are preparing to go to war with the underground goblins over the missing silverware. If you think the cave goblins are innocent you should present evidence quickly!
+2	action	end
+0	section	Talking to Sigmund
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	Tell me about the silverware that was stolen.
+2	line	Player	Tell me about the silverware that was stolen.
+2	line	Sigmund	The priceless Lumbridge Silverware! It comes out only on special occasions. It was kept in storage in the cellar, but now the goblins have stolen it.
+2	line	Player	So why did no one notice earlier?
+2	line	Sigmund	That doesn't matter. You'll never find it, because the goblins took it. So you can't stop the war!
+2	action	end
+1	option	Who are you?
+0	section	Asking Mistag about the silverware
+1	line	Mistag	Hello, friend?
+1	select	Select an option
+1	option	Some silverware has gone missing from the castle cellar...
+2	line	Player	Some silverware has gone missing from the castle, and the Duke thinks you stole it!
+2	line	Mistag	Oh no! We would never do such a thing!
+2	line	Mistag	I assure you we took nothing from the cellar. You must convince the Duke we are innocent!
+1	option	Where is the silverware you stole from the castle cellar?
+2	line	Player	Where's the silverware you stole from the castle cellar?
+2	line	Mistag	What? We didn't take anything!
+2	line	Player	You expect me to believe that? Perhaps Sigmund was right: you're just thieving little goblins!
+2	line	Mistag	Why would we want to steal silver? As you see we have much silver already in our mines!
+2	line	Player	Well, the Duke says he will attack you unless the silverware is returned.
+2	line	Mistag	The last thing we want is war! If we had anything of yours, we would return it at once. But we don't!
+1	option	Can you show me the way out of the mines?
+2	action	above
+0	section	Pickpocketing Sigmund's key
+1	box	You steal a little key.
+1	action	end
+0	section	Opening Sigmund's chest
+1	cond	If the player has the key:
+2	box	In the chest you find a set of H.A.M. robes!
+2	line	Player	Sigmund must be a member of the Humans Against Monsters cult!
+2	action	end
+1	cond	If the player doesn't have the key:
+2	box	You don't have the key to open this chest.
+2	action	end
+0	section	Asking Sigmund about H.A.M.
+1	line	Sigmund	Can I help you?
+1	select	Select an Option
+1	option	You're a H.A.M. member, aren't you?
+2	line	Player	You're a H.A.M member, aren't you?
+2	line	Sigmund	What?
+2	line	Sigmund	Well, so what if I am? It's not a crime.
+2	action	end
+1	option	Who are you?
+0	section	Telling the Duke about Sigmund's H.A.M.-loving ways
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	Did you know Sigmund is a member of HAM?
+2	line	Player	Did you know Sigmund is a member of HAM?
+2	line	Duke Horacio	Hmm, I had suspected it. But however much I disapprove of the HAM movement it's not actually illegal. I'll keep an eye on him though.
+2	action	end
+0	section	Searching the H.A.M. hideout
+1	box	You find the Lumbridge Silverware!
+1	action	end
+0	section	Resolving Tensions
+0	section	Talking to Sigmund before returning the silverware
+1	line	Sigmund	Can I help you?
+1	select	Select an option
+1	option	Tell me about the silverware that was stolen.
+2	line	Player	Tell me about the silverware that was stolen.
+2	line	Sigmund	The priceless Lumbridge Silverware! It comes out only on special occasions. It was kept in storage in the cellar, but now the goblins have stolen it.
+2	line	Player	So why did no one notice earlier?
+2	line	Sigmund	That doesn't matter. You'll never find it, because the goblins took it. So you can't stop the war!
+2	line	Player	Actually I have found it! You put it in the H.A.M. cave!
+2	line	Sigmund	I... I... You're lying! I don't know what you're talking about.
+2	action	end
+1	option	Who are you?
+0	section	Returning the silverware
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	I found the missing silverware in the HAM cave!
+2	line	Player	I found the missing silverware in the HAM cave!
+2	line	Duke Horacio	Sigmund! Is this your doing?
+2	line	Sigmund	Of...of course not! The goblins must have, um, dropped the silverware as they ran away.
+2	line	Duke Horacio	Don't lie to me! I knew you were a HAM member but I didn't think you would stoop to this. You are dismissed from my service.
+2	line	Sigmund	But don't you see it was for the best? For goblins to be living under our feet like this... ugh. It doesn't matter how civilized they are: all sub-human species must be wiped out!
+2	line	Duke Horacio	That's enough! Get out of my castle now!
+2	line	Duke Horacio	I see I was ill-advised. Unless there is an act of aggression by the cave goblins there is no need for war.
+2	box	The Duke writes a document and signs it.
+2	line	Duke Horacio	This peace treaty specifies the border between Lumbridge and the Cave Goblin realm. Please take it to the cave goblins and tell them I would like to meet with their leader to sign it.
+2	action	end
+0	section	Attempting to talk to Sigmund
+0	section	Talking to Duke Horacio again
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+1	option	What was I doing again?
+2	line	Player	What was I doing again?
+2	line	Duke Horacio	You were taking the peace treaty to the cave goblins.
+3	line	Player	I, er, lost the treaty.
+3	line	Duke Horacio	*sigh* All right, here's another copy.
+3	action	end
+2	action	end
+0	section	Delivering the treaty
+1	line	Mistag	Hello, friend?
+1	line	Player	I have a peace treaty from the Duke of Lumbridge.
+1	line	Mistag	A peace treaty? Then you will not invade?
+1	line	Player	No. As long as you stick to the terms of this treaty there will be no conflict. The Duke of Lumbridge wants to meet your ruler to sign it.
+1	line	Mistag	I will summon Ur-tag, our headman, at once.
+0	section	Cut scene: A meeting of leaders
+1	box	~ The Signing of the Lumbridge-Dorgeshuun Treaty ~
+1	line	Player	Your grace, I present Ur-tag, headman of the Dorgeshuun.
+1	line	Duke Horacio	Welcome, Ur-tag. I am sorry that your race came under suspicion.
+1	line	Duke Horacio	I assure you that the warmongering element has been dealt with.
+1	line	Ur-tag	I apologize for the damage to your cellar. I will send workers to repair the hole.
+1	line	Duke Horacio	No, let it stay. It can be a route of commerce between our lands.
+1	line	Duke Horacio	{player}, Lumbridge is in your debt. Please accept this ring as a token of my thanks.
+1	line	Duke Horacio	It is enchanted to save you in your hour of need.
+1	line	Ur-tag	I too thank you. Accept the freedom of the Dorgeshuun mines.
+1	line	Ur-tag	These are strange times. I never dreamed that I would see the surface, still less that I would be on friendly terms with its people.
+1	line	Sigmund	Prattle on, goblin.
+1	line	Sigmund	Soon you will be destroyed!

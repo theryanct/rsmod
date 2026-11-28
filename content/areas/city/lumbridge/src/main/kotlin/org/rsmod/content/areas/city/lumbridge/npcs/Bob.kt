@@ -5,19 +5,22 @@ import org.rsmod.api.config.refs.mesanims
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.advanced.onUnimplementedOpNpc4
-import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.shops.Shops
 import org.rsmod.content.areas.city.lumbridge.configs.lumbridge_invs
 import org.rsmod.content.areas.city.lumbridge.configs.lumbridge_npcs
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
+import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-class Bob @Inject constructor(private val shops: Shops) : PluginScript() {
+class Bob @Inject constructor(private val shops: Shops, private val npcTypes: NpcTypeList) :
+    PluginScript() {
     override fun ScriptContext.startup() {
-        onOpNpc1(lumbridge_npcs.bob) { startDialogue(it.npc) }
+        // Talk-to is shared with quests (The Lost Tribe): this is the default conversation.
+        with(QuestTalk) { default(npcTypes, lumbridge_npcs.bob) { startDialogue(it) } }
         onOpNpc3(lumbridge_npcs.bob) { player.openShop(it.npc) }
         onUnimplementedOpNpc4(lumbridge_npcs.bob) { repairOp(it.npc) }
     }

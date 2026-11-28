@@ -4,9 +4,9 @@ import jakarta.inject.Inject
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.type.refs.npc.NpcReferences
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
-import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -31,7 +31,7 @@ class Reldo @Inject constructor(private val npcTypes: NpcTypeList) : PluginScrip
 
     override fun ScriptContext.startup() {
         for (reldo in ReldoNpcs.variants) {
-            onNpcOpLabel(npcTypes, reldo, "Talk-to") { talk(it) }
+            with(QuestTalk) { default(npcTypes, reldo) { talk(it) } }
         }
     }
 

@@ -4,16 +4,21 @@ import org.rsmod.api.config.refs.BaseVarBits
 import org.rsmod.api.config.refs.BaseVarps
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.script.onOpNpc1
+import jakarta.inject.Inject
 import org.rsmod.content.areas.city.lumbridge.configs.lumbridge_npcs
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.game.entity.Npc
+import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-class DonieAndGee : PluginScript() {
+class DonieAndGee @Inject constructor(private val npcTypes: NpcTypeList) : PluginScript() {
     override fun ScriptContext.startup() {
-        onOpNpc1(lumbridge_npcs.gee) { startDialogue(it.npc) }
-        onOpNpc1(lumbridge_npcs.donie) { startDialogue(it.npc) }
+        // Talk-to is shared with quests (The Lost Tribe): these are the default conversations.
+        with(QuestTalk) {
+            default(npcTypes, lumbridge_npcs.gee) { startDialogue(it) }
+            default(npcTypes, lumbridge_npcs.donie) { startDialogue(it) }
+        }
     }
 
     private suspend fun ProtectedAccess.startDialogue(npc: Npc) =
