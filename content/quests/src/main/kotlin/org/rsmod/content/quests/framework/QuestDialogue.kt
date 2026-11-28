@@ -259,7 +259,7 @@ public class QuestDialogueRunner(
         when {
             node.speaker.equals("Player", ignoreCase = true) -> chatPlayer(neutral, text)
             other != null ->
-                chatNpcSpecific(node.speaker.replace(SPEAKER_NUMBER, ""), other, neutral, text)
+                chatNpcSpecific(speakerName(node.speaker), other, neutral, text)
             else -> chatNpc(neutral, text)
         }
     }
@@ -287,6 +287,10 @@ private val GENDER_PAIRS =
         "king" to "queen",
         "lord" to "lady",
     )
+
+/** "Mourner (2)" -> "Mourner"; "[Northern Local Gnomes]" -> "Northern Local Gnomes". */
+private fun speakerName(speaker: String): String =
+    speaker.replace(SPEAKER_NUMBER, "").removePrefix("[").removeSuffix("]")
 
 /* "Mourner (2)": a second speaker of the same kind, shown without the number. */
 private val SPEAKER_NUMBER = Regex(""" \(\d+\)$""")

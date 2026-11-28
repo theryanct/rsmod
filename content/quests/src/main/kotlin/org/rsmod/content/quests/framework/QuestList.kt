@@ -28,6 +28,7 @@ import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTE
 import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
+import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
@@ -64,6 +65,7 @@ public object BuiltQuests {
             SEA_SLUG,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
+            TREE_GNOME_VILLAGE,
             VAMPYRE_SLAYER,
             WATERFALL_QUEST,
             WITCHS_POTION,
