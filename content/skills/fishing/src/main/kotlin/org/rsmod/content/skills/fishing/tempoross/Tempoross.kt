@@ -1,5 +1,6 @@
 package org.rsmod.content.skills.fishing.tempoross
 
+import org.rsmod.annotations.InternalApi
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.output.mes
@@ -238,6 +239,7 @@ constructor(
         leave(player)
     }
 
+    @OptIn(InternalApi::class)
     private fun leave(player: Player) {
         cleanup(player)
         launcher.launchLenient(player) {
