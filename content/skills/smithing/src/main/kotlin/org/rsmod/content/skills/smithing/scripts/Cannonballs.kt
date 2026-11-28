@@ -113,7 +113,7 @@ internal object CannonballObjs : ObjReferences() {
 }
 
 internal object CannonballQueues : QueueReferences() {
-    /** Custom queue (65501, skilling range). */
+    /** Custom queue (65504, skilling range). */
     val make = find("smithing_cannonballs")
 }
 
