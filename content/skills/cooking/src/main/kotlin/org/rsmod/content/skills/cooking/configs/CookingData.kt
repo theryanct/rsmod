@@ -17,6 +17,7 @@ internal object CookingData {
         val curve: Curve,
         val lumbridge: Curve?,
         val gauntlets: Curve?,
+        val hosidius: Curve?,
     )
 
     class Combine(
@@ -43,6 +44,7 @@ internal object CookingData {
             curve = Curve(p[7].toInt(), p[8].toInt()),
             lumbridge = curve(p[9], p[10]),
             gauntlets = curve(p[11], p[12]),
+            hosidius = if (p.size > 14) curve(p[13], p[14]) else null,
         )
 
     private fun combine(p: List<String>): Combine =

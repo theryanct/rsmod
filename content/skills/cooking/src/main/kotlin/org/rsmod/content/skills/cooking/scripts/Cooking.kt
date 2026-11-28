@@ -10,6 +10,11 @@ import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.onOpHeldU
+import org.rsmod.api.script.onOpLoc1
+import org.rsmod.api.script.onOpLoc2
+import org.rsmod.api.script.onOpLoc3
+import org.rsmod.api.script.onOpLoc4
+import org.rsmod.api.script.onOpLoc5
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -46,24 +51,89 @@ constructor(
 
     private fun ScriptContext.bindHeatSources() {
         val lumbridgeRange = locTypes[cooking_locs.lumbridge_range].id
+        val hosidiusRanges =
+            setOf(locTypes[cooking_locs.hosidius_range].id, locTypes[cooking_locs.hosidius_range_02].id)
         var ranges = 0
         var fires = 0
+        var cookOps = 0
         for (type in locTypes.values) {
-            val heat = type.heatSource() ?: continue
-            val lumbridge = type.id == lumbridgeRange
+            val cookOp = type.op.indexOfFirst { it?.trim().equals("Cook", ignoreCase = true) }
+            val heat = type.heatSource() ?: if (cookOp >= 0) HeatSource.Range else continue
+            val bonus =
+                when (type.id) {
+                    lumbridgeRange -> RangeBonus.Lumbridge
+                    in hosidiusRanges -> RangeBonus.Hosidius
+                    else -> RangeBonus.None
+                }
+            // Use raw food on the heat source.
             for (recipe in CookingData.heat) {
                 val raw = obj(recipe.raw)
                 if (!recipe.fire && heat == HeatSource.Fire) {
                     onOpLocU(type, raw) { mes("This can only be cooked on a range.") }
                     continue
                 }
-                onOpLocU(type, raw) { cookAll(it.loc, it.type, heat, recipe, lumbridge) }
+                onOpLocU(type, raw) { cookAll(it.loc, it.type, heat, recipe, bonus) }
+            }
+            // Click "Cook" on the heat source (its slot differs per loc type).
+            if (cookOp >= 0) {
+                bindCookOp(type, cookOp + 1, heat, bonus)
+                cookOps++
             }
             if (heat == HeatSource.Range) ranges++ else fires++
         }
         logger.info {
-            "Cooking: ${CookingData.heat.size} heat recipes on $ranges range and $fires fire loc types."
+            "Cooking: ${CookingData.heat.size} heat recipes on $ranges range and $fires fire loc " +
+                "types; Cook op bound on $cookOps."
         }
+    }
+
+    private fun ScriptContext.bindCookOp(
+        type: UnpackedLocType,
+        op: Int,
+        heat: HeatSource,
+        bonus: RangeBonus,
+    ) {
+        when (op) {
+            1 -> onOpLoc1(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            2 -> onOpLoc2(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            3 -> onOpLoc3(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            4 -> onOpLoc4(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+            5 -> onOpLoc5(type) { cookFromInventory(it.loc, it.type, heat, bonus) }
+        }
+    }
+
+    /** "Cook" clicked: offer every raw food in the inventory that this heat source can cook. */
+    private suspend fun ProtectedAccess.cookFromInventory(
+        loc: BoundLocInfo,
+        locType: UnpackedLocType,
+        heat: HeatSource,
+        bonus: RangeBonus,
+    ) {
+        val cookable =
+            CookingData.heat
+                .filter { (it.fire || heat == HeatSource.Range) && obj(it.raw) in inv }
+                .distinctBy { it.raw }
+        if (cookable.isEmpty()) {
+            mes("You have nothing to cook.")
+            return
+        }
+        if (cookable.size == 1) {
+            cookAll(loc, locType, heat, cookable[0], bonus)
+            return
+        }
+        val shown = cookable.take(SKILLMULTI_SLOTS)
+        val choice =
+            skillMulti(
+                verb = SkillMultiVerb.COOK,
+                title = "What would you like to cook?",
+                products =
+                    shown.map {
+                        val product = objTypes[obj(it.cooked)]
+                        SkillMultiProduct(product, product.name, available = player.cookingLvl >= it.level)
+                    },
+                maxQuantity = shown.maxOf { invTotal(inv, obj(it.raw)) },
+            )
+        cookAll(loc, locType, heat, shown[choice.index], bonus, quantity = choice.quantity)
     }
 
     private fun ScriptContext.bindCombinations() {
@@ -98,7 +168,8 @@ constructor(
         locType: UnpackedLocType,
         heat: HeatSource,
         recipe: CookingData.Heat,
-        lumbridgeRange: Boolean,
+        bonus: RangeBonus,
+        quantity: Int? = null,
     ) {
         if (player.cookingLvl < recipe.level) {
             mes("You need a Cooking level of ${recipe.level} to cook this.")
@@ -110,7 +181,9 @@ constructor(
         // OSRS skillmulti "How many would you like to cook?" when there is more than one to cook.
         val held = invTotal(inv, raw)
         var remaining =
-            if (held > 1) {
+            if (quantity != null) {
+                quantity
+            } else if (held > 1) {
                 val product = objTypes[cooked]
                 skillMulti(
                         verb = SkillMultiVerb.COOK,
@@ -135,7 +208,7 @@ constructor(
             if (raw !in inv) {
                 return
             }
-            val curve = curveFor(recipe, lumbridgeRange)
+            val curve = curveFor(recipe, if (heat == HeatSource.Range) bonus else RangeBonus.None)
             val success = burnt == null || statRandom(stats.cooking, curve.low, curve.high, invisibleLvls)
             if (invDel(inv, raw, count = 1).failure) {
                 return
@@ -154,18 +227,20 @@ constructor(
 
     private fun ProtectedAccess.curveFor(
         recipe: CookingData.Heat,
-        lumbridgeRange: Boolean,
+        bonus: RangeBonus,
     ): CookingData.Curve {
         val gloves = player.hands
         val gauntlets = recipe.gauntlets
         if (gauntlets != null && gloves != null && gloves.id == objTypes[cooking_objs.gauntlets_of_cooking].id) {
             return gauntlets
         }
-        val lumbridge = recipe.lumbridge
-        if (lumbridgeRange && lumbridge != null) {
-            return lumbridge
-        }
-        return recipe.curve
+        val ranged =
+            when (bonus) {
+                RangeBonus.Lumbridge -> recipe.lumbridge
+                RangeBonus.Hosidius -> recipe.hosidius
+                RangeBonus.None -> null
+            }
+        return ranged ?: recipe.curve
     }
 
     private suspend fun ProtectedAccess.combineFrom(combos: List<CookingData.Combine>) {
@@ -234,6 +309,12 @@ constructor(
 
     private fun obj(name: String): ObjType = cooking_objs.byName.getValue(name)
 
+    private enum class RangeBonus {
+        None,
+        Lumbridge,
+        Hosidius,
+    }
+
     private enum class HeatSource {
         Range,
         Fire,
@@ -242,5 +323,7 @@ constructor(
     private companion object {
         const val COOK_TICKS = 4
         const val COMBINE_TICKS = 2
+        /** Rev 233 skillmulti names 10 item slots. */
+        const val SKILLMULTI_SLOTS = 10
     }
 }
