@@ -15,6 +15,7 @@ recipe	combine	xbows_crossbow_bolts_steel	10	46	35	1	-	xbows_crossbow_bolts_stee
 recipe	combine	mithril_dart	10	52	112	1	-	mithril_dart_tip	10	feather	10
 recipe	combine	xbows_crossbow_bolts_mithril	10	54	50	1	-	xbows_crossbow_bolts_mithril_unfeathered	10	feather	10
 recipe	combine	adamant_arrow	15	60	150	2	-	headless_arrow	15	adamant_arrowheads	15
+recipe	combine	xbows_crossbow_bolts_adamantite	10	61	70	1	-	xbows_crossbow_bolts_adamantite_unfeathered	10	feather	10
 recipe	combine	adamant_dart	10	67	150	1	-	adamant_dart_tip	10	feather	10
 recipe	combine	xbows_crossbow_bolts_runite	10	69	100	1	-	xbows_crossbow_bolts_runite_unfeathered	10	feather	10
 recipe	combine	rune_arrow	15	75	187.5	2	-	headless_arrow	15	rune_arrowheads	15
@@ -72,3 +73,40 @@ recipe	string	yew_shortbow	1	65	67.5	2	stringing_yew_shortbow	unstrung_yew_short
 recipe	string	yew_longbow	1	70	75	2	stringing_yew_longbow	unstrung_yew_longbow	1	bow_string	1
 recipe	string	magic_shortbow	1	80	83.3	2	stringing_magic_shortbow	unstrung_magic_shortbow	1	bow_string	1
 recipe	string	magic_longbow	1	85	91.5	2	stringing_magic_longbow	unstrung_magic_longbow	1	bow_string	1
+recipe	hammer	xbows_crossbow_unstrung_bronze	1	9	12	2	-	xbows_crossbow_stock_wood	1	xbows_crossbow_limbs_bronze	1
+recipe	hammer	xbows_crossbow_unstrung_blurite	1	24	32	2	-	xbows_crossbow_stock_oak	1	xbows_crossbow_limbs_blurite	1
+recipe	hammer	xbows_crossbow_unstrung_iron	1	39	44	2	-	xbows_crossbow_stock_willow	1	xbows_crossbow_limbs_iron	1
+recipe	hammer	xbows_crossbow_unstrung_steel	1	46	54	2	-	xbows_crossbow_stock_teak	1	xbows_crossbow_limbs_steel	1
+recipe	hammer	xbows_crossbow_unstrung_mithril	1	54	64	2	-	xbows_crossbow_stock_maple	1	xbows_crossbow_limbs_mithril	1
+recipe	hammer	xbows_crossbow_unstrung_adamantite	1	61	82	2	-	xbows_crossbow_stock_mahogany	1	xbows_crossbow_limbs_adamantite	1
+recipe	hammer	xbows_crossbow_unstrung_runite	1	69	100	2	-	xbows_crossbow_stock_yew	1	xbows_crossbow_limbs_runite	1
+recipe	hammer	xbows_crossbow_unstrung_dragon	1	78	135	2	-	xbows_crossbow_stock_magic	1	xbows_crossbow_limbs_dragon	1
+recipe	string	xbows_crossbow_bronze	1	9	6	2	xbows_fletching_wood_bronze	xbows_crossbow_unstrung_bronze	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_blurite	1	24	16	2	xbows_fletching_oak_blurite	xbows_crossbow_unstrung_blurite	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_iron	1	39	22	2	xbows_fletching_willow_iron	xbows_crossbow_unstrung_iron	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_steel	1	46	27	2	xbows_fletching_teak_steel	xbows_crossbow_unstrung_steel	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_mithril	1	54	32	2	xbows_fletching_maple_mithril	xbows_crossbow_unstrung_mithril	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_adamantite	1	61	41	2	xbows_fletching_mahogany_adamantite	xbows_crossbow_unstrung_adamantite	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_runite	1	69	50	2	xbows_fletching_yew_runite	xbows_crossbow_unstrung_runite	1	xbows_crossbow_string	1
+recipe	string	xbows_crossbow_dragon	1	78	70	2	-	xbows_crossbow_unstrung_dragon	1	xbows_crossbow_string	1
+recipe	chisel	opal_bolttips	12	11	1.5	5	human_opalcutting	opal	1
+recipe	chisel	xbows_bolt_tips_jade	12	26	2	5	human_jadecutting	jade	1
+recipe	chisel	pearl_bolttips	6	41	3.2	5	xbows_fletching_pearl	smalloysterpearls	1
+recipe	chisel	pearl_bolttips	24	41	3.2	5	xbows_fletching_pearl	bigoysterpearls	1
+recipe	chisel	xbows_bolt_tips_redtopaz	12	48	3.9	5	human_redtopazcutting	red_topaz	1
+recipe	chisel	xbows_bolt_tips_sapphire	12	56	4	5	human_sapphirecutting	sapphire	1
+recipe	chisel	xbows_bolt_tips_emerald	12	58	5.5	5	human_emeraldcutting	emerald	1
+recipe	chisel	xbows_bolt_tips_ruby	12	63	6.3	5	human_rubycutting	ruby	1
+recipe	chisel	xbows_bolt_tips_diamond	12	65	7	5	human_diamondcutting	diamond	1
+recipe	chisel	xbows_bolt_tips_dragonstone	12	71	8.2	5	human_dragonstonecutting	dragonstone	1
+recipe	chisel	xbows_bolt_tips_onyx	24	73	9.4	5	human_onyxcutting	onyx	1
+recipe	combine	opal_bolt	10	11	16	2	human_fletching_add_bolt_tips_bronze	bolt	10	opal_bolttips	10
+recipe	combine	xbows_crossbow_bolts_blurite_tipped_jade	10	26	24	2	human_fletching_add_bolt_tips_blurite	xbows_crossbow_bolts_blurite	10	xbows_bolt_tips_jade	10
+recipe	combine	pearl_bolt	10	41	32	2	human_fletching_add_bolt_tips_iron	xbows_crossbow_bolts_iron	10	pearl_bolttips	10
+recipe	combine	xbows_crossbow_bolts_steel_tipped_redtopaz	10	48	39	2	human_fletching_add_bolt_tips_steel	xbows_crossbow_bolts_steel	10	xbows_bolt_tips_redtopaz	10
+recipe	combine	xbows_crossbow_bolts_mithril_tipped_sapphire	10	56	47	2	human_fletching_add_bolt_tips_mithril	xbows_crossbow_bolts_mithril	10	xbows_bolt_tips_sapphire	10
+recipe	combine	xbows_crossbow_bolts_mithril_tipped_emerald	10	58	55	2	human_fletching_add_bolt_tips_mithril	xbows_crossbow_bolts_mithril	10	xbows_bolt_tips_emerald	10
+recipe	combine	xbows_crossbow_bolts_adamantite_tipped_ruby	10	63	63	2	human_fletching_add_bolt_tips_adamant	xbows_crossbow_bolts_adamantite	10	xbows_bolt_tips_ruby	10
+recipe	combine	xbows_crossbow_bolts_adamantite_tipped_diamond	10	65	70	2	human_fletching_add_bolt_tips_adamant	xbows_crossbow_bolts_adamantite	10	xbows_bolt_tips_diamond	10
+recipe	combine	xbows_crossbow_bolts_runite_tipped_dragonstone	10	71	82	2	human_fletching_add_bolt_tips_rune	xbows_crossbow_bolts_runite	10	xbows_bolt_tips_dragonstone	10
+recipe	combine	xbows_crossbow_bolts_runite_tipped_onyx	10	73	94	2	human_fletching_add_bolt_tips_rune	xbows_crossbow_bolts_runite	10	xbows_bolt_tips_onyx	10
