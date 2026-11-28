@@ -6,6 +6,8 @@ import kotlin.math.abs
 import kotlin.math.max
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.events.interact.LocEvents
+import org.rsmod.api.player.features.invAddGathered
+import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.farmingLvl
 import org.rsmod.api.player.stat.woodcuttingLvl
@@ -436,13 +438,13 @@ constructor(
             return
         }
         val produce = FarmingObjs.byName.getValue(crop.produce)
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, listOf(produce))) {
             mes("You don't have enough room in your inventory.")
             return
         }
         if (crop.fixedYield > 0) {
             anim(FarmingSeqs.pick)
-            invAdd(inv, produce, crop.fixedYield)
+            invAddGathered(produce, crop.fixedYield)
             statAdvance(stats.farming, crop.harvestXp * xpMods.get(player, stats.farming))
             mes("You harvest the ${patch.kind.noun}.")
             empty(patch)
@@ -456,7 +458,7 @@ constructor(
             actionDelay = mapClock + HARVEST_TICKS
             spam("You begin to harvest the ${patch.kind.noun}.")
         } else if (actionDelay == mapClock) {
-            invAdd(inv, produce)
+            invAddGathered(produce)
             statAdvance(stats.farming, crop.harvestXp * xpMods.get(player, stats.farming))
             if (random.of(10_000) >= (crop.saveChance(player.farmingLvl) * 100).toInt()) {
                 state.lives--
@@ -548,7 +550,7 @@ constructor(
             mes("You need a Woodcutting level of ${crop.woodLevel} to chop down this tree.")
             return
         }
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, listOf(FarmingObjs.byName.getValue(crop.logs)))) {
             mes("Your inventory is too full to hold any more logs.")
             return
         }
@@ -563,7 +565,7 @@ constructor(
             // Approximation of the Woodcutting curve: better odds the further above the tree.
             val chance = (40 + (player.woodcuttingLvl - crop.woodLevel) * 2).coerceIn(20, 90)
             if (random.of(100) < chance) {
-                invAdd(inv, FarmingObjs.byName.getValue(crop.logs))
+                invAddGathered(FarmingObjs.byName.getValue(crop.logs))
                 statAdvance(stats.woodcutting, crop.woodXp * xpMods.get(player, stats.woodcutting))
                 spam("You get some ${crop.key} logs.")
                 if (random.of(STUMP_CHANCE) == 0) {
