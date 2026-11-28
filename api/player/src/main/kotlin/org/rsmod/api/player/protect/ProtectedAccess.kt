@@ -784,6 +784,10 @@ public class ProtectedAccess(
         context.locInteractions.interact(player, loc, InteractionOp.Op4)
     }
 
+    public fun opLoc5(loc: BoundLocInfo) {
+        context.locInteractions.interact(player, loc, InteractionOp.Op5)
+    }
+
     public fun opNpc1(npc: Npc) {
         context.npcInteractions.interact(player, npc, InteractionOp.Op1)
     }
@@ -798,6 +802,10 @@ public class ProtectedAccess(
 
     public fun opNpc4(npc: Npc) {
         context.npcInteractions.interact(player, npc, InteractionOp.Op4)
+    }
+
+    public fun opNpc5(npc: Npc) {
+        context.npcInteractions.interact(player, npc, InteractionOp.Op5)
     }
 
     public fun opPlayer2(target: Player) {
