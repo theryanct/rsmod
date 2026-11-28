@@ -1,0 +1,295 @@
+# Generated from the OSRS Wiki page "Transcript:Haunted Mine" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+1	line	Player	Hello there. What are you doing here?
+1	line	Player	Hello there.
+1	line	Zealot	State thy allegiance stranger.
+1	select	Select an option
+1	option	I follow the path of Saradomin.
+2	line	Player	I follow the path of Saradomin. Strength through wisdom.
+2	line	Zealot	Ah, a wise choice my friend. But if you truly follow Saradomin, what brings you to these evil lands?
+2	select	Select an option
+2	option	I come seeking challenges and quests.
+3	line	Player	I come seeking challenges and quests.
+3	line	Zealot	A noble cause indeed. One that I can sympathise with, for I myself am upon a quest. One that will allow Saradomin to be glorified even in these dark lands.
+3	select	Start the Haunted Mine quest?
+3	option	Yes.
+4	line	Player	What quest is that then?
+4	line	Zealot	Well, below the very ground you stand upon lies an intricate network of tunnels that make up the abandoned Mort Ridge mines. These mines used to be a valuable resource to the inhabitants of Morytania.
+4	line	Zealot	As with many things, this changed when Misthalin was finally able to push the minions of Morytania back, and Saradomin himself blessed the river Salve.
+4	line	Zealot	The mines are also the site where the legendary artefact, the salve amulet, was thought to have been carved from the crystals that grow in the lower levels of the mine.
+4	line	Zealot	These crystals are thought to be formed by the blessed water of the river Salve as it percolates through the rocks to the lower levels of the mine.
+4	line	Zealot	It is not known what happened to the salve amulet, but it is generally believed that by encapsulating within it some of the goodness of Saradomin himself, it afforded the bearer power over evil.
+4	line	Zealot	Saradomin has entrusted me alone with the task of regaining access to the mines, whatever the dangers.
+4	line	Player	How can an abandoned mine be dangerous?
+4	line	Zealot	Because the mines are said to be haunted. The crystals and the ridge used to be protected by Zamorak's mage, Treus Dayth.
+4	line	Zealot	Dayth failed and fell during an incursion by Saradominists, who then made it into the mines and were able to remove a shard of crystal.
+4	line	Zealot	Zamorak, furious at his mage, condemned Dayth's soul indefinitely to an existence of turmoil in the mines. Dayth's soul is bound to prevent the crystals from ever being reached again.
+4	line	Zealot	Further, Zamorak's then ruler upon the land ordered the slaughter of anyone within the mines and that the mines be sealed.
+4	select	Select an option
+4	option	Is there any other way into the mines?
+5	action	below
+4	option	How does a lost artefact that was only legendary help?
+5	action	below
+4	option	Why was everyone in the mines slaughtered?
+5	action	below
+4	option	I must be going now.
+5	line	Player	I must be going now, good luck on your quest.
+5	line	Zealot	You should believe not in luck, but in the protection of Saradomin. Farewell.
+5	action	end
+3	option	No.
+4	line	Player	I hope it goes well. Goodbye.
+4	line	Zealot	Goodbye, and may Saradomin give you strength through wisdom.
+4	action	end
+2	option	Ok I lied.
+3	line	Player	Ok I lied, I don't support Saradomin. I'm only here for dastardly evil purposes.
+3	line	Zealot	Then leave me, I have no time to listen to your poisonous tongue.
+3	action	end
+2	option	I could ask the same of you.
+3	line	Player	I could ask the same of you.
+3	line	Zealot	Saradomin has granted you wisdom. The evil creatures of this land are cunning and you are right to question anyone's purpose here.
+3	line	Zealot	I am upon a quest. One that will allow Saradomin to be glorified even in these dark lands.
+3	action	above
+1	option	I serve only Zamorak.
+2	line	Player	I serve only Zamorak. Strength through chaos.
+2	line	Zealot	Then begone. Normally I would strike you down in an instant, but for now I have no time. I am on a quest of the utmost importance.
+2	select	Select an option
+2	option	What is this quest of which you speak?
+3	line	Player	What is this quest of which you speak?
+3	line	Zealot	It is no concern of yours, but rest assured it will help in crushing you and those others who serve your vile master.
+3	line	Player	I doubt that.
+3	line	Zealot	I would expect nothing less of you, misguided as you already are.
+3	action	end
+2	option	Fine, I didn't want to talk to you either.
+3	line	Player	Fine, I didn't want to talk to you either.
+3	line	Zealot	Fear not fiend, even though I may leave you be, you shall not escape justice at the hands of the righteous.
+3	action	end
+1	option	My beliefs are in accord with the teachings of Guthix.
+2	line	Player	My beliefs are in accord with the teachings of Guthix. Balance is power.
+2	line	Zealot	A wishy washy set of beliefs. You should follow Saradomin and find a real purpose in your life.
+2	select	Select an option
+2	option	And what sort of purpose would that be?
+3	line	Player	And what sort of purpose would that be?
+3	line	Zealot	To further the glory of Saradomin of course.
+3	line	Zealot	Take myself, I am upon a quest that will allow Saradomin to be glorified even in these dark lands.
+3	action	above
+2	option	I can make my own choices.
+3	line	Player	I can make my own choices, who are you to dispute them?
+3	line	Zealot	I look only to help those who are misguided.
+3	action	end
+1	option	I have no particular allegiance.
+2	line	Player	I have no particular allegiance.
+2	line	Zealot	Then your life is without reason or direction. I would talk to you further on the matter, but for now my attentions must be elsewhere.
+2	select	Select an option
+2	option	Then I shall leave you to your business.
+3	line	Player	Then I shall leave you to your business.
+3	line	Zealot	I shall pray that Saradomin grants you the wisdom to see through your folly.
+3	action	end
+2	option	Why, what are you doing?
+3	line	Player	Why, what are you doing?
+3	line	Zealot	I am upon a quest. One that will allow Saradomin to be glorified even in these dark lands.
+3	action	above
+0	section	Talking to the zealot again
+1	line	Player	Hello there.
+1	line	Zealot	Hello again. I'm afraid I'm rather preoccupied. What was it you wanted?
+1	select	Select an option
+1	option	Can you explain the history of these mines again?
+2	line	Player	Can you explain the history of these mines again?
+2	action	above
+1	option	Is there any other way into the mines?
+2	line	Player	Is there any other way into the mines?
+2	line	Zealot	Indeed I have found hope that this may be so. By making discreet inquiries I have been led to believe that a second entrance may exist into the mines.
+2	line	Zealot	Further, I have come into possession of a key that will apparently afford entrance to the lower levels of the mines once inside.
+2	select	Select an option
+2	option	Where is the second entrance to the mines?
+3	line	Player	Where is the second entrance to the mines?
+3	line	Zealot	Of this I am not yet sure. From what I have been able to gather, it was not originally built for humans to enter by. Where it may be, I am still endeavoring to find out.
+3	action	initial
+2	option	How can you be discreet with THAT star emblazoned on your robes?
+3	line	Player	How can you be discreet with THAT star emblazoned on your robes?
+3	line	Zealot	Saradomin watches over me, I am not troubled by those who are not meant to notice.
+3	line	Player	Even so, you're not exactly keeping quiet about your allegiance are you?
+3	line	Zealot	Saradomin will protect me. Even if I should fall there are many behind me who would stand in my place.
+3	select	Select an option
+3	option	Is that much consolation?
+4	line	Player	Is that much consolation when you get chopped up into little pieces?
+4	line	Zealot	I would rather be cut into little pieces whilst proclaiming the goodness of Saradomin than hiding my faith.
+4	action	end
+3	option	I can't see anyone behind you.
+4	line	Player	I can't see anyone behind you.
+4	line	Zealot	Although you may not realise it, Saradomin works quietly in many people, such is the folly of looking with your eyes and not with your heart.
+4	action	end
+3	option	And I would be one of them. So, can I borrow that key?
+4	line	Player	And I would be one of them. So, can I borrow that key?
+4	line	Zealot	I am afraid my task can be entrusted to nobody else. Saradomin has asked me alone to do this. I cannot take the slightest risk of losing this key. The stakes are too high.
+4	select	Select an option
+4	option	Please? I'll be very careful with it.
+5	action	below
+4	option	I didn't want that key anyway.
+5	action	below
+3	option	You're right, I was wrong to doubt Saradomin.
+4	line	Player	You're right, I was wrong to doubt Saradomin.
+4	line	Zealot	Let not your faith in Saradomin falter, for all else is insignificant.
+4	action	end
+3	option	You're nuts, goodbye.
+4	line	Player	You're nuts, goodbye.
+4	action	end
+2	option	Can I borrow your key?
+3	line	Player	Can I borrow your key?
+3	line	Zealot	I am afraid my task can be entrusted to nobody else. Saradomin has asked me alone to do this. I cannot take the slightest risk of losing this key. The stakes are too high.
+3	select	Select an option
+3	option	Please? I'll be very careful with it.
+4	line	Player	Please? I'll be very careful with it.
+4	line	Zealot	You know not what you deal with. There is evil in that mine and, whatever your assurances, I cannot risk you falling to the creatures within.
+4	select	Select an option
+4	option	And you think you'll be safer in the mine than me?
+5	line	Player	And you think you'll be safer in the mine than me?
+5	line	Zealot	Of course I'll be safe, my faith in Saradomin protects me.
+5	action	end
+4	option	I'll trade for it.
+5	line	Player	I'll trade for it.
+5	line	Zealot	Saradomin provides for my every need. There is nothing you could offer me.
+5	action	end
+4	option	Pretty pretty please?
+5	line	Player	Pretty pretty please?
+5	line	Zealot	Saradomin grant me patience. The answer is no.
+5	action	end
+4	option	I didn't want that key anyway.
+5	action	below
+3	option	I didn't want that key anyway.
+4	line	Player	I didn't want that key anyway.
+4	line	Zealot	Witness the goodness of Saradomin, that he has granted you the wisdom to see our positions in perspective.
+4	action	end
+2	option	How does a lost artefact that was only legendary help?
+3	action	below
+2	option	Why was everyone in the mines slaughtered?
+3	action	below
+1	option	Can I borrow your key?
+2	action	above
+1	option	Where is the second entrance to the mines?
+2	action	above
+1	option	How does a lost artefact that was only legendary help?
+2	line	Player	How does a lost artefact that was only legendary help?
+2	line	Zealot	Although the amulet was lost, it is my hope that if I can make it into the mines I can craft another.
+2	action	initial
+1	option	Why was everyone in the mines slaughtered?
+2	line	Player	Why was everyone in the mines slaughtered? Surely it wasn't their fault that the crystals formed?
+2	line	Zealot	It is said that some of the workers in the mines, merely from being in the presence of these crystals, found themselves bestowed with the love of Saradomin.
+2	line	Zealot	The advantage to our cause was considered too great by some within Morytania. They set about mercilessly and brutally killing everyone in the mines rather than risk losing them to us.
+2	line	Zealot	Such is the treachery of the servants of evil, that they even destroy their own kind without a moments thought.
+2	line	Zealot	The mines are now rumoured to be haunted by the souls of all those brutally and needlessly killed.
+2	action	initial
+0	section	Talking to the zealot after finding the second entrance
+1	line	Player	Hello there.
+1	line	Zealot	Hello again. I'm afraid I'm rather preoccupied. What was it you wanted?
+1	select	Select an option
+1	option	Can you explain the history of these mines again?
+2	action	above
+1	option	I've found the second entrance to the mine.
+2	line	Player	I've found the second entrance to the mine, I've managed to make it inside.
+2	line	Zealot	You are foolhardy indeed should you venture inside. The presence of evil is strong within the mines. If you take the risk I shall pray for your safety, although I hold little hope for your safe return.
+2	cond	After turning the water valve and before going down the lift:
+3	line	Player	Unfortunately I need a key to use the lift that goes to the lower levels. Can you help?
+3	line	Zealot	Indeed? My own inquiries have led me into possession of a key. I was informed that this key would apparently afford entrance to the lower levels. It therefore seems likely that this is the key which you seek.
+3	line	Player	Yes, that sounds like the one. May I borrow it?
+3	line	Zealot	I am afraid my task can be entrusted to nobody else. Saradomin has asked me alone to do this. I cannot take the slightest risk of losing this key. The stakes are too high.
+3	select	Select an option
+3	option	Please? I'll be very careful with it.
+4	action	above
+3	option	I didn't want that key anyway.
+4	action	above
+2	action	end
+1	option	I've made it in to the mines.
+2	line	Player	I've made it in to the mines. Unfortunately some parts are too dark to navigate.
+2	line	Zealot	Ah ye of little faith. Let Saradomin guide you even in the darkest places. By his light you may reach your goal.
+2	line	Player	As much as I respect your fanaticism, that was spectacularly unhelpful.
+2	action	end
+0	section	Talking to the zealot after encountering Treus Dayth
+1	line	Player	G... g... g... ghost! Scary ghost! Machinery flying everywhere.
+1	line	Zealot	I warned you not to enter those mines. It sounds like you've met Dayth. You must not go back down there.
+1	select	Select an option
+1	option	Who did you say Dayth was again?
+2	line	Player	Who did you say Dayth was again?
+2	line	Zealot	Treus Dayth was Zamorak's mage in charge of defending the ridge during the time of the orginal amulet.
+2	line	Zealot	Dayth failed and fell during an incursion by Saradominists, who then made it into the mines and were able to remove a shard of crystal.
+2	line	Zealot	Zamorak, furious at his mage, condemned Dayth's soul indefinitely to an existence of turmoil in the mines. Dayth's soul is bound to prevent the crystals from ever being reached again.
+2	action	end
+1	option	Nonsense, he'll be no match for me.
+2	line	Player	Nonsense, he'll be no match for me.
+2	line	Zealot	I don't know if you think your persistance makes you heroic, but you must realise it's just going to get you killed.
+2	action	end
+0	section	Talking to the zealot after killing Treus Dayth
+1	line	Player	I met that Dayth character you talked about. He wasn't as tough as all that.
+1	line	Zealot	I was afraid this would happen. The fear you must have experienced within those mines has left you delusional. There's no way you could have survived had you actually fought Dayth.
+1	action	end
+0	section	Inside the mine
+0	section	Attempting to enter the shortcut by the entrance
+1	box	You're not sure what's down there, perhaps it's safer to find another route.
+0	section	Picking the glowing fungus
+1	box	You pull the fungus from the water. It is very cold to the touch.
+0	section	Dropping the glowing fungus
+1	box	When you drop the fungus it crumbles mysteriously to dust.
+0	section	Exiting the mine via the cart tunnel with the glowing fungus
+1	box	As you crawl out into the sunlight, the strange fungus you are carrying crumbles to dust.
+1	action	end
+0	section	Teleporting out with the glowing fungus
+1	box	The strange fungus you are carrying crumbles to dust.
+0	section	Pulling track levers
+1	box	You pull the lever. The old points creak into place.
+0	section	After moving the cart with glowing fungus to the correct position
+1	line	Player	I wonder if that cart is anywhere useful now?
+1	action	end
+0	section	Attempting to open the large door
+1	box	This door appears to be locked.
+0	section	Retrieving the glowing fungus
+1	line	Player	I wonder if that cart is anywhere useful now?
+1	select	There's a glowing fungus I placed in here earlier.
+1	option	Take it.
+2	action	
+2	action	end
+1	option	Leave it.
+2	action	end
+0	section	Attempting to place the fungus back in the minecart
+1	box	I just went to all the effort of getting this over here. I'm not sending it back.
+0	section	Turning the water valve
+1	cond	If the player has not used the zealot's key on the valve:
+2	box	The valve seems to be locked in position. There is a small keyhole in the side.
+1	cond	If the player has used the zealot's key on the valve:
+2	box	The key unlocks the valve.
+2	box	You open the valve. Water begins to flow through the lift mechanism.
+1	cond	If the mischievous ghost closes the valve:
+2	box	You hear the sound of a valve being turned.
+0	section	Mischievous ghost appearing
+1	line	Mischievous ghost	Ooooo Wooooo Woo
+0	section	Losing the race to the ghost
+1	box	You hear the sound of a valve being turned.
+0	section	Taking the lift
+1	box	You get in the lift. Now powered, the lift descends further into the mines...
+1	box	...plunging you straight into the middle of a flooded with water.
+1	box	It's unlikely any of your light sources will dry off until you leave this dank cave.
+0	section	If the player has a tinderbox in their inventory
+1	box	The water soaks your tinderbox!
+0	section	Going down to the sixth level without the fungus
+2	line	Player	It's kind of dark down here. I should probably find a light source before going further.
+2	action	end
+2	line	Player	Hey - my light source isn't working! I'd better find a more suitable one before trying to go any further.
+2	action	end
+0	section	Attempting to open the locked larger doors without the key
+1	box	This door appears to be locked.
+0	section	Attempting to take the innocent-looking key
+1	line	Player	What the... ?
+1	box	Poor puny mortal. I'm going to have fun with you.}}
+1	action	end
+0	section	Trying to take the key while Treus Dayth is present
+1	box	I should deal with that ghost before trying to take the key again.
+0	section	Upon killing Treus Dayth
+1	box	As you make the killing strike, the machinery within the room falls silent.
+1	action	end
+0	section	Taking the crystal-mine key
+1	box	You take the key. It doesn't resist anymore.
+1	action	end
+0	section	Trying to take the key again
+1	box	You already have a key like that.
+0	section	Trying to leave through the cart tunnel before cutting a shard
+1	box	You should cut a shard from one of the crystals before leaving.
+0	section	Chiseling a crystal outcrop
+1	box	You cut a shard from the crystal.

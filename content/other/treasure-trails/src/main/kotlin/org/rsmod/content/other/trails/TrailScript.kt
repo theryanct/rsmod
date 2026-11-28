@@ -11,6 +11,8 @@ import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.music.MusicRepository
 import org.rsmod.api.npc.interact.AiPlayerInteractions
 import org.rsmod.api.npc.opPlayer2
+import org.rsmod.api.player.features.isFeatureOn
+import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.dig.DigSpots
 import org.rsmod.api.player.events.CollectionLogObtained
 import org.rsmod.api.player.events.EmoteSelected
@@ -65,7 +67,10 @@ private val logger = InlineLogger()
  * Step data is Jagex's own: the 243 cache's
  * clue-helper db tables ([ClueSteps]), so texts match the game and RuneLite's clue helper.
  *
- * - Clues drop from npcs ([ClueDrops], one per tier: none while you hold one in inventory/bank).
+ * - Clues drop from npcs ([ClueDrops]). One active clue per tier: while you hold (or bank) one,
+ *   a drop is a stackable scroll box of that tier instead (Ryan's "Unlimited stacked clue
+ *   scrolls" feature, default on; off = no drop, the old rule). Opening a box with no active clue
+ *   of its tier gives a fresh clue; casket rewards that are clues follow the same rule.
  *   Easy clue objs are one obj per step (param 623 = the step's dbrow); the single beginner obj
  *   keeps its step in [TrailVarps.beginner_step].
  * - "Read" shows the step (trail_cluetext, or the map interface); "Check steps" the steps left.
@@ -259,6 +264,9 @@ constructor(
         for ((tier, casket) in CASKETS) {
             onOpHeld1(casket) { openCasket(tier, it.type) }
         }
+        for ((tier, box) in BOXES_BY_TIER) {
+            onOpHeld1(box) { openScrollBox(tier, it.type) }
+        }
         onOpHeld1(TrailObjs.strange_device) { feelDevice() }
         onOpHeld1(TrailObjs.master_device) { feelDevice() }
         onOpHeld1(TrailObjs.sextant) { lookThroughSextant() }
@@ -376,8 +384,15 @@ constructor(
     private fun resolveDrop(hero: Player, key: String): UnpackedObjType? {
         val tier = ClueTier.byKey(key) ?: return null
         if (hero.hasClue(tier)) {
-            return null
+            return if (hero.isFeatureOn(Feature.UnlimitedClues)) objTypes[boxOf(tier)] else null
         }
+        return newClue(hero, tier)
+    }
+
+    private fun boxOf(tier: ClueTier): ObjType = BOXES_BY_TIER.getValue(tier)
+
+    /** A fresh clue obj of [tier], resetting its trail length (and step, for single objs). */
+    private fun newClue(hero: Player, tier: ClueTier): UnpackedObjType? {
         hero.setVar(remainingVarp(tier), 0)
         val single = singleObj(tier)
         if (single != null) {
@@ -948,6 +963,22 @@ constructor(
         mes(text)
     }
 
+    /* Scroll boxes */
+
+    private fun ProtectedAccess.openScrollBox(tier: ClueTier, box: UnpackedObjType) {
+        if (player.hasClue(tier)) {
+            // Authored line (not Wiki): one active clue per tier.
+            mes("You already have a ${tier.display.lowercase()} clue scroll. Finish it first.")
+            return
+        }
+        val clue = newClue(player, tier) ?: return mes("Nothing interesting happens.")
+        if (invDel(inv, box, 1).failure) {
+            return
+        }
+        invAddOrDrop(objRepo, clue)
+        mes("You open the scroll box and find a ${tier.display.lowercase()} clue scroll.")
+    }
+
     /* Caskets */
 
     @OptIn(UncheckedType::class)
@@ -967,7 +998,7 @@ constructor(
                 val id = names.objs[reward.obj] ?: return@mapNotNull null
                 val base = objTypes[id] ?: return@mapNotNull null
                 val type = if (reward.noted && base.canCert) objTypes.cert(base) else base
-                type to reward.count
+                chainedClue(type) to reward.count
             }
         val display = Inventory.create(invTypes[TrailInvs.reward])
         for ((index, reward) in rolled.withIndex()) {
@@ -984,12 +1015,36 @@ constructor(
         UpdateInventory.updateInvFull(player, display)
         val trails = if (completed == 1) "Trail" else "Trails"
         mes("You have completed $completed ${tier.display} Treasure $trails.")
+        val boxes = invTotal(inv, boxOf(tier))
+        if (boxes > 0 && !player.hasClue(tier)) {
+            val noun = if (boxes == 1) "scroll box" else "scroll boxes"
+            // Authored line (not Wiki).
+            mes("You have $boxes ${tier.display.lowercase()} $noun left: open one for your next clue.")
+        }
+    }
+
+    /** A casket's clue reward: a scroll box instead when the player already has that tier. */
+    private fun ProtectedAccess.chainedClue(type: UnpackedObjType): UnpackedObjType {
+        val tier = tierOf(type.id) ?: return type
+        if (!player.hasClue(tier) || !player.isFeatureOn(Feature.UnlimitedClues)) return type
+        return objTypes[boxOf(tier)]
     }
 
     /** An interface id from the symbol table as a type (map clues opened by obj name). */
     private fun interfaceRef(id: Int): InterfaceType? = interfaceTypes[id]
 
     private companion object {
+        private val BOXES_BY_TIER
+            get() =
+                mapOf(
+                    ClueTier.Beginner to TrailObjs.box_beginner,
+                    ClueTier.Easy to TrailObjs.box_easy,
+                    ClueTier.Medium to TrailObjs.box_medium,
+                    ClueTier.Hard to TrailObjs.box_hard,
+                    ClueTier.Elite to TrailObjs.box_elite,
+                    ClueTier.Master to TrailObjs.box_master,
+                )
+
         private val CASKETS =
             mapOf(
                 ClueTier.Beginner to TrailObjs.casket_beginner,

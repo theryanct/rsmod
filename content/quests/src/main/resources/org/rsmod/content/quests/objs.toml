@@ -45,3 +45,13 @@ coords = '0_42_76_25_49'
 [[spawn]]
 obj = 'mdaughter_daughter_corpse'
 coords = '0_43_157_32_30'
+
+# Getting Ahead: the knife by Gordon and Mary's kitchen table and the bucket by their sink (Wiki
+# walkthrough; exact tiles authored, the Wiki spawn tables don't list them).
+[[spawn]]
+obj = 'knife'
+coords = '0_19_57_26_31'
+
+[[spawn]]
+obj = 'bucket_empty'
+coords = '0_19_57_22_30'

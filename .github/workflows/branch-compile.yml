@@ -1,0 +1,54 @@
+name: Branch compile
+
+# Lite CI for worker branches: compile-only gate (no game cache, no packCache, no boot - those
+# need the local .data cache and stay in the devops batch window). Workers queue only branches
+# whose latest commit is green; devops rejects non-green tips at integ.
+on:
+  push:
+    branches:
+      - 'feat/**'
+      - 'fix/**'
+      - 'perf/**'
+      - 'chore/**'
+      - 'integ/**'
+  workflow_dispatch:
+
+concurrency:
+  group: branch-compile-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+        with:
+          validate-wrappers: true
+          cache-read-only: false
+
+      # Advisory static checks (known false positives); the compile below is the gate.
+      - name: Prescan (advisory)
+        continue-on-error: true
+        run: bash tools/ci/prescan.sh origin/main
+
+      - name: Import scan (advisory)
+        continue-on-error: true
+        run: python3 -I tools/lint/import_scan.py --base origin/main
+
+      - name: Compile all modules
+        run: ./gradlew compileKotlin compileJava --continue --console=plain -Pkotlin.daemon.jvmargs=-Xmx2g

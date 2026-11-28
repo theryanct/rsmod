@@ -74,7 +74,8 @@ constructor(
             }
         if (given > 0) {
             invDel(inv, SheepShearerObjs.ball_of_wool, given)
-            player.setQuestState(SHEEP_SHEARER, 1 + delivered + given)
+            // The last hand-in leaves the end state to completeQuest (it shows the scroll).
+            player.setQuestState(SHEEP_SHEARER, minOf(1 + delivered + given, SHEEP_SHEARER.complete - 1))
         }
         val hooks = Hooks(this, given = given, remaining = BALLS - delivered - given)
         startDialogue(npc) { QuestDialogueRunner(hooks).run(this, dialogue.section(section)) }
