@@ -27,3 +27,10 @@ obstacle	draynor	6	rooftops_draynor_leapdown	1	4	walk	agility_shortcut_wall_jump
 obstacle	draynor	7	rooftops_draynor_crate	1	79	climb	agility_shortcut_wall_jumpdown	2	3103,3261,0	-
 
 shortcut	fai_falador_castle_crumble_mid	5	0.5	human_jump_hurdle	2	2934,3355,0	2936,3355,0
+# Low-level shortcuts (wiki "Shortcuts" levels/xp; sides from the cache loc positions/orientation).
+shortcut	lumbridge_sc_fencejump	13	0	human_jump_hurdle	2	3240,3334,0	3240,3335,0
+shortcut	yanille_castlewall_sc,yanille_castlehole_sc	16	0	agilty_shortcut_tunnel_walk	4	2575,3107,0	2575,3112,0
+shortcut	monkeybars_end1	15	20	human_monkeybars_walk	7	3120,9963,0	3120,9970,0
+shortcut	mine_log_balance1	20	8.5	human_walk_logbalance	5	2598,3477,0	2603,3477,0
+shortcut	varrock_sc_tunnel_west,varrock_sc_tunnel_east	21	0	agilty_shortcut_tunnel_walk	5	3137,3516,0	3143,3514,0
+shortcut	falador_sc_castlewall_south,falador_sc_castlewall_north	26	0	agilty_shortcut_tunnel_walk	4	2948,3309,0	2948,3313,0
