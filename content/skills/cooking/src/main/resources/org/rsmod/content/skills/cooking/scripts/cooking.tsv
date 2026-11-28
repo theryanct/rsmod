@@ -48,6 +48,7 @@ heat	uncooked_meat_pie	meat_pie	burnt_pie	20	110.0	0	78	412	88	432	-	-	90	424	-
 heat	uncooked_mushroom_pie	mushroom_pie	burnt_pie	60	200.0	0	17	285	140	450	-	-	29	297	-
 heat	uncooked_pizza	plain_pizza	burnt_pizza	35	143.0	0	48	352	-	-	-	-	60	364	-
 heat	uncooked_stew	stew	burnt_stew	25	117.0	1	68	392	78	412	-	-	80	404	-
+heat	bowl_nettlewater	bowl_nettletea	bowl_empty	20	52.0	1	78	412	-	-	-	-	90	424	-
 combine	plain_pizza	anchovies	anchovie_pizza	55	39.0	-	-
 combine	bowl_tuna+sweetcorn	potato_butter	potato_tuna+sweetcorn	68	10.0	-	-
 combine	plain_pizza	pineapple_ring	pineapple_pizza	65	45.0	-	-
@@ -89,5 +90,6 @@ combine	pot_flour	jug_water	bread_dough	1	0.0	pot_empty	jug_empty
 combine	pot_flour	jug_water	pastry_dough	1	0.0	pot_empty	jug_empty
 combine	pot_flour	bowl_water	bread_dough	1	0.0	pot_empty	bowl_empty
 combine	pot_flour	bowl_water	pastry_dough	1	0.0	pot_empty	bowl_empty
+combine	nettles_picked	bowl_water	bowl_nettlewater	20	0.0	-	-
 multi	uncooked_cake	40	0.0	cake_tin	egg	-	pot_flour	pot_empty	bucket_milk	bucket_empty
 ferment	jug_unfermented_wine	jug_wine	jug_bad_wine	35	200.0	48	352
