@@ -1577,3 +1577,81 @@ coords = '0_53_149_30_35'
 [[spawn]]
 npc = 'eaglepeak_eagle_jungle'
 coords = '0_39_145_20_42'
+
+# A Soul's Bane: the rift's rooms (map squares 46-48_81) - rage room creatures, the confusion
+# room's real beast and illusions, the hopeless creatures, and Brana in Tolna's chamber (plane 1).
+[[spawn]]
+npc = 'soulbane_anger_unicorn'
+coords = '0_47_81_8_52'
+
+[[spawn]]
+npc = 'soulbane_anger_unicorn'
+coords = '0_47_81_22_46'
+
+[[spawn]]
+npc = 'soulbane_anger_bear'
+coords = '0_47_81_14_56'
+
+[[spawn]]
+npc = 'soulbane_anger_bear'
+coords = '0_47_81_10_42'
+
+[[spawn]]
+npc = 'soulbane_anger_rat'
+coords = '0_47_81_20_52'
+
+[[spawn]]
+npc = 'soulbane_anger_rat'
+coords = '0_47_81_17_42'
+
+[[spawn]]
+npc = 'soulbane_anger_goblin'
+coords = '0_47_81_12_46'
+
+[[spawn]]
+npc = 'soulbane_anger_goblin'
+coords = '0_47_81_24_56'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper'
+coords = '0_47_81_47_16'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake1'
+coords = '0_47_81_42_23'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake2'
+coords = '0_47_81_56_23'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake3'
+coords = '0_47_81_42_7'
+
+[[spawn]]
+npc = 'soulbane_confu_creeper_fake4'
+coords = '0_47_81_56_7'
+
+[[spawn]]
+npc = 'soulbane_hope_monst1'
+coords = '0_47_81_7_21'
+
+[[spawn]]
+npc = 'soulbane_hope_monst2'
+coords = '0_47_81_17_24'
+
+[[spawn]]
+npc = 'soulbane_hope_monst3'
+coords = '0_47_81_22_16'
+
+[[spawn]]
+npc = 'soulbane_hope_monst1'
+coords = '0_47_81_12_13'
+
+[[spawn]]
+npc = 'soulbane_hope_monst2'
+coords = '0_47_81_25_23'
+
+[[spawn]]
+npc = 'soulbane_brana'
+coords = '1_46_81_28_30'

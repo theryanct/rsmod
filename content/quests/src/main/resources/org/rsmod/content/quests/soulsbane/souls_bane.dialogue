@@ -1,0 +1,288 @@
+# Generated from the OSRS Wiki page "Transcript:A Soul's Bane" by tools/quests/transcript_to_dialogue.py
+0	section	Talking with Launa to start
+1	line	Player	Hi there.
+1	line	Launa	Hello.
+1	line	Player	What's this big hole in the ground all about?
+1	line	Launa	Oh I wish I knew for sure... All I do know is that it opened seemingly by itself a few months ago. It was first discovered by the students over at the digsite, a few of which have gone down there but never returned.
+1	line	Launa	They told me about it straight away.
+1	line	Player	So why is it important to you?
+1	line	Launa	A few reasons, but I think the situation is beyond help now.
+1	line	Player	What situation? Maybe I can help.
+1	line	Launa	I suppose it wouldn't hurt to tell you. I'm waiting to see my son Tolna. Don't suppose you've seen him?
+1	line	Player	Your son, Tolna? I don't know, what does he look like?
+1	line	Launa	I don't really know.
+1	line	Player	You don't know what your own son looks like?
+1	line	Launa	No. You see, I haven't seen him for... for... 25 years now. He just ran away one day and never returned. I'm hoping he's down this rift as I know he headed in this direction. My husband went to look, but he hasn't
+1	line	Launa	returned for days.
+1	select	Start the A Soul's Bane quest?
+1	option	Yes
+2	line	Player	Would you like me to go down to look for your husband and son?
+2	line	Launa	You would do that? Oh thank you so much!
+2	line	Player	Don't worry. I'll investigate.
+2	line	Launa	Thank you. You can use a rope to get into the rift, just attach it at the edge.
+2	line	Player	No problem.
+2	line	Launa	Be careful.
+2	action	end
+1	option	No
+2	line	Player	Surely by now they'd both be dead?
+2	line	Launa	What?!?!
+2	line	Player	Oops.
+2	line	Launa	How could you say such a thing? Get away from me!
+2	action	end
+0	section	Talking with Launa before going down
+1	line	Player	Hi.
+1	line	Launa	Have you discovered anything yet?
+1	line	Player	Sorry, what am I supposed to do again?
+1	line	Launa	Go into the rift beside me and find my husband and son!
+1	line	Player	Ah, I'm on my way!
+1	action	end
+0	section	Room of Rage
+1	line	Tolna's Voice	Why should I, Tolna, be trapped in such a wretched place?
+1	line	Tolna's Voice	Arrghh, It's not fair! Feel my ANGER!
+0	section	Weapon rack
+1	select	Which weapon would you like to take?
+1	option	The Sword
+2	action	
+1	option	The Spear
+2	action	
+1	option	The Mace
+2	action	
+1	option	The Battleaxe
+2	action	
+1	option	Nothing
+2	action	
+0	section	Leaving the room
+1	select	Do you wish to leave?
+1	option	Yes, I don't mind starting this room again.
+2	action	The player leaves to the entrance of the rift.
+1	option	No, I'll finish this room first.
+2	action	end
+0	section	Talking to Launa after entering the room of fear
+1	line	Player	Hi, I've been down into the rift and I found a strange room. I also heard a voice claiming to be called Tolna.
+1	line	Launa	My son! What did he say?
+1	line	Player	He said, 'Why should I, Tolna, be trapped in such a wretched place? Feel my ANGER!'.
+1	line	Launa	Who can be surprised at his frustration?
+1	line	Player	It's a very aggressive room. I think I need to defeat the monsters in there.
+1	line	Launa	Don't waste any time, his life could depend on you.
+1	action	end
+0	section	After filling the rage level
+1	line	Player	Arrrgghhh!
+1	line	Player	Wow! How did I do that? There's something truly mental about this place!
+1	line	Launa	Where are you going?
+1	line	Tolna	I can't live with your rules any more, Mother.
+1	line	Tolna	I'm tired of working hard for very little money. There's great wealth that's mine for the taking!
+1	line	Launa	But why? We're surviving perfectly fine on what we're earning.
+1	line	Tolna	I'm tired of your pathetic outlook. Good bye.
+1	line	Launa	Tolna?
+1	line	Launa	TOLNA !!!
+0	section	Talking to Launa after watching the cutscene of Tolna leaving
+1	line	Player	I managed to defeat the monsters in the room!
+1	line	Launa	Have you found him then?
+1	line	Player	Sorry, I've yet to enter the next room.
+1	line	Launa	Please hurry!
+1	action	end
+0	section	Room of Fear
+1	line	Tolna's Voice	It's so quiet and dark. I FEAR I may never escape this horrid place.
+1	line	Tolna's Voice	Mum, Dad, help me!
+1	line	Player	Hmmm, no light sources. So why can I still see down here? This can't just be a simple dungeon.
+0	section	Talking to Launa after entering the room of fear
+1	line	Player	Hi. I've made my way into a second room. I heard your son's voice again as well.
+1	line	Launa	What did he say? What did he say?
+1	line	Player	'It's so quiet and dark. I FEAR I may never escape this horrid place. Mum, help me!'
+1	line	Launa	You must save him! Help him get over his fear!
+1	action	end
+0	section	Re-entering the room of fear
+1	line	Player	Hmmm, no light sources. So why can I still see down here? This can't just be a simple dungeon.
+1	action	end
+0	section	Look-inside dark holes
+1	option	Dialogue 1
+2	line	Player	Hello?
+2	action	end
+1	option	Dialogue 2
+2	line	Player	What's going on?
+2	action	end
+1	option	Dialogue 3
+2	line	Player	What on Gielinor?
+2	action	end
+1	option	Dialogue 4
+2	line	Player	Ahhhh
+2	action	end
+1	option	Dialogue 5
+2	line	Player	Help me!
+2	action	end
+1	option	Dialogue 6
+2	line	Player	Oh no!
+2	action	end
+1	option	Dialogue 7
+2	line	Player	Who's there?
+2	action	end
+1	option	Dialogue 8
+2	line	Player	What on Gielinor?
+2	action	end
+1	option	Dialogue 9
+2	line	Player	Is anybody there?
+2	action	end
+1	option	Dialogue 10
+2	line	Player	I can't see!
+2	action	end
+1	option	Dialogue 11
+2	line	Player	What on Gielinor?
+2	action	end
+1	option	Dialogue 12
+2	line	Player	Who's that?
+2	action	end
+1	option	Dialogue 13
+2	line	Player	What on Gielinor?
+2	action	end
+0	section	After killing the first reaper
+1	line	Player	I don't like looking in these holes but I must!
+1	action	end
+0	section	After killing the second reaper
+1	line	Player	I don't feel quite so afraid now.
+1	action	end
+0	section	After killing the third reaper
+1	line	Player	These holes aren't that spooky.
+1	action	end
+0	section	After killing the forth reaper
+1	line	Player	This isn't so scary after all!
+1	action	end
+0	section	After killing the last reaper
+1	action	The player kills the last scary face.
+1	line	Player	Phew, I don't feel so scared now. This feels like the figment of someone's imagination!
+1	box	What's that?
+1	action	end
+0	section	Talking to Launa after completing the room of fear
+1	line	Player	I've overcome fear in the second room and an exit has been illuminated.
+1	line	Launa	What can you see?
+1	line	Player	Erm, I haven't actually ventured through yet.
+1	line	Launa	What are you waiting for? He must be so afraid in that place.
+1	action	end
+0	section	Room of Confusion
+1	line	Tolna's Voice	Where am I? How long have I been here? Am I still the person I once was?
+1	line	Tolna's Voice	Oh why am I so CONFUSED?
+0	section	Talking to Launa after entering the room of confusion
+1	line	Player	Hi, I've journeyed through to a third room. Your son's voice spoke as I entered.
+1	line	Launa	Really? What did he say?
+1	line	Player	Simply, 'Where am I? How long have I been here? Am I still the person I once was? I hate my CONFUSION'.
+1	line	Launa	You have to help him overcome his confusion!
+1	action	end
+0	section	Killing a confusion beast
+1	option	Dialogue 1
+2	box	Does this creature really exist?
+2	action	end
+1	option	Dialogue 2
+2	box	That monster wasn't even real!
+2	action	end
+0	section	Killing the last confusion beast each time
+1	box	Those other monsters were just hallucinations!
+1	action	end
+0	section	After revealing the final door
+1	line	Player	Aha! The exit is now clear! This Tolna's mind really is a mess.
+1	line	Tolna	Leave me... But I don't want to... How can you say that...
+1	line	Tolna	I've done nothing wrong... Arrrghhh...
+0	section	Talking to Launa after completing the confusion room
+1	line	Player	Hi. I have prevailed over a third room.
+1	line	Launa	Are you any closer to finding my son?
+1	line	Player	I think I may be getting closer.
+1	line	Launa	Please don't waste any time.
+1	action	end
+0	section	Room of Hopelessness
+1	line	Tolna's Voice	What's the point? No-one will ever help me.
+1	line	Tolna's Voice	I'm not worth anything. Will anyone ever combat my HOPELESSNESS?
+1	action	end
+0	section	Talking to Launa after entering the room of hopelessness
+1	line	Player	I have travelled through to a fourth room. As I entered your son's voice spoke to me!
+1	line	Launa	Oh my! What did he say?
+1	line	Player	He said, 'What's the point? Why do I defy such HOPELESSNESS? No-one will ever help me'.
+1	line	Launa	You must fight to give him back his hope!
+1	line	Player	Can I succeed?
+1	line	Launa	Of course you can!
+1	action	end
+0	section	After killing the first hopeless creature
+1	line	Player	Is there any end to killing these monsters?
+0	section	After killing the second hopeless creature
+1	line	Player	This is hard work!
+0	section	After killing the third hopeless creature
+1	line	Player	I've almost killed them all now!
+0	section	After killing the fourth hopeless creature
+1	line	Player	Maybe if I kill one more?
+0	section	After killing the last hopeless creature
+1	line	Player	A bridge of hope! Tolna should feel that help is at hand by now!
+1	action	end
+0	section	Launa after the Hopelessness room
+1	line	Player	I have endured against hopelessness to finish the fourth room.
+1	line	Launa	Any sight of my son?
+1	line	Player	Only his voice. So far he has said to me, 'Why should I, Tolna, be trapped in such a wretched place? Feel my ANGER!', 'It's so quiet and dark. I FEAR I may never escape this horrid place. Mum, help me!', 'Where
+1	line	Player	am I? How long have I been here? Am I still the person I once was? I hate my CONFUSION' and 'What's the point? Why do I defy such HOPELESSNESS? No-one will ever help me'.
+1	line	Launa	You must find him and bring him back to me. Please, I beg you.
+1	line	Player	Don't worry, I will find him!
+1	action	end
+0	section	Finding Tolna
+1	line	Brana	Son! Is that you?
+1	line	Brana	Please speak to me! Tolna?
+1	line	Brana	What do you mean?
+1	line	Brana	You'll always be my son!
+1	line	Brana	There must be a way.
+1	line	Brana	Don't give up so easily!
+1	line	Brana	Sorry, but your mother and I...
+1	line	Brana	tried so hard to find you!
+1	line	Player	Your father isn't lying.
+1	action	end
+0	section	Talking to Brana
+1	line	Player	Are you ok?
+1	line	Brana	Please! You must help my son! He's beyond sense.
+1	line	Player	But how can I help?
+1	line	Brana	I take it you have travelled through the mental dilemmas of my son, as I have.
+1	line	Player	That's correct.
+1	line	Brana	Now you must do what I cannot, conquer the physical dilemma!
+1	line	Player	I will try.
+1	line	Brana	Thank you stranger.
+0	section	Talking to Launa
+1	line	Player	I've found your son.
+1	line	Launa	You have?
+1	line	Player	And your husband, but I'm afraid your son is no longer physically what he once was.
+1	line	Launa	Can you save them?
+1	line	Player	I will try.
+1	line	Launa	Thank you.
+0	section	After defeating Tolna's body
+0	section	Talking to Brana after defeating Tolna's body
+1	line	Player	I think I've saved your son.
+1	line	Brana	Please talk to him, make sure he's OK!
+1	action	end
+0	section	Talking to Launa after defeating Tolna's body
+1	line	Player	I have returned your son to his normal state!
+1	line	Launa	And you've spoken to him?!?
+1	line	Player	Er, no, sorry. I just came back here to tell you.
+1	line	Launa	What are you waiting for, bring him back to me!
+1	action	end
+0	section	Talking to human Tolna
+1	line	Player	Tolna?
+1	line	Tolna	Sorry? What happened?
+1	line	Player	You've been trapped down here for years. I've come to rescue you on behalf of your parents.
+1	line	Tolna	Oh yeah. I was looking for the legacy of a civilisation that used to live down here.
+1	line	Brana	Son!
+1	line	Tolna	Father? Oh, I'm so sorry, can you ever forgive me?
+1	line	Brana	Don't worry, I'm just glad you're back to yourself. Are you OK?
+1	line	Tolna	I'm fine, my memories are slowly returning. How's mother?
+1	line	Brana	She misses you dearly!
+1	line	Tolna	Where is she?
+1	line	Player	She's up at the surface waiting for you.
+1	line	Brana	Thank you traveller, I'm glad my wife and I never gave up hope. We should return to her and tell her the good news.
+1	line	Tolna	Thank you so much. I truly owe you for your help.
+1	line	Player	I'm just glad I could help.
+1	action	end
+1	action	The player is transported to above surface.
+0	section	Talking to Tolna on the surface
+1	line	Player	Hello Tolna.
+1	line	Tolna	Hi. Thanks again for saving me, I'm so glad to be out of that horrible place. I was foolish to ignore my parents' warnings when I ran away that day. Luckily I've been able to patch things up with them so they've
+1	line	Tolna	returned home with peace of mind.
+1	line	Player	What exactly happened to you down there?
+1	line	Tolna	I managed to find the remnants of the ancient civilisation that the stories talked about. It seems people used to worship a god there years ago in numbers far greater than a simple cult following. Sadly there is little
+1	line	Tolna	remaining so I have nothing else to tell. As soon as I entered this area the ground swallowed me whole. I felt there was something watching, waiting. It's like there is some evil power under the ground that wanted me to
+1	line	Tolna	suffer. As if it got some sort of empowerment from it. At least what ever it is, it doesn't want to reveal itself to the world yet...
+1	line	Player	At least we have a warning. Did you manage to retrieve anything?
+1	line	Tolna	Not really, just a few coins, which you're welcome to have.
+1	line	Player	Thanks. So what are you going to do now?
+1	line	Tolna	I've decided to keep open the rift. There is a part of it that is perfectly laid out for combat training and remnants of my subconscious remain in there. I want to show people the problems I have faced, so that they
+1	line	Tolna	may learn from them. You're welcome to go down there and practice fighting any time.
+1	line	Player	Thanks.

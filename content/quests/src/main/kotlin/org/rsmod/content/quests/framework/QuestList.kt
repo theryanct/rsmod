@@ -70,6 +70,7 @@ import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
+import org.rsmod.content.quests.soulsbane.SoulsBane.Companion.SOULS_BANE
 import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
 import org.rsmod.content.quests.spiritsoftheelid.SpiritsOfTheElid.Companion.SPIRITS_OF_THE_ELID
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
@@ -160,6 +161,7 @@ public object BuiltQuests {
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
             SKIPPY_AND_THE_MOGRES,
+            SOULS_BANE,
             SLEEPING_GIANTS,
             SPIRITS_OF_THE_ELID,
             TEMPLE_OF_THE_EYE,
