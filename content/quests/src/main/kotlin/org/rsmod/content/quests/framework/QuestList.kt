@@ -28,6 +28,7 @@ import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
+import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
@@ -76,6 +77,7 @@ public object BuiltQuests {
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MURDER_MYSTERY,
+            NATURE_SPIRIT,
             PIRATES_TREASURE,
             PLAGUE_CITY,
             PRIEST_IN_PERIL,
