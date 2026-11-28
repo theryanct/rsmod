@@ -16,6 +16,7 @@ import org.rsmod.game.client.ClientCycle
 import org.rsmod.game.client.NoopClient
 import org.rsmod.game.client.NoopClientCycle
 import org.rsmod.game.entity.player.Appearance
+import org.rsmod.game.entity.player.CollectionLog
 import org.rsmod.game.entity.player.GeHistoryEntry
 import org.rsmod.game.entity.player.GeSlot
 import org.rsmod.game.entity.player.PlayerUid
@@ -200,6 +201,8 @@ public class Player(
     /** Grand Exchange offer slots (null = empty); persisted by the account GE pipeline. */
     public val geSlots: Array<GeSlot?> = arrayOfNulls(GeSlot.SLOT_COUNT)
     public val geHistory: ArrayDeque<GeHistoryEntry> = ArrayDeque()
+    /** Collection log progress; persisted by the account collection-log pipeline. */
+    public val collectionLog: CollectionLog = CollectionLog()
 
     public var publicMessage: PublicMessage? = null
     public var pendingSay: String? = null
