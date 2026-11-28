@@ -469,10 +469,7 @@ constructor(
         override val auditName: String = "clue step (while held)"
 
         override fun auditCovers(type: UnpackedNpcType, coords: CoordGrid, op: Int): Boolean =
-            op == 1 &&
-                steps.byRow.values.any {
-                    it.kind != ClueKind.Emote && (it.target as? ClueTarget.Npc)?.npcs?.contains(type.id) == true
-                }
+            op == 1 && type.id in auditNpcIds
 
         override suspend fun ProtectedAccess.run(npc: Npc, op: InteractionOp) {
             if (uris[player] === npc) {
@@ -483,6 +480,29 @@ constructor(
                 player.heldSteps().firstOrNull { it.second.isSolvedBy(npc) } ?: return
             talkClueNpc(npc, clue, step)
         }
+    }
+
+    /** `::unboundops` indexes (built once, on the first audit): npcs a talk step can claim. */
+    private val auditNpcIds: Set<Int> by lazy {
+        steps.byRow.values
+            .filter { it.kind != ClueKind.Emote }
+            .flatMap { (it.target as? ClueTarget.Npc)?.npcs.orEmpty() }
+            .toHashSet()
+    }
+
+    /** `::unboundops`: loc id -> the coords of the search/key steps that can claim it. */
+    private val auditLocCoords: Map<Int, List<CoordGrid>> by lazy {
+        val out = HashMap<Int, MutableList<CoordGrid>>()
+        for (step in steps.byRow.values) {
+            val (locs, coord) =
+                when (val target = step.target) {
+                    is ClueTarget.Loc -> target.locs to target.coord
+                    is ClueTarget.Key -> target.locs to target.coord
+                    else -> continue
+                }
+            for (loc in locs) out.getOrPut(loc) { mutableListOf() } += coord
+        }
+        out
     }
 
     private fun ClueStep.isSolvedBy(npc: Npc): Boolean {
@@ -586,16 +606,7 @@ constructor(
         override val auditName: String = "clue step (while held)"
 
         override fun auditCovers(type: UnpackedLocType, shape: Int, coords: CoordGrid, op: Int): Boolean =
-            op == 1 &&
-                steps.byRow.values.any {
-                    val (locs, coord) =
-                        when (val target = it.target) {
-                            is ClueTarget.Loc -> target.locs to target.coord
-                            is ClueTarget.Key -> target.locs to target.coord
-                            else -> return@any false
-                        }
-                    type.id in locs && coords.chebyshevDistance(coord) <= 1
-                }
+            op == 1 && auditLocCoords[type.id]?.any { coords.chebyshevDistance(it) <= 1 } == true
 
         override suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp) {
             val (clue, step) =

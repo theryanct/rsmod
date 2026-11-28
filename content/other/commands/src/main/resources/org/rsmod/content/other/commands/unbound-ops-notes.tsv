@@ -2,3 +2,4 @@
 # or is not meant to do anything. Columns (tab-separated): kind (loc|npc), id or name, op (op1-op5 or *), note.
 # Rows matching here go to .data/logs/unbound-ops-covered.tsv as "note: <note>". Add yours with your session name.
 # kind	id_or_name	op	note
+region	1856,7040,2010,7110	*	POH room templates (copied into instances, not real spawns) (skilling)
