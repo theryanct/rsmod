@@ -26,7 +26,9 @@ public data class SkillMultiChoice(val index: Int, val product: SkillMultiProduc
  * 5178/1810 decide whether the quantity buttons show). Values from the cache.
  */
 public object SkillMultiVerb {
+    public const val MAKE_SETS: Int = 3
     public const val COOK: Int = 6
+    public const val STRING: Int = 10
     public const val CUT: Int = 12
     public const val SMELT: Int = 13
     public const val SPIN: Int = 16
