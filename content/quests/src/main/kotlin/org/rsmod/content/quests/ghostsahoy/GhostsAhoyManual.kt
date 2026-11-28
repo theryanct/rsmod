@@ -114,6 +114,13 @@ class GhostsAhoyManual @Inject constructor(private val npcTypes: NpcTypeList) : 
     private suspend fun ProtectedAccess.talkRobin(npc: Npc) {
         val clean = carries(GaObjs.bedsheet)
         when {
+            bit(GaVarBits.bow) == BOW_SIGNED &&
+                !carries(GaObjs.longbow_signed) &&
+                carries(GaObjs.longbow) -> {
+                startDialogue(npc) { chatNpc(neutral, "Lost it already? Fine, give it here.") }
+                invReplace(inv, GaObjs.longbow, 1, GaObjs.longbow_signed)
+                mesbox("Robin signs the oak longbow for you.")
+            }
             bit(GaVarBits.bow) >= BOW_SIGNED ->
                 gaRun(npc, "Talking to Robin after getting the bow signed")
             bit(GaVarBits.requested_sheet) != 0 && clean && !carries(GaObjs.longbow) -> {

@@ -9,6 +9,7 @@ import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.npc.NpcRepository
+import org.rsmod.api.script.onApLoc1
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
@@ -81,6 +82,8 @@ constructor(
         onLocOpLabel(locTypes, GaLocs.gangplank_on, "Cross") { telejump(ROCKS_SIDE) }
         onLocOpLabel(locTypes, GaLocs.gangplank_off, "Cross") { telejump(DECK_SIDE) }
         onLocOpLabel(locTypes, GaLocs.rock, "Jump-To") { jumpRock(it) }
+        // The rocks are two tiles apart over water: jump from within reach, not adjacent.
+        onApLoc1(GaLocs.rock) { if (isWithinApRange(it.loc, distance = ROCK_REACH)) jumpRock(it.loc) }
         onEvent<NpcKilledEvent> { lobsterKilled(this) }
 
         for ((i, scrap) in GaObjs.scraps.withIndex()) {
@@ -92,6 +95,7 @@ constructor(
         QuestDigSpots.register { digBook() }
 
         onNpcOpLabel(npcTypes, GaNpcs.captain_dock, "Talk-to") { talkCaptain(it, toIsland = true) }
+        onNpcOpLabel(npcTypes, GaNpcs.captain_dock, "Travel") { talkCaptain(it, toIsland = true) }
         onNpcOpLabel(npcTypes, GaNpcs.captain_island, "Talk-to") { talkCaptain(it, toIsland = false) }
     }
 
@@ -248,7 +252,12 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.scrap(bitMask: Int, scrap: ObjType) {
-        if (progress() and bitMask != 0 || carries(scrap) || carries(GaObjs.map)) {
+        val held =
+            carries(scrap) ||
+                carries(GaObjs.map) ||
+                carries(GaObjs.book) ||
+                bit(GaVarBits.given_book) != 0
+        if (held) {
             mes("The chest is empty.")
             return
         }
@@ -395,8 +404,7 @@ constructor(
         if (gaState() < GhostsAhoy.REMEMBERED || done) {
             return false
         }
-        if (!carries(GaObjs.map)) return false
-        invDel(inv, GaObjs.map)
+        if (!carries(GaObjs.map) || inv.isFull()) return false
         invAdd(inv, GaObjs.book)
         mesbox("You unearth the Book of Haricanto.")
         return true
@@ -414,6 +422,7 @@ constructor(
         const val UNLIMITED_PRICE = 500
         const val LOBSTER_TICKS = 200
         const val FALL_ODDS = 5
+        const val ROCK_REACH = 2
 
         val COLOURS = listOf("white", "red", "blue", "yellow", "orange", "green", "purple")
 

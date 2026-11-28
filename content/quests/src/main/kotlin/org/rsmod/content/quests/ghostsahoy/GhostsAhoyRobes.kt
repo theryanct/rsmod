@@ -443,13 +443,8 @@ constructor(
                     setGaState(GhostsAhoy.MATERIALS_GIVEN)
                     return@with
                 }
-                if (invTotal(worn, GaObjs.ghostspeak) > 0) {
-                    invDel(worn, GaObjs.ghostspeak)
-                    invAdd(worn, GaObjs.ghostspeak_enchanted)
-                } else {
-                    invDel(inv, GaObjs.ghostspeak)
-                    invAdd(inv, GaObjs.ghostspeak_enchanted)
-                }
+                val where = if (invTotal(worn, GaObjs.ghostspeak) > 0) worn else inv
+                invReplace(where, GaObjs.ghostspeak, 1, GaObjs.ghostspeak_enchanted)
                 setGaState(GhostsAhoy.ENCHANTED)
             }
     }

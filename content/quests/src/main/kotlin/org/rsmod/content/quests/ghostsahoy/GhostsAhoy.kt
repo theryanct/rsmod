@@ -183,8 +183,7 @@ constructor(
         }
         runQuestSection(npc, dialogue, "Commanding Necrovarus to stand down", hooks, speakers)
         if (!freed || !enchanted) return
-        invDel(worn, GaObjs.ghostspeak_enchanted)
-        invAdd(worn, GaObjs.ghostspeak)
+        invReplace(worn, GaObjs.ghostspeak_enchanted, 1, GaObjs.ghostspeak)
         setGaState(COMMANDED)
     }
 
@@ -299,7 +298,11 @@ constructor(
                     )
             )
         runQuestSection(npc, dialogue, "Talking to the Old crone again", hooks, speakers)
-        if (boat || bit(GaVarBits.toyboat) == 0) giveToyBoat()
+        val lostBoat =
+            bit(GaVarBits.toyboat) == BOAT_GIVEN &&
+                !carries(GaObjs.toy_boat) &&
+                !carries(GaObjs.toy_boat_repaired)
+        if (boat || lostBoat || bit(GaVarBits.toyboat) == 0) giveToyBoat()
     }
 
     /** The crone's son's toy boat (her son is the shipwreck's old cabin boy). */
