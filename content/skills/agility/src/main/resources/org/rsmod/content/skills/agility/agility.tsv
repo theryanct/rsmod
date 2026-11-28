@@ -26,4 +26,42 @@ obstacle	draynor	5	rooftops_draynor_wallscramble	1	10	walk	agility_shortcut_wall
 obstacle	draynor	6	rooftops_draynor_leapdown	1	4	walk	agility_shortcut_wall_jump	2	3096,3256,3	-
 obstacle	draynor	7	rooftops_draynor_crate	1	79	climb	agility_shortcut_wall_jumpdown	2	3103,3261,0	-
 
+course	alkharid	Al Kharid Rooftop Course	0	5	3274,3187,3
+obstacle	alkharid	1	rooftops_kharid_wallclimb	20	12	climb	human_reachforladder	2	3273,3192,3	-
+obstacle	alkharid	2	rooftops_kharid_tightrope_1	20	36	walk	human_walk_logbalance	9	3272,3172,3	-
+obstacle	alkharid	3	rooftops_kharid_rope_swing	20	48	walk	human_ropeswing_long	4	3284,3164,3	-
+obstacle	alkharid	4	rooftops_kharid_slide_side	20	48	climb	zipline_slide	7	3315,3163,1	-
+obstacle	alkharid	5	rooftops_kharid_bamboo_tree_top	20	12	climb	human_ropeswing_long	4	3317,3174,2	-
+obstacle	alkharid	6	rooftops_kharid_wallclimb_2	20	6	climb	human_reachforladder	2	3316,3180,3	-
+obstacle	alkharid	7	rooftops_kharid_tightrope_4	20	18	walk	human_walk_logbalance	11	3302,3186,3	-
+obstacle	alkharid	8	rooftops_kharid_leapdown	20	36	climb	agility_shortcut_wall_jumpdown	2	3299,3194,0	-
+
+course	varrock	Varrock Rooftop Course	0	4	3205,3417,3
+obstacle	varrock	1	rooftops_varrock_wallclimb	30	13.5	climb	human_reachforladder	2	3219,3414,3	-
+obstacle	varrock	2	rooftops_varrock_clothesline	30	23	walk	human_walk_logbalance	5	3208,3414,3	-
+obstacle	varrock	3	rooftops_varrock_leaptoruins	30	19	climb	agility_shortcut_wall_jump	2	3197,3416,1	-
+obstacle	varrock	4	rooftops_varrock_wallswing	30	28	climb	agility_shortcut_wall_jump2	3	3192,3406,3	-
+obstacle	varrock	5	rooftops_varrock_wallscramble	30	10	walk	agility_shortcut_wall_jump	4	3203,3398,3	-
+obstacle	varrock	6	rooftops_varrock_leaptobalcony	30	24.5	walk	agility_shortcut_wall_jump	4	3219,3398,3	-
+obstacle	varrock	7	rooftops_varrock_leapdown	30	4.5	walk	agility_shortcut_wall_jump	2	3236,3403,3	-
+obstacle	varrock	8	rooftops_varrock_stepuproof	30	3.5	walk	agility_shortcut_wall_jump	2	3236,3410,3	-
+obstacle	varrock	9	rooftops_varrock_finish	30	143.7	climb	agility_shortcut_wall_jumpdown	2	3236,3417,0	-
+
+course	canifis	Canifis Rooftop Course	0	2	3500,3504,3
+obstacle	canifis	1	rooftops_canifis_start_tree	40	10	climb	human_reachforladder	2	3506,3492,3	-
+obstacle	canifis	2	rooftops_canifis_jump	40	8	walk	agility_shortcut_wall_jump	3	3502,3504,3	-
+obstacle	canifis	3	rooftops_canifis_jump_2	40	8	walk	agility_shortcut_wall_jump	3	3492,3504,3	-
+obstacle	canifis	4	rooftops_canifis_jump_5	40	10	walk	agility_shortcut_wall_jump	3	3479,3499,3	-
+obstacle	canifis	5	rooftops_canifis_jump_3	40	8	walk	agility_shortcut_wall_jump	3	3478,3486,3	-
+obstacle	canifis	6	rooftops_canifis_polevault	40	10	walk	agility_shortcut_wall_jump2	5	3489,3476,3	-
+obstacle	canifis	7	rooftops_canifis_jump_4	40	11	walk	agility_shortcut_wall_jump	3	3510,3476,3	-
+obstacle	canifis	8	rooftops_canifis_leapdown	40	175	climb	agility_shortcut_wall_jumpdown	2	3510,3485,0	-
+
 shortcut	fai_falador_castle_crumble_mid	5	0.5	human_jump_hurdle	2	2934,3355,0	2936,3355,0
+# Low-level shortcuts (wiki "Shortcuts" levels/xp; sides from the cache loc positions/orientation).
+shortcut	lumbridge_sc_fencejump	13	0	human_jump_hurdle	2	3240,3334,0	3240,3335,0
+shortcut	yanille_castlewall_sc,yanille_castlehole_sc	16	0	agilty_shortcut_tunnel_walk	4	2575,3107,0	2575,3112,0
+shortcut	monkeybars_end1	15	20	human_monkeybars_walk	7	3120,9963,0	3120,9970,0
+shortcut	mine_log_balance1	20	8.5	human_walk_logbalance	5	2598,3477,0	2603,3477,0
+shortcut	varrock_sc_tunnel_west,varrock_sc_tunnel_east	21	0	agilty_shortcut_tunnel_walk	5	3137,3516,0	3143,3514,0
+shortcut	falador_sc_castlewall_south,falador_sc_castlewall_north	26	0	agilty_shortcut_tunnel_walk	4	2948,3309,0	2948,3313,0
