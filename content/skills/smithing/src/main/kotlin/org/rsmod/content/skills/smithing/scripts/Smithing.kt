@@ -65,6 +65,10 @@ constructor(
             if (!type.name.contains("anvil", ignoreCase = true)) {
                 continue
             }
+            // Barbarian anvils only make spears and hastae (BarbarianSmithing).
+            if (type.name.equals(BarbarianSmithing.ANVIL_NAME, ignoreCase = true)) {
+                continue
+            }
             val slot = type.op.indexOfFirst { it.equals("Smith", ignoreCase = true) }
             if (slot == -1) {
                 continue

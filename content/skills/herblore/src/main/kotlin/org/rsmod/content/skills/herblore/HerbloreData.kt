@@ -180,7 +180,13 @@ internal object HerbloreData {
         data class Multi(val effects: List<Effect>) : Effect()
     }
 
-    class Drink(val name: String, val doses: List<String>, val effect: Effect)
+    class Drink(
+        val name: String,
+        val doses: List<String>,
+        val effect: Effect,
+        /** Chat message on each sip (default "You drink some of your <name>."). */
+        val message: String? = null,
+    )
 
     private fun doses(suffix: String) = (4 downTo 1).map { "${it}dose$suffix" }
 
@@ -189,7 +195,7 @@ internal object HerbloreData {
 
     private val restoreStats = listOf("attack", "strength", "defence", "ranged", "magic")
 
-    val drinks: List<Drink> =
+    private val potionDrinks: List<Drink> =
         listOf(
             Drink("attack potion", doses("1attack"), Effect.Boost(listOf("attack"), 3, 10)),
             Drink(
@@ -279,6 +285,153 @@ internal object HerbloreData {
             Drink("super antifire potion", doses("3antidragon"), Effect.Antifire(true, 3)),
             Drink("extended super antifire", doses("4antidragon"), Effect.Antifire(true, 6)),
         )
+
+    /**
+     * Barbarian mixes (OSRS Wiki Barbarian Training, Herblore table): a two-dose [potion] plus
+     * roe or caviar ([caviarOnly]: caviar only) makes [mix2]. Each dose has the potion's effect
+     * ([effect], or the potion's own drink) and heals [heal] Hitpoints. Needs Otto's herblore
+     * lesson: the attack mix once taught, every mix once he has taken the attack mix.
+     */
+    class BarbarianMix(
+        val name: String,
+        val potion: String,
+        val mix2: String,
+        val mix1: String,
+        val level: Int,
+        val xp: Double,
+        val heal: Int,
+        val caviarOnly: Boolean,
+        val effect: Effect? = null,
+    )
+
+    private fun mix(
+        name: String,
+        potion: String,
+        suffix: String,
+        level: Int,
+        xp: Double,
+        heal: Int,
+        caviarOnly: Boolean = true,
+        effect: Effect? = null,
+    ) =
+        BarbarianMix(
+            name,
+            potion,
+            "brutal_2dose$suffix",
+            "brutal_1dose$suffix",
+            level,
+            xp,
+            heal,
+            caviarOnly,
+            effect,
+        )
+
+    val mixes: List<BarbarianMix> =
+        listOf(
+            mix("attack mix", "2dose1attack", "1attack", 4, 8.0, 3, caviarOnly = false),
+            mix("antipoison mix", "2doseantipoison", "antipoison", 6, 12.0, 3, caviarOnly = false),
+            // Relicym's balm cures disease, which this server has no system for: heal only.
+            BarbarianMix(
+                "relicym's mix",
+                "relicyms_balm2",
+                "brutal_relicyms_balm2",
+                "brutal_relicyms_balm1",
+                9,
+                14.0,
+                3,
+                caviarOnly = false,
+                effect = Effect.Multi(emptyList()),
+            ),
+            mix("strength mix", "2dose1strength", "1strength", 14, 17.0, 3, caviarOnly = false),
+            mix("restore mix", "2dosestatrestore", "statrestore", 24, 21.0, 3, caviarOnly = false),
+            mix("energy mix", "2dose1energy", "1energy", 29, 23.0, 3),
+            mix("defence mix", "2dose1defense", "1defense", 33, 25.0, 6),
+            mix("agility mix", "2dose1agility", "1agility", 37, 27.0, 6),
+            mix("combat mix", "2dosecombat", "combat", 40, 28.0, 3),
+            mix("prayer mix", "2doseprayerrestore", "prayerrestore", 42, 29.0, 6),
+            mix("superattack mix", "2dose2attack", "2attack", 47, 33.0, 6),
+            mix("anti-poison supermix", "2dose2antipoison", "2antipoison", 51, 35.0, 6),
+            mix("fishing mix", "2dosefisherspotion", "fisherspotion", 53, 38.0, 6),
+            mix("super energy mix", "2dose2energy", "2energy", 56, 39.0, 6),
+            // Wiki Hunting mix: Hunter +3.
+            mix(
+                "hunting mix",
+                "2dosehunting",
+                "1hunting",
+                58,
+                40.0,
+                6,
+                effect = Effect.Boost(listOf("hunter"), 3, 0),
+            ),
+            mix("super str. mix", "2dose2strength", "2strength", 59, 42.0, 6),
+            // Wiki Magic essence mix: Magic +3.
+            mix(
+                "magic essence mix",
+                "2dosemagicess",
+                "magicess",
+                61,
+                43.0,
+                6,
+                effect = Effect.Boost(listOf("magic"), 3, 0),
+            ),
+            mix("super restore mix", "2dose2restore", "2restore", 67, 48.0, 6),
+            mix("super def. mix", "2dose2defense", "2defense", 71, 50.0, 6),
+            // Wiki Antidote+ mix: cures poison, 9 minutes' immunity.
+            BarbarianMix(
+                "antidote+ mix",
+                "antidote+2",
+                "brutal_antidote+2",
+                "brutal_antidote+1",
+                74,
+                52.0,
+                6,
+                caviarOnly = true,
+                effect = Effect.Cure(immunityTicks = 900),
+            ),
+            mix("antifire mix", "2dose1antidragon", "1antidragon", 75, 53.0, 6),
+            mix("ranging mix", "2doserangerspotion", "rangerspotion", 80, 54.0, 6),
+            mix("magic mix", "2dose1magic", "1magic", 83, 57.0, 6),
+            // Wiki Zamorak mix: no direct heal (it deals floor((HP-1)/8) then heals 6); the brew's
+            // own damage is left out here, so the mix gives the brew effect only.
+            mix("zamorak mix", "2dosepotionofzamorak", "potionofzamorak", 85, 58.0, 0),
+            mix("stamina mix", "2dosestamina", "stamina", 86, 60.0, 6),
+            mix("extended antifire mix", "2dose2antidragon", "2antidragon", 91, 61.0, 6),
+            // Wiki Ancient mix: Magic +2 +5%, Prayer +2 +10%, Attack/Strength/Defence -2 -10%.
+            mix(
+                "ancient mix",
+                "2doseancientbrew",
+                "ancientbrew",
+                92,
+                63.0,
+                6,
+                effect =
+                    Effect.Multi(
+                        listOf(
+                            Effect.Boost(listOf("magic"), 2, 5),
+                            Effect.Restore(listOf("prayer"), 2, 10),
+                            Effect.Drain(listOf("attack", "strength", "defence"), 2, 10),
+                        )
+                    ),
+            ),
+            mix("super antifire mix", "2dose3antidragon", "3antidragon", 98, 70.0, 6),
+            mix("extended super antifire mix", "2dose4antidragon", "4antidragon", 99, 78.0, 6),
+        )
+
+    private fun mixDrink(mix: BarbarianMix): Drink {
+        val base =
+            mix.effect
+                ?: potionDrinks.firstOrNull { mix.potion in it.doses }?.effect
+                ?: error("Barbarian mix ${mix.name}: no drink for ${mix.potion}")
+        val heal = Effect.Restore(listOf("hitpoints"), mix.heal, 0)
+        val effect = if (mix.heal > 0) Effect.Multi(listOf(base, heal)) else base
+        // Wiki Attack mix: "You drink the lumpy potion".
+        return Drink(mix.name, listOf(mix.mix2, mix.mix1), effect, "You drink the lumpy potion.")
+    }
+
+    val drinks: List<Drink> = potionDrinks + mixes.map { mixDrink(it) }
+
+    const val ROE = "brut_roe"
+    const val CAVIAR = "brut_caviar"
 
     /** Water sources (by loc name) that fill vials. */
     val waterSources: Set<String> = setOf("sink", "fountain", "well", "water pump", "waterpump")
