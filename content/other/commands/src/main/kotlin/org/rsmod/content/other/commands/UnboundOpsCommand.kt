@@ -75,6 +75,15 @@ constructor(
     }
 
     private fun dump(cheat: Cheat) {
+        cheat.player.mes(dumpAll(cheat.player))
+    }
+
+    /**
+     * Writes both TSVs and returns the summary line. [player] adds the interfaces open for that
+     * player to the button TSV; without one (e.g. a devops trigger file) only the logged clicks
+     * are listed.
+     */
+    fun dumpAll(player: Player? = null): String {
         val rows = LinkedHashMap<Long, Row>()
         fun add(kind: String, id: Int, name: String, op: Int, label: String, coords: String) {
             val key = (if (kind == "npc") 1L shl 40 else 0L) or (id.toLong() shl 3) or op.toLong()
@@ -130,13 +139,13 @@ constructor(
         val summary =
             "unboundops: ${sorted.size} unhandled ops (${sorted.count { it.kind == "loc" }} loc, " +
                 "${sorted.count { it.kind == "npc" }} npc) across $locs locs and $npcs npcs -> $out"
-        logger.info { summary }
-        cheat.player.mes(summary)
-        val buttons = dumpButtons(cheat.player)
-        cheat.player.mes("unboundops: $buttons interface button rows -> .data/logs/unbound-ifbuttons.tsv")
+        val buttons = dumpButtons(player)
+        val all = "$summary; $buttons interface button rows -> .data/logs/unbound-ifbuttons.tsv"
+        logger.info { all }
+        return all
     }
 
-    private fun dumpButtons(player: Player): Int {
+    private fun dumpButtons(player: Player?): Int {
         val clicked = HashMap<String, Int>()
         val lastSeen = HashMap<String, String>()
         val logs = Path.of(".data", "logs")
@@ -165,7 +174,8 @@ constructor(
                 rows++
             }
             val open =
-                player.ui.overlays.values.map { it to true } + player.ui.modals.values.map { it to false }
+                if (player == null) emptyList()
+                else player.ui.overlays.values.map { it to true } + player.ui.modals.values.map { it to false }
             for ((interfaceId, overlay) in open.distinct()) {
                 for (comp in componentsByInterface[interfaceId].orEmpty()) {
                     val handled =
