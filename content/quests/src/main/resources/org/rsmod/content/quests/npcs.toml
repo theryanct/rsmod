@@ -195,3 +195,25 @@ coords = '0_46_54_58_35'
 [[spawn]]
 npc = 'fai_varrock_bluemoon_chef'
 coords = '0_50_53_30_8'
+
+# Misthalin Mystery: Abigale + Hewey (Lumbridge Swamp), Mandy outside the manor, the showdown
+# mirror and Abigale (multinpcs on mistmyst_progress). Approximate.
+[[spawn]]
+npc = 'mistmyst_abigale'
+coords = '0_50_49_37_19'
+
+[[spawn]]
+npc = 'mistmyst_hewey'
+coords = '0_50_49_37_17'
+
+[[spawn]]
+npc = 'mistmyst_mandy_post'
+coords = '0_25_75_36_21'
+
+[[spawn]]
+npc = 'mistmyst_mirror'
+coords = '0_25_75_23_30'
+
+[[spawn]]
+npc = 'mistmyst_abigale_cutscene_multi'
+coords = '0_25_75_21_31'
