@@ -11,6 +11,18 @@ internal object BoneXp {
 
     fun buryXp(type: UnpackedObjType): Double? = bury[type.name.lowercase()]
 
+    fun scatterXp(type: UnpackedObjType): Double? = scatter[type.name.lowercase()]
+
+    /** Prayer xp per demonic ash when scattered (OSRS Wiki, Nov 2026). Not offerable at altars. */
+    private val scatter: Map<String, Double> =
+        mapOf(
+            "fiendish ashes" to 10.0,
+            "vile ashes" to 25.0,
+            "malicious ashes" to 65.0,
+            "abyssal ashes" to 85.0,
+            "infernal ashes" to 110.0,
+        )
+
     /** Prayer xp per bone, keyed by cache display name (OSRS Wiki, Nov 2026). */
     private val bury: Map<String, Double> =
         mapOf(

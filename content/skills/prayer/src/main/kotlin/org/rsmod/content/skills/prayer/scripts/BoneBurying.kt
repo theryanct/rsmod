@@ -18,7 +18,7 @@ import org.rsmod.game.type.synth.SynthType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-// Out of scope for now: altars (gilded/chaos), Ectofuntus, bonecrusher, blessed bones/ashes.
+// Bury (bones) and Scatter (demonic ashes). Out of scope: Ectofuntus, bonecrusher, ash sanctifier.
 class BoneBurying
 @Inject
 constructor(private val objTypes: ObjTypeList, private val mapClock: MapClock) :
@@ -28,18 +28,28 @@ constructor(private val objTypes: ObjTypeList, private val mapClock: MapClock) :
         // op slot is read from the cache rather than assumed, and noted (cert) variants have no
         // held ops so they are skipped naturally.
         for (type in objTypes.values) {
-            val xp = BoneXp.buryXp(type) ?: continue
-            for ((index, text) in type.iop.withIndex()) {
-                if (!text.equals("Bury", ignoreCase = true)) {
-                    continue
-                }
-                when (index + 1) {
-                    1 -> onOpHeld1(type) { bury(it.inventory, it.slot, it.type, xp) }
-                    2 -> onOpHeld2(type) { bury(it.inventory, it.slot, it.type, xp) }
-                    3 -> onOpHeld3(type) { bury(it.inventory, it.slot, it.type, xp) }
-                    4 -> onOpHeld4(type) { bury(it.inventory, it.slot, it.type, xp) }
-                    5 -> onOpHeld5(type) { bury(it.inventory, it.slot, it.type, xp) }
-                }
+            BoneXp.buryXp(type)?.let { xp -> bindHeldOp(type, "Bury") { inv, slot -> bury(inv, slot, type, xp) } }
+            BoneXp.scatterXp(type)?.let { xp ->
+                bindHeldOp(type, "Scatter") { inv, slot -> scatter(inv, slot, type, xp) }
+            }
+        }
+    }
+
+    private fun ScriptContext.bindHeldOp(
+        type: UnpackedObjType,
+        label: String,
+        action: ProtectedAccess.(Inventory, Int) -> Unit,
+    ) {
+        for ((index, text) in type.iop.withIndex()) {
+            if (!text.equals(label, ignoreCase = true)) {
+                continue
+            }
+            when (index + 1) {
+                1 -> onOpHeld1(type) { action(it.inventory, it.slot) }
+                2 -> onOpHeld2(type) { action(it.inventory, it.slot) }
+                3 -> onOpHeld3(type) { action(it.inventory, it.slot) }
+                4 -> onOpHeld4(type) { action(it.inventory, it.slot) }
+                5 -> onOpHeld5(type) { action(it.inventory, it.slot) }
             }
         }
     }
@@ -67,6 +77,28 @@ constructor(private val objTypes: ObjTypeList, private val mapClock: MapClock) :
         // Base Wiki xp; the server-wide prayer xp multiplier is applied in `statAdvance`.
         statAdvance(stats.prayer, xp)
         mes("You bury the bones.")
+    }
+
+    private fun ProtectedAccess.scatter(
+        inventory: Inventory,
+        slot: Int,
+        type: UnpackedObjType,
+        xp: Double,
+    ) {
+        // Same 2-tick cadence as burying.
+        if (actionDelay > mapClock) {
+            return
+        }
+        val obj = inventory[slot] ?: return
+        if (obj.id != type.id) {
+            return
+        }
+        actionDelay = mapClock + 2
+
+        invDel(inventory, type, count = 1, slot = slot)
+        anim(prayer_seqs.farming_ingredient_sprinkle)
+        statAdvance(stats.prayer, xp)
+        mes("You scatter the ashes.")
     }
 
     private companion object {
