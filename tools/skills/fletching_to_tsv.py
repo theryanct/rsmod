@@ -161,7 +161,10 @@ MANUAL += [("combine", "baw_wasp_dart", 10, 1, 5, 1, "human_fletching_add_dart_f
 MANUAL += [("combine", "baw_killer_wasp_dart", 10, 15, 25, 1, "human_fletching_add_dart_feathers_killer_wasp",
             [("baw_killer_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
 for m in MANUAL:
-    if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
+    key = (m[0], m[1], m[7][0][0], m[7][-1][0])
+    if key not in seen:
+        seen.add(key)
+        rows.append(m)
 
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki recipe bucket by tools/skills/fletching_to_tsv.py - do not edit.\n")
