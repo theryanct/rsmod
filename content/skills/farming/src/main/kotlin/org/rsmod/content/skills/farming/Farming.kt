@@ -215,7 +215,6 @@ constructor(
             "chop-down" -> chop(loc, patch, op)
             "clear" -> clear(patch)
             "inspect" -> inspect(patch)
-            "travel" -> mes("The spirit tree is not ready to carry travellers yet.")
             else -> if (label.startsWith("pick")) harvest(loc, patch, op)
         }
     }
@@ -1016,7 +1015,6 @@ constructor(
                 "check-health",
                 "chop down",
                 "chop-down",
-                "travel",
                 "close",
                 "open",
                 "take",
