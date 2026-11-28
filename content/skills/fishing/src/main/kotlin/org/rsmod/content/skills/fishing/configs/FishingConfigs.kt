@@ -21,6 +21,20 @@ internal object FishingObjs : ObjReferences() {
     val fishing_bait = find("fishing_bait")
     val feather = find("feather")
 
+    // Barbarian fishing (rod + feathers / fish offcuts / roe / caviar as bait).
+    val barbarian_rod = find("brut_fishing_rod")
+    val fish_offcuts = find("brut_fish_cuts")
+    val roe = find("brut_roe")
+    val caviar = find("brut_caviar")
+    val leaping_trout = find("brut_spawning_trout")
+    val leaping_salmon = find("brut_spawning_salmon")
+    val leaping_sturgeon = find("brut_sturgeon")
+
+    // Karambwan fishing (a vessel loaded with karambwanji; raw karambwanji is the bait).
+    val karambwan_vessel_loaded = find("tbwt_karambwan_vessel_loaded_with_karambwanji")
+    val raw_karambwanji = find("tbwt_raw_karambwanji")
+    val raw_karambwan = find("tbwt_raw_karambwan")
+
     // Catches.
     val raw_shrimps = find("raw_shrimp")
     val raw_anchovies = find("raw_anchovies")

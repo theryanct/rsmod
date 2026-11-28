@@ -24,6 +24,9 @@ import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.ui.Component
 import org.rsmod.game.ui.UserInterface
 
+private val CLIENT_HANDLED = listOf("settings:searchbar_image")
+private val STONE = Regex("""^toplevel[a-z_]*:stone\d+$""")
+
 class If3ButtonHandler
 @Inject
 constructor(
@@ -83,7 +86,7 @@ constructor(
             val event =
                 IfOverlayButton(player, componentType, comsub, objTypes[message.obj], buttonOp)
             logger.debug { "[Overlay] If3Button: $message (event=$event)" }
-            if (!eventBus.publish(event)) {
+            if (!eventBus.publish(event) && !componentType.isClientHandled()) {
                 GameplayLog.unhandled(player) {
                     "overlay-button=${componentType.internalName} sub=$comsub op=${buttonOp.slot}"
                 }
@@ -133,6 +136,15 @@ constructor(
         }
         player.resumeActiveCoroutine(ResumePauseButtonInput(component, sub))
         return true
+    }
+
+    /**
+     * Overlay buttons the client handles itself (side-panel tab stones, the All Settings search
+     * box): the transmit is informational, so an unbound one is not missing content.
+     */
+    private fun UnpackedComponentType.isClientHandled(): Boolean {
+        val name = internalName ?: return false
+        return CLIENT_HANDLED.any { name.startsWith(it) } || STONE.matches(name)
     }
 
     private fun IfButtonOp.toIfEvent(): IfEvent =
