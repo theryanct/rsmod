@@ -84,6 +84,10 @@ import org.rsmod.api.player.stat.statRestore
 import org.rsmod.api.player.stat.statRestoreAll
 import org.rsmod.api.player.stat.statSub
 import org.rsmod.api.player.stopInvTransmit
+import org.rsmod.api.player.ui.SKILLMULTI_MAX_QUANTITY
+import org.rsmod.api.player.ui.SkillMultiChoice
+import org.rsmod.api.player.ui.SkillMultiComponents
+import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.ifChatNpcSpecific
 import org.rsmod.api.player.ui.ifChatPlayer
 import org.rsmod.api.player.ui.ifChoice
@@ -93,8 +97,8 @@ import org.rsmod.api.player.ui.ifConfirmDestroy
 import org.rsmod.api.player.ui.ifConfirmOverlay
 import org.rsmod.api.player.ui.ifConfirmOverlayClose
 import org.rsmod.api.player.ui.ifDoubleobjbox
-import org.rsmod.api.player.ui.ifMenu
 import org.rsmod.api.player.ui.ifLevelUp
+import org.rsmod.api.player.ui.ifMenu
 import org.rsmod.api.player.ui.ifMesbox
 import org.rsmod.api.player.ui.ifObjbox
 import org.rsmod.api.player.ui.ifOpenFullOverlay
@@ -111,6 +115,7 @@ import org.rsmod.api.player.ui.ifSetNpcHead
 import org.rsmod.api.player.ui.ifSetObj
 import org.rsmod.api.player.ui.ifSetPlayerHead
 import org.rsmod.api.player.ui.ifSetText
+import org.rsmod.api.player.ui.ifSkillMulti
 import org.rsmod.api.player.vars.VarPlayerIntMapDelegate
 import org.rsmod.api.player.vars.resyncVar
 import org.rsmod.api.player.vars.setActiveMoveSpeed
@@ -2059,6 +2064,42 @@ public class ProtectedAccess(
         val modal = player.ui.getModalOrNull(components.chatbox_chatmodal)
         val input = coroutine.pause(ResumePauseButtonInput::class)
         resumePauseButtonWithProtectedAccess(input, modal, components.levelup_continue)
+    }
+
+    /**
+     * Opens the OSRS skillmulti ("What would you like to make?") chatbox and suspends until the
+     * player clicks a product. The quantity is picked client-side with the 1/5/10/X/All buttons
+     * (X is the client's numeric box) and arrives with the click.
+     *
+     * @param verb a [org.rsmod.api.player.ui.SkillMultiVerb] value (left-click op text).
+     * @param maxQuantity the most the player can make right now (caps the All button, 1-28).
+     * @return the chosen product and quantity.
+     */
+    public suspend fun skillMulti(
+        verb: Int,
+        title: String,
+        products: List<SkillMultiProduct>,
+        maxQuantity: Int,
+        suggestedQuantity: Int = maxQuantity,
+    ): SkillMultiChoice {
+        val slots = SkillMultiComponents.items
+        require(products.isNotEmpty() && products.size <= slots.size) {
+            "skillMulti takes 1-${slots.size} products (got ${products.size})"
+        }
+        val max = maxQuantity.coerceIn(1, SKILLMULTI_MAX_QUANTITY)
+        val suggested = suggestedQuantity.coerceIn(1, max)
+        player.ifSkillMulti(verb, title, products, max, suggested, context.eventBus)
+        val modal = player.ui.getModalOrNull(components.chatbox_chatmodal)
+        val input = coroutine.pause(ResumePauseButtonInput::class)
+        val index = slots.indexOfFirst { it.isType(input.component) }
+        val choice =
+            if (index in products.indices) {
+                SkillMultiChoice(index, products[index], input.subcomponent.coerceIn(1, max))
+            } else {
+                null
+            }
+        resumeWithModalProtectedAccess(Unit, modal, components.chatbox_chatmodal)
+        return choice ?: throw ProtectedAccessLostException()
     }
 
     private suspend fun mesboxPage(
