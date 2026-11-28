@@ -22,7 +22,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   (saving them); once nobody is left the process exits so the server loop rebuilds/restarts.
  *   `now` = save everyone and exit right away (1 cycle). `0` cancels a running countdown.
  * - `rsmod-server.cmd` (one word): allow-listed, read-only dumps only. `status` writes
- *   `.data/logs/server-status.txt`.
+ *   `.data/logs/server-status.txt`; `unboundops` writes the unbound-ops/ifbuttons TSVs.
  * Each file is deleted once read.
  */
 class ServerControlFiles
@@ -31,6 +31,7 @@ constructor(
     private val update: GameUpdate,
     private val playerList: PlayerList,
     private val npcList: NpcList,
+    private val unboundOps: UnboundOpsCommand,
 ) : PluginScript() {
     private val logger = InlineLogger()
     private val dir: Path =
@@ -85,6 +86,7 @@ constructor(
     private fun handleCommand(body: String) {
         when (val cmd = body.trim().lowercase()) {
             "status" -> writeStatus()
+            "unboundops" -> logger.info { "unboundops via $CMD_FILE: ${unboundOps.dumpAll()}" }
             else -> logger.warn { "Ignoring $CMD_FILE command not on the allow-list: '$cmd'." }
         }
     }
