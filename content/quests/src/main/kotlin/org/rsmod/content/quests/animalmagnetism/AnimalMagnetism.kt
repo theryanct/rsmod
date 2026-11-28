@@ -5,10 +5,13 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.builders.varp.VarpBuilder
+import org.rsmod.api.type.refs.comp.ComponentReferences
+import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
@@ -50,9 +53,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   Ranged), 1 QP.
  *
  * Malcolm sells chickens for ecto-tokens (Ectofuntus, Prayer module); Ava's devices are her
- * generic shop. Not here: the research-notes translation puzzle (reading the notes translates
- * them) and the facing-north check in the mine. Turael's Talk-to is the Slayer module's, so the
- * blessed-axe swap starts from using a mithril axe or holy symbol on him.
+ * generic shop; the research notes are translated on their orb interface. Not here: the
+ * facing-north check in the mine (the server doesn't track facing). Turael's Talk-to is the Slayer
+ * module's, so the blessed-axe swap starts from using a mithril axe or holy symbol on him.
  */
 class AnimalMagnetism
 @Inject
@@ -84,6 +87,10 @@ constructor(
         onOpHeldU(AmObjs.hammer, AmObjs.selected_iron) { hammerIron() }
         onNpcOpLabel(npcTypes, AmNpcs.tree_choppable, "Chop") { chopTree() }
         onHeldOpLabel(objTypes, AmObjs.garbled_notes, "Translate") { translate() }
+        for (i in 0 until ORBS) {
+            onIfModalButton(AmComponents.orbs_on[i]) { toggleOrb(i) }
+            onIfModalButton(AmComponents.orbs_off[i]) { toggleOrb(i) }
+        }
         onOpHeldU(AmObjs.pattern, AmObjs.hard_leather) { makeContainer() }
         onOpHeldU(AmObjs.pattern, AmObjs.buttons) { makeContainer() }
         onOpHeldU(AmObjs.buttons, AmObjs.hard_leather) {
@@ -443,11 +450,54 @@ constructor(
 
     /* The notes and the container */
 
+    /**
+     * The notes interface (anma_rgb): nine orbs, all lit to start; clicking one toggles it. The
+     * notes read clearly once only the 2nd, 5th and 9th are lit (OSRS Wiki quick guide); until then
+     * the page shows one of six garbled symbols. Orb state is bits 1-9 of anma_progress (set =
+     * unlit).
+     */
     private suspend fun ProtectedAccess.translate() {
         runQuestSection(null, dialogue, "Reading the research notes")
+        setOrbs(0)
+        ifOpenMainModal(AmInterfaces.notes)
+        refreshNotes()
+    }
+
+    private fun ProtectedAccess.orbs(): Int = (player.vars[AmVarps.progress] shr 1) and ORB_MASK
+
+    private fun ProtectedAccess.setOrbs(unlit: Int) {
+        val flags = (player.vars[AmVarps.progress] and ORB_MASK.shl(1).inv()) or (unlit shl 1)
+        VarPlayerIntMapSetter.set(player, AmVarps.progress, flags)
+    }
+
+    private suspend fun ProtectedAccess.toggleOrb(index: Int) {
+        if (!carries(AmObjs.garbled_notes)) {
+            ifClose()
+            return
+        }
+        setOrbs(orbs() xor (1 shl index))
+        refreshNotes()
+        if (orbs() != SOLVED_UNLIT) return
+        delay(2)
+        ifClose()
         invDel(inv, AmObjs.garbled_notes)
         invAdd(inv, AmObjs.translated_notes)
         runQuestSection(null, dialogue, "Successfully translating the notes")
+    }
+
+    private fun ProtectedAccess.refreshNotes() {
+        val unlit = orbs()
+        for (i in 0 until ORBS) {
+            val lit = unlit and (1 shl i) == 0
+            ifSetHide(AmComponents.orbs_on[i], !lit)
+            ifSetHide(AmComponents.orbs_off[i], lit)
+        }
+        val solved = unlit == SOLVED_UNLIT
+        for (symbol in AmComponents.complete) ifSetHide(symbol, !solved)
+        val garbled = Integer.bitCount(unlit * GARBLE_MIX) % AmComponents.garbled.size
+        for ((i, symbol) in AmComponents.garbled.withIndex()) {
+            ifSetHide(symbol, solved || i != garbled)
+        }
     }
 
     private suspend fun ProtectedAccess.makeContainer() {
@@ -487,6 +537,12 @@ constructor(
         const val COMPLETE = 240
 
         private const val ASKED_TURAEL = 1
+        private const val ORBS = 9
+        private const val ORB_MASK = (1 shl ORBS) - 1
+
+        /** Every orb unlit except the 2nd, 5th and 9th. */
+        private const val SOLVED_UNLIT = ORB_MASK xor ((1 shl 1) or (1 shl 4) or (1 shl 8))
+        private const val GARBLE_MIX = 0x2F5
         private const val TOKEN_PRICE = 10
         private const val IRON_BARS = 5
         private const val MAGNET_XP = 50.0
@@ -597,12 +653,23 @@ internal object AmObjs : ObjReferences() {
     val accumulator = find("anma_50_reward")
 }
 
+internal object AmInterfaces : InterfaceReferences() {
+    val notes = find("anma_rgb")
+}
+
+internal object AmComponents : ComponentReferences() {
+    val orbs_on = (1..9).map { find("anma_rgb:anma_buton_${it}_on") }
+    val orbs_off = (1..9).map { find("anma_rgb:anma_buton_${it}_off") }
+    val complete = listOf("a", "b", "c").map { find("anma_rgb:anma_complete_$it") }
+    val garbled = (1..6).map { find("anma_rgb:anma_random_$it") }
+}
+
 internal object AmVarBits : VarBitReferences() {
     val main = find("anma_main")
 }
 
 internal object AmVarps : VarpReferences() {
-    /** Server varp (65783): bit 0 asked Turael about the trees. */
+    /** Server varp (65783): bit 0 asked Turael about the trees; bits 1-9 unlit note orbs. */
     val progress = find("anma_progress")
 }
 
