@@ -26,6 +26,7 @@ import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.npc.UnpackedNpcType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
+import org.rsmod.game.type.obj.Wearpos
 import org.rsmod.game.type.seq.SeqType
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -137,6 +138,13 @@ constructor(
             mes(method.missingToolMessage)
             return false
         }
+        if (method.gloves.isNotEmpty()) {
+            val worn = player.worn[Wearpos.Hands.slot]
+            if (worn == null || method.gloves.none { objTypes[it].id == worn.id }) {
+                mes("You need to wear ice gloves to handle these eels.")
+                return false
+            }
+        }
         if (method.baits.isNotEmpty() && method.baits.none { it in inv }) {
             mes(method.missingBaitMessage)
             return false
@@ -186,7 +194,8 @@ constructor(
                 statAdvance(stats.agility, catch.bonusXp * xpMods.get(player, stats.agility))
                 statAdvance(stats.strength, catch.bonusXp * xpMods.get(player, stats.strength))
             }
-            invAddGathered(objTypes[catch.fish])
+            val count = if (catch.perLevels > 0) player.fishingLvl / catch.perLevels + 1 else 1
+            invAddGathered(objTypes[catch.fish], count)
             return
         }
     }
@@ -210,6 +219,8 @@ constructor(
         /** Barbarian fishing: Agility and Strength level needed, and xp given in each. */
         val bonusLevel: Int = 0,
         val bonusXp: Double = 0.0,
+        /** Karambwanji: floor(level / [perLevels]) + 1 fish per catch (0 = always one). */
+        val perLevels: Int = 0,
     )
 
     private enum class FishingMethod(
@@ -223,6 +234,8 @@ constructor(
         val missingBaitMessage: String,
         /** Highest level first: rolled in this order. */
         val catches: List<Catch>,
+        /** Gloves one of which must be worn (infernal eels: ice gloves / smiths gloves (i)). */
+        val gloves: List<ObjType> = emptyList(),
     ) {
         SmallNet(
             verb = "net",
@@ -352,6 +365,114 @@ constructor(
                     Catch(fishing_objs.leaping_trout, 48, 50.0, 32, 192, "You catch a leaping trout.", 15, 5.0),
                 ),
         ),
+        /** Wiki Raw karambwanji: level 5, 5 xp, chart 100/250, floor(lvl/5)+1 each; shrimps cascade. */
+        Karambwanji(
+            verb = "net",
+            tools = listOf(fishing_objs.net),
+            baits = emptyList(),
+            anim = fishing_seqs.human_smallnet,
+            startMessage = "You cast out your net...",
+            missingToolMessage = "You need a small fishing net to catch these fish.",
+            missingBaitMessage = "",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_karambwanji, 5, 5.0, 100, 250, "You catch some karambwanji.", perLevels = 5),
+                    Catch(fishing_objs.raw_shrimps, 1, 10.0, 48, 256, "You catch some shrimps."),
+                ),
+        ),
+        /** Wiki Frog spawn: level 33, 75 xp, chart 16/96 (Lumbridge Swamp Caves, Dorgesh-Kaan). */
+        FrogSpawn(
+            verb = "net",
+            tools = listOf(fishing_objs.net),
+            baits = emptyList(),
+            anim = fishing_seqs.human_smallnet,
+            startMessage = "You cast out your net...",
+            missingToolMessage = "You need a small fishing net to catch frog spawn.",
+            missingBaitMessage = "",
+            catches = listOf(Catch(fishing_objs.frog_spawn, 33, 75.0, 16, 96, "You catch some frog spawn.")),
+        ),
+        /** Wiki cave + slimy eel chart (cascade): cave eel 38 / slimy eel 28, both 80 xp, 10/80. */
+        CaveEel(
+            verb = "bait",
+            tools = listOf(fishing_objs.fishing_rod),
+            baits = listOf(fishing_objs.fishing_bait),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fishing rod to catch these fish.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_cave_eel, 38, 80.0, 10, 80, "You catch a cave eel."),
+                    Catch(fishing_objs.raw_slimy_eel, 28, 80.0, 10, 80, "You catch a slimy eel."),
+                ),
+        ),
+        /** Wiki Raw slimy eel: Mort Myre gives 65 xp (chart as the caves). */
+        SlimyEel(
+            verb = "bait",
+            tools = listOf(fishing_objs.fishing_rod),
+            baits = listOf(fishing_objs.fishing_bait),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fishing rod to catch these fish.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches = listOf(Catch(fishing_objs.raw_slimy_eel, 28, 65.0, 10, 80, "You catch a slimy eel.")),
+        ),
+        /** Wiki Raw lava eel: level 53, 60 xp, oily fishing rod + bait, chart 16/96. */
+        LavaEel(
+            verb = "bait",
+            tools = listOf(fishing_objs.oily_fishing_rod),
+            baits = listOf(fishing_objs.fishing_bait),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need an oily fishing rod to fish in lava.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches = listOf(Catch(fishing_objs.raw_lava_eel, 53, 60.0, 16, 96, "You catch a lava eel.")),
+        ),
+        /** Wiki Infernal eel: level 80, 95 xp, oily rod + bait, ice gloves worn, chart 30/93. */
+        InfernalEel(
+            verb = "bait",
+            tools = listOf(fishing_objs.oily_fishing_rod),
+            baits = listOf(fishing_objs.fishing_bait),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need an oily fishing rod to fish in lava.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches = listOf(Catch(fishing_objs.infernal_eel, 80, 95.0, 30, 93, "You catch an infernal eel.")),
+            gloves = listOf(fishing_objs.ice_gloves, fishing_objs.smiths_gloves_i),
+        ),
+        /** Wiki Sacred eel: level 87, 105 xp, rod + bait, chart 0/60 (Zul-Andra). */
+        SacredEel(
+            verb = "bait",
+            tools = listOf(fishing_objs.fishing_rod),
+            baits = listOf(fishing_objs.fishing_bait),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fishing rod to catch these fish.",
+            missingBaitMessage = "You don't have any bait left.",
+            catches = listOf(Catch(fishing_objs.sacred_eel, 87, 105.0, 0, 60, "You catch a sacred eel.")),
+        ),
+        /** Wiki Raw anglerfish: level 82, 120 xp, rod + sandworms, chart 3/36. */
+        Anglerfish(
+            verb = "bait",
+            tools = listOf(fishing_objs.fishing_rod),
+            baits = listOf(fishing_objs.sandworms),
+            anim = fishing_seqs.human_fishing_casting,
+            startMessage = "You cast out your line...",
+            missingToolMessage = "You need a fishing rod to catch these fish.",
+            missingBaitMessage = "You need sandworms to catch anglerfish.",
+            catches = listOf(Catch(fishing_objs.raw_anglerfish, 82, 120.0, 3, 36, "You catch an anglerfish.")),
+        ),
+        /** Wiki Raw dark crab: level 85, 130 xp, lobster pot + dark fishing bait, chart 3/40. */
+        DarkCrab(
+            verb = "cage",
+            tools = listOf(fishing_objs.lobster_pot),
+            baits = listOf(fishing_objs.dark_fishing_bait),
+            anim = fishing_seqs.human_lobster,
+            startMessage = "You attempt to catch a dark crab.",
+            missingToolMessage = "You need a lobster pot to catch dark crabs.",
+            missingBaitMessage = "You need dark fishing bait to catch dark crabs.",
+            catches = listOf(Catch(fishing_objs.raw_dark_crab, 85, 130.0, 3, 40, "You catch a dark crab.")),
+        ),
         /** OSRS Wiki Raw karambwan: level 65, 50 xp, chart 5/160. */
         Karambwan(
             verb = "fish",
@@ -371,7 +492,30 @@ constructor(
              * Use-rod (barbarian) and Fish on karambwan spots (by internal name; other "Fish"
              * spots such as Sailing's are left alone).
              */
-            fun resolve(op: String, spotOps: Set<String>, internalName: String): FishingMethod? =
+            fun resolve(op: String, spotOps: Set<String>, internalName: String): FishingMethod? {
+                // Special spot types never fall through to the generic op mapping.
+                val special = SPECIAL_SPOTS.entries.firstOrNull { internalName.contains(it.key) }
+                if (special != null) {
+                    return special.value[op]
+                }
+                return generic(op, spotOps, internalName)
+            }
+
+            /** Internal-name fragment -> op -> method, for spots the generic mapping gets wrong. */
+            private val SPECIAL_SPOTS: Map<String, Map<String, FishingMethod>> by lazy {
+                mapOf(
+                    "karambwanji" to mapOf("net" to Karambwanji, "small net" to Karambwanji),
+                    "cavefish" to mapOf("net" to FrogSpawn, "small net" to FrogSpawn, "bait" to CaveEel),
+                    "slimey_eel" to mapOf("bait" to SlimyEel),
+                    "lavafish" to mapOf("bait" to LavaEel),
+                    "morulrek_eels" to mapOf("bait" to InfernalEel),
+                    "snakeboss_fishingspot" to mapOf("bait" to SacredEel),
+                    "piscariliusfish" to mapOf("bait" to Anglerfish),
+                    "_crabs" to mapOf("cage" to DarkCrab),
+                )
+            }
+
+            private fun generic(op: String, spotOps: Set<String>, internalName: String): FishingMethod? =
                 when (op) {
                     "use-rod" -> BarbarianRod
                     "fish" -> if (internalName.contains("karambwan")) Karambwan else null
@@ -403,14 +547,6 @@ constructor(
         /** Internal-name fragments of spot types not handled by the generic methods (rev 243 audit). */
         val UNSUPPORTED_SPOTS =
             listOf(
-                "cavefish", // Lumbridge Swamp Caves / Dorgesh-Kaan: frog spawn, slimy + cave eel
-                "slimey_eel", // Mort Myre
-                "lavafish", // lava eel
-                "snakeboss", // sacred eel
-                "piscariliusfish", // anglerfish
-                "morulrek_eels", // infernal eel
-                "_crabs", // Wilderness dark crab
-                "karambwanji",
                 "minnow",
                 "camdozaal",
                 "tempoross",
