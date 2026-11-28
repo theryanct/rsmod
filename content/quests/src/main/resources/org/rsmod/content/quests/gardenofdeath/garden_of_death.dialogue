@@ -1,0 +1,113 @@
+# Generated from the OSRS Wiki page "Transcript:The Garden of Death" by tools/quests/transcript_to_dialogue.py
+0	section	Starting the quest
+0	section	Climbing down hole before reading journal
+1	box	You have no reason to go down there.
+1	action	end
+0	section	Searching the tent
+1	select	Start The Garden of Death quest?
+1	option	Yes.
+2	box	You search the tent and find a journal. You take it.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Searching the camping equipment
+1	cond	If the players does not have secateurs in their inventory:
+2	box	You search through the camping equipment and find some secateurs. You take them.
+2	action	end
+1	cond	If the player already has secateurs in their inventory:
+2	box	You search through the camping equipment, but find nothing of interest.
+2	action	end
+0	section	The first dungeon
+0	section	Searching the stone table
+1	box	You search the table and find a stone tablet. You take it.
+1	action	end
+0	section	Reading the stone tablet
+1	box	As you finish reading, you spot a note stuck to the back of the tablet.
+1	select	Take the note?
+1	option	Yes.
+2	box	You take the note. Upon closer inspection, it looks to be written in the same handwriting as the journal you found earlier.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Searching other objects
+1	box	You search the table and find a carving. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You find a note next to the vase. You take it.
+1	box	The chest contains some hourglasses. A label on the chest reads 'Miki Toka'.
+1	action	end
+0	section	Translating words
+1	box	Enter a possible translation for a word you've found:
+1	cond	If an invalid word is entered:
+2	box	You can't think of any suitable translations for that word.
+1	cond	If a correct translation is entered, but the player hasn't seen the word yet in-game:
+2	box	You feel like that word has potential, but you can't think of any suitable translations for it at the moment.
+1	cond	If a correct translation is entered for a word the player has seen:
+2	box	You've discovered a new translation: [correct translation] &equals; [the word]
+1	select	Attempt another translation?
+1	option	Yes.
+2	action	Enter a possible translation for a word you've found:
+1	option	No.
+2	action	end
+1	box	You feel that you've translated enough words to read some of the text on the stone tablet.
+1	action	end
+0	section	The second dungeon
+0	section	Interacting with the vines
+1	box	You spot a note on the floor near the vines. You take it.
+1	box	You cut through the vines.
+0	section	Searching the stone table
+1	box	You search the table and find a stone tablet. You take it.
+1	action	end
+0	section	Searching other objects
+1	box	You search the table and find a carving. You take it.
+1	box	You find a carving next to the vase. You take it.
+1	box	The vase seems to contain some very old compost. A label on the vase reads 'Tlane Kualt'.
+1	box	The chest contains some body runes. A label on the chest reads 'Olkat'.
+1	box	You search the rubble and find a carving. You take it.
+0	section	The third dungeon
+0	section	Searching the stone table
+1	box	You search the table and find a stone tablet. You take it.
+1	action	end
+0	section	Searching other objects
+1	box	You search the chest and find a compass. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You find a carving next to the vase. You take it.
+1	box	You find a carving next to the mushroom. You take it.
+0	section	Inspecting the compass
+1	box	Rather than the usual labels, the compass points are instead marked as 'Makt', 'Uitt', 'Takam' and 'Silam'.
+0	section	Searching other objects
+1	box	You search the chest and find a compass. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You find a carving next to the vase. You take it.
+1	box	You find a carving next to the mushroom. You take it.
+0	section	The fourth dungeon
+0	section	Searching the stone table
+1	box	You search the table and find a stone tablet. You take it.
+1	action	end
+0	section	Searching other objects
+1	box	You search the table and find a stone tablet. You take it.
+1	box	You search the rubble and find a carving. You take it.
+1	box	You search the chest and find a carving. You take it.
+1	box	You search the table and find a carving. You take it.
+1	box	You find a carving next to the vase. You take it.
+1	box	The chest contains what look to be home teleport tablets. A label on the chest reads 'Antil'.
+1	box	You search the rubble and find a note. You take it.
+0	section	Reading the stone tablet after translating it
+1	cond	If the player has no inventory space:
+2	box	As you finish reading, you spot a note on the floor. However, you don't have enough room to take it.
+2	action	end
+1	cond	If the player has inventory space:
+2	box	As you finish reading, you spot a note stuck to the back of the tablet.
+2	select	Take the note?
+2	option	Yes.
+3	box	You take the note.
+3	action	end
+2	option	No.
+3	action	end
+0	section	Reading the warning note
+1	box	Although you've now discovered the fate of the Old Ones, you feel that there could be more to find. Perhaps you should continue exploring and see if you can fully translate the stone tablets.
+1	action	end
+0	section	Fully translating stone tablets
+1	box	You feel that you've translated enough words to fully understand all of the stone tablets!
+1	action	end

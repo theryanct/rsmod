@@ -1,0 +1,431 @@
+# Generated from the OSRS Wiki page "Transcript:Heroes' Quest" by tools/quests/transcript_to_dialogue.py
+0	section	The greatest heroes of the land
+0	section	Talking to Achietties or trying to enter the guild
+1	line	Achietties	Greetings. Welcome to the Heroes' Guild.
+1	line	Achietties	Only the greatest heroes of this land may gain entrance to this guild.
+1	cond	If the player's skill levels are lower than the quest requirements.
+2	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it.
+1	select	Start the Heroes' Quest?
+1	option	Yes.
+2	line	Player	I'm a hero. May I apply to join?
+2	cond	If the player doesn't have the quest requirements to start the quest:
+3	line	Achietties	You're a hero? I've never heard of you.
+3	box	You do not meet all of the requirements to start the Heroes' Quest.
+3	action	end
+2	line	Achietties	Well, you seem to meet our initial requirements, so you may now begin the tasks to earn membership in the Heroes' Guild.
+2	line	Achietties	The three items required for entrance are: An Entranan Firebird feather, a Master Thieves' armband, and a cooked Lava Eel.
+2	select	Select an option
+2	option	Any hints on getting the armband?
+3	line	Player	Any hints on getting the thieves armband?
+3	line	Achietties	I'm sure you have the relevant contacts to find out about that.
+3	action	end
+2	option	Any hints on getting the feather?
+3	line	Player	Any hints on getting the feather?
+3	line	Achietties	Not really - other than Entranan firebirds tend to live on Entrana.
+3	action	end
+2	option	Any hints on getting the eel?
+3	line	Player	Any hints on getting the eel?
+3	line	Achietties	Maybe go and find someone who knows a lot about fishing?
+3	action	end
+2	option	I'll start looking for all those things then.
+3	line	Player	I'll start looking for all those things then.
+3	line	Achietties	Good luck with that.
+3	action	end
+1	option	No.
+2	line	Player	Good for the foremost heroes of the land.
+2	line	Achietties	Yes. Yes it is.
+2	action	end
+0	section	Talking to Achietties or trying to enter the guild again without the three items
+1	line	Achietties	Greetings. Welcome to the Heroes' Guild.
+1	line	Achietties	How goes thy quest adventurer?
+1	line	Player	It's tough. I've not done it yet.
+1	line	Achietties	Remember, the items you need to enter are:
+1	line	Achietties	An Entranan Firebirds' feather, A Master Thieves armband, and a cooked Lava Eel.
+1	select	Select an option
+1	option	Any hints on getting the armband?
+2	line	Player	Any hints on getting the thieves armband?
+2	line	Achietties	I'm sure you have the relevant contacts to find out about that.
+2	action	end
+1	option	Any hints on getting the feather?
+2	line	Player	Any hints on getting the feather?
+2	line	Achietties	Not really - other than Entranan firebirds tend to live on Entrana.
+2	action	end
+1	option	Any hints on getting the eel?
+2	line	Player	Any hints on getting the eel?
+2	line	Achietties	Maybe go and find someone who knows a lot about fishing?
+2	action	end
+1	option	I'll start looking for all those things then.
+2	line	Player	I'll start looking for all those things then.
+2	line	Achietties	Good luck with that.
+2	action	end
+0	section	Master Thieves' armband
+0	section	Phoenix Gang
+0	section	Talking to Straven
+1	line	Player	How would I go about getting a Master Thief armband?
+1	line	Straven	Ooh... tricky stuff. Took me YEARS to get that rank.
+1	line	Straven	Well, what some of the more aspiring thieves in our gang are working on right now is to steal some very valuable candlesticks from Scarface Pete - the pirate leader on Karamja.
+1	line	Straven	His security is excellent, and the target very valuable so that might be enough to get you the rank.
+1	line	Straven	Go talk to our man Alfonse, the waiter in the Shrimp and Parrot.
+1	line	Straven	Use the secret word 'gherkin' to show you're one of us.
+1	action	end
+0	section	Talking to Straven again
+1	line	Player	What am I supposed to be doing again?
+1	line	Straven	You told me you wanted to get a Master thief's armband! Now pay attention.
+1	line	Straven	Some of the more aspiring thieves in our gang are working on right nowgrammar fail is to steal some very valuable candlesticks from Scarface Pete - the pirate leader on Karamja.
+1	line	Straven	His security is excellent, and the target very valuable so that might be enough to get you the rank.
+1	line	Straven	Go talk to our man Alfonse, the waiter in the Shrimp and Parrot.
+1	line	Straven	Use the secret word 'gherkin' to show you're one of us.
+1	action	end
+0	section	Trying to go into the kitchen early
+1	line	Alfonse the waiter	Hey! You can't go through there! That's private property!
+1	action	end
+0	section	Talking to Alfonse
+1	line	Alfonse the waiter	Welcome to the Shrimp and Parrot. Would you like to order, sir?
+1	select	Select an Option.
+1	option	Yes please.
+1	option	No thank you.
+1	option	Do you sell Gherkins?
+2	line	Player	Do you sell Gherkins?
+2	line	Alfonse the waiter	Hmmmm Gherkins eh? Ask Charlie the cook, round the back. He may have some 'gherkins' for you!
+2	box	Alfonse winks at you.
+2	action	end
+1	option	Where do you get your Karambwan from?
+0	section	Talking to Charlie
+1	line	Charlie the cook	Hey! What are you doing back here?
+1	select	Select an Option.
+1	option	I'm looking for a gherkin...
+2	line	Player	I'm looking for a gherkin...
+2	line	Charlie the cook	Aaaaaah... a fellow Phoenix! So, tell me compadre... what brings you to sunny Brimhaven?
+2	select	Select an option
+2	option	Sun, sand and the fresh sea air!
+3	line	Player	Sun, sand and the fresh sea air!
+3	line	Charlie the cook	Well, can't say I blame you compadre. I used to be a city boy myself, but have to admit it's a lot nicer living here nowadays. Brimhaven's certainly good for it.
+3	action	end
+2	option	I want to steal Scarface Pete's candlesticks.
+3	line	Player	I want to steal Scarface Pete's candlesticks.
+3	line	Charlie the cook	Ah yes, of course. The candlesticks. Well, I have to be honest with you compadre, we haven't made much progress in that task ourselves so far. We can however offer
+3	line	Charlie the cook	a little assistance. The setting up of this restaurant was the start of things; we have a secret door out the back of here that leads through the back of Mr Olbors' garden.
+3	line	Charlie the cook	Now, at the other side of Mr Olbors' garden, is an old side entrance to Scarface Pete's mansion. It seems to have been blocked off from the rest of the mansion some years ago
+3	line	Charlie the cook	and we can't seem to find a way through. We're positive this is the key to entering the house undetected however, and I promise to let you know if we find anything there.
+3	line	Player	Mind if I check it out for myself?
+3	line	Charlie the cook	Not at all! The more minds we have working on the problem, the quicker we get that loot!
+3	action	end
+1	option	I'm a fellow member of the Phoenix gang.
+2	line	Player	I'm a fellow member of the Phoenix gang.
+2	line	Charlie the cook	Aaaaaah... a fellow Phoenix! So, tell me compadre... what brings you to sunny Brimhaven?
+2	select	Select an option
+2	option	Sun, sand and the fresh sea air!
+3	line	Player	Sun, sand and the fresh sea air!
+3	line	Charlie the cook	Well, can't say I blame you compadre. I used to be a city boy myself, but have to admit it's a lot nicer living here nowadays. Brimhaven's certainly good for it.
+3	action	end
+2	option	I want to steal Scarface Pete's candlesticks.
+3	line	Player	I want to steal Scarface Pete's candlesticks.
+3	line	Charlie the cook	Ah yes, of course. The candlesticks. Well, I have to be honest with you compadre, we haven't made much progress in that task ourselves so far. We can however offer
+3	line	Charlie the cook	a little assistance. The setting up of this restaurant was the start of things; we have a secret door out the back of here that leads through the back of Mr Olbors' garden.
+3	line	Charlie the cook	Now, at the other side of Mr Olbors' garden, is an old side entrance to Scarface Pete's mansion. It seems to have been blocked off from the rest of the mansion some years ago
+3	line	Charlie the cook	and we can't seem to find a way through. We're positive this is the key to entering the house undetected however, and I promise to let you know if we find anything there.
+3	line	Player	Mind if I check it out for myself?
+3	line	Charlie the cook	Not at all! The more minds we have working on the problem, the quicker we get that loot!
+3	action	end
+1	option	Just exploring...
+2	line	Player	Just exploring...
+2	line	Charlie the cook	Well get out! This kitchen isn't for exploring! It's a private establishment! It's out of bounds to customers!
+2	action	end
+0	section	Attempting to enter Scarface Pete's mansion from the front
+1	line	Garv	Oi! Where do you think you're going pal?
+1	action	end
+0	section	Talking to Garv
+1	line	Garv	Hello. What do you want?
+1	select	Select an Option.
+1	option	Can I go in there?
+2	line	Player	Can I go in there?
+2	line	Garv	No. In there is private.
+2	action	end
+1	option	I want for nothing!
+2	line	Player	I want for nothing!
+2	line	Garv	You're one of a very lucky few then.
+2	action	end
+0	section	Trying to enter Grubor's house
+1	line	Grubor	Yes? What do you want?
+1	select	Select an option
+1	option	Would you like your hedges trimming?
+2	line	Player	Would you like your hedges trimming?
+2	line	Grubor	Eh? Don't be daft! We don't even HAVE any hedges!
+2	action	end
+1	option	I want to come in.
+2	line	Player	I want to come in.
+2	line	Grubor	No, go away.
+2	action	end
+1	option	Do you want to trade?
+2	line	Player	Do you want to trade?
+2	line	Grubor	No, I'm busy.
+2	action	end
+0	section	Attempting to enter Scarface Pete's mansion without using the key
+1	box	This door is locked.
+1	line	Player	This room isn't a lot of use on its own... Maybe I can get extra help from the inside somehow... I wonder if any of the other players have found a way in.
+1	action	end
+0	section	Handing in a candlestick you didn't steal
+1	line	Player	I have retrieved a candlestick!
+1	line	Straven	Well, in all honesty, you didn't actually retrieve it yourself, did you? You don't qualify as a master thief unless you actually steal it yourself, you know...
+1	action	end
+0	section	Handing in Pete's Candlestick
+1	line	Player	I have retrieved a candlestick!
+1	line	Straven	Hmmm. Not bad, not bad. Let's see it, make sure it's genuine.
+1	box	You hand Straven the candlestick.
+1	line	Player	So is this enough to get me a Master Thief armband?
+1	line	Straven	Hmm...
+1	line	Straven	I dunno...
+1	line	Straven	Aww, go on then. I suppose I'm in a generous mood today.
+1	box	Straven hands you a Master Thief armband.
+1	action	end
+0	section	Talking to Straven after the quest without having a Master Thief armband
+1	line	Player	I'm afraid I've lost my Master Thief armband.
+1	line	Straven	Lucky for you I have a spare. Don't lose it again!
+1	action	end
+0	section	Talking to Straven after the quest without having a Master Thief armband in free-to-play
+1	line	Player	I'm afraid I've lost my Master Thief armband.
+1	line	Straven	We shouldn't speak about that now!
+1	action	members
+0	section	Black Arm Gang
+0	section	Katrine's request
+1	line	Player	Hey.
+1	line	Katrine	Hey.
+1	select	Select an option
+1	option	Who are all those people in there?
+1	option	Is there any way I can get the rank of master thief?
+2	line	Player	Is there any way I can get the rank of master thief?
+2	line	Katrine	Master thief? Ain't we the ambitious one!
+2	line	Katrine	Well, you're gonna have to do something pretty amazing.
+2	line	Player	Anything you can suggest?
+2	line	Katrine	Well, some of the MOST coveted prizes in thiefdom right now are in the pirate town of Brimhaven on Karamja.
+2	line	Katrine	The pirate leader Scarface Pete has a pair of extremely valuable candlesticks.
+2	line	Katrine	His security is VERY good.
+2	line	Katrine	We, of course, have gang members in a town like Brimhaven who may be able to help you.
+2	line	Katrine	Visit our hideout in the alleyway on Palm Street. To get in you will need to tell them the secret password 'four leafed clover'.
+2	action	end
+0	section	Talking to Grubor
+1	line	Grubor	Yes? What do you want?
+1	option	Rabbit's foot.
+2	line	Grubor	Eh? What are you on about? Go away!
+2	action	end
+1	option	Four leaved clover.
+2	line	Grubor	Oh, you're one of the gang are you? Ok, hold up a second, I'll just let you in through here.
+2	box	You hear the door being unbarred from inside.
+2	action	end
+1	option	Lucky horseshoe.
+2	line	Grubor	Eh? What are you on about? Go away!
+2	action	end
+1	option	Black cat.
+2	line	Grubor	Eh? What are you on about? Go away!
+2	action	end
+0	section	Talking to Grubor again
+1	line	Player	Hi.
+1	line	Grubor	Hi. I'm a little busy right now.
+1	action	end
+0	section	Trobert's plan
+1	line	Trobert	Hi. Welcome to our Brimhaven headquarters. I'm Trobert and I'm in charge here.
+1	select	Select an option
+1	option	So can you help me get Scarface Pete's candlesticks?
+2	line	Player	So can you help me get Scarface Pete's candlesticks?
+2	line	Trobert	Well, we have made some progress there. We know that one of the only keys to Pete's treasure room is carried by Grip, the head guard, so we thought it might be good to get close to him somehow.
+2	line	Trobert	Grip was taking on a new deputy called Hartigen, an Asgarnian Black Knight who was deserting the Black Knight Fortress and seeking new employment here on Brimhaven.
+2	line	Trobert	We managed to waylay him on the journey here, and steal his I.D. papers. Now all we need is to find somebody willing to impersonate him and take the deputy role to get that key for us.
+2	select	Select an option
+2	option	I volunteer to undertake that mission!
+3	line	Player	I volunteer to undertake that mission!
+3	line	Trobert	Good good. Here's the I.D. papers. Take them and introduce yourself to the guards at Scarface Pete's mansion. We'll have that treasure in no time.
+3	action	end
+2	option	Well, good luck then.
+3	line	Player	Well, good luck then.
+3	line	Trobert	Someone will show up eventually.
+3	action	end
+1	option	Pleased to meet you.
+2	line	Player	Pleased to meet you.
+2	line	Trobert	Likewise.
+2	action	end
+0	section	Talking to Trobert again
+1	cond	If the player has the ID papers:
+2	line	Trobert	How's it going?
+2	line	Player	Fine, thanks.
+2	action	end
+1	cond	If the player has lost the ID papers:
+2	line	Player	I have lost Hartigen's ID paper...
+2	line	Trobert	Well that was careless of you wasn't it? Fortunately for you, he had a spare. Take this one, but please try to be more careful with this one.
+2	action	end
+1	cond	If the player has lost the ID papers and has a full inventory:
+2	line	Player	I have lost Hartigen's ID papers...
+2	line	Trobert	Well that was careless of you, wasn't it? Fortunately for you, he had a spare set. Take this one, but please try to be more careful with it.
+2	action	end
+0	section	Infiltration
+1	cond	Trying to enter the mansion rather than talking to Garv
+2	line	Garv	Oi! Where do you think you're going pal?
+2	action	continues
+1	cond	Talking to Garv
+2	line	Garv	Hello. What do you want?
+2	action	continues
+1	line	Player	Hi. I'm Hartigen. I've come to work here.
+1	cond	If the player is not wearing black armour:
+2	line	Garv	Hartigen the Black Knight? I don't think so. He doesn't dress like that.
+2	action	end
+1	cond	If the player is wearing black armour:
+2	line	Garv	I assume you have your I.D. papers then?
+2	cond	If the player has the ID papers
+3	line	Garv	You'd better come in then. Grip will want to talk to you.
+3	action	end
+2	cond	If the player do not have the ID papers
+3	line	Player	Uh... yeeeeaaaaah.... about that.... I must have left them in my other suit of armour....
+3	action	end
+0	section	Reporting in
+1	line	Player	Hi there. I am Hartigen. reporting for duty as your new deputy sir!
+1	line	Grip	Ah good, at last. You took your time getting here! Now let me see...
+1	line	Grip	I'll get your hours and duty roster sorted out in a while. Oh, and do you have your I.D. papers with you? Internal security is almost as important as external security for a guard.
+1	cond	If the player has the ID papers
+2	line	Player	Right here sir!
+2	box	You hand the ID papers over to Grip.
+2	select	Select an option
+2	option	So can I guard the treasure room please?
+3	line	Player	So can I guard the treasure room please?
+3	line	Grip	Well, I might post you outside it sometimes. I prefer to be the only one allowed inside however.
+3	line	Grip	There's some pretty valuable artefacts in there! Those keys stay ONLY with the head guard and Scarface Pete.
+3	action	other
+2	option	So what do my duties involve?
+3	line	Grip	You'll have various guard related duties on various shifts. I'll assign specific duties as they are required as and when they become necessary. Just so you know, if anything happens to me
+3	line	Grip	you'll need to take over as head guard here. You'll find important keys to the treasure room and Pete's quarters inside my jacket - although I doubt anything bad's going to happen to
+3	line	Grip	me anytime soon!
+3	box	Grip laughs to himself at the thought.
+3	option	So can I guard the treasure room please?
+4	line	Player	So can I guard the treasure room please?
+4	line	Grip	Well, I might post you outside it sometimes. I prefer to be the only one allowed inside however.
+4	action	end
+3	option	Well, I'd better sort my new room out.
+4	line	Player	Well, I'd better sort my new room out.
+4	line	Grip	Yeah, I'll give you time to settle in. Better get a good nights sleep, I expect you to report for duty at oh five hundred hours tomorrow on the dot!
+4	action	end
+3	option	Anything I can do now?
+4	line	Player	Anything I can do now?
+4	cond	If the player does not have a miscellaneous key yet:
+5	line	Grip	Hmm. Well, you could find out what this key opens for me. Apparently it's for something in this building, but for the life of me I can't find what.
+5	box	Grip hands you a key.
+5	action	pause
+5	action	end
+4	cond	If the player has a miscellaneous key already:
+5	line	Grip	Can't think of anything right now.
+5	action	end
+2	option	Well, I'd better sort my new room out.
+3	line	Player	Well, I'd better sort my new room out.
+3	line	Grip	Yeah, I'll give you time to settle in. Better get a good nights sleep, I expect you to report for duty at oh five hundred hours tomorrow on the dot!
+3	action	end
+1	cond	If the player lost the ID papers
+2	line	Player	Oh dear... I don't have that with me anymore..
+2	line	Grip	Well that's no good! Go get them immediately, then report back for duty.
+2	action	end
+0	section	When trying to attack Grip
+1	line	Player	I can't attack the head guard here! There are too many witnesses around to see me do it! I'd have the whole of Brimhaven after me! Besides, if he dies I want the promotion!
+1	box	Perhaps you need another player's help...?
+1	action	end
+0	section	When searching through his drinks cabinet
+1	cond	If Grip is alive and any of the pirate guards are nearby
+1	line	Pirate Guard	I don't think Mr Grip will like you opening that. That's his private drinks cabinet.
+1	select	Select an option
+1	option	He won't notice me having a quick look.
+2	line	Player	He won't notice me having a quick look.
+2	line	Grip	Stay out of my drinks cabinet!
+2	action	end
+1	option	Ok, I'll leave it.
+2	line	Player	Ok, I'll leave it.
+2	action	end
+1	cond	If there's no one to stop you:
+2	box	You find a bottle of whiskey in the cupboard.
+2	action	pause
+2	action	end
+0	section	Searching the chest with the candlesticks
+1	box	You find two candlesticks in the chest. So that will be one for you, and one for the person who killed Grip for you.
+1	action	end
+0	section	Attempting to hand in Pete's Candlestick if you've obtained it too early
+1	line	Player	I have a candlestick now!
+1	line	Katrine	Good for you.
+1	line	Katrine	I'll be giving a master thieves armband to the one who retrieved that. I know it wasn't you.
+1	action	end
+0	section	Handing in Pete's Candlestick
+1	line	Player	I have a candlestick now!
+1	line	Katrine	Wow.... is... it REALLY it?
+1	line	Katrine	This really is a FINE bit of thievery.
+1	line	Katrine	Us thieves have been trying to get hold of this one for a while!
+1	line	Katrine	You wanted to be ranked as a master thief didn't you? Well, I guess this just about ranks as good enough!
+1	box	Katrine gives you a master thief armband.
+1	action	end
+0	section	Entrana firebird feather
+0	section	Talking to a monk on Entrana before getting ice gloves
+1	line	Monk	Greetings traveller.
+1	line	Player	Hello, I am in search of an Entranan Firebird. Can you help me?
+1	line	Monk	Oh ho! Another one! I don't think they exist, but you'd probably ask the head monk about it. If anyone would know, he would!
+1	line	Player	Thanks!
+1	line	Monk	Anything else you wanted to know?
+1	select	Select an Option
+1	option	Can you heal me? I'm injured.
+1	option	Isn't this place built a bit out the way
+0	section	Talking to the High Priest on Entrana before getting ice gloves
+1	line	High Priest	Many greetings. Welcome to our fair island.
+1	line	Player	Hello, I am in search of an Entranan Firebird. Can you help me?
+1	line	High Priest	Well adventurer, I have heard that they exist on this island, but have not ever seen one myself.
+1	line	High Priest	According to legend however, they are so hot that their merest touch can burn flesh.
+1	line	High Priest	Apparently long ago a great hero used a pair of magical gloves, stolen from the Queen of the Ice to cool the bird down enough to catch as a pet.
+1	line	Player	So where would I find this 'Queen of the Ice' then?
+1	line	High Priest	I know not adventurer, it was just a myth I was told as a young boy. Perhaps somewhere icy?
+1	line	Player	Thanks!
+1	action	end
+0	section	Investigating the rockslide on White Wolf Mountain
+1	box	These rocks contain nothing interesting. They are just in the way.
+0	section	Attempting to pick up a fire feather without ice gloves
+1	line	Player	Ouch!
+1	box	It is too hot to take. You need something cold to pick it up with.
+0	section	Cooked lava eel
+0	section	Talking to Gerrant
+1	line	Gerrant	Welcome! You can buy fishing equipment at my store. We'll also buy anything you catch off you.
+1	select	Select an option
+1	option	Let's see what you've got then.
+1	option	Sorry, I'm not interested.
+1	option	I want to find out how to catch a lava eel.
+2	line	Player	I want to find out how to catch a lava eel.
+2	line	Gerrant	Lava eels eh? That's a tricky one that is, you'll need a lava-proof fishing line. The method for making this would be to take an ordinary fishing rod, and then cover it with the fire-proof Blamish Oil.
+2	line	Gerrant	You know... thinking about it... I may have a jar of Blamish Slime around here somewhere... Now where did I put it?
+2	box	Gerrant searches around a bit.
+2	action	pause
+2	line	Gerrant	Aha! Here it is! Take this slime, mix it with some Harralander and water and you'll have the Blamish Oil you need for treating your fishing rod.
+2	action	end
+0	section	Talking to Gerrant again with blamish snail slime, blamish oil, or an oily fishing rod
+1	line	Gerrant	Welcome! You can buy fishing equipment at my store. We'll also buy anything you catch off you.
+1	select	Select an option
+1	option	Let's see what you've got then.
+1	option	Sorry, I'm not interested.
+1	option	I want to find out how to catch a lava eel.
+2	line	Player	I want to find out how to catch a lava eel.
+2	line	Gerrant	You'll need a lava-proof fishing line. I'm sure I already gave you what you need for this - take an ordinary fishing rod, and then cover it with the fire-proof Blamish Oil.
+2	action	end
+0	section	Making an oily fishing rod
+0	section	Mixing blamish oil
+1	box	You mix the slime into your potion.
+0	section	Attempting to drink blamish oil
+1	line	Player	You know... I'd really rather not.
+1	action	end
+0	section	Applying blamish oil to a fishing rod
+1	box	You rub the oil into the fishing rod.
+0	section	Catching a lava eel
+0	section	Cooking a lava eel
+1	box	You successfully cook a lava eel.
+0	section	Handing in the items
+0	section	Trying to hand in an uncooked lava eel
+1	line	Achietties	Greetings. Welcome to the Heroes' Guild.
+1	line	Achietties	How goes thy quest adventurer?
+1	line	Player	I have a raw Lava Eel!
+1	line	Achietties	That's nice. I require it to be cooked however.
+1	line	Player	Oh. Okay then.
+1	action	end
+0	section	Speaking to Achietties
+1	line	Achietties	Greetings. Welcome to the Heroes' Guild.
+1	line	Achietties	How goes thy quest adventurer?
+1	line	Player	I have all the required items.
+1	line	Achietties	I see that you have. Well done; Now, to complete the quest, and gain entry to the Heroes' Guild in your final task all that you have to do is...
+1	line	Player	W-what? What do you mean? There's MORE???
+1	line	Achietties	I'm sorry, I was just having a little fun with you. Just a little Heroes' Guild humour there. What I really meant was
+1	line	Achietties	Congratulations! You have completed the Heroes' Guild entry requirements! You will find the door now open for you! Enter, Hero! And take this reward!

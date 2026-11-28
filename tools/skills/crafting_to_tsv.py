@@ -76,9 +76,11 @@ STATIONS = {
     "Pottery Oven": "oven",
     "Furnace": "furnace",
 }
-# Rev 243 renamed seq 894 (the spinning wheel anim, `human_spinningwheel` in 233).
+# Seq 894 (the Wiki/RuneLite "spinning" id) is the ghost tendril NPC anim in revs 236-243 (frames
+# animframe_5433) and distorts the player model; use the human pottery-wheel anim until the real
+# player spinning seq is identified.
 ANIM = {
-    "spin": "ghost_update_tendrill_ready_thrall",
+    "spin": "human_potterywheel",
     "loom": "farming_useloom",
     "wheel": "human_potterywheel",
     "oven": "human_furnace",

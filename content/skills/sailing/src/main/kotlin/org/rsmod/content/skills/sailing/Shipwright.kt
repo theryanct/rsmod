@@ -8,10 +8,11 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 /**
- * Shipwright Sam (Port Sarim) hands out the raft that the Pandemonium quest normally rewards (the
- * quest is skipped). The raft is recorded the way the client expects - boat slot 1 owned, type 0
- * (sailing_boat raft), port 0 (sailing_dock Port Sarim) - so the sailing side panel and boat
- * selection see it; boarding and sailing it is tier 1 (world entities).
+ * Shipwright Sam (Port Sarim). The raft is Pandemonium's reward (Junior Jim hands it over during the
+ * quest); Sam points players without one to Will and Anne, and replaces the raft for anyone who
+ * finished the quest without one (e.g. it predates the quest on this server). The raft is recorded
+ * the way the client expects - boat slot 1 owned, type 0 (sailing_boat raft), moored at a
+ * sailing_dock - through [SailingBoats], which [Voyages] sails.
  */
 class Shipwright : PluginScript() {
     override fun ScriptContext.startup() {
@@ -21,23 +22,31 @@ class Shipwright : PluginScript() {
     }
 
     private suspend fun ProtectedAccess.talk(npc: Npc) {
-        if (vars[SailingVarBits.boat_1_owned] != 0) {
-            startDialogue(npc) { chatNpc(neutral, "Your raft is moored here in Port Sarim, safe and sound.") }
+        if (SailingBoats.ownsBoat(player)) {
+            val dock = VoyageData.byId[SailingBoats.dockOf(player)]?.name ?: "Port Sarim"
+            startDialogue(npc) { chatNpc(neutral, "Your boat is moored at $dock, safe and sound.") }
+            return
+        }
+        if (vars[SailingVarBits.pandemonium] < PANDEMONIUM_COMPLETE) {
+            // Authored (not Wiki): Sam's pointer to the Sailing intro quest.
+            startDialogue(npc) {
+                chatNpc(
+                    neutral,
+                    "A boat? You'll want some sea legs first. Will and Anne down on the docks are " +
+                        "looking for a new hand - go and talk to them.",
+                )
+            }
             return
         }
         startDialogue(npc) {
-            chatNpc(happy, "Ahoy! Every sailor needs a boat. Here, take this raft - it's not much, but she floats.")
+            chatNpc(happy, "Lost your raft, have you? Here, take this one - it's not much, but she floats.")
         }
-        vars[SailingVarBits.boat_1_owned] = 1
-        vars[SailingVarBits.boat_1_type] = RAFT_TYPE
-        vars[SailingVarBits.boat_1_port] = PORT_SARIM_DOCK
+        SailingBoats.grantRaft(player, SailingBoats.PORT_SARIM_DOCK)
         mes("You now own a raft. It is moored at Port Sarim.")
     }
 
     private companion object {
-        /** sailing_boat raft: type_id 0. */
-        const val RAFT_TYPE = 0
-        /** sailing_dock port_sarim: dock_id 0. */
-        const val PORT_SARIM_DOCK = 0
+        /** `quest_pandemonium` endstate (dbrow); quest varbit `sailing_intro`. */
+        const val PANDEMONIUM_COMPLETE = 50
     }
 }

@@ -1,0 +1,448 @@
+# Generated from the OSRS Wiki page "Transcript:Eagles' Peak" by tools/quests/transcript_to_dialogue.py
+# Hand edits (marked "# Authored (not Wiki)" where lines were added): replies for the Wiki's quest=No / empty options
+# (Charlie's animals, Nickolaus's ferret, Asyff's shop options), the shout menu's "above" -> "replay" (EaglesPeak.kt replays
+# the first meeting's answer) and "initial" -> "above", the broken colour-template box fixed, {{mes}}/{{overhead}} lines moved
+# to EaglesPeak.kt, and the "(authored)" sections at the end.
+0	section	Starting out
+0	section	Before starting Eagle's Peak
+1	line	Player	Hi!
+1	line	Charlie	Yes, er, welcome to the zoo! I'm afraid I'm kind of busy right now; what was it you wanted?
+1	option	Ah, you sound like someone who needs a quest doing!
+2	line	Player	Ah, you sound like someone who needs a quest doing!
+2	cond	If the player is below level 27 in Hunter:
+3	line	Charlie	Well... maybe. How much do you know about hunting?
+3	line	Player	Well I know a little bit...
+3	line	Charlie	No, I could do with some help, but I'm afraid I need somebody with a little more experience.
+3	action	end
+2	cond	If the player is level 27 or above in Hunter:
+3	line	Charlie	Actually, now that you come to mention it, you might be able to help me.
+3	line	Charlie	A few weeks ago we had a delivery of a northern ferret. They're funny little creatures. Turns out they're tricksy little blighters too.
+3	line	Charlie	Whilst we were unloading him from the cart he managed to escape his cage. What's more he gave the driver a nasty nip on the way out too.
+3	line	Charlie	This was obviously a bit of a blow, you can't make a new attraction without any animals.
+3	line	Charlie	We got in contact with one of our associates, a huntsman called Nickolaus, who agreed to capture us another.
+3	line	Charlie	Funny thing is we haven't heard from him for some time now. I don't suppose you'd mind having a look for him?
+3	option	Sure. Any idea where I should start looking?
+4	line	Player	Sure. Any idea where I should start looking?
+4	line	Charlie	Well the northern ferret is mostly found around the mountains just west of the Gnome Stronghold, so that would probably be as good a place as any to start looking.
+4	line	Player	Okay, thanks.
+4	action	end
+3	option	Sorry, I don't have the time.
+4	line	Player	Sorry, I don't have the time.
+4	line	Charlie	Oh well, I'm sure he'll be okay out there on his own.
+4	action	end
+1	option	Where did you get the animals from?
+2	line	Player	Where did you get the animals from?
+2	line	Charlie	Oh, all over. Hunters bring us most of them; we pay well for anything unusual.
+2	action	end
+0	section	Talking to Charlie again
+1	line	Charlie	Ah, hello again. Have you had any luck finding out about Nickolaus' whereabouts yet?
+1	line	Player	No, nothing yet I'm afraid.
+1	line	Charlie	Like I said, he's most likely to be camping out somewhere to the west of the Gnome Stronghold.
+1	action	end
+0	section	Nickolaus's camp
+0	section	Interacting with the campfire
+0	section	Picking up the bird book
+1	box	Amongst the scattered books one in particular grabs your attention; there seems to be something poking out from between the pages.
+1	action	end
+0	section	Opening the bird book
+1	box	As you open the book something falls out from between the pages. It appears to be a small metal feather.
+0	section	Reclaiming a lost feather
+1	box	Amongst the scattered books you find a small metal feather.
+0	section	Interacting with the books again
+0	section	Interacting with the Rocky outcrop
+1	box	This area of rock doesn't quite seem to match the rest of the cliff face. There appears to be a thin vertical slot in the middle of the rock, with what appears to be a carving of a feather above it.
+1	action	end
+0	section	Using the Metal feather on the Rocky outcrop
+1	box	You place the metal feather into the groove in the cliff face. It seems to catch in some sort of mechanism.
+1	box	Part of the cliff face swings outwards to reveal a tunnel heading into the mountain.
+1	action	end
+0	section	Using the Metal feather on the Cave entrance
+0	section	Entering any tunnel in the cave
+0	section	Approaching Nickolaus across the chasm
+1	line	Nickolaus	Hello? Er... excuse me?
+1	line	Nickolaus	Hello? Er... excuse me?
+1	line	Player	Hello, are you Nickolaus?
+1	line	Nickolaus	Aha, I see my reputation precedes me. Yes, I am the renowned hunter and explorer Nickolaus. You've arrived just in time to witness a very momentous occasion, for I have just discovered the nest of a giant
+1	line	Nickolaus	eagle. And a most amazing discovery it is too, even if I do say so myself.
+1	option	The Ardougne zookeeper sent me to find you.
+2	line	Player	The Ardougne zookeeper sent me to find you.
+2	line	Nickolaus	Ah yes, he sent me to find a ferret. A trivial task, and one which pales in comparison compared to this momentous discovery. I'm sure he can wait.
+2	option	Well if you gave me a ferret I could take it back for you.
+3	line	Player	Well if you gave me a ferret I could take it back for you.
+3	line	Nickolaus	A ferret? I'm afraid I haven't had the chance to catch one yet, what with all this excitement.
+3	action	above
+2	option	So it's not that you're trapped then?
+3	line	Player	So it's not that you're trapped then?
+3	line	Nickolaus	Well I think trapped is quite a negative way of looking at it.
+3	line	Nickolaus	I will admit however that getting out of here may be a little tricky. I did have a plan, but unfortunately it didn't involve being stuck in this nest.
+3	option	Could I help at all?
+4	line	Player	Could I help at all?
+4	line	Nickolaus	Actually I believe you could. I need to somehow trick the eagles into thinking I'm one of them. Could you fashion some sort of disguise for me?
+4	line	Player	What would that involve?
+4	line	Nickolaus	Well, you could go and speak to the fancy dress shop owner in Varrock. He can make anything if you give him the right materials. In fact you should probably get a couple of disguises, one for each of us.
+4	line	Player	That's a good idea. There are plenty of feathers around here. I'll see what I can do.
+4	action	end
+3	option	Well it'll give you a lot of time to study the eagles
+4	line	Player	Well it'll give you a lot of time to study the eagles.
+4	line	Nickolaus	Very true, and certainly an opportunity I wouldn't want to miss.
+4	line	Player	Well, I'll let you get on with your work then.
+4	line	Nickolaus	It's always a pleasure to discuss my discoveries.
+4	action	end
+1	option	Oh, but I'd come to rescue you.
+2	line	Player	I've come to rescue you.
+2	line	Nickolaus	How very kind of you. But Nickolaus Farrick never needs rescuing. I may apparently be trapped in a giant eagle's nest, but it is all a cunning ruse to put the beast at ease.
+2	option	Aren't giant eagles mythical?
+3	action	below
+2	option	Oh, so you're not really trapped?
+3	line	Player	Oh, so you're not really trapped?
+3	line	Nickolaus	Well I think trapped is quite a negative way of looking at it.
+3	action	above
+1	option	Aren't giant eagles mythical?
+2	line	Player	Aren't giant eagles mythical?
+2	line	Nickolaus	Oh many people believe so, yes, but my relentless exploration has paid off once again, for I stand now in the nest of such a supposedly mythical creature.
+2	line	Player	How did you manage to find the nest?
+2	line	Nickolaus	Through unfaltering dedication, attention to detail, oh, and I suppose there's the minor point that I got carried here by an eagle.
+2	line	Player	So in fact the eagle found you?
+2	line	Nickolaus	So it might appear to an amateur yes, and, well, I may have been a little lucky, but it's still a remarkable discovery don't you think?
+2	option	Amazing, but what do you intend to do now you've discovered it?
+3	line	Player	Amazing, but what do you intend to do now you've discovered it?
+3	line	Nickolaus	Well, there's all sorts to do. I need to observe its behaviour patterns and document its feeding habits. The discovery is only just the beginning you know.
+3	option	I think you're trapped.
+4	line	Player	I think you're trapped.
+4	line	Nickolaus	Well I think trapped is quite a negative way of looking at it.
+4	action	above
+3	option	Well, I'll let you get on with your work then.
+4	line	Player	Well, I'll let you get on with your work then.
+4	line	Nickolaus	It's always a pleasure to discuss my discoveries.
+4	action	end
+2	option	Well, I'll let you get on with your work then.
+3	line	Player	Well, I'll let you get on with your work then.
+3	line	Nickolaus	It's always a pleasure to discuss my discoveries.
+3	action	end
+0	section	Shouting at Nickolaus
+1	line	Player	Hello Nickolaus, how are you getting on with your discoveries?
+1	line	Nickolaus	Wonderfully, these giant eagles are simply magnificent creatures. I absolutely must see about getting one as a pet.
+1	option	The Ardougne zookeeper sent me to find you.
+2	action	replay
+1	option	A pet? Are you crazy?
+2	line	Player	A pet? Are you crazy?
+2	line	Nickolaus	Quite possibly, quite possibly, but I haven't found a creature I couldn't tame yet.
+2	action	above
+1	option	I've come to rescue you.
+2	action	replay
+1	option	Aren't giant eagles mythical?
+2	action	replay
+0	section	Visiting Nickolaus after agreeing to help him
+1	line	Player	Hello Nickolaus, how are you getting on with your discoveries?
+1	line	Nickolaus	Wonderfully thank you, although I am still having just a little trouble convincing them to let me leave.
+1	line	Nickolaus	I don't suppose you've managed to get that disguise I asked for yet?
+1	line	Player	I'm afraid not yet.
+1	line	Nickolaus	Well like I said, the Varrock fancy dress shop is a good bet if you have the materials, and there are plenty of feathers around here.
+1	line	Nickolaus	And while you're working on that, I'll get back to studying these incredible winged wonders.
+1	action	end
+0	section	Getting a bird costume
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	line	Asyff	Or, if that doesn't interest you, then maybe you have something else to offer? I'm always on the look out for interesting or unusual new materials.
+1	option	Okay, lets see what you've got then.
+2	line	Player	Okay, lets see what you've got then.
+2	line	Asyff	Have a look through my stock whenever you like; just ask to trade.
+2	action	end
+1	option	Well, specifically I'm after a couple of bird costumes.
+2	line	Player	Well, specifically I'm after a couple of bird costumes.
+2	line	Asyff	Ah, an inspired choice. What kind of bird were you thinking of?
+2	line	Player	A giant eagle.
+2	line	Asyff	Very interesting. Unfortunately I don't think I have any giant eagle costumes in stock at the moment.
+2	line	Asyff	Of course if I had the materials I could make them for you.
+2	line	Player	What materials would you need?
+2	line	Asyff	Well, the main problem is that I'm fresh out of giant eagle feathers. I've been meaning to get onto my supplier about that for some time.
+2	line	Player	Wait a second, you have a supplier? But I thought nobody knew where to find the nests?
+2	line	Asyff	Well, there was some chap in desert clothing. He said his name was Ali. He assured me they were giant eagle feathers, although when I come to think about it they were suspiciously similar to chicken feathers.
+2	line	Asyff	Anyway, you're probably looking at about 10 giant eagle feathers, assuming you can find a nest.
+2	line	Asyff	I'd also need some swamp tar to hold things together and some yellow dye for the beaks. Everything else I can supply myself.
+2	line	Player	I'll see what I can do.
+2	action	end
+1	option	I think I might just leave the perusing for now thanks.
+2	line	Player	I think I might just leave the perusing for now thanks.
+2	line	Asyff	Suit yourself. You know where I am if you change your mind.
+2	action	end
+1	option	Can you make clothing suitable for hunting in?
+2	line	Player	Can you make clothing suitable for hunting in?
+2	line	Asyff	Certainly, if you bring me the furs. Fur clothing is my speciality; ask me about it any time.
+2	action	end
+1	option	What sort of unusual materials did you have in mind?
+2	line	Player	What sort of unusual materials did you have in mind?
+2	line	Asyff	Oh, furs, feathers, anything a hunter might bring back from the wilds. I can make something out of almost anything.
+2	action	end
+0	section	Returning to Asyff without the materials
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	line	Asyff	Or, if that doesn't interest you, then maybe you have something else to offer? I'm always on the look out for interesting or unusual new materials.
+1	option	Okay, lets see what you've got then.
+2	line	Player	Okay, lets see what you've got then.
+2	line	Asyff	Have a look through my stock whenever you like; just ask to trade.
+2	action	end
+1	option	What was it you needed to make those eagle costumes again?
+2	line	Player	What was it you needed to make those eagle costumes again?
+2	line	Asyff	I should be able to knock something up if you get me 10 of the right sort of feather. I'll also need some swamp tar and some yellow dye.
+2	action	end
+1	option	I think I might just leave the perusing for now thanks.
+2	line	Player	I think I might just leave the perusing for now thanks.
+2	line	Asyff	Suit yourself. You know where I am if you change your mind.
+2	action	end
+1	option	Can you make clothing suitable for hunting in?
+2	line	Player	Can you make clothing suitable for hunting in?
+2	line	Asyff	Certainly, if you bring me the furs. Fur clothing is my speciality; ask me about it any time.
+2	action	end
+1	option	What sort of unusual materials did you have in mind?
+2	line	Player	What sort of unusual materials did you have in mind?
+2	line	Asyff	Oh, furs, feathers, anything a hunter might bring back from the wilds. I can make something out of almost anything.
+2	action	end
+0	section	Returning to Asyff with the materials
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	line	Asyff	Or, if that doesn't interest you, then maybe you have something else to offer? I'm always on the look out for interesting or unusual new materials.
+1	option	Okay, lets see what you've got then.
+2	line	Player	Okay, lets see what you've got then.
+2	line	Asyff	Have a look through my stock whenever you like; just ask to trade.
+2	action	end
+1	option	I've got the feathers and materials you requested.
+2	line	Player	I've got the feathers and materials you requested. Can you make those giant eagle costumes for me now?
+2	line	Asyff	Certainly. It'll also cost you 50 gold pieces.
+2	option	Okay, here are the materials. Eagle me up.
+3	cond	If the player doesn't have 50 coins:
+4	line	Player	I'm afraid I don't have that much money with me.
+3	cond	If the player has 50 coins:
+4	line	Player	Okay, here are the materials. Eagle me up.
+4	line	Asyff	There we go; two eagle costumes. You should be the envy of the entire party with those.
+4	line	Player	Thanks.
+3	action	end
+2	option	On second thoughts, that's too expensive.
+3	line	Player	On second thoughts, that's too expensive.
+3	line	Asyff	Well, feel free to come back if you change your mind.
+3	action	end
+1	option	I think I might just leave the perusing for now thanks.
+2	line	Player	I think I might just leave the perusing for now thanks.
+2	line	Asyff	Suit yourself. You know where I am if you change your mind.
+2	action	end
+1	option	Can you make clothing suitable for hunting in?
+2	line	Player	Can you make clothing suitable for hunting in?
+2	line	Asyff	Certainly, if you bring me the furs. Fur clothing is my speciality; ask me about it any time.
+2	action	end
+1	option	What sort of unusual materials did you have in mind?
+2	line	Player	What sort of unusual materials did you have in mind?
+2	line	Asyff	Oh, furs, feathers, anything a hunter might bring back from the wilds. I can make something out of almost anything.
+2	action	end
+0	section	Asking for another costume
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	line	Asyff	Or, if that doesn't interest you, then maybe you have something else to offer? I'm always on the look out for interesting or unusual new materials.
+1	option	Could you make another eagle costume for me?
+2	line	Player	Could you make another eagle costume for me?
+2	line	Asyff	Certainly, if you can supply the materials. I'll need appropriate feathers, swamp tar and some yellow dye. It'll also cost you 25 gold pieces.
+2	line	Player	I'll see what I can do.
+2	action	end
+1	option	I think I might just leave the perusing for now thanks.
+2	line	Player	I think I might just leave the perusing for now thanks.
+2	line	Asyff	Suit yourself. You know where I am if you change your mind.
+2	action	end
+1	option	Can you make clothing suitable for hunting in?
+2	line	Player	Can you make clothing suitable for hunting in?
+2	line	Asyff	Certainly, if you bring me the furs. Fur clothing is my speciality; ask me about it any time.
+2	action	end
+1	option	What sort of unusual materials did you have in mind?
+2	line	Player	What sort of unusual materials did you have in mind?
+2	line	Asyff	Oh, furs, feathers, anything a hunter might bring back from the wilds. I can make something out of almost anything.
+2	action	end
+0	section	Bringing over the outfit to Nickolaus
+0	section	Talking to Nickolaus while not wearing the eagle outfit
+1	line	Player	Hello Nickolaus, how are you getting on with your discoveries?
+1	line	Nickolaus	Wonderfully thank you, although I am still having just a little trouble convincing them to let me leave.
+1	line	Nickolaus	I don't suppose you've managed to get that disguise I asked for yet?
+1	line	Player	Yes, I have one right here.
+1	line	Nickolaus	Well bring it over here then. It's not much use to me over there.
+1	action	end
+0	section	Talking to Nickolaus while wearing the eagle outfit
+1	line	Player	Hello Nickolaus, how are you getting on with your discoveries?
+1	line	Nickolaus	What's this, a young hatchling? Oh no, I hope it doesn't think I'm its dinner!
+1	line	Player	No, Nickolaus, it's me! I'm just in disguise!
+1	line	Nickolaus	You're sure...you're sure you're not going to eat me?
+1	line	Player	No of course not. You sent me to get you an eagle outfit remember? So you could get out of this nest?
+1	line	Nickolaus	Wow, that really is a very convincing disguise. Have you got one for me too?
+1	cond	If the player has a disguise for Nickolaus:
+2	line	Player	Yes, I have one right here.
+2	line	Nickolaus	Well bring it over here then. It's not much use to me over there.
+1	cond	If the player does not have a disguise for Nickolaus:
+2	line	Player	I'm afraid not yet.
+2	line	Nickolaus	Well like I said, the Varrock fancy dress shop is a good bet if you have the materials, and there are plenty of feathers around here.
+2	line	Nickolaus	And while you're working on that, I'll get back to studying these incredible winged wonders.
+2	action	end
+0	section	Bronze feather
+0	section	Winding a winch before interacting with the pedestal
+0	section	When interacting with the pedestal
+0	section	Winding a winch
+0	section	Winding a winch again
+0	section	Attempting to take a second bronze feather
+0	section	Silver feather
+0	section	When inspecting the stone pedestal
+1	cond	If the player is below level 27 in Hunter:
+2	box	There is a clear patch in the layer of dust covering the top of the pedestal. It looks like something lay here recently, but you don't have a high enough Hunter level to determine where it may have gone.
+1	cond	If the player is level 27 or above in Hunter:
+2	box	There is a clear patch in the layer of dust covering the top of the pedestal. It looks like something lay here recently. Around the base of the pedestal you spy what appear to be faint footprints leading away from the area.
+1	action	end
+0	section	Inspecting the stone pedestal again
+1	box	There is a clear patch in the layer of dust covering the top of the pedestal. It looks like something lay here recently, but you can't find any further clues as to where it may have gone.
+1	action	end
+0	section	Inspecting an incorrect rock
+0	section	When inspecting the first rock
+1	box	These rocks appear to have shifted recently. Further inspection reveals faint tracks among the debris, although they aren't tracks you recognise.
+1	action	end
+0	section	Inspecting a correct rock again
+0	section	When inspecting the second rock
+1	box	After carefully examining the rocks, you manage to pick up the mysterious trail again. The tracks aren't entirely unfamiliar, but they do seem somewhat larger than any you have seen before.
+1	action	end
+0	section	Threatening the Kebbit
+1	line	Player	Hey, give me that!
+1	box	The kebbit stares at you.
+1	option	Taunt the kebbit.
+2	line	Player	Give me that or... Er...
+2	line	Player	Your mother was a hamster, and your father smelt of elderberries!
+1	option	Try something else.
+2	action	end
+0	section	Inspecting the tunnel after getting the silver feather
+0	section	Reclaiming the silver feather if it has been lost
+1	box	Upon closer inspection you find a small silver feather at the entrance to the tunnel.
+1	action	end
+0	section	Gold feather
+0	section	Taking from the birdseed holder
+0	section	Putting feed in a feeder that a stone eagle is already at
+0	section	Pulling an eagle lever
+0	section	Using the Reset lever
+1	box	As you reach for the lever, you notice the word 'reset' engraved into the handle in large angular letters.
+1	select	Are you sure you wish to pull this lever?
+1	option	Yes, pull the reset lever.
+2	action	end
+1	option	On second thoughts, not just yet.
+2	action	end
+0	section	Attempting to take a second golden feather
+0	section	Interacting with the Stone door
+1	box	The door seems to be locked in place. There is an engraving of an eagle on the door. Three of the feathers illustrated in the engraving seem to be cut deeper than the others. It looks like they may once have contained some sort of decoration.
+1	action	end
+0	section	Using the metal feather on the door
+1	box	Unfortunately this metal feather doesn't seem to match any of the indentations in the engraving.
+1	action	end
+0	section	Using an eagle feather on the door
+1	box	There doesn't seem to be any way of attaching this feather to the engraving. The indentations look like they probably contained some sort of decoration rather than real feathers, although there is no sign of their whereabouts now.
+1	action	end
+0	section	When using any of the metal feathers on the door
+1	box	You insert the metallic feather into one of the feather-shaped indentations in the engravings.
+1	action	end
+0	section	When using the last remaining feather on the door
+1	box	As you insert the metallic feather into the final indentation you hear a low grinding as if stone blocks were moving against one another.
+1	action	end
+0	section	Using a feather on the door after it is unlocked
+1	box	The engraving is already complete. There is nowhere left to put this feather.
+1	action	end
+0	section	Attempting to travel on a giant eagle
+1	box	You must have completed the Eagles' Peak quest before you can try to lasso a giant eagle.
+1	action	end
+0	section	Saving Nickolaus
+0	section	Passing the eagle
+0	section	With eagle outfit
+1	line	Player	Hello Nickolaus, how are you getting on with your discoveries?
+1	cond	If the player is wearing the eagle disguise:
+2	line	Nickolaus	What's this, a young hatchling? Oh no, I hope it doesn't think I'm its dinner!
+2	line	Player	No, Nickolaus, it's me! I'm just in disguise!
+2	line	Nickolaus	You're sure...you're sure you're not going to eat me?
+2	line	Player	No of course not. You sent me to get you an eagle outfit remember? So you could get out of this nest?
+2	line	Nickolaus	Wow, that really is a very convincing disguise. Have you got one for me too?
+1	action	continue
+1	cond	If the player has a disguise for Nickolaus:
+2	line	Player	Yes, I have one right here.
+2	box	You give Nickolaus a fake beak and an eagle feather cape.
+2	line	Nickolaus	Excellent, now there is no way the eagle will be able to tell me from one of its own.
+2	line	Nickolaus	Now you run off, and I'll meet you back down at the camp site.
+2	action	end
+1	cond	If the player does not have a disguise for Nickolaus:
+2	line	Player	I'm afraid not yet.
+2	line	Nickolaus	Well like I said, the Varrock fancy dress shop is a good bet if you have the materials, and there are plenty of feathers around here.
+2	line	Nickolaus	And while you're working on that, I'll get back to studying these incredible winged wonders.
+2	action	end
+0	section	Talking to Nickolaus again
+1	line	Player	I've given you the disguise you needed, can we go now?
+1	line	Nickolaus	Calm down. You must realise I can't leave just like that, this is far too amazing an opportunity. Just go down to the camp site and I'll meet you there.
+1	action	end
+0	section	Talking to Nickolaus by the camp
+1	line	Player	Hello again Nickolaus.
+1	line	Nickolaus	Ah, hello again. Can I help at all?
+1	option	Well I was originally sent to find you because of a ferret.
+2	line	Player	Well I was originally sent to find you because of a ferret. Can you get me one at all?
+2	line	Nickolaus	I'll do better than that. I'll teach you how to capture one yourself.
+2	option	That sounds good to me.
+3	line	Player	That sounds good to me. What do I do.
+3	line	Nickolaus	Come with me and I'll show you.
+3	line	Player	Okay, so we've baited the trap with meat, now what?
+3	line	Nickolaus	And now...we wait. Quietly!
+3	line	Player	But what if I don't like waiting for things?
+3	line	Nickolaus	Did I mention we wait quietly?
+3	line	Nickolaus	Shhh, here comes something.
+3	line	Nickolaus	Ha ha, there you go! One gift-wrapped ferret ready for delivery.
+3	line	Nickolaus	See, it's all just a matter of patience.
+3	line	Player	Great, thanks!
+3	action	end
+2	option	I've not got the time right now.
+3	line	Player	I've not got the time right now.
+3	line	Nickolaus	Ah you don't get out of it that easily. When you've got the time come back and see me.
+3	action	end
+1	option	I was just wondering how you got on with those eagles.
+2	line	Player	I was just wondering how you got on with those eagles.
+2	line	Nickolaus	Ah wonderfully. They're actually most cooperative creatures once they get used to you. With some rope I'm sure you could find some way to tame them... maybe even fly on them.
+2	action	end
+1	option	No thanks. I was just dropping by.
+2	line	Player	No thanks. I was just dropping by, wanted to make sure you hadn't been abducted again.
+2	line	Nickolaus	No such luck I'm afraid, but I'm sure I'll make another discovery soon enough. I always seem to.
+2	action	end
+0	section	Finishing up
+1	line	Charlie	Ah, hello again. Have you had any luck finding a clue as to Nickolaus' whereabouts yet?
+1	line	Player	Yes I have actually. He'd been abducted by giant eagles, but I managed to rescue him. He's now gotten back to his hunting.
+1	line	Charlie	Giant eagles? What a strange notion. Well, regardless, if you've found him can you tell him to hurry up with that ferret.
+1	line	Player	Even better, I have a ferret right here for you.
+1	line	Charlie	You do? Ah, yes, wonderful, I never doubted you for a second. That'll make an excellent addition to the zoo.
+
+0	section	Asyff (authored)
+1	line	Asyff	Now you look like someone who goes to a lot of fancy dress parties.
+1	line	Player	Errr...what are you saying exactly?
+1	line	Asyff	I'm just saying that perhaps you would like to peruse my selection of garments.
+1	option	Okay, lets see what you've got then.
+2	line	Player	Okay, lets see what you've got then.
+2	line	Asyff	Have a look through my stock whenever you like; just ask to trade.
+2	action	end
+1	option	I think I might just leave the perusing for now thanks.
+2	line	Player	I think I might just leave the perusing for now thanks.
+2	line	Asyff	Suit yourself. You know where I am if you change your mind.
+2	action	end
+1	option	Can you make clothing suitable for hunting in?
+2	line	Player	Can you make clothing suitable for hunting in?
+2	line	Asyff	Certainly, if you bring me the furs. Fur clothing is my speciality; ask me about it any time.
+2	action	end
+1	option	What sort of unusual materials did you have in mind?
+2	line	Player	What sort of unusual materials did you have in mind?
+2	line	Asyff	Oh, furs, feathers, anything a hunter might bring back from the wilds. I can make something out of almost anything.
+2	action	end
+0	section	Asyff makes another costume (authored)
+1	line	Player	I've brought the feathers, swamp tar and yellow dye for another eagle costume.
+1	line	Asyff	Splendid. That'll be 25 gold pieces, then.
+1	line	Asyff	There we go; one eagle costume. Do try not to get carried off in it.
+0	section	Charlie waiting for the ferret (authored)
+1	line	Charlie	Ah, hello again. Any sign of that ferret yet?
+1	line	Player	Nickolaus showed me how to catch one. I'll bring it over as soon as I can.
+0	section	Charlie after the quest (authored)
+1	line	Charlie	The ferret's settling in nicely. Thanks again for your help!
+0	section	Nickolaus at the camp before the quest (authored)
+1	line	Nickolaus	Nickolaus Farrick, hunter and explorer, at your service. Do excuse me, I'm rather busy preparing for an expedition.
+0	section	Nickolaus after the quest (authored)
+1	line	Nickolaus	Ah, hello again. Nothing like a ferret in the paws to keep a zoo keeper happy, eh?
