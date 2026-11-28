@@ -30,4 +30,5 @@ object BaseStats : StatReferences() {
     val runecrafting = find("runecrafting")
     val hunter = find("hunter")
     val construction = find("construction")
+    val sailing = find("sailing")
 }
