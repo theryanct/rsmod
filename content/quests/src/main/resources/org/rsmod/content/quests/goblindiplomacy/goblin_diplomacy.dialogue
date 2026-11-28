@@ -1,0 +1,294 @@
+# Generated from the OSRS Wiki page "Transcript:Goblin Diplomacy" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to General Wartface or General Bentnoze
+1	option	Dialogue 1
+2	line	General Bentnoze	All goblins should wear red armour!
+2	line	General Wartface	Not red! Red armour make you look fat.
+2	line	General Bentnoze	Everything make YOU look fat!
+2	line	General Wartface	Shut up!
+2	line	General Bentnoze	Fatty!
+2	line	General Wartface	SHUT UP!
+2	line	General Bentnoze	Even this human think you look fat! Don't you, human?
+2	line	Player	Um...
+2	select	Select an option
+2	option	Yes, he looks fat.
+3	line	Player	Yes, he looks fat!
+3	line	General Bentnoze	Ha ha! See, fatty? Even human think you fat!
+3	line	General Wartface	Me not care what human think! Human ugly!
+3	select	Select an option
+3	option	Why are you arguing about the colour of your armour?
+4	line	Player	Why are you arguing about the colour of your armour?
+4	line	General Bentnoze	We decide to celebrate goblin new century by changing colour of our armour. Brown get boring after a bit. We want change.
+4	line	General Wartface	Problem is, we can't agree on new colour. We think maybe we use old goblin tribe colours, but Bentnoze from rubbish Thorobshuun tribe and me from much better Garagorshuun tribe.
+4	line	General Bentnoze	Thorobshuun tribe colour is red! Way better than silly green of Garagorshuun tribe.
+4	line	General Wartface	Shut up!
+4	select	Select an option
+4	option	What is the goblin new century?
+5	line	Player	What is the goblin new century?
+5	line	General Bentnoze	Goblin century mark year of battle on Plain of Mud. That when Big High War God give goblin commandments.
+5	line	Player	Big High War God?
+5	line	General Wartface	Big High War God is god for goblins. He take us and make us strong, not stupid like humans.
+5	line	General Bentnoze	Me bet Big High War God would pick red armour.
+5	line	General Wartface	Shut up! Big High War God would hate you!
+5	action	previous
+4	option	Wouldn't you prefer peace?
+5	line	Player	Wouldn't you prefer peace?
+5	line	General Wartface	Goblins not so good at peace. Maybe peace be okay though, as long as it peace wearing green armour.
+5	line	General Bentnoze	But green too much like skin. Nearly make you look naked!
+5	action	previous
+4	option	Do you want me to pick an armour colour for you?
+5	line	Player	Do you want me to pick an armour colour for you?
+5	line	General Wartface	Yes, as long as you pick green.
+5	line	General Bentnoze	No you have to pick red!
+5	select	Select an option
+5	option	You should wear red.
+6	line	Player	You should wear red.
+6	line	General Bentnoze	See? Even stupid human think red best. Now we all wear red!
+6	line	General Wartface	Human not know anything! If we wear red then whole village be ugly like YOU!
+6	line	General Bentnoze	Go away human. You not helping.
+6	action	previous
+5	option	You should wear green.
+6	line	Player	You should wear green.
+6	line	General Wartface	Green! We all wear green now, human has decided!
+6	line	General Bentnoze	Why we have to do what human say? He not boss of us!
+6	line	General Wartface	No but he agree with me!
+6	line	General Bentnoze	That prove you a filthy human-lover!
+6	line	General Wartface	Me hate humans! This human just happen to be right!
+6	line	General Bentnoze	Go away human. You not know anything.
+6	action	previous
+5	option	What about a different colour?
+6	line	Player	What about a different colour?
+6	line	General Bentnoze	That would mean me wrong... but at least Wartface not right!
+6	line	General Wartface	Well Bentnoze never been right in his life. Still, maybe new colour good, but will have to see armour before decide.
+6	line	General Bentnoze	Human! You bring us armour in new colour!
+6	select	Start the Goblin Diplomacy quest?
+6	option	Yes.
+7	line	Player	I can do that.
+7	line	General Wartface	What colour we try?
+7	line	General Bentnoze	Orange armour might be good.
+7	line	General Wartface	Yep, bring us orange armour.
+7	line	Player	How am I meant to get orange armour?
+7	line	General Bentnoze	Well first you get goblin armour...
+7	line	General Wartface	...and then you dye it orange!
+7	line	General Bentnoze	Even human should be able to work that out!
+7	select	Select an option
+7	option	Where do I get goblin armour?
+8	line	Player	Where do I get goblin armour?
+8	line	General Wartface	There some spare armour around village somewhere. You can take that.
+8	line	General Bentnoze	It in crates somewhere. Can't remember which crates now.
+8	action	previous
+7	option	Where do I get dye?
+8	line	Player	Where do I get dye?
+8	line	General Bentnoze	You go north of here into wilderness. There you find many ways to die!
+8	line	Player	No, D-Y-E, not D-I-E.
+8	line	General Wartface	Stupid Bentnoze, you not know how to spell!
+8	line	General Bentnoze	Shut up Wartface!
+8	line	Player	Do you know where I can get dye?
+8	line	General Bentnoze	Me not know where dye come from.
+8	line	Player	Well where did you get your red and green dye from?
+8	line	General Wartface	Some goblin or other, he steal it. Say he steal it from old witch in Draynor Village.
+8	line	General Bentnoze	Maybe you can get more dye from her?
+8	action	previous
+7	option	Okay, I'll be back soon.
+8	line	Player	Okay, I'll be back soon.
+8	action	end
+6	option	No.
+7	line	Player	Actually, I think I'll leave you to it.
+7	action	end
+5	option	I'll leave you to it.
+6	line	Player	I'll leave you to it.
+6	action	end
+4	option	I'll leave you to it.
+5	action	above
+3	option	Wouldn't you prefer peace?
+4	action	above
+3	option	Do you want me to pick an armour colour for you?
+4	action	above
+3	option	I'll leave you to it.
+4	action	above
+2	option	No, he doesn't look fat.
+3	line	Player	No, he doesn't look fat.
+3	line	General Bentnoze	Shut up human! Wartface fat and human stupid!
+3	line	General Wartface	Shut up Bentnoze!
+3	select	Select an option
+3	option	Why are you arguing about the colour of your armour?
+4	action	above
+3	option	Wouldn't you prefer peace?
+4	action	above
+3	option	Do you want me to pick an armour colour for you?
+4	action	above
+3	option	I'll leave you to it.
+4	action	above
+2	option	I'll leave you to it.
+2	action	above
+1	option	Dialogue 2
+2	line	General Wartface	I tell all goblins in village to wear green armour now!
+2	line	General Bentnoze	They not listen to you! I already tell them wear red armour!
+2	line	General Wartface	They listen to me not you! They know me bigger general!
+2	line	General Bentnoze	Me bigger general! They listen to me!
+2	line	General Wartface	Human! What colour armour they wearing out there?
+2	line	Player	Half of them are wearing red and half of them green.
+2	line	General Wartface	Shut up human! They wearing green armour really! Human lying because he scared of you!
+2	line	General Bentnoze	Human scared of me not you? Then you think me bigger general!
+2	line	General Wartface	What? Me mean...
+2	line	General Wartface	Shut up! Me bigger general!
+2	select	Select an option
+2	option	Why are you arguing about the colour of your armour?
+3	action	above
+2	option	Wouldn't you prefer peace?
+3	action	above
+2	option	Do you want me to pick an armour colour for you?
+3	action	above
+2	option	I'll leave you to it.
+3	action	above
+1	option	Dialogue 3
+2	line	General Wartface	We should wear green armour!
+2	line	General Bentnoze	Green armour? Are you stupid?
+2	line	General Wartface	You stupid! Only stupid goblins think red armour better!
+2	line	General Bentnoze	No they don't! Me think red armour better!
+2	line	General Wartface	That because you stupid!
+2	line	General Bentnoze	Me not stupid!
+2	line	General Wartface	Then why you not like green armour?
+2	line	General Bentnoze	Because red armour better!
+2	line	General Wartface	Only stupid goblins think that! You stupid!
+2	action	continues
+1	option	Dialogue 4
+2	line	General Wartface	Green armour best.
+2	line	General Bentnoze	No no red every time.
+2	line	General Wartface	Go away human, we busy.
+2	action	continues
+1	option	Dialogue 5
+2	line	General Bentnoze	Red armour best.
+2	line	General Wartface	No it has to be green!
+2	line	General Bentnoze	Go away human, we busy.
+2	action	continues
+2	select	Select an option
+2	option	Why are you arguing about the colour of your armour?
+3	action	above
+2	option	Wouldn't you prefer peace?
+3	action	above
+2	option	Do you want me to pick an armour colour for you?
+3	action	above
+2	option	I'll leave you to it.
+3	action	above
+0	section	Talking to the Generals again
+1	action	above
+0	section	Talking to Grubfoot
+1	line	Grubfoot	Grubfoot wear red armour! Grubfoot wear green armour!
+1	line	Grubfoot	Why they not make up their minds?
+1	line	General Wartface/Bentnoze	Shut up Grubfoot!
+1	action	end
+0	section	Talking to the goblins in the village
+0	section	Dialogue 1
+1	line	Goblin	[Red/green] armour best!
+1	select	Select an option
+1	option	Why is [red/green] best?
+2	line	Player	Why is red best?
+2	line	Goblin	Cos General Bentnoze says so, and he bigger than me.
+2	action	end
+1	option	Err, okay.
+2	line	Player	Err, okay.
+2	action	end
+1	line	Goblin	Green armour best.
+1	line	Goblin	Red armour best!
+1	action	end
+0	section	Dialogue 3
+1	line	Player	Why are you fighting?
+1	line	Goblin	He wearing [red/green] armour! [General Wartface/General Bentnoze] tell us wear [green/red]!
+1	line	Goblin	But [General Bentnoze/General Wartface] say we must wear [red/green]!
+1	action	end
+0	section	Goblin in-fighting
+1	line	Goblin	Green!
+1	line	Goblin	Green armour best!
+1	line	Goblin	Green armour stupid!
+1	line	Goblin	Green not red!
+1	line	Goblin	Red armour best!
+1	line	Goblin	Red armour stupid!
+1	line	Goblin	Red not green!
+1	line	Goblin	Red red red!
+1	line	Goblin	Stupid greenie!
+1	line	Goblin	Stupid reddie!
+0	section	Searching crates with goblin armour
+1	box	You find some goblin mail in the crate.
+1	action	
+1	action	end
+0	section	Searching the same crate again
+1	box	You search the crate, but but find nothing of interest.
+1	action	end
+0	section	Showing the Generals different goblin armours
+0	section	Orange-painted Goblin Armour
+1	cond	If the player uses a regular or non-orange painted goblin armour on one of the generals:
+2	line	Player	What do you think of this colour?
+2	line	General Bentnoze	That wrong colour.
+2	line	General Wartface	We tell you get orange armour.
+2	action	end
+1	cond	If the player uses orange dye on the goblin mail:
+2	action	
+2	action	end
+1	cond	If the player uses orange-painted goblin armour on one of the generals:
+2	line	Player	I have some orange armour here.
+2	line	General Wartface	Grubfoot!
+2	line	Grubfoot	Yes General Wartface?
+2	line	General Wartface	Put on this armour!
+2	line	Grubfoot	What do you think?
+2	line	General Wartface	No I don't like that much.
+2	line	General Bentnoze	It clashes with skin colour.
+2	line	General Wartface	We need darker colour, like blue.
+2	line	General Bentnoze	Yeah blue might be good.
+2	line	General Wartface	Human! Get us blue armour!
+2	action	end
+0	section	Talking to Grubfoot
+1	line	Grubfoot	Me not like this orange armour. Make me look like that thing.
+1	line	Player	Look like what thing?
+1	line	Grubfoot	That fruit thing. The one that orange. What it called?
+1	line	Player	An orange?
+1	line	Grubfoot	That right. This armour make me look same colour as orange-fruit.
+1	line	General Wartface/Bentnoze	Shut up Grubfoot!
+1	action	end
+0	section	Blue-painted Goblin Armour
+1	cond	If the player uses a regular or non-blue painted goblin armour on one of the generals:
+2	line	Player	What do you think of this colour?
+2	line	General Bentnoze	That wrong colour.
+2	line	General Wartface	We tell you get blue armour.
+2	action	end
+1	cond	If the player uses blue dye on the goblin mail:
+2	action	
+2	action	end
+1	cond	If the player uses blue-painted goblin armour on one of the generals:
+2	line	Player	I have some blue armour here.
+2	line	General Wartface	Grubfoot!
+2	line	Grubfoot	Yes General Wartface?
+2	line	General Wartface	Put on this armour!
+2	line	Grubfoot	What do you think?
+2	line	General Bentnoze	That not right. Not goblin colour at all.
+2	line	General Wartface	Goblins wear dark earthy colours like brown.
+2	line	General Bentnoze	Yeah brown might be good.
+2	line	General Wartface	Human! Get us brown armour!
+2	line	Player	But I thought brown was the armour you were changing from...
+2	line	Player	Never mind, anything is worth a try.
+2	action	end
+0	section	Talking to Grubfoot
+1	line	Grubfoot	Me not like this blue colour.
+1	line	Player	Why not?
+1	line	Grubfoot	Me not know. It just make me feel...
+1	line	Player	Makes you feel blue?
+1	line	Grubfoot	Makes me feel kind of sad.
+1	line	General Wartface/Bentnoze	Shut up Grubfoot!
+1	action	end
+0	section	"Brown"-painted Goblin Armour
+1	cond	If the player uses a painted goblin armour on one of the generals:
+2	line	Player	What do you think of this colour?
+2	line	General Bentnoze	That wrong colour.
+2	line	General Wartface	We tell you get brown armour.
+2	action	end
+1	cond	If the player uses regular goblin armour on one of the generals:
+2	line	Player	I have some brown armour here.
+2	line	General Wartface	Grubfoot!
+2	line	Grubfoot	Yes General Wartface?
+2	line	General Wartface	Put on this armour!
+2	line	Grubfoot	What do you think?
+2	line	General Wartface	That colour quite nice. Me can see myself wearing that.
+2	line	General Bentnoze	It a deal then. Brown armour it is.
+2	line	General Wartface	Thank you for sorting out argument, human. You have reward now.
+2	line	Player	Thanks... I think...
+2	action	end
