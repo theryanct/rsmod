@@ -7,6 +7,7 @@ import org.rsmod.annotations.InternalApi
 import org.rsmod.api.net.rsprot.player.InterfaceEvents
 import org.rsmod.api.player.input.PauseButtonOps
 import org.rsmod.api.player.input.ResumePauseButtonInput
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.IfModalButton
 import org.rsmod.api.player.ui.IfOverlayButton
@@ -59,10 +60,18 @@ constructor(
         val interfaceType = interfaceTypes[message.asComponent]
         val comsub = message.sub
         val buttonOp = message.buttonOp
+        GameplayLog.input(player) {
+            "button=${componentType.internalName ?: message.asComponent} sub=$comsub " +
+                "op=${buttonOp.slot} obj=${message.obj}"
+        }
 
         val opEnabled =
             InterfaceEvents.isEnabled(player.ui, componentType, comsub, buttonOp.toIfEvent())
         if (!opEnabled) {
+            GameplayLog.unhandled(player) {
+                "button-disabled=${componentType.internalName ?: message.asComponent} " +
+                    "sub=$comsub op=${buttonOp.slot}"
+            }
             return
         }
 
@@ -74,7 +83,11 @@ constructor(
             val event =
                 IfOverlayButton(player, componentType, comsub, objTypes[message.obj], buttonOp)
             logger.debug { "[Overlay] If3Button: $message (event=$event)" }
-            eventBus.publish(event)
+            if (!eventBus.publish(event)) {
+                GameplayLog.unhandled(player) {
+                    "overlay-button=${componentType.internalName} sub=$comsub op=${buttonOp.slot}"
+                }
+            }
             return
         }
 
@@ -83,10 +96,20 @@ constructor(
             player.ifCloseInputDialog()
             if (player.isModalButtonProtected) {
                 logger.debug { "[Modal][BLOCKED] If3Button: $message (event=$event)" }
+                GameplayLog.refused(player) {
+                    "modal-button=${componentType.internalName} delayed=${player.isDelayed} " +
+                        "dialogSuspended=${player.activeCoroutine?.isSuspended}"
+                }
                 return
             }
             logger.debug { "[Modal] If3Button: $message (event=$event)" }
-            protectedAccess.launchLenient(player) { eventBus.publish(this, event) }
+            protectedAccess.launchLenient(player) {
+                if (!eventBus.publish(this, event)) {
+                    GameplayLog.unhandled(player) {
+                        "modal-button=${componentType.internalName} sub=$comsub op=${buttonOp.slot}"
+                    }
+                }
+            }
         }
     }
 

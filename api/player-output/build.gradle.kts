@@ -7,6 +7,7 @@ kotlin {
 }
 
 dependencies {
+    implementation(libs.bundles.logging)
     implementation(libs.rsprot.api)
     implementation(projects.api.config)
     implementation(projects.api.type.typeReferences)

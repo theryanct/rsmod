@@ -13,6 +13,7 @@ import org.rsmod.api.player.interact.PlayerInteractions
 import org.rsmod.api.player.interact.PlayerTInteractions
 import org.rsmod.api.player.isValidTarget
 import org.rsmod.api.player.output.ChatType
+import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.output.clearMapFlag
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
@@ -168,6 +169,7 @@ constructor(
                     apRange = -1
                 }
                 InteractionStep.TriggerEngineOp -> {
+                    GameplayLog.input(this@processInteractionStep) { interaction.describe() }
                     mes(Constants.dm_default, ChatType.Engine)
                     interacted = true
                 }
@@ -175,6 +177,17 @@ constructor(
                     /* no-op */
                 }
             }
+        }
+
+    private fun Interaction.describe(): String =
+        when (this) {
+            is InteractionLocOp ->
+                "loc=${target.id} op=${op.slot} at=${target.coords} shape=${target.shapeId}"
+            is InteractionLocT -> "loc=${target.id} use=${objType?.id ?: component.internalName}"
+            is InteractionNpcOp -> "npc=${target.id} '${target.name}' op=${op.slot} at=${target.coords}"
+            is InteractionNpcT -> "npc=${target.id} '${target.name}' use=${objType?.id ?: component.internalName}"
+            is InteractionObj -> "obj=${target.type} op=${op.slot} at=${target.coords}"
+            is InteractionPlayer -> "player=${target.username}"
         }
 
     private fun Player.clearFinishedInteraction() {

@@ -10,6 +10,9 @@ public fun Player.spam(text: String): Unit = mes(text, ChatType.Spam)
 
 /** @see [MessageGame] */
 public fun Player.mes(text: String, type: ChatType = ChatType.GameMessage) {
+    if (text == NOTHING_INTERESTING) {
+        GameplayLog.nothingInteresting(this)
+    }
     val message = MessageGame(type.id, text)
     client.write(message)
 }
@@ -83,3 +86,5 @@ public enum class ChatType(public val id: Int) {
     Dialogue(114),
     Mesbox(115),
 }
+
+private const val NOTHING_INTERESTING = "Nothing interesting happens."
