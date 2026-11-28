@@ -3,9 +3,11 @@ package org.rsmod.content.other.commands
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.account.saver.AccountSavingService
+import org.rsmod.api.account.saver.request.AccountSaveCallback
 import org.rsmod.api.account.saver.request.AccountSaveRequest
 import org.rsmod.api.account.saver.request.AccountSaveResponse
-import org.rsmod.game.GameLifecycle
+import org.rsmod.api.game.process.GameLifecycle
+import org.rsmod.api.script.onEvent
 import org.rsmod.game.entity.PlayerList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -40,11 +42,16 @@ constructor(private val saver: AccountSavingService, private val playerList: Pla
         for (player in playerList) {
             if (player.loggingOut || player.pendingLogout || player.pendingShutdown) continue
             saver.queue(
-                AccountSaveRequest(player.accountId, player.characterId, player) { response ->
+                AccountSaveRequest(
+                    player.accountId,
+                    player.characterId,
+                    player,
+                    AccountSaveCallback { response ->
                     if (response !is AccountSaveResponse.Success) {
                         logger.error { "Autosave failed for '${player.username}': $response" }
                     }
-                }
+                    },
+                )
             )
             queued++
         }

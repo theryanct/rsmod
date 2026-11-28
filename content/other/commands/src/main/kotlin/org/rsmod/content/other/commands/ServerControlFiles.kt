@@ -7,7 +7,8 @@ import java.nio.file.Path
 import org.rsmod.api.player.output.MiscOutput
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.utils.system.SafeServiceExit
-import org.rsmod.game.GameLifecycle
+import org.rsmod.api.game.process.GameLifecycle
+import org.rsmod.api.script.onEvent
 import org.rsmod.game.GameUpdate
 import org.rsmod.game.entity.NpcList
 import org.rsmod.game.entity.PlayerList
