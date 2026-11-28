@@ -12,6 +12,8 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.npc.hit.modifier.StandardNpcHitModifier
 import org.rsmod.api.npc.hit.queueHit
 import org.rsmod.api.npc.isValidTarget
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.statAdvance
@@ -131,6 +133,10 @@ constructor(
         val uuid = player.uuid ?: return
         if (byOwner.containsKey(uuid)) {
             mes("You already have a cannon set up.")
+            return
+        }
+        if (player.isFeatureOn(Feature.QuestGates) && player.vars[CannonVarps.quest] < QUEST_DONE) {
+            mes("You need to complete Dwarf Cannon to set up a cannon.")
             return
         }
         if (CannonObjs.parts.any { invTotal(inv, it) == 0 }) {
@@ -383,6 +389,7 @@ constructor(
 
     private companion object {
         const val MAX_BALLS = 30
+        const val QUEST_DONE = 11
         const val STEEL_MAX = 30
         const val GRANITE_MAX = 35
         const val XP_PER_DAMAGE = 2.0
@@ -451,6 +458,9 @@ internal object CannonProjAnims : ProjAnimReferences() {
 internal object CannonVarps : VarpReferences() {
     /** Server varp (65785): bit 0 cannon placed, bit 1 cannon lost (Nulodion replaces it). */
     val state = find("mcannon_state")
+
+    /** Dwarf Cannon's quest varp (cache end state 11). */
+    val quest = find("mcannon")
 }
 
 internal object CannonVarpBuilds : VarpBuilder() {
