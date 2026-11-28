@@ -1015,3 +1015,25 @@ coords = '0_48_149_32_36'
 [[spawn]]
 npc = 'tote_cordelia_wizard_tower_parent'
 coords = '1_48_49_40_27'
+
+# Biohazard: Omart and Kilron at the wall (Wiki 2560,3266 / 2556,3267), the Mourner HQ's guard (north door),
+# a mourner inside and the sickest one upstairs.
+[[spawn]]
+npc = 'omart'
+coords = '0_40_51_0_2'
+
+[[spawn]]
+npc = 'kilron'
+coords = '0_39_51_60_3'
+
+[[spawn]]
+npc = 'mourner_armed_guard'
+coords = '0_39_52_55_2'
+
+[[spawn]]
+npc = 'mournerstew1'
+coords = '0_39_51_53_60'
+
+[[spawn]]
+npc = 'mournerstew3'
+coords = '1_39_51_53_59'
