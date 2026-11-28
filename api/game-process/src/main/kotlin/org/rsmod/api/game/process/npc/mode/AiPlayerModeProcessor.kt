@@ -19,6 +19,12 @@ constructor(private val playerList: PlayerList, private val interactions: AiPlay
         }
         npc.clearIdleCycles()
         npc.facePlayer(target)
+        // Ranged and magic attackers (attack range > 1) fight from a distance: their combat op is
+        // approached (ap) within their attack range instead of walked up to.
+        if (op == InteractionOp.Op2 && npc.visType.attackRange > 1) {
+            interactions.interactAp(npc, target, op)
+            return
+        }
         interactions.interactOp(npc, target, op)
     }
 
