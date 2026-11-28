@@ -9,7 +9,8 @@ object GameframeComponents : ComponentReferences() {
     val toplevel_stone0 = find("toplevel_osrs_stretch:stone0", 7155480681486208098)
     val toplevel_stone1 = find("toplevel_osrs_stretch:stone1", 285278600489308058)
     val toplevel_stone2 = find("toplevel_osrs_stretch:stone2", 7676560391835148089)
-    val toplevel_stone3 = find("toplevel_osrs_stretch:stone3", 2646130157768021758)
+    // No identity hash: BankAnywhereEdits adds an op to this component.
+    val toplevel_stone3 = find("toplevel_osrs_stretch:stone3")
     val toplevel_stone4 = find("toplevel_osrs_stretch:stone4", 3826555936407378608)
     val toplevel_stone5 = find("toplevel_osrs_stretch:stone5", 5778898284672798350)
     val toplevel_stone6 = find("toplevel_osrs_stretch:stone6", 5256018297228768444)

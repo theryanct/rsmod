@@ -26,7 +26,8 @@ constructor(private val types: ComponentTypeList, private val nameMapping: NameM
         val resolved = copy(packed = packed)
         val cacheType = types[packed] ?: return resolved.err(CacheTypeDoesNotExit)
         val edited = ComponentEditor.applyOps(cacheType.op, ops)
-        if (!edited.contentEquals(cacheType.op)) {
+        val events = ComponentEditor.applyEvents(cacheType.events, ops.keys)
+        if (!edited.contentEquals(cacheType.op) || events != cacheType.events) {
             return resolved.update(CachePackRequired)
         }
         return resolved.ok(FullSuccess)

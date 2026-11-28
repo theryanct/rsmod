@@ -118,7 +118,12 @@ constructor(
         }
         Cache.open(cachePath).use { cache ->
             for (edit in edits.filter { it.packed != -1 }) {
-                ComponentOpPatcher.patch(cache, edit.packed) { ComponentEditor.applyOps(it, edit.ops) }
+                ComponentOpPatcher.patch(cache, edit.packed) {
+                    it.copy(
+                        op = ComponentEditor.applyOps(it.op, edit.ops),
+                        events = ComponentEditor.applyEvents(it.events, edit.ops.keys),
+                    )
+                }
             }
         }
     }
