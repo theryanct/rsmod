@@ -90,7 +90,7 @@ constructor(
         onLocOpLabel(locTypes, DpLocs.harold_door, "Open") { haroldDoor(it) }
         onHeldOpLabel(objTypes, DpObjs.iou, "Read") { readIou() }
         for ((index, ball) in DpObjs.balls.withIndex()) {
-            for (stone in DpLocs.mechanism) onOpLocU(stone, ball) { placeBall(index) }
+            for (stone in DpLocs.mechanism) onOpLocU(stone, ball) { placeBall(index, it.loc.coords) }
         }
         onLocOpLabel(locTypes, DpLocs.equipment_door, "Open") { equipmentDoor(it) }
     }
@@ -278,10 +278,10 @@ constructor(
 
     /* The stone balls and the equipment room */
 
-    private fun ProtectedAccess.placeBall(index: Int) {
+    private fun ProtectedAccess.placeBall(index: Int, stone: CoordGrid) {
         if (state != HAROLD || hasFlag(index)) return
         val spot = BALL_SPOTS[index]
-        if (player.coords.chebyshevDistance(spot) > 1) {
+        if (stone != spot) {
             mes("That doesn't seem to be the right place for this ball.")
             return
         }
