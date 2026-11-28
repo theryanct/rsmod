@@ -26,6 +26,7 @@ import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
+import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
@@ -69,6 +70,7 @@ public object BuiltQuests {
             MURDER_MYSTERY,
             PIRATES_TREASURE,
             PLAGUE_CITY,
+            PRIEST_IN_PERIL,
             PRINCE_ALI_RESCUE,
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,

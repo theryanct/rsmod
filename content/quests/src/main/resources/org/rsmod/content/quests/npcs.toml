@@ -779,3 +779,20 @@ coords = '0_42_55_62_54'
 [[spawn]]
 npc = 'stanford_the_gardener'
 coords = '0_42_55_41_58'
+
+# Priest in Peril: Drezel (cell, then the mausoleum), the temple guardian, the hooded monk.
+[[spawn]]
+npc = 'priestperiltrappedmonk'
+coords = '2_53_54_25_32'
+
+[[spawn]]
+npc = 'priestperiltrappedmonk2'
+coords = '0_53_154_48_39'
+
+[[spawn]]
+npc = 'priestperilguarddog'
+coords = '0_53_154_13_46'
+
+[[spawn]]
+npc = 'priestperilevilmonk3'
+coords = '0_53_54_19_33'

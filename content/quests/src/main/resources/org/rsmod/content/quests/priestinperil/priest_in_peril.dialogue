@@ -1,0 +1,471 @@
+# Generated from the OSRS Wiki page "Transcript:Priest in Peril" by tools/quests/transcript_to_dialogue.py
+0	section	Pre-quest
+0	section	At the temple before starting the quest
+1	box	Doesn't seem like anyone's home.
+1	action	end
+0	section	Attempting to attack the temple guardian
+0	section	Attempting to open the gate
+1	box	The gate is securely locked.
+1	action	end
+0	section	Starting the quest
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	I'm looking for a quest!
+2	line	Player	I'm looking for a quest!
+2	line	King Roald	A quest you say? Hmm... What an odd request to make of the King. It's funny you should mention it though, as there is something you can do for me.
+2	line	King Roald	Are you aware of Paterdomus? It's a temple east of here. It stands on the holy River Salve and guards the only passage into the deadly vampyre-infested lands of Morytania.
+2	select	Select an option
+2	option	Yes, I think I've heard of it.
+3	line	Player	Yes, I think I've heard of it.
+3	line	King Roald	Very good. Well, it has been some days since last I heard from Drezel, the priest who lives there. Be a sport and go check in on the silly old codger for me, would you?
+3	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 15.
+3	select	Start the Priest in Peril quest?
+3	option	Yes.
+4	line	Player	Sure. I don't have anything better to do right now.
+4	line	King Roald	Many thanks, adventurer! I would have sent one of the squires, but they wanted payment for it!
+4	select	Select an option
+4	option	Why do you care about Drezel anyway?
+5	action	below
+4	option	Do I get a reward for this?
+5	action	below
+4	option	I'll get going.
+5	line	Player	I'll get going.
+5	action	end
+3	option	No.
+4	line	Player	No. That sounds boring.
+4	line	King Roald	Yes, I dare say it does. I wouldn't even have mentioned it had you not seemed to be looking for something to do anyway.
+4	action	end
+1	option	Not really.
+1	line	Player	Not really.
+2	line	King Roald	You will have to excuse me then. I am very busy as I have a kingdom to run!
+2	action	end
+0	section	Talking to King Roald again
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	You have news of Drezel for me?
+2	select	Select an option
+2	option	Where am I supposed to go again?
+3	line	Player	Where am I supposed to go again?
+3	line	King Roald	The temple of Paterdomus where Drezel lives. It is but a short journey east from here. It lies at the source of the River Salve. Don't worry, you can't miss it.
+3	action	other
+2	option	Why do you care about Drezel anyway?
+3	line	Player	Why do you care about Drezel anyway?
+3	line	King Roald	Well, that is a slightly impertinent question to ask of your King, but I shall overlook it this time.
+3	line	King Roald	As you are no doubt aware, this kingdom worships Saradomin, the god of wisdom and order. As such, it is a peaceful place to live and prosper.
+3	line	King Roald	Paterdomus, the temple where Drezel lives, stands on the eastern border of Misthalin. It guards the only passage into the evil lands of Morytania.
+3	line	Player	Evil?
+3	line	King Roald	Oh yes. Morytania is a fearful place, filled to the brim with accursed servants of the chaos god Zamorak. All of them are terrible, but none more so than the rulers of the region, the vampyres.
+3	line	King Roald	Thankfully, the sacred River Salve marks a natural border between Misthalin and Morytania. The waters of the river have been blessed with Saradomin's almighty power, preventing any invasion by the vampyres.
+3	line	King Roald	Drezel is descended from one of the original Saradominist priests who first blessed the river. His job is to ensure nothing happens to the river that might allow the evil of Morytania to invade this land.
+3	line	King Roald	This is the reason why the lack of communication from him bothers me somewhat, although I am sure it's nothing too serious. Nobody would dare to try and attack our kingdom!
+3	action	other
+2	option	Do I get a reward for this?
+3	line	Player	Do I get a reward for this?
+3	line	King Roald	You will be rewarded with the knowledge that you have done the right thing and assisted the King of Misthalin.
+3	line	Player	So... that would be a 'no' then?
+3	line	King Roald	That is correct.
+3	action	other
+2	option	I have to go.
+3	line	Player	I have to go.
+3	action	end
+1	option	Not really.
+2	action	above
+0	section	At the temple
+1	box	You knock at the door...
+1	line	Mysterious Voice	Who are you and what do you want?
+1	line	Player	Er...
+1	select	Select an option
+1	option	King Roald sent me to check on Drezel.
+2	line	Player	King Roald sent me to check on Drezel.
+2	line	Mysterious Voice	Drezel? Right... I, er... Just give me a moment.
+2	box	You hear someone moving around followed by what sounds like panicked muttering.
+2	line	Mysterious Voice	Okay, he's just coming! Wait a second!
+2	line	Mysterious Voice 2	Hello, my name is Drevil.
+2	line	Mysterious Voice	Drezel!
+2	line	Mysterious Voice 2	I mean Drezel. How can I help?
+2	line	Player	Er... Is everything okay in there?
+2	line	Mysterious Voice 2	Yes, totally fine. Now, what can I do for you?
+2	line	Player	Well, the King hadn't heard from you for a few days. He sent me to make sure everything's okay.
+2	line	Mysterious Voice 2	I see... And, uh, what would you do if everything wasn't okay?
+2	line	Player	I'm not sure. Ask you what help you need I suppose.
+2	line	Mysterious Voice 2	Ah, good, well, I don't think...
+2	line	Mysterious Voice	Hey... The dog!
+2	line	Mysterious Voice 2	Ah, actually there is something I could use some help with. Will you do me a favour, adventurer?
+2	line	Player	What kind of favour?
+2	line	Mysterious Voice 2	Well, there's this horrible big... dog-like thing that's moved into the mausoleum outside. It's causing all kinds of problems. Could you get rid of it for me?
+2	line	Player	I don't know... Something about all this seems a bit suspicious... I think I'd better go and check in with the King.
+2	line	Mysterious Voice 2	No, no, there's no need for that. He's a very busy man! Besides, you said yourself that he sent you here to help me, right?
+2	line	Player	Right...
+2	line	Mysterious Voice 2	Then please, deal with that dog for me.
+2	line	Player	Hmm...
+2	action	end
+1	option	Hi, I just moved in next door.
+2	line	Player	Hi, I just moved in next door.
+2	line	Mysterious Voice	What?
+2	line	Player	Yeah, and I was just wondering if I could borrow a cup of coffee?
+2	line	Mysterious Voice	Next door? Coffee? What are you on about? Who are you?
+2	action	other
+1	option	I hear this place is of historic interest.
+2	line	Player	I hear this place is of historic interest.
+2	line	Mysterious Voice	Right... And?
+2	line	Player	Can I come in and have a wander around? Possibly look at some antiques or buy something from your gift shop?
+2	line	Mysterious Voice	Gift shop? What are you on about? This isn't a museum! Clear off!
+2	action	other
+1	option	The council sent me to check your pipes.
+2	line	Player	The council sent me to check your pipes.
+2	line	Mysterious Voice	Pipes? We don't have any pipes! Now get lost!
+2	action	other
+1	option	Nothing. Never mind.
+2	line	Player	Nothing. Never mind.
+2	action	end
+1	option	Actually, never mind.
+2	line	Player	Actually, never mind.
+2	action	end
+0	section	Knocking on the door after accepting to kill the dog
+1	box	You knock at the door...
+1	line	Mysterious Voice 2	Hello? Is that you again, adventurer? Have you dealt with that dog yet?
+1	line	Player	Not yet...
+1	line	Mysterious Voice 2	But you're going to, right? For good old Delzig?
+1	line	Mysterious Voice	Drezel!
+1	line	Mysterious Voice 2	Sorry, for good old Drezel, right?
+1	line	Player	Hmm...
+0	section	Attacking the Temple Guardian
+1	cond	If the player attempts to use Magic spells on the guardian:
+2	action	end
+0	section	Talking to King Roald after accepting to kill the dog
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	You have news of Drezel for me?
+2	line	Player	Well... I went to the temple like you asked me to... and I spoke to someone inside...
+2	line	King Roald	Ah, well that must have been Drezel then. What did he say?
+2	line	Player	Well... he seemed to be having some kind of trouble. He asked for my help.
+2	line	King Roald	Well, I expect you to offer him your full assistance in whatever he needs.
+2	line	Player	But-
+2	line	King Roald	Now, run along. I have a lot to do and it sounds like Drezel needs you.
+2	line	Player	Well... okay then.
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	You killed a dog!
+1	line	Player	There we go, one dead dog. I should go and tell Drezel.
+1	action	end
+0	section	Letting the monks know you did the deed
+1	box	You knock at the door...
+1	line	Mysterious Voice 2	Is that you, adventurer? Have you dealt with that dog?
+1	line	Player	Yes, it's done.
+1	line	Mysterious Voice 2	Really? Well... thank you! That's really... quite something.
+1	line	Mysterious Voice	Ha! Brilliant! Good work, adventurer.
+1	line	Player	Don't mention it... Is there anything else you need?
+1	line	Mysterious Voice 2	I think it's safe to say that you've done more than enough, adventurer.
+1	line	Player	Okay... I guess I'd better go and let the King know.
+0	section	Talking to the monks again
+1	line	Mysterious Voice 2	Is that you, adventurer? Once again, thank you so much for dealing with that dog. It's really... quite something.
+1	line	Player	Don't mention it... Now, I guess I'd better report back to the King.
+0	section	Talking to King Roald about the now dead dog
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	You have news of Drezel for me?
+2	line	Player	Well, I went to the temple and spoke to... Drezel. He asked me to kill a dog in the mausoleum.
+2	line	King Roald	A dog? Tell me you didn't do it?!
+2	line	Player	Well...
+2	line	King Roald	Are you a complete imbecile?
+2	line	Player	I tried to tell you it was a bit suspicious, but you told me to help Drezel!
+2	line	King Roald	Do you even realise what you've done? That mausoleum contains the only passage between Morytania and Misthalin! Not only that, it's built right over the source of the River Salve!
+2	line	King Roald	That 'dog' was responsible for guarding the entrance to the mausoleum! With it gone, there's nothing to stop someone from sabotaging the blessings on the river. Thanks to you, all of Misthalin is now at risk!
+2	line	Player	But Drezel...
+2	line	King Roald	Do you not see what's happened here, you absolute cretin! Obviously some fiend has done something to Drezel and tricked your feeble intellect into helping them!
+2	line	King Roald	Now you get back there and get this mess sorted out. If you don't do whatever is necessary to safeguard this kingdom from attack, I will see you beheaded for high treason!
+2	line	Player	Y-yes, your highness.
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	Talking to him again
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	Why haven't you ensured the border with Morytania is secure yet?
+2	line	Player	Okay, okay... I'm going, I'm going... There's no need to shout...
+2	line	King Roald	No need to shout?! Listen, and listen well, and see if your puny mind can comprehend this: if the border is not protected, then we are all at the mercy of the vampyres!
+2	line	King Roald	I would say that me shouting at you for your incompetence is the least of your worries right now. Now get yourself back to Paterdomus! At once!
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	Saving Drezel and the world
+0	section	Attempting to open the coffin on the top floor
+1	line	Player	It sounds like there's something alive inside it. I don't think it would be a very good idea to open it...
+1	action	end
+0	section	Meeting Drezel
+1	line	Player	Hello.
+1	line	Drezel	Oh! You do not appear to be one of those Zamorakians who imprisoned me! Who are you and why are you here?
+1	line	Player	My name's {player}. King Roald sent me to find out what was going on at the temple. I take it you're Drezel?
+1	line	Drezel	That's right! Oh, praise be to Saradomin! I feared that when those Zamorakians attacked this place, Misthalin would be doomed!
+1	line	Player	Why? What are they planning to do?
+1	line	Drezel	I believe they aim to desecrate the blessings placed upon the holy River Salve by the Seven Priestly Warriors themselves! We'd be left defenceless against the vampyres of Morytania!
+1	select	Select an option
+1	option	Seven Priestly Warriors?
+2	line	Player	Seven Priestly Warriors?
+2	line	Drezel	Indeed. While this isn't the... ideal time for a history lesson, this knowledge may help you with our next steps, so allow me to explain...
+2	line	Drezel	It is said that many years ago, the land that is now Morytania was a peaceful Saradominist kingdom. Alas, all that ended when the vampyres invaded, claiming the land as their own.
+2	line	Drezel	Morytania wasn't enough for them though. Soon, they set their sights on these lands as well. Misthalin would have quickly fallen to the vampyres, were it not for the bravery of the Seven Priestly Warriors.
+2	line	Drezel	They led the armies of Misthalin against the vampyres, with the war culminating in a great battle that took place right where this temple stands.
+2	line	Drezel	For ten days and nights they fought, never sleeping, never eating, fuelled only by their faith in Saradomin.
+2	line	Drezel	On the eleventh day, reinforcements arrived, but when they did, they found the Seven Priestly Warriors had been slain by the vampyres, along with most of their forces.
+2	line	Drezel	However, their sacrifice was not in vain. Before they were defeated, the Seven Priestly Warriors managed to bless the Salve with the holy power of Saradomin.
+2	line	Drezel	Those blessings remain to this day, ensuring no vampyre can cross the river. The temple here was built soon after. It guards the source of the River Salve, and acts as the only passage into Morytania.
+2	line	Player	And what about the mausoleum below?
+2	line	Drezel	That is the most important part of the temple, for it is where the passage into Morytania is found. It is also the final resting place of the Seven Priestly Warriors.
+2	line	Drezel	Their tombs are built around the well that provides direct access to the source of the Salve, with a golden gift placed upon each of the tombs as a mark of respect.
+2	line	Player	I see. And you think those Zamorakians are going to try and remove the blessings on the river?
+2	line	Drezel	I fear that is almost certainly their goal.
+2	line	Player	So what do we do?
+2	line	Drezel	First, we need to get me out of this cell. The leader of those Zamorakians probably has the key. I believe he's the one in the hood.
+2	line	Player	So I need to go and find this key. Anything else I should be aware of?
+2	line	Drezel	I'm afraid so. When the Salve was first blessed, a small number of vampyres were left trapped on this side of it. They were heavily weakened, but still posed a dangerous threat.
+2	line	Drezel	Even with them weakened, the brave Saradominists who built this temple were unable to kill them. Instead, they trapped them in coffins and buried them outside the temple.
+2	line	Drezel	This coffin here contains one of those vampyres. The Zamorakians must have dug it up and brought it in here with them.
+2	line	Player	But why?
+2	line	Drezel	Well, as those fiends pointed out to me with delight, as I am the descendant of one of the Seven Priestly Warriors who blessed the river, it will likely recognise the smell of my blood.
+2	line	Drezel	If I get too close, it will probably wake up and kill me, very slowly and painfully.
+2	line	Player	Maybe I could kill it somehow?
+2	line	Drezel	I would not risk waking it. Even now, it could pose a huge threat. The priests of old would incapacitate trapped vampyres with the blessings of Saradomin. Perhaps there's a way for you do the same.
+2	line	Player	Right. So, I need to find the key to your cell and do something about the vampyre. Got it.
+2	line	Drezel	Good luck.
+1	option	What do we do?
+2	action	Continues above from "So what do we do?"
+0	section	Talking to Drezel again
+1	line	Drezel	How goes it, adventurer? Any luck in finding the key to the cell or a way of stopping the vampyre yet?
+1	line	Player	No, not yet...
+1	line	Drezel	Well, don't give up adventurer! The key must be nearby. Most likely the leader of those Zamorakians has it. I believe he's the one in the hood.
+1	line	Drezel	As for the vampyre, the priests of old would incapacitate the ones they'd trapped with the blessings of Saradomin. Perhaps there's a way for you do the same.
+1	select	Select an option
+1	option	Could you tell me more about this temple?
+2	line	Player	Could you tell me more about this temple?
+2	line	Drezel	It is said that many years ago, the land that is now Morytania was a peaceful Saradominist kingdom. Alas, all that ended when the vampyres invaded, claiming the land as their own.
+2	line	Drezel	Morytania wasn't enough for them though. Soon, they set their sights on these lands as well. Misthalin would have quickly fallen to the vampyres, were it not for the bravery of the Seven Priestly Warriors.
+2	line	Drezel	They led the armies of Misthalin against the vampyres, with the war culminating in a great battle that took place right where this temple stands.
+2	line	Drezel	For ten days and nights they fought, never sleeping, never eating, fuelled only by their faith in Saradomin.
+2	line	Drezel	On the eleventh day, reinforcements arrived, but when they did, they found the Seven Priestly Warriors had been slain by the vampyres, along with most of their forces.
+2	line	Drezel	However, their sacrifice was not in vain. Before they were defeated, the Seven Priestly Warriors managed to bless the Salve with the holy power of Saradomin.
+2	line	Drezel	Those blessings remain to this day, ensuring no vampyre can cross the river. The temple here was built soon after. It guards the source of the River Salve, and acts as the only passage into Morytania.
+2	line	Player	And what about the mausoleum below?
+2	line	Drezel	That is the most important part of the temple, for it is where the passage into Morytania is found. It is also the final resting place of the Seven Priestly Warriors.
+2	line	Drezel	Their tombs are built around the well that provides direct access to the source of the Salve, with a golden gift placed upon each of the tombs as a mark of respect.
+2	line	Player	I see. Thanks for the information. I'll get going.
+2	action	end
+1	option	I'll get going.
+2	line	Player	I'll get going.
+2	action	end
+0	section	Updating King Roald
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	Is the border with Morytania secure yet?
+2	line	Player	Not yet, but I'm working on it. First I need to free Drezel. He's been imprisoned by some Zamorakian monks.
+2	line	King Roald	What? This is wholly unacceptable! I order you to do all that you can to free Drezel immediately!
+2	line	Player	Yes, as I said, that's what I'm working on.
+2	line	King Roald	Good work! Always a place for quick thinkers in my kingdom!
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	Talking to Drezel with the golden key
+1	line	Drezel	How goes it, adventurer? Any luck in finding the key to the cell or a way of stopping the vampyre yet?
+1	line	Player	I have this key I took from the leader of the Zamorakians, but it doesn't seem to fit the lock on the gate.
+1	line	Drezel	Strange... The right key must be nearby. Maybe they hid it somewhere...
+1	select	Select an option
+1	option	Could you tell me more about this temple?
+2	action	above
+1	option	I'll get going.
+2	action	above
+0	section	Using the golden key on the lock
+1	box	You try to use the key to unlock the gate. The key is a similar size to the lock, but does not fit.
+1	line	Player	Hmm... Why was that monk carrying this key if it's not for this cell?
+1	action	end
+0	section	Exchanging the golden key with the iron key
+1	box	You swap the Golden key for the Iron key.
+1	action	end
+0	section	Interacting with the other monuments
+0	section	Talking to Drezel with murky water before unlocking the cell
+1	line	Drezel	How goes it, adventurer? Any luck in finding the key to the cell or a way of stopping the vampyre yet?
+1	line	Player	I have some water from the Salve. Do you think we could use this to deal with the vampyre?
+1	line	Drezel	Hmm... Yes, that could work. However, I'll first need to see if it's already been desecrated by those Zamorakians.
+1	line	Player	Which means I'm going to need to get this gate open first.
+1	line	Drezel	Indeed.
+1	select	Select an option
+1	option	Could you tell me more about this temple?
+2	action	above
+1	option	I'll get going.
+2	action	above
+0	section	Talking to Drezel with the iron key
+1	line	Drezel	How goes it, adventurer? Any luck in finding the key to the cell or a way of stopping the vampyre yet?
+1	line	Player	I have this key I found down in the mausoleum.
+1	line	Drezel	Excellent work! Quickly, try it on the gate, and see if it will free me!
+1	select	Select an option
+1	option	Could you tell me more about this temple?
+2	action	above
+1	option	I'll get going.
+2	action	above
+1	box	You use the key to unlock the cell gate.
+1	line	Player	The key fit the lock!
+1	cond	If the player has murky water:
+2	line	Drezel	Excellent work! Now we just need the vampyre dealing with.
+2	line	Player	Well, I have some water from the Salve here.
+2	line	Drezel	Very good. Let me have a look at it.
+2	box	Drezel inspects the water. He then says some sort of prayer.
+2	cond	First time blessing water:
+3	line	Drezel	It's as I feared. Those Zamorakians have already desecrated the Salve. However, I've managed to purify this water again with the blessings of Saradomin. You should be able to use it against the vampyre now.
+3	line	Player	I'll do that right away.
+2	action	end
+1	cond	If the player doesn't have murky water:
+2	line	Drezel	Excellent work! Now we just need the vampyre dealing with. The priests of old would incapacitate the ones they'd trapped with the blessings of Saradomin.
+2	line	Player	Blessings of Saradomin? How did they do that?
+2	line	Drezel	The most common way was with holy water.
+2	line	Player	Like the water of the Salve perhaps?
+2	line	Drezel	Well, that may well depend on if the Zamorakians have already desecrated it. One step at a time though. First, why don't you try and get hold of some?
+2	action	end
+0	section	Talking to Drezel with blessed water
+1	line	Drezel	Excellent work getting the cell unlocked! Now we just need the vampyre dealing with. That water I blessed for you should do it. Pour it on the coffin, quickly!
+1	action	end
+0	section	Searching the well
+1	box	You look down the well and see the water of the River Salve moving slowly along.
+1	action	end
+0	section	Filling a bucket from the well
+1	box	You fill the bucket from the well.
+0	section	Attempting to pour normal water on the coffin
+1	line	Player	I don't think pouring normal water on the coffin is going to help...
+1	action	end
+0	section	Attempting to pour murky water on the coffin
+1	line	Player	This water doesn't look particularly holy to me... I think I'd better check with Drezel first.
+1	action	end
+0	section	Pouring blessed water on the coffin
+1	box	You pour the blessed water over the coffin...
+1	action	end
+0	section	Attempting to open the coffin again
+1	line	Player	The vampyre should be dealt with. I'd still best not risk it though.
+1	action	end
+0	section	Updating King Roald
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	Is the border with Morytania secure yet?
+2	line	Player	Not yet, but Drezel and I are working on it.
+2	line	King Roald	Well, best you get back to it then. This is a matter of national security and if I find out we are vulnerable I will hold you personally responsible!
+2	line	Player	Yes, your highness.
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	After Drezel is freed and the vampyre is sealed
+1	line	Player	I poured the blessed water over the coffin. That vampyre shouldn't cause us any trouble now.
+1	line	Drezel	Excellent work, adventurer! Now, meet me down in the mausoleum. We need to revert the damage those Zamorakians did as soon as possible!
+1	action	end
+0	section	Talking to Drezel again
+1	line	Drezel	Meet me down in the mausoleum. We need to revert the damage those Zamorakians did as soon as possible!
+1	line	Player	Okay.
+1	action	end
+0	section	Talking to King Roald again
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job I'm doing...
+2	line	Player	About that job I'm doing...
+2	line	King Roald	Is the border with Morytania secure yet?
+2	line	Player	Not yet, but Drezel and I are working on it.
+2	line	King Roald	Good, good. Keep up the good work.
+2	action	end
+1	option	Not really.
+2	action	above
+0	section	Attempting to pass the holy barrier before securing the barrier
+1	line	Drezel	Stop!
+1	line	Player	Can't I go through there?
+1	line	Drezel	No, you cannot! It is taking all of my willpower to hold that barrier in place. You must restore the sanctity of the Salve as soon as possible!
+1	action	end
+0	section	Repairing the barrier
+1	line	Drezel	Ah, {player}. Glad you made it. Things are worse than I feared down here. I'm not sure if I will be able to repair the damage.
+1	line	Player	How bad is it?
+1	line	Drezel	From what I can tell, those Zamorakians used some kind of potion to pollute the Salve. With this being the source, it has already started to spread down the river.
+1	line	Drezel	Before long, the blessings placed upon the river will be irreversably damaged. There will be nothing to stop the vampyres from invading Misthalin at their leisure.
+1	line	Player	Could you not bless the river like you did with that water earlier?
+1	line	Drezel	I'm afraid not. Blessing a small bucket is one thing, but the power I have from Saradomin is nowhere near enough to cleanse an entire river.
+1	line	Drezel	However, I believe there might still be a way to undo this, but I'm going to need your help. This passage is the only route between Morytania and Misthalin. The barrier here draws power from the river.
+1	line	Drezel	I have managed to reinforce the barrier, but I must continue focussing on it to keep it intact. While I do that, I will need you to soak up the evil magic that potion has released into the river.
+1	line	Player	Soak up the magic? How?
+1	line	Drezel	I'm sure you know of runes, used by mages to power their spells. The essence used to create them absorbs magical potential from runic altars to be released later.
+1	line	Player	Ah, I see where this is going. You think we can use some rune essence to absorb the magic that potion released into the Salve?
+1	line	Drezel	Exactly. If you could bring me fifty essence, I should be able to reverse the damage done. Be quick though. The longer we wait, the worse things will get.
+1	action	end
+0	section	Talking to Drezel again
+1	line	Player	What am I supposed to do again?
+1	line	Drezel	Bring me fifty rune essence so that I can undo the damage done by those Zamorakians.
+1	action	end
+0	section	Bringing Drezel essence
+1	line	Player	I brought you some rune essence.
+1	line	Drezel	Quickly, give them to me!
+1	box	You give Drezel some essence.
+1	line	Drezel	Thank you. I need [1-50] more.
+1	action	end
+0	section	Talking to Drezel again
+1	line	Player	How much more essence do I need to bring you?
+1	line	Drezel	I need [1-50] more.
+1	action	end
+0	section	Bringing Drezel noted essence
+1	line	Player	I brought you some rune essence.
+1	line	Drezel	You have brought me notes saying 'I promise to pay the bearer on demand the listed number of Rune Essence.' How is that supposed to help me?
+1	action	end
+0	section	Giving Drezel the last of the essence
+1	line	Player	I brought you some more essence.
+1	line	Drezel	Quickly, give them to me!
+1	box	You give Drezel some essence.
+1	line	Drezel	Excellent! That should do it! I will bless these stones and place them within the well so they can soak up the magic from that potion. Misthalin will be safe from the vampyres once more!
+1	line	Player	What about the Zamorakians upstairs?
+1	line	Drezel	They hopefully shouldn't be too much trouble now that their leader is dead, but I will write to the King and ask him to make sure they're dealt with properly.
+1	line	Drezel	For now though, please take this dagger. It has been handed down within my family for generations and is filled with the power of Saradomin. Consider it a small thank you for your help here.
+1	line	Player	So can I pass through that barrier now?
+1	line	Drezel	Into Morytania? Yes, you can. The barrier will prevent the servants of Zamorak from entering Misthalin, but it is safe for those blessed by Saradomin.
+1	line	Drezel	I must warn you though, Morytania is an evil land. The region is filled with creatures and monsters more terrifying than any you'll find on this side of the Salve.
+1	line	Drezel	Worst of all are the vampyres, the rulers of Morytania. Be very cautious of their kind. Many are completely immune to human weaponry. Those that aren't, are still very hard to kill.
+1	line	Player	I'll be careful. Anything else I should know?
+1	line	Drezel	The first settlement you'll likely come across is Canifis, a town of werewolves. They probably won't attack you unless provoked, but you should still be cautious.
+1	line	Drezel	You should keep that dagger I gave you to hand. Its magic will prevent them from taking on their wolf form.
+1	line	Player	I see. Thanks.
+1	line	Drezel	One last thing. While in Morytania, stay alert for any mention of the Myreque.
+1	line	Player	The Myreque?
+1	line	Drezel	Yes. They're a band of freedom fighters. They fight to protect the humans trapped in Morytania from the tyranny of the vampyres. Their hope is to one day rid the region of all evil.
+1	line	Drezel	Veliaf, the leader of their Mort Myre group, is an old friend. I imagine they'd appreciate the help of someone like you, if you can find them.
+1	line	Player	I'll keep an eye out for them.
+1	line	Drezel	Right, I think that's everything. Just the blessing itself now. Hold still a moment.
+1	box	Drezel blesses you, allowing you to pass through the barrier into Morytania.
+1	line	Drezel	Good luck out there. Stay safe.
+1	option	Do you know of anything I can do in Morytania?
+2	action	Continues on Transcript:Drezel
+1	option	And you. See you later.
+2	line	Player	And you. See you later.
+2	action	end
+0	section	Talking to King Roald
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	About that job you gave me...
+2	line	Player	About that job you gave me...
+2	line	King Roald	Ah, yes, we recieved word from Drezel. I hear the Salve is safe once more. Very good work!
+2	line	Player	Thank you. Will you be sending some soldiers over to sort out those Zamorakians?
+2	line	King Roald	Yes, yes, we'll make sure they're dealt with. Might take a little while, mind you. Lots of priorities to balance around here. I'm sure we'll have them gone before the end of the year though.
+2	line	Player	Right...
+2	action	end
+1	option	Not really.
+2	line	Player	Not really.
+2	line	King Roald	You will have to excuse me then. I am very busy as I have a kingdom to run!
+2	action	end
