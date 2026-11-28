@@ -9,6 +9,8 @@ import org.rsmod.api.config.refs.varns
 import org.rsmod.api.config.refs.varps
 import org.rsmod.api.npc.access.StandardNpcAccess
 import org.rsmod.api.npc.vars.typePlayerUidVarn
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.soundSynth
 import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.player.vars.typeNpcUidVarp
@@ -19,6 +21,8 @@ import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.PlayerList
 import org.rsmod.game.entity.npc.NpcUid
+import org.rsmod.game.type.obj.ObjType
+import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.seq.SeqTypeList
 import org.rsmod.map.CoordGrid
 
@@ -32,6 +36,7 @@ constructor(
     private val objRepo: ObjRepository,
     private val dropTables: NpcDropTables,
     private val eventBus: EventBus,
+    private val objTypes: ObjTypeList,
 ) {
     public suspend fun deathNoDrops(access: StandardNpcAccess) {
         access.death(npcRepo, seqTypes, players)
@@ -51,13 +56,29 @@ constructor(
         val duration = hero.lootDropDuration ?: constants.lootdrop_duration
         // Npcs without a wiki drop table keep the old default: a single bones drop.
         val drops = dropTables.roll(id)
+        val noted = hero.isFeatureOn(Feature.NotedDrops)
         if (drops == null) {
-            objRepo.add(objs.bones, dropCoords, duration, hero)
+            objRepo.add(dropType(objs.bones, noted), dropCoords, duration, hero)
             return
         }
         for ((type, count) in drops) {
-            objRepo.add(type, dropCoords, duration, hero, count)
+            objRepo.add(dropType(type, noted), dropCoords, duration, hero, count)
         }
+    }
+
+    /**
+     * "Noted combat drops" feature: drops with a noted form spawn noted; coins and other
+     * stackables (which have none) are unchanged.
+     */
+    private fun dropType(type: ObjType, noted: Boolean): ObjType {
+        if (!noted) {
+            return type
+        }
+        val unpacked = objTypes[type]
+        if (unpacked.isStackable || !unpacked.canCert) {
+            return type
+        }
+        return objTypes.cert(unpacked)
     }
 
     // Note: We may be able to have `Npc` as the arg instead of `StandardNpcAccess`, however we
