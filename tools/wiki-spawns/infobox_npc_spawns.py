@@ -59,8 +59,7 @@ OBJLINE_EXCLUDE = re.compile(r"Tutorial Island|Tempoross|Birthday|Boat fishing|F
                              r"Hemenster|Hallowed Sepulchre|Iceberg|Chair \(|Elemental rock|Odd tree", re.I)
 # Fishing spot types the Fishing binder would resolve to the wrong catch (op labels alone can't tell
 # them apart): held back until skilling special-cases them. Remove an entry here once it's bound.
-FISHING_HELD = re.compile(r"karambwanji|0_37_59_tuna|_crabs$|minnow_|camdozaal_fish|lavafish|slimey_eel|cavefish|"
-                          r"lanternfish|morulrek_eels|piscariliusfish")
+FISHING_HELD = re.compile(r"0_37_59_tuna|minnow_|camdozaal_fish|lanternfish|tempoross_.*fishingspot")
 SQUARE = re.compile(r"^(?:\d_)?(\d+)_(\d+)_")
 
 
@@ -255,7 +254,7 @@ def main():
                 if re.fullmatch(r"id\d*", k): ids |= {i for i in ints(v) if i in sym}
         cands = [i for i in sorted(ids) if not SPECIAL_ID.search(sym[i]) and sym[i] not in exclude
                  and not re.search(r"fake|deal_|fishing_boat_|inactive|newbie|contest|compofish|sinister|"
-                                   r"bigdave|joshua|rag3_|snakeboss|tempoross", sym[i])
+                                   r"bigdave|joshua|rag3_|tempoross", sym[i])
                  and (cname(i) == base or cname(parent.get(i, i)) == base)]
         if not cands:
             log.append((title, "", "objectlocline: no ids", ",".join(sym[i] for i in sorted(ids))[:120]))

@@ -153,7 +153,7 @@ Blue Opal Director	v2	excluded location/version	Keldagrim
 Blue Sheep		temporary (lead text)	during the quest
 Boar31337Killer		special/runtime ids only	gim_boar_killer
 Boat fishing spot (Piscatoris Fishing Colony)		cache name mismatch	fishing_boat_monkfish
-Boat fishing spot (anglerfish)		special/runtime ids only	fishing_boat_piscariliusfish
+Boat fishing spot (anglerfish)		cache name mismatch	fishing_boat_piscariliusfish
 Boat fishing spot (big net, harpoon)		cache name mismatch	fishing_boat_memberfish
 Boat fishing spot (cage, harpoon)		cache name mismatch	fishing_boat_rarefish
 Boat fishing spot (karambwan)		cache name mismatch	fishing_boat_karambwanfish
@@ -484,20 +484,6 @@ Fishing spot (big net, harpoon)		held spot type	0_37_59_tuna 0,2409,3783
 Fishing spot (big net, harpoon)		held spot type	0_37_59_tuna 0,2419,3783
 Fishing spot (big net, harpoon)		held spot type	0_37_59_tuna 0,2422,3789
 Fishing spot (cage, harpoon)		objectlocline excluded location	Wilderness East Coast (Only on Free-to-play worlds)
-Fishing spot (dark crab)		held spot type	49_61_crabs 0,3181,3926
-Fishing spot (dark crab)		held spot type	49_61_crabs 0,3183,3926
-Fishing spot (dark crab)		held spot type	49_61_crabs 0,3185,3926
-Fishing spot (dark crab)		held spot type	49_61_crabs 0,3187,3927
-Fishing spot (dark crab)		held spot type	52_59_crabs 0,3349,3793
-Fishing spot (dark crab)		held spot type	52_59_crabs 0,3350,3817
-Fishing spot (frog spawn, eels)		held spot type	0_42_81_cavefish_east 0,2694,5226
-Fishing spot (frog spawn, eels)		held spot type	0_42_81_cavefish_east 0,2746,5230
-Fishing spot (frog spawn, eels)		held spot type	0_45_90_cavefish 0,2925,5810
-Fishing spot (frog spawn, eels)		held spot type	0_49_149_cavefish 0,3154,9544
-Fishing spot (frog spawn, eels)		held spot type	0_50_149_cavefish 0,3245,9570
-Fishing spot (karambwanji)		held spot type	0_43_47_karambwanji 0,2791,3019
-Fishing spot (karambwanji)		held spot type	0_43_47_karambwanji 0,2801,3010
-Fishing spot (karambwanji)		held spot type	0_43_47_karambwanji 0,2807,3021
 Fishing spot (lantern)		held spot type	0_18_42_lanternfish 0,1173,2724
 Fishing spot (lantern)		held spot type	0_18_42_lanternfish 0,1176,2717
 Fishing spot (lantern)		held spot type	0_18_42_lanternfish 0,1178,2717
@@ -516,34 +502,10 @@ Fishing spot (lantern)		held spot type	0_46_35_lanternfish 0,3003,2274
 Fishing spot (lantern)		held spot type	0_46_35_lanternfish 0,3003,2275
 Fishing spot (lantern)		held spot type	0_46_35_lanternfish 0,3004,2279
 Fishing spot (lantern)		held spot type	0_46_35_lanternfish 0,3004,2280
-Fishing spot (lava eel)		held spot type	0_40_134_lavafish 0,2611,8598
-Fishing spot (lava eel)		held spot type	0_42_138_lavafish 0,2724,8845
-Fishing spot (lava eel)		held spot type	0_45_152_lavafish 0,2889,9766
-Fishing spot (lava eel)		held spot type	0_45_152_lavafish 0,2890,9766
-Fishing spot (lava eel)		held spot type	0_45_152_lavafish 0,2891,9766
-Fishing spot (lava eel)		held spot type	0_47_59_lavafish 0,3070,3839
 Fishing spot (minnow)		held spot type	minnow_fishingspot1 0,2609,3443
 Fishing spot (minnow)		held spot type	minnow_fishingspot1 0,2612,3444
 Fishing spot (minnow)		held spot type	minnow_fishingspot1 0,2617,3444
 Fishing spot (minnow)		held spot type	minnow_fishingspot1 0,2620,3443
-Fishing spot (sacred eel)		objectlocline: no ids	snakeboss_fishingspot
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3437,3272
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3439,3276
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3440,3271
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3440,3280
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3443,3272
-Fishing spot (swamp)		held spot type	0_53_51_slimey_eel 0,3445,3274
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3424,3409
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3425,3407
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3425,3410
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3431,3415
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3434,3417
-Fishing spot (swamp)		held spot type	0_53_53_slimey_eel 0,3440,3410
-Fishing spot (swamp)		held spot type	0_54_53_slimey_eel 0,3479,3434
-Fishing spot (swamp)		held spot type	0_54_53_slimey_eel 0,3481,3437
-Fishing spot (swamp)		held spot type	0_54_53_slimey_eel 0,3482,3430
-Fishing spot (swamp)		held spot type	0_54_53_slimey_eel 0,3483,3449
-Fishing spot (swamp)		held spot type	0_54_53_slimey_eel 0,3490,3444
 Flippa		excluded title	
 Floopa	v1	special/runtime ids only	tt_floopa_injured_vis
 Floopa	v2	special/runtime ids only	tt_floopa_recovering_noname_vis
@@ -1172,14 +1134,6 @@ Rick Turpentine		excluded title
 Robert Boss		excluded title	
 Robert O'Reilly		special/runtime ids only	piscquest_citizen
 Rocking chair (2021 Halloween event)		excluded title	
-Rod Fishing spot (anglerfish)		held spot type	piscariliusfish 0,1826,3770
-Rod Fishing spot (anglerfish)		held spot type	piscariliusfish 0,1827,3770
-Rod Fishing spot (anglerfish)		held spot type	piscariliusfish 0,1833,3769
-Rod Fishing spot (infernal eel)		held spot type	morulrek_eels_fishingspot 0,2446,5104
-Rod Fishing spot (infernal eel)		held spot type	morulrek_eels_fishingspot 0,2477,5078
-Rod Fishing spot (infernal eel)		held spot type	morulrek_eels_fishingspot 0,2479,5078
-Rod Fishing spot (infernal eel)		held spot type	morulrek_eels_fishingspot 0,2536,5086
-Rod Fishing spot (infernal eel)		held spot type	morulrek_eels_fishingspot 0,2541,5088
 Rod Fishing spot (lure, bait)		objectlocline excluded location	East of Iorwerth Camp (Instanced)
 Rod Fishing spot (lure, bait)		objectlocline excluded location	Iorwerth Camp (Instanced)
 Roger	v1	special/runtime ids only	bcs_crocodile_vis
@@ -2410,10 +2364,28 @@ Fishing spot (cage, harpoon)		spawned	0_49_39_rarefish 0_49_39_23_42
 Fishing spot (cage, harpoon)		spawned	0_49_39_rarefish 0_49_39_27_43
 Fishing spot (cage, harpoon)		spawned	0_49_39_rarefish 0_49_39_31_44
 Fishing spot (cage, harpoon)		spawned	0_49_39_rarefish 0_49_39_34_45
+Fishing spot (dark crab)		spawned	52_59_crabs 0_52_59_21_17
+Fishing spot (dark crab)		spawned	52_59_crabs 0_52_59_22_41
+Fishing spot (dark crab)		spawned	49_61_crabs 0_49_61_45_22
+Fishing spot (dark crab)		spawned	49_61_crabs 0_49_61_49_22
+Fishing spot (frog spawn, eels)		spawned	0_42_81_cavefish_east 0_42_81_58_46
+Fishing spot (frog spawn, eels)		spawned	0_42_81_cavefish_east 0_42_81_6_42
+Fishing spot (frog spawn, eels)		spawned	0_50_149_cavefish 0_50_149_45_34
+Fishing spot (frog spawn, eels)		spawned	0_49_149_cavefish 0_49_149_18_8
+Fishing spot (frog spawn, eels)		spawned	0_45_90_cavefish 0_45_90_45_50
 Fishing spot (karambwan)		spawned	0_45_48_karambwan 0_45_48_19_47
 Fishing spot (karambwan)		spawned	0_45_48_karambwan 0_45_48_32_47
 Fishing spot (karambwan)		spawned	0_45_48_karambwan 0_43_49_16_29
 Fishing spot (karambwan)		spawned	0_45_48_karambwan 0_45_48_48_40
+Fishing spot (karambwanji)		spawned	0_43_47_karambwanji 0_43_47_39_11
+Fishing spot (karambwanji)		spawned	0_43_47_karambwanji 0_43_47_49_2
+Fishing spot (karambwanji)		spawned	0_43_47_karambwanji 0_43_47_55_13
+Fishing spot (lava eel)		spawned	0_47_59_lavafish 0_47_59_62_63
+Fishing spot (lava eel)		spawned	0_45_152_lavafish 0_45_152_9_38
+Fishing spot (lava eel)		spawned	0_42_138_lavafish 0_42_138_36_13
+Fishing spot (lava eel)		spawned	0_40_134_lavafish 0_40_134_51_22
+Fishing spot (sacred eel)		spawned	snakeboss_fishingspot 0_34_47_6_59
+Fishing spot (sacred eel)		spawned	snakeboss_fishingspot 0_34_47_23_58
 Fishing spot (small net, bait)		spawned	0_51_49_saltfish 0_51_49_3_12
 Fishing spot (small net, bait)		spawned	0_51_49_saltfish 0_51_49_11_4
 Fishing spot (small net, bait)		spawned	0_48_50_saltfish 0_48_50_14_27
@@ -2459,6 +2431,21 @@ Fishing spot (small net, bait)		spawned	0_20_47_saltfish 0_20_47_56_2
 Fishing spot (small net, bait)		spawned	0_20_47_saltfish 0_20_47_61_1
 Fishing spot (small net, bait)		spawned	0_47_46_saltfish 0_47_46_25_55
 Fishing spot (small net, bait)		spawned	0_47_46_saltfish 0_47_46_24_51
+Fishing spot (swamp)		spawned	0_53_51_slimey_eel 0_53_51_45_8
+Fishing spot (swamp)		spawned	0_53_51_slimey_eel 0_53_51_47_12
+Fishing spot (swamp)		spawned	0_53_51_slimey_eel 0_53_51_51_8
+Fishing spot (swamp)		spawned	0_53_51_slimey_eel 0_53_51_48_7
+Fishing spot (swamp)		spawned	0_53_51_slimey_eel 0_53_51_48_16
+Fishing spot (swamp)		spawned	0_54_53_slimey_eel 0_54_53_34_52
+Fishing spot (swamp)		spawned	0_54_53_slimey_eel 0_54_53_25_45
+Fishing spot (swamp)		spawned	0_54_53_slimey_eel 0_54_53_26_38
+Fishing spot (swamp)		spawned	0_54_53_slimey_eel 0_54_53_23_42
+Fishing spot (swamp)		spawned	0_54_53_slimey_eel 0_54_53_27_57
+Fishing spot (swamp)		spawned	0_53_53_slimey_eel 0_53_53_39_23
+Fishing spot (swamp)		spawned	0_53_53_slimey_eel 0_53_53_33_18
+Fishing spot (swamp)		spawned	0_53_53_slimey_eel 0_53_53_42_25
+Fishing spot (swamp)		spawned	0_53_53_slimey_eel 0_53_53_33_15
+Fishing spot (swamp)		spawned	0_53_53_slimey_eel 0_53_53_48_18
 Fishmonger		spawned	etc_fish_monger 0_40_60_45_36
 Flax keeper		spawned	diary_flax_keeper 0_42_53_56_51
 Flaygian Screwte		spawned	myq4_flaygian 0_56_150_39_43
@@ -3551,6 +3538,12 @@ Riki the sculptor's model		spawned	dwarf_city_shop_sculpture_model_multi 0_45_15
 Rind the gardener		spawned	dwarf_city_gardener_dwarf 0_44_159_39_19
 Rionasta		spawned	tbwcu_rionasta_multinpc 0_43_48_31_20
 Roavar		spawned	werewolfinnkeeper 0_54_54_38_14
+Rod Fishing spot (anglerfish)		spawned	piscariliusfish 0_28_58_34_58
+Rod Fishing spot (anglerfish)		spawned	piscariliusfish 0_28_58_41_57
+Rod Fishing spot (infernal eel)		spawned	morulrek_eels_fishingspot 0_38_79_14_48
+Rod Fishing spot (infernal eel)		spawned	morulrek_eels_fishingspot 0_38_79_45_22
+Rod Fishing spot (infernal eel)		spawned	morulrek_eels_fishingspot 0_39_79_40_30
+Rod Fishing spot (infernal eel)		spawned	morulrek_eels_fishingspot 0_39_79_45_32
 Rod Fishing spot (lure, bait)		spawned	0_48_53_freshfish 0_48_53_32_32
 Rod Fishing spot (lure, bait)		spawned	0_48_53_freshfish 0_48_53_38_42
 Rod Fishing spot (lure, bait)		spawned	0_39_53_freshfish 0_39_53_12_29

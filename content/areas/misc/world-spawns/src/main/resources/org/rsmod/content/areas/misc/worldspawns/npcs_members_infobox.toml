@@ -3100,6 +3100,11 @@ coords = '0_28_58_30_28'
 npc = 'piscarilius_fisherman'
 coords = '0_28_58_30_58'
 
+# Rod Fishing spot (anglerfish)
+[[spawn]]
+npc = 'piscariliusfish'
+coords = '0_28_58_34_58'
+
 # Dock worker
 [[spawn]]
 npc = 'piscarilius_dockworker_repair'
@@ -3109,6 +3114,11 @@ coords = '0_28_58_39_25'
 [[spawn]]
 npc = 'piscarilius_dockworker_repair'
 coords = '0_28_58_41_46'
+
+# Rod Fishing spot (anglerfish)
+[[spawn]]
+npc = 'piscariliusfish'
+coords = '0_28_58_41_57'
 
 # Captain Khaled
 [[spawn]]
@@ -3795,6 +3805,11 @@ coords = '0_34_47_19_52'
 npc = 'snakeboss_tyrasguard_2'
 coords = '0_34_47_22_54'
 
+# Fishing spot (sacred eel)
+[[spawn]]
+npc = 'snakeboss_fishingspot'
+coords = '0_34_47_23_58'
+
 # Zul-Urgish
 [[spawn]]
 npc = 'snakeboss_ogre_1'
@@ -3819,6 +3834,11 @@ coords = '0_34_47_34_48'
 [[spawn]]
 npc = 'snakeboss_priest'
 coords = '0_34_47_36_49'
+
+# Fishing spot (sacred eel)
+[[spawn]]
+npc = 'snakeboss_fishingspot'
+coords = '0_34_47_6_59'
 
 # Badger
 [[spawn]]
@@ -4850,10 +4870,20 @@ coords = '0_38_77_44_30'
 npc = 'rd_observer_room_1'
 coords = '0_38_77_56_45'
 
+# Rod Fishing spot (infernal eel)
+[[spawn]]
+npc = 'morulrek_eels_fishingspot'
+coords = '0_38_79_14_48'
+
 # TzHaar-Mej-Bal
 [[spawn]]
 npc = 'tzhaar_elder2'
 coords = '0_38_79_25_35'
+
+# Rod Fishing spot (infernal eel)
+[[spawn]]
+npc = 'morulrek_eels_fishingspot'
+coords = '0_38_79_45_22'
 
 # TzHaar-Hur-Zal
 [[spawn]]
@@ -5270,6 +5300,16 @@ coords = '0_39_79_0_59'
 npc = 'tzhaar_merchant_cityoreandgem'
 coords = '0_39_79_28_19'
 
+# Rod Fishing spot (infernal eel)
+[[spawn]]
+npc = 'morulrek_eels_fishingspot'
+coords = '0_39_79_40_30'
+
+# Rod Fishing spot (infernal eel)
+[[spawn]]
+npc = 'morulrek_eels_fishingspot'
+coords = '0_39_79_45_32'
+
 # TzHaar-Ket-Rak
 [[spawn]]
 npc = 'jad_challenge_master'
@@ -5304,6 +5344,11 @@ coords = '0_40_121_43_40'
 [[spawn]]
 npc = 'vampyrium_aranei_forest_guide_multi_west'
 coords = '0_40_122_17_10'
+
+# Fishing spot (lava eel)
+[[spawn]]
+npc = '0_40_134_lavafish'
+coords = '0_40_134_51_22'
 
 # Broken golem
 [[spawn]]
@@ -6355,6 +6400,11 @@ coords = '0_41_99_32_33'
 npc = 'bucket_aranei'
 coords = '0_42_122_8_24'
 
+# Fishing spot (lava eel)
+[[spawn]]
+npc = '0_42_138_lavafish'
+coords = '0_42_138_36_13'
+
 # Jelly (mountain troll)
 [[spawn]]
 npc = 'slayer_kurask_troll'
@@ -6534,6 +6584,16 @@ coords = '0_42_58_9_43'
 [[spawn]]
 npc = 'hunting_polar_information'
 coords = '0_42_59_22_53'
+
+# Fishing spot (frog spawn, eels)
+[[spawn]]
+npc = '0_42_81_cavefish_east'
+coords = '0_42_81_58_46'
+
+# Fishing spot (frog spawn, eels)
+[[spawn]]
+npc = '0_42_81_cavefish_east'
+coords = '0_42_81_6_42'
 
 # Cave goblin (Dorgesh-Kaan)
 [[spawn]]
@@ -6830,6 +6890,11 @@ coords = '0_43_46_9_12'
 npc = 'tbwt_tinsay_multinpc_house'
 coords = '0_43_47_38_46'
 
+# Fishing spot (karambwanji)
+[[spawn]]
+npc = '0_43_47_karambwanji'
+coords = '0_43_47_39_11'
+
 # Gabooty
 [[spawn]]
 npc = 'tbwcu_gabooty_multinpc'
@@ -6839,6 +6904,16 @@ coords = '0_43_47_41_57'
 [[spawn]]
 npc = 'tbwcu_jagbakoba_multinpc'
 coords = '0_43_47_45_40'
+
+# Fishing spot (karambwanji)
+[[spawn]]
+npc = '0_43_47_karambwanji'
+coords = '0_43_47_49_2'
+
+# Fishing spot (karambwanji)
+[[spawn]]
+npc = '0_43_47_karambwanji'
+coords = '0_43_47_55_13'
 
 # Banisoch
 [[spawn]]
@@ -7710,6 +7785,11 @@ coords = '0_45_151_12_16'
 npc = 'velrak_the_explorer'
 coords = '0_45_151_51_22'
 
+# Fishing spot (lava eel)
+[[spawn]]
+npc = '0_45_152_lavafish'
+coords = '0_45_152_9_38'
+
 # Winkin
 [[spawn]]
 npc = 'grim_gnome_incage_2'
@@ -8080,6 +8160,11 @@ coords = '0_45_79_36_48'
 npc = 'nex_story_npc_outer'
 coords = '0_45_81_24_21'
 
+# Fishing spot (frog spawn, eels)
+[[spawn]]
+npc = '0_45_90_cavefish'
+coords = '0_45_90_45_50'
+
 # Pusskins
 [[spawn]]
 npc = 'vc_pusskins'
@@ -8380,6 +8465,11 @@ coords = '0_47_54_31_2'
 npc = 'brother_althric'
 coords = '0_47_54_44_49'
 
+# Fishing spot (lava eel)
+[[spawn]]
+npc = '0_47_59_lavafish'
+coords = '0_47_59_62_63'
+
 # Centaur
 [[spawn]]
 npc = 'fairy2_centaur_male'
@@ -8479,6 +8569,11 @@ coords = '0_49_116_46_32'
 [[spawn]]
 npc = 'slayer_dust_devil_guard'
 coords = '0_49_146_55_20'
+
+# Fishing spot (frog spawn, eels)
+[[spawn]]
+npc = '0_49_149_cavefish'
+coords = '0_49_149_18_8'
 
 # Sigmund
 [[spawn]]
@@ -8770,10 +8865,20 @@ coords = '0_49_53_18_16'
 npc = 'tob_spectator_misthalin'
 coords = '0_49_54_49_60'
 
+# Fishing spot (dark crab)
+[[spawn]]
+npc = '49_61_crabs'
+coords = '0_49_61_45_22'
+
 # Mandrith
 [[spawn]]
 npc = 'wilderness_resource_guardian'
 coords = '0_49_61_48_41'
+
+# Fishing spot (dark crab)
+[[spawn]]
+npc = '49_61_crabs'
+coords = '0_49_61_49_22'
 
 # Piles
 [[spawn]]
@@ -8804,6 +8909,11 @@ coords = '0_49_81_47_21'
 [[spawn]]
 npc = 'slayer_gryphon_guardian'
 coords = '0_50_138_40_52'
+
+# Fishing spot (frog spawn, eels)
+[[spawn]]
+npc = '0_50_149_cavefish'
+coords = '0_50_149_45_34'
 
 # Kazgar
 [[spawn]]
@@ -9735,6 +9845,16 @@ coords = '0_52_54_32_48'
 npc = 'wildy_zombie_pirate_friendly'
 coords = '0_52_56_38_32'
 
+# Fishing spot (dark crab)
+[[spawn]]
+npc = '52_59_crabs'
+coords = '0_52_59_21_17'
+
+# Fishing spot (dark crab)
+[[spawn]]
+npc = '52_59_crabs'
+coords = '0_52_59_22_41'
+
 # Raulyn
 [[spawn]]
 npc = 'slayer_tower_dungeon_ghost'
@@ -9814,6 +9934,56 @@ coords = '0_53_49_27_19'
 [[spawn]]
 npc = 'saradominist_zealot'
 coords = '0_53_50_52_58'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_51_slimey_eel'
+coords = '0_53_51_45_8'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_51_slimey_eel'
+coords = '0_53_51_47_12'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_51_slimey_eel'
+coords = '0_53_51_48_16'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_51_slimey_eel'
+coords = '0_53_51_48_7'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_51_slimey_eel'
+coords = '0_53_51_51_8'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_53_slimey_eel'
+coords = '0_53_53_33_15'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_53_slimey_eel'
+coords = '0_53_53_33_18'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_53_slimey_eel'
+coords = '0_53_53_39_23'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_53_slimey_eel'
+coords = '0_53_53_42_25'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_53_53_slimey_eel'
+coords = '0_53_53_48_18'
 
 # Monk (Devious Minds)
 [[spawn]]
@@ -10059,6 +10229,31 @@ coords = '0_54_51_40_26'
 [[spawn]]
 npc = 'route_cyreg_paddlehorn'
 coords = '0_54_51_63_20'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_54_53_slimey_eel'
+coords = '0_54_53_23_42'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_54_53_slimey_eel'
+coords = '0_54_53_25_45'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_54_53_slimey_eel'
+coords = '0_54_53_26_38'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_54_53_slimey_eel'
+coords = '0_54_53_27_57'
+
+# Fishing spot (swamp)
+[[spawn]]
+npc = '0_54_53_slimey_eel'
+coords = '0_54_53_34_52'
 
 # Curpile Fyod
 [[spawn]]
