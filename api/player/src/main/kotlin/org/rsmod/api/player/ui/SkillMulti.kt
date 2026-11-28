@@ -37,8 +37,8 @@ public object SkillMultiVerb {
 }
 
 /**
- * Interface refs for the skillmulti chatbox, kept in one place. Rev 233 names 10 item slots
- * (`a`-`j`); rev 243 names 18 (`a`-`r`): extend [items] after the 243 cutover.
+ * Interface refs for the skillmulti chatbox, kept in one place. Rev 243 names 18 item slots
+ * (`a`-`r`), matching the 18 products the setup script takes.
  */
 internal object SkillMultiRefs : InterfaceReferences() {
     val skillmulti = find("skillmulti")
@@ -46,7 +46,7 @@ internal object SkillMultiRefs : InterfaceReferences() {
 
 internal object SkillMultiComponents : ComponentReferences() {
     val items: List<ComponentType> =
-        listOf("a", "b", "c", "d", "e", "f", "g", "h", "i", "j").map { find("skillmulti:$it") }
+        ('a'..'r').map { find("skillmulti:$it") }
 }
 
 /** Max products the client script takes; the interface may name fewer slots (see refs). */
