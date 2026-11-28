@@ -21,6 +21,7 @@ import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RI
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.eadgarsruse.EadgarsRuse.Companion.EADGARS_RUSE
 import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.ELEMENTAL_WORKSHOP_I
+import org.rsmod.content.quests.elementalworkshop2.ElementalWorkshopII.Companion.ELEMENTAL_WORKSHOP_II
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
 import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
@@ -47,6 +48,7 @@ import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRI
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
 import org.rsmod.content.quests.piratestreasure.PiratesTreasure.Companion.PIRATES_TREASURE
 import org.rsmod.content.quests.plaguecity.PlagueCity.Companion.PLAGUE_CITY
+import org.rsmod.content.quests.porcine.PorcineOfInterest.Companion.PORCINE
 import org.rsmod.content.quests.priestinperil.PriestInPeril.Companion.PRIEST_IN_PERIL
 import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_RESCUE
 import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_BONE_MAN_I
@@ -93,6 +95,7 @@ public object BuiltQuests {
             DWARF_CANNON,
             EADGARS_RUSE,
             ELEMENTAL_WORKSHOP_I,
+            ELEMENTAL_WORKSHOP_II,
             ERNEST,
             FAIRYTALE_I,
             FIGHT_ARENA,
@@ -119,6 +122,7 @@ public object BuiltQuests {
             OBSERVATORY_QUEST,
             PIRATES_TREASURE,
             PLAGUE_CITY,
+            PORCINE,
             PRIEST_IN_PERIL,
             PRINCE_ALI_RESCUE,
             RAG_AND_BONE_MAN_I,
