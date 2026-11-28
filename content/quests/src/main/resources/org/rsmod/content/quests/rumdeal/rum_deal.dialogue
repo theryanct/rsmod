@@ -1,0 +1,878 @@
+# Generated from the OSRS Wiki page "Transcript:Rum Deal" by tools/quests/transcript_to_dialogue.py
+0	section	Setting out
+0	section	Talking to Pirate Pete
+1	line	Player	Hello there!
+1	line	Pirate Pete	Mornin'.
+1	line	Pirate Pete	Hey...you're an adventurer, right?
+1	line	Player	Yes I am!
+1	line	Player	Got any quests for me?
+1	line	Pirate Pete	Yeah, I do, as a matter of fact!
+1	line	Pirate Pete	(Ahem.)
+1	line	Pirate Pete	I am a poor, dispossessed nobleman, forced by circumstance to lurk in the middle of nowhere, soliciting help from passers-by.
+1	line	Pirate Pete	You see, my fiendish half-brother has seized my estates and forced me into exile.
+1	line	Pirate Pete	The simple lemon farmers suffer under his tyrannous yoke, and only a brave adventurer can lift his iron boot from the neck of the poor.
+1	line	Pirate Pete	To reclaim my lands I will need to have my family sword returned to me so that I may present it as proof of my rulership.
+1	line	Pirate Pete	Will you help me find my family sword?
+1	cond	If the player has one or more levels less than the requirement:
+2	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it.
+2	action	continues
+1	select	Select an Option
+1	option	Yes!
+2	line	Player	Yes! Your uncorroborated sob story has touched my heart. When do we set off?
+2	line	Pirate Pete	You'll help! Wonderful!
+2	line	Pirate Pete	But, alas, my half brother has a powerful ally, the mighty demon...
+2	line	Pirate Pete	Err...
+2	line	Pirate Pete	Err...Barrelor!
+2	line	Player	Barrelor?
+2	line	Pirate Pete	That's what I said!
+2	line	Pirate Pete	Barrelor is an awesome opponent, and to reclaim my family sword you will need to defeat him, for he guards it within the deadly Trapped Pit of Barrelor.
+2	select	Select an Option
+2	option	Of course, I fear no demon!
+3	line	Player	Of course, I fear no demon!
+3	line	Pirate Pete	That's the spirit!
+3	line	Pirate Pete	When I am reinstated in my rightful place, I will not be a very wealthy man, as my half-brother has squandered my family fortune.
+3	line	Pirate Pete	However, I will gladly give you every bent penny of what is left, and starve in the gutter with my many, many adorable children, if you say you will help me.
+3	select	Select an Option
+3	option	Nonsense! Keep the money!
+4	line	Player	Nonsense! Keep the money! I will dispose of this evil half-brother of yours and leave you what little money is left to feed your family.
+4	line	Pirate Pete	Wonderful! Just pick up your diversion and we'll leave!
+4	line	Player	What diversion?
+4	line	Player	Ow!
+4	action	(Cutscene 1 begins.)
+3	option	Great, I'll take the cash in used coins please.
+4	line	Player	Great, I'll take the cash in used coins please.
+4	line	Pirate Pete	Er...
+4	line	Pirate Pete	Look, I think I'll wait here for someone a little more... you know...
+4	line	Pirate Pete	...heroic.
+4	action	end
+2	option	Not a chance, this sounds too dangerous.
+3	line	Player	Not a chance, this sounds too dangerous.
+3	line	Pirate Pete	Look, I think I'll wait here for someone a little more... you know...
+3	line	Pirate Pete	...heroic.
+3	action	end
+1	option	No.
+2	line	Player	No, I don't think I'll help you out this time.
+2	line	Pirate Pete	Look, I think I'll wait here for someone a little more... you know...
+2	line	Pirate Pete	...heroic.
+2	action	end
+0	section	Talking to Pete again
+1	cond	If talking to Pirate Pete with having second thoughts after accepting the quest:
+2	line	Player	Had any luck finding someone to slay the demon?
+2	line	Pirate Pete	What?
+2	line	Pirate Pete	Oh! Yes! The demon, with the oppression and stuff!
+2	line	Pirate Pete	No, not yet. Why?
+2	select	Select an option
+2	option	Because I came to offer to help.
+3	line	Player	Because I came to offer to help.
+3	line	Pirate Pete	That's the spirit!
+3	line	Pirate Pete	When I am reinstated in my rightful place, I will not be a very wealthy man, as my half-brother has squandered my family fortune.
+3	line	Pirate Pete	However, I will gladly give you every bent penny of what is left, and starve in the gutter with my many adorable children if you say you will help me.
+3	select	Select an option
+3	option	Nonsense! Keep the money!
+4	action	above
+3	option	Great, I'll take the cash in used coins please.
+4	action	above
+2	option	No reason.
+3	line	Player	No reason. I was just in the area and I thought I would ask.
+3	line	Pirate Pete	I see...
+3	line	Pirate Pete	Look, I think I'll wait here for someone a little more... you know...
+3	line	Pirate Pete	...heroic.
+3	action	end
+0	section	Cutscene 1
+1	line	Captain Braindeath	Arrr... 'Tis lookin' bleak...
+1	line	Pirate Pete	Cap'n!
+1	line	Pirate Pete	Good news Cap'n!
+1	line	Pirate Pete	I found us a hero down by the docks!
+1	line	Captain Braindeath	Be they heroic, brave and true?
+1	line	Pirate Pete	Aye! They also be gullible, tied up and unconscious!
+1	line	Pirate Pete	They were willing to help out some random stranger with a good enough sob story, so I smacked them with a bottle and rowed them over.
+1	line	Captain Braindeath	Brilliant! The island's location will remain a secret!
+1	line	Captain Braindeath	Bring 'em here and wake 'em up.
+1	line	Captain Braindeath	We may make it through this yet...
+1	action	(Cutscene ends and dialogue continues below.)
+0	section	Meeting Captain Braindeath
+1	line	Captain Braindeath	Are ye alright, [lad/lass]?
+1	line	Player	Ohhhh... My head...
+1	line	Player	It feels like someone has smacked me one with a bottle...
+1	line	Captain Braindeath	Arr... Those devils gave ye a nasty knock when ye came to aid us.
+1	line	Captain Braindeath	But now yer here we'll run those evil brain-eatin' dogs off the island fer good!
+1	line	Player	What? What is going on here?
+1	line	Player	I can't seem to remember anything beyond chatting to a man at the docks.
+1	line	Captain Braindeath	Arr. Well, [lad/lass], that would be Pete, one of my men.
+1	line	Captain Braindeath	He's been out lookin' fer heroes like yerself to aid us in our peril.
+1	line	Player	Okay... I'll buy that. It sounds like something I would do.
+1	line	Player	So where am I, and what is going on?
+1	line	Captain Braindeath	Yer on Braindeath Island!
+1	line	Captain Braindeath	Where it lies is a secret, because ye are standin' in the brewery of Cap'n Braindeath, purveyor of the most vitriolic alcoholic beverages in the world!
+1	line	Player	Wow!
+1	line	Captain Braindeath	I am the notorious alchemist Cap'n Braindeath, and this whole operation be my idea!
+1	line	Captain Braindeath	With my crew of sturdy, upright pirate brewers, we sail the seven seas, distributing cheap 'alcohol' to all and sundry.
+1	line	Player	Oooh!
+1	line	Captain Braindeath	These be dark times, though, [lad/lass]. See, a week ago we awoke to find ourselves beseiged.
+1	line	Captain Braindeath	The lads and I have held them off so far, but 'tis only a matter of time before they sweep through the buildin' and put us all to the sword.
+1	line	Player	Who?
+1	line	Captain Braindeath	Them!
+1	box	The captian points out of the window....
+1	line	Player	Are they...
+1	line	Player	...protesting?
+1	line	Captain Braindeath	Arr, [lad/lass]! That they are!
+1	line	Captain Braindeath	Day and night they seek to break our will with their chantin', and their singin' and their passive resistance!
+1	line	Player	So, what do you want me to do?
+1	line	Captain Braindeath	Well, me and the lads got our heads together and decided that if we can get their Cap'n drunk enough, perhaps they'll stop protestin'.
+1	line	Captain Braindeath	If that happens, we'll slip out the back and set up shop somewhere else.
+1	line	Player	Well, how can I help?
+1	line	Captain Braindeath	Well, first of all, we need someone to go out the front and grow us some Blindweed.
+1	line	Captain Braindeath	'Tis one of the ingredients of our 'rum'.
+1	line	Captain Braindeath	The only problem is that those rottin' fiends have torn up and destroyed all but one of the Blindweed Patches.
+1	line	Captain Braindeath	Here, [lad/lass]. I'll give ye the seed you'll need fer growin' the herb. Help yerself to the gardenin' equipment in the basement.
+1	line	Captain Braindeath	I'll warn ye again that those devils are sat right on top of the patch.
+1	line	Captain Braindeath	Try hecklin' 'em from a distance. Those Swabs may talk a good fight, but if ye can put a scare in 'em they'll keep out of yer way!
+1	action	end
+0	section	Getting your 'beer-ings'
+0	section	Talking to Captain Braindeath again
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	Arr, well I want ye to get outside and grow some Blindweed.
+2	line	Captain Braindeath	Best be careful, [lad/lass], fer them pirates will skin ye alive if they catch ye.
+2	cond	If the player has lost the Blindweed seed:
+3	line	Player	And what happens if I lose the seed?
+3	line	Captain Braindeath	Then I'll have ye flogged, hung, slapped with a haddock and sent back out there to fight the zombie hordes with little more than harsh language!
+3	cond	If the player has no inventory space:
+4	line	Captain Braindeath	Come back and see me when ye ain't loaded down with stuff, and I'll give ye another.
+4	action	end
+3	cond	If the player has inventory space:
+4	line	Captain Braindeath	Arr... Here, [lad/lass]. Just take this and get goin'!
+4	action	(The player is handed another seed.)
+3	action	end
+1	option	Why do you talk like a pirate?
+2	line	Player	Why do you talk like a pirate? Didn't you tell me you were an alchemist?
+2	line	Captain Braindeath	Arr, [lad/lass], 'tis true.
+2	line	Captain Braindeath	However, 'tis also true that I stumbled across the basic recipe fer my most potent of brews in a terrible alchemical accident.
+2	line	Captain Braindeath	See, 'twas a dark and stormy night, and the wind was howlin' around the trees as I worked late into the night.
+2	line	Captain Braindeath	Steppin' too close to a candle with my flask in my hand, I was suddenly swept up in a terrible, yet potently alcoholic, explosion.
+2	line	Player	And?
+2	line	Captain Braindeath	Well' [lad/lass], it seems the fumes from that first batch of me 'rum' did strange things to me brain.
+2	line	Captain Braindeath	I don't remember the exact words the healers used, but apparently the stuff burned out the tiny, specialised part of me brain that tells me not to talk like a pirate.
+2	line	Player	That... that... that sounds utterly impossible!
+2	line	Captain Braindeath	Arr! That be what I told them!
+2	action	end
+1	option	So what do you make here anyway?
+2	line	Player	So what do you make here anyway?
+2	line	Captain Braindeath	'Rum', [lad/lass]!
+2	line	Captain Braindeath	The finest, most potent, most flammable and most debilitatin' 'rum' in the whole of Gielinor!
+2	line	Player	Rum, eh?
+2	line	Captain Braindeath	No, [lad/lass], 'rum'!
+2	line	Player	What's the difference?
+2	line	Captain Braindeath	Well, see, it's like this.
+2	line	Captain Braindeath	If we called the stuff we make 'rum' without makin' the little quote gestures every time, then the Cookin' Guild has promised to do entertaininly painful things to us with whisks.
+2	line	Captain Braindeath	See, technically -
+2	line	Captain Braindeath	And by that I mean technically according to the Disposal of Hazardous Waste Act and the Health and Safety Laws -
+2	line	Captain Braindeath	technically, what we're brewin' here is Artificially Produced Hyper Condensed Sweetened 'Rum' Flavour Distillate.
+2	line	Player	Riiiiiiiight...
+2	line	Captain Braindeath	So ye see, [lad/lass], we just call it 'rum' because the real name be a bit of a mouthful.
+2	line	Captain Braindeath	Want a drop?
+2	line	Player	No thanks... I think I'll skip it for now.
+2	action	end
+0	section	Using the blindweed seed on Captain Braindeath
+1	line	Player	What exactly do you want me to do with this?
+1	line	Captain Braindeath	Arr, well, I want ye to get outside and grow some Blindweed.
+1	line	Captain Braindeath	Best be careful, lad, fer them pirates will skin ye alive if they catch ye.
+1	action	end
+0	section	Talking to Brewers around the facility
+0	section	Brewer 1
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Very well.
+1	line	Player	You sure?
+1	line	Brewer	Oh Guthix, who am I kidding?
+1	line	Brewer	We're all gonna die!
+1	action	end
+0	section	Brewer 2
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Who are you?
+1	line	Brewer	You're one of THEM, aren't you!
+1	line	Player	O...kay...walking away now, smiling and not making eye contact.
+1	action	end
+0	section	Brewer 3
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Game over, man! Game over!
+1	line	Player	Errr...keep up the good work.
+1	action	end
+0	section	Brewer 4
+1	line	Player	So... how are you holding up?
+1	line	Brewer	How do I know you're not one of them?
+1	line	Player	Well, I don't know... the way I'm breathing could give it away.
+1	line	Brewer	That means nothing! NOTHING!
+1	action	end
+0	section	Brewer 5
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Don't talk to me! If I play this right, I can sell you lot out and make it to the mainland!
+1	action	end
+0	section	Brewer 6
+1	line	Player	So... how are you holding up?
+1	line	Brewer	No school today mother, my brain hurts real baaaad...
+1	line	Player	What?
+1	line	Brewer	I no sleep in many, many, many days.
+1	action	end
+0	section	Brewer 7
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Don't sneak up on me like that!
+1	line	Brewer	Don't you know there's a war on?
+1	line	Player	I didnt think this counted as a war.
+1	line	Brewer	That's because you're a landlubber!
+1	line	Brewer	I bet ye've never had to beat a dozen zombies to death with a blunt toothpick!
+1	line	Player	That's right. Have you?
+1	line	Brewer	No, I've spent most of my time in the toilet to be honest.
+1	action	end
+0	section	Brewer 8
+1	line	Player	So... how are you holding up?
+1	line	Brewer	Very well, considering.
+1	line	Player	Considering what?
+1	line	Brewer	That I've been crawling into the corner to cry whenever nobody is looking.
+1	line	Player	Wow... I always thought pirates were tough...
+1	action	end
+0	section	Talking to Davey
+1	line	Player	Hello!
+1	line	Davey	'Ello guv.
+1	line	Player	Why are you not helping out the others?
+1	line	Davey	Well you see, guv, I've got these unshakable religious convictions.
+1	line	Player	And those are?
+1	line	Davey	Well, it's like this, see. I used to do a bit of the old priestin' on the side.
+1	line	Davey	You know, collectin' for repairs to the church roof, passing the collection plate, jumble sales, nicking the lead off the temple roof so they needed repairing again.
+1	line	Davey	Real holy stuff, you know.
+1	line	Player	That doesn't sound all that holy to me.
+1	line	Davey	Well, that's because you're not a man of the cloth are you?
+1	line	Davey	You are, in fact, what we refer to in layman's terms as a punter.
+1	line	Davey	But anyway, all that priestin' left me with an unshakable faith in three things.
+1	line	Davey	The power of good over evil.
+1	line	Davey	The true glory of the human spirit.
+1	line	Davey	And that I ain't goin out there with those things runnin' around.
+1	action	end
+0	section	Searching the basement cupboard for farming supplies
+1	box	There is a tangle of rusty old farming equipment in here.
+1	box	What would you like to take?
+1	select	Select an Option
+1	option	A rake
+2	cond	If the player does not have inventory space:
+3	box	You do not have any free space for the rake.
+3	action	end
+2	cond	If the player already has a rake:
+3	box	You can't find another rake. Good job you already have one.
+3	action	end
+2	box	You take an old rake.
+2	action	end
+1	option	A seed dibber
+2	cond	If the player does not have inventory space:
+3	box	You do not have any free space for the seed dibber.
+3	action	end
+2	cond	If the player already has a seed dibber:
+3	box	The only dibber you find has a bent dibbing bit. You should use the one you have.
+3	action	end
+2	cond	If the player has inventory space:
+3	box	You take an old seed dibber.
+3	action	end
+1	option	A watering can
+2	cond	If the player does not have inventory space:
+3	box	You do not have any free space for the watering can.
+3	action	end
+2	cond	If the player already has a watering can:
+3	box	You can't find any watering cans without holes in them, so you decide to use your own.
+3	action	end
+2	cond	If the player has inventory space:
+3	box	You take an old watering can.
+3	action	end
+1	option	All of the above!
+2	cond	If the player does not have inventory space:
+3	box	You do not have any free space for all of these items.
+3	action	end
+2	cond	If the player already has all the tools:
+3	box	The remaining stuff seems fused together in a lump of spiky, tetanus-inducing rust. Best leave it alone for now.
+3	action	end
+2	cond	If the player has inventory space:
+3	box	You help yourself to what you need.
+3	action	end
+0	section	Talking to Zombie protesters
+1	line	Player	Excuse me, but...
+1	line	Zombie protester	Arr!
+1	line	Player	Is there any way you could...
+1	line	Zombie protester	ARRR!
+1	line	Player	Is there anyone else I could...
+1	line	Zombie protester	Arrrrrrrrrr!!!
+1	line	Player	Fiiine...
+1	action	end
+0	section	Talking to Captain Donnie
+1	line	Captain Donnie	Arr! What be ye wantin?
+1	line	Player	I, err, came to...
+1	select	Select an Option
+1	option	Tell you to leave.
+2	line	Player	I have come to tell you to leave.
+2	line	Captain Donnie	Ye have?
+2	line	Player	Yes.
+2	line	Captain Donnie	Hahahahahahahahahahahahaha!
+2	line	Captain Donnie	Bwahahahahahahahahahahahaha!
+2	line	Captain Donnie	Wheeze...wheeze...
+2	line	Captain Donnie	Gadzooks [lad/lass], that be the funniest thing I've heard all day! Say it again!
+2	line	Player	I have come to tell you to leave.
+2	line	Captain Donnie	Stop [lad/lass]! I'll shatter me ribs!
+2	action	end
+1	option	Ask what you wanted.
+2	line	Player	I've come to ask you what you want.
+2	line	Captain Donnie	Whadda we want? 'Rum'! When do we want it? Now!
+2	line	Player	So...if I were to give you 'rum' you would leave?
+2	line	Captain Donnie	Not really [lad/lass]. If ye were to give us 'rum' we'd kill ye quickly, as opposed to over a few weeks.
+2	line	Player	Oh...
+2	action	end
+1	option	Join your crew.
+2	line	Player	I've come to join your crew!
+2	line	Player	Err, I mean...
+2	line	Player	Arr! Shiver me mainbraces and make them landlubbers walk the scurvy plank, Cap'n! I've come to join yer cut- throat, bilge swillin' crew! Also, arr!
+2	line	Captain Donnie	Are ye quite done, [lad/lass]?
+2	line	Player	Yes, for the time being anyway.
+2	line	Captain Donnie	Well, ye'll be glad to know that after that little performance I'd be glad to have ye on me crew!
+2	line	Player	Huzzah!
+2	line	Captain Donnie	Course, I'll have te kill ye first.
+2	line	Player	Oh...
+2	line	Captain Donnie	Don't ye worry, [lad/lass]. After we take the island I'll have the boss haul yer body to the temple and...
+2	line	Captain Donnie	Err, never mind.
+2	line	Player	Never mind what?
+2	line	Captain Donnie	Ferget I said anything.
+2	action	end
+0	section	Trying to talk to Zombie Swabs
+1	box	I don't think he wants to talk to you.
+1	action	end
+0	section	Trying to sneak past 50% Luke too early
+1	line	50% Luke	Arr! Tryin' ter get away eh? Well ye'll never sneak past me, I'm the best lookout this crew has ever seen!
+1	line	Player	Err...look...an astonishing...thing. There. Behind you.
+1	line	50% Luke	Ye'll have te do better than that, landlubber!
+1	action	end
+0	section	Blinding the weed
+0	section	Intimidating the Zombie swabs
+0	section	Zombie Swab 1
+1	line	Player	Hey you!
+1	line	Zombie swab	Hey yerself, landlubber!
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...so that you will know exactly what time it is due to the horrible pain in your earlobes!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	Zombie Swab 2
+1	line	Player	Hey you!
+1	line	Zombie swab	Arr! Prepare to die!
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...meaning you'll need a dozen Ogres and a team of highly skilled surgeons to remove them!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	Zombie Swab 3
+1	line	Player	Hey you!
+1	line	Zombie swab	Hahahaha!
+1	line	Zombie swab	Yer goin ter die!
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...so that all you will be able to hear from then on will be the rustling of the ants walking through them!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	Zombie Swab 4
+1	line	Player	Hey you!
+1	line	Zombie swab	Yer brave, but stupid!
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...and then I'll use a wrench to remove the handles, so you'll see it every time you cough!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	Zombie Swab 5
+1	line	Player	Hey you!
+1	line	Zombie swab	Who? Me?
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...and I'll grind up what's left, mix it with lemon juice and throw the whole lot into the ocean!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	Zombie Swab 6
+1	line	Player	Hey you!
+1	line	Zombie swab	Yer a deadman, sez I!
+1	box	We interrupt this insult to bring you this soothing picture of a kitten. Normal service will be resumed shortly. Thank you for your patience.
+1	line	Player	...leading to the eventual, violent explosion of those organs!
+1	line	Zombie swab	That be the most intimidatin' thing I've ever heard! I'm not messin' with you!
+1	action	end
+0	section	If Zombie Swab roams away during your insults
+1	box	He seems to have vanished... you must have scared him off.
+1	action	end
+0	section	Trying to re-intimidate a Zombie Swab
+1	box	I don't think he will be causing any more trouble.
+1	action	end
+0	section	Inspecting trashed patches
+1	box	The soil here is too poor to farm on.
+1	action	end
+0	section	Attempting to rake a trashed patch
+1	box	You will probably have a hard time raking that.
+1	action	end
+0	section	Inspecting the Blindweed patch
+1	action	If the player has not planted the seed yet:
+2	box	This is a blindweed patch. The soil has not been treated. The patch needs weeding.
+2	action	end
+1	action	If the player already planted the seed:
+2	box	This is a blindweed patch. The soil has not been treated. The patch has something growing in it.
+2	action	end
+1	action	If the blindweed is fully grown:
+2	box	This is a blindweed patch. The soil has not been treated. The patch (Crop) is fully grown.
+2	action	end
+0	section	Planting Blindweed
+1	cond	If the player does not have level 40 Farming:
+2	box	You must be a Level 40 Farmer to plant those.
+2	action	end
+1	cond	If the player has level 40 Farming:
+2	box	You plant a seed in the blindweed patch.
+2	action	end
+0	section	After the Blindweed has fully grown
+1	box	I wonder how my Blindweed is coming along...
+1	action	end
+0	section	Brewing "rum"
+0	section	Talking to Captain Braindeath after getting blindweed
+1	line	Player	Here! I have your Blindweed!
+1	line	Captain Braindeath	Splendid, [lad/lass]! Go shove it in the Intake Hopper upstairs.
+1	line	Captain Braindeath	We'll beat them zombies yet! Arr!
+1	action	end
+0	section	If the player has lost the blindweed
+1	line	Player	Captain... I grew some blindweed but then I lost it...
+1	line	Captain Braindeath	There there, lad. 'Tis all right.
+1	line	Captain Braindeath	Here, I've been savin' some fer an emergency.
+1	line	Captain Braindeath	Go shove that in the Intake Hopper, and try not ter lose this lot!
+1	action	end
+0	section	Talking to Captain Braindeath again
+1	line	Player	So...
+1	select	Select an option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go put yer Blindweed in the intake hopper, and to be sharp about it!
+2	cond	If the player loses the blindweed:
+3	line	Player	And what happens if I lose the Blindweed between here and the intake hopper?
+3	line	Player	Theoretically, of course, as it would be almost impossible for me to simply lose the stuff in the time it will take me.
+3	line	Captain Braindeath	Gah!
+3	line	Captain Braindeath	Yer nothin' better than a sea-slug wearin', lilly-legged, bandy-livered landlubber!
+3	cond	If the player does not have inventory space:
+4	line	Captain Braindeath	I've got a little put aside fer an emergency. Drop some of that junk yer carryin', and come see me to get it.
+4	action	end
+3	cond	If the player has inventory space:
+4	line	Captain Braindeath	Here, I was savin' a little fer an emergency, so take this and shove it in the hopper before I bung ye in there and turn the handle!
+4	action	
+4	line	Player	You had some all the time?
+4	line	Player	Why was I risking my neck killing pirates to grow some if you had some all along?
+4	line	Captain Braindeath	Less talk, lad, haven't ye got a hopper to be fillin'?
+4	action	end
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Before putting blindweed in the hopper
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go put yer Blindweed in the intake hopper, and to be sharp about it!
+2	cond	If the player has lost the blindweed... again:
+3	line	Player	And what happens if I lose the Blindweed between here and the intake hopper?
+3	line	Player	Theoretically, of course, as it would be almost impossible for me to simply lose the stuff in the time it will take me.
+3	line	Captain Braindeath	Gah!
+3	line	Captain Braindeath	Yer nothin' better than a sea-slug wearin', lilly-legged, bandy-livered landlubber!
+3	cond	If the player doesn't have room in their inventory:
+4	line	Captain Braindeath	I've got a little put aside fer an emergency. Drop some of that junk yer carryin', and come see me to get it.
+4	action	end
+3	line	Captain Braindeath	Here, I was savin' a little fer an emergency, so take this and shove it in the hopper before I bung ye in there and turn the handle!
+3	line	Player	You had some all the time?
+3	line	Player	Why was I risking my neck killing pirates to grow some if you had some all along?
+3	line	Captain Braindeath	Less talk, [lad/lass], haven't ye got a hopper to be fillin'?
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Using blindweed in the hopper
+1	box	You stuff the Blindweed into the Hopper.
+1	action	end
+0	section	Stagnant water
+0	section	Talking to Captain Braindeath after using blindweed on the hopper
+1	line	Player	Well, that takes care of the Blindweed. What now?
+1	line	Captain Braindeath	Well, now ye've shoved the Blindweed into the mix, what we need is a bucket of stagnant water.
+1	line	Player	Where can I get some of that?
+1	line	Captain Braindeath	Ye won't have to go far, [lad/lass], we have a pool of the stuff here!
+1	line	Player	Here in the brewery?
+1	line	Captain Braindeath	No, [lad/lass], that would be a strange thing to have in a brewery!
+1	line	Captain Braindeath	It's up the mountain to the north.
+1	line	Player	Up a mountain?
+1	line	Captain Braindeath	Well, 'tis technically a volcano, but ye get the general idea.
+1	line	Player	And I assume the place is crawling with these zombies?
+1	line	Captain Braindeath	No [lad/lass], there be not a zombie in sight.
+1	line	Player	Oh, good!
+1	line	Captain Braindeath	All ye have to do is get past the keen-eyed lookout that's been spottin' my men when I send 'em.
+1	line	Captain Braindeath	I'll tell ye that it won't be easy!
+1	line	Player	When is it ever...
+1	cond	If the player doesn't have an empty bucket:
+2	line	Captain Braindeath	Don't ferget yer bucket!
+2	action	(The player is given an empty bucket. If the inventory is full, this line still occurs, but no bucket will appear.)
+1	action	end
+0	section	Talking to Captain Braindeath again before getting stagnant water
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	To get off yer lazy behind and head out to the stagnant lake on top of the volcano.
+2	line	Captain Braindeath	Chop chop, lad.
+2	cond	If the player doesn't have an empty bucket:
+3	line	Captain Braindeath	Don't ferget yer bucket!
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Talking to 50% Luke
+0	section	Sneaking past 50% Luke
+1	line	50% Luke	Arr! Tryin' ter get away eh? Well ye'll never sneak past me, I'm the best lookout this crew has ever seen!
+1	action	randomised distraction dialogue]]
+1	line	50% Luke	Where?
+1	action	end
+0	section	Using a bucket on Stagnant Lake
+1	box	You scoop up a bucket of stagnant water.
+1	action	end
+0	section	Returning through the gate
+1	line	50% Luke	Hey! What are you doing out there?
+1	line	Player	Nothing.
+1	line	50% Luke	Well Cap'n Donnie said no livin' landlubbers were allowed out of the compound.
+1	line	50% Luke	So get yerself back in here, or yer for it!
+1	action	end
+0	section	Talking to Captain Braindeath before pouring in the stagnant in the hopper
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go pour yer bucket into yonder hopper.
+2	line	Captain Braindeath	Take yer time, lad, we're only bein' besieged by zombies.
+2	cond	If the player has lost the bucket of water:
+3	line	Player	Err... Captain...
+3	line	Captain Braindeath	Aye, what is it, lad?
+3	line	Player	Well, on my way over to the hopper some big boy stole the bucket and ran away...
+3	cond	If the player doesn't have room in their inventory
+4	line	Captain Braindeath	Well, 'tis a good job I saved a little, isn't it? Now get rid of something so I can give it to ye.
+4	action	end
+3	line	Captain Braindeath	Give me strength!
+3	line	Captain Braindeath	If ye weren't so good at distractin' the zombies I'd skin ye alive!
+3	line	Captain Braindeath	Take this bucket and pour it into the hopper. If ye don't get it right this time I'll have yer guts fer garters!
+3	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Using bucket of water in the hopper
+1	box	You dump the water into the hopper.
+1	action	end
+0	section	Sluglings
+0	section	Talking to Captain Braindeath after using the water on the hopper
+1	line	Player	So is that everything?
+1	line	Captain Braindeath	No, [lad/lass], next ye'll need to go outside and catch five loads of Sluglings fer the brew.
+1	line	Player	What? Sluglings? That's disgusting!
+1	line	Captain Braindeath	Arr, [lad/lass], that it be.
+1	line	Captain Braindeath	To a weak-stomached, knock-kneed landlubber...
+1	line	Player	Why Sluglings?
+1	line	Captain Braindeath	'Cos, [lad/lass] they're one of our super-secret ingredients! Yer not too susceptible to mind control are ye [lad/lass]?
+1	line	Player	Why?
+1	line	Captain Braindeath	Because they have been known te, well, influence people every now and again.
+1	line	Captain Braindeath	I'm sure ye've got nothing te worry about!
+1	cond	If the player has completed Sea Slug quest:
+2	line	Player	They aren't related to those Seaslugs are they?
+2	line	Captain Braindeath	No [lad/lass], we just call them 'Sluglings' 'cos of a long and convoluted story involvin' a metal pipe and three dead seagulls.
+2	line	Captain Braindeath	Aye they're related! Tis a good job they'll starve if they tried te eat yer brains!
+2	action	continues
+1	line	Player	So what should I do with these Sluglings anyway?
+1	line	Captain Braindeath	Well, Ye shove them in the Pressure Barrel in the attic.
+1	line	Captain Braindeath	And then ye...
+1	line	Player	And then I...
+1	line	Captain Braindeath	Pressurise 'em.
+1	line	Player	Pressurise them?!
+1	line	Captain Braindeath	Just a little.
+1	line	Captain Braindeath	Look, we don't have all day, get movin'.
+1	cond	If the player doesn't have free inventory space:
+2	line	Captain Braindeath	Ye'll be needin' a fishbowl in a big net to help ye catch them slimy little blighters.
+2	line	Captain Braindeath	Pity ye ain't got any free space to carry one.
+2	action	end
+1	cond	If the player has inventory space:
+2	line	Captain Braindeath	Here. Ye'll need this to catch them.
+2	line	Player	What should I do with it?
+2	line	Captain Braindeath	Just dunk it in the water. I'm sure a clever [lad/lass] like yerself will have no problem.
+2	line	Captain Braindeath	Oh, and if ye haul up some squiddy-looking things, don't hesitate to shove 'em in the barrel too.
+2	line	Captain Braindeath	They add a special, fishy texture to the drink.
+2	action	end
+0	section	Talking to Captain Braindeath again before catching the sluglings
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go outside and catch five sea creatures from the squid fishin' spot.
+2	line	Captain Braindeath	When ye've grabbed them, jam 'em in the barrel in the attic and pressurise 'em.
+2	cond	If the player doesn't have a fishbowl and net:
+3	line	Player	How am I suppost to catch these things?
+3	line	Captain Braindeath	Ye'll be needin' to use a fishbowl in a big net to snare these little devils.
+3	line	Player	And if I don't have one?
+3	line	Captain Braindeath	Why, I oughta...
+3	cond	If the player doesn't have inventory space:
+4	line	Captain Braindeath	Come see me when yer not so laden down. I've got another one fer ye if ye need it.
+4	action	end
+3	line	Captain Braindeath	Here! Try not ter lose this one! These things don't grow on trees, ye know.
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Gone... slugging?
+0	section	Using a fishing spot without fishbowl and net
+1	box	You do not have the correct equipment to fish here.
+1	action	end
+0	section	Using a fishing spot without inventory space
+1	box	You do not have any free space for anything that you will catch!
+1	action	end
+0	section	Using a fishing spot without level 50 Fishing
+1	box	You must be a Level 40 Fisherman to fish here.
+1	action	end
+0	section	Using a fishing spot with the correct requirements
+1	box	You dunk the bowl in the water...
+1	box	...and you catch some Sluglings!
+1	action	end
+0	section	Using Karamthultu on Captain Braindeath
+1	line	Captain Braindeath	Gah! Get that slimy thing away from me!
+1	action	end
+0	section	Using Sluglings on Captain Braindeath
+1	line	Player	The slugs are talking to me... They tell me to do bad things...
+1	line	Captain Braindeath	Gimme that!
+1	box	The Captain takes the Slugling and stamps on it until it stops squirming, then hands it back.
+1	line	Player	Egad... what just happened?
+1	line	Captain Braindeath	What happened is ye were messin' about with Sluglings!
+1	line	Captain Braindeath	Don't ye have anything better to do?
+1	action	end
+0	section	Using Sluglings on the barrel
+1	box	You stuff the squirming Sluglings into the barrel.
+1	action	end
+0	section	Using Karamthultu on the barrel
+1	box	You stuff the squirming Karamthultu into the barrel.
+1	action	end
+0	section	Attempting to stuff a sixth Slugling into the barrel
+1	box	You don't think you can stuff any more Sluglings in there.
+1	action	end
+0	section	Trying to pull the lever with less than five sea creatures
+1	box	You do not yet have five sea creatures in the barrel!
+1	action	end
+0	section	Pulling the lever with 5 sea creatures in the barrel
+1	box	You pressurise the asserted sea creatures.
+1	action	end
+0	section	Evil Spirit
+0	section	Talking to Captain Braindeath after filling the pressure barrel
+1	line	Player	How could I kill my sluggy brethren...?
+1	line	Captain Braindeath	Snap out of it, [lad/lass]! Yer in slug-shock!
+1	line	Player	What? Who?
+1	line	Player	Gah! Sorry about that.
+1	line	Captain Braindeath	No problem. Well, now ye have just one more ingredient to grab, and then we can get this 'rum' flowin!
+1	line	Player	Well, how far away will I have to go to grab it?
+1	line	Captain Braindeath	Not far at all, [lad/lass]. Ye've just got to get it from the basement!
+1	line	Player	Great! What is it?
+1	line	Captain Braindeath	Hold yer horses, [lad/lass]! While ye was off gallivantin' with yer slimy aquatic playmates, the 'rum' achieved spiritual critical mass.
+1	line	Captain Braindeath	To put it in terms ye'll understand: the brewin' equipment is possessed.
+1	line	Player	Possessed!
+1	line	Captain Braindeath	Don't ye worry yerself about it! This happens all the time.
+1	line	Captain Braindeath	Well, to tell the truth, my lads are a little quicker off the mark, so it only happens occasionally.
+1	line	Captain Braindeath	Not that I'm criticisin' yer performance, [lad/lass].
+1	line	Captain Braindeath	Give the controls a couple of belts with this wrench.
+1	line	Captain Braindeath	One of the lads did a little priestin' on the side before he came here. Get him to bless it and ye'll do fine.
+1	action	end
+0	section	Talking to Captain Braindeath again
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want yeto go clear the Evil Spirit out of the brewin' controls. Use the wrench I gave ye, but get it blessed first.
+2	cond	If the player has lost the wrench:
+3	line	Player	Mumblemumblewhatwrenchmumble...
+3	line	Captain Braindeath	What were that?
+3	line	Player	I said, what if I've lost the wrench?
+3	cond	If the player doesn't have inventory space:
+4	line	Captain Braindeath	Arr, ye landlubber!
+4	line	Captain Braindeath	Calm down, remember yer ulcer...
+4	line	Captain Braindeath	Look, I've got another wrench, but ye don't have any free space fer it. Come back when ye do.
+4	action	end
+3	cond	If the player has inventory space:
+4	line	Captain Braindeath	Arr! I'd get more work out of a minty flavoured brick!
+4	line	Captain Braindeath	If ye lose this one I'll have ye turned inside out, covered with spiders and turned rightside in so they'll eat ye alive!
+4	line	Player	Steady on!
+4	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Using a non-holy wrench on Brewing control
+1	line	Player	Come out and face me!
+1	box	Well, it seems that this wrench is just not holy enough to work. You should go and get it blessed.
+1	action	end
+0	section	Talking to Davey
+1	line	Player	You used to be a priest, right?
+1	line	Davey	I didn't nick anything, guv. I've got twenty people who'll swear blind I was...
+1	line	Player	What?
+1	line	Player	Never mind. I need some help with the spirit in the brewing equipment.
+1	cond	Without the wrench:
+2	line	Davey	Well, I'll bless something for you if you need it, but just don't spread it around that I'm giving out freebies.
+2	action	end
+1	line	Davey	Trust me, guv, lots of people need help after coming into contact with the spirits we produce here.
+1	line	Player	Can you bless this wrench for me?
+1	cond	If the player does not have 47 Prayer points:
+2	line	Davey	Nope.
+2	line	Player	Nope?
+2	line	Davey	Nope. You don't strike me as being... devout, you know?
+2	line	Player	Come again?
+2	line	Davey	Your holy aura, it's a little shoddy, if you catch my drift.
+2	line	Player	What?
+2	line	Davey	You need a Prayer level of 47.
+2	line	Player	Oh!
+2	line	Player	Well why didn't you just say so?
+2	line	Davey	I might have had a bit of an overestimation problem guv. I'm sure it won't happen again.
+2	action	end
+1	line	Davey	I might well do. Remember, only the first one's free.
+1	line	Davey	Dominoes Ad Nauseum, Romanes Eunt Domus.
+1	line	Davey	Sorted.
+1	line	Player	Is that it?
+1	line	Davey	Oh, you want the full package deal.
+1	line	Davey	All right. Brace yourself.
+1	line	Player	Groovy.
+1	line	Player	Thanks!
+1	line	Davey	No problem, guv. Good luck with your little problem.
+1	line	Davey	You might find that little wrench worth hanging on to after you're done with the Spirit.
+1	line	Player	Really? I mean, it's holy and everything, but I don't think it looks all that useful.
+1	line	Davey	Well, it may not look much, but you'll find that you might need a few less prayer potions if you have it in your pack, if you know what I mean.
+1	line	Player	Well, no. I don't know what you mean, but I'm sure I'll find out!
+1	action	end
+0	section	Talking to Davey after getting the holy wrench
+1	line	Player	You used to be a priest, right?
+1	line	Davey	I didn't nick anything, guv. I've got twenty people who'll swear blind I was...
+1	line	Player	What?
+1	line	Player	Never mind. I need some help with the spirit in the brewing equipment.
+1	line	Davey	You mean more help? I've already blessed one wrench for you, that should be enough.
+1	action	end
+0	section	Talking to Captain Braindeath with the holy wrench
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go clear the Evil Spirit out of the brewin' controls. Use the wrench I gave ye, but get it blessed first.
+2	line	Captain Braindeath	I see ye've got the wrench good and blessed, so go whack the controls till the Evil Spirit pops out.
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Using the holy wrench on Captain Braindeath
+1	line	Captain Braindeath	I see ye've got the wrench good and blessed, so go whack the hopper 'til the Evil Spirit pops out.
+1	action	end
+0	section	Using the holy wrench on the brewing control
+1	box	You raise your wrench on high and smite the controls mightily!
+1	line	Player	The power of Guthix compels you!
+1	box	The Evil Spirit is forced from the controls!
+1	action	end
+0	section	Using the holy wrench on the controls when the spirit is already out
+1	box	The Evil Spirit has already manifested!
+1	action	end
+0	section	Defeating the Evil Spirit
+1	box	You have banished the Evil Spirit!
+1	action	end
+0	section	Fever Spider
+0	section	Talking to Captain Braindeath after killing the evil spirit
+1	line	Captain Braindeath	Well, now that ye've got that spirit out of there ye can dump in the final ingredient.
+1	line	Player	And that is?
+1	line	Captain Braindeath	We need the body of a diseased Fever Spider!
+1	line	Player	Remind me never to drink anything you have ever made. Or touched.
+1	line	Captain Braindeath	When yer quite done flappin' yer lips, go down into the basement and whack spiders until ye find a fever spider body.
+1	line	Captain Braindeath	Shove it in the hopper, and then we're in business.
+1	cond	Not wearing Slayer Gloves:
+2	line	Captain Braindeath	Ye may want to hop back to the mainland and see a Slayer Master.
+2	line	Captain Braindeath	These Fever Spiders carry a nasty disease, and ye'll need a pair of Slayer Gloves on to not catch it!
+1	cond	Wearing Slayer Gloves:
+2	line	Captain Braindeath	I see yer already wearin' some Slayer Gloves. That'll keep the Fever Spiders from gnawin' yer hands off!
+1	action	end
+0	section	Talking to Captain Braindeath again before getting the spider corpse
+1	line	Player	So...
+1	select	Select an Option
+1	option	What exactly do you want me to do?
+2	line	Player	What exactly do you want me to do?
+2	line	Captain Braindeath	I want ye to go kill a Fever Spider and jam its body in the hopper.
+2	line	Captain Braindeath	Whenever yer ready, [lad/lass].
+2	action	end
+1	option	Why do you talk like a pirate?
+2	action	above
+1	option	So what do you make here anyway?
+2	action	above
+0	section	Using the spider corpse on Captain Braindeath
+1	line	Captain Braindeath	What are ye doin', [lad/lass]? I want ye to shove that in the hopper, not in me face!
+1	line	Captain Braindeath	Ye just can't get good help these days...
+1	action	end
+0	section	Using the spider corpse on the hopper
+1	box	You cram the diseased Fever Spider body into the hopper.
+1	action	end
+0	section	Dissolving the protest
+0	section	Talking to Captain Braindeath after using the spider carcass on the hopper
+1	line	Player	Well, I stuck your spider in the hopper, what now?
+1	line	Captain Braindeath	Now ye stand well back and watch the glory of brewin' at its best!
+1	line	Player	Is that it?
+1	line	Captain Braindeath	Aye [lad/lass]! Now get outside and feed that stuff to the pirates.
+1	line	Captain Braindeath	Try givin' it to the Captain, he's in charge. Get him bladdered and the rest will fall!
+1	line	Captain Braindeath	Ye'll need to use that bucket of yours. Most stuff can't stand bein' in contact with our 'rum' fer too long.
+1	line	Captain Braindeath	Took us a lot of dissolvin' to work that one out.
+1	action	end
+0	section	Talking to Captain Braindeath before talking to Captain Donnie
+1	line	Captain Braindeath	So, what did he say?
+1	line	Player	Who?
+1	line	Captain Braindeath	The Cap'n!
+1	line	Player	Oh! I haven't spoken to him yet!
+1	line	Captain Braindeath	Well, get a move on!
+1	cond	If the player hasn't gotten 'rum' yet:
+2	line	Captain Braindeath	And don't ferget the 'rum'!
+1	action	end
+0	section	Turning the output tap (requires a bucket)
+1	cond	If the player does not have an empty bucket:
+2	box	Nothing interesting happens.
+2	action	end
+1	cond	If the player has an empty bucket:
+2	box	You carefully fill the bucket with the foul-smelling swill.
+2	action	
+2	action	end
+0	section	Talking to Captain Donnie
+1	line	Captain Donnie	Be that the finest, most abrasive 'rum' I've ever smelled?
+1	line	Player	Yes! That it be!
+1	line	Captain Donnie	Hand it over or I'll run ye through!
+1	box	The Captain drinks the 'rum' as quickly as possible.
+1	line	Captain Donnie	Arr.
+1	line	Captain Donnie	Ye be a good [lad/lass], fer a filthy livin' landlubber.
+1	line	Player	So... I take it your boss will be pleased?
+1	line	Captain Donnie	Arr, that he will. I'll tell...
+1	line	Captain Donnie	Wait a minute...
+1	line	Captain Donnie	Arr, ye tricky dog!
+1	line	Captain Donnie	Ye tried to trick old Donnie!
+1	line	Player	Oh well, I guess I'll have to try again.
+1	line	Captain Donnie	Arr, [lad/lass], you tried to trick me, but i was too clever for ye!
+1	line	Captain Donnie	Besides, Rabid Jack would have my hide if I told ye it were him that sent me!
+1	line	Player	I'm sure he would. Good job you caught me out, eh!
+1	line	Captain Donnie	Aye! Now get ye gone, and don't return without more 'rum'!
+1	action	end
+0	section	Talking to Captain Donnie again while having 'rum' with you
+1	line	Captain Donnie	Hey you! I can smell the 'rum' on ye!
+1	line	Captain Donnie	If it isn't in my belly by the time I cout ter three, I'll have ye flogged!
+1	box	Donnie drinks the 'rum' like it is water.
+1	line	Captain Donnie	Arrr...that hits the spot...
+1	action	end
+0	section	Trying to get more 'rum' from the Output tap
+1	box	You thankfully have no need to do that any more.
+1	action	end
+0	section	Talking to Captain Braindeath after talking to Captain Donnie
+1	line	Captain Braindeath	So, what did he say?
+1	line	Player	Not much that was coherent.
+1	line	Player	Who is Rabid Jack?
+1	line	Captain Braindeath	Rabid Jack!
+1	line	Captain Braindeath	THE Rabid Jack!
+1	line	Captain Braindeath	Egad...I haven't heard that name...
+1	line	Captain Braindeath	...before.
+1	line	Player	So, who is he?
+1	line	Captain Braindeath	Dunno [lad/lass].
+1	line	Captain Braindeath	Almost as if I aren't changing subjects, well done!
+1	line	Captain Braindeath	With those rottin' dogs legless they'll never keep fighting us now, so we've decided to stay here and keep the 'rum' flowin!
+1	line	Captain Braindeath	Thanks, [lad/lass]. We'd never have managed without ye!
+1	action	end

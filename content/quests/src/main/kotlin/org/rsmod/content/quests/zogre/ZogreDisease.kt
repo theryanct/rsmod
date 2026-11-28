@@ -14,6 +14,7 @@ import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.type.refs.npc.NpcReferences
+import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.entity.Player
@@ -27,6 +28,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * five balm doses rather than three for his). Every 30 ticks a random stat other than Hitpoints and
  * Prayer drops by 1-10 (never below 1); a stat already at 1 takes the damage from Hitpoints
  * instead. Relicym's balm (Herblore) takes 10 periods off per dose.
+ *
+ * Rum Deal's fever spiders (`deal_fever_spiders1`) spread it too, unless the player wears slayer
+ * gloves (`deal_slayer_gloves`, Wiki).
  *
  * Simplified: a 1 in 4 chance on any zogre attack (the Wiki gives no rate); one severity for all
  * sources (Slash Bash's drain is up to 15 in OSRS); no Sanfew serum immunity (not on this server).
@@ -45,8 +49,9 @@ class ZogreDisease @Inject constructor(private val random: GameRandom) : PluginS
     private fun onNpcHit(event: NpcAttackHitEvent) {
         val id = event.npc.type.id
         if (id !in sources) return
-        if (random.of(CHANCE) != 0) return
         val player = event.target
+        if (id == DiseaseNpcs.fever_spider.id && DiseaseObjs.slayer_gloves in player.worn) return
+        if (random.of(CHANCE) != 0) return
         val periods = if (id == DiseaseNpcs.slash_bash.id) BASH_PERIODS else ZOGRE_PERIODS
         val current = player.vars[DiseaseVarps.disease]
         if (current >= periods) return
@@ -114,9 +119,11 @@ class ZogreDisease @Inject constructor(private val random: GameRandom) : PluginS
 
 internal object DiseaseNpcs : NpcReferences() {
     val slash_bash = find("zogre_slash_bash")
+    val fever_spider = find("deal_fever_spiders1")
     val all =
         listOf(
             slash_bash,
+            fever_spider,
             find("zogre_1"),
             find("zogre_2"),
             find("zogre_3"),
@@ -132,6 +139,10 @@ internal object DiseaseNpcs : NpcReferences() {
             find("zogre_drummer2"),
             find("zogre_skele"),
         )
+}
+
+internal object DiseaseObjs : ObjReferences() {
+    val slayer_gloves = find("deal_slayer_gloves")
 }
 
 internal object DiseaseVarps : VarpReferences() {

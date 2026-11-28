@@ -56,6 +56,7 @@ import org.rsmod.content.quests.princeali.PrinceAliRescue.Companion.PRINCE_ALI_R
 import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_BONE_MAN_I
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
+import org.rsmod.content.quests.rumdeal.RumDeal.Companion.RUM_DEAL
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
 import org.rsmod.content.quests.scorpioncatcher.ScorpionCatcher.Companion.SCORPION_CATCHER
 import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
@@ -138,6 +139,7 @@ public object BuiltQuests {
             RAG_AND_BONE_MAN_I,
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,
+            RUM_DEAL,
             RUNE_MYSTERIES,
             SCORPION_CATCHER,
             SEA_SLUG,

@@ -1,0 +1,19 @@
+# Generated from the OSRS Wiki page "Transcript:Davey" by tools/quests/transcript_to_dialogue.py
+0	section	After Rum Deal
+1	line	Davey	Ello again guv. How's things?
+1	line	Player	Good! Everything seems to have worked out ok.
+1	line	Davey	I'm sure it'll stay that way so long as you don't know it's missing.
+1	line	Player	What?
+1	line	Davey	Nothin' guv, you just have a nice day.
+1	action	end
+0	section	Without a holy wrench in the inventory or bank
+1	line	Davey	Ello again guv. I take it you're here about the wrench?
+1	line	Player	What? The Holy Wrench? But I lost it somewhere...
+1	line	Davey	Well guv, maybe that's what I want you to think.
+1	cond	If the player has no inventory space:
+2	line	Davey	As soon as you've got somewhere to put it I'll hand it over. I'll keep it nice and holy until then.
+2	action	end
+1	action	
+1	line	Davey	There you go. I've kept it nice and holy for you.
+1	line	Player	Thanks...
+1	action	end

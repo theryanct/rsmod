@@ -1,0 +1,112 @@
+# Generated from the OSRS Wiki page "Transcript:50% Luke" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Player	Are you all right?
+1	line	50% Luke	Who goes there?
+1	line	50% Luke	Arr! A landlubber!
+1	line	50% Luke	Begone afore I take my cutlass to ye! I've been charged with guardin' this gate and no noodle-armed landlubbers will make it past me alive!
+1	line	Player	That's not a cutlass.
+1	line	Player	I think it's a twig.
+1	line	50% Luke	Ye cheeky begger! I was wavin' my finger at ye!
+1	line	Player	All right...
+1	line	50% Luke	Arrr... just 'cos me body happens to be 50% wood does not mean I'm heartless.
+1	line	50% Luke	I got a bag of 'em here. Wanna see?
+1	line	Player	I think I'll pass.
+1	select	Select an Option
+1	option	What happened to you?
+2	line	Player	What happened to you?
+2	cond	If the player is not wearing a Ring of Charos:
+3	line	50% Luke	That be a tale so heart-wrenchin' that it has so far wrenched the hearts from over a dozen sturdier men than thee!
+3	line	50% Luke	A tale of such woe that none but the stoniest hearts can hear it without sheddin' a single, poignant tear...
+3	line	50% Luke	And I'll never tell ye, not even if ye wore an item, such as a ring, with powers of mind control!
+3	line	Player	What if I said please?
+3	line	50% Luke	Hmmmm...well alright...
+3	line	50% Luke	Wait, no!
+3	line	50% Luke	Get goin' landlubber before I take my splintery foot to yer behind!
+3	action	end
+2	cond	If the player is wearing a Ring of Charos:
+3	line	50% Luke	Well ye seem like a [lad/lass] that can handle such a tale...so I'll tell ye...
+3	line	50% Luke	Well, it all starts with this albatross...
+3	line	50% Luke	Wait, never mind, I'll skip forward a bit.
+3	line	Player	Are you sure?
+3	line	50% Luke	I have to [lad/lass], Cap'n Donnie will flay what little is left of me if I told ye.
+3	line	50% Luke	But anyway, I got recruited to the zombie pirates along with the rest of the crew in an unspecified incident involvin this albatross.
+3	line	50% Luke	We was sailin' along happily, and I was partakin' of a little 'rum' in the crows nest.
+3	line	50% Luke	Well, we hit either a really rough wave or some rocks.
+3	line	50% Luke	Twas kind of hard for me to tell which, as I was well out of it by then!
+3	line	50% Luke	Regardless I toppled from the crows nest into the water.
+3	line	Player	Is that how you got so badly injured?
+3	line	50% Luke	No [lad/lass]!
+3	line	50% Luke	What happened next was that I discovered a new, previously uncharted reef of hard, spiky coral.
+3	line	50% Luke	I made a mental note of its location, and to this day it is still marked on our fleet's charts as Lukes Reef.
+3	line	50% Luke	I managed to grab a hold of our ship, the Inebriated, as it passed overhead.
+3	line	50% Luke	And then I discovered another, taller, spikier reef of even sharper and more painful coral.
+3	line	50% Luke	To this day it is still marked on our fleet's charts as The Other 50% Reef.
+3	line	Player	Owwwwwwwww...
+3	line	50% Luke	It gets worse...
+3	line	50% Luke	When they hauled what was left of me on deck, they dropped me onto the floor while they decided what to do with me.
+3	line	50% Luke	Bear in mind this would be on a ghost ship, the planks of which sweat a thick mixture of stagnant water...and pure salt crystals.
+3	line	Player	Oh...my...god...
+3	line	50% Luke	But on the good side, all my thrashin' and pained squealin' settled the matter in the Captain's mind, and he had the shipwright carve me half a body out of his Witchwood Planks.
+3	line	Player	Witchwood? What's that?
+3	line	50% Luke	Tis a special, magical wood from a now extinct tree.
+3	line	50% Luke	Once they nailed it all in place the stuff moves like it is part of me body.
+3	line	50% Luke	The stuff will also grow back if it breaks, which is dead handy!
+3	line	Player	Wow, that stuff must be very valuable!
+3	line	50% Luke	Arr! That it be!
+3	line	50% Luke	So, that be the tale of how I managed to lose precisely 50% of my body.
+3	line	Player	There there.
+3	action	end
+1	option	How flammable are you?
+2	line	Player	So how flammable are you?
+2	line	50% Luke	What kind of a question is that?
+2	cond	If the player does not have a tinderbox:
+3	line	Player	A rather rude, personal one?
+3	line	50% Luke	Ye've got that right!
+3	action	end
+2	cond	If the player has a tinderbox:
+3	line	Player	I'll soon have you out of the way! Burn!
+3	action	The player does the tinderbox lighting animation.
+3	line	50% Luke	Don't make me angry! Ye'll not like me when I'm angry!
+3	action	The screen turns black and a message appears saying "One 500 hit combo later..."
+3	line	50% Luke	Let that be a lesson to ye!
+3	line	Player	My world is an ocean of paaaain!
+3	action	end
+1	option	So what is going on here anyway?
+2	line	Player	So what is going on here anyway?
+2	line	50% Luke	Ye expect me to talk?
+2	line	Player	No Mr. Luke, I expect you to die!
+2	line	50% Luke	Hah! I'm one step ahead of ye!
+2	line	Player	Egad, outsmarted by the man with the wooden brain.
+2	line	Player	But seriously, what is going on here?
+2	line	50% Luke	I can't tell ye [lad/lass].
+2	line	50% Luke	The Cap'n would have me whittled down to toothpicks if I did.
+2	line	Player	Well if you can't tell me, perhaps you could show me through the medium of Interpretive Dance?
+2	line	50% Luke	No. Just...no.
+2	line	Player	Mime?
+2	line	50% Luke	Look, [lad/lass] I'm not tellin' ye a thing! So clear out while ye still can!
+2	action	end
+0	section	Using a tinderbox on 50% Luke
+1	action	Starts above from "I'll soon have you out of the way! Burn!"
+0	section	Using the gate near 50% Luke
+0	section	From the south side
+1	line	50% Luke	Arr! Tryin' ter get away eh? Well ye'll never sneak past me, I'm the best lookout this crew has ever seen!
+1	option	Dialogue 1
+2	line	Player	Who's that making faces behind you?
+1	option	Dialogue 2
+2	line	Player	That is the most amazing thing I have ever seen!
+1	option	Dialogue 3
+2	line	Player	Is that your distraction?
+1	option	Dialogue 4
+2	line	Player	Who is that behind you?
+1	option	Dialogue 5
+2	line	Player	Hey you! Look over there!
+1	option	Dialogue 6
+2	line	Player	Oh my! Is that a genuine 3rd Age Diversion?
+1	line	50% Luke	Where?
+1	action	end
+0	section	From the north side
+1	line	50% Luke	Hey! What are you doing out there?
+1	line	Player	Nothing.
+1	line	50% Luke	Well Cap'n Donnie said no livin' landlubbers were allowed out of the compound.
+1	line	50% Luke	So get yerself back in here, or yer for it!
+1	action	end
