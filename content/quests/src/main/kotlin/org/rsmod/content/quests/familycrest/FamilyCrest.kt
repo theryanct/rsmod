@@ -71,7 +71,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *
  * Stages: 1 started, 2 fish asked, 3 Caleb's piece, 4 told of Avan, 5 gem trader, 6 Avan
  * revealed, 7 Boot, 8 Avan's piece, 9 Johnathon found, 10 cured, 11 done. Server varp
- * `crest_progress` (65812): bits 0-2 levers G/H/I up, bit 3 the hellhound gate unlocked.
+ * `crest_progress` (65440, ui custom range): bits 0-2 levers G/H/I up, bit 3 the hellhound gate unlocked.
  *
  * Simplified (Authored, not Wiki): only the gem trader of the Al Kharid traders knows of Avan;
  * the gem trader's Talk-to only greets you unless you seek Avan (Trade opens his shop); levers
