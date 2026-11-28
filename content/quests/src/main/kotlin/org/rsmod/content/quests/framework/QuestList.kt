@@ -38,6 +38,7 @@ import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_G
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
 import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
+import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
@@ -88,6 +89,7 @@ public object BuiltQuests {
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
             SEA_SLUG,
+            SHEEP_HERDER,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
             TREE_GNOME_VILLAGE,

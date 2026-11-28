@@ -982,3 +982,29 @@ coords = '0_54_52_14_47'
 [[spawn]]
 npc = 'ghast_invis'
 coords = '0_53_53_53_28'
+
+# Sheep Herder: Councillor Halgrive (Wiki 2617,3300), the blue sheep's field spawn (2560,3389), and the
+# four enclosure multinpcs (shown when each sheep is penned).
+[[spawn]]
+npc = 'councillor_halgrive'
+coords = '0_40_51_57_36'
+
+[[spawn]]
+npc = 'plaguesheep_3'
+coords = '0_40_52_0_61'
+
+[[spawn]]
+npc = 'herder_plaguesheep_1_enclosure'
+coords = '0_40_52_37_34'
+
+[[spawn]]
+npc = 'herder_plaguesheep_2_enclosure'
+coords = '0_40_52_38_33'
+
+[[spawn]]
+npc = 'herder_plaguesheep_3_enclosure'
+coords = '0_40_52_37_32'
+
+[[spawn]]
+npc = 'herder_plaguesheep_4_enclosure'
+coords = '0_40_52_36_31'
