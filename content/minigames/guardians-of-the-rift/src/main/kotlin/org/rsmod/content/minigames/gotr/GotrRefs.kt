@@ -9,6 +9,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 
 internal object GotrLocs : LocReferences() {
@@ -95,6 +96,24 @@ internal object GotrObjs : ObjReferences() {
             find("gotr_cell_tier4"),
         )
     val chisel = find("chisel")
+    /** Raiments of the Eye by slot (any colour counts). */
+    val raiments =
+        listOf(
+            listOf(find("hat_of_the_eye"), find("hat_of_the_eye_red"), find("hat_of_the_eye_green"), find("hat_of_the_eye_blue")),
+            listOf(
+                find("robe_top_of_the_eye"),
+                find("robe_top_of_the_eye_red"),
+                find("robe_top_of_the_eye_green"),
+                find("robe_top_of_the_eye_blue"),
+            ),
+            listOf(
+                find("robe_bottom_of_the_eye"),
+                find("robe_bottom_of_the_eye_red"),
+                find("robe_bottom_of_the_eye_green"),
+                find("robe_bottom_of_the_eye_blue"),
+            ),
+            listOf(find("boots_of_the_eye")),
+        )
     val talismans =
         listOf(
             find("gotr_portal_talisman_air"),
@@ -138,6 +157,13 @@ internal object GotrQueues : QueueReferences() {
 internal object GotrTimers : TimerReferences() {
     /** Custom (ui range 65301): the per-player game clock. */
     val tick = find("gotr_tick")
+}
+
+internal object GotrVarbits : VarBitReferences() {
+    /** Toggle-talisman per guardian (1 = stop receiving), in guardian order. */
+    val talisman_toggles =
+        listOf("air", "water", "earth", "fire", "mind", "body", "cosmic", "chaos", "nature", "law", "death", "blood")
+            .map { find("gotr_talisman_toggle_$it") }
 }
 
 /** Custom (ui range 65330/65331): unspent elemental / catalytic reward points. */

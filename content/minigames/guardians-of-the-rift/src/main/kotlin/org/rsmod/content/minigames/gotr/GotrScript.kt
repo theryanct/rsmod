@@ -19,6 +19,7 @@ import org.rsmod.api.player.stat.runecraftingLvl
 import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifOpenOverlay
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.game.type.varbit.VarBitType
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
@@ -27,6 +28,7 @@ import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
+import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onOpNpc1
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerLogout
@@ -102,22 +104,28 @@ constructor(
 ) : PluginScript() {
 
     /** A portal guardian: its loc, the altar it leads to, and its HUD key (enums 4270 / 4271). */
-    private class Guardian(val loc: LocType, val altarKey: String, val elemental: Boolean, val hud: Int)
+    private class Guardian(
+        val loc: LocType,
+        val altarKey: String,
+        val elemental: Boolean,
+        val hud: Int,
+        val index: Int,
+    )
 
     private val guardians by lazy {
         listOf(
-            Guardian(GotrLocs.portal_air, "air", true, 1),
-            Guardian(GotrLocs.portal_water, "water", true, 2),
-            Guardian(GotrLocs.portal_earth, "earth", true, 3),
-            Guardian(GotrLocs.portal_fire, "fire", true, 4),
-            Guardian(GotrLocs.portal_mind, "mind", false, 1),
-            Guardian(GotrLocs.portal_body, "body", false, 2),
-            Guardian(GotrLocs.portal_cosmic, "cosmic", false, 3),
-            Guardian(GotrLocs.portal_chaos, "chaos", false, 4),
-            Guardian(GotrLocs.portal_nature, "nature", false, 5),
-            Guardian(GotrLocs.portal_law, "law", false, 6),
-            Guardian(GotrLocs.portal_death, "death", false, 7),
-            Guardian(GotrLocs.portal_blood, "blood", false, 8),
+            Guardian(GotrLocs.portal_air, "air", true, 1, 0),
+            Guardian(GotrLocs.portal_water, "water", true, 2, 1),
+            Guardian(GotrLocs.portal_earth, "earth", true, 3, 2),
+            Guardian(GotrLocs.portal_fire, "fire", true, 4, 3),
+            Guardian(GotrLocs.portal_mind, "mind", false, 1, 4),
+            Guardian(GotrLocs.portal_body, "body", false, 2, 5),
+            Guardian(GotrLocs.portal_cosmic, "cosmic", false, 3, 6),
+            Guardian(GotrLocs.portal_chaos, "chaos", false, 4, 7),
+            Guardian(GotrLocs.portal_nature, "nature", false, 5, 8),
+            Guardian(GotrLocs.portal_law, "law", false, 6, 9),
+            Guardian(GotrLocs.portal_death, "death", false, 7, 10),
+            Guardian(GotrLocs.portal_blood, "blood", false, 8, 11),
         )
     }
 
@@ -180,6 +188,10 @@ constructor(
         bindLoc(GotrLocs.huge_remains, 1) { mine(Remains.Essence) }
         for (guardian in guardians) {
             bindLoc(guardian.loc, 1) { enterGuardian(guardian) }
+            bindLoc(guardian.loc, 2) { toggleTalisman(guardian) }
+            onOpLocU(guardian.loc, GotrObjs.talismans[guardian.index]) {
+                enterGuardian(guardian, talisman = true)
+            }
         }
         bindLoc(GotrLocs.uncharged_cells, 1) { takeUncharged(MAX_UNCHARGED) }
         bindLoc(GotrLocs.uncharged_cells, 2) { takeUncharged(1) }
@@ -445,13 +457,14 @@ constructor(
 
     /* Altars */
 
-    private suspend fun ProtectedAccess.enterGuardian(guardian: Guardian) {
+    private suspend fun ProtectedAccess.enterGuardian(guardian: Guardian, talisman: Boolean = false) {
         val game = games[player]
         if (game == null) {
             mes("The portal guardian is dormant.")
             return
         }
-        if (game.openElemental !== guardian && game.openCatalytic !== guardian) {
+        val open = game.openElemental === guardian || game.openCatalytic === guardian
+        if (!open && !talisman) {
             mes("This portal guardian isn't open right now.")
             return
         }
@@ -468,6 +481,10 @@ constructor(
         if (gated && guardian.altarKey == "cosmic" && !player.isQuestComplete(LostCity.LOST_CITY)) {
             mes("You need to complete Lost City to enter this portal.")
             return
+        }
+        if (!open) {
+            invDel(inv, GotrObjs.talismans[guardian.index], 1)
+            mes("The portal talisman opens the guardian for you.")
         }
         game.atAltar = altar.inside
         telejump(altar.inside)
@@ -506,10 +523,44 @@ constructor(
         val perEssence = 1 + player.runecraftingLvl / altar.multipleEvery
         val stone = if (elemental) GotrObjs.stone_elemental else GotrObjs.stone_catalytic
         invAdd(inv, stone, essence)
-        invAdd(inv, rune, essence * perEssence)
+        val runes = essence * perEssence
+        invAdd(inv, rune, runes + raimentsBonus(runes))
+        rollTalisman(altar.key, essence)
         chargeCell(altar.key)
         statAdvance(stats.runecrafting, essence * altar.xp * xpMods.get(player, stats.runecrafting))
         mes("You bind the temple's power into ${altar.key} runes and guardian stones.")
+    }
+
+    /** Raiments of the Eye: +10% runes per piece worn, +20% more for the full set (no xp). */
+    private fun ProtectedAccess.raimentsBonus(runes: Int): Int {
+        val pieces = GotrObjs.raiments.count { slot -> slot.any { piece -> player.worn.any { it?.id == piece.id } } }
+        val percent = pieces * RAIMENT_PERCENT + if (pieces == GotrObjs.raiments.size) RAIMENT_SET_PERCENT else 0
+        val bonus = runes * percent
+        return bonus / 100 + if (random.of(100) < bonus % 100) 1 else 0
+    }
+
+    /** 1/250 per essence imbued: that guardian's portal talisman (unless toggled off or held). */
+    private fun ProtectedAccess.rollTalisman(altarKey: String, essence: Int) {
+        val guardian = guardians.firstOrNull { it.altarKey == altarKey } ?: return
+        val talisman = GotrObjs.talismans[guardian.index]
+        if (vars[talismanToggle(guardian)] != 0 || invTotal(inv, talisman) > 0) {
+            return
+        }
+        if ((0 until essence).any { random.of(TALISMAN_ODDS) == 0 }) {
+            invAdd(inv, talisman, 1)
+            mes("You find a portal talisman!")
+        }
+    }
+
+    private fun talismanToggle(guardian: Guardian): VarBitType = GotrVarbits.talisman_toggles[guardian.index]
+
+    private fun ProtectedAccess.toggleTalisman(guardian: Guardian) {
+        val off = vars[talismanToggle(guardian)] == 0
+        VarPlayerIntMapSetter.set(player, talismanToggle(guardian), if (off) 1 else 0)
+        mes(
+            if (off) "You will no longer receive ${guardian.altarKey} portal talismans."
+            else "You will now receive ${guardian.altarKey} portal talismans again."
+        )
     }
 
     /* Powering the Great Guardian */
@@ -942,6 +993,9 @@ constructor(
         const val TOTAL_CAP = 1200
         const val XP_ENERGY_THRESHOLD = 300
         const val XP_PER_LEVEL = 45
+        const val RAIMENT_PERCENT = 10
+        const val RAIMENT_SET_PERCENT = 20
+        const val TALISMAN_ODDS = 250
 
         // Phase 2. Energy and cell xp per tier (weak..overcharged): OSRS Wiki table; the Wiki
         // lists xp 30/100/180/250, read here as tenths like cache xp (3/10/18/25).

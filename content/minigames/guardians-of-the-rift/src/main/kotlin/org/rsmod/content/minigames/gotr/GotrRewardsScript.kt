@@ -9,6 +9,8 @@ import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.isNpcOpBound
+import org.rsmod.api.script.isHeldOpBound
+import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -39,7 +41,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   abyssal ashes, a needle), then the 1/4000 Abyssal protector. Rewards feed the collection log.
  * - Apprentice Felix's Trade: Temple Supplies for abyssal pearls. The shop interface only takes
  *   coins on this server, so it's a menu for now (later polish: a pearl currency shop).
- * - Not yet: opening the intricate pouch (its own table), dye swaps, Raiments' bonus runes.
+ * - The intricate pouch opens on the Wiki table: one of 8 rune stacks / 5 items (of 45), plus the
+ *   separate blood essence (1/200), lamp (1/15), tarnished locket (1/40) and lost bag (1/60) rolls.
+ *   Its 1/10 hard clue isn't rolled yet. Not yet: dye swaps with Felix.
  */
 class GotrRewardsScript
 @Inject
@@ -87,6 +91,24 @@ constructor(
             Roll("death_talisman", 16, 1, 1, noted = true),
         )
 
+    /** Intricate pouch main table, weights out of 45. */
+    private val intricate =
+        listOf(
+            Roll("astralrune", 5, 150, 200),
+            Roll("bloodrune", 5, 150, 200),
+            Roll("chaosrune", 5, 200, 300),
+            Roll("cosmicrune", 5, 200, 300),
+            Roll("deathrune", 5, 150, 200),
+            Roll("lawrune", 5, 200, 250),
+            Roll("naturerune", 5, 200, 300),
+            Roll("soulrune", 5, 150, 200),
+            Roll("dragonshield_a", 1, 1, 1),
+            Roll("dragon_spear", 1, 1, 1),
+            Roll("crystal_key", 1, 1, 1),
+            Roll("dragon_med_helm", 1, 1, 1),
+            Roll("blankrune_high", 1, 500, 1000, noted = true),
+        )
+
     private val pouches = listOf("rcu_pouch_small", "rcu_pouch_medium", "rcu_pouch_large", "rcu_pouch_giant")
 
     private class Ware(val name: String, val price: Int)
@@ -111,12 +133,29 @@ constructor(
         if (!isNpcOpBound(GotrRewardNpcs.felix, 3)) {
             onOpNpc3(GotrRewardNpcs.felix) { templeSupplies() }
         }
+        if (!isHeldOpBound(GotrRewardObjs.intricate_pouch, 1)) {
+            onOpHeld1(GotrRewardObjs.intricate_pouch) { openIntricatePouch() }
+        }
         loadCheck()
+    }
+
+    private fun ProtectedAccess.openIntricatePouch() {
+        if (invDel(inv, GotrRewardObjs.intricate_pouch, 1).failure) {
+            return
+        }
+        if (random.of(200) == 0) give(GotrRewardObjs.blood_essence, 1)
+        if (random.of(15) == 0) give(GotrRewardObjs.lamp, 1)
+        if (random.of(40) == 0) give(GotrRewardObjs.tarnished_locket, 1)
+        if (random.of(60) == 0) give(GotrRewardObjs.lost_bag, 1)
+        give(pick(intricate, random.of(intricate.sumOf { it.weight })))
+        mes("You open the intricate pouch.")
     }
 
     /** Fails loudly at boot if a table name doesn't resolve. */
     private fun loadCheck() {
-        val all = runes.map { it.name } + talismans.map { it.name } + pouches + wares.map { it.name }
+        val all =
+            runes.map { it.name } + talismans.map { it.name } + intricate.map { it.name } + pouches +
+                wares.map { it.name }
         val missing = all.filter { names.objs[it] == null }
         check(missing.isEmpty()) { "GotR reward objs missing from the symbols: $missing" }
     }
@@ -293,6 +332,10 @@ internal object GotrRewardObjs : ObjReferences() {
     val green_dye = find("abyssal_green_dye")
     val blue_dye = find("abyssal_blue_dye")
     val abyssal_protector = find("abyssalpet")
+    val blood_essence = find("blood_essence_inactive")
+    val lamp = find("macro_genilamp")
+    val tarnished_locket = find("gotr_tarnished_locket")
+    val lost_bag = find("gotr_lost_bag")
 }
 
 internal object GotrRewardVarbits : VarBitReferences() {
