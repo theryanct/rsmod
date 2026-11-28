@@ -30,7 +30,10 @@ public enum class Feature(
     AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5),
     NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6),
     NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7),
-    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8);
+    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8),
+    // Slot 9 is taken by QuestGates on the quests branch.
+    /** Pickpocket the same npc again after a success; re-steal from a restocked stall. */
+    AutoRepeatThieving("autothieve", "Auto-repeat thieving", defaultOn = true, slot = 10);
 
     public companion object {
         public fun forKey(key: String): Feature? =
