@@ -49,6 +49,10 @@ compile-fix and boot-fix rounds in the build window.
 2. **Canoes** -> per-station `canoe_map_*` interfaces.
 Re-enable by removing them from `disabledProjects` in `settings.gradle.kts`.
 
+## After rebasing onto main (once feat/make-x-skillmulti is merged)
+- `api/player/.../ui/SkillMulti.kt`: rev 243 names 18 skillmulti item slots (`a`-`r`); extend
+  `SkillMultiComponents.items` from `a`-`j` so up to 18 products work.
+
 ## Known risks / guesses to verify in game
 - Network layer port (Infos API) is the least certain piece; watch player/npc info packets.
 - Camera `heightRelative = true` is a guess at the old ground-relative behaviour.
