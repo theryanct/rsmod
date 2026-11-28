@@ -37,6 +37,21 @@ internal object SlayerData {
         val extends: List<String>,
     )
 
+    /** A superior slayer monster: replaces a kill of [normals] (on task) 1/200 of the time. */
+    class Superior(val category: String, val normals: List<String>, val superior: String, val xp: Double)
+
+    /** slayer_superiors.tsv (tools/slayer/slayer_superiors.py, Wiki "Superior slayer monster"). */
+    val superiors: List<Superior> by lazy {
+        val input =
+            SlayerData::class.java.getResourceAsStream("slayer_superiors.tsv")
+                ?: error("Slayer resource not found: slayer_superiors.tsv")
+        input.bufferedReader().use { it.readLines() }
+            .map { it.trimEnd() }
+            .filter { it.isNotBlank() && !it.startsWith("#") }
+            .map { it.split('\t') }
+            .map { p -> Superior(p[1], p[2].split(','), p[3], p[4].toDouble()) }
+    }
+
     /** slayer_unlocks.tsv (tools/slayer/slayer_unlocks.py), by bit. */
     val unlocks: List<Unlock> by lazy {
         val input =
