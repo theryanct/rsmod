@@ -59,7 +59,7 @@ OBJLINE_EXCLUDE = re.compile(r"Tutorial Island|Tempoross|Birthday|Boat fishing|F
                              r"Hemenster|Hallowed Sepulchre|Iceberg|Chair \(|Elemental rock|Odd tree", re.I)
 # Fishing spot types the Fishing binder would resolve to the wrong catch (op labels alone can't tell
 # them apart): held back until skilling special-cases them. Remove an entry here once it's bound.
-FISHING_HELD = re.compile(r"karambwanji|_crabs$|minnow_|camdozaal_fish|lavafish|slimey_eel|cavefish|"
+FISHING_HELD = re.compile(r"karambwanji|0_37_59_tuna|_crabs$|minnow_|camdozaal_fish|lavafish|slimey_eel|cavefish|"
                           r"lanternfish|morulrek_eels|piscariliusfish")
 SQUARE = re.compile(r"^(?:\d_)?(\d+)_(\d+)_")
 
@@ -256,7 +256,6 @@ def main():
         cands = [i for i in sorted(ids) if not SPECIAL_ID.search(sym[i]) and sym[i] not in exclude
                  and not re.search(r"fake|deal_|fishing_boat_|inactive|newbie|contest|compofish|sinister|"
                                    r"bigdave|joshua|rag3_|snakeboss|tempoross", sym[i])
-                 and not FISHING_HELD.search(sym[i])
                  and (cname(i) == base or cname(parent.get(i, i)) == base)]
         if not cands:
             log.append((title, "", "objectlocline: no ids", ",".join(sym[i] for i in sorted(ids))[:120]))
@@ -280,6 +279,8 @@ def main():
                     q = sq(i)
                     return 10**6 if q is None else abs(q[0] - (x >> 6)) + abs(q[1] - (z >> 6))
                 chosen = min(cands, key=lambda i: (dist(i), i))
+                if FISHING_HELD.search(sym[chosen]):
+                    log.append((title, "", "held spot type", f"{sym[chosen]} {plane},{x},{z}")); continue
                 fam_base, fam = family(chosen)
                 names = {cname(k) for k in fam} - {"", "null"}
                 near2 = lambda lst: any(a[0] == plane and abs(a[1] - x) <= 2 and abs(a[2] - z) <= 2 for a in lst)
