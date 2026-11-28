@@ -381,7 +381,7 @@ internal object SgObjs : ObjReferences() {
     val juice_autumn = find("osman_squirk_j_autumn")
     val juice_summer = find("osman_squirk_j_summer")
     val guam = find("guam_leaf")
-    val marrentill = find("marrentill")
+    val marrentill = find("marentill")
     val tarromin = find("tarromin")
     val harralander = find("harralander")
     val irit = find("irit_leaf")
