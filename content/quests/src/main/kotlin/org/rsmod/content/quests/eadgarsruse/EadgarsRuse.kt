@@ -267,8 +267,13 @@ constructor(
                     runQuestSection(npc, dialogue, "Taking to Eadgar again before getting a parrot")
                 }
             SHOWN -> {
-                if (!carries(ErObjs.drunk_parrot)) setFlag(PARROT_FLEW)
                 runQuestSection(npc, dialogue, "Talking to Eadgar before preparing the fake man")
+                // Wiki: once shown, a lost parrot flies back to Eadgar, who hands it over again.
+                if (!carries(ErObjs.drunk_parrot)) {
+                    setFlag(PARROT_FLEW)
+                    give(ErObjs.drunk_parrot)
+                    mes("Eadgar hands you the parrot that flew back to him.") // Authored (not Wiki).
+                }
             }
             HIDDEN -> supplies(npc)
             SUPPLIES ->
@@ -561,7 +566,7 @@ constructor(
                 varp = { ErVarps.quest },
                 complete = COMPLETE,
                 questPoints = 1,
-                rewards = listOf("11,000 Herblore XP", "Goutweed (trade it to Sanfew for herbs)"),
+                rewards = listOf("11,000 Herblore XP", "Goutweed (trade it to Sanfew for herbs)", "Trollheim Teleport"),
                 scrollObj = { ErObjs.goutweed },
                 listRow = "quest_eadgarsruse",
             )
