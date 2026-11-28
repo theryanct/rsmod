@@ -30,7 +30,8 @@ internal object FarmingObjs : ObjReferences() {
     val watering_cans: List<ObjType> = (0..8).map { find("watering_can_$it") }
 
     val byName: Map<String, ObjType> =
-        (FarmingData.crops.flatMap { listOf(it.seed, it.produce) } + FarmingData.compostables)
+        (FarmingData.crops.flatMap { listOfNotNull(it.seed, it.produce, it.payment, it.logs.ifEmpty { null }) } +
+                FarmingData.compostables)
             .distinct()
             .associateWith { find(it) }
 }
@@ -44,6 +45,37 @@ internal object FarmingLocs : LocReferences() {
 
 internal object FarmingNpcs : NpcReferences() {
     val leprechaun = find("farming_tools_leprechaun")
+
+    /** Gardeners with a Pay op (patch protection). */
+    val gardeners =
+        listOf(
+            "farming_gardener_cactus",
+            "elstan",
+            "dantaera",
+            "kragen",
+            "lyra",
+            "francis",
+            "garth",
+            "farming_gardener_fruit_1",
+            "farming_gardener_fruit_2",
+            "farming_gardener_fruit_4",
+            "farming_gardener_fruit_tree_5",
+            "farming_gardener_hops_1",
+            "farming_gardener_hops_3",
+            "farming_gardener_hops_4",
+            "farming_gardener_bush_1",
+            "farming_gardener_bush_2",
+            "farming_gardener_bush_3",
+            "farming_gardener_bush_4",
+            "farming_gardener_tree_1",
+            "farming_gardener_tree_2",
+            "farming_gardener_tree_3",
+            "farming_gardener_tree_4",
+            "farming_gardener_tree_gnome",
+            "fossil_squirrel_gardener1",
+            "fossil_squirrel_gardener2",
+            "fossil_squirrel_gardener3",        )
+            .map { find(it) }
 }
 
 internal object FarmingSeqs : SeqReferences() {

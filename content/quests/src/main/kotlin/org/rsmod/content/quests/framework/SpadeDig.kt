@@ -1,6 +1,7 @@
 package org.rsmod.content.quests.framework
 
 import jakarta.inject.Inject
+import org.rsmod.api.player.dig.DigSpots
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
@@ -9,19 +10,14 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 /**
- * Spot handlers for the spade's "Dig" op (one handler per op, so every quest digs through here):
- * each returns `true` if it handled the dig at the player's position.
+ * Quest dig spots: a thin alias for the shared [DigSpots] registry (api), which clue scrolls and
+ * other dig triggers also use. Each handler returns `true` if it handled the dig here.
  */
 public object QuestDigSpots {
-    private val handlers = mutableListOf<suspend ProtectedAccess.() -> Boolean>()
-
     /** Register from a plugin's `startup()`; runs after the dig animation. */
     public fun register(handler: suspend ProtectedAccess.() -> Boolean) {
-        handlers += handler
+        DigSpots.register(handler)
     }
-
-    internal suspend fun dig(access: ProtectedAccess): Boolean =
-        handlers.any { handler -> handler(access) }
 }
 
 /** Binds the spade's "Dig" (unless something else owns it) and runs [QuestDigSpots]. */
@@ -33,7 +29,7 @@ public class SpadeDig @Inject constructor(private val objTypes: ObjTypeList) : P
     private suspend fun ProtectedAccess.dig() {
         anim(SpadeDigSeqs.dig)
         delay(1)
-        if (!QuestDigSpots.dig(this)) {
+        if (!DigSpots.dig(this)) {
             mes("You dig but find nothing.")
         }
     }

@@ -119,10 +119,26 @@ constructor(
                 5 -> if (!isNpcOpBound(FarmingNpcs.leprechaun, 5)) onOpNpc5(FarmingNpcs.leprechaun) { toolStore(it.npc) }
             }
         }
-        val notable = FarmingData.crops.filter { it.kind != Kind.Tree }.map { it.produce }
+        val notable = FarmingData.crops.filter { it.kind !in FarmingData.woodKinds }.map { it.produce }
         for (produce in notable.distinct()) {
             val obj = FarmingObjs.byName.getValue(produce)
             onOpNpcU(FarmingNpcs.leprechaun, obj) { noteProduce(it.objType.id) }
+        }
+        // Gardeners: "Pay" (and "Pay (north)/(south)") protect a planted patch for the Wiki fee.
+        for (gardener in FarmingNpcs.gardeners) {
+            for ((index, text) in npcTypes[gardener].op.withIndex()) {
+                if (text?.startsWith("Pay", ignoreCase = true) != true) continue
+                val op = index + 1
+                val which = if (text.contains("south", ignoreCase = true)) 1 else 0
+                if (isNpcOpBound(gardener, op)) continue
+                when (op) {
+                    1 -> onOpNpc1(gardener) { pay(it.npc, which) }
+                    2 -> onOpNpc2(gardener) { pay(it.npc, which) }
+                    3 -> onOpNpc3(gardener) { pay(it.npc, which) }
+                    4 -> onOpNpc4(gardener) { pay(it.npc, which) }
+                    5 -> onOpNpc5(gardener) { pay(it.npc, which) }
+                }
+            }
         }
         onPlayerLogin { refresh(player) }
         onPlayerSoftTimer(FarmingTimers.refresh) { refresh(player) }
@@ -155,7 +171,7 @@ constructor(
         var bound = 0
         for ((index, text) in type.op.withIndex()) {
             val label = text?.trim()?.lowercase() ?: continue
-            if (label !in PATCH_OPS) continue
+            if (label !in PATCH_OPS && !label.startsWith("pick")) continue
             val op = index + 1
             val event =
                 when (op) {
@@ -195,9 +211,11 @@ constructor(
             "harvest",
             "pick" -> harvest(loc, patch, op)
             "check-health" -> checkHealth(patch)
-            "chop down" -> chop(loc, patch, op)
+            "chop down",
+            "chop-down" -> chop(loc, patch, op)
             "clear" -> clear(patch)
             "inspect" -> inspect(patch)
+            else -> if (label.startsWith("pick")) harvest(loc, patch, op)
         }
     }
 
@@ -212,6 +230,7 @@ constructor(
         var watered: Boolean,
         var lives: Int,
         var stump: Boolean = false,
+        var protected: Boolean = false,
     ) {
         fun pack(): Int =
             (weeds and 3) or
@@ -219,7 +238,8 @@ constructor(
                 ((compost and 3) shl 8) or
                 ((if (watered) 1 else 0) shl 10) or
                 ((lives and 15) shl 11) or
-                ((if (stump) 1 else 0) shl 15)
+                ((if (stump) 1 else 0) shl 15) or
+                ((if (protected) 1 else 0) shl 16)
     }
 
     private fun unpack(value: Int): State =
@@ -230,6 +250,7 @@ constructor(
             watered = (value shr 10) and 1 == 1,
             lives = (value shr 11) and 15,
             stump = (value shr 15) and 1 == 1,
+            protected = (value shr 16) and 1 == 1,
         )
 
     private fun Player.state(patch: Patch): State =
@@ -254,7 +275,13 @@ constructor(
         (max(0, nowMinutes() - planted(patch)) / crop.minutesPerCycle).coerceAtMost(crop.cycles)
 
     private fun Player.isGrown(patch: Patch, crop: Crop): Boolean =
-        (crop.kind == Kind.Tree && state(patch).watered) || stage(patch, crop) >= crop.cycles
+        (crop.kind in TREE_LIKE && state(patch).watered) || stage(patch, crop) >= crop.cycles
+
+    /** Fruit/berries now on a health-checked fruit kind: stored count + regrowth since [planted]. */
+    private fun Player.fruits(patch: Patch, state: State, crop: Crop): Int {
+        val regrown = max(0, nowMinutes() - planted(patch)) / max(1, crop.regrowMinutes)
+        return (state.lives + regrown).coerceAtMost(crop.maxFruit)
+    }
 
     /** A cut-down tree stays a stump for [FarmingData.STUMP_MINUTES], then regrows. */
     private fun Player.isStump(patch: Patch, state: State): Boolean =
@@ -263,8 +290,17 @@ constructor(
     private fun Player.displayValue(patch: Patch): Int {
         val state = state(patch)
         val crop = state.crop ?: return state.weeds
-        if (crop.kind == Kind.Tree && state.watered) {
+        if (crop.kind in FarmingData.woodKinds && state.watered) {
             return if (isStump(patch, state)) crop.stumpValue else crop.checkedValue
+        }
+        if (crop.kind in FarmingData.fruitKinds) {
+            if (!state.watered) {
+                return if (stage(patch, crop) >= crop.cycles) crop.checkedValue
+                else crop.seedValue + stage(patch, crop)
+            }
+            if (state.stump) return crop.stumpValue
+            val fruit = fruits(patch, state, crop)
+            return if (fruit == 0) crop.grownValue else crop.fruitValue + fruit - 1
         }
         val stage = stage(patch, crop)
         if (stage >= crop.cycles) return crop.grownValue
@@ -281,19 +317,24 @@ constructor(
     private fun refresh(player: Player) {
         player.softTimer(FarmingTimers.refresh, REFRESH_TICKS)
         val coords = player.coords
-        val area =
-            FarmingData.areas.firstOrNull {
-                coords.level == it.centre.level &&
-                    abs(coords.x - it.centre.x) <= FarmingData.AREA_RADIUS &&
-                    abs(coords.z - it.centre.z) <= FarmingData.AREA_RADIUS
-            } ?: return
-        for (patch in area.patches) {
-            val varbit = FarmingVarBits.byName.getValue(patch.transmit)
-            VarPlayerIntMapSetter.set(player, varbit, player.displayValue(patch))
+        // Every area in range; the nearest is written last so it wins a shared transmit letter.
+        val inRange =
+            FarmingData.allAreas
+                .filter {
+                    coords.level == it.centre.level &&
+                        abs(coords.x - it.centre.x) <= FarmingData.AREA_RADIUS &&
+                        abs(coords.z - it.centre.z) <= FarmingData.AREA_RADIUS
+                }
+                .sortedByDescending { abs(coords.x - it.centre.x) + abs(coords.z - it.centre.z) }
+        for (area in inRange) {
+            for (patch in area.patches) {
+                val varbit = FarmingVarBits.byName.getValue(patch.transmit)
+                VarPlayerIntMapSetter.set(player, varbit, player.displayValue(patch))
+            }
+            val bin = area.bin ?: continue
+            val binVarbit = FarmingVarBits.byName.getValue(bin.transmit)
+            VarPlayerIntMapSetter.set(player, binVarbit, player.binValue(bin))
         }
-        val bin = area.bin ?: return
-        val binVarbit = FarmingVarBits.byName.getValue(bin.transmit)
-        VarPlayerIntMapSetter.set(player, binVarbit, player.binValue(bin))
     }
 
     /* Actions */
@@ -373,9 +414,10 @@ constructor(
             mes("You must be a Level ${crop.level} Farmer to plant those.")
             return
         }
-        val tool = if (crop.kind == Kind.Tree) FarmingObjs.spade else FarmingObjs.dibber
+        val sapling = crop.kind in FarmingData.saplingKinds
+        val tool = if (sapling) FarmingObjs.spade else FarmingObjs.dibber
         if (invTotal(inv, tool) == 0) {
-            val name = if (crop.kind == Kind.Tree) "spade" else "seed dibber"
+            val name = if (sapling) "spade" else "seed dibber"
             mes("You need a $name to plant that.")
             return
         }
@@ -385,7 +427,7 @@ constructor(
             return
         }
         invDel(inv, seed, crop.seedsPer)
-        if (crop.kind == Kind.Tree) {
+        if (sapling) {
             invAdd(inv, FarmingObjs.plantpot)
             anim(FarmingSeqs.dig)
         } else {
@@ -393,12 +435,13 @@ constructor(
         }
         state.crop = crop
         state.watered = false
-        state.lives = if (crop.fixedYield > 0) 1 else 3 + state.compost
+        state.lives = if (crop.fixedYield > 0) 1 else crop.baseLives + state.compost
+        state.protected = false
         player.save(patch, state, planted = nowMinutes())
         statAdvance(stats.farming, crop.plantXp * xpMods.get(player, stats.farming))
         val seeds =
             when {
-                crop.kind == Kind.Tree -> "the ${crop.key} sapling"
+                sapling -> "the ${crop.key} sapling"
                 crop.seedsPer > 1 -> "${crop.seedsPer} ${crop.key} seeds"
                 else -> "a ${crop.key} seed"
             }
@@ -430,7 +473,11 @@ constructor(
     private fun ProtectedAccess.harvest(loc: BoundLocInfo, patch: Patch, op: Int) {
         val state = player.state(patch)
         val crop = state.crop ?: return
-        if (crop.kind == Kind.Tree) return
+        if (crop.kind in FarmingData.woodKinds) return
+        if (crop.kind in FarmingData.fruitKinds) {
+            pickFruit(loc, patch, state, crop, op)
+            return
+        }
         if (!player.isGrown(patch, crop)) {
             mes("The ${crop.key} isn't ready to harvest yet.")
             return
@@ -477,6 +524,81 @@ constructor(
         reop(loc, op)
     }
 
+    /** One fruit/berry per [HARVEST_TICKS]; the stored count is re-based on every pick. */
+    private fun ProtectedAccess.pickFruit(loc: BoundLocInfo, patch: Patch, state: State, crop: Crop, op: Int) {
+        if (!state.watered) {
+            mes("You should check the health of the ${patch.kind.noun.removeSuffix(" patch")} first.")
+            return
+        }
+        val fruit = player.fruits(patch, state, crop)
+        if (fruit == 0) {
+            mes("There's nothing left to pick.")
+            return
+        }
+        val produce = FarmingObjs.byName.getValue(crop.produce)
+        if (invFullForGathering(objTypes, listOf(produce))) {
+            mes("You don't have enough room in your inventory.")
+            return
+        }
+        if (actionDelay < mapClock) {
+            actionDelay = mapClock + HARVEST_TICKS
+            anim(FarmingSeqs.pick)
+        } else if (actionDelay == mapClock) {
+            invAddGathered(produce)
+            statAdvance(stats.farming, crop.harvestXp * xpMods.get(player, stats.farming))
+            state.lives = fruit - 1
+            player.save(patch, state, planted = nowMinutes())
+            if (fruit - 1 == 0) {
+                resetAnim()
+                return
+            }
+            actionDelay = mapClock + HARVEST_TICKS
+            anim(FarmingSeqs.pick)
+        }
+        reop(loc, op)
+    }
+
+    /**
+     * Wiki farmer payments: the gardener nearest the patch takes the crop's fee and looks after
+     * it. Disease is off on this server, so protection only changes the inspect text.
+     */
+    private suspend fun ProtectedAccess.pay(npc: Npc, which: Int) {
+        val area =
+            FarmingData.allAreas.minByOrNull {
+                abs(it.centre.x - npc.coords.x) + abs(it.centre.z - npc.coords.z)
+            } ?: return
+        val planted = area.patches.filter { player.state(it).crop != null }
+        val patch = planted.getOrNull(which) ?: planted.firstOrNull()
+        if (patch == null) {
+            startDialogue(npc) { chatNpc(neutral, "You don't have anything planted that I can look after.") }
+            return
+        }
+        val state = player.state(patch)
+        val crop = state.crop ?: return
+        if (state.protected) {
+            startDialogue(npc) { chatNpc(happy, "I'm already looking after that patch for you.") }
+            return
+        }
+        val fee = crop.payment?.let { FarmingObjs.byName.getValue(it) }
+        if (fee == null || crop.paymentCount <= 0) {
+            startDialogue(npc) { chatNpc(neutral, "That doesn't need looking after.") }
+            return
+        }
+        if (invTotal(inv, fee) < crop.paymentCount) {
+            val name = objTypes[fee].name.lowercase()
+            startDialogue(npc) {
+                chatNpc(neutral, "I'll look after that for ${crop.paymentCount} $name.")
+            }
+            return
+        }
+        invDel(inv, fee, crop.paymentCount)
+        state.protected = true
+        player.save(patch, state)
+        startDialogue(npc) {
+            chatNpc(happy, "That'll do nicely. Leave it with me - I'll make sure it grows for you.")
+        }
+    }
+
     private fun ProtectedAccess.empty(patch: Patch) {
         val cleared = State(weeds = 3, crop = null, compost = 0, watered = false, lives = 0)
         player.save(patch, cleared, planted = 0)
@@ -518,7 +640,8 @@ constructor(
                 val left = total - (nowMinutes() - player.planted(patch))
                 "is growing (about ${max(1, left)} minutes left)"
             }
-        mes("The ${crop.key} in this ${patch.kind.noun} $status (treated with $compost).")
+        val guarded = if (state.protected) " A gardener is looking after it." else ""
+        mes("The ${crop.key} in this ${patch.kind.noun} $status (treated with $compost).$guarded")
     }
 
     /* Trees */
@@ -526,10 +649,16 @@ constructor(
     private fun ProtectedAccess.checkHealth(patch: Patch) {
         val state = player.state(patch)
         val crop = state.crop ?: return
-        if (crop.kind != Kind.Tree || state.watered || !player.isGrown(patch, crop)) return
+        if (crop.kind !in TREE_LIKE || state.watered || !player.isGrown(patch, crop)) return
         anim(FarmingSeqs.check)
         state.watered = true
-        player.save(patch, state)
+        if (crop.kind in FarmingData.fruitKinds) {
+            // Grown with a full load; [planted] becomes the regrowth reference.
+            state.lives = crop.maxFruit
+            player.save(patch, state, planted = nowMinutes())
+        } else {
+            player.save(patch, state)
+        }
         statAdvance(stats.farming, crop.checkXp * xpMods.get(player, stats.farming))
         mes("You examine the tree for signs of disease and find that it is in perfect health.")
     }
@@ -537,7 +666,18 @@ constructor(
     private fun ProtectedAccess.chop(loc: BoundLocInfo, patch: Patch, op: Int) {
         val state = player.state(patch)
         val crop = state.crop ?: return
-        if (crop.kind != Kind.Tree || !state.watered) return
+        if (crop.kind == Kind.FruitTree && state.watered && !state.stump) {
+            if (Woodcutting.findAxe(player, objTypes) == null) {
+                mes("You need an axe to chop down this tree.")
+                return
+            }
+            anim(FarmingSeqs.dig)
+            state.stump = true
+            player.save(patch, state)
+            mes("You chop down the tree; dig up the stump with a spade.")
+            return
+        }
+        if (crop.kind !in FarmingData.woodKinds || !state.watered || crop.logs.isEmpty()) return
         if (player.isStump(patch, state)) {
             mes("This tree has already been cut down.")
             return
@@ -874,11 +1014,14 @@ constructor(
                 "inspect",
                 "check-health",
                 "chop down",
+                "chop-down",
                 "close",
                 "open",
                 "take",
                 "dump",
             )
+        /** Kinds with a health check once grown. */
+        val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush, Kind.Cactus, Kind.Hardwood, Kind.SpiritTree)
         const val CHOP_TICKS = 4
         const val STUMP_CHANCE = 8
         const val BIN_SIZE = 15
