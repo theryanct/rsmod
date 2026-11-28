@@ -13,8 +13,10 @@ import org.rsmod.api.shops.Shops
 import org.rsmod.content.generic.shops.GenericShopData.ShopDef
 import org.rsmod.content.generic.shops.GenericShopData.VendorDef
 import org.rsmod.content.generic.shops.GenericShopData.VendorItem
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.npc.NpcType
+import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -23,7 +25,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * sell/buy/delta multipliers, stored x10 like the `shop_*_percentage` npc params), and runs a
  * small buy dialogue from the "Talk-to" op of dialogue vendors such as bartenders.
  */
-class GenericShopsScript @Inject constructor(private val shops: Shops) : PluginScript() {
+class GenericShopsScript
+@Inject
+constructor(private val shops: Shops, private val npcTypes: NpcTypeList) : PluginScript() {
     override fun ScriptContext.startup() {
         for (shop in GenericShopData.shops) {
             for ((npcName, op) in shop.npcs) {
@@ -33,7 +37,13 @@ class GenericShopsScript @Inject constructor(private val shops: Shops) : PluginS
         }
         for (vendor in GenericShopData.vendors) {
             val npc = GenericShopNpcs.byName.getValue(vendor.npc)
-            onNpcOp(npc, vendor.op, vendor.title) { target -> vendorDialogue(target, vendor) }
+            // A Talk-to vendor goes through QuestTalk, so quests (e.g. the Barcrawl) can claim the
+            // conversation; with no quest wanting it the vendor dialogue runs as before.
+            if (vendor.op == 1 && npcTypes[npc].op.getOrNull(0).equals("Talk-to", ignoreCase = true)) {
+                with(QuestTalk) { default(npcTypes, npc) { target -> vendorDialogue(target, vendor) } }
+            } else {
+                onNpcOp(npc, vendor.op, vendor.title) { target -> vendorDialogue(target, vendor) }
+            }
         }
     }
 
