@@ -1,0 +1,166 @@
+# Generated from the OSRS Wiki page "Crab Quest/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Sail to <col=800000>Dognose Island</col> (north-west of <col=800000>the Great Conch</col>) and drink from the strange bottle to start the quest.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 40 Sailing
+req	Level 30 Fishing
+step	1	-	Quick guide step 1
+line	<col=000080>Drink from the <col=800000>bottle</col> on the beach of <col=800000>Dognose Island</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<col=000080>Speak to the Crab on the beach.</col>
+step	3	-	Quick guide step 3
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<col=000080>Collect all 9 shells on the island and give them to the crab.</col>
+step	4	-	Quick guide step 4
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<col=000080>Pick up the <col=800000>big fishing net</col> on the beach.</col>
+step	5	-	Quick guide step 5
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<col=000080>Fish the <col=800000>flotsam</col> on the edge of the beach to get a <col=800000>sea-soaked bowstring</col>, <col=800000>battered barrel</col>, and <col=800000>weathered rosewood plank</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<col=000080>Use the <col=800000>weathered rosewood plank</col> on the <col=800000>sea-soaked bowstring</col> to make <col=800000>instrument</col>. Give the instrument to the crab.</col>
+step	7	-	Quick guide step 7
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+line	
+line	<col=000080>During the conversation with the crab, name the <col=800000>instrument</col> and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</col>
+step	8	-	Quick guide step 8
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+line	
+line	<str>During the conversation with the crab, name the instrument and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</str>
+line	
+line	<col=000080>On the island, investigate all the trees and bushes. If the Crab is too scared to come out, perform the <col=800000>Sit down</col> emote and wait a short period of time for them to come out. Speak to each Crab after they come out.</col>
+step	9	-	Quick guide step 9
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+line	
+line	<str>During the conversation with the crab, name the instrument and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</str>
+line	
+line	<str>On the island, investigate all the trees and bushes. If the Crab is too scared to come out, perform the Sit down emote and wait a short period of time for them to come out. Speak to each Crab after they come out.</str>
+line	
+line	<col=000080>For the crab who quizzes you on the ceremony after popping out of his tree, the answers are 2, 3, 1, 4.</col>
+step	10	-	Quick guide step 10
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+line	
+line	<str>During the conversation with the crab, name the instrument and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</str>
+line	
+line	<str>On the island, investigate all the trees and bushes. If the Crab is too scared to come out, perform the Sit down emote and wait a short period of time for them to come out. Speak to each Crab after they come out.</str>
+line	
+line	<str>For the crab who quizzes you on the ceremony after popping out of his tree, the answers are 2, 3, 1, 4.</str>
+line	
+line	<col=000080>Once you have investigated all the trees and plants, return to the Crab on the beach with the <col=800000>instrument</col> and choose the option to wait for the others leads to turn up.</col>
+step	11	-	Quick guide step 11
+line	<str>Drink from the bottle on the beach of Dognose Island.</str>
+line	
+line	<str>Speak to the Crab on the beach.</str>
+line	
+line	<str>Collect all 9 shells on the island and give them to the crab.</str>
+line	
+line	<str>Pick up the big fishing net on the beach.</str>
+line	
+line	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+line	
+line	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+line	
+line	<str>During the conversation with the crab, name the instrument and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</str>
+line	
+line	<str>On the island, investigate all the trees and bushes. If the Crab is too scared to come out, perform the Sit down emote and wait a short period of time for them to come out. Speak to each Crab after they come out.</str>
+line	
+line	<str>For the crab who quizzes you on the ceremony after popping out of his tree, the answers are 2, 3, 1, 4.</str>
+line	
+line	<str>Once you have investigated all the trees and plants, return to the Crab on the beach with the instrument and choose the option to wait for the others leads to turn up.</str>
+line	
+line	<col=000080>Continue through the dialogue and ceremony cutscenes.</col>
+done	<str>Drink from the bottle on the beach of Dognose Island.</str>
+done	
+done	<str>Speak to the Crab on the beach.</str>
+done	
+done	<str>Collect all 9 shells on the island and give them to the crab.</str>
+done	
+done	<str>Pick up the big fishing net on the beach.</str>
+done	
+done	<str>Fish the flotsam on the edge of the beach to get a sea-soaked bowstring, battered barrel, and weathered rosewood plank.</str>
+done	
+done	<str>Use the weathered rosewood plank on the sea-soaked bowstring to make instrument. Give the instrument to the crab.</str>
+done	
+done	<str>During the conversation with the crab, name the instrument and show the crab how to play it. The Crab will then tell you to find the other ceremonial leaders by investigating trees and bushes.</str>
+done	
+done	<str>On the island, investigate all the trees and bushes. If the Crab is too scared to come out, perform the Sit down emote and wait a short period of time for them to come out. Speak to each Crab after they come out.</str>
+done	
+done	<str>For the crab who quizzes you on the ceremony after popping out of his tree, the answers are 2, 3, 1, 4.</str>
+done	
+done	<str>Once you have investigated all the trees and plants, return to the Crab on the beach with the instrument and choose the option to wait for the others leads to turn up.</str>
+done	
+done	<str>Continue through the dialogue and ceremony cutscenes.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,99 @@
+# Generated from the OSRS Wiki page "Gertrude's Cat/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Gertrude</col> in her house just west of <col=800000>Varrock</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Pick up <col=800000>doogle leaves</col> from behind Gertrude's house and use them on your <col=800000>raw sardine</col> to make <col=800000>seasoned sardine</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<col=000080>Go to <col=800000>Varrock Square</col>'s newsstand and talk to either <col=800000>Shilop</col> or <col=800000>Wilough</col>, you need 100 coins.</col>
+step	3	-	Quick guide step 3
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<col=000080>Go to the <col=800000>Lumber Yard</col> north-east of <col=800000>Varrock</col> and climb-over the broken fence.</col>
+step	4	-	Quick guide step 4
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+line	
+line	<col=000080>Go up the ladder in the middle of the Lumber Yard.</col>
+step	5	-	Quick guide step 5
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+line	
+line	<str>Go up the ladder in the middle of the Lumber Yard.</str>
+line	
+line	<col=000080>Use a <col=800000>bucket of milk</col> and a <col=800000>Seasoned sardine</col> on <col=800000>Gertrude's cat</col> then go back down the ladder.</col>
+step	6	-	Quick guide step 6
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+line	
+line	<str>Go up the ladder in the middle of the Lumber Yard.</str>
+line	
+line	<str>Use a bucket of milk and a Seasoned sardine on Gertrude's cat then go back down the ladder.</str>
+line	
+line	<col=000080>Search the <col=800000>crates</col> with a yellow "Search crate" option and a yellow "Mew!" above them until you find <col=800000>Fluffs' kitten</col>. (Searching the same crate repeatedly will not work.)</col>
+step	7	-	Quick guide step 7
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+line	
+line	<str>Go up the ladder in the middle of the Lumber Yard.</str>
+line	
+line	<str>Use a bucket of milk and a Seasoned sardine on Gertrude's cat then go back down the ladder.</str>
+line	
+line	<str>Search the crates with a yellow "Search crate" option and a yellow "Mew!" above them until you find Fluffs' kitten. (Searching the same crate repeatedly will not work.)</str>
+line	
+line	<col=000080>Go back up the ladder and use <col=800000>Fluffs' kitten</col> on <col=800000>Gertrude's cat</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+line	
+line	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+line	
+line	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+line	
+line	<str>Go up the ladder in the middle of the Lumber Yard.</str>
+line	
+line	<str>Use a bucket of milk and a Seasoned sardine on Gertrude's cat then go back down the ladder.</str>
+line	
+line	<str>Search the crates with a yellow "Search crate" option and a yellow "Mew!" above them until you find Fluffs' kitten. (Searching the same crate repeatedly will not work.)</str>
+line	
+line	<str>Go back up the ladder and use Fluffs' kitten on Gertrude's cat.</str>
+line	
+line	<col=000080>Return to Gertrude.</col>
+done	<str>Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine.</str>
+done	
+done	<str>Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.</str>
+done	
+done	<str>Go to the Lumber Yard north-east of Varrock and climb-over the broken fence.</str>
+done	
+done	<str>Go up the ladder in the middle of the Lumber Yard.</str>
+done	
+done	<str>Use a bucket of milk and a Seasoned sardine on Gertrude's cat then go back down the ladder.</str>
+done	
+done	<str>Search the crates with a yellow "Search crate" option and a yellow "Mew!" above them until you find Fluffs' kitten. (Searching the same crate repeatedly will not work.)</str>
+done	
+done	<str>Go back up the ladder and use Fluffs' kitten on Gertrude's cat.</str>
+done	
+done	<str>Return to Gertrude.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

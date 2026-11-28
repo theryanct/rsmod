@@ -1,0 +1,50 @@
+# Generated from the OSRS Wiki page "Transcript:A New Leaf/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by picking and eating a <col=800000>cabbage</col> south of <col=800000>Hosidius</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Priest in Peril
+req	Level 45 Farming
+req	Level 35 Cooking
+req	Level 32 Herblore
+before	
+before	<col=000080>Recommendations:</col>
+req	Combat Level 40
+step	1	-	Starting the quest
+line	<col=000080>I found a <col=800000>Cabbage</col> with a message on that asked me to visit a <col=800000>Farm</col> south east of the <col=800000>Farming Guild</col>. I guess I should see what this is all about.</col>
+step	2	-	After talking to Dishop Dennis
+line	<col=000080>I found a <col=800000>Cabbage</col> with a message on that asked me to visit a <col=800000>Farm</col> south east of the <col=800000>Farming Guild</col>. I travelled there and met <col=800000>Dishop Dennis</col>, the leader of the <col=800000>Church of Brassica</col>. He asked for my help in improving the standing of the <col=800000>Church</col>. I should speak to him again and see what he needs from me.</col>
+step	3	-	After offering help
+line	<str>I found a Cabbage with a message on that asked me to visit a Farm south east of the Farming Guild. I travelled there and met Dishop Dennis, the leader of the Church of Brassica. He asked for my help in improving the standing of the Church.</str>
+line	<col=000080><col=800000>Dennis</col> has asked for help with two things. The first is improving the <col=800000>Church's</col> standing in the local area. The second is to regain contact with <col=800000>Brassica Prime</col>.</col>
+line	<col=000080>To improve his reputation with the locals, <col=800000>Dennis</col> has asked me to help him make a <col=800000>Stew</col> by growing a <col=800000>Perfect Cabbage</col>, a <col=800000>Perfect Potato</col> and some <col=800000>Perfect Rosemary</col>. I can do so by simply planting and growing them as normal. <col=800000>Dennis</col> suggested I use the patches in the <col=800000>Farming Guild</col> to do so.</col>
+line	<col=800000>Konar quo Maten</col>
+line	<col=800000>Guildmaster Jane</col>
+line	<col=800000>Mary</col>
+line	<col=800000>A local sergeant</col>
+line	<col=000080>To regain contact with <col=800000>Brassica Prime</col>, <col=800000>Dennis</col> needs me to bring him a <col=800000>Cabbage</col>.</col>
+line	<col=000080>Metallic armour, complicated masonry and moat water.</col>
+line	<col=000080>Meat pies, pineapple pizzas and stew. A messy but delightful combination.</col>
+line	<col=000080>Worms, toads, vegetables and fruit.</col>
+line	<col=000080>Off milk? Off pig milk? No, it must be ectoplasm.</col>
+line	<col=000080>Delicious fresh kebab meat with just a touch of sand.</col>
+step	4	-	After asking Dennis what he needs
+line	<str>I found a Cabbage with a message on that asked me to visit a Farm south east of the Farming Guild. I travelled there and met Dishop Dennis, the leader of the Church of Brassica. He asked for my help in improving the standing of the Church.</str>
+line	<str>To help Dennis, I improved his reputation with the locals by making and distributing a Cabbage Stew. I also helped him regain contact with Brassica Prime before concealing Sprout Spies in Ranges at key locations around the world.</str>
+line	<col=000080>According to <col=800000>Dennis</col>, our recent work has angered <col=800000>Chefs</col> and <col=800000>Farmers</col> who follow other gods. They have come to silence the <col=800000>Church of Brassica</col>. I will need to defeat them in combat.</col>
+step	5	-	After defeating the chefs and farmers
+line	<str>I found a Cabbage with a message on that asked me to visit a Farm south east of the Farming Guild. I travelled there and met Dishop Dennis, the leader of the Church of Brassica. He asked for my help in improving the standing of the Church.</str>
+line	<str>To help Dennis, I improved his reputation with the locals by making and distributing a Cabbage Stew. I also helped him regain contact with Brassica Prime before concealing Sprout Spies in Ranges at key locations around the world.</str>
+line	<col=000080>Our work angered <col=800000>Chefs</col> and <col=800000>Farmers</col> who followed other gods. They came to silence the <col=800000>Church of Brassica</col>, but I was able to defeat them in combat. I should let <col=800000>Dennis</col> know.</col>
+done	<str>I found a Cabbage with a message on that asked me to visit a Farm south east of the Farming Guild. I travelled there and met Dishop Dennis, the leader of the Church of Brassica. He asked for my help in improving the standing of the Church.</str>
+done	<str>To help Dennis, I improved his reputation with the locals by making and distributing a Cabbage Stew. I also helped him regain contact with Brassica Prime before concealing Sprout Spies in Ranges at key locations around the world.</str>
+done	<str>Our work angered Chefs and Farmers who followed other gods. They came to silence the Church of Brassica, but I was able to defeat them in combat. With the Church of Brassica in a stronger position than ever before, Dennis thanked me for my help and rewarded me.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

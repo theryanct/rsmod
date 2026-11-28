@@ -26,6 +26,7 @@ import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
+import org.rsmod.content.quests.zogre.ZogreBell
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcType
@@ -226,6 +227,7 @@ constructor(
 
     private suspend fun ProtectedAccess.ringBell() {
         if (!inProgress) {
+            if (ZogreBell.ring?.invoke(this) == true) return
             // Authored line (not Wiki): nobody answers.
             mes("You ring the bell, but nobody seems to be coming.")
             return

@@ -1,0 +1,114 @@
+# Generated from the OSRS Wiki page "Transcript:Bank guard" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue after watching the recording
+0	section	Before knowing about the bank robbery
+1	line	Bank guard	Yes?
+1	option	Can I deposit my stuff here?
+2	line	Player	Hello. Can I deposit my stuff here?
+2	line	Bank guard	No. I'm a security guard, not a bank clerk.
+2	option	That wall doesn't look very good.
+3	action	below
+2	option	Alright, I'll stop bothering you now.
+3	action	below
+1	option	That wall doesn't look very good.
+2	line	Player	That wall doesn't look very good.
+2	line	Bank guard	No, it doesn't.
+2	option	Are you going to tell me what happened?
+3	line	Player	Are you going to tell me what happened?
+3	line	Bank guard	I could do.
+3	line	Player	Ok, go on!
+3	line	Bank guard	Someone smashed the wall when they were robbing the bank.
+3	line	Player	Someone's robbed the bank?
+3	line	Bank guard	Yes.
+3	line	Player	But... was anyone hurt? Did they get anything valuable?
+3	line	Bank guard	Yes, but we were able to get more staff and mend the wall easily enough.
+3	line	Bank guard	The Bank has already replaced all the stolen items that belonged to customers.
+3	line	Player	Oh, good... but the bank staff got hurt?
+3	line	Bank guard	Yes, but the new ones are just as good.
+3	line	Player	You're not very nice, are you?
+3	line	Bank guard	No-one's expecting me to be nice.
+3	line	Player	Anyway... So, someone's robbed the bank?
+3	line	Bank guard	Yes.
+3	line	Player	Do you know who did it?
+3	line	Bank guard	We are fairly sure we know who the robber was. The security recording was damaged in the attack, but it still shows his face clearly enough.
+3	line	Player	You've got a security recording?
+3	line	Bank guard	Yes. Our insurers insisted that we install a magical scrying orb.
+3	option	Can I see the recording?
+4	line	Player	Can I see the recording?
+4	line	Bank guard	I suppose so. But it's quite long.
+4	option	That's ok, show me the recording.
+5	line	Player	That's ok, show me the recording.
+5	line	Bank guard	Alright... The bank's magical playback device will feed the recorded images into your mind. Just shut your eyes.
+5	action	end
+4	option	Thanks, maybe another day.
+5	line	Player	Thanks, maybe another day.
+5	line	Bank guard	Ok.
+5	action	end
+3	option	So who was the robber?
+4	line	Player	So who was the robber?
+4	line	Bank guard	I can't disclose that information.
+4	option	Can I see the recording?
+5	action	above
+4	option	Alright, I'll stop bothering you now.
+5	action	below
+2	option	Alright, I'll stop bothering you now.
+3	line	Player	Alright, I'll stop bothering you now.
+3	line	Bank guard	Good day, [sir/ma'am].
+3	action	end
+1	option	Sorry, I don't want anything.
+2	line	Player	Sorry, I don't want anything.
+2	line	Bank guard	Ok.
+2	action	end
+0	section	Before watching the recording
+1	line	Bank guard	Yes?
+1	line	Player	Do you have any idea who robbed the bank yet?
+1	line	Bank guard	We are fairly sure we know who the robber was. The security recording was damaged in the attack, but it still shows his face clearly enough.
+1	line	Player	You've got a security recording?
+1	line	Bank guard	Yes. Our insurers insisted that we install a magical scrying orb.
+1	option	Can I see the recording?
+2	action	above
+1	option	So who was the robber?
+2	action	above
+0	section	After watching the recording
+1	line	Bank guard	Yes?
+1	option	The robber in the recording looked familiar.
+2	line	Player	The robber in the recording looked familiar.
+2	line	Bank guard	Oh, you recognised him too?
+2	cond	If the player has not yet confronted the Wise Old Man about it:
+3	line	Player	Yes, and I can tell you where he lives.
+3	line	Bank guard	Thanks, but we already know where to find our suspect.
+2	cond	If the player has confronted the Wise Old Man about it already:
+3	line	Player	Yes, and he's admitted that he did the robbery!
+3	line	Bank guard	The amount of evidence against him makes that almost unnecessary.
+2	line	Player	So are you going to have him arrested?
+2	line	Bank guard	We're certainly keeping an eye on him. I'm afraid I can't give you any more details about the case.
+2	line	Player	Fair enough.
+2	action	end
+1	option	Can I see that recording again, please?
+2	line	Player	Can I see that recording again, please?
+2	line	Bank guard	I'd like you to pay me 50 gp first.
+2	cond	If the player does not have at least 50 coins in their inventory:
+3	line	Player	I'm not carrying that much.
+3	cond	If the player does not have at least 50 coins in their bank:
+4	line	Bank guard	Oh well, maybe another day.
+4	action	end
+3	cond	If the player has at least 50 coins in their bank:
+4	line	Bank guard	As a bank employee, I suppose I could take the money directly from your bank account.
+4	option	Ok, you can take 50 gp from my bank account.
+5	line	Player	Ok, you can take 50 gp from my bank account.
+5	action	end
+4	option	Thanks, maybe another day.
+5	line	Player	Thanks, maybe another day.
+5	line	Bank guard	Ok.
+5	action	end
+2	cond	If the player has at least 50 coins in their inventory:
+3	option	Ok, here's 50 gp.
+4	line	Player	Ok, here's 50 gp.
+4	action	end
+3	option	Thanks, maybe another day.
+4	line	Player	Thanks, maybe another day.
+4	line	Bank guard	Ok.
+4	action	end
+1	option	Sorry, I don't want anything.
+2	line	Player	Sorry, I don't want anything.
+2	line	Bank guard	Ok.
+2	action	end

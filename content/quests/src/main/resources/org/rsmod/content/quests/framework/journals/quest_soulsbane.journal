@@ -1,0 +1,315 @@
+# Generated from the OSRS Wiki page "A Soul's Bane/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Launa</col> east of <col=800000>Varrock</col>, just south of the <col=800000>Earth Altar</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>From Varrock, head north-east towards the <col=800000>Digsite</col> talk to <col=800000>Launa</col> by the rift.</col>
+step	2	-	Quick guide step 2
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<col=000080>Enter the rift with your rope.</col>
+step	3	-	Quick guide step 3
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<col=000080>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</col>
+step	4	-	Quick guide step 4
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<col=000080>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</col>
+step	5	-	Quick guide step 5
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<col=000080>Head east to the next cave.</col>
+step	6	-	Quick guide step 6
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<col=000080>Look inside the dark holes, some will have a <col=800000>fear reaper</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<col=000080>Kill 5 or 6 reapers to get a cutscene.</col>
+step	8	-	Quick guide step 8
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<col=000080>Enter the black hole to the west.</col>
+step	9	-	Quick guide step 9
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<col=000080>Defeat <col=800000>confusion beast</col>s until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</col>
+step	10	-	Quick guide step 10
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<col=000080>Repeat until one door remains to get the cutscene.</col>
+step	11	-	Quick guide step 11
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<col=000080>Enter the remaining confusing door.</col>
+step	12	-	Quick guide step 12
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<str>Enter the remaining confusing door.</str>
+line	
+line	<col=000080>Kill all the <col=800000>hopeless creature</col>s 3 times each.</col>
+step	13	-	Quick guide step 13
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<str>Enter the remaining confusing door.</str>
+line	
+line	<str>Kill all the hopeless creatures 3 times each.</str>
+line	
+line	<col=000080>Cross the bridge and prepare to fight Tolna (3 level-46 monsters).</col>
+step	14	-	Quick guide step 14
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<str>Enter the remaining confusing door.</str>
+line	
+line	<str>Kill all the hopeless creatures 3 times each.</str>
+line	
+line	<str>Cross the bridge and prepare to fight Tolna (3 level-46 monsters).</str>
+line	
+line	<col=000080>Kill the 3 heads.</col>
+step	15	-	Quick guide step 15
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<str>Enter the remaining confusing door.</str>
+line	
+line	<str>Kill all the hopeless creatures 3 times each.</str>
+line	
+line	<str>Cross the bridge and prepare to fight Tolna (3 level-46 monsters).</str>
+line	
+line	<str>Kill the 3 heads.</str>
+line	
+line	<col=000080>Talk to Tolna.</col>
+step	16	-	Quick guide step 16
+line	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+line	
+line	<str>Enter the rift with your rope.</str>
+line	
+line	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+line	
+line	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+line	
+line	<str>Head east to the next cave.</str>
+line	
+line	<str>Look inside the dark holes, some will have a fear reaper.</str>
+line	
+line	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+line	
+line	<str>Enter the black hole to the west.</str>
+line	
+line	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+line	
+line	<str>Repeat until one door remains to get the cutscene.</str>
+line	
+line	<str>Enter the remaining confusing door.</str>
+line	
+line	<str>Kill all the hopeless creatures 3 times each.</str>
+line	
+line	<str>Cross the bridge and prepare to fight Tolna (3 level-46 monsters).</str>
+line	
+line	<str>Kill the 3 heads.</str>
+line	
+line	<str>Talk to Tolna.</str>
+line	
+line	<col=000080>Talk to him again on the surface.</col>
+done	<str>From Varrock, head north-east towards the Digsite talk to Launa by the rift.</str>
+done	
+done	<str>Enter the rift with your rope.</str>
+done	
+done	<str>Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)</str>
+done	
+done	<str>When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!).</str>
+done	
+done	<str>Head east to the next cave.</str>
+done	
+done	<str>Look inside the dark holes, some will have a fear reaper.</str>
+done	
+done	<str>Kill 5 or 6 reapers to get a cutscene.</str>
+done	
+done	<str>Enter the black hole to the west.</str>
+done	
+done	<str>Defeat confusion beasts until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.</str>
+done	
+done	<str>Repeat until one door remains to get the cutscene.</str>
+done	
+done	<str>Enter the remaining confusing door.</str>
+done	
+done	<str>Kill all the hopeless creatures 3 times each.</str>
+done	
+done	<str>Cross the bridge and prepare to fight Tolna (3 level-46 monsters).</str>
+done	
+done	<str>Kill the 3 heads.</str>
+done	
+done	<str>Talk to Tolna.</str>
+done	
+done	<str>Talk to him again on the surface.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

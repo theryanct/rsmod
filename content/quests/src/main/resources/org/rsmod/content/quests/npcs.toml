@@ -1329,6 +1329,180 @@ coords = '1_41_63_13_12'
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
 
+# Creature of Fenkenstrain: Fenkenstrain by his table, his tower form, and his monster in the
+# tower (multinpcs on varp fenk_quest). Authored placements (Ryan-test).
+[[spawn]]
+npc = 'fenk_fenkenstrain'
+coords = '0_55_55_31_27'
+
+[[spawn]]
+npc = 'fenk_fenkenstrain_in_tower'
+coords = '2_55_55_29_36'
+
+[[spawn]]
+npc = 'fenk_creature'
+coords = '2_55_55_31_37'
+
+# Shilo Village: undead ones in Ah Za Rhoon (none in the world spawns).
+[[spawn]]
+npc = 'zqskeleton_armed'
+coords = '0_45_146_10_21'
+
+[[spawn]]
+npc = 'zqzombie_unarmed'
+coords = '0_45_146_30_5'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed'
+coords = '0_45_146_45_10'
+
+[[spawn]]
+npc = 'zqzombie_armed'
+coords = '0_45_146_20_4'
+
+[[spawn]]
+npc = 'zqskeleton_armed2'
+coords = '0_45_145_35_20'
+
+[[spawn]]
+npc = 'zqzombie_unarmed2'
+coords = '0_45_145_28_30'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed2'
+coords = '0_45_145_48_5'
+
+[[spawn]]
+npc = 'zqzombie_armed2'
+coords = '0_45_145_55_40'
+
+# Shilo Village: undead ones in Rashiliyia's Tomb.
+[[spawn]]
+npc = 'zqzombie_armed3'
+coords = '0_45_148_25_33'
+
+[[spawn]]
+npc = 'zqskeleton_armed'
+coords = '0_45_148_35_23'
+
+[[spawn]]
+npc = 'zqzombie_unarmed3'
+coords = '0_45_148_40_33'
+
+[[spawn]]
+npc = 'zqskeleton_unarmed'
+coords = '0_45_148_30_6'
+
+[[spawn]]
+npc = 'zqzombie_armed'
+coords = '0_45_148_38_16'
+
+
+# Zogre Flesh Eaters: Jiggig Dungeon (level 2) zogres and a skogre (Wiki: 27 zogres, 9 skogres;
+# a handful here, the surface pen already has its own).
+[[spawn]]
+npc = 'zogre_1'
+coords = '2_38_147_28_32'
+
+[[spawn]]
+npc = 'zogre_2'
+coords = '2_38_147_18_37'
+
+[[spawn]]
+npc = 'zogre_3'
+coords = '2_38_147_38_17'
+
+[[spawn]]
+npc = 'zogre_4'
+coords = '2_38_147_6_56'
+
+[[spawn]]
+npc = 'zogre_5'
+coords = '2_38_147_38_54'
+
+[[spawn]]
+npc = 'zogre_skele'
+coords = '2_38_147_8_7'
+
+# Watchtower: the Watchtower's other wizards (top floor and first floor).
+[[spawn]]
+npc = 'qip_watchtower_wizard_02'
+coords = '2_39_48_48_45'
+
+[[spawn]]
+npc = 'qip_watchtower_wizard_03'
+coords = '2_39_48_48_40'
+
+[[spawn]]
+npc = 'qip_watchtower_wizard_04'
+coords = '1_39_48_53_40'
+
+# Watchtower: Gu'Tanoth's ogre guards at the north-west gate, the battlement and the bridge.
+[[spawn]]
+npc = 'ogre_guard1'
+coords = '0_39_47_9_54'
+
+[[spawn]]
+npc = 'ogre_guard1'
+coords = '0_39_47_11_54'
+
+[[spawn]]
+npc = 'ogre_guard2'
+coords = '0_39_47_5_4'
+
+[[spawn]]
+npc = 'ogre_guard2'
+coords = '0_39_47_7_3'
+
+[[spawn]]
+npc = 'ogre_guard3'
+coords = '0_39_47_30_10'
+
+[[spawn]]
+npc = 'ogre_guard3'
+coords = '0_39_47_33_11'
+
+# Watchtower: the scared skavid and three of the four skavids in the skavid caves.
+[[spawn]]
+npc = 'scared_skavid'
+coords = '0_39_147_3_25'
+
+[[spawn]]
+npc = 'skavidtalker2'
+coords = '0_39_147_19_44'
+
+[[spawn]]
+npc = 'skavidtalker3'
+coords = '0_39_147_4_43'
+
+[[spawn]]
+npc = 'skavidtalker4'
+coords = '0_39_147_7_7'
+
+# Watchtower: the six ogre shamans of the Ogre Enclave (multinpc bases, watchtower_shaman_1-6).
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_01'
+coords = '0_40_147_17_43'
+
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_02'
+coords = '0_40_147_22_29'
+
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_03'
+coords = '0_40_147_32_28'
+
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_04'
+coords = '0_40_147_39_53'
+
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_05'
+coords = '0_40_147_46_30'
+
+[[spawn]]
+npc = 'qip_watchtower_ogre_shaman_06'
+coords = '0_40_147_47_43'
 # Spirits of the Elid: the cave's golems (one outside each door), the target over the north
 # channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
 # (Ryan-test).

@@ -1,0 +1,429 @@
+# Generated from the OSRS Wiki page "A Night at the Theatre/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>Mysterious Stranger</col> inside <col=800000>Ver Sinhaza</col>, south-east of <col=800000>Meiyerditch</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the <col=800000>Mysterious Stranger</col> by the entrance to the <col=800000>Theatre of Blood</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<col=000080>Go down the stairs to the north-east of the Mysterious Stranger. Bring a <col=800000>saw</col> and <col=800000>blisterwood flail</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<col=000080>Kill a <col=800000>vyrewatch</col> for a key.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<col=000080>Unlock the gate to the south and open the coffin.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<col=000080>Return to the Mysterious Stranger with <col=800000>Ranis' head</col> and watch the cutscene.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<col=000080>Go to the <col=800000>dungeon (cave)</col> north of <col=800000>Darkmeyer</col> (south of <col=800000>Port Phasmatys</col>).</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<col=000080>Follow the path north, then east to the <col=800000>egg sac</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<col=000080>Search the nearby skeleton.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<col=000080>Read the <col=800000>sticky note</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<col=000080>Speak to <col=800000>Daer Krand</col> in the <col=800000>Sisterhood Sanctuary</col> to obtain <col=800000>sulphuric acid</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<col=000080>Return to the dungeon (cave) north of Darkmeyer.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<col=000080>Use <col=800000>sulphuric acid</col> on the egg sac. You do not need to kill any spiders.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<col=000080>Return to the Mysterious Stranger with the <col=800000>strange spider eggs</col>. Watch two cutscenes.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<col=000080>With <col=800000>ghostspeak amulet</col> or <col=800000>Morytania legs 2</col>+ (and <col=800000>druid pouch</col> to protect food), go to the <col=800000>Nature Grotto</col> (fairy ring BIP), and speak to the Nature Spirit <col=800000>Filliman Tarlock</col> inside the grotto.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+line	
+line	<col=000080>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of <col=800000>Castle Drakan</col>).</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+line	
+line	<str>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan).</str>
+line	
+line	<col=000080>Cross the stepping stone and kill the <col=800000>hespori</col> and chop it afterwards to obtain <col=800000>hespori bark</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+line	
+line	<str>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan).</str>
+line	
+line	<str>Cross the stepping stone and kill the hespori and chop it afterwards to obtain hespori bark.</str>
+line	
+line	<col=000080>Return to the Mysterious Stranger. Watch two cutscenes.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+line	
+line	<str>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan).</str>
+line	
+line	<str>Cross the stepping stone and kill the hespori and chop it afterwards to obtain hespori bark.</str>
+line	
+line	<str>Return to the Mysterious Stranger. Watch two cutscenes.</str>
+line	
+line	<col=000080>Complete a <col=800000>Theatre of Blood</col> raid (any mode works, although entry mode is recommended). See <col=800000>this page</col> for details on mechanics of the bosses.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+line	
+line	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+line	
+line	<str>Kill a vyrewatch for a key.</str>
+line	
+line	<str>Unlock the gate to the south and open the coffin.</str>
+line	
+line	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+line	
+line	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+line	
+line	<str>Follow the path north, then east to the egg sac.</str>
+line	
+line	<str>Search the nearby skeleton.</str>
+line	
+line	<str>Read the sticky note.</str>
+line	
+line	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+line	
+line	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+line	
+line	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+line	
+line	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+line	
+line	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+line	
+line	<str>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan).</str>
+line	
+line	<str>Cross the stepping stone and kill the hespori and chop it afterwards to obtain hespori bark.</str>
+line	
+line	<str>Return to the Mysterious Stranger. Watch two cutscenes.</str>
+line	
+line	<str>Complete a Theatre of Blood raid (any mode works, although entry mode is recommended). See this page for details on mechanics of the bosses.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Mysterious Stranger</col> again after completing the raid. Watch two cutscenes.</col>
+done	<str>Talk to the Mysterious Stranger by the entrance to the Theatre of Blood.</str>
+done	
+done	<str>Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail.</str>
+done	
+done	<str>Kill a vyrewatch for a key.</str>
+done	
+done	<str>Unlock the gate to the south and open the coffin.</str>
+done	
+done	<str>Return to the Mysterious Stranger with Ranis' head and watch the cutscene.</str>
+done	
+done	<str>Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys).</str>
+done	
+done	<str>Follow the path north, then east to the egg sac.</str>
+done	
+done	<str>Search the nearby skeleton.</str>
+done	
+done	<str>Read the sticky note.</str>
+done	
+done	<str>Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.</str>
+done	
+done	<str>Return to the dungeon (cave) north of Darkmeyer.</str>
+done	
+done	<str>Use sulphuric acid on the egg sac. You do not need to kill any spiders.</str>
+done	
+done	<str>Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.</str>
+done	
+done	<str>With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto.</str>
+done	
+done	<str>Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan).</str>
+done	
+done	<str>Cross the stepping stone and kill the hespori and chop it afterwards to obtain hespori bark.</str>
+done	
+done	<str>Return to the Mysterious Stranger. Watch two cutscenes.</str>
+done	
+done	<str>Complete a Theatre of Blood raid (any mode works, although entry mode is recommended). See this page for details on mechanics of the bosses.</str>
+done	
+done	<str>Talk to the Mysterious Stranger again after completing the raid. Watch two cutscenes.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

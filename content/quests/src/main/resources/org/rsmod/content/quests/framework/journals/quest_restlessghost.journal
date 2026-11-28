@@ -1,0 +1,99 @@
+# Generated from the OSRS Wiki page "The Restless Ghost/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Father Aereck</col> in the chapel south-east of <col=800000>Lumbridge Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Father Aereck</col> in the <col=800000>Lumbridge</col> church. (<col=800000>Lumbridge teleport</col> can be used for quick travel to <col=800000>Lumbridge</col>)</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<col=000080>Go through the <col=800000>graveyard's</col> southern exit and head to the hut west of <col=800000>Lumbridge Swamp</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<col=000080>Talk to <col=800000>Father Urhney</col> inside the hut.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<str>Talk to Father Urhney inside the hut.</str>
+line	
+line	<col=000080>Head to the small room in the Lumbridge graveyard south of the church.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<str>Talk to Father Urhney inside the hut.</str>
+line	
+line	<str>Head to the small room in the Lumbridge graveyard south of the church.</str>
+line	
+line	<col=000080>Equip the <col=800000>Ghostspeak amulet</col> and click the coffin, talk to the ghost.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<str>Talk to Father Urhney inside the hut.</str>
+line	
+line	<str>Head to the small room in the Lumbridge graveyard south of the church.</str>
+line	
+line	<str>Equip the Ghostspeak amulet and click the coffin, talk to the ghost.</str>
+line	
+line	<col=000080>Head to the <col=800000>Wizards' Tower</col>, and climb down the ladder to the basement. (Use <col=800000>Necklace of passage</col> to teleport to <col=800000>Wizards' Tower</col> if you have one.)</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<str>Talk to Father Urhney inside the hut.</str>
+line	
+line	<str>Head to the small room in the Lumbridge graveyard south of the church.</str>
+line	
+line	<str>Equip the Ghostspeak amulet and click the coffin, talk to the ghost.</str>
+line	
+line	<str>Head to the Wizards' Tower, and climb down the ladder to the basement. (Use Necklace of passage to teleport to Wizards' Tower if you have one.)</str>
+line	
+line	<col=000080>Search the altar, and you will receive a <col=800000>ghost's skull</col>. A level 13 <col=800000>skeleton</col> will appear, you don't have to kill it, just leave.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+line	
+line	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+line	
+line	<str>Talk to Father Urhney inside the hut.</str>
+line	
+line	<str>Head to the small room in the Lumbridge graveyard south of the church.</str>
+line	
+line	<str>Equip the Ghostspeak amulet and click the coffin, talk to the ghost.</str>
+line	
+line	<str>Head to the Wizards' Tower, and climb down the ladder to the basement. (Use Necklace of passage to teleport to Wizards' Tower if you have one.)</str>
+line	
+line	<str>Search the altar, and you will receive a ghost's skull. A level 13 skeleton will appear, you don't have to kill it, just leave.</str>
+line	
+line	<col=000080>Go back to the graveyard and use the skull on the coffin with it open.</col>
+done	<str>Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)</str>
+done	
+done	<str>Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp.</str>
+done	
+done	<str>Talk to Father Urhney inside the hut.</str>
+done	
+done	<str>Head to the small room in the Lumbridge graveyard south of the church.</str>
+done	
+done	<str>Equip the Ghostspeak amulet and click the coffin, talk to the ghost.</str>
+done	
+done	<str>Head to the Wizards' Tower, and climb down the ladder to the basement. (Use Necklace of passage to teleport to Wizards' Tower if you have one.)</str>
+done	
+done	<str>Search the altar, and you will receive a ghost's skull. A level 13 skeleton will appear, you don't have to kill it, just leave.</str>
+done	
+done	<str>Go back to the graveyard and use the skull on the coffin with it open.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

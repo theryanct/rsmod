@@ -1,0 +1,712 @@
+# Generated from the OSRS Wiki page "Tale of the Righteous/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Phileas Rimor</col> in his house west of <col=800000>The Cloak and Stagger</col> tavern in <col=800000>Shayzien</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 16 Strength
+req	Level 10 Mining
+step	1	-	Quick guide step 1
+line	<col=000080>Go to the house west of the <col=800000>The Cloak and Stagger</col> tavern in <col=800000>Shayzien</col>. (<col=800000>Xeric's Talisman</col> - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</col>
+step	2	-	Quick guide step 2
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<col=000080>Speak to <col=800000>Phileas Rimor</col>, and agree to help him.</col>
+step	3	-	Quick guide step 3
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<col=000080>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</col>
+step	4	-	Quick guide step 4
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<col=000080>Go to the <col=800000>Arceuus Library</col> (Fairy ring CIS or <col=800000>Lovakengj Minecart Network</col>) and speak to <col=800000>Archeio</col> to teleport to the <col=800000>Library Historical Archive</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<col=000080>Speak to <col=800000>Pagida</col>, and agree to be teleported into the <col=800000>Tower of Magic</col> prison.</col>
+step	6	-	Quick guide step 6
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<col=000080>Push the strange device all the way west. From the north side, attack the device using magic.</col>
+step	7	-	Quick guide step 7
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<col=000080>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</col>
+step	8	-	Quick guide step 8
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<col=000080>Push the strange device all the way east. From the south side, attack using ranged.</col>
+step	9	-	Quick guide step 9
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<col=000080>Investigate the skeleton in the northern cell.</col>
+step	10	-	Quick guide step 10
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<col=000080>Return to the quest start and talk to <col=800000>Phileas Rimor</col> (<col=800000>Xeric's Talisman</col> - 1. Xeric's Lookout and run north-west).</col>
+step	11	-	Quick guide step 11
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<col=000080>Go north-west to the <col=800000>War Tent</col> in the south-west corner of the <col=800000>Shayzien Encampment</col>. Go upstairs and speak to <col=800000>Lord Shiro Shayzien</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<col=000080>Travel to the summit of <col=800000>Mount Quidamortem</col>. (<col=800000>Lovakengj Minecart Network</col> or <col=800000>Xeric's Talisman</col> - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</col>
+step	13	-	Quick guide step 13
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<col=000080>Speak to <col=800000>Historian Duffy</col>. (near the water symbol on the minimap)</col>
+step	14	-	Quick guide step 14
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<col=000080>Use a <col=800000>rope</col> on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</col>
+step	15	-	Quick guide step 15
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<col=000080>Mine the Boulder.</col>
+step	16	-	Quick guide step 16
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<col=000080>Push the Boulder.</col>
+step	17	-	Quick guide step 17
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<col=000080>Attempt to pass the magic gate, and kill the <col=800000>Corrupt Lizardman</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<col=000080>Pass through the magic gate and inspect the <col=800000>Unstable Altar</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<col=000080>Hop worlds after you finish the dialogue to quickly leave the cave.</col>
+step	20	-	Quick guide step 20
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<col=000080>Speak to Historian Duffy again.</col>
+step	21	-	Quick guide step 21
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<str>Speak to Historian Duffy again.</str>
+line	
+line	<col=000080>Go back to the unstable altar in the cave.</col>
+step	22	-	Quick guide step 22
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<str>Speak to Historian Duffy again.</str>
+line	
+line	<str>Go back to the unstable altar in the cave.</str>
+line	
+line	<col=000080>Speak to Duffy and then <col=800000>Gnosi</col> near the unstable altar. Make sure to speak to them BOTH.</col>
+step	23	-	Quick guide step 23
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<str>Speak to Historian Duffy again.</str>
+line	
+line	<str>Go back to the unstable altar in the cave.</str>
+line	
+line	<str>Speak to Duffy and then Gnosi near the unstable altar. Make sure to speak to them BOTH.</str>
+line	
+line	<col=000080>Speak to Lord Shiro Shayzien back at the war tent (Fairy ring DJR, <col=800000>Lovakengj Minecart Network</col>, or Speak to the <col=800000>Mountain Guide</col>).</col>
+step	24	-	Quick guide step 24
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<str>Speak to Historian Duffy again.</str>
+line	
+line	<str>Go back to the unstable altar in the cave.</str>
+line	
+line	<str>Speak to Duffy and then Gnosi near the unstable altar. Make sure to speak to them BOTH.</str>
+line	
+line	<str>Speak to Lord Shiro Shayzien back at the war tent (Fairy ring DJR, Lovakengj Minecart Network, or Speak to the Mountain Guide).</str>
+line	
+line	<col=000080>Return to Phileas's house and walk inside to get dialogue. He will not be there.</col>
+step	25	-	Quick guide step 25
+line	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+line	
+line	<str>Speak to Phileas Rimor, and agree to help him.</str>
+line	
+line	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+line	
+line	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+line	
+line	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+line	
+line	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+line	
+line	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+line	
+line	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+line	
+line	<str>Investigate the skeleton in the northern cell.</str>
+line	
+line	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+line	
+line	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+line	
+line	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+line	
+line	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+line	
+line	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+line	
+line	<str>Mine the Boulder.</str>
+line	
+line	<str>Push the Boulder.</str>
+line	
+line	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+line	
+line	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+line	
+line	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+line	
+line	<str>Speak to Historian Duffy again.</str>
+line	
+line	<str>Go back to the unstable altar in the cave.</str>
+line	
+line	<str>Speak to Duffy and then Gnosi near the unstable altar. Make sure to speak to them BOTH.</str>
+line	
+line	<str>Speak to Lord Shiro Shayzien back at the war tent (Fairy ring DJR, Lovakengj Minecart Network, or Speak to the Mountain Guide).</str>
+line	
+line	<str>Return to Phileas's house and walk inside to get dialogue. He will not be there.</str>
+line	
+line	<col=000080>Return to Lord Shiro Shayzien once more.</col>
+done	<str>Go to the house west of the The Cloak and Stagger tavern in Shayzien. (Xeric's Talisman - 1. Xeric's Lookout and run north-west, or Fairy Ring DJR)</str>
+done	
+done	<str>Speak to Phileas Rimor, and agree to help him.</str>
+done	
+done	<str>Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.</str>
+done	
+done	<str>Go to the Arceuus Library (Fairy ring CIS or Lovakengj Minecart Network) and speak to Archeio to teleport to the Library Historical Archive.</str>
+done	
+done	<str>Speak to Pagida, and agree to be teleported into the Tower of Magic prison.</str>
+done	
+done	<str>Push the strange device all the way west. From the north side, attack the device using magic.</str>
+done	
+done	<str>From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)</str>
+done	
+done	<str>Push the strange device all the way east. From the south side, attack using ranged.</str>
+done	
+done	<str>Investigate the skeleton in the northern cell.</str>
+done	
+done	<str>Return to the quest start and talk to Phileas Rimor (Xeric's Talisman - 1. Xeric's Lookout and run north-west).</str>
+done	
+done	<str>Go north-west to the War Tent in the south-west corner of the Shayzien Encampment. Go upstairs and speak to Lord Shiro Shayzien.</str>
+done	
+done	<str>Travel to the summit of Mount Quidamortem. (Lovakengj Minecart Network or Xeric's Talisman - 5. Xeric's Honour if it is unlocked) or Fairy ring BLS (if unlocked)</str>
+done	
+done	<str>Speak to Historian Duffy. (near the water symbol on the minimap)</str>
+done	
+done	<str>Use a rope on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)</str>
+done	
+done	<str>Mine the Boulder.</str>
+done	
+done	<str>Push the Boulder.</str>
+done	
+done	<str>Attempt to pass the magic gate, and kill the Corrupt Lizardman.</str>
+done	
+done	<str>Pass through the magic gate and inspect the Unstable Altar.</str>
+done	
+done	<str>Hop worlds after you finish the dialogue to quickly leave the cave.</str>
+done	
+done	<str>Speak to Historian Duffy again.</str>
+done	
+done	<str>Go back to the unstable altar in the cave.</str>
+done	
+done	<str>Speak to Duffy and then Gnosi near the unstable altar. Make sure to speak to them BOTH.</str>
+done	
+done	<str>Speak to Lord Shiro Shayzien back at the war tent (Fairy ring DJR, Lovakengj Minecart Network, or Speak to the Mountain Guide).</str>
+done	
+done	<str>Return to Phileas's house and walk inside to get dialogue. He will not be there.</str>
+done	
+done	<str>Return to Lord Shiro Shayzien once more.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,191 @@
+# Generated from the OSRS Wiki page "The Queen of Thieves/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Tomas Lawry</col> outside the <col=800000>Port Piscarilius</col> bank.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Tomas Lawry</col> outside the <col=800000>Port Piscarilius</col> bank. (Grab a <col=800000>bowl</col> from the <col=800000>general store</col> on your way to the bank if you plan on making the <col=800000>stew</col> yourself.)</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<col=000080>Head south and speak to <col=800000>Robert O'Reilly</col> in the house directly west of the bridge. He will ask for a <col=800000>stew</col>. A <col=800000>stew</col> can be made with <col=800000>raw beef</col> and a <col=800000>potato</col> purchased from <col=800000>Kenelme</col> directly west along with a <col=800000>bowl</col> from the general store south-east.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<col=000080>Enter the <col=800000>manhole</col> to the east marked by the <col=800000>File:Dungeon map link icon.png</col> icon, cross the bridge a bit to the south, continue west.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<col=000080>Speak to <col=800000>Devan Rutter</col>, near the fish stall.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<col=000080>Optional: Trade the General Store Shop Keeper in <col=800000>The Warrens</col> for an <col=800000>easy</col> <col=800000>Kourend & Kebos Diary</col> task.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<col=000080>Return to the surface from the way you entered and murder <col=800000>Conrad King</col> (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<col=000080>Go back down the manhole and enter the tent.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<str>Go back down the manhole and enter the tent.</str>
+line	
+line	<col=000080>Speak to the Queen of Thieves.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<str>Go back down the manhole and enter the tent.</str>
+line	
+line	<str>Speak to the Queen of Thieves.</str>
+line	
+line	<col=000080>Exit the sewers and travel south-west to <col=800000>Kingstown</col> and enter the house immediately north from the entrance (south of the <col=800000>File:Rare trees icon.png</col> icon), and climb the stairs to the uk=1.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<str>Go back down the manhole and enter the tent.</str>
+line	
+line	<str>Speak to the Queen of Thieves.</str>
+line	
+line	<str>Exit the sewers and travel south-west to Kingstown and enter the house immediately north from the entrance (south of the File:Rare trees icon.png icon), and climb the stairs to the uk=1.</str>
+line	
+line	<col=000080>Picklock the <col=800000>chest</col> in the east side of the room to find a <col=800000>letter</col>. (You may have to click the lock multiple times)</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<str>Go back down the manhole and enter the tent.</str>
+line	
+line	<str>Speak to the Queen of Thieves.</str>
+line	
+line	<str>Exit the sewers and travel south-west to Kingstown and enter the house immediately north from the entrance (south of the File:Rare trees icon.png icon), and climb the stairs to the uk=1.</str>
+line	
+line	<str>Picklock the chest in the east side of the room to find a letter. (You may have to click the lock multiple times)</str>
+line	
+line	<col=000080>Return to <col=800000>Tomas Lawry</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+line	
+line	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+line	
+line	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+line	
+line	<str>Speak to Devan Rutter, near the fish stall.</str>
+line	
+line	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+line	
+line	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+line	
+line	<str>Go back down the manhole and enter the tent.</str>
+line	
+line	<str>Speak to the Queen of Thieves.</str>
+line	
+line	<str>Exit the sewers and travel south-west to Kingstown and enter the house immediately north from the entrance (south of the File:Rare trees icon.png icon), and climb the stairs to the uk=1.</str>
+line	
+line	<str>Picklock the chest in the east side of the room to find a letter. (You may have to click the lock multiple times)</str>
+line	
+line	<str>Return to Tomas Lawry.</str>
+line	
+line	<col=000080>Return to The Queen of Thieves (now called <col=800000>Lady Shauna Piscarilius</col>).</col>
+done	<str>Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)</str>
+done	
+done	<str>Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.</str>
+done	
+done	<str>Enter the manhole to the east marked by the File:Dungeon map link icon.png icon, cross the bridge a bit to the south, continue west.</str>
+done	
+done	<str>Speak to Devan Rutter, near the fish stall.</str>
+done	
+done	<str>Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task.</str>
+done	
+done	<str>Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.</str>
+done	
+done	<str>Go back down the manhole and enter the tent.</str>
+done	
+done	<str>Speak to the Queen of Thieves.</str>
+done	
+done	<str>Exit the sewers and travel south-west to Kingstown and enter the house immediately north from the entrance (south of the File:Rare trees icon.png icon), and climb the stairs to the uk=1.</str>
+done	
+done	<str>Picklock the chest in the east side of the room to find a letter. (You may have to click the lock multiple times)</str>
+done	
+done	<str>Return to Tomas Lawry.</str>
+done	
+done	<str>Return to The Queen of Thieves (now called Lady Shauna Piscarilius).</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

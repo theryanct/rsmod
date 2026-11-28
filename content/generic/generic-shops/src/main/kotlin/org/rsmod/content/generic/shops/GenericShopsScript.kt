@@ -14,6 +14,7 @@ import org.rsmod.content.generic.shops.GenericShopData.ShopDef
 import org.rsmod.content.generic.shops.GenericShopData.VendorDef
 import org.rsmod.content.generic.shops.GenericShopData.VendorItem
 import org.rsmod.content.quests.framework.QuestTalk
+import org.rsmod.content.quests.framework.ShopGates
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.npc.NpcType
 import org.rsmod.game.type.npc.NpcTypeList
@@ -32,7 +33,9 @@ constructor(private val shops: Shops, private val npcTypes: NpcTypeList) : Plugi
         for (shop in GenericShopData.shops) {
             for ((npcName, op) in shop.npcs) {
                 val npc = GenericShopNpcs.byName.getValue(npcName)
-                onNpcOp(npc, op, shop.title) { openShop(shop) }
+                onNpcOp(npc, op, shop.title) { target ->
+                    if (with(ShopGates) { shopAllowed(target) }) openShop(shop)
+                }
             }
         }
         for (vendor in GenericShopData.vendors) {

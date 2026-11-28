@@ -1,0 +1,2082 @@
+# Generated from the OSRS Wiki page "In Aid of the Myreque/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Veliaf Hurtz</col> in the <col=800000>Myreque Hideout</col> below the <col=800000>Canifis</col> pub.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 25 Agility
+req	Level 25 Crafting
+req	Level 15 Mining
+req	Level 7 Magic
+step	1	-	Quick guide step 1
+line	<col=000080>Climb down the <col=800000>trapdoor</col> behind the <col=800000>Canifis pub</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<col=000080>Search the <col=800000>wall</col> and enter the cave entrance just south-east.</col>
+step	3	-	Quick guide step 3
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<col=000080>Talk to <col=800000>Veliaf Hurtz</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<col=000080>Talk to <col=800000>Florin</col> through the gate to <col=800000>Burgh de Rott</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<col=000080>Put a piece of food into the <col=800000>open chest</col>, then open the gate.</col>
+step	6	-	Quick guide step 6
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<col=000080>Talk to <col=800000>Razvan</col> near the pub.</col>
+step	7	-	Quick guide step 7
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<col=000080>Enter the pub, climb over the <col=800000>broken wall</col>, then use your pickaxe on the rubble blocking the <col=800000>trapdoor</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<col=000080>Climb down and mine the rest of the <col=800000>rubble</col>. Anything you drop in the basement will be lost upon leaving.</col>
+step	9	-	Quick guide step 9
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<col=000080>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</col>
+step	10	-	Quick guide step 10
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<col=000080>When finished, use the buckets of rubble on the <col=800000>rubble pile</col> outside the pub.</col>
+step	11	-	Quick guide step 11
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<col=000080>Talk to Razvan again.</col>
+step	12	-	Quick guide step 12
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<col=000080>Talk to <col=800000>Aurel</col> in the general store to the north-east.</col>
+step	13	-	Quick guide step 13
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<col=000080>Climb up the ladder right outside.</col>
+step	14	-	Quick guide step 14
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<col=000080>Use 3 planks and 12 nails on the broken roof of the store.</col>
+step	15	-	Quick guide step 15
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<col=000080>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</col>
+step	16	-	Quick guide step 16
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<col=000080>Talk to Aurel again to get a <col=800000>crate</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<col=000080>Add 10 <col=800000>bronze axe</col>s, 10 <col=800000>raw mackerel</col>s or 10 <col=800000>snail</col>s (depending on what is asked), and 3 <col=800000>tinderbox</col>es to the crate.</col>
+step	18	-	Quick guide step 18
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<col=000080>Talk to Aurel.</col>
+step	19	-	Quick guide step 19
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<col=000080>Talk to <col=800000>Cornelius</col> in the bank.</col>
+step	20	-	Quick guide step 20
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<col=000080>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</col>
+step	21	-	Quick guide step 21
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<col=000080>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</col>
+step	22	-	Quick guide step 22
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<col=000080>Talk to Cornelius to recruit him.</col>
+step	23	-	Quick guide step 23
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<col=000080>Talk to <col=800000>Razvan</col>.</col>
+step	24	-	Quick guide step 24
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<col=000080>Repair the <col=800000>furnace</col> to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</col>
+step	25	-	Quick guide step 25
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<col=000080>Talk to <col=800000>Gadderanks</col> in the general store.</col>
+step	26	-	Quick guide step 26
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Vampyre Juvinate</col> in the store.</col>
+step	27	-	Quick guide step 27
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<col=000080>Talk to <col=800000>Wiskit</col>.</col>
+step	28	-	Quick guide step 28
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<col=000080>Kill the two juvinates and then <col=800000>Gadderanks</col> (you'll need a silver weapon or Wolfbane dagger or <col=800000>Efaritay's aid</col> to damage them).</col>
+step	29	-	Quick guide step 29
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<col=000080>Talk to Gadderanks.</col>
+step	30	-	Quick guide step 30
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<col=000080>Talk to Veliaf Hurtz.</col>
+step	31	-	Quick guide step 31
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<col=000080>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</col>
+step	32	-	Quick guide step 32
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<col=000080>Talk to <col=800000>Polmafi Ferdygris</col>.</col>
+step	33	-	Quick guide step 33
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<col=000080>Talk to Ivan Strom to go on a simplified version of <col=800000>Temple Trekking</col> and take either the short or long route. (you can't bring a pet - it must be banked!)</col>
+step	34	-	Quick guide step 34
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<col=000080>Kill the <col=800000>Vampyre Juvinates</col> before they can kill Ivan Strom.</col>
+step	35	-	Quick guide step 35
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<col=000080>After you're done escorting Ivan, talk to <col=800000>Drezel</col> in the underground temple for a key.</col>
+step	36	-	Quick guide step 36
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<col=000080>Use the key on the <col=800000>keyhole</col> on the eastern wall and climb down the <col=800000>trapdoor</col>.</col>
+step	37	-	Quick guide step 37
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<col=000080>Search the <col=800000>bookcases</col> in the hidden room until you find <col=800000>The sleeping seven</col> (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</col>
+step	38	-	Quick guide step 38
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<col=000080>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</col>
+step	39	-	Quick guide step 39
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<col=000080>Use a hammer on the wooden boards and enter the cave.</col>
+step	40	-	Quick guide step 40
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<str>Use a hammer on the wooden boards and enter the cave.</str>
+line	
+line	<col=000080>Use your soft clay on the <col=800000>coffin</col> to make a rod mould.</col>
+step	41	-	Quick guide step 41
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<str>Use a hammer on the wooden boards and enter the cave.</str>
+line	
+line	<str>Use your soft clay on the coffin to make a rod mould.</str>
+line	
+line	<col=000080>Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a <col=800000>silvthrill rod</col>. (Fairy ring DKR for <col=800000>Edgeville Furnace</col>.)</col>
+step	42	-	Quick guide step 42
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<str>Use a hammer on the wooden boards and enter the cave.</str>
+line	
+line	<str>Use your soft clay on the coffin to make a rod mould.</str>
+line	
+line	<str>Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a silvthrill rod. (Fairy ring DKR for Edgeville Furnace.)</str>
+line	
+line	<col=000080>Cast <col=800000>Lvl-1 Enchant</col> on the rod.</col>
+step	43	-	Quick guide step 43
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<str>Use a hammer on the wooden boards and enter the cave.</str>
+line	
+line	<str>Use your soft clay on the coffin to make a rod mould.</str>
+line	
+line	<str>Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a silvthrill rod. (Fairy ring DKR for Edgeville Furnace.)</str>
+line	
+line	<str>Cast Lvl-1 Enchant on the rod.</str>
+line	
+line	<col=000080>Use the rod on the well underneath the <col=800000>Paterdomus Temple</col> (where Drezel was) with a rope in your inventory. (Nearest fairy ring CKS)</col>
+step	44	-	Quick guide step 44
+line	<str>Climb down the trapdoor behind the Canifis pub.</str>
+line	
+line	<str>Search the wall and enter the cave entrance just south-east.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+line	
+line	<str>Put a piece of food into the open chest, then open the gate.</str>
+line	
+line	<str>Talk to Razvan near the pub.</str>
+line	
+line	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+line	
+line	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+line	
+line	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+line	
+line	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+line	
+line	<str>Talk to Razvan again.</str>
+line	
+line	<str>Talk to Aurel in the general store to the north-east.</str>
+line	
+line	<str>Climb up the ladder right outside.</str>
+line	
+line	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+line	
+line	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+line	
+line	<str>Talk to Aurel again to get a crate.</str>
+line	
+line	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+line	
+line	<str>Talk to Aurel.</str>
+line	
+line	<str>Talk to Cornelius in the bank.</str>
+line	
+line	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+line	
+line	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+line	
+line	<str>Talk to Cornelius to recruit him.</str>
+line	
+line	<str>Talk to Razvan.</str>
+line	
+line	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+line	
+line	<str>Talk to Gadderanks in the general store.</str>
+line	
+line	<str>Talk to the Vampyre Juvinate in the store.</str>
+line	
+line	<str>Talk to Wiskit.</str>
+line	
+line	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+line	
+line	<str>Talk to Gadderanks.</str>
+line	
+line	<str>Talk to Veliaf Hurtz.</str>
+line	
+line	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+line	
+line	<str>Talk to Polmafi Ferdygris.</str>
+line	
+line	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+line	
+line	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+line	
+line	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+line	
+line	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+line	
+line	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+line	
+line	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+line	
+line	<str>Use a hammer on the wooden boards and enter the cave.</str>
+line	
+line	<str>Use your soft clay on the coffin to make a rod mould.</str>
+line	
+line	<str>Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a silvthrill rod. (Fairy ring DKR for Edgeville Furnace.)</str>
+line	
+line	<str>Cast Lvl-1 Enchant on the rod.</str>
+line	
+line	<str>Use the rod on the well underneath the Paterdomus Temple (where Drezel was) with a rope in your inventory. (Nearest fairy ring CKS)</str>
+line	
+line	<col=000080>Return to the Burgh de Rott pub basement with the <col=800000>Rod of Ivandis</col> (it must be in your inventory, not equipped), then speak to Veliaf.</col>
+done	<str>Climb down the trapdoor behind the Canifis pub.</str>
+done	
+done	<str>Search the wall and enter the cave entrance just south-east.</str>
+done	
+done	<str>Talk to Veliaf Hurtz.</str>
+done	
+done	<str>Talk to Florin through the gate to Burgh de Rott.</str>
+done	
+done	<str>Put a piece of food into the open chest, then open the gate.</str>
+done	
+done	<str>Talk to Razvan near the pub.</str>
+done	
+done	<str>Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor.</str>
+done	
+done	<str>Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving.</str>
+done	
+done	<str>Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets.</str>
+done	
+done	<str>When finished, use the buckets of rubble on the rubble pile outside the pub.</str>
+done	
+done	<str>Talk to Razvan again.</str>
+done	
+done	<str>Talk to Aurel in the general store to the north-east.</str>
+done	
+done	<str>Climb up the ladder right outside.</str>
+done	
+done	<str>Use 3 planks and 12 nails on the broken roof of the store.</str>
+done	
+done	<str>Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store.</str>
+done	
+done	<str>Talk to Aurel again to get a crate.</str>
+done	
+done	<str>Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate.</str>
+done	
+done	<str>Talk to Aurel.</str>
+done	
+done	<str>Talk to Cornelius in the bank.</str>
+done	
+done	<str>Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth</str>
+done	
+done	<str>Use a hammer with 3 planks and 12 nails on the damaged wall outside.</str>
+done	
+done	<str>Talk to Cornelius to recruit him.</str>
+done	
+done	<str>Talk to Razvan.</str>
+done	
+done	<str>Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.</str>
+done	
+done	<str>Talk to Gadderanks in the general store.</str>
+done	
+done	<str>Talk to the Vampyre Juvinate in the store.</str>
+done	
+done	<str>Talk to Wiskit.</str>
+done	
+done	<str>Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them).</str>
+done	
+done	<str>Talk to Gadderanks.</str>
+done	
+done	<str>Talk to Veliaf Hurtz.</str>
+done	
+done	<str>Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)</str>
+done	
+done	<str>Talk to Polmafi Ferdygris.</str>
+done	
+done	<str>Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)</str>
+done	
+done	<str>Kill the Vampyre Juvinates before they can kill Ivan Strom.</str>
+done	
+done	<str>After you're done escorting Ivan, talk to Drezel in the underground temple for a key.</str>
+done	
+done	<str>Use the key on the keyhole on the eastern wall and climb down the trapdoor.</str>
+done	
+done	<str>Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is "The Sleeping Seven"). Read it.</str>
+done	
+done	<str>Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall.</str>
+done	
+done	<str>Use a hammer on the wooden boards and enter the cave.</str>
+done	
+done	<str>Use your soft clay on the coffin to make a rod mould.</str>
+done	
+done	<str>Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a silvthrill rod. (Fairy ring DKR for Edgeville Furnace.)</str>
+done	
+done	<str>Cast Lvl-1 Enchant on the rod.</str>
+done	
+done	<str>Use the rod on the well underneath the Paterdomus Temple (where Drezel was) with a rope in your inventory. (Nearest fairy ring CKS)</str>
+done	
+done	<str>Return to the Burgh de Rott pub basement with the Rod of Ivandis (it must be in your inventory, not equipped), then speak to Veliaf.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

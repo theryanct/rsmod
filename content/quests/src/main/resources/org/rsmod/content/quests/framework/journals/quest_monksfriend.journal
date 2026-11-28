@@ -1,0 +1,99 @@
+# Generated from the OSRS Wiki page "Monk's Friend/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Brother Omad</col> at the <col=800000>Ardougne Monastery</col> south of <col=800000>East Ardougne</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Brother Omad</col> at the <col=800000>Monastery</col> south of <col=800000>Ardougne</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<col=000080>Go west of the monastery, slightly south-west of the <col=800000>Clock Tower</col>, to a perfect stone circle, enter it and go down the ladder in the middle.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<col=000080>Follow the first path south and pick up the <col=800000>Child's blanket</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<str>Follow the first path south and pick up the Child's blanket.</str>
+line	
+line	<col=000080>Return to Brother Omad and talk to him twice.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<str>Follow the first path south and pick up the Child's blanket.</str>
+line	
+line	<str>Return to Brother Omad and talk to him twice.</str>
+line	
+line	<col=000080>Go north and talk to <col=800000>Brother Cedric</col>, who is directly south of the <col=800000>Ardougne Zoo</col>, near the well.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<str>Follow the first path south and pick up the Child's blanket.</str>
+line	
+line	<str>Return to Brother Omad and talk to him twice.</str>
+line	
+line	<str>Go north and talk to Brother Cedric, who is directly south of the Ardougne Zoo, near the well.</str>
+line	
+line	<col=000080>Talk to him again to give him a <col=800000>jug of water</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<str>Follow the first path south and pick up the Child's blanket.</str>
+line	
+line	<str>Return to Brother Omad and talk to him twice.</str>
+line	
+line	<str>Go north and talk to Brother Cedric, who is directly south of the Ardougne Zoo, near the well.</str>
+line	
+line	<str>Talk to him again to give him a jug of water.</str>
+line	
+line	<col=000080>Speak to him again and give him the <col=800000>logs</col> or <col=800000>plank</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+line	
+line	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+line	
+line	<str>Follow the first path south and pick up the Child's blanket.</str>
+line	
+line	<str>Return to Brother Omad and talk to him twice.</str>
+line	
+line	<str>Go north and talk to Brother Cedric, who is directly south of the Ardougne Zoo, near the well.</str>
+line	
+line	<str>Talk to him again to give him a jug of water.</str>
+line	
+line	<str>Speak to him again and give him the logs or plank.</str>
+line	
+line	<col=000080>Return to Brother Omad.</col>
+done	<str>Talk to Brother Omad at the Monastery south of Ardougne.</str>
+done	
+done	<str>Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle.</str>
+done	
+done	<str>Follow the first path south and pick up the Child's blanket.</str>
+done	
+done	<str>Return to Brother Omad and talk to him twice.</str>
+done	
+done	<str>Go north and talk to Brother Cedric, who is directly south of the Ardougne Zoo, near the well.</str>
+done	
+done	<str>Talk to him again to give him a jug of water.</str>
+done	
+done	<str>Speak to him again and give him the logs or plank.</str>
+done	
+done	<str>Return to Brother Omad.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

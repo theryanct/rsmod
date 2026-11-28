@@ -40,6 +40,9 @@ internal object HerbloreQueues : QueueReferences() {
 internal object HerbloreVarps : VarpReferences() {
     /** Druidic Ritual's quest varp (complete = 4), for the optional QuestGates check. */
     val druidquest = find("druidquest")
+
+    /** Disease periods left (cache varp; Zogre Flesh Eaters' disease counts it down). */
+    val disease = find("disease")
 }
 
 internal object HerbloreVarBits : VarBitReferences() {
@@ -48,4 +51,7 @@ internal object HerbloreVarBits : VarBitReferences() {
      * wants an attack mix, 2 he has it (every mix unlocked).
      */
     val brut_herb_potion = find("brut_herb_potion")
+
+    /** Zogre Flesh Eaters: Sithik told you how to cure the disease (Relicym's balm). */
+    val thzfe_makecuredisease = find("thzfe_makecuredisease")
 }

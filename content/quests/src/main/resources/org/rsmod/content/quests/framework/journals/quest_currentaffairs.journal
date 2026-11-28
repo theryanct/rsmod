@@ -1,0 +1,283 @@
+# Generated from the OSRS Wiki page "Current Affairs/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Arhein</col> on the <col=800000>Catherby</col> docks.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 22 Sailing
+req	Level 10 Fishing
+req	Pandemonium
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Arhein</col> on the <col=800000>Catherby</col> docks.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<col=000080>Talk to <col=800000>Councillor Catherine</col> in the council office in north-east Catherby.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<col=000080>With charcoal in your inventory, fill in <col=800000>form cr-4p</col>, selecting the first option for every question.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<col=000080>Talk to Councillor Catherine again to return the form.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<col=000080>Talk to Arhein again.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<col=000080>Talk to <col=800000>Harry</col> in the fishing shop in the easternmost building in Catherby.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<col=000080>Use the <col=800000>tiny net</col> on either aquarium in the shop to catch the <col=800000>Mayor of Catherby</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<col=000080>Talk to Arhein again to have him place a mayoral chain on the mayor.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<col=000080>Talk to Councillor Catherine and select the first option for every question again.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<col=000080>Use <col=800000>form 7r4-5h</col> on the <col=800000>Mayor of Catherby</col>, then talk to Catherine to return the signed form.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+line	
+line	<col=000080>Talk to Arhein again to receive the <col=800000>current duck</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+line	
+line	<str>Talk to Arhein again to receive the current duck.</str>
+line	
+line	<col=000080>Board your boat at the Catherby docks and sail east to the ripple immediately west of the <col=800000>Obelisk of Water</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+line	
+line	<str>Talk to Arhein again to receive the current duck.</str>
+line	
+line	<str>Board your boat at the Catherby docks and sail east to the ripple immediately west of the Obelisk of Water.</str>
+line	
+line	<col=000080>While your boat is on top of the ripple, click the current duck in your inventory to place it in the water.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+line	
+line	<str>Talk to Arhein again to receive the current duck.</str>
+line	
+line	<str>Board your boat at the Catherby docks and sail east to the ripple immediately west of the Obelisk of Water.</str>
+line	
+line	<str>While your boat is on top of the ripple, click the current duck in your inventory to place it in the water.</str>
+line	
+line	<col=000080>Follow the duck until it reaches the shore near <col=800000>Holgart</col>, then collect it.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Arhein on the Catherby docks.</str>
+line	
+line	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+line	
+line	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+line	
+line	<str>Talk to Councillor Catherine again to return the form.</str>
+line	
+line	<str>Talk to Arhein again.</str>
+line	
+line	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+line	
+line	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+line	
+line	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+line	
+line	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+line	
+line	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+line	
+line	<str>Talk to Arhein again to receive the current duck.</str>
+line	
+line	<str>Board your boat at the Catherby docks and sail east to the ripple immediately west of the Obelisk of Water.</str>
+line	
+line	<str>While your boat is on top of the ripple, click the current duck in your inventory to place it in the water.</str>
+line	
+line	<str>Follow the duck until it reaches the shore near Holgart, then collect it.</str>
+line	
+line	<col=000080>Return to Arhein.</col>
+done	<str>Talk to Arhein on the Catherby docks.</str>
+done	
+done	<str>Talk to Councillor Catherine in the council office in north-east Catherby.</str>
+done	
+done	<str>With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question.</str>
+done	
+done	<str>Talk to Councillor Catherine again to return the form.</str>
+done	
+done	<str>Talk to Arhein again.</str>
+done	
+done	<str>Talk to Harry in the fishing shop in the easternmost building in Catherby.</str>
+done	
+done	<str>Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby.</str>
+done	
+done	<str>Talk to Arhein again to have him place a mayoral chain on the mayor.</str>
+done	
+done	<str>Talk to Councillor Catherine and select the first option for every question again.</str>
+done	
+done	<str>Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form.</str>
+done	
+done	<str>Talk to Arhein again to receive the current duck.</str>
+done	
+done	<str>Board your boat at the Catherby docks and sail east to the ripple immediately west of the Obelisk of Water.</str>
+done	
+done	<str>While your boat is on top of the ripple, click the current duck in your inventory to place it in the water.</str>
+done	
+done	<str>Follow the duck until it reaches the shore near Holgart, then collect it.</str>
+done	
+done	<str>Return to Arhein.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

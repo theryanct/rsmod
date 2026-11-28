@@ -1,0 +1,1044 @@
+# Generated from the OSRS Wiki page "Transcript:Watchtower" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Speaking to a tower guard
+1	line	Player	Hello. What are you doing here?
+1	line	Tower guard	We are the tower guards - our business is our own!
+1	action	end
+0	section	Attempting to climb the ladder
+1	cond	Before starting the quest:
+2	line	Tower guard	You can't go up there. That's private, that is.
+2	action	end
+1	cond	The first time after starting the quest:
+2	line	Tower guard	It is the wizards' helping hand - let 'em up.
+2	action	end
+0	section	Speaking to a wizard
+1	line	Player	What's going on here?
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	action	end
+0	section	Speaking to the Watchtower Wizard
+1	line	Watchtower Wizard	Who are you? Are you one of the new guards?
+1	line	Player	No, I'm an adventurer.
+1	line	Watchtower Wizard	Well what are you doing here?
+1	line	Player	Looking for adventures - what else?
+1	line	Watchtower Wizard	Oh my, oh my! What does it all matter in the end, anyway?
+1	select	Select an Option
+1	option	What's the matter?
+2	line	Player	What's the matter?
+2	line	Watchtower Wizard	Oh dear, oh dear. Darn and drat!
+2	line	Watchtower Wizard	We try hard to keep this town protected.
+2	line	Watchtower Wizard	But how can we do that when the Watchtower isn't working?
+3	line	Player	What do you mean it isn't working?
+2	line	Watchtower Wizard	The Watchtower here works by the power of magic. An ancient spell designed to ward off ogres that has been in place here for many moons.
+2	line	Watchtower Wizard	The exact knowledge of the spell is lost to us now, but the essence of the spell has been infused into four powering crystals that keep the tower protected from the hordes in the Feldips.
+2	select	Select an Option
+2	option	So how come the spell doesn't work?
+3	line	Player	So how come the spell doesn't work?
+3	line	Watchtower Wizard	The crystals! The crystals have been taken!
+3	line	Player	Taken?
+3	line	Watchtower Wizard	Stolen!
+3	line	Player	Stolen?
+3	line	Watchtower Wizard	Yes, yes! Do I have to repeat myself?
+3	select	Start the Watchtower quest?
+3	option	Yes.
+4	line	Player	Can I be of help?
+4	line	Watchtower Wizard	Help? Oh wonderful, dear traveller!
+4	line	Watchtower Wizard	Yes I could do with an extra pair of eyes here.
+4	line	Player	???
+4	line	Watchtower Wizard	There must be some evidence of what has happened here. Perhaps you could assist me in searching for clues?
+4	line	Player	I would be happy to.
+4	line	Watchtower Wizard	Try searching the surrounding area. If you find anything unusual, bring it here. Try the bushes - I've read enough adventure stories to know that clues get caught in bushes all the time.
+4	line	Watchtower Wizard	I will tell the guards to let you past - that way, you can just use the ladder to get in and out.
+4	action	end
+3	option	No.
+4	line	Player	I'm not interested.
+4	line	Watchtower Wizard	That's typical, nowadays. It's left to us wizards to do all the work.
+4	action	end
+2	option	I'm not interested in your rantings.
+3	line	Player	I'm not interested in your rantings.
+3	line	Watchtower Wizard	Hmph! Suit yourself.
+3	action	end
+1	option	You wizards are always complaining.
+2	line	Player	You wizards are always complaining.
+2	line	Watchtower Wizard	Complaining? Complaining!
+2	line	Watchtower Wizard	What folks these days don't realise is that if it weren't for us wizards, this entire world would be overrun with every creature you could possibly imagine. And some you couldn't even conceive of!
+2	action	end
+0	section	Searching for evidence
+0	section	Speaking to a wizard
+1	line	Player	I've got some questions about the search for evidence.
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	action	end
+0	section	Talking to the Watchtower Wizard
+1	line	Watchtower Wizard	Hello again. Did you find anything of interest?
+1	cond	With no evidence to show him:
+2	line	Player	No, sorry, nothing yet.
+2	line	Watchtower Wizard	Oh dear, oh dear, there must be something, somewhere...
+2	action	end
+1	cond	With any of the evidence besides fingernails:
+2	line	Player	I have this [robe/dagger/armour/eyepatch]...
+2	line	Watchtower Wizard	Let me see...
+2	line	Watchtower Wizard	No, sorry, this is not evidence. You need to keep searching, I'm afraid.
+2	action	end
+0	section	Using evidence other than the fingernails on the Watchtower Wizard
+1	line	Watchtower Wizard	Let me see...
+1	line	Watchtower Wizard	No, sorry, this is not evidence. You need to keep searching, I'm afraid.
+1	action	end
+1	cond	With the fingernails
+2	line	Player	Have a look at these...
+2	line	Watchtower Wizard	Interesting, very interesting.
+2	line	Watchtower Wizard	Long nails...grey in colour...well chewed...
+2	line	Watchtower Wizard	Of course! They belong to a skavid!
+2	line	Player	A skavid?
+2	line	Watchtower Wizard	A servant race to the ogres: grey, depressed-looking creatures, always losing nails, teeth and hair!
+2	line	Watchtower Wizard	They inhabit the caves in the Feldip Hills.
+2	line	Watchtower Wizard	They normally keep to themselves, though. It's unusual for them to venture from their caves.
+2	select	Select an Option
+2	option	What do you suggest I do?
+3	line	Player	What do you suggest I do?
+3	line	Watchtower Wizard	It's no good searching the caves. Well, not yet, anyway.
+3	line	Player	Why not?
+3	line	Watchtower Wizard	They are deep and complex. The only way you will navigate the caves is to have a map or something.
+3	line	Watchtower Wizard	It may be that the ogres have one...
+3	line	Player	And how do you know that?
+3	line	Watchtower Wizard	Well... I don't.
+3	select	Select an Option
+3	option	So what do I do?
+4	line	Player	So what do I do?
+4	line	Watchtower Wizard	You need to be fearless and gain entrance to Gu'Tanoth, the city of the ogres, then find out how to navigate the caves.
+4	line	Player	That sounds scary...
+4	line	Watchtower Wizard	Ogres are nasty creatures, yes. Only a strong warrior, and a clever one at that, can get the better of them.
+4	line	Player	What do I need to do to get into the city?
+4	line	Watchtower Wizard	You'll need some way to make the guards let you in.
+4	line	Watchtower Wizard	You could start by checking out the ogre settlements around here. Tribal ogres often dislike their neighbours... In the meantime, I'll throw those fingernails out for you.
+4	action	end
+3	option	I won't bother then.
+4	line	Player	I won't bother, then.
+4	line	Watchtower Wizard	Won't bother? Won't bother!
+4	line	Watchtower Wizard	Perhaps this quest is too hard for you?
+4	action	end
+2	option	Shall I search the caves?
+3	line	Player	Shall I search the caves?
+3	line	Watchtower Wizard	It's no good searching the caves. Well, not yet, anyway.
+3	line	Player	Why not?
+3	line	Watchtower Wizard	They are deep and complex. The only way you will navigate the caves is to have a map or something.
+3	line	Watchtower Wizard	It may be that the ogres have one...
+3	line	Player	And how do you know that?
+3	line	Watchtower Wizard	Well... I don't.
+3	select	Select an Option
+3	option	So what do I do?
+4	action	above
+3	option	I won't bother then.
+4	action	above
+0	section	Searching the bushes
+1	cond	Before starting the quest:
+2	line	Player	I am not sure why I am searching this bush.
+2	action	end
+1	cond	Before starting the quest, the bush with the fingernails:
+2	line	Player	I am not sure why I am searching this bush.
+2	action	end
+1	cond	Old robe:
+2	line	Player	Aha! A robe. This could be a clue...
+2	action	
+2	action	end
+1	cond	Unusual armour:
+2	line	Player	Here's some armour; it could be evidence...
+2	action	
+2	action	end
+1	cond	Damaged dagger:
+2	line	Player	Aha, a dagger! I wonder if this is evidence...
+2	action	
+2	action	end
+1	cond	Tattered eye patch:
+2	line	Player	I've found an eye patch; I had better show this to the Watchtower Wizard.
+2	action	
+2	action	end
+1	cond	Fingernails:
+2	line	Player	What's this? Disgusting! Some fingernails. They may be a clue though... I'd better take them.
+2	action	
+2	action	end
+1	cond	Searching the same bush after finding an item in it:
+1	line	Player	I have already searched this place.
+2	action	end
+1	cond	Finding nothing:
+1	line	Player	Hmmm, nothing here.
+2	action	end
+0	section	Ogre investigations
+0	section	Talking to a wizard
+1	line	Player	I've got some questions regarding the tribal ogres.
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	action	end
+0	section	Talking to the Watchtower Wizard
+1	line	Watchtower Wizard	How's it going?
+1	select	Select an Option
+1	option	I am having difficulty with the tribes.
+2	line	Player	I am having difficulty with the tribes.
+2	line	Watchtower Wizard	Talk to them face to face and don't show any fear. Make sure you are rested and well fed, and fight the good fight!
+2	action	end
+1	option	I have everything under control.
+2	line	Player	I have everything under control.
+2	line	Watchtower Wizard	Good, good! I will expect the crystals back shortly then...
+2	action	end
+1	option	I have lost something the ogres gave to me.
+2	line	Player	I have lost something the ogres gave to me.
+2	line	Watchtower Wizard	Oh, deary me! Well, there's nothing I can do about it. You will have to go back to them, I'm afraid.
+2	action	end
+0	section	Toban
+1	line	Toban	What do you want, small t'ing?
+1	select	Select an Option
+1	option	I seek entrance to the city of ogres.
+2	line	Player	I seek entrance to the city of ogres.
+2	line	Toban	Hahaha! You'll never get in there.
+2	line	Player	I'll find a way, trust me.
+2	line	Toban	Bold words for a t'ing so small.
+2	select	Select an Option
+2	option	I could do something for you...
+3	line	Player	I could do something for you...
+3	line	Toban	Hahaha! This creature t'inks it can help me! I would eat you now, but for your puny size.
+3	line	Toban	Prove to me your might: bring me the bones of an adult dragon to chew on, and I'll eat them, not you.
+3	action	end
+2	option	Die, creature!
+3	action	below
+1	option	Die, creature!
+2	line	Player	Die, creature!
+2	line	Toban	Hahaha! It t'inks it's a match for Toban, does it?
+0	section	Speaking to Toban again
+1	line	Toban	Hahaha! Small t'ing returns. Did you bring the dragon bone?
+1	cond	Without dragon bones:
+2	line	Player	I don't have what you want.
+2	line	Toban	Then you shall get nothing from me!
+2	action	end
+1	cond	With dragon bones:
+2	line	Player	When I say I will get something, I get it!
+2	line	Toban	Hahaha! Small t'ing has done it. Toban is glad - take this...
+2	box	The ogre gives you part of a statue.
+2	action	end
+0	section	Speaking to Toban after giving him dragon bones
+1	line	Toban	The small t'ing returns; what do you want now?
+1	select	Select an Option
+1	option	I seek another task.
+2	line	Player	I seek another task.
+2	line	Toban	Have you arrived for dinner? Hahaha! Be gone, small t'ing!
+2	action	end
+1	option	I can't find the relic part you gave me.
+2	cond	If the player has the relic part on them:
+3	line	Player	I can't find the relic part you gave me.
+3	line	Toban	Small t'ing, you lie to me! I always says that small t'ings are big trouble.
+3	action	end
+0	section	Toban's island
+1	cond	Looking at the broken bridge:
+2	line	Player	What's this? The bridge is out - I'll need to find another way in. I can see a ladder up there coming out of a hole; there must be a tunnel that leads here...
+2	action	end
+1	cond	Entering the tunnel:
+2	box	You enter the cave.
+2	line	Player	Wow! That tunnel went a long way.
+2	action	end
+0	section	Looting Toban's chest
+1	cond	With Toban's key:
+2	box	You find a stash of gold inside.
+2	action	end
+1	cond	Without Toban's key:
+2	box	The chest is locked.
+2	line	Player	I think I need a key of some sort.
+2	action	end
+0	section	Og
+1	line	Og	Why you here, little t'ing?
+1	select	Select an Option
+1	option	I seek entrance to the city of ogres.
+2	line	Player	I seek entrance to the city of ogres.
+2	line	Og	You got no business there!
+2	line	Og	Just a minute... Maybe if you did somet'ing for me, I might help you get in.
+2	line	Player	What can I do to help an ogre?
+2	line	Og	South-east of here der is more ogres - the name of the chieftain is Toban. He stole gold from me and I want it back!
+2	line	Og	Here is a key to the chest it's in. If you bring it here, I may reward you...
+2	action	end
+1	option	I have come to kill you.
+2	line	Player	I have come to kill you!
+2	line	Og	Kill me, eh? You shall be crushed. Guards!
+0	section	Speaking to Og again
+1	line	Og	Where my gold from dat dirty Toban?
+1	cond	If the player has the gold:
+2	line	Player	I have your gold.
+2	line	Og	Well, well, the little t'ing has got it! Take dis to show little t'ing is a friend to da ogres. Hahahahaha!
+2	box	The ogre gives you part of a horrible statue.
+2	action	end
+1	cond	Otherwise:
+1	select	Select an Option
+1	option	I have your gold.
+2	line	Player	I have your gold.
+2	line	Og	No you don't! If you want to impress me, get da gold I asked for!
+2	action	end
+1	option	I haven't got it yet.
+2	line	Player	I haven't got it yet.
+2	line	Og	Don't come back until you have it, unless you wanna be on tonight's menu!
+2	action	end
+1	option	I have lost the key!
+2	cond	If the player no longer has the key:
+3	line	Player	I have lost the key!
+3	line	Og	Stoopid! Take another and don't lose it!
+3	action	end
+2	cond	If the player has the key on them:
+3	line	Og	Oh yeah? What's dat den?
+3	line	Player	Oh yeah, I've got it right here.
+3	line	Og	Stoopid!
+3	action	end
+2	cond	If the player has the key stored somewhere:
+3	line	Player	I have lost the key!
+3	line	Og	Are you trying to trick me? I bet you got it stored somewhere. Humans always do that.
+3	action	end
+0	section	Speaking to Og after giving him Toban's gold
+1	line	Og	It's the little t'ing again.
+1	select	Select an Option
+1	option	Do you have any other tasks for me?
+2	line	Player	Do you have any other tasks for me?
+2	line	Og	No, I have no more tasks for you, now go away.
+2	action	end
+1	option	I have lost the relic part you gave me.
+2	cond	If the player has the relic part on them:
+3	line	Player	I have lost the relic part you gave me.
+3	line	Og	Are you blind? I can see you got it even from here!
+3	action	end
+2	cond	If the player lost the relic part:
+3	line	Player	I have lost the relic part you gave me.
+3	line	Og	Grrr, why do I bother? It's a good job I got another part.
+3	action	end
+2	cond	If the relic part is stored somewhere:
+3	line	Player	I have lost the relic part you gave me.
+3	line	Og	Are you trying to trick me? I bet you got it stored somewhere. Humans always do that.
+3	action	end
+0	section	Grew
+1	line	Grew	What do you want, little morsel? You would look good on my plate!
+1	line	Player	I want to enter the city of ogres.
+1	line	Grew	Hah! I should eat you instead!
+1	select	Select an Option
+1	option	Don't eat me; I can help you.
+2	line	Player	Don't eat me; I can help you.
+2	line	Grew	What can a morsel like you do for me?
+2	line	Player	I am a mighty adventurer, slayer of monsters and user of magic powers.
+2	line	Grew	Well, well, perhaps the morsel can help after all...
+2	line	Grew	If you t'ink you're tough, find Gorad, my enemy to the south-east, and knock one of his teeth out! Heheheheh!
+2	action	end
+1	option	You will have to kill me first.
+2	line	Player	You will have to kill me first.
+2	line	Grew	That's not tricky - guards!
+0	section	Speaking to Grew again
+1	line	Grew	The morsel is back. Does it have our tooth for us?
+1	cond	Without the ogre tooth:
+2	line	Player	Err, I don't have it.
+2	line	Grew	Morsel, you dare to return without the tooth! Either you are stoopid, or wants to be eaten!
+2	action	end
+1	cond	With the ogre tooth:
+2	line	Player	I have it.
+2	line	Grew	That'll annoy Gorad lots! Heheheheh! Here's a token of my gratitude: some old gem I stole from Gorad, and an old part of a statue.
+2	box	You get part of a horrible statue... and one of the crystals!
+2	action	end
+0	section	Facing Gorad
+1	line	Player	I've come to knock your teeth out!
+1	line	Gorad	You shut your face! I smack you till you dead and sorry!
+1	action	end
+1	cond	After killing Gorad:
+2	box	He's dropped a tooth. You grab it quickly.
+0	section	Talking to Gorad after getting his tooth
+1	line	Player	Hello!
+1	line	Gorad	You know who I is?
+1	select	Select an Option
+1	option	A big, ugly creature.
+2	line	Player	A big, ugly creature.
+2	line	Gorad	I hit you!
+2	box	You don't need to fight him now.
+2	action	end
+1	option	I don't know who you are.
+2	line	Player	I don't know who you are.
+2	line	Gorad	I am Gorad, and you are tiny. Go now and I won't chase you!
+2	action	end
+0	section	Attacking Gorad after getting his tooth
+1	box	You don't need to fight him now.
+0	section	Speaking to Grew after giving him Gorad's tooth
+1	line	Grew	What are you doing here, morsel?
+1	select	Select an Option
+1	option	Can I do anything else for you?
+2	line	Player	Can I do anything else for you?
+2	line	Grew	I have nothing left for you but the cooking pot!
+2	action	end
+1	option	I've lost the relic part you gave me.
+2	cond	If the player has the relic part on them:
+3	line	Player	I've lost the relic part you gave me.
+3	line	Grew	You lie to me, morsel!
+3	action	end
+2	cond	If the player doesn't have the relic part:
+3	line	Player	I've lost the relic part you gave me.
+3	line	Grew	Stupid morsel, I have another. Take it and go now before I lose my temper.
+3	action	end
+2	cond	If the relic part is stored somewhere:
+3	line	Player	I've lost the relic part you gave me.
+3	line	Grew	You probably got it stored somewhere, morsel! Humans do that a lot.
+3	action	end
+1	option	I've lost the crystal you gave me.
+2	cond	If the player has the crystal on them:
+3	line	Player	I've lost the crystal you gave me.
+3	line	Grew	How dare you lie to me morsel! I will grind you up for my bread!
+3	action	end
+2	cond	If the player doesn't have the crystal:
+3	line	Player	I've lost the crystal you gave me.
+3	line	Grew	I suppose you want another? I suppose just this once I could give you my copy...
+3	action	end
+2	cond	If the crystal is stored somewhere:
+3	line	Player	I've lost the crystal you gave me.
+3	line	Grew	You probably got it stored somewhere, morsel! Humans do that a lot.
+3	action	end
+0	section	Assembling the relic
+1	cond	Handing in relic part 1:
+2	line	Player	An ogre called Og gave me this...
+1	cond	Handing in relic part 2:
+2	line	Player	An ogre called Grew gave me this...
+1	cond	Handing in relic part 3:
+2	line	Player	An ogre called Toban gave me this...
+1	cond	The first part he takes:
+2	line	Watchtower Wizard	Ah, it's part of an old ogre statue. I'll take that off you - it might come in handy if I can fix it up.
+1	cond	Each later part, the last one included:
+2	line	Watchtower Wizard	Ah, it's more of that old ogre statue. I'll take this bit too.
+1	cond	After handing in the third relic part:
+2	line	Watchtower Wizard	It looks like you've brought me all the pieces of the relic. It is as I thought - a statue symbolising an ogre warrior of old.
+2	line	Watchtower Wizard	Well, if you ever want to make friends with an ogre, this is the item to have! Now I'll try to assemble it...
+2	box	The wizard gives you a complete statue.
+2	action	end
+0	section	Using the relic parts on each other
+1	box	The pieces look like they would fit together, but you can't work out how to do it. Maybe someone with more experience of ogres could help.
+0	section	Using a crystal on the Watchtower Wizard
+1	line	Player	Wizard, look what I have found.
+1	line	Watchtower Wizard	Well done, well done! You are clever; hold onto it until you have all four.
+1	line	Watchtower Wizard	Keep searching for the others. If you've dropped any, then you will need to go back to where you got it from.
+1	action	end
+0	section	Talking to a wizard
+1	line	Player	I've got some questions about the ogre city.
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	line	Player	I had a feeling you might say that.
+1	action	end
+0	section	Talking to the Watchtower Wizard again
+1	line	Watchtower Wizard	Ah, the warrior returns. Have you found a way into Gu'Tanoth yet?
+1	line	Player	I can't get past the guards.
+1	line	Watchtower Wizard	Well, ogres dislike others apart from their own kind. What you need is some form of proof of friendship, something to trick them into believing you're their friend.
+1	line	Watchtower Wizard	Which shouldn't be too hard, considering their intelligence.
+1	select	Select an Option
+1	option	I have lost the relic you gave me.
+2	cond	If the player has the relic in their inventory:
+3	line	Player	I have lost the relic you gave me.
+3	line	Watchtower Wizard	Have you gone mad? I can see you have it with you!
+3	action	end
+2	cond	If the player lost the relic:
+3	line	Player	I have lost the relic you gave me.
+3	line	Watchtower Wizard	What? Lost the relic? How careless! It's a good job I copied its design, then! You can take this copy instead - it's just as good.
+3	box	The wizard gives you another statue.
+3	action	end
+2	cond	If the player stored the relic somewhere:
+3	line	Player	I have lost the relic you gave me.
+3	line	Watchtower Wizard	I imagine you've stored it somewhere. Go and see where you might have put it.
+3	action	end
+1	option	I will find my way in, no problem.
+2	line	Player	I will find my way in, no problem.
+2	line	Watchtower Wizard	Yes, I'm sure you will... Good luck!
+2	action	end
+0	section	Entering Gu'Tanoth
+0	section	East gate guard
+1	cond	The first time:
+2	line	Ogre guard	Halt! You cannot pass here.
+2	line	Player	I am a friend to ogres.
+2	line	Ogre guard	You will be my friend only with gold. Bring me a bar of pure gold and I will let you pass.
+2	action	end
+1	cond	Afterwards, without a gold bar:
+2	line	Ogre guard	Creature, did you bring me the gold?
+2	line	Player	No, I don't have it.
+2	line	Ogre guard	No gold, no passage. Get out of this city!
+2	box	The guard pushes you back down the hill.
+2	action	(The ogre guard pushes you back down the hill, stunning you and dealing 3 damage)
+2	action	end
+1	cond	Afterwards, with a gold bar:
+2	line	Ogre guard	Creature, did you bring me the gold?
+2	line	Player	Here it is!
+2	line	Ogre guard	It's brought it! On your way.
+2	action	(The gate opens and the player walks through)
+2	action	end
+1	cond	After giving him the gold:
+2	line	Ogre guard	I know you, creature; you may pass.
+2	action	end
+0	section	City guard
+1	cond	If the player is not carrying the relic:
+2	line	Ogre guard	Stop, creature! Only ogres and their friends allowed in this city. Show me a sign of companionship, like a lost relic or somefing, and you may pass.
+2	line	Ogre guard	Until then, back to whence you came!
+2	box	The guard pushes you back down the hill.
+2	action	(The ogre guard pushes you back down the hill, stunning you and dealing 3 damage)
+2	action	end
+1	cond	If the player is carrying the relic:
+2	line	Ogre guard	Well, what proof of friendship did you bring?
+2	line	Player	I have a relic!
+2	line	Ogre guard	It's got the statue of Dalgroth. Welcome to Gu'Tanoth, friend of the ogres.
+2	action	end
+0	section	Talking to the city guard again
+1	line	Ogre guard	Well, what proof of friendship did you bring?
+1	cond	With a relic part:
+2	line	Player	I've got this odd piece of a relic.
+2	line	Ogre guard	What's this thing? It looks a bit like our Dalgroth... but it's broken. Go away!
+2	box	The guard pushes you back down the hill.
+2	action	end
+1	cond	With nothing:
+2	line	Player	I don't have anything.
+2	line	Ogre guard	Why have you returned with no proof of companionship? Back to whence you came!
+2	box	The guard pushes you back down the hill.
+2	action	end
+0	section	Using another item on the city guard
+1	line	Ogre guard	That is of no use to me, creature!
+1	action	end
+0	section	Talking to the city guard after giving him the relic
+1	line	Ogre guard	It's the small creature; you may pass.
+1	action	end
+0	section	Talking to the wizards after gaining access to the city
+1	line	Player	I've made it into the ogre city!
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	line	Player	It's like talking to a broken record.
+1	action	end
+0	section	Talking to the Watchtower Wizard after gaining access to the city
+1	line	Watchtower Wizard	How are you doing with the ogres?
+1	line	Player	I have gained entry to the city!
+1	line	Watchtower Wizard	Already? Excellent!
+1	line	Player	I still can't navigate the skavid caves.
+1	line	Watchtower Wizard	You need a map of some kind... I bet one of the ogres has one.
+1	line	Player	Okay thanks, I'll go and find out.
+1	action	end
+0	section	Ogre guard
+1	line	Ogre guard	Oi! Where do you think you are going? You are for the cooking pot!
+1	select	Select an Option
+1	option	But I am a friend to ogres...
+2	line	Player	But I am a friend to ogres...
+2	line	Ogre guard	Prove it to us with a gift. Get us something from the market.
+2	line	Player	Like what?
+2	line	Ogre guard	Surprise us...
+2	action	end
+1	option	Not if I can help it.
+2	line	Player	Not if I can help it.
+2	line	Ogre guard	You can help by being tonight's dinner, or you can go away. Now, which shall it be?
+2	select	Select an Option
+2	option	Okay, okay, I'm going.
+3	line	Player	Okay, okay, I'm going.
+3	line	Ogre guard	Back to whence you came!
+2	option	I tire of ogres; prepare to die!
+3	line	Ogre guard	Grrrrr!
+0	section	Talking to the ogre guard again
+1	cond	Without an ogre rockcake:
+2	line	Player	Um... is there anything in my backpack that you'd want?
+2	line	Ogre guard	You didn't bring anything! Shove off!
+2	action	end
+1	cond	With an ogre rockcake:
+2	line	Ogre guard	Stop, creature! Oh it's you. Well, what have you got for us, then?
+2	line	Player	How about this?
+2	box	You offer the guard a rock cake.
+2	line	Ogre guard	Well, well, look at this. My favourite: rock cake! Okay, we will let it through.
+2	action	end
+1	cond	After giving him the rock cake:
+2	line	Ogre guard	It's that creature again. This time we will let it go.
+2	action	end
+0	section	Talking to the southern ogre guard
+1	line	Ogre guard	What do you want, small thing? Leave us alone!
+1	action	end
+0	section	Crossing the bridge
+1	line	Ogre guard	Oi! Little thing. If you want to cross here, you must pay me 20 gold pieces first!
+1	line	Player	You want me to give you 20 gold pieces to let me jump off a bridge?
+1	line	Ogre guard	That's what I said, like it or lump it.
+1	select	Select an Option
+1	option	Okay, I'll pay it.
+2	cond	If the player doesn't have 20 coins:
+3	line	Player	Okay, I'll pay it.
+3	line	Ogre guard	A wise choice, little thing.
+3	line	Ogre guard	And where is your money? Grrrr! Do you want to get hurt or something?
+3	action	end
+2	cond	If the player has 20 coins:
+3	line	Player	Okay, I'll pay it.
+3	line	Ogre guard	A wise choice, little thing.
+3	line	Player	Phew! I just made it.
+3	action	end
+1	option	Forget it, I'm not paying.
+2	line	Player	Forget it, I'm not paying.
+2	line	Ogre guard	In that case you're not crossing.
+2	action	end
+0	section	Seeking passage
+1	line	City guard	Grrrr, what business you got here?
+1	line	Player	I am on an errand.
+1	line	City guard	So what you want with me?
+1	option	I am an ogre killer come to destroy you!
+2	line	Player	I am an ogre killer come to destroy you!
+2	line	City guard	I would like to see you try!
+2	box	You are under attack!
+2	action	end
+1	option	I seek passage into the skavid caves
+2	line	Player	I seek passage into the skavid caves.
+2	line	City guard	Is that so... You humour me small t'ing. Answer this riddle and I will help you...
+2	line	City guard	I want you to bring me an item: I will give you all the letters of this item, you work out what it is...
+2	line	City guard	My first is in days, but not in years, My second is in evil, and also in tears, My third is in all, but not in none, My fourth is in hot, but not in sun.
+2	line	City guard	My fifth is in heaven, and also in hate, My sixth is in fearing, but not in fate, My seventh is in plush, but not in place.
+2	line	City guard	My eighth is in nine, but not in eight, My last is in earth, and also in great.
+2	line	City guard	My whole is an object, that magic will make. It brings wrack and ruin to all in its wake... Now how long, I wonder, will this riddle take?
+2	action	end
+0	section	Talking to the city guard again
+1	line	City guard	Hur, hur, hur... I see you haven't worked it out yet. Keep trying, imp.
+1	select	Select an Option
+1	option	Can I hear the riddle again?
+2	line	Player	Can I hear the riddle again?
+2	line	City guard	I want you to bring me an item: I will give you all the letters of this item, you work out what it is...
+2	line	City guard	My first is in days, but not in years, My second is in evil, and also in tears, My third is in all, but not in none, My fourth is in hot, but not in sun.
+2	line	City guard	My fifth is in heaven, and also in hate, My sixth is in fearing, but not in fate, My seventh is in plush, but not in place.
+2	line	City guard	My eighth is in nine, but not in eight, My last is in earth, and also in great.
+2	line	City guard	My whole is an object, that magic will make. It brings wrack and ruin to all in its wake... Now how long, I wonder, will this riddle take?
+2	action	end
+1	option	I'll be back!
+2	line	Player	I'll be back!
+2	action	end
+0	section	Using the wrong item on the guard
+1	line	City guard	That is not what I want, imp!
+1	action	end
+0	section	Using the death rune on the guard (or talking to him with it)
+1	line	Player	I worked it out!
+1	cond	With no space for the map:
+2	line	City guard	Hur, hur, hur. Well done imp, but you haven't got anywhere for me to put the reward, have you?
+2	line	City guard	Come back again when you have and I might reward you.
+2	action	end
+1	line	City guard	Hur, hur. The imp has done it! This is what you be needing...
+1	box	The guard takes your death rune and gives you a map.
+1	action	end
+0	section	Talking to him after having given him the rune
+1	line	City guard	What is it?
+1	select	Select an Option
+1	option	Do you have any other riddles for me?
+2	line	Player	Do you have any other riddles for me?
+2	line	City guard	Yes, what looks good on a plate with salad?
+2	select	Select an Option
+2	option	I don't know...
+3	line	Player	I don't know...
+3	line	City guard	You! Now go, and bother me no more.)
+3	action	end
+2	option	A nice pizza?
+3	line	Player	A nice pizza?
+3	line	City guard	Grr! Think you are a comedian, eh? Get lost!
+3	action	end
+1	option	I have lost the map you gave me.
+2	line	Player	I have lost the map you gave me.
+2	cond	If the player does not have a Skavid map in their inventory or bank:
+3	line	City guard	What's the point? Take this one and go away!
+3	box	The guard gives you another map.
+3	action	
+3	action	end
+2	cond	If the player has a Skavid map in their bank:
+3	line	City guard	You imps always store things in places and forget. Go look for it.
+3	action	end
+2	cond	If the player has a Skavid map in their inventory:
+3	line	City guard	Are you blind? What is that you are carrying?
+3	line	Player	Oh, that map...
+3	action	end
+0	section	Crossing back across the bridge
+1	line	Player	I'm glad that was easier on the way back!
+1	action	end
+0	section	Skavid search
+0	section	Talking to the wizards after getting the skavid map
+1	line	Player	I've got some questions about the skavid caves.
+1	line	Wizard	Oh, really? I'm quite an expert on skavids.
+1	line	Player	Wonderful!
+1	line	Wizard	Only joking!
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	line	Player	Okay, okay.
+1	action	end
+0	section	Talking to the Watchtower Wizard after getting the skavid map
+1	line	Watchtower Wizard	How is the quest going?
+1	line	Player	I have worked out the guard's puzzle.
+1	line	Watchtower Wizard	My, my. A wordsmith as well as a hero.
+1	select	Select an Option
+1	option	I am still trying to navigate the skavid caves.
+2	line	Player	I am still trying to navigate the skavid caves.
+2	line	Watchtower Wizard	Take some illumination with you or else it will be dark.
+2	action	end
+1	option	I am trying to get into the shamans' cave.
+2	line	Player	I am trying to get into the shamans' cave.
+2	line	Watchtower Wizard	Yes, it will be well guarded. Hmmm, let me see...
+2	line	Watchtower Wizard	Ah yes, I gather some ogres are allergic to certain herbs. Now what was it? It had white berries and blue leaves....
+2	line	Watchtower Wizard	Cave nightshade, that's it!
+2	line	Watchtower Wizard	You should try looking through some of the caves.
+2	line	Player	Alright!
+2	line	Watchtower Wizard	And don't forget to look out for the dragons!
+2	line	Player	The WHAT?
+2	line	Watchtower Wizard	Dragons.
+2	line	Watchtower Wizard	Didn't you know that the ogres keep blue dragons as pets and for magical ingredients?
+2	line	Watchtower Wizard	Well, regardless, I'm sure a bold, brave adventurer such as yourself won't have any problems.
+2	line	Player	Great...
+2	action	end
+1	option	It is going well.
+2	line	Player	It is going well.
+2	line	Watchtower Wizard	That's good to hear. We are much closer to fixing the tower now.
+2	action	end
+0	section	Entering the caves
+1	cond	Without the skavid map:
+2	box	There's no way I can find my way through without a map of some kind.
+2	action	(The player comes out of a different cave)
+1	cond	Without a light source or a tinderbox:
+2	box	The cave is very dark and you don't have a light source or a tinderbox. Are you sure you want to go down?
+2	select	Select an Option
+2	option	I'm not scared of the dark!
+3	box	You enter the cave...
+2	option	I am scared of the dark.
+3	box	You should find a light source and a tinderbox before going down there.
+1	cond	With a light source but no tinderbox:
+2	box	If your light source goes out down there you'll be in trouble! Are you sure you want to go in without a tinderbox?
+2	select	Select an Option
+2	option	I'll be fine without a tinderbox.
+2	option	I'll come back with a tinderbox.
+0	section	Scared skavid
+1	line	Scared skavid	Tanath cur, tanath cur!
+1	line	Player	???
+1	line	Scared skavid	Don't hurt me, don't hurt me!
+1	line	Player	Stop moaning, creature. I know about you skavids - you serve those monsters, the ogres.
+1	line	Scared skavid	Please don't touch me!
+1	line	Player	You have something that belongs to me...
+1	line	Scared skavid	I don't have anything; please believe me!
+1	line	Player	Somehow, I find your words hard to believe.
+1	line	Scared skavid	I'm begging your kindness; I don't have it!
+1	select	Select an Option
+1	option	I don't believe you, hand it over!
+2	line	Player	I don't believe you, hand it over!
+2	line	Scared skavid	Ahhhhh, help!
+2	line	Player	Oh great, I'm not getting anywhere.
+2	action	end
+1	option	Okay, okay, I'm not going to hurt you.
+2	line	Player	Okay, okay, I'm not going to hurt you.
+2	line	Scared skavid	Thank you, kind one.
+2	line	Scared skavid	I'll tells you where that things you wants is. The mad skavids have it in their cave in the city.
+2	line	Scared skavid	You will have to learn skavid, otherwise they will not talks to you. Here, I'll tell you what you need to know...
+2	line	Ogre shaman	You shut your mouth! Don't tell them anything!
+2	line	Scared skavid	Tanath cur, tanath cur!
+2	line	Scared skavid	I cannot help you, but the others can. Let me tells you the most common skavid words: Ar, nod, gor, ig and cur. Those will gets you started.
+2	action	end
+0	section	Talking to the scared skavid again
+1	line	Scared skavid	Master, how are you doing learning our language?
+1	line	Player	I am studying the speech of your kind...
+1	action	end
+0	section	Learning skavid
+1	cond	Before the scared skavid has taught the player any words:
+2	line	Skavid	Bidith tanath...
+2	line	Player	???
+2	box	The skavid is trying to communicate...
+2	box	You don't know any skavid words yet!
+2	action	end
+0	section	Skavid 1
+1	line	Skavid	Bidith tanath...
+1	box	The skavid is trying to communicate...
+1	select	Select an Option
+1	option	Cur.
+2	line	Player	Cur.
+2	box	It seems the skavid understood you.
+2	line	Skavid	Cur, cur tanath!
+2	action	end
+1	option	Ar.
+2	line	Player	Ar.
+2	line	Skavid	???
+2	box	It seems that was the wrong reply.
+2	line	Skavid	Bidith tanath...
+2	select	Select an Option
+2	action	initial
+1	option	Ig.
+1	option	Nod.
+1	option	Gor.
+0	section	Skavid 2
+1	line	Skavid	Cur bidith...
+1	select	Select an Option
+1	option	Cur.
+1	option	Ar.
+1	option	Ig.
+2	line	Player	Ig.
+2	line	Skavid	Ig! Bidith ig!
+2	action	end
+1	option	Nod.
+1	option	Gor.
+0	section	Talking to a skavid again
+1	line	Skavid	[Cur tanath!/Gor nod!/...]
+1	box	You have already talked to this skavid.
+1	action	end
+0	section	Skavid 3
+1	line	Skavid	Tanath gor...
+1	select	Select an Option
+1	option	Cur.
+1	option	Ar.
+1	option	Ig.
+1	option	Nod.
+2	line	Player	Nod.
+2	line	Skavid	Nod, gor nod!
+2	action	end
+1	option	Gor.
+0	section	Talking to the scared skavid after learning skavid
+1	line	Scared skavid	Master, my kinsmen tell me you have learned skavid. You should speak to the mad ones in their cave.
+1	action	end
+0	section	The mad skavid
+1	line	Mad skavid	Gor nod...
+1	select	Select an Option
+1	option	Cur.
+1	option	Ar.
+1	option	Bidith.
+1	option	Tanath.
+2	line	Player	Tanath.
+2	line	Mad skavid	Hehe! So you speak a little skavid, eh? I'll give you a prize for that!
+2	line	Mad skavid	The others are with the shamans in the enclave - you'll never get them back. They hid one in the sacred rock! Nothing can touch it now.
+2	box	The skavid gives you a large crystal.
+2	action	end
+1	option	Gor.
+0	section	Talking to the mad skavid again
+1	line	Mad skavid	What, you gots the crystal...
+1	select	Select an Option
+1	option	But I've lost it!
+2	cond	If the player lost the crystal:
+3	line	Player	But I've lost it!
+3	line	Mad skavid	Alright, take this one then...
+3	action	end
+2	cond	If the player has the crystal:
+3	line	Player	But I've lost it!
+3	line	Mad skavid	I haves no more for you.
+3	action	end
+2	cond	If the crystal is stored somewhere:
+3	line	Mad skavid	You stored it somewhere maybe. Go away!
+3	action	end
+1	option	Oh, okay then.
+2	line	Player	Oh, okay then.
+2	line	Mad skavid	You be on your way, then.
+2	action	end
+0	section	Talking to the wizards after learning to navigate the skavid caves
+1	line	Player	I have gained access to the skavid caves.
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	line	Player	'You'll have to speak with the Watchtower Wizard about that.'
+1	line	Player	I'd get more help out of a-
+1	line	Wizard	What was that?
+1	line	Player	Nothing.
+1	action	end
+0	section	Talking to the Watchtower Wizard after learning to navigate the skavid caves
+1	line	Watchtower Wizard	Hello again. How do you fare?
+1	select	Select an Option
+1	option	It goes well. I can now navigate the skavid caves.
+2	line	Player	It goes well. I can now navigate the skavid caves.
+2	line	Watchtower Wizard	That is good news. Let me know if you find anything of interest.
+2	action	end
+1	option	I had a crystal but I lost it!
+2	line	Player	I had a crystal, but I lost it!
+2	line	Watchtower Wizard	Oh no. Well, you had better go back there, then!
+2	action	end
+1	option	I am now ready for the shamans.
+2	line	Player	I am now ready for the shamans.
+2	line	Watchtower Wizard	Remember all I told you. You must distract the guard somehow. Cave nightshade is what you are looking for - try searching the skavid caves for it.
+2	line	Watchtower Wizard	This herb is very poisonous, however, so handle it with care. Also, be on your guard in that cave. Who knows what monsters may be in that awful place...
+2	line	Player	Alright!
+2	line	Watchtower Wizard	And don't forget to look out for the dragons!
+2	line	Player	The WHAT?
+2	line	Watchtower Wizard	Dragons.
+2	line	Watchtower Wizard	Didn't you know that the ogres keep blue dragons as pets and for magical ingredients
+2	line	Watchtower Wizard	Well, regardless, I'm sure a bold, brave adventurer such as yourself won't have any problems.
+2	line	Player	Great...
+2	action	end
+0	section	Entering the Enclave
+0	section	Talking to an enclave guard before getting the mad skavid's crystal
+1	line	Enclave guard	Stop bothering me, minion!
+1	action	end
+0	section	Attempting to enter the Ogre Enclave before distracting the guards
+1	line	Enclave guard	No you don't!
+0	section	Talking to an enclave guard
+1	line	Enclave guard	What do you want?
+1	select	Select an option
+1	option	I want to go in there.
+2	line	Player	I want to go in there.
+2	line	Enclave guard	Oh you do, do you? How about 'no'?
+1	option	I want to rid the world of ogres!
+2	line	Player	I want to rid the world of ogres.
+2	line	Enclave guard	You dare mock me, creature!
+0	section	Using cave nightshade on an enclave guard
+1	line	Enclave guard	What is this? Arrrrgh! I cannot stand this plant! Argh, it burns! It burns!
+1	select	You can run past, but keep in mind that a dangerous area follows!
+1	option	I'm not scared
+2	box	You run past the guard while he's busy.
+1	option	I think I'll stay here
+2	action	end
+0	section	Inside the enclave
+1	box	Meanwhile, in the Shaman's enclave...
+1	line	Ogre shaman	Hur, hut, hur. Stoopid dragon!
+1	line	Ogre shaman	Take dis!
+1	line	Ogre shaman	Hur, hur, hur, hur!
+1	action	end
+0	section	Talking to an ogre chieftain
+1	line	Ogre chieftain	Grrr! Go away from me, vermin!
+1	action	end
+0	section	Talking to an ogre shaman
+1	box	A magic blast comes from the shaman. You are badly injured by the blast.
+1	line	Ogre shaman	Grr! How dare you talk to us. We will destroy you!
+1	action	end
+0	section	Attacking an ogre shaman
+1	box	A magic blast comes from the shaman. You are badly injured by the blast.
+1	line	Ogre shaman	You fool! Your primitive weapons are no match for our superior magics!
+0	section	The Rock of Dalgroth before killing the shamans
+1	cond	Prospecting:
+2	box	You examine the rock for ores...
+2	box	The rock contains a crystal!
+1	cond	Mining:
+2	line	Player	I can't touch it... Perhaps it is linked with the shamans in some strange way?
+2	action	end
+0	section	Talking to the wizards after discovering the shamans are invincible
+1	line	Player	The shamans are too powerful for me to attack!
+1	line	Wizard	You'll have to speak with the Watchtower Wizard about that.
+1	action	end
+0	section	Talking to the Watchtower Wizard after discovering the shamans are invincible
+1	line	Player	I have found the cave of ogre shaman, but I cannot touch them!
+1	line	Watchtower Wizard	That is because of their magical powers. We must fight them with their own methods; do not speak to them! I suggest a potion...
+1	line	Watchtower Wizard	Collect a guam leaf, add jangerberries, then mix in some ground bat bones. You must return it to me before you use it, so that I can empower it with my magic.
+1	line	Watchtower Wizard	Be very careful how you mix it as it is extremely volatile. Mixing ingredients of this type in the wrong order can cause explosions!
+1	line	Watchtower Wizard	I hope you've been brushing up Herblore and Magic? I must warn you, only experienced magicians can use the potion. It is too dangerous in the hands of the unskilled.
+1	action	end
+0	section	Talking to the Watchtower Wizard again
+1	line	Watchtower Wizard	Any more news?
+1	select	Select an Option
+1	option	Can you tell me again what I need for the potion?
+2	line	Player	Can you tell me again what I need for the potion?
+2	line	Watchtower Wizard	Yes indeed, let me see, what was it again...
+2	line	Watchtower Wizard	You will need a guam leaf. That goes into the mix first.
+2	line	Player	What is the next ingredient?
+2	line	Watchtower Wizard	You need some jangerberries.
+2	line	Player	I have some of those.
+2	line	Watchtower Wizard	Wonderful!
+2	line	Watchtower Wizard	You will need to add those after the guam leaf has gone in, but before the final ingredient.
+2	line	Player	What is the final ingredient?
+2	line	Watchtower Wizard	The final ingredient is ground bat bones.
+2	line	Player	I have some bat bones; how can I grind them?
+2	line	Watchtower Wizard	A pestle and mortar will more than do the trick.
+2	line	Watchtower Wizard	When you have mixed the potion correctly, then I can empower the potion with magic and the ogre shamans can be destroyed.
+2	action	end
+1	option	No, I'm still working on it.
+2	line	Player	No, I'm still working on it.
+2	action	end
+0	section	Mixing the potion
+1	cond	Jangerberries into a guam potion (unf):
+2	box	You mix the jangerberries into your potion.
+1	cond	Ground bat bones into the guam and jangerberry potion:
+2	box	You mix the ground bones into the liquid.
+2	box	You produce a strong potion.
+1	cond	Ground bat bones into a guam potion (unf):
+2	box	You mix the ground bones into the liquid.
+2	box	You mixed the ingredients incorrectly and the mixture exploded.
+1	cond	Ground bat bones into a vial of water:
+2	box	You mix the ground bones into the water.
+2	line	Player	Oh dear, the mixture has evaporated.
+0	section	Talking to the wizards after learning the potion recipe
+1	line	Player	Any chance of advice about this potion?
+1	line	Wizard	Nope. Try the Watchtower Wizard.
+1	action	end
+0	section	Talking to the Watchtower Wizard after making the potion
+1	line	Watchtower Wizard	Any more news?
+1	line	Player	I have made the potion.
+1	line	Watchtower Wizard	That's great news; let me infuse it with magic...
+1	line	Watchtower Wizard	Here it is - a dangerous substance. I must remind you that this potion can only be used if your Magic level is high enough.
+1	line	Player	How high is high enough?
+1	line	Watchtower Wizard	Well, if you can cast Bones to Bananas, or any spells beyond that, you should be alright.
+1	action	end
+0	section	Killing the ogre shamans
+1	cond	After killing one shaman:
+2	line	Player	That's one destroyed...
+1	cond	After killing two shamans:
+2	line	Player	That's the second one gone...
+1	cond	After killing three shamans:
+2	line	Player	That's the third one dealt with...
+1	cond	After killing four shamans:
+2	line	Player	There goes the fourth...
+1	cond	After killing five shamans:
+2	line	Player	That's five! Only one more left now...
+1	cond	After killing the last shaman:
+2	box	A crystal drops from the hand of the disappearing ogre. You snatch it up quickly.
+1	cond	Searching the shaman robe before killing all the shamans:
+2	box	You search the robe, but find nothing. Maybe you need to defeat the shamans first.
+1	cond	Searching the shaman robe while already having the crystal:
+2	box	You search the robe, but find nothing. You already have the shamans' crystal.
+1	cond	Searching the shaman robe while not having the crystal:
+2	box	You search the robe and find a crystal!
+0	section	Mining the Rock of Dalgroth
+1	box	A crack appears in the rock and you prise a crystal out.
+0	section	Prospecting the Rock of Dalgroth after mining it
+1	box	You examine the rock for ores...
+1	box	The rock has a gap in which a crystal used to sit.
+0	section	Attempting to mine the Rock of Dalgroth again
+1	line	Player	I already have this crystal. There is no benefit to getting another.
+1	action	end
+0	section	Talking to the Watchtower Wizard before killing the shamans
+1	line	Watchtower Wizard	Hello again. Did the potion work?
+1	line	Player	I am still working to rid us of the shamans...
+1	line	Watchtower Wizard	May you have success in your task.
+1	action	end
+0	section	Returning to the Watchtower Wizard after killing the shamans without mining the rock
+1	line	Watchtower Wizard	Hello again. Did the potion work?
+1	line	Player	Indeed it did! I wiped out those ogre shamans!
+1	select	Select an Option
+1	option	I had another crystal but I lost it.
+2	line	Player	I had another crystal but I lost it.
+2	line	Watchtower Wizard	Oh, really? If you got it from someone, maybe they'll have found it again. Otherwise, go and search the place where you got it in the first place.
+2	action	end
+1	option	I am looking for another crystal.
+2	line	Player	I am looking for another crystal.
+2	line	Watchtower Wizard	I am sure the cave holds the final crystal. Look for the source of the shamans' power.
+2	line	Player	Okay, I will go and have a look.
+2	action	end
+1	option	I have found another crystal!
+2	line	Player	I have found another crystal!
+2	line	Watchtower Wizard	Good, hand it over to me.
+2	action	end
+0	section	Reviving the Watchtower
+0	section	Talking to a wizard
+1	line	Player	Any chance of a hand?
+1	line	Wizard	Well, you could ask the Watchtower Wizard for one.
+1	action	end
+0	section	Talking to the Watchtower Wizard with all the crystals
+1	line	Watchtower Wizard	Hello again. Did the potion work?
+1	line	Player	Indeed it did! I wiped out those ogre shamans!
+1	line	Watchtower Wizard	Magnificent! At last you've brought all the crystals.
+1	line	Watchtower Wizard	Now the shield generator can be activated and, once again, Yanille will be safe from the threat of the ogres.
+1	line	Watchtower Wizard	Put the crystals on the pillars there and throw the lever to activate the system.
+1	action	end
+0	section	Talking to the Watchtower Wizard again
+1	line	Watchtower Wizard	The system is not activated yet. Throw the switch to start it.
+1	action	end
+0	section	Talking to a wizard before activating the generator
+1	line	Player	What should I do now?
+1	line	Wizard	You will need to speak to the Watchtower Wizard.
+1	line	Wizard	Seriously, he's the one in charge here.
+1	action	end
+0	section	Pulling the lever before placing the crystals
+1	box	You need to put the crystals on the correct pillars before the shield will work. All that happens now is a rather unsatisfying clunking noise.
+0	section	Placing a crystal on the wrong pillar
+1	box	That is not the right crystal for this pillar; try another.
+0	section	Activating the shield generator
+1	box	The magic force field activates.
+1	action	
+1	line	Watchtower Wizard	Marvellous! It works! The town will now be safe. Take these coins as a token of my gratitude. Also, let me improve your Magic level.
+1	line	Watchtower Wizard	I've given you a special scroll too - it's a new spell. Read the scroll and you will be able to teleport yourself here.
+1	box	Congratulations, you've completed a quest: Watchtower
+0	section	Post-quest
+0	section	Talking to the Watchtower Wizard
+1	line	Watchtower Wizard	Greetings, friend. I trust all is well with you? Yanille is safe at last!
+1	select	Select an Option
+1	cond	If the player has read the spell scroll:
+1	option	Do you have any more quests for me?
+1	line	Player	Do you have any more quests for me?
+2	line	Watchtower wizard	More quests? No, indeed, adventurer. You have done us a great service, already.
+2	action	end
+1	cond	If the player has not read the spell scroll:
+1	option	I lost the scroll you gave me.
+2	line	Player	I lost the scroll you gave me.
+2	cond	If the player lost the spell scroll:
+3	line	Watchtower Wizard	Never mind, have another...
+3	action	
+3	action	end
+2	cond	If the player has the spell scroll
+3	line	Watchtower Wizard	Ho, ho, ho! A comedian to the finish. There it is, in your backpack!
+3	action	end
+1	option	That's okay.
+2	line	Player	That's okay.
+2	line	Watchtower Wizard	We are always in your debt; do come and visit us again.
+2	action	end
+0	section	Talking to a wizard
+1	line	Wizard	All's well that ends well.
+1	action	end
+0	section	Reading the spell scroll
+1	box	You memorise what is written on the scroll.
+1	box	You can now cast the Watchtower teleport spell... ...Provided you have the required runes and magic level.
+1	box	The scroll crumbles to dust.

@@ -1,0 +1,219 @@
+# Generated from the OSRS Wiki page "What Lies Below/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Rat Burgiss</col> south of <col=800000>Varrock</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 35 Runecraft
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Rat Burgiss</col> at the crossing south of <col=800000>Varrock</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<col=000080>Kill 5 <col=800000>Outlaw</col>s just west of the <col=800000>Grand Exchange</col> (from Grand Exchange, use the <col=800000>tunnel</col> and walk south) and collect 5 <col=800000>rat's paper</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<col=000080>Fill the folder with 5 papers.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<col=000080>Return the folder to <col=800000>Rat Burgiss</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<col=000080>Talk to <col=800000>Surok Magis</col> in the Varrock library (the northern-most room in Varrock Palace).</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<col=000080>Read <col=800000>Sin'keth's diary</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<col=000080>Enter the <col=800000>Chaos Altar</col> and use the wand on the altar with 15 chaos runes in your inventory.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<col=000080>Return to Surok Magis with the infused wand and an empty bowl.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+line	
+line	<col=000080>Talk to Rat Burgiss.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+line	
+line	<str>Talk to Rat Burgiss.</str>
+line	
+line	<col=000080>Talk to <col=800000>Zaff</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+line	
+line	<str>Talk to Rat Burgiss.</str>
+line	
+line	<str>Talk to Zaff.</str>
+line	
+line	<col=000080>Talk to Surok Magis.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+line	
+line	<str>Talk to Rat Burgiss.</str>
+line	
+line	<str>Talk to Zaff.</str>
+line	
+line	<str>Talk to Surok Magis.</str>
+line	
+line	<col=000080>Bring <col=800000>King Roald</col> to low health (2 hitpoints or less) then operate the <col=800000>Beacon ring</col>. Your chatbox will show "Now would be a good time to summon Zaff!" when the ring is ready to be operated. (Instanced)</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+line	
+line	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+line	
+line	<str>Fill the folder with 5 papers.</str>
+line	
+line	<str>Return the folder to Rat Burgiss.</str>
+line	
+line	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+line	
+line	<str>Read Sin'keth's diary.</str>
+line	
+line	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+line	
+line	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+line	
+line	<str>Talk to Rat Burgiss.</str>
+line	
+line	<str>Talk to Zaff.</str>
+line	
+line	<str>Talk to Surok Magis.</str>
+line	
+line	<str>Bring King Roald to low health (2 hitpoints or less) then operate the Beacon ring. Your chatbox will show "Now would be a good time to summon Zaff!" when the ring is ready to be operated. (Instanced)</str>
+line	
+line	<col=000080>Talk to Rat Burgiss.</col>
+done	<str>Talk to Rat Burgiss at the crossing south of Varrock.</str>
+done	
+done	<str>Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper.</str>
+done	
+done	<str>Fill the folder with 5 papers.</str>
+done	
+done	<str>Return the folder to Rat Burgiss.</str>
+done	
+done	<str>Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).</str>
+done	
+done	<str>Read Sin'keth's diary.</str>
+done	
+done	<str>Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory.</str>
+done	
+done	<str>Return to Surok Magis with the infused wand and an empty bowl.</str>
+done	
+done	<str>Talk to Rat Burgiss.</str>
+done	
+done	<str>Talk to Zaff.</str>
+done	
+done	<str>Talk to Surok Magis.</str>
+done	
+done	<str>Bring King Roald to low health (2 hitpoints or less) then operate the Beacon ring. Your chatbox will show "Now would be a good time to summon Zaff!" when the ring is ready to be operated. (Instanced)</str>
+done	
+done	<str>Talk to Rat Burgiss.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

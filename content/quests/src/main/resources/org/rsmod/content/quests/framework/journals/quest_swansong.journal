@@ -1,0 +1,615 @@
+# Generated from the OSRS Wiki page "Swan Song/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Herman Caranos</col> in the <col=800000>Piscatoris Fishing Colony</col>, accessed via a boat trip from the river to the west of the <col=800000>Tree Gnome Stronghold</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	100 Quest Points
+req	Level 66 Magic
+req	Level 62 Cooking
+req	Level 62 Fishing
+req	Level 45 Smithing
+req	Level 42 Firemaking
+req	Level 40 Crafting
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Herman Caranos</col> at the <col=800000>Piscatoris Fishing Colony</col> (north of <col=800000>Fairy ring</col> AKQ); <col=800000>cutscene</col> is optional.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Wise Old Man</col> in <col=800000>Draynor Village</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<col=000080>Return to the Colony and talk to the Wise Old Man.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<col=000080>Kill the level 79 <col=800000>Sea Trolls</col> and enter the Colony (collect 7 of their bones if needed).</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<col=000080>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<col=000080>Talk to <col=800000>Franklin Caranos</col> near the entrance.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<col=000080>Use a log on the firebox (not the furnace) and light it in the building with the <col=800000>Furnace symbol</col>. (Franklin will give you a tinderbox if you speak to him again.)</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<col=000080>Use each of the five <col=800000>iron bar</col>s on the Metal Press.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<col=000080>Use <col=800000>iron sheet</col>s to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<col=000080>Talk to <col=800000>Arnold Lydspor</col> in the bank. (He will give you a Small fishing net if you do not already have one.)</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<col=000080>Fish 5 <col=800000>fresh monkfish</col> at the <col=800000>fishing spot</col> to the north-west, you may need a few more if you burn some while cooking.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<col=000080>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of <col=800000>cooking gauntlets</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<col=000080>Talk to Arnold.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<col=000080>Talk to Franklin.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<col=000080>Talk to the Wise Old Man and Herman in the far eastern building.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<col=000080>Talk to <col=800000>Wizard Frumscone</col> in the basement of the <col=800000>Wizards' Guild</col> in Yanille.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<col=000080>Talk to Malignius Mortifer south of <col=800000>Falador</col>. He will give you a brown apron in order to be allowed entry to the <col=800000>Crafting Guild</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Master Crafter</col> with dreadlocks in the Crafting Guild on the east side.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+line	
+line	<col=000080>Use Pot and Pot Lid together to make Airtight Pot.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+line	
+line	<str>Use Pot and Pot Lid together to make Airtight Pot.</str>
+line	
+line	<col=000080>Talk to Malignius Mortifer to teleport back to the Fishing Colony.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+line	
+line	<str>Use Pot and Pot Lid together to make Airtight Pot.</str>
+line	
+line	<str>Talk to Malignius Mortifer to teleport back to the Fishing Colony.</str>
+line	
+line	<col=000080>Talk to Herman to begin the fight.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+line	
+line	<str>Use Pot and Pot Lid together to make Airtight Pot.</str>
+line	
+line	<str>Talk to Malignius Mortifer to teleport back to the Fishing Colony.</str>
+line	
+line	<str>Talk to Herman to begin the fight.</str>
+line	
+line	<col=000080>Kill the <col=800000>Sea Troll Queen</col>. (Use Protect from Magic in Melee range, and use Ranged or Melee to kill her)</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+line	
+line	<str>Talk to the Wise Old Man in Draynor Village.</str>
+line	
+line	<str>Return to the Colony and talk to the Wise Old Man.</str>
+line	
+line	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+line	
+line	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+line	
+line	<str>Talk to Franklin Caranos near the entrance.</str>
+line	
+line	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+line	
+line	<str>Use each of the five iron bars on the Metal Press.</str>
+line	
+line	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+line	
+line	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+line	
+line	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+line	
+line	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+line	
+line	<str>Talk to Arnold.</str>
+line	
+line	<str>Talk to Franklin.</str>
+line	
+line	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+line	
+line	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+line	
+line	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+line	
+line	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+line	
+line	<str>Use Pot and Pot Lid together to make Airtight Pot.</str>
+line	
+line	<str>Talk to Malignius Mortifer to teleport back to the Fishing Colony.</str>
+line	
+line	<str>Talk to Herman to begin the fight.</str>
+line	
+line	<str>Kill the Sea Troll Queen. (Use Protect from Magic in Melee range, and use Ranged or Melee to kill her)</str>
+line	
+line	<col=000080>Talk to Herman.</col>
+done	<str>Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.</str>
+done	
+done	<str>Talk to the Wise Old Man in Draynor Village.</str>
+done	
+done	<str>Return to the Colony and talk to the Wise Old Man.</str>
+done	
+done	<str>Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed).</str>
+done	
+done	<str>Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.</str>
+done	
+done	<str>Talk to Franklin Caranos near the entrance.</str>
+done	
+done	<str>Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)</str>
+done	
+done	<str>Use each of the five iron bars on the Metal Press.</str>
+done	
+done	<str>Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)</str>
+done	
+done	<str>Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)</str>
+done	
+done	<str>Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking.</str>
+done	
+done	<str>Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets.</str>
+done	
+done	<str>Talk to Arnold.</str>
+done	
+done	<str>Talk to Franklin.</str>
+done	
+done	<str>Talk to the Wise Old Man and Herman in the far eastern building.</str>
+done	
+done	<str>Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.</str>
+done	
+done	<str>Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.</str>
+done	
+done	<str>Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side.</str>
+done	
+done	<str>Use Pot and Pot Lid together to make Airtight Pot.</str>
+done	
+done	<str>Talk to Malignius Mortifer to teleport back to the Fishing Colony.</str>
+done	
+done	<str>Talk to Herman to begin the fight.</str>
+done	
+done	<str>Kill the Sea Troll Queen. (Use Protect from Magic in Melee range, and use Ranged or Melee to kill her)</str>
+done	
+done	<str>Talk to Herman.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,1134 @@
+# Generated from the OSRS Wiki page "Cabin Fever/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Bill Teach</col> at <col=800000>The Green Ghost</col> inn in <col=800000>Port Phasmatys</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 42 Agility
+req	Level 45 Crafting
+req	Level 50 Smithing
+req	Level 40 Ranged
+step	1	-	Quick guide step 1
+line	<col=000080>Travel to <col=800000>Port Phasmatys</col> (take a <col=800000>charter ship</col> if you don't have <col=800000>Ectophial</col>).</col>
+step	2	-	Quick guide step 2
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<col=000080>Talk to Bill Teach in the inn.</col>
+step	3	-	Quick guide step 3
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<col=000080>Run to the dock, board the eastern-most ship.</col>
+step	4	-	Quick guide step 4
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	5	-	Quick guide step 5
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Open the repair locker, take 4 ropes.</col>
+step	6	-	Quick guide step 6
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<col=000080>Open the gun locker, take 1 <col=800000>fuse</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<col=000080>Take the tinderbox spawn at the south end of the ship</col>
+step	8	-	Quick guide step 8
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<col=000080>Climb the ship's ladder, then use the climbing net connected to the mast.</col>
+step	9	-	Quick guide step 9
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<col=000080>Use rope on the hoisted sail.</col>
+step	10	-	Quick guide step 10
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<col=000080>Use the fuse on their powder barrel.</col>
+step	11	-	Quick guide step 11
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<col=000080>Use the tinderbox to light the fuse (this can fail).</col>
+step	12	-	Quick guide step 12
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<col=000080>Climb their climbing net and use a rope on the hoisted sail.</col>
+step	13	-	Quick guide step 13
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	14	-	Quick guide step 14
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Descend the ship's ladder.</col>
+step	15	-	Quick guide step 15
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<col=000080>Take from the repair locker:</col>
+step	16	-	Quick guide step 16
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<col=000080>Repair the leaky holes and use swamp paste to waterproof them.</col>
+step	17	-	Quick guide step 17
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	18	-	Quick guide step 18
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Swing back over to the enemy ship.</col>
+step	19	-	Quick guide step 19
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<col=000080>Climb down their ladder.</col>
+step	20	-	Quick guide step 20
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<col=000080>Gather 10 <col=800000>plunder</col> by:</col>
+step	21	-	Quick guide step 21
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<col=000080>Swing across with the plunder.</col>
+step	22	-	Quick guide step 22
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<col=000080>Deposit the plunder in the chest on the lower deck.</col>
+step	23	-	Quick guide step 23
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	24	-	Quick guide step 24
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Search the gun locker and take a <col=800000>cannon barrel</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<col=000080>Repair the <col=800000>broken cannon</col> on the top deck.</col>
+step	26	-	Quick guide step 26
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	27	-	Quick guide step 27
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Search the gun locker, take a <col=800000>ramrod</col>, a few fuses, and some cannon <col=800000>canister</col>s.</col>
+step	28	-	Quick guide step 28
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+line	
+line	<col=000080>Take some powder from the barrel next to the cannon.</col>
+step	29	-	Quick guide step 29
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+line	
+line	<str>Take some powder from the barrel next to the cannon.</str>
+line	
+line	<col=000080>Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).</col>
+step	30	-	Quick guide step 30
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+line	
+line	<str>Take some powder from the barrel next to the cannon.</str>
+line	
+line	<str>Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).</str>
+line	
+line	<col=000080>Talk to Bill Teach.</col>
+step	31	-	Quick guide step 31
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+line	
+line	<str>Take some powder from the barrel next to the cannon.</str>
+line	
+line	<str>Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<col=000080>Search the gun locker, take several <col=800000>cannon ball</col>s, fuses, and cannon barrels. Take gunpowder from the barrel next to the cannon.</col>
+step	32	-	Quick guide step 32
+line	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+line	
+line	<str>Talk to Bill Teach in the inn.</str>
+line	
+line	<str>Run to the dock, board the eastern-most ship.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Open the repair locker, take 4 ropes.</str>
+line	
+line	<str>Open the gun locker, take 1 fuse.</str>
+line	
+line	<str>Take the tinderbox spawn at the south end of the ship</str>
+line	
+line	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+line	
+line	<str>Use rope on the hoisted sail.</str>
+line	
+line	<str>Use the fuse on their powder barrel.</str>
+line	
+line	<str>Use the tinderbox to light the fuse (this can fail).</str>
+line	
+line	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Descend the ship's ladder.</str>
+line	
+line	<str>Take from the repair locker:</str>
+line	
+line	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Swing back over to the enemy ship.</str>
+line	
+line	<str>Climb down their ladder.</str>
+line	
+line	<str>Gather 10 plunder by:</str>
+line	
+line	<str>Swing across with the plunder.</str>
+line	
+line	<str>Deposit the plunder in the chest on the lower deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker and take a cannon barrel.</str>
+line	
+line	<str>Repair the broken cannon on the top deck.</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+line	
+line	<str>Take some powder from the barrel next to the cannon.</str>
+line	
+line	<str>Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).</str>
+line	
+line	<str>Talk to Bill Teach.</str>
+line	
+line	<str>Search the gun locker, take several cannon balls, fuses, and cannon barrels. Take gunpowder from the barrel next to the cannon.</str>
+line	
+line	<col=000080>Fire the cannon with cannonballs until you put three holes in the enemy's ship. This is done with the same sequence above except instead of a canister, a cannonball is used instead - you will likely have to fire it more than three times and possibly repair it multiple times.</col>
+done	<str>Travel to Port Phasmatys (take a charter ship if you don't have Ectophial).</str>
+done	
+done	<str>Talk to Bill Teach in the inn.</str>
+done	
+done	<str>Run to the dock, board the eastern-most ship.</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Open the repair locker, take 4 ropes.</str>
+done	
+done	<str>Open the gun locker, take 1 fuse.</str>
+done	
+done	<str>Take the tinderbox spawn at the south end of the ship</str>
+done	
+done	<str>Climb the ship's ladder, then use the climbing net connected to the mast.</str>
+done	
+done	<str>Use rope on the hoisted sail.</str>
+done	
+done	<str>Use the fuse on their powder barrel.</str>
+done	
+done	<str>Use the tinderbox to light the fuse (this can fail).</str>
+done	
+done	<str>Climb their climbing net and use a rope on the hoisted sail.</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Descend the ship's ladder.</str>
+done	
+done	<str>Take from the repair locker:</str>
+done	
+done	<str>Repair the leaky holes and use swamp paste to waterproof them.</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Swing back over to the enemy ship.</str>
+done	
+done	<str>Climb down their ladder.</str>
+done	
+done	<str>Gather 10 plunder by:</str>
+done	
+done	<str>Swing across with the plunder.</str>
+done	
+done	<str>Deposit the plunder in the chest on the lower deck.</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Search the gun locker and take a cannon barrel.</str>
+done	
+done	<str>Repair the broken cannon on the top deck.</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Search the gun locker, take a ramrod, a few fuses, and some cannon canisters.</str>
+done	
+done	<str>Take some powder from the barrel next to the cannon.</str>
+done	
+done	<str>Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).</str>
+done	
+done	<str>Talk to Bill Teach.</str>
+done	
+done	<str>Search the gun locker, take several cannon balls, fuses, and cannon barrels. Take gunpowder from the barrel next to the cannon.</str>
+done	
+done	<str>Fire the cannon with cannonballs until you put three holes in the enemy's ship. This is done with the same sequence above except instead of a canister, a cannonball is used instead - you will likely have to fire it more than three times and possibly repair it multiple times.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

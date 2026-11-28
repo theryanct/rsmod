@@ -1,0 +1,35 @@
+# Generated from the OSRS Wiki page "Transcript:The Curse of Arrav/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Elias White</col> in the <col=800000>Uzer Oasis</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Mahjarrat #10</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Defender of Varrock
+req	Troll Romance
+req	Level 64 Mining
+req	Level 62 Thieving
+req	Level 62 Ranged
+req	Level 61 Agility
+req	Level 58 Strength
+req	Level 37 Slayer
+before	<col=000080>Recommendations:</col>
+req	Combat Level 85
+step	1	-	Tomb raiding
+step	2	-	Fort Invasion
+step	3	-	Heart Heist
+done	<str>I spoke to Elias White in the Uzer Oasis. He asked for my help in freeing Arrav from Zemouregal by recovering his Heart.</str>
+done	<str>Following Elias' suggestion, I entered the Mastaba in the Uzer Oasis and found some information on how to preserve Arrav's Heart.</str>
+done	<str>I prepared a Canopic Jar by filling it with three Dwellberries and a Ring of Life.</str>
+done	<str>While investigating the location of Arrav's Heart, one of Elias' contacts saw Zemouregal entering a Fort near Trollweiss Mountain.</str>
+done	<str>I entered some Tunnels from the peak of Trollweiss Mountain and found a way through them into the Fort. Inside I encountered Arrav. He was called away by Zemouregal, but before leaving, he directed me to some Plans hidden behind a Tapestry.</str>
+done	<str>Elias and I inspected the Plans I found and discovered them to be for Zemouregal's Base in Silvarea. Together, we formed a plan to infiltrate the Base and steal Arrav's Heart.</str>
+done	<str> I managed to bypass the defences in Zemouregal's Base and reach Arrav's Heart. However, I was confronted by Zemouregal. He ordered Arrav to kill me, giving me no choice but to fight him off. After I defeated Arrav, Elias arrived and distracted Zemouregal, giving me time to grab the Heart. Elias took the Heart to begin researching it, promising to get in touch once he'd made some progress.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

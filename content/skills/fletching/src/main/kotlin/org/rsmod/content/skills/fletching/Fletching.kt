@@ -3,6 +3,7 @@ package org.rsmod.content.skills.fletching
 import jakarta.inject.Inject
 import kotlin.math.min
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.events.interact.HeldUEvents
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.fletchingLvl
 import org.rsmod.api.player.tools.hasTool
@@ -14,6 +15,7 @@ import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.fletching.FletchingData.Kind
 import org.rsmod.content.skills.fletching.FletchingData.Recipe
+import org.rsmod.events.EventBus
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
@@ -45,7 +47,12 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             byPair.getOrPut(key) { mutableListOf() }.add(recipe)
         }
         for ((key, recipes) in byPair) {
-            onOpHeldU(obj(key.first), obj(key.second)) { selectRecipe(recipes) }
+            val a = obj(key.first)
+            val b = obj(key.second)
+            // A pair another script (e.g. a quest) already binds, in either order: skip it.
+            if (eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(a.id, b.id))) continue
+            if (eventBus.contains(HeldUEvents.Type::class.java, EventBus.composeLongKey(b.id, a.id))) continue
+            onOpHeldU(a, b) { selectRecipe(recipes) }
         }
         // "Fletch" on logs (tool-belt material op): the knife may be carried or on the belt.
         for ((key, recipes) in byPair) {
@@ -104,7 +111,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         val products =
             shown.map { recipe ->
                 val product = FletchingObjs.byName.getValue(recipe.product)
-                val available = player.fletchingLvl >= recipe.level && maxActions(recipe) > 0
+                val available =
+                    player.fletchingLvl >= recipe.level && maxActions(recipe) > 0 && known(recipe)
                 SkillMultiProduct(product, productName(recipe), available)
             }
         val max = shown.maxOf { maxActions(it) }.coerceAtLeast(1)
@@ -116,6 +124,10 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
                 maxQuantity = max,
             )
         val recipe = shown[choice.index]
+        if (!known(recipe)) {
+            mes("You don't know how to make ${productName(recipe)} yet.") // Authored (not Wiki).
+            return
+        }
         if (player.fletchingLvl < recipe.level) {
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
@@ -145,8 +157,24 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             Kind.Chisel -> "How many would you like to make?"
         }
 
+    /**
+     * Zogre Flesh Eaters unlocks (Wiki): brutal arrows once Sithik explains them
+     * (`thzfe_makebrutalarrow`), the unstrung comp bow once Grish shows you
+     * (`thzfe_makecompozogrebow`).
+     */
+    private fun ProtectedAccess.known(recipe: Recipe): Boolean =
+        when {
+            recipe.product.startsWith(BRUTAL_PREFIX) -> player.vars[FletchingVarBits.brutal] != 0
+            recipe.product == COMP_BOW -> player.vars[FletchingVarBits.comp_bow] != 0
+            else -> true
+        }
+
     private fun ProtectedAccess.fletch(job: FletchJob) {
         val recipe = job.recipe
+        if (!known(recipe)) {
+            mes("You don't know how to make ${productName(recipe)} yet.") // Authored (not Wiki).
+            return
+        }
         if (questLocked(recipe)) {
             return
         }
@@ -231,6 +259,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private companion object {
         const val KNIFE = "knife"
         const val CHISEL = "chisel"
+        const val BRUTAL_PREFIX = "zogre_brutal_"
+        const val COMP_BOW = "unstrung_zogre_bow"
 
         /** The Birds and the Wasps: Bea asks for darts at this `baw` stage (BirdsAndWasps.kt). */
         const val BAW_DARTS_STAGE = 45

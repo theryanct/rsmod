@@ -1,0 +1,429 @@
+# Generated from the OSRS Wiki page "Wanted!/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Sir Tiffy Cashien</col> in <col=800000>Falador Park</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	32 Quest Points
+step	1	-	Quick guide step 1
+line	<col=000080>Speak with <col=800000>Sir Tiffy Cashien</col> in <col=800000>Falador Park</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<col=000080>Go talk to <col=800000>Sir Amik Varze</col> in the <col=800000>White Knights' Castle</col> on the west side of the uk=2.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<col=000080>Report back to Sir Tiffy.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<col=000080>Head back to Sir Amik and talk to him again.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<col=000080>Report once more to Tiffy.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<col=000080>Use the "contact" option on the Commorb.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<col=000080>Head over to <col=800000>Taverley Dungeon</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<col=000080>Follow the dungeon north, then east and then south, down to the <col=800000>Black Knights' Base</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<col=000080>Talk to <col=800000>Lord Daquarius</col> in the south-western most room.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<col=000080>Kill a level 33 <col=800000>Black Knight</col>; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</col>
+step	11	-	Quick guide step 11
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<col=000080>Talk to Lord Daquarius again.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Mage of Zamorak</col> (or if <col=800000>Temple of the Eye</col> is completed.) in <col=800000>Varrock</col> at the <col=800000>Altar of Chaos</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<col=000080>Speak to him again to give him the 20 rune or pure essence.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<col=000080>Head to <col=800000>Canifis</col> and <col=800000>Savant</col> will call you. (fairy ring CKS)</col>
+step	15	-	Quick guide step 15
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+line	
+line	<col=000080>Use the "scan" option of the <col=800000>Commorb</col> near the bank in Canifis to unveil <col=800000>Solus Dellagar</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+line	
+line	<str>Use the "scan" option of the Commorb near the bank in Canifis to unveil Solus Dellagar.</str>
+line	
+line	<col=000080>Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+line	
+line	<str>Use the "scan" option of the Commorb near the bank in Canifis to unveil Solus Dellagar.</str>
+line	
+line	<str>Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.</str>
+line	
+line	<col=000080>Head to the <col=800000>rune essence mine</col> by talking to one of the teleporting mages.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+line	
+line	<str>Use the "scan" option of the Commorb near the bank in Canifis to unveil Solus Dellagar.</str>
+line	
+line	<str>Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.</str>
+line	
+line	<str>Head to the rune essence mine by talking to one of the teleporting mages.</str>
+line	
+line	<col=000080>Kill <col=800000>Solus</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+line	
+line	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+line	
+line	<str>Report back to Sir Tiffy.</str>
+line	
+line	<str>Head back to Sir Amik and talk to him again.</str>
+line	
+line	<str>Report once more to Tiffy.</str>
+line	
+line	<str>Use the "contact" option on the Commorb.</str>
+line	
+line	<str>Head over to Taverley Dungeon.</str>
+line	
+line	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+line	
+line	<str>Talk to Lord Daquarius in the south-western most room.</str>
+line	
+line	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+line	
+line	<str>Talk to Lord Daquarius again.</str>
+line	
+line	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+line	
+line	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+line	
+line	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+line	
+line	<str>Use the "scan" option of the Commorb near the bank in Canifis to unveil Solus Dellagar.</str>
+line	
+line	<str>Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.</str>
+line	
+line	<str>Head to the rune essence mine by talking to one of the teleporting mages.</str>
+line	
+line	<str>Kill Solus.</str>
+line	
+line	<col=000080>Head back to <col=800000>Falador</col> and talk to <col=800000>Sir Amik Varze</col> in the <col=800000>White Knights' Castle</col>.</col>
+done	<str>Speak with Sir Tiffy Cashien in Falador Park.</str>
+done	
+done	<str>Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the uk=2.</str>
+done	
+done	<str>Report back to Sir Tiffy.</str>
+done	
+done	<str>Head back to Sir Amik and talk to him again.</str>
+done	
+done	<str>Report once more to Tiffy.</str>
+done	
+done	<str>Use the "contact" option on the Commorb.</str>
+done	
+done	<str>Head over to Taverley Dungeon.</str>
+done	
+done	<str>Follow the dungeon north, then east and then south, down to the Black Knights' Base.</str>
+done	
+done	<str>Talk to Lord Daquarius in the south-western most room.</str>
+done	
+done	<str>Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!</str>
+done	
+done	<str>Talk to Lord Daquarius again.</str>
+done	
+done	<str>Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.</str>
+done	
+done	<str>Speak to him again to give him the 20 rune or pure essence.</str>
+done	
+done	<str>Head to Canifis and Savant will call you. (fairy ring CKS)</str>
+done	
+done	<str>Use the "scan" option of the Commorb near the bank in Canifis to unveil Solus Dellagar.</str>
+done	
+done	<str>Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.</str>
+done	
+done	<str>Head to the rune essence mine by talking to one of the teleporting mages.</str>
+done	
+done	<str>Kill Solus.</str>
+done	
+done	<str>Head back to Falador and talk to Sir Amik Varze in the White Knights' Castle.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

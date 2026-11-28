@@ -1,0 +1,1274 @@
+# Generated from the OSRS Wiki page "The Fremennik Exiles/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Brundt the Chieftain</col> in <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 65 Crafting
+req	Level 60 Slayer
+req	Level 60 Smithing
+req	Level 60 Fishing
+req	Level 55 Runecraft
+req	Level 60 Mining
+step	1	-	Quick guide step 1
+line	<col=000080>Buy 2 <col=800000>kegs of beer</col> from <col=800000>Thora</col> in the <col=800000>Longhall</col> before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</col>
+step	2	-	Quick guide step 2
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<col=000080>Talk to <col=800000>Brundt</col> in the <col=800000>Longhall</col> to start the quest. or</col>
+step	3	-	Quick guide step 3
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<col=000080>Go north and talk to <col=800000>Freygerd</col> in the house south of the sandpit.</col>
+step	4	-	Quick guide step 4
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<col=000080>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the <col=800000>Basilisk Youngling</col> (level 53).</col>
+step	5	-	Quick guide step 5
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<col=000080>Pick up the <col=800000>Unsealed letter</col> and read it.</col>
+step	6	-	Quick guide step 6
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<col=000080>Search the rockslide west of the house to get the <col=800000>Fang</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<col=000080>Search the boxes south of the house to get the <col=800000>Venom gland</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<col=000080>Talk to <col=800000>Freygerd</col> to give her the items.</col>
+step	9	-	Quick guide step 9
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<col=000080>Return to <col=800000>Brundt</col> to receive a note, read it, then talk to him again for a cutscene. or</col>
+step	10	-	Quick guide step 10
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<col=000080>Go south-east of Rellekka, following the dirt path, and talk to <col=800000>Brundt</col>. Go through all chat options to learn how to restore <col=800000>V's shield</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<col=000080>Obtain a <col=800000>Fremennik shield</col> (this is not the tradeable <col=800000>Neitiznot shield</col>).</col>
+step	12	-	Quick guide step 12
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<col=000080>Go to <col=800000>Baba Yaga</col> on <col=800000>Lunar Isle</col> to turn your molten glass into <col=800000>molten glass (i)</col>. or if using lunar spellbook and Ourania teleport is not unlocked.</col>
+step	13	-	Quick guide step 13
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<col=000080>Head north-east of the town to <col=800000>Lunar Isle mine</col> and mine stalagmites for 3 <col=800000>lunar ore</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<col=000080>Leave the mine and travel to the <col=800000>Astral Altar</col> with 100 <col=800000>astral rune</col>s in your inventory and craft on the altar to obtain <col=800000>Lunar glass</col>. Then return to Rellekka.</col>
+step	15	-	Quick guide step 15
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<col=000080>Smelt 3 <col=800000>lunar bar</col>s in a <col=800000>furnace</col> (Rellekka is convenient) or you can use <col=800000>Superheat Item</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<col=000080>Smith the <col=800000>V sigil</col> on an <col=800000>anvil</col> (Rellekka is convenient).</col>
+step	17	-	Quick guide step 17
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<col=000080>Talk to the <col=800000>Fossegrimen</col> to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</col>
+step	18	-	Quick guide step 18
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<col=000080>Head east of Rellekka to the <col=800000>Mountain Camp</col></col>
+step	19	-	Quick guide step 19
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<col=000080>Follow the path north of the <col=800000>Mountain Camp</col> and inspect the <col=800000>Large Geyser</col>. Use your pet rock on the Geyser.</col>
+step	20	-	Quick guide step 20
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<col=000080>Go to Rellekka and talk to <col=800000>Peer the Seer</col> found south-west of the Rellekka market.</col>
+step	21	-	Quick guide step 21
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<col=000080>Return to the geyser and wear the <col=800000>ice gloves</col>, if you forget you may re-equip them and try again.</col>
+step	22	-	Quick guide step 22
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<col=000080>Inspect the large geyser to the west to get the <col=800000>polishing rock</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<col=000080>Use any of the components together while having a <col=800000>glassblowing pipe</col> in the inventory to create <col=800000>V's shield</col>.</col>
+step	24	-	Quick guide step 24
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<col=000080>Talk to <col=800000>Brundt</col> south-east of Rellekka.</col>
+step	25	-	Quick guide step 25
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<col=000080>Return to the <col=800000>Longhall</col> and talk to <col=800000>Brundt</col> again.</col>
+step	26	-	Quick guide step 26
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<col=000080>Wield <col=800000>V's shield</col> and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</col>
+step	27	-	Quick guide step 27
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<col=000080>Travel on the Fremennik Boat to the <col=800000>Island of Stone</col>.</col>
+step	28	-	Quick guide step 28
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<col=000080>Speak with <col=800000>Brundt</col> to explain the <col=800000>cave door</col> puzzle.</col>
+step	29	-	Quick guide step 29
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<col=000080>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</col>
+step	30	-	Quick guide step 30
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+line	
+line	<col=000080>Equip V's shield and keep it equipped for the full fight.</col>
+step	31	-	Quick guide step 31
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+line	
+line	<str>Equip V's shield and keep it equipped for the full fight.</str>
+line	
+line	<col=000080>Enter the cave.</col>
+step	32	-	Quick guide step 32
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+line	
+line	<str>Equip V's shield and keep it equipped for the full fight.</str>
+line	
+line	<str>Enter the cave.</str>
+line	
+line	<col=000080>Fight <col=800000>Typhor</col> (level 218)</col>
+step	33	-	Quick guide step 33
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+line	
+line	<str>Equip V's shield and keep it equipped for the full fight.</str>
+line	
+line	<str>Enter the cave.</str>
+line	
+line	<str>Fight Typhor (level 218)</str>
+line	
+line	<col=000080>There is a checkpoint after Typhor is defeated. You may wish to teleport out between fights to resupply. If you do, you can return to the Island of Stone by talking to <col=800000>Haskell</col> on the western-most pier in Rellekka (the same one the Waterbirth Island boat is on)</col>
+step	34	-	Quick guide step 34
+line	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+line	
+line	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+line	
+line	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+line	
+line	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+line	
+line	<str>Pick up the Unsealed letter and read it.</str>
+line	
+line	<str>Search the rockslide west of the house to get the Fang.</str>
+line	
+line	<str>Search the boxes south of the house to get the Venom gland.</str>
+line	
+line	<str>Talk to Freygerd to give her the items.</str>
+line	
+line	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+line	
+line	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+line	
+line	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+line	
+line	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+line	
+line	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+line	
+line	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+line	
+line	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+line	
+line	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+line	
+line	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+line	
+line	<str>Head east of Rellekka to the Mountain Camp</str>
+line	
+line	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+line	
+line	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+line	
+line	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+line	
+line	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+line	
+line	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+line	
+line	<str>Talk to Brundt south-east of Rellekka.</str>
+line	
+line	<str>Return to the Longhall and talk to Brundt again.</str>
+line	
+line	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+line	
+line	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+line	
+line	<str>Speak with Brundt to explain the cave door puzzle.</str>
+line	
+line	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+line	
+line	<str>Equip V's shield and keep it equipped for the full fight.</str>
+line	
+line	<str>Enter the cave.</str>
+line	
+line	<str>Fight Typhor (level 218)</str>
+line	
+line	<str>There is a checkpoint after Typhor is defeated. You may wish to teleport out between fights to resupply. If you do, you can return to the Island of Stone by talking to Haskell on the western-most pier in Rellekka (the same one the Waterbirth Island boat is on)</str>
+line	
+line	<col=000080>Fight <col=800000>The Jormungand</col> (level 363). There are two special attacks to avoid:</col>
+done	<str>Buy 2 kegs of beer from Thora in the Longhall before you start the quest to save time later. (bank them when you have the chance to reduce weight while running around)</str>
+done	
+done	<str>Talk to Brundt in the Longhall to start the quest. or</str>
+done	
+done	<str>Go north and talk to Freygerd in the house south of the sandpit.</str>
+done	
+done	<str>Equip your mirror shield (to avoid taking damage and stat drain), then search the sandpit (to the north) and kill the Basilisk Youngling (level 53).</str>
+done	
+done	<str>Pick up the Unsealed letter and read it.</str>
+done	
+done	<str>Search the rockslide west of the house to get the Fang.</str>
+done	
+done	<str>Search the boxes south of the house to get the Venom gland.</str>
+done	
+done	<str>Talk to Freygerd to give her the items.</str>
+done	
+done	<str>Return to Brundt to receive a note, read it, then talk to him again for a cutscene. or</str>
+done	
+done	<str>Go south-east of Rellekka, following the dirt path, and talk to Brundt. Go through all chat options to learn how to restore V's shield.</str>
+done	
+done	<str>Obtain a Fremennik shield (this is not the tradeable Neitiznot shield).</str>
+done	
+done	<str>Go to Baba Yaga on Lunar Isle to turn your molten glass into molten glass (i). or if using lunar spellbook and Ourania teleport is not unlocked.</str>
+done	
+done	<str>Head north-east of the town to Lunar Isle mine and mine stalagmites for 3 lunar ore.</str>
+done	
+done	<str>Leave the mine and travel to the Astral Altar with 100 astral runes in your inventory and craft on the altar to obtain Lunar glass. Then return to Rellekka.</str>
+done	
+done	<str>Smelt 3 lunar bars in a furnace (Rellekka is convenient) or you can use Superheat Item.</str>
+done	
+done	<str>Smith the V sigil on an anvil (Rellekka is convenient).</str>
+done	
+done	<str>Talk to the Fossegrimen to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) .</str>
+done	
+done	<str>Head east of Rellekka to the Mountain Camp</str>
+done	
+done	<str>Follow the path north of the Mountain Camp and inspect the Large Geyser. Use your pet rock on the Geyser.</str>
+done	
+done	<str>Go to Rellekka and talk to Peer the Seer found south-west of the Rellekka market.</str>
+done	
+done	<str>Return to the geyser and wear the ice gloves, if you forget you may re-equip them and try again.</str>
+done	
+done	<str>Inspect the large geyser to the west to get the polishing rock.</str>
+done	
+done	<str>Use any of the components together while having a glassblowing pipe in the inventory to create V's shield.</str>
+done	
+done	<str>Talk to Brundt south-east of Rellekka.</str>
+done	
+done	<str>Return to the Longhall and talk to Brundt again.</str>
+done	
+done	<str>Wield V's shield and fight the basilisks until you reach 100%. You have to hit a basilisk at least once to make its death count towards completion.</str>
+done	
+done	<str>Travel on the Fremennik Boat to the Island of Stone.</str>
+done	
+done	<str>Speak with Brundt to explain the cave door puzzle.</str>
+done	
+done	<str>Solve the cave door puzzle (Mastermind (board game)|Mastermind).</str>
+done	
+done	<str>Equip V's shield and keep it equipped for the full fight.</str>
+done	
+done	<str>Enter the cave.</str>
+done	
+done	<str>Fight Typhor (level 218)</str>
+done	
+done	<str>There is a checkpoint after Typhor is defeated. You may wish to teleport out between fights to resupply. If you do, you can return to the Island of Stone by talking to Haskell on the western-most pier in Rellekka (the same one the Waterbirth Island boat is on)</str>
+done	
+done	<str>Fight The Jormungand (level 363). There are two special attacks to avoid:</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

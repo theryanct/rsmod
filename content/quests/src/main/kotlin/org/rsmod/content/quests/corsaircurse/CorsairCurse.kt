@@ -428,7 +428,7 @@ constructor(
                 camMoveTo(DRIFTWOOD.translate(-4, -4), height = 600)
                 camLookAt(DRIFTWOOD, height = 150)
                 fadeIn()
-                conversation { runQuestSection(null, dialogue, DRIFTWOOD_LATE) }
+                conversation { runQuestSection(null, dialogue, DRIFTWOOD_LATE, speakers = mapOf("Ithoi the Navigator" to CorsairNpcs.ithoi)) }
                 ithoi.walkTo(DRIFTWOOD.translate(0, -1))
                 delay(4)
                 ithoi.walkTo(ITHOI_DOOR)

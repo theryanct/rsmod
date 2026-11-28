@@ -1,0 +1,768 @@
+# Generated from the OSRS Wiki page "Creature of Fenkenstrain/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Read the <col=800000>signpost</col> in the middle of <col=800000>Canifis</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Priest in Peril
+req	The Restless Ghost
+req	Level 20 Crafting
+req	Level 25 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Start the quest by reading the <col=800000>signpost</col> in the centre of Canifis or by talking to <col=800000>Dr Fenkenstrain</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<col=000080>Take a <col=800000>pickled brain</col> off the table in the <col=800000>tavern</col> in Canifis for 50gp, or by using <col=800000>Telekinetic Grab</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dr Fenkenstrain</col> inside of <col=800000>Fenkenstrain's Castle</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<col=000080>Go upstairs by the eastern or western staircase to the bookcases and read:</col>
+step	5	-	Quick guide step 5
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<col=000080>Right-click dig at the <col=800000>cross-shaped grave marker</col> in the <col=800000>Haunted Woods</col>, south-east of Fenkenstrain's castle and immediately east of <col=800000>fairy ring</col> ALQ.</col>
+step	6	-	Quick guide step 6
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<col=000080>Combine the decapicated head and the pickled brain.</col>
+step	7	-	Quick guide step 7
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<col=000080>Head north out of the Haunted Woods and use your <col=800000>star amulet</col> on the easternmost <col=800000>memorial</col> (south-east of Fenkenstrain's castle).</col>
+step	8	-	Quick guide step 8
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<col=000080>Push the memorial to enter the <col=800000>Experiment Cave</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<col=000080>Inside, kill a level 51 <col=800000>Experiment</col> for the <col=800000>cavern key</col>. If you have started <col=800000>Rag and Bone Man II</col>, kill additional Experiments (level 25) for the <col=800000>Experiment bone</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<col=000080>Follow the north-western path to the end.</col>
+step	11	-	Quick guide step 11
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<col=000080>Search the chest and climb the ladder.</col>
+step	12	-	Quick guide step 12
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<col=000080>Right-click Dig at the three <col=800000>grave</col>s to get the <col=800000>torso</col>, <col=800000>arms</col> and <col=800000>legs</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<col=000080>Return to Dr Fenkenstrain (<col=800000>Fenkenstrain's castle teleport</col>) and give him the body parts.</col>
+step	14	-	Quick guide step 14
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<col=000080>Talk to him again to give him the needle and thread.</col>
+step	15	-	Quick guide step 15
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<col=000080>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</col>
+step	16	-	Quick guide step 16
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<col=000080>Search the <col=800000>cupboard</col> inside the shed to get a <col=800000>garden brush</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<col=000080>Take 3 canes from the pile of canes next to the shed</col>
+step	18	-	Quick guide step 18
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<col=000080>Use all the canes (3) on the <col=800000>garden brush</col> to get an <col=800000>extended brush</col> (using a total of 3 bronze wires).</col>
+step	19	-	Quick guide step 19
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<col=000080>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</col>
+step	20	-	Quick guide step 20
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<col=000080>Go to a <col=800000>furnace</col> (closest is in Port Phasmatys, teleport to Falador, fairy ring to <col=800000>Zanaris</col>, amulet of glory to Al Kharid, or <col=800000>Home Teleport</col> to Lumbridge) and smelt a <col=800000>silver bar</col> into a <col=800000>conductor</col> (lightning rod).</col>
+step	21	-	Quick guide step 21
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<col=000080>Return to the castle, go upstairs and then climb the southern ladder to reach the <col=800000>lightning conductor</col>.</col>
+step	22	-	Quick guide step 22
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+line	
+line	<col=000080>Repair the lightning conductor.</col>
+step	23	-	Quick guide step 23
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+line	
+line	<str>Repair the lightning conductor.</str>
+line	
+line	<col=000080>Return to Dr Fenkenstrain and talk to him.</col>
+step	24	-	Quick guide step 24
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+line	
+line	<str>Repair the lightning conductor.</str>
+line	
+line	<str>Return to Dr Fenkenstrain and talk to him.</str>
+line	
+line	<col=000080>Go upstairs, then through the metal door, then climb the northern ladder.</col>
+step	25	-	Quick guide step 25
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+line	
+line	<str>Repair the lightning conductor.</str>
+line	
+line	<str>Return to Dr Fenkenstrain and talk to him.</str>
+line	
+line	<str>Go upstairs, then through the metal door, then climb the northern ladder.</str>
+line	
+line	<col=000080>Talk to Fenkenstrain's monster.</col>
+step	26	-	Quick guide step 26
+line	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+line	
+line	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+line	
+line	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+line	
+line	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+line	
+line	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+line	
+line	<str>Combine the decapicated head and the pickled brain.</str>
+line	
+line	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+line	
+line	<str>Push the memorial to enter the Experiment Cave.</str>
+line	
+line	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+line	
+line	<str>Follow the north-western path to the end.</str>
+line	
+line	<str>Search the chest and climb the ladder.</str>
+line	
+line	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+line	
+line	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+line	
+line	<str>Talk to him again to give him the needle and thread.</str>
+line	
+line	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+line	
+line	<str>Search the cupboard inside the shed to get a garden brush.</str>
+line	
+line	<str>Take 3 canes from the pile of canes next to the shed</str>
+line	
+line	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+line	
+line	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+line	
+line	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+line	
+line	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+line	
+line	<str>Repair the lightning conductor.</str>
+line	
+line	<str>Return to Dr Fenkenstrain and talk to him.</str>
+line	
+line	<str>Go upstairs, then through the metal door, then climb the northern ladder.</str>
+line	
+line	<str>Talk to Fenkenstrain's monster.</str>
+line	
+line	<col=000080>Go downstairs, then pickpocket the doctor for the <col=800000>Ring of Charos</col>.</col>
+done	<str>Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain.</str>
+done	
+done	<str>Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab.</str>
+done	
+done	<str>Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.</str>
+done	
+done	<str>Go upstairs by the eastern or western staircase to the bookcases and read:</str>
+done	
+done	<str>Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ.</str>
+done	
+done	<str>Combine the decapicated head and the pickled brain.</str>
+done	
+done	<str>Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle).</str>
+done	
+done	<str>Push the memorial to enter the Experiment Cave.</str>
+done	
+done	<str>Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone.</str>
+done	
+done	<str>Follow the north-western path to the end.</str>
+done	
+done	<str>Search the chest and climb the ladder.</str>
+done	
+done	<str>Right-click Dig at the three graves to get the torso, arms and legs.</str>
+done	
+done	<str>Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.</str>
+done	
+done	<str>Talk to him again to give him the needle and thread.</str>
+done	
+done	<str>Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).</str>
+done	
+done	<str>Search the cupboard inside the shed to get a garden brush.</str>
+done	
+done	<str>Take 3 canes from the pile of canes next to the shed</str>
+done	
+done	<str>Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires).</str>
+done	
+done	<str>Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould.</str>
+done	
+done	<str>Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod).</str>
+done	
+done	<str>Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor.</str>
+done	
+done	<str>Repair the lightning conductor.</str>
+done	
+done	<str>Return to Dr Fenkenstrain and talk to him.</str>
+done	
+done	<str>Go upstairs, then through the metal door, then climb the northern ladder.</str>
+done	
+done	<str>Talk to Fenkenstrain's monster.</str>
+done	
+done	<str>Go downstairs, then pickpocket the doctor for the Ring of Charos.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

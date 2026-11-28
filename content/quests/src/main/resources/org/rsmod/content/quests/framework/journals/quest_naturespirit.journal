@@ -1,0 +1,430 @@
+# Generated from the OSRS Wiki page "Nature Spirit/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Drezel</col> in the basement of the <col=800000>Paterdomus Temple</col> by the northern end of the <col=800000>River Salve</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Priest in Peril
+req	The Restless Ghost
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Drezel</col> to get three <col=800000>meat pie</col>s and three <col=800000>apple pie</col>s.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<col=000080>Leave the temple and run south through <col=800000>Mort Myre Swamp</col> to the <col=800000>Nature Grotto</col> north-west of <col=800000>Mort'ton</col>. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<col=000080>Attempt to enter the grotto and <col=800000>Filliman</col> will come out. Wear your <col=800000>amulet of ghostspeak</col> and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<col=000080>Take the <col=800000>washing bowl</col> off the nearby <col=800000>bench</col> to find a <col=800000>mirror</col> underneath.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<col=000080>Use the mirror on Filliman, he then tells you to find his <col=800000>journal</col>. If using does not work, try talking him again, it should do the trick.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<col=000080>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a <col=800000>druidic spell</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<col=000080>Run back to <col=800000>Drezel</col> and ask him to bless you.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<col=000080>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<col=000080>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<col=000080>Talk to Filliman to ensure he is standing outside between all 3 stones.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<col=000080>Use the mushroom on the <col=800000>light-brown stone</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<col=000080>Use the used spell card on the <col=800000>grey stone</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<col=000080>Stand on the <col=800000>orange stone</col> and tell Filliman you've solved the puzzle.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<col=000080>Enter the hole under the tree then search the grotto in the middle of the cave.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+line	
+line	<col=000080>Give the nature spirit your <col=800000>silver sickle</col> by talking to him and he will give you a <col=800000>druid pouch</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+line	
+line	<str>Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch.</str>
+line	
+line	<col=000080>Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+line	
+line	<str>Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch.</str>
+line	
+line	<str>Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.</str>
+line	
+line	<col=000080>Using the <col=800000>silver sickle (b)</col>'s <col=800000>Bloom</col> ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+line	
+line	<str>Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch.</str>
+line	
+line	<str>Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.</str>
+line	
+line	<str>Using the silver sickle (b)'s Bloom ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them.</str>
+line	
+line	<col=000080>Use your filled druid pouch on <col=800000>Ghast</col>s to make them attackable, kill three of them.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+line	
+line	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+line	
+line	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+line	
+line	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+line	
+line	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+line	
+line	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+line	
+line	<str>Run back to Drezel and ask him to bless you.</str>
+line	
+line	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+line	
+line	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+line	
+line	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+line	
+line	<str>Use the mushroom on the light-brown stone.</str>
+line	
+line	<str>Use the used spell card on the grey stone.</str>
+line	
+line	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+line	
+line	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+line	
+line	<str>Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch.</str>
+line	
+line	<str>Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.</str>
+line	
+line	<str>Using the silver sickle (b)'s Bloom ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them.</str>
+line	
+line	<str>Use your filled druid pouch on Ghasts to make them attackable, kill three of them.</str>
+line	
+line	<col=000080>Return to the nature spirit by clicking the grotto in the cave and he'll redecorate the grotto.</col>
+done	<str>Talk to Drezel to get three meat pies and three apple pies.</str>
+done	
+done	<str>Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear.</str>
+done	
+done	<str>Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him. . Note that Filliman will disappear after a while so you need to be actively interacting with him.</str>
+done	
+done	<str>Take the washing bowl off the nearby bench to find a mirror underneath.</str>
+done	
+done	<str>Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick.</str>
+done	
+done	<str>Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.</str>
+done	
+done	<str>Run back to Drezel and ask him to bless you.</str>
+done	
+done	<str>Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.</str>
+done	
+done	<str>Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.</str>
+done	
+done	<str>Talk to Filliman to ensure he is standing outside between all 3 stones.</str>
+done	
+done	<str>Use the mushroom on the light-brown stone.</str>
+done	
+done	<str>Use the used spell card on the grey stone.</str>
+done	
+done	<str>Stand on the orange stone and tell Filliman you've solved the puzzle.</str>
+done	
+done	<str>Enter the hole under the tree then search the grotto in the middle of the cave.</str>
+done	
+done	<str>Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch.</str>
+done	
+done	<str>Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.</str>
+done	
+done	<str>Using the silver sickle (b)'s Bloom ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them.</str>
+done	
+done	<str>Use your filled druid pouch on Ghasts to make them attackable, kill three of them.</str>
+done	
+done	<str>Return to the nature spirit by clicking the grotto in the cave and he'll redecorate the grotto.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

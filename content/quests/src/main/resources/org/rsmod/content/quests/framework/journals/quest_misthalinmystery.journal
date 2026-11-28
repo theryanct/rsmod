@@ -1,0 +1,120 @@
+# Generated from the OSRS Wiki page "Transcript:Misthalin Mystery/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Abigale</col> by the shore in <col=800000>Lumbridge Swamp</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2017</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<col=000080>I agreed to sail to the island in search of the attacker, and her friends that were left behind. Abigale says the boat she used to escape can be found on the South-Eastern shore of Lumbridge swamp.</col>
+step	2	-	Arriving at the island
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<col=000080>I need to stop the killer, I'll have to find a way into the manor.</col>
+step	3	-	After witnessing Sid
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>I witnessed the killer claim their first victim - Sid - around the West side of the manor.</str>
+line	
+line	<col=000080>I need to stop the killer, I'll have to find a way into the manor.</col>
+step	4	-	After entering the manor
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>I witnessed the killer claim their first victim - Sid - around the West side of the manor.</str>
+line	
+line	<col=000080>I must investigate the manor and find a way to stop the killer.</col>
+step	5	-	After witnessing Tayten
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>I witnessed the killer claim their first victim - Sid - around the West side of the manor.</str>
+line	
+line	<str>I witnessed the killer claim their second victim - Tayten - in the library.</str>
+line	
+line	<col=000080>I must investigate the manor and find a way to stop the killer.</col>
+step	6	-	After witnessing Lacey
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>I witnessed the killer claim their first victim - Sid - around the West side of the manor.</str>
+line	
+line	<str>I witnessed the killer claim their second victim - Tayten - in the library.</str>
+line	
+line	<str>I witnessed the killer claim their third victim - Lacey - around the back of the manor.</str>
+line	
+line	<col=000080>I must investigate the manor and find a way to stop the killer.</col>
+step	7	-	After witnessing Mandy
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>I witnessed the killer claim their first victim - Sid - around the West side of the manor.</str>
+line	
+line	<str>I witnessed the killer claim their second victim - Tayten - in the library.</str>
+line	
+line	<str>I witnessed the killer claim their third victim - Lacey - around the back of the manor.</str>
+line	
+line	<str>I witnessed the killer claim their fourth victim - Mandy - in the kitchen.</str>
+line	
+line	<col=000080>I must investigate the manor and find a way to stop the killer.</col>
+step	8	-	After solving the fireplace riddle
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>The killer left me a series of clues to solve, I can feel myself getting closer to the truth.</str>
+line	
+line	<col=000080>I must confront the killer.</col>
+step	9	-	After discovering the killer
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>The killer left me a series of clues to solve, leading me to a final showdown.</str>
+line	
+line	<str>I confronted the killer, and discovered that it was in fact Abigale and Hewey working together.</str>
+line	
+line	<col=000080>They turned on one another, and Hewey was killed. I should find a way to take advantage of the situation.</col>
+step	10	-	After Mandy returns
+line	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+line	
+line	<str>I found the island where Abigale and her friends were attacked.</str>
+line	
+line	<str>The killer left me a series of clues to solve, leading me to a final showdown.</str>
+line	
+line	<str>I confronted the killer, and discovered that it was in fact Abigale and Hewey working together.</str>
+line	
+line	<str>With help from Mandy, one of the apparent victims, I defeated the killers.</str>
+line	
+line	<col=000080>Mandy left to tend to her wounds, I should meet her outside the manor.</col>
+done	<str>I have spoken to Abigale, she and her friends were attacked on an island just off the coast of Lumbridge swamp.</str>
+done	
+done	<str>I found the island where Abigale and her friends were attacked.</str>
+done	
+done	<str>The killer left me a series of clues to solve, leading me to a final showdown.</str>
+done	
+done	<str>I confronted the killer, and discovered that it was in fact Abigale and Hewey working together.</str>
+done	
+done	<str>With help from Mandy, one of the apparent victims, I defeated the killers.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>
+done	
+done	<col=000080>I've defeated the killers and been rewarded with some <col=800000>uncut gems</col>, <col=800000>1 Quest Point</col>, and <col=800000>600 Crafting XP</col>.</col>

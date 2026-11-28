@@ -1,0 +1,21 @@
+# Generated from the OSRS Wiki page "Transcript:Master Farmer" by tools/quests/transcript_to_dialogue.py
+0	section	Upon failed pickpocketing attempt
+1	line	Master Farmer	Cor blimey mate, what are ye doing in me pockets?
+0	section	Talking to Master Farmers in Varlamore
+1	line	Player	Hello there. How's it going?
+1	option	Dialogue 1
+2	line	Master Farmer	Well, the work is going well, so I'm very good, thank you.
+2	action	end
+1	option	Dialogue 2
+2	line	Master Farmer	Not too bad thanks.
+2	action	end
+1	option	Dialogue 3
+2	line	Master Farmer	I'm fine, how are you?
+2	line	Player	Very well, thank you.
+2	action	end
+1	option	Dialogue 4
+2	line	Master Farmer	Nilsal! I'm pretty good, thank you. It's always nice to be out in the sun.
+2	action	end
+1	option	Dialogue 5
+2	line	Master Farmer	Hello there! Nice weather we've been having. Perfect for a day outdoors!
+2	action	end

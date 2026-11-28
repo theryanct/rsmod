@@ -175,7 +175,7 @@ constructor(
     private suspend fun ProtectedAccess.skullInCoffin() {
         if (state != HAS_SKULL || !carries(RestlessGhostObjs.skull)) return
         invDel(inv, RestlessGhostObjs.skull)
-        runQuestSection(null, dialogue, "Putting the skull in the coffin")
+        runQuestSection(null, dialogue, "Putting the skull in the coffin", speakers = mapOf("Restless ghost" to RestlessGhostNpcs.ghost))
         statAdvance(stats.prayer, 1125.0 * xpMods.get(player, stats.prayer))
         completeQuest(RESTLESS_GHOST)
     }

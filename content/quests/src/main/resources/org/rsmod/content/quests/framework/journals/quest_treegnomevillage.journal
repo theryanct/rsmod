@@ -1,0 +1,315 @@
+# Generated from the OSRS Wiki page "Tree Gnome Village/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>King Bolren</col> at the centre of the <col=800000>Tree Gnome Village</col> <col=800000>maze</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>King Bolren</col> in <col=800000>Tree Gnome Village</col>. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<col=000080>Walk slightly north and speak to <col=800000>Commander Montai</col> (red hat) at the south-west edge of the <col=800000>battlefield</col>, south of the river.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<col=000080>Talk to him again to give him 6 <col=800000>logs</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<col=000080>Then talk to him a third time.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<col=000080>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<col=000080>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<col=000080>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the <col=800000>ballista</col>:</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<col=000080>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<col=000080>Walk north to the stronghold (building where <col=800000>Tracker gnome 1</col> was) and climb over the crumbled wall.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<col=000080>You can ignore or kill the level 48 <col=800000>Khazard commanders</col> that will attack you.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<col=000080>Climb the ladder, search the chest, and take the <col=800000>orb of protection</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+line	
+line	<col=000080>Exit the stronghold through the front door.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+line	
+line	<str>Exit the stronghold through the front door.</str>
+line	
+line	<col=000080>Return to the <col=800000>Tree Gnome Village</col>, and talk to <col=800000>Elkoy</col> to be sent to the centre.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+line	
+line	<str>Exit the stronghold through the front door.</str>
+line	
+line	<str>Return to the Tree Gnome Village, and talk to Elkoy to be sent to the centre.</str>
+line	
+line	<col=000080><col=800000>King Bolren</col> will ask you to get the other two <col=800000>orbs of protection</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+line	
+line	<str>Exit the stronghold through the front door.</str>
+line	
+line	<str>Return to the Tree Gnome Village, and talk to Elkoy to be sent to the centre.</str>
+line	
+line	<str>King Bolren will ask you to get the other two orbs of protection.</str>
+line	
+line	<col=000080>Talk to <col=800000>Khazard warlord</col> north-west of the battlefield (below west West Ardougne, outside of the wall underneath the Underground Pass) and then kill him to retrieve the <col=800000>Orbs of protection</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+line	
+line	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+line	
+line	<str>Talk to him again to give him 6 logs.</str>
+line	
+line	<str>Then talk to him a third time.</str>
+line	
+line	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+line	
+line	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+line	
+line	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+line	
+line	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+line	
+line	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+line	
+line	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+line	
+line	<str>Exit the stronghold through the front door.</str>
+line	
+line	<str>Return to the Tree Gnome Village, and talk to Elkoy to be sent to the centre.</str>
+line	
+line	<str>King Bolren will ask you to get the other two orbs of protection.</str>
+line	
+line	<str>Talk to Khazard warlord north-west of the battlefield (below west West Ardougne, outside of the wall underneath the Underground Pass) and then kill him to retrieve the Orbs of protection.</str>
+line	
+line	<col=000080>Head back to the village and return the orbs to King Bolren.</col>
+done	<str>Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.</str>
+done	
+done	<str>Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.</str>
+done	
+done	<str>Talk to him again to give him 6 logs.</str>
+done	
+done	<str>Then talk to him a third time.</str>
+done	
+done	<str>Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.</str>
+done	
+done	<str>Talk to the first tracker gnome around the north-west of the Khazard Stronghold.</str>
+done	
+done	<str>Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:</str>
+done	
+done	<str>Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.</str>
+done	
+done	<str>Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall.</str>
+done	
+done	<str>You can ignore or kill the level 48 Khazard commanders that will attack you.</str>
+done	
+done	<str>Climb the ladder, search the chest, and take the orb of protection.</str>
+done	
+done	<str>Exit the stronghold through the front door.</str>
+done	
+done	<str>Return to the Tree Gnome Village, and talk to Elkoy to be sent to the centre.</str>
+done	
+done	<str>King Bolren will ask you to get the other two orbs of protection.</str>
+done	
+done	<str>Talk to Khazard warlord north-west of the battlefield (below west West Ardougne, outside of the wall underneath the Underground Pass) and then kill him to retrieve the Orbs of protection.</str>
+done	
+done	<str>Head back to the village and return the orbs to King Bolren.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

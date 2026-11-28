@@ -117,7 +117,7 @@ constructor(
         onHeldOpLabel(objTypes, HgObjs.bell, "Ring") { ringBell() }
         onHeldOpLabel(objTypes, HgObjs.feather, "Blow-on") { blowFeather() }
         onLocOpLabel(locTypes, HgLocs.sacks, "Prod") {
-            runQuestSection(null, dialogue, "Talking to Sir Percival", sackHooks(open = false))
+            runQuestSection(null, dialogue, "Talking to Sir Percival", sackHooks(open = false), speakers = mapOf("Sir Percival" to HgNpcs.percival))
         }
         onLocOpLabel(locTypes, HgLocs.sacks, "Open") { openSacks() }
         onModifyNpcHit(HgNpcs.titan) { excaliburOnly(hit) }

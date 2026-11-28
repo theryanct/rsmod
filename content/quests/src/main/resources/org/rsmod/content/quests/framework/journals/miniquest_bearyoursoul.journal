@@ -1,0 +1,81 @@
+# Generated from the OSRS Wiki page "Bear Your Soul/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to <col=800000>Aretha</col> after reading a book called <col=800000>Soul Journey</col> in the <col=800000>Arceuus Library</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Find and read the book <col=800000>Soul Journey</col> in the <col=800000>Arceuus Library</col>. fairy code CIS.</col>
+step	2	-	Quick guide step 2
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<col=000080>Talk to <col=800000>Aretha</col> at the <col=800000>Soul Altar (Kourend)</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+line	
+line	<col=000080>Go to the Arceuus church east of the library and climb up a staircase to get inside.</col>
+step	4	-	Quick guide step 4
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+line	
+line	<str>Go to the Arceuus church east of the library and climb up a staircase to get inside.</str>
+line	
+line	<col=000080>Climb down the inner staircase to the courtyard in the centre.</col>
+step	5	-	Quick guide step 5
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+line	
+line	<str>Go to the Arceuus church east of the library and climb up a staircase to get inside.</str>
+line	
+line	<str>Climb down the inner staircase to the courtyard in the centre.</str>
+line	
+line	<col=000080>Dig anywhere to get the <col=800000>Damaged soul bearer</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+line	
+line	<str>Go to the Arceuus church east of the library and climb up a staircase to get inside.</str>
+line	
+line	<str>Climb down the inner staircase to the courtyard in the centre.</str>
+line	
+line	<str>Dig anywhere to get the Damaged soul bearer.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Key Master</col>, who is found in <col=800000>Cerberus' Lair</col> within the <col=800000>Taverley Dungeon</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+line	
+line	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+line	
+line	<str>Go to the Arceuus church east of the library and climb up a staircase to get inside.</str>
+line	
+line	<str>Climb down the inner staircase to the courtyard in the centre.</str>
+line	
+line	<str>Dig anywhere to get the Damaged soul bearer.</str>
+line	
+line	<str>Speak to the Key Master, who is found in Cerberus' Lair within the Taverley Dungeon.</str>
+line	
+line	<col=000080>Receive the <col=800000>Soul bearer</col>.</col>
+done	<str>Find and read the book Soul Journey in the Arceuus Library. fairy code CIS.</str>
+done	
+done	<str>Talk to Aretha at the Soul Altar (Kourend).</str>
+done	
+done	<str>Go to the Arceuus church east of the library and climb up a staircase to get inside.</str>
+done	
+done	<str>Climb down the inner staircase to the courtyard in the centre.</str>
+done	
+done	<str>Dig anywhere to get the Damaged soul bearer.</str>
+done	
+done	<str>Speak to the Key Master, who is found in Cerberus' Lair within the Taverley Dungeon.</str>
+done	
+done	<str>Receive the Soul bearer.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

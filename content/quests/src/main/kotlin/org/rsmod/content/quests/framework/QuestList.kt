@@ -17,6 +17,7 @@ import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_AS
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
 import org.rsmod.content.quests.crabquest.CrabQuest.Companion.CRAB_QUEST
 import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
+import org.rsmod.content.quests.fenkenstrain.CreatureOfFenkenstrain.Companion.CREATURE_OF_FENKENSTRAIN
 import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
@@ -78,6 +79,7 @@ import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
+import org.rsmod.content.quests.shilovillage.ShiloVillage.Companion.SHILO_VILLAGE
 import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
 import org.rsmod.content.quests.soulsbane.SoulsBane.Companion.SOULS_BANE
 import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
@@ -88,11 +90,13 @@ import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE
 import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
 import org.rsmod.content.quests.trollstronghold.TrollStronghold.Companion.TROLL_STRONGHOLD
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
+import org.rsmod.content.quests.watchtower.Watchtower.Companion.WATCHTOWER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
 import org.rsmod.content.quests.writingsonthewall.WritingsOnTheWall.Companion.WRITINGS_ON_THE_WALL
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
+import org.rsmod.content.quests.zogre.ZogreFleshEaters.Companion.ZOGRE
 
 /**
  * Every quest this server implements. **Add a quest here when it's built**: quest points and
@@ -115,6 +119,7 @@ public object BuiltQuests {
             COLD_WAR,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            CREATURE_OF_FENKENSTRAIN,
             CRAB_QUEST,
             DADDYS_HOME,
             DEATH_PLATEAU,
@@ -178,6 +183,7 @@ public object BuiltQuests {
             SHEEP_HERDER,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
+            SHILO_VILLAGE,
             SKIPPY_AND_THE_MOGRES,
             SOULS_BANE,
             SLEEPING_GIANTS,
@@ -188,11 +194,13 @@ public object BuiltQuests {
             TRIBAL_TOTEM,
             TROLL_STRONGHOLD,
             VAMPYRE_SLAYER,
+            WATCHTOWER,
             WATERFALL_QUEST,
             WITCHS_HOUSE,
             WITCHS_POTION,
             WRITINGS_ON_THE_WALL,
             X_MARKS_THE_SPOT,
+            ZOGRE,
         )
 
     public val rows: Set<String> = all.mapTo(HashSet()) { it.listRow }

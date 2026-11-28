@@ -1,0 +1,99 @@
+# Generated from the OSRS Wiki page "Mudfoot's Big Adventure/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Captain Harlan</col> just outside the <col=800000>Lumbridge general store</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Captain Harlan</col> by the <col=800000>Lumbridge</col> general store, north of the castle.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<col=000080>Talk to <col=800000>Mudfoot</col> on the other side of the <col=800000>River Lum</col>, by the building just south of the cow field. Do not have a pet follow you!</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<col=000080>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+line	
+line	<col=000080>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the <col=800000>Lumbridge</col> windmill.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+line	
+line	<str>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill.</str>
+line	
+line	<col=000080>Kill the ranger outlaw.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+line	
+line	<str>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill.</str>
+line	
+line	<str>Kill the ranger outlaw.</str>
+line	
+line	<col=000080>Confront the mage outlaw to the south by the <col=800000>H.A.M hideout</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+line	
+line	<str>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill.</str>
+line	
+line	<str>Kill the ranger outlaw.</str>
+line	
+line	<str>Confront the mage outlaw to the south by the H.A.M hideout.</str>
+line	
+line	<col=000080>Head to the <col=800000>Lumbridge</col> graveyard to the south-east with <col=800000>Magic</col> or <col=800000>Ranged</col> gear and kill the final outlaw, who will pray <col=800000>Protect from Melee</col> during the fight.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+line	
+line	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+line	
+line	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+line	
+line	<str>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill.</str>
+line	
+line	<str>Kill the ranger outlaw.</str>
+line	
+line	<str>Confront the mage outlaw to the south by the H.A.M hideout.</str>
+line	
+line	<str>Head to the Lumbridge graveyard to the south-east with Magic or Ranged gear and kill the final outlaw, who will pray Protect from Melee during the fight.</str>
+line	
+line	<col=000080>Return to Captain Harlan and tell him the thieves have been dealt with.</col>
+done	<str>Talk to Captain Harlan by the Lumbridge general store, north of the castle.</str>
+done	
+done	<str>Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field. Do not have a pet follow you!</str>
+done	
+done	<str>Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene. Make sure to finish the dialogue with Captain Harlan.</str>
+done	
+done	<str>Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill.</str>
+done	
+done	<str>Kill the ranger outlaw.</str>
+done	
+done	<str>Confront the mage outlaw to the south by the H.A.M hideout.</str>
+done	
+done	<str>Head to the Lumbridge graveyard to the south-east with Magic or Ranged gear and kill the final outlaw, who will pray Protect from Melee during the fight.</str>
+done	
+done	<str>Return to Captain Harlan and tell him the thieves have been dealt with.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

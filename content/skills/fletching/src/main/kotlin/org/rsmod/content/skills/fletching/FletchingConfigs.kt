@@ -28,7 +28,12 @@ object FletchingQueues : QueueReferences() {
     val fletching = find("fletching")
 }
 
-/** The Birds and the Wasps quest varbit (cache), gating wasp darts. */
+/**
+ * Quest gates on fletching recipes (cache varbits): Zogre Flesh Eaters unlocks (`zombie_ogre`) and
+ * The Birds and the Wasps' quest varbit (wasp darts).
+ */
 object FletchingVarBits : VarBitReferences() {
+    val brutal = find("thzfe_makebrutalarrow")
+    val comp_bow = find("thzfe_makecompozogrebow")
     val baw = find("baw")
 }

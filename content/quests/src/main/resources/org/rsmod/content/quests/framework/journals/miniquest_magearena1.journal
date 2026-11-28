@@ -1,0 +1,141 @@
+# Generated from the OSRS Wiki page "Mage Arena I/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to <col=800000>Kolodion</col> at the <col=800000>Mage Arena</col> bank located in level 53 <col=800000>Wilderness</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 60 Magic
+step	1	-	Quick guide step 1
+line	<col=000080>Travel to the <col=800000>Mage Arena bank</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<col=000080>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</col>
+step	3	-	Quick guide step 3
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<col=000080>Talk to <col=800000>Kolodion</col> at the <col=800000>Mage Arena bank</col>. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</col>
+step	4	-	Quick guide step 4
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<col=000080>Kill <col=800000>Kolodion</col>'s 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</col>
+step	5	-	Quick guide step 5
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<col=000080>Step-into <col=800000>Sparkling pool</col> north-east.</col>
+step	6	-	Quick guide step 6
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<str>Step-into Sparkling pool north-east.</str>
+line	
+line	<col=000080>Go north and pray-at the <col=800000>Statue of Saradomin</col>, <col=800000>Guthix</col>, or <col=800000>Zamorak</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<str>Step-into Sparkling pool north-east.</str>
+line	
+line	<str>Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak.</str>
+line	
+line	<col=000080>Pick up the corresponding <col=800000>Saradomin</col>, <col=800000>Guthix</col>, or <col=800000>Zamorak cape</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<str>Step-into Sparkling pool north-east.</str>
+line	
+line	<str>Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak.</str>
+line	
+line	<str>Pick up the corresponding Saradomin, Guthix, or Zamorak cape.</str>
+line	
+line	<col=000080>Go south and talk to the <col=800000>Chamber Guardian</col> to receive the corresponding <col=800000>Saradomin</col>, <col=800000>Guthix</col>, or <col=800000>Zamorak staff</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<str>Step-into Sparkling pool north-east.</str>
+line	
+line	<str>Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak.</str>
+line	
+line	<str>Pick up the corresponding Saradomin, Guthix, or Zamorak cape.</str>
+line	
+line	<str>Go south and talk to the Chamber Guardian to receive the corresponding Saradomin, Guthix, or Zamorak staff.</str>
+line	
+line	<col=000080>Step-into <col=800000>Sparkling pool</col> south.</col>
+step	10	-	Quick guide step 10
+line	<str>Travel to the Mage Arena bank.</str>
+line	
+line	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+line	
+line	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+line	
+line	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+line	
+line	<str>Step-into Sparkling pool north-east.</str>
+line	
+line	<str>Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak.</str>
+line	
+line	<str>Pick up the corresponding Saradomin, Guthix, or Zamorak cape.</str>
+line	
+line	<str>Go south and talk to the Chamber Guardian to receive the corresponding Saradomin, Guthix, or Zamorak staff.</str>
+line	
+line	<str>Step-into Sparkling pool south.</str>
+line	
+line	<col=000080>Talk to <col=800000>Kolodion</col>.</col>
+done	<str>Travel to the Mage Arena bank.</str>
+done	
+done	<str>Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness.</str>
+done	
+done	<str>Talk to Kolodion at the Mage Arena bank. (red|Warning: You will be teleported into the arena which is in level 54 wilderness.)</str>
+done	
+done	<str>Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)</str>
+done	
+done	<str>Step-into Sparkling pool north-east.</str>
+done	
+done	<str>Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak.</str>
+done	
+done	<str>Pick up the corresponding Saradomin, Guthix, or Zamorak cape.</str>
+done	
+done	<str>Go south and talk to the Chamber Guardian to receive the corresponding Saradomin, Guthix, or Zamorak staff.</str>
+done	
+done	<str>Step-into Sparkling pool south.</str>
+done	
+done	<str>Talk to Kolodion.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

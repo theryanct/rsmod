@@ -1,0 +1,60 @@
+# Generated from the OSRS Wiki page "Transcript:The Ribbiting Tale of a Lily Pad Labour Dispute/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Marcellus</col> in the <col=800000>Locus Oasis</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Children of the Sun
+req	Level 15 Woodcutting
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Marcellus</col> at the <col=800000>Locus Oasis</col>. He made claims about a nearby group of <col=800000>Frogs</col> having plans to overthrow humanity. It seems unlikely, but I should investigate these <col=800000>Frogs</col> to see if there's any truth to these claims.</col>
+step	2	-	After speaking to Marcellus
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<col=000080>The <col=800000>Frogs</col> agreed to begin peace talks with <col=800000>Marcellus</col>. I let him know about this, but he told me he would only be willing to negotiate with their leader. I should see if they have one.</col>
+step	3	-	After speaking to Sue and Gary
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+line	<col=000080>Upon being told about <col=800000>Marcellus'</col> request, the <col=800000>Frogs</col> decided to call an election to pick their leader. However, two of them, <col=800000>Sue</col> and <col=800000>Gary</col>, told me that another, <col=800000>Cuthbert</col>, intends to declare war if he wins. I'll need to make sure that doesn't happen. To do so, I'll need to sabotage the <col=800000>Lily Pad</col> that he will use during the <col=800000>Election Hop-Off</col>. However, I'll need to be careful of <col=800000>Dave</col> and <col=800000>Jane</col>, who are guarding the <col=800000>Lily Pads</col>.</col>
+step	4	-	After the Election Hop-Off
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+line	<str>Upon being told about Marcellus' request, the Frogs decided to call an election to pick their leader. However, two of them, Sue and Gary, told me that another, Cuthbert, intends to declare war if he won. To prevent that from happening, I sabotaged his Election Hop-Off Lily Pad.</str>
+line	<col=000080>The <col=800000>Frogs</col> held an election to select their leader, but due to the sabotage, <col=800000>Cuthbert</col> died, making <col=800000>Sue</col> the winner by default. She then gave me an offer to present to <col=800000>Marcellus</col> that would see the <col=800000>Frogs</col> deal with the nearby <col=800000>Flies</col> for him.</col>
+step	5	-	After presenting Sue's offer to Marcellus
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+line	<str>Upon being told about Marcellus' request, the Frogs decided to call an election to pick their leader. However, two of them, Sue and Gary, told me that another, Cuthbert, intends to declare war if he won. To prevent that from happening, I sabotaged his Election Hop-Off Lily Pad.</str>
+line	<str>The Frogs held an election to select their leader, but due to the sabotage, Cuthbert died, making Sue the winner by default. She then gave me an offer to present to Marcellus'</str><str> that would see the Frogs deal with the nearby Flies for him.</str>
+line	<col=000080>I presented <col=800000>Sue's</col> offer to <col=800000>Marcellus</col>, but he asked to see proof that the <col=800000>Flies</col> need dealing with. I should see if <col=800000>Sue</col> and <col=800000>Gary</col> have any suggestions.</col>
+step	6	-	After planting the plushy in the Capybara Dung
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+line	<str>Upon being told about Marcellus' request, the Frogs decided to call an election to pick their leader. However, two of them, Sue and Gary, told me that another, Cuthbert, intends to declare war if he won. To prevent that from happening, I sabotaged his Election Hop-Off Lily Pad.</str>
+line	<str>The Frogs held an election to select their leader, but due to the sabotage, Cuthbert died, making Sue the winner by default. She then gave me an offer to present to Marcellus'</str><str> that would see the Frogs deal with the nearby Flies for him.</str>
+line	<str>I presented Sue's offer to Marcellus, but he asked to see proof that the Flies needed to be dealt with. Sue and Gary suggested I steal a prized possession from Marcellus and plant it on the Flies.</str>
+line	<col=000080>I stole a <col=800000>Plushy</col> from <col=800000>Marcellus</col> and planted it on the <col=800000>Flies</col>. However, upon doing so, I was attacked by <col=800000>Cuthbert</col>, who it turns out survived the election. I'll need to deal with him.</col>
+step	7	-	After telling Marcellus about his Plushy
+line	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+line	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+line	<str>Upon being told about Marcellus' request, the Frogs decided to call an election to pick their leader. However, two of them, Sue and Gary, told me that another, Cuthbert, intends to declare war if he won. To prevent that from happening, I sabotaged his Election Hop-Off Lily Pad.</str>
+line	<str>The Frogs held an election to select their leader, but due to the sabotage, Cuthbert died, making Sue the winner by default. She then gave me an offer to present to Marcellus'</str><str> that would see the Frogs deal with the nearby Flies for him.</str>
+line	<str>I presented Sue's offer to Marcellus, but he asked to see proof that the Flies needed to be dealt with. Sue and Gary suggested I steal a prized possession from Marcellus and plant it on the Flies.</str>
+line	<str>I stole a Plushy from Marcellus and planted it on the Flies. However, upon doing so, I was attacked by Cuthbert, who it turns out survived the election. Thankfully, I was able to deal with him.</str>
+line	<col=000080>I told <col=800000>Marcellus</col> about his <col=800000>Plushy</col> and he agreed to the peace terms. I should let <col=800000>Sue</col> and <col=800000>Gary</col> know.</col>
+done	<str>I spoke to Marcellus at the Locus Oasis. He made claims about a nearby group of Frogs having plans to overthrow humanity. I decided to look into this and discovered that the Frogs could talk. Despite Marcellus' claims, the Frogs had no plans to overthrow humanity.</str>
+done	<str>The Frogs agreed to begin peace talks with Marcellus. I let him know about this, but he told me he would only be willing to negotiate with their leader.</str>
+done	<str>Upon being told about Marcellus' request, the Frogs decided to call an election to pick their leader. However, two of them, Sue and Gary, told me that another, Cuthbert, intends to declare war if he won. To prevent that from happening, I sabotaged his Election Hop-Off Lily Pad.</str>
+done	<str>The Frogs held an election to select their leader, but due to the sabotage, Cuthbert died, making Sue the winner by default. She then gave me an offer to present to Marcellus'</str><str> that would see the Frogs deal with the nearby Flies for him.</str>
+done	<str>I presented Sue's offer to Marcellus, but he asked to see proof that the Flies needed to be dealt with. Sue and Gary suggested I steal a prized possession from Marcellus and plant it on the Flies.</str>
+done	<str>I stole a Plushy from Marcellus and planted it on the Flies. However, upon doing so, I was attacked by Cuthbert, who it turns out survived the election. Thankfully, I was able to deal with him.</str>
+done	<str>I told Marcellus about his Plushy and he agreed to the peace terms. Sue and Gary thanked me for my help, calling me a hero. I now hope to never go through anything like this ever again.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

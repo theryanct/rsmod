@@ -1,0 +1,67 @@
+# Generated from the OSRS Wiki page "Rag and Bone Man II/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>Odd Old Man</col> in <col=800000>Silvarea</col> north-east of <col=800000>Varrock</col>, by the <col=800000>Limestone Mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 40 Slayer
+req	Level 20 Defence
+req	Creature of Fenkenstrain
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the <col=800000>Odd Old Man</col> north of the <col=800000>Digsite</col>, north of the <col=800000>Limestone mine</col></col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+line	
+line	<col=000080>Talk to <col=800000>Fortunato</col> located in <col=800000>Draynor</col> marketplace and buy 27 <col=800000>jug of vinegar</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+line	
+line	<str>Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar.</str>
+line	
+line	<col=000080>Use all of the <col=800000>jugs of vinegar</col> with all the pots to make 27 <col=800000>pots of vinegar</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+line	
+line	<str>Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar.</str>
+line	
+line	<str>Use all of the jugs of vinegar with all the pots to make 27 pots of vinegar.</str>
+line	
+line	<col=000080>Use all of the bones with your pots of vinegar to get 27 <col=800000>bones in vinegar</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+line	
+line	<str>Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar.</str>
+line	
+line	<str>Use all of the jugs of vinegar with all the pots to make 27 pots of vinegar.</str>
+line	
+line	<str>Use all of the bones with your pots of vinegar to get 27 bones in vinegar.</str>
+line	
+line	<col=000080>Return back to the <col=800000>Odd Old Man</col> and use the bones on the <col=800000>fire</col> next to him to clean them.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+line	
+line	<str>Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar.</str>
+line	
+line	<str>Use all of the jugs of vinegar with all the pots to make 27 pots of vinegar.</str>
+line	
+line	<str>Use all of the bones with your pots of vinegar to get 27 bones in vinegar.</str>
+line	
+line	<str>Return back to the Odd Old Man and use the bones on the fire next to him to clean them.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Odd Old Man</col>.</col>
+done	<str>Talk to the Odd Old Man north of the Digsite, north of the Limestone mine</str>
+done	
+done	<str>Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar.</str>
+done	
+done	<str>Use all of the jugs of vinegar with all the pots to make 27 pots of vinegar.</str>
+done	
+done	<str>Use all of the bones with your pots of vinegar to get 27 bones in vinegar.</str>
+done	
+done	<str>Return back to the Odd Old Man and use the bones on the fire next to him to clean them.</str>
+done	
+done	<str>Talk to the Odd Old Man.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

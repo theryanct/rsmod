@@ -1,0 +1,24 @@
+# Generated from the OSRS Wiki page "Transcript:Cook's Assistant/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to the <col=800000>Cook</col> in <col=800000>Lumbridge Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After quest start
+line	<col=000080>It's the <col=800000>Duke of Lumbridge's</col> birthday and I have to help his <col=800000>Cook</col> make him a <col=800000>birthday cake</col>. To do this I need to bring him the following ingredients:</col>
+line	<col=000080>I need to find a <col=800000>bucket of milk</col>. There's a cattle field east of Lumbridge, I should make sure I take an empty bucket with me.</col>
+line	<col=000080>I need to find a <col=800000>pot of flour</col>. There's a mill found north-west of Lumbridge, I should take an empty pot with me.</col>
+line	<col=000080>I need to find an <col=800000>egg</col>. The cook normally gets his eggs from the Groats' farm, found just to the west of the cattle field.</col>
+done	<str>It was the Duke of Lumbridge's birthday, but his cook had forgotten to buy the ingredients he needed to make him a cake. I brought the cook an egg, some flour and some milk and the cook made a delicious looking cake with them.</str>
+done	<str>As a reward he now lets me use his high quality range which lets me burn things less whenever I wish to cook there.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

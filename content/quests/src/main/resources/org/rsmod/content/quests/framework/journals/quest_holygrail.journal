@@ -1,0 +1,561 @@
+# Generated from the OSRS Wiki page "Holy Grail/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>King Arthur</col> in <col=800000>Camelot</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Attack
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>King Arthur</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to King Arthur.</str>
+line	
+line	<col=000080>Talk to <col=800000>Merlin</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<col=000080>Bank all weapons and armour. Travel to <col=800000>Entrana</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<col=000080>Talk to the <col=800000>High Priest</col> in the chapel.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<col=000080>Travel to <col=800000>Galahad</col>'s house west of <col=800000>McGrubor's Wood</col> (<col=800000>fairy ring</col> code ALS) or <col=800000>combat bracelet</col> to <col=800000>Ranging Guild</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<col=000080>Talk to <col=800000>Galahad</col> and receive the <col=800000>holy table napkin</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<col=000080>Travel to <col=800000>Draynor Manor</col>'s uk=2 southern-most room with the <col=800000>holy table napkin</col> in your inventory and pick up 2 <col=800000>magic whistle</col>s from the table. The whistles will not be visible until you enter the room.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<col=000080>Prepare for the fight against the <col=800000>Black Knight Titan</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<col=000080>Travel north-west of <col=800000>Brimhaven</col> to the north-western peninsula (see the minimap image).</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<col=000080>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<col=000080>Stand under the tower and blow a <col=800000>magic whistle</col> to be teleported to the <col=800000>Fisher Realm</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<col=000080>Fight the <col=800000>Black Knight Titan</col> nearby on the bridge and kill the titan with <col=800000>Excalibur</col>. See the in-depth quest guide for details.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<col=000080>Head south along the river and talk to the <col=800000>fisherman</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<col=000080>Head to the castle, south-west of the fisherman, pick up the <col=800000>Grail bell</col> from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the <col=800000>Magic Whistle</col> or you will be teleported outside and you will have to fight the Black Knight Titan again.)</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<col=000080>Take the stairs to the south, and talk to the <col=800000>Fisher King</col>. (Make sure to talk to him about both options or you will have to kill the <col=800000>Black Knight Titan</col> again if you leave.)</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<col=000080>Travel to <col=800000>Camelot</col> and talk to King Arthur. Make sure to have 1 empty slot in your inventory for <col=800000>Magic gold feather</col> he gives you.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<col=000080>Travel to <col=800000>Goblin Village</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<str>Travel to Goblin Village.</str>
+line	
+line	<col=000080>Use the Open option on the sacks in the house in the east side of Goblin Village.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<str>Travel to Goblin Village.</str>
+line	
+line	<str>Use the Open option on the sacks in the house in the east side of Goblin Village.</str>
+line	
+line	<col=000080>Talk to Sir Percival, he will take your <col=800000>magic whistle</col>. Make sure you have another to get to the <col=800000>Fisher Realm</col> yourself.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<str>Travel to Goblin Village.</str>
+line	
+line	<str>Use the Open option on the sacks in the house in the east side of Goblin Village.</str>
+line	
+line	<str>Talk to Sir Percival, he will take your magic whistle. Make sure you have another to get to the Fisher Realm yourself.</str>
+line	
+line	<col=000080>Travel back to the Fisher Realm (via Brimhaven or using the <col=800000>fairy ring</col> code BJR. You do not need to fight the Titan again either way)</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<str>Travel to Goblin Village.</str>
+line	
+line	<str>Use the Open option on the sacks in the house in the east side of Goblin Village.</str>
+line	
+line	<str>Talk to Sir Percival, he will take your magic whistle. Make sure you have another to get to the Fisher Realm yourself.</str>
+line	
+line	<str>Travel back to the Fisher Realm (via Brimhaven or using the fairy ring code BJR. You do not need to fight the Titan again either way)</str>
+line	
+line	<col=000080>Head to the top floor of the castle's eastern tower and take the <col=800000>Holy grail</col>.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to King Arthur.</str>
+line	
+line	<str>Talk to Merlin.</str>
+line	
+line	<str>Bank all weapons and armour. Travel to Entrana.</str>
+line	
+line	<str>Talk to the High Priest in the chapel.</str>
+line	
+line	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+line	
+line	<str>Talk to Galahad and receive the holy table napkin.</str>
+line	
+line	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+line	
+line	<str>Prepare for the fight against the Black Knight Titan.</str>
+line	
+line	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+line	
+line	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+line	
+line	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+line	
+line	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+line	
+line	<str>Head south along the river and talk to the fisherman.</str>
+line	
+line	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+line	
+line	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+line	
+line	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+line	
+line	<str>Travel to Goblin Village.</str>
+line	
+line	<str>Use the Open option on the sacks in the house in the east side of Goblin Village.</str>
+line	
+line	<str>Talk to Sir Percival, he will take your magic whistle. Make sure you have another to get to the Fisher Realm yourself.</str>
+line	
+line	<str>Travel back to the Fisher Realm (via Brimhaven or using the fairy ring code BJR. You do not need to fight the Titan again either way)</str>
+line	
+line	<str>Head to the top floor of the castle's eastern tower and take the Holy grail.</str>
+line	
+line	<col=000080>Return to <col=800000>King Arthur</col>.</col>
+done	<str>Talk to King Arthur.</str>
+done	
+done	<str>Talk to Merlin.</str>
+done	
+done	<str>Bank all weapons and armour. Travel to Entrana.</str>
+done	
+done	<str>Talk to the High Priest in the chapel.</str>
+done	
+done	<str>Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild.</str>
+done	
+done	<str>Talk to Galahad and receive the holy table napkin.</str>
+done	
+done	<str>Travel to Draynor Manor's uk=2 southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room.</str>
+done	
+done	<str>Prepare for the fight against the Black Knight Titan.</str>
+done	
+done	<str>Travel north-west of Brimhaven to the north-western peninsula (see the minimap image).</str>
+done	
+done	<str>optional* mine gold ore south west of pillars for Easy Karamja Diary Task</str>
+done	
+done	<str>Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm.</str>
+done	
+done	<str>Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details.</str>
+done	
+done	<str>Head south along the river and talk to the fisherman.</str>
+done	
+done	<str>Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)</str>
+done	
+done	<str>Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)</str>
+done	
+done	<str>Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you.</str>
+done	
+done	<str>Travel to Goblin Village.</str>
+done	
+done	<str>Use the Open option on the sacks in the house in the east side of Goblin Village.</str>
+done	
+done	<str>Talk to Sir Percival, he will take your magic whistle. Make sure you have another to get to the Fisher Realm yourself.</str>
+done	
+done	<str>Travel back to the Fisher Realm (via Brimhaven or using the fairy ring code BJR. You do not need to fight the Titan again either way)</str>
+done	
+done	<str>Head to the top floor of the castle's eastern tower and take the Holy grail.</str>
+done	
+done	<str>Return to King Arthur.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

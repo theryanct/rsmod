@@ -1,0 +1,659 @@
+# Generated from the OSRS Wiki page "The Garden of Death/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Search the <col=800000>tent</col> at the campsite found east of the chasm at the southern end of the <col=800000>Kebos Lowlands</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Farming
+step	1	-	Quick guide step 1
+line	<col=000080>Start the quest by searching the tent for <col=800000>Kasonde's journal</col> (<col=800000>Fairy ring</col> with code BLS and head south east).</col>
+step	2	-	Quick guide step 2
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<col=000080>Read the journal.</col>
+step	3	-	Quick guide step 3
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<col=000080>Search the camping equipment to receive <col=800000>secateurs</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<col=000080>Climb down the nearby hole.</col>
+step	5	-	Quick guide step 5
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<col=000080>Search the stone table labelled "1" in the image below to receive the first <col=800000>stone tablet</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<col=000080>Read the stone tablet and take the note to receive the <col=800000>word translations</col> scroll.</col>
+step	7	-	Quick guide step 7
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<col=000080>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</col>
+step	8	-	Quick guide step 8
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<col=000080>Chat will show a prompt about having translated enough once you enter all words. The hole on <col=800000>Molch Island</col> will not appear if any words are missing.</col>
+step	9	-	Quick guide step 9
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<col=000080>Climb-up the rope to exit the hole.</col>
+step	10	-	Quick guide step 10
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<col=000080>Travel to <col=800000>Lake Molch</col> via <col=800000>Boaty</col> and select <col=800000>Molch Island</col>. (Fairy ring with code DJR and head west.)</col>
+step	11	-	Quick guide step 11
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<col=000080>Enter the hole on Molch Island.</col>
+step	12	-	Quick guide step 12
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<col=000080>Inspect the vines for a <col=800000>dirty note</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<col=000080>Cut the vines with your secateurs and squeeze through them.</col>
+step	14	-	Quick guide step 14
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<col=000080>Search the stone table labelled "1" in the image below to receive the second <col=800000>stone tablet</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<col=000080>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</col>
+step	16	-	Quick guide step 16
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<col=000080>Climb-up the rope to exit the hole.</col>
+step	17	-	Quick guide step 17
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<col=000080>Travel to <col=800000>Xeric's Shrine</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<col=000080>Enter the hole at Xeric's Shrine.</col>
+step	19	-	Quick guide step 19
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<col=000080>Search the stone table labelled "1" in the image below to receive the third <col=800000>stone tablet</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+line	
+line	<col=000080>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</col>
+step	21	-	Quick guide step 21
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</str>
+line	
+line	<col=000080>Make your way to the <col=800000>Ruins of Morra</col>. Enter the hole there.</col>
+step	22	-	Quick guide step 22
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</str>
+line	
+line	<str>Make your way to the Ruins of Morra. Enter the hole there.</str>
+line	
+line	<col=000080>Search the stone table labelled "1" in the image below to receive the final <col=800000>stone tablet</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</str>
+line	
+line	<str>Make your way to the Ruins of Morra. Enter the hole there.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the final stone tablet.</str>
+line	
+line	<col=000080>Read the stone tablet, then input the following words on the word translations scroll: Few, Big, Sun, Moon, Life, Death, Mind, Home, Air, Fire.</col>
+step	24	-	Quick guide step 24
+line	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+line	
+line	<str>Read the journal.</str>
+line	
+line	<str>Search the camping equipment to receive secateurs.</str>
+line	
+line	<str>Climb down the nearby hole.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+line	
+line	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+line	
+line	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+line	
+line	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+line	
+line	<str>Enter the hole on Molch Island.</str>
+line	
+line	<str>Inspect the vines for a dirty note.</str>
+line	
+line	<str>Cut the vines with your secateurs and squeeze through them.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+line	
+line	<str>Climb-up the rope to exit the hole.</str>
+line	
+line	<str>Travel to Xeric's Shrine.</str>
+line	
+line	<str>Enter the hole at Xeric's Shrine.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</str>
+line	
+line	<str>Make your way to the Ruins of Morra. Enter the hole there.</str>
+line	
+line	<str>Search the stone table labelled "1" in the image below to receive the final stone tablet.</str>
+line	
+line	<str>Read the stone tablet, then input the following words on the word translations scroll: Few, Big, Sun, Moon, Life, Death, Mind, Home, Air, Fire.</str>
+line	
+line	<col=000080>Read the stone tablet again and then read the <col=800000>warning note</col>.</col>
+done	<str>Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).</str>
+done	
+done	<str>Read the journal.</str>
+done	
+done	<str>Search the camping equipment to receive secateurs.</str>
+done	
+done	<str>Climb down the nearby hole.</str>
+done	
+done	<str>Search the stone table labelled "1" in the image below to receive the first stone tablet.</str>
+done	
+done	<str>Read the stone tablet and take the note to receive the word translations scroll.</str>
+done	
+done	<str>Read the word translations scroll and click "Attempt Translation". Input the following words and press enter for each: Island, Water, Time, Vessel, North.</str>
+done	
+done	<str>Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing.</str>
+done	
+done	<str>Climb-up the rope to exit the hole.</str>
+done	
+done	<str>Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)</str>
+done	
+done	<str>Enter the hole on Molch Island.</str>
+done	
+done	<str>Inspect the vines for a dirty note.</str>
+done	
+done	<str>Cut the vines with your secateurs and squeeze through them.</str>
+done	
+done	<str>Search the stone table labelled "1" in the image below to receive the second stone tablet.</str>
+done	
+done	<str>Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth.</str>
+done	
+done	<str>Climb-up the rope to exit the hole.</str>
+done	
+done	<str>Travel to Xeric's Shrine.</str>
+done	
+done	<str>Enter the hole at Xeric's Shrine.</str>
+done	
+done	<str>Search the stone table labelled "1" in the image below to receive the third stone tablet.</str>
+done	
+done	<str>Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South.</str>
+done	
+done	<str>Make your way to the Ruins of Morra. Enter the hole there.</str>
+done	
+done	<str>Search the stone table labelled "1" in the image below to receive the final stone tablet.</str>
+done	
+done	<str>Read the stone tablet, then input the following words on the word translations scroll: Few, Big, Sun, Moon, Life, Death, Mind, Home, Air, Fire.</str>
+done	
+done	<str>Read the stone tablet again and then read the warning note.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

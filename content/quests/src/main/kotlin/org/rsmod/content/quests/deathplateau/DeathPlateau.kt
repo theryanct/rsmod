@@ -178,7 +178,7 @@ constructor(
             runQuestSection(null, dialogue, "Trying to enter Harold's room before talking to Eohric")
             return
         }
-        runQuestSection(null, dialogue, "Entering Harold's room")
+        runQuestSection(null, dialogue, "Entering Harold's room", speakers = mapOf("Harold" to DpNpcs.harold))
         passThroughWall(door)
     }
 

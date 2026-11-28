@@ -150,6 +150,11 @@ MANUAL += [
     ("bronze", "nails_bronze", 7, 8.4), ("iron", "nails_iron", 18, 15.6), ("steel", "nails", 33, 30.6),
     ("black", "nails_black", 38, 39), ("mithril", "nails_mithril", 49, 45), ("adamant", "nails_adamant", 62, 61.2),
     ("rune", "nails_rune", 77, 75)]]
+# Comp ogre bow (Wiki "Unstrung comp bow" / "Comp ogre bow"; Zogre Flesh Eaters).
+MANUAL += [
+    ("knife", "unstrung_zogre_bow", 1, 30, 45, 3, "human_fletching", [("achey_tree_logs", 1), ("wolf_bones", 1)]),
+    ("string", "zogre_bow", 1, 30, 45, 2, "-", [("unstrung_zogre_bow", 1), ("bow_string", 1)]),
+]
 # Wasp darts (The Birds and the Wasps; Wiki Recipe templates): wasp stings with any of ten feather
 # kinds. The bucket rows aren't plain-feather sets, so kind_of() skips them; Fletching.kt gates
 # both on the quest varbit `baw`.
@@ -160,8 +165,15 @@ MANUAL += [("combine", "baw_wasp_dart", 10, 1, 5, 1, "human_fletching_add_dart_f
             [("baw_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
 MANUAL += [("combine", "baw_killer_wasp_dart", 10, 15, 25, 1, "human_fletching_add_dart_feathers_killer_wasp",
             [("baw_killer_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
+bucket_seen = set(seen)  # (kind, product, first material) from the Wiki bucket
+manual_seen = set()
 for m in MANUAL:
-    if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
+    if (m[0], m[1], m[7][0][0]) in bucket_seen:
+        continue  # the Wiki bucket already has it
+    key = (m[0], m[1], tuple(o for o, _ in m[7]))
+    if key not in manual_seen:  # stacked branches can append the same MANUAL row twice
+        manual_seen.add(key)
+        rows.append(m)
 
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki recipe bucket by tools/skills/fletching_to_tsv.py - do not edit.\n")

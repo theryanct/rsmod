@@ -1,0 +1,85 @@
+# Generated from the OSRS Wiki page "The Frozen Door/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Receive an <col=800000>important letter</col> from a <col=800000>messenger</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Desert Treasure I
+req	Level 70 Agility
+req	Level 70 Hitpoints
+req	Level 70 Ranged
+req	Level 70 Strength
+step	1	-	Quick guide step 1
+line	<col=000080>After the completion of the <col=800000>Desert Treasure I</col> <col=800000>quest</col>, a <col=800000>messenger</col> will randomly appear to deliver an <col=800000>important letter</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<col=000080>Read the letter to start the miniquest, then destroy it.</col>
+step	3	-	Quick guide step 3
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<str>Read the letter to start the miniquest, then destroy it.</str>
+line	
+line	<col=000080>Kill all four <col=800000>God Wars Dungeon</col> generals once each, to obtain their pieces of the <col=800000>frozen key</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<str>Read the letter to start the miniquest, then destroy it.</str>
+line	
+line	<str>Kill all four God Wars Dungeon generals once each, to obtain their pieces of the frozen key.</str>
+line	
+line	<col=000080>Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.</col>
+step	5	-	Quick guide step 5
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<str>Read the letter to start the miniquest, then destroy it.</str>
+line	
+line	<str>Kill all four God Wars Dungeon generals once each, to obtain their pieces of the frozen key.</str>
+line	
+line	<str>Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.</str>
+line	
+line	<col=000080>Travel to the <col=800000>Frozen Door</col>, located in the southern part of the God War Dungeon, just east of the entrance to <col=800000>Armadyl's Eyrie</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<str>Read the letter to start the miniquest, then destroy it.</str>
+line	
+line	<str>Kill all four God Wars Dungeon generals once each, to obtain their pieces of the frozen key.</str>
+line	
+line	<str>Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.</str>
+line	
+line	<str>Travel to the Frozen Door, located in the southern part of the God War Dungeon, just east of the entrance to Armadyl's Eyrie.</str>
+line	
+line	<col=000080>Use the key to open the door.</col>
+step	7	-	Quick guide step 7
+line	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+line	
+line	<str>Read the letter to start the miniquest, then destroy it.</str>
+line	
+line	<str>Kill all four God Wars Dungeon generals once each, to obtain their pieces of the frozen key.</str>
+line	
+line	<str>Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.</str>
+line	
+line	<str>Travel to the Frozen Door, located in the southern part of the God War Dungeon, just east of the entrance to Armadyl's Eyrie.</str>
+line	
+line	<str>Use the key to open the door.</str>
+line	
+line	<col=000080>Talk to <col=800000>Ashuelot Reis</col>.</col>
+done	<str>After the completion of the Desert Treasure I quest, a messenger will randomly appear to deliver an important letter.</str>
+done	
+done	<str>Read the letter to start the miniquest, then destroy it.</str>
+done	
+done	<str>Kill all four God Wars Dungeon generals once each, to obtain their pieces of the frozen key.</str>
+done	
+done	<str>Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.</str>
+done	
+done	<str>Travel to the Frozen Door, located in the southern part of the God War Dungeon, just east of the entrance to Armadyl's Eyrie.</str>
+done	
+done	<str>Use the key to open the door.</str>
+done	
+done	<str>Talk to Ashuelot Reis.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

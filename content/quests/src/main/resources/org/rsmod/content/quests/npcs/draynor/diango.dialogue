@@ -1,0 +1,52 @@
+# Generated from the OSRS Wiki page "Transcript:Diango" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Diango	Howdy there partner! Want to see my spinning plates? Or did ya want a holiday item back?
+1	option	Spinning plates?
+2	line	Player	Spinning plates?
+2	line	Diango	That's right. There's a funny story behind them, their shipment was held up by thieves.
+2	line	Diango	The crate was marked 'Dragon Plates'. Apparently they thought it was some kind of armour, when really it's just a plate with a dragon on it!
+2	action	
+1	option	I'd like to check holiday items please!
+2	line	Player	I'd like to check holiday items please!
+2	line	Diango	Sure thing, let me just see what you're missing.
+2	action	Diango's Holiday Item Retrieval opens.
+1	option	What else are you selling?
+2	line	Player	What else are you selling?
+2	action	
+1	option	I'm fine, thanks.
+2	line	Player	I'm fine, thanks.
+2	action	end
+0	section	Obtaining banana hat
+1	line	Diango	Howdy there partner! You came at just the right time! I've got something for ya!
+1	line	Player	Oh really? What is it?
+1	line	Diango	Well, I did some rooting around in my house and found this really neat hat.
+1	line	Player	A hat? What sort of hat...
+1	line	Diango	A banana hat! Would you like it?
+1	option	Yes.
+2	line	Player	Sure, I'll take the hat.
+2	cond	If the player has no inventory space:
+3	line	Diango	Looks like you've got no space for it, I'll hold onto it till you do. Just come to me to claim it.
+3	action	continues
+2	cond	If the player has inventory space:
+3	line	Diango	There you go amigo, enjoy!
+3	action	continues
+2	line	Diango	So what else can I do for you partner? Want to see my spinning plates? Or did ya want a holiday item back?
+2	action	initial
+1	option	No.
+2	line	Player	No thanks, I don't want it right now.
+2	line	Diango	No problem amigo, come back to me to claim it if you change your mind.
+2	action	end
+0	section	Obtaining mystic cards
+1	line	Diango	Oh wow, you did it! Well done!
+1	line	Player	Thank you!
+1	line	Diango	I was wondering when someone would complete this. I've been holding on to the reward for a while.
+1	line	Diango	The being who gave it to me was... rather strange.
+1	line	Player	What was their name?
+1	line	Diango	They didn't say. But they did give me some sage advice before they left.
+1	line	Player	What was it?
+1	line	Diango	I don't remember exactly. Something about making the most of your time...
+1	line	Player	Thyme!
+1	line	Diango	Where?! I don't see any!
+1	line	Player	I... don't worry. Thank you for the reward, see you around!
+1	line	Diango	See you!
+1	action	end

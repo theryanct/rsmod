@@ -1,0 +1,51 @@
+# Generated from the OSRS Wiki page "Druidic Ritual/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Kaqemeex</col> in the stone circle north of <col=800000>Taverley</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Kaqemeex</col> in the stone circle north of <col=800000>Taverley</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Kaqemeex in the stone circle north of Taverley.</str>
+line	
+line	<col=000080>Talk to <col=800000>Sanfew</col>, who is upstairs in the Herb shop in Taverley.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Kaqemeex in the stone circle north of Taverley.</str>
+line	
+line	<str>Talk to Sanfew, who is upstairs in the Herb shop in Taverley.</str>
+line	
+line	<col=000080>Bring the four meats to the <col=800000>Cauldron</col> in <col=800000>Taverley Dungeon</col>, and use them on the Cauldron to enchant them.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Kaqemeex in the stone circle north of Taverley.</str>
+line	
+line	<str>Talk to Sanfew, who is upstairs in the Herb shop in Taverley.</str>
+line	
+line	<str>Bring the four meats to the Cauldron in Taverley Dungeon, and use them on the Cauldron to enchant them.</str>
+line	
+line	<col=000080>Talk to <col=800000>Sanfew</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Kaqemeex in the stone circle north of Taverley.</str>
+line	
+line	<str>Talk to Sanfew, who is upstairs in the Herb shop in Taverley.</str>
+line	
+line	<str>Bring the four meats to the Cauldron in Taverley Dungeon, and use them on the Cauldron to enchant them.</str>
+line	
+line	<str>Talk to Sanfew.</str>
+line	
+line	<col=000080>Talk to <col=800000>Kaqemeex</col>.</col>
+done	<str>Talk to Kaqemeex in the stone circle north of Taverley.</str>
+done	
+done	<str>Talk to Sanfew, who is upstairs in the Herb shop in Taverley.</str>
+done	
+done	<str>Bring the four meats to the Cauldron in Taverley Dungeon, and use them on the Cauldron to enchant them.</str>
+done	
+done	<str>Talk to Sanfew.</str>
+done	
+done	<str>Talk to Kaqemeex.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

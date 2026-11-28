@@ -1,0 +1,611 @@
+# Generated from the OSRS Wiki page "Elemental Workshop I/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Search the <col=800000>bookcase</col> in the house immediately south-west of the <col=800000>Seers' Village</col> bank.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Mining
+req	Level 20 Smithing
+req	Level 20 Crafting
+step	1	-	Quick guide step 1
+line	<col=000080>In <col=800000>Seers' Village</col>, go to the house immediately south of the anvil.</col>
+step	2	-	Quick guide step 2
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<col=000080>Search the <col=800000>bookcase</col> on the eastern wall to find a <col=800000>battered book</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<col=000080>Read the book, then use a <col=800000>knife</col> on it to get a <col=800000>Battered key</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<col=000080>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</col>
+step	5	-	Quick guide step 5
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<col=000080>Go down the stairs.</col>
+step	6	-	Quick guide step 6
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<col=000080>Go into the room to the north.</col>
+step	7	-	Quick guide step 7
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<col=000080>Turn the water controls east of the water wheel.</col>
+step	8	-	Quick guide step 8
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<col=000080>Turn the water controls west of the water wheel.</col>
+step	9	-	Quick guide step 9
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<col=000080>Pull the lever by the water wheel.</col>
+step	10	-	Quick guide step 10
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<col=000080>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</col>
+step	11	-	Quick guide step 11
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<col=000080>(Optional) To obtain <col=800000>leather</col>, search a <col=800000>crate</col> north of the staircase in the middle room.</col>
+step	12	-	Quick guide step 12
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<col=000080>(Optional) To obtain a <col=800000>needle</col>, search the <col=800000>two stacked crates</col> on the left as you enter the west room.</col>
+step	13	-	Quick guide step 13
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<col=000080>Go to the eastern room.</col>
+step	14	-	Quick guide step 14
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<col=000080>With a <col=800000>needle</col>, <col=800000>thread</col>, and <col=800000>leather</col>, fix the bellows.</col>
+step	15	-	Quick guide step 15
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<col=000080>Pull the lever by the bellows.</col>
+step	16	-	Quick guide step 16
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<col=000080>Go to the middle room and search the <col=800000>boxes</col> in the north-east to get <col=800000>a stone bowl</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<col=000080>Go to the south room.</col>
+step	18	-	Quick guide step 18
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<col=000080>Use a stone bowl on the lava trough to the south.</col>
+step	19	-	Quick guide step 19
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<str>Use a stone bowl on the lava trough to the south.</str>
+line	
+line	<col=000080>Use the bowl of lava on the <col=800000>Furnace</col> in the room.</col>
+step	20	-	Quick guide step 20
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<str>Use a stone bowl on the lava trough to the south.</str>
+line	
+line	<str>Use the bowl of lava on the Furnace in the room.</str>
+line	
+line	<col=000080>Go to the western room and mine an <col=800000>elemental rock</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<str>Use a stone bowl on the lava trough to the south.</str>
+line	
+line	<str>Use the bowl of lava on the Furnace in the room.</str>
+line	
+line	<str>Go to the western room and mine an elemental rock.</str>
+line	
+line	<col=000080>Kill the <col=800000>Earth elemental</col> and pick up the <col=800000>elemental ore</col> it drops (get 2 more ores if you are planning to do <col=800000>Elemental Workshop II</col>).</col>
+step	22	-	Quick guide step 22
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<str>Use a stone bowl on the lava trough to the south.</str>
+line	
+line	<str>Use the bowl of lava on the Furnace in the room.</str>
+line	
+line	<str>Go to the western room and mine an elemental rock.</str>
+line	
+line	<str>Kill the Earth elemental and pick up the elemental ore it drops (get 2 more ores if you are planning to do Elemental Workshop II).</str>
+line	
+line	<col=000080>Use the elemental ore and four <col=800000>coal</col> on the furnace in the southern room. You will get an <col=800000>Elemental metal</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+line	
+line	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+line	
+line	<str>Read the book, then use a knife on it to get a Battered key.</str>
+line	
+line	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+line	
+line	<str>Go down the stairs.</str>
+line	
+line	<str>Go into the room to the north.</str>
+line	
+line	<str>Turn the water controls east of the water wheel.</str>
+line	
+line	<str>Turn the water controls west of the water wheel.</str>
+line	
+line	<str>Pull the lever by the water wheel.</str>
+line	
+line	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+line	
+line	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+line	
+line	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+line	
+line	<str>Go to the eastern room.</str>
+line	
+line	<str>With a needle, thread, and leather, fix the bellows.</str>
+line	
+line	<str>Pull the lever by the bellows.</str>
+line	
+line	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+line	
+line	<str>Go to the south room.</str>
+line	
+line	<str>Use a stone bowl on the lava trough to the south.</str>
+line	
+line	<str>Use the bowl of lava on the Furnace in the room.</str>
+line	
+line	<str>Go to the western room and mine an elemental rock.</str>
+line	
+line	<str>Kill the Earth elemental and pick up the elemental ore it drops (get 2 more ores if you are planning to do Elemental Workshop II).</str>
+line	
+line	<str>Use the elemental ore and four coal on the furnace in the southern room. You will get an Elemental metal.</str>
+line	
+line	<col=000080>With the <col=800000>slashed book</col>, go to the middle room and smith an <col=800000>elemental shield</col> by using the <col=800000>elemental metal</col> on the workbench.</col>
+done	<str>In Seers' Village, go to the house immediately south of the anvil.</str>
+done	
+done	<str>Search the bookcase on the eastern wall to find a battered book.</str>
+done	
+done	<str>Read the book, then use a knife on it to get a Battered key.</str>
+done	
+done	<str>Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).</str>
+done	
+done	<str>Go down the stairs.</str>
+done	
+done	<str>Go into the room to the north.</str>
+done	
+done	<str>Turn the water controls east of the water wheel.</str>
+done	
+done	<str>Turn the water controls west of the water wheel.</str>
+done	
+done	<str>Pull the lever by the water wheel.</str>
+done	
+done	<str>(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.</str>
+done	
+done	<str>(Optional) To obtain leather, search a crate north of the staircase in the middle room.</str>
+done	
+done	<str>(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room.</str>
+done	
+done	<str>Go to the eastern room.</str>
+done	
+done	<str>With a needle, thread, and leather, fix the bellows.</str>
+done	
+done	<str>Pull the lever by the bellows.</str>
+done	
+done	<str>Go to the middle room and search the boxes in the north-east to get a stone bowl.</str>
+done	
+done	<str>Go to the south room.</str>
+done	
+done	<str>Use a stone bowl on the lava trough to the south.</str>
+done	
+done	<str>Use the bowl of lava on the Furnace in the room.</str>
+done	
+done	<str>Go to the western room and mine an elemental rock.</str>
+done	
+done	<str>Kill the Earth elemental and pick up the elemental ore it drops (get 2 more ores if you are planning to do Elemental Workshop II).</str>
+done	
+done	<str>Use the elemental ore and four coal on the furnace in the southern room. You will get an Elemental metal.</str>
+done	
+done	<str>With the slashed book, go to the middle room and smith an elemental shield by using the elemental metal on the workbench.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

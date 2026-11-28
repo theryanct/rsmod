@@ -1,0 +1,67 @@
+# Generated from the OSRS Wiki page "Transcript:Troubled Tortugans/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to an <col=800000>Injured Tortugan</col> on a <col=800000>Remote Island</col> in the <col=800000>Unquiet Ocean</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Tortugan #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2025</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Pandemonium
+req	Level 51 Slayer
+req	Level 48 Construction
+req	Level 45 Sailing
+req	Level 45 Hunter
+req	Level 40 Woodcutting
+req	Level 34 Crafting
+before	<col=000080>Recommendations:</col>
+req	Combat Level 60
+step	1	-	After starting the quest
+line	<col=000080>I encountered an <col=800000>Injured Tortugan</col> on a <col=800000>Remote Island</col> in the <col=800000>Unquiet Ocean</col>. I should see if she needs any help with her injury.</col>
+step	2	-	After handing Bandages to Floopa
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<col=000080>I gathered some <col=800000>Seaweed</col> and a <col=800000>Palm Leaf</col> and used them to make some <col=800000>Bandages</col> for the <col=800000>Injured Tortugan</col>. I should see how she's doing now.</col>
+step	3	-	After boarding the boat
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+line	<col=000080>I should use my <col=800000>Boat</col> to take <col=800000>Floopa</col> to the <col=800000>Great Conch</col>. I can find the <col=800000>Great Conch</col> south of <col=800000>Menaphos</col> in the <col=800000>Unquiet Ocean</col>.</col>
+step	4	-	After speaking to Elder Raley or Floopa
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+line	<str>I used my Boat to take Floopa to the Great Conch. We arrived there and docked at the Summer Shore, where we were met by Elder Korel. He sent Floopa to see Elder Raley for healing and gave me permission to remain on the island.</str>
+line	<col=000080>I checked in with <col=800000>Floopa</col> in <col=800000>Raley's</col> home in the south east corner of the the <col=800000>Summer Shore</col>. <col=800000>Raley</col> got to work on helping her, but he mentioned also needing to do some repair work due to a recent attack on the town by a <col=800000>Gryphon</col>. I should see if I can help in any way.</col>
+step	5	-	After finishing the repairs
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+line	<str>I used my Boat to take Floopa to the Great Conch. We arrived there and docked at the Summer Shore, where we were met by Elder Korel. He sent Floopa to see Elder Raley for healing and gave me permission to remain on the island.</str>
+line	<str>I checked in with Floopa in Raley's home in the south east corner of the the Sumer Shore. Raley got to work on helping her, but he mentioned also needing to do some repair work due to a recent attack on the town by a Gryphon.</str>
+line	<col=000080>I helped <col=800000>Raley</col> by repairing some damage around town caused by the <col=800000>Gryphon</col>. I should see if he needs help with anything else.</col>
+step	6	-	After speaking to Elder Korel, Elder Raley or Floopa
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+line	<str>I used my Boat to take Floopa to the Great Conch. We arrived there and docked at the Summer Shore, where we were met by Elder Korel. He sent Floopa to see Elder Raley for healing and gave me permission to remain on the island.</str>
+line	<str>I checked in with Floopa in Raley's home in the south east corner of the the Sumer Shore. Raley got to work on helping her, but he mentioned also needing to do some repair work due to a recent attack on the town by a Gryphon.</str>
+line	<str>I helped Raley by repairing some damage around town caused by the Gryphon attack. I asked if he needed any further help and he suggested I track down the Gryphon itself. I picked up a trail in the middle of town and followed it to the Gryphon's lair. I then went inside and dealt with the Gryphon.</str>
+line	<col=000080>I returned to <col=800000>Raley</col> after dealing with the <col=800000>Gryphon</col>, but upon arrival I found <col=800000>Korel</col> telling <col=800000>Raley</col> and <col=800000>Floopa</col> about another <col=800000>Gryphon</col> attacking the <col=800000>Little Pearl</col>, the island where the tortugans lay their eggs. I offered to help and <col=800000>Korel</col> directed me to sail to the <col=800000>Little Pearl</col> south of the <col=800000>Great Conch</col>. Before doing so, I should make sure I pick up a <col=800000>Shield</col> from <col=800000>Elder Blunn</col> in the <col=800000>Market</col> on the <col=800000>Great Conch</col> to help me defend against the <col=800000>Gryphon</col>.</col>
+step	7	-	After killing the Shellbane gryphon
+line	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+line	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+line	<str>I used my Boat to take Floopa to the Great Conch. We arrived there and docked at the Summer Shore, where we were met by Elder Korel. He sent Floopa to see Elder Raley for healing and gave me permission to remain on the island.</str>
+line	<str>I checked in with Floopa in Raley's home in the south east corner of the the Sumer Shore. Raley got to work on helping her, but he mentioned also needing to do some repair work due to a recent attack on the town by a Gryphon.</str>
+line	<str>I helped Raley by repairing some damage around town caused by the Gryphon attack. I asked if he needed any further help and he suggested I track down the Gryphon itself. I picked up a trail in the middle of town and followed it to the Gryphon's lair. I then went inside and dealt with the Gryphon.</str>
+line	<str>I returned to Raley after dealing with the Gryphon, but upon arrival I found Korel telling Raley and Floopa about another Gryphon attack on the Little Pearl, the island where the tortugans lay their eggs. I offered to help and Korel directed me to sail to the Little Pearl south of the Great Conch. Upon arrival, I saw a Strange Ship with Red Sails sailing away from the island.</str>
+line	<col=000080>I helped <col=800000>Korel</col> kill the <col=800000>Gryphon</col> on the <col=800000>Little Pearl</col>. I should talk to him about the <col=800000>Strange Ship</col> I saw.</col>
+done	<str>I encountered an Injured Tortugan on a Remote Island in the Unquiet Ocean. Despite her initial reluctance, I convinced her to let me help her with her injury.</str>
+done	<str>I gathered some Seaweed and a Palm Leaf and used them to make some Bandages for the Injured Tortugan. She thanked me before introducing herself as Floopa. I suggested she get more help with her injury and she asked me to take her to the Great Conch.</str>
+done	<str>I used my Boat to take Floopa to the Great Conch. We arrived there and docked at the Summer Shore, where we were met by Elder Korel. He sent Floopa to see Elder Raley for healing and gave me permission to remain on the island.</str>
+done	<str>I checked in with Floopa in Raley's home in the south east corner of the the Sumer Shore. Raley got to work on helping her, but he mentioned also needing to do some repair work due to a recent attack on the town by a Gryphon.</str>
+done	<str>I helped Raley by repairing some damage around town caused by the Gryphon attack. I asked if he needed any further help and he suggested I track down the Gryphon itself. I picked up a trail in the middle of town and followed it to the Gryphon's lair. I then went inside and dealt with the Gryphon.</str>
+done	<str>I returned to Raley after dealing with the Gryphon, but upon arrival I found Korel telling Raley and Floopa about another Gryphon attack on the Little Pearl, the island where the tortugans lay their eggs. I offered to help and Korel directed me to sail to the Little Pearl south of the Great Conch. Upon arrival, I saw a Strange Ship with Red Sails sailing away from the island.</str>
+done	<str>I helped Korel kill the Gryphon on the Little Pearl. I then spoke to him about the Strange Ship I saw. He was concerned, noting that the Little Pearl had never been attacked by gryphons before.</str>
+done	<str>I returned to the Great Conch and discussed the Strange Ship I saw. Floopa seemed especially concerned, but said she needed time to heal before properly considering the meaning of it. Raley thanked me for all my help and suggested I return later after giving Floopa time to heal.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

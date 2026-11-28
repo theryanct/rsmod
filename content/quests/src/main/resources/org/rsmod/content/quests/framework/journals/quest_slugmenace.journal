@@ -1,0 +1,662 @@
+# Generated from the OSRS Wiki page "The Slug Menace/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Sir Tiffy Cashien</col> in <col=800000>Falador Park</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Crafting
+req	Level 30 Runecraft
+req	Level 30 Slayer
+req	Level 30 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Sir Tiffy Cashien</col> in Falador Park to get a <col=800000>Commorb v2</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<col=000080>Talk to <col=800000>Col. O'Niall</col> on the north-east dock in <col=800000>Witchaven</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<col=000080>Talk to the following people in Witchaven in any order:</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<col=000080>Talk to Col. O'Niall again.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<col=000080>Climb down the Old Ruin Entrance (Dungeon sign) west of <col=800000>Witchaven</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<col=000080>Push the false wall on the east wall by the entrance (red on minimap).</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<col=000080>Follow the path to the imposing door, using the shortcut if able, try to open it.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<col=000080>Scan with the <col=800000>Commorb v2</col> to acquire the door transcription (make sure you have one free inventory space).</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<col=000080>Pick up a <col=800000>dead sea slug</col> just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<col=000080>Talk to <col=800000>Jorral</col> in the outpost (necklace of passage) north-west of Ardougne. if <col=800000>Making History</col> has not been started.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<col=000080>Talk to <col=800000>Col. O'Niall</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<col=000080>Talk to <col=800000>Brother Maledict</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<col=000080>Go to the mayor's house and search the <col=800000>study desk</col> until you get a <col=800000>page</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<col=000080>Talk to <col=800000>Ezekial Lovecraft</col> in the fishing store (make sure you have one free inventory space).</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<col=000080>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<col=000080>Use swamp paste on one of the fragments. Savant will stop you.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<col=000080>Talk to <col=800000>Jeb</col> (near Holgart) and travel to the Fishing Platform.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<col=000080>Talk to <col=800000>Bailey</col> on the south-west part Fishing Platform, give him the dead slug.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<col=000080>Use the sea slug glue on a fragment, then solve the puzzle.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+line	
+line	<col=000080>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+line	
+line	<str>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</str>
+line	
+line	<col=000080>Use the chiselled stones on their respective <col=800000>Runic altar</col>. It is recommended to bring extra rune essence in case they are destroyed.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+line	
+line	<str>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</str>
+line	
+line	<str>Use the chiselled stones on their respective Runic altar. It is recommended to bring extra rune essence in case they are destroyed.</str>
+line	
+line	<col=000080>Use the handmade runes on the imposing door in the cave underneath Witchaven. Make sure to bring the Commorb with you.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+line	
+line	<str>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</str>
+line	
+line	<str>Use the chiselled stones on their respective Runic altar. It is recommended to bring extra rune essence in case they are destroyed.</str>
+line	
+line	<str>Use the handmade runes on the imposing door in the cave underneath Witchaven. Make sure to bring the Commorb with you.</str>
+line	
+line	<col=000080>Kill the level 62 <col=800000>Slug Prince</col>, only melee can damage it and it drains your Prayer points.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+line	
+line	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+line	
+line	<str>Talk to the following people in Witchaven in any order:</str>
+line	
+line	<str>Talk to Col. O'Niall again.</str>
+line	
+line	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+line	
+line	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+line	
+line	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+line	
+line	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+line	
+line	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+line	
+line	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+line	
+line	<str>Talk to Col. O'Niall.</str>
+line	
+line	<str>Talk to Brother Maledict.</str>
+line	
+line	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+line	
+line	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+line	
+line	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+line	
+line	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+line	
+line	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+line	
+line	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+line	
+line	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+line	
+line	<str>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</str>
+line	
+line	<str>Use the chiselled stones on their respective Runic altar. It is recommended to bring extra rune essence in case they are destroyed.</str>
+line	
+line	<str>Use the handmade runes on the imposing door in the cave underneath Witchaven. Make sure to bring the Commorb with you.</str>
+line	
+line	<str>Kill the level 62 Slug Prince, only melee can damage it and it drains your Prayer points.</str>
+line	
+line	<col=000080>Talk to Sir Tiffy Cashien.</col>
+done	<str>Talk to Sir Tiffy Cashien in Falador Park to get a Commorb v2.</str>
+done	
+done	<str>Talk to Col. O'Niall on the north-east dock in Witchaven.</str>
+done	
+done	<str>Talk to the following people in Witchaven in any order:</str>
+done	
+done	<str>Talk to Col. O'Niall again.</str>
+done	
+done	<str>Climb down the Old Ruin Entrance (Dungeon sign) west of Witchaven.</str>
+done	
+done	<str>Push the false wall on the east wall by the entrance (red on minimap).</str>
+done	
+done	<str>Follow the path to the imposing door, using the shortcut if able, try to open it.</str>
+done	
+done	<str>Scan with the Commorb v2 to acquire the door transcription (make sure you have one free inventory space).</str>
+done	
+done	<str>Pick up a dead sea slug just west of the imposing door. (If you do not pick up the dead sea slug, you will not be able to talk to Jorral).</str>
+done	
+done	<str>Talk to Jorral in the outpost (necklace of passage) north-west of Ardougne. if Making History has not been started.</str>
+done	
+done	<str>Talk to Col. O'Niall.</str>
+done	
+done	<str>Talk to Brother Maledict.</str>
+done	
+done	<str>Go to the mayor's house and search the study desk until you get a page.</str>
+done	
+done	<str>Talk to Ezekial Lovecraft in the fishing store (make sure you have one free inventory space).</str>
+done	
+done	<str>Talk to Col. O'Niall (make sure you have 3 free inventory spaces)</str>
+done	
+done	<str>Use swamp paste on one of the fragments. Savant will stop you.</str>
+done	
+done	<str>Talk to Jeb (near Holgart) and travel to the Fishing Platform.</str>
+done	
+done	<str>Talk to Bailey on the south-west part Fishing Platform, give him the dead slug.</str>
+done	
+done	<str>Use the sea slug glue on a fragment, then solve the puzzle.</str>
+done	
+done	<str>Right click the pages and select shape-options on the pages to shape essence into air, water, fire, earth, and mind.</str>
+done	
+done	<str>Use the chiselled stones on their respective Runic altar. It is recommended to bring extra rune essence in case they are destroyed.</str>
+done	
+done	<str>Use the handmade runes on the imposing door in the cave underneath Witchaven. Make sure to bring the Commorb with you.</str>
+done	
+done	<str>Kill the level 62 Slug Prince, only melee can damage it and it drains your Prayer points.</str>
+done	
+done	<str>Talk to Sir Tiffy Cashien.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

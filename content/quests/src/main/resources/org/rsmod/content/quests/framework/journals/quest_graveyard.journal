@@ -1,0 +1,152 @@
+# Generated from the OSRS Wiki page "Transcript:The Graveyard/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Olaf Hradson</col> by the <col=800000>Keldragrim Entrance</col>, east of <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Fremennik #5</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+req	The Fremennik Exiles
+req	#800000Olaf's Quest
+req	Pandemonium
+req	Level 65 Sailing
+req	Level 65 Agility
+req	Level 56 Woodcutting
+req	Level 54 Fletching
+before	
+before	<col=000080>Recommendations:</col>
+req	Combat Level 95
+step	1	-	After starting the quest
+step	2	-	After bringing the parchment to Olaf
+line	<col=000080><col=800000>Olaf</col> thinks the <col=800000>parchment I found</col> references <col=800000>treasure</col> that would have been lost when the fleet that sailed to Acheron encountered <col=800000>trouble</col> on their return home. He believes the ships will be wrecked around <col=800000>Weissmere</col>, but won't go there himself. He's suggested I bring the <col=800000>parchment</col> to his son, <col=800000>Volf Olafson near the Rellekka Helmet Shop</col>, and see if he wants to search for the <col=800000>treasure on Weissmere</col>.</col>
+step	3	-	After giving the parchment to Volf
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<col=000080>I've given <col=800000>Volf</col> the <col=800000>parchment</col>. I should check with him and see what he thinks about it.</col>
+step	4	-	After talking to Volf some more
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<col=000080>Having given <col=800000>Volf</col> the <col=800000>parchment</col>, he's become determined to <col=800000>go to Weissmere</col> and become an explorer like <col=800000>his father</col>.</col>
+step	5	-	Before deciding which boat to use
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<col=000080>Before we head out to <col=800000>Weissmere</col>, I need to talk to <col=800000>Volf</col> and hash out if we're using <col=800000>my boat or his</col>.</col>
+step	6	-	After deciding which boat to use
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<col=000080>I spoke to <col=800000>Volf</col> again, and we made a decision on <col=800000>which boat to use</col>. Now, we need to <col=800000>sail to Weissmere</col>.</col>
+step	7	-	After disembarking at The Graveyard
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<col=000080>We made it to <col=800000>Weissmere</col>, but <col=800000>Volf</col> was acting <col=800000>strangely</col> as we sailed closer. It would be worth <col=800000>checking on him</col> now that we've disembarked.</col>
+step	8	-	After talking to Volf at The Graveyard
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<col=000080>I checked on <col=800000>Volf</col> to see how he was feeling. He doesn't seem to think he was <col=800000>acting strangely</col>, and I'm not going to fight him on that. He's going to <col=800000>look around</col> the place, and <col=800000>I should too</col>.</col>
+step	9	-	After handing the captain's log to Volf
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	{{Colour|#000080|I found a <col=800000>logbook</col> in a chest near to where we landed on <col=800000>Weissmere</col>. I've given it to <col=800000>Volf</col> to investigate and keep it safe. Whilst he's taking a look at it, I should <col=800000>climb the nearby mast</col> and keep exploring.
+step	10	-	After climbing the mast
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<col=000080>I climbed the nearby <col=800000>mast</col> on Volf's suggestsion, and we were immediately ambushed by <col=800000>skeletons</col>. I need to make sure we <col=800000>defeat them</col> and <col=800000>get to safety</col>.</col>
+step	11	-	After escaping to Rellekka
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<col=000080>We were<col=800000> attacked by seemingly endless skeletons</col>. They struck down <col=800000>Volf</col> quickly and blocked us from getting to our <col=800000>boat</col>. I'm not sure what happened, but <col=800000>something intervened</col> and allowed us to escape to <col=800000>the boat</col>. I managed to get <col=800000>Volf</col> back to <col=800000>Rellekka</col>, where we should tell <col=800000>Brundt the Chieftain</col> what we found.</col>
+step	12	-	After talking to Brundt the Chieftain
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<col=000080>We made it back to <col=800000>Rellekka</col> and I let <col=800000>Brundt the Chieftain</col> know what we'd found. He's asked me to <col=800000>read the logbook</col> and confirm our suspicions.</col>
+step	13	-	After reading the captain's log
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<col=000080>I read the <col=800000>logbook</col> at Brundt's request. It confirms that the <col=800000>wrecks at Weissmere</col> are from the <col=800000>fleet that sailed to Acheron</col>. I should let <col=800000>Brundt the Chieftain</col> know what I found.</col>
+step	14	-	After discussing the log with Brundt
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<col=000080>With the confirmation from <col=800000>the logbook</col> of what we've found, Brundt has asked me to speak to <col=800000>Fossegrimen</col> to get more information about <col=800000>what we're dealing with</col>.</col>
+step	15	-	After talking to Fossegrimen
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<col=000080><col=800000>Fossegrimen</col> has told me how to make the <col=800000>binding stakes</col> I'll need to stop <col=800000>Ræun</col>. If I have any more questions I can ask her for more information, but I should speak to <col=800000>Brundt the Chieftain</col> and let him know what I've learned.</col>
+line	<col=000080>Each stake requires:</col>
+line	<col=800000>A log of frosted wood.</col>
+line	<col=800000>Three essence of the soul.</col>
+line	<col=800000>The enchantment spell.</col>
+step	16	-	After returning to Brundt
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<col=000080>I've returned to <col=800000>Brundt the Chieftain</col>, and it seems like he has more to discuss with me.</col>
+step	17	-	After talking to Brundt in private
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<col=000080><col=800000>Brundt the Chieftain</col> has asked me to prepare the <col=800000>seven binding stakes</col> whilst he prepares some Fremennik warriors to help me in handling <col=800000>Ræun</col>.</col>
+line	<col=000080>Each stake requires:</col>
+line	<col=800000>A log of frosted wood.</col>
+line	<col=800000>Three essence of the soul.</col>
+line	<col=800000>The enchantment spell.</col>
+step	18	-	After creating the binding stakes
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<col=000080><col=800000>Brundt the Chieftain</col> asked me to prepare the <col=800000>seven binding stakes</col>, which I now have. He is preparing some Fremennik warriors to help me in handling <col=800000>Ræun</col>.</col>
+step	19	-	After talking to Brundt again
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<col=000080>I have told <col=800000>Brundt the Chieftain</col> that I have the <col=800000>binding stakes</col> ready. He has let me know the warriors are ready. I need to go and talk to the warrior waiting on <col=800000>the dock</col> to set out once again.</col>
+step	20	-	After returning to Weissmere
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<str>I returned to Brundt having spoken to Fossegrimen, and he asked me to prepare the binding stakes whilst he rallied forces to sail back to Weissmere. With the stakes prepared, I was then able to sail back to Weissmere with Fremennik warriors in tow.</str>
+line	<col=000080>We've made it back to <col=800000>Weissmere</col>, but the <col=800000>Fremennik warriors</col> have run off and left me alone to explore and <col=800000>approach Ræun</col>. I should keep an eye out for <col=800000>places to plant the binding stakes</col> as I explore.</col>
+step	21	-	After planting six stakes
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<str>I returned to Brundt having spoken to Fossegrimen, and he asked me to prepare the binding stakes whilst he rallied forces to sail back to Weissmere. With the stakes prepared, I was then able to sail back to Weissmere with Fremennik warriors in tow.</str>
+line	<col=000080>I've explored enough of <col=800000>Weissmere</col> to be able to plant <col=800000>six stakes</col>. I've found most of the <col=800000>Fremennik warriors</col> scattered about dead, so I will need to go and <col=800000>face Ræun</col> by myself.</col>
+step	22	-	After planting the final stake
+line	<str>I spoke to Olaf in his camp outside of Rellekka about a parchment I found by following the treasure map he gave me. He believed it was connected to a fleet that sailed to Acheron and may contain treasure, but he himself wasn't willing to go and find it. He instead directed me to his son, Volf, who may be interested in finding the treasure.</str>
+line	<str>On Olaf's instruction, I spoke to Volf and gave him the parchment. He agreed that the treasure may be on Weissmere and decided to join me in going to find it.</str>
+line	<str>Volf and I made it to Weissmere in one piece, though he had a bit of a strange turn as we got closer. I found a logbook in a chest hidden behind some debris that may have a clue as to where these ships have been, and what caused them to wreck.</str>
+line	<str>During our exploration of Weissmere, Volf and I were ambushed by a seemingly endless pack of skeletons. I'm not sure what saved us, but we were able to get back to our boat and return to Rellekka.</str>
+line	<str>After making it back to Rellekka, Volf and I discussed the logbook with Brund the Chieftain. He asked me to read it to confirm if the fleet was in fact the one that sailed to Acheron. It was. Brundt then sent me to speak with Fossegrimen to learn about a spirit depicted within the logbook.</str>
+line	<str>Fossegrimen told me that the spirit on Weissmere was Ræun, and that her presence was a signifier of even worse things to come. She then taught me how to create binding stakes to stop Ræun, and warned me that it would not be easy.</str>
+line	<str>I returned to Brundt having spoken to Fossegrimen, and he asked me to prepare the binding stakes whilst he rallied forces to sail back to Weissmere. With the stakes prepared, I was then able to sail back to Weissmere with Fremennik warriors in tow.</str>
+line	<col=000080>I've planted the <col=800000>final binding stake</col> and enraged <col=800000>Ræun</col>. There's nothing left to do but <col=800000>fight her</col>.</col>

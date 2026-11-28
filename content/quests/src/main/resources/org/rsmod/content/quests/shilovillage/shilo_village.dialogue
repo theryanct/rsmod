@@ -1,0 +1,1089 @@
+# Generated from the OSRS Wiki page "Transcript:Shilo Village" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Talking to Mosol Rei
+1	box	Mosol seems to be looking around very cautiously. He jumps a little when you approach and talk to him.
+1	line	Mosol Rei	Run! Run for your life! Save yourself! I'll keep them back as long as I can...
+1	option	Why do I need to run?
+2	line	Player	Why do I need to run?
+2	line	Mosol Rei	Your very life is in danger. Rashiliyia has returned and we are all doomed.
+2	option	Rashiliyia? Who is she?
+3	line	Player	Rashiliyia? Who is she?
+3	line	Mosol Rei	Rashiliyia is the Queen of the dead. She has returned and has brought a plague of undead with her. They now occupy our village and we have them trapped. I warn people like yourself to stay away.
+3	option	What can we do?
+4	line	Player	What can we do?
+4	line	Mosol Rei	We're doing all we can to keep the undead at bay. The village is covered in a deadly green mist. If you go into the village, a terrible sickness will befall you.
+4	line	Mosol Rei	And the undead are even stronger beyond the gates. My guess is that it has something to do with the Legend of Rashiliyia.
+4	line	Mosol Rei	But you would need to talk to the Shaman in Tai Bwo Wannai village to get more details about that. I really have to go now and fight these undead.
+4	option	Why are the undead here?
+5	line	Player	Why are the undead here?
+5	line	Mosol Rei	Rashiliyia! The Queen of the undead has risen! She is the mother of the undead creatures that roam this land. But alas I know nothing of the legend that surrounds her.
+5	option	Legend you say?
+6	line	Player	Legend you say?
+6	line	Mosol Rei	Yes.... I said it is a legend that I know nothing about.
+6	option	Oh, ok, sorry for bothering you.
+7	line	Player	Oh, Ok, sorry for bothering you.
+7	line	Mosol Rei	Ok, perhaps you'd like to be on your way now?
+7	action	end
+6	option	Oh come on, you must know something.
+7	line	Player	Oh come on, you must know something?
+7	box	Mosol lowers his head in deep concentration.
+7	line	Mosol Rei	Well, let me think now...
+7	box	He scratches his head...
+7	line	Mosol Rei	Hmmm, there was something I think that might help...
+7	box	Mosol strains to remember something...
+7	line	Mosol Rei	Nope, sorry. It's gone.
+7	option	Maybe you know someone who does know something?
+8	line	Player	Maybe you know someone who does know something?
+8	line	Mosol Rei	My guess is that this has something to do with the legend of Rashiliyia. But you need to speak to the Shaman in 'Tai Bwo Wannai' village to get more details about that.
+8	line	Mosol Rei	I really have to fight these undead now Bwana, before they take over the world!
+8	option	Oh, ok, sorry for bothering you.
+9	action	above
+8	option	I'll go to see the Shaman.
+9	line	Player	I'll go to see the Shaman.
+9	line	Mosol Rei	Well, that would be helpful Bwana. If you're sure you want to go, you can take a Wampum belt to him for me. It will give the Shaman, Trufitus the story of our problems down here. Are you sure you want to go?
+9	option	Errr, I'm having second thoughts now.
+10	line	Player	Errr, I'm having second thoughts now.
+10	line	Mosol Rei	That's Ok Bwana, it's a big responsibility. Come back and see me if you change your mind.
+10	action	end
+9	option	Yes, I'm sure and I'll take the Wampum belt to Trufitus.
+10	line	Player	Yes, I'm sure and I'll take the Wampum belt to Trufitus.
+10	line	Mosol Rei	I would be very grateful if you did. Here take this...
+10	box	Mosol gives you a Wampum belt.
+10	action	Player receives the Wampum belt, or it drops to the floor if the player has no inventory space.
+10	line	Mosol Rei	Please can you give it to Trufitus. He may be able to give you extra details on the legend surrounding Rashiliyia. Good luck!
+10	action	end
+9	option	Ok. Thanks for your help.
+10	line	Player	Ok. Thanks for your help.
+10	line	Mosol Rei	You're welcome Bwana, good luck.
+10	action	end
+8	option	Ok. Thanks for your help.
+9	action	above
+7	option	Oh, Ok, sorry for bothering you.
+8	action	above
+7	option	Ok. Thanks for your help.
+8	action	above
+6	option	Maybe you know someone who does know something?
+7	action	above
+6	option	Ok. Thanks for your help.
+7	action	above
+5	option	I don't think this is something I can help with at the moment.
+6	line	Player	Sorry, but I don't think this is something that I can help with at the moment!
+6	line	Mosol Rei	Ok, I understand Bwana! You may as well be on your way then.
+6	action	end
+5	option	Ok. Thanks for your help.
+6	action	above
+4	option	What can we do?
+5	action	above
+4	option	Can I help in any way?
+5	line	Player	Can I help in any way?
+5	line	Mosol Rei	I don't think so Bwana, but you may want to consult with Trufitus the Shaman in Tai Bwo Wannai village, he may have some information which could help.
+5	option	Why are the undead here?
+6	action	above
+5	option	What can we do?
+6	action	above
+5	option	I'll go to see the Shaman.
+6	action	above
+5	option	Ok. Thanks for your help.
+6	action	above
+4	option	I'll go to see the Shaman.
+5	action	above
+4	option	Ok. Thanks for your help.
+5	action	above
+3	option	Uh, it sounds nasty, just the kind of thing I want to avoid.
+4	line	Player	Uh, it sounds nasty, just the kind of thing I want to avoid!
+4	line	Mosol Rei	Quite right, Bwana, please make all haste! Before your spine turns to water as we speak.
+4	action	end
+3	option	Ok. Thanks for your help.
+4	action	above
+2	option	What danger is there around here?
+3	line	Player	What danger is there around here?
+3	line	Mosol Rei	Can you not see Bwana? This whole area is infested with the living dead.
+3	action	Two undead ones appear
+3	line	Mosol Rei	Arrggghhh, here are some now!
+3	line	Undead one	Rahhhhh! OOoohhhhhh!
+3	line	Undead one	Prepare to go to the other side!
+3	action	end
+2	option	Ok. Thanks for your help.
+3	action	above
+1	option	Yeah... Ok, I'm running!
+2	line	Player	Yeah... Ok, I'm running!
+2	line	Mosol Rei	God speed to you my friend.
+2	action	end
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Mosol Rei	I am Mosol Rei, I am a Jungle Warrior. I used to live in this village, but it is too dangerous for you to stay around here.
+2	option	Mosol Rei, that's a nice name.
+3	line	Player	Mosol Rei, that's a nice name.
+3	box	Mosol looks at you and shakes his head in bewilderment.
+3	line	Mosol Rei	Thanks, but you really should leave.
+3	action	end
+2	option	What danger is there around here?
+3	action	above
+2	option	Ok. Thanks for your help.
+3	action	above
+1	option	Ok. Thanks for your help.
+2	action	above
+0	section	Talking to Mosol Rei after getting the Wampum belt
+1	line	Player	Why are the undead here?
+1	line	Mosol Rei	Rashiliyia! The Queen of the undead has risen! She is the mother of the undead creatures that roam this land. But alas I know nothing of the legend that surrounds her.
+1	option	Legend you say?
+2	line	Player	Legend you say?
+2	line	Mosol Rei	Yes.... I said it is a legend that I know nothing about.
+2	option	Oh, ok, sorry for bothering you.
+3	action	above
+2	option	Oh come on, you must know something.
+3	action	above
+2	option	Maybe you know someone who does know something?
+3	line	Player	Maybe you know someone who does know something?
+3	line	Mosol Rei	My guess is that this has something to do with the legend of Rashiliyia. But you need to speak to the Shaman in 'Tai Bwo Wannai' village to get more details about that.
+3	line	Mosol Rei	I really have to fight these undead now Bwana, before they take over the world!
+3	option	Oh, ok, sorry for bothering you.
+4	action	above
+3	option	I'll go to see the Shaman.
+4	line	Player	I'll go to see the Shaman.
+4	line	Mosol Rei	Well, if you go to see the Shaman, please give him that Wampum belt I gave to you, it will give him more details about our situation down here.
+4	option	Errr, I'm having second thoughts now.
+5	action	above
+4	option	Yes, I'm sure and I'll take the Wampum belt to Trufitus.
+5	line	Player	Yes, I'm sure and I'll take the Wampum belt to Trufitus.
+5	line	Mosol Rei	That's great Bwana, if you give Trufitus the Wampum belt I gave you, it will give him more details of our current situation.
+5	action	end
+4	option	Ok. Thanks for your help.
+5	action	above
+3	option	Ok. Thanks for your help.
+4	action	above
+2	option	Ok. Thanks for your help.
+3	action	above
+1	option	I don't think this is something I can help with at the moment.
+2	action	above
+1	option	Ok. Thanks for your help.
+2	action	above
+0	section	Using the Wampum belt on Trufitus
+1	box	You show Trufitus the Wampum belt, he studies it for a long time.
+1	line	Trufitus	Hello Bwana, this message from Mosol Rei bears bad news... Yes, things do look very bad indeed.
+1	option	What do you know about Rashiliyia?
+2	line	Player	What do you know about Rashiliyia?
+2	line	Trufitus	Hmmm, it's been a long time since I heard that name. Rashiliyia is the Queen of the Undead. And a more fearsome enemy you will be unlikely to find.
+2	line	Trufitus	I fear that you bring me news that she has returned to plague us once again? Alas I know of no weakness that she has.
+2	option	So there is nothing we can do?
+3	line	Player	So there is nothing we can do?
+3	line	Trufitus	Not that I can think of.
+3	option	Oh, ok!
+4	line	Player	Oh, ok!
+4	line	Trufitus	Yes, it's a bit sad really, I liked that village.
+4	box	Trufitus seems deeply touched...
+4	line	Trufitus	Well, I hope you will excuse me, but I need to get back to my studies.
+4	action	end
+3	option	Should I start to evacuate the Island?
+4	line	Player	Should I start to evacuate the island?
+4	line	Trufitus	Yes, that may be a good idea. Many people could die! If only there was a way to defeat her!
+4	option	Mosol Rei said something about a legend?
+5	line	Player	Mosol Rei said something about a legend?
+5	line	Trufitus	Ah, yes, there is a legend, but it is lost in the midst of antiquity...
+5	line	Trufitus	The last place to hold any details regarding this mystery was in the temple of Ah Za Rhoon....and that has long since vanished... it crumbled into dust...
+5	option	Why was it called Ah Za Rhoon?
+6	line	Player	Why was it called Ah Za Rhoon?
+6	line	Trufitus	It is from an ancient language. The direct translation is... 'Magnificence floating on water'. But my research makes me believe that the temple was built on land.
+6	line	Trufitus	And most likely between large bodies of water, for example large lakes. However, many people have searched for the temple, and have failed. I would hate to see you waste your time on a pointless search like that.
+6	option	Thanks for the information!
+7	line	Player	Thanks for the information!
+7	line	Trufitus	What information?
+7	line	Player	About Ah Za Rhoon and where it is.
+7	box	Trufitus looks at you blankly...
+7	line	Trufitus	Hmmm, well, you are welcome bwana.
+7	option	Do you know anything more about the temple?
+8	line	Player	Do you know anything more about the temple?
+8	line	Trufitus	Not much... I would say that is about it...
+8	line	Trufitus	Even the great priest Zadimus who built the temple did not survive. Some say that Rashiliyia caused the temple to collapse.
+8	line	Trufitus	She was angry at Zadimus for not returning her affections. She was a great sorceress even before they met.
+8	option	Tell me more.
+9	line	Player	Tell me more.
+9	line	Trufitus	I don't know anymore. You're very demanding aren't you!
+9	option	Thanks for the information!
+10	action	above
+9	option	Do you know anything more about the temple?
+10	action	above
+9	option	I am going to search for Ah Za Rhoon!
+10	line	Player	I am going to search for Ah Za Rhoon!
+10	line	Trufitus	What?! You must be crazy! That place has passed into myth and legend, it has been buried under rubble for years. It's most likely buried 20 men deep, and that's if you can actually find it.
+10	line	Trufitus	Are you sure you're going to go and look for it? I may be able to do some research into this if you agree. Only I don't want to waste my time if you're not serious about this!
+10	cond	If the player does not have all the requirements and has a combat level below 45:
+11	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it. Your combat level is also lower than the recommended level of 45.
+10	select	Start the Shilo Village quest?
+10	option	Yes.
+11	line	Player	Yes, I will seriously look for Ah Za Rhoon and I'd appreciate your help.
+11	line	Trufitus	Ok then Bwana, good luck with your quest, and remember to stock up well with adventuring supplies before setting off. You never know how useful some fairly ordinary things might be when you're
+11	line	Trufitus	adventuring.
+11	line	Trufitus	I'll hold on to this Wampum belt for you for the time being. I'll give it back to you when we have completed this quest.
+11	action	end
+10	option	No.
+11	line	Player	Actually, now it comes to it, I'm having second thoughts.
+11	line	Trufitus	Well, I understand. Perhaps you can search for it another time? Come back when you think you're ready. Excuse me now won't you while I return to my studies.
+11	action	end
+9	option	It's a pity that I can't search for Ah Za Rhoon now.
+10	line	Player	It's a pity that I can't search for Ah Za Rhoon now.
+10	line	Trufitus	Well, I understand. Perhaps you can search for it another time? Come back when you think you're ready. Excuse me now won't you while I return to my studies.
+10	action	end
+8	option	Are there any traps there?
+9	line	Player	Are there any traps there?
+9	line	Trufitus	How am I supposed to know? A lot of what I know is most probably wrong but some of it seems right to me. Excuse me but I must get back to my studies.
+9	action	end
+8	option	Thanks for the information!
+9	action	above
+7	option	I am going to search for Ah Za Rhoon!
+8	action	above
+7	option	It's a pity that I can't search for Ah Za Rhoon now.
+8	action	above
+6	option	Do you know anything more about the temple?
+7	action	above
+6	option	I am going to search for Ah Za Rhoon!
+7	action	above
+6	option	It's a pity that I can't search for Ah Za Rhoon now.
+7	action	above
+5	option	Do you know anything more about the temple?
+6	action	above
+4	option	Will you pack your things now?
+5	line	Player	Will you pack your things now?
+5	line	Trufitus	I will wait and see what will happen. Maybe Rashiliyia does not have the power to strike too far from her resting place? But there are many things that I need to do now.
+5	option	Is her resting place important?
+6	line	Player	Is her resting place important?
+6	line	Trufitus	I believe it is! It might be that her physical remains are the focal point of her supernatural powers. It is said that many years ago, a group of adventurers once infiltrated her tomb to try to rid the world of Rashiliyia.
+6	line	Trufitus	These adventurers reported seeing a wraith- like creature.
+6	line	Trufitus	Although the adventurers disturbed Rashiliyia's bones, they were not able to properly sanctify them. And this is the most likely reason why she still plagues us today.
+6	line	Trufitus	Of course, she only has to order one of her minions to move her bones and she can quite quickly and easily set up a new headquarters anywhere and continue to launch her plague of undead.
+6	option	What are minions?
+7	line	Player	What are minions?
+7	line	Trufitus	Minions are the fiendish undead creatures that she controls. She has very few living worshippers, but they need to be dealt with at some point.
+7	option	Thanks for the information!
+8	action	above
+7	option	Does she have any weaknesses?
+8	line	Player	Does she have any weaknesses?
+8	line	Trufitus	I am not sure, but the legend about her certainly is long. It's a pity that the temple of Ah Za Rhoon has crumbled as there may be some clues that could help us to defeat her.
+8	line	Trufitus	I think the largest problem will be in locating her resting place.
+8	option	Why was it called Ah Za Rhoon?
+9	action	above
+8	option	Is her resting place important?
+9	action	above
+6	option	What are onions?
+7	line	Player	What are onions?
+7	line	Trufitus	Surely you mean Minions?
+7	line	Player	Yes of course, I mean Minions, what made you think I said Onions?
+7	box	Trufitus frowns at you but continues about...minions...
+7	line	Trufitus	Minions are the fiendish undead creatures that Rashiliyia controls. She has very few living worshippers, but they need to be dealt with at some point.
+7	line	Trufitus	Usually a strong creature of some sort will be guarding the bones and it is not to be tackled lightly.
+7	option	Thanks for the information!
+8	action	above
+7	option	Does she have any weaknesses?
+8	action	above
+6	option	Does she have any weaknesses?
+7	action	above
+5	option	Oh, ok!
+6	action	above
+2	option	Should I start to evacuate the island?
+3	action	above
+2	option	Mosol Rei said something about a legend?
+3	action	above
+1	option	Mosol Rei said something about a legend?
+2	action	above
+0	section	Talking to Trufitus again
+1	line	Trufitus	Hello Bwana, how goes your quest to find Ah Za Rhoon?
+1	option	Well thanks...
+2	line	Player	Well thanks...
+2	line	Trufitus	Well that's very good news. Let me know if you find anything useful, I may be able to help out.
+2	action	end
+1	option	Erm, I don't know where to look?
+2	line	Player	Erm, I don't know where to look?
+2	line	Trufitus	Hmm, that doesn't surprise me. The only information I have refers to its name. Ah Za Rhoon, its name means 'Magnificence Floating on Water'.
+2	option	Do you think it was floating on water?
+3	line	Player	Do you think it was floating on water?
+3	line	Trufitus	It's very doubtful. I suspect it was built to 'appear' as if it was floating on water. Perhaps on an island or between large bodies of water.
+3	line	Trufitus	If you search for somewhere like this, you may find something worth investigating.
+3	action	end
+2	option	Ok thanks for your help.
+3	line	Player	Ok thanks for your help.
+3	line	Trufitus	You're welcome Bwana, I only hope it helped.
+3	action	end
+0	section	Use any unrelated item on Trufitus
+1	line	Trufitus	I'm sorry Bwana but I just don't have a use for that!
+1	action	end
+0	section	Visiting Ah Za Rhoon
+0	section	Look-at Mound of earth
+1	box	It looks as if something is buried here.
+1	action	end
+0	section	Search Mound of earth
+1	box	It looks as if something is buried here. You may need some tools to excavate further.
+1	action	end
+0	section	Use spade on Mound of earth
+1	box	You start digging...
+1	box	You dig a small hole and almost immediately hit granite.
+1	box	You excavate the hole a bit more...
+1	box	And see that there is a small fissure...
+1	box	You might just be able to crawl through it...
+1	action	end
+0	section	Use spade on Fissure
+1	box	You have already excavated this area. Your spade clangs against the granite.
+1	action	end
+0	section	Look-at Fissure
+1	box	You see a small fissure in the granite that you might just be able to crawl through. Beyond the fissure is a long fall.
+1	action	end
+0	section	Search Fissure
+1	box	You see a small fissure in the granite that you might just be able to crawl through. Beyond the fissure is a long fall. Do you want to try to crawl through the fissure?
+1	option	Yes, I'll give it a go!
+2	box	It looks like there is a steep drop just after the fissure. It may be dangerous to try to climb down without any sort of support.
+2	action	end
+1	option	No thanks, I'm having second thoughts.
+2	box	You think better of attempting to squeeze into the fissure.
+2	line	Player	It looks very dangerous, and dark... Scary!
+2	action	end
+0	section	Use lit candle on Fissure
+1	select	Are you sure? You won't get that item back.
+1	option	Yes
+2	box	You drop the lit candle into the fissure and see that there is quite a large drop after you get through the hole. There is a good anchor point nearby onto which you could tie a rope.
+2	box	The lit candle burns out.
+2	action	end
+1	option	No
+2	action	end
+0	section	Use lit black candle on Fissure
+1	select	Are you sure? You won't get that item back.
+1	option	Yes
+2	box	You drop the lit black candle into the fissure and see that there is quite a large drop after you get through the hole. There is a good anchor point nearby onto which you could tie a rope.
+2	box	The lit black candle burns out.
+2	action	end
+1	option	No
+2	action	end
+0	section	Use rope on Fissure
+1	box	You see where to attach the rope very clearly. You secure the rope well.
+1	action	end
+0	section	Look at Fissure after rope is attached
+1	box	You see a small fissure in the granite that you might just be able to crawl through. You can see that a rope is attached nearby.
+1	action	end
+0	section	Search Fissure after rope is attached
+1	box	You see a small fissure in the granite that you might just be able to crawl through. You can see that a rope is attached nearby, would you like to climb down?
+1	select	Climb into the fissure?
+1	option	Yes, I'll give it a go!
+2	box	You start to contort your body...
+2	box	With some difficulty you manage to push yourself through the small crack in the rock.
+2	box	You cleverly use the rope to slowly lower yourself to the floor.
+2	action	The player enters Ah Za Rhoon
+2	action	end
+1	option	No thanks, I'm having second thoughts.
+2	box	You think better of attempting to squeeze into the fissure.
+2	line	Player	It looks very dangerous, and dark... Scary!
+2	action	end
+0	section	Search Cave in
+1	box	You see that there is a narrow gap through into the darkness. You could try to wriggle through and see where it takes you.
+1	select	Wriggle through the rubble?
+1	option	Yes, I'll wriggle through.
+2	box	You manage to wriggle through the rubble.
+2	action	end
+1	option	No, I'll stay here.
+2	box	You decide to stay where you are.
+2	action	end
+0	section	Search Loose rocks
+1	box	You can see that there is something hidden behind some rocks. Do you want to have a look? It looks a bit dangerous as the ceiling doesn't look at all safe.
+1	select	Select an Option
+1	option	Yes, I'll carefully move the rocks to see what's behind them.
+2	box	You start to slowly move the rocks to one side.
+2	box	You carefully manage to remove enough rocks to see a book shelf. You gingerly remove a delicate scroll from the shelf and place it in your inventory.
+1	option	No, I'll leave them alone, I don't like the look of that ceiling.
+2	box	You decide to leave the rocks well alone. The ceiling does look a little unsafe.
+2	action	end
+0	section	Read Tattered scroll
+1	box	This looks like part of a scroll about someone called Bervirius. Would you like to read it?
+1	select	Select an Option
+1	option	Yes please.
+2	action	Opens Transcript:Tattered scroll
+1	option	No thanks.
+2	box	You decide not to open the scroll. But instead place it carefully back in your inventory.
+2	action	end
+0	section	Search Old sacks
+1	box	You find a tattered but very ornate scroll, which you place carefully in your inventory.
+1	action	end
+0	section	Read Crumpled scroll
+1	box	This looks like a scroll about Rashiliyia. Would you like to read it?
+1	select	Select an Option
+1	option	Yes please.
+2	action	Opens Transcript:Crumpled scroll
+1	option	No thanks.
+2	box	You decide to leave the scroll well alone.
+0	section	Look-at Ancient gallows
+1	box	You take a look at the gallows. It's pretty eerie looking.
+1	box	A grisly sight meets your eyes. A human corpse hangs from the noose. His hands have been tied behind his back.
+1	action	end
+0	section	Search Ancient gallows
+1	box	You search the gallows...
+1	box	You find a human corpse hanging in the noose. It looks as if the corpse can be removed easily. Would you like to remove the corpse from the noose?
+1	select	Select an Option
+1	option	I don't think so, it might animate and attack me!
+2	box	You move away from the corpse quietly and slowly... ...you have an eerie feeling about this!
+2	line	Player	** Gulp! **
+2	action	end
+1	option	Yes, I may find something else on the corpse.
+2	box	You gently support the frame of the skeleton and lift the skull through the noose.
+2	box	You find an old sack and place the skeleton in it. Maybe Trufitus can give you some tips on what to do with it.
+2	box	You sense that there is a spirit that needs to be put to rest.
+2	action	end
+0	section	Look-at Strange looking stone
+1	box	This stone seems to have strange markings on it.
+1	action	end
+0	section	Investigate Strange looking stone
+1	box	This stone seems to have strange markings on it. Maybe Trufitus can decipher them? THe stone is too heavy to carry but the letters stand proud on a plaque. Maybe you could seperate the plaque from the rock?
+1	action	end
+0	section	Use chisel on Strange looking stone
+1	box	You cleanly cut the plaque of letters away from the rock. You place it carefully into your inventory.
+1	action	end
+0	section	Read Stone-plaque
+1	box	The markings are very intricate. It's a very strange language. The meaning of it evades you though. Perhaps Trufitus can decipher the markings?
+1	action	end
+0	section	Look-at Smashed table
+1	box	This table might be useful with some adjustment.
+1	action	end
+0	section	Craft Smashed table
+1	box	You may be able to turn this dilapidated table into something that could help you to get out of this place. What would you like to try and turn this table into?
+1	select	Select an Option
+1	option	A ladder
+2	box	You happily start hacking away at the table but realise that you won't have enough wood to properly finish the item off!
+2	line	Player	Oops! Not enough wood left to do anything else with the table!
+2	action	end
+1	option	A crude raft
+2	box	You see that this table already looks very sea worthy it takes virtually no time at all to help fix it into a crude raft.
+2	box	You place it carefully on the water!
+2	box	You board the raft!
+2	box	You push off!
+2	line	Player	Weeeeeeee!
+2	line	Player	Weeeeeeee!
+2	box	You come to a huge waterfall...
+2	line	Player	* Uh oh! *
+2	box	...And plough through it!
+2	box	The raft soon breaks up.
+2	action	end
+1	option	A pole vault
+2	box	You happily start hacking away at the table but realise that you won't have enough wood to properly finish the item off!
+2	line	Player	Oops! Not enough wood left to do anything else with the table!
+2	action	end
+0	section	Craft Smashed table after using up the wood
+1	box	You may be able to turn this dilapidated table into something that could help you to get out of this place. What would you like to try and turn this table into?
+1	select	Select an Option
+1	option	A ladder
+2	box	Your experience in crafting tells you that there isn't enough wood to complete this task.
+2	action	end
+1	option	A crude raft
+2	action	above
+1	option	A pole vault
+2	box	Your experience in crafting tells you that there isn't enough wood to complete this task.
+2	action	end
+0	section	Craft Smashed table after making the raft
+1	box	There isn't enough wood left in this table to make anything!
+1	action	end
+0	section	Look-at Waterfall rocks
+1	box	There is a huge cascading waterfall in front of you, the roar of the water is quite loud. To the east you can see what looks like a trecherous pathway, it might lead outside.
+1	action	end
+0	section	Search Waterfall rocks
+1	box	You see a huge waterfall blocking your path. The path leads on through the cascading waterfall, but it looks quite dangerous. Would you like to try and follow the path?
+1	select	Follow the path?
+1	option	Yes, I'll follow the path.
+2	box	You start carefully edging along the slippery path...
+2	cond	If the player succeeds:
+3	box	You climb your way out of the cavern into the heat of the Jungle.
+3	action	end
+2	cond	If the player fails:
+3	box	You fall!
+3	line	Player	Arrgghhhh!
+3	box	You're pumelled as the thrashing water throws
+3	box	you against the rocks.
+3	action	The player is dealt some damage.
+3	action	end
+2	action	end
+1	option	No, I'll look for another exit.
+2	box	You decide to have another look around. And see if you can find a better way to get out.
+2	action	end
+0	section	Talking to Trufitus after visiting Ah Za Rhoon
+1	line	Player	Greetings...
+1	line	Trufitus	Greetings Bwana, you have been away! The situation with Rashiliyia is worsening! I pray that you have some good news for me.
+1	line	Player	I think I found the temple of Ah Za Rhoon.
+1	line	Trufitus	Well that sounds great Bwana. Tell me, what did you find?
+1	option	I need help with Bervirius.
+2	line	Player	I need help with Bervirius.
+2	line	Trufitus	Bervirius is the son of Rashiliyia. His tomb may hold some clues as to how Rashiliyia may be defeated.
+2	action	other
+1	option	I have some items that I need help with.
+2	line	Player	I have some items that I need help with.
+2	line	Trufitus	Well, just let me see the item and I'll help as much as I can.
+2	line	Trufitus	We need to identify that the place you have found is indeed Ah Za Rhoon.
+2	line	Trufitus	Any scrolls or information about Rashiliyia's kin would be helpful.
+2	line	Trufitus	Have you got any items concerning Rashiliyia? If so, please show me them.
+2	line	Trufitus	There must be something relating to Zadimus at the temple. Did you find anything? If so, let me see it.
+2	line	Trufitus	And best of luck!
+2	action	other
+1	option	I need help with Zadimus.
+2	line	Player	I need help with Zadimus.
+2	line	Trufitus	Zadimus is a spirit yearning for freedom. Bury him in a sacred place to release his spirit.
+2	option	Is there any sacred ground around here?
+3	line	Player	Is there any sacred ground around here?
+3	line	Trufitus	The ground in the centre of the village is very sacred to us. Maybe you could try there?
+3	action	end
+2	option	I need help with Bervirius.
+3	action	above
+2	option	I need help with Rashliyia.
+3	action	below
+2	option	I need some help with the Temple of Ah Za Rhoon.
+3	action	below
+2	option	Ok, thanks!
+3	line	Player	Ok, thanks!
+3	line	Trufitus	You're quite welcome Bwana.
+3	action	end
+1	option	I need help with Rashiliyia.
+2	line	Player	I need help with Rashiliyia.
+2	line	Trufitus	We need to find Rashiliyia's resting place and learn how to put her spirit to rest. You may find some clues to her resting place in Ah Za Rhoon or Bervirius' Tomb.
+2	action	other
+1	option	I need some help with the Temple of Ah Za Rhoon.
+2	line	Player	I need some help with the Temple of Ah Za Rhoon.
+2	line	Trufitus	If you have found the temple, you should search it thoroughly and see if there are any clues about Rashiliyia.
+2	line	Trufitus	We need to identify that the place you have found is indeed Ah Za Rhoon.
+2	line	Trufitus	Any scrolls or information about Rashiliyia's kin would be helpful.
+2	line	Trufitus	Have you got any items concerning Rashiliyia? If so, please show me them.
+2	line	Trufitus	There must be something relating to Zadimus at the temple. Did you find anything? If so, let me see it.
+2	line	Trufitus	And best of luck!
+2	action	other
+0	section	Using the Zadimus corpse on Trufitus
+1	box	You show Trufitus the corpse.
+1	line	Player	What do you make of this?
+1	line	Trufitus	! GASP ! That's incredible, where did you find it?
+1	line	Player	I found the corpse in a decomposing gallows. I get a very strange feeling every time I try to bury the body.
+1	line	Trufitus	Hmmm, that sounds very strange. I sense a spirit in torment, you should try to bury the remains.
+1	option	Is there any sacred ground around here?
+2	line	Player	Is there any sacred ground around here?
+2	line	Trufitus	The ground in the centre of the village is very sacred to us. Maybe you could try there?
+2	action	end
+1	option	Can you dispose of this for me?
+2	line	Player	Can you dispose of this for me?
+2	box	Trufitus pulls away from you...
+2	line	Trufitus	I dare not touch it. I am a spiritual man and the spirit of this being may possess me and turn me into a minion of Rashiliyia.
+2	action	end
+0	section	Using the stone-plaque on Trufitus
+1	line	Player	Can you decipher this please?
+1	line	Trufitus	This is an ancient artefact!
+1	box	Trufitus looks at the item in awe.
+1	line	Trufitus	I can certainly try! Hmm, incredible, it seems very ancient and mentions something about Zadimus and Ah Za Rhoon. It says, 'Here lies the traitor Zadimus, let his spirit be forever tormented'.
+1	box	Trufitus hands the Stone Plaque back.
+1	line	Trufitus	If you have found anything else that you need help with, please just let me know.
+1	action	end
+0	section	Using the tattered scroll on Trufitus
+1	box	You hand the tattered scroll to Trufitus.
+1	line	Player	What do you make of this?
+1	line	Trufitus	Truly amazing Bwana, this scroll must be ancient. I'm not sure if I get more meaning from it than you though. Perhaps Bervirius' tomb is still accessible?
+1	box	Trufitus hands the tattered scroll back to you.
+1	action	end
+0	section	Dropping the Tattered scroll
+1	box	This looks quite important, are you sure you want to drop it?
+1	select	Select an Option
+1	option	Yes, I'm quite sure.
+2	box	You decide to throw the item away...
+2	box	As you drop the item, it falls down a narrow crevice, never to be seen again.
+2	action	end
+1	option	No, I think I'll keep it.
+2	action	end
+0	section	Dropping the Crumpled scroll
+1	box	This looks quite important, are you sure you want to drop it?
+1	select	Select an Option
+1	option	Yes, I'm quite sure.
+2	box	You decide to throw the item away.
+2	box	As you drop the item, it gets carried away by the wind, never to be seen again.
+2	action	end
+1	option	No, I think I'll keep it.
+2	action	end
+0	section	Dropping the Stone-plaque
+1	box	This looks quite important, are you sure you want to drop it?
+1	select	Select an Option
+1	option	Yes, I'm quite sure.
+2	box	You decide to throw the item away...
+2	box	As you drop the item, it bounces into a stream, never to be seen again.
+2	action	end
+1	option	No, I think I'll keep it.
+2	action	end
+0	section	Dropping the Locating crystal
+1	box	Are you sure you want to drop this crystal? It looks very delicate and it may break.
+1	select	Drop the Locating Crystal?
+1	option	Yes, I am sure.
+2	box	As you drop the crystal, it hits a rock and explodes. You are lascerated by shards of glass.
+2	action	end
+1	option	No, I've reconsidered, I'll keep it!
+2	action	end
+0	section	Using the crumpled scroll on Trufitus
+1	box	You hand the crumpled scroll to Trufitus.
+1	line	Player	Have a look at this, tell me what you think.
+1	line	Trufitus	I am speechless Bwana, this is truly ancient. Where did you find it?
+1	line	Player	In an underground building of some sort.
+1	line	Trufitus	You must truly have found the temple of Ah Za Rhoon! The scroll gives some interesting details about Rashiliyia, some things I didn't know before.
+1	box	Trufitus gives back the scroll.
+1	option	Anything that can help?
+2	line	Player	Anything that can help?
+2	line	Trufitus	Hmmm, well just that part about the wards...
+2	box	Trufitus seems to drift off in thought.
+2	line	Trufitus	It may be possible to make a ward like that... But what is the best thing to make it from? Perhaps something close to Bervirius, an item of some significance to him.
+2	action	end
+1	option	Ok, thanks!
+2	line	Player	Ok, thanks!
+2	line	Trufitus	You're quite welcome Bwana.
+2	action	end
+0	section	Burying the Zadimus corpse in the wrong place
+1	box	You feel an unearthly compunction to bury this corpse!
+1	box	You hear a ghostly wailing sound coming from the corpse and a whispering voice says,'Let me rest in a sacred place and assist you I will'
+1	action	end
+0	section	Burying the Zadimus corpse in the right place
+1	box	You feel an unearthly compunction to bury this corpse!
+1	box	You dig a hole for the remains.
+1	box	You lay the remains of Zadimus to rest.
+1	box	You hear an unearthly moaning sound as you see an apparition materialise right in front of you.
+1	line	Spirit of Zadimus	You have released me from my torture, and now I shall aid you. You seek to dispell the one who tortured and killed me. Remember this... 'I am the key, but only kin may approach her.'
+1	action	
+1	box	The apparition disappears into the ground where you buried the corpse. You see the ground in front of you shake as a shard of bone forces its way to the surface. You take the bone shard and place it in your
+1	box	inventory.
+0	section	Using chisel on bone shard
+1	box	You're not quite sure what to make with this. Perhaps it will come to you as you discover more about Rashiliyia?
+1	action	end
+0	section	Using the bone shard on Trufitus
+1	box	You show Trufitus the Bone Shard.
+1	line	Player	Could you have a look at this please?
+1	box	Trufitus looks at the object for a moment.
+1	line	Trufitus	It looks like a simple shard of bone. Why do you think it is significant?
+1	option	It appeared when I buried Zadimus' corpse.
+2	line	Player	It appeared when I buried Zadimus' corpse.
+2	line	Trufitus	Ah, interesting, so you think that Zadimus gave you the bone? What makes you say that?
+2	option	He said something after he gave it to me.
+3	line	Player	He said something after he gave it to me.
+3	line	Trufitus	What did he say?
+3	option	The spirit said something about keys and kin?
+4	line	Player	The spirit said something about keys and kin?
+4	line	Trufitus	Hmmm, maybe it's a clue of some kind?
+4	line	Trufitus	If you found anything at Ah Za Rhoon that you're not sure of, why not investigate it or show it to me and I'll see what I can make of it.
+4	action	end
+3	option	The spirit rambled on about some nonsense.
+4	line	Player	The spirit rambled on about some nonsense.
+4	line	Trufitus	Oh, so it most likely was not very important then.
+4	action	end
+2	option	I'm not sure.
+3	line	Player	I'm not sure.
+3	line	Trufitus	Oh, right. Come back and talk with me if you get an idea.
+3	action	end
+1	option	No reason really.
+2	line	Player	No reason really.
+2	line	Trufitus	Well why are you showing it to me then?
+2	option	It appeared when I buried Zadimus' corpse.
+3	action	above
+2	option	I'm not sure.
+3	action	above
+0	section	Inspect Bone shard
+1	box	You look at the shard of bone. The words of Zadimus come back to you. 'I am the key, but only kin may approach her.'
+1	action	end
+0	section	Talking to Trufitus after burying Zadimus' corpse
+1	line	Player	Greetings...
+1	line	Trufitus	Greetings Bwana, you have been away! The situation with Rashiliyia is worsening! I pray that you have some good news for me.
+1	line	Player	I think I found the temple of Ah Za Rhoon.
+1	line	Trufitus	Well that sounds great Bwana. Tell me, what did you find?
+1	option	I have just buried Zadimus' corpse.
+2	line	Player	I have just buried Zadimus' corpse.
+2	line	Trufitus	Something seems different about you. You look like you have seen a ghost?
+2	line	Player	It just so happens that I have!
+2	line	Trufitus	Oh! So you managed to bury Zadimus's corpse?
+2	line	Player	Yes, it was pretty grisly!
+2	option	The spirit said something about keys and kin?
+3	line	Player	The spirit said something about keys and kin?
+3	line	Trufitus	Hmmm, maybe it's a clue of some kind?
+3	line	Trufitus	Rashiliyia's only kin was a son, 'Bervirius'. His remains were entombed on a small island which lies to the South West. I will do some research into this to see if I can find any other details.
+3	line	Trufitus	But I think we must take Zadimus' clue literally and get some item that belonged to Bervirius as it may be the only way to approach Rashiliyia. Perhaps something like this exists in his tomb?
+3	action	end
+2	option	The spirit rambled on about some nonsense.
+3	line	Player	The spirit rambled on about some nonsense.
+3	line	Trufitus	Oh, so it most likely was not very important then.
+3	action	end
+1	option	I need help with Bervirius.
+2	action	above
+1	option	I have some items that I need help with.
+2	action	above
+1	option	I need some help with the Temple of Ah Za Rhoon.
+2	action	above
+1	option	I need help with Rashiliyia.
+2	action	above
+0	section	Visiting the Tomb of Bervirius
+0	section	Investigate Well stacked rocks
+1	box	These rocks look like they have been stacked uniformly.
+1	action	end
+0	section	Search Well stacked rocks
+1	box	You investigate the rocks and find a dank, narrow crawl-way. Do you want to crawl into this dank, dark, narrow, possibly dangerous hole?
+1	select	Crawl into hole?
+1	option	Yes please, I can think of nothing nicer!
+2	box	You contort your body and prepare to squirm worm like into the hole.
+2	box	You struggle through the narrow crevice in the rocks.
+2	box	And drop to your feet into a narrow underground corridor.
+2	action	end
+1	option	No way could you get me to go in there!
+2	action	end
+0	section	Inspect Tomb dolmen
+1	box	The dolmen is intricately decorated with the symbol of two crossed palm trees. It might be the family crest? You can see that there are some items on the dolmen.
+1	action	end
+0	section	Search Tomb dolmen
+1	box	The dolmen is intricately decorated with the symbol of two crossed palm trees. It might be the family crest? You can see that there are some items on the dolmen.
+1	box	You find a rusty sword with an ivory pommel. You take the Ivory pommel and place it in your inventory.
+1	box	You find a Crystal Sphere. You take the crystal and place it carefully in your inventory.
+1	box	You find some writing on the dolmen, you grab some nearby scraps of delicate paper together and copy the text as best you can and collect them together as a scroll.
+1	action	end
+0	section	Use chisel on Sword pommel
+1	box	You prepare the ivory pommel and the chisel to start crafting...
+1	box	You successfully craft some of the ivory into beads. They may look good as part of a necklace.
+1	action	end
+0	section	Use Bronze wire on Bone beads
+1	box	You successfully craft the beads and bronze wire into a necklace which you name, 'Beads of the Dead'
+1	action	end
+0	section	Climb Climbing rocks
+1	box	You attempt to climb the granite rock.
+1	cond	If the player fails to climb the rock:
+2	box	You fall!
+2	line	Player	Arrggghhhhhh!
+2	action	The player is dealt 1-10 damage
+2	action	end
+1	cond	If the player successfully climbs the rock:
+2	box	You manage to climb back out again!
+0	section	Read the Bervirius notes
+1	box	This scroll is a collection of writings. Some of them are just scraps of papyrus with what looks like random scribblings. Which would you like to read?
+1	select	Select an Option
+1	option	Tattered Yellow papyrus.
+2	action	Opens Transcript:Bervirius notes#Tattered Yellow papyrus
+1	option	Decayed White papyrus.
+2	action	Opens Transcript:Bervirius notes#Decayed White papyrus
+1	option	Crusty Orange papyrus.
+2	action	Opens Transcript:Bervirius notes#Crusty Orange papyrus
+0	section	Talking to Trufitus after visiting Bervirius' Tomb
+1	line	Player	Greetings...
+1	line	Trufitus	Greetings Bwana, did you find Bervirius' Tomb?
+1	option	I think I found Bervirius' Tomb.
+2	line	Player	I think I found Bervirius' Tomb.
+2	line	Trufitus	Congratulations Bwana, show me any items you have found though. I may be able to help.
+2	option	I actually need help with something else.
+3	line	Player	I actually need help with something else.
+3	line	Trufitus	What could I possibly help you with Bwana?
+3	option	I need help with Rashiliyia.
+4	action	above
+3	option	I need help with Zadimus.
+4	action	above
+3	option	I have some items that I need help with.
+4	action	above
+3	option	I need help with Bervirius.
+4	action	above
+3	option	Ok, thanks!
+4	action	above
+2	option	I didn't find anything in the tomb.
+3	line	Player	I didn't find anything in the tomb.
+3	line	Trufitus	Maybe you need to look around a little more. There must be some small detail at least that can help us.
+3	option	I have some items that I need some help with.
+4	action	above
+3	option	I actually need help with something else.
+4	action	above
+2	option	I have some items that I need help with.
+3	action	above
+1	option	I need some help with the Temple of Ah Za Rhoon.
+2	action	above
+1	option	No, I didn't find a thing.
+2	line	Player	No, I didn't find a thing.
+2	line	Trufitus	That is a shame Bwana. We really do need to act against Rashiliyia soon if we are ever to stand a chance of defeating her.
+2	option	Actually I did find the tomb, I was just joking.
+3	line	Player	Actually I did find the tomb, I was just joking.
+3	line	Trufitus	Well, Bwana, this is no laughing matter. We need to take this very seriously and act now! If you have found any items at the tomb that you need help with please let me see them and I will help as much as I can.
+3	option	I didn't find anything in the tomb.
+4	action	above
+3	option	I actually need help with something else.
+4	action	above
+2	option	I actually need help with something else.
+3	action	above
+2	option	I didn't find anything in the tomb.
+3	action	above
+0	section	Using the Sword pommel on Trufitus
+1	box	You show Trufitus the sword pommel.
+1	line	Trufitus	It is a very nice item Bwana. It may be just what you need to gain access to Rashiliyia's tomb. While you were away, I did some research.
+1	line	Trufitus	Rashiliyia would spare the lives of those who wore bronze necklaces. This pommel may have some significance to Bervirius. Perhaps you can craft something from it that can help?
+1	line	Trufitus	My guess is that you will need some protection from Rashiliyia if you intend to enter her tomb!
+1	option	How do I make a bronze necklace?
+2	line	Player	How do I make a bronze necklace?
+2	line	Trufitus	Well, Bwana, I would guess that you would need to get some bronze metal and work it into something that could be turned into a necklace?
+2	option	What should I put on the necklace?
+3	line	Player	What should I put on the necklace?
+3	line	Trufitus	Perhaps Zadimus' clue has the answer? Now, what was it that he said again? Something about kin and keys? That sword pommel belonged to Bervirius didn't it?
+3	option	How do I make a bronze necklace?
+4	action	above
+3	option	Thanks!
+4	line	Player	Thanks!
+4	line	Trufitus	You're more than welcome Bwana! Good luck for the rest of your quest.
+4	action	end
+2	option	Thanks!
+3	action	above
+1	option	What should I put on the necklace?
+2	action	above
+0	section	Using the Locating crystal on Trufitus
+1	box	You show Trufitus the Locating Crystal.
+1	line	Trufitus	This is incredible Bwana.
+1	line	Player	It is?
+1	line	Trufitus	Absolutely! This will help you to locate the entrance to Rashiliyia's tomb. Simply activate it when you think you are near, and it should glow different colours to show how near you are.
+1	action	end
+0	section	Using Bervirius notes on Trufitus
+1	box	You hand the notes over to Trufitus.
+1	line	Trufitus	Hmm, these notes are quite extraordinary Bwana. They give location details of Rashiliyia's tomb, and some information on how to use the crystal.
+1	line	Trufitus	The information is quite specific, North of Ah Za Rhoon! That's a great place to start looking!
+1	action	end
+0	section	Using Bone beads on Trufitus
+1	box	You show Trufitus the beads that you crafted.
+1	line	Player	Take a look at these.
+1	line	Trufitus	Hmm, very interesting Bwana, your abilities are much more focused than I had initially thought. I presume these are to be part of the ward to protect you from Rashiliyia?
+1	action	end
+0	section	Using Beads of the Dead on Trufitus
+1	box	You show Trufitus the 'Beads of the Dead'.
+1	line	Player	Take a look at this...
+1	line	Trufitus	This is very impressive Bwana, I'm quite surprised at your ingenuity. This should be a good protection against Rashiliyia if you ever find her Tomb.
+1	action	end
+0	section	Using the Bone key on Trufitus
+1	line	Player	Have a look at this!
+1	line	Trufitus	This is amazing Bwana, the level of detail is incredible. Where did you find it?
+1	option	I made it from the bone shard that Zadimus gave me.
+2	line	Player	I made it from the bone shard that Zadimus gave me.
+2	line	Trufitus	How very inventive Bwana. You must have seen the lock to have crafted it so well. Does the key work?
+2	option	Yes and I explored inside some sort of cavern.
+3	line	Player	Yes and I explored inside some sort of cavern.
+3	line	Trufitus	How interesting Bwana, did you find anything?
+3	option	Not really.
+4	line	Player	Not really.
+4	line	Trufitus	Maybe you should go back and try to find some more things.
+4	line	Trufitus	Show me any other items that you may have. We need any clue to locate Rashiliyia's resting place.
+4	action	end
+3	option	Yes, I found lots of things.
+4	line	Player	Yes, I found lots of things.
+4	line	Trufitus	If you let me see them Bwana, perhaps I can offer you some extra information.
+4	action	end
+2	option	I don't know, I haven't tried it yet.
+3	line	Player	I don't know, I haven't tried it yet.
+3	line	Trufitus	It may be an idea to try it and then scout out the area. If it relates to Rashiliyia, it might help us to defeat her.
+3	action	end
+1	option	Do you know what it opens?
+2	line	Player	Do you know what it opens?
+2	line	Trufitus	You must already know what it opens to have carved it so pefectly. Perhaps in your travels you have come across some unique doors with a unique lock? I hope this helps with your quest.
+2	action	end
+0	section	Visiting the Tomb of Rashiliyia
+0	section	Search Palm tree
+1	box	You search the palm trees...
+1	box	...and reveal an ancient doorway set into the side of the hill!
+1	action	end
+0	section	Open Carved doors
+1	box	There seems to be some sort of recepticle on the door. Perhaps it needs a key?
+1	action	end
+0	section	Search Carved doors
+1	box	Examining the door, you see that it has a very strange lock. You're shocked to find that it seems to be made out of bone!
+1	action	end
+0	section	Using the bone shard on the carved doors
+1	box	You try to use the bone shard on the lock. Although it is about the right size, you find that it just doesn't fit the delicate lock mechanism.
+1	action	end
+0	section	Use chisel on Bone shard
+1	cond	If the player does not have 20 Crafting:
+2	box	You need to have a Crafting level of at least 20 to work this material.
+2	action	end
+1	cond	If the player has 20 Crafting:
+2	box	Remembering Zadimus' words and the strange bone lock, you start to craft the bone. You successfully make a key out of the bone shard.
+2	action	end
+0	section	Use Bone key on Carved doors
+1	box	You try the bone key with the lock.
+1	box	A shimmering light dances over the doors, before you can blink, the doors creak open.
+1	box	The doors close behind you with the sound of crunching bone. Before you stretches a winding tunnel blocked by an ancient gate.
+1	action	end
+0	section	Open Ancient metal gate
+1	cond	If the player is not wearing the Beads of the Dead:
+2	box	Rashiliyia appears!
+2	line	Rashiliyia	Let me squeeze the life from your mortal frame.
+2	line	Rashiliyia	Which non-kin dares enter my tomb?
+2	line	Rashiliyia	My minions will finish thee!
+2	box	You feel invisible hands starting to choke you...
+2	line	Player	* Gaaaa.... *
+2	action	Rahiliyia spawns 1-3 undead ones
+2	action	end
+1	cond	If the player is wearing the Beads of the Dead:
+2	box	The Beads of the Dead start to glow...
+2	action	end
+0	section	Search Ancient metal gate
+1	box	There is an ancient symbol on the gate. It looks like a human figure with something around its neck. It looks pretty scary.
+1	action	end
+0	section	Climb Rocks
+1	box	You carefully try to pick your way down the rocks.
+1	box	You manage to carefully clamber down.
+0	section	Attempting to pick up the coins
+1	box	As soon as you touch the coins you hear the grinding sound of bones against stone as you see skeletons and zombies rising up out of the ground. The coins turn to dust in your hands.
+1	line	Undead one	Prepare to go to the other side!
+1	line	Undead one	Rahhhhh! OOoohhhhhh!
+0	section	Open Tomb doors before placing bones
+1	box	This door is completely sealed, it is very ornately carved.
+0	section	Search Tomb doors
+0	section	No bones put in
+1	box	The door is ornately carved with depictions of skeletal warriors. You notice that some of the skeletal warriors depictions are not complete.Instead, there are recesses where some of the bones should be. There are three recesses.
+1	action	end
+0	section	One bone put in
+1	box	The door is ornately carved with depictions of skeletal warriors. You notice that some of the skeletal warriors depictions are not complete.Instead, there are recesses where some of the bones should be. There are two recesses.
+1	action	end
+0	section	Two bones put in
+1	box	The door is ornately carved with depictions of skeletal warriors. You notice that some of the skeletal warriors depictions are not complete.Instead, there are recesses where some of the bones should be. There is one recess.
+1	action	end
+0	section	Three bones put in
+1	box	The door is ornately carved with depictions of skeletal warriors. All the skeletons are complete. It looks as if you walk through this door.
+1	action	end
+0	section	Using bones on Tomb doors
+1	cond	If this is the first bone:
+2	box	You carefully place a bone in the door...
+2	box	You place the bone into the skeletal door and it fits. There are two recesses left now.
+2	box	You fit the bone into the recess.
+1	cond	If this is the second bone:
+2	box	You carefully place another bone in the door...
+2	box	You place the bone into the skeletal door and it fits. There is just one recess left now.
+2	box	You fit the bone into the recess.
+1	cond	If this is the third bone:
+2	box	You carefully place another bone in the door...
+2	box	You fit the last bone into the recess.
+2	box	You place the bone into the last recess on the skeletal door and it fits. All the recesses are filled...
+2	box	The door seems to change slightly. Two depictions of skeletal warriors turn their heads towards you. They are alive! The Skeletons wrench themselves free of the door. Stepping out of the door, with grinning teeth they push the huge doors open.
+1	action	end
+0	section	Look-at or Search Tomb dolmen
+1	box	You touch the dolmen, and the ground starts to shake. You hear an unearthly voice booming and you step away from the dolmen in anticipation.
+1	action	Nazastarool spawns.
+1	line	Nazastarool	I am Nazastarool! Prepare to die!
+1	action	Continues after killing Nazastarool.
+1	box	You defeat Nazastarool and the corpse falls to the ground. The bones start to move again and soon they reform into a grisly giant skeleton.
+1	action	Nazastarool spawns again.
+1	line	Nazastarool	Quake in fear, for I am reborn!
+1	line	Nazastarool	Your death will be swift.
+1	action	Continues after killing Nazastarool.
+1	box	You defeat Nazastarool and the skeleton falls to the ground. An ethereal form starts taking shape above the bones and you soon face the vengeful ghost of Nazastarool.
+1	action	Nazastarool spawns again.
+1	line	Nazastarool	Nazastarool returns with vengeance!
+1	line	Nazastarool	Soon you will serve Rashiliyia.
+1	action	Continues after killing Nazastarool.
+1	box	You hear a disembodied voice fading away into the distance, 'May you perish in the fires of Zamorak's furnace! Rashiliyia's curse is upon you!'
+1	box	You see something appear on the dolmen.
+1	box	Nazastarool: May you perish in the fires of Zamorak's furnace! Rashiliyia's
+1	box	Nazastarool: curse is upon you!
+1	action	end
+0	section	Take Rashiliyia corpse
+1	box	You take the mummified remains of a human female. You feel certain that these are Rashiliyia's remains. You carefully place the remains in your inventory.
+1	action	end
+0	section	Open Tomb exit
+1	cond	If the player is not wearing the Beads of the Dead:
+2	action	Same as above from "Rashiliyia appears!" but also continues below
+1	cond	If the player is wearing the Beads of the Dead:
+2	box	The Beads of the Dead start to glow...
+1	box	The door seems to be locked!
+1	line	Player	Oh no, I'm going to be stuck in here forever!
+1	line	Player	How will I ever get out!
+1	line	Player	I'm too young to die!
+1	action	end
+0	section	Search Tomb exit
+1	box	You can see a small recepticle, not unlike the one on the opposite side of the door!
+1	action	end
+0	section	Use bone key on tomb exit
+1	box	You unlock the door with the key.
+1	box	The doors creak open revealing bright daylight.
+1	box	You walk outside into the warmth of the jungle heat.
+1	cond	Unknown condition:
+2	box	You get a sense that something seems incomplete.
+1	action	end
+0	section	Activate the Locating crystal
+1	box	You feel the crystal trying to draw upon your spiritual energy. Do you want to let it?
+1	select	Select an Option
+1	option	Yes, just this once.
+2	cond	If the player is too far from the Tomb of Rashiliyia:
+3	box	There is nothing different about the crystal. You're most likely not close enough for it to be active.
+3	action	end
+2	cond	If the player is within 200 squares of the Tomb of Rashiliyia:
+3	box	The crystal glows faintly.
+3	action	end
+2	cond	If the player is within [unknown squares] of the Tomb of Rashiliyia:
+3	box	The crystal glows brightly.
+3	action	end
+2	cond	If the player is within [unknown squares] of the Tomb of Rashiliyia:
+3	box	The crystal is very bright.
+3	action	end
+2	cond	If the player is within [unknown squares] of the Tomb of Rashiliyia:
+3	box	The crystal blazes brilliantly.
+3	action	end
+1	option	Yes, always let it draw from my spiritual energy.
+2	action	Same as above, and further activations don't provide the options.
+1	option	No, it sounds a bit dangerous.
+2	box	You decide not to allow the crystal to draw on your spiritual energy.
+2	action	end
+0	section	Talking to Trufitus after visiting the Tomb of Rashiliyia
+1	line	Player	Hello.
+1	line	Trufitus	Greetings again Bwana. I hope that you have managed to locate Rashiliyia's Tomb. Again, if you found anything interesting, please show it to me.
+1	option	What should I do now?
+2	line	Player	What should I do now?
+2	box	Trufitus scratches his head.
+2	line	Trufitus	Well Bwana, if you have Rashiliyia's remains, you need to find a way to put her spirit to rest. Perhaps there was a clue with one of the artefacts that you have?
+2	line	Trufitus	Why not have a look through the artefacts that you have found and see if there is some clue that might help? If you do not have her remains, you will need to find them.
+2	action	end
+1	option	Thanks!
+2	line	Player	Thanks!
+2	line	Trufitus	You're more than welcome Bwana! Good luck for the rest of your quest.
+2	action	end
+0	section	Using Rashiliyias' remains on Trufitus
+1	box	You show Trufitus the remains...
+1	line	Player	Could you have a look at this..
+1	line	Trufitus	This is truly incredible bwana... So these are the remains of the dread Queen Rashiliyia?
+1	line	Player	Yes, I think so.
+1	option	What should I do with them?
+2	line	Player	What should I do with them?
+2	line	Trufitus	Hmm, I'm not exactly sure... Perhaps there is a clue in one of the artefacts you have found?
+2	option	Can you take them off my hands?
+3	line	Player	Can you take them off my hands?
+3	line	Trufitus	I dare not take them, I may be taken over by the evil spirit of Rashiliyia!
+3	option	What should I do with them?
+4	action	above
+3	option	Thanks!
+4	line	Player	Thanks!
+4	line	Trufitus	You're more than welcome Bwana! Good luck for the rest of your quest.
+2	option	Thanks!
+3	action	above
+1	option	Can you take them off my hands?
+2	action	above
+0	section	Dropping Rashiliyias' remains on the ground
+1	box	The remains of Rashiliyia look quite delicate. You sense that a spirit needs to be put to rest. Are you sure that you want to drop the remains?
+1	select	Select an Option
+1	option	Yes, I am sure.
+2	line	Rashiliyia	You have my gratitude for releasing me, there is still much that needs to be done before Shilo Village is utterly destroyed. Please excuse me, I have plans and people to execute!
+2	box	The figure turns and soars away, quickly disappearing into the distance.
+2	action	end
+1	option	No, I'll keep hold of the remains.
+2	action	end
+0	section	Using Rashiliyias' remains on the dolmen
+1	box	You carefully place Rashiliyias remains on the dolmen. You feel a strange vibration in the air.
+1	line	Rashiliyia	You have my gratitude for releasing my spirit. I have suffered a vengeful and evil existence. I was tricked by Zamorak. He returned my son to me as an undead creature.
+1	line	Rashiliyia	My hatred and bitterness corrupted me. I tried to destroy all life... now I am released. And am grateful to contemplate eternal rest...
+1	action	end
+0	section	Post-quest
+0	section	Ah Za Rhoon
+0	section	Look-at or Investigate Strange looking stone
+1	box	You notice nothing significant about this stone.
+1	action	end
+0	section	Using items on Strange looking stone
+1	box	You notice nothing significant about this.
+1	action	end
+0	section	Search Loose rocks
+1	box	You notice nothing significant about this.
+1	action	end
+0	section	Search Old sacks
+1	box	You notice nothing significant about this.
+1	action	end
+0	section	Look-at or Search the Ancient gallows
+1	box	You notice nothing significant about this.
+1	action	end
+0	section	Tomb of Bervirius
+0	section	Inspect or Search Tomb dolmen
+1	box	There is nothing new about this dolmen.
+1	action	end
+0	section	Rashiliyia's Tomb
+0	section	Using bones on the Tomb door
+1	box	There are no more recesses to fill, you filled them all.
+1	action	end
+0	section	Look-at or Search Tomb dolmen
+1	box	You have already completed this quest.
+1	box	Rashiliyia's remains have been put to rest.
+1	action	end
