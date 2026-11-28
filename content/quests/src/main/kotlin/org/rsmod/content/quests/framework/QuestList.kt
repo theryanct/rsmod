@@ -1,6 +1,7 @@
 package org.rsmod.content.quests.framework
 
 import org.rsmod.api.type.refs.dbrow.DbRowReferences
+import org.rsmod.content.quests.ruffsituation.RuffSituation.Companion.A_RUFF_SITUATION
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.barcrawl.Barcrawl.Companion.BARCRAWL
 import org.rsmod.content.quests.bearyoursoul.BearYourSoul.Companion.BEAR_YOUR_SOUL
@@ -89,6 +90,7 @@ import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_TH
 public object BuiltQuests {
     public val all: List<QuestDef> =
         listOf(
+            A_RUFF_SITUATION,
             ANIMAL_MAGNETISM,
             BARCRAWL,
             BEAR_YOUR_SOUL,
