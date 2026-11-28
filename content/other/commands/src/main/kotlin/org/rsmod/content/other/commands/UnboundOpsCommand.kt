@@ -144,7 +144,9 @@ constructor(
         fun add(kind: String, id: Int, name: String, op: Int, label: String, coords: String, by: String?) {
             val key = (if (kind == "npc") 1L shl 40 else 0L) or (id.toLong() shl 3) or op.toLong()
             val cover = by ?: note(kind, id, name, op)?.let { "note: $it" }
-            val into = if (cover != null && key !in rows) covered else rows
+            // An op is covered only if every instance of it is: a later uncovered instance moves
+            // it to the unbound list (removed from `covered` below, before writing).
+            val into = if (cover != null) covered else rows
             val row = into.getOrPut(key) { Row(kind, id, name, op, label) }
             if (row.count++ == 0) row.sample = coords
             if (cover != null && row.coveredBy.isEmpty()) row.coveredBy = cover
@@ -184,6 +186,8 @@ constructor(
                 }
             }
         }
+
+        covered.keys.removeAll(rows.keys)
 
         val labelCounts = rows.values.groupingBy { it.label.lowercase() }.eachCount()
         val sorted =
