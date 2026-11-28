@@ -1,0 +1,146 @@
+# Generated from the OSRS Wiki page "Transcript:Elemental Workshop II" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Searching the Bookcase
+1	select	Start the Elemental Workshop II quest?
+1	option	Yes.
+2	cond	If the player has a full inventory:
+2	cond	Otherwise:
+3	box	You find an old-looking book.
+3	box	You find a slip of paper that has been used for a bookmark. You put it in your pack to study later.
+3	box	The book has two parts: an introduction and an instruction section.
+3	box	You flip the book open to the introduction and start reading.
+3	action	Beaten book interface opens
+1	option	No.
+2	action	end
+0	section	Searching the Seer's Village bookcase
+1	cond	If the player has a full inventory:
+1	cond	Otherwise:
+2	box	You find a book titled 'The Elemental Shield'.
+2	box	You also find a key.
+2	action	end
+0	section	Into the Workshop
+0	section	Searching Machinery for the key
+1	cond	If the player has a full inventory:
+1	cond	Otherwise:
+2	box	You find a key hidden in the third pipe.
+2	action	end
+0	section	Unlocking the hatch
+1	box	The key fits the lock in the hatch perfectly.
+2	action	end
+0	section	Searching crates
+1	cond	If you find nothing:
+2	box	It's empty.
+1	cond	If it has a small cog:
+2	box	You find a small cog.
+1	cond	If it has a medium cog:
+2	box	You find a medium-sized cog.
+1	cond	If it has a large cog:
+2	box	You find a big cog.
+1	cond	If it has a pipe:
+2	box	You find a pipe.
+0	section	Repairing piping
+1	box	You replace the section of broken pipe.
+1	action	end
+0	section	Connecting the junction box pipes
+1	line	Player	I hope I got that right.
+1	action	end
+0	section	Placing cogs on the shafts
+0	section	Large
+1	box	You put the big cog onto the shaft.
+1	action	end
+0	section	Medium
+1	box	You put the medium-sized cog onto the shaft.
+1	action	end
+0	section	Small
+1	box	You put the small cog onto the shaft.
+1	action	end
+0	section	Schematic crate
+1	select	There are two schematics here...
+1	option	Crane schematic
+2	box	You take a copy of the schematic drawing.
+2	action	end
+1	option	Lever schematic
+2	box	You take a copy of the schematic drawing.
+2	action	end
+0	section	Reading the crane schematic
+1	box	The schematic drawing details the construction and maintenance of a mechanical arm. One of the sections you notice is an explanation of how to make an elemental claw.
+1	action	end
+0	section	Making an elemental claw
+1	select	Would you like to make...
+1	option	An elemental claw.
+2	box	Following the instructions from the schematic you make an elemental claw.
+2	action	end
+1	option	An elemental helm.
+0	section	Repairing the claw
+1	box	You replace the broken claw.
+1	action	end
+0	section	Rotating the claw while the arm is down
+1	box	The arm cannot be rotated while the claw is down.
+1	action	end
+0	section	Puling the press lever while it is broken
+1	box	You pull the lever but nothing happens. Maybe it's broken.
+1	action	end
+0	section	Pulling the press lever at the wrong time
+1	box	You pull the lever but nothing happens. Maybe the jig needs to be under the press first.
+1	action	end
+0	section	Pulling the press lever with the junction pipes not correctly connected
+1	box	You pull the lever but nothing happens. Maybe the pipes are connected the wrong way round.
+1	action	end
+0	section	Pulling the press lever without a bar in position
+1	box	You pull the lever and the press responds. The hardy comes down, stopping inches from the jig, then returns to its original position.
+1	action	end
+0	section	Flattening an elemental bar after heating it
+1	box	You pull the lever and the press responds. The hardy comes down, hitting the elemental bar. The bar has been flattened.
+1	action	end
+0	section	Opening the water valve
+1	box	You open the valve.
+1	action	end
+0	section	Closing the water valve
+1	box	You close the valve.
+1	action	end
+0	section	Pulling the lever while the tank is full
+1	box	You pull the lever but nothing happens. Maybe the tank needs to be empty first.
+1	action	end
+0	section	Turning the water valve before repairing the pipe
+1	box	You open the valve and hear the whistling of air being sucked through a hole above the tank.
+1	action	end
+0	section	Turning the corkscrew while the door is closer
+1	box	You cannot extend the rack while the door is closed.
+1	action	end
+0	section	Trying to turn on the fan with the cogs placed incorrectly
+1	box	The fan is sucking, but it really needs to blow instead.
+1	box	The machine starts rumbling.
+1	action	end
+0	section	Trying to remove a cog while the fan is on
+1	box	You should stop the machine before you try that.
+1	action	end
+0	section	Turning on the fan
+1	box	The fan starts to blow.
+1	action	end
+0	section	Turning off the fan
+1	box	The machine grinds to a standstill.
+1	action	end
+0	section	Taking the primed bar
+1	box	You take the primed bar.
+1	action	end
+0	section	Placing the primed bar
+1	box	You place the primed bar under the device.
+1	action	end
+0	section	Making the mind bar
+1	box	You feel magically weakened.
+0	section	Taking the mind bar
+1	box	You take the elemental mind bar.
+1	action	end
+0	section	Crafting the mind helm
+0	section	Using the workbench without elemental metal
+1	box	You don't have any suitable metals to use with this workbench.
+1	action	end
+0	section	Using the workbench without a hammer
+1	box	You need a hammer to work the metal with.
+1	action	end
+0	section	Using the workbench without the beaten book
+1	box	This workbench is too complicated. You need instructions to follow.
+1	action	end
+0	section	Using the workbench with the proper items
+1	box	Following the instructions in the book, you make an elemental mind helm.
+1	action	Quest completion scroll appears

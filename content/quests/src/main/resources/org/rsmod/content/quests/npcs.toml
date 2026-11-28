@@ -1226,3 +1226,9 @@ coords = '0_39_55_57_50'
 [[spawn]]
 npc = 'questscorpionc'
 coords = '1_47_54_50_32'
+
+# Elemental Workshop II: the jig cart (multinpc on elemental_quest_2_jig_state), under the crane
+# (1952,5146,2). Authored placement: the cart doesn't move between stations.
+[[spawn]]
+npc = 'elem2_cart_npc'
+coords = '2_30_80_32_26'
