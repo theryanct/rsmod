@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.mesanims
 import org.rsmod.api.player.events.StatAdvanced
 import org.rsmod.api.player.features.CompanionPerks
+import org.rsmod.api.player.features.CompanionRoster
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.statBase
@@ -78,6 +79,7 @@ constructor(
 
     override fun ScriptContext.startup() {
         CompanionPerks.installExtraOre { doricOreChance(it) }
+        CompanionRoster.install(RosterBackend())
         with(QuestTalk) {
             default(npcTypes, CompanionNpcs.doric) { talk(CompanionKind.Doric, it) }
             default(npcTypes, CompanionNpcs.myarm) { talk(CompanionKind.MyArm, it) }
@@ -96,6 +98,7 @@ constructor(
 
     private fun setActive(player: Player, companion: CompanionKind?) {
         VarPlayerIntMapSetter.set(player, CompanionVarps.active, (companion?.ordinal ?: -1) + 1)
+        CompanionRoster.changed(player)
     }
 
     private fun affinity(player: Player, companion: CompanionKind): Int =
@@ -281,6 +284,7 @@ constructor(
             sayMessage(player, companion, "ko")
             player.mes("${companion.display} has been knocked out! They'll be back in about 2 minutes.")
             session.koTicks = KO_TICKS
+            CompanionRoster.changed(player)
             return
         }
         if (npc == null) {
@@ -288,6 +292,7 @@ constructor(
             if (session.koTicks <= 0) {
                 spawnFollower(player, companion)
                 sayLine(player, companion, "return")
+                CompanionRoster.changed(player)
             }
             return
         }
@@ -315,6 +320,7 @@ constructor(
         val points = player.vars[varp]
         if (points >= MAX_AFFINITY) return
         VarPlayerIntMapSetter.set(player, varp, points + 1)
+        CompanionRoster.changed(player)
         val after = tier(player, companion)
         if (after > before) {
             sayLine(player, companion, "tier")
@@ -323,6 +329,71 @@ constructor(
     }
 
     private fun nextIdle(): Int = random.of(IDLE_MIN_TICKS, IDLE_MAX_TICKS)
+
+    /* Roster for the Companions side tab (CompanionRoster): the same paths as the Talk-to. */
+
+    private inner class RosterBackend : CompanionRoster.Backend {
+        override fun entries(player: Player): List<CompanionRoster.Entry> {
+            val active = active(player)
+            return CompanionKind.entries.map { companion ->
+                val tier = tier(player, companion)
+                CompanionRoster.Entry(
+                    key = companion.key,
+                    name = companion.display,
+                    unlocked = isUnlocked(player, companion),
+                    unlockHint = unlockHint(companion),
+                    active = active == companion,
+                    out = active == companion && followers[player.uid.packed] != null,
+                    affinity = affinity(player, companion),
+                    tier = tier,
+                    nextTierAt = TIER_POINTS.getOrNull(tier),
+                    perk = perk(companion, tier),
+                )
+            }
+        }
+
+        override fun summon(access: ProtectedAccess, key: String) {
+            val companion = CompanionKind.entries.firstOrNull { it.key == key } ?: return
+            if (!isUnlocked(access.player, companion)) {
+                access.mes(unlockHint(companion))
+                return
+            }
+            if (active(access.player) == companion) {
+                access.mes("${companion.display} is already with you.")
+                return
+            }
+            access.summon(companion)
+        }
+
+        override fun dismiss(access: ProtectedAccess) {
+            val companion = active(access.player) ?: return
+            access.dismiss(companion)
+        }
+
+        override fun recall(access: ProtectedAccess) {
+            val player = access.player
+            val companion = active(player) ?: return
+            if (followers[player.uid.packed] == null) {
+                access.mes("${companion.display} has been knocked out and will be back soon.")
+                return
+            }
+            removeFollower(player)
+            spawnFollower(player, companion)
+            access.mes("${companion.display} catches up with you.")
+        }
+    }
+
+    private fun unlockHint(companion: CompanionKind): String =
+        when (companion) {
+            CompanionKind.Doric -> "Complete Doric's Quest to unlock Doric."
+            CompanionKind.MyArm -> "Complete My Arm's Big Adventure to unlock My Arm."
+        }
+
+    private fun perk(companion: CompanionKind, tier: Int): String =
+        when (companion) {
+            CompanionKind.Doric -> "${DORIC_ORE_CHANCE[tier]}% chance of an extra ore when mining."
+            CompanionKind.MyArm -> "Carries ${MY_ARM_SLOTS[tier]} stacks of items."
+        }
 
     /* Level-ups */
 
