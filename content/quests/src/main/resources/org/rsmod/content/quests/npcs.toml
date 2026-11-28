@@ -144,3 +144,12 @@ coords = '0_48_51_27_5'
 [[spawn]]
 npc = 'dr_harlow'
 coords = '0_50_53_22_5'
+
+# X Marks the Spot: Veos in the Sheared Ram (Lumbridge) and on the Port Sarim dock (multinpcs).
+[[spawn]]
+npc = 'veos_lumbridge'
+coords = '0_50_50_28_42'
+
+[[spawn]]
+npc = 'veos_sarim'
+coords = '0_47_50_46_53'

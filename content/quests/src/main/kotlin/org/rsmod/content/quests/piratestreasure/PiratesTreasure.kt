@@ -20,6 +20,7 @@ import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestDigSpots
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -52,7 +53,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *
  * Also here until a proper travel module exists: the Port Sarim <-> Karamja boats (seamen,
  * customs officer, 30 coins; rum can't pass customs) and banana tree picking. Spade "Dig" is bound
- * here (only the treasure spot does anything) unless something else owns it. Not done: rum lost
+ * via the shared [QuestDigSpots]. Not done: rum lost
  * on teleport, Ring of Charos(a) options, the boat cutscene.
  */
 class PiratesTreasure
@@ -98,7 +99,7 @@ constructor(
             mes("The chest is empty.")
         }
         onHeldOpLabel(objTypes, PirateObjs.message, "Read") { readMessage() }
-        onHeldOpLabel(objTypes, PirateObjs.spade, "Dig") { dig() }
+        QuestDigSpots.register { dig() }
         onHeldOpLabel(objTypes, PirateObjs.casket, "Open") { openCasket() }
 
         for (seaman in PirateNpcs.seamen) {
@@ -388,13 +389,11 @@ constructor(
         }
     }
 
-    private suspend fun ProtectedAccess.dig() {
-        anim(PirateSeqs.dig)
-        delay(1)
+    /** Falador Park treasure spot (via [QuestDigSpots]); `false` anywhere else. */
+    private suspend fun ProtectedAccess.dig(): Boolean {
         val here = player.coords
         if (state != 3 || here.level != TREASURE.level || here.chebyshevDistance(TREASURE) > 1) {
-            mes("You dig but find nothing.")
-            return
+            return false
         }
         if (!flag(GARDENER_ANGRY)) {
             setFlag(GARDENER_ANGRY)
@@ -404,13 +403,14 @@ constructor(
                 chatNpc(angry, "First moles, now this! Take this, vandal!")
             }
             gardener.opPlayer2(player, aiInteractions)
-            return
+            return true
         }
         invAddOrDrop(objRepo, PirateObjs.casket)
         mes("You dig a hole in the ground... and find a casket!")
         statAdvance(stats.cooking, COOKING_XP * xpMods.get(player, stats.cooking))
         setFlag(GARDENER_ANGRY, on = false)
         completeQuest(PIRATES_TREASURE)
+        return true
     }
 
     private suspend fun ProtectedAccess.openCasket() {
@@ -548,7 +548,6 @@ internal object PirateObjs : ObjReferences() {
     val message = find("piratemessage")
     val casket = find("pirate_casket")
     val white_apron = find("white_apron")
-    val spade = find("spade")
     val coins = find("coins")
     val gold_ring = find("gold_ring")
     val emerald = find("emerald")
@@ -556,7 +555,6 @@ internal object PirateObjs : ObjReferences() {
 
 internal object PirateSeqs : SeqReferences() {
     val pick = find("human_pickupfloor")
-    val dig = find("human_dig")
 }
 
 internal object PirateVarps : VarpReferences() {
