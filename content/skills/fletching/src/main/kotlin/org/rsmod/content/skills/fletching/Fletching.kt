@@ -49,6 +49,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         when (kind) {
             Kind.Knife -> KNIFE to materials[0].obj
             Kind.String,
+            Kind.Hammer,
             Kind.Combine -> materials[0].obj to materials[1].obj
         }
 
@@ -90,7 +91,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private fun verbFor(recipe: Recipe): Int =
         when (recipe.kind) {
-            Kind.Knife -> SkillMultiVerb.MAKE
+            Kind.Knife,
+            Kind.Hammer -> SkillMultiVerb.MAKE
             Kind.String -> SkillMultiVerb.STRING
             Kind.Combine -> SkillMultiVerb.MAKE_SETS
         }
@@ -100,6 +102,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             Kind.String -> "How many would you like to string?"
             Kind.Combine -> "How many sets would you like to make?"
             Kind.Knife -> "What would you like to make?"
+            Kind.Hammer -> "How many would you like to make?"
         }
 
     private fun ProtectedAccess.fletch(job: FletchJob) {
@@ -110,6 +113,10 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         }
         if (recipe.kind == Kind.Knife && invTotal(inv, FletchingObjs.knife) <= 0) {
             mes("You need a knife to fletch logs.")
+            return
+        }
+        if (recipe.kind == Kind.Hammer && invTotal(inv, FletchingObjs.hammer) <= 0) {
+            mes("You need a hammer to attach the limbs.")
             return
         }
         val units = unitsPerAction(recipe)

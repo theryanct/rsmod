@@ -8,6 +8,7 @@ import org.rsmod.game.type.seq.SeqType
 
 object FletchingObjs : ObjReferences() {
     val knife: ObjType = find("knife")
+    val hammer: ObjType = find("hammer")
 
     val byName: Map<String, ObjType> =
         FletchingData.recipes
