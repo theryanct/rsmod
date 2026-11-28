@@ -32,6 +32,22 @@ internal object TemporossMap {
     val CRATES =
         listOf(CoordGrid(3038, 2978, 0), CoordGrid(3038, 2976, 0), CoordGrid(3056, 2978, 0), CoordGrid(3056, 2976, 0))
 
+    /**
+     * Tether sites in `tempoross_tethered` order (1 N totem, 2 W mast, 3 E mast, 4 S totem). Masts
+     * and cannons are bridge locs stored on plane 1; the lookup tries plane 0 then 1.
+     */
+    val TETHER_SITES =
+        listOf(CoordGrid(3044, 2995, 0), CoordGrid(3036, 2977, 1), CoordGrid(3058, 2977, 1), CoordGrid(3043, 2961, 0))
+    val CANNONS =
+        listOf(CoordGrid(3038, 2979, 1), CoordGrid(3038, 2974, 1), CoordGrid(3054, 2979, 1), CoordGrid(3054, 2974, 1))
+    /** Wiki: standing between a ship's two ammo crates, the wave can't push you (items still go). */
+    val SHELTERS = listOf(CoordGrid(3038, 2977, 0), CoordGrid(3056, 2977, 0))
+    /** Boss centre: waves push players away from it; fires west/east of it count as ship fires on the HUD. */
+    val CENTRE = CoordGrid(3047, 2977, 0)
+    /** HUD fire areas (authored split): north island at/above this z, south island at/below the other. */
+    const val NORTH_Z = 2985
+    const val SOUTH_Z = 2969
+
     /** Unkah pier by the Ferry (lobby side) and the Al Kharid ferry. */
     val UNKAH_DOCK = CoordGrid(3147, 2841, 0)
     val AL_KHARID_DOCK = CoordGrid(3271, 3145, 0)
@@ -81,6 +97,50 @@ internal object TemporossTuning {
     const val PERMIT_STEP = 700
     const val PERMIT_CAP = 8000
 
+    // Attacks (Wiki: none at or below 10% energy, none in the essence phase). All timings below are
+    // authored (the Wiki gives none) and in game ticks; keep them even (the loop runs every 2 ticks).
+    const val ATTACK_MIN_ENERGY_PCT = 10
+    const val WAVE_FIRST = 90
+    const val WAVE_INTERVAL = 110
+    const val WAVE_WARN = 18
+    const val WAVE_LENGTH = 6
+    /** cs2 4068/4069 arg: overlay fade length in client cycles (~30 per game tick). Authored. */
+    const val WAVE_FADE = 60
+    const val WAVE_START_SCRIPT = 4068
+    const val WAVE_END_SCRIPT = 4069
+    const val WAVE_PUSH = 2
+    const val WAVE_LOSS = 5
+    // Wiki (Mod Ash): each tether site 15-25% to break per wave, scaling with storm intensity.
+    const val TETHER_BREAK_MIN = 15
+    const val TETHER_BREAK_MAX = 25
+
+    const val LIGHTNING_FIRST = 50
+    const val LIGHTNING_INTERVAL = 80
+    const val LIGHTNING_WARN = 6
+    const val LIGHTNING_STRIKES = 2
+    const val LIGHTNING_RADIUS = 6
+    // Wiki: a fire takes one losable item every 2 ticks (= every loop) and spreads at most twice.
+    const val FIRE_MAX_SPREADS = 2
+    const val FIRE_SPREAD_TICKS = 20
+    const val FIRE_CAP = 16
+
+    const val TORRENT_FIRST = 70
+    const val TORRENT_INTERVAL = 90
+    const val TORRENT_WARN = 6
+    const val TORRENT_DISABLE = 16
+
+    // Double ("leaping fish") spot: Wiki 50% bonus fish on a successful roll; timings authored.
+    const val DOUBLE_SPOT_FIRST = 40
+    const val DOUBLE_SPOT_INTERVAL = 50
+    const val DOUBLE_SPOT_LENGTH = 40
+    const val DOUBLE_SPOT_BONUS = 50
+
+    // Wiki points / xp. Repair xp: 4 x Construction level (live needs a house; no house check here).
+    const val POINTS_WAVE = 10
+    const val POINTS_REPAIR = 40
+    const val POINTS_DOUSE = 40
+    const val REPAIR_XP_PER_LEVEL = 4
+
     const val END_DELAY = 30
     const val NPC_LIFETIME = 60000
     const val HUD_SCRIPT = 4074
@@ -93,6 +153,31 @@ internal object TemporossLocs : LocReferences() {
     val crate_rope = find("tempoross_crate_rope")
     val crate_hammer = find("tempoross_crate_hammer")
     val crate_bucket = find("tempoross_crate_bucket")
+
+    /** Tether bases (multilocs on varbit `tempoross_tethered`), in varbit order 1-4. */
+    val sites =
+        listOf(
+            find("tempoross_totem_north"),
+            find("tempoross_mast_bottom_west"),
+            find("tempoross_mast_bottom_east"),
+            find("tempoross_totem_south"),
+        )
+    val sites_broken =
+        listOf(
+            find("tempoross_totem_north_broken"),
+            find("tempoross_mast_bottom_west_broken"),
+            find("tempoross_mast_bottom_east_broken"),
+            find("tempoross_totem_south_broken"),
+        )
+    val totem_tethered = find("tempoross_totem_tethered")
+    val totem_untethered = find("tempoross_totem_untethered")
+    val mast_tethered = find("tempoross_mast_bottom_tethered")
+    val mast_untethered = find("tempoross_mast_bottom_untethered")
+    val water_pump = find("tempoross_water_pump")
+    val water_pump_dock = find("tempoross_water_pump_dock")
+    val cannons = (1..4).map { find("tempoross_cannon_$it") }
+    val cannons_disabled = (1..4).map { find("tempoross_cannon_${it}_disabled") }
+    val fire = find("tempoross_fire_visuals")
 }
 
 internal object TemporossNpcs : NpcReferences() {
@@ -108,6 +193,9 @@ internal object TemporossNpcs : NpcReferences() {
     val boss_unengaged = find("tempoross_boss_unengaged")
     val crates = (1..4).map { find("tempoross_npc_crate_ammunition_$it") }
     val hosts = listOf(find("tempoross_instance_host_w"), find("tempoross_instance_host_e"))
+    val spot_special = find("tempoross_harpoonfish_fishingspot_special")
+    val fire = find("tempoross_fire_hitbox")
+    val cloud = find("tempoross_lightning_cloud")
 }
 
 internal object TemporossObjs : ObjReferences() {
@@ -118,12 +206,23 @@ internal object TemporossObjs : ObjReferences() {
     val hammer = find("hammer")
     val bucket = find("bucket_empty")
     val harpoons = listOf(harpoon, find("dragon_harpoon"), find("infernal_harpoon"), find("crystal_harpoon"))
+    val bucket_water = find("bucket_water")
+    val crystallised_harpoonfish = find("tempoross_crystallised_harpoonfish")
+    val hammers = listOf(hammer, find("imcando_hammer"), find("imcando_hammer_offhand"))
+    val spirit_angler =
+        listOf(find("spirit_angler_hat"), find("spirit_angler_top"), find("spirit_angler_legs"), find("spirit_angler_boots"))
+    /** Wiki: the only items a wave or fire can take. */
+    val losable =
+        listOf(hammer, rope, bucket, bucket_water, raw_harpoonfish, cooked_harpoonfish, crystallised_harpoonfish)
 }
 
 internal object TemporossSeqs : SeqReferences() {
     val harpoon = find("human_harpoon")
     val cook = find("human_cooking")
     val fill = find("human_pickuptable")
+    val tether = find("tempoross_tether")
+    val untether = find("tempoross_untether")
+    val repair = find("human_poh_build")
 }
 
 internal object TemporossInterfaces : InterfaceReferences() {
@@ -133,6 +232,8 @@ internal object TemporossInterfaces : InterfaceReferences() {
 internal object TemporossVarBits : VarBitReferences() {
     val current_points = find("tempoross_current_points")
     val reward_permits = find("tempoross_rewardpermits")
+    /** 0 none, 1 north totem, 2 west mast, 3 east mast, 4 south totem (drives the tether multilocs). */
+    val tethered = find("tempoross_tethered")
 }
 
 /** Skilling symbol range (65540). Saved per character: the authoritative permit count. */
