@@ -117,7 +117,10 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
         }
         when (comsub - CONFIRM_BASE) {
             CANCEL -> cancelTask()
+            BLOCK -> blockTask()
             EXTEND_ALL -> extendAll()
+            STORE -> storeTask()
+            UNSTORE -> unstoreTask()
             else -> mes("That option isn't available yet.")
         }
     }
@@ -159,6 +162,75 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
         mes("You unlock ${missing.size} task extensions for $total points.")
     }
 
+    /** Block the current task's category for every master (100 points, 6 slots); cancels it. */
+    private fun ProtectedAccess.blockTask() {
+        val task = vars[SlayerVarps.task]
+        if (task == 0 || vars[SlayerVarps.count] <= 0) {
+            mes("You don't have a Slayer task to block.")
+            return
+        }
+        val slot = SlayerBlockVarps.blocks.firstOrNull { vars[it] == 0 }
+        if (slot == null) {
+            mes("You can't block any more tasks; all $SLAYER_BLOCK_SLOTS block slots are in use.")
+            return
+        }
+        val points = vars[SlayerVarps.points]
+        if (points < BLOCK_COST) {
+            mes("You need $BLOCK_COST Slayer reward points to block your task.")
+            return
+        }
+        vars[SlayerVarps.points] = points - BLOCK_COST
+        vars[slot] = task
+        clearTask()
+        player.syncSlayerPointsDisplay()
+        mes("Your task has been cancelled and blocked from being assigned again.")
+    }
+
+    /** Task Storage (unlock bit 51): park the current task; unstore it later. */
+    private fun ProtectedAccess.storeTask() {
+        if (!player.hasSlayerUnlock(TASK_STORAGE_BIT)) {
+            mes("You need to unlock Task Storage first.")
+            return
+        }
+        if (vars[SlayerVarps.task] == 0 || vars[SlayerVarps.count] <= 0) {
+            mes("You don't have a Slayer task to store.")
+            return
+        }
+        if (vars[SlayerBlockVarps.stored_task] != 0) {
+            mes("You already have a task stored.")
+            return
+        }
+        vars[SlayerBlockVarps.stored_task] = vars[SlayerVarps.task]
+        vars[SlayerBlockVarps.stored_count] = vars[SlayerVarps.count]
+        vars[SlayerBlockVarps.stored_master] = vars[SlayerVarps.master]
+        clearTask()
+        mes("Your task has been stored.")
+    }
+
+    private fun ProtectedAccess.unstoreTask() {
+        if (vars[SlayerBlockVarps.stored_task] == 0) {
+            mes("You don't have a stored task.")
+            return
+        }
+        if (vars[SlayerVarps.task] != 0 && vars[SlayerVarps.count] > 0) {
+            mes("You need to finish or cancel your current task first.")
+            return
+        }
+        vars[SlayerVarps.task] = vars[SlayerBlockVarps.stored_task]
+        vars[SlayerVarps.count] = vars[SlayerBlockVarps.stored_count]
+        vars[SlayerVarps.master] = vars[SlayerBlockVarps.stored_master]
+        vars[SlayerBlockVarps.stored_task] = 0
+        vars[SlayerBlockVarps.stored_count] = 0
+        vars[SlayerBlockVarps.stored_master] = 0
+        mes("Your stored task is now your active task.")
+    }
+
+    private fun ProtectedAccess.clearTask() {
+        vars[SlayerVarps.task] = 0
+        vars[SlayerVarps.count] = 0
+        vars[SlayerVarps.master] = 0
+    }
+
     private fun ProtectedAccess.cancelTask() {
         if (vars[SlayerVarps.task] == 0 || vars[SlayerVarps.count] <= 0) {
             mes("You don't have a Slayer task to cancel.")
@@ -194,7 +266,13 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
         /** slayer_rewards_tasks_canceltask: confirm cc index = 66 + action (1 cancel, 2 block). */
         const val CONFIRM_BASE = 66
         const val CANCEL = 1
+        const val BLOCK = 2
         const val EXTEND_ALL = 9
+        const val STORE = 10
+        const val UNSTORE = 11
+        const val BLOCK_COST = 100
+        /** slayer_unlock "Task Storage". */
+        const val TASK_STORAGE_BIT = 51
         val UNLOCK_BITS = 0 until CONFIRM_BASE + 1
 
         val unlocksByBit: Map<Int, SlayerData.Unlock> by lazy { SlayerData.unlocks.associateBy { it.bit } }
@@ -215,6 +293,10 @@ internal fun Player.setSlayerUnlock(bit: Int, on: Boolean) {
     val value = if (on) vars[varp] or mask else vars[varp] and mask.inv()
     VarPlayerIntMapSetter.set(this, varp, value)
 }
+
+/** True when [categoryId] is in one of the player's block slots. */
+internal fun Player.isSlayerTaskBlocked(categoryId: Int): Boolean =
+    categoryId != 0 && SlayerBlockVarps.blocks.any { vars[it] == categoryId }
 
 /** True when a bought "longer" unlock extends [category] (a Wiki category key). */
 internal fun Player.hasExtendedTask(category: String): Boolean =
