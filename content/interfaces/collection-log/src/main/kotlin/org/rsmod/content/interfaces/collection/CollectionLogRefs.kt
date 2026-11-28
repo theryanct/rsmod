@@ -39,4 +39,7 @@ internal object CollectionLogVarps : VarpReferences() {
     val category_count = find("collection_category_count")
     val category_count2 = find("collection_category_count2")
     val category_count3 = find("collection_category_count3")
+
+    /** The three lines, in client order (varps 2048, 2941, 2942). */
+    val kill_count_lines = listOf(category_count, category_count2, category_count3)
 }

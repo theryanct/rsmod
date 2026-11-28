@@ -41,7 +41,8 @@ private val logger = InlineLogger()
  *   [Player.collectionLog]; the first of an obj gives the "New item added..." message. Kills
  *   ([NpcKilledEvent]) count by npc name.
  * - Drawing: tab and category clicks send the page's obtained objs in inv `collection_transmit`,
- *   its kill count in `collection_category_count`, then run client script collection_draw (7797)
+ *   its kill-count lines in `collection_category_count{,2,3}` (each the sum of its npcs' kills,
+ *   `kill_counts.tsv`: Barrows = the six brothers), then run client script collection_draw (7797)
  *   with the tab's list components, the tab struct and the selected category.
  * - Counts: the totals varps (`collection_count*`, also shown on the Summary tab) and each
  *   category's "completed" varbit are recomputed from the log; they are not saved separately.
@@ -60,6 +61,9 @@ constructor(
 ) : PluginScript() {
     // Lazy, not built in startup(): other scripts may inject their own (never started) instance.
     private val index by lazy { CollectionLogIndex.load(enumTypes, structTypes) }
+
+    /** Category struct -> kill-count varp -> npc names (lowercase) whose kills are summed. */
+    private val killCountLines by lazy { loadKillCountLines() }
 
     private val totals =
         listOf(
@@ -149,10 +153,12 @@ constructor(
         UpdateInventory.updateInvFull(this, inv)
 
         // Written straight to the client: collection_draw reads them as soon as it runs.
-        val kills = collectionLog.kills[category.name.lowercase()] ?: 0
-        VarpSync.writeVarp(this, CollectionLogVarps.category_count, kills)
-        VarpSync.writeVarp(this, CollectionLogVarps.category_count2, 0)
-        VarpSync.writeVarp(this, CollectionLogVarps.category_count3, 0)
+        val lines = killCountLines[category.struct].orEmpty()
+        val kills = collectionLog.kills
+        for (varp in CollectionLogVarps.kill_count_lines) {
+            val count = lines[varp.id].orEmpty().sumOf { kills[it] ?: 0 }
+            VarpSync.writeVarp(this, varp, count)
+        }
 
         val (layer, background, text, scrollbar) = tab.components
         runClientScript(
@@ -207,8 +213,28 @@ constructor(
         }
     }
 
+    private fun loadKillCountLines(): Map<Int, Map<Int, List<String>>> {
+        val input =
+            checkNotNull(CollectionLogScript::class.java.getResourceAsStream("kill_counts.tsv")) {
+                "kill_counts.tsv not found"
+            }
+        val lines = HashMap<Int, MutableMap<Int, List<String>>>()
+        input.bufferedReader().use { reader ->
+            for (line in reader.readLines()) {
+                if (line.isBlank() || line.startsWith("#")) {
+                    continue
+                }
+                val (struct, varp, npcs) = line.split(TAB)
+                lines.getOrPut(struct.toInt()) { HashMap() }[varp.toInt()] = npcs.split(',')
+            }
+        }
+        return lines
+    }
+
     private companion object {
         /** Client script `collection_draw` (tab, layer, background, text, scrollbar, tab, page). */
         private const val COLLECTION_DRAW = 7797
+
+        private const val TAB = '\u0009'
     }
 }
