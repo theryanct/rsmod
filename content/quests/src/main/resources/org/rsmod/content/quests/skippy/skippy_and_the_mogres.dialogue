@@ -1,0 +1,124 @@
+# Generated from the OSRS Wiki page "Transcript:Skippy and the Mogres" by tools/quests/transcript_to_dialogue.py
+0	section	Using the Sober-Up option on Skippy without a bucket of water
+1	line	Player	You know, I could shock him out of it if I could find some cold water...
+1	action	end
+0	section	Using a bucket of water on Skippy to sober him up
+1	cond	Sober-Up option:
+2	line	Player	Well, I could dump this bucket of water over him. That would sober him up a little...
+2	option	Throw the water!
+3	cond	If Skippy is moving around:
+4	action	end
+3	cond	If Skippy is immobile:
+4	action	continue
+2	option	I think I'll leave it for now.
+3	line	Player	I think I'll leave it for now.
+3	action	end
+1	cond	Use bucket of water -> Skippy:
+2	line	Player	Hey, Skippy!
+2	line	Skippy	What?
+2	action	The player tosses a bucket of water over Skippy
+2	line	Skippy	Ahhhhhhhhhhgh! That's cold! Are you trying to kill me?
+2	line	Player	Nope, just sober you up. Memory coming back yet?
+2	line	Skippy	No. But I could do with a bowl of tea to warm myself up a bit. Go grab me one and we'll talk.
+2	line	Player	Any particular type of tea?
+2	line	Skippy	Nettle for preference. Just make sure it's hot.
+2	line	Skippy	And don't throw it at me!
+2	line	Player	What's your problem? You're all clean now.
+2	action	end
+0	section	Talking to him before obtaining nettle tea
+1	line	Player	Hey, Skippy!
+1	line	Skippy	Gaah! Don't drench me again!
+1	line	Player	Hey! I only did that once! Try not to be such a big baby!
+1	line	Skippy	So what are you here for then?
+1	line	Player	No real reason. I just thought I would check up on you is all.
+1	line	Skippy	Well, I'm still wet, still cold and still waiting on that nettle tea.
+1	action	end
+0	section	Giving Skippy nettle tea
+1	line	Player	Hey, Skippy!
+1	line	Skippy	Gaah! Don't drench me again!
+1	line	Player	Hey! I only did that once! Try not to be such a big baby!
+1	line	Skippy	So what are you here for then?
+1	line	Player	I've come to give you your tea.
+1	line	Skippy	Excellent! I was thinking I was going to freeze out here!
+1	box	Skippy drinks the tea and clutches his forehead in pain.
+1	line	Skippy	Ohhhhh...
+1	line	Player	What? What's wrong?
+1	line	Skippy	Not so loud...I think I have a hangover...
+1	line	Player	Great...Well, I doubt you can remember anything through a hangover. What a waste of nettle tea...
+1	line	Skippy	Hey! A little sympathy here?
+1	line	Skippy	Owwowwoww... must remember not to shout...
+1	line	Skippy	Look, I do know a hangover cure. If you can get me a bucket of the stuff I think I'll be ok.
+1	action	If the player has learned the hangover cure recipe during Plague City:
+2	line	Player	Wait... is this cure a bucket of chocolate milk and snape grass?
+2	line	Skippy	Yes! That's the stuff!
+2	line	Player	Ahhh. Yes, I've made some of that stuff before. I should be able to get you some, no problem.
+2	action	end
+1	action	If the player has not learned the hangover cure recipe:
+2	line	Player	So what is it you need?
+2	line	Skippy	A bucket of milk with chocolate ground into it, with a handful of snape grass thrown in on top.
+2	line	Player	What? Run that past me again?
+2	line	Skippy	Take a bucket of milk, a bar of chocolate and some snape grass.
+2	line	Skippy	Grind the chocolate with a mortar and pestle.
+2	line	Skippy	Add the chocolate powder to the milk, then add the snape grass.
+2	line	Skippy	Then bring it here and I will drink it.
+2	line	Skippy	The end, and we all live happily ever after. Got it?
+2	action	end
+0	section	Talking to him before obtaining hangover cure
+1	line	Player	Hey, Skippy!
+1	line	Skippy	Egad! Don't you know not to shout around a guy with a hangover?
+1	line	Skippy	Ahhhhhg...No more shouting for me...
+1	line	Skippy	What is it anyway?
+1	line	Player	I just came back to ask you something.
+1	line	Skippy	What?
+1	select	Select an Option
+1	option	How do I make that hangover cure again?
+2	line	Player	How do I make that hangover cure again?
+2	line	Skippy	Give me strength...Here's what you do. Pay attention!
+2	line	Skippy	You take a bucket of milk, a bar of chocolate and some snape grass.
+2	line	Skippy	Grind the chocolate with a pestle and mortar.
+2	line	Skippy	Add the chocolate powder to the milk, then add the snape grass.
+2	line	Skippy	Then bring it here and I will drink it.
+2	line	Skippy	Are you likely to remember that or should I go get some crayons and draw you a picture?
+2	line	Player	Hey! I remember it now, ok! See you in a bit.
+2	action	end
+1	option	Why do they call you 'Skippy'?
+2	line	Player	Why do they call you Skippy?
+2	line	Skippy	I think it may have something to do with my near- constant raving about mudskippers.
+2	line	Skippy	That or it's something to do with that time with the dress and the field full of daisies...
+2	action	end
+0	section	Bringing him the hangover cure
+1	line	Player	Hey, Skippy!
+1	line	Skippy	Egad! Don't you know not to shout around a guy with a hangover?
+1	line	Skippy	Ahhhhhg...No more shouting for me...
+1	line	Skippy	What is it anyway?
+1	line	Player	Well Skippy, you will no doubt be glad to hear that I got you your hangover cure!
+1	line	Skippy	Gimme!
+1	box	Skippy chugs the hangover cure... very impressive.
+1	line	Skippy	Ahhhhhhhhhhhhhhh...
+1	line	Skippy	Much better...
+1	line	Player	Feeling better?
+1	line	Skippy	Considerably.
+1	line	Player	Then tell me where the mudskippers are!
+1	line	Skippy	I wish you wouldn't go looking for them. Those vicious killers will tear you apart.
+1	line	Skippy	It's all becoming clear to me now...
+1	line	Skippy	I was fishing using a Fishing Explosive...
+1	line	Player	A Fishing Explosive?
+1	line	Skippy	Well, Slayer Masters sell these highly volatile potions for killing underwater creatures.
+1	line	Skippy	If you don't feel like lobbing a net about all day you can use them to fish with...
+1	line	Skippy	But this time I was startled by what I thought was a giant mudskipper.
+1	line	Skippy	What it was, infact, was a...
+1	line	Skippy	Dramatic Pause...
+1	line	Skippy	A Mogre!
+1	line	Player	What exactly is a Mogre?
+1	line	Skippy	A Mogre is a type of Ogre that spends most of its time underwater.
+1	line	Skippy	They hunt giant mudskippers by wearing their skins and swimming close until they can attack them.
+1	line	Skippy	When I used the Fishing Explosive I scared off all the fish, and so the Mogre got out of the water to express its extreme displeasure.
+1	line	Skippy	With an iron mace.
+1	line	Player	I take it the head injury is responsible for the staggering and yelling?
+1	line	Skippy	No, no.
+1	line	Skippy	My addiction to almost-lethal alcohol did that.
+1	line	Skippy	But if you are set on finding these Mogres just head south from here until you find Mudskipper Point.
+1	line	Player	The mudskipper-eating monsters are to be found at Mudskipper point?
+1	line	Player	Shock!
+1	line	Player	Thanks. I'll be careful.
+1	action	end

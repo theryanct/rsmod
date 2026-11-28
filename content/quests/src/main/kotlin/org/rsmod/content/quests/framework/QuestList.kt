@@ -58,6 +58,7 @@ import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
+import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
@@ -133,6 +134,7 @@ public object BuiltQuests {
             SHEEP_HERDER,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
+            SKIPPY_AND_THE_MOGRES,
             TEMPLE_OF_THE_EYE,
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
