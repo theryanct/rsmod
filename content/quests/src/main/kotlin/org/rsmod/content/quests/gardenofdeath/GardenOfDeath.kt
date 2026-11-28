@@ -230,10 +230,10 @@ constructor(
         val text = TABLETS[index].joinToString(" ") { (word, english) -> render(word, english) }
         startDialogue { mesbox(text) }
         when {
-            index == 0 && state < G1_OPEN -> {
+            index == 0 && state < COMPLETE && !carries(TgodObjs.translations) -> {
                 var take = false
                 runQuestSection(null, dialogue, "Reading the stone tablet", SimpleQuestHooks(options = mapOf("Yes." to { take = true })))
-                if (take && !carries(TgodObjs.translations)) {
+                if (take) {
                     if (inv.isFull()) {
                         mes("You don't have enough inventory space.") // Authored (not Wiki).
                         return
@@ -278,9 +278,9 @@ constructor(
     private suspend fun ProtectedAccess.readWarningNote() {
         startDialogue { for (page in WARNING_PAGES) mesbox(page) }
         if (state in WARNING until COMPLETE) {
+            runQuestSection(null, dialogue, "Reading the warning note")
             statAdvance(stats.farming, FARMING_XP * xpMods.get(player, stats.farming))
             completeQuest(GARDEN_OF_DEATH)
-            runQuestSection(null, dialogue, "Reading the warning note")
         }
     }
 
