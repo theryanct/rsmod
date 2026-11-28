@@ -1,0 +1,33 @@
+# Grand Exchange centre: clerks behind the Exchange booths, bankers behind the bank booths.
+
+[[spawn]]
+npc = 'ge_clerk_1'
+coords = '0_49_54_28_32'
+
+[[spawn]]
+npc = 'ge_clerk_2'
+coords = '0_49_54_29_32'
+
+[[spawn]]
+npc = 'ge_clerk_3'
+coords = '0_49_54_28_35'
+
+[[spawn]]
+npc = 'ge_clerk_4'
+coords = '0_49_54_29_35'
+
+[[spawn]]
+npc = 'banker1_west'
+coords = '0_49_54_27_33'
+
+[[spawn]]
+npc = 'banker1_west'
+coords = '0_49_54_27_34'
+
+[[spawn]]
+npc = 'banker1_east'
+coords = '0_49_54_30_33'
+
+[[spawn]]
+npc = 'banker1_east'
+coords = '0_49_54_30_34'

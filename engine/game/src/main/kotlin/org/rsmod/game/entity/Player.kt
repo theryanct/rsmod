@@ -16,6 +16,7 @@ import org.rsmod.game.client.ClientCycle
 import org.rsmod.game.client.NoopClient
 import org.rsmod.game.client.NoopClientCycle
 import org.rsmod.game.entity.player.Appearance
+import org.rsmod.game.entity.player.GeSlot
 import org.rsmod.game.entity.player.PlayerUid
 import org.rsmod.game.entity.player.PublicMessage
 import org.rsmod.game.entity.util.EntityFaceAngle
@@ -195,6 +196,8 @@ public class Player(
     public val friendList: MutableList<String> = ArrayList()
     /** Display names on the player's ignore list, in the order they were added. */
     public val ignoreList: MutableList<String> = ArrayList()
+    /** Grand Exchange offer slots (null = empty); persisted by the account GE pipeline. */
+    public val geSlots: Array<GeSlot?> = arrayOfNulls(GeSlot.SLOT_COUNT)
 
     public var publicMessage: PublicMessage? = null
     public var pendingSay: String? = null
