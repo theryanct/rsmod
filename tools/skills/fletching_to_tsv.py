@@ -150,6 +150,16 @@ MANUAL += [
     ("bronze", "nails_bronze", 7, 8.4), ("iron", "nails_iron", 18, 15.6), ("steel", "nails", 33, 30.6),
     ("black", "nails_black", 38, 39), ("mithril", "nails_mithril", 49, 45), ("adamant", "nails_adamant", 62, 61.2),
     ("rune", "nails_rune", 77, 75)]]
+# Wasp darts (The Birds and the Wasps; Wiki Recipe templates): wasp stings with any of ten feather
+# kinds. The bucket rows aren't plain-feather sets, so kind_of() skips them; Fletching.kt gates
+# both on the quest varbit `baw`.
+BAW_FEATHERS = ["feather", "hunting_desert_feather", "hunting_woodland_feather", "hunting_jungle_feather",
+                "hunting_polar_feather", "baw_brown_feather", "baw_black_feather", "hunting_stripy_bird_feather",
+                "gryphon_feather", "stymphike_feather"]
+MANUAL += [("combine", "baw_wasp_dart", 10, 1, 5, 1, "human_fletching_add_dart_feathers_wasp",
+            [("baw_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
+MANUAL += [("combine", "baw_killer_wasp_dart", 10, 15, 25, 1, "human_fletching_add_dart_feathers_killer_wasp",
+            [("baw_killer_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
 for m in MANUAL:
     if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
 

@@ -48,3 +48,17 @@ loot	chinchompa_big_captured	1	1
 
 box	Black chinchompa	hunting_chinchompa_black	73	315	-78	228	-	hunting_boxtrap_full_chinchompa_black
 loot	chinchompa_black	1	1
+
+snare	Honey Buzzard	baw_honey_buzzard	1	34	100	420	hunting_ojibway_trap_trapping_honey_buzzard	hunting_ojibway_trap_full_honey_buzzard	# no wiki chart; crimson swift curve (level 1)
+loot	bones	1	1
+loot	baw_brown_feather	8	14	# Wiki quantity "Varies"; authored so ~5 birds give the quest's 50
+
+snare	Black Honey Buzzard	baw_black_honey_buzzard	17	87.4	77	374	hunting_ojibway_trap_trapping_black_honey_buzzard	hunting_ojibway_trap_full_black_honey_buzzard	# no wiki chart; copper longtail-tropical wagtail curve at level 17
+loot	bones	1	1
+loot	baw_black_feather	10	24
+
+swarm	Swarm of wasps	baw_wasp_swarm,baw_wasp_swarm_furious	1	1.5	0	0	# netted every tick, no chart
+loot	baw_wasp_sting	1	1
+
+swarm	Swarm of killer wasps	baw_killer_wasp_swarm,baw_killer_wasp_swarm_furious	12	2.5	0	0	# netted every tick, no chart
+loot	baw_killer_wasp_sting	1	1

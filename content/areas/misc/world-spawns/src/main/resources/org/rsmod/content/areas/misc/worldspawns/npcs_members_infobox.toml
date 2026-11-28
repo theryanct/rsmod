@@ -4267,7 +4267,7 @@ coords = '0_36_49_49_36'
 
 # Nickolaus
 [[spawn]]
-npc = 'eaglepeak_nickolaus'
+npc = 'eaglepeak_nickolaus_campsite'
 coords = '0_36_54_14_47'
 
 # Eagle
@@ -9316,20 +9316,12 @@ coords = '0_50_52_35_55'
 npc = 'rcu_zammy_mage1'
 coords = '0_50_52_59_58'
 
-# Guard (Children of the Sun)
-[[spawn]]
-npc = 'vmq1_guard_1'
-coords = '0_50_53_11_45'
 
 # Toby
 [[spawn]]
 npc = 'toby_varrock_diary'
 coords = '0_50_53_25_23'
 
-# Guard (Children of the Sun)
-[[spawn]]
-npc = 'vmq1_guard_1'
-coords = '0_50_53_34_38'
 
 # Jeff (Mahogany Homes)
 [[spawn]]
@@ -9738,7 +9730,7 @@ coords = '0_51_53_17_21'
 
 # Tolna
 [[spawn]]
-npc = 'soulbane_tolnaboy'
+npc = 'soulbane_tolna_multi'
 coords = '0_51_53_44_60'
 
 # Launa

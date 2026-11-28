@@ -8,5 +8,6 @@ dependencies {
     implementation(projects.content.interfaces.bank)
     implementation(projects.content.skills.cooking)
     implementation(projects.content.skills.mining)
+    implementation(projects.content.skills.sailing)
     implementation(projects.content.travel.ships)
 }
