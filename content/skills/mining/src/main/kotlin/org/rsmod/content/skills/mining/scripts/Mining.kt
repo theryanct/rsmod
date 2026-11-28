@@ -85,7 +85,7 @@ constructor(
             return
         }
 
-        val ore = objTypes[type.rockOre]
+        val ore = MiningOreOverrides.ore(player, rock.coords)?.let { objTypes[it] } ?: objTypes[type.rockOre]
         if (invFullForGathering(objTypes, listOf(ore))) {
             mes("Your inventory is too full to hold any more ${ore.oreName()}.")
             soundSynth(synths.pillory_wrong)
