@@ -39,8 +39,11 @@ import org.rsmod.content.interfaces.ge.configs.GeInterfaces
 import org.rsmod.content.interfaces.ge.configs.GeInvs
 import org.rsmod.content.interfaces.ge.configs.GeVarBits
 import org.rsmod.content.interfaces.ge.configs.GeVarps
+import org.rsmod.content.interfaces.ge.openGeHistory
+import org.rsmod.content.interfaces.ge.recordGeTrade
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
+import org.rsmod.game.entity.player.GeHistoryEntry
 import org.rsmod.game.entity.player.GeSlot
 import org.rsmod.game.inv.InvObj
 import org.rsmod.game.inv.Inventory
@@ -91,9 +94,8 @@ constructor(
         onIfClose(GeInterfaces.offers) { player.onClose() }
 
         onIfModalButton(GeComponents.back) { selectSlot(-1) }
-        onIfModalButton(GeComponents.history) {
-            mes("Trade history isn't kept on this server.")
-        }
+        onIfModalButton(GeComponents.history) { openGeHistory() }
+        onIfModalButton(GeComponents.history_exchange) { openExchange() }
         for ((slot, component) in GeComponents.index.withIndex()) {
             onIfModalButton(component) { indexOp(slot, it.comsub, it.op) }
         }
@@ -514,6 +516,14 @@ constructor(
             return
         }
         player.geSlots[slot] = offer
+        player.recordGeTrade(
+            GeHistoryEntry(
+                sell = !offer.buy,
+                obj = offer.obj,
+                count = offer.count,
+                gold = offer.price.toLong() * offer.count,
+            )
+        )
         player.refreshSlot(slot)
         selectSlot(-1)
         val verb = if (offer.buy) "buying" else "selling"

@@ -2,9 +2,7 @@ package org.rsmod.api.player.ui
 
 import java.util.WeakHashMap
 import org.rsmod.api.config.constants
-import org.rsmod.api.player.input.PauseButtonOps
 import org.rsmod.api.player.output.runClientScript
-import org.rsmod.api.type.editors.comp.ComponentEditor
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.events.EventBus
@@ -53,40 +51,6 @@ internal object SkillMultiComponents : ComponentReferences() {
 }
 
 /**
- * Right-click quantity ops on the item buttons (OSRS only has the left-click verb, op1, which the
- * client script sets). Ops 2-6 are added to the cache; the client sends them as plain button ops
- * and [PauseButtonOps] turns them into the pause-button resume the dialog waits for.
- */
-internal object SkillMultiEdits : ComponentEditor() {
-    init {
-        for (item in SkillMultiComponents.items) {
-            editOps(
-                item,
-                2 to "Make-1",
-                3 to "Make-5",
-                4 to "Make-10",
-                5 to "Make-X",
-                6 to "Make-All",
-            )
-        }
-    }
-}
-
-/** Resume subcomponents for the Make-X / Make-All ops (outside the 1-28 pause-button range). */
-internal const val SKILLMULTI_SUB_MAKE_X = 1001
-internal const val SKILLMULTI_SUB_MAKE_ALL = 1002
-
-private fun skillMultiOpSub(op: Int): Int? =
-    when (op) {
-        2 -> 1
-        3 -> 5
-        4 -> 10
-        5 -> SKILLMULTI_SUB_MAKE_X
-        6 -> SKILLMULTI_SUB_MAKE_ALL
-        else -> null
-    }
-
-/**
  * Last quantity each player picked this session ([SKILLMULTI_REMEMBER_ALL] = "All"). The dialog
  * defaults to All until the player picks something else, like OSRS. Weak keys drop on logout.
  */
@@ -122,6 +86,5 @@ internal fun Player.ifSkillMulti(
     // The client resumes with the clicked slot and sub = chosen quantity (1-28).
     for (slot in SkillMultiComponents.items.take(products.size)) {
         ifSetEvents(slot, 0..SKILLMULTI_MAX_QUANTITY, IfEvent.PauseButton)
-        PauseButtonOps.register(slot, ::skillMultiOpSub)
     }
 }
