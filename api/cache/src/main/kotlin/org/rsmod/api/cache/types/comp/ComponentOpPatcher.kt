@@ -14,11 +14,15 @@ import org.rsmod.game.type.comp.UnpackedComponentType
  */
 public object ComponentOpPatcher {
     /**
-     * Applies [edited] ops to component [packed] in [cache]; returns `true` if it was rewritten.
+     * Applies [edit] to component [packed] in [cache]; returns `true` if it was rewritten.
      *
      * @throws IllegalStateException if the component is not if3 or doesn't round-trip.
      */
-    public fun patch(cache: Cache, packed: Int, edited: (Array<String>) -> Array<String>): Boolean {
+    public fun patch(
+        cache: Cache,
+        packed: Int,
+        edit: (UnpackedComponentType) -> UnpackedComponentType,
+    ): Boolean {
         val group = packed ushr 16
         val file = packed and 0xFFFF
         val original = cache.read(Js5Archives.INTERFACES, group, file)
@@ -29,11 +33,11 @@ public object ComponentOpPatcher {
             check(encode(type).contentEquals(originalBytes)) {
                 "Component $group:$file does not re-encode byte-for-byte; refusing to patch it."
             }
-            val ops = edited(type.op)
-            if (ops.contentEquals(type.op)) {
+            val edited = edit(type)
+            if (edited == type) {
                 return false
             }
-            val patched = encode(type.copy(op = ops))
+            val patched = encode(edited)
             cache.write(Js5Archives.INTERFACES, group, file, Unpooled.wrappedBuffer(patched))
             return true
         } finally {
