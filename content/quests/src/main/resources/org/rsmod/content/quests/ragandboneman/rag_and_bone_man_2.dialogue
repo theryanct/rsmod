@@ -1,0 +1,56 @@
+# Generated from the OSRS Wiki page "Transcript:Rag and Bone Man II" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to the Odd Old Man without any bones
+1	line	Player	So how is the sorting going?
+1	line	Odd Old Man	Err...
+1	line	Sack	Mumblemumble
+1	line	Odd Old Man	It's going well, especially now I have all the bones I need.
+1	line	Odd Old Man	There are still a few bits and pieces I wouldn't mind, but that's the way things go.
+1	line	Player	Well if I see any bones I think you might like I'll bring them over.
+1	line	Odd Old Man	Cheers, we, err, that is myself and the museum staff, really appreciate it.
+1	line	Sack	Snicker.
+1	action	end
+0	section	Handing in some bones
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Let me take a look at them.
+1	line	Odd Old Man	Wonderful! I'll put this with the rest.
+1	line	Player	No problem. I'll be back if I find some more.
+1	action	end
+0	section	Trying to hand in unclean bones
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Just clean them up in the pot-boiler and hand them over.
+1	action	end
+0	section	Finishing up
+1	line	Player	I have some bones for you.
+1	line	Odd Old Man	Great! Let me take a look at them.
+1	line	Odd Old Man	That...that covers all the bones I was searching for!
+1	line	Player	Well I'm glad to have furthered the cause of the museum.
+1	line	Player	I just hope everyone will enjoy the finished displays.
+1	line	Odd Old Man	Yes, I'm sure EVERYONE will get a chance to enjoy my work.
+1	line	Odd Old Man	Hahahahahahahahahaha!
+1	line	Odd Old Man	Bwahahahahahahahahahahahahaha!
+1	line	Odd Old Man	MWUHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!
+1	line	Sack	Ahem!
+1	line	Odd Old Man	Sorry.
+1	line	Odd Old Man	Well anyway, I have a few items I've put together in my spare time if you want one.
+1	line	Odd Old Man	I have a ram skull helm or a snazzy bonesack like mine.
+1	line	Odd Old Man	Which would you like?
+1	select	Select an Option
+1	option	The helm
+2	line	Player	The helm.
+2	line	Odd Old Man	Good choice!
+2	line	Odd Old Man	Come and see me if you lose that one, I have plenty more!
+2	action	end
+1	option	The bonesack
+2	line	Player	The bonesack.
+2	line	Odd Old Man	Well chosen, I knew you had taste!
+2	line	Odd Old Man	Come and see me if you lose that one, I have plenty more!
+2	action	end
+1	option	Can I have both?
+2	line	Player	Can I have both?
+2	line	Odd Old Man	I... Well... I do have many of each. I suppose it wouldn't be a problem.
+2	cond	If the player's inventory is full:
+3	line	Odd Old Man	Well, as much as I'd like to toss them into the dirt and all, I think it's best if you came back later with an empty backpack.
+3	action	end
+2	line	Odd Old Man	I do think they go well together, actually.
+2	line	Odd Old Man	Come and see me if you lose either one, I have plenty more!
+2	action	end
