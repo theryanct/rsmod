@@ -14,6 +14,7 @@ import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.random.GameRandom
+import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.isHeldOpBound
@@ -23,6 +24,7 @@ import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.type.symbols.name.NameMapping
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Npc
+import org.rsmod.game.entity.NpcList
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.npc.NpcMode
 import org.rsmod.game.interact.InteractionOp
@@ -73,6 +75,8 @@ constructor(
     private val random: GameRandom,
     private val eventBus: EventBus,
     private val locTypes: LocTypeList,
+    private val npcList: NpcList,
+    private val locRepo: LocRepository,
 ) : PluginScript() {
     private val steps by lazy { ClueSteps.load(dbRows, names.dbTables) }
 
@@ -96,19 +100,42 @@ constructor(
         easyObjByStep.entries.associate { (row, obj) -> obj to row }
     }
 
-    /** Steps a new trail can start on / continue with (sub-steps excluded). */
+    /**
+     * Steps a new trail can start on / continue with (sub-steps excluded), minus steps nobody can
+     * solve yet: npcs not spawned in this world, locs that aren't on the map. Built on first use,
+     * after the world (npc spawns) has loaded.
+     */
     private val pools by lazy {
-        mapOf(
-            ClueTier.Beginner to
-                steps.ofTier(
-                    ClueTier.Beginner,
-                    setOf(ClueKind.Anagram, ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map),
-                ),
-            ClueTier.Easy to
-                steps.ofTier(ClueTier.Easy, setOf(ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map))
-                    .filter { it.row in easyObjByStep },
-        )
+        val spawned = npcList.mapTo(HashSet()) { it.id }
+        val beginnerKinds = setOf(ClueKind.Anagram, ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map)
+        val easyKinds = setOf(ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map)
+        val all =
+            mapOf(
+                ClueTier.Beginner to steps.ofTier(ClueTier.Beginner, beginnerKinds),
+                ClueTier.Easy to
+                    steps.ofTier(ClueTier.Easy, easyKinds).filter { it.row in easyObjByStep },
+            )
+        val reachable = all.mapValues { (_, list) -> list.filter { it.isReachable(spawned) } }
+        logger.info {
+            "Treasure trails: solvable steps " +
+                all.keys.joinToString { tier ->
+                    "${tier.display} ${reachable.getValue(tier).size}/${all.getValue(tier).size}"
+                }
+        }
+        reachable
     }
+
+    private fun ClueStep.isReachable(spawned: Set<Int>): Boolean =
+        when (val target = target) {
+            is ClueTarget.Npc -> target.npcs.any { it in spawned }
+            is ClueTarget.Loc ->
+                (-1..1).any { dx ->
+                    (-1..1).any { dz ->
+                        locRepo.findAll(target.coord.translate(dx, dz)).any { it.id in target.locs }
+                    }
+                }
+            else -> true
+        }
 
     private val reldoRow by lazy { names.dbRows["cluehelper_cryptic_beginner_reldo"] }
     private val charlieRow by lazy { names.dbRows["cluehelper_cryptic_beginner_charlie_the_tramp"] }
@@ -134,17 +161,15 @@ constructor(
 
     override fun ScriptContext.startup() {
         logger.info {
-            "Treasure trails: ${steps.byRow.size} steps; pools " +
-                pools.entries.joinToString { "${it.key.display}=${it.value.size}" } +
-                "; easy clue objs ${easyObjByStep.size}."
+            "Treasure trails: ${steps.byRow.size} steps; easy clue objs ${easyObjByStep.size}."
         }
 
         bindClue(TrailObjs.clue_beginner)
         for (obj in easyStepByObj.keys) {
             bindClue(objTypes[obj] ?: continue)
         }
-        onOpHeld1(TrailObjs.casket_beginner) { openCasket(ClueTier.Beginner, it.obj) }
-        onOpHeld1(TrailObjs.casket_easy) { openCasket(ClueTier.Easy, it.obj) }
+        onOpHeld1(TrailObjs.casket_beginner) { openCasket(ClueTier.Beginner, it.type) }
+        onOpHeld1(TrailObjs.casket_easy) { openCasket(ClueTier.Easy, it.type) }
         onOpHeld1(TrailObjs.strange_device) { feelDevice() }
 
         OpInterceptors.register(NpcClaim())
@@ -157,10 +182,10 @@ constructor(
 
     private fun ScriptContext.bindClue(obj: ObjType) {
         if (!isHeldOpBound(obj, 1)) {
-            onOpHeld1(obj) { read(it.obj) }
+            onOpHeld1(obj) { read(it.type) }
         }
         if (!isHeldOpBound(obj, 2)) {
-            onOpHeld2(obj) { checkSteps(it.obj) }
+            onOpHeld2(obj) { checkSteps(it.type) }
         }
     }
 
