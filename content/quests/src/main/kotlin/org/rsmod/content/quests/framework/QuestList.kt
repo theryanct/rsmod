@@ -38,6 +38,7 @@ import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
+import org.rsmod.content.quests.learningtheropes.LearningTheRopes.Companion.LEARNING_THE_ROPES
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
 import org.rsmod.content.quests.magearena.MageArena.Companion.MAGE_ARENA_I
 import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
@@ -119,6 +120,7 @@ public object BuiltQuests {
             IMP_CATCHER,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
+            LEARNING_THE_ROPES,
             LOST_CITY,
             MAGE_ARENA_I,
             MERLINS_CRYSTAL,
