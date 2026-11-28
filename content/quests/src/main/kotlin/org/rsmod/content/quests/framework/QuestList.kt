@@ -25,6 +25,7 @@ import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
+import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
@@ -74,6 +75,7 @@ public object BuiltQuests {
             JUNGLE_POTION,
             KNIGHTS_SWORD,
             LOST_CITY,
+            MERLINS_CRYSTAL,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MURDER_MYSTERY,
