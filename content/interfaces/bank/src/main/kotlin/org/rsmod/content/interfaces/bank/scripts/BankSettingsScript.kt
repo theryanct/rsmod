@@ -27,12 +27,22 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 class BankSettingsScript
 @Inject
-constructor(private val bankScript: BankInvScript, private val objTypes: ObjTypeList) :
-    PluginScript() {
+constructor(
+    private val bankScript: BankInvScript,
+    private val sortScript: BankSortScript,
+    private val objTypes: ObjTypeList,
+) : PluginScript() {
     override fun ScriptContext.startup() {
         val comps = bank_components
 
-        onIfModalButton(comps.rearrange_mode_toggle) { insertMode = !insertMode }
+        // op2 "Sort" is added to the Swap/Insert button by BankSortEdits.
+        onIfModalButton(comps.rearrange_mode_toggle) {
+            if (it.op == IfButtonOp.Op2) {
+                with(sortScript) { sortBank() }
+            } else {
+                insertMode = !insertMode
+            }
+        }
         onIfModalButton(comps.withdraw_mode_note) { withdrawCert = !withdrawCert }
         onIfModalButton(comps.always_placehold) { alwaysPlacehold = !alwaysPlacehold }
         onIfModalButton(comps.quantity_1) { leftClickQtyMode = QuantityMode.One }
