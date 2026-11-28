@@ -30,6 +30,22 @@ public class QuestDialogue private constructor(private val sections: Map<String,
     public fun section(title: String): List<Node> =
         sections[title] ?: error("Quest dialogue has no section \"$title\".")
 
+    /**
+     * The nodes under [section]'s first option labelled [option] (searched depth-first), for when
+     * a conversation starts mid-menu (e.g. an item used on an npc whose Talk-to another module
+     * owns).
+     */
+    public fun branch(section: String, option: String): List<Node> {
+        fun find(nodes: List<Node>): List<Node>? {
+            for (node in nodes) {
+                if (node is Node.Option && node.label == option) return node.children
+                find(node.children)?.let { return it }
+            }
+            return null
+        }
+        return find(section(section)) ?: error("Section \"$section\" has no option \"$option\".")
+    }
+
     public companion object {
         /** Loads `<name>.dialogue` from [anchor]'s resource package. */
         public fun load(anchor: Class<*>, name: String): QuestDialogue {
