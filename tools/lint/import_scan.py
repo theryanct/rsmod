@@ -31,6 +31,20 @@ BUILTIN = set(
     JvmField JvmOverloads Synchronized Inject Singleton Regex StringBuilder Lazy Result Math
     System Thread Runnable KProperty KClass Companion T R K V E""".split()
 )
+# Kotlin default imports (kotlin.*, .annotation, .collections, .comparisons, .io, .ranges,
+# .sequences, .text) and java.lang.* names that turn up in this codebase.
+BUILTIN |= set(
+    """RegexOption MatchResult LazyThreadSafetyMode Throws Annotation Target Retention
+    AnnotationTarget AnnotationRetention Repeatable MustBeDocumented ReplaceWith DeprecationLevel
+    PublishedApi DslMarker Experimental RequiresOptIn SinceKotlin UnsafeVariance Function
+    Function0 Function1 Function2 KotlinVersion UninitializedPropertyAccessException
+    ArithmeticException ClassCastException NumberFormatException ConcurrentModificationException
+    AbstractList AbstractMap AbstractSet AbstractCollection MutableIterator ListIterator
+    Grouping IndexedValue Map.Entry Integer Character Object Class ClassLoader Process
+    StackTraceElement InterruptedException CloneNotSupportedException AutoCloseable Appendable
+    Cloneable Readable ThreadLocal Void StringBuffer Runtime SecurityException Deprecated
+    StringBuilder Charsets""".split()
+)
 
 STRING = re.compile(r'"""(?:.|\n)*?"""|"(?:[^"\\\n]|\\.)*"')
 DECLARED = re.compile(r"\b(?:class|object|interface|typealias)\s+(\w+)")
