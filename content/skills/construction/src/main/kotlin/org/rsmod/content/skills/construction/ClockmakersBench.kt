@@ -44,9 +44,15 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private val recipes =
         listOf(
-            Recipe("Clockwork mechanism", "Clockwork mechanism", 2, 8, 15.0, { BenchObjs.clockwork }) {
-                listOf(BenchObjs.steel_bar)
-            },
+            Recipe(
+                "Clockwork mechanism",
+                "Clockwork mechanism",
+                2,
+                8,
+                15.0,
+                { BenchObjs.clockwork },
+                { listOf(BenchObjs.steel_bar) },
+            ),
             Recipe(
                 "Clockwork toy",
                 "Clockwork penguin",
@@ -109,7 +115,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     }
 
     private companion object {
-        /** Cold War's quest varbit value once Larry has given you his clockwork book. */
+        /** Cold War's quest varbit value once Larry has given you his clockwork book (ColdWar.BOOK). */
         const val COLD_WAR_BOOK = 20
     }
 }
