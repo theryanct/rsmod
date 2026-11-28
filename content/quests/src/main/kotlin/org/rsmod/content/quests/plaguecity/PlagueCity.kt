@@ -47,9 +47,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * 11 Jethick's book (for Elena's picture), 12 the book back to the Rehnisons, 13 Milli's story,
  * 14 the plague house refused, 15 the Clerk let you in, 16 Bravek's hangover-cure note,
  * 17 cure given, 18 the warrant, 19 Elena freed, 29 complete (Edmond: 2,425 Mining xp, an
- * Ardougne teleport scroll, 1 QP). The cache varbits in `elenaquest_extra_bits` drive the world: Edmond down in the
- * sewer (`can_see_edmond_up_top`), the dug hole, the checked grill, the rope (`pipe`), Elena back
- * home, and Jethick / Rehnison picture / key flags.
+ * Ardougne teleport scroll, 1 QP). The cache varbits in `elenaquest_extra_bits` drive the
+ * world: Edmond down in the sewer (`can_see_edmond_up_top`), the dug hole, the checked grill, the
+ * rope (`pipe`), Elena back home, and Jethick's picture flag.
  *
  * Entering West Ardougne needs the gas mask worn (the pipe); the manhole is the way back out.
  * Not done: the West Ardougne citizens' chatter, the Ardougne Teleport spell unlock (the scroll is
