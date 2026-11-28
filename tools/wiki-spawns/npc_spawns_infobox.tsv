@@ -1,7 +1,6 @@
 page	version	reason	detail
 'Birds-Eye' Jack	v2	cache name mismatch	dream_birds_eye_jack
 'Currency' The Alchemist	v2	excluded location/version	Outside of the Tower of Life
-'Gummy'		temporary (lead text)	During the quest
 'Transmute' The Alchemist	v2	excluded location/version	Outside of the Tower of Life
 1v1 Tournament Guide		special/runtime ids only	pvpa_1v1_guide
 Abigale	v1	special/runtime ids only	mistmyst_abigale_lum_vis
@@ -11,10 +10,8 @@ Abyssal walker (Guardians of the Rift)		excluded title
 Acatzin	v2	excluded location/version	Tal Teklan, Ground floor of the King's Inn.
 Account Guide		excluded location/version	Tutorial Island
 Account security tutor		special/runtime ids only	forestry_poh_bees
-Achtryn		temporary (lead text)	during the events of
-Adala		temporary (lead text)	during the quest
+Achtryn		special/runtime ids only	slayer_master_2_achtryn_vis
 Adamantite ore (Blast Furnace)		cache name mismatch	blast_furnace_adamantite_ore
-Adrius		temporary (lead text)	during the quest
 Adventurer		temporary (lead text)	during the cutscene
 Adventurer (easy)		cache name mismatch	ramble_easy_fighter
 Adventurer Ada	v1	special/runtime ids only	sailing_crew_generic_2_world
@@ -37,7 +34,7 @@ Ali the Camel	v3	special/runtime ids only	feud_camel_postquest2
 Ali the Camel Man	v2	special/runtime ids only	feud_ali_the_discount_camel_seller_postquest
 Ali the Hag	v2	special/runtime ids only	feud_hag_postquest
 Ali the Kebab seller	v2	special/runtime ids only	feud_kebabman_postquest
-Ali the Mayor		temporary (lead text)	During the quest
+Ali the Mayor	v2	special/runtime ids only	feud_mayor_geom_postquest
 Ali the Operator	v2	special/runtime ids only	feud_egyptian_minder_postquest
 Ali the Snake Charmer	v2	special/runtime ids only	feud_snakecharmer_postquest
 Ali the dyer	v1	approx centre (rectangle)	0,3364,3002
@@ -45,7 +42,6 @@ Ali the dyer	v2	special/runtime ids only	feud_dye_lady_postquest
 Alice	v2	excluded location/version	Farm west of Port Phasmatys
 Alina	v1	special/runtime ids only	vmq1_alina_vis
 Alina	v2	excluded location/version	Varrock Square
-Allanna		temporary (lead text)	During the quest
 Almera		special/runtime ids only	almera_waterfall_quest
 Alyssa		special/runtime ids only	arcquest_maid
 Ammunition crate		excluded location/version	Tempoross Cove
@@ -55,17 +51,16 @@ Ancient Ghost	v1	special/runtime ids only	sw_armadyl_ghost_vis
 Ancient Ghost	v2	special/runtime ids only	sw_bandos_ghost_vis
 Anita	v2	special/runtime ids only	mm2_anita_postquest
 Anna	v2	excluded location/version	Seers' Village courthouse
-Anna Jones		temporary (lead text)	During the events of
 Anne	v1	special/runtime ids only	sailing_intro_anne_vis
 Anne	v2	excluded location/version	Port Sarim
 Annie		cache name mismatch	forestry_forester
 Antos	v1	special/runtime ids only	soc_antos_postquest_vis
 Antos	v2	approx centre (rectangle)	0,1337,9754
-Apothecary		temporary (lead text)	during the quest
 Apprentice (medium)		cache name mismatch	ramble_med_mage
-Apprentice Cordelia		temporary (lead text)	During the quest
-Apprentice Felix		temporary (lead text)	During the quest
-Apprentice Tamara		temporary (lead text)	During the quest
+Apprentice Cordelia	v1	excluded location/version	Wizards' Tower
+Apprentice Cordelia	v2	excluded location/version	Temple of the Eye
+Apprentice Felix	v2	excluded location/version	Temple of the Eye
+Apprentice Tamara	v2	excluded location/version	Temple of the Eye
 Archeio		special/runtime ids only	raidquest_library_archive_guardian
 Archive Guardian	v1	cache name mismatch	tfa_guardian_start
 Archpriest of the Unicorn		excluded location/version	Hallowed Sepulchre
@@ -87,16 +82,12 @@ Artur Hosidius	v1	excluded location/version	Crabclaw Caves (during quest), Hosid
 Artur Hosidius	v2	special/runtime ids only	akd_king_vis
 Arzinian Being of Bordanzan		instance map	10044
 Asgarnia Smith		special/runtime ids only	fourdiamonds_indiana_vis,dt2_asgarnia_smith_vis,dt2_asgarnia_smith_cutscene
-Asleif Hamalsdotter		temporary (lead text)	During the quest
-Assassin (A Kingdom Divided)		temporary (lead text)	during the quest
-Assistant Lori		temporary (lead text)	during the events of
+Assistant Lori		special/runtime ids only	zep_assist_gno_replacement_vis
 Assistant Marrow		excluded location/version	Castle Wars
 Asteros Arceuus	v1	special/runtime ids only	asteros_arceuus_vis
 Asteros Arceuus	v2	special/runtime ids only	akd_asteros_arceuus_vis,akd_asteros_arceuus_cutscene
-Atlas		temporary (lead text)	during the quest
 Attala	v1	special/runtime ids only	pmoon_attala_vis
 Attala	v2	special/runtime ids only	cam_torum_attala_vis
-Atza		temporary (lead text)	During the quest
 Avatar of Creation		excluded location/version	Soul Wars Arena
 Avatar of Destruction		excluded location/version	Soul Wars Arena
 Aven		special/runtime ids only	poh_warden_pet_tumeken
@@ -107,7 +98,6 @@ Balloon Animal	v1	instance map	10127
 Balloon Animal	v2	instance map	10127
 Balloon Animal	v3	instance map	10127
 Balloon Animal	v4	instance map	10127
-Bandit (Children of the Sun)		temporary (lead text)	during the quest
 Bandit Leader		special/runtime ids only	feud_bandit_boss_vis
 Banker (Al Kharid)	v1	approx centre (rectangle)	0,3269,3167
 Banker (Bank boat)		special/runtime ids only	sailing_bank_boat_banker
@@ -127,11 +117,9 @@ Bartender (2020 Easter event)		excluded title
 Bartender (2025 Christmas event)		excluded title	
 Bartender (Auburn Pub)		approx centre (rectangle)	0,1391,3354
 Bartender (Dead Man's Chest)		special/runtime ids only	deadmans_bartender
-Bartender (Dragon Inn)		temporary (lead text)	during the quest
 Bat (Hallowed Sepulchre)		excluded title	
 Bee dealer		temporary (lead text)	only present during
 Bee keeper		excluded title	
-Beggar		temporary (lead text)	During the quest
 Benny		special/runtime ids only	qip_soa_newspaperseller
 Bernard (Christmas event)		excluded title	
 Bernese Mountain Dog (wandering)	v1	approx centre (rectangle)	0,2710,3700
@@ -142,7 +130,6 @@ Big Dave (2022 Birthday event)		excluded title
 Big fish (random event)		excluded title	
 Billy	v1	approx centre (polygon)	0,1846,3826
 Billy	v2	approx centre (polygon)	0,2818,3561
-Blanin		temporary (lead text)	During the quest
 Blast Furnace Foreman		instance map	10022
 Blasted ore (NPC)		cache name mismatch	lovakengj_blasted_ore
 Blood Totem	v1	cache name mismatch	dt2_war_room_blood_totem_inactive
@@ -150,7 +137,8 @@ Blood Totem	v2	cache name mismatch	dt2_war_room_blood_totem_active
 Bloody Wave		excluded location/version	Tombs of Amascut
 Blue Opal Director	v1	approx centre (rectangle)	1,2870,10203
 Blue Opal Director	v2	excluded location/version	Keldagrim
-Blue Sheep		temporary (lead text)	during the quest
+Blue Sheep	v1	quest npc, several places: first pin only	[(2560, 3389), (2561, 3388), (2597, 3360)]
+Blue Sheep	v2	quest npc, several places: first pin only	[(2560, 3389), (2561, 3388), (2597, 3360)]
 Boar31337Killer		special/runtime ids only	gim_boar_killer
 Boat fishing spot (Piscatoris Fishing Colony)		cache name mismatch	fishing_boat_monkfish
 Boat fishing spot (anglerfish)		cache name mismatch	fishing_boat_piscariliusfish
@@ -166,7 +154,7 @@ Border Collie (wandering)	v1	approx centre (rectangle)	0,2920,3300
 Border Collie (wandering)	v2	cache name mismatch	collie_shelter
 Bosun Zarah	v1	special/runtime ids only	sailing_crew_fremennik_world
 Boulder (Tombs of Amascut)		excluded title	
-Boulder (Viyeldi caves)		temporary (lead text)	during the quest
+Boulder (Viyeldi caves)		instance map	10173
 Boulder (Wilderness God Wars Dungeon)		cache name mismatch	wilderness_gwd_boulder
 Bowman67		special/runtime ids only	pvptut_npc_to_kill_1
 Brain (Sailing)		excluded title	
@@ -175,9 +163,7 @@ Brikka		approx centre (polygon)	0,1940,2760
 Brimstail	v2	special/runtime ids only	gnome_brimstail_cutscene
 Brother Brace	v1	excluded location/version	Tutorial Island
 Brother Brace	v2	excluded location/version	Tutorial Island
-Brother Cedric		temporary (lead text)	During the quest
 Brother Jered (2021 Halloween event)		excluded title	
-Brother Omad		temporary (lead text)	During the quest
 Brown Engine Director	v1	approx centre (rectangle)	1,2891,10190
 Brown Engine Director	v2	excluded location/version	Keldagrim
 Brundt the Chieftain	v1	approx centre (rectangle)	0,2659,3670
@@ -203,7 +189,6 @@ Butler (Death on the Isle)	v9	special/runtime ids only	mystery_butler02_vis
 Butler Jarvis		special/runtime ids only	hosidiusquest_butler
 Butler Jones	v2	cache name mismatch	butler_jones_hazeel_cultist_noop
 Butterfly (2019 Halloween event)		excluded title	
-Cabin Boy Colin		temporary (lead text)	During the quest
 Cabin Boy Herbert		special/runtime ids only	cabin_boy_herbert_pisc_vis,cabin_boy_herbert_sarim_vis,cabin_boy_herbert_ship_vis
 Cabin Boy Jenkins	v1	special/runtime ids only	dragonslayer_jenkins_there
 Cabin Boy Jenkins (ghost)	v1	special/runtime ids only	sailing_crew_ghost_jenkins_world
@@ -221,7 +206,7 @@ Captain Harlan	v1	area-owned square	0,3218,3238 captain_harlan
 Captain Harlan	v2	cache name mismatch	baw_bea_multi
 Captain Kalt		excluded location/version	Wintertodt Camp
 Captain Malleta		special/runtime ids only	sotn_khazard_head_soldier_vis
-Captain Rachelle		temporary (lead text)	During the quest
+Captain Rachelle	v2	special/runtime ids only	akd_rachelle_cutscene
 Captain Siad		special/runtime ids only	capt_siad_vis
 Caritta		special/runtime ids only	vmq3_recruit_2_vis
 Carla	v1	special/runtime ids only	carla_vis
@@ -237,15 +222,14 @@ Catalytic Guardian		excluded location/version	Temple of the Eye
 Cave Scenery	v1	approx centre (polygon)	0,1845,4496
 Cecilia (2021 Christmas event)		excluded title	
 Cecilia (2024 Christmas event)		excluded title	
-Ceril Carnillean		temporary (lead text)	during the events of
+Ceril Carnillean		cache name mismatch	arena_guard_family,sir_ceril_carnillean_vis
+Ceril Carnillean		cache name mismatch	sotn_hazeel_troll,sir_ceril_carnillean_cutscene
 Chair (Draynor Manor)		excluded objectlocline page	
-Chair (The Slug Menace)		temporary (lead text)	during the quest
+Chair (The Slug Menace)		cache name mismatch	slug2_oniall_gone
 Charlie the Tramp (2024 Christmas event)		excluded title	
-Charlie the cook		temporary (lead text)	During the quest
 Chartin' Charles McAtless	v1	special/runtime ids only	sailing_charting_tutor_1op
 Chartin' Charles McAtless	v2	special/runtime ids only	sailing_charting_tutor_2op
 Chase		approx centre (rectangle)	0,3037,3457
-Checkal		temporary (lead text)	during the quest
 Chef Olivia		special/runtime ids only	hosidiusquest_chef
 Chest (The Fractured Archive)	v1	cache name mismatch	tfa_rewards_chest_vault_closed_mine
 Chest (The Fractured Archive)	v1	cache name mismatch	tfa_unique_chest_vault_closed
@@ -271,12 +255,10 @@ Cleaner (Aldarin)	v3	special/runtime ids only	doti_cleaner_vis
 Clerk (Hosidius)		cache name mismatch	vmq1_guard_1
 Clothears		special/runtime ids only	qip_obs_goblin_kid
 Coal (Blast Furnace)		cache name mismatch	blast_furnace_coal
-Coenus		temporary (lead text)	During the events of
 Commander Connad		excluded location/version	Barbarian Assault
 Commander Fullore		special/runtime ids only	akd_lydia_fullore_vis,akd_lydia_fullore_cutscene
 Commander Veldaban	v2	excluded location/version	Keldagrim
 Conrad King		special/runtime ids only	piscquest_target_alive
-Constantinius		temporary (lead text)	during the quest
 Cook (2022 Birthday event)		excluded title	
 Cook (2025 Christmas event)		excluded title	
 Cook (servant)		special/runtime ids only	poh_servant_cook_woman,poh_servant_cook_woman_cutscene
@@ -284,32 +266,29 @@ Cooking tutor		cache name mismatch	baw_bee_dealer_multi
 Copper ore (Blast Furnace)		cache name mismatch	blast_furnace_copper_ore
 Corgi (wandering)	v1	approx centre (rectangle)	0,2613,3316
 Corgi (wandering)	v2	cache name mismatch	corgi_shelter
-Corporal Breiman		temporary (lead text)	during the quest
-Corporal Campter		temporary (lead text)	during the quest
 Corpse		instance map	10001
 Corrupted Warrior (Bounty Hunter)		excluded title	
 Cosmic Being		instance map	10033
 Costumer		special/runtime ids only	doti_costumer_vis
-Councillor Andrews		temporary (lead text)	During the events of
-Councillor Catherine		temporary (lead text)	during the quest
+Councillor Andrews	v1	special/runtime ids only	akd_councillor_andrews_cutscene,zeah_head_councillor_vis
+Councillor Andrews	v2	special/runtime ids only	akd_councillor_andrews_jailed_vis
 Councillor Unkar	v1	special/runtime ids only	akd_councillor_unkar_cutscene,councillor_unkar_vis
 Councillor Unkar	v2	special/runtime ids only	akd_councillor_unkar_jailed_vis
 Count Check (random event)		excluded title	
 Court judge		special/runtime ids only	kr_judge_dummy
 Cow (2018 Christmas event)		excluded title	
 Cowboy		no ids	
-Cozyac		temporary (lead text)	during the quest
 Crab (Mos Le'Harmless)		approx centre (polygon)	0,3776,3043
 Crab (Tempoross Cove)		excluded title	
-Crate (Gertrude's Cat)		temporary (lead text)	During the quest
+Crate (Gertrude's Cat)		excluded title	
 Creakyknees		special/runtime ids only	qip_obs_goblin_setting_a_fire
 Crew Registrar	v1	excluded location/version	The Pandemonium, Port Roberts
 Crew Registrar	v2	special/runtime ids only	sailing_crew_manager_2op
 Crunchy		instance map	10124
-Crust of ice		temporary (lead text)	during the quest
+Crust of ice		special/runtime ids only	enakh_dummy_fountain
 Crystal Whirlwind		instance map	10068
 Cuali, Teoki of Ralos		special/runtime ids only	fortis_teoki_ralos_vis
-Cuthbert		temporary (lead text)	During the quest
+Cuthbert		special/runtime ids only	frog_quest_cuthbert_named
 Cyrisus	v1	quest npc, several places: first pin only	[(2149, 3867)]
 Cyrisus	v2	cache name mismatch	dream_cyrisus_unconscious
 Cyrisus	v3	cache name mismatch	dream_cyrisus_barely_conscious
@@ -320,12 +299,10 @@ Cyrisus	v7	quest npc, several places: first pin only	[(2149, 3867)]
 D3ad1i F15her		special/runtime ids only	gim_fisher
 Dalcian Fang (easy)		cache name mismatch	templetrek_retired_man_easy
 Dave		special/runtime ids only	frog_quest_dave_named
-Davey		temporary (lead text)	during the quest
 David (Fossil Island)	v1	excluded location/version	Fossil Island
-Dead Monk		temporary (lead text)	During the quest
+Dead Monk		cache name mismatch	devious_monk_dead_visable
 Death (2025 Halloween event)		excluded title	
 Death (Halloween)		excluded title	
-Debra		temporary (lead text)	during the events of
 Deckchair		cache name mismatch	yama_throne_unoccupied
 Del-Monty		instance map	10144
 Delrith		excluded title	
@@ -340,10 +317,9 @@ Dhalak		cache name mismatch	secret_ghost_mage
 Digsite workman	v1	quest npc, several places: first pin only	[(3366, 3425), (3373, 3418), (3362, 3416)]
 Digsite workman	v2	special/runtime ids only	qip_digsite_digworkman_03
 Digsite workman	v3	special/runtime ids only	qip_digsite_digworkman_04
-Dishop Dennis		temporary (lead text)	During the quest
+Dishop Dennis		approx centre (polygon)	0,1298,3723
 Dodgy geezer		cache name mismatch	game_zone_recruiter_saradomin
 Dominic Onion		excluded location/version	Nightmare Zone, north of Yanille
-Don		temporary (lead text)	during the events of
 Donie (2021 Birthday event)		excluded title	
 Doomsayer	v2	excluded location/version	Lumbridge
 Doris (2025 Christmas event)		excluded title	
@@ -353,12 +329,9 @@ Dr Banikan	v2	excluded location/version	Digsite
 Dr Ford (random event)		excluded title	
 Dr Harlow (2025 Christmas event)		excluded title	
 Dr Jekyll		excluded title	
-Dragon egg (Scrambled!)		temporary (lead text)	during the quest
-Drain Pipe		temporary (lead text)	during the quest
 Draul Leptoc	v2	excluded location/version	Leptoc Mansion, west of Varrock
 Drezel		instance map	10125
-Droalak		temporary (lead text)	during the quest
-Druid (enriched snapdragon patch)		temporary (lead text)	During the quest
+Druid (enriched snapdragon patch)		special/runtime ids only	wgs_farmer_druid_vis
 Drunken Ali	v2	special/runtime ids only	feud_drunken_ali_postquest
 Drunken Dwarf		excluded title	
 Drunken Dwarf's Leg	v1	cache name mismatch	myarm_troll_child
@@ -368,10 +341,8 @@ Duelist		excluded location/version	Fortis Colosseum
 Duke Horacio (2021 Birthday event)		excluded title	
 Dumpy		instance map	10022
 Dunce		excluded title	
-Dwarf (Death to the Dorgeshuun)		temporary (lead text)	During the quest
 Dwarven Boatman	v1	special/runtime ids only	dwarf_city_boatman_mines_postquest
 Dwarven Boatman	v2	special/runtime ids only	dwarf_city_boatman_mines_prequest
-Dwarven Engineer		temporary (lead text)	During the quest
 Easter Bunny		excluded title	
 Easter Bunny (historical)		excluded title	
 Easter Duck		excluded title	
@@ -379,11 +350,11 @@ Easter egg (2013 April Fools)		excluded title
 Easter egg (2013 Rare Drops)		excluded title	
 Easter egg bird		excluded title	
 Easter ring (2013 Rare Drops)		excluded title	
-Eblis		temporary (lead text)	During the quest
+Eblis	v2	approx centre (rectangle)	0,3186,2984
 Efaritay Hallow	v1	cache name mismatch	myq6_efaritay_sugadinti_bridge
 Efaritay Hallow	v2	special/runtime ids only	myq6_efaritay_vis,myq6_efaritay_postquest_vis
 Efaritay Hallow	v3	special/runtime ids only	myq6_efaritay_weapon_vis
-Effigy		temporary (lead text)	During the quest
+Effigy		excluded title	
 Egg (2014 Easter event)		excluded title	
 Egg (2019 Easter event)		excluded title	
 Egg launcher		excluded location/version	Barbarian Assault
@@ -391,13 +362,11 @@ Ektheme		special/runtime ids only	raidquest_library_xeric_expert
 Eldalote		instance map	10183
 Elder Korel	v1	special/runtime ids only	tt_korel_vis
 Elder Nama		special/runtime ids only	slayer_gryphon_boss_guardian_vis
-Elder Raley		temporary (lead text)	during the quest
 Elemental rock		excluded objectlocline page	
 Elena	v1	special/runtime ids only	elena2_vis
 Elena	v2	special/runtime ids only	elenap_vis
 Elena Hosidius	v1	special/runtime ids only	hosidiusquest_lady_vis,akd_elena_hosidius_cutscene
 Elena Hosidius	v2	special/runtime ids only	akd_elena_hosidius_vis
-Eleuia		temporary (lead text)	during the quest
 Elf Tracker		special/runtime ids only	regicide_old_camp_tracker_vis
 Elias White		cache name mismatch	coa_arrav_fort,elias_white_vis
 Elidinis' Warden	v1	excluded location/version	Tombs of Amascut
@@ -406,7 +375,6 @@ Ellie		approx centre (polygon)	0,2637,3293
 Elnock Inquisitor		excluded location/version	Puro-Puro
 Eluned		quest npc, several places: first pin only	[(2289, 3148)]
 Eluned (2021 Birthday event)		excluded title	
-Elven Scout		temporary (lead text)	During the quest
 Emelio		special/runtime ids only	mag_emelio_1op
 Emerald Benedict		instance map	10137
 Emma		approx centre (polygon)	0,3257,3463
@@ -424,7 +392,7 @@ Ent (random event)		excluded title
 Entrance Guardian		excluded location/version	Mage Training Arena - Central Chamber
 Eric (2018 Halloween event)		excluded title	
 Ernest	v1	cache name mismatch	ernest_the_chicken
-Escaping slave		temporary (lead text)	during the quest
+Escaping slave		excluded title	
 Essyllt		instance map	10113
 Estate agent (2021 Halloween event)		excluded title	
 Esther		excluded location/version	Wintertodt Camp
@@ -437,7 +405,8 @@ Evil Bob		excluded title
 Evil Dave	v2	instance map	10169
 Evil Dave	v3	area-owned square	0,3208,3222 hundred_dave_frozen
 Ex-Captain Siad	v1	special/runtime ids only	sailing_crew_captain_siad_world
-Examiner		temporary (lead text)	during the quest
+Examiner	v2	special/runtime ids only	qip_digsite_examiner_02
+Examiner	v3	special/runtime ids only	qip_digsite_examiner_03
 Eyatlalli		special/runtime ids only	pmoon_eyatlalli_vis,pmoon_eyatlalli_vis_postquest
 Eye (Abyssal Nexus)	v1	instance map	10006
 Eye (Abyssal Nexus)	v2	instance map	10006
@@ -448,34 +417,29 @@ Factory Worker	v1	approx centre (rectangle)	0,2930,10190
 Fairy (Fairy Resistance Hideout)	v1	quest npc, several places: first pin only	[(2357, 4451)]
 Fairy (Fairy Resistance Hideout)	v4	quest npc, several places: first pin only	[(2357, 4437)]
 Fairy Queen	v2	quest npc, several places: first pin only	[(2352, 4457)]
-Fake man		temporary (lead text)	during the quest
 Fancy Dan		excluded location/version	Trouble Brewing
 Farid Morrisane (ores and bars)		cache name mismatch	ge_expert_ores
-Farmer Bea		temporary (lead text)	during the quest
 Father Aereck (2021 Birthday event)		excluded title	
-Father Reen		temporary (lead text)	During the quest
 Felius		special/runtime ids only	vmq3_recruit_1_vis
 Female slave	v1	special/runtime ids only	tourtrap_qip_mining_slave_female_1
 Female slave	v2	special/runtime ids only	tourtrap_qip_mining_slave_female_2
-Femi		temporary (lead text)	during the quest
 Feoras	v1	area-owned square	0,3226,3254 lumbridge_blacksmith
 Feoras	v2	special/runtime ids only	baw_honey_buzzard_cutscene
-Filliman Tarlock		temporary (lead text)	During the quest
+Filliman Tarlock	v1	special/runtime ids only	filliman_tarlock_spirit
+Filliman Tarlock	v2	cache name mismatch	filliman_tarlock_ns
 Financial Advisor		excluded location/version	Tutorial Island
 Financial Seer		special/runtime ids only	deadman_banker_neitiznot_model
 Financial Wizard		objectlocline: no ids	pest_squire_bank_deadman,ahoy_ghost_banker_deadman,deadman_banker_blue_1,deadman_banker_blue_2,deadman_banker_grey_1,dea
 Finarfin		instance map	10183
 Finlay		area-owned square	0,3244,3157 finlay
 Fire (Tempoross Cove)		excluded title	
-Fire Wave (Judge of Yama)		temporary (lead text)	during the quest
-First mate 'Davey-boy'		temporary (lead text)	During the quest
+Fire Wave (Judge of Yama)		cache name mismatch	akd_judge_wave
 Fishbowl (pet)		excluded title	
-Fisherman (Holy Grail)		temporary (lead text)	During the quest
 Fishing spot (2022 Birthday event)		excluded title	
 Fishing spot (Braindeath Island)		objectlocline: no ids	deal_squid
 Fishing spot (Camdozaal)		special/runtime ids only	camdozaal_fishingspot_1
 Fishing spot (Enchanted Valley)		objectlocline: no ids	fairy2_fakefish
-Fishing spot (Hemenster)		temporary (lead text)	During the quest
+Fishing spot (Hemenster)		excluded objectlocline page	
 Fishing spot (Tempoross Cove)		excluded title	
 Fishing spot (Tutorial Island)		excluded title	
 Fishing spot (big net, harpoon)		held spot type	0_37_59_tuna 0,2403,3778
@@ -518,7 +482,8 @@ Flying Book	v1	excluded location/version	Mage Training Arena
 Flying Book	v2	excluded location/version	Mage Training Arena
 Flying papers		cache name mismatch	darkm_rubbish
 Forebearer Fides		special/runtime ids only	vmq3_forebearer_fides_vis,vmq3_forebearer_fides_cutscene
-Forebearer Janus		temporary (lead text)	During the events of
+Forebearer Janus	v4	special/runtime ids only	vmq4_janus_basement_cs
+Forebearer Janus	v5	special/runtime ids only	vmq4_janus_house_janus_dead_vis,vmq4_janus_house_janus_dead_vis_size1
 Forester (hard)		cache name mismatch	ramble_hard_ranger
 Fox (pet)		excluded title	
 Francis (Auburnvale)		approx centre (rectangle)	0,1381,3359
@@ -529,7 +494,6 @@ Fremennik warrior (The Graveyard)	v4	excluded location/version	Rellekka, The Gra
 Friend (Deadman: All Stars)		excluded title	
 Fritz the Glassblower		approx centre (polygon)	0,2833,3350
 Frog (Kiss the frog)		excluded title	
-Frog (The Ribbiting Tale of a Lily Pad Labour Dispute)		temporary (lead text)	during the quest
 Furia Tullus	v1	special/runtime ids only	vmq1_furia_cutscene,vmq2_furia_vis,vmq2_furia_cutscene
 Furia Tullus	v3	special/runtime ids only	vmq4_furia_prisoner_vis
 Furnace grate		special/runtime ids only	enakh_dummy_furnace
@@ -546,12 +510,13 @@ Gary (25th Anniversary event)	v1	special/runtime ids only	sailing_veiled_kraken_
 Gary (25th Anniversary event)	v2	cache name mismatch	sailing_veiled_kraken,grimstone_uncerter_op5,castlewars_barricade_burning_saradomin_render_under
 Gary (25th Anniversary event)	v3	cache name mismatch	grimstone_uncerter_op1,castlewars_barricade_zamorak_render_under
 Gary's hat		cache name mismatch	castlewars_barricade_saradomin_render_under
-Gauss		temporary (lead text)	During the quest
+Gauss	v1	approx centre (rectangle)	0,2839,10195
+Gauss	v2	special/runtime ids only	forget_cutscene_patron5
 Gelin		special/runtime ids only	deadman_gelin
 General Wartface		excluded location/version	Goblin Village, Banquet room Lumbridge during Recipe for Disaster quest
 Genie		excluded title	
 Genie (Sailing stress test)		excluded title	
-Genie (Spirits of the Elid)		temporary (lead text)	During the quest
+Genie (Spirits of the Elid)		instance map	10070
 Gerald		special/runtime ids only	gerald_waterfall_quest
 Gertrude	v1	special/runtime ids only	gertrude_quest
 Gertrude (2024 Christmas event)		excluded title	
@@ -588,13 +553,12 @@ Golrie	v1	instance map	10154
 Goose	v3	area-owned square	0,3178,3298 xmas22_goose
 Grace		instance map	10137
 Grail Maiden		quest npc, several places: first pin only	[(2631, 4687), (2632, 4682), (2638, 4680)]
-Grandpa Jack		temporary (lead text)	during the quest
 Grave digger		special/runtime ids only	shayzienquest_gravedigger
 Graveyard Guardian		excluded location/version	Mage Training Arena
 Greasycheeks		special/runtime ids only	qip_obs_cooking_goblin
 Green Gemstone Director	v1	approx centre (rectangle)	1,2894,10210
 Green Gemstone Director	v2	excluded location/version	Keldagrim
-Green Sheep		temporary (lead text)	during the quest
+Green Sheep	v1	quest npc, several places: first pin only	[(2621, 3367), (2622, 3366), (2623, 3367)]
 Gregg		cache name mismatch	bim_willow_outside,bim_willow_outside_entrace,bim_willow_inside,bim_willow_postquest,bim_marley_edge,bim_marley_temple_o
 Gregory (2023 Pride event)		cache name mismatch	gathering_event_flowering_tree_bush_fruited_col02,whisperer_pet
 Greyhound (wandering)	v1	approx centre (rectangle)	0,1627,3465
@@ -602,21 +566,16 @@ Greyhound (wandering)	v2	cache name mismatch	greyhound_shelter
 Group Ironman tutor		special/runtime ids only	ironman_tutor_node
 Group Storage tutor		special/runtime ids only	gim_tutor_shared_storage
 Gruh		excluded location/version	South of Castle Wars
-Grunsh		temporary (lead text)	During the quest
 Guard (2020 Easter event)		excluded title	
-Guard (Below Ice Mountain)		temporary (lead text)	during the events of
-Guard (Carnillean)		temporary (lead text)	During the events of
 Guard (Fortis Colosseum)		excluded title	
 Guard (Ratcatchers)		quest npc, several places: first pin only	[(2846, 5087), (2840, 5067), (2840, 5076)]
-Guardian of Armadyl (While Guthix Sleeps)		temporary (lead text)	during the quest
 Guild Hunter Aco (Expert)		cache name mismatch	hg_aco
 Guild Hunter Cervus (Adept)		cache name mismatch	hg_cervus
-Guild Hunter Fox		temporary (lead text)	During the quest
+Guild Hunter Fox	v1	special/runtime ids only	afl_hunter_fox_normal_vis
+Guild Hunter Fox	v2	cache name mismatch	afl_injured_hunter
 Guild Hunter Ornus (Adept)		cache name mismatch	hg_ornus
 Guild Hunter Teco (Expert)		cache name mismatch	hg_teco
 Guild Hunter Wolf (Master)		cache name mismatch	hg_wolf
-Guild Scribe Verity		temporary (lead text)	during the quest
-Guildmaster Apatura		temporary (lead text)	During the quest
 Gujuo		approx centre (rectangle)	0,2864,2912
 Gull		instance map	10029
 Gull		instance map	10119
@@ -626,7 +585,6 @@ Gunslik	v2	special/runtime ids only	forget_cutscene_patron1
 Guppa		approx centre (rectangle)	0,3124,2404
 Gurl		cache name mismatch	wild_cave_jelly_2,wild_cave_jelly_4
 Gurtob		special/runtime ids only	sailing_bt_trial_master_2_1op,sailing_bt_trial_master_2_3op,sailing_bt_trial_master_2_0op
-Gus		temporary (lead text)	during the quest
 Gwindor		instance map	10183
 Gwyna		special/runtime ids only	sailing_bt_trial_master_3_1op,sailing_bt_trial_master_3_3op,sailing_bt_trial_master_3_0op
 H.A.M. Deacon	v1	special/runtime ids only	favour_deacon
@@ -639,25 +597,19 @@ HAM member (Death to the Dorgeshuun)		instance map	10074
 Hadley		special/runtime ids only	hadley_waterfall_quest
 Hairdresser (2021 Christmas event)		excluded title	
 Hairdresser (2024 Christmas event)		excluded title	
-Half-soulless		temporary (lead text)	During the quest
+Half-soulless		instance map	10165
 Hammerspike Stoutbeard		special/runtime ids only	favour_hammerspike_stoutbeard
 Hans (2022 Birthday event)		excluded title	
 Hans (2025 Christmas event)		excluded title	
-Harold		temporary (lead text)	During the quest
 Harold Evans	v1	instance map	10117
 Harold Evans	v2	excluded location/version	Under Canifis in the original Myreque Hideout
 Harvester	v1	approx centre (line)	0,1376,3015
 Hassan (2022 Birthday event)		excluded title	
 Haze		instance map	10001
-Head Butler		temporary (lead text)	during the quest
-Head Guard (Fight Arena)		temporary (lead text)	during the quest
 Head Mourner		special/runtime ids only	headmourner_vis
-Head mourner (removed)		temporary (lead text)	during the quest
 Healthorg and tortoise		excluded location/version	Quest cutscene
 Hegio, Teoki of Ranul		special/runtime ids only	fortis_teoki_ranul_vis
 Helena (Ruins of Camdozaal)		special/runtime ids only	dt2_camdozaal_archaeologist_1_vis
-Hell-Rat		temporary (lead text)	During the quest
-Hellcat		temporary (lead text)	During the quest
 Helpful Spirit		excluded location/version	Tombs of Amascut
 Herquin (2021 Christmas event)		excluded title	
 Herquin (2025 Christmas event)		excluded title	
@@ -670,7 +622,7 @@ Highlord Katlo	v2	special/runtime ids only	vmq4_highlord_katlo_vis
 Hofuthand (weapons and armour)		cache name mismatch	ge_expert_combat
 Honest Jimmy		excluded location/version	Trouble Brewing
 Horacio (2020 Birthday event)		excluded title	
-Hudon		temporary (lead text)	during the quest
+Hudon		special/runtime ids only	hudon_waterfall_quest
 Hugh	v3	special/runtime ids only	fisherman_hugh_up_vis
 Huntmaster Gilman (Novice)		cache name mismatch	hg_gilman
 Husky (wandering)	v1	approx centre (rectangle)	0,1699,3945
@@ -700,10 +652,8 @@ Ish the Navigator		excluded location/version	Wintertodt Camp
 Islwyn		quest npc, several places: first pin only	[(2289, 3148)]
 Istoria	v1	special/runtime ids only	raidquest_library_historian_2op
 Istoria	v2	special/runtime ids only	raidquest_library_historian_3op
-Ithoi the Navigator		temporary (lead text)	During the events of
 Ivy (2016 Christmas event)		excluded title	
 Jack (Christmas 2013)		excluded title	
-Jaguar egg		temporary (lead text)	during the quest
 Jane		special/runtime ids only	frog_quest_jane_named
 Jayene Kliyn (medium)		cache name mismatch	templetrek_woman_med
 Jess (2019 Christmas event)		excluded title	
@@ -718,7 +668,7 @@ John	v1	excluded location/version	Fossil Island
 Jolly Jim	v1	special/runtime ids only	sailing_crew_generic_4_world
 Jonathan		approx centre (rectangle)	0,1751,3588
 Jonny the Beard (2025 Christmas event)		excluded title	
-Jorra		temporary (lead text)	During the quest
+Jorra		special/runtime ids only	lovakengj_assistant_vis
 Jorzik		instance map	10022
 Jossik	v2	excluded location/version	Lighthouse
 Jug (Tombs of Amascut)		excluded title	
@@ -729,23 +679,17 @@ Junior Jim	v1	excluded location/version	The Pandemonium
 Junior Jim	v3	special/runtime ids only	sailing_assistant_limbo
 Junior Navigator		special/runtime ids only	fossilquest_jr_navigator_quest,fossilquest_jr_navigator_postquest
 Jury		special/runtime ids only	kr_jury_dummy
-Justin Servil		temporary (lead text)	During the quest
+Justin Servil		cache name mismatch	sotn_hazeel_hideout,justin_servil_vis
 Justine		excluded location/version	Ferox Enclave: Last Man Standing
-Juvenile Snail		temporary (lead text)	During the quest
-K'klik		temporary (lead text)	During the quest
-KGP Agent		temporary (lead text)	during the quest
-Kael Forshaw		temporary (lead text)	during the quest
+Juvenile Snail		special/runtime ids only	snailquest_snail
+Kael Forshaw		quest npc, several places: first pin only	[(3594, 9613)]
 Kaht B'alam		instance map	10102
-Kamen		temporary (lead text)	during the quest
-Kaqemeex		temporary (lead text)	During the quest
+Kamen	v1	instance map	10161
 Karamthulhu (unused pet)		excluded title	
 Kardia		special/runtime ids only	cavewitch_vis
 Karim (2025 Christmas event)		excluded title	
-Kathy Corkat		temporary (lead text)	during the quest
 Kauayotl	v2	excluded location/version	Tal Teklan
-Kelyn		temporary (lead text)	During the quest
-Kennith		temporary (lead text)	During the quest
-Kent		temporary (lead text)	During the quest
+Kelyn	v2	cache name mismatch	sote_lady_ithell_vis,sote_lady_ithell_upass,lady_ithell
 Kephri		excluded location/version	Tombs of Amascut
 Ketla		special/runtime ids only	dt2_ketla_vis,dt2_ketla_cutscene
 Kharid Scorpion	v1	special/runtime ids only	questscorpiona
@@ -758,7 +702,6 @@ Khazard Soldier	v3	special/runtime ids only	sotn_khazard_soldier_3_vis
 Khazard Soldier	v4	special/runtime ids only	sotn_khazard_soldier_4_vis
 Killer	v2	special/runtime ids only	mistmyst_killer_background_vis
 Kineer	v2	instance map	10093
-King Bolren		temporary (lead text)	During the quest
 King Lathas	v1	special/runtime ids only	ds2_meeting_king_lathas,kinglathas_vis,akd_king_lathas_cutscene
 Kit Breaker	v1	cache name mismatch	wgs_heroes_harrallak_wounded
 Kit Breaker	v2	cache name mismatch	wgs_heroes_harrallak_wounded_lying_ready
@@ -777,11 +720,10 @@ Knight of the Lion		excluded location/version	Hallowed Sepulchre
 Knight of the Owl		excluded location/version	Hallowed Sepulchre
 Knight of the Unicorn		excluded location/version	Hallowed Sepulchre
 Knight of the Wolf		excluded location/version	Hallowed Sepulchre
-Koftik		temporary (lead text)	During the quest
+Koftik	v1	special/runtime ids only	caveguide_vis
 Korgan		approx centre (rectangle)	0,1946,2762
 Krato		special/runtime ids only	raidquest_library_intern
 Kroy		special/runtime ids only	myq5_kroy_cutscene,slepe_kroy_vis
-Kurt		temporary (lead text)	during the events of
 Kylie Minnow		special/runtime ids only	minnow_fisherman_locked,minnow_fisherman_unlocked
 Lacey		special/runtime ids only	mistmyst_lacey_vis
 Lady Carys Hefin	v2	special/runtime ids only	sote_lady_hefin_vis_unknown
@@ -791,17 +733,14 @@ Lady Shauna Piscarilius	v1	special/runtime ids only	piscquest_queen_prequest
 Lady Shauna Piscarilius	v2	special/runtime ids only	piscquest_queen_postquest
 Lady Shauna Piscarilius	v3	special/runtime ids only	akd_shauna_piscarilius_cutscene,akd_shauna_piscarilius_vis
 Lady Vulcana Lovakengj		special/runtime ids only	akd_vulcana_lovakengj_cutscene,akd_vulcana_lovakengj_vis,vulcana_lovakengj_vis
-Laidee Gnonock		temporary (lead text)	during the events of
 Lanthus		excluded location/version	Castle Wars
 Lara		excluded location/version	North of Castle Wars
-Large egg		temporary (lead text)	during the quest
 Larrissa	v1	special/runtime ids only	horror_girlfriend_prequest
 Larrissa	v2	excluded location/version	Lighthouse
 Larry		temporary (lead text)	no longer appears
 Larry (2021 Christmas event)		excluded title	
 Larry Leprechaun (2022 Birthday event)		excluded title	
 Lassin		excluded location/version	Northern Tundras, Wintertodt
-Lazim		temporary (lead text)	During the quest
 Lead Navigator		special/runtime ids only	fossilquest_lead_navigator_quest,fossilquest_lead_navigator_postquest
 Lead ore (Blast Furnace)		cache name mismatch	blast_furnace_lead_ore
 League Tutor (Shattered Relics League)		special/runtime ids only	league_3_tutor,league_3_tutor_multi
@@ -813,7 +752,6 @@ Leagues Tutor (Demonic Pacts League)		excluded title
 Leagues Tutor (Raging Echoes League)		excluded title	
 Leagues Tutor (Trailblazer League)		excluded title	
 Leagues Tutor (Twisted League)		excluded title	
-Legends' Guard		temporary (lead text)	during the quest
 Lelia		excluded location/version	Fortis Colosseum
 Lennissa		cache name mismatch	secret_ghost_spy
 Leo		excluded title	
@@ -826,7 +764,6 @@ Lizard (Quidamortem)		instance map	10130
 Lizard man (2014 Birthday event)		excluded title	
 Logios		special/runtime ids only	raidquest_library_scholar
 Longramble		special/runtime ids only	pog_gnome_longramble_vis
-Lord Alexei Jovkai		temporary (lead text)	During the events of
 Lord Baxtorian Cadarn	v1	cache name mismatch	sote_baxtorian_vis,sote_baxtorian_upass,sote_baxtorian_cutscene,sote_baxtorian_cutscene_orb,sote_baxtorian_cutscene_nobo
 Lord Crombwick	v1	special/runtime ids only	myq5_crombwick_cutscene
 Lord Crombwick	v2	special/runtime ids only	slepe_crombwick_vis
@@ -849,7 +786,6 @@ Lumdo	v1	quest npc, several places: first pin only	[(2803, 2707)]
 Lumdo	v2	quest npc, several places: first pin only	[(2803, 2707)]
 Mac		approx centre (polygon)	0,2792,3540
 Madam Sikaro		special/runtime ids only	wbr_voidwakermaker
-Madame Caldarium		temporary (lead text)	during the quest
 Maedhros		instance map	10183
 Mage (easy)		cache name mismatch	ramble_easy_mage
 Magic Instructor	v1	excluded location/version	Tutorial Island
@@ -884,14 +820,50 @@ Mary (2019 Christmas event)		excluded title
 Master Chef		excluded location/version	Tutorial Island
 Master Navigator		excluded location/version	Tutorial Island
 Mawnis Burowgar	v2	excluded location/version	Neitiznot
-Mayor Hobb		temporary (lead text)	During the quest
 Meaty Aura Logist		special/runtime ids only	sailing_charting_weather_troll
-Meiyerditch citizen		temporary (lead text)	During the quest
+Meiyerditch citizen	v1	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v10	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v11	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v12	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v13	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v14	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v15	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v16	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v17	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v18	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v19	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v2	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v20	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v21	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v22	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v23	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v24	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v25	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v26	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v27	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v28	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v29	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v3	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v30	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v31	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v32	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v33	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v34	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v35	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v36	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v37	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v38	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v4	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v5	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v6	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v7	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v8	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
+Meiyerditch citizen	v9	quest npc, several places: first pin only	[(3595, 3212), (3612, 3211), (3615, 3283)]
 Meleti		special/runtime ids only	raidquest_library_student
 Memory of Seren	v2	special/runtime ids only	sote_seren_vis
 Menaphite Leader		special/runtime ids only	feud_menap_boss_vis
 Mercenary (Theatre of Blood)		excluded title	
-Metzli, Teokan of Ranul		temporary (lead text)	during the quest
+Metzli, Teokan of Ranul		special/runtime ids only	vmq2_metzli_vis
 Mikasi	v1	area-owned square	0,3233,3214 mikasi_lumbridge_diary
 Mikasi	v2	cache name mismatch	baw_bea_3ops
 Mikey		cache name mismatch	gathering_event_flowering_tree_bush_fruited_col07,poh_vardorvis_pet
@@ -938,10 +910,8 @@ Murky Matt (runes)		cache name mismatch	ge_expert_runes
 Museum guard	v1	approx centre (square)	0,3273,3438
 My Arm (2022 Birthday event)		excluded title	
 Mysterious Bandit		special/runtime ids only	dt2_vault_bandit_vis
-Mysterious Figure		temporary (lead text)	during the quest
 Mysterious Old Man		excluded title	
 Mysterious Stranger (Hallowed Sepulchre)		excluded title	
-Mysterious Voice		temporary (lead text)	during the quest
 Naghead		instance map	10122
 Natural historian		instance map	10170
 Ned	v2	cache name mismatch	ned_1op
@@ -957,22 +927,20 @@ Niles		excluded title
 Niloof	v1	instance map	10161
 Nimrodel		instance map	10183
 Nisha		special/runtime ids only	qip_digsite_panning_woman_01
-Noah		temporary (lead text)	During the quest
+Noah	v1	special/runtime ids only	vmq1_noah_vis
+Noah	v2	excluded location/version	Varrock Square
 Nolar	v2	special/runtime ids only	forget_cutscene_patron2
-Noodle		temporary (lead text)	During the quest
 Noranna Tytanin		instance map	10038
 Nova	v1	special/runtime ids only	vmq3_recruit_4_vis
 Novice		approx centre (rectangle)	1,1700,3794
 Nugget (Deadman: All Stars)		excluded title	
 Numpty		instance map	10022
-Nung		temporary (lead text)	During the quest
 Nurse Sarah		approx centre (rectangle)	0,2517,3274
 Oarswoman Olga	v1	special/runtime ids only	sailing_crew_werewolf_world
 Observatory assistant		special/runtime ids only	qip_obs_proffesors_assistant
 Observatory professor	v2	excluded location/version	Observatory reception
 Odd Old Man	v3	excluded location/version	Silvarea
 Odd tree		excluded objectlocline page	
-Og		temporary (lead text)	During the quest
 Ogre guard	v1	quest npc, several places: first pin only	[(2551, 3031), (2505, 3062), (2507, 3062)]
 Ogre guard	v2	quest npc, several places: first pin only	[(2551, 3031), (2505, 3062), (2507, 3062)]
 Ogre guard	v3	quest npc, several places: first pin only	[(2551, 3031), (2505, 3062), (2507, 3062)]
@@ -982,14 +950,12 @@ Ogre guard (Jiggig)	v1	quest npc, several places: first pin only	[(2443, 3038), 
 Ogre guard (Jiggig)	v2	quest npc, several places: first pin only	[(2443, 3038), (2452, 3030)]
 Olaf the Bard	v2	special/runtime ids only	viking_olaf_cutscene
 Olbertus	v2	special/runtime ids only	hosdun_olbertus_cutscene
-Old Man Ral		temporary (lead text)	during the quest
-Old Man Yarlo		temporary (lead text)	During the quest
-Old man		temporary (lead text)	during the quest
+Old Man Yarlo	v2	excluded location/version	Varrock
+Old Man Yarlo	v3	excluded location/version	Varrock
 Ordan		instance map	10022
 Ork (Zanaris)	v1	quest npc, several places: first pin only	[(2436, 4455), (2438, 4453)]
 Ork (Zanaris)	v3	quest npc, several places: first pin only	[(2452, 4466), (2456, 4467)]
 Oscar		special/runtime ids only	toa_crondis_captured_vis
-Osman		temporary (lead text)	during the quest
 Osmumten	v1	special/runtime ids only	toa_osmumten_vault_vis_0
 Osmumten	v2	special/runtime ids only	toa_osmumten_vis,toa_osmumten_wardens_vis,toa_osmumten_vault_vis_1,toa_osmumten_vault_vis_2
 Overseer Khougo		approx centre (polygon)	0,1390,2857
@@ -1013,13 +979,11 @@ Parrot (Sailing alpha)		excluded title
 Party Pete (2024 Christmas event)		excluded title	
 Patrolling rat		cache name mismatch	rat_boss_giant_rat_patrol
 Patty Seer		special/runtime ids only	hallowed_loottracker_dummy_low
-Patzi		temporary (lead text)	during the quest
 Paul (2019 Christmas event)		excluded title	
-Pauline Polaris		temporary (lead text)	During the quest
 Pay-dirt (NPC)		cache name mismatch	motherlode_paydirt
 Peasant	v1	quest npc, several places: first pin only	[(2776, 4718), (2777, 4703), (2788, 4721)]
 Peasant	v2	quest npc, several places: first pin only	[(2648, 4718), (2649, 4703), (2660, 4721)]
-Peer the Seer		temporary (lead text)	during the quest
+Peer the Seer	v2	special/runtime ids only	ds2_fleet_peer
 Pentyn		instance map	10054
 Perfect gold ore (Blast Furnace)		cache name mismatch	blast_furnace_perfect_gold_ore
 Pet Dagannoth Prime		excluded title	
@@ -1037,11 +1001,9 @@ Pet chaos elemental		excluded title
 Pet dark core		excluded title	
 Pet rock		excluded title	
 Pete Kayer	v1	special/runtime ids only	pvptut_tutor
-Petra Fiyed		temporary (lead text)	During the quest
 Petrus		approx centre (rectangle)	0,1964,3109
 Phantom (Tombs of Amascut)		excluded title	
-Phantuwti Fanstuwi Farsight		temporary (lead text)	during the quest
-Pharaoh Kemesis		temporary (lead text)	during the quest
+Phantuwti Fanstuwi Farsight		special/runtime ids only	favour_phantuwti_farsight
 Pheasant (pet)		excluded title	
 Phosani's Nightmare		excluded title	
 Picklenose	v1	excluded location/version	South-West of Cooks' Guild
@@ -1053,15 +1015,12 @@ Pirate Pete	v2	instance map	10103
 Poison gas cloud		cache name mismatch	lovakengj_sulphur_gas
 Polar eagle	v1	instance map	10126
 Polar eagle	v2	instance map	10126
-Polmafi Ferdygris		temporary (lead text)	during the events of
 Portal (25th Anniversary event)		cache name mismatch	dagannoth_dungeon_pressure_pet_easter26_egg
 Postie Pete		excluded title	
-Pox		temporary (lead text)	During the quest
 Prayer tutor		special/runtime ids only	baw_killer_wasp_swarm_cutscene
 Prescott		special/runtime ids only	dt2_camdozaal_archaeologist_2_vis
 Prince Ali	v2	special/runtime ids only	prince_ali_vis
 Prince Brand	v2	special/runtime ids only	royal_cutscene_prince_brand
-Prince Itzla Arkan		temporary (lead text)	during the events of
 Princess Astrid	v2	special/runtime ids only	royal_cutscene_princess_astrid
 Prison Pete		excluded title	
 Prisoner (Darkmeyer)		approx centre (polygon)	0,3622,3380
@@ -1069,7 +1028,6 @@ Private Paldo		excluded location/version	Main room of the Barbarian Assault base
 Private Paldon		excluded location/version	Barbarian Assault Outside building and near rooms 5 and 6
 Private Pendron		excluded location/version	Barbarian Assault Outside and near rooms 7 and 8
 Private Pierreb		excluded location/version	Barbarian Assault outside and near rooms 9 and 10
-Protest Leader		temporary (lead text)	during the events of
 Protester	v17	special/runtime ids only	kourend_protester_2_vis
 Protester	v18	special/runtime ids only	kourend_protester_6_vis
 Protester	v19	special/runtime ids only	kourend_protester_12_vis
@@ -1091,7 +1049,6 @@ Purple Pewter Director	v2	excluded location/version	Keldagrim
 Purple Pewter Secretary		approx centre (rectangle)	1,2870,10196
 Pyromancer	v1	excluded location/version	Wintertodt prison
 Pyromancer	v2	excluded location/version	Wintertodt prison
-Queen Ellamaria		temporary (lead text)	during the quest
 Queen Zyanyi Arkan	v4	special/runtime ids only	vmq4_queen_palace_throne_vis
 Quest Guide	v1	excluded location/version	Tutorial Island
 Quest Guide	v2	excluded location/version	Tutorial Island
@@ -1101,9 +1058,7 @@ R0ck 5masher		special/runtime ids only	gim_miner
 Rabbit (2014 Easter event)		excluded title	
 Rabbit (2020 Easter event)		excluded title	
 Rabbit (Castle Wars)		excluded title	
-Radigad Ponfit		temporary (lead text)	during the events of
 Ranged combat tutor		cache name mismatch	baw_bea
-Ranger		temporary (lead text)	during the quest
 Ranger (medium)		cache name mismatch	ramble_med_ranger
 Ranulph	v3	excluded location/version	Auburnvale
 Rat (Barracuda Trials)		special/runtime ids only	sailing_bt_rat
@@ -1113,13 +1068,14 @@ Rebel (Deadman: All Stars)		excluded title
 Rebel Archer	v1	instance map	10162
 Rebel Archer	v2	instance map	10162
 Rebel Archer	v3	instance map	10162
-Rebel Scout		temporary (lead text)	during the quest
+Rebel Scout	v1	special/runtime ids only	sote_lletya_gravestone_vis
+Rebel Scout	v2	instance map	10165
 Rebel Warrior	v1	instance map	10162
 Rebel Warrior	v2	instance map	10162
 Recruiter		special/runtime ids only	recruiter_vis
 Red Axe Cat	v2	special/runtime ids only	dwarf_city_evil_cat_cutscene_awake
 Red Axe Director	v2	special/runtime ids only	forget_redaxe_director_cutscene,forget_redaxe_director_cutscene_alt
-Red Sheep		temporary (lead text)	during the quest
+Red Sheep	v1	quest npc, several places: first pin only	[(2609, 3344), (2610, 3345), (2610, 3343)]
 Regent		special/runtime ids only	gim_regent
 Relobo Blinyo (logs)		cache name mismatch	ge_expert_logs
 Renata		special/runtime ids only	mag_renata_vis
@@ -1140,18 +1096,18 @@ Roger	v1	special/runtime ids only	bcs_crocodile_vis
 Rogue Guard	v1	instance map	10137
 Rogue Guard	v2	instance map	10137
 Rogue Guard	v3	instance map	10137
-Rolad		temporary (lead text)	during the quest
 Rolayne Twickit (hard)		cache name mismatch	templetrek_oldman_hard
 Rommik (2025 Christmas event)		excluded title	
 Ros		special/runtime ids only	sailing_bt_trial_master_2_assistant_1op,sailing_bt_trial_master_2_assistant_0op
-Rowdy dwarf		temporary (lead text)	During the quest
+Rowdy dwarf	v1	approx centre (rectangle)	0,2916,10192
+Rowdy dwarf	v2	special/runtime ids only	forget_cutscene_rowdy
 Rum-dashed Ralph		special/runtime ids only	sailing_bt_trial_master_1_1op,sailing_bt_trial_master_1_3op,sailing_bt_trial_master_1_0op
 Runite ore (Blast Furnace)		cache name mismatch	blast_furnace_runite_ore
 Sailing cat		excluded title	
-Sailor		temporary (lead text)	During the quest
 Sailor Jakob	v1	special/runtime ids only	sailing_crew_generic_5_world
 Sam (Christmas 2016)		excluded title	
-Sammy Servil		temporary (lead text)	during the quest
+Sammy Servil	v1	cache name mismatch	sotn_hazeel_cultist_entry
+Sammy Servil	v2	cache name mismatch	sotn_clivet,sammy_servil_vis,sammy_servil_vis_noop,sammy_servil_cutscene
 Samoyed (wandering)	v1	approx centre (rectangle)	0,2795,3095
 Samoyed (wandering)	v2	cache name mismatch	samoyed_shelter
 San Fan		excluded location/version	Trouble Brewing
@@ -1170,7 +1126,6 @@ Schoolgirl	v6	instance map	10170
 Scorpion (2025 Easter event)		excluded title	
 Scout (Ghorrock Dungeon)		temporary (lead text)	no longer appears
 Scrubfoot	v2	excluded location/version	North of Falador
-Scruffy		temporary (lead text)	during the events of
 Seal (Sailing alpha)		excluded title	
 Seia, Teoki of Ranul		excluded location/version	Fortis Colosseum entrance
 Sergeant (Chasm of Fire)		special/runtime ids only	shayzien_chasm_guard_axe_vis
@@ -1212,7 +1167,6 @@ Shipwright Steve		special/runtime ids only	sailing_shipwright_brimhaven
 Shipwright Sylvia		special/runtime ids only	sailing_shipwright_red_rock
 Shipyard Engineer		special/runtime ids only	sailing_shipyard_worker_13
 Shop keeper (2020 Easter event)		excluded title	
-Silia		temporary (lead text)	during the quest
 Silver Cog Director	v1	approx centre (rectangle)	1,2891,10196
 Silver Cog Director	v2	excluded location/version	Keldagrim
 Silver ore (Blast Furnace)		cache name mismatch	blast_furnace_silver_ore
@@ -1230,10 +1184,8 @@ Sir Renitee		special/runtime ids only	poh_herald_of_falador
 Sir Tristram		instance map	10087
 Sir Vyvin (2021 Christmas event)		excluded title	
 Siren (Sailing alpha)		excluded title	
-Sithik Ints		temporary (lead text)	During the quest
 Skavid		quest npc, several places: first pin only	[(2515, 9452), (2500, 9451), (2503, 9415)]
 Skeleton (2018 Halloween event)		excluded title	
-Skeleton (Enakhra's Lament)		temporary (lead text)	during the quest
 Skippy	v5	excluded location/version	Tutorial Island
 Skrach Uglogwee		area-owned square	0,3208,3225 hundred_ogre_skrach_multi
 Skullball Boss		excluded title	
@@ -1254,15 +1206,20 @@ Smiddi Ryak (hard)		cache name mismatch	templetrek_child_hard
 Smithing catalyst (Blast Furnace)		cache name mismatch	blast_furnace_smithing_catalyst
 Smoke Totem	v1	cache name mismatch	dt2_war_room_smoke_totem_inactive
 Smoke Totem	v2	cache name mismatch	dt2_war_room_smoke_totem_active
-Smokin' Joe		temporary (lead text)	During the quest
-SnelmLover500		temporary (lead text)	during the quest
 Snow (Wintertodt)		excluded title	
 Snowball (2021 Christmas event)		excluded title	
 Sol Heredit		excluded location/version	Fortis Colosseum
 Soldier (Chasm of Fire)	v1	special/runtime ids only	shayzien_chasm_guard_hammer_vis
 Soldier (Chasm of Fire)	v2	special/runtime ids only	shayzien_chasm_guard_scim_vis
 Soldier (Chasm of Fire)	v3	special/runtime ids only	shayzien_chasm_guard_dds_vis
-Soldier (Dragon Slayer II)		temporary (lead text)	during the events of
+Soldier (Dragon Slayer II)	v1	special/runtime ids only	ds2_battle_soldier
+Soldier (Dragon Slayer II)	v2	special/runtime ids only	ds2_cutscene_soldier
+Soldier (Dragon Slayer II)	v3	special/runtime ids only	ds2_battle_soldier_f
+Soldier (Dragon Slayer II)	v4	special/runtime ids only	ds2_battle_soldier_variant
+Soldier (Dragon Slayer II)	v5	special/runtime ids only	ds2_battle_soldier_variant_f
+Soldier (Dragon Slayer II)	v6	special/runtime ids only	ds2_cutscene_soldier_f
+Soldier (Dragon Slayer II)	v7	special/runtime ids only	ds2_cutscene_soldier_variant
+Soldier (Dragon Slayer II)	v8	special/runtime ids only	ds2_cutscene_soldier_variant_f
 Sophia Hughes	v1	special/runtime ids only	piscquest_councillor_jailed
 Sophia Hughes	v2	special/runtime ids only	akd_sophia_hughes_cutscene
 Soul (2015 Halloween event)		excluded title	
@@ -1273,7 +1230,6 @@ Spirit (2018 Halloween event)		excluded title
 Spirit pool	v1	excluded location/version	Tempoross Cove
 Spirit pool	v2	excluded location/version	Tempoross Cove
 Spotter Virginia	v1	special/runtime ids only	sailing_crew_spirit_angler_world
-Spria		temporary (lead text)	during the quest
 Spring Elemental		instance map	10144
 Squire (Intermediate)		cache name mismatch	pest_squire_lander_2
 Squire (Novice)		cache name mismatch	pest_squire_lander
@@ -1282,14 +1238,12 @@ Squire (Void Knights)	v5	special/runtime ids only	pest_squire_instance
 Stonemason		special/runtime ids only	poh_stonemason
 Stool (2025 Christmas event)		excluded title	
 Storm Cloud		instance map	10089
-Strange Device (Tale of the Righteous)		temporary (lead text)	during the quest
+Strange Device (Tale of the Righteous)		special/runtime ids only	shayzienquest_puzzle_piece
 Strange Old Man		excluded title	
 Strange watcher	v1	instance map	10108
 Strange watcher	v2	instance map	10108
 Strange watcher	v3	instance map	10108
 Stray dog (2025 Halloween event)		excluded title	
-Stray puppy (A Ruff Situation)		temporary (lead text)	during the quest
-Street urchin		temporary (lead text)	during the quest
 Stumpy		instance map	10022
 Stunted demonic gorilla		quest npc, several places: first pin only	[(2914, 9143), (2916, 9143), (2901, 9126)]
 Sue		special/runtime ids only	frog_quest_sue_named
@@ -1308,26 +1262,22 @@ Swamp Toad	v1	approx centre (polygon)	0,2396,3049
 Swamp Toad	v2	cache name mismatch	bloated_toad
 Swarm (random event)		excluded title	
 Sweeper		excluded location/version	Mage Training Arena
-Swensen the Navigator		temporary (lead text)	During the quest
+Swensen the Navigator	v2	special/runtime ids only	ds2_fleet_swensen
 Sylvia		special/runtime ids only	toa_apmeken_captured_vis
 Tabbitha		cache name mismatch	gathering_event_flowering_tree_bush_fruited_col01,duke_sucellus_pet
 Tail (The Leviathan)		excluded title	
 Talia		approx centre (rectangle)	0,3037,3457
 Talia (Hosidius)		approx centre (rectangle)	0,1679,3619
-Tamayu		temporary (lead text)	During the quest
-Tanya (Slepe)		temporary (lead text)	during the events of
 Tassie Slipcast		special/runtime ids only	favour_tassie_slipcast
 Taxidermist		special/runtime ids only	poh_taxidermist
 Tayten		special/runtime ids only	mistmyst_tayten_vis
 Tempoross		excluded title	
-Tenoch		temporary (lead text)	during the quest
 Tentacle (The Whisperer)		excluded title	
 Thakkrad Sigmundson	v2	excluded location/version	Neitiznot
-The Fisher King		temporary (lead text)	During the quest
+The Fisher King		excluded title	
 The Great Guardian		excluded location/version	Temple of the Eye
 The Illusive		instance map	10048
 The Leviathan?		excluded title	
-The Monkey's Uncle		temporary (lead text)	during the quest
 The Nightmare		excluded title	
 The Sage (Grid Master)		area-owned square	0,3223,3214 event_sage
 The Sage (Raging Echoes League)		area-owned square	0,3223,3214 league_sage_multi
@@ -1337,7 +1287,7 @@ Thias Leacke		special/runtime ids only	vm_archaeologist4_npc_dummy
 Thing under the bed		cache name mismatch	wom_bed_inactive
 Thomas		cache name mismatch	gathering_event_flowering_tree_bush_col07,poh_whisperer_pet
 Thorgel	v1	instance map	10113
-Thorvald the Warrior		temporary (lead text)	During the quest
+Thorvald the Warrior	v1	approx centre (polygon)	0,2666,3693
 Thumpy		instance map	10022
 Tim		instance map	10124
 Tin ore (Blast Furnace)		cache name mismatch	blast_furnace_tin_ore
@@ -1349,7 +1299,11 @@ Tornado (Corrupted Gauntlet)		excluded title
 Tornado (The Gauntlet)		excluded title	
 Totem (Phosani's Nightmare)		excluded title	
 Totem (The Nightmare)		excluded title	
-Tower Mage		temporary (lead text)	During the quest
+Tower Mage	v1	quest npc, several places: first pin only	[(1597, 3818), (1573, 3815)]
+Tower Mage	v2	special/runtime ids only	arcquest_towermage2
+Tower Mage	v3	special/runtime ids only	arcquest_towermage3
+Tower Mage	v4	special/runtime ids only	arcquest_towermage4
+Tower Mage	v5	special/runtime ids only	arcquest_towermage5
 Town Crier	v7	special/runtime ids only	pmod_town_crier_kingstown_vis
 Trader Crewmember (Sailing, boat)		excluded title	
 Trader Stan	v1	special/runtime ids only	sailing_transport_trader_stan_base
@@ -1376,21 +1330,19 @@ Trader Stan	v6	special/runtime ids only	sailing_transport_trader_stan_portkhazar
 Trader Stan	v7	special/runtime ids only	sailing_transport_trader_stan_portphasmatys
 Trader Stan	v8	special/runtime ids only	sailing_transport_trader_stan_portsarim
 Trader Stan	v9	special/runtime ids only	sailing_transport_trader_stan_shipyard
-Trolley (Saradomin)		temporary (lead text)	during the quest
-Trolley (empty)		temporary (lead text)	during the quest
-Trolley (king)		temporary (lead text)	during the quest
+Trolley (king)		area-owned square	0,3231,3218 garden_trolley
 Tsunami		cache name mismatch	galvek_tsunami
 Tumeken's Warden	v1	excluded location/version	Tombs of Amascut
 Tumeken's Warden	v2	excluded location/version	Tombs of Amascut
 Tutab		special/runtime ids only	mm_tutab
-Tyras guard (Catapult)		temporary (lead text)	During the quest
+Tyras guard (Catapult)		special/runtime ids only	regicide_tyras_lazy_guard_vis
 Ueman, Teoki of Ralos		excluded location/version	Fortis Colosseum
-Ug		temporary (lead text)	during the quest
 Ulfric		instance map	10026
 Ulifed	v2	special/runtime ids only	forget_cutscene_sitting
 Ulsquire Shauncy	v2	cache name mismatch	ulsquire_shauncy_afflicted
-Undead Hero		temporary (lead text)	during the quest
-Undead tree		temporary (lead text)	during the quest
+Undead tree	v1	cache name mismatch	nasty_tree_unchoppable
+Undead tree	v2	cache name mismatch	nasty_tree_choppable
+Undead tree	v3	cache name mismatch	nasty_tree_swamp
 Undor		excluded location/version	Wintertodt Camp
 Unicorn (Underground Pass)		instance map	10166
 Upset easter egg hunter		excluded title	
@@ -1401,26 +1353,22 @@ Vampyre Juvinate (Daeyalt essence mine)	v1	instance map	10038
 Vampyre Juvinate (Daeyalt essence mine)	v2	instance map	10038
 Vampyre Juvinate (Meiyerditch mine)	v1	instance map	10107
 Vampyre Juvinate (Meiyerditch mine)	v2	instance map	10107
-Vanligga Gastfrihet		temporary (lead text)	during the quest
 Vannaka	v2	excluded location/version	Tutorial Island
 Vardorvis' Head		excluded title	
 Veliaf Hurtz	v2	special/runtime ids only	myq6_veliaf_postquest_vis
 Veliaf Hurtz	v3	excluded location/version	Crombwick Manor
-Veos		temporary (lead text)	during the quest
 Vertida Sefalatis		quest npc, several places: first pin only	[(3599, 9611)]
 Viggora		cache name mismatch	secret_ghost_swordsman
 Villa Guard		quest npc, several places: first pin only	[(1454, 2933)]
 Vincens		special/runtime ids only	mag_vincens_vis
 Wagchin		instance map	10122
-Wanderer		temporary (lead text)	During the quest
 Warmhandz		cache name mismatch	farming_tools_leprechaun_draynor
 Warrior (Deadman: All Stars)		excluded title	
 Watchman (Draynor bank robbery)		temporary (lead text)	during the cutscene
 Wave (Tombs of Amascut)		excluded title	
-Waymottin		temporary (lead text)	during the quest
+Waymottin	v1	instance map	10014
 Wayne (2021 Christmas event)		excluded title	
 Weasel (Deadman: All Stars)		excluded title	
-Werewolf (Darkmeyer)		temporary (lead text)	during the quest
 Whirlpool (random event)		excluded title	
 White Chisel Director	v2	excluded location/version	Keldagrim
 Wilfred		area-owned square	0,3227,3246 wilfred
@@ -1431,33 +1379,28 @@ Winter Soldier		excluded location/version	Wintertodt Camp
 Wintertoad		excluded location/version	Wintertodt Camp
 Wise Old Man (2017 Christmas event)		excluded title	
 Wise Old Man (2022 Birthday event)		excluded title	
-Witch		temporary (lead text)	During the quest
-Witchaven villager		temporary (lead text)	During the events of
 Wizard (Last Man Standing)		excluded title	
 Wizard (Lost City)		special/runtime ids only	wizardadventuterpg
 Wizard (Watchtower)	v1	special/runtime ids only	qip_watchtower_wizard_02
 Wizard (Watchtower)	v2	special/runtime ids only	qip_watchtower_wizard_03
 Wizard (Watchtower)	v3	special/runtime ids only	qip_watchtower_wizard_04
 Wizard Mizgog	v1	special/runtime ids only	wizard_mizgog_quest
-Wizard Persten		temporary (lead text)	During the events of
+Wizard Persten	v1	excluded location/version	Oasis north of Al Kharid
 Wolf (2022 Pride event)		special/runtime ids only	poh_warden_pet_elidinis
 Woman (2025 Christmas event)		excluded title	
 Woman-at-arms (hard)		cache name mismatch	ramble_hard_fighter
 Wood Dryad		instance map	10055
 Wyson the gardener (2021 Christmas event)		excluded title	
 Xilo		special/runtime ids only	tlati_lost_lover_xilo_vis
-Xocotla		temporary (lead text)	during the quest
 Yadech Strongarm		approx centre (rectangle)	1,2855,3553
 Yellow Fortune Director	v1	approx centre (rectangle)	1,2870,10209
 Yellow Fortune Director	v2	excluded location/version	Keldagrim
 Yellow Fortune Secretary		approx centre (rectangle)	1,2870,10209
-Yellow Sheep		temporary (lead text)	during the quest
+Yellow Sheep	v1	quest npc, several places: first pin only	[(2610, 3391), (2612, 3391), (2611, 3390)]
 Yolotli, Teoki of Ralos		approx centre (rectangle)	0,1581,3277
 Yorkie (wandering)	v1	approx centre (rectangle)	0,3124,2412
 Yorkie (wandering)	v2	cache name mismatch	yorkie_shelter
 Ysgawyn		special/runtime ids only	sote_ysgawyn_vis,sote_ysgawyn_cutscene,sote_ysgawyn_cutscene_run
-Zaff		temporary (lead text)	During the quest
-Zandar Horfyre		temporary (lead text)	during the quest
 Zebak		excluded location/version	Tombs of Amascut
 Zebak's Tail		excluded location/version	Tombs of Amascut
 Zeke (2021 Birthday event)		excluded title	
@@ -1465,7 +1408,6 @@ Zombie (2005 Halloween event)		excluded title
 Zombie (Surprise Exam)		instance map	10145
 Zombie Head (2005 Halloween event)		excluded title	
 Zombie Pirate (Sailing beta)		excluded title	
-Zombie monk		temporary (lead text)	during the quest
 Zooknock	v1	instance map	10014
 Zuma		special/runtime ids only	zuma_teomat_vis
 'Beedy-eye' Jones		spawned	lunar_pirate_generic_pirate_7 1_34_59_48_27
@@ -1475,6 +1417,7 @@ Zuma		special/runtime ids only	zuma_teomat_vis
 'Black-eye'		spawned	tol_npc_builder01 0_41_50_22_28
 'Currency' The Alchemist		spawned	tol_npc_mage02_multi 0_41_50_25_28
 'Eagle-eye' Shultz		spawned	lunar_pirate_lookout 2_34_59_49_37
+'Gummy'		spawned	tol_npc_builder03 0_41_50_23_28
 'Lecherous' Lee		spawned	lunar_pirate_generic_pirate_9 3_34_59_49_14
 'No fingers'		spawned	tol_npc_builder02 0_41_50_20_23
 'Picarron' Pete		spawned	lunar_pirate_generic_pirate_1 1_34_59_47_23
@@ -1530,6 +1473,7 @@ Ali the Guard		spawned	ali_the_guard_multinpc 0_51_49_41_62
 Ali the Hag		spawned	feud_hag_multi 0_52_46_17_43
 Ali the Kebab seller		spawned	feud_kebabman_multi 0_52_46_26_31
 Ali the Leaflet Dropper		spawned	ali_leaflet_dropper 0_51_52_20_0
+Ali the Mayor		spawned	feud_mayor 0_52_46_40_27
 Ali the Operator		spawned	feud_egyptian_minder_multi 0_52_46_6_13
 Ali the Smith		spawned	ali_the_smith_multinpc 0_51_49_41_62
 Ali the Snake Charmer		spawned	feud_snakecharmer_multi 0_52_46_27_9
@@ -1564,12 +1508,15 @@ Angus		spawned	wyrmscraig_villager_2 0_40_35_17_18
 Anita		spawned	grandtree_anita 1_37_54_22_58
 Anleif		spawned	vc_dwarf_poor4 0_30_73_28_40
 Anna		spawned	kr_multi_murderer 0_42_54_49_10
+Anna Jones		spawned	surok_annajones 0_51_54_22_13
 Anne Isaakson		spawned	frisb_n_pesant_f 0_36_59_19_17
 Annette		spawned	fossil_mermaid_driftnets 1_58_160_26_61
 Antonia		spawned	sunset_coast_to_aldarin_sailor 0_23_46_23_41
 Antos		spawned	soc_antos 0_20_152_57_26
 Anwen		spawned	prif_silk 0_51_95_16_15
 Apprentice		spawned	arabian_sorceress_apprentice 0_51_49_57_3
+Apprentice Felix		spawned	tote_felix_wizard_tower_parent 2_48_49_37_24
+Apprentice Tamara		spawned	tote_tamara_wizard_tower_parent 2_48_49_37_24
 Apprentice workman		spawned	falador_workman_young 1_46_52_30_44
 Aranei (venator breeding grounds)		spawned	slayer_venator_guardian 0_40_121_22_24
 Aranei (venator breeding grounds)		spawned	slayer_venator_guardian 0_39_121_25_17
@@ -1605,6 +1552,7 @@ Assistant Le Smith		spawned	zep_multi_assistant_gno 0_38_54_47_3
 Assistant Le Smith		spawned	mm2_le_smith_pos1_multi 2_43_43_8_34
 Assistant Serf		spawned	zep_multi_assistant_varr 0_51_54_35_24
 Assistant Stan		spawned	zep_multi_piccard 0_45_53_57_30
+Atza		spawned	afl_atza 0_26_47_33_56
 Aub		spawned	farming_gardener_tree_7 0_21_51_22_57
 Auctioneer		spawned	darkm_auctioneer 0_56_52_8_17
 Audmann		spawned	dwarf_city_dwarf_man11 0_44_159_50_32
@@ -1687,6 +1635,7 @@ Bear Cub (Prifddinas)		spawned	prif_gee 0_33_52_58_41
 Bedabin Nomad Guard		spawned	bedabin_guard 0_49_47_36_20
 Bedread the bold		spawned	lunar_pirate_generic_pirate_2 1_34_59_49_22
 Bees!		spawned	macro_beekeeper_bees 0_30_78_7_52
+Beggar		spawned	lake_beggar 0_47_50_6_47
 Beigarth		spawned	royal_fremennik_teen4 0_40_160_11_37
 Bellemorde		spawned	vc_bellemorde 0_47_50_10_33
 Belona		spawned	mguild_rewardseller 0_47_151_10_59
@@ -1716,10 +1665,12 @@ Blackjack seller		spawned	feud_black_jack_seller_multi 0_52_46_22_27
 Blacksmith (Tal Teklan)		spawned	scrambled_blacksmith 0_18_48_57_37
 Blaec		spawned	handsand_blaec 0_38_69_8_28
 Blandebir		spawned	blandebir 1_45_159_36_18
+Blanin		spawned	makinghistory_blanin 0_41_57_50_22
 Blasidar the sculptor		spawned	dwarf_city_shop_sculpture 0_45_159_27_29
 Blaze		spawned	dogq_puppy_one_multi_shelter 0_47_54_31_2
 Blue Opal Director		spawned	dwarf_city_director_blue_opal 1_44_159_54_27
 Blue Opal Secretary		spawned	dwarf_city_secretary_blue_opal 1_44_159_53_29
+Blue Sheep		spawned	herder_plaguesheep_3_enclosure 0_40_52_1_62
 Blurberry		spawned	blurberry 1_38_54_51_33
 Bob (Mahogany Homes)		spawned	con_contract_client_1 0_50_54_37_28
 Bob (cat)		spawned	death_growncat_black_sophanem 0_45_55_44_45
@@ -1767,6 +1718,7 @@ Burkor		spawned	aluft_gnomeknight 0_37_54_53_15
 Burntmeat		spawned	eadgar_troll_chief_cook 0_45_157_29_40
 Burntof		spawned	bim_burntof_pub 0_53_45_54_23
 Butterfly (troll)		spawned	my2arm_sentry_butterfly_fakespectator 0_44_61_44_32
+Cabin Boy Colin		spawned	corscurs_cabinboy_sick 0_39_44_61_41
 Cabin boy		spawned	lunar_pirate_cabin_boy 0_32_61_39_20
 Caius		spawned	varlamore_thieving_house_owner_3 0_25_48_36_50
 Caleb		spawned	caleb_fitzharmon 0_44_53_3_59
@@ -1801,6 +1753,7 @@ Captain Maclean		spawned	red_rock_captain 0_43_39_45_13
 Captain Magoro		spawned	zeah_magoro 0_23_53_33_9
 Captain Ninto		spawned	aluft_pilot_ninto 0_44_154_53_21
 Captain Pudi		spawned	tempoross_lobby_host 0_49_44_17_24
+Captain Rachelle		spawned	zeah_general_central 0_24_57_7_38
 Captain Rimor		spawned	raids_temple_captain 0_19_55_18_52
 Captain Sdiar		spawned	zeah_raids_captain 0_22_55_12_20
 Captain Shanks		spawned	captain_shanks 0_43_46_9_12
@@ -1860,7 +1813,9 @@ Charles (Fossil Island)		spawned	fossil_charles 0_58_59_25_45
 Charles Charlington		spawned	fossil_swamp_corrupted_archaeologist 0_57_58_7_33
 Charlie		spawned	eaglepeak_zookeeper_charlie 0_40_51_46_0
 Charlie (prisoner)		spawned	grandtree_charlie_multi 3_38_54_32_39
+Charlie the cook		spawned	charlie_the_cook 0_43_49_37_56
 Chase		spawned	dogq_chase_multi 0_47_54_29_1
+Checkal		spawned	bim_checkal_barb 0_53_45_54_23
 Cheerleader		spawned	gnomecheerleader 0_37_54_29_39
 Chemist		spawned	chemist 0_45_50_52_10
 Cheryl		spawned	zeah_dock_passenger_02 0_28_57_26_36
@@ -1893,6 +1848,7 @@ Col. O'Niall		spawned	slug2_oniall 0_42_51_52_46
 Commander Veldaban		spawned	dwarf_city_black_guard_leader 0_44_159_12_40
 Commissioner Anwar		spawned	shayzien_commissioner 0_23_55_58_47
 Competition Judge		spawned	ranging_guild_competition_judge 0_41_53_48_26
+Constantinius		spawned	doti_constantinius_downstairs 0_22_45_41_52
 Construction Worker		spawned	varlamore_wyrm_agility_worker 0_25_45_39_43
 Conwenna		spawned	prif_singer2_multi 0_50_94_38_51
 Cook (Jolly Boar Inn)		spawned	fai_varrock_jollyboar_chef 0_51_54_21_33
@@ -1902,10 +1858,14 @@ Corgi (wandering)		spawned	corgi_wander_multi 0_40_51_53_52
 Corkat quo Sihar		spawned	kahlith_mystic_1 0_20_59_22_30
 Cormac		spawned	cormac 0_40_35_16_13
 Cornelius		spawned	burgh_potential_bank_teller_multinpc 0_54_50_38_11
+Corporal Breiman		spawned	wotw_soldier_lands_end_1 0_23_53_44_48
+Corporal Campter		spawned	wotw_soldier_lands_end_2 0_23_53_39_37
 Costumed child		spawned	hw22_costumed_child_1 0_49_53_63_41
 Council workman		spawned	vt_council_workmen 0_41_56_30_9
+Councillor Catherine		spawned	current_affairs_councillor 0_44_53_9_62
 Councillor Halgrive		spawned	vc_partyguests_councillor_halgrive 0_40_51_57_36
 Cowardly Bandit		spawned	feud_arabian_guard_coward 0_52_46_32_56
+Cozyac		spawned	doti_cozyac_downstairs 0_22_45_40_54
 Crab (Mos Le'Harmless)		spawned	harmless_island_crab 0_59_47_0_35
 Crab (Prifddinas)		spawned	prif_ry 0_51_94_38_27
 Crate goblin		spawned	dorgesh_male_patrol1 0_42_82_45_26
@@ -1944,9 +1904,11 @@ Dark wizard (Great Kourend)		spawned	arceuus_darkwizard_reading 0_25_58_48_11
 Darren (Piscarilius)		spawned	zeah_dock_passenger_05 0_28_57_15_42
 Dartog		spawned	dttd_maze_guide 0_50_150_46_48
 Darve		spawned	dorgesh_khazard_bodyguard 3_42_81_19_55
+Davey		spawned	deal_davey 1_33_79_20_44
 David (Fossil Island)		spawned	fossil_david_camp 0_58_59_23_39
 David (Varrock Museum)		spawned	vm_fossil_expert 0_25_77_31_47
 Death (NPC)		spawned	death_office_death 0_49_89_44_31
+Debra		spawned	slepe_poor_woman1_noop 0_57_51_61_48
 Declan		spawned	wyrmscraig_clothier 0_40_35_13_2
 Delf		spawned	port_roberts_ore_trader 0_29_51_5_31
 Demon butler		spawned	league_butler 0_41_52_43_4
@@ -1969,6 +1931,7 @@ Dipflip		spawned	lotg_dipflip 0_58_67_20_14
 Diphylla Bechstein		spawned	diphylla_bechstein 0_56_52_60_50
 Disciple of Yama		spawned	disciple_of_yama_entrance 0_22_57_30_19
 Disciple of Yama		spawned	disciple_of_yama_cavern 2_22_157_48_28
+Dishop Dennis		spawned	anl_dishop_dennis_multi 0_20_58_18_11
 Dobwinkle		spawned	zeah_dock_passenger_12 0_27_57_54_34
 Dock worker		spawned	piscarilius_dockworker_repair 0_28_58_41_46
 Dock worker		spawned	piscarilius_dockworker_repair 0_28_58_39_25
@@ -1981,6 +1944,7 @@ Dog (Museum Camp)		spawned	fossil_dog_tray 0_58_59_27_29
 Dog (Myths' Guild)		spawned	myths_guild_dog 0_38_44_24_33
 Dog (NPC)		spawned	dog 0_47_51_10_27
 Dominicus, Teoki of Ranul		spawned	auburn_teoki_ranul 0_22_51_28_59
+Don		spawned	slepe_poor_man2_noop 0_57_51_61_49
 Don't Know What		spawned	my2arm_dontknowwhat_throneroom 0_44_61_49_41
 Donal		spawned	royal_dwarf_drunk 0_39_160_33_17
 Dondakan the Dwarf		spawned	dwarfrock_multi_dondakan 0_44_158_8_56
@@ -2002,6 +1966,7 @@ Dreven		spawned	farming_gardener_bush_1 0_49_52_47_28
 Drew		spawned	grinder_drew 0_49_45_16_29
 Driftwood		spawned	my2arm_sentry_driftwood_background 0_45_61_8_20
 Drill Sergeant		spawned	shayzien_exercise_commander 0_23_56_38_63
+Droalak		spawned	makinghistory_droalak_multi 0_57_54_11_19
 Dromund		spawned	dwarf_city_excentric_dwarf 0_44_159_22_48
 Dromund's cat		spawned	dwarf_city_guarding_cat 0_44_159_20_50
 Dron		spawned	makinghistory_dron 0_41_57_35_53
@@ -2029,6 +1994,7 @@ Dwarf (train station)		spawned	slice_dwarf1 0_38_86_53_31
 Dwarf (train station)		spawned	slice_dwarf4 0_38_86_4_22
 Dwarven Boatman		spawned	dwarf_city_boatman_city 0_45_159_8_51
 Dwarven Boatman (ore hauler)		spawned	dwarfrock_multi_gold_boatman 0_44_158_57_54
+Dwarven Engineer		spawned	dwarfrock_engineer1 0_44_159_55_23
 Dwarven Ferryman		spawned	dwarfrock_ferryman1 0_44_158_23_16
 Dwarven Miner		spawned	dwarf_city_dwarf_sack_carrier_full 0_45_159_63_6
 Eadgar		spawned	troll_eadgar 0_45_57_10_29
@@ -2036,6 +2002,8 @@ Eagle		spawned	conch_eagle_winged_land 0_36_54_15_21
 Eagle		spawned	conch_eagle_winged_land 0_36_54_30_39
 Eagle (giant)		spawned	eaglepeak_eagle_guard 3_31_77_23_26
 Earwen		spawned	prif_citizen_earwen 2_51_94_20_26
+Eblis		spawned	fourdiamonds_elder2 0_50_46_14_11
+Eblis		spawned	fourdiamonds_elder 0_49_46_50_40
 Ecatl		spawned	ic_ecatl 0_21_47_46_35
 Ed		spawned	wint_cluehunter 0_24_61_42_47
 Ed		spawned	prif_ed 0_33_53_54_25
@@ -2055,6 +2023,7 @@ Elder Katt		spawned	tortugan_grove_guardian 0_49_38_60_34
 Elder Kelmo		spawned	slayer_gryphon_guardian 0_50_138_40_52
 Elder Korel		spawned	tt_korel_pearl_combat 0_52_34_25_30
 Elder Krill		spawned	tortugan_krill 0_49_37_27_49
+Elder Raley		spawned	tt_raley_conch 0_49_37_51_36
 Elder Reggle		spawned	tortugan_reggle 0_50_38_51_36
 Elder Root		spawned	tt_pearl_elder_2 0_52_34_34_36
 Elder Torgan		spawned	tortugan_torgan 0_49_37_7_55
@@ -2080,6 +2049,8 @@ Elnes		spawned	lovakengj_minecart_tithe_farm 0_28_54_15_23
 Elsie		spawned	varrock_granny_2 1_50_54_55_32
 Elstan		spawned	elstan 0_47_51_45_41
 Eluned		spawned	roving_female_woodelf_temp 0_34_49_30_22
+Elven Scout		spawned	roving_bowyer 0_35_49_51_11
+Elven Scout		spawned	roving_update_female_woodelf 0_35_50_20_13
 Emblem Trader		spawned	bh_emblem_trader 0_53_63_27_33
 Emblem Trader		spawned	emblem_trader 0_49_54_27_48
 Emblem Trader		spawned	emblem_trader 0_48_54_24_47
@@ -2117,6 +2088,7 @@ Etz		spawned	soc_etz_multi 1_21_52_37_32
 Eve		spawned	slayer_bluedragons_guardian 1_45_153_26_23
 Evil Dave		spawned	hundred_dave_frozen 0_48_154_8_34
 Ewesey		spawned	hosidius_servery_chef 0_25_56_46_43
+Examiner		spawned	examiner 0_52_52_36_14
 Ezco, Teoki of Ranul		spawned	proudspire_teoki_ranul 0_24_51_47_10
 Ezekial Lovecraft		spawned	slug2_lovecraft 0_42_51_46_28
 Faaid		spawned	menaphos_faaid 0_49_43_44_33
@@ -2147,10 +2119,12 @@ Fat Rocco		spawned	fairy_henchman2_multi 0_38_69_14_15
 Father Badden		spawned	agrith_badden_walking 0_54_48_27_18
 Father Eysseric		spawned	shayzien_church_father 0_23_55_25_43
 Father Jean		spawned	hosidius_cleric 0_27_55_6_56
+Father Reen		spawned	agrith_reen_walking 0_51_49_8_23
 Feanor		spawned	prif_citizen_feanor 0_50_94_38_35
 Felfiz Yaryus		spawned	farming_guild_anima_gardener 0_19_58_14_13
 Felix		spawned	tlati_stranded_man 0_19_46_22_55
 Felkrash		spawned	vc_felkrash_the_bard 0_46_150_33_39
+Femi		spawned	grandtree_femi 0_38_52_28_54
 Ferain		spawned	lovakengj_minecart_farming_guild 0_19_58_3_25
 Ferd		spawned	royal_dwarf_miner2 0_39_160_12_39
 Ferox		spawned	wildy_hub_chief 0_48_56_56_52
@@ -2165,6 +2139,7 @@ Fingon		spawned	prif_citizen_fingon 0_51_95_52_25
 Finn (tortugan)		spawned	tortugan_finn 0_49_37_60_32
 Fior		spawned	vc_dwarf_poor2 0_30_73_12_29
 Fiora		spawned	pandemonium_fiora 0_47_46_38_33
+First mate 'Davey-boy'		spawned	lunar_pirate_first_mate 2_34_59_49_14
 Fisherman (Fishing Platform)		spawned	fishplatform1 0_43_51_26_27
 Fisherman (Fishing Platform)		spawned	fishplatform1 0_43_51_18_20
 Fisherman (Fishing Platform)		spawned	fishplatform1 0_43_51_23_20
@@ -2176,6 +2151,7 @@ Fisherman (Fishing Platform)		spawned	fishplatform1 1_43_51_33_20
 Fisherman (Fishing Platform)		spawned	fishplatform1 1_43_51_21_18
 Fisherman (Fishing Platform)		spawned	fishplatform1 1_43_51_35_16
 Fisherman (Fishing Platform)		spawned	fishplatform1 1_43_51_32_13
+Fisherman (Holy Grail)		spawned	grail_fisherman 0_43_73_50_34
 Fisherman (Port Piscarilius)		spawned	piscarilius_fisherman 0_28_58_30_58
 Fisherman (Rellekka)		spawned	viking_fisherman1 0_41_57_18_51
 Fisherman Frodi		spawned	misc_fisherman 0_40_60_17_12
@@ -2455,6 +2431,8 @@ Flotsam		spawned	crab_flotsam_multi 0_47_41_40_8
 Flower Girl		spawned	misc_flowergirl 0_39_60_19_27
 Fly trap		spawned	flytrap 0_43_49_3_20
 Forebearer Honos		spawned	vmq3_temple_cultist_pedestal 0_26_50_4_41
+Forebearer Janus		spawned	vmq3_tower_twilight_foreman_trials 0_25_50_38_25
+Forebearer Janus		spawned	vmq4_janus_house_janus 0_25_48_47_21
 Forester (McGrubor's Wood)		spawned	mcgruborforester 0_41_54_26_12
 Fornek quo Maten		spawned	kahlith_hunter_1 0_20_59_23_44
 Fossegrimen		spawned	viking_lake_spirit 0_41_56_3_15
@@ -2506,6 +2484,7 @@ Garv		spawned	garv 0_43_49_22_50
 Gary Gilbert		spawned	lanscape_finale_shop_npc 0_48_56_56_41
 Gatekeeper		spawned	fairy_mindslayer 0_38_69_36_20
 Gatekeeper		spawned	fairy_mindslayer_guard_multi 0_37_68_33_26
+Gauss		spawned	dwarf_city_dwarf_man6 0_44_159_23_19
 Gelmir		spawned	prif_citizen_gelmir 0_50_94_47_61
 Gem (Clan Hall)		spawned	clan_hall_bartender_1 0_27_85_30_39
 Gem merchant		spawned	vc_partyguests_gem_merchant 0_44_79_26_35
@@ -2572,6 +2551,8 @@ Gourmet		spawned	dorgesh_gourmet_male2 0_42_83_30_1
 Grail Maiden		spawned	grail_maiden 0_41_73_7_5
 Green Gemstone Director		spawned	dwarf_city_director_green_gemstone 1_45_159_14_34
 Green Gemstone Secretary		spawned	dwarf_city_secretary_green_gemstone 1_45_159_10_36
+Green Sheep		spawned	herder_plaguesheep_2_enclosure 0_40_52_38_33
+Green Sheep		spawned	plaguesheep_2 0_40_52_61_39
 Greengrocer		spawned	etc_veg_monger 0_40_60_40_35
 Gregory		spawned	port_roberts_fish_trader 0_29_51_5_28
 Greldo		spawned	greldo 0_47_54_22_51
@@ -2620,7 +2601,10 @@ Guard Captain (Civitas illa Fortis)		spawned	fortis_barracks_captain 0_25_149_42
 Guard Vemmeldo		spawned	gnome_bank_guard 1_38_53_14_25
 Guardian mummy		spawned	ntk_mummy_guardian 0_51_43_25_35
 Guidor		spawned	guidor 0_51_52_20_55
+Guild Hunter Fox		spawned	afl_hunter_fox_multi 0_25_46_23_38
 Guild Hunter Kiko		spawned	afl_kiko 0_24_147_16_52
+Guild Scribe Verity		spawned	hg_verity 0_24_147_23_56
+Guildmaster Apatura		spawned	hg_apatura 0_24_47_19_27
 Guildmaster Jane		spawned	farming_guild_master 0_19_58_33_15
 Guildmaster Lars		spawned	wcguild_lars 0_25_54_52_43
 Guilin		spawned	prif_citizen_guilin 0_51_94_11_38
@@ -2762,6 +2746,7 @@ Hannibal		spawned	clan_medieval_stool_cat 0_27_85_20_26
 Hari		spawned	canoeing_hari 0_48_54_60_53
 Haris		spawned	corscurs_resource_guard 0_38_44_49_59
 Harminia		spawned	fortis_gardener 0_24_48_48_28
+Harold		spawned	death_guard_equiproom 1_45_55_25_19
 Harpert		spawned	myq4_harpert 0_56_50_61_9
 Harrallak Menarous		spawned	warguild_harrallak 0_44_55_50_27
 Harvester		spawned	kastori_harvester_01 0_21_47_32_7
@@ -2770,10 +2755,13 @@ Hatius Cosaintus		spawned	hatius_cosaintus 0_46_52_12_48
 Hatna		spawned	lovakengj_minecart_shayzien_wall 0_22_55_7_58
 Hazeel		spawned	hazeel 0_40_151_48_4
 Hazelmere		spawned	grandtree_hazelmere_multi 1_41_48_54_14
+Head Butler		spawned	doti_headbutler 0_22_45_37_60
+Head Guard (Fight Arena)		spawned	arena_guard2 0_40_49_56_8
 Head chef		spawned	head_chef 0_49_53_7_57
 Hegir		spawned	dwarf_city_old_dwarf1 0_44_159_35_49
 Helena		spawned	burgh_villager_child4 0_54_50_27_10
 Helga		spawned	misc_etc_woman_1 0_40_60_54_42
+Hell-Rat		spawned	hundred_dave_hellrat 0_48_154_3_24
 Hell-Rat Behemoth		spawned	hundred_dave_bigrat 0_48_154_6_45
 Hell-Rat Behemoth		spawned	hundred_dave_bigrat 0_47_154_62_25
 Helvia		spawned	fortis_palace_advisor 0_26_49_17_36
@@ -2825,7 +2813,6 @@ Iffie		spawned	varrock_granny_1 0_50_53_6_24
 Ignatius Vulcan		spawned	skillcapes_firemaster 0_42_53_32_38
 Ileana		spawned	burgh_vilager_5 0_54_50_57_30
 Ilfeen		spawned	roving_update_female_woodelf 0_34_50_48_11
-Ilfeen		spawned	roving_update_female_woodelf 0_35_50_20_13
 Ima		spawned	duel_crowdmale1 0_52_50_1_27
 Imiago		spawned	farming_gardener_calquat 0_43_48_45_30
 Imin		spawned	prif_citizen_imin 0_51_95_23_52
@@ -2901,13 +2888,16 @@ Julie		spawned	guidors_wife 0_51_52_17_54
 Jumaane		spawned	mm2_monkey_banker 0_43_43_29_32
 Jungle forester		spawned	jungleforester_m 0_44_45_34_60
 Junior Jim		spawned	junior_jim 0_47_46_50_35
+KGP Agent		spawned	peng_multi_kgp 1_41_62_16_41
 Kaal-Ket-Jor		spawned	tasakaal_ket 0_20_159_32_34
 Kaal-Mej-San		spawned	tasakaal_mej 0_20_159_28_30
 Kaal-Xil-Dar		spawned	tasakaal_xil 0_20_159_36_30
+Kael Forshaw		spawned	myq4_kael 0_56_150_40_30
 Kai		spawned	wcguild_kai 0_24_154_58_44
 Kaiquir		spawned	canoeing_kaiquir 0_39_53_31_16
 Kali		spawned	mm_lab_tech_06 0_21_145_44_46
 Kalko		spawned	cam_torum_citizen_drunk_2 1_22_149_21_49
+Kamen		spawned	sote_kamen 0_38_95_21_7
 Kamfreena		spawned	warguild_kamfreena 2_44_55_28_20
 Kanel		spawned	kanel 0_49_53_18_16
 Kangai Mau		spawned	kangai_mau 0_43_49_39_47
@@ -2916,12 +2906,17 @@ Karam		spawned	mm_karam 0_42_43_26_40
 Karim		spawned	kebab_seller 0_51_49_10_45
 Karl		spawned	dwarf_city_dwarf_man5 0_45_159_21_51
 Kaston		spawned	shayzien_dwarf 0_23_56_26_9
+Kathy Corkat		spawned	swan_boat_boatwoman 0_37_54_1_30
+Kathy Corkat		spawned	swan_boat_boatwoman 0_36_56_53_56
 Kauayotl		spawned	scrambled_kings_man_2_village 0_19_48_34_34
 Kazgar		spawned	lost_tribe_guide 0_50_150_30_11
 Kebba		spawned	tortugan_kebba 0_47_46_22_40
 Keith		spawned	kebos_farmer_1 0_20_58_16_11
 Kelvin		spawned	fightslave_kelvin 0_40_49_29_8
+Kelyn		spawned	sote_lady_ithell_village 1_36_49_44_36
 Kendall		spawned	kourend_wayfarer3 0_26_57_36_38
+Kennith		spawned	kennith_land 0_42_51_23_19
+Kent		spawned	kent_land 1_42_51_23_19
 Ket'sal K'uk		spawned	molch_altar_shaman 0_18_56_27_44
 Key Master		spawned	keeper_of_keys 0_20_19_30_35
 Khazard Barman		spawned	khazard_barman 0_40_49_8_8
@@ -2947,6 +2942,7 @@ Knight of Varlamore (Children of the Sun)		spawned	vmq1_knight_4 0_26_48_58_2
 Knight of Varlamore (Children of the Sun)		spawned	vmq1_knight_6 0_28_148_12_50
 Knight of Varlamore (Kourend Castle)		spawned	varlamore_sun_knight_parent 1_25_57_8_26
 Koanee		spawned	tempoross_koanee 0_49_44_33_40
+Koftik		spawned	caveguide7 1_31_73_28_41
 Konar quo Maten		spawned	slayer_master_8 0_20_59_29_9
 Konoo		spawned	hosidius_saltpetre_miner 0_26_55_39_8
 Korgan		spawned	deepfin_dwarf_korgan 0_30_43_26_10
@@ -2957,6 +2953,7 @@ Kragen		spawned	kragen 0_41_52_43_47
 Kragin		spawned	rubium_miner 0_41_138_61_18
 Kruk		spawned	mm_kruk_multi 0_42_43_41_13
 Krystilia		spawned	slayer_master_7 0_48_54_37_60
+Kurt		spawned	slepe_poor_man1_noop 0_57_51_61_48
 Kyle		spawned	wotw_forester 0_22_56_44_45
 Lady Carys Hefin		spawned	sote_lady_hefin_upass 0_50_95_47_46
 Lady Crombwick		spawned	slepe_posh_woman1 0_58_51_29_51
@@ -2965,6 +2962,7 @@ Lady Nadezhda Shadum		spawned	lady_shadum 1_56_52_28_12
 Lady Table		spawned	rd_observer_room_2 0_38_77_26_53
 Lady Tangwen Trahaearn		spawned	sote_lady_trahaearn_upass 0_51_94_17_24
 Lahsram		spawned	slepe_posh_man2 0_58_51_37_35
+Laidee Gnonock		spawned	warguild_laidee_multi 0_44_55_63_27
 Lalli		spawned	viking_lalli_troll 0_43_56_20_38
 Lammy Langle		spawned	farming_gardener_spirit_tree_4 0_26_55_29_22
 Lan the Butcher		spawned	kw_butcher_lan 0_23_53_27_31
@@ -2978,6 +2976,7 @@ Launa		spawned	soulbane_launa_multi 0_51_53_45_61
 Lauretta		spawned	tempoross_lauretta 0_49_44_19_3
 Lavinia		spawned	varlamore_thieving_house_owner_1 0_26_48_7_20
 Layleen		spawned	tbwcu_layleen_multinpc 1_43_48_35_4
+Lazim		spawned	enakh_lazim_statue_east_multinpc 0_49_45_55_46
 Le-sabrè		spawned	lesabre_mort_diary 0_54_54_9_22
 League Navigator		spawned	league_navigator 0_23_50_14_34
 League Navigator		spawned	league_navigator 0_18_53_46_58
@@ -2986,6 +2985,7 @@ Lector Gura		spawned	slepe_lector 0_58_51_27_41
 Leech display		spawned	vm_natural_history_display_case_leech 0_27_77_14_36
 Leela (Mahogany Homes)		spawned	con_contract_client_10 0_27_56_56_6
 Leff		spawned	tortugan_leff 0_49_37_39_20
+Legends' Guard		spawned	legends_guild_guard1 0_42_52_38_21
 Lenny		spawned	prif_lenny 0_35_52_61_53
 Lensa (Jatizso)		spawned	frisd_izso_viking_woman2 0_37_59_47_32
 Lenwe		spawned	prif_citizen_lenwe 2_51_95_20_23
@@ -3016,6 +3016,7 @@ Lola		spawned	varlamore_dog_lola 0_27_47_19_41
 Longbow Ben		spawned	sarim_pub_drinker_2 0_47_50_39_58
 Longhall Bouncer		spawned	viking_longhall_bouncer 0_41_57_34_16
 Look-out		spawned	shayzien_northern_guardian 0_25_60_24_40
+Lord Alexei Jovkai		spawned	lord_jovkai 0_56_51_27_55
 Lord Baxtorian Cadarn		spawned	lord_cadarn 0_51_94_42_50
 Lord Daquarius		spawned	lord_daquarius 0_45_151_12_16
 Lord Iestin Iorwerth		spawned	lord_iorwerth_new 0_50_94_47_24
@@ -3052,6 +3053,7 @@ Lyra		spawned	lyra 0_56_55_16_4
 Mac		spawned	mac 0_43_55_40_20
 Macaroni Penguin		spawned	macaroni_penguin 0_40_61_12_5
 Mad skavid		spawned	mad_skavid 0_39_147_27_3
+Madame Caldarium		spawned	corscurs_spa_owner 0_39_44_57_52
 Madison		spawned	port_roberts_madison 0_29_51_52_50
 Maeglin		spawned	prif_citizen_maeglin 0_51_95_34_2
 Mag		spawned	tortugan_mag 0_49_37_40_43
@@ -3104,11 +3106,13 @@ Matthias		spawned	hunting_npc_falconer 0_37_56_6_20
 Mattimeo		spawned	fossil_twitcher 0_58_59_49_50
 Mawnis Burowgar		spawned	fris_r_burgher 0_36_59_31_23
 Mawrth		spawned	mourning_town_elf_4 0_36_49_26_31
+Mayor Hobb		spawned	slug2_hobb 0_42_51_23_28
 Maz		spawned	maz 0_57_60_55_12
 Mazion		spawned	handsand_naziom 0_44_52_1_15
 Meddwl Ymlaen Llaw		spawned	gwenith_elf_2 0_35_53_42_51
 Meegle		spawned	aluft_gnome_terrorbird_trainer 0_37_53_7_45
 Megan		spawned	partyroom_barmaid 1_47_52_38_46
+Meiyerditch citizen		spawned	myq3_citizen_male_old_1 0_56_51_53_11
 Meiyerditch miner		spawned	myreque_pt3_miner1 2_37_72_24_18
 Mekritus A'hara		spawned	myq4_mekritus 0_56_150_50_23
 Melina		spawned	makinghistory_melina_multi 0_57_54_27_25
@@ -3268,9 +3272,11 @@ Nkuku		spawned	elid_villager2 0_53_45_23_57
 Noctillion Lugosi		spawned	noctillion_lugosi 0_56_52_23_34
 Noella		spawned	con_contract_client_6 0_41_51_31_57
 Nomad		spawned	soul_wars_nomad 0_34_44_38_42
+Noodle		spawned	peng_noodle_multi 0_41_62_14_42
 Norman		spawned	falador_man4 1_47_52_28_17
 Nova		spawned	vmq3_recruit_4_joined 0_25_50_63_24
 Novice		spawned	arceuus_novice 1_26_59_36_18
+Nung		spawned	100_pirate_mogre_nung 0_46_148_31_40
 Nurse Boubou		spawned	shayzien_nurse_info 0_23_56_56_43
 Nurse Emma Gentsy		spawned	molch_shay_nurse 0_21_58_30_50
 Nurse Inn'Juree		spawned	shayzien_nurse2 0_23_56_49_37
@@ -3288,6 +3294,7 @@ Odd Old Man		spawned	rag_odd_old_man 0_52_54_32_48
 Odd Stone		spawned	my2arm_sentry_oddstone_fakespectator 0_44_61_53_22
 Odmar		spawned	dwarf_city_dwarf_man10 0_44_159_49_18
 Odovacar		spawned	lotr_banker 0_49_71_59_25
+Og		spawned	og 0_39_48_10_43
 Ogre boat		spawned	100_jubbly_multi_boat_karamja 0_43_48_6_13
 Ogre boat		spawned	100_jubbly_multi_boat_feldip 0_41_46_30_20
 Ogre guard		spawned	ogre_guard 0_39_47_53_21
@@ -3297,6 +3304,8 @@ Okina		spawned	arceuus_bloodguardian 0_26_59_53_54
 Olaf Hradson		spawned	olaf_camp 0_42_58_36_17
 Olaf the Bard		spawned	viking_olaf 0_41_57_49_36
 Olbertus		spawned	hosdun_olbertus 0_28_155_6_31
+Old Man Ral		spawned	sanguinesti_old_man_ral 0_56_50_23_8
+Old Man Yarlo		spawned	daddyshome_daddy 0_50_53_39_3
 Old dwarf		spawned	lova_tinker 0_22_59_4_33
 Old man (Shayzien)		spawned	shayzien_oldman 0_23_55_38_31
 Oldak		spawned	dorgesh_oldak 0_42_83_16_54
@@ -3333,11 +3342,14 @@ Patrolman		spawned	piscarilius_patrolman_nw_1 0_27_58_20_54
 Patrolman		spawned	piscarilius_patrolman_nw_1 0_27_58_36_34
 Patrolman		spawned	piscarilius_patrolman_nw_1 0_27_58_38_61
 Patrolman		spawned	piscarilius_patrolman_nw_1 0_27_58_16_15
+Patzi		spawned	doti_patzi 0_22_45_6_57
+Pauline Polaris		spawned	lunar_moonclan_monk1 0_32_61_25_17
 Pavo		spawned	doti_pavo_downstairs 0_22_45_36_50
 Peaceful barbarian spirit		spawned	brut_ascending_spirit 0_39_54_7_42
 Peasant		spawned	unhappy_peasant 0_43_73_13_50
 Peasant		spawned	happy_peasant 0_41_73_13_50
 Pebble		spawned	my2arm_sentry_pebble_background 0_44_61_43_27
+Peer the Seer		spawned	viking_peer 0_41_57_10_20
 Penguin display		spawned	vm_natural_history_display_case_penguin 0_27_77_14_26
 Pennant		spawned	prif_acorn_trader 0_51_95_29_39
 Penwie		spawned	aluft_gnome_explorer_jungle 0_45_46_54_34
@@ -3406,6 +3418,7 @@ Pirate (Mos Le'Harmless)		spawned	fever_pirate_island_01 1_57_46_28_5
 Pirate Jackie the Fruit		spawned	agilityarena_tickettrader 0_43_49_57_57
 Pirate Pete		spawned	deal_pete 0_57_55_32_15
 Polly		spawned	pandemonium_polly 0_47_46_44_25
+Polmafi Ferdygris		spawned	route_polmafi_ferdygris_parent 0_54_153_58_46
 Pong		spawned	peng_pong_instrument2 0_41_162_46_29
 Pontak		spawned	viking_man5 0_41_57_44_5
 Ponts the Bridgemaster		spawned	myths_guild_dungeon_guard 0_30_140_49_28
@@ -3429,6 +3442,7 @@ Port master		spawned	port_task_master_port_sarim 0_33_48_39_51
 Port master		spawned	port_task_master_port_sarim 0_33_52_58_0
 Port master		spawned	port_task_master_port_sarim 0_36_58_4_63
 Port worker		spawned	zeah_dock_worker 0_28_57_8_41
+Pox		spawned	vc_pox 0_51_53_5_8
 Praistan Ebola		spawned	farming_gardener_spirit_tree_3 0_43_50_48_5
 Preacher		spawned	lotg_goblin_preacher 0_58_67_32_31
 Preswylwyr Dall		spawned	gwenith_elf_5 0_34_53_35_22
@@ -3454,6 +3468,7 @@ Professor Manglethorp		spawned	aluft_gnome_inventor 0_44_159_52_22
 Professor Onglewip		spawned	aluft_gnome_mage 0_48_49_37_25
 Prosecutor		spawned	kr_court_prosecutor 0_42_54_48_13
 Prospector Percy		spawned	motherlode_percy 0_48_151_44_34
+Protest Leader		spawned	akd_martin_holt_kingstown 0_26_57_0_22
 Protester		spawned	kourend_protester 0_26_57_3_25
 Puffer Fish		spawned	fossil_puffer_fish_1 1_58_160_59_55
 Puffer Fish		spawned	fossil_puffer_fish_1 1_58_160_40_45
@@ -3465,6 +3480,7 @@ Purple Pewter Secretary		spawned	dwarf_city_secretary_purple_pewter 1_44_159_54_
 Pusskins		spawned	vc_pusskins 0_46_150_16_33
 Pyramid block (Agility Pyramid)		spawned	agility_pyramid_penny_waterfall_npc_north 3_52_44_38_29
 Pyramid block (Agility Pyramid)		spawned	agility_pyramid_penny_waterfall_npc_east 1_52_44_44_31
+Queen Ellamaria		spawned	queen_ellamaria 0_50_54_29_21
 Queen Sigrid		spawned	misc_queen_sigrid 1_40_60_54_36
 Quetzal (NPC)		spawned	hg_quetzal 2_24_47_20_34
 Rabbit (Farming Guild)		spawned	farming_guild_rabbit1 0_19_58_7_37
@@ -3473,6 +3489,7 @@ Rabbit (Farming Guild)		spawned	farming_guild_rabbit2 0_19_58_46_23
 Rabbit (Farming Guild)		spawned	farming_guild_rabbit3 0_19_58_19_13
 Raccoon (Vatrachos Island)		spawned	vatrachos_raccoon 0_29_46_37_42
 Rachael		spawned	boardgames_barmaid2 0_34_77_31_30
+Radigad Ponfit		spawned	route_radigad_ponfit_parent 0_54_153_53_39
 Radimus Erkle		spawned	radimus_erkle_hut 0_42_52_38_40
 Radu		spawned	burgh_vilager_3 0_54_50_54_25
 Raeli		spawned	lovakengj_minecart_piscarilius 0_27_57_33_61
@@ -3513,6 +3530,8 @@ Red Axe Cat		spawned	dwarf_city_evil_cat_multi 1_44_159_54_14
 Red Axe Director		spawned	dwarf_city_director_red_axe_multi 1_44_159_56_13
 Red Axe Secretary		spawned	dwarf_city_secretary_red_axe_multi 1_44_159_53_13
 Red Panda		spawned	prif_west 0_35_53_45_15
+Red Sheep		spawned	herder_plaguesheep_1_enclosure 0_40_52_37_34
+Red Sheep		spawned	plaguesheep_1 0_40_52_49_16
 Reese		spawned	prif_singer1_multi 0_51_94_31_28
 Reeso		spawned	handsand_reeso 0_41_57_45_60
 Ref		spawned	strength_referree1 1_44_55_51_36
@@ -3607,12 +3626,14 @@ Rod Fishing spot (lure, bait)		spawned	0_25_55_freshfish 0_25_55_50_38
 Rod Fishing spot (lure, bait)		spawned	0_20_152_freshfish 0_20_152_43_54
 Rod Fishing spot (lure, bait)		spawned	0_20_152_freshfish 0_20_152_37_57
 Rohak		spawned	hundred_dwarf_dad_multi 0_44_154_49_21
+Rolad		spawned	dwarfrock_rolad 0_47_53_13_60
 Rooster (South Falador Farm)		spawned	farm_rooster 0_47_51_7_28
 Root		spawned	my2arm_sentry_root_background 0_45_61_5_37
 Rory		spawned	warguild_cyclops_pet 0_45_155_28_52
 Rosie		spawned	farming_gardener_farmguild_t2 0_19_58_16_20
 Ross		spawned	con_contract_client_7 0_40_51_54_54
 Ross and Ben		spawned	zeah_dock_passenger_11 0_27_57_52_35
+Rowdy dwarf		spawned	dwarf_city_rowdy_dwarf 0_45_159_36_16
 Roy jr.		spawned	kw_yellow_guy 0_23_54_35_15
 Royal Guard		spawned	kourend_royal_guard_male 0_25_57_14_20
 Ru Merald		spawned	gemstone_crab_director 0_21_48_3_28
@@ -3644,6 +3665,8 @@ Saeros		spawned	prif_citizen_saeros 0_51_94_36_59
 Saeth		spawned	prif_spectator10 0_50_94_47_35
 Safta Doc		spawned	tbwcu_safta_doc_multinpc 0_43_48_39_30
 Sagira		spawned	vc_dwarf_poor3 0_30_73_26_37
+Sailor		spawned	viking_sailor 0_41_57_5_45
+Sailor		spawned	misc_sailor 0_40_60_21_7
 Sailor (Ruins of Unkah)		spawned	tempoross_lobby_character 0_49_44_2_24
 Salgant		spawned	prif_citizen_salgant 0_51_95_6_35
 Salvager		spawned	varlamore_salvager_m_1 0_25_51_46_22
@@ -3763,6 +3786,7 @@ Sister Sevi		spawned	slepe_sister1 0_58_51_27_47
 Sister Soul Jar		spawned	sister_soul_jar 0_28_60_22_14
 Sister Toen		spawned	slepe_sister2 0_58_51_27_56
 Sister Yram		spawned	slepe_sister3 0_57_51_61_48
+Sithik Ints		spawned	zogre_sithik_man 1_40_48_32_32
 Skavid		spawned	skavidtalker1 0_39_147_34_57
 Skeleton (Malignius Mortifer)		spawned	unattackable_skeleton 0_46_51_46_4
 Skeleton mage (Malignius Mortifer)		spawned	unattackable_skeleton_mage 0_46_51_46_4
@@ -3791,6 +3815,7 @@ Sloane		spawned	warguild_sloane 1_44_55_39_33
 Slug Hemligssen		spawned	fris_spymaster 0_36_59_32_35
 Smart-looking dog		spawned	doti_mysterious_dog 0_22_45_33_58
 Smoggy		spawned	lovakengj_charcoal_keeper 0_26_54_54_13
+Smokin' Joe		spawned	vc_smokin_joe 0_45_159_50_37
 Snail display		spawned	vm_natural_history_display_case_snail 0_27_77_46_36
 Snake (The Asp & Snake Bar)		spawned	feud_charmers_snake 0_52_46_27_9
 Snowflake		spawned	my2arm_snowflake_outside 0_44_61_56_31
@@ -3831,6 +3856,7 @@ Spirit Angler (Reward pool)		spawned	tempoross_lobby_pool_watcher 0_49_44_17_15
 Spirit of Scorpius		spawned	spirit_of_scorpius 0_38_50_32_27
 Spirit of Zadimus		spawned	zadimus_ghost 0_43_48_44_17
 Spit goblin		spawned	dorgesh_goblin_frogspit 0_42_82_42_21
+Spria		spawned	slayer_master_9 0_48_51_19_3
 Squire (Camelot)		spawned	kr_squire 2_42_54_62_52
 Squire (Crypt)		spawned	white_knight_crypt_squire 0_46_152_19_7
 Squire (Void Knights)		spawned	pest_squire_ship_portsarim 0_47_50_33_2
@@ -3965,6 +3991,7 @@ Stray dog (Meiyerditch)		spawned	myq3_dog_stray_02 0_56_50_46_61
 Stray dog (Meiyerditch)		spawned	myq3_dog_stray_02 0_56_49_25_50
 Stray dog (pumpkin costume)		spawned	hw24_straydog 0_47_51_28_32
 Stray dog (pumpkin costume)		spawned	hw24_straydog 0_46_50_10_9
+Street urchin		spawned	feud_street_urchin 0_52_46_32_26
 Strong Ronny		spawned	sanctuary_strong_ronny 0_59_153_9_2
 Student		spawned	student1 0_52_53_35_5
 Student		spawned	student3 0_52_53_42_24
@@ -3982,13 +4009,16 @@ Suzie		spawned	tailor_boutique 0_50_54_57_7
 Svidi		spawned	mdaughter_svidi 0_42_57_21_44
 Swamp Priest		spawned	raids_xerician_priest 0_20_56_25_34
 Swamp Toad		spawned	toad 0_37_47_28_41
+Swensen the Navigator		spawned	viking_hallifred 0_41_57_23_12
 Sylas		spawned	grim_sylas 0_45_53_11_62
 Taala		spawned	huey_lobby_leader 0_23_51_56_29
 Taiman		spawned	tempoross_taiman 0_49_44_22_21
 Talia		spawned	dogq_talia 0_47_54_29_1
 Talia (Hosidius)		spawned	hosidius_citykitchen_assistant 0_26_56_15_35
+Tamayu		spawned	tbwt_tamayu_multinpc_jungle 0_44_47_22_36
 Tamble		spawned	aluft_gnome_delivery_two 1_38_54_14_46
 Tanner (Crafting Guild)		spawned	tanner 1_45_51_53_21
+Tanya (Slepe)		spawned	slepe_poor_woman2_noop 0_57_51_61_48
 Tarfol quo Maten		spawned	kahlith_hydra_hunter 0_20_160_34_19
 Taria		spawned	farming_gardener_bush_2 0_45_50_61_22
 Tarik		spawned	ntk_tarik_nospots 0_51_43_25_32
@@ -4017,6 +4047,7 @@ The Face		spawned	vc_face 0_47_50_10_33
 The Jormungand		spawned	jormungand_frozen 0_38_162_22_8
 The Lady of the Lake		spawned	ladyofthelake 0_45_53_45_13
 The Monkey's Aunt		spawned	mm_monkeys_aunt 0_42_43_53_41
+The Monkey's Uncle		spawned	mm_monkeys_uncle 1_42_43_49_41
 The Sage (Shattered Relics League)		spawned	league_3_sage_multi 0_43_53_22_41
 Thigo		spawned	vatrachos_dwarf 0_29_46_33_34
 Thingol		spawned	prif_citizen_thingol 0_50_94_37_24
@@ -4028,6 +4059,7 @@ Thorkel Silkbeard		spawned	fris_r_chancellor 0_37_59_40_28
 Thormac		spawned	thormac 3_42_53_14_14
 Thorodin		spawned	viking_frem_diary 0_41_56_35_43
 Thorodin (dwarf)		spawned	royal_dwarf_miner1 0_39_160_8_40
+Thorvald the Warrior		spawned	viking_thorvald 0_41_57_42_45
 Tiadeche		spawned	tbwt_tiadeche_multinpc_shore 0_45_48_32_46
 Ticket Merchant		spawned	ranging_guild_ticket_exchange 0_41_53_36_37
 Ticket dwarf		spawned	slice_dwarf_inspector 0_38_86_6_31
@@ -4060,6 +4092,7 @@ Torrcs		spawned	vm_advent_01 1_50_53_55_62
 Torrell		spawned	farming_gardener_bush_4 0_40_50_57_25
 Tostig		spawned	death_barman 0_45_55_29_20
 Tower Advisor		spawned	ranging_advisor1 1_41_53_44_37
+Tower Mage		spawned	arceuus_towerguardian 0_24_59_61_45
 Town Crier		spawned	pmod_town_crier_varrock 0_50_53_54_36
 Town Crier		spawned	pmod_town_crier_draynor 0_48_50_9_51
 Town Crier		spawned	pmod_town_crier_falador 0_46_52_12_53
@@ -4082,6 +4115,7 @@ Trobert		spawned	trobert 0_43_49_58_37
 Trogen Konungarde		spawned	frisb_bouncer_2 0_36_59_35_24
 Troll child		spawned	fourdiamonds_troll_child 0_44_58_20_29
 Troll father		spawned	troll_block_1 0_44_58_20_29
+Trolley (Saradomin)		spawned	garden_trolley 0_46_52_21_54
 Trossa		spawned	arceuus_fairyring_curator 0_25_60_35_29
 Trotters		spawned	vc_trotters 0_50_154_36_10
 Turbogroomer		spawned	vc_turbogroomer 0_46_150_18_34
@@ -4106,6 +4140,7 @@ TzHaar-Mej-Jal		spawned	tzhaar_fightcave_master 0_38_80_8_50
 TzHaar-Mej-Kah		spawned	tzhaar_fightpit_master 0_37_80_32_58
 TzHaar-Mej-Roh		spawned	tzhaar_merchant_rune 0_38_80_30_5
 Tziuhtla		spawned	farming_gardener_calquat_2 0_21_47_23_24
+Ug		spawned	trollromance_ug 1_44_157_11_17
 Ulifed		spawned	dwarf_city_dwarf_man3 0_45_159_19_42
 Ulsquire Shauncy		spawned	ulsquire_shauncy 0_54_51_40_26
 Undead Mage		spawned	wgs_undead_mage 0_45_59_27_28
@@ -4134,6 +4169,7 @@ Vallessia Dracyula		spawned	vallessia_dracyula 0_56_52_47_63
 Vallessia von Pitt		spawned	vallessia_von_pitt 0_57_52_16_51
 Vampyressa van Von		spawned	vampyressa_van_von 0_57_52_9_50
 Vampyrus Diaemus		spawned	vampyrus_diaemus 0_56_52_52_58
+Vanligga Gastfrihet		spawned	frisd_izso_landlady 0_37_59_40_38
 Vasile		spawned	burgh_vilager_rat_1 0_54_50_29_37
 Velrak the explorer		spawned	velrak_the_explorer 0_45_151_51_22
 Vertida Sefalatis		spawned	sanguinesti_vertida_sefalatis 0_56_150_46_43
@@ -4166,12 +4202,14 @@ Vyrelady		spawned	myq4_noble_2 0_57_50_4_19
 Vyrelady		spawned	tob_noble_4 0_57_50_24_12
 Vyrelord		spawned	myq4_noble_1 0_57_50_22_20
 Vyrelord		spawned	tob_noble_3 0_57_50_5_13
+Wanderer		spawned	ics_little_redheadlady_normeyes 0_51_44_51_33
 Wandering Guard		spawned	doti_wanderingguard 0_21_46_51_23
 Wandering impling		spawned	ii_lost_impling 0_37_69_58_23
 Warden (Civitas illa Fortis)		spawned	fortis_prison_warden 0_25_49_54_28
 Watchtower Wizard		spawned	watchtower_wizard 2_39_48_51_43
 Watson		spawned	trail_watson 0_25_55_46_54
 Waydar		spawned	mm_waydar 0_45_42_14_39
+Waymottin		spawned	mm_waymottin_gs 1_38_54_52_34
 Wealthy citizen		spawned	varlamore_wealthy_citizen_a 0_26_48_20_15
 Wealthy citizen		spawned	varlamore_wealthy_citizen_a 0_26_48_21_34
 Wealthy citizen		spawned	varlamore_wealthy_citizen_a 0_26_48_53_32
@@ -4180,6 +4218,9 @@ Weird Old Man		spawned	kalphite_oldman 0_50_48_29_34
 Well-dressed man		spawned	aldarin_not_hitman 1_21_45_62_59
 Wemund		spawned	dwarf_city_shop_ship_mechanic 0_44_159_54_24
 Wengra quo Sihar		spawned	kahlith_mystic_3 0_20_59_12_12
+Werewolf (Darkmeyer)		spawned	darkm_werewolf_1 0_56_52_43_61
+Werewolf (Darkmeyer)		spawned	darkm_werewolf_2 0_56_52_16_62
+Werewolf (Darkmeyer)		spawned	darkm_werewolf_3 0_56_51_19_57
 Werewolf (Werewolf Agility Course)		spawned	waa_werewolf_guard 0_55_54_24_6
 Wesley		spawned	pestlemortar_crusher 0_53_45_37_30
 Weve		spawned	fossil_slayerdungeonguard 0_56_160_13_53
@@ -4221,6 +4262,7 @@ Wounded soldier (Battlefront)		spawned	molch_shay_wounded_1 0_21_58_30_50
 Wurbel		spawned	aluft_gnomeball_fan 1_37_54_28_21
 Wyson the gardener		spawned	wyson 0_47_52_19_51
 Wyvern display		spawned	vm_natural_history_display_case_wyvern 0_27_77_47_51
+Xocotla		spawned	doti_xocotla_downstairs 0_22_45_34_46
 Xopanatl, Teoki of Ralos		spawned	tonali_teoki_ralos 2_20_146_32_10
 Xorrah quo Sihar		spawned	kahlith_mystic_main 0_20_59_30_42
 Yadech Strongarm		spawned	warguild_yadech 1_44_55_39_33
@@ -4228,6 +4270,8 @@ Yama		spawned	yama_throne 0_23_157_31_43
 Yanni Salika		spawned	shiloantiques 0_44_46_20_40
 Yellow Fortune Director		spawned	dwarf_city_director_yellow_fortune 1_44_159_54_33
 Yellow Fortune Secretary		spawned	dwarf_city_secretary_yellow_fortune 1_44_159_54_33
+Yellow Sheep		spawned	herder_plaguesheep_4_enclosure 0_40_52_36_31
+Yellow Sheep		spawned	plaguesheep_4 0_40_52_50_63
 Yellow Snow		spawned	my2arm_sentry_yellowsnow_background 0_44_61_38_31
 Yenrab		spawned	slepe_posh_man1 0_58_51_38_34
 Ymladd		spawned	prif_spectator5 0_50_94_47_35
@@ -4239,11 +4283,13 @@ Ysbeid		spawned	prif_spectator8 0_50_94_47_35
 Ystwyth		spawned	prif_agility 0_50_95_48_28
 Yulf Squecks		spawned	farming_gardener_spirit_tree_2 0_40_60_54_18
 Yusuf		spawned	corscurs_banker_multi 0_40_44_10_49
+Zaff		spawned	surok_zaff 0_50_54_10_38
 Zahra		spawned	elid_villager6 0_53_45_57_17
 Zahur		spawned	elid_herbalist 0_53_45_33_28
 Zahwa		spawned	duel_injured1 0_52_51_45_12
 Zamorakian Acolyte		spawned	wildy_hub_acolyte1 0_48_56_63_52
 Zamorakian recruiter		spawned	game_zone_recruiter_zamorak 0_49_54_8_15
+Zandar Horfyre		spawned	zandar_horfyre 2_45_52_28_7
 Zanik		spawned	dorgesh_zanik 0_43_84_56_41
 Zavistic Rarve		spawned	zogre_human_zavistic_rarve 0_40_48_31_16
 Zealot		spawned	saradominist_zealot 0_53_50_52_58

@@ -39,6 +39,7 @@ EXCLUDE_TITLES = {
     "Pillory Guard", "Dr Jekyll", "Flippa", "Leo", "Sergeant Damien", "Capt' Arnav", "Niles",
     "Miles", "Giles", "Postie Pete", "Prison Pete", "Mime", "Evil twin", "Gravedigger", "Dunce",
     "Tree spirit", "Ent", "Giant lobster", "Swarm", "Shade", "Zombie (Shades of Mort'ton)",
+    "Crate (Gertrude's Cat)", "Escaping slave", "Effigy", "The Fisher King",
 }
 EXCLUDE_TEXT = re.compile(
     r"random event|cutscene|instance|minigame|\bduring\b|\bpet\b|\bboss|\braids?\b|follower|summoned|"
@@ -53,7 +54,7 @@ EXCLUDE_TEXT = re.compile(
 MEMBERS_F2P = {"n", "no", "f", "false"}
 # Lead-paragraph phrases marking npcs that only exist during a quest stage or event.
 TEMPORARY = re.compile(r"only (?:appears?|seen|found|present|exists?) (?:during|in the|when)|"
-                       r"during the (?:quest|cutscene|events? of)|appears? only during|no longer appears", re.I)
+                       r"during the cutscene|appears? only during|no longer appears", re.I)
 # ObjectLocLine pages (fishing spots and a few others): ones that belong to quests/minigames/events.
 OBJLINE_EXCLUDE = re.compile(r"Tutorial Island|Tempoross|Birthday|Boat fishing|Frenzied|Swan Song|"
                              r"Hemenster|Hallowed Sepulchre|Iceberg|Chair \(|Elemental rock|Odd tree", re.I)

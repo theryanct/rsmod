@@ -150,6 +150,16 @@ coords = '0_38_45_26_10'
 npc = 'corscurs_cook_sick'
 coords = '0_39_44_50_46'
 
+# Madame Caldarium
+[[spawn]]
+npc = 'corscurs_spa_owner'
+coords = '0_39_44_57_52'
+
+# Cabin Boy Colin
+[[spawn]]
+npc = 'corscurs_cabinboy_sick'
+coords = '0_39_44_61_41'
+
 # Arsen the Thief
 [[spawn]]
 npc = 'corscurs_thief_sick'
@@ -880,6 +890,11 @@ coords = '0_50_53_20_34'
 npc = 'rooftops_bigredjapan'
 coords = '0_50_53_32_9'
 
+# Old Man Yarlo
+[[spawn]]
+npc = 'daddyshome_daddy'
+coords = '0_50_53_39_3'
+
 # Tramp
 [[spawn]]
 npc = 'tramp'
@@ -924,6 +939,11 @@ coords = '0_50_53_6_24'
 [[spawn]]
 npc = 'swordshop2'
 coords = '0_50_53_6_8'
+
+# Zaff
+[[spawn]]
+npc = 'surok_zaff'
+coords = '0_50_54_10_38'
 
 # Surok Magis
 [[spawn]]
@@ -1030,6 +1050,11 @@ coords = '0_51_49_5_31'
 npc = 'tempoross_ferry_to_lobby_npc'
 coords = '0_51_49_7_8'
 
+# Father Reen
+[[spawn]]
+npc = 'agrith_reen_walking'
+coords = '0_51_49_8_23'
+
 # Captain Dalbur
 [[spawn]]
 npc = 'pilot_al_kharid'
@@ -1130,6 +1155,11 @@ coords = '0_51_53_9_46'
 npc = 'fai_varrock_jollyboar_chef'
 coords = '0_51_54_21_33'
 
+# Anna Jones
+[[spawn]]
+npc = 'surok_annajones'
+coords = '0_51_54_22_13'
+
 # Dr Ford
 [[spawn]]
 npc = 'clanwars_doctor'
@@ -1208,6 +1238,11 @@ coords = '0_52_51_54_6'
 # Burntof
 [[spawn]]
 npc = 'bim_burntof_pub'
+coords = '0_53_45_54_23'
+
+# Checkal
+[[spawn]]
+npc = 'bim_checkal_barb'
 coords = '0_53_45_54_23'
 
 # Marley
