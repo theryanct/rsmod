@@ -18,6 +18,7 @@ object HunterObjs : ObjReferences() {
     val bird_snare = find("hunting_ojibway_bird_snare")
     val butterfly_net = find("hunting_butterfly_net")
     val butterfly_jar = find("butterfly_jar")
+    val box_trap = find("hunting_box_trap")
 
     val byName: Map<String, ObjType> =
         HunterData.creatures.flatMap { c -> c.loot.map { it.obj } }.distinct().associateWith { find(it) }
@@ -26,6 +27,8 @@ object HunterObjs : ObjReferences() {
 object HunterLocs : LocReferences() {
     val snare_laid = find("hunting_ojibway_trap")
     val snare_broken = find("hunting_ojibway_trap_broken")
+    val box_laid = find("hunting_boxtrap_empty")
+    val box_failed = find("hunting_boxtrap_failed")
 
     val byName: Map<String, LocType> =
         HunterData.creatures

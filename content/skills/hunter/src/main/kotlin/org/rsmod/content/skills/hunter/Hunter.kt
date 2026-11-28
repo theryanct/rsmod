@@ -36,6 +36,7 @@ import org.rsmod.game.loc.LocShape
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcTypeList
+import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
@@ -49,6 +50,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   low/high chart: success shows the caught-bird trap, failure collapses it. "Check" a caught
  *   trap for xp + loot, "Dismantle" any of your traps to get the snare back. Unattended traps
  *   disappear after [TRAP_LIFE] ticks and drop the snare.
+ * - **Box traps** (PR2): the same flow with a box trap for ferrets and grey/red/black chinchompas
+ *   (Wiki levels, xp and catch charts; ferret has no Wiki chart - see hunter.tsv). Traps of both
+ *   kinds share the per-level trap limit.
  * - **Butterflies**: "Catch" with a butterfly net wielded and an empty butterfly jar.
  */
 class Hunter
@@ -68,33 +72,56 @@ constructor(
         Collapsed,
     }
 
-    private class Trap(val owner: Player, var state: State, var creature: Creature?, var tries: Int)
+    /** A trap item, the loc it lays, and the loc a failed catch leaves. */
+    private enum class TrapKind(val kind: HunterData.Kind) {
+        Snare(HunterData.Kind.Snare),
+        Box(HunterData.Kind.Box);
+
+        fun item(): ObjType = if (this == Snare) HunterObjs.bird_snare else HunterObjs.box_trap
+
+        fun laid(): LocType = if (this == Snare) HunterLocs.snare_laid else HunterLocs.box_laid
+
+        fun failed(): LocType = if (this == Snare) HunterLocs.snare_broken else HunterLocs.box_failed
+    }
+
+    private class Trap(
+        val owner: Player,
+        val kind: TrapKind,
+        var state: State,
+        var creature: Creature?,
+        var tries: Int,
+    )
 
     private val traps = HashMap<CoordGrid, Trap>()
 
-    private val snareByNpcId by lazy {
-        HunterData.creatures
-            .filter { it.snare }
-            .flatMap { c -> c.npcs.mapNotNull { HunterNpcs.byName[it]?.id }.map { it to c } }
-            .toMap()
+    /** Trap kind -> (npc id -> creature) for the creatures each trap kind catches. */
+    private val trappedByNpcId by lazy {
+        TrapKind.entries.associateWith { trapKind ->
+            HunterData.creatures
+                .filter { it.kind == trapKind.kind }
+                .flatMap { c -> c.npcs.mapNotNull { HunterNpcs.byName[it]?.id }.map { it to c } }
+                .toMap()
+        }
     }
 
     override fun ScriptContext.startup() {
-        val snare = HunterObjs.bird_snare
-        when (objTypes[snare].iop.indexOfFirst { it.equals("Lay", ignoreCase = true) } + 1) {
-            1 -> onOpHeld1(snare) { layTrap() }
-            2 -> onOpHeld2(snare) { layTrap() }
-            3 -> onOpHeld3(snare) { layTrap() }
-            4 -> onOpHeld4(snare) { layTrap() }
-            5 -> onOpHeld5(snare) { layTrap() }
+        for (trapKind in TrapKind.entries) {
+            val item = trapKind.item()
+            when (objTypes[item].iop.indexOfFirst { it.equals("Lay", ignoreCase = true) } + 1) {
+                1 -> onOpHeld1(item) { layTrap(trapKind) }
+                2 -> onOpHeld2(item) { layTrap(trapKind) }
+                3 -> onOpHeld3(item) { layTrap(trapKind) }
+                4 -> onOpHeld4(item) { layTrap(trapKind) }
+                5 -> onOpHeld5(item) { layTrap(trapKind) }
+            }
         }
         val trapLocs =
-            (listOf(HunterLocs.snare_laid, HunterLocs.snare_broken) + HunterLocs.byName.values)
+            (TrapKind.entries.flatMap { listOf(it.laid(), it.failed()) } + HunterLocs.byName.values)
                 .distinctBy { it.id }
         for (loc in trapLocs) {
             registerTrapOps(loc)
         }
-        for (creature in HunterData.creatures.filter { !it.snare }) {
+        for (creature in HunterData.creatures.filter { !it.trapped }) {
             for (name in creature.npcs) {
                 val npc = HunterNpcs.byName.getValue(name)
                 val op = npcTypes[npc].op.indexOfFirst { it.equals("Catch", ignoreCase = true) } + 1
@@ -126,7 +153,7 @@ constructor(
         }
     }
 
-    private suspend fun ProtectedAccess.layTrap() {
+    private suspend fun ProtectedAccess.layTrap(trapKind: TrapKind) {
         val limit = min(MAX_TRAPS, 1 + player.hunterLvl / 20)
         if (traps.values.count { it.owner === player } >= limit) {
             mes("You can't lay more than $limit traps at your Hunter level.")
@@ -141,12 +168,12 @@ constructor(
         }
         anim(HunterSeqs.lay_trap)
         delay(2)
-        if (invTotal(inv, HunterObjs.bird_snare) <= 0) {
+        if (invTotal(inv, trapKind.item()) <= 0) {
             return
         }
-        invDel(inv, HunterObjs.bird_snare, 1)
-        addTrapLoc(coords, HunterLocs.snare_laid)
-        traps[coords] = Trap(player, State.Laid, creature = null, tries = 0)
+        invDel(inv, trapKind.item(), 1)
+        addTrapLoc(coords, trapKind.laid())
+        traps[coords] = Trap(player, trapKind, State.Laid, creature = null, tries = 0)
         softQueue(HunterQueues.snare_check, random.of(8, 16), coords)
     }
 
@@ -155,13 +182,13 @@ constructor(
         if (trap.owner !== player || trap.state != State.Laid) {
             return
         }
-        if (locRepo.findExact(coords, HunterLocs.snare_laid) == null) {
-            // The trap timed out and despawned: leave the snare on the ground.
+        if (locRepo.findExact(coords, trap.kind.laid()) == null) {
+            // The trap timed out and despawned: leave the trap item on the ground.
             traps.remove(coords)
-            objRepo.add(HunterObjs.bird_snare, coords, SNARE_DROP_DURATION, player)
+            objRepo.add(trap.kind.item(), coords, SNARE_DROP_DURATION, player)
             return
         }
-        val creature = nearestBird(coords)
+        val creature = nearestCreature(coords, trap.kind)
         if (creature == null) {
             trap.tries++
             if (trap.tries < MAX_TRIES) {
@@ -174,17 +201,17 @@ constructor(
             trap.state = State.Caught
             trap.creature = creature
         } else {
-            addTrapLoc(coords, HunterLocs.snare_broken)
+            addTrapLoc(coords, trap.kind.failed())
             trap.state = State.Collapsed
         }
     }
 
-    /** Best bird the player can catch with a spawned npc within 8 tiles of [coords]. */
-    private fun ProtectedAccess.nearestBird(coords: CoordGrid): Creature? =
+    /** Best creature this trap kind catches, spawned within 8 tiles of [coords]. */
+    private fun ProtectedAccess.nearestCreature(coords: CoordGrid, kind: TrapKind): Creature? =
         npcRepo
             .findAll(ZoneKey.from(coords), 1)
             .filter { abs(it.coords.x - coords.x) <= BIRD_RANGE && abs(it.coords.z - coords.z) <= BIRD_RANGE }
-            .mapNotNull { snareByNpcId[it.id] }
+            .mapNotNull { trappedByNpcId.getValue(kind)[it.id] }
             .filter { it.level <= player.hunterLvl }
             .maxByOrNull { it.level }
 
@@ -207,7 +234,15 @@ constructor(
             statAdvance(stats.hunter, creature.xp * xpMods.get(player, stats.hunter))
             mes("You've caught a ${creature.title.lowercase()}.")
         }
-        invAddOrDrop(objRepo, HunterObjs.bird_snare)
+        invAddOrDrop(objRepo, (trap?.kind ?: trapKindOf(loc)).item())
+    }
+
+    /** Untracked trap locs (e.g. after a restart) give back the item their loc belongs to. */
+    private fun trapKindOf(loc: BoundLocInfo): TrapKind {
+        val boxLocs = setOf(HunterLocs.box_laid.id, HunterLocs.box_failed.id) +
+            HunterData.creatures.filter { it.kind == HunterData.Kind.Box }
+                .mapNotNull { c -> c.fullLoc?.let { HunterLocs.byName[it]?.id } }
+        return if (locTypes[loc].id in boxLocs) TrapKind.Box else TrapKind.Snare
     }
 
     private suspend fun ProtectedAccess.catchButterfly(npc: Npc, creature: Creature) {
@@ -242,7 +277,7 @@ constructor(
     }
 
     private companion object {
-        val TRAP_OPS = listOf("Check", "Dismantle", "Take")
+        val TRAP_OPS = listOf("Check", "Dismantle", "Take", "Reset")
         const val MAX_TRAPS = 5
         const val MAX_TRIES = 10
         const val BIRD_RANGE = 8
