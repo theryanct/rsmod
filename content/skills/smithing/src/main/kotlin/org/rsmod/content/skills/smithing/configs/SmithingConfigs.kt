@@ -134,6 +134,7 @@ internal object SmithingVarBits : VarBitReferences() {
 }
 
 internal object SmithingEnums : EnumReferences() {
+    val quantity = find<ObjType, Int>("smithing_product_to_quantity")
     val bars_required = find<ObjType, Int>("smithing_product_to_bars_required")
     val level_required = find<ObjType, Int>("smithing_product_to_requirement")
     val bar_types = find<Int, ObjType>("smithing_bar_types")

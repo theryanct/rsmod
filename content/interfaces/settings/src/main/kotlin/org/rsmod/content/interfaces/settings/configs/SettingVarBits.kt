@@ -6,4 +6,7 @@ typealias setting_varbits = SettingVarBits
 
 object SettingVarBits : VarBitReferences() {
     val panel_tab = find("settings_side_panel_tab", 92479944086622)
+
+    /** All Settings > Controls > "Esc closes the current interface" (setting 57). */
+    val esc_closes_interface = find("keybinding_esc_to_close")
 }
