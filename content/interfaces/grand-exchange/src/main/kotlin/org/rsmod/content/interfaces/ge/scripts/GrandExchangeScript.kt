@@ -174,7 +174,11 @@ constructor(
         player.setVar(GeVarBits.transmit_taxrate, 0)
         player.setVar(GeVarBits.price_custom, 0)
         player.setVar(GeVarps.last_searched, -1)
-        player.setVar(GeVarps.last_offer_item, -1)
+        // Repeat Offer: re-send the saved last offer (obj varps default to 0, which is a real obj).
+        val lastItem = player.vars[GeVarps.last_offer_item].takeIf { it > 0 } ?: -1
+        player.setVar(GeVarps.last_offer_quantity, player.vars[GeVarps.last_offer_quantity])
+        player.setVar(GeVarps.last_offer_type, player.vars[GeVarps.last_offer_type])
+        player.setVar(GeVarps.last_offer_item, lastItem)
         for (varp in GeVarps.itemsink_objs) {
             player.setVar(varp, -1)
         }
@@ -484,6 +488,9 @@ constructor(
         selectSlot(-1)
         val verb = if (offer.buy) "buying" else "selling"
         mes("Grand Exchange: Finished $verb ${"%,d".format(quantity)} x ${type.name}.")
+        player.setVar(GeVarps.last_offer_quantity, quantity)
+        player.setVar(GeVarps.last_offer_type, if (offer.buy) 0 else 1)
+        player.setVar(GeVarps.last_offer_item, type.id)
     }
 
     private fun ProtectedAccess.buy(
@@ -554,8 +561,31 @@ constructor(
             GeConstants.COLLECT_ALL -> {
                 collectAll(toBank = op == IfButtonOp.Op2)
             }
-            GeConstants.REPEAT_OFFER -> mes("Repeat offers aren't available on this server.")
+            GeConstants.REPEAT_OFFER -> repeatOffer()
         }
+    }
+
+    /**
+     * Repeat Offer: set up the last confirmed offer again in the first free slot (item, quantity
+     * and buy/sell; the price is the market price as always). The player still clicks Confirm.
+     */
+    private fun ProtectedAccess.repeatOffer() {
+        val obj = player.vars[GeVarps.last_offer_item]
+        if (obj <= 0) {
+            return
+        }
+        val type = objTypes[obj] ?: return
+        val slot = player.geSlots.indexOfFirst { it == null }
+        if (slot == -1) {
+            mes("You have no free Grand Exchange slots.")
+            return
+        }
+        val buy = player.vars[GeVarps.last_offer_type] == 0
+        selectSlot(slot, buy = buy)
+        setItem(type)
+        val wanted = player.vars[GeVarps.last_offer_quantity].coerceAtLeast(1)
+        val quantity = if (buy) wanted else minOf(wanted, available(type)).coerceAtLeast(1)
+        player.setVar(GeVarBits.newoffer_quantity, quantity)
     }
 
     /**

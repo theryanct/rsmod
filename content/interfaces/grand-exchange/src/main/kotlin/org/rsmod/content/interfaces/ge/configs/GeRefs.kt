@@ -81,6 +81,9 @@ internal object GeVarps : VarpReferences() {
     val last_searched = find("ge_last_searched")
     /** Repeat Offer: hidden while the obj is -1. */
     val last_offer_item = find("ge_last_offer_item")
+    val last_offer_quantity = find("ge_last_offer_quantity")
+    /** 0 = buy, 1 = sell. */
+    val last_offer_type = find("ge_last_offer_type")
     /** Item-sink offers: a slot whose obj isn't -1 is drawn as occupied. */
     val itemsink_objs =
         listOf(
