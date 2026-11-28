@@ -76,14 +76,12 @@ constructor(
         onHeldOpLabel(objTypes, ArravObjs.book, "Read") { readBook() }
 
         onNpcOpLabel(npcTypes, ArravNpcs.baraek, "Talk-to") { talkBaraek(it) }
-        onNpcOpLabel(npcTypes, ArravNpcs.straven, "Talk-to") { talkStraven(it) }
         onLocOpLabel(locTypes, ArravLocs.phoenix_door, "Open") { phoenixDoor(it) }
         onLocOpLabel(locTypes, ArravLocs.phoenix_chest, "Open") { phoenixChest(it) }
         onLocOpLabel(locTypes, ArravLocs.weapon_store_door, "Open") { weaponStoreDoor(it) }
         onNpcOpLabel(npcTypes, ArravNpcs.weaponsmaster, "Talk-to") { talkWeaponsmaster(it) }
 
         onNpcOpLabel(npcTypes, ArravNpcs.charlie, "Talk-to") { talkCharlie(it) }
-        onNpcOpLabel(npcTypes, ArravNpcs.katrine, "Talk-to") { talkKatrine(it) }
         onOpNpcU(ArravNpcs.katrine, ArravObjs.crossbow) { talkKatrine(it.npc) }
         onLocOpLabel(locTypes, ArravLocs.blackarm_door, "Open") { blackArmDoor(it) }
         onLocOpLabel(locTypes, ArravLocs.cupboard, "Open") { blackArmCupboard(it) }
@@ -93,6 +91,9 @@ constructor(
         }
         // King Roald's Talk-to is shared (QuestTalk): Arrav's while the certificate is pending.
         with(QuestTalk) {
+            // Straven and Katrine are shared (QuestTalk): Heroes' Quest's armband talk.
+            default(npcTypes, ArravNpcs.straven) { talkStraven(it) }
+            default(npcTypes, ArravNpcs.katrine) { talkKatrine(it) }
             register(npcTypes, ArravNpcs.king, SHIELD_OF_ARRAV, wants = { wantsKing() }) {
                 talkKing(it)
             }

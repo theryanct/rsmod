@@ -5,7 +5,13 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.Constants
 import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.onApLoc1
+import org.rsmod.api.script.onApLoc2
+import org.rsmod.api.script.onApLoc3
+import org.rsmod.api.script.onApLoc4
+import org.rsmod.api.script.onApLoc5
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -30,7 +36,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - "Cross" on stepping stones (by loc name): a jump onto the stone.
  * No xp; level-gated shortcuts stay data rows in agility.tsv.
  */
-class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : PluginScript() {
+class GenericObstacles
+@Inject
+constructor(private val locTypes: LocTypeList, private val locRepo: LocRepository) : PluginScript() {
     private val logger = InlineLogger()
 
     /**
@@ -97,6 +105,27 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
                 else -> LocEvents.Op5::class.java
             }
         if (eventBus.contains(event, type.id)) return false
+        if (kind == Kind.SteppingStone) {
+            // Stones sit in water with no adjacent walkable tile, so act from the bank (ap-op with
+            // reach) instead of requiring an adjacent tile like a normal op.
+            val apEvent =
+                when (op) {
+                    1 -> LocEvents.Ap1::class.java
+                    2 -> LocEvents.Ap2::class.java
+                    3 -> LocEvents.Ap3::class.java
+                    4 -> LocEvents.Ap4::class.java
+                    else -> LocEvents.Ap5::class.java
+                }
+            if (eventBus.contains(apEvent, type.id)) return false
+            when (op) {
+                1 -> onApLoc1(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                2 -> onApLoc2(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                3 -> onApLoc3(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                4 -> onApLoc4(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                5 -> onApLoc5(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+            }
+            return true
+        }
         when (op) {
             1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { cross(it.loc, kind) }
             2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { cross(it.loc, kind) }
@@ -114,6 +143,12 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             return
         }
         val (start, dest) = crossing(player.coords, loc) ?: return
+        // Diagnostics for obstacle direction reports (Ryan).
+        logger.info {
+            "Obstacle ${loc.id} shape=${loc.shapeId} rot=${loc.angleId} " +
+                "size=${loc.adjustedWidth}x${loc.adjustedLength} at ${loc.coords}: " +
+                "player ${player.coords} -> start $start -> land $dest"
+        }
         // Step onto this side's start tile first, so the climb always runs straight across.
         if (player.coords != start) {
             exactMove(player.coords, start, 0, CLIENT_CYCLES_PER_TICK, direction(start, dest))
@@ -142,7 +177,9 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
      * player clicked from, so crossing works the same way from either side:
      * - Wall locs (shapes 0-3): across the wall's edge (rotation 0 west, 1 north, 2 east, 3 south);
      *   the two tiles are the loc tile and the tile beyond that edge.
-     * - Other locs (stiles are 1x2): across the SHORT side of the rotated footprint, from the tile
+     * - Other locs (stiles are 1x2): perpendicular to the fence line (Ryan's rule), i.e. along the
+     *   LONG side of the rotated footprint (Fred's farm stile 3197,3276 rot 0 is 1x2 on z and crosses
+     *   north-south); square footprints read the fence line from adjacent wall locs. From the tile
      *   just outside it on the player's side to the tile just outside the far side, in line with
      *   the player (clamped onto the footprint). Square footprints fall back to the approach axis.
      */
@@ -168,10 +205,9 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
         val level = loc.coords.level
         val acrossX =
             when {
-                loc.adjustedWidth < loc.adjustedLength -> true
-                loc.adjustedWidth > loc.adjustedLength -> false
-                // Square: cross along whichever axis the player is outside of.
-                else -> player.x < minX || player.x > maxX
+                loc.adjustedWidth > loc.adjustedLength -> true
+                loc.adjustedWidth < loc.adjustedLength -> false
+                else -> fenceRunsAlongZ(loc) ?: (player.x < minX || player.x > maxX)
             }
         return if (acrossX) {
             val z = player.z.coerceIn(minZ, maxZ)
@@ -188,6 +224,24 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
         }
     }
 
+    /**
+     * For square footprints: true if wall-type locs (fences, shapes 0-3) sit north/south of the loc
+     * (fence line runs along z, so cross along x), false if they sit east/west, null if unknown.
+     */
+    private fun fenceRunsAlongZ(loc: BoundLocInfo): Boolean? {
+        fun hasWall(dx: Int, dz: Int): Boolean =
+            locRepo.findAll(loc.coords.translate(dx, dz)).any { it.shapeId in 0..3 }
+        val maxX = loc.adjustedWidth
+        val maxZ = loc.adjustedLength
+        val northSouth = hasWall(0, -1) || hasWall(0, maxZ)
+        val eastWest = hasWall(-1, 0) || hasWall(maxX, 0)
+        return when {
+            northSouth && !eastWest -> true
+            eastWest && !northSouth -> false
+            else -> null
+        }
+    }
+
     private fun direction(from: CoordGrid, to: CoordGrid): Int {
         val dx = to.x - from.x
         val dz = to.z - from.z
@@ -200,6 +254,8 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
 
     private companion object {
         const val MOVE_TICKS = 2
+        /** Tiles from which a stepping stone can be jumped onto (the bank or the previous stone). */
+        const val STONE_REACH = 2
         const val CLIENT_CYCLES_PER_TICK = 30
     }
 }

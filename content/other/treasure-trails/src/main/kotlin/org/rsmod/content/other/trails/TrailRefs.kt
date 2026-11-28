@@ -21,6 +21,14 @@ internal object TrailObjs : ObjReferences() {
     val casket_elite = find("trail_reward_casket_elite")
     val casket_master = find("trail_reward_casket_master")
 
+    /** The stackable "Scroll box (<tier>)" objs (Unlimited stacked clue scrolls). */
+    val box_beginner = find("league_clue_box_beginner")
+    val box_easy = find("league_clue_box_easy")
+    val box_medium = find("league_clue_box_medium")
+    val box_hard = find("league_clue_box_hard")
+    val box_elite = find("league_clue_box_elite")
+    val box_master = find("league_clue_box_master")
+
     /** Coordinate clue navigation: "Look through" the sextant with a watch and chart. */
     val sextant = find("trail_sextant")
     val watch = find("trail_watch")
