@@ -51,6 +51,21 @@ internal object FishingObjs : ObjReferences() {
     val raw_bass = find("raw_bass")
     val raw_shark = find("raw_shark")
     val raw_monkfish = find("raw_monkfish")
+
+    // Special spots (eels, dark crab, anglerfish, frog spawn): tools, baits and catches.
+    val oily_fishing_rod = find("oily_fishing_rod")
+    val ice_gloves = find("ice_gloves")
+    val smiths_gloves_i = find("smithing_uniform_gloves_ice")
+    val sandworms = find("piscarilius_sandworms")
+    val dark_fishing_bait = find("wilderness_fishing_bait")
+    val frog_spawn = find("giant_frogspawn")
+    val raw_slimy_eel = find("mort_slimey_eel")
+    val raw_cave_eel = find("raw_cave_eel")
+    val raw_lava_eel = find("raw_lava_eel")
+    val infernal_eel = find("infernal_eel")
+    val sacred_eel = find("snakeboss_eel")
+    val raw_anglerfish = find("raw_anglerfish")
+    val raw_dark_crab = find("raw_dark_crab")
 }
 
 internal object FishingSeqs : SeqReferences() {
