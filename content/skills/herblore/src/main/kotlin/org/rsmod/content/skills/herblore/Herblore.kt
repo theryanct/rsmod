@@ -6,6 +6,7 @@ import kotlin.math.min
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.events.interact.LocUEvents
+import org.rsmod.api.player.poison.curePoison
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
 import org.rsmod.api.player.ui.SkillMultiProduct
@@ -35,7 +36,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   secondary, 3 doses) via the skillmulti "Make" chatbox, one per 2 ticks from a weak queue.
  * - Drinking doses 4 -> 3 -> 2 -> 1 -> empty vial (3-tick delay): Wiki boosts (+3 +10% / super
  *   +5 +15%), restore (+10 +30%), super restore (+8 +25%, incl. prayer), prayer (+7 +25%),
- *   energy (+10% / +20% run). Antipoisons only message: there is no poison system yet.
+ *   energy (+10% / +20% run), antipoisons cure poison and grant immunity (90 s / 6 min).
  * - Fill empty vials at any sink, fountain, well or water pump (by loc name).
  */
 class Herblore
@@ -186,7 +187,7 @@ constructor(
                 val gain = constants.run_max_energy * effect.percent / 100
                 player.runEnergy = min(constants.run_max_energy, player.runEnergy + gain)
             }
-            Effect.Cure -> Unit
+            is Effect.Cure -> player.curePoison(effect.immunityTicks)
         }
         if (left > 0) {
             mes("You have $left dose${if (left > 1) "s" else ""} of potion left.")

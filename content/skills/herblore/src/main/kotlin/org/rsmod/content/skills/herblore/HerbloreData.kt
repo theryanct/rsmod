@@ -106,8 +106,8 @@ internal object HerbloreData {
         /** Restore run energy by [percent]% of the maximum. */
         data class Energy(val percent: Int) : Effect()
 
-        /** Antipoisons: there is no poison system yet, so only the message. */
-        data object Cure : Effect()
+        /** Antipoisons: cure poison and grant immunity for [immunityTicks] (Wiki durations). */
+        data class Cure(val immunityTicks: Int) : Effect()
     }
 
     class Drink(val name: String, val doses: List<String>, val effect: Effect)
@@ -148,8 +148,8 @@ internal object HerbloreData {
             ),
             Drink("energy potion", doses("1energy"), Effect.Energy(10)),
             Drink("super energy", doses("2energy"), Effect.Energy(20)),
-            Drink("antipoison", doses("antipoison"), Effect.Cure),
-            Drink("superantipoison", doses("2antipoison"), Effect.Cure),
+            Drink("antipoison", doses("antipoison"), Effect.Cure(immunityTicks = 150)),
+            Drink("superantipoison", doses("2antipoison"), Effect.Cure(immunityTicks = 600)),
         )
 
     /** Water sources (by loc name) that fill vials. */
