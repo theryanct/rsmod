@@ -8,9 +8,11 @@ import org.rsmod.api.player.events.interact.LocContentEvents
 import org.rsmod.api.player.interact.OpInterceptors
 import org.rsmod.api.player.events.interact.LocDefaultEvents
 import org.rsmod.api.player.events.interact.LocEvents
+import org.rsmod.api.player.events.interact.LocUnimplementedEvents
 import org.rsmod.api.player.events.interact.NpcContentEvents
 import org.rsmod.api.player.events.interact.NpcDefaultEvents
 import org.rsmod.api.player.events.interact.NpcEvents
+import org.rsmod.api.player.events.interact.NpcUnimplementedEvents
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.ui.IfModalButton
 import org.rsmod.api.player.ui.IfOverlayButton
@@ -48,7 +50,10 @@ private val logger = InlineLogger()
  * An op no script binds but an [OpInterceptors] interceptor may claim (door / ladder fallbacks,
  * clue steps, ...: their `auditCovers`) or that `unbound-ops-notes.tsv` (this module's resources)
  * explains goes to `.data/logs/unbound-ops-covered.tsv` with who covers it, not the unbound list.
- * Notes are how world/skilling mark false positives: `kind  id-or-name  op  note`, op `*` = all.
+ * Notes are how world/skilling mark false positives: `kind  id-or-name  op  note`, op `*` = all,
+ * or `region  x1,z1,x2,z2  *  note` for every op in a box (POH templates, instance copies).
+ * A multiloc / multinpc child also counts as handled when its base is (the interaction code falls
+ * back to the base type's script), and `*UnimplementedEvents` scripts count as handled.
  *
  * It also writes `.data/logs/unbound-ifbuttons.tsv`: every `UNHANDLED` button the server logged in
  * `.data/logs/gameplay*.log` (real clicks, with counts), then the components of the interfaces
@@ -84,6 +89,22 @@ constructor(
 
     /** `kind<TAB>id-or-name<TAB>op` (op `opN` or `*`) -> note, from the notes resource. */
     private val notes: Map<String, String> by lazy { loadNotes() }
+
+    private class Region(val x1: Int, val z1: Int, val x2: Int, val z2: Int, val note: String) {
+        fun contains(c: CoordGrid): Boolean = c.x in x1..x2 && c.z in z1..z2
+    }
+
+    private val regions: List<Region> by lazy {
+        notes.entries.mapNotNull { (key, note) ->
+            val cols = key.split('\t')
+            if (cols[0] != "region") return@mapNotNull null
+            val n = cols[1].split(',').mapNotNull { it.trim().toIntOrNull() }
+            if (n.size != 4) return@mapNotNull null
+            Region(minOf(n[0], n[2]), minOf(n[1], n[3]), maxOf(n[0], n[2]), maxOf(n[1], n[3]), note)
+        }
+    }
+
+    private fun regionNote(coords: CoordGrid): String? = regions.firstOrNull { it.contains(coords) }?.note
 
     private fun loadNotes(): Map<String, String> {
         val stream = javaClass.getResourceAsStream("unbound-ops-notes.tsv") ?: return emptyMap()
@@ -135,12 +156,13 @@ constructor(
                 locs++
                 val base = locTypes.getOrDefault(entity.id, null) ?: return@forEachLoc
                 val sample = "${coords.x},${coords.z},${coords.level}"
+                val region = regionNote(coords)?.let { "note: $it" }
                 for (type in locVariants(base)) {
                     for (op in 1..OPS) {
                         val label = type.op.getOrNull(op - 1) ?: continue
                         if (label.isBlank() || label.equals("hidden", ignoreCase = true)) continue
-                        if (locHandled(type, op)) continue
-                        val by = OpInterceptors.auditLoc(type, entity.shape, coords, op)
+                        if (locHandled(type, op) || (type !== base && locHandled(base, op))) continue
+                        val by = region ?: OpInterceptors.auditLoc(type, entity.shape, coords, op)
                         add("loc", type.id, type.name, op, label, sample, by)
                     }
                 }
@@ -151,12 +173,13 @@ constructor(
         for (npc in npcList) {
             npcs++
             val coords = npc.coords.let { "${it.x},${it.z},${it.level}" }
+            val region = regionNote(npc.coords)?.let { "note: $it" }
             for (type in npcVariants(npc.type)) {
                 for (op in 1..OPS) {
                     val label = type.op.getOrNull(op - 1) ?: continue
                     if (label.isBlank() || label.equals("hidden", ignoreCase = true)) continue
-                    if (npcHandled(type, op)) continue
-                    val by = OpInterceptors.auditNpc(type, npc.coords, op)
+                    if (npcHandled(type, op) || (type !== npc.type && npcHandled(npc.type, op))) continue
+                    val by = region ?: OpInterceptors.auditNpc(type, npc.coords, op)
                     add("npc", type.id, type.name, op, label, coords, by)
                 }
             }
@@ -291,6 +314,7 @@ constructor(
             has(LOC_AP[i], type.id) ||
             has(LOC_CONTENT_OP[i], type.contentGroup) ||
             has(LOC_CONTENT_AP[i], type.contentGroup) ||
+            has(LOC_UNIMPLEMENTED[i], type.id) ||
             has(LOC_DEFAULT_OP[i], DEFAULT_KEY) ||
             has(LOC_DEFAULT_AP[i], DEFAULT_KEY)
     }
@@ -301,6 +325,7 @@ constructor(
             has(NPC_AP[i], type.id) ||
             has(NPC_CONTENT_OP[i], type.contentGroup) ||
             has(NPC_CONTENT_AP[i], type.contentGroup) ||
+            has(NPC_UNIMPLEMENTED[i], type.id) ||
             has(NPC_DEFAULT_OP[i], DEFAULT_KEY) ||
             has(NPC_DEFAULT_AP[i], DEFAULT_KEY)
     }
@@ -351,6 +376,22 @@ constructor(
                 LocContentEvents.Ap3::class.java,
                 LocContentEvents.Ap4::class.java,
                 LocContentEvents.Ap5::class.java,
+            )
+        val LOC_UNIMPLEMENTED =
+            listOf(
+                LocUnimplementedEvents.Op1::class.java,
+                LocUnimplementedEvents.Op2::class.java,
+                LocUnimplementedEvents.Op3::class.java,
+                LocUnimplementedEvents.Op4::class.java,
+                LocUnimplementedEvents.Op5::class.java,
+            )
+        val NPC_UNIMPLEMENTED =
+            listOf(
+                NpcUnimplementedEvents.Op1::class.java,
+                NpcUnimplementedEvents.Op2::class.java,
+                NpcUnimplementedEvents.Op3::class.java,
+                NpcUnimplementedEvents.Op4::class.java,
+                NpcUnimplementedEvents.Op5::class.java,
             )
         val LOC_DEFAULT_OP =
             listOf(
