@@ -410,7 +410,8 @@ constructor(
         private val MAUSOLEUM = CoordGrid(3405, 9906, 0)
         private val BARRIER_WEST = CoordGrid(3438, 9886, 0)
 
-        private const val KNOCK_AFTER_DOG_JOB = "Knocking on the door after accepting to kill the dog"
+        private const val KNOCK_AFTER_DOG_JOB =
+            "Knocking on the door after accepting to kill the dog"
         private const val COFFIN_OPEN = "Attempting to open the coffin on the top floor"
         private const val DREZEL_GOLDEN_KEY = "Talking to Drezel with the golden key"
         private const val DREZEL_MURKY =
