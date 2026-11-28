@@ -217,3 +217,33 @@ coords = '0_25_75_23_30'
 [[spawn]]
 npc = 'mistmyst_abigale_cutscene_multi'
 coords = '0_25_75_21_31'
+
+# Shield of Arrav: Baraek, Straven (Phoenix HQ), Katrine, Charlie the Tramp, the museum curator,
+# King Roald, the Phoenix Weaponsmaster (multinpc). Reldo is spawned for The Knight's Sword.
+[[spawn]]
+npc = 'baraek'
+coords = '0_50_53_17_42'
+
+[[spawn]]
+npc = 'straven'
+coords = '0_50_152_46_52'
+
+[[spawn]]
+npc = 'katrine'
+coords = '0_49_52_50_57'
+
+[[spawn]]
+npc = 'tramppg'
+coords = '0_50_52_6_62'
+
+[[spawn]]
+npc = 'curator'
+coords = '0_50_53_56_56'
+
+[[spawn]]
+npc = 'king_roald'
+coords = '0_50_54_22_16'
+
+[[spawn]]
+npc = 'weaponsmaster'
+coords = '0_50_52_50_60'
