@@ -257,6 +257,7 @@ constructor(
         // ::features Slayer point multiplier (whole number, so no rounding is needed).
         val points = basePoints * hero.slayerPointMultiplier
         hero.slayerPoints = hero.slayerPoints + points
+        hero.syncSlayerPointsDisplay()
         hero.mes(
             "You've completed $streak tasks in a row and received $points points, giving you a " +
                 "total of ${hero.slayerPoints}; return to a Slayer master."
