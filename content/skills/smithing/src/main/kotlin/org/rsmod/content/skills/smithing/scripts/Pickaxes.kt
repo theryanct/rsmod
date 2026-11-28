@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.script.onOpLocU
@@ -83,7 +84,7 @@ constructor(
             mes("You need a Smithing level of ${pickaxe.level} to make a ${name.lowercase()}.")
             return false
         }
-        if (invTotal(inv, smithing_objs.hammer) == 0) {
+        if (!player.hasTool(smithing_objs.hammer)) {
             mes("You need a hammer to work the metal with.")
             return false
         }

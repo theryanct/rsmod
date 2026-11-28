@@ -11,6 +11,7 @@ import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.farmingLvl
 import org.rsmod.api.player.stat.woodcuttingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.isNpcOpBound
@@ -65,7 +66,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Compost bins: fill with 15 compostables, close, wait for it to rot, open, take buckets.
  * - Tool leprechauns note produce, and store tools, a watering can, buckets and compost.
  *
- * Not yet: disease/death, weed regrowth, supercompost, sapling growing, higher tiers.
+ * Not yet: disease/death, weed regrowth, supercompost, higher tiers. Saplings: [Seedlings].
  */
 class Farming
 @Inject
@@ -156,6 +157,7 @@ constructor(
         onOpLocU(base, FarmingObjs.spade) { clear(patch) }
         onOpLocU(base, FarmingObjs.compost) { compost(patch, supercompost = false) }
         onOpLocU(base, FarmingObjs.supercompost) { compost(patch, supercompost = true) }
+        onOpLocU(base, SeedlingObjs.empty_pot) { fillPot(patch) }
         if (patch.kind.wateredOffset > 0) {
             for (can in FarmingObjs.watering_cans.drop(1)) {
                 onOpLocU(base, can) { water(patch, it.objType.id) }
@@ -316,6 +318,7 @@ constructor(
      */
     private fun refresh(player: Player) {
         player.softTimer(FarmingTimers.refresh, REFRESH_TICKS)
+        Seedlings.grow(player, nowMinutes())
         val coords = player.coords
         // Every area in range; the nearest is written last so it wins a shared transmit letter.
         val inRange =
@@ -345,7 +348,7 @@ constructor(
             mes("This patch doesn't need weeding right now.")
             return
         }
-        if (invTotal(inv, FarmingObjs.rake) == 0) {
+        if (!player.hasTool(FarmingObjs.rake)) {
             mes("You need a rake to weed a farming patch.")
             return
         }
@@ -416,7 +419,7 @@ constructor(
         }
         val sapling = crop.kind in FarmingData.saplingKinds
         val tool = if (sapling) FarmingObjs.spade else FarmingObjs.dibber
-        if (invTotal(inv, tool) == 0) {
+        if (!player.hasTool(tool)) {
             val name = if (sapling) "spade" else "seed dibber"
             mes("You need a $name to plant that.")
             return
@@ -446,6 +449,23 @@ constructor(
                 else -> "a ${crop.key} seed"
             }
         mes("You plant $seeds in the ${patch.kind.noun}.")
+    }
+
+    /** Wiki "Plant pot": an empty pot used on a weeded, empty patch with a gardening trowel. */
+    private fun ProtectedAccess.fillPot(patch: Patch) {
+        val state = player.state(patch)
+        if (state.crop != null || state.weeds < 3) {
+            mes("This ${patch.kind.noun} needs to be weeded and empty to fill a plant pot.")
+            return
+        }
+        if (SeedlingObjs.trowel !in inv) {
+            mes("You need a gardening trowel to do that.")
+            return
+        }
+        invDel(inv, SeedlingObjs.empty_pot)
+        invAdd(inv, SeedlingObjs.filled_pot)
+        anim(FarmingSeqs.dibbing)
+        mes("You fill the plant pot with soil.")
     }
 
     private fun ProtectedAccess.water(patch: Patch, canId: Int) {
@@ -482,7 +502,7 @@ constructor(
             mes("The ${crop.key} isn't ready to harvest yet.")
             return
         }
-        if (patch.kind == Kind.Allotment && invTotal(inv, FarmingObjs.spade) == 0) {
+        if (patch.kind == Kind.Allotment && !player.hasTool(FarmingObjs.spade)) {
             mes("You need a spade to harvest your crops.")
             return
         }
@@ -610,7 +630,7 @@ constructor(
             mes("There's nothing to dig up in this ${patch.kind.noun}.")
             return
         }
-        if (invTotal(inv, FarmingObjs.spade) == 0) {
+        if (!player.hasTool(FarmingObjs.spade)) {
             mes("You need a spade to clear this ${patch.kind.noun}.")
             return
         }

@@ -37,6 +37,7 @@ constructor(
     private val dropTables: NpcDropTables,
     private val eventBus: EventBus,
     private val objTypes: ObjTypeList,
+    private val clueDrops: ClueDrops,
 ) {
     public suspend fun deathNoDrops(access: StandardNpcAccess) {
         access.death(npcRepo, seqTypes, players)
@@ -55,16 +56,22 @@ constructor(
         eventBus.publish(NpcKilledEvent(this, hero))
         val duration = hero.lootDropDuration ?: constants.lootdrop_duration
         // Npcs without a wiki drop table keep the old default: a single bones drop.
-        val drops = dropTables.roll(id)
+        val tableDrops = dropTables.roll(id)
+        // Clue scrolls roll on their own table (one per tier at a time) and are never noted.
+        val clues = clueDrops.roll(id, hero)
+        val drops = if (tableDrops == null) null else tableDrops + clues
         if (!drops.isNullOrEmpty()) {
             eventBus.publish(NpcDropsEvent(this, hero, drops))
         }
         val noted = hero.isFeatureOn(Feature.NotedDrops)
+        for ((type, count) in clues) {
+            objRepo.add(type, dropCoords, duration, hero, count)
+        }
         if (drops == null) {
             objRepo.add(dropType(objs.bones, noted), dropCoords, duration, hero)
             return
         }
-        for ((type, count) in drops) {
+        for ((type, count) in tableDrops.orEmpty()) {
             objRepo.add(dropType(type, noted), dropCoords, duration, hero, count)
         }
     }

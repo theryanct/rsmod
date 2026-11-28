@@ -6,6 +6,7 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.constructionLvl
 import org.rsmod.api.player.stat.magicLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.FurnitureMenuEntry
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.registry.region.RegionRegistry
@@ -654,7 +655,7 @@ constructor(
             return false
         }
         val hasTools =
-            invTotal(inv, ConstructionObjs.hammer) > 0 && invTotal(inv, ConstructionObjs.saw) > 0
+            player.hasTool(ConstructionObjs.hammer) && player.hasTool(ConstructionObjs.saw)
         if (!hasTools) {
             mes("You need a hammer and a saw to build furniture.")
             return false

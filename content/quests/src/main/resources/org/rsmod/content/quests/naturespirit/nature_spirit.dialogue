@@ -1,0 +1,476 @@
+# Generated from the OSRS Wiki page "Transcript:Nature Spirit" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to Drezel
+1	line	Player	Hello again, Drezel. Is there anything that I can help you out with around here?
+1	cond	If the player does not meet the requirements for Nature Spirit:
+2	line	Drezel	Well... I don't think so. There's not much to do in that place.
+2	box	You do not meet all of the requirements to start the Nature Spirit quest.
+2	action	end
+1	cond	If the player meets the requirements for Nature Spirit:
+2	line	Drezel	Well... there is something you could do for me if you're interested. Though it is quite dangerous.
+2	select	Select an option
+2	option	Well, what is it, I may be able to help?
+3	line	Player	Well, what is it, I may be able to help?
+3	line	Drezel	There's a man called Filliman who lives in Mort Myre. He comes by the temple from time to time but I haven't seen him recently. I was wondering if you could check in on him?
+3	line	Drezel	I must warn you, it could be dangerous. Mort Myre is filled with ghasts!
+3	select	Start Nature Spirit quest?
+3	option	Yes.
+4	line	Player	Yes, I'll go and look for him.
+4	line	Drezel	That's great! Many thanks!
+4	line	Drezel	Now, please be aware of the ghasts, you cannot attack them, only Filliman knew how to take them on. Just run from them if you can. If you get lost, try to make your way back to the temple.
+4	box	Drezel hands you some food.
+4	line	Drezel	Please take this food to Filliman, he'll likely appreciate it. His home is somewhere in the southern end of Mort Myre. I don't know the exact location I'm afraid.
+4	line	Player	Don't worry, if he's there and he's still alive, I'll find him.
+4	select	Select an option
+4	option	Who exactly is this Filliman?
+5	line	Player	Who exactly is this Filliman?
+5	line	Drezel	Filliman Tarlock is his full name and he's a druid. He lives in Mort Myre much like a hermit, but there's many a traveller who he's helped.
+5	line	Drezel	Most people that come this way tell stories of when they were lost and paths that just seemed to 'open up' before them! I think it was Filliman Tarlock helping out.
+5	action	other
+4	option	Where's Mort Myre?
+5	line	Player	Where's Mort Myre?
+5	line	Drezel	Mort Myre is a decayed and dangerous swamp to the south east of here. Legend says it was once a beautiful forest called Humblethorn. Now, it's filled with vile emanations from within Morytania.
+5	line	Drezel	The swamp decays everything. We put a fence around it to stop unwary travellers going in. Anyone who dies in the swamp is forever cursed to haunt it as a ghast.
+5	line	Drezel	Ghasts attack travellers, turning food to rotten filth.
+5	action	other
+4	option	What's a ghast?
+5	line	Player	What's a ghast?
+5	line	Drezel	A Ghast is a poor soul who died in Mort Myre. They're undead of a special class and they're untouchable as far as I'm aware! Filliman knows how to tackle them though.
+5	line	Drezel	When they attack, ghasts will devour any food you have. If you have no food, they'll draw their nourishment from you!
+5	action	other
+4	option	I'd better get going.
+5	line	Player	I'd better get going.
+5	action	end
+3	option	No.
+4	line	Player	Sorry, I don't think I can help.
+4	line	Drezel	That's fine, I'm sure someone else will be along shortly who can. Now, if you will excuse me, I do have some things to be getting on with.
+4	action	end
+2	option	Sorry, not interested.
+3	line	Player	Sorry, not interested.
+3	line	Drezel	Of course. I understand.
+3	action	end
+0	section	Talking to Drezel again
+1	line	Player	Hello again!
+1	line	Drezel	Have you managed to find Filliman yet?
+1	line	Player	No not yet.
+1	line	Drezel	Please go and look for him, I would appreciate it!
+1	select	Select an option
+1	option	Where should I look for Filliman Tarlock again?
+2	line	Player	Where should I look for Filliman Tarlock again?
+2	line	Drezel	Search to the south of Mort Myre. Remember that he's a druid so he can conceal himself within nature quite well. My guess is that he lives in the southern area of the swamp, though he could be anywhere.
+2	action	initial
+1	option	Explain to me what a Ghast is again.
+2	line	Player	Explain to me what a Ghast is again.
+2	line	Drezel	A Ghast is a poor soul who died in Mort Myre. They're undead of a special class, they're untouchable apart from with special druidic items.
+2	line	Drezel	Filliman knew how to tackle them, but I've not heard from him in a long time. Ghasts, when they attack, will devour any food you have. If you have no food, they'll draw their nourishment from you!
+2	action	initial
+1	option	What's the story with Mort Myre?
+2	line	Player	What's the story with Mort Myre?
+2	line	Drezel	Mort Myre was once a beautiful forest by the name of Humblethorn until the evil denizens of Morytania descended. Now their evil emanations have putrified and diseased the forest into a decaying swamp of death.
+2	action	initial
+1	option	What's the story with Filliman Tarlock?
+2	line	Player	What's the story with Filliman Tarlock?
+2	line	Drezel	Filliman is a druid of some considerable power. He helped many people in Morytania escape when the evil descended upon the land. His knowledge of plants and nature was exceptional.
+2	line	Drezel	But one day, he was betrayed by some of the people who he had tried to help. This naturally made him more careful when dealing with strangers again and so, instead of showing himself, he would follow them.
+2	line	Drezel	He would follow them at a distance and make the path clear for them, showing them to the temple and to salvation. Saradomin bless him! He is a good man.
+2	action	initial
+1	option	Ok, thanks.
+2	line	Player	Ok, thanks.
+2	line	Drezel	Many thanks to you, {player}!
+2	action	end
+0	section	Finding Filliman
+0	section	Talking to Ulizius
+1	line	Player	Hello there.
+1	line	Ulizius	What... Oh, don't creep up on me like that... I thought you were a Ghast!
+1	line	Player	Can I go through the gate please?
+1	line	Ulizius	Absolutely not! I've been given strict instructions not to let anyone through. It's just too dangerous. No one gets in without Drezels say so!
+1	line	Player	But I'm doing a quest for Drezel!
+1	line	Ulizius	Ok, on your way then!
+1	action	end
+0	section	Entering the gate to Mort Myre Swamp
+1	action	Warning! Mort Myre is a dangerous ghast-infested swamp. Do not enter if you value your life.
+1	option	Enter the swamp.
+2	action	end
+1	option	Stay out
+2	action	end
+0	section	Entering Filliman's island
+1	cond	If the player attempts to jump through the bridge but fails:
+2	action	The player takes [2-7] damage.
+2	action	end
+1	cond	If the player attempts to jump through the bridge and succeeds:
+1	cond	Whilst inside the island:
+2	action	end
+1	cond	If the player takes the nearby washing bowl:
+2	action	
+2	action	end
+1	cond	If the player searches the stone to the south:
+2	box	You search the stone and find that it has some sort of faith symbol scratched into it.
+2	action	end
+1	cond	If the player searches the stone to the east:
+2	box	You search the stone and find that it has some sort of spirit symbol scratched into it.
+2	action	end
+1	cond	If the player searches the stone to the west:
+2	box	You search the stone and find that it has some sort of nature symbol scratched into it.
+2	action	end
+1	cond	If the player looks at the Grotto tree:
+2	action	end
+1	cond	If the player searches the Grotto tree:
+2	action	journal]]
+2	box	You search the strange rock. You find a knot and inside of it you discover a small tome. The words on the front are a bit vague, but you make out the words 'Tarlock' and 'journal'.
+2	action	end
+1	cond	If the player searches the Grotto tree again with the journal in their inventory:
+2	action	end
+0	section	Talking to Filliman
+1	cond	If the player attempts to enter the Grotto:
+2	box	A shifting apparition appears in front of you.
+2	cond	If the player is not wearing the Ghostspeak amulet:
+3	line	Filliman Tarlock	Cannot wake up... Where am I?
+3	line	Player	Huh? What's this?
+3	line	Filliman Tarlock	What did I write down now? Put it in the knot hole.
+3	line	Filliman Tarlock	Ahhrs Oooohh arhhhhAHhhh.
+3	line	Player	Huh! Now you're just not making any sense at all! I just cannot understand you!
+3	action	end
+2	cond	If the player is wearing the Ghostspeak amulet:
+3	line	Player	Hello?
+3	line	Filliman Tarlock	Oh, I understand you! At last, someone who doesn't just mumble. I understand what you're saying!
+3	select	Select an option
+3	option	I'm wearing an amulet of ghost speak!
+4	line	Player	I'm wearing an amulet of ghost speak!
+4	line	Filliman Tarlock	Why you poor fellow, have you passed away and you want to send a message back to a loved one?
+4	line	Player	Err.. Not exactly...
+4	line	Filliman Tarlock	You have come to haunt my dreams until I pass on your message to a dearly loved one. I understand. Pray, tell me who would you like me to pass a message on to?
+4	line	Player	Ermm, you don't understand... It's just that..
+4	line	Filliman Tarlock	Yes!
+4	line	Player	Well, please don't be upset or anything... But you're the ghost!
+4	line	Filliman Tarlock	Don't be silly now! That in no way reflects the truth!
+4	action	initial
+3	option	How long have you been a ghost?
+4	line	Player	How long have you been a ghost?
+4	line	Filliman Tarlock	What?! Don't be preposterous! I'm not a ghost! How could you say something like that?
+4	line	Player	But it's true, you're a ghost... well, at least that is to say, you're sort of not alive anymore.
+4	line	Filliman Tarlock	Don't be silly, I can see you, I can see that tree. If I were dead, I wouldn't be able to see anything.. What you say just doesn't reflect the truth. You'll have to try harder to pull one over on me!
+4	action	initial
+3	option	What's it like being a ghost?
+4	line	Player	What's it like being a ghost?
+4	line	Filliman Tarlock	Oh, it's quite.... Oh... Trying to catch me out were you! Anyone can clearly see that I am not a ghost!
+4	line	Player	But you are a ghost, look at yourself! I can see straight through you! You're as dead as this swamp! Err... No offence or anything...
+4	line	Filliman Tarlock	No I won't take offence because I'm not dead and I'm afraid you'll have to come up with some pretty conclusive proof before I believe it. What a strange dream this is.
+4	action	initial
+3	option	Ok, thanks.
+4	line	Player	Ok thanks.
+4	action	end
+0	section	Talking to Drezel after talking to Filliman without a ghostspeak amulet
+1	line	Player	I've found Filliman and you should prepare for some sad news.
+1	line	Drezel	You mean... he's dead?
+1	line	Player	Well, er sort of. I got to his camp and I encountered a spirit of some kind. I don't think it was a Ghast, it tried to communicate with me, but made no sense, it was all 'ooooh' this and 'oooh' that.
+1	line	Drezel	Hmmm, that's very interesting, I seem to remember Father Aereck in Lumbridge and his predecessor Father Urhney having a similar issue. Though this is probably not related to your problem.
+1	line	Drezel	I will pray that it wasn't the spirit of my friend Filliman, but some lost soul who needs some help. Please do let me know how you get on with it.
+1	action	end
+0	section	Using the journal on Filliman before using the mirror
+1	line	Filliman Tarlock	Oh, keep hold of that, I may need it later.
+1	action	end
+0	section	Subsequent dialogue with Filliman
+1	cond	If the player talks to him again without wearing a ghostspeak amulet:
+2	line	Filliman Tarlock	Ahhrs Oooohh arhhhhAHhhh.
+2	action	end
+1	cond	If the player talks to him again after speaking to him with a ghostspeak amulet:
+2	line	Player	Hello again!
+2	line	Filliman Tarlock	Oh, hello there, do you still think I'm dead? It's hard to see how I could be dead when I'm still in the world. I can see everything quite clearly. And nothing of what you say reflects the truth.
+2	line	Player	Yes, I do think you're dead and I'll prove it somehow.
+2	action	initial
+1	cond	If the player uses the mirror on Filliman without wearing the ghostspeak amulet:
+2	action	above
+1	cond	If the player uses the mirror on Filliman whilst wearing the ghostspeak amulet:
+2	box	You use the mirror on the spirit of the dead Filliman Tarlock.
+2	line	Player	Here take a look at this, perhaps you can see that you're utterly transparent now!
+2	box	The spirit of Filliman reaches forwards and takes the mirror.
+2	line	Filliman Tarlock	Well, that is the most peculiar thing I've ever experienced. This mirror must somehow be dysfunctional. Strange how well it reflects the stagnant swamp behind me, but there is nothing of my own
+2	line	Filliman Tarlock	visage apparent.
+2	line	Player	That's because you're dead! Dead as a door nail.. Deader in fact... You bear a remarkable resemblance to worm bait! Err.. No offence...
+2	line	Filliman Tarlock	I think you might be right my friend, though I still feel very much alive. It is strange how I still come to be here and yet I've not turned into a Ghast.
+2	line	Filliman Tarlock	It must be a sign... Yes a sign... I must try to find out what it means. Now, where did I put my journal?
+2	action	end
+1	cond	If the player uses his journal on Filliman without wearing the ghostspeak amulet:
+2	line	Filliman Tarlock	Ahhrs Oooohh arhhhhAHhhh.
+2	action	end
+1	cond	If the player uses his journal on Filliman whilst wearing the ghostspeak amulet:
+2	box	You give the journal to Filliman Tarlock.
+2	line	Player	Here, I found this, maybe you can use it?
+2	line	Filliman Tarlock	My journal! That should help to collect my thoughts.
+2	box	~ The spirit starts leafing through the journal. ~ ~ He seems quite distant as he regards the pages. ~ ~ After some time the druid faces you again. ~
+2	line	Filliman Tarlock	It's all coming back to me now. It looks like I came to a violent and bitter end but that's not important now. I just have to figure out what I am going to do now?
+2	select	Select an option
+2	option	Being dead, what options do you think you have?
+3	line	Player	Being dead, what options do you think you have? I'm not trying to be rude or something, but it's not like you have many options is it? I mean, it's either up or down for you isn't it?
+3	line	Filliman Tarlock	Hmm, well you're a poetic one aren't you. Your material world logic stands you in good stead... If you're standing in the material world...
+3	action	initial
+2	option	So, what's your plan?
+3	line	Player	So, what's your plan?
+3	line	Filliman Tarlock	In my former incarnation I was Filliman Tarlock, a great druid of some power. I spent many years in this place, which was once a forest and I would wish to protect it as a nature sprit.
+3	action	initial
+2	option	Well, good luck with that.
+3	line	Player	Well, good luck with that.
+3	line	Filliman Tarlock	Won't you help me to become a nature spirit? I could really use your help!
+3	action	initial
+2	option	How can I help?
+3	line	Player	How can I help?
+3	line	Filliman Tarlock	Will you help me to become a nature spirit? The directions for becoming one are a bit vague, I need three things but I know how to get one of them. Perhaps you can help collect the rest?
+3	line	Player	I might be interested, what's involved?
+3	line	Filliman Tarlock	Well, the book says, that I need, and I quote:- 'Something with faith', 'something from nature' and 'something of the 'spirit-to-become' freely given'. Hmm, I know how to get something from nature.
+3	line	Player	Well, that does seem a bit vague.
+3	line	Filliman Tarlock	Hmm, it does and I could understand if you didn't want to help. However, if you could perhaps at least get the item from nature, that would be a start. Perhaps we can figure out the rest as we go along.
+3	box	The druid produces a small sheet of papyrus with some writing on it.
+3	line	Filliman Tarlock	This spell needs to be cast in the swamp after you have been blessed. I'm afraid you'll need to go to the temple to the North and ask a member of the clergy to bless you.
+3	line	Player	Blessed, what does that do?
+3	line	Filliman Tarlock	It is required if you're to cast this druid spell. Once you've cast the spell, you should find something from nature. Bring it back to me and then we'll try to figure out the other things we need.
+3	action	end
+2	option	Ok thanks.
+3	line	Player	Ok thanks.
+3	action	end
+0	section	Talking to Filliman again after using a mirror on him
+1	line	Player	Hello again..
+1	line	Filliman Tarlock	Oh, hello... Sorry, you've caught me at a bad time, it's just that I've had a sign you see and I need to find my journal.
+1	line	Player	Where did you put it?
+1	line	Filliman Tarlock	Well, if I knew that, I wouldn't still be looking for it. However, I do remember something about a knot? Perhaps I was meant to tie a knot or something?
+1	action	end
+0	section	Using a mirror on Filliman again
+1	line	Filliman Tarlock	Yes, I know, I'm already dead! Thanks for reminding me.
+1	action	end
+0	section	Subsequent dialogue with Filliman
+1	cond	If the player is not wearing their ghostspeak amulet:
+2	line	Filliman Tarlock	Ahhrs Oooohh arhhhhAHhhh.
+2	action	end
+1	cond	If the player did not go offer their help yet:
+2	line	Filliman Tarlock	Thanks for the journal, I've been reading it. It looks like I came to a violent and bitter end but that's not really important. I just have to figure out what I am going to do now?
+2	action	initial
+1	cond	If the player offered their help:
+2	line	Filliman Tarlock	Hello there, have you been blessed yet?
+2	line	Player	No, not yet.
+2	line	Filliman Tarlock	Well, hurry up!
+2	action	end
+1	cond	If the player attempts to cast the Druidic spell without being blessed:
+2	box	You've not been told how to use this item yet.
+2	action	end
+0	section	Talking to Drezel
+1	line	Player	Hello again! I'm helping Filliman, he plans to become a nature spirit. I have a spell to cast but first I need to be blessed. Can you bless me?
+1	line	Drezel	But you haven't sneezed!
+1	line	Player	You're so funny!
+1	line	Player	But can you bless me?
+1	line	Drezel	Very well my friend, prepare yourself for the blessings of Saradomin. Here we go!
+1	line	Drezel	Ashustru, blessidium, adverturasi, fidum!
+1	line	Drezel	There you go my friend, you're now blessed. It's funny, now I look at you, there seems to be something of the faith about you. Anyway, good luck with your quest!
+1	line	Player	Many thanks!
+1	action	end
+0	section	Subsequent dialogue with Drezel
+1	line	Drezel	How's life been treating you since you got blessed?
+1	line	Player	Not so bad!
+1	line	Drezel	It's funny, because when I look at you, there does seem to be something of the faith about you. Have you considered a life of service to Saradomin?
+1	line	Player	I serve Saradomin in other ways.
+1	line	Drezel	Fair enough!
+1	action	end
+0	section	Talking to Filliman
+1	cond	If the player talks to Filliman but has not cast the Bloom spell:
+2	line	Player	Hello, I've been blessed but I don't know what to do now.
+2	line	Filliman Tarlock	Well, you need to bring 'something from nature', 'something with faith' and 'something of the spirit-to-become freely given.'
+2	line	Player	Yeah, but what does that mean?
+2	line	Filliman Tarlock	Hmm, it is a conundrum, however, if you use that Bloom spell I gave you, you should be able to get something from nature. Once you have that, we may be able to puzzle the rest out.
+2	action	end
+1	cond	If the player casts the Bloom spell but nothing rotten is nearby:
+2	action	end
+1	cond	If the player casts the Bloom spell and there are nearby rotten remnants:
+2	action	
+2	action	end
+1	cond	If the player returns and talks to Filliman after casting the Bloom spell:
+2	line	Filliman Tarlock	Did you manage to get something from nature?
+2	box	You show the fungus to Filliman.
+2	line	Filliman Tarlock	Wonderful, the mushroom represents 'something from nature'. Now we need to work out what the other components of the spell are!
+2	select	Select an option
+2	option	What are the things that are needed?
+3	line	Filliman Tarlock	The three things are: 'Something with faith', 'something from nature' and 'something of the spirit-to-become freely given'.
+3	line	Player	Ok, and 'something from nature' is the mushroom from the bloom spell you gave me?
+3	line	Filliman Tarlock	Yes, that's correct, that seems right to me. The other things we need are 'something with faith' and 'something of the spirit-to-become freely given.
+3	line	Player	Do you have any ideas what those things are?
+3	line	Filliman Tarlock	I'm sorry my friend, but I do not.
+3	action	initial
+2	option	What should I do when I have those things?
+3	line	Player	What should we do when we have those things?
+3	line	Filliman Tarlock	Ah yes, I looked this up. It says,.. 'to arrange upon three rocks around the spirit-to-become...'. Then I must cast a spell. As you can see, I've already placed the rocks. I must have planned to do this before I died!
+3	line	Player	Can we just place the components on any rock?
+3	line	Filliman Tarlock	Well, the only thing the journal says is that 'something with faith stands south of the spirit-to-become', but I'm so confused now I don't really know what that means. Oh, if only I had all my faculties!
+3	action	initial
+2	option	I think I've solved the puzzle!
+3	line	Player	I think I've solved the puzzle!
+3	line	Filliman Tarlock	Oh really.. Have you placed all the items on the stones? Ok, well, lets try! #0000ff|~ The druid attempts to cast a spell.~
+3	cond	If the player does not have all three items:
+4	line	Filliman Tarlock	Hmm, something still doesn't seem right. I think we need something more before we can continue.
+4	action	end
+2	option	Could I have another bloom scroll please?
+3	line	Player	Could I have another bloom scroll please?
+3	cond	If the player does not have any inventory space:
+4	line	Filliman Tarlock	I would my friend, but you don't seem to have enough space in your inventory.
+4	action	end
+3	cond	If the player has one free inventory space:
+4	action	
+4	line	Filliman Tarlock	Sure, but please look after this one.
+4	action	
+4	box	The spirit of Filliman Tarlock gives you another bloom spell.
+4	action	end
+2	option	Ok, thanks.
+3	line	Player	Ok, thanks.
+3	action	end
+0	section	Talking to Drezel after showing Filliman the fungus
+1	line	Player	I've shown Filliman the fungus, but I'm not sure what to do now?
+1	line	Drezel	Well, what does he need now? Has he asked for any other things? What does it take to become a Nature Spirit?
+0	section	Finding and using the three items on the stones
+0	section	Brown stone
+1	cond	If the player uses the wrong item on the brown stone:
+2	action	end
+1	cond	If the player uses the mort myre fungus on the brown stone:
+2	action	end
+1	cond	If the player uses another mort myre fungus (or a wrong item) after already placing it on the stone:
+2	action	end
+0	section	Grey stone
+1	cond	If the player uses the wrong item on the grey stone:
+2	action	end
+1	cond	If the player uses the mirror on the grey stone:
+2	line	Filliman Tarlock	Hmm, that doesn't seem quite right.
+2	action	end
+1	cond	If the player uses the used spell scroll on the grey stone:
+2	line	Filliman Tarlock	Aha, yes, that seems right well done!
+2	action	end
+1	cond	If the player uses another used spell (or a wrong item) after already placing it on the stone:
+2	action	end
+0	section	Orange stone
+1	cond	If the player uses the wrong item on the orange stone:
+2	action	end
+0	section	Talking to Filliman again on the orange stone
+1	cond	If the player asks for the spell but the items are not all on their respective stones:
+2	line	Player	I think I've solved the puzzle!
+2	line	Filliman Tarlock	Oh really.. Have you placed all the items on the stones? Ok, well, lets try! #0000ff|~ The druid attempts to cast a spell.
+2	line	Filliman Tarlock	Hmm, something still doesn't seem right. I think we need something more before we can continue.
+2	action	end
+1	cond	If the player asks for the spell and all the items are placed onto their respective stones:
+2	line	Player	I think I've solved the puzzle!
+2	line	Filliman Tarlock	Oh really.. Have you placed all the items on the stones? Ok, well, lets try! #0000ff|~ The druid attempts to cast a spell.~
+2	line	Filliman Tarlock	Aha, everything seems to be in place! You can come through now into the grotto for the final section of my transformation.
+2	action	end
+0	section	Searching all the stones after the spell
+1	cond	If the player searches the grey stone:
+2	box	You search the stone and find that it has some sort of spirit symbol scratched into it. This stone seems to be complete in some way.
+2	action	end
+1	cond	If the player searches the brown stone:
+2	box	You search the stone and find that it has some sort of nature symbol scratched into it. This stone seems complete in some way.
+2	action	end
+1	cond	If the player searches the orange stone:
+2	box	You search the stone and find that it has some sort of faith symbol scratched into it. This stone seems to be complete somehow.
+2	action	end
+0	section	Talking to Filliman outside the grove again
+1	line	Filliman Tarlock	Please come down into the grotto, we have much to discuss.
+1	action	end
+0	section	Entering Filliman's grove
+1	cond	If the player enters the grove:
+2	action	end
+1	cond	If the player picks up and uses the Druid pouch:
+2	box	You've not been told how to use this item yet.
+2	action	end
+0	section	Talking to Filliman inside his grove
+1	cond	If the player searches the grotto:
+2	line	Filliman Tarlock	Well, hello there again, I was just enjoying the grotto. Many thanks for your help, I couldn't have become a Spirit of nature without you.
+2	line	Filliman Tarlock	I must complete the transformation now. Just stand there and watch the show, apparently it's quite good!
+2	line	Nature Spirit	Hmmm, good, the transformation is complete. Now, my friend, in return for your assistance, I will help you to kill the Ghasts. First bring to me a silver sickle so that I can bless it for you.
+2	line	Player	A silver sickle? What's that?
+2	line	Nature Spirit	The sickle is the symbol and weapon of the Druid, you need to construct one of silver so that I can bless it, with its powers you will be able to defeat the Ghasts of Mort Myre.
+2	select	Select an option
+2	option	Where would I get a silver sickle?
+3	line	Player	Where would I get a silver sickle?
+3	line	Nature Spirit	You could make one yourself if you're artisan enough. I've heard of a distant sandy place where you can buy the mould that you require, it's similar in many respects to the creating of a holy symbol.
+3	action	initial
+2	option	What will you do to the silver sickle?
+3	line	Player	What will you do to the silver sickle?
+3	line	Nature Spirit	Why, I will give it my blessings so that the very swamp in which you stand will blossom and bloom!
+3	action	initial
+2	option	How can a blessed sickle help me to defeat the Ghasts?
+3	line	Player	How can a blessed sickle help me to defeat the Ghasts?
+3	line	Nature Spirit	My blessings will entice nature to bloom in Mort Myre! And then with natures harvest you can fill a druids pouch and release the Ghasts from their torment.
+3	action	initial
+2	option	Ok, thanks.
+3	line	Player	Ok thanks.
+3	action	end
+0	section	Talking to Drezel
+1	line	Player	Hi again. Filliman has turned into the Nature Spirit. I've just gotten the Silver sickle that he asked me to get. He says he's going to bless it!
+1	line	Drezel	Well, that's great! You'd best take it to him then with all haste!
+1	action	end
+0	section	Talking to Filliman inside his grotto again
+1	cond	If the player does not have the sickle in their inventory:
+2	line	Nature Spirit	Have you brought me the silver sickle?
+2	line	Player	No sorry, not yet!
+2	line	Nature Spirit	Well, come to me when you have it.
+2	action	initial
+1	cond	If the player has the silver sickle in their inventory:
+2	line	Nature Spirit	Have you brought me the silver sickle?
+2	line	Player	Yes, here it is. What are you going to do with it?
+2	line	Nature Spirit	My friend, I will bless it for you and you will then be able to accomplish great things. Now then, I must cast the enchantment. You can bless a new sickle by dipping it in the holy water of the grotto.
+2	box	~ If you lose the blessed sickle, you can bless ~~ a new sickle by dipping it in the grotto waters. ~}}
+2	line	Nature Spirit	Now you can go forth and make the swamp bloom. Collect natures bounty to fill a druids pouch. So armed will the Ghasts be bound to you until, you flee or they are defeated.
+2	line	Nature Spirit	Before I can make this grotto into an Altar of Nature, I need to be sure that the Ghasts will be kept at bay. Go forth into Mort Myre and slay three Ghasts. You'll be releasing their souls from Mort Myre.
+2	cond	If the player does not have inventory space:
+3	line	Filliman Tarlock	I would give you the druid pouch, but you don't seem to have enough space in your inventory.
+3	action	end
+2	cond	If the player has one free inventory space:
+3	box	The nature spirit gives you an empty pouch.
+3	line	Nature Spirit	You'll need this in order to collect together natures bounty. When it contains items, it will bind the Ghast to you until you flee or it is defeated.
+3	action	end
+0	section	Talking to Filliman outside the grotto after he becomes a nature spirit
+0	section	Subsequent dialogue with Filliman
+1	line	Nature Spirit	Hello again my friend, have you defeated three Ghasts as I asked you?
+1	line	Player	Not yet.
+1	line	Nature Spirit	Well, when you do, please come to me and I'll reward you!
+1	select	Select an option
+1	option	How do I get to attack the Ghasts?
+2	line	Player	How do I get to attack the Ghasts?
+2	line	Nature Spirit	Go forth and with the sickle make the swamp bloom. Collect natures bounty to fill a druids pouch. So armed will the Ghasts be bound to you until, you flee or they are defeated.
+2	action	initial
+1	option	What's this pouch for?
+2	line	Player	What's this pouch for?
+2	line	Nature Spirit	It is for collecting natures bounty, once it contains the blossomed items of the swamp, it will make the Ghasts appear and you can then attack them.
+2	action	initial
+1	option	What can I do with this sickle?
+2	line	Player	What can I do with this sickle?
+2	line	Nature Spirit	You may use it wisely within the area of Mort Myre to affect natures balance and bring forth a bounty of natures harvest. Once collected into the druid pouch will the Ghast be apparent.
+2	action	initial
+1	option	I've lost my sickle.
+2	line	Player	I've lost my sickle!
+2	line	Nature Spirit	If you should lose the blessed sickle, simply bring another to my altar of nature and refresh it in the grotto waters.
+2	action	initial
+1	option	Ok, thanks.
+2	line	Player	Ok thanks.
+2	action	end
+0	section	Talking to Drezel
+1	line	Player	Hiya, I'm a mighty Ghast killer! I've killed [X] so far!
+1	line	Drezel	That's great! How many did Filliman ask you kill?
+1	line	Player	He asked me to kill 3!
+1	cond	If the player has killed 1 ghast:
+2	line	Drezel	So, you've got two more to kill then!
+2	action	end
+1	cond	If the player has killed 2 ghasts:
+2	line	Drezel	So, you've got one more to kill then!
+2	action	end
+1	cond	If the player has killed 3 ghasts:
+2	line	Drezel	So, you've killed them all then! Go and tell him, I'll bet he'll be pleased.
+2	action	end
+0	section	Fighting the Ghasts
+1	cond	If the ghast attacks the player with a filled druid pouch or if the player uses the filled pouch on an invisible ghast:
+2	cond	If there is nothing left in the pouch:
+3	action	end
+1	cond	If the player kills the first visible ghast:
+2	action	end
+1	cond	If the player kills the second visible ghast:
+2	action	end
+1	cond	If the player kills the third visible ghast:
+2	action	end
+0	section	Returning to Filliman's grove
+1	line	Nature Spirit	Hello again my friend, have you defeated three Ghasts as I asked you?
+1	line	Player	Yes, I've killed all three and their spirits have been released!
+1	line	Nature Spirit	Many thanks my friend, you have completed your quest! I can now change this place into a holy sanctuary! And forever will it now be an Altar of Nature!
+1	line	Nature Spirit	Welcome to my Altar to Nature! Farewell my friend, and keep those Ghasts at bay!
+0	section	Attempting to talk to him again before he disappears

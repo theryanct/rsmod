@@ -2,6 +2,7 @@ package org.rsmod.content.skills.construction
 
 import jakarta.inject.Inject
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onOpLoc1
@@ -61,7 +62,7 @@ constructor(private val objTypes: ObjTypeList, private val locRepo: LocRepositor
     }
 
     private fun ProtectedAccess.light(loc: BoundLocInfo, unlit: String, lit: String) {
-        if (PohFurnitureObjs.tinderbox !in inv) {
+        if (!player.hasTool(PohFurnitureObjs.tinderbox)) {
             mes("You need a tinderbox to light that.")
             return
         }

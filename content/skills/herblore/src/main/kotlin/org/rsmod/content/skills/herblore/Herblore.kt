@@ -11,6 +11,7 @@ import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.poison.curePoison
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.script.isHeldOpBound
@@ -19,6 +20,7 @@ import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
 import org.rsmod.api.script.onOpHeld4
 import org.rsmod.api.script.onOpHeld5
+import org.rsmod.api.script.onOpHeldLabel
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
@@ -74,6 +76,14 @@ constructor(
         val pestle = obj(HerbloreData.PESTLE)
         for (grind in HerbloreData.grinds) {
             onOpHeldU(pestle, obj(grind.source)) { grind(grind) }
+            // "Grind" (tool-belt material op): pestle and mortar carried or on the belt.
+            onOpHeldLabel(objTypes, obj(grind.source), "Grind") {
+                if (player.hasTool(pestle)) {
+                    grind(grind)
+                } else {
+                    mes("You need a pestle and mortar to grind that.")
+                }
+            }
         }
         for (drink in HerbloreData.drinks) {
             for ((index, dose) in drink.doses.withIndex()) {
@@ -230,6 +240,7 @@ constructor(
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
             is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
             is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
+            Effect.Stamina -> Stamina.drink(player)
         }
     }
 

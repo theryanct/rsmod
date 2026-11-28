@@ -21,6 +21,9 @@ object Constants {
     const val lootdrop_duration: Int = 200
     const val shop_default_size: Int = 40
 
+    /** Tool belt slots: the size of the client's `tackle_box` inv (651) the belt is drawn from. */
+    const val toolbelt_size: Int = 37
+
     // Common direction angles for `exactmove`.
     const val em_face_south = 0
     const val em_face_southwest = 256

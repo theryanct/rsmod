@@ -1,0 +1,238 @@
+# Generated from the OSRS Wiki page "Transcript:Dwarf Cannon" by tools/quests/transcript_to_dialogue.py
+0	section	Captain Lawgof
+1	line	Player	Hello.
+1	line	Captain Lawgof	Guthix be praised, the cavalry has arrived! Hero, how would you like to be made an honorary member of the Black Guard?
+1	line	Player	The Black Guard? What's that?
+1	line	Captain Lawgof	Hawhaw! 'What's that' [he/she] asks, what a sense of humour! The Black Guard is the finest regiment in the dwarven army. Only the best of the best are allowed to join it and then they receive months of rigorous training.
+1	line	Captain Lawgof	However, we are currently in need of a hero, so for a limited time only I'm offering you, a human, a chance to join this prestigious regiment. What do you say?
+1	select	Start the Dwarf Cannon quest?
+1	option	Yes.
+2	line	Player	Sure, I'd be honoured to join.
+2	line	Captain Lawgof	That's the spirit! Now trooper, we have no time to waste - the goblins are attacking from the forests to the South. There are so many of them, they are overwhelming my men and breaking through our
+2	line	Captain Lawgof	perimeter defences; could you please try to fix the stockade by replacing the broken rails with these new ones?
+2	line	Player	Sure, sounds easy enough...
+2	box	The Dwarf Captain gives you six railings.
+2	cond	If the player does not have a hammer:
+3	line	Captain Lawgof	You'll need this hammer too.
+3	action	
+2	line	Captain Lawgof	Report back to me once you've fixed the railings.
+2	line	Player	Yes Sir, Captain!
+2	action	end
+1	option	No.
+2	line	Player	I'm sorry, I'm too busy mining.
+2	line	Captain Lawgof	Well best make the most of it while you can, if the goblins over-run us they'll descend on the mines like a plague of locusts!
+2	action	end
+0	section	Inspecting the broken multicannon
+1	box	The Black Guard sent Lawgof this cannon to help defend the mines against the goblins.
+1	action	end
+0	section	Fixing the Railings
+0	section	Trying to fix a railing
+1	box	This railing is broken and needs to be replaced.
+1	cond	If the player does not have a railing:
+2	line	Player	I'm not going to be able to fix this without a new railing. Lawgof should have some spare ones.
+2	action	end
+1	cond	If the player does not have a hammer:
+2	action	end
+1	cond	If the player fails to repair the railing:
+2	option	Dialogue 1
+2	option	Dialogue 2
+2	option	Dialogue 3
+2	option	Dialogue 4
+2	action	(The player is dealt 0-2 damage.)
+2	option	Dialogue 1
+3	line	Player	Oooch!
+2	option	Dialogue 2
+3	line	Player	Ow!
+2	option	Dialogue 3
+3	line	Player	Urrrgh!
+2	option	Dialogue 4
+3	line	Player	Gah!
+2	action	end
+1	cond	If the player successfully repairs the railing:
+1	cond	If all the railing are fixed:
+2	line	Player	I've fixed all these railings now.
+1	action	end
+0	section	Inspecting a fixed railing or using a railing on a fixed railing
+1	line	Player	I've fixed all these railings now.
+1	action	end
+0	section	Using other items on fixed railing
+1	line	Player	That's better, the goblins won't get past this piece of fencing now.
+1	action	end
+0	section	Talking to Captain Lawgof before fixing the railings
+1	line	Player	Hello.
+1	line	Captain Lawgof	Hello, trooper, how are you doing with those railings?
+1	line	Player	I'm getting there.
+1	line	Captain Lawgof	The goblins are still getting in, so there must still be some broken railings.
+1	cond	If the player has no railings:
+2	line	Player	But I'm out of railings...
+2	line	Captain Lawgof	That's okay, we've got plenty, here you go.
+2	cond	If the player has no inventory space:
+3	line	Captain Lawgof	There's no room in your backpack, so I can't give you anymore.
+3	action	end
+2	action	end
+1	cond	If the player has at least 1 railing:
+2	line	Player	Don't worry, I'll find them soon enough.
+2	action	end
+0	section	Talking to Captain Lawgof after fixing the railings
+1	line	Captain Lawgof	Well done, trooper! The goblins seems to have stopped getting in. I think you've done the job!
+1	line	Player	Great, I'll be getting on then.
+1	line	Captain Lawgof	What? I'll have you jailed for desertion!
+1	line	Captain Lawgof	Besides, I have another commission for you. Just before the goblins over-ran us we lost contact with our watch tower to the South, that's why the goblins managed to catch us unawares. I'd like you to perform
+1	line	Captain Lawgof	a covert operation into enemy territory, to check up on the guards we have stationed there.
+1	line	Captain Lawgof	They should have reported in by now ...
+1	line	Player	Okay, I'll see what I can find out.
+1	line	Captain Lawgof	Excellent! I have two men there, the dwarf-in-charge is called Gilob, find him and tell him that I'll send him a relief guard just as soon as we mop up these remaining goblins.
+1	action	end
+0	section	Talking to Captain Lawgof again without visiting the watchtower
+1	line	Player	HelloNo period
+1	line	Captain Lawgof	Hello, any news from the watchman?
+1	line	Player	Not yet.
+1	line	Captain Lawgof	Well, as quick as you can then.
+1	action	end
+0	section	Finding the Remains
+0	section	Picking up the remains
+1	cond	If the player already has the remains:
+2	line	Player	What? Carrying one set of Dwarf remains is enough...
+2	action	end
+1	line	Player	I had better take these remains. Remains drop to ground with full inventory.
+1	action	end
+0	section	Talking to Captain Lawgof after picking up and losing the remains
+1	line	Player	Hello.
+1	line	Captain Lawgof	Have you been to the watch tower yet?
+1	line	Player	Yes, I went up but there was no one there.
+1	line	Captain Lawgof	That's strange, Gilob would never leave his post... His son was also with him, something doesn't smell right. Can you return and look for clues?
+1	line	Player	Of course, I'll do what I can.
+1	action	end
+0	section	Talking to Captain Lawgof after getting the remains
+1	line	Player	Hello.
+1	line	Captain Lawgof	Have you been to the watch tower yet?
+1	line	Player	I have some terrible news for you Captain, the goblins over ran the tower, your guards fought well but were overwhelmed.
+1	box	You give the Dwarf Captain his subordinate's remains...
+1	line	Captain Lawgof	I can't believe it, Gilob was the finest lieutenant I had! We'll give him a fitting funeral, but what of his command? His son, Lollk, was with him. Did you find his body too?
+1	line	Player	No, there was only one body there, I searched pretty well.
+1	line	Captain Lawgof	The goblins must have taken him. Please traveler, seek out the goblins' hideout and return the lad to us. They always attack from the South-east, so they must be based down there.
+1	line	Player	Okay, I'll see if I can find their hideout.
+1	action	end
+0	section	The dwarf child
+0	section	Searching the crate containing Lollk before returning the remains
+0	section	Searching the crate containing Lollk
+1	line	Lollk	Thank the heavens, you saved me! I thought I'd be goblin lunch for sure!
+1	line	Player	Are you okay?
+1	line	Lollk	I think so, I'd better run off home.
+1	line	Player	That's right, you get going, I'll catch up.
+1	line	Lollk	Thanks again, brave adventurer.
+1	action	end
+0	section	Talking to Captain Lawgof after finding Lollk
+1	line	Player	Hello, has Lollk returned yet?
+1	line	Captain Lawgof	He has, and I thank you from the bottom of my heart - without you he'd be a goblin barbecue!
+1	line	Player	Always a pleasure to help.
+1	line	Captain Lawgof	In that case could I ask one more favour of you...
+1	line	Captain Lawgof	When the goblins attacked us some of them managed to slip past my guards and sabotage our cannon. I don't have anybody who understands how it works, could you have a look at it and see if you could get it working for
+1	line	Captain Lawgof	us, please?
+1	select	Select an Option
+1	option	Okay, I'll see what I can do.
+2	line	Player	Okay, I'll see what I can do.
+2	line	Captain Lawgof	Thank you, take this toolkit, you'll need it...
+2	cond	If the player has no inventory space:
+3	line	Captain Lawgof	You don't have room to take this, report back to me when you do.
+3	action	end
+2	line	Captain Lawgof	Report back to me if you manage to fix it.
+2	action	end
+1	option	Sorry, I've done enough for today.
+2	line	Player	Sorry, I've done enough for today.
+2	line	Captain Lawgof	Fair enough, didn't think you'd be able to help anyway, not much chance for a human to be able to fix it when the best dwarven engineers have failed.
+2	action	end
+0	section	Fixing the cannon
+0	section	Inspecting the broken multicannon after getting the toolkit
+1	line	Player	I guess I'd better fix it with the toolkit I was given.
+1	action	end
+0	section	Talking to Captain Lawgof before fixing the cannon
+1	line	Captain Lawgof	How are you doing in there, trooper? We've been trying our best with that thing, but I just haven't got the patience.
+1	line	Player	It's not an easy job, but I'm getting there.
+1	line	Captain Lawgof	Good stuff, let me know if you have any luck. If we manage to get that thing working, those goblins will be no trouble at all.
+1	cond	If the player lost the toolkit:
+2	line	Player	I'm afraid I lost the toolkit...
+2	cond	If the player has no inventory space:
+3	line	Captain Lawgof	That was silly... never mind, I can give you another, but you'll have to free up some space in your backpack first.
+3	action	end
+2	line	Captain Lawgof	That was silly... never mind, here you go.
+1	action	end
+0	section	Fixing the cannon
+0	section	Fire the fixed dwarf multicannon
+1	line	Player	This should work nicely now that I've fixed it.
+1	action	end
+0	section	Pick-up the fixed dwarf multicannon
+1	line	Captain Lawgof	What do you think you're doing, trooper! Did I give you orders to move that cannon? No! Well then don't!
+1	action	end
+0	section	Talking to Captain Lawgof after fixing the cannon
+1	line	Player	Hello again.
+1	line	Captain Lawgof	Hello there trooper, how's things?
+1	line	Player	Well, I think I've done it, take a look...
+1	line	Captain Lawgof	That's fantastic, well done!
+1	line	Captain Lawgof	Well I don't believe it, it seems to be working perfectly! I seem to have underestimated you, trooper!
+1	line	Player	Not bad for an adventurer eh?
+1	line	Captain Lawgof	Not bad at all, your effort is appreciated, my friend. Now, if I could figure what the thing uses as ammo...
+1	line	Captain Lawgof	The Black Guard forgot to send instructions. I know I said that was the last favour, but...
+1	line	Player	What now?
+1	line	Captain Lawgof	I can't leave this post, could you go to the Black Guard base and find out what this thing actually shoots?
+1	select	Select an Option
+1	option	Sorry, I've really done enough.
+2	line	Player	Sorry, I've really done enough.
+2	line	Captain Lawgof	Fair enough, fair enough.
+2	action	end
+1	option	Okay then, just for you!
+2	line	Player	Okay then, just for you!
+2	line	Captain Lawgof	That's great, we were lucky you came along when you did. The base is located just South of the Ice Mountain.
+2	line	Captain Lawgof	You'll need to speak to Nulodion, the Dwarf Cannon engineer. He's the Weapons Development Chief for the Black Guard, so if anyone knows how to fire this thing, it'll be him.
+2	line	Player	Okay, I'll see what I can do.
+2	action	end
+0	section	Talking to Captain Lawgof again after agreeing to see Nulodion
+1	line	Player	Hi again.
+1	line	Captain Lawgof	Hello trooper, any word from the Cannon Engineer?
+1	line	Player	Not yet.
+1	line	Captain Lawgof	The Black Guard camp is South of the Ice Mountain, the quicker we can get some ammo for this thing the quicker those Goblins will leave us be.
+1	line	Player	I'll get to it.
+1	action	end
+0	section	Talking to Nulodion
+1	line	Player	Hello there.
+1	line	Nulodion	Can I help you?
+1	line	Player	Captain Lawgof sent me. He's having trouble with his cannon.
+1	line	Nulodion	Of course, we forgot to send the ammo mould!
+1	line	Player	It fires mould?
+1	line	Nulodion	Don't be silly - the ammo's made by using a mould. Here, take these to him. The instructions explain everything.
+1	cond	If the player has no inventory space:
+2	line	Nulodion	You can't take these things unless you free up some space in your inventory. I suggest you visit a bank and then come back to talk to me.
+2	action	end
+1	line	Player	That's great, thanks.
+1	line	Nulodion	Thank you, adventurer. The Dwarf Black Guard will remember this.
+1	action	end
+0	section	Talking to Nulodion again
+1	line	Player	Hello again.
+1	cond	If the player lost the notes:
+2	line	Player	I've lost the notes.
+2	line	Nulodion	Here, take these...
+2	action	end
+1	cond	If the player lost the ammo mould:
+2	line	Player	I've lost the cannonball mould.
+2	line	Nulodion	Deary me, you are trouble. Here, take this one.
+2	action	end
+1	line	Nulodion	So has the Captain figured out how to work the cannon yet?
+1	line	Player	Not yet, but I'm sure he will.
+1	line	Nulodion	If you can get those items to him it'll be a great help.
+1	action	end
+0	section	Talking to Lawgof after getting the ammo mould
+1	line	Player	Hi.
+1	line	Captain Lawgof	Hello trooper, any word from the Cannon Engineer?
+1	line	Player	Yes, I have spoken to him.
+1	cond	If the player does not have the notes and ammo mould:
+2	line	Player	He gave me some items to give you... but I seem to have lost something.
+2	line	Captain Lawgof	If you could go back and get another, I'd appreciate it.
+2	line	Player	Oh, okay then.
+2	action	end
+1	line	Player	He gave me an ammo mould and some notes to give to you...
+1	line	Captain Lawgof	Aah, of course, we make the ammo! This is great, now we will be able to defend ourselves. I don't know how to thank you...
+1	line	Player	You could give me a cannon...
+1	line	Captain Lawgof	Hah! You'd be lucky, those things are worth a fortune.
+1	line	Captain Lawgof	I'll tell you what though, I'll write to the Cannon Engineer requesting him to sell you one. He controls production of the cannons.
+1	line	Captain Lawgof	He won't be able to give you one, but for the right price, I'm sure he'll sell one to you.
+1	line	Player	Hmmm... sounds interesting, I might take you up on that.

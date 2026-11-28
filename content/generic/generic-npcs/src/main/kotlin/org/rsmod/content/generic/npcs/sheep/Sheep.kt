@@ -9,6 +9,7 @@ import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.npc.access.StandardNpcAccess
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.repo.world.WorldRepository
@@ -51,7 +52,7 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.shearSheep(npc: Npc) {
-        if (objs.shears !in inv) {
+        if (!player.hasTool(objs.shears)) {
             mes("You need a set of shears to do this.")
             return
         }

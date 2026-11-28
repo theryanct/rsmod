@@ -126,6 +126,7 @@ internal object HerbloreData {
             Grind("blue_dragon_scale", "dragon_scale_dust"),
             Grind("chocolate_bar", "chocolate_dust"),
             Grind("desert_goat_horn", "ground_desert_goat_horn"),
+            Grind("bird_nest_empty", "crushed_bird_nest"), // Saradomin brew secondary
         )
 
     const val PESTLE = "pestle_and_mortar"
@@ -141,6 +142,9 @@ internal object HerbloreData {
 
         /** Restore run energy by [percent]% of the maximum. */
         data class Energy(val percent: Int) : Effect()
+
+        /** Stamina potion: see [Stamina] (with an [Energy] restore via [Multi]). */
+        object Stamina : Effect()
 
         /** Antipoisons: cure poison and grant immunity for [immunityTicks] (Wiki durations). */
         data class Cure(val immunityTicks: Int) : Effect()
@@ -196,6 +200,17 @@ internal object HerbloreData {
             ),
             Drink("energy potion", doses("1energy"), Effect.Energy(10)),
             Drink("super energy", doses("2energy"), Effect.Energy(20)),
+            // Batch B (Wiki): super combat = super attack/strength/defence; stamina = 20% + effect.
+            Drink(
+                "super combat potion",
+                doses("2combat"),
+                Effect.Boost(listOf("attack", "strength", "defence"), 5, 15),
+            ),
+            Drink(
+                "stamina potion",
+                (4 downTo 1).map { "${it}dosestamina" },
+                Effect.Multi(listOf(Effect.Energy(20), Effect.Stamina)),
+            ),
             // PR2 (OSRS Wiki potion pages).
             Drink("ranging potion", doses("rangerspotion"), Effect.Boost(listOf("ranged"), 4, 10)),
             Drink("magic potion", doses("1magic"), Effect.Boost(listOf("magic"), 4, 0)),

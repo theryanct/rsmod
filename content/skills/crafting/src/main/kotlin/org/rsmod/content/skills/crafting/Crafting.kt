@@ -6,9 +6,11 @@ import java.util.WeakHashMap
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.craftingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.onOpHeldLabel
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
@@ -77,6 +79,13 @@ constructor(
         for ((key, recipes) in byPair) {
             val (first, second) = objs.getValue(key)
             onOpHeldU(first, second) { select(recipes, recipes.first().station) }
+            // Tool-belt material ops ("Cut" gems, "Craft" leather, "Blow" glass): the tool may
+            // be carried or on the belt; the recipe flow checks it with hasTool.
+            val station = recipes.first().station
+            val label = MATERIAL_OPS[station] ?: continue
+            val tool = obj(checkNotNull(recipes.first().tool))
+            val material = if (first == tool) second else first
+            onOpHeldLabel(objTypes, material, label) { select(recipes, station) }
         }
         logger.info { "Crafting: bound ${byPair.size} item-on-item pairs." }
     }
@@ -149,7 +158,7 @@ constructor(
             recipes = recipes.filter { r -> objOrNull(r.tool) == used || r.materials.any { obj(it.obj) == used } }
         }
         if (station == Station.Furnace) {
-            recipes = recipes.filter { it.tool == null || invTotal(inv, obj(it.tool)) > 0 }
+            recipes = recipes.filter { it.tool == null || player.hasTool(obj(it.tool)) }
             if (recipes.isEmpty()) {
                 mes("You need a mould to craft jewellery.")
                 return
@@ -219,7 +228,7 @@ constructor(
             return
         }
         val tool = recipe.tool
-        if (tool != null && recipe.station !in CONSUMED_TOOL && invTotal(inv, obj(tool)) <= 0) {
+        if (tool != null && recipe.station !in CONSUMED_TOOL && !player.hasTool(obj(tool))) {
             mes("You need ${article(objTypes[obj(tool)].name)} to make $name.")
             return
         }
@@ -316,6 +325,10 @@ constructor(
 
         /** Stations whose "tool" is used up: water container (soft clay), orb, ball of wool. */
         val CONSUMED_TOOL = setOf(Station.Combine, Station.Stringing)
+
+        /** Inventory op labels the tool belt adds to each held station's materials. */
+        val MATERIAL_OPS =
+            mapOf(Station.Chisel to "Cut", Station.Needle to "Craft", Station.Pipe to "Blow")
 
         val HELD =
             setOf(Station.Needle, Station.Chisel, Station.Pipe, Station.Stringing, Station.Combine)

@@ -96,6 +96,46 @@ for r in recipes:
     rows.append((kind, product, qty, sk[0], sk[1], max(ticks, 1) if kind != "knife" else max(ticks, 2), anim, mats))
     stats[kind] += 1
 
+# Recipes the Wiki recipe bucket lacks (Adamant bolts has no bucket row): (kind, product, qty, level, xp, ticks, anim, mats)
+MANUAL = [("combine", "xbows_crossbow_bolts_adamantite", 10, 61, 70, 1, "-",
+           [("xbows_crossbow_bolts_adamantite_unfeathered", 10), ("feather", 10)])]
+# Crossbows (Wiki Recipe templates; kind "hammer" = limbs on stock with a hammer in the inventory).
+XBOWS = [("bronze", "wood", 9, 12, 6), ("blurite", "oak", 24, 32, 16), ("iron", "willow", 39, 44, 22),
+         ("steel", "teak", 46, 54, 27), ("mithril", "maple", 54, 64, 32), ("adamantite", "mahogany", 61, 82, 41),
+         ("runite", "yew", 69, 100, 50), ("dragon", "magic", 78, 135, 70)]
+for metal, stock, lvl, hammer_xp, string_xp in XBOWS:
+    MANUAL.append(("hammer", f"xbows_crossbow_unstrung_{metal}", 1, lvl, hammer_xp, 2, "-",
+                   [(f"xbows_crossbow_stock_{stock}", 1), (f"xbows_crossbow_limbs_{metal}", 1)]))
+    anim = f"xbows_fletching_{stock}_{metal}"
+    MANUAL.append(("string", f"xbows_crossbow_{metal}", 1, lvl, string_xp, 2, anim if anim in seq_names else "-",
+                   [(f"xbows_crossbow_unstrung_{metal}", 1), ("xbows_crossbow_string", 1)]))
+# Gem bolt tips (chisel) and tipped bolts (Wiki Recipe templates).
+MANUAL += [
+    ("chisel", "opal_bolttips", 12, 11, 1.5, 5, "human_opalcutting", [("opal", 1)]),
+    ("chisel", "xbows_bolt_tips_jade", 12, 26, 2, 5, "human_jadecutting", [("jade", 1)]),
+    ("chisel", "pearl_bolttips", 6, 41, 3.2, 5, "xbows_fletching_pearl", [("smalloysterpearls", 1)]),
+    ("chisel", "pearl_bolttips", 24, 41, 3.2, 5, "xbows_fletching_pearl", [("bigoysterpearls", 1)]),
+    ("chisel", "xbows_bolt_tips_redtopaz", 12, 48, 3.9, 5, "human_redtopazcutting", [("red_topaz", 1)]),
+    ("chisel", "xbows_bolt_tips_sapphire", 12, 56, 4, 5, "human_sapphirecutting", [("sapphire", 1)]),
+    ("chisel", "xbows_bolt_tips_emerald", 12, 58, 5.5, 5, "human_emeraldcutting", [("emerald", 1)]),
+    ("chisel", "xbows_bolt_tips_ruby", 12, 63, 6.3, 5, "human_rubycutting", [("ruby", 1)]),
+    ("chisel", "xbows_bolt_tips_diamond", 12, 65, 7, 5, "human_diamondcutting", [("diamond", 1)]),
+    ("chisel", "xbows_bolt_tips_dragonstone", 12, 71, 8.2, 5, "human_dragonstonecutting", [("dragonstone", 1)]),
+    ("chisel", "xbows_bolt_tips_onyx", 24, 73, 9.4, 5, "human_onyxcutting", [("onyx", 1)]),
+    ("combine", "opal_bolt", 10, 11, 16, 2, "human_fletching_add_bolt_tips_bronze", [("bolt", 10), ("opal_bolttips", 10)]),
+    ("combine", "xbows_crossbow_bolts_blurite_tipped_jade", 10, 26, 24, 2, "human_fletching_add_bolt_tips_blurite", [("xbows_crossbow_bolts_blurite", 10), ("xbows_bolt_tips_jade", 10)]),
+    ("combine", "pearl_bolt", 10, 41, 32, 2, "human_fletching_add_bolt_tips_iron", [("xbows_crossbow_bolts_iron", 10), ("pearl_bolttips", 10)]),
+    ("combine", "xbows_crossbow_bolts_steel_tipped_redtopaz", 10, 48, 39, 2, "human_fletching_add_bolt_tips_steel", [("xbows_crossbow_bolts_steel", 10), ("xbows_bolt_tips_redtopaz", 10)]),
+    ("combine", "xbows_crossbow_bolts_mithril_tipped_sapphire", 10, 56, 47, 2, "human_fletching_add_bolt_tips_mithril", [("xbows_crossbow_bolts_mithril", 10), ("xbows_bolt_tips_sapphire", 10)]),
+    ("combine", "xbows_crossbow_bolts_mithril_tipped_emerald", 10, 58, 55, 2, "human_fletching_add_bolt_tips_mithril", [("xbows_crossbow_bolts_mithril", 10), ("xbows_bolt_tips_emerald", 10)]),
+    ("combine", "xbows_crossbow_bolts_adamantite_tipped_ruby", 10, 63, 63, 2, "human_fletching_add_bolt_tips_adamant", [("xbows_crossbow_bolts_adamantite", 10), ("xbows_bolt_tips_ruby", 10)]),
+    ("combine", "xbows_crossbow_bolts_adamantite_tipped_diamond", 10, 65, 70, 2, "human_fletching_add_bolt_tips_adamant", [("xbows_crossbow_bolts_adamantite", 10), ("xbows_bolt_tips_diamond", 10)]),
+    ("combine", "xbows_crossbow_bolts_runite_tipped_dragonstone", 10, 71, 82, 2, "human_fletching_add_bolt_tips_rune", [("xbows_crossbow_bolts_runite", 10), ("xbows_bolt_tips_dragonstone", 10)]),
+    ("combine", "xbows_crossbow_bolts_runite_tipped_onyx", 10, 73, 94, 2, "human_fletching_add_bolt_tips_rune", [("xbows_crossbow_bolts_runite", 10), ("xbows_bolt_tips_onyx", 10)]),
+]
+for m in MANUAL:
+    if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
+
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki recipe bucket by tools/skills/fletching_to_tsv.py - do not edit.\n")
     for kind, product, qty, level, xp, ticks, anim, mats in sorted(rows, key=lambda t: (t[0], t[3], t[1])):

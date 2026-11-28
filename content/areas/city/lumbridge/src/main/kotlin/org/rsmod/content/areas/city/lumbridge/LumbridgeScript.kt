@@ -5,18 +5,23 @@ import org.rsmod.api.config.refs.content
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.tools.hasToolOf
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.content.areas.city.lumbridge.configs.lumbridge_locs
 import org.rsmod.game.loc.BoundLocInfo
+import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 class LumbridgeScript
 @Inject
-constructor(private val locRepo: LocRepository, private val objRepo: ObjRepository) :
-    PluginScript() {
+constructor(
+    private val locRepo: LocRepository,
+    private val objRepo: ObjRepository,
+    private val objTypes: ObjTypeList,
+) : PluginScript() {
     override fun ScriptContext.startup() {
         onOpLoc1(lumbridge_locs.winch) { operateWinch() }
         onOpLoc1(lumbridge_locs.farmerfred_axe_logs) { takeAxeFromLogs(it.loc) }
@@ -28,7 +33,7 @@ constructor(private val locRepo: LocRepository, private val objRepo: ObjReposito
     }
 
     private suspend fun ProtectedAccess.takeAxeFromLogs(loc: BoundLocInfo) {
-        if (content.woodcutting_axe in inv) {
+        if (player.hasToolOf(objTypes, content.woodcutting_axe)) {
             mesbox("You already have an axe.")
             return
         }

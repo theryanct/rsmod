@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.npc.queueDeath
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.tools.hasAnyTool
 import org.rsmod.api.script.onModifyNpcHit
 import org.rsmod.api.script.onNpcHit
 import org.rsmod.api.script.onOpNpcU
@@ -68,8 +69,7 @@ constructor(private val playerList: PlayerList, private val mapClock: MapClock) 
         player.mes("The gargoyle cracks apart.")
     }
 
-    private fun Player.hasHammer(): Boolean =
-        GargoyleObjs.hammers.any { hammer -> hammer in inv || hammer in worn }
+    private fun Player.hasHammer(): Boolean = hasAnyTool(GargoyleObjs.hammers)
 
     private companion object {
         /** Wiki: gargoyles can be finished with 9 or fewer Hitpoints. */

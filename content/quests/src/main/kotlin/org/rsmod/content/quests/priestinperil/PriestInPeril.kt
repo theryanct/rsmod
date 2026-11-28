@@ -94,7 +94,13 @@ constructor(
         onLocOpLabel(locTypes, PipLocs.east_trapdoor_open, "Climb-down") { telejump(BARRIER_WEST) }
 
         onEvent<NpcKilledEvent> { killed(this) }
-        onNpcOpLabel(npcTypes, PipNpcs.drezel, "Talk-to") { talkDrezel(it) }
+        // Drezel is shared with Nature Spirit (QuestTalk menu while both want him).
+        with(QuestTalk) {
+            register(npcTypes, PipNpcs.drezel, PRIEST_IN_PERIL, wants = { state < COMPLETE }) {
+                talkDrezel(it)
+            }
+            default(npcTypes, PipNpcs.drezel) { talkDrezel(it) }
+        }
         onLocOpLabel(locTypes, PipLocs.cell_gate, "Open") { cellGate(it) }
         onOpLocU(PipLocs.cell_gate, PipObjs.golden_key) {
             runQuestSection(null, dialogue, "Using the golden key on the lock")

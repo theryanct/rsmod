@@ -5,8 +5,10 @@ import kotlin.math.min
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.fletchingLvl
+import org.rsmod.api.player.tools.hasTool
 import org.rsmod.api.player.ui.SkillMultiProduct
 import org.rsmod.api.player.ui.SkillMultiVerb
+import org.rsmod.api.script.onOpHeldLabel
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -41,6 +43,16 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         for ((key, recipes) in byPair) {
             onOpHeldU(obj(key.first), obj(key.second)) { selectRecipe(recipes) }
         }
+        // "Fletch" on logs (tool-belt material op): the knife may be carried or on the belt.
+        for ((key, recipes) in byPair) {
+            val material =
+                when (KNIFE) {
+                    key.first -> key.second
+                    key.second -> key.first
+                    else -> continue
+                }
+            onOpHeldLabel(objTypes, obj(material), "Fletch") { fletchWithKnife(recipes) }
+        }
         onPlayerQueueWithArgs<FletchJob>(FletchingQueues.fletching) { fletch(it.args) }
     }
 
@@ -48,18 +60,32 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private fun Recipe.trigger(): Pair<String, String> =
         when (kind) {
             Kind.Knife -> KNIFE to materials[0].obj
+            Kind.Chisel -> CHISEL to materials[0].obj
             Kind.String,
+            Kind.Hammer,
             Kind.Combine -> materials[0].obj to materials[1].obj
         }
 
     private fun obj(name: String): ObjType =
-        if (name == KNIFE) FletchingObjs.knife else FletchingObjs.byName.getValue(name)
+        when (name) {
+            KNIFE -> FletchingObjs.knife
+            CHISEL -> FletchingObjs.chisel
+            else -> FletchingObjs.byName.getValue(name)
+        }
 
     /**
      * OSRS skillmulti chatbox for the recipes that share this item-on-item pair (e.g. knife on
      * logs). Recipes the player can't make yet (level or materials) are greyed; the quantity comes
      * from the 1/5/10/X/All buttons and, for arrows/darts/bolts, counts sets.
      */
+    private suspend fun ProtectedAccess.fletchWithKnife(recipes: List<Recipe>) {
+        if (!player.hasTool(FletchingObjs.knife)) {
+            mes("You need a knife to fletch logs.")
+            return
+        }
+        selectRecipe(recipes)
+    }
+
     private suspend fun ProtectedAccess.selectRecipe(recipes: List<Recipe>) {
         val shown = recipes.take(MAX_PRODUCTS)
         val products =
@@ -90,7 +116,9 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private fun verbFor(recipe: Recipe): Int =
         when (recipe.kind) {
-            Kind.Knife -> SkillMultiVerb.MAKE
+            Kind.Knife,
+            Kind.Chisel,
+            Kind.Hammer -> SkillMultiVerb.MAKE
             Kind.String -> SkillMultiVerb.STRING
             Kind.Combine -> SkillMultiVerb.MAKE_SETS
         }
@@ -100,6 +128,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             Kind.String -> "How many would you like to string?"
             Kind.Combine -> "How many sets would you like to make?"
             Kind.Knife -> "What would you like to make?"
+            Kind.Hammer,
+            Kind.Chisel -> "How many would you like to make?"
         }
 
     private fun ProtectedAccess.fletch(job: FletchJob) {
@@ -108,8 +138,12 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
         }
-        if (recipe.kind == Kind.Knife && invTotal(inv, FletchingObjs.knife) <= 0) {
+        if (recipe.kind == Kind.Knife && !player.hasTool(FletchingObjs.knife)) {
             mes("You need a knife to fletch logs.")
+            return
+        }
+        if (recipe.kind == Kind.Hammer && invTotal(inv, FletchingObjs.hammer) <= 0) {
+            mes("You need a hammer to attach the limbs.")
             return
         }
         val units = unitsPerAction(recipe)
@@ -176,6 +210,7 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private companion object {
         const val KNIFE = "knife"
+        const val CHISEL = "chisel"
 
         /** Skillmulti item slots named in the rev 233 interface (18 after the 243 cutover). */
         const val MAX_PRODUCTS = 10

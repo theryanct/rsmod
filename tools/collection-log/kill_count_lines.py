@@ -6,9 +6,11 @@ Usage: python -I tools/collection-log/kill_count_lines.py <cache_dir> > \
 Proc 2735 switches on the category struct and draws up to three labelled lines from varps 2048,
 2941 and 2942 ("Artio kills: N"). Every "<name> kills:" line becomes `struct varp npc,npc...`;
 OVERRIDES give lines whose npcs differ from the label (Barrows = the six brothers, revenants).
-Lines that aren't kills (completions, chests, clues) are skipped: nothing tracks those yet.
+"<tier> clues completed" lines map to the treasure trails counter `clue:<tier>` ("Total" sums all
+tiers). Other non-kill lines (completions, chests) are skipped: nothing tracks those yet.
 """
 import os
+import re
 import struct
 import sys
 
@@ -20,6 +22,7 @@ from jagcache import Cache  # noqa: E402
 
 GET_VARP, SCONST, RETURN, SWITCH = 1, 3, 21, 60
 KC_VARPS = (2048, 2941, 2942)
+TIERS = ["beginner", "easy", "medium", "hard", "elite", "master"]
 
 # Label (lowercase, before " kills:"/" opened:") -> npc names whose kills are summed.
 OVERRIDES = {
@@ -61,6 +64,10 @@ def main(cache_dir):
                 label = value
             elif op == GET_VARP and value in KC_VARPS and label:
                 name = label.split(":")[0].lower()
+                clues = re.match(r"^(beginner|easy|medium|hard|elite|master|total) clues completed$", name)
+                if clues:
+                    tiers = TIERS if clues.group(1) == "total" else [clues.group(1)]
+                    print(f"{key}	{value}	{','.join('clue:' + t for t in tiers)}")
                 for suffix in (" kills", " opened"):
                     if name.endswith(suffix):
                         base = name[: -len(suffix)]

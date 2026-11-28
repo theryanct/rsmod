@@ -33,6 +33,12 @@ import org.rsmod.plugin.scripts.ScriptContext
 class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : PluginScript() {
     private val logger = InlineLogger()
 
+    /**
+     * Locs whose "Climb-over" a quest owns (the eventBus.contains guard below depends on load
+     * order): the Goblin Cave mud pile is Dwarf Cannon's cave exit.
+     */
+    private val QUEST_OWNED = setOf("mcanmudpile")
+
     private enum class Kind(val labels: Set<String>) {
         ClimbOver(setOf("climb-over")),
         Squeeze(setOf("squeeze-through")),
@@ -48,7 +54,7 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
                 .toSet()
         val counts = HashMap<Kind, Int>()
         for (type in locTypes.values) {
-            if (type.id in agilityLocs) continue
+            if (type.id in agilityLocs || type.internalName in QUEST_OWNED) continue
             for ((index, text) in type.op.withIndex()) {
                 val label = text?.trim()?.lowercase() ?: continue
                 val kind = Kind.entries.firstOrNull { label in it.labels } ?: continue
