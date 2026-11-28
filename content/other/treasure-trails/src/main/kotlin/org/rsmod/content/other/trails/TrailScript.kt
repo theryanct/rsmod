@@ -58,8 +58,9 @@ private val logger = InlineLogger()
 
 /**
  * Treasure trails, every tier. Hard adds puzzle boxes and fights (wizards on coordinate
- * steps, double agents on emote steps). Light boxes are built but only master steps use them
- * (still gated off), like the elite/master fights and kill steps.
+ * steps, double agents on emote steps) and fairy ring steps; elite adds guard fights and kill
+ * steps. Light boxes are built but only master steps use them (still gated off), like master
+ * fights. Elite skill challenges (Sherlock) are not done yet.
  * Step data is Jagex's own: the 243 cache's
  * clue-helper db tables ([ClueSteps]), so texts match the game and RuneLite's clue helper.
  *
@@ -140,6 +141,7 @@ constructor(
                 ClueKind.Emote,
                 ClueKind.Map,
                 ClueKind.Music,
+                ClueKind.FairyRing,
             )
         val all =
             ClueTier.entries.associateWith { tier ->
@@ -165,6 +167,7 @@ constructor(
         when (val target = target) {
             is ClueTarget.Npc -> target.npcs.any { it in spawned }
             is ClueTarget.Key -> target.npcs.any { it in spawned }
+            is ClueTarget.Kill -> target.npcs.any { it in spawned }
             is ClueTarget.Loc ->
                 (-1..1).any { dx ->
                     (-1..1).any { dz ->
@@ -240,6 +243,7 @@ constructor(
         onEvent<NpcKilledEvent> {
             hero.dropClueKey(npc)
             encounterKilled(npc, hero)
+            hero.killStep(npc)
         }
         val boxObjs = steps.byRow.values.mapNotNullTo(HashSet()) { boxObj(it) }
         for (box in boxObjs) {
@@ -785,7 +789,9 @@ constructor(
             return true
         }
         val spawned = ArrayList<Npc>()
-        for (id in step.encounterNpcs) {
+        // Several rows: one of them (elite: an Armadylean or a Bandosian guard).
+        val option = step.encounterNpcs[random.of(step.encounterNpcs.size)]
+        for (id in option) {
             val type = npcTypes[id] ?: continue
             val npc = Npc(type, coords.translate(1, 0))
             npcRepo.add(npc, ENCOUNTER_DURATION)
@@ -817,32 +823,49 @@ constructor(
 
     /** Moves the trail on from [step]: a new clue, or the reward casket after the last step. */
     private suspend fun ProtectedAccess.advance(clue: InvObj, step: ClueStep) {
+        val (obj, text) = player.advanceTrail(clue, step) ?: return
+        objbox(obj, text)
+    }
+
+    /**
+     * Swaps [clue] for the next clue (or the casket after the last step) in its slot. Returns the
+     * obj and line to show, or null if the clue isn't held.
+     */
+    private fun Player.advanceTrail(clue: InvObj, step: ClueStep): Pair<ObjType, String>? {
         val tier = step.tier
-        encounters.remove(player)
+        encounters.remove(this)
         val remainingVarp = remainingVarp(tier)
-        val left = player.vars[remainingVarp] - 1
-        val slot = inv.indexOfFirst { it == clue }.takeIf { it >= 0 } ?: return
+        val left = vars[remainingVarp] - 1
+        val slot = inv.indexOfFirst { it == clue }.takeIf { it >= 0 } ?: return null
         if (left <= 0) {
-            player.setVar(remainingVarp, 0)
+            setVar(remainingVarp, 0)
             if (tier == ClueTier.Beginner) {
-                player.setVar(TrailVarps.beginner_step, 0)
+                setVar(TrailVarps.beginner_step, 0)
             }
-            val casket = CASKETS.getValue(tier)
-            inv[slot] = null
-            invAdd(inv, casket)
-            objbox(casket, "Well done, you've completed the Treasure Trail!")
-            return
+            val casket = objTypes[CASKETS.getValue(tier)]
+            inv[slot] = InvObj(casket)
+            return casket to "Well done, you've completed the Treasure Trail!"
         }
-        player.setVar(remainingVarp, left)
-        val next = pools.getValue(tier).filter { it.row != step.row }.pick() ?: return
+        setVar(remainingVarp, left)
+        val next = pools.getValue(tier).filter { it.row != step.row }.pick() ?: return null
         if (tier == ClueTier.Beginner) {
-            player.setVar(TrailVarps.beginner_step, next.row)
-            objbox(TrailObjs.clue_beginner, "You've been given a new clue!")
-        } else {
-            val obj = objTypes[objByStep.getValue(next.row)] ?: return
-            inv[slot] = InvObj(obj)
-            objbox(obj, "You've been given a new clue!")
+            setVar(TrailVarps.beginner_step, next.row)
+            return objTypes[TrailObjs.clue_beginner] to "You've been given a new clue!"
         }
+        val obj = objTypes[objByStep.getValue(next.row)] ?: return null
+        inv[slot] = InvObj(obj)
+        return obj to "You've been given a new clue!"
+    }
+
+    /** Elite / master kill steps: killing one of the step's npcs moves the trail on. */
+    private fun Player.killStep(npc: Npc) {
+        val held =
+            heldSteps().firstOrNull { (_, step) ->
+                val target = step.target as? ClueTarget.Kill
+                target != null && (npc.id in target.npcs || npc.visType.id in target.npcs)
+            } ?: return
+        val (_, text) = advanceTrail(held.first, held.second) ?: return
+        mes(text)
     }
 
     /* Caskets */
@@ -915,6 +938,8 @@ constructor(
                 "cluehelper_combat_encounter_double_agent_108",
                 "cluehelper_combat_encounter_saradomin_wizard",
                 "cluehelper_combat_encounter_zamorak_wizard",
+                "cluehelper_combat_encounter_armadylean_guard",
+                "cluehelper_combat_encounter_bandosian_guard",
             )
     }
 }

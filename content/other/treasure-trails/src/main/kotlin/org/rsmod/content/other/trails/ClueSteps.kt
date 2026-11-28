@@ -35,6 +35,8 @@ internal enum class ClueKind(val table: String) {
     Music("cluehelper_clue_music"),
     Cipher("cluehelper_clue_cipher"),
     Coordinate("cluehelper_clue_coordinate"),
+    /** Hard: go to a fairy ring, then dig at the spot (the text gives code + steps). */
+    FairyRing("cluehelper_clue_fairyring"),
 }
 
 /** Where a step is solved (the cluehelper_target_* row it points at). */
@@ -65,7 +67,10 @@ internal sealed class ClueTarget {
         val description: String,
     ) : ClueTarget()
 
-    /** A target kind not implemented yet (kill steps of higher tiers). */
+    /** Kill one of [npcs] (elite / master cryptic kill steps). */
+    data class Kill(val npcs: Set<Int>, val description: String) : ClueTarget()
+
+    /** A target kind not implemented yet. */
     data object Unsupported : ClueTarget()
 }
 
@@ -89,10 +94,13 @@ internal class ClueStep(
     val question: Pair<String, Int>? = null,
     /** The npc hands out a box first: the cluehelper_challenge_box row (puzzle / light). */
     val box: Int? = null,
-    /** A fight first (double agents, wizards): the cluehelper_combat_encounter row. */
-    val encounter: Int? = null,
-    /** The [encounter]'s npcs: all are spawned and must be killed. */
-    val encounterNpcs: List<Int> = emptyList(),
+    /**
+     * A fight first (double agents, wizards, guards): the cluehelper_combat_encounter rows. With
+     * several rows, one is picked per fight (elite: an Armadylean or a Bandosian guard).
+     */
+    val encounters: List<Int> = emptyList(),
+    /** Each of [encounters]' npcs: all of the picked row's npcs spawn and must be killed. */
+    val encounterNpcs: List<List<Int>> = emptyList(),
     /** Implemented: a supported target, and a box / fight from the allowlists, if any. */
     val isSupported: Boolean = true,
 )
@@ -155,6 +163,8 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                             key = row.int(3) ?: -1,
                             description = row.string(7).orEmpty(),
                         )
+                    "cluehelper_target_kill" ->
+                        ClueTarget.Kill(row.ints(0).toSet(), row.string(2).orEmpty())
                     "cluehelper_target_mapzone" ->
                         ClueTarget.Zone(
                             sw = CoordGrid(row.int(0) ?: 0),
@@ -228,7 +238,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 tier,
                                 row.text(2),
                                 target(row.int(3)),
-                                encounter = row.int(5),
+                                encounters = row.ints(5),
                             )
                         ClueKind.SkillChallenge ->
                             ClueStep(id, kind, tier, row.text(2), target(row.int(4)))
@@ -241,8 +251,10 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 tier,
                                 "",
                                 target(row.int(2)),
-                                encounter = row.int(4),
+                                encounters = row.ints(4),
                             )
+                        ClueKind.FairyRing ->
+                            ClueStep(id, kind, tier, row.text(2), target(row.int(5)))
                         ClueKind.Music ->
                             ClueStep(
                                 id,
@@ -263,7 +275,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                                 outfit = outfit(row.int(6)),
                                 stashLoc = row.int(7),
                                 stashCoord = row.int(8)?.let(::CoordGrid),
-                                encounter = row.int(9),
+                                encounters = row.ints(9),
                             )
                     }
             }
@@ -272,7 +284,7 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                     val supported =
                         step.target != ClueTarget.Unsupported &&
                             (step.box == null || step.box in boxes) &&
-                            (step.encounter == null || step.encounter in encounters)
+                            step.encounters.all { it in encounters }
                     ClueStep(
                         row = step.row,
                         kind = step.kind,
@@ -286,8 +298,8 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                         music = step.music,
                         question = step.question,
                         box = step.box,
-                        encounter = step.encounter,
-                        encounterNpcs = encounterNpcs(step.encounter),
+                        encounters = step.encounters,
+                        encounterNpcs = step.encounters.map(::encounterNpcs),
                         isSupported = supported,
                     )
                 }
