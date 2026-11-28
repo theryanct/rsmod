@@ -1,0 +1,160 @@
+# Bear Your Soul (OSRS Wiki "Transcript:Bear Your Soul", with Aretha's and the Key Master's
+# standard dialogue from "Transcript:Aretha" / "Transcript:Key Master"), via
+# tools/quests/transcript_to_dialogue.py, merged by hand. Lines marked (authored) are not Wiki.
+0	section	Talking to Aretha before reading the book
+1	line	Aretha	Respect the souls, traveller.
+1	option	Why are all these souls here?
+2	line	Player	Why are all these souls here?
+2	line	Aretha	A corporeal body is a mere flesh-temple in which the soul dwells. As the body fails, the soul loses its home. Without guidance, it would drift into oblivion.
+2	line	Aretha	However, the Soul Altar provides a beacon, drawing the souls to this place where they may join the River.
+2	line	Aretha	The River leads the souls through unchartable realms, transcending the plane of the world as you see it, but the three-headed Guardian keeps them safe.
+2	line	Aretha	The souls are the dead of Kourend - ensure you respect the souls.
+2	action	other
+1	option	Why are you here?
+2	line	Player	Why are you here?
+2	line	Aretha	I am here to salute the dead of Kourend whose souls are joining the River. Ensure you respect the souls.
+2	action	other
+1	option	Okay, I'm respecting the souls.
+2	line	Player	Okay, I'm respecting the souls.
+2	action	end
+0	section	Talking to Aretha
+1	line	Aretha	Respect the souls, traveller.
+1	option	Why are all these souls here?
+2	line	Player	Why are all these souls here?
+2	line	Aretha	A corporeal body is a mere flesh-temple in which the soul dwells. As the body fails, the soul loses its home. Without guidance, it would drift into oblivion.
+2	line	Aretha	However, the Soul Altar provides a beacon, drawing the souls to this place where they may join the River.
+2	line	Aretha	The River leads the souls through unchartable realms, transcending the plane of the world as you see it, but the three-headed Guardian keeps them safe.
+2	line	Aretha	The souls are the dead of Kourend - ensure you respect the souls.
+2	action	other
+1	option	Why are you here?
+2	line	Player	Why are you here?
+2	line	Aretha	I am here to salute the dead of Kourend whose souls are joining the River. Ensure you respect the souls.
+2	action	other
+1	option	I've been reading your book...
+2	line	Player	I've been reading your book: 'The Journey of Souls'
+2	line	Aretha	Let me guess, traveller... did you come to ask me where the soul bearer was buried? Every mortal who reads my book seems to want to get their hands on it.
+2	select	Select an option
+2	option	Yes please.
+3	line	Player	Yes please.
+3	line	Aretha	Mortals are so predictable. This is the kind of thinking that led that adventurer to break into the Guardian's cave and damage the soul bearer in the first place.
+3	line	Aretha	It occurs to me, though, that even if you dig it up, the artefact is damaged. Although the Elders of Arceuus never had the knowledge to repair it, there is one who may be able to help.
+3	line	Aretha	I speak of the Key Master, he who watches over the cave of the three-headed Guardian of the River. He has been there for countless years, and will have absorbed power from the River in that time.
+3	line	Aretha	Now, we buried the artefact in the crypt of the Arceuus church. As I have revealed this secret to you, you will no longer be affected by the spells that prevent unwary explorers from stumbling across it.
+3	line	Player	Thanks! I'll be off now.
+3	action	end
+2	option	No, I don't want your smelly soul bearer.
+3	line	Player	No, I don't want your smelly soul bearer.
+3	line	Aretha	Hmmph! So what do you want? I trust you will respect the souls while you are in this hallowed place.
+3	action	end
+1	option	Okay, I'm respecting the souls.
+2	line	Player	Okay, I'm respecting the souls.
+2	action	end
+0	section	Talking to Aretha after recovering the damaged soul bearer
+1	line	Aretha	Respect the souls, traveller.
+1	select	Select an option
+1	option	Why are all these souls here?
+2	line	Player	Why are all these souls here?
+2	line	Aretha	A corporeal body is a mere flesh-temple in which the soul dwells. As the body fails, the soul loses its home. Without guidance, it would drift into oblivion.
+2	line	Aretha	However, the Soul Altar provides a beacon, drawing the souls to this place where they may join the River.
+2	line	Aretha	The River leads the souls through unchartable realms, transcending the plane of the world as you see it, but the three-headed Guardian keeps them safe.
+2	line	Aretha	The souls are the dead of Kourend - ensure you respect the souls.
+2	action	other
+1	option	Why are you here?
+2	line	Player	Why are you here?
+2	line	Aretha	I am here to salute the dead of Kourend whose souls are joining the River. Ensure you respect the souls.
+2	action	other
+1	option	About the soul bearer again...
+2	line	Player	About the soul bearer again... I've dug it up, but it's damaged.
+2	line	Aretha	This should be of no surprise to you, adventurer, if you paid attention to my book. Indeed, I even spoke of this matter when I first told you where the artefact was buried.
+2	line	Aretha	Although the Elders of Arceuus never had the knowledge to repair it, I told you of one who may be able to help.
+2	line	Aretha	I spoke of the Key Master, he who watches over the cave of the three-headed Guardian of the River. He has been there for countless years, and will have absorbed power from the River in that time.
+2	line	Player	Oh yes, I see.
+2	action	end
+1	option	Okay, I'm respecting the souls.
+2	line	Player	Okay, I'm respecting the souls.
+2	action	end
+0	section	Talking to Aretha after the miniquest
+1	line	Aretha	Respect the souls, traveller.
+1	option	Why are all these souls here?
+2	line	Player	Why are all these souls here?
+2	line	Aretha	A corporeal body is a mere flesh-temple in which the soul dwells. As the body fails, the soul loses its home. Without guidance, it would drift into oblivion.
+2	line	Aretha	However, the Soul Altar provides a beacon, drawing the souls to this place where they may join the River.
+2	line	Aretha	The River leads the souls through unchartable realms, transcending the plane of the world as you see it, but the three-headed Guardian keeps them safe.
+2	line	Aretha	The souls are the dead of Kourend - ensure you respect the souls.
+2	action	other
+1	option	Why are you here?
+2	line	Player	Why are you here?
+2	line	Aretha	I am here to salute the dead of Kourend whose souls are joining the River. Ensure you respect the souls.
+2	action	other
+1	option	About the soul bearer again...
+2	line	Player	About the soul bearer again... I got it repaired by the Key Master. Thanks for your help.
+2	line	Aretha	Use it carefully, traveller, and respect the souls.
+2	action	end
+1	option	Okay, I'm respecting the souls.
+2	line	Player	Okay, I'm respecting the souls.
+2	action	end
+0	section	Talking to the Key Master
+1	line	Player	Aretha said you might be able to repair the soul bearer for me.
+1	line	Key Master	The soul bearer! You have the soul bearer! The voices speak of it often. It is from this place, yet it is not of this place.
+1	line	Player	Will you repair it?
+1	line	Key Master	The voices tell me I can. They speak to me!
+1	box	The Key Master repairs your soul bearer.
+1	line	Key Master	The voices say you must use it wisely.
+1	option	What voices?
+2	line	Player	What voices?
+# (authored) The Wiki only says "above" for this option.
+2	line	Key Master	The voices of the River! They whisper of the souls that pass by, day and night. They never stop...
+2	action	above
+1	option	Thanks, I will.
+2	line	Player	Thanks, I will.
+2	action	end
+0	section	Key Master standard dialogue
+1	line	Key Master	Who goes there? This is no place for a human. You need to leave.
+1	line	Player	You're starting to scare me man...
+1	line	Key Master	I am no man! They changed me and cursed me to remain here...
+1	option	What do you mean they changed you?
+2	line	Player	What do you mean they changed you?
+2	line	Key Master	I was once a free man, powerful and wealthy. I owned several apothecaries across Kourend and sold the tastiest potions in the land.
+2	line	Player	What happened?
+2	line	Key Master	One of my greatest inventions, it was going so well. I spent days finding the right herbs, I travelled across all of Kourend to find the most exotic weeds. Once I had gathered them all, I put them in a potion and mixed in
+2	line	Key Master	the final ingredient.
+2	cond	If the player has not travelled to Great Kourend:
+3	line	Player	Kourend? Interesting...
+2	cond	If the player has travelled to Great Kourend:
+3	line	Player	Kourend? Oh yeah, I've been there.
+2	line	Key Master	Yes, yes... The potion tasted delicious but it was missing a tiny something so I added Magic roots to the potion. It started to pulsate and glow! I took a sip and I felt like a million gold! A few seconds later my eye sight
+2	line	Key Master	began to blur, my brain was throbbing. I fell and hit my head on my worktop, then it all went black.
+2	line	Player	Ouch! But, you still haven't said who changed you?
+2	line	Key Master	Will you let me finish?
+2	line	Key Master	I woke up screaming in pain. Blue foam streaming out of my mouth, my eye sight worse than before, the only things I could make out were 3 tall figures with green banners - they were of the Arceuus Elders. They
+2	line	Key Master	muttered to each other in Archaic Language after trying to get up several times. I lost hope and stared at the sky. I had given up when the tallest of the figures bent over and brought his face right to mine and spoke
+2	line	Key Master	very softly 'We can save you, but it will come at a cost'.
+2	line	Player	So they saved you?
+2	line	Key Master	Yes of course they saved me but look at the cost! I have horns coming out of my head and I'm still blind and stuck here... forever alone.
+2	action	other
+1	option	What was the curse?
+2	line	Player	What was the curse?
+2	line	Key Master	I have been charged to stay here to prevent the Monstrosity from escaping. Those gates and the winches that operate them are the only thing that stops it breaking free.
+2	line	Player	What monstrosity? What's behind those gates?
+2	line	Key Master	You really do not want to know. Leave this place human.
+2	line	Player	Hey now, I'm no wimp. What's to stop me from just turning the winch to open the gate and going in?
+2	line	Key Master	Me. And of course your quick demise at the mercy of Cerberus, guardian of the river of souls.
+2	line	Player	But I can do it!
+2	line	Key Master	You are obviously passionate at trying. But only those with great skill at slaying these types of beast may enter.
+2	cond	If the player does not have hellhounds or Cerberus herself as a slayer task:
+3	line	Key Master	THE VOICES! AAAHHHHH! Leave this place human!
+3	action	other
+2	cond	If the player has hellhounds or Cerberus herself as a slayer task:
+3	line	Player	I have been charged by the slayer masters to eliminate this type of threat.
+3	line	Key Master	Then you may pass... may your soul not end up consumed and forever condemned to the-
+3	line	Key Master	THE VOICES! AAAHHHHH! Leave this place human!
+3	action	other
+1	option	Goodbye.
+2	line	Player	Goodbye.
+2	action	end
+0	section	Reading The Journey of Souls
+1	box	The book referred to an artefact being buried in Kourend, but the author did not specify where it was buried. Maybe you could persuade her to change her mind.
+1	action	end
+0	section	Digging for the artefact
+1	box	You have found the soul bearer.
+1	action	end

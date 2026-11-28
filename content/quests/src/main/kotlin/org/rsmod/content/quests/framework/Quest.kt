@@ -67,13 +67,19 @@ public val Player.questPoints: Int
 
 /**
  * Sets [quest]'s varp to its end state and adds its quest points, without the scroll (for when no
- * [ProtectedAccess] is available, e.g. an npc death event). Returns `false` if already complete.
+ * [ProtectedAccess] is available, e.g. an npc death event). Returns `false` if the completion was
+ * already announced.
+ *
+ * A quest that sets its own end state just before calling [completeQuest] (Sheep Shearer's last
+ * hand-in, Barcrawl) still counts as a fresh completion: its quest points aren't in the `qp` varp
+ * yet, so the recompute raises it. (0-QP miniquests fall back to the state check.)
  */
 public fun Player.grantQuest(quest: QuestDef): Boolean {
-    if (isQuestComplete(quest)) return false
-    setQuestState(quest, quest.complete)
+    val wasComplete = isQuestComplete(quest)
+    val before = questPoints
+    if (!wasComplete) setQuestState(quest, quest.complete)
     syncQuestPoints()
-    return true
+    return !wasComplete || (quest.questPoints > 0 && questPoints >= before + quest.questPoints)
 }
 
 /**

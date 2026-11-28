@@ -15,4 +15,7 @@ object JournalComponents : ComponentReferences() {
         find("account_summary_sidepanel:summary_click_layer", 2485176660594907618)
 
     val collection_close = find("collection:close")
+
+    /** The quest list's cog (top right of the quest tab). */
+    val questlist_settings = find("questlist:settings_button")
 }
