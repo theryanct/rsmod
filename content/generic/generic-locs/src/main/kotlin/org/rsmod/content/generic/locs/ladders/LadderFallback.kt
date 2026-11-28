@@ -1,5 +1,6 @@
 package org.rsmod.content.generic.locs.ladders
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.player.interact.LocInteractions
@@ -46,6 +47,8 @@ constructor(
     private val locInteractions: LocInteractions,
     private val collision: CollisionFlagMap,
 ) : PluginScript() {
+    private val logger = InlineLogger()
+
     override fun ScriptContext.startup() {
         OpInterceptors.register(Interceptor())
     }
@@ -65,17 +68,17 @@ constructor(
             val label = type.op.getOrNull(op.slot - 1) ?: return
             val dir = direction(label) ?: return
             if (dir != ASK) {
-                climb(dir)
+                climb(loc, dir)
                 return
             }
             startDialogue {
                 val picked = choice2("Climb-up", UP, "Climb-down", DOWN, title = "Climb up or down?")
-                climb(picked)
+                climb(loc, picked)
             }
         }
     }
 
-    private suspend fun ProtectedAccess.climb(dir: Int) {
+    private suspend fun ProtectedAccess.climb(loc: BoundLocInfo, dir: Int) {
         val here = player.coords
         val target =
             when {
@@ -86,9 +89,11 @@ constructor(
             }
         val dest = target?.let { landing(it, dir) }
         if (dest == null) {
+            logger.info { "LADDER ${loc.coords}: no landing near $target" }
             mes("This doesn't seem to lead anywhere.")
             return
         }
+        logger.info { "LADDER ${loc.coords} ${if (dir == UP) "up" else "down"}: $here -> $dest" }
         anim(if (dir == UP) seqs.human_reachforladder else seqs.human_pickupfloor)
         delay(1)
         telejump(dest)
@@ -129,20 +134,30 @@ constructor(
         return out
     }
 
-    /** A free tile touching [loc]'s footprint, closest to [target]. */
+    /**
+     * A free tile touching a side of [loc]'s footprint (not a corner) with no wall between it and
+     * the loc, closest to [target]. The wall check keeps a staircase's landing inside its building:
+     * the tile across an outer wall is free too, but on the wrong side.
+     */
     private fun besideLoc(loc: LocInfo, type: UnpackedLocType, target: CoordGrid): CoordGrid? {
         val turned = loc.angleId and 1 == 1
         val width = if (turned) type.length else type.width
         val length = if (turned) type.width else type.length
         val base = loc.coords
         val tiles = ArrayList<CoordGrid>()
-        for (x in -1..width) {
-            for (z in -1..length) {
-                val inside = x in 0 until width && z in 0 until length
-                if (!inside) tiles += base.translate(x, z)
-            }
+        for (x in 0 until width) {
+            tiles += base.translate(x, -1).takeIf { it.isFree(facing = CollisionFlag.WALL_NORTH) } ?: continue
         }
-        return tiles.filter { it.isFree() }.minByOrNull { it.chebyshevDistance(target) }
+        for (x in 0 until width) {
+            tiles += base.translate(x, length).takeIf { it.isFree(facing = CollisionFlag.WALL_SOUTH) } ?: continue
+        }
+        for (z in 0 until length) {
+            tiles += base.translate(-1, z).takeIf { it.isFree(facing = CollisionFlag.WALL_EAST) } ?: continue
+        }
+        for (z in 0 until length) {
+            tiles += base.translate(width, z).takeIf { it.isFree(facing = CollisionFlag.WALL_WEST) } ?: continue
+        }
+        return tiles.minByOrNull { it.chebyshevDistance(target) }
     }
 
     private fun nearestFree(target: CoordGrid): CoordGrid? {
@@ -158,10 +173,11 @@ constructor(
         return null
     }
 
-    private fun CoordGrid.isFree(): Boolean {
+    /** Walkable, and (with [facing]) no wall on the tile's side that faces the loc. */
+    private fun CoordGrid.isFree(facing: Int = 0): Boolean {
         // Unallocated zones are outside any loaded map square.
         if (!collision.isZoneAllocated(x, z, level)) return false
-        return collision[x, z, level] and BLOCKED == 0
+        return collision[x, z, level] and (BLOCKED or facing) == 0
     }
 
     private fun UnpackedLocType.isClimbable(): Boolean {
