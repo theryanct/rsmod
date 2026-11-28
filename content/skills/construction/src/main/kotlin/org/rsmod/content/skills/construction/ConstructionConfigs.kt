@@ -1,6 +1,12 @@
 package org.rsmod.content.skills.construction
 
+import org.rsmod.api.type.builders.varp.VarpBuilder
 import org.rsmod.api.type.refs.loc.LocReferences
+import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
+import org.rsmod.game.type.loc.LocType
+import org.rsmod.game.type.obj.ObjType
 import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
 
@@ -10,6 +16,38 @@ internal object ConstructionLocs : LocReferences() {
     val garden_centrepiece = find("poh_crude_garden_1")
     val door_left = find("poh_hotspot_doorl_rimmington")
     val door_right = find("poh_hotspot_doorr_rimmington")
+
+    /** Hotspot and furniture locs used by the parlour and garden data. */
+    val byName: Map<String, LocType> =
+        (ConstructionData.parlour.flatMap { group ->
+                group.spots.map { it.hotspot } + group.options.flatMap { it.locs.values }
+            } + ConstructionData.gardenSpots.map { it.hotspot })
+            .distinct()
+            .associateWith { find(it) }
+}
+
+internal object ConstructionObjs : ObjReferences() {
+    val hammer = find("hammer")
+    val saw = find("poh_saw")
+
+    val byName: Map<String, ObjType> =
+        (ConstructionData.materials + ConstructionData.nails).associateWith { find(it) }
+}
+
+internal object ConstructionSeqs : SeqReferences() {
+    val build = find("human_poh_build")
+}
+
+/** Saved per character (world symbol range 65700-65899). */
+internal object ConstructionVarpBuilds : VarpBuilder() {
+    init {
+        build("poh_parlour_furniture")
+    }
+}
+
+internal object ConstructionVarps : VarpReferences() {
+    /** [ConstructionData.TIER_BITS] bits per parlour group, in [ConstructionData.parlour] order. */
+    val parlour = find("poh_parlour_furniture")
 }
 
 /**
