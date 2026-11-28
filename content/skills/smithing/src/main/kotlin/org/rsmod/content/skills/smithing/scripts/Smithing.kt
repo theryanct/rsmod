@@ -1,5 +1,6 @@
 package org.rsmod.content.skills.smithing.scripts
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -24,6 +25,8 @@ import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
+
+private val logger = InlineLogger()
 
 /**
  * Anvil smithing through the OSRS smithing interface for bronze, iron and steel.
@@ -64,8 +67,10 @@ constructor(
 
     override fun ScriptContext.startup() {
         // Bind every loc named "Anvil" by the slot of its "Smith" op.
+        var bound = 0
         for (type in locTypes.values) {
-            if (!type.name.equals("Anvil", ignoreCase = true)) {
+            // Any anvil variant (e.g. "Rusted anvil") with a "Smith" op.
+            if (!type.name.contains("anvil", ignoreCase = true)) {
                 continue
             }
             val slot = type.op.indexOfFirst { it.equals("Smith", ignoreCase = true) }
@@ -74,7 +79,9 @@ constructor(
             }
             onOpLocSlot(type, slot + 1) { openAnvil(null) }
             onOpLocU(type) { openAnvil(it.objType) }
+            bound++
         }
+        logger.info { "Smithing: bound $bound anvil locs." }
 
         onIfModalButton(smithing_components.make_1) { player.setMakeX(1) }
         onIfModalButton(smithing_components.make_5) { player.setMakeX(5) }
