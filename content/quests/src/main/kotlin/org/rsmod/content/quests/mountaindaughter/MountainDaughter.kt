@@ -13,6 +13,9 @@ import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.script.onApLoc1
+import org.rsmod.api.script.onApLoc3
+import org.rsmod.api.script.onApLocU
 import org.rsmod.api.script.onApNpc2
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpLocU
@@ -142,6 +145,19 @@ constructor(
         for (stone in MdLocs.flat_stones) {
             onOpLocU(stone) { onFlatStone(it.objType) }
             onLocOpLabel(locTypes, stone, "Jump-across") { fallIn() }
+        }
+        // The island obstacles stand in the water with no walkable tile beside them (the clump of
+        // rocks is two tiles from either island, the tree's far end two from the first island):
+        // they work from a short distance (ap) as well.
+        onApLoc3(MdLocs.lake_tree) {
+            val reach = if (player.coords.inBox(ISLAND_A)) ISLAND_REACH else 1
+            if (isWithinApRange(it.loc, reach)) climbTree()
+        }
+        onApLocU(MdLocs.pole_rocks) { if (isWithinApRange(it.loc, ISLAND_REACH)) onPoleRocks(it.objType) }
+        onApLoc1(MdLocs.pole_rocks) { if (isWithinApRange(it.loc, ISLAND_REACH)) fallIn() }
+        for (stone in MdLocs.flat_stones) {
+            onApLocU(stone) { if (isWithinApRange(it.loc, ISLAND_REACH)) onFlatStone(it.objType) }
+            onApLoc1(stone) { if (isWithinApRange(it.loc, ISLAND_REACH)) fallIn() }
         }
         onLocOpLabel(locTypes, MdLocs.pool_gas, "Listen-to") { listenPool() }
         onLocOpLabel(locTypes, MdLocs.pool_water, "Listen-to") { listenPool() }
@@ -1126,6 +1142,7 @@ constructor(
         private val ISLAND_B_LANDING = CoordGrid(2773, 3691, 0)
         private val ISLAND_C_LANDING = CoordGrid(2778, 3691, 0)
         private const val POLE_ROCKS_Z = 3688
+        private const val ISLAND_REACH = 3
         private val BURIAL_SPOT = CoordGrid(2782, 3694, 0)
         /** Outside the cave entrance (2809,3703) and inside by its exit (2805,10104). */
         private val CAVE_OUTSIDE = CoordGrid(2808, 3703, 0)
