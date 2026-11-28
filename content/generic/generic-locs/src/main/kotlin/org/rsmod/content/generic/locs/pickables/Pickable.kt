@@ -24,7 +24,9 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
     override fun ScriptContext.startup() {
         onOpLoc2(content.pickable_crop) { pickCrop(it.loc, it.type) }
         onOpLoc2(pickable_locs.cabbage) { pickCabbage(it.loc, it.type) }
-        onOpLoc2(pickable_locs.flax) { pickCrop(it.loc, it.type, deplete = random.of(16) < FLAX_DEPLETE) }
+        onOpLoc2(pickable_locs.flax) {
+            pickCrop(it.loc, it.type, deplete = random.of(FLAX_ROLL) < FLAX_DEPLETE)
+        }
     }
 
     private suspend fun ProtectedAccess.pickCrop(
@@ -66,6 +68,7 @@ constructor(private val objRepo: ObjRepository, private val locRepo: LocReposito
     private companion object {
         /** Flax disappears on 3 of 16 picks (Mod Ash, via the Wiki). */
         const val FLAX_DEPLETE = 3
+        const val FLAX_ROLL = 16
     }
 }
 
