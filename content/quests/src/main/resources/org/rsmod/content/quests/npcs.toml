@@ -1329,6 +1329,19 @@ coords = '1_41_63_13_12'
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
 
+# Creature of Fenkenstrain: Fenkenstrain by his table, his tower form, and his monster in the
+# tower (multinpcs on varp fenk_quest). Authored placements (Ryan-test).
+[[spawn]]
+npc = 'fenk_fenkenstrain'
+coords = '0_55_55_31_27'
+
+[[spawn]]
+npc = 'fenk_fenkenstrain_in_tower'
+coords = '2_55_55_29_36'
+
+[[spawn]]
+npc = 'fenk_creature'
+coords = '2_55_55_31_37'
 # Spirits of the Elid: the cave's golems (one outside each door), the target over the north
 # channel (multinpc on elid_rangingchannel) and the genie in the crevice. Authored placements
 # (Ryan-test).
