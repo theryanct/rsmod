@@ -1,0 +1,90 @@
+# Generated from the OSRS Wiki page "Transcript:Witch's Potion" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to Hetty
+1	line	Hetty	What could you want with an old woman like me?
+1	select	Select an Option
+1	option	I am in search of a quest.
+2	line	Player	I am in search of a quest.
+2	line	Hetty	Hmmm... Maybe I can think of something for you.
+2	line	Hetty	Would you like to become more proficient in the dark arts?
+2	select	Start the Witch's Potion quest?
+2	option	Yes.
+3	line	Player	Yes, help me become one with my darker side.
+3	line	Hetty	Okay, I'm going to make a potion to help bring out your darker self.
+3	line	Hetty	You will need certain ingredients.
+3	line	Player	What do I need?
+3	line	Hetty	You need an eye of newt, a rat's tail, an onion... Oh and a piece of burnt meat.
+3	line	Player	Great, I'll go and get them.
+3	action	end
+2	option	No.
+3	line	Player	No, I have my principles and honour.
+3	line	Hetty	Suit yourself, but you're missing out.
+3	action	end
+1	option	I've heard that you are a witch.
+2	line	Player	I've heard that you are a witch.
+2	line	Hetty	Yes it does seem to be getting fairly common knowledge.
+2	line	Hetty	I fear I may be getting a visit from the witch hunters of Falador before long.
+2	select	Select an Option
+2	option	I am in search of a quest.
+3	action	above
+2	option	Goodbye.
+3	line	Player	Goodbye.
+3	action	end
+0	section	Attempting to drink from the cauldron
+1	line	Player	As nice as that looks, I think I'll give it a miss for now.
+1	action	end
+0	section	Acquiring the items
+0	section	Talking to Hetty with none of the items
+1	line	Player	I've been looking for those ingredients.
+1	line	Hetty	So what have you found so far?
+1	line	Player	I'm afraid I don't have any of them yet.
+1	line	Hetty	Well I can't make the potion without them! Remember... You need an eye of newt, a rat's tail, an onion, and a piece of burnt meat. Off you go dear!
+1	action	end
+0	section	Talking to Hetty with some of the items
+1	line	Player	I've been looking for those ingredients.
+1	line	Hetty	So what have you found so far?
+1	cond	If the player only has the rat's tail:
+2	line	Player	I have the rat's tail (ewww), I don't have any burnt meat, I don't have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the burnt meat:
+2	line	Player	I don't have a rat's tail, I have the burnt meat, I don't have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the onion:
+2	line	Player	I don't have a rat's tail, I don't have any burnt meat, I have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the eye of newt:
+2	line	Player	I don't have a rat's tail, I don't have any burnt meat, I don't have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the rat's tail and burnt meat:
+2	line	Player	I have the rat's tail (ewww), I have the burnt meat, I don't have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the rat's tail and onion:
+2	line	Player	I have the rat's tail (ewww), I don't have any burnt meat, I have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the rat's tail and eye of newt:
+2	line	Player	I have the rat's tail (ewww), I don't have any burnt meat, I don't have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the burnt meat and onion:
+2	line	Player	I don't have a rat's tail, I have the burnt meat, I have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the burnt meat and eye of newt:
+2	line	Player	I don't have a rat's tail, I have the burnt meat, I don't have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the onion and eye of newt:
+2	line	Player	I don't have a rat's tail, I don't have any burnt meat, I have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the rat's tail, burnt meat, and onion:
+2	line	Player	I have the rat's tail (ewww), I have the burnt meat, I have an onion, and I don't have an eye of newt.
+1	cond	If the player only has the rat's tail, burnt meat, and eye of newt:
+2	line	Player	I have the rat's tail (ewww), I have the burnt meat, I don't have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the rat's tail, onion, and eye of newt:
+2	line	Player	I have the rat's tail (ewww), I don't have any burnt meat, I have an onion, and I have the eye of newt, yum!
+1	cond	If the player only has the burnt meat, onion, and eye of newt:
+2	line	Player	I don't have a rat's tail, I have the burnt meat, I have an onion, and I have the eye of newt, yum!
+1	line	Hetty	Great, but I'll need the other ingredients as well.
+1	action	end
+0	section	Talking to Hetty with all the items
+1	line	Player	I've been looking for those ingredients.
+1	line	Hetty	So what have you found so far?
+1	line	Player	In fact I have everything!
+1	line	Hetty	Excellent, can I have them then?
+1	box	You pass the ingredients to Hetty and she puts them all into her cauldron. Hetty closes her eyes and begins to chant. The cauldron bubbles mysteriously.
+1	line	Player	Well, is it ready?
+1	line	Hetty	Ok, now drink from the cauldron.
+1	action	end
+0	section	Talking to Hetty again before drinking from the cauldron
+1	line	Hetty	Well are you going to drink the potion or not?
+1	line	Player	Yes, I will.
+1	action	end
+0	section	Drinking from the cauldron
+1	box	You drink from the cauldron. It tastes horrible! You feel yourself imbued with power.

@@ -1,0 +1,144 @@
+# Generated from the OSRS Wiki page "Transcript:Ernest the Chicken" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Veronica	Can you please help me? I'm in a terrible spot of trouble.
+1	option	Aha, sounds like a quest. I'll help.
+2	line	Player	Aha, sounds like a quest. I'll help.
+2	line	Veronica	Yes yes, I suppose it is a quest. My fiance Ernest and I came upon this house.
+2	line	Veronica	Seeing as we were a little lost Ernest decided to go in and ask for directions.
+2	line	Veronica	That was an hour ago. That house looks spooky, can you go and see if you can find him for me?
+2	line	Player	Ok, I'll see what I can do.
+2	line	Veronica	Thank you, thank you. I'm very grateful.
+2	action	Ernest the Chicken is started.
+2	action	end
+1	option	No, I'm looking for something to kill.
+2	line	Player	No, I'm looking for something to kill.
+2	line	Veronica	Oooh, you violent person you.
+2	action	end
+0	section	Veronica during quest
+1	line	Veronica	Have you found my sweetheart yet?
+1	line	Player	No, not yet.
+1	action	end
+0	section	The Mad Scientist
+1	line	Professor Oddenstein	Be careful in here, there's lots of dangerous equipment.
+1	option	I'm looking for a guy called Ernest.
+2	line	Player	I'm looking for a guy called Ernest.
+2	line	Professor Oddenstein	Ah Ernest, top notch bloke. He's helping me with my experiments.
+2	line	Player	So you know where he is then?
+2	line	Professor Oddenstein	He's that chicken over there.
+2	line	Player	Ernest is a chicken...? Are you sure?
+2	line	Professor Oddenstein	Oh, he isn't normally a chicken, or at least he wasn't until he helped me test my pouletmorph machine.
+2	line	Professor Oddenstein	It was originally going to be called a transmutation machine. But after testing pouletmorph seems more appropriate.
+2	option	I'm glad Veronica didn't actually get engaged to a chicken.
+3	line	Player	I'm glad Veronica didn't actually get engaged to a chicken.
+3	line	Professor Oddenstein	Who's Veronica?
+3	line	Player	Ernest's fiancee. She probably doesn't want to marry a chicken.
+3	line	Professor Oddenstein	Ooh I dunno. She could have free eggs for breakfast.
+3	line	Player	I think you'd better change him back.
+3	line	Professor Oddenstein	Umm... It's not so easy...
+3	line	Professor Oddenstein	My machine is broken, and the house gremlins have run off with some vital bits.
+3	line	Player	Well I can look for them.
+3	line	Professor Oddenstein	That would be a help. They'll be somewhere in the manor house or its grounds, the gremlins never get further than the entrance gate.
+3	line	Professor Oddenstein	I'm missing the pressure gauge and a rubber tube. They've also taken my oil can, which I'm going to need to get this thing started again.
+3	action	end
+2	option	Change him back this instant!
+3	line	Player	Change him back this instant!
+3	line	Professor Oddenstein	Umm... It's not so easy...
+3	line	Professor Oddenstein	My machine is broken, and the house gremlins have run off with some vital bits.
+3	line	Player	Well I can look for them.
+3	line	Professor Oddenstein	That would be a help. They'll be somewhere in the manor house or its grounds, the gremlins never get further than the entrance gate.
+3	line	Professor Oddenstein	I'm missing the pressure gauge and a rubber tube. They've also taken my oil can, which I'm going to need to get this thing started again.
+3	action	end
+1	option	What does this machine do?
+1	option	Is this your house?
+0	section	Veronica during quest after finding out about Ernest
+1	line	Veronica	Have you found my sweetheart yet?
+1	line	Player	Yes, he's a chicken.
+1	line	Veronica	I know he's not exactly brave but I think you're being a bit harsh.
+1	line	Player	No no, he's been turned into an actual chicken by a mad scientist.
+1	line	Veronica	Eeeeeek!
+1	line	Veronica	My poor darling, why must these things happen to us.
+1	line	Player	Well I'm doing my best to turn him back.
+1	line	Veronica	Well be quick, I'm sure being a chicken can't be good for him.
+1	action	end
+0	section	Before returning any parts
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I'm afraid I don't have any of them yet!
+1	line	Professor Oddenstein	I need a rubber tube, a pressure gauge and a can of oil. Then your friend can stop being a chicken.
+1	action	end
+0	section	The pressure gauge
+0	section	Trying to search the fountain without poisoning the piranhas
+1	line	Player	There seems to be a pressure gauge in here...
+1	line	Player	Ow!
+1	line	Player	... and a lot of piranhas! I can't get the gauge out.
+1	action	end
+0	section	Using poison on the fish food
+0	section	Using poisoned food on the fountain
+0	section	Searching the fountain after piranhas have been poisoned
+1	line	Player	There seems to be a pressure gauge in here...
+1	line	Player	... and a lot of dead fish.
+0	section	Searching the fountain after obtaining pressure gauge
+1	line	Player	It's full of dead fish!
+1	action	end
+0	section	Using regular fish food on the fountain
+0	section	Using anything besides the fish food variants on the fountain
+1	line	Player	Ow!
+0	section	Attempting to fill a water container after poisoning the water
+1	line	Player	I don't think I want to use that water any more.
+1	action	end
+0	section	The key
+0	section	Returning the parts
+0	section	The rubber tube
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've only got the rubber tube so far.
+1	line	Professor Oddenstein	It's a good start, but I'll need my pressure gauge and oil can too.
+1	line	Player	Ok, I'll go and look for them.
+1	action	end
+0	section	The pressure gauge
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've only got the pressure gauge so far.
+1	line	Professor Oddenstein	It's a good start, but I'll need my oil can and rubber tube too.
+1	line	Player	Ok, I'll go and look for them.
+1	action	end
+0	section	The oil can
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've only got the oil can so far.
+1	line	Professor Oddenstein	It's a good start, but I'll need my pressure gauge and rubber tube too.
+1	line	Player	Ok, I'll go and look for them.
+1	action	end
+0	section	The rubber tube and pressure gauge
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've got the rubber tube and the pressure gauge.
+1	line	Professor Oddenstein	That's good, but I still need my oil can.
+1	line	Player	Ok, I'll go and look for it.
+1	action	end
+0	section	The rubber tube and oil can
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've got the oil can and the rubber tube.
+1	line	Professor Oddenstein	That's good, but I still need my pressure gauge.
+1	line	Player	Ok, I'll go and look for it.
+1	action	end
+0	section	The pressure gauge and oil can
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I've got the oil can and the pressure gauge.
+1	line	Professor Oddenstein	That's good, but I still need my rubber tube.
+1	line	Player	Ok, I'll go and look for it.
+1	action	end
+0	section	Finishing up
+1	line	Professor Oddenstein	Have you found anything yet?
+1	line	Player	I have everything!
+1	line	Professor Oddenstein	Give 'em here then.
+1	line	Professor Oddenstein	Let's get this fixed then.
+1	line	Ernest	[Thank you sir/Thank you m'lady/Thank you]. It was dreadfully irritating being a chicken. How can I ever thank you?
+1	line	Player	Well a cash reward is always nice...
+1	line	Ernest	Of course, of course.
+0	section	Post-quest
+0	section	Talking to Veronica
+1	line	Veronica	Thank you for rescuing Ernest.
+1	line	Player	Where is he now?
+1	line	Veronica	Oh he went off to talk to some green warty guy. I'm sure he'll be back soon.
+1	action	end
+0	section	Claiming the antique lamp from Veronica
+1	line	Veronica	Thank you for rescuing Ernest. He left this lamp for you.
+1	action	
+1	line	Player	Thanks!
+1	action	end
