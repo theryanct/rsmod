@@ -41,7 +41,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * see `aggie/Aggie.kt`), pink skirt (Thessalia). Key imprint: soft clay while Keli shows you the
  * key. Server varp `prince_progress`: met Leela, Leela handed over the key.
  *
- * Not done: free passage through the Al Kharid toll gate (no toll gate script yet).
+ * Free passage through the Al Kharid toll gate afterwards: see [TollGate].
  */
 class PrinceAliRescue
 @Inject
