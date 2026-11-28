@@ -160,9 +160,8 @@ constructor(
         onOpHeldLabel(objTypes, MhObjs.plank_sack, "Fill") { fillSack() }
         onOpHeldLabel(objTypes, MhObjs.plank_sack, "Empty") { emptySack() }
         onOpHeldLabel(objTypes, MhObjs.plank_sack, "Check") { checkSack() }
-        if (!onOpHeldLabel(objTypes, MhObjs.supply_crate, "Open") { openCrate() }) {
-            onOpHeldLabel(objTypes, MhObjs.supply_crate, "Search") { openCrate() }
-        }
+        val opens = onOpHeldLabel(objTypes, MhObjs.supply_crate, "Open") { openCrate() }
+        if (!opens) onOpHeldLabel(objTypes, MhObjs.supply_crate, "Search") { openCrate() }
         onPlayerLogin { sync(player) }
     }
 
@@ -196,15 +195,15 @@ constructor(
 
     /* State: mh_contract = house+1 (bits 0-3), tier (4-5), last tier+1 (8-10), signed up (12). */
 
-    private fun Player.contract(): Int = vars[MhVarps.contract]
+    private fun Player.contractBits(): Int = vars[MhVarps.contract]
 
-    private fun Player.houseIndex(): Int = (contract() and 0xF) - 1
+    private fun Player.houseIndex(): Int = (contractBits() and 0xF) - 1
 
-    private fun Player.tierIndex(): Int = (contract() ushr 4) and 0x3
+    private fun Player.tierIndex(): Int = (contractBits() ushr 4) and 0x3
 
-    private fun Player.lastTier(): Int = ((contract() ushr 8) and 0x7) - 1
+    private fun Player.lastTier(): Int = ((contractBits() ushr 8) and 0x7) - 1
 
-    private fun Player.signedUp(): Boolean = ((contract() ushr 12) and 1) == 1
+    private fun Player.signedUp(): Boolean = ((contractBits() ushr 12) and 1) == 1
 
     private fun Player.setContract(house: Int, tier: Int, last: Int, signed: Boolean) {
         val value = (house + 1) or (tier shl 4) or ((last + 1) shl 8) or ((if (signed) 1 else 0) shl 12)
@@ -607,10 +606,6 @@ constructor(
         var acc = 0
         val loot = crate.first { acc += it.weight; roll < acc }
         val count = random.of(loot.min, loot.max)
-        if (!inv.hasFreeSpace() && invTotal(inv, loot.obj) == 0 && invTotal(inv, MhObjs.supply_crate) > 1) {
-            mes("You don't have enough inventory space.")
-            return
-        }
         invDel(inv, MhObjs.supply_crate, 1)
         invAdd(inv, loot.obj, count)
         mes("You open the supply crate and find $count x ${objTypes[loot.obj].name.lowercase()}.")
