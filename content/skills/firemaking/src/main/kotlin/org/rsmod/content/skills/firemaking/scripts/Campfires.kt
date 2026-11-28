@@ -58,7 +58,7 @@ constructor(
         onPlayerQueueWithArgs<TendJob>(CampfireQueues.tend) { tendOne(it.args) }
     }
 
-    private fun remaining(coords: CoordGrid): Int = ((campfires[coords] ?: 0) - mapClock.cycle).coerceAtLeast(0)
+    private fun remaining(coords: CoordGrid): Int = ((campfires[coords] ?: 0) - this@Campfires.mapClock.cycle).coerceAtLeast(0)
 
     private suspend fun ProtectedAccess.startCampfire(loc: BoundLocInfo, log: CampfireData.Log) {
         if (CampfireObjs.tinderbox !in inv) {
@@ -69,7 +69,7 @@ constructor(
             mes("You need a Firemaking level of ${log.level} to burn these logs.")
             return
         }
-        campfires.entries.removeIf { it.value <= mapClock.cycle }
+        campfires.entries.removeIf { it.value <= this@Campfires.mapClock.cycle }
         val near = campfires.keys.any { it.level == loc.coords.level && it.chebyshevDistance(loc.coords) < MIN_SPACING }
         if (near) {
             mes("There's a Forester's Campfire nearby, help tend to that one or move further away.")
@@ -80,7 +80,7 @@ constructor(
         anim(firemaking_seqs.human_createfire)
         delay(2)
         val current = locRepo.findExact(loc.coords, CampfireLocs.fire) ?: return
-        campfires[loc.coords] = mapClock.cycle + log.startTicks
+        campfires[loc.coords] = this@Campfires.mapClock.cycle + log.startTicks
         locRepo.change(current, CampfireLocs.campfire, log.startTicks)
         statAdvance(stats.firemaking, log.xp * xpMods.get(player, stats.firemaking))
         mes("You add the logs and the fire becomes a forester's campfire.")
@@ -132,7 +132,7 @@ constructor(
         anim(firemaking_seqs.human_createfire)
         faceSquare(job.coords)
         val burn = minOf(MAX_BURN, remaining(job.coords) + log.addTicks)
-        campfires[job.coords] = mapClock.cycle + burn
+        campfires[job.coords] = this@Campfires.mapClock.cycle + burn
         locRepo.change(current, CampfireLocs.campfire, burn)
         statAdvance(stats.firemaking, log.xp * xpMods.get(player, stats.firemaking))
         if (job.remaining > 1 && type in inv) {
