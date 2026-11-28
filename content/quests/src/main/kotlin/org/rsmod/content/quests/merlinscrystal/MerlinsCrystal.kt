@@ -155,12 +155,7 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.talkKnight(npc: Npc, name: String) {
-        val section =
-            when {
-                state == STARTED -> name
-                state in LEARNED..KEEP -> "$name (2)"
-                else -> "$name (3)"
-            }
+        val section = knightSection(name)
         val hooks =
             SimpleQuestHooks(
                 options =
@@ -175,6 +170,20 @@ constructor(
             )
         runQuestSection(npc, dialogue, section, hooks)
     }
+
+    /**
+     * The Wiki's knight sections: every knight speaks while you investigate (stage 1); all but Sir
+     * Gawain have a Keep Le Faye block (2-3); all but Sir Lancelot an Excalibur block (4+), so
+     * Gawain's second section is his Excalibur one and Lancelot's second his Keep Le Faye one.
+     */
+    private fun ProtectedAccess.knightSection(name: String): String =
+        when {
+            state == STARTED -> name
+            name == "Sir Gawain" -> if (state >= RITUAL) "Sir Gawain (2)" else "Sir Gawain"
+            name == "Sir Lancelot" -> "Sir Lancelot (2)"
+            state in LEARNED..KEEP -> "$name (2)"
+            else -> "$name (3)"
+        }
 
     /* Keep Le Faye */
 
