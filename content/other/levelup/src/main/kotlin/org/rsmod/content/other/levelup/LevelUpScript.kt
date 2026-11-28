@@ -1,12 +1,14 @@
 package org.rsmod.content.other.levelup
 
 import jakarta.inject.Inject
+import java.util.WeakHashMap
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.statBase
 import org.rsmod.api.script.advanced.onAdvanceStat
 import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.jingle.JingleReferences
 import org.rsmod.api.type.refs.spot.SpotanimReferences
+import org.rsmod.game.entity.Player
 import org.rsmod.game.type.comp.ComponentType
 import org.rsmod.game.type.jingle.JingleType
 import org.rsmod.game.type.stat.StatType
@@ -21,6 +23,13 @@ import org.rsmod.plugin.scripts.ScriptContext
  * TODO: "(Unlocks)" jingle variants and the combat level-up message.
  */
 class LevelUpScript @Inject constructor() : PluginScript() {
+    /**
+     * Highest level already announced per player and stat. A multi-level jump queues one
+     * `AdvanceStat` per level, but each reads the same (final) base level: only the first shows the
+     * fanfare, as in OSRS (one dialog with the new level). Weak keys drop players on logout.
+     */
+    private val announced = WeakHashMap<Player, MutableMap<String, Int>>()
+
     override fun ScriptContext.startup() {
         onAdvanceStat { levelUp(it.args) }
     }
@@ -28,6 +37,12 @@ class LevelUpScript @Inject constructor() : PluginScript() {
     private suspend fun ProtectedAccess.levelUp(stat: StatType) {
         val skill = stat.displayName
         val level = player.statBase(stat)
+        val key = stat.internalName ?: skill
+        val seen = announced.getOrPut(player) { HashMap() }
+        if (level <= (seen[key] ?: 0)) {
+            return
+        }
+        seen[key] = level
         val maxed = level >= stat.maxLevel
 
         spotanim(if (maxed) LevelUpSpots.levelup_99 else LevelUpSpots.levelup)
