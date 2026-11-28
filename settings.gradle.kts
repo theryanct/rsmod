@@ -41,6 +41,10 @@ fun includeProjects(pluginProject: ProjectDescriptor) {
     }
 }
 
+// Rev 243: modules whose interfaces were redesigned in the 243 cache, disabled until ported
+// (skill guides -> skill_guide_v2, canoes -> per-station canoe_map_* interfaces).
+val disabledProjects = setOf("content:interfaces:skill-guides", "content:travel:canoe")
+
 fun searchProject(parentName: String, root: Path, currentPath: Path) {
     val hasBuildFile = Files.exists(currentPath.resolve("build.gradle.kts"))
     if (!hasBuildFile) {
@@ -48,5 +52,9 @@ fun searchProject(parentName: String, root: Path, currentPath: Path) {
     }
     val relativePath = root.relativize(currentPath)
     val projectName = relativePath.toString().replace(File.separator, ":")
-    include("$parentName:$projectName")
+    val path = "$parentName:$projectName"
+    if (disabledProjects.any { path == it || path.startsWith("$it:") }) {
+        return
+    }
+    include(path)
 }

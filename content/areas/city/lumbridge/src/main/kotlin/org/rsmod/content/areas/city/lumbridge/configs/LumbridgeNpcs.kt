@@ -13,7 +13,6 @@ typealias lumbridge_npcs = LumbridgeNpcs
 object LumbridgeNpcs : NpcReferences() {
     val barfy_bill = find("canoeing_bill", 3103331168324788094)
     val banker = find("deadman_banker_blue_south", 1536012232472220879)
-    val banker_tutor = find("aide_tutor_banker", 5183772333668041643)
     val shop_keeper = find("generalshopkeeper1", 2140424768095690499)
     val shop_assistant = find("generalassistant1", 2185693774375842236)
     val gee = find("lumbridge_guide2_man", 814251163147109342)
@@ -43,7 +42,6 @@ internal object LumbridgeNpcEditor : NpcEditor() {
 
         edit(lumbridge_npcs.banker) { contentGroup = content.banker }
 
-        edit(lumbridge_npcs.banker_tutor) { contentGroup = content.banker_tutor }
 
         edit(lumbridge_npcs.father_aereck) { moveRestrict = indoors }
 
