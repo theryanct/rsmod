@@ -162,6 +162,8 @@ MANUAL += [("combine", "baw_killer_wasp_dart", 10, 15, 25, 1, "human_fletching_a
             [("baw_killer_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
 for m in MANUAL:
     key = (m[0], m[1], m[7][0][0], m[7][-1][0])
+    if (m[0], m[1], m[7][0][0]) in seen and m[0] != "combine":
+        continue  # the Wiki bucket already has it
     if key not in seen:
         seen.add(key)
         rows.append(m)
