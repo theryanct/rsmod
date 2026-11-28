@@ -1196,3 +1196,13 @@ coords = '0_44_157_16_35'
 [[spawn]]
 npc = 'troll_eadgar'
 coords = '0_44_157_11_34'
+
+# Mountain Daughter: the Kendal in his lair (Wiki 2786,10081; multinpc base) and the ancient rock's
+# guard inside the rock tent.
+[[spawn]]
+npc = 'mdaughter_multi_bear'
+coords = '0_43_157_34_33'
+
+[[spawn]]
+npc = 'mdaughter_ancientrock_guard'
+coords = '0_43_57_46_14'

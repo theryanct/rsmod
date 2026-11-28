@@ -48,6 +48,8 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             "agility_pyramid_low_wall",
             // Brimhaven Agility Arena low walls give xp (brimhaven/BrimhavenArena.kt).
             "agilityarena_lowwall",
+            // The Mountain Camp rockslide is Mountain Daughter's (guard lines, quest gate).
+            "mdaughter_rockslide",
         )
 
     private enum class Kind(val labels: Set<String>) {

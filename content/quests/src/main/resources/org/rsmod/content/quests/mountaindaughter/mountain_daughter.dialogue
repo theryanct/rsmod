@@ -1,0 +1,833 @@
+# Generated from the OSRS Wiki page "Transcript:Mountain Daughter" by tools/quests/transcript_to_dialogue.py
+# Hand edits (marked "# Authored (not Wiki)"): Fremennik-name placeholders -> {player}, the untemplated Asleif line restored, a {{tmissing}} reply and the post-quest Hamal replies authored. {{mes}} lines live in MountainDaughter.kt.
+0	section	Entering the camp
+0	section	Hamal's Daughter
+1	action	If The Fremennik Trials has been completed, the player will introduce themselves with their Fremennik name, and Hamal will use that name in place of the player's username throughout the quest.
+1	line	Hamal the Chieftain	Greetings, outerlander, I am Hamal. I am the chieftain of this tribe.
+1	line	Player	And my name is {player}, honourable chieftain.
+1	line	Hamal the Chieftain	Ah, an outerlander with manners.
+1	line	Hamal the Chieftain	So tell me what you want from us.
+1	option	Actually, I'm a Fremennik.
+2	line	Player	Actually, I'm a Fremennik, not an outerlander.
+2	line	Hamal the Chieftain	We are not Fremennik, outerlander.
+2	line	Player	But you look like Fremennik!
+2	line	Hamal the Chieftain	And you do not look like a Fremennik, but still claim to be one.
+2	line	Hamal the Chieftain	But I will not deceive you. We were part of the Fremennik once, but left the village of Rellekka long ago.
+2	option	So what are you doing up here?
+3	action	below
+2	option	That's fascinating.
+3	line	Player	That's fascinating, but I'm afraid I have other things to do at the moment.
+3	action	end
+1	option	Why is everyone so hostile?
+2	line	Player	Why is everyone being so hostile to me?
+2	line	Hamal the Chieftain	We are a solitary group, outerlander, and have little experience or interest in outside contact.
+2	line	Hamal the Chieftain	It is also our custom not to talk to outerlanders without my sanction. And I see no reason to sanction it for you.
+2	option	So what are you doing up here?
+3	line	Player	So what are you lot all doing up here in the mountains?
+3	line	Hamal the Chieftain	We left Rellekka because we wanted to live closer to nature. We feel that the people of Rellekka have grown complacent and rely too much on their tools rather than their skill. And while they share our view on the sanctity
+3	line	Hamal the Chieftain	of the runestones, they still employ and actively use magic.
+3	line	Hamal the Chieftain	Their Seer is an affront to the gods!
+3	cond	If The Fremennik Trials has been completed:
+4	line	Player	And you haven't even seen what he did to his house!
+4	line	Hamal the Chieftain	What?
+3	line	Hamal the Chieftain	Anyway.
+3	line	Hamal the Chieftain	We do not recognise the council of Rellekka and want nothing more to do with them. We live on rock and stone now, pure and hard.
+3	line	Hamal the Chieftain	We move on to another part of the mountain slope when the rough land cannot sustain us anymore.
+3	line	Hamal the Chieftain	That said, we have tarried at this location for too long and should be moving on.
+3	line	Player	So why are you still here?
+3	line	Hamal the Chieftain	For one thing, this side of the mountain is mostly free from the menace of the trolls and the delvings of the deformed dwarves.
+3	line	Player	And?
+3	line	Hamal the Chieftain	Well, you see...
+3	line	Hamal the Chieftain	My daughter has gone missing. We have been looking for her and cannot go on without her.
+3	option	I will search for her!
+4	line	Player	A damsel in distress! I will search for her!
+4	line	Hamal the Chieftain	Haha, you have spirit, {player}.
+4	line	Hamal the Chieftain	But we do not employ outerlanders.
+4	line	Player	You don't need to employ me! Just let me look for her.
+4	line	Hamal the Chieftain	Hmmm.
+4	line	Hamal the Chieftain	That seems acceptable to me. Very well, I will allow you to look for her.
+4	line	Hamal the Chieftain	I will instruct my people to let you roam about the area freely, and give limited consent to them to talk to you.
+4	line	Player	Great! I'll be back with her soon. Just wait here.
+4	line	Hamal the Chieftain	Oh, I'll be waiting here alright.
+4	action	end
+3	option	I'm sorry to hear that.
+4	line	Player	I'm sorry to hear that.
+4	line	Hamal the Chieftain	We do not need your sympathy, outerlander.
+4	action	end
+3	option	Maybe the trolls got her?
+4	line	Player	Maybe the trolls got her?
+4	line	Hamal the Chieftain	Do not say such things in jest, outerlander.
+4	line	Hamal the Chieftain	Besides, stealth and kidnapping is not their way.
+4	option	I will search for her!
+5	action	above
+4	option	Forget it then.
+5	line	Player	Forget it then, you can figure it out on your own.
+5	action	end
+2	option	Oh, I'll stop talking to you then.
+3	line	Player	Oh, I'll stop talking to you then.
+3	line	Hamal the Chieftain	As you wish, outerlander.
+3	action	end
+1	option	I'm looking for a quest!
+2	line	Player	I'm looking for a quest! Do you have any for me?
+2	line	Hamal the Chieftain	We do not employ outerlanders.
+2	line	Player	Okay, I know the drill, where do I sign up for the trials to join your tribe?
+2	line	Hamal the Chieftain	And we certainly don't let them join us!
+2	action	end
+0	section	Talking to Hamal again
+1	option	Any idea on where I should start looking?
+2	line	Player	Uhm... any idea on where I should start looking for your daughter?
+2	line	Hamal the Chieftain	There is a large pool of water beyond the camp. She used to go there often, it was her favourite spot.
+2	line	Hamal the Chieftain	Ragnar, her fiance, is probably there as well. I will give him my permission to talk to you.
+2	action	end
+1	option	What does your daughter look like?
+2	line	Player	What does your daughter look like?
+2	line	Hamal the Chieftain	She is the fairest maiden of all our tribe, and I daresay of all the northern lands. She has flowing black hair, and when last we saw her, she was wearing a brown dress.
+2	line	Hamal the Chieftain	Perhaps you should speak to the man she is to marry, tribesman Ragnar. He can probably tell you more.
+2	line	Hamal the Chieftain	You can find him out by the pool beyond the camp, where my daughter used to go so often.
+2	action	end
+0	section	Crisis
+0	section	Camp dwellers
+1	cond	Depending on which camp dweller is spoken to, different dialogue is given.
+1	action	Option 1:
+2	line	Player	Hello! I'm trying to help your chieftain here.
+2	line	Camp dweller	We don't need any help.
+2	action	end
+1	action	Option 2:
+2	line	Player	Hello there! Can you help me?
+2	box	The camp dweller shakes his head.
+2	action	end
+1	action	Option 3:
+2	line	Camp dweller	Stay away from me, outerlander.
+2	action	end
+1	action	Option 4:
+2	line	Player	I think I need some help.
+2	line	Player	Well, yes...
+2	line	Camp dweller	Run along then!
+2	action	end
+1	action	Option 5:
+2	line	Player	Hello, I'm-
+2	line	Camp dweller	No.
+2	line	Player	What?
+2	line	Player	But I-
+2	line	Player	Isn't there-
+2	line	Player	Never mind.
+2	action	end
+0	section	Guard by the entrance
+1	line	Player	Can you come and help me? The chieftain's daughter-
+1	line	Guard	No, outerlander, I'm guarding this mountain pass from trolls and inquisitive people like you.
+1	line	Player	Doesn't look like you were very successful in the last regard.
+1	line	Guard	If the chieftain would let me, I would correct that oversight.
+1	action	end
+0	section	Jokul
+1	line	Player	Do you have any idea where the chieftain's daughter is?
+1	line	Jokul	That's what we would all like to know.
+1	action	end
+0	section	Ragnar
+1	line	Ragnar	So, you are the outerlander whom Hamal said would look for Asleif.
+1	line	Player	Who?
+1	line	Ragnar	You don't even know her name!
+1	line	Ragnar	I am sorry outerlander, I have not spoken with your kind for a long time and I'm not feeling so well. You see, I was set to marry Asleif, the most beautiful woman ever to grace this world.
+1	option	Do you have any idea where she might be?
+2	line	Player	Do you have any idea where she might be?
+2	line	Ragnar	She used to come here every day, you know, whenever our camp was set up in the vicinity. She would come to sing, her voice reflecting on the mountains and falling into the pool like sparkling silver. Sometimes I think I can hear her singing, but when I follow the sound around the pool I just end up here again.
+2	line	Player	So... do you have any idea where she might be now?
+2	line	Ragnar	We were supposed to meet here, at the tree by the pool. I think if I wait long enough maybe she will show up again.
+2	line	Player	But... you don't actually have any idea where she is right at the moment?
+2	line	Ragnar	If I knew I wouldn't be standing here, would I?
+2	action	end
+1	option	What do you mean, my kind?
+3	line	Player	What do you mean, my kind?
+3	line	Ragnar	You outerlanders with your fancy armour and your runestones and all your convenient little tools.
+3	line	Player	Oh, that kind...
+3	line	Player	What do you mean, my kind? I'm a Fremennik you know.
+3	line	Ragnar	Yet you still use magic, I assume, and have little actual knowledge of the earth and the rock that you stand on every day.
+3	line	Player	I suppose...
+3	line	Ragnar	Then you are an ignorant, an insult to the gods... and an outerlander.
+3	line	Player	Okay, okay, you made your point!
+3	action	end
+0	section	The Shining Pool
+0	section	Listening to the outer shining pools
+0	section	Attempting to climbing the slippery tree
+0	section	Gathering the mud
+0	section	Using the mud on the tree
+0	section	Climbing the tree
+0	section	Jumping across the clump of rocks
+1	cond	If the player doesn't use the broken staff:
+1	cond	If the player uses an appropriate staff:
+1	cond	If the player doesn't use an appropriate staff:
+0	section	Using the plank on the flat stones
+1	cond	If the player uses a plank:
+1	cond	If the player doesn't use a plank:
+0	section	Listening to the center shining pool
+1	box	You can clearly hear the voice coming from the water now.
+1	box	'{player}... {player}!'
+1	line	Player	Er... yes, hello?
+1	box	'Listen to me, {player}, listen to what I will say.'
+1	option	I think I'm going mad.
+2	line	Player	I think I'm going mad, I'm starting to hear things.
+2	action	end
+1	option	Hello! Who are you?
+2	line	Player	Hello! Who are you? And where for that matter?
+2	box	'I am all around you. I am the soft singing in the wind. I am the faint rippling of the water. I am the stone of the rocks around you.'
+2	line	Player	Well, I suppose that answered both questions then.
+2	box	'I am the voice of Asleif, daughter of Hamal, son of Wulfgard.'
+2	line	Player	Wait, you're Asleif? I think I was looking for you! Where are you hiding?
+2	box	'Asleif is no longer in your world, she dwells in the halls of her ancestors now.'
+2	line	Player	But I thought you said you were Asleif?
+2	box	'I am but the voice of her, an echo of the past, reflected on the water. A tiny part of her spirit.'
+2	option	I think I'd better have a lie down.
+3	line	Player	I think I'd better have a lie down, I'm starting to get a little dizzy.
+3	action	end
+2	option	So what exactly do you want from me?
+3	line	Player	So what exactly do you want from me?
+3	box	'I am greatly concerned for the people who were once my tribesmen. You must help me, {player}, for their current course will lead to their doom.'
+3	line	Player	Er, I don't think they like the idea of me helping them.
+3	box	'Listen to me, and judge then if you think yourself capable or not.'
+3	box	'My people have, as is their way, isolated themselves from the rest of the world. There is no one for them to turn to in times of need.'
+3	box	'Our tribesmen are the children of the Fremennik of Rellekka. The parting was a bitter affair and the two groups never forgave each other.'
+3	box	'I ask you, {player}, to help bring these two people closer together again.'
+3	option	That sounds like something I can do.
+4	line	Player	All right, that sounds like something I can do.
+4	box	'There is another thing, {player}, that I ask of you.'
+4	line	Player	Yes?
+4	box	'My father has not moved camp for far too long. There is very little food now for my people. You must find a new supply of food for them, for I fear the worst.'
+4	option	I'll get right on it.
+5	line	Player	I'll get right on it.
+5	line	Player	So let's see, peace with Rellekka, and a new supply of food.'
+5	box	'Thank you, {player}, and may the gods bless you on your journey.'
+5	action	end
+4	option	I'm not really a farmer.
+5	line	Player	I'm sorry, but I'm not really a farmer. You'll have to find someone else.
+5	box	'I am sad to hear that, {player}, but you must do what you think is right.'
+5	action	end
+3	option	I'm not really a diplomat.
+4	line	Player	I'm sorry, but I'm not really a diplomat. You'll have to find someone else.
+4	box	'I am sad to hear that, {player}, but you must do what you think is right.'
+4	action	end
+3	option	Don't tell me, there's an anthem involved?
+4	line	Player	Don't tell me, there's an anthem involved?
+4	box	'Your words are not clear to me. But please, try to find a way to bring our people closer together again.'
+4	action	other
+0	section	Talking to Asleif again
+1	line	Player	Uh, hey, hello! Asleif spirit thing?
+1	box	'Yes, {player}, what is it?'
+1	line	Player	I forgot what you wanted me to do.
+1	cond	If the player hasn't found a new supply of food yet:
+2	box	'I wish that my people find a new supply of food.'
+1	cond	If the player hasn't improved relations between the groups yet:
+# Authored (not Wiki): the Wiki transcript has {{tmissing}} here.
+2	box	'I wish that my people make peace with the Fremennik of Rellekka.'
+1	line	Player	Okay, got it.
+1	action	end
+0	section	Returning to shore
+1	select	Do you wish to return to shore?
+1	option	Yes.
+1	option	No.
+2	action	end
+0	section	Attempting to enter the cave
+0	section	Speaking with Ragnar again
+1	line	Player	I spoke to Asleif!
+1	line	Ragnar	Really? You found her? Where is she, tell me!
+1	line	Player	Well... there's something you should know.
+1	line	Ragnar	Yes?
+1	line	Player	Er, she's sort of... well...
+1	line	Player	She's sort of dead.
+1	line	Ragnar	What? Do not say such things! Tell me where you saw her!
+1	line	Player	I didn't actually see her, not as such. But I did talk to her, right there, on that island in the center of the pool.
+1	line	Ragnar	That island is bare! There's no one there! Do not try to deceive me, outerlander, she is not dead and you did not talk to her!
+1	line	Player	Fine, don't believe me then.
+1	action	end
+0	section	Hamal the Chieftain
+1	line	Player	I have found your daughter!
+1	line	Hamal the Chieftain	Where is she? Tell me, outerlander!
+1	line	Player	Well, er, she is dead.
+1	line	Hamal the Chieftain	Do not play games with me. I gave you leave to walk about our camp, not to trick us.
+1	option	Never mind.
+2	line	Player	Never mind.
+2	action	end
+1	option	About the people of Rellekka...
+2	line	Player	About the people of Rellekka...
+2	option	Why do you hate them so much?
+3	line	Player	Why do you hate them so much?
+3	line	Hamal the Chieftain	We do not hate them, outerlander, but we do not approve of their ways either.
+3	line	Player	But don't you basically believe in the same things?
+3	line	Hamal the Chieftain	It is true that our beliefs are not all that different, but we have a different way of applying them, a stricter way.
+3	line	Player	So you've never considered, say, making peace with them?
+3	line	Hamal the Chieftain	We are not at war with them, outerlander, but we try to ignore each other.
+3	line	Hamal the Chieftain	But I must admit that I have, in fact, sent out a representative to Rellekka to talk about improving relations and perhaps setting up a basic trade route.
+3	line	Player	Great! Well, that was easy.
+3	line	Hamal the Chieftain	Unfortunately we have not heard from Svidi, our representative, for a few days.
+3	line	Player	Shall I go looking for him as well then?
+3	line	Hamal the Chieftain	Do as you wish, outerlander.
+3	action	end
+2	option	You're all such a group of petty bickerers!
+3	line	Player	You're all such a group of petty bickerers! I've only just gone and made peace between Miscellania and Etceteria!
+3	line	Hamal the Chieftain	Miscellania? So that group survived?
+3	line	Player	Why, do you know them?
+3	line	Hamal the Chieftain	Oh yes... that group left the mainland a long time ago. And good riddance to them, I say.
+3	line	Player	Don't tell me you're fighting them as well.
+3	line	Hamal the Chieftain	Oh, we're not fighting anyone. But we cannot forgive them for their insulting behaviour before they left.
+3	line	Hamal the Chieftain	It is quite inappropriate to pray to the gods when the moon is half full. Yet it is almost as if they wanted to make a point of it, holding parties in honour of gods almost every night.
+3	line	Hamal the Chieftain	That, and they like to dress up in fancy clothes a bit too much to our tastes.
+3	line	Player	Go on then, go on, tell me, who else split off from your little group of infighting barbarians?
+3	line	Hamal the Chieftain	How do you mean? There is no one else. Well, there's the Gunnarian people who left this area over a century ago, but they don't really count, do they?
+3	line	Hamal the Chieftain	And I suppose that the people of-
+3	line	Player	No! Forget it! I didn't really want to hear all that!
+3	action	other
+1	option	About your food supplies...
+2	line	Player	About your food supplies...
+2	line	Player	From what I understand you're starting to run out?
+2	line	Hamal the Chieftain	Where did you get that idea from, outerlander?
+2	line	Player	Er, I just happened to overhear it.
+2	line	Hamal the Chieftain	There is some truth to it, yes. If it were not for my missing daughter, we would have moved on already, and finding food would be easier again for a while.
+2	line	Player	Can I help you with finding a new supply of food?
+2	line	Hamal the Chieftain	I would be interested to see how you would manage that, outerlander. But if you insist on trying, go ahead.
+2	action	other
+0	section	Making peace
+0	section	Leaving the mountain camp
+1	line	Guard	Go, outerlander, and do not hurry back.
+0	section	Svidi
+1	line	Player	Are you, by any chance, Svidi? Sent by Hamal to talk to Brundt and the council of Rellekka?
+1	line	Svidi	Maybe... who is asking? You're an outerlander, aren't you?
+1	line	Player	Yes, but Hamal asked me to rescue you from a Rellekka prison. What are you doing here?
+1	line	Svidi	I haven't actually been in Rellekka yet...
+1	line	Player	Why, can't you find the way?
+1	line	Svidi	Well, I'm not actually sure if I should go in there, you see.
+1	line	Player	Why not?
+1	line	Svidi	I've always been told that the people of Rellekka are ignorants, almost as bad as other outerlanders. I think they might kill me if I go there.
+1	line	Player	Nonsense. I'm an outerlander and I haven't killed you either!
+1	line	Svidi	Yes, but you're on your own, they have a whole village.
+1	line	Svidi	So I don't want to go in there, but I don't want to go back to the camp and tell Hamal that I didn't dare to go to Rellekka either.
+1	option	Aren't you supposed to be a ferocious warrior?
+2	line	Player	Aren't you supposed to be a ferocious warrior?
+2	line	Svidi	Not all of us are warriors.
+2	line	Svidi	Some of us are schooled in the fine art of diplomacy.
+2	action	end
+1	option	Can't I persuade you to go in there somehow?
+2	line	Player	Can't I persuade you to go in there somehow?
+2	line	Svidi	I won't go in there unless I know it's safe.
+2	line	Player	Do you want me to go with you as your bodyguard?
+2	line	Svidi	You? But you're an outerlander! You'd probably lead me to a cave to kill me yourself!
+2	line	Player	What if I get you some kind of guarantee of safe passage from the village? Will that do?
+2	line	Svidi	Hmmmm...
+2	line	Svidi	Yes, that will do.
+2	action	end
+0	section	Talking to Svidi before receiving the safety guarantee
+1	line	Player	Weren't you on your way to Rellekka?
+1	line	Svidi	Weren't you on your way to get me a guarantee of safe passage into Rellekka?
+1	cond	If the player hasn't talked with Brundt:
+2	line	Player	Oh yes, I almost forgot.
+1	cond	If the player has talked with Brundt:
+2	line	Player	Brundt doesn't want to talk to any representative until your tribe gives back some rock or other.
+2	line	Svidi	In that case I'm staying right here. I don't have the authority to trade away our rock.
+2	line	Svidi	Besides, it's ours and he can't have it.
+1	action	end
+0	section	Brundt the Chieftain
+1	option	Ask about the mountain camp.
+2	line	Player	The chieftain from the mountain camp has sent a representative to Rellekka!
+2	cond	If the player is a Fremennik:
+2	cond	If the player is an outlander:
+2	line	Brundt the Chieftain	Very unusual, outerlander, but we have not seen him yet.
+2	line	Player	Well, that's the problem, he doesn't dare to come into Rellekka. He's afraid he's going to get hurt.
+2	line	Brundt the Chieftain	What? He's not much of a warrior, is he?
+2	line	Player	That's what I thought. He says he wants a guarantee of safety.
+2	line	Brundt the Chieftain	I will meet with this man on one condition, outerlander.
+2	line	Brundt the Chieftain	When their group split off from Rellekka, they stole one of the ancient relics of the Fremennik. Our ancient rock.
+2	line	Player	Ancient rock? What did it do?
+2	line	Brundt the Chieftain	Do?
+2	option	Did it contain vast magical powers?
+3	line	Player	Did it contain vast magical powers?
+3	action	below
+2	option	Did it give the owner unimaginable strength?
+3	line	Player	Did it give the owner unimaginable strength?
+3	action	below
+2	option	Was it the eternal prison of an immortal demon?
+3	line	Player	Was it the eternal prison of an immortal demon?
+3	cond	If The Fremennik Trials has been completed:
+4	line	Brundt the Chieftain	Amusing, {player}, but as a Fremennik yourself you know better than that.
+3	cond	If The Fremennik Trials hasn't been completed:
+4	line	Brundt the Chieftain	No, no, no. Little do you understand our ways, outerlander.
+3	line	Brundt the Chieftain	The rock was just that, a rock. It had no special properties and was in essence no different from any other rock.
+3	line	Player	So what did it mean?
+3	line	Brundt the Chieftain	It symbolised our refusal to use the runestones for ourselves, instead relying on our own abilities.
+3	line	Brundt the Chieftain	The people you speak of took the stone with them when they left for the mountains. They claimed their way of living was more pure and closer to nature.
+3	line	Player	And is that true?
+3	line	Brundt the Chieftain	Maybe, but where's the harm in a bit of feasting from time to time?
+3	line	Brundt the Chieftain	In any case, before the council and I meet with anyone from their camp, they will have to give our rock back.
+3	action	end
+2	option	Did it look pretty?
+3	line	Player	Did it look pretty?
+3	line	Brundt the Chieftain	Hmm, not especially I think...
+3	action	above
+1	option	Ask about anything else.
+0	section	Talking to Brundt before receiving the rock
+1	line	Player	Why won't you meet with the representative of the mountain camp?
+1	line	Brundt the Chieftain	Like I said, we don't want anything to do with them until they give back our ancient rock.
+1	action	end
+0	section	Returning into the camp through the rockslide
+1	line	Guard	I suppose I might as well let you pass now, since I can't seem to stop you anyway.
+1	line	Guard	Just remember that I'm watching you.
+0	section	Talking to Hamal before removing the rock
+1	line	Hamal the Chieftain	What is it, outerlander?
+1	option	Never mind.
+2	action	previous
+1	option	About the people of Rellekka...
+2	line	Player	About the people of Rellekka...
+2	line	Player	Chieftain Brundt says that he won't meet with Svidi unless you give him back some rock or other.
+2	line	Hamal the Chieftain	What, do you mean our ancient rock that our fathers took with them when they left the ignorants of Rellekka?
+2	line	Player	Yes, that's the one.
+2	line	Hamal the Chieftain	Out of the question. That rock belongs to us. It symbolises what we stand for. What would Brundt want with it anyway?
+2	line	Player	So I can't persuade you to part with the rock?
+2	line	Hamal the Chieftain	Did you not hear me the first time, outerlander? It belongs to us, we will not part with it.
+2	action	end
+1	option	About your food supplies...
+2	action	previous
+0	section	Removing the half a rock from the Ancient Rock
+1	box	You take a look around and see none of the camp dwellers about...
+1	box	With a few swings of your pick, you split off a part of the rock and sneakily put it in your pocket.
+1	cond	If the player already has a half a rock:
+1	cond	Trying to obtain half a rock while the Ancient Rock is split:
+0	section	Exiting tent with half a rock
+1	line	Guard	What do you have there, outerlander? It's not our rock, is it?
+1	line	Player	No, of course not! See? It's a completely different rock, it's much smaller.
+1	line	Guard	Alright, you be on your way then.
+1	action	end
+0	section	Talking to Svidi with half a rock
+1	line	Player	Weren't you on your way to Rellekka?
+1	line	Svidi	Weren't you on your way to get me a guarantee of safe passage into Rellekka?
+1	line	Player	Well, I split this rock in your camp in two, you see, and I'm going to give half of it to Brundt so he will speak to you.
+1	line	Svidi	What, you broke our stone in two?
+1	line	Svidi	You'd better have the permission of Hamal to do this, outerlander.
+1	line	Player	Uhm... of course I do.
+0	section	Talking to Brundt the Chieftain after obtaining half a rock
+1	option	Ask about the mountain camp.
+2	line	Player	I've brought you back your rock!
+2	line	Brundt the Chieftain	Really? Let me see!
+2	action	Player gives half a rock to Brundt
+2	line	Brundt the Chieftain	This rock seems a lot smaller than our bard made it out to be.
+2	line	Player	Well, it's not the whole rock, it's part of the rock...
+2	line	Player	I split it in two.
+2	cond	If the player is a Fremennik:
+3	line	Brundt the Chieftain	You truly have the Fremennik spirit in you, {player}
+2	cond	If the player is an outlander:
+3	line	Brundt the Chieftain	You are unusually insightful for an outerlander!
+2	line	Brundt the Chieftain	Yes, we are satisfied with sharing the rock. I'll meet with this representative and will inform the council to join us here in the longhall.
+2	cond	If The Fremennik Trials has been completed:
+3	line	Brundt the Chieftain	Although I see that Manni is already here.
+3	line	Player	Can I have that guarantee of safe passage, then, to give to the representative?
+3	action	below
+2	cond	If The Fremennik Trials hasn't been completed:
+3	line	Player	Can I have that guarantee of safe passage, then, to give to the representative?
+3	line	Brundt the Chieftain	Oh yes, here it is.
+3	action	
+3	action	end
+1	option	Ask about anything else.
+0	section	Talking to Brundt the Chieftain again
+1	option	Ask about the mountain camp.
+2	line	Player	Did you meet with the representative from the mountain camp yet?
+2	line	Brundt the Chieftain	No, we haven't seen him yet. Did you give him that safe passage guarantee yet?
+2	cond	If the guarantee was lost:
+3	line	Player	I'm afraid to say that I lost it.
+3	line	Brundt the Chieftain	Okay, here's another, try not to lose it this time.
+3	action	end
+2	line	Player	No, I still need to give him that.
+2	action	end
+1	option	Ask about anything else.
+0	section	Returning to Svidi with the safety guarantee
+1	line	Player	Brundt gave me the guarantee of safe passage to give to you!
+1	line	Svidi	Let me see that, I want to be sure it's authentic.
+1	cond	If the safety guarantee is in the bank:
+2	line	Player	Well, I have it in the bank.
+2	line	Svidi	It's not much good for me there, is it?
+2	action	end
+1	cond	If the safety guarantee was lost:
+2	line	Player	Oh, I seem to have lost it somewhere.
+2	line	Svidi	That doesn't help me much, does it?
+2	action	end
+1	line	Player	Here you go.
+1	action	Player gives the safety guarantee to Svidi
+1	line	Svidi	Hmmm...
+1	line	Svidi	Okay, this looks valid enough. I'll go and talk to Brundt.
+1	line	Player	Great!
+1	action	end
+0	section	Talking to Svidi again
+1	line	Player	Why aren't you in Rellekka yet?
+1	line	Svidi	I'll go in there, don't worry. I'm just waiting for the right moment.
+1	line	Svidi	You can go back to Hamal to tell him I'm on my way.
+1	action	end
+0	section	Talking to Brundt the Chieftain after delivering the guarantee
+1	option	Ask about the mountain camp.
+2	line	Player	Did you meet with the representative from the mountain camp yet?
+2	line	Brundt the Chieftain	No, we're still waiting for him, but I'm sure he'll be here in due time.
+2	line	Brundt the Chieftain	Perhaps you should go back to their chieftain to tell him about the meeting.
+2	line	Player	Good idea.
+2	action	end
+1	option	Ask about anything else.
+0	section	Returning to Hamal
+1	line	Hamal the Chieftain	What is it, outerlander?
+1	option	Never mind.
+2	action	previous
+1	option	About the people of Rellekka...
+2	line	Player	I did it, I persuaded Brundt to speak to your representative!
+2	line	Hamal the Chieftain	Indeed, outerlander, and how did you accomplish that without giving him our rock?
+2	line	Player	Well, yeah, I need to talk to you about that...
+2	line	Hamal the Chieftain	Worry not, you made a wise decision and your boldness is impressive.
+2	line	Hamal the Chieftain	It does not matter, after all, how large the rock is, or what its shape is. And perhaps the two halves of the rock will have extra symbolism now, representing the two halves of the Fremennik culture.
+2	cond	If the safety guarantee hasn't been given to Svidi:
+3	line	Hamal the Chieftain	But first things first. Did Svidi go into Rellekka yet, to speak to Brundt on behalf of our tribe?
+3	line	Player	Oops, I completely forgot about that. I'd better hurry back to him.
+2	cond	If the safety guarantee has been given to Svidi:
+3	line	Hamal the Chieftain	I understand that Svidi's meeting with Brundt went quite well. I must thank you for your assistance, outerlander.
+2	action	end
+1	option	About your food supplies...
+2	action	previous
+0	section	Finding food
+0	section	Talking to Hamal before obtaining the white pearl
+1	line	Player	I'm looking for some bushes that carry White Pearl fruit. Do you know where I can find any?
+1	line	Hamal the Chieftain	Weren't you the one who was supposed to be looking for it for me?
+1	line	Player	Oh yes, good point.
+1	action	end
+0	section	Talking to Jokul
+1	line	Player	How goes the goat herding?
+1	line	Jokul	It goes, outerlander...
+1	line	Jokul	Times are hard here at the moment. We've been here for too long and there is not much food left, or places where I can take my goats.
+1	line	Player	Well, I'm trying to find a new supply of food for your people. Any ideas on where to start?
+1	line	Jokul	If only it were so easy!
+1	line	Jokul	That being said...
+1	line	Player	Yes..?
+1	line	Jokul	I have heard there is a certain kind of fruit... that will grow even here, in the mountains.
+1	line	Player	What's the name of the fruit?
+1	line	Jokul	It is called White Pearl, named after its white appearance.
+1	line	Player	Any ideas on where to find some?
+1	line	Jokul	I do not know. I believe it grows mainly in the mountains, and it can grow in even the most difficult circumstances.
+1	line	Jokul	We cannot move on until we find the chieftain's daughter, and we do not generally move far inland. But perhaps you can search for it.
+1	line	Player	I'll see what I can find.
+1	action	end
+0	section	Talking to Jokkul again
+1	line	Player	Where could I find that fruit again?
+1	line	Jokul	You mean the White Pearl?
+1	line	Jokul	I do not know, outerlander, but you might want to try looking on mountains.
+1	line	Player	What about this one?
+1	line	Jokul	No, if it grew on here I would have known.
+1	action	end
+0	section	Obtaining the white pearl seed
+1	cond	If the player has appropriate gloves on:
+2	box	Your gloves protect you from the thorns as you pick the White Pearl fruit.
+2	action	end
+1	cond	If the player doesn't have appropriate gloves on:
+1	cond	If the player already has a white pearl:
+1	cond	Eating the white pearl:
+1	cond	Getting another white pearl after eating it:
+1	cond	Trying to pick up a seed off the floor when you already have one:
+0	section	Talking to Jokul after obtaining the white pearl
+1	line	Player	Look, I found the White Pearl fruit!
+1	line	Jokul	You seem to be quite resourceful, outerlander. Go and show it to the chieftain.
+1	action	end
+0	section	Talking to Hamal after obtaining the white pearl
+1	line	Hamal the Chieftain	What is it, outerlander?
+1	option	Never mind.
+2	action	previous
+1	option	About the people of Rellekka...
+2	action	previous
+1	option	About your food supplies...
+2	cond	If the player has the white pearl:
+3	line	Player	Here, I have something that might interest you.
+3	line	Player	It's White Pearl fruit, which grows in even the hardiest circumstances. I found this growing on White Wolf Mountain.
+3	line	Hamal the Chieftain	And what use is one piece of fruit to us, outerlander? It won't feed our tribe for even a day.
+3	line	Player	Oops, I hadn't thought of that.
+3	action	end
+2	cond	If the player has the white pearl seed:
+3	line	Player	I've found this seed that may be of interest to you.
+3	line	Hamal the Chieftain	Interesting, what is it?
+3	line	Player	It's the seed of the White Pearl fruit. It grows on White Wolf mountain, even in the snow.
+3	line	Player	With luck, you'll be able to grow it here as well.
+3	line	Hamal the Chieftain	This is a great gift, {player}, which I humbly accept.
+3	action	Player gives the white pearl seed to Hamal
+3	action	other
+0	section	Talking to Jokul after giving Hamal the white pearl seed
+1	line	Jokul	I must thank you for your generous gift, outerlander.
+1	line	Player	Gift?
+1	line	Jokul	Yes, the seed of the White Pearl. It grows remarkably well.
+1	line	Player	Ah... well, glad to be of help.
+1	action	end
+0	section	Fighting the Kendal
+0	section	Talking to Hamal after completing both tasks
+1	line	Hamal the Chieftain	What is it, outerlander?
+1	line	Player	Never mind.
+1	action	end
+0	section	Shining Pool
+1	line	Player	Hey, ehm... Asleif spirit thing? Hello?
+1	box	'Yes, {player}?'
+1	line	Player	I did what you asked me to! I improved the relations between Rellekka and the mountain camp, and I found a new supply of food!
+1	box	'Yes, {player}, I can sense that this is so.'
+1	line	Player	So do you have any other quests for me, perhaps with some bigger rewards?
+1	box	'I do not fully understand what you speak of, but I do have one more task I would like you to do.'
+1	box	'My father does not believe that I am dead. In his heart, he knows it to be true, but he cannot accept it.'
+1	box	'You must convince him, {player}. Once you have convinced my father, everyone else in the camp will follow him. Then, perhaps, they can move on again.'
+1	line	Player	How do I do that, exactly? I don't think I'll be able to get him down to this little island.
+1	box	'I must leave that to you. All I know is that I was attacked by some creature or animal while I was sitting by the lake. It dragged me off and I remember nothing else.'
+1	box	'Perhaps this will help you, I cannot provide further assistance.'
+1	action	end
+0	section	Talking to Asleif again
+1	line	Player	What was the task you wanted me to do again?
+1	box	'You must convince the tribe that I am dead and that they need to move on. Convince my father, and the rest will follow.'
+1	action	end
+0	section	Talking to Hamal before fighting the Kendal
+1	line	Player	Hamal, I'm sorry, but your daughter is dead.
+1	line	Hamal the Chieftain	I told you before not to say such things.
+1	line	Hamal the Chieftain	What proof of it do you have anyway?
+1	line	Player	Ehm, none really...
+1	line	Hamal the Chieftain	Then do not say it again. I appreciate what you've done for us already, but don't try our patience.
+1	action	end
+0	section	Entering the cave
+0	section	The Kendal
+0	section	Attacking him before talking to him
+1	line	The Kendal	Do not attack me, puny mortal {player}!
+0	section	Trying to pick up the corpse of woman before killing him
+1	line	The Kendal	I did not give you permission to touch that, mortal!
+1	action	end
+0	section	Trying to kill the Kendal if it belongs to another player
+0	section	Talking to him
+1	line	Player	Errr... hello?
+1	line	The Kendal	Who dares to disturb my slumber?
+1	option	It's just me, no one special.
+2	line	Player	It's just me, {player}, no one special.
+2	line	The Kendal	Have you come, then, to pay your respects?
+2	line	Player	How... exactly do I do that?
+2	line	The Kendal	With your blood, mortal!
+2	option	Time to go!
+3	line	Player	Time to go, see you later!
+3	line	The Kendal	Go now, mortal, but I'll be watching you!
+3	action	end
+2	option	You mean a sacrifice?
+3	line	Player	You mean a sacrifice? Are you some kind of god?
+3	line	The Kendal	I am the guardian of the mountain, the god of the northern lands. I move the earth and control the skies. I am the Kendal!
+3	option	I seek your advice, oh great one!
+4	line	Player	I seek your advice, oh great one.
+4	line	Player	I seek the cowardly murderer of a young lady of a nearby clan of mountain people. Do you know where I can find this person?
+4	line	The Kendal	I am not here to answer questions of such trivial nature! Go now before doom befalls you, mortal!
+4	action	end
+3	option	You look like you escaped from a fairground!
+4	line	Player	You look like you escaped from a fairground!
+4	line	The Kendal	I would not say such things if I were you, mortal!
+4	action	end
+3	option	You look like a man in a bearsuit!
+4	line	Player	You look like a man in a bearsuit!
+4	line	The Kendal	What did you say, mortal?
+4	line	Player	I said, you look like a man wearing a bearsuit!
+4	line	The Kendal	How did you figure that out? How did you know?
+4	line	Player	I just said you looked like a man wearing a bearsuit, I didn't know you were!
+4	action	Conversation will resume from here if aborted
+4	line	Player	So what are you doing here, pretending to be a god?
+4	line	The Kendal	Ah, the people that live in the mountains here, they are a superstitious lot. They fear few things, but magic and gods they're scared to death of.
+4	line	The Kendal	So I took on the guise of one of their legends. It's a good way of being left alone.
+4	line	Player	And do you leave them alone as well?
+4	line	The Kendal	Ah, you're referring to the skeletons you see here? Yes, I did. Most of the time, at least. When there was no troll to be ambushed, and I had to eat...
+4	line	Player	Did you kill a young lady, by the lake? Just recently?
+4	line	The Kendal	Recently? Oh no, the entrance you came through has been blocked off for a good many years now. I've only seen trolls and the occasional stray dwarf since then, until you came along.
+4	line	The Kendal	But yes, more than ten years ago, I did kill someone like that.
+4	option	Oh, never mind then, that can't be right.
+5	line	Player	Oh, never mind then, that can't be the person I'm looking for. I'll be off.
+5	action	end
+4	option	Can I see that corpse?
+5	line	Player	Can I see that corpse? I'd like to make sure of something.
+5	line	The Kendal	She is just over there, in the centre, with the dress. I did not eat her after I killed her, she was too beautiful for that.
+5	line	The Kendal	I felt sorry for killing her, but by then it was already too late.
+5	line	Player	Yes, she does match the description I was given, it is her after all!
+5	option	Hand the body over to me!
+6	line	Player	I demand that you hand the body over to me! I must return them to her father!
+6	line	The Kendal	You demand nothing! You may have uncovered my disguise, but my claws can still tear you apart at will!
+6	line	The Kendal	I will not allow you to leave!
+6	action	The Kendal attacks the player
+5	option	I humbly request to be given the remains.
+6	line	Player	I humbly request to be given the remains, so I can return them to her father.
+6	line	The Kendal	I cannot do that. If they knew I wasn't a god, and if her father knew I killed his daughter, the whole tribe would come in here at once and I'd be finished.
+6	option	I will kill you myself!
+7	line	Player	I will kill you myself!
+7	line	The Kendal	Come and try!
+7	action	The Kendal attacks the player
+6	option	Never mind then, I'd better leave
+7	line	The Kendal	I'm afraid I can't allow you to leave either. You cannot tell anyone about me.
+7	action	The Kendal attacks the player
+5	option	I think you're completely mad!
+6	line	Player	I think you're completely mad, walking around in your silly bearsuit, killing innocent people!
+6	line	The Kendal	And how is that very much different from you, walking around in silly suits of armour, killing everything that moves?
+6	line	Player	Never mind.
+6	action	end
+1	option	It's me, of whom many legends are sung.
+2	line	Player	It's {player}, of whom many legends are sung.
+2	line	The Kendal	You are brave, to come into my cave and say a thing like that!
+2	action	end
+1	option	Slumber? You didn't seem to be sleeping.
+2	line	Player	Slumber? You didn't seem to be sleeping.
+2	line	The Kendal	Do not mock me, mortal!
+2	action	end
+0	section	Trying to pick up the corpse of woman after talking to him
+1	line	The Kendal	Stay away from there!
+1	action	end
+0	section	Killing the Kendal
+0	section	Trying to pick up another corpse
+0	section	Trying to bury the corpse before talking to Hamal
+0	section	Leaving the cave
+0	section	Talking to Ragnar before Hamal
+1	line	Player	I found the man who murdered Asleif! He was in a cave just by the pool, but I killed him!
+1	line	Ragnar	Do not say such things, outerlander! She is not dead, merely missing.
+1	line	Ragnar	She'll show up again... yes, yes, I'm sure of it.
+1	line	Player	But she's been missing for more than ten years!
+1	line	Ragnar	Yes, I know... well, that doesn't mean she can't still come back, right?
+1	cond	If the player doesn't have the corpse:
+2	line	Player	Er, yeah, right... sure.
+2	action	end
+1	cond	If the player has the corpse:
+2	line	Player	Look, here, I even have her corpse!
+2	line	Ragnar	I do not want to see any of the corpses you're carrying around with you! Begone!
+2	action	end
+0	section	Talking to Shining pool before Hamal
+1	line	Player	I found him! I found your murderer! It was some bear-like man who called himself the Kendal.
+1	box	'The Kendal is an ancient spirit of our people, but he is benevolent. Are you sure of this?'
+1	line	Player	Well, it was actually a guy in a bearsuit. But he's dead now.
+1	box	'Go then, to my father, and show him what you've learned.'
+1	action	end
+0	section	Talking to Hamal about the Kendal for the first time
+1	line	Player	Do you know there is a strange bear like thing in a cave near the pool?
+1	line	Hamal the Chieftain	Yes, it is the Kendal.
+1	line	Player	Only the cave is hidden behind some trees, you see-
+1	line	Player	What, you mean you know that already?
+1	line	Hamal the Chieftain	Of course. We planted the trees there ourselves many years ago.
+1	line	Hamal the Chieftain	It is unwise to come too close to a god, so we made sure no one would go there anymore.
+1	option	But he's not a god!
+2	action	continues
+1	option	But he killed your daughter!
+2	action	continues
+1	option	And why didn't you tell me your daughter's been missing for years?
+2	action	continues
+1	line	Player	But but but...
+1	line	Player	He's not a god! He's a man in a bearsuit! And he killed your daughter!
+1	line	Player	And why didn't you tell me she's been missing for more than ten years?
+1	line	Hamal the Chieftain	Fourteen years, to be exact. And I didn't say otherwise, did I? As for the Kendal, what proof have you of these serious accusations?
+1	cond	If the player hasn't defeated Kendal:
+2	line	Player	You want proof for everything, don't you? Why don't you just go and have a look?
+2	line	Hamal the Chieftain	Like I said, it is not wise to approach a god so closely.
+2	action	end
+1	cond	If the player defeated Kendal but isn't wearing the bear mask:
+2	line	Player	Well... I've only gone and killed him, haven't I?
+1	cond	If the player defeated Kendal and is wearing the bear mask:
+2	line	Player	Well... I've only gone and killed him, haven't I? Look, I'm even wearing his silly hat!
+1	line	Hamal the Chieftain	You have? Then we made an enormous mistake.
+1	line	Hamal the Chieftain	As did he. Impersonating a god bears the highest penalty imaginable, but I did not think that kind of justice would be delivered by the hand of an outerlander.
+1	line	Player	I also found your daughter. The bearman killed her.
+1	line	Hamal the Chieftain	So it is true then, after all? Let me see her body please.
+1	cond	If the player doesn't have the corpse:
+2	line	Player	I didn't bring it with me, I'll go and look for it.
+2	action	end
+1	cond	If the player has the corpse:
+2	line	Player	Of course.
+2	line	Hamal the Chieftain	Yes, I see it is her. So it is also true that you spoke to her spirit at the pool?
+2	line	Player	Yes, it's true.
+2	line	Hamal the Chieftain	Then she must be buried there, on the island at the center of the pool... to bring peace to her spirit. This is a most unusual situation, but will you bury her, {player}?
+2	option	I will.
+3	line	Player	I will.
+3	line	Hamal the Chieftain	Then please listen closely. If she is given a proper burial, she is to be buried with some of her possessions. I see she's still wearing her dress, so you will need one more item.
+3	line	Hamal the Chieftain	When she has been buried, you must build a cairn on top. It is our tradition to build these cairns in the shape of our longboats that we use when we need to cross the seas. You can use rocks for this purpose, about five or so should be enough.
+3	line	Hamal the Chieftain	Only then are the burial rites complete.
+3	line	Player	So I need to bury her with one of her possessions, and build a cairn on top made out of rocks. So where do I get another one of her possessions?
+3	line	Hamal the Chieftain	Asleif had little possessions in life and none that have survived the years. I do not know where you might find such a thing, but perhaps Ragnar does, out by the pool.
+3	action	end
+2	option	I won't.
+3	line	Player	I won't.
+3	line	Player	I... ehm...
+3	line	Player	Errr...
+3	line	Player	I will.
+3	action	above
+0	section	Talking to Hamal again
+1	cond	If the player defeated Kendal:
+2	line	Player	I killed the bearman! He really was just a man after all, like I said!
+2	line	Hamal the Chieftain	You have? Then we made an enormous mistake.
+2	action	above
+1	cond	If the player hasn't defeated Kendal:
+2	line	Player	I need some help with killing this bear thing in the cave. Do you have any warriors to come with me?
+2	line	Hamal the Chieftain	If you wish to confront the god it is your own affair, outerlander, but we will not be any part of it.
+2	action	end
+0	section	Talking to Ragnar again
+1	line	Ragnar	I heard the news from Hamal, outerlander. Alas, I have known this had to be so for a long time, but Hamal just didn't want to listen.
+1	line	Player	Uh huh.
+1	line	Player	Well, Hamal asked me to bury her with some of her possessions. But he doesn't have any anymore.
+1	line	Player	Do you have anything that may help?
+1	line	Ragnar	I'm not altogether sure... I do have one thing that may be appropriate.
+1	line	Ragnar	I was going to give her a necklace, when we were supposed to meet here many years ago.
+1	line	Ragnar	I still have it, and since it was a gift for Asleif, technically it's hers.
+1	line	Ragnar	Take it, outerlander, and bury it with her. It will be my parting gift.
+1	action	
+1	option	Thank you. I will make sure she's given a proper burial now.
+2	action	end
+1	option	You've been waiting to give it to her all that time?
+2	line	Player	You've been waiting to give it to her all that time?
+2	line	Ragnar	Oh yes... she is my only love, you see, and will be so forever.
+2	line	Player	But that's ridiculous! Don't you ever go out and have some fun? What is wrong with you people!
+2	line	Ragnar	I do not expect you to understand such things. But perhaps you will find your own love one day, and then you will remember these words.
+2	cond	If Throne of Miscellania has been completed:
+2	action	end
+0	section	Listening to the Shining pool before laying Asleif to rest
+1	line	Player	Uhm... Asleif? Hello?
+1	box	'Yes, {player}?'
+1	line	Player	I convinced your father about your death. He asked me to give you a proper burial, here on this island.
+1	box	'Then my father made a wise decision. Please proceed.'
+1	line	Player	Well, it's kind of awkward... can you maybe be silent while I bury you?
+1	line	Player	Hello?
+1	line	Player	Oh, right. Well, I'd better get on with it then.
+1	action	end
+0	section	Laying Asleif to rest
+0	section	Burying the corpse
+1	cond	If the player does not have Asleif's necklace:
+1	cond	If the player has Asleif's necklace:
+2	box	You dig a hole in the ground, then carefully lay down the skeleton of the chieftain's daughter, together with her necklace. You then close the hole, creating a small burial mound. Now all you need to do is build a cairn on top.
+2	action	end
+0	section	Listening to the Shining pool before building the cairn
+1	line	Player	Uhm... Asleif? Hello?
+1	line	Player	Hello? Are you there?
+1	line	Player	Burying her must have really helped! I should get on with building the cairn on top.
+1	action	end
+0	section	Building the cairn
+1	cond	If the player doesn't have enough muddy rocks:
+1	cond	If the player has enough muddy rocks:
+0	section	Talking to Hamal after quest completion
+1	cond	If The Fremennik Trials has been completed:
+2	line	Hamal the Chieftain	You are a most unusual outerlander. The council of Rellekka was wise to make you an honourary Fremennik.
+1	cond	If The Fremennik Trials has been completed and the requirements are met:
+2	line	Hamal the Chieftain	You are a most unusual outerlander. Perhaps you should seek to become an honourary Fremennik, in Rellekka.
+1	cond	If The Fremennik Trials hasn't been completed the requirements are met:
+2	line	Hamal the Chieftain	You are a most unusual outerlander. I'm sure that you will be able to complete your Fremennik trials some time.
+1	line	Hamal the Chieftain	You have my thanks, in any case.
+1	line	Player	So what are you all going to do now? Are you finally going to move to another location?
+1	line	Hamal the Chieftain	No, I've decided to set up a permanent camp here.
+1	line	Hamal the Chieftain	There is no need to move now with our new supply of food. Also, there is a protective spirit looking after us now.
+1	option	Excuse me, have you seen my helmet?
+# Authored (not Wiki): the transcript lists this option without its reply.
+2	line	Player	Excuse me, have you seen my helmet? The bear one.
+2	cond	If the player has lost the bearhead:
+3	line	Hamal the Chieftain	One of my people found it by the lake. Here, outerlander, it is yours by right.
+3	action	end
+2	cond	If the player still has the bearhead:
+3	line	Hamal the Chieftain	Is that not it you are carrying, outerlander?
+3	action	end
+1	option	Well, I must be off again.
+# Authored (not Wiki): the transcript lists this option without its reply.
+2	line	Player	Well, I must be off again.
+2	line	Hamal the Chieftain	Go well, {player}. You will always be welcome in this camp.
+2	action	end
+1	option	What exactly happened to your daughter?
+# Authored (not Wiki): the transcript lists this option without its reply.
+2	line	Player	What exactly happened to your daughter?
+2	line	Hamal the Chieftain	The bearman took her from the lake while she sang, fourteen years ago. We thought the Kendal had claimed her and dared not look.
+2	line	Hamal the Chieftain	Now she rests on the island, and her voice watches over us still.
+2	action	end
+1	option	I thought you didn't believe in magic?
+# Authored (not Wiki): the transcript lists this option without its reply.
+2	line	Player	I thought you didn't believe in magic?
+2	line	Hamal the Chieftain	We do not use magic, outerlander. But the spirits of our ancestors are no runestone trickery. They are part of the earth and the rock, as we are.
+2	action	end
+1	option	I think you're all mad.
+# Authored (not Wiki): the transcript lists this option without its reply.
+2	line	Player	I think you're all mad.
+2	line	Hamal the Chieftain	Perhaps we are, outerlander. But we are free, and now we are fed. That is enough for us.
+2	action	end
