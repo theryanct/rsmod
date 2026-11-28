@@ -23,7 +23,10 @@ class WorldMapScript @Inject constructor(private val eventBus: EventBus) : Plugi
             closeWorldMap()
             return
         }
-        ifOpenOverlay(worldmap_interfaces.worldmap, worldmap_components.map_container, eventBus)
+        // The floater layer is full-viewport (and remapped on fixed/resizable switches); the world
+        // map's own `worldmap_init` centres and sizes its window inside it. `map_container` is the
+        // 211x207 minimap slot, which made the map a tiny square.
+        ifOpenOverlay(worldmap_interfaces.worldmap, eventBus)
     }
 
     private fun Player.closeWorldMap() {
