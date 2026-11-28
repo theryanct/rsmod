@@ -2,6 +2,7 @@ package org.rsmod.content.skills.slayer
 
 import jakarta.inject.Inject
 import org.rsmod.api.combat.commons.npc.queueCombatRetaliate
+import org.rsmod.api.combat.commons.slayer.SlayerTaskResolver
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.player.features.slayerPointMultiplier
@@ -80,6 +81,7 @@ constructor(
     }
 
     override fun ScriptContext.startup() {
+        SlayerTaskResolver.install { player, npcTypeId -> isOnTask(player, npcTypeId) }
         for (master in SlayerData.masters) {
             val npc = SlayerNpcs.byName.getValue(master.npc)
             val ops = npcTypes[npc].op
@@ -282,20 +284,27 @@ constructor(
             .toMap()
     }
 
+    /** Shared by kill credit and the black mask / slayer helmet combat boosts. */
+    private fun isOnTask(hero: Player, npcTypeId: Int): Boolean {
+        if (hero.slayerTaskCount <= 0) {
+            return false
+        }
+        val npcs = categoryNpcIds[hero.slayerTask] ?: return false
+        if (npcTypeId in npcs) {
+            return true
+        }
+        // A superior is on task whenever one of the monsters it replaces is (some, e.g. araxytes,
+        // sit in more than one category).
+        val superior = superiorsById[npcTypeId] ?: return false
+        return superior.normals.any { SlayerSuperiorNpcs.byName.getValue(it).id in npcs }
+    }
+
     private fun onKill(hero: Player, npc: Npc) {
         val count = hero.slayerTaskCount
         if (count <= 0) {
             return
         }
-        val npcs = categoryNpcIds[hero.slayerTask] ?: return
-        val superior = superiorsById[npc.id]
-        // A superior is on task whenever one of the monsters it replaces is (some, e.g. araxytes,
-        // sit in more than one category).
-        val onTask =
-            npc.id in npcs ||
-                (superior != null &&
-                    superior.normals.any { SlayerSuperiorNpcs.byName.getValue(it).id in npcs })
-        if (!onTask) {
+        if (!isOnTask(hero, npc.id)) {
             return
         }
         if (superior == null) {
