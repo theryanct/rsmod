@@ -6,6 +6,7 @@ import org.rsmod.api.type.refs.dbrow.DbRowReferences
 import org.rsmod.api.type.refs.dbtable.DbTableReferences
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.barcrawl.Barcrawl.Companion.BARCRAWL
+import org.rsmod.content.quests.bearyoursoul.BearYourSoul.Companion.BEAR_YOUR_SOUL
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
@@ -80,6 +81,7 @@ public object BuiltQuests {
         listOf(
             ANIMAL_MAGNETISM,
             BARCRAWL,
+            BEAR_YOUR_SOUL,
             BELOW_ICE_MOUNTAIN,
             BIOHAZARD,
             BIG_CHOMPY,
