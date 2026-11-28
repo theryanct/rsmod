@@ -187,7 +187,15 @@ constructor(
             }
         }
         val category = categoriesById.getValue(SlayerData.stableId(task.category))
-        val amount = random.of(task.min, task.max)
+        // A bought "longer" unlock for this category uses the Wiki's extended amount.
+        val extMin = task.extMin
+        val extMax = task.extMax
+        val amount =
+            if (extMin != null && extMax != null && player.hasExtendedTask(task.category)) {
+                random.of(extMin, extMax)
+            } else {
+                random.of(task.min, task.max)
+            }
         player.slayerTask = category.id
         player.slayerTaskCount = amount
         player.slayerTaskMaster = master.id

@@ -23,7 +23,39 @@ internal object SlayerData {
         val weight: Double,
         val slayerReq: Int,
         val combatReq: Int,
+        /** Wiki extended amount (Slayer reward "longer" unlock), if the task has one. */
+        val extMin: Int? = null,
+        val extMax: Int? = null,
     )
+
+    /** A slayer_unlock dbrow (bit in the slayer_rewards_unlocks varps, cost, extended categories). */
+    class Unlock(
+        val bit: Int,
+        val cost: Int,
+        val name: String,
+        val refundable: Boolean,
+        val extends: List<String>,
+    )
+
+    /** slayer_unlocks.tsv (tools/slayer/slayer_unlocks.py), by bit. */
+    val unlocks: List<Unlock> by lazy {
+        val input =
+            SlayerData::class.java.getResourceAsStream("slayer_unlocks.tsv")
+                ?: error("Slayer resource not found: slayer_unlocks.tsv")
+        input.bufferedReader().use { it.readLines() }
+            .map { it.trimEnd() }
+            .filter { it.isNotBlank() && !it.startsWith("#") }
+            .map { it.split('\t') }
+            .map { p ->
+                Unlock(
+                    bit = p[1].toInt(),
+                    cost = p[2].toInt(),
+                    name = p[3],
+                    refundable = p[4] == "1",
+                    extends = if (p[5] == "-") emptyList() else p[5].split(','),
+                )
+            }
+    }
 
     class Category(val key: String, val display: String, val npcs: List<String>) {
         val id: Int = stableId(key)
@@ -90,6 +122,8 @@ internal object SlayerData {
                             weight = p[5].toDouble(),
                             slayerReq = p[6].toInt(),
                             combatReq = p[7].toInt(),
+                            extMin = p.getOrNull(8)?.toIntOrNull(),
+                            extMax = p.getOrNull(9)?.toIntOrNull(),
                         )
                     )
                 "category" -> categories.add(Category(p[1], p[2], p[3].split(',')))

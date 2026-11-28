@@ -17,6 +17,8 @@ import org.rsmod.api.type.refs.comp.ComponentReferences
 import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
+import org.rsmod.game.type.varp.VarpType
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.interf.IfButtonOp
 import org.rsmod.game.type.interf.IfEvent
@@ -36,8 +38,13 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - **Tasks > Cancel**: the confirm cc the client creates at index 66 + 1 on `confirm_button`;
  *   30 points (Turael's free reset stays in his dialogue).
  *
- * Not yet (phase 2): unlock/extend purchases (slayer_unlock dbrows + the slayer_rewards_unlocks
- * bitfields), blocking tasks, storing tasks.
+ * - **Unlock / Extend** (phase 2): the slayer_unlock dbrows (slayer_unlocks.tsv): confirming an
+ *   unlock (cc index = its bit) pays its cost and sets the bit in slayer_rewards_unlocks/1/2;
+ *   confirming an owned one disables it (no refund). "Extend everything" buys every missing
+ *   extension. Bought "longer" unlocks make new tasks use the Wiki extended amounts.
+ *
+ * Not yet: blocking/storing tasks, and the other unlocks' effects (Gargoyle Smasher, Bigger and
+ * Badder, slayer helm imbues, ...): their bits are bought and shown, the effect is separate.
  */
 class SlayerRewards
 @Inject
@@ -102,10 +109,54 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
     }
 
     private fun ProtectedAccess.confirm(comsub: Int) {
+        // The confirm cc index is the unlock bit (0-66) for Unlock/Extend, or 66 + action for the
+        // Tasks tab (1 cancel, 2 block) and 66 + 9 for "Extend everything".
+        if (comsub in UNLOCK_BITS) {
+            toggleUnlock(comsub)
+            return
+        }
         when (comsub - CONFIRM_BASE) {
             CANCEL -> cancelTask()
+            EXTEND_ALL -> extendAll()
             else -> mes("That option isn't available yet.")
         }
+    }
+
+    private fun ProtectedAccess.toggleUnlock(bit: Int) {
+        val unlock = unlocksByBit[bit] ?: return
+        if (player.hasSlayerUnlock(bit)) {
+            // OSRS "Disable": turn it off; points are not refunded.
+            player.setSlayerUnlock(bit, false)
+            mes("${unlock.name} has been disabled.")
+            return
+        }
+        val points = vars[SlayerVarps.points]
+        if (points < unlock.cost) {
+            mes("You need ${unlock.cost} Slayer reward points to unlock ${unlock.name}.")
+            return
+        }
+        vars[SlayerVarps.points] = points - unlock.cost
+        player.setSlayerUnlock(bit, true)
+        player.syncSlayerPointsDisplay()
+        mes("You unlock ${unlock.name}.")
+    }
+
+    private fun ProtectedAccess.extendAll() {
+        val missing = SlayerData.unlocks.filter { it.extends.isNotEmpty() && !player.hasSlayerUnlock(it.bit) }
+        if (missing.isEmpty()) {
+            mes("You have already unlocked every task extension.")
+            return
+        }
+        val total = missing.sumOf { it.cost }
+        val points = vars[SlayerVarps.points]
+        if (points < total) {
+            mes("You need $total Slayer reward points to unlock every task extension.")
+            return
+        }
+        vars[SlayerVarps.points] = points - total
+        missing.forEach { player.setSlayerUnlock(it.bit, true) }
+        player.syncSlayerPointsDisplay()
+        mes("You unlock ${missing.size} task extensions for $total points.")
     }
 
     private fun ProtectedAccess.cancelTask() {
@@ -143,10 +194,31 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
         /** slayer_rewards_tasks_canceltask: confirm cc index = 66 + action (1 cancel, 2 block). */
         const val CONFIRM_BASE = 66
         const val CANCEL = 1
+        const val EXTEND_ALL = 9
+        val UNLOCK_BITS = 0 until CONFIRM_BASE + 1
+
+        val unlocksByBit: Map<Int, SlayerData.Unlock> by lazy { SlayerData.unlocks.associateBy { it.bit } }
         const val CONFIRM_MAX = 100
         const val CANCEL_COST = 30
     }
 }
+
+/** slayer_reward_unlocked: bit n lives in slayer_rewards_unlocks(n / 32) at bit n % 32. */
+internal fun Player.hasSlayerUnlock(bit: Int): Boolean {
+    val varp = SlayerUnlockVarps.forBit(bit) ?: return false
+    return ((vars[varp] ushr (bit % 32)) and 1) == 1
+}
+
+internal fun Player.setSlayerUnlock(bit: Int, on: Boolean) {
+    val varp = SlayerUnlockVarps.forBit(bit) ?: return
+    val mask = 1 shl (bit % 32)
+    val value = if (on) vars[varp] or mask else vars[varp] and mask.inv()
+    VarPlayerIntMapSetter.set(this, varp, value)
+}
+
+/** True when a bought "longer" unlock extends [category] (a Wiki category key). */
+internal fun Player.hasExtendedTask(category: String): Boolean =
+    SlayerData.unlocks.any { category in it.extends && hasSlayerUnlock(it.bit) }
 
 /** Mirrors the server-side points into the client's `slayer_points` varbit (17 bits). */
 internal fun Player.syncSlayerPointsDisplay() {
@@ -168,6 +240,13 @@ internal object SlayerRewardComponents : ComponentReferences() {
 internal object SlayerRewardVarBits : VarBitReferences() {
     /** Client-side points shown in the rewards interface (cache varbit 4068). */
     val client_points = find("slayer_points")
+}
+
+internal object SlayerUnlockVarps : VarpReferences() {
+    private val unlocks =
+        listOf(find("slayer_rewards_unlocks"), find("slayer_rewards_unlocks1"), find("slayer_rewards_unlocks2"))
+
+    fun forBit(bit: Int): VarpType? = if (bit < 0) null else unlocks.getOrNull(bit / 32)
 }
 
 internal object SlayerRewardObjs : ObjReferences() {
