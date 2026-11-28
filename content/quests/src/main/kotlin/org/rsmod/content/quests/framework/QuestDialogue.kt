@@ -106,8 +106,9 @@ public interface QuestDialogueHooks {
  * - lines are chat (the player's or the npc's), `{player}` becomes the player's name;
  * - consecutive options form one menu (2-5 entries); a lone option just runs;
  * - consecutive conditions form one branch: the first that [QuestDialogueHooks.condition] accepts;
- * - action `end` stops, `above` / `other` show the enclosing menu again; an "action" whose text
- *   reads like a condition ("If ...", "On ...") is treated as one (a Wiki markup slip);
+ * - action `end` stops, `above` / `other` / `previous` show the enclosing menu again; an
+ *   "action" whose text reads like a condition ("If ...", "On ...") is treated as one (a Wiki
+ *   markup slip);
  * - nodes nested under a line or box (inconsistent Wiki indentation) run right after it.
  */
 public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
@@ -145,7 +146,8 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
                     when (node.tag.lowercase()) {
                         "end" -> return Flow.End
                         "above",
-                        "other" -> return Flow.Repeat
+                        "other",
+                        "previous" -> return Flow.Repeat
                         else ->
                             if (CONDITION_TEXT.containsMatchIn(node.tag)) {
                                 if (hooks.condition(node.tag)) {
