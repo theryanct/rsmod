@@ -126,6 +126,7 @@ internal object HerbloreData {
             Grind("blue_dragon_scale", "dragon_scale_dust"),
             Grind("chocolate_bar", "chocolate_dust"),
             Grind("desert_goat_horn", "ground_desert_goat_horn"),
+            Grind("bird_nest_empty", "crushed_bird_nest"), // Saradomin brew secondary
         )
 
     const val PESTLE = "pestle_and_mortar"
