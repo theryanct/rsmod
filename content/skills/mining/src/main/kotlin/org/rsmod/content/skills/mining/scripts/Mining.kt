@@ -117,6 +117,16 @@ constructor(
         opLoc1(rock)
     }
 
+    /** Wiki "Unidentified minerals": Mining Guild ore rocks give one at a per-ore rate (no xp). */
+    private fun ProtectedAccess.rollMinerals(rock: BoundLocInfo, ore: UnpackedObjType) {
+        if (!MiningGuild.contains(rock.coords)) return
+        val name = ore.internalName ?: return
+        val chance = MINERAL_CHANCES[name] ?: return
+        if (random.of(chance) != 0) return
+        invAdd(inv, MiningGlories.minerals)
+        mes("You find an unidentified mineral.")
+    }
+
     private fun ProtectedAccess.wearsChargedGlory(): Boolean {
         val neck = player.worn[Wearpos.Front.slot] ?: return false
         return MiningGlories.charged.any { objTypes[it].id == neck.id }
@@ -131,6 +141,7 @@ constructor(
         spam("You manage to mine some ${ore.oreName()}.")
         statAdvance(stats.mining, xp)
         invAddGathered(ore)
+        rollMinerals(rock, ore)
 
         // Mining Guild: respawns halved (Wiki; runite 12 -> 6 minutes).
         val respawn = if (MiningGuild.contains(rock.coords)) maxOf(1, type.rockRespawnTime / 2) else type.rockRespawnTime
@@ -210,6 +221,14 @@ constructor(
     companion object {
         private const val GEM_TABLE_CHANCE = 256
         private const val GLORY_GEM_TABLE_CHANCE = 86
+        private val MINERAL_CHANCES =
+            mapOf(
+                "iron_ore" to 100,
+                "coal" to 60,
+                "mithril_ore" to 40,
+                "adamantite_ore" to 30,
+                "runite_ore" to 20,
+            )
         private const val RESUME_RETRIES = 10
 
         val UnpackedObjType.pickaxeLevelReq: Int by objParam(params.levelrequire)
@@ -252,4 +271,5 @@ internal object MiningQueues : QueueReferences() {
 
 internal object MiningGlories : ObjReferences() {
     val charged = (1..6).map { find("amulet_of_glory_$it") } + find("amulet_of_glory_inf")
+    val minerals = find("mguild_minerals")
 }
