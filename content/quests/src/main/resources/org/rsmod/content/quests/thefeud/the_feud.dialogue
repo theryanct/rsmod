@@ -1,0 +1,1642 @@
+# Generated from the OSRS Wiki page "Transcript:The Feud" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+1	line	Ali Morrisane	Good day and welcome back to Al Kharid.
+1	line	Ali Morrisane	My name is Ali Morrisane - the greatest salesman in the world.
+1	select	Select an Option
+1	option	Are you really the greatest salesman in the world?
+2	line	Player	If you're the greatest salesman in the world, why are you still selling goods from a stall?
+2	line	Ali Morrisane	Well one can only do and sell so much. If I had more staff I'd be able to sell more, rather than wasting my time on menial things. I could get on with selling sand to the Bedabin and useless tourist trinkets to just about
+2	line	Ali Morrisane	everyone else.
+2	select	Select an Option
+2	option	I'm too busy to help. Adventuring is a full time job you know!
+3	line	Player	I'm too busy to help. Adventuring is a full time job you know!
+3	line	Ali Morrisane	No problem my friend, perhaps another time.
+3	line	Ali Morrisane	Anyway, have a look at my wares.
+3	select	Select an Option
+3	option	No, I'm really too busy.
+4	action	end
+3	option	Okay.
+4	action	
+2	option	I'd like to help you, but...
+3	line	Player	I'd like to help you but...
+3	line	Ali Morrisane	Yes, I know, I know - the life of a shop keeper isn't slaying dragons and wooing damsels, but it has its charms.
+3	line	Ali Morrisane	Although perhaps you can help me some other way. A nephew of mine lives not too far from here in a little town called Pollnivneach. He was supposed to become my assistant, but he hasn't shown up. If you fetch him
+3	line	Ali Morrisane	here I'll give you the first month of his salary!
+3	cond	If the player has a combat level less than 40:
+4	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 40.
+3	select	Start The Feud quest?
+3	option	Yes.
+4	line	Player	I'll find your nephew.
+4	line	Player	But you had better become the greatest merchant in Gielinor once I succeed!
+4	line	Ali Morrisane	Ah, many thanks, my friend. My nephew's name is Ali and he lives to the south in a town called Pollnivneach.
+4	line	Ali Morrisane	Tell him his uncle Ali M needs his help up in Al Kharid.
+4	line	Ali Morrisane	And while you're here, have a look at my wares.
+4	select	Select an Option
+4	option	No, I'm really too busy.
+5	action	end
+4	option	Okay.
+5	action	
+3	option	No.
+4	line	Player	I'm too busy to help. Adventuring is a full time job you know!
+4	line	Ali Morrisane	No problem my friend, perhaps another time.
+4	line	Ali Morrisane	Anyway, have a look at my wares.
+4	select	Select an Option
+4	option	No, I'm really too busy.
+5	action	end
+4	option	Okay.
+5	action	
+1	option	So what are you selling then?
+2	action	
+0	section	Asking the locals
+0	section	Talking to Ali Morrisane before any other progress
+1	line	Ali Morrisane	I sent you to learn the whereabouts of my nephew, Ali. Is there any word of him in Pollnivneach?
+1	line	Player	Not yet, I'm afraid.
+1	line	Ali Morrisane	That's not really the news I was hoping for.
+1	line	Ali Morrisane	But since you've been gone trade has gotten even busier. Will you have a look at my wares?
+1	select	Select an Option
+1	option	No, I'm really too busy.
+2	action	end
+1	option	Okay.
+2	action	
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	Welcome, adventurer, to the town of Pollnivneach, the gateway to Menaphos and Al Kharid. My name is Ali and I'm the mayor of this town. I hope you enjoy your stay here.
+1	line	Player	Thank you. That is one of the warmest welcomes I've ever had! People generally treat travelling adventurers with suspicion.
+1	line	Ali the Mayor	All are welcome here. Now more than ever I suppose.
+1	line	Player	What do you mean by that?
+1	line	Ali the Mayor	There's trouble in town, and a lot of villagers have left as a result. Things are looking dire.
+1	line	Player	I'm looking for someone called Ali.
+1	line	Ali the Mayor	Well, take your pick!
+1	line	Player	I mean I'm looking for a specific Ali. He's Ali Morrisane's nephew.
+1	line	Ali the Mayor	Oh, that Ali! Well, er, your best bet is to ask around town. I'm sure someone will know what he's up to.
+1	action	end
+0	section	Talking to Ali the Camel Man
+1	line	Ali the Camel Man	Welcome to my discount camel store. Can I help you with anything?
+1	select	Select an Option
+1	option	A discount camel store?
+2	line	Player	A discount camel store?
+2	line	Ali the Camel Man	Yes - it's my great idea - selling camels at discounted prices so that the common man can experience the joys of owning a camel of their very own! They're not just a source of kebab meat you know!
+2	select	Select an Option
+2	option	So can I buy a camel then? I'm hungry!
+3	line	Player	So can I buy a camel then? I'm hungry!
+3	line	Ali the Camel Man	I would never sell one to the likes of you! They are beautiful, majestic creatures, not food! Get out of my shop.
+3	action	end
+2	option	Yes, camels are beautiful creatures.
+3	line	Player	Yes, camels are beautiful creatures.
+3	line	Ali the Camel Man	Ah, wondrous camels! Best of all Saradomin's creations. Ships of the desert, far more useful than any horse or donkey. Truly, they are a man's best friend.
+3	line	Ali the Camel Man	Perhaps you'd like a camel of your own? You're in the right place, if so...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	select	Select an Option
+3	option	Well yes, actually I would like to ask about something else.
+4	action	initial
+3	option	No, but thanks for your time.
+4	line	Player	No, but thanks for your time.
+4	action	end
+2	option	Why would I want a camel? All they do is spit and...
+3	line	Player	Why would I want a camel? All they do is spit and...
+3	line	Ali the Camel Man	Pah! I've seen mummies with more brains than you! If you treat camels badly then of course they're going to spit at you. May your robes never be clean again!
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Actually, I think I was a camel in a previous life.
+3	line	Player	Actually, I think I was a camel in a previous life.
+3	line	Ali the Camel Man	You're teasing me now! You rogue!
+3	line	Ali the Camel Man	Everyone laughs at the poor Discount Camel Seller.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	So is the discount camel business good then?
+3	line	Player	So is the discount camel business good then?
+3	line	Ali the Camel Man	Business is booming! Pollnivneach has never seen this number of visitors.
+3	line	Ali the Camel Man	In fact I'm thinking of expanding and trying to break into the camel hire market.
+3	line	Ali the Camel Man	If only I could figure out how to get people to return the camels...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+1	option	Tell me about this town.
+2	line	Player	Tell me about this town.
+2	line	Ali the Camel Man	Well, Pollnivneach is a funny little place. It's a small town and you'd think it'd be nice and quiet.
+2	line	Ali the Camel Man	But those Menaphites and bandits are making the place quite unbearable.
+2	select	Select an Option
+2	option	In what way?
+3	line	Player	In what way?
+3	line	Ali the Camel Man	Well, one group is as bad as the other! They steal, they fight, they cause trouble with us locals. Just yesterday one of those bandits came looking for protection money!
+3	line	Player	Why don't the authorities stop this?
+3	line	Ali the Camel Man	We're a small town. We don't have the resources to keep the gangs off our backs! Menaphos and Al Kharid are no help either.
+3	line	Ali the Camel Man	To tell the truth we live in hope that an outsider, someone with no ties to either group, could broker a deal to halt the hostilities between them.
+3	line	Player	Hmm...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Player	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Ali the Camel Man	That's a little unfair, my friend. We can't all be brave adventurers. If we were, where would you purchase quality camels at discounted prices?
+3	line	Ali the Camel Man	You might think about that. Anyway, isn't it the job of the brave adventurer to protect the weak and innocent from evil and harm?
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Perhaps I could help.
+3	line	Player	Perhaps I could help.
+3	line	Ali the Camel Man	Yes, perhaps you could.
+3	line	Player	You know the politics better than I do. What do you recommend?
+3	line	Ali the Camel Man	Me?! I am but a humble discount camel seller. You're the adventurer, don't you know what to do?
+3	select	Select an Option
+3	option	Of course I know what to do! I was just testing you!
+4	line	Player	Of course I know what to do! I was just testing you!
+4	line	Ali the Camel Man	That is reassuring to hear. Too often one meets brainless adventurers whose solution to every problem is to hack, maim and murder.
+4	line	Ali the Camel Man	I'm glad to know you're not of that ilk.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+3	option	Perhaps I should know, but offered advice should never be shunned.
+4	line	Player	Perhaps I should know, but offered advice should never be shunned.
+4	line	Ali the Camel Man	The state of adventurers today. They need everything spelled out for them.
+4	line	Ali the Camel Man	What, you want me to put a little note in your quest journal?
+4	line	Ali the Camel Man	But fine, I'll give you a hint. Try and see if you can get the gangs to agree to a truce by offering them each a token gift as an act of reconciliation.
+4	line	Ali the Camel Man	If that fails to work, you must consider trying to influence the gangs from within.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+1	option	Lovely day isn't it?
+2	line	Ali the Camel Man	It's a beautiful day today, but word has it that it will rain tomorrow.
+2	line	Player	Really?
+2	line	Ali the Camel Man	No! When have you ever known it to rain here in Gielinor?
+2	line	Player	Oh. Anyway...
+2	line	Ali the Camel Man	Is there anything else I can help you with?
+2	action	above
+1	option	Are those camels around the side for sale?
+2	line	Player	Are those camels around the side for sale?
+2	line	Ali the Camel Man	Those two camels around the side are already sold.
+2	line	Ali the Camel Man	I've got new stock coming very soon though. Come back later if you're still interested.
+2	line	Ali the Camel Man	Is there anything else I can help you with?
+2	select	Select an Option
+2	option	Well yes, actually I would like to ask about something else.
+3	action	initial
+2	option	No, but thanks for your time.
+3	line	Player	No, but thanks for your time.
+3	action	end
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Camel Man	Well, you've found your man.
+2	line	Player	Really? Do you have an uncle called Ali?
+2	line	Ali the Camel Man	Why yes - all my uncles are called Ali!
+2	line	Player	Oh dear! Do any of them own a stall in the Al Kharid Bazaar?
+2	line	Ali the Camel Man	Well no, but one of them owns a moderately successful camel hire franchise.
+2	line	Ali the Camel Man	Have you considered hiring a camel? Or perhaps purchasing one of your own? I can get you a discount.
+2	line	Player	Never mind.
+2	action	end
+0	section	Talking to the Rug Merchant
+1	line	Player	Hello.
+1	line	Rug Merchant	Greetings, desert traveller. Do you require the services of Ali Morrisane's flying carpet fleet?
+1	select	Select an option
+1	option	Yes please.
+1	option	Tell me about Ali Morrisane.
+2	line	Player	Tell me about Ali Morrisane.
+2	line	Rug Merchant	What, you haven't heard of Ali M? Possibly the greatest salesman of the Kharidian empire if not all Gielinor?
+2	line	Player	Hold on... yes I can place him now. He has me looking for his nephew Ali, I think he needs some help with his shop.
+2	line	Rug Merchant	I wouldn't be surprised, he's mentioned to me on a few occasions that he is thinking of diversifying even further.
+2	line	Player	You wouldn't have seen his nephew about then?
+2	line	Rug Merchant	No it's been a quite a while since I last saw him.
+2	action	other
+1	option	Tell me about this magic carpet fleet.
+1	option	I have some questions.
+1	option	No thanks.
+0	section	Talking to a Street urchin
+1	line	Player	Hello there!
+1	line	Street urchin	What do you want? Information?
+1	line	Player	What would you know?
+1	line	Street urchin	No one knows what's going on in the streets better than me. I live, sleep, eat and drink here. The fact that I'm so small means that people tend to ignore me which helps even more.
+1	line	Street urchin	Do you need any other information?
+1	select	Select an Option
+1	option	Yes tell me about...
+2	line	Player	Yes, tell me about...
+2	select	Select an Option
+2	option	The Menaphites
+3	line	Player	Tell me about the Menaphites.
+3	line	Street urchin	They're a bad bunch, always starting fights down in the Asp and Snake. Word on the street is that they're led by some deranged priest. Nobody's ever seen them though - they do all their deals through Ali 'the
+3	line	Street urchin	Operator'. I reckon they're up to something, but they're such a close knit group that little ever slips out.
+3	line	Street urchin	Do you need any other information?
+3	action	initial
+2	option	The bandits
+3	line	Player	Tell me about the bandits.
+3	line	Street urchin	There's not much to say, really. They're just a group of local thugs led by the biggest and strongest amongst them. If they have any other plans, I don't know about it.
+3	line	Street urchin	Do you need any other information?
+3	action	initial
+2	option	The Mayor
+3	line	Player	Tell me about the Mayor.
+3	line	Street urchin	The mayor is a spineless coward! He never stands up to anybody. That's why the Menaphites are so strong now! He let them stay, and then they started causing trouble. When he realised his mistake, he hired a band
+3	line	Street urchin	of local thugs to drive them out, but they saw how weak he was and turned on us too. Now we've got bandits and Menaphites, and the mayor isn't doing anything!
+3	line	Street urchin	Do you need any other information?
+3	action	initial
+2	option	Ali Morrisane's nephew
+3	line	Player	Tell me about Ali Morrisane's nephew.
+3	line	Street urchin	I know him! He used to kick us when he caught any of us stealing from his stall.
+3	line	Player	Do you know where he is now then?
+3	line	Street urchin	He disappeared a little while ago. All I know is it had something to do with the gangs. Probably he scammed them. You'd have to gain their trust to find out more, m'afraid - if I get too close, they might disappear me
+3	line	Street urchin	too!
+3	line	Street urchin	Do you need any other information?
+3	action	initial
+2	option	The town
+3	line	Player	Tell me about the town.
+3	line	Street urchin	It's boring! We're not as big as Menaphos or as powerful as Al Kharid, and we've got a really nasty crime problem. It's no wonder so many grown-ups have left.
+3	line	Street urchin	Do you need any other information?
+3	action	initial
+1	option	No thanks.
+2	line	Player	No thanks.
+2	line	Street urchin	Come back if you need any info about anything in the town.
+2	line	Player	I will do thanks.
+2	action	end
+0	section	Talking to the Ali the Barman
+1	line	Player	Hello there.
+1	line	Ali the Barman	Good day. Can I help you with anything?
+1	select	Select an Option
+1	option	Yes, I'd like a drink please.
+2	line	Player	Yes, I'd like a drink please.
+2	action	
+1	option	What's going on in town?
+2	line	Player	What's going on in town?
+2	line	Ali the Barman	Nothing much really. About what you'd expect from a sleepy little town like ours.
+2	line	Player	What about those two gangs? That seems exciting.
+2	line	Ali the Barman	They're paying customers, so I won't rock the boat if you don't mind.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	select	Select an Option
+2	option	No thanks, I'm ok.
+3	line	Player	No thanks, I'm ok. Thanks for your time.
+3	action	end
+2	option	Yes, I'd like to talk about something else.
+3	action	initial
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Barman	Well, I'm called Ali and I'm from here. Are you looking for me?
+2	line	Player	Do you have an uncle called Ali?
+2	line	Ali the Barman	Yes! All my uncles are called Ali!
+2	line	Player	Oh dear. Well do any of your uncles have a stall in the Bazaar in Al Kharid?
+2	line	Ali the Barman	Um... no.
+2	line	Player	Well do you know if anyone here does?
+2	line	Ali the Barman	That's a difficult question to answer. I don't know anyone else's uncles.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	action	above
+1	option	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Player	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Ali the Barman	Maybe around these parts. Were you expecting it to have 'Ali' in the name?
+2	line	Ali the Barman	I did think about calling it 'Ali's', but then it'd get confused with the Camel Shop, the Kebab House, the Mayor's residence...
+2	line	Player	Yes, I get your point. It's a perfectly fine name.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	action	above
+0	section	Talking to Drunken Ali
+0	section	Initial dialogue
+1	line	Drunken Ali	Ahh, a kind stranger. Get this old man a drink so that he may wet his throat and tell you of the strange happenings in this town.
+1	action	end
+0	section	Using the first beer on him
+1	line	Drunken Ali	Now where were we? Ah yes, Ali Morrisane's wayward nephew.
+1	line	Player	What?! How did you know that's who I was looking for?
+1	line	Drunken Ali	Er... well, he's a real scamp, that lad! I can't imagine a stranger would be asking after anyone else.
+1	line	Player	Hmm. Well go on then, where is he?
+1	line	Drunken Ali	I'd tell you more, but my throat is drying up. This desert climate is an inhospitable one. Get me another beer so that I can continue my tale.
+1	action	end
+0	section	After the first beer
+1	line	Drunken Ali	Get this poor, thirsty old man another drink so that he may wet his lips and continue.
+1	action	end
+0	section	Using the second beer on him
+1	line	Drunken Ali	You are too kind, now what were we talking about?
+1	line	Player	Ali Morrisane's nephew.
+1	line	Drunken Ali	Of course! I've known him since he was a wee lad. A right little mischievous beggar...
+1	line	Player	Yes, I can imagine. Do you have any more recent information about him? Where is he?
+1	line	Drunken Ali	Well now, if you had just asked me that in the first place I would have told you directly!
+1	line	Player	You're right, I'm sorry for beating around the bush. Do you know where Ali's nephew is now, though?
+1	line	Drunken Ali	I'd tell you more, but my throat is drying up. This desert climate is an inhospitable one. Get me another beer so that I can continue my tale.
+1	action	end
+0	section	After the second beer
+1	line	Drunken Ali	Alas, my throat has dried up, and I cannot speak... perhaps another drink would help?
+1	action	end
+0	section	Using the third beer on him
+1	line	Drunken Ali	Ahh, that hits the spot.
+1	line	Drunken Ali	Now which of you two adventurers wanted to know where Ali's nephew is?
+1	line	Player	I think you're seeing double.
+1	line	Drunken Ali	Is this a double? No wonder I feel sick...
+1	line	Player	Look, all I want to know is the whereabouts of Ali Morrisane's nephew.
+1	line	Drunken Ali	Now is that his nephew from his side or his wife's? They have a huge family you see. I remember...
+1	line	Player	No, no, no. Stop right there. You are not going to fool me into buying you another beer without first giving me some useful information.
+1	line	Drunken Ali	But my lips are so dry, how can I possibly continue?
+1	line	Player	Well if your lips are dry, I'll have to wring you like a wet cloth and squeeze out enough booze to fill another tankard. I'd reckon it would hurt though.
+1	line	Drunken Ali	I see. Don't worry about me, I'll just have to soldier on. Now what do you want to know?
+1	line	Player	For the last time, where is Ali Morrisane's nephew?
+1	line	Drunken Ali	Oh, I don't know.
+1	line	Player	Seriously?
+1	line	Drunken Ali	Wait, wait! The last I heard he was in trouble with those gangs hanging around town. You won't get any answers out of them, though, not while they're feuding. Maybe if you were to solve that little problem...
+1	line	Drunken Ali	Anyway, is there any chance of another beer?
+1	line	Player	What do you think?
+1	action	end
+0	section	After the third beer
+1	line	Drunken Ali	What were we talking about again? Yes yes, when I was a boy... no, that's not it.
+1	action	end
+0	section	Using an item other than a beer on him
+1	line	Drunken Ali	Eh? What's this? I don't want that, get me a beer.
+1	action	end
+0	section	Asking the gangs
+1	line	Player	Hello.
+1	line	Bandit	What do you want?
+1	line	Player	I am trying to get to the bottom of this feud between you and the Menaphites.
+1	line	Bandit	What's it to you?
+1	line	Player	I'm just trying to understand why thieves of your repute would stoop to their level.
+1	line	Bandit	Well, if memory serves me correctly, I think the hostilities began when they robbed one of our camels. A heinous crime.
+1	line	Player	So if they offered a camel back as a gesture of goodwill, would you and the rest of the bandits cease your hostilities?
+1	line	Bandit	Those Menaphites would never do that. They have no sense of honour.
+1	line	Player	But if they did?
+1	line	Bandit	I suppose so.
+1	action	end
+0	section	Talking to a Menaphite Thug
+1	line	Player	Hello.
+1	line	Menaphite Thug	What do you want?
+1	line	Player	I am trying to figure out the feud that exists between you and the Bandits.
+1	line	Menaphite Thug	Not much to figure out there, the problem is those thieving bandits.
+1	line	Player	In what way?
+1	line	Menaphite Thug	They are always stealing, starting fights and disrupting the lives of the townsfolk.
+1	line	Player	Word has it that the Menaphites are also involved in unsavoury behaviour.
+1	line	Menaphite Thug	Well, we also steal, start fights, and disrupt lives - but we do it with class! And the bandits definitely started it.
+1	line	Player	How did 'they' start it?
+1	line	Menaphite Thug	I can scarcely remember, it's been so long.
+1	line	Player	Go on try.
+1	line	Menaphite Thug	I think our leader once mentioned that they robbed one of our camels. A heinous crime around these parts.
+1	line	Player	So if they offered a camel as a gesture of goodwill would you agree to cease hostilities?
+1	line	Menaphite Thug	Those bandits would never agree to that. They couldn't afford even the mangiest excuse for a camel, never mind the desert traversing, four legged beauty that we would demand.
+1	line	Player	But if they did?
+1	line	Menaphite Thug	Well, I suppose so.
+1	line	Player	Maybe if I got both gangs a camel, I could use the mutual good will to find out what happened to Ali's nephew.
+1	action	end
+0	section	Acquiring some camels
+0	section	Talking to Ali the Camel Man
+1	line	Ali the Camel Man	Welcome to my discount camel store. Can I help you with anything?
+1	select	Select an Option
+1	option	A discount camel store?
+2	line	Player	A discount camel store?
+2	line	Ali the Camel Man	Yes - it's my great idea - selling camels at discounted prices so that the common man can experience the joys of owning a camel of their very own! They're not just a source of kebab meat you know!
+2	select	Select an Option
+2	option	So can I buy a camel then? I'm hungry!
+3	line	Player	So can I buy a camel then? I'm hungry!
+3	line	Ali the Camel Man	I would never sell one to the likes of you! They are beautiful, majestic creatures, not food! Get out of my shop.
+3	action	end
+2	option	Yes, camels are beautiful creatures.
+3	line	Player	Yes, camels are beautiful creatures.
+3	line	Ali the Camel Man	Ah, wondrous camels! Best of all Saradomin's creations. Ships of the desert, far more useful than any horse or donkey. Truly, they are a man's best friend.
+3	line	Ali the Camel Man	Perhaps you'd like a camel of your own? You're in the right place, if so...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	select	Select an Option
+3	option	Well yes, actually I would like to ask about something else.
+4	action	initial
+3	option	No, but thanks for your time.
+4	line	Player	No, but thanks for your time.
+4	action	end
+2	option	Why would I want a camel? All they do is spit and...
+3	line	Player	Why would I want a camel? All they do is spit and...
+3	line	Ali the Camel Man	Pah! I've seen mummies with more brains than you! If you treat camels badly then of course they're going to spit at you. May your robes never be clean again!
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Actually, I think I was a camel in a previous life.
+3	line	Player	Actually, I think I was a camel in a previous life.
+3	line	Ali the Camel Man	You're teasing me now! You rogue!
+3	line	Ali the Camel Man	Everyone laughs at the poor Discount Camel Seller.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	So is the discount camel business good then?
+3	line	Player	So is the discount camel business good then?
+3	line	Ali the Camel Man	Business is booming! Pollnivneach has never seen this number of visitors.
+3	line	Ali the Camel Man	In fact I'm thinking of expanding and trying to break into the camel hire market.
+3	line	Ali the Camel Man	If only I could figure out how to get people to return the camels...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+1	option	Tell me about this town.
+2	line	Player	Tell me about this town.
+2	line	Ali the Camel Man	Well, Pollnivneach is a funny little place. It's a small town and you'd think it'd be nice and quiet.
+2	line	Ali the Camel Man	But those Menaphites and bandits are making the place quite unbearable.
+2	select	Select an Option
+2	option	In what way?
+3	line	Player	In what way?
+3	line	Ali the Camel Man	Well, one group is as bad as the other! They steal, they fight, they cause trouble with us locals. Just yesterday one of those bandits came looking for protection money!
+3	line	Player	Why don't the authorities stop this?
+3	line	Ali the Camel Man	We're a small town. We don't have the resources to keep the gangs off our backs! Menaphos and Al Kharid are no help either.
+3	line	Ali the Camel Man	To tell the truth we live in hope that an outsider, someone with no ties to either group, could broker a deal to halt the hostilities between them.
+3	line	Player	Hmm...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Player	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Ali the Camel Man	That's a little unfair, my friend. We can't all be brave adventurers. If we were, where would you purchase quality camels at discounted prices?
+3	line	Ali the Camel Man	You might think about that. Anyway, isn't it the job of the brave adventurer to protect the weak and innocent from evil and harm?
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Perhaps I could help.
+3	line	Player	Perhaps I could help.
+3	line	Ali the Camel Man	Yes, perhaps you could.
+3	line	Player	You know the politics better than I do. What do you recommend?
+3	line	Ali the Camel Man	Me?! I am but a humble discount camel seller. You're the adventurer, don't you know what to do?
+3	select	Select an Option
+3	option	Of course I know what to do! I was just testing you!
+4	line	Player	Of course I know what to do! I was just testing you!
+4	line	Ali the Camel Man	That is reassuring to hear. Too often one meets brainless adventurers whose solution to every problem is to hack, maim and murder.
+4	line	Ali the Camel Man	I'm glad to know you're not of that ilk.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+3	option	Perhaps I should know, but offered advice should never be shunned.
+4	line	Player	Perhaps I should know, but offered advice should never be shunned.
+4	line	Ali the Camel Man	The state of adventurers today. They need everything spelled out for them.
+4	line	Ali the Camel Man	What, you want me to put a little note in your quest journal?
+4	line	Ali the Camel Man	But fine, I'll give you a hint. Try and see if you can get the gangs to agree to a truce by offering them each a token gift as an act of reconciliation.
+4	line	Ali the Camel Man	If that fails to work, you must consider trying to influence the gangs from within.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+1	option	Lovely day isn't it?
+2	line	Ali the Camel Man	It's a beautiful day today, but word has it that it will rain tomorrow.
+2	line	Player	Really?
+2	line	Ali the Camel Man	No! When have you ever known it to rain here in Gielinor?
+2	line	Player	Oh. Anyway...
+2	line	Ali the Camel Man	Is there anything else I can help you with?
+2	action	above
+1	option	Are those camels around the side for sale?
+2	line	Player	Are those camels around the side for sale?
+2	line	Ali the Camel Man	Those two camels around the side are already sold.
+2	line	Ali the Camel Man	But you are in luck - I have another two beautiful camels arriving soon from the best stable in all of Al Kharid.
+2	line	Player	Excellent! Although another two ugly camels would have been fine, I think.
+2	select	Select an Option
+2	option	Can you tell me a little about them?
+3	line	Player	Can you tell me a little about them?
+3	line	Ali the Camel Man	Well Sandy, the female camel, is a placid beast. At 20 years of age she comes from a prestigious line of camels - her mother was part of the Emir's baggage train!
+3	line	Ali the Camel Man	Lumps, on the other hand, is a 15 year old male. He's a bit surly and prone to bouts of stubbornness. However, he more than makes up for this failing with his immense strength and stamina.
+3	line	Ali the Camel Man	Both of them are of the 'Camelus Horribleus' family, a rare breed only found in this area of Gielinor. It is...
+3	line	Player	Ok, ok, that's enough! They're camels, I get it.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	select	Select an Option
+3	option	Well yes, actually I would like to ask about something else.
+4	action	initial
+3	option	No, but thanks for your time.
+4	line	Player	No, but thanks for your time.
+4	action	end
+2	option	What price do you want for both of them?
+3	line	Player	What price do you want for both of them?
+3	line	Ali the Camel Man	One cannot put a price on these beauties, they are precious beyond the worth of the crass value of gold coins!
+3	select	Select an Option
+3	option	So can I have them for free then?
+4	line	Player	So can I have them for free then?
+4	line	Ali the Camel Man	Are you trying to be funny?
+4	line	Player	Perhaps I could make another offer?
+4	action	other
+3	option	Would 200 gold coins for the pair of them do?
+4	line	Player	Would 200 gold coins for the pair of them do?
+4	line	Ali the Camel Man	Pah! That might buy you a mangy, flea-infested sheep if you're lucky. Don't insult me.
+4	line	Player	Perhaps I could make another offer?
+4	action	other
+3	option	Would 500 gold coins for the pair of them do?
+4	line	Player	Would 500 gold coins for the pair of them do?
+4	cond	Without two empty inventory spaces:
+5	line	Ali the Camel Man	I would consider giving them to you if you were able to look after them. But it is abundantly clear that you've got your hands - and your inventory - full at the moment.
+5	action	end
+4	cond	Without enough gold:
+5	line	Ali the Camel Man	You don't even have that much money do you? Come back when you're able to make a proper offer and stop wasting my time.
+5	action	end
+4	cond	Otherwise:
+5	line	Ali the Camel Man	I suppose I can silence my moral objections for that.
+5	box	Ali the discount camel seller gives you a receipt for the camels in return for 500 gold coins.
+5	line	Ali the Camel Man	Here are the receipts for the camels, so that you can pick them up as soon as I get them in.
+5	line	Ali the Camel Man	Is there anything else I can help you with?
+5	action	end
+3	option	Would 1000 gold coins for the pair of them do?
+4	line	Player	Would 1,000 gold coins for the pair of them do?
+4	cond	Without two empty inventory spaces:
+5	line	Ali the Camel Man	I would consider giving them to you if you were able to look after them. But it is abundantly clear that you've got your hands - and your inventory - full at the moment.
+5	action	end
+4	cond	Without enough gold:
+5	line	Ali the Camel Man	You don't even have that much money do you? Come back when you're able to make a proper offer and stop wasting my time.
+5	action	end
+4	cond	Otherwise:
+5	line	Ali the Camel Man	You are too generous. I would have sold them for half of that!
+5	box	Ali the discount camel seller gives you a receipt for the camels in return for 1,000 gold coins.
+5	line	Ali the Camel Man	Here are the receipts for the camels, so that you can pick them up as soon as I get them in.
+5	line	Ali the Camel Man	Is there anything else I can help you with?
+5	action	end
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Camel Man	Well, you've found your man.
+2	line	Player	Really? Do you have an uncle called Ali?
+2	line	Ali the Camel Man	Why yes - all my uncles are called Ali!
+2	line	Player	Oh dear! Do any of them own a stall in the Al Kharid Bazaar?
+2	line	Ali the Camel Man	Well no, but one of them owns a moderately successful camel hire franchise.
+2	line	Ali the Camel Man	Have you considered hiring a camel? Or perhaps purchasing one of your own? I can get you a discount.
+2	line	Player	Never mind.
+2	action	end
+0	section	Now we have camels
+0	section	Talking to Ali the Camel Man again
+1	line	Ali the Camel Man	Hello! Welcome back to my discount camel store. How are those camels getting along?
+1	select	Select an Option
+1	option	About those camels. I've lost the receipt. Can I have another?
+2	line	Player	About those camels. I've lost the receipt, can I have another?
+2	cond	If the player has both receipts:
+3	line	Ali the Camel Man	I think you're trying to con me into giving you an extra receipt.
+3	action	end
+2	cond	If the player doesn't have enough inventory space:
+3	line	Ali the Camel Man	Come back to me when you're not so burdened.
+3	action	end
+2	cond	Otherwise:
+3	line	Ali the Camel Man	No problem, There you go.
+3	action	Ali the Camel Man gives the player any missing receipts.
+3	action	end
+1	option	Tell me about this town.
+2	line	Player	Tell me about this town.
+2	line	Ali the Camel Man	Well, Pollnivneach is a funny little place. It's a small town and you'd think it'd be nice and quiet.
+2	line	Ali the Camel Man	But those Menaphites and bandits are making the place quite unbearable.
+2	select	Select an Option
+2	option	In what way?
+3	line	Player	In what way?
+3	line	Ali the Camel Man	Well, one group is as bad as the other! They steal, they fight, they cause trouble with us locals. Just yesterday one of those bandits came looking for protection money!
+3	line	Player	Why don't the authorities stop this?
+3	line	Ali the Camel Man	We're a small town. We don't have the resources to keep the gangs off our backs! Menaphos and Al Kharid are no help either.
+3	line	Ali the Camel Man	To tell the truth we live in hope that an outsider, someone with no ties to either group, could broker a deal to halt the hostilities between them.
+3	line	Player	Hmm...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Player	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Ali the Camel Man	That's a little unfair, my friend. We can't all be brave adventurers. If we were, where would you purchase quality camels at discounted prices?
+3	line	Ali the Camel Man	You might think about that. Anyway, isn't it the job of the brave adventurer to protect the weak and innocent from evil and harm?
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Perhaps I could help.
+3	line	Player	Perhaps I could help.
+3	line	Ali the Camel Man	Yes, perhaps you could.
+3	line	Player	You know the politics better than I do. What do you recommend?
+3	line	Ali the Camel Man	Me?! I am but a humble discount camel seller. You're the adventurer, don't you know what to do?
+3	select	Select an Option
+3	option	Of course I know what to do! I was just testing you!
+4	line	Player	Of course I know what to do! I was just testing you!
+4	line	Ali the Camel Man	That is reassuring to hear. Too often one meets brainless adventurers whose solution to every problem is to hack, maim and murder.
+4	line	Ali the Camel Man	I'm glad to know you're not of that ilk.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+3	option	Perhaps I should know, but offered advice should never be shunned.
+4	line	Player	Perhaps I should know, but offered advice should never be shunned.
+4	line	Ali the Camel Man	The state of adventurers today. They need everything spelled out for them.
+4	line	Ali the Camel Man	What, you want me to put a little note in your quest journal?
+4	line	Ali the Camel Man	But fine, I'll give you a hint. Try and see if you can get the gangs to agree to a truce by offering them each a token gift as an act of reconciliation.
+4	line	Ali the Camel Man	If that fails to work, you must consider trying to influence the gangs from within.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+1	option	Lovely day isn't it?
+2	line	Ali the Camel Man	It's a beautiful day today, but word has it that it will rain tomorrow.
+2	line	Player	Really?
+2	line	Ali the Camel Man	No! When have you ever known it to rain here in Gielinor?
+2	line	Player	Oh. Anyway...
+2	line	Ali the Camel Man	Is there anything else I can help you with?
+2	action	above
+1	option	I decided to get rid of the camels.
+2	line	Ali the Camel Man	Why? did they not please you?
+2	select	Select an Option
+2	option	No, they didn't. I sold them as Kebab meat!
+3	line	Player	No, they didn't. I sold them as Kebab meat!
+3	line	Ali the Camel Man	Nooooo! Not Sandy and Lumps! You beast! Get out of my shop this instant!
+3	action	end
+2	option	I'm not really a camel person, so I gave them to a better owner.
+3	line	Player	I'm not really a camel person, so I gave them to a better owner.
+3	line	Ali the Camel Man	That's very responsible of you. Too many people let their camels run feral through the desert, instead of sending them to happy homes.
+3	line	Ali the Camel Man	You want to watch out for those feral camels, you know.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	I decided to try and use them to end the hostilities between the two gangs.
+3	line	Player	I decided to try and use them to end the hostilities between the two gangs.
+3	line	Ali the Camel Man	A noble purpose for two noble beasts! Did you succeed?
+3	line	Player	Still working on that, I'm afraid.
+3	line	Ali the Camel Man	Well, I wish you the best of luck.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Camel Man	Well, you've found your man.
+2	line	Player	Really? Do you have an uncle called Ali?
+2	line	Ali the Camel Man	Why yes - all my uncles are called Ali!
+2	line	Player	Oh dear! Do any of them own a stall in the Al Kharid Bazaar?
+2	line	Ali the Camel Man	Well no, but one of them owns a moderately successful camel hire franchise.
+2	line	Ali the Camel Man	Have you considered hiring a camel? Or perhaps purchasing one of your own? I can get you a discount.
+2	line	Player	Never mind.
+2	action	end
+0	section	Talking to a Menaphite Thug
+1	line	Player	Good news, the bandits have agreed to give you a camel in order to restore peace.
+1	cond	If the player does not have a receipt:
+2	line	Menaphite Thug	So where's the camel?
+2	line	Player	Um... I'll get back to you on that.
+2	action	end
+1	cond	Otherwise:
+2	box	You hand the doorman a sales receipt for the camel.
+2	line	Menaphite Thug	A mere receipt? For a discount camel? I knew those bandits were cheap! Tell them that we have changed our minds and demand 10 camels in return for our
+2	line	Menaphite Thug	mercy.
+2	line	Player	Oh no... why do I bother?
+2	action	end
+0	section	Talking to a Bandit
+1	line	Player	Good news, the Menaphites have agreed to give you a camel in order to restore peace.
+1	cond	If the player does not have a receipt:
+2	line	Bandit	So where's the camel?
+2	line	Player	Um... I'll get back to you on that.
+2	action	end
+1	cond	Otherwise:
+2	box	You hand the guard a sales receipt for the camel.
+2	line	Bandit	What's this? A mere promise of a camel? From a discount camel store? I knew those Menaphites were cowards. Tell them that we have changed our minds and demand 10 full-price camels in return for our
+2	line	Bandit	mercy.
+2	line	Player	Oh no... why do I bother?
+2	line	Player	The camel approach doesn't seem to be working. Perhaps I should be more direct and try to join one of the gangs.
+2	action	end
+0	section	Joining a gang
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	I really can't chat for very long, the recent escalation in crime has me run off my feet. There are muggings and burglaries happening in broad daylight! It's really not on.
+1	action	end
+0	section	Talking to Ali the Camel Man
+1	line	Ali the Camel Man	Hello! Welcome back to my discount camel store. How are those camels getting along?
+1	select	Select an Option
+1	option	A discount camel store?
+2	line	Player	A discount camel store?
+2	line	Ali the Camel Man	Yes - it's my great idea - selling camels at discounted prices so that the common man can experience the joys of owning a camel of their very own! They're not just a source of kebab meat you know!
+2	select	Select an Option
+2	option	So can I buy a camel then? I'm hungry!
+3	line	Player	So can I buy a camel then? I'm hungry!
+3	line	Ali the Camel Man	I would never sell one to the likes of you! They are beautiful, majestic creatures, not food! Get out of my shop.
+3	action	end
+2	option	Yes, camels are beautiful creatures.
+3	line	Player	Yes, camels are beautiful creatures.
+3	line	Ali the Camel Man	Ah, wondrous camels! Best of all Saradomin's creations. Ships of the desert, far more useful than any horse or donkey. Truly, they are a man's best friend.
+3	line	Ali the Camel Man	Perhaps you'd like a camel of your own? You're in the right place, if so...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	select	Select an Option
+3	option	Well yes, actually I would like to ask about something else.
+4	action	initial
+3	option	No, but thanks for your time.
+4	line	Player	No, but thanks for your time.
+4	action	end
+2	option	Why would I want a camel? All they do is spit and...
+3	line	Player	Why would I want a camel? All they do is spit and...
+3	line	Ali the Camel Man	Pah! I've seen mummies with more brains than you! If you treat camels badly then of course they're going to spit at you. May your robes never be clean again!
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Actually, I think I was a camel in a previous life.
+3	line	Player	Actually, I think I was a camel in a previous life.
+3	line	Ali the Camel Man	You're teasing me now! You rogue!
+3	line	Ali the Camel Man	Everyone laughs at the poor Discount Camel Seller.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	So is the discount camel business good then?
+3	line	Player	So is the discount camel business good then?
+3	line	Ali the Camel Man	Business is booming! Pollnivneach has never seen this number of visitors.
+3	line	Ali the Camel Man	In fact I'm thinking of expanding and trying to break into the camel hire market.
+3	line	Ali the Camel Man	If only I could figure out how to get people to return the camels...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+1	option	Tell me about this town.
+2	line	Player	Tell me about this town.
+2	line	Ali the Camel Man	Well, Pollnivneach is a funny little place. It's a small town and you'd think it'd be nice and quiet.
+2	line	Ali the Camel Man	But those Menaphites and bandits are making the place quite unbearable.
+2	select	Select an Option
+2	option	In what way?
+3	line	Player	In what way?
+3	line	Ali the Camel Man	Well, one group is as bad as the other! They steal, they fight, they cause trouble with us locals. Just yesterday one of those bandits came looking for protection money!
+3	line	Player	Why don't the authorities stop this?
+3	line	Ali the Camel Man	We're a small town. We don't have the resources to keep the gangs off our backs! Menaphos and Al Kharid are no help either.
+3	line	Ali the Camel Man	To tell the truth we live in hope that an outsider, someone with no ties to either group, could broker a deal to halt the hostilities between them.
+3	line	Player	Hmm...
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Player	Well the weak will always be trodden on. Why not stand up to them?
+3	line	Ali the Camel Man	That's a little unfair, my friend. We can't all be brave adventurers. If we were, where would you purchase quality camels at discounted prices?
+3	line	Ali the Camel Man	You might think about that. Anyway, isn't it the job of the brave adventurer to protect the weak and innocent from evil and harm?
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	Perhaps I could help.
+3	line	Player	Perhaps I could help.
+3	line	Ali the Camel Man	Yes, perhaps you could.
+3	line	Player	You know the politics better than I do. What do you recommend?
+3	line	Ali the Camel Man	Me?! I am but a humble discount camel seller. You're the adventurer, don't you know what to do?
+3	select	Select an Option
+3	option	Of course I know what to do! I was just testing you!
+4	line	Player	Of course I know what to do! I was just testing you!
+4	line	Ali the Camel Man	That is reassuring to hear. Too often one meets brainless adventurers whose solution to every problem is to hack, maim and murder.
+4	line	Ali the Camel Man	I'm glad to know you're not of that ilk.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+3	option	Perhaps I should know, but offered advice should never be shunned.
+4	line	Player	Perhaps I should know, but offered advice should never be shunned.
+4	line	Ali the Camel Man	The state of adventurers today. They need everything spelled out for them.
+4	line	Ali the Camel Man	What, you want me to put a little note in your quest journal?
+4	line	Ali the Camel Man	But fine, I'll give you a hint. Try and see if you can get the gangs to agree to a truce by offering them each a token gift as an act of reconciliation.
+4	line	Ali the Camel Man	If that fails to work, you must consider trying to influence the gangs from within.
+4	line	Ali the Camel Man	Is there anything else I can help you with?
+4	action	initial
+1	option	Lovely day isn't it?
+2	line	Ali the Camel Man	It's a beautiful day today, but word has it that it will rain tomorrow.
+2	line	Player	Really?
+2	line	Ali the Camel Man	No! When have you ever known it to rain here in Gielinor?
+2	line	Player	Oh. Anyway...
+2	line	Ali the Camel Man	Is there anything else I can help you with?
+2	action	above
+1	option	I decided to get rid of the camels.
+2	line	Ali the Camel Man	Why? did they not please you?
+2	select	Select an Option
+2	option	No, they didn't. I sold them as Kebab meat!
+3	line	Player	No, they didn't. I sold them as Kebab meat!
+3	line	Ali the Camel Man	Nooooo! Not Sandy and Lumps! You beast! Get out of my shop this instant!
+3	action	end
+2	option	I'm not really a camel person, so I gave them to a better owner.
+3	line	Player	I'm not really a camel person, so I gave them to a better owner.
+3	line	Ali the Camel Man	That's very responsible of you. Too many people let their camels run feral through the desert, instead of sending them to happy homes.
+3	line	Ali the Camel Man	You want to watch out for those feral camels, you know.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+2	option	I decided to try and use them to end the hostilities between the two gangs.
+3	line	Player	I decided to try and use them to end the hostilities between the two gangs.
+3	line	Ali the Camel Man	A noble purpose for two noble beasts! Did you succeed?
+3	line	Player	Still working on that, I'm afraid.
+3	line	Ali the Camel Man	Well, I wish you the best of luck.
+3	line	Ali the Camel Man	Is there anything else I can help you with?
+3	action	initial
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Camel Man	Well, you've found your man.
+2	line	Player	Really? Do you have an uncle called Ali?
+2	line	Ali the Camel Man	Why yes - all my uncles are called Ali!
+2	line	Player	Oh dear! Do any of them own a stall in the Al Kharid Bazaar?
+2	line	Ali the Camel Man	Well no, but one of them owns a moderately successful camel hire franchise.
+2	line	Ali the Camel Man	Have you considered hiring a camel? Or perhaps purchasing one of your own? I can get you a discount.
+2	line	Player	Never mind.
+2	action	end
+0	section	Talking to a Bandit
+1	line	Player	Hello.
+1	line	Bandit	Good day adventurer. Have you come with the Menaphite peace offering?
+1	line	Player	Umm... no. Not yet. Actually I've come to ask about something else.
+1	line	Bandit	We can talk once you bring back the Menaphites' full peace offering.
+1	action	end
+0	section	Talking to a Menaphite Thug
+1	line	Menaphite Thug	Greetings Adventurer, Ali wants to have a word with you.
+1	line	Player	Really? Which one?
+1	line	Menaphite Thug	Ali, our Chief of Operations. He should be somewhere nearby the tent.
+1	line	Player	Thanks.
+1	action	end
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	You seem to be a man of action. We could do with more people like you to sort those despicable bandits out.
+1	line	Player	Yeah, those pesky bandits!
+1	line	Ali the Operator	So will you join us in our fight to wipe them out?
+1	select	Select an Option
+1	option	Yes, of course, those bandits should be taught a lesson.
+2	line	Player	Yes, of course, those pesky bandits should be taught a lesson.
+2	line	Ali the Operator	Good choice my friend, together we will crush them.
+2	line	Player	So when do we start?
+2	line	Ali the Operator	Slow down, slow down. First you must prove yourself capable and trustworthy.
+2	line	Player	How will I manage that?
+2	line	Ali the Operator	Don't worry about that, I'll just set you a few jobs to do.
+2	line	Ali the Operator	As you might have gathered we have a less-than- sparkling reputation around here.
+2	line	Ali the Operator	So I want you to foster this reputation and grow it.
+2	line	Player	What exactly does that mean?
+2	line	Ali the Operator	It means that I want you to go out into the town and pickpocket three villagers, then report back to me.
+2	line	Ali the Operator	If you have any problems don't be afraid to ask for some advice.
+2	line	Player	Oh right, thanks.
+2	line	Ali the Operator	Can I help you with anything else?
+2	select	Select an Option
+2	option	Yes I'd like to ask you about something else.
+3	line	Player	Yes I'd like to ask you about something else.
+3	select	Select an Option
+3	option	Tell me about yourself.
+4	line	Player	Tell me about yourself.
+4	line	Ali the Operator	That information is available on a need to know basis and right now, you don't need to know.
+4	line	Ali the Operator	Can I help you with anything else?
+4	action	above
+3	option	Tell me about the other people in the town.
+4	line	Player	Tell me about the other people in the town.
+4	line	Ali the Operator	Sheep, ready for the slau... hang on. I shouldn't be telling you that. Just forget I said anything.
+4	line	Ali the Operator	Can I help you with anything else?
+4	action	above
+3	option	I'm looking for Ali.
+4	line	Player	I'm looking for Ali.
+4	line	Ali the Operator	Can you be a bit more specific? Everyone here is called Ali.
+4	line	Player	So I noticed. Well, he has an uncle called Ali Morrisane, a market vendor in Al Kharid. That's all I really know about him.
+4	line	Ali the Operator	Say no more. I know just the Ali you mean - that little snake robbed me too! If we work together perhaps we can catch him and teach him a lesson.
+4	line	Ali the Operator	Can I help you with anything else?
+4	action	above
+3	option	No thanks.
+4	line	Player	No thanks.
+4	action	end
+2	option	No thanks.
+3	line	Player	No thanks.
+3	action	end
+1	option	Perhaps later, I'm quite busy at the moment.
+2	line	Player	Perhaps later, I'm quite busy at the moment.
+2	line	Ali the Operator	Tell me when you are ready. This deed should not be undertaken lightly.
+2	line	Ali the Operator	Can I help you with anything else?
+2	action	above
+0	section	Learning to steal
+0	section	Talking to Ali the Operator again
+1	line	Ali the Operator	How is the pickpocketing going?
+1	line	Player	I haven't started yet. I'm still psyching myself up to it.
+1	line	Ali the Operator	Don't take all day, time is getting on and there are still plenty of foul deeds to be done.
+1	line	Ali the Operator	Can I help you with anything else?
+1	action	above
+0	section	Talking to a Bandit
+1	line	Player	Good day.
+1	line	Bandit	Get out of here, you Menaphite dog!
+1	action	end
+0	section	Talking to the Cowardly Bandit
+1	line	Player	Good day.
+1	line	Cowardly Bandit	Get out of here, you Menaphite dog!
+1	line	Player	What was that? Are you looking for a fight.
+1	line	Cowardly Bandit	Me? No, no, I was just, er, complimenting your, that is - don't kill me, please!
+1	line	Player	I wouldn't waste my time.
+1	action	end
+0	section	Talking to a Menaphite Thug
+1	line	Player	Hi.
+1	line	Menaphite Thug	Tumeken be praised, you have seen the error of your ways. May Elidinis the river goddess bless your lands.
+1	line	Player	I was wondering if I could ask you about something.
+1	line	Menaphite Thug	You're better off asking Ali the Operator. He's the brains behind the whole operation.
+1	action	end
+0	section	Talking to a Villager
+1	option	Dialogue 1
+2	line	Player	Hello, how's it going?
+2	line	Villager	Argh! Don't rob me!
+2	line	Player	What are you talking about?
+2	line	Villager	Sorry, I thought you were a bandit.
+2	line	Player	There are a lot of them around here...
+2	action	end
+1	option	Dialogue 2
+2	line	Player	Hello, how's it going?
+2	line	Villager	Perhaps it's time to elect a new mayor...
+2	action	end
+0	section	Picking another pocket
+0	section	Trying to pickpocket a villager again
+1	line	Villager	I know your tricks, thief.
+1	line	Villager	You won't get my purse.
+1	action	Villager hits the player for 2 damage and a stun.
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	How is the pickpocketing going? Need a hand?
+1	select	Select an Option
+1	option	Yeah, I could do with a bit of advice.
+2	line	Player	Yeah, I could do with a bit of advice.
+2	line	Ali the Operator	If you can't achieve your goal directly, try adding another element into the equation, like a distraction.
+2	line	Ali the Operator	Do you know what I mean?
+2	line	Player	I think so.
+2	line	Ali the Operator	Can I help you with anything else?
+2	action	above
+1	option	Nah, no problems here. I want to ask you about something else.
+2	line	Player	Nah no problems here. I actually wanted to ask you about something else.
+2	line	Player	Yes I'd like to ask you about something else.
+2	select	Select an Option
+2	option	Tell me about yourself.
+3	line	Player	Tell me about yourself.
+3	line	Ali the Operator	That information is available on a need to know basis and right now, you don't need to know.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	Tell me about the other people in the town.
+3	line	Player	Tell me about the other people in the town.
+3	line	Ali the Operator	Sheep, ready for the slau... hang on. I shouldn't be telling you that. Just forget I said anything.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	I'm looking for Ali.
+3	line	Player	I'm looking for Ali.
+3	line	Ali the Operator	Can you be a bit more specific? Everyone here is called Ali.
+3	line	Player	So I noticed. Well, he has an uncle called Ali Morrisane, a market vendor in Al Kharid. That's all I really know about him.
+3	line	Ali the Operator	Say no more. I know just the Ali you mean - that little snake robbed me too! If we work together perhaps we can catch him and teach him a lesson.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	No thanks.
+3	line	Player	No thanks.
+3	action	end
+0	section	Talking to a Street urchin
+1	line	Player	Hey kid, come here!
+1	line	Street urchin	What do you want?
+1	line	Player	I need a little help, do you want to make some easy money?
+1	line	Street urchin	That depends.
+1	line	Player	Do you see that villager over there? If you could distract him for a bit I'll give you 10 gold coins.
+1	line	Street urchin	Is that it?
+1	line	Player	That's it!
+1	cond	If a villager isn't in distance:
+2	line	Street urchin	Listen, you're crazy. I can't see anyone to distract.
+2	action	end
+1	line	Street urchin	Okay, I see them. Here I go!
+1	line	Street urchin	Hey you, camel features! Come here.
+1	line	Villager	Excuse me?
+0	section	Pickpocketing part three
+0	section	Talking to a Street urchin
+0	section	First time after the distraction
+1	line	Player	Hey there!
+1	line	Street urchin	Did you see the way I distracted that guy? Man, I'm one smooth operator!
+1	line	Player	You did good, kid.
+1	line	Street urchin	So where's my money?
+1	select	Select an Option
+1	option	What money?
+2	line	Player	What money?
+2	line	Street urchin	Don't play stupid with me, I'm better at it. Where's my money?
+2	line	Player	Oh, that money! I don't think you deserve it!
+2	line	Street urchin	Liar, thief!
+2	line	Player	How observant of you!
+2	line	Street urchin	Give me my money!
+2	line	Player	Make me!
+2	line	Street urchin	You'll be sorry!
+2	action	end
+1	option	Here you go, thanks.
+2	line	Player	Here you go, thanks.
+2	line	Street urchin	Thanks [sir/ma'am], I didn't think you would hold up your side of the deal. There's not much honour amongst thieves, you know.
+2	line	Street urchin	Well do you need any other information then?
+2	action	end
+0	section	After denying them the money earlier
+1	line	Player	Hey there!
+1	line	Street urchin	Thief! Thief!
+1	line	Player	Shut up! Don't cause any more trouble or you'll regret it.
+1	line	Street urchin	Give me double and I'll be quiet!
+1	cond	If the player does not have 20 coins
+1	cond	If the player has 20 coins
+2	line	Player	Okay, here you go - you thief.
+2	line	Street urchin	Better a thief than a liar!
+2	action	end
+0	section	Trying the distraction again
+1	line	Player	Hey there!
+1	line	Street urchin	Hi! Do you want to go rob some more people? I could do with some more money.
+1	line	Player	Okay, let's do it again.
+2	line	Street urchin	Hey you, camel features! Come here.
+2	line	Villager	I know your game guttersnipe.
+2	line	Street urchin	???
+2	line	Villager	You won't fool anyone with that trick again.
+2	action	continues
+1	line	Player	I think I need to try a different tactic. Sorry, kid!
+1	line	Street urchin	Well do you need any information then?
+1	select	Select an Option
+1	option	Yes tell me about...
+2	action	above
+1	option	No thanks.
+2	line	Player	No thanks.
+2	line	Street urchin	Come back if you need any info about anything in the town.
+2	line	Player	I will do thanks.
+2	action	end
+0	section	After failing the distraction again
+1	line	Player	Hey there!
+1	line	Street urchin	Hi! Do you want to go rob some more people? I could do with some more money.
+1	line	Player	I think I need to try a different tactic. Sorry, kid!
+1	line	Street urchin	Well do you need any information then?
+1	action	above
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Having problems?
+1	select	Select an Option
+1	option	Yeah, I could do with a bit of advice.
+2	line	Player	Yeah, I could do with a bit of advice.
+2	line	Ali the Operator	The distraction tactic isn't working any more?
+2	line	Player	No, they seem to have figured that one out already.
+2	line	Ali the Operator	It is a small town, news spreads fast. Perhaps using a spot of cunning and a bit of brute force might work better.
+2	cond	If the player has a full inventory:
+3	line	Ali the Operator	Here, take this, it might help.
+3	box	Ali the Operator motions as if to give you a Blackjack but you decline, as you have no room in your inventory.
+3	action	end
+2	cond	If the player already has the blackjack:
+3	line	Ali the Operator	I've already given you a Blackjack, try using it.
+3	action	end
+2	cond	Otherwise:
+3	box	Ali The Operator hands you a Blackjack made out of oak.
+3	action	end
+1	option	Nah, no problems here. I want to ask you about something else.
+2	line	Player	No problems here. I actually wanted to ask you about something else.
+2	line	Player	Yes I'd like to ask you about something else.
+2	select	Select an Option
+2	option	Tell me about yourself.
+3	line	Player	Tell me about yourself.
+3	line	Ali the Operator	That information is available on a need to know basis and right now, you don't need to know.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	Tell me about the other people in the town.
+3	line	Player	Tell me about the other people in the town.
+3	line	Ali the Operator	Sheep, ready for the slau... hang on. I shouldn't be telling you that. Just forget I said anything.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	I'm looking for Ali.
+3	line	Player	I'm looking for Ali.
+3	line	Ali the Operator	Can you be a bit more specific? Everyone here is called Ali.
+3	line	Player	So I noticed. Well, he has an uncle called Ali Morrisane, a market vendor in Al Kharid. That's all I really know about him.
+3	line	Ali the Operator	Say no more. I know just the Ali you mean - that little snake robbed me too! If we work together perhaps we can catch him and teach him a lesson.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	above
+2	option	No thanks.
+3	line	Player	No thanks.
+3	action	end
+0	section	Luring a villager
+1	line	Player	Psst. Come here, I want to show you something
+1	line	Villager	What is it?
+1	line	Player	It's a surprise! Follow me.
+1	action	end
+0	section	Welcome to the Menaphites
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Well done! You have finished your first trial.
+1	line	Player	First trial?
+1	line	Ali the Operator	You didn't think we'd hire you off the back of a couple of pick-pocketings, did you?
+1	line	Player	Ah, of course not.
+1	line	Ali the Operator	Good! Now, the next thing you have to do is a spot of burglary.
+1	line	Ali the Operator	The only place worth pilfering around here is the mayor's villa.
+1	line	Ali the Operator	I want you to retrieve his wife's jewels.
+1	line	Player	Got any advice?
+1	line	Ali the Operator	Well I think that a disguise would be a good start. After that I would stake out the place to make sure he's not in.
+1	line	Ali the Operator	You'll need a key to the front door, too.
+1	cond	If the player has a full inventory:
+2	line	Player	I can't carry anything else.
+2	line	Ali the Operator	Well then come back to me again when you are ready. Don't be too long.
+2	action	end
+1	cond	Otherwise:
+2	box	Ali the Operator hands you a set of keys.
+2	line	Player	Anything else?
+2	line	Ali the Operator	No! Now get going.
+2	action	end
+0	section	Staking out the house
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Haven't I helped you enough already?
+1	line	Player	Actually, I'm still having problems getting in.
+1	cond	If the player has lost the keys:
+2	line	Ali the Operator	So you've lost your keys then. It's lucky I keep a spare pair.
+2	box	Ali the Operator hands you a set of keys.
+2	action	end
+1	cond	Otherwise:
+2	line	Ali the Operator	So what's the problem? Have you created a disguise yet?
+2	select	Select an Option
+2	option	Yes of course.
+3	line	Player	Yes of course.
+3	line	Ali the Operator	Then make sure that you stake the place out to make sure neither the mayor or his family are inside.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	end
+2	option	Now that you mention it, I'm having a few problems with that.
+3	line	Player	Now that you mention it, yes I am having problems with the disguise.
+3	line	Ali the Operator	You'll have to create something that will hide your hair and obscure your facial features.
+3	line	Ali the Operator	Make sure you're wearing a pair of gloves so that you don't leave any incriminating finger prints.
+3	line	Ali the Operator	You should have all this equipped before you stake out the house.
+3	line	Ali the Operator	Can I help you with anything else?
+3	action	end
+0	section	Hiding behind the Cactus
+1	cond	Before being asked to rob the house or after robbing it:
+2	box	I'd feel a little silly crouching down behind these prickly shrubs for no apparent reason.
+2	action	end
+1	cond	If the player is not wearing gloves:
+2	box	I need something to cover my hands before I stake out the house. I might leave fingerprints.
+2	action	end
+1	cond	If the player is not wearing a desert disguise:
+2	box	I need something to disguise my head before I stake out the house. Somebody might spot me.
+2	action	end
+1	cond	Otherwise:
+2	line	Player	I better be careful, this cactus is prickly!
+1	box	The coast is clear, nobody's home.
+1	action	end
+0	section	Breaking and entering
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	What now?
+1	cond	If the player does not have the keys:
+2	line	Player	I've lost the keys you gave me.
+2	line	Ali the Operator	It's lucky I keep a spare pair.
+2	box	Ali the Operator hands you a set of keys.
+2	action	end
+1	line	Player	I've managed to stake the place out. What should I do now?
+1	line	Ali the Operator	Try using those keys I gave you to open the door!
+1	line	Ali the Operator	Can I help you with anything else?
+1	action	above
+0	section	Using the keys on the Mayor's house door
+1	box	You hear a satisfying click as the door unlocks.
+1	action	end
+0	section	Speaking to Ali the Operator again
+1	line	Ali the Operator	What now?
+1	line	Player	I've managed to break in, but I'm unable to get the jewels.
+1	line	Ali the Operator	Then search the house more thoroughly! Everything you need should be there.
+1	line	Ali the Operator	Can I help you with anything else?
+1	action	above
+0	section	Searching the Mayor's Study desk
+1	box	You find an interesting note on the desk.
+1	cond	If the player has a full inventory:
+2	box	You don't have enough room in your inventory to take it.
+1	cond	Otherwise:
+2	action	Note (numbers) is added to the player's inventory.
+1	action	end
+0	section	Searching the Mayor's Bed
+1	box	You find a flattened note under the mattress.
+1	cond	If the player has a full inventory:
+2	box	You don't have enough room in your inventory to take it.
+1	cond	Otherwise:
+2	action	Note (Fibonacci) is added to the player's inventory.
+1	action	end
+0	section	Searching the Mayor's Landscape
+1	box	On the wall hangs a rather nondescript picture. On closer inspection you notice that it's covering something: a safe.
+1	action	Safe interface opens.
+1	cond	Upon failing the combination:
+2	box	A rather loud clank reverberates from the safe. It sounds as if you've gotten the combination wrong. You wonder how many more attempts you have before the safe permanently locks itself.
+2	action	end
+1	cond	Upon resetting the safe:
+2	box	Clank!! That must be the safe resetting itself.
+1	cond	Upon unlocking the safe:
+2	cond	If the player has a full inventory:
+3	box	The mayor's jewels are contained within the safe, however you have no room in your inventory to take them.
+3	action	end
+2	cond	Otherwise:
+3	box	You remove the jewels from the safe.
+3	action	end
+0	section	Now you've stolen the jewels
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	I really can't chat for very long, the recent escalation in crime has me run off my feet. Just a short while ago even my own house was robbed. This cannot continue.
+1	action	end
+0	section	Talking to Ali the Operator
+1	line	Player	I've completed your task.
+1	line	Ali the Operator	Impressive, I didn't expect you to crack that safe so quickly. Did you have help?
+1	line	Player	Of course not, although the mayor did leave a number of hints lying around.
+1	line	Ali the Operator	That man is a fool. Now give me the jewels.
+1	cond	If the player does not have the jewels:
+2	line	Player	Actually I seem to have misplaced them.
+2	line	Ali the Operator	You are trying my patience. Hurry back with the jewels. Don't disappoint me.
+2	action	end
+1	cond	Otherwise:
+2	box	You hand Ali the Operator the jewels.
+2	line	Ali the Operator	Now, your final task is one of the upmost importance. It has come to my attention that there is a traitor in our midst.
+2	line	Player	Oh really?
+2	line	Ali the Operator	Yes, and I want you to root them out.
+2	line	Player	Why me?
+2	line	Ali the Operator	Because I feel like I can trust you. You don't have the emotional baggage that comes with playing the villain your entire life.
+2	line	Player	Aw! You can count on me to find the traitor.
+2	line	Ali the Operator	Well then get to it.
+2	action	end
+0	section	Searching for the traitor
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	How is the search for the traitor going?
+1	line	Player	Still no breakthrough.
+1	line	Ali the Operator	Make sure you interview our other members. They may know more than they let on.
+1	line	Ali the Operator	Can I help you with anything else?
+1	action	above
+0	section	Talking to a Menaphite Thug
+1	line	Player	I was wondering if you could help me?
+1	line	Menaphite Thug	Tell me what your problem is and I'll see what I can do.
+1	line	Player	I've heard there's a traitor among the Menaphites. What do you know about it?
+1	line	Menaphite Thug	It wasn't me, I swear!
+1	line	Player	Really? So what do you know?
+1	line	Menaphite Thug	I just can't believe one of my friends could be a traitor.
+1	line	Menaphite Thug	Well, I suppose there is Traitorous Ali.
+1	line	Player	'Traitorous Ali'?
+1	line	Menaphite Thug	Oh yes. The most untrustworthy, backstabbing little rat to scamper across Tumeken's fair desert. He'd sell his own mother to slavers if he hadn't already betrayed her and had her locked up for the last job he pulled.
+1	line	Player	I suppose the name is a bit of a giveaway.
+1	line	Player	That was a little too simple, are you sure it was him?
+1	line	Menaphite Thug	Positive, he was turned by the offer of a set of waterproofs and a ride on a camel.
+1	line	Player	I see he drives a hard bargain.
+1	line	Menaphite Thug	Well what can I say? We don't call him 'Ali of the Good Decisions', do we?
+1	action	end
+0	section	Talking to Ali the Operator again
+1	line	Player	I have discovered the identity of the traitor. It was...
+1	line	Player	Traitorous Ali!
+1	line	Ali the Operator	No! I would never have suspected Traitorous Ali.
+1	line	Ali the Operator	Well, there was that time he sold out his entire family for a sandpit and an umbrella.
+1	line	Ali the Operator	But I'm sure it took much more for him to betray us!
+1	line	Player	Actually he sold you out for...
+1	line	Ali the Operator	Stop, I don't want to know. It hurts too much already. Find him and then kill him, but do it quietly. I don't want a fuss.
+1	line	Ali the Operator	Can I help you with anything else?
+1	action	above
+0	section	Planning a murder
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Is the deed done?
+1	line	Player	I'm still working on it.
+1	line	Ali the Operator	Well don't waste time talking to me. Get on with it.
+1	action	end
+0	section	Talking to Ali the Barman
+1	line	Player	Hello there.
+1	line	Ali the Barman	Good day. Can I help you with anything?
+1	select	Select an Option
+1	option	Yes, I'd like a drink please.
+2	line	Player	Yes, I'd like a drink please.
+2	action	
+1	option	What's going on in town?
+2	line	Player	What's going on in town?
+2	line	Ali the Barman	Nothing much really. About what you'd expect from a sleepy little town like ours.
+2	line	Player	What about those two gangs? That seems exciting.
+2	line	Ali the Barman	They're paying customers, so I won't rock the boat if you don't mind.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	select	Select an Option
+2	option	No thanks, I'm ok.
+3	line	Player	No thanks, I'm ok. Thanks for your time.
+3	action	end
+2	option	Yes, I'd like to talk about something else.
+3	action	initial
+1	option	I'm looking for Traitorous Ali.
+2	line	Player	I'm looking for Traitorous Ali.
+2	line	Ali the Barman	He was just here! Look, he's even left his drink on the table by those barrels. Must have nipped out to go to the toilet.
+2	line	Ali the Barman	He might be gone a while though. The nearest outhouse is all the way over on Fossil Island.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	select	Select an Option
+2	option	No thanks, I'm ok.
+3	line	Player	No thanks, I'm ok. Thanks for your time.
+3	action	end
+2	option	Yes, I'd like to talk about something else.
+3	action	initial
+1	option	I'm looking for Ali from Pollnivneach.
+2	line	Player	I'm looking for Ali from Pollnivneach.
+2	line	Ali the Barman	Well, I'm called Ali and I'm from here. Are you looking for me?
+2	line	Player	Do you have an uncle called Ali?
+2	line	Ali the Barman	Yes! All my uncles are called Ali!
+2	line	Player	Oh dear. Well do any of your uncles have a stall in the Bazaar in Al Kharid?
+2	line	Ali the Barman	Um... no.
+2	line	Player	Well do you know if anyone here does?
+2	line	Ali the Barman	That's a difficult question to answer. I don't know anyone else's uncles.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	action	above
+1	option	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Player	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Ali the Barman	Maybe around these parts. Were you expecting it to have 'Ali' in the name?
+2	line	Ali the Barman	I did think about calling it 'Ali's', but then it'd get confused with the Camel Shop, the Kebab House, the Mayor's residence...
+2	line	Player	Yes, I get your point. It's a perfectly fine name.
+2	line	Ali the Barman	Is there anything else I can help you with?
+2	action	above
+0	section	Talking to Ali the Hag
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Ali the Hag	Now what do you want? A hex? A spot potion? Power, beauty, eternal youth, etcetera?
+1	line	Player	Actually I just want your help to, erm, remove someone. It's simple enough!
+1	line	Ali the Hag	Ahh, I see. But I warn you, stranger - extinguishing the flame of life is simple, but people rarely wish to face the consequences, and I doubt you are any different.
+1	line	Player	Don't worry about the consequences - I need it carried out in a manner which would draw no suspicion to me.
+1	line	Ali the Hag	Well now this is getting interesting. I'd recommend a poisoning. Who do you wish dead? I need to know so that I may tailor a poison to their specific needs.
+1	line	Player	'Traitorous Ali', please.
+1	line	Ali the Hag	Traitorous Ali? Say no more! That wretch traded his grandmother's house for a jar of pickled aubergines! I believe he'll be easily gotten rid of...
+1	line	Player	What payment do you require?
+1	line	Ali the Hag	None at all - I will extract much pleasure from his passing. Just bring me the ingredients I require.
+1	line	Player	What do you need?
+1	line	Ali the Hag	Ah, impatience! Traitorous Ali's time is indeed nigh. Firstly bring me some snake venom, which will act as the main toxin.
+1	line	Player	Where would I get some snake poison?
+1	line	Ali the Hag	From a snake perhaps?
+1	line	Player	What I meant was how do I extract the poison from the snake?
+1	line	Ali the Hag	Sheesh! You'd make a terrible hag. Just bring me a snake with teeth in its head - and don't even think of giving me that snake charmer's pet worm, it's about as dangerous as a rubber knife.
+1	action	end
+0	section	Talking to Ali the Hag again
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Ali the Hag	Have you got a snake yet?
+1	line	Player	No, I'm still working on that.
+1	line	Ali the Hag	Well don't bother me again until you do!
+1	action	end
+0	section	Charming a snake
+1	cond	If unsuccessful:
+2	box	Your snake charming skills are insufficient to pacify the creature.
+2	action	end
+1	cond	If successful:
+2	box	You successfully charm and capture the snake!
+2	action	end
+0	section	Talking to Ali the Hag with a Snake basket full
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Player	I have the snake. What else do you need?
+1	line	Ali the Hag	Ah yes, that snake will do nicely. Hello, you wriggly little cutie!
+1	line	Ali the Hag	Who's a vindictive little beast? You are! You are!
+1	line	Player	Erm, yes. Do you need anything else?
+1	line	Ali the Hag	Now that I have the toxin I need something to hide its trace. Fresh camel dung should do the job.
+1	line	Player	What? That's disgusting.
+1	line	Ali the Hag	Do you want the poison or not?
+1	line	Player	Fine, fine, I'll get some camel dung.
+1	line	Ali the Hag	And make that fresh camel dung! Nice and stinky. Now hand over that venomous little darling before it takes a bite out of you.
+1	line	Player	Oops! I almost forgot!
+1	box	You hand the basket with the charmed snake over to the old hag.
+1	action	end
+0	section	Talking to Ali the Hag again
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Ali the Hag	Do you have the camel dung yet?
+1	line	Player	No, I'm still working on that.
+1	line	Ali the Hag	Well don't come back until you have it!
+1	action	end
+0	section	Talking to Ali the Hag with Ughthanki dung
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Ali the Hag	Here's your poison!
+1	line	Player	Wow, that was quick!
+1	line	Ali the Hag	Actually I already had it brewing. I just needed the ingredients for another batch.
+1	line	Ali the Hag	You wouldn't believe the demand. It's been murder!
+1	line	Player	That's not even remotely funny.
+1	line	Ali the Hag	Sorry, I've been dying to say that for ages.
+1	line	Player	Just stop. Thanks for the poison and good day to you.
+1	line	Ali the Hag	Wait! Just remember, this poison isn't designed to be used on a weapon. In fact it's not a contact poison at all. You'll have to do more than just smear it on a blade!
+1	line	Player	Got it. Thanks again!
+1	box	You hand over your bucket of fresh camel dung and receive a vial of poison in return.
+1	action	end
+0	section	The end of Traitorous Ali
+0	section	Talking to Ali the Hag
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Player	I was wondering if I could have another batch of poison?
+1	line	Ali the Hag	Why? Was the first batch not good enough?
+1	cond	If the player has the Hag's poison in their inventory:
+2	line	Player	Well no, I was just being greedy and wanted another batch for no good reason.
+2	line	Ali the Hag	Well if that's the case, no! I have better things to be doing than continuously brewing poisons for people who have no use for it.
+2	action	end
+1	cond	Otherwise:
+2	line	Player	I lost the first batch.
+2	line	Ali the Hag	What? How do you just lose a batch of the most potent poison in all of Gielinor? It's even more deadly than the jungle karambwan.
+2	line	Player	It's a long and not very interesting story.
+2	line	Ali the Hag	Well alright, I'll give you another batch this once.
+2	action	(The player receives another Hag's poison.)
+2	action	end
+0	section	Using the Hag's poison on the table
+1	box	You poison the drink.
+1	action	end
+0	section	Using an item on the drink after poisoning it
+1	line	Player	I've poisoned the drink. I'd better leave it alone now in case someone notices.
+1	action	end
+0	section	Reporting the deed
+0	section	Talking to Ali the Hag
+1	line	Player	Good day, Hag.
+1	line	Ali the Hag	Good day to you too, Blockhead.
+1	line	Ali the Hag	Have you good reason to disturb me again?
+1	line	Player	Nope!
+1	line	Ali the Hag	I warned you about needlessly bothering me. That's it! I'm turning you into a frog!
+1	line	Player	Ribbit, ribbit!
+1	line	Ali the Hag	Don't taunt me, fool! Once I find a spare minute you'll be ribbiting on the other side of your face, you mark my words!
+1	action	end
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Is the deed done?
+1	line	Player	Almost, his drink is poisoned. As soon as he gets back, he'll be done for.
+1	line	Ali the Operator	Excellent work! Now, go speak with our boss.
+1	line	Ali the Operator	He wants to discuss the future direction of the gang.
+1	action	end
+0	section	Meeting the leader
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	What did the boss say?
+1	line	Player	I haven't spoken with him yet.
+1	action	end
+0	section	Talking to the Menaphite Leader
+1	line	Player	Ali the Operator said you wanted to see me.
+1	line	Menaphite Leader	That's right. I have kept a close eye on your progress. I'm impressed.
+1	line	Player	So what are your plans for the bandits?
+1	line	Menaphite Leader	The bandits? A mere nuisance, insignificant to my overall goal.
+1	line	Player	Wait, if you're not warring with the bandits, what are you planning?
+1	line	Menaphite Leader	World domination! First Pollnivneach, then Al Kharid, then the whole of the desert!
+1	line	Player	What?
+1	line	Menaphite Leader	You do understand who we are, don't you?
+1	line	Player	Actually I thought you were a ragtag band of good-for- nothing thieves sucking the life out of this innocent town.
+1	line	Menaphite Leader	Silence! We are the descendants of assassins, the heirs of the revolutionaries who defeated the corrupt pharaoh and his brood!
+1	line	Menaphite Leader	For centuries we have wandered the desert, rebuilding the empire we were promised!
+1	line	Menaphite Leader	Will you join us in our quest to defeat the thralls of Tumeken and reclaim our birthright?
+1	cond	If the player has not completed Beneath Cursed Sands:
+2	line	Player	Sorry, I have this irrational hatred for megalomaniac, despotic zealots! Prepare to meet your maker, you big jerk!
+2	action	continue
+1	cond	If the player has completed Beneath Cursed Sands:
+2	line	Player	Wait, your great-great-great-great-grandparents were the ones who killed Osmumten?
+2	line	Menaphite Leader	Who?
+2	line	Player	You don't even know his name, and you claim to be the heirs to his empire? Come on.
+2	line	Player	You're just a bunch of petty tyrants looking for an excuse to hurt people.
+2	line	Menaphite Leader	Be careful what you say! We are loyal servants of the Devourer!
+2	line	Player	I hope so, because you're about to meet her in person. This is for Mehhar!
+2	action	continue
+1	line	Menaphite Leader	Fool! You'll never get to me. Guards protect me.
+1	action	The Menaphite Leader summons the Tough Guy to attack the player.
+1	action	end
+0	section	Talking to a Menaphite Thug
+1	line	Menaphite Thug	You treacherous jackal! Prepare to die!
+1	action	The Menaphite Thug attacks the player.
+1	action	end
+0	section	Talking to the Menaphite Leader again
+1	line	Menaphite Leader	Guards!
+1	line	Tough Guy	Grr!
+0	section	After defeating the Tough Guy
+1	line	Menaphite Leader	You haven't seen the last of me!
+1	action	Menaphite Leader teleports away.
+1	line	Player	No doubt I haven't seen the last of you... but what about Ali's nephew?
+1	line	Player	Maybe the villagers will feel more talkative now that I've rid them of these evil Menaphites. Who knows, they might even give me a reward!
+1	action	end
+0	section	Celebrating your victory
+0	section	Talking to a Menaphite Thug
+1	line	Player	Hello.
+1	line	Menaphite Thug	You treacherous jackal! I should never have trusted you.
+1	line	Player	What can I say, you live and learn.
+1	line	Menaphite Thug	I will avenge my master!
+1	action	The Menaphite Thug attacks the player.
+1	action	end
+0	section	Talking to a Street urchin
+1	line	Player	Hey there!
+1	line	Street urchin	Hi! Do you want to go rob some more people? I could do with some more money.
+1	line	Player	I think I need to try a different tactic. Sorry, kid!
+1	line	Street urchin	Well do you need any information then?
+1	line	Player	No thanks, I think I have a fair idea of what is going on in the town now.
+1	action	end
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	I don't know what we did to deserve your presence here, but I for one am filled with regret.
+1	line	Player	Well that's some show of gratitude! Can't I even get a 'thank you' for ridding your town of one of the gangs?
+1	line	Ali the Mayor	Do you understand the concept of consequences?
+1	line	Player	Er, I think so?
+1	line	Ali the Mayor	Well, the consequences of your little piece of butchery are that the town is now even worse off. The bandits no longer have to waste time and energy fighting with the Menaphites and can direct all their attention
+1	line	Ali the Mayor	towards making us miserable. So for your efforts I thank you, but I wish no-one had asked for your help.
+1	line	Player	I'll set this town right before I leave, I promise.
+1	line	Ali the Mayor	Why do I wish that you hadn't said that? Your heavyhanded tactics scare me.
+1	action	end
+0	section	Talking to a Bandit
+1	line	Player	Hello.
+1	line	Bandit	Welcome! Your actions surprise me.
+1	line	Player	What do you mean?
+1	line	Bandit	It was brilliant the way you got rid of the Menaphite leader.
+1	line	Player	Er... yes. Thank you.
+1	line	Bandit	So will you run the rest of them out of town now?
+1	line	Player	I don't know.
+1	action	end
+0	section	Talking to the Cowardly Bandit
+1	line	Player	Hello.
+1	line	Cowardly Bandit	Welcome. Our leader would be pleased to congratulate you on your disposal of the Menaphites who plagued this town.
+1	action	end
+0	section	Talking to Ali the Operator
+1	line	Ali the Operator	Why did you have to go and ruin everything? We had a beautiful future ahead of us, the town would have been ours!
+1	select	Select an Option
+1	option	Maybe I wanted to make it MY town!
+2	line	Player	Maybe I wanted to make it MY town!
+2	line	Ali the Operator	I see. I knew the hunger for power would get to you eventually.
+2	action	end
+1	option	Evil megalomaniacs set on destruction should be opposed.
+2	line	Player	Evil megalomaniacs set on destruction should be opposed.
+2	line	Ali the Operator	Really? I thought you were meant to follow those types blindly, with unquestioning loyalty.
+2	line	Player	Look, Gielinor is full of power mad evil-doers. I'm sure another will come along soon enough.
+2	line	Ali the Operator	No... it just wouldn't be the same. I think I'll just wallow in self pity for a while.
+2	action	end
+1	option	I'm sorry, I didn't mean to upset you. Can we still be friends?
+2	line	Player	I'm sorry, I didn't mean to upset you. Can we still be friends?
+2	line	Ali the Operator	No, I think I'll just wallow in self pity for a while.
+2	action	end
+0	section	Talking to a Villager
+1	line	Player	Hello.
+1	line	Villager	You! You're the one that just made everything worse for us poor villagers!
+1	line	Player	What?! I just single-handedly took apart one of the gangs that was ruining your town!
+1	line	Villager	You adventurers! You never think, you just act. You think that by killing a powerful bad person, Gielinor will become a better place.
+1	line	Villager	It's not that simple, things never are. You've created a vacuum, and now all that power will go to whoever's strong enough to take it.
+1	line	Villager	Who do you think is stronger? Our elderly mayor, or the leader of the bandits?
+1	line	Player	Oops. Sorry, I was just trying to help. So are things really that much worse?
+1	line	Villager	Yes. Before your intervention the two gangs pretty much cancelled each other out. They spent most of their energy trying to kill each other.
+1	line	Villager	Now that the balance is lost, the Bandits reign unopposed! They no longer have to deal with the Menaphites and heap misery upon misery on us. You must finish the job that you have started.
+1	line	Player	You know, this adventuring lark is a lot more complicated than I thought!
+1	line	Villager	If you're prepared to change something you must also be prepared to deal with the consequences! Now hurry up and fix this mess you created!
+1	select	Select an Option
+1	option	What do you mean by fix the mess I created?
+2	line	Player	What do you mean by fix the mess I created?
+2	line	Villager	Do I have to spell it out to you?
+2	line	Player	Would you please?
+2	line	Villager	Just run the bandits out of town. Incidentally, I spotted their leader to the north-west just a few minutes ago.
+2	action	end
+1	option	Ok I'll get to it.
+2	line	Player	Okay, I'll get to it.
+2	action	end
+0	section	Running the Bandits out of town
+0	section	Talking to a Bandit
+1	line	Player	Hello.
+1	line	Bandit	Welcome! Our leader wants to congratulate you on your swift disposal of the Menaphites who plagued this town.
+1	action	end
+0	section	Talking to the Bandit Leader
+1	line	Bandit Leader	Come here my friend, so I may embrace you. You have done us a great turn by disposing of those Menaphites.
+1	line	Player	Don't jump to conclusions, I didn't do it for you.
+1	line	Bandit Leader	Regardless, I am still very grateful. Now I have the town at my mercy.
+1	line	Player	That's what I'm here to talk to you about.
+1	line	Bandit Leader	Do you want a reward? A fee? I will not begrudge you that.
+1	line	Player	No, I'm here to give you an ultimatum: either leave the town of your own free will or I will make you.
+1	line	Bandit Leader	How the worm has turned. This no-name adventurer who was robbing, looting and poisoning not too long ago is now taking the moral high ground! Or are you trying to keep the whole town for yourself?
+1	line	Bandit Leader	Pollnivneach is mine. You won't run me out without a fight. If you want us gone, you must defeat our strongest warrior in battle.
+1	line	Player	Start packing your bags!
+1	action	end
+1	action	Bandit champion appears.
+1	line	Bandit champion	Grrr
+0	section	Talking to the Bandit Leader again
+1	action	Bandit champion appears
+1	line	Bandit Leader	Ali, come here!
+1	line	Bandit champion	Grrr
+0	section	Upon defeating the Bandit champion
+1	line	Player	I have defeated your champion, now get out of town.
+1	line	Bandit Leader	Adventurer... I have underestimated you. Perhaps we can come to an agreement. How about I work for you? Think of the riches you would make.
+1	line	Player	Don't try my patience. Tell me where Ali is, and then get out of here?
+1	line	Bandit Leader	Ali? Which Ali?
+1	line	Player	Ali Morrisane's nephew! I know you gangs had something to do with his disappearance, so tell me where he is!
+1	line	Bandit Leader	Ali Morrisane?! You fool. You've been had!
+1	line	Player	What do you mean?
+1	line	Bandit Leader	Go have a chat with these precious townspeople of yours. You'll soon learn the truth.
+1	line	Player	I'll go talk to a villager now, just to prove you wrong. Now get out of here before I really get angry with you!
+1	action	end
+0	section	Finishing up
+0	section	Talking to the Bandit Leader
+1	line	Player	I told you to clear off! Why are you still here?
+1	line	Bandit Leader	Adventurer... I have underestimated you. Perhaps we can come to an agreement. How about I work for you? Think of the riches you would make.
+1	line	Player	Don't try my patience. Get out of here, and never return to this town again!
+1	line	Bandit Leader	Ha! You fancy yourself the people's champion, do you? You are so naive. You don't even realise you've been tricked!
+1	line	Player	What do you mean?
+1	line	Bandit Leader	Go have a chat with these precious townspeople of yours. You'll soon see.
+1	line	Player	I'll go talk to a villager now, just to prove you wrong. Now get out of here before I really get angry with you.
+1	action	end
+0	section	Talking to a Bandit
+1	line	Bandit	You dog! You killed our champion and for that you will die!
+1	action	The Bandit attacks the player.
+1	action	end
+0	section	Talking to the Cowardly Bandit
+1	line	Cowardly Bandit	You dog! You killed our champion and for that I hope you die a slow and painful death.
+1	line	Player	What was that? Are you looking for a fight?
+1	line	Cowardly Bandit	Me? No, no, I was just, er, complimenting your, that is - don't kill me, please!
+1	line	Player	I wouldn't waste my time.
+1	action	end
+0	section	Talking to a Villager
+1	line	Player	Now are you satisfied?
+1	line	Villager	Oh, it's you again!
+1	line	Player	I have delivered you from two evil tyrants. Where's my thank you?
+1	line	Villager	Thank you? For what? You come into our town. You rob, mug, burgle and kill and then expect respect and gratitude? Look, if it's praise and thanks you're looking for, talk to the mayor.
+1	line	Player	I wonder why I bother sometimes! This place has been nothing but trouble and I still haven't found Ali's nephew.
+1	action	end
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	My thanks, adventurer. Your methods and motives may be questionable, but none can argue that you have delivered our little town from the wicked gangs who plagued it. I think things will change around here, now
+1	line	Ali the Mayor	that our problems are at a manageable size.
+1	line	Ali the Mayor	The least that I can do for you is answer your questions about the whereabouts of Ali Morrisane's nephew. He always was a mischievous young man, full of harebrained schemes.
+1	line	Ali the Mayor	He dreamed of being the greatest salesman in all of Gielinor! Unfortunately, he was a little too good.
+1	line	Ali the Mayor	He angered a number of people by coercing them into buying things they didn't really want. Completely within the law, of course, but the law could only protect young Ali for so long.
+1	line	Ali the Mayor	Once he angered the Menaphites and the bandits, I knew I could no longer protect him.
+1	line	Ali the Mayor	Under cover of darkness I smuggled him out of the town, and he's been gone ever since.
+1	line	Ali the Mayor	I can assure you, however, that he is safe and well - and now that you have effectively ended the threat posed by the gangs, he can continue his business elsewhere. Last I heard he planned to open some kind
+1	line	Ali the Mayor	of trade network with forty of his friends. A 'treasure trove', he claims. I'll believe it when I see it.
+1	line	Ali the Mayor	I hope that helps you in your quest. If you speak to Ali Morrisane, do tell him that I wholeheartedly apologise for the way he - er, his family - has been treated.
+1	line	Player	I think I may be able to help with one other thing. I heard that your house was burgled recently. If you're interested in recovering the goods, you ought to have a word with Ali the Operator.
+1	line	Ali the Mayor	Now, how would a passing adventurer know where to find my missing jewels?
+1	line	Player	Er, let's just put it down to adventurer's intuition.
+1	action	end
+0	section	Reporting back to Ali Morrisane
+0	section	Talking to Ali the Mayor
+1	line	Ali the Mayor	Thank you once again. Have you spoken to Ali Morrisane yet?
+1	line	Player	No not yet.
+1	line	Ali the Mayor	Perhaps you should! I'm sure he's keen to hear word of his nephew.
+1	action	end
+0	section	Talking to Ali the Barman
+1	line	Player	Hello there.
+1	line	Ali the Barman	Good day. Can I help you with anything?
+1	select	Select an Option
+1	option	Yes, I'd like a drink please.
+2	action	
+1	option	What's going on in town?
+2	line	Player	What's going on in town?
+2	line	Ali the Barman	Well since you gave the two gangs a good kicking, business has really taken off! Both gangs are spending all their gold here drowning their sorrows.
+2	line	Player	That's great! So do I get a cut of the profits?
+2	line	Ali the Barman	Get out of here, you cheeky rascal. A cut of my profits? As if!
+2	action	end
+1	option	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Player	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Ali the Barman	Maybe around these parts. Were you expecting it to have 'Ali' in the name?
+2	line	Ali the Barman	I did think about calling it 'Ali's', but then it'd get confused with the Camel Shop, the Kebab House, the Mayor's residence...
+2	line	Player	Yes, I get your point. It's a perfectly fine name.
+2	action	previous
+1	option	Could you tell Traitorous Ali that someone has poisoned his drink?
+2	line	Player	Could you tell Traitorous Ali that someone has poisoned his drink?
+2	line	Ali the Barman	What?! Poisoned drinks, in my bar?! My reputation would be destroyed if someone died here. Thank you adventurer.
+2	line	Player	No problem at all.
+2	line	Ali the Barman	Here, have a beer - it's on the house.
+2	select	Select an Option
+2	option	Thanks!
+3	box	Ali the barman gives you a beer.
+3	action	end
+2	option	Thanks but no thanks, I don't drink.
+3	line	Player	Thanks but no thanks, I don't drink.
+3	line	Ali the Barman	Don't say that around here too loud please, it may catch and then I'd be out of business.
+3	line	Player	You could always open up a non alcoholic fruit juice bar. You'd have less problems with drunken customers
+3	line	Ali the Barman	You might be onto something there, but then what would I do with the drunken sailor?
+3	line	Player	Who?
+3	line	Ali the Barman	Drunken Ali. Oh never mind it's a long story.
+3	action	end
+2	option	Yuck! I don't like beer.
+3	line	Player	Yuck! I don't like beer.
+3	line	Ali the Barman	Fine, suit yourself. There's no need to insult me.
+3	action	end
+0	section	Talking to Ali the Barman again
+1	line	Player	Hello there.
+1	line	Ali the Barman	Good day. Can I help you with anything?
+1	select	Select an Option
+1	option	Yes, I'd like a drink please.
+2	line	Player	Yes, I'd like a drink please.
+2	action	
+1	option	What's going on in town?
+2	line	Player	What's going on in town?
+2	line	Ali the Barman	Well since you gave the two gangs a good kicking, business has really taken off! Both gangs are spending all their gold here drowning their sorrows.
+2	line	Player	That's great! So do I get a cut of the profits?
+2	line	Ali the Barman	Get out of here, you cheeky rascal. A cut of my profits? As if!
+2	action	end
+1	option	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Player	The 'Asp and Snake'? What a strange name for a bar.
+2	line	Ali the Barman	Maybe around these parts. Were you expecting it to have 'Ali' in the name?
+2	line	Ali the Barman	I did think about calling it 'Ali's', but then it'd get confused with the Camel Shop, the Kebab House, the Mayor's residence...
+2	line	Player	Yes, I get your point. It's a perfectly fine name.
+2	action	previous
+0	section	Talking to Ali the Camel Man
+1	line	Ali the Camel Man	Hello! Welcome back to my discount camel store. How are those camels getting along?
+1	line	Player	Hey Ali!
+1	line	Ali the Camel Man	Hello adventurer.
+1	line	Player	Any news?
+1	line	Ali the Camel Man	Not much really, I just want to thank you for what you have done for this town. I might even stick around now that business is better!
+1	line	Player	Any grand plans?
+1	line	Ali the Camel Man	Well I've been debating whether I should diversify into camel rental, too. Although I do have all these cages lying around... do you think there's a market for discount jackals?
+1	line	Player	Maybe! Best of luck, in any case.
+1	line	Ali the Camel Man	Thank you.
+1	action	end
+0	section	Talking to Ali Morrisane
+1	line	Ali Morrisane	Hello again my friend. I have heard nothing from my troublesome nephew. Have you any news of his whereabouts?
+1	line	Player	Indeed I do. I was able to eventually learn of his fortunes, although it was a little bit more challenging than I originally thought.
+1	line	Ali Morrisane	Well then please, tell me what has become of him. Nothing bad I hope.
+1	line	Player	I was able to discover that he is quite the salesman. Perhaps too good. He has roughly forty people working under him.
+1	line	Player	Unfortunately a number of people didn't approve of his sales techniques and as a result he is in hiding.
+1	line	Ali Morrisane	You make an old man very happy. I'm so proud of young Baba.
+1	line	Player	But he's considered a thief!
+1	line	Ali Morrisane	Yes, by people with too much money and not enough sense. All willingly parted with their money and received what they purchased.
+1	line	Ali Morrisane	Well, it seems I still am in need of an assistant...
+1	line	Ali Morrisane	..but take the reward anyway.
+1	box	Ali Morrisane gives you 500 coins.
+1	line	Player	I've just been thinking Ali, there seems to be a few parallels between yourself and your nephew. Both of you are unscrupulous salesmen, both of you come from the same town and both of you no longer trade there.
+1	line	Player	Were you sent into exile too?
+1	line	Ali Morrisane	I have my reasons.
+1	line	Player	No, now hang on, this seems to me like one of the strangest quests I have ever been involved with. I do not believe that a businessman like you would not know of a competitor, particularly a competitor as talented as
+1	line	Player	your nephew.
+1	line	Player	So what was your motive to get me to visit Pollnivneach? Was it concern for the towns people? Hmm. I don't think so, I'd say you would probably sell your grandmother if you could get a good price for
+1	line	Player	her. What was the reason?
+1	line	Ali Morrisane	My my, you surprise me, you're not as dumb as you look.
+1	line	Player	Surely you didn't do all this to sell me a fake beard and headpiece.
+1	line	Ali Morrisane	Ah, once again you underestimate me. I sold you far more than that.
+1	line	Player	Really? Well I did buy some other odds and ends off you.... no hang on! I get it now, you're in league with Ali the Camel seller, the Kebab seller and the mayor aren't you.
+1	line	Ali Morrisane	I like the word 'tourism'. Did you not enjoy your stay in Pollnivneach? Was there not action, intrigue and fun to be had, and did you not notice all the other tourists there too?
+1	line	Player	I must apologise for ever doubting you. You really are the greatest salesman in all of Gielinor.
+1	line	Ali Morrisane	Now that we both agree on that, may I show you my wares?
+1	select	Select an Option
+1	option	No, I'm really too busy.
+2	action	Quest complete!
+1	option	Okay.
+2	action	

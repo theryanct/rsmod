@@ -65,6 +65,7 @@ import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_
 import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
 import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
+import org.rsmod.content.quests.thefeud.TheFeud.Companion.THE_FEUD
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
 import org.rsmod.content.quests.tribaltotem.TribalTotem.Companion.TRIBAL_TOTEM
@@ -146,6 +147,7 @@ public object BuiltQuests {
             SKIPPY_AND_THE_MOGRES,
             SLEEPING_GIANTS,
             TEMPLE_OF_THE_EYE,
+            THE_FEUD,
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
             TRIBAL_TOTEM,
