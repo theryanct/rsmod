@@ -29,6 +29,7 @@ import org.rsmod.content.quests.golem.TheGolem.Companion.THE_GOLEM
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.fremenniktrials.FremennikTrials.Companion.FREMENNIK_TRIALS
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
+import org.rsmod.content.quests.gettingahead.GettingAhead.Companion.GETTING_AHEAD
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
@@ -104,6 +105,7 @@ public object BuiltQuests {
             FISHING_CONTEST,
             FREMENNIK_TRIALS,
             GERTRUDES_CAT,
+            GETTING_AHEAD,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
             GRAND_TREE,

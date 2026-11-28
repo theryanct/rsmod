@@ -1,0 +1,387 @@
+# Generated from the OSRS Wiki page "Transcript:Getting Ahead" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to Gordon
+1	line	Player	Hello. Who are you?
+1	line	Gordon	The name's Gordon. Good day to you.
+1	line	Player	It's a nice farm you've got here.
+1	line	Gordon	Thank you. We built it ourselves.
+1	line	Player	Really? So you haven't been here long?
+1	line	Gordon	Nope. Not too long ago you couldn't safely travel around these parts. Too many lizardmen. But then some Hosidius explorers discovered how fertile this land was.
+1	line	Gordon	Lord Hosidius made a deal with Lord Shayzien and the lizardmen were cleared out to make room for the Farming Guild.
+1	line	Gordon	When we heard, we decided to come up here and start up our own farm.
+1	option	Need a hand with anything?
+2	line	Player	Need a hand with anything?
+2	cond	If the player does not have the requirements to start the quest:
+3	line	Gordon	I think we're good. Thank you for the offer though.
+3	action	end
+2	cond	If the player has the requirements to start the quest:
+3	line	Gordon	Well actually, there is something we've been having a problem with.
+3	line	Gordon	Recently, some strange beast has been stealing our livestock at night. The soldiers are too busy dealing with the lizardmen to help, so we haven't been able to stop it.
+3	line	Gordon	You look like you know your way around a weapon. If you can kill the beast and bring me its head as proof, I'll ensure you are compensated for your trouble.
+3	select	Start the Getting Ahead quest?
+3	option	Yes.
+4	line	Player	Bring back the head? I can do that. I'm good at killing things. Do you know where the beast is?
+4	line	Gordon	Well it can't be living too far from here, but I don't know exactly where. You might want to check with my wife, Mary. Perhaps she's seen something I haven't.
+4	line	Player	Very well. I'll return once I have the head of this beast!
+3	option	No.
+4	line	Player	Not something I can help with I'm afraid. Good luck though.
+4	line	Gordon	I understand. I'm sure someone else will be able to help.
+4	action	end
+1	option	Very nice. Well I hope it goes well for you.
+2	line	Player	Very nice. Well I hope it goes well for you.
+2	line	Gordon	Thank you friend. See you later.
+2	action	end
+0	section	Talking to Gordon again before starting the quest
+1	line	Player	Hello again. How are things?
+1	line	Gordon	Hello there. Not too bad, thanks.
+1	option	Need a hand with anything?
+2	line	Player	Need a hand with anything?
+2	cond	If the player does not have the requirements to start the quest:
+3	line	Gordon	I think we're good. Thank you for the offer though.
+3	action	end
+2	cond	If the player has the requirements to start the quest:
+3	line	Gordon	Well actually, there is something we've been having a problem with.
+3	line	Gordon	Recently, some strange beast has been stealing our livestock at night. The soldiers are too busy dealing with the lizardmen to help, so we haven't been able to stop it.
+3	line	Gordon	You look like you know your way around a weapon. If you can kill the beast and bring me its head as proof, I'll ensure you are compensated for your trouble.
+3	select	Start the Getting Ahead quest?
+3	option	Yes.
+4	line	Player	Bring back the head? I can do that. I'm good at killing things. Do you know where the beast is?
+4	line	Gordon	Well it can't be living too far from here, but I don't know exactly where. You might want to check with my wife, Mary. Perhaps she's seen something I haven't.
+4	line	Player	Very well. I'll return once I have the head of this beast!
+3	option	No.
+4	line	Player	Not something I can help with I'm afraid. Good luck though.
+4	line	Gordon	I understand. I'm sure someone else will be able to help.
+4	action	end
+1	option	Great to hear. All the best.
+2	line	Player	Great to hear. All the best.
+2	line	Gordon	Thank you friend. See you later.
+2	action	end
+0	section	Talking to Gordon again after starting the quest
+1	line	Gordon	Hello again. Any luck finding that beast?
+1	line	Player	I've been trying, but I haven't made much progress yet.
+1	line	Gordon	Well it can't be living too far from here. You might want to check with my wife, Mary. Perhaps she's seen something I haven't.
+1	action	end
+0	section	Talking to Mary
+1	line	Player	Hello there. Are you Mary?
+1	line	Mary	That's right. Who are you?
+1	line	Player	I'm {player}. Your husband told me that some beast has been causing you both trouble. I've agreed to kill it and bring back its head!
+1	line	Mary	Ah, that's good to hear. We've already lost a lot of livestock to it.
+1	line	Player	Well fear not. I'm sure I'll make short work of it. I do have one issue, however.
+1	line	Mary	What's that?
+1	line	Player	I don't yet know where to find this beast. I was wondering if you'd seen anything?
+1	line	Mary	I'm afraid not. It only ever comes in the night, so we haven't been able to get a proper look at it.
+1	line	Player	Hmm. This is a problem.
+1	line	Mary	Well let's see now...
+1	line	Mary	Oh! I have an idea! If this beast ended up getting coated in flour, it wouldn't be hard for you to track it back to its home.
+1	line	Player	But how would I get it coated in flour?
+1	line	Mary	Oh come on now! You're the adventurer here! Why don't you use your head?
+1	line	Player	Use my head? Wait... Did you just...?
+1	line	Mary	I don't know what you mean.
+1	line	Player	Hmm...
+1	action	end
+0	section	Talking to Mary again
+1	line	Mary	Hello there. How goes the headhunt?
+1	line	Player	I'm still trying to come up with a way to cover the beast in flour.
+1	line	Mary	Well I'm sure you'll think of something. Just remember to use your head.
+1	action	end
+0	section	Talking to the Sergeant
+1	line	Player	Hello. Do you know anything about the beast causing trouble around here?
+1	line	Sergeant	The farmers mentioned it. We haven't seen anything though. Our focus is on the lizardmen.
+1	line	Player	Surely you'd notice a big beast wondering around though?
+1	line	Sergeant	The farmers said it came at night. We're not on shift then.
+1	line	Player	But then who's guarding the farm at night?
+1	line	Sergeant	That's not our problem. We're just here to follow orders.
+1	line	Player	Fine. I'll find the beast myself.
+1	action	end
+0	section	Talking to Gordon after talking to Mary
+1	line	Gordon	Hello again. Any luck finding that beast?
+1	line	Player	I've been trying, but I haven't made much progress yet.
+1	line	Gordon	Anything you need from me?
+1	line	Player	Just one question. You said this beast has been going for your livestock. Which animals has it been targeting?
+1	line	Gordon	It's mainly been going for the cattle. I fixed up a new gate which has kept it out the past couple of nights. Not sure how long it will hold though.
+1	line	Player	I see. Thanks for the information.
+1	action	end
+0	section	Pouring the flour on the gate
+1	box	You pour some flour over the gate.
+1	line	Player	There we go. Anything that touches this gate will end up coated in flour. Now just to wait for the beast to come...
+1	box	You head off for the night and come back the next day.
+1	line	Player	Looks like the beast tried to get in again. Now to see if the flour plan worked...
+1	action	end
+0	section	Talking to Gordon after pouring the flour
+1	line	Gordon	Hello again. Any luck finding that beast?
+1	line	Player	Your wife gave me a good idea to help track it down. I'll have its head soon enough!
+1	line	Gordon	Great to hear!
+1	action	end
+0	section	Talking to Mary after pouring the flour
+1	line	Mary	Hello there. How goes the headhunt?
+1	line	Player	The flour idea worked great. Now I just need to find the beast's home.
+1	line	Mary	Well keep your head up. I'm sure you'll manage it.
+1	action	end
+0	section	Upon killing the Headless Beast
+1	line	Player	Ah... a headless beast. Can't really bring back the head if there isn't one. Let's hope Gordon is still happy to reward me...
+1	action	end
+0	section	Talking to Mary after killing the beast but before talking to Gordon
+1	line	Mary	Hello there. How goes the headhunt?
+1	line	Player	I've run into a little issue. The beast is dead, but it didn't have a head.
+1	line	Mary	Oh dear. You should probably talk to Gordon about this.
+1	action	end
+0	section	Talking to Gordon after killing the Headless Beast
+1	line	Gordon	Hello again. Any luck finding that beast?
+1	line	Player	The beast is dead!
+1	line	Gordon	Wonderful! Do you have the head?
+1	line	Player	Well that's the thing...
+1	line	Gordon	Is there a problem?
+1	line	Player	So it didn't actually have a head.
+1	line	Gordon	Didn't have a head?
+1	line	Player	Nope.
+1	line	Gordon	Like... at all?
+1	line	Player	Not even a proper stump.
+1	line	Gordon	Oh...
+1	line	Player	Sorry.
+1	line	Player	...
+1	line	Player	Can I get paid now?
+1	line	Gordon	I'm sorry, but no. I agreed to pay you for a head and you don't have one.
+1	line	Player	Well actually I do have a head. Quite a good looking one in fact. It was the beast that didn't.
+1	line	Gordon	That's not what I meant. Look, it's nothing personal, but I can't be seen paying someone if they didn't do the job.
+1	line	Player	But I did the job... How am I meant to bring you the head of a beast with no head?
+1	line	Gordon	Maybe you killed the wrong beast? It doesn't make sense that a headless beast would be taking cattle. How would it eat them?
+1	line	Player	I don't know...
+1	line	Gordon	Well if you manage to get hold of the beast's head, let me know. Until then, I can't pay you.
+1	line	Player	Okay...
+1	action	end
+0	section	Talking to Gordon again after killing the Headless Beast
+1	line	Gordon	Hello again. Do you have the head of that beast yet?
+1	line	Player	No...
+1	line	Gordon	Well I can't pay you if you don't have the head.
+1	line	Player	Okay...
+1	action	end
+0	section	Neilan's journal
+1	box	You show the journal to Gordon.
+1	line	Player	I don't have the head of the beast. I do have proof it was headless though.
+1	line	Gordon	Proof? This doesn't seem like proof to me. Anyone could have written this. Maybe you wrote it?
+1	line	Player	You assume I can read and write.
+1	line	Gordon	Can you?
+1	line	Player	Well.. yes. I promise I didn't write this though.
+1	line	Gordon	Well you would say that. I'm sorry but I'm not having this. Come back when you have the head of the beast.
+1	action	end
+0	section	Big bones
+1	box	You show the bones to Gordon.
+1	line	Player	I don't have the head of the beast. I do have the bones though!
+1	line	Gordon	Bones? I don't want bones! I want the beast's head!
+1	line	Player	Have you considered that you might be being too picky?
+1	line	Gordon	Of course not! Besides, these bones could be from anywhere.
+1	line	Player	Eugh! Fine!
+1	action	end
+0	section	Ensouled bear head
+1	box	You show the ensouled head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof!
+1	line	Gordon	Hmmm... I'm not so sure...
+1	line	Player	This is literally the head of a dead bear. What is wrong with you?
+1	line	Gordon	I can see this is the head of a bear! This beast we're dealing with is more than a mere bear though!
+1	line	Player	What? You said you'd never seen the beast! How do you know it wasn't just a bear?
+1	line	Gordon	We've dealt with bears before! This is clearly something more! Now, go and find the real beast!
+1	action	end
+0	section	Bearhead
+1	box	You show the fake bearhead to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof!
+1	line	Gordon	What? But this is clearly just part of a costume!
+1	line	Player	Err... No it's not...
+1	line	Gordon	It's hollow!
+1	line	Player	Maybe it didn't have any brains.
+1	line	Gordon	The only thing without brains is you! Come back once you have the actual head!
+1	action	end
+0	section	Talking to Mary after killing the beast
+1	line	Mary	Hello there. How goes the headhunt?
+1	line	Player	I've run into a little issue. The beast is dead, but it didn't have a head. Your husband says he won't pay me until I bring him one.
+1	line	Mary	Oh dear. I'm afraid Gordon can be quite picky sometimes.
+1	line	Player	But what do I do now? I can't bring him a head if there isn't one.
+1	line	Mary	Well, between you and me, Gordon is a good farmer but I wouldn't say he's a genius by any means. He also doesn't actually know what the beast looks like.
+1	line	Player	So I make him a fake head! Great idea!
+1	line	Mary	That's the spirit! I've tried my hand at clay modelling in the past. You can make all sorts of things. Just get some soft clay and a knife and I'm sure you'll be able to make a lovely head.
+1	line	Player	I'll give it a shot!
+1	action	end
+0	section	Talking to Mary again after killing the beast
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	Not yet.
+1	line	Mary	Keep at it! I've tried my hand at clay modelling in the past. You can make all sorts of things. Just get some soft clay and a knife and I'm sure you'll be able to make a lovely head.
+1	line	Player	I'll give it a shot!
+1	action	end
+0	section	Making the clay head
+1	box	You sculpt the clay into the shape of a head.
+1	line	Player	Wow!
+1	line	Player	It looks awful!
+1	line	Player	Still, maybe it will be enough to convince Gordon.
+1	action	end
+0	section	Talking to Mary after making the clay head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	I've made a head out of clay.
+1	line	Mary	Wonderful! You should show it to Gordon.
+1	action	end
+0	section	Using the clay head on Gordon
+1	box	You show the clay head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof!
+0	section	Talking to Gordon after making the clay head
+1	line	Gordon	Hello again. Do you have the head of that beast yet?
+1	box	You show the clay head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof!
+1	line	Gordon	Its head? This is its head?
+1	line	Player	That's right!
+1	line	Gordon	But this just looks like clay... It feels like clay...
+1	box	As you talk to Gordon, part of the clay falls off.
+1	line	Gordon	It's falling apart... What creature is this?
+1	line	Player	Ah yes! A good question! A very good question! A good question in need of a good answer I'm sure!
+1	line	Gordon	Okay... So what is the answer?
+1	line	Player	Yes... well... This is the head of a... a claybear!
+1	line	Gordon	Claybear? There's no such thing!
+1	line	Player	They're quite rare around here.
+1	line	Gordon	Quite rare because they don't exist! I'm no fool, this is clearly a pretend head! It doesn't even have any fur!
+1	line	Gordon	Come back once you have the real head of the beast!
+1	action	end
+0	section	Talking to Gordon again after making the clay head
+1	line	Gordon	Do you have the head of that beast yet? Or do you just have more clay?
+1	line	Player	I don't have it yet.
+1	line	Gordon	No head, no pay.
+1	action	end
+0	section	Talking to Mary after showing Gordon the clay head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	I made a head out of clay. Gordon didn't buy it though.
+1	line	Mary	Oh dear. Keep trying. I'm sure with a few tweaks you can make a head that will convince him.
+1	action	end
+0	section	Making the fur head
+1	box	You attach the fur to the clay head.
+1	line	Player	Wow!
+1	line	Player	It somehow looks even worse than before!
+1	line	Player	Gordon said it needed fur though. Maybe he'll be happy with this one.
+1	action	end
+0	section	Talking to Mary after making the fur head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	I made a head out of clay. Gordon didn't buy it though, so I've now added some fur.
+1	line	Mary	Wonderful! You should show it to Gordon.
+1	action	end
+0	section	Using the fur head on Gordon
+1	box	You show the fur head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof! For real this time!
+0	section	Talking to Gordon after making the fur head
+1	line	Gordon	Do you have the head of that beast yet? Or do you just have more clay?
+1	box	You show the fur head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof! For real this time!
+1	line	Gordon	Well there's fur this time. It does look like an actual head, I have to admit.
+1	action	It really doesn't, but you let Gordon continue.
+1	line	Gordon	Yes, I think this is the head of a beast.
+1	line	Player	Wonderful! So about my payment?
+1	line	Gordon	Well hang on just a moment...
+1	line	Player	Uh oh.
+1	line	Gordon	Where's the blood? If this is a fresh kill, the head should have blood on.
+1	line	Player	Ah... Yes... Well the thing about this head is that this is the head of a...
+1	line	Gordon	Yes?
+1	line	Player	A... bloodbear?
+1	line	Gordon	Bloodbear? What's a bloodbear?
+1	line	Player	It's a rare type of bear. One that doesn't have any blood.
+1	line	Gordon	It's called a bloodbear but it doesn't have blood? Did a fool name it?
+1	line	Player	Well actually the one that named it is quite the intellectual... Very cool as well... not that I know them or anything.
+1	line	Gordon	You must take me for an idiot! This is some head you bought from a taxidermist or something. It's clearly not a fresh kill!
+1	line	Gordon	Come back once you have the real head!
+1	line	Player	*sigh*
+1	action	end
+0	section	Talking to Gordon again after making the fur head
+1	line	Gordon	Do you have the head of that beast yet? Or do you just have more fakes?
+1	line	Player	I don't have it yet.
+1	line	Gordon	No head, no reward. Come back once you have it!
+1	action	end
+0	section	Talking to Mary after showing Gordon the fur head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	Gordon didn't buy the clay head so I tried adding some fur. He still wasn't convinced though.
+1	line	Mary	Well I'm sure you're not far off. Keep it up!
+1	action	end
+0	section	Using a vial of blood or a blood pint on the fur head
+1	box	That would be a terrible waste. Perhaps there's something better you can use.
+1	action	end
+0	section	Making the bloody head
+1	box	You dye the fur head red.
+1	line	Player	Great! Now it looks bloody!
+1	line	Player	Well... it doesn't. It actually looks like someone tried to dye a fur covered clay monstrosity red.
+1	line	Player	Still, maybe Gordon won't notice...
+1	action	end
+0	section	Talking to Mary after making the bloody head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	Gordon didn't buy the clay head so I tried adding some fur. He still wasn't convinced so I've dyed it red to make it look bloody.
+1	line	Mary	Wonderful! I'm sure this will convince him. You should show him what you've got.
+1	action	end
+0	section	Using the bloody head on Gordon
+1	box	You show the bloody head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof... Again!
+0	section	Talking to Gordon after making the bloody head
+1	line	Gordon	Do you have the head of that beast yet? Or do you just have more fakes?
+1	box	You show the bloody head to Gordon.
+1	line	Player	I have bested the beast and I bring you its head as proof... Again!
+1	line	Gordon	Hmm...
+1	line	Player	Hmm?
+1	line	Gordon	Hmm...
+1	line	Player	Well?
+1	line	Gordon	It's...
+1	line	Player	Yes?
+1	line	Gordon	It's wonderful! This is clearly the head of the beast! Well done adventurer!
+1	line	Player	Hooray!
+1	line	Gordon	There's just one thing though...
+1	line	Player	Oh for the love of-
+1	line	Gordon	A head like this deserves a place of honour! My friend, please could you mount it in our home?
+1	line	Player	Eugh. Fine.
+1	action	end
+0	section	Talking to Gordon again after making the bloody head
+1	line	Gordon	Have you mounted the head of the beast in our home yet?
+1	line	Player	Not yet.
+1	line	Gordon	Well let me know once you have and I'll give you your reward.
+1	action	end
+0	section	Talking to Mary after showing Gordon the bloody head
+1	line	Mary	Hello there. Any luck with that head?
+1	line	Player	Yes. Gordon was happy with the head I made. In fact, he was so happy that he wants it mounting in your home.
+1	line	Mary	Oh dear. Well if it keeps him happy, I suppose. There should be a good spot near the stairs.
+1	action	end
+0	section	Mounting the bloody head
+1	line	Player	What a work of art! I've really outdone myself this time! I guess I should let Gordon know.
+1	action	end
+0	section	Talking to Mary after mounting the bloody head
+1	line	Mary	Well I have to say that mounted head looks awful.
+1	line	Player	Sorry.
+1	line	Mary	Not to worry. If it keeps Gordon happy, so be it. Anyway, you should go and let him know it's all done.
+1	action	end
+0	section	Talking to Gordon after mounting the bloody head
+1	line	Gordon	Have you mounted the head of the beast yet?
+1	line	Player	It's all done.
+1	line	Gordon	That's great! I'd say it's about time for your reward. But first, let's have a look at this head...
+
+1	action	end
+# Post-quest and standard dialogue from "Transcript:Gordon" and "Transcript:Mary (Kebos Lowlands)".
+0	section	Talking to Gordon after the quest
+1	cond	If the player received a 3,000 coins reward from the quest:
+2	line	Gordon	Hello again. Thank you for dealing with that beast.
+1	cond	If the player didn't receive a 3,000 coins reward from the quest:
+2	line	Gordon	Hello again. Thank you for dealing with that beast. As promised, here's your reward.
+1	line	Player	It's my pleasure.
+1	action	end
+0	section	Talking to Mary before the quest
+1	line	Player	Hello there. Is this your home?
+1	line	Mary	It is. What brings you here?
+1	line	Player	I'm just looking around.
+1	line	Mary	Well you won't find anything too exciting here I'm afraid. Just farming.
+1	line	Player	Well you have fun with it.
+1	action	end
+0	section	Talking to Mary after the quest
+1	line	Mary	Well I have to say that mounted head looks awful.
+1	line	Player	Sorry.
+1	line	Mary	Not to worry. If it keeps Gordon happy, so be it. Anyway, thank you for keeping our farm safe. With the beast dealt with, I've been able to get back to tanning again.
+1	option	Could you tan something for me?
+2	line	Player	Could you tan something for me?
+2	line	Mary	Of course.
+2	action	tan
+1	option	Happy to have helped. All the best.
+2	line	Player	Happy to have helped. All the best.
+2	action	end
+0	section	Talking to Mary after unlocking tanning
+1	line	Mary	Good to see you again! Anything I can do for you?
+1	option	Could you tan something for me?
+2	line	Player	Could you tan something for me?
+2	line	Mary	Of course.
+2	action	tan
+1	option	I'm good.
+2	line	Player	I'm good.
+2	action	end
