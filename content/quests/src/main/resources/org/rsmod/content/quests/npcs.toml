@@ -1201,3 +1201,17 @@ coords = '0_44_157_11_34'
 [[spawn]]
 npc = 'deadmans_bartender'
 coords = '0_43_49_42_20'
+
+# Scorpion Catcher: Thormac's lesser Kharid scorpions (Wiki): Taverley Dungeon's secret room,
+# the Barbarian Outpost building, the Edgeville Monastery's upper floor.
+[[spawn]]
+npc = 'questscorpiona'
+coords = '0_44_153_61_4'
+
+[[spawn]]
+npc = 'questscorpionb'
+coords = '0_39_55_57_50'
+
+[[spawn]]
+npc = 'questscorpionc'
+coords = '1_47_54_50_32'

@@ -51,6 +51,7 @@ import org.rsmod.content.quests.ragandboneman.RagAndBoneManI.Companion.RAG_AND_B
 import org.rsmod.content.quests.restlessghost.RestlessGhost.Companion.RESTLESS_GHOST
 import org.rsmod.content.quests.romeojuliet.RomeoAndJuliet.Companion.ROMEO_AND_JULIET
 import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTERIES
+import org.rsmod.content.quests.scorpioncatcher.ScorpionCatcher.Companion.SCORPION_CATCHER
 import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
@@ -120,6 +121,7 @@ public object BuiltQuests {
             RESTLESS_GHOST,
             ROMEO_AND_JULIET,
             RUNE_MYSTERIES,
+            SCORPION_CATCHER,
             SEA_SLUG,
             SHEEP_HERDER,
             SHEEP_SHEARER,
