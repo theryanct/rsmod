@@ -1,0 +1,23 @@
+# Generated from the OSRS Wiki page "Transcript:Vigroy" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+0	section	If the player hasn't completed the Elite Karamja Diary
+1	line	Vigroy	I am offering a cart ride to Brimhaven, if you're interested. It will cost [amount] coins. Is that okay?
+1	select	Select an Option
+1	option	Yes please, I'd like to go to Brimhaven.
+2	line	Player	Yes please, I'd like to go to Brimhaven.
+2	cond	If the player has enough coins:
+3	box	You hop into the cart and the driver urges the horses on. You take a taxing journey through the jungle to Brimhaven. You feel tired from the journey, but at least you didn't have to walk all that distance.
+3	action	end
+2	cond	If the player doesn't have enough coins:
+3	line	Vigroy	Sorry, but it looks as if you don't have enough money. Come and see me when you have enough for the ride.
+3	action	end
+1	option	No thanks.
+2	line	Player	No thanks.
+2	line	Vigroy	Okay, Bwana, let me know if you change your mind.
+2	action	end
+0	section	If the player has completed the Elite Karamja Diary
+1	line	Vigroy	I am offering a cart ride to Brimhaven, if you're interested. For you, it's free.
+1	action	above
+0	section	Talking to Vigroy before completing Shilo Village
+1	line	Vigroy	Sorry, I'm busy. I've got to get out of here! This place is swarming with zombies.
+1	action	end

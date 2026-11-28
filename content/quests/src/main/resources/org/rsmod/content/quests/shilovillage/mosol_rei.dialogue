@@ -1,0 +1,14 @@
+# Generated from the OSRS Wiki page "Transcript:Mosol Rei" by tools/quests/transcript_to_dialogue.py
+0	section	Before Jungle Potion
+1	line	Mosol Rei	Sorry Bwana, I cannot help you at this time. Go and talk to Trufitus at Tai Bwo Wannai, I believe he needs some help.
+1	action	end
+0	section	Standard dialogue after Shilo Village
+1	line	Player	Greetings!
+1	line	Mosol Rei	Greetings Bwana! We've removed the threat of Rashiliyia and though there are still some random outbreaks of undead activity we are more than able to deal with it.
+1	line	Mosol Rei	You're welcome to enter the village now Bwana, shall I show you the way?
+1	select	You can now enter Shilo Village.
+1	option	Yes, Ok, I'll go into the village!
+2	box	Mosol leads you into the village.
+2	box	Mosol leaves you by the gate and walks back out into the jungle.
+1	option	I think I'll see it some other time.
+2	box	You decide not to visit the village.

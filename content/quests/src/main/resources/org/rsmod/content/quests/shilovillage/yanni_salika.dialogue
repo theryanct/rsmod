@@ -1,0 +1,78 @@
+# Generated from the OSRS Wiki page "Transcript:Yanni Salika" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Player	Hello there!
+1	line	Yanni Salika	Greetings Bwana! My name is Yanni and I buy and sell antiques.
+1	option	Tell me about this antiques business.
+2	line	Player	Tell me about this antiques business.
+2	line	Yanni Salika	I buy antiques and other interesting items. If you have any interesting items that you might want to sell me, please let me see them and I'll offer you a fair price.
+2	line	Yanni Salika	Would you like me to have a look at your items and give you a quote?
+2	option	Yes please!
+3	line	Player	Yes please!
+3	cond	If the player doesn't have an item Yanni can buy:
+4	line	Yanni Salika	Sorry Bwana, you have nothing I am interested in.
+4	action	end
+3	cond	If the player has the Bone key in their inventory:
+4	line	Yanni Salika	I'll give you 100 coins for the Bone Key...
+3	cond	If the player has the Stone-plaque in their inventory:
+4	line	Yanni Salika	I'll give you 100 coins for the Stone Plaque...
+3	cond	If the player has the Tattered scroll in their inventory:
+4	line	Yanni Salika	I'll give you 100 coins for the tattered scroll...
+3	cond	If the player has the Crumpled scroll in their inventory:
+4	line	Yanni Salika	I'll give you 100 coins for the crumpled scroll...
+3	cond	If the player has the Locating crystal in their inventory:
+4	line	Yanni Salika	I'll give you 500 coins for your locating crystal...
+3	cond	If the player has the Beads of the Dead in their inventory:
+4	line	Yanni Salika	I'll give you 1000 coins for your 'Beads of the Dead'...
+3	cond	If the player has only one of the above items:
+4	line	Yanni Salika	And that's the only item I am interested in. If you want to sell me that item, simply show it to me.
+3	cond	If the player has more than one of the above items:
+4	line	Yanni Salika	Those are the items I am interested in Bwana. If you want to sell me those items, simply show them to me.
+3	action	end
+2	option	Maybe some other time?
+3	line	Player	Maybe some other time?
+3	line	Yanni Salika	Sure thing. Have a nice day Bwana.
+3	action	end
+1	option	Do you have any interesting items for sale?
+2	line	Player	Do you have any interesting items for sale?
+2	cond	If the player already has the Beads of the Dead in their inventory or bank:
+3	line	Yanni Salika	Sorry, [Sir/Madam], I have nothing that you need.
+3	action	end
+2	cond	If the player does not have the Beads of the Dead:
+1	option	Hmm, sorry, not interested.
+2	line	Player	Hmm, sorry, not interested.
+2	line	Yanni Salika	Fair enough, come back if you change your mind.
+2	action	end
+0	section	Using antiques on Yanni
+0	section	Bone key
+1	line	Yanni Salika	That's a great bone key. Here's 100 coins for it.
+1	action	end
+0	section	Crumpled scroll
+1	line	Yanni Salika	That's a great crumpled scroll. Here's 100 coins for it.
+1	action	end
+0	section	Tattered scroll
+1	line	Yanni Salika	That's a great tattered scroll. Here's 100 coins for it.
+1	action	end
+0	section	Bervirius notes
+1	line	Yanni Salika	That's a great copy of Bervirius notes. Here's 100 coins for it.
+1	action	end
+0	section	Locating crystal
+1	line	Yanni Salika	That's a great Locating Crystal. Here's 500 coins for it.
+1	action	end
+0	section	Stone-plaque
+1	line	Yanni Salika	That's a great stone-plaque. Here's 100 coins for it.
+1	action	end
+0	section	Beads of the Dead
+1	line	Yanni Salika	Impressive necklace there, here's 1000 coins for it.
+1	action	end
+0	section	Black prism
+1	line	Yanni Salika	Ah you'd like to sell this to me would you? I can offer you 5000 coins!
+1	select	Sell the prism for 5000 coins?
+1	option	Yes, I'll sell it for 5000
+2	line	Player	Yes, I'll sell it for 5000 coins.
+2	line	Yanni Salika	Very well my friend, let me count out your reward.
+2	line	Yanni Salika	Thanks!
+2	action	end
+1	option	No, I think I'll hold on it a while longer yet.
+2	line	Player	No, I think I'll hold on it a while longer yet.
+2	line	Yanni Salika	Very well my friend, come back if you change your mind.
+2	action	end

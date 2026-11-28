@@ -11,12 +11,12 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.onHeldOpLabel
 import org.rsmod.content.quests.framework.onLocOpLabel
-import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -53,7 +53,8 @@ constructor(
     private val dialogue by lazy { QuestDialogue.load(JunglePotion::class.java, "jungle_potion") }
 
     override fun ScriptContext.startup() {
-        onNpcOpLabel(npcTypes, JpNpcs.trufitus, "Talk-to") { talkTrufitus(it) }
+        // Talk-to is shared through QuestTalk (Shilo Village asks Trufitus too).
+        with(QuestTalk) { default(npcTypes, JpNpcs.trufitus) { talkTrufitus(it) } }
         for ((index, herb) in HERBS.withIndex()) {
             onLocOpLabel(locTypes, herb.full(), "Search") { searchHerb(it, index) }
             onHeldOpLabel(objTypes, herb.grimy(), "Clean") { clean(herb) }
