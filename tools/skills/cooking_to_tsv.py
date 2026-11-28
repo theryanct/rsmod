@@ -12,14 +12,17 @@ Covers:
            water/flour/milk containers handed back.
 
 Skipped on purpose (see the log): gnome cooking, Chambers of Xeric, Mort Myre/quest specials,
-cocktails, brewing, churning, wine fermentation, karambwan, sinew/soda ash and anything without a
+cocktails, brewing, churning, Zamorak wine, poison karambwan, sinew/soda ash and anything without a
 burn chart or object symbol.
 
 Output (tab separated):
   heat    <raw> <cooked> <burnt|-> <level> <xp> <fire 0|1> <low> <high>
           <lumbridge_low|-> <lumbridge_high|-> <gauntlets_low|-> <gauntlets_high|->
           <hosidius_low|-> <hosidius_high|->
+          <returns|-> (container handed back, e.g. cake tin)
   combine <first> <second> <product> <level> <xp> <first_leftover|-> <second_leftover|->
+  multi   <product> <level> <xp> <base> <ingredient> <leftover|-> [<ingredient> <leftover|-> ...]
+  ferment <unfermented> <fermented> <failed> <level> <xp> <low> <high>
 """
 import json, os, re, sys, time, urllib.parse, urllib.request
 
@@ -47,7 +50,13 @@ def norm(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+# Wiki "Item#Version" names (recipe materials/outputs) -> obj id of that version.
+VERSIONS = {"Incomplete stew#Potato": 1997, "Incomplete stew#Meat": 1999}
+
+
 def obj_name(item):
+    if item in VERSIONS:
+        return obj_sym.get(VERSIONS[item])
     ids = [i for i in item_ids.get(item, []) if i in obj_sym]
     if not ids:
         return None
@@ -60,7 +69,7 @@ SKIP = re.compile(
     r"crunch|batta|gnomebowl|bowl \(|half baked|half made|unfinished|chambers of xeric|pysk|suphi|"
     r"leckish|brawk|mycil|roqed|kyren|undead|cocktail|drunk dragon|saturday|blurberry|"
     r"wizard blizzard|short green|fruit blast|pineapple punch|chocolate saturday|soda ash|"
-    r"barley malt|sinew|karambwan|swamp paste|easter|guide cake|nettle|damiana|mystery meat|"
+    r"barley malt|sinew|karambwanji|swamp paste|easter|guide cake|nettle|damiana|mystery meat|"
     r"impaler|ugthanki|kebab|spider|chompy|toad|worm|mud pie|thin snail|lean snail|fat snail|"
     r"pitta|jubbly|giant crab|red crab|moss lizard|bream|paddlefish|larupia|graahk|kyatt|"
     r"pyre fox|sunlight antelope|moonlight antelope|dashing kebbit|barb-tailed|wild kebbit|"
@@ -73,6 +82,13 @@ BURNT_FISH = {"Anchovies": 323, "Sardine": 369, "Herring": 357, "Mackerel": 357,
               "Salmon": 343, "Pike": 343, "Cod": 343, "Giant carp": 343, "Tuna": 367, "Bass": 367}
 # Range only: OSRS refuses these on a fire.
 RANGE_ONLY = re.compile(r"pie|pizza|cake|bread|potato", re.I)
+# Alternative heat outputs we don't model (poison karambwan needs the quest's "thin" cook).
+NOT_COOKED = {"Poison karambwan"}
+KEEPS_CONTAINER = {"Unfermented wine", "Incomplete stew#Meat", "Incomplete stew#Potato"}
+# Heat recipes that hand a container back (baked or burnt).
+HEAT_RETURNS = {"Cake": "Cake tin"}
+# 3+ ingredient recipes: product -> base item the others are used on.
+MULTI = {"Uncooked cake": "Cake tin"}
 LEFTOVER = {
     "Pot of flour": "Pot",
     "Bucket of water": "Bucket",
@@ -141,7 +157,8 @@ for raw, rs in sorted(by_raw.items()):
     if SKIP.search(raw):
         log.append(f"skip-special\t{raw}")
         continue
-    cooked = [r for r in rs if not BURNT.search(r["output"]["name"]) and not SKIP.search(r["output"]["name"])]
+    cooked = [r for r in rs if not BURNT.search(r["output"]["name"]) and not SKIP.search(r["output"]["name"])
+              and r["output"]["name"] not in NOT_COOKED]
     burnt = [r for r in rs if BURNT.search(r["output"]["name"])]
     names = sorted({r["output"]["name"] for r in cooked})
     if len(names) != 1:
@@ -188,6 +205,7 @@ for raw, rs in sorted(by_raw.items()):
                     lumb[0] if lumb else "-", lumb[1] if lumb else "-",
                     gaunt[0] if gaunt else "-", gaunt[1] if gaunt else "-",
                     hos[0] if hos else "-", hos[1] if hos else "-",
+                    obj_name(HEAT_RETURNS[names[0]]) if names[0] in HEAT_RETURNS else "-",
                 ],
             )
         )
@@ -208,7 +226,7 @@ for r in recipes + extra:
         continue
     a, b = mats[0]["name"], mats[1]["name"]
     product = r["output"]["name"]
-    if SKIP.search(product) or SKIP.search(a) or SKIP.search(b) or "wine" in product.lower():
+    if SKIP.search(product) or SKIP.search(a) or SKIP.search(b) or "zamorak" in (a + product).lower()             or product in ("Jug of wine", "Jug of bad wine"):
         log.append(f"skip-combine\t{a} + {b} -> {product}")
         continue
     lx = level_xp(r) or (1, 0.0)
@@ -220,9 +238,36 @@ for r in recipes + extra:
     if key in seen:
         continue
     seen.add(key)
-    la = obj_name(LEFTOVER[a]) if a in LEFTOVER else None
-    lb = obj_name(LEFTOVER[b]) if b in LEFTOVER else None
+    # The container stays with the product for wine and stews (no empty jug/bowl back).
+    keeps = product in KEEPS_CONTAINER
+    la = obj_name(LEFTOVER[a]) if a in LEFTOVER and not keeps else None
+    lb = obj_name(LEFTOVER[b]) if b in LEFTOVER and not keeps else None
     rows.append("\t".join(map(str, ["combine", oa, ob, op, lx[0], lx[1], la or "-", lb or "-"])))
+
+# --- multi-ingredient recipes (cake) -------------------------------------------------------
+for r in recipes:
+    product = (r.get("output") or {}).get("name") if isinstance(r.get("output"), dict) else None
+    if product not in MULTI or (r.get("facilities") or ""):
+        continue
+    base = MULTI[product]
+    lx = level_xp(r) or (1, 0.0)
+    others = [m["name"] for m in r.get("materials") or [] if m["name"] != base]
+    names = [obj_name(n) for n in [product, base] + others]
+    if None in names:
+        log.append(f"skip-no-symbol	multi	{product}")
+        continue
+    cols = ["multi", names[0], lx[0], lx[1], names[1]]
+    for n, o in zip(others, names[2:]):
+        cols += [o, obj_name(LEFTOVER[n]) if n in LEFTOVER else "-"]
+    rows.append("	".join(map(str, cols)))
+
+# --- wine fermentation (Jug of wine page: 12 s after the last jug, chart 48/352 from 35) ----
+ferment = ["ferment", obj_name("Unfermented wine"), obj_name("Jug of wine"), obj_name("Jug of bad wine")]
+wine = charts("Jug of wine").get("jug of wine")
+if None not in ferment and wine:
+    rows.append("	".join(map(str, ferment + [35, 200.0, wine[0], wine[1]])))
+else:
+    log.append("skip-ferment	Jug of wine")
 
 # Minigame/quest/servery copies and non-cooking "recipes" that slip through by display name.
 JUNK_SYM = re.compile(
