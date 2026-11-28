@@ -26,7 +26,8 @@ internal object StandardOverlays {
             GameframeOverlay(interfaces.wornitems, components.toplevel_target_side4),
             GameframeOverlay(interfaces.prayerbook, components.toplevel_target_side5),
             GameframeOverlay(interfaces.magic_spellbook, components.toplevel_target_side6),
-            GameframeOverlay(interfaces.friends, components.toplevel_target_side9),
+            // Friends tab -> the tool belt (SideTabs).
+            GameframeOverlay(interfaces.tool_belt_side, components.toplevel_target_side9),
             GameframeOverlay(interfaces.account, components.toplevel_target_side8),
             GameframeOverlay(interfaces.logout, components.toplevel_target_side10),
             GameframeOverlay(interfaces.settings_side, components.toplevel_target_side11),

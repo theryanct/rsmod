@@ -22,6 +22,8 @@ internal object ToolBeltComponents : ComponentReferences() {
     val fill = find("tackle_box_main:fill")
     val empty = find("tackle_box_main:empty")
     val side_items = find("tournament_supplies_side:items")
+    /** The side tab (in place of Friends): a plain item grid drawn by interface_inv_init. */
+    val tab_items = find("tackle_box_side:items")
 
     /** Withdraw-quantity buttons: tools are single, so these do nothing. */
     val quantity_buttons =
@@ -36,6 +38,9 @@ internal object ToolBeltComponents : ComponentReferences() {
 internal object ToolBeltInvs : InvReferences() {
     /** The client inv the tackle box window draws; the belt is sent under this id. */
     val display = find("tackle_box")
+
+    /** The client inv the side tab draws (33 slots; the Huntsman's kit isn't built). */
+    val tab_display = find("huntsmans_kit")
 }
 
 /** Materials that get a tool op so a belted tool can be used on them (no click on the tool). */

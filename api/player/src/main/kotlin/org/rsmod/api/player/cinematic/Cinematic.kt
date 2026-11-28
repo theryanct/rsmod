@@ -110,6 +110,7 @@ public object Cinematic {
         player.ifCloseOverlay(interfaces.prayerbook, eventBus)
         player.ifCloseOverlay(interfaces.magic_spellbook, eventBus)
         player.ifCloseOverlay(interfaces.friends, eventBus)
+        player.ifCloseOverlay(interfaces.tool_belt_side, eventBus)
         player.ifCloseOverlay(interfaces.account, eventBus)
         player.ifCloseOverlay(interfaces.settings_side, eventBus)
         player.ifCloseOverlay(interfaces.emote, eventBus)
@@ -132,7 +133,7 @@ public object Cinematic {
         player.ifCloseOverlay(interfaces.prayerbook, eventBus)
         player.ifCloseOverlay(interfaces.magic_spellbook, eventBus)
         player.ifOpenSub(
-            interfaces.friends,
+            interfaces.tool_belt_side,
             components.toplevel_target_side9,
             IfSubType.Overlay,
             eventBus,
@@ -211,7 +212,7 @@ public object Cinematic {
         )
 
         player.ifOpenSub(
-            interfaces.friends,
+            interfaces.tool_belt_side,
             components.toplevel_target_side9,
             IfSubType.Overlay,
             eventBus,

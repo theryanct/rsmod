@@ -2,15 +2,21 @@ package org.rsmod.content.interfaces.toolbelt
 
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
+import org.rsmod.api.config.refs.interfaces
 import org.rsmod.api.config.refs.invs
 import org.rsmod.api.config.refs.modlevels
 import org.rsmod.api.player.events.ToolBeltOpenRequest
+import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.output.UpdateInventory
+import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
+import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.script.onCommand
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onIfModalButton
+import org.rsmod.api.script.onIfOpen
+import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.type.symbols.name.NameMapping
 import org.rsmod.game.entity.Player
 import org.rsmod.game.inv.InvObj
@@ -34,6 +40,9 @@ private val logger = InlineLogger()
  * - Clicking a belted tool (any Withdraw op) or "Empty" takes tools back into the inventory.
  * - Materials get tool ops ([ToolMaterialEdits]) so knife/tinderbox/chisel/needle/pipe/pestle
  *   work from the belt too.
+ * - The side tab in place of Friends (`interfaces.tool_belt_side`, gameframe SideTabs) always
+ *   shows the belted tools, packed to the front (the panel fits 28; the belt holds 37). Click one
+ *   to take it back; deposit through the window (inventory tab "Tool belt" or `::toolbelt`).
  */
 class ToolBeltScript
 @Inject
@@ -78,6 +87,58 @@ constructor(
         for (button in comps.quantity_buttons) {
             onIfModalButton(button) {}
         }
+
+        onIfOpen(interfaces.tool_belt_side) { player.drawTab() }
+        onIfOverlayButton(comps.tab_items) {
+            val beltSlot = player.tabSlots().getOrNull(comsub) ?: return@onIfOverlayButton
+            when (op) {
+                IfButtonOp.Op10 -> {
+                    val obj = player.beltOrNull()?.get(beltSlot) ?: return@onIfOverlayButton
+                    player.mes(objTypes[obj].desc)
+                }
+                IfButtonOp.Op1 ->
+                    protectedAccess.launch(player, busyText = "You're busy right now.") {
+                        withdraw(beltSlot, quiet = false)
+                    }
+                else -> Unit
+            }
+        }
+    }
+
+    /** Read-only: `null` until something is belted (opening the window creates it). */
+    private fun Player.beltOrNull(): Inventory? = invMap[invs.toolbelt]
+
+    /** The belt slots shown in the tab, in tab order (non-empty slots, packed to the front). */
+    private fun Player.tabSlots(): List<Int> {
+        val belt = beltOrNull() ?: return emptyList()
+        return belt.indices.filter { belt[it] != null }.take(TAB_SLOTS)
+    }
+
+    private fun Player.drawTab() {
+        sendTab()
+        ClientScripts.interfaceInvInit(
+            player = this,
+            inv = tabDisplay(),
+            target = ToolBeltComponents.tab_items,
+            objRowCount = 4,
+            objColCount = 7,
+            op1 = "Withdraw<col=ff9040>",
+        )
+        ifSetEvents(ToolBeltComponents.tab_items, 0 until TAB_SLOTS, IfEvent.Op1, IfEvent.Op10)
+    }
+
+    private fun Player.tabDisplay(): Inventory {
+        val display = Inventory.create(invTypes[ToolBeltInvs.tab_display])
+        val belt = beltOrNull() ?: return display
+        for ((i, slot) in tabSlots().withIndex()) {
+            display[i] = belt[slot]
+        }
+        return display
+    }
+
+    /** Refreshes the side tab's client inv (call after any belt change). */
+    private fun Player.sendTab() {
+        UpdateInventory.updateInvFull(this, tabDisplay())
     }
 
     private fun Player.launchBelt() {
@@ -120,6 +181,7 @@ constructor(
             display[slot] = belt[slot]
         }
         UpdateInventory.updateInvFull(player, display)
+        player.sendTab()
     }
 
     /** @return `true` if the obj in [slot] went onto the belt. */
@@ -217,5 +279,8 @@ constructor(
     private companion object {
         /** Client script `steelborder(component, title)`. */
         private const val STEELBORDER = 227
+
+        /** The side tab's grid: 4 x 7, like the inventory. */
+        private const val TAB_SLOTS = 28
     }
 }

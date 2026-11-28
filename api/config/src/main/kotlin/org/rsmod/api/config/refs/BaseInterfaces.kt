@@ -40,6 +40,8 @@ object BaseInterfaces : InterfaceReferences() {
     // No hash: HomeTeleportEdits adds an op to one of its components (changes the hash).
     val magic_spellbook = find("magic_spellbook")
     val friends = find("friends", 149140580)
+    /** The tool belt side tab, opened on side9 in place of [friends] (gameframe SideTabs). */
+    val tool_belt_side = find("tackle_box_side")
     val account = find("account", 9223372036126485430)
     val logout = find("logout", 2003439444)
     val emote = find("emote", 1866350332)

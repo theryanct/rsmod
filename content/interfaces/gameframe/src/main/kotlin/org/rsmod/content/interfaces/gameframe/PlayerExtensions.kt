@@ -14,6 +14,7 @@ internal fun Player.openGameframe(gameframe: Gameframe, eventBus: EventBus) {
     for (overlay in gameframe.overlays) {
         ifOpenSub(overlay.interf, overlay.target, IfSubType.Overlay, eventBus)
     }
+    SideTabs.send(this, gameframe.topLevel)
 }
 
 internal fun Player.moveGameframe(from: Gameframe, dest: Gameframe, eventBus: EventBus) {
@@ -30,6 +31,7 @@ internal fun Player.moveGameframe(from: Gameframe, dest: Gameframe, eventBus: Ev
                 ?: error("Expected move target in dest mapping: '${moveComponent.internalName}'")
         ifMoveSub(sourceComponent, destComponent, target, eventBus)
     }
+    SideTabs.send(this, dest.topLevel)
 }
 
 private fun UserInterfaceMap.setGameframe(mappings: Map<Component, Component>) {
