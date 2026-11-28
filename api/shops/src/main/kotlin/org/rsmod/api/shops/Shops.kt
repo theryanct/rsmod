@@ -96,7 +96,7 @@ constructor(private val invTypes: InvTypeList, private val eventBus: EventBus) {
             transparency = -1,
             eventBus = eventBus,
         )
-        player.ifSetText(ShopComponents.shop_subtext, subtext)
+        // Rev 243 removed the shop subtext component (shopmain:desktop_instructions).
         shopMainInit(player, shopInv.type, title)
 
         player.ifSetEvents(

@@ -144,7 +144,7 @@ internal object LevelUpJingles : JingleReferences() {
         )
 }
 
-/** Skill icon layers in the level-up display (hunter and sailing have no named layer). */
+/** Skill icon layers in the level-up display. */
 internal object LevelUpIcons : ComponentReferences() {
     private val bySkill: Map<String, ComponentType> =
         mapOf(
@@ -159,12 +159,14 @@ internal object LevelUpIcons : ComponentReferences() {
             "fishing" to find("levelup_display:fishing"),
             "fletching" to find("levelup_display:fletching"),
             "herblore" to find("levelup_display:herblore"),
+            "hunter" to find("levelup_display:hunter"),
             "hitpoints" to find("levelup_display:hitpoints"),
             "magic" to find("levelup_display:magic"),
             "mining" to find("levelup_display:mining"),
             "prayer" to find("levelup_display:prayer"),
-            "ranged" to find("levelup_display:ranging"),
-            "runecrafting" to find("levelup_display:runecrafting"),
+            "ranged" to find("levelup_display:ranged"),
+            "runecrafting" to find("levelup_display:runecraft"),
+            "sailing" to find("levelup_display:sailing"),
             "slayer" to find("levelup_display:slayer"),
             "smithing" to find("levelup_display:smithing"),
             "strength" to find("levelup_display:strength"),

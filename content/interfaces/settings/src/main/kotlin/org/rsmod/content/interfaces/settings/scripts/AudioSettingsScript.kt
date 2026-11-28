@@ -28,7 +28,6 @@ class AudioSettingsScript @Inject constructor(private val musicPlayer: MusicPlay
     private var Player.optionAreaSounds by intVarp(varps.option_areasounds)
     private var Player.optionAreaSoundsSaved by intVarBit(varbits.option_areasounds_saved)
 
-    private var Player.unlockMessage by boolVarBit(varbits.music_unlock_text_toggle)
 
     override fun ScriptContext.startup() {
         onIfOverlayButton(setting_components.master_icon) { player.toggleMaster() }
@@ -51,7 +50,6 @@ class AudioSettingsScript @Inject constructor(private val musicPlayer: MusicPlay
             player.selectAreaSoundSlider(comsub)
         }
 
-        onIfOverlayButton(setting_components.music_toggle) { player.toggleUnlockMessage() }
     }
 
     private fun Player.toggleMaster() {
@@ -148,10 +146,6 @@ class AudioSettingsScript @Inject constructor(private val musicPlayer: MusicPlay
             optionAreaSoundsSaved = optionAreaSounds
         }
         optionAreaSounds = volume
-    }
-
-    private fun Player.toggleUnlockMessage() {
-        unlockMessage = !unlockMessage
     }
 
     private fun Player.enableMusic() {

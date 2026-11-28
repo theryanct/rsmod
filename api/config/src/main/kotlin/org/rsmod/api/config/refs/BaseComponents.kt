@@ -14,7 +14,7 @@ object BaseComponents : ComponentReferences() {
     val hp_hud_hp = find("hpbar_hud:hp", 7938046680512023329)
 
     val toplevel_target_ehc_listener =
-        find("toplevel_osrs_stretch:ehc_listener", 7892556120849742062)
+        find("toplevel_osrs_stretch:tli_listener")
     val toplevel_target_buff_bar = find("toplevel_osrs_stretch:buff_bar", 6917295404844201161)
     val toplevel_target_stat_boosts_hud =
         find("toplevel_osrs_stretch:stat_boosts_hud", 6917295404844201160)

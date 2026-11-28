@@ -12,7 +12,6 @@ object BaseVarBits : VarBitReferences() {
 
     val stamina_active = find("stamina_active", 81145461762806)
     val stamina_duration = find("stamina_duration", 14272015789523)
-    val stamina_duration_extra = find("stamina_duration_extra", 14272015867960)
     val buff_stamina_duration_disabled = find("buff_stamina_duration_disabled", 158374502904462)
 
     val side_journal_tab = find("side_journal_tab", 58785619230382)

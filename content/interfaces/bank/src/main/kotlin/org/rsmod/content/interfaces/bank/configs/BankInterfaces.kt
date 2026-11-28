@@ -43,10 +43,9 @@ object BankComponents : ComponentReferences() {
     val confirmation_overlay_target = find("bankmain:popup", 7725483948440596985)
     val tooltip = find("bankmain:tooltip", 4370591860360031648)
 
-    val rearrange_mode_swap = find("bankmain:swap", 7319232678072104634)
-    val rearrange_mode_insert = find("bankmain:insert", 6869961168519985648)
-    val withdraw_mode_item = find("bankmain:item", 2510729662576342869)
-    val withdraw_mode_note = find("bankmain:note", 3245570119814374912)
+    // Rev 243: one Swap/Insert toggle, and Note is a toggle (no separate Item button).
+    val rearrange_mode_toggle = find("bankmain:swap_insert")
+    val withdraw_mode_note = find("bankmain:note")
     val always_placehold = find("bankmain:placeholder", 5373906735621325153)
     val deposit_inventory = find("bankmain:depositinv", 2621356993398576010)
     val deposit_worn = find("bankmain:depositworn", 4616617229019892865)
