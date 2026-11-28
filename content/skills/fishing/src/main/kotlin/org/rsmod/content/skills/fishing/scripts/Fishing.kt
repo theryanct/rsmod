@@ -4,6 +4,8 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
+import org.rsmod.api.player.features.invAddGathered
+import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.righthand
 import org.rsmod.api.player.stat.fishingLvl
@@ -111,7 +113,7 @@ constructor(
             mes(method.missingBaitMessage)
             return false
         }
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, method.catches.map { it.fish })) {
             mes("You can't carry any more fish.")
             soundSynth(synths.pillory_wrong)
             return false
@@ -143,7 +145,7 @@ constructor(
             val xp = catch.xp * xpMods.get(player, stats.fishing)
             spam(catch.message)
             statAdvance(stats.fishing, xp)
-            invAdd(inv, objTypes[catch.fish])
+            invAddGathered(objTypes[catch.fish])
             return
         }
     }

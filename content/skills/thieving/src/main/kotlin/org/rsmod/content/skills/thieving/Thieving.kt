@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.config.refs.spotanims
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.thievingLvl
 import org.rsmod.api.repo.loc.LocRepository
@@ -166,7 +167,7 @@ constructor(
     private fun ProtectedAccess.give(entry: Loot) {
         val obj = ThievingObjs.byName.getValue(entry.obj)
         val count = if (entry.max > entry.min) random.of(entry.min, entry.max) else entry.min
-        invAdd(inv, obj, count)
+        invAddGathered(obj, count)
     }
 
     private companion object {

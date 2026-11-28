@@ -27,7 +27,10 @@ public enum class Feature(
     InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2),
     InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3),
     NoHomeTeleportCooldown("hometele", "No home teleport cooldown", defaultOn = true, slot = 4),
-    AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5);
+    AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5),
+    NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6),
+    NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7),
+    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8);
 
     public companion object {
         public fun forKey(key: String): Feature? =

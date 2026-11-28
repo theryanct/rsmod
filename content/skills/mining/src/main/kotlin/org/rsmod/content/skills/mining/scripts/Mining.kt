@@ -8,6 +8,8 @@ import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.invAddGathered
+import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.isInCombat
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -81,7 +83,7 @@ constructor(
         }
 
         val ore = objTypes[type.rockOre]
-        if (inv.isFull()) {
+        if (invFullForGathering(objTypes, listOf(ore))) {
             mes("Your inventory is too full to hold any more ${ore.oreName()}.")
             soundSynth(synths.pillory_wrong)
             return
@@ -119,7 +121,7 @@ constructor(
         val xp = type.rockXp * xpMods.get(player, stats.mining)
         spam("You manage to mine some ${ore.oreName()}.")
         statAdvance(stats.mining, xp)
-        invAdd(inv, ore)
+        invAddGathered(ore)
 
         locRepo.change(rock, type.rockEmpty, type.rockRespawnTime)
         resetAnim()
@@ -141,7 +143,7 @@ constructor(
                 else -> mining_objs.uncut_diamond
             }
         val gemType = objTypes[gem]
-        invAdd(inv, gemType)
+        invAddGathered(gemType)
         val gemName = gemType.name.removePrefix("Uncut ").replaceFirstChar(Char::uppercaseChar)
         mes("You just found ${gemName.withArticle()}!")
     }
