@@ -1,21 +1,30 @@
 package org.rsmod.content.generic.npcs.cow
 
+import jakarta.inject.Inject
 import org.rsmod.api.config.refs.content
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.config.refs.seqs
+import org.rsmod.api.config.refs.spotanims
+import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
 import org.rsmod.api.player.dialogue.Dialogue
+import org.rsmod.api.player.hit.queueHit
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueue
+import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
+import org.rsmod.game.hit.HitType
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-class DairyCow : PluginScript() {
+class DairyCow @Inject constructor(private val xpMods: XpModifiers) : PluginScript() {
     override fun ScriptContext.startup() {
         onOpLoc1(content.dairy_cow) { attemptMilkingCow(it.loc) }
         onOpLoc2(content.dairy_cow) { stealCowbell(it.loc) }
@@ -75,14 +84,62 @@ class DairyCow : PluginScript() {
         chatPlayer(neutral, "Right, I'll do that.")
     }
 
+    /**
+     * Cold War (OSRS Wiki "Cowbells", "Dairy cow"): once the quest is started, 15 Thieving steals
+     * a pair of cowbells for 16 xp; success is 128/256 at level 1 to 200/256 at 99 (Mod Ash), a
+     * failure kicks and stuns. The quest's cache varbit is read here directly (this module doesn't
+     * depend on quests). Simplified: the talking Zanaris cow's conversation is not built.
+     */
     private suspend fun ProtectedAccess.stealCowbell(loc: BoundLocInfo) {
-        // TODO(content): Should be different actions based on cold war quest progress.
         arriveDelay()
         faceSquare(loc.coords)
-        mesbox("You need to have started the Cold War quest to attempt this.")
+        if (player.vars[DairyCowVarBits.peng_quest] == 0) {
+            mesbox("You need to have started the Cold War quest to attempt this.")
+            return
+        }
+        if (statBase(stats.thieving) < COWBELL_LEVEL) {
+            mes("You need a Thieving level of $COWBELL_LEVEL to steal a cowbell.")
+            return
+        }
+        if (inv.isFull()) {
+            mes("You don't have enough inventory space.")
+            return
+        }
+        anim(DairyCowSeqs.pickpocket)
+        delay(2)
+        if (statRandom(stats.thieving, COWBELL_LOW, COWBELL_HIGH, 0)) {
+            invAdd(inv, DairyCowObjs.cowbell)
+            statAdvance(stats.thieving, COWBELL_XP * xpMods.get(player, stats.thieving))
+            mes("You steal a cowbell.")
+            return
+        }
+        mes("You fail to steal a cowbell.")
+        mes("The cow kicks you and stuns you!")
+        player.queueHit(1, HitType.Typeless, random.of(1, 2))
+        spotanim(spotanims.stunned, height = 100)
+        delay(COWBELL_STUN_TICKS)
     }
 
     private fun CoordGrid.isNearGillie(): Boolean {
         return this == CoordGrid(0, 50, 51, 54, 8) || this == CoordGrid(0, 50, 51, 52, 11)
     }
+}
+
+private const val COWBELL_LEVEL = 15
+private const val COWBELL_LOW = 128
+private const val COWBELL_HIGH = 200
+private const val COWBELL_XP = 16.0
+private const val COWBELL_STUN_TICKS = 4
+
+internal object DairyCowVarBits : VarBitReferences() {
+    /** Cold War's quest varbit (any value above 0: started). */
+    val peng_quest = find("peng_quest")
+}
+
+internal object DairyCowObjs : ObjReferences() {
+    val cowbell = find("peng_cowbell")
+}
+
+internal object DairyCowSeqs : SeqReferences() {
+    val pickpocket = find("human_pickpocket")
 }

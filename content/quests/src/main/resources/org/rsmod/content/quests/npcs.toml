@@ -1287,3 +1287,44 @@ coords = '0_20_48_5_34'
 [[spawn]]
 npc = 'tlati_lost_lover_fabia_united'
 coords = '0_20_48_6_34'
+
+# Cold War: Larry at Ardougne Zoo (by the penguin pen), on Rellekka's dock, on the iceberg (Wiki maps).
+[[spawn]]
+npc = 'peng_larry_zoo'
+coords = '0_40_51_37_2'
+
+[[spawn]]
+npc = 'peng_larry_rell'
+coords = '0_42_58_19_22'
+
+[[spawn]]
+npc = 'peng_larry_ice'
+coords = '1_41_62_37_22'
+
+
+# Cold War: the debriefing agent (west room) and the booth agent by the war room doors, KGP base.
+[[spawn]]
+npc = 'peng_kgp_tie'
+coords = '0_41_162_11_14'
+
+[[spawn]]
+npc = 'peng_multi_kgp_booth'
+coords = '0_41_162_31_38'
+
+
+# Cold War: the penguin army drilling by the agility course (cutscene npcs, stationary).
+[[spawn]]
+npc = 'peng_starjump'
+coords = '1_41_63_12_14'
+
+[[spawn]]
+npc = 'peng_starjump'
+coords = '1_41_63_15_14'
+
+[[spawn]]
+npc = 'peng_situps'
+coords = '1_41_63_13_12'
+
+[[spawn]]
+npc = 'peng_pushups'
+coords = '1_41_63_17_11'

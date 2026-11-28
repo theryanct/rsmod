@@ -8,6 +8,7 @@ import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
+import org.rsmod.content.quests.coldwar.ColdWar.Companion.COLD_WAR
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
 import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
@@ -88,6 +89,7 @@ public object BuiltQuests {
             BIG_CHOMPY,
             BLACK_KNIGHTS_FORTRESS,
             CLOCK_TOWER,
+            COLD_WAR,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
             DADDYS_HOME,
