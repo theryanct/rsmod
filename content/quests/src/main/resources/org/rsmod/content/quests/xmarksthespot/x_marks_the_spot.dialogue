@@ -1,0 +1,169 @@
+# Generated from the OSRS Wiki page "Transcript:X Marks the Spot" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	If the player has not visited Great Kourend before
+1	line	Veos	Hello there.
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Veos	The name's Veos. I'm a treasure hunter from the wonderous Kingdom of Great Kourend.
+2	line	Player	Great Kourend? Where's that?
+2	line	Veos	Across the sea to the far west. It is a truly magnificent place.
+2	line	Player	Interesting. So what brings you to Lumbridge?
+2	line	Veos	I'm here on a bit of a hunt. The hunt for treasure. Back in my home of Great Kourend, I came across a scroll. I believe it will lead me to something of great value.
+2	line	Veos	Alas, I've hit a bit of a blocker. The scroll has led me here but as I don't really know the area, I'm not sure what to do next.
+2	option	Can I help?
+3	line	Veos	Hmmm. Maybe you can. You probably know this area better than I do. You might be able to work the scroll out. I'll be able to reward you if you help.
+3	option	Sounds good, what should I do?
+4	line	Player	Sounds good, what should I do?
+4	cond	If the player does not have any free inventory space:
+5	line	Veos	First you should go and make some room in your inventory. Once you've done that, you can have a look at this scroll.
+5	action	end
+4	cond	If the player has a free inventory space:
+5	line	Veos	Take this scroll. It should lead you to the treasure I seek. Once you've found it, meet me at my ship. It's docked at the northernmost pier in Port Sarim.
+5	action	
+5	line	Player	Awesome. Anything else I should know?
+5	line	Veos	You'll probably want a spade, I find they're pretty much always needed when it comes to hunting treasure. Check the general store if you don't have one. If you need any extra help, just let me know.
+5	line	Player	Okay, thanks Veos.
+5	line	Veos	Good luck.
+5	action	end
+3	option	I'm good thanks.
+4	line	Player	I'm good thanks.
+4	line	Veos	Fair enough. I'll be here if you change your mind.
+4	action	end
+2	option	Well good luck with it.
+3	line	Player	Well good luck with it.
+3	action	end
+1	option	I'm looking for a quest.
+2	line	Veos	Hmmm. Well now that you mention it, I could do with some help. The name's Veos. I'm a treasure hunter from the wonderous Kingdom of Great Kourend.
+2	line	Player	Great Kourend? Where's that?
+2	action	above
+1	option	I have to go.
+2	line	Player	I have to go.
+2	action	end
+0	section	If the player has visited Great Kourend before
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos. What brings you to Lumbridge?
+1	line	Veos	I'm here on a bit of a treasure hunt. Back in Kourend I came across a scroll. I believe it will lead me to something of great value.
+1	line	Veos	Alas, I've hit a bit of a blocker. The scroll has led me here but as I don't really know the area, I'm not sure what to do next.
+1	option	Can I help?
+2	line	Player	Can I help?
+2	line	Veos	Hmmm. Maybe you can. You probably know this area better than I do. You might be able to work the scroll out. I'll be able to reward you if you help.
+2	option	Sounds good, what should I do?
+3	line	Player	Sounds good, what should I do?
+3	cond	If the player does not have any free inventory space:
+4	line	Veos	First you should go and make some room in your inventory. Once you've done that, you can have a look at this scroll.
+4	action	end
+3	cond	If the player has a free inventory space:
+4	line	Veos	Take this scroll. It should lead you to the treasure I seek. Once you've found it, meet me at my ship. It's docked at the northernmost pier in Port Sarim.
+4	box	Veos has given you a scroll.
+4	line	Player	Awesome. Anything else I should know?
+4	line	Veos	You'll probably want a spade, I find they're pretty much always needed when it comes to hunting treasure. Check the general store if you don't have one.
+4	line	Veos	I'll be sticking around here a little longer before heading back to my ship. If you need extra guidance with anything, just let me know and I'll see what I can do.
+4	line	Player	Okay, thanks Veos.
+4	line	Veos	Good luck.
+4	action	end
+1	option	Well good luck with it.
+2	line	Player	Well good luck with it.
+2	action	end
+0	section	Talking to Veos again if the player previously did not have inventory space for the treasure scroll
+1	line	Veos	Ready to help with this treasure hunt?
+1	line	Player	What do you need me to do?
+1	cond	If the player does not have any free inventory space:
+2	line	Veos	First you should go and make some room in your inventory. Once you've done that, you can have a look at this scroll.
+2	action	end
+1	cond	If the player has a free inventory space:
+2	action	above
+0	section	Talking to Veos after losing an item
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Veos	I came across this [scroll/orb]. Did you lose it by any chance?
+1	box	Veos has given you a [scroll/orb].
+1	line	Player	I did, thanks Veos.
+1	line	Veos	Not to worry. Just try to be careful with it.
+1	action	end
+0	section	Talking to Veos after receiving the first clue
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Player	Let's talk about my quest.
+1	line	Veos	How's the treasure hunt going?
+1	option	I could do with some extra help.
+2	box	You show the scroll to Veos.
+2	line	Veos	This is the scroll I gave you. I don't know how to solve it I'm afraid. Maybe look for someone named Bob?
+2	action	end
+1	option	I'm still working on it.
+2	line	Player	I'm still working on it.
+2	cond	If the player talks to Veos in Lumbridge:
+3	line	Veos	Well keep at it. Once you've found the treasure, meet me at my ship. It's docked at the northernmost pier in Port Sarim.
+3	action	end
+2	cond	If the player talks to Veos in Port Sarim:
+3	line	Veos	Well keep at it. Once you've found the treasure, bring it to me.
+3	action	end
+0	section	Talking to Veos after receiving the second clue
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Player	Let's talk about my quest.
+1	line	Veos	How's the treasure hunt going?
+1	option	I could do with some extra help.
+2	box	You show the scroll to Veos.
+2	line	Veos	Looks like a map to me. I'd assume the X marks where you need to go.
+2	action	end
+1	option	I'm still working on it.
+2	line	Player	I'm still working on it.
+2	action	above
+0	section	Talking to Veos after receiving the third clue
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Player	Let's talk about my quest.
+1	line	Veos	How's the treasure hunt going?
+1	option	I could do with some extra help.
+2	line	Player	I could do with some extra help.
+2	box	You show the orb to Veos.
+2	line	Veos	Interesting, these are quite rare. They work using temperature. The closer you are, the hotter the orb.
+2	action	end
+1	option	I'm still working on it.
+2	line	Player	I'm still working on it.
+2	cond	If the player talks to Veos in Lumbridge:
+3	line	Veos	Well keep at it. Once you've found the treasure, meet me at my ship. It's docked at the northernmost pier in Port Sarim.
+2	cond	If the player talks to Veos in Port Sarim:
+3	line	Veos	Well keep at it. Once you've found the treasure, bring it to me.
+2	action	end
+0	section	Talking to Veos after receiving the fourth clue
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Player	Let's talk about my quest.
+1	line	Veos	How's the treasure hunt going?
+1	option	I could do with some extra help.
+2	line	Player	I could do with some extra help.
+2	box	You show the scroll to Veos.
+2	line	Veos	Ah a cipher, I've seen these before. Try shifting the letters to the left or right. That normally works.
+2	action	end
+1	option	I'm still working on it.
+2	line	Player	I'm still working on it.
+2	cond	If the player talks to Veos in Lumbridge:
+3	line	Veos	Well keep at it. Once you've found the treasure, meet me at my ship. It's docked at the northernmost pier in Port Sarim.
+2	cond	If the player talks to Veos in Port Sarim:
+3	line	Veos	Well keep at it. Once you've found the treasure, bring it to me.
+2	action	end
+0	section	Digging the last clue
+1	box	You dig up an Ancient Casket. As you do, you hear a faint whispering. You can't make out what it says though...
+1	line	Player	Hmmmm... Must have been the wind.
+1	line	Player	Anyway, this must be the treasure that Veos is after. I should take it to him. If I remember right, he's docked at the northernmost pier in Port Sarim.
+1	action	end
+0	section	Attempting to open the ancient casket
+1	line	Player	I don't think Veos would want me to open his treasure. I should take it to him. If I remember right, it's docked at the northernmost pier in Port Sarim.
+1	action	end
+0	section	Finishing up
+1	line	Veos	Hello there.
+1	line	Player	Hello Veos.
+1	line	Veos	How's the treasure hunt going?
+1	line	Player	I found the treasure!
+1	line	Veos	Excellent. I'll take it off your hands now.
+1	box	You give Veos the Ancient Casket.
+1	line	Veos	Brilliant. This is just what I was looking for. Thank you so much for your help.
+1	line	Player	No problem. So what is this treasure anyway?
+1	line	Veos	Oh err... nothing important. Just something that might be of use to me back in Great Kourend.
+1	line	Player	If you say so...
+1	line	Veos	Anyway, as promised, a reward for you.
+1	line	Veos	Anyway, I'd best be getting back to Great Kourend. I'm sure I'll be back here before long though, there's always more treasure to be found.
+1	line	Veos	If you ever fancy visiting the kingdom, come find me here. I'm more than happy to take you there. Consider it an extra thank you for your help.
+1	line	Player	Sounds great, thanks Veos.
+1	action	end

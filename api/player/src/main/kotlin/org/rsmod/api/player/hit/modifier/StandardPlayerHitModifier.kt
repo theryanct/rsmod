@@ -19,5 +19,6 @@ public object StandardPlayerHitModifier : PlayerHitModifier {
             val reduction = if (isFromPlayer) 40 else 100
             damage = (damage * (100 - reduction)) / 100
         }
+        PlayerHitModifiers.apply(this, target)
     }
 }

@@ -6,6 +6,8 @@ import kotlin.math.min
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.events.interact.LocUEvents
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.poison.curePoison
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.herbloreLvl
@@ -19,6 +21,7 @@ import org.rsmod.api.script.onOpHeld5
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
+import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.herblore.HerbloreData.Effect
 import org.rsmod.events.EventBus
@@ -66,6 +69,11 @@ constructor(
             onOpHeldU(obj(potion.unf), obj(potion.secondary)) { selectMake(recipe) }
         }
         onPlayerQueueWithArgs<MakeJob>(HerbloreQueues.make) { make(it.args) }
+        onPlayerSoftTimer(AntifireTimers.tick) { Antifire.tick(player) }
+        val pestle = obj(HerbloreData.PESTLE)
+        for (grind in HerbloreData.grinds) {
+            onOpHeldU(pestle, obj(grind.source)) { grind(grind) }
+        }
         for (drink in HerbloreData.drinks) {
             for ((index, dose) in drink.doses.withIndex()) {
                 val next = drink.doses.getOrNull(index + 1) ?: HerbloreData.VIAL
@@ -95,7 +103,16 @@ constructor(
 
     /* Cleaning */
 
+    /** Herblore needs Druidic Ritual when the QuestGates toggle is on (default off). */
+    private fun ProtectedAccess.passesQuestGate(): Boolean {
+        if (!player.isFeatureOn(Feature.QuestGates)) return true
+        if (player.vars[HerbloreVarps.druidquest] >= DRUIDIC_RITUAL_COMPLETE) return true
+        mes("You need to complete Druidic Ritual to use the Herblore skill.")
+        return false
+    }
+
     private fun ProtectedAccess.clean(herb: HerbloreData.Herb) {
+        if (!passesQuestGate()) return
         if (player.herbloreLvl < herb.level) {
             mes("You need a Herblore level of ${herb.level} to clean this herb.")
             return
@@ -123,6 +140,7 @@ constructor(
         min(invTotal(inv, obj(recipe.first)), invTotal(inv, obj(recipe.second)))
 
     private suspend fun ProtectedAccess.selectMake(recipe: Recipe) {
+        if (!passesQuestGate()) return
         val product = obj(recipe.product)
         val name = objTypes[product].name
         val max = maxMakes(recipe).coerceAtLeast(1)
@@ -159,6 +177,15 @@ constructor(
         if (remaining > 0 && maxMakes(recipe) > 0) {
             weakQueue(HerbloreQueues.make, recipe.ticks, MakeJob(recipe, remaining))
         }
+    }
+
+    /* Grinding */
+
+    private fun ProtectedAccess.grind(grind: HerbloreData.Grind) {
+        invDel(inv, obj(grind.source))
+        invAdd(inv, obj(grind.product))
+        anim(HerbloreSeqs.grind)
+        mes("You grind the ${objTypes[obj(grind.source)].name.lowercase()} to dust.")
     }
 
     /* Drinking */
@@ -201,6 +228,7 @@ constructor(
             }
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
             is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
+            is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
         }
     }
 
@@ -243,6 +271,7 @@ constructor(
     }
 
     private companion object {
+        const val DRUIDIC_RITUAL_COMPLETE = 4
         const val DRINK_DELAY = 3
     }
 }

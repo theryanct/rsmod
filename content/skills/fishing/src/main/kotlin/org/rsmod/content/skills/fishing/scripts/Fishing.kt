@@ -4,6 +4,7 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
+import org.rsmod.api.player.events.interact.NpcEvents
 import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.features.invFullForGathering
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -54,6 +55,10 @@ constructor(
             if (!type.name.equals("Fishing spot", ignoreCase = true)) {
                 continue
             }
+            // The Hemenster contest spots (0_41_53_*) belong to the Fishing Contest quest.
+            if (type.internalName.orEmpty().startsWith(CONTEST_SPOT_PREFIX)) {
+                continue
+            }
             val ops = type.op.mapNotNull { it?.trim()?.lowercase() }.toSet()
             for ((index, text) in type.op.withIndex()) {
                 val op = text?.trim()?.lowercase() ?: continue
@@ -66,6 +71,18 @@ constructor(
     }
 
     private fun ScriptContext.registerOp(type: UnpackedNpcType, op: Int, method: FishingMethod) {
+        // Another script (a quest) may already own this spot's op; boot order must not matter.
+        val event =
+            when (op) {
+                1 -> NpcEvents.Op1::class.java
+                2 -> NpcEvents.Op2::class.java
+                3 -> NpcEvents.Op3::class.java
+                4 -> NpcEvents.Op4::class.java
+                else -> return
+            }
+        if (eventBus.contains(event, type.id)) {
+            return
+        }
         when (op) {
             1 -> onOpNpc1(type) { fish(it.npc, op, method) }
             2 -> onOpNpc2(type) { fish(it.npc, op, method) }
@@ -364,6 +381,9 @@ constructor(
     }
 
     private companion object {
+        /** Fishing Contest's Hemenster spots (map square 41_53), owned by the quest. */
+        const val CONTEST_SPOT_PREFIX = "0_41_53_"
+
         val harpoons: List<ObjType>
             get() =
                 listOf(

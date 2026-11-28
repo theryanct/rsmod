@@ -1,0 +1,769 @@
+# Generated from the OSRS Wiki page "Transcript:Plague City" by tools/quests/transcript_to_dialogue.py
+0	section	Starting the quest
+0	section	Talking to Edmond
+1	line	Player	Hello old man.
+1	line	Edmond	Sorry, I can't stop to talk...
+1	line	Player	Why, what's wrong?
+1	line	Edmond	I've got to find my daughter. I pray that she is still alive...
+1	select	Select an Option
+1	option	What's happened to her?
+2	line	Player	What's happened to her?
+2	line	Edmond	Elena's a missionary and a healer. Three weeks ago she managed to cross the wall into West Ardougne. No one's allowed to cross the wall in case they spread the plague.
+2	line	Player	Plague?
+2	line	Edmond	Not that long ago, West Ardougne was hit by a deadly plague. They had the wall built to try and keep it contained. No one is allowed to enter the city now apart from the mourners.
+2	line	Edmond	They say the plague is a horrible way to go... That's why Elena felt she had to go help. She said she'd be gone for a few days but we've heard nothing since.
+2	line	Player	Maybe I could help find her?
+2	line	Edmond	Really, would you? I've been working on a plan to get into West Ardougne, but I'm too old and tired to carry it through. But you on the other hand, you should have no problem.
+2	select	Start the Plague City quest?
+2	option	Yes.
+3	line	Player	Where should I start?
+3	line	Edmond	If you're going into West Ardougne you'll need protection from the plague. My wife made a special gas mask for Elena with dwellberries rubbed into it.
+3	line	Edmond	They help to repel the plague apparently. We need some more though...
+3	line	Player	Where can I find these dwellberries?
+3	line	Edmond	The only place I know of is McGrubor's Wood, just west of Seers' Village. The berries are bright blue so they're easy to spot.
+3	line	Player	Okay, I'll go and get some.
+3	line	Edmond	The foresters keep a close eye on it, but there is a back way in.
+3	action	end
+2	option	No.
+3	line	Player	On second thoughts, I'd better not.
+3	line	Edmond	Well if you hear anything about Elena please tell me.
+3	line	Player	I will. Goodbye.
+3	action	end
+1	option	Well, good luck finding her.
+2	line	Player	Well, good luck finding her.
+2	action	end
+0	section	Talking to Edmond before getting dwellberries
+1	line	Player	Hello Edmond.
+1	line	Edmond	Have you got the dwellberries yet?
+1	line	Player	Sorry, I'm afraid not.
+1	line	Edmond	You'll probably find them in McGrubor's Wood, just west of Seers' Village. The berries are bright blue so they're easy to spot.
+1	line	Player	Okay, I'll go and get some.
+1	line	Edmond	The foresters keep a close eye on it, but there is a back way in.
+1	action	end
+0	section	Talking to Alrena before getting dwellberries
+1	line	Player	Hello, Edmond has asked me to help find your daughter.
+1	line	Alrena	Yes he told me. I've begun making your special gas mask, but I need some dwellberries to finish it.
+1	line	Player	I'll try to get some.
+1	line	Alrena	The best place to look is in McGrubor's Wood, just west of Seers' Village.
+1	action	end
+0	section	Talking to Edmond after getting dwellberries
+1	line	Player	Hello Edmond.
+1	line	Edmond	Have you got the dwellberries yet?
+1	line	Player	Yes I've got some here.
+1	line	Edmond	Take them to my wife Alrena, she's inside.
+1	action	end
+0	section	Talking to Alrena after getting dwellberries
+1	line	Player	Hello, Edmond has asked me to help find your daughter.
+1	line	Alrena	Yes he told me. I've begun making your special gas mask, but I need some dwellberries to finish it.
+1	line	Player	Yes I've got some here.
+1	box	You give the dwellberries to Alrena.
+1	box	Alrena crushes the berries into a smooth paste. She then smears the paste over a strange mask.
+1	line	Alrena	There we go, all done. While in West Ardougne you must wear this at all times, or you could catch the plague.
+1	box	Alrena has given you a gas mask.
+1	line	Alrena	I'll make a spare mask for you in case you lose that one. I'll hide it in the cupboard in case the mourners come looking.
+1	action	end
+0	section	Searching the cupboard
+1	cond	If the player already has the gas mask:
+2	action	end
+1	cond	If the player has no inventory space:
+2	box	You find a protective mask but you don't have enough room to take it.
+2	action	end
+1	cond	If the player does not have the gas mask:
+2	box	You find a protective mask.
+2	action	end
+0	section	Talking to Alrena after getting the gas mask
+1	line	Alrena	Hello darling, I think Edmond had a good idea of how to get into West Ardougne, you should hear his idea.
+1	line	Player	Alright, I'll go and see him now.
+1	action	end
+0	section	Talking to Edmond after getting the gas mask
+1	line	Player	Hi Edmond, I've got the gas mask now.
+1	line	Edmond	Good stuff, now for the digging. Beneath us are the Ardougne sewers. I've done some research, and I reckon you can use them to enter West Ardougne.
+1	line	Edmond	I've already tried digging down to them but the soil is rock hard. You'll need to pour on several buckets of water to soften it up. I reckon four buckets should do it.
+1	action	end
+0	section	Talking to Edmond before pouring water on the mud patch
+1	line	Edmond	How's it going?
+1	line	Player	I still need to pour four more buckets of water on the soil.
+1	action	end
+0	section	Talking to Alrena before pouring water on the mud patch
+1	line	Player	Hello Alrena.
+1	line	Alrena	Hello darling, how's that tunnel coming along?
+1	line	Player	I just need to soften the soil and then we'll start digging.
+1	line	Alrena	Well I'm sure you're quicker than Edmond.
+1	action	end
+0	section	Digging the mud patch
+1	box	You dig the soil... The ground is rather hard.
+1	action	end
+0	section	Interacting with the mud patch
+0	section	Using bucket of water on the mud patch
+1	cond	If Edmond has not told the player to pour water:
+2	box	You see no reason to do that at the moment.
+2	action	end
+1	cond	If this is the first, second, or third bucket of water:
+2	box	You pour water onto the soil. The soil softens slightly.
+2	action	end
+1	cond	If this is the fourth bucket of water:
+2	box	You pour water onto the soil. The soil is now soft enough to dig into.
+2	action	end
+0	section	Digging hole to make a tunnel
+1	box	You dig deep into the soft soil... Suddenly it crumbles away! You fall through into the sewer. Edmond follows you down the hole.
+1	action	end
+0	section	Climbing up the mud pile
+0	section	Climbing down dug hole
+0	section	Talking to Mourner outside Edmond's house
+1	line	Player	Hello there.
+1	line	Mourner	What are you up to?
+1	line	Player	What do you mean?
+1	line	Mourner	You and that Edmond fella, you're looking very suspicious.
+1	line	Player	We're just gardening. Have you heard any news about West Ardougne?
+1	line	Mourner	Just the usual, everyone's sick or dying. I'm furious at King Tyras for bringing this plague to our lands.
+1	action	end
+0	section	Talking to Edmond after pouring one bucket of water on the mud patch
+1	line	Edmond	How's it going?
+1	line	Player	I still need to pour three more buckets of water on the soil.
+1	action	end
+0	section	Talking to Alrena after pouring one bucket of water on the mud patch
+1	line	Player	Hello Alrena.
+1	line	Alrena	Hello darling, how's that tunnel coming along?
+1	line	Player	I just need to soften the soil a little more and then we'll start digging.
+1	action	end
+0	section	Talking to Edmond after pouring two buckets of water on the mud patch
+1	line	Edmond	How's it going?
+1	line	Player	I still need to pour two more buckets of water on the soil.
+1	action	end
+0	section	Talking to Edmond after pouring three buckets of water on the mud patch
+1	line	Edmond	How's it going?
+1	line	Player	I still need to pour one more bucket of water on the soil.
+1	action	end
+0	section	Talking to Edmond after pouring four buckets of water on the mud patch
+1	line	Player	I've soaked the soil with water.
+1	line	Edmond	That's great, it should be soft enough to dig through now. There should be a spade nearby that you can use.
+1	action	end
+0	section	Talking to Alrena after pouring four buckets of water on the mud patch
+1	line	Player	Hello again Alrena.
+1	line	Alrena	How's the tunnel going?
+1	line	Player	I'm getting there.
+1	line	Alrena	One of the mourners has been sniffing around asking questions about you and Edmond, you should keep an eye out for him.
+1	cond	If the player does not have a gas mask:
+2	line	Alrena	Also, don't forget about that spare gas mask if you need it. It's hidden in the cupboard.
+2	line	Player	Great, thanks Alrena!
+2	action	end
+1	cond	If the player has a gas mask:
+2	line	Player	Okay, thanks for the warning.
+2	action	end
+0	section	Talking to Mourner outside Edmond's house after talking with Edmond
+1	line	Player	Hello.
+1	line	Mourner	What are you up to with old man Edmond?
+1	line	Player	Nothing, we've just been chatting.
+1	line	Mourner	What about his daughter?
+1	line	Player	Oh, you know about that then?
+1	line	Mourner	We know about everything that goes on in Ardougne. We have to if we are to contain the plague.
+1	line	Player	Have you see his daughter recently?
+1	line	Mourner	I imagine she's caught the plague. Either way she won't be allowed out of West Ardougne, the risk is too great.
+1	action	end
+0	section	Talking to Edmond in the tunnel
+1	line	Edmond	I think it's the pipe to the south that comes up in West Ardougne.
+1	line	Player	Alright I'll check it out.
+1	action	end
+0	section	Talking to Alrena after digging the tunnel
+1	line	Player	Hello Alrena.
+1	line	Alrena	Hi, have you managed to get through to West Ardougne?
+1	line	Player	Not yet, but I should be going soon.
+1	line	Alrena	Make sure you wear your mask while you're over there! I can't think of a worse way to die.
+1	cond	If the player does not have a gas mask:
+2	line	Alrena	Don't forget, I've got a spare one hidden in the cupboard if you need it.
+2	line	Player	Great, thanks Alrena!
+2	action	end
+1	cond	If the player has a gas mask:
+2	line	Player	Okay, thanks for the warning.
+2	action	end
+0	section	Talking to Mourner outside Edmond's house after digging the tunnel
+1	line	Player	Hello there.
+1	line	Mourner	Been digging have we?
+1	line	Player	What do you mean?
+1	line	Mourner	Your hands are covered in mud.
+1	line	Player	Oh that...
+1	line	Mourner	Funny, you don't look like the gardening type.
+1	line	Player	Oh no, I love gardening! It's my favorite pastime.
+1	action	end
+0	section	Talking to Mourner outside Edmond's house after pulling off the grate
+1	line	Player	Hello.
+1	line	Mourner	What are you up to?
+1	line	Player	Nothing.
+1	line	Mourner	I don't trust you.
+1	line	Player	You don't have to.
+1	line	Mourner	If I find you attempting to cross the wall I'll make sure you never return.
+1	action	end
+0	section	Interacting with the pipe
+0	section	Climb-up pipe
+1	cond	If the grill has not been removed:
+2	box	There is a grill blocking your way.
+2	action	end
+1	cond	If the player is not wearing a gas mask:
+2	line	Edmond	I can't let you enter the city without your gas mask on.
+2	action	end
+1	box	You climb up through the sewer pipe.
+1	action	end
+0	section	Open grill
+1	box	The grill is too secure. You can't pull it off alone.
+1	action	end
+0	section	Using rope on the grill before trying to open it first
+1	line	Player	Maybe I should try opening it first.
+1	action	end
+0	section	Using rope on grill
+1	box	You tie the end of the rope to the sewer pipe's grill.
+1	action	end
+0	section	Talking to Edmond after trying to pull the grill
+1	line	Player	Edmond, I can't get through to West Ardougne! There's an iron grill blocking my way, I can't pull it off alone.
+1	line	Edmond	If you get some rope you could tie to the grill, then we could both pull it at the same time.
+1	action	end
+0	section	Talking to Edmond after tying the rope to the grill on the pipe
+1	line	Player	I've tied a rope to the grill over there, will you help me pull it off?
+1	line	Edmond	Alright, let's get to it...
+1	line	Player	1... 2... 3... Pull!
+1	line	Edmond	Once you're in the city look for a man called Jethick. He's an old friend of the family. Hopefully he can help you.
+1	line	Player	Alright, thanks I will.
+1	action	end
+0	section	Entering West Ardougne
+0	section	Talking to Edmond after unlocking West Ardougne
+1	line	Player	Hello.
+1	line	Edmond	Have you found Elena yet?
+1	line	Player	Not yet, it's a big city over there.
+1	line	Edmond	I hope it's not too late.
+1	action	end
+0	section	Talking to Alrena after unlocking West Ardougne
+1	line	Player	Hello Alrena.
+1	line	Alrena	Hello, any word on Elena?
+1	line	Player	Not yet I'm afraid.
+1	line	Alrena	Is there anything else I can do to help?
+1	line	Player	It's alright, I'll get her back soon.
+1	cond	If the player does not have a gas mask:
+2	line	Alrena	That's the spirit, dear. Don't forget that there's a spare gas mask in the cupboard if you need one.
+2	action	end
+1	cond	If the player has a gas mask:
+2	line	Alrena	That's the spirit, dear.
+2	action	end
+0	section	Interacting with the manhole in West Ardougne
+0	section	Climb-down manhole out of West Ardougne
+1	box	You climb down through the manhole.
+1	action	end
+0	section	Opening manhole cover
+0	section	Closing manhole cover
+0	section	Opening doors to leave West Ardougne
+0	section	Talking to Men and Women in West Ardougne
+0	section	Woman (variant 1)id=1130,1142
+1	line	Player	Hello, how's it going?
+1	line	Woman	Bah, those mourners... they're meant to be helping us, but I think they're doing more harm here than good. They won't even let me send a letter out to my family.
+1	select	Select an Option
+1	option	Have you seen a lady called Elena around here?
+2	line	Player	Have you seen a lady called Elena around here?
+2	line	Woman	Yes, I've seen her. Very helpful person.
+2	line	Woman	Not for the last few days though... I thought maybe she'd gone home.
+2	action	end
+1	option	You should stand up to them more.
+2	line	Player	You should stand up to them more.
+2	line	Woman	Oh I'm not one to cause a fuss.
+2	action	end
+0	section	Woman (variant 2)id=1139
+1	line	Player	Hello, how's it going?
+1	line	Woman	Life is tough.
+1	select	Select an Option
+1	option	Yes, living in a plague city must be hard.
+2	line	Player	Yes, living in a plague city must be hard.
+2	line	Woman	Plague? Pah, that's no excuse for the treatment we've received. It's obvious pretty quickly if someone has the plague.
+2	line	Woman	I'm thinking about making a break for it. I'm perfectly healthy, not gonna infect anyone.
+2	action	end
+1	option	I'm sorry to hear that.
+2	line	Player	I'm sorry to hear that.
+2	line	Woman	Well, ain't much either you or me can do about it.
+2	action	end
+1	option	I'm looking for a lady called Elena.
+2	line	Player	I'm looking for a lady called Elena.
+2	line	Woman	I've not heard of her. Old Jethick knows a lot of people, maybe he'll know where you can find her.
+2	action	end
+1	line	Player	Good day.
+1	line	Woman	We don't have good days here anymore. Curse King Tyras.
+1	select	Select an Option
+1	option	Oh okay, bad day then.
+2	line	Player	Oh okay, bad day then.
+2	action	end
+1	option	Why, what has he done?
+2	line	Player	Why, what has he done?
+2	line	Woman	His army curses our city with this plague then wanders off again, leaving us to clear up the pieces.
+2	action	end
+1	option	I'm looking for a woman called Elena.
+2	line	Player	I'm looking for a woman called Elena.
+2	line	Woman	Not heard of her.
+2	action	end
+0	section	Woman (variant 4)id=1119,1141
+1	line	Player	Good day.
+1	line	Woman	An outsider! Can you get me out of this hell hole?
+1	line	Player	Sorry, that's not what I'm here to do.
+1	action	end
+0	section	Man (variant 1)id=1118
+1	line	Man	We don't have good days here anymore. Curse King Tyras.
+1	select	Select an Option
+1	option	Oh okay, bad day then.
+2	line	Player	Oh okay, bad day then.
+2	action	end
+1	option	Why, what has he done?
+2	line	Player	Why, what has he done?
+2	line	Man	His army curses our city with this plague then wanders off again, leaving us to clear up the pieces.
+2	action	end
+1	option	I'm looking for a woman called Elena.
+2	line	Player	I'm looking for a woman called Elena.
+2	line	Man	Not heard of her.
+2	action	end
+0	section	Talking to Mourner or Head Mourner in West Ardougne
+1	line	Mourner	Hmmm, how did you get over here? You're not one of this rabble. Ah well, you'll have to stay. Can't risk you going back now.
+1	select	Select an Option
+1	option	So what's a mourner?
+2	line	Player	So what's a mourner?
+2	line	Mourner	We're working for King Lathas of East Ardougne. He has tasked us with containing the accursed plague sweeping West Ardougne.
+2	line	Mourner	We also do our best to ease these people's suffering. We're nicknamed mourners because we spend a lot of time at plague victim funerals, no one else is allowed to risk attending.
+2	line	Mourner	It's a demanding job, and we get little thanks from the people here.
+2	action	end
+1	option	I haven't got the plague though...
+2	line	Player	I haven't got the plague though...
+2	line	Mourner	Can't risk you being a carrier. That protective clothing you have isn't regulation issue. It won't meet safety standards.
+2	action	end
+1	option	I'm looking for a woman named Elena.
+2	line	Player	I'm looking for a woman named Elena.
+2	line	Mourner	Ah yes, I've heard of her. A healer I believe. She must be mad coming over here voluntarily.
+2	line	Mourner	I hear rumours she has probably caught the plague now. Very tragic, a stupid waste of life.
+2	action	end
+0	section	Talking to Ted Rehnison before getting the book from Jethick
+1	line	Ted Rehnison	Go away. We don't want any.
+1	action	end
+0	section	Talking to Jethick if the player does not have Elena's picture
+1	line	Jethick	Hello, I don't recognise you. We don't get many newcomers around here.
+1	line	Player	How come?
+1	line	Jethick	The plague of course. Not many people want to come to a place like this and the few that do normally get stopped by the mourners.
+1	line	Jethick	All you'll find here now are the dead and the dying. Even our own king has abandoned us.
+1	line	Player	Your king?
+1	line	Jethick	Yes, King Tyras of West Ardougne. He's the brother of King Lathas, the ruler of East Ardougne.
+1	line	Player	So where is the king?
+1	line	Jethick	Well he's always been a bit of an explorer. He's led multiple expeditions into the uncharted lands to the west.
+1	line	Jethick	The plague first started when he came back from one of these expeditions. More than a few suspect that some of his men caught it out there and brought it back with them.
+1	line	Jethick	The king didn't care though. He just left on another expedition to the west. He hasn't been seen since. He left the city warder Bravek in charge but he's no better.
+1	line	Jethick	Anyway, you clearly didn't come here to talk about kings. So tell me, what brings you to West Ardougne?
+1	line	Player	I'm looking for a woman from East Ardougne called Elena.
+1	line	Jethick	East Ardougnian women are easier to find in East Ardougne. Not many would come to West Ardougne to find one. Although the name is familiar, what does she look like?
+1	line	Player	Um... brown hair... in her twenties...
+1	line	Jethick	Hmmm, that doesn't narrow it down a huge amount... I'll need to know more than that, or see a picture?
+1	action	end
+0	section	Talking to main Clerk in West Ardougne
+1	line	Clerk	Hello, welcome to the Civic Office of West Ardougne. How can I help you?
+1	select	Select an Option
+1	option	Who is through that door?
+2	line	Player	Who is through that door?
+2	line	Clerk	The city warder Bravek is in there.
+2	line	Player	Can I go in?
+2	line	Clerk	He has asked not to be disturbed.
+2	action	end
+1	option	I'm just looking thanks.
+2	line	Player	I'm just looking thanks.
+2	action	end
+0	section	Talking to other Clerk in West Ardougneid=8969
+1	line	Player	Hello.
+1	line	Clerk	Sorry, I don't have time to talk. Bravek needs lots of help running the city.
+1	action	end
+0	section	Talking to Edmond after Jethick asks for Elena's picture
+1	line	Player	Hello.
+1	line	Edmond	Have you found Elena yet?
+1	line	Player	Not yet, it's a big city over there. Do you have a picture of Elena?
+1	line	Edmond	There should be a picture of Elena in the house. Please find her quickly, I hope it's not too late.
+1	action	end
+0	section	Talking to Alrena after Jethick asks for Elena's picture
+1	line	Player	Hello Alrena.
+1	line	Alrena	Hello, any word on Elena?
+1	line	Player	Not yet I'm afraid.
+1	line	Alrena	Is there anything else I can do to help?
+1	line	Player	Do you have a picture of Elena?
+1	line	Alrena	Yes. There should be one in the house somewhere. Let me know if you need anything else.
+1	action	end
+0	section	Finding Elena
+0	section	Talking to Jethick after getting Elena's picture
+1	cond	If the player has not talked to Jethick before:
+2	line	Jethick	Hello, I don't recognise you. We don't get many newcomers around here.
+1	cond	If the player has talked to Jethick before:
+2	line	Jethick	Hello. We don't get many newcomers around here.
+1	line	Player	I'm looking for a woman from East Ardougne called Elena.
+1	line	Jethick	East Ardougnian women are easier to find in East Ardougne. Not many would come to West Ardougne to find one. Although the name is familiar, what does she look like?
+1	box	You show Jethick the picture.
+1	line	Jethick	Ah yes. She came over here to help the plague victims. I think she is staying over with the Rehnison family.
+1	line	Jethick	They live in the small timbered building at the far north side of town. I've not seen her around here in a while, mind.
+1	line	Jethick	I don't suppose you could run me a little errand while you're over there? I borrowed this book from them, can you return it?
+1	select	Select an Option
+1	option	Yes, I'll return it for you.
+2	line	Player	Yes, I'll return it for you.
+2	cond	If the player has no inventory space:
+3	box	Jethick shows you the book, but you don't have room to take it.
+3	action	end
+2	box	Jethick gives you a book.
+2	action	end
+1	option	No, I don't have time for that.
+2	line	Player	No, I don't have time for that.
+2	action	end
+0	section	Talking to Jethick again before delivering the book
+1	line	Jethick	Hello. We don't get many newcomers around here.
+1	line	Player	I'm looking for a woman from East Ardougne called Elena.
+1	line	Jethick	Ah yes. She came over here to help the plague victims. I think she is staying over with the Rehnison family.
+1	line	Jethick	They live in the small timbered building at the far north side of town. I've not seen her around here in a while, mind.
+1	action	end
+0	section	Returning the book to Ted Rehnison
+1	line	Ted Rehnison	Go away. We don't want any.
+1	line	Player	I'm a friend of Jethick's, I have come to return a book he borrowed.
+1	line	Ted Rehnison	Oh... Why didn't you say, come in then.
+1	box	You hand the book to Ted as you enter.
+1	line	Ted Rehnison	Thanks, I've been missing that.
+1	action	end
+0	section	Talking to Jethick after delivering the book
+1	line	Jethick	Hello. We don't get many newcomers around here.
+1	action	end
+0	section	Talking to Billy Rehnison
+0	section	Talking to Martha Rehnison
+1	line	Player	Hi, I hear a woman called Elena is staying here.
+1	line	Martha Rehnison	Yes she was staying here, but slightly over a week ago she was getting ready to go back. However she never managed to leave.
+1	line	Martha Rehnison	My daughter Milli was playing near the west wall when she saw some shadowy figures jump out and grab her. Milli is upstairs if you wish to speak to her.
+1	action	end
+0	section	Talking to Ted Rehnison
+1	line	Player	Hi, I hear a woman called Elena is staying here.
+1	line	Ted Rehnison	Yes she was staying here, but slightly over a week ago she was getting ready to go back. However she never managed to leave.
+1	line	Ted Rehnison	My daughter Milli was playing near the west wall when she saw some shadowy figures jump out and grab her. Milli is upstairs if you wish to speak to her.
+1	action	end
+0	section	Talking to Milli Rehnison
+1	line	Player	Hello. Your parents say you saw what happened to Elena...
+1	line	Milli Rehnison	*sniff* Yes I was near the south east corner when I saw Elena walking by. I was about to run to greet her when some men jumped out. They shoved a sack over her head and dragged her into a building.
+1	line	Player	Which building?
+1	line	Milli Rehnison	It was the boarded up building with no windows in the south east corner of West Ardougne.
+1	action	end
+0	section	Talking to Ted Rehnison after questioning Milli
+1	line	Ted Rehnison	Any luck finding Elena yet?
+1	line	Player	Not yet...
+1	line	Ted Rehnison	I wish you luck, she did a lot for us.
+1	action	end
+0	section	Talking to Martha Rehnison after questioning Milli
+1	line	Martha Rehnison	Any luck finding Elena yet?
+1	line	Player	Not yet...
+1	line	Martha Rehnison	I wish you luck, she did a lot for us.
+1	action	end
+0	section	Attempting to enter the plague house Elena is in
+0	section	First attempt after talking to Milli Rehnison
+1	box	The door won't open. You notice a black cross on the door.
+1	line	Mourner	I'd stand away from there. That black cross means that house has been touched by the plague.
+1	select	Select an Option
+1	option	But I think a kidnap victim is in here.
+2	line	Player	But I think a kidnap victim is in here.
+2	line	Mourner	Sounds unlikely, even kidnappers wouldn't go in there. Even if someone is in there, they're probably dead by now.
+2	select	Select an Option
+2	option	Good point.
+3	line	Player	Good point.
+3	action	end
+2	option	I want to check anyway.
+3	line	Player	I want to check anyway.
+3	line	Mourner	You don't have clearance to go in there.
+3	line	Player	How do I get clearance?
+3	line	Mourner	Well you'd need to apply to the head mourner, or I suppose Bravek the city warder.
+3	line	Mourner	I wouldn't get your hopes up though.
+3	action	end
+1	option	I fear not a mere plague.
+2	line	Player	I fear not a mere plague.
+2	line	Mourner	That's irrelevant. You don't have clearance to go in there.
+2	line	Player	How do I get clearance?
+2	line	Mourner	Well you'd need to apply to the head mourner, or I suppose Bravek the city warder.
+2	line	Mourner	I wouldn't get your hopes up though.
+2	action	end
+1	option	Thanks for the warning.
+2	line	Player	Thanks for the warning.
+2	action	end
+0	section	Attempting before talking to Milli Rehnison, and subsequent attempts
+1	box	The door won't open. You notice a black cross on the door.
+1	line	Mourner	I'd stand away from there. That black cross means that house has been touched by the plague.
+1	action	end
+0	section	Talking to Milli Rehnison after attempting to enter the plague house
+1	line	Milli Rehnison	Have you found Elena yet?
+1	line	Player	No, I'm still looking.
+1	line	Milli Rehnison	I hope you find her. She was nice.
+1	action	end
+0	section	Talking to Head Mourner after attempting to enter the plague house
+1	line	Head Mourner	How did you get into West Ardougne? Ah well you'll have to stay, can't risk you spreading the plague outside.
+1	select	Select an Option
+1	option	I need clearance to enter a plague house.
+2	line	Player	I need clearance to enter a plague house. It's in the south east corner of West Ardougne.
+2	line	Head Mourner	You must be nuts, absolutely not!
+2	select	Select an Option
+2	option	There's a kidnap victim inside!
+3	line	Player	There's a kidnap victim inside!
+3	line	Head Mourner	Well they're as good as dead then, no point in trying to save them.
+3	action	end
+2	option	I've got a gas mask though...
+3	line	Player	I've got a gas mask though...
+3	line	Head Mourner	It's not regulation. Anyway you're not properly trained to deal with the plague.
+3	line	Player	How do I get trained?
+3	line	Head Mourner	It requires a strict 18 months of training.
+3	line	Player	I don't have that sort of time.
+3	action	end
+2	option	Yes, I'm utterly crazy.
+3	line	Player	Yes, I'm utterly crazy.
+3	line	Head Mourner	You're wasting my time, I have a lot of work to do!
+3	action	end
+1	option	So what's a mourner?
+2	action	above
+1	option	I haven't got the plague though...
+2	action	above
+1	option	I'm looking for a woman named Elena.
+2	action	above
+0	section	Attempting to open the door to Bravek before the Clerk lets you in
+1	line	Bravek	Go away, I'm busy! I'm... Umm... In a meeting!
+1	action	end
+0	section	Talking to the Clerk Before getting permission to speak to Bravek
+1	line	Clerk	Hello, welcome to the Civic Office of West Ardougne. How can I help you?
+1	select	Select an Option
+1	option	I need permission to enter a plague house.
+2	line	Player	I need permission to enter a plague house.
+2	line	Clerk	Rather you than me! The mourners normally deal with that stuff, you should speak to them. Their headquarters are right near the city gate.
+2	select	Select an Option
+2	option	I'll try asking them then.
+3	line	Player	I'll try asking them then.
+3	action	end
+2	option	Surely you don't let them run everything for you?
+3	line	Player	Surely you don't let them run everything for you?
+3	line	Clerk	Well, they do know what they're doing here. If they did start doing something badly Bravek, the city warder, would have the power to override them. I can't see that happening though.
+3	select	Select an Option
+3	option	I'll try asking them then.
+4	action	above
+3	option	Can I speak to Bravek anyway?
+4	line	Player	Can I speak to Bravek anyway?
+4	line	Clerk	He has asked not to be disturbed.
+4	select	Select an Option
+4	option	This is urgent though! Someone's been kidnapped!
+5	action	below
+4	option	Okay, I'll leave him alone.
+5	action	below
+4	option	Do you know when he will be available?
+5	action	below
+3	option	This is urgent though! Someone's been kidnapped!
+4	action	below
+1	option	Who is through that door?
+2	line	Player	Who is through that door?
+2	line	Clerk	The city warder Bravek is in there.
+2	line	Player	Can I go in?
+2	line	Clerk	He has asked not to be disturbed.
+2	option	This is urgent though! Someone's been kidnapped!
+3	line	Player	This is urgent though! Someone's been kidnapped!
+3	line	Clerk	I'll see what I can do I suppose.
+3	line	Clerk	Mr Bravek, there's [a man/a lady/someone] here who really needs to speak to you.
+3	line	Bravek	I suppose they can come in then. If they keep it short.
+3	action	end
+2	option	Okay, I'll leave him alone.
+3	line	Player	Okay, I'll leave him alone.
+3	action	end
+2	option	Do you know when he will be available?
+3	line	Player	Do you know when he will be available?
+3	line	Clerk	Oh I don't know, an hour or so maybe.
+3	action	end
+1	option	I'm just looking thanks.
+2	line	Player	I'm just looking thanks.
+2	action	end
+0	section	Talking to the Clerk after getting permission to speak to Bravek
+1	line	Clerk	Bravek will see you now but keep it short!
+1	line	Player	Thanks, I won't take much of his time.
+1	action	end
+0	section	Talking to Bravek
+1	line	Bravek	My head hurts! I'll speak to you another day...
+1	select	Select an Option
+1	option	This is really important though!
+2	line	Player	This is really important though!
+2	line	Bravek	I can't possibly speak to you with my head spinning like this... I went a bit heavy on the drink again last night. Curse my herbalist, she made the best hang over cures. Darn inconvenient of her catching the plague.
+2	select	Select an Option
+2	option	Okay, goodbye.
+3	line	Player	Okay, goodbye.
+3	action	end
+2	option	You shouldn't drink so much then!
+3	line	Player	You shouldn't drink so much then!
+3	line	Bravek	Well positions of responsibility are hard, I need something to take my mind off things... Especially with the problems this place has.
+3	select	Select an Option
+3	option	Okay, goodbye.
+4	action	below
+3	option	Do you know what's in the cure?
+4	action	below
+3	option	I don't think drink is the solution.
+4	line	Player	I don't think drink is the solution.
+4	line	Bravek	I don't feel well enough to have a philosophical discussion about it right now. My head hurts.
+4	option	Do you know what's in the cure?
+5	action	above
+4	option	Okay, goodbye.
+5	action	below
+2	option	Do you know what's in the cure?
+3	line	Player	Do you know what's in the cure?
+3	line	Bravek	Hmmm let me think... Ouch! Thinking isn't clever. Ah here, she did scribble it down for me.
+3	cond	If the player has no inventory space:
+4	box	Bravek waves a tatty piece of paper at you, but you don't have room to take it.
+4	action	end
+3	box	Bravek hands you a tatty piece of paper.
+3	action	end
+1	option	Okay, goodbye.
+2	line	Player	Okay, goodbye.
+2	action	end
+0	section	Talking to Bravek again before getting the hangover cure
+1	line	Bravek	Uurgh! My head still hurts too much to think straight. Oh for one of Trudi's hangover cures!
+1	cond	If the player lost the scruffy note:
+2	line	Player	Do you know what's in the cure?
+2	line	Bravek	Hmmm let me think... Ouch! Thinking isn't clever. Ah here, she did scribble it down for me.
+2	cond	If the player has no inventory space:
+3	box	Bravek waves a tatty piece of paper at you, but you don't have room to take it.
+3	action	end
+2	box	Bravek hands you a tatty piece of paper.
+2	action	end
+1	action	end
+0	section	Mixing the hangover cure
+0	section	Using chocolate on a bucket of milk
+1	box	You mix the chocolate into the bucket.
+1	action	end
+0	section	Using snape grass on chocolatey milk
+1	box	You mix the snape grass into the bucket.
+1	action	end
+0	section	Talking to Bravek after getting the hangover cure
+1	line	Bravek	Uurgh! My head still hurts too much to think straight. Oh for one of Trudi's hangover cures!
+1	line	Player	Try this.
+1	box	You give Bravek the hangover cure. Bravek gulps down the foul-looking liquid.
+1	line	Bravek	Grruurgh!
+1	line	Bravek	Ooh that's much better! Thanks, that's the clearest my head has felt in a month. Ah now, what was it you wanted me to do for you?
+1	line	Player	I need to rescue a kidnap victim called Elena. She's being held in a plague house, I need permission to enter.
+1	line	Bravek	Well the mourners deal with that sort of thing...
+1	select	Select an Option
+1	option	Okay, I'll go speak to them.
+2	line	Player	Okay, I'll go speak to them.
+2	action	end
+1	option	Is that all anyone says around here?
+2	line	Player	Is that all anyone says around here?
+2	line	Bravek	Well, they know best about plague issues.
+2	select	Select an Option
+2	option	Don't you want to take an interest in it at all?
+3	line	Player	Don't you want to take an interest in it at all?
+3	line	Bravek	Nope, I don't wish to take a deep interest in plagues. That stuff is too scary for me!
+3	select	Select an Option
+3	option	I see why people say you're a weak leader.
+4	line	Player	I see why people say you're a weak leader.
+4	line	Bravek	Bah, people always criticise their leaders but delegating is the only way to lead. I delegate all plague issues to the mourners.
+4	line	Player	This whole city is a plague issue!
+4	action	end
+3	option	Okay, I'll talk to the mourners.
+4	line	Player	Okay, I'll talk to the mourners.
+4	action	end
+3	option	They won't listen to me!
+4	action	below
+2	option	They won't listen to me!
+3	action	below
+1	option	They won't listen to me!
+2	line	Player	They won't listen to me!
+2	line	Player	They say I'm not properly equipped to go in the house, though I do have a very effective gas mask.
+2	line	Bravek	Hmmm, well I guess they're not taking the issue of a kidnapping seriously enough. They do go a bit far sometimes.
+2	line	Bravek	I've heard of Elena, she has helped us a lot... Okay, I'll give you this warrant to enter the house.
+2	cond	If the player has no inventory space:
+3	box	Bravek waves a warrant at you, but you don't have room to take it.
+3	action	end
+2	box	Bravek hands you a warrant.
+2	action	end
+0	section	Talking to Bravek before getting the warrant
+1	line	Bravek	Thanks again for the hangover cure.
+1	line	Bravek	Ah now what was it you wanted me to do for you?
+1	line	Player	I need to rescue Elena. She's now a kidnap victim! She's being held in a plague house, I need permission to enter.
+1	line	Bravek	Well the mourners deal with that sort of thing...
+1	select	Select an Option
+1	option	Okay, I'll go speak to them.
+2	action	above
+1	option	Is that all anyone says around here?
+2	action	above
+1	option	They won't listen to me!
+2	action	above
+0	section	Talking to Bravek after receiving the warrant
+1	line	Bravek	Thanks again for the hangover cure.
+1	line	Player	Not a problem, happy to help out.
+1	line	Bravek	I'm just having a little drop of whisky, then I'll feel really good.
+1	action	end
+0	section	Talking to Clerk after meeting Bravek
+1	line	Clerk	Hello, welcome to the Civic Office of West Ardougne. How can I help you?
+1	select	Select an Option
+1	option	Who is through that door?
+2	line	Player	Who is through that door?
+2	line	Clerk	The city warder Bravek is in there.
+2	line	Player	Can I go in?
+2	line	Clerk	I suppose so.
+2	action	end
+1	option	I'm just looking thanks.
+2	line	Player	I'm just looking thanks.
+2	action	end
+0	section	Freeing Elena
+0	section	Attempting to enter the plague house with the warrant
+1	box	The door won't open. You notice a black cross on the door.
+1	line	Mourner	I'd stand away from there. That black cross means that house has been touched by the plague.
+1	line	Player	I have a warrant from Bravek to enter here.
+1	line	Mourner	This is highly irregular. Please wait...
+1	line	Mourner	Hey... I've got someone here with a warrant from Bravek, what should we do?
+1	line	Mourner (2)	Well you can't let them in...
+1	box	You wait until the mourner's back is turned and sneak into the building.
+1	action	end
+0	section	Talking to Mourners outside the plague house while holding the warrant
+1	line	Player	I have a warrant from Bravek to enter here.
+1	line	Mourner	This is highly irregular. Please wait...
+1	box	You wait until the mourner's back is turned and sneak into the building.
+1	action	end
+0	section	Attempting to open the basement door of the plague house without the key
+1	box	The door is locked.
+1	line	Elena	Hey get me out of here please!
+1	line	Player	I would do but I don't have a key.
+1	line	Elena	I think there may be one around somewhere. I'm sure I heard them stashing it somewhere.
+1	select	Select an Option
+1	option	Have you caught the plague?
+2	line	Player	Have you caught the plague?
+2	line	Elena	No, I have none of the symptoms.
+2	line	Player	Strange, I was told this house was plague infected.
+2	line	Elena	I suppose that was a cover up by the kidnappers.
+2	action	end
+1	option	Okay, I'll look for it.
+2	line	Player	Okay, I'll look for it.
+2	action	end
+0	section	Searching the barrel
+1	box	You find a small key in the barrel.
+1	action	end
+0	section	Opening the basement door of the plague house while holding the key
+1	box	You unlock the door.
+1	action	end
+0	section	Talking to Elena after unlocking the basement door
+1	line	Player	Hi, you're free to go! Your kidnappers don't seem to be about right now.
+1	line	Elena	Thank you, being kidnapped was so inconvenient. I was on my way back to East Ardougne with some samples, I want to see if I can diagnose a cure for this plague.
+1	line	Player	Well you can leave via the manhole in the middle of the city.
+1	line	Elena	Go and see my father, I'll make sure he adequately rewards you. Now I'd better leave while I still can.
+1	action	end
+0	section	After freeing Elena
+0	section	Talking to Ted Rehnison after freeing Elena
+1	line	Ted Rehnison	Any luck finding Elena yet?
+1	line	Player	Yes, she is safe at home now.
+1	line	Ted Rehnison	That's good to hear, she helped us a lot.
+1	action	end
+0	section	Talking to Martha after freeing Elena
+1	line	Martha Rehnison	Any luck finding Elena yet?
+1	line	Martha Rehnison	That's good to hear, she helped us a lot.
+1	action	end
+0	section	Talking to Alrena after freeing Elena
+1	line	Alrena	Thank you for rescuing my daughter! Elena has told me of your bravery in entering a house that could have been plague infected. I can't thank you enough!
+1	action	end
+0	section	Edmond
+1	line	Edmond	Thank you, thank you! Elena beat you back by minutes. Now I said I'd give you a reward. What can I give you as a reward I wonder? Here take this magic scroll, I have little use for it but it may help you.
+1	line	Edmond	Now I'd recommend you go and see Elena. She'll want to thank you herself. She lives in the house opposite ours.
+1	action	end
+0	section	Talking to Edmond again before using the Ardougne teleport scroll
+1	line	Player	Hello there.
+1	line	Edmond	Ah hello. Thank you again for rescuing my daughter.
+1	select	Select an Option
+1	option	Do you have any more of those scrolls?
+2	line	Player	Do you have any more of those scrolls?
+2	line	Edmond	Yes, here you go.
+2	action	end
+1	option	No problem.
+2	line	Player	No problem.
+2	action	end
+0	section	Using the teleport scroll
+1	box	You memorise what is written on the scroll. You can now use the Ardougne Teleport Spell.
+1	action	end

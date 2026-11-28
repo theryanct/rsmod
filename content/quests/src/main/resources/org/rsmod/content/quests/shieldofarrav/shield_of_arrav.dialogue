@@ -1,0 +1,607 @@
+# Generated from the OSRS Wiki page "Transcript:Shield of Arrav" by tools/quests/transcript_to_dialogue.py
+0	section	Shared starting
+0	section	Talking to Reldo
+1	cond	If talking to Reldo for the first time ever:
+2	line	Reldo	Hello, stranger.
+2	line	Player	Hello there! The name's {player}. Who are you?
+2	line	Reldo	My name is Reldo. I'm the palace librarian.
+2	line	Player	Ah, that explains why you're in the library then.
+2	line	Reldo	Well, truth be told, I would probably be here even if it wasn't where I worked. I very much like reading, not to mention sharing what I learn with all who are interested.
+2	line	Player	Sounds like a very noble goal!
+2	action	continues
+1	cond	Otherwise:
+2	line	Reldo	Hello there, {player}.
+1	select	Select an Option
+1	option	I'm in search of a quest.
+2	line	Player	I'm in search of a quest.
+2	line	Reldo	Hmm... I don't believe there are any here.
+2	line	Reldo	Let me think actually...
+2	line	Reldo	Ah, yes. I think I have something, if you're definitely interested?
+2	cond	If the player's combat level is less than 10.
+3	box	Before starting this quest, be aware that you combat level is lower than the recommended level of 10.
+2	select	Start the Shield of Arrav quest?
+2	option	Yes.
+3	line	Player	Of course.
+3	line	Reldo	Well, if you look around for book called The Shield of Arrav, you'll find a quest in there.
+3	line	Reldo	I'm not sure where the book is mind you... but I'm sure it's around here somewhere.
+3	line	Player	Great! Thank you.
+3	action	end
+2	option	No.
+3	line	Player	Actually, I don't think I am. Goodbye.
+3	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Talking to Reldo before finding the book
+1	line	Reldo	Hello there, {player}.
+1	select	Select an option
+1	option	About that book... Where is it again?
+2	line	Player	About that book... Where is it again?
+2	line	Reldo	I'm not sure exactly... but I'm sure it's around here somewhere.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Searching the right bookcase
+1	box	You search the bookcase and find a book titled The Shield of Arrav.
+1	line	Player	Aha! Exactly what I was looking for.
+1	action	end
+0	section	Talking to Reldo before reading the book
+1	line	Reldo	Hello there, {player}.
+1	select	Select an option
+1	option	I found that book.
+2	line	Player	I found that book.
+2	line	Reldo	Very good. I suggest you give it a read.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Talking to Reldo after reading the book
+1	line	Reldo	Hello there, {player}.
+1	box	
+1	select	Select an option
+1	option	Okay, I've read that book about the Shield of Arrav.
+2	line	Player	Okay, I've read that book about the Shield of Arrav.
+2	line	Reldo	Then perhaps you now have your quest?
+2	line	Player	I think I do. Do you know where I can find the Phoenix Gang or the Black Arm Gang?
+2	line	Reldo	No, I don't. However, I hear Baraek, the fur trader in the market, has had connections with the Phoenix Gang.
+2	line	Player	And the Black Arm Gang?
+2	line	Reldo	There are rumours that they are based in the south west corner of the city. Charlie the Tramp might be able to tell you more. He knows that part of Varrock well.
+2	line	Player	Thanks! I'll get to it!
+2	line	Reldo	Good luck.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Black Arm Gang
+0	section	Talking to Charlie the Tramp
+1	line	Charlie the Tramp	Spare some change, guv?
+1	select	Select an Option
+1	option	Who are you?
+1	option	I'm looking for the Black Arm Gang.
+2	line	Player	I'm looking for the Black Arm Gang.
+2	cond	If asking for the first time:
+3	line	Charlie the Tramp	Funny you should mention that... Rumour has it that they have their headquarters right down this alleyway. Though if I were you, I'd be careful about messing with them...
+2	cond	Otherwise:
+3	line	Charlie the Tramp	Like I told you, the rumour is that they have their headquarters right down this alleyway. Though if I were you, I'd be careful about messing with them...
+2	line	Player	Do you think they would let me join?
+2	line	Charlie the Tramp	You never know. You'll find a lady down there called Katrine. Speak to her. But whatever you do, don't upset her.
+2	action	end
+1	option	Sorry, I haven't got any.
+1	option	Go get a job!
+0	section	Talking to Katrine
+1	line	Player	What is this place?
+1	line	Katrine	It's a private business. Can I help you at all?
+1	select	Select an Option
+1	option	I've heard you're the Black Arm Gang.
+2	line	Player	I've heard you're the Black Arm Gang.
+2	line	Katrine	Who told you that?
+2	select	Select an Option
+2	option	I'd rather not reveal my sources.
+3	line	Player	I'd rather not reveal my sources.
+3	line	Katrine	Hmm... I suppose I can understand that. So, say we were the Black Arm Gang, what would you want with us?
+3	select	Select an Option
+3	option	I want to become a member of your gang.
+4	line	Player	I want to become a member of your gang.
+4	action	Continues after "How unusual..."
+3	option	I want some hints on becoming a thief.
+4	line	Player	I want some hints on becoming a thief.
+4	line	Katrine	Do you now? And what makes you think I'll provide anything like that?
+4	line	Player	Well, how about I become a member of your gang in return?
+4	line	Katrine	How unusual... Okay, let's say we are who you believe we are. Do you think we'd be recruiting people who just waltz in here saying 'hello, I'd like to play'?
+4	line	Player	I don't know. What would be the alternative?
+4	line	Katrine	Watching local thugs and thieves in action, perhaps? How do I know I can just trust someone who's wandered in here.
+4	select	Select an option
+4	option	Well, you can give me a try can't you?
+4	line	Player	Well, you can give me a try can't you?
+4	line	Katrine	I'm not so sure...
+4	action	Continues below from "Thinking about it..."
+4	option	Well, people tell me I have an honest face.
+5	line	Player	Well, people tell me I have an honest face.
+5	line	Katrine	Someone honest wanting to join a gang of thieves? Excuse me if I remain unconvinced...
+5	line	Katrine	Thinking about it... I may have a solution actually. You may have heard of the Phoenix Gang. I hear they have a very nice weapons stash not too far from here.
+5	line	Katrine	We're fresh out of crossbows, but apparently they have plenty. If someone were to acquire a couple for us, it would be very much appreciated.
+5	line	Player	Sounds simple enough. Any particular reason you need them?
+5	line	Katrine	Let's just say there's a local merchant who is refusing to pay some very reasonable 'keep-your-life-pleasant' insurance rates.
+5	line	Player	So you're planning to murder him?
+5	line	Katrine	Him? No. However, I hear that the local law might soon be finding a crossbow belonging to the Phoenix Gang in his home...
+5	line	Katrine	I also hear that a similar type of crossbow might soon be used in a murder on the other side of the city...
+5	line	Katrine	Now, are you going to keep asking questions, or are you going to go get those crossbows?
+5	option	Okay, no problem.
+6	line	Player	Okay, no problem.
+6	line	Katrine	Great! Apparently the Phoenix Gang's weapons stash is somewhere to the east. Ask that tramp outside. I'm sure he'll know more.
+6	action	end
+5	option	Sounds a little tricky. Got anything easier?
+6	line	Player	Sounds a little tricky. Got anything easier?
+6	line	Katrine	If you're not up for a little bit of danger, I don't think you've got anything to offer us.
+6	select	Select an option
+6	option	Okay, I'll do it.
+7	line	Player	Okay, I'll do it.
+7	line	Katrine	Great! Apparently the Phoenix Gang's weapons stash is somewhere to the east. Ask that tramp outside. I'm sure he'll know more.
+7	action	end
+6	option	It's a no from me then.
+7	line	Player	It's a no from me then.
+7	line	Katrine	Then get lost!
+7	action	end
+3	option	I'm looking for the door out of here.
+4	line	Player	I'm looking for the door out of here.
+4	line	Katrine	Try... the one you just came through?
+4	action	end
+2	option	It was Charlie, the tramp outside.
+3	line	Player	It was Charlie, the tramp outside.
+3	line	Katrine	Is that guy still out there? He's getting to be a nuisance. Might be time for him to have a little accident...
+3	line	Katrine	Anyway, say we were the Black Arm Gang, what would you want with us?
+3	action	Continues above after "Say we were the Black Arm Gang, what would you want with us?"
+2	option	Everyone knows. It's no great secret.
+3	line	Player	Everyone knows. It's no great secret.
+3	line	Katrine	What?! You must be joking!
+3	line	Player	Oh no, not at all... It's so obvious! Even the town guard have caught on...
+3	line	Katrine	I see... Well... say we were the Black Arm Gang, what would you want with us?
+3	action	Continues above after "Say we were the Black Arm Gang, what would you want with us?"
+1	option	What sort of business?
+2	line	Player	What sort of business?
+2	line	Katrine	A small, family business. We give financial advice to other companies. Now, if you'll excuse me.
+2	action	end
+1	option	I'm looking for fame and riches.
+2	line	Player	I'm looking for fame and riches.
+2	line	Katrine	And you expect to find that up the back streets of Varrock? Keep dreaming.
+2	action	end
+0	section	Attempting to enter the Black Arm Gang hideout before joining
+0	section	Talking to Charlie the Tramp after accepting Katrine's task
+1	line	Charlie the Tramp	Spare some change, guv?
+1	select	Select an option
+1	option	Who are you?
+1	option	Any idea where the Phoenix Gang are based?
+1	cond	If you haven't yet paid Charlie for the information:
+2	line	Player	Any idea where the Phoenix Gang are based?
+2	line	Charlie the Tramp	Sure, I know everything there is to know about this city. I'd be happy to tell you for ten coins.
+2	select	Select an option
+2	option	Okay, that sounds fair.
+3	line	Player	Okay, that sounds fair.
+3	box	You give ten coins to Charlie.
+3	line	Charlie the Tramp	Perfect! Now listen closely. The Phoenix Gang can be found east of here. Take the southern alley past the Blue Moon Inn and look for a building owned by the VTAM corporation.
+3	line	Charlie the Tramp	Their main hideout is in that building, with their weapon stash being two buildings east of it. Good luck getting into either without being a member of their gang though.
+3	line	Player	Without being a member of their gang? That might be problematic.
+3	line	Charlie the Tramp	Well, your best bet would probably be to find someone who isn't a member of the Black Arm Gang and get them to infiltrate the ranks of the Phoenix Gang for you.
+3	line	Player	Someone? Like who?
+3	line	Charlie the Tramp	There's plenty of other adventurers about besides yourself. I'm sure if you asked one of them nicely they would help you.
+3	line	Player	I see...
+3	action	end
+2	option	Ten coins? That's too much! I'll give you five.
+3	line	Player	Ten coins? That's too much! I'll give you five.
+3	line	Charlie the Tramp	I guess that'll have to do then.
+3	box	You give five coins to Charlie.
+3	line	Charlie the Tramp	Great, thanks.
+3	line	Player	So where can I find the Phoenix Gang then?
+3	line	Charlie the Tramp	If you pay me five more coins, I'll tell you.
+3	select	Select an option
+3	option	That's not fair, but I guess I don't have a choice.
+4	line	Player	That's not fair, but I guess I don't have a choice.
+4	box	You give five coins to Charlie.
+4	line	Charlie the Tramp	Perfect! Now listen closely. The Phoenix Gang can be found east of here. Take the southern alley past the Blue Moon Inn and look for a building owned by the VTAM corporation.
+4	line	Charlie the Tramp	Their main hideout is in that building, with their weapon stash being two buildings east of it. Good luck getting into either without being a member of their gang though.
+4	line	Player	Without being a member of their gang? That might be problematic.
+4	line	Charlie the Tramp	Well, your best bet would probably be to find someone who isn't a member of the Black Arm Gang and get them to infiltrate the ranks of the Phoenix Gang for you.
+4	line	Player	Someone? Like who?
+4	line	Charlie the Tramp	There's plenty of other adventurers about besides yourself. I'm sure if you asked one of them nicely they would help you.
+4	line	Player	I see...
+4	action	end
+3	option	You thieving gutter-scum! You'd better watch your back!
+4	line	Player	You thieving gutter-scum! You'd better watch your back!
+4	line	Charlie the Tramp	Yeah, sure, whatever. You don't frighten me, pal.
+4	action	end
+2	option	Never mind. I'll find it myself.
+3	line	Player	Never mind. I'll find it myself.
+3	line	Charlie the Tramp	Well, you know where to find me if you get lost!
+3	action	end
+1	cond	Asking again after already paying Charlie for the information:
+2	line	Player	Any idea where the Phoenix Gang are based?
+2	line	Charlie the Tramp	Well, given you paid up, I guess I can remind you. The Phoenix Gang can be found east of here. Take the southern alley past the Blue Moon Inn and look for a building owned by the VTAM corporation.
+2	line	Charlie the Tramp	Their main hideout is in that building, with their weapon stash being two buildings east of it. Good luck getting into either without being a member of their gang though.
+2	line	Player	Without being a member of their gang? That might be problematic.
+2	line	Charlie the Tramp	Well, your best bet would probably be to find someone who isn't a member of the Black Arm Gang and get them to infiltrate the ranks of the Phoenix Gang for you.
+2	line	Player	Someone? Like who?
+2	line	Charlie the Tramp	There's plenty of other adventurers about besides yourself. I'm sure if you asked one of them nicely they would help you.
+2	line	Player	I see...
+2	action	end
+1	option	Okay, here you go.
+1	option	Sorry, I haven't got any.
+0	section	Talking to Katrine again after accepting her task
+1	line	Katrine	Have you got those crossbows for me yet?
+1	cond	If the player has no Phoenix crossbows:
+2	line	Player	No, I haven't found them yet. Do you know where I should be looking.
+2	line	Katrine	Apparently the Phoenix Gang's weapons stash is somewhere to the east. Ask that tramp outside. I'm sure he'll know more.
+2	action	end
+1	cond	If the player has one Phoenix crossbow:
+2	line	Player	I have one...
+2	line	Katrine	Well, I need two. Come back when you have them.
+2	action	end
+1	cond	If the player has two Phoenix crossbows:
+2	line	Player	Yes, I have.
+2	box	You give the crossbows to Katrine.
+2	line	Katrine	It seems you're more skilled than I originally gave you credit for. Well done. Consider yourself a member of the Black Arm Gang. I'd suggest you now go and familiarise yourself with the rest of the ganghouse.
+2	action	end
+0	section	Talking to Katrine after joining the Black Arm Gang
+1	line	Player	Hey.
+1	line	Katrine	Hey.
+1	select	Select an Option
+1	option	So I'm a part of the gang now?
+2	line	Player	So I'm part of the gang now?
+2	line	Katrine	You are. Feel free to familiarise yourself with the rest of the ganghouse.
+2	line	Player	Will do! Thanks!
+2	action	end
+1	option	Who are all those people in there?
+2	line	Player	Who are all those people in there?
+2	line	Katrine	They're just various rogues and thieves.
+2	line	Player	They don't say a lot...
+2	line	Katrine	Nope.
+2	action	end
+1	option	Teach me to be a top class criminal!
+2	line	Player	Teach me to be a top class criminal.
+2	line	Katrine	Teach yourself.
+2	action	end
+0	section	Searching the Black Arm Gang's cupboard
+1	cond	If the player doesn't have the shield half in their inventory:
+2	box	You open the cupboard and find half of a shield inside.
+2	line	Player	This must be the Shield of Arrav! Well... half of it at least. I wonder where the other half is...
+2	action	end
+1	cond	If the player's inventory is full:
+1	cond	If the player has the shield half already:
+2	box	You open the cupboard, but don't find anything of interest inside.
+2	action	end
+0	section	Talking to Straven after joining the Black Arm Gang
+1	line	Straven	Stay away from here! Black Arm dog!
+1	action	end
+0	section	Attempting to enter the weapon supply depot without the key
+1	box	The door is securely locked.
+1	action	end
+0	section	Talking to the Weaponsmaster
+1	line	Player	Hello.
+1	line	Weaponsmaster	Hey! Who are you? I'm gonna teach you not to stick your nose where it don't belong!
+1	action	end
+0	section	Attempting to take a Phoenix crossbow
+1	line	Weaponsmaster	Stop! Thief!
+1	action	end
+0	section	Talking to Reldo with half of the shield
+1	line	Reldo	Hello there, {player}.
+1	select	Select an option
+1	option	I've found half of the Shield of Arrav!
+2	line	Player	I've found half of the Shield of Arrav!
+2	line	Reldo	Half?
+2	line	Player	Yes. It seems it was split in two.
+2	line	Reldo	I see... Where did you find this half?
+2	line	Player	The Black Arm Gang had it. I managed to infiltrate their gang and steal it from them.
+2	line	Reldo	A split gang and a split shield. My guess would be that the other gang has the other half.
+2	line	Player	Well, I did have a member of the Phoenix Gang help me... Maybe they can find the other half.
+2	line	Reldo	Let's hope so. In the meantime, you should probably head over to the museum so they can verify the authenticity of this half.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Phoenix Gang
+0	section	Talking to Baraek
+1	select	Select an option
+1	option	Can you sell me some furs?
+1	option	Can you tell me where I can find the Phoenix Gang?
+2	line	Player	Can you tell me where I can find the Phoenix Gang?
+2	line	Baraek	Shh, shh, shh! Not so loud! You don't want to get me in trouble, do you?
+2	line	Player	So I take it that you do know where they are.
+2	line	Baraek	I may do... but I don't want to get into trouble for revealing their hideout. Of course, if I was, say 20 coins richer, I may happen to be more inclined to take that sort of risk...
+2	select	Select an Option
+2	option	Okay. Have 20 gold coins.
+3	line	Player	Okay. Have 20 gold coins.
+3	cond	If the player has 20 coins.
+4	action	
+4	line	Baraek	Okay, to get to the gang hideout, head to the southern gates of the city and then head down the alleyway past the Blue Moon Inn.
+4	line	Baraek	Down there you'll find a building owned by the VTAM corporation. That's where you'll find the Phoenix Gang. Just be careful. They ain't the types to be messed about.
+4	line	Player	Thanks!
+4	action	end
+3	cond	If the player doesn't have 20 coins.
+4	line	Player	Uh... oops. I don't actually have 20 coins. Silly me.
+4	action	end
+2	option	No, I don't like things like bribery.
+3	line	Player	No, I don't do things like bribery.
+3	line	Baraek	If you wanna deal with the Phoenix Gang, they're involved in much worse than a bit of bribery.
+3	action	end
+2	option	Yes. I'd like to be 20 coins richer too.
+3	line	Player	Yes, I'd like to be 20 coins richer too.
+3	action	end
+1	option	Hello. I am in search of a quest.
+0	section	Talking to Straven or attempting to open the door
+1	line	Player	What's through that door?
+1	line	Straven	You can't go in there. Only authorised personnel of the VTAM Corporation are allowed beyond this point.
+1	select	Select an option
+1	option	I know who you are!
+2	line	Player	I know who you are!
+2	line	Straven	Really? Well? Who are we then?
+2	line	Player	This is the headquarters of one of the most dangerous crime syndicates this city has ever seen! The Phoenix Gang!
+2	line	Straven	No, this is a legitimate business run by legitimate individuals. However... supposing we were this crime gang, what would you want with us?
+2	select	Select an option
+2	option	I'd like to offer you my services.
+3	line	Player	I'd like to offer you my services.
+3	line	Straven	You mean you'd like to join the Phoenix Gang? Well, obviously I can't speak for them, but the Phoenix Gang doesn't let people join just like that. First, you'd need to prove your loyalty.
+3	line	Player	How would I go about doing that?
+3	line	Straven	Obviously, I would have no idea. Although, having said that, a rival gang of ours, er, theirs, called the Black Arm Gang is supposedly meeting a contact from Port Sarim today.
+3	line	Straven	Apparently the meeting is going to take place in the Blue Moon Inn, and supposedly the contact is none other than the notorious mass murderer turned pirate captain, Jonny the Beard.
+3	line	Straven	Now, obviously I know nothing about the dealings of the Phoenix Gang, but I bet if somebody were to arrange an accident for Jonny and bring back his intelligence report, the gang would be very pleased.
+3	line	Player	I see... I'm sure I can help sort something out for them. I'll get right on it.
+3	action	end
+2	option	I want nothing. I was just making sure you were them.
+3	line	Player	I want nothing. I was just making sure you were them.
+3	line	Straven	Well then get lost and stop wasting my time.
+3	action	end
+1	option	How do I get a job with the VTAM corporation?
+2	line	Player	How do I get a job with the VTAM corporation?
+2	line	Straven	Get a copy of the Varrock Herald. If we have any positions right now, they'll be advertised in there.
+2	action	end
+1	option	Fair enough.
+2	line	Player	Fair enough.
+2	action	end
+0	section	Talking to Straven or opening the door after accepting his task
+1	line	Straven	How's your little mission going?
+1	cond	If the player doesn't have the intel report.
+2	line	Straven	How's your little mission going?
+2	line	Player	I don't have it yet...
+2	line	Straven	Jonny the Beard is the person who has it. I imagine he will be in the Blue Moon Inn... Not that I'd know for sure, with me definitely not being a member of the Phoenix Gang and all.
+2	action	end
+1	cond	If the player has the intel report.
+2	line	Player	I have the intelligence report!
+2	line	Straven	Let's see it then.
+2	cond	If the intel report is in the bank.
+3	line	Player	Let me go get it from the bank.
+3	line	Straven	I'll wait here.
+3	action	end
+2	cond	If the intel report is in the inventory.
+3	box	You show the report to Straven.
+3	line	Straven	Very good... Very good... Okay, I'm satisfied. Welcome to the Phoenix Gang! I'm Straven, one of the gang leaders.
+3	line	Player	Nice to meet you. I'm {player}.
+3	line	Straven	As a member of our gang, you now have access to our hideout and our weapons supply depot. The hideout is just through this door and the depot is two doors down from here. You'll need this key to get in.
+3	box	Straven hands you a key.
+3	line	Straven	Once again, welcome to the Phoenix Gang!
+3	action	end
+0	section	Talking to Straven after joining the Phoenix Gang
+1	line	Straven	Greetings, fellow gang member.
+1	select	Select an Option
+1	option	I've heard you've got some cool treasures in this place.
+2	line	Player	I've heard you've got some cool treasures in this place.
+2	line	Straven	Oh yeah, we've all stolen some stuff in our time. Our candlesticks down here, for example, were quite a challenge to get out of the palace.
+2	line	Player	And the Shield of Arrav?
+2	line	Straven	Woah... that's a blast from the past! We stole that years and years ago!
+2	line	Straven	Truth be told, we don't even have the whole shield anymore. A few years ago there was a big fight within the gang and the shield got broken in half as a result.
+2	line	Straven	After the fight, some gang members split off and formed their own group. They took one half of the shield with them.
+2	line	Player	This other group? The Black Arm Gang?
+2	line	Straven	Indeed.
+2	action	other
+1	option	Any suggestions for where I can go thieving?
+2	line	Player	Any suggestions for where I can go thieving?
+2	line	Straven	You could always try the marketplace over in Ardougne. Lots of opportunity there!
+2	action	other
+1	option	Where's the Black Arm Gang hideout?
+2	line	Player	Where's the Black Arm Gang hideout?
+2	line	Straven	Interested in spying on the enemy, are you? It will be tricky. Their security is pretty good. Not as good as ours obviously, but still good.
+2	line	Straven	Still, if you really want to go there, it's down an alleyway near the southern gate. One of our contacts, a tramp going by the name of Charlie, keeps an eye on it. He may be able to help you.
+2	line	Player	I see. Thanks for the help!
+2	action	other
+1	option	I'd better get going.
+2	line	Player	I'd better get going.
+2	action	end
+0	section	Talking to Straven after losing the weapon store key
+1	line	Straven	Greetings, fellow gang member.
+1	line	Player	I'm afraid I lost that key you gave me...
+1	line	Straven	You really need to be more careful. We don't want that key falling into the wrong hands. Have this spare, but don't lose it this time!
+1	box	Straven hands you a key.
+1	action	end
+0	section	Searching the Phoenix Gang's chest
+1	box	You search the chest.
+2	box	You open the chest and find half of a shield inside.
+2	action	end
+1	cond	If the player's inventory is full:
+2	box	You open the chest and find half of a shield inside, but you don't have enough room to take it.
+2	action	end
+1	cond	If the player has the shield half already:
+2	box	You open the chest, but don't find anything of interest inside.
+2	action	end
+0	section	Talking to the Weaponsmaster after joining the Phoenix Gang
+1	line	Player	Hello.
+1	line	Weaponsmaster	Hello fellow Phoenix! What are you after?
+1	select	Select an Option
+1	option	I'm after a weapon or two.
+2	line	Player	I'm after a weapon or two.
+2	line	Weaponsmaster	No problem. Feel free to look around.
+2	action	end
+1	option	I'm looking for treasure.
+2	line	Player	I'm looking for treasure.
+2	line	Weaponsmaster	Aren't we all? We've not got any up here. Go mug someone somewhere if you want some treasure.
+2	action	end
+0	section	Attempting to take a Phoenix crossbow after joining the Phoenix Gang
+1	line	Weaponsmaster	Hey! That's Straven's! He won't like you messing with that!
+1	action	end
+0	section	Learning the location of the Black Arm gang from Charlie the Tramp
+1	line	Charlie the Tramp	Spare some change, guv?
+1	select	Select an Option
+1	option	Who are you?
+1	option	I'm looking for the Black Arm Gang.
+2	line	Player	I'm looking for the Black Arm Gang.
+2	line	Charlie the Tramp	Like I told you, the rumour is that they have their headquarters right down this alleyway. Though if I were you, I'd be careful about messing with them...
+2	line	Player	Do you think they would let me join?
+2	line	Charlie the Tramp	No. You're a collaborator with the Phoenix Gang. There's no way they'll let you join.
+2	select	Select an option
+2	option	How did you know I was in the Phoenix Gang?
+3	line	Player	How did you know I was in the Phoenix Gang?
+3	line	Charlie the Tramp	I've been known to have dealings with the Phoenix Gang. I wouldn't be very good at my job if I didn't know their members.
+3	line	Player	I see. So, any ideas how I could get in there?
+3	line	Charlie the Tramp	Your best bet would probably be to find someone who isn't a member of the Phoenix Gang and get them to infiltrate the ranks of the Black Arm Gang for you.
+3	line	Player	Someone? Like who?
+3	line	Charlie the Tramp	There's plenty of other adventurers about besides yourself. I'm sure if you asked one of them nicely they would help you.
+3	line	Player	I see...
+3	action	end
+2	option	Any ideas how I could get in there then?
+3	line	Player	Any ideas how I could get in there then?
+3	line	Charlie the Tramp	Your best bet would probably be to find someone who isn't a member of the Phoenix Gang and get them to infiltrate the ranks of the Black Arm Gang for you.
+3	line	Player	Someone? Like who?
+3	line	Charlie the Tramp	There's plenty of other adventurers about besides yourself. I'm sure if you asked one of them nicely they would help you.
+3	line	Player	I see...
+3	action	end
+1	option	Go get a job!
+1	option	Sorry, I haven't got any.
+0	section	Talking to Katrine after joining the Phoenix Gang
+1	line	Katrine	You've got some guts coming here, Phoenix scum! Get lost, or I'll make sure you haven't got those guts anymore!
+1	action	end
+0	section	Attempting to enter deeper into the Black Arm Gang base as a Phoenix Gang member
+1	box	The door is securely locked.
+1	action	end
+0	section	Talking to Reldo with half of the shield
+1	line	Reldo	Hello there, {player}.
+1	select	Select an option
+1	option	I've found half of the Shield of Arrav!
+2	line	Player	I've found half of the Shield of Arrav!
+2	line	Reldo	Half?
+2	line	Player	Yes. It seems it was split in two.
+2	line	Reldo	I see... Where did you find this half?
+2	line	Player	The Phoenix Gang had it. I managed to infiltrate their gang and steal it from them.
+2	line	Reldo	A split gang and a split shield. My guess would be that the other gang has the other half.
+2	line	Player	Well, I don't think I'll have much luck infiltrating the Black Arm Gang now that I've joined their rivals, but maybe someone else will be able to.
+2	line	Reldo	Let's hope so. In the meantime, you should probably head over to the museum so they can verify the authenticity of this half.
+2	action	end
+1	option	Do you have anything to trade?
+1	option	I'd better get going.
+0	section	Tradeable items
+0	section	Inspecting a weapon store key
+1	cond	If not restricted from trading:
+2	box	using}} it on them.
+2	action	end
+1	cond	If restricted from trading:
+2	box	using}} it on them.
+2	action	end
+0	section	Inspecting a Phoenix crossbow
+1	cond	If not restricted from trading:
+2	box	If you need to give this item to a player who's restricted from trading, you can give them the item by using it on them.
+2	action	end
+1	cond	If restricted from trading:
+2	box	using}} it on them.
+2	action	end
+0	section	Inspecting a certificate half
+1	cond	If not restricted from trading:
+2	box	using}} it on them.
+2	action	end
+1	cond	If restricted from trading:
+2	box	using}} it on them.
+2	action	end
+0	section	Inspecting a certificate half while having both pieces
+1	select	Combine the two half-certificates?
+1	option	Yes.
+2	box	You combine the two halves to make a complete certificate.
+1	option	No.
+2	action	end
+0	section	Using a tradeable quest item on another player
+1	select	Drop your [key/crossbow/certificate] for {player} to take?
+1	option	Yes
+2	action	{player} has dropped something for you to take.
+2	action	end
+1	option	No
+2	action	end
+0	section	Finishing up
+0	section	Talking to Curator Haig Halen
+1	line	Player	Hello there. I'm here about the Shield of Arrav.
+1	line	Curator Haig Halen	The Shield of Arrav? The Museum has been searching for that for years! The late King Roald II offered a generous reward for its return!
+1	line	Player	Well, I'm here to claim it.
+1	line	Curator Haig Halen	You've found the shield? Let's have a look!
+1	box	You show the shield half to the curator.
+1	line	Curator Haig Halen	This is incredible! But where's the other half?
+1	line	Player	I obtained this half from the [Phoenix Gang/Black Arm Gang]. The [Black Arm Gang/Phoenix Gang] might have the other half.
+1	line	Curator Haig Halen	That does sound plausible. We will have to hope that another adventurer can recover that half.
+1	line	Player	So will I be rewarded for recovering half of the shield?
+1	line	Curator Haig Halen	I'm afraid the reward is for the recovery of the full shield. However, what I'll do is write you out two half- certificates. If another adventurer returns the other shield half, I'll do the same for them.
+1	line	Curator Haig Halen	The two of you can then swap one of the half- certificates to make a full one each. Take that to the King and he will grant you your reward.
+1	box	The curator gives you two half-certificates.
+1	action	end
+0	section	Talking to the Curator again after giving him the shield half
+1	line	Curator Haig Halen	Welcome to the museum of Varrock.
+1	line	Player	Hello there. I'm here about the Shield of Arrav.
+1	line	Curator Haig Halen	I gave you two half-certificates for the half you returned. If another adventurer returns the other shield half, I'll do the same for them.
+1	line	Curator Haig Halen	The two of you can then swap one of the half-certificates to make a full one each. Take that to the King and he will grant you your reward.
+1	line	Player	Would it be okay to get more half-certificates?
+1	line	Curator Haig Halen	I suppose so. It's not like you can do anything with them without the other half.
+1	box	The curator gives you two half-certificates.
+1	action	end
+0	section	Talking to King Roald without a full certificate
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	I'm here about the Shield of Arrav.
+2	line	Player	I'm here about the Shield of Arrav.
+2	cond	If the player has a shield half:
+3	line	King Roald	The Shield of Arrav? Yes, I do recall my father put a reward out for that.
+3	line	Player	Well, I've managed to find half the shield!
+3	line	King Roald	You have? Well, before we go any further, you'll need to get the authenticity of the shield verified by the curator at the museum.
+3	line	Player	Okay. I'll head over there.
+3	action	end
+2	cond	If the player has a half-certificate:
+3	box	You show the certificate half to the king.
+3	line	King Roald	I'm afraid that's only half the reward certificate. You'll have to get the other half and join them together if you want to claim the reward.
+3	action	end
+1	option	Not really.
+0	section	Talking to King Roald with a full certificate
+1	line	Player	Greetings, your majesty.
+1	line	King Roald	Yes, citizen. Do you need something?
+1	select	Select an option
+1	option	I'm here about the Shield of Arrav.
+2	line	Player	I'm here about the Shield of Arrav.
+2	box	You show the certificate to the king.
+2	line	King Roald	My goodness! This is for the reward offered by my father many years ago! I never thought I would live to see the day when someone came forward to claim it!
+2	line	Player	It was quite the undertaking. I wouldn't have been able to do it without help from a fellow adventurer.
+2	line	King Roald	Well, in that case, it's only right that you both be rewarded. I will grant half of the reward to you and half to your companion. That means 600 coins for you. Enjoy it! You've very much earned it!
+2	action	end
+1	option	Not really.
+0	section	Post-quest
+0	section	Talking to Straven as a member of the Phoenix Gang
+1	line	Straven	Greetings, fellow gang member.
+1	select	Select an Option
+1	option	I've heard you've got some cool treasures in this place.
+1	line	Player	I've heard you've got some cool treasures in this place.
+1	line	Straven	Oh yeah, we've all stolen some stuff in our time. Our candlesticks down here, for example, were quite a challenge to get out of the palace.
+1	line	Player	And the Shield of Arrav?
+1	line	Straven	Once one of our most prized possessions.
+1	line	Player	Once?
+1	line	Straven	It seems the Black Arm Gang weren't content with having one half. They recently stole the other half of the shield from us as well!
+1	line	Player	Oh no! I'll be sure to keep an eye out for any of their members sneaking around.
+2	action	other
+1	option	Any suggestions for where I can go thieving?
+2	action	above
+1	option	I'd better get going.
+2	action	above
+0	section	If you lost the weapon store key
+1	action	above
+0	section	Talking to Katrine as a member of the Black Arm Gang
+1	line	Player	Hey.
+1	line	Katrine	Hey.
+1	select	Select an Option
+1	option	So I'm a part of the gang now?
+2	line	Player	So I'm part of the gang now?
+2	line	Katrine	You are, but don't make me regret it. In case you didn't hear, someone recently stole something very important from us. We need to be more careful about who we let in.
+2	line	Player	Imagine doing something like that!
+2	action	end
+1	option	Who are all those people in there?
+2	action	above
+1	option	Teach me to be a top class criminal!
+2	action	above
+0	section	Claiming the antique lamp from King Roald
+1	line	King Roald	Here, citizen. I have this lamp for you.
+1	action	
+1	line	Player	Thanks!
+1	action	end

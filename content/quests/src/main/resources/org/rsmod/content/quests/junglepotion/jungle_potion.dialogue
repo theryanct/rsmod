@@ -1,0 +1,215 @@
+# Generated from the OSRS Wiki page "Transcript:Jungle Potion" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Trufitus	Greetings Bwana! I am Trufitus Shakaya of the Tai Bwo Wannai village.
+1	line	Trufitus	Welcome to our humble village.
+1	select	Select an Option
+1	option	What does Bwana mean?
+2	line	Player	What does Bwana mean?
+2	line	Trufitus	It means friend, and friends come in peace. I assume that you come in peace?
+2	select	Select an Option
+2	option	Yes, of course I do.
+3	line	Player	Yes, of course I do.
+3	line	Trufitus	Well, that is good news, as I may have a proposition for you.
+3	select	Select an Option
+3	option	A proposition eh? Sounds interesting!
+4	line	Player	A proposition eh? Sounds interesting!
+4	line	Trufitus	I hoped you would think so. My people are afraid to stay in the village.
+4	line	Trufitus	They have returned to the jungle and I need to commune with the gods
+4	line	Trufitus	to see what fate befalls us. You can help me by collecting some herbs that I need.
+4	select	Select an Option
+4	option	Me? How can I help?
+5	line	Player	Me? How can I help?
+5	line	Trufitus	I need to make a special brew! A potion that helps me to commune with the gods. For this potion, I need very special herbs, that are only found in the deep jungle.
+5	line	Trufitus	I can only guide you so far as the herbs are not easy to find. With some luck, you will find each herb in turn and bring to me. I will give you details of where to find the next herb.
+5	line	Trufitus	In return for this great favour I will give you training in Herblore.
+5	select	Start the Jungle Potion quest?
+5	option	Yes.
+6	line	Player	It sounds like just the challenge for me. And it would make a nice break from killing things!
+6	line	Trufitus	That is excellent Bwana! The first herb that you need to gather is called
+6	line	Trufitus	Snake Weed.
+6	line	Trufitus	It grows near the vines in an area to the south west where
+6	line	Trufitus	the ground turns soft and the water kisses your feet.
+6	action	end
+5	option	No.
+6	line	Player	Hmmm, sounds difficult, I don't know if I am ready for the challenge.
+6	line	Trufitus	Very well then Bwana, maybe you will return to me invigorated and ready to take up the challenge one day?
+6	action	end
+4	option	I am very sorry, but I don't have time for that.
+5	line	Player	I am very sorry, but I don't have any time for that.
+5	line	Trufitus	Very well then, may your journeys bring you much joy.
+5	line	Trufitus	Maybe you will pass this way again and you then take up my proposal?
+5	line	Trufitus	But for now, fare thee well.
+5	action	end
+3	option	I am sorry, but I am very busy.
+4	line	Player	I am sorry, but I am very busy.
+4	line	Trufitus	Very well then, may your journeys bring you much joy.
+4	line	Trufitus	Maybe you will pass this way again and you then take up my proposal?
+4	line	Trufitus	But for now, fare thee well.
+4	action	end
+2	option	What does a warrior like me know about peace?
+3	line	Player	What does a warrior like me know about peace?
+3	line	Trufitus	When you grow weary of violence and seek a more enlightened path, please pay me a visit
+3	line	Trufitus	as I may have a proposition for you. Now I need to attend to the plight of my people. Please excuse me...
+3	action	end
+1	option	Tai Bwo Wannai? What does that mean?
+2	line	Player	Tai Bwo Wannai? What does that mean?
+2	line	Trufitus	It means 'small clearing in the jungle' but it is now the name of our village.
+2	select	Select an Option
+2	option	It's a nice village, where is everyone?
+3	line	Player	It's a nice village, where is everyone?
+3	line	Trufitus	My people are afraid to stay in the village. They have returned to the jungle. I need to commune with the gods to see what fate befalls us.
+3	line	Trufitus	You may be able to help with this.
+3	select	Select an Option
+3	option	Me? How can I help?
+4	action	above
+3	option	I am sorry, but I am very busy.
+4	action	above
+2	option	I am sorry, but I am very busy.
+3	action	above
+1	option	It's a nice village, where is everyone?
+2	action	above
+0	section	Snake Weed
+0	section	Searching the Marshy jungle vine
+1	box	You find a herb.
+1	action	end
+0	section	Talking to Trufitus
+1	line	Trufitus	Hello Bwana, do you have the Snake Weed?
+1	select	Select an Option
+1	option	Of course!
+2	line	Player	Of course!
+2	cond	If the player does not have any snake weed:
+3	line	Trufitus	Please don't try to deceive me.
+3	line	Trufitus	I really need that Snake Weed if I am to make this potion.
+3	action	end
+2	cond	If the player has grimy snake weed:
+3	line	Trufitus	Sorry, Bwana, that herb is so dirty that I can't even tell whether it is fresh. Please clean it first.
+3	action	end
+2	cond	If the player has snake weed:
+3	box	You give the Snake Weed to Trufitus.
+3	line	Trufitus	Great, you have the Snake Weed! Many thanks. Ok, the next herb is called Ardrigal. It is related to the palm and grows to the east in its brother's shady profusion.
+3	line	Trufitus	To the east you will find a small peninsula, it is just after the cliffs come down to meet the sands, here is where you should search for it.
+3	action	end
+2	cond	If the player has snake weed, but obtained from a monster drop:
+3	box	You give the Snake Weed to Trufitus.
+3	line	Trufitus	That's not fresh snake weed, did you pick it yourself? Go get me some fresh snake weed and remember to pick it yourself.
+3	action	end
+1	option	Not yet, sorry, what's the clue again?
+2	line	Player	Not yet, sorry, what's the clue again?
+2	line	Trufitus	It grows near vines in an area to the south west where the ground turns soft and the water kisses your feet.
+2	line	Trufitus	I really need that Snake Weed if I am to make this potion.
+2	action	end
+0	section	Ardrigal
+0	section	Search palm tree
+1	box	You find a herb.
+1	action	end
+0	section	Talking to Trufitus
+1	line	Trufitus	Hello Bwana, have you been able to get the Ardrigal?
+1	select	Select an Option
+1	option	Of course!
+2	line	Player	Of course!
+2	cond	If the player does not have any ardrigal:
+3	line	Trufitus	Please don't try to deceive me.
+3	line	Trufitus	I really need that Ardrigal if I am to make this potion.
+3	action	end
+2	cond	If the player has grimy ardrigal:
+3	line	Trufitus	Sorry, Bwana, that herb is so dirty that I can't even tell whether it is fresh. Please clean it first.
+3	action	end
+2	cond	If the player has ardrigal:
+3	box	You give the Ardrigal to Trufitus.
+3	line	Trufitus	Great, you have the Ardrigal! Many thanks.
+3	line	Trufitus	You are doing well Bwana. The next herb is called Sito Foil, and it grows best where the ground has been blackened by the living flame.
+3	action	end
+1	option	Not yet, sorry, what's the clue again?
+2	line	Player	Not yet, sorry, what's the clue again ?
+2	line	Trufitus	You are looking for Ardrigal. It is related to the palm and grows in its brothers shady profusion.
+2	line	Trufitus	To the east you will find a small peninsula, it is just after the cliffs come down to meet the sands, here is where you should search for it.
+2	line	Trufitus	I really need that Ardrigal if I am to make this potion.
+2	action	end
+0	section	Sito Foil
+0	section	Searching the Scorched earth
+1	box	You find a herb.
+1	action	end
+0	section	Talking to Trufitus
+1	line	Trufitus	Greetings Bwana, have you been successful in getting the Sito Foil?
+1	select	Select an Option
+1	option	Of course!
+2	line	Player	Of course!
+2	cond	If the player does not have any sito foil:
+3	line	Trufitus	Please don't try to deceive me.
+3	line	Trufitus	I really need that Sito Foil if I am to make this potion.
+3	action	end
+2	cond	If the player has grimy sito foil:
+3	line	Trufitus	Sorry, Bwana, that herb is so dirty that I can't even tell whether it is fresh. Please clean it first.
+3	action	end
+2	cond	If the player has sito foil:
+3	box	You give the Sito Foil to Trufitus.
+3	line	Trufitus	Well done Bwana, just two more herbs to collect.
+3	line	Trufitus	The next herb is called Volencia Moss. It clings to rocks for its existence. It is difficult to see, so you must search for it well.
+3	line	Trufitus	It prefers rocks of high metal content and a frequently disturbed environment. There is some, I believe to the south east of this village.
+3	action	end
+1	option	Not yet, sorry, what's the clue again?
+2	line	Player	Not yet, sorry, what's the clue again?
+2	line	Trufitus	You are looking for Sito Foil, and it grows best where the ground has been blackened by the living flame.
+2	line	Trufitus	I really need that Sito Foil if I am to make this potion.
+2	action	end
+0	section	Volencia Moss
+0	section	Searching the rock
+1	box	You find a herb.
+1	action	end
+0	section	Talking to Trufitus
+1	line	Trufitus	Greetings Bwana, have you been successful in getting the Volencia Moss?
+1	select	Select an Option
+1	option	Of course!
+2	line	Player	Of course!
+2	cond	If the player does not have any volencia moss:
+3	line	Trufitus	Please don't try to deceive me! I really need that Volencia Moss if I am to make this potion.
+3	action	end
+2	cond	If the player has grimy volencia moss:
+3	line	Trufitus	Sorry, Bwana, that herb is so dirty that I can't even tell whether it is fresh. Please clean it first.
+3	action	end
+2	cond	If the player has volencia moss:
+3	box	You give the Volencia Moss to Trufitus.
+3	line	Trufitus	Ah Volencia Moss, beautiful. One final herb and the potion will be complete. This is the most difficult to find as it inhabits the darkness of the underground. It is called Rogue's Purse, and is only to be found in
+3	line	Trufitus	caverns in the northern part of this island. A secret entrance to the caverns is set into the northern cliffs of this land. Take care Bwana as it may be dangerous.
+3	action	end
+1	option	Not yet, sorry, what's the clue again?
+2	line	Player	Not yet, sorry, what's the clue again?
+2	line	Trufitus	You are looking for Volencia Moss. It clings to rocks for its existence. It is difficult to see, so you must search for it well.
+2	line	Trufitus	It prefers rocks of high metal content and a frequently disturbed environment. There is some, I believe to the south east of this village.
+2	line	Trufitus	I really need that Volencia Moss if I am to make this potion.
+2	action	end
+0	section	Rogue's Purse
+0	section	Search Rocks
+1	box	You search the rocks... You find an entrance into some caves.
+1	select	Would you like to enter the caves?
+1	option	Yes, I'll enter the cave.
+2	box	You decide to enter the caves. You climb down several steep rock faces into the cavern below.
+2	action	end
+1	option	No thanks, I'll give it a miss.
+2	box	You decide to stay where you are!
+2	action	end
+0	section	Search Fungus covered Cavern wall
+1	box	You find a herb.
+1	action	end
+0	section	Talking to Trufitus
+1	line	Trufitus	Greetings Bwana, have you been successful in getting the Rogue's Purse?
+1	select	Select an Option
+1	option	Of course!
+2	line	Player	Of course!
+2	cond	If the player has no rogue's purse:
+3	line	Trufitus	Please don't try to deceive me, I really need that Rogue's Purse if I am to make this potion.
+3	action	end
+2	cond	If the player has grimy rogue's purse:
+3	line	Trufitus	Sorry Bwana, that herb is so dirty I can't even tell whether it is fresh. Please clean it first.
+3	action	end
+2	cond	If the player has rogue's purse:
+3	box	You give the Rogue's Pursee to Trufitus.
+3	line	Trufitus	Most excellent Bwana! You have returned all the herbs to me and, I can finish the preparations for the potion, and at last divine with the gods.
+3	line	Trufitus	Many blessings on you! I must now prepare, please excuse me while I make the arrangements.
+3	box	Trufitus shows you some techniques in Herblore. You gain some experience in Herblore.
+1	option	Not yet, sorry, what's the clue again?
+2	line	Player	Not yet, sorry, what's the clue again?
+2	line	Trufitus	You are looking for Rogues Purse.
+2	line	Trufitus	It inhabits the darkness of the underground, and grows in caverns to the north. A secret entrance to the caverns is set into the northern cliffs, be careful Bwana.
+2	line	Trufitus	I really need that Rogues Purse if I am to make this potion.
+2	action	end

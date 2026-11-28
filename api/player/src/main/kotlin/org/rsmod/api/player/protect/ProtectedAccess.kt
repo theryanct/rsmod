@@ -3142,6 +3142,19 @@ public class ProtectedAccess(
         Camera.camMoveTo(player, dest, height, rate, rate2)
     }
 
+    public fun camShake(axis: Int, random: Int, amplitude: Int, rate: Int) {
+        Camera.camShake(player, axis, random, amplitude, rate)
+    }
+
+    public fun camSmoothReset(
+        moveConstant: Int = 10,
+        moveProportional: Int = 10,
+        lookConstant: Int = 10,
+        lookProportional: Int = 10,
+    ) {
+        Camera.camSmoothReset(player, moveConstant, moveProportional, lookConstant, lookProportional)
+    }
+
     public fun camReset() {
         Camera.camReset(player)
     }

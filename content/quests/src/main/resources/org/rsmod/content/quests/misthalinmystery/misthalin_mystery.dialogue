@@ -1,0 +1,374 @@
+# Generated from the OSRS Wiki page "Transcript:Misthalin Mystery" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Talking to Abigale or Hewey
+1	line	Abigale	Help! Help!
+1	select	Start the Misthalin Mystery quest?
+1	option	Yes.
+2	line	Player	What has happened here?
+2	line	Abigale	We were invited to a house party on an island not far from here... Something felt wrong about the whole thing but we went anyway...
+2	line	Abigale	The house seemed pretty creepy, but everything was going fine, we were all having a good time...
+2	line	Abigale	...and that's when we got attacked...
+2	line	Hewey	I... I tried to save her...
+2	line	Abigale	Hewey bought me enough time to find an old boat. I went back to get him but it was too late. I'm scared that he won't make it.
+2	line	Abigale	You have to do something... they can't get away with this!
+2	line	Player	What do you want me to do?
+2	line	Abigale	That psycho is still out there, you have to bring them to justice.
+2	line	Abigale	The boat we escaped on is just over there, you can use it to get to the island.
+2	line	Player	Okay, I'll see what I can do.
+2	action	end
+1	option	No.
+2	line	Player	I'm not getting involved in this!
+2	action	end
+0	section	Talking to Abigale or Hewey again
+1	line	Abigale	Please, you need to make sure they don't get away with this! You can use the boat over there to get to the island we escaped from.
+1	action	end
+0	section	Trying to use the rowboat before starting the quest
+1	line	Player	I should probably talk to whoever left this boat here before rowing off in it...
+1	action	end
+0	section	Board rowboat to the island
+0	section	Board rowboat to Lumbridge swamp
+0	section	Arriving to the manor
+0	section	Taking the bucket
+1	cond	If the player has no inventory space:
+0	section	Entering the manor
+1	cond	If the player does not have the manor key:
+2	box	The door is securely locked.
+2	line	Player	I'll have to find the key...
+2	action	end
+1	cond	If the player has the manor key:
+0	section	Sid's demise
+1	line	Sid	Woo, party on bro!
+1	line	Sid	Woah, that wind totally just felt like someone breathing on my neck!
+1	line	Sid	Whoah, not cool bro...
+1	line	Sid	...urgh...
+1	line	Sid	...I'm feeling woozy...
+1	line	Sid	...gargh...
+1	line	Sid	...I see the light...
+1	line	Sid	...urrggghhh...
+1	line	Sid	...it's not my time...glurgh
+1	line	Sid	...gargle...urgh...
+1	line	Killer	...
+1	line	Player	...
+1	line	Sid	...glargh...help...me...
+1	line	Sid	...urgh...hergle...
+1	line	Sid	...
+1	line	Sid	...
+1	line	Sid	...flergh.
+1	box	Sid collapses to the ground in a crumpled mess. As he falls down you spot something shiny fall out of his shirt pocket and into the barrel of water.
+1	line	Player	Gosh, that was horrible and so drawn out!
+1	line	Sid	...urgh...
+1	line	Player	Oh wow, he's still going...
+1	line	Sid	...
+1	line	Sid	...
+1	line	Player	I think he is actually dead this time.
+1	line	Player	Who are you? Why are you doing this!?
+1	line	Killer	...
+1	line	Player	Gah! I've got to find a way into that house and stop this maniac!
+1	line	Player	I wonder what it was that I saw fall into that barrel?
+1	action	end
+0	section	Searching the barrel of rainwater
+0	section	Search the barrel without emptying it
+1	line	Player	The barrel is full of rainwater, I can't see what's in there.
+1	action	end
+0	section	Use bucket with the barrel
+1	box	You fill the bucket from the barrel.
+1	action	end
+0	section	Searching the drained barrel
+1	cond	If the player has no inventory space:
+2	box	You don't have enough space in your inventory.
+2	action	end
+1	cond	If the player has inventory space:
+2	box	You find a key at the bottom of the barrel.
+2	action	end
+1	cond	If the player already has the key:
+0	section	Tayten's demise
+1	line	Tayten	Gurgle...
+1	line	Player	Nooooo!
+1	line	Player	What's this? A note? I guess I should read it.
+1	action	end
+0	section	Taking the note
+1	cond	If the player already has the note:
+2	action	end
+1	cond	If the player has no inventory space:
+2	action	end
+1	cond	If the player has inventory space:
+2	box	You take a copy of the note.
+2	action	end
+0	section	Taking the knife from the table
+1	cond	If the player does not have inventory space:
+2	action	end
+1	cond	If the player already has a knife:
+2	action	end
+1	cond	If the player has inventory space:
+2	action	end
+0	section	Climbing the staircase
+0	section	The first riddle
+0	section	Slashing the wrong painting
+0	section	Slashing the painting
+1	box	You slash open the painting, revealing a hidden storage compartment.
+1	action	end
+0	section	Searching the slashed painting
+1	cond	If the player has no inventory space:
+2	box	You don't have enough space in your inventory.
+2	action	end
+1	cond	If the player already has the ruby key:
+2	action	end
+1	box	You find a key hidden inside the slashed painting.
+1	action	end
+0	section	Opening colourful handle doors
+1	cond	If the player does not have the necessary key:
+2	box	The door is securely locked.
+2	action	end
+1	cond	If the player has the necessary key:
+2	action	end
+0	section	Using the wrong key on a coloured handle door
+1	box	The key doesn't fit.
+1	action	end
+0	section	Taking a tinderbox from the shelves
+1	cond	If the player has no inventory space:
+2	action	end
+1	cond	If the player already has a tinderbox:
+2	action	end
+1	action	end
+0	section	Attempting to light the fuse while the candles are unlit
+1	line	Player	The fuse is too damp to light...
+1	action	end
+0	section	Lighting a candle
+1	box	You light the candle.
+1	action	end
+0	section	Lighting the last candle
+1	box	You light the candle. The room is sufficiently warmed, the fuse should now have dried out.
+1	action	end
+0	section	Attempting to light the fuse once the candles are lit
+1	line	Player	The fuse is lit, I should get out of here before it blows!
+1	action	end
+0	section	Attempting to light the fuse after it has been lit
+1	line	Player	The fuse is already lit! I need to get out of here before it blows!
+1	action	end
+0	section	The second riddle
+0	section	Run in with Lacey
+1	line	Lacey	Please, stop this, just let me go!
+1	line	Killer	We're going to play a game. Do you like to play games?
+1	line	Lacey	No...yes....whatever you say, just don't hurt me!
+1	line	Killer	Whether you get hurt or not is entirely up to you. Your fate is in your own hands.
+1	line	Lacey	What!? What do you mean!?
+1	line	Player	Leave her alone you monster!
+1	line	Killer	Ah, {player}, how kind of you to join us. Now if you say another word, I will end her right now!
+1	line	Killer	Sorry, where were we? Ah yes, of course! The game!
+1	line	Killer	Do you like quests, Lacey?
+1	line	Lacey	Ummm, sure, I like quests.
+1	line	Killer	Do you like scary quests?
+1	line	Lacey	Uh-huh.
+1	line	Killer	What's your favourite scary quest?
+1	line	Lacey	I don't know.
+1	line	Killer	You have to have a favourite.
+1	line	Lacey	Umm.....the one with that vampyre in it who lives in a big house.
+1	line	Killer	Good, good. And now for that game I spoke about.
+1	line	Killer	I am going to ask you one question. Get it wrong and you die, but get it right and you live.
+1	line	Lacey	Oh Guthix please no, please don't, I don't want to die!
+1	line	Killer	Then think hard about your answer. You like vampyres so this should be easy for you. The question is this...
+1	line	Killer	Who is the Vampyre that resides in South Misthalin?
+1	line	Lacey	Urm...
+1	select	Interrupt with answer?
+1	option	Count Draynor
+2	line	Player	Count Draynor!
+2	action	below
+1	option	Count Check
+2	line	Player	Count Check!
+2	action	below
+1	option	Lord Drakan
+2	line	Player	Lord Drakan!
+2	line	Killer	This game didn't involve you {player}! Now her death is on you! Her blood is on your hands you fool!
+2	line	Lacey	Gargle...urgh...
+2	action	below
+1	option	Say nothing
+2	line	Lacey	Oh yes, yes, I know it! Count Draynor!
+2	line	Lacey	Ha, in your face you masked freak!
+2	line	Killer	Oh Lacey, Lacey, Lacey. I did tell you to think hard about your answer.
+2	line	Killer	Count Draynor is in fact a vampyre, and he does reside in his manor in Misthalin.
+2	line	Killer	But that manor is in WEST Misthalin! I was talking about Count Check! Thanks for playing!
+2	line	Lacey	No, no you tricked me! This isn't fair, ask me another...
+2	line	Lacey	Gargle...urgh...
+2	line	Player	That monster! I have to stop them! Let's see what that new note says.
+2	action	end
+0	section	Taking the note
+1	cond	If the player has no inventory space:
+2	action	end
+1	cond	If the player already has the note:
+2	action	end
+1	box	You take a copy of the note.
+1	action	end
+0	section	Observing tree after Lacey is killed
+0	section	Playing the piano
+1	cond	Before getting the note:
+2	line	Player	There is no time to be playing around!
+2	action	end
+1	cond	Before reading the note:
+2	line	Player	I don't think that's right... Perhaps the clue the killer left behind could help?
+2	action	end
+0	section	After playing the correct sequence
+0	section	Searching the piano after unlocking it
+1	cond	If the player has no inventory space:
+2	box	You don't have enough space in your inventory.
+2	action	end
+1	cond	If the player already found the key:
+2	action	end
+1	box	You find a key hidden inside the piano's compartment.
+1	action	end
+0	section	The third riddle
+0	section	Mandy in the kitchen
+1	line	Mandy	Why am I the one who is always left clearing up after everyone?
+1	line	Mandy	Hello? Anyone there?
+1	line	Mandy	Hello? Lacey? Sid?
+1	line	Mandy	Hmm, well I guess I should go check it out. No point staying in this nice, locked room when I could go outside into the creepy darkness.
+1	line	Player	Seriously!?
+1	box	The walls and door seem too thick for Mandy to be able to hear you.
+1	line	Mandy	Oh, and I don't think there is any need to take this big, shiny weapon with me in order to defend myself. Nothing bad ever happens when people go check out noises in the dark outside of houses!
+1	line	Player	You have got to be kidding...
+1	line	Mandy	Ok, well, here I go!
+1	line	Mandy	Hello, anyone out here?
+1	line	Mandy	See, I knew nothing would happen! Must have just been a squirrel or something running about.
+1	line	Mandy	Oh well, back to the dishes.
+1	line	Player	Phew, that was lucky!
+1	line	Mandy	No...why...me...
+1	line	Player	That psycho! He was just toying with her!
+1	line	Player	Another note. This guy really likes playing games, but this is going to be a game he won't win!
+1	action	end
+0	section	Taking the note
+1	cond	If the player has no inventory space:
+2	action	end
+1	cond	If the player already has the note:
+2	action	end
+1	box	You take a copy of the note.
+1	action	end
+0	section	Using a knife on the fireplace
+1	box	You use your knife to pry open a loose brick in the fireplace, revealing a secret panel.
+1	action	end
+0	section	Searching the fireplace
+1	box	You find a panel of switches inside the hidden compartment. Each switch is crafted from a different gemstone.
+1	action	end
+0	section	Flipping each switch
+0	section	Entering a code
+1	cond	If the code was incorrect:
+2	line	Player	I don't think that's the right order.. Perhaps the clue the killer left behind could help?
+2	action	end
+1	cond	If the code was correct:
+2	action	end
+0	section	Searching the fireplace after solving the riddle
+1	cond	If the player has no inventory space:
+2	box	You don't have enough space in your inventory.
+2	action	end
+1	cond	If the player already has the key:
+2	action	end
+1	box	You find a key hidden inside the fireplace.
+1	action	end
+0	section	Showdown
+0	section	Confronting the killer
+1	line	Player	Show yourself you coward!
+1	line	Killer	So we meet at last. I have to say, I'm impressed you worked out my riddles.
+1	line	Player	Well maybe you aren't as smart as you think you are.
+1	line	Killer	Oh really? All the dead bodies suggest otherwise. And what did you do to stop them?
+1	line	Killer	NOTHING!
+1	line	Killer	People think you are some big hero but you're not. All you adventurers are the same. Nothing but opportunists!
+1	line	Player	What are you going on about?
+1	line	Killer	Well, I did have this big speech planned out but quite frankly I don't think you are worth the effort it would take to deliver it.
+1	line	Killer	So, this is the end of the line for you. It is time for the final act. The showdown. The finale. Let's see if you are up to the challenge!
+1	action	end
+0	section	When the killer takes damage
+1	option	Dialogue 1
+2	line	Killer	*ouch*
+1	option	Dialogue 2
+2	line	Killer	Ouch!
+0	section	Defeating the killer
+1	line	Killer	Urgh...I think I may have underestimated you.
+1	line	Player	You've lost at your own game. And now it is time to see who you really are under that mask!
+1	line	Player	No! You!? But why!? Why on earth would you kill all your friends!? Why beg me to come here to help them!?
+1	line	Abigale	You just don't get it do you?
+1	line	Abigale	So big headed. So used to it all being about you. About you saving the day.
+1	line	Abigale	Well I'm sick of it!
+1	line	Player	What do you mean?
+1	line	Abigale	Adventurers! You're all the same. Everything always has to be about you.
+1	line	Player	I don't understand?
+1	line	Abigale	Of course you wouldn't! Because you can't see past yourself!
+1	line	Abigale	Believe it or not... I used to be like you.
+1	line	Abigale	I'd hear about some damsel in distress and go to help. To have my moment. For me to be the hero, just for once.
+1	line	Abigale	But YOU! You and every other darned adventurer! Every time I get there to help, it's too late. Crisis solved. Disaster averted. Reward claimed. Every time you and those other adventurers steal my moment!
+1	line	Abigale	But not this time!
+1	line	Abigale	This time, it is all about me! I'm the star of the show! ME ME ME ME ME!
+1	line	Player	Well not any longer. The show is over, and there will be no curtain call.
+1	line	Abigale	Oh, but there is always a curtain call.
+1	line	Player	What!? How!? There was another killer!?
+1	line	Abigale	Of course. Every good show needs a good supporting actor. Now, take off your mask darling. Take a bow. You have earned it.
+1	line	Killer	Of course, my love.
+1	line	Player	You!? But how!? You were almost dead when I saw you! I saw your wounds!
+1	line	Hewey	No, what you watched was what we wanted you to watch. A masterful performance if I do say myself.
+1	line	Player	But what is in this for you?
+1	line	Hewey	Everyone loves the limelight, and who better to share it with than my beloved Abigale.
+1	line	Player	But your friends?
+1	line	Player	They didn't deserve to die!
+1	line	Abigale	Perhaps not, but neither did I deserve to be cast back into the shadows when I deserve the spotlight!
+1	line	Hewey	Yes, while we deserve the spotlight.
+1	line	Abigale	And now I have my starring role!
+1	line	Hewey	OUR starring role.
+1	line	Abigale	Gielinor will forever remember this night and what I have done here.
+1	line	Hewey	No, what WE have done!
+1	line	Abigale	Quiet Hewey! This is my moment!
+1	line	Hewey	No, this is supposed to be our moment! It isn't just all about you either! We were in this together!
+1	line	Abigale	Stop ruining this Hewey! I have worked so hard for this and I'm not going to let you take it away from me!
+1	line	Hewey	Well I'm not going to be pushed aside either, we were both in this as equals!
+1	line	Abigale	We were never equals! How could you possibly compare to me!?
+1	line	Hewey	You egotistical, selfish...
+1	line	Hewey	No...my love...
+1	line	Abigale	No....no...what have I done!?
+1	line	Abigale	It wasn't supposed to be like this...but you just couldn't let me have my moment. WHY HEWEY WHY!? I loved you...
+1	line	Player	This could be my chance to take advantage of the situation...
+1	action	end
+0	section	Taking the killer's knife with a full inventory
+0	section	Fighting Abigale
+0	section	Attempt to talk to Hewey
+1	line	Player	I don't think he's in a very talkative mood.
+1	action	end
+0	section	Attempt to fight Abigale without wielding a weapon
+1	line	Player	I'm not going at her empty-handed!
+1	action	end
+0	section	Attempt to fight Abigale while wielding other weapons
+1	line	Player	It would be wiser to use the killer's knife rather than my own weapon...
+1	action	end
+0	section	Fight Abigale while wielding the killer's knife
+1	line	Player	Well thank Saradomin that's over! I should get out of here.
+1	action	end
+0	section	Attempt to talk to Abigale after stabbing her
+1	line	Player	I don't think she wants to talk to me right now.
+1	action	end
+0	section	Leaving the manor
+1	line	Abigale	You'll never escape me!
+1	line	Abigale	You dare try and ruin my moment!
+1	line	Abigale	Hewey is dead because of you!
+1	line	Abigale	Now it is time for you to join him!
+1	line	Mandy	You're not killing anyone else!
+1	line	Abigale	No....this can't be it....
+1	line	Player	Wow, that was close!
+1	line	Player	Mandy, how are you alive!? I watched you get stabbed through the heart!
+1	line	Mandy	I did get stabbed, but I was born with a rare condition called Dextrocardia.
+1	line	Player	Dextrowhat?
+1	line	Mandy	Dextrocardia. It means that my heart is on the right side of my chest, not the left like most people.
+1	line	Player	So when the killer thought they stabbed you in the heart, they actually missed?
+1	line	Mandy	Well, missed the heart yes.
+1	line	Mandy	I did still get stabbed though, and am actually feeling pretty woozy...
+1	line	Player	Oh, yes, right! You should go sort yourself out!
+1	line	Mandy	I will wait outside the house after seeing to this stab wound. You should come talk to me there.
+1	action	end
+0	section	Finishing up
+1	line	Mandy	Oh hi, {player}.
+1	line	Player	Hi Mandy. How are you feeling now?
+1	line	Mandy	Much better thanks, and lucky to be alive, thanks to you in no small part.
+1	line	Player	Well we saved the day as a team, so thank you too.
+1	cond	If the player has insufficient inventory space:
+2	line	Mandy	I found some stuff in the wardrobe when I was seeing to my wound. You need [3 more spaces/2 more spaces/another space] in your inventory to take it all.
+2	action	end
+1	cond	If the player has at least three inventory spaces:
+2	line	Mandy	Here, I found these in the wardrobe when I was seeing to my wound. I don't want them so please, take them...
+0	section	Talking to Mandy again
+1	line	Mandy	Thanks again for your help, {player}. Stay safe.
+1	line	Player	You too, Mandy.
+1	action	end

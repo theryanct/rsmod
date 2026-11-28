@@ -103,11 +103,32 @@ internal object HerbloreData {
             Potion("Super strength", "kwuarmvial", "limpwurt_root", "3dose2strength", 55, 125.0),
             Potion("Super restore", "snapdragonvial", "red_spiders_eggs", "3dose2restore", 63, 142.5),
             Potion("Super defence", "cadantinevial", "white_berries", "3dose2defense", 66, 150.0),
+            Potion(
+                "Antifire potion",
+                "lantadymevial",
+                "dragon_scale_dust",
+                "3dose1antidragon",
+                69,
+                157.5,
+            ),
             Potion("Ranging potion", "dwarfweedvial", "wine_of_zamorak", "3doserangerspotion", 72, 162.5),
             Potion("Magic potion", "lantadymevial", "cactus_potato", "3dose1magic", 76, 172.5),
             Potion("Zamorak brew", "torstolvial", "jangerberries", "3dosepotionofzamorak", 78, 175.0),
             Potion("Saradomin brew", "toadflaxvial", "crushed_bird_nest", "3dosepotionofsaradomin", 81, 180.0),
         )
+
+    /** Pestle and mortar on [source] grinds it into [product]. */
+    class Grind(val source: String, val product: String)
+
+    val grinds: List<Grind> =
+        listOf(
+            Grind("unicorn_horn", "unicorn_horn_dust"),
+            Grind("blue_dragon_scale", "dragon_scale_dust"),
+            Grind("chocolate_bar", "chocolate_dust"),
+            Grind("desert_goat_horn", "ground_desert_goat_horn"),
+        )
+
+    const val PESTLE = "pestle_and_mortar"
 
     /** What a dose does when drunk (Wiki values). */
     sealed class Effect {
@@ -123,6 +144,12 @@ internal object HerbloreData {
 
         /** Antipoisons: cure poison and grant immunity for [immunityTicks] (Wiki durations). */
         data class Cure(val immunityTicks: Int) : Effect()
+
+        /**
+         * Antifires: dragonfire protection for [minutes] (Wiki durations), counted in the cache
+         * varbits `antifire_potion` / `super_antifire_potion` (see Antifire.kt).
+         */
+        data class Antifire(val superPotion: Boolean, val minutes: Int) : Effect()
 
         /** Lower each stat by `constant + percent%` (brews). */
         data class Drain(val stats: List<String>, val constant: Int, val percent: Int) : Effect()
@@ -199,6 +226,10 @@ internal object HerbloreData {
             ),
             Drink("antipoison", doses("antipoison"), Effect.Cure(immunityTicks = 150)),
             Drink("superantipoison", doses("2antipoison"), Effect.Cure(immunityTicks = 600)),
+            Drink("antifire potion", doses("1antidragon"), Effect.Antifire(false, 6)),
+            Drink("extended antifire", doses("2antidragon"), Effect.Antifire(false, 12)),
+            Drink("super antifire potion", doses("3antidragon"), Effect.Antifire(true, 3)),
+            Drink("extended super antifire", doses("4antidragon"), Effect.Antifire(true, 6)),
         )
 
     /** Water sources (by loc name) that fill vials. */

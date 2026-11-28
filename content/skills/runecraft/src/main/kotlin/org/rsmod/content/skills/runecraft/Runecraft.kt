@@ -7,6 +7,8 @@ import org.rsmod.routefinder.collision.CollisionFlagMap
 import org.rsmod.routefinder.flag.CollisionFlag
 import org.rsmod.api.player.front
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.features.Feature
+import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.hat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.miningLvl
@@ -117,7 +119,16 @@ constructor(
 
     /* Ruins and portals */
 
+    /** With the QuestGates toggle on, Runecraft needs Rune Mysteries (cache end state 6). */
+    private fun ProtectedAccess.passesQuestGate(): Boolean {
+        if (!player.isFeatureOn(Feature.QuestGates)) return true
+        if (player.vars[RunecraftVarps.runemysteries] >= RUNE_MYSTERIES_COMPLETE) return true
+        mes("You need to complete Rune Mysteries to do that.")
+        return false
+    }
+
     private suspend fun ProtectedAccess.enterRuins(altar: Altar, viaTalisman: Boolean) {
+        if (!passesQuestGate()) return
         if (viaTalisman) {
             mes("You hold the ${altar.key} talisman towards the mysterious ruins.")
         }
@@ -266,6 +277,7 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.teleportToMine(npc: Npc) {
+        if (!passesQuestGate()) return
         npc.say("Senventior Disthine Molenko!")
         delay(2)
         telejump(RunecraftData.essenceMine)
@@ -375,5 +387,6 @@ constructor(
     }
 }
 
+private const val RUNE_MYSTERIES_COMPLETE = 6
 private const val ARRIVAL_RADIUS = 6
 private const val BLOCKED = CollisionFlag.BLOCK_WALK or CollisionFlag.LOC

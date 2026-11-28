@@ -3,6 +3,7 @@ package org.rsmod.content.skills.herblore
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.type.obj.ObjType
 
 internal object HerbloreObjs : ObjReferences() {
@@ -11,7 +12,8 @@ internal object HerbloreObjs : ObjReferences() {
                 HerbloreData.unfinished.flatMap { listOf(it.herb, it.unf) } +
                 HerbloreData.potions.flatMap { listOf(it.unf, it.secondary, it.product) } +
                 HerbloreData.drinks.flatMap { it.doses } +
-                listOf(HerbloreData.VIAL, HerbloreData.VIAL_WATER))
+                HerbloreData.grinds.flatMap { listOf(it.source, it.product) } +
+                listOf(HerbloreData.VIAL, HerbloreData.VIAL_WATER, HerbloreData.PESTLE))
             .distinct()
             .associateWith { find(it) }
 }
@@ -20,8 +22,14 @@ internal object HerbloreSeqs : SeqReferences() {
     val mix = find("human_herbing_vial")
     val drink = find("human_eat")
     val fill = find("human_pickuptable")
+    val grind = find("human_herbing_grind")
 }
 
 internal object HerbloreQueues : QueueReferences() {
     val make = find("herblore_make")
+}
+
+internal object HerbloreVarps : VarpReferences() {
+    /** Druidic Ritual's quest varp (complete = 4), for the optional QuestGates check. */
+    val druidquest = find("druidquest")
 }

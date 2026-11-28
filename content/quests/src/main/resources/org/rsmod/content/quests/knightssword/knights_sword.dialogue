@@ -1,0 +1,254 @@
+# Generated from the OSRS Wiki page "Transcript:The Knight's Sword" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to the Squire
+1	line	Squire	Hello. I am the squire to Sir Vyvin.
+1	option	And how is life as a squire?
+2	line	Player	And how is life as a squire?
+2	line	Squire	Well, Sir Vyvin is a good guy to work for, however, I'm in a spot of trouble today. I've gone and lost Sir Vyvin's sword!
+2	option	Do you know where you lost it?
+3	line	Player	Do you know where you lost it?
+3	line	Squire	Well now, if I knew THAT it wouldn't be lost, now would it?
+3	option	Well, do you know the VAGUE AREA you lost it?
+4	line	Player	Well, do you know the VAGUE AREA you lost it in?
+4	line	Squire	No. I was carrying it for him all the way from where he had it stored in Lumbridge. It must have slipped from my pack during the trip, and you know what people are like these days...
+4	line	Squire	Someone will have just picked it up and kept it for themselves.
+4	option	I can make a new sword if you like...
+5	action	below
+4	option	Well, the kingdom is fairly abundant with swords...
+5	action	below
+4	option	Well, I hope you find it soon.
+5	action	below
+3	option	I can make a new sword if you like...
+4	action	below
+3	option	Well, the kingdom is fairly abundant with swords...
+4	line	Player	Well, the kingdom is fairly abundant with swords...
+4	line	Squire	Yes. You can get bronze swords anywhere. But THIS isn't any old sword.
+4	line	Squire	The thing is, this sword is a family heirloom. It has been passed down through Vyvin's family for five generations! It was originally made by the Imcando dwarves, who were
+4	line	Squire	a particularly skilled tribe of dwarven smiths. I doubt anyone could make it in the style they do.
+4	option	So would these dwarves make another one?
+5	action	below
+4	option	Well I hope you find it soon.
+5	action	below
+3	option	Is he angry
+4	action	below
+2	option	I can make a new sword if you like...
+3	line	Player	I can make a new sword if you like...
+3	line	Squire	Thanks for the offer. I'd be surprised if you could though.
+3	line	Squire	The thing is, this sword is a family heirloom. It has been passed down through Vyvin's family for five generations! It was originally made by the Imcando dwarves, who were
+3	line	Squire	a particularly skilled tribe of dwarven smiths. I doubt anyone could make it in the style they do.
+3	option	So would these dwarves make another one?
+4	line	Player	So would these dwarves make another one?
+4	line	Squire	I'm not a hundred percent sure the Imcando tribe exists anymore. I should think Reldo, the palace librarian in Varrock, will know; he has done a lot of research on the races of Gielinor.
+4	line	Squire	I don't suppose you could try and track down the Imcando dwarves for me? I've got so much work to do...
+4	cond	Without 10 Mining and while below 20 Combat:
+5	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it. Your combat level is also lower than the recommended level of 20.
+5	action	continues
+4	select	Start The Knight's Sword quest?
+4	option	Yes.
+5	cond	If the player hasn't met Thurgo yet:
+6	line	Player	Ok, I'll give it a go.
+6	line	Squire	Thank you very much! As I say, the best place to start should be with Reldo...
+6	action	end
+5	cond	If the player has already met Thurgo in The Giant Dwarf:
+6	line	Player	I'll help, I know an Imcando dwarf!
+6	line	Squire	What, really? That is wonderful to hear! Where is he then?
+6	line	Player	He's living on a cliff at the very south end of Asgarnia, south of Port Sarim. I'll go right over to him.
+6	line	Squire	Thank you very much!
+6	action	end
+4	option	No.
+5	line	Player	No. I've got lots of mining work to do.
+5	line	Squire	Oh man... I'm in such trouble...
+5	action	end
+3	option	Well I hope you find it soon.
+4	line	Player	Well, I hope you find it soon.
+4	line	Squire	Yes, me too. I'm not looking forward to telling Vyvin I've lost it. He's going to want it for the parade next week as well.
+4	action	end
+2	option	Is he angry?
+3	line	Player	Is he angry?
+3	line	Squire	He doesn't know yet. I was hoping I could think of something to do before he does find out, But I find myself at a loss.
+3	option	Well, do you know the VAGUE AREA you lost it?
+4	action	above
+3	option	I can make a new sword if you like...
+4	action	above
+3	option	Well, the kingdom is fairly abundant with swords...
+4	action	above
+3	option	Well, I hope you find it soon.
+4	action	above
+1	option	Wouldn't you prefer to be a squire for me?
+2	line	Player	Wouldn't you prefer to be a squire for me?
+2	line	Squire	No, sorry, I'm loyal to Sir Vyvin.
+2	action	end
+0	section	Talking to the Squire again after starting the quest but before talking to Thurgo
+1	line	Squire	So how are you doing getting a sword?
+1	line	Player	I'm looking for Imcando dwarves to help me.
+1	line	Squire	Please try and find them quickly... I am scared Sir Vyvin will find out!
+1	action	end
+0	section	Talking to Thurgo before talking to Reldo
+1	option	Are you an Imcando dwarf? I need a special sword.
+2	line	Player	Are you an Imcando dwarf? I need a special sword.
+2	line	Thurgo	I don't talk about that sort of thing anymore. I'm getting old.
+2	line	Player	I'll come back another time.
+2	action	end
+1	option	What is that cape you're wearing?
+1	line	Reldo	Hello stranger.
+1	option	I'm in search of a quest.
+1	option	Do you have anything to trade?
+1	option	What do you do?
+1	option	What do you know about the Imcando dwarves?
+2	line	Player	What do you know about the Imcando dwarves?
+2	line	Reldo	The Imcando dwarves, you say? Let's see...
+2	line	Reldo	Ah, yes... For many hundreds of years, they were the world's most skilled smiths. They used secret smithing knowledge passed down from generation to generation.
+2	line	Reldo	Unfortunately, about a century ago, the once thriving group was wiped out during the barbarian invasions of that time.
+2	line	Reldo	I believe a few of them survived, but with the bulk of their population destroyed, their numbers dwindled even further. If any are left now, they'll no doubt keep to themselves.
+2	line	Reldo	However, I have heard tales of their love for redberry pie. Perhaps one of those could convince one to reveal their true heritage.
+2	line	Player	So I just go around offering random dwarves redberry pie?
+2	line	Reldo	Well, not totally random. Apparently some of the surviving Imcando made a home for themselves near the cliffs on the Asgarnian southern peninsula. That would be a good place to start.
+2	action	end
+0	section	Talking to Thurgo
+0	section	Talking to Thurgo without a Redberry Pie
+1	select	Select an option
+1	option	Are you an Imcando dwarf? I need a special sword.
+2	cond	If the player hasn't already met Thurgo in The Giant Dwarf:
+3	line	Player	Are you an Imcando dwarf? I need a special sword.
+3	line	Thurgo	I don't talk about that sort of thing anymore. I'm getting old.
+3	action	end
+2	cond	If the player has already met Thurgo in The Giant Dwarf:
+3	line	Player	Can you make a special sword for me?
+3	line	Thurgo	Well, you know what to do! Get me another redberry pie and I'll consider it!
+3	line	Player	I'll come back another time.
+3	action	end
+1	option	What is that cape you're wearing?
+0	section	Talking to Thurgo with a Redberry Pie
+1	select	Select an option
+1	option	Are you an Imcando dwarf? I need a special sword.
+2	line	Player	Are you an Imcando dwarf? I need a special sword.
+2	line	Thurgo	I don't talk about that sort of thing anymore. I'm getting old.
+2	select	Select an option
+2	option	Would you like a redberry pie?
+3	action	below
+2	option	I'll come back another time.
+3	line	Player	I'll come back another time.
+3	action	end
+1	option	Would you like a redberry pie?
+2	line	Player	Would you like a redberry pie?
+2	box	You see Thurgo's eyes light up.
+2	line	Thurgo	I'd never say no to a redberry pie! We Imcando dwarves love them - they're GREAT!
+2	box	You hand over the pie.
+2	box	Thurgo eats the pie.
+2	box	Thurgo pats his stomach.
+2	line	Thurgo	By Guthix! THAT was good pie! Anyone who makes pie like THAT has got to be alright!
+2	option	Can you make a special sword for me?
+3	line	Player	Can you make a special sword for me?
+3	line	Thurgo	Well, after bringing me my favorite food I guess I should give it a go. What sort of sword is it?
+3	line	Player	I need you to make a sword for one of Falador's knights. He had one which was passed down through five generations, but his squire has lost it.
+3	line	Player	So we need an identical one to replace it.
+3	line	Thurgo	A knight's sword eh? Well, I'd need to know exactly how it looked before I could make a new one.
+3	line	Thurgo	All the Faladian knights used to have swords with unique designs according to their position. Could you bring me a picture or something?
+3	line	Player	I'll go and ask his squire and see if I can find one.
+3	action	end
+2	option	What is that cape you're wearing?
+1	option	What is that cape you're wearing?
+0	section	Talking to Thurgo again without the Portrait
+1	option	About that sword...
+2	line	Player	About that sword...
+2	line	Thurgo	Have you got a picture of the sword for me yet?
+2	line	Player	Sorry, not yet.
+2	line	Thurgo	Well, come back when you do.
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Talking to the Squire after giving Thurgo a redberry Pie
+1	line	Squire	So how are you doing getting a sword?
+1	line	Player	I've found an Imcando dwarf but he needs a picture of the sword before he can make it.
+1	line	Squire	A picture eh? Hmmm.... The only one I can think of is in a small portrait of Sir Vyvin's father... Sir Vyvin keeps it in a cupboard in his room I think.
+1	line	Player	Ok, I'll try and get that then.
+1	line	Squire	Please don't let him catch you! He MUSTN'T know what happened!
+1	action	end
+0	section	Talking to the Squire again before finding the portrait
+1	line	Squire	So how are you doing getting a sword?
+1	line	Player	I didn't get the picture yet.
+1	line	Squire	Please try and get it quickly... I am scared Sir Vyvin will find out!
+1	action	end
+0	section	Searching the cupboard
+1	box	You find a small portrait in here which you take.
+1	action	end
+0	section	Talking to the Squire again after finding the portrait
+1	line	Squire	So how are you doing getting a sword?
+1	line	Player	I have the picture. I'll just take it to the dwarf now!
+1	line	Squire	Please hurry!
+1	action	end
+0	section	Giving Thurgo the portrait
+1	option	About that sword...
+2	line	Player	About that sword...
+2	line	Thurgo	Have you got a picture of the sword for me yet?
+2	line	Player	I have found a picture of the sword I would like you to make.
+2	box	You give the Portrait to Thurgo. Thurgo studies the portrait.
+2	action	
+2	line	Thurgo	You'll need to get me some stuff to make this. I'll need two iron bars to make the sword, to start with. I'll also need an ore called blurite.
+2	line	Thurgo	Blurite is useless for making actual weapons, except crossbows, but I'll need some as decoration for the hilt.
+2	line	Thurgo	It is a fairly rare ore. The only place I know to get it is under this cliff here, but it is guarded by a very powerful ice giant.
+2	line	Thurgo	Most of the rocks in that cliff are pretty useless, and don't contain much of anything, but there's DEFINITELY some blurite in there.
+2	line	Thurgo	You'll need a little bit of mining experience to be able to find it.
+2	line	Player	Okay. I'll go and find them then.
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Creating the sword
+0	section	Talking to the Squire before making the sword
+1	line	Squire	So how are you doing getting a sword?
+1	line	Player	I've found a dwarf who will make the sword. I've just got to find the materials for it now!
+1	line	Squire	Please hurry!
+1	action	end
+0	section	Talking to Thurgo without the materials
+1	option	Can you make that replacement sword now?
+2	line	Thurgo	How are you doing finding those sword materials?
+2	line	Player	I don't have any of them yet.
+2	line	Thurgo	Well, I need a blurite ore and two iron bars. The only place I know to get blurite is under this cliff here, but it is guarded by a very powerful ice giant.
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Talking to Thurgo with only the iron bars
+1	option	Can you make that replacement sword now?
+2	line	Player	Can you make that replacement sword now?
+2	line	Thurgo	How are you doing finding those sword materials?
+2	line	Player	I don't have any blurite ore yet.
+2	line	Thurgo	Better go get some then, huh? The only place I know to get it is under this cliff here, but it is guarded by a very powerful ice giant.
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Talking to Thurgo with only the blurite
+1	option	Can you make that replacement sword now?
+2	line	Player	Can you make that replacement sword now?
+2	line	Thurgo	How are you doing finding those sword materials?
+2	line	Player	I don't have two iron bars.
+2	line	Thurgo	Better go get some then, huh?
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Giving both the iron bars and blurite to Thurgo
+1	option	Can you make that replacement sword now?
+2	line	Player	Can you make that replacement sword now?
+2	line	Thurgo	How are you doing finding those sword materials?
+2	line	Player	I have them right here.
+2	box	You give the blurite ore and iron bars to Thurgo. Thurgo makes you a sword.
+2	line	Player	Thank you very much!
+2	line	Thurgo	Just remember to call in with more pie some time!
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	After the sword has been made
+1	option	Thanks for making that sword for me!
+2	line	Player	Thanks for making that sword for me!
+2	line	Thurgo	You're welcome - thanks for the pie!
+2	action	end
+1	option	Would you like a redberry pie?
+1	option	What is that cape you're wearing?
+0	section	Giving the sword to the Squire
+1	cond	If the player is wielding the sword
+2	line	Player	I have retrieved your sword for you.
+2	line	Squire	So can you un-equip it and hand it over to me now please?
+2	action	end
+1	cond	If the sword is in the player's inventory
+2	line	Player	I have retrieved your sword for you.
+2	line	Squire	Thank you, thank you, thank you! I was seriously worried I would have to own up to Sir Vyvin!
+2	box	You give the sword to the squire.
+2	action	

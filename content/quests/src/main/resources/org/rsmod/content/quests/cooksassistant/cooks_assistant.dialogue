@@ -1,0 +1,117 @@
+# Generated from the OSRS Wiki page "Transcript:Cook's Assistant" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Cook	What am I to do?
+1	option	What's wrong?
+2	line	Player	What's wrong?
+2	line	Cook	Oh dear, oh dear, oh dear, I'm in a terrible terrible mess! It's the Duke's birthday today, and I should be making him a lovely big birthday cake.
+2	line	Cook	I've forgotten to buy the ingredients. I'll never get them in time now. He'll sack me! What will I do? I have four children and a goat to look after. Would you help me? Please?
+2	select	Start the Cook's Assistant quest?
+2	option	Yes.
+3	line	Player	Yes, I'll help you.
+3	line	Cook	Oh thank you, thank you. I need milk, an egg and flour. I'd be very grateful if you can get them for me.
+3	cond	If the player already has the necessary items:
+4	line	Player	I have all of those ingredients on me already!
+4	line	Cook	That's an odd coincidence... Were you planning on making a cake too?
+4	line	Player	Not exactly. I just had an odd feeling you might be needing these ingredients. If I see a cook, I presume there's food of some kind! Lucky guess I suppose.
+4	line	Cook	Well thank you! Hand them over, please.
+4	box	You hand the cook all of the ingredients.
+4	line	Cook	You've brought me everything I need! I am saved! Thank you!
+4	line	Player	So do I get to go to the Duke's Party?
+4	line	Cook	I'm afraid not, only the big cheeses get to dine with the Duke.
+4	line	Player	Well, maybe one day I'll be important enough to sit on the Duke's table.
+4	line	Cook	Maybe, but I won't be holding my breath.
+4	action	end
+3	cond	If the player doesn't have the necessary items:
+4	line	Player	So where do I find these ingredients then?
+4	option	Where do I find some flour?
+5	line	Cook	There is a Mill fairly close, go North and then West. Mill Lane Mill is just off the road to Draynor. I usually get my flour from there.
+5	cond	If the player has an empty pot with them:
+6	line	Cook	Talk to Millie, she'll help, she's a lovely girl and a fine Miller. Make sure you take a pot with you for the flour though, you've got one on you already.
+6	action	other
+5	cond	If the player does not have an empty pot with them:
+6	line	Cook	Talk to Millie, she'll help, she's a lovely girl and a fine Miller. Make sure you take a pot with you for the flour though, there should be one on the table in here.
+6	action	other
+4	option	How about milk?
+5	line	Cook	There is a cattle field on the other side of the river, just across the road from the Groats' Farm.
+5	line	Cook	Talk to Gillie Groats, she looks after the Dairy cows - she'll tell you everything you need to know about milking cows!
+5	cond	If the player has an empty bucket with them:
+6	line	Cook	You'll need an empty bucket for the milk itself. I do see you've got a bucket with you already luckily!
+6	action	other
+5	cond	If the player does not have an empty bucket with them:
+6	line	Cook	You'll need an empty bucket for the milk itself. The general store just north of the castle will sell you one for a couple of coins.
+6	action	other
+4	option	And eggs? Where are they found?
+5	line	Cook	I normally get my eggs from the Groats' farm, on the other side of the river.
+5	line	Cook	But any chicken should lay eggs.
+5	option	Where do I find some flour?
+6	action	above
+5	option	How about milk?
+6	action	above
+5	option	And eggs? Where are they found?
+6	action	above
+5	option	I've got all the information I need. Thanks.
+6	line	Player	I've got all the information I need. Thanks.
+6	action	end
+4	option	Actually, I know where to find this stuff.
+5	line	Player	Actually, I know where to find this stuff.
+5	action	end
+2	option	No.
+3	line	Player	No, I don't feel like it. Maybe later.
+3	line	Cook	Fine. I always knew you Adventurer types were callous beasts. Go on your merry way!
+3	action	end
+1	option	You're a cook, why don't you bake me a cake?
+2	line	Player	You're a cook, why don't you bake me a cake?
+2	line	Cook	*sniff* Don't talk to me about cakes...
+2	line	Player	What's wrong?
+2	action	above
+1	option	You don't look very happy.
+2	line	Player	You don't look very happy.
+2	line	Cook	No, I'm not. The world is caving in around me - I am overcome by dark feelings of impending doom.
+2	option	What's wrong?
+3	action	above
+2	option	I'd take the rest of the day off if I were you.
+3	line	Player	I'd take the rest of the day off if I were you.
+3	line	Cook	No, that's the worst thing I could do. I'd get in terrible trouble.
+3	line	Player	Well maybe you need to take a holiday...
+3	line	Cook	That would be nice, but the Duke doesn't allow holidays for core staff.
+3	line	Player	Hmm, why not run away to the sea and start a new life as a Pirate?
+3	line	Cook	My wife gets sea sick, and I have an irrational fear of eyepatches. I don't see it working myself.
+3	line	Player	I'm afraid I've run out of ideas.
+3	line	Cook	I know I'm doomed.
+3	line	Player	What's wrong?
+3	action	above
+1	option	Nice hat!
+2	line	Player	Nice hat!
+2	line	Cook	Err thank you. It's a pretty ordinary cooks hat really.
+2	line	Player	Still, suits you. The trousers are pretty special too.
+2	line	Cook	Its all standard cook's issue uniform...
+2	line	Player	The whole hat, apron, stripey trousers ensemble - it works. It make you looks like a real cook.
+2	line	Cook	I am a real cook! I haven't got time to be chatting about Culinary Fashion. I am in desperate need of help!
+2	line	Player	What's wrong?
+2	action	above
+0	section	Talking to the Cook again
+1	line	Cook	How are you getting on with finding the ingredients?
+1	cond	If the player has not obtained anything yet:
+2	line	Player	I haven't got any of them yet, I'm still looking.
+2	line	Cook	Please get the ingredients quickly - I'm running out of time! The Duke will throw me into the streets!
+2	cond	If the player hasn't handed in at least one item. Items are removed from the list when handed in:
+2	box	You still need to get: A bucket of milk A pot of flour An egg
+2	option	I'll get right on it.
+3	action	end
+2	option	Can you remind me how to find these things again?
+3	line	Player	So where do I find these ingredients then?
+3	action	above
+1	cond	If the player has the ingredients:
+2	line	Player	Here's a bucket of milk.
+2	line	Player	Here's a pot of flour.
+2	line	Player	Here's a fresh egg.
+2	cond	If the player has not brought all the ingredients:
+3	line	Cook	Thanks for the ingredients you have got so far. Please get the rest quickly - I'm running out of time! The Duke will throw me into the streets!
+3	action	other
+2	cond	If the player has brought all the ingredients:
+3	line	Cook	You've brought me everything I need! I am saved! Thank you!
+3	line	Player	So do I get to go to the Duke's Party?
+3	line	Cook	I'm afraid not, only the big cheeses get to dine with the Duke.
+3	line	Player	Well, maybe one day I'll be important enough to sit on the Duke's table.
+3	line	Cook	Maybe, but I won't be holding my breath.
+3	action	end

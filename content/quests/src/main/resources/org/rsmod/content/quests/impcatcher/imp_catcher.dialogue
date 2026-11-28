@@ -1,0 +1,62 @@
+# Generated from the OSRS Wiki page "Transcript:Imp Catcher" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Talking to Wizard Mizgog
+1	line	Player	Give me a quest!
+1	line	Wizard Mizgog	Give me a quest what?
+1	select	Select an Option
+1	option	Give me a quest please.
+2	line	Player	Give me a quest please.
+2	line	Wizard Mizgog	Well seeing as you asked nicely... I could do with some help.
+2	line	Wizard Mizgog	The wizard Grayzag next door decided he didn't like me so he enlisted an army of hundreds of imps.
+2	line	Wizard Mizgog	These imps stole all sorts of my things. Most of these things I don't really care about, just eggs and balls of string and things.
+2	line	Wizard Mizgog	But they stole my four magical beads. There was a red one, a yellow one, a black one, and a white one.
+2	line	Wizard Mizgog	These imps have now spread out all over the kingdom. Could you get my beads back for me?
+2	select	Start the Imp Catcher quest?
+2	option	Yes.
+3	cond	If the player already has all four beads in their inventory:
+4	line	Player	Well this is a surprising turn of events!
+4	line	Wizard Mizgog	What?
+4	line	Player	Well I just so happen to have all of those beads on me!
+4	line	Wizard Mizgog	Are you saying that you stole my beads all this time and I've been blaming these imps!?
+4	line	Player	No, not at all! I just found them throughout my travels and presumed somebody would need them at some point.
+4	line	Wizard Mizgog	Bah! Fine.
+4	action	(Continues in Quest complete section.)
+3	cond	If the player does not have all four beads in their inventory:
+4	line	Player	I'll try.
+4	line	Wizard Mizgog	That's great, thank you.
+4	action	end
+2	option	No.
+3	line	Player	I've better things to do than chase imps.
+3	line	Wizard Mizgog	Well if you're not interested in the quests I have to give you, don't waste my time by asking me for them.
+3	action	end
+1	option	Give me a quest or else!
+2	line	Player	Give me a quest or else!
+2	line	Wizard Mizgog	Or else what? You'll attack me?
+2	line	Wizard Mizgog	Hahaha!
+2	action	end
+1	option	Just stop messing around and give me a quest!
+2	line	Player	Just stop messing around and give me a quest!
+2	line	Wizard Mizgog	Ah now you're assuming I have one to give.
+2	action	end
+0	section	Finding the beads
+0	section	Speaking to Wizard Mizgog with no beads
+1	line	Wizard Mizgog	So how are you doing finding my beads?
+1	line	Player	I've not found any yet.
+1	line	Wizard Mizgog	Well get on with it. I've lost a white bead, a red bead, a black bead, and a yellow bead. Go kill some imps!
+1	action	end
+0	section	Speaking to Wizard Mizgog with some beads
+1	line	Wizard Mizgog	So how are you doing finding my beads?
+1	line	Player	I have found some of your beads.
+1	line	Wizard Mizgog	Come back when you have them all. The colour of the four beads that I need are red, yellow, black, and white. Go chase some imps!
+1	action	end
+0	section	Speaking to Wizard Grayzag
+1	line	Wizard Grayzag	You're a fool, {player}. Do you really think you'll find four imps out of thousands? Good luck. Ha!
+1	action	end
+0	section	Finishing up
+0	section	Giving the beads to Wizard Mizgog
+1	line	Wizard Mizgog	So how are you doing finding my beads?
+1	line	Player	I've got all four beads. It was hard work I can tell you.
+1	action	(Continues in Quest complete section.)
+0	section	Quest complete
+1	line	Wizard Mizgog	Give them here and I'll check that they really are MY beads, before I give you your reward. You'll like it, it's an amulet of accuracy.
+1	box	You give four coloured beads to Wizard Mizgog.

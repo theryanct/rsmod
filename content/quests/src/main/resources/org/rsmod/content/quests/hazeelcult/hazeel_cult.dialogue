@@ -1,0 +1,637 @@
+# Generated from the OSRS Wiki page "Transcript:Hazeel Cult" by tools/quests/transcript_to_dialogue.py
+# Hand-fixed after generation: added the condition headers the poison-after-full-inventory and amulet branches lacked.
+0	section	Starting off
+1	line	Player	Hello there.
+1	line	Ceril Carnillean	Blooming, thieving cultists! Why don't they leave me alone? String them all up, that's what I say!
+1	select	Select an Option
+1	option	What's wrong?
+2	line	Player	What's wrong?
+2	line	Ceril Carnillean	It's those blooming cultists from the south! They keep breaking into my house!
+2	line	Player	Have they taken much?
+2	line	Ceril Carnillean	Well... no. They stole a suit of armour when they first broke in months ago, but they've been back four more times since then and taken nothing.
+2	line	Player	I see. And you are?
+2	line	Ceril Carnillean	You don't know me? Why, I am Sir Ceril Carnillean! Mine is quite a famous bloodline, you know. We've played a vital role in the politics of Ardougne for many generations.
+2	line	Player	Well I'm {player}. Maybe I can help you with these cultists?
+2	line	Ceril Carnillean	Interesting... I suppose the authorities haven't been much help so far. Yes, very well. If you return the stolen armour, I will provide you with a modest cash reward!
+2	action	If the player is below level 10 combat:
+3	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 10.
+2	select	Start the Hazeel Cult quest?
+2	option	Yes.
+3	line	Player	Yes, of course, I'd be happy to help.
+3	line	Ceril Carnillean	That's very noble of you! Keep that attitude up and one day you might have the honour of working full-time for someone like me.
+3	line	Ceril Carnillean	Now, I caught a glimpse of the thieves leaving, but due to... uh... my cold, I was unable to give chase.
+3	line	Ceril Carnillean	What I do know is that they belong to some sort of cult. They seem to be based in a cave just south of the city, near the Clock Tower.
+3	line	Player	How do you know that?
+3	line	Ceril Carnillean	My old butler, Higson, once followed them there. Unfortunately, the next night he died in his sleep.
+3	line	Player	That's awful!
+3	line	Ceril Carnillean	No, it's okay. Jones, a replacement from the Servants' Guild, arrived the next day. He's been great - makes an excellent broth!
+3	line	Player	Right... I'll see if I can find this cave.
+3	action	end
+2	option	No.
+3	line	Player	No thanks. I've got other plans.
+3	line	Ceril Carnillean	Well no wonder I'm the one with the big house and you're the one on the streets.
+3	action	end
+1	option	You probably deserve it.
+2	line	Player	You probably deserve it.
+2	line	Ceril Carnillean	And who are you to judge me? You look like a peasant anyway. I'm wasting my time talking to you.
+2	action	end
+1	option	You seem uptight, I'll leave you alone.
+2	line	Player	You seem uptight. I'll leave you alone.
+2	line	Ceril Carnillean	Yes, I doubt you could help anyway.
+2	action	end
+0	section	Talking to Ceril again
+1	line	Player	Hello, Ceril.
+1	line	Ceril Carnillean	That's Sir Ceril to you, you impudent scamp. Show a bit of respect to your betters. Now, shouldn't you be recovering my armour?
+1	line	Player	Yeah yeah, I'm on it.
+1	line	Ceril Carnillean	Good. I suggest you start with that cave south of the city, near the Clock Tower. That is where the cult is based.
+1	action	end
+0	section	Talking to the guard
+1	line	Player	Hello.
+1	line	Guard	Hello there. I hear you're after that cult who broke in the other night. It always gladdens me when civilians assist the law like this.
+1	line	Player	I'm just happy to be of help.
+0	section	Talking to Butler Jones
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello. How are you today?
+1	line	Player	Good thank you, and yourself?
+1	line	Butler Jones	Very well, thank you.
+1	action	end
+0	section	Talking to Henryeta
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	Oh, hello. I'm afraid I'm not very presentable at the moment. I've been under incredible stress of late! It's ruining my complexion!
+1	line	Player	Why? What's wrong?
+1	line	Henryeta Carnillean	It's those awful cultists! I just don't feel safe here anymore!
+1	action	end
+0	section	Talking to Philipe
+1	line	Player	Hello there.
+1	line	Player	Hello.The player says hello after saying hello there
+1	line	Philipe Carnillean	Mommy said you're here to kill all the nasty people that keep breaking in.
+1	line	Player	Something like that.
+1	line	Philipe Carnillean	Can I watch?
+1	line	Player	No!
+1	action	end
+0	section	Talking to Claus
+1	line	Player	Hello there.
+1	line	Claus the Chef	Sorry, can't stop to chat! You would be amazed at how many meals this family gets through daily!
+1	action	end
+0	section	Inspecting the range
+1	box	A pot of soup is bubbling away on the range.
+0	section	Using any item on Claus' range
+1	line	Claus the Chef	Oi - I don't want people messing around with my range!
+1	action	end
+0	section	Trying to use the raft
+1	line	Clivet	Hey! I don't remember saying you could use that raft!
+1	action	end
+0	section	Confronting the Hazeel Cult
+1	line	Player	Hello there. Who are you?
+1	line	Clivet	You can call me Clivet. What do you want, adventurer?
+1	line	Player	Do you know the Carnilleans?
+1	line	Clivet	Carnilleans? Don't think I've ever heard of them.
+1	line	Player	Look, I know you're lying. I know all about your cult.
+1	line	Clivet	Is that so? In that case, I'd say you'd be wise to leave now.
+1	line	Player	Unfortunately, I have a job to do. I'm not leaving until it's done.
+1	line	Clivet	Ah, I see. That two-faced snob has made you fall for his propaganda, eh?
+1	line	Player	What's that supposed to mean?
+1	line	Clivet	The Carnillean home does not belong to them. It was built long ago by the great Lord Hazeel, who once ruled over this entire region.
+1	line	Clivet	Many years ago, the Carnilleans led a rebellion against Lord Hazeel and all who followed him. Under the cover of darkness, they stormed his home in an angry mob, torturing and butchering everyone they found.
+1	line	Clivet	The following morning, the Carnillean forefathers moved into the empty household and claimed it as their own. They have grown fat on the hard work of Lord Hazeel ever since.
+1	line	Player	Right... And what happened to this Hazeel?
+1	line	Clivet	The foolish Carnilleans believed him dead. Unluckily for them, being an all-powerful Mahjarrat gave him access to powers and enchantments they knew nothing of.
+1	line	Clivet	As they stormed his home, Lord Hazeel made preparations for his eventual return. We, his faithful followers, have been working to bring that about ever since.
+1	line	Player	What makes you think I care about the politics and histories of Ardougne?
+1	line	Clivet	I could kill you right now and be done with it, but I don't think you're the fool that the Carnilleans believe you to be. Instead, I offer you a chance to join us.
+1	line	Clivet	Help us bring about the return of Lord Hazeel, and you will be well rewarded. However, should you continue to try and prevent his return, you will suffer the wrath of Zamorak.
+1	line	Player	Hmm...
+1	select	Select an Option
+1	option	Before I decide, I have some questions for you.
+2	line	Player	Before I decide, I have some questions for you.
+2	line	Clivet	Very well.
+2	select	Select an Option
+2	option	Tell me more about Hazeel.
+3	line	Player	Tell me more about Hazeel.
+3	line	Clivet	Lord Hazeel is one of the great Mahjarrat who once fought alongside Zamorak himself. He ruled this region for many years, until the cowardly Carnilleans rebelled against him.
+3	line	Player	But he survived?
+3	line	Clivet	Of course! The Mahjarrat know magic that others can only dream of. Lord Hazeel used his abilities to ensure that one day he'd eventually return. That day will soon be upon us.
+3	action	other
+2	option	Why did the Carnilleans rebel against Hazeel?
+3	line	Player	Why did the Carnilleans rebel against Hazeel?
+3	line	Clivet	The Carnilleans served the pathetic Saradomin. They considered it their duty to overthrow Hazeel due to his loyalties to Zamorak. They were fools, blinded by Saradominist propaganda!
+3	line	Player	Saradominist propaganda?
+3	line	Clivet	Yes! Something even more prevalent today. Too many people now are fooled into believing that Saradomin is a god of good, while Zamorak is evil. Those lies couldn't be further from the truth!
+3	action	other
+2	option	Why do you keep breaking into the Carnillean Mansion?
+3	line	Player	Why do you keep breaking into the Carnillean Mansion?
+3	line	Clivet	There is something we need inside. I will say no more unless you agree to join us.
+3	action	other
+2	option	What can you tell me about the Mahjarrat?
+3	line	Player	What can you tell me about the Mahjarrat?
+3	line	Clivet	Surely you have heard of the Mahjarrat? Their race is the ultimate example of power! Each of them wields the strength of an entire army. To oppose any one of them, is to face your doom!
+3	line	Player	And Hazeel is one of them?
+3	line	Clivet	More than that! Hazeel is one of the greatest Mahjarrat to have ever lived!
+3	line	Player	I see.
+3	action	other
+2	option	Actually, I have no questions.
+3	line	Player	I have no more questions.
+3	line	Clivet	Then we have nothing more to discuss until you've made your choice.
+3	action	previous
+1	option	Alright, I've made my decision.
+2	line	Player	Alright, I've made my decision.
+2	line	Clivet	And?
+2	select	Select an Option
+2	option	I'll help you.
+3	line	Player	I'll help you.
+3	line	Clivet	Good. Now, we are not the monsters that the Carnilleans would claim we are, so we were hoping to do this without violence. However, the fact they sent you here makes it clear that won't work now.
+3	line	Player	Meaning?
+3	line	Clivet	You must prove your loyalty to our cause, and Ceril Carnillean must die. Kill him for us, and we will know you are truly dedicated to Lord Hazeel.
+3	select	Select an Option
+3	option	Alright, how do I do it?
+4	line	Player	Alright, how do I do it?
+4	line	Clivet	I can already tell I was right about you. I can see you are of exactly the right character to join the followers of Hazeel.
+4	line	Clivet	Here, take this poison and pour it into Ceril Carnillean's food. Once the deed is done, return here and speak to me once more.
+4	action	If the player has a full inventory:
+5	box	Clivet tries to give you some poison, but you don't have enough room to take it.
+5	action	end
+4	action	If the player inventory space:
+5	box	Clivet gives you some poison.
+5	action	end
+3	option	I need some time to think on this.
+4	line	Player	I need some time to think on this.
+4	line	Clivet	Don't take too long.
+4	action	end
+2	option	I won't help you.
+3	line	Player	I won't help you.
+3	line	Clivet	Then you are a fool. Go back to your small-minded little life. You will never know the glories you could have tasted as one of us!
+3	line	Player	You know I'm going to stop you, right?
+3	line	Clivet	You'll try, but you'll never find us.
+3	box	Clivet jumps onto the nearby raft and pushes off into the sewer system.
+2	option	Actually, I need more time to think on this.
+3	line	Player	Actually, I need more time to think on this.
+3	line	Clivet	Don't take too long.
+3	action	end
+1	option	I need some time to think on this.
+2	line	Player	I need some time to think on this.
+2	line	Clivet	Don't take too long.
+2	action	end
+0	section	Talking to Clivet again before joining
+1	line	Player	Hello.
+1	line	Clivet	So, you've returned. I hope you're here because you've recognised the folly in serving the Carnilleans. Think about what you could achieve if you join us instead.
+1	select	Select an Option
+1	option	Before I decide, I have some questions for you.
+2	action	above
+1	option	Alright, I've made my decision.
+2	action	above
+1	option	I need some time to think on this.
+2	action	above
+0	section	Joining the Carnillean side
+0	section	Talking to Alomone
+1	line	Alomone	How did you get in here?
+1	line	Player	I've come for the Carnillean family armour. Hand it over, or face the consequences.
+1	line	Alomone	I thought I made it clear to Jones that you could not be allowed to interfere with our mission. The incompetent fool must be going soft.
+1	line	Player	So the butler's part of your little cult? Why is it always the butler? I should have known...
+1	line	Alomone	Well you won't live long enough to tell anyone! Die!
+1	action	end
+0	section	Talking to Clivet
+1	line	Clivet	You! Leave this place at once, before we're forced to make you!
+1	action	end
+0	section	Talking to Hazeel Cultist
+1	line	Player	Hello.
+1	line	Hazeel Cultist	You have no place here! Leave now, before someone makes you!
+1	action	end
+0	section	Retrieving the Carnillean armour from the chest
+0	section	If Alomone is alive
+1	line	Alomone	Get away from that chest!
+1	action	end
+0	section	If Alomone is killed first
+1	cond	If the player has a full inventory:
+2	box	You find some armour in the chest, but you don't have enough room to take it.
+1	cond	If the player has enough space:
+2	box	You find some armour in the chest.
+0	section	Talking to Butler Jones
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello, adventurer. How are you doing with your quest?
+1	line	Player	Drop the act, Jones. I know you're in league with the cultists.
+1	line	Butler Jones	Have you hit your head? That's a preposterous accusation!
+1	line	Player	Really? So you won't mind me telling Ceril then?
+1	line	Butler Jones	Oh, you think he'll take your word over mine? He trusts me completely!
+1	line	Player	We'll see about that.
+1	action	end
+0	section	Returning the armour
+1	line	Ceril Carnillean	You're back. Have you had any luck yet?
+1	line	Player	Look! I've recovered your armour!
+1	line	Ceril Carnillean	Well done! I must say I am very impressed! Come on, hand it over.
+1	box	You give the armour to Ceril.
+1	line	Ceril Carnillean	Before we send you on your way with your payment, I'll just get Jones to whip you up a batch of his special broth.
+1	line	Player	I'd rather not if it's all the same to you. Apparently Jones is in league with the cultists.
+1	line	Ceril Carnillean	What? Right! You! We're going to blooming well sort this out right now, once and for all!
+1	line	Ceril Carnillean	Jones! This commoner says you had something to do with the cultists that stole my armour. What do you have to say for yourself?
+1	line	Butler Jones	Nothing to do with me, sir. I am, as you know, a loyal servant.
+1	line	Ceril Carnillean	Humph. Quite right too. I cannot fathom why this scoundrel would accuse you of such a crime without evidence to back up the accusations.
+1	line	Ceril Carnillean	Right, I have made a decision. I have given my word as a nobleman to reward you for your efforts in retrieving my armour, but I must also compensate Jones for this terrible slander.
+1	line	Ceril Carnillean	Now take this and leave! And don't darken my doorstep again!
+1	line	Butler Jones	Don't worry, sir, he won't be bothering us any more.
+1	box	Jones smirks at you. You are going to need more than words to prove his treachery.
+1	action	end
+0	section	Talking to Cecil
+1	line	Player	Hey! You owe me money.
+1	line	Ceril Carnillean	I owe you nothing you scoundrel! Now get out or I'll have Jones throw you out!
+1	action	end
+0	section	Talking to Henryeta
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	You! Don't think you can go around insulting our trusted staff and then waltz up to me as though nothing has happened!
+1	line	Player	Everything I said was the truth.
+1	line	Henryeta Carnillean	Ha! Don't be so ridiculous! Next you'll be trying to tell me that Jones murdered our old butler!
+1	action	end
+0	section	Talking to Philipe
+1	line	Player	Hello there.
+1	line	Philipe Carnillean	Daddy says you don't like Mr Jones. Mr Jones is nice. He brings me toys and sweets.
+1	line	Player	Jones is a bad man.
+1	line	Philipe Carnillean	Well if you think that, I don't like you!
+1	line	Player	Well I'll do my best to console myself over your feelings towards me.
+1	action	end
+0	section	Talking to Butler Jones
+1	line	Butler Jones	I believe you've been asked to leave, adventurer.
+1	line	Player	You won't get away with this, Jones! I know who you really are!
+1	line	Butler Jones	That's quite enough of that. All of us here are starting to tire of your theatrics.
+1	line	Player	This isn't over! I will find proof!
+1	action	end
+0	section	Talking to Claus the Chef
+1	line	Player	Hello there.
+1	line	Claus the Chef	Hello. How are you today?
+1	line	Player	Not bad, thanks.
+1	line	Claus the Chef	Good good.
+1	action	end
+0	section	Talking to the Guard
+1	line	Player	Hello there.
+1	line	Guard	Hello, adventurer. I hear you accused Jones of being part of that cult. Is that true?
+1	line	Player	It is, but nobody believes me.
+1	line	Guard	You have my utter faith, adventurer. I can't openly defy Sir Ceril, but I'd like you to know that I think you're on the right track with this.
+1	line	Guard	I always found it suspicious that Jones would just show up on the doorstep the very day after the old butler died. Good luck in clearing your name
+0	section	Accusing the butler
+1	box	You search the cupboard and find a bottle of poison along with a mysterious amulet.
+1	line	Player	And what do we have here...
+1	line	Player	Ceril!
+1	line	Ceril Carnillean	What do you want now you scoundrel?
+1	line	Player	Take a look at what I've found.
+1	line	Ceril Carnillean	What's this... Poison?
+1	line	Ceril Carnillean	Jones?
+1	line	Butler Jones	Just for killing rats, sir.
+1	line	Ceril Carnillean	Right... but this amulet... I recognise this! Those cultists wore amulets like this!
+1	line	Ceril Carnillean	Jones! We trusted you! We took you into our home!
+1	line	Butler Jones	You senile old fool... it was all too easy! I should have killed you and your pathetic family weeks ago!
+1	line	Ceril Carnillean	Guard!
+1	line	Ceril Carnillean	This man is one of those cultists! Take him away!
+1	line	Butler Jones	Don't think this is over, Ceril! You will die at the hands of the Hazeel Cult! I promise you that!
+1	line	Ceril Carnillean	Well... It looks like I am indebted to you!
+1	line	Player	No problem. We all make mistakes.
+1	line	Ceril Carnillean	But if it weren't for you... my whole family... we could have been...
+1	line	Ceril Carnillean	I apologise for my harshness before. The very least I can do is to reward you for your noble efforts, and to offer my sincerest apologies as a gentleman.
+1	line	Player	Thank you.
+1	line	Ceril Carnillean	No, no, thank you! Feel free to stop by anytime, adventurer!
+0	section	After quest completion
+0	section	Talking to Ceril
+1	line	Player	Hello, Ceril.
+1	line	Ceril Carnillean	Hello again, adventurer! It's good to see you! If it wasn't for your quick thinking, the treacherous Jones would have probably poisoned my family and I by now! We are in your debt.
+1	line	Player	Don't worry about it! A good deed is its own reward. And that money didn't hurt either.
+1	action	end
+0	section	Talking to Guard
+1	line	Player	Hello there.
+1	line	Guard	Well look who it is! Good to see you managed to clear your name. I always had faith in you!
+1	line	Player	Thanks! So is everything all quiet around here now?
+1	line	Guard	Indeed! For now at least, everything is back to normal.
+1	action	end
+0	section	Talking to Philipe
+1	line	Player	Hello there.
+1	line	Philipe Carnillean	What have you brought me? I want some more toys!
+1	line	Player	I'm afraid I don't have any toys.
+1	line	Philipe Carnillean	Toys! I want toys!
+1	action	end
+0	section	Talking to Henryeta
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	Hello again, adventurer. Since you dealt with those horrible cultists, things have vastly improved for us around here!
+1	line	Player	I'm happy to have helped.
+1	action	end
+0	section	Talking to Claus
+1	line	Player	Hey.
+1	line	Claus the Chef	Well hello there, adventurer! Are we fit and well?
+1	line	Player	Absolutely.
+1	line	Claus the Chef	Glad to hear it.
+1	action	end
+0	section	Joining the Hazeel side
+0	section	Obtaining the poison after an initially full inventory
+1	line	Player	Hello there.
+1	line	Clivet	Here's that poison you need. Take it and pour it into Ceril Carnillean's food. Once the deed is done, return here and speak to me once more.
+1	action	If the player has a full inventory:
+2	box	Clivet tries to give you some poison, but you don't have enough room to take it.
+2	action	end
+1	action	If the player inventory space:
+2	box	Clivet gives you some poison.
+2	action	end
+0	section	Talking to Clivet again
+1	line	Player	Hello there.
+1	line	Clivet	You have a mission for us, adventurer. Go to the Carnilliean household and poison Ceril Carnillean's meal to prove your loyalty.
+1	action	If the player has poison in their inventory:
+2	action	end
+1	action	If the player has no poison in their inventory:
+2	line	Player	I need some more poison.
+2	line	Clivet	Fool! Be more careful with it this time.
+2	action	If the player has a full inventory:
+3	box	Clivet tries to give you some poison, but you don't have enough room to take it.
+3	action	end
+2	action	If the player inventory space:
+3	box	Clivet gives you some poison.
+3	action	end
+0	section	Talking to the guard
+1	line	Player	Hello.
+1	line	Guard	Hello there. I hear you're after that cult who broke in the other night. It always gladdens me when civilians assist the law like this.
+1	line	Player	I'm just happy to be of help.
+1	action	end
+0	section	Talking to Butler Jones
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello, adventurer. I hear your quest is going well.
+1	line	Player	Really?
+1	line	Butler Jones	Oh yes. Do keep up the good work.
+1	action	end
+0	section	Talking to Ceril
+1	line	Ceril Carnillean	You're back. Have you had any luck yet?
+1	line	Player	I'm afraid not, Ceril.
+1	line	Ceril Carnillean	That's Sir Ceril you blooming scoundrel! Show respect when addressing someone of my rank! I must say, I am a bit disapointed you haven't made any progress. Maybe I was wrong about you.
+1	line	Player	Yeah, well, just unlucky I guess.
+1	action	end
+0	section	Talking to Henryeta
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	Oh, hello. I hope you've found those awful cultists! I simply cannot sleep at night knowing they're loose!
+1	line	Player	I'm afraid I haven't found them yet.
+1	line	Henryeta Carnillean	Well you really are useless, aren't you?
+1	line	Player	Yup, I guess I am.
+1	action	end
+0	section	Talking to Philipe
+1	line	Player	Hello there.
+1	line	Philipe Carnillean	Mommy said you're here to kill all the nasty people that keep breaking in.
+1	line	Player	Something like that.
+1	line	Philipe Carnillean	Can I watch?
+1	line	Player	No!
+1	action	end
+0	section	Talking to Claus
+1	line	Player	Hey.
+1	line	Claus the Chef	You're that adventurer the family asked to help deal with those weird cultists, right?
+1	line	Player	That's me.
+1	line	Claus the Chef	Good luck with that!
+1	action	end
+0	section	Inspecting the range
+1	box	A pot of soup is bubbling away on the range.
+1	select	Pour the poison into the pot?
+1	option	Yes.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Using the poison on the range
+0	section	Using another poison the range
+1	box	You've already done enough poisoning.
+0	section	Talking to Claus after the poisoning
+1	line	Claus the Chef	Hello there. Caught any of those weird cultists yet?
+1	line	Player	Afraid not.
+1	line	Claus the Chef	Well, keep at it!
+1	action	end
+0	section	Talking to Henryeta after the poisoning
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	Those hooligans! They slaughtered my precious Scruffy! I shall never recover! I am emotionally scarred for life!
+1	line	Player	Yeah... Hopefully someone finds them soon.
+1	action	end
+0	section	Talking to Butler Jones after the poisoning
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello, adventurer. Such a terrible shame about Scruffy. I wonder if the family will ever fully recover.
+1	line	Butler Jones	Anyway, I hear your quest is going well.
+1	line	Player	Really?
+1	line	Butler Jones	Oh yes. Do keep up the good work.
+1	action	end
+0	section	Talking to Philipe again
+1	line	Player	Hello there.
+1	line	Philipe Carnillean	Someone killed Scruffy. I liked Scruffy. He never told me off.
+1	line	Player	Yeah... it's a real shame.
+1	line	Philipe Carnillean	I want my mommy.
+1	action	end
+0	section	Talking to Ceril after the poisoning
+1	line	Player	Hello again.
+1	line	Ceril Carnillean	Oh the inhumanity... the cruelty... the misery... the pain...
+1	line	Ceril Carnillean	My son is a good boy, really, but how could he give his dinner to Scruffy without having the servants test it for poison first? How? How could he be so thoughtless and careless? He knows we are all under threat!
+1	line	Player	Scruffy?
+1	line	Ceril Carnillean	He's been with our family for twenty years... that's 140 in dog years! The poor dog... What did he ever do to deserve such a fate?
+1	line	Player	Your dog got poisoned? That's not right.
+1	line	Ceril Carnillean	I agree! I hope whichever evildoer is responsible gets the full weight of the law brought upon them!
+1	line	Player	Uh... yeah... me too.
+1	action	end
+0	section	Talking to Ceril again after the poisoning
+1	line	Player	Hello again.
+1	line	Ceril Carnillean	Oh the misery... How could someone do something like this?
+1	line	Player	Uh... I'm sure they won't get away with it...
+1	action	end
+0	section	Talking to the guard again
+1	line	Player	Hello there.
+1	line	Guard	Today is a dark day. Those cultists have been back, and this time they've gone further than ever before! Murder! We can't afford to keep letting them get away with this.
+1	action	end
+0	section	The scroll
+0	section	Talking to Clivet
+1	line	Player	I poisoned the food as requested, but it didn't quite go to plan.
+1	line	Clivet	Yes, we heard all about it from one of our sources. It's a shame that Ceril Carnillean survived, but that is no fault of yours. You have proven your loyalty to Hazeel.
+1	line	Player	So what now?
+1	line	Clivet	I would like you to meet with our leader, Alomone. You'll find him in our hideout, deeper in the sewers. You can use this raft to get there.
+1	line	Clivet	However, be warned that reaching the hideout is impossible unless the flow of water down here is set correctly. You'll need to use the sewer valves above to do that.
+1	line	Player	But how will I know how to set the valves?
+1	line	Clivet	For that, you'll need this.
+1	cond	If the player has a full inventory:
+2	box	Clivet tries to give you an amulet, but you don't have enough room to take it.
+2	action	end
+1	cond	If the player has inventory space:
+2	box	Clivet gives you an amulet.
+2	line	Clivet	Going from left to right, turn each of the five sewer valves above so that they follow the design of the amulet. Once you've done that, you'll be able to use the raft here to enter our hideout.
+2	action	end
+0	section	If the player did not have enough space for the amulet
+1	line	Clivet	Here, you'll need this.
+1	box	Clivet gives you an amulet.
+1	line	Clivet	Going from left to right, turn each of the five sewer valves above so that they follow the design of the amulet. Once you've done that, you'll be able to use the raft here to enter our hideout.
+1	action	end
+0	section	Reclaiming a lost amulet
+1	line	Player	I lost that amulet you gave me.
+1	line	Clivet	Careless! Look aferMight be a transcription error this one!
+1	action	If the player has a full inventory:
+2	box	Clivet tries to give you an amulet, but you don't have enough room to take it.
+2	action	end
+1	action	If the player has inventory space:
+2	box	Clivet gives you an amulet.
+2	action	end
+0	section	Talking to Clivet again
+1	line	Player	What am I meant to be doing?
+1	line	Clivet	Use the raft here to enter our hideout and meet with our leader, Alomone.
+1	line	Clivet	Be warned, you'll need to ensure the flow of water down here is set correctly for you to be able to use the raft.
+1	line	Clivet	Going from left to right, turn each of the five sewer valves above so that they follow the design of the amulet I gave you.
+1	action	end
+0	section	Using the raft
+1	box	The current is flowing against the raft. It won't move.
+0	section	Inspecting a sewer valve that is to the right
+1	select	The valve is currently turned to the right.
+1	option	Turn it to the left.
+2	box	You turn the valve to the left. Beneath your feet you hear the sudden sound of rushing water.
+2	action	end
+1	option	Do nothing.
+1	box	You leave the valve alone.
+2	action	end
+0	section	Inspecting a sewer valve that is to the left
+1	select	The valve is currently turned to the left.
+1	option	Turn it to the right.
+2	box	You turn the valve to the right. Beneath your feet you hear the sudden sound of rushing water.
+2	action	end
+1	option	Do nothing.
+1	box	You leave the valve alone.
+2	action	end
+0	section	One valve set correctly
+1	box	The raft washes up the sewer and stops at the first island. You'll need to find the right combination of the five sewer valves above if you want to go further.
+1	box	The raft flows back to the cave entrance.
+0	section	Two valves set correctly
+1	box	The raft washes up the sewer and stops at the second island. You'll need to find the right combination of the five sewer valves above if you want to go further.
+1	box	The raft flows back to the cave entrance.
+0	section	Three valves set correctly
+1	box	The raft washes up the sewer and stops at the fourth island. You'll need to find the right combination of the five sewer valves above if you want to go further.
+1	box	The raft flows back to the cave entrance.
+0	section	Four valves set correctly
+1	box	The raft washes up the sewer and stops at the third island. You'll need to find the right combination of the five sewer valves above if you want to go further.
+1	box	The raft flows back to the cave entrance.
+0	section	Sucessfully using the raft with the correct water valve settings
+1	box	The raft washes up the sewer until it reaches the end of the passage.
+0	section	Talking to a Hazeel cultist
+1	line	Player	Hello.
+1	line	Hazeel Cultist	I cannot talk right now. Lord Hazeel will soon be back with us and I have many preparations to make.
+1	action	end
+0	section	Talking to Alomone
+1	line	Player	Hello there.
+1	line	Alomone	Well, well, well... we have a new recruit. Clivet told me of your desire to join us in our glorious task to resurrect the mighty Hazeel.
+1	line	Player	That's right.
+1	line	Alomone	Well if all goes well, you'll play a key role in just that. Before his defeat, Hazeel secured within his home a powerful magical scroll of restoration. It remains there still, hidden to even the foolish Carnilleans.
+1	line	Alomone	Up to now, our attempts to recover this scroll have been met with disappointment. However, I know you will not fail us.
+1	line	Player	So you want me to find this scroll?
+1	line	Alomone	That is correct. You must return to the Carnillean Mansion and find where it is hidden. We already have an agent in place to support you.
+1	line	Player	You do?
+1	line	Alomone	Indeed. Their Butler Jones is in fact a faithful follower of Hazeel. He has been unsuccessful in locating the scroll himself, but together the two of you will find it.
+1	line	Alomone	Now, go with haste. Soon we will restore Hazeel to his true power and glory!
+1	action	end
+0	section	Talking to Alomone again
+1	line	Player	Hello, Alomone.
+1	line	Alomone	Hazeel has already waited far too long for his return. It is imperative that you find that scroll! It hides somewhere within the Carnillean Mansion.
+1	line	Player	Don't worry, I'm on it.
+1	action	end
+0	section	Taking the raft back
+1	box	The raft flows back to the cave entrance.
+0	section	Talking to Clivet again
+1	line	Player	Hello.
+1	line	Clivet	It is good to see you once more, adventurer. Glory to Hazeel!
+1	action	end
+0	section	Talking to Ceril again
+1	line	Player	Hello, Ceril. How's things?
+1	line	Ceril Carnillean	Sir Ceril! Sir! And things are terrible! Our beloved dog is dead, and I fear it's only a matter of time before those cultists strike again!
+1	line	Player	Don't worry, I'm sure it will all be okay in the end.
+1	action	end
+0	section	Talking to Claus again
+1	line	Player	Hello there.
+1	line	Claus the Chef	I just don't understand it! How? How could someone poison my delicious food without me even noticing? I... I just don't get it!
+1	line	Claus the Chef	Oh man... I hope I don't lose my job over this... but how? How did they do it? And why would they want to kill poor Scruffy anyway? He was such a good dog...
+1	line	Player	Yeah... it's a real mystery.
+1	action	end
+0	section	Talking to Ceril
+1	line	Player	Ceril. How are you?
+1	line	Ceril Carnillean	Oh cruel world! Scruffy... I knew you well... I... just... don't think I can... go on without...
+1	box	Sir Ceril breaks down into tears.
+1	line	Player	Loosen up already. It was only a DOG.
+1	action	end
+0	section	Talking to Butler Jones
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello, adventurer. I hear your quest is going well.
+1	line	Player	I'm making progress. On that note, I hear you might be able to help me with my next task.
+1	line	Butler Jones	Ah yes, the scroll. I'm afraid I've searched high and low, but have so far been unable to locate it. I'm sure it is somewhere within the house, hidden where even the family won't find it.
+1	line	Player	Hmm... So it must be somewhere they'd have never stepped foot. I'll keep on looking.
+1	action	end
+0	section	Using the Knock-at wall
+1	box	You knock on the wall. It sounds like there's a hollow space on the other side.
+1	select	Push against the wall?
+1	option	Yes.
+2	action	The player enters the wall.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Chest without the key
+1	box	The chest is locked. It looks like it needs a key.
+0	section	Searching the crate in the kitchen
+1	action	With a full inventory:
+2	box	You search the crate and find an old key hidden at the bottom, but you don't have enough room to take it.
+2	action	end
+1	action	Without a full inventory:
+2	box	You search the crate and find an old key hidden at the bottom.
+2	action	end
+0	section	Searching a crate with the key
+0	section	Opening the chest
+1	action	With a full inventory:
+2	box	You unlock the chest and find a scroll inside, but you don't have enough room to take it.
+2	action	end
+1	action	Without a full inventory:
+2	box	You unlock the chest and find a scroll inside.
+2	action	end
+0	section	Searching the chest with a scroll already
+1	box	You already have the scroll from this chest.
+0	section	Talking to Jones after obtaining the scroll
+1	line	Player	Hello there.
+1	line	Butler Jones	Hello, adventurer. How is your quest going?
+1	action	If the player does not have the scroll:
+2	line	Player	I'm making progress.
+2	line	Butler Jones	Good. Remember, the scroll must be somewhere within the house, hidden where even the family won't find it.
+2	line	Player	Hmm... I'll keep on looking.
+2	action	end
+1	action	If the player has the scroll:
+2	line	Player	I have the scroll!
+2	line	Butler Jones	Then you should waste no time in returning to Alomone. The return of Hazeel will soon be upon us!
+2	action	end
+0	section	Talking to Hentryeta after obtaining the scroll
+1	line	Player	Hello.
+1	line	Henryeta Carnillean	I'm sorry. I am far too upset to talk to anybody right now. Oh... poor Scruffy...
+1	line	Player	Yeah... poor Scruffy.
+1	action	end
+0	section	Talking to Ceril after obtaining the scroll
+1	line	Player	Hello, Ceril. How's things?
+1	line	Ceril Carnillean	Sir Ceril! Sir! And things are terrible! Our beloved dog is dead, and I fear it's only a matter of time before those cultists strike again!
+1	line	Player	Don't worry, I'm sure it will all be okay in the end.
+1	action	end
+0	section	Talking to Philipe after obtaining the scroll
+1	line	Player	Hello there.
+1	line	Philipe Carnillean	Someone killed Scruffy. I liked Scruffy. He never told me off.
+1	line	Player	Yeah... it's a real shame.
+1	line	Philipe Carnillean	I want my mommy.
+1	action	end
+0	section	Talking to Claus after obtaining the scroll
+1	line	Player	Hello there.
+1	line	Claus the Chef	I just don't understand it! How? How could someone poison my delicious food without me even noticing? I... I just don't get it!
+1	line	Claus the Chef	Oh man... I hope I don't lose my job over this... but how? How did they do it? And why would they want to kill poor Scruffy anyway? He was such a good dog...
+1	line	Player	Yeah... it's a real mystery.
+1	action	end
+0	section	Talking to the guard after obtaining the scroll
+1	line	Player	Hello there.
+1	line	Guard	Hello, adventurer. I hope you find the cult soon. We have a horrible suspicion that there's been another burglary.
+1	line	Player	That's worrying.
+1	line	Guard	Yes, it is. The thing is, we can't even work out what they've taken! It's all very odd.
+1	action	end
+0	section	Taking the raft
+1	box	The raft washes up the sewer until it reaches the end of the passage.
+1	action	end
+0	section	Talking to Alomone after obtaining the scroll
+1	line	Player	Hello, Alomone.
+1	line	Alomone	Have you brought the scroll of restoration?
+1	action	If the player has the scroll in their inventory:
+2	line	Player	Yes, I have it right here.
+2	line	Alomone	At long last! With the words contained within this scroll, our lord shall finally return to us!
+3	line	Alomone	Watch adventurer, and witness the glorious rebirth of Hazeel!
+2	line	Alomone	Sentente sillaberi junque dithmento! Ia! Ia! Dextrimon encanto! Termando... Imcando... Solly enty rando... Sentente! Ia! Ia! Indenti zaggarati g'thxa!
+2	line	Alomone	Dintenta! Sententa! Retenta! Q'exjta! Ia! Sottottott! Ia! Dysmenta junque fammatio svelken! Sottey! Sentey! Soloment!
+2	line	Hazeel	My loyal followers, I have pride in you all. You have achieved a feat many would have considered impossible and returned me to this land.
+2	line	Hazeel	Much time has passed and I have much to attend to, but first, I believe there is one here who deserves my gratitude.
+2	line	Hazeel	Adventurer, I know that your efforts were essential in bringing about my return. You have my thanks. Know that I consider you an ally.
+2	line	Hazeel	Now, I must leave you, loyal subjects, for time is short. My Mahjarrat kin will soon head northwards, and I have much to prepare.
+2	line	Hazeel	Rest assured, when my work is done, I will return to you. Before long, the world will know of Hazeel once more!
+1	action	If the player does not have the scroll in their inventory:
+2	line	Player	Nope, sorry.
+2	line	Alomone	You must find it and bring it to me! Hazeel has already waited far too long for his return.
+2	action	end

@@ -1,0 +1,292 @@
+# Generated from the OSRS Wiki page "Transcript:Pirate's Treasure" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Redbeard Frank
+1	line	Redbeard Frank	Arr, Matey!
+1	select	Select an Option
+1	option	I'm in search of treasure.
+2	line	Player	I'm in search of treasure.
+2	line	Redbeard Frank	Arr, treasure you be after eh? Well I might be able to tell you where to find some... For a price...
+2	line	Player	What sort of price?
+2	line	Redbeard Frank	Well for example if you can get me a bottle of rum... Not just any rum mind...
+2	line	Redbeard Frank	I'd like some rum made on Karamja Island. There's no rum like Karamja Rum!
+2	cond	If the player has completed Rum Deal:
+3	line	Player	Would some Braindeath 'Rum' do?
+3	line	Redbeard Frank	Gadzooks, that swill! Not a chance!
+3	line	Redbeard Frank	It's Karamja Rum or no deal.
+3	action	continues
+2	select	Start the Pirate's Treasure quest?
+2	option	Yes.
+3	line	Player	Ok, I will bring you some rum.
+3	line	Redbeard Frank	Yer a saint, although it'll take a miracle to get it off Karamja.
+3	line	Player	What do you mean?
+3	line	Redbeard Frank	The Customs office has been clampin' down on the export of spirits. You seem like a resourceful young [lad/lass], I'm sure ye'll be able to find a way to slip the stuff past them.
+3	line	Player	Well I'll give it a shot.
+3	line	Redbeard Frank	Arr, that's the spirit!
+3	action	end
+2	option	No.
+3	line	Player	Not right now.
+3	line	Redbeard Frank	Fair enough. I'll still be here and thirsty whenever you feel like helpin' out.
+3	action	end
+1	option	Arr!
+1	option	Do you have anything for trade?
+0	section	Talking to Redbeard Frank again
+1	line	Redbeard Frank	Arr, Matey!
+1	line	Redbeard Frank	Have ye brought some rum for yer ol' mate Frank?
+1	line	Player	No, not yet.
+1	line	Redbeard Frank	Not surprising, tis no easy task to get it off Karamja.
+1	line	Player	What do you mean?
+1	line	Redbeard Frank	The Customs office has been clampin' down on the export of spirits. You seem like a resourceful young lad, I'm sure ye'll be able to find a way to slip the stuff past them.
+1	line	Player	Well I'll give it another shot.
+1	action	end
+0	section	Visiting Karamja
+0	section	Talking to Luthas
+1	line	Luthas	Hello I'm Luthas, I run the banana plantation here.
+1	select	Select an Option
+1	option	Could you offer me employment on your plantation?
+2	line	Player	Could you offer me employment on your plantation?
+2	line	Luthas	Yes, I can sort something out. There's a crate ready to be loaded onto the ship.
+2	line	Luthas	You wouldn't believe the demand for bananas from Wydin's shop over in Port Sarim. I think this is the third crate I've shipped him this month..
+2	line	Luthas	If you could fill it up with bananas, I'll pay you 30 gold.
+2	action	end
+1	option	That customs officer is annoying isn't she?
+2	line	Player	That customs officer is annoying isn't she?
+2	line	Luthas	Well I know her pretty well. She doesn't cause me any trouble any more.
+2	line	Luthas	She doesn't even search my export crates any more. She knows they only contain bananas.
+2	line	Player	Really? How interesting. Whereabouts do you send those to?
+2	line	Luthas	There is a little shop over in Port Sarim that buys them up by the crate. I believe it is run by a man called Wydin.
+2	action	end
+0	section	Filling the crate with bananas
+1	cond	If the player uses an individual banana on the crate:
+2	box	You pack a banana into the crate.
+2	action	end
+1	cond	If the player selects the Fill option on the crate:
+2	box	You pack all your bananas into the crate.
+2	action	end
+1	cond	If the player attempts to add an 11th banana in the crate:
+2	action	end
+0	section	Using Karamjan rum on Crate
+1	cond	If the crate does not have a Karamjan rum already stored:
+2	box	You stash the rum in the crate.
+2	action	end
+1	cond	If the player attempts to store another Karamjan rum in the crate:
+2	action	end
+0	section	Attempting to hide Karamjan rum (banana) in the crate
+1	box	Pirates don't usually take banana with their Karamjan rum.
+1	action	end
+0	section	Attempting to hide Karamjan rum (sliced banana) in the crate
+1	box	Pirates don't usually take sliced banana with their Karamjan rum.
+1	action	end
+0	section	Searching the crate
+1	cond	If there are fewer than 10 bananas inside the crate:
+2	action	end
+1	cond	If the crate has 10 bananas:
+2	box	The crate is full of bananas.
+2	action	end
+1	cond	If the player has hidden a rum bottle in the crate:
+2	box	There is also some rum stashed in here too.
+1	action	end
+0	section	Talking to Luthas after filling up the crate
+1	line	Player	I've filled a crate with bananas.
+1	line	Luthas	Well done, here's your payment.
+1	action	
+1	select	Select an Option
+1	option	Will you pay me for another crate full?
+2	line	Player	Will you pay me for another crate full?
+2	line	Luthas	Yes certainly.
+2	line	Luthas	If you go outside you should see the old crate has been loaded on to the ship, and there is another empty crate in its place.
+2	action	end
+1	option	Thank you, I'll be on my way
+2	line	Player	Thank you, I'll be on my way.
+2	action	end
+1	option	So where are these bananas going to be delivered to?
+2	line	Player	So where are these bananas going to be delivered to?
+2	line	Luthas	I sell them to Wydin who runs a grocery store in Port Sarim.
+2	action	end
+1	option	That customs officer is annoying isn't she?
+2	action	above
+0	section	Talking to the Customs officer
+1	line	Customs officer	Can I help you?
+1	select	Select an Option
+1	option	Can I journey on this ship?
+2	line	Player	Can I journey on this ship?
+2	line	Customs officer	You need to be searched before you can board.
+2	select	Select an Option
+2	option	Why?
+3	line	Player	Why?
+3	line	Customs officer	Because Asgarnia has banned the import of intoxicating spirits.
+3	action	other
+2	option	Search away. I have nothing to hide.
+3	line	Player	Search away. I have nothing to hide.
+3	cond	If the player has Karamjan rum:
+4	line	Customs officer	Aha, trying to smuggle rum are we?
+4	line	Player	Umm... it's for personal use?
+4	action	end
+4	cond	If the player is wearing the Ring of Charos(a):
+5	select	Select an option
+5	option	Umm... it's for personal use?
+6	action	above
+5	option	(Charm) This is not the Karamja rum you are looking for.
+6	line	Player	This is not the Karamja rum you are looking for.
+6	line	Customs officer	This is not the Karamja rum we are looking for.
+6	line	Player	Well that was easy!
+6	line	Player	Drat...
+3	cond	If the player does not have Karamjan rum:
+4	line	Customs officer	Well you've got some odd stuff, but it's all legal. Now you need to pay a boarding charge of 30 coins.
+4	select	Select an Option
+4	option	Okay.
+5	line	Player	Okay.
+5	cond	If the player doesn't have 30 coins:
+6	line	Player	Oh dear, I don't seem to have enough money.
+5	action	end
+4	option	Oh, I'll not bother then.
+5	line	Player	Oh, I'll not bother then.
+5	action	end
+2	option	You're not putting your hands on my things!
+3	line	Player	You're not putting your hands on my things!
+3	line	Customs officer	You're not getting on this ship then.
+3	action	end
+2	cond	If the player is wearing the Ring of Charos(a):
+3	option	(Charm) You don't need to look through my things.
+4	line	Player	You don't need to look through my things.
+4	line	Customs officer	Oh, I think I do. If you don't want to let me search your possessions, then you're not coming aboard this ship.
+4	action	end
+1	option	Does Karamja have unusual customs then?
+2	line	Player	Does Karamja have any unusual customs then?
+2	line	Customs officer	I'm not that sort of customs officer.
+2	action	end
+0	section	Attempting to smuggle out the rum
+1	cond	If the player teleports out using any spell or teleport item:
+2	action	The player is teleported to their target location.
+2	action	end
+1	cond	If the player uses Karamjan rum on an imp-in-a-box:
+2	line	Imp	Don't you know? You can get into trouble for giving alcohol to minors, and I'm pretty small, it has to be said.
+2	action	end
+1	cond	If the player tries to board a player owned boat
+2	box	The nearby customs agent stops you from using the dock facilities with Karamjan rum in your backpack.
+2	action	end
+0	section	Retrieving the Rum
+0	section	Talking to Wydin
+1	line	Wydin	Welcome to my food store! Would you like to buy anything?
+1	option	Yes please.
+1	option	No, thank you.
+1	option	What can you recommend?
+1	option	Can I get a job here?
+2	line	Player	Can I get a job here?
+2	line	Wydin	Well, you're keen, I'll give you that. Okay, I'll give you a go. Have you got your own white apron?
+2	cond	If the player has a white apron:
+3	line	Player	Yes, I have one right here.
+3	line	Wydin	Wow - you are well prepared! You're hired. Go through to the back and tidy up for me, please.
+3	cond	If the white apron is not equipped:
+4	line	Wydin	You need to put your white apron on first though.
+4	action	continues
+3	action	end
+2	cond	If the player does not have a white apron:
+3	line	Player	No, I haven't.
+3	line	Wydin	Well, you can't work here unless you have a white apron. Health and safety regulations, you understand.
+3	line	Player	Where can I get one of those?
+3	line	Wydin	Well, I get all of mine over at the clothing shop in Varrock. They sell them cheap there.
+3	line	Wydin	Oh, and I'm sure that I've seen a spare one over in Gerrant's fish store somewhere. It's the little place just north of here.
+3	action	end
+0	section	Trying to open the door in the Food Store before getting the job
+1	line	Wydin	Hey, you can't go in there. Only employees of the grocery store can go in.
+1	select	Select an Option
+1	option	Well, can I get a job here?
+2	action	Same as above from "Can I get a job here?"
+1	option	Sorry, I didn't realise.
+2	line	Player	Sorry, I didn't realise.
+2	action	end
+0	section	Trying to open the door after getting the job while not wearing a white apron
+1	line	Wydin	Can you put your white apron on before going in there, please?
+1	action	end
+0	section	Talking to Wydin after getting the job
+1	line	Wydin	Is it nice and tidy round the back now?
+1	option	Yes, can I work out front now?
+2	line	Player	Yes, can I work out front now?
+2	line	Wydin	No, I'm the one who works here.
+2	action	end
+1	option	Yes, are you going to pay me yet?
+2	line	Player	Yes, are you going to pay me yet?
+2	line	Wydin	Umm... No, not yet.
+2	action	end
+1	option	No, it's a complete mess
+2	line	Player	No, it's a complete mess.
+2	line	Wydin	Ah well, it'll give you something to do, won't it.
+2	action	end
+1	option	Can I buy something please?
+2	line	Player	Can I buy something please?
+2	line	Wydin	Yes, of course.
+2	action	
+0	section	Taking the apron in Gerrant's Fishy Business
+1	action	end
+0	section	Search crate in the Food Store
+1	action	end
+0	section	Delivering the rum
+0	section	Offering Frank stuffed banana rum
+1	line	Redbeard Frank	Arr, Matey!
+1	line	Redbeard Frank	Have ye brought some rum for yer ol' mate Frank?
+1	line	Player	Yes, I've got some.
+1	action	(Frank takes the bottle from your inventory, but returns it shortly.)
+1	line	Redbeard Frank	Arr - this here rum's got a banana stuck in it!
+1	action	end
+0	section	Offering Frank sliced banana rum
+1	line	Redbeard Frank	Arr, Matey!
+1	line	Redbeard Frank	Have ye brought some rum for yer ol' mate Frank?
+1	line	Player	Yes, I've got some.
+1	action	(Frank takes the bottle from your inventory, but returns it shortly.)
+1	line	Redbeard Frank	Arr - I don't likes banana in me rum!
+1	action	end
+0	section	Talking to Redbeard Frank
+1	line	Redbeard Frank	Arr, Matey!
+1	line	Redbeard Frank	Have ye brought some rum for yer ol' mate Frank?
+1	cond	If the player does not have the rum:
+2	line	Player	No, not yet.
+2	line	Redbeard Frank	Not surprising, tis no easy task to get it off Karamja.
+2	line	Player	What do you mean?
+2	line	Redbeard Frank	The Customs office has been clampin' down on the export of spirits. You seem like a resourceful young [lad/lass], I'm sure ye'll be able to find a way to slip the stuff past them.
+2	line	Player	Well I'll give it another shot.
+2	action	end
+1	line	Player	Yes, I've got some.
+1	line	Redbeard Frank	Now a deal's a deal, I'll tell ye about the treasure. I used to serve under a pirate captain called One-Eyed Hector.
+1	line	Redbeard Frank	Hector were very successful and became very rich. But about a year ago we were boarded by the Customs and Excise Agents.
+1	line	Redbeard Frank	Hector were killed along with many of the crew, I were one of the few to escape and I escaped with this.
+1	box	Frank happily takes the rum... and hands you a key.
+1	line	Redbeard Frank	This be Hector's key. I believe it opens his chest in his old room in the Blue Moon Inn in Varrock.
+1	line	Redbeard Frank	With any luck his treasure will be in there.
+1	select	Select an Option
+1	option	Ok thanks, I'll go and get it.
+2	line	Player	Ok thanks, I'll go and get it.
+2	action	end
+1	option	So why didn't you ever get it?
+2	line	Player	So why didn't you ever get it?
+2	line	Redbeard Frank	I'm not allowed in the Blue Moon Inn. Apparently I'm a drunken trouble maker.
+2	action	end
+0	section	Using the rum on Redbeard Frank
+1	line	Player	Frank, I have some Karamja Rum.
+1	line	Redbeard Frank	Now a deal's a deal, I'll tell ye about the treasure. I used to serve under a pirate captain called One-Eyed Hector.
+1	action	above
+0	section	Reclaiming the key
+1	line	Redbeard Frank	Arr, Matey!
+1	line	Player	I seem to have lost my chest key...
+1	line	Redbeard Frank	Arr, silly you. Fortunately I took the precaution to have another one made.
+1	box	Frank hands you a chest key.
+1	action	
+1	select	Select an Option
+1	option	Arr!
+1	option	Do you have anything for trade?
+0	section	Finishing up
+0	section	Opening the Chest
+1	action	end
+0	section	Using the key on the Chest
+1	action	end
+0	section	Digging in Falador Park
+1	line	Gardener	First moles, now this! Take this, vandal!
+0	section	Digging in Falador Park while being attacked by the Gardener
+0	section	Digging in Falador Park a second time
+0	section	Using the chest on Redbeard Frank after the quest
+1	line	Player	I have the treasure, would you like a share?
+1	line	Redbeard Frank	No [lad/lass], you got it fair and square.
+1	line	Redbeard Frank	You enjoy it. It's what Hector would have wanted.
+1	action	end
+0	section	Opening the casket
+1	box	You open the casket, and find One-Eyed Hector's treasure.
+1	action	end
