@@ -16,6 +16,7 @@ import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -91,7 +92,12 @@ constructor(
         for (half in ArravObjs.cert_halves) {
             onHeldOpLabel(objTypes, half, "Inspect") { inspectHalf() }
         }
-        onNpcOpLabel(npcTypes, ArravNpcs.king, "Talk-to") { talkKing(it) }
+        // King Roald's Talk-to is shared (QuestTalk): Arrav's while the certificate is pending.
+        with(QuestTalk) {
+            register(npcTypes, ArravNpcs.king, wants = { wantsKing() }) {
+                talkKing(it)
+            }
+        }
         onEvent<NpcKilledEvent> { npcKilled(this) }
     }
 
@@ -512,6 +518,8 @@ constructor(
             invAdd(inv, ArravObjs.certificate)
         }
     }
+
+    private fun ProtectedAccess.wantsKing(): Boolean = player.questState(SHIELD_OF_ARRAV) == 1
 
     private suspend fun ProtectedAccess.talkKing(npc: Npc) {
         if (player.questState(SHIELD_OF_ARRAV) != 1) {
