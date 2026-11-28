@@ -40,6 +40,7 @@ EXCLUDE_TITLES = {
     "Miles", "Giles", "Postie Pete", "Prison Pete", "Mime", "Evil twin", "Gravedigger", "Dunce",
     "Tree spirit", "Ent", "Giant lobster", "Swarm", "Shade", "Zombie (Shades of Mort'ton)",
     "Crate (Gertrude's Cat)", "Escaping slave", "Effigy", "The Fisher King",
+    "Homunculus",  # Tower of Life spawns it in the basement (shown at tol_homonc_pres=1).
 }
 EXCLUDE_TEXT = re.compile(
     r"random event|cutscene|instance|minigame|\bduring\b|\bpet\b|\bboss|\braids?\b|follower|summoned|"
