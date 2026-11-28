@@ -247,3 +247,46 @@ coords = '0_50_54_22_16'
 [[spawn]]
 npc = 'weaponsmaster'
 coords = '0_50_52_50_60'
+
+# The Corsair Curse: Captain Tock (crossroads, Rimmington + cove ferries), the sick crew upstairs
+# in their huts and their post-quest forms, Chief Tess by the dungeon's vine ladder (multinpcs on
+# corscurs_progress). Approximate.
+[[spawn]]
+npc = 'corsair_captain_crossroads'
+coords = '0_47_51_22_9'
+
+[[spawn]]
+npc = 'corsair_ferry_rimmington'
+coords = '0_45_50_30_26'
+
+[[spawn]]
+npc = 'corsair_ferry_covedocks'
+coords = '0_40_44_14_19'
+
+[[spawn]]
+npc = 'corscurs_navigator_sick'
+coords = '1_39_44_33_23'
+
+[[spawn]]
+npc = 'corscurs_thief_sick'
+coords = '1_39_44_61_41'
+
+[[spawn]]
+npc = 'corscurs_thief_postquest'
+coords = '1_39_44_61_41'
+
+[[spawn]]
+npc = 'corscurs_cabinboy_sick'
+coords = '1_39_44_59_41'
+
+[[spawn]]
+npc = 'corscurs_cook_sick'
+coords = '1_39_44_50_46'
+
+[[spawn]]
+npc = 'corscurs_cook_postquest'
+coords = '1_39_44_50_46'
+
+[[spawn]]
+npc = 'ogress_tess'
+coords = '1_31_140_30_43'
