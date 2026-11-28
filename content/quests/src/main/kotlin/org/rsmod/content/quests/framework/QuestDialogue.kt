@@ -49,7 +49,11 @@ public class QuestDialogue private constructor(private val sections: Map<String,
                 val p = raw.split('\t')
                 val depth = p[0].toInt()
                 if (p[1] == "section") {
-                    current = mutableListOf<Node>().also { sections[p[2]] = it }
+                    // Repeated Wiki headings become "Title (2)", "Title (3)", ...
+                    var title = p[2]
+                    var copy = 2
+                    while (title in sections) title = "${p[2]} (${copy++})"
+                    current = mutableListOf<Node>().also { sections[title] = it }
                     stack.clear()
                     continue
                 }
