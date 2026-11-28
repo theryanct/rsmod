@@ -1,0 +1,31 @@
+# Generated from the OSRS Wiki page "Transcript:Goblin Diplomacy/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to the <col=800000>Goblin Generals</col> in <col=800000>Goblin Village</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>General Wartface</col> and <col=800000>General Bentnoze</col> in <col=800000>Goblin Village</col>. They've been trying to pick a new colour of armour for the goblins in the village, but have been unable to agree on a colour. I offered to help, so they asked me to bring them some <col=800000>Orange Goblin Mail</col> to try out. Perhaps they'll have an idea on how I can get some.</col>
+step	2	-	After giving the generals orange goblin mail
+line	<str>I spoke to General Wartface and General Bentnoze in Goblin Village. They were trying to pick a new colour of armour for the goblins in the village, but were unable to agree on a colour. I offered to help, so they asked me to bring them some Orange Goblin Mail to try out.</str>
+line	<col=000080>I gave some <col=800000>Orange Goblin Mail</col> to <col=800000>General Wartface</col> and <col=800000>General Bentnoze</col>, but they didn't like it. They asked me to bring them some <col=800000>Blue Goblin Mail</col> to try out instead. <col=800000>Aggie</col> in <col=800000>Draynor Village</col> can make some <col=800000>Dye</col> for me to recolour <col=800000>Goblin Mail</col> with. I should be able to find some <col=800000>Goblin Mail</col> in crates around <col=800000>Goblin Village</col>.</col>
+step	3	-	After giving the generals blue goblin mail
+line	<str>I spoke to General Wartface and General Bentnoze in Goblin Village. They were trying to pick a new colour of armour for the goblins in the village, but were unable to agree on a colour. I offered to help, so they asked me to bring them some Orange Goblin Mail to try out.</str>
+line	<str>I gave some Orange Goblin Mail to General Wartface and General Bentnoze, but they didn't like it. They asked me to bring them some Blue Goblin Mail to try out instead.</str>
+line	<col=000080>I gave some <col=800000>Blue Goblin Mail</col> to <col=800000>General Wartface</col> and <col=800000>General Bentnoze</col>, but they didn't like it. They asked me to bring them some of their original <col=800000>Brown Goblin Mail</col> to try out instead. I should be able to find some <col=800000>Brown Goblin Mail</col> in crates around <col=800000>Goblin Village</col>.</col>
+done	<str>I spoke to General Wartface and General Bentnoze in Goblin Village. They were trying to pick a new colour of armour for the goblins in the village, but were unable to agree on a colour. I offered to help, so they asked me to bring them some Orange Goblin Mail to try out.</str>
+done	<str>I gave some Orange Goblin Mail to General Wartface and General Bentnoze, but they didn't like it. They asked me to bring them some Blue Goblin Mail to try out instead.</str>
+done	<str>I gave some Blue Goblin Mail to General Wartface and General Bentnoze, but they didn't like it. They asked me to bring them some of their original Brown Goblin Mail to try out instead.</str>
+done	<str>I gave General Wartface and General Bentnoze some of the original Brown Goblin Mail, and it turned out to be their favourite. They're clearly not the smartest, but that's goblins for you.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

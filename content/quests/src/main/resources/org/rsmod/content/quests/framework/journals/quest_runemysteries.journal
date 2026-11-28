@@ -1,0 +1,40 @@
+# Generated from the OSRS Wiki page "Transcript:Rune Mysteries/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Duke Horacio</col> in <col=800000>Lumbridge Castle</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Order of Wizards #1</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2003</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Duke Horacio</col> in <col=800000>Lumbridge Castle</col>. He told me that he'd found a <col=800000>Strange Talisman</col> in the <col=800000>Castle</col> which might be of use to the <col=800000>Order of Wizards</col> at the <col=800000>Wizards' Tower</col>. He asked me to take it there and give it to a wizard called <col=800000>Sedridor</col>. I can find the <col=800000>Wizards' Tower</col> south west of <col=800000>Lumbridge</col>, across the bridge from <col=800000>Draynor Village</col>.</col>
+step	2	-	After handing the talisman to Sedridor
+line	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+line	<col=000080>I delivered the <col=800000>Strange Talisman</col> to <col=800000>Sedridor</col> in the basement of the <col=800000>Wizards' Tower</col>. I should see what he can tell me about it.</col>
+step	3	-	After receiving the package from Sedridor
+line	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+line	<col=000080>I delivered the <col=800000>Strange Talisman</col> to <col=800000>Sedridor</col> in the basement of the <col=800000>Wizards' Tower</col>. He believes it might be key to discovering a <col=800000>Teleportation Incantation</col> to the lost <col=800000>Rune Essence Mine</col>. He asked me to help confirm this by delivering a <col=800000>Package</col> to <col=800000>Aubury</col>, an expert on <col=800000>Runecrafting</col>. I can find him in his <col=800000>Rune Shop</col> in south east <col=800000>Varrock</col>.</col>
+step	4	-	After delivering the package to Aubury
+line	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+line	<str>I delivered the Strange Talisman to Sedridor in the Wizards' Tower. He believed it might be key to discovering a Teleportation Incantation to the lost Rune Essence Mine. He asked me to help confirm this by delivering a Package to Aubury, an expert on Runecrafting.</str>
+line	<col=000080>I delivered the <col=800000>Package</col> to <col=800000>Aubury</col> at his <col=800000>Rune Shop</col> in south east <col=800000>Varrock</col>. I should see what he can tell me about the <col=800000>Teleportation Incantation</col>.</col>
+step	5	-	After Aubury gives you the research notes
+line	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+line	<str>I delivered the Strange Talisman to Sedridor in the Wizards' Tower. He believed it might be key to discovering a Teleportation Incantation to the lost Rune Essence Mine. He asked me to help confirm this by delivering a Package to Aubury, an expert on Runecrafting.</str>
+line	<col=000080>I delivered the <col=800000>Package</col> to <col=800000>Aubury</col> at his <col=800000>Rune Shop</col> in south east <col=800000>Varrock</col>. He confirmed <col=800000>Sedridor's</col> suspicions and asked me to take some <col=800000>Research Notes</col> back to him. I can find <col=800000>Sedridor</col> in the basement of the <col=800000>Wizards' Tower</col>.</col>
+step	6	-	After giving Sedridor the research notes
+line	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+line	<str>I delivered the Strange Talisman to Sedridor in the Wizards' Tower. He believed it might be key to discovering a Teleportation Incantation to the lost Rune Essence Mine. He asked me to help confirm this by delivering a Package to Aubury, an expert on Runecrafting.</str>
+line	<col=000080>I delivered the <col=800000>Package</col> to <col=800000>Aubury</col> in <col=800000>Varrock</col>. He confirmed <col=800000>Sedridor's</col> suspicions and asked me to take some <col=800000>Research Notes</col> back to him, which I did. I should see what <col=800000>Sedridor</col> has learnt from them.</col>
+done	<str>I spoke to Duke Horacio in Lumbridge Castle. He told me that he'd found a Strange Talisman in the Castle which might be of use to the Order of Wizards at the Wizards' Tower. He asked me to take it there and give it to a wizard called Sedridor.</str>
+done	<str>I delivered the Strange Talisman to Sedridor in the Wizards' Tower. He believed it might be key to discovering a Teleportation Incantation to the lost Rune Essence Mine. He asked me to help confirm this by delivering a Package to Aubury, an expert on Runecrafting.</str>
+done	<str> I delivered the Package to Aubury in Varrock. He confirmed Sedridor's suspicions and asked me to take some Research Notes back to him. I did so, and Sedridor used them to discover the Teleportation Incantation to the lost Rune Essence Mine. As a thank you for my help, he granted me permission to use the Rune Essence Mine whenever I please.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

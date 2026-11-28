@@ -1,0 +1,64 @@
+# Generated from the OSRS Wiki page "Transcript:The Birds and the Wasps/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Farmer Bea</col> south west of the <col=800000>Digsite</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Farmer Bea</col> south west of the <col=800000>Digsite</col> and agreed to help her set up her <col=800000>Bee Farm</col>. To do so, I need to head to the <col=800000>Grand Exchange</col> in <col=800000>Varrock</col> and collect some <col=800000>Bees</col> from a <col=800000>Bee Dealer</col> there. I should be able to find him near the east entrance to the <col=800000>Exchange</col>.</col>
+step	2	-	After collecting the bees
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<col=000080>At <col=800000>Bea's</col> request, I travelled to the <col=800000>Grand Exchange</col> in <col=800000>Varrock</col> and collected some <col=800000>Bees</col> from a <col=800000>Bee Dealer</col> there. I should carefully transport them back to <col=800000>Bea</col>.</col>
+step	3	-	Hunting the wasps
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<col=000080><col=800000>Bea</col> asked me to thin down the number of <col=800000>Wasps</col> by catching 50 of them and bringing her back proof. If needed, <col=800000>Bea</col> has a crate of equipment that I can use for catching them.</col>
+step	4	-	Delivering the stingers
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<col=000080><col=800000>Bea</col> asked me to thin down the number of <col=800000>Wasps</col> by catching 50 of them. I did so and gathered 50 <col=800000>Wasp Stingers</col> in the process. I should show them to <col=800000>Bea</col>.</col>
+step	5	-	Hunting the birds
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<str>Bea asked me to thin down the number of Wasps by catching 50 of them. I did so and gathered 50 Wasp Stings in the process. However, the infestation of Wasps lured some Honey Buzzards to the area.</str>
+line	<col=000080><col=800000>Bea</col> asked me to thin down the number of <col=800000>Honey Buzzards</col> by catching at least 5 of them and collecting 50 of their feathers. If needed, <col=800000>Bea</col> can give me some equipment that I can use for catching them.</col>
+step	6	-	Delivering the feathers
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<str>Bea asked me to thin down the number of Wasps by catching 50 of them. I did so and gathered 50 Wasp Stings in the process. However, the infestation of Wasps lured some Honey Buzzards to the area.</str>
+line	<col=000080><col=800000>Bea</col> asked me to thin down the number of <col=800000>Honey Buzzards</col> by catching at least 5 of them and collecting 50 of their feathers. Having done that, I should speak to <col=800000>Bea</col> again.</col>
+step	7	-	Fletching wasp darts
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<str>Bea asked me to thin down the number of Wasps by catching 50 of them. I did so and gathered 50 Wasp Stings in the process. However, the infestation of Wasps lured some Honey Buzzards to the area.</str>
+line	<str>Bea asked me to thin down the number of Honey Buzzards by catching at least 5 of them and collecting 50 of their feathers. With that done, Bea once again attempted to move some Bees into her hives. However, it seems the Bee Dealer lied for a second time. The end result was that there were two different types of Wasps and two different types of Honey Buzzard preying on them.</str>
+line	<col=000080>To make the best out of a bad situation, <col=800000>Bea</col> has asked me to see if I can make anything out of the <col=800000>Wasp Stings</col> and <col=800000>Feathers</col> I gathered.</col>
+step	8	-	Delivering the wasp darts
+line	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+line	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+line	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+line	<str>Bea asked me to thin down the number of Wasps by catching 50 of them. I did so and gathered 50 Wasp Stings in the process. However, the infestation of Wasps lured some Honey Buzzards to the area.</str>
+line	<str>Bea asked me to thin down the number of Honey Buzzards by catching at least 5 of them and collecting 50 of their feathers. With that done, Bea once again attempted to move some Bees into her hives. However, it seems the Bee Dealer lied for a second time. The end result was that there were two different types of Wasps and two different types of Honey Buzzard preying on them.</str>
+line	<col=000080>To make the best out of a bad situation, <col=800000>Bea</col> asked me to see if I could make anything out of the <col=800000>Wasp Stings</col> and <col=800000>Feathers</col> I gathered. I was able to use them to make some <col=800000>Darts</col>. I should discuss this with <col=800000>Bea</col>.</col>
+done	<str>I spoke to Farmer Bea south west of the Digsite and agreed to help her set up her Bee Farm.</str>
+done	<str>The bee dealer gave me a box of bees. I should transport them safely back to Farmer Bea at her farm west of The Digsite.</str>
+done	<str>At Bea's request, I travelled to the Grand Exchange in Varrock and collected some Bees from a Bee Dealer there. I then carefully delivered them to Bea. However, upon taking them to her hives, we discovered them to actually be Wasps.</str>
+done	<str>Bea asked me to thin down the number of Wasps by catching 50 of them. I did so and gathered 50 Wasp Stings in the process. However, the infestation of Wasps lured some Honey Buzzards to the area.</str>
+done	<str>Bea asked me to thin down the number of Honey Buzzards by catching at least 5 of them and collecting 50 of their feathers. With that done, Bea once again attempted to move some Bees into her hives. However, it seems the Bee Dealer lied for a second time. The end result was that there were two different types of Wasps and two different types of Honey Buzzard preying on them.</str>
+done	<str>To make the best out of a bad situation, Bea asked me to see if I could make anything out of the Wasp Stings and Feathers I gathered. I was able to use them to make some Darts. While not thrilled over the lack of Honey, Bea was happy that we at least managed to achieve something with her Bee-less Bee Farm.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

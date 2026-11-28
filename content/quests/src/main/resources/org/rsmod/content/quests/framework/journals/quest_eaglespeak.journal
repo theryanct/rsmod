@@ -1,0 +1,78 @@
+# Generated from the OSRS Wiki page "Transcript:Eagles' Peak/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Charlie</col> at the <col=800000>East Ardougne Zoo</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2006</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 27 Hunter
+before	<col=000080>Recommendations:</col>
+req	Combat Level 10
+step	1	-	Going to the campsite
+line	<col=000080>I spoke to <col=800000>Charlie</col> who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named <col=800000>Nickolaus</col> went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to <col=800000>Eagles' Peak</col>, a mountain to the <col=800000>West of the Gnome Stronghold</col>, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</col>
+step	2	-	Using the metal feather
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<col=000080>I found a camp-site in the area where <col=800000>Nickolaus</col> was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small <col=800000>metal feather</col> inside a book about birds. Maybe if I can find out what this is for then I can find <col=800000>Nickolaus</col>.</col>
+step	3	-	Entering the mountain
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<col=000080>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go <col=800000>into the mountain</col> then I will find out what <col=800000>Nickolaus</col> was up to.</col>
+step	4	-	Talking to Asyff
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<str>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go into the mountain then I will find out what Nickolaus was up to.</str>
+line	<col=000080>I found <col=800000>Nickolaus</col> within the cave system of the mountain. It seems that he had been abducted by giant eagles. Nickolaus suggested making an eagle <col=800000>disguise</col> to try and infiltrate the eagles' nest. He recommended that I talk to the <col=800000>owner of the fancy dress shop</col> in <col=800000>Varrock</col> who may be able to help me. I should take some <col=800000>suitable materials</col> with me; there are plenty of <col=800000>giant feathers</col> around the nest that I could take.</col>
+step	5	-	Bringing Nickolaus a disguise
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<str>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go into the mountain then I will find out what Nickolaus was up to.</str>
+line	<str>I found Nickolaus within the cave system of the mountain. It seems that he had been abducted by giant eagles. Nickolaus suggested making an eagle disguise to try and infiltrate the eagles' nest. He recommended that I talk to the owner of the fancy dress shop in Varrock who may be able to help me. I should take some suitable materials with me; there are plenty of giant feathers around the nest that I could take.</str>
+line	<col=000080>The owner of the fancy dress shop said he could make a disguise for me, but he needs the following items first...</col>
+line	<col=800000>10 Giant eagle feathers</col>
+line	<col=800000>Yellow dye</col>
+line	<col=800000>Swamp tar</col>
+line	<col=000080>I should then take the disguises to <col=800000>Nickolaus</col> in the cave.</col>
+step	6	-	Returning to camp
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<str>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go into the mountain then I will find out what Nickolaus was up to.</str>
+line	<str>I found Nickolaus within the cave system of the mountain. It seems that he had been abducted by giant eagles. Nickolaus suggested making an eagle disguise to try and infiltrate the eagles' nest. He recommended that I talk to the owner of the fancy dress shop in Varrock who may be able to help me. I should take some suitable materials with me; there are plenty of giant feathers around the nest that I could take.</str>
+line	<str>The owner of the fancy dress shop said he could make a disguise for me, but he needs the following items first...</str>
+line	<str>10 Giant eagle feathers</str>
+line	<str>Yellow dye</str>
+line	<str>Swamp tar</str>
+line	<str>I should then take the disguises to Nickolaus in the cave.</str>
+line	<col=000080>I got the fancy dress shop owner to make me an eagle disguise so that I could trick the eagles and get into their nest. I gave a disguise to <col=800000>Nickolaus</col> so that he could escape the nest. I still need to get him to <col=800000>capture a ferret</col> for the <col=800000>zookeeper</col>.</col>
+step	7	-	Bringing the zoo a ferret
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<str>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go into the mountain then I will find out what Nickolaus was up to.</str>
+line	<str>I found Nickolaus within the cave system of the mountain. It seems that he had been abducted by giant eagles. Nickolaus suggested making an eagle disguise to try and infiltrate the eagles' nest. He recommended that I talk to the owner of the fancy dress shop in Varrock who may be able to help me. I should take some suitable materials with me; there are plenty of giant feathers around the nest that I could take.</str>
+line	<str>The owner of the fancy dress shop said he could make a disguise for me, but he needs the following items first...</str>
+line	<str>10 Giant eagle feathers</str>
+line	<str>Yellow dye</str>
+line	<str>Swamp tar</str>
+line	<str>I should then take the disguises to Nickolaus in the cave.</str>
+line	<str>I got the fancy dress shop owner to make me an eagle disguise so that I could trick the eagles and get into their nest. I gave a disguise to Nickolaus so that he could escape the nest. I still need to get him to capture a ferret for the zookeeper.</str>
+line	<col=000080>Rather than catch a ferret for me to take back to the zookeeper, Nickolaus taught me how to capture one myself. Now all I need to do is take a <col=800000>ferret</col> back to <col=800000>Charlie</col> at the <col=800000>Ardougne zoo</col>.</col>
+step	8	-	Post quest
+line	<str>I spoke to Charlie who deals with new deliveries at the Ardougne zoo. Apparently one of their associates named Nickolaus went in search of a ferret to replace one they lost, but he hasn't been heard from since. I should head to Eagles' Peak, a mountain to the West of the Gnome Stronghold, where he was last expected to have been. Maybe there I can find some clues as to his whereabouts.</str>
+line	<str>I found a camp-site in the area where Nickolaus was expected to have been, but it looked like it had been abandoned in a hurry. Looking around the campsite I found a small metal feather inside a book about birds. Maybe if I can find out what this is for then I can find Nickolaus.</str>
+line	<str>I found a part of the cliff that looked out of place compared to the rest of the mountain. Upon closer inspection, this turned out to be a secret passage, unlocked by the metal feather I had found earlier. Maybe if I go into the mountain then I will find out what Nickolaus was up to.</str>
+line	<str>I found Nickolaus within the cave system of the mountain. It seems that he had been abducted by giant eagles. Nickolaus suggested making an eagle disguise to try and infiltrate the eagles' nest. He recommended that I talk to the owner of the fancy dress shop in Varrock who may be able to help me. I should take some suitable materials with me; there are plenty of giant feathers around the nest that I could take.</str>
+line	<str>The owner of the fancy dress shop said he could make a disguise for me, but he needs the following items first...</str>
+line	<str>10 Giant eagle feathers</str>
+line	<str>Yellow dye</str>
+line	<str>Swamp tar</str>
+line	<str>I should then take the disguises to Nickolaus in the cave.</str>
+line	<str>I got the fancy dress shop owner to make me an eagle disguise so that I could trick the eagles and get into their nest. I gave a disguise to Nickolaus so that he could escape the nest. I still need to get him to capture a ferret for the zookeeper.</str>
+line	<str>Rather than catch a ferret for me to take back to the zookeeper, Nickolaus taught me how to capture one myself. Now all I need to do is take a ferret back to Charlie at the Ardougne zoo.</str>
+line	<str>I returned to the zoo and presented Charlie with a replacement for his lost ferret.</str>
+line	<col=ff0000>QUEST COMPLETE!</col>
+line	<col=000080>I was awarded <col=800000>2 Quest points</col> and <col=800000>2500 Hunter XP</col>. I also learnt how to capture <col=800000>ferrets</col>, which I can use when hunting <col=800000>rabbits</col>, and have access to the <col=800000>eagles</col> at the top of <col=800000>Eagles' Peak</col>.</col>

@@ -1,0 +1,36 @@
+# Generated from the OSRS Wiki page "Transcript:Heroes' Quest/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Achietties</col> outside the <col=800000>Heroes' Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2002</col>
+before	
+before	<col=000080>Quest Requirements:</col>
+before	<col=800000>Dragon Slayer I</col>
+before	<col=800000>Merlin's Crystal</col>
+before	<col=800000>Lost City</col>
+before	<col=800000>Shield of Arrav</col>
+before	<col=800000>55 Quest Points</col>
+before	
+before	<col=000080>Skill Requirements:</col>
+before	<col=800000>Level 53 Cooking</col>
+before	<col=800000>Level 53 Fishing</col>
+before	<col=800000>Level 50 Mining</col>
+before	<col=800000>Level 25 Herblore</col>
+before	<col=000080>Recommendations:</col>
+req	Combat Level 50
+step	1	-	The greatest heroes of the land
+line	<col=000080><col=800000>Achietties</col> will let me into the <col=800000>Heroes' Guild</col> if I can get:</col>
+line	#0000800|An <col=800000>Entranan Firebird Feather</col> - I should check on <col=800000>Entrana</col>
+line	#0000800|A <col=800000>cooked lava eel</col> - I should speak to a <col=800000>fishing expert</col>
+line	If the player is part of the Phoenix Gang
+line	#0000800|A <col=800000>Master Thieves Armband</col> - I worked with the <col=800000>Phoenix Gang</col> when I was searching for the <col=800000>Shield of Arrav</col>. I should visit their hideout, maybe they can help me.
+line	If the player is part of the Black Arm Gang
+line	#0000800|A <col=800000>Master Thieves Armband</col> - I worked with the <col=800000>Black Arm Gang</col> when I was searching for the <col=800000>Shield of Arrav</col>. I should visit their hideout, maybe they can help me.
+step	2	-	Master Thieves' armband
+step	3	-	Cooked lava eel

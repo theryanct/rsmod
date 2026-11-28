@@ -1,0 +1,31 @@
+# Generated from the OSRS Wiki page "Transcript:Horror from the Deep/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Larrissa</col> outside the <col=800000>Lighthouse</col> west of <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Alfred Grimhand's Barcrawl
+req	Level 35 Agility
+before	<col=000080>Recommendations:</col>
+req	Combat Level 50
+step	1	-	Getting into the lighthouse
+line	<col=000080>Larrissa is very worried about her boyfriend Jossik.</col>
+line	<col=000080>I need to <col=800000>repair the bridge</col> leading to Rellekka.</col>
+line	<col=000080>I also need to get the <col=800000>lighthouse key</col> from her cousin <col=800000>Gunnjorn</col>.</col>
+step	2	-	In the lighthouse
+step	3	-	After the quest
+line	<str>I repaired the bridge leading to Rellekka and got a key from Gunnjorn so I could enter the lighthouse.</str>
+line	<str>I managed to repair the lighthouse light with some molten glass, some swamp tar and a tinderbox.</str>
+line	<str>I found Jossik in an underground cavern, behind a strange wall where he had been attacked by some sea creatures.</str>
+line	<str>After I entered the lighthouse, and repaired the lighting mechanism, I discovered a strange wall that blocked the entrance to an underground cavern, where Jossik was.</str>
+line	<str>After I killed some strange sea monsters, I managed to get Jossik out of the cavern and back to the lighthouse.</str>
+line	<str>I found a strange casket on the dead body of a sea monster, which Jossik said he could tell me about.</str>
+line	
+line	<col=ff0000>QUEST COMPLETE!</col>

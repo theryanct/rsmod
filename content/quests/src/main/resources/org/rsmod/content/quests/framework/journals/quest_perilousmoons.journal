@@ -1,0 +1,96 @@
+# Generated from the OSRS Wiki page "Transcript:Perilous Moons/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Zuma</col> and <col=800000>Attala</col> at the entrance to <col=800000>Cam Torum</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2024</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Twilight's Promise
+req	Level 48 Slayer
+req	Level 20 Hunter
+req	Level 20 Fishing
+req	Level 20 Runecraft
+req	Level 10 Construction
+before	<col=000080>Recommendations:</col>
+req	Combat Level 75
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Zuma</col>, a <col=800000>Priest of Ranul</col>, and <col=800000>Attala</col>, a <col=800000>Dwarven Official</col>, at the entrance to <col=800000>Cam Torum</col>. They were having a disagreement about some sort of <col=800000>Ruins</col> found beneath the city. However, before I could learn more, we were informed that a <col=800000>Creature</col> had escaped from these <col=800000>Ruins</col>. <col=800000>Attala</col> agreed to grant me access to <col=800000>Cam Torum</col> in return for dealing with this <col=800000>Creature</col>. I can find it by the <col=800000>Outflow Spring</col> north east of the city entrance.</col>
+step	2	-	After defeating the Creature
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<col=000080>I dealt with the <col=800000>Creature</col> that had escaped from the <col=800000>Ruins</col>. I should return to <col=800000>Attala</col> and let her know.</col>
+step	3	-	After entering the Ruins
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<col=000080>I entered the <col=800000>Ruins</col> below <col=800000>Cam Torum</col> with <col=800000>Jessamine</col>. <col=800000>Zuma</col> and <col=800000>Attala</col> decided to join the expedition as well. I should talk to the three of them inside.</col>
+step	4	-	After Jessamine deciphers the inscription
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<col=000080>Having deciphered the <col=800000>Inscription</col>, <col=800000>Jessamine</col> revealed the <col=800000>Ruins</col> to be called <col=800000>Neypotzli</col>, with them being built to house some sort of <col=800000>Emissaries</col> using the power of <col=800000>Earth</col> and <col=800000>Streams</col>. To locate the source of this power, <col=800000>Attala</col> suggested I take some <col=800000>Talismans</col> found by <col=800000>Jessamine</col> to <col=800000>Nahta</col> in <col=800000>Cam Torum's Magic Shop</col>.</col>
+step	5	-	After showing the Talismans to Nahta
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+line	<col=000080>I spoke to <col=800000>Nahta</col> in <col=800000>Cam Torum's Magic Shop</col> and he enchanted the <col=800000>Talismans</col> found by <col=800000>Jessamine</col>. He told me to take them to <col=800000>Cam Torum's Blacksmith</col> to have them finished off.</col>
+step	6	-	After discovering the talismans' power
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+line	<str>I spoke to Nahta in Cam Torum's Magic Shop and he enchanted the Talismans found by Jessamine. He then sent me to Cam Torum's Blacksmith who finished them off for me.</str>
+line	<col=000080>I used the <col=800000>Talismans</col> to find the source of power in <col=800000>Neypotzli</col>. It turned out that this source of power was a creature known as a <col=800000>Nagua</col>. She introduced herself as <col=800000>Eyatlalli</col> and told me that <col=800000>Neypotzli</col> was built to contain three dangerous <col=800000>Nagua</col> called the <col=800000>Moons of Peril</col>. However, before she could tell me more, we were interrupted by a sudden shaking. I should quickly return to the <col=800000>Neypotzli Antechamber</col> and see what happened.</col>
+step	7	-	After returning to the antechamber and speaking to Jessamine
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+line	<str>I spoke to Nahta in Cam Torum's Magic Shop and he enchanted the Talismans found by Jessamine. He then sent me to Cam Torum's Blacksmith who finished them off for me.</str>
+line	<str>I used the Talismans to find the source of power in Neypotzli. It turned out that this source of power was a creature known as a Nagua. She introduced herself as Eyatlalli and told me that Neypotzli was built to contain three dangerous Nagua called the Moons of Peril. However, before she could tell me more, we were interrupted by a sudden shaking.</str>
+line	<col=000080>I returned to the <col=800000>Neypotzli Antechamber</col> to find that <col=800000>Zuma</col> had disturbed the seal keeping the <col=800000>Moons of Peril</col> contained. To restore the seal, <col=800000>Eyatlalli</col> asked me to gather some items to use as part of a ritual.</col>
+line	
+line	<col=000080>I still need to gather the following from within <col=800000>Neypotzli</col>:</col>
+line	<col=800000>Bream Scales</col>
+line	<col=800000>Moss Lizard Tail</col>
+line	<col=800000>Moonlight Grub Paste</col>
+step	8	-	After returning to Eyatlalli
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+line	<str>I spoke to Nahta in Cam Torum's Magic Shop and he enchanted the Talismans found by Jessamine. He then sent me to Cam Torum's Blacksmith who finished them off for me.</str>
+line	<str>I used the Talismans to find the source of power in Neypotzli. It turned out that this source of power was a creature known as a Nagua. She introduced herself as Eyatlalli and told me that Neypotzli was built to contain three dangerous Nagua called the Moons of Peril. However, before she could tell me more, we were interrupted by a sudden shaking.</str>
+line	<str>I returned to the Neypotzli Antechamber to find that Zuma had disturbed the seal keeping the Moons of Peril contained. To restore the seal, I gathered some items for Eyatlalli to use as part of a ritual.</str>
+line	<col=000080><col=800000>Eyatlalli</col> started to perform the ritual to restore the seal keeping the <col=800000>Moons of Peril</col> contained. However, she asked me to directly take them on to keep them distracted until the end of the ritual. I'll need to face all three of them within their chambers in <col=800000>Neypotzli</col>.</col>
+line	
+line	<col=000080>I still need to face the following <col=800000>Moons of Peril</col>:</col>
+line	<col=800000>The Blood Moon</col>
+line	<col=800000>The Blue Moon</col>
+line	<col=800000>The Eclipse Moon</col>
+step	9	-	After facing the Moons of Peril
+line	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+line	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+line	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+line	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+line	<str>I spoke to Nahta in Cam Torum's Magic Shop and he enchanted the Talismans found by Jessamine. He then sent me to Cam Torum's Blacksmith who finished them off for me.</str>
+line	<str>I used the Talismans to find the source of power in Neypotzli. It turned out that this source of power was a creature known as a Nagua. She introduced herself as Eyatlalli and told me that Neypotzli was built to contain three dangerous Nagua called the Moons of Peril. However, before she could tell me more, we were interrupted by a sudden shaking.</str>
+line	<str>I returned to the Neypotzli Antechamber to find that Zuma had disturbed the seal keeping the Moons of Peril contained. To restore the seal, I gathered some items for Eyatlalli to use as part of a ritual.</str>
+line	<str>Eyatlalli started to perform the ritual to restore the seal keeping the Moons of Peril contained. However, she asked me to directly take them on to keep them distracted until the end of the ritual.</str>
+line	<col=000080>I confronted and distracted all three of the <col=800000>Moons of Peril</col>, allowing <col=800000>Eyatlalli</col> to complete the ritual. I should now return to her and the others.</col>
+done	<str>I spoke to Zuma, a Priest of Ranul, and Attala, a Dwarven Official, at the entrance to Cam Torum. They were having a disagreement about some sort of Ruins found beneath the city. However, before I could learn more, we were informed that a Creature had escaped from these Ruins.</str>
+done	<str>I dealt with the Creature that had escaped from the Ruins and I was granted access to Cam Torum in return. Within the city, I was invited by Jessamine to join her expedition into the Ruins.</str>
+done	<str>I entered the Ruins below Cam Torum with Jessamine. Zuma and Attala decided to join the expedition as well. Inside, we found a selection of Murals depicting apocalyptic scenes along with an Inscription. I established some Camps elsewhere in the Ruins while Jessamine worked on deciphering the Inscription.</str>
+done	<str>Having deciphered the Inscription, Jessamine revealed the Ruins to be called Neypotzli, with them being built to house some sort of Emissaries using the power of Earth and Streams. To locate the source of this power, Attala suggested I take some Talismans found by Jessamine to Nahta in Cam Torum's Magic Shop.</str>
+done	<str>I spoke to Nahta in Cam Torum's Magic Shop and he enchanted the Talismans found by Jessamine. He then sent me to Cam Torum's Blacksmith who finished them off for me.</str>
+done	<str>I used the Talismans to find the source of power in Neypotzli. It turned out that this source of power was a creature known as a Nagua. She introduced herself as Eyatlalli and told me that Neypotzli was built to contain three dangerous Nagua called the Moons of Peril. However, before she could tell me more, we were interrupted by a sudden shaking.</str>
+done	<str>I returned to the Neypotzli Antechamber to find that Zuma had disturbed the seal keeping the Moons of Peril contained. To restore the seal, I gathered some items for Eyatlalli to use as part of a ritual.</str>
+done	<str>Eyatlalli started to perform the ritual to restore the seal keeping the Moons of Peril contained. However, she asked me to directly take them on to keep them distracted until the end of the ritual.</str>
+done	<str>I confronted and distracted all three of the Moons of Peril, allowing Eyatlalli to complete the ritual. With the Moons of Peril contained, Cam Torum is now safe. However Eyatlalli promised me further rewards if I assisted her in keeping them imprisoned.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

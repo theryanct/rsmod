@@ -1,0 +1,32 @@
+# Generated from the OSRS Wiki page "Transcript:Shield of Arrav/Journal" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>I can start this quest by talking to <col=800000>Reldo</col> in the <col=800000>Varrock Palace Library</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2001</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+req	Combat Level 10
+step	1	-	After starting the quest
+line	<col=000080>I spoke to <col=800000>Reldo</col> in the <col=800000>Varrock Palace Library</col> and asked him if he had any quests for me. He suggested I read a book called <col=800000>The Shield of Arrav</col>. The book should be somewhere in the <col=800000>Library</col>.</col>
+step	2	-	After reading the book
+line	<col=000080>I spoke to <col=800000>Reldo</col> in the <col=800000>Varrock Palace Library</col>. At his suggestion, I read a book called <col=800000>The Shield of Arrav</col>. The book detailed the theft of the legendary <col=800000>Shield of Arrav</col> and the reward on offer to anyone able to recover it. I should discuss this with <col=800000>Reldo</col>.</col>
+step	3	-	After speaking to Reldo about the book and gangs
+line	<str>I spoke to Reldo in the Varrock Palace Library. At his suggestion, I read a book called The Shield of Arrav. The book detailed the theft of the legendary Shield of Arrav and the reward on offer to anyone able to recover it.</str>
+line	<col=000080>I spoke to <col=800000>Reldo</col> about the missing <col=800000>Shield of Arrav</col>. He gave me details on how I can find the <col=800000>Phoenix Gang</col> and the <col=800000>Black Arm Gang</col>, the two groups suspected of being in possession of the <col=800000>Shield</col>. Apparently, <col=800000>Baraek</col> in <col=800000>Varrock Square</col> can give me details on the <col=800000>Phoenix Gang</col> and <col=800000>Charlie the Tramp</col> near the <col=800000>Varrock South Gate</col> can do the same for the <col=800000>Black Arm Gang</col>.</col>
+step	4	-	After speaking to Charlie the Tramp or Baraek
+step	5	-	After speaking to Katrine or Straven
+step	6	-	After choosing or not to speak to Charlie about the Crossbows
+step	7	-	After getting the Crossbows or Intel Report
+step	8	-	After turning in the Crossbows or Intel Report
+step	9	-	After finding the Shield Half
+step	10	-	After taking the Shield Half to the Varrock Museum
+step	11	-	After swapping the Half-Certificates
+step	12	-	After making a Full Certificate
