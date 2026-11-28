@@ -26,13 +26,14 @@ internal object FarmingData {
         Hardwood("hardwood tree patch", 0),
         Belladonna("belladonna patch", 0),
         Mushroom("mushroom patch", 0),
+        SpiritTree("spirit tree patch", 0),
     }
 
     /** Trees chopped for logs (health check, stump that regrows). */
-    val woodKinds = setOf(Kind.Tree, Kind.Hardwood)
+    val woodKinds = setOf(Kind.Tree, Kind.Hardwood, Kind.SpiritTree)
 
     /** Kinds planted from a sapling with a spade. */
-    val saplingKinds = setOf(Kind.Tree, Kind.FruitTree, Kind.Hardwood)
+    val saplingKinds = setOf(Kind.Tree, Kind.FruitTree, Kind.Hardwood, Kind.SpiritTree)
 
     /** PR3 kinds: health check when grown, then fruit/berries that regrow. */
     val fruitKinds = setOf(Kind.FruitTree, Kind.Bush, Kind.Cactus)

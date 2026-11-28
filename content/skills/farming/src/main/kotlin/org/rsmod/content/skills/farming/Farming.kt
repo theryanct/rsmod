@@ -215,6 +215,7 @@ constructor(
             "chop-down" -> chop(loc, patch, op)
             "clear" -> clear(patch)
             "inspect" -> inspect(patch)
+            "travel" -> mes("The spirit tree is not ready to carry travellers yet.")
             else -> if (label.startsWith("pick")) harvest(loc, patch, op)
         }
     }
@@ -677,7 +678,7 @@ constructor(
             mes("You chop down the tree; dig up the stump with a spade.")
             return
         }
-        if (crop.kind !in FarmingData.woodKinds || !state.watered) return
+        if (crop.kind !in FarmingData.woodKinds || !state.watered || crop.logs.isEmpty()) return
         if (player.isStump(patch, state)) {
             mes("This tree has already been cut down.")
             return
@@ -1015,13 +1016,14 @@ constructor(
                 "check-health",
                 "chop down",
                 "chop-down",
+                "travel",
                 "close",
                 "open",
                 "take",
                 "dump",
             )
         /** Kinds with a health check once grown. */
-        val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush, Kind.Cactus, Kind.Hardwood)
+        val TREE_LIKE = setOf(Kind.Tree, Kind.FruitTree, Kind.Bush, Kind.Cactus, Kind.Hardwood, Kind.SpiritTree)
         const val CHOP_TICKS = 4
         const val STUMP_CHANCE = 8
         const val BIN_SIZE = 15

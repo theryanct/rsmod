@@ -65,6 +65,8 @@ KINDS = {
     "Hardwood": ("farming_hardwood_tree_patch_1", ["Teak tree (Farming)", "Mahogany tree (Farming)"]),
     "Belladonna": ("farming_belladonna_patch", ["Belladonna"]),
     "Mushroom": ("farming_mushroom_patch", ["Bittercap Mushrooms"]),
+    # PR3c (growing only; spirit tree travel is a separate feature)
+    "SpiritTree": ("farming_spirit_tree_patch_1", ["Spirit tree (Farming)"]),
 }
 FRUIT_KINDS = {"FruitTree", "Bush", "Cactus"}
 # Hardwood chopping (Wiki Woodcutting): level, xp; logs obj.
@@ -90,16 +92,21 @@ PATCHES = {
     "hardwood_fossil_3": "farming_hardwood_tree_patch_3",
     "belladonna_draynor": "farming_belladonna_patch",
     "mushroom_canifis": "farming_mushroom_patch",
+    # PR3c
+    "spirit_port_sarim": "farming_spirit_tree_patch_1",
+    "spirit_etceteria": "farming_spirit_tree_patch_2",
+    "spirit_brimhaven": "farming_spirit_tree_patch_3",
 }
 PATCH_KIND = {"fruit_tree": "FruitTree", "bush": "Bush", "cactus": "Cactus", "hardwood": "Hardwood",
-              "belladonna": "Belladonna", "mushroom": "Mushroom"}
+              "belladonna": "Belladonna", "mushroom": "Mushroom",
+              "spirit_tree": "SpiritTree"}
 
 
 # Wiki page -> stage loc name prefix where they differ.
 LOC_PREFIX = {"Pineapple plant": "pineapple_tree", "Poison ivy bush": "poisonivy_bush",
               "Cactus (Farming)": "cactus", "Potato cactus (plant)": "potato_cactus",
               "Teak tree (Farming)": "teak_tree", "Mahogany tree (Farming)": "mahogany_tree",
-              "Bittercap Mushrooms": "bittercap"}
+              "Bittercap Mushrooms": "bittercap", "Spirit tree (Farming)": "spirit_tree"}
 
 
 def payment_item(value):
@@ -142,7 +149,7 @@ for kind, (base, pages) in KINDS.items():
         seedv = first("seedling", "seed")
         claim = first("claim_xp", "claimxp", "fullygrown_claimxp")
         stump = first("stump")
-        if kind == "Hardwood":
+        if kind in ("Hardwood", "SpiritTree"):
             # Tree layout: grown (waiting for the check) = claim stage, checked = choppable tree.
             grown, check, fruits = claim, first("fullygrown"), [0]
         elif kind in FRUIT_KINDS:
@@ -165,10 +172,10 @@ for kind, (base, pages) in KINDS.items():
         if pay_obj is None and pay:
             # "sacks of cabbages" / "baskets of apples": the Wiki links the item name.
             warnings.append(f"{page}: payment '{pay}' not mapped")
-        seed_name = plink(field(box, "sapling")) if kind in ("FruitTree", "Hardwood") else plink(field(box, "seed"))
+        seed_name = plink(field(box, "sapling")) if kind in ("FruitTree", "Hardwood", "SpiritTree") else plink(field(box, "seed"))
         seed = obj(seed_name)
         # Belladonna's Wiki crop resolves to the stackable variant; the patch gives the plain item.
-        produce = WOOD[page][2] if page in WOOD else ("nightshade" if page == "Belladonna" else obj(plink(field(box, "crop"))))
+        produce = obj(seed_name) if kind == "SpiritTree" else WOOD[page][2] if page in WOOD else ("nightshade" if page == "Belladonna" else obj(plink(field(box, "crop"))))
         if not seed or not produce:
             warnings.append(f"{page}: seed={seed_name}->{seed} crop={field(box, 'crop')}->{produce}")
             continue

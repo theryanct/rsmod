@@ -19,6 +19,7 @@ crop	teak	Hardwood	plantpot_teak_sapling	teak_logs	35	35	7290	0	7	640	8	15	0	0	1
 crop	mahogany	Hardwood	plantpot_mahogany_sapling	mahogany_logs	55	63	15720	0	8	640	30	38	0	0	39	40	yanillian_hops	25	50	125	mahogany_logs	3	0
 crop	belladonna	Belladonna	belladonna_seed	nightshade	63	91	0	512	4	80	4	8	0	0	8	-	-	0	0	0	-	3	1
 crop	bittercap	Mushroom	mushroom_seed	bittercap_mushroom	53	61.5	0	57.7	6	40	4	10	0	0	10	-	-	0	0	0	-	6	0
+crop	spirit	SpiritTree	plantpot_spirit_tree_sapling	plantpot_spirit_tree_sapling	83	199.5	19301	0	12	320	8	44	0	0	20	-	mm_monkey_nuts	5	0	0	-	3	0
 patch	fruit_gnome_stronghold	FruitTree	farming_fruit_tree_patch_1	farming_transmit_b	2475	3445	0
 patch	fruit_tree_gnome_village	FruitTree	farming_fruit_tree_patch_2	farming_transmit_a	2489	3179	0
 patch	fruit_brimhaven	FruitTree	farming_fruit_tree_patch_3	farming_transmit_a	2764	3212	0
@@ -34,3 +35,6 @@ patch	hardwood_fossil_2	Hardwood	farming_hardwood_tree_patch_2	farming_transmit_
 patch	hardwood_fossil_3	Hardwood	farming_hardwood_tree_patch_3	farming_transmit_c	3701	3836	0
 patch	belladonna_draynor	Belladonna	farming_belladonna_patch	farming_transmit_a	3086	3354	0
 patch	mushroom_canifis	Mushroom	farming_mushroom_patch	farming_transmit_a	3451	3472	0
+patch	spirit_port_sarim	SpiritTree	farming_spirit_tree_patch_1	farming_transmit_a	3059	3257	0
+patch	spirit_etceteria	SpiritTree	farming_spirit_tree_patch_2	farming_transmit_b	2612	3857	0
+patch	spirit_brimhaven	SpiritTree	farming_spirit_tree_patch_3	farming_transmit_b	2801	3202	0
