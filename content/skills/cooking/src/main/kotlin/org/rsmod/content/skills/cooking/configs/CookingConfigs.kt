@@ -3,6 +3,7 @@ package org.rsmod.content.skills.cooking.configs
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.timer.TimerReferences
 import org.rsmod.game.type.obj.ObjType
 
 internal typealias cooking_objs = CookingObjs
@@ -24,6 +25,11 @@ internal object CookingLocs : LocReferences() {
     /** Hosidius kitchen ranges (+5% burn bonus; the diary +10% is not implemented). */
     val hosidius_range = find("hos_cooking_range")
     val hosidius_range_02 = find("hos_cooking_range_02")
+}
+
+internal object CookingTimers : TimerReferences() {
+    /** Wine fermentation: restarted by every jug made, ferments the inventory when it fires. */
+    val wine_ferment = find("wine_ferment")
 }
 
 internal object CookingSeqs : SeqReferences() {
