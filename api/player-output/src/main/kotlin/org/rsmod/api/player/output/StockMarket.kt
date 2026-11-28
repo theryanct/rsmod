@@ -24,12 +24,12 @@ public object StockMarket {
     ) {
         val update =
             UpdateStockMarketSlot.SetStockMarketSlot(
-                status,
-                obj,
-                price,
-                count,
-                completedCount,
-                completedGold,
+                status = status,
+                obj = obj,
+                price = price,
+                count = count,
+                completedCount = completedCount,
+                completedGold = completedGold,
             )
         player.client.write(UpdateStockMarketSlot(slot, update))
     }

@@ -2,8 +2,10 @@ package org.rsmod.content.interfaces.ge.scripts
 
 import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
+import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.objs
 import org.rsmod.api.market.MarketPrices
+import org.rsmod.api.player.output.ClientScripts.mesLayerClose
 import org.rsmod.api.player.output.StockMarket
 import org.rsmod.api.player.output.VarpSync
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -186,6 +188,7 @@ constructor(
     }
 
     private fun Player.onClose() {
+        mesLayerClose(this, constants.meslayer_mode_objsearch)
         for (slot in 0 until GeSlot.SLOT_COUNT) {
             stopInvTransmit(collectInv(slot))
         }
@@ -371,10 +374,7 @@ constructor(
         val obj = inv[invSlot] ?: return
         val selected = player.selectedSlot
         val slot =
-            if (selected in 0 until GeSlot.SLOT_COUNT) {
-                if (player.geSlots[selected] != null) {
-                    return
-                }
+            if (selected in 0 until GeSlot.SLOT_COUNT && player.geSlots[selected] == null) {
                 selected
             } else {
                 player.geSlots.indexOfFirst { it == null }
@@ -431,12 +431,15 @@ constructor(
             mes("That offer is too large: one offer can trade at most 2,147,483,647 coins.")
             return
         }
-        val offer =
+        val offer: GeSlot? =
             if (player.isBuying) {
                 buy(type, quantity, price, total.toInt())
             } else {
                 sell(type, quantity, price, total.toInt())
-            } ?: return
+            }
+        if (offer == null) {
+            return
+        }
         player.geSlots[slot] = offer
         player.refreshSlot(slot)
         selectSlot(-1)
