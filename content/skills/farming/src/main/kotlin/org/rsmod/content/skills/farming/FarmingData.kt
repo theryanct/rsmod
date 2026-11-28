@@ -307,7 +307,7 @@ internal object FarmingData {
             ),
             tree("oak", 15, 14.0, 467.3, 4, 8, 15, 37.5),
             tree("willow", 30, 25.0, 1456.5, 6, 15, 30, 67.5),
-        ) + Pr3.crops // PR3: appended only (the saved crop id is the list index).
+        ) + Pr3.crops + // PR3: appended only (the saved crop id is the list index).
             // Batch B (2026-11-28): appended after PR3, so farming_pr3.tsv crop rows are now FROZEN
             // (a new tsv crop row would shift these saved ids). New crops go at the end of this list.
             // Herb stage values from the rev-243 herb patch multiloc (huasca sits at 60, so kwuarm+
