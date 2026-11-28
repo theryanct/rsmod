@@ -508,6 +508,7 @@ constructor(
         }
         // After the quest (or before the order): plain spit-roasting. Authored burn curve.
         mes("You carefully place the chompy bird on the spit-roast.")
+        delay(SPIT_TICKS)
         val burnChance = (SPIT_BURN_BASE - (stat(stats.cooking) - COOK_LEVEL) * 2).coerceAtLeast(0)
         if (random.of(0, 99) < burnChance) {
             invReplace(inv, BcObjs.raw_chompy, 1, BcObjs.ruined_chompy)
@@ -583,8 +584,9 @@ constructor(
         private const val CHOMPY_TICKS = 100
         private const val CARCASS_TICKS = 100
         private const val COOK_LEVEL = 30
-        private const val SPIT_XP = 100.0
+        private const val SPIT_XP = 140.0 // Wiki Cooked chompy recipe: spit-roast 140 xp, 5 ticks.
         private const val SPIT_BURN_BASE = 40
+        private const val SPIT_TICKS = 5
 
         private const val FLETCHING_XP = 262.0
         private const val COOKING_XP = 1470.0
