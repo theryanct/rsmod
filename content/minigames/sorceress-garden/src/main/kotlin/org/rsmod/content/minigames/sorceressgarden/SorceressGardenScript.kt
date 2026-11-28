@@ -8,7 +8,6 @@ import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.interact.OpInterceptors
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.thievingLvl
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.npc.NpcRepository
@@ -19,11 +18,13 @@ import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpNpc4
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.script.onPlayerLogout
+import org.rsmod.api.script.onPlayerQueue
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
 import org.rsmod.content.quests.framework.isQuestComplete
 import org.rsmod.content.quests.princeali.PrinceAliRescue
@@ -60,7 +61,6 @@ constructor(
     private val xpMods: XpModifiers,
     private val npcRepo: NpcRepository,
     private val npcTypes: NpcTypeList,
-    private val protectedAccess: ProtectedAccessLauncher,
 ) : PluginScript() {
     private class Herb(val obj: ObjType, val weight: Int)
 
@@ -149,6 +149,10 @@ constructor(
             }
         }
         onPlayerSoftTimer(SgTimers.tick) { player.patrolTick() }
+        onPlayerQueue(SgQueues.caught) {
+            telejump(CENTRE)
+            mes("An elemental throws you out of the garden!")
+        }
         onPlayerLogout { player.endVisit() }
         OpInterceptors.register(OsmanClaim())
     }
@@ -242,10 +246,7 @@ constructor(
             if (npc.coords.chebyshevDistance(coords) <= CATCH_RANGE) {
                 npc.say("Oi! You're not supposed to be here!")
                 endVisit()
-                protectedAccess.launchLenient(this) {
-                    telejump(CENTRE)
-                    mes("An elemental throws you out of the garden!")
-                }
+                strongQueue(SgQueues.caught, 1)
                 return
             }
         }
@@ -396,4 +397,9 @@ internal object SgObjs : ObjReferences() {
 internal object SgTimers : TimerReferences() {
     /** Custom (ui range 65303): elemental patrols while you're in a seasonal garden. */
     val tick = find("sorceress_garden_tick")
+}
+
+internal object SgQueues : QueueReferences() {
+    /** Custom (ui range 65304): thrown back to the centre by an elemental. */
+    val caught = find("sorceress_garden_caught")
 }
