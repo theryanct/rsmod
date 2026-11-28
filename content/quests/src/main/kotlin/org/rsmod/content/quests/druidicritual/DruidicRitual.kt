@@ -11,6 +11,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.SimpleQuestHooks
 import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
@@ -40,7 +41,8 @@ constructor(private val npcTypes: NpcTypeList, private val xpMods: XpModifiers) 
 
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, DruidNpcs.kaqemeex, "Talk-to") { talkKaqemeex(it) }
-        onNpcOpLabel(npcTypes, DruidNpcs.sanfew, "Talk-to") { talkSanfew(it) }
+        // QuestTalk: Eadgar's Ruse registers its own Sanfew conversation.
+        with(QuestTalk) { default(npcTypes, DruidNpcs.sanfew) { talkSanfew(it) } }
         for ((raw, enchanted) in DruidObjs.meats) {
             onOpLocU(DruidLocs.cauldron, raw) { dip(raw, enchanted) }
         }

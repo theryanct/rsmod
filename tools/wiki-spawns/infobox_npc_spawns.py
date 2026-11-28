@@ -70,6 +70,10 @@ OVERRIDES = {
     "Rantz": ("rantz", None),
     "Bugs": (None, "0_41_146_17_49"),
     "Fycie": (None, "0_41_146_26_49"),
+    # Troll Stronghold map (mapID 22) draws plane 1 at +64x/+32z; Eadgar's cave pin is at surface z.
+    "Burntmeat": (None, "1_44_157_29_8"),
+    "Aga": (None, "1_44_157_12_52"),
+    "Eadgar": (None, "0_45_157_10_29"),
 }
 
 
