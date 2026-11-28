@@ -1,0 +1,96 @@
+# Generated from the OSRS Wiki page "Transcript:Twiggy O'Korn" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+0	section	If the player has not completed all Achievement Diaries
+1	line	Twiggy O'Korn	Hey there!
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Twiggy O'Korn	My name is Twiggy O'Korn and I am the Mistress of all of the Achievement Diaries. It is a pleasure to make your acquaintance.
+2	line	Player	Likewise.
+2	action	other
+1	option	That's a nice cape - please tell me about it.
+2	line	Player	That's a nice cape - please tell me about it.
+2	line	Twiggy O'Korn	Ah yes, this is a Cape of Accomplishment, available only to those who complete every single Achievement Diary.
+2	action	end
+1	option	Goodbye!
+2	line	Player	Goodbye!
+2	action	end
+0	section	If the player has completed all Achievement Diaries
+1	line	Twiggy O'Korn	Hey there!
+1	option	Who are you?
+2	action	above
+1	option	Can I get a cape like yours?
+2	line	Player	Can I get a cape like yours?
+2	cond	If the player does not have at least 99,000 coins:
+3	line	Twiggy O'Korn	I see you've completed all the Achievement Diaries - well done! However, the capes cost 99,000 coins.
+3	line	Player	I'll be back.
+3	action	end
+2	cond	If the player has the money but doees not have two free inventory spaces:
+3	line	Twiggy O'Korn	I see you've completed all the Achievement Diaries - well done! However, you'll need to free up some space to hold the cape and hood.
+3	action	end
+2	cond	If the player has at least 99,000 coins and two free inventory spaces:
+3	line	Twiggy O'Korn	I see you've completed all the Achievement Diaries - well done! Now, I'll need 99,000 coins to cover my costs.
+3	option	What are your costs?
+4	line	Player	What are your costs?
+4	line	Twiggy O'Korn	Squirrel food, mostly. It's not like it grows on trees, you know! Anyway, do you want the cape?
+4	option	Okay, here's 99,000 coins.
+5	action	below
+4	option	Actually, forget it.
+5	action	below
+3	option	Okay, here's 99,000 coins.
+4	line	Player	Okay, here's 99,000 coins.
+4	box	Twiggy sells you a cape and hood.
+4	action	
+4	action	end
+3	option	Actually, forget it.
+4	line	Player	Actually, forget it.
+4	action	end
+1	option	Goodbye!
+2	action	above
+0	section	If the player has an achievement diary cape in their bank or inventory
+1	line	Twiggy O'Korn	Hey there!
+1	option	Cape
+2	option	Who are you?
+3	action	above
+2	option	Can I buy another cape?
+3	cond	If the player does not have at least 99,000 coins:
+4	line	Twiggy O'Korn	I don't think you can afford one at the moment. They cost 99,000 coins.
+4	line	Player	Maybe another time.
+4	action	end
+3	cond	If the player has at least 99,000 coins:
+4	line	Twiggy O'Korn	It'll cost you another 99,000 coins. You do realise you already own a cape and hood, right?
+4	option	I want another set. Here's 99,000 coins.
+5	line	Player	I want another set. Here's 99,000 coins.
+5	box	Twiggy sells you a cape and hood.
+5	action	end
+4	option	Actually, forget it.
+5	action	above
+3	cond	If the player has at least 99,000 coins without two free inventory spaces:
+4	line	Twiggy O'Korn	You can, but you'll need to free up some space to hold the cape and hood.
+4	action	end
+3	cond	If the player does not have an achievement diary hood:
+4	line	Player	I've lost the hood from my cape.
+4	line	Twiggy O'Korn	That's not a problem. I'll give you another one.
+4	box	Twiggy gives you another hood.
+4	action	end
+2	option	Goodbye!
+3	action	above
+1	option	Hood
+2	line	Player	May I have another hood for my cape, please?
+2	cond	If the player does not have a free inventory space:
+3	line	Twiggy O'Korn	You don't appear to have enough space in your inventory, come back and see me when you do.
+3	action	end
+2	cond	If the player has at least one free inventory space:
+3	line	Twiggy O'Korn	Most certainly, and free of charge!
+3	box	Twiggy hands you another hood for your cape.
+3	action	end
+0	section	Random chance (about 2%)
+1	line	Twiggy O'Korn	Hey there!
+1	line	Twiggy O'Korn	Here, have some chocolate!
+1	line	Player	Wow, thanks!
+1	action	
+1	option	Who are you?
+2	action	above
+1	option	That's a nice cape - please tell me about it.
+2	action	above
+1	option	Goodbye!
+2	action	above

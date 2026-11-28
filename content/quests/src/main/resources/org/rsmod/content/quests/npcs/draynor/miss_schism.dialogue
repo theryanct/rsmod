@@ -1,0 +1,68 @@
+# Generated from the OSRS Wiki page "Transcript:Miss Schism" by tools/quests/transcript_to_dialogue.py
+0	section	Standard dialogue
+1	line	Miss Schism	Oooh, my dear, have you heard the news?
+1	select	Select an option
+1	option	Ok, tell me about the news.
+2	cond	If the player has watched the bank robbery cutscene:
+3	line	Player	Ok, tell me about the news.
+3	line	Miss Schism	It's terrible, absolutely terrible! Those poor people!
+3	line	Player	Ok, yeah.
+3	line	Miss Schism	And who'd have ever thought such a sweet old gentleman would do such a thing?
+3	line	Player	Are we talking about the bank robbery?
+3	line	Miss Schism	Oh yes, my dear. It was terrible! TERRIBLE!
+3	line	Miss Schism	But tell me - have you been around here before, or are you new to these parts?
+3	select	Select an option
+3	option	I'm quite new.
+4	line	Player	I'm quite new.
+4	line	Miss Schism	Aah, perhaps you missed the excitement. It's that old man in this house here. Do you know him?
+4	line	Player	Well, I know of him.
+4	line	Miss Schism	When he first moved here, he didn't bring much. From the window you could see he just had some old furniture and a few dusty ornaments.
+4	line	Miss Schism	Here, look at this picture:
+4	line	Miss Schism	Also he always seemed so poor. When I went round to collect donations for the Draynor Manor Restoration Fund, he couldn't spare them a penny!
+4	line	Player	So he's redecorated?
+4	line	Miss Schism	Well, just you look in there now!
+4	line	Miss Schism	You see? It's full of jewellery and decorations! And all those expensive things appeared just after the bank got robbed.
+4	line	Miss Schism	He changed his hat too - he used to wear a scruffy old black thing, but suddenly he was wearing that party hat!
+4	line	Player	So that's why you're telling people he was the bank robber?
+4	line	Miss Schism	Oooh, my dear, I'm SURE of it! I went upstairs in his house once, while he was out walking, and do you know what I found?
+4	line	Player	A sign saying 'Trespassers will be prosecuted'?
+4	line	Miss Schism	No, it was a telescope! It was pointing right at the bank! He was spying on the bankers, planning the big robbery!
+4	line	Miss Schism	I bet if you go and look through it now, you'll find it's pointing somewhere different now he's finished with the bank.
+4	line	Player	I'd like to go now.
+4	line	Miss Schism	Oh, really? Well, do keep an eye on him - I just KNOW he's planning something...
+4	action	end
+3	option	I've been around here for ages.
+4	line	Player	I've been around here for ages.
+4	line	Miss Schism	Ah, so you'd have seen the changes here. It's that old man in this house here. Do you know him?
+4	line	Player	Well, I know of him.
+4	action	above
+3	option	I've had enough of talking to you.
+4	line	Player	I've had enough of talking to you.
+4	line	Miss Schism	Maybe another time, my dear.
+4	action	end
+2	cond	If the player hasn't watched the bank robbery cutscene:
+3	line	Player	Okay, tell me about the news.
+3	line	Miss Schism	It's terrible, absolutely terrible! Those poor people!
+3	line	Player	Okay, yeah.
+3	line	Miss Schism	And who'd have ever thought such a sweet old gentleman would do such a thing?
+3	line	Player	I really don't know what you're talking about.
+3	line	Miss Schism	Oooh, my dear, had you not heard?
+3	line	Player	At this rate I don't think I want to know...
+3	line	Miss Schism	Oh, you must quickly go and speak to the bank guard outside the bank. He'll tell you all about it, oooh, such a shock it was...
+3	line	Player	...
+3	action	end
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Miss Schism	I, my dear, am a concerned citizen of Draynor Village. Ever since the Council allowed those farmers to set up their stalls here, we've had a constant flow of thieves and murderers through our fair village, and I decided
+2	line	Miss Schism	that someone HAD to stand up and keep an eye on the situation.
+2	line	Miss Schism	I also do voluntary work for the Draynor Manor Restoration Fund. We're campaigning to have Draynor Manor turned into a museum before the wet-rot destroys it completely.
+2	line	Player	Right...
+2	action	other
+1	option	I'm not talking to you, you horrible woman.
+2	line	Player	I'm not talking to you, you horrible woman.
+2	line	Miss Schism	Oooh.
+2	action	end
+0	section	Crack the Clue III
+1	line	Miss Schism	Oooh! I have new information to share with you.
+1	box	You've found a new special clue! However, a magical force prevents you from putting this item in your inventory!
+1	action	Interface showing the next clue opens.
