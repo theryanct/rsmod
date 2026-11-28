@@ -28,6 +28,7 @@ import org.rsmod.content.quests.runemysteries.RuneMysteries.Companion.RUNE_MYSTE
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
+import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
@@ -62,6 +63,7 @@ public object BuiltQuests {
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
             VAMPYRE_SLAYER,
+            WATERFALL_QUEST,
             WITCHS_POTION,
             X_MARKS_THE_SPOT,
         )

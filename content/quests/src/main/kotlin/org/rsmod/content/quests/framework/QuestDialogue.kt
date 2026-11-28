@@ -270,6 +270,7 @@ private val GENDER_PAIRS =
     setOf(
         "lad" to "lass",
         "sir" to "madam",
+        "sir" to "lady",
         "man" to "woman",
         "man" to "lady",
         "a man" to "a lady",

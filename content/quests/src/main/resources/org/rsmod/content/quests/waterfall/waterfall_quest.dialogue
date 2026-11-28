@@ -1,0 +1,287 @@
+# Generated from the OSRS Wiki page "Transcript:Waterfall Quest" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Boarding raft before starting quest
+1	box	You're not sure if the raft is safe to use. Best to leave it alone.
+1	action	end
+0	section	Talking to Hudon while standing near the house
+1	box	Hudon can't hear you because of the noise of the waterfall. Perhaps the acoustics would be better from that island?
+1	action	end
+0	section	Talking to Almera
+1	line	Player	Hello.
+1	line	Almera	Ah, hello there. Nice to see an outsider for a change. Are you busy? I have a problem.
+1	cond	With a combat level lower than 25:
+2	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 25.
+2	action	continue
+1	select	Start the Waterfall Quest?
+1	option	Yes.
+2	line	Player	How can I help?
+2	line	Almera	It's my son Hudon, he's always getting into trouble. The boy's convinced there's hidden treasure in the river and I'm a bit worried about his safety, the poor lad can't even swim.
+2	line	Player	I could go and take a look for you if you like?
+2	line	Almera	Would you? You are kind. You can use the small raft out back if you wish, do be careful, the current down stream is very strong.
+2	action	end
+1	option	No.
+2	line	Player	I'm afraid I'm in a rush.
+2	line	Almera	Oh okay, never mind.
+2	action	end
+0	section	Talking to Almera again
+1	line	Player	Hello Almera.
+1	line	Almera	Hello brave adventurer, have you seen my boy yet?
+1	line	Player	I'm afraid not, but I'm sure he hasn't gone far.
+1	line	Almera	I do hope so, you can't be too careful these days.
+1	action	end
+0	section	Talking to Gerald
+1	line	Player	Hello.
+1	line	Gerald	Hello there.
+1	line	Player	Have you seen a small boy?
+1	line	Gerald	Nope, plenty of small fish though.
+1	action	end
+0	section	Using the raft
+1	box	You board the small raft and push off down stream...
+1	box	...you crash into a small island.
+1	line	Player	Hello son, are you okay? You need help?
+1	line	Hudon	It looks like you need the help.
+1	line	Player	Your mum sent me to find you.
+1	line	Hudon	Don't play nice with me, I know you're looking for the treasure too.
+1	line	Player	Where is this treasure you talk of?
+1	line	Hudon	Just because I'm small doesn't mean I'm dumb! If I told you, you would take it all for yourself.
+1	line	Player	Maybe I could help.
+1	line	Hudon	I'm fine alone.
+1	line	Player	Hmm... I wonder what this treasure is.
+1	action	end
+0	section	Talking to Hudon again
+1	line	Player	So you're still here.
+1	line	Hudon	I'll find that treasure soon, just you wait and see.
+1	action	end
+0	section	Swimming to the rock
+1	box	You swim out into the water...
+1	box	...but the current is too strong, washing you downstream.
+1	action	end
+0	section	Getting washed down the waterfall after talking to Hudon
+1	line	Gerald	Blimey! Where did you come from? Not another one of those treasure hunters are you?
+1	line	Player	Treasure hunters?
+1	line	Gerald	They say there's treasure hidden within the waterfall, left behind by the old elven king. Not that anyone's ever found anything.
+1	line	Player	Interesting, is there somewhere I can learn more about this?
+1	line	Gerald	You could ask Hadley the tourist guide. He'll be in this building just here.
+1	action	end
+0	section	Talking to Almera after talking to Hudon
+1	line	Player	Hello again.
+1	line	Almera	Well hello, you're still around then.
+1	line	Player	I saw Hudon by the river but he refused to come back with me.
+1	line	Almera	Yes he told me, the foolish lad came in drenched to the bone, he had fallen into the waterfall, lucky he wasn't killed! Now he can spend the rest of the summer in his room.
+1	line	Player	Any ideas what I could do while I'm here?
+1	line	Almera	Why don't you visit the tourist centre south of the waterfall?
+1	action	end
+0	section	Talking to Gerald again before learning about the treasure
+1	line	Player	Hello.
+1	line	Gerald	Hello traveller. Are you here to fish or to hunt for treasure?
+1	line	Player	Why do you say that?
+1	line	Gerald	Adventurers pass through here every week, they never find anything though.
+1	line	Player	What treasure are they looking for?
+1	line	Gerald	They say there's treasure hidden within the waterfall, left behind by the old elven king. Not that anyone's ever found anything.
+1	line	Player	Interesting, is there somewhere I can learn more about this?
+1	line	Gerald	You could ask Hadley the tourist guide. He'll be in this building just here.
+1	action	end
+0	section	Talking to Hadley
+1	line	Player	Hello there.
+1	cond	If the player doesn't have the Book on Baxtorian in their inventory:
+2	line	Hadley	Are you on holiday? If so you've come to the right place. I'm Hadley the tourist guide, anything you need to know just ask me. We have some of the most unspoilt wildlife and scenery in Gielinor.
+2	line	Hadley	People come from miles around to fish in the clear lakes or to wander the beautiful hillsides.
+2	line	Player	It is quite pretty.
+2	line	Hadley	Surely pretty is an understatement, [sir./lady./.] Beautiful, amazing or possibly life-changing would be more suitable wording. Have you seen Baxtorian Falls? Named after the elven king who was buried beneath them.
+2	action	continues
+1	cond	If the player has the Book on Baxtorian in their inventory:
+2	line	Hadley	I hope you're enjoying your stay, there should be lots of useful infomation in that book you've got. Make sure you give it a read.
+2	action	continues
+1	select	Select an option
+1	option	Can you tell me what happened to the elven king?
+2	line	Player	Can you tell me what happened to the elven king?
+2	line	Hadley	Baxtorian? I guess he died a long long time ago, it's quite sad really. After leaving his kingdom to deal with invading forces, Baxtorian returned to find his wife Glarial had been captured by the enemy.
+2	line	Hadley	This destroyed Baxtorian, after years of searching he became a recluse. He went into the secret home he had made for Glarial under the waterfall and sealed himself in. To this day, no one has managed to enter.
+2	line	Hadley	Anyway, I believe we have a book on him upstairs if you want to learn more.
+2	action	other
+1	option	Where else is worth visiting around here?
+2	line	Player	Where else is worth visiting around here?
+2	line	Hadley	There is a lovely spot for a picnic on the hill to the north east, there's a monument to the elven queen Glarial. It really is quite pretty.
+2	line	Player	Who was Glarial?
+2	line	Hadley	Baxtorian's wife, the only other person who could also enter the waterfall apart from him. She was queen when this land was inhabited by elven kind.
+2	line	Hadley	Glarial was kidnapped while Baxtorian was away, but they eventually recovered her body and brought her home to rest.
+2	line	Player	That's sad.
+2	line	Hadley	True, I believe we have a book on Baxtorian and Glarial upstairs if you want to learn more.
+2	action	other
+1	option	Is there treasure under the waterfall?
+2	line	Player	Is there treasure under the waterfall?
+2	line	Hadley	Ha ha... Another treasure hunter. Well if there is no one's been able to get to it. They've been searching that river for decades, all to no avail.
+2	action	other
+1	option	Thanks, goodbye.
+2	line	Player	Thanks, goodbye.
+2	line	Hadley	Enjoy your visit.
+2	action	end
+0	section	Searching the correct bookcase
+1	cond	If the player does not have the book:
+2	box	You find a book named 'Book on Baxtorian' on the bookcase.
+2	action	end
+1	cond	If the player already has the book:
+2	action	end
+0	section	Searching an incorrect bookcase
+1	option	Dialogue 1
+1	option	Dialogue 2
+1	option	Dialogue 3
+0	section	Talking to Almera after reading the book
+1	line	Player	Hello again Almera.
+1	line	Almera	Well hello again brave adventurer, are you enjoying the tranquil scenery of these parts?
+1	line	Player	Yes, very relaxing.
+1	line	Almera	Well I'm glad to hear itMissing period The authorities wanted to dig up this whole area for a mine, but the few locals who lived here wouldn't budge and they gave up.
+1	line	Player	Good for you.
+1	line	Almera	Good for all of us!
+1	action	end
+0	section	Talking to Hudon after reading the book
+1	line	Player	Hello Hudon.
+1	line	Hudon	Oh it's you, trying to find my treasure again are you?
+1	line	Player	I didn't know it belonged to you.
+1	line	Hudon	It will do when I find it. I just need to get into this blasted waterfallno comma or other punctuation I've been washed downstream three times already.
+1	action	end
+0	section	Obtaining the pebble
+0	section	Opening door to Golrie from the outside
+1	cond	If the player doesn't have the key:
+2	line	Player	Hello, are you okay?
+2	line	Golrie	Oh, don't worry, I'm totally fine. I locked myself in here for protection, but I've left the key somewhere.
+2	line	Player	Okay... I'll have a look for a key.
+2	action	end
+1	cond	If the player has the key:
+2	action	end
+0	section	Opening door to Golrie from the inside
+0	section	Searching the crate with the key
+1	cond	If the player doesn't have the key:
+2	box	You find a key in the crate.
+2	action	end
+1	cond	If the player has the key:
+2	action	end
+0	section	Talking to Golrie
+1	line	Player	Who are you, and what are you doing here?
+1	line	Golrie	I'm Golrie, and this is my home. Thing is, as you can see, I've got a small problem. Those hob-gobs are all over the place trying to steal my family's heirlooms. I've been stuck here for ages!
+1	line	Player	Do you need some help?
+1	line	Golrie	Oh don't worry, I'm sure I'll work something out. I just need some time to think.
+1	line	Player	In that case, do you mind if I have a look around?
+1	line	Golrie	No, of course not.
+1	box	You look amongst the junk on the floor and find Glarial's pebble.
+1	line	Player	Could I take this old pebble?
+1	line	Golrie	Oh that. Yes, have it. It's just some old elven junk I believe.
+1	box	You give Golrie the key.
+1	line	Golrie	Ah, thanks a lot for the key, traveller.
+1	line	Player	No problem. Take care, Golrie.
+1	action	end
+0	section	Talking to Golrie again without the pebble
+1	line	Player	Hello, Golrie.
+1	line	Golrie	Hello again.
+1	line	Player	Do you mind if I have another look through this stuff?
+1	line	Golrie	No, of course not.
+1	cond	If the player has no inventory space:
+2	box	You look amongst the junk on the floor and find Glarial's pebble but you don't have enough room to take it.
+2	action	end
+1	box	You look amongst the junk on the floor and find Glarial's pebble.
+1	action	end
+0	section	Using Glarial's pebble on Glarial's Tombstone
+1	cond	If the player has disallowed items:
+2	box	You place the pebble in the gravestone's small indent but nothing happens.
+2	action	end
+1	cond	If the player has no disallowed items:
+2	box	You place the pebble in the gravestone's small indent. The stone slab slides back revealing a ladder. You climb down it.
+2	action	end
+0	section	Searching the chest
+1	cond	If the player does not have Glarial's amulet:
+2	box	You find a small amulet in the chest.
+2	action	end
+1	cond	If the player already has Glarial's amulet:
+2	action	end
+0	section	Searching Glarial's Tomb
+1	cond	If the player does not have Glarial's urn:
+2	box	You find an urn full of ashes in the tomb.
+2	action	end
+1	cond	If the player already has Glarial's urn:
+2	action	end
+0	section	Talking to Almera after visiting Glarial's tomb
+1	line	Player	Hello Almera.
+1	line	Almera	Hello adventurer, how's your treasure hunt going?
+1	line	Player	Oh, I'm just sight seeing.
+1	line	Almera	No adventurer stays here this long just to sight see. But your business is yours alone, if you need to use the raft go ahead. But please try not crash it this time!Missing "to"
+1	line	Player	Thanks Almera.
+1	action	end
+0	section	Talking to Hudon after visiting Glarial's tomb
+1	line	Player	Hello again.
+1	line	Hudon	Not you still, why don't you give up?
+1	line	Player	And miss all the fun!
+1	line	Hudon	You do understand that anything you find you have to share with me.
+1	line	Player	Why's that?
+1	line	Hudon	Because I told you about the treasure.
+1	line	Player	Well, I wouldn't count on it.
+1	line	Hudon	That's not fair.
+1	line	Player	Neither is life kid.
+1	action	end
+0	section	Accessing the Waterfall Dungeon
+0	section	Climbing the Dead Tree
+1	box	You try to use the tree to climb down...
+1	box	...but you slip and fall into the water.
+1	line	Player	Ouch!
+1	action	end
+0	section	Using rope on the Dead Tree
+1	box	You tie the rope to the tree and climb down to the ledge below.
+1	action	end
+0	section	Climbing in the barrel
+1	box	You climb into the barrel and push off the edge. You are carried down the river.
+1	action	end
+0	section	Opening the door to the Waterfall dungeon
+1	cond	If the player is wearing Glarial's amulet:
+2	box	You enter the waterfall.
+2	action	end
+1	cond	If the player is not wearing Glarial's amulet:
+2	box	You try to open the door, but the ledge is suddenly flooded with water...
+2	box	...you are pushed over the waterfall and into the river.
+2	line	Player	Ouch!
+2	action	end
+0	section	Leaving the Waterfall dungeon
+1	box	You exit the dungeon.
+1	action	end
+0	section	Talking to Hudon after discovering the chalice
+1	line	Player	How are you doing, Hudon?
+1	line	Hudon	No luck yet I'm afraid.
+1	line	Player	Me neither. but I don't give up easily.
+1	action	end
+0	section	Opening the door to Baxtorian's tomb
+1	cond	If the player has the key:
+1	cond	If the player does not have the key:
+0	section	Searching the crate in the Waterfall dungeon
+1	cond	If the player does not have the key:
+2	box	You find a key in the crate.
+2	action	end
+1	cond	If the player already has the key:
+2	action	end
+0	section	Using runes on the pillars
+1	cond	If the player has already placed that rune on that pillar:
+2	action	end
+1	cond	If the player used an air rune:
+2	box	You place the rune on the pillar. It disappears in a puff of smoke.
+2	action	end
+1	cond	If the player used an earth rune:
+2	box	You place the rune on the pillar. It disappears in a puff of smoke.
+2	action	end
+1	cond	If the player used a water rune:
+2	box	You place the rune on the pillar. It disappears in a puff of smoke.
+2	action	end
+0	section	Using Glarial's amulet on the Statue of Glarial
+1	cond	If the player has not yet placed all the runes on the pillars:
+2	box	You go to place the amulet around the neck of the statue. However, water floods into the room as you do...
+2	box	...you are washed out of the cave and down the river.
+2	action	end
+1	cond	If the player has placed all the runes:
+2	box	You place the amulet around the neck of the statue. You hear a loud rumble from beneath as the floor rises.
+2	action	end
+0	section	Take treasure from the chalice
+1	box	You go to take the treasure from the chalice. However, water floods into the room as you do...
+1	box	...you are washed out of the cave and down the river.
+1	action	end
+0	section	Using Glarial's urn on the chalice
+1	box	You carefully pour the ashes into the chalice and remove Baxtorian's treasure...
+0	section	Post-quest
+0	section	Take treasure from the chalice
+1	box	The chalice only contains some old ashes.
+1	action	end
