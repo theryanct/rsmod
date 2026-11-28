@@ -11,14 +11,19 @@ import org.rsmod.api.player.events.interact.NpcContentEvents
 import org.rsmod.api.player.events.interact.NpcDefaultEvents
 import org.rsmod.api.player.events.interact.NpcEvents
 import org.rsmod.api.player.output.mes
+import org.rsmod.api.player.ui.IfModalButton
+import org.rsmod.api.player.ui.IfOverlayButton
 import org.rsmod.events.EventBus
 import org.rsmod.events.SuspendEvent
 import org.rsmod.game.cheat.Cheat
 import org.rsmod.game.entity.NpcList
+import org.rsmod.game.entity.Player
 import org.rsmod.game.loc.LocEntity
 import org.rsmod.game.loc.LocZoneKey
 import org.rsmod.game.map.LocZoneStorage
 import org.rsmod.game.map.ZoneLocMap
+import org.rsmod.game.type.comp.ComponentTypeList
+import org.rsmod.game.type.comp.UnpackedComponentType
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.npc.NpcTypeList
@@ -39,6 +44,12 @@ private val logger = InlineLogger()
  * multinpc's children are checked as their own rows (any child can be the one a player sees).
  * Quest-state [org.rsmod.api.player.interact.OpInterceptors] claims are per player and not
  * counted, so an op only an interceptor handles is listed.
+ *
+ * It also writes `.data/logs/unbound-ifbuttons.tsv`: every `UNHANDLED` button the server logged in
+ * `.data/logs/gameplay*.log` (real clicks, with counts), then the components of the interfaces
+ * open for the player running it that have op labels but no button script. The second part can
+ * include buttons the client handles itself (`client_onop` = 1 means the component has a cs2 op
+ * listener), so the clicked list is the stronger signal.
  */
 class UnboundOpsCommand
 @Inject
@@ -48,7 +59,12 @@ constructor(
     private val npcTypes: NpcTypeList,
     private val locZones: LocZoneStorage,
     private val npcList: NpcList,
+    private val componentTypes: ComponentTypeList,
 ) : PluginScript() {
+    private val componentsByInterface: Map<Int, List<UnpackedComponentType>> by lazy {
+        componentTypes.values.groupBy { it.interfaceId }
+    }
+
     override fun ScriptContext.startup() {
         onCommand("unboundops", "Dump unhandled npc/loc ops to .data/logs/unbound-ops.tsv", ::dump)
     }
@@ -116,6 +132,58 @@ constructor(
                 "${sorted.count { it.kind == "npc" }} npc) across $locs locs and $npcs npcs -> $out"
         logger.info { summary }
         cheat.player.mes(summary)
+        val buttons = dumpButtons(cheat.player)
+        cheat.player.mes("unboundops: $buttons interface button rows -> .data/logs/unbound-ifbuttons.tsv")
+    }
+
+    private fun dumpButtons(player: Player): Int {
+        val clicked = HashMap<String, Int>()
+        val lastSeen = HashMap<String, String>()
+        val logs = Path.of(".data", "logs")
+        if (Files.isDirectory(logs)) {
+            Files.list(logs).use { files ->
+                files
+                    .filter { it.fileName.toString().matches(GAMEPLAY_LOG) }
+                    .sorted()
+                    .forEach { file ->
+                        Files.readAllLines(file).forEach { line ->
+                            val m = UNHANDLED.find(line) ?: return@forEach
+                            val key = "${m.groupValues[2]}\t${m.groupValues[3]}\top${m.groupValues[4]}"
+                            clicked[key] = (clicked[key] ?: 0) + 1
+                            lastSeen[key] = m.groupValues[1]
+                        }
+                    }
+            }
+        }
+        var rows = 0
+        val out = logs.resolve("unbound-ifbuttons.tsv")
+        Files.createDirectories(logs)
+        Files.newBufferedWriter(out).use { w ->
+            w.write("source\tkind\tcomponent\top\tlabel\tcount\tlast_seen\tclient_onop\n")
+            for ((key, count) in clicked.entries.sortedByDescending { it.value }) {
+                w.write("clicked\t$key\t\t$count\t${lastSeen[key]}\t\n")
+                rows++
+            }
+            val open =
+                player.ui.overlays.values.map { it to true } + player.ui.modals.values.map { it to false }
+            for ((interfaceId, overlay) in open.distinct()) {
+                for (comp in componentsByInterface[interfaceId].orEmpty()) {
+                    val handled =
+                        if (overlay) eventBus.keyed[IfOverlayButton::class.java, comp.packed] != null
+                        else eventBus.contains(IfModalButton::class.java, comp.packed)
+                    if (handled) continue
+                    for ((i, label) in comp.op.withIndex()) {
+                        if (label.isBlank()) continue
+                        val name = comp.internalName ?: "${comp.interfaceId}:${comp.packed and 0xFFFF}"
+                        val kind = if (overlay) "overlay-button" else "modal-button"
+                        val onop = if (comp.onOp != null) 1 else 0
+                        w.write("open\t$kind\t$name\top${i + 1}\t$label\t\t\t$onop\n")
+                        rows++
+                    }
+                }
+            }
+        }
+        return rows
     }
 
     /** Every loc in [map]: brute force over the zone grid (ZoneLocMap has no iterator). */
@@ -179,6 +247,14 @@ constructor(
         const val ZONES = 2048
         const val ZONE_SIZE = 8
         const val DEFAULT_KEY = -1
+
+        /** gameplay.log and its dated rolls (not gameplay-problems, which repeats lines). */
+        val GAMEPLAY_LOG = Regex("""gameplay(\.[0-9-]+\.[0-9]+)?\.log""")
+        /** `<time> UNHANDLED player=<p> <kind>=<component> sub=<n> op=<n>` (GameplayLog). */
+        val UNHANDLED =
+            Regex(
+                """^(\S+ \S+) UNHANDLED player=\S+ ((?:overlay|modal)-button)=(\S+) sub=\S+ op=(\d+)"""
+            )
 
         val LOC_OP =
             listOf(
