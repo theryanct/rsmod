@@ -1,0 +1,25 @@
+# Blast Furnace (Wiki pins, square 30,77): foreman and the coffer dwarves.
+
+[[spawn]]
+npc = 'blast_furnace_instructor'
+coords = '0_30_77_24_30'
+
+[[spawn]]
+npc = 'blast_furnace_automaton_cog_repairer'
+coords = '0_30_77_24_40'
+
+[[spawn]]
+npc = 'blast_furnace_automaton_pipe_repairer'
+coords = '0_30_77_28_32'
+
+[[spawn]]
+npc = 'blast_furnace_automaton_pedaller'
+coords = '0_30_77_28_39'
+
+[[spawn]]
+npc = 'blast_furnace_automaton_pumper'
+coords = '0_30_77_31_34'
+
+[[spawn]]
+npc = 'blast_furnace_automaton_stoker_coke'
+coords = '0_30_77_30_35'
