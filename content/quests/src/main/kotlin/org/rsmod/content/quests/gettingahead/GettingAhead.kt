@@ -14,6 +14,9 @@ import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onOpHeldU
+import org.rsmod.events.EventBus
+import org.rsmod.api.player.events.interact.HeldUEvents
+import org.rsmod.api.player.events.interact.LocUEvents
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -63,7 +66,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   planks, 6 nails of any kind): 32; Gordon: 34, 1 QP, 3,000 coins, 4,000 Crafting and 3,200
  *   Construction XP (db stat_xp_awarded 40000/32000 tenths), Mary's tanning.
  *
- * Side content: soft clay (bucket of water on clay, bucket filled at the house's sink), the
+ * Side content: bucket filled at the house's sink (soft clay is Crafting's), the
  * house doors and spiral stairs, the shelves' dyes, the workbench nails, the mine's pickaxe and
  * the barrel of flour; the cave and its exit; Mary's tanning (soft/hard leather and dragonhides at
  * the usual tanner prices).
@@ -87,6 +90,18 @@ constructor(
 
     /** The Headless Beast spawned for each player (single player, keyed for safety). */
     private val beasts = HashMap<Int, Npc>()
+
+    /** Item-on-item bind that skips pairs another script owns (either order), so boot can't crash. */
+    private fun ScriptContext.heldU(
+        first: ObjType,
+        second: ObjType,
+        action: suspend ProtectedAccess.(HeldUEvents.Type) -> Unit,
+    ) {
+        val type = HeldUEvents.Type::class.java
+        if (eventBus.contains(type, EventBus.composeLongKey(first.id, second.id))) return
+        if (eventBus.contains(type, EventBus.composeLongKey(second.id, first.id))) return
+        onOpHeldU(first, second, action)
+    }
 
     override fun ScriptContext.startup() {
         with(QuestTalk) {
@@ -120,9 +135,9 @@ constructor(
         onHeldOpLabel(objTypes, GaObjs.journal, "Read") { readJournal() }
 
         // The fake heads.
-        onOpHeldU(GaObjs.knife, GaObjs.soft_clay) { makeClayHead() }
-        for (fur in GaObjs.furs) onOpHeldU(GaObjs.clay_head, fur) { makeFurHead(fur) }
-        onOpHeldU(GaObjs.fur_head, GaObjs.red_dye) { makeBloodyHead() }
+        heldU(GaObjs.knife, GaObjs.soft_clay) { makeClayHead() }
+        for (fur in GaObjs.furs) heldU(GaObjs.clay_head, fur) { makeFurHead(fur) }
+        heldU(GaObjs.fur_head, GaObjs.red_dye) { makeBloodyHead() }
         for (blood in GaObjs.bloods) {
             onOpHeldU(GaObjs.fur_head, blood) {
                 runQuestSection(null, dialogue, "Using a vial of blood or a blood pint on the fur head")
@@ -138,8 +153,10 @@ constructor(
         onLocOpLabel(locTypes, GaLocs.workbench, "Search") { searchWorkbench() }
         onLocOpLabel(locTypes, GaLocs.rocks_pickaxe, "Take-pickaxe") { takePickaxe() }
         onLocOpLabel(locTypes, GaLocs.flour_barrel, "Take-from") { takeFlour() }
-        onOpLocU(GaLocs.sink, GaObjs.bucket_empty) { fillBucket() }
-        onOpHeldU(GaObjs.bucket_water, GaObjs.clay) { softenClay() }
+        if (!eventBus.contains(LocUEvents.Op::class.java, EventBus.composeLongKey(GaLocs.sink.id, GaObjs.bucket_empty.id))) {
+            onOpLocU(GaLocs.sink, GaObjs.bucket_empty) { fillBucket() }
+        }
+        // Soft clay (bucket of water on clay) is Crafting's recipe; binding it here crashed boot.
         for (door in GaLocs.doors) bindOpenIfFree(door)
         onLocOpLabel(locTypes, GaLocs.stairs_bottom, "Climb-up") { climbStairs(it, up = true) }
         onLocOpLabel(locTypes, GaLocs.stairs_top, "Climb-down") { climbStairs(it, up = false) }
@@ -586,12 +603,6 @@ constructor(
         mes("You fill the bucket from the sink.")
     }
 
-    private suspend fun ProtectedAccess.softenClay() {
-        invReplace(inv, GaObjs.clay, 1, GaObjs.soft_clay)
-        invReplace(inv, GaObjs.bucket_water, 1, GaObjs.bucket_empty)
-        mes("You mix the clay and water.")
-        mes("You now have some soft workable clay.")
-    }
 
     /** The farmhouse's 2x2 spiral stairs (the generic spiral staircase translation, angle 3). */
     private suspend fun ProtectedAccess.climbStairs(loc: BoundLocInfo, up: Boolean) {
