@@ -91,7 +91,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
         val products =
             shown.map { recipe ->
                 val product = FletchingObjs.byName.getValue(recipe.product)
-                val available = player.fletchingLvl >= recipe.level && maxActions(recipe) > 0
+                val available =
+                    player.fletchingLvl >= recipe.level && maxActions(recipe) > 0 && known(recipe)
                 SkillMultiProduct(product, productName(recipe), available)
             }
         val max = shown.maxOf { maxActions(it) }.coerceAtLeast(1)
@@ -103,6 +104,10 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
                 maxQuantity = max,
             )
         val recipe = shown[choice.index]
+        if (!known(recipe)) {
+            mes("You don't know how to make ${productName(recipe)} yet.") // Authored (not Wiki).
+            return
+        }
         if (player.fletchingLvl < recipe.level) {
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
@@ -132,8 +137,24 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
             Kind.Chisel -> "How many would you like to make?"
         }
 
+    /**
+     * Zogre Flesh Eaters unlocks (Wiki): brutal arrows once Sithik explains them
+     * (`thzfe_makebrutalarrow`), the unstrung comp bow once Grish shows you
+     * (`thzfe_makecompozogrebow`).
+     */
+    private fun ProtectedAccess.known(recipe: Recipe): Boolean =
+        when {
+            recipe.product.startsWith(BRUTAL_PREFIX) -> player.vars[FletchingVarBits.brutal] != 0
+            recipe.product == COMP_BOW -> player.vars[FletchingVarBits.comp_bow] != 0
+            else -> true
+        }
+
     private fun ProtectedAccess.fletch(job: FletchJob) {
         val recipe = job.recipe
+        if (!known(recipe)) {
+            mes("You don't know how to make ${productName(recipe)} yet.") // Authored (not Wiki).
+            return
+        }
         if (player.fletchingLvl < recipe.level) {
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
@@ -211,6 +232,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private companion object {
         const val KNIFE = "knife"
         const val CHISEL = "chisel"
+        const val BRUTAL_PREFIX = "zogre_brutal_"
+        const val COMP_BOW = "unstrung_zogre_bow"
 
         /** Skillmulti item slots named in the rev 233 interface (18 after the 243 cutover). */
         const val MAX_PRODUCTS = 10

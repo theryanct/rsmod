@@ -63,10 +63,14 @@ internal object HerbloreData {
             // Venom batch (Wiki "Antidote+" / "Antidote++"): coconut milk, not water.
             Unfinished("toadflax", "unfinished_antidote+", 68, "vial_coconut_milk"),
             Unfinished("irit_leaf", "unfinished_antidote++", 79, "vial_coconut_milk"),
+            // Zogre Flesh Eaters (Wiki "Relicym's balm"): rogue's purse unfinished potion.
+            Unfinished("rogues_purse", "rogues_purse_sol", 8),
         )
 
     val potions: List<Potion> =
         listOf(
+            // Wiki "Relicym's balm": 8 Herblore, 40 xp; needs Sithik's cure (Zogre Flesh Eaters).
+            Potion("Relicym's balm", "rogues_purse_sol", "snake_weed", RELICYMS_BALM, 8, 40.0),
             Potion("Attack potion", "guamvial", "eye_of_newt", "3dose1attack", 3, 25.0),
             Potion(
                 "Antipoison",
@@ -176,6 +180,12 @@ internal object HerbloreData {
         /** Lower each stat by `constant + percent%` (brews). */
         data class Drain(val stats: List<String>, val constant: Int, val percent: Int) : Effect()
 
+        /**
+         * Relicym's balm: [periods] fewer 30-tick disease periods (cache varp `disease`, which Zogre
+         * Flesh Eaters' disease counts down; 10 per dose, so three doses cure a zogre's).
+         */
+        data class CureDisease(val periods: Int) : Effect()
+
         /** Several effects at once (brews). */
         data class Multi(val effects: List<Effect>) : Effect()
     }
@@ -284,6 +294,7 @@ internal object HerbloreData {
             Drink("extended antifire", doses("2antidragon"), Effect.Antifire(false, 12)),
             Drink("super antifire potion", doses("3antidragon"), Effect.Antifire(true, 3)),
             Drink("extended super antifire", doses("4antidragon"), Effect.Antifire(true, 6)),
+            Drink("relicym's balm", named("relicyms_balm"), Effect.CureDisease(10)),
         )
 
     /**
@@ -330,7 +341,7 @@ internal object HerbloreData {
         listOf(
             mix("attack mix", "2dose1attack", "1attack", 4, 8.0, 3, caviarOnly = false),
             mix("antipoison mix", "2doseantipoison", "antipoison", 6, 12.0, 3, caviarOnly = false),
-            // Relicym's balm cures disease, which this server has no system for: heal only.
+            // Relicym's mix: the balm's disease cure (its drink) plus the heal.
             BarbarianMix(
                 "relicym's mix",
                 "relicyms_balm2",
@@ -340,7 +351,6 @@ internal object HerbloreData {
                 14.0,
                 3,
                 caviarOnly = false,
-                effect = Effect.Multi(emptyList()),
             ),
             mix("strength mix", "2dose1strength", "1strength", 14, 17.0, 3, caviarOnly = false),
             mix("restore mix", "2dosestatrestore", "statrestore", 24, 21.0, 3, caviarOnly = false),
@@ -435,6 +445,8 @@ internal object HerbloreData {
 
     /** Water sources (by loc name) that fill vials. */
     val waterSources: Set<String> = setOf("sink", "fountain", "well", "water pump", "waterpump")
+
+    const val RELICYMS_BALM = "relicyms_balm3"
 
     const val VIAL = "vial_empty"
     const val VIAL_WATER = "vial_water"

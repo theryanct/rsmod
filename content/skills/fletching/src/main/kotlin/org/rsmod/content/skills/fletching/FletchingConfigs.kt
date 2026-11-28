@@ -3,6 +3,7 @@ package org.rsmod.content.skills.fletching
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.seq.SeqType
 
@@ -25,4 +26,10 @@ object FletchingSeqs : SeqReferences() {
 
 object FletchingQueues : QueueReferences() {
     val fletching = find("fletching")
+}
+
+/** Zogre Flesh Eaters unlocks (cache varbits on `zombie_ogre`). */
+object FletchingVarBits : VarBitReferences() {
+    val brutal = find("thzfe_makebrutalarrow")
+    val comp_bow = find("thzfe_makecompozogrebow")
 }

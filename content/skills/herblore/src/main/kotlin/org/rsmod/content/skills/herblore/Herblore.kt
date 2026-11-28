@@ -70,7 +70,7 @@ constructor(
         for (potion in HerbloreData.potions) {
             val recipe =
                 Recipe(potion.product, potion.unf, potion.secondary, potion.level, potion.xp, 2)
-            onOpHeldU(obj(potion.unf), obj(potion.secondary)) { selectMake(recipe) }
+            onOpHeldU(obj(potion.unf), obj(potion.secondary)) { if (knowsPotion(potion)) selectMake(recipe) }
         }
         for (mix in HerbloreData.mixes) {
             val eggs = if (mix.caviarOnly) listOf(HerbloreData.CAVIAR) else listOf(HerbloreData.ROE, HerbloreData.CAVIAR)
@@ -150,6 +150,14 @@ constructor(
     /* Mixing */
 
     /** Barbarian Training: Otto's lesson unlocks the attack mix, handing it over unlocks the rest. */
+    /** Relicym's balm needs Sithik's answer in Zogre Flesh Eaters (`thzfe_makecuredisease`). */
+    private fun ProtectedAccess.knowsPotion(potion: HerbloreData.Potion): Boolean {
+        if (potion.product != HerbloreData.RELICYMS_BALM) return true
+        if (player.vars[HerbloreVarBits.thzfe_makecuredisease] != 0) return true
+        mes("You don't know how to make this potion yet.") // Authored (not Wiki).
+        return false
+    }
+
     private fun ProtectedAccess.knowsMix(mix: HerbloreData.BarbarianMix): Boolean {
         val lesson = player.vars[HerbloreVarBits.brut_herb_potion]
         val needed = if (mix == HerbloreData.mixes.first()) MIX_LESSON_TAUGHT else MIX_LESSON_DONE
@@ -261,6 +269,10 @@ constructor(
             }
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
             is Effect.CureVenom -> player.cureVenom(effect.venomImmunityTicks)
+            is Effect.CureDisease -> {
+                val left = player.vars[HerbloreVarps.disease]
+                if (left > 0) vars[HerbloreVarps.disease] = (left - effect.periods).coerceAtLeast(0)
+            }
             is Effect.Multi -> effect.effects.forEach { applyEffect(it) }
             is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
             Effect.Stamina -> Stamina.drink(player)
