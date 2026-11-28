@@ -86,7 +86,10 @@ import org.rsmod.plugin.scripts.ScriptContext
  * cutscenes are plain dialogue; the silver trail is the cache's multilocs (no extra decals); the
  * Feldip vine grows at once instead of after ~40 minutes; Asyff's single costume (5 feathers) and
  * the remote eyries' entrances (desert boulder = a 45 Strength check) are authored; box traps
- * stay usable before the quest (main has no Hunter quest gate).
+ * stay usable before the quest (main has no Hunter quest gate); the zoo ferret multinpc isn't
+ * spawned, the kebbit's decline-combat-xp choice and Nickolaus's crawl npc are unused, the
+ * Rellekka eyrie's 35 Agility climb isn't checked, and the puzzle rooms' spawned locs re-sync only
+ * on entering their tunnel.
  */
 class EaglesPeak
 @Inject
@@ -799,17 +802,17 @@ constructor(
                 )
             }
         }
-        for ((bird, ends) in BIRD_ENDS.withIndex()) {
-            val at = if (birdMoved(bird)) 1 else 0
-            for ((index, end) in ends.withIndex()) {
-                setLoc(
-                    end,
-                    if (index == at) EpLocs.metal_bird else null,
-                    listOf(EpLocs.metal_bird),
-                    LocShape.CentrepieceStraight,
-                    LocAngle.West,
-                )
-            }
+        // The corner is an end of two rails: work out every occupied end first, then set each
+        // distinct tile once.
+        val occupied = BIRD_ENDS.withIndex().map { (bird, ends) -> ends[if (birdMoved(bird)) 1 else 0] }.toSet()
+        for (end in BIRD_ENDS.flatten().toSet()) {
+            setLoc(
+                end,
+                if (end in occupied) EpLocs.metal_bird else null,
+                listOf(EpLocs.metal_bird),
+                LocShape.CentrepieceStraight,
+                LocAngle.West,
+            )
         }
     }
 
@@ -924,9 +927,9 @@ constructor(
         val inside: CoordGrid,
         val outside: CoordGrid,
     ) {
-        Polar(CoordGrid(2726, 10215, 0), CoordGrid(2025, 4961, 3), CoordGrid(2708, 10205, 0), CoordGrid(2744, 3830, 1)),
+        Polar(CoordGrid(2726, 10215, 0), CoordGrid(2018, 4957, 3), CoordGrid(2708, 10205, 0), CoordGrid(2744, 3830, 1)),
         Desert(CoordGrid(3421, 9569, 0), CoordGrid(2019, 4957, 3), CoordGrid(3420, 9563, 0), CoordGrid(3405, 3159, 0)),
-        Jungle(CoordGrid(2515, 9320, 0), CoordGrid(2022, 4959, 3), CoordGrid(2526, 9325, 0), CoordGrid(2514, 2927, 0));
+        Jungle(CoordGrid(2515, 9320, 0), CoordGrid(2021, 4957, 3), CoordGrid(2526, 9325, 0), CoordGrid(2514, 2927, 0));
 
         fun base(): NpcType =
             when (this) {
