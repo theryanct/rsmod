@@ -44,6 +44,10 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
             "fairy_wall_tangle_door_open",
             "fairy_wall_tangle_door_open1",
             "hallowed_path_end_gate",
+            // Agility Pyramid low walls give xp and can fail (pyramid/Pyramid.kt).
+            "agility_pyramid_low_wall",
+            // Brimhaven Agility Arena low walls give xp (brimhaven/BrimhavenArena.kt).
+            "agilityarena_lowwall",
         )
 
     private enum class Kind(val labels: Set<String>) {

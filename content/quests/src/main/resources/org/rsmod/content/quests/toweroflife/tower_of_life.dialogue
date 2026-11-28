@@ -1,0 +1,715 @@
+# Generated from the OSRS Wiki page "Transcript:Tower of Life" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	The builders on strike
+1	line	Player	Hi. Interesting building you have here.
+1	line	Player	What's it for?
+1	line	Effigy	You like it? It's simply fabulous, isn't it? A real marvel of modern design made just for my fellow alchemists and I!
+1	line	Player	I see some builders over there. So I assume it's not yet finished.
+1	line	Effigy	What a keen eye this chap has! But imagine this: a gargantuan cylinder of expert design, incorporating an inventive inner spiral walkway to multiple planes of wondrous inhabitance!
+1	line	Player	So, it's a tower.
+1	line	Effigy	Oh, no, no, no, no.
+1	line	Effigy	It's going to have a use that will change this world!
+1	line	Effigy	Or at least it would if we could ever get it finished.
+1	line	Effigy	See those builders?
+1	line	Player	They don't seem to be building much.
+1	line	Effigy	Exactly.
+1	line	Effigy	They've gone on strike for some petty reason about the tower being too weird. I really can't understand those men.
+1	line	Player	Shame.
+1	line	Effigy	Hey! Maybe you could talk to them?
+1	line	Effigy	You look like a sturdy chap.
+1	line	Effigy	Maybe you could finish the work?
+1	line	Player	Me?
+1	line	Effigy	Come on! This is the chance of a lifetime!
+1	select	Start the Tower of Life quest?
+1	option	Yes.
+2	line	Player	Sure, why not.
+2	line	Effigy	That's fantastic! Oh, I'm so pleased.
+2	line	Player	Calm down. I'm not making any promises.
+2	line	Effigy	Oh, I have a good feeling about this.
+2	line	Effigy	Right.
+2	line	Effigy	Go have a word with Bonafido the head builder. See if you can't get him off his backside to do some work. Oh, and I'm Effigy by the way.
+2	line	Player	Nice to meet you Effigy, I'm {player}. Hold on and I'll see what I can do!
+2	cond	If the player has completed Making History:
+3	line	Effigy	Wait a minute.
+3	line	Effigy	Don't I recognise you from somewhere?
+3	line	Player	Erm, do you?
+3	line	Effigy	Do you know the outpost north of Ardougne?
+3	line	Player	Ah, yes, it's now a small museum. Jorral's looking after it. He's really making history with that place.
+3	line	Effigy	Well, the King was going to make that into an alchemy lab for us, but some fool ruined our plans!
+3	line	Player	Ah, yes. Shame. Got to go. Bye.
+3	line	Effigy	Hey, wait up!
+3	line	Player	Best I go sort out this tower. Bye.
+2	action	end
+1	option	No.
+2	line	Player	Sorry, feeling a bit ill today.
+2	line	Effigy	A bit ill?
+2	line	Effigy	That's a weak excuse for a very feeble personality.
+2	action	end
+0	section	Talking to Effigy again
+1	line	Player	Guess what!
+1	line	Effigy	What?
+1	line	Player	I'm a fully-fledged builder!
+1	line	Effigy	Marvellous! So you can bring this tower to life!
+1	line	Player	I'm not sure about that, but I'll take a look and see what I can do.
+1	line	Effigy	Oh, what a wondrous person you are!
+1	action	end
+0	section	Talking to 'Transmute' The Alchemist before starting
+1	line	Player	Hi there. What is this place?
+1	line	Transmute	Ah, this be the Tower of Life! Beautiful, isn't it?
+1	line	Player	I prefer ordinary houses.
+1	line	Transmute	Pah, you have no taste.
+1	action	end
+0	section	Talking to 'Transmute' The Alchemist after starting
+1	line	Player	I'm a builder!
+1	line	Transmute	I question why you are so pleased about this.
+1	line	Player	Well, I think it's a positive step in my career as a courageous adventurer.
+1	action	end
+0	section	Talking to 'Currency' the Alchemist before starting
+1	line	Player	This is quite the tower.
+1	line	Currency	Yeah, it cost a fair bit.
+1	line	Player	How much?
+1	line	Currency	Well, I had to 'alch' a fair few belongings of my fellow alchemists to afford it.
+1	line	Player	I bet they love you for that.
+1	line	Currency	Everyone loves someone that can create money.
+1	line	Player	I don't.
+1	action	end
+0	section	Talking to 'Currency' the Alchemist
+1	line	Player	Hi. Sorry, but why do they call you 'Currency'?
+1	line	Currency	That's down to my interest in all things of monetary value.
+1	line	Player	You must be pretty rich then.
+1	line	Currency	I wish. And I was, up until recently.
+1	line	Player	What happened?
+1	line	Currency	This tower. Set me back a fair few million.
+1	line	Player	I'll bet! It pleases you, then, to know that I have just become a builder and have been granted permission to go mess around inside.
+1	line	Currency	This is not a good day for me.
+1	action	end
+0	section	Speaking with Bonafido, the head builder
+1	line	Player	Are you Bonafido by any chance?
+1	line	Bonafido	That I am, mate.
+1	line	Bonafido	How can I be of assistance?
+1	line	Player	Well, I've just spoken to Effigy about this tower. He tells me he hired you to work but you're on strike. Something about an extended tea break?
+1	line	Bonafido	Extended cup o' char? E's got it all wrong, mate. We know those alchemi-whatsits are up ta somefin' weird in building this tower, wot wiv all the machinery, and until we get some answers we're not movin a muscle.
+1	line	Player	Well, he wanted me to do something about it.
+1	line	Player	Is there no way I can convince you to continue?
+1	line	Bonafido	Sorry, mate.
+1	line	Player	Well, can I at least have a look inside the tower?
+1	line	Bonafido	Only builders are allowed in there, like. You don't look like much ov a builder to me.
+1	line	Player	I take offence at that! Give me a chance; you may be surprised.
+1	line	Bonafido	Okay. Come to me kitted out like a builder - hard hat, some boots, scruffy trousers and shirt - and I'll let ya try out ta be one ov us.
+1	line	Player	Count me in!
+1	action	end
+0	section	Accessing the tower
+0	section	Obtaining Hard hat
+1	line	Player	Say, that's a nice helmet.
+1	line	Black-eye	Why, thanks.
+1	line	Player	I was just wondering if you might be able to help me out with one?
+1	line	Black-eye	Always glad to help a budding builder.
+1	line	Black-eye	But first, prove your Construction knowledge by answering some questions.
+1	line	Black-eye	How many nails does it take to make a rocking chair?
+1	option	One
+2	line	Player	One?
+2	line	Black-eye	One? How do you suppose to use a single nail?
+2	action	end
+1	option	Five
+2	line	Player	Five?
+2	line	Black-eye	Nope. Keep guessing!
+2	action	end
+1	option	Three
+2	line	Player	Three?
+2	line	Black-eye	Bingo! Okay, now what takes 3 planks, 3 cloths and 3 nails to make, and helps remove light from a room?
+2	option	Torn curtains
+3	line	Player	Torn curtains?
+3	line	Black-eye	Nice one. Last question: I like fish and I want to put some in my garden, but I need a special water feature. What materials would I require?
+3	option	8 clay pieces and 3 limestone bricks
+4	line	Player	8 clay pieces and 3 limestone bricks?
+4	line	Black-eye	Oh, and you were so close!
+4	action	end
+3	option	10 clay pieces
+4	line	Player	10 clay pieces?
+4	line	Black-eye	That's it! You seem to know your stuff. I got a spare helmet from a builder that died on... I mean, err, had to leave the job for greener pastures.
+4	line	Player	Greener pastures?
+4	action	
+4	line	Player	Wait a minute! Is there blood on this helmet?
+4	line	Black-eye	Erm, no, that's just, erm, paint. Yes, paint! That's what it is!
+4	line	Player	Oh, okay. Thanks. Bye.
+4	line	Black-eye	Ha, gullible fool.
+4	line	Player	What?
+4	line	Black-eye	Nothing.
+4	action	end
+3	option	10 limestone bricks
+4	line	Player	10 limestone bricks?
+4	line	Black-eye	Guess again, mate.
+4	action	end
+2	option	A brown rug
+3	line	Player	A brown rug?
+3	line	Black-eye	Of course, because that's what everyone needs - a rug up at their window.
+3	action	end
+2	option	Opulent curtains
+3	line	Player	Opulent curtains?
+3	line	Black-eye	Those curtains are not going to be in any way opulent, matey.
+3	action	end
+0	section	Talking to 'Black-eye' again
+1	line	Player	Say, that's a nice helmet.
+1	line	Black-eye	Why, thanks. Some would say as nice as the one you're wearing!
+1	action	end
+0	section	Obtaining Builder's shirt
+1	line	Player	Hi, I'm looking to get some kit to look like one of you guys.
+1	line	Player	Anything you might be able to help me out with?
+1	line	The Guns	Well... Urmph! Ye can 'ave me shirt...
+1	line	Player	Hmmm. Has it been cleaned? I don't want some sweaty hand-me-down.
+1	line	The Guns	What? Huhmf! It ain't ever been...uurrgg...worn.
+1	line	Player	Well, that sounds good. Can I have it then?
+1	line	The Guns	Can't...hurrr...see why not. This is firsty work doh. Could do wiv a beer.
+1	cond	If the player doesn't have a beer:
+2	line	Player	Sure. What's your 'usual'?
+2	line	The Guns	I'm a simple...umph...man. I like the bar in Yanille and their cheap beer...
+2	line	Player	Simple, cheap beer. No problem.
+2	action	end
+1	cond	If the player has a beer in their inventory:
+2	line	Player	Well, today's your lucky day!
+2	line	The Guns	Ahhh! Smashin...urrghh...deal!
+2	action	
+2	action	end
+0	section	Attempting to give other beverages
+1	cond	If the player attempts to give a beer again:
+2	line	Player	Fancy another?
+2	line	The Guns	Nah, thanks. You've got your shirt and I've got my energy back.
+2	action	end
+1	cond	If the player attempts to give a non-regular beer, such as Greenman's ale:
+2	line	Player	Hi! How's this for some booze?
+2	line	The Guns	That's no good. I need some simple beer.
+2	action	end
+1	cond	If the player attempts to give a beer tankard or keg of beer:
+2	line	Player	Fancy another?
+2	line	The Guns	Nah, thanks, I'm not drinking that.
+2	action	end
+1	cond	If the player attempts to give noted beer:
+2	line	Player	Beer?
+2	line	The Guns	How do you expect me to drink that?
+2	line	Player	Oh, sorry.
+2	action	end
+0	section	Talking to 'The Guns' again
+1	line	Player	Hi.
+1	line	Player	What do you do when you're not lifting logs above your head?
+1	line	The Guns	In my free time?
+1	line	Player	Yes.
+1	line	The Guns	All sorts. I like...hummff...a good kebab and a cold beer down...urrghh...the pub. And for those quiet evenings...hurrr...
+1	line	The Guns	A bit of needlepoint is always welcome.
+1	line	Player	I can honestly say you're a very original guy.
+1	action	end
+0	section	Obtaining Builder's trousers
+1	line	Player	Why, hello there!
+1	line	Gummy	What do you want?
+1	line	Player	Clothing.
+1	line	Gummy	Nope. Need mine.
+1	line	Player	Ah, come on. You know you want to give me free stuff.
+1	line	Gummy	Stop bothering me, can't you see I'm busy!
+1	line	Player	Yes, VERY busy I'm sure.
+1	line	Gummy	Okay, okay.
+1	line	Gummy	The other day I was drying my clothes on a line down by the shore. A storm hit and some of my clothing went missing.
+1	line	Player	Likely story. Sure you weren't skinny dipping?
+1	line	Gummy	Just go look and leave me be! Search around the tower and you may find them.
+1	action	end
+0	section	Searching near the tower
+1	cond	If the plant has the trousers:
+2	box	Aha! You find some trousers!
+2	action	
+2	action	end
+1	cond	If the player doesn't have the trousers:
+0	section	Obtaining Builder's boots
+1	line	Player	Hello. I was just wondering... I don't suppose you have any spare clothing you could lend me?
+1	line	No fingers	I do have many boots.
+1	line	Player	Ah, thanks.
+1	line	No fingers	But there's no way I'm giving any to you.
+1	line	Player	Oh, but why? I could pay you!
+1	line	No fingers	Nope. Only real builders can wear builders' boots, and you're not even close.
+1	action	end
+0	section	Talking to 'No fingers' again
+1	line	Player	Hi.
+1	line	No fingers	Don't suppose you've seen any boots around here? Size nine, steel toed, brown leather...
+1	line	Player	Nope, not at all. I'd best be going. Have a nice day. Bye!
+1	action	end
+0	section	Stealing the boots
+1	action	
+0	section	Talking to Bonafido again with the full outfit
+1	line	Player	Hey, Bonafido.
+1	line	Bonafido	Well, if it ain't the wannabe builder!
+1	cond	If not wearing the full outfit:
+2	line	Player	What clothes do I need?
+2	line	Bonafido	Ya don't seem to be able ta remember anyfin'... Dearie me.
+2	line	Bonafido	Come back to me wearin' a hard hat, some scruffy trousers, a good top and some hard boots. Yow shud fand some around 'ere.
+2	action	end
+1	line	Player	So...
+1	line	Bonafido	Like a builder frew and frew! Good job - now it's time to test your skills.
+1	line	Player	Okay, what do you want me to build?
+1	line	Bonafido	Build?
+1	line	Bonafido	Build? Hahaha, don't be a plonka!
+1	line	Bonafido	It's not building skills that makes a true builder, you have to have the right mental attitude, yeah?
+1	line	Bonafido	Let me see...
+1	line	Bonafido	You've plenty of work to do, but you need a drink fast - what do you go for?
+1	option	Orange juice
+2	line	Player	Orange juice.
+2	line	Bonafido	What are you? A healthy builder? Of course, not juice!
+2	action	end
+1	option	Tea
+2	line	Player	Tea.
+2	line	Bonafido	Bingo! Ain't nufin' betta.
+2	line	Bonafido	Now, let's hear you whistle!
+2	option	Do a little dance and whistle as loud as you can
+3	action	Player performs the "dance" emote
+3	box	You do a little dance and whistle as loud as you can.
+3	line	Bonafido	What on Gielinor are you doing? Get out of my sight.
+3	action	end
+2	option	Whistle a pretty tune
+3	box	You whistle a tune.
+3	action	Player performs the "cheer" emote
+3	line	Bonafido	You know, you have quite a talent there.
+3	line	Player	Why thank you. Do you think I have what it takes to become a famous whistler?
+3	line	Bonafido	No.
+3	line	Player	Oh.
+3	action	end
+2	option	Whistle for attention
+3	action	(Player performs "Beckon (enhanced)" emote)
+3	line	Bonafido	Wahey! Nice one. Next question.
+3	line	Bonafido	What's a good sign that you need to replace your trousers?
+3	option	Your legs are getting a bit cold
+4	line	Player	Your legs are getting a bit cold?
+4	line	Bonafido	Exactamondo! Glad to see you are thinking like a builder.
+4	line	Player	I am?
+4	line	Bonafido	Yes, obviously if your legs are cold, you lost your trousers altogether!
+4	line	Player	That's just what I was thinking.
+4	line	Bonafido	Now the last question - what do you do if you cut your finger?
+4	option	Cry
+5	line	Player	Cry.
+5	line	Bonafido	When was the last time you saw a builder cry?
+5	action	end
+4	option	Carry on, it'll fix itself
+5	line	Player	Carry on, it'll fix itself.
+5	line	Bonafido	Yep, that's the one!
+5	line	Player	Suppose it could get infected then, but that'll just impress the lads all the more.
+5	line	Bonafido	Exactly, you're gettin the hang of this quickly!
+5	line	Bonafido	Cosmic! I canna see no reason why ya can't go in t'tower now. But be careful, there be some precarious situations in there.
+5	line	Player	So, what's left to build?
+5	line	Bonafido	Well, there's a pipe system, a pressure machine and a strange cage up at the top that needs finishing off. The alchemists couldn't explain what they were for.
+5	line	Player	Thanks!
+5	action	end
+4	option	Fetch a plaster and ointment
+5	line	Player	Fetch a plaster and ointment.
+5	line	Bonafido	Look, {player}, let me give you a bit of advice. If you want to look weak, that's the best way to go.
+5	action	end
+3	option	They're ripped and full of holes
+4	line	Player	They're ripped and full of holes.
+4	line	Bonafido	No, no, no. That's the only way they should be!
+4	action	end
+3	option	The colour is starting to fade
+4	line	Player	The colour is starting to fade?
+4	line	Bonafido	Oh no, you're really not getting the hang of this are you?
+4	action	end
+1	option	Bottle of wine
+2	line	Player	Bottle of wine.
+2	line	Bonafido	Ooh, get Mr Fancy Pants here and his posh wine! You're no builder.
+2	action	end
+0	section	Talking to Bonafido again
+1	line	Player	Thanks!
+1	line	Player	Hi again Bonafido.
+1	line	Bonafido	Hi, '{player} the Builder'! Been into the tower yet?
+1	line	Player	Not yet, I'll go when I'm ready. I'm taking my time, may have a quick cup of tea first.
+1	line	Bonafido	Hahaha.
+1	action	end
+0	section	Unfinished work
+0	section	Entering the Tower of Life
+1	line	Player	Wow, this place looks special. Best I look around for something to fix.
+1	action	end
+0	section	Talking to Bonafido after entering the Tower
+1	line	Player	Heya, Bona. I had a look at the building. There's some complex machinery in there! Going to cost someone.
+1	line	Bonafido	Yep, told ya so. Any idea what those alchemists are up ta?
+1	line	Player	Well, I agree now they're up to something. The question is what...? I don't think we're going to find out much from the alchmists, though.
+1	line	Bonafido	So what are you going to do?
+1	line	Player	I shall see if I can't fix it up and see for myself what is going on. Should be able to get a good reward from them. But don't worry, I'll make sure your efforts don't go unpaid.
+1	line	Bonafido	You're a star among builders, that ya are!
+1	action	end
+0	section	Talking to Effigy after entering the Tower
+1	line	Player	Hello again, Effigy. I've had a nose around the tower. There's a lot of work to do!
+1	line	Effigy	I know, I know. But think of how fantastical it will be when it is finished!
+1	line	Player	Why fantastical? What are all those pipes and machines in there? What are you trying to do?
+1	line	Effigy	Fantastic weather we're having today!
+1	line	Player	But what are the-
+1	line	Effigy	The sun is shining... The birds are singing...
+1	line	Player	Hey! Answer my question!
+1	line	Effigy	Hehe. Just fix the tower. You'll soon see.
+1	line	Player	You'd best pay me well for this.
+1	action	end
+0	section	Talking to 'Transmute' the Alchemist after entering the Tower
+1	line	Player	I must say, the inside of the tower is really something to behold.
+1	line	Transmute	Why, thanks. You'll find various pieces of machinery to fix in there. You can no doubt find the materials in there, too.
+1	action	end
+0	section	Talking to 'Currency' the Alchemist after entering the Tower
+1	line	Player	Hi, Currency. Got any spare cash?
+1	line	Currency	Nope; you?
+1	line	Player	No, do you?
+1	line	Currency	Afraid not. You?
+1	line	Player	I'm going to stop before this gets violent.
+1	action	end
+0	section	Searching the crates for materials
+1	cond	Failing to find materials:
+2	action	(Player performs the "No" emote)
+1	action	(Player performs the "Yes" emote)
+0	section	Fixing the pressure machine
+1	box	The machine appears unfinished. You're going to need some materials:
+1	box	4 coloured balls, 3 pieces of metal sheeting and 4 valve wheels.
+1	cond	If missing materials:
+2	option	Yes
+3	box	You need [materials] to fix the machine.
+3	action	end
+2	option	No
+3	action	end
+1	select	Construct it?
+1	option	Yes
+2	action	(The player builds the machine.)
+2	box	You built the machine! It still needs calibrating, though.
+2	box	The pressure seems to be affected by holes in the pipes. Perhaps you can block them up with the balls.
+2	action	
+2	cond	Pipe [1-4]: The leak is blocked!
+2	cond	After filling all 4 pipes with water:
+3	box	The machine is working!
+3	cond	If this was the last part of the tower to fix:
+4	box	The tower should be in working order now! Best go and tell Effigy!
+3	action	end
+1	option	No
+2	action	end
+0	section	Fixing the pipe system
+1	box	The machine appears unfinished. You're going to need some materials:
+1	box	6 rivets, 4 metal pipes and 5 metal rings.
+1	cond	If missing materials:
+2	option	Yes
+3	box	You need [materials] to fix the machine.
+3	action	end
+2	option	No
+3	action	end
+1	select	Construct it?
+1	option	Yes
+2	action	(The player builds the machine.)
+2	box	You built the machine! It still needs calibrating, though.
+2	action	
+2	cond	After connecting the pipes:
+3	box	The machine is working!
+3	cond	If this was the last part of the tower to fix:
+4	box	The tower should be in working order now! Best go and tell Effigy!
+3	action	end
+1	option	No
+2	action	end
+0	section	Fixing the strange cage
+1	box	The cage appears unfinished. You're going to need some materials:
+1	box	5 metal bars and 4 bottles of binding fluid.
+1	cond	If missing materials:
+2	option	Yes
+3	box	You need [materials] to fix the machine.
+3	action	end
+2	option	No
+3	action	end
+1	select	Construct it?
+1	option	Yes
+2	action	(The player builds the cage.)
+2	box	You built the cage!
+2	box	Some of the bars need to be completed - you need to get the sizes correct, though.
+2	action	
+2	cond	You fix the part of the cage!
+2	cond	After fully fixing the cage:
+3	box	The cage is complete!
+3	cond	If this was the last part of the tower to fix:
+4	box	The tower should be in working order now! Best go and tell Effigy!
+3	action	end
+1	option	No
+2	action	end
+0	section	Finished work
+0	section	Returning to the alchemists
+1	line	Player	I've fixed all the machinery.
+1	line	Effigy	Hurrah! Splendiferous!
+1	line	Player	Now listen, what does it all do? Why are you-
+1	line	Effigy	Years of devoted work; it's complete!
+1	line	Effigy	Hey, guys! It's finished!
+1	line	Transmute	At last! Our work is complete!
+1	line	Currency	I can almost taste the riches!
+1	line	Effigy	To the top of the tower, fellow alchemists!
+1	line	Player	Wait! What about-
+1	line	Player	Why does nobody listen? Best if I follow them, I suppose.
+1	action	end
+0	section	Talking to Bonafido
+1	line	Player	I'm really getting annoyed with those alchemists.
+1	line	Bonafido	Why?
+1	line	Player	Well, I completed the tower and I still have no idea what it does, and then as soon as I tell Effigy of my hard work, he doesn't say one word of thanks and legs it off into the tower!
+1	line	Bonafido	Well, I'll be a rabbit in da eyes of a fox! Best ya chase after 'im then and get us our dosh! Don't you do a runner, now!
+1	line	Player	Don't worry, I'm not about to let Effigy get away with treating us builders like this!
+1	action	end
+0	section	Going to the top of the tower
+1	line	Player	What on Gielinor is...
+1	line	Effigy	It is time, my friends! The culmination of our work is complete!
+1	line	Transmute	Long time indeed!
+1	line	Currency	Many hours we have worked!
+1	line	Effigy	A great many years of planning and preparation has brought us here, my fellow alchemists. Now we have... The Tower of Life! We can already create gold, we can already transform matter from one thing to
+1	line	Effigy	another, and now we have the ability to create life itself! We owe much to the power of Guthix, for without the life essence he left below ground, we would never have been able to bring this tower alive!
+1	line	Player	They're insane!
+1	line	Effigy	It begins! The first day of creation!
+1	line	Effigy	It worked!
+1	line	Currency	Marvellous!
+1	line	Player	How is this possible?
+1	line	Currency	It's alive!
+1	line	Effigy	We did it. A Homunculus!
+1	line	Transmute	Beautiful.
+1	line	Homunculus	Nwwooo! Whyyy? Where meee? Glarrraaa.
+1	line	Transmute	It can talk! A real success.
+1	line	Homunculus	Where me? Skin burn...arrgh...eyes hurt...let me go!
+1	line	Currency	Excellent, it can feel! It's self-aware. This is really a great day.
+1	line	Homunculus	Whyeee cage? Argh...please help me! Graaahhh!
+1	line	Player	This is terrible, you must do something!
+1	line	Effigy	Ah, it's our helper. Thank you for fixing the tower; we will reward you greatly.
+1	line	Player	I don't want a reward, just let it go. Can't you see it's in pain?
+1	line	Effigy	Don't worry. It has no soul; it has no worth.
+1	line	Transmute	Yes, it's just an experiment in alchemy.
+1	line	Currency	The creature must be grateful for his creation.
+1	line	Homunculus	You create hurt. Not fair, let me free!
+1	line	Currency	Silence, creature!
+1	line	Effigy	Yes, be still and quit your moaning.
+1	line	Homunculus	No, mean, nasty peoples.
+1	line	Effigy	Shut up, you pathetic being.
+1	line	Homunculus	Arghh! Let me go!
+1	line	Effigy	Don't make us hurt you.
+1	line	Player	Stop this! Let it go!
+1	line	Homunculus	So horrible beings. Daarrrr!
+1	line	Player	It's getting angry.
+1	line	Effigy	You should know your place, adventurer. This is no concern of yours now.
+1	line	Currency	You should be satisfied and leave. Then we can begin our experiments.
+1	line	Player	Not wise.
+1	line	Homunculus	Arghhh!
+1	line	Effigy	Oh no...
+1	line	Transmute	Get out of the tower before it's too late!
+1	line	Currency	Run away!
+1	line	Effigy	Flee for your lives!
+1	line	Player	They've run away. I must go confront those alchemists downstairs.
+1	action	end
+0	section	Talking to Bonafido again
+1	line	Player	You won't BELIEVE what I just saw!
+1	line	Bonafido	What? What?
+1	line	Player	That tower is... a tower of life! I just witnessed with my very own eyes the creation of an homunculus!
+1	line	Bonafido	A homanque-what?
+1	line	Player	Homunculus! They have found a way of creating life itself, but the creature they have made is not a happy being.
+1	line	Bonafido	And our money?
+1	line	Player	Are you listening at all? This creature is very dangerous, it needs to be stopped! And fast!
+1	line	Bonafido	I'm glad you've got the money sorted.
+1	action	end
+0	section	Confronting the alchemists
+0	section	'Transmute' the Alchemist
+1	line	Player	I can't believe what you guys have done.
+1	line	Transmute	Marvellous.
+1	line	Player	No. Scary!
+1	line	Transmute	That too.
+1	action	end
+0	section	'Currency' the Alchemist
+1	line	Player	That is one very sad creature.
+1	line	Currency	It'll be alright; it just needs a pat on the back.
+1	line	Player	Why am I suddenly glad that you're not responsible for sorting out this mess?
+1	action	end
+0	section	Effigy
+1	line	Player	Effigy!
+1	line	Effigy	I know, I know. This is a truly dangerous creation, of all proportions.
+1	line	Player	I hope you learn from this.
+1	line	Effigy	I will, I will. Next time we'll use a stronger cage.
+1	line	Player	What?
+1	line	Effigy	A bad joke.
+1	line	Player	I'll just ignore that. So, what about that Homunculus up there? You can't just leave it.
+1	line	Effigy	Maybe you could go have a talk with it?
+1	line	Player	Why me? You created it!
+1	line	Effigy	Pleeeaaase.
+1	line	Player	No.
+1	line	Effigy	Pretty please with a cherry on top?
+1	line	Player	No way!
+1	line	Effigy	I'll make sure you're compensated. You won't be forgotten for this!
+1	line	Player	Why do I get the feeling I'm doomed to go face that creature on my own?
+1	line	Effigy	Good on you! I knew you would help us!
+1	line	Player	Oh well. They do say that experience teaches fools.
+1	action	end
+0	section	Talking to Effigy again
+1	line	Player	Hi, Effigy.
+1	line	Effigy	Have you spoken to our wondrously fabulous creation yet?
+1	line	Player	I haven't spoken to it at all. Give me a chance. And please stop your overuse of adjectives.
+1	line	Effigy	What a hideously, unforgiveable and insensitive combination of dialogue to supply to a friend!
+1	line	Player	I swear you'll get a knuckle sandwich sometime soon if you don't shut up.
+1	line	Effigy	Charming.
+1	action	end
+0	section	Talking to 'Transmute' the Alchemist again
+1	line	Player	I'm off to talk to the Homunculus.
+1	line	Transmute	Rather you than me. Can't say you look like you'll make it out alive.
+1	line	Player	Thanks for the support. How about saying something encouraging.
+1	line	Transmute	Like?
+1	line	Player	I don't know. How about 'You can do it!' or 'That Homunculus is in for a surprise'.
+1	line	Transmute	So, you want me to lie?
+1	line	Player	Forget it.
+1	action	end
+0	section	Talking to 'Currency' the Alchemist again
+1	line	Player	Okay, I'm going to go chat with the Homunculus.
+1	line	Currency	Very good.
+1	line	Currency	Could you do us a favour?
+1	line	Player	I probably have enough on my plate, but go ahead; what?
+1	line	Currency	Could you ask it a question?
+1	line	Player	Which is?
+1	line	Currency	Does it have any spare cash?
+1	line	Player	Let me think how I can phrase this...
+1	line	Player	No.
+1	line	Currency	Oh.
+1	action	end
+0	section	Freeing the Homunculus
+0	section	Returning to it
+1	line	Player	Hello?
+1	line	Homunculus	Leeet mwwe free. Argyyghh.
+1	line	Player	It's okay, I'm here to help you.
+1	line	Homunculus	Lieees. Grahhh
+1	line	Player	No, honest. I helped the alchemists, but I had no idea what their plans involved.
+1	line	Homunculus	Arggh, so alchemist create me now I trapped for experiements. But still I confused.
+1	line	Player	About what?
+1	line	Homunculus	Me see logic, feeeel magic. A mix of the two.
+1	line	Player	Hmmm. A creature created of logic and magic.
+1	line	Player	Don't fear. I shall fix your mind!
+1	line	Homunculus	No so sure it is easy to do. No one canna 'elp. Arghhh.
+1	line	Player	Watch me.
+1	box	You must now make sense of the Homunculus's mind. Force him to either follow the line of logic or the line of magic.
+1	line	Player	You tell me that you're confused, so ask me some questions!
+1	line	Homunculus	Ah, please...
+1	action	Choosing any one of the three options will give three new options in the same order and change the Homunculus' sanity meter. They will eventually loop.
+1	cond	First set:
+2	select	How can I make fire appear at my fingertips?
+2	option	Get some logs and a tinderbox.
+2	option	With the aid of 5 fire runes.
+2	option	That's impossible! No one can do that!
+1	cond	Second set:
+2	select	How do dragons breathe fire?
+2	option	Not too sure, I've never seen it happen.
+2	option	With the help of the magical dragonstones!
+2	option	By ignition of gas in their belly as they exhale.
+1	cond	Fourth set:
+2	select	What do people do, day-in, day-out?
+2	option	Runecraft, enchant jewellery, perform alchemy.
+2	option	Eat, sleep, nothing that exciting.
+2	option	Fletching, Crafting, Smithing.
+1	cond	Fifth set:
+2	select	What could I do with unwanted bones?
+2	option	Bury them.
+2	option	I'd like to think you wouldn't be carrying bones around.
+2	option	Turn them into bananas or peaches!
+1	cond	Sixth set:
+2	select	What's the best way to travel?
+2	option	I'm not really much of a traveller, sorry.
+2	option	Run, run as fast as you can.
+2	option	Depends where you are headed, but teleport spells are a safe bet.
+1	cond	Seventh set:
+2	select	I hear people whisper of potions...
+2	option	Yes, you can make magic potions to boost your skills.
+2	option	People mix together ingredients in vials. The nutrients will help you.
+2	option	Yes, liquid-filled vials. Big deal.
+1	cond	Eighth set:
+2	select	How are runes created?
+2	option	By harnessing the power of the gods!
+2	option	Never seen one personally.
+2	option	Take some essence to an altar and use a talisman.
+1	cond	Ninth set:
+2	select	Can people move things with the power of the mind?
+2	option	Perhaps. I've never seen it myself, though.
+2	option	Yep, you can use the Telekinetic Grab spell.
+2	option	Sure. Use your brain to tell someone to move it!
+1	cond	Tenth set:
+2	select	How can I possibly exist?
+2	option	Through the power of alchemy.
+2	option	It's beyond me!
+2	option	It's a simple case of combining materials.
+1	cond	Eleventh set:
+2	select	Explain those flashing sparks that scared the alchemists.
+2	option	You have special powers - no surprise seeing how you were created.
+2	option	Coincidence - there is a lot of loose metal around.
+2	option	Yeah, they were cool! Nice one.
+1	cond	Twelfth set:
+2	select	I want to learn more - what should I study?
+2	option	Try some Mining followed by Smithing.
+2	option	How about Magic and Runecrafting?
+2	option	That's up to you; depends on what you find interesting.
+1	cond	Thirteenth set:
+2	select	If I can reach out far enough I can grab the sun.
+2	option	Don't be silly! You'd get burnt!
+2	option	Can't see why not, anything is possible.
+2	option	Well the sun is not actually there, it's where it used to be!
+1	cond	Fourteenth set:
+2	select	Am I a creature of magic or a creature of logic?
+2	option	Everything has a reason, even if you don't know what it is.
+2	option	Probably a bit of both.
+2	option	Your very existense speaks of mystical forces.
+1	cond	Fifteenth set:
+2	select	Which do you believe in?
+2	option	Magic.
+2	option	I'm too laid back to really care, mate.
+2	option	Logic.
+1	action	When the Homunculus' mind is fixed:
+1	line	Homunculus	That it! Make sense now, thank you!
+1	line	Player	I decided to root for magic.
+1	line	Homunculus	No does matter which you chose. Me needed organise my thoughts. I see there is truth in both.
+1	line	Player	Okay.
+1	line	Homunculus	Now we go scare alchemies - they have been wrong to do this! Although I have life, they mustn't go about this again.
+1	line	Player	Sounds like a good plan. Can you get out of that cage?
+1	line	Homunculus	Easy. You run down and I watching from here. I surprise right moment.
+1	line	Player	Okay.
+1	action	end
+0	section	Leaving and talking to the Homunculus before helping it
+1	line	Player	It's me again, Homunculus.
+1	line	Player	Do you remember?
+1	line	Homunculus	Stranger... nooo, help meee.
+1	line	Player	Stay calm, let's do this.
+1	action	above
+0	section	Talking to the Homunculus again
+1	line	Player	How are you?
+1	line	Homunculus	Better. You been mine angel. I now have the understanding I need.
+1	line	Player	My pleasure.
+1	line	Homunculus	Please, alchemists you speak, me appear to surprise.
+1	line	Player	I'm not sure I understand, but okay, I will go have a word with them.
+1	line	Homunculus	Thank you.
+1	action	end
+0	section	Talking to Bonafido again
+1	line	Player	Hi, Bonafido.
+1	line	Bonafido	Hi. How's the tower?
+1	line	Player	Finished, really.
+1	line	Bonafido	Looks like we're out of a job then.
+1	line	Player	Oh, I wouldn't worry about it. There are frequently new buildings required around Gielinor. I'm sure your services will be called upon again.
+1	action	end
+0	section	Scaring the alchemists
+0	section	'Transmute' the Alchemist
+1	line	Player	Well, I've sat down and had a good chat with the Homunculus.
+1	line	Transmute	And?
+1	line	Player	You'll soon find out!
+1	line	Transmute	Huh?
+1	action	end
+0	section	'Currency' the Alchemist
+1	line	Player	The Homunculus is a bit better off now.
+1	line	Currency	Excellent. So we can go back in.
+1	line	Player	Not just yet.
+1	action	end
+0	section	Effigy
+1	line	Player	Effigy, I need a word with you.
+1	line	Effigy	You've killed it?
+1	line	Player	Not quite...
+1	line	Homunculus	Boo.
+1	line	Transmute	Oh no, look!
+1	line	Currency	Arrghhh! Have mercy!
+1	line	Effigy	You set it free. Oh, please don't hurt me!
+1	line	Homunculus	Hahaha.
+1	line	Homunculus	Me not hurt. Now tell. What you plans? What you do with me?
+1	line	Effigy	Please, we just wanted to experiment. We wanted to create life. There's a dungeon under the tower. Long ago we found a strange source of energy that we believe was left behind by the great Guthix. He used to
+1	line	Effigy	create life with such ease. We realised we should be able to use this powerful substance, but we needed to bring together our magic along with the logical construction of the builders. It seemed through our experiments that
+1	line	Effigy	even magic needs a certain level of rules and laws to work.
+1	line	Homunculus	Bad play with. Naughty men. Go! Go, never return!
+1	line	Effigy	Right away, right away!
+1	line	Homunculus	Me look dungeon, {player}. Please meet there.
+1	action	end
+0	section	Finishing off
+0	section	Talking to the Homunculus in the basement
+1	line	Player	This place is bizarre!
+1	line	Homunculus	Me do know. Pleased you rescue.
+1	line	Player	My pleasure. So what is this place?
+1	line	Homunculus	They use essence of Guthix power. Create tower pump this from ground. Make me with godly power. Dangerous.
+1	line	Player	Oh dear, but you're okay now. You have this place to reside in.
+1	line	Homunculus	Thrank you. For reward you speak me, I makes monsters.

@@ -1,0 +1,67 @@
+# Agility Pyramid (Wiki "Agility Pyramid": 30 Agility, obstacle xp, completion bonus 300 + 8/level capped at 1,000).
+# Loc positions: decoded from the cache map (squares 52_44 main pyramid, 47_73 level 4 + top). The same loc type is
+# placed many times, so rows are keyed by loc name + the loc's own tile. Crossing ends (a/b) follow the hotspot
+# footprints and are guesses to confirm in game; the player is moved to whichever end is further away.
+# Coords are x,z,plane; "*" keeps the player's current x or z.
+#
+# obstacle <loc> <loc tile> <xp> <anim> <ticks> <end a> <end b> <fail class: cross|jump> <on fail: fall|hurt> <damage>
+# stairs   <loc> <loc tile> <dest>
+
+# Ground -> level 1
+stairs	agility_pyramid_steps1	3354,2831,0	3354,2833,1
+stairs	agility_pyramid_steps_top_hotspot	3354,2831,1	3354,2830,0
+
+# Level 1 (plane 1): north along the west side, east along the north, south down the east, west along the south.
+obstacle	agility_pyramid_low_wall	3354,2849,1	8	human_walk_style	2	*,2848,1	*,2850,1	cross	hurt	4
+obstacle	agility_pyramid_ledge_hotspot	3364,2851,1	52	human_walk_sidestepl	5	3363,*,1	3368,*,1	cross	fall	10
+obstacle	agility_pyramid_ledge_hotspot	3366,2851,1	52	human_walk_sidestepl	5	3363,*,1	3368,*,1	cross	fall	10
+obstacle	agility_pyramid_plank_start	3375,2845,1	56.4	human_walk_logbalance	5	*,2845,1	*,2840,1	cross	fall	10
+obstacle	agility_pyramid_plank_end	3375,2840,1	56.4	human_walk_logbalance	5	*,2845,1	*,2840,1	cross	fall	10
+obstacle	agility_pyramid_wallhang_start_hotspot	3372,2832,1	56.4	human_walk_sidestepl	5	3372,*,1	3367,*,1	cross	fall	8
+obstacle	agility_pyramid_wallhang_start_south_hotspot	3370,2831,1	56.4	human_walk_sidestepl	5	3372,*,1	3367,*,1	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_south_hotspot	3368,2831,1	56.4	human_walk_sidestepl	5	3372,*,1	3367,*,1	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_hotspot	3367,2832,1	56.4	human_walk_sidestepl	5	3372,*,1	3367,*,1	cross	fall	8
+obstacle	agility_pyramid_ledgebalance_start_south_hotspot	3362,2831,1	52	human_walk_sidestepl	5	3364,*,1	3359,*,1	cross	fall	10
+obstacle	agility_pyramid_ledgebalance_end_south_hotspot	3360,2831,1	52	human_walk_sidestepl	5	3364,*,1	3359,*,1	cross	fall	10
+stairs	agility_pyramid_steps1	3356,2833,1	3356,2835,2
+stairs	agility_pyramid_steps_top_hotspot	3356,2833,2	3356,2832,1
+
+# Level 2 (plane 2)
+obstacle	agility_pyramid_wallhang_start_hotspot	3357,2836,2	56.4	human_walk_sidestepl	5	*,2836,2	*,2841,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_start_west_hotspot	3356,2837,2	56.4	human_walk_sidestepl	5	*,2836,2	*,2841,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_west_hotspot	3356,2839,2	56.4	human_walk_sidestepl	5	*,2836,2	*,2841,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_hotspot	3357,2841,2	56.4	human_walk_sidestepl	5	*,2836,2	*,2841,2	cross	fall	8
+obstacle	agility_pyramid_jump_hotspot	3356,2847,2	22	agility_pyramid_gap_jump	2	*,2846,2	*,2849,2	jump	fall	8
+obstacle	agility_pyramid_wallhang_start_hotspot	3359,2849,2	56.4	human_walk_sidestepl	5	3359,*,2	3364,*,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_start_hotspot_ground	3360,2849,2	56.4	human_walk_sidestepl	5	3359,*,2	3364,*,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_hotspot_ground	3362,2849,2	56.4	human_walk_sidestepl	5	3359,*,2	3364,*,2	cross	fall	8
+obstacle	agility_pyramid_wallhang_end_hotspot	3364,2849,2	56.4	human_walk_sidestepl	5	3359,*,2	3364,*,2	cross	fall	8
+obstacle	agility_pyramid_ledge_hotspot	3372,2839,2	52	human_walk_sidestepl	5	*,2841,2	*,2836,2	cross	fall	10
+obstacle	agility_pyramid_ledge_hotspot	3372,2837,2	52	human_walk_sidestepl	5	*,2841,2	*,2836,2	cross	fall	10
+obstacle	agility_pyramid_low_wall	3370,2833,2	8	human_walk_style	2	3371,*,2	3369,*,2	cross	hurt	4
+obstacle	agility_pyramid_jump_hotspot	3364,2833,2	22	agility_pyramid_gap_jump	2	3366,*,2	3363,*,2	jump	fall	8
+stairs	agility_pyramid_steps1	3358,2835,2	3358,2837,3
+stairs	agility_pyramid_steps_top_hotspot	3358,2835,3	3358,2834,2
+
+# Level 3 (plane 3)
+obstacle	agility_pyramid_low_wall	3358,2839,3	8	human_walk_style	2	*,2838,3	*,2840,3	cross	hurt	4
+obstacle	agility_pyramid_ledgebalance_start_west_hotspot	3358,2843,3	52	human_walk_sidestepl	5	*,2842,3	*,2847,3	cross	fall	10
+obstacle	agility_pyramid_ledgebalance_end_west_hotspot	3358,2845,3	52	human_walk_sidestepl	5	*,2842,3	*,2847,3	cross	fall	10
+obstacle	agility_pyramid_jump_hotspot	3370,2841,3	22	agility_pyramid_gap_jump	2	*,2843,3	*,2840,3	jump	fall	8
+obstacle	agility_pyramid_plank_start	3370,2835,3	56.4	human_walk_logbalance	5	3370,*,3	3365,*,3	cross	fall	10
+obstacle	agility_pyramid_plank_end	3365,2835,3	56.4	human_walk_logbalance	5	3370,*,3	3365,*,3	cross	fall	10
+# Level 3 -> level 4: the plane-3 stairs lead into the separate upper area (3034-3055, 4687-4705).
+stairs	agility_pyramid_steps1	3360,2837,3	3040,4695,2
+stairs	agility_pyramid_steps_top_hotspot	3040,4693,2	3360,2836,3
+stairs	agility_pyramid_steps1	3040,4693,1	3040,4695,2
+
+# Level 4 (upper area, plane 2)
+obstacle	agility_pyramid_jump_hotspot	3040,4697,2	22	agility_pyramid_gap_jump	2	*,4696,2	*,4699,2	jump	fall	8
+obstacle	agility_pyramid_low_wall	3042,4701,2	8	human_walk_style	2	3041,*,2	3043,*,2	cross	hurt	4
+obstacle	agility_pyramid_jump_hotspot	3048,4695,2	22	agility_pyramid_gap_jump	2	*,4697,2	*,4694,2	jump	fall	8
+obstacle	agility_pyramid_low_wall	3047,4693,2	8	human_walk_style	2	3048,*,2	3046,*,2	cross	hurt	4
+stairs	agility_pyramid_steps1	3042,4695,2	3042,4697,3
+stairs	agility_pyramid_steps_top_hotspot	3042,4695,3	3042,4694,2
+
+# Top (upper area, plane 3): climbing rocks (pyramid top, Pyramid.kt) and the doorway down are scripted.
+obstacle	agility_pyramid_jump_hotspot	3046,4697,3	22	agility_pyramid_gap_jump	2	*,4699,3	*,4696,3	jump	fall	8

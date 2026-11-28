@@ -1,0 +1,135 @@
+# Brimhaven Agility Arena (Wiki "Brimhaven Agility Arena"). Generated from the cache map (squares 42-44 x 149-150,
+# arena plane 3, floor plane 0): 25 pillars on an 11-tile grid, x 2761..2805, z 9546..9590 (2805,9590 is the ladder).
+# Coords are x,z,plane. Landing tiles are the platform tile next to the next pillar; fall tiles are the obstacle middle
+# on the floor below. All guessed from geometry; confirm in game.
+#
+# cross     <loc> <loc tile> <family (xp/level/anim in BrimhavenTuning)> <landing> <fall>
+# wall      <loc> <loc tile> <side a> <side b>
+# climb     <loc> <loc tile> <dest>                      (floor ropes back up onto a pillar)
+# dispenser <loc> <loc tile>                             (ticket dispensers, one active at a time)
+# trap      <kind> <loc tile> <x,z;x,z...>               (walk-over traps; tiles projected onto the walkway)
+climb	agilityarena_climbingrope	2760,9557,0	2760,9557,3
+climb	agilityarena_climbingrope	2760,9568,0	2760,9568,3
+climb	agilityarena_climbingrope	2760,9579,0	2760,9579,3
+climb	agilityarena_climbingrope	2761,9545,0	2761,9545,3
+climb	agilityarena_climbingrope	2761,9591,0	2761,9591,3
+climb	agilityarena_climbingrope	2771,9557,0	2771,9557,3
+climb	agilityarena_climbingrope	2771,9568,0	2771,9568,3
+climb	agilityarena_climbingrope	2771,9579,0	2771,9579,3
+climb	agilityarena_climbingrope	2772,9545,0	2772,9545,3
+climb	agilityarena_climbingrope	2772,9591,0	2772,9591,3
+climb	agilityarena_climbingrope	2783,9545,0	2783,9545,3
+climb	agilityarena_climbingrope	2783,9556,0	2783,9556,3
+climb	agilityarena_climbingrope	2783,9580,0	2783,9580,3
+climb	agilityarena_climbingrope	2783,9591,0	2783,9591,3
+climb	agilityarena_climbingrope	2784,9568,0	2784,9568,3
+climb	agilityarena_climbingrope	2794,9545,0	2794,9545,3
+climb	agilityarena_climbingrope	2794,9591,0	2794,9591,3
+climb	agilityarena_climbingrope	2795,9557,0	2795,9557,3
+climb	agilityarena_climbingrope	2795,9568,0	2795,9568,3
+climb	agilityarena_climbingrope	2795,9579,0	2795,9579,3
+climb	agilityarena_climbingrope	2805,9545,0	2805,9545,3
+climb	agilityarena_climbingrope	2805,9591,0	2805,9591,3
+climb	agilityarena_climbingrope	2806,9557,0	2806,9557,3
+climb	agilityarena_climbingrope	2806,9568,0	2806,9568,3
+climb	agilityarena_climbingrope	2806,9579,0	2806,9579,3
+cross	agilityarena_handholds	2759,9559,3	hand	2761,9567,3	2759,9562,0
+cross	agilityarena_handholds	2759,9566,3	hand	2761,9558,3	2759,9562,0
+cross	agilityarena_handholds	2785,9544,3	hand	2793,9546,3	2788,9544,0
+cross	agilityarena_handholds	2785,9592,3	hand	2793,9590,3	2788,9592,0
+cross	agilityarena_handholds	2792,9544,3	hand	2784,9546,3	2788,9544,0
+cross	agilityarena_handholds	2792,9592,3	hand	2784,9590,3	2788,9592,0
+cross	agilityarena_ledgebalance	2764,9546,3	ledge	2771,9546,3	2766,9546,0
+cross	agilityarena_ledgebalance	2764,9590,3	ledge	2771,9590,3	2766,9590,0
+cross	agilityarena_ledgebalance	2797,9546,3	ledge	2804,9546,3	2799,9546,0
+cross	agilityarena_ledgebalance2	2769,9546,3	ledge	2762,9546,3	2766,9546,0
+cross	agilityarena_ledgebalance2	2769,9590,3	ledge	2762,9590,3	2766,9590,0
+cross	agilityarena_ledgebalance2	2802,9546,3	ledge	2795,9546,3	2799,9546,0
+cross	agilityarena_logbalance1	2764,9579,3	log	2771,9579,3	2766,9579,0
+cross	agilityarena_logbalance1	2794,9587,3	log	2794,9580,3	2794,9584,0
+cross	agilityarena_logbalance1	2805,9554,3	log	2805,9547,3	2805,9551,0
+cross	agilityarena_logbalance3	2769,9579,3	log	2762,9579,3	2766,9579,0
+cross	agilityarena_logbalance3	2794,9582,3	log	2794,9589,3	2794,9584,0
+cross	agilityarena_logbalance3	2805,9549,3	log	2805,9556,3	2805,9551,0
+cross	agilityarena_monkeybars_end	2771,9570,3	bars	2772,9578,3	2771,9573,0
+cross	agilityarena_monkeybars_end	2771,9577,3	bars	2772,9569,3	2771,9573,0
+cross	agilityarena_monkeybars_end	2774,9545,3	bars	2782,9546,3	2777,9545,0
+cross	agilityarena_monkeybars_end	2781,9545,3	bars	2773,9546,3	2777,9545,0
+cross	agilityarena_monkeybars_end	2793,9559,3	bars	2794,9567,3	2793,9562,0
+cross	agilityarena_monkeybars_end	2793,9566,3	bars	2794,9558,3	2793,9562,0
+cross	agilityarena_pillar_top	2761,9549,3	pillar	2761,9556,3	2761,9551,0
+cross	agilityarena_pillar_top	2761,9554,3	pillar	2761,9547,3	2761,9551,0
+cross	agilityarena_pillar_top	2786,9568,3	pillar	2793,9568,3	2788,9568,0
+cross	agilityarena_pillar_top	2791,9568,3	pillar	2784,9568,3	2788,9568,0
+cross	agilityarena_pillar_top	2805,9571,3	pillar	2805,9578,3	2805,9573,0
+cross	agilityarena_pillar_top	2805,9576,3	pillar	2805,9569,3	2805,9573,0
+cross	agilityarena_plank	2769,9557,3	plank	2762,9557,3	2766,9557,0
+cross	agilityarena_plank2	2769,9556,3	plank	2762,9557,3	2766,9556,0
+cross	agilityarena_plank2	2797,9589,3	plank	2804,9590,3	2799,9589,0
+cross	agilityarena_plank3	2764,9556,3	plank	2771,9557,3	2766,9556,0
+cross	agilityarena_plank3	2764,9557,3	plank	2771,9557,3	2766,9557,0
+cross	agilityarena_plank3	2764,9558,3	plank	2771,9557,3	2766,9558,0
+cross	agilityarena_plank3	2769,9558,3	plank	2762,9557,3	2766,9558,0
+cross	agilityarena_plank3	2797,9590,3	plank	2804,9590,3	2799,9590,0
+cross	agilityarena_plank3	2797,9591,3	plank	2804,9590,3	2799,9591,0
+cross	agilityarena_plank3	2802,9589,3	plank	2795,9590,3	2799,9589,0
+cross	agilityarena_plank3	2802,9590,3	plank	2795,9590,3	2799,9590,0
+cross	agilityarena_plank3	2802,9591,3	plank	2795,9590,3	2799,9591,0
+cross	agilityarena_ropebalance	2772,9559,3	rope	2772,9567,3	2772,9562,0
+cross	agilityarena_ropebalance	2772,9566,3	rope	2772,9558,3	2772,9562,0
+cross	agilityarena_ropebalance	2783,9581,3	rope	2783,9589,3	2783,9584,0
+cross	agilityarena_ropebalance	2783,9588,3	rope	2783,9580,3	2783,9584,0
+cross	agilityarena_ropebalance	2794,9548,3	rope	2794,9556,3	2794,9551,0
+cross	agilityarena_ropebalance	2794,9555,3	rope	2794,9547,3	2794,9551,0
+cross	agilityarena_ropeswing	2766,9569,3	swing	2771,9568,3	2768,9568,0
+cross	agilityarena_ropeswing	2767,9567,3	swing	2762,9568,3	2764,9567,0
+cross	agilityarena_ropeswing	2804,9584,3	swing	2805,9589,3	2804,9586,0
+cross	agilityarena_ropeswing	2806,9585,3	swing	2805,9580,3	2805,9582,0
+dispenser	agility_ticketpillar	2761,9546,3
+dispenser	agility_ticketpillar	2761,9557,3
+dispenser	agility_ticketpillar	2761,9568,3
+dispenser	agility_ticketpillar	2761,9579,3
+dispenser	agility_ticketpillar	2761,9590,3
+dispenser	agility_ticketpillar	2772,9546,3
+dispenser	agility_ticketpillar	2772,9557,3
+dispenser	agility_ticketpillar	2772,9579,3
+dispenser	agility_ticketpillar	2772,9590,3
+dispenser	agility_ticketpillar	2783,9546,3
+dispenser	agility_ticketpillar	2783,9579,3
+dispenser	agility_ticketpillar	2783,9590,3
+dispenser	agility_ticketpillar	2794,9546,3
+dispenser	agility_ticketpillar	2794,9590,3
+dispenser	agility_ticketpillar	2805,9546,3
+dispenser	agility_ticketpillar	2805,9557,3
+dispenser	agility_ticketpillar	2805,9568,3
+dispenser	agility_ticketpillar	2805,9579,3
+dispenser	agilityarena_poisondarts	2772,9568,3
+dispenser	agilityarena_poisondarts	2783,9557,3
+dispenser	agilityarena_poisondarts	2783,9568,3
+dispenser	agilityarena_poisondarts	2794,9557,3
+dispenser	agilityarena_poisondarts	2794,9568,3
+dispenser	agilityarena_poisondarts	2794,9579,3
+trap	blade	2761,9584,3	2761,9584
+trap	blade	2761,9585,3	2761,9585
+trap	blade	2783,9551,3	2783,9551
+trap	blade	2783,9552,3	2783,9552
+trap	blade	2788,9579,3	2788,9579
+trap	blade	2789,9579,3	2789,9579
+trap	blades	2777,9556,3	2777,9557;2778,9557;2779,9557
+trap	blades	2777,9580,3	2777,9579;2778,9579;2779,9579
+trap	blades	2782,9573,3	2783,9573;2783,9574;2783,9575
+trap	pad	2772,9584,3	2772,9584
+trap	pad	2772,9585,3	2772,9585
+trap	pad	2799,9557,3	2799,9557
+trap	pad	2799,9579,3	2799,9579
+trap	pad	2800,9557,3	2800,9557
+trap	pad	2800,9579,3	2800,9579
+trap	spikes	2761,9573,3	2761,9573
+trap	spikes	2761,9574,3	2761,9574
+trap	spikes	2772,9551,3	2772,9551
+trap	spikes	2772,9552,3	2772,9552
+trap	spikes	2799,9568,3	2799,9568
+trap	spikes	2800,9568,3	2800,9568
+wall	agilityarena_lowwall	2777,9590,3	2776,9590,3	2779,9590,3
+wall	agilityarena_lowwall	2783,9562,3	2783,9561,3	2783,9564,3
+wall	agilityarena_lowwall	2805,9562,3	2805,9561,3	2805,9564,3

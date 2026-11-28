@@ -64,7 +64,8 @@ for raw in text.splitlines():
             rows.append((depth, kind, arg))
             break
     else:
-        sp = re.match(r"^'''([^:']+):'''\s*(.*)$", body)
+        body = re.sub(r"</?nowiki>", "", body)
+        sp = re.match(r"^'''(.+?):'''\s*(.*)$", body)
         if sp:
             rows.append((depth, "line", clean(sp.group(1)), clean(sp.group(2))))
 
