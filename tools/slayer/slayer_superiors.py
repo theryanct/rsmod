@@ -60,7 +60,7 @@ for chunk in table.split("\n|-")[1:]:
     if not norm or not sup or not sup["ids"]:
         skipped.append((normal, superior, "no npc ids"))
         continue
-    cats = [c for c in norm["cats"] if c in categories]
+    cats = sorted(c for c in norm["cats"] if c in categories)
     if not cats:
         skipped.append((normal, superior, "category not assigned"))
         continue

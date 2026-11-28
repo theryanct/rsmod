@@ -9,6 +9,7 @@ import org.rsmod.api.script.onNpcHit
 import org.rsmod.api.script.onOpNpcU
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.game.MapClock
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.PlayerList
@@ -24,7 +25,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  */
 class Gargoyles
 @Inject
-constructor(private val playerList: PlayerList) : PluginScript() {
+constructor(private val playerList: PlayerList, private val mapClock: MapClock) :
+    PluginScript() {
     override fun ScriptContext.startup() {
         for (gargoyle in GargoyleNpcs.all) {
             // Hits never take a gargoyle below 1 Hitpoint.
@@ -34,6 +36,7 @@ constructor(private val playerList: PlayerList) : PluginScript() {
                 }
             }
             onNpcHit(gargoyle) {
+                refreshSuperiorLife(npc, mapClock)
                 if (!hit.isFromPlayer || npc.hitpoints > SMASH_HP || npc.hitpoints <= 0) {
                     return@onNpcHit
                 }
