@@ -15,6 +15,8 @@ import org.rsmod.api.script.onOpHeld2
 import org.rsmod.api.script.onOpHeld3
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpNpc1
+import org.rsmod.api.script.onOpNpc3
+import org.rsmod.api.script.onOpNpc4
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -75,6 +77,14 @@ constructor(
             if (!isLocOpBound(circle, 1)) onOpLoc1(circle) { telejump(walkable(PURO_ARRIVAL)) }
         }
         if (!isLocOpBound(ImplingLocs.puro_portal, 1)) onOpLoc1(ImplingLocs.puro_portal) { telejump(walkable(ZANARIS)) }
+        for (op in 1..4) {
+            if (isNpcOpBound(ImplingNpcs.elnock, op)) continue
+            when (op) {
+                1 -> onOpNpc1(ImplingNpcs.elnock) { elnock(it.npc) }
+                3 -> onOpNpc3(ImplingNpcs.elnock) { buyJars(it.npc) }
+                4 -> onOpNpc4(ImplingNpcs.elnock) { exchange(it.npc) }
+            }
+        }
         onPlayerLogin {
             spawnPuroPuro()
             player.softTimer(ImplingTimers.world_spawn, WORLD_SPAWN_TICKS)
@@ -98,7 +108,11 @@ constructor(
         }
         anim(HunterSeqs.net_swing)
         delay(2)
-        val chance = (CATCH_BASE + (player.hunterLvl - required) * CATCH_PER_LEVEL).coerceAtMost(CATCH_MAX)
+        // Wiki (Mod Ash): 12% at level 1 to 98% at 99, +8 points barehanded or with a magic net.
+        val level = player.hunterLvl.coerceIn(1, 99)
+        val magic = ImplingObjs.nets[1] in player.worn || ImplingObjs.nets[1] in inv
+        val bonus = if (!net || magic) CATCH_BONUS else 0
+        val chance = 12 + (86 * (level - 1)) / 98 + bonus
         if (random.of(1, 100) > chance) {
             mes("You fail to catch the impling.")
             return
@@ -136,6 +150,66 @@ constructor(
     private fun ProtectedAccess.give(entry: ImplingData.Loot) {
         val count = if (entry.max > entry.min) random.of(entry.min, entry.max) else entry.min
         invAddGathered(ImplingObjs.byName.getValue(entry.obj), count)
+    }
+
+    /* Elnock Inquisitor (Wiki "Elnock Inquisitor", "Elnock's Exchange") */
+
+    private suspend fun ProtectedAccess.elnock(npc: Npc) {
+        if (vars[ImplingVarps.elnock] == 0) {
+            if (inv.freeSpace() < 2) {
+                startDialogue(npc) { chatNpc(neutral, "Make some room in your pack and I'll give you something to help.") }
+                return
+            }
+            vars[ImplingVarps.elnock] = 1
+            invAdd(inv, ImplingObjs.nets[0])
+            invAdd(inv, ImplingObjs.empty_jar, STARTER_JARS)
+            startDialogue(npc) {
+                chatNpc(happy, "Here, take a net and some jars to start you off. Catch me some implings!")
+            }
+            return
+        }
+        val pick = menu("Elnock Inquisitor", hotkeys = true, choices = listOf("Buy impling jars", "Exchange impling jars", "Nothing"))
+        when (pick) {
+            0 -> buyJars(npc)
+            1 -> exchange(npc)
+        }
+    }
+
+    /** Wiki: impling jars for 2,000 coins each (the daily 10-jar limit is not modelled). */
+    private suspend fun ProtectedAccess.buyJars(npc: Npc) {
+        val amount = countDialog("How many jars? (2,000 coins each)").coerceIn(0, MAX_BUY)
+        if (amount <= 0) return
+        val cost = amount * JAR_PRICE
+        if (invTotal(inv, ImplingObjs.coins) < cost) {
+            startDialogue(npc) { chatNpc(neutral, "That'll be ${"%,d".format(cost)} coins, which you don't have.") }
+            return
+        }
+        invDel(inv, ImplingObjs.coins, cost)
+        invAdd(inv, ImplingObjs.empty_jar, amount)
+    }
+
+    private suspend fun ProtectedAccess.exchange(npc: Npc) {
+        val labels = ImplingData.exchanges.map { it.label } + "Nothing"
+        val pick = menu("Elnock's Exchange", hotkeys = true, choices = labels)
+        val trade = ImplingData.exchanges.getOrNull(pick) ?: return
+        if (trade.anyJar) {
+            val jar = ImplingObjs.jars.firstOrNull { it in inv }
+            if (jar == null) {
+                startDialogue(npc) { chatNpc(neutral, "Bring me a jarred impling of any kind for three empty jars.") }
+                return
+            }
+            invDel(inv, jar, 1)
+            invAdd(inv, ImplingObjs.empty_jar, 3)
+            return
+        }
+        val needs = trade.jars.map { (type, count) -> ImplingObjs.jars[type - 1] to count }
+        if (needs.any { (jar, count) -> invTotal(inv, jar) < count }) {
+            startDialogue(npc) { chatNpc(neutral, "You don't have the jars for that: ${trade.label}.") }
+            return
+        }
+        for ((jar, count) in needs) invDel(inv, jar, count)
+        invAdd(inv, ImplingObjs.byName.getValue(trade.reward))
+        startDialogue(npc) { chatNpc(happy, "A pleasure doing business with you.") }
     }
 
     /* Spawns */
@@ -192,10 +266,11 @@ constructor(
 
     private companion object {
         const val BAREHANDED_EXTRA = 10
-        const val CATCH_BASE = 50
-        const val CATCH_PER_LEVEL = 3
-        const val CATCH_MAX = 95
+        const val CATCH_BONUS = 8
+        const val STARTER_JARS = 7
+        const val JAR_PRICE = 2000
         const val PURO_RESPAWN = 100
+        const val MAX_BUY = 1000
         const val PPM = 1_000_000
         const val WORLD_SPAWN_TICKS = 300
         const val WORLD_CHANCE = 6
@@ -219,6 +294,17 @@ internal object ImplingData {
     class Loot(val obj: String, val min: Int, val max: Int, val numerator: Int, val denominator: Int, val always: Boolean)
 
     class Imp(val type: Int, val name: String, val level: Int, val puroXp: Double, val worldXp: Double, val loot: List<Loot>)
+
+    class Exchange(val label: String, val jars: List<Pair<Int, Int>>, val reward: String, val anyJar: Boolean = false)
+
+    /** Wiki "Elnock's Exchange" (jar type 1 baby .. 7 nature). */
+    val exchanges: List<Exchange> =
+        listOf(
+            Exchange("Imp repellent (3 baby, 2 young, 1 gourmet)", listOf(1 to 3, 2 to 2, 3 to 1), "ii_imp_repellent"),
+            Exchange("Magic net (3 gourmet, 2 earth, 1 essence)", listOf(3 to 3, 4 to 2, 5 to 1), "ii_magic_butterfly_net"),
+            Exchange("Jar generator (3 essence, 2 eclectic, 1 nature)", listOf(5 to 3, 6 to 2, 7 to 1), "ii_jar_generator"),
+            Exchange("3 impling jars (any 1 jarred impling)", emptyList(), "ii_impling_jar", anyJar = true),
+        )
 
     val imps: List<Imp> by lazy {
         val input =
@@ -249,16 +335,20 @@ internal object ImplingData {
 }
 
 internal object ImplingNpcs : NpcReferences() {
+    val elnock = find("ii_elnock")
     val world = (1..11).map { find("ii_impling_type_$it") }
     val maze = (1..11).map { find("ii_impling_type_${it}_maze") }
 }
 
 internal object ImplingObjs : ObjReferences() {
     val empty_jar = find("ii_impling_jar")
+    val coins = find("coins")
     val jars = (1..11).map { find("ii_captured_impling_$it") }
     val nets = listOf(find("hunting_butterfly_net"), find("ii_magic_butterfly_net"))
     val byName: Map<String, ObjType> =
-        ImplingData.imps.flatMap { i -> i.loot.map { it.obj } }.distinct().associateWith { find(it) }
+        (ImplingData.imps.flatMap { i -> i.loot.map { it.obj } } + ImplingData.exchanges.map { it.reward })
+            .distinct()
+            .associateWith { find(it) }
 }
 
 internal object ImplingLocs : LocReferences() {
@@ -269,4 +359,16 @@ internal object ImplingLocs : LocReferences() {
 internal object ImplingTimers : TimerReferences() {
     /** Custom timer (65502, skilling range). */
     val world_spawn = find("hunter_impling_spawn")
+}
+
+/** Saved per character (skilling range 65944). */
+internal object ImplingVarpBuilds : org.rsmod.api.type.builders.varp.VarpBuilder() {
+    init {
+        build("hunter_elnock_starter")
+    }
+}
+
+internal object ImplingVarps : org.rsmod.api.type.refs.varp.VarpReferences() {
+    /** 1 once Elnock has handed out the starter net and jars. */
+    val elnock = find("hunter_elnock_starter")
 }
