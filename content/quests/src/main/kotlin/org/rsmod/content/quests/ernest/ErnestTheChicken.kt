@@ -20,6 +20,7 @@ import org.rsmod.content.quests.framework.carries
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.onLocOpLabel
 import org.rsmod.content.quests.framework.onNpcOpLabel
+import org.rsmod.content.quests.framework.passThroughWall
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
@@ -81,7 +82,7 @@ constructor(
                 onLocOpLabel(locTypes, lever, "Pull") { pullLever(index) }
             }
         }
-        onLocOpLabel(locTypes, ErnestLocs.door_ajar, "Open") { basementDoor(it) }
+        onLocOpLabel(locTypes, ErnestLocs.door_ajar, "Open") { passThroughWall(it) }
     }
 
     /* Lever puzzle */
@@ -113,19 +114,6 @@ constructor(
         }
     }
 
-    /** Through an open basement door: doors face east-west (rotation 0/2) or north-south. */
-    private suspend fun ProtectedAccess.basementDoor(door: BoundLocInfo) {
-        val at = door.coords
-        val here = player.coords
-        val dest =
-            if (door.angleId % 2 == 0) {
-                at.translate(if (here.x < at.x) 1 else -1, 0)
-            } else {
-                at.translate(0, if (here.z < at.z) 1 else -1)
-            }
-        telejump(dest)
-        delay(1)
-    }
 
     private val ProtectedAccess.state: Int
         get() = player.questState(ERNEST)
@@ -222,18 +210,14 @@ constructor(
         invAddOrDrop(objRepo, ErnestObjs.closet_key)
     }
 
-    /** The closet door is locked without the key; with it, step through (east-facing wall). */
+    /** The closet door is locked without the key; with it, step through. */
     private suspend fun ProtectedAccess.closetDoor(door: BoundLocInfo) {
         if (!carries(ErnestObjs.closet_key)) {
             mes("This door is locked.")
             return
         }
-        val inside = door.coords
-        val outside = door.coords.translate(1, 0)
-        val dest = if (player.coords == inside) outside else inside
         mes("You unlock the door.")
-        telejump(dest)
-        delay(1)
+        passThroughWall(door)
     }
 
     companion object {
