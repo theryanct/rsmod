@@ -1,0 +1,212 @@
+package org.rsmod.content.skills.slayer
+
+import jakarta.inject.Inject
+import org.rsmod.api.config.refs.stats
+import org.rsmod.api.death.NpcKilledEvent
+import org.rsmod.api.player.output.mes
+import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.stat.baseSlayerLvl
+import org.rsmod.api.player.stat.statAdvance
+import org.rsmod.api.player.vars.intVarp
+import org.rsmod.api.script.onEvent
+import org.rsmod.api.script.onOpHeld1
+import org.rsmod.api.script.onOpHeld2
+import org.rsmod.api.script.onOpHeld3
+import org.rsmod.api.script.onOpHeld4
+import org.rsmod.api.script.onOpHeld5
+import org.rsmod.api.script.onOpNpc1
+import org.rsmod.api.script.onOpNpc2
+import org.rsmod.api.script.onOpNpc3
+import org.rsmod.api.script.onOpNpc4
+import org.rsmod.api.script.onOpNpc5
+import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.content.skills.slayer.SlayerData.Master
+import org.rsmod.game.entity.Npc
+import org.rsmod.game.entity.Player
+import org.rsmod.game.type.npc.NpcType
+import org.rsmod.game.type.npc.NpcTypeList
+import org.rsmod.game.type.obj.ObjTypeList
+import org.rsmod.plugin.scripts.PluginScript
+import org.rsmod.plugin.scripts.ScriptContext
+
+/**
+ * Slayer (PR1: Turael and Mazchna), data from the OSRS Wiki (`slayer.tsv`, tools/slayer):
+ * - Masters' "Talk-to"/"Assignment" ops give a task by wiki weight (amount from the wiki range),
+ *   respecting the task's Slayer/Combat level requirements and the master's combat requirement.
+ * - Kills of any npc in the task's category (credited to the hero via [NpcKilledEvent]) count
+ *   down the task and give the npc's wiki slayer xp.
+ * - Finishing a task gives the master's points (with streak milestones); Turael gives none and
+ *   doesn't touch the streak.
+ * - The enchanted gem's "Check" op reports the current task.
+ *
+ * Slayer level requirements to damage monsters are enforced by PvN combat (`slayer_levelrequire`).
+ */
+class Slayer
+@Inject
+constructor(
+    private val npcTypes: NpcTypeList,
+    private val objTypes: ObjTypeList,
+    private val xpMods: XpModifiers,
+) : PluginScript() {
+    private var Player.slayerTask: Int by intVarp(SlayerVarps.task)
+    private var Player.slayerTaskCount: Int by intVarp(SlayerVarps.count)
+    private var Player.slayerPoints: Int by intVarp(SlayerVarps.points)
+    private var Player.slayerStreak: Int by intVarp(SlayerVarps.streak)
+    private var Player.slayerTaskMaster: Int by intVarp(SlayerVarps.master)
+
+    private val categoriesById by lazy { SlayerData.categories.associateBy { it.id } }
+    private val mastersById by lazy { SlayerData.masters.associateBy { it.id } }
+    private val categoryNpcIds by lazy {
+        SlayerData.categories.associate { category ->
+            category.id to category.npcs.mapNotNull { SlayerNpcs.byName[it]?.id }.toSet()
+        }
+    }
+    private val xpByNpcId by lazy {
+        SlayerData.xp.mapNotNull { (name, xp) -> SlayerNpcs.byName[name]?.let { it.id to xp } }.toMap()
+    }
+
+    override fun ScriptContext.startup() {
+        for (master in SlayerData.masters) {
+            val npc = SlayerNpcs.byName.getValue(master.npc)
+            val ops = npcTypes[npc].op
+            val talk = ops.indexOfFirst { it.equals("Talk-to", ignoreCase = true) } + 1
+            val assign = ops.indexOfFirst { it.equals("Assignment", ignoreCase = true) } + 1
+            onNpcOp(npc, talk) { assignment(it, master, greet = true) }
+            onNpcOp(npc, assign) { assignment(it, master, greet = false) }
+        }
+        val gem = SlayerObjs.enchanted_gem
+        when (objTypes[gem].iop.indexOfFirst { it.equals("Check", ignoreCase = true) } + 1) {
+            1 -> onOpHeld1(gem) { checkTask() }
+            2 -> onOpHeld2(gem) { checkTask() }
+            3 -> onOpHeld3(gem) { checkTask() }
+            4 -> onOpHeld4(gem) { checkTask() }
+            5 -> onOpHeld5(gem) { checkTask() }
+        }
+        onEvent<NpcKilledEvent> { onKill(hero, npc) }
+    }
+
+    private fun ScriptContext.onNpcOp(
+        npc: NpcType,
+        op: Int,
+        action: suspend ProtectedAccess.(Npc) -> Unit,
+    ) {
+        when (op) {
+            1 -> onOpNpc1(npc) { this.action(it.npc) }
+            2 -> onOpNpc2(npc) { this.action(it.npc) }
+            3 -> onOpNpc3(npc) { this.action(it.npc) }
+            4 -> onOpNpc4(npc) { this.action(it.npc) }
+            5 -> onOpNpc5(npc) { this.action(it.npc) }
+        }
+    }
+
+    private suspend fun ProtectedAccess.assignment(npc: Npc, master: Master, greet: Boolean) {
+        val current = categoriesById[player.slayerTask]
+        if (current != null && player.slayerTaskCount > 0) {
+            val count = player.slayerTaskCount
+            startDialogue(npc) {
+                chatNpc(
+                    neutral,
+                    "You're still hunting ${current.display.lowercase()}; you have $count to go. " +
+                        "Come back when you've finished your task.",
+                )
+            }
+            return
+        }
+        if (player.combatLevel < master.combatReq) {
+            startDialogue(npc) {
+                chatNpc(
+                    neutral,
+                    "You're too weak for my tasks. Come back when you have a combat level of " +
+                        "${master.combatReq}.",
+                )
+            }
+            return
+        }
+        val eligible =
+            SlayerData.tasks.filter {
+                it.master == master.key &&
+                    player.baseSlayerLvl >= it.slayerReq &&
+                    player.combatLevel >= it.combatReq
+            }
+        if (eligible.isEmpty()) {
+            startDialogue(npc) { chatNpc(neutral, "I don't have anything for you right now.") }
+            return
+        }
+        val total = eligible.sumOf { it.weight }
+        var roll = random.of(TASK_ROLL) * total / TASK_ROLL
+        var task = eligible.last()
+        for (candidate in eligible) {
+            roll -= candidate.weight
+            if (roll < 0) {
+                task = candidate
+                break
+            }
+        }
+        val category = categoriesById.getValue(SlayerData.stableId(task.category))
+        val amount = random.of(task.min, task.max)
+        player.slayerTask = category.id
+        player.slayerTaskCount = amount
+        player.slayerTaskMaster = master.id
+        startDialogue(npc) {
+            if (greet) {
+                chatNpc(happy, "'Ello, and what are you after, then?")
+            }
+            chatNpc(happy, "Your new task is to kill $amount ${category.display.lowercase()}.")
+        }
+    }
+
+    private fun ProtectedAccess.checkTask() {
+        val current = categoriesById[player.slayerTask]
+        val count = player.slayerTaskCount
+        if (current == null || count <= 0) {
+            mes("You need something new to hunt.")
+            return
+        }
+        mes("You're assigned to kill ${current.display.lowercase()}; only $count more to go.")
+        mes("You have ${player.slayerPoints} Slayer reward points.")
+    }
+
+    private fun onKill(hero: Player, npc: Npc) {
+        val count = hero.slayerTaskCount
+        if (count <= 0) {
+            return
+        }
+        val npcs = categoryNpcIds[hero.slayerTask] ?: return
+        if (npc.id !in npcs) {
+            return
+        }
+        val xp = xpByNpcId[npc.id] ?: 0.0
+        if (xp > 0) {
+            hero.statAdvance(stats.slayer, xp * xpMods.get(hero, stats.slayer))
+        }
+        hero.slayerTaskCount = count - 1
+        if (count - 1 > 0) {
+            return
+        }
+        completeTask(hero)
+    }
+
+    private fun completeTask(hero: Player) {
+        val master = mastersById[hero.slayerTaskMaster]
+        hero.slayerTask = 0
+        hero.slayerTaskMaster = 0
+        if (master == null || master.points <= 0) {
+            hero.mes("You have completed your task! Return to a Slayer master for a new one.")
+            return
+        }
+        val streak = hero.slayerStreak + 1
+        hero.slayerStreak = streak
+        val points =
+            master.milestones.filter { streak % it.first == 0 }.maxByOrNull { it.first }?.second
+                ?: master.points
+        hero.slayerPoints = hero.slayerPoints + points
+        hero.mes(
+            "You've completed $streak tasks in a row and received $points points, giving you a " +
+                "total of ${hero.slayerPoints}; return to a Slayer master."
+        )
+    }
+
+    private companion object {
+        const val TASK_ROLL = 1_000_000
+    }
+}
