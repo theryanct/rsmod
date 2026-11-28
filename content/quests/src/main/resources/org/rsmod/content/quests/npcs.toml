@@ -96,3 +96,33 @@ coords = '0_47_50_21_18'
 [[spawn]]
 npc = 'sir_amik_varze'
 coords = '2_46_52_16_9'
+
+# Prince Ali Rescue: Hassan + Osman (Al Kharid), Leela (Draynor), Keli / Joe / the jailed Prince
+# (Draynor jail; multinpcs on princequest), the rescued Prince at the palace. Approximate.
+[[spawn]]
+npc = 'hassan'
+coords = '0_51_49_38_27'
+
+[[spawn]]
+npc = 'osman'
+coords = '0_51_49_22_44'
+
+[[spawn]]
+npc = 'leela'
+coords = '0_48_50_41_62'
+
+[[spawn]]
+npc = 'lady_keli'
+coords = '0_48_50_56_44'
+
+[[spawn]]
+npc = 'joe'
+coords = '0_48_50_53_46'
+
+[[spawn]]
+npc = 'prince_ali_prison'
+coords = '0_48_50_52_41'
+
+[[spawn]]
+npc = 'prince_ali_palace'
+coords = '0_51_49_22_27'

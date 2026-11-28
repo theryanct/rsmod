@@ -35,8 +35,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * the Goblin Village crates; orange dye = red + yellow dye; dye on goblin mail colours it.
  * Reward: gold bar, 200 Crafting xp, 5 QP.
  *
- * Aggie (Draynor) makes red / yellow / blue dye (3 redberries / 2 onions / 2 woad leaves + 5 coins)
- * so the dyes are obtainable; her full dialogue and other services are not done.
+ * The dyes come from Aggie (see `aggie/Aggie.kt`).
  */
 class GoblinDiplomacy
 @Inject
@@ -66,10 +65,6 @@ constructor(
         }
         onOpHeldU(GoblinDiplomacyObjs.blue_dye, GoblinDiplomacyObjs.goblin_armour) {
             dye(GoblinDiplomacyObjs.blue_dye, GoblinDiplomacyObjs.armour_blue)
-        }
-        for (aggie in GoblinDiplomacyNpcs.aggies) {
-            onNpcOpLabel(npcTypes, aggie, "Talk-to") { aggieDyes(it) }
-            onNpcOpLabel(npcTypes, aggie, "Dyes") { aggieDyes(it) }
         }
     }
 
@@ -165,45 +160,11 @@ constructor(
         mes("You dye the goblin armour.")
     }
 
-    private suspend fun ProtectedAccess.aggieDyes(npc: Npc) {
-        var pick = 0
-        startDialogue(npc) {
-            chatNpc(happy, "What can I help you with, dearie?")
-            pick =
-                choice4(
-                    "Can you make red dye for me? (3 redberries, 5 coins)",
-                    1,
-                    "Can you make yellow dye for me? (2 onions, 5 coins)",
-                    2,
-                    "Can you make blue dye for me? (2 woad leaves, 5 coins)",
-                    3,
-                    "Never mind.",
-                    0,
-                )
-        }
-        val (input, count, dye) =
-            when (pick) {
-                1 -> Triple(GoblinDiplomacyObjs.redberries, 3, GoblinDiplomacyObjs.red_dye)
-                2 -> Triple(GoblinDiplomacyObjs.onion, 2, GoblinDiplomacyObjs.yellow_dye)
-                3 -> Triple(GoblinDiplomacyObjs.woad_leaf, 2, GoblinDiplomacyObjs.blue_dye)
-                else -> return
-            }
-        if (!carries(input, count) || !carries(GoblinDiplomacyObjs.coins, DYE_PRICE)) {
-            startDialogue(npc) { chatNpc(neutral, "You don't have what I need for that, dearie.") }
-            return
-        }
-        invDel(inv, input, count)
-        invDel(inv, GoblinDiplomacyObjs.coins, DYE_PRICE)
-        invAdd(inv, dye)
-        startDialogue(npc) { chatNpc(happy, "There you go, dearie.") }
-    }
-
     companion object {
         const val STARTED = 1
         const val ORANGE = 3
         const val BLUE = 4
         const val COMPLETE = 6
-        private const val DYE_PRICE = 5
         private const val FIRST_TALK = "Talking to General Wartface or General Bentnoze"
         private const val BROWN_SECTION = "\"Brown\"-painted Goblin Armour"
 
@@ -223,7 +184,6 @@ constructor(
 
 internal object GoblinDiplomacyNpcs : NpcReferences() {
     val generals = listOf(find("general_wartface_green"), find("general_bentnoze_red"))
-    val aggies = listOf(find("aggie_1op"), find("aggie_2ops"))
 }
 
 internal object GoblinDiplomacyLocs : LocReferences() {
@@ -244,10 +204,6 @@ internal object GoblinDiplomacyObjs : ObjReferences() {
     val blue_dye = find("bluedye")
     val orange_dye = find("orangedye")
     val gold_bar = find("gold_bar")
-    val redberries = find("redberries")
-    val onion = find("onion")
-    val woad_leaf = find("woadleaf")
-    val coins = find("coins")
 
     val armours = listOf(goblin_armour, armour_orange, armour_blue)
 }

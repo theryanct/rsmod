@@ -282,4 +282,5 @@ private val GENDER_PAIRS =
         "lord" to "lady",
     )
 
-private val GENDERED = Regex("""\[([A-Za-z']+)/([A-Za-z']+)]""")
+/* "[lad/lass]", also "[lad/lass/kid]" (the third, neutral option is dropped). */
+private val GENDERED = Regex("""\[([A-Za-z']+)/([A-Za-z']+)(?:/[A-Za-z']+)?]""")
