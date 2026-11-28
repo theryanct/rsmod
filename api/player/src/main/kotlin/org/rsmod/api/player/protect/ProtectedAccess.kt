@@ -33,6 +33,7 @@ import org.rsmod.api.player.cinematic.Cinematic
 import org.rsmod.api.player.cinematic.MinimapState
 import org.rsmod.api.player.combatClearQueue
 import org.rsmod.api.player.dialogue.Dialogue
+import org.rsmod.api.player.events.StatAdvanced
 import org.rsmod.api.player.hit.modifier.NoopPlayerHitModifier
 import org.rsmod.api.player.hit.modifier.PlayerHitModifier
 import org.rsmod.api.player.hit.modifier.StandardPlayerHitModifier
@@ -1293,7 +1294,9 @@ public class ProtectedAccess(
         rate: Double = player.xpRate,
         globalRate: Double = player.globalXpRate,
     ): Int {
-        return player.statAdvance(stat, xp, rate, globalRate)
+        val gained = player.statAdvance(stat, xp, rate, globalRate)
+        if (xp > 0) context.eventBus.publish(StatAdvanced(player, stat, xp))
+        return gained
     }
 
     /** @see [org.rsmod.api.player.stat.statAdd] */
