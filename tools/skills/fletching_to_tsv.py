@@ -99,6 +99,16 @@ for r in recipes:
 # Recipes the Wiki recipe bucket lacks (Adamant bolts has no bucket row): (kind, product, qty, level, xp, ticks, anim, mats)
 MANUAL = [("combine", "xbows_crossbow_bolts_adamantite", 10, 61, 70, 1, "-",
            [("xbows_crossbow_bolts_adamantite_unfeathered", 10), ("feather", 10)])]
+# Crossbows (Wiki Recipe templates; kind "hammer" = limbs on stock with a hammer in the inventory).
+XBOWS = [("bronze", "wood", 9, 12, 6), ("blurite", "oak", 24, 32, 16), ("iron", "willow", 39, 44, 22),
+         ("steel", "teak", 46, 54, 27), ("mithril", "maple", 54, 64, 32), ("adamantite", "mahogany", 61, 82, 41),
+         ("runite", "yew", 69, 100, 50), ("dragon", "magic", 78, 135, 70)]
+for metal, stock, lvl, hammer_xp, string_xp in XBOWS:
+    MANUAL.append(("hammer", f"xbows_crossbow_unstrung_{metal}", 1, lvl, hammer_xp, 2, "-",
+                   [(f"xbows_crossbow_stock_{stock}", 1), (f"xbows_crossbow_limbs_{metal}", 1)]))
+    anim = f"xbows_fletching_{stock}_{metal}"
+    MANUAL.append(("string", f"xbows_crossbow_{metal}", 1, lvl, string_xp, 2, anim if anim in seq_names else "-",
+                   [(f"xbows_crossbow_unstrung_{metal}", 1), ("xbows_crossbow_string", 1)]))
 for m in MANUAL:
     if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
 
