@@ -5,8 +5,6 @@ import jakarta.inject.Inject
 import net.rsprot.protocol.game.incoming.buttons.If3Button
 import org.rsmod.annotations.InternalApi
 import org.rsmod.api.net.rsprot.player.InterfaceEvents
-import org.rsmod.api.player.input.PauseButtonOps
-import org.rsmod.api.player.input.ResumePauseButtonInput
 import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.IfModalButton
@@ -15,14 +13,11 @@ import org.rsmod.api.player.ui.ifCloseInputDialog
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.comp.ComponentTypeList
-import org.rsmod.game.type.comp.UnpackedComponentType
 import org.rsmod.game.type.interf.IfButtonOp
 import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.interf.InterfaceTypeList
-import org.rsmod.game.type.interf.UnpackedInterfaceType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.ui.Component
-import org.rsmod.game.ui.UserInterface
 
 class If3ButtonHandler
 @Inject
@@ -75,10 +70,6 @@ constructor(
             return
         }
 
-        if (resumePauseButtonOp(player, componentType, interfaceType, buttonOp)) {
-            return
-        }
-
         if (player.ui.containsOverlay(interfaceType) || player.ui.containsTopLevel(interfaceType)) {
             val event =
                 IfOverlayButton(player, componentType, comsub, objTypes[message.obj], buttonOp)
@@ -111,28 +102,6 @@ constructor(
                 }
             }
         }
-    }
-
-    /**
-     * An op registered in [PauseButtonOps] (e.g. skillmulti "Make-5") answers the dialog that is
-     * waiting on that component, like a pause-button click would.
-     */
-    private fun resumePauseButtonOp(
-        player: Player,
-        component: UnpackedComponentType,
-        interfaceType: UnpackedInterfaceType,
-        op: IfButtonOp,
-    ): Boolean {
-        val sub = PauseButtonOps.resumeSub(component, op.slot) ?: return false
-        if (player.activeCoroutine?.isAwaiting(ResumePauseButtonInput::class) != true) {
-            return false
-        }
-        val modal = player.ui.modals.getComponent(UserInterface(interfaceType))
-        if (modal != null) {
-            player.ui.queueClose(modal)
-        }
-        player.resumeActiveCoroutine(ResumePauseButtonInput(component, sub))
-        return true
     }
 
     private fun IfButtonOp.toIfEvent(): IfEvent =
