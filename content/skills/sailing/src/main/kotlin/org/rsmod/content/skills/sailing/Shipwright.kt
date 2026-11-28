@@ -2,6 +2,7 @@ package org.rsmod.content.skills.sailing
 
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.onOpNpc1
+import org.rsmod.api.script.onOpNpc3
 import org.rsmod.game.entity.Npc
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -14,7 +15,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  */
 class Shipwright : PluginScript() {
     override fun ScriptContext.startup() {
+        // Cache ops: Talk-to (1), Buy-boat (3); Customise-boat (4) and Recover-boat (5) need boats.
         onOpNpc1(SailingNpcs.shipwright_port_sarim) { talk(it.npc) }
+        onOpNpc3(SailingNpcs.shipwright_port_sarim) { talk(it.npc) }
     }
 
     private suspend fun ProtectedAccess.talk(npc: Npc) {
