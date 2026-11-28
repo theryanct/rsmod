@@ -1,0 +1,891 @@
+# Generated from the OSRS Wiki page "Transcript:Ghosts Ahoy" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to Velorina
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	line	Velorina	Woooo wooo wooooo woooo
+2	box	You cannot understand the ghost.
+2	action	end
+1	cond	If the player is wearing the amulet of ghostspeak:
+1	line	Velorina	Take pity on me, please - eternity stretches out before me and I am helpless in its grasp.
+1	select	Select an option
+1	option	Why, what is the matter?
+2	line	Player	Why, what is the matter?
+2	line	Velorina	Oh, I'm sorry - I was just wailing out loud. I didn't mean to scare you.
+2	line	Player	No, that's okay - it takes more than a ghost to scare me. What is wrong?
+2	line	Velorina	Do you know the history of our town?
+2	select	Select an option
+2	option	Yes, I do. It is a very sad story.
+3	line	Player	Yes, I do. It is a very sad story.
+3	line	Velorina	Would you help us obtain our release into the next world?
+3	action	continue
+2	option	No - could you tell me?
+3	line	Player	No - could you tell me?
+3	line	Velorina	Do you know why ghosts exist?
+3	line	Player	A ghost is a soul left in limbo, unable to pass over to the next world; they might have something left to do in this world that torments them, or they might just have died in a state of confusion.
+3	line	Velorina	Yes, that is normally the case. But here in Port Phasmatys, we of this town once chose freely to become ghosts!
+3	line	Player	Why on earth would you do such a thing?
+3	line	Velorina	It is a long story. Many years ago, this was a thriving port, a trading centre to the eastern lands of Gielinor. We became rich on the profits made from the traders that came across the eastern seas.
+3	line	Velorina	We were very happy... until Lord Drakan noticed us.
+3	line	Velorina	He sent unholy creatures to demand that a blood-tithe be paid to the Lord Vampyre, as is required from all in the domain of Morytania. We had no choice but to agree to his demands.
+3	line	Velorina	As the years went by, our numbers dwindled and many spoke of abandoning the town for safer lands. Then, Necrovarus came to us.
+3	line	Velorina	He came from the eastern lands, but of more than that, little is known. Some say he was once a mage, some say a priest. Either way, he was in possession of knowledge totally unknown to even the most learned among us.
+3	line	Velorina	Necrovarus told us that he had been brought by a vision he'd had of an underground source of power. He inspired us to delve beneath the town, promising us the power to repel the vampyres.
+3	line	Velorina	Deep underneath Phasmatys, we found a pool of green slime that Necrovarus called ectoplasm. He showed us how to build the Ectofuntus, which would turn the ectoplasm into the power he had promised us.
+3	line	Velorina	Indeed, this Ectopower did repel the vampyres; they would not enter Phasmatys once the Ectofuntus began working. But little did we know that we had exchanged one evil for yet another - Ectopower.
+3	line	Velorina	Little by little, we began to lose any desire for food or water, and our desire for the Ectopower grew until it dominated our thoughts entirely. Our bodies shrivelled and, one by one, we died.
+3	line	Velorina	The Ectofuntus and the power it emanates keeps us here as ghosts - some, like myself, content to remain in this world; some becoming tortured souls who we do not allow to pass our gates.
+3	line	Velorina	We would be able to pass over into the next world but Necrovarus has used his power to create a psychic barrier, preventing us.
+3	line	Velorina	We must remain here for all eternity, even unto the very end of the world.
+3	line	Player	That's a very sad story.
+3	line	Velorina	Would you help us obtain our release into the next world?
+3	select	Start the Ghosts Ahoy quest?
+3	option	Yes.
+4	line	Player	Yes, of course I will. Tell me what you want me to do.
+4	line	Velorina	Oh, thank you!
+4	line	Velorina	Necrovarus will not listen to those of us who are already dead. He might rethink his position if someone with a mortal soul pleaded our cause.
+4	line	Velorina	If he declines, there may yet be another way.
+4	action	end
+3	option	No.
+4	line	Player	I'm sorry, but it isn't really my problem.
+4	line	Velorina	No, you're right - it's our own fault. If you do change your mind though, please come back and help us. We will be here ... forever.
+4	action	end
+1	option	Sorry, I'm scared of ghosts.
+2	line	Player	Leave me alone - I'm scared of ghosts!!!
+2	action	end
+0	section	Talking to Velorina again
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	action	above
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	line	Velorina	I sense that you have not yet spoken to Necrovarus.
+2	line	Player	No, I was just getting to that.
+2	line	Velorina	Well, I suppose we do have all the time in the world...
+2	action	end
+0	section	Talking to Necrovarus
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	line	Necrovarus	Woooo wooo wooooo woooo
+2	box	You cannot understand the ghost.
+2	action	end
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	line	Player	I must speak with you on behalf of Velorina.
+2	line	Necrovarus	You dare to speak that name in this place?????
+2	line	Player	She wants to pass-
+2	line	Necrovarus	Silence!! Or I will incinerate the flesh from your bones!!!
+2	line	Player	But she-
+2	line	Necrovarus	Get out of my sight!! Or I promise you that you will regret your insolence for the rest of eternity!!!
+2	action	end
+0	section	Talking to Necrovarus again
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	action	above
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	line	Player	Please, listen to me-
+2	line	Necrovarus	No - listen to me. Go from this place and do not return, or I will remove your head.
+2	action	end
+0	section	Returning to Velorina after talking to Necrovarus
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	action	above
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	line	Player	I'm sorry, but Necrovarus will not let you go.
+2	line	Velorina	I feared as much. His spirit is a thing of fire and wrath.
+2	line	Player	You spoke of another way.
+2	line	Velorina	It is only a small chance. During the building of the Ectofuntus one of Necrovarus's disciples spoke out against him. It is such a long time ago I cannot remember her name, although I knew her as a friend.
+2	line	Velorina	She fled before the Ectofuntus took control over us, but being a disciple of Necrovarus she would have been privy to many of his darkest secrets. She may know of a way to aid us without Necrovarus.
+2	select	Select an option
+2	option	Do you know where this woman can be found?
+3	line	Player	Do you know where this woman can be found?
+3	line	Velorina	I have a vision of a small wooden shack, the land it was built on the unholy soil of Morytania. I sense the sea is very close, and that there are loomsSupposed to be loom castles to the west and the east.
+3	action	end
+2	option	If it was such a long time ago, won't she be dead already?
+3	line	Player	If it was such a long time ago, won't she be dead already?
+3	line	Velorina	She was a friend of mine. Had she died, I would have felt her spirit pass over to the next world, though I may not follow.
+3	action	end
+0	section	Talking to Velorina again
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	action	above
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	select	Select an option
+2	option	Do you know where this woman can be found?
+3	action	above
+2	option	If it was such a long time ago, won't she be dead already?
+3	action	above
+0	section	Talking to the Old crone
+1	line	Player	Were you once a disciple of Necrovarus in the Temple of Phasmatys, old woman?
+1	line	Old crone	I don't remember; I am so old and my memory goes back only so far...
+1	line	Player	Is there anything that can help to refresh your memory?
+1	line	Old crone	Yes, I would love a nice hot cup of nettle tea.
+1	cond	If the player already has a bowl of nettle tea:
+2	line	Player	Here's some tea for you, like you asked.
+2	line	Old crone	Yes, but it's not in my special cup! I only ever drink from my special cup!!
+2	line	Player	I see. Can I have this special cup, then?
+2	box	The old crone gives you her special cup.
+2	action	
+2	action	end
+1	cond	If the player does not already have a bowl of nettle tea:
+2	line	Player	Do you know where I can find nettles around here?
+2	line	Old crone	I believe they grow wild in the Haunted Forest.
+2	action	end
+1	cond	If the player has regular nettle tea:
+2	line	Player	Here's a lovely cup of tea for you, in your own special cup.
+2	line	Old crone	Oh no, it hasn't got milk in it. I only drink tea with milk, I'm afraid.
+2	action	end
+1	cond	If the player has nettle tea with milk:
+2	line	Player	Here's a lovely cup of milky tea for you, in your own special cup.
+2	box	As the old woman drinks the cup of milky tea, enlightenment glows from within her eyes.
+2	line	Old crone	Ah, that's better. Now, let me see... Yes, I was once a disciple of Necrovarus.
+2	line	Player	I have come from Velorina. She needs your help.
+2	line	Old crone	Velorina? That name sounds familiar...
+2	line	Old crone	Yes, Velorina was once a very good friend! It has been many years since we spoke last. How is she?
+2	line	Player	She's a ghost, I'm afraid.
+2	line	Old crone	They are all dead, then. Even Velorina. I should have done something to stop what was happening, instead of running away.
+2	line	Player	She and many others want to pass on into the next world, but Necrovarus will not let them. Do you know of any way to help them?
+2	line	Old crone	There might be one way...
+2	line	Old crone	Do you have such a thing as a ghostspeak amulet?
+2	cond	If the player does not have a ghostspeak amulet in their bag:
+3	line	Player	No I don't, I'm afraid.
+3	line	Old crone	Well, you'll need to find one.
+3	action	continue
+2	cond	If the player has a ghostspeak amulet in their bag:
+3	line	Player	Yes, I'm carrying one in my bag.
+3	line	Old crone	Well, that's a stroke of luck.
+3	action	continue
+2	cond	If the player is wearing the ghostspeak amulet:
+3	line	Player	Yes, I'm wearing one right now.
+3	line	Old crone	Well, that's a stroke of luck.
+2	line	Old crone	There is an enchantment that I can perform on such an amulet that will give it the power of command over ghosts. It will work only once, but it will enable you to command Necrovarus to let the ghosts pass on.
+2	line	Player	What do you need to perform the enchantment?
+2	line	Old crone	Necrovarus had a magical robe for which he must have no more use. Only these robes hold the power needed to perform the enchantment.
+2	line	Old crone	All his rituals came from a book written by an ancient sorcerer from the East called Haricanto. Bring me this strange book.
+2	select	Select an option
+2	option	You are doing so much for me - is there anything I can do for you?
+3	line	Player	You are doing so much for me - is there anything I can do for you?
+3	line	Old crone	I have lived here on my own for many years, but not always. When I left Port Phasmatys, I took my son with me. He grew up to be a fine boy, always in love with the sea.
+3	line	Old crone	He was about twelve years old when he ran away with some pirates to be a cabin boy. I never saw him again.
+3	line	Player	That's the second saddest story I have heard today.
+3	line	Old crone	If you ever see him, please give him this...and tell him that his mother still loves him.
+3	box	The old woman gives you a toy boat.
+3	action	
+3	line	Player	Was this his boat?
+3	line	Old crone	Yes, he made it himself. It is a model of the very ship in which he sailed away. The paint has peeled off and it has lost its flag, but I could never throw it away.
+3	line	Player	If I find him, I will pass it on.
+3	action	end
+2	option	Remind me - what can I do about Necrovarus?
+3	line	Player	Remind me - what can I do about Necrovarus?
+3	line	Old crone	Do you have such a thing as a ghostspeak amulet?
+3	cond	If the player doesn't have the ghostspeak amulet:
+4	action	above
+4	action	continues
+3	cond	If the player is wearing or has the ghostspeak amulet in their inventory:
+4	action	above
+4	action	continues
+3	line	Old crone	There is an enchantment that I can perform on such an amulet that will give it the power of command over ghosts. It will work only once, but it will enable you to command Necrovarus to let the ghosts pass on.
+3	line	Player	What do you need to perform the enchantment?
+3	line	Old crone	Necrovarus had a magical robe for which he must have no more use. Only these robes hold the power needed to perform the enchantment.
+3	line	Old crone	All his rituals came from a book written by an ancient sorcerer from the East called Haricanto. Bring me this strange book.
+3	line	Old crone	I cannot read the strange letters of the eastern lands. I will need something to help me translate the book.
+3	action	initial
+2	option	What did you want me to get for you?
+3	line	Player	What did you want me to get for you?
+3	line	Old crone	Necrovarus had a magical robe for which he must have no more use. Only these robes hold the power needed to perform the enchantment.
+3	line	Old crone	All his rituals came from a book written by an ancient sorcerer from the East called Haricanto. Bring me this strange book.
+3	line	Old crone	I cannot read the strange letters of the eastern lands. I will need something to help me translate the book.
+2	option	I'll go and search for those items you asked for.
+3	line	Player	I'll go and search for those items you need.
+3	action	end
+0	section	Talking to the Old crone again
+1	select	Select an option
+1	option	I am afraid I have not found your son yet.
+2	line	Player	I am afraid I have not found your son yet.
+2	line	Old crone	I never expected that you would find him - although if you do, please let me know.
+2	action	initial
+1	option	Remind me - what can I do about Necrovarus?
+2	action	above
+1	option	What did you want me to get for you?
+2	action	above
+1	option	I'll go and search for those items you wanted.
+2	action	above
+0	section	Making the nettle tea
+1	cond	If the player puts the nettles in a bowl of water:
+2	action	
+2	action	end
+1	cond	If the player burns the nettle tea:
+2	action	
+1	cond	If the player successfully cooks the nettle tea:
+2	action	
+2	action	end
+1	cond	If the player drinks the cup of nettle tea without milk:
+2	action	end
+0	section	Talking to Velorina after talking to the Old crone
+1	cond	If the player is not wearing the amulet of ghostspeak:
+2	action	above
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	select	Select an option
+2	option	Do you know where I can find the Book of Haricanto?
+3	line	Player	Do you know where I can find the Book of Haricanto?
+3	line	Velorina	Nobody knows what has happened to the Book. It was stolen when our port was raided by pirates many years ago, and never seen since.
+3	action	end
+2	option	Do you know where I can find the Robes of Necrovarus?
+3	line	Player	Do you know where I can find the Robes of Necrovarus?
+3	line	Velorina	I imagine they are still worn by his mortal body, which now lies in a coffin inside the Temple.
+3	action	end
+2	option	I need something to translate the Book of Haricanto.
+3	line	Player	I need something to translate the Book of Haricanto.
+3	line	Velorina	I don't really know. You could try asking some of the traders from the East - they might be able to help you.
+3	action	end
+0	section	Book of Haricanto
+0	section	Remodeling the toy ship
+0	section	Repairing the toy ship
+1	cond	If the player attempts to repair the toy ship without the necessary items:
+2	box	You need some silk to replace the flag, something to sew it to the boat, and something to cut the flag to the right size.
+2	action	end
+1	cond	If the player uses a piece of silk, a needle, thread, or knife on the toy ship without having the rest of the items:
+2	action	above
+1	cond	If the player uses either a piece of silk, needle/thread, or knife on the toy ship whilst having the rest of the items:
+2	box	You replace the toy boat's missing flag.
+2	action	end
+1	cond	If the player uses the repaired model ship on the Old crone:
+2	action	end
+0	section	Recolouring the toy ship
+1	cond	If the player inspects the repaired toy ship:
+2	box	The top of the flag is white. The skull emblem is white. The bottom of the flag is white.
+1	cond	If the player uses [blue/red/yellow/orange/green/purple] dye on the toy ship:
+2	select	Which part of the flag do you want to dye?
+2	option	Top half
+3	box	You dye the top of the flag [blue/red/yellow/orange/green/purple].
+3	action	end
+2	option	Bottom half
+3	box	You dye the bottom of the flag [blue/red/yellow/orange/green/purple].
+3	action	end
+2	option	Skull emblem
+3	box	You dye the skull emblem [blue/red/yellow/orange/green/purple].
+3	action	end
+0	section	At the shipwrecked boat
+0	section	uk=1
+1	cond	If the player searches the already opened chests:
+1	cond	If the player searches the second-to-the-last chest on the bottom right on the {{FloorNumber
+2	action	A giant lobster appears!
+2	action	end
+1	cond	If the player searches the guarded chest:
+2	box	You find a piece of a map inside the chest.
+2	action	end
+0	section	uk=2
+1	cond	If the player searches the mast whilst the windspeed is low:
+2	box	You can see a tattered flag blowing in the wind. The [skull emblem/top half/bottom half] is coloured [red/blue/yellow/orange/green/purple].
+2	action	end
+1	cond	If the player searches the mast whilst the windspeed is high:
+2	box	You can see a tattered flag blowing in the wind. The wind is blowing too hard to make out any details.
+2	action	end
+1	cond	If the player attempts to open the chests to the north-east and south-west near the mast:
+2	action	end
+1	cond	If the player searches the boxes near the mast:
+2	action	end
+0	section	Inside the ship's office
+1	cond	If the player attempts to open the locked chest:
+2	action	end
+1	cond	If the player talks to the dead pirate captain:
+2	box	The pirate captain ignores you and continues to stare lifelessly at nothing, as he has clearly been dead for some time.
+2	action	end
+1	cond	chest key]] on the chest:
+2	box	You unlock the chest.
+2	action	end
+1	cond	If the player opens the chest:
+2	box	You find a piece of a map inside the chest.
+2	action	map scrap]]
+2	action	end
+0	section	Talking to the Old man
+1	select	Select an option
+1	option	What is your name?
+2	line	Player	What is your name?
+2	line	Old man	I don't remember. Everyone around here just calls me 'boy'.
+2	line	Player	You're the cabin boy?!?
+2	line	Old man	Yes, and proud of it.
+2	action	end
+1	option	Can I have the key to the chest?
+2	line	Player	Can I have the key to the chest?
+2	line	Old man	Hang on, let me ask the Captain ...
+2	box	The old man cocks an ear towards the Pirate Captain's skeleton.
+2	line	Old man	The Captain says no.
+2	action	end
+1	option	Is this your toy boat?
+2	line	Player	Is this your toy boat?
+2	box	The old man inspects the toy boat.
+2	cond	If the model ship is broken:
+3	line	Old man	No - I made a toy boat a long while ago, but that one had a flag.
+2	cond	If the model ship is fixed but not recoloured/coloured wrong:
+3	line	Old man	No - I made a toy boat a long while ago, but the colours on the flag were different.
+2	cond	If the model ship is fixed and correctly recoloured:
+3	line	Old man	My word - so it is!!! I never thought I would see it again!! Where did you get it from?
+3	line	Player	Your mother gave it to me to pass on to you.
+3	line	Old man	My mother? She still lives?
+3	line	Player	Yes, in a shack to the west of here.
+3	line	Old man	After all these years ...
+3	line	Player	Can I have the key to the chest, then?
+3	line	Old man	Hang on, let me ask the Captain ...
+3	box	The old man cocks an ear towards the skeleton of the Pirate Captain.
+3	line	Old man	The Captain says yes.
+3	box	The old man gives you the chest key.
+3	action	chest key]]
+3	action	end
+0	section	Talking to the Old man after losing the key
+1	line	Player	I've lost my key to the chest - do you have another one?
+1	line	Old man	What? But the chest is only just over there! How on Gielinor did you lose it in that short distance?
+1	line	Player	Sorry, I won't do it again...
+1	box	The old man grudgingly gives you another chest key.
+1	action	end
+0	section	Talking to the Old man again
+1	line	Player	How is it going?
+1	line	Old man	Wonderful, wonderful! Mother's coming to get me!
+1	action	end
+0	section	Talking to the Old crone after finding the old man
+1	select	Select an option
+1	option	Good news! I have found your son!
+2	line	Player	Good news! I have found your son!
+2	line	Old crone	Goodness! Where is he?
+2	line	Player	He lives on a shipwreck to the east of here. He remembers you and wishes you well.
+2	line	Old crone	Oh thank you!! I will travel to see him as soon as I am able!!
+2	action	end
+1	option	Remind me - what can I do about Necrovarus?
+2	action	above
+1	option	What did you want me to get for you?
+2	action	above
+1	option	I'll go and search for those items you wanted.
+2	action	above
+0	section	Searching the rocky island
+1	cond	If the player crosses the gangplank towards the northern rocky island:
+2	action	end
+1	cond	If the player successfully jumps to a rock:
+2	action	
+2	action	end
+1	cond	If the player jumps and falls onto the next rock:
+2	action	The player loses 1-3 Hitpoints.
+2	action	end
+1	cond	If the player opens the chest at the northern-most part of the island:
+2	box	You find a piece of a map inside the chest.
+2	action	map scrap]]
+2	action	end
+0	section	Assembling the map scrap
+1	cond	If the player attempts to combine the scrap maps whilst only having two pieces:
+2	box	You don't have all the pieces of the map yet.
+2	action	end
+1	cond	If the player attempts to combine the scrap map with three pieces:
+2	box	You piece the three map scraps together to form a complete map.
+2	action	
+2	action	end
+0	section	Travelling to Dragontooth Island
+0	section	Talking to the Ghost captain
+1	cond	If the player does not have the amulet of ghostspeak whilst talking or fast-travelling:
+2	line	Ghost captain	Woooo wooo wooooo woooo
+2	action	end
+1	cond	If the player is wearing the amulet of ghostspeak:
+2	line	Ghost captain	Would you like to visit Dragontooth Island? It is a most pleasant island in the sea between Morytania and the lands of the east. It'll cost you 25 ectotokens for the return trip.
+2	select	Select an option
+2	cond	If the player has at least 25 ectotokens in their inventory:
+3	option	Okay, here's 25 ectotokens. Let's go.
+4	line	Player	Okay, here's 25 ectotokens. Let's go.
+4	action	end
+2	option	If I pay 500 ectotokens, can I get unlimited trips?
+3	line	Player	If I pay 500 ectotokens, can I get unlimited trips?
+3	cond	If the player has 500 ectotokens in their inventory:
+4	line	Player	If I pay 500 ectotokens, can I get unlimited trips?
+4	line	Ghost captain	Yes, that seems fair. Okay, hand them over and we can set off.
+4	action	The player gives the ghost captain 500 ectotokens and sails over to Dragontooth Island.
+4	action	end
+3	cond	If the player does not have 500 ectotokens in their inventory:
+4	line	Ghost captain	Yes, I'd accept that deal. But as you don't have enough ectotokens for that, would you like to pay 25 ectotokens for a trip now?
+4	select	Select an option
+4	option	Okay, here's 25 ectotokens. Let's go.
+5	line	Player	
+4	option	Not now, thanks.
+5	line	Player	Not now, thanks.
+5	action	end
+2	option	Not now, thanks.
+3	line	Player	Not now, thanks.
+3	action	end
+0	section	Searching with the map
+1	cond	If the player clicks on the 'Follow' option:
+2	cond	If the player is not at Dragontooth Island:
+3	box	This map is for use elsewhere.
+3	action	end
+2	cond	If the player is at Dragontooth Island:
+3	select	Which direction do you wish to walk?
+3	option	North
+4	select	How far do you wish to walk?
+4	option	1 pace
+5	action	The player walks 1 pace towards the selected direction.
+4	option	2 paces
+5	action	The player walks 2 paces towards the selected direction.
+4	option	4 paces
+5	action	The player walks 4 paces towards the selected direction.
+4	option	10 paces
+5	action	The player walks 10 paces towards the selected direction.
+3	option	East
+4	action	above
+3	option	South
+4	action	above
+3	option	West
+4	action	above
+1	cond	If the player digs at the wrong location:
+2	action	end
+1	cond	If the player digs at the correct location:
+2	box	You unearth the Book of Haricanto.
+2	action	end
+0	section	Something to translate the Book of Haricanto
+0	section	Talking to Ak-Haranu
+1	line	Player	It's nice to see a human face around here.
+1	line	Ak-Haranu	My name Ak-Haranu. I am trader, come from many far across sea in east.
+1	line	Player	You come from the lands of the East? Do you have anything that can help me translate a book that is scribed in your language?
+1	line	Ak-Haranu	Ak-Haranu may help you. A translation manual I have, much good for reading Eastern language.
+1	line	Player	How much do you want for it?
+1	line	Ak-Haranu	Ak-Haranu not want money for this book, as is such small thing. But there may be something you could do for me. I am big admirer of Robin, Master Bowman. He staying in village inn.
+1	line	Player	What would you like me to do?
+1	line	Ak-Haranu	Please get Master Bowman sign an oak longbow for me, so Ak-Haranu can show family and friends when returning home and become much admired. Then I give you book in exchange.
+1	select	Select an option
+1	option	Okay, wait here - I'll get you your bow.
+2	line	Player	Okay, wait here - I'll get you your bow.
+2	action	end
+1	option	Sorry, I have too much to do at the moment.
+2	line	Player	Sorry, I have too much to do at the moment.
+2	action	end
+0	section	Subsequent dialogue with Ak-Haranu
+1	cond	If the player does not have an oak longbow in their inventory:
+2	line	Player	Have you got an oak longbow that I can get Robin to sign for you?
+2	line	Ak-Haranu	No, Ak-Haranu afraid that no longbow in supply at moment. You must make one or buy one.
+2	action	end
+1	cond	If the player has an oak longbow in their inventory:
+2	line	Ak-Haranu	How Master {player} getting on with longbow?
+2	line	Player	I'll let you know.
+2	action	end
+0	section	Talking to Robin
+1	cond	If the player does not have an oak longbow in their inventory:
+2	line	Robin	Hey you, why don't you have a game of Runedraw with me? If you've got 25 gold pieces I've got a bag of runes we can use.
+2	cond	If the player does not have 25 coins:
+3	line	Player	I don't have enough money on me for a game of Runedraw at the moment.
+3	action	end
+2	cond	If the player has at least 25 coins:
+3	select	Select an option
+3	option	Yes, I'll give you a game.
+4	line	Player	Yes, I'll give you a game.
+4	action	
+4	cond	If the player wins:
+5	line	Player	So are you going to pay up then? You owe me [#] gold coins!
+5	line	Robin	How about another game? I'll pay you back with the winnings.
+5	line	Player	What if you lose again?
+5	line	Robin	Er ... we'll deal with that when we come to it.
+5	select	Select an option
+5	option	Yes, I'll give you a game.
+6	action	above
+5	option	How do you play Runedraw?
+6	action	above
+5	option	No, you didn't pay up the last time you lost.
+6	line	Player	No, you didn't pay up the last time you lost.
+6	action	end
+4	cond	If the player loses:
+5	line	Player	Well done, you beat me. But you still owe me [#] gold pieces.
+5	line	Robin	Err ... how about another game? We can settle up after we've finished playing.
+5	select	Select an option
+5	option	Yes, I'll give you a game.
+6	action	above
+5	option	How do you play Runedraw?
+6	action	above
+5	option	No, you didn't pay up the last time you lost.
+6	action	above
+4	cond	If the player wins 100 coins:
+5	line	Player	I've had enough of you not paying up - you owe me 100 gold coins. I'm going to tell the ghosts what you're doing.
+5	line	Robin	Please don't do that!!! They will suck the life from my bones!!!
+5	line	Player	How about you signing my longbow then?
+5	line	Robin	Yes, anything!!!
+5	box	Robin signs the oak longbow for you.
+5	action	
+5	action	end
+3	option	How do you play Runedraw?
+4	line	Player	How do you play Runedraw?
+4	line	Robin	Two players take turns to draw a rune from a bag, which contains ten runes in total. Each rune has a different value: an air rune is worth one point, up to a Nature rune which is worth nine points.
+4	line	Robin	If a player draws the Death rune then the game is over, and they have lost.
+4	line	Robin	A player can choose to hold if they wish and not draw any more runes, but this runs the risk of the other player drawing more runes until they have a greater points total and win.
+4	action	end
+3	option	No, that doesn't sound fun.
+4	line	Player	No, that doesn't sound fun.
+4	action	end
+0	section	Talking to Robin after getting the bow signed
+1	line	Player	So, still here then?
+1	line	Robin	Do you want another game of Runedraw?
+1	line	Player	No!
+1	action	end
+0	section	Talking to Ak-Haranu after getting the bow signed
+1	line	Player	I have your signed longbow for you.
+1	line	Ak-Haranu	Ah, can it be true? You have obtained bow from Master Bowman?
+1	line	Player	He was more than happy to oblige (cough). Here you are.
+1	box	Ak-Haranu gives you a translation manual in return for the signed oak longbow.
+1	action	
+1	line	Ak-Haranu	May honour be bestowed upon you and your family!
+1	action	end
+0	section	Subsequent dialogue with Ak-Haranu
+1	cond	If the player lost the Translation manual:
+2	line	Player	I'm sorry, I seem to have lost the translation manual you gave me.
+2	line	Ak-Haranu	Ah, no worry, my friend. For the gift of longbow Ak-Haranu would give a thousand books.
+2	box	Ak-Haranu gives you another translation manual.
+2	action	
+2	action	end
+1	cond	If the player has the Translation manual:
+2	line	Player	Thank you for the translation manual, Ak-Haranu - it may save many souls before long.
+2	line	Ak-Haranu	And Ak-Haranu thanks you for kind gift of longbow.
+2	action	end
+0	section	Robes of Necrovarus
+0	section	Talking to Gravingas
+1	cond	If the player talks to Gravingas without the amulet of ghostspeak:
+2	line	Gravingas	Woooo wooo wooooo woooo
+2	box	You cannot understand the ghost.
+2	action	end
+1	cond	If the player talks to Gravingas with the amulet of ghostspeak:
+2	line	Gravingas	Will you join with me and protest against the evil desires of Necrovarus and his disciples?
+2	select	Select an option
+2	option	After hearing Velorina's story I will be happy to help out.
+3	line	Player	After hearing Velorina's story I will be happy to help out.
+3	cond	If the player has no inventory space:
+4	line	Gravingas	I'd give you a petition form, but you look like you're carrying too much already.
+4	action	end
+3	cond	If the player has one free inventory space:
+4	line	Gravingas	Excellent, excellent!! Here - take this petition form, and try and get 10 signatures from the townsfolk.
+4	action	
+4	action	end
+2	option	I'm sorry, I don't really think I should get involved.
+3	line	Player	I'm sorry, I don't really think I should get involved.
+3	action	end
+1	cond	If the player attempts to drop the petition form:
+0	section	Talking to Gravingas again
+1	cond	If the player loses the petition form:
+2	line	Player	I'm sorry, I seem to have lost my petition form.
+2	cond	If the player does not have inventory space:
+3	line	Gravingas	Blown away in the sea breeze, hey? Oh well, can't be helped. I'd give you another one, but you look like you're carrying too much already.
+3	action	end
+2	cond	If the player has one free inventory space:
+3	line	Gravingas	Blown away in the sea breeze, hey? Oh well, can't be helped. Here's another one, but you'll have to start from scratch again.
+3	action	
+3	action	end
+1	cond	If the player has no signatures:
+2	line	Gravingas	Come on - you haven't even started yet! You need 10 more signatures.
+2	action	end
+1	cond	If the player has one signature:
+2	line	Gravingas	Well, that's a start I supposeno full stop You need [#] more signatures.
+2	action	end}
+1	cond	If the player has 4-6 signatures:
+2	line	Gravingas	Not doing bad I see! You need 6 more signatures.
+2	action	end
+1	cond	If the player has 7-8 signatures:
+2	line	Gravingas	Are you sure you haven't done this type of thing before? You need 3 more signatures.
+2	action	end
+1	cond	If the player has 9 signatures:
+2	line	Gravingas	Very nearly there!! Only 1 more signature to go.
+2	action	end
+1	cond	If the player has all 10 signatures:
+2	line	Gravingas	You've got them all! Now go and present it to Necrovarus!!
+2	action	end
+0	section	Talking to the Ghost innkeeper
+1	line	Player	Hello there!
+1	line	Ghost innkeeper	Greetings, traveller. Welcome to 'The Green Ghost' Tavern. What can I do you for?
+1	option	Can I buy a beer?
+2	line	Player	Can I buy a beer?
+2	line	Ghost innkeeper	Sorry, but our pumps dried up over half a century ago. We of this village do not have much of a thirst these days.
+2	action	end
+1	option	Can I hear some gossip?
+2	line	Player	Can I hear some gossip?
+2	line	Ghost innkeeper	I suppose, as long as you keep it to yourself...
+2	line	Ghost innkeeper	You see Gravingas out there in the marketplace? He speaks for the silent majority of Port Phasmatys, for those of us who would prefer to pass over into the next world.
+2	action	end
+1	option	What happened to the folk of this town?
+2	line	Player	What happened to the folk of this town?
+2	line	Ghost innkeeper	That's a long story, my friend, but you look like you have the time...
+2	line	Ghost innkeeper	Do you know why ghosts exist?
+2	line	Player	A ghost is a soul left in limbo, unable to pass over to the next world; they might have something left to do in this world that torments them, or they might just have died in a state of confusion.
+2	line	Ghost innkeeper	Yes, that is normally the case. But here in Port Phasmatys, we of this town once chose freely to become ghosts!
+2	line	Player	Why on earth would you do such a thing?
+2	line	Ghost innkeeper	It is a long story. Many years ago, this was a thriving port, a trading centre to the eastern lands of Gielinor. We became rich on the profits made from the traders that came across the eastern seas.
+2	line	Ghost innkeeper	We were very happy... until Lord Drakan noticed us.
+2	line	Ghost innkeeper	He sent unholy creatures to demand that a blood-tithe be paid to the Lord Vampyre, as is required from all in the domain of Morytania. We had no choice but to agree to his demands.
+2	line	Ghost innkeeper	As the years went by, our numbers dwindled and many spoke of abandoning the town for safer lands. Then, Necrovarus came to us.
+2	line	Ghost innkeeper	He came from the eastern lands, but of more than that, little is known. Some say he was once a mage, some say a priest. Either way, he was in possession of knowledge totally unknown to even the most learned among us.
+2	line	Ghost innkeeper	Necrovarus told us that he had been brought by a vision he'd had of an underground source of power. He inspired us to delve beneath the town, promising us the power to repel the vampyres.
+2	line	Ghost innkeeper	Deep underneath Phasmatys, we found a pool of green slime that Necrovarus called ectoplasm. He showed us how to build the Ectofuntus, which would turn the ectoplasm into the power he had promised us.
+2	line	Ghost innkeeper	Indeed, this Ectopower did repel the vampyres; they would not enter Phasmatys once the Ectofuntus began working. But little did we know that we had exchanged one evil for yet another - Ectopower.
+2	line	Ghost innkeeper	Little by little, we began to lose any desire for food or water, and our desire for the Ectopower grew until it dominated our thoughts entirely. Our bodies shrivelled and, one by one, we died.
+2	line	Ghost innkeeper	The Ectofuntus and the power it emanates keeps us here as ghosts - some, like myself, content to remain in this world; some becoming tortured souls who we do not allow to pass our gates.
+2	line	Ghost innkeeper	We would be able to pass over into the next world but Necrovarus has used his power to create a psychic barrier, preventing us.
+2	line	Ghost innkeeper	We must remain here for all eternity, even unto the very end of the world.
+2	action	end
+1	option	Do you have any jobs I can do?
+2	cond	If the player does not have a bedsheet in their inventory:
+3	line	Player	Do you have any jobs I can do?
+3	line	Ghost innkeeper	Yes, actually, I do. We have a very famous Master Bowman named Robin staying with us at the moment. Could you take him some clean bed linen for me?
+3	option	Yes, I'd be delighted.
+4	line	Player	Yes, I'd be delighted.
+4	line	Ghost innkeeper	Oh, thank you. Be careful with that Robin, though - he's far too full of himself, that one.
+4	action	end
+4	action	
+3	option	No, I didn't mean a job like that.
+4	line	Player	No, I didn't mean a job like that.
+4	action	end
+2	cond	If the player already has a bedsheet in their inventory
+3	line	Player	Do you have any jobs I can do?
+3	line	Ghost innkeeper	Well, you could take that bedsheet through to Robin like I asked.
+3	action	end
+1	option	Nothing, thanks.
+2	line	Player	Nothing, thanks.
+2	action	end
+0	section	Talking to Robin with the innkeeper's task
+1	cond	If the player has a clean bedsheet in their inventory:
+2	line	Player	I've brought you a clean bedsheet, Robin.
+2	line	Robin	Well it's about time. Run along now, I need some Robin time.
+2	action	end
+1	cond	If the player does not have a clean bedsheet (or has a slimy bedsheet) in their inventory:
+2	line	Player	So, still here then?
+2	action	above
+0	section	Using the bedsheet
+1	cond	If the player uses the bedsheet on a bucket of water or milk:
+2	action	end
+1	cond	If the player uses the bedsheet on a bucket of slime:
+2	action	ectoplasm-covered bedsheet]]
+2	action	end
+1	cond	If the player attempts to leave Port Phasmatys whilst wearing the slimy (or regular) bedsheet:
+2	box	You can't pass the barriers of Port Phasmatys while wearing the bedsheet.
+2	action	end
+1	cond	If the player attempts to wear the slimy (or regular) bedsheet outside Port Phasmatys:
+2	action	end
+0	section	Talking to the ghost villagers
+1	cond	If the player is not wearing an amulet of ghostspeak:
+2	line	Ghost villager	Woooo wooo wooooo woooo
+2	box	You cannot understand the ghost.
+2	action	end
+1	cond	If the player is wearing an amulet of ghostspeak:
+2	cond	If the player is not wearing a slimy bedsheet:
+3	line	Player	Would you sign this petition form, please?
+3	line	Ghost villager	I'm sorry, but it's hard to believe that a mortal could be interested in helping us.
+3	action	end
+2	cond	If the player is wearing a bedsheet but not slime covered:
+3	line	Player	Would you sign this petition form, please?
+3	line	Ghost villager	Why are you wearing that bedsheet? If you're trying to pretend to be one of us, you're not fooling anybody - you're not even green!!
+3	action	end
+2	cond	If the player is wearing a slime covered bedsheet:
+2	line	Player	Would you sign this petition form, please?
+2	option	Support dialogue 1
+3	line	Ghost villager	Most certainly, I will.
+3	box	The ghost signs your petition. You have obtained [#] signature[s] so far.
+3	action	end
+2	option	Support dialogue 2
+3	line	Ghost villager	I'll do anything that annoys Necrovarus.
+3	action	above
+2	option	Support dialogue 3
+3	line	Ghost villager	Yes! It's about time somebody did something about Necrovarus.
+3	action	above
+2	option	Support dialogue 4
+3	line	Ghost villager	Yes, of course.
+3	action	above
+2	option	Support dialogue 5
+3	option	Bribe dialogue 1
+4	line	Ghost villager	It'll cost you...
+4	action	continues
+3	option	Bribe dialogue 2
+4	line	Ghost villager	I will if you make it worth my while...
+4	action	continues
+3	option	Bribe dialogue 3
+4	line	Ghost villager	You scratch my back and I'll scratch yours...
+4	action	continues
+3	line	Player	How much?
+3	line	Ghost villager	Oh, it'll cost you [1-3] ecto-tokens.
+3	cond	If the player does not have enough ecto-tokens:
+4	line	Player	I don't have that many on me.
+4	line	Ghost villager	No tokens, no signature.
+4	action	end
+3	cond	If the player has at least [1-3] ecto-tokens:
+4	select	Select an option
+4	option	Okay, if you insist.
+5	line	Player	Okay, if you insist.
+5	box	The ghost signs your petition. You have obtained [#] signature[s] so far.
+4	option	There's no way I'm giving in to corruption.
+5	line	Player	There's no way I'm giving in to corruption.
+5	line	Ghost villager	Suit yourself.
+5	action	end
+2	option	Oppose dialogue 1
+3	line	Ghost villager	I will have you know that I am a fervent supporter of Necrovarus.
+3	action	end
+2	option	Oppose dialogue 2
+3	line	Ghost villager	How dare you accost me in the street?
+3	action	end
+2	option	Oppose dialogue 3
+3	line	Ghost villager	Get lost.
+3	action	end
+2	option	Oppose dialogue 4
+3	line	Ghost villager	I don't have time for this nonsense.
+3	action	end
+3	cond	If the player subsequently asks the same ghost villager (regardless if they support or deny the request):
+4	line	Ghost villager	You only just asked me the same thing! Leave me alone - I've had my say!
+4	action	end
+3	cond	If the player succeeds in getting 10 signatures:
+4	box	You have succeeded in obtaining 10 signatures on the petition form!
+4	action	end
+3	cond	If the player talks to the ghost villagers with a full petition form:
+4	line	Player	Thank you for your kind support.
+4	action	end
+0	section	Talking to Necrovarus whilst collecting signatures
+1	cond	If the player does not have the amulet of ghostspeak:
+2	action	above
+1	cond	If the player has the amulet of ghostspeak:
+2	cond	If the player also has the petition form (not signed or partially signed) in their inventory:
+3	line	Player	I must let you know, Necrovarus, that I am collecting signatures from the citizens of Port Phasmatys.
+3	line	Necrovarus	Oh, I do admire an activist. Do let me know when you're finished, and I'll give it my fullest consideration.
+3	action	end
+2	cond	If the player has a full petition form in their inventory:
+3	line	Player	Necrovarus, I am presenting you with a petition form that has been signed by 10 citizens of Port Phasmatys.
+3	line	Necrovarus	A petition you say? Continue, mortal.
+3	line	Player	It says that the citizens of Port Phasmatys should have the right to choose whether they pass over into the next world or not, and not have this decided by the powers that be on their behalf.
+3	line	Necrovarus	I see.
+3	line	Player	So you will let them pass over if they wish?
+3	line	Necrovarus	Oh yes.
+3	line	Player	Really?
+3	line	Necrovarus	NO!!!!! Get out of my sight before I burn every ounce of flesh from your bones!!!!!
+3	box	The petition form turns to ashes in your hand.
+3	action	
+3	box	In his rage, Necrovarus drops a key on the floor.
+3	action	end
+0	section	Subsequent dialogue with Necrovarus
+1	cond	If the player doesn't have the bone key:
+2	line	Player	So, have you changed your mind yet?
+2	line	Necrovarus	NEVER!!!!!
+2	line	Necrovarus	WHICH IS A VERY LONG TIME!!!!!!
+2	action	end
+1	cond	If the player has the bone key:
+2	line	Player	It matters not that you ignore your citizens' wishes, Necrovarus. Wheels have been set in motion, wheels that will set them free.
+2	line	Necrovarus	I have almost completely lost patience with you, mortal. Another word, and every threat I have uttered will be made real for you.
+2	action	end
+0	section	Entering Necrovarus' Tomb
+1	cond	If the player attempts to use the door without the key (or if the player did not use the key on the door):
+2	line	Ghost disciple	What are you doing going in there?
+2	line	Player	Err, I was just curious...
+2	line	Ghost disciple	Inside that room is a coffin, inside which lie the mortal remains of our most glorious master, Necrovarus. None may enter.
+1	cond	If the player uses the bone key on the door:
+2	action	end
+1	cond	If the player uses the bone key on the door again:
+2	action	end
+1	cond	If the player opens the tomb:
+2	action	end
+1	cond	If the player searches the tomb:
+2	box	You take the Robes of Necrovarus from the remains of his mortal body.
+2	action	
+2	action	end
+0	section	Talking to the Old crone with the materials
+1	cond	If the player has the Book of Haricanto:
+2	line	Player	I have something for you.
+2	line	Old crone	The Book of Haricanto! I have no idea how you came by this, but well done!!
+2	action	initial
+1	cond	If the player has the translation manual:
+2	line	Player	I have something for you.
+2	line	Old crone	A translation manual - yes, this should do the job.
+2	action	initial
+1	cond	If the player has the robes of Necrovarus:
+2	line	Player	I have something for you.
+2	line	Old crone	Good - the robes of Necrovarus.
+2	action	initial
+1	cond	If the player gave all three materials to the Old crone:
+2	line	Old crone	Wonderful; that's everything I need.
+2	cond	If the player does not have the amulet of ghostspeak:
+3	line	Player	I seem to have lost my ghostspeak amulet.
+3	line	Old crone	Oh dear, that's unfortunate. You'll have to go and find another one, then.
+3	action	end
+2	cond	If the player has the amulet of ghostspeak:
+3	line	Old crone	I will now perform the ritual of enchantment.
+3	box	The ghostspeak amulet emits a green glow from its gem.
+3	action	
+3	action	end
+0	section	Talking to the Old crone again
+1	cond	If the player has the enchanted ghostspeak amulet:
+2	line	Old crone	Did it work?
+2	line	Player	Actually, I haven't tried it yet.
+2	action	end
+1	cond	If the player lost the enchanted ghostspeak amulet:
+2	line	Player	I seem to have lost my ghostspeak amulet.
+2	line	Old crone	Oh dear, that's unfortunate. You'll have to go and find another one, then.
+2	action	end
+0	section	Talking to Velorina
+1	cond	If the player does not have the enchanted ghostspeak amulet:
+2	action	above
+1	cond	If the player is wearing the enchanted ghostspeak amulet:
+2	line	Velorina	How is it going?
+2	line	Player	I have had the Amulet of Ghostspeak enchanted, which I shall use to command Necrovarus to set you free.
+2	line	Velorina	Oh, kind adventurer - you are the answer to all our prayers!
+2	action	end
+0	section	Commanding Necrovarus to stand down
+1	cond	If the player has a regular ghostspeak amulet:
+2	line	Player	It matters not that you ignore your citizens' wishes, Necrovarus. Wheels have been set in motion, wheels that will set them free.
+2	line	Necrovarus	I have almost completely lost patience with you, mortal. Another word, and every threat I have uttered will be made real for you.
+2	action	end
+1	cond	If the player has the enchanted ghostspeak amulet:
+2	line	Necrovarus	You dare to face me again - you must be truly insane!!!!
+2	line	Player	No, Necrovarus, I am not insane. With this enchanted amulet of ghostspeak I have the power to command you to do my will!
+2	select	What do you want to command Necrovarus to do?
+2	option	Let any ghost who so wishes pass on into the next world.
+3	line	Player	Let any ghost who so wishes pass on into the next world.
+3	box	A beam of intense green light radiates out from the amulet of ghostspeak, enveloping Necrovarus in its power. His eyes become softer, and appear to stare into nothingness.
+3	line	Necrovarus	I - will - let ...
+3	line	Player	Carry on...
+3	line	Necrovarus	... any ...
+3	line	Player	Yes?
+3	line	Necrovarus	... ghost who so wishes ...
+3	line	Player	I think we're almost getting there...
+3	line	Necrovarus	... pass into the next world.
+3	action	end
+2	option	Tell me a joke.
+3	line	Player	Tell me a joke.
+3	box	A beam of intense green light radiates out from the amulet of ghostspeak, enveloping Necrovarus in its power. His eyes become softer, and appear to stare into nothingness.
+3	line	Necrovarus	Knock knock
+3	line	Player	Who's there?
+3	line	Necrovarus	Egbert.
+3	line	Player	Egbert who?
+3	line	Necrovarus	Egbert no bacon.
+3	box	Luckily the amulet of ghostspeak does not seem to have fully discharged.
+3	action	end
+2	option	Do a chicken impression.
+3	line	Player	Do a chicken impression.
+3	box	A beam of intense green light radiates out from the amulet of ghostspeak, enveloping Necrovarus in its power. His eyes become softer, and appear to stare into nothingness.
+3	line	Necrovarus	Cluck cluck squuuaaaakkkk cluck cluck
+3	line	Necrovarus	I think I've laid an egg...
+3	box	Luckily the amulet of ghostspeak does not seem to have fully discharged.
+3	action	end
+0	section	Talking to Necrovarus after freeing Port Phasmatys
+1	line	Player	Told you I'd defeat you, Necrovarus. My advice to you is to pass over to the next world yourself with everybody else.
+1	line	Necrovarus	I should fry you for what you have done...
+1	line	Player	Quiet, evil priest!! If you try anything I will command you again, but this time it will be to throw yourself into the Endless Void for the rest of eternity.
+1	line	Necrovarus	Please no! I will do whatever you say!!
+1	action	end
+0	section	Talking to Velorina
+1	line	Velorina	You don't need to tell me {player} - I sensed the removal of Necrovarus's psychic barrier!
+1	line	Player	Only happy to help out.
+1	line	Velorina	Here, take this as a thank you for the service that you have given us.
+1	box	Velorina gives you a vial of bright green ectoplasm.
+1	line	Velorina	This is an Ectophial. If you ever want to come back to Port Phasmatys, empty this on the floor beneath your feet, and you will be instantly teleported to the temple - the source of its power.
+1	line	Velorina	Remember that once the Ectophial has been used you need to refill it from the Ectofuntus.
+1	action	end
+0	section	Post-quest dialogue
+0	section	Velorina
+1	select	Select an option
+1	option	I thought you were going to pass over to the next world.
+2	line	Player	I thought you were going to pass over to the next world.
+2	line	Velorina	All in good time, {player}. We stand forever in your debt, and will certainly put in a good word for you when we pass over.
+2	action	end
+1	option	Can I have another Ectophial?
+2	line	Player	Can I have another Ectophial?
+2	line	Velorina	Really? You've already got an Ectophial.
+2	select	Select an option
+2	option	I know, but can I have another one anyway?
+3	line	Player	I know, but can I have another one anyway?
+3	line	Velorina	Of course you can, you have helped us more than we could ever have hoped.
+3	box	Velorina gives you a vial.
+3	action	end
+2	option	Have I? Okay, forget it.
+3	line	Player	Have I? Okay, forget it.
+3	action	end
+0	section	Gravingas
+1	line	Player	Why are you still protesting? I have commanded Necrovarus to let you and your friends do as you like! There's no need for this anymore!
+1	line	Gravingas	There's always a need for a healthy interest in politics.
+1	line	Player	Okay, suit yourself then.
+1	action	end
+0	section	Old crone
+1	line	Player	Good news - the enchantment worked!
+1	line	Old crone	So Necrovarus has let the ghosts go free.... You have achieved many wonderful things, my young friend.
+1	action	end
