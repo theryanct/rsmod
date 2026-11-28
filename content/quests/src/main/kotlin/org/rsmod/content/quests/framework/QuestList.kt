@@ -18,6 +18,7 @@ import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
+import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
@@ -58,6 +59,7 @@ public object BuiltQuests {
             GOBLIN_DIPLOMACY,
             HAZEEL_CULT,
             IMP_CATCHER,
+            JUNGLE_POTION,
             KNIGHTS_SWORD,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
