@@ -1328,3 +1328,35 @@ coords = '1_41_63_13_12'
 [[spawn]]
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
+
+# Pandemonium: Will and Anne on the Port Sarim docks (shown for sailing_intro 0-14).
+[[spawn]]
+npc = 'sailing_intro_will_sarim'
+coords = '0_47_50_16_8'
+
+[[spawn]]
+npc = 'sailing_intro_anne_sarim'
+coords = '0_47_50_17_9'
+
+# Pandemonium: Ribs in the pub, Old Grog by the bar (shown for sailing_intro 40-46).
+[[spawn]]
+npc = 'sailing_intro_ribs'
+coords = '0_47_46_43_30'
+
+[[spawn]]
+npc = 'sailing_intro_grog'
+coords = '0_47_46_39_23'
+
+# Pandemonium: Junior Jim at the shipyard (shown for sailing_intro 28-32), beside the tool crates.
+[[spawn]]
+npc = 'junior_jim_shipyard'
+coords = '0_32_42_37_33'
+
+# Pandemonium: the port masters by the Port Sarim and Pandemonium ledger tables.
+[[spawn]]
+npc = 'port_task_master_port_sarim'
+coords = '0_47_49_21_58'
+
+[[spawn]]
+npc = 'port_task_master_pandemonium'
+coords = '0_47_46_54_41'
