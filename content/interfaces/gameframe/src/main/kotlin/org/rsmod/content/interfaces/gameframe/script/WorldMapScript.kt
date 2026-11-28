@@ -77,6 +77,6 @@ class WorldMapScript @Inject constructor(private val eventBus: EventBus) : Plugi
 }
 
 internal object WorldMapTimers : TimerReferences() {
-    /** Re-sends the player's map position while the world map is open (custom, 65701). */
+    /** Re-sends the player's map position while the world map is open (custom, 65300). */
     val youarehere = find("worldmap_youarehere")
 }
