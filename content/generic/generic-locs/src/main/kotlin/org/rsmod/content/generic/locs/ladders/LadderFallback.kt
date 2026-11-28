@@ -196,6 +196,6 @@ constructor(
         const val PAIR_RADIUS = 20
         const val FREE_RADIUS = 3
         const val BLOCKED = CollisionFlag.BLOCK_WALK or CollisionFlag.LOC
-        val CLIMBABLE_WORDS = listOf("ladder", "stair", "steps", "trapdoor", "hatch", "manhole")
+        val CLIMBABLE_WORDS = listOf("ladder", "stair", "steps", "trapdoor", "hatch", "manhole", "rope", "vine")
     }
 }
