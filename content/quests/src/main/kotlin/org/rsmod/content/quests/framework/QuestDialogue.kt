@@ -1,5 +1,6 @@
 package org.rsmod.content.quests.framework
 
+import org.rsmod.api.config.constants
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.content.quests.framework.QuestDialogue.Node
 
@@ -103,7 +104,8 @@ public interface QuestDialogueHooks {
 
 /**
  * Walks a [QuestDialogue] section inside a [Dialogue]:
- * - lines are chat (the player's or the npc's), `{player}` becomes the player's name;
+ * - lines are chat (the player's or the npc's), `{player}` becomes the player's name and
+ *   gendered "[lad/lass]" pairs pick by body type (A first, B second);
  * - consecutive options form one menu (2-5 entries); a lone option just runs;
  * - consecutive conditions form one branch: the first that [QuestDialogueHooks.condition] accepts;
  * - action `end` stops, `above` / `other` / `previous` show the enclosing menu again; an
@@ -137,7 +139,9 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
                     if (flow != Flow.Continue) return flow
                 }
                 is Node.Box -> {
-                    with(hooks) { if (!onBox(node.text)) mesbox(hooks.rewrite(node.text)) }
+                    with(hooks) {
+                        if (!onBox(node.text)) mesbox(personalise(hooks.rewrite(node.text)))
+                    }
                     val flow = runNodes(node.children, title)
                     if (flow != Flow.Continue) return flow
                 }
@@ -228,8 +232,23 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
         return options[index]
     }
 
+    /** `{player}` -> name; "[lad/lass]" -> first word for body type A, second for B. */
+    private fun Dialogue.personalise(text: String): String {
+        val first = player.appearance.bodyType == constants.bodytype_a
+        return text
+            .replace("{player}", player.displayName)
+            .replace(GENDERED) {
+                val (a, b) = it.destructured
+                when {
+                    (a.lowercase() to b.lowercase()) !in GENDER_PAIRS -> it.value
+                    first -> a
+                    else -> b
+                }
+            }
+    }
+
     private suspend fun Dialogue.line(node: Node.Line) {
-        val text = hooks.rewrite(node.text).replace("{player}", player.displayName)
+        val text = personalise(hooks.rewrite(node.text))
         if (node.speaker.equals("Player", ignoreCase = true)) {
             chatPlayer(neutral, text)
         } else {
@@ -238,3 +257,22 @@ public class QuestDialogueRunner(private val hooks: QuestDialogueHooks) {
     }
 }
 
+/** Wiki "[A/B]" pairs that are body-type words; others ("[red/green]") are left for hooks. */
+private val GENDER_PAIRS =
+    setOf(
+        "lad" to "lass",
+        "sir" to "madam",
+        "man" to "woman",
+        "boy" to "girl",
+        "he" to "she",
+        "him" to "her",
+        "his" to "her",
+        "brother" to "sister",
+        "son" to "daughter",
+        "gentleman" to "lady",
+        "mister" to "miss",
+        "king" to "queen",
+        "lord" to "lady",
+    )
+
+private val GENDERED = Regex("""\[([A-Za-z']+)/([A-Za-z']+)]""")
