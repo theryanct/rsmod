@@ -60,5 +60,6 @@ internal object VarpBuilds : VarpBuilder() {
         build("feature_skillxp_hunter")
         build("feature_skillxp_construction")
         build("feature_skillxp_sailing")
+        build("feature_slayer_points")
     }
 }

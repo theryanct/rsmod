@@ -5,6 +5,7 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.death.NpcKilledEvent
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.features.slayerPointMultiplier
 import org.rsmod.api.player.stat.baseSlayerLvl
 import org.rsmod.api.player.stat.statAdvance
 import org.rsmod.api.player.vars.intVarp
@@ -156,6 +157,15 @@ constructor(
             }
             return
         }
+        if (player.baseSlayerLvl < master.slayerReq) {
+            startDialogue(npc) {
+                chatNpc(
+                    neutral,
+                    "You need a Slayer level of ${master.slayerReq} before I'll give you tasks.",
+                )
+            }
+            return
+        }
         val eligible =
             SlayerData.tasks.filter {
                 it.master == master.key &&
@@ -241,9 +251,11 @@ constructor(
         }
         val streak = hero.slayerStreak + 1
         hero.slayerStreak = streak
-        val points =
+        val basePoints =
             master.milestones.filter { streak % it.first == 0 }.maxByOrNull { it.first }?.second
                 ?: master.points
+        // ::features Slayer point multiplier (whole number, so no rounding is needed).
+        val points = basePoints * hero.slayerPointMultiplier
         hero.slayerPoints = hero.slayerPoints + points
         hero.mes(
             "You've completed $streak tasks in a row and received $points points, giving you a " +

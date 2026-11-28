@@ -14,30 +14,73 @@ import org.rsmod.game.type.varp.VarpType
  *
  * Each toggle is stored as two bits of `feature_flags`: `0` = use [Feature.defaultOn], `1` = on,
  * `2` = off. Per-skill xp multipliers live in one varp per skill, in hundredths; `0` means "not
- * set", which falls back to [skillXpDefaults] and then to [Player.xpRate].
+ * set", which falls back to [skillXpDefaults] and then to [Player.xpRate]. The Slayer point
+ * multiplier is a whole number in `feature_slayer_points` (`0` = not set = 1x).
  */
 public enum class Feature(
     public val key: String,
     public val displayName: String,
     public val defaultOn: Boolean,
     internal val slot: Int,
+    private val declaredCategory: FeatureCategory? = null,
 ) {
-    InfiniteRun("run", "Infinite run energy", defaultOn = true, slot = 0),
-    InfinitePrayer("prayer", "Infinite prayer", defaultOn = false, slot = 1),
-    InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2),
-    InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3),
-    NoHomeTeleportCooldown("hometele", "No home teleport cooldown", defaultOn = true, slot = 4),
-    AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5),
-    NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6),
-    NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7),
-    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8),
+    InfiniteRun("run", "Infinite run energy", defaultOn = true, slot = 0, declaredCategory = FeatureCategory.Movement),
+    InfinitePrayer("prayer", "Infinite prayer", defaultOn = false, slot = 1, declaredCategory = FeatureCategory.Combat),
+    InfiniteHealth("health", "Infinite health", defaultOn = false, slot = 2, declaredCategory = FeatureCategory.Combat),
+    InfiniteRunes("runes", "Infinite runes", defaultOn = true, slot = 3, declaredCategory = FeatureCategory.Combat),
+    NoHomeTeleportCooldown(
+        "hometele",
+        "No home teleport cooldown",
+        defaultOn = true,
+        slot = 4,
+        declaredCategory = FeatureCategory.Movement,
+    ),
+    AutoResumeGathering(
+        "autoresume",
+        "Auto-resume gathering",
+        defaultOn = true,
+        slot = 5,
+        declaredCategory = FeatureCategory.Skilling,
+    ),
+    NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6, declaredCategory = FeatureCategory.Skilling),
+    NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7, declaredCategory = FeatureCategory.Loot),
+    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8, declaredCategory = FeatureCategory.Movement),
     // Slot 9 is taken by QuestGates on the quests branch.
     /** Pickpocket the same npc again after a success; re-steal from a restocked stall. */
-    AutoRepeatThieving("autothieve", "Auto-repeat thieving", defaultOn = true, slot = 10);
+    AutoRepeatThieving(
+        "autothieve",
+        "Auto-repeat thieving",
+        defaultOn = true,
+        slot = 10,
+        declaredCategory = FeatureCategory.Skilling,
+    );
+
+    /**
+     * The menu category: declared on the entry, else by enum name (features added on other
+     * branches before they declare one), else [FeatureCategory.Other].
+     */
+    public val category: FeatureCategory
+        get() = declaredCategory ?: FeatureCategory.byFeatureName[name] ?: FeatureCategory.Other
 
     public companion object {
         public fun forKey(key: String): Feature? =
             entries.firstOrNull { it.key.equals(key, ignoreCase = true) }
+    }
+}
+
+/** Top-level groups of the `::features` menu, in menu order. */
+public enum class FeatureCategory(public val displayName: String) {
+    Movement("Movement & Travel"),
+    Combat("Combat"),
+    Skilling("Skilling"),
+    Loot("Loot"),
+    Quests("Quests"),
+    Other("Other");
+
+    internal companion object {
+        /** Categories for features that don't declare one yet (merged from other branches). */
+        val byFeatureName: Map<String, FeatureCategory> =
+            mapOf("QuestGates" to Quests, "AutoRepeatThieving" to Skilling)
     }
 }
 
@@ -89,6 +132,27 @@ public fun Player.setSkillXpOverride(stat: StatType, rate: Double?) {
 public fun Player.skillXpRate(stat: StatType, rate: Double = xpRate): Double =
     skillXpOverride(stat) ?: skillXpDefault(stat) ?: rate
 
+/** Whole-number multiplier on Slayer task points (incl. streak milestones); default 1. */
+public val Player.slayerPointMultiplier: Int
+    get() = vars[FeatureVarps.slayerPoints].takeIf { it > 0 } ?: 1
+
+/** Sets (or with `null`, resets to 1x) the Slayer point multiplier. */
+public fun Player.setSlayerPointMultiplier(multiplier: Int?) {
+    val value = multiplier?.coerceIn(1, MAX_SLAYER_POINT_MULTIPLIER) ?: 0
+    VarPlayerIntMapSetter.set(this, FeatureVarps.slayerPoints, value)
+}
+
+public const val MAX_SLAYER_POINT_MULTIPLIER: Int = 1000
+
+/** Every toggle back to its default, every skill xp rate cleared, Slayer points back to 1x. */
+public fun Player.resetAllFeatures() {
+    VarPlayerIntMapSetter.set(this, FeatureVarps.flags, 0)
+    for (index in featureSkillNames.indices) {
+        FeatureVarps.skillXpAt(index)?.let { VarPlayerIntMapSetter.set(this, it, 0) }
+    }
+    VarPlayerIntMapSetter.set(this, FeatureVarps.slayerPoints, 0)
+}
+
 private const val STATE_ON = 1
 private const val STATE_OFF = 2
 
@@ -123,9 +187,12 @@ public val featureSkillNames: List<String> =
 
 internal object FeatureVarps : VarpReferences() {
     val flags = find("feature_flags")
+    val slayerPoints = find("feature_slayer_points")
 
     private val skillXp: List<VarpType> = featureSkillNames.map { find("feature_skillxp_$it") }
 
     // featureSkillNames is in stat id order.
     fun skillXp(stat: StatType): VarpType? = skillXp.getOrNull(stat.id)
+
+    fun skillXpAt(index: Int): VarpType? = skillXp.getOrNull(index)
 }

@@ -4537,11 +4537,15 @@ item	beer	4	Beer
 vendor	wildy_hub_pub_owner	1	The Old Nite
 item	beer	2	Beer
 
-# Slayer Equipment (wiki versioned owners: Turael, Mazchna); appended by hand from the generator's output so
+# Slayer Equipment (wiki versioned owners: Turael, Mazchna, Vannaka, Chaeldar, Nieve, Duradel); appended by hand from the generator's output so
 # the other shops keep their inv assignments.
 shop	league_trailblazer_slayershop_preporcine	27	0	1000	600	1	Slayer Equipment (shop)
 npc	slayer_master_1_tureal	4
 npc	slayer_master_2_mazchna	4
+npc	slayer_master_3	4
+npc	slayer_master_4	4
+npc	slayer_master_nieve	4
+npc	slayer_master_5_duradel	4
 stock	slayer_gem	50	100
 stock	slayer_mirror_shield	100	100
 stock	slayer_leafbladed_spear	50	100

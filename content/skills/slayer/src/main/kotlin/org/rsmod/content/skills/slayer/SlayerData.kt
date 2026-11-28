@@ -9,6 +9,8 @@ internal object SlayerData {
         val points: Int,
         /** Every Nth completed task -> bonus points (instead of [points]). */
         val milestones: List<Pair<Int, Int>>,
+        /** Slayer level needed for this master's tasks (Duradel: 50). */
+        val slayerReq: Int = 1,
     ) {
         val id: Int = stableId(key)
     }
@@ -75,7 +77,8 @@ internal object SlayerData {
                         } else {
                             p[6].split(';').map { it.substringBefore(':').toInt() to it.substringAfter(':').toInt() }
                         }
-                    masters.add(Master(p[1], p[2], p[4].toInt(), p[5].toInt(), milestones))
+                    val slayerReq = p.getOrNull(7)?.toIntOrNull() ?: 1
+                    masters.add(Master(p[1], p[2], p[4].toInt(), p[5].toInt(), milestones, slayerReq))
                 }
                 "task" ->
                     tasks.add(
