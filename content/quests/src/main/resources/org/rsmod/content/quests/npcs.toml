@@ -47,3 +47,21 @@ coords = '0_48_52_38_2'
 [[spawn]]
 npc = 'professor_oddenstein'
 coords = '2_48_52_39_39'
+
+# The Knight's Sword: the Squire (Falador Park), Reldo (Varrock library), Thurgo (south of Port
+# Sarim), Sir Vyvin (White Knights' Castle, 2nd floor).
+[[spawn]]
+npc = 'squire'
+coords = '0_46_52_33_14'
+
+[[spawn]]
+npc = 'reldo'
+coords = '0_50_54_10_39'
+
+[[spawn]]
+npc = 'thurgo'
+coords = '0_46_49_57_8'
+
+[[spawn]]
+npc = 'sir_vyvin'
+coords = '2_46_52_40_11'
