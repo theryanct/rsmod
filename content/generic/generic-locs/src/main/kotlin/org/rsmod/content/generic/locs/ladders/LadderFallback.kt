@@ -60,6 +60,13 @@ constructor(
                 locInteractions.apTrigger(player, loc, op, type) == null
         }
 
+        override val auditName: String = "ladder fallback"
+
+        override fun auditCovers(type: UnpackedLocType, shape: Int, coords: CoordGrid, op: Int): Boolean {
+            val label = type.op.getOrNull(op - 1) ?: return false
+            return type.isClimbable() && direction(label) != null
+        }
+
         override suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp) {
             val type = locTypes[loc]
             val label = type.op.getOrNull(op.slot - 1) ?: return

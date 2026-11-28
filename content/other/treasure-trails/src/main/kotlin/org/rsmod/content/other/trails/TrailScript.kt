@@ -46,8 +46,10 @@ import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.interf.InterfaceType
 import org.rsmod.game.type.interf.InterfaceTypeList
 import org.rsmod.game.type.loc.LocTypeList
+import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.inv.InvTypeList
 import org.rsmod.game.type.npc.NpcTypeList
+import org.rsmod.game.type.npc.UnpackedNpcType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.game.type.obj.UnpackedObjType
@@ -464,6 +466,14 @@ constructor(
             return player.heldSteps().any { (_, step) -> step.isSolvedBy(npc) }
         }
 
+        override val auditName: String = "clue step (while held)"
+
+        override fun auditCovers(type: UnpackedNpcType, coords: CoordGrid, op: Int): Boolean =
+            op == 1 &&
+                steps.byRow.values.any {
+                    it.kind != ClueKind.Emote && (it.target as? ClueTarget.Npc)?.npcs?.contains(type.id) == true
+                }
+
         override suspend fun ProtectedAccess.run(npc: Npc, op: InteractionOp) {
             if (uris[player] === npc) {
                 talkUri(npc)
@@ -572,6 +582,20 @@ constructor(
     private inner class LocClaim : OpInterceptors.LocOp {
         override fun claims(player: Player, loc: BoundLocInfo, op: InteractionOp): Boolean =
             op == InteractionOp.Op1 && player.heldSteps().any { (_, step) -> step.isSolvedBy(loc) }
+
+        override val auditName: String = "clue step (while held)"
+
+        override fun auditCovers(type: UnpackedLocType, shape: Int, coords: CoordGrid, op: Int): Boolean =
+            op == 1 &&
+                steps.byRow.values.any {
+                    val (locs, coord) =
+                        when (val target = it.target) {
+                            is ClueTarget.Loc -> target.locs to target.coord
+                            is ClueTarget.Key -> target.locs to target.coord
+                            else -> return@any false
+                        }
+                    type.id in locs && coords.chebyshevDistance(coord) <= 1
+                }
 
         override suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp) {
             val (clue, step) =

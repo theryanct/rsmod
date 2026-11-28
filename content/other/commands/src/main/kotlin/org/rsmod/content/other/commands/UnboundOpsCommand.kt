@@ -5,6 +5,7 @@ import jakarta.inject.Inject
 import java.nio.file.Files
 import java.nio.file.Path
 import org.rsmod.api.player.events.interact.LocContentEvents
+import org.rsmod.api.player.interact.OpInterceptors
 import org.rsmod.api.player.events.interact.LocDefaultEvents
 import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.events.interact.NpcContentEvents
@@ -18,6 +19,7 @@ import org.rsmod.events.SuspendEvent
 import org.rsmod.game.cheat.Cheat
 import org.rsmod.game.entity.NpcList
 import org.rsmod.game.entity.Player
+import org.rsmod.game.entity.PlayerList
 import org.rsmod.game.loc.LocEntity
 import org.rsmod.game.loc.LocZoneKey
 import org.rsmod.game.map.LocZoneStorage
@@ -28,6 +30,7 @@ import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.npc.UnpackedNpcType
+import org.rsmod.map.CoordGrid
 import org.rsmod.map.zone.ZoneKey
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -42,12 +45,15 @@ private val logger = InlineLogger()
  * "Handled" is asked of the live [EventBus] the same way the interaction code asks it: a type
  * script, a content-group script, or a default script for that op (op or ap). A multiloc /
  * multinpc's children are checked as their own rows (any child can be the one a player sees).
- * Quest-state [org.rsmod.api.player.interact.OpInterceptors] claims are per player and not
- * counted, so an op only an interceptor handles is listed.
+ * An op no script binds but an [OpInterceptors] interceptor may claim (door / ladder fallbacks,
+ * clue steps, ...: their `auditCovers`) or that `unbound-ops-notes.tsv` (this module's resources)
+ * explains goes to `.data/logs/unbound-ops-covered.tsv` with who covers it, not the unbound list.
+ * Notes are how world/skilling mark false positives: `kind  id-or-name  op  note`, op `*` = all.
  *
  * It also writes `.data/logs/unbound-ifbuttons.tsv`: every `UNHANDLED` button the server logged in
  * `.data/logs/gameplay*.log` (real clicks, with counts), then the components of the interfaces
- * open for the player running it that have op labels but no button script. The second part can
+ * open for the player running it (or, from a trigger file, for every online player) that have op
+ * labels but no button script. The second part can
  * include buttons the client handles itself (`client_onop` = 1 means the component has a cs2 op
  * listener), so the clicked list is the stronger signal.
  */
@@ -60,6 +66,7 @@ constructor(
     private val locZones: LocZoneStorage,
     private val npcList: NpcList,
     private val componentTypes: ComponentTypeList,
+    private val playerList: PlayerList,
 ) : PluginScript() {
     private val componentsByInterface: Map<Int, List<UnpackedComponentType>> by lazy {
         componentTypes.values.groupBy { it.interfaceId }
@@ -72,6 +79,33 @@ constructor(
     private class Row(val kind: String, val id: Int, val name: String, val op: Int, val label: String) {
         var count = 0
         var sample = ""
+        var coveredBy = ""
+    }
+
+    /** `kind<TAB>id-or-name<TAB>op` (op `opN` or `*`) -> note, from the notes resource. */
+    private val notes: Map<String, String> by lazy { loadNotes() }
+
+    private fun loadNotes(): Map<String, String> {
+        val stream = javaClass.getResourceAsStream("unbound-ops-notes.tsv") ?: return emptyMap()
+        val out = HashMap<String, String>()
+        stream.bufferedReader().useLines { lines ->
+            for (line in lines) {
+                if (line.isBlank() || line.startsWith("#")) continue
+                val cols = line.split('\t')
+                if (cols.size < 4) continue
+                val key = "${cols[0].trim().lowercase()}\t${cols[1].trim().lowercase()}"
+                out["$key\t${cols[2].trim().lowercase()}"] = cols[3].trim()
+            }
+        }
+        return out
+    }
+
+    private fun note(kind: String, id: Int, name: String, op: Int): String? {
+        for (key in listOf(id.toString(), name.lowercase())) {
+            notes["$kind\t$key\top$op"]?.let { return it }
+            notes["$kind\t$key\t*"]?.let { return it }
+        }
+        return null
     }
 
     private fun dump(cheat: Cheat) {
@@ -85,10 +119,14 @@ constructor(
      */
     fun dumpAll(player: Player? = null): String {
         val rows = LinkedHashMap<Long, Row>()
-        fun add(kind: String, id: Int, name: String, op: Int, label: String, coords: String) {
+        val covered = LinkedHashMap<Long, Row>()
+        fun add(kind: String, id: Int, name: String, op: Int, label: String, coords: String, by: String?) {
             val key = (if (kind == "npc") 1L shl 40 else 0L) or (id.toLong() shl 3) or op.toLong()
-            val row = rows.getOrPut(key) { Row(kind, id, name, op, label) }
+            val cover = by ?: note(kind, id, name, op)?.let { "note: $it" }
+            val into = if (cover != null && key !in rows) covered else rows
+            val row = into.getOrPut(key) { Row(kind, id, name, op, label) }
             if (row.count++ == 0) row.sample = coords
+            if (cover != null && row.coveredBy.isEmpty()) row.coveredBy = cover
         }
 
         var locs = 0
@@ -96,11 +134,14 @@ constructor(
             forEachLoc(map) { entity, coords ->
                 locs++
                 val base = locTypes.getOrDefault(entity.id, null) ?: return@forEachLoc
+                val sample = "${coords.x},${coords.z},${coords.level}"
                 for (type in locVariants(base)) {
                     for (op in 1..OPS) {
                         val label = type.op.getOrNull(op - 1) ?: continue
                         if (label.isBlank() || label.equals("hidden", ignoreCase = true)) continue
-                        if (!locHandled(type, op)) add("loc", type.id, type.name, op, label, coords)
+                        if (locHandled(type, op)) continue
+                        val by = OpInterceptors.auditLoc(type, entity.shape, coords, op)
+                        add("loc", type.id, type.name, op, label, sample, by)
                     }
                 }
             }
@@ -114,7 +155,9 @@ constructor(
                 for (op in 1..OPS) {
                     val label = type.op.getOrNull(op - 1) ?: continue
                     if (label.isBlank() || label.equals("hidden", ignoreCase = true)) continue
-                    if (!npcHandled(type, op)) add("npc", type.id, type.name, op, label, coords)
+                    if (npcHandled(type, op)) continue
+                    val by = OpInterceptors.auditNpc(type, npc.coords, op)
+                    add("npc", type.id, type.name, op, label, coords, by)
                 }
             }
         }
@@ -136,9 +179,18 @@ constructor(
                 w.write("${r.kind}\t${r.id}\t${r.name}\top${r.op}\t${r.label}\t${r.count}\t$labelRows\t${r.sample}\n")
             }
         }
+        val coveredOut = out.resolveSibling("unbound-ops-covered.tsv")
+        Files.newBufferedWriter(coveredOut).use { w ->
+            w.write("type\tid\tname\top\tlabel\tspawn_count\tcovered_by\tsample_coord\n")
+            val byCover = covered.values.sortedWith(compareBy<Row> { it.coveredBy }.thenByDescending { it.count })
+            for (r in byCover) {
+                w.write("${r.kind}\t${r.id}\t${r.name}\top${r.op}\t${r.label}\t${r.count}\t${r.coveredBy}\t${r.sample}\n")
+            }
+        }
         val summary =
             "unboundops: ${sorted.size} unhandled ops (${sorted.count { it.kind == "loc" }} loc, " +
-                "${sorted.count { it.kind == "npc" }} npc) across $locs locs and $npcs npcs -> $out"
+                "${sorted.count { it.kind == "npc" }} npc) across $locs locs and $npcs npcs -> $out " +
+                "(${covered.size} covered by fallbacks/claims/notes -> $coveredOut)"
         val buttons = dumpButtons(player)
         val all = "$summary; $buttons interface button rows -> .data/logs/unbound-ifbuttons.tsv"
         logger.info { all }
@@ -173,9 +225,11 @@ constructor(
                 w.write("clicked\t$key\t\t$count\t${lastSeen[key]}\t\n")
                 rows++
             }
+            val players = if (player != null) listOf(player) else playerList.toList()
             val open =
-                if (player == null) emptyList()
-                else player.ui.overlays.values.map { it to true } + player.ui.modals.values.map { it to false }
+                players.flatMap { p ->
+                    p.ui.overlays.values.map { it to true } + p.ui.modals.values.map { it to false }
+                }
             for ((interfaceId, overlay) in open.distinct()) {
                 for (comp in componentsByInterface[interfaceId].orEmpty()) {
                     val handled =
@@ -197,7 +251,7 @@ constructor(
     }
 
     /** Every loc in [map]: brute force over the zone grid (ZoneLocMap has no iterator). */
-    private fun forEachLoc(map: ZoneLocMap, action: (LocEntity, String) -> Unit) {
+    private fun forEachLoc(map: ZoneLocMap, action: (LocEntity, CoordGrid) -> Unit) {
         for (level in 0 until LEVELS) {
             for (zx in 0 until ZONES) {
                 for (zz in 0 until ZONES) {
@@ -209,7 +263,7 @@ constructor(
                         val key = LocZoneKey(entry.byteKey)
                         val x = zx * ZONE_SIZE + key.x
                         val z = zz * ZONE_SIZE + key.z
-                        action(LocEntity(entry.intValue), "$x,$z,$level")
+                        action(LocEntity(entry.intValue), CoordGrid(x, z, level))
                     }
                 }
             }

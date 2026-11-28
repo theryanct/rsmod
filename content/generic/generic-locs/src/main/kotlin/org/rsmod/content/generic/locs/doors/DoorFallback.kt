@@ -11,6 +11,7 @@ import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.loc.LocShape
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.loc.UnpackedLocType
+import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -88,6 +89,15 @@ constructor(
             if (!label.equals(OPEN, ignoreCase = true) && !label.equals(CLOSE, ignoreCase = true)) return false
             return locInteractions.opTrigger(player, loc, op, type) == null &&
                 locInteractions.apTrigger(player, loc, op, type) == null
+        }
+
+        override val auditName: String = "door fallback"
+
+        override fun auditCovers(type: UnpackedLocType, shape: Int, coords: CoordGrid, op: Int): Boolean {
+            if (shape != LocShape.WallStraight.id && shape != LocShape.WallDiagonal.id) return false
+            if (type.multiLoc.isNotEmpty() || type.multiLocDefault > 0) return false
+            val label = type.op.getOrNull(op - 1) ?: return false
+            return label.equals(OPEN, ignoreCase = true) || label.equals(CLOSE, ignoreCase = true)
         }
 
         override suspend fun ProtectedAccess.run(loc: BoundLocInfo, op: InteractionOp) {

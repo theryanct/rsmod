@@ -1,0 +1,4 @@
+# ::unboundops false-positive notes (UnboundOpsCommand). One row per op that is handled some other way
+# or is not meant to do anything. Columns (tab-separated): kind (loc|npc), id or name, op (op1-op5 or *), note.
+# Rows matching here go to .data/logs/unbound-ops-covered.tsv as "note: <note>". Add yours with your session name.
+# kind	id_or_name	op	note
