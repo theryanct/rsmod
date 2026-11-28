@@ -1,0 +1,79 @@
+# Authored (not Wiki: no journal transcript for Zogre Flesh Eaters) in OSRS journal style from the Wiki walkthrough; steps pinned to the quest varbit `zogre` stages (ZogreFleshEaters.kt).
+before	<col=000080>I can start this quest by talking to <col=800000>Grish</col> at <col=800000>Jiggig</col>, south of <col=800000>Castle Wars</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2005</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>Completion of Big Chompy Bird Hunting</col>
+before	<col=800000>Completion of Jungle Potion</col>
+before	<col=800000>Level 4 Smithing</col>
+before	<col=800000>Level 8 Herblore</col>
+before	<col=800000>Level 30 Ranged</col>
+before	<col=800000>Able to defeat a level 111 enemy</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>Level 45 Combat</col>
+before	<col=800000>Level 40 Prayer</col>
+step	1	-	After starting the quest
+line	<col=000080>Grish asked me to find out why undead ogres, <col=800000>Zogres</col>, have risen at <col=800000>Jiggig</col> and to put them back in the ground. The <col=800000>Ogre guard</col> east of Grish should let me past the barricade.</col>
+step	2	-	Inside Jiggig
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<col=000080>The <col=800000>Ogre guard</col> crushed the barricade. I should search the tombs beneath <col=800000>Jiggig</col> for clues: the <col=800000>broken lectern</col>, the <col=800000>skeleton</col> beside it and the <col=800000>coffin</col> nearby. Someone in <col=800000>Yanille</col> may know what I find.</col>
+step	4	-	Investigating Sithik
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<col=000080><col=800000>Zavistic Rarve</col> of the <col=800000>Wizards' Guild</col> recognised the necromantic page and the black prism. He suggested I talk to <col=800000>Sithik Ints</col>, who lodges in the guest house north of the guild. I should gather enough evidence to convince <col=800000>Zavistic</col> that Sithik is involved.</col>
+step	6	-	Convincing Zavistic
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<col=000080>I brought <col=800000>Zavistic</col> enough evidence against Sithik. He gave me a <col=800000>strange potion</col> which should bring on a change in <col=800000>Sithik</col> and loosen his tongue. Perhaps I could slip it into his <col=800000>cup of tea</col>.</col>
+step	7	-	After poisoning the tea
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<str>I brought Zavistic enough evidence against Sithik and he gave me a strange potion for him.</str>
+line	<col=000080>I poured the potion into <col=800000>Sithik's</col> tea. I should go and see what it has done to him.</col>
+step	8	-	Questioning Sithik
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<str>I brought Zavistic enough evidence against Sithik and he gave me a strange potion for him.</str>
+line	<str>I poured the potion into Sithik's tea.</str>
+line	<col=000080>The potion turned <col=800000>Sithik</col> into an ogre! He admitted he paid <col=800000>Brentle Vahn</col> to cast the spell. I should ask him how to remove the spell, how to deal with the undead ogres and how to cure their disease.</col>
+step	9	-	Reporting to Grish
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<str>I brought Zavistic enough evidence against Sithik and he gave me a strange potion for him.</str>
+line	<str>I poured the potion into Sithik's tea.</str>
+line	<str>The potion turned Sithik into an ogre and he confessed.</str>
+line	<col=000080><col=800000>Sithik</col> told me the spell is permanent, how to make <col=800000>brutal arrows</col> and how to make <col=800000>Relicym's balm</col> from <col=800000>rogue's purse</col> and <col=800000>snake weed</col>. I should tell <col=800000>Grish</col> what I have learned.</col>
+step	10	-	Retrieving the artefact
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<str>I brought Zavistic enough evidence against Sithik and he gave me a strange potion for him.</str>
+line	<str>I poured the potion into Sithik's tea.</str>
+line	<str>The potion turned Sithik into an ogre and he confessed.</str>
+line	<str>Sithik told me the spell is permanent, how to make brutal arrows, and how to make Relicym's balm to cure the disease.</str>
+line	<col=000080><col=800000>Grish</col> says the ogres must move their ceremonial grounds. He gave me an <col=800000>ogre gate key</col> to the lower tombs of <col=800000>Jiggig</col> so I can recover the <col=800000>ogre artefact</col> from the stand there. Something nasty may be guarding it.</col>
+step	11	-	Returning the artefact
+line	<str>Grish asked me to find out why undead ogres, Zogres, have risen at Jiggig and to put them back in the ground.</str>
+line	<str>The Ogre guard crushed the barricade and I searched the tombs beneath Jiggig, finding a torn page, a black prism and Brentle Vahn's tankard.</str>
+line	<str>Zavistic Rarve of the Wizards' Guild recognised the necromantic page and the prism, and sent me to question the wizard Sithik Ints.</str>
+line	<str>I brought Zavistic enough evidence against Sithik and he gave me a strange potion for him.</str>
+line	<str>I poured the potion into Sithik's tea.</str>
+line	<str>The potion turned Sithik into an ogre and he confessed.</str>
+line	<str>Sithik told me the spell is permanent, how to make brutal arrows, and how to make Relicym's balm to cure the disease.</str>
+line	<str>Grish gave me a key to the lower tombs to recover the ogres' artefact.</str>
+line	<col=000080>I defeated <col=800000>Slash Bash</col> and recovered the <col=800000>ogre artefact</col>. I should take it back to <col=800000>Grish</col>.</col>
+done	<str>Undead ogres had risen at Jiggig. I discovered that the wizard Sithik Ints had paid Brentle Vahn to curse the ogres' ceremonial burial ground; the spell cost Vahn his life and cannot be undone.</str>
+done	<str>I recovered the ogres' artefact from the undead ourg Slash Bash so Grish can build a new Jiggig, and learned how to make Relicym's balm, brutal arrows and comp ogre bows.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>
