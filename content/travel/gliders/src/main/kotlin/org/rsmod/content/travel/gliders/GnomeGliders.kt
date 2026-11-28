@@ -17,7 +17,6 @@ import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.travel.ships.nearestWalkable
 import org.rsmod.content.travel.ships.sailTo
-import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.comp.ComponentType
 import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.game.type.npc.NpcTypeList
@@ -49,10 +48,16 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
         for (type in npcTypes.values) {
             val name = type.internalName.orEmpty()
             if (!name.startsWith("pilot_") && !name.startsWith("gnormadium_avlafrim")) continue
-            val op = type.op.indexOfFirst { it.equals("Glider", ignoreCase = true) } + 1
-            if (op == 0 || isNpcOpBound(type, op)) continue
-            bind(type, op)
-            bound++
+            for ((index, text) in type.op.withIndex()) {
+                val label = text?.trim() ?: continue
+                val op = index + 1
+                // "Glider" opens the map; "Glider-to <stop>" (Captain Errdo) flies straight there.
+                val quick = Glider.entries.firstOrNull { label.equals("Glider-to ${it.label}", true) }
+                if (!label.equals("Glider", ignoreCase = true) && quick == null) continue
+                if (isNpcOpBound(type, op)) continue
+                bind(type, op, quick)
+                bound++
+            }
         }
         for (dest in Glider.entries) {
             onIfModalButton(dest.button()) { fly(dest) }
@@ -60,21 +65,25 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
         logger.info { "Gnome gliders: bound $bound captains." }
     }
 
-    private fun ScriptContext.bind(type: UnpackedNpcType, op: Int) {
+    private fun ScriptContext.bind(type: UnpackedNpcType, op: Int, quick: Glider?) {
         when (op) {
-            1 -> onOpNpc1(type) { openMap(it.npc) }
-            2 -> onOpNpc2(type) { openMap(it.npc) }
-            3 -> onOpNpc3(type) { openMap(it.npc) }
-            4 -> onOpNpc4(type) { openMap(it.npc) }
-            5 -> onOpNpc5(type) { openMap(it.npc) }
+            1 -> onOpNpc1(type) { use(quick) }
+            2 -> onOpNpc2(type) { use(quick) }
+            3 -> onOpNpc3(type) { use(quick) }
+            4 -> onOpNpc4(type) { use(quick) }
+            5 -> onOpNpc5(type) { use(quick) }
         }
     }
 
-    private fun ProtectedAccess.openMap(npc: Npc) {
+    private suspend fun ProtectedAccess.use(quick: Glider?) {
         if (player.vars[GliderVarps.grandtree] < GRAND_TREE_DONE) {
             mes("You need to complete The Grand Tree quest to fly the gnome gliders.")
             return
         }
+        if (quick != null) fly(quick) else openMap()
+    }
+
+    private fun ProtectedAccess.openMap() {
         ifOpenMainModal(GliderInterfaces.map)
         for (dest in Glider.entries) {
             ifSetEvents(dest.button(), 0..0, IfEvent.Op1)
@@ -83,6 +92,7 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
 
     private suspend fun ProtectedAccess.fly(dest: Glider) {
         ifClose()
+        if (player.vars[GliderVarps.grandtree] < GRAND_TREE_DONE) return
         val here = Glider.entries.minBy { it.arrival.chebyshevDistance(player.coords) }
         if (here == dest && here.arrival.chebyshevDistance(player.coords) <= HERE_RADIUS) {
             mes("You're already here.")
@@ -111,23 +121,26 @@ constructor(private val npcTypes: NpcTypeList, private val collision: CollisionF
 
 /** Glider stops in the cache's `pilot_previous_destination` order (0-6). */
 internal enum class Glider(
+    val label: String,
     val index: Int,
     val arrival: CoordGrid,
     val button: () -> ComponentType,
     val locked: String? = null,
 ) {
-    TaQuirPriw(0, CoordGrid(2465, 3501, 3), { GliderComponents.grandtree }),
-    Gandius(1, CoordGrid(2970, 2972, 0), { GliderComponents.karamja }),
-    KarHewo(2, CoordGrid(3284, 3212, 0), { GliderComponents.alkharid }),
-    LemantoAndra(3, CoordGrid(3321, 3430, 0), { GliderComponents.varrock }),
-    Sindarpos(4, CoordGrid(2848, 3497, 0), { GliderComponents.whitewolf }),
+    TaQuirPriw("Ta Quir Priw", 0, CoordGrid(2465, 3501, 3), { GliderComponents.grandtree }),
+    Gandius("Gandius", 1, CoordGrid(2970, 2972, 0), { GliderComponents.karamja }),
+    KarHewo("Kar-Hewo", 2, CoordGrid(3284, 3212, 0), { GliderComponents.alkharid }),
+    LemantoAndra("Lemanto Andra", 3, CoordGrid(3321, 3430, 0), { GliderComponents.varrock }),
+    Sindarpos("Sindarpos", 4, CoordGrid(2848, 3497, 0), { GliderComponents.whitewolf }),
     LemantollyUndri(
+        "Lemantolly Undri",
         5,
         CoordGrid(2544, 2970, 0),
         { GliderComponents.ogre },
         "This glider needs One Small Favour, which isn't available yet.",
     ),
     OokookollyUndri(
+        "Ookookolly Undri",
         6,
         CoordGrid(2712, 2804, 0),
         { GliderComponents.ape },
