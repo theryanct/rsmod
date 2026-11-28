@@ -1,0 +1,152 @@
+# Generated from the OSRS Wiki page "Transcript:Troll Stronghold" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Denulth
+1	line	Player	Hello!
+1	line	Denulth	Welcome back friend!
+1	select	Select an option
+1	option	How goes your fight with the trolls?
+2	line	Player	How goes your fight with the trolls?
+2	line	Denulth	I'm afraid I have bad news. We made our attack as planned, but we met unexpected resistance.
+2	line	Player	What happened?
+2	line	Denulth	We were ambushed by trolls coming from the north. They captured Dunstan's son, Godric, who we enlisted at your request; we tried to follow but we were repelled at the foot of their stronghold.
+2	cond	If the player's combat level is lower than 50 or have lower than the required skills:
+3	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it. Your combat level is also lower than the recommended level of 50.
+3	action	continue
+2	select	Start the Troll Stronghold quest?
+2	option	Yes.
+3	line	Player	Is there anything I can do to help?
+3	line	Denulth	The way to the stronghold is treacherous, friend. Even if you manage to climb your way up, there will be many trolls defending the stronghold.
+3	line	Player	I'll get Godric back!
+3	line	Denulth	God speed friend! I would send some of my men with you, but none of them are brave enough to follow.
+3	action	end
+2	option	No.
+3	line	Player	I'm sorry to hear that.
+3	action	end
+1	option	I thought the White Knights controlled Asgarnia?
+1	option	See you about Denulth!
+0	section	Talking to Denulth after starting the quest
+1	line	Denulth	How are you getting on with rescuing Godric?
+1	line	Player	I haven't found a way to climb up yet.
+1	line	Denulth	Hurry, friend! Who knows what they'll do with Godric?
+1	action	end
+0	section	Talking to Dunstan
+1	line	Dunstan	Have you managed to rescue Godric yet?
+1	line	Player	Not yet.
+1	line	Dunstan	Please hurry! Who knows what they will do to him? Is there anything I can do in the meantime?
+1	select	Select an option
+1	option	Can you put some spikes on my Climbing boots?
+1	option	Is it OK if I use your anvil?
+1	option	Nothing, thanks.
+0	section	Talking to Tenzig
+1	line	Player	Hello Tenzing!
+1	line	Tenzing	Hello again traveller. What can I do for you?
+1	select	Select an option
+1	option	Can I buy some Climbing boots?
+2	line	Tenzing	Sure, I'll sell you some in your size for 12 gold.
+2	select	Select an option
+2	option	OK, sounds good.
+3	line	Player	OK, sounds good.
+3	cond	If the player has 12 gp:
+4	box	Tenzing has given you some Climbing boots.
+4	line	Tenzing	Was there anything else?
+4	action	above
+3	cond	If the player does not have enough money:
+4	line	Player	I don't have the money on me.
+4	line	Tenzing	Was there anything else?
+4	action	above
+2	option	No, thanks.
+3	line	Player	No, thanks.
+3	line	Tenzing	Was there anything else?
+3	action	above
+1	option	What does a Sherpa do?
+1	option	How did you find out about the secret way?
+1	option	Nice place you have here.
+1	option	Nothing, thanks!
+0	section	Climbing the rocks north of the Death Plateau
+1	cond	If the player does not have level 15 Agility before climbing the rocks:
+2	action	end
+1	cond	If the player has level 15 agility but does not have the climbing boots equipped:
+2	action	end
+1	cond	If the player succeeds in climbing up the rocks:
+2	action	end
+1	cond	If the player slips whilst climbing up the rocks:
+2	line	Player	Ouch
+2	action	end
+0	section	Entering Dad's Arena
+1	line	Dad	No human pass through arena without defeating Dad!
+1	line	Dad	What tiny human do in troll arena? Dad challenge human to fight!
+1	select	Select an option
+1	option	Why are you called Dad?
+2	line	Dad	Troll named after first thing try to eat!
+2	action	end
+1	option	I accept your challenge!
+2	line	Player	I accept your challenge!
+2	line	Dad	Tiny human brave. Dad squish!
+2	action	end
+1	option	Eek! No thanks.
+2	line	Player	Eek! No thanks.
+2	line	Dad	Coward. Dad wait for braver fighter.
+2	action	end
+0	section	After Dad has been defeated
+1	line	Dad	Stop! You win. Not hurt Dad.
+1	select	Select an option
+1	option	I'll be going now.
+2	line	Player	I'll be going now.
+2	action	end
+2	cond	If the player attempts to attack Dad again:
+3	action	end
+2	cond	If the player attempts to talk to dad:
+3	action	end
+1	option	I'm not done yet! Prepare to die!
+2	line	Player	I'm not done yet! Prepare to die!
+2	action	end
+0	section	Entering the prison
+0	section	Talking to Denulth again before freeing the prisoners
+1	line	Player	Hello!
+1	line	Denulth	Welcome back friend!
+1	line	Player	I've found my way into the prison.
+1	line	Denulth	...and?
+1	line	Player	That's all.
+1	line	Denulth	Hurry, friend. Find a way to free Godric!
+1	action	end
+0	section	Retrieving the keys from Twig
+1	cond	If the player chooses to pickpocket Twig:
+2	cond	If the player succeeds in pickpocketing Twig:
+3	action	end
+2	cond	If the player fails to pickpocket Twig:
+3	line	Twig	What do you think you're doing?
+3	action	end
+1	cond	If the player pickpockets Twig again:
+2	action	end
+0	section	Retrieving the keys from Berry
+1	cond	If the player chooses to pickpocket Berry:
+2	cond	If the player succeeds in pickpocketing Berry:
+3	action	end
+2	cond	If the player fails to pickpocket Berry:
+3	line	Berry	What do you think you're doing?
+3	action	end
+1	cond	If the player pickpockets Berry again:
+2	action	end
+0	section	Freeing Eadgar and Godric
+1	cond	If the player attempts to open the door without a key:
+2	action	end
+1	cond	If the player uses Cell key 1 or 2 on either of the doors:
+2	action	end
+1	cond	If the player opens Eadgar's cell with Cell key 2 in their inventory:
+2	line	Eadgar	Thanks! I'm off back home!
+2	action	end
+1	cond	If the player opens Godric's cell with Cell key 1 in their inventory:
+2	line	Godric	Thank you, my friend.
+2	action	end
+0	section	After freeing the prisoners
+0	section	Talking to Denulth
+1	line	Player	I have freed Godric!
+1	line	Denulth	Oh, what great news! You should hurry to tell Dunstan, he will be overjoyed!
+1	action	end
+0	section	Talking to Dunstan
+1	line	Player	Has Godric returned home?
+1	line	Dunstan	He is safe and sound, thanks to you my friend!
+1	line	Player	I'm glad to hear it.
+1	line	Dunstan	I have very little to offer you in way of thanks, but perhaps you will accept this family heirloom. It was found by my great-great-grandfather, but we still don't have any idea what it does.
+1	action	
+1	action	end
