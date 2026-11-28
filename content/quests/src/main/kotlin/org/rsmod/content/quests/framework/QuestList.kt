@@ -23,6 +23,7 @@ import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.
 import org.rsmod.content.quests.elementalworkshop2.ElementalWorkshopII.Companion.ELEMENTAL_WORKSHOP_II
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
+import org.rsmod.content.quests.familycrest.FamilyCrest.Companion.FAMILY_CREST
 import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
 import org.rsmod.content.quests.golem.TheGolem.Companion.THE_GOLEM
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
@@ -104,6 +105,7 @@ public object BuiltQuests {
             ELEMENTAL_WORKSHOP_II,
             ERNEST,
             FAIRYTALE_I,
+            FAMILY_CREST,
             FIGHT_ARENA,
             THE_GOLEM,
             FISHING_CONTEST,
