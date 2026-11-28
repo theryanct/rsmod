@@ -57,7 +57,9 @@ constructor(
 
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, KnightsSwordNpcs.squire, "Talk-to") { talkSquire(it) }
-        onNpcOpLabel(npcTypes, KnightsSwordNpcs.reldo, "Talk-to") { talkReldo(it) }
+        for (reldo in KnightsSwordNpcs.reldos) {
+            onNpcOpLabel(npcTypes, reldo, "Talk-to") { talkReldo(it) }
+        }
         onNpcOpLabel(npcTypes, KnightsSwordNpcs.thurgo, "Talk-to") { talkThurgo(it) }
         onLocOpLabel(locTypes, KnightsSwordLocs.cupboard_shut, "Open") { openCupboard(it) }
         onLocOpLabel(locTypes, KnightsSwordLocs.cupboard_open, "Search") { searchCupboard() }
@@ -309,7 +311,8 @@ constructor(
 
 internal object KnightsSwordNpcs : NpcReferences() {
     val squire = find("squire")
-    val reldo = find("reldo")
+    /** Children of the `reldo` multinpc (the base has no ops). */
+    val reldos = listOf(find("reldo_normal"), find("reldo_withbook"))
     val thurgo = find("thurgo")
 }
 
