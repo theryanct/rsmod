@@ -1,0 +1,45 @@
+# Companion chat lines: <companion>	<event>	<line>  (tab separated; '#' and '//' lines are comments)
+# Events: summon, dismiss, levelup, idle, tier, ko, return, area:<key> (keys in CompanionAreas).
+# "<player>" is replaced with the player's name, "<skill>" with the skill that levelled up.
+# Doric source: ~/code/wiki-cache/Transcript_Doric.md. My Arm source:
+# ~/code/wiki-cache/Transcript_My_Arm's_Big_Adventure.md (and My_Arm.md).
+
+// Authored (not Wiki), based on Doric Wiki dialogue
+doric	summon	Right then, traveller. Let's go and hit some rocks!
+doric	summon	The smithy can mind itself for a while. Lead on!
+doric	dismiss	Back to my anvils, then. They get enough work with my own use.
+doric	dismiss	Safe travels. Say hi to my friends in the Dwarven Mine for me!
+doric	levelup	Good, the love of metal is a thing close to my heart. Well done!
+doric	levelup	Your <skill> is coming along nicely, traveller.
+doric	idle	I make pickaxes, you know. The best in the whole of Gielinor.
+doric	idle	I hope Nurmof isn't running low on my pickaxes.
+doric	idle	Hitting rocks is not for the boring people, whatever they say.
+doric	idle	How is your metalworking coming along?
+doric	tier	You're not bad company for a tall one, <player>.
+doric	tier	I've seen dwarves with less love for metal than you. Proud to mine beside you.
+doric	ko	Ooof! Give me a moment to catch my breath...
+doric	return	Right, I'm back on my feet. Where were we?
+doric	area:mine	Ah, now this is proper rock! Mind you swing that pickaxe true.
+doric	area:dwarven_mine	Home sweet home! Stop in at Nurmof's store and buy one of my pickaxes.
+doric	area:doric_home	My humble smithy. I do enjoy the solitude of my little home.
+doric	area:smithy	Good anvils here. Not as good as mine, mind.
+
+// Authored (not Wiki), based on My Arm Wiki dialogue
+myarm	summon	Okieday! My Arm come with you. My Arm carry your stuffs.
+myarm	summon	Yah, My Arm coming. Just do as I say, yah?
+myarm	dismiss	Okieday, My Arm go back to growing goutweed.
+myarm	dismiss	You smell funny anyway. Bye bye, diddy human.
+myarm	levelup	W00t - <skill> level!
+myarm	levelup	Clever human! My ol' mum say you clever enough.
+myarm	idle	Are we dere yet?
+myarm	idle	You slow. My Arm gettin' bored.
+myarm	idle	My Arm is well ed-oo-cated troll, not some no-brain rockhead.
+myarm	idle	Nuffing interesting happened.
+myarm	idle	You got any goutweed? No? Huh.
+myarm	tier	You my friend now, <player>. My Arm not eat you. Probably.
+myarm	tier	My Arm carry more for you now. Trolls is strong, see?
+myarm	ko	Urrrgh! My Arm feeling sick...
+myarm	return	My Arm back! Nuffing hurts trolls for long.
+myarm	area:trollheim	Dis is home. Burntmeat cooking somefing burnt, smell it?
+myarm	area:farm	Ooh, a patch! I bin planting everythin'. Sticks, rocks, dead goats...
+myarm	area:sea	Trolls don't like da sea. We kinda sink.

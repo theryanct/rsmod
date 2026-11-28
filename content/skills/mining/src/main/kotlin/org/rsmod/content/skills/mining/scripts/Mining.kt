@@ -7,6 +7,7 @@ import org.rsmod.api.config.objParam
 import org.rsmod.api.config.refs.params
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.config.refs.synths
+import org.rsmod.api.player.features.CompanionPerks
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.features.invFullForGathering
@@ -141,6 +142,7 @@ constructor(
         spam("You manage to mine some ${ore.oreName()}.")
         statAdvance(stats.mining, xp)
         invAddGathered(ore)
+        rollCompanionOre(ore)
         rollMinerals(rock, ore)
 
         // Mining Guild: respawns halved (Wiki; runite 12 -> 6 minutes).
@@ -148,6 +150,13 @@ constructor(
         locRepo.change(rock, type.rockEmpty, respawn)
         resetAnim()
         queueResume(rock, type, respawn)
+    }
+
+    /** Doric companion perk ([CompanionPerks]): a % chance of one extra ore (no xp). */
+    private fun ProtectedAccess.rollCompanionOre(ore: UnpackedObjType) {
+        val chance = CompanionPerks.extraOreChance(player)
+        if (chance <= 0 || random.of(100) >= chance) return
+        if (invAddGathered(ore).success) spam("Doric helps you mine an extra ${ore.oreName()}.")
     }
 
     /**
