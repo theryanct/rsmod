@@ -22,20 +22,24 @@ internal object FarmingObjs : ObjReferences() {
     val compost = find("bucket_compost")
     val supercompost = find("bucket_supercompost")
     val bucket = find("bucket_empty")
+    val secateurs = find("secateurs")
+    val trowel = find("gardening_trowel")
+    val plantpot = find("plantpot_empty")
 
     /** Watering cans by charges remaining (index 0 = empty). */
     val watering_cans: List<ObjType> = (0..8).map { find("watering_can_$it") }
 
     val byName: Map<String, ObjType> =
-        FarmingData.crops
-            .flatMap { listOf(it.seed, it.produce) }
+        (FarmingData.crops.flatMap { listOf(it.seed, it.produce) } + FarmingData.compostables)
             .distinct()
             .associateWith { find(it) }
 }
 
 internal object FarmingLocs : LocReferences() {
     val byName: Map<String, LocType> =
-        FarmingData.patches.map { it.loc }.distinct().associateWith { find(it) }
+        (FarmingData.patches.map { it.loc } + FarmingData.bins.map { it.loc })
+            .distinct()
+            .associateWith { find(it) }
 }
 
 internal object FarmingNpcs : NpcReferences() {
@@ -48,33 +52,33 @@ internal object FarmingSeqs : SeqReferences() {
     val watering = find("farming_watering")
     val dig = find("human_dig")
     val pick = find("picking_low")
+    val check = find("human_pickupfloor")
+    val bin = find("human_pickuptable")
     val compost = find("farming_pour_water")
 }
 
 internal object FarmingVarBits : VarBitReferences() {
     val byName: Map<String, VarBitType> =
-        FarmingData.patches.map { it.transmit }.distinct().associateWith { find(it) }
+        (FarmingData.patches.map { it.transmit } + FarmingData.bins.map { it.transmit })
+            .distinct()
+            .associateWith { find(it) }
 }
 
 internal object FarmingTimers : TimerReferences() {
     val refresh = find("farming_refresh")
 }
 
-/** Saved per character (world symbol range 65700-65899: varps 65710-65741). */
+/** Saved per character (world symbol range 65700-65899: varps 65710-65768). */
 internal object FarmingVarpBuilds : VarpBuilder() {
     init {
-        for (patch in FarmingData.patches) {
-            build(patch.stateVarp)
-            build(patch.timeVarp)
+        for (name in FarmingData.varpNames) {
+            build(name)
         }
     }
 }
 
 internal object FarmingVarps : VarpReferences() {
-    val byName: Map<String, VarpType> =
-        FarmingData.patches
-            .flatMap { listOf(it.stateVarp, it.timeVarp) }
-            .associateWith { find(it) }
+    val byName: Map<String, VarpType> = FarmingData.varpNames.associateWith { find(it) }
 }
 
 internal object FarmingNpcSpawns : MapNpcSpawnBuilder() {
