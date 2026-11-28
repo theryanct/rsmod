@@ -9,13 +9,9 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.timer.TimerReferences
-import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 
 internal object GotrLocs : LocReferences() {
-    /** Wizards' Tower basement portal into the Temple of the Eye (multiloc on varbit `tote`). */
-    val tower_portal_parent = find("tote_portal_to_gotr_parent")
-    val tower_portal = find("tote_portal_to_gotr_child")
     /** The temple's way back out to the Wizards' Tower basement. */
     val temple_exit = find("gotr_entry")
     val barrier = find("gotr_barrier")
@@ -131,10 +127,7 @@ internal object GotrSeqs : SeqReferences() {
     val pyramid_death = find("gotr_abyssal_pyramid_death")
 }
 
-internal object GotrVarbits : VarBitReferences() {
-    /** Temple of the Eye progress (world's quest): 130 = complete. */
-    val tote = find("tote")
-}
+
 
 internal object GotrQueues : QueueReferences() {
     /** Custom (ui range 65301/65302): mining / workbench loops. */

@@ -20,7 +20,6 @@ import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifOpenOverlay
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.random.GameRandom
-import org.rsmod.api.player.vars.intVarBit
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.script.isLocOpBound
@@ -85,8 +84,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   per cell use is the Wiki's table; creature numbers, health and damage are solo-tuned.
  *
  * Not yet: the Rewards Guardian and the shop (phase 3); combination runes; Raiments; portal
- * talismans. With QuestGates on, entering the temple needs Temple of the Eye (varbit tote 130,
- * world's quest). Law / death / blood quest gates aren't built yet (open for now).
+ * talismans. Entering the temple is Temple of the Eye's portal (world's quest, which
+ * gates it). Law / death / blood quest gates aren't built yet (open for now).
  */
 class GotrScript
 @Inject
@@ -101,7 +100,6 @@ constructor(
     private val npcRepo: NpcRepository,
     private val npcTypes: NpcTypeList,
 ) : PluginScript() {
-    private var Player.templeOfTheEye by intVarBit(GotrVarbits.tote)
 
     /** A portal guardian: its loc, the altar it leads to, and its HUD key (enums 4270 / 4271). */
     private class Guardian(val loc: LocType, val altarKey: String, val elemental: Boolean, val hud: Int)
@@ -166,8 +164,8 @@ constructor(
     private val games = WeakHashMap<Player, Game>()
 
     override fun ScriptContext.startup() {
-        bindLoc(GotrLocs.tower_portal_parent, 1) { enterTemple() }
-        bindLoc(GotrLocs.tower_portal, 1) { enterTemple() }
+        // The Wizards' Tower basement portal belongs to Temple of the Eye (world's quest), which
+        // lands players in the lobby once the quest is done; GotR only handles the way out.
         bindLoc(GotrLocs.temple_exit, 1) { leaveTemple() }
         bindLoc(GotrLocs.barrier, 1) { passBarrier() }
         bindLoc(GotrLocs.barrier, 3) { passBarrier() }
@@ -219,14 +217,6 @@ constructor(
     }
 
     /* Entering and leaving */
-
-    private fun ProtectedAccess.enterTemple() {
-        if (player.isFeatureOn(Feature.QuestGates) && player.templeOfTheEye < TOTE_COMPLETE) {
-            mes("You need to complete Temple of the Eye to enter the temple.")
-            return
-        }
-        telejump(LOBBY)
-    }
 
     private fun ProtectedAccess.leaveTemple() {
         player.endGame(silent = false)
@@ -896,7 +886,6 @@ constructor(
         val TEMPLE_X = 3580..3650
         val TEMPLE_Z = 9465..9530
         const val BARRIER_Z = 9483
-        val LOBBY = CoordGrid(3615, 9476, 0)
         val TOWER_BASEMENT = CoordGrid(3104, 9571, 0)
         /** Back from a runic altar: just south of the Great Guardian. */
         val TEMPLE_RETURN = CoordGrid(3614, 9497, 0)
@@ -953,7 +942,6 @@ constructor(
         const val TOTAL_CAP = 1200
         const val XP_ENERGY_THRESHOLD = 300
         const val XP_PER_LEVEL = 45
-        const val TOTE_COMPLETE = 130
 
         // Phase 2. Energy and cell xp per tier (weak..overcharged): OSRS Wiki table; the Wiki
         // lists xp 30/100/180/250, read here as tenths like cache xp (3/10/18/25).
