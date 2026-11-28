@@ -9,6 +9,7 @@ import org.rsmod.annotations.GameCache
 import org.rsmod.annotations.Js5Cache
 import org.rsmod.api.cache.types.TypeListMapDecoder
 import org.rsmod.api.cache.types.area.AreaTypeEncoder
+import org.rsmod.api.cache.types.comp.ComponentOpPatcher
 import org.rsmod.api.cache.types.dbrow.DbRowTypeEncoder
 import org.rsmod.api.cache.types.dbtable.DbTableTypeEncoder
 import org.rsmod.api.cache.types.enums.EnumTypeEncoder
@@ -30,6 +31,8 @@ import org.rsmod.api.cache.types.varp.VarpTypeEncoder
 import org.rsmod.api.cache.types.walktrig.WalkTriggerTypeEncoder
 import org.rsmod.api.cache.util.EncoderContext
 import org.rsmod.api.type.builders.resolver.TypeBuilderResolverMap
+import org.rsmod.api.type.editors.comp.ComponentEditor
+import org.rsmod.api.type.editors.comp.ComponentOpEdit
 import org.rsmod.api.type.editors.resolver.TypeEditorResolverMap
 import org.rsmod.api.type.symbols.name.NameMapping
 import org.rsmod.game.type.CacheType
@@ -103,6 +106,21 @@ constructor(
         val tables = transmitTableKeys(configs.dbTables, updates.dbTables)
         encodeCacheTypes(updates, gameCachePath, EncoderContext.server(params, varps, tables))
         encodeCacheTypes(updates, js5CachePath, EncoderContext.client(params, varps, tables))
+        val componentOps = editors.resultValues.filterIsInstance<ComponentOpEdit>()
+        patchComponentOps(componentOps, gameCachePath)
+        patchComponentOps(componentOps, js5CachePath)
+    }
+
+    /** Component op edits ([ComponentEditor]) are patched into the interfaces archive in place. */
+    private fun patchComponentOps(edits: List<ComponentOpEdit>, cachePath: Path) {
+        if (edits.isEmpty()) {
+            return
+        }
+        Cache.open(cachePath).use { cache ->
+            for (edit in edits.filter { it.packed != -1 }) {
+                ComponentOpPatcher.patch(cache, edit.packed) { ComponentEditor.applyOps(it, edit.ops) }
+            }
+        }
     }
 
     /**
