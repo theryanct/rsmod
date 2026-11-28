@@ -9,7 +9,7 @@ import os
 import re
 import sys
 
-SKIP = ('content/travel/canoe',)
+SKIP = ()
 FIND = re.compile(r'find(?:<[^>]*>)?\(\s*"([^"]+)"')
 
 
