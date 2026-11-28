@@ -38,6 +38,7 @@ import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_
 import org.rsmod.content.quests.losttribe.LostTribe.Companion.LOST_TRIBE
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
+import org.rsmod.content.quests.mountaindaughter.MountainDaughter.Companion.MOUNTAIN_DAUGHTER
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
@@ -103,6 +104,7 @@ public object BuiltQuests {
             LOST_TRIBE,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
+            MOUNTAIN_DAUGHTER,
             MURDER_MYSTERY,
             NATURE_SPIRIT,
             OBSERVATORY_QUEST,
