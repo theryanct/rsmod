@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.baseRunecraftingLvl
+import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.script.isHeldOpBound
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
@@ -80,7 +81,7 @@ class EssencePouches @Inject constructor(private val objTypes: ObjTypeList) : Pl
     }
 
     private fun Player.store(pouch: Pouch, count: Int, type: Int) {
-        vars[pouch.varp] = if (count <= 0) 0 else count or (type shl 8)
+        VarPlayerIntMapSetter.set(this, pouch.varp, if (count <= 0) 0 else count or (type shl 8))
     }
 
     private fun ProtectedAccess.fill(pouch: Pouch) {
