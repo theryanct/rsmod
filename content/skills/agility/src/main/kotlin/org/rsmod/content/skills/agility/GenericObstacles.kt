@@ -6,6 +6,11 @@ import org.rsmod.api.config.Constants
 import org.rsmod.api.player.events.interact.LocEvents
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.isLocOpBound
+import org.rsmod.api.script.onApLoc1
+import org.rsmod.api.script.onApLoc2
+import org.rsmod.api.script.onApLoc3
+import org.rsmod.api.script.onApLoc4
+import org.rsmod.api.script.onApLoc5
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -97,6 +102,27 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
                 else -> LocEvents.Op5::class.java
             }
         if (eventBus.contains(event, type.id)) return false
+        if (kind == Kind.SteppingStone) {
+            // Stones sit in water with no adjacent walkable tile, so act from the bank (ap-op with
+            // reach) instead of requiring an adjacent tile like a normal op.
+            val apEvent =
+                when (op) {
+                    1 -> LocEvents.Ap1::class.java
+                    2 -> LocEvents.Ap2::class.java
+                    3 -> LocEvents.Ap3::class.java
+                    4 -> LocEvents.Ap4::class.java
+                    else -> LocEvents.Ap5::class.java
+                }
+            if (eventBus.contains(apEvent, type.id)) return false
+            when (op) {
+                1 -> onApLoc1(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                2 -> onApLoc2(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                3 -> onApLoc3(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                4 -> onApLoc4(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+                5 -> onApLoc5(type) { if (isWithinApRange(it.loc, STONE_REACH)) cross(it.loc, kind) }
+            }
+            return true
+        }
         when (op) {
             1 -> if (!isLocOpBound(type, 1)) onOpLoc1(type) { cross(it.loc, kind) }
             2 -> if (!isLocOpBound(type, 2)) onOpLoc2(type) { cross(it.loc, kind) }
@@ -200,6 +226,8 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
 
     private companion object {
         const val MOVE_TICKS = 2
+        /** Tiles from which a stepping stone can be jumped onto (the bank or the previous stone). */
+        const val STONE_REACH = 2
         const val CLIENT_CYCLES_PER_TICK = 30
     }
 }
