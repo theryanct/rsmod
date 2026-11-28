@@ -1328,3 +1328,42 @@ coords = '1_41_63_13_12'
 [[spawn]]
 npc = 'peng_pushups'
 coords = '1_41_63_17_11'
+
+# Mudfoot's Big Adventure: Captain Harlan outside the Lumbridge general store (Wiki 3218,3238);
+# Mudfoot's multinpcs (goblin house south of the cow field, windmill, H.A.M. woods, graveyard)
+# and the outlaws' (general store, windmill, woods, graveyard).
+[[spawn]]
+npc = 'captain_harlan'
+coords = '0_50_50_18_38'
+
+[[spawn]]
+npc = 'mba_mudfoot_ruined_building'
+coords = '0_50_50_47_51'
+
+[[spawn]]
+npc = 'mba_mudfoot_windmill'
+coords = '0_49_51_38_31'
+
+[[spawn]]
+npc = 'mba_mudfoot_woods'
+coords = '0_49_50_42_50'
+
+[[spawn]]
+npc = 'mba_mudfoot_graveyard'
+coords = '0_50_49_41_14'
+
+[[spawn]]
+npc = 'mba_outlaw_ranged_general_store'
+coords = '0_50_50_12_45'
+
+[[spawn]]
+npc = 'mba_outlaw_ranged_windmill'
+coords = '0_49_51_38_36'
+
+[[spawn]]
+npc = 'mba_outlaw_magic_woods'
+coords = '0_49_50_44_48'
+
+[[spawn]]
+npc = 'mba_outlaw_melee_graveyard'
+coords = '0_50_49_43_12'
