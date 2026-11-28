@@ -307,6 +307,7 @@ constructor(
         if (!isOnTask(hero, npc.id)) {
             return
         }
+        val superior = superiorsById[npc.id]
         if (superior == null) {
             maybeSpawnSuperior(hero, npc)
         }
