@@ -1,5 +1,6 @@
 package org.rsmod.content.skills.smithing.scripts
 
+import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -22,6 +23,8 @@ import org.rsmod.game.type.obj.ObjTypeList
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
+private val logger = InlineLogger()
+
 /**
  * Furnace smelting for bronze, iron and steel bars (OSRS Wiki levels/xp; iron has a 50% chance to
  * fail at a regular furnace). One bar every [SMELT_TICKS] ticks from a weak queue, so walking away
@@ -40,17 +43,26 @@ constructor(
     override fun ScriptContext.startup() {
         // Bind every loc named "Furnace" by the slot of its "Smelt" op (op2 on standard furnaces;
         // tutorial furnaces use "Use"), so new or regional furnaces work without a list.
+        var bound = 0
         for (type in locTypes.values) {
-            if (!type.name.equals("Furnace", ignoreCase = true)) {
+            if (!type.name.contains("furnace", ignoreCase = true)) {
                 continue
             }
-            val slot = type.op.indexOfFirst { it.equals("Smelt", true) || it.equals("Use", true) }
+            // "Use" only for plain "Furnace" (tutorial furnaces); other furnace-named locs (e.g.
+            // blast furnace parts) must have a real "Smelt" op.
+            val exact = type.name.equals("Furnace", ignoreCase = true)
+            val slot =
+                type.op.indexOfFirst {
+                    it.equals("Smelt", ignoreCase = true) || (exact && it.equals("Use", true))
+                }
             if (slot == -1) {
                 continue
             }
             onOpLocSlot(type, slot + 1) { selectBar() }
             onOpLocU(type) { selectBar() }
+            bound++
         }
+        logger.info { "Smelting: bound $bound furnace locs." }
         onPlayerQueueWithArgs<SmeltJob>(SmithingQueues.smelting) { smelt(it.args) }
     }
 
