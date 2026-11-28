@@ -66,7 +66,7 @@ import org.rsmod.plugin.scripts.ScriptContext
  * - Compost bins: fill with 15 compostables, close, wait for it to rot, open, take buckets.
  * - Tool leprechauns note produce, and store tools, a watering can, buckets and compost.
  *
- * Not yet: disease/death, weed regrowth, supercompost, sapling growing, higher tiers.
+ * Not yet: disease/death, weed regrowth, supercompost, higher tiers. Saplings: [Seedlings].
  */
 class Farming
 @Inject
@@ -157,6 +157,7 @@ constructor(
         onOpLocU(base, FarmingObjs.spade) { clear(patch) }
         onOpLocU(base, FarmingObjs.compost) { compost(patch, supercompost = false) }
         onOpLocU(base, FarmingObjs.supercompost) { compost(patch, supercompost = true) }
+        onOpLocU(base, SeedlingObjs.empty_pot) { fillPot(patch) }
         if (patch.kind.wateredOffset > 0) {
             for (can in FarmingObjs.watering_cans.drop(1)) {
                 onOpLocU(base, can) { water(patch, it.objType.id) }
@@ -317,6 +318,7 @@ constructor(
      */
     private fun refresh(player: Player) {
         player.softTimer(FarmingTimers.refresh, REFRESH_TICKS)
+        Seedlings.grow(player, nowMinutes())
         val coords = player.coords
         // Every area in range; the nearest is written last so it wins a shared transmit letter.
         val inRange =
@@ -447,6 +449,23 @@ constructor(
                 else -> "a ${crop.key} seed"
             }
         mes("You plant $seeds in the ${patch.kind.noun}.")
+    }
+
+    /** Wiki "Plant pot": an empty pot used on a weeded, empty patch with a gardening trowel. */
+    private fun ProtectedAccess.fillPot(patch: Patch) {
+        val state = player.state(patch)
+        if (state.crop != null || state.weeds < 3) {
+            mes("This ${patch.kind.noun} needs to be weeded and empty to fill a plant pot.")
+            return
+        }
+        if (SeedlingObjs.trowel !in inv) {
+            mes("You need a gardening trowel to do that.")
+            return
+        }
+        invDel(inv, SeedlingObjs.empty_pot)
+        invAdd(inv, SeedlingObjs.filled_pot)
+        anim(FarmingSeqs.dibbing)
+        mes("You fill the plant pot with soil.")
     }
 
     private fun ProtectedAccess.water(patch: Patch, canId: Int) {
