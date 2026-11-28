@@ -48,8 +48,8 @@ import org.rsmod.routefinder.flag.CollisionFlag
  * - One of the 24 ticket dispensers is active (hint arrow) and moves every minute. Tagging it
  *   gives 30 xp per 10 Agility levels, an Agility arena ticket and a Brimhaven voucher.
  * - Obstacles between pillars give the Wiki xp; failing (authored tier rates, none at 99) drops
- *   the player to the floor with some damage, and the floor ropes climb back up. One plank per
- *   crossing is safe each minute. Floor spikes, pressure pads and spinning blades pay when
+ *   the player to the floor with some damage, and the floor ropes climb back up. Of the three
+ *   planks per crossing only the unbroken one is safe (fixed; OSRS swaps it every minute). Floor spikes, pressure pads and spinning blades pay when
  *   walked over (polled each tick); pressure pads pay twice, then rest for 8 ticks.
  * - Pirate Jackie the Fruit: tickets for 345 xp each; vouchers for noted toadflax/snapdragon,
  *   the pirate's hook, the dark blue graceful recolour and amylase (as 100 crystals). A dialogue
@@ -69,7 +69,6 @@ constructor(
     private class Arena {
         var active = 0
         var rotateIn = BrimhavenTuning.ROTATE_TICKS
-        var cycle = 0
         var tagged = false
         var taggedLast = false
         var offArena = 0
@@ -90,10 +89,6 @@ constructor(
         val map = HashMap<CoordGrid, ArenaTrap>()
         for (trap in data.traps) for (tile in trap.tiles) map[tile] = trap
         map
-    }
-    /** Plank crossings (keyed by fall-tile x) -> their lanes (z) in order; one lane is safe. */
-    private val plankLanes by lazy {
-        data.crosses.filter { it.family == "plank" }.groupBy { it.fall.x }.mapValues { (_, list) -> list.map { it.tile.z }.distinct().sorted() }
     }
 
     override fun ScriptContext.startup() {
@@ -225,7 +220,6 @@ constructor(
     private fun rotate(player: Player, arena: Arena) {
         arena.taggedLast = arena.tagged
         arena.tagged = false
-        arena.cycle++
         arena.rotateIn = BrimhavenTuning.ROTATE_TICKS
         var next = gameRandom.of(dispensers.size)
         if (next == arena.active) next = (next + 1) % dispensers.size
@@ -344,7 +338,7 @@ constructor(
         }
         val failed =
             if (cross.family == "plank") {
-                !safePlank(cross) && player.agilityLvl < BrimhavenTuning.NO_FAIL_LEVEL
+                cross.tile.z !in BrimhavenTuning.SAFE_PLANK_Z && player.agilityLvl < BrimhavenTuning.NO_FAIL_LEVEL
             } else {
                 failRoll(player.agilityLvl, family.level, family.tier)
             }
@@ -359,13 +353,6 @@ constructor(
         val end = land(cross.landing)
         move(family.anim, family.ticks, end)
         statAdvance(stats.agility, family.xp * xpMods.get(player, stats.agility))
-    }
-
-    private fun ProtectedAccess.safePlank(cross: ArenaCross): Boolean {
-        val arena = arenas[player.uid.packed] ?: return true
-        val lanes = plankLanes[cross.fall.x] ?: return true
-        val group = plankLanes.keys.sorted().indexOf(cross.fall.x)
-        return lanes[(arena.cycle + group) % lanes.size] == cross.tile.z
     }
 
     private suspend fun ProtectedAccess.wall(wall: ArenaWall) {

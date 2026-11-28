@@ -105,6 +105,12 @@ internal object BrimhavenTuning {
     val REQUIRE_CONSECUTIVE = false
     /** Wiki: obstacles cannot fail at 99 (and any plank is safe at 99). */
     const val NO_FAIL_LEVEL = 99
+    /**
+     * Plank lanes whose middles are all whole in the cache map (the others place
+     * `agilityarena_plank_broke1`); below 99 the broken planks always fail. Deviation: fixed,
+     * where OSRS changes the safe plank every minute.
+     */
+    val SAFE_PLANK_Z = setOf(9557, 9590)
     /** Wiki: pressure pads pay twice in a row, then nothing for 8 ticks. */
     const val PAD_STREAK = 2
     const val PAD_COOLDOWN = 8
