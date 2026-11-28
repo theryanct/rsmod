@@ -12,6 +12,10 @@ recipe	chisel	chisel	zenyte	1	89	50.0	2	human_dragonstonecutting	-	uncut_zenyte	
 recipe	combine	bowl_water	softclay	1	1	0.0	1	-	bowl_empty	clay	1
 recipe	combine	bucket_water	softclay	1	1	0.0	1	-	bucket_empty	clay	1
 recipe	combine	jug_water	softclay	1	1	0.0	1	-	jug_empty	clay	1
+recipe	combine	water_orb	water_battlestaff	1	54	100.0	2	-	-	battlestaff	1
+recipe	combine	earth_orb	earth_battlestaff	1	58	112.5	2	-	-	battlestaff	1
+recipe	combine	fire_orb	fire_battlestaff	1	62	125.0	2	-	-	battlestaff	1
+recipe	combine	air_orb	air_battlestaff	1	66	137.5	2	-	-	battlestaff	1
 recipe	furnace	-	molten_glass	1	1	20.0	2	human_furnace	-	bucket_sand	1	soda_ash	1
 recipe	furnace	ring_mould	opal_ring	1	1	10.0	3	human_furnace	-	opal	1	silver_bar	1
 recipe	furnace	ring_mould	gold_ring	1	5	15.0	3	human_furnace	-	gold_bar	1
@@ -78,6 +82,23 @@ recipe	needle	needle	leather_armour	1	14	25.0	3	human_leather_crafting	-	leather
 recipe	needle	needle	leather_chaps	1	18	27.0	3	human_leather_crafting	-	leather	1
 recipe	needle	needle	hardleather_body	1	28	35.0	2	human_leather_crafting	-	hard_leather	1
 recipe	needle	needle	coif	1	38	37.0	3	human_leather_crafting	-	leather	1
+recipe	needle	needle	snakeskin_boots	1	45	30.0	3	human_leather_crafting	-	village_snake_skin	6
+recipe	needle	needle	snakeskin_vambraces	1	47	35.0	3	human_leather_crafting	-	village_snake_skin	8
+recipe	needle	needle	snakeskin_bandana	1	48	45.0	3	human_leather_crafting	-	village_snake_skin	5
+recipe	needle	needle	snakeskin_chaps	1	51	50.0	3	human_leather_crafting	-	village_snake_skin	12
+recipe	needle	needle	snakeskin_body	1	53	55.0	3	human_leather_crafting	-	village_snake_skin	15
+recipe	needle	needle	dragon_vambraces	1	57	62.0	3	human_leather_crafting	-	dragon_leather	1
+recipe	needle	needle	dragonhide_chaps	1	60	124.0	3	human_leather_crafting	-	dragon_leather	2
+recipe	needle	needle	dragonhide_body	1	63	186.0	3	human_leather_crafting	-	dragon_leather	3
+recipe	needle	needle	blue_dragon_vambraces	1	66	70.0	3	human_leather_crafting	-	dragon_leather_blue	1
+recipe	needle	needle	blue_dragonhide_chaps	1	68	140.0	3	human_leather_crafting	-	dragon_leather_blue	2
+recipe	needle	needle	blue_dragonhide_body	1	71	210.0	3	human_leather_crafting	-	dragon_leather_blue	3
+recipe	needle	needle	red_dragon_vambraces	1	73	78.0	3	human_leather_crafting	-	dragon_leather_red	1
+recipe	needle	needle	red_dragonhide_chaps	1	75	156.0	3	human_leather_crafting	-	dragon_leather_red	2
+recipe	needle	needle	red_dragonhide_body	1	77	234.0	3	human_leather_crafting	-	dragon_leather_red	3
+recipe	needle	needle	black_dragon_vambraces	1	79	86.0	3	human_leather_crafting	-	dragon_leather_black	1
+recipe	needle	needle	black_dragonhide_chaps	1	82	172.0	3	human_leather_crafting	-	dragon_leather_black	2
+recipe	needle	needle	black_dragonhide_body	1	84	258.0	3	human_leather_crafting	-	dragon_leather_black	3
 recipe	oven	-	bowl_empty	1	1	15.0	7	human_furnace	-	bowl_unfired	1
 recipe	oven	-	cup_empty	1	1	8.5	7	human_furnace	-	cup_unfired	1
 recipe	oven	-	piedish	1	1	10.0	7	human_furnace	-	piedish_unfired	1

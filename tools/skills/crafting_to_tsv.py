@@ -14,9 +14,11 @@ Covers (low-to-mid tiers, one mechanic each):
   chisel   uncut gem -> cut gem
   pipe     glassblowing pipe + molten glass
   string   ball of wool + unstrung amulet/symbol
-  combine  clay + water container -> soft clay (container returned)
+  combine  clay + water container -> soft clay (container returned); orb + battlestaff
 
-Skipped (see the log): quest/minigame items, dragonhide/snakeskin/yak (later PR), crushed-gem
+  needle also covers green-black dragonhide, snakeskin and cured yak-hide.
+
+Skipped (see the log): quest/minigame items, d'hide shields (Smithing nails), crushed-gem
 failure rolls (semi-precious gems never crush here), golden wool, Lunar "String Jewellery".
 
 Output (tab separated):
@@ -99,7 +101,9 @@ SKIP = re.compile(
     r"balloon|token|light orb|slayer ring|bellator|magus|ultor|venator|rabbit foot|eternal",
     re.I,
 )
-NEEDLE_MATS = {"Leather", "Hard leather", "Thread"}
+NEEDLE_MATS = {"Leather", "Hard leather", "Thread", "Green dragon leather", "Blue dragon leather",
+               "Red dragon leather", "Black dragon leather", "Snakeskin", "Cured yak-hide"}
+BATTLESTAFF_ORBS = {"Water orb", "Earth orb", "Fire orb", "Air orb"}
 PIPE_PRODUCTS = {"Beer glass", "Empty candle lantern", "Empty oil lamp", "Vial", "Empty fishbowl",
                  "Unpowered orb", "Lantern lens"}
 
@@ -177,6 +181,9 @@ for r in recipes:
         emit("chisel", "Chisel", product, count, lvl, xp, ticks or 2, GEM_ANIM[product], "-", mats)
     elif tools.strip() == "Glassblowing pipe" and product in PIPE_PRODUCTS:
         emit("pipe", "Glassblowing pipe", product, count, lvl, xp, ticks or 3, ANIM["pipe"], "-", mats)
+    elif not tools.strip() and "Battlestaff" in mat_names and len(mats) == 2 and mat_names & BATTLESTAFF_ORBS:
+        orb = next(m for m in mat_names if m in BATTLESTAFF_ORBS)
+        emit("combine", orb, product, count, lvl, xp, ticks or 2, "-", "-", [("Battlestaff", 1)])
     elif not tools.strip() and "Ball of wool" in mat_names and len(mats) == 2:
         other = [(m, q) for m, q in mats if m != "Ball of wool"]
         emit("string", "Ball of wool", product, count, lvl, xp, ticks or 2, ANIM["string"], "-", other)
