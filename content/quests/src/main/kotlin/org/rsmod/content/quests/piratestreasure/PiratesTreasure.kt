@@ -31,15 +31,17 @@ import org.rsmod.content.quests.framework.passThroughWall
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
+import org.rsmod.content.travel.ships.sailTo
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.loc.BoundLocInfo
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
-import org.rsmod.map.CoordGrid
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjTypeList
+import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
+import org.rsmod.routefinder.collision.CollisionFlagMap
 
 /**
  * Pirate's Treasure (OSRS Wiki). `hunt` varp (cache db end state 4): 0, 1 Frank wants Karamjan
@@ -67,6 +69,7 @@ constructor(
     private val objRepo: ObjRepository,
     private val xpMods: XpModifiers,
     private val aiInteractions: AiPlayerInteractions,
+    private val collision: CollisionFlagMap,
 ) : PluginScript() {
     private val dialogue by lazy {
         QuestDialogue.load(PiratesTreasure::class.java, "pirates_treasure")
@@ -95,19 +98,23 @@ constructor(
 
         onLocOpLabel(locTypes, PirateLocs.chest, "Open") { mes("The chest is locked.") }
         onOpLocU(PirateLocs.chest, PirateObjs.chest_key) { unlockChest(it.loc) }
-        onLocOpLabel(locTypes, PirateLocs.chest_open, "Search") {
-            mes("The chest is empty.")
-        }
+        // Rev 243: the opened chest (piratechestopen) has no ops; the key does the work.
         onHeldOpLabel(objTypes, PirateObjs.message, "Read") { readMessage() }
         QuestDigSpots.register { dig() }
         onHeldOpLabel(objTypes, PirateObjs.casket, "Open") { openCasket() }
 
+        // Rev 243: the sailors and customs officer are multinpcs on `sailing_intro`; the default
+        // child travels with "Travel", the Sailing-unlocked one names the port.
         for (seaman in PirateNpcs.seamen) {
             onNpcOpLabel(npcTypes, seaman, "Talk-to") { talkSeaman(it) }
-            onNpcOpLabel(npcTypes, seaman, "Pay-fare") { sail(TO_KARAMJA, "Karamja") }
+            onNpcOpLabel(npcTypes, seaman, "Travel") { sail(TO_KARAMJA, "Karamja") }
+            onNpcOpLabel(npcTypes, seaman, "Musa Point") { sail(TO_KARAMJA, "Karamja") }
         }
-        onNpcOpLabel(npcTypes, PirateNpcs.customs, "Talk-to") { talkCustoms(it) }
-        onNpcOpLabel(npcTypes, PirateNpcs.customs, "Pay-Fare") { customsFare() }
+        for (customs in PirateNpcs.customs) {
+            onNpcOpLabel(npcTypes, customs, "Talk-to") { talkCustoms(it) }
+            onNpcOpLabel(npcTypes, customs, "Travel") { customsFare() }
+            onNpcOpLabel(npcTypes, customs, "Port Sarim") { customsFare() }
+        }
     }
 
     private val ProtectedAccess.state: Int
@@ -466,16 +473,9 @@ constructor(
         sail(TO_PORT_SARIM, "Port Sarim")
     }
 
+    /** The 30-coin boat (content/travel/ships). */
     private suspend fun ProtectedAccess.sail(dest: CoordGrid, place: String) {
-        if (!carries(PirateObjs.coins, FARE)) {
-            mes("You need $FARE coins to pay for the trip.")
-            return
-        }
-        invDel(inv, PirateObjs.coins, FARE)
-        mes("You pay $FARE coins and board the ship.")
-        delay(SAIL_TICKS)
-        telejump(dest)
-        mes("The ship arrives at $place.")
+        sailTo(dest, FARE, "You pay $FARE coins and board the ship to $place.", collision)
     }
 
     companion object {
@@ -489,7 +489,6 @@ constructor(
         private const val CRATE_SIZE = 10
         private const val CRATE_PAY = 30
         private const val FARE = 30
-        private const val SAIL_TICKS = 3
         private const val BANANA_RESPAWN_TICKS = 100
         private const val CHEST_TICKS = 100
         private const val GARDENER_TICKS = 200
@@ -518,8 +517,17 @@ constructor(
 internal object PirateNpcs : NpcReferences() {
     val frank = find("redbeard_frank")
     val luthas = find("luthas")
-    val customs = find("customs_officer")
-    val seamen = listOf(find("seaman_lorris"), find("seaman_thresnor"), find("captain_tobias"))
+    /* Children of the customs_officer / seaman_* / captain_tobias multinpcs (sailing_intro). */
+    val customs = listOf(find("customs_officer_1op"), find("customs_officer_2op"))
+    val seamen =
+        listOf(
+            find("seaman_lorris_1op"),
+            find("seaman_lorris_2op"),
+            find("seaman_thresnor_1op"),
+            find("seaman_thresnor_2op"),
+            find("captain_tobias_1op"),
+            find("captain_tobias_2op"),
+        )
     val wydin = find("wydin")
     val gardener = find("falador_gardener")
 }

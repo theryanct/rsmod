@@ -6,4 +6,5 @@ dependencies {
     implementation(projects.api.pluginCommons)
     implementation(projects.api.registry)
     implementation(projects.content.skills.mining)
+    implementation(projects.content.travel.ships)
 }

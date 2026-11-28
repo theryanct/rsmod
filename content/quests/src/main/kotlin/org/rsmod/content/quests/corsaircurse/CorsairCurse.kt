@@ -29,6 +29,7 @@ import org.rsmod.content.quests.framework.onNpcOpLabel
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
+import org.rsmod.content.travel.ships.sailTo
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcTypeList
@@ -36,6 +37,7 @@ import org.rsmod.game.type.varbit.VarBitType
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
+import org.rsmod.routefinder.collision.CollisionFlagMap
 
 /**
  * The Corsair Curse (OSRS Wiki). Varbit `corscurs_progress` (cache db end state 60; the cache
@@ -65,6 +67,7 @@ constructor(
     private val xpMods: XpModifiers,
     private val aiInteractions: AiPlayerInteractions,
     private val cutscenes: CutsceneRunner,
+    private val collision: CollisionFlagMap,
 ) : PluginScript() {
     private val dialogue by lazy { QuestDialogue.load(CorsairCurse::class.java, "corsair_curse") }
 
@@ -125,12 +128,12 @@ constructor(
 
     /* Captain Tock and the ferry */
 
+    /** Tock's ferry (content/travel/ships; free, quest-gated). */
     private suspend fun ProtectedAccess.sail() {
-        if (state < SAILED) return
         val dest = if (atCove()) RIMMINGTON_LANDING else COVE_LANDING
-        mes("The ship sails...")
-        delay(SAIL_TICKS)
-        telejump(dest)
+        sailTo(dest, fare = 0, message = "The ship sails...", collision = collision, fade = false) {
+            state >= SAILED
+        }
     }
 
     private suspend fun ProtectedAccess.talkTock(npc: Npc) {
@@ -454,7 +457,6 @@ constructor(
         private const val DEBUNKED = 3
         private const val FRANCOIS = 4
 
-        private const val SAIL_TICKS = 3
         private const val ITHOI_TICKS = 500
         private const val DOLL_CRAFTING = 18
         private const val FIREMAKING_XP = 1200.0
