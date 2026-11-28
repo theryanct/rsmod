@@ -290,3 +290,29 @@ coords = '1_39_44_50_46'
 [[spawn]]
 npc = 'ogress_tess'
 coords = '1_31_140_30_43'
+
+# Romeo & Juliet: Romeo (Varrock square), Juliet + Phillipa upstairs and Draul Leptoc in their
+# house, Father Lawrence (church), the Apothecary.
+[[spawn]]
+npc = 'romeo'
+coords = '0_50_53_11_33'
+
+[[spawn]]
+npc = 'juliet_multi_visible'
+coords = '1_49_53_23_34'
+
+[[spawn]]
+npc = 'phillipa'
+coords = '1_49_53_26_39'
+
+[[spawn]]
+npc = 'draul_leptoc'
+coords = '0_49_53_25_44'
+
+[[spawn]]
+npc = 'father_lawrence'
+coords = '0_50_54_54_29'
+
+[[spawn]]
+npc = 'apothecary'
+coords = '0_49_53_59_12'
