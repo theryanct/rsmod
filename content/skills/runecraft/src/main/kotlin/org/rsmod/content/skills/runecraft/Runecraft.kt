@@ -2,6 +2,10 @@ package org.rsmod.content.skills.runecraft
 
 import jakarta.inject.Inject
 import kotlin.math.abs
+import org.rsmod.map.CoordGrid
+import org.rsmod.routefinder.collision.CollisionFlagMap
+import org.rsmod.routefinder.flag.CollisionFlag
+import org.rsmod.api.player.front
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.hat
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -44,7 +48,10 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 /**
- * Runecraft PR1: the six F2P altars (air, mind, water, earth, fire, body), data from the OSRS Wiki.
+ * Runecraft (OSRS Wiki data): the six F2P altars (PR1) plus cosmic, chaos, nature, law, death and
+ * wrath through their ruins, the astral walk-up altar (pure essence only, PR2), and combination
+ * runes (mist/dust/mud/smoke/steam/lava: an element talisman on another element's altar). Blood and
+ * soul (Morytania / Arceuus dark essence) and the Abyss are not included.
  * - Mysterious ruins: use the talisman on them, or "Enter" while wearing the matching tiara (the
  *   ruins are a multiloc on `rc_no_tally_required_<rune>`, which is kept in sync with the hat).
  * - Altars: "Craft-rune" binds all carried rune/pure essence, with extra runes per essence at every
@@ -62,18 +69,32 @@ constructor(
     private val npcTypes: NpcTypeList,
     private val objTypes: ObjTypeList,
     private val xpMods: XpModifiers,
+    private val collision: CollisionFlagMap,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         for (altar in RunecraftData.altars) {
-            val ruins = loc(altar.ruins)
-            val talisman = obj(altar.talisman)
-            onOpLocU(ruins, talisman) { enterRuins(altar, viaTalisman = true) }
-            onLocOp(loc(altar.ruinsEnter), "Enter") { enterRuins(altar, viaTalisman = false) }
+            val talisman = altar.talisman?.let(::obj)
+            val ruins = altar.ruins?.let(::loc)
+            if (ruins != null && talisman != null) {
+                onOpLocU(ruins, talisman) { enterRuins(altar, viaTalisman = true) }
+            }
+            altar.ruinsEnter?.let { onLocOp(loc(it), "Enter") { enterRuins(altar, viaTalisman = false) } }
             onLocOp(loc(altar.altar), "Craft-rune") { craftRunes(altar) }
-            onOpLocU(loc(altar.altar), RunecraftObjs.tiara) { bindTiara(altar) }
-            onOpLocU(loc(altar.altar), talisman) { bindTiara(altar) }
-            onLocOp(loc(altar.portal), "Use") { leaveAltar(altar) }
-            onHeldOp(talisman, "Locate") { locate(altar) }
+            if (talisman != null && altar.tiara != null) {
+                onOpLocU(loc(altar.altar), RunecraftObjs.tiara) { bindTiara(altar) }
+                onOpLocU(loc(altar.altar), talisman) { bindTiara(altar) }
+            }
+            altar.portal?.let { onLocOp(loc(it), "Use") { leaveAltar(altar) } }
+            if (talisman != null) {
+                onHeldOp(talisman, "Locate") { locate(altar) }
+            }
+        }
+        // Combination runes: an element's talisman used on another element's altar.
+        val altarsByKey = RunecraftData.altars.associateBy { it.key }
+        for (combo in RunecraftData.combos) {
+            val altar = altarsByKey.getValue(combo.altar)
+            val talisman = obj(altarsByKey.getValue(combo.talisman).talisman!!)
+            onOpLocU(loc(altar.altar), talisman) { craftCombo(combo, talisman) }
         }
         onLocOp(RunecraftLocs.essence_rock, "Mine") { mineEssence(it) }
         for (portal in RunecraftLocs.mine_portals) {
@@ -102,11 +123,30 @@ constructor(
         }
         mes("You feel a powerful force take hold of you...")
         delay(1)
-        telejump(altar.inside)
+        telejump(arrival(altar, altar.inside))
     }
 
     private fun ProtectedAccess.leaveAltar(altar: Altar) {
-        telejump(altar.outside)
+        telejump(arrival(altar, altar.outside))
+    }
+
+    /** PR2 altars use Wiki map pins (the altar / ruins tile): step onto the nearest free tile. */
+    private fun arrival(altar: Altar, pin: CoordGrid): CoordGrid {
+        if (!altar.pinned) {
+            return pin
+        }
+        for (r in 1..ARRIVAL_RADIUS) {
+            for (dz in -r..r) {
+                for (dx in -r..r) {
+                    if (maxOf(abs(dx), abs(dz)) != r) continue
+                    val tile = pin.translate(dx, dz)
+                    if ((collision[tile.x, tile.z, tile.level] and BLOCKED) == 0) {
+                        return tile
+                    }
+                }
+            }
+        }
+        return pin
     }
 
     private fun ProtectedAccess.locate(altar: Altar) {
@@ -122,8 +162,9 @@ constructor(
     private fun syncRuinsVarbits(player: Player) {
         val hat = player.hat?.id
         for (altar in RunecraftData.altars) {
-            val varbit = RunecraftVarBits.byName.getValue(altar.varbit)
-            val value = if (hat == obj(altar.tiara).id) 1 else 0
+            val varbit = RunecraftVarBits.byName[altar.varbit] ?: continue
+            val tiara = altar.tiara ?: continue
+            val value = if (hat == obj(tiara).id) 1 else 0
             if (player.vars[varbit] != value) {
                 VarPlayerIntMapSetter.set(player, varbit, value)
             }
@@ -137,11 +178,16 @@ constructor(
             mes("You need a Runecraft level of ${altar.level} to infuse these runes.")
             return
         }
-        val rune = invTotal(inv, RunecraftObjs.rune_essence)
+        // Members runes take pure essence only; rune essence stays in the inventory.
+        val rune = if (altar.pureOnly) 0 else invTotal(inv, RunecraftObjs.rune_essence)
         val pure = invTotal(inv, RunecraftObjs.pure_essence)
         val essence = rune + pure
         if (essence == 0) {
-            mes("You do not have any rune essence to bind.")
+            if (altar.pureOnly && invTotal(inv, RunecraftObjs.rune_essence) > 0) {
+                mes("This altar needs pure essence to bind ${altar.key} runes.")
+            } else {
+                mes("You do not have any rune essence to bind.")
+            }
             return
         }
         if (rune > 0) invDel(inv, RunecraftObjs.rune_essence, rune)
@@ -154,14 +200,43 @@ constructor(
         mes("You bind the temple's power into ${altar.key} runes.")
     }
 
+    /**
+     * Combination runes: pure essence + one of the talisman's element runes each; the talisman is
+     * used up. Without a binding necklace worn, each bind has a 50% chance to fail.
+     */
+    private fun ProtectedAccess.craftCombo(combo: RunecraftData.Combo, talisman: ObjType) {
+        if (player.runecraftingLvl < combo.level) {
+            mes("You need a Runecraft level of ${combo.level} to combine these runes.")
+            return
+        }
+        val runeObj = obj(combo.rune)
+        val count = minOf(invTotal(inv, RunecraftObjs.pure_essence), invTotal(inv, runeObj))
+        if (count == 0) {
+            mes("You need pure essence and ${objTypes[runeObj].name.lowercase()}s to combine runes here.")
+            return
+        }
+        val necklace = player.front?.id == objTypes[RunecraftObjs.binding_necklace].id
+        val made = if (necklace) count else (0 until count).count { random.of(0, 1) == 1 }
+        invDel(inv, RunecraftObjs.pure_essence, count, runeObj, count)
+        invDel(inv, talisman, 1)
+        anim(RunecraftSeqs.bind)
+        spotanim(RunecraftSpotanims.bind, height = 92)
+        if (made > 0) {
+            invAdd(inv, obj(combo.product), made)
+            statAdvance(stats.runecrafting, made * combo.xp * xpMods.get(player, stats.runecrafting))
+        }
+        val name = objTypes[obj(combo.product)].name.lowercase()
+        mes(if (made == count) "You bind the temple's power into ${name}s." else "You partially succeed to bind the temple's power into ${name}s.")
+    }
+
     private fun ProtectedAccess.bindTiara(altar: Altar) {
-        val talisman = obj(altar.talisman)
+        val talisman = obj(altar.talisman!!)
         if (invTotal(inv, RunecraftObjs.tiara) == 0 || invTotal(inv, talisman) == 0) {
             mes("You need a tiara and ${altar.key} talisman to do that.")
             return
         }
         invDel(inv, RunecraftObjs.tiara, 1, talisman, 1)
-        invAdd(inv, obj(altar.tiara))
+        invAdd(inv, obj(altar.tiara!!))
         anim(RunecraftSeqs.bind)
         spotanim(RunecraftSpotanims.bind, height = 92)
         statAdvance(
@@ -299,3 +374,6 @@ constructor(
         }
     }
 }
+
+private const val ARRIVAL_RADIUS = 6
+private const val BLOCKED = CollisionFlag.BLOCK_WALK or CollisionFlag.LOC
