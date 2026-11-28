@@ -4,9 +4,77 @@ Args: pages.json obj.sym out.toml existing_objs.toml [existing_objs.toml ...]
 
 Spawns whose (coords, obj) already exist in any of the given existing toml files are skipped, so
 hand-curated area modules take precedence. Pass every content objs.toml except the output file.
+
+Options (before the positional args):
+  --cache DIR --xteas FILE  check every spawn against the cache map locs and log the ones on a
+                            wall-decoration tile (loc shapes 4-8).
+  --move-wall-decor         also move those spawns to the nearest tile in the same room (BFS
+                            that does not cross walls) without wall decoration or a
+                            centrepiece loc. Off by default: most such wiki spawns are authentic.
+MOVES below always applies: hand-checked spawns that render floating in-game (Ryan's reports).
 """
-import json, re, sys
+import json, os, re, sys
 from collections import Counter
+
+# (obj, wiki x, wiki z, plane) -> (x, z): spawns confirmed floating in-game.
+MOVES = {
+    ("hammer", 3223, 3252, 0): (3223, 3253),  # Lumbridge furnace house: on workbench2 + shutterwindow
+}
+
+args = sys.argv[1:]
+opts = {}
+while args and args[0].startswith("--"):
+    k = args.pop(0)[2:]
+    opts[k] = True if k == "move-wall-decor" else args.pop(0)
+sys.argv = [sys.argv[0]] + args
+
+decor_at = None
+if "cache" in opts:
+    here = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, os.path.join(here, "..", "agility"))
+    sys.path.insert(0, os.path.join(here, "..", "npc-anims"))
+    from maplocs import locs_in_square, load_keys
+    from jagcache import Cache
+    _cache, _keys, _squares = Cache(opts["cache"]), load_keys(opts["xteas"]), {}
+
+    def locs_at(x, z, plane):
+        sq = (x >> 6, z >> 6)
+        if sq not in _squares:
+            by_tile = {}
+            for loc in locs_in_square(_cache, _keys, *sq):
+                by_tile.setdefault((loc[1], loc[2], loc[3]), []).append(loc)
+            _squares[sq] = by_tile
+        return _squares[sq].get((x, z, plane), [])
+
+    def decor_at(x, z, plane):
+        return [l for l in locs_at(x, z, plane) if 4 <= l[4] <= 8]
+
+    # Wall edges: rotation 0=west 1=north 2=east 3=south; shape 0 straight, 2 L-corner (r and r+1).
+    EDGE = {0: (-1, 0), 1: (0, 1), 2: (1, 0), 3: (0, -1)}
+
+    def blocked_edges(x, z, plane):
+        edges = set()
+        for l in locs_at(x, z, plane):
+            if l[4] == 0: edges.add(EDGE[l[5]])
+            elif l[4] == 2: edges |= {EDGE[l[5]], EDGE[(l[5] + 1) & 3]}
+        return edges
+
+    def nearest_clear(x, z, plane, radius=3):
+        seen, frontier = {(x, z)}, [(x, z)]
+        for _ in range(radius):
+            nxt = []
+            for cx, cz in frontier:
+                for dx, dz in ((0, 1), (1, 0), (0, -1), (-1, 0)):
+                    nx, nz = cx + dx, cz + dz
+                    if (nx, nz) in seen: continue
+                    if (dx, dz) in blocked_edges(cx, cz, plane) or (-dx, -dz) in blocked_edges(nx, nz, plane): continue
+                    seen.add((nx, nz))
+                    here_locs = locs_at(nx, nz, plane)
+                    if any(9 <= l[4] <= 11 for l in here_locs): continue  # centrepiece (table, bench, ...)
+                    if not any(4 <= l[4] <= 8 for l in here_locs): return nx, nz
+                    nxt.append((nx, nz))
+            frontier = nxt
+        return None
 
 pages = json.load(open(sys.argv[1], encoding="utf-8"))
 sym = {}
@@ -75,6 +143,14 @@ for title, text in pages.items():
             x, z, rest = int(c.group(1)), int(c.group(2)), c.group(3)
             q = re.search(r"qty:(\d+)", rest); qty = int(q.group(1)) if q else 1
             pl = re.search(r"plane:(\d)", rest); plane = int(pl.group(1)) if pl else line_plane
+            if (sym[oid], x, z, plane) in MOVES:
+                x, z = MOVES[(sym[oid], x, z, plane)]; skipped["moved_manual"] += 1
+            elif decor_at and decor_at(x, z, plane):
+                skipped["on_wall_decor"] += 1
+                if opts.get("move-wall-decor"):
+                    to = nearest_clear(x, z, plane)
+                    if to: x, z = to; skipped["moved_wall_decor"] += 1
+                    else: skipped["wall_decor_no_clear_tile"] += 1
             coords = f"{plane}_{x>>6}_{z>>6}_{x&63}_{z&63}"
             key = (sym[oid], coords)
             if key in existing: skipped["existing"] += 1; continue
