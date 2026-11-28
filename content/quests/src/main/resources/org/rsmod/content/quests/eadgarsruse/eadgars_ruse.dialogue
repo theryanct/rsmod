@@ -1,0 +1,478 @@
+# Generated from the OSRS Wiki page "Transcript:Eadgar's Ruse" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Talking to Sanfew
+1	line	Sanfew	What can I do for you young 'un?
+1	select	Select an Option
+1	option	Ask about Sanfew Serum.
+1	option	Ask general questions.
+2	select	Select an Option
+2	option	Have you any more work for me, to help reclaim the circle?
+3	line	Player	Have you any more work for me, to help reclaim the circle?
+3	cond	If the player doesn't have the requirements to start Eadgar's Ruse.
+4	line	Sanfew	Not just yet, young 'un.
+4	box	You do not meet all of the requirements to start the Eadgar's Ruse quest.
+4	action	end
+3	cond	If the player has the requirements for Eadgar's Ruse except Herblore level:
+4	line	Sanfew	'm afraid you are not yet learned enough in the art of Herblore to be able to help me, adventurer...
+4	box	You do not meet all of the requirements to start the Eadgar's Ruse quest.
+4	action	end
+3	cond	If the player has the requirements to start Eadgar's Ruse.
+4	line	Sanfew	Ah, you've come just in time. I need a certain herb for the next part of the purification ritual...
+4	line	Sanfew	It used to be quite common, but nowadays only the trolls know where to find it. They use it in their cooking, you see. It's a very prized ingredient.
+4	line	Player	And what exactly do you want me to do?
+4	line	Sanfew	Journey to the north into the land of the trolls, and find the secret of the herb the trolls call 'goutweed'.
+4	line	Sanfew	My friend Eadgar lives in the area, and he may be able to help you. Bring some goutweed back and I will teach you something useful.
+4	cond	If the player boosted Herblore to start the quest.
+5	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it.
+4	select	Start the Eadgar's Ruse quest?
+4	option	Yes.
+5	line	Player	I'll do it.
+5	line	Sanfew	Thank you, adventurer!
+5	action	end
+4	option	No.
+5	line	Player	No thanks.
+5	line	Sanfew	Oh well. No doubt some other adventurer will eventually come who can help me.
+5	action	end
+3	option	Actually, I don't need to speak to you.
+4	line	Player	Actually, I don't need to speak to you.
+4	line	Sanfew	Well, we all make mistakes sometimes.
+4	action	end
+0	section	Talking to Sanfew after starting the quest
+1	line	Sanfew	What can I do for you young 'un?
+1	select	Select an Option
+1	option	Ask about Sanfew Serum.
+1	option	Ask general questions.
+2	select	Select an Option
+2	option	What was I meant to be doing again?
+3	line	Player	What was I meant to be doing again?
+3	line	Sanfew	I've told you already.
+3	line	Sanfew	Journey to the north into the land of the trolls, and find the secret of the herb the trolls call goutweed.
+3	line	Sanfew	My friend Eadgar lives in the area, and he may be able to help you. Bring some goutweed back and I will teach you something useful.
+3	line	Player	I'll get on with it.
+3	action	end
+2	option	Actually, I don't need to speak to you.
+3	action	above
+0	section	Searching the laundry basket
+1	box	You search the laundry basket... It's full of dirty robes.
+1	action	end
+0	section	Talking to Tegid
+1	line	Player	So, you're doing laundry, eh?
+1	line	Tegid	Yes. What is it to you?
+1	line	Player	Nice day for it.
+1	line	Tegid	I suppose it is.
+1	action	end
+0	section	Searching the rack
+1	box	You look under the rack but find nothing.
+1	action	end
+0	section	Finding Eadgar
+0	section	Taking to Eadgar before talking to Burntmeat
+1	line	Player	Hi!
+1	line	Eadgar	Welcome to Mad Eadgar's! Happiness in a bowl!
+1	line	Eadgar	Would you care to sample our delicious home cooking?
+1	select	Select an Option
+1	option	I need to find some goutweed.
+2	line	Player	I need to find some goutweed. Sanfew said you might be able to help.
+2	line	Eadgar	Sanfew, you say? Ah, haven't seen him in a while...
+2	line	Eadgar	Goutweed is used as an ingredient in troll cooking. You should ask one of their cooks.
+2	action	end
+2	select	Select an Option
+2	option	Why do you live so close to the trolls?
+3	action	below
+2	option	What do you have to offer?
+3	action	below
+2	option	No thanks, Eadgar.
+3	action	below
+1	option	Why do you live so close to the trolls?
+2	line	Player	Why do you live so close to the trolls? Isn't it dangerous?
+2	line	Eadgar	Well, I suppose I do keep getting captured by the trolls and thrown in prison...But they always release me in the end, I'm far too old and skinny for their tastes.
+2	line	Eadgar	In any case, this is my home, and I'm not leaving it. And this area has the tastiest goats!
+2	action	end
+1	option	What do you have to offer?
+2	line	Player	What do you have to offer?
+2	line	Eadgar	The chef's recommendation for today is mountain goat stew. I'll give some stew in exchange for logs for my fire. They're hard to come by around here.
+2	select	Select an Option
+2	option	I'd like some mountain goat stew, please.
+3	line	Player	I'd like some mountain goat stew, please.
+3	line	Eadgar	Here you go! Enjoy!
+2	option	No thanks, Eadgar.
+3	action	below
+1	option	No thanks, Eadgar.
+2	line	Player	No thanks, Eadgar.
+2	line	Eadgar	Your loss!
+2	action	end
+0	section	Taking to Eadgar again before talking to Burntmeat
+0	section	Talking to Burntmeat
+1	line	Player	Er, hi.
+1	line	Burntmeat	Hmm? What human do in troll kitchen? Burntmeat tired of cooking goats. Human look tasty.
+1	line	Player	Oh, you don't want to eat me! I'm a tough, hardened adventurer, not tender or tasty at all!
+1	line	Burntmeat	Hmm. Burntmeat think you probably right. What human doing here?
+1	line	Player	I'm on a quest to find some goutweed.
+1	line	Burntmeat	Bwahahaha! Burntmeat not give his greatest cooking secret away so easily.
+1	line	Burntmeat	But Burntmeat also has quest for human!
+1	line	Player	Really? What is it?
+1	line	Burntmeat	Bring back a tasty human for Burntmeat's stew. If you find tasty human, Burntmeat will give you good reward.
+1	line	Player	Right. I'll just...go fetch that for you then. Bye!
+1	action	end
+0	section	Talking to Burntmeat again
+1	line	Burntmeat	Did you find tasty human?
+1	line	Player	Erm, not yet, but I'm working on it...
+1	action	end
+0	section	Taking to Eadgar after talking to Burntmeat
+1	cond	If the player talked to Eadgar before talking to Burntmeat.
+2	line	Eadgar	Oh, it's you. Have you talked to the troll cook yet?
+1	cond	If the player did not talk to Eadgar before talking to Burntmeat.
+2	line	Player	I need to find some goutweed. Sanfew said you might be able to help.
+2	line	Eadgar	Sanfew, you say? Ah, haven't seen him in a while...
+1	line	Player	I talked to the troll cook but he wouldn't tell me anything, and now he wants me to find him some tasty human for his stew.
+1	line	Eadgar	Oh dear, that's no good. You can't just go hand over a human to those trolls...
+1	line	Eadgar	Aha! I have a plan!
+1	line	Player	Really?
+1	line	Eadgar	Yes! It's bound to work. First of all, I will need a parrot!
+1	line	Player	A PARROT? Where am I going to find one of those?
+1	line	Eadgar	At the zoo, where else?
+1	line	Eadgar	Anything else I can do for you?
+1	select	Select an Option
+1	option	Why do you live so close to the trolls?
+2	action	above
+1	option	What do you have to offer?
+2	action	above
+1	option	No thanks, Eadgar.
+2	action	above
+0	section	Taking to Eadgar again before getting a parrot
+1	line	Eadgar	Oh, it's you. Have you got me a parrot yet?
+1	line	Player	I haven't been able to find one yet.
+1	line	Eadgar	Well, go see if the zoo have one.
+1	select	Select an Option
+1	option	Where's the zoo?
+2	line	Player	Where's the zoo?
+2	line	Eadgar	It's in Ardougne, south west of here.
+2	line	Player	Okay, I'll be right back.
+2	line	Eadgar	Anything else I can do for you?
+2	action	above
+1	option	Okay, I'll be right back.
+2	line	Player	Okay, I'll be right back.
+2	line	Eadgar	Anything else I can do for you?
+2	action	above
+0	section	Visiting Ardougne
+0	section	Using pineapple chunks on vodka before talking to Parroty Pete
+0	section	Talking to Parroty Pete
+1	line	Parroty Pete	Good day, good day. Come to admire the new parrot aviary have we?
+1	select	Select an Option
+1	option	It's very nice.
+2	line	Player	It's very nice.
+2	line	Parroty Pete	Isn't it just?
+2	action	end
+1	option	When did you add it?
+2	line	Player	When did you add it?
+2	line	Parroty Pete	Just recently. It would have been sooner, but some wretch thought it would be amusing to replace their drinking water with vodka. The vet had to nurse them back to health for weeks!
+2	action	end
+1	option	What do you feed them?
+2	line	Player	What do you feed them?
+2	line	Parroty Pete	Well, fruit and grain mostly. I try to give them a balanced diet, but their favourite treat is pineapple chunks.
+2	action	end
+0	section	Using vodka on the aviary hatch
+1	line	Player	They won't drink it straight from the bottle...
+1	action	end
+0	section	Using pineapple chunks on the aviary hatch
+1	action	
+1	box	You manage to attract a parrot, but it flies away when you try to catch it.
+1	line	Player	I need some way to slow it down...
+1	action	end
+0	section	Using alco-chunks on the hatch
+1	cond	If the player has not spoken to Eadgar with the drunk parrot in their inventory:
+2	box	You manage to attract a parrot and catch it.
+2	line	Player	Hah! Got you now!
+2	line	Parrot	Sqwaawk...*hic*
+2	line	Parroty Pete	Hey! What are you doing with that parrot?
+2	line	Player	Nothing.
+2	line	Parroty Pete	It looks drunk! You should NEVER feed alcohol to a parrot!
+2	line	Player	Well, good thing I found it! I'll just take it to the vet for you, shall I?
+2	line	Parroty Pete	Oh, thank you! We're ever so busy here at the Zoo.
+2	action	
+2	action	end
+1	cond	If the player has spoken to Eadgar with the drunk parrot in their inventory:
+2	line	Player	The parrott flew off, I wonder where it went? Silly thing prefered Eadgar to me!
+2	action	end
+0	section	Preparing the fake man
+0	section	Talking to Eadgar while holding the parrot
+1	line	Eadgar	Oh, it's you. Have you got me a parrot yet?
+1	line	Parrot	Raaawk! Polly wanna cracker!
+1	line	Player	Here it is! Now are you going to explain your plan?
+1	line	Eadgar	Yes, yes, of course. It's quite ingenious really!
+1	line	Eadgar	What we need is something that looks like a human, sounds like a human, smells like a human and tastes like a human.
+1	line	Player	How are we going to make it look like a human?
+1	line	Eadgar	We'll just make a scarecrow. We'll need logs, and 10 sheaves of wheat for stuffing.
+1	line	Player	How are we going to make it sound like a human?
+1	line	Eadgar	That's what the parrot's for, of course.
+1	line	Parrot	Who's a pretty boy then?
+1	line	Eadgar	Although the trolls might get suspicious if it doesn't say what they expect a human to say...
+1	line	Eadgar	You should hide it for a while somewhere it can pick up some more appropriate catchphrases.
+1	line	Player	How are we going to make it smell like a human?
+1	line	Eadgar	Well, we'll need to dress it up anyway; if we use dirty clothes it'll smell human to the trolls.
+1	line	Eadgar	I'm a man of few clothes myself, so you might want to ask old Sanfew about that one.
+1	line	Player	And how are we going to make it taste like a human?
+1	line	Eadgar	That's easy, we'll just stuff it with a few chickens. Everything tastes like chicken! Five raw chickens should be enough.
+1	line	Eadgar	That's the plan. Anything else I can do for you?
+1	select	Select an Option
+1	option	Why do you live so close to the trolls?
+2	action	above
+1	option	What do you have to offer?
+2	action	above
+1	option	No thanks, Eadgar.
+2	action	above
+0	section	Talking to Eadgar before preparing the fake man
+1	line	Player	What should I do with this parrot?
+1	line	Eadgar	I told you, put it somewhere it'll learn to say the sort of thing the trolls will expect it to say.
+1	line	Eadgar	This is likely to be screaming. There's bound to be a good spot somewhere in the troll prison.
+1	line	Eadgar	Anything else I can do for you?
+1	select	Select an Option
+1	option	How are we going to make it look like a human?
+2	line	Player	How are we going to make it look like a human?
+2	line	Eadgar	We'll just make a scarecrow. We'll need logs, and 10 sheaves of wheat for stuffing.
+2	line	Eadgar	Anything else I can do for you?
+2	action	previous
+1	option	How are we going to make it sound like a human?
+2	line	Player	How are we going to make it sound like a human?
+2	line	Eadgar	That's what the parrot's for, of course.
+2	line	Eadgar	You should hide it for a while somewhere it can pick up some more appropriate catchphrases.
+2	line	Eadgar	Anything else I can do for you?
+2	action	previous
+1	option	How are we going to make it smell like a human?
+2	line	Player	How are we going to make it smell like a human?
+2	line	Eadgar	Well, we'll need to dress it up anyway; if we use dirty clothes it'll smell human to the trolls.
+2	line	Eadgar	I'm a man of few clothes myself, so you might want to ask old Sanfew about that one.
+2	line	Eadgar	Anything else I can do for you?
+2	action	previous
+1	option	How are we going to make it taste like a human?
+2	line	Player	And how are we going to make it taste like a human?
+2	line	Eadgar	That's easy, we'll just stuff it with a few chickens. Everything tastes like chicken! Five raw chickens should be enough.
+2	line	Eadgar	Anything else I can do for you?
+2	action	previous
+1	option	More
+2	select	Select an Option
+2	option	Why do you live so close to the trolls?
+3	action	above
+2	option	What do you have to offer?
+3	action	above
+2	option	No thanks, Eadgar.
+3	action	above
+0	section	Using drunk parrot on rack
+0	section	Search rack after putting parrot under it
+1	box	You look under the rack and find the drunk parrot.
+1	option	Dialogue 1
+2	line	Parrot	Polly wanna cracker!
+1	option	Dialogue 2
+2	line	Parrot	Pieces of eight! Pieces of eight!
+1	option	Dialogue 3
+2	line	Parrot	Who's a pretty boy then?
+1	line	Player	I don't think it's done yet.
+1	action	end
+0	section	Talking to Eadgar after putting the parrot under the rack
+1	line	Player	I hid the parrot under the rack in the troll prison.
+1	line	Eadgar	Good work. How about those other items?
+1	line	Player	I have [no/the] logs, [no/one/two/three/four/five] [chicken/chickens], [no/one/two/three/four/five/six/seven/eight/nine/ten] [bundle/bundles] of grain and [no/the] dirty clothes.
+1	line	Eadgar	You now need [no/the] logs, [no/one/two/three/four/five] [chicken/chickens], [no/one/two/three/four/five/six/seven/eight/nine/ten] [bundle/bundles] of grain and [no/the] dirty clothes.
+1	line	Eadgar	Anything else I can do for you?
+1	action	above
+0	section	Obtaining the robes
+0	section	Talking to Sanfew about the robes
+1	line	Sanfew	What can I do for you young 'un?
+1	select	Select an Option
+1	option	Ask about Sanfew Serum.
+1	option	Ask general questions.
+2	line	Player	Eadgar says he needs some dirty clothes for his plan, and he said you might be able to help.
+2	line	Sanfew	Now why would he need that?
+2	line	Player	It's a long story.
+2	line	Sanfew	Never mind then... I think Tegid is doing his laundry outside. You could ask him if you can borrow one of his dirty robes.
+2	action	end
+0	section	Talking to Tegid about the robes
+1	line	Player	So, you're doing laundry, eh?
+1	line	Tegid	Yes. What is it to you?
+1	line	Player	Nice day for it.
+1	line	Tegid	I suppose it is.
+1	line	Player	You wouldn't be able to spare any of those dirty robes by any chance? It's a matter of the utmost importance.
+1	line	Tegid	What? No! These are my robes!
+1	select	Select an Option
+1	option	Fine.
+2	line	Player	Fine.
+2	action	end
+1	option	Sanfew won't be happy...
+2	line	Player	I'm sure Sanfew won't be happy when I tell him it's your fault he can't perform the purification ritual.
+2	line	Tegid	What? Oh well, if it's a matter of that much importance, I suppose you can borrow one...
+2	action	Drops to ground with full inventory
+2	action	end
+1	option	You'll give me those robes right now...
+2	line	Player	You'll give me those robes right now...or I'm going to cut down trees until you do.
+2	line	Tegid	You wouldn't dare!
+2	line	Player	Of course I would. They're just trees.
+2	line	Tegid	You monster! Take the robes and leave this place!
+2	action	Drops to ground with full inventory
+2	action	end
+0	section	Returning to Eadgar with supplies
+0	section	Talking to Eadgar with the supplies
+1	line	Eadgar	How are you getting on?
+1	line	Player	I have [no/the] logs, [no/one/two/three/four/five] [chicken/chickens], [no/one/two/three/four/five/six/seven/eight/nine/ten] [bundle/bundles] of grain and [no/the] dirty clothes.
+1	cond	If the player has not yet given all the supplies:
+2	action	above
+1	line	Eadgar	That's everything!
+1	line	Eadgar	Good, good, everything is almost finished.
+1	line	Eadgar	Of course, we can't just give him the dummy and expect to get anything useful out of him.
+1	line	Player	Oh?
+1	line	Eadgar	No, of course not. We need to make sure he'll tell you what you need to know.
+1	line	Player	And how do we do that?
+1	line	Eadgar	I happen to know that the trolls are susceptible to a certain kind of plant that grows around this mountain. I call it Troll Thistle. If properly prepared, it can be made into a sort of Troll truth potion.
+1	line	Player	How do you prepare it?
+1	line	Eadgar	You'll have to dry it in a fire, then grind it and mix it into a potion with Ranarr weed.
+1	line	Player	Okay, I'll be back with that soon.
+1	line	Eadgar	Anything else I can do for you?
+1	action	above
+0	section	Talking to Eadgar after learning to make troll potion
+1	line	Player	How do I make the troll truth potion again?
+1	line	Eadgar	Troll Thistle grows around this mountain. If properly prepared, it can be made into a sort of Troll truth potion.
+1	line	Player	How do you prepare it?
+1	line	Eadgar	You'll have to dry it in a fire, then grind it and mix it into a potion with Ranarr weed.
+1	line	Player	Okay, I'll be back with that soon.
+1	line	Eadgar	Anything else I can do for you?
+1	action	above
+0	section	Picking a troll thistle
+0	section	Using troll thistle on ranarr potion
+0	section	Using any item on Eadgar's fire
+1	line	Player	I'd better not mess around with Eadgar's stew!
+1	action	end
+0	section	Using troll thistle on a fire
+0	section	Using dried thistle on ranarr potion
+0	section	Using dried thistle on pestle and mortar
+0	section	Using ground thistle on ranarr potion
+0	section	Talking to Eadgar with the troll potion
+1	line	Player	I've got the troll truth potion.
+1	line	Eadgar	Excellent, thank you. Now just go fetch that poor parrot back, it's probably had enough by now.
+1	action	end
+0	section	Taking the parrot from under the rack
+1	box	You look under the rack and find the drunk parrot.
+1	line	Parrot	Ah, hello Sir. Could you please free me? I seem to have ... OW! What are you doing? That's my spleen!
+1	line	Player	I think it's probably heard enough.
+1	action	Drops to ground with full inventory
+1	action	end
+0	section	Using the educated parrot on the rack
+0	section	Using alco-chunks on the aviary hatch after losing the educated parrot
+1	line	Player	The parrott flew off, I wonder where it went? Silly thing prefered Eadgar to me!
+1	action	end
+0	section	Talking to Eadgar after taking the parrot out from the rack
+1	cond	If the player lost the parrot:
+2	line	Eadgar	Oh, it's you. You didn't lose your parrot did you? One flew over here and I managed to capture it.
+2	line	Player	...
+2	line	Eadgar	That's what I thought.
+2	line	Eadgar	Just give me a moment...there we go! Can you tell this isn't a bona fide human being? I sure can't!
+2	action	continues
+1	cond	If the player still has the parrot:
+2	line	Player	I've brought the parrot.
+2	line	Eadgar	Hand it here...there we go! Can you tell this isn't a bona fide human being? I sure can't!
+2	action	
+2	action	continues
+1	action	
+1	line	Fake man	What am I doing here? Ow! Where's the rest of the Guard? Agh! I won't tell you anything!Drops to ground with full inventory
+1	select	Select an Option
+1	option	Why do you live so close to the trolls?
+2	action	above
+1	option	What do you have to offer?
+2	action	above
+1	option	No thanks, Eadgar.
+2	action	above
+0	section	Talking to Eadgar after getting the fake man
+1	line	Eadgar	Have you given the fake man to the troll cook yet?
+1	cond	If the player still has the fake man:
+2	line	Player	Not yet.
+2	line	Eadgar	Go on then, give it to the cook!
+2	action	continues
+1	cond	If the player lost the fake man:
+2	line	Player	No. I lost it.
+2	line	Eadgar	You bumbling imbecile!
+2	action	Drops to ground with full inventory
+2	line	Eadgar	Never mind, here's one I prepared earlier.
+1	line	Eadgar	Anything else I can do for you?
+2	action	continues
+1	action	above
+0	section	Talking to Burntmeat while holding the fake man
+1	line	Burntmeat	Did you find tasty human? Burntmeat smell something good.
+1	line	Player	Yes! Look!
+1	line	Fake man	Heeeeeeelp!
+1	line	Burntmeat	Ah, dat look like nice tasty human.
+1	line	Fake man	Aaaargh! Somebody save me!
+1	line	Burntmeat	Yep, sound like human too. Burntmeat put it in stew. Good work, human. Burntmeat give precious reward.
+1	action	
+1	action	
+1	line	Player	This is burnt meat.
+1	line	Burntmeat	It first thing I ever try to cook! Very precious to Burntmeat.
+1	line	Player	Thank you... and how's the stew?
+1	line	Burntmeat	Slurp, mmm... Human stew cheer Burntmeat up!
+1	select	Select an Option
+1	option	So, where can I get some goutweed?
+2	line	Player	So, where can I get some goutweed?
+2	line	Burntmeat	Hah! Trolls pick it all until none left, many years ago. Only remaining stock in storeroom.
+2	line	Burntmeat	It well guarded, and Burntmeat hide key in fake bottom of kitchen drawer. Nobody find it there.
+2	line	Player	That's some well-guarded secret alright. I'll just be off on my way now.
+2	action	end
+1	option	I'll be going now.
+2	line	Player	I'll be going now.
+2	line	Burntmeat	Bye, bye.
+2	action	end
+0	section	Talking to Burntmeat after giving him the fake man
+1	line	Player	How's the stew?
+1	line	Burntmeat	Slurp, mmm... Human stew cheer Burntmeat up!
+1	action	above
+0	section	Getting the goutweed
+0	section	Searching the storeroom drawers
+1	cond	If the player already has the key:
+2	action	end
+1	cond	If the player has no inventory space:
+2	action	end
+1	action	end
+0	section	Using the key on the storeroom door
+0	section	Being caught by a goutweed guard troll
+1	line	Guard	!
+0	section	Searching the goutweed crate
+1	box	Drops to floor if full inventory
+1	line	Guard	Hm?
+1	action	end
+0	section	Talking to Eadgar after getting access to the storeroom
+1	line	Eadgar	Well? Did the plan work?
+1	line	Player	Yes! I can get into the storeroom now.
+1	line	Eadgar	Glad to hear it!
+1	line	Eadgar	Anything else I can do for you?
+1	action	above
+0	section	Talking to Sanfew after getting goutweed
+1	line	Sanfew	What can I do for you young 'un?
+1	select	Select an Option
+1	option	Ask about Sanfew Serum.
+1	option	Ask general questions.
+2	line	Player	I have some goutweed!
+2	line	Sanfew	Excellent! I will be able to complete the next part of the ritual now. I will teach you a new spell and give you some of my knowledge in Herblore as a token of thanks.
+2	line	Sanfew	If you ever come across more goutweed, bring it to me; I don't need any more for the ritual, but it's still quite difficult for me to get. I'll exchange it for some other herbs.
+0	section	Post-quest
+0	section	Talking to Eadgar after finishing the quest
+1	line	Player	Hi!
+1	line	Eadgar	Welcome to Mad Eadgar's! Serving all day, every day!
+1	line	Eadgar	Would you care to sample our delicious home cooking?
+1	select	Select an Option
+1	option	Why do you live so close to the trolls?
+2	action	above
+1	option	What do you have to offer?
+2	action	above
+1	option	No thanks, Eadgar.
+2	action	above
+0	section	Talking to Sanfew after finishing the quest
+1	line	Sanfew	What can I do for you young 'un?
+1	select	Select an Option
+1	option	Ask about Sanfew Serum.
+1	option	Ask general questions.
+2	select	Select an Option
+2	option	I have some more goutweed for you.
+3	line	Player	I have some more goutweed for you.
+3	line	Sanfew	Ah, good. Here are some herbs in exchange.
+3	action	end
+2	option	Have you any more work for me, to help reclaim the circle?
+3	line	Player	Have you any more work for me to help reclaim the stone circle?
+3	line	Sanfew	Well, not right now I don't think young 'un. In fact, I need to make some more preparations myself for the ritual. Rest assured, if I need any more help I will ask you again.
+3	action	end
+2	option	Actually, I don't need to speak to you.
+3	action	above
