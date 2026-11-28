@@ -14,12 +14,16 @@ import org.rsmod.api.type.refs.varp.VarpReferences
 internal object GeInterfaces : InterfaceReferences() {
     val offers = find("ge_offers")
     val offers_side = find("ge_offers_side")
+    /** Trade history (offers "History" button, clerk "History"). */
+    val history = find("ge_history")
     /** Collection box (also opened by bankers' "Collect"). */
     val collect = find("ge_collect")
 }
 
 internal object GeComponents : ComponentReferences() {
     val history = find("ge_offers:history")
+    /** ge_history's "Exchange" button: back to the offers screen. */
+    val history_exchange = find("ge_history:exchange")
     val back = find("ge_offers:back")
     val collectall = find("ge_offers:collectall")
     val index =

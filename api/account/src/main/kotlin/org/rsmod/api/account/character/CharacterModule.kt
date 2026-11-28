@@ -5,6 +5,8 @@ import org.rsmod.api.account.character.inv.CharacterInventoryPipeline
 import org.rsmod.api.account.character.main.CharacterAccountApplier
 import org.rsmod.api.account.character.main.CharacterAccountRepository
 import org.rsmod.api.account.character.ge.CharacterGeApplier
+import org.rsmod.api.account.character.ge.CharacterGeHistoryApplier
+import org.rsmod.api.account.character.ge.CharacterGeHistoryPipeline
 import org.rsmod.api.account.character.ge.CharacterGePipeline
 import org.rsmod.api.account.character.social.CharacterSocialApplier
 import org.rsmod.api.account.character.social.CharacterSocialPipeline
@@ -21,11 +23,13 @@ public object CharacterModule : ExtendedModule() {
         bindInstance<CharacterStatApplier>()
         bindInstance<CharacterSocialApplier>()
         bindInstance<CharacterGeApplier>()
+        bindInstance<CharacterGeHistoryApplier>()
 
         newSetBinding<CharacterDataStage.Pipeline>()
         addSetBinding<CharacterDataStage.Pipeline>(CharacterInventoryPipeline::class.java)
         addSetBinding<CharacterDataStage.Pipeline>(CharacterStatPipeline::class.java)
         addSetBinding<CharacterDataStage.Pipeline>(CharacterSocialPipeline::class.java)
         addSetBinding<CharacterDataStage.Pipeline>(CharacterGePipeline::class.java)
+        addSetBinding<CharacterDataStage.Pipeline>(CharacterGeHistoryPipeline::class.java)
     }
 }
