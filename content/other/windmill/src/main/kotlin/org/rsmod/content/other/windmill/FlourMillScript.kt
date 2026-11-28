@@ -5,6 +5,7 @@ import org.rsmod.api.player.output.GameplayLog
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.api.script.onApLoc1
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.type.builders.varp.VarpBuilder
@@ -40,10 +41,15 @@ class FlourMillScript @Inject constructor(private val locTypes: LocTypeList) : P
         }
     }
 
-    /** Binds op1 only when the loc has one (each type's first op is Fill / Operate / Empty). */
+    /**
+     * Binds op1 only when the loc has one (each type's first op is Fill / Operate / Empty), from
+     * up to [REACH] tiles away too: the Lumbridge hopper controls sit where the pathfinder can't
+     * reach an adjacent tile ("I can't reach that"), so the op also runs from approach range.
+     */
     private fun ScriptContext.bindOp1(type: LocType, action: suspend ProtectedAccess.() -> Unit) {
         if (locTypes[type].op.getOrNull(0).isNullOrEmpty()) return
         onOpLoc1(type) { action() }
+        onApLoc1(type) { if (isWithinApRange(it.loc, REACH)) action() }
     }
 
     private val ProtectedAccess.flour: Int
@@ -112,6 +118,7 @@ class FlourMillScript @Inject constructor(private val locTypes: LocTypeList) : P
 
     private companion object {
         const val MAX_FLOUR = 30
+        const val REACH = 2
     }
 }
 
