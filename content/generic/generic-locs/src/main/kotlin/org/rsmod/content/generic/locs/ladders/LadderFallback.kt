@@ -7,6 +7,7 @@ import org.rsmod.api.player.interact.OpInterceptors
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.content.generic.locs.transports.LocTransports
 import org.rsmod.game.entity.Player
 import org.rsmod.game.interact.InteractionOp
 import org.rsmod.game.loc.BoundLocInfo
@@ -56,6 +57,8 @@ constructor(
             if (!type.isClimbable()) return false
             val label = type.op.getOrNull(op.slot - 1) ?: return false
             if (direction(label) == null) return false
+            // A recorded transport for this loc op knows the real destination: it goes first.
+            if (LocTransports.near(type.id, label, loc.coords) != null) return false
             return locInteractions.opTrigger(player, loc, op, type) == null &&
                 locInteractions.apTrigger(player, loc, op, type) == null
         }
@@ -64,6 +67,7 @@ constructor(
 
         override fun auditCovers(type: UnpackedLocType, shape: Int, coords: CoordGrid, op: Int): Boolean {
             val label = type.op.getOrNull(op - 1) ?: return false
+            if (LocTransports.near(type.id, label, coords) != null) return false
             return type.isClimbable() && direction(label) != null
         }
 
