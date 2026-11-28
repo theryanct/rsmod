@@ -26,6 +26,7 @@ import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.script.onPlayerLogout
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.type.builders.map.npc.MapNpcSpawnBuilder
 import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
@@ -640,4 +641,11 @@ internal object PpVarbits : VarBitReferences() {
     val timer = find("ntk_player_timer_count")
     val thieving_required = find("ntk_thieving_required")
     val room_number = find("ntk_room_number")
+}
+
+/** The guardian mummy in the lobby (the world spawns leave Pyramid Plunder npcs to this module). */
+internal object PpNpcSpawns : MapNpcSpawnBuilder() {
+    override fun onPackMapTask() {
+        resourceFile<PpNpcSpawns>("npcs.toml")
+    }
 }
