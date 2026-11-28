@@ -66,11 +66,16 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
             val toggles = Feature.entries
             val lines =
                 toggles.map { "${it.displayName}: ${onOff(player.isFeatureOn(it))}" } +
-                    listOf("Skill xp rates...", "Close")
+                    listOf(
+                        "Skill xp rates...",
+                        "Slayer point multiplier: ${player.slayerPointMultiplier}x...",
+                        "Close",
+                    )
             val index = menu(title = "Feature toggles", hotkeys = false, choices = lines)
             when {
                 index < toggles.size -> toggle(player, toggles[index])
                 index == toggles.size -> skillRateMenu()
+                index == toggles.size + 1 -> slayerPointsMenu()
                 else -> return
             }
         }
@@ -114,6 +119,32 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
         }
     }
 
+    /** Slayer point multiplier: presets, a custom whole number, or reset to 1x. */
+    private suspend fun ProtectedAccess.slayerPointsMenu() {
+        val presets = SLAYER_POINT_PRESETS.map { "${it}x" }
+        val choices = presets + listOf("Custom (whole number)...", "Reset to default (1x)", "Back")
+        val title = "Slayer point multiplier: ${player.slayerPointMultiplier}x"
+        val index = menu(title = title, hotkeys = false, choices = choices)
+        when {
+            index < presets.size -> setSlayerPoints(player, SLAYER_POINT_PRESETS[index])
+            index == presets.size -> {
+                val value = countDialog("Slayer point multiplier (whole number, 0 = default):")
+                setSlayerPoints(player, value.takeIf { it > 0 })
+            }
+            index == presets.size + 1 -> setSlayerPoints(player, null)
+            else -> return
+        }
+    }
+
+    private fun setSlayerPoints(player: Player, multiplier: Int?) {
+        if (multiplier != null && multiplier > MAX_SLAYER_POINT_MULTIPLIER) {
+            player.mes("The Slayer point multiplier must be from 1 to $MAX_SLAYER_POINT_MULTIPLIER.")
+            return
+        }
+        player.setSlayerPointMultiplier(multiplier)
+        player.mes("Slayer point multiplier is now ${player.slayerPointMultiplier}x.")
+    }
+
     private fun setSkillRate(player: Player, stat: UnpackedStatType, rate: Double) {
         if (rate < MIN_RATE || rate > MAX_RATE) {
             player.mes("Xp rate must be from $MIN_RATE to ${MAX_RATE.toInt()}.")
@@ -139,6 +170,8 @@ public class FeatureMenu @Inject constructor(private val statTypes: StatTypeList
     private companion object {
         private const val MIN_RATE = 0.01
         private const val MAX_RATE = 1000.0
+
+        private val SLAYER_POINT_PRESETS = listOf(1, 2, 3, 5, 10)
 
         private val RATE_PRESETS =
             listOf(0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 5.0, 10.0, 25.0, 50.0, 100.0)
