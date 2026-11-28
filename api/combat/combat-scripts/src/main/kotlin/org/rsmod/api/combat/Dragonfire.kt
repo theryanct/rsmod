@@ -46,7 +46,8 @@ import org.rsmod.game.type.obj.ObjTypeList
  *
  * Antifire potions (herblore, cache varbits `antifire_potion` / `super_antifire_potion`): regular
  * caps the breath at 70% (35 for chromatics) and with a shield blocks it; super antifire blocks
- * it. Not done: long-range breath (metallic dragons / Elvarg breathe from melee distance here, like chromatics).
+ * it. Not done: long-range breath (metallic dragons / Elvarg breathe from melee distance here,
+ * like chromatics).
  */
 internal class Dragonfire
 @Inject
