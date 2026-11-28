@@ -1,0 +1,218 @@
+# Generated from the OSRS Wiki page "Transcript:Lost City" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Adventurer camp
+0	section	Warrior
+1	line	Warrior	Hello there traveller.
+1	select	Select an option
+1	option	What are you camped out here for?
+2	line	Player	What are you camped here for?
+2	line	Warrior	We're looking for Zanaris...GAH! I mean we're not here for any particular reason at all.
+2	select	Select an option
+2	option	Who's Zanaris?
+3	line	Player	Who's Zanaris?
+3	line	Warrior	Ahahahaha! Zanaris isn't a person! It's a magical hidden city filled with treasures and rich.. uh, nothing. It's nothing.
+3	select	Select an option
+3	option	If it's hidden how are you planning to find it?
+4	line	Player	If it's hidden how are you planning to find it?
+4	line	Warrior	Well, we don't want to tell anyone else about that, because we don't want anyone else sharing in all that glory and treasure.
+4	select	Select an option
+4	option	Please tell me.
+5	action	below
+4	option	Looks like you don't know either.
+5	line	Player	Well, it looks to me like YOU don't know EITHER seeing as you're all just sat around here.
+5	line	Warrior	Of course we know! We just haven't found which tree the stupid leprechaun's hiding in yet!
+5	cond	If the player has lower than 45 combat and either 31 Crafting or 36 Woodcutting:
+6	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it. Your combat level is also lower than the recommended level of 45.
+5	select	Start the Lost City quest?
+5	option	Yes.
+6	line	Player	Leprechaun?
+6	line	Warrior	GAH! I didn't mean to tell you that! Look, just forget I said anything okay?
+6	line	Player	So a leprechaun knows where Zanaris is eh?
+6	line	Warrior	Ye.. uh, no. No, not at all. And even if he did - which he doesn't - he DEFINITELY ISN'T hiding in some tree around here. Nope, definitely not. Honestly.
+6	line	Player	Thanks for the help!
+6	line	Warrior	Help? What help? I didn't help! Please don't say I did, I'll get in trouble!
+6	action	end
+5	option	No
+6	line	Player	Right... Well good luck with it.
+6	action	end
+3	option	There's no such thing.
+4	line	Player	There's no such thing!
+4	line	Warrior	When we've found Zanaris you'll... GAH! I mean, we're not here for any particular reason at all.
+4	option	Who's Zanaris?
+5	action	above
+4	option	What's Zanaris?
+5	action	below
+4	option	What makes you think it's out here?
+5	action	below
+2	option	What's Zanaris?
+3	line	Player	What's Zanaris?
+3	line	Warrior	I don't think we want other people competing with us to find it. Forget I said anything.
+3	option	Please tell me.
+4	action	below
+3	option	Oh well. Never mind.
+4	line	Player	Oh well. Never mind.
+4	action	end
+2	option	What makes you think it's out here?
+3	line	Player	What makes you think it's out here?
+3	line	Warrior	Don't you know of the legends that tell of the magical city, hidden in the swam... Uh, no, you're right, we're wasting our time here.
+3	option	If it's hidden how are you planning to find it?
+4	action	above
+3	option	There's no such thing!
+4	action	above
+1	option	Do you know any good adventures I can go on?
+2	line	Player	Do you know any good adventures I can go on?
+2	line	Warrior	Well we're on an adventure right now. Mind you, this is OUR adventure and we don't want to share it - find your own!
+2	option	Please tell me.
+3	line	Player	Please tell me?
+3	line	Warrior	No.
+3	line	Player	Please?
+3	line	Warrior	No!
+3	line	Player	PLEEEEEEEEEEEEEEEEEEEEEASE?
+3	line	Warrior	NO!
+3	action	end
+2	option	I don't think you've found a good adventure at all!
+3	line	Player	I don't think you've found a good adventure at all!
+3	line	Warrior	Hah! Adventurers of our calibre don't just hang around in forests for fun, whelp!
+3	line	Player	Oh really?
+3	line	Player	What are you camped here for?
+3	line	Warrior	We're looking for Zanaris...GAH! I mean we're not here for any particular reason at all.
+3	option	Who's Zanaris?
+4	action	above
+3	option	What's Zanaris?
+4	action	above
+3	option	What makes you think it's out here?
+4	action	above
+0	section	Archer
+1	line	Player	Why are you guys hanging around here?
+1	line	Archer	(ahem)...'Guys'?
+1	line	Player	Uh... yeah, sorry about that. Why are you all standing around out here?
+1	line	Archer	Well, that's really none of your business.
+1	action	end
+0	section	Wizard
+1	line	Player	Why are all of you standing around here?
+1	line	Wizard	Hahaha you dare talk to a mighty wizard such as myself? I bet you can't even cast windstrike yet amateur!
+1	line	Player	...You're an idiot.
+1	action	end
+0	section	Monk
+1	line	Player	Why are all of you standing around here?
+1	line	Monk	None of your business. Get lost.
+1	action	end
+0	section	Talking to Warrior again after learning about Zanaris
+1	line	Player	So let me get this straight: I need to search the trees around here for a leprechaun; and then when I find him, he will tell me where this 'Zanaris' is?
+1	line	Warrior	What? How did you know that? Uh... I mean, no, no you're very wrong. Very wrong, and not right at all, and I definitely didn't tell you about that at all.
+1	action	end
+0	section	Talking to Archer again after learning about Zanaris
+1	line	Player	So I hear theres a leprechaun around here who can show me the way to Zanaris?
+1	line	Archer	...W-what? How did you..?
+1	line	Archer	No. You're wrong. Now go away.
+1	action	end
+0	section	Talking to Wizard again after learning about Zanaris
+1	line	Player	Found that leprechaun yet?
+1	line	Wizard	Hahaha go away amateur! You're not worthy of joining our great group!
+1	line	Player	...right.
+1	action	end
+0	section	Talking to Monk again after learning about Zanaris
+1	line	Player	Have you found the tree with the leprechaun yet?
+1	line	Monk	No, we've looked for ages but haven't... Hey! Wait a minute! How did you know about that?
+1	line	Player	Thanks for the information!
+1	line	Monk	...You tricked me. I'm not talking to you anymore.
+1	action	end
+0	section	Talking to a tool leprechaun
+1	line	Tool Leprechaun	Ah, 'tis a foine day to be sure! Were yez wantin' me to store yer tools, or maybe ye might be wantin' yer stuff back from me?
+1	option	Can you tell me about the Lost City?
+2	line	Player	Can you tell me about the Lost City?
+2	line	Tool Leprechaun	Nay, ye be wantin' to ask Shamus if ye wants to know about the Lost City. He be living up a tree somewhere near Draynor Village. Last I heard he were wailin' about some biggun tryin' to chop his tree down!
+2	action	end
+1	option	Yes please.
+1	option	What can you store?
+1	option	What do you do with the tools you're storing?
+1	option	No thanks, I'll keep hold of my stuff.
+0	section	Leprechaun in a tree
+0	section	Talking to Shamus before starting the quest
+1	line	Shamus	Ay yer big elephant! Yer've caught me, to be sure! What would an elephant like yer be wanting wid ol' Shamus then?
+1	line	Player	I'm not sure.
+1	line	Shamus	Well you'll have to be catchin' me again when yer are, elephant!
+1	box	The leprechaun magically disappears.
+1	action	end
+0	section	Attempting to chop the tree after Shamus has appeared
+1	line	Shamus	Hey! Yer big elephant! Don't go choppin' down me house, now!
+1	action	end
+0	section	First talk
+1	line	Shamus	Ay yer big elephant! Yer've caught me, to be sure! What would an elephant like yer be wanting wid ol' Shamus then?
+1	line	Player	I want to find Zanaris.
+1	line	Shamus	Zanaris is it now? Well well well... Yer'll be needing to be going to that funny little shed out there in the swamp, so you will.
+1	line	Player	...but... I thought... Zanaris was a city...?
+1	line	Shamus	Aye that it is!
+1	select	Select an option
+1	option	How does it fit in a shed then?
+2	line	Player	...How does it fit in a shed then?
+2	line	Shamus	Ah yer stupid elephant! The city isn't IN the shed! The doorway to the shed is being a portal to Zanaris, so it is.
+2	line	Player	So I just walk into the shed and end up in Zanaris then?
+2	line	Shamus	Oh, was I fergetting to say? Yer need to be carrying a Dramenwood staff to be getting there! Otherwise Yer'll just be ending up in the shed.
+2	line	Player	So where would I get a staff?
+2	line	Shamus	Dramenwood staffs are crafted from branches of the Dramen tree, so they are. I hear there's a Dramen tree over on the island of Entrana in a cave
+2	line	Shamus	or some such. There would probably be a good place for an elephant like yer to be starting looking I reckon.
+2	line	Shamus	The monks are running a ship from Port Sarim to Entrana, I hear too. Now leave me alone yer elephant!
+2	box	The leprechaun magically disappears.
+2	action	end
+1	option	I've been in that shed, I didn't see a city.
+2	line	Player	I've been in that shed. I didn't see a city.
+2	line	Shamus	Oh, was I fergetting to say? Yer need to be carrying a Dramenwood staff to be getting there! Otherwise Yer'll just be ending up in the shed.
+2	line	Player	So where would I get a staff?
+2	line	Shamus	Dramenwood staffs are crafted from branches of the Dramen tree, so they are. I hear there's a Dramen tree over on the island of Entrana in a cave
+2	line	Shamus	or some such. There would probably be a good place for an elephant like yer to be starting looking I reckon.
+2	line	Shamus	The monks are running a ship from Port Sarim to Entrana, I hear too. Now leave me alone yer elephant!
+2	box	The leprechaun magically disappears.
+2	action	end
+0	section	Subsequent talks
+1	line	Shamus	Ay yer big elephant! Yer've caught me, to be sure! What would an elephant like yer be wanting wid ol' Shamus then?
+1	select	Select an option
+1	option	I'm not sure.
+2	line	Player	I'm not sure.
+2	line	Shamus	Ha! Look at yer! Look at the stupid elephant who tries to go catching a leprechaun when he don't even be knowing what he wants!
+2	box	The leprechaun magically disappears.
+2	action	end
+1	option	How do I get to Zanaris again?
+2	line	Player	How do I get to Zanaris again?
+2	line	Shamus	Yer stupid elephant! I'll tell yer again! Yer need to be entering the shed in the middle of the swamp while holding a dramenwood staff! Yer can make the Dramen staff
+2	line	Shamus	from a dramen tree branch, and there's a Dramen tree on Entrana! Now leave me alone yer great elephant!
+2	box	The leprechaun magically disappears.
+2	action	end
+0	section	Talking to Warrior after talking to Shamus
+1	line	Player	Have you found anything yet?
+1	line	Warrior	We're still searching for Zanaris...GAH! I mean we're not doing anything here at all.
+1	line	Player	I haven't found it yet either.
+1	action	end
+0	section	Talking to Archer after talking to Shamus
+1	line	Player	So you didn't find the entrance to Zanaris yet, huh?
+1	line	Archer	Don't tell me a novice like YOU has found it!
+1	line	Player	Yep. Found it REALLY easily too.
+1	line	Archer	...I cannot believe that someone like YOU could find the portal where experienced adventurers such as ourselves could not.
+1	line	Player	Believe what you want. Enjoy your little camp fire.
+1	action	end
+0	section	Talking to Wizard after talking to Shamus
+1	line	Wizard	Hahaha you're such an amateur! Go away and play with some cabbage amateur!
+1	line	Player	...right.
+1	action	end
+0	section	Talking to Monk after talking to Shamus
+1	line	Monk	I already told you. I'm not talking to you anymore.
+1	action	end
+0	section	The island of Entrana
+0	section	Cave monk
+1	line	Cave monk	Be careful going in there! You are unarmed, and there is much evilness lurking down there! The evilness seems to block off our contact with our gods,
+1	line	Cave monk	so our prayers seem to have less effect down there. Oh, also, you won't be able to come back this way - This ladder only goes one way!
+1	line	Cave monk	The only exit from the caves below is a portal which leads only to the deepest wilderness!
+1	option	I don't think I'm strong enough to enter then.
+2	line	Player	I don't think I'm strong enough to enter then.
+2	action	end
+1	option	Well that is a risk I will have to take.
+2	line	Player	Well that is a risk I will have to take.
+2	action	end
+0	section	The Dramen tree
+0	section	Attempting to chop down the tree
+1	line	Tree spirit	shadow=yes|colour=yellow|You must defeat me before touching the tree!
+0	section	Attempting to chop down the tree while the Tree Spirit is still alive
+1	line	Tree spirit	shadow=yes|colour=yellow|You must defeat me before touching the tree!
+0	section	After the Tree Spirit is defeated
+1	box	With the Tree Spirit defeated you can now chop the tree.
+1	action	end

@@ -94,7 +94,7 @@ constructor(
         }
         // King Roald's Talk-to is shared (QuestTalk): Arrav's while the certificate is pending.
         with(QuestTalk) {
-            register(npcTypes, ArravNpcs.king, wants = { wantsKing() }) {
+            register(npcTypes, ArravNpcs.king, SHIELD_OF_ARRAV, wants = { wantsKing() }) {
                 talkKing(it)
             }
         }
