@@ -52,7 +52,14 @@ constructor(
         // Net/Bait sea spot but pike at a Lure/Bait river spot), so methods are resolved per type.
         var bound = 0
         for (type in npcTypes.values) {
-            if (!type.name.equals("Fishing spot", ignoreCase = true)) {
+            // River (Lure/Bait) spots are named "Rod Fishing spot" in the cache.
+            val name = type.name
+            if (!name.equals("Fishing spot", ignoreCase = true) && !name.equals("Rod Fishing spot", ignoreCase = true)) {
+                continue
+            }
+            // Spots whose catch the generic op mapping would get wrong (eels, dark crabs, minnows,
+            // minigame fish...) stay unbound until their own method exists.
+            if (UNSUPPORTED_SPOTS.any { type.internalName.orEmpty().contains(it) }) {
                 continue
             }
             // The Hemenster contest spots (0_41_53_*) belong to the Fishing Contest quest.
@@ -369,11 +376,20 @@ constructor(
                     "use-rod" -> BarbarianRod
                     "fish" -> if (internalName.contains("karambwan")) Karambwan else null
                     "net",
-                    "small net" -> if ("harpoon" in spotOps) MonkfishNet else SmallNet
+                    "small net" ->
+                        when {
+                            // Fishing Guild / Kebos / Isle of Souls "memberfish" spots are Net/Harpoon
+                            // in the cache but big net + shark spots in OSRS.
+                            internalName.contains("memberfish") -> BigNet
+                            "harpoon" in spotOps -> MonkfishNet
+                            else -> SmallNet
+                        }
                     "bait" -> if ("lure" in spotOps) RiverBait else SeaBait
                     "lure" -> Lure
                     "cage" -> Cage
-                    "harpoon" -> if ("big net" in spotOps) SharkHarpoon else Harpoon
+                    "harpoon" ->
+                        if ("big net" in spotOps || internalName.contains("memberfish")) SharkHarpoon
+                        else Harpoon
                     "big net" -> BigNet
                     else -> null
                 }
@@ -383,6 +399,25 @@ constructor(
     private companion object {
         /** Fishing Contest's Hemenster spots (map square 41_53), owned by the quest. */
         const val CONTEST_SPOT_PREFIX = "0_41_53_"
+
+        /** Internal-name fragments of spot types not handled by the generic methods (rev 243 audit). */
+        val UNSUPPORTED_SPOTS =
+            listOf(
+                "cavefish", // Lumbridge Swamp Caves / Dorgesh-Kaan: frog spawn, slimy + cave eel
+                "slimey_eel", // Mort Myre
+                "lavafish", // lava eel
+                "snakeboss", // sacred eel
+                "piscariliusfish", // anglerfish
+                "morulrek_eels", // infernal eel
+                "_crabs", // Wilderness dark crab
+                "karambwanji",
+                "minnow",
+                "camdozaal",
+                "tempoross",
+                "lanternfish",
+                "fairy2_fakefish",
+                "aldarin_special",
+            )
 
         val harpoons: List<ObjType>
             get() =
