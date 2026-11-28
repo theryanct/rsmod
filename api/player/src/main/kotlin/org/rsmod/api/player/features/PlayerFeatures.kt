@@ -45,7 +45,14 @@ public enum class Feature(
     NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6, declaredCategory = FeatureCategory.Skilling),
     NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7, declaredCategory = FeatureCategory.Loot),
     BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8, declaredCategory = FeatureCategory.Movement),
-    // Slot 9 is taken by QuestGates on the quests branch.
+    /** Content locked behind quests (e.g. Runecraft behind Rune Mysteries); off = no gating. */
+    QuestGates(
+        "questgates",
+        "Quest requirements gate content",
+        defaultOn = false,
+        slot = 9,
+        declaredCategory = FeatureCategory.Quests,
+    ),
     /** Pickpocket the same npc again after a success; re-steal from a restocked stall. */
     AutoRepeatThieving(
         "autothieve",
