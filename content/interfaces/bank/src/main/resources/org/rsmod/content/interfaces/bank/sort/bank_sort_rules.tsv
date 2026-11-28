@@ -1,0 +1,382 @@
+# Bank / inventory sort rules (::sortbank, ::sortinv, "Sort" ops). Tab-separated.
+#
+# rule<TAB><tab><TAB><kind><TAB><value>
+#   First matching rule wins, top to bottom. Items in a tab are grouped by the rule that matched
+#   them, in file order (so rule order is also display order), then by tier, name and dose.
+#   tabs: combat tools ammo consumables herblore raw processed farming misc main
+#   kinds (names are matched lowercase):
+#     exact <name>     whole name           prefix <text>   name starts with
+#     suffix <text>    name ends with       word <text>     whole word(s) anywhere in the name
+#     iop <text>       has this inventory op (e.g. Eat, Drink, Bury, Break)
+#     wearpos <slot>   head back neck weapon body shield legs hands feet ring ammo
+#     stackable-weapon a stackable item worn in the weapon slot (darts, knives, thrownaxes)
+#     equipable        any wearable item
+#     untradeable      any item that can't go on the Grand Exchange
+#     any              everything (fallback)
+#
+# tier<TAB><level><TAB><words>
+#   Material / tier words for ordering (lowest first). The longest matching word sequence in the
+#   name wins ("black d'hide" beats "black"). In the combat tab, a tier word the name STARTS with is the gear
+#   SET: a set's pieces stay together, sets ordered by tier, pieces in slot order
+#   (head body legs hands feet shield weapon back neck ring ammo). Named sets come from the
+#   Grand Exchange item-set enum when no tier word matches.
+
+# ---- Main tab first: coins (main also catches anything unmatched and tradeable, at the end).
+rule	main	exact	coins
+rule	main	exact	platinum token
+
+# ---- 2 Tools & teleports (before combat: axes/pickaxes are wieldable).
+rule	tools	suffix	 pickaxe
+rule	tools	exact	pickaxe
+rule	tools	suffix	 axe
+rule	tools	suffix	 felling axe
+rule	tools	word	harpoon
+rule	tools	word	fishing rod
+rule	tools	word	fishing net
+rule	tools	exact	lobster pot
+rule	tools	exact	karambwan vessel
+rule	tools	exact	fishing bait
+rule	tools	exact	feather
+rule	tools	exact	sandworms
+rule	tools	exact	hammer
+rule	tools	exact	chisel
+rule	tools	exact	knife
+rule	tools	exact	tinderbox
+rule	tools	exact	needle
+rule	tools	exact	thread
+rule	tools	exact	saw
+rule	tools	exact	crystal saw
+rule	tools	exact	glassblowing pipe
+rule	tools	suffix	 mould
+rule	tools	exact	pestle and mortar
+rule	tools	exact	rake
+rule	tools	exact	seed dibber
+rule	tools	exact	spade
+rule	tools	exact	secateurs
+rule	tools	exact	magic secateurs
+rule	tools	prefix	watering can
+rule	tools	exact	gardening trowel
+rule	tools	exact	bucket
+rule	tools	exact	pot
+rule	tools	exact	jug
+rule	tools	exact	empty bucket
+rule	tools	exact	rope
+rule	tools	exact	light source
+rule	tools	word	lantern
+rule	tools	word	candle
+rule	tools	exact	small pouch
+rule	tools	exact	medium pouch
+rule	tools	exact	large pouch
+rule	tools	exact	giant pouch
+rule	tools	exact	colossal pouch
+rule	tools	exact	rune pouch
+rule	tools	exact	divine rune pouch
+rule	tools	exact	herb sack
+rule	tools	exact	open herb sack
+rule	tools	exact	seed box
+rule	tools	exact	gem bag
+rule	tools	exact	coal bag
+rule	tools	exact	fish barrel
+rule	tools	exact	log basket
+rule	tools	exact	looting bag
+rule	tools	word	teleport
+rule	tools	word	teleport scroll
+rule	tools	iop	Break
+rule	tools	prefix	ring of dueling
+rule	tools	prefix	games necklace
+rule	tools	prefix	amulet of glory
+rule	tools	prefix	skills necklace
+rule	tools	prefix	combat bracelet
+rule	tools	prefix	ring of wealth
+rule	tools	prefix	necklace of passage
+rule	tools	prefix	burning amulet
+rule	tools	prefix	digsite pendant
+rule	tools	prefix	slayer ring
+rule	tools	prefix	enchanted lyre
+rule	tools	exact	ectophial
+rule	tools	exact	royal seed pod
+rule	tools	word	teleport crystal
+rule	tools	prefix	xeric's talisman
+rule	tools	exact	enchanted gem
+rule	tools	exact	spiny helmet
+rule	tools	suffix	 talisman
+
+# ---- 3 Runes & ammo.
+rule	ammo	suffix	 rune
+rule	ammo	wearpos	ammo
+rule	ammo	stackable-weapon
+rule	ammo	suffix	 arrows
+rule	ammo	suffix	 bolts
+rule	ammo	word	chinchompa
+rule	ammo	suffix	cannonball
+
+# ---- 4 Food & potions.
+rule	consumables	iop	Drink
+rule	consumables	iop	Eat
+
+# ---- 8 Farming (before herblore: "Ranarr seed").
+rule	farming	suffix	 seed
+rule	farming	suffix	 seeds
+rule	farming	word	sapling
+rule	farming	word	seedling
+rule	farming	suffix	compost
+rule	farming	exact	plant pot
+rule	farming	exact	filled plant pot
+rule	farming	exact	plant cure
+rule	farming	prefix	compost potion
+rule	farming	exact	empty plant pot
+
+# ---- 5 Herblore.
+rule	herblore	word	grimy
+rule	herblore	exact	guam leaf
+rule	herblore	exact	marrentill
+rule	herblore	exact	tarromin
+rule	herblore	exact	harralander
+rule	herblore	exact	ranarr weed
+rule	herblore	exact	toadflax
+rule	herblore	exact	irit leaf
+rule	herblore	exact	avantoe
+rule	herblore	exact	kwuarm
+rule	herblore	exact	huasca
+rule	herblore	exact	snapdragon
+rule	herblore	exact	cadantine
+rule	herblore	exact	lantadyme
+rule	herblore	exact	dwarf weed
+rule	herblore	exact	torstol
+rule	herblore	suffix	(unf)
+rule	herblore	exact	vial
+rule	herblore	exact	vial of water
+rule	herblore	exact	eye of newt
+rule	herblore	exact	unicorn horn
+rule	herblore	exact	unicorn horn dust
+rule	herblore	exact	limpwurt root
+rule	herblore	exact	red spiders' eggs
+rule	herblore	exact	chocolate bar
+rule	herblore	exact	chocolate dust
+rule	herblore	exact	white berries
+rule	herblore	exact	snape grass
+rule	herblore	exact	wine of zamorak
+rule	herblore	exact	jangerberries
+rule	herblore	exact	potato cactus
+rule	herblore	exact	mort myre fungus
+rule	herblore	exact	dragon scale dust
+rule	herblore	exact	blue dragon scale
+rule	herblore	exact	goat horn dust
+rule	herblore	exact	desert goat horn
+rule	herblore	exact	toad's legs
+rule	herblore	exact	bird nest
+rule	herblore	exact	crushed nest
+rule	herblore	exact	poison ivy berries
+rule	herblore	exact	yew roots
+rule	herblore	exact	magic roots
+rule	herblore	exact	zulrah's scales
+rule	herblore	exact	crystal dust
+rule	herblore	exact	lava scale
+rule	herblore	exact	lava scale shard
+rule	herblore	exact	nail beast nails
+rule	herblore	exact	amylase crystal
+rule	herblore	exact	garlic
+rule	herblore	exact	silver dust
+rule	herblore	exact	ground bat bones
+rule	herblore	exact	kebbit teeth dust
+rule	herblore	exact	gorak claw powder
+rule	herblore	exact	caviar
+rule	herblore	exact	coconut milk
+rule	herblore	exact	cactus spine
+
+# ---- 6 Raw materials.
+rule	raw	suffix	 ore
+rule	raw	exact	coal
+rule	raw	exact	clay
+rule	raw	suffix	essence
+rule	raw	exact	logs
+rule	raw	suffix	 logs
+rule	raw	word	raw
+rule	raw	exact	cowhide
+rule	raw	suffix	 dragonhide
+rule	raw	exact	snake hide
+rule	raw	suffix	 fur
+rule	raw	word	uncut
+rule	raw	exact	flax
+rule	raw	exact	wool
+rule	raw	exact	bucket of sand
+rule	raw	exact	soda ash
+rule	raw	exact	seaweed
+rule	raw	exact	giant seaweed
+rule	raw	exact	sandstone (1kg)
+rule	raw	word	granite
+rule	raw	iop	Bury
+rule	raw	iop	Scatter
+
+# ---- 7 Processed.
+rule	processed	suffix	 bar
+rule	processed	suffix	 plank
+rule	processed	exact	plank
+rule	processed	exact	leather
+rule	processed	exact	hard leather
+rule	processed	suffix	 leather
+rule	processed	exact	soft clay
+rule	processed	exact	molten glass
+rule	processed	exact	ball of wool
+rule	processed	exact	bow string
+rule	processed	exact	crossbow string
+rule	processed	suffix	(u)
+rule	processed	exact	arrow shaft
+rule	processed	exact	headless arrow
+rule	processed	suffix	arrowtips
+rule	processed	suffix	arrowheads
+rule	processed	suffix	 tips
+rule	processed	suffix	 tip
+rule	processed	suffix	 shaft
+rule	processed	exact	snakeskin
+rule	processed	suffix	 bolts (unf)
+rule	processed	suffix	 limbs
+rule	processed	suffix	 stock
+rule	processed	exact	opal
+rule	processed	exact	jade
+rule	processed	exact	red topaz
+rule	processed	exact	sapphire
+rule	processed	exact	emerald
+rule	processed	exact	ruby
+rule	processed	exact	diamond
+rule	processed	exact	dragonstone
+rule	processed	exact	onyx
+rule	processed	exact	zenyte
+rule	processed	suffix	 nails
+rule	processed	word	unpowered orb
+rule	processed	exact	cloth
+rule	processed	word	unfired
+rule	processed	word	unstrung
+
+# ---- 1 Combat gear: everything else you can wear.
+rule	combat	equipable
+
+# ---- 9 Quest & misc: untradeables nothing else claimed. Main: the rest.
+rule	misc	untradeable
+rule	main	any
+
+# ---- Tiers (lowest first). Metals.
+tier	1	bronze
+tier	1	copper
+tier	1	tin
+tier	5	iron
+tier	8	silver
+tier	10	steel
+tier	12	coal
+tier	15	black
+tier	15	white
+tier	18	gold
+tier	20	mithril
+tier	30	adamant
+tier	40	rune
+tier	45	granite
+tier	50	runite
+tier	60	dragon
+tier	70	amethyst
+tier	75	crystal
+tier	80	obsidian
+# Hides / ranged armour.
+tier	1	leather
+tier	10	hard leather
+tier	20	studded
+tier	30	snakeskin
+tier	40	green d'hide
+tier	40	green dragonhide
+tier	40	green dragon leather
+tier	50	blue d'hide
+tier	50	blue dragonhide
+tier	50	blue dragon leather
+tier	60	red d'hide
+tier	60	red dragonhide
+tier	60	red dragon leather
+tier	70	black d'hide
+tier	70	black dragonhide
+tier	70	black dragon leather
+tier	70	karil's
+# Magic robes.
+tier	1	wizard
+tier	1	blue wizard
+tier	1	black wizard
+tier	20	mystic
+tier	40	splitbark
+tier	50	infinity
+tier	70	ahrim's
+# Other named melee sets.
+tier	50	initiate
+tier	55	proselyte
+tier	70	dharok's
+tier	70	guthan's
+tier	70	torag's
+tier	70	verac's
+# Logs / planks / bows.
+tier	1	logs
+tier	15	oak
+tier	30	willow
+tier	35	teak
+tier	45	maple
+tier	50	mahogany
+tier	60	yew
+tier	75	magic
+tier	90	redwood
+# Gems.
+tier	1	opal
+tier	13	jade
+tier	16	red topaz
+tier	20	sapphire
+tier	27	emerald
+tier	34	ruby
+tier	43	diamond
+tier	55	dragonstone
+tier	67	onyx
+tier	89	zenyte
+# Herbs (also orders seeds and unf potions).
+tier	3	guam
+tier	5	marrentill
+tier	11	tarromin
+tier	20	harralander
+tier	25	ranarr
+tier	30	toadflax
+tier	40	irit
+tier	48	avantoe
+tier	54	kwuarm
+tier	58	huasca
+tier	59	snapdragon
+tier	65	cadantine
+tier	67	lantadyme
+tier	70	dwarf weed
+tier	75	torstol
+# Fish (raw and cooked).
+tier	1	shrimps
+tier	5	sardine
+tier	10	herring
+tier	15	anchovies
+tier	20	trout
+tier	25	pike
+tier	30	salmon
+tier	35	tuna
+tier	40	lobster
+tier	43	bass
+tier	45	swordfish
+tier	62	monkfish
+tier	65	karambwan
+tier	76	shark
+tier	79	sea turtle
+tier	81	manta ray
+tier	82	anglerfish
+tier	85	dark crab
+# Runes (whole "<x> rune" so "Fire cape" isn't a fire-rune set).
+tier	1	air rune
+tier	2	mind rune
+tier	5	water rune
+tier	9	earth rune
+tier	14	fire rune
+tier	20	body rune
+tier	27	cosmic rune
+tier	35	chaos rune
+tier	40	astral rune
+tier	44	nature rune
+tier	54	law rune
+tier	65	death rune
+tier	77	blood rune
+tier	90	soul rune
+tier	95	wrath rune
