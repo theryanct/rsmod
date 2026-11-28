@@ -108,7 +108,12 @@ constructor(
             default(npcTypes, PanNpcs.jim) { jimDefault(it) }
             default(npcTypes, PanNpcs.jim_shipwright) { jimDefault(it) }
             register(npcTypes, PanNpcs.master_sarim, PANDEMONIUM, wants = { state == LOG_GIVEN }) {
-                runQuestSection(it, dialogue, "Talking to the Port master", cargoHooks(), speakers)
+                // The world spawns reuse this type for a dozen other ports' masters.
+                if (it.coords.chebyshevDistance(SARIM_LEDGER) <= PORT_RADIUS) {
+                    runQuestSection(it, dialogue, "Talking to the Port master", cargoHooks(), speakers)
+                } else {
+                    masterDefault(it)
+                }
             }
             register(npcTypes, PanNpcs.master_pandemonium, PANDEMONIUM, wants = { state in LOG_GIVEN..DELIVERED }) {
                 masterPandemonium(it)
@@ -247,7 +252,7 @@ constructor(
                 if (gust) {
                     gust = false
                     boosted = true
-                    mesbox("You trim the sails, catching the wind for a burst of speed!")
+                    access.mes("You trim the sails, catching the wind for a burst of speed!") // Wiki {{mes}}
                     praise()
                     continue
                 }
@@ -261,7 +266,7 @@ constructor(
                 // The gust passes untrimmed (Wiki: "When the ship is losing wind").
                 gust = false
                 runner.run(this, listOf(dialogue.section("When the ship is losing wind").first().children.first()))
-                mesbox("The wind dies down and your sails with it.")
+                access.mes("The wind dies down and your sails with it.") // Wiki {{mes}}
             }
             val step = if (boosted) STEP * 2 else STEP
             boosted = false
@@ -272,7 +277,8 @@ constructor(
                 else -> x -= step
             }
             if (x !in BAY_X || z !in BAY_Z) {
-                runner.run(this, dialogue.section("Capsizing"))
+                // Wiki "Capsizing" ({{mes}}).
+                access.mes("You get into difficulty and almost capsize! However, you manage to make your way back to land.")
                 return Outcome.Capsized
             }
             if (maxOf(kotlin.math.abs(x - WRECK.x), kotlin.math.abs(z - WRECK.z)) > ARRIVE_RADIUS) {
@@ -632,7 +638,10 @@ constructor(
             !hasTools() -> mes("You'll need a hammer and a saw to build the cargo hold.")
             else -> {
                 mes("You board your raft and get to work on the facility hotspot.")
-                runQuestSection(null, dialogue, "Building the Cargo hold", speakers = speakers)
+                // The transcript's materials line is a {{mes}}.
+                val provided = "Junior Jim helpfully provides the materials required to build the cargo hold."
+                val hooks = SimpleQuestHooks(boxes = mapOf(provided to { mes(provided); true }))
+                runQuestSection(null, dialogue, "Building the Cargo hold", hooks, speakers)
                 setState(HOLD_BUILT)
                 mes("You build a basic cargo hold and step back onto the dock.")
             }
@@ -770,6 +779,8 @@ constructor(
         private val SHIPYARD = CoordGrid(2084, 2722, 0)
         private const val SHIPYARD_MAX_X = 2200
         private val JIM_DOCK = CoordGrid(3058, 2981, 0)
+        private val SARIM_LEDGER = CoordGrid(3028, 3194, 0)
+        private const val PORT_RADIUS = 30
 
         val PANDEMONIUM =
             QuestDef(
