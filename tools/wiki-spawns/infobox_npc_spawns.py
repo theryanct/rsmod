@@ -62,6 +62,14 @@ OBJLINE_EXCLUDE = re.compile(r"Tutorial Island|Tempoross|Birthday|Boat fishing|F
 # them apart): held back until skilling special-cases them. Remove an entry here once it's bound.
 FISHING_HELD = re.compile(r"0_37_59_tuna|minnow_|camdozaal_fish|lanternfish|tempoross_.*fishingspot")
 SQUARE = re.compile(r"^(?:\d_)?(\d+)_(\d+)_")
+# Hand fixes, by Wiki page title: (npc sym or None to keep, coords or None to keep).
+# Rantz: the infobox id is the Recipe for Disaster multinpc; Bugs/Fycie: the map pin is on the
+# surface but they live in Rantz's cave (by the ogre benches).
+OVERRIDES = {
+    "Rantz": ("rantz", None),
+    "Bugs": (None, "0_41_146_17_49"),
+    "Fycie": (None, "0_41_146_26_49"),
+}
 
 
 def templates(text, name):
@@ -373,6 +381,10 @@ def main():
                     stats["spawn_members" if members else "spawn_f2p"] += 1
                     if approx: log.append((title, where, "approx centre (" + mtype + ")", f"{plane},{x},{z}"))
 
+    spawns = [
+        (m, OVERRIDES.get(t, (None, None))[0] or n, OVERRIDES.get(t, (None, None))[1] or c, t)
+        for m, n, c, t in spawns
+    ]
     for path, mem in ((out_f2p, False), (out_mem, True)):
         with open(path, "w", encoding="utf-8", newline="\n") as fo:
             fo.write("# Generated from OSRS Wiki infobox maps (pages without LocLine) by "
