@@ -34,6 +34,7 @@ import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
+import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
 /**
@@ -72,6 +73,7 @@ public object BuiltQuests {
             TREE_GNOME_VILLAGE,
             VAMPYRE_SLAYER,
             WATERFALL_QUEST,
+            WITCHS_HOUSE,
             WITCHS_POTION,
             X_MARKS_THE_SPOT,
         )
