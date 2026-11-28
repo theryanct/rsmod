@@ -96,6 +96,12 @@ for r in recipes:
     rows.append((kind, product, qty, sk[0], sk[1], max(ticks, 1) if kind != "knife" else max(ticks, 2), anim, mats))
     stats[kind] += 1
 
+# Recipes the Wiki recipe bucket lacks (Adamant bolts has no bucket row): (kind, product, qty, level, xp, ticks, anim, mats)
+MANUAL = [("combine", "xbows_crossbow_bolts_adamantite", 10, 61, 70, 1, "-",
+           [("xbows_crossbow_bolts_adamantite_unfeathered", 10), ("feather", 10)])]
+for m in MANUAL:
+    if (m[0], m[1], m[7][0][0]) not in seen: rows.append(m)
+
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
     w.write("# Generated from the OSRS Wiki recipe bucket by tools/skills/fletching_to_tsv.py - do not edit.\n")
     for kind, product, qty, level, xp, ticks, anim, mats in sorted(rows, key=lambda t: (t[0], t[3], t[1])):
