@@ -11,7 +11,8 @@ internal object HerbloreObjs : ObjReferences() {
                 HerbloreData.unfinished.flatMap { listOf(it.herb, it.unf) } +
                 HerbloreData.potions.flatMap { listOf(it.unf, it.secondary, it.product) } +
                 HerbloreData.drinks.flatMap { it.doses } +
-                listOf(HerbloreData.VIAL, HerbloreData.VIAL_WATER))
+                HerbloreData.grinds.flatMap { listOf(it.source, it.product) } +
+                listOf(HerbloreData.VIAL, HerbloreData.VIAL_WATER, HerbloreData.PESTLE))
             .distinct()
             .associateWith { find(it) }
 }
@@ -20,6 +21,7 @@ internal object HerbloreSeqs : SeqReferences() {
     val mix = find("human_herbing_vial")
     val drink = find("human_eat")
     val fill = find("human_pickuptable")
+    val grind = find("human_herbing_grind")
 }
 
 internal object HerbloreQueues : QueueReferences() {

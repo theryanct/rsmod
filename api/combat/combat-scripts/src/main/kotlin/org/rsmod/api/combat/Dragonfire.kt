@@ -20,6 +20,7 @@ import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.spot.SpotanimReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.hit.HitType
@@ -43,9 +44,9 @@ import org.rsmod.game.type.obj.ObjTypeList
  * resist some of the dragon fire!" / "You're horribly burnt by the dragon fire!"), as on the
  * wiki. Elvarg's fire also drains 10% of the target's prayer.
  *
- * Not done: antifire potions (shield + antifire = full block; antifire alone caps chromatic fire at
- * 35, super antifire blocks it) - add an [antifire] source when herblore has them; long-range
- * breath (metallic dragons / Elvarg breathe from melee distance here, like chromatics).
+ * Antifire potions (herblore, cache varbits `antifire_potion` / `super_antifire_potion`): regular
+ * caps the breath at 70% (35 for chromatics) and with a shield blocks it; super antifire blocks
+ * it. Not done: long-range breath (metallic dragons / Elvarg breathe from melee distance here, like chromatics).
  */
 internal class Dragonfire
 @Inject
@@ -102,8 +103,13 @@ constructor(
         }
     }
 
-    /** Antifire potion protection; none exist yet (herblore follow-up). */
-    private fun antifire(@Suppress("UNUSED_PARAMETER") target: Player): Antifire = Antifire.None
+    /** Antifire potion protection: the cache varbits herblore's antifires count down. */
+    private fun antifire(target: Player): Antifire =
+        when {
+            target.vars[DragonfireVarBits.super_antifire] > 0 -> Antifire.Super
+            target.vars[DragonfireVarBits.antifire] > 0 -> Antifire.Regular
+            else -> Antifire.None
+        }
 
     private fun invTotalWorn(player: Player, obj: Int): Int =
         player.worn.objs.sumOf { if (it?.id == obj) it.count else 0 }
@@ -209,6 +215,11 @@ internal object DragonfireObjs : ObjReferences() {
             find("dragonfire_ward"),
             find("dragonfire_ward_uncharged"),
         )
+}
+
+internal object DragonfireVarBits : VarBitReferences() {
+    val antifire = find("antifire_potion")
+    val super_antifire = find("super_antifire_potion")
 }
 
 internal object DragonfireSeqs : SeqReferences() {

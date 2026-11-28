@@ -19,6 +19,7 @@ import org.rsmod.api.script.onOpHeld5
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.script.onPlayerQueueWithArgs
+import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.content.skills.herblore.HerbloreData.Effect
 import org.rsmod.events.EventBus
@@ -66,6 +67,11 @@ constructor(
             onOpHeldU(obj(potion.unf), obj(potion.secondary)) { selectMake(recipe) }
         }
         onPlayerQueueWithArgs<MakeJob>(HerbloreQueues.make) { make(it.args) }
+        onPlayerSoftTimer(AntifireTimers.tick) { Antifire.tick(player) }
+        val pestle = obj(HerbloreData.PESTLE)
+        for (grind in HerbloreData.grinds) {
+            onOpHeldU(pestle, obj(grind.source)) { grind(grind) }
+        }
         for (drink in HerbloreData.drinks) {
             for ((index, dose) in drink.doses.withIndex()) {
                 val next = drink.doses.getOrNull(index + 1) ?: HerbloreData.VIAL
@@ -161,6 +167,15 @@ constructor(
         }
     }
 
+    /* Grinding */
+
+    private fun ProtectedAccess.grind(grind: HerbloreData.Grind) {
+        invDel(inv, obj(grind.source))
+        invAdd(inv, obj(grind.product))
+        anim(HerbloreSeqs.grind)
+        mes("You grind the ${objTypes[obj(grind.source)].name.lowercase()} to dust.")
+    }
+
     /* Drinking */
 
     private suspend fun ProtectedAccess.drink(
@@ -188,6 +203,7 @@ constructor(
                 player.runEnergy = min(constants.run_max_energy, player.runEnergy + gain)
             }
             is Effect.Cure -> player.curePoison(effect.immunityTicks)
+            is Effect.Antifire -> Antifire.drink(player, effect.superPotion, effect.minutes)
         }
         if (left > 0) {
             mes("You have $left dose${if (left > 1) "s" else ""} of potion left.")

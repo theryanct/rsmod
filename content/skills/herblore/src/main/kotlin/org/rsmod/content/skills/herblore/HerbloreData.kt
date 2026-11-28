@@ -47,6 +47,7 @@ internal object HerbloreData {
             Unfinished("toadflax", "toadflaxvial", 34),
             Unfinished("irit_leaf", "iritvial", 45),
             Unfinished("avantoe", "avantoevial", 50),
+            Unfinished("lantadyme", "lantadymevial", 69),
         )
 
     val potions: List<Potion> =
@@ -92,7 +93,28 @@ internal object HerbloreData {
             ),
             Potion("Fishing potion", "avantoevial", "snape_grass", "3dosefisherspotion", 50, 112.5),
             Potion("Super energy", "avantoevial", "mortmyremushroom", "3dose2energy", 52, 117.5),
+            Potion(
+                "Antifire potion",
+                "lantadymevial",
+                "dragon_scale_dust",
+                "3dose1antidragon",
+                69,
+                157.5,
+            ),
         )
+
+    /** Pestle and mortar on [source] grinds it into [product]. */
+    class Grind(val source: String, val product: String)
+
+    val grinds: List<Grind> =
+        listOf(
+            Grind("unicorn_horn", "unicorn_horn_dust"),
+            Grind("blue_dragon_scale", "dragon_scale_dust"),
+            Grind("chocolate_bar", "chocolate_dust"),
+            Grind("desert_goat_horn", "ground_desert_goat_horn"),
+        )
+
+    const val PESTLE = "pestle_and_mortar"
 
     /** What a dose does when drunk (Wiki values). */
     sealed class Effect {
@@ -108,6 +130,12 @@ internal object HerbloreData {
 
         /** Antipoisons: cure poison and grant immunity for [immunityTicks] (Wiki durations). */
         data class Cure(val immunityTicks: Int) : Effect()
+
+        /**
+         * Antifires: dragonfire protection for [minutes] (Wiki durations), counted in the cache
+         * varbits `antifire_potion` / `super_antifire_potion` (see Antifire.kt).
+         */
+        data class Antifire(val superPotion: Boolean, val minutes: Int) : Effect()
     }
 
     class Drink(val name: String, val doses: List<String>, val effect: Effect)
@@ -150,6 +178,10 @@ internal object HerbloreData {
             Drink("super energy", doses("2energy"), Effect.Energy(20)),
             Drink("antipoison", doses("antipoison"), Effect.Cure(immunityTicks = 150)),
             Drink("superantipoison", doses("2antipoison"), Effect.Cure(immunityTicks = 600)),
+            Drink("antifire potion", doses("1antidragon"), Effect.Antifire(false, 6)),
+            Drink("extended antifire", doses("2antidragon"), Effect.Antifire(false, 12)),
+            Drink("super antifire potion", doses("3antidragon"), Effect.Antifire(true, 3)),
+            Drink("extended super antifire", doses("4antidragon"), Effect.Antifire(true, 6)),
         )
 
     /** Water sources (by loc name) that fill vials. */
