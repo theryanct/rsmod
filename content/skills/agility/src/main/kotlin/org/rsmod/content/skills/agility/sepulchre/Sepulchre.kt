@@ -85,7 +85,7 @@ constructor(
     private val launcher: ProtectedAccessLauncher,
 ) : PluginScript() {
     private val logger = InlineLogger()
-    private val runs = HashMap<Long, Run>()
+    private val runs = HashMap<Int, Run>()
     private var skipped = 0
 
     private class Run {
