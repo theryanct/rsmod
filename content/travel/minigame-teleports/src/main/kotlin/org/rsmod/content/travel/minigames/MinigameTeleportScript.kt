@@ -31,6 +31,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  * minigame_tele_last, minutes since the epoch). Destinations are the OSRS Wiki's Minigame
  * Teleport arrival spots (wiki-cache/Minigame_Teleport.md); Rat Pits asks which city.
  *
+ * The spellbooks' Minigame Teleport spell opens the same menu (same cooldown).
+ *
  * Later polish: the real dropdown selection, the cast's full animation stages and interruption.
  */
 class MinigameTeleportScript
@@ -78,6 +80,10 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
     override fun ScriptContext.startup() {
         onIfOverlayButton(MinigameComponents.grouping_tab) { player.openGrouping() }
         onIfOverlayButton(MinigameComponents.teleport) { player.chooseTeleport() }
+        // The spellbooks' Minigame Teleport spell: same menu and cooldown.
+        for (spell in MinigameComponents.spellbook_teleports) {
+            onIfOverlayButton(spell) { player.chooseTeleport() }
+        }
     }
 
     private fun Player.openGrouping() {
@@ -143,6 +149,14 @@ internal object MinigameComponents : ComponentReferences() {
     val grouping_tab = find("side_channels:tab_3")
     val contents = find("side_channels:contents")
     val teleport = find("grouping:teleport")
+    /** Minigame Teleport on the standard, ancient, lunar and arceuus spellbooks. */
+    val spellbook_teleports =
+        listOf(
+            find("magic_spellbook:teleport_minigame_standard"),
+            find("magic_spellbook:teleport_minigame_ancient"),
+            find("magic_spellbook:teleport_minigame_lunar"),
+            find("magic_spellbook:teleport_minigame_arceuus"),
+        )
 }
 
 internal object MinigameSeqs : SeqReferences() {

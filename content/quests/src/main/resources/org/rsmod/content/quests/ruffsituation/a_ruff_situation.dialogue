@@ -1,0 +1,596 @@
+# Generated from the OSRS Wiki page "Transcript:A Ruff Situation" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Attempting to rescue a dog
+1	box	You have nowhere to send this lost dog...
+0	section	Talking to Chase
+1	line	Player	Hello, what is this place?
+1	line	Chase	A dog shelter.
+1	line	Player	Did you build it?
+1	line	Chase	With my wife, Talia, yes.
+1	line	Player	Do you have any dogs up for adoption?
+1	line	Chase	Best to speak with Talia.
+1	action	end
+0	section	Talking to Talia
+1	line	Player	Hello, what is this place?
+1	line	Talia	Welcome to our dog shelter! I'm Talia and I run it alongside my husband, Chase.
+1	line	Player	You don't seem to have many dogs. Where are the rest?
+1	line	Talia	I wish I could tell you they'd all been adopted... but I'd be lying to myself.
+1	line	Player	So they were never here to begin with?
+1	line	Chase	No.
+1	line	Talia	We're trying. The monks from the Monastery believe in our cause. That's why they granted us this land.
+1	line	Talia	But belief, sadly, won't help keep us open.
+1	line	Player	What would you need to keep the shelter open?
+1	line	Talia	We need more strays to rescue. If people know they can find a companion here, they'll come.
+1	line	Player	Can't you go out to look for strays then?
+1	line	Talia	We tried.
+1	line	Player	What happened?
+1	line	Talia	It can take one of us hours just to coerce a puppy out of hiding.
+1	line	Chase	And the shelter doesn't run itself.
+1	line	Talia	By the time we got back, we'd still need to clean the kennels, feed the dogs we do have, repair the fences...
+1	line	Talia	Plus, there was no one to keep the cats and dogs separate.
+1	line	Player	I thought this was a dog shelter?
+1	line	Chase	Not always.
+1	line	Talia	What we really need is someone worldly who can bring strays back for us.
+1	cond	If the player does not meet the quest's requirements:
+2	line	Player	Sounds like it. No luck in finding anyone then?
+2	line	Talia	Sadly not.
+2	action	end
+1	cond	If the player meets the quest's requirements:
+2	select	Start the A Ruff Situation quest?
+2	option	Yes.
+3	line	Player	Lucky for you, I enjoy wandering.
+3	line	Chase	I can smell it.
+3	line	Talia	So you'll help us out?
+3	line	Player	I'd be happy to. Any ideas where I could start?
+3	line	Talia	We've met so many people that might be able to...
+3	line	Chase	Gertrude.
+3	line	Talia	Yes, Gertrude! She was a great help with the cats.
+3	line	Chase	Not much for dogs.
+3	line	Talia	Right, but I'm sure she can point you in the right direction. You'll find her house near the western entrance to Varrock.
+4	line	Player	Sure, I can check in with her.
+4	action	continues
+4	line	Player	Excellent idea. I've helped her out before. I can check in with her.
+4	action	continues
+3	line	Talia	Wonderful! Good luck!
+3	action	end
+2	option	No.
+3	line	Player	I'm afraid I can't help you at the moment.
+3	action	end
+0	section	Talking to Talia again
+1	line	Player	Hello again.
+1	line	Talia	Adventurer, have you come to help us?
+1	line	Player	What did you need of me again?
+1	line	Talia	We need someone worldly to bring back stray dogs for us. Would you be willing to help us?
+1	select	Start the A Ruff Situation quest?
+1	option	Yes.
+2	action	above
+1	option	No.
+2	action	above
+0	section	Talking to Chase after starting the quest
+1	line	Player	Hey, how are things going?
+1	line	Chase	Good.
+1	line	Player	How are the dogs doing? Keeping them healthy?
+1	line	Chase	Aye.
+1	line	Player	How about yourself? Staying active?
+1	line	Chase	Best as I can.
+1	line	Player	Man of few words I see.
+1	line	Chase	Aye.
+1	action	end
+0	section	Talking to Talia after starting the quest
+1	line	Player	Who did you want me to check in with?
+1	line	Chase	Gertrude.
+1	line	Talia	Yes, she may know of some dogs that need help.
+1	line	Player	Where did she live again?
+1	line	Talia	You'll pass her house on the way into Varrock from here, just outside the western entrance to the city.
+1	action	end
+0	section	Trying to rescue other stray dogs during the quest
+1	line	Player	I should finish helping Talia with my current task before bringing back another stray.
+1	action	end
+0	section	Gertrude
+1	select	Select an option
+1	option	Ask about lost dogs.
+2	cond	If Gertrude's Cat has been completed:
+3	line	Player	Hello there, Gertrude.
+3	line	Gertrude	Hello, adventurer! How can I help you today?
+3	line	Player	I've come to ask a favour, if you don't mind?
+3	line	Gertrude	Of course, anything for the hero who returned Fluffs to me.
+3	line	Player	Talia sent me to you. She said you helped them with their dog shelter?
+3	line	Gertrude	It's just a dog shelter now? I don't blame them... They had trouble keeping the cats and dogs separate. How have they been getting on?
+3	line	Player	Not well. They barely have any dogs in for adoption.
+3	line	Gertrude	Oh dear... I suppose that's why you're here?
+3	line	Player	Precisely! They thought you might know of some dogs in the city I could rescue.
+3	line	Gertrude	Well, it would be nice for someone to do something about those mangy stray dogs you see in Varrock.
+3	line	Player	I wouldn't call them mangy... They just need some love.
+3	line	Gertrude	They're covered in fleas and they're everywhere. They always beg for food when I walk through the city.
+3	line	Player	Sounds like the kind of rescue Talia would be looking for...
+3	line	Gertrude	I'd be happy to see them go. I always see them near the west entrance to the city.
+3	line	Player	I'll start my search there then. You've been a great help!
+3	action	end
+2	cond	If Gertrude's Cat hasn't been completed:
+3	line	Player	Hello, are you Gertrude by chance?
+3	line	Gertrude	Yes, I am. However, I'm in no mood to entertain guests today.
+3	line	Player	I just have a few questions to ask. I've been told you're good with animals.
+3	line	Gertrude	Well, I have a missing cat, if that's what you mean...
+3	line	Player	Talia sent me to you. She said you helped them with their dog shelter?
+3	line	Gertrude	It's just a dog shelter now? I don't blame them... They had trouble keeping the cats and dogs separate. How have they been getting on?
+3	line	Player	Not well. They barely have any dogs in for adoption.
+3	line	Gertrude	Oh dear... I suppose that's why you're here?
+3	line	Player	Precisely! They thought you might know of some dogs in the city I could rescue.
+3	line	Gertrude	Well, it would be nice for someone to do something about those mangy stray dogs you see in Varrock.
+3	line	Player	I wouldn't call them mangy... They just need some love.
+3	line	Gertrude	They're covered in fleas and they're everywhere. They always beg for food when I walk through the city.
+3	line	Player	Sounds like the kind of rescue Talia would be looking for...
+3	line	Gertrude	I'd be happy to see them go. I always see them near the west entrance to the city.
+3	line	Player	I'll start my search there then. You've been a great help!
+3	line	Gertrude	If only someone cared about my Fluffs as much as those mutts...
+3	action	end
+1	option	Talk about something else.
+0	section	Talking to Gertrude again
+1	select	Select an option
+1	option	Ask about lost dogs.
+2	line	Player	Where did you say you saw some stray dogs again?
+2	line	Gertrude	Just head to the west entrance of Varrock. I'm sure you'll run into one before long.
+2	action	end
+1	option	Talk about something else.
+0	section	Talking to Talia again
+1	line	Player	I met up with Gertrude.
+1	line	Talia	Excellent! Was she able to point you in the right direction?
+1	line	Player	She mentioned there are some stray dogs in Varrock that might need help.
+1	line	Talia	Great! You should head in that direction and take a look around!
+1	action	end
+0	section	Stray dog
+0	section	Periodically, before interacting with the stray dog
+1	line	Stray dog	Bark bark
+0	section	Talking to the guard or interacting with the stray dog
+1	line	Stray Dog	Woof woof!
+1	line	Guard	Easy girl! Calm down!
+1	line	Player	What's going on here?
+1	line	Guard	I have no idea. She just started barking at me.
+1	line	Stray Dog	Bark bark bark!
+1	line	Player	Something has her upset. Has she ever been like this before?
+1	line	Guard	No, normally she's very friendly, although we haven't seen her for a few weeks...
+1	line	Stray Dog	Woof woof!
+1	line	Player	Whatever it is, she is being very persistent.
+1	line	Guard	Maybe she wants one of us to follow her. I can't leave my post. Could you go?
+1	line	Stray Dog	Arf arf!
+1	line	Player	Hmm... This is the kind of situation Talia would have me intervene with...
+1	line	Player	Of course I can! Where did you want to go, girl?
+1	line	Varrock Guard	You'd better be quick! She's already on the move.
+1	line	Stray Dog	Arf arf!
+1	action	end
+0	section	Talking to the guard again
+1	line	Varrock Guard	You'd better be quick! She's already on the move.
+1	action	end
+0	section	Periodically, if the player is too far away from the stray dog
+1	line	Stray dog	Arf arf!
+0	section	Interacting with the dog
+1	line	Player	Something is wrong. I should follow her and find out what she wants.
+1	action	end
+0	section	Upon approaching the stray dog
+1	line	Stray dog	Whine
+1	action	The stray dog moves closer towards its home.
+0	section	At the dog's house
+0	section	Periodically, while inside the house
+1	line	Stray dog	Mrrph
+0	section	Interacting with the dog
+1	line	Player	I've followed you here like you wanted. What do you want to show me?
+1	line	Stray dog	Arf arf!
+1	box	The stray dog indicates towards her makeshift den.
+1	action	end
+0	section	Inspecting the torn newspaper
+1	box	You inspect the scraps on the floor...
+1	box	They've been ripped up by something with small teeth.
+1	action	end
+0	section	Inspecting the chewed box
+1	box	You inspect the crate...
+1	box	You notice some chew marks on the corner.
+1	action	end
+0	section	Inspecting the rough bedding
+1	box	You inspect the bed...
+1	box	You notice a large indentation and three smaller ones.
+1	action	end
+0	section	After inspecting all three objects
+1	line	Player	I think I'm starting to understand what's got you so upset.
+1	line	Stray dog	Whimper.
+1	box	The stray dog looks at you with a sad look in her eye.
+1	line	Player	It appears some puppies were playing here at one point...
+1	line	Stray dog	Mrrph...
+1	box	The stray dog nods in agreement.
+1	line	Player	But they're gone now and you don't seem too happy about it.
+1	line	Stray dog	Woof.
+1	box	The stray dog cocks her head and begins to sniff the air.
+1	line	Player	What's wrong? Have you caught their scent?
+1	action	end
+0	section	Interacting with the dog while following her
+1	line	Player	She must have caught the scent of her puppies. I should follow her.
+1	action	end
+0	section	Talking to the guard
+1	line	Player	I figured out what's wrong with the stray dog!
+1	line	Guard	That's great news! Do tell.
+1	line	Player	After looking around her den, I think she's had some puppies.
+1	line	Guard	That explains why she went missing for so long. Are the puppies still there?
+1	line	Player	No...
+1	line	Guard	Then why are you here talking to me. Go help her find them!
+1	action	end
+0	section	Periodically, if the player is too far away from the stray dog
+1	line	Stray dog	Arf arf!
+0	section	Upon approaching the stray dog
+1	line	Stray dog	Sniff sniff
+0	section	Upon entering the bank
+1	line	Banker	Oi, get that mutt out of my bank!
+1	line	Stray dog	Grrrr
+1	line	Banker	Oh, er... carry on then.
+0	section	Upon approaching the Grand Exchange entrance
+1	line	Guard	No mutts allowed in the Grand Exchange! Keep that dog away.
+1	line	Stray dog	Arf!
+0	section	Cutscene
+1	line	Stray dog	Grrrrr...
+1	line	Player	What is it, girl?
+1	line	Stray dog	Bark bark.
+1	line	Stray puppy	Yelp!
+1	line	Player	Hey, is that one of your puppies?
+1	line	Stray dog	Woof woof!
+1	line	Stray puppy	Yelp!
+1	line	Picklenose	Get back 'ere!
+1	line	Stray dog	Grrrr
+1	line	Picklenose	Uh oh! Big dog!
+1	line	Player	A goblin?!
+1	line	Picklenose	Picklenose think Picklenose go now.
+1	line	Player	Hang on, get back here!
+1	line	Stray puppy	Yip yip!
+1	cond	If the player has no inventory space:
+2	line	Player	Hang on, let me take something out of my pockets first.
+1	line	Player	Yes of course, let's get you out of danger first, little guy.
+1	action	end
+0	section	After the cutscene
+1	line	Player	We arrived at the right time.
+1	line	Stray dog	Arf!
+1	line	Player	Are there any more puppies we need to find?
+1	line	Stray dog	Woof woof!
+1	cond	If the player does not have a follower:
+2	box	The stray dog barks in the direction the goblin ran off in.
+2	line	Player	Let's go find them then! Follow me!
+2	action	end
+1	cond	If the player currently has a follower:
+2	box	The stray dog can't follow you at the moment.
+2	action	end
+0	section	Interacting with the stray dog
+1	line	Player	Do you remember which way the goblins went?
+1	box	The stray dog sniffs the air...
+1	box	The stray dog barks in the direction of the scent.
+1	action	end
+0	section	Dismissing the stray dog
+1	line	Player	I need to do something else. Can you wait for me at your den?
+1	line	Stray dog	Mrrph...
+1	action	end
+1	cond	With the stray dog following you:
+2	box	The guard is standing watch and doesn't have time to chat.
+2	action	end
+1	cond	Without the stray dog following you:
+2	line	Player	Has the stray dog come back this way? I can't find her.
+2	line	Guard	I think I saw her heading towards her den, north of the Apothecary.
+2	action	end
+0	section	Going too far from Varrock with the dog
+1	box	The stray dog won't go too far from her den. She will wait for you there.
+1	action	end
+0	section	Talking to Talia again
+1	line	Player	I've got an update.
+1	line	Talia	It doesn't sound positive.
+1	line	Player	I found a stray dog in Varrock, but her puppies have gone missing.
+1	line	Talia	Oh dear! You must help her! Please, return to her at once!
+1	action	end
+0	section	Returning to the dog after leaving her
+1	line	Player	My apologies, I'm ready to continue the search for your puppies.
+1	action	end
+0	section	Interacting with the goblins without the stray dog
+1	line	Player	I should have the stray dog with me before I interrupt these goblins.
+1	action	end
+0	section	Goblins
+1	line	Toetaller	What mean Picklenose lose other dog?
+1	line	Picklenose	Picklenose jumped by big dog.
+1	line	Toetaller	How big?
+1	line	Picklenose	Bigger than Nosorog.
+1	line	Toetaller	Ooh, big big! Toetaller understand now.
+1	line	Stray Dog	Bark bark!
+1	line	Player	Ahem!
+1	line	Toetaller	Hello, human. What you want?
+1	line	Picklenose	There! Big dog!
+1	line	Toetaller	This dog?
+1	line	Stray Dog	Woof!
+1	line	Picklenose	Yes.
+1	line	Toetaller	It not big as Nosorog... Picklenose lie.
+1	line	Player	It bigger before.
+1	line	Toetaller	Toetaller doubt that.
+1	line	Player	Picklenose not lie! Dog bigger before.
+1	line	Player	Excuse me!
+1	line	Toetaller	Human rude. Goblins busy. Speak quick.
+1	line	Player	Why did you steal these puppies? You need to give them back.
+1	line	Toetaller	Sorry, human. We have big plan. Keep village safe.
+1	line	Player	Puppies will keep your village safe?
+1	line	Picklenose	Silly human.
+1	line	Toetaller	Very silly. Puppy too weak. We wait 'till puppy big, strong.
+1	line	Picklenose	Big, strong, scary dog keep village safe.
+1	line	Player	You're just going to wait here till the puppy is fully grown?
+1	line	Toetaller	Yes. Not take long Toetaller think.
+1	line	Player	I'm afraid puppies don't work like that.
+1	line	Picklenose	What human mean?
+1	line	Player	You know you have to feed dogs to keep them alive?
+1	line	Toetaller	No...
+1	line	Player	They also have a lot of energy they need to burn off.
+1	line	Picklenose	How do that?
+1	line	Player	You need to play with them, take them for walks...
+1	line	Picklenose	That sound boring.
+1	line	Player	I wouldn't expect a dog to sit and guard your village all day either.
+1	line	Toetaller	Why not?
+1	line	Player	It's a dog. It needs attention and caring for. It won't just sit still for hours.
+1	line	Toetaller	Hmm...
+1	line	Player	Maybe a guard dog isn't the best idea?
+1	line	Toetaller	No, Toetaller still want guard dog. We make this one guard dog without all that.
+1	line	Player	If you don't feed it, it will die.
+1	line	Toetaller	Toetaller don't think so.
+1	line	Picklenose	Picklenose have idea.
+1	line	Player	Oh, here we go...
+1	line	Picklenose	Human find goblins dog that no need all that... extra stuff, then goblins give human this useless dog.
+1	line	Player	I don't think a dog like that exists...
+1	line	Toetaller	Then we do goblin plan.
+1	line	Player	Wait, wait! Could I make you something?
+1	line	Picklenose	Picklenose no know, can you?
+1	line	Player	Maybe I could make something with some fur...?
+1	line	Toetaller	Remember dog need be big... huge!
+1	line	Picklenose	Yes, huge and scary. Defend village from outsiders.
+1	line	Player	... Then I suppose I'd need to stuff it with something, maybe grain...?
+1	line	Toetaller	Dog intimidate invaders, save goblin lives.
+1	line	Picklenose	Human even listen to goblins now?
+1	line	Toetaller	More like Picklenose not worth listening to.
+1	line	Player	... Then a needle and thread to put it together...
+1	line	Player	Okay, I think I can make something better for you.
+1	line	Toetaller	Human be quick. Goblins low attention span.
+1	action	end
+0	section	Interacting with the goblins again without the stray dog
+1	line	Player	I should have the stray dog with me before I talk to these goblins again.
+1	action	end
+0	section	Talking to the goblins again or trying to pick up the stray puppy without the stuffed dog
+1	line	Toetaller	Human back.
+1	line	Picklenose	You got big dog for goblins?
+1	line	Player	Not yet. Do you remember what I needed?
+1	line	Toetaller	Human useless. You came up with idea.
+1	line	Picklenose	Human got grain?
+1	cond	Human got grain:
+2	line	Player	Yes.
+2	action	continue
+1	cond	Human not got grain:
+2	line	Player	No.
+2	action	continue
+1	line	Picklenose	Human got fur?
+1	cond	Human got fur:
+2	line	Player	Yes.
+2	action	continue
+1	cond	Human not got fur:
+2	line	Player	No.
+2	action	continue
+1	line	Picklenose	Human got needle?
+1	cond	Human got needle or costume needle:
+2	line	Player	Yes.
+2	action	continue
+1	cond	Human not got needle or costume needle:
+2	line	Player	No.
+2	action	continue
+1	line	Picklenose	Human got thread?
+1	cond	Human got thread or costume needle:
+2	line	Player	Yes.
+2	action	continue
+1	cond	Human not got thread or costume needle:
+2	line	Player	No.
+2	action	continue
+1	cond	If the player is missing one or more of the items:
+2	line	Picklenose	Human go finish shopping trip then.
+2	action	continue
+1	cond	If the player has all the items:
+2	line	Picklenose	Human got everything human need then. Waste goblin time by asking. Goblin time very important, can't waste.
+2	action	continue
+1	line	Toetaller	Human not survive long in village if goblin.
+1	action	end
+0	section	Stuffed dog
+0	section	Trying to make the stuffed dog with one or more items missing
+1	box	You do not have the required items to make a stuffed dog. You need grain, some fur, a needle and some thread.
+1	action	end
+0	section	Crafting the stuffed dog
+1	select	Craft a stuffed dog?
+1	option	Yes.
+2	box	You create a stuffed dog. It will probably convince the goblins.
+2	action	end
+1	option	No.
+2	action	end
+0	section	Crafting a stuffed dog with fox fur
+1	select	Which item would you like to craft?
+1	option	Stuffed dog.
+2	action	above
+1	option	Small meat pouch.
+0	section	Trying to craft another stuffed dog
+1	box	You already have a stuffed dog.
+1	action	end
+0	section	Back to the goblins with the stuffed dog
+0	section	Talking to the goblins without the stray dog
+1	line	Player	I should have the stray dog with me before I talk to these goblins again.
+1	action	end
+0	section	Talking to the guard while the stray dog is with the goblins
+1	line	Player	Has the stray dog come this way? I can't find her.
+1	line	Guard	No, I haven't seen her. What was the last thing you did with her?
+1	line	Player	Her puppies were stolen by some goblins west of the Cooks' Guild. I was trying to get them back.
+1	line	Guard	I doubt she'd leave her puppies alone with the goblins. I bet she's gone back there to keep them safe.
+1	action	end
+0	section	Talking to the goblins with the stray dog
+1	line	Toetaller	Human has returned.
+1	line	Picklenose	Finally. Picklenose bored waiting.
+1	line	Toetaller	Toetaller no see huge dog?
+1	line	Picklenose	Human own idea fail?
+1	line	Player	No no, I have them right here.
+1	box	You show the goblins the stuffed dog.
+1	line	Player	So, what do you think?
+1	line	Picklenose	That's big dog...
+1	line	Toetaller	Village never attacked again with this dog guarding.
+1	line	Toetaller	Toetaller accept trade, no takesies backsies. Human promise.
+1	line	Player	I promise.
+1	line	Toetaller	Good. Toetaller no want human show up to village and cry in front of Generals.
+1	line	Player	You have my word. Here...
+1	box	You give the goblins the stuffed dog.
+1	line	Picklenose	...
+1	line	Toetaller	...
+1	line	Player	Are you two okay?
+1	line	Picklenose	Goblins amazed at size of big dog.
+1	line	Picklenose	Very big.
+1	line	Toetaller	Toetaller have idea.
+1	line	Toetaller	General Toetaller and General Picklenose have good ring to them.
+1	line	Picklenose	Nobody stop us with big dog on our side.
+1	line	Toetaller	Human, you do good. Goblins return to village heroes.
+1	line	Picklenose	You allowed visit village, see dog if want.
+1	line	Player	Oh, that's very kind of you. Thank you.
+1	line	Player	They're finally gone. Come with us, little guy. We'll keep you safe.
+1	line	Stray puppy	Yop yop!
+1	cond	If the player doesn't have inventory space:
+2	box	You don't have enough inventory space to pick up the stray puppy.
+1	action	end
+0	section	Talking to Talia again with two puppies
+1	line	Player	I managed to rescue some stray puppies!
+1	line	Talia	That's wonderful news. Do you think they'd like to join us at the shelter?
+1	line	Player	I think so. They'd be safe here, right?
+1	line	Chase	As long as I'm around.
+1	line	Talia	Of course! Please, bring them over.
+1	action	end
+0	section	Looking for the third puppy
+1	line	Player	Great! That's two puppies saved. Is that all of them?
+1	line	Stray dog	Bark bark.
+1	line	Player	I'm inclined to believe that's a no. Any clue where they could be?
+1	box	The stray dog sniffs the air...
+1	action	end
+0	section	Talking to the dog while following her
+1	line	Player	She must have caught the scent of her puppies. I should follow her.
+1	action	end
+0	section	Cutscene
+1	line	Outlaw	Look what we got 'ere.
+1	line	Outlaw	A little mangy mutt. Can we keep 'em?
+1	line	Outlaw	For now, but don't get too attached. Heard tale some folk down in Morytania buy 'em when they're fully grown.
+1	line	Outlaw	What do they use 'em for?
+1	line	Outlaw	Not for us to know. All I care about is the runes they'll give us.
+1	line	Outlaw	Runes? We can sell them for a good bit of coin.
+1	line	Player	Oi, leave that puppy alone!
+1	line	Stray Dog	Grrr!
+1	line	Outlaw	Who are you?
+1	line	Player	We're here to save that puppy.
+1	line	Outlaw	We found 'em first. They're ours.
+1	line	Player	Not on my watch.
+1	line	Outlaw	You'll 'av to take 'em from us.
+1	action	end
+0	section	Periodically, while fighting
+1	line	Stray dog	Bark bark
+1	line	Outlaw	Stop it!
+1	line	Outlaw	Come on, I don't want to attack a dog.
+1	line	Outlaw	Why did I give up my firemaking apprencticeship for this!
+1	line	Outlaw	Get off me!
+1	line	Outlaw	Can I get a hand over here?
+1	line	Outlaw	Leave me alone!
+0	section	After killing the outlaws
+1	line	Player	Are you okay, little guy? Did they hurt you?
+1	line	Stray puppy	Yip yip!
+1	line	Player	Looks like you're all in one piece. Let's get you somewhere safe.
+1	cond	If the player doesn't have inventory space:
+2	line	Player	I don't have room to take you right now. Give me a moment.
+1	line	Player	Is that all of them?
+1	line	Stray dog	Woof!
+1	line	Player	That was a close call. That's the second time we got lucky and arrived just in time.
+1	line	Stray dog	Arf!
+1	line	Player	We can't let something like that happen again. I can take you and your puppies somewhere safe, if you'd like?
+1	line	Stray dog	Mmm?
+1	line	Player	It's not far from here. Follow me.
+1	cond	If the player doesn't have all the puppies with them:
+2	line	Stray dog	Woof woof!
+2	line	Player	Oh right, we should bring all the puppies with us. Let's collect them from your den first.
+2	action	end
+1	cond	If the player has all the puppies with them:
+2	line	Stray dog	Arf!
+2	line	Player	You seem enthusiastic enough. Let's head out.
+2	action	end
+0	section	Retrieving the puppies from the den
+0	section	Labrador
+1	line	Player	Sorry for losing you, little fella.
+1	action	end
+0	section	Pug or spaniel
+1	line	Player	Come with me, little one.
+1	action	end
+0	section	Talking to the stray dog with the puppies
+1	line	Player	Right, should we head over to the shelter?
+1	line	Stray dog	Arf arf!
+1	action	end
+0	section	Talking to the stray dog picking up the spaniel
+1	line	Player	We survived! Is that all the puppies?
+1	line	Stray dog	Woof!
+1	line	Player	Wonderful! Let's go tell Talia!
+1	line	Stray dog	Arf arf.
+1	box	She indicates towards her puppy.
+1	line	Player	Of course, can't leave him behind.
+1	action	end
+0	section	Trying to repeatedly pick up the spaniel
+1	cond	Without inventory space:
+2	box	You don't have enough inventory space to pick up the stray puppy.
+1	cond	With inventory space:
+2	line	Player	You're the last one, little fella. Come with me.
+1	action	end
+0	section	Back at the shelter
+1	line	Player	Talia, Chase! I have returned.
+1	line	Talia	Adventurer! Who's this beautiful girl you've got with you?
+1	line	Player	I found her in Varrock. She's one of the stray dogs.
+1	line	Chase	Poor girl.
+1	line	Player	We've been on quite the adventure together.
+1	line	Talia	Really? What happened?
+1	line	Player	When I found her, she was distraught. Her puppies had been stolen.
+1	line	Chase	Who would do such a thing?
+1	line	Player	Goblins.
+1	line	Chase	Fair enough.
+1	line	Player	But we managed to save them all!
+1	line	Stray puppy	Yip!
+1	line	Stray puppy	Yop!
+1	line	Stray puppy	Yap yap!
+1	line	Talia	Oh my goodness!
+1	line	Chase	Quite the selection.
+1	line	Player	Cute, aren't they.
+1	line	Talia	Oh Chase, this is exactly what we need to keep the shelter going!
+1	line	Talia	Are you sure they want to stay with us?
+1	line	Stray Dog	Arf!
+1	line	Player	I'm pretty sure that means yes at this point.
+1	line	Talia	Wonderful, you will all be happy and safe here!
+1	line	Stray dog	Arf arf.
+1	line	Player	What's the matter, girl?
+1	line	Stray dog	Woof!
+1	line	Chase	She's not staying.
+1	line	Talia	I don't think she likes it here...
+1	line	Talia	It's okay girl, you'll be safe here and well cared for.
+1	line	Stray dog	Whine.
+1	line	Player	I don't think you'll be able to convince her, she's quite stubborn.
+1	line	Chase	I like her already.
+1	line	Talia	What kind of shelter would we be if we let a dog stay as a stray?
+1	line	Guard	I might be able to help with that.
+1	line	Guard	I'm one of the Varrock guards. We've grown fond of this old girl.
+1	line	Stray Dog	Arf arf!
+1	line	Player	I'd say she's happy to see you.
+1	line	Talia	Would you be willing to adopt her for us?
+1	line	Guard	She's proven her bravery, we'd be delighted to bring her into our ranks.
+1	line	Talia	Thank you! We'll get you set up with some things for her, free of charge!
+1	line	Chase	Free?
+1	line	Talia	It's the least we can do.
+1	line	Talia	Thank you, adventurer, this is just what the shelter needed!
+1	line	Player	I do my best.
+1	line	Talia	If you would ever like to adopt one of these puppies yourself, just talk to Chase and he'll help you out.
+1	line	Chase	For a small fee.
+1	line	Player	After all I've done?
+1	line	Chase	Business is business.
+1	action	end
+0	section	Post-quest dialogue
+1	line	Talia	Thank you once again, adventurer. You've really given us hope to keep going.
+1	line	Player	Happy to help!
+1	line	Talia	Wonderful, because our work has just begun!
+1	line	Player	Huh?
+1	line	Talia	Word has spread of our shelter and we've received letters about stray dogs across the world.
+1	line	Talia	Chase has been keeping a log of all the reports. If you speak with him, he'll show you.
+1	line	Player	What's in it for me?
+1	line	Talia	Well, you'll be able to adopt any puppies you bring back.
+1	action	end
