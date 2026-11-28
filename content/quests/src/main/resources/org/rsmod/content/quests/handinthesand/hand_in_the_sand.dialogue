@@ -1,0 +1,465 @@
+# Generated from the OSRS Wiki page "Transcript:The Hand in the Sand" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to Bert
+1	line	Bert	Eeee, wha' shall I do! I'll mos' certainly lose tha job...
+1	line	Player	Lose your job? What's wrong, why?
+1	line	Bert	I w-w-work... over yon sand pit... and weeell... I found... this... hand! T'were buried in't Sand!
+1	option	Oh, you found a hand in the sand - that's nice for you.
+2	line	Player	Oh, you found a hand in the sand - that's nice for you.
+2	action	end
+1	option	Eww a hand, in the sand! Why haven't you told the authorities?
+2	line	Player	Eww a hand, in the sand! Why haven't you told the authorities?
+2	line	Bert	They's no' wha' they once was. Tha cap'ain o'the Guard spends near all o'the time drunk in yon pub.
+2	line	Player	Oh? The Guard Captain is drunk in the pub you say? That's not good, what will you do?
+2	line	Bert	Weeellll... do yer think yer could 'elp me?
+2	option	Yes.
+3	line	Player	Sure, I'll give you a hand.
+3	line	Bert	..... Nae, ye can 'ave the 'and as h'evidence.
+3	box	Bert gives you a rather smelly, sand covered hand.
+3	line	Bert	P'raps tha smell will get t'Guard Cap'ain's nose out o'his beer fer 2 seconds!
+3	action	end
+2	option	No.
+3	line	Player	I want no part in this!
+3	action	end
+0	section	Talking to Bert again
+1	line	Bert	Did ye see yon Guard Capt'n 'bout hand?
+1	line	Player	Not at the moment, but I will be seeing him soon.
+1	action	end
+0	section	Talking to Guard Captain
+1	line	Guard Captain	Need more beer...
+1	action	end
+0	section	Talking again with a beer
+1	line	Player	Sir? I have some more beer for you...
+1	box	You give the beer to the Guard Captain who takes a large gulp.
+1	line	Guard Captain	Ahh... jus' wha' I need, now, wha' did you wanna know?
+1	line	Player	I've come to report that Bert, the sandman, found a hand in the sand pit.
+1	line	Guard Captain	Lucky for him, means he can get even more work done.
+1	line	Player	But aren't you going to find out who it ... belonged to?
+1	box	You hand the... hand... to the Guard Captain, he fumbles with it, drops it in his beer, fishes it out and hands it back.
+1	line	Guard Captain	Oops, No 'arm done. S'prob'ly a wizard, i's always the wizards fault, go ask them, jus' ring the bell outshide the guild and talk to the first pointy hatted ninny you shee!
+1	line	Player	Err... ok, I'll go ring the bell and talk to a wizard then.
+1	action	end
+0	section	Talking to Bert afterwards
+1	line	Bert	Did ye see yon Guard Capt'n 'bout hand?
+1	line	Player	Yes, the Guard Captain said to see the wizards in the guild.
+1	line	Bert	So why you hangin' abou' 'ere then? Go ring t'bell at t'mage guild just over yonder!
+1	cond	If the player has lost the sandy hand:
+2	line	Player	It seems to have slipped through my fingers!
+2	cond	If the player doesn't have enough inventory space:
+3	line	Bert	Tha's no' surprisin' with yer bag so full, come back when s'not.
+3	action	end
+2	line	Bert	Thank t'gods! I tho' I was bein invaded by undead 'ands from t'sand when I found this'un! Take i' to tha mage guild and ring tha' bell to talk ta someone.
+2	line	Player	Thanks Bert, I'm off to see the wizards, the wonderful wizards of Yanille!
+2	action	
+2	action	end
+1	line	Player	Not at the moment.
+1	action	end
+0	section	Reclaiming the beer soaked hand from the captain
+1	line	Player	Hello Sir!
+1	line	Guard Captain	Go 'way! This pint'sh nearly finished! Unlessh you got more that ish....? Wizards, s'all the wizard's fault...prob'ly that Zavistic one, he'sh the worsht!
+1	line	Guard Captain	E're, you left this 'and in me beer!
+1	cond	If the player doesn't have enough inventory space:
+2	line	Guard Captain	No good if you don' have space fer it in yer invent'ry, come back when you do.
+2	action	end
+1	action	
+1	action	end
+0	section	Talking to Zavistic Rarve
+1	cond	Speaking to Zavistic Rarve via the bell:
+1	cond	If the player has completed Zogre Flesh Eaters:
+2	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	action	continue
+2	line	Zavistic Rarve	What are you doing ringing that bell?! Don't you think some of us have work to do?
+2	line	Player	But I was told to ring the bell if I wanted some attention.
+2	line	Zavistic Rarve	Well...anyway...we're very busy here, hurry up what do you want?
+2	action	continue
+1	cond	Speaking to Zavistic Rarve inside the guild:
+2	line	Zavistic Rarve	What are you doing bothering me? Don't you think some of us have work to do?
+2	line	Player	I thought you were here to help?
+2	line	Zavistic Rarve	Well... I am, I suppose, anyway... we're very busy here, hurry up, what do you want?
+2	cond	If the player does not have the beer soaked hand in their inventory:
+3	box	Maybe you should have the hand with you before speaking to Zavistic.
+3	action	end
+2	cond	If the player has the beer soaked hand in their inventory:
+3	box	You wave the hand at the wizard.
+3	line	Player	Ummm... Do you have all your wizards?
+3	line	Zavistic Rarve	All my.... whatever do you mean...?
+3	line	Player	The Guard Captain asked me to see if you have any... missing... wizards.
+3	line	Zavistic Rarve	That's silly! No one would kill a wizard... would they?
+3	line	Player	Erm... no...
+3	line	Player	Well.. maybe, you see Bert found this hand and it might belong to.. a wizard!
+3	line	Zavistic Rarve	Bert? Ahh yes, the sandman who seems to have been working very long hours recently. Let's see that hand...
+3	box	You hand it over.
+3	line	Zavistic Rarve	Oh my! This is most definitely Clarence, my most able student! You must find out who did this!
+3	line	Player	Do you have any input as to the matter at hand?
+3	line	Zavistic Rarve	Well.... Ask Bert about the long hours he's been working, that sounds suspicious to me. Digging things up at all hours of the day isn't natural.
+3	action	end
+0	section	Talking to Zavistic afterwards
+1	line	Zavistic Rarve	What are you doing bothering me? Don't you think some of us have work to do?
+1	line	Player	I thought you were here to help?
+1	line	Zavistic Rarve	Well... I am, I suppose, anyway... we're very busy here, hurry up, what do you want?
+1	line	Zavistic Rarve	Did you find out who killed Clarence yet?
+1	line	Player	Not yet, but don't lose your head over it.
+1	action	end
+0	section	Talking to Guard Captain afterwards
+1	line	Guard Captain	I don' need a hand drinkin me beer, go 'way!
+1	line	Player	But...
+1	line	Guard Captain	Talk to tha' hand coz thish face ain't lishtnin'!
+1	action	end
+0	section	Getting Bert's rota
+1	line	Bert	Wha' info ye find 'bout hand, {player}?
+1	line	Player	I dug up quite a lot about the hand. Can you tell me about your job?
+1	line	Bert	Sand! Lots o' sand! Me boss be Sandy o' Sandy's Sand Corp based in Brimhaven on tha isle of Karamja an' I hauls sand fr' there to yon sand pit.
+1	line	Bert	I's looong harrrrd hours, bu' keeps me busy, y'know what tha say! 'Idle hands'r Zamorak's tools.'
+1	line	Player	So you're employed by Sandy's Sand Corp in Brimhaven. Have you changed your hours recently?
+1	cond	If the player doesn't have inventory space:
+2	line	Bert	Yer coul' see fer yerself iffen yer had space in yorn invent'ry, come back when yer do.
+2	action	end
+1	action	
+1	line	Bert	Nae! See fer yersel', here's a copy o' me rota tha' be held a' head office - yer can looksee iffin ye talk t' Sandy, me boss.
+1	line	Player	Thanks for the Rota Bert. I'll go check for the original with Sandy in Brimhaven.
+1	action	end
+0	section	Talking to Bert afterwards
+1	line	Bert	Ey'up {player}. Did yer see Sandy in Brimhaven 'bout me rota?
+1	cond	If the player has lost the rota:
+2	line	Player	Err, no, I kind of... lost it...
+2	cond	If the player doesn't have inventory space:
+3	line	Bert	Lucky fer yorn tha' I's made a copy then ain't it, I's 'ave been given it to yer iffen you 'ad some space in yer invent'ry.
+3	line	Player	What did you say?
+3	line	Bert	Is you stupid? I said I'd give ye another but yer bags be full!
+3	action	end
+2	line	Bert	Lucky fer yorn tha' I's made a copy then ain't it, 'ere 'ave another.
+2	action	end
+1	line	Player	No, I'll fit it in my schedule somewhere soon.
+1	action	end
+0	section	Getting Sandy's rota
+0	section	Talking to Sandy
+1	line	Player	Hello Sir, do you run the Sand Corp?
+1	line	Sandy	Who wants to know?
+1	line	Player	I'm {player}. I'm here investigating the possible murder of a wizard.
+1	line	Sandy	I don't care about that, I have far too much work to do. Let the authorities take care of things like murder and stop snooping around my office!
+1	box	Sand seems very keen to get you out of the office, perhaps you should take a look around.
+1	action	end
+0	section	Pickpocketing Sandy
+1	cond	If the player doesn't have inventory space:
+2	box	I'd better make room in my inventory first!
+2	action	end
+1	cond	If the pickpocket attempt fails:
+2	box	You felt something but it slipped through your fingers...
+2	action	end
+1	cond	If the pickpocket attempt succeeds:
+2	box	You rummage around in Sandy's pockets...
+2	box	You find a small amount of sand.
+2	action	end
+0	section	Searching Sandy's Desk
+1	cond	If the player doesn't have inventory space:
+2	box	I'd better make room in my inventory first!
+2	action	end
+1	cond	If the player does not have Sandy's rota:
+2	box	You quickly sift through some of the papers on Sandy's desk and find a work rota for Bert.
+2	action	end
+1	cond	If the player already has Sandy's rota:
+2	box	You already have Sandy's original work rota.
+2	action	end
+0	section	Talking to Sandy with Sandy's rota in the inventory
+1	box	You already have the rota, perhaps you should take both rotas back to Bert in Yanille.
+1	action	end
+0	section	Returning to Bert with his original rota
+1	line	Player	I managed to get a copy of the original rota. Your hours changed a week ago!
+1	line	Bert	Nae! Nae! I din't remember tha', bu'... hmmm, aye... tha' migh' be it...
+1	line	Player	What? Give me a hand here, I'm having a hard time understanding how you don't remember changing hours!
+1	line	Bert	I's all be tha wizard's fault! Tha magic leaks fr'm yon magic guild I tells yer! Tha's why this weirrrrd scroll appeareded a week ago!
+1	line	Player	A scroll appeared? Can I take a look at it while you look at the rotas?
+1	line	Bert	O'course {player}, le's be 'avin'yon rota and 'ere be tha scroll, yer be takin' it back ta those inferrrnal wizards quick sharp!
+1	action	
+1	action	end
+0	section	Talking afterwards
+1	line	Bert	I be hopin' tha search is goin' well... are tha wizard's owning up ta anythin' yet?
+1	line	Player	I've found out a lot and will let you know when it's all over.
+1	action	end
+0	section	Returning back to Zavistic
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	line	Player	I talked to Bert and found something very strange about his hours.
+3	line	Zavistic Rarve	Oh? Did he kill Clarence?
+3	line	Player	No, but he doesn't remember changing his hours, and his rota and the original that his boss Sandy had, are different!
+3	line	Player	... oh, and this scroll appeared when they changed - he gave it to me.
+3	line	Zavistic Rarve	I recognise that type of scroll! It's used in a mind altering spell of some sort. Did you speak to this... Sandy guy? Perhaps he has a hand in this.
+3	line	Player	I took a look around his office. I don't know about a hand in it, I think he has both hands and feet in it!
+3	line	Zavistic Rarve	Even more suspicious! Here, take this magical scrying orb and get some Truth Serum from Betty in Port Sarim, she owes me a favour, just tell her I sent you if she complains.
+3	line	Zavistic Rarve	Then you will be equipped to ask Sandy a few questions. Oh Clarence, I will find your murderer!
+3	box	You exchange the scroll for the magical scrying orb. Perhaps Zavistic can give you even more of a hand to find the murderer?
+3	action	end
+0	section	Talking to Zavistic again
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	cond	If the player has lost the magical orb:
+4	option	What is there to do in the Wizards' Guild?
+4	option	What are the requirements to get in the Wizards' Guild?
+4	option	What do you do in the Guild?
+4	option	I've lost my magical scrying orb!
+5	line	Player	I've lost my magical scrying orb!
+5	cond	If the player doesn't have inventory space:
+6	line	Zavistic Rarve	I'd give you another magical scrying orb if you had some space in your inventory.
+6	action	end
+5	line	Zavistic Rarve	No matter, here, have another and please hurry, whoever killed Clarence must pay!
+5	action	end
+3	option	What is there to do in the Wizards' Guild?
+3	option	What are the requirements to get in the Wizards' Guild?
+3	option	What do you do in the Guild?
+3	option	Can you help me more?
+4	line	Player	Can you help me more?
+4	line	Zavistic Rarve	Bring me a vial and I'll help you a little more.
+4	cond	If the player does not have a vial with them:
+5	action	end
+4	cond	If the player has a vial with them:
+5	line	Player	I have a vial here for you.
+5	line	Zavistic Rarve	Ok, would you like me to transport you to Port Sarim? I'm sticking my neck out a bit helping you like this and can only do it once though!
+5	option	Yes, that would be great!
+6	line	Player	Yes, that would be great!
+6	line	Zavistic Rarve	Off you go then, break a leg!
+5	option	No, I prefer using my legs, thanks all the same.
+6	line	Player	No, I prefer using my legs, thanks all the same.
+6	line	Zavistic Rarve	Ok, suit yourself!
+6	action	end
+0	section	Talking to Betty
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Player	I've come from Yanille, the wizard says you can make Truth Serum?
+2	line	Betty	This is true deary, I'll need an empty vial.
+2	cond	If the player doesn't have an empty vial:
+3	line	Player	I'll have to go find one then, I'll be back!
+3	action	end
+2	line	Player	I have one here!
+2	line	Betty	That's good, now you'll need to make a rose tinted lens. Pink dye can be made from red berries in this bottle to make redberry juice, then add white berries. Just use that on a bullseye lens.
+2	action	end
+1	option	Talk to Betty about her shop.
+0	section	Making the rose-tinted lens
+1	action	Using the redberries on the bottled water:
+1	box	Now you just need to add the white berries to make the pink dye.
+1	action	Using the pink dye on the lantern lens:
+1	box	You have successfully made the rose tinted lens!
+1	action	end
+0	section	Talking to Betty without the rose tinted lens
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Betty	Hello deary! Have you managed to make that lens yet?
+2	option	I'm still working on it.
+3	line	Player	I'm still working on it.
+3	action	end
+2	option	I'm afraid I've forgotten how!
+3	line	Player	I'm afraid I've forgotten how!
+3	line	Betty	Pink dye can be made from red berries in the bottle I gave you. Add white berries to make the pink dye and then you just need to use that on a bullseye lens. Good luck!
+3	action	end
+1	option	Talk to Betty about her shop.
+0	section	Talking to Betty with the lens
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Betty	Wonderful deary. When you're ready, just stand in the open doorway and focus the light on the empty vial on my desk and I'll pour the serum into it.
+2	line	Player	Ok, what does that do?
+2	line	Betty	Why it makes the person who drinks it unable to hide in the shadow of lies. The light of truth will shine!
+2	box	Betty places a vial on her counter.
+2	action	end
+1	option	Talk to Betty about her shop.
+0	section	Using the lens on the counter
+1	box	As you focus the light on the vial and betty pours the potion in, the lens heats up and shatters. After a few seconds betty hand you the vial of Truth Serum.
+1	action	end
+0	section	Talking to Betty afterwards
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Betty	Ok, now the last ingredient, something personal from the person you need to tell the truth, else it won't work!
+2	cond	If the player doesn't have the sand:
+3	line	Player	Ok, I'll see if I can find something.
+3	action	end
+2	line	Player	What about this sand straight from his pocket?
+2	line	Betty	That's excellent deary!
+2	box	You hand the sand and watch Betty sprinkle it in the serum, it fizzes.
+2	line	Betty	Don't forget to dilute it in something like tea or coffee.
+2	action	end
+1	option	Talk to Betty about her shop.
+0	section	Trying to put the sand in the truth serum yourself
+1	box	Perhaps you should let Betty do that, it looks tricky.
+1	action	end
+0	section	Talking to Betty again
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Betty	Hello deary! How did the serum work?
+2	cond	If the player has lost the truth serum:
+2	option	I've forgotten how to use the serum.
+3	action	continue
+2	option	I've lost it!
+3	line	Player	I've lost it!
+3	cond	If the player doesn't have inventory space:
+4	line	Betty	That's not a problem, I kept some of it here just in case, but you have no space for it! Come back when you do
+4	action	end
+3	line	Betty	That's not a problem, I kept some of it here just in case, here you are!
+3	box	Betty hands you a new vial of truth serum.
+3	action	end
+2	line	Player	I haven't tried it yet.
+2	line	Betty	Well don't forget to dilute it in a drink or something else bad things might happen.
+2	line	Player	Bad things?
+2	line	Betty	Well.... bits might drop off.
+2	line	Player	Oh! I... see. I'll remember to dilute it then.
+2	action	end
+1	option	Talk to Betty about her shop.
+0	section	Talking to Zavistic Rarve again
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	line	Zavistic Rarve	Have you made the serum and talked to Sandy yet?
+3	line	Player	Not yet, but don't bust a gut over it!
+3	action	end
+0	section	The Truth Serum
+0	section	Attempting to pour the truth serum inside Sandy's Coffee Mug
+1	cond	If the the truth serum isn't complete:
+2	box	You'll need to have completed the truth serum before doing that!
+2	action	end
+1	cond	If Sandy has not been distracted:
+2	box	You'll need to distract Sandy before doing that.
+2	action	end
+1	cond	If sandy has been distracted:
+2	box	You pour the serum in Sandy's coffee, the a little while later watch him drink it.
+2	action	end
+0	section	Distracting Sandy
+1	line	Sandy	I don't have time to talk to you. Go away!
+1	option	There's a herd of huge mutant herring about to drop from the sky!
+2	line	Player	There's a herd of huge mutant herring about to drop from the sky!
+2	cond	If distracting Sandy succeeds:
+3	line	Sandy	Wow! I must see this!
+2	cond	If distracting Sandy fails:
+3	line	Sandy	I'm not falling for that one!
+2	action	end
+1	option	But the pygmy shrews have eaten all the sand!
+2	line	Player	But the pygmy shrews have eaten all the sand!
+2	cond	If distracting Sandy succeeds:
+3	line	Sandy	Wow! I must see this!
+2	cond	If distracting Sandy fails:
+3	line	Sandy	I'm not falling for that one!
+2	action	end
+1	option	A small parrot with a pink banana is sitting outside your window!
+2	line	Player	A small parrot with a pink banana is sitting outside your window!
+2	cond	If distracting Sandy succeeds:
+3	line	Sandy	Wow! I must see this!
+2	cond	If distracting Sandy fails:
+3	line	Sandy	I'm not falling for that one!
+2	action	end
+0	section	Activating the magical orb
+1	box	You rub the magical scrying orb as the Wizard told you, it starts to glow, recording everything it sees and hears, now you can talk to Sandy in Brimhaven.
+1	action	end
+0	section	Talking to Sandy afterwards
+1	cond	If the magical orb is not activated:
+2	box	You need to activate the magical scrying orb, obtained from the wizard in Yanille, to capture the conversation with Sandy!
+2	action	end
+1	cond	If the magical orb is activated:
+2	line	Player	Now, I'm going to ask you some questions and I want you to answer me truthfully...
+2	line	Sandy	Ok...
+2	option	Why is Bert's rota different from the original?
+3	line	Player	Why is Bert's rota different from the original?
+3	line	Sandy	Because... I changed it.
+3	cond	If all questions have been asked:
+4	action	continue
+3	cond	If not all questions have been asked:
+4	action	other
+2	option	Why doesn't Bert remember the change in his hours?
+3	line	Sandy	Because.... because.... I bribed a wizard to put a spell on him so he would believe everything I say!!
+3	line	Player	Why?
+3	line	Sandy	So that I could make him work longer without paying him more!
+3	cond	If all questions have been asked:
+4	action	continue
+3	cond	If not all questions have been asked:
+4	action	other
+2	option	What happened to the wizard?
+3	line	Sandy	I...I... I KILLED HIM! So I wouldn't have to pay him and no one would know. I put his body in the next load of sand.
+3	cond	If all questions have been asked:
+4	action	continue
+3	cond	If not all questions have been asked:
+4	action	other
+2	option	Ok, I'm done with you.
+3	cond	If all the available questions have not been asked:
+4	box	You need to ask Sandy all the questions.
+4	action	end
+1	line	Player	I think I have enough evidence now, you can go for now, but I think you're up to your neck in it!
+1	box	Sandy has told you all he knows. The magical orb is full and needs to be returned to the Wizard in Yanille.
+1	action	end
+0	section	Talking to Sandy again
+1	line	Sandy	I don't have time to talk to you. Go away!
+1	action	end
+0	section	Returning to Betty
+1	option	Talk to Betty about the Hand in the Sand.
+2	line	Betty	Hello again deary. Come back and tell me what happened when all the fuss is over.
+2	line	Player	Ok Betty, I'll be back!
+2	action	end
+1	option	Talk to Betty about her shop.
+0	section	Returning back to Zavistic with the magical orb
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	cond	If the orb is lost or isn't in the player's inventory:
+4	line	Player	I got the whole story from Sandy... but I lost the orb.
+4	line	Zavistic Rarve	It's ok, I saw the whole thing as the orb is connected via magic to me as I enchanted it.
+4	line	Zavistic Rarve	I think this Sandy needs a lesson, please bring me 5 earth runes and a bucket of sand.
+3	action	continue
+3	cond	Else, with the orb in hand:
+4	box	You hand the magical scrying orb to the Wizard and watch as the recording is played back.
+4	line	Zavistic Rarve	Well, well...I think this Sandy needs a lesson, please bring me 5 earth runes and a bucket of sand.
+4	line	Player	Erm, why?
+4	line	Zavistic Rarve	Don't question me or you'll end up as braindead as that legless Guard Captain!
+4	line	Player	Umm.. ok, I'll get you the 5 earth runes and bucket of sand.
+4	action	end
+0	section	Talking to Zavistic Rarve again
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	cond	If the player doesn't have the required items:
+3	line	Zavistic Rarve	You really mean you forgot? Bring me 5 earth runes and 1 bucket of sand to help stop that moneygrabbing Sandy!
+3	action	end
+2	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	line	Player	I've brought what you wanted, what are you going to do?
+2	line	Zavistic Rarve	Ahh excellent, let's have those! Watch and learn...
+2	box	The Wizard chants and your attention to the sandpit where Bert is found.
+2	line	Bert	My sand! My lovely sand!
+2	box	Something very strange happens to the Sandpit, it looks like it has filled itself up!
+2	line	Zavistic Rarve	There, the sand pit will now magically refill. No more work for Bert!
+2	line	Zavistic Rarve	We must find the rest of Clarence, I've sent some wizards out to some of the sandpits, would you please check the Entrana sandpit?
+2	action	end
+0	section	Checking the Entrana sandpit
+0	section	Talking to Mazion
+1	line	Player	Hello there!
+1	line	Mazion	Uh...greetings {player}!
+1	line	Player	Uhh... How do you know my name?
+1	line	Mazion	Oh, I like to keep ahead of things.
+1	line	Player	Err.. ok. Well, I've been sent from the Wizards' Guild in Yanille. There's been an... incident... Do you have any body parts?
+1	line	Mazion	How did you know! I found the most awful thing in my sandpit - a head!
+1	line	Player	Ahhh good! I need to take it back to be buried!
+1	line	Mazion	You're very strange, but if it means I get rid of the horrid thing...
+1	cond	If the player doesn't have inventory space:
+2	line	Mazion	Or I would if you had any room in your bag!
+2	action	end
+1	box	Mazion gives you the head.
+1	action	end
+0	section	Talking to Mazion with the head
+1	line	Mazion	I see you still have that head! Take it back to the Wizards in Yanille!
+1	action	end
+0	section	Reclaiming the Wizard's head
+1	line	Mazion	Hello again {player}!
+1	option	What should I do with the head?
+2	line	Player	What should I do with the head?
+2	line	Mazion	It was you that came demanding the head to give to the wizard in the first place! Go back to Yanille with it!
+2	action	end
+1	option	I've lost my head!
+2	line	Player	I've lost my head!
+2	cond	If the player doesn't have inventory space:
+3	line	Mazion	You dropped it and you don't have room to carry it now, come back when you do.
+3	action	end
+2	line	Mazion	Keep your hair on! You dropped it! Make sure you take it straight back to the wizards else you won't have a leg to stand on.
+2	box	Mazion gives you the head.
+2	action	end
+0	section	If the player has not checked the Entrana sandpit
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+2	option	I'm here about the sicks...err Zogres
+2	option	I have a rather sandy problem that I'd like to palm off on you.
+3	line	Zavistic Rarve	Did you visit the Entrana sandpit yet? Ask the worker there if he's found an arm or a leg.
+2	line	Player	Not yet no. I've been running around like a headless chicken, but I'll get to it!
+2	action	end
+0	section	If the player has checked the Entrana sandpit
+1	line	Zavistic Rarve	What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?
+1	box	You show the wizard the head.
+1	line	Zavistic Rarve	Alas poor Clarence. I knew him, {player}.
+1	line	Zavistic Rarve	Thank you - we shall bury him today. I have sent word for the guards to arrest Sandy, so no one will ever see him again!
