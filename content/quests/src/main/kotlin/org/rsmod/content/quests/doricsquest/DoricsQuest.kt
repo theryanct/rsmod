@@ -106,6 +106,7 @@ constructor(
         val DORICS_QUEST =
             QuestDef(
                 name = "Doric's Quest",
+                listRow = "quest_dorics",
                 varp = { DoricsQuestVarps.doricquest },
                 complete = 100,
                 questPoints = 1,

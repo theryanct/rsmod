@@ -216,6 +216,7 @@ constructor(
         val RESTLESS_GHOST =
             QuestDef(
                 name = "The Restless Ghost",
+                listRow = "quest_restlessghost",
                 varp = { RestlessGhostVarps.prieststart },
                 complete = COMPLETE,
                 questPoints = 1,

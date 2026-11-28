@@ -488,6 +488,7 @@ constructor(
         val CORSAIR_CURSE =
             QuestDef(
                 name = "The Corsair Curse",
+                listRow = "quest_corsaircurse",
                 varbit = { CorsairVarBits.progress },
                 complete = COMPLETE,
                 questPoints = 2,

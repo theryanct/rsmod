@@ -381,6 +381,7 @@ constructor(
         val ROMEO_AND_JULIET =
             QuestDef(
                 name = "Romeo & Juliet",
+                listRow = "quest_romeoandjuliet",
                 varp = { RjVarps.rjquest },
                 complete = COMPLETE,
                 questPoints = 5,

@@ -278,6 +278,7 @@ constructor(
         val KNIGHTS_SWORD =
             QuestDef(
                 name = "The Knight's Sword",
+                listRow = "quest_knightssword",
                 varp = { KnightsSwordVarps.squire },
                 complete = 7,
                 questPoints = 1,

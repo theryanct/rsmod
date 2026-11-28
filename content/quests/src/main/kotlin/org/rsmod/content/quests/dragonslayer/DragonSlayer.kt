@@ -660,6 +660,7 @@ constructor(
         val DRAGON_SLAYER =
             QuestDef(
                 name = "Dragon Slayer I",
+                listRow = "quest_dragonslayer1",
                 varp = { Ds1Varps.dragonquest },
                 complete = COMPLETE,
                 questPoints = 2,

@@ -18,6 +18,8 @@ import org.rsmod.game.type.varp.VarpType
  *
  * @param varp the cache quest varp (e.g. `cookquest`), or
  * @param varbit the cache quest varbit, for newer quests (e.g. `cluequest`); exactly one is set.
+ * @param listRow the quest's dbrow (dbtable `quest`) when it isn't `quest_` + the lowercased name
+ *   without punctuation. The quest tab lists only quests in [BuiltQuests] (see QuestListEditor).
  * @param complete the varp value of a finished quest (the db row's end state).
  * @param rewards lines for the quest complete scroll (max 7), e.g. "300 Cooking XP".
  * @param scrollObj the obj shown on the scroll.
@@ -30,7 +32,12 @@ public class QuestDef(
     public val rewards: List<String>,
     public val scrollObj: () -> ObjType,
     public val varbit: (() -> VarBitType)? = null,
+    listRow: String? = null,
 ) {
+    /** The quest's dbrow name, e.g. `quest_cooksassistant`. */
+    public val listRow: String =
+        listRow ?: ("quest_" + name.lowercase().filter { it.isLetterOrDigit() })
+
     init {
         require((varp == null) != (varbit == null)) { "$name: set exactly one of varp / varbit" }
     }
