@@ -48,7 +48,11 @@ public class MapArchive(private val cache: Cache) {
             .filter { it.id < SERVER_GROUP_OFFSET }
             .filter { group ->
                 val files = cache.listOrEmpty(archive, group.id).asSequence().map { it.id }.toSet()
-                MapFile.Terrain.numericFile in files && MapFile.Locations.numericFile in files
+                // Map squares have 5 files in cache 2777 (terrain, locs + 3 client files). Group
+                // 25287 (38 tiny files) is not a map square despite having files 0 and 1.
+                files.size <= MAX_SQUARE_FILES &&
+                    MapFile.Terrain.numericFile in files &&
+                    MapFile.Locations.numericFile in files
             }
             .map { MapSquareKey(it.id) }
             .toList()
@@ -86,6 +90,7 @@ public class MapArchive(private val cache: Cache) {
 
     private companion object {
         private const val SERVER_GROUP_OFFSET = 65536
+        private const val MAX_SQUARE_FILES = 5
 
         // openrs2 reports -1 as the name hash of groups in an unnamed index.
         private const val UNNAMED_HASH = -1

@@ -11,14 +11,14 @@ import org.rsmod.map.CoordGrid
 typealias lumbridge_npcs = LumbridgeNpcs
 
 object LumbridgeNpcs : NpcReferences() {
-    val barfy_bill = find("canoeing_bill", 3103331168324788094)
+    val barfy_bill = find("canoeing_bill", 2410502415119158536)
     val banker = find("deadman_banker_blue_south", 1536012232472220879)
     val shop_keeper = find("generalshopkeeper1", 2140424768095690499)
     val shop_assistant = find("generalassistant1", 2185693774375842236)
     val gee = find("lumbridge_guide2_man", 814251163147109342)
     val donie = find("lumbridge_guide2_woman", 3864107068297254351)
     val hans = find("hans", 6542439647165622063)
-    val bartender = find("ram_bartender", 3782636636485213848)
+    val bartender = find("ram_bartender", 8992800129813020972)
     val hatius_lumbridge_diary = find("hatius_cosaintus")
     val bob = find("bob", 852523917703846821)
     val father_aereck = find("father_aereck", 1703535979713856985)
