@@ -982,3 +982,25 @@ coords = '0_54_52_14_47'
 [[spawn]]
 npc = 'ghast_invis'
 coords = '0_53_53_53_28'
+
+# Biohazard: Omart and Kilron at the wall (Wiki 2560,3266 / 2556,3267), the Mourner HQ's guard (north door),
+# a mourner inside and the sickest one upstairs.
+[[spawn]]
+npc = 'omart'
+coords = '0_40_51_0_2'
+
+[[spawn]]
+npc = 'kilron'
+coords = '0_39_51_60_3'
+
+[[spawn]]
+npc = 'mourner_armed_guard'
+coords = '0_39_52_55_2'
+
+[[spawn]]
+npc = 'mournerstew1'
+coords = '0_39_51_53_60'
+
+[[spawn]]
+npc = 'mournerstew3'
+coords = '1_39_51_53_59'
