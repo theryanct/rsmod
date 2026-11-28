@@ -339,3 +339,67 @@ coords = '2_50_54_4_41'
 [[spawn]]
 npc = 'traiborn'
 coords = '1_48_49_40_21'
+
+# Duke Horacio (Lumbridge castle 1st floor; Rune Mysteries + Dragon Slayer's shield).
+# Dragon Slayer I: Guildmaster, the Oracle, Wormbrain (Port Sarim jail), Klarense, Elvarg's lair
+# (multinpc), Ned on the ship / Crandor and Jenkins (multinpcs on dragonquest), Melzar's Maze key
+# carriers, Melzar and the lesser demon. Maze positions approximate.
+[[spawn]]
+npc = 'duke_of_lumbridge'
+coords = '1_50_50_10_22'
+
+[[spawn]]
+npc = 'guildmaster'
+coords = '0_49_52_55_32'
+
+[[spawn]]
+npc = 'oracle'
+coords = '0_47_54_3_45'
+
+[[spawn]]
+npc = 'wormbrain'
+coords = '0_47_49_6_53'
+
+[[spawn]]
+npc = 'klarense'
+coords = '0_47_50_38_4'
+
+[[spawn]]
+npc = 'elvarg'
+coords = '0_44_150_36_37'
+
+[[spawn]]
+npc = 'dragonslayer_ned_on_ship'
+coords = '1_47_50_37_7'
+
+[[spawn]]
+npc = 'dragonslayer_ned_on_crandor'
+coords = '0_44_50_35_38'
+
+[[spawn]]
+npc = 'cabin_boy_jenkins'
+coords = '1_47_50_40_8'
+
+[[spawn]]
+npc = 'dragonslayer_giantrat_1_key'
+coords = '0_45_50_51_47'
+
+[[spawn]]
+npc = 'dragonslayer_ghost_1_key'
+coords = '1_45_50_51_50'
+
+[[spawn]]
+npc = 'dragonslayer_skeleton_1_key'
+coords = '2_45_50_48_51'
+
+[[spawn]]
+npc = 'dragonslayer_zombie_1_key'
+coords = '0_45_150_54_50'
+
+[[spawn]]
+npc = 'melzar_the_mad'
+coords = '0_45_150_49_49'
+
+[[spawn]]
+npc = 'dragonslayer_demon'
+coords = '0_45_150_53_53'
