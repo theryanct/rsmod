@@ -39,6 +39,7 @@ EXCLUDE_TITLES = {
     "Pillory Guard", "Dr Jekyll", "Flippa", "Leo", "Sergeant Damien", "Capt' Arnav", "Niles",
     "Miles", "Giles", "Postie Pete", "Prison Pete", "Mime", "Evil twin", "Gravedigger", "Dunce",
     "Tree spirit", "Ent", "Giant lobster", "Swarm", "Shade", "Zombie (Shades of Mort'ton)",
+    "Guardian mummy",
     "Crate (Gertrude's Cat)", "Escaping slave", "Effigy", "The Fisher King",
 }
 EXCLUDE_TEXT = re.compile(
@@ -46,7 +47,7 @@ EXCLUDE_TEXT = re.compile(
     r"Deadman|Leagues|Last Man Standing|Castle Wars|Soul Wars|Pest Control|Barbarian Assault|"
     r"Theatre of Blood|Chambers of Xeric|Tombs of Amascut|Nightmare Zone|Fight Pit|Inferno|"
     r"TzHaar Fight Cave|Fortis Colosseum|Puro-Puro|Mage Training Arena|Trouble Brewing|"
-    r"Tempoross|Wintertodt|Guardians of the Rift|Temple of the Eye|Gauntlet|Sailing|Bounty Hunter|"
+    r"Tempoross|Wintertodt|Guardians of the Rift|Temple of the Eye|Gauntlet|Sailing|Bounty Hunter|Pyramid Plunder|"
     r"Nightmare|Leviathan|Whisperer|Vardorvis|Duke Sucellus|Muspah|Nex\b|Zulrah|Vorkath|Corporeal|"
     r"Alchemical Hydra|Hallowed Sepulchre|Tutorial Island|Birthday|Halloween|Christmas|\bEaster\b|holiday",
     re.I,
