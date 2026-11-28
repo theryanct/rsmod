@@ -1073,3 +1073,17 @@ coords = '0_40_52_37_32'
 [[spawn]]
 npc = 'herder_plaguesheep_4_enclosure'
 coords = '0_40_52_36_31'
+
+# Observatory Quest: the assistant (Wiki 2443,3189), the professor's telescope-room multinpc (stages 6-8),
+# the sleeping guard outside the goblins' kitchen gate (2326-2327,9393).
+[[spawn]]
+npc = 'qip_obs_proffesors_assistant'
+coords = '0_38_49_11_53'
+
+[[spawn]]
+npc = 'observatory_professor_multi2'
+coords = '0_38_49_12_54'
+
+[[spawn]]
+npc = 'qip_obs_goblin_guard'
+coords = '0_36_146_23_51'

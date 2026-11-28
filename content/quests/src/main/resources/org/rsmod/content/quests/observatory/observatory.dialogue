@@ -1,0 +1,818 @@
+# Generated from the OSRS Wiki page "Transcript:Observatory Quest" by tools/quests/transcript_to_dialogue.py
+0	section	Inspecting the goblin stove
+1	box	Just a plain stove. Nothing here.
+1	action	end
+0	section	Starting off
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	Hi, I was...
+2	line	Observatory professor	Welcome to the magnificent wonder of the Observatory, where wonder is all around you, where the stars can be clutched from the heavens!
+2	line	Player	Wow, nice intro.
+2	line	Observatory professor	Why, thanks! How might I help you?
+2	select	Select an Option
+2	option	I'm totally lost.
+3	line	Observatory professor	Lost? It must have been those pesky goblins that led you astray.
+3	line	Observatory professor	Head north-east to find the city of Ardougne.
+3	line	Player	I'm sure I'll find the way.
+3	line	Player	Thanks for all your help.
+3	line	Observatory professor	No problem at all. Come and visit again!
+3	box	The professor carries on with his studies.
+3	action	end
+2	option	An Observatory?
+3	line	Player	An Observatory?
+3	line	Observatory professor	Of course. We have a superb telescope up in the Observatory, on the hill.
+3	line	Observatory professor	A truly marvellous invention, the likes of which you'll never behold again.
+3	line	Observatory assistant	Well, it would be if it worked.
+3	line	Observatory professor	Don't interrupt!
+3	line	Player	What? It doesn't work?
+3	line	Observatory professor	Oh, no, no, no. Don't listen to him, he's joking. Aren't you, my FAITHFUL assistant?
+3	line	Observatory assistant	Nope, dead serious. Hasn't been working for a long time.
+3	line	Observatory professor	Arghhh! Get back to work and stop sticking your nose in!
+3	line	Player	So, it's broken. How come?
+3	line	Observatory professor	Oh, I suppose there's no use keeping it secret. Did you see those houses outside?
+3	line	Player	Up on the hill? Yes, I've seen them.
+3	line	Observatory professor	It's a horde of goblins.
+3	line	Observatory professor	Since they moved here they have caused nothing but trouble.
+3	line	Observatory professor	Last week, my telescope was tampered with.
+3	line	Observatory professor	Now, parts need replacing before it can be used again. They've even been messing around in the dungeons under this area. Something needs to be done.
+3	line	Observatory assistant	Strikes me that this visitor could help us.
+3	line	Observatory professor	Stop being so rude.
+3	line	Observatory professor	...
+3	line	Observatory professor	Although, he has a point. What do you say?
+3	line	Player	What, me?
+3	select	Start the Observatory Quest?
+3	option	Yes.
+4	line	Player	Sounds interesting, what can I do for you?
+4	line	Observatory professor	Oh, thanks so much.
+4	line	Observatory professor	I shall need some materials for the telescope, so it can be used again.
+4	line	Observatory professor	Let's start with three planks of wood for the telescope base. My assistant will help with obtaining these, won't you?
+4	line	Observatory assistant	As if I don't have enough work to do. Seems I don't have a choice.
+4	line	Observatory professor	Go talk to him if you need some advice.
+4	line	Player	Okay, I'll be right back.
+4	action	end
+3	option	No.
+4	line	Player	Oh, sorry, I don't have time for that.
+4	line	Observatory professor	Oh dear. I really do need some help.
+4	line	Observatory professor	If you see anyone who can help then please send them my way.
+4	action	end
+2	option	I'm just passing through.
+3	line	Player	I'm just passing through.
+3	line	Observatory professor	Fair enough. Not everyone is interested in this place, I suppose.
+3	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant without any planks
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	Where can I find planks of wood? I need some for the telescope's base.
+1	line	Observatory assistant	I understand planks can be found at Port Khazard, to the east of here. There are some at the Barbarian Outpost, too.
+1	line	Observatory assistant	Failing that, you could always ask the Sawmill Operator. He's to the north-east of Varrock, by the Lumber Yard.
+1	action	end
+0	section	Talking to the assistant with less than three not normal planks
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I have a plank.
+1	line	Observatory assistant	That you do - but if you remember rightly, the professor wanted an ordinary wooden plank, like the ones at Port Khazard.
+1	line	Player	Oh, I see.
+1	action	end
+0	section	Talking to the assistant with three not normal planks
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	How about this plank I've got here?
+1	line	Observatory assistant	I think the professor was after ordinary planks. You should be able to find them at Port Khazard.
+1	action	end
+0	section	Talking to the assistant with less than three planks
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I've got a plank.
+1	line	Observatory assistant	That's nice.
+1	line	Player	You know, for the telescope's base.
+1	line	Observatory assistant	Well done. Remember that you'll need three in total.
+1	action	end
+0	section	Talking to the assistant with three planks
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I've got some planks for the telescope's base.
+1	line	Observatory assistant	Good work! The professor has been eagerly awaiting them.
+1	action	end
+0	section	Returning with no planks
+1	line	Player	Hi again!
+1	line	Observatory professor	It's my helping hand, back again.
+1	line	Observatory professor	Do you have the planks yet?
+1	line	Player	Sorry, not yet. Three planks was it?
+1	line	Observatory professor	It was indeed.
+1	action	end
+0	section	Returning without enough planks
+1	line	Player	Hi again!
+1	line	Observatory professor	It's my helping hand, back again.
+1	line	Observatory professor	Do you have the planks yet?
+1	line	Player	I've made a start.
+1	line	Observatory professor	Well, you'll need three of them.
+1	action	end
+0	section	Using a not normal plank on the observatory professor
+1	line	Player	I have a plank for you.
+1	line	Observatory professor	That's no good. I asked for ordinary planks. If you can't find out where they are, talk to my assistant.
+1	line	Player	Sorry.
+1	action	end
+0	section	Returning with three not normal planks
+1	line	Player	Hi again!
+1	line	Observatory professor	It's my helping hand, back again.
+1	line	Observatory professor	Do you have the planks yet?
+1	line	Player	How about this plank?
+1	line	Observatory professor	I asked for ordinary wooden planks. If you're not sure where to get them, speak to my assistant.
+1	action	end
+0	section	Returning with three planks
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	Hi again!
+2	line	Observatory professor	It's my helping hand, back again.
+2	line	Observatory professor	Do you have the planks yet?
+2	line	Player	Yes, I've got them. Here they are.
+2	action	The player hands the three planks to the observatory professor.
+2	line	Observatory professor	Well done. This will make a big difference.
+2	line	Observatory professor	Now, the bronze for the tube. Oh, assistant!
+2	line	Observatory assistant	Okay, okay, ask me if you need any help, {player}.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Returning without a bronze bar
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	Hi.
+2	line	Observatory professor	The traveller returns!
+2	line	Player	Still working hard?
+2	line	Observatory assistant	Some of us are.
+2	line	Observatory professor	What did I tell you about speaking when spoken to?
+2	line	Observatory professor	So, {player}, you have the bronze bar?
+2	line	Player	Not yet.
+2	line	Observatory professor	Please bring me one, then.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant without a bronze bar
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	Can you help me? How do I go about getting a bronze bar?
+1	line	Observatory assistant	You'll need to use tin and copper ore on a furnace to produce this metal.
+1	line	Player	Right you are.
+1	action	end
+0	section	Talking to the assistant with a bronze bar
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	The bronze bar is ready, and waiting for the professor.
+1	line	Observatory assistant	He'll surely be pleased. Go ahead and give it to him.
+1	action	end
+0	section	Returning with a bronze bar
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	Hi.
+2	line	Observatory professor	The traveller returns!
+2	line	Player	Still working hard?
+2	line	Observatory assistant	Some of us are.
+2	line	Observatory professor	What did I tell you about speaking when spoken to?
+2	line	Observatory professor	So, {player}, you have the bronze bar?
+2	line	Player	I certainly do. Here you go.
+2	action	The player hands the bronze bar to the observatory professor.
+2	line	Observatory professor	Great. Now all I need is the lens made.
+2	line	Observatory professor	Please get me some molten glass.
+2	line	Observatory professor	Oi! Lazy bones!
+2	line	Player	What? I'm not lazy.
+2	line	Observatory professor	Not you! I'm talking to my assistant.
+2	line	Observatory assistant	Calm down old man, I heard. {player}, I'm here if you need any help.
+2	line	Observatory professor	Thank you. Wait a minute, who you calling 'old'?
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Returning without molten glass
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Observatory professor	How are you getting on finding me some molten glass?
+2	line	Player	Still working on it.
+2	line	Observatory professor	I really need it. Please hurry.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant without molten glass
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	What's the best way for me to get molten glass?
+1	line	Observatory assistant	There are many ways, but I'd suggest making it yourself. Get yourself a bucket of sand and some soda ash, which you can get from using seaweed with a furnace. Use the soda ash and sand together in a
+1	line	Observatory assistant	furnace and bang - molten glass is all yours. There's a book about it on the table if you want to know more.
+1	line	Player	Thank you!
+1	action	end
+0	section	Talking to the assistant with molten glass
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I've managed to get hold of some molten glass.
+1	line	Observatory assistant	I suggest you have a word with the professor, in that case.
+1	action	end
+0	section	Returning with molten glass
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Observatory professor	How are you getting on finding me some molten glass?
+2	line	Player	Here it is.
+2	action	The player hands the molten glass to the observatory professor.
+2	line	Observatory professor	Excellent work, let's make the lens.
+2	line	Observatory assistant	It'll need to be made to an exact shape and size.
+2	line	Observatory professor	Well, obviously, hence why we have a lens mould.
+2	line	Observatory assistant	Not any more. One of those goblins took it.
+2	line	Observatory professor	Great, just what I need. {player}, I don't suppose you could find it?
+2	line	Player	I'll have a look - where should I start?
+2	line	Observatory professor	No idea. You could ask my USELESS assistant if you want.
+2	line	Observatory assistant	What have I done to deserve this?
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Returning without the lens mould
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Observatory professor	Did you bring me the mould?
+2	line	Player	Still looking for it.
+2	line	Observatory professor	Please try and find it; again, my assistant may be able to help.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant without the lens mould
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	Where can I find this lens mould you mentioned?
+1	line	Observatory assistant	I'm sure I heard one of those goblins talking about it. I bet they've hidden it somewhere. Probably using it for some strange purpose, I'm sure.
+1	line	Player	What makes you say that?
+1	line	Observatory assistant	I had a nice new star chart, until recently. I went out to do an errand for the professor the other day, only to see a goblin using it...
+1	line	Observatory assistant	...as some kind of makeshift hankey to blow his nose!
+1	line	Player	Oh dear.
+1	line	Observatory assistant	You may want to look through the dungeon they have under their little village.
+1	line	Player	Thanks for the advice.
+1	action	end
+0	section	Searching for the lens mould
+0	section	Opening a chest
+0	section	Searching an empty chest
+0	section	Searching a spider chest
+0	section	Searching an antipoison chest
+0	section	Searching the key chest
+1	box	You find a kitchen key.
+0	section	Searching the key chest with one in the inventory
+0	section	Speaking to the observatory assistant with the goblin kitchen key
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I found a key.
+1	line	Observatory assistant	Perhaps it unlocks something.
+1	line	Player	Oh, thanks. Great advice.
+1	action	end
+0	section	Using the goblin kitchen key on the observatory assistant
+1	line	Player	Look. I found this.
+1	line	Observatory assistant	A key?
+1	line	Player	Exactly.
+1	line	Observatory assistant	To what?
+1	line	Player	Well, I don't know. Perhaps some amazing treasure!
+1	line	Observatory assistant	I doubt it.
+1	action	end
+0	section	Using the goblin kitchen key on the observatory professor
+1	line	Player	Look, I found this!
+1	line	Observatory professor	It doesn't look much like a lens mould.
+1	line	Player	What? No. It's a key!
+1	line	Observatory professor	To what?
+1	line	Player	Well,I don't really know yet.
+1	action	end
+0	section	Talking to the observatory professor with the goblin kitchen key
+1	line	Observatory professor	Did you bring me the mould?
+1	line	Player	No, but I found a key.
+1	line	Observatory professor	Interesting. You might be onto something there. Keep looking.
+1	line	Player	Will do, thanks.
+1	action	end
+0	section	Attempting to unlock the kitchen gate without waking the goblin guard
+0	section	Subsequent attempts after unlocking to open the kitchen gate without waking the goblin guard
+0	section	Prodding the goblin guard
+1	line	Goblin guard	Oi, how dare you wake me up!
+0	section	Unlocking the kitchen gate
+1	line	Player	You had better be quick, there may be more guards about.
+1	action	end
+0	section	Inspecting the goblin stove
+1	box	The goblins appear to have been using the lens mould to cook their stew!
+1	box	You shake out its contents and take it with you.
+1	line	Player	Euuuw, that smells awful!
+0	section	Talking to the assistant with the lens mould
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	I have the lens mould.
+1	line	Observatory assistant	Well done on finding that! I am honestly quite impressed. Make sure you take it straight to the professor.
+1	line	Player	Will do.
+1	action	end
+0	section	Returning with the lens mould
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Observatory professor	How are you getting on finding me some molten glass?
+2	line	Player	Here it is.
+2	line	Observatory professor	Did you bring me the mould?
+2	line	Player	I certainly have. You'll never guess what they were doing with it.
+2	line	Observatory professor	Well, from the smell I'd guess cooking some vile concoction.
+2	line	Player	Wow, good guess. Well, here you go.
+2	line	Observatory assistant	Please don't give that to him. Last time he tried any Crafting, I had to spend a week cleaning up after the explosion.
+2	line	Player	Explosion?
+2	line	Observatory professor	Erm, yes. I think in this instance you had probably better do it.
+2	line	Player	I suppose it's better I don't ask.
+2	line	Observatory professor	You can use the mould with molten glass to make a new lens.
+2	action	If the player has inventory space:
+3	action	The observatory professor hands the player the molten glass.
+3	box	The professor gives you back the molten glass.
+3	action	end
+2	action	If the player does not have inventory space:
+3	line	Player	Hold on a second. I don't have space to carry it all.
+3	line	Observatory professor	Hurry and free up some space, then.
+3	action	end
+1	option	Talk about Treasure Trails.
+0	section	Returning without the observatory lens
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+1	line	Observatory professor	Is the lens finished?
+1	line	Player	How do I make it again?
+1	line	Observatory professor	Use the molten glass with the mould.
+1	line	Player	Huh. Simple.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant without the observatory lens
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	How should I make this lens?
+1	line	Observatory assistant	Just use the molten glass with the mould. Simple.
+1	line	Player	Thanks!
+1	action	end
+0	section	Making the observatory lens
+1	box	You pour the molten glass into the mould and clasp it together...
+1	box	You pour the molten glass into the mould and clasp it together... It has produced a small, convex glass disc.
+0	section	Talking to the assistant with the observatory lens
+1	option	Dialogue 1
+2	line	Player	Can I interrupt you?
+2	line	Observatory assistant	I suppose so. Please be quick though.
+2	action	continues
+1	option	Dialogue 2
+2	line	Player	Might I have a word?
+2	line	Observatory assistant	Sure, how can I help you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Player	Hello there.
+2	line	Observatory assistant	Yes?
+2	action	continues
+1	option	Dialogue 4
+2	line	Player	Can I speak with you?
+2	line	Observatory assistant	Why, of course. What is it?
+2	action	continues
+1	line	Player	Do you like this lens? Good, huh?
+1	line	Observatory assistant	Nice. What's that scratch?
+1	line	Player	Oh, erm, that's a feature.
+1	line	Player	Yes, that's it! Indubitably, it facilitates the triangulation of photonic illumination to the correct...
+1	line	Observatory assistant	Stop! You can't confuse me with big words. Just pray the professor doesn't notice.
+1	action	end
+0	section	Returning with the observatory lens
+1	line	Observatory professor	Hello.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+1	line	Player	Yes, here it is. You may as well take this mould too.
+2	action	The player hands the observatory professor the observatory lens.
+1	line	Observatory professor	Wonderful, at last I can fix the telescope.
+1	line	Observatory professor	Would you accompany me to the Observatory? You simply must see the telescope in operation.
+1	line	Player	Sounds interesting. Count me in.
+1	line	Observatory professor	Superb. You'll have to go via the dungeon under the goblin settlement, seeing as the bridge is broken. You'll find stairs up to the Observatory from there.
+1	line	Player	Okay. See you there.
+1	box	The professor has gone ahead to the Observatory dome. Best you follow him to see the finished telescope.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Talking to the assistant before going up to the observatory
+1	line	Player	Hello again.
+1	line	Observatory assistant	Ah, it's the telescope repairman! The professor is waiting for you in the Observatory.
+1	line	Player	How can I get to the Observatory?
+1	line	Observatory assistant	Well, since the bridge was ruined, you will have to travel through the dungeon under the goblins' settlement.
+1	action	end
+0	section	Entering the observatory
+1	box	~ The Observatory ~}} The great eye into the heavens.
+1	line	Player	Hi, professor!
+1	line	Observatory professor	Oh, hi there.
+1	line	Observatory professor	I'm just adding the finishing touches.
+1	line	Player	Okay, don't let me interrupt.
+1	line	Observatory professor	Thank you.
+1	line	Observatory professor	Right, let's get this finished.
+1	line	Observatory professor	Hmmmm...
+1	line	Observatory professor	Bit of a tap here...
+1	line	Observatory professor	{player}, I'm just going upstairs to finish off.
+1	line	Player	Right-oh.
+1	line	Observatory professor	In goes the lens.
+1	line	Observatory professor	Looking good.
+1	line	Observatory professor	And one final adjustment.
+1	line	Observatory professor	And all our work pays off.
+0	section	Talking to the professor
+1	line	Observatory professor	Welcome back.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	Hi, this really is impressive.
+2	line	Observatory professor	Certainly is. Please, take a look through the telescope and tell me what you see.
+2	action	end
+1	option	Talk about Treasure Trails.
+0	section	Viewing the telescope
+0	section	After viewing the telescope
+1	line	Observatory professor	Welcome back.
+1	select	Select an Option
+1	option	Talk about the Observatory quest.
+2	line	Player	I've had a look through the telescope.
+2	line	Observatory professor	What did you see? If you're not sure, you can find out by looking at the star charts dotted around the walls downstairs.
+2	line	Player	It was...
+2	select	Select an Option
+2	option	Aquarius
+3	line	Player	Aquarius!
+3	action	If the player did see Aquarius:
+4	line	Observatory professor	That's exactly it!
+4	line	Player	Yes! Woo hoo!
+4	action	If the player has inventory space for the reward:
+5	line	Observatory professor	That's Aquarius, the water-bearer.
+5	line	Observatory professor	It seems suitable, then, to award you with water runes!
+5	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+5	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+4	action	If the player does not have inventory space for the reward:
+5	line	Observatory professor	Have you got some space for your reward?
+5	line	Player	Reward? Oh, no, I haven't.
+5	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+5	action	end
+3	action	If the player did not see this sign:
+4	line	Observatory professor	I'm afraid not. Have another look. Remember, you can check the star charts on the walls for reference.
+4	action	end
+2	option	Capricorn
+3	line	Player	Capricorn!
+3	action	If the player did see Capricorn:
+4	line	Observatory professor	That's exactly it!
+4	line	Player	Yes! Woo hoo!
+4	action	If the player has inventory space for the reward:
+5	line	Observatory professor	That's Capricorn, the goat.
+5	line	Observatory professor	Capricorn will surely reward your insight with an increase to your Strength.
+5	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+5	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+4	action	If the player does not have inventory space for the reward:
+5	line	Observatory professor	Have you got some space for your reward?
+5	line	Player	Reward? Oh, no, I haven't.
+5	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+5	action	end
+3	action	If the player did not see this sign:
+4	action	above
+2	option	Sagittarius
+3	line	Player	Sagittarius!
+3	action	If the player did see Sagittarius:
+4	line	Observatory professor	That's exactly it!
+4	line	Player	Yes! Woo hoo!
+4	action	If the player has inventory space for the reward:
+5	line	Observatory professor	That's Sagittarius, the centaur.
+5	line	Observatory professor	As you've spotted the archer, I shall reward you with a maple longbow.
+5	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+5	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+4	action	If the player does not have inventory space for the reward:
+5	line	Observatory professor	Have you got some space for your reward?
+5	line	Player	Reward? Oh, no, I haven't.
+5	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+5	action	end
+3	action	If the player did not see this sign:
+4	action	above
+2	option	Scorpio
+3	line	Player	Scorpio!
+3	action	If the player did see Scorpio:
+4	line	Observatory professor	That's exactly it!
+4	line	Player	Yes! Woo hoo!
+4	action	If the player has inventory space for the reward:
+5	line	Observatory professor	That's Scorpio, the scorpion.
+5	line	Observatory professor	I think weapon poison would make a suitable reward.
+5	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+5	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+4	action	If the player does not have inventory space for the reward:
+5	line	Observatory professor	Have you got some space for your reward?
+5	line	Player	Reward? Oh, no, I haven't.
+5	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+5	action	end
+3	action	If the player did not see this sign:
+4	action	above
+2	option	~ next ~
+3	select	Select an Option
+3	option	~ previous ~
+3	option	Libra
+4	line	Player	Libra!
+4	action	If the player did see Libra:
+5	line	Observatory professor	That's exactly it!
+5	line	Player	Yes! Woo hoo!
+5	action	If the player has inventory space for the reward:
+6	line	Observatory professor	That's Libra, the scales.
+6	line	Observatory professor	Hmmm, balance, law, order - I shall award you with law runes!
+6	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+6	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+5	action	If the player does not have inventory space for the reward:
+6	line	Observatory professor	Have you got some space for your reward?
+6	line	Player	Reward? Oh, no, I haven't.
+6	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+6	action	end
+4	action	If the player did not see this sign:
+5	action	above
+3	option	Virgo
+4	line	Player	Virgo!
+4	action	If the player did see Virgo:
+5	line	Observatory professor	That's exactly it!
+5	line	Player	Yes! Woo hoo!
+5	action	If the player has inventory space for the reward:
+6	line	Observatory professor	That's Virgo, the virtuous.
+6	line	Observatory professor	Virgo will surely provide you with an increase to Defence.
+6	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+6	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+5	action	If the player does not have inventory space for the reward:
+6	line	Observatory professor	Have you got some space for your reward?
+6	line	Player	Reward? Oh, no, I haven't.
+6	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+6	action	end
+4	action	If the player did not see this sign:
+5	action	above
+3	option	Leo
+4	line	Player	Leo!
+4	action	If the player did see Leo:
+5	line	Observatory professor	That's exactly it!
+5	line	Player	Yes! Woo hoo!
+5	action	If the player has inventory space for the reward:
+6	line	Observatory professor	That's Leo, the lion.
+6	line	Observatory professor	I think the majestic power of the lion will raise your Hitpoints.
+6	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+6	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+5	action	If the player does not have inventory space for the reward:
+6	line	Observatory professor	Have you got some space for your reward?
+6	line	Player	Reward? Oh, no, I haven't.
+6	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+6	action	end
+4	action	If the player did not see this sign:
+5	action	above
+3	option	~ next ~
+4	select	Select an Option
+4	option	~ previous ~
+4	option	Cancer
+5	line	Player	Cancer!
+5	action	If the player did see Cancer:
+6	line	Observatory professor	That's exactly it!
+6	line	Player	Yes! Woo hoo!
+6	action	If the player has inventory space for the reward:
+7	line	Observatory professor	That's Cancer, the crab.
+7	line	Observatory professor	An armoured creature - I think I shall reward you with an amulet of protection.
+7	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+7	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+6	action	If the player does not have inventory space for the reward:
+7	line	Observatory professor	Have you got some space for your reward?
+7	line	Player	Reward? Oh, no, I haven't.
+7	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+7	action	end
+5	action	If the player did not see this sign:
+6	action	above
+4	option	Gemini
+5	line	Player	Gemini!
+5	action	If the player did see Gemini:
+6	line	Observatory professor	That's exactly it!
+6	line	Player	Yes! Woo hoo!
+6	action	If the player has inventory space for the reward:
+7	line	Observatory professor	That's Gemini, the twins.
+7	line	Observatory professor	With the double nature of Gemini, I can't offer you anything more suitable than a two-handed weapon.
+7	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+7	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+6	action	If the player does not have inventory space for the reward:
+7	line	Observatory professor	Have you got some space for your reward?
+7	line	Player	Reward? Oh, no, I haven't.
+7	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+7	action	end
+5	action	If the player did not see this sign:
+6	action	above
+4	option	Taurus
+5	line	Player	Taurus!
+5	action	If the player did see Taurus:
+6	line	Observatory professor	That's exactly it!
+6	line	Player	Yes! Woo hoo!
+6	action	If the player has inventory space for the reward:
+7	line	Observatory professor	That's Taurus, the bull.
+7	line	Observatory professor	This Strength potion should be a suitable reward.
+7	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+7	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+6	action	If the player does not have inventory space for the reward:
+7	line	Observatory professor	Have you got some space for your reward?
+7	line	Player	Reward? Oh, no, I haven't.
+7	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+7	action	end
+5	action	If the player did not see this sign:
+6	action	above
+4	option	~ next ~
+5	select	Select an Option
+5	option	~ previous ~
+5	option	Aries
+6	line	Player	Aries!
+6	action	If the player did see Aries:
+7	line	Observatory professor	That's exactly it!
+7	line	Player	Yes! Woo hoo!
+7	action	If the player has inventory space for the reward:
+8	line	Observatory professor	That's Aries, the ram.
+8	line	Observatory professor	A fierce fighter. I'm sure he'll look down on you and improve your Attack for such insight.
+8	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+8	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+7	action	If the player does not have inventory space for the reward:
+8	line	Observatory professor	Have you got some space for your reward?
+8	line	Player	Reward? Oh, no, I haven't.
+8	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+8	action	end
+6	action	If the player did not see this sign:
+7	action	above
+5	option	Pisces
+6	line	Player	Pisces!
+6	action	If the player did see Pisces:
+7	line	Observatory professor	That's exactly it!
+7	line	Player	Yes! Woo hoo!
+7	action	If the player has inventory space for the reward:
+8	line	Observatory professor	That's Pisces, the fish.
+8	line	Observatory professor	What's more suitable as a reward than some tuna?
+8	line	Observatory professor	By Saradomin's earlobes! You must be a friend of the gods indeed.
+8	line	Observatory professor	Look in your backpack for your reward, in payment for your work.
+7	action	If the player does not have inventory space for the reward:
+8	line	Observatory professor	Have you got some space for your reward?
+8	line	Player	Reward? Oh, no, I haven't.
+8	line	Observatory professor	Come see me again when you have a few free spaces in your inventory.
+8	action	end
+6	action	If the player did not see this sign:
+7	action	above
+2	action	end
+1	option	Talk about Treasure Trails.
