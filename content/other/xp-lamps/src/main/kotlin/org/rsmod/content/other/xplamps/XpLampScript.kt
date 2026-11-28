@@ -103,6 +103,8 @@ class XpLampScript @Inject constructor(private val objTypes: ObjTypeList) : Plug
                 Lamp(LampObjs.genie_lamp) { level -> 10.0 * level },
                 Lamp(LampObjs.book_of_knowledge) { level -> 15.0 * level },
                 Lamp(LampObjs.cluequest_lamp) { 300.0 },
+                // The Ides of Milk (Gillie Groats): 1,000 XP (OSRS limits it to combat skills).
+                Lamp(LampObjs.cowboss_lamp) { 1_000.0 },
             )
     }
 }
@@ -154,6 +156,7 @@ internal object LampObjs : ObjReferences() {
     val genie_lamp = find("macro_genilamp")
     val book_of_knowledge = find("pattern_reward")
     val cluequest_lamp = find("cluequest_lamp")
+    val cowboss_lamp = find("cowboss_reward_lamp")
 }
 
 internal object LampVarps : VarpReferences() {
