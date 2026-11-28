@@ -1,0 +1,29 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to sleeping_giants (SleepingGiants.kt)
+before	<col=000080>I can start this quest by talking to <col=800000>Kovac</col> at the <col=800000>Giants' Plateau</col>, east of <col=800000>Al Kharid</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2022</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Smithing
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	5	A workshop for giants
+line	<col=000080>I met <col=800000>Kovac</col>, a friendly giant who has found an ancient foundry built for giants. I should meet him inside the <col=800000>Giants' Foundry</col>.</col>
+step	2	10	Repairs
+line	<str>I met Kovac, a friendly giant who has found an ancient foundry built for giants. I should meet him inside the Giants' Foundry.</str>
+line	<col=000080>The foundry's tools are broken. I need to repair the <col=800000>polishing wheel</col>, the <col=800000>grindstone</col> and the <col=800000>trip hammer</col>, then talk to <col=800000>Kovac</col>.</col>
+step	3	20	Make-A-Sword
+line	<str>I met Kovac, a friendly giant who has found an ancient foundry built for giants. I should meet him inside the Giants' Foundry.</str>
+line	<str>The foundry's tools are broken. I need to repair the polishing wheel, the grindstone and the trip hammer, then talk to Kovac.</str>
+line	<col=000080>Kovac wants me to make a <col=800000>sword</col>. I should fill the <col=800000>crucible</col> with metal from the crate, set the moulds on the <col=800000>mould jig</col>, pour the metal and cool it, then heat, hammer, grind and polish the preform.</col>
+line	<col=000080>When it's done I should hand the sword to <col=800000>Kovac</col>.</col>
+done	<str>I helped Kovac repair the tools of the ancient Giants' Foundry and made my first giant sword there.</str>
+done	<str>Kovac now lets me take commissions in the foundry.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

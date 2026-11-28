@@ -1,0 +1,32 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to varp viking (FtState.kt; only 1 started / 10 complete, trials are server varps)
+before	<col=000080>I can start this quest by talking to <col=800000>Brundt the Chieftain</col> in the <col=800000>Rellekka</col> longhall.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Fremennik</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2004</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+req	Level 25 Fletching
+req	Level 40 Woodcutting
+req	Level 40 Crafting
+step	1	1	The trials
+line	<col=000080><col=800000>Brundt the Chieftain</col> told me that to become a member of the Fremennik I must earn the votes of seven of the twelve members of the <col=800000>council</col>.</col>
+line	<col=000080>Each council member will vote for me if I pass their trial:</col>
+line	<col=800000>Manni the Reveller - the drinking contest</col>
+line	<col=800000>Olaf the Bard - a performance in the longhall</col>
+line	<col=800000>Sigli the Huntsman - hunting the Draugen</col>
+line	<col=800000>Sigmund the Merchant - a rare exotic flower</col>
+line	<col=800000>Swensen the Navigator - the maze beneath his house</col>
+line	<col=800000>Peer the Seer - the puzzle in his house</col>
+line	<col=800000>Thorvald the Warrior - a fight with Koschei</col>
+line	<col=000080>Once I have seven votes I should return to <col=800000>Brundt</col> in the longhall.</col>
+done	<str>I passed the trials of seven members of the council of Rellekka, and they voted to accept me into their clan.</str>
+done	<str>Brundt the Chieftain welcomed me as a Fremennik, and I was given a new Fremennik name.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

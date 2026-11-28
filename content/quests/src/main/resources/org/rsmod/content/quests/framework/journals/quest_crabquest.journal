@@ -1,0 +1,53 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to crab_main (CrabQuest.kt)
+before	<col=000080>I can start this quest by sailing to <col=800000>Dognose Island</col> and drinking from the strange <col=800000>bottle</col> on the beach.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2026</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 40 Sailing
+req	Level 30 Fishing
+req	Completion of Pandemonium
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	5	A strange dream
+line	<col=000080>After drinking from a strange bottle I'm dreaming. A <col=800000>crab</col> on the beach wants to become a ceremonial leader, but he needs an instrument.</col>
+line	<col=000080>He wants me to bring him the <col=800000>shells</col> scattered around the island.</col>
+step	2	25	An instrument
+line	<str>After drinking from a strange bottle I'm dreaming. A crab on the beach wants to become a ceremonial leader, but he needs an instrument.</str>
+line	<str>He wants me to bring him the shells scattered around the island.</str>
+line	<col=000080>None of the shells were right. The crab wants a <col=800000>string instrument</col>. I should use the <col=800000>big fishing net</col> on the <col=800000>flotsam</col> and put together what I find.</col>
+step	3	45	Ceremonial leaders
+line	<str>After drinking from a strange bottle I'm dreaming. A crab on the beach wants to become a ceremonial leader, but he needs an instrument.</str>
+line	<str>He wants me to bring him the shells scattered around the island.</str>
+line	<str>None of the shells were right. The crab wants a string instrument. I should use the big fishing net on the flotsam and put together what I find.</str>
+line	<col=000080>I gave the crab his instrument. Now he needs other <col=800000>ceremonial leaders</col>. I should investigate the trees and bushes on the island for crabs. If one is too scared to come out I could <col=800000>sit down</col> beside it for a while.</col>
+step	4	50	More leaders
+line	<str>After drinking from a strange bottle I'm dreaming. A crab on the beach wants to become a ceremonial leader, but he needs an instrument.</str>
+line	<str>He wants me to bring him the shells scattered around the island.</str>
+line	<str>None of the shells were right. The crab wants a string instrument. I should use the big fishing net on the flotsam and put together what I find.</str>
+line	<str>I gave the crab his instrument. Now he needs other ceremonial leaders. I should investigate the trees and bushes on the island for crabs. If one is too scared to come out I could sit down beside it for a while.</str>
+line	<col=000080>Six crabs have joined the practice. There are still more hiding around the island.</col>
+step	5	55	The ceremony
+line	<str>After drinking from a strange bottle I'm dreaming. A crab on the beach wants to become a ceremonial leader, but he needs an instrument.</str>
+line	<str>He wants me to bring him the shells scattered around the island.</str>
+line	<str>None of the shells were right. The crab wants a string instrument. I should use the big fishing net on the flotsam and put together what I find.</str>
+line	<str>I gave the crab his instrument. Now he needs other ceremonial leaders. I should investigate the trees and bushes on the island for crabs. If one is too scared to come out I could sit down beside it for a while.</str>
+line	<str>Six crabs have joined the practice. There are still more hiding around the island.</str>
+line	<col=000080>I found all the ceremonial leaders. I should return to the <col=800000>crab</col> on the beach for the ceremony.</col>
+step	6	60	The ceremony
+line	<str>After drinking from a strange bottle I'm dreaming. A crab on the beach wants to become a ceremonial leader, but he needs an instrument.</str>
+line	<str>He wants me to bring him the shells scattered around the island.</str>
+line	<str>None of the shells were right. The crab wants a string instrument. I should use the big fishing net on the flotsam and put together what I find.</str>
+line	<str>I gave the crab his instrument. Now he needs other ceremonial leaders. I should investigate the trees and bushes on the island for crabs. If one is too scared to come out I could sit down beside it for a while.</str>
+line	<str>Six crabs have joined the practice. There are still more hiding around the island.</str>
+line	<str>I found all the ceremonial leaders. I should return to the crab on the beach for the ceremony.</str>
+line	<col=000080>The ceremony is under way. I should talk to the <col=800000>crab</col>.</col>
+done	<str>I helped a crab on Dognose Island find an instrument and gather the ceremonial leaders for a traditional ceremony.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

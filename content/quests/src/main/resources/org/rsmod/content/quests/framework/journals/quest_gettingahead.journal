@@ -1,0 +1,139 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to ga (GettingAhead.kt)
+before	<col=000080>I can start this quest by talking to <col=800000>Gordon</col> on his farm south of the <col=800000>Farming Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Twisted Tales</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2020</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Crafting
+req	Level 26 Construction
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	2	The beast
+line	<col=000080><col=800000>Gordon</col> and <col=800000>Mary</col> have a beast taking their livestock. Gordon wants me to bring him its <col=800000>head</col>. I should speak to <col=800000>Mary</col> in the farmhouse.</col>
+step	2	4	Mary's idea
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<col=000080><col=800000>Mary</col> thinks I could follow the beast's tracks if I spread <col=800000>flour</col> where it comes in. I should ask <col=800000>Gordon</col> where it gets in.</col>
+step	3	6	The cattle gate
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<col=000080>Gordon told me the beast comes in through the <col=800000>cattle gate</col> south of the farm. I should use a <col=800000>pot of flour</col> on it.</col>
+step	4	10	Tracking down the beast
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<col=000080>The flour shows a trail leading south to a cave by the <col=800000>Kebos Lowlands mine</col>. I should follow it and kill the <col=800000>Headless Beast</col>.</col>
+step	5	12	A headless beast
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<col=000080>I killed the Headless Beast, but it doesn't have a head! I found <col=800000>Neilan</col>'s journal on a skeleton in its lair. I should tell <col=800000>Gordon</col>.</col>
+step	6	14	No head, no pay
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<col=000080>Gordon won't pay me without a head. Maybe <col=800000>Mary</col> has an idea.</col>
+step	7	16	Making the fake head
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<col=000080>Mary suggested we make a fake head. I should carve a <col=800000>clay head</col> by using a <col=800000>knife</col> on some <col=800000>soft clay</col>.</col>
+step	8	18	The clay head
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<col=000080>I made a clay head. I should show it to <col=800000>Gordon</col>.</col>
+step	9	20	Fur
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<col=000080>Gordon says it needs fur. I should sew <col=800000>bear fur</col> or <col=800000>wolf fur</col> onto it using a <col=800000>needle</col> and <col=800000>thread</col>.</col>
+step	10	22	The fur head
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<str>Gordon says it needs fur. I should sew bear fur or wolf fur onto it using a needle and thread.</str>
+line	<col=000080>I made a fur head. I should show it to <col=800000>Gordon</col>.</col>
+step	11	24	Blood
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<str>Gordon says it needs fur. I should sew bear fur or wolf fur onto it using a needle and thread.</str>
+line	<str>I made a fur head. I should show it to Gordon.</str>
+line	<col=000080>Gordon says it doesn't look fierce enough. I should use <col=800000>red dye</col> on it.</col>
+step	12	26	The bloody head
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<str>Gordon says it needs fur. I should sew bear fur or wolf fur onto it using a needle and thread.</str>
+line	<str>I made a fur head. I should show it to Gordon.</str>
+line	<str>Gordon says it doesn't look fierce enough. I should use red dye on it.</str>
+line	<col=000080>I made a bloody head. I should show it to <col=800000>Gordon</col>.</col>
+step	13	30	Mounting the head
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<str>Gordon says it needs fur. I should sew bear fur or wolf fur onto it using a needle and thread.</str>
+line	<str>I made a fur head. I should show it to Gordon.</str>
+line	<str>Gordon says it doesn't look fierce enough. I should use red dye on it.</str>
+line	<str>I made a bloody head. I should show it to Gordon.</str>
+line	<col=000080>Gordon wants the head mounted on the wall of the farmhouse. I need a <col=800000>hammer</col>, a <col=800000>saw</col>, <col=800000>two planks</col> and <col=800000>six nails</col>.</col>
+step	14	32	Mounted
+line	<str>Gordon and Mary have a beast taking their livestock. Gordon wants me to bring him its head. I should speak to Mary in the farmhouse.</str>
+line	<str>Mary thinks I could follow the beast's tracks if I spread flour where it comes in. I should ask Gordon where it gets in.</str>
+line	<str>Gordon told me the beast comes in through the cattle gate south of the farm. I should use a pot of flour on it.</str>
+line	<str>The flour shows a trail leading south to a cave by the Kebos Lowlands mine. I should follow it and kill the Headless Beast.</str>
+line	<str>I killed the Headless Beast, but it doesn't have a head! I found Neilan's journal on a skeleton in its lair. I should tell Gordon.</str>
+line	<str>Gordon won't pay me without a head. Maybe Mary has an idea.</str>
+line	<str>Mary suggested we make a fake head. I should carve a clay head by using a knife on some soft clay.</str>
+line	<str>I made a clay head. I should show it to Gordon.</str>
+line	<str>Gordon says it needs fur. I should sew bear fur or wolf fur onto it using a needle and thread.</str>
+line	<str>I made a fur head. I should show it to Gordon.</str>
+line	<str>Gordon says it doesn't look fierce enough. I should use red dye on it.</str>
+line	<str>I made a bloody head. I should show it to Gordon.</str>
+line	<str>Gordon wants the head mounted on the wall of the farmhouse. I need a hammer, a saw, two planks and six nails.</str>
+line	<col=000080>The head is mounted on the wall. I should tell <col=800000>Gordon</col>.</col>
+done	<str>Gordon and Mary asked me to deal with a beast that was taking their livestock. I tracked it to its lair and killed it, but it had no head.</str>
+done	<str>Together with Mary I made a fake head to convince Gordon, and mounted it on the wall of their farmhouse.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

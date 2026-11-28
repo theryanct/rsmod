@@ -1,0 +1,61 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to mdaughter_quest_var (MountainDaughter.kt)
+before	<col=000080>I can start this quest by talking to <col=800000>Hamal the Chieftain</col> in the <col=800000>Mountain Camp</col> east of <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Standalone</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2005</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Agility
+before	<col=000080>Recommendations:</col>
+req	Ability to defeat a level 70 monster
+step	1	10	Searching for Asleif
+line	<col=000080><col=800000>Hamal the Chieftain</col> of the <col=800000>Mountain Camp</col> told me his daughter <col=800000>Asleif</col> has gone missing, and the camp will not move on until she is found.</col>
+line	<col=000080>He has given me permission to look around. I should start by searching the camp and the <col=800000>lake</col> at its centre.</col>
+step	2	20	Asleif's spirit
+line	<str>Hamal the Chieftain of the Mountain Camp told me his daughter Asleif has gone missing, and the camp will not move on until she is found.</str>
+line	<str>He has given me permission to look around. I should start by searching the camp and the lake at its centre.</str>
+line	<col=000080>At the centre of the lake I heard the voice of <col=800000>Asleif</col>. She cannot rest until two things are done: the camp must make peace with <col=800000>Rellekka</col>, and the camp needs a <col=800000>new source of food</col>.</col>
+line	<col=000080>I should ask <col=800000>Hamal</col> who could help with each of these, then speak to <col=800000>Svidi</col>, <col=800000>Brundt</col> and <col=800000>Jokul</col>.</col>
+step	3	30	Tasks complete
+line	<str>Hamal the Chieftain of the Mountain Camp told me his daughter Asleif has gone missing, and the camp will not move on until she is found.</str>
+line	<str>He has given me permission to look around. I should start by searching the camp and the lake at its centre.</str>
+line	<str>At the centre of the lake I heard the voice of Asleif. She cannot rest until two things are done: the camp must make peace with Rellekka, and the camp needs a new source of food.</str>
+line	<str>I should ask Hamal who could help with each of these, then speak to Svidi, Brundt and Jokul.</str>
+line	<col=000080>I brought <col=800000>Svidi</col> a guarantee from <col=800000>Brundt</col>, earned by splitting the <col=800000>ancient rock</col>, and gave <col=800000>Hamal</col> the seed of a <col=800000>White Pearl</col> fruit from <col=800000>White Wolf Mountain</col>.</col>
+line	<col=000080>I should return to the centre of the lake and tell <col=800000>Asleif</col>.</col>
+step	4	40	Convincing her father
+line	<str>Hamal the Chieftain of the Mountain Camp told me his daughter Asleif has gone missing, and the camp will not move on until she is found.</str>
+line	<str>He has given me permission to look around. I should start by searching the camp and the lake at its centre.</str>
+line	<str>At the centre of the lake I heard the voice of Asleif. She cannot rest until two things are done: the camp must make peace with Rellekka, and the camp needs a new source of food.</str>
+line	<str>I should ask Hamal who could help with each of these, then speak to Svidi, Brundt and Jokul.</str>
+line	<str>I brought Svidi a guarantee from Brundt, earned by splitting the ancient rock, and gave Hamal the seed of a White Pearl fruit from White Wolf Mountain.</str>
+line	<str>I should return to the centre of the lake and tell Asleif.</str>
+line	<col=000080><col=800000>Asleif</col> told me what really happened to her. I must convince her father of the truth. The creature responsible, <col=800000>the Kendal</col>, lives in a <col=800000>cave</col> to the north of the camp.</col>
+step	5	50	The Kendal is dead
+line	<str>Hamal the Chieftain of the Mountain Camp told me his daughter Asleif has gone missing, and the camp will not move on until she is found.</str>
+line	<str>He has given me permission to look around. I should start by searching the camp and the lake at its centre.</str>
+line	<str>At the centre of the lake I heard the voice of Asleif. She cannot rest until two things are done: the camp must make peace with Rellekka, and the camp needs a new source of food.</str>
+line	<str>I should ask Hamal who could help with each of these, then speak to Svidi, Brundt and Jokul.</str>
+line	<str>I brought Svidi a guarantee from Brundt, earned by splitting the ancient rock, and gave Hamal the seed of a White Pearl fruit from White Wolf Mountain.</str>
+line	<str>I should return to the centre of the lake and tell Asleif.</str>
+line	<str>Asleif told me what really happened to her. I must convince her father of the truth. The creature responsible, the Kendal, lives in a cave to the north of the camp.</str>
+line	<col=000080>I slew <col=800000>the Kendal</col> in its cave and took its head as proof. I should show <col=800000>Hamal</col> what I have found.</col>
+step	6	60	Laying her to rest
+line	<str>Hamal the Chieftain of the Mountain Camp told me his daughter Asleif has gone missing, and the camp will not move on until she is found.</str>
+line	<str>He has given me permission to look around. I should start by searching the camp and the lake at its centre.</str>
+line	<str>At the centre of the lake I heard the voice of Asleif. She cannot rest until two things are done: the camp must make peace with Rellekka, and the camp needs a new source of food.</str>
+line	<str>I should ask Hamal who could help with each of these, then speak to Svidi, Brundt and Jokul.</str>
+line	<str>I brought Svidi a guarantee from Brundt, earned by splitting the ancient rock, and gave Hamal the seed of a White Pearl fruit from White Wolf Mountain.</str>
+line	<str>I should return to the centre of the lake and tell Asleif.</str>
+line	<str>Asleif told me what really happened to her. I must convince her father of the truth. The creature responsible, the Kendal, lives in a cave to the north of the camp.</str>
+line	<str>I slew the Kendal in its cave and took its head as proof. I should show Hamal what I have found.</str>
+line	<col=000080><col=800000>Hamal</col> now knows the truth. <col=800000>Ragnar</col> has given me <col=800000>Asleif</col>'s necklace. I need to bury her remains and the necklace on the <col=800000>centre island</col> and build a <col=800000>cairn</col> over the grave with <col=800000>five muddy rocks</col>.</col>
+done	<str>I found out that Asleif, the daughter of Hamal the Chieftain, had been killed by the Kendal. I made peace between the camp and Rellekka and found the camp a new source of food.</str>
+done	<str>I slew the Kendal, and laid Asleif to rest beneath a cairn on the island in the centre of the lake.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,24 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to arceuus_soulbearer_story (BearYourSoul.kt)
+before	<col=000080>I can start this miniquest by reading the book <col=800000>Soul Journey</col> in the <col=800000>Arceuus Library</col> and speaking to <col=800000>Aretha</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Great Kourend</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2016</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	1	Journey of Souls
+line	<col=000080>I found a book called <col=800000>Soul Journey</col> in the <col=800000>Arceuus Library</col>. It describes an artefact used to send souls on. <col=800000>Aretha</col> at the <col=800000>Soul Altar</col> may know more.</col>
+step	2	2	The crypt
+line	<str>I found a book called Soul Journey in the Arceuus Library. It describes an artefact used to send souls on. Aretha at the Soul Altar may know more.</str>
+line	<col=000080>Aretha told me the artefact may lie in a crypt below the <col=800000>Arceuus church</col>. I should dig at the blood-stained centre of the church with a <col=800000>spade</col>.</col>
+line	<col=000080>If I find it, the <col=800000>Key Master</col> in <col=800000>Cerberus</col>' lair may be able to repair it.</col>
+done	<str>I found the damaged soul bearer beneath the Arceuus church, and the Key Master repaired it for me.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>

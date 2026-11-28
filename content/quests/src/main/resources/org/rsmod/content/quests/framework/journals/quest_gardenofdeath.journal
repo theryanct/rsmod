@@ -1,0 +1,208 @@
+# Authored in OSRS journal style from the Wiki walkthrough (no journal transcript); stages pinned to tgod (GardenOfDeath.kt)
+before	<col=000080>I can start this quest by searching the <col=800000>tent</col> at the campsite east of the chasm at the southern end of the <col=800000>Kebos Lowlands</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	<col=000080>Storyline:</col>
+before	<col=800000>Twisted Tales</col>
+before	<col=000080>Release Year:</col>
+before	<col=800000>2022</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Farming
+before	<col=000080>Recommendations:</col>
+before	<col=800000>None</col>
+step	1	2	The journal
+line	<col=000080>I found <col=800000>Kasonde</col>'s journal in a tent at a campsite in the <col=800000>Kebos Lowlands</col>. I should read it.</col>
+step	2	4	Below the camp
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<col=000080>Kasonde was exploring ruins built by the <col=800000>Old Ones</col>. I should climb down the <col=800000>hole</col> near the camp and search for clues.</col>
+step	3	6	The first tablet
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<col=000080>I found a <col=800000>stone tablet</col> below the camp. I should read it.</col>
+step	4	13	Word translations
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<col=000080>Kasonde left a scroll of <col=800000>word translations</col> by the tablet. I should use it to translate the words on the tablet.</col>
+step	5	15	Molch Island
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<col=000080>The tablet speaks of an island to the north. I should look for a hole on <col=800000>Molch Island</col>.</col>
+step	6	22	The vines
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<col=000080>Below Molch Island I found a dirty note by some <col=800000>vines</col>. Kasonde was here before me. I should cut through the vines with <col=800000>secateurs</col>.</col>
+step	7	23	The second tablet
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<col=000080>I'm through the vines. I should look for another <col=800000>stone tablet</col>.</col>
+step	8	25	Reading the tablet
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<col=000080>I found the second stone tablet. I should read it.</col>
+step	9	27	Translating
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<col=000080>I should translate the words on the second tablet with my <col=800000>word translations</col>.</col>
+step	10	29	Xeric's Shrine
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<col=000080>The tablet points west. I should look for a hole at <col=800000>Xeric's Shrine</col>.</col>
+step	11	31	The third tablet
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<col=000080>I found the third stone tablet. I should read it.</col>
+step	12	37	Translating
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<col=000080>I should translate the words on the third tablet with my <col=800000>word translations</col>.</col>
+step	13	39	The Ruins of Morra
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<col=000080>The tablet points east and south. I should look for a hole in the <col=800000>Ruins of Morra</col>.</col>
+step	14	41	The final tablet
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<str>The tablet points east and south. I should look for a hole in the Ruins of Morra.</str>
+line	<col=000080>I found the final stone tablet. I should read it.</col>
+step	15	43	The last clues
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<str>The tablet points east and south. I should look for a hole in the Ruins of Morra.</str>
+line	<str>I found the final stone tablet. I should read it.</str>
+line	<col=000080>I should search the <col=800000>rubble</col> nearby for anything Kasonde left behind.</col>
+step	16	47	Translating
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<str>The tablet points east and south. I should look for a hole in the Ruins of Morra.</str>
+line	<str>I found the final stone tablet. I should read it.</str>
+line	<str>I should search the rubble nearby for anything Kasonde left behind.</str>
+line	<col=000080>I should translate the words on the final tablet with my <col=800000>word translations</col>.</col>
+step	17	49	The full translation
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<str>The tablet points east and south. I should look for a hole in the Ruins of Morra.</str>
+line	<str>I found the final stone tablet. I should read it.</str>
+line	<str>I should search the rubble nearby for anything Kasonde left behind.</str>
+line	<str>I should translate the words on the final tablet with my word translations.</str>
+line	<col=000080>I've translated the final tablet. I should read it once more.</col>
+step	18	51	A warning
+line	<str>I found Kasonde's journal in a tent at a campsite in the Kebos Lowlands. I should read it.</str>
+line	<str>Kasonde was exploring ruins built by the Old Ones. I should climb down the hole near the camp and search for clues.</str>
+line	<str>I found a stone tablet below the camp. I should read it.</str>
+line	<str>Kasonde left a scroll of word translations by the tablet. I should use it to translate the words on the tablet.</str>
+line	<str>The tablet speaks of an island to the north. I should look for a hole on Molch Island.</str>
+line	<str>Below Molch Island I found a dirty note by some vines. Kasonde was here before me. I should cut through the vines with secateurs.</str>
+line	<str>I'm through the vines. I should look for another stone tablet.</str>
+line	<str>I found the second stone tablet. I should read it.</str>
+line	<str>I should translate the words on the second tablet with my word translations.</str>
+line	<str>The tablet points west. I should look for a hole at Xeric's Shrine.</str>
+line	<str>I found the third stone tablet. I should read it.</str>
+line	<str>I should translate the words on the third tablet with my word translations.</str>
+line	<str>The tablet points east and south. I should look for a hole in the Ruins of Morra.</str>
+line	<str>I found the final stone tablet. I should read it.</str>
+line	<str>I should search the rubble nearby for anything Kasonde left behind.</str>
+line	<str>I should translate the words on the final tablet with my word translations.</str>
+line	<str>I've translated the final tablet. I should read it once more.</str>
+line	<col=000080>Kasonde left a <col=800000>warning note</col> on the tablet. I should read it.</col>
+done	<str>I followed the trail of Kasonde Shaw through four gardens built by the Old Ones, translating their language as I went.</str>
+done	<str>I discovered that the Old Ones were the first to perform soul transference, and that Kasonde was always several steps ahead of me.</str>
+done	<col=ff0000>QUEST COMPLETE!</col>
