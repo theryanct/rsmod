@@ -47,10 +47,11 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   saw a goblin (2); 3 the Duke agrees to an investigation; 4 a pickaxe on the cellar rubble
  *   reopens the tunnel and turns up a brooch; 5 the Duke sends you to Reldo; 6 Reldo's bookcase
  *   has 'A History of the Goblin Race' (the Dorgeshuun symbol); 7 the goblin generals teach the
- *   old greetings; 8 the Goblin Bow greets Mistag in the mines (9); 10 the Duke learns of them, the
- *   silverware is missing: Sigmund's pickpocketed key opens his chest (H.A.M. robes) and the H.A.M.
- *   hideout crate holds the silverware; 11 returned with the Duke's treaty to Mistag: 1 QP, a
- *   light-source of thanks (Wiki: the Dorgesh-Kaan mines are open).
+ *   old greetings; 8 the Goblin Bow greets Mistag in the mines (9). Still at 9: the Duke learns of
+ *   them and says the silverware is missing (lt_progress bit 4); castle Sigmund's pickpocketed key
+ *   opens his chest (H.A.M. robes); showing the Duke the robes -> 10 (Sigmund flees to the H.A.M.
+ *   hideout, per the cache multis); the hideout crate holds the silverware, the Duke gives the
+ *   treaty, Mistag takes it -> 11 (dbrow end state): 1 QP.
  *
  * Simplified: the greetings are chosen from a menu (OSRS checks the emote you perform), and the
  * leaders' meeting cutscene is its dialogue.
@@ -209,10 +210,19 @@ constructor(
                 setState(SYMBOL)
             }
             SYMBOL, GENERALS -> runQuestSection(npc, dialogue, "Speaking to Duke Horacio after the Goblin generals")
-            MET -> {
-                runQuestSection(npc, dialogue, "Informing Duke Horacio/Sigmund", speakers = speakers)
-                setState(SILVERWARE)
-            }
+            MET ->
+                when {
+                    (flags() and INFORMED) == 0 -> {
+                        runQuestSection(npc, dialogue, "Informing Duke Horacio/Sigmund", speakers = speakers)
+                        setFlags(flags() or INFORMED)
+                    }
+                    // Castle Sigmund leaves for the H.A.M. hideout at 10 (cache multis).
+                    carries(LtObjs.robes) -> {
+                        runQuestSection(npc, dialogue, "Telling the Duke about Sigmund's H.A.M.-loving ways", speakers = speakers)
+                        setState(SILVERWARE)
+                    }
+                    else -> runQuestSection(npc, dialogue, "Talking to the Duke again (2)")
+                }
             SILVERWARE ->
                 when {
                     carries(LtObjs.silverware) -> {
@@ -230,8 +240,6 @@ constructor(
                         invDel(inv, LtObjs.silverware)
                         give(LtObjs.treaty)
                     }
-                    carries(LtObjs.robes) ->
-                        runQuestSection(npc, dialogue, "Telling the Duke about Sigmund's H.A.M.-loving ways", speakers = speakers)
                     else -> runQuestSection(npc, dialogue, "Talking to the Duke again (2)")
                 }
             else -> runQuestSection(npc, dialogue, "Talking to Duke Horacio again")
@@ -305,7 +313,12 @@ constructor(
                 startDialogue(npc) { QuestDialogueRunner(SimpleQuestHooks(), speakers).run(this, nodes) }
                 if (bow) setState(MET)
             }
-            MET -> runQuestSection(npc, dialogue, "Talking to Mistag after first contact")
+            MET ->
+                if ((flags() and INFORMED) != 0) {
+                    runQuestSection(npc, dialogue, "Asking Mistag about the silverware")
+                } else {
+                    runQuestSection(npc, dialogue, "Talking to Mistag after first contact")
+                }
             SILVERWARE ->
                 if (carries(LtObjs.treaty)) {
                     runQuestSection(npc, dialogue, "Delivering the treaty", speakers = speakers)
@@ -313,7 +326,7 @@ constructor(
                     invDel(inv, LtObjs.treaty)
                     completeQuest(LOST_TRIBE)
                 } else {
-                    runQuestSection(npc, dialogue, "Asking Mistag about the silverware")
+                    runQuestSection(npc, dialogue, "Talking to Mistag after first contact")
                 }
         }
     }
@@ -321,7 +334,7 @@ constructor(
     /* Sigmund's key, the chest and the H.A.M. hideout */
 
     private suspend fun ProtectedAccess.pickpocketSigmund() {
-        if (state != SILVERWARE || carries(LtObjs.key)) {
+        if (state != MET || (flags() and INFORMED) == 0 || carries(LtObjs.key)) {
             mes("You find nothing of interest.")
             return
         }
@@ -340,7 +353,7 @@ constructor(
                     )
             )
         runQuestSection(null, dialogue, "Opening Sigmund's chest", hooks)
-        if (hasKey && state == SILVERWARE) give(LtObjs.robes)
+        if (hasKey && state == MET && (flags() and INFORMED) != 0) give(LtObjs.robes)
     }
 
     private suspend fun ProtectedAccess.searchCrate() {
@@ -366,6 +379,8 @@ constructor(
 
         private const val WITNESS_MASK = 0x7
         private const val WITNESSED = 1 shl 3
+        /** The Duke has told you about the missing silverware (still stage 9). */
+        private const val INFORMED = 1 shl 4
 
         /** Either side of the cellar's hole (3220,9618). */
         private val CELLAR_SIDE = CoordGrid(3218, 9618, 0)
@@ -445,7 +460,7 @@ internal object LtVarBits : VarBitReferences() {
 }
 
 internal object LtVarps : VarpReferences() {
-    /** Server varp (65794): bits 0-2 the witness (1-6), bit 3 the witness heard. */
+    /** Server varp (65794): bits 0-2 the witness (1-6), bit 3 the witness heard, bit 4 informed. */
     val progress = find("lt_progress")
 }
 
