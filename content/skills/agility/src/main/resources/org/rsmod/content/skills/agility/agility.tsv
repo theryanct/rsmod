@@ -8,7 +8,7 @@
 # obstacle <course> <step> <loc names> <level> <xp> <walk|climb> <anim> <ticks> <end> <start|->
 # shortcut <loc names> <level> <xp> <anim> <ticks> <side a> <side b>
 
-course	gnome	Gnome Stronghold Agility Course	50	4	2484,3438,0
+course	gnome	Gnome Stronghold Agility Course	50	0	-
 obstacle	gnome	1	gnome_log_balance1	1	10	walk	human_walk_logbalance	7	2474,3429,0	2474,3436,0
 obstacle	gnome	2	obstical_net2	1	10	climb	human_reachforladder	2	*,3424,1	-
 obstacle	gnome	3	climbing_branch	1	6.5	climb	human_reachforladder	2	2473,3420,2	-
