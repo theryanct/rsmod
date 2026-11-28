@@ -21,6 +21,7 @@ import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
+import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
@@ -71,6 +72,7 @@ public object BuiltQuests {
             GERTRUDES_CAT,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
+            GRAND_TREE,
             HAZEEL_CULT,
             IMP_CATCHER,
             JUNGLE_POTION,
