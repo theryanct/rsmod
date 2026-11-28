@@ -18,6 +18,7 @@ import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
 import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYER
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
+import org.rsmod.content.quests.eadgarsruse.EadgarsRuse.Companion.EADGARS_RUSE
 import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.ELEMENTAL_WORKSHOP_I
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
@@ -84,6 +85,7 @@ public object BuiltQuests {
             DRAGON_SLAYER,
             DRUIDIC_RITUAL,
             DWARF_CANNON,
+            EADGARS_RUSE,
             ELEMENTAL_WORKSHOP_I,
             ERNEST,
             FAIRYTALE_I,

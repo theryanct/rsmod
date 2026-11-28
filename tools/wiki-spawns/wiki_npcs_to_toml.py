@@ -206,6 +206,9 @@ for title, text in sorted(pages.items()):
                 # those pins sit 128 east / 64 north of the real plane-2 tiles.
                 if map_id and map_id[0] == 22 and 2940 <= x <= 3000 and 10100 <= z <= 10180:
                     x, z, pl = x - 128, z - 64, 2
+                # ...and the middle floor (Burntmeat's kitchen) 64 east / 32 north of plane 1.
+                elif map_id and map_id[0] == 22 and 2880 <= x < 2940 and 10080 <= z <= 10180:
+                    x, z, pl = x - 64, z - 32, 1
                 mx, mz = x >> 6, z >> 6
                 if (mx, mz) in owned_squares:
                     stats["owned_square"] += 1; continue
