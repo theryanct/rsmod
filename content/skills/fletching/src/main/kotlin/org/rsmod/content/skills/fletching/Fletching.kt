@@ -5,6 +5,8 @@ import kotlin.math.min
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.fletchingLvl
+import org.rsmod.api.player.ui.SkillMultiProduct
+import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.stats.xpmod.XpModifiers
@@ -53,40 +55,52 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
     private fun obj(name: String): ObjType =
         if (name == KNIFE) FletchingObjs.knife else FletchingObjs.byName.getValue(name)
 
+    /**
+     * OSRS skillmulti chatbox for the recipes that share this item-on-item pair (e.g. knife on
+     * logs). Recipes the player can't make yet (level or materials) are greyed; the quantity comes
+     * from the 1/5/10/X/All buttons and, for arrows/darts/bolts, counts sets.
+     */
     private suspend fun ProtectedAccess.selectRecipe(recipes: List<Recipe>) {
-        val recipe =
-            if (recipes.size == 1) {
-                recipes.single()
-            } else {
-                val names = recipes.map { productName(it) }
-                recipes[menu("What would you like to make?", hotkeys = true, choices = names)]
+        val shown = recipes.take(MAX_PRODUCTS)
+        val products =
+            shown.map { recipe ->
+                val product = FletchingObjs.byName.getValue(recipe.product)
+                val available = player.fletchingLvl >= recipe.level && maxActions(recipe) > 0
+                SkillMultiProduct(product, productName(recipe), available)
             }
+        val max = shown.maxOf { maxActions(it) }.coerceAtLeast(1)
+        val choice =
+            skillMulti(
+                verb = verbFor(shown.first()),
+                title = titleFor(shown.first()),
+                products = products,
+                maxQuantity = max,
+            )
+        val recipe = shown[choice.index]
         if (player.fletchingLvl < recipe.level) {
             mes("You need a Fletching level of ${recipe.level} to make ${productName(recipe)}.")
             return
         }
-        val max = maxActions(recipe)
-        if (max <= 0) {
+        if (maxActions(recipe) <= 0) {
             mes("You don't have the materials to make ${productName(recipe)}.")
             return
         }
-        val quantity = selectQuantity(max) ?: return
-        fletch(FletchJob(recipe, quantity))
+        fletch(FletchJob(recipe, choice.quantity))
     }
 
-    private suspend fun ProtectedAccess.selectQuantity(max: Int): Int? {
-        if (max <= 1) {
-            return 1
+    private fun verbFor(recipe: Recipe): Int =
+        when (recipe.kind) {
+            Kind.Knife -> SkillMultiVerb.MAKE
+            Kind.String -> SkillMultiVerb.STRING
+            Kind.Combine -> SkillMultiVerb.MAKE_SETS
         }
-        val options = listOf("1", "5", "10", "X", "All")
-        return when (menu("How many would you like to make?", hotkeys = true, choices = options)) {
-            0 -> 1
-            1 -> 5
-            2 -> 10
-            3 -> countDialog().takeIf { it > 0 }
-            else -> max
+
+    private fun titleFor(recipe: Recipe): String =
+        when (recipe.kind) {
+            Kind.String -> "How many would you like to string?"
+            Kind.Combine -> "How many sets would you like to make?"
+            Kind.Knife -> "What would you like to make?"
         }
-    }
 
     private fun ProtectedAccess.fletch(job: FletchJob) {
         val recipe = job.recipe
@@ -162,5 +176,8 @@ constructor(private val objTypes: ObjTypeList, private val xpMods: XpModifiers) 
 
     private companion object {
         const val KNIFE = "knife"
+
+        /** Skillmulti item slots named in the rev 233 interface (18 after the 243 cutover). */
+        const val MAX_PRODUCTS = 10
     }
 }

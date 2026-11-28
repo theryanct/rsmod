@@ -5,6 +5,8 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.cookingLvl
+import org.rsmod.api.player.ui.SkillMultiProduct
+import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.script.onOpLocU
 import org.rsmod.api.stats.levelmod.InvisibleLevels
@@ -68,9 +70,25 @@ constructor(
             mes("You need a Cooking level of ${recipe.level} to cook this.")
             return
         }
-        // Cook the whole inventory, one item every 4 ticks, until out of raw food, the fire burns
-        // out, or the player does something else (which cancels this script).
-        while (recipe.raw in inv) {
+        // OSRS skillmulti "How many would you like to cook?" when there is more than one to cook.
+        val held = invTotal(inv, recipe.raw)
+        var remaining =
+            if (held > 1) {
+                val cooked = objTypes[recipe.cooked]
+                skillMulti(
+                        verb = SkillMultiVerb.COOK,
+                        title = "How many would you like to cook?",
+                        products = listOf(SkillMultiProduct(cooked, cooked.name, available = true)),
+                        maxQuantity = held,
+                    )
+                    .quantity
+            } else {
+                1
+            }
+        // Cook one item every 4 ticks until the chosen amount is done, the raw food runs out, the
+        // fire burns out, or the player does something else (which cancels this script).
+        while (remaining > 0 && recipe.raw in inv) {
+            remaining--
             if (locRepo.findExact(loc.coords, locType) == null) {
                 return
             }

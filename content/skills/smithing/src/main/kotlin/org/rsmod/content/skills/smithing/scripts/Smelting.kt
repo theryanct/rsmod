@@ -5,6 +5,8 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.smithingLvl
+import org.rsmod.api.player.ui.SkillMultiProduct
+import org.rsmod.api.player.ui.SkillMultiVerb
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
 import org.rsmod.api.script.onOpLoc3
@@ -26,12 +28,11 @@ import org.rsmod.plugin.scripts.ScriptContext
 private val logger = InlineLogger()
 
 /**
- * Furnace smelting for bronze, iron and steel bars (OSRS Wiki levels/xp; iron has a 50% chance to
- * fail at a regular furnace). One bar every [SMELT_TICKS] ticks from a weak queue, so walking away
+ * Furnace smelting for every standard bar (OSRS Wiki levels/xp; iron has a 50% chance to fail at
+ * a regular furnace). One bar every [SMELT_TICKS] ticks from a weak queue, so walking away
  * or clicking something else stops it.
  *
- * TODO: OSRS uses the skillmulti (make-X) chatbox here; this uses the menu dialog until a shared
- *   skillmulti helper exists.
+ * Bar and quantity are picked in the OSRS skillmulti chatbox ([ProtectedAccess.skillMulti]).
  */
 class Smelting
 @Inject
@@ -66,35 +67,30 @@ constructor(
         onPlayerQueueWithArgs<SmeltJob>(SmithingQueues.smelting) { smelt(it.args) }
     }
 
+    /**
+     * OSRS skillmulti "What would you like to smelt?": every furnace bar is listed in Wiki level
+     * order; bars the player has the ores for show normally, the rest greyed. The quantity comes
+     * from the chatbox's 1/5/10/X/All buttons.
+     */
     private suspend fun ProtectedAccess.selectBar() {
-        val available = Bar.entries.filter { hasOres(it) }
-        if (available.isEmpty()) {
+        val products =
+            Bar.entries.map { bar ->
+                val obj = bar.bar()
+                SkillMultiProduct(obj, objTypes[obj].name, available = hasOres(bar))
+            }
+        if (products.none { it.available }) {
             mes("You don't have any ores to smelt.")
             return
         }
-        val bar =
-            if (available.size == 1) {
-                available.single()
-            } else {
-                val names = available.map { objTypes[it.bar()].name }
-                available[menu("What would you like to smelt?", hotkeys = true, choices = names)]
-            }
-        val quantity = selectQuantity(maxCount(bar)) ?: return
-        smelt(SmeltJob(bar, quantity))
-    }
-
-    private suspend fun ProtectedAccess.selectQuantity(max: Int): Int? {
-        if (max <= 1) {
-            return 1
-        }
-        val options = listOf("1", "5", "10", "X", "All")
-        return when (menu("How many would you like to smelt?", hotkeys = true, choices = options)) {
-            0 -> 1
-            1 -> 5
-            2 -> 10
-            3 -> countDialog().takeIf { it > 0 }
-            else -> max
-        }
+        val max = Bar.entries.maxOf { maxCount(it) }.coerceIn(1, MAX_SMELT)
+        val choice =
+            skillMulti(
+                verb = SkillMultiVerb.SMELT,
+                title = "What would you like to smelt?",
+                products = products,
+                maxQuantity = max,
+            )
+        smelt(SmeltJob(Bar.entries[choice.index], choice.quantity))
     }
 
     private fun ProtectedAccess.smelt(job: SmeltJob) {
@@ -156,6 +152,16 @@ constructor(
             bar = { smithing_objs.bronze_bar },
             ores = { listOf(smithing_objs.copper_ore to 1, smithing_objs.tin_ore to 1) },
         ),
+        Blurite(
+            metal = "blurite",
+            level = 13,
+            xp = 8.0,
+            failChance = 0,
+            smeltMessage = "You place the blurite ore into the furnace.",
+            missingMessage = "You don't have any blurite ore to smelt.",
+            bar = { smithing_objs.blurite_bar },
+            ores = { listOf(smithing_objs.blurite_ore to 1) },
+        ),
         Iron(
             metal = "iron",
             level = 15,
@@ -165,6 +171,16 @@ constructor(
             missingMessage = "You don't have any iron ore to smelt.",
             bar = { smithing_objs.iron_bar },
             ores = { listOf(smithing_objs.iron_ore to 1) },
+        ),
+        Silver(
+            metal = "silver",
+            level = 20,
+            xp = 13.7,
+            failChance = 0,
+            smeltMessage = "You place a lump of silver in the furnace.",
+            missingMessage = "You don't have any silver ore to smelt.",
+            bar = { smithing_objs.silver_bar },
+            ores = { listOf(smithing_objs.silver_ore to 1) },
         ),
         Steel(
             metal = "steel",
@@ -176,10 +192,51 @@ constructor(
             bar = { smithing_objs.steel_bar },
             ores = { listOf(smithing_objs.iron_ore to 1, smithing_objs.coal to 2) },
         ),
+        Gold(
+            metal = "gold",
+            level = 40,
+            xp = 22.5,
+            failChance = 0,
+            smeltMessage = "You place a lump of gold in the furnace.",
+            missingMessage = "You don't have any gold ore to smelt.",
+            bar = { smithing_objs.gold_bar },
+            ores = { listOf(smithing_objs.gold_ore to 1) },
+        ),
+        Mithril(
+            metal = "mithril",
+            level = 50,
+            xp = 30.0,
+            failChance = 0,
+            smeltMessage = "You place the mithril and four heaps of coal into the furnace.",
+            missingMessage = "You need one mithril ore and four coal to make a mithril bar.",
+            bar = { smithing_objs.mithril_bar },
+            ores = { listOf(smithing_objs.mithril_ore to 1, smithing_objs.coal to 4) },
+        ),
+        Adamantite(
+            metal = "adamantite",
+            level = 70,
+            xp = 37.5,
+            failChance = 0,
+            smeltMessage = "You place the adamantite and six heaps of coal into the furnace.",
+            missingMessage = "You need one adamantite ore and six coal to make an adamantite bar.",
+            bar = { smithing_objs.adamantite_bar },
+            ores = { listOf(smithing_objs.adamantite_ore to 1, smithing_objs.coal to 6) },
+        ),
+        Runite(
+            metal = "runite",
+            level = 85,
+            xp = 50.0,
+            failChance = 0,
+            smeltMessage = "You place the runite and eight heaps of coal into the furnace.",
+            missingMessage = "You need one runite ore and eight coal to make a runite bar.",
+            bar = { smithing_objs.runite_bar },
+            ores = { listOf(smithing_objs.runite_ore to 1, smithing_objs.coal to 8) },
+        ),
     }
 
     private companion object {
         private const val SMELT_TICKS = 5
+        private const val MAX_SMELT = 28
     }
 }
 
