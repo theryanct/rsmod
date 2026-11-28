@@ -1,0 +1,2039 @@
+# Generated from the OSRS Wiki page "Transcript:The Fremennik Trials" by tools/quests/transcript_to_dialogue.py
+0	section	Pre-quest dialogue
+0	section	Attempting to use any of the facilities before the quest
+0	section	Fireplaces
+1	action	end
+0	section	Pottery wheel, spinning wheel, anvils, furnace, and stile
+1	action	end
+0	section	Mining area
+1	action	end
+0	section	Attempting to steal from the fish and fur stalls
+1	box	The [fishmonger/fur trader] is staring at you suspiciously. You cannot steal from his stall while he distrusts you.
+1	action	end
+0	section	Starting off
+0	section	Talking to Brundt the Chieftain
+1	select	Select an option
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Brundt the Chieftain	This place? Why, this is Rellekka! Homeland of all Fremennik! I do not recognise your face outerlander; Where do you come from?
+2	line	Player	That's not important...
+2	line	Brundt the Chieftain	Hmmm... I will not press the issue then outerlander. How may my tribe and I help you?
+2	select	Select an option
+2	option	Do you have any quests?
+3	line	Player	Do you have any quests?
+3	line	Brundt the Chieftain	Quests, you say outerlander? Well, I would not call it a quest as such, but if you are brave of heart and strong of body, perhaps...
+3	line	Brundt the Chieftain	No, you would not be interested. Forget I said anything, outerlander.
+3	select	Select an Option
+3	option	Yes, I am interested.
+4	line	Player	Actually, I would be very interested to hear what you have to offer.
+4	line	Brundt the Chieftain	You would? These are unusual sentiments to hear from an outerlander! My suggestion was going to be that if you crave adventure and battle,
+4	line	Brundt the Chieftain	and your heart sings for glory, then perhaps you would be interested in joining our clan, and becoming a Fremennik yourself?
+4	line	Player	What would that involve exactly?
+4	line	Brundt the Chieftain	Well, there are two ways to become a member of our clan and call yourself a Fremennik: be born a Fremennik, or be voted in by our council of elders.
+4	line	Player	Well, I think I've missed the first way, but how can I get the council of elders to vote to let me join your clan?
+4	line	Brundt the Chieftain	Well, that I cannot answer myself. You will need to speak to each of them and see what they require of you as proof of your dedication.
+4	line	Brundt the Chieftain	There are twelve council members around this village; you will need to gain a majority vote of at least seven councillors in your favour.
+4	line	Brundt the Chieftain	So what say you? Give me the word, and I will tell all of my tribe of your intentions, be they yea or nay.
+4	cond	If the player is missing at least one requirement before starting the quest:
+5	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it.
+5	action	continues
+4	select	Start The Fremennik Trials quest?
+5	option	Yes.
+6	line	Player	I think I would enjoy the challenge of becoming an honorary Fremennik. Where and how do I start?
+6	line	Brundt the Chieftain	As I say outerlander, you must find and speak to the twelve members of the council of elders, and see what tasks they might set you.
+6	line	Brundt the Chieftain	If you can gain the support of seven of the twelve, then you will be accepted as one of us without question.
+6	action	end
+5	option	No.
+6	line	Player	No way do I want to become like YOU! Forget you, and forget your whole stupid town! You're a bunch of stupid primitives, from what I've seen!
+6	line	Brundt the Chieftain	I am sorry to say that I expected such a response from an outerlander. I thought perhaps you might have been different to all the others...
+6	action	end
+3	option	No, I'm not interested.
+4	line	Player	You're right. I really couldn't care less.
+4	line	Brundt the Chieftain	It is as I thought outerlander. Your kind care nothing for the Fremennik, and we feel the same about you. This is the way of the world.
+4	action	end
+2	option	Why will no-one talk to me?
+3	line	Player	Why will no-one talk to me?
+3	line	Brundt the Chieftain	Do not take it personally, outerlander! We are a simple people, and it is our experience that keeping ourselves to ourselves is best. This is why speaking to outerlanders is forbidden.
+3	line	Brundt the Chieftain	We do not wish to enter war with the outerlanders and their strange magics, so we limit all unauthorised communication.
+3	line	Player	Then how come you're talking to me?
+3	line	Brundt the Chieftain	Ah, this is because I am the chieftain. I am the one who authorises contact. You will not find many of my tribe so forthcoming with you, as I.
+3	line	Player	Is there a way for you to authorise your tribe to talk to me then?
+3	line	Brundt the Chieftain	Well, there is one way... but I doubt it is of any interest to you.
+3	line	Player	Actually, I would be very interested to hear what you have to offer.
+3	line	Brundt the Chieftain	You would? These are unusual sentiments to hear from an outerlander! My suggestion was going to be that if you crave adventure and battle,
+3	line	Brundt the Chieftain	and your heart sings for glory, then perhaps you would be interested in joining our clan, and becoming a Fremennik yourself?
+3	line	Player	What would that involve exactly?
+3	line	Brundt the Chieftain	Well, there are two ways to become a member of our clan and call yourself a Fremennik: be born a Fremennik, or be voted in by our council of elders.
+3	line	Player	Well, I think I've missed the first way, but how can I get the council of elders to vote to let me join your clan?
+3	line	Brundt the Chieftain	Well, that I cannot answer myself. You will need to speak to each of them and see what they require of you as proof of your dedication.
+3	line	Brundt the Chieftain	There are twelve council members around this village; you will need to gain a majority vote of at least seven councillors in your favour.
+3	line	Brundt the Chieftain	So what say you? Give me the word, and I will tell all of my tribe of your intentions, be they yea or nay.
+3	select	Start The Fremennik Trials quest?
+3	option	Yes.
+4	line	Player	I think I would enjoy the challenge of becoming an honorary Fremennik. Where and how do I start?
+4	line	Brundt the Chieftain	As I say outerlander, you must find and speak to the twelve members of the council of elders, and see what tasks they might set you.
+4	line	Brundt the Chieftain	If you can gain the support of seven of the twelve, then you will be accepted as one of us without question.
+4	action	end
+3	option	No.
+4	line	Player	No way do I want to become like YOU! Forget you, and forget your whole stupid town! You're a bunch of stupid primitives, from what I've seen!
+4	line	Brundt the Chieftain	I am sorry to say that I expected such a response from an outerlander. I thought perhaps you might have been different to all the others...
+4	action	end
+2	option	Why do you call me outerlander?
+2	option	I seek an army to destroy Asgarnia!
+1	option	Why will no-one talk to me?
+2	action	above
+1	option	Do you have any quests?
+2	line	Player	Do you have any quests?
+2	line	Brundt the Chieftain	Quests, you say outerlander? Well, I would not call it a quest as such, but if you are brave of heart and strong of body, perhaps...
+2	line	Brundt the Chieftain	No, you would not be interested. Forget I said anything, outerlander.
+2	select	Select an option
+2	option	Yes, I am interested.
+3	action	above
+2	option	No, I'm not interested.
+3	action	above
+1	option	Nice hat!
+0	section	The Non-Council Members
+0	section	Bjorn
+1	line	Player	I know this is a bit of a long shot... but are you a member of the council of elders?
+1	line	Bjorn	I'm now a member of the counshil of eblars? Thanksh a lot buddy! (hic) Letsh have a drink to celebrate!
+1	line	Player	Uh... I'll take that as a no.
+1	action	end
+0	section	Thora the Barkeep
+1	line	Player	Hi. Are you a member of the council?
+1	line	Thora the Barkeep	I am afraid not outerlander.
+1	line	Player	Oh, okay then.
+1	action	end
+0	section	Eldgrim
+1	line	Player	I know this is a bit of a long shot... but are you a member of the council of elders?
+1	line	Eldgrim	Counshil alwaysh meshing up my drinksh 'do thish, do that, pass this tesht something something something something'.. man I hate that counshil.
+1	line	Player	I guess you're not then.
+1	action	end
+0	section	Inga
+1	line	Player	Hello. I'm looking for a member of the council of elders who will support my application to become an honorary Fremennik.
+1	line	Inga	I'm a council member.
+1	line	Player	So can I somehow persuade you to vote for me at the council of elders?
+1	line	Inga	No. Frankly, I don't like you.
+1	line	Player	But you don't even know me!
+1	line	Inga	You also smell bad. And have stupid hair. And bad breath. And you walk a bit funny.
+1	line	Player	I didn't come all the way up here just to be insulted!
+1	line	Inga	No, I'm quite sure you could have found plenty of people to insult you wherever your home is.
+1	line	Player	You know what? Forget you, you stupid barbarian! I don't need your stupid vote!
+1	line	Inga	Tch, typical outerlander rudeness. I'm glad I didn't vote for you now.
+1	action	end
+0	section	Freidir
+1	line	Player	Hello, are you a member of the council?
+1	line	Freidir	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Askeladden
+1	line	Player	Hi. Are you a member of the council of elders?
+1	line	Askeladden	Me? On the council? Ha ha ha ha! Sorry buddy, I'm not a 'real' Fremennik yet! Let me guess, you're trying to get some council members to vote for you?
+1	line	Player	That's right, to become a Fremennik.
+1	line	Askeladden	You and me both buddy! We're both doing the same trials! This is my trial of manhood! How you finding it so far? Pretty easy, huh buddy?
+1	line	Player	It's okay I guess...
+1	line	Askeladden	Yeah, that's the spirit buddy! It's all real easy, I wouldn't worry yourself about it, you'll be quaffing beers in the longhall as a Fremennik in no time!
+1	action	end
+0	section	Lensa
+1	line	Player	Hello, are you a member of the council?
+1	line	Lensa	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Jennella
+1	line	Player	Hello, are you a member of the council?
+1	line	Jennella	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Sassilik
+1	line	Player	Do you know any council members?
+1	line	Sassilik	I know that I am one.
+1	line	Player	Great! Can you vote for me at the council of elders for me to become a Fremennik?
+1	line	Sassilik	Sure. On one condition.
+1	line	Player	(sigh) What condition?
+1	line	Sassilik	Actually there is no condition! I don't want to vote for you! You seem too gullible to be a Fremennik!
+1	line	Player	It's kind of mean to trick me like that...
+1	line	Sassilik	What do I care? I am a Fremennik and you are just some stupid outerlander! You stupid outerlander!
+1	action	end
+0	section	Fisherman
+1	line	Player	Are you a member of the Fremmenik council?
+1	line	Fisherman	Indeed I am, outerlander. Why do you ask?
+1	line	Player	Well, I was told by Brundt that I could be voted into the tribe as an honorary Fremmenik if I could find seven members of the council of elders to vote in my favour.
+1	line	Fisherman	Aye, that is indeed true.
+1	line	Player	So can I have your vote?
+1	line	Fisherman	You can have my vote on the day the skies turn red, the waters turn pink, the rocks turn yellow and the sun turns black.
+1	line	Player	Um... do you have any estimate on when that is?
+1	line	Fisherman	I'm telling you I will never vote for you, you stupid outlander.
+1	action	end
+0	section	Skulgrimen
+1	line	Player	Are you a member of the council of elders?
+1	line	Skulgrimen	No. Weapons are my speciality. Not politics.
+1	line	Player	Okay, thanks.
+1	action	end
+0	section	Freygerd
+1	line	Player	Hello, are you a member of the council?
+1	line	Freygerd	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Reeso
+1	line	Player	Hello, are you a member of the council?
+1	line	Reeso	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Borrokar
+1	line	Player	Hello, are you a member of the council?
+1	line	Borrokar	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Lanzig
+1	line	Player	Hello, are you a member of the council?
+1	line	Lanzig	I am afraid not outerlander. Goodbye.
+1	action	end
+0	section	Jarvald
+1	line	Player	Hi, I don't suppose you are a member of the council of elders are you?
+1	line	Jarvald	No, outerlander, I have never had the honour to be asked.
+1	line	Jarvald	I am but a lowly warrior, fighting for my people wherever threats may appear against us...
+1	line	Jarvald	So what do you want from me, outerlander?
+1	select	What would you like to ask about?
+1	option	What Jarvald is doing.
+1	option	Nothing
+0	section	The Council Members
+0	section	Manni the Reveller
+1	line	Player	Hello there!
+1	line	Manni the Reveller	Hello outerlander. I overheard your conversation with Brundt just now. You wish to become a member of the Fremennik?
+1	line	Player	That's right! Why, are you on the council?
+1	line	Manni the Reveller	Do not let my drink-soused appearance fool you, I earnt my place on the council many years past. I am always glad to see new blood enter our tribe, and will happily vote for you.
+1	line	Player	Great!
+1	line	Manni the Reveller	...Providing you can pass a little test for me. As a Fremennik, you will need to show cunning, stamina, fortitude, and an iron constitution. I know of only one way to test all of these.
+1	line	Player	And what's that?
+1	line	Manni the Reveller	Why, a drinking contest!
+1	line	Manni the Reveller	The task is simple enough! You versus me, a stiff drink each, last man standing wins the trial. So what say you?
+1	select	Select an option
+1	option	Yes
+2	line	Player	A drinking contest? Easy. Set them up, and I'll knock them back.
+2	cond	If the player does not already have the tankard and/or beer tankard:
+3	line	Manni the Reveller	When you are ready to begin, go and pick up a keg from that table over there, and come back here.
+3	line	Manni the Reveller	We start when you have your keg of beer with you, and finish when one of us can drink no more and yields.
+2	action	end
+1	option	No
+2	line	Player	I don't think drinking myself into a stupor is a very good way of testing my worthiness.
+2	line	Manni the Reveller	Well, perhaps it's not, but it's my way. If you want my vote at the council, I'm afraid you're going to have to drink me under the table.
+2	line	Player	I'm going to find someone else to vote for me then.
+2	line	Manni the Reveller	As you wish, outerlander.
+2	action	end
+0	section	Talking to Manni the Reveller again
+1	cond	If the player does not have the beer tankards:
+2	line	Player	Hello there!
+2	action	above
+1	cond	If the player has the beer tankards:
+2	line	Manni the Reveller	As, I see you have your keg of beer. Are we ready to drink against each other?
+2	select	Select an option
+2	option	Yes
+3	line	Player	Yes, let's start this drinking contest!
+3	line	Manni the Reveller	As you wish, outerlander; I will drink first, then you will drink.
+3	action	Manni the Reveller takes a big drink of his tankard first.
+3	action	The player then takes a big drink from his tankard.
+3	line	Player	Ish no' fair! (hic) I canna drink another drop! Alsho feel veddy, veddy ill...
+3	line	Manni the Reveller	I guessh I win then ouddaladder! (hic) Niche try, anyway!
+3	line	Manni the Reveller	Come back if'n you fanshy a rematch! (hic) Jusht let me have a coffee firsht...
+3	action	end
+2	option	No
+3	line	Player	I'm not quite ready yet...
+3	line	Manni the Reveller	Want to line your stomach with some food or something, huh outerlander? Come back to me when you're ready to drink.
+3	action	end
+0	section	Talking to Manni after the player's loss
+1	cond	If the player does not have a keg of beer:
+2	line	Player	What do I have to do to earn your vote again?
+2	line	Manni the Reveller	Beat me in a drinking contest! Grab a keg of beer from that table near the bar, and come back here with it.
+2	line	Player	Oh yeah. Okay, I will do.
+2	action	end
+1	cond	If the player has a regular keg of beer:
+2	line	Manni the Reveller	Ah, I see you have your keg of beer. Are we ready to drink against each other?
+2	select	Select an option
+2	option	Yes
+3	action	above
+2	option	No
+3	action	above
+0	section	Talking to the Council workman
+1	line	Player	Hello.
+1	line	Council workman	How do. You planning on crossing this here bridge and heading up to Rellekka then?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Yes, actually I was.
+2	line	Council workman	Aye, 'tis a good thing we fixed this 'ere bridge, I reckon. You best be careful up there. Them Fremenniks are odd 'uns.
+2	line	Player	So you fixed this bridge yourself?
+2	line	Council workman	Aye, that I did. 'Twas real thirsty work too. If only some kind stranger would buy us a bit of beer to sup, eh?
+2	line	Council workman	What with that inn at seers so close by and all, eh?
+2	box	The workman winks at you.
+2	line	Council workman	Just make sure yer don't get me none of that non alcoholic rubbish from that poison salesman guy at the tavern!
+2	action	end
+1	option	No
+2	line	Council workman	Aye, that's what I told t'gaffer. Nobody wants to go up and hang out with a buncha dumb barbarians when there's a perfectly good inn to sup in, in t'seers village.
+2	line	Council workman	Ain't much better in life than having a nice cold beer to sup on a hot day like this, eh? Better'n fixing bridges, eh?
+2	box	The workman winks at you.
+2	line	Council workman	Just make sure yer don't get me none of that non alcoholic rubbish from that poison salesman guy at the tavern!
+2	action	end
+0	section	Using a normal beer or beer tankard on the Council workman
+1	line	Council workman	Ta very much, like. That'll hit the spot nicely. Here, you can have this. I picked it up as a souvenir on me last hols.
+1	action	
+1	line	Player	What is it?
+1	line	Council workman	I dunno rightly, but if you use a tinderbox on it, it don't half make a loud noise!
+1	action	end
+0	section	Talking to the Poison Salesman
+1	select	Select an option
+1	option	Talk about the Murder Mystery Quest
+1	option	Talk about the Fremennik Trials
+2	line	Player	Hello.
+2	line	Poison Salesman	Howdy! You seem like someone with discerning taste! Howsabout you try my brand new range of alcohol?
+2	line	Player	Didn't you used to sell poison?
+2	line	Poison Salesman	That I did, indeed! Peter Potter's Patented Multipurpose poison! A miracle of modern apothecarys! My exclusive concoction has been tested on...
+2	line	Player	Uh, yeah, I've already heard the sales pitch.
+2	line	Poison Salesman	Sorry stranger, old habits die hard I guess.
+2	line	Player	So you don't sell poison any more?
+2	line	Poison Salesman	Well, I would, but I ran out of stock. Business wasn't helped with that stuff that happened up at the Sinclair Mansion much either, I'll be honest.
+2	line	Poison Salesman	So, being the man of enterprise that I am I decided to branch out a little bit!
+2	line	Player	Into alcohol?
+2	line	Poison Salesman	Absolutely! The basic premise between alcohol and poison is pretty much the same, after all! The difference is that my alcohol has a unique property others do not!
+2	line	Player	And what is that?
+2	box	The salesman takes a deep breath.
+2	line	Poison Salesman	Ever been too drunk to find your own home? Ever wished that you could party away all night long, and still wake up fresh as a daisy the next morning?
+2	line	Poison Salesman	Thanks to the miracles of modern magic we have come up with just the solution you need! Peter Potter's Patented Party Potions!
+2	line	Poison Salesman	It looks just like beer! It tastes just like beer! It smells just like beer! But... it's not beer!
+2	line	Poison Salesman	Our mages have mused for many moments to bring you this miracle of modern magic! It has all the great tastes you'd expect, but contains absolutely no alcohol!
+2	line	Poison Salesman	That's right! You can drink Peter Potters Patented Party Potion as much as you want, and suffer absolutely no ill effects whatsoever!
+2	line	Poison Salesman	The clean fresh taste you know you can trust, from the people who brought you; Peter Potters Patented multipurpose poison, Peter Potters peculiar paint packs
+2	line	Poison Salesman	and Peter Potters paralysing panic pins. Available now from all good stockists! Ask your local bartender now, and experience the taste revolution of the century!
+2	box	He seems to have finished for the time being.
+2	line	Player	So... when you say 'all good stockists'...
+2	line	Poison Salesman	Yes?
+2	line	Player	How many inns actually sell this stuff?
+2	line	Poison Salesman	Well... nobody has actually bought any yet. Everyone I try and sell it to always asks me what exactly the point of beer that has absolutely no effect on you is.
+2	line	Player	So what is the point?
+2	line	Poison Salesman	Well... Um... Er... Hmmm. You, er, don't get drunk.
+2	line	Player	I see...
+2	line	Poison Salesman	Aw man... You don't want any now do you? I've really tried to push this product, but I just don't think the world is ready for beer that doesn't get you drunk.
+2	line	Poison Salesman	I'm a man ahead of my time I tell you! It's not that my products are bad, it's that they're too good for the market!
+2	line	Player	Actually, I would like some. How much do you want for it?
+2	line	Poison Salesman	Y-you would??? Um, okay! I knew I still had the old salesmans skills going on!
+2	line	Poison Salesman	I'll sell you a keg of it for only 250 gold pieces! So what do you say?
+2	select	Select an option
+2	option	Yes
+3	line	Player	Yes please!
+3	cond	If the player does not have 250 gp:
+4	line	Poison Salesman	Sorry pal, we do not offer credit for any purchases made of Peter Potter's patented party potion! Come back when you have the cash!
+3	cond	If the player has 250 gp:
+4	cond	If the player does not have inventory space:
+5	line	Poison Salesman	Sorry pal, doesn't look like you have room on you to carry it.
+5	action	end
+4	cond	If the player has inventory space:
+5	action	
+5	action	end
+2	option	No
+3	line	Player	No, not really.
+3	action	end
+0	section	Talking to the Poison Salesman again
+1	cond	If the player did not receive the money:
+2	line	Player	I understand you have some low alcohol beer for sale...?
+2	line	Poison Salesman	That I do, and sales are rocketing upwards as word of mouth spreads of it's clean taste and cool flavour! So... you want to buy some?
+2	select	Select an option
+2	option	Yes
+3	action	above
+2	option	No
+3	action	above
+0	section	Attempting to use the low alcohol keg with the regular keg of beer
+1	line	Manni the Reveller	Thinking of cheating my test, outerlander? I don't think so! You drink that keg fairly, or not at all! Don't let me catch you cheating!
+1	line	Player	I'm going to have to find some way to distract this guy while I cheat...
+1	action	end
+0	section	Creating a distraction
+1	cond	If the player uses a tinderbox on the strange object:
+2	action	end
+1	cond	If the lit strange object is still in the player's inventory after 70-100 seconds:
+2	line	Player	Ow!
+2	action	The player loses 4% of their hitpoints with a minimum of 2.
+2	action	end
+1	cond	If the player places anything other than the strange object on the drain pipe:
+2	line	Player	I don't have anything I really want to put inside a smelly old drain pipe.
+2	action	end
+1	cond	If the player places the strange object on the drain pipe on the east side of the longhall without lighting it:
+2	action	end
+1	cond	If the player lights the strange object and puts it in the drain pipe:
+2	line	Player	That is going to make a really loud bang when it goes off! It would be a perfect distraction to help me cheat in the drinking contest!
+2	action	end
+1	cond	If the player uses the low alcohol beer on the keg of beer whilst the lit strange object is in the pipe:
+2	line	Everyone in the longhall	what was THAT?
+2	action	end
+0	section	Talking to Manni after switching with the low alcohol beer
+1	line	Manni the Reveller	Ah, I see you have your keg of beer. Are we ready to drink against each other?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Yes, let's start this drinking contest!
+2	line	Manni the Reveller	As you wish outerlander; I will drink first, then you will drink.
+2	line	Player	Aaaah, lovely stuff. So you want to get the next round in, or shall I? You don't look so good there!
+2	line	Manni the Reveller	Wassha? Guh? You drank that whole keg! But it dinna affect you at all! I conshede! You can probably outdrink me!
+2	line	Manni the Reveller	I jusht can't (hic) believe it! Thatsh shome mighty fine drinking legs you got! Anyone who can drink like THAT getsh my vote atta consh.. counsh... gets my vote!
+2	action	end
+1	option	No
+2	action	above
+0	section	Subsequent dialogue with Manni
+1	line	Player	So I can rely on your vote at the council?
+1	line	Manni the Reveller	Absholutely! (hic) You're one mighty drinker!
+1	action	end
+0	section	Olaf the Bard
+1	line	Olaf the Bard	Hello? Yes? You want something, outerlander?
+1	line	Player	Are you a member of the council?
+1	line	Olaf the Bard	Why, indeed I am, outerlander! My talents as an exemplary musician made it difficult for them not to accept me! Why do you wish to know this?
+1	line	Player	Well, I ask because I am currently doing the Fremennik trials so as to join your clan. I need seven of the twelve council of elders to vote for me.
+1	line	Olaf the Bard	Ahhh... and you wish to earn my vote? I will gladly accept you as a Fremennik should you be able to prove yourself to have a little musical ability!
+1	line	Player	So how would I do that?
+1	line	Olaf the Bard	Why, by playing in our longhall! All you need to do is impress the revellers there with a few verses of an epic of your own creation!
+1	line	Olaf the Bard	So what say you outerlander? Are you up for the challenge?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Sure! This certainly sounds pretty easy to accomplish - I'll have your vote in no time!
+2	line	Olaf the Bard	That is great news outerlander! We always need more music lovers here!
+2	action	end
+1	option	No
+2	line	Player	Forget it! This all sounds like way too much work for a stupid vote at a meeting! I'll find someone else instead.
+2	action	end
+0	section	Talking to him again
+1	line	Player	So how would I go about writing this epic?
+1	line	Olaf the Bard	Well, first of all you are going to need an instrument. Like all true bards you are going to have to make this yourself.
+1	line	Player	How do I make an instrument?
+1	line	Olaf the Bard	Well, it is a long and drawn-out process. Just east of this village there is an unusually musical tree that can be used to make very high quality instruments.
+1	line	Olaf the Bard	Cut a piece from it, and then carve it into a special shape that will allow you to string it. Using a knife as you would craft any other wooden object would be best for this.
+1	line	Player	Then what do I need to do?
+1	line	Olaf the Bard	Next you will need to string your lyre. There is a troll to the South-east who has some golden wool. I would not recommend using anything else to string your lyre with.
+1	line	Player	Anything else?
+1	line	Olaf the Bard	Well, when you have crafted your lyre you will need the blessing of the Fossegrimen to tune your lyre to perfection before you even consider a public performance.
+1	line	Player	Who or what is Fossegrimen?
+1	line	Olaf the Bard	Fossegrimen is a lake spirit that lives just a little way South-west of this village. Make her an offering of fish, and you will then be ready for your performance.
+1	line	Olaf the Bard	Make sure you give her a suitable offering however. If the offering is found to be unworthy, then you may find yourself unable to play your lyre with any skill at all!
+1	line	Player	So what would be a worthy offering?
+1	line	Olaf the Bard	A raw shark, manta ray, or sea turtle should be sufficient as an offering.
+1	line	Player	Okay, what else do I need to do?
+1	line	Olaf the Bard	When you have crafted your lyre and been blessed by Fossegrimen, then you will finally be ready to make your performance to the revellers at the longhall.
+1	line	Olaf the Bard	Head past the bouncers and onto the stage, and then begin to play. If all goes well, you should find the music spring to your mind and sing your own epic on the spot.
+1	line	Olaf the Bard	I will observe both you and the audience, and if you show enough talent, I will happily vote in your favour at the council of elders.
+1	line	Olaf the Bard	Is that clear enough, outerlander? Would you like me to repeat anything?
+1	select	Select an option
+1	option	Remind me about crafting a lyre
+2	line	Player	Can you remind me about making a lyre again, please Olaf?
+2	line	Olaf the Bard	There are three parts to making the lyre; First you need to cut some special wood from the special musical tree which can be found just east of Rellekka.
+2	line	Olaf the Bard	When you have the wood, you will need to use a knife to craft it into a Lyre. When you have an unstrung lyre, you will need to string it before you can play it.
+2	line	Olaf the Bard	I would not use anything other than the golden string of Lalli, a troll who lives in a cave just to the South-east.
+2	line	Olaf the Bard	Is that clear enough, outerlander? Would you like me to repeat anything?
+2	action	previous
+1	option	Remind me about Fossegrimen
+2	line	Player	Can you remind me about getting a blessing from Fossegrimen again?
+2	line	Olaf the Bard	Certainly outerlander! Fossegrimen is a lake spirit who lives in the lake just to the South-west of here. She will bless you so that you may play your lyre,
+2	line	Olaf the Bard	if you give her a worthy offering. She will only accept raw fish, so place a raw fish on her pedestal, and she will bless you. The better the offering, the longer
+2	line	Olaf the Bard	the amount of time you will be blessed for. You will not be able to perform on stage without the blessing of the Fossegrimen.
+2	line	Olaf the Bard	Is that clear enough, outerlander? Would you like me to repeat anything?
+2	action	previous
+1	option	Remind me about playing on stage
+2	line	Player	Can you remind me about how to perform at the longhall again please?
+2	line	Olaf the Bard	Not a problem outerlander. When you have your lyre and have been blessed, you will be able to pass the bouncer at the stage entrance of the longhall.
+2	line	Olaf the Bard	He will not let you pass unless he believes you are ready to perform on stage. Simply go past him and onto the stage and use your lyre, and you will
+2	line	Olaf the Bard	begin to play to entertain the revellers. If all has gone well, you will feel the music come to your mind, unbidden, as you sing an epic of your exploits.
+2	line	Olaf the Bard	I will watch your performance from backstage, and also study how much the crowd likes you, and if I believe you have enough talent, then I will vote for you at the council.
+2	line	Olaf the Bard	Is that clear enough, outerlander? Would you like me to repeat anything?
+2	action	previous
+1	option	I don't need a reminder
+2	line	Player	No thanks, I think that's all pretty straight forward. I'll go and make my lyre now.
+2	action	end
+0	section	Crafting the Lyre
+1	cond	If the player attempts to cut a Swaying tree:
+2	cond	If the player has no inventory space:
+3	box	You do not have enough free space in your inventory to chop this tree.
+3	action	end
+2	cond	If the player has inventory space:
+3	action	
+3	action	end
+1	cond	If the player uses a knife on the branch:
+2	action	
+2	action	end
+1	cond	If the player uses a ball of wool to string the lyre:
+2	action	end
+0	section	Talking to Lalli
+1	line	Player	Hello there.
+1	line	Lalli	Bah! Puny humans always try steal Lallis' golden apples! You go away now!
+1	line	Player	Actually, I'm not after your golden apples. I was wondering if I could have some golden wool; I need it to string a lyre.
+1	line	Lalli	Ha! You not fool me human! Me am smart! Other trolls so jealous of how brainy I are, they kick me out of camp and make me live down here in cave! But me have last funny!
+1	line	Lalli	Me find golden apples on tree and me build wall to stop anyone who not Lalli eating lovely golden apples! Did me not tell you I are smart?
+1	line	Player	Yes, yes, you are incredibly clever. Now please can I have some golden wool?
+1	line	Lalli	Hum, me think you not really think I are clever. Me think you is trying trick Lalli. Me not like you as much as other human. He give me present. I give him wool.
+1	select	Select an option
+1	option	Other human?
+2	line	Player	Other human? You mean someone else has been there and you gave them wool?
+2	line	Lalli	Human call itself Askeladden! It not trick Lalli, Lalli do good deal with human! Stupid human get some dumb wool, but did not get golden apples!
+2	line	Player	I see... okay, well, bye!
+2	action	end
+1	option	No, honest, you're REALLY clever.
+2	line	Player	No, honest, you're REALLY clever. Why, I could not contemplate a mere chicanery with an advanced intellect such as you currently present.
+2	line	Lalli	Grrr! Why you insult me stupid human? Me know it are because you jealous of Lalli's huge brain and you try steal apples!
+2	action	end
+1	option	Can I give you a present?
+2	line	Player	Can I give you a present? Or maybe exchange you something for some wool?
+2	line	Lalli	Ha! You stupid human! You think you trick Lalli? Me know you want my golden apples Well! You not get them! HAHAHA!
+2	line	Player	Erm... okay then.
+2	action	end
+0	section	Talking to Askeladden
+1	line	Player	Hello there. I understand you managed to get some golden wool from Lalli?
+1	line	Askeladden	HAHAHA! Yeah, that Lalli... what a maroon!
+1	line	Player	So how did you manage to get the wool?
+1	line	Askeladden	Well, as you know, I am doing the same trials that you are as part of my test of manhood, and that troll is the only one who can get that wool.
+1	line	Askeladden	You might have noticed he's kind of... messed in the head buddy! He's real paranoid about people stealing his golden apples, isn't he?
+1	line	Player	Indeed he is. So how did you manage to get some golden wool from him?
+1	line	Askeladden	It was easy buddy! I persuaded him he needed a pet to help him guard his apples. A pet that would never sleep! A pet that would never need food, or exercise!
+1	line	Askeladden	A pet that would never need him to clean up its... well, you know, buddy. A pet that would always be loyal to him! A faithful companion for life!
+1	action	
+1	line	Player	What pet is this then?
+1	line	Askeladden	A pet ROCK!
+1	line	Askeladden	Man, can you believe that stupid troll traded me some of his golden wool for a worthless ROCK?
+1	line	Askeladden	Buddy, I hafta say; if brains were explosives, that troll wouldn't have enough to blow his nose!
+1	line	Player	Do you have any spare rocks then?
+1	line	Askeladden	Sure thing buddy, although I have to say, I doubt even that troll is stupid enough to fall for the SAME trick TWICE in a row! You can try anyway though!
+1	action	end
+0	section	Talking to Askeladden again
+1	cond	If the player has the pet rock:
+2	line	Player	So this is the exact same type of rock you managed to sell to Lalli as a pet?
+2	line	Askeladden	Yup, sure is buddy! That Lalli is stupid, even by troll standards!
+2	action	end
+1	cond	If the player does not have the pet rock:
+2	line	Player	Can I have another rock? I lost mine...
+2	line	Askeladden	Sure thing buddy! I'd say take better care of this one, but it's just a rock! I have hundreds of them! Go wild!
+2	action	
+2	action	end
+0	section	Talking to Lalli again with the pet rock
+1	line	Player	Hello there.
+1	line	Lalli	Bah! Puny humans always try steal Lallis' golden apples! You go away now!
+1	line	Player	Wait! I have something that might interest you... a pet rock!
+1	line	Lalli	Hah! You think me stupid or something human? Me already got one! Me don't want lotta baby rocks either, so me don't want another one around the place!
+1	line	Player	Please... all I want is some of your golden wool...
+1	line	Lalli	Stupid human think he can trick me into giving away some golden apples! Hah! Golden apples is all me got to eat, you not get them, no way!
+1	line	Player	Hmm... So you're hungry? I think I will have the perfect thing for you to eat... I just need to get myself an onion, a potato and a cabbage...
+1	box	You have a cunning plan to trick this troll. You need your pet rock, a cabbage, a potato and an onion.
+1	action	end
+0	section	Talking to Lalli again
+1	line	Player	Hello there.
+1	line	Lalli	Bah! Puny humans always try steal Lallis' golden apples! You go away now!
+1	line	Lalli	Unless you got tasty food for Lalli. Then I might trade you for it.
+1	line	Player	Actually I don't...
+1	line	Lalli	Hah! Me knew it! You human just try trick Lalli into giving away golden apple! Me not as stupid as you look!
+1	action	end
+0	section	Making rock soup
+1	cond	If the player adds anything other than rock, potato, cabbage, or onion to the cauldron:
+2	action	end
+1	cond	If the player adds a pet rock into the cauldron:
+2	action	end
+1	cond	If the player adds vegetable into the cauldron:
+2	line	Lalli	It am ready now?
+2	line	Player	Not just yet...
+2	action	end
+1	cond	If the player is done adding the vegetables and pet rock into the soup:
+2	line	Lalli	It am ready now?
+2	line	Player	Indeed it is. Try it and see.
+2	line	Lalli	Hmm... YUM! That are delicious! Me never know human know to make soup out of stone? It some special stone?
+2	line	Player	Indeed it is. But I'm willing to trade it.
+2	line	Lalli	Let me think about that, me like to think.
+2	action	end
+0	section	Talking to Lalli after making the soup
+1	line	Player	Hello there.
+1	line	Lalli	Your soup very tasty, human! But me still not want trade golden apples for your stone. Me think pet rock get jealous.
+1	line	Player	I. DON'T. WANT. ANY. GOLDEN. APPLES. ALL. I. WANT. IS. A. GOLDEN. FLEECE.
+1	line	Lalli	Gee, sorry human, all you have do is ask, me not need you to shout. You act like you think Lalli am stupid or something...
+1	cond	If the player does not have the golden fleece in their inventory:
+2	line	Lalli	Here you go. Hah! Me trick you human! All you got is worthless golden fleece! Me got very rare soup-making stone!
+2	action	
+2	line	Player	Glad you're happy Lalli!
+2	action	end
+1	cond	If the player already has golden fleece in their inventory:
+2	action	end
+0	section	Making a strung lyre
+1	cond	If the player uses the unspun golden fleece or a regular ball of wool on the unstrung lyre:
+2	action	end
+1	cond	If the player uses the unspun golden fleece on the spinning wheel at Rellekka:
+2	action	end
+1	cond	If the player uses the unspun golden fleece on a spinning wheel anywhere else:
+2	action	
+2	action	end
+1	cond	If the player uses the golden wool on the unstrung lyre without 25 Fletching:
+2	box	You need to have a Fletching level of 25 to string the lyre.
+2	action	end
+1	cond	If the player uses the golden wool on the unstrung lyre with 25 Fletching:
+2	action	
+2	action	end
+1	cond	If the player attempts to play the lyre:
+2	line	Player	I really wouldn't know where to begin playing anything on this...
+2	action	end
+0	section	Talking to the Fossegrimen
+1	line	Fossegrimen	What can I do for you?
+1	line	Player	I hear that I can present you with an offering and you will enchant my lyre for me.
+1	line	Fossegrimen	This is true. For a simple enchantment, you may place an offering on my Altar. Can I help you with anything else?
+1	select	Select an option
+1	option	Present offering of a single fish.
+2	select	Select an option
+2	option	Raw shark.
+3	cond	If the player does not have a raw shark:
+4	box	You do not have a raw shark to offer.
+4	action	end
+3	cond	If the player has a raw shark:
+4	action	continue
+2	option	Raw manta ray.
+3	cond	If the player does not have a raw manta ray:
+4	box	You do not have a raw manta ray to offer.
+4	action	end
+3	cond	If the player has a manta ray:
+4	action	continue
+2	option	Raw sea turtle.
+3	cond	If the player does not have a raw sea turtle:
+4	box	You do not have a raw sea turtle to offer.
+4	action	end
+3	cond	If the player has a raw sea turtle:
+4	action	continue
+2	option	Raw bass.
+3	cond	If the player does not have a raw bass:
+4	box	You do not have a raw bass to offer.
+4	action	end
+3	cond	If the player has a raw bass:
+4	action	continue
+1	option	Nothing.
+2	line	Player	Nothing, sorry.
+2	line	Fossegrimen	Do not summon me for idle conversation! Come back when you have an offering.
+2	action	end
+0	section	Fossegrimen's blessing
+1	cond	If the player deposits a raw fish:
+2	line	Fossegrimen	Many thanks for the offering outerlander. Please accept as a gift the ability to play your lyre...
+2	action	end
+0	section	Tuning the lyre
+1	line	Player	Dor Ray Me So.
+1	line	Player	Fah La Ti Doh.
+1	line	Player	La La La La.
+1	line	Player	De-Doo-De-Doo.
+1	action	end
+0	section	Talking to the Longhall with the blessed lyre
+1	line	Longhall Bouncer	You have an instrument now, huh? Go on through the door.
+1	action	end
+0	section	Entering the backstage
+1	line	Longhall Bouncer	Yeah, you're good to go through. Olaf tells me you're some kind of outerlander bard here on tour. I doubt you're worse than Olaf is.
+1	action	end
+0	section	Performing with the Lyre
+1	action	The following are possible ballads, depending on the player's achievements:
+1	cond	If the player has gained entrance to the Champions Guild:
+2	line	Player	The thought of lots of questing
+2	line	Player	leaves some people unfulfilled,
+2	line	Player	but I have done my simple best
+2	line	Player	in entering the Champions' Guild.
+2	action	continue
+1	cond	If the player has gained entrance to the Heroes' Guild:
+2	line	Player	When it comes to fighting
+2	line	Player	I hit my share of zeroes
+2	line	Player	But I'm well respected at
+2	line	Player	the Guild reserved for Heroes.
+2	action	continue
+1	cond	If the player has gained entrance to the Legends' Guild:
+2	line	Player	I cannot even start to list
+2	line	Player	the amount of foes I've killed.
+2	line	Player	I will simply tell you this:
+2	line	Player	I've joined the Legends' Guild!
+2	action	continue
+1	cond	If the player has level 99 in any skill:
+2	line	Player	When people speak of training
+2	line	Player	some people think they're fine.
+2	line	Player	But they just all seem jealous that
+2	line	Player	my [skill]'s ninety-nine!
+2	action	continue
+1	cond	If the player doesn't have any achievements:
+2	line	Player	{player} is my name,
+2	line	Player	I haven't much to say.
+2	line	Player	But since I have to sing this song,
+2	line	Player	I'll just go ahead and play.
+2	action	continue
+1	line	Olaf the Bard	Wow! That was awesome! You are one of the greatest bards I have ever had the pleasure of watching performing! You have certainly earned my vote! I hope we can duet together soon!
+1	action	end
+0	section	Audience member dialogue
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Hey, I've done that quest too!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	I have met cows more musical than you!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	I thought somebody was murdering a cat!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Is your singing some kind of outerlander weapon?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	My grandmother could do better, and she is dead!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Please, ye gods! Make it stop!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	would torture us so, outerlander?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Worst. Bard. EVER.
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	You call THAT singing?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Don't give up your day job outerlander!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	I do such feats before breakfast!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Never before have mine ears been so offended!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Your song makes no sense outerlander!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	You know, I actually quite liked that verse...
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	That's kind of catchy. Irritating. But catchy.
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Please... Kill me now...
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	looting and drinking part?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	When do you get to the good parts?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Truly, this is the worst sound I have ever heard!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	What kind of bard are you anyway?
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	Please tell me that was the last verse...
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	The screams of my dying comrades sound better!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	I have produced better sounds in the outhouse!
+2	line	[Fridgeir/Ospak/Styrmir/Torbrund]	YOU ARE A TERRIBLE BARD!
+0	section	Subsequent dialogue with Olaf
+1	line	Player	So can I rely on your vote with the council of elders in my favour?
+1	line	Olaf the Bard	You have a truly poetic soul! Anyone who can compose such a beautiful epic, and then perform it so flawlessly can only bring good to our clan!
+1	line	Player	Erm... so that's a yes, then?
+1	line	Olaf the Bard	Absolutely! We must collaborate together on a duet sometime, don't you think?
+1	action	end
+0	section	Sigli the Huntsman
+1	line	Sigli the Huntsman	What do you want outerlander?
+1	line	Player	Are you a member of the council?
+1	line	Sigli the Huntsman	The Fremennik council of elders? I am pleased to say that I am. My value as a huntsman is recognised by my position there.
+1	line	Player	I was wondering if I could persuade you to vouch for me as a member of your clan?
+1	line	Sigli the Huntsman	You? ... well... I am not totally against the idea outerlander. If you can demonstrate some hunting skills then perhaps I may offer my vote.
+1	line	Player	How can I prove my hunting skills to you? I can go kill, like, a hundred chickens for you right now!
+1	line	Sigli the Huntsman	Chickens? You think that would impress me?
+1	line	Player	Cows then? I can kill cows until, er, the cows come home.
+1	line	Sigli the Huntsman	No. The prey I have in mind for you to prove your worth to me is something far more dangerous. Far more difficult. Far more deadly.
+1	line	Player	Not... Giant Rats?!?!
+1	line	Sigli the Huntsman	I suspect you are mocking me outerlander. You will need to prove your skill as a hunter to me by tracking and defeating... The Draugen.
+1	select	Select an option
+1	option	What's a Draugen?
+2	line	Player	What's a Draugen? Some kind of cheap barbarian rip- off of a dragon?
+2	line	Sigli the Huntsman	Hmmm. No, the words are slightly similar I suppose, but they are very different creatures.
+2	line	Sigli the Huntsman	The Draugen is an evil ghost from Fremennik mythology, that devours the souls of those brave warriors who meet their ends at sea.
+2	line	Sigli the Huntsman	It stalks the coastlines, invisible to all. It brings us bad fortunes, and curses our journeys across the seas. It is also unkillable by normal means.
+2	line	Player	...Let me get this straight; You want me to hunt an unkillable, invincible, and invisible enemy? How am I supposed to do that?
+2	line	Sigli the Huntsman	Well outerlander, should you accept my challenge I will show you a special hunter's trick that will help you. Do you accept the challenge?
+2	select	Select an option
+2	option	Yes
+3	line	Player	Well, I need every vote I can get in the council of elders, but this certainly sounds impossible to do...
+3	line	Sigli the Huntsman	Not at all outerlander. The Draugen is indeed impossible to kill, but that is not the same as being impossible to fight against.
+3	line	Sigli the Huntsman	Every time he takes a Fremennik life, he gains in power, so to keep it from becoming too powerful we hunters hunt it and steal its life force.
+3	cond	If the player does not have inventory space:
+4	line	Sigli the Huntsman	To defeat the Draugen you will need a special item; I have one to give you but it seems as though your inventory is too full to accept it.
+4	action	end
+3	cond	If the player has inventory space:
+4	line	Sigli the Huntsman	We do this with a special talisman. Here, take it; it will let you track the Draugen while it's invisible, and when you defeat it will absorb its essence.
+4	action	
+4	line	Sigli the Huntsman	I want you to track the Draugen, defeat it, and store its essence in that talisman for me. If you can do this important task for my clan, I will vote for you.
+4	line	Sigli the Huntsman	Take care of the talisman, and see me when you have completed this task.
+4	action	end
+2	option	No
+3	line	Player	Forget it! This all sounds like way too much work for a stupid vote at a meeting! I'll find someone else instead.
+3	action	end
+1	option	Forget it.
+2	action	above
+0	section	Talking to Sigli again
+1	line	Sigli the Huntsman	Hello again outerlander. Have you managed to hunt down the terrible Draugen yet?
+1	cond	If the player has the talisman:
+2	line	Player	Not yet...
+2	line	Sigli the Huntsman	Hmmm. Laziness is not a trait that I admire. I suggest you go and do so if you wish me to vouchsafe for you to our council of elders.
+2	action	end
+1	cond	If the player does not have a talisman:
+2	line	Player	Not yet... I lost the talisman you gave me.
+2	line	Sigli the Huntsman	The typical careless regard for valuable objects I would expect from an outerlander such as yourself. Do not lose THIS one.
+2	action	
+2	action	end
+0	section	Using the Hunters' Talisman
+1	cond	If the player is north/south/west/east of the Draugen:
+2	action	end
+1	cond	If the player is south-west/south-east of the Draugen:
+2	action	end
+1	cond	If the player is north-east/north-west of the Draugen:
+2	action	end
+1	cond	If the Draugen moves whilst locating with the talisman:
+2	action	end
+1	cond	If the player is 3 tiles near the Draugen:
+2	action	end
+1	cond	If the Draugen is defeated:
+2	action	end
+1	cond	If the player uses the locate feature on the talisman after the Draugan's defeat:
+2	action	end
+0	section	Talking to Sigli after defeating The Draugen
+1	line	Sigli the Huntsman	I saw the entire hunt. Let me take that talisman from you; I would be honoured to speak out for you to our council of elders after such a hunt, outerlander.
+1	line	Player	Thanks!
+1	action	end
+0	section	Subsequent dialogue with Sigli
+1	line	Sigli the Huntsman	Absolutely outerlander! Anyone brave enough to hunt and defeat the Draugen will be a great addition to our clan!
+1	action	end
+0	section	Sigmund the Merchant's small "favour"
+1	line	Player	Hello there!
+1	line	Sigmund The Merchant	Hello outerlander.
+1	line	Player	Are you a member of the council?
+1	line	Sigmund The Merchant	That I am outerlander; it is a position that brings my family and I pride.
+1	line	Player	I was wondering if I can count on your vote at the council of elders?
+1	line	Sigmund The Merchant	You wish to become a Fremennik? I may be persuaded to swing my vote to your favour, but you will first need to do a little task for me.
+1	line	Player	How did I know it wouldn't be that simple for your vote?
+1	line	Sigmund The Merchant	Calm yourself outerlander. It is but a small task really... I simply require a flower.
+1	line	Player	A flower? What's the catch?
+1	line	Sigmund The Merchant	The catch? Well... it is not just any flower. Someone in this town has an extremely rare flower from a far off land that they picked up on their travels.
+1	line	Sigmund The Merchant	I would like you to demonstrate your merchanting skills to me, by persuading them to part with it, and then give it to me for my vote.
+1	line	Player	Well... I guess that doesn't sound too hard...
+1	line	Sigmund The Merchant	Excellent! You will obtain this rare flower for me then?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Okay. I don't think this will be too difficult. Any suggestions on where to start looking for this flower?
+2	line	Sigmund The Merchant	Ah, well outerlander, if I knew where to start looking I would simply do it myself!
+2	line	Player	No help at ALL?
+2	line	Sigmund The Merchant	We are a very insular clan, so I would not expect you to have to leave this town to find whatever you need.
+1	option	No
+2	line	Player	You know what? No. This all sounds like a lot of hassle to me, and frankly I just can't be bothered with it right now.
+2	line	Player	I'll go get someone else to vote for me.
+2	line	Sigmund The Merchant	As you wish outerlander. If you change your mind, come and see me again; I am very interested in getting my hands on that flower.
+2	action	end
+1	cond	If the player attempts to give Sigmund other types of flowers:
+2	action	end
+0	section	Talking to Sigmund again
+1	line	Player	Hello there!
+1	line	Sigmund The Merchant	So... how goes it outerlander? Did you manage to obtain my flower for me yet? Or do you lack the necessary merchanting skills?
+1	line	Player	I'm still working on it... Do you have any suggestion where to start looking for it?
+1	line	Sigmund The Merchant	I suggest you ask around the other Fremennik in the town. A good merchant will find exactly what their customer needs somewhere.
+1	action	end
+0	section	Finding the unique flower's whereabouts
+0	section	Talking to Askeladden
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Askeladden	Nope, sorry buddy!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thora
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Thora the Barkeep	I wouldn't know about that, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Brundt
+1	line	Brundt the Chieftain	Greetings again outerlander! How goes your attempts to gain votes with the council of elders?
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Brundt the Chieftain	Not really my affair, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Olaf
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Olaf the Bard	I'm sorry, no I don't.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	end
+0	section	Talking to Thorvald
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Thorvald the Warrior	Not in the slightest.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Skulgrimen
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Skulgrimen	I never saw anything like that in my store before.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Fisherman
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Fisherman	I never saw anything like that in my store before.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Peer the Seer
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Peer the Seer	I'm afraid not, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Yrsa
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Yrsa	No... sorry, I don't.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Manni
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Manni the Reveller	I have not the first idea about that.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Sigli
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Sigli the Huntsman	Greetings outerlander.
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Sigli the Huntsman	No idea at all outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	The Sailor's "Favor"
+0	section	Talking to the Sailor
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a rare flower from across the sea, do you?
+2	line	Sailor	Ah! Even the outerlanders have heard of my mysterious flower! I found it in a country far far away from here!
+2	line	Player	Can I buy it from you?
+2	line	Sailor	I'm afraid not, outerlander. There is a woman in this village whose heart I seek to capture, and I think giving her this strange flower might be my best bet with her.
+2	line	Player	Maybe you could let me have the flower and do something else to impress her?
+2	line	Sailor	Hmm... that is not a totally stupid idea outerlander. I know she is a lover of music, and a romantic ballad might be just the thing with which to woo her.
+2	line	Sailor	Unfortunately I don't have a musical bone in my entire body, so someone else will have to write it for me.
+2	line	Player	So if I can find someone to write you a romantic ballad, you will give me your flower?
+2	line	Sailor	That sounds like a fair deal to me, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Olaf the Bard
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a love ballad, do you?
+2	line	Olaf the Bard	Well, as official Fremennik bard, it falls within my remit to compose all music for the tribe. I am fully versed in all the various types of romantic music.
+2	line	Player	Great! Can you write me one then?
+2	line	Olaf the Bard	Well... normally I would be thrilled at the chance to show my skill as a poet in composing a seductively romantic ballad...
+2	line	Player	let me guess; here comes the 'but'.
+2	line	Olaf the Bard	...but unfortunately I cannot concentrate fully upon my work recently.
+2	line	Player	Why is that then?
+2	line	Olaf the Bard	It is these old worn out shoes of mine... As a bard I am expected to wander the lands, singing of the glorious battles of our warriors.
+2	line	Olaf the Bard	If you can find me a pair of sturdy boots to replace these old worn out ones of mine, I will be happy to spend the time on composing you a romantic ballad.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Yrsa
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find some custom sturdy boots, do you?
+2	line	Yrsa	Well, I don't usually have many shoes in stock here in my little clothes shop... I will be able to make you up a pair if you are really desperate though?
+2	line	Player	They're not for me... I need them for Olaf.
+2	line	Yrsa	Oh, that foolish bard... Why didn't he just ask me to make him some? It is his stupid pride, I believe!
+2	line	Yrsa	I will tell you what I will do outerlander; I know that you must have the ear of the chieftain for him to consider you as worthy of becoming a Fremennik by trial.
+2	line	Yrsa	I will make you a pair of sturdy boots for Olaf if you will persuade him to reduce the sales tax placed upon all Fremennik shopkeepers. It does nothing but hurt my business now.
+2	line	Player	Okay, I will see what I can do.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Yrsa again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a guarantee of a reduction on sales taxes, do you?
+2	line	Yrsa	Yes I do outerlander. Only the Chieftain may permit such a thing. Talk to him.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Brundt
+1	line	Brundt the Chieftain	Greetings again outerlander! How goes your attempts to gain votes with the council of elders?
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a guarantee of a reduction on sales taxes, do you?
+2	line	Brundt the Chieftain	A reduction on sales taxes? Why, I am the only one in the Fremennik who may authorise such a thing. What does an outerlander want with that?
+2	line	Player	Actually, it's not for me. I need to get it as part of my trials.
+2	line	Brundt the Chieftain	Hmmm. Interesting. Your trials seem to be very different to those I took as a young lad. Well, I am not adverse in principle to giving a slight tax break to our shops.
+2	line	Brundt the Chieftain	There will of course be a shortfall in the tribe's income, that will need to be made up for elsewhere, however.
+2	line	Brundt the Chieftain	How about this. For many years Sigli has been the only one in the tribe who knows the locations of the best hunting grounds where game is easiest to catch.
+2	line	Brundt the Chieftain	If you can persuade him to let the entire tribe know these hunting grounds, then we can increase productivity within the tribe, and any shortfall caused
+2	line	Brundt the Chieftain	by lowering sales taxes will be covered. I think this is a more than fair arrangement to make, don't you?
+2	line	Player	Yeah, that sounds very fair.
+2	line	Brundt the Chieftain	Speak to Sigli then, and you may have my promise to reduce our sales taxes. And best of luck with the rest of your trials.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Finding Sigli's bowstring
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Sigli the Huntsman	Greetings outerlander.
+2	line	Player	I don't suppose you have any idea where I could find a map to unspoiled hunting grounds, do you?
+2	line	Sigli the Huntsman	Well, of course I do. I wouldn't be much of a huntsman if I didn't know where to find my prey now, would I outerlander?
+2	line	Player	No, I guess not. So can I have it?
+2	line	Sigli the Huntsman	Directions to my hunting grounds could mean the end of my livelihood. The only way I would be prepared to give them up would be...
+2	line	Player	What? Power? Money? Women? Wine?
+2	line	Sigli the Huntsman	...a new string for my hunting bow. Not just any bowstring; I need a custom bowstring, balanced for my bow precisely to keep my hunt competitive.
+2	line	Sigli the Huntsman	Only in this way would I allow the knowledge of my hunting grounds to be passed on to strangers.
+2	line	Player	So where would I get that?
+2	line	Sigli the Huntsman	I have no idea. But then again, I'm happy with my old bowstring and being the only person who knows where my hunting ground is.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	end
+0	section	Talking to Askeladden
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Askeladden	Nope, sorry buddy!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Olaf
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Olaf the Bard	I'm sorry, no I don't.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	end
+0	section	Talking to Thorvald
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Thorvald the Warrior	Not in the slightest.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Fisherman
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Fisherman	I never saw anything like that in my store before.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Sailor
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Sailor	Not really my affair, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Yrsa
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Yrsa	No... sorry, I don't.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Peer the Seer
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Peer the Seer	I'm afraid not, outerlander.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Manni
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Manni the Reveller	I have not the first idea about that.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Skulgrimen
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?
+2	line	Skulgrimen	Aye, I have a few in stock. What would an outerlander be wanting with equipment like that?
+2	line	Player	It's for Sigli. It needs to be weighted precisely to suit his hunting bow.
+2	line	Skulgrimen	For Sigli eh? Well, I made his bow in the first place, so I'll be able to select the right string for you... just one small problem.
+2	line	Player	What's that?
+2	line	Skulgrimen	This string you'll be wanting... Very rare. Take a lot of time to recreate. Not sure you have the cash for it.
+2	line	Player	Then maybe you'll accept something else...?
+2	line	Skulgrimen	Heh. Good thinking outerlander. Well, it's true, there is more to life than just making money. Making weapons is good money, but it's not why I do it.
+2	line	Skulgrimen	I'll tell you what. I heard a rumour that one of the fishermen down by the docks caught some weird looking fish as they were fishing the other day.
+2	line	Skulgrimen	From what I hear this fish is unique. Nobody's ever seen its like before. This intrigues me. I'd like to have it for myself. Make a good trophy.
+2	line	Skulgrimen	You get me that fish, I give you the bowstring. What do you say? We got a deal?
+2	line	Player	Sounds good to me.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	end
+0	section	Talking to Skulgrimen again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find an exotic and extremely rare fish, do you?
+2	line	Skulgrimen	What? There's another one?
+2	line	Player	Er... no, it's the one for you that I'm looking for...
+2	line	Skulgrimen	Ah. I see. I already told you. Some guy down by the docks was bragging. Best ask there, I reckon.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Fisherman
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find an exotic and extremely rare fish, do you?
+2	line	Fisherman	Ah, so even outerlanders have heard of my amazing catch the other day!
+2	line	Player	You have it? Can I trade you something for it?
+2	line	Fisherman	As exotic looking as it is, it is bad eating. I will happily trade it if you can find me the secret map of the best fishing spots that the navigator has hidden away.
+2	line	Player	Is that all?
+2	line	Fisherman	Indeed it is, outerlander. The only reason I sit out here in the cold all day long is so I don't have to pay his outrageous prices.
+2	line	Fisherman	By getting me his copy of that map, I will finally be self sufficient. I might even make a profit!
+2	line	Player	I'll see what I can do.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Fisherman again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a map of deep sea fishing spots do you?
+2	line	Fisherman	You should pay attention when I speak! I already told you, that rip off navigator has it, and I want it!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Swensen the Navigator
+1	line	Player	Hello!
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Swensen the Navigator	Greetings outerlander.
+2	line	Player	I don't suppose you have any idea where I could find a map of deep sea fishing spots do you?
+2	line	Swensen the Navigator	Hmmm? Why of course! As the navigator for the Fremennik I keep all of our maps secure right here.
+2	line	Player	Great! Can I have it?
+2	line	Swensen the Navigator	Have it? Just like that? I think not outerlander. This map shows all of the prime fishing locations nearby.
+2	line	Swensen the Navigator	It is very valuable to our clan. I am afraid I can not just give it away.
+2	line	Player	Perhaps I can trade you something for it?
+2	line	Swensen the Navigator	A trade? For a map of the best fishing spots in a hundred leagues? I will trade it for no less than a weather forecast from our Seer.
+2	line	Swensen the Navigator	As a navigator, the weather is extremely important for plotting the best course. Unfortunately the Seer is always too busy to help me with a forecast.
+2	line	Player	Where could I get a weather forecast from then?
+2	line	Swensen the Navigator	I just told you: from the Seer. You will need to persuade him to take the time to make a forecast somehow.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Swensen again
+1	line	Player	Hello!
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Swensen the Navigator	Greetings outerlander.
+2	line	Player	I don't suppose you have any idea where I could find a weather forecast from the Fremennik Seer do you?
+2	line	Swensen the Navigator	Uh... from the Seer perhaps?
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Peer the Seer's favour
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a weather forecast from the Fremennik Seer do you?
+2	line	Peer the Seer	Er.... Yes, because I AM the Fremennik Seer.
+2	line	Player	Can I have a weather forecast then please?
+2	line	Peer the Seer	You require a divination of the weather? This is a simple matter for me, but I will require something in return from you for this small service.
+2	line	Player	I knew you were going to say that...
+2	line	Peer the Seer	Do not fret, outerlander; it is a fairly simple matter. I require a bodyguard for protection. Find someone willing to offer me this service.
+2	line	Player	That's all?
+2	line	Peer the Seer	That is all.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Peer the Seer again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a brave and powerful warrior to act as a bodyguard?
+2	line	Peer the Seer	If I did, then I would simply have asked them myself now, wouldn't I, outerlander?
+2	action	end
+1	option	Ask about becoming a Fremennik
+0	section	Convincing Thorvald to be a bodyguard
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a brave and powerful warrior to act as a bodyguard?
+2	line	Thorvald the Warrior	Know you not who I am outerlander? There are none more brave or powerful than me amongst all the Fremennik!
+2	line	Thorvald the Warrior	However... The role of bodyguard is below me, as a noble warrior. You might as well ask me to babysit the children!
+2	line	Player	Is there no way you would do this for me?
+2	line	Thorvald the Warrior	There is but one way outerlander. Since I was steeled in battle, I have dreamt of earning my place at the Champions Table in the Long Hall.
+2	line	Thorvald the Warrior	It is a tradition amongst us that the bravest and strongest are honoured with a table of champions to drink and feast all that they can in our Long Hall.
+2	line	Thorvald the Warrior	Unfortunately, there are only a fixed number of places available at the table, and these places were all filled many moons ago by others.
+2	line	Thorvald the Warrior	Although my worthiness is undeniable, the only way I may take my place is if one of those already there die, or give up their place to me voluntarily.
+2	line	Player	So you want me to go kill one of them off for you? Make it look like an accident?
+2	line	Thorvald the Warrior	WHAT? No, no, not at all! I am shocked you would suggest such a thing!
+2	line	Thorvald the Warrior	If you can persuade one of the Revellers to give up their Champions' Token to you so that I might take their place, you may have my contract as a bodyguard.
+2	line	Player	Okay, I'll see what I can do.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thorvald again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a Champions' Token?
+2	line	Thorvald	If you can persuade one of the Revellers to give up their Champions' Token to you so that I might take their place, you may have my contract as a bodyguard.
+2	action	end
+1	option	Ask about becoming a Fremennik
+0	section	Talking to Manni the Reveller
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a token to allow a seat at the champions table, do you?
+2	line	Manni the Reveller	As a matter of fact, I do. I have one right here. I earnt my place here at the longhall for surviving over 5000 battles and raiding parties.
+2	line	Manni the Reveller	Due to my contribution to the tribe, I am now permitted to spend my days here in the longhall listening to the epic tales of the bard, and drinking beer.
+2	line	Player	Cool. That sounds pretty sweet! So I guess you don't want to give it away?
+2	line	Manni the Reveller	I think it sounds better than it actually is outerlander. I miss my glory days of combat on the battlefield. And to tell you the truth, the beer here isn't great, and the bards' music is lousy.
+2	line	Manni the Reveller	I would happily give up my token if it were not for the one thing that keeps me here. Our barkeep is one of the best in the world, and has worked in taverns across the land.
+2	line	Manni the Reveller	When she was younger, she experimented a lot with her drinks, and invented a cocktail so alcoholic and tasty that it has become something of a legend to all who enjoy a drink.
+2	line	Manni the Reveller	Unfortunately, she decided that cocktails were not a suitable drink for Fremennik warriors, and vowed to never again make it.
+2	line	Manni the Reveller	I have been here every day since she returned, hoping that someday she might change her mind and I might try this legendary cocktail for myself. Alas, it has never come to pass...
+2	line	Manni the Reveller	If you can persuade her to make me her legendary cocktail, I will be happy to never let another drop of alcohol pass my lips, and will give you my champions token.
+2	line	Player	That's all?
+2	line	Manni the Reveller	That's all.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Manni again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find the longhall barkeeps' legendary cocktail, do you?
+2	line	Manni the Reveller	Uh... yes, the longhall barkeep has it. So could you get me my drink now please?
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thora
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find the longhall barkeeps' legendary cocktail, do you?
+2	line	Thora the Barkeep	How did you hear about that?!?!?
+2	line	Thora the Barkeep	I didn't think anybody knew about that... Well, it is true that in my younger years as a barkeep, I wandered the lands trying various alcoholic delicacies.
+2	line	Thora the Barkeep	Did you ever realise just how many different types of alcohol there are here in Gielinor? Lots!
+2	line	Thora the Barkeep	Well, anyway, I used a fusion of various drinks from all around the world to create the greatest cocktail ever made!
+2	line	Thora the Barkeep	Of course, when my wanderlust was gone, and I returned back to Rellekka to serve as barkeep here, I gave all that up.
+2	line	Player	But you still remember how to make it, right?
+2	line	Thora the Barkeep	Of course.
+2	line	Player	And you have all the ingredients here? I don't need to go chasing round the world for obscure ingredients to make it?
+2	line	Thora the Barkeep	No, I have them all here. Why?
+2	line	Player	Can you make me your legendary cocktail then?
+2	line	Thora the Barkeep	I would rather not; it is a reminder of a life I left behind when I came back.
+2	line	Player	Any way I could change your mind?
+2	line	Thora the Barkeep	You need this to become a Fremennik, right? Well, you seem okay for an outerlander, it would be a shame to see you fail. You know Askeladden?
+2	line	Player	That kid outside? Sure.
+2	line	Thora the Barkeep	He is nothing but a pest. He keeps sneaking in and stealing beer. I shudder to think what he will be like when he has passed his trial of manhood,
+2	line	Thora the Barkeep	and is allowed in here legitimately. If you can get him to sign a contract promising that he will NEVER EVER EVER darken my doorway here again, you get the drink.
+2	line	Player	Any idea how I can get him to do that?
+2	line	Thora the Barkeep	Knowing that little horror, he'll probably be willing to in exchange for some cash. You should go ask him yourself though.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thora again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?
+2	line	Thora the Barkeep	Well, as I say, you should talk to him about that. Knowing the little runt as I do though He'll probably do it for the cash.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Askeladden
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?
+2	line	Askeladden	What? I can't believe she asked you to get a written promise from me to stay out!
+2	line	Player	Yup, she really did.
+2	line	Askeladden	Awwwwwww.... but the longhall is just SO MUCH FUN! I'd live there if I could! I suppose you really need that promise to help become a Fremennik, huh?
+2	line	Player	Yeah, I really do...
+2	line	Askeladden	Well I'll tell you what buddy; As it's you, I'll give you that written promise. All I ask in return for it is a measly 5000 gold. What do you say?
+2	select	Select an option
+2	option	Yes
+3	line	Player	That's all you want in return? Sure thing. Here you go.
+3	cond	If the player does not have 5,000 gp:
+4	line	Player	...how embarrassing. I appear to be short...
+4	line	Askeladden	Trying to scam me, huh buddy? Well it won't work! You come back with the cash, or don't come back at all!
+4	action	end
+3	cond	If the player has 5,000 gp:
+4	cond	If the player's inventory is full:
+5	box	Your inventory is too full to accept the written promise.
+5	action	end
+4	cond	If the player has inventory space:
+5	action	
+5	line	Askeladden	Done, and done. Let me know if you got any more cash burning a hole in your pocket I can relieve you of, buddy.
+5	action	end
+2	option	No
+3	line	Player	I don't think so... That's really quite a lot of money...
+3	line	Askeladden	Hey, suit yourself buddy. You change your mind, the bank of Askeladden is open for deposits 24 hours a day! Eh-heh-heh-heh-heh.
+3	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Askeladden again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I thought you really liked the long hall?
+2	line	Askeladden	I do!
+2	line	Player	Then why did you sign this guarantee that you will never enter it again?
+2	line	Askeladden	Aha! It is because I am cunning! That guarantee says that Askeladden will never enter the longhall again! But when I have completed my Fremennik trials,
+2	line	Askeladden	and passed my trial of manhood, I will be given a new name, as is our custom, and will therefore not be Askeladden anymore! That guarantee isn't worth the paper it's written on!!
+2	line	Askeladden	You didn't think I would give up going to the longhall for only 5000 did you?
+2	line	Player	Knowing you, I guess I didn't.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Getting Thora's legendary cocktail
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hi! Can I please have one of your legendary cocktails now?
+2	line	Thora the Barkeep	What?!?! I can't believe you... Let me look at that... Askeladden would NEVER... Gosh. It looks legitimate.
+2	line	Thora the Barkeep	Here you go, on the house! You have made my life SO much easier! Knowing that little monster won't be bugging me in here all the time anymore!
+2	action	
+2	line	Thora the Barkeep	That little weasel will have to abide by this written promise that Askeladden can never ever enter the Longhall again! He can't get round this one!
+2	line	Player	Uh... yeah... yeah, you probably won't see someone called Askeladden coming in here...
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thora again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Thanks for making me this cocktail. Why don't you make them anymore normally?
+2	line	Thora the Barkeep	Ah... when I gave up my travels across the world many years back, to return to my expected role as longhall barkeep, as my mother, and her mother, were before me,
+2	line	Thora the Barkeep	I gave up a lot of the freedom I had found in the outside world. I know it is our custom to shun outerlanders and their ways, but I didn't find them as bad as the stories say.
+2	line	Thora the Barkeep	Sometimes I feel as though we Fremennik live in a prison that we have constructed for ourselves, and that WE are the outerlanders, out here on the edge of the world...
+2	line	Thora the Barkeep	I'm sorry, I think it is part of the job of Longhall barkeep to get philosophical about things ocassionally. I wish you all the best of luck with your trials, outerlander.
+2	line	Thora the Barkeep	When you have finished, perhaps you will come back here, and we can share a drink over tales of the outside world?
+2	line	Player	Thanks, I'd like that.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving Manni his legendary cocktail
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hey. I got your cocktail for you.
+2	line	Manni the Reveller	...It is true! The legendary cocktail! I have waited for this day ever since I first started drinking!
+2	line	Manni the Reveller	Here outerlander, you may take my token. I will happily give up my place at the longhalls table of champions just for a taste of this exquisite beverage!
+2	action	
+2	line	Player	It's just a drink...
+2	line	Manni the Reveller	No, it is an artform. A drink such as this should be appreciated, and admired. It is like a fine painting, or a tasteful sculpture.
+2	line	Manni the Reveller	If what I hear is true, then all other drinks become like unpalatable water in comparison to this!
+2	line	Player	I guess you're happy with the trade then!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Manni again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So it doesn't bother you at all that you just gave up your place here for one drink?
+2	line	Manni the Reveller	Ah, but it was not just any drink... It was the finest cocktail ever created! Now that I have tasted it, I need never drink again, for my tastebuds will never be so excited!
+2	line	Player	So it was nice?
+2	line	Manni the Reveller	It was... exquisite!
+2	line	Player	What did it taste of, then?
+2	line	Manni the Reveller	Mostly tomato juice.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving Thorvald his token
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I would like your contract to offer your services as a bodyguard.
+2	line	Thorvald the Warrior	Oh you would, would you outerlander? I have already told you, I will not demean myself with such a baby sitting job until I can sit in the Longhall with pride.
+2	line	Player	It's a good thing I have the Champions' Token right here then, isn't it?
+2	line	Thorvald the Warrior	Ah... well this is a different matter. With that token I can claim my rightful place as a champion in the Long hall!
+2	line	Thorvald the Warrior	Here outerlander, I can suffer the indignity of playing babysitter if it means that I can then revel with my warrior equals in the Long Hall afterwards!
+2	line	Thorvald the Warrior	Here outerlander, take this contract; I will fulfill it to my utmost.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Thorvald again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	You didn't take much persuading to 'lower' yourself to a bodyguard.
+2	line	Thorvald the Warrior	You misunderstand, outerlander. Normally I will only battle for a noble cause, but have never been recognised as a true champion here.
+2	line	Thorvald the Warrior	With this Champion's token, I can stand alongside my warrior brethren in the Long Hall, and revel in the glories of past victories together!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving Peer the Seer the bodyguard contract
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Can I have a weather forecast now please?
+2	line	Peer the Seer	I have already told you outerlander; You may have a reading from me when I have a signed contract from a warrior guaranteeing my protection.
+2	line	Player	Yeah, I know; I have one right here from Thorvald.
+2	line	Peer the Seer	You have not only persuaded one of the Fremennik to act as a servant to me, but you have enlisted the aid of mighty Thorvald himself???
+2	line	Peer the Seer	You may take this forecast with my blessing outerlander. You have offered me the greatest security I can imagine.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+1	option	Ask about depositing your equipment
+2	action	above
+0	section	Talking to Peer the Seer again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So, about this forecast...
+2	line	Peer the Seer	Yes, outerlander?
+2	line	Player	I still don't know why you didn't just let me have one anyway in the first place. Surely it means nothing to you?
+2	line	Peer the Seer	That is not true, outerlander. Although I see glimpses of the future all of the time, using my powers brings the attention of the gods to me.
+2	line	Peer the Seer	Some of the gods are spiteful and cruel, and I fear if I use my powers too much then I will meet with unpredictable accidents. This is why I needed protection.
+2	line	Player	Okay... I... think I understand...
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+1	option	Ask about depositing your equipment
+2	action	above
+0	section	Giving Swensen the forecast
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I would like your map of fishing spots.
+2	line	Swensen the Navigator	I have already told you outerlander; I will not exchange it for anything other than a divination on the weather from our seer himself!
+2	line	Player	What, like this one I have here?
+2	line	Swensen the Navigator	W-what...? I don't believe it! How did you...? I suppose it doesn't matter, you have my gratitude outerlander!
+2	line	Swensen the Navigator	With this forecast I will be able to plan a safe course for our next raiding expedition!
+2	line	Swensen the Navigator	Here, outerlander; you may take my map of local fishing patterns with my gratitude!
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Swensen again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	If this map of fishing spots is so valuable, why did you give it away to me so easily?
+2	line	Swensen the Navigator	Hmmm? Well, firstly it will be of value to our entire clan, so I have lost nothing from giving it to you.
+2	line	Swensen the Navigator	The other reason is of course that I have already memorised it, so I can make myself another copy whenever I want!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the Fisherman the map
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Here. I got you your map.
+2	line	Fisherman	Great work outerlander! With this, I can finally catch enough fish to make an honest living from it! Here, have the stupid rare fish.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Fisherman again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I don't see what's so special about this so called rare fish.
+2	line	Fisherman	Me neither, outerlander. That is why I gave it to you.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the fish to Skulgrimen
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hi there. I got your fish, so can I have that bowstring for Sigli now?
+2	line	Skulgrimen	Ohh... That's a nice fish. Very pleased. Here. Take the bowstring. You fulfilled agreement. only fair I do same. Good work outerlander.
+2	action	
+2	line	Player	Thanks!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Skulgrimen again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So about this bowstring... was it hard to make or something?
+2	line	Skulgrimen	Not hard. Just a trick to it. Takes skill to learn, but when learnt, easy. Sigli will be happy. Finest bowstring on continent. Will suit his needs perfectly.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the bowstring to Sigli
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Sigli the Huntsman	Greetings outerlander.
+2	line	Player	Here. I have your bowstring. Give me your map to the hunting grounds.
+2	line	Sigli the Huntsman	Well met, outerlander. I see some hunting potential within you. Here, take my map, I was getting too dependent on it for my skill anyway.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Sigli again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So you really don't mind giving this away to me?
+2	line	Sigli the Huntsman	No outerlander... it is hard to explain. That map makes my role as huntsman too easy. I fear my skills are becoming dulled. Now I must track my prey once more.
+2	line	Sigli the Huntsman	To begin again from scratch... I feel this may keep me sharp.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the map to Brundt
+1	line	Brundt the Chieftain	Greetings again outerlander! How goes your attempts to gain votes with the council of elders?
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	I got Sigli's hunting map for you.
+2	line	Brundt the Chieftain	Excellent work outerlander! And so quickly, too! Here, you may take my financial report promising reduced sales taxes on all goods.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+0	section	Talking to Brundt again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So cutting sales tax isn't going to ruin your economy here or anything?
+2	line	Brundt the Chieftain	Not at all outerlander; now that we have Sigli's map we can increase the amount of hunts we run, and make up any shortfall that way.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the fiscal statement to Yrsa
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hello. Can I have those boots now? Here is a written statement from Brundt outlining future tax burdens upon Fremennik merchants and shopkeepers for the year.
+2	line	Yrsa	Certainly! Let me have a look at what he has written here, just give me a moment...
+2	action	
+2	line	Yrsa	Yes, that all appears in order. Tell Olaf to come to me next time for shoes!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Yrsa again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hey, these shoes look pretty comfy. Think you could make me a pair like them?
+2	line	Yrsa	Maybe if you pass your trial and become a full fledged member of the Fremennik...
+2	action	end
+1	option	Ask about becoming a Fremennik
+1	action	above
+0	section	Giving the boots to Olaf
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	Hello Olaf. Do you have a beautiful love song written for me?
+2	line	Olaf the Bard	That depends outerlander... Do you have some new boots for me? My feet get so tired roaming the land...
+2	line	Player	As a matter of fact - I do!
+2	action	
+2	line	Olaf the Bard	Oh! Superb! Those are great! They're just what I was looking for! Here, take this song with my compliments! It is one of my finest works yet!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to Olaf again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	So you think this song is pretty good then?
+2	line	Olaf the Bard	Ahhh.... outerlander... it is the most beautiful romantic ballad I have ever been inspired to write...
+2	line	Olaf the Bard	Only a woman with a heart of icy stone could fail to be moved by its beauty!
+2	line	Player	Thanks! That sounds perfect!
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+1	cond	If the player attempts to use the ballad on the Ice Queen:
+2	action	end
+0	section	Giving the ballad to the Sailor
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	You'll be glad to know I have had a love song written just for you by Olaf. So can I have that flower of yours now?
+2	line	Sailor	Oh. It's by Olaf? Hmm. Well, a deal's a deal. I just hope it's better than the usual rubbish he comes up with, or my chances are worse than ever.
+2	action	
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Talking to the Sailor again
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	line	Player	so tell me... who is this woman that you are trying to impress anyway?
+2	line	Sailor	It's Thora, the longhall barkeep. Please don't tell her though. She's not like the rest of the Fremennik girls, she has a secret desire to see the world.
+2	line	Sailor	Being a sailor, I can really relate to that.
+2	action	end
+1	option	Ask about becoming a Fremennik
+2	action	above
+0	section	Giving the flowers to Sigmund
+1	line	Player	Hello there!
+1	line	Player	Here's that flower you wanted.
+1	line	Sigmund The Merchant	Incredible! Your merchanting skills might even match my own! I have no choice but to recommend you to the council of elders!
+1	action	end
+0	section	Subsequent dialogue with Sigmund
+1	line	Player	Hello there!
+1	line	Sigmund The Merchant	Hello again outerlander! I am amazed once more at your apparent skill at merchanting!
+1	line	Player	So I can count on your vote at the council of elders?
+1	line	Sigmund The Merchant	Absolutely, outerlander. Your merchanting skills will be a real boon to the Fremennik.
+1	action	end
+0	section	Thorvald the Warrior
+1	line	Player	Hello!
+1	line	Thorvald the Warrior	Hello yourself, outerlander. What brings you to dare speak to a mighty Fremennik warrior such as myself?
+1	line	Player	Erm... are you a member of the council?
+1	line	Thorvald the Warrior	The Fremennik council of elders? Why, of course I am. I am recognised as one the clans mightiest warriors. What is it to you outerlander?
+1	line	Player	Well... I was wondering if you could vote for me to become a Fremennik.
+1	line	Thorvald the Warrior	An outerlander wishes to become a Fremennik!?!? Ha! That is priceless!
+1	line	Thorvald the Warrior	Well, let us say that I am not totally against this concept. As a warrior, I appreciate the value of brave and powerful warriors to our clan,
+1	line	Thorvald the Warrior	and even though you may be an outerlander, I will not hold this against you if you can prove yourself to be fierce of heart in a combat situation to me.
+1	line	Player	So how can I prove that? You want to fight me? Come on then, bring it on! Right here, right now, buddy!
+1	line	Thorvald the Warrior	Hahahahaha! You certainly show some spirit for an outerlander!
+1	line	Thorvald the Warrior	But spirit does not always make a good warrior. It takes both skill and spirit to be so. I have a test that I give all Fremenniks on their path to be a member of the clan.
+1	line	Thorvald the Warrior	My test will challenge both your combat prowess and your bravery equally. Should you pass it you will earn my vote at the council, and more importantly my respect for you as a warrior.
+1	line	Thorvald the Warrior	So what say you, outerlander? Are you prepared for the battle?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Am I prepared? I'll show you what combat's all about, you big sissy barbarian type guy!
+2	line	Thorvald the Warrior	Hahahahaha! I'm beginning to like you already, outerlander!
+2	line	Thorvald the Warrior	Then allow me to present you with my challenge; This ladder here will take you to a place of combat. I have placed a special warrior down there to challenge you.
+2	line	Thorvald the Warrior	Battle him to the death, and you will pass my challenge. If at any point you wish to leave combat, simply climb back up the ladder, to leave that place.
+2	line	Thorvald the Warrior	If you leave you will of course fail the test. You may retry my test in the future if you fail, but you must stay down there until the death if you wish for my vote at the council.
+2	line	Thorvald the Warrior	You must defeat him three times to prove that you are worthy. The fourth time that you fight him will be to the death, so do not show cowardice.
+2	line	Player	Is that all? It will be easy!
+2	line	Thorvald the Warrior	No, there is one more important rule;
+2	line	Thorvald the Warrior	You may not enter the battleground with any armour or weaponry of any kind.
+2	line	Thorvald the Warrior	If you need to place your equipment into your bank account, I recommend that you speak to the seer, who knows a spell that will do that for you.
+2	action	end
+1	option	No
+2	line	Player	No thanks, I'm pretty sure that I can find someone else to vote for me.
+2	line	Thorvald the Warrior	Hmm, not so brave after all, outerlander? Perhaps it is for the best. I doubt you have what it takes to pass my challenge.
+2	action	end
+0	section	Talking to Thorvald again
+1	select	Select an option
+1	option	What do I have to do again?
+2	line	Player	So what do I have to do to earn your vote at the council again?
+2	line	Thorvald the Warrior	I will not offer my vote to anybody whose bravery in combat I do not trust completely. You must go down that ladder and fight your foe to the death.
+2	action	end
+1	option	Who is my opponent?
+2	line	Player	So, who is my opponent?
+2	line	Thorvald the Warrior	Ah, a wise question before entering combat. His name is Koschei the deathless. He is something of a mystery, even to us.
+2	line	Thorvald the Warrior	On one of our regular raiding parties, our longship discovered a man in the frozen waters far north-east of here. We took him aboard our ship, thinking he must be dead.
+2	line	Thorvald the Warrior	To our amazement he was perfectly healthy, even though he must have been in those deadly icy waters for many weeks.
+2	line	Thorvald the Warrior	He has no memory of who he is, or how he came to be there, except for his own name: Koschei. We named him 'The Deathless' because he is seemingly unkillable!
+2	line	Thorvald the Warrior	Any combat technique used against him, he learns instantly! He also apparently can heal himself from any wound at will! When he attacks, his weapon moves like a whirlwind!
+2	line	Thorvald the Warrior	He can hide his combat level from his opponents at will as well! He is truly a horribly fierce opponent to face! I am only glad that he has chosen to stay here with us!
+2	line	Thorvald the Warrior	The daylight makes him feel weak, so we have built him his own battleground beneath this building, where he can train his fiercesome skills without being disturbed.
+2	line	Player	But he can't REALLY be unkillable... ...can he?
+2	line	Thorvald the Warrior	Some say he cannot die, for he has hidden his heart outside of his body to be kept forever safe in a duck egg.
+2	line	Thorvald the Warrior	Others say he has been cursed by the gods to wander this land forever, never knowing any peace in his life, but only combat.
+2	line	Thorvald the Warrior	Some claim that the sword he carries is the source of all his power, and if he should lose it, then exactly one minute later, he will turn back into his true form;
+2	line	Thorvald the Warrior	A weakened, lame, old man.
+2	line	Player	And what do you believe?
+2	line	Thorvald the Warrior	I believe you shouldn't look a gift horse in the mouth. He is a fearfully powerful warrior, but more importantly; He is on OUR side, not against us.
+2	line	Thorvald the Warrior	He is content testing the battle skills of anyone taking their Fremennik trials of manhood, and I am content knowing that should an enemy ever invade our town,
+2	line	Thorvald the Warrior	while our warriors are out on a raiding party, Koschei will be able to hold off ANY invader long enough for us to make our return.
+1	option	Can't I do something else?
+2	line	Player	I don't really like fighting that much... Isn't there something else I can do to earn your vote at the council of elders?
+2	line	Thorvald the Warrior	Yes of course outerlander! If you bring me five raw sardines then I will vote for you instead!
+2	line	Player	REALLY?!?!?
+2	line	Thorvald the Warrior	HAHAHAHAHAHA! No, of course not! You are stupid, even by outerlander standards!
+2	line	Thorvald the Warrior	If you want my vote, you must pass my trial. It is as simple as that.
+2	action	end
+1	cond	If the player attempts to use a raw sardine on Thorvald:
+2	line	Thorvald the Warrior	I was only joking about the raw sardines outerlander.
+2	line	Player	Oh. Really? Oh. So I have to pass your combat trial?
+2	line	Thorvald the Warrior	Yes.
+2	action	end
+0	section	Peer the Seer
+1	select	Select an option
+1	option	Ask about the Merchant's trial
+2	action	above
+1	option	Ask about becoming a Fremennik
+2	action	above
+1	option	Ask about depositing your equipment
+2	line	Player	Hello there! Thorvald tells me you can deposit my equipment directly into my bank account for me...?
+2	line	Peer the Seer	That is correct outerlander, but you will need to go and retrieve your equipment from your bank account yourself, manually.
+2	line	Peer the Seer	Alas, my spell is not very accurate, so it will deposit everything you have upon you into your bank, not just your armour and weapons.
+2	select	Select an option
+2	option	Bank your equipment
+3	line	Player	Yes, please deposit my equipment.
+3	cond	If the player's bank is full or if the player has unbankable items (e.g. a Lamp or experience tome):
+4	line	Peer the Seer	I am sorry outerlander, the spell is not working.
+4	action	end
+3	cond	If the player's bank is not full:
+4	action	Peer the seer banks all of the player's contents from their inventory and worn equipment.
+4	line	Peer the Seer	The task is done. I wish you luck with your test, outerlander.
+4	action	end
+2	option	Don't bank your equipment
+3	line	Player	No thanks, I'll just go to the bank and sort my inventory out myself.
+3	action	end
+0	section	Entering the arena
+1	cond	If the player has any weapons or armour before entering the arena:
+2	line	Thorvald the Warrior	You may not enter the battleground with any armour or weaponry of any kind.
+2	line	Thorvald the Warrior	If you need to place your equipment into your bank account, I recommend that you speak to the seer, who knows a spell that will do that for you.
+2	action	end
+1	cond	If the player does not have any weapons or armour before entering the arena:
+2	action	The person goes into the dungeon.
+2	action	end
+0	section	During the fight
+1	cond	If the player enters the arena:
+2	action	end
+1	cond	If the player attempts to attack another player's Koschei:
+2	action	end
+1	cond	If the player fails to defeat Koschei in his third/fourth phase in 10 minutes:
+2	action	end
+0	section	Second phase
+1	action	Koschei yells a random dialogue listed below.
+1	cond	At the beginning of the second phase:
+2	line	Koschei the deathless	It seems you have some idea of combat after all, outerlander! I will not hold back so much this time!
+0	section	Third phase
+1	action	Koschei yells a random dialogue listed below.
+1	cond	At the start of the third phase:
+2	line	Koschei the deathless	Impressive start... But now we fight for real!
+0	section	Fourth phase
+1	cond	At the start of the fourth phase:
+2	line	Koschei the deathless	You show some skill at combat... I will hold back no longer! This time you lose your prayer however, and fight like a warrior!
+2	action	The player's prayer points drop to 0.
+2	action	end
+1	cond	If the player attempts to drink a prayer potion:
+2	action	The player's prayer quickly depletes to 0.
+2	action	end
+1	cond	If the player is nearly dead at 1 hitpoint:
+2	action	continue
+1	cond	If the player is able to defeat Koschei in his 4th form:
+2	action	end
+1	cond	If the player attempts to wield the blade during the quest:
+2	action	end
+0	section	Koschei's random dialogue
+1	option	Dialogue 1
+2	line	Koschei the deathless	Prepare to die, {player}!
+1	option	Dialogue 2
+2	line	Koschei the deathless	I will crush your dead bones!
+1	option	Dialogue 3
+2	line	Koschei the deathless	Outerlander... you have made a mistake coming down here!
+1	option	Dialogue 4
+2	line	Koschei the deathless	What kind of a person calls [him/her]self {player}?
+1	option	Dialogue 5
+2	line	Koschei the deathless	You have no idea of my true power, outerlander!
+1	option	Dialogue 6
+2	line	Koschei the deathless	Today is the day you die, outerlander!
+1	option	Dialogue 7
+2	line	Koschei the deathless	{player}! Meet your doom!
+1	option	Dialogue 8
+2	line	Koschei the deathless	Prepare to face my power, outerlander!
+0	section	After defeating Koschei
+0	section	Talking to Thorvald
+1	cond	If the player does not manage to defeat Koschei's fourth phase:
+2	line	Thorvald the Warrior	Hahaha! Well fought outerlander! Now come down from there, you have passed my trial with flying colours!
+2	line	Player	But... I don't understand... I did not manage to beat Koschei...
+2	line	Thorvald the Warrior	I would be honoured to represent you to the council as worthy of being a Fremennik after watching that superb battle!
+2	action	end
+1	cond	If the player manages to defeat Koschei:
+2	line	Player	So can I count on your vote at the council of elders now Thorvald?
+2	line	Thorvald the Warrior	Absolutely! I watched the entire battle, and was extremely impressed with your bravery in combat!
+2	action	end
+0	section	Attempting to climb down the stairs again
+1	line	Player	I'd really rather not go back down there again, now that I have Thorvald's vote at the council of elders.
+1	action	end
+0	section	Peer the Seer's Trial
+1	line	Peer the Seer	Hello outerlander. What do you want?
+1	line	Player	Hello. I'm looking for members of the council of elders to vote for me to become a Fremennik.
+1	line	Peer the Seer	Are you now? Well that is interesting. Usually outerlanders do not concern themselves with our ways like that.
+1	line	Peer the Seer	I am one of the members of the council of elders, and should you be able to prove to me that you have something to offer my clan
+1	line	Peer the Seer	I will vote in your favour at the next meeting.
+1	line	Player	How can I prove that to you?
+1	line	Peer the Seer	Well, I have but a simple test. This building behind me is my house. Inside I have constructed a puzzle.
+1	line	Peer the Seer	As a Seer to the clan, I value intelligence very highly, so you may think of it as an intelligence test of sorts.
+1	line	Player	An intelligence test? I thought barbarians were stupid!
+1	line	Peer the Seer	That is the opinion that outerlanders usually hold of my people, it is true. But that is because people often confuse knowledge with wisdom.
+1	line	Peer the Seer	My puzzle tests not what you know, but what you can work out. All members of our clan have been tested when they took their trials.
+1	line	Player	So what exactly does this puzzle consist of, then?
+1	line	Peer the Seer	Well, firstly you must enter my house with no items, weapons or armour. Then it is a simple matter of entering through one door and leaving by the other.
+1	line	Player	I can't take anything in there with me?
+1	line	Peer the Seer	That is correct outerlander. Everything you need to complete the puzzle you will find inside the building. Nothing more.
+1	line	Peer the Seer	So what say you outerlander? You think you have the wit to earn yourself my vote?
+1	select	Select an option
+1	option	Yes
+2	line	Player	Yes, I accept your challenge. I have one small question, however...
+2	line	Peer the Seer	Yes, outerlander?
+2	line	Player	Well... you say I can bring nothing with me when I enter your house...
+2	line	Peer the Seer	Yes, outerlander?
+2	line	Player	Well.....
+2	line	Peer the Seer	Yes, outerlander?
+2	line	Player	Where is the nearest bank?
+2	line	Peer the Seer	Ah, I see your problem outerlander. The nearest bank to here is the place known to outerlanders as the Seers Village. It is some way South.
+2	line	Peer the Seer	I do however have an alternative, should you wish to take it.
+2	line	Player	And what is that?
+2	line	Peer the Seer	I can store all the weapons, armour and items that you have upon you directly into your bank account.
+2	line	Peer the Seer	This will tax what little magic I possess however, so you will have to manually travel to the bank to withdraw them again.
+2	line	Peer the Seer	What say you outerlander? you wish me to do this for you?
+2	select	Select an option
+2	option	Yes
+3	line	Player	Yes, thank you!
+3	action	The player's items in their inventory and worn items are deposited into their bank.
+3	line	Peer the Seer	The task is done. I wish you luck with your test, outerlander.
+3	action	end
+2	option	No
+3	line	Player	No thanks. Nobody touches my stuff but me!
+3	line	Peer the Seer	As you wish, outerlander.
+3	line	Peer the Seer	You may attempt my little task when you have deposited your equipment in the bank.
+2	action	end
+1	option	No
+2	line	Player	No, thinking about stuff isn't really my 'thing'. I'd rather go kill something. I'll find someone else to vote for me.
+2	line	Peer the Seer	As you wish, outerlander.
+2	action	end
+0	section	Talking to Peer the Seer again
+1	cond	If the player has items in their inventory and/or wearing any armour:
+2	line	Player	So I can bring nothing with me when I enter your house?
+2	line	Peer the Seer	That is correct outerlander, but as I say, I can use my small skill in magic to send your items directly into your bank account from here.
+2	line	Peer the Seer	You will need to manually go to the bank to withdraw them again however. Would you like me to perform this small spell upon you, outerlander?
+2	select	Select an option
+2	option	Yes
+3	action	above
+2	option	No
+3	action	above
+1	cond	If the player does not have any items in their inventory or in their worn slots:
+2	line	Player	So I just have to enter by one door of your house, and leave by the other?
+2	line	Peer the Seer	That is correct outerlander. Be warned it is not as easy as it may at first sound...
+2	action	end
+0	section	The Riddle
+1	cond	If the player enters Peer the Seer's house on the east side:
+2	action	end
+1	cond	If the player enters Peer the Seer's house on the west side:
+2	box	There is a combination lock on this door. Above the lock you can see that there is a metal plaque with a riddle on it.
+2	select	What would you like to do?
+2	option	Read the riddle
+3	option	Riddle 1
+4	box	My first is in the well, but not at sea. My second in 'I', but not in 'me'. My third is in flies, but insects not found. My last is in earth, but not in the ground.
+4	box	My whole when stolen from you, causes you death. What am I?
+3	option	Riddle 2
+4	box	My first is in water, and also in tea. My second in fish, but not in the sea. My third in mountains, but not underground. My last is in strike, but not in pound.
+4	box	My whole crushes mountains, drains rivers, and destroys civilisations. All that live fear my passing. What am I?
+3	option	Riddle 3
+4	box	My first is in mage, but not in wizard. My second in goblin, and also in lizard. My third in night, but not in the day. My last is in fields, but not in the hay.
+4	box	My whole is the most powerful tool you will possess. What am I?
+3	option	Riddle 4
+4	box	My first is in tar, but not in a swamp. My second in fire, but not in a camp. My third is in eagle, but never in air. My last is in hate, but also in care.
+4	box	My whole wears rings the older I get. What am I?
+3	option	Riddle 5
+4	box	My first is in fish, but not in the sea. My second in birds, but not in the sea. My third is in mountains, but not underground. My last is everything, but not at all.
+4	box	My whole cannot die as long as it has food. What am I?
+3	option	Riddle 6
+4	box	My first is in wizard, but not in a mage. My second in jail, but not in a cage. My third is in anger, but not in a rage. My last in a drawing, but not on a page.
+4	box	My whole helps to make bread, let birds fly and boats sail. What am I?
+3	cond	If the player fails to solve the puzzle:
+4	action	end
+3	cond	If the player solves the riddle:
+4	action	end
+2	option	Solve the riddle
+3	cond	If the player enters the wrong code:
+4	action	above
+3	cond	If the player enters the correct code:
+4	action	above
+2	option	Forget it
+3	action	end
+1	cond	If the player enters the door and attempts to leave:
+2	box	If you leave by this door you will fail this trial. Press continue to go through the door anyway.
+2	cond	If the player presses continue:
+3	action	All of the items gathered in the room are gone.
+3	action	end
+2	cond	If the player clicks anywhere else in the house:
+3	action	The puzzle resumes.
+3	action	end
+0	section	The Puzzle Room
+1	cond	If the player searches the chest to the east:
+2	action	
+2	action	end
+1	cond	If the player searches the chest again:
+2	action	end
+1	cond	If the player searches the bull's head:
+2	box	You notice there is something unusual about the right eye of this bulls' head...
+2	box	It is not an eye at all, but some kind of disk made of wood. You take it from the head.
+2	action	
+2	action	end
+1	cond	If the player searches the bull's head again:
+2	box	You notice there is something unusual about the right eye of this bulls' head...
+2	action	end
+1	cond	If the player searches the unicorn's head:
+2	box	You notice there is something unusual about the left eye of this unicorn head...
+2	box	It is not an eye at all, but some kind of red coloured disk. You take it from the head.
+2	action	
+2	action	end
+1	cond	If the player searches the unicorn's head again:
+2	box	You notice there is something unusual about the left eye of this unicorn head...
+2	action	end
+1	cond	If the player searches the cupboard:
+2	action	
+2	action	end
+1	cond	If the player searches the cupboard again:
+2	action	end
+1	cond	If the player searches the chest to the north:
+2	box	This chest is securely locked shut. There is some kind of balance attached to the lock, and a number four is painted just above it.
+2	action	end
+1	cond	If the player searches the bookcase to the north-west:
+2	action	
+2	action	end
+1	cond	If the player searches the bookcase to the north-west again:
+2	action	end
+1	cond	If the player searches the bookcase to the north-east:
+2	action	end
+1	cond	If the player searches the chest to the south:
+2	action	end
+1	cond	If the player searches the boxes to the south-west:
+2	action	
+2	action	end
+1	cond	If the player searches the boxes to the south-west again:
+2	action	end
+1	cond	If the player searches the boxes to the south-east:
+2	action	end
+1	cond	If the player searches the crate to the south-east:
+2	action	
+2	action	end
+1	cond	If the player searches the crate to the south-east:
+2	action	end
+1	cond	If the player searches the crate to the east:
+2	action	
+2	action	end
+1	cond	If the player searches the crate to the east again:
+2	action	end
+1	cond	If the player searches the boxes to the east:
+2	action	
+2	action	end
+1	cond	If the player searches the boxes to the east:
+2	action	end
+0	section	Interacting with the puzzle pieces and scenery
+1	cond	If the player uses the empty bucket or jug on the tap:
+2	action	
+2	action	end
+1	cond	If the player uses the full jug on the empty bucket:
+2	action	
+2	action	end
+1	cond	If the player uses the full bucket on the empty jug:
+2	action	
+2	action	end
+1	cond	If the player uses the 2/5ths full bucket into the empty jug:
+2	action	
+2	action	end
+1	cond	If the player uses the full jug on a partially full bucket:
+2	cond	If the bucket was 3/5ths full:
+2	action	
+2	action	end
+1	cond	If the player uses the 1/3rd full jug on the empty bucket:
+2	action	
+2	action	end
+1	cond	If the player uses the full jug on the 1/5ths full bucket:
+2	action	
+2	action	end
+1	cond	If the player uses the full jug or full bucket on the drain:
+2	action	
+2	action	end
+1	cond	If the player uses the red herring on the stove:
+2	box	As you cook the herring on the stove, the colouring on it peels off separately as a red sticky goop...
+2	action	
+2	action	end
+1	cond	If the player uses the sticky red goop on the wooden disk:
+2	action	
+2	action	end
+1	cond	If the player uses the full jug or an empty bucket on the locked chest with the scale:
+2	action	end
+1	cond	If the player uses the full bucket on the locked chest with the scale:
+2	action	end
+1	cond	If the player uses the 4/5ths full bucket on the chest:
+2	action	
+2	action	end
+1	cond	If the player shakes the vase:
+2	box	The v should be lowercase}}. From the sound of it there is something metallic inside, but the neck of the vase is too narrow for it to come out.
+2	action	end
+1	cond	If the player uses the vase on the tap:
+2	action	
+2	action	end
+1	cond	If the player shakes the vase whilst filled with water:
+2	box	The v should be lowercase}}. The water inside it sloshes around a little. Some spills out of the neck of the vase.
+2	action	end
+1	cond	If the player uses the filled vase on the drain:
+2	action	
+1	cond	If the player uses the filled vase on the frozen table:
+2	action	
+2	action	end
+1	cond	If the player uses the frozen key on the range:
+2	action	
+2	action	end
+1	cond	If the player uses the Seer's key on the locked door downstairs:
+2	action	continues
+0	section	"Red herring" interactions
+1	cond	If the player uses the magnet on the chest:
+2	action	end
+1	cond	If the player uses the small pick on the locked chest:
+2	action	end
+1	cond	If the player uses the small pick on the vase:
+1	cond	If the player uses the toy ship on the vase:
+2	action	end
+1	cond	If the player uses the magnet on the vase:
+2	action	end
+1	cond	If the player uses the empty jug or bucket on the frozen table:
+2	action	end
+1	cond	If the player uses a full jug or bucket on the frozen table:
+2	action	
+2	action	end
+1	cond	If the player uses a frozen jug or bucket on the stove:
+2	action	
+2	action	end
+1	cond	If the player uses a magnet on the frozen table:
+2	action	end
+1	cond	If the player uses the magnet on the tap:
+2	action	end
+1	cond	If the player uses the vase on the frozen table:
+2	action	end
+1	cond	If the player uses the vase on the drain:
+2	action	end
+1	cond	If the player uses the lid on the empty vase:
+2	action	
+1	cond	If the player uses the sealed vase without water on the frozen table:
+2	action	end
+1	cond	If the player uses the filled vase on the frozen table:
+2	action	
+2	action	end
+1	cond	If the player shakes the frozen vase:
+2	box	You shake the strangely shaped Vase. Whatever is at the bottom of it is packed with ice and does not rattle.
+2	action	end
+1	cond	If the player uses the small pick on the frozen vase:
+2	action	end
+1	cond	If the player uses the vase lid on the frozen vase:
+2	action	end
+1	cond	If the player uses the frozen vase on the range:
+2	action	
+2	action	end
+1	cond	If the player uses the small pick on the frozen key:
+2	action	end
+0	section	Finishing the abstract mural
+1	cond	If the player studies the abstract mural:
+2	action	end
+1	cond	If the player uses the wooden disk in the mural:
+2	action	end
+1	cond	If the player uses the old red disk in the mural:
+2	action	end
+1	cond	If the player uses the red disk in the mural:
+2	cond	If the player also placed the old red disk in the mural:
+3	action	
+3	action	end
+0	section	Unlocking the door
+1	line	Peer the Seer	Incredible! To have solved my puzzle so quickly! I have no choice but to vote in your favour!
+1	action	end
+0	section	Talking to Peer the Seer again
+1	line	Player	So you will vote for me at the council?
+1	line	Peer the Seer	Absolutely, outerlander. Your wisdom in passing my test marks you as worthy in my eyes.
+1	action	end
+0	section	Swensen's Trial
+0	section	Attempting to climb down the ladder or trapdoor before accepting the challenge
+1	line	Swensen the Navigator	Have you no manners outerlander? This is my home, you will show me the due respect!
+1	line	Player	Erm.... sorry I guess.
+1	action	end
+0	section	Talking to Swensen
+1	line	Player	Hello!
+1	line	Player	I am trying to become a member of the Fremennik clan! The Chieftain told me that I may be able to gain your vote at the council of elders?
+1	line	Swensen the Navigator	You wish to stop being an outerlander? I can understand that! I have no reason why I would prevent you becoming a Fremennik...
+1	line	Swensen the Navigator	...but you must first pass a little test for me to prove you are worthy.
+1	line	Player	What kind of test?
+1	line	Swensen the Navigator	Well, I serve our clan as a navigator. The seas can be a fearful place when you know not where you are heading.
+1	line	Swensen the Navigator	Should something happen to me, all members of our tribe have some basic sense of direction so that they may always return safely home.
+1	line	Swensen the Navigator	If you are able to demonstrate to me that you too have a good sense of direction then I will recommend you to the rest of the council of elders immediately.
+1	line	Player	Well, how would I go about showing that?
+1	line	Swensen the Navigator	Ah, a simple task! Below this building I have constructed a maze; should you be able to walk from one side to the other that will be proof to me.
+1	line	Swensen the Navigator	You wish to try my challenge?
+1	select	Select an option
+1	option	Yes
+2	line	Player	A maze? Is that all? Sure, it sounds simple enough.
+2	line	Swensen the Navigator	I will warn you outerlander, this maze was designed by myself, and is of the most fiendish complexity!
+2	line	Player	Oh really? Watch and learn...
+2	action	end
+1	option	No
+2	line	Player	No thanks. I think I can get someone else to vouch for me to the council of elders, without going through a stupid maze like some lab rat.
+2	line	Swensen the Navigator	Well, I am sorry you feel that way outerlander. I cannot vouch for you until you prove to me you have some skill that will benefit our clan somehow.
+2	line	Swensen the Navigator	What exactly is a 'lab rat' anyway?
+2	line	Player	Ah, forget it.
+2	action	end
+0	section	Talking to Swensen again
+1	line	Player	Hello!
+1	line	Player	Man, your maze is pretty tough!
+1	line	Swensen the Navigator	Hahahaha it is the most complex route I have ever devised! I am truly a genius at navigation! The world will remember my name!
+1	line	Player	Can't I do something else for your vote at the council of elders?
+1	line	Swensen the Navigator	No, you cannot. It is my maze, or nothing.
+1	action	end
+0	section	Entering the maze
+1	cond	If the player attempts to enter through any of the trapdoors:
+2	box	You try to open the trapdoor but it won't budge! It looks like the trapdoor can only be opened from the other side.
+2	action	end
+1	cond	If the player climbs down the ladder:
+2	action	continue
+0	section	Whilst inside the maze
+1	cond	If the player leaves through the escape rope:
+2	line	Swensen the Navigator	Decided you could not solve my labyrinth after all, did you outerlander? Too tricky for you?
+2	line	Player	Yeah, it is really confusing down there...
+2	line	Swensen the Navigator	Hahaha! Don't worry outerlander, you are not the first to fail its puzzle!
+1	action	end
+1	cond	If the player climbs up the stairs in the north-western portal room:
+2	line	Swensen the Navigator	Outerlander! You have finished my maze! I am genuinely impressed!
+2	line	Player	So does that mean I can rely on your vote at the council of elders to allow me into your village?
+2	line	Swensen the Navigator	Of course outerlander! I am nothing if not a man of my word!
+2	line	Player	Thanks!
+2	action	end
+0	section	Talking to Swensen again
+1	line	Swensen the Navigator	Greetings again outerlander! I must say, I am still impressed with the way you moved through my maze!
+1	line	Player	Thanks. So I can rely on your vote in my favour at the council of elders?
+1	line	Swensen the Navigator	Absolutely! You will be an asset to the clan!
+1	action	end
+1	cond	If the player attempts to climb down into the maze again:
+2	line	Player	No way am I doing that maze again!
+2	action	end
+0	section	Talking to Brundt
+1	line	Brundt the Chieftain	Greetings again outerlander! How goes your attempts to gain votes with the council of elders?
+1	cond	If the player has not gotten only one vote:
+2	line	Player	I only have 1 vote so far.
+2	line	Brundt the Chieftain	Hmmm... well that is certainly a good start I would say. Keep up the good work!
+2	action	continue
+1	cond	If the player has gotten 2-6 votes:
+2	line	Player	I only have [2-6] votes so far.
+2	line	Brundt the Chieftain	Hmmm... you are doing very well so far, outerlander. Keep up the good work!
+2	action	continue
+1	line	Brundt the Chieftain	Remember: You need to get at least seven council votes to be accepted as a member of the Fremennik.
+1	line	Brundt the Chieftain	If you need any help with your trials, I suggest you speak to Askeladden. He is currently doing his own trials of manhood to become a true Fremennik.
+1	action	end
+1	cond	If the player has gotten all 7 votes:
+2	line	Player	I have seven members of the council prepared to vote in my favour now!
+2	line	Brundt the Chieftain	I know outerlander, for I have been closely monitoring your progress so far!
+2	line	Brundt the Chieftain	Then let us put the formality aside, and let me personally welcome you into the Fremennik! May you bring us honour!
+0	section	Post-quest dialogue
+1	line	Brundt the Chieftain	From this day onward, you are outerlander no more! In honour of your acceptance into the Fremennik You gain a new name to be known as. You will now be called [Fremennik name].
+1	action	end
