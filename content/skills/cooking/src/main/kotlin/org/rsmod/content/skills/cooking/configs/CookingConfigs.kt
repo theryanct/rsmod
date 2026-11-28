@@ -20,6 +20,10 @@ internal object CookingObjs : ObjReferences() {
 internal object CookingLocs : LocReferences() {
     /** Lumbridge Castle kitchen range (lower burn rates; Cook's Assistant gate skipped). */
     val lumbridge_range = find("cooksquestrange")
+
+    /** Hosidius kitchen ranges (+5% burn bonus; the diary +10% is not implemented). */
+    val hosidius_range = find("hos_cooking_range")
+    val hosidius_range_02 = find("hos_cooking_range_02")
 }
 
 internal object CookingSeqs : SeqReferences() {

@@ -18,6 +18,7 @@ burn chart or object symbol.
 Output (tab separated):
   heat    <raw> <cooked> <burnt|-> <level> <xp> <fire 0|1> <low> <high>
           <lumbridge_low|-> <lumbridge_high|-> <gauntlets_low|-> <gauntlets_high|->
+          <hosidius_low|-> <hosidius_high|->
   combine <first> <second> <product> <level> <xp> <first_leftover|-> <second_leftover|->
 """
 import json, os, re, sys, time, urllib.parse, urllib.request
@@ -163,6 +164,8 @@ for raw, rs in sorted(by_raw.items()):
         continue
     lumb = next((v for k, v in ch.items() if "lumbridge" in k), None)
     gaunt = next((v for k, v in ch.items() if "gauntlet" in k), None)
+    # Hosidius kitchen: +5% (the +10% curve needs the Kourend elite diary, not implemented).
+    hos = next((v for k, v in ch.items() if "hosidius" in k and "5%" in k), None)
     raw_o, cooked_o = obj_name(raw), obj_name(names[0])
     burnt_o = None
     if names[0] in BURNT_FISH:
@@ -184,6 +187,7 @@ for raw, rs in sorted(by_raw.items()):
                     "heat", raw_o, cooked_o, burnt_o or "-", lx[0], lx[1], int(fire), base[0], base[1],
                     lumb[0] if lumb else "-", lumb[1] if lumb else "-",
                     gaunt[0] if gaunt else "-", gaunt[1] if gaunt else "-",
+                    hos[0] if hos else "-", hos[1] if hos else "-",
                 ],
             )
         )

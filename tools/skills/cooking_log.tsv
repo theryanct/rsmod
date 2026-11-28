@@ -153,13 +153,13 @@ skip-no-symbol	Teapot with leaves#Trimmed + Hot kettle -> Pot of tea (trimmed)
 skip-combine	Kebab mix + Pitta bread -> Ugthanki kebab (bad)
 skip-combine	Damiana leaves + Bowl of water -> Damiana water
 skip-combine	Damiana tea + Empty cup -> Cup of tea (damiana)
-skip-junk-symbol	heat	hundred_pirate_raw_fishcake	hundred_pirate_fishcake	hundred_pirate_burned_fishcake	31	100.0	0	57	377	-	-	-	-
-skip-junk-symbol	heat	raw_rabbit	cooked_rabbit	spit_burned_rabbit_meat	1	30.0	1	128	512	-	-	-	-
-skip-junk-symbol	heat	hunting_raw_fish_special	hunting_fish_special	hunting_raw_fish_special_burnt	35	110.0	1	56	370	-	-	-	-
-skip-junk-symbol	heat	spit_skewered_beast_meat	spit_roasted_beast_meat	spit_burned_beast_meat	21	82.5	1	180	255	-	-	-	-
-skip-junk-symbol	heat	spit_skewered_bird_meat	spit_roasted_bird_meat	spit_burned_bird_meat	11	62.5	1	155	255	-	-	-	-
-skip-junk-symbol	heat	spit_skewered_rabbit_meat	spit_roasted_rabbit_meat	spit_burned_rabbit_meat	16	72.5	1	160	255	-	-	-	-
-skip-junk-symbol	heat	wrapped_oomlie	cooked_oomlie	burnt_oomlie	50	30.0	1	112	476	-	-	-	-
+skip-junk-symbol	heat	hundred_pirate_raw_fishcake	hundred_pirate_fishcake	hundred_pirate_burned_fishcake	31	100.0	0	57	377	-	-	-	-	69	389
+skip-junk-symbol	heat	raw_rabbit	cooked_rabbit	spit_burned_rabbit_meat	1	30.0	1	128	512	-	-	-	-	140	524
+skip-junk-symbol	heat	hunting_raw_fish_special	hunting_fish_special	hunting_raw_fish_special_burnt	35	110.0	1	56	370	-	-	-	-	68	382
+skip-junk-symbol	heat	spit_skewered_beast_meat	spit_roasted_beast_meat	spit_burned_beast_meat	21	82.5	1	180	255	-	-	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_bird_meat	spit_roasted_bird_meat	spit_burned_bird_meat	11	62.5	1	155	255	-	-	-	-	-	-
+skip-junk-symbol	heat	spit_skewered_rabbit_meat	spit_roasted_rabbit_meat	spit_burned_rabbit_meat	16	72.5	1	160	255	-	-	-	-	-	-
+skip-junk-symbol	heat	wrapped_oomlie	cooked_oomlie	burnt_oomlie	50	30.0	1	112	476	-	-	-	-	124	488
 skip-junk-symbol	combine	woodplank	nails	poh_flatpack_beerbarrel1	5	0.0	-	-
 skip-junk-symbol	combine	vodka	lime	aluft_shaker_sgg	20	30.0	-	-
 skip-junk-symbol	combine	osman_squirk_winter	beer_glass	osman_squirk_j_winter	1	5.0	-	-
