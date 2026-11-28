@@ -17,6 +17,7 @@ import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
 import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYER
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
+import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.ELEMENTAL_WORKSHOP_I
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fairytale1.FairytaleI.Companion.FAIRYTALE_I
 import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
@@ -32,6 +33,7 @@ import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTIO
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
 import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
+import org.rsmod.content.quests.losttribe.LostTribe.Companion.LOST_TRIBE
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
@@ -77,6 +79,7 @@ public object BuiltQuests {
             DRAGON_SLAYER,
             DRUIDIC_RITUAL,
             DWARF_CANNON,
+            ELEMENTAL_WORKSHOP_I,
             ERNEST,
             FAIRYTALE_I,
             FIGHT_ARENA,
@@ -92,6 +95,7 @@ public object BuiltQuests {
             KNIGHTS_SWORD,
             LOST_CITY,
             MERLINS_CRYSTAL,
+            LOST_TRIBE,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MURDER_MYSTERY,

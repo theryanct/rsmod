@@ -35,10 +35,16 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
 
     /**
      * Locs whose "Climb-over" a quest owns (the eventBus.contains guard below depends on load
-     * order): the Goblin Cave mud pile is Dwarf Cannon's cave exit.
+     * order): the Goblin Cave mud pile is Dwarf Cannon's cave exit; the Hallowed Sepulchre's
+     * floor-4 end gate is the sepulchre's (it pauses the floor timer).
      */
     private val QUEST_OWNED =
-        setOf("mcanmudpile", "fairy_wall_tangle_door_open", "fairy_wall_tangle_door_open1")
+        setOf(
+            "mcanmudpile",
+            "fairy_wall_tangle_door_open",
+            "fairy_wall_tangle_door_open1",
+            "hallowed_path_end_gate",
+        )
 
     private enum class Kind(val labels: Set<String>) {
         ClimbOver(setOf("climb-over")),

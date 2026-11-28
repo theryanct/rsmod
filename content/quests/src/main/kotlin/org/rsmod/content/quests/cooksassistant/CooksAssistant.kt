@@ -4,11 +4,6 @@ import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.api.player.protect.ProtectedAccess
-import org.rsmod.api.script.onOpNpc1
-import org.rsmod.api.script.onOpNpc2
-import org.rsmod.api.script.onOpNpc3
-import org.rsmod.api.script.onOpNpc4
-import org.rsmod.api.script.onOpNpc5
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
@@ -17,6 +12,7 @@ import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.QuestDialogueHooks
 import org.rsmod.content.quests.framework.QuestDialogueRunner
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.setQuestState
@@ -42,13 +38,8 @@ constructor(private val npcTypes: NpcTypeList, private val xpMods: XpModifiers) 
 
     override fun ScriptContext.startup() {
         val cook = CooksAssistantRefs.cook
-        when (npcTypes[cook].op.indexOfFirst { it.equals("Talk-to", ignoreCase = true) } + 1) {
-            1 -> onOpNpc1(cook) { talk(it.npc) }
-            2 -> onOpNpc2(cook) { talk(it.npc) }
-            3 -> onOpNpc3(cook) { talk(it.npc) }
-            4 -> onOpNpc4(cook) { talk(it.npc) }
-            5 -> onOpNpc5(cook) { talk(it.npc) }
-        }
+        // Talk-to is shared through QuestTalk (The Lost Tribe asks the Cook too).
+        with(QuestTalk) { default(npcTypes, cook) { talk(it) } }
     }
 
     private suspend fun ProtectedAccess.talk(npc: Npc) {
