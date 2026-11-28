@@ -14,6 +14,7 @@ import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
 import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYER
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
+import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
@@ -39,8 +40,8 @@ import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
 import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SLAYER
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
-import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
+import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
 /**
@@ -60,6 +61,7 @@ public object BuiltQuests {
             DORICS_QUEST,
             DRAGON_SLAYER,
             DRUIDIC_RITUAL,
+            DWARF_CANNON,
             ERNEST,
             FISHING_CONTEST,
             GERTRUDES_CAT,
