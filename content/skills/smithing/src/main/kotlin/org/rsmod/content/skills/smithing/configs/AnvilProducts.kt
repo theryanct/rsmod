@@ -48,7 +48,6 @@ internal object AnvilObjs : ObjReferences() {
     val adamantite_bar = find("adamantite_bar")
     val runite_bar = find("runite_bar")
     val lovakite_bar = find("lovakite_bar")
-    val default = find("default")
 
     val bronze_dagger = find("bronze_dagger")
     val bronze_sword = find("bronze_sword")
