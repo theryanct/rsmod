@@ -1,22 +1,17 @@
 package org.rsmod.content.interfaces.bank.scripts
 
 import jakarta.inject.Inject
-import org.rsmod.api.config.refs.components
 import org.rsmod.api.config.refs.modlevels
 import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.output.mes
-import org.rsmod.api.player.ui.ifSetEvents
-import org.rsmod.api.script.advanced.onIfMoveSub
 import org.rsmod.api.script.onCommand
 import org.rsmod.api.script.onIfOverlayButton
-import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.content.interfaces.bank.configs.BankAnywhereComponents
 import org.rsmod.content.interfaces.bank.openBank
 import org.rsmod.events.EventBus
 import org.rsmod.game.entity.Player
 import org.rsmod.game.type.interf.IfButtonOp
-import org.rsmod.game.type.interf.IfEvent
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
@@ -27,10 +22,8 @@ import org.rsmod.plugin.scripts.ScriptContext
  */
 class BankAnywhereScript @Inject constructor(private val eventBus: EventBus) : PluginScript() {
     override fun ScriptContext.startup() {
-        onPlayerLogin { player.enableStoneOps() }
-        // The gameframe re-sends the stone's events (op1 only) when it moves the inventory panel.
-        onIfMoveSub(components.toplevel_target_side3) { player.enableStoneOps() }
-
+        // No if_setevents needed: BankAnywhereEdits sets op2's transmit flag in the cache, which is
+        // what both the client and the server check for static (comsub -1) component ops.
         for (stone in BankAnywhereComponents.inventory_stones) {
             onIfOverlayButton(stone) {
                 if (op == IfButtonOp.Op2) {
@@ -43,12 +36,6 @@ class BankAnywhereScript @Inject constructor(private val eventBus: EventBus) : P
             modLevel = modlevels.admin
             desc = "Open your bank (Bank anywhere feature)"
             cheat { player.bankAnywhere() }
-        }
-    }
-
-    private fun Player.enableStoneOps() {
-        for (stone in BankAnywhereComponents.inventory_stones) {
-            ifSetEvents(stone, -1..-1, IfEvent.Op1, IfEvent.Op2)
         }
     }
 
