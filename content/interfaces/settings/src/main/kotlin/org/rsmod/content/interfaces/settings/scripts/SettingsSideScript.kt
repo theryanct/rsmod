@@ -2,12 +2,14 @@ package org.rsmod.content.interfaces.settings.scripts
 
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.interfaces
+import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.ifCloseOverlay
 import org.rsmod.api.player.ui.ifSetEvents
 import org.rsmod.api.player.vars.enumVarBit
+import org.rsmod.api.script.onIfClose
 import org.rsmod.api.script.onIfOpen
 import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.utils.vars.VarEnumDelegate
@@ -33,6 +35,10 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
         onIfOverlayButton(setting_components.display_tab) { player.panel = Panel.Display }
 
         onIfOverlayButton(setting_components.settings_open) { player.selectAllSettings() }
+        // The All Settings search box is client-side: clicking it runs `chatdefault_stopinput`
+        // and nothing restarts chat input when the interface closes, which left WASD (RuneLite key
+        // remapping) and chat typing dead. OSRS restores it on close.
+        onIfClose(interfaces.settings) { ClientScripts.chatDefaultRestoreInput(player) }
         onIfOverlayButton(setting_components.settings_close) {
             player.ifCloseOverlay(interfaces.settings, eventBus)
         }
