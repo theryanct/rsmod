@@ -687,7 +687,9 @@ constructor(
             }
             val temp = bit(SgVarBits.temperature)
             val window = window(tool)
-            if (temp !in window) {
+            // The transcript has no "too hot" for the trip hammer: only too cold damages there.
+            val wrongHeat = if (tool == Tool.Hammer) temp < window.first else temp !in window
+            if (wrongHeat) {
                 damage()
                 val hot = temp > window.last
                 val section =
