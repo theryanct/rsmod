@@ -3,6 +3,7 @@ package org.rsmod.content.skills.herblore
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.queue.QueueReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.type.obj.ObjType
 
@@ -13,7 +14,14 @@ internal object HerbloreObjs : ObjReferences() {
                 HerbloreData.potions.flatMap { listOf(it.unf, it.secondary, it.product) } +
                 HerbloreData.drinks.flatMap { it.doses } +
                 HerbloreData.grinds.flatMap { listOf(it.source, it.product) } +
-                listOf(HerbloreData.VIAL, HerbloreData.VIAL_WATER, HerbloreData.PESTLE))
+                HerbloreData.mixes.flatMap { listOf(it.potion, it.mix2, it.mix1) } +
+                listOf(
+                    HerbloreData.VIAL,
+                    HerbloreData.VIAL_WATER,
+                    HerbloreData.PESTLE,
+                    HerbloreData.ROE,
+                    HerbloreData.CAVIAR,
+                ))
             .distinct()
             .associateWith { find(it) }
 }
@@ -32,4 +40,12 @@ internal object HerbloreQueues : QueueReferences() {
 internal object HerbloreVarps : VarpReferences() {
     /** Druidic Ritual's quest varp (complete = 4), for the optional QuestGates check. */
     val druidquest = find("druidquest")
+}
+
+internal object HerbloreVarBits : VarBitReferences() {
+    /**
+     * Barbarian Training herblore lesson (cache varbit in `brut_base_1`): 0 untaught, 1 Otto
+     * wants an attack mix, 2 he has it (every mix unlocked).
+     */
+    val brut_herb_potion = find("brut_herb_potion")
 }

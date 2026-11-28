@@ -18,6 +18,8 @@ import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.script.onOpNpc4
 import org.rsmod.api.stats.levelmod.InvisibleLevels
 import org.rsmod.api.stats.xpmod.XpModifiers
+import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.content.skills.fishing.configs.BarbarianVarBits
 import org.rsmod.content.skills.fishing.configs.fishing_objs
 import org.rsmod.content.skills.fishing.configs.fishing_seqs
 import org.rsmod.game.MapClock
@@ -35,7 +37,10 @@ import org.rsmod.plugin.scripts.ScriptContext
 // fishing (Fish at karambwan spots with a loaded vessel) use the same per-type op binding.
 // Not yet: moving spots (skipped by decision), special members spots (anglerfish, dark crab,
 // eels), big net junk items, angler outfit, clue bottles, heron pet, karambwanji net fishing.
-// Barbarian Training (Otto) is skipped; the barbarian rod works without it.
+// Barbarian Training (Otto, content/quests barbariantraining): the barbarian rod stays usable
+// without Otto's lesson (kept ungated on purpose so existing saves keep working); a leaping catch
+// during the lesson (brut_fishing_r 1) marks it done. Barehanded harpoon fishing (tuna, swordfish,
+// shark; +20 Fishing levels, Strength level and xp) needs Otto's harpoon lesson (brut_fishing_s).
 class Fishing
 @Inject
 constructor(
@@ -100,7 +105,8 @@ constructor(
         }
     }
 
-    private fun ProtectedAccess.fish(spot: Npc, op: Int, method: FishingMethod) {
+    private fun ProtectedAccess.fish(spot: Npc, op: Int, spotMethod: FishingMethod) {
+        val method = barehanded(spotMethod) ?: spotMethod
         if (!canFish(method)) {
             resetAnim()
             return
@@ -128,6 +134,27 @@ constructor(
         reop(spot, op)
     }
 
+    /**
+     * Barbarian Training: at a harpoon spot with no harpoon, a player Otto has taught fishes
+     * barehanded instead (OSRS Wiki Barbarian Training: same speed and catch rate as a harpoon).
+     */
+    private fun ProtectedAccess.barehanded(method: FishingMethod): FishingMethod? {
+        val barehanded =
+            when (method) {
+                FishingMethod.Harpoon -> FishingMethod.BarehandHarpoon
+                FishingMethod.SharkHarpoon -> FishingMethod.BarehandShark
+                else -> return null
+            }
+        if (hasTool(method) || player.vars[BarbarianVarBits.fishing_s] < LESSON_TAUGHT) {
+            return null
+        }
+        return barehanded
+    }
+
+    private fun ProtectedAccess.meetsBonus(catch: Catch): Boolean =
+        player.strengthLvl >= catch.bonusLevel &&
+            (catch.strengthOnly || player.agilityLvl >= catch.bonusLevel)
+
     private fun ProtectedAccess.canFish(method: FishingMethod): Boolean {
         val lowest = method.catches.minOf { it.level }
         if (player.fishingLvl < lowest) {
@@ -150,8 +177,11 @@ constructor(
             return false
         }
         val lowestBonus = method.catches.minOf { it.bonusLevel }
-        if (lowestBonus > 0 && (player.agilityLvl < lowestBonus || player.strengthLvl < lowestBonus)) {
-            mes("You need Agility and Strength levels of at least $lowestBonus to ${method.verb} these fish.")
+        if (lowestBonus > 0 && method.catches.none { meetsBonus(it) }) {
+            val skills =
+                if (method.catches.all { it.strengthOnly }) "a Strength level"
+                else "Agility and Strength levels"
+            mes("You need $skills of at least $lowestBonus to ${method.verb} these fish.")
             return false
         }
         if (invFullForGathering(objTypes, method.catches.map { it.fish })) {
@@ -164,7 +194,7 @@ constructor(
 
     /** Any of the method's tools, worn, carried or on the tool belt. */
     private fun ProtectedAccess.hasTool(method: FishingMethod): Boolean =
-        player.hasAnyTool(method.tools)
+        method.tools.isEmpty() || player.hasAnyTool(method.tools)
 
     private fun ProtectedAccess.rollCatch(method: FishingMethod) {
         // Catches cascade: the highest-level fish the player can catch is rolled first, then the
@@ -173,7 +203,7 @@ constructor(
             if (player.fishingLvl < catch.level) {
                 continue
             }
-            if (player.agilityLvl < catch.bonusLevel || player.strengthLvl < catch.bonusLevel) {
+            if (!meetsBonus(catch)) {
                 continue
             }
             if (!statRandom(stats.fishing, catch.low, catch.high, invisibleLvls)) {
@@ -188,13 +218,32 @@ constructor(
             spam(catch.message)
             statAdvance(stats.fishing, xp)
             if (catch.bonusXp > 0) {
-                statAdvance(stats.agility, catch.bonusXp * xpMods.get(player, stats.agility))
+                if (!catch.strengthOnly) {
+                    statAdvance(stats.agility, catch.bonusXp * xpMods.get(player, stats.agility))
+                }
                 statAdvance(stats.strength, catch.bonusXp * xpMods.get(player, stats.strength))
             }
             val count = if (catch.perLevels > 0) player.fishingLvl / catch.perLevels + 1 else 1
             invAddGathered(objTypes[catch.fish], count)
+            advanceLesson(method)
             return
         }
+    }
+
+    /** Barbarian Training: the first catch of a taught method completes that lesson (1 -> 2). */
+    private fun ProtectedAccess.advanceLesson(method: FishingMethod) {
+        val varbit =
+            when (method) {
+                FishingMethod.BarbarianRod -> BarbarianVarBits.fishing_r
+                FishingMethod.BarehandHarpoon,
+                FishingMethod.BarehandShark -> BarbarianVarBits.fishing_s
+                else -> return
+            }
+        if (player.vars[varbit] != LESSON_TAUGHT) {
+            return
+        }
+        VarPlayerIntMapSetter.set(player, varbit, LESSON_DONE)
+        mes("You feel you have learned more of barbarian ways. Otto might wish to talk to you more.")
     }
 
     private fun ProtectedAccess.reop(spot: Npc, op: Int) {
@@ -218,6 +267,8 @@ constructor(
         val bonusXp: Double = 0.0,
         /** Karambwanji: floor(level / [perLevels]) + 1 fish per catch (0 = always one). */
         val perLevels: Int = 0,
+        /** Barehanded fishing: [bonusLevel]/[bonusXp] are Strength only (no Agility). */
+        val strengthOnly: Boolean = false,
     )
 
     private enum class FishingMethod(
@@ -350,7 +401,15 @@ constructor(
         BarbarianRod(
             verb = "fish",
             tools = listOf(fishing_objs.barbarian_rod),
-            baits = listOf(fishing_objs.feather, fishing_objs.fish_offcuts, fishing_objs.roe, fishing_objs.caviar),
+            // Wiki Leaping trout: bait is used in the order offcuts, fishing bait, feathers, roe, caviar.
+            baits =
+                listOf(
+                    fishing_objs.fish_offcuts,
+                    fishing_objs.fishing_bait,
+                    fishing_objs.feather,
+                    fishing_objs.roe,
+                    fishing_objs.caviar,
+                ),
             anim = fishing_seqs.human_fishing_casting,
             startMessage = "You cast out your line...",
             missingToolMessage = "You need a barbarian rod to catch these fish.",
@@ -362,7 +421,39 @@ constructor(
                     Catch(fishing_objs.leaping_trout, 48, 50.0, 32, 192, "You catch a leaping trout.", 15, 5.0),
                 ),
         ),
-        /** Wiki Raw karambwanji: level 5, 5 xp, chart 100/250, floor(lvl/5)+1 each; shrimps cascade. */
+        /**
+         * Wiki Barbarian Training (barehanded): tuna 55 Fishing / 35 Strength (80 + 8 Strength xp),
+         * swordfish 70 / 50 (100 + 10). Catch curves as the harpoon (same speed and catch rate).
+         */
+        BarehandHarpoon(
+            verb = "catch",
+            tools = emptyList(),
+            baits = emptyList(),
+            anim = fishing_seqs.hand_fishing,
+            startMessage = "You start fishing with your bare hands.", // Authored (not Wiki)
+            missingToolMessage = "",
+            missingBaitMessage = "",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_swordfish, 70, 100.0, 4, 48, "You catch a swordfish.", 50, 10.0, strengthOnly = true),
+                    Catch(fishing_objs.raw_tuna, 55, 80.0, 8, 64, "You catch a tuna.", 35, 8.0, strengthOnly = true),
+                ),
+        ),
+        /** Wiki Barbarian Training (barehanded): shark 96 Fishing / 76 Strength (110 + 11 Strength xp). */
+        BarehandShark(
+            verb = "catch",
+            tools = emptyList(),
+            baits = emptyList(),
+            anim = fishing_seqs.hand_fishing,
+            startMessage = "You start fishing with your bare hands.", // Authored (not Wiki)
+            missingToolMessage = "",
+            missingBaitMessage = "",
+            catches =
+                listOf(
+                    Catch(fishing_objs.raw_shark, 96, 110.0, 3, 40, "You catch a shark!", 76, 11.0, strengthOnly = true),
+                ),
+        ),
+        /** Wiki Raw karambwanji: level 5, 5 xp, chart 100/250, floor(lvl/5)+1 each, shrimps cascade. */
         Karambwanji(
             verb = "net",
             tools = listOf(fishing_objs.net),
@@ -538,6 +629,10 @@ constructor(
     }
 
     private companion object {
+        /** Barbarian Training lesson states (see BarbarianTraining.kt): taught, then task done. */
+        const val LESSON_TAUGHT = 1
+        const val LESSON_DONE = 2
+
         /** Fishing Contest's Hemenster spots (map square 41_53), owned by the quest. */
         const val CONTEST_SPOT_PREFIX = "0_41_53_"
 

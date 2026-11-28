@@ -71,6 +71,18 @@ constructor(
                 Recipe(potion.product, potion.unf, potion.secondary, potion.level, potion.xp, 2)
             onOpHeldU(obj(potion.unf), obj(potion.secondary)) { selectMake(recipe) }
         }
+        for (mix in HerbloreData.mixes) {
+            val eggs = if (mix.caviarOnly) listOf(HerbloreData.CAVIAR) else listOf(HerbloreData.ROE, HerbloreData.CAVIAR)
+            for (egg in eggs) {
+                val recipe = Recipe(mix.mix2, mix.potion, egg, mix.level, mix.xp, 2)
+                onOpHeldU(obj(mix.potion), obj(egg)) { if (knowsMix(mix)) selectMake(recipe) }
+            }
+            if (mix.caviarOnly) {
+                onOpHeldU(obj(mix.potion), obj(HerbloreData.ROE)) {
+                    if (knowsMix(mix)) mes("You need caviar rather than roe for this mix.") // Authored (not Wiki)
+                }
+            }
+        }
         onPlayerQueueWithArgs<MakeJob>(HerbloreQueues.make) { make(it.args) }
         onPlayerSoftTimer(AntifireTimers.tick) { Antifire.tick(player) }
         val pestle = obj(HerbloreData.PESTLE)
@@ -135,6 +147,15 @@ constructor(
     }
 
     /* Mixing */
+
+    /** Barbarian Training: Otto's lesson unlocks the attack mix, handing it over unlocks the rest. */
+    private fun ProtectedAccess.knowsMix(mix: HerbloreData.BarbarianMix): Boolean {
+        val lesson = player.vars[HerbloreVarBits.brut_herb_potion]
+        val needed = if (mix == HerbloreData.mixes.first()) MIX_LESSON_TAUGHT else MIX_LESSON_DONE
+        if (lesson >= needed) return true
+        mes("You don't know how to mix these together.") // Authored (not Wiki)
+        return false
+    }
 
     private data class Recipe(
         val product: String,
@@ -215,7 +236,7 @@ constructor(
         invDel(inv, obj(dose))
         invAdd(inv, obj(next))
         anim(HerbloreSeqs.drink)
-        mes("You drink some of your ${drink.name}.")
+        mes(drink.message ?: "You drink some of your ${drink.name}.")
         applyEffect(drink.effect)
         if (left > 0) {
             mes("You have $left dose${if (left > 1) "s" else ""} of potion left.")
@@ -255,6 +276,7 @@ constructor(
             "hitpoints" -> stats.hitpoints
             "agility" -> stats.agility
             "fishing" -> stats.fishing
+            "hunter" -> stats.hunter
             else -> error("Unknown potion stat: $name")
         }
 
@@ -284,6 +306,8 @@ constructor(
 
     private companion object {
         const val DRUIDIC_RITUAL_COMPLETE = 4
+        const val MIX_LESSON_TAUGHT = 1
+        const val MIX_LESSON_DONE = 2
         const val DRINK_DELAY = 3
     }
 }
