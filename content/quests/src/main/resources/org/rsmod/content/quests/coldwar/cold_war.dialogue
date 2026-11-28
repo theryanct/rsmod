@@ -1,0 +1,739 @@
+# Generated from the OSRS Wiki page "Transcript:Cold War" by tools/quests/transcript_to_dialogue.py
+0	section	Getting started
+0	section	Speaking to Larry at Ardougne Zoo
+1	line	Player	Hello. Do you need any help? I'm looking for a quest.
+1	line	Larry	Are you working for them?
+1	line	Player	Uh, I'm not sure. Who are they?
+1	line	Larry	EXACTLY!
+1	line	Player	Seriously, what are you talking about?
+1	line	Larry	I think you can be trusted. What do you know about...
+1	line	Larry	penguins?
+1	line	Player	Uh...they live in the cold? That's about all.
+1	line	Larry	Would you like to learn more about them? I'm conducting a, uh, research project, to, uh, learn about their social habits in their natural environment.
+1	line	Player	What do you need my help for?
+1	line	Larry	Well, I need to build a shelter to hide from view, and it's always useful to have an extra pair of eyes, you know, for, uh, observing...Penguins.
+1	line	Larry	So, are you up for it?
+1	option	Okay, why not!
+2	line	Player	Okay, why not! But first, who are you and why are you researching penguins?
+2	line	Larry	I, uh, was a zoo keeper here. But, I, uh, am on leave to go research penguins in their native habitat.
+2	line	Player	Ok! Okay then. So, what did you need me to do?
+2	line	Larry	Right. I need you to gather materials for the bird hide, while I arrange for our transport.
+2	line	Larry	You need to get 10 oak planks, 10 steel nails, a hammer, and a spade so that we can build a bird hide.
+2	line	Larry	Once you have those, meet me up by the entrance to Keldagrim, east of Rellekka. I'll be there with a boat to take us to our destination.
+2	line	Player	Right, oak planks, steel nails, hammer, spade, east of Rellekka. Got it.
+2	action	end
+1	option	I don't think so.
+2	line	Player	I don't think so.
+2	action	end
+0	section	Getting materials to build the hideout
+1	line	Larry	Have you got the equipment?
+1	option	Yes, I have all the materials.
+2	line	Player	Yes, I have them with me.
+2	action	below
+1	option	What do I need to get?
+2	line	Player	What do I need to get?
+2	cond	If missing the planks:
+3	action	end
+2	cond	If missing the nails:
+3	action	end
+2	cond	If missing the hammer:
+3	action	end
+2	line	Larry	You have all the materials. Off to the iceberg!
+2	select	Are you ready to go to the iceberg?
+2	option	Yes
+3	action	end
+2	option	No
+3	line	Player	No.
+3	action	end
+1	option	Where should I meet you when I have everything?
+2	line	Larry	Once you have the items, meet me up by the entrance to Keldagrim, east of Rellekka. I'll be there with a boat to take us to our destination.
+2	option	I have no idea where that is.
+3	line	Player	I have no idea where that is.
+3	line	Larry	And you call yourself an adventurer! There is a road from Catherby going north. Take it until you reach the Sinclair Mansion.
+3	line	Larry	Take a left at the Mansion, cross two bridges and follow the road until you reach Rellekka. Head east, around Rellekka to the coast near the entrance of Keldagrim.
+3	line	Larry	Did I spell that out enough for you?
+3	line	Player	No need to be snippy.
+3	action	end
+2	option	Oh, I know where to go.
+3	line	Player	Oh, I know where to go.
+3	action	end
+1	option	Never mind.
+2	line	Player	Never mind.
+2	action	end
+0	section	First trip to the iceberg
+0	section	Before building the hideout
+1	line	Player	So, how do I make a bird hide?
+1	line	Larry	Use the planks on the patch of snow on that ridge. Once you have that constructed, use the spade on the snow to cover the hide.
+1	action	end
+0	section	Building the hideout
+0	section	With hideout partially built
+1	line	Player	Okay, I've made the structure. Now what?
+1	line	Larry	Not bad... Now you need to cover the bird hide in snow with a spade.
+1	action	end
+0	section	Covering the structure in snow
+0	section	With a fully built hideout
+1	line	Player	Can we start observing the penguins?
+1	line	Larry	Yes. Let's get in and start observing. You should note down anything interesting the penguins do. I'll include it in my, uh, research.
+1	line	Larry	Look, here come two penguins now.
+1	line	Player	Aww, they're cute.
+1	line	Larry	EVIL. I mean, how fascinating.
+0	section	Interacting with the hideout again
+1	line	Player	Can we start observing the penguins?
+1	line	Larry	Yes. Let's get in and start observing. You should note down anything interesting the penguins do. I'll include it in my, uh, research.
+1	line	Larry	Looks like the penguins are on patrol again.
+1	line	Player	They're just walking around, Larry.
+1	line	Larry	They are organised! ORGANISED I tell you!
+0	section	After observing the penguins
+1	line	Larry	I knew it. I knew they were up to something! Did you see that? They were patrolling!
+1	option	That's crazy!
+2	line	Larry	It isn't! They saluted and recognised each other. They're organised!
+2	line	Player	It looked like one of them shivered and the other one just walked past. Nothing suspicious there, it is really cold here!
+2	line	Larry	I don't care what you think. I know they are doing something. No one ever believes me. But I'll prove them wrong. ALL OF THEM.
+2	line	Player	Okay, calm down. What do you think we should do now?
+1	option	It did seem rather suspicious.
+2	line	Player	It did seem rather suspicious.
+2	line	Larry	You believe me?
+2	line	Player	Of course! I mean, those penguins were acting quite strangely.
+2	line	Larry	No one ever believes me. Can I...hug you?
+2	line	Player	Whoa there, I don't think this calls for hugging. What do we do next about the penguins?
+2	line	Larry	We need to get closer to the penguins. Infiltrate them. Learn what they are doing.
+2	line	Player	How do you plan to do that?
+2	line	Larry	We can't discuss it here; there are too many spies. Let's leave the iceberg and then I'll tell you my plans.
+2	action	end
+0	section	Speaking to Larry again without leaving
+1	line	Larry	We must get away from here before we discuss our plans. We don't want to be overheard.
+1	action	end
+0	section	Planning the infiltration
+0	section	Speaking to Larry at the Zoo or Relekka
+1	line	Player	How do you plan to infiltrate the penguins?
+1	line	Larry	I have altered some designs of clockwork toys to make a clockwork penguin suit. We will use this to infiltrate their ranks.
+1	line	Player	What? We'll just set it off walking? What good will that do?
+1	line	Larry	No! I'm going to use a spell to shrink you down so you can control it from the inside.
+1	line	Player	Wait a minute, why am I being shrunk? Why can't you get in the suit and annoy the penguins?
+1	line	Larry	The penguins know my scent. They'd find me out and capture me and...torture me. No, it has to be you.
+1	line	Larry	Don't worry. The spell only works if I'm nearby since I have to be constantly casting it. If trouble starts I'll be close by to help.
+1	line	Player	Gee, that's comforting.
+1	line	Larry	Here's the book. It has my designs and a list of things you need to get. Use your Crafting table at your house to build it, just like regular clockwork toys.
+1	action	
+1	line	Player	Why do I have to make the suit? I'm tired of doing all the legwork.
+1	line	Larry	You have to make it, because since I got fired from the Zoo I've been homeless. Thanks for caring.
+1	line	Player	Oh, sorry... Hey, you told me you were on leave to do research!
+1	line	Larry	Well...it's permanent leave, and I am doing research! When I used to work at the Zoo, I noticed the penguins doing odd things, like taking notes or timing things. I asked to have my work detail transferred to their cage and I was fired!
+1	line	Larry	I'm sure the penguins are behind it. So I kept spying on them and I'll prove everyone wrong!
+1	line	Player	So that's why you can't wear the suit? Because you used to work near them?
+1	line	Larry	Err, no. I've had a few run-ins since then. But I don't have time for war stories, we need to concentrate on our mission!
+1	line	Larry	When you're done making the suit, we'll head back to the iceberg and try it out.
+1	action	end
+0	section	Making the penguin suit
+1	line	Larry	Do you have the suit?
+1	option	Yes, I have it.
+2	line	Player	Yes, I have it.
+2	cond	If the player doesn't have the suit:
+3	line	Larry	You don't seem to have the suit with you.
+3	action	end
+2	line	Larry	That's perfect. You are a very skilled crafter. Now we must return to the iceberg and test it.
+2	select	Do you want to go to the iceberg?
+2	option	Yes
+3	action	end
+2	option	No
+3	line	Player	No.
+3	action	end
+1	option	I've lost the clockwork book, could I have another?
+2	line	Player	I've lost the clockwork book, could I have another?
+2	cond	If the player still possesses the book:
+3	line	Larry	You haven't lost it, you just need to look for it more closely.
+3	action	end
+2	line	Larry	Well, lucky for you I did make another copy. But be more careful!
+2	action	
+2	action	end
+1	option	I'm a bit confused. Can you explain how to make the suit?
+2	line	Player	I'm a bit confused. Can you explain how to make the suit?
+2	line	Larry	You need 1 piece of silk, 1 clockwork mechanism, and 1 wood plank.
+2	line	Larry	The book will explain how to make the suit. But, since you seem to lazy to read it, I'll summarise.
+2	line	Larry	Take the materials to your house and use the Crafting table to make clockwork toys. From there you can make the suit.
+2	line	Player	Okay, thanks.
+2	action	end
+1	option	No, I'm not done yet.
+2	line	Player	No, I'm not done yet.
+2	action	end
+0	section	Second iceberg visit
+1	line	Larry	Look what they did to the bird hide! It's completely destroyed! The savages. The penguins are on to us.
+1	option	I don't think it was the penguins.
+2	line	Player	I don't think it was the penguins. You can't even make out the prints clearly, it could have been anything.
+2	line	Larry	Well of course you can't make out tracks. Penguins walk single file to hide their numbers! They're clever...so very clever.
+1	option	It looks like a warning message to keep us away.
+2	line	Player	It looks like a warning message to keep us away. I didn't think penguins were violent by nature.
+2	line	Larry	Oh, they act like they aren't, but it's all a guise. They wanted to scare us off. We must be on to something.
+1	line	Player	Well, there aren't any penguins around now, so we can't try out the suit.
+1	line	Larry	But, we were so close to finding out what exactly is going on. It's all ruined now. How will we ever infiltrate them if there are none around to infiltrate?
+1	line	Player	There are other penguins. What about the ones at the Zoo? At least we can test the suit on them.
+1	line	Larry	OF COURSE! You are brilliant. I should have thought of that. It's where all of this started. Let's return to the Zoo.
+1	line	Larry	I can teleport us back to the Zoo. It'll be faster.
+1	line	Player	Then why the whole malarkey with the boat?
+1	line	Larry	Boat rides lower my stress level.
+1	select	Are you ready to go to the Zoo?
+1	option	Yes.
+2	action	end
+1	option	No.
+2	line	Larry	I'm too tired to teleport again. You'll have to get back to the Zoo on your own.
+2	action	end
+0	section	Speaking to Larry again without leaving
+1	line	Larry	I can teleport us back to the Zoo, but you'll have to make your own way back, teleports tire me out.
+1	action	end
+0	section	Testing the suit at the zoo
+0	section	Speaking to Larry at Ardougne Zoo
+1	line	Larry	After I put you in the suit, use the little gate in the enclosure to get inside. The zoo keepers won't notice.
+1	line	Player	Guess we should try this out. How do you know a shrinking spell, anyway?
+1	line	Larry	Well, a while back I was out in the field observing penguins. I worked for the Ardougne Zoo then. I was just quietly observing them when suddenly there was an avalanche.
+1	line	Player	Larry, you are one unlucky dude.
+1	line	Larry	I'm not done! I was trapped, but a passing old man stopped to help. He said he would shrink me so I could crawl out from under the weight of the snow.
+1	line	Larry	Then he taught me the spell in case I would have need of it again.
+1	line	Player	Seems like a pretty wise old man.
+1	line	Larry	You see, that incident made me start suspecting the penguins, and my further work with them at the Zoo just confirmed it. I'm sure they got me fired. I know too much.
+1	line	Player	Right, well we don't have all day. Time to be a penguin!
+1	line	Larry	Okay, but remember, if you move too far away from me the spell will break and you'll be normal sized again. Also, if you need to switch back, just ask me and I'll unshrink you.
+1	line	Player	Right, right. Let's just get this over with.
+1	line	Player	Penguin time!
+1	cond	If the player's hands aren't free:
+2	line	Larry	You will need your hands free to operate the suit.
+2	action	end
+1	cond	If the player is wearing a cape:
+2	line	Larry	You can't wear a cape inside the suit, it might get caught.
+2	action	end
+1	action	end
+0	section	Speaking to Larry while in the suit
+1	line	Larry	Don't talk to me while you're in the suit! It'll give away your cover. Here, I'll get you out of it.
+1	action	end
+0	section	Using Larry's Tuxedo-time while in the suit
+1	line	Player	Okay, I'm ready to be big again! Please get me out of this.
+1	line	Larry	All right, keep calm. One growth spurt coming up.
+1	action	end
+0	section	Entering the cage as a "penguin"
+1	line	Player	Squack! Quack, quackity squack, squee.
+1	line	Penguin	...
+1	line	Penguin	What do you think you are doing?
+1	line	Player	I'm, uh, speaking penguin, I think.
+1	line	Player	WAIT. How come you can speak in the common tongue? You're a penguin!
+1	line	Penguin	...So are you.
+1	line	Penguin	And you are speaking in the common tongue. So, what is your point?
+1	line	Player	Oh, right. Yes, of course! Uh, I was just, uh, testing you. Making sure you're on your toes, claws, whatever.
+1	line	Penguin	Operatives must not speak without giving the proper greeting. You have not given the proper greeting and until you do I have nothing more to say.
+1	line	Player	I better try and get this greeting right.
+1	action	
+1	cond	If the player fails the greeting:
+2	line	Penguin	I am sorry comrade, but you still have not shown me the proper greeting.
+2	action	end
+1	cond	After one out of three correct moves:
+2	line	Player	*Whew, that was right. Two more moves to do. If I get those right, he should speak to me.*
+2	cond	If the player fails the greeting:
+3	action	above
+2	cond	After two out of three correct moves:
+3	line	Player	*I just need to do one more move and I'll have gotten the greeting right.*
+3	cond	If the player fails the greeting:
+4	action	above
+3	cond	After a full proper greeting:
+4	line	Penguin	Welcome comrade. Now we may speak properly.
+4	line	Penguin	What news do you bring? Have you made progress with the main directive?
+4	line	Player	Uh, the main directive? Yeah...sure, I made progress with it. It was...easy?
+4	line	Penguin	It was easy!? It was easy to learn how to FLY?
+4	line	Player	Uh, yeah. I just kind of jumped off a hill and flapped a lot.
+4	line	Penguin	You flapped a lot? I didn't think we could fly like other birds.
+4	cond	If the player has completed Between a Rock...:
+5	line	Player	I also launched myself out of a cannon!
+5	line	Penguin	This caused you to fly... ingenious.
+4	cond	If the player has completed Enlightened Journey:
+5	line	Player	Then I flew in a hot air balloon.
+5	line	Penguin	A hot air balloon? This contraption made you fly?
+5	line	Penguin	This is very amazing. I will make note of it in my mission report.
+4	line	Player	Why is this so important? I mean, we're good swimmers, who cares if we can't fly?
+4	line	Penguin	Who cares? It's the entire reason we are in this wretched cage! We need to learn the secrets of flight, and the best way is to get these gullible humans to reveal it to us unwittingly. Blast them and their thumbs.
+4	line	Player	You sound kind of bitter.
+4	line	Penguin	Yes, I am. I'm tired of observing these humans and being gawked at by nasty little children. I miss the fresh codfish of our motherland.
+4	line	Player	Anything I can do?
+4	line	Penguin	You could take my mission report back to the outpost for me. I don't want to risk breaking out and blowing our cover.
+4	line	Penguin	You should check in with the operatives in Lumbridge before you head to the outpost. They might have some news for you to take as well.
+4	action	
+4	action	end
+0	section	After speaking with Ardougne Zoo's penguins
+1	line	Player	The penguin gave me his mission report and told me to go to Lumbridge to speak to the penguins there and then go to 'the outpost'.
+1	line	Larry	Lumbridge? There aren't any penguins in Lumbridge. Not that I've seen. Where is this 'outpost'?
+1	line	Player	Maybe the penguins in Lumbridge are undercover?
+1	line	Player	I didn't find out where their outpost is. I'm hoping the ones in Lumbridge will tell me.
+1	line	Player	Seems kind of crazy that these penguins have mission reports and operatives.
+1	line	Larry	They're organised little devils. Don't underestimate them.
+1	line	Larry	You go on ahead to Lumbridge. I'll meet you there and put you in the suit.
+1	line	Player	They don't even have thumbs. How organised can they be?
+1	action	end
+0	section	Finding 'the outpost'
+0	section	Searching for the penguins at Lumbridge
+1	line	Player	So, we're in Lumbridge. Where are these penguins?
+1	line	Larry	I was chatting with a local farmer, and there is a rumour about a 'thing' that lives around here. Maybe it's the penguin and these simple people don't recognise them.
+1	line	Player	Hmm, I suppose.
+1	action	end
+0	section	Greeting the "sheep"
+1	line	Player	I should probably do the secret handshake before I try talking to these penguins.
+1	action	
+1	cond	If the player fails the greeting:
+2	line	Sheep	What do you think you are doing? You can't even get the greeting right.
+1	cond	After one out of three correct moves:
+2	line	Player	*Whew, that was right. Two more moves to do. If I get those right, he should speak to me.*
+2	cond	If the player fails the greeting:
+3	action	above
+2	cond	After two out of three correct moves:
+3	line	Player	*I just need to do one more move and I'll have gotten the greeting right.*
+3	cond	If the player fails the greeting:
+4	action	above
+3	cond	After a full proper greeting:
+4	line	Sheep	What do you think you are doing? You're going to blow our cover. Get away.
+4	line	Player	But I gave the correct greeting. You have to talk to me.
+4	line	Sheep	Every two-bit soldier knows that salute. We won't give you the time of the day without the secret phrase. Now GO AWAY.
+4	line	Player	But the penguins at the Zoo sent me. They spoke to me without some phrase.
+4	line	Sheep	They are lazy, good for nothing codfish addicts. GO AWAY.
+4	action	end
+0	section	Returning to Larry about a secret phrase
+1	line	Player	The penguins won't talk to me without some stupid secret phrase. These penguins are crazy!
+1	line	Larry	No, I keep trying to tell you, they aren't crazy, they are dangerous and organised.
+1	line	Larry	Well, since the penguin at the Zoo is the only one talking to you, maybe you should ask him.
+1	line	Larry	I can teleport us back to the Zoo, but you'll have to make your own way back. Teleports tire me out.
+1	action	end
+0	section	Asking the Zoo penguin the phrase
+1	option	The penguins in Lumbridge refuse to talk to me.
+2	line	Player	The penguins in Lumbridge refuse to talk to me. They keep demanding a secret phrase.
+2	line	Penguin	So, tell them the phrase. It's not exactly hard to remember. Pescaling Pax has a strange sense of humour.
+2	line	Player	Pesca-what?
+2	line	Penguin	Pescaling Pax. The Pescallion's son. Well, one of them. He's in charge of research and development at our headquarters.
+2	line	Player	Oh, where all of the penguins...I mean us...live?
+2	line	Penguin	Comrade! You really do have a funny sense of humour. No, our people live in the great city of Palingrad, of course. Ah, home, I miss it.
+2	line	Player	You sound pretty homesick. Can't you go and visit Palingrad?
+2	line	Penguin	If only. The Pescallion has declared that until we have finished our research of the southern species and have developed our great plan, we may not return. So I am stuck here observing humans.
+2	line	Player	Gee, I sure would like to get back, too. If only you'd tell me the phrase, so I could get the other mission report and move on.
+2	line	Penguin	How do you not know the phrase, comrade?
+2	option	Uh, I forgot what the phrase was.
+3	line	Player	Uh, I forgot what the phrase was.
+3	line	Player	That was very careless of you, comrade. But it is your problem, not mine.
+2	option	I must have left the outpost before they gave out the phrase.
+3	line	Player	I must have left the outpost before they gave out the phrase.
+3	line	Penguin	No one left before it was given out. I was one of the first operatives to leave, and I know it.
+2	option	Is it Rumpelstiltskin?
+3	line	Penguin	What? Comrade, I think you need your head examined when you get back.
+2	line	Player	I need that phrase! Isn't there anything you can do?
+2	cond	If player is wearing a Ring of Charos:
+3	line	Penguin	As you are a comrade, I suppose it is my duty to help you.
+3	line	Penguin	The phrase is 'Do not trust the walrus'.
+2	cond	With a raw cod in inventory:
+3	line	Penguin	I see you have some raw cod with you comrade. I might be willing to exchange information for it, if you are willing.
+3	option	Sure!
+4	line	Player	Sure!
+4	action	
+4	line	Penguin	Thank you comrade. This is like a taste of the motherland. The phrase is 'Do not trust the walrus.'
+4	action	end
+3	option	Hmm, no I'll hang on to it.
+4	line	Player	Hmm, no I'll hang on to it.
+4	action	end
+2	line	Penguin	I am sorry comrade, but I cannot break protocol without good reason.
+2	action	end
+1	option	Where is the outpost?
+2	line	Penguin	Haa haa haa, that is a funny joke. I like your sense of humour comrade. It would be like asking 'Where is the motherland'.
+2	line	Player	You mean they aren't the same?
+2	line	Penguin	Haa haa haa... oh you have me in stitches.
+2	action	end
+0	section	Not getting the phrase from the Zoo penguin
+1	line	Player	The Zoo penguin won't tell me the phrase.
+1	line	Larry	Maybe there's something he wants, something you can trade for the phrase? Or maybe there's some kind of magic that would persuade him?
+1	line	Player	Well, what do penguins like?
+1	line	Larry	I once had to clean all the penguins feet, back when I had a job.
+1	line	Larry	I distracted them by giving them cod fish and then did the job. It was gross.
+1	line	Player	I don't think I ever want to be a Zoo keeper.
+1	line	Larry	Or perhaps there's some sort of magic that could persuade the penguin? An object of power or the like?
+1	action	end
+0	section	Asking the penguin again
+1	line	Penguin	Yes, comrade?
+1	option	I need that phrase!
+2	line	Player	I need that phrase! Isn't there anything you can do?
+2	action	(See 'Asking the Zoo penguin the phrase' section above)
+1	option	Where is the outpost?
+2	action	(See 'Asking the Zoo penguin the phrase' section above)
+0	section	After obtaining the phrase
+1	line	Player	I got the phrase! These penguins are so weird. It's something about a walrus.
+1	line	Larry	You aren't taking this seriously! They are dangerous!
+1	line	Player	Yeah, and organised. I know.
+1	line	Larry	Oh, just go talk to the sheep.
+1	action	end
+0	section	Returning to the "sheep" with the phrase
+1	line	Player	Do not trust the walrus.
+1	line	Sheep	Fine. What do you want?
+1	line	Player	The penguin at the Zoo told me to see if you had any news.
+1	line	Sheep	We can't get any news in this field! All these humans keep trying to shear us!
+1	line	Sheep	We think the Farmer may be an agent for the other side, trying to have us assassinated by all these foolish humans. If you investigate him for us, we can finish our mission report and you can go on your way.
+1	line	Player	You want me to disguise myself as a human and talk to the Farmer? Seems like a tough request. I'll only do it if you tell me how to get to the outpost.
+1	line	Sheep	What do you mean 'How to get to the outpost'? Any intelligent penguin knows that.
+1	line	Player	Are you calling me dumb? Fine. You can talk to the Farmer yourself, and compromise your mission.
+1	line	Sheep	No, no, we'll tell you. You just deal with the Farmer.
+1	action	end
+0	section	Speaking with Fred
+1	line	Fred the Farmer	What are you doing on my land?
+1	select	Select an Option
+1	option	I'm looking for something to kill.
+1	option	I'm lost.
+1	option	I need to talk to you about penguins.
+2	line	Player	I need to talk to you about penguins.
+2	line	Fred the Farmer	About what now? What do penguins have to do with anything?
+2	select	Select an Option
+2	option	Bully Fred
+3	line	Player	Hey Fred! You've been messing with the wrong people. You better leave the penguins alone... OR ELSE!
+3	line	Fred the Farmer	What are you shouting about? Don't you come into my house shouting at me.
+3	line	Player	I mean it Fred, I don't know whose side you're working for, but assassinating the penguin operatives is going to get you in trouble. To think you'd even stoop to sending others to try and 'shear' them. Be careful, or you might find you've been shorn.
+3	line	Fred the Farmer	Is this some kind of joke? I'm a SHEEP farmer. That means I need to shear sheep. What are these penguins you keep talking about?
+3	line	Player	Don't play neutral with me, Fred. I see right through you. You're probably working for the squirrels, aren't you? I'll be watching Fred. I'm always watching.
+2	option	Warn Fred
+3	line	Player	You know that 'Thing' out in your field? It's two penguins in disguise.
+3	line	Fred the Farmer	Like I haven't heard that before.
+3	line	Player	No really, it is! They're trying to observe humans to learn our weaknesses.
+3	line	Fred the Farmer	Then why are they disguised as sheep?
+3	line	Player	They probably thought they'd blend in better. Anyway, I came to warn you to not annoy them too much. They're funny little guys but they seem to have a grudge against you.
+3	line	Fred the Farmer	You talk to these penguins?
+3	line	Player	Yes, I have a penguin suit and I know the secret greeting. I'm infiltrating them because this crazy guy Larry is convinced they are trying to take over the world or something.
+3	line	Fred the Farmer	Look, when these voices in your head start talking to you again, you might want to ignore them.
+3	line	Player	HEY! I'm not crazy! Larry's a little left of centre, but I'm just helping him out. The penguins really can talk.
+3	line	Fred the Farmer	Right, right. I believe you, sure. Maybe on your way out you could ask the sheep to herd themselves for me.
+3	line	Player	Fine. Don't believe me. Larry and I will prove you wrong. Just don't go near the penguins, Fred, not if you value your life.
+3	action	end
+0	section	Reporting back to the "sheep"
+1	line	Sheep	Is the Farmer an agent for the other side?
+1	select	Select an Option
+1	option	The farmer is definitely an enemy.
+2	line	Player	The Farmer is definitely an enemy. High ranking too, I think. He might even be the King of Lumbridge in disguise!
+2	line	Sheep	King? I thought there was a duke, not a king.
+2	line	Player	Well, that's why he's in disguise. Duh.
+2	line	Sheep	This is an amazing revelation. We must include it in our report. Thank you, we'll mention your bravery.
+1	option	The Farmer is harmless.
+2	line	Player	The Farmer is harmless. The sheep, however...now they seem pretty crafty.
+2	line	Sheep	The sheep? But...They just wander around in this field all day. Trust us, we know.
+2	line	Player	Exactly! So you don't suspect them! That's why they are so cunning. Watch your backs.
+2	line	Sheep	You have a good point. Yes, we must warn Pescaling Pax of this new threat. We'll put it in the report and you can give it to them.
+1	action	
+1	line	Sheep	Well, off you go now!
+1	line	Player	Hey wait, you said you'd tell me where the outpost is!
+1	line	Sheep	You are one clueless penguin. The outpost is the iceberg to the North. The entrance is concealed by what looks like an avalanche.
+1	line	Sheep	When you try and go through a guard will stop you and ask for the password.
+1	line	Sheep	The password is cabbage. Don't forget it.
+1	action	end
+0	section	After finding the outpost's location
+1	line	Player	Haa haa, this is fun!
+1	line	Larry	What? How?
+1	cond	If the player told the penguins that Fred is a threat:
+2	line	Player	I just convinced them Fred the Farmer was the King of Lumbridge!
+2	line	Larry	But there is no King of Lumbridge.
+2	line	Player	Exactly! They are so gullible. Even if they are organised.
+2	line	Larry	Don't take this so lightly. You might put Fred in danger because you were having a laugh.
+2	line	Player	Sorry. It was just a bit of fun.
+1	cond	If the player told the penguins that Fred is harmless:
+2	line	Player	I just convinced the penguins that the sheep are agents for the other side.
+2	line	Larry	They are?
+2	line	Player	No! They're just sheep. But I wanted to confuse the penguins. Put them off our scent.
+2	line	Larry	What a good plan! I just hope the sheep aren't working for the other side.
+2	line	Player	Larry, we need to get you to hang out with people, not animals.
+1	line	Player	I know where their outpost is! The entrance is on the iceberg. It's concealed by an avalanche.
+1	line	Larry	Great. Let's go back to the iceberg, I'll put you in your suit and we'll really see what these penguins are up to.
+1	select	Are you ready to go to the iceberg?
+1	option	Yes
+2	action	end
+1	option	No
+2	line	Player	No.
+2	action	end
+0	section	Entering the outpost
+0	section	Speaking to Larry
+1	line	Larry	Now you can try and enter the outpost. This is exciting.
+1	line	Player	It's fun for you! You're not risking your neck.
+1	line	Larry	But you don't think penguins are dangerous anyway. So there's no danger is there? Or are you coming around to my thinking that they are dangerous?
+1	line	Player	No...I mean...yes. Oh never mind. Just do the spell. Wait, won't the spell wear off once I'm inside? You'll be too far away.
+1	line	Larry	Oh, no. The ice magnifies this spell, so it will allow you to go greater distances.
+1	action	end
+0	section	In front of the entrance
+1	line	Player	This guy looks official. I'd better do the greeting before I speak to him.
+1	action	
+1	cond	If the player fails the greeting:
+2	line	KGP Agent	Don't stand around, agent. You look absurd.
+1	cond	After one out of three correct moves:
+2	line	Player	*Whew, that was right. Two more moves to do. If I get those right, he should speak to me.*
+2	cond	If the player fails the greeting:
+3	action	above
+2	cond	After two out of three correct moves:
+3	line	Player	*I just need to do one more move and I'll have gotten the greeting right.*
+3	cond	If the player fails the greeting:
+4	action	above
+3	cond	After a full proper greeting:
+4	line	KGP Agent	Password?
+4	line	Player	Cabbage.
+4	line	KGP Agent	Let's see your ID and you can go through.
+4	line	Player	ID? No one told me anything about ID.
+4	line	KGP Agent	No ID, no entry!
+4	action	end
+0	section	Asking Larry about an ID
+1	line	Player	The penguin at the entrance said I needed to have an ID. Nobody told me about any ID!
+1	line	Larry	ID? But...they all look alike. Well, the other penguins probably just assumed you had it, since you said you were an agent.
+1	line	Larry	You know, I met a rather shifty looking penguin once, north of Miscellania. He was named after some sort of pasta...
+1	line	Larry	Anyway, he worked for a black market. Maybe he has a contact here who could get you an ID?
+1	line	Player	Penguins have black markets?
+1	line	Larry	Of course. Just look around here for a shifty pasta penguin.
+1	action	end
+0	section	Obtaining an ID from the black market
+1	line	Noodle	Oi, mate, 'u innerested i' sum 'wares?
+1	line	Player	Uh...maybe?
+1	line	Noodle	I go' me sum hot 'wares, mate. Wotcha need?
+1	line	Player	Well, I've misplaced me, I mean my, ID card.
+1	line	Noodle	Ah, frisky nigh' on leave, eh? Betcha furgo' yur missin repor' 'oo.
+1	line	Player	Yeah, my missin repor'. I think I need one of them too.
+1	line	Noodle	Well, mate. 'U scratch me back, I stab urs, right?
+1	line	Player	What? No, no stabbing.
+1	line	Noodle	I men' in a good way. I wan' sumpin in exy-change. Ima in need of sum swamp tur.
+1	line	Player	Tur? Do you mean tar?
+1	line	Noodle	Thas wha' I sed, innit? I need sum feathers 'oo. Foive of 'em.
+1	line	Player	So you need swamp tar and five feathers. Will chicken feathers do?
+1	line	Noodle	Yea, begreat. Then I'll guv yea 'ur stuff.
+1	action	end
+0	section	Trading Noodle
+1	line	Noodle	Yuv go' the stuff?
+1	select	Select an Option
+1	option	Yeah, I got it.
+2	line	Player	Yeah, I got it.
+2	cond	If the player doesn't have the items:
+3	line	Noodle	Whers me swamp tur 'n feathers, mate?
+3	action	end
+2	cond	With swamp tar only:
+3	line	Noodle	Whers me feathers, mate?
+3	action	end
+2	cond	With feathers only:
+3	line	Noodle	Whers me swamp tur, mate?
+3	action	end
+2	action	
+2	action	
+2	action	end
+1	option	What did you need?
+2	line	Player	What did you need?
+2	line	Noodle	I need swamp tur and foive feathers, mate.
+2	action	end
+1	option	Never mind.
+2	line	Player	Never mind.
+2	action	end
+1	option	Tell me about this black market.
+2	line	Player	Tell me about this black market you run. Seems kind of risky.
+2	line	Noodle	Nah ain't risky. Bu' I dun run it. Me bruva, Alfredo, does. E runs the Fettuccine Mafia.
+2	line	Player	Riiiight. Fettucine Mafia. I'll remember that.
+2	action	end
+0	section	Retrieving lost items
+1	line	Noodle	Need summat?
+1	line	Player	Yeah, I need some replacements.
+1	cond	If player has the Kgp id:
+2	line	Noodle	U dunna need ID.
+1	action	
+1	cond	If player has the Mission report:
+2	line	Noodle	Oi, 'u got 'ur repor'.
+1	action	
+1	action	end
+0	section	Obtaining entry permission
+1	line	KGP Agent	Let's see your ID and you can go through.
+1	cond	Without the ID in hand:
+2	line	KGP Agent	No ID, no entry!
+2	action	end
+1	line	KGP Agent	All right, you can go in. The entrance is hidden under that avalanche.
+1	line	KGP Agent	Once inside, go into the room to the left. You'll be debriefed there. No dawdling!
+1	action	end
+0	section	Upon entering
+0	section	Inside the outpost
+0	section	Debriefing
+1	line	KGP Agent	Welcome back agent...
+1	cond	If the player character is male:
+2	line	KGP Agent	Peach? But, aren't you...male?
+2	line	Player	It was either that or Pear.
+2	line	KGP Agent	Ah. Of course.
+1	cond	If the player character is female:
+2	line	KGP Agent	Pablo? But, aren't you...female?
+2	line	Player	Hippie parents, sir. They had weird ideas about names.
+1	line	KGP Agent	So you have just returned from your mission?
+1	line	Player	Yes, and I have my mission report. I also have the mission reports from the operatives in the Ardougne Zoo and the Lumbridge sheep field.
+1	line	KGP Agent	How very industrious of you, agent. Please hand them over.
+1	action	
+1	line	KGP Agent	Hmm, these reports are...intriguing.
+1	line	KGP Agent	It says you jumped off a hill and flew? Without assistance?
+1	line	Player	Oh yeah. It was amazing. You know, I just...flapped. Really fast.
+1	line	KGP Agent	Hmm, we shall have to research this.
+1	cond	If the player has completed Between a Rock...:
+2	line	KGP Agent	Did you really get launched out of a cannon? It seems quite risky.
+2	line	Player	It wasn't too bad. I was wearing a helmet at the time.
+2	line	KGP Agent	This could be very useful during battle.
+1	cond	If the player has completed Enlightened Journey:
+2	line	KGP Agent	You flew in a 'hot air balloon'? What is that exactly?
+2	line	Player	Well, it was a sack of cloth with a basket attached to the bottom and when you filled it with hot air it went up.
+2	line	KGP Agent	Fascinating. Well done agent.
+1	line	KGP Agent	I am satisfied with your reports. You just need to complete a physical and you will be free to roam at your leasure.
+1	line	Player	A physical? What, are they going to examine my body?
+1	line	KGP Agent	Oh no. It's an agility course to make sure you're still fit and able to serve. Don't worry, I'm sure you won't have any difficulty getting through it. Just go through the door at the end of the room.
+1	action	end
+0	section	Finishing the agility course
+1	line	Agility Instructor	Well done soldier! You've successfully completed the physical. You're free to do as you like.
+1	line	Player	What do I do now?
+1	line	Agility Instructor	Just go through the gate in the fence and use the same door you came out of. You can come back whenever you like to tone up your body.
+1	action	end
+0	section	Speaking with the army commander outside the course
+1	line	Player	All those penguins, what are they doing?
+1	line	Army Commander	Ah, they are doing drills! Getting ready for the invasion. What a glorious day that will be!
+1	line	Player	Invasion? Of...
+1	line	Army Commander	Yes, yes, I know we all get excited. But, I need you to get out of the way. Move along!
+1	action	end
+0	section	Reporting to Larry after finding about penguin training
+1	line	Player	Larry, you were right! There's an entire army of them, and they're drilling and... Larry, they're ORGANISED!
+1	line	Larry	That's what I've been saying from the start! But an entire army? This is just an outpost, so it can't be an entire army.
+1	line	Player	I know what I saw! They were doing drills and everything.
+1	line	Larry	Still, it must only be an invasion party. The main force is on...well, it doesn't matter right now.
+1	line	Larry	I've been doing some research of my own, and I think I know what our next step should be. There's a secret room, deep in the glacier. I think that is where they are making their war plans.
+1	line	Player	War plans! Who are they going to war with?
+1	line	Larry	With us, you dolt! They are trying to take over the world. Have you not grasped this yet? You need to find that room. Our future depends on it.
+1	line	Player	Where could this room be?
+1	line	Larry	It's probably the most well guarded room in the place. You'll need to find a way to get into it without arousing suspicion.
+1	line	Player	That's a pretty tall order.
+1	action	end
+0	section	Searching for the secret room
+0	section	Speaking to Larry again before looking for the war room
+1	line	Larry	What are you doing out here! You need to get in there and find the secret room.
+1	line	Player	Keep your shorts on; I'm working on it.
+1	action	end
+0	section	Talking to the agent near the large door
+1	line	Player	You there, let me through those doors.
+1	line	KGP Agent	Let's see your ID, comrade.
+1	line	Player	No problem!
+1	line	KGP Agent	I'm sorry comrade, you do not have the clearance to go through these doors.
+1	action	end
+0	section	Asking penguins in a room nearby about the door
+1	line	Player	You look like...knowledgeable...penguins. What's through those doors at the end of the hall?
+1	line	Pong	Hey man, don't stress. Those doors open new worlds, man. Like, new rooms too.
+1	line	Player	Yes, well, I would like to know what rooms.
+1	line	Ping	Like, the War Room and stuff like that, dude. Wicked stuff. Too bad only 'the man' gets to go through.
+1	line	Player	Humans can go through?
+1	line	Pong	No, man. He just means the authority. The MAN, you know?
+1	line	Player	Who are you? You don't really look like KGP agents.
+1	line	Ping	Dude, we are bards. We sing of the glories of the common penguin. We are also supposed to record history, but man, it is so HIS story. Like, the MAN's story.
+1	line	Player	Penguins have bards?
+1	line	Ping	Totally, dude. You want to hear one of our songs?
+1	line	Player	Sure, I haven't got anything to lose, except my eardrums.
+1	line	Pong	Well, like, we can't play it in THIS now. Maybe at a later now. We don't have any instruments to accompany our great song.
+1	line	Player	But this room is filled with instruments.
+1	line	Pong	Yeah man, but they come from the south, where humans have thumbs to play them with. We don't have thumbs. Also, the Pescaling had our old ones confiscated for being too loud.
+1	line	Player	Way harsh, man.
+1	line	Ping	But dude, I was reading, and there are instruments we could play. I read about one called bongos. They just need to be hit.
+1	line	Pong	But we need two instruments, man. Like, to make it harmonious with the vibes.
+1	line	Player	What about a cowbell? You don't need thumbs for that.
+1	line	Pong	Righteous man. So you'll get a cowbell and bongos for us and we'll rock out. We'll be so harmonious, no Pescallion could complain.
+1	line	Player	Wait, why am I getting these instruments?
+1	line	Pong	Because your aura says you should.
+1	action	end
+0	section	Asking Larry about the cowbell and bongos
+1	line	Player	I think I have a lead. These two penguin bards seem to know a lot of the history of the iceberg. I think they might know a way into the War Room.
+1	line	Larry	Bards? They have bards?
+1	line	Player	Yeah, that's what I said.
+1	line	Player	Where would I get a cowbell or a set of bongos?
+1	line	Larry	I'm not even going to ask why.
+1	line	Larry	I think dairy cows have bells, you could steal one from it. Bongos... I suppose you could make them? Mahogany is good for bending, and then just use soft leather for the drum.
+1	line	Player	Good plan, Larry.
+1	action	end
+0	section	The iceberg's history song
+1	line	Pong	Man, did you bring the instruments to us?
+1	option	What did I need to get you?
+2	line	Player	What did I need to get you?
+2	line	Pong	We want a cowbell and a set of bongos.
+2	action	end
+1	option	Yes.
+2	line	Player	Yes.
+2	cond	If the player doesn't have either:
+3	line	Pong	You didn't bring the instruments.
+3	action	end
+2	cond	With cowbells only:
+3	line	Pong	You didn't bring the bongos.
+3	action	end
+2	cond	With bongos only:
+3	line	Pong	You didn't bring a cowbell.
+3	action	end
+2	line	Pong	Dude, good job on the instruments. Just let us set up and we'll get going.
+2	action	
+2	line	Pong	And a 1 and a 2 and a 3...
+2	line	Ping	Wait, wait. It needs more cowbell.
+2	line	Pong	You're right, man. Let's try this again!
+2	action	(Ping and Pong begin playing their instruments)
+2	line	Pong	There once was a Pescallion, who travelled in a galleon.
+2	line	Ping	Our Pescallion went exploring and found this iceberg
+2	line	Pong	He travelled the world, until his toes curled.
+2	line	Ping	Upon an iceberg he came, and our lives were never the same.
+2	line	Pong	As an outpost it was approved, so here our people moved.
+2	line	Ping	To grow and learn, though our hearts did yearn...
+2	line	Pong	For the motherland.
+2	line	Ping	Deep inside the 'berg lay a threat, but don't fret!
+2	line	Pong	For Pescaling Pax trapped those monsters behind a gate, but let's hope they don't mate.
+2	line	Pong	Now we have no fear
+2	line	Pong	But shed a small tear for the motherland.
+2	action	(The gate's KGP Agent enters the room)
+2	line	KGP Agent	All right, that's enough racket.
+2	line	KGP Agent	Shut those instruments up or I'm throwing you in solitary!
+2	line	KGP Agent	I don't care if your vibes are harmonious!
+2	line	Player	Now might be a good time for me to slip out and get through those doors...
+2	action	(Player quietly leaves the room)
+2	action	end
+1	option	No.
+2	line	Player	No.
+2	action	end
+0	section	Entering the secret room
+1	line	Pescaling Pax	And we'll move this little penguin here...and KABLOOM! Heee hee.
+1	action	(Player is transformed back to human)
+1	line	Pescaling Pax	It appears we have a visitor!
+1	line	Pescaling Pax	Haa haa! I am glad we installed that anti-magic security. What have we here?
+1	action	
+1	line	Pescaling Pax	What an ingenious little device. This will solve all our problems. Scientists! Come examine this; we have much work to do.
+1	line	Player	What about me?
+1	line	Pescaling Pax	Hmm, take that human to the Ice Lords. They'll enjoy the exercise.
+1	action	end
+0	section	Finishing up
+0	section	After escaping the Ice Lords
+1	line	Larry	You're safe! I was really worried for a while there. What happened?
+1	line	Player	Ice Lord...hit me...ow...
+1	line	Larry	Yes, yes, you're very brave. I mean what happened in the War Room?
+1	line	Player	Pescaling Pax was there, and he forced me out of the suit and then threw me into a cage with the Ice Lords!
+1	line	Larry	But what was IN the War Room?
+1	line	Player	There was a map of the world and a lot of little penguin figures.
+1	line	Larry	YES! I knew it! I said I'd prove them all wrong. They are organised and invading. OH YEAH, Larry was right. Who was right? Larry was!
+1	line	Player	LARRY! We've just uncovered a plot that could destroy everything we hold dear. Don't you think we should focus on stopping them?
+1	line	Larry	You are such a buzz kill.
+1	line	Player	We need to plan our next move, but now they know both our scents and might come after us!
+1	line	Larry	No, they only know mine. That agility course really stank up the suit and seems to have covered your scent. You might want to consider bathing soon.
+1	line	Larry	As for our next move, I've got...friends...elsewhere who should hear of this information, but we have plenty of time. It's not as though they made a break through in their research or something.
+1	action	end
+0	section	Extras
+0	section	Interacting with the destroyed hideout
+1	line	Player	The hide was destroyed. It's too damaged to rebuild, so we can't use it to observe penguins any more.
+1	action	end
+0	section	Trying to manually unequip the penguin suit
+0	section	Attempting to speak to "sheep" as a human
+1	line	Player	I can't speak to the penguins when I'm not in my disguise.
+1	action	end
+0	section	Trying to use the shortcut near Fred as a penguin
+0	section	When caught as a human at the iceberg
+1	action	(a KGP Agent appears)
+1	line	KGP Agent	There's been a breach! Red alert!
+1	action	(The player is knocked down and transported to the iceberg entrance next to Larry)
+1	cond	As soon as the player moves:
+2	line	Player	Urrrrrgh!
+0	section	Stealing a cowbell
+1	cond	Failing to steal the bell:
+2	action	(The player takes some damage.)
+2	line	Dairy cow	MOO
+2	action	end
+0	section	Stealing a cowbell from a dairy cow in Zanaris
+1	line	Dairy cow	What are yooo interrupting me for? Can't you see I'm working here?
+1	line	Dairy cow	Moo, what do yoooou think you're doing?
+1	line	Player	Err... Nothing. Just checking that your cowbell was working. Don't want you to get lost!
+1	line	Dairy cow	How exactly am I going to get lost when I'm tied down? What were yooo really doing?
+1	line	Player	I don't think you'll believe me.
+1	line	Dairy cow	I'm a talking cow, I'll believe almost anything.
+1	line	Player	Fine. I need the bell to trick some penguins into helping me get into their secret lair.
+1	line	Dairy cow	Well why didn't you say so? I've got a ton of these things. Go ahead and take the bell.
+1	action	end
+0	section	Making the bongos
+0	section	Trying to leave the Ice lord cage before defeating them

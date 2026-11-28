@@ -6,11 +6,6 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.repo.obj.ObjRepository
-import org.rsmod.api.script.onOpNpc1
-import org.rsmod.api.script.onOpNpc2
-import org.rsmod.api.script.onOpNpc3
-import org.rsmod.api.script.onOpNpc4
-import org.rsmod.api.script.onOpNpc5
 import org.rsmod.api.stats.xpmod.XpModifiers
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
@@ -19,6 +14,7 @@ import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.QuestDialogueHooks
 import org.rsmod.content.quests.framework.QuestDialogueRunner
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.quests.framework.completeQuest
 import org.rsmod.content.quests.framework.questState
 import org.rsmod.content.quests.framework.setQuestState
@@ -45,14 +41,8 @@ constructor(
     }
 
     override fun ScriptContext.startup() {
-        val fred = SheepShearerNpcs.fred
-        when (npcTypes[fred].op.indexOfFirst { it.equals("Talk-to", ignoreCase = true) } + 1) {
-            1 -> onOpNpc1(fred) { talk(it.npc) }
-            2 -> onOpNpc2(fred) { talk(it.npc) }
-            3 -> onOpNpc3(fred) { talk(it.npc) }
-            4 -> onOpNpc4(fred) { talk(it.npc) }
-            5 -> onOpNpc5(fred) { talk(it.npc) }
-        }
+        // Fred's own conversation is the QuestTalk default (Cold War asks him about penguins).
+        with(QuestTalk) { default(npcTypes, SheepShearerNpcs.fred) { talk(it) } }
     }
 
     private suspend fun ProtectedAccess.talk(npc: Npc) {

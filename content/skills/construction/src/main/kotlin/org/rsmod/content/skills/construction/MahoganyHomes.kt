@@ -28,6 +28,7 @@ import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.content.skills.construction.MahoganyHomesData.House
 import org.rsmod.content.skills.construction.MahoganyHomesData.Spot
 import org.rsmod.game.entity.Npc
@@ -149,7 +150,8 @@ constructor(
         bindNpc(MhNpcs.amy_3op, "Last-tier contract") { contract(it, last = true) }
         bindNpc(MhNpcs.amy_3op, "Rewards") { rewards(it) }
         for ((oneOp, twoOp) in MhNpcs.contractors) {
-            for (type in listOf(oneOp, twoOp)) bindNpc(type, "Talk-to") { talkContractor(it) }
+            // QuestTalk: quests (Daddy's Home on Marlo) can claim the conversation; this is the default.
+            for (type in listOf(oneOp, twoOp)) with(QuestTalk) { default(npcTypes, type) { talkContractor(it) } }
             bindNpc(twoOp, "Contract") { contract(it, last = false) }
             bindNpc(twoOp, "Last-tier contract") { contract(it, last = true) }
         }

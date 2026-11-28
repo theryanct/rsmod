@@ -21,6 +21,9 @@ internal object SheepNpcEditor : NpcEditor() {
         sheep(sheep_npcs.unsheared_2789, sheep_npcs.sheared_2692)
         sheep(sheep_npcs.unsheared_5843, sheep_npcs.sheared_5845)
         sheep(sheep_npcs.unsheared_5844, sheep_npcs.sheared_5846)
+        // Varlamore alpacas (Wiki: shearable with shears for wool).
+        sheep(sheep_npcs.alpaca_1, sheep_npcs.alpaca_sheared_1)
+        sheep(sheep_npcs.alpaca_2, sheep_npcs.alpaca_sheared_2)
     }
 
     private fun sheep(unsheared: NpcType, sheared: NpcType) {
@@ -66,4 +69,12 @@ object SheepNpcs : NpcReferences() {
     val sheared_2692 = find("sheepsheeredshaggy2")
     val sheared_5845 = find("fairy_sheepsheered")
     val sheared_5846 = find("fairy_sheepsheered2")
+
+    val alpaca_1 = find("varlamore_alpaca_1")
+    val alpaca_2 = find("varlamore_alpaca_2")
+    val alpaca_sheared_1 = find("varlamore_alpaca_sheared_1")
+    val alpaca_sheared_2 = find("varlamore_alpaca_sheared_2")
+
+    /** Fred's "sheep": two penguins in disguise (Cold War); can't be sheared. */
+    val fake_sheep = find("sheep_shearer_the_thing")
 }

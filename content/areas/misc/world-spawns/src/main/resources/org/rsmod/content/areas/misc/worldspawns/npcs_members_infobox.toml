@@ -6077,12 +6077,12 @@ coords = '0_41_150_40_26'
 
 # Ping
 [[spawn]]
-npc = 'peng_ping_instrument2'
+npc = 'peng_ping'
 coords = '0_41_162_46_27'
 
 # Pong
 [[spawn]]
-npc = 'peng_pong_instrument2'
+npc = 'peng_pong'
 coords = '0_41_162_46_29'
 
 # Void Knight
@@ -6554,12 +6554,12 @@ coords = '0_41_57_9_59'
 # Noodle
 [[spawn]]
 npc = 'peng_noodle_multi'
-coords = '0_41_62_14_42'
+coords = '1_41_62_14_42'
 
 # Army Commander
 [[spawn]]
 npc = 'peng_commander'
-coords = '0_41_63_15_9'
+coords = '1_41_63_15_9'
 
 # Crusher (Penguin Agility Course)
 [[spawn]]

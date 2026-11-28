@@ -10,6 +10,7 @@ import org.rsmod.api.script.onOpNpc3
 import org.rsmod.api.type.builders.map.npc.MapNpcSpawnBuilder
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.content.quests.framework.QuestTalk
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.game.type.obj.ObjType
@@ -38,7 +39,8 @@ class Sawmill @Inject constructor(private val npcTypes: NpcTypeList) : PluginScr
         val ops = npcTypes[SawmillNpcs.operator].op
         val talk = ops.indexOfFirst { it.equals("Talk-to", ignoreCase = true) } + 1
         val buy = ops.indexOfFirst { it.equals("Buy-plank", ignoreCase = true) } + 1
-        bind(talk) { talkTo(it) }
+        // QuestTalk: quests (Daddy's Home's waxwood planks) can claim the conversation.
+        if (talk > 0) with(QuestTalk) { default(npcTypes, SawmillNpcs.operator) { talkTo(it) } }
         bind(buy) { buyPlanks(it) }
     }
 

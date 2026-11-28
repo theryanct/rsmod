@@ -1,9 +1,6 @@
 package org.rsmod.content.quests.framework
 
-import org.rsmod.api.type.editors.dbrow.DbRowEditor
-import org.rsmod.api.type.refs.dbcol.DbColumnReferences
 import org.rsmod.api.type.refs.dbrow.DbRowReferences
-import org.rsmod.api.type.refs.dbtable.DbTableReferences
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.barcrawl.Barcrawl.Companion.BARCRAWL
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
@@ -11,8 +8,10 @@ import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
+import org.rsmod.content.quests.coldwar.ColdWar.Companion.COLD_WAR
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
+import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
 import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
@@ -32,6 +31,7 @@ import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CA
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
+import org.rsmod.content.quests.handinthesand.HandInTheSand.Companion.HAND_IN_THE_SAND
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
 import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
 import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
@@ -39,6 +39,7 @@ import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
+import org.rsmod.content.quests.magearena.MageArena.Companion.MAGE_ARENA_I
 import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
 import org.rsmod.content.quests.losttribe.LostTribe.Companion.LOST_TRIBE
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
@@ -61,6 +62,8 @@ import org.rsmod.content.quests.seaslug.SeaSlug.Companion.SEA_SLUG
 import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
+import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
+import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
@@ -73,8 +76,8 @@ import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTIO
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
 /**
- * Every quest this server implements. **Add a quest here when it's built**: the quest tab shows
- * only these (QuestListEditor hides the rest).
+ * Every quest this server implements. **Add a quest here when it's built**: quest points and
+ * QuestTalk ordering use this list.
  */
 public object BuiltQuests {
     public val all: List<QuestDef> =
@@ -86,8 +89,10 @@ public object BuiltQuests {
             BIG_CHOMPY,
             BLACK_KNIGHTS_FORTRESS,
             CLOCK_TOWER,
+            COLD_WAR,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            DADDYS_HOME,
             DEATH_PLATEAU,
             DEMON_SLAYER,
             DORICS_QUEST,
@@ -107,6 +112,7 @@ public object BuiltQuests {
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
             GRAND_TREE,
+            HAND_IN_THE_SAND,
             HAZEEL_CULT,
             HOLY_GRAIL,
             IDES_OF_MILK,
@@ -114,6 +120,7 @@ public object BuiltQuests {
             JUNGLE_POTION,
             KNIGHTS_SWORD,
             LOST_CITY,
+            MAGE_ARENA_I,
             MERLINS_CRYSTAL,
             LOST_TRIBE,
             MISTHALIN_MYSTERY,
@@ -136,6 +143,8 @@ public object BuiltQuests {
             SHEEP_HERDER,
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
+            SKIPPY_AND_THE_MOGRES,
+            SLEEPING_GIANTS,
             TEMPLE_OF_THE_EYE,
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
@@ -151,29 +160,10 @@ public object BuiltQuests {
     public val rows: Set<String> = all.mapTo(HashSet()) { it.listRow }
 }
 
-/**
- * Hides unbuilt quests from the quest tab. The rev 243 client builds the list from dbtable
- * `quest`; its `questlist_hide_quest` (cs2 3238) skips any row whose `quest:release_type` is 0
- * (column 3: `db_getfield(row, quest:release_type, 0) == 0 -> hidden`). So every quest row that
- * isn't in [BuiltQuests] gets release_type 0; built quests keep their cache value.
- *
- * Only that one column changes (DbRowTypeBuilder.merge keeps the other columns and the larger
- * column count). Nothing finds quest rows by identity hash, so the edit can't trip the hash
- * verifier.
+/*
+ * The quest tab used to hide unbuilt quests (release_type 0 on their dbrows); Ryan asked for the
+ * full real list instead (2026-11-28), so no quest rows are edited any more.
  */
-internal object QuestListEditor : DbRowEditor() {
-    init {
-        for ((name, row) in QuestListRows.byName) {
-            if (name in BuiltQuests.rows) continue
-            edit(row) {
-                table = QuestListTables.quest
-                column(QuestListColumns.release_type) { value = HIDDEN }
-            }
-        }
-    }
-
-    private const val HIDDEN = 0
-}
 
 internal object QuestListRows : DbRowReferences() {
     /** Every quest row in the cache (resources quest_rows.txt, from .data/symbols/dbrow.sym). */
@@ -189,12 +179,4 @@ internal object QuestListRows : DbRowReferences() {
                     .toList()
             }
             .associateWith { find(it) }
-}
-
-internal object QuestListTables : DbTableReferences() {
-    val quest = find("quest")
-}
-
-internal object QuestListColumns : DbColumnReferences() {
-    val release_type = int("quest:release_type")
 }

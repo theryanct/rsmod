@@ -6,7 +6,6 @@ import org.rsmod.api.config.refs.stats
 import org.rsmod.api.invtx.invAddOrDrop
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.stat.statAdvance
-import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onCommand
 import org.rsmod.api.type.refs.obj.ObjReferences
@@ -81,11 +80,8 @@ constructor(private val objTypes: ObjTypeList, private val objRepo: ObjRepositor
     private fun reset(cheat: Cheat) {
         val player = cheat.player
         val quest = find(player, cheat.args.joinToString(" ")) ?: return
-        if (player.isQuestComplete(quest)) {
-            val qp = (player.questPoints - quest.questPoints).coerceAtLeast(0)
-            VarPlayerIntMapSetter.set(player, QuestVarps.qp, qp)
-        }
         player.setQuestState(quest, 0)
+        player.syncQuestPoints()
         player.mes("${quest.name} has been reset.")
     }
 

@@ -19,7 +19,7 @@ import org.rsmod.game.type.varp.VarpType
  * @param varp the cache quest varp (e.g. `cookquest`), or
  * @param varbit the cache quest varbit, for newer quests (e.g. `cluequest`); exactly one is set.
  * @param listRow the quest's dbrow (dbtable `quest`) when it isn't `quest_` + the lowercased name
- *   without punctuation. The quest tab lists only quests in [BuiltQuests] (see QuestListEditor).
+ *   without punctuation. Only [BuiltQuests] can be completed.
  * @param complete the varp value of a finished quest (the db row's end state).
  * @param rewards lines for the quest complete scroll (max 7), e.g. "300 Cooking XP".
  * @param scrollObj the obj shown on the scroll.
@@ -72,7 +72,7 @@ public val Player.questPoints: Int
 public fun Player.grantQuest(quest: QuestDef): Boolean {
     if (isQuestComplete(quest)) return false
     setQuestState(quest, quest.complete)
-    VarPlayerIntMapSetter.set(this, QuestVarps.qp, questPoints + quest.questPoints)
+    syncQuestPoints()
     return true
 }
 

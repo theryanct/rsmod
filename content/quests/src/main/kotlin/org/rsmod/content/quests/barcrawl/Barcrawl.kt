@@ -111,7 +111,8 @@ constructor(private val npcTypes: NpcTypeList, private val objRepo: ObjRepositor
                             )
                     )
                 runQuestSection(npc, dialogue, "Talking to the barbarian guard (2)", hooks)
-                setState(COMPLETE)
+                // completeQuest sets the quest varbit (setting it first would skip the scroll).
+                VarPlayerIntMapSetter.set(player, BarVarps.guard_state, COMPLETE)
                 completeQuest(BARCRAWL)
             }
             state == STARTED -> {
