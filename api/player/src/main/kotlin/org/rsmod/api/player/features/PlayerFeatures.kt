@@ -30,7 +30,9 @@ public enum class Feature(
     AutoResumeGathering("autoresume", "Auto-resume gathering", defaultOn = true, slot = 5),
     NotedGathering("notedgather", "Noted gathering", defaultOn = true, slot = 6),
     NotedDrops("noteddrops", "Noted combat drops", defaultOn = true, slot = 7),
-    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8);
+    BankAnywhere("bankanywhere", "Bank anywhere", defaultOn = true, slot = 8),
+    /** Content locked behind quests (e.g. Runecraft behind Rune Mysteries); off = no gating. */
+    QuestGates("questgates", "Quest requirements gate content", defaultOn = false, slot = 9);
 
     public companion object {
         public fun forKey(key: String): Feature? =

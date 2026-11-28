@@ -6,6 +6,7 @@ import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.spot.SpotanimReferences
 import org.rsmod.api.type.refs.varbit.VarBitReferences
+import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.obj.ObjType
 import org.rsmod.game.type.varbit.VarBitType
@@ -54,4 +55,8 @@ internal object RunecraftSpotanims : SpotanimReferences() {
 internal object RunecraftVarBits : VarBitReferences() {
     val byName: Map<String, VarBitType> =
         RunecraftData.altars.map { it.varbit }.associateWith { find(it) }
+}
+
+internal object RunecraftVarps : VarpReferences() {
+    val runemysteries = find("runemysteries")
 }
