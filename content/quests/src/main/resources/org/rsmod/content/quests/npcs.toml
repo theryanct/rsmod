@@ -1237,3 +1237,33 @@ coords = '2_30_80_32_26'
 [[spawn]]
 npc = 'cowboss_farmer'
 coords = '0_49_51_34_15'
+
+# Eagles' Peak: Nickolaus in the giant eagle's nest (shout-to / disguised multinpc) and the
+# eyrie eagles (Quick-travel once the quest is complete): three at the peak, one in each remote eyrie.
+[[spawn]]
+npc = 'eaglepeak_nickolaus'
+coords = '3_31_77_22_31'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_polar'
+coords = '3_31_77_42_35'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_desert'
+coords = '3_31_77_36_30'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_jungle'
+coords = '3_31_77_39_33'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_polar'
+coords = '0_42_159_39_41'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_desert'
+coords = '0_53_149_30_35'
+
+[[spawn]]
+npc = 'eaglepeak_eagle_jungle'
+coords = '0_39_145_20_42'
