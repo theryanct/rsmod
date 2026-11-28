@@ -1,0 +1,165 @@
+# Generated from the OSRS Wiki page "The Knight's Sword/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>squire</col> in the courtyard of the <col=800000>White Knights' Castle</col> in <col=800000>Falador</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 10 Mining
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the <col=800000>Squire</col> in the <col=800000>White Knights' Castle</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<col=000080>Talk to <col=800000>Reldo</col> in the library of <col=800000>Varrock Palace</col>. ( if <col=800000>Shield of Arrav</col> not started.) Skip this step if you already met Thurgo during <col=800000>The Giant Dwarf</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<col=000080>Talk to <col=800000>Thurgo</col> south of <col=800000>Port Sarim</col> (by the anvil, north of the <col=800000>fairy ring</col> AIQ) and give him a <col=800000>redberry pie</col>. ( if <col=800000>The Giant Dwarf</col> quest is in progress.)</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<col=000080>Talk to him again.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<col=000080>Go back and talk to the Squire.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<col=000080>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the <col=800000>cupboard</col> in <col=800000>Sir Vyvin</col>'s bedroom for a <col=800000>portrait</col>. He must not be looking at you.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+line	
+line	<col=000080>Proceed back to <col=800000>Thurgo</col> and give him the <col=800000>portrait</col>. Bring iron bars with you.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+line	
+line	<str>Proceed back to Thurgo and give him the portrait. Bring iron bars with you.</str>
+line	
+line	<col=000080>Go to the <col=800000>Asgarnian Ice Dungeon</col> using the trapdoor to the east of <col=800000>Thurgo</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+line	
+line	<str>Proceed back to Thurgo and give him the portrait. Bring iron bars with you.</str>
+line	
+line	<str>Go to the Asgarnian Ice Dungeon using the trapdoor to the east of Thurgo.</str>
+line	
+line	<col=000080>Once inside, follow the path west, north, and then east. Keep along the southern wall in the icy area and mine a <col=800000>blurite ore</col>. Mine another if planning on doing the <col=800000>Falador Easy Diary</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+line	
+line	<str>Proceed back to Thurgo and give him the portrait. Bring iron bars with you.</str>
+line	
+line	<str>Go to the Asgarnian Ice Dungeon using the trapdoor to the east of Thurgo.</str>
+line	
+line	<str>Once inside, follow the path west, north, and then east. Keep along the southern wall in the icy area and mine a blurite ore. Mine another if planning on doing the Falador Easy Diary.</str>
+line	
+line	<col=000080>Talk to Thurgo with your <col=800000>iron bar</col>s and <col=800000>blurite ore</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to the Squire in the White Knights' Castle.</str>
+line	
+line	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+line	
+line	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Go back and talk to the Squire.</str>
+line	
+line	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+line	
+line	<str>Proceed back to Thurgo and give him the portrait. Bring iron bars with you.</str>
+line	
+line	<str>Go to the Asgarnian Ice Dungeon using the trapdoor to the east of Thurgo.</str>
+line	
+line	<str>Once inside, follow the path west, north, and then east. Keep along the southern wall in the icy area and mine a blurite ore. Mine another if planning on doing the Falador Easy Diary.</str>
+line	
+line	<str>Talk to Thurgo with your iron bars and blurite ore.</str>
+line	
+line	<col=000080>Bring the sword to the Squire.</col>
+done	<str>Talk to the Squire in the White Knights' Castle.</str>
+done	
+done	<str>Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.</str>
+done	
+done	<str>Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)</str>
+done	
+done	<str>Talk to him again.</str>
+done	
+done	<str>Go back and talk to the Squire.</str>
+done	
+done	<str>Climb-up the ladder on the eastern side of the castle to the uk=1. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you.</str>
+done	
+done	<str>Proceed back to Thurgo and give him the portrait. Bring iron bars with you.</str>
+done	
+done	<str>Go to the Asgarnian Ice Dungeon using the trapdoor to the east of Thurgo.</str>
+done	
+done	<str>Once inside, follow the path west, north, and then east. Keep along the southern wall in the icy area and mine a blurite ore. Mine another if planning on doing the Falador Easy Diary.</str>
+done	
+done	<str>Talk to Thurgo with your iron bars and blurite ore.</str>
+done	
+done	<str>Bring the sword to the Squire.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

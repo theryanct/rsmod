@@ -1,0 +1,879 @@
+# Generated from the OSRS Wiki page "Shadow of the Storm/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Father Reen</col> south of <col=800000>Al Kharid</col> bank.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Crafting
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Father Reen</col> outside <col=800000>Al Kharid</col> bank.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<col=000080>Travel to the <col=800000>Ruins of Uzer</col> via the <col=800000>magic carpet</col> south of Al Kharid (or use the <col=800000>necklace of passage</col> teleport to <col=800000>Eagle's Eyrie</col> and run south-east). You can also use a fairy ring (DLQ) and go north-east.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<col=000080>Talk to <col=800000>Father Badden</col> near the ruin entrance. Be sure to have Silverlight in your inventory.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<col=000080>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<col=000080>Go down the stairs and grab a copy of the <col=800000>Strange implement</col> in the north-west corner of the ruin.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<col=000080>Talk to <col=800000>Evil Dave</col> in the dungeon wearing your 3 black items and your dyed Silverlight.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<col=000080>Talk to <col=800000>Denath</col> on the other side of the portal.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<col=000080>Talk to <col=800000>Jennifer</col> to get a <col=800000>demonic sigil mould</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<col=000080>Talk to <col=800000>Matthew</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<col=000080>Go to any <col=800000>furnace</col> and smelt a <col=800000>demonic sigil</col> (use <col=800000>silver bar</col> on furnace and select 'demonic sigil').</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<col=000080>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<col=000080>Head back to Uzer and talk to the clay golem outside about last night.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<col=000080>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<col=000080>Read the book, and take it to Matthew on the other side of the portal</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<col=000080>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<col=000080>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<col=000080>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<col=000080>Enter the portal to exit the room and take Tanya's sigil.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<col=000080>Tell Evil Dave to return to the lair – you should have 4 sigils now.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<col=000080>Talk to Father Badden outside.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<col=000080>Convince Father Reen to join the ritual.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<col=000080>Talk to the golem, he will refuse to help.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<col=000080>Use the Strange implement on the golem to reprogram him.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<str>Use the Strange implement on the golem to reprogram him.</str>
+line	
+line	<col=000080>Talk to the golem again to make him enter the dungeon.</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<str>Use the Strange implement on the golem to reprogram him.</str>
+line	
+line	<str>Talk to the golem again to make him enter the dungeon.</str>
+line	
+line	<col=000080>Talk to Matthew to start the incantation, say it backwards.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<str>Use the Strange implement on the golem to reprogram him.</str>
+line	
+line	<str>Talk to the golem again to make him enter the dungeon.</str>
+line	
+line	<str>Talk to Matthew to start the incantation, say it backwards.</str>
+line	
+line	<col=000080>Kill <col=800000>Agrith Naar</col> with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt.</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<str>Use the Strange implement on the golem to reprogram him.</str>
+line	
+line	<str>Talk to the golem again to make him enter the dungeon.</str>
+line	
+line	<str>Talk to Matthew to start the incantation, say it backwards.</str>
+line	
+line	<str>Kill Agrith Naar with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt.</str>
+line	
+line	<col=000080>Unequip Silverlight.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to Father Reen outside Al Kharid bank.</str>
+line	
+line	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+line	
+line	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+line	
+line	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+line	
+line	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+line	
+line	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+line	
+line	<str>Talk to Denath on the other side of the portal.</str>
+line	
+line	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+line	
+line	<str>Talk to Matthew.</str>
+line	
+line	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+line	
+line	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+line	
+line	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+line	
+line	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+line	
+line	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+line	
+line	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+line	
+line	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+line	
+line	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+line	
+line	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+line	
+line	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+line	
+line	<str>Talk to Father Badden outside.</str>
+line	
+line	<str>Convince Father Reen to join the ritual.</str>
+line	
+line	<str>Talk to the golem, he will refuse to help.</str>
+line	
+line	<str>Use the Strange implement on the golem to reprogram him.</str>
+line	
+line	<str>Talk to the golem again to make him enter the dungeon.</str>
+line	
+line	<str>Talk to Matthew to start the incantation, say it backwards.</str>
+line	
+line	<str>Kill Agrith Naar with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt.</str>
+line	
+line	<str>Unequip Silverlight.</str>
+line	
+line	<col=000080>Choose your reward to finish the quest.</col>
+done	<str>Talk to Father Reen outside Al Kharid bank.</str>
+done	
+done	<str>Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east.</str>
+done	
+done	<str>Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.</str>
+done	
+done	<str>Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).</str>
+done	
+done	<str>Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin.</str>
+done	
+done	<str>Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.</str>
+done	
+done	<str>Talk to Denath on the other side of the portal.</str>
+done	
+done	<str>Talk to Jennifer to get a demonic sigil mould.</str>
+done	
+done	<str>Talk to Matthew.</str>
+done	
+done	<str>Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil').</str>
+done	
+done	<str>Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you).</str>
+done	
+done	<str>Head back to Uzer and talk to the clay golem outside about last night.</str>
+done	
+done	<str>Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet).</str>
+done	
+done	<str>Read the book, and take it to Matthew on the other side of the portal</str>
+done	
+done	<str>Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.</str>
+done	
+done	<str>Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens).</str>
+done	
+done	<str>TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)</str>
+done	
+done	<str>Enter the portal to exit the room and take Tanya's sigil.</str>
+done	
+done	<str>Tell Evil Dave to return to the lair – you should have 4 sigils now.</str>
+done	
+done	<str>Talk to Father Badden outside.</str>
+done	
+done	<str>Convince Father Reen to join the ritual.</str>
+done	
+done	<str>Talk to the golem, he will refuse to help.</str>
+done	
+done	<str>Use the Strange implement on the golem to reprogram him.</str>
+done	
+done	<str>Talk to the golem again to make him enter the dungeon.</str>
+done	
+done	<str>Talk to Matthew to start the incantation, say it backwards.</str>
+done	
+done	<str>Kill Agrith Naar with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt.</str>
+done	
+done	<str>Unequip Silverlight.</str>
+done	
+done	<str>Choose your reward to finish the quest.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

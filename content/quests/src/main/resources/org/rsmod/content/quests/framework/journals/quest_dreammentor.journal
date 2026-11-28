@@ -1,0 +1,711 @@
+# Generated from the OSRS Wiki page "Dream Mentor/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>fallen man</col> in the small cave in the <col=800000>Lunar Isle mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Master</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 85 Combat
+step	1	-	Quick guide step 1
+line	<col=000080>Travel to <col=800000>Lunar Isle</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<col=000080>Enter the mine in the north-east area of Lunar Isle.</col>
+step	3	-	Quick guide step 3
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<col=000080>Crawl through the cave entrance (Quest Quest minimap icon).</col>
+step	4	-	Quick guide step 4
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<col=000080>Talk to the fallen man, follow the dialogue and close the interface when it appears.</col>
+step	5	-	Quick guide step 5
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<col=000080>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</col>
+step	6	-	Quick guide step 6
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<col=000080>Talk to him again.</col>
+step	7	-	Quick guide step 7
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<col=000080>Feed him 4 more food as before.</col>
+step	8	-	Quick guide step 8
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<col=000080>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</col>
+step	9	-	Quick guide step 9
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<col=000080>Feed him 6 more food.</col>
+step	10	-	Quick guide step 10
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<col=000080>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</col>
+step	11	-	Quick guide step 11
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<col=000080>Talk to <col=800000>'Bird's-Eye' Jack</col> in the bank.</col>
+step	12	-	Quick guide step 12
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<col=000080>Select the following equipment (if your combat level is determined by your melee skills):</col>
+step	13	-	Quick guide step 13
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<col=000080>Return and talk to Cyrisus for a cutscene.</col>
+step	14	-	Quick guide step 14
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<col=000080>Use food on him until his health is at 100%.</col>
+step	15	-	Quick guide step 15
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<col=000080>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</col>
+step	16	-	Quick guide step 16
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Oneiromancer</col> at the Astral Altar for a <col=800000>dream vial</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<col=000080>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</col>
+step	18	-	Quick guide step 18
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<col=000080>Fill the vial with water, add a <col=800000>goutweed</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<col=000080>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</col>
+step	20	-	Quick guide step 20
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<col=000080>Add your <col=800000>ground astral rune</col> to the <col=800000>dream vial</col> to complete the potion.</col>
+step	21	-	Quick guide step 21
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+line	
+line	<col=000080>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your <col=800000>Seal of Passage</col>; not even <col=800000>'Birds-Eye' Jack</col> will serve you without it yet.</col>
+step	22	-	Quick guide step 22
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+line	
+line	<str>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet.</str>
+line	
+line	<col=000080>Light the Ceremonial Brazier in the dream hall building.</col>
+step	23	-	Quick guide step 23
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+line	
+line	<str>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet.</str>
+line	
+line	<str>Light the Ceremonial Brazier in the dream hall building.</str>
+line	
+line	<col=000080>Talk to <col=800000>Cyrisus</col>.</col>
+step	24	-	Quick guide step 24
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+line	
+line	<str>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet.</str>
+line	
+line	<str>Light the Ceremonial Brazier in the dream hall building.</str>
+line	
+line	<str>Talk to Cyrisus.</str>
+line	
+line	<col=000080>During the fight, you can leave at any time by using the lectern, although this will force you to re-battle any defeated bosses.</col>
+step	25	-	Quick guide step 25
+line	<str>Travel to Lunar Isle.</str>
+line	
+line	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+line	
+line	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+line	
+line	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+line	
+line	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Feed him 4 more food as before.</str>
+line	
+line	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+line	
+line	<str>Feed him 6 more food.</str>
+line	
+line	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+line	
+line	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+line	
+line	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+line	
+line	<str>Return and talk to Cyrisus for a cutscene.</str>
+line	
+line	<str>Use food on him until his health is at 100%.</str>
+line	
+line	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+line	
+line	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+line	
+line	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+line	
+line	<str>Fill the vial with water, add a goutweed.</str>
+line	
+line	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+line	
+line	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+line	
+line	<str>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet.</str>
+line	
+line	<str>Light the Ceremonial Brazier in the dream hall building.</str>
+line	
+line	<str>Talk to Cyrisus.</str>
+line	
+line	<str>During the fight, you can leave at any time by using the lectern, although this will force you to re-battle any defeated bosses.</str>
+line	
+line	<col=000080>Return to the Oneiromancer.</col>
+done	<str>Travel to Lunar Isle.</str>
+done	
+done	<str>Enter the mine in the north-east area of Lunar Isle.</str>
+done	
+done	<str>Crawl through the cave entrance (Quest Quest minimap icon).</str>
+done	
+done	<str>Talk to the fallen man, follow the dialogue and close the interface when it appears.</str>
+done	
+done	<str>Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row.</str>
+done	
+done	<str>Talk to him again.</str>
+done	
+done	<str>Feed him 4 more food as before.</str>
+done	
+done	<str>Talk to him and keep reassuring him with positive responses until he sits up (cutscene).</str>
+done	
+done	<str>Feed him 6 more food.</str>
+done	
+done	<str>Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.</str>
+done	
+done	<str>Talk to 'Bird's-Eye' Jack in the bank.</str>
+done	
+done	<str>Select the following equipment (if your combat level is determined by your melee skills):</str>
+done	
+done	<str>Return and talk to Cyrisus for a cutscene.</str>
+done	
+done	<str>Use food on him until his health is at 100%.</str>
+done	
+done	<str>Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.</str>
+done	
+done	<str>Talk to the Oneiromancer at the Astral Altar for a dream vial.</str>
+done	
+done	<str>(Optional) Change your spellbook as necessary if you wish to use magic in the final fight.</str>
+done	
+done	<str>Fill the vial with water, add a goutweed.</str>
+done	
+done	<str>Use your hammer on an Astral rune, then grind the shards with a pestle and mortar.</str>
+done	
+done	<str>Add your ground astral rune to the dream vial to complete the potion.</str>
+done	
+done	<str>Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet.</str>
+done	
+done	<str>Light the Ceremonial Brazier in the dream hall building.</str>
+done	
+done	<str>Talk to Cyrisus.</str>
+done	
+done	<str>During the fight, you can leave at any time by using the lectern, although this will force you to re-battle any defeated bosses.</str>
+done	
+done	<str>Return to the Oneiromancer.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

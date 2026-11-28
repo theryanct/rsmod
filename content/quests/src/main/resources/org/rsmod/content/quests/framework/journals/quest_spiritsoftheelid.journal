@@ -1,5 +1,5 @@
-# Authored (not Wiki): ui's OSRS-style journal for quest_spiritsoftheelid (no Wiki journal transcript).
-before	<col=000080>I can start this quest by talking to <col=800000>Awusah the Mayor</col> in <col=800000>Nardah</col>.</col>
+# Generated from the OSRS Wiki page "Spirits of the Elid/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Awusah the Mayor</col> in <col=800000>Nardah</col>.</col>
 before	
 before	<col=000080>Difficulty:</col>
 before	<col=800000>Intermediate</col>
@@ -11,46 +11,758 @@ req	Level 33 Magic
 req	Level 37 Ranged
 req	Level 37 Mining
 req	Level 37 Thieving
-step	1	10	Authored
-line	<col=000080>Nardah's fountain has dried up. <col=800000>Ghaslor the Elder</col> might know why, and the <col=800000>Robes of Elidinis</col> in the temple might help.</col>
-step	2	40	Authored
-line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+step	1	-	Quick guide step 1
+line	<col=000080>Head to <col=800000>Nardah</col>, south of <col=800000>fairy ring</col> DLQ, and talk to <col=800000>Awusah the Mayor</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
 line	
-line	<col=000080>The spirits of the Elid say Nardah lost its statuette of <col=800000>Elidinis</col>. The mayor may know where it went.</col>
-step	3	45	Authored
-line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	<col=000080>Head to the house to the north and talk to <col=800000>Ghaslor the Elder</col>. Make sure to receive <col=800000>ballad</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
 line	
-line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
 line	
-line	<col=000080>The mayor threw the statuette into the <col=800000>crevice</col> west of the general store.</col>
-step	4	50	Authored
-line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	<col=000080>Head to the building north of the fountain and west of Ghaslor's house.</col>
+step	4	-	Quick guide step 4
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
 line	
-line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
 line	
-line	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
 line	
-line	<col=000080>The <col=800000>Genie</col> in the crevice will trade the statuette for a soul... or the mayor's <col=800000>sole</col>.</col>
-step	5	55	Authored
-line	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	<col=000080>Search the north-west cupboard for a <col=800000>torn robe top</col> and <col=800000>bottom</col>. Click here to continue when searching or you must search it twice.</col>
+step	5	-	Quick guide step 5
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
 line	
-line	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
 line	
-line	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
 line	
-line	<str>The Genie in the crevice will trade the statuette for a soul... or the mayor's sole.</str>
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
 line	
-line	<col=000080>I have the statuette. I should put it back on the <col=800000>plinth</col> in the shrine.</col>
-done	<str>Nardah's fountain has dried up. Ghaslor the Elder might know why, and the Robes of Elidinis in the temple might help.</str>
+line	<col=000080>Use a <col=800000>needle</col> and <col=800000>thread</col> on the <col=800000>torn robe</col>s (make sure you grab both top and bottom) and equip them</col>
+step	6	-	Quick guide step 6
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<col=000080><col=800000>Telegrab</col> the <col=800000>ancestral key</col> on the table in the east side of the building.</col>
+step	7	-	Quick guide step 7
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<col=000080>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: <col=800000>Necklace of passage</col> Eagle's Eyrie teleport and go south-west)</col>
+step	8	-	Quick guide step 8
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<col=000080>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</col>
+step	9	-	Quick guide step 9
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<col=000080>Use your rope on the root which overhangs the cave.</col>
+step	10	-	Quick guide step 10
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<col=000080>Equip the <col=800000>robes of Elidinis</col> and use the ancestral key on the door.</col>
+step	11	-	Quick guide step 11
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<col=000080>Head east to the three doors.</col>
+step	12	-	Quick guide step 12
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<col=000080>Kill the <col=800000>white golem</col> to the south which is weak to <col=800000>stab</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<col=000080>Enter the room and clear the water channel via <col=800000>Thieving</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<col=000080>Kill the <col=800000>Grey golem</col> to the east which is weak to <col=800000>slash</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<col=000080>Enter the room and clear the water channel with a <col=800000>pickaxe</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<col=000080>Kill the <col=800000>Black golem</col> to the north-east which is weak to <col=800000>crush</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<col=000080>Enter the room and clear the water channel by attacking the target on the other side with <col=800000>Ranged</col> or <col=800000>Magic</col> (37 ranged required even if using Magic).</col>
+step	18	-	Quick guide step 18
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<col=000080>Go through the north door and talk to one of the spirits.</col>
+step	19	-	Quick guide step 19
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<col=000080>Head back to Nardah.</col>
+step	20	-	Quick guide step 20
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<col=000080>Talk to <col=800000>Awusah the Mayor</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<col=000080>Take the <col=800000>shoes</col> by his door and use a <col=800000>knife</col> on them whilst outside of the house to obtain <col=800000>sole</col>.</col>
+step	22	-	Quick guide step 22
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+line	
+line	<col=000080>Head west from the <col=800000>Nardah General Store</col> to a crevice. Make sure you have a <col=800000>light source</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+line	
+line	<str>Head west from the Nardah General Store to a crevice. Make sure you have a light source.</str>
+line	
+line	<col=000080>Use a <col=800000>rope</col> on it and head through the door to the north.</col>
+step	24	-	Quick guide step 24
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+line	
+line	<str>Head west from the Nardah General Store to a crevice. Make sure you have a light source.</str>
+line	
+line	<str>Use a rope on it and head through the door to the north.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Genie</col> to the north . Visiting the Genie is a Medium task in the <col=800000>Desert Diary</col>.</col>
+step	25	-	Quick guide step 25
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+line	
+line	<str>Head west from the Nardah General Store to a crevice. Make sure you have a light source.</str>
+line	
+line	<str>Use a rope on it and head through the door to the north.</str>
+line	
+line	<str>Talk to the Genie to the north . Visiting the Genie is a Medium task in the Desert Diary.</str>
+line	
+line	<col=000080>Talk to Genie again.</col>
+step	26	-	Quick guide step 26
+line	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
+line	
+line	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
+line	
+line	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
+line	
+line	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
+line	
+line	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
+line	
+line	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+line	
+line	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+line	
+line	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+line	
+line	<str>Use your rope on the root which overhangs the cave.</str>
+line	
+line	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+line	
+line	<str>Head east to the three doors.</str>
+line	
+line	<str>Kill the white golem to the south which is weak to stab.</str>
+line	
+line	<str>Enter the room and clear the water channel via Thieving.</str>
+line	
+line	<str>Kill the Grey golem to the east which is weak to slash.</str>
+line	
+line	<str>Enter the room and clear the water channel with a pickaxe.</str>
+line	
+line	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+line	
+line	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+line	
+line	<str>Go through the north door and talk to one of the spirits.</str>
+line	
+line	<str>Head back to Nardah.</str>
+line	
+line	<str>Talk to Awusah the Mayor.</str>
+line	
+line	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+line	
+line	<str>Head west from the Nardah General Store to a crevice. Make sure you have a light source.</str>
+line	
+line	<str>Use a rope on it and head through the door to the north.</str>
+line	
+line	<str>Talk to the Genie to the north . Visiting the Genie is a Medium task in the Desert Diary.</str>
+line	
+line	<str>Talk to Genie again.</str>
+line	
+line	<col=000080>Head back to Nardah and use the <col=800000>statuette</col> on the plinth in the <col=800000>Shrine to Elidinis</col> north of the fountain.</col>
+done	<str>Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor.</str>
 done	
-done	<str>The spirits of the Elid say Nardah lost its statuette of Elidinis. The mayor may know where it went.</str>
+done	<str>Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.</str>
 done	
-done	<str>The mayor threw the statuette into the crevice west of the general store.</str>
+done	<str>Head to the building north of the fountain and west of Ghaslor's house.</str>
 done	
-done	<str>The Genie in the crevice will trade the statuette for a soul... or the mayor's sole.</str>
+done	<str>Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice.</str>
 done	
-done	<str>I have the statuette. I should put it back on the plinth in the shrine.</str>
+done	<str>Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them</str>
 done	
-done	<str>I returned the statuette of Elidinis and Nardah's fountain flows again.</str>
+done	<str>Telegrab the ancestral key on the table in the east side of the building.</str>
+done	
+done	<str>Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)</str>
+done	
+done	<str>(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)</str>
+done	
+done	<str>Use your rope on the root which overhangs the cave.</str>
+done	
+done	<str>Equip the robes of Elidinis and use the ancestral key on the door.</str>
+done	
+done	<str>Head east to the three doors.</str>
+done	
+done	<str>Kill the white golem to the south which is weak to stab.</str>
+done	
+done	<str>Enter the room and clear the water channel via Thieving.</str>
+done	
+done	<str>Kill the Grey golem to the east which is weak to slash.</str>
+done	
+done	<str>Enter the room and clear the water channel with a pickaxe.</str>
+done	
+done	<str>Kill the Black golem to the north-east which is weak to crush.</str>
+done	
+done	<str>Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic).</str>
+done	
+done	<str>Go through the north door and talk to one of the spirits.</str>
+done	
+done	<str>Head back to Nardah.</str>
+done	
+done	<str>Talk to Awusah the Mayor.</str>
+done	
+done	<str>Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole.</str>
+done	
+done	<str>Head west from the Nardah General Store to a crevice. Make sure you have a light source.</str>
+done	
+done	<str>Use a rope on it and head through the door to the north.</str>
+done	
+done	<str>Talk to the Genie to the north . Visiting the Genie is a Medium task in the Desert Diary.</str>
+done	
+done	<str>Talk to Genie again.</str>
+done	
+done	<str>Head back to Nardah and use the statuette on the plinth in the Shrine to Elidinis north of the fountain.</str>
 done	
 done	<col=ff0000>QUEST COMPLETE!</col>

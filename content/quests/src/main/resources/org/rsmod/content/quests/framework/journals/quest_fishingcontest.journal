@@ -1,0 +1,119 @@
+# Generated from the OSRS Wiki page "Fishing Contest/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Austri</col> east of <col=800000>White Wolf Mountain</col> or <col=800000>Vestri</col> to the west of it, by either tunnel entrance.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 10 Fishing
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to either dwarves on either side of the <col=800000>White Wolf Mountain</col>. Note: Starting on the west side makes travelling by foot easier.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<col=000080>If you need <col=800000>garlic</col>, go to <col=800000>Seers' Village</col> and take it from the house south-west of the bank (it spawns on the table).</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<col=000080>Bring a <col=800000>spade</col> and make your way to <col=800000>McGrubor's Wood</col> (either enter through the back or teleport to <col=800000>fairy ring</col> ALS if you completed at least half of <col=800000>Fairytale II - Cure a Queen</col>) to gather 3 <col=800000>red vine worm</col>. You can collect them by checking the vine just west of the <col=800000>fairy ring</col> ALS.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<col=000080>Either walk south to <col=800000>Hemenster</col> or teleport to the <col=800000>Ranging Guild</col> via your <col=800000>combat bracelet</col> and go north-west.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+line	
+line	<col=000080>If you don't have a Fishing Rod, purchase one from <col=800000>Grandpa Jack</col> for 5|c in the house outside <col=800000>Hemenster</col> entrance.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+line	
+line	<str>If you don't have a Fishing Rod, purchase one from Grandpa Jack for 5|c in the house outside Hemenster entrance.</str>
+line	
+line	<col=000080>Enter <col=800000>Hemenster</col> with the Fishing pass in your inventory.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+line	
+line	<str>If you don't have a Fishing Rod, purchase one from Grandpa Jack for 5|c in the house outside Hemenster entrance.</str>
+line	
+line	<str>Enter Hemenster with the Fishing pass in your inventory.</str>
+line	
+line	<col=000080>Put a <col=800000>Garlic</col> in the pipes to the north. Make sure to finish the dialogue.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+line	
+line	<str>If you don't have a Fishing Rod, purchase one from Grandpa Jack for 5|c in the house outside Hemenster entrance.</str>
+line	
+line	<str>Enter Hemenster with the Fishing pass in your inventory.</str>
+line	
+line	<str>Put a Garlic in the pipes to the north. Make sure to finish the dialogue.</str>
+line	
+line	<col=000080>Pay Bonzo 5 coins. Wait for the <col=800000>Sinister Stranger</col> to move away from the pipes. Start fishing and wait for the contest to end.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+line	
+line	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+line	
+line	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+line	
+line	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+line	
+line	<str>If you don't have a Fishing Rod, purchase one from Grandpa Jack for 5|c in the house outside Hemenster entrance.</str>
+line	
+line	<str>Enter Hemenster with the Fishing pass in your inventory.</str>
+line	
+line	<str>Put a Garlic in the pipes to the north. Make sure to finish the dialogue.</str>
+line	
+line	<str>Pay Bonzo 5 coins. Wait for the Sinister Stranger to move away from the pipes. Start fishing and wait for the contest to end.</str>
+line	
+line	<col=000080>After winning the contest, make your way back to the dwarf and show him the trophy.</col>
+done	<str>Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.</str>
+done	
+done	<str>If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table).</str>
+done	
+done	<str>Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS.</str>
+done	
+done	<str>Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west.</str>
+done	
+done	<str>If you don't have a Fishing Rod, purchase one from Grandpa Jack for 5|c in the house outside Hemenster entrance.</str>
+done	
+done	<str>Enter Hemenster with the Fishing pass in your inventory.</str>
+done	
+done	<str>Put a Garlic in the pipes to the north. Make sure to finish the dialogue.</str>
+done	
+done	<str>Pay Bonzo 5 coins. Wait for the Sinister Stranger to move away from the pipes. Start fishing and wait for the contest to end.</str>
+done	
+done	<str>After winning the contest, make your way back to the dwarf and show him the trophy.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,29 @@
+# Generated from the OSRS Wiki page "Family Pest/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to <col=800000>Dimintheis</col> in south-east Varrock.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>2</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Family Crest
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Dimintheis</col> (south-east Varrock).</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Dimintheis (south-east Varrock).</str>
+line	
+line	<col=000080>Speak to the brothers in any order.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Dimintheis (south-east Varrock).</str>
+line	
+line	<str>Speak to the brothers in any order.</str>
+line	
+line	<col=000080>Return and speak to Dimintheis with 500,000 coins.</col>
+done	<str>Speak to Dimintheis (south-east Varrock).</str>
+done	
+done	<str>Speak to the brothers in any order.</str>
+done	
+done	<str>Return and speak to Dimintheis with 500,000 coins.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

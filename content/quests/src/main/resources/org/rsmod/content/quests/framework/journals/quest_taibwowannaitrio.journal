@@ -1,0 +1,1493 @@
+# Generated from the OSRS Wiki page "Tai Bwo Wannai Trio/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Timfraku</col> in his house in <col=800000>Tai Bwo Wannai</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Agility
+req	Level 30 Cooking
+req	Level 5 Fishing
+step	1	-	Quick guide step 1
+line	<col=000080>Travel to <col=800000>Musa Point</col> and pick a <col=800000>banana</col> if needed.</col>
+step	2	-	Quick guide step 2
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<col=000080>Buy a <col=800000>Karamjan rum</col> from <col=800000>Zambo</col> at the pub for .</col>
+step	3	-	Quick guide step 3
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<col=000080>Use a knife on the banana, then use the <col=800000>sliced banana</col> on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</col>
+step	4	-	Quick guide step 4
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<col=000080>Buy <col=800000>jogre bones</col> from the <col=800000>Grand Exchange</col> or kill a <col=800000>jogre</col> at the location marked "Jogres" on the preparation map.</col>
+step	5	-	Quick guide step 5
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<col=000080>Use a <col=800000>tinderbox</col> on the bones (requires 30 <col=800000>Firemaking</col>), then wait for the fire to go out and collect the <col=800000>burnt jogre bones</col>. Alternatively, use the bones on a <col=800000>furnace</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<col=000080>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</col>
+step	7	-	Quick guide step 7
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<col=000080>Fish 45 <col=800000>raw karambwanji</col> using a <col=800000>small fishing net</col>. Keep the remaining karambwanji for the quest.</col>
+step	8	-	Quick guide step 8
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<col=000080>Use a <col=800000>pestle and mortar</col> on one raw karambwanji to make <col=800000>karambwanji paste</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<col=000080>Use the paste on the <col=800000>burnt jogre bones</col> to make <col=800000>pasty jogre bones</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<col=000080>Cook the pasty jogre bones to make <col=800000>marinated jogre bones</col>. Do not bury the bones.</col>
+step	11	-	Quick guide step 11
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<col=000080>Buy a <col=800000>raw karambwan</col> from the <col=800000>Grand Exchange</col>. Ironmen can complete these steps after helping Tiadeche.</col>
+step	12	-	Quick guide step 12
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<col=000080>Cook it to make a <col=800000>poison karambwan</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<col=000080>Use a <col=800000>pestle and mortar</col> on the poison karambwan to make <col=800000>karambwan paste</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<col=000080>Use the paste on the spear required for the quest.</col>
+step	15	-	Quick guide step 15
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<col=000080>Talk to <col=800000>Timfraku</col> upstairs in the western hut north of <col=800000>Tai Bwo Wannai</col>. Wait, then select .</col>
+step	16	-	Quick guide step 16
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<col=000080>Talk to <col=800000>Lubufu</col> at the fishing spots south of the <col=800000>Brimhaven</col> house portal.</col>
+step	17	-	Quick guide step 17
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<col=000080>Talk to him again.</col>
+step	18	-	Quick guide step 18
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<col=000080>Talk to him again to give him 20 <col=800000>raw karambwanji</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<col=000080>Talk to him again.</col>
+step	20	-	Quick guide step 20
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<col=000080>Wait, then accept his offer to learn how to fish karambwan and receive a <col=800000>karambwan vessel</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<col=000080>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</col>
+step	22	-	Quick guide step 22
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<col=000080>Go to <col=800000>Tiadeche</col>, north-east of fairy ring DKP, and collect the nearby <col=800000>seaweed</col> if needed.</col>
+step	23	-	Quick guide step 23
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<col=000080>Talk to Tiadeche.</col>
+step	24	-	Quick guide step 24
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<col=000080>Use a <col=800000>raw karambwanji</col> on a <col=800000>karambwan vessel</col>, then use the baited vessel on Tiadeche.</col>
+step	25	-	Quick guide step 25
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<col=000080>Go to <col=800000>Tamayu</col> at the mine north-east of fairy ring CKR.</col>
+step	26	-	Quick guide step 26
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<col=000080>Talk to him twice and watch the cutscene.</col>
+step	27	-	Quick guide step 27
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<col=000080>Use an <col=800000>agility potion(4)</col> and your karambwan-poisoned spear on him. Make sure he takes both items.</col>
+step	28	-	Quick guide step 28
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<col=000080>Talk to him again and watch him kill <col=800000>The Shaikahan</col>.</col>
+step	29	-	Quick guide step 29
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<col=000080>Kill a nearby <col=800000>monkey</col> using <col=800000>Magic</col> or <col=800000>Ranged</col> and pick up its <col=800000>corpse</col>.</col>
+step	30	-	Quick guide step 30
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<col=000080>Use the corpse on Tamayu to obtain <col=800000>monkey skin</col>.</col>
+step	31	-	Quick guide step 31
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<col=000080>Use the seaweed on the skin to make a <col=800000>seaweed sandwich</col>.</col>
+step	32	-	Quick guide step 32
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<col=000080>Go to <col=800000>Cairn Isle</col>, west of fairy ring CKR. Climb the rocks and walk across the bridge.</col>
+step	33	-	Quick guide step 33
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+line	
+line	<col=000080>Talk to <col=800000>Tinsay</col> and give him the banana rum, seaweed sandwich and <col=800000>marinated jogre bones</col> when requested. Select when prompted.</col>
+step	34	-	Quick guide step 34
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+line	
+line	<str>Talk to Tinsay and give him the banana rum, seaweed sandwich and marinated jogre bones when requested. Select when prompted.</str>
+line	
+line	<col=000080>Use your remaining karambwan vessel, empty or baited, on Tinsay to receive a <col=800000>crafting manual</col>.</col>
+step	35	-	Quick guide step 35
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+line	
+line	<str>Talk to Tinsay and give him the banana rum, seaweed sandwich and marinated jogre bones when requested. Select when prompted.</str>
+line	
+line	<str>Use your remaining karambwan vessel, empty or baited, on Tinsay to receive a crafting manual.</str>
+line	
+line	<col=000080>Return to Tiadeche near fairy ring DKP. Talk to him, then use the manual on him.</col>
+step	36	-	Quick guide step 36
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+line	
+line	<str>Talk to Tinsay and give him the banana rum, seaweed sandwich and marinated jogre bones when requested. Select when prompted.</str>
+line	
+line	<str>Use your remaining karambwan vessel, empty or baited, on Tinsay to receive a crafting manual.</str>
+line	
+line	<str>Return to Tiadeche near fairy ring DKP. Talk to him, then use the manual on him.</str>
+line	
+line	<col=000080>Return to <col=800000>Timfraku</col> and talk to him to complete the quest.</col>
+step	37	-	Quick guide step 37
+line	<str>Travel to Musa Point and pick a banana if needed.</str>
+line	
+line	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+line	
+line	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+line	
+line	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+line	
+line	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+line	
+line	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+line	
+line	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+line	
+line	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+line	
+line	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+line	
+line	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+line	
+line	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+line	
+line	<str>Cook it to make a poison karambwan.</str>
+line	
+line	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+line	
+line	<str>Use the paste on the spear required for the quest.</str>
+line	
+line	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+line	
+line	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Talk to him again to give him 20 raw karambwanji.</str>
+line	
+line	<str>Talk to him again.</str>
+line	
+line	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+line	
+line	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+line	
+line	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+line	
+line	<str>Talk to Tiadeche.</str>
+line	
+line	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+line	
+line	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+line	
+line	<str>Talk to him twice and watch the cutscene.</str>
+line	
+line	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+line	
+line	<str>Talk to him again and watch him kill The Shaikahan.</str>
+line	
+line	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+line	
+line	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+line	
+line	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+line	
+line	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+line	
+line	<str>Talk to Tinsay and give him the banana rum, seaweed sandwich and marinated jogre bones when requested. Select when prompted.</str>
+line	
+line	<str>Use your remaining karambwan vessel, empty or baited, on Tinsay to receive a crafting manual.</str>
+line	
+line	<str>Return to Tiadeche near fairy ring DKP. Talk to him, then use the manual on him.</str>
+line	
+line	<str>Return to Timfraku and talk to him to complete the quest.</str>
+line	
+line	<col=000080>Optionally, talk to the brothers in their houses in southern <col=800000>Tai Bwo Wannai</col> to claim the additional rewards:</col>
+done	<str>Travel to Musa Point and pick a banana if needed.</str>
+done	
+done	<str>Buy a Karamjan rum from Zambo at the pub for .</str>
+done	
+done	<str>Use a knife on the banana, then use the sliced banana on the rum. Unlike ordinary Karamjan rum, this can be taken through teleports.</str>
+done	
+done	<str>Buy jogre bones from the Grand Exchange or kill a jogre at the location marked "Jogres" on the preparation map.</str>
+done	
+done	<str>Use a tinderbox on the bones (requires 30 Firemaking), then wait for the fire to go out and collect the burnt jogre bones. Alternatively, use the bones on a furnace.</str>
+done	
+done	<str>Go to the fishing spots north of fairy ring CKR, south of Tai Bwo Wannai.</str>
+done	
+done	<str>Fish 45 raw karambwanji using a small fishing net. Keep the remaining karambwanji for the quest.</str>
+done	
+done	<str>Use a pestle and mortar on one raw karambwanji to make karambwanji paste.</str>
+done	
+done	<str>Use the paste on the burnt jogre bones to make pasty jogre bones.</str>
+done	
+done	<str>Cook the pasty jogre bones to make marinated jogre bones. Do not bury the bones.</str>
+done	
+done	<str>Buy a raw karambwan from the Grand Exchange. Ironmen can complete these steps after helping Tiadeche.</str>
+done	
+done	<str>Cook it to make a poison karambwan.</str>
+done	
+done	<str>Use a pestle and mortar on the poison karambwan to make karambwan paste.</str>
+done	
+done	<str>Use the paste on the spear required for the quest.</str>
+done	
+done	<str>Talk to Timfraku upstairs in the western hut north of Tai Bwo Wannai. Wait, then select .</str>
+done	
+done	<str>Talk to Lubufu at the fishing spots south of the Brimhaven house portal.</str>
+done	
+done	<str>Talk to him again.</str>
+done	
+done	<str>Talk to him again to give him 20 raw karambwanji.</str>
+done	
+done	<str>Talk to him again.</str>
+done	
+done	<str>Wait, then accept his offer to learn how to fish karambwan and receive a karambwan vessel.</str>
+done	
+done	<str>Drop the vessel and ask Lubufu for another. Pick up the first vessel so that you have two.</str>
+done	
+done	<str>Go to Tiadeche, north-east of fairy ring DKP, and collect the nearby seaweed if needed.</str>
+done	
+done	<str>Talk to Tiadeche.</str>
+done	
+done	<str>Use a raw karambwanji on a karambwan vessel, then use the baited vessel on Tiadeche.</str>
+done	
+done	<str>Go to Tamayu at the mine north-east of fairy ring CKR.</str>
+done	
+done	<str>Talk to him twice and watch the cutscene.</str>
+done	
+done	<str>Use an agility potion(4) and your karambwan-poisoned spear on him. Make sure he takes both items.</str>
+done	
+done	<str>Talk to him again and watch him kill The Shaikahan.</str>
+done	
+done	<str>Kill a nearby monkey using Magic or Ranged and pick up its corpse.</str>
+done	
+done	<str>Use the corpse on Tamayu to obtain monkey skin.</str>
+done	
+done	<str>Use the seaweed on the skin to make a seaweed sandwich.</str>
+done	
+done	<str>Go to Cairn Isle, west of fairy ring CKR. Climb the rocks and walk across the bridge.</str>
+done	
+done	<str>Talk to Tinsay and give him the banana rum, seaweed sandwich and marinated jogre bones when requested. Select when prompted.</str>
+done	
+done	<str>Use your remaining karambwan vessel, empty or baited, on Tinsay to receive a crafting manual.</str>
+done	
+done	<str>Return to Tiadeche near fairy ring DKP. Talk to him, then use the manual on him.</str>
+done	
+done	<str>Return to Timfraku and talk to him to complete the quest.</str>
+done	
+done	<str>Optionally, talk to the brothers in their houses in southern Tai Bwo Wannai to claim the additional rewards:</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

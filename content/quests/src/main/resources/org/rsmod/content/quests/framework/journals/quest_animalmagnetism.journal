@@ -1,0 +1,612 @@
+# Generated from the OSRS Wiki page "Animal Magnetism/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Ava</col> in <col=800000>Draynor Manor</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 18 Slayer
+req	Level 19 Crafting
+req	Level 30 Ranged
+req	Level 35 Woodcutting
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Ava</col> in the west wing of <col=800000>Draynor Manor</col> and complete the dialogue.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<col=000080>Go to the <col=800000>undead chicken</col> farm west of the <col=800000>Ectofuntus</col> with your <col=800000>ghostspeak amulet</col> and <col=800000>ecto-token</col>s (or materials for them), and talk to <col=800000>Alice</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<col=000080>Keep talking between Alice and <col=800000>Malcolm</col> in the cow pen 4 times until she tells you to go to talk to the <col=800000>old crone</col> for an amulet.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<col=000080>Run west of the farm until you reach the old crone's house just east of the <col=800000>Slayer Tower</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<col=000080>Speak twice to the old crone to receive a <col=800000>crone-made amulet</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<col=000080>Speak with Malcolm to give him the Crone-made amulet.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<col=000080>Speak with Malcolm again.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<col=000080>After the cutscene, speak to Malcolm who will now sell you two <col=800000>undead chicken</col>s for 20 <col=800000>ecto-token</col>s.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<col=000080>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to <col=800000>Ava</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<col=000080>Speak to the <col=800000>Witch</col> in the north-west corner of Draynor Manor (inside the building).</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<col=000080>Speak to the Witch again to receive a <col=800000>selected iron</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<col=000080>Take the selected iron to the centre of the <col=800000>Rimmington mine</col>, face north, and use the hammer on it.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<col=000080>Return to Ava and give her the magnet.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<col=000080>Talk to Ava.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<col=000080>Use your axe on an <col=800000>Undead tree</col> (not Dead tree) in front of the Manor (yellow examine).</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<col=000080>Talk to Turael, the <col=800000>Slayer master</col> in a house in south-eastern <col=800000>Burthorpe</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<col=000080>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<col=000080>Return to the mansion and cut the undead tree again.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<str>Return to the mansion and cut the undead tree again.</str>
+line	
+line	<col=000080>Bring the <col=800000>Undead twigs</col> to Ava.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<str>Return to the mansion and cut the undead tree again.</str>
+line	
+line	<str>Bring the Undead twigs to Ava.</str>
+line	
+line	<col=000080>Talk to Ava again, and she will give you garbled <col=800000>research notes</col> that you need to solve.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<str>Return to the mansion and cut the undead tree again.</str>
+line	
+line	<str>Bring the Undead twigs to Ava.</str>
+line	
+line	<str>Talk to Ava again, and she will give you garbled research notes that you need to solve.</str>
+line	
+line	<col=000080>Talk to Ava again.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<str>Return to the mansion and cut the undead tree again.</str>
+line	
+line	<str>Bring the Undead twigs to Ava.</str>
+line	
+line	<str>Talk to Ava again, and she will give you garbled research notes that you need to solve.</str>
+line	
+line	<str>Talk to Ava again.</str>
+line	
+line	<col=000080>Combine the <col=800000>solved notes</col> with the polished button and the hard leather.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+line	
+line	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+line	
+line	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+line	
+line	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+line	
+line	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+line	
+line	<str>Speak with Malcolm again.</str>
+line	
+line	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+line	
+line	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+line	
+line	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+line	
+line	<str>Speak to the Witch again to receive a selected iron.</str>
+line	
+line	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+line	
+line	<str>Return to Ava and give her the magnet.</str>
+line	
+line	<str>Talk to Ava.</str>
+line	
+line	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+line	
+line	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+line	
+line	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+line	
+line	<str>Return to the mansion and cut the undead tree again.</str>
+line	
+line	<str>Bring the Undead twigs to Ava.</str>
+line	
+line	<str>Talk to Ava again, and she will give you garbled research notes that you need to solve.</str>
+line	
+line	<str>Talk to Ava again.</str>
+line	
+line	<str>Combine the solved notes with the polished button and the hard leather.</str>
+line	
+line	<col=000080>Give the container to Ava.</col>
+done	<str>Talk to Ava in the west wing of Draynor Manor and complete the dialogue.</str>
+done	
+done	<str>Go to the undead chicken farm west of the Ectofuntus with your ghostspeak amulet and ecto-tokens (or materials for them), and talk to Alice.</str>
+done	
+done	<str>Keep talking between Alice and Malcolm in the cow pen 4 times until she tells you to go to talk to the old crone for an amulet.</str>
+done	
+done	<str>Run west of the farm until you reach the old crone's house just east of the Slayer Tower.</str>
+done	
+done	<str>Speak twice to the old crone to receive a crone-made amulet.</str>
+done	
+done	<str>Speak with Malcolm to give him the Crone-made amulet.</str>
+done	
+done	<str>Speak with Malcolm again.</str>
+done	
+done	<str>After the cutscene, speak to Malcolm who will now sell you two undead chickens for 20 ecto-tokens.</str>
+done	
+done	<str>Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to Ava.</str>
+done	
+done	<str>Speak to the Witch in the north-west corner of Draynor Manor (inside the building).</str>
+done	
+done	<str>Speak to the Witch again to receive a selected iron.</str>
+done	
+done	<str>Take the selected iron to the centre of the Rimmington mine, face north, and use the hammer on it.</str>
+done	
+done	<str>Return to Ava and give her the magnet.</str>
+done	
+done	<str>Talk to Ava.</str>
+done	
+done	<str>Use your axe on an Undead tree (not Dead tree) in front of the Manor (yellow examine).</str>
+done	
+done	<str>Talk to Turael, the Slayer master in a house in south-eastern Burthorpe.</str>
+done	
+done	<str>Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory.</str>
+done	
+done	<str>Return to the mansion and cut the undead tree again.</str>
+done	
+done	<str>Bring the Undead twigs to Ava.</str>
+done	
+done	<str>Talk to Ava again, and she will give you garbled research notes that you need to solve.</str>
+done	
+done	<str>Talk to Ava again.</str>
+done	
+done	<str>Combine the solved notes with the polished button and the hard leather.</str>
+done	
+done	<str>Give the container to Ava.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

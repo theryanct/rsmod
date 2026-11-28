@@ -1,143 +1,609 @@
-# Authored (not Wiki): ui's OSRS-style journal for quest_toweroflife (no Wiki journal transcript).
-before	<col=000080>I can start this quest by talking to <col=800000>Effigy</col> outside the <col=800000>Tower of Life</col> south of <col=800000>Ardougne</col>.</col>
+# Generated from the OSRS Wiki page "Tower of Life/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Effigy</col> at the <col=800000>Tower of Life</col> just east of the <col=800000>Ardougne Monastery</col>.</col>
 before	
 before	<col=000080>Difficulty:</col>
-before	<col=800000>Intermediate</col>
+before	<col=800000>Novice</col>
 before	<col=000080>Length:</col>
 before	<col=800000>Medium</col>
 before	
 before	<col=000080>Requirements:</col>
 req	Level 10 Construction
-step	1	2	Authored
-line	<col=000080><col=800000>Effigy</col> wants me to get inside the <col=800000>Tower of Life</col>. The builders on strike might help if I look like one of them.</col>
-step	2	3	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Effigy</col> south of <col=800000>East Ardougne</col> (south-west of <col=800000>fairy ring</col> DJP, <col=800000>Ardougne cloak</col> <col=800000>monastery</col> teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<col=000080>I need a builder's outfit: a <col=800000>hard hat</col>, <col=800000>shirt</col>, <col=800000>trousers</col> and <col=800000>boots</col>.</col>
-step	3	4	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Talk to <col=800000>Bonafido</col> at the tower's entrance. He will ask to get a <col=800000>builder's costume</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<col=000080>In my builder's outfit, I should prove myself to <col=800000>Bonafido</col>.</col>
-step	4	6	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Wear the full costume. Talk to Bonafido and answer his questions.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<col=000080>I'm inside the tower. The <col=800000>machines</col> are broken and need fixing with materials from the <col=800000>crates</col>.</col>
-step	5	8	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Enter the tower while still wearing the full costume</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<col=000080>I fixed the machines. I should tell <col=800000>Effigy</col>.</col>
-step	6	11	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Take the following supplies (by searching the crates inside the tower):</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<str>I fixed the machines. I should tell Effigy.</str>
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
 line	
-line	<col=000080>I should go to the top of the tower and see what the alchemists made.</col>
-step	7	12	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Head up the first staircase on the west side of the tower.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<str>I fixed the machines. I should tell Effigy.</str>
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
 line	
-line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	<str>Head up the first staircase on the west side of the tower.</str>
 line	
-line	<col=000080>The alchemists created a <col=800000>Homunculus</col>! I should talk to it.</col>
-step	8	14	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Fix the <col=800000>pressure machine</col> on the north side of the room.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<str>I fixed the machines. I should tell Effigy.</str>
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
 line	
-line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	<str>Head up the first staircase on the west side of the tower.</str>
 line	
-line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	<str>Fix the pressure machine on the north side of the room.</str>
 line	
-line	<col=000080>The <col=800000>Homunculus</col> is confused. I need to help it decide between magic and logic.</col>
-step	9	16	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<str>I fixed the machines. I should tell Effigy.</str>
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
 line	
-line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	<str>Head up the first staircase on the west side of the tower.</str>
 line	
-line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	<str>Fix the pressure machine on the north side of the room.</str>
 line	
-line	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
 line	
-line	<col=000080>I helped the Homunculus. <col=800000>Effigy</col> wants it scared out of the tower.</col>
-step	10	17	Authored
-line	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 line	
-line	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 line	
-line	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 line	
-line	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+line	<str>Enter the tower while still wearing the full costume</str>
 line	
-line	<str>I fixed the machines. I should tell Effigy.</str>
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
 line	
-line	<str>I should go to the top of the tower and see what the alchemists made.</str>
+line	<str>Head up the first staircase on the west side of the tower.</str>
 line	
-line	<str>The alchemists created a Homunculus! I should talk to it.</str>
+line	<str>Fix the pressure machine on the north side of the room.</str>
 line	
-line	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
 line	
-line	<str>I helped the Homunculus. Effigy wants it scared out of the tower.</str>
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
 line	
-line	<col=000080>The Homunculus fled to the <col=800000>dungeon</col> beneath the tower. I should find it there.</col>
-done	<str>Effigy wants me to get inside the Tower of Life. The builders on strike might help if I look like one of them.</str>
+line	<col=000080>Take the following supplies:</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<col=000080>Head up two floors.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<col=000080>Fix the <col=800000>pipe machine</col> on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<col=000080>Take the following supplies:</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<col=000080>Head up to the top floor of the tower.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<col=000080>Fix the <col=800000>cage</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<col=000080>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<col=000080>Talk to <col=800000>Effigy</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<col=000080>Go to the top floor for a <col=800000>cutscene</col> involving the alchemists and the <col=800000>Homunculus</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+line	
+line	<col=000080>Go outside to talk to Effigy.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+line	
+line	<str>Go outside to talk to Effigy.</str>
+line	
+line	<col=000080>Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+line	
+line	<str>Go outside to talk to Effigy.</str>
+line	
+line	<str>Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.</str>
+line	
+line	<col=000080>Talk to Effigy again.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+line	
+line	<str>Go outside to talk to Effigy.</str>
+line	
+line	<str>Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.</str>
+line	
+line	<str>Talk to Effigy again.</str>
+line	
+line	<col=000080>Go to the dungeon floor inside the tower via the trapdoor to the south and talk to the Homunculus to the north.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
+line	
+line	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
+line	
+line	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
+line	
+line	<str>Enter the tower while still wearing the full costume</str>
+line	
+line	<str>Take the following supplies (by searching the crates inside the tower):</str>
+line	
+line	<str>Head up the first staircase on the west side of the tower.</str>
+line	
+line	<str>Fix the pressure machine on the north side of the room.</str>
+line	
+line	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
+line	
+line	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up two floors.</str>
+line	
+line	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+line	
+line	<str>Take the following supplies:</str>
+line	
+line	<str>Head up to the top floor of the tower.</str>
+line	
+line	<str>Fix the cage.</str>
+line	
+line	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+line	
+line	<str>Talk to Effigy.</str>
+line	
+line	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+line	
+line	<str>Go outside to talk to Effigy.</str>
+line	
+line	<str>Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.</str>
+line	
+line	<str>Talk to Effigy again.</str>
+line	
+line	<str>Go to the dungeon floor inside the tower via the trapdoor to the south and talk to the Homunculus to the north.</str>
+line	
+line	<col=000080>Optional: Medium <col=800000>Ardougne Diary</col> task - kill a "<col=800000>swordchick</col>" (requires 1 raw swordfish and 1 raw chicken.</col>
+done	<str>Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.</str>
 done	
-done	<str>I need a builder's outfit: a hard hat, shirt, trousers and boots.</str>
+done	<str>Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume.</str>
 done	
-done	<str>In my builder's outfit, I should prove myself to Bonafido.</str>
+done	<str>Wear the full costume. Talk to Bonafido and answer his questions.</str>
 done	
-done	<str>I'm inside the tower. The machines are broken and need fixing with materials from the crates.</str>
+done	<str>Enter the tower while still wearing the full costume</str>
 done	
-done	<str>I fixed the machines. I should tell Effigy.</str>
+done	<str>Take the following supplies (by searching the crates inside the tower):</str>
 done	
-done	<str>I should go to the top of the tower and see what the alchemists made.</str>
+done	<str>Head up the first staircase on the west side of the tower.</str>
 done	
-done	<str>The alchemists created a Homunculus! I should talk to it.</str>
+done	<str>Fix the pressure machine on the north side of the room.</str>
 done	
-done	<str>The Homunculus is confused. I need to help it decide between magic and logic.</str>
+done	<str>Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).</str>
 done	
-done	<str>I helped the Homunculus. Effigy wants it scared out of the tower.</str>
+done	<str>Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
 done	
-done	<str>The Homunculus fled to the dungeon beneath the tower. I should find it there.</str>
+done	<str>Take the following supplies:</str>
 done	
-done	<str>I helped the Homunculus find its way and reunited the builders and alchemists.</str>
+done	<str>Head up two floors.</str>
+done	
+done	<str>Fix the pipe machine on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.</str>
+done	
+done	<str>Take the following supplies:</str>
+done	
+done	<str>Head up to the top floor of the tower.</str>
+done	
+done	<str>Fix the cage.</str>
+done	
+done	<str>Complete the puzzle. You should see a message that says "The cage is complete!" when you have completed the puzzle.</str>
+done	
+done	<str>Talk to Effigy.</str>
+done	
+done	<str>Go to the top floor for a cutscene involving the alchemists and the Homunculus.</str>
+done	
+done	<str>Go outside to talk to Effigy.</str>
+done	
+done	<str>Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.</str>
+done	
+done	<str>Talk to Effigy again.</str>
+done	
+done	<str>Go to the dungeon floor inside the tower via the trapdoor to the south and talk to the Homunculus to the north.</str>
+done	
+done	<str>Optional: Medium Ardougne Diary task - kill a "swordchick" (requires 1 raw swordfish and 1 raw chicken.</str>
 done	
 done	<col=ff0000>QUEST COMPLETE!</col>

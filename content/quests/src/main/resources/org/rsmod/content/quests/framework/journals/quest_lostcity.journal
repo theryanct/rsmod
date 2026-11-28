@@ -1,0 +1,220 @@
+# Generated from the OSRS Wiki page "Lost City/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>warrior</col> in the north-western corner of the <col=800000>Lumbridge Swamp</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 31 Crafting
+req	Level 36 Woodcutting
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to the <col=800000>Warrior</col> north-west of <col=800000>Lumbridge Swamp</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<col=000080>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. <col=800000>Shamus</col> will appear.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<col=000080>Talk to <col=800000>Shamus</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<col=000080>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<col=000080>Go to the Port Sarim docks, south of the <col=800000>Rusty Anchor Inn</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<col=000080>Talk to a <col=800000>Monk of Entrana</col> and travel to <col=800000>Entrana</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<col=000080>Cross the north-east bridge then go west until you see the <col=800000>Cave monk</col>, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<col=000080>Kill <col=800000>zombies</col> until they drop a <col=800000>bronze axe</col> (about 40% drop chance per kill).</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+line	
+line	<col=000080>Go south-east past the demons and attempt to chop the tree.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+line	
+line	<str>Go south-east past the demons and attempt to chop the tree.</str>
+line	
+line	<col=000080>Kill the <col=800000>Dramen Tree Spirit</col> (there is a safespot behind the southern fungus formation).</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+line	
+line	<str>Go south-east past the demons and attempt to chop the tree.</str>
+line	
+line	<str>Kill the Dramen Tree Spirit (there is a safespot behind the southern fungus formation).</str>
+line	
+line	<col=000080>Chop the tree and use a knife on the branch obtained to make the <col=800000>dramen staff</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+line	
+line	<str>Go south-east past the demons and attempt to chop the tree.</str>
+line	
+line	<str>Kill the Dramen Tree Spirit (there is a safespot behind the southern fungus formation).</str>
+line	
+line	<str>Chop the tree and use a knife on the branch obtained to make the dramen staff.</str>
+line	
+line	<col=000080>Teleport out and go to the <col=800000>tool shed</col> in the centre of <col=800000>Lumbridge Swamp</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+line	
+line	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+line	
+line	<str>Talk to Shamus.</str>
+line	
+line	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+line	
+line	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+line	
+line	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+line	
+line	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+line	
+line	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+line	
+line	<str>Go south-east past the demons and attempt to chop the tree.</str>
+line	
+line	<str>Kill the Dramen Tree Spirit (there is a safespot behind the southern fungus formation).</str>
+line	
+line	<str>Chop the tree and use a knife on the branch obtained to make the dramen staff.</str>
+line	
+line	<str>Teleport out and go to the tool shed in the centre of Lumbridge Swamp.</str>
+line	
+line	<col=000080>Wield a dramen staff and enter the tool shed.</col>
+done	<str>Speak to the Warrior north-west of Lumbridge Swamp.</str>
+done	
+done	<str>Go north-west to the tree closest to the encampment and click on the tree with the chop option rather than chop down. Shamus will appear.</str>
+done	
+done	<str>Talk to Shamus.</str>
+done	
+done	<str>Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.</str>
+done	
+done	<str>Go to the Port Sarim docks, south of the Rusty Anchor Inn.</str>
+done	
+done	<str>Talk to a Monk of Entrana and travel to Entrana.</str>
+done	
+done	<str>Cross the north-east bridge then go west until you see the Cave monk, go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)</str>
+done	
+done	<str>Kill zombies until they drop a bronze axe (about 40% drop chance per kill).</str>
+done	
+done	<str>Go south-east past the demons and attempt to chop the tree.</str>
+done	
+done	<str>Kill the Dramen Tree Spirit (there is a safespot behind the southern fungus formation).</str>
+done	
+done	<str>Chop the tree and use a knife on the branch obtained to make the dramen staff.</str>
+done	
+done	<str>Teleport out and go to the tool shed in the centre of Lumbridge Swamp.</str>
+done	
+done	<str>Wield a dramen staff and enter the tool shed.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,5 +1,5 @@
-# Authored (not Wiki): ui's OSRS-style journal for miniquest_skippyandthemogres (no Wiki journal transcript).
-before	<col=000080>I can start this miniquest by talking to <col=800000>Skippy</col> south-east of <col=800000>Rimmington</col>.</col>
+# Generated from the OSRS Wiki page "Skippy and the Mogres/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Speak to <col=800000>Skippy</col> located south-east of the town of <col=800000>Rimmington</col>.</col>
 before	
 before	<col=000080>Difficulty:</col>
 before	<col=800000>Novice</col>
@@ -8,16 +8,58 @@ before	<col=800000>Very Short</col>
 before	
 before	<col=000080>Requirements:</col>
 req	Level 20 Cooking
-step	1	1	Authored
-line	<col=000080>I sobered <col=800000>Skippy</col> up with a bucket of water. He wants a hot <col=800000>nettle tea</col>.</col>
-step	2	2	Authored
-line	<str>I sobered Skippy up with a bucket of water. He wants a hot nettle tea.</str>
+step	1	-	Quick guide step 1
+line	<col=000080>Right-click "Sober-Up" <col=800000>Skippy</col> south-east of Rimmington (<col=800000>bucket of water</col> required).</col>
+step	2	-	Quick guide step 2
+line	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
 line	
-line	<col=000080>Skippy has a terrible hangover. He needs a <col=800000>hangover cure</col>.</col>
-done	<str>I sobered Skippy up with a bucket of water. He wants a hot nettle tea.</str>
+line	<col=000080>Right-click use the <col=800000>nettle tea</col> on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</col>
+step	3	-	Quick guide step 3
+line	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
+line	
+line	<str>Right-click use the nettle tea on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</str>
+line	
+line	<col=000080>Talk to Skippy</col>
+step	4	-	Quick guide step 4
+line	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
+line	
+line	<str>Right-click use the nettle tea on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</str>
+line	
+line	<str>Talk to Skippy</str>
+line	
+line	<col=000080>Use the <col=800000>chocolate dust</col> on the <col=800000>bucket of milk</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
+line	
+line	<str>Right-click use the nettle tea on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</str>
+line	
+line	<str>Talk to Skippy</str>
+line	
+line	<str>Use the chocolate dust on the bucket of milk.</str>
+line	
+line	<col=000080>Use the <col=800000>snape grass</col> on the <col=800000>chocolatey milk</col> (Do not accidentally drink the milk!)</col>
+step	6	-	Quick guide step 6
+line	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
+line	
+line	<str>Right-click use the nettle tea on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</str>
+line	
+line	<str>Talk to Skippy</str>
+line	
+line	<str>Use the chocolate dust on the bucket of milk.</str>
+line	
+line	<str>Use the snape grass on the chocolatey milk (Do not accidentally drink the milk!)</str>
+line	
+line	<col=000080>Use the <col=800000>hangover cure</col> on Skippy.</col>
+done	<str>Right-click "Sober-Up" Skippy south-east of Rimmington (bucket of water required).</str>
 done	
-done	<str>Skippy has a terrible hangover. He needs a hangover cure.</str>
+done	<str>Right-click use the nettle tea on Skippy. (Do not accidentally drink it!) or simply talk to Skippy with the nettle tea in your inventory.</str>
 done	
-done	<str>I cured Skippy's hangover and learned about the Mogres at Mudskipper Point.</str>
+done	<str>Talk to Skippy</str>
+done	
+done	<str>Use the chocolate dust on the bucket of milk.</str>
+done	
+done	<str>Use the snape grass on the chocolatey milk (Do not accidentally drink the milk!)</str>
+done	
+done	<str>Use the hangover cure on Skippy.</str>
 done	
 done	<col=ff0000>QUEST COMPLETE!</col>

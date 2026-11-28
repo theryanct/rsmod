@@ -94,7 +94,11 @@ constructor(private val protectedAccess: ProtectedAccessLauncher, private val st
                 val done = book.done.ifEmpty { listOf("<col=ff0000>QUEST COMPLETE!</col>") }
                 done + listOf("", "<col=000080>Rewards:</col>") + quest.rewards.map { "<col=800000>$it</col>" }
             }
-            else -> book.stepFor(state, quest.complete)?.lines ?: summary(quest)
+            else -> {
+                val custom = JournalStages.snapshotFor(quest, player)
+                val step = custom?.let { book.steps.getOrNull(it - 1) } ?: book.stepFor(state, quest.complete)
+                step?.lines ?: summary(quest)
+            }
         }
     }
 
@@ -103,12 +107,20 @@ constructor(private val protectedAccess: ProtectedAccessLauncher, private val st
             when (line) {
                 is JournalBook.Before.Text -> line.text
                 is JournalBook.Before.Requirement ->
-                    if (meets(line.text)) "<str>${line.text}</str>" else "<col=800000>${line.text}</col>"
+                    when (meets(line.text)) {
+                        true -> "<str>${line.text}</str>"
+                        false -> "<col=800000>${line.text}</col>"
+                        // Not a skill/quest/points line (e.g. "Ability to defeat a level 70 monster").
+                        null -> "<col=000080>${line.text}</col>"
+                    }
             }
         }
 
-    /** A Wiki requirement line ("Level 20 Crafting", "32 Quest Points", a quest name...) met? */
-    private fun ProtectedAccess.meets(text: String): Boolean {
+    /**
+     * A Wiki requirement line ("Level 20 Crafting", "32 Quest Points", a quest name...) met?
+     * `null` when it isn't one the server can check.
+     */
+    private fun ProtectedAccess.meets(text: String): Boolean? {
         val t = text.trim().removeSuffix(".")
         Regex("""^(?:Level )?(\d+) ([A-Za-z]+)(?: \(boostable\))?$""").find(t)?.let { m ->
             val level = m.groupValues[1].toInt()
@@ -123,9 +135,11 @@ constructor(private val protectedAccess: ProtectedAccessLauncher, private val st
         Regex("""^Combat Level (\d+)$""", RegexOption.IGNORE_CASE).find(t)?.let {
             return player.combatLevel >= it.groupValues[1].toInt()
         }
-        val quest =
-            BuiltQuests.all.firstOrNull { it.name.equals(t.removePrefix("Completion of ").trim(), true) }
-        return quest != null && player.isQuestComplete(quest)
+        val name = t.removePrefix("Completion of ").trim()
+        val quest = BuiltQuests.all.firstOrNull { it.name.equals(name, true) }
+        if (quest != null) return player.isQuestComplete(quest)
+        // An unbuilt quest can't be done yet; anything else isn't checkable.
+        return if (QuestIds.byId.values.any { it.title.equals(name, true) }) false else null
     }
 
     private fun ProtectedAccess.summary(quest: QuestDef): List<String> {
@@ -188,6 +202,22 @@ constructor(private val protectedAccess: ProtectedAccessLauncher, private val st
             return out
         }
     }
+}
+
+/**
+ * Per-quest journal progress for quests whose progress isn't (only) the quest var, e.g. The
+ * Fremennik Trials' trials in server varps: register from the quest's startup with the snapshot
+ * (1-based `step` number in its journal file) to show, or `null` to fall back to the stage.
+ */
+public object JournalStages {
+    private val hooks = HashMap<String, (Player) -> Int?>()
+
+    public fun register(quest: QuestDef, snapshot: (Player) -> Int?) {
+        check(quest.listRow !in hooks) { "JournalStages: two hooks for ${quest.listRow}" }
+        hooks[quest.listRow] = snapshot
+    }
+
+    internal fun snapshotFor(quest: QuestDef, player: Player): Int? = hooks[quest.listRow]?.invoke(player)
 }
 
 /** One quest's Wiki journal, from resources `journals/<dbrow>.journal`. */

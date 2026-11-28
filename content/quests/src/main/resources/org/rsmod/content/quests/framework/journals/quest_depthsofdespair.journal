@@ -1,0 +1,165 @@
+# Generated from the OSRS Wiki page "The Depths of Despair/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Lord Kandur Hosidius</col> at his home in <col=800000>Hosidius</col>, north-west of the <col=800000>Vinery</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 18 Agility
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Lord Kandur</col> in the house west of the <col=800000>Vinery</col> (Xeric's Glade teleport on talisman).</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<col=000080>Speak to <col=800000>Chef Olivia</col> in Lord Kandur's kitchen.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<col=000080>Head to the <col=800000>Arceuus Library</col> (<col=800000>fairy ring</col> code CIS, or <col=800000>games necklace</col> to <col=800000>Wintertodt Camp</col>, or <col=800000>Lovakengj Minecart Network</col> to Arceuus) and speak to <col=800000>Galana</col>. (north-east wing, uk=0)</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<col=000080>Speak to Galana again. She will tell you where to find the <col=800000>Varlamore Envoy</col> book. This is random for everyone.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<col=000080>Read the Varlamore Envoy book.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<col=000080>Enter the <col=800000>Crabclaw Caves</col>, marked by the <col=800000>File:Dungeon map link icon.png</col> icon, south outside of the <col=800000>Woodcutting Guild</col> near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to <col=800000>Land's End</col>)</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+line	
+line	<col=000080>Navigate to the end of the caves and climb down the tunnel at the end.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+line	
+line	<str>Navigate to the end of the caves and climb down the tunnel at the end.</str>
+line	
+line	<col=000080>Speak to <col=800000>Artur Hosidius</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+line	
+line	<str>Navigate to the end of the caves and climb down the tunnel at the end.</str>
+line	
+line	<str>Speak to Artur Hosidius.</str>
+line	
+line	<col=000080>Kill the <col=800000>Sand Snake</col> (level 36).</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+line	
+line	<str>Navigate to the end of the caves and climb down the tunnel at the end.</str>
+line	
+line	<str>Speak to Artur Hosidius.</str>
+line	
+line	<str>Kill the Sand Snake (level 36).</str>
+line	
+line	<col=000080>Search the chest.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+line	
+line	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+line	
+line	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+line	
+line	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+line	
+line	<str>Read the Varlamore Envoy book.</str>
+line	
+line	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+line	
+line	<str>Navigate to the end of the caves and climb down the tunnel at the end.</str>
+line	
+line	<str>Speak to Artur Hosidius.</str>
+line	
+line	<str>Kill the Sand Snake (level 36).</str>
+line	
+line	<str>Search the chest.</str>
+line	
+line	<col=000080>Return to Lord Kandur Hosidius and talk to him.</col>
+done	<str>Speak to Lord Kandur in the house west of the Vinery (Xeric's Glade teleport on talisman).</str>
+done	
+done	<str>Speak to Chef Olivia in Lord Kandur's kitchen.</str>
+done	
+done	<str>Head to the Arceuus Library (fairy ring code CIS, or games necklace to Wintertodt Camp, or Lovakengj Minecart Network to Arceuus) and speak to Galana. (north-east wing, uk=0)</str>
+done	
+done	<str>Speak to Galana again. She will tell you where to find the Varlamore Envoy book. This is random for everyone.</str>
+done	
+done	<str>Read the Varlamore Envoy book.</str>
+done	
+done	<str>Enter the Crabclaw Caves, marked by the File:Dungeon map link icon.png icon, south outside of the Woodcutting Guild near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to Land's End)</str>
+done	
+done	<str>Navigate to the end of the caves and climb down the tunnel at the end.</str>
+done	
+done	<str>Speak to Artur Hosidius.</str>
+done	
+done	<str>Kill the Sand Snake (level 36).</str>
+done	
+done	<str>Search the chest.</str>
+done	
+done	<str>Return to Lord Kandur Hosidius and talk to him.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

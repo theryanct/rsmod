@@ -1,0 +1,1200 @@
+# Generated from the OSRS Wiki page "Death to the Dorgeshuun/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Mistag</col> in the <col=800000>Dorgesh-Kaan mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 23 Agility
+req	Level 23 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</col>
+step	2	-	Quick guide step 2
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<col=000080>Talk to <col=800000>Mistag</col> at the Dorgeshuun mines to start the quest.</col>
+step	3	-	Quick guide step 3
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<col=000080>Bring two sets of <col=800000>H.A.M. robes</col> to <col=800000>Zanik</col> in Lumbridge cellar. (Can be purchased from the G.E.)</col>
+step	4	-	Quick guide step 4
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<col=000080><col=800000>Zanik</col> will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</col>
+step	5	-	Quick guide step 5
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<col=000080># Talk to the <col=800000>Cook</col></col>
+step	6	-	Quick guide step 6
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<col=000080># Talk to the <col=800000>Duke</col></col>
+step	7	-	Quick guide step 7
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<col=000080># Talk to <col=800000>Hans</col></col>
+step	8	-	Quick guide step 8
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<col=000080># Talk to any Man or Woman (<col=800000>Zanik</col> must engage in the conversation. Try another if she does not.)</col>
+step	9	-	Quick guide step 9
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<col=000080># Talk to <col=800000>Bob</col></col>
+step	10	-	Quick guide step 10
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<col=000080># Talk to <col=800000>Father Aereck</col></col>
+step	11	-	Quick guide step 11
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<col=000080># Talk to <col=800000>Lumbridge Guide</col></col>
+step	12	-	Quick guide step 12
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<col=000080># Walk near a <col=800000>goblin</col>. <col=800000>Zanik</col> will talk to one.</col>
+step	13	-	Quick guide step 13
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<col=000080># Talk to the <col=800000>shopkeeper</col></col>
+step	14	-	Quick guide step 14
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<col=000080>Ask <col=800000>Zanik</col>, "Have you seen enough of Lumbridge yet?"</col>
+step	15	-	Quick guide step 15
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<col=000080>Put on your set of H.A.M. robes, and go to the <col=800000>H.A.M. Hideout</col> (west of the general store) and pick the lock to the entrance trapdoor.</col>
+step	16	-	Quick guide step 16
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<col=000080>Talk to <col=800000>Johanhus Ulsbrecht</col> south-east of the stage.</col>
+step	17	-	Quick guide step 17
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<col=000080>Wander around the south of the stage, <col=800000>Zanik</col> will spot a trapdoor.</col>
+step	18	-	Quick guide step 18
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<col=000080>Pick the trapdoor and go down. You'll need <col=800000>Zanik</col> to kill the guards in this room to continue:</col>
+step	19	-	Quick guide step 19
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<col=000080>#Walk west past the first guard and talk to him, then <col=800000>Zanik</col> will shoot him.</col>
+step	20	-	Quick guide step 20
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<col=000080>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then <col=800000>Zanik</col> will shoot him.</col>
+step	21	-	Quick guide step 21
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<col=000080>#When the guard in the corridor starts walking east, talk to <col=800000>Zanik</col> and say "Now!", and <col=800000>Zanik</col> will snipe him.</col>
+step	22	-	Quick guide step 22
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<col=000080>#Move to the east side of the central corridor but stop with <col=800000>Zanik</col> as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to <col=800000>Zanik</col> again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. <col=800000>Zanik</col> will shoot him as he passes the central corridor.</col>
+step	23	-	Quick guide step 23
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<col=000080>#For the final guard, again position <col=800000>Zanik</col> as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and <col=800000>Zanik</col> will shoot him.</col>
+step	24	-	Quick guide step 24
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<col=000080>Listen at the door. A senior guard will appear and arrest you.</col>
+step	25	-	Quick guide step 25
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<col=000080>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find <col=800000>Zanik</col>, dead. Take her body.</col>
+step	26	-	Quick guide step 26
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<col=000080>Go to <col=800000>Juna</col> in the <col=800000>Chasm of Tears</col>.</col>
+step	27	-	Quick guide step 27
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<col=000080>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</col>
+step	28	-	Quick guide step 28
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<col=000080>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to <col=800000>Zanik</col>.</col>
+step	29	-	Quick guide step 29
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+line	
+line	<col=000080>Go to the chicken farm near the water wheel (<col=800000>File:Dairy churn icon.png</col> icon on the east side of the river) and go through the southern gate.</col>
+step	30	-	Quick guide step 30
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+line	
+line	<str>Go to the chicken farm near the water wheel (File:Dairy churn icon.png icon on the east side of the river) and go through the southern gate.</str>
+line	
+line	<col=000080>With both hands free, search one of the southern empty crates and <col=800000>Zanik</col> will hide in it.</col>
+step	31	-	Quick guide step 31
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+line	
+line	<str>Go to the chicken farm near the water wheel (File:Dairy churn icon.png icon on the east side of the river) and go through the southern gate.</str>
+line	
+line	<str>With both hands free, search one of the southern empty crates and Zanik will hide in it.</str>
+line	
+line	<col=000080>While wearing the full H.A.M. robes, climb down the nearby trapdoor, and head to the western room. You will see <col=800000>Sigmund (level 50)</col> and three <col=800000>Senior Guards (level 22)</col>.</col>
+step	32	-	Quick guide step 32
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+line	
+line	<str>Go to the chicken farm near the water wheel (File:Dairy churn icon.png icon on the east side of the river) and go through the southern gate.</str>
+line	
+line	<str>With both hands free, search one of the southern empty crates and Zanik will hide in it.</str>
+line	
+line	<str>While wearing the full H.A.M. robes, climb down the nearby trapdoor, and head to the western room. You will see Sigmund (level 50) and three Senior Guards (level 22).</str>
+line	
+line	<col=000080>Kill the guards first, then Sigmund. He will use <col=800000>protection prayers</col>, but will use only <col=800000>protect from missiles</col> in the second phase. You can safespot the guards using <col=800000>Zanik</col>, and you can safespot Sigmund using the boxes. Make sure Zanik hits Sigmund before you do. This way, you will be able to damage him.</col>
+step	33	-	Quick guide step 33
+line	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+line	
+line	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+line	
+line	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+line	
+line	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+line	
+line	<str># Talk to the Cook</str>
+line	
+line	<str># Talk to the Duke</str>
+line	
+line	<str># Talk to Hans</str>
+line	
+line	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+line	
+line	<str># Talk to Bob</str>
+line	
+line	<str># Talk to Father Aereck</str>
+line	
+line	<str># Talk to Lumbridge Guide</str>
+line	
+line	<str># Walk near a goblin. Zanik will talk to one.</str>
+line	
+line	<str># Talk to the shopkeeper</str>
+line	
+line	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+line	
+line	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+line	
+line	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+line	
+line	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+line	
+line	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+line	
+line	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+line	
+line	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+line	
+line	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+line	
+line	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+line	
+line	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+line	
+line	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+line	
+line	<str>Go to Juna in the Chasm of Tears.</str>
+line	
+line	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+line	
+line	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+line	
+line	<str>Go to the chicken farm near the water wheel (File:Dairy churn icon.png icon on the east side of the river) and go through the southern gate.</str>
+line	
+line	<str>With both hands free, search one of the southern empty crates and Zanik will hide in it.</str>
+line	
+line	<str>While wearing the full H.A.M. robes, climb down the nearby trapdoor, and head to the western room. You will see Sigmund (level 50) and three Senior Guards (level 22).</str>
+line	
+line	<str>Kill the guards first, then Sigmund. He will use protection prayers, but will use only protect from missiles in the second phase. You can safespot the guards using Zanik, and you can safespot Sigmund using the boxes. Make sure Zanik hits Sigmund before you do. This way, you will be able to damage him.</str>
+line	
+line	<col=000080>Smash the nearby drilling machine, then head down the southern tunnel to the exit. A cutscene will appear.</col>
+done	<str>Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen</str>
+done	
+done	<str>Talk to Mistag at the Dorgeshuun mines to start the quest.</str>
+done	
+done	<str>Bring two sets of H.A.M. robes to Zanik in Lumbridge cellar. (Can be purchased from the G.E.)</str>
+done	
+done	<str>Zanik will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.</str>
+done	
+done	<str># Talk to the Cook</str>
+done	
+done	<str># Talk to the Duke</str>
+done	
+done	<str># Talk to Hans</str>
+done	
+done	<str># Talk to any Man or Woman (Zanik must engage in the conversation. Try another if she does not.)</str>
+done	
+done	<str># Talk to Bob</str>
+done	
+done	<str># Talk to Father Aereck</str>
+done	
+done	<str># Talk to Lumbridge Guide</str>
+done	
+done	<str># Walk near a goblin. Zanik will talk to one.</str>
+done	
+done	<str># Talk to the shopkeeper</str>
+done	
+done	<str>Ask Zanik, "Have you seen enough of Lumbridge yet?"</str>
+done	
+done	<str>Put on your set of H.A.M. robes, and go to the H.A.M. Hideout (west of the general store) and pick the lock to the entrance trapdoor.</str>
+done	
+done	<str>Talk to Johanhus Ulsbrecht south-east of the stage.</str>
+done	
+done	<str>Wander around the south of the stage, Zanik will spot a trapdoor.</str>
+done	
+done	<str>Pick the trapdoor and go down. You'll need Zanik to kill the guards in this room to continue:</str>
+done	
+done	<str>#Walk west past the first guard and talk to him, then Zanik will shoot him.</str>
+done	
+done	<str>#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then Zanik will shoot him.</str>
+done	
+done	<str>#When the guard in the corridor starts walking east, talk to Zanik and say "Now!", and Zanik will snipe him.</str>
+done	
+done	<str>#Move to the east side of the central corridor but stop with Zanik as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to Zanik again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. Zanik will shoot him as he passes the central corridor.</str>
+done	
+done	<str>#For the final guard, again position Zanik as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and Zanik will shoot him.</str>
+done	
+done	<str>Listen at the door. A senior guard will appear and arrest you.</str>
+done	
+done	<str>Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find Zanik, dead. Take her body.</str>
+done	
+done	<str>Go to Juna in the Chasm of Tears.</str>
+done	
+done	<str>Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free.</str>
+done	
+done	<str>With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to Zanik.</str>
+done	
+done	<str>Go to the chicken farm near the water wheel (File:Dairy churn icon.png icon on the east side of the river) and go through the southern gate.</str>
+done	
+done	<str>With both hands free, search one of the southern empty crates and Zanik will hide in it.</str>
+done	
+done	<str>While wearing the full H.A.M. robes, climb down the nearby trapdoor, and head to the western room. You will see Sigmund (level 50) and three Senior Guards (level 22).</str>
+done	
+done	<str>Kill the guards first, then Sigmund. He will use protection prayers, but will use only protect from missiles in the second phase. You can safespot the guards using Zanik, and you can safespot Sigmund using the boxes. Make sure Zanik hits Sigmund before you do. This way, you will be able to damage him.</str>
+done	
+done	<str>Smash the nearby drilling machine, then head down the southern tunnel to the exit. A cutscene will appear.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

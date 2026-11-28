@@ -1,0 +1,1651 @@
+# Generated from the OSRS Wiki page "Zogre Flesh Eaters/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Grish</col> in <col=800000>Jiggig</col>, just south of <col=800000>Castle Wars</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 4 Smithing
+req	Level 8 Herblore
+req	Level 30 Ranged
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Grish</col> located in <col=800000>Jiggig</col> west of the <col=800000>Gu'Tanoth</col> and south of <col=800000>Castle Wars</col> (east of <col=800000>fairy ring</col> BKP) and offer to help.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<col=000080>Speak to <col=800000>Ogre guard</col> to the east, he will remove the barricade to gain access to the Zogre-infested area.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<col=000080>Climb over the <col=800000>crushed barricade</col> and run east to a set of stairs going downwards, go down these stairs.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<col=000080>Run north-west to an area with a blackened floor, a short cut scene will begin.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<col=000080>Search the <col=800000>skeleton</col> next to the <col=800000>broken lectern</col>. A <col=800000>Zombie</col> will appear and attack, kill it to obtain the <col=800000>Ruined backpack</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<col=000080>Open the <col=800000>ruined backpack</col> to obtain a <col=800000>Dragon inn tankard</col>, some <col=800000>rotten food</col> and a <col=800000>knife</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<col=000080>Search the broken lectern for the <col=800000>Torn page</col> (make sure you keep this).</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<col=000080>Attempt to search the <col=800000>coffin</col> west of the <col=800000>Skeleton</col>, and then use a <col=800000>knife</col> on it.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<col=000080>Attempt to open coffin (may take a couple of tries), search the coffin for the <col=800000>black prism</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<col=000080>Go to the Dragon Inn in <col=800000>Yanille</col> and use the dragon inn tankard on the bartender. The <col=800000>Minigame Teleport</col> to <col=800000>Nightmare Zone</col> can take you here quickly.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<col=000080>Speak to <col=800000>Zavistic Rarve</col> in the <col=800000>Wizards' Guild</col> in <col=800000>Yanille</col> (if you don't have the required level to enter, ring the bell out front). ( if you have started <col=800000>Hand in the Sand</col>)</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<col=000080>Speak to <col=800000>Sithik Ints</col> in his bed in the upstairs bedroom in the guest house north of the <col=800000>Wizards' Guild</col></col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<col=000080>Search the <col=800000>drawers</col>, <col=800000>cupboard</col> and <col=800000>wardrobe</col> for <col=800000>Book of portraiture</col>, <col=800000>Necromancy book</col>, <col=800000>papyrus</col>, <col=800000>charcoal</col>, and a <col=800000>book of 'H.A.M'</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<col=000080>Read all three books.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<col=000080>Use all three books on <col=800000>Sithik</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<col=000080>Use <col=800000>Papyrus</col> on Sithik.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<col=000080>Use <col=800000>portrait</col> on Sithik.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<col=000080>Go to the <col=800000>Dragon Inn</col> in <col=800000>Yanille</col> and use the Dragon Inn Tankard, then the <col=800000>portrait</col> on the Bartender.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<col=000080>Speak to <col=800000>Zavistic Rarve</col> while holding the <col=800000>Necromancy book</col>, <col=800000>book of 'H.A.M'</col>, the tankard and the <col=800000>signed portrait</col>. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started <col=800000>Hand in the Sand</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<col=000080>Use the <col=800000>Strange potion</col> on the <col=800000>Cup of tea</col> on top of <col=800000>Sithik's</col> drawers.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<col=000080>Go downstairs and back upstairs.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<col=000080>Speak to <col=800000>Sithik</col>, obtain answers to all three questions in order to make <col=800000>Relicym's balm</col> and <col=800000>Brutal arrows</col> .</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<col=000080>Return and speak to <col=800000>Grish</col> . He will give you an Ogre gate key to access the Ceremonial chamber.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<col=000080>Talk to Grish again "There must be an easier way to kill these <col=800000>Zogre</col>s" to learn how to equip <col=800000>Composite ogre bow</col>s .</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<col=000080>Prepare to fight <col=800000>Slash Bash</col> (level 111). If you are using an <col=800000>comp ogre bow</col> instead of <col=800000>Crumble Undead</col>, follow the "optional" steps below.</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<col=000080>Chop an <col=800000>Achey Tree</col> for logs.</col>
+step	27	-	Quick guide step 27
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<col=000080>Use a knife on the achey tree logs with <col=800000>wolf bones</col> in your inventory, and select box number (2) to create an unstrung comp bow.</col>
+step	28	-	Quick guide step 28
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<col=000080>String the bow with <col=800000>bow string</col> to create the finished bow.</col>
+step	29	-	Quick guide step 29
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<col=000080>Either buy one from the Grand Exchange or make it yourself by adding <col=800000>Rogue's purse</col> to a <col=800000>Vial of water</col> and then add <col=800000>Snake weed</col>. It is not needed for the quest but giving it to <col=800000>Uglug Nar</col> will allow you to purchase <col=800000>Relicym's balm</col> from his shop if needed in the future.</col>
+step	30	-	Quick guide step 30
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<col=000080>Cut down <col=800000>Achey Tree</col>s for <col=800000>Achey tree logs</col>.</col>
+step	31	-	Quick guide step 31
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<col=000080><col=800000>Fletch</col> the <col=800000>logs</col> with a <col=800000>knife</col> into <col=800000>Ogre arrow shaft</col>s.</col>
+step	32	-	Quick guide step 32
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<col=000080>Add <col=800000>feather</col>s to the <col=800000>shafts</col>.</col>
+step	33	-	Quick guide step 33
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<col=000080>With a <col=800000>hammer</col> in your inventory use <col=800000>nails</col> on the <col=800000>Flighted ogre arrow</col>s.</col>
+step	34	-	Quick guide step 34
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<col=000080>Head back down into <col=800000>Jiggig</col>.</col>
+step	35	-	Quick guide step 35
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<str>Head back down into Jiggig.</str>
+line	
+line	<col=000080>Travel west until you reach two sets of doors.</col>
+step	36	-	Quick guide step 36
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<str>Head back down into Jiggig.</str>
+line	
+line	<str>Travel west until you reach two sets of doors.</str>
+line	
+line	<col=000080>Go through both doors and go down the stairs.</col>
+step	37	-	Quick guide step 37
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<str>Head back down into Jiggig.</str>
+line	
+line	<str>Travel west until you reach two sets of doors.</str>
+line	
+line	<str>Go through both doors and go down the stairs.</str>
+line	
+line	<col=000080>Follow the chamber to the end and search the <col=800000>stand</col>.</col>
+step	38	-	Quick guide step 38
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<str>Head back down into Jiggig.</str>
+line	
+line	<str>Travel west until you reach two sets of doors.</str>
+line	
+line	<str>Go through both doors and go down the stairs.</str>
+line	
+line	<str>Follow the chamber to the end and search the stand.</str>
+line	
+line	<col=000080>Kill <col=800000>Slash Bash</col> and collect the <col=800000>Zogre bones</col> and <col=800000>Ogre artefact</col> that he drops.</col>
+step	39	-	Quick guide step 39
+line	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+line	
+line	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+line	
+line	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+line	
+line	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+line	
+line	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+line	
+line	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+line	
+line	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+line	
+line	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+line	
+line	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+line	
+line	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+line	
+line	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+line	
+line	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+line	
+line	<str>Read all three books.</str>
+line	
+line	<str>Use all three books on Sithik.</str>
+line	
+line	<str>Use Papyrus on Sithik.</str>
+line	
+line	<str>Use portrait on Sithik.</str>
+line	
+line	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+line	
+line	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+line	
+line	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+line	
+line	<str>Go downstairs and back upstairs.</str>
+line	
+line	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+line	
+line	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+line	
+line	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+line	
+line	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+line	
+line	<str>Chop an Achey Tree for logs.</str>
+line	
+line	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+line	
+line	<str>String the bow with bow string to create the finished bow.</str>
+line	
+line	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+line	
+line	<str>Cut down Achey Trees for Achey tree logs.</str>
+line	
+line	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+line	
+line	<str>Add feathers to the shafts.</str>
+line	
+line	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+line	
+line	<str>Head back down into Jiggig.</str>
+line	
+line	<str>Travel west until you reach two sets of doors.</str>
+line	
+line	<str>Go through both doors and go down the stairs.</str>
+line	
+line	<str>Follow the chamber to the end and search the stand.</str>
+line	
+line	<str>Kill Slash Bash and collect the Zogre bones and Ogre artefact that he drops.</str>
+line	
+line	<col=000080>Return and speak to <col=800000>Grish</col>.</col>
+done	<str>Speak to Grish located in Jiggig west of the Gu'Tanoth and south of Castle Wars (east of fairy ring BKP) and offer to help.</str>
+done	
+done	<str>Speak to Ogre guard to the east, he will remove the barricade to gain access to the Zogre-infested area.</str>
+done	
+done	<str>Climb over the crushed barricade and run east to a set of stairs going downwards, go down these stairs.</str>
+done	
+done	<str>Run north-west to an area with a blackened floor, a short cut scene will begin.</str>
+done	
+done	<str>Search the skeleton next to the broken lectern. A Zombie will appear and attack, kill it to obtain the Ruined backpack.</str>
+done	
+done	<str>Open the ruined backpack to obtain a Dragon inn tankard, some rotten food and a knife.</str>
+done	
+done	<str>Search the broken lectern for the Torn page (make sure you keep this).</str>
+done	
+done	<str>Attempt to search the coffin west of the Skeleton, and then use a knife on it.</str>
+done	
+done	<str>Attempt to open coffin (may take a couple of tries), search the coffin for the black prism.</str>
+done	
+done	<str>Go to the Dragon Inn in Yanille and use the dragon inn tankard on the bartender. The Minigame Teleport to Nightmare Zone can take you here quickly.</str>
+done	
+done	<str>Speak to Zavistic Rarve in the Wizards' Guild in Yanille (if you don't have the required level to enter, ring the bell out front). ( if you have started Hand in the Sand)</str>
+done	
+done	<str>Speak to Sithik Ints in his bed in the upstairs bedroom in the guest house north of the Wizards' Guild</str>
+done	
+done	<str>Search the drawers, cupboard and wardrobe for Book of portraiture, Necromancy book, papyrus, charcoal, and a book of 'H.A.M'.</str>
+done	
+done	<str>Read all three books.</str>
+done	
+done	<str>Use all three books on Sithik.</str>
+done	
+done	<str>Use Papyrus on Sithik.</str>
+done	
+done	<str>Use portrait on Sithik.</str>
+done	
+done	<str>Go to the Dragon Inn in Yanille and use the Dragon Inn Tankard, then the portrait on the Bartender.</str>
+done	
+done	<str>Speak to Zavistic Rarve while holding the Necromancy book, book of 'H.A.M', the tankard and the signed portrait. or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started Hand in the Sand.</str>
+done	
+done	<str>Use the Strange potion on the Cup of tea on top of Sithik's drawers.</str>
+done	
+done	<str>Go downstairs and back upstairs.</str>
+done	
+done	<str>Speak to Sithik, obtain answers to all three questions in order to make Relicym's balm and Brutal arrows .</str>
+done	
+done	<str>Return and speak to Grish . He will give you an Ogre gate key to access the Ceremonial chamber.</str>
+done	
+done	<str>Talk to Grish again "There must be an easier way to kill these Zogres" to learn how to equip Composite ogre bows .</str>
+done	
+done	<str>Prepare to fight Slash Bash (level 111). If you are using an comp ogre bow instead of Crumble Undead, follow the "optional" steps below.</str>
+done	
+done	<str>Chop an Achey Tree for logs.</str>
+done	
+done	<str>Use a knife on the achey tree logs with wolf bones in your inventory, and select box number (2) to create an unstrung comp bow.</str>
+done	
+done	<str>String the bow with bow string to create the finished bow.</str>
+done	
+done	<str>Either buy one from the Grand Exchange or make it yourself by adding Rogue's purse to a Vial of water and then add Snake weed. It is not needed for the quest but giving it to Uglug Nar will allow you to purchase Relicym's balm from his shop if needed in the future.</str>
+done	
+done	<str>Cut down Achey Trees for Achey tree logs.</str>
+done	
+done	<str>Fletch the logs with a knife into Ogre arrow shafts.</str>
+done	
+done	<str>Add feathers to the shafts.</str>
+done	
+done	<str>With a hammer in your inventory use nails on the Flighted ogre arrows.</str>
+done	
+done	<str>Head back down into Jiggig.</str>
+done	
+done	<str>Travel west until you reach two sets of doors.</str>
+done	
+done	<str>Go through both doors and go down the stairs.</str>
+done	
+done	<str>Follow the chamber to the end and search the stand.</str>
+done	
+done	<str>Kill Slash Bash and collect the Zogre bones and Ogre artefact that he drops.</str>
+done	
+done	<str>Return and speak to Grish.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

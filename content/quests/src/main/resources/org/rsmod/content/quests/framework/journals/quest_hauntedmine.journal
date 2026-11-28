@@ -1,54 +1,1415 @@
-# Authored (not Wiki): ui's OSRS-style journal for quest_hauntedmine (no Wiki journal transcript).
-before	<col=000080>I can start this quest by talking to the <col=800000>Zealot</col> outside the <col=800000>abandoned mine</col> south-west of <col=800000>Mort'ton</col>.</col>
+# Generated from the OSRS Wiki page "Haunted Mine/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>Zealot</col> by the <col=800000>Abandoned Mine</col> in the south-western corner of <col=800000>Morytania</col>.</col>
 before	
 before	<col=000080>Difficulty:</col>
 before	<col=800000>Experienced</col>
 before	<col=000080>Length:</col>
-before	<col=800000>Medium</col>
+before	<col=800000>Short</col>
 before	
 before	<col=000080>Requirements:</col>
-req	Priest in Peril
 req	Level 35 Crafting
-step	1	1	Authored
-line	<col=000080>The <col=800000>Zealot</col> told me of a treasure in the <col=800000>abandoned mine</col>. I need another way in.</col>
-step	2	2	Authored
-line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the <col=800000>Zealot</col> outside the <col=800000>mine</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the Zealot outside the mine.</str>
 line	
-line	<col=000080>I'm inside the mine. The lift needs power from the <col=800000>water valve</col>.</col>
-step	3	4	Authored
-line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	<col=000080>Pickpocket him for the <col=800000>zealot's key</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the Zealot outside the mine.</str>
 line	
-line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	<str>Pickpocket him for the zealot's key.</str>
 line	
-line	<col=000080>I took the lift down. Something terrible lurks below.</col>
-step	4	6	Authored
-line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	<col=000080>Climb over the cart to the south and crawl-down the cart tunnel.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the Zealot outside the mine.</str>
 line	
-line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	<str>Pickpocket him for the zealot's key.</str>
 line	
-line	<str>I took the lift down. Something terrible lurks below.</str>
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
 line	
-line	<col=000080><col=800000>Treus Dayth</col> attacked me when I took the key!</col>
-step	5	9	Authored
-line	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	<col=000080>Run directly west through the cave and crawl-through the cart tunnel.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the Zealot outside the mine.</str>
 line	
-line	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+line	<str>Pickpocket him for the zealot's key.</str>
 line	
-line	<str>I took the lift down. Something terrible lurks below.</str>
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
 line	
-line	<str>Treus Dayth attacked me when I took the key!</str>
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
 line	
-line	<col=000080>I defeated Treus Dayth. The key opens the doors to the crystal mine.</col>
-done	<str>The Zealot told me of a treasure in the abandoned mine. I need another way in.</str>
+line	<col=000080>Re-enter the cave via the southern entrance.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<col=000080>Descend the nearby ladder.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<col=000080>Go down the ladder directly east.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<col=000080>Avoid touching mine carts.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<col=000080>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<col=000080>Climb down the ladder.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<col=000080>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<col=000080>Go NW and place the fungus in the searchable cart.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<col=000080>Go NW to check the <col=800000>points settings</col>. (Board on a wall)</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<col=000080>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<col=000080>Go south-east and pull the needed levers (between A-E).</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<col=000080>Go north-west and pull the needed levers (between F-K).</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<col=000080>Return to the point settings and click start.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<col=000080>Leave the cave by going back the way you came</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<col=000080>Crawl-down the Cart tunnel to the north</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<col=000080>Climb down the nearby ladder.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<col=000080>Go NE and climb down the ladder by the door.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<col=000080>Go west then north and climb down the ladder.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<col=000080>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<col=000080>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<col=000080>Go all the way east then south past the moving cart.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<col=000080>Climb down the ladder.</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<col=000080>Head south and use the Zealot's key on the water valve.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<col=000080>Quickly run to the lift and take it down.</col>
+step	29	-	Quick guide step 29
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<col=000080>Go south then East and down the stairs.</col>
+step	30	-	Quick guide step 30
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<col=000080>Go through the door.</col>
+step	31	-	Quick guide step 31
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<col=000080>Pick up the innocent-looking key to start the boss fight.</col>
+step	32	-	Quick guide step 32
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<str>Pick up the innocent-looking key to start the boss fight.</str>
+line	
+line	<col=000080>Kill <col=800000>Treus Dayth</col>. It is recommended to pray <col=800000>Protect from Missiles</col> throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</col>
+step	33	-	Quick guide step 33
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<str>Pick up the innocent-looking key to start the boss fight.</str>
+line	
+line	<str>Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</str>
+line	
+line	<col=000080>Pick up the key</col>
+step	34	-	Quick guide step 34
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<str>Pick up the innocent-looking key to start the boss fight.</str>
+line	
+line	<str>Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</str>
+line	
+line	<str>Pick up the key</str>
+line	
+line	<col=000080>Go back up the eastern stairs.</col>
+step	35	-	Quick guide step 35
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<str>Pick up the innocent-looking key to start the boss fight.</str>
+line	
+line	<str>Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</str>
+line	
+line	<str>Pick up the key</str>
+line	
+line	<str>Go back up the eastern stairs.</str>
+line	
+line	<col=000080>Go west and down those stairs. You will need the <col=800000>Glowing fungus</col> to act as a light source.</col>
+step	36	-	Quick guide step 36
+line	<str>Talk to the Zealot outside the mine.</str>
+line	
+line	<str>Pickpocket him for the zealot's key.</str>
+line	
+line	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
+line	
+line	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
+line	
+line	<str>Re-enter the cave via the southern entrance.</str>
+line	
+line	<str>Descend the nearby ladder.</str>
+line	
+line	<str>Go down the ladder directly east.</str>
+line	
+line	<str>Avoid touching mine carts.</str>
+line	
+line	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+line	
+line	<str>Go NW and place the fungus in the searchable cart.</str>
+line	
+line	<str>Go NW to check the points settings. (Board on a wall)</str>
+line	
+line	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+line	
+line	<str>Go south-east and pull the needed levers (between A-E).</str>
+line	
+line	<str>Go north-west and pull the needed levers (between F-K).</str>
+line	
+line	<str>Return to the point settings and click start.</str>
+line	
+line	<str>Leave the cave by going back the way you came</str>
+line	
+line	<str>Crawl-down the Cart tunnel to the north</str>
+line	
+line	<str>Climb down the nearby ladder.</str>
+line	
+line	<str>Go NE and climb down the ladder by the door.</str>
+line	
+line	<str>Go west then north and climb down the ladder.</str>
+line	
+line	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+line	
+line	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+line	
+line	<str>Go all the way east then south past the moving cart.</str>
+line	
+line	<str>Climb down the ladder.</str>
+line	
+line	<str>Head south and use the Zealot's key on the water valve.</str>
+line	
+line	<str>Quickly run to the lift and take it down.</str>
+line	
+line	<str>Go south then East and down the stairs.</str>
+line	
+line	<str>Go through the door.</str>
+line	
+line	<str>Pick up the innocent-looking key to start the boss fight.</str>
+line	
+line	<str>Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</str>
+line	
+line	<str>Pick up the key</str>
+line	
+line	<str>Go back up the eastern stairs.</str>
+line	
+line	<str>Go west and down those stairs. You will need the Glowing fungus to act as a light source.</str>
+line	
+line	<col=000080>Open the door and cut the crystal outcrop to the south-east with your chisel.</col>
+done	<str>Talk to the Zealot outside the mine.</str>
 done	
-done	<str>I'm inside the mine. The lift needs power from the water valve.</str>
+done	<str>Pickpocket him for the zealot's key.</str>
 done	
-done	<str>I took the lift down. Something terrible lurks below.</str>
+done	<str>Climb over the cart to the south and crawl-down the cart tunnel.</str>
 done	
-done	<str>Treus Dayth attacked me when I took the key!</str>
+done	<str>Run directly west through the cave and crawl-through the cart tunnel.</str>
 done	
-done	<str>I defeated Treus Dayth. The key opens the doors to the crystal mine.</str>
+done	<str>Re-enter the cave via the southern entrance.</str>
 done	
-done	<str>I defeated the ghost of Treus Dayth and found the crystal mine.</str>
+done	<str>Descend the nearby ladder.</str>
+done	
+done	<str>Go down the ladder directly east.</str>
+done	
+done	<str>Avoid touching mine carts.</str>
+done	
+done	<str>Go south along the moving cart's tracks using the alcove for cover, then slightly west.</str>
+done	
+done	<str>Climb down the ladder.</str>
+done	
+done	<str>Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.</str>
+done	
+done	<str>Go NW and place the fungus in the searchable cart.</str>
+done	
+done	<str>Go NW to check the points settings. (Board on a wall)</str>
+done	
+done	<str>Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.</str>
+done	
+done	<str>Go south-east and pull the needed levers (between A-E).</str>
+done	
+done	<str>Go north-west and pull the needed levers (between F-K).</str>
+done	
+done	<str>Return to the point settings and click start.</str>
+done	
+done	<str>Leave the cave by going back the way you came</str>
+done	
+done	<str>Crawl-down the Cart tunnel to the north</str>
+done	
+done	<str>Climb down the nearby ladder.</str>
+done	
+done	<str>Go NE and climb down the ladder by the door.</str>
+done	
+done	<str>Go west then north and climb down the ladder.</str>
+done	
+done	<str>Search the cart for the fungus and take it. Do not drop until you have completed the quest!</str>
+done	
+done	<str>Climb up the ladder and start saving your run energy after you turn the water valve in the next step.</str>
+done	
+done	<str>Go all the way east then south past the moving cart.</str>
+done	
+done	<str>Climb down the ladder.</str>
+done	
+done	<str>Head south and use the Zealot's key on the water valve.</str>
+done	
+done	<str>Quickly run to the lift and take it down.</str>
+done	
+done	<str>Go south then East and down the stairs.</str>
+done	
+done	<str>Go through the door.</str>
+done	
+done	<str>Pick up the innocent-looking key to start the boss fight.</str>
+done	
+done	<str>Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.</str>
+done	
+done	<str>Pick up the key</str>
+done	
+done	<str>Go back up the eastern stairs.</str>
+done	
+done	<str>Go west and down those stairs. You will need the Glowing fungus to act as a light source.</str>
+done	
+done	<str>Open the door and cut the crystal outcrop to the south-east with your chisel.</str>
 done	
 done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,351 @@
+# Generated from the OSRS Wiki page "Witch's House/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to the <col=800000>boy</col> near the gate entrance of <col=800000>Taverley</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to the <col=800000>Boy</col> south-east of the long garden in <col=800000>Taverley</col>, next to the members gate.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<col=000080>Head west, then north to the front door of the <col=800000>house</col>, across from the <col=800000>player-owned house</col> portal.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<col=000080>Look-under the potted plant closest to the door for a <col=800000>door key</col> and enter the door.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<col=000080>Read the Diary on the table</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<col=000080>Climb down the ladder to the north, equip gloves, and enter the <col=800000>gate</col>. (The <col=800000>boxes</col> can be searched for a pair of <col=800000>leather gloves</col>.)</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<col=000080>Equip your leather gloves before opening the gate.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<col=000080>Search the <col=800000>cupboard</col> for a <col=800000>magnet</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<col=000080>Climb up the ladder and go to the small southern room.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<col=000080>Drop cheese in the room and a <col=800000>mouse</col> will come out.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<col=000080>Use the magnet on the mouse.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<col=000080>Go around the garden to the <col=800000>fountain</col> without being caught by the <col=800000>Witch</col>. (Full run energy or a <col=800000>stamina potion</col> may be useful.)</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<col=000080>Check the fountain.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<str>Check the fountain.</str>
+line	
+line	<col=000080>Go to the shed on the east and use the key on the door.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<str>Check the fountain.</str>
+line	
+line	<str>Go to the shed on the east and use the key on the door.</str>
+line	
+line	<col=000080>Kill the Witch's experiment in all four forms.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<str>Check the fountain.</str>
+line	
+line	<str>Go to the shed on the east and use the key on the door.</str>
+line	
+line	<str>Kill the Witch's experiment in all four forms.</str>
+line	
+line	<col=000080>Take the <col=800000>ball</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<str>Check the fountain.</str>
+line	
+line	<str>Go to the shed on the east and use the key on the door.</str>
+line	
+line	<str>Kill the Witch's experiment in all four forms.</str>
+line	
+line	<str>Take the ball.</str>
+line	
+line	<col=000080>Leave the Witch's house by teleporting out, or by exiting through the garden then the front door.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+line	
+line	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+line	
+line	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+line	
+line	<str>Read the Diary on the table</str>
+line	
+line	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+line	
+line	<str>Equip your leather gloves before opening the gate.</str>
+line	
+line	<str>Search the cupboard for a magnet.</str>
+line	
+line	<str>Climb up the ladder and go to the small southern room.</str>
+line	
+line	<str>Drop cheese in the room and a mouse will come out.</str>
+line	
+line	<str>Use the magnet on the mouse.</str>
+line	
+line	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+line	
+line	<str>Check the fountain.</str>
+line	
+line	<str>Go to the shed on the east and use the key on the door.</str>
+line	
+line	<str>Kill the Witch's experiment in all four forms.</str>
+line	
+line	<str>Take the ball.</str>
+line	
+line	<str>Leave the Witch's house by teleporting out, or by exiting through the garden then the front door.</str>
+line	
+line	<col=000080>Go back to the boy and give him the ball.</col>
+done	<str>Talk to the Boy south-east of the long garden in Taverley, next to the members gate.</str>
+done	
+done	<str>Head west, then north to the front door of the house, across from the player-owned house portal.</str>
+done	
+done	<str>Look-under the potted plant closest to the door for a door key and enter the door.</str>
+done	
+done	<str>Read the Diary on the table</str>
+done	
+done	<str>Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)</str>
+done	
+done	<str>Equip your leather gloves before opening the gate.</str>
+done	
+done	<str>Search the cupboard for a magnet.</str>
+done	
+done	<str>Climb up the ladder and go to the small southern room.</str>
+done	
+done	<str>Drop cheese in the room and a mouse will come out.</str>
+done	
+done	<str>Use the magnet on the mouse.</str>
+done	
+done	<str>Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)</str>
+done	
+done	<str>Check the fountain.</str>
+done	
+done	<str>Go to the shed on the east and use the key on the door.</str>
+done	
+done	<str>Kill the Witch's experiment in all four forms.</str>
+done	
+done	<str>Take the ball.</str>
+done	
+done	<str>Leave the Witch's house by teleporting out, or by exiting through the garden then the front door.</str>
+done	
+done	<str>Go back to the boy and give him the ball.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

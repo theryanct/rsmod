@@ -172,25 +172,139 @@ def journal_pages():
     return set(pages)
 
 
+def wiki_links_red(s):
+    """Quick-guide text -> journal text: links become dark red names, the rest dark blue."""
+    s = re.sub(r"\{\{(?:Chat option|Chat options|Dialogue)\|[^{}]*\}\}", "", s)
+    s = re.sub(r"\{\{(?:Fairycode|fairycode)\|([^{}|]*)\}\}", lambda m: m.group(1).upper(), s)
+    s = re.sub(r"\{\{SCP\|([^{}|]*)\|([^{}|]*)[^{}]*\}\}", r"\2 \1", s)
+    s = re.sub(r"\{\{(?:Coins|GEP|Boostable|Questreqstart|sic|!)[^{}]*\}\}", "", s)
+    s = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"<col=800000>\1</col>", s)
+    s = re.sub(r"\{\{[^{}|]*\|([^{}]*)\}\}", r"\1", s)
+    s = re.sub(r"\{\{[^{}]*\}\}", "", s)
+    s = re.sub(r"'''?", "", s)
+    s = re.sub(r"<br\s*/?>", " ", s)
+    s = re.sub(r"<(?!/?col)[^>]+>", "", s)
+    s = re.sub(r"\s+", " ", s).replace("\t", " ").strip()
+    return f"<col=000080>{s}</col>" if s else ""
+
+
+def details(main_text):
+    """The quest page's {{Quest details}}: start, difficulty, length, requirement lines."""
+    m = re.search(r"\{\{Quest details(.*?)\n\}\}", main_text or "", re.S)
+    if not m:
+        return None
+    fields, key = {}, None
+    for line in m.group(1).splitlines():
+        f = re.match(r"^\|\s*(\w+)\s*=\s*(.*)$", line)
+        if f:
+            key = f.group(1)
+            fields[key] = f.group(2)
+        elif key:
+            fields[key] += "\n" + line
+    reqs = []
+    for line in fields.get("requirements", "").splitlines():
+        line = line.strip().lstrip("*").strip()
+        scp = re.search(r"\{\{SCP\|([^{}|]+)\|(\d+)", line)
+        quest = re.match(r"^(?:Partial )?[Cc]ompletion of \[\[(?:[^|\]]*\|)?([^\]]*)\]\]", line)
+        if scp:
+            skill, level = scp.group(1).strip(), scp.group(2)
+            reqs.append(f"{level} Quest Points" if skill.lower() == "quest" else f"Level {level} {skill}")
+        elif quest:
+            reqs.append(quest.group(1))
+    return fields.get("start", ""), fields.get("difficulty", ""), fields.get("length", ""), reqs
+
+
+def checklist_steps(text):
+    """Top-level bullets of every {{Checklist|...}} (in order), minus the closing congratulations."""
+    steps = []
+    blocks, text = [], text or ""
+    start = text.find("{{Checklist|")
+    while start >= 0:
+        depth, i = 0, start
+        while i < len(text):
+            if text.startswith("{{", i):
+                depth += 1
+                i += 2
+            elif text.startswith("}}", i):
+                depth -= 1
+                i += 2
+                if depth == 0:
+                    break
+            else:
+                i += 1
+        blocks.append(text[start + len("{{Checklist|"):i - 2])
+        start = text.find("{{Checklist|", i)
+    for block in blocks:
+        for line in block.splitlines():
+            m = re.match(r"^\*(?!\*)\s*(.*)$", line.strip())
+            if not m:
+                continue
+            body = m.group(1).strip()
+            if "ongratulations" in body:
+                continue
+            t = wiki_links_red(body)
+            if t:
+                steps.append(t)
+    return steps
+
+
+def from_quick_guide(name):
+    """(before, steps, done) from "<Quest>/Quick guide" (or the quest page's walkthrough)."""
+    main_text = fetch(name)
+    guide = fetch(f"{name}/Quick guide") or main_text
+    steps = checklist_steps(guide)
+    if not steps:
+        return None
+    info = details(main_text)
+    before = []
+    if info:
+        start, difficulty, length, reqs = info
+        if start:
+            before.append(("before", wiki_links_red(start.strip())))
+            before.append(("before", ""))
+        if difficulty:
+            before += [("before", "<col=000080>Difficulty:</col>"), ("before", f"<col=800000>{clean(difficulty)}</col>")]
+        if length:
+            before += [("before", "<col=000080>Length:</col>"), ("before", f"<col=800000>{clean(length)}</col>")]
+        before += [("before", ""), ("before", "<col=000080>Requirements:</col>")]
+        before += [("req", r) for r in reqs] or [("before", "<col=800000>None</col>")]
+    snapshots = []
+    for k in range(len(steps)):
+        lines = []
+        for i in range(k + 1):
+            lines.append(steps[i] if i == k else "<str>" + plain(steps[i]) + "</str>")
+            lines.append("")
+        snapshots.append((f"Quick guide step {k + 1}", lines[:-1]))
+    done = []
+    for s in steps:
+        done += ["<str>" + plain(s) + "</str>", ""]
+    done.append("<col=ff0000>QUEST COMPLETE!</col>")
+    return before, snapshots, done
+
+
 def main():
     known = journal_pages()
     ids =[l.rstrip("\n").split("\t") for l in open(os.path.join(RES, "quest_ids.txt"), encoding="utf-8")
            if l.strip() and not l.startswith("#")]
     os.makedirs(OUT, exist_ok=True)
-    missing, written = [], 0
+    missing, written, guides = [], 0, 0
     for qid, row, name in (x[:3] for x in ids if len(x) >= 3):
         existing = os.path.join(OUT, row + ".journal")
         if os.path.exists(existing) and not open(existing, encoding="utf-8").readline().startswith("# Generated"):
-            continue  # hand-written (Authored, not Wiki): keep it, it isn't missing
+            continue  # hand-written: keep it, it isn't missing
         page = f"Transcript:{name}/Journal"
         text = fetch(page) if page in known else None
-        if not text:
+        parsed = parse(text) if text else None
+        source = page
+        if not parsed or (not parsed[1] and not parsed[2]):
+            parsed = from_quick_guide(name)
+            source = f"{name}/Quick guide"
+            if parsed:
+                guides += 1
+        if not parsed:
             missing.append(f"{row}\t{name}")
             continue
-        before, steps, done = parse(text)
-        if not steps and not done:
-            missing.append(f"{row}\t{name}")
-            continue
+        before, steps, done = parsed
         out_path = os.path.join(OUT, row + ".journal")
         pins = {}
         if os.path.exists(out_path):
@@ -200,21 +314,21 @@ def main():
                 if q[0] == "step" and len(q) > 2 and q[2] != "-":
                     pins[q[1]] = q[2]
         with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-            f.write(f"# Generated from the OSRS Wiki page \"Transcript:{name}/Journal\" by "
+            f.write(f"# Generated from the OSRS Wiki page \"{source}\" by "
                     "tools/quests/journals_from_wiki.py; set a step's stage to pin it.\n")
             for k, t in before:
                 f.write(f"{k}\t{t}\n")
             for n, (title, lines) in enumerate(steps, 1):
-                f.write(f"step\t{n}\t{pins.get(str(n), '-')}\t{title}\n")
+                f.write(f"step\t{n}\t{pins.get(str(n), '-')}\t{plain(clean(title))}\n")
                 for t in lines:
                     f.write(f"line\t{t}\n")
             for t in done:
                 f.write(f"done\t{t}\n")
         written += 1
     with open(os.path.join(OUT, "_missing.txt"), "w", encoding="utf-8", newline="\n") as f:
-        f.write("# Quests without a Wiki journal transcript (the server shows a summary instead).\n")
+        f.write("# Quests with neither a Wiki journal transcript nor a quick guide (the server shows a summary).\n")
         f.write("\n".join(missing) + "\n")
-    print(f"journals: {written} written, {len(missing)} missing")
+    print(f"journals: {written} written ({guides} from quick guides), {len(missing)} missing")
 
 
 if __name__ == "__main__":

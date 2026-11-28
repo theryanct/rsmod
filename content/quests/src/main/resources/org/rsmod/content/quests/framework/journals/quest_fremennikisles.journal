@@ -1,0 +1,2172 @@
+# Generated from the OSRS Wiki page "The Fremennik Isles/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Mord Gunnars</col> at the northernmost dock of <col=800000>Rellekka</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	The Fremennik Trials
+req	Level 20 Construction
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Mord Gunnars</col> at the most northern dock in <col=800000>Rellekka</col> to be taken to <col=800000>Jatizso</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<col=000080>Talk to <col=800000>King Gjuki Sorvott IV</col> in the checkered floor room. <col=800000>His cat</col> will intervene.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<col=000080>Use the raw tuna on the King's cat.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<col=000080>Speak to the King.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<col=000080>Give him the required ores.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<col=000080>Take all four pieces of the jester outfit from the chest behind the king's throne.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<col=000080>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<col=000080>Quick travel to <col=800000>Neitiznot</col> via <col=800000>Maria Gunnars</col> on the docks next to Mord.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<col=000080>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<col=000080>Speak with <col=800000>Slug Hemligssen</col> north of the bank.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<col=000080>Talk to <col=800000>Mawnis Burowgar</col> in the building south of the bank.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<col=000080>During the cutscene, follow the commands Mawnis gives using the right-side panel.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<col=000080>Return to Slug Hemligssen. He will give you 2500 coins. ,</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<col=000080>Speak to <col=800000>Mawnis Burowgar</col> again without the Jester Outfit</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<col=000080>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<col=000080>Speak to <col=800000>Thakkrad</col> to learn how to repair the bridges.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<col=000080>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<col=000080>Talk to Mawnis Burowgar.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<col=000080>Quick travel back to Rellekka via <col=800000>Maria Gunnars</col> at the dock to the south-west.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<col=000080>Quick travel to <col=800000>Jatizso</col> via <col=800000>Mord</col>.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<col=000080>Speak with <col=800000>King Gjuki Sorvott IV</col> in the building west of the bank.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<col=000080>Tax the shop keepers of Jatizso:</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<col=000080>Talk to King Gjuki Sorvott IV.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<col=000080>Collect taxes from the following people for 1,000:</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<col=000080>Speak with King Gjuki Sorvott IV.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<col=000080>Quick travel back to <col=800000>Rellekka</col> via Mord.</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<col=000080>Quick travel to <col=800000>Neitiznot</col> via <col=800000>Maria</col>.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<col=000080>Speak with Spymaster <col=800000>Slug Hemligssen</col> again.</col>
+step	29	-	Quick guide step 29
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<col=000080>Equip only the jester outfit again.</col>
+step	30	-	Quick guide step 30
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<col=000080>Speak with <col=800000>Mawnis</col> to induce another Jester cutscene.</col>
+step	31	-	Quick guide step 31
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<col=000080>Speak with Slug once again.</col>
+step	32	-	Quick guide step 32
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<col=000080>Ferry back to <col=800000>Rellekka</col> and then to <col=800000>Jatizso</col>.</col>
+step	33	-	Quick guide step 33
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<col=000080>Speak to <col=800000>King Gjuki Sorvott IV</col> to obtain the <col=800000>royal decree</col> (1 inv spot needed, otherwise you have to repeat dialogue).</col>
+step	34	-	Quick guide step 34
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<col=000080>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</col>
+step	35	-	Quick guide step 35
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<col=000080>Buy <col=800000>yak-hide armour</col> (top and leggings), along with the <col=800000>Neitiznot shield</col> from the Grand Exchange, or for Ironmen:</col>
+step	36	-	Quick guide step 36
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<col=000080>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</col>
+step	37	-	Quick guide step 37
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<col=000080>Speak with Mawnis again.</col>
+step	38	-	Quick guide step 38
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<col=000080>Equip the <col=800000>Neitiznot shield</col> and combat items to fight the <col=800000>Ice Troll King</col>.</col>
+step	39	-	Quick guide step 39
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<col=000080>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</col>
+step	40	-	Quick guide step 40
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<col=000080>Enter the cave to start a cutscene.</col>
+step	41	-	Quick guide step 41
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<str>Enter the cave to start a cutscene.</str>
+line	
+line	<col=000080>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</col>
+step	42	-	Quick guide step 42
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<str>Enter the cave to start a cutscene.</str>
+line	
+line	<str>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</str>
+line	
+line	<col=000080>Turn on Protect from Missiles before crossing the bridge.</col>
+step	43	-	Quick guide step 43
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<str>Enter the cave to start a cutscene.</str>
+line	
+line	<str>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</str>
+line	
+line	<str>Turn on Protect from Missiles before crossing the bridge.</str>
+line	
+line	<col=000080>Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as <col=800000>Dad</col> does.</col>
+step	44	-	Quick guide step 44
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<str>Enter the cave to start a cutscene.</str>
+line	
+line	<str>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</str>
+line	
+line	<str>Turn on Protect from Missiles before crossing the bridge.</str>
+line	
+line	<str>Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as Dad does.</str>
+line	
+line	<col=000080>Decapitate the troll king's corpse.</col>
+step	45	-	Quick guide step 45
+line	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+line	
+line	<str>Use the raw tuna on the King's cat.</str>
+line	
+line	<str>Speak to the King.</str>
+line	
+line	<str>Give him the required ores.</str>
+line	
+line	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+line	
+line	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+line	
+line	<str>Speak with Slug Hemligssen north of the bank.</str>
+line	
+line	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+line	
+line	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+line	
+line	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+line	
+line	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+line	
+line	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+line	
+line	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+line	
+line	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+line	
+line	<str>Talk to Mawnis Burowgar.</str>
+line	
+line	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+line	
+line	<str>Quick travel to Jatizso via Mord.</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+line	
+line	<str>Tax the shop keepers of Jatizso:</str>
+line	
+line	<str>Talk to King Gjuki Sorvott IV.</str>
+line	
+line	<str>Collect taxes from the following people for 1,000:</str>
+line	
+line	<str>Speak with King Gjuki Sorvott IV.</str>
+line	
+line	<str>Quick travel back to Rellekka via Mord.</str>
+line	
+line	<str>Quick travel to Neitiznot via Maria.</str>
+line	
+line	<str>Speak with Spymaster Slug Hemligssen again.</str>
+line	
+line	<str>Equip only the jester outfit again.</str>
+line	
+line	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+line	
+line	<str>Speak with Slug once again.</str>
+line	
+line	<str>Ferry back to Rellekka and then to Jatizso.</str>
+line	
+line	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+line	
+line	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+line	
+line	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+line	
+line	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+line	
+line	<str>Speak with Mawnis again.</str>
+line	
+line	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+line	
+line	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+line	
+line	<str>Enter the cave to start a cutscene.</str>
+line	
+line	<str>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</str>
+line	
+line	<str>Turn on Protect from Missiles before crossing the bridge.</str>
+line	
+line	<str>Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as Dad does.</str>
+line	
+line	<str>Decapitate the troll king's corpse.</str>
+line	
+line	<col=000080>Return to <col=800000>Mawnis Burowgar</col>.</col>
+done	<str>Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.</str>
+done	
+done	<str>Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene.</str>
+done	
+done	<str>Use the raw tuna on the King's cat.</str>
+done	
+done	<str>Speak to the King.</str>
+done	
+done	<str>Give him the required ores.</str>
+done	
+done	<str>Take all four pieces of the jester outfit from the chest behind the king's throne.</str>
+done	
+done	<str>Quick travel back to Rellekka via Mord Gunnars at the docks to the south.</str>
+done	
+done	<str>Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord.</str>
+done	
+done	<str>Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)</str>
+done	
+done	<str>Speak with Slug Hemligssen north of the bank.</str>
+done	
+done	<str>Talk to Mawnis Burowgar in the building south of the bank.</str>
+done	
+done	<str>During the cutscene, follow the commands Mawnis gives using the right-side panel.</str>
+done	
+done	<str>Return to Slug Hemligssen. He will give you 2500 coins. ,</str>
+done	
+done	<str>Speak to Mawnis Burowgar again without the Jester Outfit</str>
+done	
+done	<str>Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.</str>
+done	
+done	<str>Speak to Thakkrad to learn how to repair the bridges.</str>
+done	
+done	<str>Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).</str>
+done	
+done	<str>Talk to Mawnis Burowgar.</str>
+done	
+done	<str>Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west.</str>
+done	
+done	<str>Quick travel to Jatizso via Mord.</str>
+done	
+done	<str>Speak with King Gjuki Sorvott IV in the building west of the bank.</str>
+done	
+done	<str>Tax the shop keepers of Jatizso:</str>
+done	
+done	<str>Talk to King Gjuki Sorvott IV.</str>
+done	
+done	<str>Collect taxes from the following people for 1,000:</str>
+done	
+done	<str>Speak with King Gjuki Sorvott IV.</str>
+done	
+done	<str>Quick travel back to Rellekka via Mord.</str>
+done	
+done	<str>Quick travel to Neitiznot via Maria.</str>
+done	
+done	<str>Speak with Spymaster Slug Hemligssen again.</str>
+done	
+done	<str>Equip only the jester outfit again.</str>
+done	
+done	<str>Speak with Mawnis to induce another Jester cutscene.</str>
+done	
+done	<str>Speak with Slug once again.</str>
+done	
+done	<str>Ferry back to Rellekka and then to Jatizso.</str>
+done	
+done	<str>Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue).</str>
+done	
+done	<str>Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)</str>
+done	
+done	<str>Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:</str>
+done	
+done	<str>Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:</str>
+done	
+done	<str>Speak with Mawnis again.</str>
+done	
+done	<str>Equip the Neitiznot shield and combat items to fight the Ice Troll King.</str>
+done	
+done	<str>Use Protect from Melee while running to the east side cave entrance of the farthest north isle.</str>
+done	
+done	<str>Enter the cave to start a cutscene.</str>
+done	
+done	<str>Kill ten trolls, you will see a message saying "You have defeated enough trolls to attack the King."</str>
+done	
+done	<str>Turn on Protect from Missiles before crossing the bridge.</str>
+done	
+done	<str>Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as Dad does.</str>
+done	
+done	<str>Decapitate the troll king's corpse.</str>
+done	
+done	<str>Return to Mawnis Burowgar.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

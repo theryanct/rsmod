@@ -1,0 +1,281 @@
+# Generated from the OSRS Wiki page "Fairytale I - Growing Pains/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Martin the Master Gardener</col> by the pig pen in <col=800000>Draynor Village</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Martin the Master Gardener</col> in <col=800000>Draynor Village</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<col=000080>Talk to 5 <col=800000>Group of Advanced Gardeners</col> members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for <col=800000>Ayesha</col> in <col=800000>Al Kharid</col>, and ones found on <col=800000>Great Kourend</col>. Note: The following is a suggested path you can take to speak to farmers quickly:</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<col=000080>Return to the Draynor Village market and talk to Martin.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<col=000080>Travel to <col=800000>Zanaris</col> (with your <col=800000>dramen staff</col> or <col=800000>Lunar staff</col> equipped, enter the small shack south of <col=800000>Lumbridge Castle</col> in <col=800000>Lumbridge Swamp</col>). (If you need to collect the <col=800000>spade</col>, enter the shack without the staff equipped first and collect it).</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<col=000080>Run to the throne room and Talk to the <col=800000>Fairy Godfather</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<col=000080>Run north of the bank and talk to <col=800000>Fairy Nuff</col> to get the <col=800000>symptoms list</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<col=000080>Speak to <col=800000>Zandar Horfyre</col> on the top floor of the <col=800000>Dark Wizards' Tower</col> just north of the <col=800000>Makeover mage</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<col=000080>Speak to <col=800000>Malignius Mortifer</col>, the necromancer north-west of <col=800000>Port Sarim</col>'s rune shop to give him the <col=800000>Draynor skull</col> and receive the list of three required items.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<col=000080>Collect the <col=800000>3 randomly-picked items</col>. Check the <col=800000>quest journal</col> to see your list of items to collect.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<col=000080>Travel to the <col=800000>Nature Grotto</col> in <col=800000>Mort Myre Swamp</col> (use <col=800000>Shades of Mort'ton</col> minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to <col=800000>the Nature Spirit</col> inside to receive the <col=800000>Magic secateurs</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+line	
+line	<col=000080>Travel to <col=800000>Zanaris</col> with your Magic secateurs and prepare for the <col=800000>Tanglefoot</col> fight.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+line	
+line	<str>Travel to Zanaris with your Magic secateurs and prepare for the Tanglefoot fight.</str>
+line	
+line	<col=000080>Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+line	
+line	<str>Travel to Zanaris with your Magic secateurs and prepare for the Tanglefoot fight.</str>
+line	
+line	<str>Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.</str>
+line	
+line	<col=000080>Equip your Magic secateurs, run to the end of the tunnel and defeat Tanglefoot. (Turn on <col=800000>Protect from Melee</col> if you have the level for it. You can also lure the Tanglefoot around the mushrooms to the east to be able to <col=800000>flinch</col> it.)</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+line	
+line	<str>Travel to Zanaris with your Magic secateurs and prepare for the Tanglefoot fight.</str>
+line	
+line	<str>Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.</str>
+line	
+line	<str>Equip your Magic secateurs, run to the end of the tunnel and defeat Tanglefoot. (Turn on Protect from Melee if you have the level for it. You can also lure the Tanglefoot around the mushrooms to the east to be able to flinch it.)</str>
+line	
+line	<col=000080>Pick up the <col=800000>Queen's secateurs</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+line	
+line	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+line	
+line	<str>Return to the Draynor Village market and talk to Martin.</str>
+line	
+line	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+line	
+line	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+line	
+line	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+line	
+line	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+line	
+line	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+line	
+line	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+line	
+line	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+line	
+line	<str>Travel to Zanaris with your Magic secateurs and prepare for the Tanglefoot fight.</str>
+line	
+line	<str>Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.</str>
+line	
+line	<str>Equip your Magic secateurs, run to the end of the tunnel and defeat Tanglefoot. (Turn on Protect from Melee if you have the level for it. You can also lure the Tanglefoot around the mushrooms to the east to be able to flinch it.)</str>
+line	
+line	<str>Pick up the Queen's secateurs.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Fairy Godfather</col>.</col>
+done	<str>Talk to Martin the Master Gardener in Draynor Village.</str>
+done	
+done	<str>Talk to 5 Group of Advanced Gardeners members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for Ayesha in Al Kharid, and ones found on Great Kourend. Note: The following is a suggested path you can take to speak to farmers quickly:</str>
+done	
+done	<str>Return to the Draynor Village market and talk to Martin.</str>
+done	
+done	<str>Travel to Zanaris (with your dramen staff or Lunar staff equipped, enter the small shack south of Lumbridge Castle in Lumbridge Swamp). (If you need to collect the spade, enter the shack without the staff equipped first and collect it).</str>
+done	
+done	<str>Run to the throne room and Talk to the Fairy Godfather.</str>
+done	
+done	<str>Run north of the bank and talk to Fairy Nuff to get the symptoms list.</str>
+done	
+done	<str>Speak to Zandar Horfyre on the top floor of the Dark Wizards' Tower just north of the Makeover mage.</str>
+done	
+done	<str>Speak to Malignius Mortifer, the necromancer north-west of Port Sarim's rune shop to give him the Draynor skull and receive the list of three required items.</str>
+done	
+done	<str>Collect the 3 randomly-picked items. Check the quest journal to see your list of items to collect.</str>
+done	
+done	<str>Travel to the Nature Grotto in Mort Myre Swamp (use Shades of Mort'ton minigame teleport, go west, then follow the winding path north over the bridge), equip your Ghostspeak amulet and talk to the Nature Spirit inside to receive the Magic secateurs.</str>
+done	
+done	<str>Travel to Zanaris with your Magic secateurs and prepare for the Tanglefoot fight.</str>
+done	
+done	<str>Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.</str>
+done	
+done	<str>Equip your Magic secateurs, run to the end of the tunnel and defeat Tanglefoot. (Turn on Protect from Melee if you have the level for it. You can also lure the Tanglefoot around the mushrooms to the east to be able to flinch it.)</str>
+done	
+done	<str>Pick up the Queen's secateurs.</str>
+done	
+done	<str>Talk to the Fairy Godfather.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

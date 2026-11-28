@@ -1,0 +1,351 @@
+# Generated from the OSRS Wiki page "Troll Romance/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Ug</col> at the <col=800000>Troll Stronghold</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 28 Agility
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Ug</col> in the south-west corner of the <col=800000>Troll Stronghold's</col> middle level. Offer him your help.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<col=000080>Talk to <col=800000>Aga</col> in the room to the north.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<col=000080>Talk to <col=800000>Ug</col> again.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<col=000080>Talk to <col=800000>Tenzing</col> in the hut west of the Warriors' Guild in Burthorpe.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dunstan</col> at the anvil in north-eastern Burthorpe.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<col=000080>Talk to him again to get the sled.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<col=000080>Use the <col=800000>swamp tar</col> on the <col=800000>bucket of wax</col> to get Wax.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<col=000080>Use the Wax on your Sled.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<col=000080>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (<col=800000>Troll child</col> if you haven't done Desert Treasure.)</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<col=000080>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<col=000080>Run to the end and exit through the crevasse.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<col=000080>Equip your sled, go south, and click to slide down the slope.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<str>Equip your sled, go south, and click to slide down the slope.</str>
+line	
+line	<col=000080>After the first Sled ride cutscene, walk west and pick some of the <col=800000>rare flowers</col>. (Warning: don't start the next cutscene before collecting the flowers)</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<str>Equip your sled, go south, and click to slide down the slope.</str>
+line	
+line	<str>After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)</str>
+line	
+line	<col=000080>Return to <col=800000>Ug</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<str>Equip your sled, go south, and click to slide down the slope.</str>
+line	
+line	<str>After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)</str>
+line	
+line	<str>Return to Ug.</str>
+line	
+line	<col=000080>Talk to <col=800000>Arrg</col>. He will teleport you into the arena.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<str>Equip your sled, go south, and click to slide down the slope.</str>
+line	
+line	<str>After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)</str>
+line	
+line	<str>Return to Ug.</str>
+line	
+line	<str>Talk to Arrg. He will teleport you into the arena.</str>
+line	
+line	<col=000080>Kill Arrg.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+line	
+line	<str>Talk to Aga in the room to the north.</str>
+line	
+line	<str>Talk to Ug again.</str>
+line	
+line	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+line	
+line	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+line	
+line	<str>Talk to him again to get the sled.</str>
+line	
+line	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+line	
+line	<str>Use the Wax on your Sled.</str>
+line	
+line	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+line	
+line	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+line	
+line	<str>Run to the end and exit through the crevasse.</str>
+line	
+line	<str>Equip your sled, go south, and click to slide down the slope.</str>
+line	
+line	<str>After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)</str>
+line	
+line	<str>Return to Ug.</str>
+line	
+line	<str>Talk to Arrg. He will teleport you into the arena.</str>
+line	
+line	<str>Kill Arrg.</str>
+line	
+line	<col=000080>Return to Ug.</col>
+done	<str>Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.</str>
+done	
+done	<str>Talk to Aga in the room to the north.</str>
+done	
+done	<str>Talk to Ug again.</str>
+done	
+done	<str>Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.</str>
+done	
+done	<str>Talk to Dunstan at the anvil in north-eastern Burthorpe.</str>
+done	
+done	<str>Talk to him again to get the sled.</str>
+done	
+done	<str>Use the swamp tar on the bucket of wax to get Wax.</str>
+done	
+done	<str>Use the Wax on your Sled.</str>
+done	
+done	<str>Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)</str>
+done	
+done	<str>Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.</str>
+done	
+done	<str>Run to the end and exit through the crevasse.</str>
+done	
+done	<str>Equip your sled, go south, and click to slide down the slope.</str>
+done	
+done	<str>After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)</str>
+done	
+done	<str>Return to Ug.</str>
+done	
+done	<str>Talk to Arrg. He will teleport you into the arena.</str>
+done	
+done	<str>Kill Arrg.</str>
+done	
+done	<str>Return to Ug.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

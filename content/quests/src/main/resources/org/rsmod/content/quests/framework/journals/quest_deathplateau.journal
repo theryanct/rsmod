@@ -1,0 +1,429 @@
+# Generated from the OSRS Wiki page "Death Plateau/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Denulth</col> in his tent in <col=800000>Burthorpe</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Denulth</col> in the Burthorpe camp.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<col=000080>Ask <col=800000>Eohric</col> on the uk=1 of the castle about the guard that was on duty last night.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<col=000080>Speak to <col=800000>Harold</col> upstairs in the bar in Burthorpe.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<col=000080>Speak to Eohric again.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<col=000080>Go back to Harold.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<col=000080>Give him an Asgarnian ale.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<col=000080>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<col=000080>Gamble until he gives you an "<col=800000>IOU</col>". Read it to receive the <col=800000>combination</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<col=000080>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<col=000080>Go north-west of Burthorpe, enter the cave.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<col=000080>Ask <col=800000>Saba</col> about another way up Death Plateau.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<col=000080>Leave the cave, continue north-west then go south at the fork.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<col=000080>Talk to <col=800000>Tenzing</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<col=000080>Talk to Dunstan by the anvil in north-east Burthorpe.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+line	
+line	<col=000080>Talk to Denulth where you started the quest, who will give you a <col=800000>certificate</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+line	
+line	<str>Talk to Denulth where you started the quest, who will give you a certificate.</str>
+line	
+line	<col=000080>Talk to Dunstan to exchange your <col=800000>climbing boots</col>, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+line	
+line	<str>Talk to Denulth where you started the quest, who will give you a certificate.</str>
+line	
+line	<str>Talk to Dunstan to exchange your climbing boots, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)</str>
+line	
+line	<col=000080>Return to Tenzing; give him 10 bread, 10 trout and the spiked boots to get the map. The bread and trout must be un-<col=800000>noted</col>, and the items must be given all in one go.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+line	
+line	<str>Talk to Denulth where you started the quest, who will give you a certificate.</str>
+line	
+line	<str>Talk to Dunstan to exchange your climbing boots, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)</str>
+line	
+line	<str>Return to Tenzing; give him 10 bread, 10 trout and the spiked boots to get the map. The bread and trout must be un-noted, and the items must be given all in one go.</str>
+line	
+line	<col=000080>Exit Tenzing's house through the north door and then climb over the <col=800000>stile</col>. Take the path north and around to the east (past the second mountain goat) until the message "I think this is far enough" appears in the chat box (NOT the Death Plateau warning, this is another message; you can ignore the warning, since the trolls only attack you on the main path).</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Denulth in the Burthorpe camp.</str>
+line	
+line	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+line	
+line	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+line	
+line	<str>Speak to Eohric again.</str>
+line	
+line	<str>Go back to Harold.</str>
+line	
+line	<str>Give him an Asgarnian ale.</str>
+line	
+line	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+line	
+line	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+line	
+line	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+line	
+line	<str>Go north-west of Burthorpe, enter the cave.</str>
+line	
+line	<str>Ask Saba about another way up Death Plateau.</str>
+line	
+line	<str>Leave the cave, continue north-west then go south at the fork.</str>
+line	
+line	<str>Talk to Tenzing.</str>
+line	
+line	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+line	
+line	<str>Talk to Denulth where you started the quest, who will give you a certificate.</str>
+line	
+line	<str>Talk to Dunstan to exchange your climbing boots, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)</str>
+line	
+line	<str>Return to Tenzing; give him 10 bread, 10 trout and the spiked boots to get the map. The bread and trout must be un-noted, and the items must be given all in one go.</str>
+line	
+line	<str>Exit Tenzing's house through the north door and then climb over the stile. Take the path north and around to the east (past the second mountain goat) until the message "I think this is far enough" appears in the chat box (NOT the Death Plateau warning, this is another message; you can ignore the warning, since the trolls only attack you on the main path).</str>
+line	
+line	<col=000080>Talk to Denulth (make sure you have the combination with you when you do).</col>
+done	<str>Speak to Denulth in the Burthorpe camp.</str>
+done	
+done	<str>Ask Eohric on the uk=1 of the castle about the guard that was on duty last night.</str>
+done	
+done	<str>Speak to Harold upstairs in the bar in Burthorpe.</str>
+done	
+done	<str>Speak to Eohric again.</str>
+done	
+done	<str>Go back to Harold.</str>
+done	
+done	<str>Give him an Asgarnian ale.</str>
+done	
+done	<str>Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).</str>
+done	
+done	<str>Gamble until he gives you an "IOU". Read it to receive the combination.</str>
+done	
+done	<str>Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free.</str>
+done	
+done	<str>Go north-west of Burthorpe, enter the cave.</str>
+done	
+done	<str>Ask Saba about another way up Death Plateau.</str>
+done	
+done	<str>Leave the cave, continue north-west then go south at the fork.</str>
+done	
+done	<str>Talk to Tenzing.</str>
+done	
+done	<str>Talk to Dunstan by the anvil in north-east Burthorpe.</str>
+done	
+done	<str>Talk to Denulth where you started the quest, who will give you a certificate.</str>
+done	
+done	<str>Talk to Dunstan to exchange your climbing boots, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)</str>
+done	
+done	<str>Return to Tenzing; give him 10 bread, 10 trout and the spiked boots to get the map. The bread and trout must be un-noted, and the items must be given all in one go.</str>
+done	
+done	<str>Exit Tenzing's house through the north door and then climb over the stile. Take the path north and around to the east (past the second mountain goat) until the message "I think this is far enough" appears in the chat box (NOT the Death Plateau warning, this is another message; you can ignore the warning, since the trolls only attack you on the main path).</str>
+done	
+done	<str>Talk to Denulth (make sure you have the combination with you when you do).</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

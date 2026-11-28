@@ -1,0 +1,1418 @@
+# Generated from the OSRS Wiki page "Land of the Goblins/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Grubfoot</col> in the <col=800000>Dorgesh-Kaan mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 38 Agility
+req	Level 40 Fishing
+req	Level 45 Thieving
+req	Level 48 Herblore
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Grubfoot</col> in the <col=800000>Dorgeshuun Mines</col>, right outside the main entrance to <col=800000>Dorgesh-Kaan</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<col=000080>Enter Dorgesh-Kaan and head north-west to <col=800000>Oldak</col>'s laboratory.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<col=000080>Talk to <col=800000>Zanik</col> in the laboratory.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<col=000080>Head north-west to the temple entrance stairs blocked by two <col=800000>goblin guards</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<col=000080>Talk to the guards for Zanik to pass.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<col=000080>Head over and talk to the <col=800000>Makeover Mage</col> south-west of <col=800000>Falador</col> using a <col=800000>skills necklace</col> to the <col=800000>crafting guild</col> or a Falador teleport.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<col=000080>Pick the <col=800000>pharmakos bush</col> outside the building and use the <col=800000>berries</col> on an <col=800000>unfinished toadflax potion</col> to create a <col=800000>goblin potion</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<col=000080>Return to the <col=800000>Goblin Cave</col> located nearby the <col=800000>Fishing Guild</col> by any means, most commonly a <col=800000>skills necklace</col> to the <col=800000>fishing guild</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<col=000080>In front of the goblin guards, drink the <col=800000>goblin potion</col> (pick any goblin appearance).</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<col=000080>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<col=000080>Climb down the entrance.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<col=000080>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<col=000080>Enter the north-eastern room.</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<col=000080>Search the crate in the room for a <col=800000>Dorgesh-kaan sphere</col> to free Zanik.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<col=000080>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<col=000080>Head back to the main room, and talk to <col=800000>High Priest Bighead</col> in the northern part of the temple and take the test.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<col=000080>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his <col=800000>Huzamogaarb key</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<col=000080>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<col=000080>Talk to <col=800000>Aggie</col> in Draynor Village.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<col=000080>Acquire a <col=800000>raw slimy eel</col> and head to the <col=800000>Fishing Contest</col> area in <col=800000>Hemenster</col> with a fishing rod.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<col=000080>Click the gate.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<col=000080>Catch a <col=800000>whitefish</col>.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<col=000080>Return to Aggie to receive a <col=800000>white goblin mail</col>.</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<col=000080>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</col>
+step	25	-	Quick guide step 25
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<col=000080>Steal the <col=800000>Saragorgak key</col> from the priest in the western room of the temple.</col>
+step	26	-	Quick guide step 26
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<col=000080>Repeat the operation of stealing keys and dying your mail in the following order:</col>
+step	27	-	Quick guide step 27
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<col=000080>Before you leave, unlock the crypt with the six keys to give you more inventory space.</col>
+step	28	-	Quick guide step 28
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<col=000080>Prepare for a fight</col>
+step	29	-	Quick guide step 29
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<col=000080>Enter the crypt (large door north of the temple).</col>
+step	30	-	Quick guide step 30
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<col=000080>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</col>
+step	31	-	Quick guide step 31
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<col=000080>Ensure you ask <col=800000>Strongbones</col> where Yu'biusk is before leaving.</col>
+step	32	-	Quick guide step 32
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+line	
+line	<col=000080>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</col>
+step	33	-	Quick guide step 33
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+line	
+line	<str>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</str>
+line	
+line	<col=000080>With a light source, go to Oldak in <col=800000>Dorgesh-Kaan South Dungeon</col> located beneath the <col=800000>agility course</col> which is in the south end of Dorgesh-Kaan.</col>
+step	34	-	Quick guide step 34
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+line	
+line	<str>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</str>
+line	
+line	<str>With a light source, go to Oldak in Dorgesh-Kaan South Dungeon located beneath the agility course which is in the south end of Dorgesh-Kaan.</str>
+line	
+line	<col=000080>Speak to Oldak.</col>
+step	35	-	Quick guide step 35
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+line	
+line	<str>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</str>
+line	
+line	<str>With a light source, go to Oldak in Dorgesh-Kaan South Dungeon located beneath the agility course which is in the south end of Dorgesh-Kaan.</str>
+line	
+line	<str>Speak to Oldak.</str>
+line	
+line	<col=000080>Click on the machines next to Oldak; use the combination 9-4-1 to activate the machine.</col>
+step	36	-	Quick guide step 36
+line	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+line	
+line	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+line	
+line	<str>Talk to Zanik in the laboratory.</str>
+line	
+line	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+line	
+line	<str>Talk to the guards for Zanik to pass.</str>
+line	
+line	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+line	
+line	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+line	
+line	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+line	
+line	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+line	
+line	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+line	
+line	<str>Climb down the entrance.</str>
+line	
+line	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+line	
+line	<str>Enter the north-eastern room.</str>
+line	
+line	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+line	
+line	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+line	
+line	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+line	
+line	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+line	
+line	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+line	
+line	<str>Talk to Aggie in Draynor Village.</str>
+line	
+line	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+line	
+line	<str>Click the gate.</str>
+line	
+line	<str>Catch a whitefish.</str>
+line	
+line	<str>Return to Aggie to receive a white goblin mail.</str>
+line	
+line	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+line	
+line	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+line	
+line	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+line	
+line	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+line	
+line	<str>Prepare for a fight</str>
+line	
+line	<str>Enter the crypt (large door north of the temple).</str>
+line	
+line	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+line	
+line	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+line	
+line	<str>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</str>
+line	
+line	<str>With a light source, go to Oldak in Dorgesh-Kaan South Dungeon located beneath the agility course which is in the south end of Dorgesh-Kaan.</str>
+line	
+line	<str>Speak to Oldak.</str>
+line	
+line	<str>Click on the machines next to Oldak; use the combination 9-4-1 to activate the machine.</str>
+line	
+line	<col=000080>Open the strange box in the north-western part of <col=800000>Yu'biusk</col> for a cutscene.</col>
+done	<str>Talk to Grubfoot in the Dorgeshuun Mines, right outside the main entrance to Dorgesh-Kaan.</str>
+done	
+done	<str>Enter Dorgesh-Kaan and head north-west to Oldak's laboratory.</str>
+done	
+done	<str>Talk to Zanik in the laboratory.</str>
+done	
+done	<str>Head north-west to the temple entrance stairs blocked by two goblin guards.</str>
+done	
+done	<str>Talk to the guards for Zanik to pass.</str>
+done	
+done	<str>Head over and talk to the Makeover Mage south-west of Falador using a skills necklace to the crafting guild or a Falador teleport.</str>
+done	
+done	<str>Pick the pharmakos bush outside the building and use the berries on an unfinished toadflax potion to create a goblin potion.</str>
+done	
+done	<str>Return to the Goblin Cave located nearby the Fishing Guild by any means, most commonly a skills necklace to the fishing guild.</str>
+done	
+done	<str>In front of the goblin guards, drink the goblin potion (pick any goblin appearance).</str>
+done	
+done	<str>Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.</str>
+done	
+done	<str>Climb down the entrance.</str>
+done	
+done	<str>Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.</str>
+done	
+done	<str>Enter the north-eastern room.</str>
+done	
+done	<str>Search the crate in the room for a Dorgesh-kaan sphere to free Zanik.</str>
+done	
+done	<str>Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.</str>
+done	
+done	<str>Head back to the main room, and talk to High Priest Bighead in the northern part of the temple and take the test.</str>
+done	
+done	<str>Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his Huzamogaarb key.</str>
+done	
+done	<str>Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.</str>
+done	
+done	<str>Talk to Aggie in Draynor Village.</str>
+done	
+done	<str>Acquire a raw slimy eel and head to the Fishing Contest area in Hemenster with a fishing rod.</str>
+done	
+done	<str>Click the gate.</str>
+done	
+done	<str>Catch a whitefish.</str>
+done	
+done	<str>Return to Aggie to receive a white goblin mail.</str>
+done	
+done	<str>Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.</str>
+done	
+done	<str>Steal the Saragorgak key from the priest in the western room of the temple.</str>
+done	
+done	<str>Repeat the operation of stealing keys and dying your mail in the following order:</str>
+done	
+done	<str>Before you leave, unlock the crypt with the six keys to give you more inventory space.</str>
+done	
+done	<str>Prepare for a fight</str>
+done	
+done	<str>Enter the crypt (large door north of the temple).</str>
+done	
+done	<str>Use the "Say-name" option on each of the graves. After defeating them, talk to them.</str>
+done	
+done	<str>Ensure you ask Strongbones where Yu'biusk is before leaving.</str>
+done	
+done	<str>Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.</str>
+done	
+done	<str>With a light source, go to Oldak in Dorgesh-Kaan South Dungeon located beneath the agility course which is in the south end of Dorgesh-Kaan.</str>
+done	
+done	<str>Speak to Oldak.</str>
+done	
+done	<str>Click on the machines next to Oldak; use the combination 9-4-1 to activate the machine.</str>
+done	
+done	<str>Open the strange box in the north-western part of Yu'biusk for a cutscene.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

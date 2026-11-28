@@ -1,0 +1,39 @@
+# Generated from the OSRS Wiki page "Recruitment Drive/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Sir Amik Varze</col> on the uk=2 of the <col=800000>White Knights' Castle</col>'s western tower in <col=800000>Falador</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Novice</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+before	<col=800000>None</col>
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Sir Amik Varze</col> on the uk=2 of the western section of the <col=800000>White Knights' Castle</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Sir Amik Varze on the uk=2 of the western section of the White Knights' Castle.</str>
+line	
+line	<col=000080>Bank all equipped items and inventory.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Sir Amik Varze on the uk=2 of the western section of the White Knights' Castle.</str>
+line	
+line	<str>Bank all equipped items and inventory.</str>
+line	
+line	<col=000080>Speak to <col=800000>Sir Tiffy Cashien</col> in the park to begin test.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Sir Amik Varze on the uk=2 of the western section of the White Knights' Castle.</str>
+line	
+line	<str>Bank all equipped items and inventory.</str>
+line	
+line	<str>Speak to Sir Tiffy Cashien in the park to begin test.</str>
+line	
+line	<col=000080>5 of the following 7 puzzle rooms will appear in a random order. You will always fight Sir Leye.</col>
+done	<str>Speak to Sir Amik Varze on the uk=2 of the western section of the White Knights' Castle.</str>
+done	
+done	<str>Bank all equipped items and inventory.</str>
+done	
+done	<str>Speak to Sir Tiffy Cashien in the park to begin test.</str>
+done	
+done	<str>5 of the following 7 puzzle rooms will appear in a random order. You will always fight Sir Leye.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

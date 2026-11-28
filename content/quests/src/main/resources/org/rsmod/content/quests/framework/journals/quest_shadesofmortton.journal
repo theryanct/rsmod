@@ -1,0 +1,473 @@
+# Generated from the OSRS Wiki page "Shades of Mort'ton/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Search the shelf in the southern-western house of <col=800000>Mort'ton</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 20 Crafting
+req	Level 15 Herblore
+req	Level 5 Firemaking
+step	1	-	Quick guide step 1
+line	<col=000080>Enter the ruined house in the south-west of <col=800000>Mort'ton</col>. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create <col=800000>Serum 207</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<col=000080>If you didn't bring <col=800000>Tarromin potion (unf)</col>: Pick up the empty vials (can be filled in the house north-east) and search the <col=800000>smashed table</col> for 2 <col=800000>grimy tarromin</col> and one <col=800000>grimy rogue's purse</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<col=000080>Make two <col=800000>Serum 207</col> by adding clean tarromin to a vial of water and then adding ashes.</col>
+step	4	-	Quick guide step 4
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<col=000080>Use one dose on <col=800000>Razmire</col> (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</col>
+step	5	-	Quick guide step 5
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<col=000080>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</col>
+step	6	-	Quick guide step 6
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<col=000080>Return to Razmire and give him the remains. He may require more Serum 207.</col>
+step	7	-	Quick guide step 7
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<col=000080>Right click and open his General store, buy an Olive oil.</col>
+step	8	-	Quick guide step 8
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<col=000080>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a <col=800000>Flamtaer hammer</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<col=000080>Use the serum on <col=800000>Ulsquire Shauncy</col>, located in the house east of the general store. Talk to him with Loar Remains.</col>
+step	10	-	Quick guide step 10
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<col=000080>Talk to him again and ask about the remains and the temple.</col>
+step	11	-	Quick guide step 11
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<col=000080>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</col>
+step	12	-	Quick guide step 12
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<col=000080>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</col>
+step	13	-	Quick guide step 13
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<col=000080>Use your olive oil on the flame to make <col=800000>sacred oil</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<col=000080>(Recommended) Use Serum 207 on the flame to make <col=800000>Serum 208</col>, which permanently cures NPCs.</col>
+step	15	-	Quick guide step 15
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<col=000080>Use the sacred oil on a log to create a <col=800000>pyre log</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<str>Use the sacred oil on a log to create a pyre log.</str>
+line	
+line	<col=000080>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a <col=800000>funeral pyre</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<str>Use the sacred oil on a log to create a pyre log.</str>
+line	
+line	<str>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a funeral pyre.</str>
+line	
+line	<col=000080>Light the funeral pyre. Note: This will grant 25 Prayer XP.</col>
+step	18	-	Quick guide step 18
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<str>Use the sacred oil on a log to create a pyre log.</str>
+line	
+line	<str>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a funeral pyre.</str>
+line	
+line	<str>Light the funeral pyre. Note: This will grant 25 Prayer XP.</str>
+line	
+line	<col=000080>Collect the reward.</col>
+step	19	-	Quick guide step 19
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<str>Use the sacred oil on a log to create a pyre log.</str>
+line	
+line	<str>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a funeral pyre.</str>
+line	
+line	<str>Light the funeral pyre. Note: This will grant 25 Prayer XP.</str>
+line	
+line	<str>Collect the reward.</str>
+line	
+line	<col=000080>(Recommended) Use the Serum 208 on Razmire.</col>
+step	20	-	Quick guide step 20
+line	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+line	
+line	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+line	
+line	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+line	
+line	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+line	
+line	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+line	
+line	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+line	
+line	<str>Right click and open his General store, buy an Olive oil.</str>
+line	
+line	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+line	
+line	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+line	
+line	<str>Talk to him again and ask about the remains and the temple.</str>
+line	
+line	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+line	
+line	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+line	
+line	<str>Use your olive oil on the flame to make sacred oil.</str>
+line	
+line	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+line	
+line	<str>Use the sacred oil on a log to create a pyre log.</str>
+line	
+line	<str>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a funeral pyre.</str>
+line	
+line	<str>Light the funeral pyre. Note: This will grant 25 Prayer XP.</str>
+line	
+line	<str>Collect the reward.</str>
+line	
+line	<str>(Recommended) Use the Serum 208 on Razmire.</str>
+line	
+line	<col=000080>Use the Serum 208 on Ulsquire and finish the dialogue.</col>
+done	<str>Enter the ruined house in the south-west of Mort'ton. Search the shelf on the wall. Read the diary. After reading the diary, the quest is started and you are able to create Serum 207.</str>
+done	
+done	<str>If you didn't bring Tarromin potion (unf): Pick up the empty vials (can be filled in the house north-east) and search the smashed table for 2 grimy tarromin and one grimy rogue's purse.</str>
+done	
+done	<str>Make two Serum 207 by adding clean tarromin to a vial of water and then adding ashes.</str>
+done	
+done	<str>Use one dose on Razmire (afflicted) in the general store. (Recommended to not use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)</str>
+done	
+done	<str>Kill five loar shades and pick up their remains. Note: any shades that you killed before talking to Razmire will not count.</str>
+done	
+done	<str>Return to Razmire and give him the remains. He may require more Serum 207.</str>
+done	
+done	<str>Right click and open his General store, buy an Olive oil.</str>
+done	
+done	<str>Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a Flamtaer hammer.</str>
+done	
+done	<str>Use the serum on Ulsquire Shauncy, located in the house east of the general store. Talk to him with Loar Remains.</str>
+done	
+done	<str>Talk to him again and ask about the remains and the temple.</str>
+done	
+done	<str>Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)</str>
+done	
+done	<str>Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)</str>
+done	
+done	<str>Use your olive oil on the flame to make sacred oil.</str>
+done	
+done	<str>(Recommended) Use Serum 207 on the flame to make Serum 208, which permanently cures NPCs.</str>
+done	
+done	<str>Use the sacred oil on a log to create a pyre log.</str>
+done	
+done	<str>Head west of Mort'ton general store, to any grouping of 4 stone funeral pyres. Use the pyre log, then Loar remains on a funeral pyre.</str>
+done	
+done	<str>Light the funeral pyre. Note: This will grant 25 Prayer XP.</str>
+done	
+done	<str>Collect the reward.</str>
+done	
+done	<str>(Recommended) Use the Serum 208 on Razmire.</str>
+done	
+done	<str>Use the Serum 208 on Ulsquire and finish the dialogue.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,661 @@
+# Generated from the OSRS Wiki page "Big Chompy Bird Hunting/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Rantz</col> by the eastern coast of <col=800000>Feldip Hills</col>, east of <col=800000>fairy ring</col> AKS.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 5 Fletching
+req	Level 30 Cooking
+req	Level 30 Ranged
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Rantz</col> East-north-east of <col=800000>Feldip Hills</col> (<col=800000>fairy ring</col> AKS).</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<col=000080>Chop down at least 3 <col=800000>achey tree</col>s immediately south-west of Rantz.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<col=000080>Use a <col=800000>knife</col> on the <col=800000>logs</col> to make <col=800000>ogre arrow shaft</col>s.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<col=000080>Use 100 <col=800000>feather</col>s on the ogre arrow shafts.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<col=000080>Obtain 4 <col=800000>wolf bones</col> (south-west from Rantz).</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<col=000080>Use a <col=800000>chisel</col> on the bones.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<col=000080>Use the <col=800000>wolfbone arrowtips</col> on the <col=800000>flighted ogre arrow</col>s.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<col=000080>Use the <col=800000>ogre arrow</col>s on Rantz.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<col=000080>Ask Rantz all possible questions.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<col=000080>Enter the cave north of Rantz.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<col=000080>Attempt to unlock the <col=800000>chest</col> until it <col=800000>opens</col> and search it to obtain <col=800000>ogre bellows</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<col=000080>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<col=000080>Use the ogre bellows on a <col=800000>swamp toad</col> to obtain a "<col=800000>bloated toad</col>".</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<col=000080>Talk to Rantz.</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<col=000080>Drop a <col=800000>bloated toad</col> where the arrow points.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<col=000080>Talk to Rantz again and wait for the chompy bird to appear.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<col=000080>After Rantz fires his bow, talk to him to receive an <col=800000>ogre bow</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<col=000080>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</col>
+step	19	-	Quick guide step 19
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<col=000080>Pluck the carcass and take the <col=800000>raw chompy</col>.</col>
+step	20	-	Quick guide step 20
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<str>Pluck the carcass and take the raw chompy.</str>
+line	
+line	<col=000080>Talk to Rantz.</col>
+step	21	-	Quick guide step 21
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<str>Pluck the carcass and take the raw chompy.</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<col=000080>Go back into the cave and talk to Fycie and Bugs.</col>
+step	22	-	Quick guide step 22
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<str>Pluck the carcass and take the raw chompy.</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Go back into the cave and talk to Fycie and Bugs.</str>
+line	
+line	<col=000080>Obtain the ingredients that they've asked for. The image on this page shows their location.</col>
+step	23	-	Quick guide step 23
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<str>Pluck the carcass and take the raw chompy.</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Go back into the cave and talk to Fycie and Bugs.</str>
+line	
+line	<str>Obtain the ingredients that they've asked for. The image on this page shows their location.</str>
+line	
+line	<col=000080>Use the <col=800000>raw chompy</col> on the spit-roast north of Rantz (the fire outside of the cave).</col>
+step	24	-	Quick guide step 24
+line	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+line	
+line	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+line	
+line	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+line	
+line	<str>Use 100 feathers on the ogre arrow shafts.</str>
+line	
+line	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+line	
+line	<str>Use a chisel on the bones.</str>
+line	
+line	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+line	
+line	<str>Use the ogre arrows on Rantz.</str>
+line	
+line	<str>Ask Rantz all possible questions.</str>
+line	
+line	<str>Enter the cave north of Rantz.</str>
+line	
+line	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+line	
+line	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+line	
+line	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Drop a bloated toad where the arrow points.</str>
+line	
+line	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+line	
+line	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+line	
+line	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+line	
+line	<str>Pluck the carcass and take the raw chompy.</str>
+line	
+line	<str>Talk to Rantz.</str>
+line	
+line	<str>Go back into the cave and talk to Fycie and Bugs.</str>
+line	
+line	<str>Obtain the ingredients that they've asked for. The image on this page shows their location.</str>
+line	
+line	<str>Use the raw chompy on the spit-roast north of Rantz (the fire outside of the cave).</str>
+line	
+line	<col=000080>Talk to Rantz.</col>
+done	<str>Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).</str>
+done	
+done	<str>Chop down at least 3 achey trees immediately south-west of Rantz.</str>
+done	
+done	<str>Use a knife on the logs to make ogre arrow shafts.</str>
+done	
+done	<str>Use 100 feathers on the ogre arrow shafts.</str>
+done	
+done	<str>Obtain 4 wolf bones (south-west from Rantz).</str>
+done	
+done	<str>Use a chisel on the bones.</str>
+done	
+done	<str>Use the wolfbone arrowtips on the flighted ogre arrows.</str>
+done	
+done	<str>Use the ogre arrows on Rantz.</str>
+done	
+done	<str>Ask Rantz all possible questions.</str>
+done	
+done	<str>Enter the cave north of Rantz.</str>
+done	
+done	<str>Attempt to unlock the chest until it opens and search it to obtain ogre bellows.</str>
+done	
+done	<str>At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.</str>
+done	
+done	<str>Use the ogre bellows on a swamp toad to obtain a "bloated toad".</str>
+done	
+done	<str>Talk to Rantz.</str>
+done	
+done	<str>Drop a bloated toad where the arrow points.</str>
+done	
+done	<str>Talk to Rantz again and wait for the chompy bird to appear.</str>
+done	
+done	<str>After Rantz fires his bow, talk to him to receive an ogre bow.</str>
+done	
+done	<str>If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing.</str>
+done	
+done	<str>Pluck the carcass and take the raw chompy.</str>
+done	
+done	<str>Talk to Rantz.</str>
+done	
+done	<str>Go back into the cave and talk to Fycie and Bugs.</str>
+done	
+done	<str>Obtain the ingredients that they've asked for. The image on this page shows their location.</str>
+done	
+done	<str>Use the raw chompy on the spit-roast north of Rantz (the fire outside of the cave).</str>
+done	
+done	<str>Talk to Rantz.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

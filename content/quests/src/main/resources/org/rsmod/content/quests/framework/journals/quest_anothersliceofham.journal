@@ -1,0 +1,880 @@
+# Generated from the OSRS Wiki page "Another Slice of H.A.M./Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Ur-tag</col> in <col=800000>Dorgesh-Kaan</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Attack
+req	Level 25 Prayer
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Ur-tag</col> or <col=800000>Ambassador Alvijar</col> in the north-east part of Dorgesh-Kaan's middle level.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<col=000080>Head to the south-west corner of the city's middle level.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<col=000080>Enter the doorway with the transportation symbol on the minimap.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<col=000080>Walk south on the tracks and talk to <col=800000>Tegdak</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<col=000080>Dig up artefacts from the ground with the trowel (there are six artefacts total).</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<col=000080>Use artefacts on the specimen table to clean them.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<col=000080>Talk to Tegdak. <col=800000>Zanik</col> will automatically follow you after (if you don't have a follower already).</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<col=000080>Make sure <col=800000>Zanik</col> is following you.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Goblin scribe</col> in the house west of <col=800000>Ur-tag</col> where you started the quest.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<col=000080>Speak to <col=800000>Oldak</col> in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the <col=800000>Goblin Village</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<col=000080>Talk to <col=800000>General Wartface</col> or <col=800000>Bentnoze</col>. A cutscene will start.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<col=000080>Run south to the ladder, stay behind the houses on the west side to not get hit.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<col=000080>Climb up and kill the <col=800000>H.A.M. Mage</col> and <col=800000>H.A.M. Archer</col>, you must use magic or ranged. Throwing <col=800000>dart</col>s can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<col=000080>Talk to General Wartface or General Bentnoze to receive <col=800000>ancient mace</col> and two goblin warriors</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<col=000080>Go to the <col=800000>Lumbridge Swamp Cave</col> entrance (outside by the giant frogs in Lumbridge Swamp)</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<col=000080>Talk to one of the goblin sergeants.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<col=000080>Read the following steps before doing them as this next section is time sensitive.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<col=000080>#Enter the caves then climb down the nearby ladder.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<col=000080>#As soon as you're down, talk to the sergeants and tell one of them to wait.</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<col=000080>#Run to the room and enter.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<col=000080>#Wait for 2 <col=800000>guards</col> to pass.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<col=000080>#Tell your sergeant to wait in the room.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<col=000080>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+line	
+line	<col=000080>#After the 3rd guard passes, ask your sergeant to follow you again.</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+line	
+line	<str>#After the 3rd guard passes, ask your sergeant to follow you again.</str>
+line	
+line	<col=000080>#Walk (do not run) to the end of the tunnel and the final guard will attack your sergeant.</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+line	
+line	<str>#After the 3rd guard passes, ask your sergeant to follow you again.</str>
+line	
+line	<str>#Walk (do not run) to the end of the tunnel and the final guard will attack your sergeant.</str>
+line	
+line	<col=000080>#Climb down the ladder to fight <col=800000>Sigmund</col> - Use the <col=800000>Ancient mace</col>'s special attack ONLY AFTER he starts using prayer to disable it for the entire fight.</col>
+step	27	-	Quick guide step 27
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+line	
+line	<str>#After the 3rd guard passes, ask your sergeant to follow you again.</str>
+line	
+line	<str>#Walk (do not run) to the end of the tunnel and the final guard will attack your sergeant.</str>
+line	
+line	<str>#Climb down the ladder to fight Sigmund - Use the Ancient mace's special attack ONLY AFTER he starts using prayer to disable it for the entire fight.</str>
+line	
+line	<col=000080>Defeat Sigmund.</col>
+step	28	-	Quick guide step 28
+line	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+line	
+line	<str>Head to the south-west corner of the city's middle level.</str>
+line	
+line	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+line	
+line	<str>Walk south on the tracks and talk to Tegdak.</str>
+line	
+line	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+line	
+line	<str>Use artefacts on the specimen table to clean them.</str>
+line	
+line	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+line	
+line	<str>Make sure Zanik is following you.</str>
+line	
+line	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+line	
+line	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+line	
+line	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+line	
+line	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+line	
+line	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+line	
+line	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+line	
+line	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+line	
+line	<str>Talk to one of the goblin sergeants.</str>
+line	
+line	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+line	
+line	<str>#Enter the caves then climb down the nearby ladder.</str>
+line	
+line	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+line	
+line	<str>#Run to the room and enter.</str>
+line	
+line	<str>#Wait for 2 guards to pass.</str>
+line	
+line	<str>#Tell your sergeant to wait in the room.</str>
+line	
+line	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+line	
+line	<str>#After the 3rd guard passes, ask your sergeant to follow you again.</str>
+line	
+line	<str>#Walk (do not run) to the end of the tunnel and the final guard will attack your sergeant.</str>
+line	
+line	<str>#Climb down the ladder to fight Sigmund - Use the Ancient mace's special attack ONLY AFTER he starts using prayer to disable it for the entire fight.</str>
+line	
+line	<str>Defeat Sigmund.</str>
+line	
+line	<col=000080>Untie <col=800000>Zanik</col>.</col>
+done	<str>Speak to Ur-tag or Ambassador Alvijar in the north-east part of Dorgesh-Kaan's middle level.</str>
+done	
+done	<str>Head to the south-west corner of the city's middle level.</str>
+done	
+done	<str>Enter the doorway with the transportation symbol on the minimap.</str>
+done	
+done	<str>Walk south on the tracks and talk to Tegdak.</str>
+done	
+done	<str>Dig up artefacts from the ground with the trowel (there are six artefacts total).</str>
+done	
+done	<str>Use artefacts on the specimen table to clean them.</str>
+done	
+done	<str>Talk to Tegdak. Zanik will automatically follow you after (if you don't have a follower already).</str>
+done	
+done	<str>Make sure Zanik is following you.</str>
+done	
+done	<str>Talk to the Goblin scribe in the house west of Ur-tag where you started the quest.</str>
+done	
+done	<str>Speak to Oldak in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the Goblin Village.</str>
+done	
+done	<str>Talk to General Wartface or Bentnoze. A cutscene will start.</str>
+done	
+done	<str>Run south to the ladder, stay behind the houses on the west side to not get hit.</str>
+done	
+done	<str>Climb up and kill the H.A.M. Mage and H.A.M. Archer, you must use magic or ranged. Throwing darts can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.</str>
+done	
+done	<str>Talk to General Wartface or General Bentnoze to receive ancient mace and two goblin warriors</str>
+done	
+done	<str>Go to the Lumbridge Swamp Cave entrance (outside by the giant frogs in Lumbridge Swamp)</str>
+done	
+done	<str>Talk to one of the goblin sergeants.</str>
+done	
+done	<str>Read the following steps before doing them as this next section is time sensitive.</str>
+done	
+done	<str>#Enter the caves then climb down the nearby ladder.</str>
+done	
+done	<str>#As soon as you're down, talk to the sergeants and tell one of them to wait.</str>
+done	
+done	<str>#Run to the room and enter.</str>
+done	
+done	<str>#Wait for 2 guards to pass.</str>
+done	
+done	<str>#Tell your sergeant to wait in the room.</str>
+done	
+done	<str>#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.</str>
+done	
+done	<str>#After the 3rd guard passes, ask your sergeant to follow you again.</str>
+done	
+done	<str>#Walk (do not run) to the end of the tunnel and the final guard will attack your sergeant.</str>
+done	
+done	<str>#Climb down the ladder to fight Sigmund - Use the Ancient mace's special attack ONLY AFTER he starts using prayer to disable it for the entire fight.</str>
+done	
+done	<str>Defeat Sigmund.</str>
+done	
+done	<str>Untie Zanik.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

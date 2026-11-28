@@ -1,0 +1,282 @@
+# Generated from the OSRS Wiki page "Getting Ahead/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Gordon</col> on <col=800000>his farm</col> south of the <col=800000>Farming Guild</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Crafting
+req	Level 26 Construction
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>Gordon</col> south of the <col=800000>Farming Guild</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<col=000080>Speak to <col=800000>Mary</col> inside the main building west of Gordon.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<col=000080>Use a <col=800000>pot of flour</col> on the southern gate next to the cow pen east of Gordon.</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<col=000080>Follow the trail of flour south past the bridge then west to the cave at the <col=800000>Kebos Lowlands mine</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<col=000080>Kill the <col=800000>Headless Beast</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<col=000080>Go back and speak to <col=800000>Gordon</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<col=000080>Speak to <col=800000>Mary</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<col=000080>Make a <col=800000>clay head</col> by using a <col=800000>knife</col> on the <col=800000>soft clay</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<col=000080>Speak to <col=800000>Gordon</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<col=000080>Make a <col=800000>fur head</col> by using <col=800000>bear fur</col> or <col=800000>grey wolf fur</col> on the head while having a <col=800000>needle</col> and <col=800000>thread</col>.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+line	
+line	<col=000080>Speak to <col=800000>Gordon</col> again.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<col=000080>Make a <col=800000>bloody head</col> by using <col=800000>red dye</col> on the head.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<str>Make a bloody head by using red dye on the head.</str>
+line	
+line	<col=000080>Speak to <col=800000>Gordon</col> again.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<str>Make a bloody head by using red dye on the head.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<col=000080>Mount the bloody head in the Mounted Head Space on the wall south of the stairs using two planks and six nails.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to Gordon south of the Farming Guild.</str>
+line	
+line	<str>Speak to Mary inside the main building west of Gordon.</str>
+line	
+line	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+line	
+line	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+line	
+line	<str>Kill the Headless Beast.</str>
+line	
+line	<str>Go back and speak to Gordon.</str>
+line	
+line	<str>Speak to Mary.</str>
+line	
+line	<str>Make a clay head by using a knife on the soft clay.</str>
+line	
+line	<str>Speak to Gordon.</str>
+line	
+line	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<str>Make a bloody head by using red dye on the head.</str>
+line	
+line	<str>Speak to Gordon again.</str>
+line	
+line	<str>Mount the bloody head in the Mounted Head Space on the wall south of the stairs using two planks and six nails.</str>
+line	
+line	<col=000080>Speak to <col=800000>Gordon</col> one more time.</col>
+done	<str>Speak to Gordon south of the Farming Guild.</str>
+done	
+done	<str>Speak to Mary inside the main building west of Gordon.</str>
+done	
+done	<str>Use a pot of flour on the southern gate next to the cow pen east of Gordon.</str>
+done	
+done	<str>Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine.</str>
+done	
+done	<str>Kill the Headless Beast.</str>
+done	
+done	<str>Go back and speak to Gordon.</str>
+done	
+done	<str>Speak to Mary.</str>
+done	
+done	<str>Make a clay head by using a knife on the soft clay.</str>
+done	
+done	<str>Speak to Gordon.</str>
+done	
+done	<str>Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.</str>
+done	
+done	<str>Speak to Gordon again.</str>
+done	
+done	<str>Make a bloody head by using red dye on the head.</str>
+done	
+done	<str>Speak to Gordon again.</str>
+done	
+done	<str>Mount the bloody head in the Mounted Head Space on the wall south of the stairs using two planks and six nails.</str>
+done	
+done	<str>Speak to Gordon one more time.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

@@ -1,0 +1,141 @@
+# Generated from the OSRS Wiki page "Tribal Totem/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Kangai Mau</col> at <col=800000>The Shrimp and Parrot</col> restaurant in <col=800000>Brimhaven</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 21 Thieving
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Kangai Mau</col> in the <col=800000>Brimhaven</col> food store.</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<col=000080>Travel to <col=800000>Ardougne</col> (you can take a ship from Brimhaven to complete an easy <col=800000>Karamja Diary</col> task), and head to the <col=800000>GPDT</col> depot just south of the eastern bank.</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<col=000080>Investigate the most <col=800000>north-eastern crate</col> for the <col=800000>address label</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<col=000080>Use the label on the <col=800000>crate</col> located 2 tiles to the south of the first crate.</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<col=000080>Talk to a <col=800000>GPDT employee</col>.</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<str>Talk to a GPDT employee.</str>
+line	
+line	<col=000080>Talk to <col=800000>Wizard Cromperty</col> in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher <col=800000>Ardougne diaries</col>.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<str>Talk to a GPDT employee.</str>
+line	
+line	<str>Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher Ardougne diaries.</str>
+line	
+line	<col=000080>Go west 2 doors and enter the password KURT. If you click too quickly it will say "This combination is incorrect", try again slower.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<str>Talk to a GPDT employee.</str>
+line	
+line	<str>Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher Ardougne diaries.</str>
+line	
+line	<str>Go west 2 doors and enter the password KURT. If you click too quickly it will say "This combination is incorrect", try again slower.</str>
+line	
+line	<col=000080>Right-click Investigate the <col=800000>stairs</col>, requiring 21 <col=800000>Thieving</col>, then climb them.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<str>Talk to a GPDT employee.</str>
+line	
+line	<str>Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher Ardougne diaries.</str>
+line	
+line	<str>Go west 2 doors and enter the password KURT. If you click too quickly it will say "This combination is incorrect", try again slower.</str>
+line	
+line	<str>Right-click Investigate the stairs, requiring 21 Thieving, then climb them.</str>
+line	
+line	<col=000080>Search the chest on the top floor for the <col=800000>totem</col>. You must finish the dialogue.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+line	
+line	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+line	
+line	<str>Investigate the most north-eastern crate for the address label.</str>
+line	
+line	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+line	
+line	<str>Talk to a GPDT employee.</str>
+line	
+line	<str>Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher Ardougne diaries.</str>
+line	
+line	<str>Go west 2 doors and enter the password KURT. If you click too quickly it will say "This combination is incorrect", try again slower.</str>
+line	
+line	<str>Right-click Investigate the stairs, requiring 21 Thieving, then climb them.</str>
+line	
+line	<str>Search the chest on the top floor for the totem. You must finish the dialogue.</str>
+line	
+line	<col=000080>Return to Kangai Mau.</col>
+done	<str>Talk to Kangai Mau in the Brimhaven food store.</str>
+done	
+done	<str>Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank.</str>
+done	
+done	<str>Investigate the most north-eastern crate for the address label.</str>
+done	
+done	<str>Use the label on the crate located 2 tiles to the south of the first crate.</str>
+done	
+done	<str>Talk to a GPDT employee.</str>
+done	
+done	<str>Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor. , or if you have completed the medium or higher Ardougne diaries.</str>
+done	
+done	<str>Go west 2 doors and enter the password KURT. If you click too quickly it will say "This combination is incorrect", try again slower.</str>
+done	
+done	<str>Right-click Investigate the stairs, requiring 21 Thieving, then climb them.</str>
+done	
+done	<str>Search the chest on the top floor for the totem. You must finish the dialogue.</str>
+done	
+done	<str>Return to Kangai Mau.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

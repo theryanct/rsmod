@@ -1,0 +1,389 @@
+# Generated from the OSRS Wiki page "Sleeping Giants/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Kovac</col> at the <col=800000>Giants' Plateau</col>, east of <col=800000>Al Kharid</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Very Short</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 15 Smithing
+step	1	-	Quick guide step 1
+line	<col=000080><col=800000>Minigame Teleport</col> to "Giants' Foundry"</col>
+step	2	-	Quick guide step 2
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<col=000080>Speak to <col=800000>Kovac</col> (strike the Hill Giant) in the <col=800000>Giants' Plateau</col>.</col>
+step	3	-	Quick guide step 3
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<col=000080>Once inside, repair the <col=800000>polishing wheel</col>, <col=800000>grindstone</col>, and <col=800000>trip hammer</col> using the required items.</col>
+step	4	-	Quick guide step 4
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<col=000080>Speak to Kovac twice.</col>
+step	5	-	Quick guide step 5
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<col=000080>Search the crate for items.</col>
+step	6	-	Quick guide step 6
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<col=000080>Deposit all the items into the <col=800000>crucible</col> (large bucket) hanging to the east by the bank. Different items are input separately.</col>
+step	7	-	Quick guide step 7
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<col=000080>Speak to Kovac to learn how to select the moulds (in red text).</col>
+step	8	-	Quick guide step 8
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<col=000080>Select the fitting mould Kovac described for the forte, blade and tip at the <col=800000>mould jig</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<col=000080>Speak to Kovac again. He will tell you to pour the metal.</col>
+step	10	-	Quick guide step 10
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<col=000080>Pour the metal from the crucible into the mould.</col>
+step	11	-	Quick guide step 11
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<col=000080>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the <col=800000>preform</col>.</col>
+step	12	-	Quick guide step 12
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<col=000080>Heat the preform to maximum by using it on the <col=800000>lava pool</col>. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</col>
+step	13	-	Quick guide step 13
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<col=000080>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</col>
+step	14	-	Quick guide step 14
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+line	
+line	<col=000080>Cool the preform using the <col=800000>waterfall</col> until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</col>
+step	15	-	Quick guide step 15
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+line	
+line	<str>Cool the preform using the waterfall until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</str>
+line	
+line	<col=000080>Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.</col>
+step	16	-	Quick guide step 16
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+line	
+line	<str>Cool the preform using the waterfall until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</str>
+line	
+line	<str>Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.</str>
+line	
+line	<col=000080>Cool the preform in the waterfall until its temperature is high green.</col>
+step	17	-	Quick guide step 17
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+line	
+line	<str>Cool the preform using the waterfall until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</str>
+line	
+line	<str>Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.</str>
+line	
+line	<str>Cool the preform in the waterfall until its temperature is high green.</str>
+line	
+line	<col=000080>Use the preform on the Polishing Wheel, repeating until the sword is complete. The Polishing Wheel will cool the preform during use, so be sure to watch the temperature.</col>
+step	18	-	Quick guide step 18
+line	<str>Minigame Teleport to "Giants' Foundry"</str>
+line	
+line	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+line	
+line	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+line	
+line	<str>Speak to Kovac twice.</str>
+line	
+line	<str>Search the crate for items.</str>
+line	
+line	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+line	
+line	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+line	
+line	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+line	
+line	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+line	
+line	<str>Pour the metal from the crucible into the mould.</str>
+line	
+line	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+line	
+line	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+line	
+line	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+line	
+line	<str>Cool the preform using the waterfall until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</str>
+line	
+line	<str>Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.</str>
+line	
+line	<str>Cool the preform in the waterfall until its temperature is high green.</str>
+line	
+line	<str>Use the preform on the Polishing Wheel, repeating until the sword is complete. The Polishing Wheel will cool the preform during use, so be sure to watch the temperature.</str>
+line	
+line	<col=000080>Speak to Kovac.</col>
+done	<str>Minigame Teleport to "Giants' Foundry"</str>
+done	
+done	<str>Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.</str>
+done	
+done	<str>Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items.</str>
+done	
+done	<str>Speak to Kovac twice.</str>
+done	
+done	<str>Search the crate for items.</str>
+done	
+done	<str>Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately.</str>
+done	
+done	<str>Speak to Kovac to learn how to select the moulds (in red text).</str>
+done	
+done	<str>Select the fitting mould Kovac described for the forte, blade and tip at the mould jig.</str>
+done	
+done	<str>Speak to Kovac again. He will tell you to pour the metal.</str>
+done	
+done	<str>Pour the metal from the crucible into the mould.</str>
+done	
+done	<str>Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform.</str>
+done	
+done	<str>Heat the preform to maximum by using it on the lava pool. The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.</str>
+done	
+done	<str>Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.</str>
+done	
+done	<str>Cool the preform using the waterfall until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools is more quickly.</str>
+done	
+done	<str>Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.</str>
+done	
+done	<str>Cool the preform in the waterfall until its temperature is high green.</str>
+done	
+done	<str>Use the preform on the Polishing Wheel, repeating until the sword is complete. The Polishing Wheel will cool the preform during use, so be sure to watch the temperature.</str>
+done	
+done	<str>Speak to Kovac.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

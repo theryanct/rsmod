@@ -1,0 +1,765 @@
+# Generated from the OSRS Wiki page "The Grand Tree/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>King Narnode Shareen</col> in the <col=800000>Grand Tree</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Intermediate</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 25 Agility
+step	1	-	Quick guide step 1
+line	<col=000080>Speak to <col=800000>King Shareen</col> in the <col=800000>Grand Tree</col> with two empty slots to receive a <col=800000>translation book</col> and a <col=800000>bark sample</col>.</col>
+step	2	-	Quick guide step 2
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<col=000080>Talk to <col=800000>Hazelmere</col> in his house on the island east of <col=800000>Yanille</col> (<col=800000>fairy ring</col> code: CLS). He will take your bark sample and give you a <col=800000>message</col> for the king.</col>
+step	3	-	Quick guide step 3
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<col=000080>Return to <col=800000>King Shareen</col>. He will ask what the message says. Tell him:</col>
+step	4	-	Quick guide step 4
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<col=000080>Head south. At the bottom of the incline, turn east and go up the ladder to speak with <col=800000>Glough</col>.</col>
+step	5	-	Quick guide step 5
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<col=000080>Return to <col=800000>King Shareen</col>, and he will tell you that <col=800000>Glough</col> has caught a human. Ask to see the prisoner.</col>
+step	6	-	Quick guide step 6
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<col=000080>Talk to the prisoner <col=800000>Charlie</col> on the top floor of the Grand Tree. Make sure to finish the entire conversation!</col>
+step	7	-	Quick guide step 7
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<col=000080>Go to Glough's house. Search the <col=800000>cupboard</col>, and you will find his <col=800000>journal</col>.</col>
+step	8	-	Quick guide step 8
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<col=000080>Talk to Glough and wait to be arrested.</col>
+step	9	-	Quick guide step 9
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<col=000080>Talk to Charlie; he will tell you about the <col=800000>shipyard</col> on <col=800000>Karamja</col>; the password is Ka-Lu-Min.</col>
+step	10	-	Quick guide step 10
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<col=000080><col=800000>The king</col> appears and tells you to escape using the <col=800000>gnome glider</col> on top of the tree.</col>
+step	11	-	Quick guide step 11
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<col=000080>Travel with the glider.</col>
+step	12	-	Quick guide step 12
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<col=000080>The glider will crash near the <col=800000>Ship Yard</col>. Run east past the level 53 <col=800000>jogre</col>s to the Ship Yard gate.</col>
+step	13	-	Quick guide step 13
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<col=000080>Open the gate and tell the <col=800000>worker</col> Glough sent you, then give the password Ka-Lu-Min.</col>
+step	14	-	Quick guide step 14
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<col=000080>Find the <col=800000>Foreman</col> on the southern dock. Kill him or talk to him to get a <col=800000>lumber order</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<col=000080>Take the lumber order to <col=800000>the king</col>. (Teleport into the stronghold or get <col=800000>Femi</col> to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</col>
+step	16	-	Quick guide step 16
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<col=000080>Speak to <col=800000>Charlie</col> again on the top floor of the <col=800000>Grand Tree</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<col=000080>Speak to <col=800000>Anita</col> up the stairs west of the swamp, north-west of the Grand Tree. She will give you a <col=800000>key</col>.</col>
+step	18	-	Quick guide step 18
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<col=000080>Go to Glough's house, and use the key to open the chest and take the <col=800000>invasion plans</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<col=000080>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</col>
+step	20	-	Quick guide step 20
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<col=000080>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 <col=800000>Agility</col>, eat your <col=800000>summer pie</col> now.</col>
+step	21	-	Quick guide step 21
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<col=000080>Bank if needed and prepare for the battle, then go down the trapdoor.</col>
+step	22	-	Quick guide step 22
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+line	
+line	<col=000080>After you enter and talk to Glough, a level 172 <col=800000>black demon</col> will appear and attack you.</col>
+step	23	-	Quick guide step 23
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+line	
+line	<str>After you enter and talk to Glough, a level 172 black demon will appear and attack you.</str>
+line	
+line	<col=000080>Kill the demon. Walk along the passage until you find <col=800000>King Shareen</col> standing by a ladder.</col>
+step	24	-	Quick guide step 24
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+line	
+line	<str>After you enter and talk to Glough, a level 172 black demon will appear and attack you.</str>
+line	
+line	<str>Kill the demon. Walk along the passage until you find King Shareen standing by a ladder.</str>
+line	
+line	<col=000080>Talk to the king, and he will ask you to locate the last <col=800000>daconia rock</col>. Fully complete the dialogue; otherwise, you cannot continue.</col>
+step	25	-	Quick guide step 25
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+line	
+line	<str>After you enter and talk to Glough, a level 172 black demon will appear and attack you.</str>
+line	
+line	<str>Kill the demon. Walk along the passage until you find King Shareen standing by a ladder.</str>
+line	
+line	<str>Talk to the king, and he will ask you to locate the last daconia rock. Fully complete the dialogue; otherwise, you cannot continue.</str>
+line	
+line	<col=000080>Search the <col=800000>roots</col> until you find it (make sure to click continue on the dialogue when you find the stone).</col>
+step	26	-	Quick guide step 26
+line	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+line	
+line	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+line	
+line	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+line	
+line	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+line	
+line	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+line	
+line	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+line	
+line	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+line	
+line	<str>Talk to Glough and wait to be arrested.</str>
+line	
+line	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+line	
+line	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+line	
+line	<str>Travel with the glider.</str>
+line	
+line	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+line	
+line	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+line	
+line	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+line	
+line	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+line	
+line	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+line	
+line	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+line	
+line	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+line	
+line	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+line	
+line	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+line	
+line	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+line	
+line	<str>After you enter and talk to Glough, a level 172 black demon will appear and attack you.</str>
+line	
+line	<str>Kill the demon. Walk along the passage until you find King Shareen standing by a ladder.</str>
+line	
+line	<str>Talk to the king, and he will ask you to locate the last daconia rock. Fully complete the dialogue; otherwise, you cannot continue.</str>
+line	
+line	<str>Search the roots until you find it (make sure to click continue on the dialogue when you find the stone).</str>
+line	
+line	<col=000080>Talk to the king one last time.</col>
+done	<str>Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.</str>
+done	
+done	<str>Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king.</str>
+done	
+done	<str>Return to King Shareen. He will ask what the message says. Tell him:</str>
+done	
+done	<str>Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough.</str>
+done	
+done	<str>Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner.</str>
+done	
+done	<str>Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!</str>
+done	
+done	<str>Go to Glough's house. Search the cupboard, and you will find his journal.</str>
+done	
+done	<str>Talk to Glough and wait to be arrested.</str>
+done	
+done	<str>Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min.</str>
+done	
+done	<str>The king appears and tells you to escape using the gnome glider on top of the tree.</str>
+done	
+done	<str>Travel with the glider.</str>
+done	
+done	<str>The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate.</str>
+done	
+done	<str>Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.</str>
+done	
+done	<str>Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order.</str>
+done	
+done	<str>Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.</str>
+done	
+done	<str>Speak to Charlie again on the top floor of the Grand Tree.</str>
+done	
+done	<str>Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key.</str>
+done	
+done	<str>Go to Glough's house, and use the key to open the chest and take the invasion plans.</str>
+done	
+done	<str>Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).</str>
+done	
+done	<str>Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now.</str>
+done	
+done	<str>Bank if needed and prepare for the battle, then go down the trapdoor.</str>
+done	
+done	<str>After you enter and talk to Glough, a level 172 black demon will appear and attack you.</str>
+done	
+done	<str>Kill the demon. Walk along the passage until you find King Shareen standing by a ladder.</str>
+done	
+done	<str>Talk to the king, and he will ask you to locate the last daconia rock. Fully complete the dialogue; otherwise, you cannot continue.</str>
+done	
+done	<str>Search the roots until you find it (make sure to click continue on the dialogue when you find the stone).</str>
+done	
+done	<str>Talk to the king one last time.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>

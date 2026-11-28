@@ -1,5 +1,5 @@
-# Authored (not Wiki): ui's OSRS-style journal for quest_insearchofthemyreque (no Wiki journal transcript).
-before	<col=000080>I can start this quest by talking to <col=800000>Vanstrom Klause</col> in the <col=800000>Canifis</col> pub.</col>
+# Generated from the OSRS Wiki page "In Search of the Myreque/Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Vanstrom Klause</col> at the <col=800000>Hair of the Dog</col> tavern in <col=800000>Canifis</col>.</col>
 before	
 before	<col=000080>Difficulty:</col>
 before	<col=800000>Intermediate</col>
@@ -7,78 +7,383 @@ before	<col=000080>Length:</col>
 before	<col=800000>Short</col>
 before	
 before	<col=000080>Requirements:</col>
-req	Nature Spirit
 req	Level 25 Agility
-step	1	5	Authored
-line	<col=000080><col=800000>Vanstrom Klause</col> asked me to take <col=800000>steel weapons</col> to the <col=800000>Myreque</col>. The boatman <col=800000>Cyreg Paddlehorn</col> in <col=800000>Mort'ton</col> may help.</col>
-step	2	10	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+step	1	-	Quick guide step 1
+line	<col=000080>Talk to <col=800000>Vanstrom Klause</col> in the Canifis pub (near the staircase). CKS</col>
+step	2	-	Quick guide step 2
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<col=000080>Cyreg agreed to help if I fix his boat with three <col=800000>planks</col>.</col>
-step	3	15	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</col>
+step	3	-	Quick guide step 3
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 line	
-line	<col=000080>Cyreg's boat is fixed. <col=800000>Curpile Fyod</col> in the <col=800000>Hollows</col> guards the way.</col>
-step	4	20	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Travel to <col=800000>Mort'ton</col> (<col=800000>Mort'ton teleport</col>, <col=800000>Minigame teleport</col> to <col=800000>Shades of Mort'ton</col>, <col=800000>Barrows teleport</col>, BIP with 50 Agility, BKR and get <col=800000>Swamp Boaty</col>, or run from Canifis)</col>
+step	4	-	Quick guide step 4
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 line	
-line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
 line	
-line	<col=000080>Curpile let me in. The hideout is through the doors behind the tree.</col>
-step	5	40	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Talk to <col=800000>Cyreg Paddlehorn</col> (east, by the boat).</col>
+step	5	-	Quick guide step 5
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 line	
-line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
 line	
-line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
 line	
-line	<col=000080>I found the Myreque. I should give the weapons to <col=800000>Veliaf Hurtz</col>.</col>
-step	6	50	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</col>
+step	6	-	Quick guide step 6
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 line	
-line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
 line	
-line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
 line	
-line	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
 line	
-line	<col=000080>A <col=800000>skeleton hellhound</col> attacked the hideout!</col>
-step	7	60	Authored
-line	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Go north and climb the tree rope bridge.</col>
+step	7	-	Quick guide step 7
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 line	
-line	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 line	
-line	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
 line	
-line	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
 line	
-line	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
 line	
-line	<str>A skeleton hellhound attacked the hideout!</str>
+line	<str>Go north and climb the tree rope bridge.</str>
 line	
-line	<col=000080>I killed the hellhound. Veliaf told me the way out to Canifis.</col>
-done	<str>Vanstrom Klause asked me to take steel weapons to the Myreque. The boatman Cyreg Paddlehorn in Mort'ton may help.</str>
+line	<col=000080>Repair the bridge.</col>
+step	8	-	Quick guide step 8
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<col=000080>Continue north and talk to <col=800000>Curpile Fyod</col>.</col>
+step	9	-	Quick guide step 9
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<col=000080>Go north and enter the wooden doors set into the hill.</col>
+step	10	-	Quick guide step 10
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<col=000080>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</col>
+step	11	-	Quick guide step 11
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<col=000080>Talk to Veliaf (no chat options needed).</col>
+step	12	-	Quick guide step 12
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<col=000080>Talk to everyone else (no chat options needed).</col>
+step	13	-	Quick guide step 13
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<col=000080>Talk to Veliaf (talk to him and give him your steel weapons).</col>
+step	14	-	Quick guide step 14
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+line	
+line	<col=000080>Kill the level 97 Skeleton Hellhound (you can <col=800000>safespot</col> the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</col>
+step	15	-	Quick guide step 15
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+line	
+line	<str>Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</str>
+line	
+line	<col=000080>Talk to Veliaf, ask how to get out.</col>
+step	16	-	Quick guide step 16
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+line	
+line	<str>Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</str>
+line	
+line	<str>Talk to Veliaf, ask how to get out.</str>
+line	
+line	<col=000080>Go back by entering the cave entrance and search the wall to the north.</col>
+step	17	-	Quick guide step 17
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+line	
+line	<str>Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</str>
+line	
+line	<str>Talk to Veliaf, ask how to get out.</str>
+line	
+line	<str>Go back by entering the cave entrance and search the wall to the north.</str>
+line	
+line	<col=000080>Climb up the ladder in the north side of the room.</col>
+step	18	-	Quick guide step 18
+line	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
+line	
+line	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
+line	
+line	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
+line	
+line	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
+line	
+line	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
+line	
+line	<str>Go north and climb the tree rope bridge.</str>
+line	
+line	<str>Repair the bridge.</str>
+line	
+line	<str>Continue north and talk to Curpile Fyod.</str>
+line	
+line	<str>Go north and enter the wooden doors set into the hill.</str>
+line	
+line	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+line	
+line	<str>Talk to Veliaf (no chat options needed).</str>
+line	
+line	<str>Talk to everyone else (no chat options needed).</str>
+line	
+line	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+line	
+line	<str>Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</str>
+line	
+line	<str>Talk to Veliaf, ask how to get out.</str>
+line	
+line	<str>Go back by entering the cave entrance and search the wall to the north.</str>
+line	
+line	<str>Climb up the ladder in the north side of the room.</str>
+line	
+line	<col=000080>Talk to the Stranger in the Canifis pub (the one sitting in the chair where Vanstrom Klause was).</col>
+done	<str>Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS</str>
 done	
-done	<str>Cyreg agreed to help if I fix his boat with three planks.</str>
+done	<str>Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!</str>
 done	
-done	<str>Cyreg's boat is fixed. Curpile Fyod in the Hollows guards the way.</str>
+done	<str>Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)</str>
 done	
-done	<str>Curpile let me in. The hideout is through the doors behind the tree.</str>
+done	<str>Talk to Cyreg Paddlehorn (east, by the boat).</str>
 done	
-done	<str>I found the Myreque. I should give the weapons to Veliaf Hurtz.</str>
+done	<str>Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)</str>
 done	
-done	<str>A skeleton hellhound attacked the hideout!</str>
+done	<str>Go north and climb the tree rope bridge.</str>
 done	
-done	<str>I killed the hellhound. Veliaf told me the way out to Canifis.</str>
+done	<str>Repair the bridge.</str>
 done	
-done	<str>I found the Myreque in their hideout and delivered the weapons, but Vanstrom used me to find them.</str>
+done	<str>Continue north and talk to Curpile Fyod.</str>
+done	
+done	<str>Go north and enter the wooden doors set into the hill.</str>
+done	
+done	<str>Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.</str>
+done	
+done	<str>Talk to Veliaf (no chat options needed).</str>
+done	
+done	<str>Talk to everyone else (no chat options needed).</str>
+done	
+done	<str>Talk to Veliaf (talk to him and give him your steel weapons).</str>
+done	
+done	<str>Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).</str>
+done	
+done	<str>Talk to Veliaf, ask how to get out.</str>
+done	
+done	<str>Go back by entering the cave entrance and search the wall to the north.</str>
+done	
+done	<str>Climb up the ladder in the north side of the room.</str>
+done	
+done	<str>Talk to the Stranger in the Canifis pub (the one sitting in the chair where Vanstrom Klause was).</str>
 done	
 done	<col=ff0000>QUEST COMPLETE!</col>

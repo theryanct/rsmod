@@ -1,0 +1,713 @@
+# Generated from the OSRS Wiki page "Between a Rock.../Quick guide" by tools/quests/journals_from_wiki.py; set a step's stage to pin it.
+before	<col=000080>Talk to <col=800000>Dondakan the Dwarf</col> at the <col=800000>Keldagrim south-west mine</col>.</col>
+before	
+before	<col=000080>Difficulty:</col>
+before	<col=800000>Experienced</col>
+before	<col=000080>Length:</col>
+before	<col=800000>Medium</col>
+before	
+before	<col=000080>Requirements:</col>
+req	Level 30 Defence
+req	Level 40 Mining
+req	Level 50 Smithing
+step	1	-	Quick guide step 1
+line	<col=000080>Find the <col=800000>Dwarven Ferryman</col>. Either enter the tunnel and subsequent cave just south of the <col=800000>Polar Hunter area</col> (<col=800000>fairy ring</col> DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</col>
+step	2	-	Quick guide step 2
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<col=000080>Talk to the <col=800000>Dwarven Ferryman</col> (not the Dwarven Boatman) and use the <col=800000>Ring of Charos(a)</col> or use the Travel option to go across the river.</col>
+step	3	-	Quick guide step 3
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<col=000080>Run north and east across the bridge and west past the second wooden bridge to talk to <col=800000>Dondakan</col>.</col>
+step	4	-	Quick guide step 4
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<col=000080>Go to western <col=800000>Keldagrim</col> and talk to the <col=800000>Dwarven Engineer</col> in the <col=800000>Trading Consortium</col>'s palace smithing shop.</col>
+step	5	-	Quick guide step 5
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<col=000080>Go to the <col=800000>Ice Mountain</col> entrance of the <col=800000>Dwarven Mine</col> and talk to <col=800000>Rolad</col> in the east house (chat will disengage once then re-engage).</col>
+step	6	-	Quick guide step 6
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<col=000080>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective <col=800000>pages</col>:</col>
+step	7	-	Quick guide step 7
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<col=000080>Talk to <col=800000>Rolad</col>. (chat will again disengage then re-engage)</col>
+step	8	-	Quick guide step 8
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<col=000080>Read <col=800000>Dwarven lore</col> in its entirety and keep it for later.</col>
+step	9	-	Quick guide step 9
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<col=000080>Go back to the Keldagrim mines and talk to <col=800000>Dondakan</col>.</col>
+step	10	-	Quick guide step 10
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<col=000080>Use a gold bar on him.</col>
+step	11	-	Quick guide step 11
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<col=000080>Go to any furnace and use a gold bar on the furnace to make a <col=800000>golden cannon ball</col>. Edgeville is recommended for easy fairy ring or <col=800000>Keldagrim minecart</col> access.</col>
+step	12	-	Quick guide step 12
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<col=000080>Use the golden cannon ball on <col=800000>Dondakan</col> to receive a <col=800000>Schematic</col>.</col>
+step	13	-	Quick guide step 13
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<col=000080>Read the <col=800000>Dwarven lore</col> book to receive the <col=800000>base schematics</col>.</col>
+step	14	-	Quick guide step 14
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<col=000080>Go back to the Dwarf Engineer at the Western Trade Consortium to get the <col=800000>Schematics</col>.</col>
+step	15	-	Quick guide step 15
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<col=000080>Use your <col=800000>gold bar</col> on the nearby anvil to make a <col=800000>gold helmet</col>.</col>
+step	16	-	Quick guide step 16
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<col=000080>Go to the pub in the <col=800000>White Wolf Mountain passage</col> and speak to <col=800000>Khorvak</col>.</col>
+step	17	-	Quick guide step 17
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<col=000080>Assemble the schematics per below to get the completed <col=800000>Schematic</col>:</col>
+step	18	-	Quick guide step 18
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<col=000080>Equip your <col=800000>Gold helmet</col> and pickaxe and prepare to kill a level 75-125 <col=800000>Arzinian Avatar</col>.</col>
+step	19	-	Quick guide step 19
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dondakan</col> with the schematics.</col>
+step	20	-	Quick guide step 20
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<col=000080>Mine 6 OR 15 <col=800000>Gold ore</col> (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</col>
+step	21	-	Quick guide step 21
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+line	
+line	<col=000080>Go to the centre of the area.</col>
+step	22	-	Quick guide step 22
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+line	
+line	<str>Go to the centre of the area.</str>
+line	
+line	<col=000080>Go through the first set of flames.</col>
+step	23	-	Quick guide step 23
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+line	
+line	<str>Go to the centre of the area.</str>
+line	
+line	<str>Go through the first set of flames.</str>
+line	
+line	<col=000080>Talk to the second set of flames.</col>
+step	24	-	Quick guide step 24
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+line	
+line	<str>Go to the centre of the area.</str>
+line	
+line	<str>Go through the first set of flames.</str>
+line	
+line	<str>Talk to the second set of flames.</str>
+line	
+line	<col=000080>Kill the <col=800000>Arzinian Avatar</col>. It will be either <col=800000>Arzinian Avatar of Magic</col> (if your highest combat stat is a <col=800000>melee</col> stat), <col=800000>Arzinian Avatar of Ranging</col> (if your highest combat stat is <col=800000>Magic</col>), or <col=800000>Arzinian Avatar of Strength</col> (if your highest combat stat is <col=800000>Ranged</col>). Choose combat equipment and prayers accordingly. See <col=800000>Arzinian Avatar</col> for more details.</col>
+step	25	-	Quick guide step 25
+line	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+line	
+line	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+line	
+line	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+line	
+line	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+line	
+line	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+line	
+line	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+line	
+line	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+line	
+line	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+line	
+line	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+line	
+line	<str>Use a gold bar on him.</str>
+line	
+line	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+line	
+line	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+line	
+line	<str>Read the Dwarven lore book to receive the base schematics.</str>
+line	
+line	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+line	
+line	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+line	
+line	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+line	
+line	<str>Assemble the schematics per below to get the completed Schematic:</str>
+line	
+line	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+line	
+line	<str>Talk to Dondakan with the schematics.</str>
+line	
+line	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+line	
+line	<str>Go to the centre of the area.</str>
+line	
+line	<str>Go through the first set of flames.</str>
+line	
+line	<str>Talk to the second set of flames.</str>
+line	
+line	<str>Kill the Arzinian Avatar. It will be either Arzinian Avatar of Magic (if your highest combat stat is a melee stat), Arzinian Avatar of Ranging (if your highest combat stat is Magic), or Arzinian Avatar of Strength (if your highest combat stat is Ranged). Choose combat equipment and prayers accordingly. See Arzinian Avatar for more details.</str>
+line	
+line	<col=000080>Talk to <col=800000>Dondakan</col>.</col>
+done	<str>Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.</str>
+done	
+done	<str>Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.</str>
+done	
+done	<str>Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.</str>
+done	
+done	<str>Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop.</str>
+done	
+done	<str>Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage).</str>
+done	
+done	<str>Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:</str>
+done	
+done	<str>Talk to Rolad. (chat will again disengage then re-engage)</str>
+done	
+done	<str>Read Dwarven lore in its entirety and keep it for later.</str>
+done	
+done	<str>Go back to the Keldagrim mines and talk to Dondakan.</str>
+done	
+done	<str>Use a gold bar on him.</str>
+done	
+done	<str>Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access.</str>
+done	
+done	<str>Use the golden cannon ball on Dondakan to receive a Schematic.</str>
+done	
+done	<str>Read the Dwarven lore book to receive the base schematics.</str>
+done	
+done	<str>Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics.</str>
+done	
+done	<str>Use your gold bar on the nearby anvil to make a gold helmet.</str>
+done	
+done	<str>Go to the pub in the White Wolf Mountain passage and speak to Khorvak.</str>
+done	
+done	<str>Assemble the schematics per below to get the completed Schematic:</str>
+done	
+done	<str>Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar.</str>
+done	
+done	<str>Talk to Dondakan with the schematics.</str>
+done	
+done	<str>Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players.</str>
+done	
+done	<str>Go to the centre of the area.</str>
+done	
+done	<str>Go through the first set of flames.</str>
+done	
+done	<str>Talk to the second set of flames.</str>
+done	
+done	<str>Kill the Arzinian Avatar. It will be either Arzinian Avatar of Magic (if your highest combat stat is a melee stat), Arzinian Avatar of Ranging (if your highest combat stat is Magic), or Arzinian Avatar of Strength (if your highest combat stat is Ranged). Choose combat equipment and prayers accordingly. See Arzinian Avatar for more details.</str>
+done	
+done	<str>Talk to Dondakan.</str>
+done	
+done	<col=ff0000>QUEST COMPLETE!</col>
