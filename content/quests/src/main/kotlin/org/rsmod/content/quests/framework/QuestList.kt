@@ -1,12 +1,15 @@
 package org.rsmod.content.quests.framework
 
 import org.rsmod.api.type.refs.dbrow.DbRowReferences
+import org.rsmod.content.quests.ruffsituation.RuffSituation.Companion.A_RUFF_SITUATION
 import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.barcrawl.Barcrawl.Companion.BARCRAWL
+import org.rsmod.content.quests.bearyoursoul.BearYourSoul.Companion.BEAR_YOUR_SOUL
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.biohazard.Biohazard.Companion.BIOHAZARD
 import org.rsmod.content.quests.bigchompy.BigChompy.Companion.BIG_CHOMPY
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
+import org.rsmod.content.quests.childrenofthesun.ChildrenOfTheSun.Companion.CHILDREN_OF_THE_SUN
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.coldwar.ColdWar.Companion.COLD_WAR
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
@@ -19,6 +22,7 @@ import org.rsmod.content.quests.dragonslayer.DragonSlayer.Companion.DRAGON_SLAYE
 import org.rsmod.content.quests.druidicritual.DruidicRitual.Companion.DRUIDIC_RITUAL
 import org.rsmod.content.quests.dwarfcannon.DwarfCannon.Companion.DWARF_CANNON
 import org.rsmod.content.quests.eadgarsruse.EadgarsRuse.Companion.EADGARS_RUSE
+import org.rsmod.content.quests.eaglespeak.EaglesPeak.Companion.EAGLES_PEAK
 import org.rsmod.content.quests.elementalworkshop1.ElementalWorkshopI.Companion.ELEMENTAL_WORKSHOP_I
 import org.rsmod.content.quests.elementalworkshop2.ElementalWorkshopII.Companion.ELEMENTAL_WORKSHOP_II
 import org.rsmod.content.quests.ernest.ErnestTheChicken.Companion.ERNEST
@@ -27,6 +31,7 @@ import org.rsmod.content.quests.fightarena.FightArena.Companion.FIGHT_ARENA
 import org.rsmod.content.quests.golem.TheGolem.Companion.THE_GOLEM
 import org.rsmod.content.quests.fishingcontest.FishingContest.Companion.FISHING_CONTEST
 import org.rsmod.content.quests.fremenniktrials.FremennikTrials.Companion.FREMENNIK_TRIALS
+import org.rsmod.content.quests.gardenofdeath.GardenOfDeath.Companion.GARDEN_OF_DEATH
 import org.rsmod.content.quests.gertrudescat.GertrudesCat.Companion.GERTRUDES_CAT
 import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
@@ -38,6 +43,7 @@ import org.rsmod.content.quests.idesofmilk.IdesOfMilk.Companion.IDES_OF_MILK
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
+import org.rsmod.content.quests.learningtheropes.LearningTheRopes.Companion.LEARNING_THE_ROPES
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
 import org.rsmod.content.quests.magearena.MageArena.Companion.MAGE_ARENA_I
 import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
@@ -45,6 +51,7 @@ import org.rsmod.content.quests.losttribe.LostTribe.Companion.LOST_TRIBE
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.mountaindaughter.MountainDaughter.Companion.MOUNTAIN_DAUGHTER
+import org.rsmod.content.quests.mudfoot.MudfootsBigAdventure.Companion.MUDFOOT
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
 import org.rsmod.content.quests.naturespirit.NatureSpirit.Companion.NATURE_SPIRIT
 import org.rsmod.content.quests.observatory.ObservatoryQuest.Companion.OBSERVATORY_QUEST
@@ -63,7 +70,9 @@ import org.rsmod.content.quests.sheepherder.SheepHerder.Companion.SHEEP_HERDER
 import org.rsmod.content.quests.sheepshearer.SheepShearer.Companion.SHEEP_SHEARER
 import org.rsmod.content.quests.shieldofarrav.ShieldOfArrav.Companion.SHIELD_OF_ARRAV
 import org.rsmod.content.quests.skippy.SkippyAndTheMogres.Companion.SKIPPY_AND_THE_MOGRES
+import org.rsmod.content.quests.soulsbane.SoulsBane.Companion.SOULS_BANE
 import org.rsmod.content.quests.sleepinggiants.SleepingGiants.Companion.SLEEPING_GIANTS
+import org.rsmod.content.quests.spiritsoftheelid.SpiritsOfTheElid.Companion.SPIRITS_OF_THE_ELID
 import org.rsmod.content.quests.templeoftheeye.TempleOfTheEye.Companion.TEMPLE_OF_THE_EYE
 import org.rsmod.content.quests.toweroflife.TowerOfLife.Companion.TOWER_OF_LIFE
 import org.rsmod.content.quests.treegnomevillage.TreeGnomeVillage.Companion.TREE_GNOME_VILLAGE
@@ -73,6 +82,7 @@ import org.rsmod.content.quests.vampyreslayer.VampyreSlayer.Companion.VAMPYRE_SL
 import org.rsmod.content.quests.waterfall.WaterfallQuest.Companion.WATERFALL_QUEST
 import org.rsmod.content.quests.witchshouse.WitchsHouse.Companion.WITCHS_HOUSE
 import org.rsmod.content.quests.witchspotion.WitchsPotion.Companion.WITCHS_POTION
+import org.rsmod.content.quests.writingsonthewall.WritingsOnTheWall.Companion.WRITINGS_ON_THE_WALL
 import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_THE_SPOT
 
 /**
@@ -82,12 +92,15 @@ import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_TH
 public object BuiltQuests {
     public val all: List<QuestDef> =
         listOf(
+            A_RUFF_SITUATION,
             ANIMAL_MAGNETISM,
             BARCRAWL,
+            BEAR_YOUR_SOUL,
             BELOW_ICE_MOUNTAIN,
             BIOHAZARD,
             BIG_CHOMPY,
             BLACK_KNIGHTS_FORTRESS,
+            CHILDREN_OF_THE_SUN,
             CLOCK_TOWER,
             COLD_WAR,
             COOKS_ASSISTANT,
@@ -100,6 +113,7 @@ public object BuiltQuests {
             DRUIDIC_RITUAL,
             DWARF_CANNON,
             EADGARS_RUSE,
+            EAGLES_PEAK,
             ELEMENTAL_WORKSHOP_I,
             ELEMENTAL_WORKSHOP_II,
             ERNEST,
@@ -108,6 +122,7 @@ public object BuiltQuests {
             THE_GOLEM,
             FISHING_CONTEST,
             FREMENNIK_TRIALS,
+            GARDEN_OF_DEATH,
             GERTRUDES_CAT,
             GHOSTS_AHOY,
             GOBLIN_DIPLOMACY,
@@ -119,6 +134,7 @@ public object BuiltQuests {
             IMP_CATCHER,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
+            LEARNING_THE_ROPES,
             LOST_CITY,
             MAGE_ARENA_I,
             MERLINS_CRYSTAL,
@@ -126,6 +142,7 @@ public object BuiltQuests {
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MOUNTAIN_DAUGHTER,
+            MUDFOOT,
             MURDER_MYSTERY,
             NATURE_SPIRIT,
             OBSERVATORY_QUEST,
@@ -144,7 +161,9 @@ public object BuiltQuests {
             SHEEP_SHEARER,
             SHIELD_OF_ARRAV,
             SKIPPY_AND_THE_MOGRES,
+            SOULS_BANE,
             SLEEPING_GIANTS,
+            SPIRITS_OF_THE_ELID,
             TEMPLE_OF_THE_EYE,
             TOWER_OF_LIFE,
             TREE_GNOME_VILLAGE,
@@ -154,6 +173,7 @@ public object BuiltQuests {
             WATERFALL_QUEST,
             WITCHS_HOUSE,
             WITCHS_POTION,
+            WRITINGS_ON_THE_WALL,
             X_MARKS_THE_SPOT,
         )
 
