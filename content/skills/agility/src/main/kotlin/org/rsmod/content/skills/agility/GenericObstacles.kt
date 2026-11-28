@@ -108,13 +108,18 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
     }
 
     private suspend fun ProtectedAccess.cross(loc: BoundLocInfo, kind: Kind) {
-        val from = player.coords
-        val dest =
-            if (kind == Kind.SteppingStone) {
-                loc.coords
-            } else {
-                oppositeSide(from, loc)
-            } ?: return
+        if (kind == Kind.SteppingStone) {
+            val from = player.coords
+            if (loc.coords != from) moveWith(ObstacleSeqs.stepping_stone, from, loc.coords)
+            return
+        }
+        val (start, dest) = crossing(player.coords, loc) ?: return
+        // Step onto this side's start tile first, so the climb always runs straight across.
+        if (player.coords != start) {
+            exactMove(player.coords, start, 0, CLIENT_CYCLES_PER_TICK, direction(start, dest))
+            delay(1)
+        }
+        val from = start
         if (dest == from) return
         val anim =
             when (kind) {
@@ -133,10 +138,15 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
     }
 
     /**
-     * Wall locs (shapes 0-3): across the wall's edge (rotation 0 west, 1 north, 2 east, 3 south).
-     * Other locs: past the footprint on the side opposite the player.
+     * (start, landing) for a two-sided obstacle. Both ends are fixed by the loc, not by where the
+     * player clicked from, so crossing works the same way from either side:
+     * - Wall locs (shapes 0-3): across the wall's edge (rotation 0 west, 1 north, 2 east, 3 south);
+     *   the two tiles are the loc tile and the tile beyond that edge.
+     * - Other locs (stiles are 1x2): across the SHORT side of the rotated footprint, from the tile
+     *   just outside it on the player's side to the tile just outside the far side, in line with
+     *   the player (clamped onto the footprint). Square footprints fall back to the approach axis.
      */
-    private fun oppositeSide(player: CoordGrid, loc: BoundLocInfo): CoordGrid? {
+    private fun crossing(player: CoordGrid, loc: BoundLocInfo): Pair<CoordGrid, CoordGrid>? {
         val shape = loc.shapeId
         if (shape in 0..3) {
             val (dx, dz) =
@@ -148,20 +158,33 @@ class GenericObstacles @Inject constructor(private val locTypes: LocTypeList) : 
                 }
             val tile = loc.coords
             val outside = tile.translate(dx, dz)
-            return if (player.x == tile.x && player.z == tile.z) outside else tile
+            // On the loc tile -> go out; anywhere else (outside the edge or beside it) -> come in.
+            return if (player.x == tile.x && player.z == tile.z) tile to outside else outside to tile
         }
         val minX = loc.coords.x
         val minZ = loc.coords.z
-        val maxX = minX + loc.width - 1
-        val maxZ = minZ + loc.length - 1
-        val x = player.x.coerceIn(minX, maxX)
-        val z = player.z.coerceIn(minZ, maxZ)
-        return when {
-            player.x < minX -> CoordGrid(maxX + 1, z, player.level)
-            player.x > maxX -> CoordGrid(minX - 1, z, player.level)
-            player.z < minZ -> CoordGrid(x, maxZ + 1, player.level)
-            player.z > maxZ -> CoordGrid(x, minZ - 1, player.level)
-            else -> null
+        val maxX = minX + loc.adjustedWidth - 1
+        val maxZ = minZ + loc.adjustedLength - 1
+        val level = loc.coords.level
+        val acrossX =
+            when {
+                loc.adjustedWidth < loc.adjustedLength -> true
+                loc.adjustedWidth > loc.adjustedLength -> false
+                // Square: cross along whichever axis the player is outside of.
+                else -> player.x < minX || player.x > maxX
+            }
+        return if (acrossX) {
+            val z = player.z.coerceIn(minZ, maxZ)
+            val west = CoordGrid(minX - 1, z, level)
+            val east = CoordGrid(maxX + 1, z, level)
+            val onWest = player.x < (minX + maxX + 1) / 2.0
+            if (onWest) west to east else east to west
+        } else {
+            val x = player.x.coerceIn(minX, maxX)
+            val south = CoordGrid(x, minZ - 1, level)
+            val north = CoordGrid(x, maxZ + 1, level)
+            val onSouth = player.z < (minZ + maxZ + 1) / 2.0
+            if (onSouth) south to north else north to south
         }
     }
 
