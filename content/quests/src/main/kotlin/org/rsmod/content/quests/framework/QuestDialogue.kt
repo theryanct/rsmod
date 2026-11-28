@@ -1,5 +1,6 @@
 package org.rsmod.content.quests.framework
 
+import com.github.michaelbull.logging.InlineLogger
 import org.rsmod.api.config.constants
 import org.rsmod.api.player.dialogue.Dialogue
 import org.rsmod.content.quests.framework.QuestDialogue.Node
@@ -138,6 +139,7 @@ public class QuestDialogueRunner(
 ) {
     private companion object {
         val CONDITION_TEXT = Regex("^(If|On|When) ", RegexOption.IGNORE_CASE)
+        val logger = InlineLogger()
     }
 
     private enum class Flow {
@@ -276,7 +278,13 @@ public class QuestDialogueRunner(
             node.speaker.equals("Player", ignoreCase = true) -> chatPlayer(neutral, text)
             other != null ->
                 chatNpcSpecific(speakerName(node.speaker), other, neutral, text)
-            else -> chatNpc(neutral, text)
+            this.npc != null -> chatNpc(neutral, text)
+            // No npc to speak (a loc/item section with npc lines and no `speakers` entry): show
+            // the line in a message box instead of throwing (which logs the player out).
+            else -> {
+                logger.warn { "Quest dialogue: no npc for speaker '${node.speaker}'; shown as a mesbox." }
+                mesbox("${speakerName(node.speaker)}: $text")
+            }
         }
     }
 }

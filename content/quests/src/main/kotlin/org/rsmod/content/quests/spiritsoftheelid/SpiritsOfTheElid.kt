@@ -376,7 +376,7 @@ constructor(
             return
         }
         if (player.inMayorsHouse()) {
-            runQuestSection(null, dialogue, "Attempting to cut the mayor's shoes in his presence")
+            runQuestSection(null, dialogue, "Attempting to cut the mayor's shoes in his presence", speakers = mapOf("Awusah the Mayor" to ElidNpcs.mayor))
             return
         }
         runQuestSection(null, dialogue, "Cutting the mayor's shoes")

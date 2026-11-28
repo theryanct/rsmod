@@ -126,7 +126,7 @@ constructor(
 
     private suspend fun ProtectedAccess.chopLeprechaunTree() {
         if (npcRepo.findAll(LEPRECHAUN_SPOT).any { it.type.id == LcNpcs.shamus.id }) {
-            runQuestSection(null, dialogue, SHAMUS_OUT)
+            runQuestSection(null, dialogue, SHAMUS_OUT, speakers = mapOf("Shamus" to LcNpcs.shamus))
             return
         }
         npcRepo.add(Npc(npcTypes[LcNpcs.shamus], LEPRECHAUN_SPOT), SHAMUS_TICKS)
@@ -186,9 +186,9 @@ constructor(
         when {
             state < MET_SHAMUS -> mes("You decide not to chop down this ancient-looking tree.")
             state == MET_SHAMUS && alive ->
-                runQuestSection(null, dialogue, SPIRIT_ALIVE)
+                runQuestSection(null, dialogue, SPIRIT_ALIVE, speakers = mapOf("Tree spirit" to LcNpcs.tree_spirit))
             state == MET_SHAMUS -> {
-                runQuestSection(null, dialogue, "Attempting to chop down the tree")
+                runQuestSection(null, dialogue, "Attempting to chop down the tree", speakers = mapOf("Tree spirit" to LcNpcs.tree_spirit))
                 npcRepo.add(Npc(npcTypes[LcNpcs.tree_spirit], SPIRIT_SPOT), SPIRIT_TICKS)
                 mes("A Tree Spirit appears!")
             }

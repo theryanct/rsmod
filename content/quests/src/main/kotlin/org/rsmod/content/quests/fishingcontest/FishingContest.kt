@@ -237,7 +237,7 @@ constructor(
     /** The contest spots: the pipe spot (garlic + paid) gives the giant carp, the rest sardines. */
     private suspend fun ProtectedAccess.fishContest(spot: NpcType) {
         if (state == 0 || state >= TROPHY || !bit(FcVarBits.paid)) {
-            runQuestSection(null, dialogue, "Fishing before entering the competition")
+            runQuestSection(null, dialogue, "Fishing before entering the competition", speakers = mapOf("Bonzo" to FcNpcs.bonzo))
             return
         }
         val pipeSpot = spot.id == FcNpcs.pipe_spot.id
