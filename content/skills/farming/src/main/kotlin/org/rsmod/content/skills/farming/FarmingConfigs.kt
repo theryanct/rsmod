@@ -31,7 +31,7 @@ internal object FarmingObjs : ObjReferences() {
 
     val byName: Map<String, ObjType> =
         (FarmingData.crops.flatMap { listOfNotNull(it.seed, it.produce, it.payment, it.logs.ifEmpty { null }) } +
-                FarmingData.compostables)
+                FarmingData.compostables + FarmingData.supercompostables)
             .distinct()
             .associateWith { find(it) }
 }

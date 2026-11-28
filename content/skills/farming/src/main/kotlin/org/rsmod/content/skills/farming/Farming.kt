@@ -100,7 +100,10 @@ constructor(
         for (bin in FarmingData.bins) {
             val base = FarmingLocs.byName.getValue(bin.loc)
             for (name in FarmingData.compostables) {
-                onOpLocU(base, FarmingObjs.byName.getValue(name)) { fillBin(bin, it.objType.id) }
+                onOpLocU(base, FarmingObjs.byName.getValue(name)) { fillBin(bin, it.objType.id, superItem = false) }
+            }
+            for (name in FarmingData.supercompostables) {
+                onOpLocU(base, FarmingObjs.byName.getValue(name)) { fillBin(bin, it.objType.id, superItem = true) }
             }
             onOpLocU(base, FarmingObjs.bucket) { takeCompost(it.loc, bin, 0) }
             for (child in locTypes[base].multiLoc) {
@@ -723,37 +726,49 @@ constructor(
         reop(loc, op)
     }
 
-    /* Compost bins: [state varp] bits 0-3 count, 4-5 phase (0 filling, 1 closed, 2 open);
+    /* Compost bins: [state varp] bits 0-3 count, 4-5 phase (0 filling, 1 closed, 2 open), 6 super;
      * [time varp] minute the bin was closed. */
 
     private fun Player.binState(bin: Bin): Int = vars[FarmingVarps.byName.getValue(bin.stateVarp)]
 
-    private fun Player.saveBin(bin: Bin, count: Int, phase: Int, closed: Int? = null) {
+    private fun Player.saveBin(bin: Bin, count: Int, phase: Int, closed: Int? = null, superBin: Boolean = isSuperBin(bin)) {
         val stateVarp = FarmingVarps.byName.getValue(bin.stateVarp)
-        VarPlayerIntMapSetter.set(this, stateVarp, count or (phase shl 4))
+        val flag = if (superBin && count > 0) BIN_SUPER_FLAG else 0
+        VarPlayerIntMapSetter.set(this, stateVarp, count or (phase shl 4) or flag)
         if (closed != null) {
             VarPlayerIntMapSetter.set(this, FarmingVarps.byName.getValue(bin.timeVarp), closed)
         }
         refresh(this)
     }
 
-    private fun Player.binRotted(bin: Bin): Boolean =
-        nowMinutes() - vars[FarmingVarps.byName.getValue(bin.timeVarp)] >= FarmingData.ROT_MINUTES
+    private fun Player.isSuperBin(bin: Bin): Boolean = (binState(bin) and BIN_SUPER_FLAG) != 0
+
+    private fun Player.binRotted(bin: Bin): Boolean {
+        val minutes = if (isSuperBin(bin)) FarmingData.SUPER_ROT_MINUTES else FarmingData.ROT_MINUTES
+        return nowMinutes() - vars[FarmingVarps.byName.getValue(bin.timeVarp)] >= minutes
+    }
 
     private fun Player.binValue(bin: Bin): Int {
         val state = binState(bin)
         val count = state and 15
-        return when (state shr 4) {
-            0 -> count
-            1 -> if (binRotted(bin)) BIN_READY + count - 1 else BIN_ROTTING
-            else -> if (count > 0) BIN_OPEN + count - 1 else 0
+        // Cache multiloc (farming_compost_bin_*): supercompost fills 33+, opens 48+, rots 95, ready 112+.
+        val sup = (state and BIN_SUPER_FLAG) != 0
+        return when ((state shr 4) and 3) {
+            0 -> if (count == 0) 0 else if (sup) BIN_SUPER_FILL + count - 1 else count
+            1 ->
+                when {
+                    !binRotted(bin) -> if (sup) BIN_SUPER_ROTTING else BIN_ROTTING
+                    sup -> BIN_SUPER_READY + count - 1
+                    else -> BIN_READY + count - 1
+                }
+            else -> if (count == 0) 0 else if (sup) BIN_SUPER_OPEN + count - 1 else BIN_OPEN + count - 1
         }
     }
 
-    private fun ProtectedAccess.fillBin(bin: Bin, objId: Int) {
+    private fun ProtectedAccess.fillBin(bin: Bin, objId: Int, superItem: Boolean) {
         val state = player.binState(bin)
         val count = state and 15
-        if (state shr 4 != 0 || count >= BIN_SIZE) {
+        if (((state shr 4) and 3) != 0 || count >= BIN_SIZE) {
             mes("The compost bin is too full to put anything else in it.")
             return
         }
@@ -762,13 +777,15 @@ constructor(
         if (added <= 0) return
         invDel(inv, type, added)
         anim(FarmingSeqs.bin)
-        player.saveBin(bin, count + added, 0)
+        // Any regular compostable turns the whole bin into regular compost (Wiki).
+        val superBin = superItem && (count == 0 || player.isSuperBin(bin))
+        player.saveBin(bin, count + added, 0, superBin = superBin)
         mes("You fill the compost bin with ${type.name.lowercase()}.")
     }
 
     private fun ProtectedAccess.closeBin(bin: Bin) {
         val state = player.binState(bin)
-        if (state shr 4 != 0 || state and 15 < BIN_SIZE) return
+        if (((state shr 4) and 3) != 0 || (state and 15) < BIN_SIZE) return
         anim(FarmingSeqs.bin)
         player.saveBin(bin, BIN_SIZE, 1, closed = nowMinutes())
         mes("You close the compost bin, and the contents start to rot.")
@@ -776,7 +793,7 @@ constructor(
 
     private fun ProtectedAccess.openBin(bin: Bin) {
         val state = player.binState(bin)
-        if (state shr 4 != 1) return
+        if (((state shr 4) and 3) != 1) return
         if (!player.binRotted(bin)) {
             mes("The compost bin is still rotting; give it a while longer.")
             return
@@ -789,7 +806,7 @@ constructor(
     private fun ProtectedAccess.takeCompost(loc: BoundLocInfo, bin: Bin, op: Int) {
         val state = player.binState(bin)
         val count = state and 15
-        if (state shr 4 != 2 || count == 0) {
+        if (((state shr 4) and 3) != 2 || count == 0) {
             mes("There is no compost ready to take.")
             return
         }
@@ -803,8 +820,10 @@ constructor(
         }
         anim(FarmingSeqs.bin)
         invDel(inv, FarmingObjs.bucket)
-        invAdd(inv, FarmingObjs.compost)
-        statAdvance(stats.farming, COMPOST_TAKE_XP * xpMods.get(player, stats.farming))
+        val sup = player.isSuperBin(bin)
+        invAdd(inv, if (sup) FarmingObjs.supercompost else FarmingObjs.compost)
+        val takeXp = if (sup) SUPERCOMPOST_TAKE_XP else COMPOST_TAKE_XP
+        statAdvance(stats.farming, takeXp * xpMods.get(player, stats.farming))
         player.saveBin(bin, count - 1, if (count - 1 == 0) 0 else 2)
         actionDelay = mapClock + 2
         if (count - 1 > 0 && invTotal(inv, FarmingObjs.bucket) > 0) reop(loc, op)
@@ -1029,6 +1048,12 @@ constructor(
         const val BIN_ROTTING = 31
         const val BIN_READY = 80
         const val COMPOST_TAKE_XP = 4.5
+        const val SUPERCOMPOST_TAKE_XP = 8.5
+        const val BIN_SUPER_FLAG = 64
+        const val BIN_SUPER_FILL = 33
+        const val BIN_SUPER_OPEN = 48
+        const val BIN_SUPER_ROTTING = 95
+        const val BIN_SUPER_READY = 112
         const val REFRESH_TICKS = 8
         const val RAKE_TICKS = 4
         const val HARVEST_TICKS = 3
