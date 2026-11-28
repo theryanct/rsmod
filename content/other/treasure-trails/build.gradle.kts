@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+    implementation(projects.api.music)
     implementation(projects.api.pluginCommons)
     implementation(projects.api.type.typeSymbols)
 }

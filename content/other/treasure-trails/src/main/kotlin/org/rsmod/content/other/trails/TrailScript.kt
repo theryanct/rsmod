@@ -4,7 +4,9 @@ import com.github.michaelbull.logging.InlineLogger
 import jakarta.inject.Inject
 import java.util.WeakHashMap
 import org.rsmod.api.config.refs.invs
+import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.death.ClueDrops
+import org.rsmod.api.music.MusicRepository
 import org.rsmod.api.player.dig.DigSpots
 import org.rsmod.api.player.events.CollectionLogObtained
 import org.rsmod.api.player.events.EmoteSelected
@@ -76,6 +78,7 @@ constructor(
     private val eventBus: EventBus,
     private val locTypes: LocTypeList,
     private val npcList: NpcList,
+    private val musicRepo: MusicRepository,
     private val locRepo: LocRepository,
 ) : PluginScript() {
     private val steps by lazy { ClueSteps.load(dbRows, names.dbTables) }
@@ -108,7 +111,7 @@ constructor(
     private val pools by lazy {
         val spawned = npcList.mapTo(HashSet()) { it.id }
         val beginnerKinds = setOf(ClueKind.Anagram, ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map)
-        val easyKinds = setOf(ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map)
+        val easyKinds = setOf(ClueKind.Cryptic, ClueKind.Emote, ClueKind.Map, ClueKind.Music)
         val all =
             mapOf(
                 ClueTier.Beginner to steps.ofTier(ClueTier.Beginner, beginnerKinds),
@@ -286,6 +289,14 @@ constructor(
                 )
             ClueKind.HotCold ->
                 showText("Use the strange device to find where the treasure is buried.")
+            ClueKind.Music -> {
+                val who = (step.target as? ClueTarget.Npc)?.description ?: "the listener"
+                showText(
+                    "Play the music track <col=ffffff>${trackName(step)}</col> and speak to " +
+                        "the person ${who.replaceFirstChar { it.lowercase() }}<br><br>" +
+                        "(Unlocked: ${step.text})"
+                )
+            }
             else -> showText(step.text)
         }
     }
@@ -358,6 +369,17 @@ constructor(
                     chatNpc(neutral, wants.replace("I need to give Charlie", "Could you bring me"))
                 }
             }
+            step.kind == ClueKind.Music -> {
+                val track = step.music?.let { dbRows[it] }?.let(musicRepo::forRow)
+                if (track == null || player.vars[varbits.music_curr_id] != track.id) {
+                    startDialogue(npc) {
+                        chatNpc(neutral, "Could you play me ${trackName(step)}? I do love it.")
+                    }
+                    return
+                }
+                startDialogue(npc) { chatNpc(happy, "What a lovely tune! Here, take this.") }
+                advance(clue, step)
+            }
             step.kind == ClueKind.SkillChallenge -> {
                 val item = charlieItems[step.row] ?: return advance(clue, step)
                 if (invTotal(inv, item) <= 0) {
@@ -386,6 +408,9 @@ constructor(
             advance(clue, step)
         }
     }
+
+    private fun trackName(step: ClueStep): String =
+        step.music?.let { dbRows[it] }?.let(musicRepo::forRow)?.displayName ?: "the song"
 
     private fun <T> List<T>.pick(): T? = if (isEmpty()) null else this[random.of(size)]
 
@@ -526,6 +551,8 @@ constructor(
         }
         val completed = player.vars[completedVarp] + 1
         player.setVar(completedVarp, completed)
+        // The collection log's "<Tier> clues completed" lines read this (kill_counts.tsv).
+        player.collectionLog.kills["clue:${tier.key}"] = completed
 
         val rolled =
             table.roll(random, completed).mapNotNull { reward ->

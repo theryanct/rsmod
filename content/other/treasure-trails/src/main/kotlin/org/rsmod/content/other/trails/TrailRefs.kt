@@ -6,6 +6,7 @@ import org.rsmod.api.type.refs.interf.InterfaceReferences
 import org.rsmod.api.type.refs.inv.InvReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.seq.SeqReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 
 internal object TrailObjs : ObjReferences() {
@@ -25,6 +26,25 @@ internal object TrailObjs : ObjReferences() {
     val iron_dagger = find("iron_dagger")
     val leather_body = find("leather_armour")
     val leather_chaps = find("leather_chaps")
+
+    // STASH unit building.
+    val plank = find("woodplank")
+    val hammer = find("hammer")
+    val saw = find("poh_saw")
+    /** Any one metal, ten of it (dragon nails don't work). */
+    val nails =
+        listOf(
+            find("nails_bronze"),
+            find("nails_iron"),
+            find("nails_black"),
+            find("nails_mithril"),
+            find("nails_adamant"),
+            find("nails_rune"),
+        )
+}
+
+internal object TrailSeqs : SeqReferences() {
+    val build = find("human_poh_build")
 }
 
 internal object TrailNpcs : NpcReferences() {
@@ -53,7 +73,7 @@ internal object TrailInvs : InvReferences() {
     val reward = find("trail_rewardinv")
 }
 
-/** Custom (ui range 65310-65314), saved per character. */
+/** Custom (ui range 65310-65316), saved per character. */
 internal object TrailVarps : VarpReferences() {
     /** The beginner clue's current step: its cluehelper dbrow id (0 = not chosen yet). */
     val beginner_step = find("trail_beginner_step")
@@ -62,6 +82,9 @@ internal object TrailVarps : VarpReferences() {
     val easy_remaining = find("trail_easy_remaining")
     val beginner_completed = find("trail_beginner_completed")
     val easy_completed = find("trail_easy_completed")
+    /** STASH units holding their emote outfit: bit = the unit's index among its tier's units. */
+    val stash_beginner = find("trail_stash_beginner")
+    val stash_easy = find("trail_stash_easy")
 }
 
 internal object TrailVarpBuilder : VarpBuilder() {
@@ -71,5 +94,7 @@ internal object TrailVarpBuilder : VarpBuilder() {
         build("trail_easy_remaining")
         build("trail_beginner_completed")
         build("trail_easy_completed")
+        build("trail_stash_beginner")
+        build("trail_stash_easy")
     }
 }

@@ -72,6 +72,8 @@ internal class ClueStep(
     /** Easy+ emote steps: the STASH unit loc and its coord. */
     val stashLoc: Int? = null,
     val stashCoord: CoordGrid? = null,
+    /** Music steps: the `music` dbrow of the track to play (text = where it's unlocked). */
+    val music: Int? = null,
 )
 
 /**
@@ -141,7 +143,14 @@ internal class ClueSteps(val byRow: Map<Int, ClueStep>) {
                         ClueKind.Map,
                         ClueKind.HotCold -> ClueStep(id, kind, tier, "", target(row.int(2)))
                         ClueKind.Music ->
-                            ClueStep(id, kind, tier, row.text(3), target(row.int(4)))
+                            ClueStep(
+                                id,
+                                kind,
+                                tier,
+                                row.text(3),
+                                target(row.int(4)),
+                                music = row.int(2),
+                            )
                         ClueKind.Emote ->
                             ClueStep(
                                 row = id,
