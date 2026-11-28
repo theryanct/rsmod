@@ -12,6 +12,7 @@ import org.rsmod.api.config.refs.spotanims
 import org.rsmod.api.config.refs.varbits
 import org.rsmod.api.config.refs.varps
 import org.rsmod.api.player.back
+import org.rsmod.api.player.events.EmoteSelected
 import org.rsmod.api.player.events.PlayEmote
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
@@ -78,6 +79,7 @@ private constructor(
     private fun Player.selectEmote(emoteSlot: Int, op: IfButtonOp) {
         val emote = emoteSlots.getValue(emoteSlot)
         ifClose(eventBus)
+        eventBus.publish(EmoteSelected(this, emoteSlot))
         protectedAccess.launch(this) { selectEmote(emote, op) }
     }
 
