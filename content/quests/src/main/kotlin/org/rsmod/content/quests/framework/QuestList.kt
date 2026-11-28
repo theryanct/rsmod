@@ -10,6 +10,7 @@ import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLAC
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
 import org.rsmod.content.quests.cooksassistant.CooksAssistant.Companion.COOKS_ASSISTANT
 import org.rsmod.content.quests.corsaircurse.CorsairCurse.Companion.CORSAIR_CURSE
+import org.rsmod.content.quests.daddyshome.DaddysHome.Companion.DADDYS_HOME
 import org.rsmod.content.quests.deathplateau.DeathPlateau.Companion.DEATH_PLATEAU
 import org.rsmod.content.quests.demonslayer.DemonSlayer.Companion.DEMON_SLAYER
 import org.rsmod.content.quests.doricsquest.DoricsQuest.Companion.DORICS_QUEST
@@ -88,6 +89,7 @@ public object BuiltQuests {
             CLOCK_TOWER,
             COOKS_ASSISTANT,
             CORSAIR_CURSE,
+            DADDYS_HOME,
             DEATH_PLATEAU,
             DEMON_SLAYER,
             DORICS_QUEST,

@@ -1,0 +1,191 @@
+# Generated from the OSRS Wiki page "Transcript:Daddy's Home" by tools/quests/transcript_to_dialogue.py
+0	section	Talking to Marlo
+1	line	Marlo	Hello - it's lovely to see a Mahogany Homes contractor on their rounds! Now, can I help you with something? Or might you be able to do me a little favour?
+1	option	What does this Mahogany Homes company do?
+2	line	Player	What does this Mahogany Homes company do?
+2	line	Marlo	Oh, we redecorate people's houses, fixing things and building new furniture. Mending cabinets, building new chairs and tables - things like that.
+2	line	Marlo	When a client hires us to redecorate their house, we send a builder round to do the job, and we ensure the builder's paid for their work.
+2	line	Marlo	We can't hire you for that kind of work now, but perhaps you could do me a little favour instead, if you're willing. I can pay!
+2	action	other
+1	option	What's my current construction contract?
+1	option	What kind of favour do you want me to do?
+2	line	Player	What kind of favour do you want me to do?
+2	line	Marlo	Well, you see, it's about my dad. His house is really decrepit. I need someone to rip out the broken furniture and build him some better stuff. I'll pay you if you do it.
+2	option	Aren't you in a construction company yourself though?
+3	line	Player	Aren't you in a construction company yourself though?
+3	line	Marlo	See, my dad just - um - found the house. No-one was using it, so he just settled in. It's all perfectly harmless, and he's a sick old man anyway, so...
+3	line	Marlo	Basically, he's not really meant to be there. And we'd prefer that the landlord not find out, so we're keeping this job off the record. I'll pay you myself.
+3	action	other
+2	option	Why has he got such a bad house?
+3	line	Player	Why has he got such a bad house?
+3	line	Marlo	Some kind of economic downturn wiped out his pension plans. It happens more often than you'd think. But I'd rather not talk about it. Can you help him, though?
+3	action	other
+2	option	Tell me more about the job.
+3	line	Player	Tell me more about the job.
+3	line	Marlo	Nothing too hard. You'll have to rip out the broken furniture, then build replacements. Dad will talk you through it - he's a retired carpenter himself. He loves talking about construction.
+3	option	Aren't you in a construction company yourself though?
+4	action	above
+3	option	Why has he got such a bad house?
+4	action	above
+3	option	Tell me where he lives, and I'll do the job.
+4	line	Player	Tell me where he lives, and I'll do the job.
+4	line	Marlo	Fabulous! Dad lives in the south-east of Varrock, west of Aubury's Rune Shop. His name's Yarlo. Old Man Yarlo, they call him.
+4	action	end
+3	option	I'd rather not.
+4	action	below
+2	option	I'd rather not.
+3	line	Player	I'd rather not.
+3	line	Marlo	Okay, suit yourself.
+3	action	end
+1	option	Maybe another time.
+0	section	Talking to Marlo again
+1	line	Marlo	How are you getting on with helping my dad?
+1	option	Where did you say he lived?
+2	line	Player	Where did you say he lived?
+2	line	Marlo	Dad lives in the south-east of Varrock, west of Aubury's Rune Shop. His name's Yarlo. Old Man Yarlo, they call him. He's sure to be at home, so keep looking around.
+2	action	end
+1	option	What's my current construction contract?
+0	section	Talking to Old Man Yarlo
+1	line	Old Man Yarlo	What brings you here, young man?
+1	line	Player	Marlo sent me to fix your furniture.
+1	line	Old Man Yarlo	My boy Marlo sent you? Oh yes, you've come to help with my furniture. It's in a terrible state. You'll want to start by removing all the tatty old furniture.
+1	line	Old Man Yarlo	There are two stools, two tables, a chair and a rotten carpet to replace. I need a better bed too. Let me know when you've removed all the old furniture.
+1	action	end
+0	section	Talking to Old Man Yarlo again if none of the old furniture was removed
+1	line	Old Man Yarlo	Ah, young man, how's the redecoration coming on?
+1	line	Player	What am I supposed to be doing again?
+1	line	Old Man Yarlo	You'll want to start by removing all the tatty old furniture. There are two stools, two tables, a chair and a rotten carpet to remove, as well as the campbed. Let me know when you've done that.
+1	action	end
+0	section	Talking to Old Man Yarlo again if some of the old furniture was removed
+1	line	Old Man Yarlo	Ah, young man, how's the redecoration coming on?
+1	line	Player	I've been removing the old furniture.
+1	line	Old Man Yarlo	You still need to remove: - A broken stool in the kitchen - A broken stool in the bedroom - A broken chair in the bedroom
+1	line	Old Man Yarlo	- A broken table in the kitchen - A broken table in the bedroom - The old campbed - The rotten carpet
+1	action	end
+0	section	Talking to Old Man Yarlo again if all the old furniture was removed
+1	line	Old Man Yarlo	Ah, young man, how's the redecoration coming on?
+1	line	Player	I've finished removing all the old furniture.
+1	line	Old Man Yarlo	Jolly good, young man. Now, we'll need to have a talk about what you'll build for me to replace it.
+1	line	Old Man Yarlo	You see, I used to be a carpenter myself, before the arthritis got me. Such wonderful things I could build. Let me tell you about the things Construction can do for you...
+1	cond	If the player already has a player-owned house:
+2	line	Player	Is this necessary? I've got a house of my own, in [city], and I've been learning about Construction for a while.
+1	option	Listen to Yarlo.
+2	box	As a builder, in your own house, you can create your own rooms full of furniture. A house may start out very basic...
+2	box	... but in Building Mode, you'll see what you can add to it...
+2	box	... with fancier options available as your Construction level rises.
+2	box	You can add lots more rooms, and build their furniture too, unlocking really handy features.
+2	box	For example, in a study, you could build a lectern for creating spell tablets, powerful items that can cast spells without runes. You could sell your tablets to other people too.
+2	box	A Teleport Nexus can take you to a huge range of destinations, making your home a powerful travel hub.
+2	box	Show your dedication to the gods by building an altar, where you can sacrifice bones for bonus Prayer XP.
+2	box	With a regeneration pool, you can get healed quickly, before you teleport back to the action.
+2	box	The Estate Agents can redecorate your house in different styles, if you want something a bit more impressive.
+2	box	And, of course, to make your house feel truly like a home, you can fill it with adorable critters...
+2	box	... and drop your guests into the monster pit beneath your throne room.
+2	box	All this could be yours, if you train Construction!
+2	line	Old Man Yarlo	Now, I was just getting round to telling you about the furniture I want you to build for me. For a start, I'd like two new stools, two new tables and a new chair.
+2	box	Some basic wooden planks and some nails should do, for those. I won't ask for anything more fancy - it'd only get stolen anyway, in this neighbourhood.
+2	box	I'll want a new carpet too. They can really change the atmosphere of a room, you know! You can buy cloth at the sawmill to make one.
+2	line	Old Man Yarlo	Now, for the bed, I've got something special in mind. This town's quite damp, and I don't want the moisture rising up the bed into my blankets. But I've found some wood that resists water.
+2	box	Those abandoned crates in the kitchen were here when I moved in, and I found they contain waxwood logs. Waxwood isn't much used in carpentry, but it resists water, so I want a bed made from that.
+2	box	You'll have to take three logs from the crate to the sawmill. The chap there will turn them into planks if you mention my name - I've known his family for years.
+2	line	Old Man Yarlo	I think that's everything - two stools, two tables, a chair, a bed and a carpet. Off you trot, young man. I'll be here if you have any questions.
+2	action	end
+1	option	Skip Yarlo's lecture. He'll offer it later if you like.
+2	line	Old Man Yarlo	You young people are always rushing around trying to optimise the fun out of life. There are other ways to enjoy the world, you know! But I'm sure you know best.
+2	line	Old Man Yarlo	Now, I was just getting round to telling you about the furniture I want you to build for me. For a start, I'd like two new stools, two new tables and a new chair.
+2	action	above
+0	section	Talking to Old Man Yarlo again
+1	line	Old Man Yarlo	Do you need some help with the building work, young man?
+1	option	How do I build furniture?
+2	line	Player	How do I build furniture?
+2	line	Old Man Yarlo	Ah. Look in the place where the new furniture will go...
+2	box	A talented builder will see a vision there of the furniture they could build. Interact with that, and you should find you can build furniture.
+2	line	Old Man Yarlo	You'll need a hammer and saw. I can supply those if you need them.
+2	action	other
+1	option	Where do I get planks, nails and cloth?
+2	line	Player	Where do I get planks, nails and cloth?
+2	line	Old Man Yarlo	From the sawmill! They sell nails and cloth at reasonable prices. You'd have to take your own logs there, though, to get planks, but there are plenty of trees to chop nearby.
+2	line	Old Man Yarlo	Watch out, though - nails can bend, if you're not careful. You should probably get some spares, just in case.
+2	box	Look on your World Map to find the sawmill.
+2	action	other
+1	option	I need some tools.
+2	cond	If the player already has a saw and hammer:
+3	line	Old Man Yarlo	You've got a hammer and a saw. I wouldn't be able to offer you anything else.
+3	action	other
+2	cond	If the player doesn't have a saw or hammer:
+3	line	Player	I need some tools.
+3	line	Old Man Yarlo	Would you like a [hammer/saw]? I can spare one.
+3	option	Yes please.
+4	line	Player	Yes please.
+4	box	Yarlo gives you a [hammer/saw.]
+4	action	other
+3	option	No thanks.
+4	line	Player	No thanks.
+4	action	other
+1	option	Tell me about the waxwood for the bed.
+2	line	Player	Tell me about the waxwood for the bed.
+2	line	Old Man Yarlo	This town's quite damp, and I don't want the moisture rising up the bed into my blankets. But I've found some wood that resists water.
+2	box	Those abandoned crates in the kitchen were here when I moved in, and I found they contain waxwood logs. Waxwood isn't much used in carpentry, but it resists water, so I want a bed made from that.
+2	box	You'll have to take three logs from the crate to the sawmill. The chap there will turn them into planks if you mention my name.
+2	box	Look on your World Map to find the sawmill.
+2	action	other
+1	option	I'll get on with it.
+2	line	Player	I'll get on with it.
+2	action	end
+0	section	Searching the crate of waxwood
+1	box	The crate contains that water-repellant waxwood Old Man Yarlo described. You take some.
+1	action	end
+0	section	Talking to the sawmill operator at the Lumberyard
+1	line	Sawmill operator	Do you want me to make some planks for you? I can make planks from wood, oak, teak and mahogany logs. Or would you like to buy some other housing supplies?
+1	option	I need some waxwood planks for Old Man Yarlo.
+2	line	Player	I need some waxwood planks for Old Man Yarlo.
+2	line	Sawmill operator	That old geezer? Oh, alright. I won't charge for this, since it's for him.
+2	action	end
+1	option	Yes, please make me some planks.
+1	option	Can I buy some housing supplies?
+1	option	Nothing, thanks
+0	section	Talking to any other sawmill operator
+1	line	Sawmill Operator	Hello there. Do you want me to make some planks for you? I can make planks from wood, oak, teak and mahogany logs. Or would you like to buy some other housing supplies?
+1	select	Select an option
+1	option	Yes, please make me some planks.
+1	option	Can I buy some housing supplies?
+1	option	I need some waxwood planks for Old Man Yarlo.
+2	line	Player	I need some waxwood planks for Old Man Yarlo.
+2	line	Sawmill Operator	I don't know any Old Man Yarlo, and I'd rather not work with that horrible material.
+2	line	Player	But he said he knew the chap at the sawmill, and you'd make waxwood planks for him.
+2	line	Sawmill Operator	Perhaps he was thinking of some other sawmill operator.
+2	action	end
+1	option	I'm good, thanks.
+0	section	Talking to Old Man Yarlo after building everything
+1	line	Old Man Yarlo	That's everything! Thank you so much, young man. Trot off back to my boy Marlo, now. He'll have something for you.
+1	line	Player	Okay, I'll head back to Marlo.
+1	action	end
+0	section	Talking to Old Man Yarlo before claiming reward from Marlo
+1	line	Old Man Yarlo	Hello again, young man. Has my boy Marlo rewarded you yet?
+1	line	Player	Not yet. I'll get round to visiting him soon.
+1	line	Old Man Yarlo	Yes, you should do that. You've earned it.
+1	action	end
+0	section	Talking to Marlo after building everything for his dad
+1	line	Player	I've finished building the new furniture for your dad.
+1	line	Marlo	That's wonderful news! Dad's going to be so much happier. I'm very grateful! Now, I promised to pay you for your work...
+1	option	Yeah, what have you got for me?
+2	line	Player	Yeah, what have you got for me?
+2	line	Marlo	Now, I can't spare very much money, but I've got some supplies in this crate that might help with your own Construction work.
+2	line	Marlo	I've included some handy spell tablets that'll take you to your house, to cut down on the walking a bit, as well as one for visiting my boss in Falador. Now, let me tell you some tricks of the trade too...
+2	box	Marlo rewards you with a crate of supplies, some money, and 400 Construction XP.
+2	action	end
+1	option	What's my current construction contract?
+1	option	Can I do some other kind of building work for you?
+2	line	Player	Can I do some other kind of building work for you?
+2	line	Marlo	I'm so sorry, but you're not qualified to do contracts for Mahogany Homes yet. Just keep helping my dad, for now, and perhaps I can sort that out for you.
+2	action	end
+0	section	Talking to Marlo again but not receiving the reward and not having a house
+1	line	Marlo	I haven't forgotten that I promised to pay you for your help. Is this a good time for that?
+1	option	Yeah, what have you got for me?
+2	line	Player	Yeah, what have you got for me?
+2	line	Marlo	Now, I can't spare very much money, but I've persuaded the Estate Agent to let me give you a house of your own. You'll be able to decorate it, like you did for my dad's house.
+2	line	Marlo	Normally a new house costs 1,000 coins, so that's a bit of a saving. Also, I've got a crate of supplies to help you decorate it.
+2	line	Marlo	I've included some handy spell tablets that'll take you to your house, to cut down on the walking a bit, as well as one for visiting my boss in Falador. Let me tell you some tricks of the trade too...
+2	action	end
+1	option	Can I do some other kind of building work for you?
+2	action	above
