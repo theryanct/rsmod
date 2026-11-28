@@ -57,6 +57,43 @@ obstacle	canifis	6	rooftops_canifis_polevault	40	10	walk	agility_shortcut_wall_j
 obstacle	canifis	7	rooftops_canifis_jump_4	40	11	walk	agility_shortcut_wall_jump	3	3510,3476,3	-
 obstacle	canifis	8	rooftops_canifis_leapdown	40	175	climb	agility_shortcut_wall_jumpdown	2	3510,3485,0	-
 
+course	seers	Seers' Village Rooftop Course	0	4	2713,3493,2
+obstacle	seers	1	rooftops_seers_wallclimb	60	45	climb	human_reachforladder	2	2729,3491,3	-
+obstacle	seers	2	rooftops_seers_jump	60	20	climb	agility_shortcut_wall_jump	3	2713,3494,2	-
+obstacle	seers	3	rooftops_seers_tightrope	60	20	walk	human_walk_logbalance	9	2710,3480,2	-
+obstacle	seers	4	rooftops_seers_jump_1	60	35	climb	agility_shortcut_wall_jump	3	2709,3472,3	-
+obstacle	seers	5	rooftops_seers_jump_2	60	15	climb	agility_shortcut_wall_jump	3	2702,3465,2	-
+obstacle	seers	6	rooftops_seers_leapdown	60	435	climb	agility_shortcut_wall_jumpdown	2	2704,3464,0	-
+
+course	pollnivneach	Pollnivneach Rooftop Course	0	4	3360,2990,2
+obstacle	pollnivneach	1	rooftops_pollnivneach_basket	70	10	climb	human_reachforladder	2	3351,2964,1	-
+obstacle	pollnivneach	2	rooftops_pollnivneach_marketstall	70	45	walk	agility_shortcut_wall_jump	3	3352,2973,1	-
+obstacle	pollnivneach	3	rooftops_pollnivneach_hangingbanner	70	65	walk	human_ropeswing_long	4	3360,2977,1	-
+obstacle	pollnivneach	4	rooftops_pollnivneach_gap	70	35	walk	agility_shortcut_wall_jump	3	3366,2976,1	-
+obstacle	pollnivneach	5	rooftops_pollnivneach_tree	70	75	walk	agility_shortcut_wall_jump	4	3369,2982,1	-
+obstacle	pollnivneach	6	rooftops_pollnivneach_wallclimb	70	5	climb	human_reachforladder	2	3365,2983,2	-
+obstacle	pollnivneach	7	rooftops_pollnivneach_monkeybars_start	70	55	walk	human_monkeybars_walk	6	3358,2991,2	-
+obstacle	pollnivneach	8	rooftops_pollnivneach_treetop	70	60	walk	agility_shortcut_wall_jump	4	3362,2998,2	-
+obstacle	pollnivneach	9	rooftops_pollnivneach_line	70	540	climb	human_ropeswing_long	4	3362,3002,0	-
+
+course	rellekka	Rellekka Rooftop Course	0	3	2626,3660,3
+obstacle	rellekka	1	rooftops_rellekka_wallclimb	80	20	climb	human_reachforladder	2	2625,3676,3	-
+obstacle	rellekka	2	rooftops_rellekka_gap_1	80	30	walk	agility_shortcut_wall_jump	3	2622,3664,3	-
+obstacle	rellekka	3	rooftops_rellekka_tightrope_1	80	40	walk	human_walk_logbalance	6	2627,3654,3	-
+obstacle	rellekka	4	rooftops_rellekka_gap_2	80	85	walk	agility_shortcut_wall_jump	5	2639,3653,3	-
+obstacle	rellekka	5	rooftops_rellekka_gap_3	80	25	walk	agility_shortcut_wall_jump	3	2643,3657,3	-
+obstacle	rellekka	6	rooftops_rellekka_tightrope_3	80	105	walk	human_walk_logbalance	9	2655,3670,3	-
+obstacle	rellekka	7	rooftops_rellekka_dropoff	80	475	climb	agility_shortcut_wall_jumpdown	2	2652,3676,0	-
+
+course	ardougne	Ardougne Rooftop Course	0	3	2665,3317,3
+obstacle	ardougne	1	rooftops_ardy_wallclimb	90	43	climb	human_reachforladder	2	2671,3299,3	-
+obstacle	ardougne	2	rooftops_ardy_jump	90	65	walk	agility_shortcut_wall_jump	5	2665,3318,3	-
+obstacle	ardougne	3	rooftops_ardy_plank	90	50	walk	human_walk_logbalance	6	2656,3318,3	-
+obstacle	ardougne	4	rooftops_ardy_jump_2	90	21	walk	agility_shortcut_wall_jump	4	2653,3310,3	-
+obstacle	ardougne	5	rooftops_ardy_jump_3	90	28	walk	agility_shortcut_wall_jump	4	2653,3300,3	-
+obstacle	ardougne	6	rooftops_ardy_wallcrossing	90	57	walk	human_walk_logbalance	4	2656,3297,3	-
+obstacle	ardougne	7	rooftops_ardy_jump_4	90	625	climb	agility_shortcut_wall_jumpdown	3	2668,3297,0	-
+
 shortcut	fai_falador_castle_crumble_mid	5	0.5	human_jump_hurdle	2	2934,3355,0	2936,3355,0
 # Low-level shortcuts (wiki "Shortcuts" levels/xp; sides from the cache loc positions/orientation).
 shortcut	lumbridge_sc_fencejump	13	0	human_jump_hurdle	2	3240,3334,0	3240,3335,0
