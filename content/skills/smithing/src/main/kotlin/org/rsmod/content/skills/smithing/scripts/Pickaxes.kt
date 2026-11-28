@@ -44,6 +44,9 @@ constructor(
             if (!type.name.contains("anvil", ignoreCase = true)) {
                 continue
             }
+            if (type.name.equals(BarbarianSmithing.ANVIL_NAME, ignoreCase = true)) {
+                continue
+            }
             if (type.op.none { it.equals("Smith", ignoreCase = true) }) {
                 continue
             }

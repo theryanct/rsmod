@@ -2,6 +2,7 @@ package org.rsmod.content.skills.fishing.configs
 
 import org.rsmod.api.type.refs.obj.ObjReferences
 import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 
 internal typealias fishing_objs = FishingObjs
 
@@ -29,6 +30,7 @@ internal object FishingObjs : ObjReferences() {
     val leaping_trout = find("brut_spawning_trout")
     val leaping_salmon = find("brut_spawning_salmon")
     val leaping_sturgeon = find("brut_sturgeon")
+    val knife = find("knife")
 
     // Karambwan fishing (a vessel loaded with karambwanji; raw karambwanji is the bait).
     val karambwan_vessel_loaded = find("tbwt_karambwan_vessel_loaded_with_karambwanji")
@@ -74,4 +76,17 @@ internal object FishingSeqs : SeqReferences() {
     val human_fishing_casting = find("human_fishing_casting")
     val human_harpoon = find("human_harpoon")
     val human_lobster = find("human_lobster")
+    val hand_fishing = find("brut_player_hand_fishing_start")
+    val knife_use = find("brut_human_knifeuse")
+}
+
+/**
+ * Barbarian Training progress (cache varbits in `brut_base_1`, which holds only these brut bits).
+ * Lesson states: 0 untaught, 1 taught by Otto, 2 task done, 3 reported to Otto.
+ */
+internal object BarbarianVarBits : VarBitReferences() {
+    /** Barehanded (harpoon) fishing lesson. */
+    val fishing_s = find("brut_fishing_s")
+    /** Barbarian rod fishing lesson. */
+    val fishing_r = find("brut_fishing_r")
 }
