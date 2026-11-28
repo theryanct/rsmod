@@ -23,10 +23,12 @@ import org.rsmod.content.quests.ghostsahoy.GhostsAhoy.Companion.GHOSTS_AHOY
 import org.rsmod.content.quests.goblindiplomacy.GoblinDiplomacy.Companion.GOBLIN_DIPLOMACY
 import org.rsmod.content.quests.grandtree.GrandTree.Companion.GRAND_TREE
 import org.rsmod.content.quests.hazeelcult.HazeelCult.Companion.HAZEEL_CULT
+import org.rsmod.content.quests.holygrail.HolyGrail.Companion.HOLY_GRAIL
 import org.rsmod.content.quests.impcatcher.ImpCatcher.Companion.IMP_CATCHER
 import org.rsmod.content.quests.junglepotion.JunglePotion.Companion.JUNGLE_POTION
 import org.rsmod.content.quests.knightssword.KnightsSword.Companion.KNIGHTS_SWORD
 import org.rsmod.content.quests.lostcity.LostCity.Companion.LOST_CITY
+import org.rsmod.content.quests.merlinscrystal.MerlinsCrystal.Companion.MERLINS_CRYSTAL
 import org.rsmod.content.quests.misthalinmystery.MisthalinMystery.Companion.MISTHALIN_MYSTERY
 import org.rsmod.content.quests.monksfriend.MonksFriend.Companion.MONKS_FRIEND
 import org.rsmod.content.quests.murdermystery.MurderMystery.Companion.MURDER_MYSTERY
@@ -74,10 +76,12 @@ public object BuiltQuests {
             GOBLIN_DIPLOMACY,
             GRAND_TREE,
             HAZEEL_CULT,
+            HOLY_GRAIL,
             IMP_CATCHER,
             JUNGLE_POTION,
             KNIGHTS_SWORD,
             LOST_CITY,
+            MERLINS_CRYSTAL,
             MISTHALIN_MYSTERY,
             MONKS_FRIEND,
             MURDER_MYSTERY,
