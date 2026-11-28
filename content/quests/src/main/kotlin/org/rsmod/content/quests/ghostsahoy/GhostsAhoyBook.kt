@@ -55,7 +55,7 @@ constructor(
     private val aiInteractions: AiPlayerInteractions,
     private val collision: CollisionFlagMap,
 ) : PluginScript() {
-    private val lobsters = HashMap<Long, Npc>()
+    private val lobsters = HashMap<Int, Npc>()
 
     override fun ScriptContext.startup() {
         onOpHeld1(GaObjs.toy_boat) { repairBoat() }

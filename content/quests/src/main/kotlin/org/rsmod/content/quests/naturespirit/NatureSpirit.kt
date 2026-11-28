@@ -96,8 +96,8 @@ constructor(
     }
 
     /** Each player's summoned Filliman apparition (outside the grotto). */
-    private val apparitions = HashMap<Long, Npc>()
-    private val ghasts = HashMap<Long, Npc>()
+    private val apparitions = HashMap<Int, Npc>()
+    private val ghasts = HashMap<Int, Npc>()
 
     override fun ScriptContext.startup() {
         with(QuestTalk) {
