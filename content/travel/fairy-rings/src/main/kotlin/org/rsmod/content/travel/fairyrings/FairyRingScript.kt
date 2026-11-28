@@ -5,6 +5,7 @@ import org.rsmod.api.player.features.Feature
 import org.rsmod.api.player.features.isFeatureOn
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
+import org.rsmod.api.script.isLocOpBound
 import org.rsmod.api.script.onIfModalButton
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onOpLoc2
@@ -64,15 +65,17 @@ constructor(private val dbRows: DbRowTypeList, private val names: NameMapping) :
     }
 
     override fun ScriptContext.startup() {
+        // Skip ops another module already binds (e.g. a construction furniture binder).
         for (ring in listOf(FairyRingLocs.minor_hub, FairyRingLocs.poh_ring)) {
-            onOpLoc1(ring) { travelTo(ZANARIS_STATE) }
-            onOpLoc2(ring) { configure() }
-            onOpLoc3(ring) { lastDestination() }
-            onOpLoc4(ring) { configure() }
+            if (!isLocOpBound(ring, 1)) onOpLoc1(ring) { travelTo(ZANARIS_STATE) }
+            if (!isLocOpBound(ring, 2)) onOpLoc2(ring) { configure() }
+            if (!isLocOpBound(ring, 3)) onOpLoc3(ring) { lastDestination() }
+            if (!isLocOpBound(ring, 4)) onOpLoc4(ring) { configure() }
         }
-        onOpLoc2(FairyRingLocs.home_hub) { configure() }
-        onOpLoc3(FairyRingLocs.home_hub) { lastDestination() }
-        onOpLoc4(FairyRingLocs.home_hub) { configure() }
+        val hub = FairyRingLocs.home_hub
+        if (!isLocOpBound(hub, 2)) onOpLoc2(hub) { configure() }
+        if (!isLocOpBound(hub, 3)) onOpLoc3(hub) { lastDestination() }
+        if (!isLocOpBound(hub, 4)) onOpLoc4(hub) { configure() }
 
         onIfModalButton(FairyRingComponents.dial1_clockwise) { turn(FairyRingVarbits.dial1, 1) }
         onIfModalButton(FairyRingComponents.dial1_anticlockwise) { turn(FairyRingVarbits.dial1, 3) }
