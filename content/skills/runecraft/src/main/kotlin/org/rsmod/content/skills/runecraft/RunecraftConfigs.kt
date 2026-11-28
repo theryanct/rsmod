@@ -62,4 +62,7 @@ internal object RunecraftVarBits : VarBitReferences() {
 
 internal object RunecraftVarps : VarpReferences() {
     val runemysteries = find("runemysteries")
+
+    /** Lost City (cache end state 6): the cosmic altar is in Zanaris. */
+    val zanaris = find("zanaris")
 }

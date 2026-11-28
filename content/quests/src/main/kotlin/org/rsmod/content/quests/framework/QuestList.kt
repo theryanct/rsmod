@@ -4,6 +4,7 @@ import org.rsmod.api.type.editors.dbrow.DbRowEditor
 import org.rsmod.api.type.refs.dbcol.DbColumnReferences
 import org.rsmod.api.type.refs.dbrow.DbRowReferences
 import org.rsmod.api.type.refs.dbtable.DbTableReferences
+import org.rsmod.content.quests.animalmagnetism.AnimalMagnetism.Companion.ANIMAL_MAGNETISM
 import org.rsmod.content.quests.belowicemountain.BelowIceMountain.Companion.BELOW_ICE_MOUNTAIN
 import org.rsmod.content.quests.blackknights.BlackKnightsFortress.Companion.BLACK_KNIGHTS_FORTRESS
 import org.rsmod.content.quests.clocktower.ClockTower.Companion.CLOCK_TOWER
@@ -49,6 +50,7 @@ import org.rsmod.content.quests.xmarksthespot.XMarksTheSpot.Companion.X_MARKS_TH
 public object BuiltQuests {
     public val all: List<QuestDef> =
         listOf(
+            ANIMAL_MAGNETISM,
             BELOW_ICE_MOUNTAIN,
             BLACK_KNIGHTS_FORTRESS,
             CLOCK_TOWER,
