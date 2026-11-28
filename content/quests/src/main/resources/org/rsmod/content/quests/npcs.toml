@@ -982,3 +982,17 @@ coords = '0_54_52_14_47'
 [[spawn]]
 npc = 'ghast_invis'
 coords = '0_53_53_53_28'
+
+# Temple of the Eye: Wizard Persten (Al Kharid, Wiki 3284,3231; the multinpc shows until stage 60), her
+# Wizards' Tower basement variant (stages 85-90), Apprentice Cordelia in the tower (Wiki 3112,3163 p1).
+[[spawn]]
+npc = 'tote_persten_alkharid_parent'
+coords = '0_51_50_20_31'
+
+[[spawn]]
+npc = 'tote_persten_tower_parent'
+coords = '0_48_149_32_36'
+
+[[spawn]]
+npc = 'tote_cordelia_wizard_tower_parent'
+coords = '1_48_49_40_27'
