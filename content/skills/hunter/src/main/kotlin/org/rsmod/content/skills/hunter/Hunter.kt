@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import kotlin.math.abs
 import kotlin.math.min
 import org.rsmod.api.config.refs.stats
+import org.rsmod.api.player.interact.NpcInteractions
 import org.rsmod.api.player.features.invAddGathered
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.hunterLvl
@@ -57,6 +58,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  *   (Wiki levels, xp and catch charts; ferret has no Wiki chart - see hunter.tsv). Traps of both
  *   kinds share the per-level trap limit.
  * - **Butterflies**: "Catch" with a butterfly net wielded and an empty butterfly jar.
+ * - Snare birds that are multinpcs (The Birds and the Wasps' honey buzzards) only count when the
+ *   multinpc shows a catchable bird to the trap's owner; their catches feed the quest's cache
+ *   varbits (see [BawProgress]). Wasp swarms are `Wasps.kt`.
  */
 class Hunter
 @Inject
@@ -68,6 +72,7 @@ constructor(
     private val npcRepo: NpcRepository,
     private val objRepo: ObjRepository,
     private val xpMods: XpModifiers,
+    private val npcInteractions: NpcInteractions,
 ) : PluginScript() {
     private enum class State {
         Laid,
@@ -124,7 +129,7 @@ constructor(
         for (loc in trapLocs) {
             registerTrapOps(loc)
         }
-        for (creature in HunterData.creatures.filter { !it.trapped }) {
+        for (creature in HunterData.creatures.filter { it.kind == HunterData.Kind.Net }) {
             for (name in creature.npcs) {
                 val npc = HunterNpcs.byName.getValue(name)
                 val op = npcTypes[npc].op.indexOfFirst { it.equals("Catch", ignoreCase = true) } + 1
@@ -214,7 +219,17 @@ constructor(
         npcRepo
             .findAll(ZoneKey.from(coords), 1)
             .filter { abs(it.coords.x - coords.x) <= BIRD_RANGE && abs(it.coords.z - coords.z) <= BIRD_RANGE }
-            .mapNotNull { trappedByNpcId.getValue(kind)[it.id] }
+            .mapNotNull { npc ->
+                // A multinpc (e.g. honey buzzards before the quest stage) counts only as the bird
+                // it shows this player; hidden ones can't be caught.
+                val shown =
+                    if (npc.visType.isMultiNpc) {
+                        npcInteractions.multiNpc(npc.visType, player.vars) ?: return@mapNotNull null
+                    } else {
+                        npc.visType
+                    }
+                trappedByNpcId.getValue(kind)[shown.id]
+            }
             .filter { it.level <= player.hunterLvl }
             .maxByOrNull { it.level }
 
@@ -238,6 +253,9 @@ constructor(
             mes("You've caught a ${creature.title.lowercase()}.")
         }
         invAddOrDrop(objRepo, (trap?.kind ?: trapKindOf(loc)).item())
+        if (trap?.state == State.Caught && creature != null) {
+            with(BawProgress) { birdCaught(creature) }
+        }
     }
 
     /** Untracked trap locs (e.g. after a restart) give back the item their loc belongs to. */

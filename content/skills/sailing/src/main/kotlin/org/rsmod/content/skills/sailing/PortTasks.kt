@@ -140,7 +140,12 @@ constructor(
 
     /* Ledger table ---------------------------------------------------------------------------- */
 
-    private fun ProtectedAccess.ledger(port: String, deposit: Boolean) {
+    private suspend fun ProtectedAccess.ledger(port: String, deposit: Boolean) {
+        // Quest cargo (e.g. Pandemonium's crate of ship parts) goes first.
+        if (SailingLedgerHooks.handle(this, port)) {
+            updateCarrying()
+            return
+        }
         if (deposit && deposit(port)) {
             updateCarrying()
             return
@@ -203,7 +208,9 @@ constructor(
 
     /** Ledger tables show "Deposit-cargo" while the player holds any courier crate. */
     private fun ProtectedAccess.updateCarrying() {
-        val carrying = activeSlots().any { (_, task) -> invTotal(inv, SailingObjs.crates.getValue(task.crate)) > 0 }
+        val carrying =
+            activeSlots().any { (_, task) -> invTotal(inv, SailingObjs.crates.getValue(task.crate)) > 0 } ||
+                SailingLedgerHooks.carrying(this)
         vars[SailingVarBits.carrying_cargo] = if (carrying) 1 else 0
     }
 

@@ -8,6 +8,7 @@ Output:
   snare <title> <npc names comma> <level> <xp> <low> <high> <trapping loc> <full loc>
   net   <title> <npc names comma> <level> <xp> <low> <high>
   box   <title> <npc names comma> <level> <xp> <low> <high> <trapping loc> <full loc>
+  swarm <title> <npc names comma> <level> <xp> 0 0   (calm swarm, then its furious variant)
   loot  <obj> <min> <max>          (all hunter loot is "Always")
 low/high are the wiki {{Skilling success chart}} values. Ruby harvest, Sapphire glacialis and
 Snowy knight have no chart on the wiki; they reuse Black warlock's curve (flagged in the output).
@@ -42,6 +43,20 @@ BOX_CREATURES = [
     ("Chinchompa (Hunter)", "hunting_chinchompa", "hunting_boxtrap_full_chinchompa", "chinchompa_captured", (6, 268), ""),
     ("Carnivorous chinchompa", "hunting_chinchompa_big", "hunting_boxtrap_full_chinchompa_big", "chinchompa_big_captured", (-78, 228), ""),
     ("Black chinchompa (Hunter)", "hunting_chinchompa_black", "hunting_boxtrap_full_chinchompa_black", "chinchompa_black", (-78, 228), ""),
+]
+# The Birds and the Wasps (cache multinpcs; Hunter.kt resolves the bird each player sees). No Wiki
+# charts and the honey buzzard's feathers are "Varies", so these rows are explicit:
+# (snare title, npc, trap variant, chart, loot [(obj, min, max)], note).
+BAW_BIRDS = [
+    ("Honey Buzzard", "baw_honey_buzzard", "honey_buzzard", (100, 420),
+     [("bones", 1, 1), ("baw_brown_feather", 8, 14)], "no wiki chart; crimson swift curve (level 1)"),
+    ("Black Honey Buzzard", "baw_black_honey_buzzard", "black_honey_buzzard", (77, 374),
+     [("bones", 1, 1), ("baw_black_feather", 10, 24)], "no wiki chart; copper longtail-tropical wagtail curve at level 17"),
+]
+# Wasp swarms (Wasps.kt): (title, calm npc, furious npc, loot obj).
+SWARMS = [
+    ("Swarm of wasps", "baw_wasp_swarm", "baw_wasp_swarm_furious", "baw_wasp_sting"),
+    ("Swarm of killer wasps", "baw_killer_wasp_swarm", "baw_killer_wasp_swarm_furious", "baw_killer_wasp_sting"),
 ]
 BUTTERFLIES = ["Ruby harvest", "Sapphire glacialis", "Snowy knight", "Black warlock"]
 FALLBACK_CHART = "Black warlock"
@@ -104,4 +119,14 @@ with open(out_path, "w", encoding="utf-8", newline="\n") as w:
         cols = ["box", title.split(" (")[0], npc, level, f"{xp:g}", chart[0], chart[1], "-", full]
         w.write("\n" + "\t".join(map(str, cols)) + tail + "\n")
         w.write("\t".join(["loot", loot_obj, "1", "1"]) + "\n")
+    for title, npc, variant, chart, loot, note in BAW_BIRDS:
+        level, xp, _, _ = info(title)
+        cols = ["snare", title, npc, level, f"{xp:g}", chart[0], chart[1],
+                f"hunting_ojibway_trap_trapping_{variant}", f"hunting_ojibway_trap_full_{variant}"]
+        w.write("\n" + "\t".join(map(str, cols)) + "\t# " + note + "\n")
+        for o, lo, hi in loot: w.write(f"loot\t{o}\t{lo}\t{hi}\n")
+    for title, calm, furious, sting in SWARMS:
+        level, xp, _, _ = info(title)
+        w.write(f"\nswarm\t{title}\t{calm},{furious}\t{level}\t{xp:g}\t0\t0\t# netted every tick, no chart\n")
+        w.write(f"loot\t{sting}\t1\t1\n")
 print("ok")
