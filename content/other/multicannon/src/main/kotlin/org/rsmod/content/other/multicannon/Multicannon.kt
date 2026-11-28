@@ -93,7 +93,7 @@ constructor(
     private val collision: CollisionFlagMap,
     private val accuracy: AccuracyFormulae,
     private val random: GameRandom,
-    private val mapClock: MapClock,
+    private val clock: MapClock,
     private val hitModifier: StandardNpcHitModifier,
     private val projTypes: ProjAnimTypeList,
     private val rayCast: RayCastValidator,
@@ -167,7 +167,7 @@ constructor(
         val controller = Controller(CannonControllers.cannon, origin.translate(1, 1))
         conRepo.add(controller, CONTROLLER_DURATION)
         controller.aiTimer(1)
-        val cannon = Cannon(uuid, origin, controller, mapClock.cycle).also { it.player = player }
+        val cannon = Cannon(uuid, origin, controller, clock.cycle).also { it.player = player }
         byOwner[uuid] = cannon
         byController[controller] = cannon
         setState(player, PLACED)
@@ -207,7 +207,7 @@ constructor(
         val cannon = owned(loc) ?: return
         if (cannon.broken) {
             cannon.broken = false
-            cannon.setupCycle = mapClock.cycle
+            cannon.setupCycle = clock.cycle
             mes("You repair your cannon, restoring it to working order.")
             return
         }
@@ -298,7 +298,7 @@ constructor(
     private fun tick(controller: Controller) {
         val cannon = byController[controller] ?: return
         controller.aiTimer(1)
-        val age = mapClock.cycle - cannon.setupCycle
+        val age = clock.cycle - cannon.setupCycle
         val owner = cannon.player?.takeIf { it.isOwner(cannon) }
         if (!cannon.broken && age >= BREAK_CYCLES) {
             cannon.broken = true
