@@ -199,6 +199,31 @@ internal object ConstructionData {
 
     val materials: List<String> = listOf("woodplank", "plank_oak", "cloth", "softclay")
 
+    /** Build-menu icon obj per furniture (the cache's poh_* icon objs). */
+    val icons: Map<String, String> =
+        mapOf(
+            "Crude wooden chair" to "poh_armchair_1",
+            "Wooden chair" to "poh_armchair_2",
+            "Rocking chair" to "poh_armchair_3",
+            "Oak chair" to "poh_armchair_4",
+            "Wooden bookcase" to "poh_bookcase_1",
+            "Oak bookcase" to "poh_bookcase_2",
+            "Brown rug" to "poh_rug_1",
+            "Rug" to "poh_rug_2",
+            "Clay fireplace" to "poh_fireplace_1",
+            "Torn curtains" to "poh_curtains_1",
+            "Curtains" to "poh_curtains_2",
+        )
+
+    /** Display names of material objs for the build menu. */
+    val materialNames: Map<String, String> =
+        mapOf(
+            "woodplank" to "Plank",
+            "plank_oak" to "Oak plank",
+            "cloth" to "Bolt of cloth",
+            "softclay" to "Soft clay",
+        )
+
     /** Bits per group in the furniture varp (tier 0 = nothing built). */
     const val TIER_BITS = 3
 }

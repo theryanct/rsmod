@@ -84,6 +84,11 @@ import org.rsmod.api.player.stat.statRestore
 import org.rsmod.api.player.stat.statRestoreAll
 import org.rsmod.api.player.stat.statSub
 import org.rsmod.api.player.stopInvTransmit
+import org.rsmod.api.player.ui.FURNITURE_ENTRY_SCRIPT
+import org.rsmod.api.player.ui.FURNITURE_MENU_MAX_ENTRIES
+import org.rsmod.api.player.ui.FurnitureMenuComponents
+import org.rsmod.api.player.ui.FurnitureMenuEntry
+import org.rsmod.api.player.ui.FurnitureMenuRefs
 import org.rsmod.api.player.ui.SKILLMULTI_MAX_QUANTITY
 import org.rsmod.api.player.ui.SKILLMULTI_REMEMBER_ALL
 import org.rsmod.api.player.ui.SKILLMULTI_SUB_MAKE_ALL
@@ -2121,6 +2126,37 @@ public class ProtectedAccess(
             }
         skillMultiLastQuantity[player] = if (quantity >= max) SKILLMULTI_REMEMBER_ALL else quantity
         return SkillMultiChoice(index, products[index], quantity)
+    }
+
+    /**
+     * Opens the POH furniture build menu with [entries] (max [FURNITURE_MENU_MAX_ENTRIES]) and
+     * waits for "Build" on one of them. Returns the chosen index, or `null` when the player built
+     * nothing (the modal is closed either way).
+     */
+    public suspend fun furnitureMenu(entries: List<FurnitureMenuEntry>): Int? {
+        val shown = entries.take(FURNITURE_MENU_MAX_ENTRIES)
+        require(shown.isNotEmpty()) { "furnitureMenu needs at least one entry" }
+        ifOpenMainModal(FurnitureMenuRefs.menu)
+        for ((slot, entry) in shown.withIndex()) {
+            runClientScript(
+                FURNITURE_ENTRY_SCRIPT,
+                slot,
+                entry.obj.id,
+                entry.level,
+                if (entry.available) 0 else 1,
+                entry.materials.joinToString("<br>"),
+            )
+        }
+        ifSetEvents(FurnitureMenuComponents.contents, shown.indices, IfEvent.PauseButton)
+        val modal = player.ui.getModalOrNull(components.mainmodal)
+        val input = coroutine.pause(ResumePauseButtonInput::class)
+        val index =
+            input.subcomponent.takeIf {
+                FurnitureMenuComponents.contents.isType(input.component) && it in shown.indices
+            }
+        resumeWithModalProtectedAccess(Unit, modal, components.mainmodal)
+        ifClose()
+        return index
     }
 
     private suspend fun mesboxPage(
