@@ -1,0 +1,720 @@
+# Generated from the OSRS Wiki page "Transcript:Dragon Slayer I" by tools/quests/transcript_to_dialogue.py
+0	section	A quest for the rune platebody
+0	section	Talking to the Guildmaster
+1	line	Guildmaster	Greetings!
+1	select	Select an Option
+1	option	What is this place?
+2	line	Player	What is this place?
+2	line	Guildmaster	This is the Champions' Guild. Only adventurers who have proved themselves worthy by gaining influence from quests are allowed in here.
+2	action	end
+1	option	Can I have a quest?
+2	line	Player	Can I have a quest?
+2	line	Guildmaster	Aha!
+2	line	Guildmaster	Yes! A mighty and perilous quest fit only for the most powerful champions! And, at the end of it, you will earn the right to wear the legendary rune platebody!
+2	cond	If the player does not have 45 combat or 33 Magic:
+3	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 45. One or more of your skill levels are also lower than recommended.
+2	select	Start the Dragon Slayer I quest?
+2	option	Yes.
+3	line	Player	So, what is this quest?
+3	line	Guildmaster	You'll have to speak to Oziach, the maker of rune armour. He sets the quests that champions must complete in order to wear it.
+3	line	Guildmaster	Oziach lives in a hut, by the cliffs to the west of Edgeville. He can be a little...odd...sometimes, though.
+3	action	end
+2	option	No.
+3	line	Player	Actually, I'll give it a miss.
+3	action	end
+0	section	Talking to the Guildmaster again before talking to Oziach
+1	line	Guildmaster	Greetings!
+1	select	Select an Option
+1	option	What is this place?
+1	option	Can I have a quest?
+2	line	Player	Can I have a quest?
+2	line	Guildmaster	You're already on a quest for me, if I recall correctly. Have you talked to Oziach yet?
+2	line	Player	No, not yet.
+2	line	Guildmaster	Well, he's the only one who can grant you the right to wear rune platemail. He lives in a hut, by the cliffs west of Edgeville.
+2	line	Player	Okay, I'll go and talk to him.
+2	action	end
+0	section	Talking to Oziach
+1	line	Oziach	Aye, 'tis a fair day my friend.
+1	select	Select an Option
+1	option	Can you sell me a rune platebody?
+2	line	Player	Can you sell me a rune platebody?
+2	line	Oziach	So, how does thee know I 'ave some?
+2	select	Select an Option
+2	option	The Guildmaster of the Champions' Guild told me.
+3	line	Player	The Guildmaster of the Champions' Guild told me.
+3	line	Oziach	Yes, I suppose he would, wouldn't he? He's always sending you fancy-pants 'heroes' up to bother me. Telling me I'll give them a quest or sommat like that.
+3	line	Oziach	Well, I'm not going to let just anyone wear my rune platemail. It's only for heroes. So, leave me alone.
+3	select	Select an Option
+3	option	I thought you were going to give me a quest.
+4	line	Player	I thought you were going to give me a quest.
+4	line	Oziach	*Sigh*
+4	line	Oziach	All right, I'll give ye a quest. I'll let ye wear my rune platemail if ye...
+4	line	Oziach	Slay the dragon of Crandor!
+4	select	Select an Option
+4	option	A dragon, that sounds like fun.
+5	line	Player	A dragon, that sounds like fun!
+5	line	Oziach	Hah, yes, you are a typical reckless adventurer, aren't you? Now go kill the dragon and get out of my face.
+5	line	Player	But how can I defeat the dragon?
+5	line	Oziach	Go talk to the Guildmaster in the Champions' Guild. He'll help ye out if yer so keen on doing a quest. I'm not going to be handholding any adventurers.
+5	action	end
+4	option	I may be a champion, but I don't think I'm up to dragon-killing yet.
+5	line	Player	I may be a champion, but I don't think I'm up to dragon-killing yet.
+5	line	Oziach	Yes, I can understand that. Yer a coward.
+5	action	end
+3	option	That's a pity, I'm not a hero.
+4	line	Player	That's a pity, I'm not a hero.
+4	line	Oziach	Aye, I ken tell!
+4	action	end
+2	option	I am a master detective.
+3	line	Player	I am a master detective.
+3	cond	If Murder Mystery has been completed:
+4	line	Player	I solved the Sinclair murder mystery by myself!
+4	line	Oziach	Never 'eard of yer.
+4	action	continues
+3	line	Oziach	Well, however you found out about it, I'm not going to let just anyone wear my rune platemail. It's only for heroes. So leave me alone.
+3	select	Select an Option
+3	option	I thought you were going to give me a quest.
+4	action	above
+3	option	That's a pity, I'm not a hero.
+4	action	above
+1	option	I'm not your friend.
+1	option	Yes, it's a very nice day.
+0	section	Talking to Oziach before slaying the dragon
+1	line	Oziach	Have ye slayed that dragon yet?
+1	line	Player	Um... no.
+1	line	Oziach	Be off with ye then.
+1	action	end
+0	section	Talking to the Guildmaster after talking to Oziach
+1	line	Guildmaster	Greetings!
+1	select	Select an Option
+1	option	What is this place?
+1	option	I talked to Oziach...
+2	line	Player	I talked to Oziach and he gave me a quest.
+2	line	Guildmaster	Oh? What did he tell you to do?
+2	line	Player	Defeat the dragon of Crandor.
+2	line	Guildmaster	The dragon of Crandor?
+2	line	Player	Um, yes...
+2	line	Guildmaster	Goodness, he hasn't given you an easy job, has he?
+2	line	Player	What's so special about this dragon?
+2	line	Guildmaster	Thirty years ago, Crandor was a thriving community with a great tradition of mages and adventurers. Many Crandorians even earned the right to be part of the Champions' Guild!
+2	line	Guildmaster	One of their adventurers went too far, however. He descended into the volcano in the centre of Crandor and woke the dragon Elvarg.
+2	line	Guildmaster	He must have fought valiantly against the dragon because they say that, to this day, she has a scar down her side,
+2	line	Guildmaster	but the dragon still won the fight. She emerged and laid waste to the whole of Crandor with her fire breath!
+2	line	Guildmaster	Some refugees managed to escape in fishing boats. They landed on the coast, north of Rimmington, and set up camp but the dragon followed them and burned the camp to the ground.
+2	line	Guildmaster	Out of all the people of Crandor there were only three survivors: a trio of wizards who used magic to escape. Their names were Thalzar, Lozar and Melzar.
+2	line	Guildmaster	If you're serious about taking on Elvarg, first you'll need to get to Crandor, and to my knowledge, the only way to do that is by sea.
+2	line	Player	So I just sail over there? Seems easy enough.
+2	line	Guildmaster	If only that were true. The island is surrounded by dangerous underwater reefs. You'll need a map to guide you through them and a ship capable of doing so.
+2	line	Guildmaster	And then of course there's the dragon herself. Once you reach Crandor, you'll need some kind of protection against her breath.
+2	select	Select an Option
+2	option	Where can I find a map to Crandor?
+3	line	Player	Where can I find a map to Crandor?
+3	line	Guildmaster	After what happened, people were afraid of enraging the dragon. Most maps to the island were destroyed, but I have heard that one survived. It was held by Melzar, Thalzar and Lozar.
+3	line	Guildmaster	However, the three apparently split the map into three pieces, which each of them taking one piece.
+3	select	Select an Option
+3	option	Where is Melzar's map piece?
+4	line	Player	Where is Melzar's map piece?
+4	line	Guildmaster	Melzar built a castle on the site of the Crandorian refugee camp, north of Rimmington. He's locked himself in there and no one's seen him for years.
+4	line	Guildmaster	The inside of his castle is like a maze, and is populated by undead monsters. Maybe, if you could get all the way through the maze, you could find his piece of the map.
+4	line	Guildmaster	Adventurers sometimes go in there to prove themselves, so I can give you this key to Melzar's Maze.
+4	box	The Guildmaster hands you a key.
+4	action	other
+3	option	Where is Thalzar's map piece?
+4	line	Player	Where is Thalzar's map piece?
+4	line	Guildmaster	Thalzar was the most paranoid of the three wizards. He hid his map piece and took the secret of its location to his grave.
+4	line	Guildmaster	I don't think you'd be able to find out where it is by ordinary means. You'll need to talk to the Oracle on Ice Mountain.
+4	action	other
+3	option	Where is Lozar's map piece?
+4	line	Player	Where is Lozar's map piece?
+4	line	Guildmaster	A few weeks ago, I'd have told you to speak to Lozar herself, in her house across the river from Lumbridge.
+4	line	Guildmaster	Unfortunately, goblin raiders killed her and stole everything. One of the goblins from the Goblin Village probably has the map piece now.
+4	action	other
+2	option	What kind of ship do I need?
+3	line	Player	What kind of ship do I need?
+3	line	Guildmaster	Quite a specific one I'm afraid. Even with a map, very few ships will be able to navigate the reefs around the island. You're going to need one of Crandorian design.
+3	line	Guildmaster	If there's still one in existence, it's probably in Port Sarim. However, a ship will also need a captain, and I'm not sure where you'd find one willing to sail to Crandor!
+3	cond	If the player has completed Pandemonium:
+4	line	Player	Could I not just captain it myself? I have some experience in that area.
+4	line	Guildmaster	I suppose you could, but given you have a dragon to be dealing with, I'd suggest getting someone else to worry about the captaining for you.
+3	action	other
+2	option	How can I protect myself from the dragon's breath?
+3	line	Player	How can I protect myself from the dragon's breath?
+3	line	Guildmaster	That part shouldn't be too difficult, actually. I believe the Duke of Lumbridge has a special shield in his armoury that is enchanted against dragon's breath.
+3	action	other
+2	option	What's so special about this dragon?
+3	action	above
+2	option	Okay, I'll get going!
+3	line	Player	Okay, I'll get going!
+3	action	end
+0	section	Talking to the Guildmaster again
+1	line	Guildmaster	Greetings!
+1	select	Select an option
+1	option	What is this place?
+2	action	above
+1	option	About my quest to kill the dragon...
+2	line	Player	About my quest to kill the dragon...
+2	line	Guildmaster	If you're serious about taking on Elvarg, first you'll need to get to Crandor, and to my knowledge, the only way to do that is by sea.
+2	line	Player	So I just sail over there? Seems easy enough.
+2	line	Guildmaster	If only that were true. The island is surrounded by dangerous underwater reefs. You'll need a map to guide you through them and a ship capable of doing so.
+2	line	Guildmaster	And then of course there's the dragon herself. Once you reach Crandor, you'll need some kind of protection against her breath.
+2	select	Select an option
+2	option	Where can I find a map to Crandor?
+3	action	above
+2	option	What kind of ship do I need?
+3	action	above
+2	option	How can I protect myself from the dragon's breath?
+3	action	above
+2	option	What's so special about this dragon?
+3	action	above
+2	option	Okay, I'll get going!
+3	action	above
+0	section	Melzar's map piece
+0	section	Searching wardrobes
+1	cond	On the ground floor:
+2	box	The wardrobe is full of heaps of dead rats!
+2	action	end
+1	cond	On the first floor:
+2	box	The wardrobe is full of scorched and broken objects: clothes, tools, and children's toys. Each is labelled with a scrawled number. You don't see anything of value or use.
+2	action	end
+1	cond	On the second floor:
+2	box	The wardrobe is full of heaps of bones and incomplete skeletons, each one labelled with a number.
+2	action	end
+0	section	Searching bookshelves
+1	box	These books are full of scrawled notes. You open one at a random page...
+1	action	Melzar's notes]] is displayed.
+0	section	Using any key on the correct door
+0	section	Fighting Melzar the Mad
+1	option	Dialogue 1
+2	line	Melzar the Mad	By the power of custard!
+1	option	Dialogue 2
+2	line	Melzar the Mad	Feel the wrath of my feet!
+1	option	Dialogue 3
+2	line	Melzar the Mad	Let me drink my tea in peace.
+1	option	Dialogue 4
+2	line	Melzar the Mad	Leave me alone, I need to feed my pet rock.
+0	section	Searching the chest
+1	box	You find a map piece in the chest.
+1	action	end
+0	section	Studying Melzar's map part
+1	box	This is a piece of map that you found in Melzar's Maze. You will need to join it to the other two map pieces before you can see the route to Crandor.
+1	action	end
+0	section	Thalzar's map piece
+0	section	Talking to the Oracle
+1	select	Select an Option
+1	option	I seek a piece of the map to the island of Crandor.
+2	line	Player	I seek a piece of the map to the island of Crandor.
+2	line	Oracle	The map's behind a door below, but entering is rather tough. This is what you need to know: You must use the following stuff.
+2	line	Oracle	First, a drink used by a mage. Next, some worm string, changed to sheet. Then, a small crustacean cage. Last, a bowl that's not seen heat.
+2	action	end
+1	option	Can you impart your wise knowledge to me, O Oracle?
+0	section	Using respective items on the door
+0	section	Searching the chest
+1	box	As you open the chest, you notice an inscription on the lid:
+1	box	Here I rest the map to my beloved home. To whoever finds it, I beg of you, let it be. I was honour-bound not to destroy the map piece, but I have used all my magical skill to keep it from being recovered.
+1	box	This map leads to the lair of the beast that destroyed my home, devoured my family, and burned to a cinder all that I love. But revenge would not benefit me now, and to disturb this beast is to risk bringing its wrath down upon another land.
+1	box	I cannot stop you from taking this map piece now, but think on this: if you can slay the Dragon of Crandor, you are a greater hero than my land ever produced. There is no shame in backing out now.
+1	box	You find a map piece in the chest.
+1	action	end
+0	section	Studying Thalzar's map part
+1	box	This is a piece of map that you found in a secret chest in the Dwarven Mine. You will need to join it to the other two map pieces before you can see the route to Crandor.
+1	action	end
+0	section	Lozar's map piece
+0	section	Talking to the goblin generals
+1	select	Select an Option
+1	option	I've heard that one of your number has got hold of part of a map.
+2	line	Player	I've heard that one of your number has got hold of part of a map.
+2	line	General Bentnoze	Aha, that'd be Wormbrain.
+2	line	Player	Where would he be?
+2	line	General Bentnoze	Wormbrain steals too much. He got caught. Now he lives in Port Sarim town jail.
+2	action	end
+1	option	So how is life for the goblins?
+0	section	Talking to Wormbrain
+1	line	Wormbrain	Whut you want?
+1	select	Select an Option
+1	option	I believe you've got a piece of map that I need.
+2	line	Player	I believe you've got piece of a map that I need.
+2	line	Wormbrain	So? Why should I be giving it to you? What you do for Wormbrain?
+2	select	Select an Option
+2	option	I'm not going to do anything for you. Forget it.
+3	line	Player	I'm not going to do anything for you. Forget it.
+3	line	Wormbrain	Be dat way then.
+3	action	end
+2	option	I'll let you live. I could just kill you.
+3	line	Player	I'll let you live. I could just kill you.
+3	line	Wormbrain	Ha! Me in here and you out dere. You not get map piece.
+3	action	other
+2	option	I suppose I could pay you for the map piece...
+3	line	Player	I suppose I could pay you for the map piece. Say, 500 coins?
+3	line	Wormbrain	Me not stoopid, it worth at least 10,000 coins!
+3	select	Select an Option
+3	option	You must be joking! Forget it.
+4	line	Player	You must be joking! Forget it.
+4	line	Wormbrain	Fine, you not get map piece.
+4	action	end
+3	option	Alright then, 10,000 it is.
+4	cond	If the player does not have enough coins:
+5	line	Player	Alright then, 10,000 coins it is.
+5	line	Player	Oops, I don't have enough on me.
+5	line	Wormbrain	Comes back when you has enough.
+5	action	end
+4	cond	If the player has enough coins:
+5	line	Player	Alright then, 10,000 coins it is.
+5	box	You buy the map piece from Wormbrain.
+5	line	Wormbrain	Fank you very much! Now me can bribe da guards, hehehe.
+5	action	end
+2	option	Where did you get the map piece from?
+3	line	Player	Where did you get the map piece from?
+3	line	Wormbrain	We rob house of stupid wizard. She very old, not put up much fight at all. Hahaha!
+3	line	Player	Uh... Hahaha.
+3	line	Wormbrain	Her house full of pictures of a city on island and old pictures of people. Me not recognise island.
+3	line	Wormbrain	Me find map piece. Me not know what it is, but it in locked box so me figure it important.
+3	line	Wormbrain	But, by the time me get box open, other goblins gone. Then me not run fast enough and guards catch me.
+3	line	Wormbrain	But now you want map piece so must be special! What you do for me to get it?
+3	action	other
+1	option	What are you in for?
+2	line	Player	What are you in for?
+2	line	Wormbrain	Me not sure. Me pick some stuff up and take it away.
+2	line	Player	Well, did the stuff belong to you?
+2	line	Wormbrain	Umm...no.
+2	line	Player	Well, that would be why then.
+2	line	Wormbrain	Oh, right.
+2	action	end
+1	option	Sorry, thought this was a zoo.
+2	line	Player	Sorry, thought this was a zoo.
+2	action	end
+0	section	Defeating Wormbrain
+1	line	Wormbrain	Ow!
+1	action	end
+0	section	Trying to attack him while having his map piece
+0	section	Trying to attack him without his map piece after having just defeated him
+0	section	Studying Lozar's map part
+1	box	This is a piece of map that you got from Wormbrain, the goblin thief. You will need to join it to the other two map pieces before you can see the route to Crandor.
+1	action	end
+0	section	An old crandorian ship
+0	section	Using a map piece on another while only having 2
+0	section	Joining the maps together
+1	box	You put the three pieces together and assemble a map that shows the route through the reefs to Crandor.
+0	section	Attempting to board the ship before purchasing it
+1	line	Klarense	Hey, stay off my ship! That's private property!
+1	action	end
+0	section	Talking to Klarense
+1	line	Klarense	Hello there! Interested in buying this fine ship? I'm sure I can offer her to you for a much better price than any of those shipwrights ask for!
+1	line	Player	A much better price? What's the catch?
+1	line	Klarense	Well, she's not quite seaworthy right now...
+1	line	Player	Not seaworthy? Why would I want to buy her then?
+1	line	Klarense	Because this isn't just any ship! This is the Lady Lumbridge, one of the last Crandorian ships! Despite her size, she's one of the most agile shipShould be "ships" around!
+1	line	Player	Except she's not seaworthy...
+1	line	Klarense	No, but a bit of work will quickly sort that out!
+1	option	I'd like to buy her.
+2	line	Player	I'd like to buy her.
+2	line	Klarense	Of course! I'm sure the work needed to do on it wouldn't be too expensive.
+2	line	Klarense	How does 2,000 gold sound? I'll even throw in my cabin boy, Jenkins, for free! He'll swab the decks and splice the mainsails for you!
+2	select	Select an Option
+2	option	Yep, sounds good.
+3	cond	If the player does not have enough coins:
+4	line	Player	Yep, sounds good.
+4	line	Player	...except I don't have that kind of money on me...
+4	action	end
+3	cond	If the player has enough coins:
+4	line	Player	Yep, sounds good.
+4	line	Klarense	Okey-dokey! She's all yours!
+4	action	end
+2	option	I'm not paying that much for a broken boat!
+3	line	Player	I'm not paying that much for a broken boat!
+3	line	Klarense	That's fair enough, I suppose.
+3	action	end
+1	option	Why is she damaged?
+2	line	Player	Why is she damaged?
+2	line	Klarense	Oh, there was no particular accident, just years of wear and tear. It's been a long time since Crandor was destroyed and she's had several owners since then. Unfortunately, not all of them looked after her.
+2	action	other
+1	option	I think I'll pass.
+2	line	Player	I think I'll pass.
+2	action	end
+0	section	Talking to Klarense after purchasing the Lady Lumbridge
+1	line	Klarense	Hello, captain! Here to inspect your new ship? Just a little work and she'll be seaworthy again.
+1	select	Select an Option
+1	option	So, what needs fixing on the ship?
+2	cond	If the player has not fixed the ship:
+3	line	Player	So, what needs fixing on this ship?
+3	line	Klarense	Well, the big gaping hole in the hold is the problem. You'll need a few wooden planks hammered in with steel nails to fix it.
+3	action	other
+2	cond	If the player has fixed the ship:
+3	line	Klarense	I dunno. It looks fine to me.
+3	line	Player	But you said it needed fix-
+3	line	Klarense	Yes, but that was before you fixed it!
+3	action	other
+1	option	Would you sail this ship to Crandor for me?
+2	line	Player	So would you like to sail this ship to Crandor for me?
+2	line	Klarense	Crandor? You're joking, right?
+2	select	Select an Option
+2	option	Yes. Ha ha ha!
+3	line	Player	Yes. Ha ha ha!
+3	line	Klarense	Crandor's not something we sailors joke about. You can't sail from here to Catherby, or Entrana, or Ardougne without going past that accursed island.
+3	line	Klarense	You can't get close to it because of the reefs, but you can always see it.
+3	line	Klarense	Sometimes you can see a dark shape in the sky, circling the island. That's when you have to sail on as quick as you can and pray it's not hungry. Every year, more ships are lost to that dragon.
+3	action	other
+2	option	No. I want to go to Crandor.
+3	line	Player	No. I want to go to Crandor.
+3	line	Klarense	Then you must be crazy.
+3	line	Klarense	That island is surrounded by reefs that would rip this ship to shreds. Even if you found a map, you'd need an experienced captain to stand a chance of getting through
+3	line	Klarense	and, even if I could get to it, there's no way I'm going any closer to that dragon than I have to. They say it can destroy whole ships with one bite.
+3	action	other
+1	option	What are you going to do now you don't have a ship?
+2	line	Player	What are you going to do now you don't have a ship?
+2	line	Klarense	Oh, I'll be fine. I've got work as Port Sarim's first lifeguard!
+2	action	other
+1	option	Can I board the ship now?
+2	line	Player	Can I board the ship now?
+2	line	Klarense	Sure thing, she's all yours.
+2	action	end
+0	section	Talking to Cabin Boy Jenkins
+1	line	Cabin Boy Jenkins	Ahoy! What d'ye think of yer ship then?
+1	select	Select an Option
+1	option	I'm ready to go back to shore.
+2	line	Player	I'm ready to go back on shore.
+2	box	You disembark from the ship.
+2	action	end
+1	option	I'd like to inspect her some more.
+2	line	Player	I'd like to inspect her some more.
+2	line	Cabin Boy Jenkins	Aye.
+2	action	end
+1	option	Can you sail this ship to Crandor?
+2	line	Player	Can you sail this ship to Crandor?
+2	line	Cabin Boy Jenkins	Not me, sir! I'm just an 'umble cabin boy. You'll need a proper cap'n.
+2	line	Player	Where can I find a captain?
+2	line	Cabin Boy Jenkins	The cap'ns round 'ere seem to be a mite scared of Crandor. I ask 'em why and they just say it was afore my time,
+2	line	Cabin Boy Jenkins	but there is one cap'n I reckon might 'elp. I 'eard there's a retired 'un who lives in Draynor Village who's so desperate to sail again 'e'd take any job.
+2	line	Cabin Boy Jenkins	I can't remember 'is name, but 'e lives in Draynor Village an' makes rope.
+2	action	end
+0	section	Interacting with the sawmill operator after buying the Lady Lumbridge
+1	line	Sawmill operator	Hello there. Are you in need of planks or construction supplies?
+1	line	Player	As it so happens, I do need some wooden planks!
+1	line	Sawmill operator	Fortunately for you, you've come to the right place!
+1	line	Sawmill operator	Less fortunately for you, I'm on a legally mandated break right now.
+1	line	Player	Could you make an exception? I need the planks to go and fight a dragon.
+1	line	Sawmill operator	A dragon? How are planks going to help you with that?
+1	line	Player	I'm repairing a boat to sail to Crandor so that I can slay Elvarg.
+1	line	Sawmill operator	Crandor? Elvarg? Well, far be it from me to stop you trying.
+1	line	Player	So you'll make some planks for me?
+1	line	Sawmill operator	I will, but I can't make you too many. It'll be just my luck if King Roald decides to audit this place and I've been making planks off the clock.
+1	line	Player	What do you need from me to make some planks?
+1	cond	If the sawmill operator has already made 9 planks:
+2	line	Sawmill operator	Unfortunately I can't make any more planks for you without drawing attention to myself. You're going to have to source them elsewhere.
+2	action	end
+1	line	Sawmill operator	You'll have to provide the logs and 100 coins for each plank. Just basic logs will do for what you need.
+1	line	Sawmill operator	As a reminder, I can't make you very many without risking an audit, so I'll have to stop at nine planks.
+1	cond	If the player doesn't have any normal logs or coins:
+2	line	Sawmill operator	You'll need to bring me some more logs.
+2	action	end
+1	cond	If the player has logs but not enough coins:
+2	line	Sawmill operator	Those planks cost 100 coins. You don't have enough money for all of them.
+2	action	end
+0	section	Reparing the Lady Lumbridge
+1	cond	If the player does not have any planks:
+2	box	You'll need to use wooden planks on this hole to patch it up.
+1	cond	If the player has planks but does not have any steel nails:
+2	box	You need 30 steel nails to attach the plank with.
+1	cond	If the player has planks and nails but does not have a hammer:
+2	box	You need a hammer to force the nails in with.
+1	cond	If the player has everything:
+2	box	You nail a plank over the hole, but you still need more planks to close the hole completely.
+2	box	You nail a plank over the hole, but you still need one more plank to close the hole completely.
+2	box	You nail a final plank over the hole. You have successfully patched the hole in the ship.
+0	section	Finding a willing captain
+0	section	Ahab
+1	line	Ahab	Arrr, matey!
+1	select	Select an Option
+1	option	Arrr!
+1	option	Can you help me get to Crandor Island?
+2	line	Player	Can you help me get to Crandor Island?
+2	line	Ahab	Arrr, matey, ye canna be serious! That be the home of Elvarg the Dragon!
+2	line	Player	Yes, that's right. I 've got to go there and kill the dragon for this quest I'm doing.
+2	line	Ahab	I canna help ye. And right sorry I be to see a fine young [laddie/lassie/'un] like yerself go off to yer doom.
+2	line	Player	Thanks, but I'll be fine!
+2	line	Ahab	Arrr...
+2	action	end
+1	option	Are you going to sit there all day?
+1	option	Do you want to trade?
+0	section	Jack Seagull
+1	line	Jack Seagull	Arrr, matey!
+1	select	Select an Option
+1	option	Have you got any quests I could do?
+1	option	What are you doing here?
+1	option	Can you help me get to Crandor Island?
+2	line	Player	Can you help me get to Crandor Island?
+2	line	Jack Seagull	Crandor Island, ye say?
+2	line	Jack Seagull	Arrr, keep yeself away from that accursed place if ye values yer skin!
+2	line	Player	So that's a 'No', then?
+2	line	Jack Seagull	Aye, that it be.
+2	line	Player	Do you know anyone who would take me there?
+2	line	Jack Seagull	No, I don't know many idiots. Except for young Ben there.
+2	line	Longbow Ben	Arrr, get away with ye, ye scurvy scallywag!
+2	line	Player	Okay, thanks anyway.
+2	action	end
+0	section	Longbow Ben
+1	line	Longbow Ben	Arrr, matey!
+1	select	Select an Option
+1	option	Have you got any quests I could do?
+1	option	Why are you called Longbow Ben?
+1	option	Can you help me get to Crandor Island?
+2	line	Player	Can you help me get to Crandor Island?
+2	line	Longbow Ben	Arrr, ye may be wanting to go to Crandor Island now, but if ye gets there, ye'll be a-wantin' to get off it again quickly enough!
+2	line	Player	So that's a 'No', then?
+2	line	Longbow Ben	[Aye, laddie/Aye, lassie/Aye], that it is.
+2	line	Player	Do you know anyone who would take me there?
+2	line	Longbow Ben	There's only one sailor alive daft enough to go there. Old Ned, the ropemaker in Draynor Village. I can't think of any other fools just now. Except for old Jack Seagull there.
+2	line	Jack Seagull	Arrr, who are ye calling old?
+2	line	Player	Okay, thanks anyway.
+2	action	end
+0	section	Seaman Lorris/Thresnor/Captain Tobias
+1	line	Seaman Lorris	Hello there. Do you want to go on a trip to Karamja? We can take you to Musa Point for only 30 coins.
+1	select	Select an Option
+1	option	I'd rather go to Crandor.
+2	line	Player	I'd rather go to Crandor.
+2	line	Seaman Lorris/Thresnor/Captain Tobias	Crandor? No chance! You may have a death wish, but we don't!
+2	action	end
+1	option	Yes please.
+1	option	No, thank you.
+0	section	Trader Stan/Trader Crewmember
+1	line	Trader Stan/Trader Crewmember	Can I help you?
+1	select	Select an Option
+1	option	Yes, who are you?
+1	option	Yes, I would like to charter a ship.
+2	line	Player	Yes, I would like to charter a ship.
+2	line	Trader Stan/Trader Crewmember	[Certainly sir/Certainly madam/Certainly]. Where would you like to go?
+2	action	the map interface]].
+2	line	Trader Stan/Trader Crewmember	Crandor? Are you crazy? No charter ship would take you to that island. You'd need to use your own ship, but even then, you'd need a miracle to find a safe route there!
+2	action	end
+1	option	No thanks.
+0	section	Captain Barnaby
+1	line	Captain Barnaby	Hello there. Would you like to travel somewhere? I can take you to Rimmington or Ardougne for 30 coins.
+1	select	Select an option
+1	option	I'd like to go to Crandor.
+2	line	Player	I'd like to go to Crandor.
+2	line	Captain Barnaby	No! I need to stay alive, I have a wife and family to support.
+2	action	end
+1	option	I'd like to go to Rimmington.
+1	option	I'd like to go to Ardougne.
+1	option	I'm good thanks.
+0	section	Ned
+1	line	Ned	Why, hello there, [lad/lass/kid]. Me friends call me Ned. I was a man of the sea, but it's past me now. Could I be making or selling you some rope?
+1	select	Select an Option
+1	option	You're a sailor? Could you take me to Crandor?
+2	line	Player	You're a sailor? Could you take me to the island of Crandor?
+2	line	Ned	Well, I was a sailor. I've not been able to get work at sea these days, though. They say I'm too old.
+2	line	Ned	Sorry, where was it you said you wanted to go?
+2	line	Player	To the island of Crandor.
+2	line	Ned	Crandor?
+2	line	Ned	But... It would be a chance to sail a ship once more. I'd sail anywhere if it was a chance to sail again.
+2	line	Ned	Then again, no captain in his right mind would sail to that island...
+2	line	Ned	Ah, you only live once! I'll do it!
+2	line	Ned	So, where's your ship?
+2	cond	If the player hasn't bought the ship yet:
+3	line	Player	Well, I don't actually have a ship yet.
+3	line	Ned	Ah, well. Let me know when you do. The place to look would be Port Sarim.
+3	action	end
+2	line	Player	It's the Lady Lumbridge, in Port Sarim.
+2	line	Ned	That old pile of junk? Last I heard, she wasn't seaworthy.
+2	line	Player	I fixed her up!
+2	line	Ned	You did? Excellent!
+2	line	Ned	Just show me the map and we can get ready to go!
+3	cond	If the player has the completed map:
+4	line	Player	Here you go.
+4	box	You hand the map to Ned.
+4	line	Ned	Excellent! I'll meet you at the ship, then.
+4	action	end
+3	cond	If the player has all three map parts:
+4	line	Player	Here you go.
+4	box	You hand the map parts to Ned.
+4	line	Ned	Excellent! I'll meet you at the ship, then.
+4	action	end
+3	cond	If the player does not have the completed map:
+4	line	Player	Uh...yeah...about that. I don't actually have a map on me.
+4	line	Ned	You'd better go find it, then. I'm not going to go sailing off without a map to show me where to head!
+4	action	end
+1	option	Yes, I would like some rope.
+1	option	No thanks, Ned. I don't need any.
+0	section	Talking to Ned again if the player wasn't ready the first time
+1	line	Ned	Hello again, [lad/lass/kid]. Something I can help you with? Want to buy some rope perhaps?
+1	select	Select an option
+1	option	Will you take me to Crandor now, then?
+2	line	Player	Will you take me to Crandor now, then?
+2	line	Ned	I said I would and old Ned is a man of his word!
+2	line	Ned	So, where's your ship?
+2	cond	If the player hasn't bought the ship yet:
+3	line	Player	Well, I don't actually have a ship yet.
+3	line	Ned	Ah, well. Let me know when you do. The place to look would be Port Sarim.
+3	action	end
+2	line	Player	It's the Lady Lumbridge, in Port Sarim.
+2	line	Ned	That old pile of junk? Last I heard, she wasn't seaworthy.
+2	cond	If the player hasn't repaired the ship yet:
+3	line	Player	Yes, good point. I'd better go and fix her up.
+3	action	end
+2	line	Player	I fixed her up!
+2	line	Ned	You did? Excellent!
+2	line	Ned	Just show me the map and we can get ready to go!
+3	cond	If the player has the completed map or all 3 pieces:
+4	line	Player	Here you go.
+4	box	You hand the map to Ned.
+4	line	Ned	Excellent! I'll meet you at the ship, then.
+4	action	end
+3	cond	If the player does not have the completed map or all 3 pieces:
+4	line	Player	Uh...yeah...about that. I don't actually have a map on me.
+4	line	Ned	You'd better go find it, then. I'm not going to go sailing off without a map to show me where to head!
+4	action	end
+1	option	Yes, I would like some rope.
+1	option	No thanks, Ned. I don't need any.
+0	section	Talking to Cabin Boy Jenkins on the ship
+1	line	Cabin Boy Jenkins	Ahoy! What d'ye think of yer ship then?
+1	select	Select an option
+1	option	I'm ready to go back to shore.
+2	line	Player	I'm ready to go back on shore.
+2	box	You disembark from the ship.
+2	action	end
+1	option	I'd like to inspect her some more.
+2	line	Player	I'd like to inspect her some more.
+2	line	Cabin Boy Jenkins	Aye.
+2	action	end
+1	option	Can you sail this ship to Crandor?
+2	line	Player	Can you sail this ship to Crandor?
+2	line	Cabin Boy Jenkins	Not me, sir! I'm just an 'umble cabin boy. You'll need a proper cap'n.
+2	line	Player	Where can I find a captain?
+2	line	Cabin Boy Jenkins	The cap'ns round 'ere seem to be a mite scared of Crandor. I ask 'em why and they just say it was afore my time,
+2	line	Cabin Boy Jenkins	but there is one cap'n I reckon might 'elp. I 'eard there's a retired 'un who lives in Draynor Village who's so desperate to sail again 'e'd take any job.
+2	line	Cabin Boy Jenkins	I can't remember 'is name, but 'e lives in Draynor Village an' makes rope.
+2	action	end
+0	section	Protection from a dragon's breath
+0	section	Talking to Duke Horacio
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an Option
+1	option	I seek a shield that will protect me from dragonbreath.
+2	line	Player	I seek a shield that will protect me from dragonbreath.
+2	line	Duke Horacio	A knight going on a dragon quest, hmm? What dragon do you intend to slay?
+2	select	Select an Option
+2	option	Elvarg, the dragon of Crandor island!
+3	line	Player	Elvarg, the dragon of Crandor island!
+3	line	Duke Horacio	Elvarg? Are you sure?
+3	select	Well, are you sure?
+3	option	Yes
+4	line	Player	Yes!
+4	line	Duke Horacio	Well, you're a braver man than I!
+4	line	Player	Why is everyone so scared of this dragon?
+4	line	Duke Horacio	Back in my father's day, Crandor was an important city-state. Politically, it was as important as Falador or Varrock and its ships traded with every port.
+4	line	Duke Horacio	But, one day when I was little, all contact was lost. The trading ships and the diplomatic envoys just stopped coming.
+4	line	Duke Horacio	I remember my father being very scared. He posted lookouts on the roof to warn if the dragon was approaching. All the city rulers were worried that Elvarg would devastate the whole continent.
+4	select	Select an Option
+4	option	I'd better leave that dragon alone.
+5	line	Player	I'd better leave that dragon alone.
+5	line	Duke Horacio	That's a relief. I would hate to see such a promising adventurer cut down in [his/her/their] prime.
+5	action	end
+4	option	So, are you going to give me the shield or not?
+5	line	Player	So, are you going to give me the shield or not?
+5	line	Duke Horacio	If you really think you're up to it then perhaps you are the one who can kill this dragon.
+5	box	The Duke hands you a heavy orange shield.
+5	line	Duke Horacio	Take care out there. If you kill it...
+5	line	Duke Horacio	If you kill it, for Saradomin's sake make sure it's really dead!
+5	action	end
+3	option	No
+4	line	Player	No.
+4	line	Duke Horacio	Very wise. There are some monsters that are best left alone.
+4	action	end
+2	option	Oh, no dragon in particular
+3	line	Player	Oh, no dragon in particular. I just feel like killing a dragon.
+3	line	Duke Horacio	I don't have an infinite supply of these shields, you know. I'll only give one for a truly worthy cause.
+3	action	end
+1	option	Have you any quests for me?
+1	option	Where can I find money?
+0	section	The dragon of Crandor
+0	section	Talking to Ned after giving him the Crandor map
+1	line	Ned	Hello again, [lad/lass/kid]. Something I can help you with? Want to buy some rope perhaps?
+1	select	Select an Option
+1	option	Will you take me to Crandor now, then?
+2	line	Player	Will you take me to Crandor now, then?
+2	line	Ned	I said I would and old Ned is a man of his word! I'll meet you on board the Lady Lumbridge in Port Sarim.
+2	action	end
+1	option	Yes, I would like some rope.
+1	option	No thanks, Ned. I don't need any.
+0	section	Talking to Cabin Boy Jenkins while Ned is on board
+1	option	Dialogue 1
+2	line	Captain Ned	Arr, Jim lad!
+2	line	Cabin Boy Jenkins	It's Jenkins, cap'n!
+2	line	Captain Ned	Arr, Jenkins lad!
+2	action	end
+1	option	Dialogue 2
+2	line	Captain Ned	Shiver me timbers!
+2	line	Cabin Boy Jenkins	Aye aye, cap'n!
+2	action	end
+1	option	Dialogue 3
+2	line	Captain Ned	Splice the mainsail!
+2	line	Cabin Boy Jenkins	Aye aye, cap'n!
+2	action	end
+1	option	Dialogue 4
+2	line	Captain Ned	Swab the deck!
+2	line	Cabin Boy Jenkins	Aye aye, cap'n!
+2	action	end
+1	option	Dialogue 5
+2	line	Captain Ned	Weigh the anchor!
+2	line	Cabin Boy Jenkins	It's too heavy, cap'n!
+2	action	end
+0	section	Talking to Ned on the Lady Lumbridge
+1	line	Captain Ned	Ah, it's good to be on board a ship again! No matter how long I live on land, a ship will always seem better. Are you ready to depart?
+1	select	Select an Option
+1	option	Yes, let's go!
+2	line	Player	Yes, let's go!
+2	action	Cutscene begins.
+1	option	No, I'm not quite ready yet.
+2	line	Player	No, I'm not quite ready yet.
+2	line	Captain Ned	Well, you go do whatever you need to do. I'll wait here for you until you're ready.
+2	action	end
+0	section	Sailing to Crandor
+1	line	Captain Ned	Ah, it's good to feel the salt spray on my face once again!
+1	line	Captain Ned	And this is a mighty fine ship. She don't look much, but she handles like a dream.
+1	line	Player	How much longer until we reach Crandor?
+1	line	Captain Ned	Not long now! According to the chart, we'd be able to see Crandor if it wasn't for those clouds on the horizon.
+1	box	Clouds surround the ship.
+1	line	Cabin Boy Jenkins	Looks like there's a storm coming up, cap'n. Soon we won't be able to see anything!
+1	line	Captain Ned	Oh, well. The weather had been so good up until now.
+1	line	Player	Did you see that?
+1	line	Captain Ned	See what?
+1	line	Player	I thought I saw something up above us.
+1	line	Captain Ned	It's the dragon!
+1	line	Captain Ned	We're going to sink!
+1	line	Player	Look! Land ahead!
+1	line	Captain Ned	We're going to crash!
+1	box	You are knocked unconscious and later awake on an ash-strewn beach.
+0	section	Talking to Ned after reaching Crandor
+1	line	Captain Ned	Now I see why all the other captains said I'd be mad to go near Crandor. It looks like we're stranded.
+2	line	Player	Don't worry about that. I found a secret passage in the dragon's lair that leads off the island!
+2	line	Captain Ned	Oh, that's good. I'll be able to get back to Draynor somehow,
+2	line	Captain Ned	if I can sneak past all the skeletons and demons on this island!
+2	action	end
+1	action	end
+0	section	Talking to Klarense after reaching Crandor
+1	line	Klarense	Wow! You sure are lucky! Seems the Lady Lumbridge just washed right up into the dock by herself!
+1	line	Klarense	She's pretty badly damaged, though...
+1	select	Select an Option
+1	option	So, what needs fixing on the ship?
+2	action	above
+1	option	What are you going to do now you don't have a ship?
+2	action	above
+1	option	Can I board the ship now?
+2	action	above
+0	section	Killing Elvarg
+0	section	Talking to the Guildmaster after slaying Elvarg
+1	line	Guildmaster	Greetings!
+1	select	Select an Option
+1	option	What is this place?
+1	option	I killed the dragon!
+2	line	Player	I killed the dragon!
+2	line	Guildmaster	Really? That's amazing!
+2	line	Guildmaster	You are a true hero. There's no way that Oziach can refuse to sell you rune platemail now. You should tell him at once!
+2	action	end
+0	section	Talking to Oziach after slaying Elvarg
+1	line	Oziach	Have ye slayed that dragon yet?
+1	line	Player	Yes, I have!
+1	cond	If the player has Elvarg's head in their inventory:
+2	line	Player	I have its head here.
+2	action	continues
+1	line	Oziach	You actually did it?
+1	line	Oziach	I underestimated ye, adventurer. I apologise.
+1	line	Oziach	Yer a true hero, and I'd be happy to sell ye rune platebodies.

@@ -23,8 +23,8 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 /**
  * Poison (state and green hitpoints orb: [org.rsmod.api.player.poison]):
- * - Poisonous npcs (OSRS Wiki infobox_monster "poisonous", `poison.tsv`) poison the player on a
- *   damaging melee hit with a 1/4 chance, starting at the Wiki damage.
+ * - Poisonous npcs (OSRS Wiki infobox_monster "poisonous", `poison.tsv`) poison the player on any
+ *   damaging melee, ranged or magic hit with a 1/4 chance, starting at the Wiki damage.
  * - Every 30 ticks a poisoned player takes a poison hitsplat; damage N repeats five times and then
  *   drops to N - 1 until it wears off. Antipoison immunity counts down on the same timer.
  * - Cure and immunity come from antipoison potions (Herblore calls `curePoison`).
@@ -57,7 +57,7 @@ class Poison @Inject constructor(private val random: GameRandom) : PluginScript(
     }
 
     private fun onNpcHit(event: NpcAttackHitEvent) {
-        if (event.damage <= 0 || event.type != HitType.Melee) return
+        if (event.damage <= 0) return
         val name = event.npc.visType.internalName ?: return
         val damage = damageByNpc[name] ?: return
         if (random.of(POISON_CHANCE) != 0) return

@@ -1,0 +1,573 @@
+# Generated from the OSRS Wiki page "Transcript:Romeo & Juliet" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Talking to Romeo
+1	cond	If the player is nearby Romeo:
+1	option	Dialogue 1
+2	line	Romeo	Blub! Blub...where is my Juliet? Have you seen her?
+2	action	continues
+1	option	Dialogue 2
+2	line	Romeo	Looking for a blonde girl, goes by the name of Juliet..quite pretty...haven't seen her have you?
+2	action	continues
+1	option	Dialogue 3
+2	line	Romeo	Juliet, Juliet, wherefore art thou Juliet? Have you seen my Juliet?
+2	action	continues
+1	option	Dialogue 4
+2	line	Romeo	Oh woe is me that I cannot find my Juliet! You haven't seen Juliet have you?
+2	action	continues
+1	option	Dialogue 5
+2	line	Romeo	Sadness surrounds me now that Juliet's father forbids us to meet. Have you seen my Juliet?
+2	action	continues
+1	option	Dialogue 6
+2	line	Romeo	What is to become of me and my darling Juliet, I cannot find her anywhere, have you seen her?
+2	action	continues
+1	select	Select an Option
+1	option	Yes, I have seen her actually!
+2	line	Player	Yes, I have seen her actually!
+2	line	Player	At least, I think it was her... Blonde? A bit stressed?
+2	line	Romeo	Golly...yes, yes...you make her sound very interesting!
+2	line	Romeo	And I'll bet she's a bit of a fox!
+2	line	Player	Well, I guess she could be considered attractive...
+2	line	Romeo	I'll bet she is! Wooooooooo!
+2	line	Romeo	Sorry, all that jubilation has made me forget what we were talking about.
+2	line	Player	You were asking me about Juliet? You seemed to know her?
+2	line	Romeo	Oh yes, Juliet!
+2	line	Romeo	The fox...could you tell her that she is the love of my long and that I life to be with her?
+2	line	Player	What? Surely you mean that she is the love of your life and that you long to be with her?
+2	line	Romeo	Oh yeah...what you said...tell her that, it sounds much better! Oh you're so good at this!
+2	select	Start the Romeo & Juliet quest?
+2	option	Yes.
+3	line	Player	Yes, okay. I'll let her know.
+3	line	Romeo	Oh great! And tell her that I want to kiss her a give.
+3	line	Player	You mean you want to give her a kiss!
+3	line	Romeo	Oh you're good...you are good!
+3	line	Romeo	I see I've picked a true professional...!
+3	select	Select an option
+3	option	Where can I find Juliet?
+4	line	Player	Where can I find Juliet?
+4	line	Romeo	Why do you ask?
+4	line	Player	So that I can try and find her for you!
+4	line	Romeo	Ah yes....quite right. Hmmm, let me think now.
+4	line	Romeo	She may still be locked away at her Father's house on the sest vide of Warrock.
+4	line	Romeo	Oh, I remember how she loved it when I would sing up to her balcony! She would reward me with her own personal items...
+4	line	Player	What, she just gave you her stuff?
+4	line	Romeo	Well, not exactly give...more like 'throw with considerable force'...she's always a kidder that Juliet!
+4	action	other
+3	option	Is there anything else you can tell me about Juliet?
+4	line	Player	Is there anything else you can tell me about Juliet?
+4	line	Romeo	Oh, there is so much to tell...she is my true love, we intend to spend together forever...I can tell you so much about her..
+4	line	Player	Great!
+4	line	Romeo	Ermmm.....
+4	line	Romeo	So much can I tell you...
+4	line	Player	Yes..
+4	line	Romeo	So much to tell...why, where do I start!
+4	line	Player	Yes..yes! Please go on...don't let me interrupt...
+4	line	Romeo	Ermmm.....
+4	line	Romeo	...
+4	line	Player	You can't remember can you?
+4	line	Romeo	Not a thing sorry....
+4	action	other
+3	option	Ok, thanks.
+4	line	Player	Ok, thanks.
+4	action	end
+2	option	No.
+3	line	Player	Sorry Romeo, I've got better things to do right now. Maybe later?
+3	line	Romeo	Oh, okay, well, I guess my Juliet and I can spend some time apart. And as the old saying goes, 'Absinthe makes the heart glow longer'.
+3	line	Player	Don't you mean that, 'Absence makes the...
+3	line	Player	Actually forget it...
+3	line	Romeo	Okay!
+3	action	end
+1	option	No sorry, I haven't seen her.
+2	line	Player	No sorry, I haven't seen her.
+2	line	Romeo	Oh...well, that's a shame...I was rather hoping you had.
+2	line	Player	Why? Is she a fugitive? Does she owe you some money or something?
+2	line	Romeo	Hmmm, she might do? Perhaps she does? How do you know?
+2	line	Player	I don't know? I was asking 'YOU' how 'YOU' know Juliet!
+2	line	Romeo	Ahh, yes Juliet, she's my one true love. Well, one of my one true loves! If you see her, could you tell her that she is the love of my long and that I life to be with her?
+2	line	Player	What? Surely you mean that 'she is the love of your life and that you long to be with her?'
+2	line	Romeo	Oh yeah...what you said...tell her that, it sounds much better! Oh you're so good at this!
+2	select	Start the Romeo & Juliet quest?
+2	option	Yes.
+3	action	above
+2	option	No.
+3	action	above
+1	option	Perhaps I could help to find her for you?
+2	line	Player	Perhaps I can help find her for you? What does she look like?
+2	line	Romeo	Oh would you? That would be great! She has this sort of hair...
+2	line	Player	Hair...check..
+2	line	Romeo	...and she these...great lips...
+2	line	Player	Lips...right.
+2	line	Romeo	Oh and she has these lovely shoulders as well..
+2	line	Player	Shoulders...right, so she has hair, lips and shoulders...that should cut it down a bit.
+2	line	Romeo	Oh yes, Juliet is very different...please tell her that she is the love of my long and that I life to be with her?
+2	line	Player	What? Surely you mean that 'she is the love of your life and that you long to be with her?'
+2	line	Romeo	Oh yeah...what you said...tell her that, it sounds much better! Oh you're so good at this!
+2	select	Start the Romeo & Juliet quest?
+2	option	Yes.
+3	action	above
+2	option	No.
+3	action	above
+0	section	Talking to Romeo again
+1	line	Player	Hello again, remember me?
+1	line	Romeo	Of course, yes....how are.. you....ermmm...
+1	line	Player	You haven't got a clue who I am do you?
+1	line	Romeo	Not a clue my friend, but you seem to have a friendly face...a little blood stained, and perhaps in need of a wash, but friendly none the less.
+1	line	Player	You asked me to look for Juliet for you!
+1	line	Romeo	Ah yes, Juliet...my sweet darling...what news?
+1	line	Player	Nothing so far, but I need to ask a few questions?
+1	select	Select an option
+1	option	Where can I find Juliet?
+2	action	above
+1	option	Is there anything else you can tell me about Juliet?
+2	action	above
+1	option	Ok, thanks.
+2	action	above
+0	section	Finding Juliet
+0	section	Talking to Draul Leptoc
+1	line	Draul Leptoc	What are you doing here? Snooping around...
+1	select	Select an option
+1	option	I've come to see Juliet on Romeo's behalf.
+2	line	Player	I've come to see Juliet on Romeo's behalf.
+2	line	Draul Leptoc	What...what...Romeo! Why that good for nothing swine...he's always trying to get the affections of my daughter..that soppy, half brained nincompoop won't ever have the heart of my daughter.
+2	line	Draul Leptoc	She deserves someone of character, wit and repose.
+2	line	Player	What's so wrong about Romeo?
+2	line	Draul Leptoc	Wrong! What's wrong with him...have you actually talked to him? He's nothing but a dim witted upperclass twit, totally useless.
+2	line	Draul Leptoc	If he threw a stone at the ground, he'd probably miss! He's totally invisible when it's raining because he's so wet!
+2	line	Draul Leptoc	If you started with what's right with him, you'd have much less to consider!
+2	line	Player	Well, I admit, he's probably not the sharpest knife in the cutlery draw...
+2	line	Draul Leptoc	Sharp? I've seen keener wit in root vegetables. Anyway, stop changing the subject. Get out of here and don't think you can sneak up those stairs to see Juliet, because I'll catch you and then you'll be for it!
+2	line	Player	That seems a bit harsh....
+2	line	Draul Leptoc	Harsh but fair I think you'll find...now get OUT!
+2	action	end
+1	option	I've just come to have a chat with Juliet.
+2	line	Player	I've just come to have a chat with Juliet.
+2	line	Draul Leptoc	What on earth about? I hope you're not in cahoots with that good for nothing Romeo!
+2	line	Player	Err..no of course not....why would I be?
+2	line	Draul Leptoc	He's been trying to wooo my daughter for an age. Up until now she's had the good sense to just ignore him. I just don't know what's gotten into her recently so that she would give him the time of day.
+2	line	Player	Well, love is mysterious! Perhaps one day someone may even learn to love you!
+2	line	Draul Leptoc	What! Someone may fall in love with me...what are you trying to insinuate?
+2	line	Player	Err...Nothing....I guess I'd better be going now...
+2	action	end
+1	option	Oh...just looking around...
+2	line	Player	Oh...just looking around...
+2	line	Draul Leptoc	Just looking around! This is MY house! You might have at least 'ASKED' to view my considerably well appointed abode...but no, you've just burst in with all the elegance of a Troll at a tea party.
+2	line	Player	I can see that you're busy ranting so I'll just nip off and investigate a bit.
+2	action	end
+1	option	Ok, thanks.
+2	line	Player	Ok, thanks.
+2	action	end
+0	section	Talking to Phillipa
+1	line	Player	Hello.
+1	line	Phillipa	Hi, I'm Phillipa, Juliet's cousin. I like to keep an eye on her, make sure that dashing young Romeo doesn't just steal her away under our plain old noses!
+1	line	Phillipa	He'd do it, you know - he's ever so dashing, and cavalier, in a wet blanket sort of way.
+1	action	end
+0	section	Talking to Juliet
+1	line	Player	Juliet, I come from Romeo. He begs me to tell you that he cares still.
+1	line	Juliet	Oh how my heart soars to hear this news! Please take this message to him with great haste.
+1	line	Player	Well, I hope it's good news...he was quite upset when I left him.
+1	line	Juliet	He's quite often upset...the poor sensitive soul. But I don't think he's going to take this news very well, however, all is not lost.
+1	line	Juliet	Everything is explained in the letter, would you be so kind and deliver it to him please?
+1	line	Player	Certainly, I'll do so straight away.
+1	line	Juliet	Many thanks! Oh, I'm so very grateful. You may be our only hope.
+1	box	Juliet gives you a message.
+1	action	end
+0	section	Talking to Juliet again
+1	line	Player	Hello Juliet!
+1	line	Juliet	Hello there...have you delivered the message to Romeo yet? What news do you have from my loved one?
+1	cond	If the player still has the message:
+2	line	Player	Oh, sorry, I've not had chance to deliver it yet!
+2	line	Juliet	Oh, that's a shame. I've been waiting so patiently to hear some word from him.
+2	action	end
+1	cond	If the player lost the message:
+2	line	Player	Hmmm, that's the thing about messages...they're so easy to misplace...
+2	line	Juliet	How could you lose that message? It was incredibly important...and it took me an age to write! I used joined up writing and everything!
+2	line	Juliet	Please, take this new message to him, and please don't lose it.
+2	box	Juliet gives you another message.
+2	action	end
+0	section	Talking to Phillipa after agreeing to deliver the message
+1	line	Phillipa	Oh, hello. Juliet has told me what you're doing for her and Romeo, and I have to say I'm very grateful to you. Juliet deserves a bit of happiness in her life.
+1	line	Phillipa	And I'm sure Romeo is just the sort of jester to make her laugh out loud - hysterically you might say.
+1	line	Phillipa	He always brings a tear to my eyes - tears of happiness at his foolish antics!
+1	line	Player	Oh, thanks. I like to do my cupid bit.
+1	action	end
+0	section	Talking to Draul Leptoc after agreeing to deliver the message
+1	line	Draul Leptoc	What are you doing in my house? Up to no good I shouldn't wonder!
+1	line	Player	Just a small chore for Juliet, you do have a lovely daughter in her sir.
+1	line	Draul Leptoc	Oh...why, thank you...I've always tried to my best...
+1	line	Draul Leptoc	...Hang on! Enough of that smiley talk. I have a daughter and I know what she's like. Don't even think of carrying on anything behind my back, I have the eyes of a hawk, nothing gets past me!
+1	cond	If the player has the message on them:
+2	box	Sir Draul notices the message!
+2	line	Draul Leptoc	Hey! What's that in your hands...looks like a message to me...with Juliet's barely legible scrawl on it...
+2	line	Player	Yes, yes, that's probably why I can't read it!
+2	line	Player	Sorry, I mean, that's right sir. I'm just popping to the shops to get some groceries for Juliet.
+2	line	Player	Right, have to be off now...thanks...
+2	line	Draul Leptoc	Groceries!
+2	line	Draul Leptoc	Groceries!...at a time like this, does that girl know what she's putting me through!
+2	action	end
+1	action	end
+0	section	Delivering the message
+0	section	Talking to Romeo
+1	cond	If the player does not have Juliet's message in their inventory:
+2	line	Player	Romeo...great news...I've been in touch with Juliet!
+2	line	Romeo	Oh great! That is great news! Well done...well done... what a total success!
+2	line	Player	Yes, and she gave me a message to give you...
+2	line	Romeo	Ohhh great! A message....wow!
+2	line	Player	Yes!
+2	line	Romeo	A message...oh, I can't wait to read what my dear Juliet has to say....
+2	line	Player	I know...it's exciting isn't it...?
+2	line	Romeo	Yes...yes...
+2	line	Romeo	...
+2	line	Romeo	You've lost the message haven't you?
+2	line	Player	Yep, haven't got a clue where it is.
+2	action	end
+1	cond	If the player has Juliet's message in their inventory:
+2	line	Player	Romeo...great news...I've been in touch with Juliet! She's written a message for you...
+2	box	You hand over Juliet's message to Romeo.
+2	line	Romeo	Oh, a message! A message! I've never had a message before...
+2	line	Player	Really?
+2	line	Romeo	No, no, not one!
+2	line	Romeo	Oh, well, except for the occasional court summons.
+2	line	Romeo	But they're not really 'nice' messages. Not like this one! I'm sure that this message will be lovely.
+2	line	Player	Well are you going to open it or not?
+2	line	Romeo	Oh yes, yes, of course! 'Dearest Romeo, I am very pleased that you sent {player} to look for me and to tell me that you still hold affliction...', Affliction! She thinks I'm diseased?
+2	line	Player	'Affection?'
+2	line	Romeo	Ahh yes...'still hold affection for me. I still feel great affection for you, but unfortunately my Father opposes our marriage.'
+2	line	Player	Oh dear...that doesn't sound too good.
+2	line	Romeo	What? '...great affection for you. Father opposes our..
+2	line	Romeo	'...marriage and will...
+2	line	Romeo	...will kill you if he sees you again!'
+2	line	Player	I have to be honest, it's not getting any better...
+2	line	Romeo	'Our only hope is that Father Lawrence, our long time confidant, can help us in some way.'
+2	box	Romeo folds the message away.
+2	line	Romeo	Well, that's it then...we haven't got a chance...
+2	line	Player	What about Father Lawrence?
+2	line	Romeo	...our love is over...the great romance, the life of my love...
+2	line	Player	...or you could speak to Father Lawrence!
+2	line	Romeo	Oh, my aching, breaking, heart...how useless the situation is now...we have no one to turn to...
+2	line	Player	FATHER LAWRENCE!
+2	line	Romeo	Father Lawrence?
+2	line	Romeo	Oh yes, Father Lawrence...he's our long time confidant, he might have a solution! Yes, yes, you have to go and talk to Lather Fawrence for us and ask him if he's got any suggestions for our predicament?
+2	line	Player	Where can I find Father Lawrence?
+2	line	Romeo	Lather Fawrence! Oh he's...
+2	line	Romeo	You know he's not my 'real' Father don't you?
+2	line	Player	I think I suspected that he wasn't.
+2	line	Romeo	Well anyway...he tells these song, loring bermons...and keeps these here Carrockian vitizens snoring in his church to the East North.
+2	select	Select an option
+2	option	How are you?
+3	line	Player	How are you?
+3	line	Romeo	Not so good my friend...I miss Judi..., Junie..., Joopie...
+3	line	Player	Juliet?
+3	line	Romeo	Juliet! I miss Juliet, terribly!
+3	line	Player	Hmmm, so I see!
+3	action	other
+2	option	Where can I find Father Lawrence?
+3	line	Player	Where can I find Father Lawrence?
+3	line	Romeo	Lather Fawrence! Oh he's...
+3	line	Romeo	You know he's not my 'real' Father don't you?
+3	line	Player	I think I suspected that he wasn't.
+3	line	Romeo	Well anyway...he tells these song, loring bermons...and keeps these here Carrockian vitizens snoring in his church to the East North.
+3	action	other
+2	option	Have you heard anything from Juliet?
+3	line	Player	Have you heard anything from Juliet?
+3	line	Romeo	Sadly not my friend! And what's worse, her Father has threatened to kill me if he sees me. I mean, that seems a bit harsh!
+3	line	Player	Well, I shouldn't worry too much...you can always run away if you see him...
+3	line	Romeo	I just wish I could remember what he looks like! I live in fear of every man I see!
+3	action	other
+2	option	Ok, thanks.
+3	line	Player	Ok, thanks.
+3	action	end
+0	section	Using a duplicate message on Romeo
+1	line	Romeo	Why are you waving that around at me as if it's something important?
+1	action	end
+0	section	Talking to Romeo again
+1	line	Player	Hey again Romeo!
+1	option	How are you?
+2	action	above
+1	option	Where can I find Father Lawrence?
+2	action	above
+1	option	Have you heard anything from Juliet?
+2	action	above
+1	option	Ok, thanks.
+2	action	above
+0	section	Talking to Juliet
+1	line	Player	Hi Juliet, I have passed your message on to Romeo..he's scared half out of his wits at the news that your father wants to kill him.
+1	line	Juliet	Yes, unfortunately my father is quite the hunter, you may have seen some the animal head trophies on the wall. And it would be so awful to see Romeo's head up there with them!
+1	line	Player	I know what you mean...
+1	line	Player	...his hair colour will clash terribly with the rest of the decoration.
+1	line	Juliet	That's not what I was suggesting at all...
+1	line	Player	I know, I know...I was just kidding.
+1	line	Player	Anyway, don't worry because I'm on the case. I'm going to get some help from Father Lawrence.
+1	line	Juliet	Oh yes, I'm sure that Father Lawrence will come up with a solution. I hope you find him soon.
+1	action	end
+0	section	Talking to Draul Leptoc
+1	line	Draul Leptoc	Do you live here? If so, how's about a couple of hundred gold towards the rent eh? Pay your share I say...you don't want to be like that freeloading Romeo!
+1	action	end
+0	section	Finding Father Lawrence
+0	section	Talking to Father Lawrence
+1	line	Father Lawrence	...and let Saradomin light the way for you... Urgh!
+1	line	Father Lawrence	Can't you see that I'm in the middle of a Sermon?!
+1	line	Player	But Romeo sent me!
+1	line	Father Lawrence	But I'm busy delivering a sermon to my congregation!
+1	line	Congregation	Zzzzzzzzz
+1	line	Player	Yes, well, it certainly seems like you have a captive audience!
+1	line	Player	Yes, well, it certainly seems
+1	line	Player	like you have a captive
+1	line	Player	audience!
+1	line	Father Lawrence	Ok, ok...what do you want so I can get rid of you and continue with my sermon?
+1	line	Player	Romeo sent me. He says you may be able to help.
+1	line	Father Lawrence	Ah Romeo, yes. A fine lad, but a little bit confused.
+1	line	Player	Yes, very confused....Anyway, Romeo wishes to be married to Juliet! She must be rescued from her father's control!
+1	line	Father Lawrence	I agree, and I think I have an idea! A potion to make her appear dead...
+1	line	Player	Dead! Sounds a bit creepy to me...but please, continue.
+1	line	Father Lawrence	The potion will only make Juliet 'appear' dead...then she'll be taken to the crypt...
+1	line	Player	Crypt! Again...very creepy! You must have some strange hobbies.
+1	line	Father Lawrence	Then Romeo can collect her from the crypt! Go to the Apothecary, tell him I sent you and that you'll need a 'Cadava' potion.
+1	line	Player	Apart from the strong overtones of death, this is turning out to be a real love story.
+1	action	end
+0	section	Talking to Father Lawrence again
+1	cond	If the player has not made a cadava potion:
+2	line	Father Lawrence	Ah, have you found the Apothecary yet? Remember, Cadava potion, for Juliet.
+2	action	end
+0	section	Talking to Romeo after Father Lawrence
+1	line	Player	Hello again Romeo!
+1	line	Romeo	Ooh did you manage to survive one of Lather Fawrences sermons? I bet not, you were ages! I bet you snoozed on the welcome mat just as soon as you heard his voice!
+1	line	Player	Did not!
+1	line	Romeo	Oh, come on, come on, what did he say?
+1	select	Select an option
+1	option	He wants me to go to the Apothecary!
+2	line	Player	He wants me to go to the Apothecary!
+2	line	Romeo	The Apothecary?
+2	line	Romeo	Oh...is he the one who mixes up all them magical potion- ey things?
+2	line	Player	Yeah, I think so...but the word potion-ey doesn't exist.
+2	line	Romeo	Well, you just used it...so I guess it does exist!
+2	line	Player	It doesn't matter...do you know where the Apothecary is?
+2	line	Romeo	Why should I tell you?
+2	line	Player	Because I'm doing you a favour!
+2	line	Romeo	Right, yes...of course! Well, I think the potion-ey place is Wouth Sest of here and near a sword shop.
+2	action	other
+1	option	He seems keen for you to marry Juliet.
+2	line	Player	He seems very keen for you to marry Juliet.
+2	line	Romeo	Me too! I can't wait! Do you think it will be soon?
+2	line	Player	I don't know, but I'll do what I can. It just seems a bit odd that Father Lawrence is so keen for you to marry?
+2	line	Romeo	I can't imagine why he's so keen? Though, he was our messenger before you. Of course, he had a lot more hair back then...and I think we may have gone to school together...
+2	line	Player	What, since you were kids?
+2	line	Romeo	Yeah! Thinking about it now, we called him 'Diddy Dorrence' back then!
+2	line	Player	So, maybe, he just wants a bit of peace? And when you two are married, he won't have to traipse around delivering your messages anymore?
+2	line	Romeo	Yes, the years haven't been good to him.
+2	action	other
+1	option	Ok, thanks.
+2	line	Player	Ok, thanks.
+2	action	end
+0	section	Talking to Juliet after Father Lawrence
+1	line	Player	Hi Juliet, I've found Father Lawrence and he has a cunning plan. But for it to work, I need to seek the Apothecary!
+1	line	Juliet	Oh good! I knew Father Lawrence would come up with something. However, I don't know where the apothecary is...I hope you find him soon. My father's temper gets no better.
+1	action	end
+0	section	Making the Cadava potion
+0	section	Talking to the Apothecary
+1	line	Apothecary	I am the Apothecary. I brew potions. Do you need anything specific?
+1	option	Can you make potions for me?
+1	option	Talk about something else.
+2	option	Talk about Romeo & Juliet.
+3	line	Player	Apothecary, Father Lawrence sent me. I need a Cadava potion to help Romeo and Juliet.
+3	line	Apothecary	Cadava potion. It's pretty nasty. And hard to make.
+3	line	Apothecary	Wing of rat, tail of frog. Ear of snake and horn of dog.
+3	line	Apothecary	I have all that, but I need some Cadava berries.
+3	line	Apothecary	You will have to find them while I get the rest ready. Bring them here when you have them. But be careful. They are nasty.
+3	cond	If the player has cadava berries in their inventory:
+4	line	Player	Conveniently, I have some here.
+4	box	You hand over the berries, which the Apothecary shakes up in a vial of strange liquid.
+4	line	Apothecary	Phew! Here is what you need.
+4	box	The Apothecary gives you a Cadava potion.
+4	action	end
+3	cond	If the player does not have cadava berries in their inventory:
+4	option	What do these berries look like?
+5	line	Player	What do these berries look like?
+5	line	Apothecary	They're a nice bright pink colour, with green leaves, stalks are a pale brown colour...you can't miss them. They look pretty tasty, but I wouldn't advise eating them.
+5	action	other
+4	option	Where can I get these berries?
+5	line	Player	Where can I get these berries?
+5	line	Apothecary	I think I saw some recently in the local vicinity. Oh yes, that's right! There was a little bit of commotion when some kids visited the south eastern Varrock mining pit. The trip was disrupted because some kids
+5	line	Apothecary	had found some cadavaberry bushes and they started picking them. They wrapped that trip up pretty quickly!
+5	action	other
+4	option	How are these berries dangerous?
+5	line	Player	How are these berries dangerous?
+5	line	Apothecary	Hmm, they're generally okay, but if handled improperly they can be a bit nasty. And I certainly wouldn't advise drinking the potion!
+5	action	other
+4	option	Ok, thanks.
+5	line	Player	Ok, thanks.
+5	action	end
+2	option	Do you know a potion to make hair fall out?
+2	option	Have you got any good potions to give away?
+2	option	No thanks.
+0	section	Talking to the Apothecary again
+1	line	Apothecary	I am the Apothecary. I brew potions. Do you need anything specific?
+1	option	Can you make potions for me?
+1	option	Talk about something else.
+2	option	Talk about Romeo & Juliet.
+3	cond	Without any cadava berries:
+4	line	Apothecary	Keep searching for those Cadavaberries. They're needed for the potion.
+4	action	end
+3	cond	With some cadava berries:
+4	line	Apothecary	Well done. You have the berries.
+4	box	You hand over the berries, which the Apothecary shakes up in a vial of strange liquid.
+4	line	Apothecary	Phew! Here is what you need.
+4	box	The Apothecary gives you a Cadava potion.
+4	action	end
+3	cond	With the cadava potion:
+4	line	Player	Thank you for the Cadava potion.
+4	line	Apothecary	You're welcome. I hope it helps that young couple find happiness.
+4	action	end
+3	cond	After giving Juliet the cadava potion:
+4	line	Player	I gave Juliet the Cadava potion.
+4	line	Apothecary	Good, good. I hope it helps that young couple find happiness.
+4	action	end
+2	option	Do you know a potion to make hair fall out?
+2	option	Have you got any good potions to give away?
+2	option	No thanks.
+0	section	Look-at the potion
+1	box	This looks very colourful, but you remember what Father Lawrence told you about it, probably best not to drink it.
+1	action	end
+0	section	Drinking the potion at the Apothecary's
+1	select	Are you sure you wish to drink this Cadava Potion?
+1	option	Yes, I'll drink it all down.
+2	box	In defiance of Father Lawrence's warnings, you drink the entire contents of the potion.
+2	line	Player	Urk!
+2	box	Some time later.....
+2	line	Apothecary	Blimey... you've been out for hours! Are you ok? People were tripping over you as they walked into the shop.
+2	action	end
+1	option	No, I'm having second thoughts now.
+0	section	Attempting to drink the potion elsewhere
+1	box	You dare not drink this outside of the apothecary's establishment. At least there the apothecary may be able to help you if you need assistance.
+1	action	end
+0	section	Talking to Father Lawrence
+1	cond	If player is not carrying a cadava potion:
+2	line	Father Lawrence	Did you find the Apothecary?
+2	line	Player	Yes I did. He's told me I must find some Cadava berries.
+2	line	Father Lawrence	Well, good luck with that...they're quite tricky to find.
+2	line	Player	Any clues where I can start to look?
+2	line	Father Lawrence	I heard some kids saying they saw some the other day. They were visiting the mining place to the south east of Varrock.
+2	line	Player	Ok, that's as good a place to start looking as any.
+2	action	end
+1	cond	If player is carrying a cadava potion:
+2	line	Father Lawrence	Did you find the Apothecary?
+2	line	Player	I've got the cadava potion.
+2	line	Father Lawrence	Good! Good work! Ok, take it to Juliet, she's expecting you. I'll talk to Romeo and make sure he knows what to do.
+2	action	end
+0	section	Talking to Romeo
+1	cond	If player is not carrying a cadava potion:
+2	line	Player	Hi Romeo!
+2	line	Romeo	Oh hello, have you seen Lather Fawrence?
+2	line	Player	Yes, he's given me details of a potion which should help resolve this situation. The Apothecary is helping me prepare it.
+2	line	Romeo	Ooooh, it all sounds horribly complicated?
+2	line	Romeo	All I can say is I'll be glad when Juliet's finally in that crypt!
+2	line	Player	Spoken like a true lover!
+2	action	end
+1	cond	If player is carrying a cadava potion:
+2	box	Romeo spots the Cadava potion.
+2	line	Romeo	Ooohh, that's the potion is it? Rather you than me!
+2	line	Player	I'm not drinking it! It's for Juliet!
+2	line	Romeo	Well, I mean...it's probably delicious...and not dangerous at all. And you quite often see harmless drinks in a glowing sort of pink colour.
+2	line	Player	Hmm, I'm not convinced...maybe you ought to try some before I give it to Juliet?
+2	line	Romeo	Urgh! No way! Not in a million years!
+2	line	Player	Ok...but you know what to do when I've given this to Juliet?
+2	line	Romeo	Oh, yeah...sure Lather Fawrence explained all that to me...
+2	action	end
+0	section	Talking to Draul Leptoc
+1	line	Draul Leptoc	Hey , what are you doing here?
+1	line	Player	Nothing much sir...I promise...I'm just an innocent friend of Juliet's...doing her a few favours...as a friend.
+1	line	Draul Leptoc	Well, just make sure there's no funny business going on that's all I can say. Do you know why?
+1	line	Player	I think I can guess sir...
+1	line	Draul Leptoc	There's no need to guess! You can see it in my hawk like eyes, in my cat like ears and my dog like nose...
+1	line	Player	Are you saying that you look like an animal sir?
+1	line	Draul Leptoc	NO! Not look like an animal! I have the keen 'SENSES' of an animal and I don't miss a thing. Don't even think about trying anything!
+1	action	If the player currently has the cadava potion:
+2	box	Draul notices the potion!
+2	line	Draul Leptoc	Hey! What's that in your hands? Looks like some sort of potion to me!
+2	line	Player	Err...no! Nope! Not a potion! Some medicine...I have a terrible cough ...cough...cough....see?
+2	line	Player	>Except, I can't drink too much or else it makes me feel 'really' tired. One sip of this and the lights go out...I mean, I'm asleep in a minute.
+2	line	Draul Leptoc	Sleep!
+2	line	Draul Leptoc	Sleep...! How can you even think of such a thing at a time like this? And I hope you have no intentions of sleeping in my house!
+2	line	Draul Leptoc	You'll get a bill for rent if I catch you dozing off around here!
+2	action	end
+1	action	end
+0	section	Delivering the potion
+0	section	Talking to Juliet
+1	cond	If the player doesn't have a Cadava potion in their inventory:
+2	line	Player	Hi Juliet!
+2	line	Juliet	Hi {player}, how close am I to being with my true love Romeo?
+2	line	Player	Sorry, I still have to get a special potion for you.
+2	line	Juliet	Oh, I hope it isn't a love potion because you would be wasting your time. My love for Romeo grows stronger every minute...
+2	line	Player	That must be because you're not with him...
+2	line	Juliet	Oh no! I long to be close to my true love Romeo!
+2	line	Player	Well, ok then...I'll set about getting this potion as quickly as I can!
+2	line	Juliet	Fair luck to you, the end is close.
+2	action	end
+1	cond	If the player has a Cadava potion in their inventory:
+2	line	Player	Hi Juliet! I have an interesting proposition for you...suggested by Father Lawrence. It may be the only way you'll be able to escape from this house and be with Romeo.
+2	line	Juliet	Go on....
+2	line	Player	I have a Cadava potion here, suggested by Father Lawrence. If you drink it, it will make you appear dead!
+2	line	Juliet	Yes...
+2	line	Player	And when you appear dead...your still and lifeless corpse will be removed to the crypt!
+2	line	Juliet	Oooooh, a cold dark creepy crypt...
+2	line	Juliet	...sounds just peachy!
+2	line	Player	Then...Romeo can steal into the crypt and rescue you just as you wake up!
+2	line	Juliet	...and this is the great idea for getting me out of here?
+2	line	Player	To be fair, I can't take all the credit...in fact...it was all Father Lawrence's suggestion...
+2	line	Juliet	Ok...if this is the best we can do...hand over the potion!
+2	box	You pass the suspicious potion to Juliet.
+1	line	Juliet	Wonderful! I just hope Romeo can remember to get me from the crypt.
+2	line	Juliet	Please go to Romeo and make sure he understands. Although I love his gormless, lovelorn soppy ways, he can be a bit dense sometimes and I don't want to wake up in that crypt on my own.
+2	line	Juliet	Oh, here's Phillipa, my cousin...she's in on the plot too!
+2	line	Juliet	She's going to make it seem even more convincing!
+2	line	Phillipa	Yes, I'm quite the actress! Good luck dear cousin!
+2	line	Juliet	Right...bottoms up!
+2	line	Juliet	Urk!
+2	line	Phillipa	Oh no...Juliet has...died!
+2	line	Player	You might be more believable if you're not smiling when you say it...
+2	line	Phillipa	Oh yeah...you might be right...ok, let's try again.
+2	line	Phillipa	Oh no...Juliet has...died?
+2	line	Player	Perhaps a bit louder, like you're upset...that your cousin has died!
+2	line	Phillipa	Right...yes...Ok, ok, I think I'm getting my motivation now. Ok, let's try this again!
+2	line	Phillipa	OH NO...JULIET HAS...DIED?.... Oooooohhhhhh....(sob), (sob).Juliet...my poor dead cousin!
+2	line	Draul Leptoc	What's all that screaming?
+2	line	Draul Leptoc	Oh no! My poor daughter...what has become of you?
+2	line	Phillipa	Poor Juliet...make preparations for her body to be placed in the Crypt...
+2	action	end
+0	section	Rescuing Juliet
+0	section	Talking to Phillipa
+1	line	Phillipa	Oh, hello again! How was I - do you think I was convincing?
+1	line	Player	Oh, yes, totally!
+1	line	Phillipa	Ohhh good! I do hope Juliet will be pleased as well! That dashing young Romeo must be beside himself with excitement! Have you told him the good news yet?
+1	line	Player	Not yet, but soon!
+1	line	Phillipa	Good, good - you lucky thing, I can't wait to see the look on his face!
+1	action	end
+0	section	Talking to Draul Leptoc
+1	line	Draul Leptoc	My poor Juliet....she's dead...dead! I shouldn't have been so hard on her...she was my lovely daughter. Booo hoooo hooooo!
+1	action	end
+0	section	Talking to Romeo
+1	line	Player	Romeo, it's all set. Juliet has drunk the potion and has been taken down into the Crypt...now you just need to pop along and collect her.
+1	line	Romeo	Ah right, the potion! Great...
+1	line	Romeo	What potion would that be then?
+1	line	Player	The Cadava potion...you know, the one which will make her appear dead! She's in the crypt, pop along and claim your true love.
+1	line	Romeo	But I'm scared...will you come with me?
+1	line	Player	Oh, ok...come on! I think I saw the entrance when I visited there last...
+1	line	Romeo	This is pretty scary...
+1	line	Player	Oh, be quiet...
+1	line	Player	We're here. Look, Juliet is over there!
+1	line	Player	You go over to her...and I'll go and wait over here...
+1	line	Romeo	Ohhh, ok then...
+1	line	Romeo	Hey...Juliet...
+1	line	Romeo	Juliet....?
+1	line	Romeo	Oh dear...you seem to be dead.
+1	line	Phillipa	Hi Romeo...I'm Phillipa!
+1	line	Romeo	Wow! You're a fox!
+1	line	Phillipa	It's a shame about Juliet...but perhaps we can meet up later?
+1	line	Romeo	Who's Juliet?
+0	section	Post-quest
+0	section	Talking to Romeo
+1	line	Romeo	I heard Juliet had died. Terrible business.
+1	line	Romeo	Her cousin and I are getting on well though. Thanks for your help.
+1	action	end
+0	section	Claiming an antique lamp from Romeo
+1	line	Romeo	I heard Juliet had died. Terrible business. Her cousin and I are getting on well though. Here, take this as thanks for your help.
+1	action	
+1	action	end

@@ -1,0 +1,308 @@
+# Generated from the OSRS Wiki page "Transcript:The Restless Ghost" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+1	line	Father Aereck	Welcome to the church of holy Saradomin.
+1	select	Select an option
+1	option	Who's Saradomin?
+1	option	Nice place you've got here.
+1	option	I'm looking for a quest!
+2	line	Player	I'm looking for a quest.
+2	line	Father Aereck	That's lucky, I need someone to do a quest for me.
+2	select	Start The Restless Ghost quest?
+2	option	Yes
+3	line	Player	Okay, let me help then.
+3	line	Father Aereck	Thank you. The problem is, there is a ghost in the church graveyard. I would like you to get rid of it.
+3	line	Father Aereck	If you need any help, my friend Father Urhney is an expert on ghosts.
+3	line	Father Aereck	I believe he is currently living as a hermit in Lumbridge swamp. He has a little shack in the far west of the swamps.
+3	line	Father Aereck	Exit the graveyard through the south gate to reach the swamp. I'm sure if you told him that I sent you he'd be willing to help.
+3	line	Father Aereck	My name is Father Aereck by the way. Pleased to meet you.
+3	line	Player	Likewise.
+2	line	Father Aereck	Take care travelling through the swamps, I have heard they can be quite dangerous.
+3	line	Player	I will, thanks.
+3	action	end
+2	option	No
+3	line	Player	Sorry, I don't have time right now.
+3	line	Father Aereck	Oh well. If you do have some spare time on your hands, come back and talk to me.
+3	action	end
+0	section	Talking to Father Aereck again
+1	line	Father Aereck	Have you got rid of the ghost yet?
+1	line	Player	I can't find Father Urhney at the moment.
+1	line	Father Aereck	Well, you can get to the swamp he lives in by going south through the cemetery.
+1	line	Father Aereck	You'll have to go right into the far western depths of the swamp, near the coastline. That is where his house is.
+1	action	end
+0	section	Talking to Father Urhney
+1	line	Father Urhney	Go away! I'm meditating!
+1	select	Select an option
+1	option	Well, that's friendly.
+2	line	Player	Well, that's friendly.
+2	line	Father Urhney	I SAID go AWAY.
+2	line	Player	Okay, okay... sheesh, what a grouch.
+2	action	end
+1	option	Father Aereck sent me to talk to you.
+2	line	Player	Father Aereck sent me to talk to you.
+2	line	Father Urhney	I suppose I'd better talk to you then. What problems has he got himself into this time?
+2	select	Select an option
+2	option	He's got a ghost haunting his graveyard.
+3	line	Player	He's got a ghost haunting his graveyard.
+3	line	Father Urhney	Oh, the silly fool.
+3	line	Father Urhney	I leave town for just five months, and ALREADY he can't manage.
+3	line	Father Urhney	(sigh)
+3	line	Father Urhney	Well, I can't go back and exorcise it. I vowed not to leave this place. Until I had done a full two years of prayer and meditation.
+3	line	Father Urhney	Tell you what I can do though; take this amulet.
+2	box	Father Urhney hands you an amulet.
+3	line	Father Urhney	It is an Amulet of Ghostspeak.
+3	line	Father Urhney	So called, because when you wear it you can speak to ghosts. A lot of ghosts are doomed to be ghosts because they have left some important task uncompleted.
+3	line	Father Urhney	Maybe if you know what this task is, you can get rid of the ghost. I'm not making any guarantees mind you, but it is the best I can do right now.
+3	line	Player	Thank you. I'll give it a try!
+3	action	end
+2	option	You mean he gets himself into lots of problems?
+3	line	Player	You mean he gets himself into lots of problems?
+3	line	Father Urhney	Yeah. For example, when we were trainee priests he kept on getting stuck up bell ropes.
+3	line	Father Urhney	Anyway. I don't have time for chitchat. What's his problem THIS time?
+3	line	Player	He's got a ghost haunting his graveyard.
+3	action	above
+1	option	I've come to repossess your house.
+2	line	Player	I've come to repossess your house.
+2	line	Father Urhney	Under what grounds???
+2	select	Select an option
+2	option	Repeated failure on mortgage repayments.
+3	line	Player	Repeated failure on mortgage repayments.
+3	line	Father Urhney	What?
+3	line	Father Urhney	But... I don't have a mortgage! I built this house myself!
+3	line	Player	Sorry. I must have got the wrong address. All the houses look the same around here.
+3	line	Father Urhney	What? What houses? What ARE you talking about???
+3	line	Player	Never mind.
+3	action	end
+2	option	I don't know. I just wanted this house.
+3	line	Player	I don't know. I just wanted this house...
+3	line	Father Urhney	Oh... go away and stop wasting my time!
+3	action	end
+0	section	Talking to Father Aereck
+1	line	Father Aereck	Have you got rid of the ghost yet?
+1	line	Player	I had a talk with Father Urhney. He has given me this funny amulet to talk to the ghost with.
+1	line	Father Aereck	I always wondered what that amulet was... Well, I hope it's useful. Tell me when you get rid of the ghost!
+1	action	end
+0	section	Reclaiming a lost amulet
+0	section	If the ghostspeak amulet is ever lost
+1	line	Father Urhney	Go away! I'm meditating!
+1	option	Well, that's friendly.
+2	action	above
+1	option	I've lost the Amulet of Ghostspeak.
+2	line	Player	I've lost the Amulet of Ghostspeak.
+2	box	Father Urhney signs.
+2	cond	If they player currently has it in their inventory:
+3	line	Father Urhney	What are you talking about? I can see you've got it with you!
+3	action	end
+2	cond	If the amulet if stored in a bank, Death's Office, Item Retrieval Service:
+3	line	Father Urhney	You come here wasting my time... Has it even occurred to you that you've got it stored somewhere? Now GO AWAY!
+3	action	end
+2	cond	If the player does not have inventory space:
+3	line	Father Urhney	How careless can you get? Those things aren't easy to come by you know! Now clear some space in your inventory and I'll give you another one.
+3	action	end
+2	cond	If the player has inventory space:
+3	line	Father Urhney	How careless can you get? Those things aren't easy to come by you know! It's a good job I've got a spare.
+3	box	Father Urhney hands you an amulet.
+3	action	
+3	line	Father Urhney	Be more careful this time.
+3	line	Player	Okay, I'll try to be.
+3	action	end
+1	option	I've come to repossess your house.
+2	action	above
+0	section	Talking to the Restless ghost
+0	section	Opening the coffin
+1	cond	If the player opens the coffin:
+2	action	end
+1	cond	If the player attempts to search the coffin after opening it:
+2	box	There's a skeleton without a skull in here.
+2	action	end
+0	section	Without wearing the Amulet of Ghostspeak
+1	line	Player	Hello ghost, how are you?
+1	line	Restless ghost	Wooo wooo wooooo!
+1	select	Select an option
+1	option	Sorry, I don't speak ghost.
+2	line	Player	Sorry, I don't speak ghost.
+2	line	Restless ghost	Woo woo?
+2	line	Player	Nope, still don't understand you.
+2	line	Restless ghost	WOOOOOOOOO!
+2	line	Player	Never mind.
+2	action	end
+1	option	Ooh, THAT'S interesting.
+2	line	Player	Ooh, THAT'S interesting.
+2	line	Restless ghost	Woo wooo. Woooooooooooooooooo!
+2	select	Select an option
+2	option	Did he really?
+3	line	Player	Did he really?
+3	line	Restless ghost	Woo.
+3	select	Select an option
+3	option	My brother had EXACTLY the same problem.
+4	line	Player	My brother had EXACTLY the same problem.
+4	line	Restless ghost	Woo Wooooo!
+4	line	Restless ghost	Wooooo Woo woo woo!
+4	select	Select an option
+4	option	Goodbye. Thanks for the chat.
+5	action	below
+4	option	You'll have to give me the recipe some time...
+5	line	Player	You'll have to give me the recipe some time...
+5	line	Restless ghost	Wooooooo woo woooooooo.
+5	select	Select an option
+5	option	Goodbye. Thanks for the chat.
+6	action	below
+5	option	Hmm... I'm not so sure about that.
+6	line	Player	Hmm... I'm not so sure about that.
+6	line	Restless ghost	Wooo woo?
+6	line	Player	Well, if you INSIST.
+6	line	Restless ghost	Wooooooooo!
+6	line	Player	Ah well, better be off now...
+6	line	Restless ghost	Woo.
+6	line	Player	Bye.
+6	action	end
+3	option	Goodbye. Thanks for the chat.
+4	action	below
+2	option	Yeah, that's what I thought.
+3	line	Player	Yeah, that's what I thought.
+3	line	Restless ghost	Wooo woooooooooooooo...
+3	select	Select an option
+3	option	Goodbye. Thanks for the chat.
+4	line	Player	Goodbye. Thanks for the chat.
+4	line	Restless ghost	Wooo wooo?
+4	action	end
+3	option	Hmm I'm not sure about that.
+4	line	Player	Hmm... I'm not so sure about that.
+4	line	Restless ghost	Wooo woo?
+4	line	Player	Well, if you INSIST.
+4	line	Restless ghost	Wooooooooo!
+4	line	Player	Ah well, better be off now...
+4	line	Restless ghost	Woo.
+4	line	Player	Bye.
+4	action	end
+1	option	Any hints where I can find some treasure?
+2	line	Player	Any hints where I can find some treasure?
+2	line	Restless ghost	Wooooooo woo! Wooooo woo wooooo woowoowoo woo Woo wooo. Wooooo woo woo? Woooooooooooooooooo!
+2	select	Select an option
+2	option	Sorry, I don't speak ghost.
+3	line	Player	Sorry, I don't speak ghost.
+3	line	Restless ghost	Woo woo?
+3	line	Player	Nope, still don't understand you.
+3	line	Restless ghost	WOOOOOOOOO!
+3	line	Player	Never mind.
+3	action	end
+2	option	Thank you. You've been very helpful.
+3	line	Player	Thank you. You've been very helpful.
+3	line	Restless ghost	Wooooooo.
+3	action	end
+0	section	While wearing the Amulet of Ghostspeak
+1	line	Player	Hello ghost, how are you?
+1	line	Restless ghost	Not very good actually.
+1	line	Player	What's the problem then?
+1	line	Restless ghost	Did you just understand what I said???
+1	select	Select an option
+1	option	Yep, now tell me what the problem is.
+2	line	Player	Yep, now tell me what the problem is.
+2	line	Restless ghost	WOW! This is INCREDIBLE! I didn't expect anyone to ever understand me again!
+2	line	Player	Ok, Ok, I can understand you!
+2	line	Player	But have you any idea WHY you're doomed to be a ghost?
+2	line	Restless ghost	Well, to be honest... I'm not sure.
+2	line	Player	I've been told a certain task may need to be completed so you can rest in peace.
+2	line	Restless ghost	I should think it is probably because a warlock has come along and stolen my skull. If you look inside my coffin there, you'll find my corpse without a head on it.
+2	line	Player	Do you know where this warlock might be now?
+2	line	Restless ghost	I think it was one of the warlocks who lives in the big tower by the sea south-west from here.
+2	line	Player	Ok. I will try and get the skull back for you, then you can rest in peace.
+2	line	Restless ghost	Ooh, thank you. That would be such a great relief!
+2	line	Restless ghost	It is so dull being a ghost...
+2	action	end
+1	option	No, you sound like you're speaking nonsense to me.
+2	line	Player	No, you sound like you're speaking nonsense to me.
+2	line	Restless ghost	Oh that's a pity. You got my hopes up there.
+2	line	Player	Yeah, it is a pity. Sorry about that.
+2	line	Restless ghost	Hang on a second... you CAN understand me!
+2	select	Select an option
+2	option	No I can't.
+3	line	Player	No I can't.
+3	line	Restless ghost	Great. The first person I can speak to in ages...and they're a moron.
+2	option	Yep, clever aren't I?
+3	line	Player	Yep, clever aren't I?
+3	line	Restless ghost	I'm impressed. You must be very powerful. I don't suppose you can stop me being a ghost?
+3	option	Yes, ok. Do you know WHY you're a ghost?
+4	line	Player	Yes, ok. Do you know WHY you're a ghost?
+4	line	Restless ghost	Nope. I just know I can't do much of anything like this!
+4	action	above
+3	option	No, you're scary!
+4	line	Player	No, you're scary!
+4	line	Restless ghost	Great.
+4	line	Restless ghost	The first person I can speak to in ages...
+4	line	Restless ghost	..and they're an idiot.
+4	action	end
+1	option	Wow, this amulet works!
+2	line	Player	Wow, this amulet works!
+2	line	Restless ghost	Oh! It's your amulet that's doing it! I did wonder. I don't suppose you can help me? I don't like being a ghost.
+2	option	Yes, ok. Do you know why you're a ghost?
+3	action	above
+2	option	No, you're scary!
+3	action	above
+0	section	Talking to the Restless ghost again with the amulet of ghostspeak
+1	line	Player	Hello ghost, how are you?
+1	line	Restless ghost	How are you doing finding my skull?
+1	line	Player	Sorry, I can't find it at the moment.
+1	line	Restless ghost	Ah well. Keep on looking.
+1	line	Restless ghost	I'm pretty sure it's somewhere in the tower south-west from here. There's a lot of levels to the tower, though. I suppose it might take a little while to find.
+1	action	end
+0	section	Talking to the Restless ghost again without the amulet of ghostspeak
+1	line	Player	Hello ghost, how are you?
+1	line	Restless ghost	Wooo wooo wooooo!
+1	select	Select an option
+1	option	Sorry, I don't speak ghost.
+2	action	above
+1	option	Ooh... THAT'S interesting.
+2	action	above
+1	option	Any hints where I can find some treasure?
+2	action	above
+0	section	Searching the coffin
+1	box	There's a skeleton without a skull in here.
+1	action	end
+0	section	Talking to Father Aereck
+1	line	Father Aereck	Have you got rid of the ghost yet?
+1	line	Player	I've found out that the ghost's corpse has lost its skull. If I can find the skull, the ghost should leave.
+1	line	Father Aereck	That WOULD explain it.
+1	line	Father Aereck	Hmmmmm. Well, I haven't seen any skulls.
+1	line	Player	Yes, I think a warlock has stolen it.
+1	line	Father Aereck	I hate warlocks.
+1	line	Father Aereck	Ah well, good luck!
+1	action	end
+0	section	Searching the altar
+0	section	After retrieving the skull
+0	section	Searching the altar
+1	box	You already have the Ghost's skull.
+0	section	Trying to drop the skull
+1	box	Dropping this skull here will destroy it!
+1	select	Are you sure you want to drop the skull?
+1	option	No.
+0	section	Talking to Father Aereck with the skull
+1	line	Father Aereck	Have you got rid of the ghost yet?
+1	line	Player	I've finally found the ghost's skull!
+1	line	Father Aereck	Great! Put it in the ghost's coffin and see what happens!
+1	action	end
+0	section	Inspecting the skull
+1	box	It's the skull of the ghost that is haunting Lumbridge graveyard. Maybe I should return this back to the ghost's coffin.
+1	action	end
+0	section	Using the skull on the closed coffin
+1	box	Maybe I should open it first.
+1	action	end
+0	section	Talking to the Restless ghost
+1	line	Player	Hello ghost, how are you?
+1	line	Restless ghost	How are you doing finding my skull?
+1	line	Player	I have found it!
+1	line	Restless ghost	Hurrah! Now I can stop being a ghost! You just need to put it in my coffin there, then I'll be free!
+1	action	end
+0	section	Using the skull on the Restless ghost
+1	box	I can't give it to him. It goes right through him.
+1	line	Restless ghost	If you just put it in my coffin that should do the trick...
+1	action	end
+0	section	Putting the skull in the coffin
+1	line	Restless ghost	Release! Thank you stranger..
+1	line	Restless ghost	Release! Thank you
+1	line	Restless ghost	stranger..
+0	section	Searching the coffin after the quest
+1	box	There's a nice and complete skeleton in here!
+1	action	end
+0	section	Searching the altar after the quest
+1	box	Surprisingly, this altar is empty. Probably because you took the skull off it earlier.
+1	action	end

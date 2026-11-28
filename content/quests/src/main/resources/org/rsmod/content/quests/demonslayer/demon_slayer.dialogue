@@ -1,0 +1,555 @@
+# Generated from the OSRS Wiki page "Transcript:Demon Slayer" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Aris	Hello young one. Cross my palm with silver and the future will be revealed to you.
+1	cond	If the player doesn't have any money with them:
+2	line	Player	Oh dear. I don't have any money.
+2	action	end
+1	option	Yes.
+2	line	Player	Okay, here you go.
+2	line	Aris	Come closer, and listen carefully to what the future holds for you, as I peer into the swirling mists of the crystal ball.
+2	line	Aris	I can see images forming. I can see you.
+2	line	Aris	You are holding a very impressive looking sword. I'm sure I recognise that sword...
+2	line	Aris	There is a big dark shadow appearing now.
+2	line	Aris	Aaargh!
+2	line	Player	Are you all right?
+2	line	Aris	It's Delrith! Delrith is coming!
+2	line	Player	Who's Delrith?
+2	line	Aris	Delrith...
+2	line	Aris	Delrith is a powerful demon.
+2	line	Aris	Oh! I really hope he didn't see me looking at him through my crystal ball!
+2	line	Aris	He tried to destroy this city 150 years ago. He was stopped just in time by the great hero Wally.
+2	line	Aris	Using his magic sword Silverlight, Wally managed to trap the demon in the stone circle just south of this city.
+2	line	Aris	Ye gods! Silverlight was the sword you were holding in my vision! You are the one destined to stop the demon this time.
+2	select	What would you like to say?
+2	option	How am I meant to fight a demon who can destroy cities?
+3	line	Player	How am I meant to fight a demon who can destroy cities?!
+3	line	Aris	If you face Delrith while he is still weak from being summoned, and use the correct weapon, you will not find the task too arduous.
+3	line	Aris	Do not fear. If you follow the path of the great hero Wally, then you are sure to defeat the demon.
+3	action	other
+2	option	Okay, where is he? I'll kill him for you!
+3	line	Player	Okay, where is he? I'll kill him for you!
+3	line	Aris	Ah, the overconfidence of the young!
+3	line	Aris	Delrith can't be harmed by ordinary weapons. You must face him using the same weapon that Wally used.
+3	action	other
+2	option	Wally doesn't sound like a very heroic name.
+3	line	Player	Wally doesn't sound a very heroic name.
+3	line	Aris	Yes I know. Maybe that is why history doesn't remember him. However he was a very great hero.
+3	line	Aris	Who knows how much pain and suffering Delrith would have brought forth without Wally to stop him!
+3	line	Aris	It looks like you are going to need to perform similar heroics.
+3	action	other
+2	option	So how did Wally kill Delrith?
+3	line	Player	So how did Wally kill Delrith?
+3	line	Aris	Wally managed to arrive at the stone circle just as Delrith was summoned by a cult of chaos druids...
+3	line	Wally	Die, foul demon!
+3	line	Wally	Now, what was that incantation again?
+3	action	The following five words are Aber, Gabindo, Purchai, Camerinthum, and Carlem. The order of the five words is random.
+3	line	Wally	[word 1]... [word 2]... [word 3]... [word 4]... [word 5]!
+3	line	Wally	I am the greatest demon slayer EVER!
+3	line	Aris	By reciting the correct magical incantation, and thrusting Silverlight into Delrith while he was newly summoned, Wally was able to imprison Delrith in the stone block in the centre of the circle.
+3	line	Aris	Delrith will come forth from the stone circle again.
+3	line	Aris	I would imagine an evil sorcerer is already starting on the rituals to summon Delrith as we speak.
+3	option	How am I meant to fight a demon who can destroy cities?
+4	action	above
+3	option	Okay, where is he? I'll kill him for you!
+4	action	above
+3	option	What is the magical incantation?
+4	line	Player	What is the magical incantation?
+4	line	Aris	Oh yes, let me think a second...
+4	action	The following five words Aber, Gabindo, Purchai, Camerinthum, and Carlem
+4	line	Aris	Alright, I think I've got it now, it goes.... [word 1]... [word 2]... [word 3]... [word 4]... [word 5]. Have you got that?
+4	line	Player	I think so, yes.
+4	action	other
+3	option	Where can I find Silverlight?
+4	line	Player	Where can I find Silverlight?
+4	line	Aris	Silverlight has been passed down through Wally's descendants. I believe it is currently in the care of one of the King's knights called Sir Prysin.
+4	line	Aris	He shouldn't be too hard to find. He lives in the royal palace in this city. Tell him Aris sent you.
+4	action	other
+3	option	Okay, thanks. I'll do my best to stop the demon.
+4	line	Player	Ok thanks. I'll do my best to stop the demon.
+4	line	Aris	Good luck, and may Guthix be with you!
+4	action	Demon Slayer is started.
+4	action	end
+1	option	No.
+2	line	Player	No, I don't believe in that stuff.
+2	line	Aris	Ok suit yourself.
+2	action	end
+0	section	Aris after starting the quest
+1	line	Aris	Greetings. How goes thy quest?
+1	line	Player	I'm still working on it.
+1	line	Aris	Well if you need any advice I'm always here, young one.
+1	option	What is the magical incantation?
+2	action	above
+1	option	Where can I find Silverlight?
+2	action	above
+1	option	Stop calling me that!
+2	line	Player	Stop calling me that!
+2	line	Aris	In the scheme of things you are very young.
+2	option	Ok but how old are you?
+3	line	Player	Ok, but how old are you?
+3	line	Aris	Count the number of legs on the stools in the Blue Moon inn, and multiply that number by seven.
+3	line	Player	Er, yeah, whatever.
+3	action	end
+2	option	Oh if it's in the scheme of things that's ok.
+3	line	Player	Oh if it's in the scheme of things that's ok.
+3	line	Aris	You show wisdom for one so young.
+3	action	end
+1	option	Well I'd better press on with it.
+2	line	Player	Well I'd better press on with it.
+2	line	Aris	See you anon.
+2	action	end
+0	section	Sir Prysin
+1	line	Sir Prysin	Hello, who are you?
+1	option	I am a mighty adventurer. Who are you?
+2	line	Player	I am a mighty adventurer, who are you?
+2	line	Sir Prysin	I am Sir Prysin. A bold and famous knight of the realm.
+2	action	end
+1	option	I'm not sure, I was hoping you could tell me.
+2	line	Player	I was hoping you could tell me.
+2	line	Sir Prysin	Well I've never met you before.
+2	action	end
+1	option	Aris said I should come and talk to you.
+2	line	Player	Aris said I should come and talk to you.
+2	line	Sir Prysin	Aris? Is she still alive? I remember her from when I was pretty young. Well what do you need to talk to me about?
+2	option	I need to find Silverlight.
+3	line	Player	I need to find Silverlight.
+3	line	Sir Prysin	What do you need to find that for?
+3	line	Player	I need it to fight Delrith.
+3	line	Sir Prysin	Delrith? I thought the world was rid of him, thanks to my great-grandfather.
+3	option	Well, Aris' crystal ball seems to think otherwise.
+4	line	Player	Well Aris' crystal ball seems to think otherwise.
+4	line	Sir Prysin	Well if the ball says so, I'd better help you.
+4	line	Sir Prysin	The problem is getting Silverlight.
+4	line	Player	You mean you don't have it?
+4	line	Sir Prysin	Oh I do have it, but it is so powerful that the king made me put it in a special box which needs three different keys to open it. That way it won't fall into the wrong hands.
+4	option	So give me the keys!
+5	line	Player	So give me the keys!
+5	line	Sir Prysin	Um, well, it's not so easy.
+5	line	Sir Prysin	I kept one of the keys. I gave the other two to other people for safe keeping.
+5	line	Sir Prysin	One I gave to Rovin, the captain of the palace guard.
+5	line	Sir Prysin	I gave the other to the wizard Traiborn.
+5	select	Select an Option
+5	option	Can you give me your key?
+6	line	Player	Can you give me your key?
+6	line	Sir Prysin	Um.... ah....
+6	line	Sir Prysin	Well there's a problem there as well.
+6	line	Sir Prysin	I managed to drop the key in the drain just outside the palace kitchen. It is just inside and I can't reach it.
+6	select	Select an Option
+6	option	So what does the drain lead to?
+7	line	Player	So what does the drain connect to?
+7	line	Sir Prysin	It is the drain for the drainpipe running from the sink in the kitchen down to the palace sewers.
+7	select	Select an Option
+7	option	Where can I find Captain Rovin?
+8	action	below
+7	option	Where does the wizard live?
+8	action	below
+7	option	Well I'd better go key hunting.
+8	line	Player	Well I'd better go key hunting.
+8	line	Sir Prysin	Ok, goodbye.
+8	action	end
+6	option	Where can I find Captain Rovin?
+7	action	below
+6	option	Where does the wizard live?
+7	action	below
+5	option	Where can I find Captain Rovin?
+6	line	Player	Where can I find Captain Rovin?
+6	line	Sir Prysin	Captain Rovin lives at the top of the guards' quarters in the north-west wing of this palace.
+6	select	Select an Option
+6	option	Can you give me your key?
+7	action	above
+6	option	Where does the wizard live?
+7	action	below
+6	option	Well I'd better go key hunting.
+7	action	above
+5	option	Where does the wizard live?
+6	line	Player	Where does the wizard live?
+6	line	Sir Prysin	Wizard Traiborn?
+6	line	Sir Prysin	He is one of the wizards who lives in the tower on the little island just off the south coast. I believe his quarters are on the first floor of the tower.
+6	select	Select an Option
+6	option	Can you give me your key?
+7	action	above
+6	option	Where can I find Captain Rovin?
+7	action	above
+6	option	Well I'd better go key hunting.
+7	action	above
+4	option	And why is this a problem?
+5	line	Player	And why is this a problem?
+5	line	Sir Prysin	I kept one of the keys. I gave the other two to other people for safe keeping.
+5	action	above
+3	option	He's back and unfortunately I've got to deal with him.
+4	line	Player	He's back and unfortunately I've got to deal with him.
+4	line	Sir Prysin	You don't look up to much. I suppose Silverlight may be good enough to carry you through though.
+4	line	Sir Prysin	The problem is getting Silverlight.
+4	line	Player	You mean you don't have it?
+4	action	above
+2	option	Yes, she is still alive.
+3	line	Player	Yes she is still alive. She lives right outside the castle!
+3	line	Sir Prysin	Oh, is that the same Aris? I would have thought she would have died by now. She was pretty old when I was a lad.
+3	line	Sir Prysin	Anyway, what can I do for you?
+3	line	Player	I need to find Silverlight.
+3	action	above
+0	section	Talking to Sir Prysin again before getting keys
+1	line	Sir Prysin	So how are you doing with getting the keys?
+1	line	Player	I haven't found any of them yet.
+1	option	Can you remind me where all the keys were again?
+2	line	Player	Can you remind me where all the keys were again?
+2	line	Sir Prysin	I kept one of the keys. I gave the other two to other people for safe keeping.
+2	line	Sir Prysin	One I gave to Rovin, the captain of the palace guard.
+2	line	Sir Prysin	I gave the other to the wizard Traiborn.
+2	option	Can you give me your key?
+3	action	above
+2	option	Where can I find Captain Rovin?
+3	action	above
+2	option	Where does the wizard live?
+3	action	above
+1	option	I'm still looking.
+2	line	Player	I'm still looking.
+2	line	Sir Prysin	Ok, tell me when you've got them all.
+2	action	end
+0	section	Returning to Sir Prysin with one key
+1	line	Sir Prysin	So how are you doing with getting the keys?
+1	cond	If the player has the key from Captain Rovin:
+2	line	Player	I've got the key from Captain Rovin.
+2	action	above
+1	cond	If the player has the key from Wizard Traiborn:
+2	line	Player	I've got the key from Wizard Traiborn.
+2	action	above
+1	cond	If the player has the key from the drain:
+2	line	Player	I've got the key which you dropped down the drain.
+2	action	above
+0	section	Talking to Sir Prysin with two keys
+1	line	Sir Prysin	So how are you doing with getting the keys?
+1	cond	If the player has keys from Traiborn and Rovin:
+2	line	Player	I've got the keys from Wizard Traiborn and Captain Rovin.
+2	action	above
+1	cond	If the player has keys from Rovin and the drain:
+2	line	Player	I've got the key from Captain Rovin and the one that you dropped down the drain.
+2	action	above
+1	cond	If the player has keys from Traiborn and the drain:
+2	line	Player	I've got the key from Wizard Traiborn and the one that you dropped down the drain.
+2	action	above
+0	section	Getting the key from Captain Rovin
+1	line	Captain Rovin	What are you doing up here? Only the palace guards are allowed up here.
+1	select	Select an Option
+1	option	I am one of the palace guards.
+1	option	What about the King?
+1	option	Yes I know, but this is important.
+2	line	Player	Yes, I know, but this is important.
+2	line	Captain Rovin	Ok, I'm listening. Tell me what's so important.
+2	select	Select an Option
+2	option	There's a demon who wants to invade this city.
+3	line	Player	There's a demon who wants to invade the city.
+3	line	Captain Rovin	Is it a powerful demon?
+3	select	Select an Option
+3	option	Not really.
+4	line	Player	Not really.
+4	line	Captain Rovin	Well, I'm sure the palace guards can deal with it, then. Thanks for the information.
+4	action	end
+3	option	Yes, very.
+4	line	Player	Yes, very.
+4	line	Captain Rovin	As good as the palace guards are, I don't know if they're up to taking on a very powerful demon.
+4	select	Select an Option
+4	option	Yeah, the palace guards are rubbish!
+5	line	Player	Yeah, the palace guards are rubbish!
+5	line	Captain Rovin	Yeah, they're--
+5	line	Captain Rovin	Wait! How dare you insult the palace guards? Get out of my sight!
+5	action	end
+4	option	It's not them who are going to fight the demon, it's me.
+5	line	Player	It's not them who are going to fight the demon, it's me.
+5	line	Captain Rovin	What, all by yourself? How are you going to do that?
+5	line	Player	I'm going to use the powerful sword Silverlight, which I believe you have one of the keys for?
+5	line	Captain Rovin	Yes, I do. But why should I give it to you?
+5	select	Select an Option
+5	option	Fortune-teller Aris said I was destined to kill the demon.
+6	line	Player	Fortune-teller Aris said I was destined to kill the demon.
+6	line	Captain Rovin	A fortune-teller? Destiny? I don't believe in that stuff. I got where I am today by hard work, not by destiny! Why should I care what that mad old fortune-teller says?
+6	action	other
+5	option	Otherwise the demon will destroy the city!
+6	line	Player	Otherwise the demon will destroy the city!
+6	line	Captain Rovin	You can't fool me! How do I know you haven't just made that story up to get my key?
+6	action	other
+5	option	Sir Prysin said you would give me the key.
+6	line	Player	Sir Prysin said you would give me the key.
+6	line	Captain Rovin	Oh, he did, did he? Well I don't report to Sir Prysin, I report directly to the king!
+6	line	Captain Rovin	I didn't work my way up through the ranks of the palace guards so I could take orders from an ill-bred moron who only has his job because his great- grandfather was a hero with a silly name!
+6	select	Select an Option
+6	option	Why did he give you one of the keys then?
+7	line	Player	Why did he give you one of the keys then?
+7	line	Captain Rovin	Only because the king ordered him to! The king couldn't get Sir Prysin to part with his precious ancestral sword, but he made him lock it up so he couldn't lose it.
+7	line	Captain Rovin	I got one key and I think some wizard got another. Now what happened to the third one?
+7	line	Player	Sir Prysin dropped it down a drain!
+7	line	Captain Rovin	Ha ha ha! The idiot!
+7	line	Captain Rovin	Okay, I'll give you the key, just so that it's you that kills the demon and not Sir Prysin!
+7	box	Captain Rovin hands you a key.
+7	action	end
+6	option	Aris said I was destined to kill the demon.
+7	action	above
+6	option	Otherwise the demon will destroy the city!
+7	action	above
+1	option	Erm I forgot.
+1	option	The castle has just received its ale delivery.
+0	section	Talking to Captain Rovin again after obtaining the key
+1	line	Captain Rovin	What are you doing up here? Only the palace guards are allowed up here.
+1	select	Select an Option
+1	option	I am one of the palace guards.
+1	option	What about the King?
+1	option	Yes I know, but this is important.
+2	line	Player	Yes, I know, but this is important.
+2	line	Captain Rovin	Ok, I'm listening. Tell me what's so important.
+2	select	Select an Option
+2	option	There's a demon who wants to invade this city.
+3	line	Player	There's a demon who wants to invade the city.
+3	line	Captain Rovin	Yes, you said before, haven't you killed it yet?
+3	line	Player	Well I'm going to use the powerful sword Silverlight, which I believe you have one of the keys for?
+3	cond	If the player has the key in their inventory:
+4	line	Captain Rovin	I already gave you my key. Check your pockets.
+4	action	end
+3	cond	If the player has the key in their bank:
+4	line	Captain Rovin	I already gave you my key. Maybe you left it somewhere. Have you checked your bank account?
+4	action	end
+2	option	Erm I forgot.
+2	option	The castle has just received its ale delivery.
+0	section	Searching the drain near the palace kitchen
+1	line	Player	That must be the key Sir Prysin dropped.
+1	line	Player	I don't seem to be able to reach it. I wonder if I can dislodge it somehow. That way it may go down into the sewers.
+1	action	end
+0	section	Pouring water in the drain
+1	action	(The player hears a clink.)
+1	line	Player	OK, I think I've washed the key down into the sewer. I'd better go down and get it!
+1	action	end
+0	section	Pouring more water down the drain
+1	action	end
+0	section	Searching the drain after washing down the key/outside the quest
+1	action	end
+0	section	Picking up the key from the sewers
+1	box	You pick up an old rusty key.
+1	action	end
+0	section	Getting the key from Traiborn
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Player	I need to get a key given to you by Sir Prysin.
+2	line	Wizard Traiborn	Sir Prysin? Who's that? What would I want his key for?
+2	select	Select an Option
+2	option	He told me you were looking after it for him.
+3	line	Player	He told me you were looking after it for him.
+3	line	Wizard Traiborn	That wasn't very clever of him. I'd lose my head if it wasn't screwed on. Go and tell him to find someone else to look after his valuables in future.
+3	select	Select an Option
+3	option	Okay, I'll go and tell him that.
+4	line	Player	Okay, I'll go and tell him that.
+4	line	Wizard Traiborn	Oh that's great, if it wouldn't be too much trouble.
+4	select	Select an Option
+4	option	Err I'd better be off really.
+5	line	Player	Err I'd better be off really.
+5	line	Wizard Traiborn	Oh ok, have a good time, and watch out for sheep! They're more cunning than they look.
+5	action	end
+4	option	Well, have you got any keys knocking around?
+5	action	below
+3	option	Well, have you got any keys knocking around?
+4	action	below
+2	option	He's one of the King's knights.
+3	line	Player	He's one of the King's knights.
+3	line	Wizard Traiborn	Say, I remember one of the King's knights. He had nice shoes...
+3	line	Wizard Traiborn	...and didn't like my homemade spinach rolls. Would you like a spinach roll?
+3	select	Select an Option
+3	option	Yes please.
+4	line	Player	Yes please.
+4	box	Traiborn digs around in the pockets of his robes. After a few moments he triumphantly presents you with a spinach roll.
+4	line	Player	Thank you very much.
+4	select	Select an Option
+4	option	Err I'd better be off really.
+5	action	above
+4	option	Well, have you got any keys knocking around?
+5	action	below
+3	option	Just tell me if you have the key.
+4	line	Player	Just tell me if you have the key.
+4	line	Wizard Traiborn	The key? The key to what?
+4	line	Wizard Traiborn	There's more than one key in the world don't you know? Would be a bit odd if there was only the one.
+4	select	Select an Option
+4	option	It's the key to get a sword called Silverlight.
+5	line	Player	It's the key to get a sword called Silverlight.
+5	line	Wizard Traiborn	Silverlight? Never heard of that. Sounds a good name for a ship. Are you sure it's not the name of a ship rather than a sword?
+5	select	Select an Option
+5	option	Yeah, pretty sure.
+6	line	Player	Yeah, pretty sure.
+6	line	Wizard Traiborn	That's a pity, waste of a name.
+6	select	Select an Option
+6	option	Err I'd better be off really.
+7	action	above
+6	option	Well, have you got any keys knocking around?
+7	action	below
+5	option	Well, have you got any keys knocking around?
+6	action	below
+4	option	You've lost it, haven't you?
+5	line	Player	You've lost it haven't you?
+5	line	Wizard Traiborn	Me? Lose things? That's a nasty accusation.
+5	line	Player	Well, have you got any keys knocking around?
+5	action	continues
+2	option	Well, have you got any keys knocking around?
+3	line	Player	Well, have you got any keys knocking around?
+3	line	Wizard Traiborn	Now you come to mention it, yes I do have a key. It's in my special closet of valuable stuff. Now how do I get into that?
+3	line	Wizard Traiborn	I sealed it using one of my magic rituals. So it would make sense that another ritual would open it again.
+3	line	Player	So do you know what ritual to use?
+3	line	Wizard Traiborn	Let me think a second.
+3	line	Wizard Traiborn	Yes a simple drazier style ritual should suffice. Hmm, main problem with that is I'll need 25 sets of bones. Now where am I going to get hold of something like that?
+3	select	Select an Option
+3	option	Hmm, that's too bad. I really need that key.
+4	line	Player	Hmm, that's too bad. I really need that key.
+4	line	Wizard Traiborn	Ah well, sorry I couldn't be any more help.
+4	action	end
+3	option	I'll get the bones for you.
+4	line	Player	I'll help get the bones for you.
+4	line	Wizard Traiborn	Ooh that would be very good of you.
+4	line	Player	Okay, I'll speak to you when I've got some bones.
+4	action	end
+1	option	Talk about something else.
+0	section	Returning with no bones to Traiborn
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Wizard Traiborn	How are you doing finding bones?
+2	line	Player	I haven't got any at the moment.
+2	line	Wizard Traiborn	Nevermind, keep working on it.
+2	action	end
+1	option	Talk about something else.
+0	section	Returning with some bones to Traiborn
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Wizard Traiborn	How are you doing finding bones?
+2	line	Player	I have some bones.
+2	line	Wizard Traiborn	Give 'em here then.
+2	box	You give Traiborn [X] set of bones.
+2	line	Player	That's all of them.
+2	line	Wizard Traiborn	I still need [25-X] more.
+2	line	Player	Ok, I'll keep looking.
+2	action	end
+1	option	Talk about something else.
+0	section	Returning with the last of the bones to Traiborn
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Wizard Traiborn	How are you doing finding bones?
+2	line	Player	I have some bones.
+2	line	Wizard Traiborn	Give 'em here then.
+2	box	You give Traiborn [X] sets of bones.
+2	line	Wizard Traiborn	Hurrah! That's all 25 sets of bones.
+2	line	Wizard Traiborn	Wings of dark and colour too, Spreading in the morning dew; Locked away I have a key; Return it now, please, unto me.
+2	action	(A weird-looking wardrobe pops out from the ground.)
+2	box	Traiborn hands you a key.
+2	line	Player	Thank you very much.
+2	line	Wizard Traiborn	Not a problem for a friend of Sir What's-his-face.
+2	action	end
+1	option	Talk about something else.
+0	section	Traiborn after obtaining the key
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Wizard Traiborn	Don't you have somewhere to be, young thingummywut? You still have that key you asked me for.
+2	line	Player	You're right. I've got a demon to slay.
+2	action	end
+1	option	Talk about something else.
+0	section	Traiborn after losing the key
+1	line	Wizard Traiborn	Ello young thingummywut.
+1	select	Select an Option
+1	option	Talk about Demon Slayer.
+2	line	Wizard Traiborn	Ello young thingummywut.
+2	line	Player	I've lost the key you gave to me.
+2	line	Wizard Traiborn	Yes I know, it was returned to me. If you want it back you're going to have to collect another 25 sets of bones.
+2	action	end
+1	option	Talk about something else.
+0	section	Returning to Sir Prysin with all the keys
+1	line	Sir Prysin	So how are you doing with getting the keys?
+1	line	Player	I've got all three keys!
+1	line	Sir Prysin	Excellent! Now I can give you Silverlight.
+1	box	Sir Prysin hands you a very shiny sword.
+1	line	Sir Prysin	That sword belonged to my great-grandfather. Make sure you treat it with respect!
+1	line	Sir Prysin	Now go kill that demon!
+1	action	end
+0	section	After talking to Sir Prysin
+1	line	Aris	How goes the quest?
+1	line	Player	I found Sir Prysin. Unfortunately I haven't got the sword yet. He's made it complicated for me.
+1	line	Aris	Ok, hurry, we haven't much time.
+1	option	What is the magical incantation?
+2	action	above
+1	option	Well I'd better press on with it.
+2	line	Player	Well I'd better press on with it.
+2	line	Aris	See you anon.
+2	action	end
+0	section	Talking to Sir Prysin before fighting Delrith
+1	line	Sir Prysin	Have you sorted that demon out yet?
+1	cond	If the player has Silverlight:
+2	line	Player	No, not yet.
+2	line	Sir Prysin	Well get on with it. He'll be pretty powerful when he gets to full strength.
+2	action	end
+1	cond	If the player does not have Silverlight:
+2	line	Player	Not yet. And I, um, lost Silverlight.
+2	line	Sir Prysin	Yes, I know, someone returned it to me. Take better care of it this time. With full inventory it drops to the ground.
+2	action	end
+0	section	Aris after acquiring the sword
+1	line	Aris	How goes the quest?
+1	line	Player	I have the sword now. I just need to kill the demon, I think.
+1	line	Aris	Yep, that's right.
+1	select	What would you like to say?
+1	option	What is the magical incantation?
+2	action	above
+1	option	No full stop.}}
+2	action	above
+1	option	Where can I find the demon?
+2	line	Player	Where can I find the demon?
+2	line	Aris	Just head south and you should find the stone circle just outside the city gate.
+2	action	end
+0	section	The final battle
+1	line	Denath	Arise, O mighty Delrith! Bring destruction to this soft, weak city!
+1	line	Dark wizards	Arise, Delrith!
+1	box	The wizards cast an evil spell...
+1	line	Denath	Ha ha ha! At last you are free, my demonic brother! Rest now, and then have your revenge on this pitiful city!
+1	line	Dark wizard	Who's that?
+1	line	Denath	Noo! Not Silverlight! Delrith is not ready yet!
+1	line	Denath	I've got to get out of here...
+1	action	end
+0	section	Attempting to attack Delrith without Silverlight
+1	action	end
+0	section	After lowering Delrith's Hitpoints to 0
+1	line	Player	Now what was that incantation again?
+1	action	The following five words in the order from earlier on.
+1	line	Player	[word 1]...
+1	line	Player	[word 2]...
+1	line	Player	[word 3]...
+1	line	Player	[word 4]...
+1	line	Player	[word 5]!
+1	action	If the player incorrectly selects the five words:
+2	box	The vortex collapses. That was the wrong incantation.
+1	action	If the player correctly selects the five words:
+2	box	Delrith is sucked into the vortex...
+2	box	...back into the dark dimension from which he came.
+0	section	Post-quest
+0	section	Talking to Aris
+1	line	Aris	Greetings young one.
+1	line	Aris	You're a hero now. That was a good bit of demonslaying.
+1	select	What would you like to say?
+1	option	How do you know I killed it?
+2	line	Player	How do you know I killed it?
+2	line	Aris	You forget. I'm good at knowing things.
+2	action	end
+1	option	Thanks.
+2	line	Player	Thanks.
+2	action	end
+1	option	Stop calling me that!
+2	line	Player	Stop calling me that!
+2	line	Aris	In the scheme of things you are very young.
+2	select	What would you like to say?
+2	option	Ok but how old are you?
+3	line	Player	Ok, but how old are you?
+3	line	Aris	Count the number of legs on the stools in the Blue Moon inn, and multiply that number by seven.
+3	line	Player	Er, yeah, whatever.
+3	action	end
+2	option	Oh if it's in the scheme of things that's ok.
+3	line	Player	Oh if it's in the scheme of things that's ok.
+3	line	Aris	You show wisdom for one so young.
+3	action	end
+0	section	Claiming the antique lamp from Aris
+1	line	Aris	I have a little something here for you, young one. Consider it a gift for slaying that demon.
+1	action	antique lamps]]
+1	line	Player	How do you know I killed it?
+1	line	Aris	You forget. I'm good at knowing things.
+1	action	end

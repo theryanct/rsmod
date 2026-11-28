@@ -30,7 +30,9 @@ public class DbRowTypeBuilder(public var internal: String? = null) {
             val table = select(edit, base, default = null) { table }
             val data = mergeMap(edit, base) { data }
             val types = mergeMap(edit, base) { types }
-            val columnCount = select(edit, base, default = 0) { columnCount }
+            // The merged row keeps every base column (mergeMap), so it needs the larger count:
+            // an edit of column 3 alone would otherwise shrink a 50-column row's header to 4.
+            val columnCount = maxOf(edit.columnCount, base.columnCount)
             val internalId = select(edit, base, default = null) { internalId }
             val internalName = select(edit, base, default = null) { internalName }
             return UnpackedDbRowType(

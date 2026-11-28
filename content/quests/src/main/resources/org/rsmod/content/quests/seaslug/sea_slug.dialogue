@@ -1,0 +1,302 @@
+# Generated from the OSRS Wiki page "Transcript:Sea Slug" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Player	Hello there.
+1	line	Caroline	Is there any chance you could help me?
+1	line	Player	What's wrong?
+1	line	Caroline	It's my husband, he works on a fishing platform. Once a month he takes our son, Kennith, out with him.
+1	line	Caroline	They usually write to me regularly, but I've heard nothing all week. It's very strange.
+1	line	Player	Maybe the post was lost!
+1	line	Caroline	Maybe, but no-one's heard from the other fishermen on the platform. Their families are becoming quite concerned.
+1	line	Caroline	Is there any chance you could visit the platform and find out what's going on?
+1	cond	If the player's Firemaking level is less than 30:
+2	box	Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it.
+2	action	continues
+1	cond	If the player's Firemaking level is 30 or above:
+2	select	Start the Sea Slug quest?
+2	option	Yes.
+3	line	Player	I suppose so, how do I get there?
+3	line	Caroline	That's very good of you {player}. My friend Holgart will take you there.
+3	line	Player	Ok, I'll go and see if they're ok.
+3	line	Caroline	I'll reward you for your time. It'll give me peace of mind to know Kennith and my husband, Kent, are safe.
+3	action	end
+2	option	No.
+3	line	Player	I'm sorry, I'm too busy.
+3	line	Caroline	That's a shame.
+3	line	Player	Bye.
+3	line	Caroline	Bye.
+3	action	end
+0	section	Talking to Caroline again
+1	line	Player	Hello Caroline.
+1	line	Caroline	Brave {player}, have you any news about my son and his father?
+1	line	Player	I'm working on it now Caroline.
+1	line	Caroline	Please bring them back safe and sound.
+1	line	Player	I'll do my best.
+1	action	end
+0	section	Talking to Holgart
+1	line	Player	Hello.
+1	line	Holgart	Hello m'hearty.
+1	line	Player	I would like a ride on your boat to the fishing platform.
+1	line	Holgart	I'm afraid it isn't sea worthy, it's full of holes. To fill the holes I'll need some swamp paste.
+1	line	Player	Swamp paste?
+1	line	Holgart	Yes, swamp tar mixed with flour and heated over a fire.
+1	cond	If the player already has one swamp paste in their inventory:
+2	line	Holgart	In fact, unless me nose be mistaken, you've got some in yer pack.
+2	line	Player	Oh yes, I forgot about that stuff. Can you use it?
+2	line	Holgart	Aye, that be perfect.
+2	line	Holgart	Right me hearty. Let's get this boat fixed.
+2	line	Holgart	Huzzah! We've fixed the leaky old tub.
+2	action	end
+1	cond	If the player does not have swamp tar:
+2	line	Player	Where can I find swamp tar?
+2	line	Holgart	Unfortunately the only supply of swamp tar is in the swamps below Lumbridge. It's too far for an old man like me to travel.
+2	line	Holgart	If you make me some swamp paste I'll give you a ride in my boat.
+2	line	Player	I'll see what I can do.
+2	action	end
+0	section	Talking to Holgart again
+1	line	Player	Hello Holgart.
+1	line	Holgart	Hello m'hearty. Did you manage to make some swamp paste?
+1	cond	If the player does not have swamp tar:
+2	line	Player	I'm afraid not.
+2	line	Holgart	It's simply swamp tar mixed with flour heated over a fire. Unfortunately the only supply of swamp tar is in the swamps below Lumbridge.
+2	line	Holgart	I can't fix my row boat without it.
+2	line	Player	Ok, I'll try to find some.
+2	action	end
+1	cond	If the player has swamp tar:
+2	line	Player	Yes, I have some here.
+2	line	Holgart	Right me hearty. Let's get this boat fixed.
+2	line	Holgart	Huzzah! We've fixed the leaky old tub.
+2	action	end
+0	section	Talking to Holgart after fixing the boat
+1	line	Player	Hello Holgart.
+1	line	Holgart	Hello again land lover. There's some strange goings on, on that platform, I tell you.
+1	select	Select an option
+1	option	Will you take me there?
+2	line	Player	Will you take me there?
+2	line	Holgart	Of course m'hearty. If that's what you want.
+2	box	You arrive at the fishing platform.
+2	action	end
+1	option	I'm keeping away from there.
+2	line	Player	I'm keeping away from there.
+2	line	Holgart	Fair enough m'hearty.
+2	action	end
+0	section	At the Fishing Platform
+0	section	Talking to Holgart at the Fishing Platform
+1	line	Player	Hey, Holgart.
+1	line	Holgart	Have you had enough of this place yet? It's really starting to scare me.
+1	select	Select an option
+1	option	No, I'm going to stay a while.
+2	line	Player	No, I'm going to stay a while.
+2	line	Holgart	Okay... you're the boss.
+2	action	end
+1	option	Okay, let's go back.
+2	line	Player	Okay, let's go back.
+2	line	Holgart	Okay m'hearty, jump on.
+2	action	Holgart takes the player back to Witchaven.
+2	action	end
+0	section	Taking a Sea slug
+1	line	Player	Ouch!
+1	action	The player takes 3 hitpoints.
+1	action	end
+0	section	Talking to Bailey
+1	line	Player	Hello there.
+1	line	Bailey	What? Who are you? Come inside quickly!
+1	line	Bailey	What are you doing here?
+1	line	Player	I'm trying to find out what happened to a boy named Kennith.
+1	line	Bailey	Oh you mean Kent's son. He's around somewhere, probably hiding if he knows what's good for him.
+1	line	Player	Hiding from what? What's got you so frightened?
+1	line	Bailey	Haven't you seen all those things out there?
+1	line	Player	The sea slugs?
+1	line	Bailey	It all began about a week ago. We pulled up a haul of deep sea flatfish. Mixed in with them we found those slug things, but thought nothing of it.
+1	line	Bailey	Not long after that my friends began to change, now they spend all day pulling in hauls of fish, only to throw back the fish and keep those nasty sea slugs.
+1	line	Bailey	What am I supposed to do with those? I haven't figured out how to kill one yet, if I put them near the stove they squirm and jump away.
+1	line	Player	I doubt they would taste too good.
+1	line	Bailey	This is no time for humour.
+1	line	Player	I'm sorry, I didn't mean to upset you.
+1	line	Bailey	That's okay. I just can't shake the feeling that this is the start of something... Terrible.
+1	action	end
+0	section	Talking to Kennith
+1	line	Player	Are you okay young one?
+1	line	Kennith	No, I want my daddy!
+1	line	Player	Where is your father?
+1	line	Kennith	He went to get help days ago.
+1	line	Kennith	The nasty fishermen tried to throw me and daddy into the sea. So he told me to hide here.
+1	line	Player	That's good advice, you stay here and I'll go try and find your father.
+1	action	end
+0	section	Subsequent dialogue with Kennith
+1	line	Player	Are you okay?
+1	line	Kennith	I want to see daddy!
+1	line	Player	I'm working on it.
+1	action	end
+1	cond	If the player kicks the loose panel near Kennith:
+2	action	end
+0	section	Talking to Holgart after talking to Kennith
+1	line	Player	Holgart, something strange is going on here.
+1	line	Holgart	You're telling me, none of the sailors seem to remember who I am.
+1	line	Player	Apparently Kennith's father left for help a couple of days ago.
+1	line	Holgart	That's a worry, no-one's heard from him on shore. Come on, we'd better go look for him.
+1	box	You arrive on a small island.
+1	action	end
+0	section	At the shipwreck island
+0	section	Talking to Holgart
+1	line	Player	Where are we?
+1	line	Holgart	Someway off mainland still. You'd better see if me old matey's okay.
+1	action	end
+0	section	Talking to Kent
+1	line	Kent	Oh thank Saradomin! I thought I'd be left out here forever.
+1	line	Player	Your wife sent me out to find you and your boy. Kennith's fine by the way, he's on the platform.
+1	line	Kent	I knew the row boat wasn't sea worthy. I couldn't risk bringing him along but you must get him off that platform.
+1	line	Player	What's going on here?
+1	line	Kent	Five days ago we pulled in a huge catch. As well as fish we caught small slug like creatures, hundreds of them.
+1	line	Kent	That's when the fishermen began to act strange.
+1	line	Kent	It was the sea slugs, they attach themselves to your body and somehow take over the mind of the carrier.
+1	line	Kent	I told Kennith to hide until I returned but I was washed up here.
+1	line	Kent	Please go back and get my boy, you can send help for me later.
+1	action	Kent notices a sea slug in your torso.
+1	line	Kent	{player} wait!
+1	line	Kent	A few more minutes and that thing would have full control of your body.
+1	line	Player	Yuck! Thanks Kent.
+1	action	end
+0	section	Subsequent dialogue with Kent
+1	line	Player	Hello.
+1	line	Kent	Oh my, I must get back to shore.
+1	action	end
+0	section	Talking to Holgart again before returning to the fishing platform
+1	line	Player	We'd better get back to the platform so we can see what's going on.
+1	line	Holgart	You're right. It all sounds pretty creepy.
+1	box	You arrive at the fishing platform.
+1	action	end
+0	section	Rescuing Kennith
+0	section	Talking to Bailey
+1	line	Player	Hello.
+1	line	Bailey	Oh, thank the gods it's you. They've all gone mad I tell you, one of the fishermen tried to throw me into the sea!
+1	line	Player	They're all being controlled by the sea slugs.
+1	line	Bailey	I figured as much.
+1	line	Player	I need to get Kennith off this platform, but I can't get past the fishermen.
+1	line	Bailey	The sea slugs are scared of heat, I figured that out when I tried to cook them.
+1	line	Bailey	Here.
+1	cond	If the player has no space in their inventory:
+2	box	Bailey gives you a torch.
+2	action	The unlit torch is dropped to the ground.
+2	action	continues
+1	cond	If the player has one free space in their in their inventory:
+2	action	
+2	line	Bailey	I doubt the fishermen will come near you if you can get this torch lit.
+2	line	Bailey	The only problem is all the wood and flint are damp... I can't light a thing!
+2	action	end
+1	cond	If the player loses their unlit torch:
+2	line	Player	I've managed to lose my torch.
+2	line	Bailey	That was silly, fortunately I have another. Here, take it.
+2	action	
+2	action	end
+0	section	Talking to Bailey again with the unlit torch
+1	line	Player	I'd better find a way to light this torch, and soon.
+1	action	end
+0	section	Interacting with the items
+1	cond	If the player attempts to use the tinderbox on damp sticks:
+2	action	end
+1	cond	If the player attempts to use the tinderbox on an unlit torch:
+2	action	end
+1	cond	If the player lights a fire upstairs and uses damp sticks on the fire:
+2	box	You can't cook that.
+2	action	end
+1	cond	If the player rotates the crane upstairs:
+2	action	end
+0	section	Making a fire
+1	cond	If the player uses the broken glass on the damp sticks:
+2	action	The player uses the broken glass to heat up the damp sticks.
+2	action	
+2	action	end
+1	cond	If the player attempts to rub the dry sticks without level 30 Firemaking:
+2	action	end
+1	cond	If the player attempts to rub the dry sticks with at least level 30 Firemaking:
+2	cond	If the player gets the sticks but does not get a fire:
+3	action	end
+2	cond	If the player gets the sticks to start a fire:
+3	cond	If the player does not have an unlit torch (or has an unlit candle or lantern instead) in their inventory:
+4	action	end
+3	cond	If the player has an unlit torch in their inventory:
+4	action	end
+0	section	Talking to Bailey with the lit torch
+1	line	Player	I've managed to light the torch.
+1	line	Bailey	Well done traveller, you'd better get Kennith out of here soon.
+1	line	Bailey	The fishermen are becoming stranger by the minute, and they keep pulling up those blasted sea slugs.
+1	line	Player	Don't worry I'm working on it.
+1	line	Bailey	Just be sure to watch your back. The fishermen seem to have taken notice of you.
+1	action	end
+0	section	Attempting to go upstairs with an unlit torch
+1	line	Player	Ouch!
+1	action	The player is dealt 4 Hitpoints.
+1	action	end
+0	section	Going upstairs with a lit torch
+0	section	Talking to Kennith
+1	line	Player	Hello Kennith, are you okay?
+1	line	Kennith	No, I want my daddy.
+1	line	Player	You'll be able to see him soon. First we need to get you back to land, come with me to the boat.
+1	line	Kennith	No!
+1	line	Player	What, why not?
+1	line	Kennith	I'm scared of those nasty sea slugs. I won't go near them.
+1	line	Player	Okay, you wait here and I'll go figure another way to get you out.
+1	action	end
+0	section	Using the lit torch
+1	cond	If the player uses the lit torch on any sea slug:
+2	action	end
+1	cond	If the player uses the lit torch on a possessed fisherman:
+2	action	end
+1	cond	If the player uses the lit torch on the ice cube:
+2	action	end
+0	section	Freeing Kennith
+1	cond	If the player kicks the loose panel near Kennith after talking to Bailey:
+2	action	end
+0	section	Talking to Kennith after making a hole in the wall
+1	cond	If there are sea slugs or fishermen nearby:
+2	action	end
+1	cond	If there are no sea slugs or fishermen nearby:
+2	line	Player	Kennith, I've made an opening in the wall. You can come out through there.
+2	line	Kennith	Are there any sea slugs on the other side?
+2	line	Player	Not one.
+2	line	Player	Kennith, I've made an opening in the wall. You can come out through there.
+2	line	Kennith	Are there any sea slugs on the other side?
+2	line	Player	Not one.
+2	line	Kennith	How will I get downstairs?
+2	line	Player	I'll figure that out in a moment.
+2	line	Kennith	Ok, when you have I'll come out.
+2	action	end
+0	section	Subsequent dialogue with Kennith
+1	action	end
+0	section	Using the crane
+1	cond	If the player is too far away from the crane:
+2	action	end
+1	cond	If the player is one tile from the crane:
+2	box	Kennith scrambles through the broken wall...
+2	box	Down below, you see Holgart collect the boy from the crane and lead him away to safety.
+2	action	end
+0	section	Attempting to use the crane again
+0	section	Talking to Bailey after freeing Kennith
+1	line	Player	Hello Bailey.
+1	line	Bailey	Hello again. I saw you managed to get Kennith off the platform. Well done. He wasn't safe around those slugs.
+1	line	Player	Are you going to come back with us?
+1	line	Bailey	No, these fishermen are my friends, I'm sure they can be saved. I'm going to stay and try to get rid of all these slugs.
+1	line	Player	Do you have a way of removing the slugs once they've attached themselves to someone?
+1	line	Bailey	Not yet but I'll keep working on it.
+1	line	Player	I only hope they stay confined to the fishing platform.
+1	line	Bailey	Yes, I dread to think what would happen if they got to Witchaven nearby.
+1	line	Bailey	I guess I'll just have to keep an eye on things here until a way of removing the slugs can be found.
+1	line	Player	You're braver than most. Take care of yourself Bailey.
+1	line	Bailey	You too {player}.
+1	action	end
+0	section	Talking to Holgart
+1	line	Player	Did you get the kid back to shore?
+1	line	Holgart	Yes, he's safe and sound with his parents. Your turn to return to land now adventurer.
+1	line	Player	Looking forward to it.
+1	box	The boat arrives at Witchaven.
+1	action	end
+0	section	Talking to Caroline
+1	line	Player	Hello.
+1	line	Caroline	Brave {player}, you've returned!
+1	line	Caroline	Kennith told me about the strange goings-on at the platform. I had no idea it was so serious.
+1	line	Caroline	I could have lost my son and my husband if it wasn't for you.
+1	line	Player	We found Kent stranded on an island.
+1	line	Caroline	Yes, Holgart told me and sent a rescue party out. Kent's back home now, resting with Kennith. I don't think he'll be doing any fishing for a while.
+1	line	Caroline	Here, take these Oyster pearls as a reward. They're worth quite a bit and can be used to make lethal crossbow bolts.
+1	line	Player	Thanks!
+1	line	Caroline	Thank you. Take care of yourself {player}.

@@ -1,0 +1,173 @@
+# Generated from the OSRS Wiki page "Transcript:Vampyre Slayer" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+1	line	Morgan	Could it be? A bold adventurer! Please, you must help us!
+1	line	Player	What is it? What's the problem?
+1	line	Morgan	It's the evil vampyre, Count Draynor! For too long he's terrorised us from his manor to the north. Someone finally needs to put a stop to him once and for all!
+1	cond	If the player has a combat level less than 20:
+2	box	Before starting this quest, be aware that your combat level is lower than the recommended level of 20.
+1	select	Start the Vampyre Slayer quest?
+1	option	Yes.
+2	line	Player	Sounds like a job for me. Where should I start?
+2	line	Morgan	Oh, thank goodness! I've been hoping this day would come for a long time, so I've made sure to do my research. I've heard of a retired vampyre hunter called Dr Harlow who lives in Varrock.
+2	line	Morgan	If you speak to him, I'm sure he'll be able to help. I hear he's a bit of an old soak these days, so he spends most of his time in the Blue Moon Inn.
+2	select	Select an option
+2	option	What else can you tell me about this vampyre?
+3	line	Player	What else can you tell me about this vampyre?
+3	line	Morgan	All sorts of things! I've studied the legends extensively!
+3	line	Player	Wait... legends? What do you mean legends?
+3	line	Morgan	The legends of Count Draynor! It's said that long ago, he travelled here from dark lands in the east. He built Draynor Manor, and from there he began his campaign of darkness against our peaceful lands!
+3	line	Player	Long ago? If this has been going on for so long, why has no one tried to stop him?
+3	line	Morgan	Many have tried. All have failed. Vampyres are not killed easily. Only those with the right skills and equipment have any hope of slaying one.
+3	line	Player	Like this Dr Harlow? Home come he's never tried to kill this Count Draynor?
+3	line	Morgan	I'm... not sure. Perhaps he was always too busy killing other vampyres?
+3	line	Player	Hmm... Something seems amiss here. Are you sure you're telling me everything?
+3	line	Morgan	Well... it is true that some claim Count Draynor hasn't left his manor for generations now.
+3	line	Player	So he's not actually attacked the village?
+3	line	Morgan	Er... no. At least, not for a long time! He used to though!
+3	line	Player	When?
+3	line	Morgan	Well... not since I've moved here at least.
+3	line	Player	So if there's no actual danger, why are you so keen for someone to kill this vampyre?
+3	line	Morgan	Because what if he does start attacking again? Are we just meant to live our lives constantly fearing the future?
+3	line	Player	It doesn't really sound like anyone is living in fear apart from you.
+3	line	Morgan	More fool them! Count Draynor has cast a shadow over Draynor Village for generations. They even named the place after him for Saradomin's sake!
+3	line	Morgan	Even if the people here don't realise it, we will never be at peace until we know he's dead!
+3	line	Player	If you're sure... I guess I'll go and see this Dr Harlow.
+3	line	Morgan	Thank you, brave adventurer.
+3	action	end
+2	option	Alright, I'll see about paying him a visit.
+3	line	Player	Alright, I'll see about paying him a visit.
+3	line	Morgan	Thank you, brave adventurer.
+3	action	end
+1	option	No.
+2	line	Player	An evil vampyre? I don't think this is the job for me. It sounds far too scary!
+2	line	Morgan	I understand... Hopefully someone else will come along to finally save us from this evil.
+2	action	end
+0	section	Talking to Morgan again
+1	line	Morgan	Adventurer! Has Count Draynor been dealt with yet?
+1	line	Player	I'm still working on it.
+1	line	Morgan	Please hurry! I'm sure Dr Harlow in Varrock's Blue Moon Inn can help.
+1	select	Select an option
+1	option	What else can you tell me about Count Draynor?
+2	action	above
+1	option	Alright, I'll see about paying him a visit.
+2	action	above
+0	section	Talking to Maris
+1	line	Maris	Hello there. You must be the adventurer that my husband mentioned. I wish you good luck in your quest.
+1	line	Player	Thank you.
+1	action	end
+0	section	Dr Harlow
+1	line	Dr Harlow	Buy me a drink pleassh...
+1	select	Select an option
+1	option	I need your help dealing with a vampyre.
+2	line	Player	I need your help dealing with a vampyre.
+2	line	Dr Harlow	A vampyre you shhay...?
+2	line	Player	Not just any vampyre. Count Draynor.
+2	line	Dr Harlow	Draynor? Well, buy me a beer firsht...
+2	line	Player	Are you sure you've not had enough?
+2	line	Dr Harlow	Huh? No, I don't think ssho. Now, buy ush a beer.
+2	action	end
+1	option	I think you've had enough.
+2	line	Player	I think you've had enough.
+2	action	end
+0	section	Talking to him again
+1	line	Dr Harlow	Have yoush got me a beer?
+1	select	Select an option
+1	option	I'll go and get you one.
+2	line	Player	I'll go and get you one.
+2	line	Dr Harlow	Cheersh, matey...
+2	action	end
+1	option	Yes, here you go.
+2	line	Player	Yes, here you go.
+2	box	You give a beer to Dr Harlow.
+2	line	Dr Harlow	Cheersh, matey...
+2	line	Player	Now, about Count Draynor...
+2	line	Dr Harlow	Yesh, Count Draynor! The evil nashty vampyre that no one's ever sheen! Every nowsh and then, some adventurer... theysh go and try to kill him, but none of 'em ever comesh back.
+2	line	Dr Harlow	You want to havesh a go? Then don't be likesh them! Be prepared! Vampyres... Theysh hard to kill. Some... maybe imposhible.
+2	line	Player	So how do I make sure I'm prepared?
+2	line	Dr Harlow	Most vampyres regenerate. Yoush need to stop them. I knowsh a few ways, but the easiest ish a stake. Here, You can havesh thish one.
+2	box	Dr Harlow hands you a stake.
+2	line	Dr Harlow	Takesh that to Draynor Manor. Find the vampyre inshide and show him what for! When hesh weak, use a hammer to drive the stake in! Mosht general stores have them.
+2	line	Dr Harlow	Oh, and yoush should take some garlic with you as well. Vampyres don't likesh garlic.
+2	line	Player	Garlic? Hmm... I'll see if Morgan knows where I can get some.
+2	select	Select an option
+2	option	You said no one's ever seen Count Draynor?
+3	line	Player	You said no one's ever seen Count Draynor?
+3	line	Dr Harlow	No, butsh every now and then someonesh tried to kill him.
+3	line	Player	But they've never come back? Meaning someone or something killed them most likely. Presumably Count Draynor?
+3	line	Dr Harlow	Yesh, I'd say so.
+3	line	Player	So why does he never leave his manor?
+3	line	Dr Harlow	Who knowsh. Most likely he's grown too weak to do ssho.
+3	line	Player	Weak? So he shouldn't be too hard to kill then?
+3	line	Dr Harlow	Even a weak vampyre ish very dangerous. Just go ashk those other adventurers thatsh never came back.
+3	select	Select an option
+3	option	What do I need to do again?
+4	line	Player	What do I need to do again?
+4	line	Dr Harlow	Go to Draynor Manor. Find the vampyre inshide and show him what for! When hesh weak, use a hammer to drive that stake I gave you in! Mosht general stores have them.
+4	line	Dr Harlow	Oh, and yoush should take some garlic with you as well. Vampyres don't likesh garlic.
+4	line	Player	Garlic? Hmm... I'll see if Morgan knows where I can get some.
+4	action	other
+3	option	So you were once a proper vampyre hunter?
+4	action	below
+3	option	I'd best get going.
+4	action	below
+2	option	So you were once a proper vampyre hunter?
+3	line	Player	So you were once a proper vampyre hunter?
+3	line	Dr Harlow	Yesh! I travelled their homeland to the easht. Morytania! I killed lotsh of vampyres over there!
+3	line	Player	What was the most dangerous vampyre you killed?
+3	line	Dr Harlow	Dangerous? Oh, well... Ish never killed one of the really dangerous ones.
+3	line	Player	Why not?
+3	line	Dr Harlow	Can't. Theysh too strong. Nothing cansh hurt them.
+3	line	Player	Oh... But what if Count Draynor's like that?
+3	line	Dr Harlow	Yoush don't get many vampyres around here. Pretty much none, actshually. There's speshial magic that stops them coming over here. Any that are here... theysh weak... and trapped.
+3	line	Player	So how come you've never tried to kill him yourself?
+3	line	Dr Harlow	Why bother? Hesh not killed anyone in a long time, so no one really caresh about him that much, apart from the odd adventurer thatsh looking to prove themshelves.
+3	line	Player	I see. Fair enough.
+3	select	Select an option
+3	action	other
+2	option	I'd best get going.
+3	line	Player	I'd best get going.
+3	line	Dr Harlow	Good luck, matey...
+3	action	end
+1	option	No. I think you've had enough.
+2	line	Player	No. I think you've had enough.
+2	line	Dr Harlow	No help for yoush then.
+2	action	end
+0	section	Talking to Dr Harlow after getting the stake
+1	line	Dr Harlow	Yoush back! Killed that vampyre yet?
+1	cond	If the player lost the stake:
+2	line	Dr Harlow	Yoush back! Killed that vampyre yet?
+2	line	Player	No. I lost that stake you gave me.
+2	line	Dr Harlow	Oh, hangsh on then...
+2	box	Dr Harlow hands you a stake.
+2	line	Dr Harlow	Good job I've gotsh some spares. Now, takesh that to Draynor Manor. Find the vampyre inshide and show him what for! When hesh weak, use a hammer to drive the stake in! Mosht general stores have them.
+2	line	Dr Harlow	Oh, and yoush should take some garlic with you as well. Vampyres don't likesh garlic.
+2	line	Player	Garlic? Hmm... I'll see if Morgan knows where I can get some.
+2	action	continue
+1	cond	If the player has the stake:
+2	select	Select an option
+2	option	What do I need to do again?
+3	action	above
+2	option	You said no one's ever seen Count Draynor?
+3	action	above
+2	option	So you were once a proper vampyre hunter?
+3	action	above
+2	option	Not yet. I'd best get going.
+3	line	Player	Not yet. I'd best get going.
+3	line	Dr Harlow	Good luck, matey...
+3	action	end
+0	section	Returning to Morgan
+1	line	Morgan	Adventurer! Has Count Draynor been dealt with yet?
+1	line	Player	I'm still working on it, but I could use some garlic to help me out.
+1	line	Morgan	Ah, yes! I heard vampyres didn't like garlic. I keep some in the cupboard upstairs, just in case Count Draynor comes and tries anything!
+1	select	Select an option
+1	option	What else can you tell me about Count Draynor?
+2	action	above
+1	option	Perfect, thanks.
+2	line	Player	Perfect, thanks.
+2	line	Morgan	Good luck in Draynor Manor, adventurer.
+2	action	end
+0	section	Slaying Count Draynor
+0	section	Attacking Count Draynor with garlic in the inventory
+0	section	Attempting to kill Count Draynor without a stake in the inventory
+0	section	Attempting to kill Count Draynor with a stake but no hammer in the inventory
+0	section	Upon killing Count Draynor

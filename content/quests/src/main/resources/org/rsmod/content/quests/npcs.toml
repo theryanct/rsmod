@@ -1,0 +1,781 @@
+# Quest npcs missing from the world spawns (OSRS Wiki map positions).
+
+# Imp Catcher: Wizard Mizgog, Wizards' Tower top floor.
+[[spawn]]
+npc = 'wizard_mizgog'
+coords = '2_48_49_32_28'
+
+# Doric's Quest: Doric, north of Falador.
+[[spawn]]
+npc = 'doric'
+coords = '0_46_53_8_60'
+
+# Rune Mysteries: Archmage Sedridor, Wizards' Tower basement (multinpc base).
+[[spawn]]
+npc = 'head_wizard'
+coords = '0_48_149_31_35'
+
+# Witch's Potion: Hetty, Rimmington.
+[[spawn]]
+npc = 'hetty'
+coords = '0_46_50_24_6'
+
+# The Restless Ghost: the ghost by the coffin south of Lumbridge church.
+[[spawn]]
+npc = 'ghostx'
+coords = '0_50_49_50_57'
+
+# Goblin Diplomacy: the Generals, Goblin Village.
+[[spawn]]
+npc = 'general_wartface_green'
+coords = '0_46_54_14_56'
+
+[[spawn]]
+npc = 'general_bentnoze_red'
+coords = '0_46_54_15_57'
+
+# Goblin Diplomacy dyes: Aggie, Draynor Village.
+[[spawn]]
+npc = 'aggie'
+coords = '0_48_50_14_58'
+
+# Ernest the Chicken: Veronica outside Draynor Manor, Professor Oddenstein upstairs.
+[[spawn]]
+npc = 'veronica'
+coords = '0_48_52_38_2'
+
+[[spawn]]
+npc = 'professor_oddenstein'
+coords = '2_48_52_39_39'
+
+# The Knight's Sword: the Squire (Falador Park), Reldo (Varrock library), Thurgo (south of Port
+# Sarim), Sir Vyvin (White Knights' Castle, 2nd floor).
+[[spawn]]
+npc = 'squire'
+coords = '0_46_52_33_14'
+
+[[spawn]]
+npc = 'reldo'
+coords = '0_50_54_10_39'
+
+[[spawn]]
+npc = 'thurgo'
+coords = '0_46_49_57_8'
+
+[[spawn]]
+npc = 'sir_vyvin'
+coords = '2_46_52_40_11'
+
+# Pirate's Treasure: Redbeard Frank (Port Sarim), Luthas + the customs officer (Musa Point),
+# the Port Sarim seamen to Karamja (positions approximate, OSRS Wiki map pins).
+[[spawn]]
+npc = 'redbeard_frank'
+coords = '0_47_50_44_50'
+
+[[spawn]]
+npc = 'luthas'
+coords = '0_45_49_59_18'
+
+[[spawn]]
+npc = 'customs_officer'
+coords = '0_46_49_6_15'
+
+[[spawn]]
+npc = 'seaman_lorris'
+coords = '0_47_50_19_18'
+
+[[spawn]]
+npc = 'seaman_thresnor'
+coords = '0_47_50_20_18'
+
+[[spawn]]
+npc = 'captain_tobias'
+coords = '0_47_50_21_18'
+
+# Black Knights' Fortress: Sir Amik Varze (White Knights' Castle, top floor).
+[[spawn]]
+npc = 'sir_amik_varze'
+coords = '2_46_52_16_9'
+
+# Prince Ali Rescue: Hassan + Osman (Al Kharid), Leela (Draynor), Keli / Joe / the jailed Prince
+# (Draynor jail; multinpcs on princequest), the rescued Prince at the palace. Approximate.
+[[spawn]]
+npc = 'hassan'
+coords = '0_51_49_38_27'
+
+[[spawn]]
+npc = 'osman'
+coords = '0_51_49_22_44'
+
+[[spawn]]
+npc = 'leela'
+coords = '0_48_50_41_62'
+
+[[spawn]]
+npc = 'lady_keli'
+coords = '0_48_50_56_44'
+
+[[spawn]]
+npc = 'joe'
+coords = '0_48_50_53_46'
+
+[[spawn]]
+npc = 'prince_ali_prison'
+coords = '0_48_50_52_41'
+
+[[spawn]]
+npc = 'prince_ali_palace'
+coords = '0_51_49_22_27'
+
+# Al Kharid toll gate: the two border guards (east side of the gate).
+[[spawn]]
+npc = 'borderguard1'
+coords = '0_51_50_5_26'
+
+[[spawn]]
+npc = 'borderguard2'
+coords = '0_51_50_5_29'
+
+# Vampyre Slayer: Morgan (Draynor), Dr Harlow (Blue Moon Inn, Varrock).
+[[spawn]]
+npc = 'morgan'
+coords = '0_48_51_27_5'
+
+[[spawn]]
+npc = 'dr_harlow'
+coords = '0_50_53_22_5'
+
+# X Marks the Spot: Veos in the Sheared Ram (Lumbridge) and on the Port Sarim dock (multinpcs).
+[[spawn]]
+npc = 'veos_lumbridge'
+coords = '0_50_50_28_42'
+
+[[spawn]]
+npc = 'veos_sarim'
+coords = '0_47_50_46_53'
+
+# Below Ice Mountain: Willow (start + ruins entrance), the crew at home and at the entrance
+# (multinpcs on their bim_* varbits), Atlas, the Blue Moon Inn cook. Approximate.
+[[spawn]]
+npc = 'bim_willow'
+coords = '0_46_53_58_44'
+
+[[spawn]]
+npc = 'bim_willow'
+coords = '0_46_54_57_36'
+
+[[spawn]]
+npc = 'bim_checkal_barb'
+coords = '0_48_53_15_23'
+
+[[spawn]]
+npc = 'bim_checkal_temple_outside'
+coords = '0_46_54_57_40'
+
+[[spawn]]
+npc = 'bim_atlas'
+coords = '0_48_53_3_47'
+
+[[spawn]]
+npc = 'bim_burntof_pub'
+coords = '0_46_52_13_39'
+
+[[spawn]]
+npc = 'bim_burntof_temple_outside'
+coords = '0_46_54_58_38'
+
+[[spawn]]
+npc = 'bim_marley_edge'
+coords = '0_48_54_16_16'
+
+[[spawn]]
+npc = 'bim_marley_temple_outside'
+coords = '0_46_54_58_35'
+
+[[spawn]]
+npc = 'fai_varrock_bluemoon_chef'
+coords = '0_50_53_30_8'
+
+# Misthalin Mystery: Abigale + Hewey (Lumbridge Swamp), Mandy outside the manor, the showdown
+# mirror and Abigale (multinpcs on mistmyst_progress). Approximate.
+[[spawn]]
+npc = 'mistmyst_abigale'
+coords = '0_50_49_37_19'
+
+[[spawn]]
+npc = 'mistmyst_hewey'
+coords = '0_50_49_37_17'
+
+[[spawn]]
+npc = 'mistmyst_mandy_post'
+coords = '0_25_75_36_21'
+
+[[spawn]]
+npc = 'mistmyst_mirror'
+coords = '0_25_75_23_30'
+
+[[spawn]]
+npc = 'mistmyst_abigale_cutscene_multi'
+coords = '0_25_75_21_31'
+
+# Shield of Arrav: Baraek, Straven (Phoenix HQ), Katrine, Charlie the Tramp, the museum curator,
+# King Roald, the Phoenix Weaponsmaster (multinpc). Reldo is spawned for The Knight's Sword.
+[[spawn]]
+npc = 'baraek'
+coords = '0_50_53_17_42'
+
+[[spawn]]
+npc = 'straven'
+coords = '0_50_152_46_52'
+
+[[spawn]]
+npc = 'katrine'
+coords = '0_49_52_50_57'
+
+[[spawn]]
+npc = 'tramppg'
+coords = '0_50_52_6_62'
+
+[[spawn]]
+npc = 'curator'
+coords = '0_50_53_56_56'
+
+[[spawn]]
+npc = 'king_roald'
+coords = '0_50_54_22_16'
+
+[[spawn]]
+npc = 'weaponsmaster'
+coords = '0_50_52_50_60'
+
+# The Corsair Curse: Captain Tock (crossroads, Rimmington + cove ferries), the sick crew upstairs
+# in their huts and their post-quest forms, Chief Tess by the dungeon's vine ladder (multinpcs on
+# corscurs_progress). Approximate.
+[[spawn]]
+npc = 'corsair_captain_crossroads'
+coords = '0_47_51_22_9'
+
+[[spawn]]
+npc = 'corsair_ferry_rimmington'
+coords = '0_45_50_30_26'
+
+[[spawn]]
+npc = 'corsair_ferry_covedocks'
+coords = '0_40_44_14_19'
+
+[[spawn]]
+npc = 'corscurs_navigator_sick'
+coords = '1_39_44_33_23'
+
+[[spawn]]
+npc = 'corscurs_thief_sick'
+coords = '1_39_44_61_41'
+
+[[spawn]]
+npc = 'corscurs_thief_postquest'
+coords = '1_39_44_61_41'
+
+[[spawn]]
+npc = 'corscurs_cabinboy_sick'
+coords = '1_39_44_59_41'
+
+[[spawn]]
+npc = 'corscurs_cook_sick'
+coords = '1_39_44_50_46'
+
+[[spawn]]
+npc = 'corscurs_cook_postquest'
+coords = '1_39_44_50_46'
+
+[[spawn]]
+npc = 'ogress_tess'
+coords = '1_31_140_30_43'
+
+# Romeo & Juliet: Romeo (Varrock square), Juliet + Phillipa upstairs and Draul Leptoc in their
+# house, Father Lawrence (church), the Apothecary.
+[[spawn]]
+npc = 'romeo'
+coords = '0_50_53_11_33'
+
+[[spawn]]
+npc = 'juliet_multi_visible'
+coords = '1_49_53_23_34'
+
+[[spawn]]
+npc = 'phillipa'
+coords = '1_49_53_26_39'
+
+[[spawn]]
+npc = 'draul_leptoc'
+coords = '0_49_53_25_44'
+
+[[spawn]]
+npc = 'father_lawrence'
+coords = '0_50_54_54_29'
+
+[[spawn]]
+npc = 'apothecary'
+coords = '0_49_53_59_12'
+
+# Vampyre Slayer: Maris, Morgan's wife (243 cache).
+[[spawn]]
+npc = 'maris'
+coords = '0_48_51_26_4'
+
+# Demon Slayer: Aris (Varrock square tent), Sir Prysin (palace), Captain Rovin (palace roof),
+# Wizard Traiborn (Wizards' Tower). Approximate.
+[[spawn]]
+npc = 'aris'
+coords = '0_50_53_3_32'
+
+[[spawn]]
+npc = 'sir_prysin'
+coords = '0_50_54_3_16'
+
+[[spawn]]
+npc = 'captain_rovin'
+coords = '2_50_54_4_41'
+
+[[spawn]]
+npc = 'traiborn'
+coords = '1_48_49_40_21'
+
+# Duke Horacio (Lumbridge castle 1st floor; Rune Mysteries + Dragon Slayer's shield).
+# Dragon Slayer I: Guildmaster, the Oracle, Wormbrain (Port Sarim jail), Klarense, Elvarg's lair
+# (multinpc), Ned on the ship / Crandor and Jenkins (multinpcs on dragonquest), Melzar's Maze key
+# carriers, Melzar and the lesser demon. Maze positions approximate.
+[[spawn]]
+npc = 'duke_of_lumbridge'
+coords = '1_50_50_10_22'
+
+[[spawn]]
+npc = 'guildmaster'
+coords = '0_49_52_55_32'
+
+[[spawn]]
+npc = 'oracle'
+coords = '0_47_54_3_45'
+
+[[spawn]]
+npc = 'wormbrain'
+coords = '0_47_49_6_53'
+
+[[spawn]]
+npc = 'klarense'
+coords = '0_47_50_38_4'
+
+[[spawn]]
+npc = 'elvarg'
+coords = '0_44_150_36_37'
+
+[[spawn]]
+npc = 'dragonslayer_ned_on_ship'
+coords = '1_47_50_37_7'
+
+[[spawn]]
+npc = 'dragonslayer_ned_on_crandor'
+coords = '0_44_50_35_38'
+
+[[spawn]]
+npc = 'cabin_boy_jenkins'
+coords = '1_47_50_40_8'
+
+[[spawn]]
+npc = 'dragonslayer_giantrat_1_key'
+coords = '0_45_50_51_47'
+
+[[spawn]]
+npc = 'dragonslayer_ghost_1_key'
+coords = '1_45_50_51_50'
+
+[[spawn]]
+npc = 'dragonslayer_skeleton_1_key'
+coords = '2_45_50_48_51'
+
+[[spawn]]
+npc = 'dragonslayer_zombie_1_key'
+coords = '0_45_150_54_50'
+
+[[spawn]]
+npc = 'melzar_the_mad'
+coords = '0_45_150_49_49'
+
+[[spawn]]
+npc = 'dragonslayer_demon'
+coords = '0_45_150_53_53'
+
+# Druidic Ritual: Kaqemeex (Taverley stone circle), Sanfew (Taverley herb shop, upstairs).
+[[spawn]]
+npc = 'kaqemeex'
+coords = '0_45_54_46_28'
+
+[[spawn]]
+npc = 'sanfew'
+coords = '1_45_53_17_34'
+
+# Monk's Friend: Brother Omad (Ardougne monastery), Brother Cedric (the woods to the north).
+[[spawn]]
+npc = 'brother_omad'
+coords = '0_40_50_44_9'
+
+[[spawn]]
+npc = 'brother_cedric'
+coords = '0_40_50_54_59'
+
+# Fishing Contest: Austri / Vestri (the White Wolf Mountain tunnel), the Hemenster contest
+# (Morris, Bonzo, Grandpa Jack, the rivals, the Sinister Stranger multinpc, the contest spots).
+# Spot positions approximate.
+[[spawn]]
+npc = 'tunnel_dwarf'
+coords = '0_44_54_60_27'
+
+[[spawn]]
+npc = 'tunnel_dwarf1'
+coords = '0_44_54_5_31'
+
+[[spawn]]
+npc = 'morris'
+coords = '0_41_53_20_50'
+
+[[spawn]]
+npc = 'bonzo'
+coords = '0_41_53_16_45'
+
+[[spawn]]
+npc = 'grandpa_jack'
+coords = '0_41_53_25_60'
+
+[[spawn]]
+npc = 'bigdave'
+coords = '0_41_53_9_33'
+
+[[spawn]]
+npc = 'joshua'
+coords = '0_41_53_6_25'
+
+[[spawn]]
+npc = 'sinister_stranger'
+coords = '0_41_53_13_52'
+
+[[spawn]]
+npc = '0_41_53_sinisterfishspot'
+coords = '0_41_53_13_51'
+
+[[spawn]]
+npc = '0_41_53_compofishspot'
+coords = '0_41_53_3_43'
+
+# Plague City.
+# Edmond's house (Edmond moves to the sewer once you dig).
+[[spawn]]
+npc = 'edmond_top'
+coords = '0_40_52_8_4'
+
+[[spawn]]
+npc = 'edmond_bottom'
+coords = '0_39_152_21_29'
+
+[[spawn]]
+npc = 'alrena'
+coords = '0_40_52_13_5'
+
+[[spawn]]
+npc = 'elena2'
+coords = '0_40_52_10_5'
+
+[[spawn]]
+npc = 'mourner1'
+coords = '0_40_52_5_2'
+
+# West Ardougne.
+[[spawn]]
+npc = 'jethick'
+coords = '0_39_51_44_41'
+
+[[spawn]]
+npc = 'ted_rehnison'
+coords = '0_39_52_35_0'
+
+[[spawn]]
+npc = 'martha_rehnison'
+coords = '0_39_52_37_1'
+
+[[spawn]]
+npc = 'milli'
+coords = '1_39_52_36_0'
+
+[[spawn]]
+npc = 'clerk'
+coords = '0_39_51_30_52'
+
+[[spawn]]
+npc = 'bravek'
+coords = '0_39_51_38_51'
+
+[[spawn]]
+npc = 'headmourner'
+coords = '0_39_51_43_40'
+
+[[spawn]]
+npc = 'mourner_elena_guard'
+coords = '0_39_51_40_10'
+
+[[spawn]]
+npc = 'elenap'
+coords = '0_39_151_45_7'
+
+# Waterfall Quest: Almera's house, Hudon's island, Gerald and Hadley by the river, Golrie's cell.
+[[spawn]]
+npc = 'almera_waterfall_quest'
+coords = '0_39_54_26_42'
+
+[[spawn]]
+npc = 'hudon_waterfall_quest'
+coords = '0_39_54_14_28'
+
+[[spawn]]
+npc = 'gerald_waterfall_quest'
+coords = '0_39_53_31_23'
+
+[[spawn]]
+npc = 'hadley_waterfall_quest'
+coords = '0_39_53_23_37'
+
+[[spawn]]
+npc = 'golrie_waterfall_quest'
+coords = '0_39_149_19_45'
+
+# Sea Slug: Witchaven (Kennith and Kent home from state 11), the fishing platform, Kent's island.
+[[spawn]]
+npc = 'caroline'
+coords = '0_42_51_28_38'
+
+[[spawn]]
+npc = 'holgartland'
+coords = '0_42_51_35_40'
+
+[[spawn]]
+npc = 'kennith_land'
+coords = '0_42_51_26_38'
+
+[[spawn]]
+npc = 'kent_land'
+coords = '0_42_51_30_37'
+
+[[spawn]]
+npc = 'bailey'
+coords = '1_43_51_12_11'
+
+[[spawn]]
+npc = 'holgartplatform'
+coords = '1_43_51_29_20'
+
+[[spawn]]
+npc = 'seaslug'
+coords = '1_43_51_23_18'
+
+[[spawn]]
+npc = 'seaslug'
+coords = '1_43_51_27_14'
+
+[[spawn]]
+npc = 'kennith'
+coords = '2_43_51_13_22'
+
+[[spawn]]
+npc = 'holgartoutwater'
+coords = '0_43_51_47_53'
+
+[[spawn]]
+npc = 'kent'
+coords = '0_43_51_45_55'
+
+# Tree Gnome Village: the village and maze entrance, the battlefield, the trackers, the warlord.
+[[spawn]]
+npc = 'king_bolren'
+coords = '0_39_49_46_34'
+
+[[spawn]]
+npc = 'elkoy_village'
+coords = '0_39_49_42_32'
+
+[[spawn]]
+npc = 'elkoy'
+coords = '0_39_49_7_57'
+
+[[spawn]]
+npc = 'remsai'
+coords = '0_39_49_27_33'
+
+[[spawn]]
+npc = 'lostgnome'
+coords = '0_39_49_32_44'
+
+[[spawn]]
+npc = 'commander_montai'
+coords = '0_39_50_24_13'
+
+[[spawn]]
+npc = 'tracker1'
+coords = '0_39_50_8_63'
+
+[[spawn]]
+npc = 'tracker2'
+coords = '0_39_50_28_57'
+
+[[spawn]]
+npc = 'tracker3'
+coords = '0_38_50_60_31'
+
+[[spawn]]
+npc = 'khazard_warlord'
+coords = '0_38_51_25_38'
+
+# Hazeel Cult: the Carnillean mansion (Jones jailed under it once unmasked), Clivet's cave, the cult hideout.
+[[spawn]]
+npc = 'sir_ceril_carnillean'
+coords = '0_40_51_6_6'
+
+[[spawn]]
+npc = 'guard_carnillean'
+coords = '0_40_51_8_9'
+
+[[spawn]]
+npc = 'carnillean_wife'
+coords = '1_40_51_14_4'
+
+[[spawn]]
+npc = 'philipe_carnillean'
+coords = '0_40_51_6_10'
+
+[[spawn]]
+npc = 'claus_carnillean'
+coords = '0_39_151_46_33'
+
+[[spawn]]
+npc = 'butler_jones_hazeel_cultist'
+coords = '0_40_51_10_8'
+
+[[spawn]]
+npc = 'butler_jones_hazeel_cultist_jail'
+coords = '0_40_151_14_42'
+
+[[spawn]]
+npc = 'carnillean_dog'
+coords = '0_40_51_3_12'
+
+[[spawn]]
+npc = 'clivet_hazeel_cultist'
+coords = '0_40_151_6_19'
+
+[[spawn]]
+npc = 'clivet_hazeel_cultist_hideout'
+coords = '0_40_151_44_24'
+
+[[spawn]]
+npc = 'alomone_hazeel_cultist'
+coords = '0_40_151_48_7'
+
+[[spawn]]
+npc = 'hazeel_cultist'
+coords = '0_40_151_43_12'
+
+[[spawn]]
+npc = 'hazeel_cultist'
+coords = '0_40_151_40_22'
+
+# Witch's House: the boy by Taverley's hedge, Nora T. Hagg in her garden.
+[[spawn]]
+npc = 'ballboy'
+coords = '0_45_54_48_0'
+
+[[spawn]]
+npc = 'nora_t_hagg'
+coords = '0_45_54_38_7'
+
+# Jungle Potion: Trufitus in his hut at Tai Bwo Wannai.
+[[spawn]]
+npc = 'trufitus'
+coords = '0_43_48_57_14'
+
+# Gertrude's Cat: Gertrude west of Varrock, her sons in Varrock Square, Fluffs up the Lumber Yard ladder.
+[[spawn]]
+npc = 'gertrude'
+coords = '0_49_53_15_17'
+
+[[spawn]]
+npc = 'shilop'
+coords = '0_50_53_20_43'
+
+[[spawn]]
+npc = 'wilough'
+coords = '0_50_53_21_42'
+
+[[spawn]]
+npc = 'gertrudescat'
+coords = '1_51_54_46_50'
+
+# Murder Mystery: the Sinclair Mansion household and guard, and the Seers' Village poison salesman.
+[[spawn]]
+npc = 'murderguard'
+coords = '0_42_55_54_42'
+
+[[spawn]]
+npc = 'gossipy_man'
+coords = '0_42_55_54_35'
+
+[[spawn]]
+npc = 'poison_salesman'
+coords = '0_42_54_6_38'
+
+[[spawn]]
+npc = 'murder_mystery_guarddog'
+coords = '0_42_55_62_60'
+
+[[spawn]]
+npc = 'anna_sinclair'
+coords = '0_42_55_47_55'
+
+[[spawn]]
+npc = 'bob_sinclair'
+coords = '0_42_55_60_40'
+
+[[spawn]]
+npc = 'carol_sinclair'
+coords = '1_42_55_47_62'
+
+[[spawn]]
+npc = 'david_sinclair'
+coords = '0_42_55_52_61'
+
+[[spawn]]
+npc = 'elizabeth_sinclair'
+coords = '1_42_55_58_62'
+
+[[spawn]]
+npc = 'frank_sinclair'
+coords = '0_42_55_54_58'
+
+[[spawn]]
+npc = 'hobbes_the_butler'
+coords = '0_42_55_52_58'
+
+[[spawn]]
+npc = 'louisa_the_cook'
+coords = '0_42_55_47_59'
+
+[[spawn]]
+npc = 'mary_the_maid'
+coords = '0_42_55_50_57'
+
+[[spawn]]
+npc = 'donovan_the_family_handyman'
+coords = '1_42_55_58_58'
+
+[[spawn]]
+npc = 'pierre_the_family_dog_handler'
+coords = '0_42_55_62_54'
+
+[[spawn]]
+npc = 'stanford_the_gardener'
+coords = '0_42_55_41_58'

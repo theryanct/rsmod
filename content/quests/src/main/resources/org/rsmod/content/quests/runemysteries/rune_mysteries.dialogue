@@ -1,0 +1,275 @@
+# Generated from the OSRS Wiki page "Transcript:Rune Mysteries" by tools/quests/transcript_to_dialogue.py
+0	section	Starting off
+0	section	Talking to Duke Horacio
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	Have you any quests for me?
+2	line	Player	Have you any quests for me?
+2	line	Duke Horacio	Well, I wouldn't describe it as a quest, but there is something I could use some help with.
+2	line	Player	What is it?
+2	line	Duke Horacio	We were recently sorting through some of the things stored down in the cellar, and we found this old talisman.
+2	box	The Duke shows you a talisman.
+2	line	Duke Horacio	The Order of Wizards over at the Wizards' Tower have been on the hunt for magical artefacts recently. I wonder if this might be just the kind of thing they're after.
+2	line	Duke Horacio	Would you be willing to take it to them for me?
+2	select	Start the Rune Mysteries quest?
+2	option	Yes.
+3	line	Player	Sure, no problem.
+3	line	Duke Horacio	Thank you very much. You'll find the Wizards' Tower south west of here, across the bridge from Draynor Village. When you arrive, look for Sedridor. He is the Archmage of the wizards there.
+3	box	The Duke hands you the talisman.
+3	action	end
+2	option	No.
+3	line	Player	Not right now.
+3	line	Duke Horacio	As you wish. Hopefully I can find someone else to help.
+3	action	end
+1	option	Where can I find money?
+0	section	Talking to Duke Horacio again
+1	line	Duke Horacio	Greetings. Welcome to my castle.
+1	select	Select an option
+1	option	What did you want me to do again?
+2	line	Player	What did you want me to do again?
+2	cond	If the player lost the talisman:
+3	line	Player	What did you want me to do again?
+3	line	Duke Horacio	Did you take that talisman to Sedridor?
+3	line	Player	No, I lost it.
+3	line	Duke Horacio	Ah, well that explains things. One of my servants found it outside, and it seemed too much of a coincidence that another would suddenly show up.
+3	line	Duke Horacio	Here, take it to the Wizards' Tower, south west of here. Please try not to lose it this time.
+3	box	The Duke hands you the talisman.
+3	action	end
+2	cond	If the player has the talisman:
+3	line	Duke Horacio	Take that talisman I gave you to Sedridor at the Wizards' Tower. You'll find it south west of here, across the bridge from Draynor Village.
+3	line	Player	Okay, will do.
+3	action	end
+1	option	Where can I find money?
+0	section	Delivering the talisman
+0	section	Talking to Archmage Sedridor
+1	line	Archmage Sedridor	Welcome adventurer, to the world renowned Wizards' Tower, home to the Order of Wizards. We are the oldest and most prestigious group of wizards around. Now, how may I help you?
+1	line	Player	Are you Sedridor?
+1	line	Archmage Sedridor	Sedridor? What is it you want with him?
+1	line	Player	The Duke of Lumbridge sent me to find him. I have this talisman he found. He said Sedridor would be interested in it.
+1	line	Archmage Sedridor	Did he now? Well hand it over then, and we'll see what all the hubbub is about.
+1	select	Select an option
+1	option	Okay, here you are.
+2	line	Player	Okay, here you are.
+2	cond	If the player has the talisman:
+3	box	You hand the talisman to Sedridor.
+3	line	Archmage Sedridor	Hmm... Doesn't seem to be anything too special. Just a normal air talisman by the looks of things. Still, looks can be deceiving. Let me take a closer look...
+3	box	Sedridor murmurs some sort of incantation and the talisman glows slightly.
+3	line	Archmage Sedridor	How interesting... It would appear I spoke too soon. There's more to this talisman than meets the eye. In fact, it may well be the last piece of the puzzle.
+3	line	Player	Puzzle?
+3	line	Archmage Sedridor	Indeed! The lost legacy of the first tower. This talisman may in fact be key to finding the forgotten essence mine!
+3	line	Player	First tower? Forgotten essence mine? What are you on about?
+3	line	Archmage Sedridor	Ah, my apologies, adventurer. Allow me to fill you in.
+3	select	Select an option
+3	option	Go ahead.
+4	line	Player	Go ahead.
+4	line	Archmage Sedridor	As you are likely aware, when we cast spells, we do so using the power of runes.
+4	line	Archmage Sedridor	These runes are crafted from a highly unique material, and then imbued with magical power from various runic altars. Different altars create different runes with different magical effects.
+4	line	Archmage Sedridor	The process of imbuing runes is called runecrafting. Legend has it that this was once a common art, but the secrets of how to do it were lost until just under two hundred years ago.
+4	line	Archmage Sedridor	The rediscovery of runecrafting had such a large impact on the world, that it marked the dawn of the Fifth Age. It also resulted in the birth of our order, and the construction of the first Wizards' Tower.
+4	line	Player	If it was the first tower, I'm guessing it doesn't exist anymore? What happened?
+4	line	Archmage Sedridor	It was burnt down by traitorous members of our own order. They followed the evil god of chaos, Zamorak, and they wished to claim our magical discoveries in his name.
+4	line	Archmage Sedridor	When the tower burnt down, much was lost, including an important incantation. A spell that could be used to teleport to a hidden essence mine.
+4	line	Player	The essence mine you mentioned earlier, I assume?
+4	line	Archmage Sedridor	Precisely. Rune essence is the material used to make runes, but it is incredibly rare. That essence mine was the only place it could be found that our order knew of.
+4	line	Archmage Sedridor	Since the incantation was lost, we have struggled to maintain our stocks of rune essence.
+4	line	Archmage Sedridor	There are seemingly those out there that still know where to find some, but while they have been willing to sell essence to us, they have refused to share knowledge on how to find it ourselves.
+4	line	Player	I'm starting to see why this is so important. So you think this talisman can help you rediscover that incantation?
+4	line	Archmage Sedridor	I do! All magic leaves traces, and from what I can tell, this talisman was used heavily during the time of the first tower.
+4	line	Archmage Sedridor	It would have been taken to the essence mine many times, and the magical energies there will have left an imprint on it. To think that it was hidden in Lumbridge all this time!
+4	line	Player	So what happens now?
+4	line	Archmage Sedridor	It is critical I share this discovery with my associate, Aubury, as soon as possible. He's not much of a wizard, but he's an expert on runecrafting, and his insight will be essential.
+4	line	Archmage Sedridor	Would you be willing to visit him for me? I would go myself, but I wish to study this talisman some more.
+4	select	Select an option
+4	option	Yes, certainly.
+5	line	Player	Yes, certainly.
+5	line	Archmage Sedridor	He runs a rune shop in the south east of Varrock. Please, take this package of research notes to him. If all goes well, the secrets of the essence mine may soon be ours once more!
+5	box	Sedridor hands you a package.
+5	line	Archmage Sedridor	Best of luck, {player}.
+5	cond	If the player gave the talisman to him while doubting his identity:
+6	action	end
+5	cond	If the player gave the talisman to him without doubting his identity:
+6	line	Player	I don't remember telling you my name... How do you know it?
+6	line	Archmage Sedridor	Really now? I am the Archmage you know.
+6	action	end
+4	option	No, I'm busy.
+5	line	Player	No, I'm busy.
+5	line	Archmage Sedridor	As you wish adventurer. I will continue to study this talisman you have brought me. Return here if you find yourself with some spare time to help me.
+5	action	end
+3	option	Actually, I'm not interested.
+4	line	Player	Actually, I'm not interested.
+4	line	Archmage Sedridor	Oh... Well I guess the short of it is that this talisman could be key to helping us rediscover an important teleportation incantation.
+4	line	Archmage Sedridor	With it, we'll be able to access a hidden essence mine, our lost source of rune essence.
+4	line	Archmage Sedridor	It is critical I share this discovery with my associate, Aubury, as soon as possible. He's not much of a wizard, but he's an expert on runecrafting, and his insight will be essential.
+4	line	Archmage Sedridor	Would you be willing to visit him for me? I would go myself, but I wish to study this talisman some more.
+4	option	Yes, certainly.
+5	action	above
+4	option	No, I'm busy.
+5	action	above
+2	cond	If the player does not have the talisman:
+3	line	Player	Okay, here you are.
+3	line	Archmage Sedridor	...
+3	line	Player	...
+3	line	Archmage Sedridor	Well?
+3	line	Player	I don't seem to have it with me.
+3	line	Archmage Sedridor	Hmm? You are a very odd person. Come back again when you have it.
+3	action	end
+1	option	No, I'll only give it to Sedridor.
+2	line	Player	No, I'll only give it to Sedridor.
+2	line	Archmage Sedridor	Well good news, for I am Sedridor! Now, hand it over and let me have a proper look at it, hmm?
+2	option	Okay, here you are.
+3	action	above
+2	option	No, I don't think you are Sedridor.
+3	line	Player	No, I don't think you are Sedridor.
+3	line	Archmage Sedridor	Hmm... Well, I admire your caution adventurer. Perhaps I can prove myself? I will use my mental powers to discover...
+3	line	Archmage Sedridor	Your name is... {player}!
+3	line	Player	You're right! How did you know that?
+3	line	Archmage Sedridor	Well I am the Archmage you know! You don't get to my position without learning a few tricks along the way!
+3	line	Archmage Sedridor	So now that I have proved myself to you, why don't you hand over that talisman, hmm?
+3	line	Player	Okay, here you are.
+3	action	above
+0	section	Talking to Sedridor again after not having the talisman when first going through the dialogue
+1	line	Archmage Sedridor	Welcome back, adventurer. Do you have that talisman now?
+1	cond	If the player doesn't have the talisman:
+2	line	Player	Not yet.
+2	line	Archmage Sedridor	Well come back when you have it.
+2	action	end
+1	cond	If the player does have the talisman:
+2	line	Archmage Sedridor	Welcome back, adventurer. Do you have that talisman now?
+2	line	Player	Here you go.
+2	box	You hand the talisman to Sedridor.
+2	line	Archmage Sedridor	Hmm... Doesn't seem to be anything too special. Just a normal air talisman by the looks of things. Still, looks can be deceiving. Let me take a closer look...
+2	box	Sedridor murmurs some sort of incantation and the talisman glows slightly.
+2	line	Archmage Sedridor	How interesting... It would appear I spoke too soon. There's more to this talisman than meets the eye. In fact, it may well be the last piece of the puzzle.
+2	line	Player	Puzzle?
+2	line	Archmage Sedridor	Indeed! The lost legacy of the first tower. This talisman may in fact be key to finding the forgotten essence mine!
+2	line	Player	First tower? Forgotten essence mine? What are you on about?
+2	line	Archmage Sedridor	Ah, my apologies, adventurer. Allow me to fill you in.
+2	select	Select an option
+2	option	Go ahead.
+3	action	above
+2	option	Actually, I'm not interested.
+3	action	above
+0	section	Talking to Sedridor after giving him the talisman but before agreeing to go see Aubury
+1	line	Player	So is that talisman of any use to you?
+1	action	Continues previous dialogue starting at "You hand the talisman to Sedridor"
+0	section	Talking to Sedridor after agreeing to go see Aubury but before receiving the package.
+1	line	Archmage Sedridor	Hello again, adventurer. Please, take this package of research notes to Aubury in Varrock. He runs a rune shop in the south east of the city.
+1	action	Sedridor hands you a package.
+1	line	Archmage Sedridor	Best of luck, {player}.
+1	cond	If the player gave the talisman to while doubting his identity:
+2	action	end
+1	cond	If the player gave the talisman to him without doubting his identity:
+2	line	Player	I don't remember telling you my name... How do you know it?
+2	line	Archmage Sedridor	Really now? I am the Archmage you know.
+2	action	end
+0	section	Talking to Sedridor again
+1	line	Archmage Sedridor	Hello again, adventurer. Did you take that package to Aubury?
+1	cond	If the player lost the package:
+2	line	Player	I lost it. Could I have another?
+2	line	Archmage Sedridor	Well it's a good job I have copies of everything.
+2	box	Sedridor hands you a package.
+2	line	Archmage Sedridor	Best of luck, {player}.
+2	cond	If the player gave the talisman to while doubting his identity:
+3	action	end
+2	cond	If the player gave the talisman to him without doubting his identity:
+3	line	Player	I don't remember telling you my name... How do you know it?
+3	line	Archmage Sedridor	Really now? I am the Archmage you know.
+3	action	end
+1	cond	If the player has the package:
+2	line	Player	Not yet.
+2	line	Archmage Sedridor	He runs a rune shop in the south east of Varrock. Please deliver it to him soon.
+2	action	end
+0	section	Delivering the research package
+0	section	Talking to Aubury
+1	line	Aubury	Do you want to buy some runes?
+1	select	Select an option
+1	option	Yes please!
+1	option	I've been sent here with a package for you.
+2	line	Player	I've been sent here with a package for you.
+2	line	Aubury	A package? From who?
+2	line	Player	From Sedridor at the Wizards' Tower.
+2	line	Aubury	From Sedridor? But... surely, he can't have? Please, let me have it. It must be extremely important for him to have sent a stranger.
+2	cond	If the player has the package:
+3	box	You hand the package to Aubury.
+3	line	Aubury	Now, let's have a look...
+3	box	Aubury goes through the package of research notes.
+3	line	Aubury	This... this is incredible.
+3	line	Aubury	My gratitude to you adventurer for bringing me these research notes. Thanks to you, I think we finally have it.
+3	line	Player	You mean the incantation?
+3	line	Aubury	Well when we combine my own research with this latest discovery, I think we might just...
+3	line	Aubury	No, no, I'm getting ahead of myself. The signs are promising, but let's not jump to any conclusions just yet.
+3	line	Aubury	Here, take these notes back to Sedridor. They should hopefully give him everything he needs.
+3	box	Aubury hands you some research notes.
+3	line	Aubury	Before you leave, why not have a cup of tea?
+3	select	Select an option
+3	option	I'd love a cup of tea.
+4	line	Player	I'd love a cup of tea.
+4	line	Player	Aaah, nothing like a nice cuppa tea!
+4	action	end
+3	option	No, thank you.
+4	line	Player	No, thank you.
+4	action	end
+2	cond	If the player does not have the package:
+3	line	Player	Uh... yeah... about that... I kind of don't have it with me...
+3	line	Aubury	What kind of person says they have a delivery for me, but not with them? Honestly.
+3	line	Aubury	Come back when you have it.
+3	action	end
+1	option	Oh, it's a rune shop. No thank you, then.
+0	section	Talking to Aubury after giving him the package but before he goes through it
+1	line	Aubury	Do you want to buy some runes?
+1	select	Select an option
+1	option	Anything useful in that package I gave you?
+2	line	Player	Anything useful in that package I gave you?
+2	line	Aubury	Well, let's have a look...
+2	action	Continues previous dialogue starting at "Aubury goes through the package of research notes."
+1	option	Yes please!
+1	option	No thank you.
+0	section	Talking to Aubury after he looked through the package but before he hands you the research notes
+1	line	Aubury	Here, take these notes back to Sedridor. They should hopefully give him everything he needs.
+1	line	Player	Okay.
+1	action	Continues previous dialogue starting at "Aubury hands you some research notes."
+0	section	Talking to Aubury again
+1	line	Aubury	Hello. Did you take those notes back to Sedridor?
+1	cond	If the player lost the notes:
+2	line	Player	Sorry, but I lost them.
+2	line	Aubury	Well, luckily I have duplicates. It's a good thing they are written in code. I wouldn't want the wrong kind of person to get access to the information contained within.
+2	box	Aubury hands you some research notes.
+2	action	end
+1	cond	If the player has the notes:
+2	line	Player	I'm still working on it.
+2	line	Aubury	Don't take too long. He'll be eager to see if this is indeed the breakthrough we were hoping for.
+2	line	Aubury	Now, did you want to buy some runes?
+2	select	Select an option
+2	option	Yes please!
+2	option	No thank you.
+0	section	Delivering the research notes
+0	section	Talking to Sedridor
+1	line	Archmage Sedridor	Ah, {player}. How goes your quest? Have you delivered my research to Aubury yet?
+1	line	Player	Yes, I have. He gave me some notes to give to you.
+1	line	Archmage Sedridor	Wonderful! Let's have a look then.
+1	cond	If the player has the notes:
+2	box	You hand the notes to Sedridor.
+2	line	Archmage Sedridor	Alright, let's see what Aubury has for us...
+2	line	Archmage Sedridor	Yes, this is it! The lost incantation!
+2	line	Player	So you'll be able to access that essence mine now?
+2	line	Archmage Sedridor	That's right! Because of you, our order finally has a proper source of rune essence again! Thank you, friend.
+2	line	Archmage Sedridor	If you ever want to access the essence mine yourself, just let me know. It's the least I can do.
+2	line	Archmage Sedridor	I will also share the incantation with others, including Aubury. When I do, I'll let them know that you are to be given unlimited access to the mine.
+2	line	Archmage Sedridor	Oh, and you can have this air talisman back as well. I have no further need of it, and I'm sure you will find it useful.
+2	line	Archmage Sedridor	In case you didn't know, the talisman can be used to craft air runes. Just take it to the Air Altar south of Falador along with some rune essence.
+2	line	Archmage Sedridor	Don't worry if you can't find the altar. The talisman can guide you there. You may find talismans for other altars as well while adventuring. They'll let you craft other types of rune.
+2	line	Player	Great! Thanks!
+2	line	Archmage Sedridor	My pleasure!
+2	select	Select an option
+2	option	Can you teleport me to the Rune Essence Mine?
+2	option	Who else knows the teleport to the Rune Essence Mine?
+2	option	Could you tell me about the old Wizards' Tower?
+2	option	I'd better get going.
+3	line	Player	I'd better get going.
+3	action	end
+1	cond	If the player does not have the notes:
+2	line	Player	Err, you're not going to believe this...
+2	line	Archmage Sedridor	What?
+2	line	Player	I don't have them.
+2	line	Archmage Sedridor	Right... You're rather careless aren't you. I suggest you go and speak to Aubury once more. With luck he will have made copies.
+2	action	end
