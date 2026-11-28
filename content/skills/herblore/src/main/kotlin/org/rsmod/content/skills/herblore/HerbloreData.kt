@@ -7,13 +7,19 @@ package org.rsmod.content.skills.herblore
 internal object HerbloreData {
     class Herb(val grimy: String, val clean: String, val level: Int, val xp: Double)
 
-    class Unfinished(val herb: String, val unf: String, val level: Int)
+    /** Clean [herb] + [base] (vial of water, or coconut milk for the antidotes) -> [unf]. */
+    class Unfinished(
+        val herb: String,
+        val unf: String,
+        val level: Int,
+        val base: String = HerbloreData.VIAL_WATER,
+    )
 
     class Potion(
         val name: String,
         val unf: String,
         val secondary: String,
-        /** The 3-dose potion made. */
+        /** The potion made (3 doses; 4 for the antidotes). */
         val product: String,
         val level: Int,
         val xp: Double,
@@ -54,6 +60,9 @@ internal object HerbloreData {
             Unfinished("lantadyme", "lantadymevial", 69),
             Unfinished("dwarf_weed", "dwarfweedvial", 72),
             Unfinished("torstol", "torstolvial", 78),
+            // Venom batch (Wiki "Antidote+" / "Antidote++"): coconut milk, not water.
+            Unfinished("toadflax", "unfinished_antidote+", 68, "vial_coconut_milk"),
+            Unfinished("irit_leaf", "unfinished_antidote++", 79, "vial_coconut_milk"),
         )
 
     val potions: List<Potion> =
@@ -115,6 +124,9 @@ internal object HerbloreData {
             Potion("Magic potion", "lantadymevial", "cactus_potato", "3dose1magic", 76, 172.5),
             Potion("Zamorak brew", "torstolvial", "jangerberries", "3dosepotionofzamorak", 78, 175.0),
             Potion("Saradomin brew", "toadflaxvial", "crushed_bird_nest", "3dosepotionofsaradomin", 81, 180.0),
+            // Venom batch (Wiki): antidotes make four doses. Anti-venoms: HerbloreMixes.
+            Potion("Antidote+", "unfinished_antidote+", "yew_roots", "antidote+4", 68, 155.0),
+            Potion("Antidote++", "unfinished_antidote++", "magic_roots", "antidote++4", 79, 177.5),
         )
 
     /** Pestle and mortar on [source] grinds it into [product]. */
@@ -150,6 +162,12 @@ internal object HerbloreData {
         data class Cure(val immunityTicks: Int) : Effect()
 
         /**
+         * Anti-venoms: cure venom and poison, venom immunity for [venomImmunityTicks] plus ~11.4
+         * minutes more poison immunity (see `cureVenom`).
+         */
+        data class CureVenom(val venomImmunityTicks: Int) : Effect()
+
+        /**
          * Antifires: dragonfire protection for [minutes] (Wiki durations), counted in the cache
          * varbits `antifire_potion` / `super_antifire_potion` (see Antifire.kt).
          */
@@ -165,6 +183,9 @@ internal object HerbloreData {
     class Drink(val name: String, val doses: List<String>, val effect: Effect)
 
     private fun doses(suffix: String) = (4 downTo 1).map { "${it}dose$suffix" }
+
+    /** `antidote+4` .. `antidote+1` style dose names. */
+    private fun named(prefix: String) = (4 downTo 1).map { "$prefix$it" }
 
     private val restoreStats = listOf("attack", "strength", "defence", "ranged", "magic")
 
@@ -241,6 +262,18 @@ internal object HerbloreData {
             ),
             Drink("antipoison", doses("antipoison"), Effect.Cure(immunityTicks = 150)),
             Drink("superantipoison", doses("2antipoison"), Effect.Cure(immunityTicks = 600)),
+            // Venom batch (Wiki potion pages; 30-tick periods). Antidote++'s 12 minutes (40
+            // periods) also gives 18-36 s venom immunity through the shared encoding.
+            Drink("antidote+", named("antidote+"), Effect.Cure(immunityTicks = 900)),
+            Drink("antidote++", named("antidote++"), Effect.Cure(immunityTicks = 1200)),
+            // Anti-venom 36-54 s (12 min poison), anti-venom+ 216 s (15 min), extended 378 s (17.7).
+            Drink("anti-venom", named("antivenom"), Effect.CureVenom(venomImmunityTicks = 90)),
+            Drink("anti-venom+", named("antivenom+"), Effect.CureVenom(venomImmunityTicks = 360)),
+            Drink(
+                "extended anti-venom+",
+                named("extended_antivenom+"),
+                Effect.CureVenom(venomImmunityTicks = 630),
+            ),
             Drink("antifire potion", doses("1antidragon"), Effect.Antifire(false, 6)),
             Drink("extended antifire", doses("2antidragon"), Effect.Antifire(false, 12)),
             Drink("super antifire potion", doses("3antidragon"), Effect.Antifire(true, 3)),

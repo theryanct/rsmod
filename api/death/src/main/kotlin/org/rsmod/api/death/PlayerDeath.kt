@@ -10,6 +10,7 @@ import org.rsmod.api.config.refs.seqs
 import org.rsmod.api.config.refs.varps
 import org.rsmod.api.player.deathResetTimers
 import org.rsmod.api.player.disablePrayers
+import org.rsmod.api.player.poison.setPoisonValue
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.intVarp
 import org.rsmod.game.entity.Player
@@ -60,6 +61,8 @@ public class PlayerDeath @Inject constructor(private val statTypes: StatTypeList
     private fun ProtectedAccess.resetPlayerState(stats: StatTypeList) {
         player.disablePrayers()
         player.deathResetTimers()
+        // OSRS: dying cures poison and venom (immunity is lost too).
+        player.setPoisonValue(0)
 
         player.specialAttackType = 0
         player.skullIcon = null

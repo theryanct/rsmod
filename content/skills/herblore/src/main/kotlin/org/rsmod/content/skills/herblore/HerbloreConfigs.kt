@@ -9,7 +9,7 @@ import org.rsmod.game.type.obj.ObjType
 internal object HerbloreObjs : ObjReferences() {
     val byName: Map<String, ObjType> =
         (HerbloreData.herbs.flatMap { listOf(it.grimy, it.clean) } +
-                HerbloreData.unfinished.flatMap { listOf(it.herb, it.unf) } +
+                HerbloreData.unfinished.flatMap { listOf(it.herb, it.unf, it.base) } +
                 HerbloreData.potions.flatMap { listOf(it.unf, it.secondary, it.product) } +
                 HerbloreData.drinks.flatMap { it.doses } +
                 HerbloreData.grinds.flatMap { listOf(it.source, it.product) } +
