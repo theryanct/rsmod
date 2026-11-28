@@ -160,12 +160,14 @@ MANUAL += [("combine", "baw_wasp_dart", 10, 1, 5, 1, "human_fletching_add_dart_f
             [("baw_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
 MANUAL += [("combine", "baw_killer_wasp_dart", 10, 15, 25, 1, "human_fletching_add_dart_feathers_killer_wasp",
             [("baw_killer_wasp_sting", 10), (f, 10)]) for f in BAW_FEATHERS]
+bucket_seen = set(seen)  # (kind, product, first material) from the Wiki bucket
+manual_seen = set()
 for m in MANUAL:
-    key = (m[0], m[1], m[7][0][0], m[7][-1][0])
-    if (m[0], m[1], m[7][0][0]) in seen and m[0] != "combine":
+    if (m[0], m[1], m[7][0][0]) in bucket_seen:
         continue  # the Wiki bucket already has it
-    if key not in seen:
-        seen.add(key)
+    key = (m[0], m[1], tuple(o for o, _ in m[7]))
+    if key not in manual_seen:  # stacked branches can append the same MANUAL row twice
+        manual_seen.add(key)
         rows.append(m)
 
 with open(out_path, "w", encoding="utf-8", newline="\n") as w:
