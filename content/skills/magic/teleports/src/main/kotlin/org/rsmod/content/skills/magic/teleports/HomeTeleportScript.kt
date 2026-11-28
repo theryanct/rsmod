@@ -9,7 +9,9 @@ import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.ui.ifClose
 import org.rsmod.api.player.vars.intVarp
+import org.rsmod.api.player.vars.resyncVar
 import org.rsmod.api.script.onIfOverlayButton
+import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.content.skills.magic.teleports.configs.home_tele_components
 import org.rsmod.content.skills.magic.teleports.configs.home_tele_queues
@@ -40,6 +42,7 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
     override fun ScriptContext.startup() {
         onIfOverlayButton(home_tele_components.standard) { player.selectHomeTeleport() }
         onPlayerQueueWithArgs<Int>(home_tele_queues.stage) { runStage(it.args) }
+        onPlayerLogin { player.clearCooldownIfDisabled() }
     }
 
     private fun Player.selectHomeTeleport() {
@@ -69,13 +72,25 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
         val stage = STAGES.getOrNull(index)
         if (stage == null) {
             resetAnim()
-            player.lastCastMinute = currentMinute()
+            // With the cooldown toggle on, don't start the 30-minute timer: the client fades the
+            // spell icon while `date_minutes - aide_tele_timer < 30`.
+            if (!player.isFeatureOn(Feature.NoHomeTeleportCooldown)) {
+                player.lastCastMinute = currentMinute()
+            }
             telejump(LUMBRIDGE)
             return
         }
         anim(stage.seq())
         spotanim(stage.spot())
         weakQueue(home_tele_queues.stage, stage.ticks, index + 1)
+    }
+
+    /** Clears a cooldown saved before the toggle was turned on, so the icon isn't faded. */
+    private fun Player.clearCooldownIfDisabled() {
+        if (isFeatureOn(Feature.NoHomeTeleportCooldown) && lastCastMinute != 0) {
+            lastCastMinute = 0
+            resyncVar(home_tele_varps.last_cast)
+        }
     }
 
     private fun Player.cooldownMinutesLeft(): Int {
