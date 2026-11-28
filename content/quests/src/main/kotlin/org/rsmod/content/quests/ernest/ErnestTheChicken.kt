@@ -2,12 +2,16 @@ package org.rsmod.content.quests.ernest
 
 import jakarta.inject.Inject
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.vars.VarPlayerIntMapSetter
 import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.onOpHeldU
 import org.rsmod.api.script.onOpLocU
+import org.rsmod.api.type.builders.varp.VarpBuilder
 import org.rsmod.api.type.refs.loc.LocReferences
 import org.rsmod.api.type.refs.npc.NpcReferences
 import org.rsmod.api.type.refs.obj.ObjReferences
+import org.rsmod.api.type.refs.seq.SeqReferences
+import org.rsmod.api.type.refs.varbit.VarBitReferences
 import org.rsmod.api.type.refs.varp.VarpReferences
 import org.rsmod.content.quests.framework.QuestDef
 import org.rsmod.content.quests.framework.QuestDialogue
@@ -21,6 +25,7 @@ import org.rsmod.content.quests.framework.runQuestSection
 import org.rsmod.content.quests.framework.setQuestState
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.loc.BoundLocInfo
+import org.rsmod.game.type.loc.LocType
 import org.rsmod.game.type.loc.LocTypeList
 import org.rsmod.game.type.npc.NpcTypeList
 import org.rsmod.plugin.scripts.PluginScript
@@ -30,11 +35,13 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Ernest the Chicken (OSRS Wiki): Veronica outside Draynor Manor -> Professor Oddenstein needs a
  * pressure gauge (poisoned fish food in the fountain, then search it), a rubber tube (key from the
  * compost heap opens the closet) and an oil can (manor basement). `haunted` varp (cache db end
- * state 3): 0, 1 started, 2 met the professor, 3 complete. Parts can be handed in one at a time;
- * fish food poisoning is tracked in this session only. Reward: 300 coins, 4 QP.
+ * state 3): 0, 1 started, 2 met the professor, 3 complete. Parts can be handed in one at a time
+ * (saved with the poisoned-fountain flag in the server varp `ernest_progress`).
  *
- * NOT DONE (flagged): the basement lever/door puzzle (ernestlever / ernestdoors varps driving the
- * ernest_doorclosed multilocs), so the oil can's room is only reachable once that lands.
+ * Basement lever puzzle: levers A-F are multilocs on the cache varbits `ernestlever_a..f`
+ * (0 up, 1 down) and the nine doors on `ernestdoor_*` (0 closed, 1 ajar with "Open"). After every
+ * pull each door's varbit is recomputed from the OSRS Wiki "Draynor Manor" table of required
+ * lever positions; an open door lets the player through. Reward: 300 coins, 4 QP.
  */
 class ErnestTheChicken
 @Inject
@@ -47,11 +54,16 @@ constructor(
         QuestDialogue.load(ErnestTheChicken::class.java, "ernest_the_chicken")
     }
 
-    /** Players who poisoned the fountain's piranhas (until logout/restart). */
-    private val fountainPoisoned = HashSet<Int>()
+    /* `ernest_progress` varp: bits 0-2 parts handed in (gauge, tube, oil can), bit 3 fountain
+     * poisoned. */
+    private fun ProtectedAccess.progress(): Int = player.vars[ErnestVarps.progress]
 
-    /** Parts handed to the professor, as a bit set per player (gauge 1, tube 2, oil can 4). */
-    private val partsGiven = HashMap<Int, Int>()
+    private fun ProtectedAccess.setProgress(value: Int) {
+        VarPlayerIntMapSetter.set(player, ErnestVarps.progress, value)
+    }
+
+    private val ProtectedAccess.fountainPoisoned: Boolean
+        get() = progress() and FOUNTAIN_BIT != 0
 
     override fun ScriptContext.startup() {
         onNpcOpLabel(npcTypes, ErnestNpcs.veronica, "Talk-to") { talkVeronica(it) }
@@ -64,6 +76,55 @@ constructor(
         onLocOpLabel(locTypes, ErnestLocs.fountain, "Search") { searchFountain() }
         onLocOpLabel(locTypes, ErnestLocs.compost_heap, "Search") { searchCompost() }
         onLocOpLabel(locTypes, ErnestLocs.closet_door, "Open") { closetDoor(it) }
+        for ((index, levers) in ErnestLocs.levers.withIndex()) {
+            for (lever in levers) {
+                onLocOpLabel(locTypes, lever, "Pull") { pullLever(index) }
+            }
+        }
+        onLocOpLabel(locTypes, ErnestLocs.door_ajar, "Open") { basementDoor(it) }
+    }
+
+    /* Lever puzzle */
+
+    private suspend fun ProtectedAccess.pullLever(index: Int) {
+        val varbit = ErnestVarBits.levers[index]
+        val down = player.vars[varbit] == 1
+        anim(ErnestSeqs.pull_lever)
+        delay(1)
+        VarPlayerIntMapSetter.set(player, varbit, if (down) 0 else 1)
+        mes("You pull lever ${'A' + index} ${if (down) "up" else "down"}.")
+        updateDoors()
+    }
+
+    /** Door open (1) when every lever matches its required position from the Wiki table. */
+    private fun ProtectedAccess.updateDoors() {
+        val levers = ErnestVarBits.levers.map { player.vars[it] == 1 }
+        for ((door, rule) in DOOR_RULES) {
+            val open =
+                rule.withIndex().all { (lever, want) ->
+                    when (want) {
+                        'D' -> levers[lever]
+                        'U' -> !levers[lever]
+                        else -> true
+                    }
+                }
+            val varbit = ErnestVarBits.doors.getValue(door)
+            VarPlayerIntMapSetter.set(player, varbit, if (open) 1 else 0)
+        }
+    }
+
+    /** Through an open basement door: doors face east-west (rotation 0/2) or north-south. */
+    private suspend fun ProtectedAccess.basementDoor(door: BoundLocInfo) {
+        val at = door.coords
+        val here = player.coords
+        val dest =
+            if (door.angleId % 2 == 0) {
+                at.translate(if (here.x < at.x) 1 else -1, 0)
+            } else {
+                at.translate(0, if (here.z < at.z) 1 else -1)
+            }
+        telejump(dest)
+        delay(1)
     }
 
     private val ProtectedAccess.state: Int
@@ -105,19 +166,17 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.handInParts(npc: Npc) {
-        val uid = player.uid.packed
-        var given = partsGiven[uid] ?: 0
+        var given = progress() and ALL_PARTS
         for ((bit, part) in PARTS) {
             if (given and bit == 0 && carries(part())) {
                 invDel(inv, part())
                 given = given or bit
             }
         }
-        partsGiven[uid] = given
+        setProgress((progress() and ALL_PARTS.inv()) or given)
         if (given == ALL_PARTS) {
             runQuestSection(npc, dialogue, "Finishing up")
             invAddOrDrop(objRepo, ErnestObjs.coins, 300)
-            partsGiven.remove(uid)
             completeQuest(ERNEST)
             return
         }
@@ -134,7 +193,7 @@ constructor(
 
     private suspend fun ProtectedAccess.poisonFountain() {
         invDel(inv, ErnestObjs.poisoned_fish_food)
-        fountainPoisoned += player.uid.packed
+        setProgress(progress() or FOUNTAIN_BIT)
         runQuestSection(null, dialogue, "Using poisoned food on the fountain")
     }
 
@@ -142,7 +201,7 @@ constructor(
         when {
             carries(ErnestObjs.pressure_gauge) || state > MET_PROFESSOR ->
                 runQuestSection(null, dialogue, FOUNTAIN_EMPTY)
-            player.uid.packed in fountainPoisoned -> {
+            fountainPoisoned -> {
                 runQuestSection(null, dialogue, FOUNTAIN_POISONED)
                 invAddOrDrop(objRepo, ErnestObjs.pressure_gauge)
             }
@@ -181,6 +240,26 @@ constructor(
         const val STARTED = 1
         const val MET_PROFESSOR = 2
         private const val ALL_PARTS = 0b111
+        private const val FOUNTAIN_BIT = 0b1000
+
+        /**
+         * OSRS Wiki "Draynor Manor": required lever positions (A-F; D down, U up, x any) for each
+         * basement door, keyed by the cache door varbit. Wiki door numbers -> cache doors from
+         * the wiki's room layout: 1 4to7, 2 4to5, 3 5to8, 4 5to6, 5 3to6, 6 2to3, 7 1to2,
+         * 8 2to5, 9 8to9. ("U?" / "D?" entries are taken as U / D.)
+         */
+        private val DOOR_RULES =
+            listOf(
+                "ernestdoor_4to7" to "DDUxUU",
+                "ernestdoor_4to5" to "DxUxUU",
+                "ernestdoor_5to8" to "xxxDUx",
+                "ernestdoor_5to6" to "xxxDUx",
+                "ernestdoor_3to6" to "xUxDxU",
+                "ernestdoor_2to3" to "xUxDxD",
+                "ernestdoor_1to2" to "UUxxDD",
+                "ernestdoor_2to5" to "xxxDUD",
+                "ernestdoor_8to9" to "xxDDxD",
+            )
         private const val FOUNTAIN_EMPTY = "Searching the fountain after obtaining pressure gauge"
         private const val FOUNTAIN_POISONED =
             "Searching the fountain after piranhas have been poisoned"
@@ -214,6 +293,10 @@ internal object ErnestNpcs : NpcReferences() {
 }
 
 internal object ErnestLocs : LocReferences() {
+    /** Up / down variants of levers A-F (multilocs on ernestlever_a..f). */
+    val levers: List<List<LocType>> =
+        ('a'..'f').map { listOf(find("lever${it}_up"), find("lever${it}_down")) }
+    val door_ajar = find("ernest_doorajar")
     val fountain = find("hauntedfountain")
     val compost_heap = find("hauntedcompostheap")
     val closet_door = find("closet_door")
@@ -233,4 +316,25 @@ internal object ErnestObjs : ObjReferences() {
 
 internal object ErnestVarps : VarpReferences() {
     val haunted = find("haunted")
+
+    /** Server varp (65771): parts handed in + fountain poisoned. */
+    val progress = find("ernest_progress")
+}
+
+/** Saved per character (world symbol range 65700-65899). */
+internal object ErnestVarpBuilds : VarpBuilder() {
+    init {
+        build("ernest_progress")
+    }
+}
+
+internal object ErnestVarBits : VarBitReferences() {
+    val levers = ('a'..'f').map { find("ernestlever_$it") }
+    val doors =
+        listOf("1to2", "2to3", "4to5", "5to6", "8to9", "2to5", "3to6", "4to7", "5to8")
+            .associate { "ernestdoor_$it" to find("ernestdoor_$it") }
+}
+
+internal object ErnestSeqs : SeqReferences() {
+    val pull_lever = find("human_pull_lever")
 }
