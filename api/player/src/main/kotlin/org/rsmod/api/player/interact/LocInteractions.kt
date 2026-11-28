@@ -102,7 +102,8 @@ constructor(
         loc: BoundLocInfo,
         op: InteractionOp,
         type: UnpackedLocType = locTypes[loc],
-    ): Boolean = opTrigger(player, loc, op, type) != null
+    ): Boolean =
+        opTrigger(player, loc, op, type) != null || OpInterceptors.loc(player, loc, op) != null
 
     public fun apTrigger(
         player: Player,
@@ -143,7 +144,8 @@ constructor(
         loc: BoundLocInfo,
         op: InteractionOp,
         type: UnpackedLocType = locTypes[loc],
-    ): Boolean = apTrigger(player, loc, op, type) != null
+    ): Boolean =
+        OpInterceptors.loc(player, loc, op) == null && apTrigger(player, loc, op, type) != null
 
     public fun multiLoc(
         loc: BoundLocInfo,
