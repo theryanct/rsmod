@@ -3,11 +3,13 @@ package org.rsmod.content.quests.templeofikov
 import jakarta.inject.Inject
 import org.rsmod.api.config.refs.stats
 import org.rsmod.api.death.NpcKilledEvent
+import org.rsmod.api.invtx.invAddOrDrop
 import org.rsmod.api.npc.interact.AiPlayerInteractions
 import org.rsmod.api.npc.opPlayer2
 import org.rsmod.api.player.events.interact.LocUEvents
 import org.rsmod.api.player.hit.queueHit
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.repo.loc.LocRepository
 import org.rsmod.api.repo.npc.NpcRepository
 import org.rsmod.api.script.isLocOpBound
@@ -15,6 +17,7 @@ import org.rsmod.api.script.isNpcOpBound
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onModifyNpcHit
 import org.rsmod.api.script.onOpLocU
+import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerTimer
 import org.rsmod.content.quests.framework.QuestDialogue
 import org.rsmod.content.quests.framework.carries
@@ -76,6 +79,7 @@ constructor(
     private val objTypes: ObjTypeList,
     private val npcRepo: NpcRepository,
     private val locRepo: LocRepository,
+    private val objRepo: ObjRepository,
     private val playerList: PlayerList,
     private val collision: CollisionFlagMap,
     private val aiInteractions: AiPlayerInteractions,
@@ -109,6 +113,8 @@ constructor(
         bindLocU(IkLocs.lever_bracket, IkObjs.lever) { fitLever(it) }
         bindLoc(IkLocs.mended_lever, "Pull") { pullMendedLever(it) }
         onPlayerTimer(IkTimers.bridge) { bridgeTick() }
+        // A logout west of the bridge would strand the player (the bridge is the only way back).
+        onPlayerLogin { if (inBridgeRoom(player.coords)) player.timer(IkTimers.bridge, 1) }
 
         // The ice chamber.
         bindLoc(IkLocs.chest_closed, "Open") { locRepo.change(it, IkLocs.chest_open, CHEST_TICKS) }
@@ -271,7 +277,7 @@ constructor(
                     ),
             )
         if (full) {
-            invAdd(inv, IkObjs.ice_arrow, random.of(1, MAX_ARROWS))
+            player.invAddOrDrop(objRepo, IkObjs.ice_arrow, random.of(1, MAX_ARROWS))
             arrowChest[key] = random.of(0, CHESTS.size - 1)
         }
         section(null, "Searching ice arrow chest", hooks)

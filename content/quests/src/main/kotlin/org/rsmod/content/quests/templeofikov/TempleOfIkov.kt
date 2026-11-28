@@ -255,7 +255,12 @@ constructor(
                 val hooks =
                     IkHooks(
                         this,
-                        options = mapOf("Ok! I'll help!" to { helping = true }),
+                        options =
+                            mapOf(
+                                "Ok! I'll help!" to { helping = true },
+                                // The transcript's {{qact}} attack (the converter drops it).
+                                "Then you must die!" to { attack = true },
+                            ),
                         actions = mapOf("The guardian attacks the player." to { attack = true }),
                         boxes =
                             mapOf(
@@ -276,6 +281,11 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.takeStaff(obj: Obj) {
+        if (obj.coords != STAFF_TABLE) {
+            // A dropped staff elsewhere: a plain take.
+            if (inv.hasFreeSpace() && objRepo.del(obj)) invAdd(inv, IkObjs.staff)
+            return
+        }
         when {
             state == HELPING -> section(null, "Taking the Staff of Armadyl after agreeing to kill Lucien")
             carries(IkObjs.staff) -> mes("I already have the staff.") // Wiki {{mes}}
@@ -423,6 +433,8 @@ constructor(
         private const val LAVA_X = 2659
         private val WINELDA_WEST = CoordGrid(2654, 9876, 0)
         private val WINELDA_EAST = CoordGrid(2664, 9877, 0)
+        /** The staff's spawn on the temple table (`egypt_table_2` 2638,9906). */
+        private val STAFF_TABLE = CoordGrid(2638, 9906, 0)
 
         val TEMPLE_OF_IKOV =
             QuestDef(
