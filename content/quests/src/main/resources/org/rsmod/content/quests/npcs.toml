@@ -421,3 +421,46 @@ coords = '0_40_50_44_9'
 [[spawn]]
 npc = 'brother_cedric'
 coords = '0_40_50_54_59'
+
+# Fishing Contest: Austri / Vestri (the White Wolf Mountain tunnel), the Hemenster contest
+# (Morris, Bonzo, Grandpa Jack, the rivals, the Sinister Stranger multinpc, the contest spots).
+# Spot positions approximate.
+[[spawn]]
+npc = 'tunnel_dwarf'
+coords = '0_44_54_60_27'
+
+[[spawn]]
+npc = 'tunnel_dwarf1'
+coords = '0_44_54_5_31'
+
+[[spawn]]
+npc = 'morris'
+coords = '0_41_53_20_50'
+
+[[spawn]]
+npc = 'bonzo'
+coords = '0_41_53_16_45'
+
+[[spawn]]
+npc = 'grandpa_jack'
+coords = '0_41_53_25_60'
+
+[[spawn]]
+npc = 'bigdave'
+coords = '0_41_53_9_33'
+
+[[spawn]]
+npc = 'joshua'
+coords = '0_41_53_6_25'
+
+[[spawn]]
+npc = 'sinister_stranger'
+coords = '0_41_53_13_52'
+
+[[spawn]]
+npc = '0_41_53_sinisterfishspot'
+coords = '0_41_53_13_51'
+
+[[spawn]]
+npc = '0_41_53_compofishspot'
+coords = '0_41_53_3_43'

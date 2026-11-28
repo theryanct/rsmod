@@ -1,0 +1,330 @@
+# Generated from the OSRS Wiki page "Transcript:Fishing Contest" by tools/quests/transcript_to_dialogue.py
+0	section	Starting out
+0	section	Speaking to Vestri or Austri to start the quest
+1	line	Vestri/Austri	Hmmph. What do you want?
+1	select	Select an option
+1	option	I was wondering what was down those stairs?
+2	line	Player	I was just wondering what was down those stairs?
+2	line	Vestri/Austri	You can't go down there!
+2	select	Select an option
+2	option	I didn't want to anyway.
+3	line	Player	I didn't want to anyway.
+3	line	Vestri/Austri	Good. Because you can't.
+3	line	Player	Because I don't want to.
+3	line	Vestri/Austri	Because you can't. So that's fine.
+3	line	Player	Yes, it is.
+3	line	Vestri/Austri	Yes. Fine.
+3	line	Player	Absolutely.
+3	line	Vestri/Austri	Well then.
+3	action	initial
+2	option	Why not?
+3	line	Player	Why not?
+3	line	Vestri/Austri	This is the home of the Mountain Dwarves. How would you like it if I wanted to take a shortcut through your home?
+3	select	Select an option
+3	option	Ooh... is this a shortcut to somewhere?
+4	line	Player	Ooh... is this a shortcut to somewhere?
+4	line	Vestri/Austri	Well, it is a lot easier to go this way to get past White Wolf Mountain than through those wolf filled passes.
+4	action	end
+3	option	Oh, sorry, I hadn't realised it was private.
+4	line	Player	Oh, sorry, I hadn't realised it was private.
+4	line	Vestri/Austri	Well, it is.
+4	action	end
+3	option	If you were my friend I wouldn't mind it.
+4	line	Player	If you were my friend I wouldn't mind.
+4	line	Vestri/Austri	Yes, but I don't even know you.
+4	select	Select an option
+4	option	Well, let's be friends!
+5	line	Player	Well, let's be friends!
+5	cond	If the player is on a Quest Speedrunning world:
+6	line	Vestri/Austri	I'd rather not, thank you.
+6	box	This quest is not available on Speedrunning Worlds.
+6	action	end
+5	cond	If the player does not meet the requirements to begin Fishing Contest:
+6	line	Vestri/Austri	I'd rather not, thank you.
+6	box	You do not meet all of the requirements to start the Fishing Contest quest.
+6	action	end
+5	line	Vestri/Austri	I don't make friends easily. People need to earn my trust first.
+5	select	Start the Fishing Contest quest?
+5	option	Yes.
+6	line	Player	And how am I meant to do that?
+6	line	Vestri/Austri	My, we are the persistent one aren't we?
+6	line	Vestri/Austri	Well, there's a certain gold artefact we're after. We dwarves are big fans of gold! This artefact is the first prize at the Hemenster fishing competition.
+6	line	Vestri/Austri	Fortunately we have acquired a pass to enter that competition...
+6	line	Vestri/Austri	Unfortunately Dwarves don't make good fishermen.
+6	line	Player	Fortunately I'm alright at fishing!
+6	line	Vestri/Austri	Okay. I entrust you with our competition pass. Don't forget to take some gold with you for the entrance fee.
+6	box	You got the Fishing Contest Pass!
+6	line	Vestri/Austri	Go to Hemenster and do us proud!
+6	action	end
+5	option	No.
+6	line	Player	You're a grumpy little man aren't you?
+6	line	Vestri/Austri	Don't you know it.
+6	action	end
+4	option	You're a grumpy little man aren't you?
+5	line	Player	You're a grumpy little man aren't you?
+5	line	Vestri/Austri	Don't you know it.
+5	action	end
+2	option	I'm bigger than you. Let me by.
+3	line	Player	I'm bigger than you. Let me by!
+3	line	Player	...stumpy.
+3	line	Vestri/Austri	Go away! You're not going to bully your way in HERE!
+3	action	initial
+1	option	I was just stopping to say hello!
+2	line	Player	I was just stopping to say hello!
+2	line	Vestri/Austri	Hello then.
+2	action	initial
+1	option	Do you have a brother?
+2	line	Player	Do you have a brother?
+2	line	Vestri/Austri	What if I do! It's no business of yours.
+2	action	initial
+0	section	Speaking to Vestri or Austri before winning
+1	line	Vestri/Austri	Have you won yet?
+1	line	Player	No, not yet.
+1	line	Vestri/Austri	Well don't give up! Maybe old Jack can give you a few tips.
+1	action	end
+0	section	Retrieving another fishing pass from Vestri or Austri
+1	line	Vestri/Austri	Have you won yet?
+1	select	Select an option
+1	option	I need another competition pass.
+2	line	Player	I need another competition pass.
+2	line	Vestri/Austri	Hmmm. It's a good job they sent us spares.
+2	line	Vestri/Austri	There you go. Try not to lose that one.
+2	action	end
+1	option	No, it takes preparation to win fishing competitions.
+2	line	Player	No, it takes preparation to win fishing competitions.
+2	line	Vestri/Austri	Maybe that's where we are going wrong when we try fishing?
+2	line	Player	Probably.
+2	line	Vestri/Austri	Maybe we should talk to that old Jack fella near the competition, everyone seemed to be ranting about him.
+2	action	end
+0	section	Entering the competition
+0	section	Talking to Morris
+1	line	Player	What are you sitting around here for?
+1	line	Morris	I'm making sure only those with a competition pass enter the fishing contest.
+1	line	Player	I have one here.
+1	box	You show Morris your pass.
+1	line	Morris	Move on through. Talk to Bonzo to enter the competition.
+1	action	end
+0	section	Clicking on the gate
+1	line	Morris	Competition pass please.
+1	box	You show Morris your pass.
+1	line	Morris	Move on through. Talk to Bonzo to enter the competition.
+1	action	end
+0	section	Speaking to the other contestants
+0	section	Sinister Stranger
+1	line	Sinister Stranger	...
+1	select	Select an option
+1	option	...?
+2	line	Player	...?
+2	line	Sinister Stranger	...
+2	line	Player	.....?
+2	line	Sinister Stranger	......
+2	action	end
+1	option	Who are you?
+2	line	Player	Who are you?
+2	line	Sinister Stranger	My name iz Vlad. I come from far avay, vere the sun iz not so bright.
+1	select	Select an option
+2	option	You're a vampyre aren't you?
+3	line	Player	You're a vampyre aren't you?
+3	line	Sinister Stranger	Just because I can't stand ze smell ov garlic und I don't like bright sunlight doesn't necessarily mean I'm ein vampyre!
+3	action	end
+2	option	Is it nice there?
+3	line	Player	Is it nice there?
+3	line	Sinister Stranger	It is vonderful! Ze vomen are beautiful und ze nights are long!
+3	select	Select an option
+3	option	You're a vampyre aren't you?
+4	action	above
+3	option	So you like fishing?
+4	action	below
+3	option	Well, good luck with the fishing.
+4	line	Player	Well, good luck with the fishing.
+4	line	Sinister Stranger	Luck haz notsing to do vith it it is all in ze technique.
+4	action	end
+2	option	So you like fishing?
+3	action	below
+1	option	So... you like fishing?
+2	line	Player	So... you like fishing?
+2	line	Sinister Stranger	My doctor told me to take up ein velaxing hobby. Vhen I am stressed I tend to get ein little..
+2	line	Sinister Stranger	..thirsty.
+2	select	Select an option
+2	option	You're a vampyre aren't you?
+3	action	above
+2	option	If you get thirsty you should drink something.
+3	line	Player	If you get thirsty you should drink something.
+3	line	Sinister Stranger	I tsink I may do zat soon...
+3	action	end
+2	option	Well, good luck with the fishing.
+3	action	above
+0	section	Big Dave
+1	line	Big Dave	Hey guy! Always nice to see a fresh face!
+1	select	Select an option
+1	option	So you're the champ?
+2	line	Player	So you're the champ?
+2	line	Big Dave	That's right, guy! Ain't nobody better at fishing round here than me! That's for sure!
+2	action	end
+1	option	Can I fish here instead of you?
+2	line	Player	Can I fish here instead of you?
+2	line	Big Dave	Sorry guy! This is my lucky spot!
+2	action	end
+1	option	Do you have any tips for me?
+2	line	Player	Do you have any tips for me?
+2	line	Big Dave	Why would I help you? I wanna stay the best! I'm not givin' away my secrets like old Grampa Jack does!
+2	line	Player	Who's Grampa Jack?
+2	line	Big Dave	You really have no clue do you! He won this competition four years in a row! He lives in the house just outside the gate.
+2	action	end
+0	section	Joshua
+1	line	Joshua	Yeah? What you want?
+1	select	Select an option
+1	option	Um... nothing really...
+2	line	Player	Um... nothing really...
+2	line	Joshua	Quit bugging me then! I got me some fish to catch!
+2	action	end
+1	option	Can I fish here instead of you?
+2	line	Player	Can I fish here instead of you?
+2	line	Joshua	Nuh uh dude. Less talk, more fishing!
+2	action	end
+1	option	Do you have any tips for me?
+2	line	Joshua	Dude! Why should I help you? You like, might beat me! I'm not giving away my secrets like that dude Grampa Jack does!
+2	line	Player	Who's Grampa Jack?
+2	line	Joshua	Who's Grampa Jack [he says/she says/they say]! He won this competition four years in a row! He lives in the house just outside the gate.
+2	action	end
+0	section	Speaking to Grandpa Jack
+1	line	Grandpa Jack	Hello young man! Come to visit old Grandpa Jack? I can tell ye stories for sure. I used to be the best fisherman these parts have seen!
+1	select	Select an option
+1	option	Tell me a story then.
+1	option	Are you entering the fishing competition?
+2	line	Player	Are you entering the fishing competition?
+2	line	Grandpa Jack	Ah... the Hemenster fishing competition...
+2	line	Grandpa Jack	I know all about that... I won that four years straight! I'm too old for that lark now though...
+2	select	Select an option
+2	option	I don't suppose you could give me any hints?
+3	line	Player	I don't suppose you could give me any hints?
+3	line	Grandpa Jack	Well, you sometimes get these really big fish in the water just by the outflow pipes.
+3	line	Grandpa Jack	I think they're some kind of carp...
+3	line	Grandpa Jack	I used to get those from McGrubor's wood, north of here. Just dig around in the red vines up there but be careful of the guard dogs.
+3	line	Player	There's this weird creepy guy who says he's not a vampyre using that spot. He keeps winning too.
+3	line	Grandpa Jack	Ahh well, I'm sure you'll find something to put him off. After all, there must be a kitchen around here with some garlic in it, perhaps in Seers Village or Ardougne. If he's pretending to be a vampyre then he can pretend
+3	line	Grandpa Jack	to be scared of garlic!
+3	line	Player	You're right! Thanks Jack!
+3	action	end
+2	option	That's less competition for me then.
+3	line	Player	That's less competition for me then.
+3	line	Grandpa Jack	Why you young whippersnapper! If I was twenty years younger I'd show you something that's for sure!
+3	action	end
+1	option	Sorry, I don't have time now.
+1	option	Can I buy one of your fishing rods?
+1	option	I've forgotten how to fish, can you remind me?
+0	section	The contest
+0	section	Fishing before entering the competition
+1	line	Bonzo	Hey, you need to pay to enter the competition first! Only 5 gp entrance fee!
+1	action	The player is force walked to Bonzo
+1	action	below
+0	section	Speaking to Bonzo
+1	line	Bonzo	Roll up, roll up!
+1	line	Bonzo	Enter the great Hemenster fishing competition!
+1	line	Bonzo	Only 5gp entrance fee!
+1	option	I'll enter the competition please.
+2	line	Player	I'll enter the competition please.
+2	line	Bonzo	Ok, nearly everyone is in their place already. You fish in the spot by the willow tree, and the Sinister Stranger, you fish by the pipes.
+2	cond	If garlic was placed in the pipes:
+3	line	Sinister Stranger	Arrgh! WHAT is that GHASTLY smell??? I think I will move over here instead...
+3	line	Bonzo	Hmm. You'd better go and take the area by the pipes then.
+3	action	Your fishing competition spot is now beside the pipes.
+3	action	end
+2	action	end
+1	option	No thanks, I'll just watch the fun.
+2	line	Player	No thanks, I'll just watch the fun.
+2	action	end
+0	section	If choosing Bonzo's pay option
+1	box	You pay Bonzo 5 coins to enter the competition.
+1	line	Bonzo	Ok, we've got all the fishermen! It's time to roll!
+1	action	above
+0	section	Trying to pay Bonzo during the competition
+1	line	Bonzo	You've already paid, you don't need to pay me again!
+1	action	end
+0	section	Trying to fish in the other spots
+0	section	Sinister Stranger
+1	line	Sinister Stranger	I think you will find that is my spot.
+1	cond	If he is in the spot next to the pipes:
+2	line	Player	Can't you go to another spot?
+2	line	Sinister Stranger	I like this place. I like to savour the aroma coming from these pipes.
+1	action	end
+0	section	Big Dave
+1	line	Big Dave	Sorry mate, this is my spot.
+1	line	Player	I don't like my spot. Please can I have yours?
+1	line	Big Dave	Sorry mate. Big Dave don't like to lose!
+1	action	end
+0	section	Joshua
+1	line	Joshua	Hey dude! This is my spot!
+1	line	Player	Um... can I fish here then please?
+1	line	Joshua	No way man. I got a good feeling about this spot!
+1	action	end
+0	section	Searching the wall pipe
+1	line	Player	Ewww - it's a smelly sewage pipe.
+1	action	end
+0	section	Trying to put anything but garlic into the wall pipe
+1	line	Player	I really don't see the point in stuffing this up a dirty pipe!
+1	action	end
+0	section	Putting the garlic into the wall pipe
+1	box	You stash the garlic in the pipe.
+1	action	end
+0	section	Searching the pipe after stuffing garlic in it
+1	line	Player	I shoved some garlic up here.
+1	action	end
+0	section	Using the gate mid-competition
+1	line	Bonzo	So you're calling it quits here for now?
+1	select	Select an option
+1	option	Yes I'll compete again another day.
+2	line	Player	Yes I'll compete again another day.
+2	line	Bonzo	Ok, I'll see you again.
+2	action	end
+1	option	Actually I'll go back and catch some more.
+2	line	Player	Actually I'll go back and catch some more.
+2	line	Bonzo	Good luck!
+2	action	end
+0	section	Speaking to Bonzo after catching a fish
+1	line	Bonzo	So how are you doing so far?
+1	cond	With a regular fish:
+2	line	Player	I caught some fish! Here...
+2	box	You hand over your catch.
+2	option	Dialogue 1:
+3	line	Bonzo	And the winner is... The stranger in black!
+3	action	end
+2	option	Dialogue 2:
+3	line	Bonzo	And the winner is... local favourite - Big Dave!
+3	action	end
+1	cond	With the giant carp:
+1	option	I have this big fish. Is it enough to win?
+2	line	Player	I have this big fish.
+2	line	Player	Is it enough to win?
+2	line	Bonzo	Well, we'll just wait till time is up.
+2	box	You wait}}{{sic
+2	box	You hand over your catch.
+2	line	Bonzo	We have a new winner! The heroic-looking person who was fishing by the pipes has caught the biggest carp I've seen since Grandpa Jack used to compete!
+2	box	You are given the Hemenster fishing trophy!
+2	action	end
+1	option	I think I might still be able to find a bigger fish.
+2	line	Player	I think I might still be able to find a bigger fish.
+2	line	Bonzo	Ok, good luck!
+2	action	end
+0	section	Talking to Bonzo after winning
+1	line	Bonzo	Hello champ!
+1	cond	If the fishing trophy has been lost:
+2	line	Player	I don't feel like a champ...
+2	line	Bonzo	Why not champ?
+2	line	Player	I lost my fishing trophy...
+2	line	Bonzo	Is that all chump? Don't worry, I have a spare!
+2	action	end
+1	line	Bonzo	So any hints on how to fish?
+1	line	Player	I think I'll keep them to myself.
+1	action	end
+0	section	Returning to Vestri or Austri
+1	line	Vestri/Austri	Have you won yet?
+1	line	Player	Yes I have!
+1	line	Vestri/Austri	Well done! That's brilliant! Do you have the trophy with you?
+1	line	Player	Yep, I have it right here!
+1	line	Vestri/Austri	Oh! It's even more shiny and gold than I thought possible...
+1	line	Vestri/Austri	You've done us proud. Thank you. I think we can now trust you enough to let you in...
+1	line	Player	In where?
+1	line	Vestri/Austri	Why the tunnel of course! You may now come and go freely, avoiding the wolves and dangers of the cold, high mountain. You could even stop in for a beer or two!
+1	line	Player	Excellent. That will come in most handy.
+1	action	end
