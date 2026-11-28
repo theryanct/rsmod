@@ -37,8 +37,8 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 /**
- * Elemental Workshop II (OSRS Wiki). It continues Elemental Workshop I's quest varbit
- * `elementalworkshop` (2 = EW1 done, 11 = EW2 done). The machinery state lives in the cache's
+ * Elemental Workshop II (OSRS Wiki). The quest list reads the cache varbit `elemental_quest_2_main`
+ * (cs2 4024's quest switch; 0, 11 done). The machinery state lives in the cache's other
  * `elemental_quest_2_*` varbits, so the multilocs (hatch, cogs, fan, extractor gun, piping) and the
  * jig cart multinpc show each player's own state.
  * - Search the Exam Centre bookcase: the beaten book and a scroll. Read the scroll.
@@ -346,6 +346,7 @@ constructor(
     /* The jig cart */
 
     private fun ProtectedAccess.placeBar() {
+        if (flag(Ew2VarBits.jig_state) != JIG_EMPTY) return
         if (flag(Ew2VarBits.jig_pos) != AT_CRANE) {
             mes("The jig cart should be under the crane first.") // Authored (not Wiki).
             return
@@ -598,12 +599,12 @@ constructor(
         get() = Ew2Dialogue.dialogue
 
     companion object {
-        const val STARTED = 3
-        const val KEY = 4
-        const val HATCH = 5
-        const val CLAW = 6
-        const val PRIMED = 7
-        const val MIND_BAR = 8
+        const val STARTED = 1
+        const val KEY = 2
+        const val HATCH = 3
+        const val CLAW = 4
+        const val PRIMED = 5
+        const val MIND_BAR = 6
         const val COMPLETE = 11
 
         private const val SMITHING_REQUIRED = 30
@@ -866,7 +867,7 @@ internal object Ew2Objs : ObjReferences() {
 }
 
 internal object Ew2VarBits : VarBitReferences() {
-    val quest = find("elementalworkshop")
+    val quest = find("elemental_quest_2_main")
     val hide_key = find("elemental_quest_2_hide_key")
     val hatch = find("elemental_quest_2_hatch")
     val jig_pos = find("elemental_quest_2_jig_pos")
