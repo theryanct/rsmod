@@ -136,6 +136,9 @@ public object SeqTypeDecoder {
                     keyframeRangeStart = data.readUnsignedShort()
                     keyframeRangeEnd = data.readUnsignedShort()
                 }
+                // Rev 243: one unsigned byte (verified: all 15288 seqs in cache 2777 parse with it).
+                // Client-only; the server doesn't use it and never re-encodes seqs.
+                16 -> data.readUnsignedByte()
                 17 -> {
                     val keyframeWalkMerge = BooleanArray(256)
                     val count = data.readUnsignedByte().toInt()
