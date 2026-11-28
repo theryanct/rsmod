@@ -690,16 +690,27 @@ internal object Ds1Npcs : NpcReferences() {
     val jenkins_cutscene = find("dragonslayer_jenkins_cutscene")
     val elvarg_cutscene = find("dragonslayer_elvarg_cutscene")
 
-    /** Maze key-carriers -> the key they drop. */
-    val key_carriers: Map<Int, ObjType> =
+    private val rat_key = find("dragonslayer_giantrat_1_key")
+    private val ghost_key = find("dragonslayer_ghost_1_key")
+    private val skeleton_key = find("dragonslayer_skeleton_1_key")
+    private val zombie_key = find("dragonslayer_zombie_1_key")
+    private val melzar = find("melzar_the_mad")
+    private val demon_key = find("dragonslayer_demon")
+
+    /**
+     * Maze key-carriers -> the key they drop. Lazy: ref ids only resolve after this object
+     * finishes initialising.
+     */
+    val key_carriers: Map<Int, ObjType> by lazy {
         mapOf(
-            find("dragonslayer_giantrat_1_key").id to Ds1Objs.red_key,
-            find("dragonslayer_ghost_1_key").id to Ds1Objs.orange_key,
-            find("dragonslayer_skeleton_1_key").id to Ds1Objs.yellow_key,
-            find("dragonslayer_zombie_1_key").id to Ds1Objs.blue_key,
-            find("melzar_the_mad").id to Ds1Objs.magenta_key,
-            find("dragonslayer_demon").id to Ds1Objs.green_key,
+            rat_key.id to Ds1Objs.red_key,
+            ghost_key.id to Ds1Objs.orange_key,
+            skeleton_key.id to Ds1Objs.yellow_key,
+            zombie_key.id to Ds1Objs.blue_key,
+            melzar.id to Ds1Objs.magenta_key,
+            demon_key.id to Ds1Objs.green_key,
         )
+    }
 }
 
 internal object Ds1Locs : LocReferences() {
@@ -777,13 +788,20 @@ internal object Ds1VarBits : VarBitReferences() {
     val ship_third = find("dragonslayer_ship_onethird_fixed")
     val ship_two_thirds = find("dragonslayer_ship_twothird_fixed")
     val ship_fixed = find("dragonslayer_ship_fullyfixed")
-    val oracle_items: Map<Int, VarBitType> =
+    private val used_silk = find("dragonslayer_used_silk")
+    private val used_mind_bomb = find("dragonslayer_used_wizards_mind_bomb")
+    private val used_bowl = find("dragonslayer_used_bowl_unfired")
+    private val used_lobster_pot = find("dragonslayer_used_lobster_pot")
+
+    /** Oracle door item id -> its "used" varbit. Lazy: obj ids resolve after init. */
+    val oracle_items: Map<Int, VarBitType> by lazy {
         mapOf(
-            Ds1Objs.silk.id to find("dragonslayer_used_silk"),
-            Ds1Objs.mind_bomb.id to find("dragonslayer_used_wizards_mind_bomb"),
-            Ds1Objs.bowl.id to find("dragonslayer_used_bowl_unfired"),
-            Ds1Objs.lobster_pot.id to find("dragonslayer_used_lobster_pot"),
+            Ds1Objs.silk.id to used_silk,
+            Ds1Objs.mind_bomb.id to used_mind_bomb,
+            Ds1Objs.bowl.id to used_bowl,
+            Ds1Objs.lobster_pot.id to used_lobster_pot,
         )
+    }
 }
 
 internal object Ds1VarpBuilds : VarpBuilder() {
